@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 파싱해서 사용하는 데이터이니 직접 수정하지 마세요 -->
+<ms2>
+	<environment feature="Fieldwar01" locale="">
+		<model kfm="21001036_M_RedCrystalTower" />
+		<basic npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="mapicon_RedCrystalTower" nametagSize="18" hpBar="1" defenceMaterial="7" hitImmune="1" abnormalImmune="1" level="70" class="6" rankIcon="a" rotationDisabled="1" carePathToEnemy="1" difficulty="70" propertyTags="always_display_hp_bar,NoRegenHP,keep_battle,battle_on_spawn" raceString="unknown" gender="2" mainTags="None" portrait="./Data/Resource/Image/Portrait/Mob/21001036_M_RedCrystalTower_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" skipFrame="1" />
+		<stat hp="62500000" asp="100" msp="100" atp="120" evp="108" cap="72" cad="250" car="70" ndd="1071" pap="1932291" map="1932876" par="220" mar="220" hiddenhpadd="26875000" hiddenwapadd="1023270" scaleStatRate_1="8" scaleBaseTap_1="8935624" scaleBaseDef_1="8790" scaleBaseSpaRate_1="0.2" scaleStatRate_2="8" scaleBaseTap_2="13037074" scaleBaseDef_2="13661" scaleBaseSpaRate_2="0.2" />
+		<distance avoid="300" sightHeightUP="0" sightHeightDown="0" />
+		<skill ids="40454001" levels="1" priorities="1" probs="100" />
+		<additionalEffect codes="70002361" levels="1" />
+		<collision shape="box" width="350" height="550" depth="350" />
+		<capsule radius="200" height="250" />
+		<dead time="2" defaultaction="Dead_A" upaction="Dead_A" />
+		<normal action="Idle_A" prob="10000" maidExpired="Idle_A" />
+		<lookattarget lookAtMyPCWhenTalking="0" useTalkMotion="1" />
+		<aiInfo path="Standby_Forever.xml" />
+		<exp customExp="0" />
+	</environment>
+	<effectdummy>
+		<dummy name="Eff_UI">
+			<attachInfo parentNode="Scene Root" applyLocalScale="false" applyWorldTransform="true" />
+			<transform translate="0.0, 0.0, 250.0" rotation="0.0, 0.0, 0.0" scale="1.0" />
+		</dummy>
+	</effectdummy>
+</ms2>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 파싱해서 사용하는 데이터이니 직접 수정하지 마세요 -->
+<ms2>
+	<environment feature="GuildRaid01" locale="">
+		<model kfm="02030001_M_Baraha" />
+		<basic npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="elite_boss" nametag="1" nametagSize="18" defenceMaterial="1" hitImmune="99" abnormalImmune="99" level="50" class="7" rankIcon="b" carePathToEnemy="1" difficulty="50" propertyTags="keep_battle,battle_on_spawn" raceString="combine" gender="0" emotionID="22000002" mainTags="None" portrait="./Data/Resource/Image/Portrait/Mob/02030001_M_Baraha_P.png" damagedColorScale="4" damagedVibrateDuration="0.7" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" />
+		<stat hp="25370659" asp="100" msp="100" atp="81" evp="82" cap="62" cad="500" car="50" ndd="709" pap="720078" map="720302" par="90" mar="90" hiddenhpadd="4023742" hiddenwapadd="258760" hiddennddadd="153" />
+		<speed rotation="720" walk="100" run="400" />
+		<distance avoid="140" sight="900" sightHeightUP="300" sightHeightDown="150" customLastSightRadius="2500" customLastSightHeightUp="300" customLastSightHeightDown="150" />
+		<skill ids="60011001" levels="1" priorities="1" probs="100" />
+		<additionalEffect codes="50004400" levels="1" />
+		<collision shape="box" width="250" height="200" depth="200" />
+		<capsule radius="130" height="200" />
+		<dead time="1" defaultaction="Dead_A" upaction="Dead_A" />
+		<push knockback="0.5" />
+		<shadow scale="300" bias="1" />
+		<normal action="Idle_A" prob="10000" movearea="150" maidExpired="Idle_A" />
+		<dropiteminfo dropHeight="150" dropDistanceBase="200" dropDistanceRandom="10" fireVelocity="150" globalDropBoxId="74" />
+		<lookattarget lookAtMyPCWhenTalking="0" useTalkMotion="1" />
+		<aiInfo path="GuildRaid/Arena/AI_Baraha.xml" />
+		<exp customExp="0" />
+	</environment>
+	<effectdummy>
+		<dummy name="Eff_UI">
+			<attachInfo parentNode="Scene Root" applyLocalScale="false" applyWorldTransform="true" />
+			<transform translate="0.0, 0.0, 250.0" rotation="0.0, 0.0, 0.0" scale="1.0" />
+		</dummy>
+	</effectdummy>
+</ms2>

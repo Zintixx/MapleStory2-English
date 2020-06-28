@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 파싱해서 사용하는 데이터이니 직접 수정하지 마세요 -->
+<ms2>
+	<environment feature="" locale="">
+		<model kfm="02030013_N_Ghostump" scale="1.3" />
+		<basic npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="elite_boss" nametag="1" nametagSize="18" defenceMaterial="2" hitImmune="1" abnormalImmune="1" level="47" class="7" rankIcon="b" carePathToEnemy="1" difficulty="47" propertyTags="keep_battle" raceString="undead" gender="2" mainTags="None" portrait="./Data/Resource/Image/Portrait/Mob/02030013_N_Ghostump_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" skipFrame="1" bossSoundDistance="1300" bossSoundEndDistance="2000" />
+		<stat hp="160235" asp="100" msp="100" atp="81" evp="82" cap="61" cad="500" car="50" ndd="505" pap="38801" map="38813" par="90" mar="90" />
+		<speed rotation="720" walk="300" run="600" />
+		<distance avoid="140" sight="1200" sightHeightUP="300" sightHeightDown="0" customLastSightRadius="2500" customLastSightHeightUp="525" customLastSightHeightDown="225" />
+		<skill ids="50000188,50000189,50000190" levels="1,1,1" priorities="2,2,1" probs="35,55,10" />
+		<additionalEffect codes="60000001" levels="1" />
+		<collision shape="box" width="230.769" height="120" depth="169.231" />
+		<capsule radius="130" height="320" />
+		<dead time="0.5" defaultaction="Dead_A" upaction="Dead_B" revival="21800006" count="1" lifeTime="10" />
+		<push knockback="0.5" />
+		<shadow scale="360" bias="1" />
+		<normal action="Idle_A,Bore_A,Walk_A" prob="3500,3000,3500" maidExpired="Idle_A" />
+		<dropiteminfo dropHeight="150" dropDistanceBase="200" dropDistanceRandom="10" fireVelocity="150" globalDropBoxId="74" />
+		<lookattarget lookAtMyPCWhenTalking="0" useTalkMotion="1" />
+		<aiInfo path="AI_Ghostump_Brave.xml" />
+		<exp customExp="0" />
+	</environment>
+	<effectdummy>
+		<dummy name="Eff_UI">
+			<attachInfo parentNode="Scene Root" applyLocalScale="false" applyWorldTransform="true" />
+			<transform translate="0.0, 0.0, 230.0" rotation="0.0, 0.0, 0.0" scale="1.0" />
+		</dummy>
+	</effectdummy>
+</ms2>

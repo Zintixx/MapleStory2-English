@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 파싱해서 사용하는 데이터이니 직접 수정하지 마세요 -->
+<ms2>
+	<environment feature="BattleField51to55" locale="">
+		<model kfm="22000100_N_SnowIceGolem" />
+		<basic npcAttackGroup="1" npcDefenseGroup="2" nametag="1" nametagSize="18" minimap="0" hpBar="1" defenceMaterial="6" hitImmune="1" abnormalImmune="1" level="55" rankIcon="c" carePathToEnemy="1" maxSpawnCount="2" groupSpawnCount="2" rareDegree="100" difficulty="55" raceString="spirit" gender="2" mainTags="얼음" subTags="얼음" portrait="./Data/Resource/Image/Portrait/Mob/22000100_N_SnowIceGolem_P.png" damagedVibrateDuration="0.5" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" skipFrame="1" />
+		<stat hp="24730" asp="100" msp="100" atp="80" evp="87" cap="65" cad="500" car="55" ndd="678" pap="49807" map="49822" par="90" mar="90" />
+		<speed rotation="400" walk="225" run="450" />
+		<distance avoid="100" sight="400" sightHeightUP="300" sightHeightDown="0" />
+		<skill ids="50000602,50000603" levels="1,1" priorities="1,1" probs="30,70" coolDown="3000" />
+		<additionalEffect codes="90000814" levels="1" />
+		<collision shape="box" width="180" height="170" depth="130" />
+		<capsule radius="90" height="200" />
+		<dead time="2" defaultaction="Dead_A" upaction="Dead_A" />
+		<push back="1" up="1" knockback="1" />
+		<shadow scale="300" bias="1" />
+		<normal action="Idle_A,Bore_A,Walk_A" prob="3500,2000,4500" movearea="150" maidExpired="Idle_A" />
+		<dropiteminfo dropHeight="150" dropDistanceBase="200" dropDistanceRandom="10" fireVelocity="150" globalDropBoxId="1,10006" />
+		<lookattarget lookAtMyPCWhenTalking="0" useTalkMotion="1" />
+		<aiInfo path="AI_DefaultNew.xml" />
+	</environment>
+</ms2>

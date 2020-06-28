@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 파싱해서 사용하는 데이터이니 직접 수정하지 마세요 -->
+<ms2>
+	<environment feature="FameContents_EP1_01" locale="">
+		<model kfm="23000094_B_RobotCircleCoreBlue" scale="2.1" />
+		<basic npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="boss" nametag="1" nametagSize="18" defenceMaterial="901" hitImmune="99" abnormalImmune="99" level="55" class="4" rankIcon="a" difficulty="55" propertyTags="fixed_big_monster" raceString="machine" eventTags="field_boss" bossNotify="1" gender="2" emotionID="23000094" mainTags="None" portrait="./Data/Resource/Image/Portrait/Mob/23000094_B_RobotCircleCoreBlue_P.png" damagedVibrateDuration="0.5" damagedVibrateAmp="1" bossSoundDistance="2500" bossSoundEndDistance="18000" />
+		<stat hp="99676170" asp="100" msp="100" atp="120" evp="92" cap="65" cad="500" car="55" ndd="1017" pap="255638" map="255638" par="150" mar="150" hiddenhpadd="196362055" hiddenwapadd="-67991" />
+		<speed rotation="400" walk="200" run="400" />
+		<distance avoid="400" sight="11300" sightHeightUP="5100" sightHeightDown="5100" customLastSightRadius="11500" customLastSightHeightUp="5500" customLastSightHeightDown="5500" />
+		<skill ids="50001250" levels="1" priorities="1" probs="100" />
+		<additionalEffect codes="50004400" levels="1" />
+		<assist assistType1SkillCount="47" assistType2SkillCount="27" assistType2CheckTick="120000" />
+		<collision shape="box" width="300" height="250" depth="200" />
+		<corpse width="650" height="150" depth="900" added="40" offsetNametag="-200" hitAble="1" rotation="170" />
+		<capsule radius="10" height="300" ignore="1" />
+		<capsule radius="1500" height="500" />
+		<dead time="20" defaultaction="Dead_A" upaction="Dead_A" />
+		<shadow scale="900" bias="1" />
+		<normal action="Idle_A,Bore_A,Walk_A" prob="5000,3000,2000" movearea="150" maidExpired="Idle_A" />
+		<dropiteminfo dropHeight="300" dropDistanceBase="300" dropDistanceRandom="20" globalDropBoxId="4" globalDeadDropBoxId="1011" individualDropBoxId="23000094" globalHitDropBoxId="100000" />
+		<lookattarget lookAtMyPCWhenTalking="0" useTalkMotion="1" />
+		<aiInfo path="AI_RobotCircleCoreBlue.xml" />
+	</environment>
+	<effectdummy>
+		<dummy name="Eff_Head">
+			<attachInfo parentNode="Bip01 Head" applyWorldTransform="false" applyLocalScale="true" />
+			<transform translate="20.000000, 10.000000, 0.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.500000" />
+		</dummy>
+		<dummy name="Eff_Body">
+			<attachInfo parentNode="Bip01 Spine" applyWorldTransform="false" applyLocalScale="true" />
+			<transform translate="0.000000, 30.000000, 0.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.500000" />
+		</dummy>
+		<dummy name="Eff_Foot">
+			<attachInfo parentNode="Main_Point01" applyWorldTransform="false" applyLocalScale="true" />
+			<transform translate="0.000000, 0.000000, 0.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.500000" />
+		</dummy>
+		<dummy name="Eff_UI">
+			<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
+			<transform translate="0.000000, -50.000000, 550.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.000000" />
+		</dummy>
+		<dummy name="Eff_Damage">
+			<attachInfo parentNode="Eff_UI" applyWorldTransform="true" applyLocalScale="false" />
+			<transform translate="0.000000, 0.000000, -370.000000" rotation="0.000000, 0.000000, 90.000000" scale="1.000000" />
+		</dummy>
+		<dummy name="Eff_Head_World">
+			<attachInfo parentNode="Bip01 Head" applyWorldTransform="true" applyLocalScale="false" />
+			<transform translate="0.000000, -30.000000, 40.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.500000" />
+		</dummy>
+		<dummy name="Eff_Body_World">
+			<attachInfo parentNode="Bip01 Spine" applyWorldTransform="true" applyLocalScale="false" />
+			<transform translate="0.000000, -70.000000, 0.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.500000" />
+		</dummy>
+		<dummy name="Eff_Foot_World">
+			<attachInfo parentNode="Main_Point01" applyWorldTransform="true" applyLocalScale="false" />
+			<transform translate="0.000000, 0.000000, 0.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.500000" />
+		</dummy>
+	</effectdummy>
+</ms2>

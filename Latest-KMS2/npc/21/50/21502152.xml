@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 파싱해서 사용하는 데이터이니 직접 수정하지 마세요 -->
+<ms2>
+	<environment feature="SnowKingdom" locale="">
+		<model kfm="22000101_N_HugeKnightStatue" scale="0.8" />
+		<basic friendly="1" npcAttackGroup="2" npcDefenseGroup="1" minimapIconName="friendly" nametag="1" nametagSize="18" hpBar="1" defenceMaterial="4" hitImmune="80" abnormalImmune="80" level="60" rankIcon="c" difficulty="60" propertyTags="keep_battle" raceString="spirit" gender="2" mainTags="None" portrait="./Data/Resource/Image/Portrait/Mob/22000101_N_HugeKnightStatue_P.png" damagedVibrateDuration="0.5" damagedVibrateAmp="1" />
+		<stat hp="145332969" asp="100" msp="100" atp="99999" evp="82" cap="67" cad="500" car="50" ndd="799" pap="50114" map="50129" par="7" mar="7" />
+		<speed rotation="720" walk="150" run="300" />
+		<distance avoid="140" sight="9000" sightHeightUP="9000" sightHeightDown="11" customLastSightRadius="9990" customLastSightHeightUp="9900" customLastSightHeightDown="20" />
+		<skill ids="50000610" levels="1" priorities="1" probs="100" />
+		<additionalEffect codes="50004505" levels="1" />
+		<collision shape="box" width="180" height="310" depth="130" />
+		<capsule radius="40" height="150" />
+		<dead time="999" defaultaction="Dead_A" upaction="Dead_A" />
+		<shadow scale="350" bias="1" />
+		<normal action="Idle_A" prob="10000" maidExpired="Idle_A" />
+		<lookattarget lookAtMyPCWhenTalking="0" useTalkMotion="1" />
+		<aiInfo path="BossDungeon/SnowKing_Normal/Friend/AI_HugeKnightStatue_Left.xml" />
+		<exp customExp="0" />
+	</environment>
+</ms2>

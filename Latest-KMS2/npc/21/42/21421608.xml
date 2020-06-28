@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 파싱해서 사용하는 데이터이니 직접 수정하지 마세요 -->
+<ms2>
+	<environment feature="ChronicleDungeon60_01" locale="">
+		<model kfm="21000962_M_DemonBowGreen" />
+		<basic npcAttackGroup="1" npcDefenseGroup="2" nametag="1" nametagSize="18" minimap="0" hpBar="1" defenceMaterial="3" hitImmune="1" abnormalImmune="1" level="60" rankIcon="c" carePathToEnemy="1" difficulty="60" raceString="spirit" gender="2" mainTags="None" portrait="./Data/Resource/Image/Portrait/Mob/21000962_M_DemonBowGreen_P.png" damagedColorScale="6" damagedVibrateDuration="1" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" skipFrame="1" />
+		<stat hp="60803" asp="100" msp="100" atp="80" evp="82" cap="67" cad="500" car="50" ndd="702" pap="137814" map="137856" par="90" mar="90" />
+		<speed rotation="720" walk="175" run="350" />
+		<distance avoid="100" sight="4500" sightHeightUP="300" sightHeightDown="0" />
+		<skill ids="40600318,40600319" levels="1,1" priorities="1,1" probs="50,50" />
+		<collision shape="box" width="100" height="115" depth="70" />
+		<capsule radius="50" height="150" />
+		<dead time="5" defaultaction="Dead_A,Dead_B" upaction="Dead_B" />
+		<push back="1" up="1" knockback="1" />
+		<shadow scale="200" bias="1" />
+		<normal action="Idle_A,Bore_A,Walk_A" prob="4500,1000,4500" movearea="150" maidExpired="Idle_A" />
+		<dropiteminfo dropHeight="150" dropDistanceBase="140" dropDistanceRandom="10" globalDropBoxId="74" />
+		<lookattarget lookAtMyPCWhenTalking="0" useTalkMotion="1" />
+		<aiInfo path="AI_DefaultNew.xml" />
+		<exp customExp="0" />
+	</environment>
+</ms2>

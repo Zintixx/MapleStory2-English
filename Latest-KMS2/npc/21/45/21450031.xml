@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 파싱해서 사용하는 데이터이니 직접 수정하지 마세요 -->
+<ms2>
+	<environment feature="BlackOnyx" locale="">
+		<model kfm="21000715_M_GameConsoleBlack" />
+		<basic npcAttackGroup="1" npcDefenseGroup="2" nametag="1" nametagSize="18" hpBar="1" defenceMaterial="1" hitImmune="1" abnormalImmune="1" level="60" rankIcon="c" carePathToEnemy="1" difficulty="60" propertyTags="keep_battle,battle_on_spawn" raceString="machine" gender="0" mainTags="None" portrait="./Data/Resource/Image/Portrait/Mob/21000715_M_GameConsoleBlack_P.png" damagedColorScale="6" damagedVibrateDuration="1" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" keepEffect="BG/Common/Eff_Ghost_BodyEffect_Red.xml" skipFrame="1" />
+		<stat hp="54541" asp="100" msp="100" atp="80" evp="92" cap="67" cad="500" car="60" ndd="799" pap="200457" map="200518" par="90" mar="90" scaleStatRate_1="8" scaleBaseTap_1="1693946" scaleBaseDef_1="2289" scaleBaseSpaRate_1="0.15" />
+		<distance avoid="100" sightHeightUP="0" sightHeightDown="0" />
+		<skill ids="49908711" levels="1" priorities="1" probs="100" />
+		<collision shape="box" width="85" height="160" depth="100" />
+		<capsule radius="80" height="150" />
+		<dead time="5" defaultaction="Dead_A" upaction="Dead_A" />
+		<push back="1" up="1" knockback="1" />
+		<shadow scale="180" bias="1" />
+		<normal action="Attack_Idle_B" prob="10000" maidExpired="Idle_A" />
+		<dropiteminfo dropHeight="50" dropDistanceBase="100" dropDistanceRandom="50" globalDropBoxId="74" />
+		<lookattarget lookAtMyPCWhenTalking="0" useTalkMotion="1" />
+		<aiInfo path="EventDoungeon/AI_BombComputer_Event_01.xml" />
+	</environment>
+</ms2>

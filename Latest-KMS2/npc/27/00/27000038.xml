@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 파싱해서 사용하는 데이터이니 직접 수정하지 마세요 -->
+<ms2>
+	<environment feature="Season1" locale="">
+		<model kfm="02020078_M_voodoodoll" />
+		<basic npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="enemy" nametag="1" nametagSize="18" hpBar="1" defenceMaterial="5" hitImmune="1" abnormalImmune="1" level="10" rankIcon="c" carePathToEnemy="1" difficulty="10" propertyTags="hide_hpbar_level,event_icon,no_regen_hp,atp_formula_01" raceString="fairy" gender="2" mainTags="None" portrait="./Data/Resource/Image/Portrait/Mob/02020078_M_voodoodoll_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" skipFrame="1" />
+		<stat hp="1962" asp="100" msp="100" atp="80" evp="82" cap="42" cad="500" car="50" ndd="39" pap="182" map="182" par="90" mar="90" scaleStatRate_1="8" scaleBaseTap_1="2688" scaleBaseDef_1="63" scaleBaseSpaRate_1="0.1" scaleStatRate_2="8" scaleBaseTap_2="2688" scaleBaseDef_2="63" scaleBaseSpaRate_2="0.1" />
+		<speed rotation="720" walk="150" run="300" />
+		<distance avoid="90" sight="300" sightHeightUP="300" sightHeightDown="150" />
+		<skill ids="40036001" levels="1" priorities="1" probs="100" coolDown="2000" />
+		<collision shape="box" width="90" height="120" depth="90" />
+		<capsule radius="80" height="150" />
+		<dead time="5" defaultaction="Dead_A,Dead_B" upaction="Dead_B" />
+		<push back="1" up="1" knockback="1" />
+		<shadow scale="230" bias="1" />
+		<normal action="Idle_A,Bore_A,Walk_A" prob="4000,1000,5000" movearea="150" maidExpired="Idle_A" />
+		<dropiteminfo globalDropBoxId="74" />
+		<lookattarget lookAtMyPCWhenTalking="0" useTalkMotion="1" />
+		<aiInfo path="AI_DefaultNew.xml" />
+		<exp customExp="0" />
+	</environment>
+</ms2>

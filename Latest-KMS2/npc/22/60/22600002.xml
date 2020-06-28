@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 파싱해서 사용하는 데이터이니 직접 수정하지 마세요 -->
+<ms2>
+	<environment feature="DarkTear" locale="">
+		<model kfm="22000095_N_Beelzebub" scale="1.5" />
+		<basic npcAttackGroup="1" npcDefenseGroup="2" nametag="1" nametagSize="18" defenceMaterial="1" hitImmune="99" abnormalImmune="99" level="70" class="7" rankIcon="b" carePathToEnemy="1" difficulty="70" propertyTags="keep_battle" raceString="bug" gender="2" mainTags="None" portrait="./Data/Resource/Image/Portrait/Mob/22000095_N_Beelzebub_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Cube_Regen_DarkTear.xml" skipFrame="1" />
+		<stat hp="788580" asp="100" msp="100" atp="81" evp="102" cap="72" cad="500" car="70" ndd="1071" pap="689275" map="588311" par="1500" mar="1500" scaleStatRate_1="8" scaleBaseTap_1="6064143" scaleBaseDef_1="7086" scaleBaseSpaRate_1="0.15" />
+		<speed rotation="720" walk="200" run="400" />
+		<distance avoid="100" sight="999999" sightHeightUP="99999" sightHeightDown="99999" customLastSightRadius="999999" customLastSightHeightUp="99999" customLastSightHeightDown="1000" />
+		<skill ids="60097011" levels="1" priorities="1" probs="100" />
+		<collision shape="box" width="90" height="130" depth="90" />
+		<capsule radius="60" height="150" />
+		<dead time="5" defaultaction="Dead_B" upaction="Dead_B" />
+		<push back="1" up="1" knockback="1" />
+		<shadow scale="150" bias="1" />
+		<normal action="Idle_A" prob="10000" movearea="150" maidExpired="Idle_A" />
+		<dropiteminfo dropHeight="150" dropDistanceBase="100" dropDistanceRandom="50" globalDropBoxId="74" />
+		<lookattarget lookAtMyPCWhenTalking="0" useTalkMotion="1" />
+		<aiInfo path="AI_Beelzebub_Event.xml" />
+	</environment>
+	<effectdummy>
+		<dummy name="Eff_UI">
+			<attachInfo parentNode="Scene Root" applyLocalScale="false" applyWorldTransform="true" />
+			<transform translate="0.0, 0.0, 250.0" rotation="0.0, 0.0, 0.0" scale="1.0" />
+		</dummy>
+	</effectdummy>
+</ms2>

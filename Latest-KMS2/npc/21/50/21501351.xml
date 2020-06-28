@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 파싱해서 사용하는 데이터이니 직접 수정하지 마세요 -->
+<ms2>
+	<environment feature="CrimsonBalrog01" locale="">
+		<model kfm="23000092_B_AirshipBalrogCrimsonFlame" scale="0.95" />
+		<basic npcAttackGroup="1" npcDefenseGroup="2" nametagSize="18" minimap="0" defenceMaterial="2" hitImmune="99" abnormalImmune="99" level="50" rankIcon="c" rotationDisabled="1" difficulty="50" propertyTags="battle_on_spawn,keep_battle,no_die" raceString="machine" gender="2" mainTags="None" portrait="./Data/Resource/Image/Portrait/Mob/23000092_B_AirshipBalrogCrimsonFlame_P.png" damagedVibrateDuration="0.5" damagedVibrateAmp="1" />
+		<stat hp="6000000" asp="100" msp="100" atp="80" evp="97" cap="62" cad="500" car="50" ndd="9999999" pap="139157" map="139201" par="120" mar="120" />
+		<speed walk="200" run="400" />
+		<distance avoid="200" sight="12000" sightHeightUP="1000" sightHeightDown="900" customLastSightRadius="15000" customLastSightHeightUp="1500" customLastSightHeightDown="999" />
+		<skill ids="50009999" levels="4" priorities="1" probs="100" />
+		<collision shape="box" width="2" height="2" depth="2" />
+		<capsule radius="10" height="10" ignore="1" />
+		<dead time="5" defaultaction="Idle_A" upaction="Idle_A" />
+		<normal action="Idle_A" prob="10000" maidExpired="Idle_A" />
+		<lookattarget lookAtMyPCWhenTalking="0" useTalkMotion="1" />
+		<aiInfo path="BossDungeon/BalrogMagicBurster/NAOneplay/AI_AirshipBalrogCrimsonFlameRemove_NAOneplay.xml" />
+		<exp customExp="0" />
+	</environment>
+</ms2>

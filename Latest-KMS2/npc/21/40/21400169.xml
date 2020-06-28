@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 파싱해서 사용하는 데이터이니 직접 수정하지 마세요 -->
+<ms2>
+	<environment feature="KarkarIsland" locale="">
+		<model kfm="02020069_M_BungBung" scale="1.7" />
+		<basic npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="elite_boss" nametag="1" nametagSize="18" hpBar="1" defenceMaterial="1" hitImmune="99" abnormalImmune="99" level="50" rankIcon="c" carePathToEnemy="1" difficulty="50" raceString="bug" gender="2" mainTags="None" portrait="./Data/Resource/Image/Portrait/Mob/02020069_M_BungBung_P.png" damagedColorScale="10" damagedVibrateDuration="1" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" skipFrame="1" />
+		<stat hp="5548" asp="100" msp="100" atp="80" evp="88" cap="62" cad="500" car="50" ndd="567" pap="51434" map="51450" />
+		<speed rotation="720" walk="400" run="800" />
+		<distance avoid="90" sight="9000" sightHeightUP="300" sightHeightDown="1" customLastSightRadius="9900" customLastSightHeightUp="9900" customLastSightHeightDown="1" />
+		<skill ids="50100089" levels="1" priorities="1" probs="100" />
+		<additionalEffect codes="50001013" levels="1" />
+		<collision shape="box" width="50" height="100" depth="50" />
+		<capsule radius="40" height="190" />
+		<dead time="5" defaultaction="Dead_A,Dead_B" upaction="Dead_A,Dead_B" />
+		<push back="1" up="1" knockback="1" />
+		<shadow scale="100" bias="1" />
+		<normal action="Idle_A,Bore_A,Walk_A" prob="2500,1000,6500" movearea="150" maidExpired="Idle_A" />
+		<dropiteminfo dropHeight="50" dropDistanceBase="100" dropDistanceRandom="50" globalDropBoxId="74" />
+		<lookattarget lookAtMyPCWhenTalking="0" useTalkMotion="1" />
+		<aiInfo path="BossDungeon/BeetleBigYellow/AI_BungBungSummonWaterPrison.xml" />
+	</environment>
+</ms2>

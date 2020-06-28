@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 파싱해서 사용하는 데이터이니 직접 수정하지 마세요 -->
+<ms2>
+	<environment feature="Season1" locale="">
+		<model kfm="21000391_M_TotemWind" scale="1.6" />
+		<basic npcAttackGroup="1" npcDefenseGroup="2" nametag="1" nametagSize="18" minimap="0" hpBar="1" defenceMaterial="1" hitImmune="99" abnormalImmune="99" level="50" rankIcon="c" rotationDisabled="1" carePathToEnemy="1" difficulty="50" raceString="creature" gender="2" mainTags="None" portrait="./Data/Resource/Image/Portrait/Mob/21000391_M_TotemWind_P.png" damagedColorScale="10" damagedVibrateDuration="1" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" skipFrame="1" />
+		<stat hp="150" asp="100" msp="100" atp="80" evp="82" cap="62" cad="500" car="50" ndd="999999999" pap="42861" map="42875" />
+		<distance avoid="100" sight="800" sightHeightUP="300" sightHeightDown="0" />
+		<skill ids="49018001" levels="1" priorities="1" probs="100" coolDown="5000" />
+		<collision shape="box" width="100" height="200" depth="100" />
+		<capsule radius="40" height="150" />
+		<dead time="1" defaultaction="Idle_A" upaction="Idle_A" />
+		<shadow scale="130" bias="1" />
+		<normal action="Idle_A" prob="10000" maidExpired="Idle_A" />
+		<dropiteminfo globalDropBoxId="74" />
+		<lookattarget lookAtMyPCWhenTalking="0" useTalkMotion="1" />
+		<aiInfo path="AI_SummonCurseTotem.xml" />
+		<exp customExp="0" />
+	</environment>
+	<effectdummy>
+		<dummy name="Eff_Head">
+			<attachInfo parentNode="Scene Root" applyWorldTransform="false" applyLocalScale="true" />
+			<transform translate="0.000000, -22.000000, 100.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.100000" />
+		</dummy>
+		<dummy name="Eff_Body">
+			<attachInfo parentNode="Scene Root" applyWorldTransform="false" applyLocalScale="true" />
+			<transform translate="0.000000, -22.000000, 30.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.100000" />
+		</dummy>
+		<dummy name="Eff_Foot">
+			<attachInfo parentNode="Scene Root" applyWorldTransform="false" applyLocalScale="true" />
+			<transform translate="0.000000, -22.000000, 0.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.100000" />
+		</dummy>
+		<dummy name="Eff_UI">
+			<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
+			<transform translate="0.000000, -22.000000, 300.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.000000" />
+		</dummy>
+		<dummy name="Eff_Head_World">
+			<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
+			<transform translate="0.000000, -35.000000, 160.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.100000" />
+		</dummy>
+		<dummy name="Eff_Body_World">
+			<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
+			<transform translate="0.000000, -35.000000, 50.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.100000" />
+		</dummy>
+		<dummy name="Eff_Foot_World">
+			<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
+			<transform translate="0.000000, -35.000000, 0.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.100000" />
+		</dummy>
+	</effectdummy>
+</ms2>

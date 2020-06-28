@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 파싱해서 사용하는 데이터이니 직접 수정하지 마세요 -->
+<ms2>
+	<environment feature="ChronicleDungeon60_01" locale="">
+		<model kfm="Dummy" />
+		<basic friendly="1" npcAttackGroup="2" npcDefenseGroup="4" nametagSize="18" minimap="0" attackDamage="1" defenceMaterial="1" hitImmune="99" abnormalImmune="99" level="60" rankIcon="c" rotationDisabled="1" difficulty="60" propertyTags="keep_battle, battle_on_spawn" raceString="unknown" gender="2" mainTags="None" portrait="./Data/Resource/Image/Portrait/Mob/Dummy_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" skipFrame="1" />
+		<stat hp="25238" asp="100" msp="100" atp="80" evp="82" cap="67" cad="500" car="50" ndd="702" pap="300685" map="300778" par="90" mar="90" />
+		<distance avoid="45" sight="10000" sightHeightUP="10000" sightHeightDown="10000" customLastSightRadius="10000" customLastSightHeightUp="10000" customLastSightHeightDown="10000" />
+		<skill ids="99900391" levels="1" priorities="1" probs="100" />
+		<collision shape="box" width="1" height="1" depth="1" />
+		<capsule radius="1" height="1" ignore="1" />
+		<dead time="5" defaultaction="Idle_A" upaction="Idle_A" />
+		<normal action="Idle_A" prob="10000" maidExpired="Idle_A" />
+		<lookattarget lookAtMyPCWhenTalking="0" useTalkMotion="1" />
+		<aiInfo path="AI_FallingIronPlate.xml" />
+		<exp customExp="0" />
+	</environment>
+</ms2>

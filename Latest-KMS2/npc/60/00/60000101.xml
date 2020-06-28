@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 파싱해서 사용하는 데이터이니 직접 수정하지 마세요 -->
+<ms2>
+	<environment feature="Colosseum01" locale="">
+		<model kfm="11003271_Knight_battle" scale="1.3" />
+		<basic npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="boss" nametag="1" nametagSize="18" defenceMaterial="1" hitImmune="99" abnormalImmune="99" level="70" class="6" rankIcon="a" carePathToEnemy="1" difficulty="70" raceString="combine" gender="0" mainTags="None" portrait="./Data/Resource/Image/Portrait/Npc/11003271_Knight_battle_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" />
+		<stat hp="100000000" asp="100" msp="100" atp="120" evp="108" cap="72" cad="200" car="70" ndd="1071" pap="3831762" map="3831762" par="90" mar="90" hiddenhpadd="36000000" hiddenwapadd="3371950" scaleStatRate_1="1.4" scaleBaseTap_1="30508833" scaleBaseDef_1="12120" scaleBaseSpaRate_1="0.2" scaleStatRate_2="1.4" scaleBaseTap_2="49955242" scaleBaseDef_2="22844" scaleBaseSpaRate_2="0.2" />
+		<speed rotation="720" walk="300" run="700" />
+		<distance avoid="50" sight="90000" sightHeightUP="9000" sightHeightDown="9000" customLastSightRadius="9999" customLastSightHeightUp="9999" customLastSightHeightDown="9999" />
+		<skill ids="60150001" levels="1" priorities="1" probs="1" />
+		<combat canShowHideTarget="true" />
+		<collision shape="box" width="120" height="200" depth="120" />
+		<capsule radius="50" height="200" />
+		<dead time="4" defaultaction="Stun_A" upaction="Stun_A" />
+		<push back="1" up="1" knockback="1" />
+		<shadow scale="150" bias="1" />
+		<normal action="Idle_A,Bore_A" prob="7000,3000" maidExpired="Idle_A" />
+		<dropiteminfo globalDeadDropBoxId="1011" />
+		<lookattarget lookAtMyPCWhenTalking="0" useTalkMotion="1" />
+		<aiInfo path="BossDungeon/Colosseum/AI_Rove_Colosseum.xml" />
+		<exp customExp="0" />
+	</environment>
+</ms2>

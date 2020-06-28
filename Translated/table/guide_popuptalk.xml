@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ms2>
+	<event id="60001150" saveId="60001150" desc="퀸크빈 럼블 퀘스트 가능 알림" feature="Colosseum01">
+		<open>
+			<condition type="enterDungeon" value="24096001" />
+			<condition type="allOf">
+				<condition type="questComplete" value="60001150" not="1" />
+				<condition type="questSatisfied" value="60001150" not="1" />
+				<condition type="questProgress" value="60001150" not="1" />
+			</condition>
+		</open>
+		<close>
+			<condition type="questProgress" value="60001150" />
+		</close>
+		<openAction>
+			<action type="SideNpcTalk" scriptID="60001150" npcID="11004288" illust="nagi_normal" duration="10000" voice="" />
+		</openAction>
+	</event>
+	<event id="10003400" saveId="10003400" isForce="1" desc="파멸의 서막 퀘스트 가능 알림" feature="EpicApocalypse01">
+		<open>
+			<condition type="myPlayerLevel" value="75" />
+			<condition type="questComplete" value="10003390" />
+			<condition type="allOf">
+				<condition type="questComplete" value="10003399" not="1" />
+				<condition type="questSatisfied" value="10003399" not="1" />
+				<condition type="questProgress" value="10003399" not="1" />
+			</condition>
+		</open>
+		<close>
+			<condition type="questSatisfied" value="10003399" />
+		</close>
+		<openAction>
+			<action type="SideNpcTalk" scriptID="10003400" npcID="11000160" illust="11000160" duration="10000" voice="" />
+		</openAction>
+	</event>
+	<event id="10003440" saveId="10003440" isForce="1" desc="한계 돌파 퀘스트 가능 알림" feature="UnlimitedEnchant">
+		<open>
+			<condition type="myPlayerLevel" value="75" />
+			<condition type="questComplete" value="10003433" />
+			<condition type="allOf">
+				<condition type="questComplete" value="10003440" not="1" />
+				<condition type="questSatisfied" value="10003440" not="1" />
+				<condition type="questProgress" value="10003440" not="1" />
+			</condition>
+		</open>
+		<close>
+			<condition type="questSatisfied" value="10003440" />
+		</close>
+		<openAction>
+			<action type="SideNpcTalk" scriptID="10003440" npcID="11003883" illust="Beatrice_normal" duration="10000" voice="" />
+		</openAction>
+	</event>
+	<event id="10003444" saveId="10003444" isForce="1" desc="의미 불명의 구슬 퀘스트 가능 알림" feature="EpicApocalypse02">
+		<open>
+			<condition type="myPlayerLevel" value="75" />
+			<condition type="questComplete" value="10003443" />
+			<condition type="allOf">
+				<condition type="questComplete" value="10003444" not="1" />
+				<condition type="questSatisfied" value="10003444" not="1" />
+				<condition type="questProgress" value="10003444" not="1" />
+			</condition>
+		</open>
+		<close>
+			<condition type="questSatisfied" value="10003444" />
+		</close>
+		<openAction>
+			<action type="SideNpcTalk" scriptID="10003444" npcID="11004790" illust="Baron_normal" duration="10000" voice="" />
+		</openAction>
+	</event>
+</ms2>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 파싱해서 사용하는 데이터이니 직접 수정하지 마세요 -->
+<ms2>
+	<environment feature="ShrineOfGuidance" locale="">
+		<model kfm="21000934_M_DarkSpiritSpike" scale="0.9" />
+		<basic npcAttackGroup="1" npcDefenseGroup="2" nametag="1" nametagSize="18" minimap="0" hpBar="1" defenceMaterial="1" hitImmune="99" abnormalImmune="99" level="50" rankIcon="c" difficulty="50" propertyTags="keep_battle" raceString="unknown" gender="2" mainTags="None" portrait="./Data/Resource/Image/Portrait/Npc/21000934_M_DarkSpiritSpike_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" regenEffect="NPC/Common/Eff_NPC_Regen_D_Normal.xml" />
+		<stat hp="2219" asp="100" msp="100" atp="80" evp="82" cap="62" cad="500" car="50" ndd="567" pap="10001" map="10004" par="90" mar="90" />
+		<speed rotation="720" walk="250" run="500" />
+		<distance avoid="30" sight="4500" sightHeightUP="100" sightHeightDown="350" customLastSightRadius="4500" customLastSightHeightUp="100" customLastSightHeightDown="350" />
+		<skill ids="40427021" levels="1" priorities="1" probs="1000" />
+		<collision shape="box" width="100" height="160" depth="100" />
+		<capsule radius="30" height="150" />
+		<dead time="1" defaultaction="Dead_A,Dead_B" upaction="Dead_B" />
+		<push back="1" up="1" knockback="1" />
+		<shadow scale="85" bias="1" />
+		<normal action="Idle_A,Bore_A,Walk_A" prob="4500,1000,4500" movearea="75" maidExpired="Idle_A" />
+		<lookattarget lookAtMyPCWhenTalking="0" useTalkMotion="1" />
+		<aiInfo path="AI_DefaultNew.xml" />
+		<exp customExp="0" />
+	</environment>
+</ms2>

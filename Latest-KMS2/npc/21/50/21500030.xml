@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 파싱해서 사용하는 데이터이니 직접 수정하지 마세요 -->
+<ms2>
+	<environment feature="EliteRenewal" locale="">
+		<model kfm="21090032_M_StoneGolemBlue" scale="1.2" />
+		<basic npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="enemy" nametag="1" nametagSize="18" hpBar="1" defenceMaterial="1" hitImmune="99" abnormalImmune="99" level="50" rankIcon="c" carePathToEnemy="1" difficulty="50" propertyTags="keep_battle" raceString="spirit" gender="2" mainTags="None" portrait="./Data/Resource/Image/Portrait/Mob/21090032_M_StoneGolemBlue_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" skipFrame="1" />
+		<stat hp="71019" asp="100" msp="100" atp="80" evp="82" cap="62" cad="500" car="50" ndd="567" pap="142872" map="142917" mar="90" hiddenhpadd="139457" hiddenwapadd="22000" />
+		<speed rotation="720" walk="95" run="190" />
+		<distance avoid="60" sight="2000" sightHeightUP="300" sightHeightDown="0" customLastSightRadius="9900" customLastSightHeightUp="9900" customLastSightHeightDown="9900" />
+		<skill ids="50000057" levels="1" priorities="1" probs="100" />
+		<collision shape="box" width="230" height="280" depth="130" />
+		<capsule radius="100" height="230" />
+		<dead time="5" defaultaction="Dead_A,Dead_B" upaction="Dead_B" />
+		<push back="1" up="1" knockback="1" />
+		<shadow scale="450" bias="1" />
+		<normal action="Idle_A,Bore_A,Walk_A" prob="4500,1500,4000" movearea="150" maidExpired="Idle_A" />
+		<dropiteminfo globalDropBoxId="74" />
+		<lookattarget lookAtMyPCWhenTalking="0" useTalkMotion="1" />
+		<aiInfo path="BossDungeon/SandstoneGiantBlueShine/AI_StoneGolemBlue.xml" />
+		<exp customExp="0" />
+	</environment>
+	<effectdummy>
+		<dummy name="Eff_Head">
+			<attachInfo parentNode="Bip01 Head" applyWorldTransform="false" applyLocalScale="true" />
+			<transform translate="40.000000, 0.000000, 0.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.200000" />
+		</dummy>
+		<dummy name="Eff_Body">
+			<attachInfo parentNode="Bip01 Spine" applyWorldTransform="false" applyLocalScale="true" />
+			<transform translate="0.000000, 0.000000, 0.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.200000" />
+		</dummy>
+		<dummy name="Eff_Foot">
+			<attachInfo parentNode="Scene Root" applyWorldTransform="false" applyLocalScale="true" />
+			<transform translate="0.000000, 0.000000, 0.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.200000" />
+		</dummy>
+		<dummy name="Eff_UI">
+			<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
+			<transform translate="0.000000, 0.000000, 350.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.000000" />
+		</dummy>
+		<dummy name="Eff_Head_World">
+			<attachInfo parentNode="Bip01 Head" applyWorldTransform="true" applyLocalScale="false" />
+			<transform translate="0.000000, 0.000000, 30.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.200000" />
+		</dummy>
+		<dummy name="Eff_Body_World">
+			<attachInfo parentNode="Bip01 Spine" applyWorldTransform="true" applyLocalScale="false" />
+			<transform translate="0.000000, 0.000000, 0.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.200000" />
+		</dummy>
+		<dummy name="Eff_Foot_World">
+			<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
+			<transform translate="0.000000, 0.000000, 0.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.200000" />
+		</dummy>
+	</effectdummy>
+</ms2>

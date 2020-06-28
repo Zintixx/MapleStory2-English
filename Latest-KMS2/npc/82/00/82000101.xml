@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 파싱해서 사용하는 데이터이니 직접 수정하지 마세요 -->
+<ms2>
+	<environment feature="Develop" locale="">
+		<model kfm="23000096_B_GigantikaTail" scale="0.9" />
+		<basic npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="boss" nametag="1" nametagSize="18" defenceMaterial="3" hitImmune="99" abnormalImmune="90" level="65" class="4" rankIcon="a" difficulty="65" propertyTags="keep_battle" raceString="machine" gender="2" mainTags="None" portrait="./Data/Resource/Image/Portrait/Mob/23000096_B_GigantikaTail_P.png" damagedColorScale="6" damagedVibrateDuration="0.5" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" checkCameraDistance="2000" extraCameraDistance="600" />
+		<stat hp="40735144" asp="100" msp="100" atp="120" evp="102" cap="70" cad="500" car="65" ndd="930" pap="282236" map="282236" hiddenhpadd="376890429" hiddenwapadd="1751371" />
+		<speed rotation="400" />
+		<distance avoid="120" sight="90000" sightHeightUP="9000" sightHeightDown="9000" customLastSightRadius="9999" customLastSightHeightUp="9999" customLastSightHeightDown="9999" />
+		<skill ids="50101006" levels="1" priorities="1" probs="100" />
+		<additionalEffect codes="50004400" levels="1" />
+		<collision shape="box" width="1650" height="2400" depth="4500" depthOffset="1500" heightOffset="-500" />
+		<capsule radius="200" height="400" />
+		<dead time="10" defaultaction="Dead_B" upaction="Dead_B" />
+		<push back="1" up="1" knockback="1" />
+		<shadow scale="180" bias="1" />
+		<normal action="Idle_A" prob="10000" maidExpired="Idle_A" />
+		<dropiteminfo globalDropBoxId="74" />
+		<lookattarget lookAtMyPCWhenTalking="0" useTalkMotion="1" />
+		<aiInfo path="AI_GigantikaTail_test_1.xml" />
+		<nodeCollisions>
+			<collision targetNode="b_taill09" volume="600.000000, 300.000000, 500.000000" offset="70.000000, 0.000000, -270.000000" />
+			<collision targetNode="b_taill08" volume="600.000000, 300.000000, 500.000000" offset="0.000000, 0.000000, -270.000000" />
+			<collision targetNode="b_taill07" volume="600.000000, 400.000000, 500.000000" offset="0.000000, 0.000000, -270.000000" />
+			<collision targetNode="b_taill06" volume="600.000000, 400.000000, 500.000000" offset="0.000000, 0.000000, -270.000000" />
+			<collision targetNode="b_taill05" volume="600.000000, 400.000000, 500.000000" offset="0.000000, 0.000000, -270.000000" />
+			<collision targetNode="b_taill04" volume="600.000000, 400.000000, 500.000000" offset="0.000000, 0.000000, -270.000000" />
+			<collision targetNode="b_taill03" volume="600.000000, 400.000000, 500.000000" offset="0.000000, 0.000000, -270.000000" />
+			<collision targetNode="b_taill02" volume="600.000000, 400.000000, 500.000000" offset="0.000000, 0.000000, -270.000000" />
+			<collision targetNode="b_taill01" volume="600.000000, 400.000000, 500.000000" offset="0.000000, 0.000000, -270.000000" />
+		</nodeCollisions>
+		<nodeServerCollisions>
+			<collision volume="550.000000, 550.000000, 300.000000" offset="0.000000, 270.000000, 0.000000" />
+		</nodeServerCollisions>
+		<exp customExp="0" />
+	</environment>
+</ms2>

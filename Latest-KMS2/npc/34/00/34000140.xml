@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 파싱해서 사용하는 데이터이니 직접 수정하지 마세요 -->
+<ms2>
+	<environment feature="GuildRaid01" locale="">
+		<model kfm="21000388_M_DarkSlingBrown" scale="6" />
+		<basic npcAttackGroup="1" npcDefenseGroup="2" nametagSize="18" minimap="0" hpBar="1" defenceMaterial="6" hitImmune="99" abnormalImmune="99" level="50" rankIcon="c" carePathToEnemy="1" difficulty="50" raceString="spirit" gender="2" emotionID="21000388" mainTags="None" portrait="./Data/Resource/Image/Portrait/Mob/21000388_M_DarkSlingBrown_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" regenEffect="NPC/Skill/Sling/Eff_Sling_Attack_01_B_Splash_Cast_02.xml" skipFrame="1" checkCameraDistance="2500" extraCameraDistance="300" />
+		<stat hp="199741" asp="100" msp="100" atp="80" evp="82" cap="62" cad="500" car="50" ndd="5108" pap="142872" map="142917" par="90" mar="90" hiddenhpadd="15077" hiddenwapadd="94987" hiddennddadd="1108" />
+		<speed rotation="720" />
+		<distance avoid="300" sight="450" sightHeightUP="150" sightHeightDown="150" customLastSightRadius="450" customLastSightHeightUp="150" customLastSightHeightDown="150" />
+		<skill ids="41000401" levels="1" priorities="1" probs="100" coolDown="2000" />
+		<collision shape="box" width="140" height="80" depth="140" heightOffset="1200" />
+		<capsule radius="100" height="80" />
+		<dead time="5" defaultaction="Dead_A" upaction="Dead_A" />
+		<push back="1" up="1" knockback="1" />
+		<shadow scale="600" bias="1" />
+		<normal action="Idle_A,Bore_A" prob="9000,1000" movearea="150" maidExpired="Idle_A" />
+		<dropiteminfo dropHeight="50" dropDistanceBase="100" dropDistanceRandom="50" globalDropBoxId="74" />
+		<lookattarget lookAtMyPCWhenTalking="0" useTalkMotion="1" />
+		<aiInfo path="GuildRaid/RainbowSlimeFactory/AI_MutantKingSlime.xml" />
+		<exp customExp="0" />
+	</environment>
+</ms2>

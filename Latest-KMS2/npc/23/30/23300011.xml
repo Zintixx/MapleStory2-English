@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 파싱해서 사용하는 데이터이니 직접 수정하지 마세요 -->
+<ms2>
+	<environment feature="DarkTear" locale="">
+		<model kfm="92000003_N_ArakiaDark" scale="2.5" />
+		<basic npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="boss" nametag="1" nametagSize="18" defenceMaterial="1" hitImmune="99" abnormalImmune="99" level="70" class="6" rankIcon="a" carePathToEnemy="1" difficulty="70" propertyTags="battle_on_spawn,keep_battle" raceString="devil" gender="1" mainTags="None" portrait="./Data/Resource/Image/Portrait/Mob/92000003_N_ArakiaDark_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" bossSoundDistance="1300" bossSoundEndDistance="2400" />
+		<stat hp="1819801" asp="100" msp="100" atp="120" evp="108" cap="72" cad="500" car="70" ndd="1071" pap="942581" map="942866" par="1500" mar="1500" scaleStatRate_1="8" scaleBaseTap_1="6064143" scaleBaseDef_1="7086" scaleBaseSpaRate_1="0.15" />
+		<speed rotation="720" walk="225" run="450" />
+		<distance avoid="100" sight="999999" sightHeightUP="99999" sightHeightDown="99999" customLastSightRadius="999999" customLastSightHeightUp="9999" customLastSightHeightDown="9999" />
+		<skill ids="40426001,40426011" levels="1,1" priorities="1,1" probs="50,50" />
+		<additionalEffect codes="50004400" levels="1" />
+		<combat canShowHideTarget="true" />
+		<collision shape="box" width="270" height="200" depth="170" />
+		<capsule radius="50" height="400" />
+		<dead time="5" defaultaction="Dead_A" upaction="Dead_A" />
+		<shadow scale="300" bias="1" />
+		<normal action="Idle_A" prob="10000" maidExpired="Idle_A" />
+		<dropiteminfo dropHeight="50" dropDistanceBase="100" dropDistanceRandom="50" globalDropBoxId="74" globalDeadDropBoxId="1011" />
+		<lookattarget lookAtMyPCWhenTalking="0" useTalkMotion="1" />
+		<aiInfo path="AI_Arakia_Event.xml" />
+	</environment>
+</ms2>

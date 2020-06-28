@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 파싱해서 사용하는 데이터이니 직접 수정하지 마세요 -->
+<ms2>
+	<environment feature="Kritias_2018_12" locale="">
+		<model kfm="21010104_N_KerbesThugBatonPurple" />
+		<basic npcAttackGroup="1" npcDefenseGroup="2" nametag="1" nametagSize="18" minimap="0" hpBar="1" defenceMaterial="1" hitImmune="1" abnormalImmune="1" level="79" rankIcon="c" carePathToEnemy="1" maxSpawnCount="1" groupSpawnCount="1" rareDegree="100" difficulty="79" propertyTags="back_to_on_battle_end" raceString="combine" gender="2" emotionID="21010104" subTags="피돼지" portrait="./Data/Resource/Image/Portrait/Mob/21010104_N_KerbesThugBatonPurple_P.png" damagedColorScale="6" damagedVibrateDuration="1" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" skipFrame="1" />
+		<stat hp="5029793" asp="100" msp="100" atp="80" evp="111" cap="77" cad="500" car="79" ndd="1586" pap="955425" map="955415" par="90" mar="90" hiddenhpadd="2197990" hiddenwapadd="496816" scaleStatRate_1="1.4" scaleBaseTap_1="15194412" scaleBaseDef_1="14863" scaleBaseSpaRate_1="0.2" scaleStatRate_2="1.4" scaleBaseTap_2="22349270" scaleBaseDef_2="23089" scaleBaseSpaRate_2="0.2" />
+		<speed rotation="720" walk="120" run="240" />
+		<distance avoid="100" sight="400" sightHeightUP="300" sightHeightDown="0" />
+		<skill ids="60180079,60180080" levels="1,1" priorities="1,1" probs="70,30" coolDown="3000" />
+		<additionalEffect codes="90000931" levels="1" />
+		<collision shape="box" width="250" height="130" depth="150" />
+		<capsule radius="50" height="180" />
+		<dead time="5" defaultaction="Dead_A,Dead_B" upaction="Dead_B" />
+		<push back="1" up="1" knockback="1" />
+		<shadow scale="130" bias="1" />
+		<normal action="Idle_A,Bore_A,Walk_A" prob="4100,900,5000" movearea="150" maidExpired="Idle_A" />
+		<dropiteminfo dropHeight="150" dropDistanceBase="100" dropDistanceRandom="50" globalDropBoxId="1,10008" individualDropBoxId="725021502" />
+		<lookattarget lookAtMyPCWhenTalking="0" useTalkMotion="1" />
+		<aiInfo path="AI_DefaultNew.xml" />
+	</environment>
+</ms2>

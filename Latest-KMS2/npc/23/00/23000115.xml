@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 파싱해서 사용하는 데이터이니 직접 수정하지 마세요 -->
+<ms2>
+	<environment feature="PinkBean01" locale="">
+		<model kfm="23000088_B_Pinkbean" />
+		<basic npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="boss" nametag="1" nametagSize="18" defenceMaterial="1" hitImmune="98" abnormalImmune="98" level="60" class="6" rankIcon="a" difficulty="60" propertyTags="keep_battle" raceString="spirit" gender="2" emotionID="23000088" mainTags="None" portrait="./Data/Resource/Image/Portrait/Mob/23000088_B_Pinkbean_P.png" damagedVibrateDuration="0.5" damagedVibrateAmp="1" />
+		<stat hp="1984575146" asp="100" msp="100" atp="120" evp="125" cap="67" cad="250" car="90" ndd="1835" pap="4411295" map="4412650" par="225" mar="225" hiddenhpadd="694601301" hiddenwapadd="2691716" />
+		<speed rotation="720" walk="155" run="310" />
+		<distance avoid="400" sight="8000" sightHeightUP="8000" sightHeightDown="8000" customLastSightRadius="99999" customLastSightHeightUp="99999" customLastSightHeightDown="99999" />
+		<skill ids="50001205" levels="1" priorities="1" probs="100" />
+		<additionalEffect codes="50004400,90000797,90000804" levels="1,5,5" />
+		<collision shape="box" width="220" height="250" depth="180" />
+		<capsule radius="100" height="250" />
+		<dead time="8" defaultaction="Dead_A" upaction="Dead_A" extendRoomTime="60000" />
+		<shadow scale="450" bias="1" />
+		<normal action="Idle_A" prob="10000" maidExpired="Idle_A" />
+		<dropiteminfo globalDropBoxId="74" />
+		<lookattarget lookAtMyPCWhenTalking="0" useTalkMotion="1" />
+		<aiInfo path="BossDungeon/Pinkbean/Chaos/AI_Pinkbean_Chaos.xml" />
+		<exp customExp="0" />
+	</environment>
+	<effectdummy>
+		<dummy name="Eff_Head">
+			<attachInfo parentNode="Bip01 Head" applyWorldTransform="false" applyLocalScale="true" />
+			<transform translate="30.000000, 45.000000, 0.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.300000" />
+		</dummy>
+		<dummy name="Eff_Body">
+			<attachInfo parentNode="Bip01 Pelvis" applyWorldTransform="false" applyLocalScale="true" />
+			<transform translate="0.000000, 50.000000, 0.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.300000" />
+		</dummy>
+		<dummy name="Eff_Foot">
+			<attachInfo parentNode="Main_Point01 NonAccum" applyWorldTransform="false" applyLocalScale="true" />
+			<transform translate="0.000000, -20.000000, 0.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.300000" />
+		</dummy>
+		<dummy name="Eff_UI">
+			<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
+			<transform translate="0.000000, 0.000000, 280.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.000000" />
+		</dummy>
+		<dummy name="Eff_Head_World">
+			<attachInfo parentNode="Bip01 Head" applyWorldTransform="true" applyLocalScale="false" />
+			<transform translate="0.000000, -45.000000, 30.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.300000" />
+		</dummy>
+		<dummy name="Eff_Body_World">
+			<attachInfo parentNode="Bip01 Pelvis" applyWorldTransform="true" applyLocalScale="false" />
+			<transform translate="0.000000, -50.000000, 0.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.300000" />
+		</dummy>
+		<dummy name="Eff_Foot_World">
+			<attachInfo parentNode="Main_Point01 NonAccum" applyWorldTransform="true" applyLocalScale="false" />
+			<transform translate="0.000000, -20.000000, 0.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.300000" />
+		</dummy>
+	</effectdummy>
+</ms2>

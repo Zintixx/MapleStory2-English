@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 파싱해서 사용하는 데이터이니 직접 수정하지 마세요 -->
+<ms2>
+	<environment feature="ShrineOfGuidance" locale="">
+		<model kfm="11001556_M_Laoz" scale="2" />
+		<basic npcAttackGroup="1" npcDefenseGroup="2" minimapIconName=" eliteboss" nametag="1" nametagSize="18" defenceMaterial="1" hitImmune="99" abnormalImmune="99" level="50" class="7" rankIcon="b" difficulty="50" propertyTags="keep_battle" raceString="unknown" gender="2" mainTags="None" portrait="./Data/Resource/Image/Portrait/Npc/11001556_M_Laoz_Fake_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" />
+		<stat hp="267059" asp="100" msp="100" atp="81" evp="82" cap="62" cad="500" car="50" ndd="567" pap="32003" map="32013" par="90" mar="90" />
+		<speed rotation="720" walk="200" run="400" />
+		<distance avoid="50" sight="4500" sightHeightUP="300" sightHeightDown="150" customLastSightRadius="4500" customLastSightHeightUp="300" customLastSightHeightDown="150" />
+		<skill ids="49157001" levels="1" priorities="1" probs="1000" />
+		<additionalEffect codes="60153001,50004400" levels="1,1" />
+		<collision shape="box" width="100" height="160" depth="100" />
+		<capsule radius="30" height="150" />
+		<dead defaultaction="Sit_Down_A" upaction="Sit_Down_A" />
+		<push back="1" up="1" knockback="1" />
+		<shadow scale="180" bias="1" />
+		<normal action="Idle_A" prob="10000" maidExpired="Idle_A" />
+		<dropiteminfo dropHeight="300" dropDistanceBase="150" dropDistanceRandom="50" fireVelocity="50" />
+		<lookattarget lookAtMyPCWhenTalking="0" useTalkMotion="1" />
+		<aiInfo path="AI_Laoz_PartyDungeon_First.xml" />
+		<exp customExp="0" />
+	</environment>
+</ms2>

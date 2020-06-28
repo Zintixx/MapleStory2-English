@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 파싱해서 사용하는 데이터이니 직접 수정하지 마세요 -->
+<ms2>
+	<environment feature="Kritias_Inferno01" locale="">
+		<model kfm="21010013_M_MekaSoldier" />
+		<basic npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="enemy" nametag="1" nametagSize="18" hpBar="1" defenceMaterial="3" hitImmune="1" abnormalImmune="1" level="70" rankIcon="c" difficulty="70" propertyTags="keep_battle" raceString="machine" gender="2" emotionID="21010013" portrait="./Data/Resource/Image/Portrait/Mob/21010013_M_MekaSoldier_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" />
+		<stat hp="287361355" asp="100" msp="100" atp="80" evp="130" cap="72" cad="250" car="100" ndd="1071" pap="9835891" map="9838866" par="190" mar="190" hiddenhpadd="28736133" hiddenwapadd="8657035" />
+		<speed rotation="720" walk="100" run="240" />
+		<distance avoid="150" sight="9000" sightHeightUP="950" sightHeightDown="800" customLastSightRadius="9900" customLastSightHeightUp="980" customLastSightHeightDown="850" />
+		<skill ids="50001360,50001361" levels="1,1" priorities="1,1" probs="30,70" />
+		<collision shape="box" width="100" height="160" depth="100" />
+		<capsule radius="40" height="150" />
+		<dead time="5" defaultaction="Dead_A,Dead_B" upaction="Dead_B" />
+		<push back="1" up="1" knockback="1" />
+		<shadow scale="150" bias="1" />
+		<normal action="Idle_A" prob="10000" maidExpired="Idle_A" />
+		<lookattarget lookAtMyPCWhenTalking="0" useTalkMotion="1" />
+		<aiInfo path="BossDungeon/BalrogMagicBurster/MobKritias/AI_MekaSoldier_Stage.xml" />
+		<exp customExp="0" />
+	</environment>
+	<effectdummy>
+		<dummy name="Eff_Head">
+			<attachInfo parentNode="Bip01 Head" applyWorldTransform="false" applyLocalScale="true" />
+			<transform translate="30.000000, 10.000000, 0.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.000000" />
+		</dummy>
+		<dummy name="Eff_Body">
+			<attachInfo parentNode="Bip01 Spine" applyWorldTransform="false" applyLocalScale="true" />
+			<transform translate="0.000000, 10.000000, 0.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.000000" />
+		</dummy>
+		<dummy name="Eff_Foot">
+			<attachInfo parentNode="Main_Dummy" applyWorldTransform="false" applyLocalScale="true" />
+			<transform translate="0.000000, 0.000000, 0.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.000000" />
+		</dummy>
+		<dummy name="Eff_UI">
+			<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
+			<transform translate="0.000000, 0.000000, 150.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.000000" />
+		</dummy>
+		<dummy name="Eff_Head_World">
+			<attachInfo parentNode="Bip01 Head" applyWorldTransform="true" applyLocalScale="false" />
+			<transform translate="0.000000, -10.000000, 30.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.000000" />
+		</dummy>
+		<dummy name="Eff_Body_World">
+			<attachInfo parentNode="Bip01 Spine" applyWorldTransform="true" applyLocalScale="false" />
+			<transform translate="0.000000, -10.000000, 0.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.000000" />
+		</dummy>
+		<dummy name="Eff_Foot_World">
+			<attachInfo parentNode="Main_Dummy" applyWorldTransform="true" applyLocalScale="false" />
+			<transform translate="0.000000, 0.000000, 0.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.000000" />
+		</dummy>
+	</effectdummy>
+</ms2>

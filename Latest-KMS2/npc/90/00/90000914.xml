@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 파싱해서 사용하는 데이터이니 직접 수정하지 마세요 -->
+<ms2>
+	<environment feature="Develop" locale="">
+		<model kfm="11003589_M_Ishura" />
+		<basic npcAttackGroup="1" npcDefenseGroup="2" nametag="1" nametagSize="18" minimap="0" hpBar="1" defenceMaterial="1" hitImmune="1" abnormalImmune="1" level="53" rankIcon="c" carePathToEnemy="1" maxSpawnCount="5" groupSpawnCount="3" rareDegree="100" difficulty="53" raceString="devil" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/11003589_M_Ishura_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" skipFrame="1" />
+		<stat hp="23715" asp="100" msp="100" atp="80" evp="85" cap="64" cad="500" car="53" ndd="633" pap="41019" map="41031" par="90" mar="90" hiddenhpadd03="91858" hiddenwapadd03="-4677" hiddenhpadd04="91858" hiddenwapadd04="-4677" />
+		<speed rotation="720" walk="100" run="200" />
+		<distance avoid="60" sight="400" sightHeightUP="300" sightHeightDown="0" />
+		<skill ids="40316001,40316011" levels="1,1" priorities="1,1" probs="50,50" coolDown="3000" />
+		<additionalEffect codes="90000814" levels="1" />
+		<collision shape="box" width="85" height="80" depth="150" />
+		<capsule radius="32" height="150" />
+		<dead time="5" defaultaction="Dead_A,Dead_B" upaction="Dead_B" />
+		<push back="1" up="1" knockback="1" />
+		<shadow scale="130" bias="1" />
+		<normal action="Idle_A,Bore_A,Walk_A" prob="4500,1500,4000" movearea="150" maidExpired="Idle_A" />
+		<dropiteminfo dropHeight="50" dropDistanceBase="100" dropDistanceRandom="50" globalDropBoxId="1,10010" individualDropBoxId="721099213" />
+		<lookattarget lookAtMyPCWhenTalking="0" useTalkMotion="1" />
+		<aiInfo path="AI_DefaultNew.xml" />
+	</environment>
+</ms2>

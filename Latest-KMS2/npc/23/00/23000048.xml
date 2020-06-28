@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 파싱해서 사용하는 데이터이니 직접 수정하지 마세요 -->
+<ms2>
+	<environment feature="Season3" locale="">
+		<model kfm="23000048_B_SkullWizardCaptainBlack" />
+		<basic npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="boss" nametag="1" nametagSize="18" defenceMaterial="3" hitImmune="99" abnormalImmune="99" level="50" class="6" rankIcon="a" difficulty="50" raceString="devil" gender="2" mainTags="None" portrait="./Data/Resource/Image/Portrait/Mob/23000048_B_SkullWizardCaptainBlack_P.png" damagedVibrateDuration="0.9" damagedVibrateAmp="1" checkCameraDistance="2500" extraCameraDistance="500" bossSoundDistance="2500" bossSoundEndDistance="4000" />
+		<stat hp="21227812" asp="100" msp="100" atp="120" evp="88" cap="62" cad="500" car="50" ndd="567" pap="284498" map="284587" par="120" mar="120" />
+		<speed rotation="720" walk="200" run="400" />
+		<distance avoid="400" sight="600" sightHeightUP="525" sightHeightDown="225" customLastSightRadius="3500" customLastSightHeightUp="525" customLastSightHeightDown="225" />
+		<skill ids="49069001" levels="1" priorities="1" probs="100" />
+		<additionalEffect codes="50004400" levels="1" />
+		<collision shape="box" width="240" height="280" depth="180" />
+		<corpse width="430" height="150" depth="380" added="40" offsetNametag="-200" hitAble="1" rotation="170" />
+		<capsule radius="130" height="300" />
+		<dead time="20" defaultaction="Dead_A" upaction="Dead_A" extendRoomTime="60000" />
+		<shadow scale="640" bias="1" />
+		<normal action="Idle_A,Bore_A,Walk_A" prob="5000,3000,2000" movearea="150" maidExpired="Idle_A" />
+		<dropiteminfo dropHeight="300" dropDistanceBase="300" dropDistanceRandom="20" globalDropBoxId="6" globalDeadDropBoxId="1011" />
+		<lookattarget lookAtMyPCWhenTalking="0" useTalkMotion="1" />
+		<aiInfo path="AI_DefaultNew.xml" />
+		<exp customExp="373171" />
+	</environment>
+</ms2>

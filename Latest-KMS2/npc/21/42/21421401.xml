@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 파싱해서 사용하는 데이터이니 직접 수정하지 마세요 -->
+<ms2>
+	<environment feature="ChronicleDungeon60_01" locale="">
+		<model kfm="22000109_N_ArmorDemonBigHandPurple" scale="1.85" />
+		<basic npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="boss" nametag="1" nametagSize="18" hpBar="1" defenceMaterial="1" hitImmune="99" abnormalImmune="99" level="60" class="6" rankIcon="a" difficulty="60" propertyTags="keep_battle" raceString="devil" gender="2" mainTags="None" portrait="./Data/Resource/Image/Portrait/Mob/22000109_N_ArmorDemonBigHandPurple_P.png" damagedColorScale="6" damagedVibrateDuration="0.9" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" skipFrame="1" />
+		<stat hp="2470269" asp="100" msp="100" atp="120" evp="88" cap="67" cad="500" car="50" ndd="655" pap="689203" map="689415" par="90" mar="90" />
+		<speed rotation="720" walk="150" run="300" />
+		<distance avoid="250" sight="450" sightHeightUP="300" sightHeightDown="150" customLastSightRadius="9000" customLastSightHeightUp="300" customLastSightHeightDown="150" />
+		<skill ids="50101270" levels="1" priorities="1" probs="100" />
+		<additionalEffect codes="50004400" levels="1" />
+		<collision shape="box" width="300" height="300" depth="300" />
+		<capsule radius="180" height="400" />
+		<dead time="5" defaultaction="Dead_A" upaction="Dead_A" />
+		<push back="1" up="1" knockback="1" />
+		<shadow scale="650" bias="1" />
+		<normal action="Idle_A,Bore_A,Walk_A" prob="4500,1000,4500" movearea="75" maidExpired="Idle_A" />
+		<dropiteminfo globalDropBoxId="74" />
+		<lookattarget lookAtMyPCWhenTalking="0" useTalkMotion="1" />
+		<aiInfo path="AI_GiganticMadronSpartoi.xml" />
+		<exp customExp="0" />
+	</environment>
+	<effectdummy>
+		<dummy name="Eff_UI">
+			<attachInfo parentNode="Scene Root" applyLocalScale="false" applyWorldTransform="true" />
+			<transform translate="0.0, 0.0, 500.0" rotation="0.0, 0.0, 0.0" scale="1.0" />
+		</dummy>
+	</effectdummy>
+</ms2>

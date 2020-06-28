@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 파싱해서 사용하는 데이터이니 직접 수정하지 마세요 -->
+<ms2>
+	<environment feature="LapentaDungeon" locale="">
+		<model kfm="21000498_M_MaskBoyShort04" />
+		<basic npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="enemy" nametag="1" nametagSize="18" hpBar="1" defenceMaterial="1" hitImmune="1" abnormalImmune="1" level="60" rankIcon="c" difficulty="60" propertyTags="keep_battle" raceString="combine" gender="0" emotionID="21000498" mainTags="None" portrait="./Data/Resource/Image/Portrait/Mob/21000498_M_MaskBoyShort04_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" />
+		<stat hp="4590684" asp="100" msp="100" atp="90" evp="125" cap="67" cad="250" car="90" ndd="930" pap="1849216" map="1849784" par="225" mar="225" hiddenhpadd="2892130" hiddenwapadd="1054377" />
+		<speed rotation="720" walk="185" run="370" />
+		<distance avoid="100" sight="1500" sightHeightUP="300" sightHeightDown="200" customLastSightRadius="2800" customLastSightHeightUp="525" customLastSightHeightDown="225" />
+		<skill ids="40087001,40087011" levels="1,1" priorities="1,1" probs="99,1" />
+		<collision shape="box" width="80" height="100" depth="80" />
+		<capsule radius="90" height="150" />
+		<dead time="5" defaultaction="Dead_A,Dead_B" upaction="Dead_A" />
+		<push back="1" up="1" knockback="1" />
+		<shadow scale="150" bias="1" />
+		<normal action="Idle_A,Bore_A,Walk_A" prob="4100,900,5000" movearea="150" maidExpired="Idle_A" />
+		<dropiteminfo dropHeight="150" dropDistanceBase="100" dropDistanceRandom="50" globalDropBoxId="74" />
+		<lookattarget lookAtMyPCWhenTalking="0" useTalkMotion="1" />
+		<aiInfo path="BossDungeon/IshuraRbladerDark/Mob/AI_MaskBoyShort.xml" />
+		<exp customExp="0" />
+	</environment>
+	<effectdummy>
+		<dummy name="Eff_Head">
+			<attachInfo parentNode="Bip01 Head" applyWorldTransform="false" applyLocalScale="true" />
+			<transform translate="30.000000, 0.000000, 0.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.000000" />
+		</dummy>
+		<dummy name="Eff_Body">
+			<attachInfo parentNode="Bip01 Spine" applyWorldTransform="false" applyLocalScale="true" />
+			<transform translate="5.000000, 0.000000, 0.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.000000" />
+		</dummy>
+		<dummy name="Eff_UI">
+			<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
+			<transform translate="0.000000, 0.000000, 150.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.000000" />
+		</dummy>
+		<dummy name="Eff_Head_World">
+			<attachInfo parentNode="Bip01 Head" applyWorldTransform="true" applyLocalScale="false" />
+			<transform translate="0.000000, 0.000000, 30.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.000000" />
+		</dummy>
+		<dummy name="Eff_Body_World">
+			<attachInfo parentNode="Bip01 Spine" applyWorldTransform="true" applyLocalScale="false" />
+			<transform translate="0.000000, 0.000000, 5.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.000000" />
+		</dummy>
+	</effectdummy>
+</ms2>

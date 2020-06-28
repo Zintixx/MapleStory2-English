@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 파싱해서 사용하는 데이터이니 직접 수정하지 마세요 -->
+<ms2>
+	<environment feature="LapentaDungeon" locale="">
+		<model kfm="23000113_B_IshuraRbladerDark" scale="1.6" />
+		<basic npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="boss" nametag="1" nametagSize="18" defenceMaterial="1" hitImmune="99" abnormalImmune="99" level="60" class="6" rankIcon="a" difficulty="60" propertyTags="keep_battle" raceString="combine" gender="0" emotionID="23000113" mainTags="None" portrait="./Data/Resource/Image/Portrait/Mob/23000113_B_IshuraRbladerDark_P.png" damagedVibrateDuration="0.5" damagedVibrateAmp="1" checkCameraDistance="4000" extraCameraDistance="600" />
+		<stat hp="715674943" asp="100" msp="100" atp="120" evp="125" cap="67" cad="250" car="90" ndd="1839" pap="7733452" map="7735826" par="225" mar="225" hiddenhpadd="450875214" hiddenwapadd="4409421" />
+		<speed rotation="720" walk="300" run="600" />
+		<distance avoid="400" sight="5000" sightHeightUP="3999" sightHeightDown="2999" customLastSightRadius="99999" customLastSightHeightUp="99999" customLastSightHeightDown="99999" />
+		<skill ids="50001330" levels="1" priorities="1" probs="100" />
+		<additionalEffect codes="50004545" levels="1" />
+		<collision shape="box" width="110" height="190" depth="110" />
+		<capsule radius="30" height="400" ignore="1" />
+		<dead time="4.3" defaultaction="Dead_A" upaction="Dead_A" extendRoomTime="60000" />
+		<shadow scale="200" bias="1" />
+		<normal action="Idle_A" prob="10000" maidExpired="Idle_A" />
+		<dropiteminfo dropHeight="300" dropDistanceRandom="20" globalDropBoxId="74" globalDeadDropBoxId="1011" />
+		<lookattarget lookAtMyPCWhenTalking="0" useTalkMotion="1" />
+		<aiInfo path="BossDungeon/IshuraRbladerDark/AI_IshuraRbladerDark.xml" />
+		<exp customExp="0" />
+	</environment>
+	<effectdummy>
+		<dummy name="Eff_Head">
+			<attachInfo parentNode="Bip01 Head" applyWorldTransform="false" applyLocalScale="true" />
+			<transform translate="30.000000, 0.000000, 0.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.000000" />
+		</dummy>
+		<dummy name="Eff_Body">
+			<attachInfo parentNode="Bip01 Spine" applyWorldTransform="false" applyLocalScale="true" />
+			<transform translate="0.000000, 0.000000, 0.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.000000" />
+		</dummy>
+		<dummy name="Eff_Foot">
+			<attachInfo parentNode="Main_A" applyWorldTransform="false" applyLocalScale="true" />
+			<transform translate="0.000000, 0.000000, 20.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.000000" />
+		</dummy>
+		<dummy name="Eff_UI">
+			<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
+			<transform translate="0.000000, 0.000000, 330.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.000000" />
+		</dummy>
+		<dummy name="Eff_Head_World">
+			<attachInfo parentNode="Bip01 Head" applyWorldTransform="true" applyLocalScale="false" />
+			<transform translate="0.000000, -10.000000, 50.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.000000" />
+		</dummy>
+		<dummy name="Eff_Body_World">
+			<attachInfo parentNode="Bip01 Spine" applyWorldTransform="true" applyLocalScale="false" />
+			<transform translate="0.000000, 0.000000, 0.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.000000" />
+		</dummy>
+		<dummy name="Eff_Foot_World">
+			<attachInfo parentNode="Main_A" applyWorldTransform="true" applyLocalScale="false" />
+			<transform translate="0.000000, 0.000000, 30.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.000000" />
+		</dummy>
+	</effectdummy>
+</ms2>

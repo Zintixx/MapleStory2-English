@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 파싱해서 사용하는 데이터이니 직접 수정하지 마세요 -->
+<ms2>
+	<environment feature="Season1" locale="">
+		<model kfm="02030016_B_DevilHugeRed" />
+		<basic npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="boss" nametag="1" nametagSize="18" defenceMaterial="1" hitImmune="99" abnormalImmune="99" level="18" class="4" rankIcon="a" difficulty="18" raceString="devil" bossNotify="1" gender="0" mainTags="None" portrait="./Data/Resource/Image/Portrait/Mob/02030016_B_DevilHugeRed_P.png" damagedVibrateDuration="0.5" damagedVibrateAmp="1" skipFrame="1" checkCameraDistance="2500" extraCameraDistance="300" />
+		<stat hp="41573" asp="100" msp="100" atp="120" evp="87" cap="46" cad="500" car="50" ndd="94" pap="5081" map="5081" par="120" mar="120" />
+		<speed rotation="720" walk="150" run="300" />
+		<distance avoid="400" sight="600" sightHeightUP="300" sightHeightDown="130" customLastSightRadius="4000" customLastSightHeightUp="410" customLastSightHeightDown="130" />
+		<skill ids="50000245" levels="1" priorities="1" probs="100" />
+		<additionalEffect codes="50004400" levels="1" />
+		<assist assistType1SkillCount="47" assistType2SkillCount="27" assistType2CheckTick="120000" />
+		<collision shape="box" width="450" height="400" depth="375" />
+		<corpse width="600" height="150" depth="380" added="220" offsetNametag="-200" hitAble="1" rotation="345" />
+		<capsule radius="170" height="450" />
+		<capsule radius="1500" height="500" />
+		<dead time="20" defaultaction="Dead_A" upaction="Dead_A" />
+		<shadow scale="800" bias="1" />
+		<normal action="Idle_A" prob="10000" movearea="200" maidExpired="Idle_A" />
+		<dropiteminfo dropHeight="180" dropDistanceBase="300" dropDistanceRandom="20" globalDropBoxId="74" />
+		<lookattarget lookAtMyPCWhenTalking="0" useTalkMotion="1" />
+		<aiInfo path="AI_DevilHugeRed_Quest.xml" />
+	</environment>
+	<effectdummy>
+		<dummy name="Eff_UI">
+			<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
+			<transform translate="0.000000, 0.000000, 500.000000" rotation="0.000000, 0.000000, 90.000000" scale="2.000000" />
+		</dummy>
+	</effectdummy>
+</ms2>

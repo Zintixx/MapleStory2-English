@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 파싱해서 사용하는 데이터이니 직접 수정하지 마세요 -->
+<ms2>
+	<environment feature="Develop" locale="">
+		<model kfm="90002012_Starflower" />
+		<basic npcAttackGroup="1" npcDefenseGroup="2" nametagSize="18" hpBar="1" defenceMaterial="7" hitImmune="99" abnormalImmune="99" level="70" rankIcon="c" carePathToEnemy="1" difficulty="70" propertyTags="keep_battle" raceString="unknown" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/90002012_Starflower_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" skipFrame="1" />
+		<stat hp="8125000" asp="100" msp="100" atp="80" evp="102" cap="72" cad="250" car="70" ndd="1071" pap="198737" map="198797" par="190" mar="190" hiddenhpadd="3493750" hiddenwapadd="105244" />
+		<distance avoid="300" sight="15000" sightHeightUP="1100" sightHeightDown="900" customLastSightRadius="18000" customLastSightHeightUp="1500" customLastSightHeightDown="999" />
+		<skill ids="40454001" levels="1" priorities="1" probs="100" />
+		<collision shape="box" width="60" height="150" depth="60" heightOffset="-500" />
+		<capsule radius="35" height="150" ignore="1" />
+		<dead time="2" defaultaction="Dead_A" upaction="Dead_A" />
+		<shadow scale="80" bias="1" />
+		<normal action="Idle_A" prob="10000" maidExpired="Idle_A" />
+		<lookattarget lookAtMyPCWhenTalking="0" useTalkMotion="1" />
+		<aiInfo path="BossDungeon/Colosseum/AI_Miel_Flower_Colosseum.xml" />
+		<exp customExp="0" />
+	</environment>
+	<effectdummy>
+		<dummy name="Eff_Head">
+			<attachInfo parentNode="Scene Root" applyWorldTransform="false" applyLocalScale="true" />
+			<transform translate="0.000000, 0.000000, 50.000000" rotation="0.000000, 0.000000, 0.000000" scale="0.700000" />
+		</dummy>
+		<dummy name="Eff_Body">
+			<attachInfo parentNode="Scene Root" applyWorldTransform="false" applyLocalScale="true" />
+			<transform translate="0.000000, 0.000000, 50.000000" rotation="0.000000, 0.000000, 0.000000" scale="0.700000" />
+		</dummy>
+		<dummy name="Eff_Foot">
+			<attachInfo parentNode="Scene Root" applyWorldTransform="false" applyLocalScale="true" />
+			<transform translate="0.000000, 0.000000, 0.000000" rotation="0.000000, 0.000000, 0.000000" scale="0.700000" />
+		</dummy>
+		<dummy name="Eff_UI">
+			<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
+			<transform translate="0.000000, 0.000000, 110.000000" rotation="0.000000, 0.000000, 0.000000" scale="0.700000" />
+		</dummy>
+		<dummy name="Eff_Head_World">
+			<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
+			<transform translate="0.000000, 0.000000, 50.000000" rotation="0.000000, 0.000000, 0.000000" scale="0.700000" />
+		</dummy>
+		<dummy name="Eff_Body_World">
+			<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
+			<transform translate="0.000000, 0.000000, 50.000000" rotation="0.000000, 0.000000, 0.000000" scale="0.700000" />
+		</dummy>
+		<dummy name="Eff_Foot_World">
+			<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
+			<transform translate="0.000000, 0.000000, 0.000000" rotation="0.000000, 0.000000, 0.000000" scale="0.700000" />
+		</dummy>
+	</effectdummy>
+</ms2>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 파싱해서 사용하는 데이터이니 직접 수정하지 마세요 -->
+<ms2>
+	<environment feature="KarkarIsland" locale="">
+		<model kfm="21000401_M_SteamBotFlyBlue" scale="1.2" />
+		<basic npcAttackGroup="1" npcDefenseGroup="2" nametag="1" nametagSize="18" minimap="0" hpBar="1" defenceMaterial="6" hitImmune="99" abnormalImmune="99" level="50" rankIcon="c" difficulty="50" propertyTags="keep_battle" raceString="machine" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/21000401_M_SteamBotFlyBlue_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" skipFrame="1" />
+		<stat hp="41057" asp="100" msp="100" atp="80" evp="97" cap="62" cad="500" car="50" ndd="681" pap="52862" map="52879" par="105" mar="105" hiddenhpadd="140759" hiddenwapadd="8300" />
+		<speed rotation="720" />
+		<distance avoid="40" sight="10000" sightHeightUP="2000" sightHeightDown="2000" />
+		<skill ids="60079001,60079011" levels="1,1" priorities="1,1" probs="80,20" />
+		<collision shape="box" width="140" height="80" depth="140" />
+		<capsule radius="40" height="80" />
+		<dead time="5" defaultaction="Dead_A" upaction="Dead_A" />
+		<push back="1" up="1" knockback="1" />
+		<shadow scale="240" bias="1" />
+		<normal action="Idle_A,Bore_A" prob="5000,5000" maidExpired="Idle_A" />
+		<dropiteminfo dropHeight="50" dropDistanceBase="100" dropDistanceRandom="50" globalDropBoxId="74" />
+		<lookattarget lookAtMyPCWhenTalking="0" useTalkMotion="1" />
+		<aiInfo path="AI_SteamBotFly_Cannon.xml" />
+		<exp customExp="0" />
+	</environment>
+</ms2>

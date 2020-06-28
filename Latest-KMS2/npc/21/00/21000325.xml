@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 파싱해서 사용하는 데이터이니 직접 수정하지 마세요 -->
+<ms2>
+	<environment feature="Timaion01" locale="">
+		<model kfm="21000325_M_SquirrelThiefJunior01" />
+		<basic npcAttackGroup="1" npcDefenseGroup="2" nametag="1" nametagSize="18" minimap="0" hpBar="1" defenceMaterial="1" hitImmune="1" abnormalImmune="1" level="56" rankIcon="c" carePathToEnemy="1" maxSpawnCount="2" groupSpawnCount="2" difficulty="56" raceString="animal" gender="2" emotionID="21000325" mainTags="다람쥐" portrait="./Data/Resource/Image/Portrait/Mob/21000325_M_SquirrelThiefJunior01_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" skipFrame="1" />
+		<stat hp="25238" asp="100" msp="100" atp="80" evp="88" cap="65" cad="500" car="56" ndd="702" pap="40501" map="40514" par="90" mar="90" />
+		<speed rotation="720" walk="160" run="320" />
+		<distance avoid="60" sight="400" sightHeightUP="300" sightHeightDown="0" />
+		<skill ids="60003051,60003052" levels="1,1" priorities="1,1" probs="50,50" />
+		<collision shape="box" width="120" height="130" depth="100" />
+		<capsule radius="70" height="150" />
+		<dead time="5" defaultaction="Dead_A,Dead_B" upaction="Dead_B" />
+		<push back="1" up="1" knockback="1" />
+		<shadow scale="130" bias="1" />
+		<normal action="Idle_A,Bore_A,Walk_A" prob="4500,1500,4000" movearea="150" maidExpired="Idle_A" />
+		<dropiteminfo dropHeight="50" dropDistanceBase="100" dropDistanceRandom="50" globalDropBoxId="1,10003" individualDropBoxId="21000325,721000325,921000325" />
+		<lookattarget lookAtMyPCWhenTalking="0" useTalkMotion="1" />
+		<aiInfo path="AI_DefaultNew_AttackAfterRunaway.xml" />
+	</environment>
+	<effectdummy>
+		<dummy name="Eff_Head">
+			<attachInfo parentNode="Bip01 Head" applyWorldTransform="false" applyLocalScale="true" />
+			<transform translate="20.000000, 15.000000, 0.000000" rotation="0.000000, 0.000000, 0.000000" scale="0.800000" />
+		</dummy>
+		<dummy name="Eff_Body">
+			<attachInfo parentNode="Bip01 Spine" applyWorldTransform="false" applyLocalScale="true" />
+			<transform translate="0.000000, 8.000000, 0.000000" rotation="0.000000, 0.000000, 0.000000" scale="0.800000" />
+		</dummy>
+		<dummy name="Eff_Foot">
+			<attachInfo parentNode="Scene Root" applyWorldTransform="false" applyLocalScale="true" />
+			<transform translate="0.000000, 0.000000, 0.000000" rotation="0.000000, 0.000000, 0.000000" scale="0.800000" />
+		</dummy>
+		<dummy name="Eff_UI">
+			<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
+			<transform translate="-25.000000, -15.000000, 130.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.000000" />
+		</dummy>
+		<dummy name="Eff_Head_World">
+			<attachInfo parentNode="Bip01 Head" applyWorldTransform="true" applyLocalScale="false" />
+			<transform translate="-9.000000, -17.000000, 18.000000" rotation="0.000000, 0.000000, 0.000000" scale="0.800000" />
+		</dummy>
+		<dummy name="Eff_Body_World">
+			<attachInfo parentNode="Bip01 Spine" applyWorldTransform="true" applyLocalScale="false" />
+			<transform translate="0.000000, -7.000000, 0.000000" rotation="0.000000, 0.000000, 0.000000" scale="0.800000" />
+		</dummy>
+		<dummy name="Eff_Foot_World">
+			<attachInfo parentNode="Point01 NonAccum" applyWorldTransform="true" applyLocalScale="false" />
+			<transform translate="0.000000, 0.000000, 0.000000" rotation="0.000000, 0.000000, 0.000000" scale="0.800000" />
+		</dummy>
+	</effectdummy>
+</ms2>

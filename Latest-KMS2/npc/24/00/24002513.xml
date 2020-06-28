@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 파싱해서 사용하는 데이터이니 직접 수정하지 마세요 -->
+<ms2>
+	<environment feature="ArcadeSpringFarm" locale="">
+		<model kfm="22000076_N_ShadowFamilyHorsePurple" scale="2" />
+		<basic npcAttackGroup="1" npcDefenseGroup="2" nametag="1" nametagSize="18" minimap="0" hpBar="1" defenceMaterial="1" hitImmune="1" abnormalImmune="1" rankIcon="c" carePathToEnemy="1" difficulty="1" propertyTags="cube_shape_size" raceString="combine" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/22000076_N_ShadowFamilyHorsePurple_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen_Spring.xml" skipFrame="1" />
+		<stat hp="20" asp="100" msp="100" atp="80" evp="82" cap="38" cad="500" car="50" ndd="999999" pap="7" map="7" par="90" mar="90" />
+		<speed rotation="720" walk="300" run="450" />
+		<distance avoid="45" sight="10000" sightHeightUP="300" sightHeightDown="0" customLastSightRadius="10000" customLastSightHeightUp="300" />
+		<skill ids="40367001,40367011" levels="1,1" priorities="1,1" probs="80,20" />
+		<additionalEffect codes="60097001,60097002,60097003,60097004,60119021" levels="1,1,1,1,1" />
+		<collision shape="box" width="160" height="200" depth="160" />
+		<capsule radius="130" height="150" ignore="1" />
+		<dead time="1" defaultaction="Dead_A,Dead_B" upaction="Dead_A" />
+		<push back="1" up="1" knockback="1" />
+		<shadow scale="200" bias="1" />
+		<normal action="Idle_A,Bore_A,Walk_A" prob="6000,1000,3000" movearea="250" maidExpired="Idle_A" />
+		<dropiteminfo dropHeight="50" dropDistanceBase="100" dropDistanceRandom="50" />
+		<lookattarget lookAtMyPCWhenTalking="0" useTalkMotion="1" />
+		<aiInfo path="AI_ModShadowFamilyHorse.xml" />
+		<exp customExp="0" />
+	</environment>
+	<effectdummy>
+		<dummy name="Eff_Head">
+			<attachInfo parentNode="Bip01 Head" applyWorldTransform="false" applyLocalScale="true" />
+			<transform translate="30.000000, 20.000000, 0.000000" rotation="0.000000, -90.000000, -90.000000" scale="0.500000" />
+		</dummy>
+		<dummy name="Eff_Body">
+			<attachInfo parentNode="Bip01" applyWorldTransform="false" applyLocalScale="true" />
+			<transform translate="15.000000, 0.000000, 0.000000" rotation="0.000000, 0.000000, 0.000000" scale="0.600000" />
+		</dummy>
+		<dummy name="Eff_Foot">
+			<attachInfo parentNode="Dummy04 NonAccum" applyWorldTransform="false" applyLocalScale="true" />
+			<transform translate="0.000000, 0.000000, 0.000000" rotation="0.000000, 0.000000, 90.000000" scale="0.550000" />
+		</dummy>
+		<dummy name="Eff_UI">
+			<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
+			<transform translate="0.000000, -20.000000, 430.000000" rotation="0.000000, 0.000000, 90.000000" scale="1.000000" />
+		</dummy>
+		<dummy name="Eff_Damage">
+			<attachInfo parentNode="Eff_UI" applyWorldTransform="true" applyLocalScale="false" />
+			<transform translate="0.000000, 0.000000, 0.000000" rotation="0.000000, 0.000000, 90.000000" scale="1.000000" />
+		</dummy>
+		<dummy name="Eff_Head_World">
+			<attachInfo parentNode="Bip01 Head" applyWorldTransform="true" applyLocalScale="false" />
+			<transform translate="0.000000, -40.000000, 60.000000" rotation="0.000000, 0.000000, 90.000000" scale="1.000000" />
+		</dummy>
+		<dummy name="Eff_Body_World">
+			<attachInfo parentNode="Bip01" applyWorldTransform="true" applyLocalScale="false" />
+			<transform translate="0.000000, -30.000000, 0.000000" rotation="0.000000, 0.000000, 90.000000" scale="1.200000" />
+		</dummy>
+		<dummy name="Eff_Foot_World">
+			<attachInfo parentNode="Dummy04 NonAccum" applyWorldTransform="true" applyLocalScale="false" />
+			<transform translate="0.000000, 0.000000, 0.000000" rotation="0.000000, 0.000000, 90.000000" scale="1.100000" />
+		</dummy>
+	</effectdummy>
+</ms2>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 파싱해서 사용하는 데이터이니 직접 수정하지 마세요 -->
+<ms2>
+	<environment feature="Season1" locale="">
+		<model kfm="02020040_M_MushMing" scale="1.3" />
+		<basic npcAttackGroup="1" npcDefenseGroup="2" nametag="1" nametagSize="18" minimap="0" hpBar="1" defenceMaterial="5" hitImmune="1" abnormalImmune="1" level="16" rankIcon="c" carePathToEnemy="1" difficulty="16" raceString="plant" gender="2" mainTags="None" portrait="./Data/Resource/Image/Portrait/Mob/02020040_M_MushMing_P.png" damagedColorScale="4" damagedVibrateDuration="0.7" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" skipFrame="1" />
+		<stat hp="1768" asp="100" msp="100" atp="80" evp="82" cap="45" cad="500" car="50" ndd="78" pap="572" map="572" par="90" mar="90" />
+		<speed rotation="720" walk="110" run="220" />
+		<distance avoid="90" sight="600" sightHeightUP="150" sightHeightDown="0" customLastSightRadius="600" customLastSightHeightUp="150" />
+		<skill ids="40011001,40011011,40011021" levels="1,1,1" priorities="1,1,1" probs="20,20,60" coolDown="8000" />
+		<combat combatAbandonTick="999999" impossibleCombatAbandonTick="999999" />
+		<collision shape="box" width="110" height="130" depth="110" />
+		<capsule radius="85" height="170" />
+		<dead time="5" defaultaction="Dead_A" upaction="Dead_A" />
+		<push back="0.5" up="0.5" knockback="0.5" />
+		<shadow scale="220" bias="1" />
+		<normal action="Idle_A,Bore_A,Walk_A" prob="3000,2500,4500" movearea="150" maidExpired="Idle_A" />
+		<dropiteminfo dropHeight="150" dropDistanceBase="140" dropDistanceRandom="10" globalDropBoxId="74" />
+		<lookattarget lookAtMyPCWhenTalking="0" useTalkMotion="1" />
+		<aiInfo path="AI_DefaultNew.xml" />
+		<exp customExp="0" />
+	</environment>
+</ms2>

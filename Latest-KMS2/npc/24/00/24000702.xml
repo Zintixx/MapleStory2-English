@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 파싱해서 사용하는 데이터이니 직접 수정하지 마세요 -->
+<ms2>
+	<environment feature="Season1" locale="">
+		<model kfm="21000482_M_WolfBlack" scale="2" />
+		<basic npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="elite_boss" nametag="1" nametagSize="18" defenceMaterial="1" hitImmune="1" abnormalImmune="1" level="13" class="7" rankIcon="b" carePathToEnemy="1" difficulty="13" raceString="animal" gender="2" mainTags="None" portrait="./Data/Resource/Image/Portrait/Mob/21000482_M_WolfBlack_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" skipFrame="1" />
+		<stat hp="6952" asp="100" msp="100" atp="81" evp="82" cap="44" cad="500" car="50" ndd="57" pap="641" map="641" par="90" mar="90" />
+		<speed rotation="720" walk="200" run="380" />
+		<distance avoid="60" sight="800" sightHeightUP="300" sightHeightDown="0" />
+		<skill ids="40056001" levels="1" priorities="1" probs="100" coolDown="3000" />
+		<additionalEffect codes="90000814" levels="1" />
+		<collision shape="box" width="120" height="120" depth="200" />
+		<capsule radius="80" height="120" />
+		<dead time="5" defaultaction="Dead_A,Dead_B" upaction="Dead_B" />
+		<push back="1" up="1" knockback="1" />
+		<shadow scale="200" bias="1" />
+		<normal action="Idle_A,Bore_A,Walk_A" prob="3500,1500,5000" movearea="200" maidExpired="Idle_A" />
+		<dropiteminfo dropHeight="150" dropDistanceBase="140" dropDistanceRandom="10" globalDropBoxId="74" individualDropBoxId="724000702" />
+		<lookattarget lookAtMyPCWhenTalking="0" useTalkMotion="1" />
+		<aiInfo path="AI_DefaultNew.xml" />
+		<exp customExp="0" />
+	</environment>
+</ms2>

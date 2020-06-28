@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 파싱해서 사용하는 데이터이니 직접 수정하지 마세요 -->
+<ms2>
+	<environment feature="Develop" locale="">
+		<model kfm="22000075_N_HalloweenCarriage" />
+		<basic npcAttackGroup="1" npcDefenseGroup="2" nametagSize="18" minimap="0" defenceMaterial="1" hitImmune="99" abnormalImmune="99" level="60" rankIcon="c" difficulty="60" propertyTags="keep_battle, battle_on_spawn,dummy_npc" raceString="unknown" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/22000075_N_HalloweenCarriage_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" />
+		<stat hp="54541" asp="100" msp="100" atp="80" evp="100" cap="67" cad="250" car="70" ndd="2398" pap="125285" map="125324" par="150" mar="150" hiddenhpadd="25634" hiddenwapadd="37597" />
+		<speed rotation="720" walk="50" run="50" />
+		<distance avoid="45" sight="10000" sightHeightUP="2000" sightHeightDown="3500" />
+		<skill ids="40501241" levels="1" priorities="1" probs="100" />
+		<collision shape="box" width="1" height="1" depth="1" heightOffset="-1000" />
+		<capsule radius="30" height="100" ignore="1" />
+		<dead time="5" defaultaction="Idle_A" upaction="Idle_A" />
+		<normal action="Idle_B" prob="10000" maidExpired="Idle_A" />
+		<dropiteminfo globalDropBoxId="74" />
+		<lookattarget lookAtMyPCWhenTalking="0" useTalkMotion="1" />
+		<aiInfo path="AI_Suicide_after_SkillUse.xml" />
+		<exp customExp="0" />
+	</environment>
+</ms2>

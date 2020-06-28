@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 파싱해서 사용하는 데이터이니 직접 수정하지 마세요 -->
+<ms2>
+	<environment feature="SnowKingdom" locale="">
+		<model kfm="22000107_N_HugeKnightStatueDark" scale="0.8" />
+		<basic npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="enemy" nametag="1" nametagSize="18" hpBar="1" defenceMaterial="4" hitImmune="1" abnormalImmune="1" level="60" rankIcon="c" difficulty="60" propertyTags="keep_battle" raceString="spirit" gender="2" mainTags="None" portrait="./Data/Resource/Image/Portrait/Mob/22000107_N_HugeKnightStatueDark_P.png" damagedVibrateDuration="0.5" damagedVibrateAmp="1" />
+		<stat hp="13428996" asp="100" msp="100" atp="80" evp="125" cap="67" cad="250" car="90" ndd="799" pap="3006856" map="3007780" par="225" mar="225" hiddenhpadd="4700148" hiddenwapadd="1834743" />
+		<speed rotation="720" walk="225" run="450" />
+		<distance avoid="140" sight="9000" sightHeightUP="9000" sightHeightDown="9000" customLastSightRadius="9990" customLastSightHeightUp="9900" customLastSightHeightDown="9900" />
+		<skill ids="50000610" levels="1" priorities="1" probs="100" />
+		<additionalEffect codes="50001042" levels="1" />
+		<collision shape="box" width="180" height="310" depth="130" />
+		<capsule radius="40" height="150" />
+		<dead time="3" defaultaction="Dead_A" upaction="Dead_A" />
+		<shadow scale="350" bias="1" />
+		<normal action="Idle_A" prob="10000" maidExpired="Idle_A" />
+		<dropiteminfo dropHeight="150" dropDistanceBase="200" dropDistanceRandom="10" fireVelocity="150" globalDropBoxId="74" />
+		<lookattarget lookAtMyPCWhenTalking="0" useTalkMotion="1" />
+		<aiInfo path="BossDungeon/SnowKing/Mob/BossZone/AI_HugeKnightStatueDark_BossRight100.xml" />
+		<exp customExp="0" />
+	</environment>
+	<effectdummy>
+		<dummy name="Eff_Head">
+			<attachInfo parentNode="Head" applyWorldTransform="false" applyLocalScale="true" />
+			<transform translate="-15.000000, 20.000000, 0.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.000000" />
+		</dummy>
+		<dummy name="Eff_Body">
+			<attachInfo parentNode="Bip01 Spine" applyWorldTransform="false" applyLocalScale="true" />
+			<transform translate="0.000000, 18.000000, 0.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.000000" />
+		</dummy>
+		<dummy name="Eff_Foot">
+			<attachInfo parentNode="Bip01 Footsteps" applyWorldTransform="false" applyLocalScale="true" />
+			<transform translate="0.000000, -20.000000, 25.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.000000" />
+		</dummy>
+		<dummy name="Eff_UI">
+			<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
+			<transform translate="0.000000, 0.000000, 280.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.000000" />
+		</dummy>
+		<dummy name="Eff_Head_World">
+			<attachInfo parentNode="Head" applyWorldTransform="true" applyLocalScale="false" />
+			<transform translate="0.000000, -18.000000, -15.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.000000" />
+		</dummy>
+		<dummy name="Eff_Body_World">
+			<attachInfo parentNode="Bip01 Spine" applyWorldTransform="true" applyLocalScale="false" />
+			<transform translate="0.000000, -12.000000, -5.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.000000" />
+		</dummy>
+		<dummy name="Eff_Foot_World">
+			<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
+			<transform translate="0.000000, 15.000000, 0.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.000000" />
+		</dummy>
+	</effectdummy>
+</ms2>

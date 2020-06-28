@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 파싱해서 사용하는 데이터이니 직접 수정하지 마세요 -->
+<ms2>
+	<environment feature="Season2" locale="">
+		<model kfm="22090007_N_PuppetBunnyGreen" scale="1.15" />
+		<basic npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="elite_boss" nametag="1" nametagSize="18" defenceMaterial="1" hitImmune="99" abnormalImmune="99" level="40" class="3" rankIcon="b" carePathToEnemy="1" difficulty="40" raceString="spirit" eventTags="field_elite" bossNotify="1" gender="2" mainTags="None" portrait="./Data/Resource/Image/Portrait/Mob/22090007_N_PuppetBunnyGreen_P.png" damagedVibrateDuration="0.5" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" skipFrame="1" bossSoundDistance="1300" bossSoundEndDistance="2400" />
+		<stat hp="630134" asp="100" msp="100" atp="81" evp="82" cap="57" cad="500" car="50" ndd="375" pap="59753" map="59772" par="105" mar="105" />
+		<speed rotation="720" walk="300" run="600" />
+		<distance avoid="140" sight="800" sightHeightUP="300" sightHeightDown="0" customLastSightRadius="2500" customLastSightHeightUp="525" customLastSightHeightDown="225" />
+		<skill ids="60021021" levels="1" priorities="1" probs="100" />
+		<collision shape="box" width="113.043" height="173.913" depth="113.043" />
+		<capsule radius="90" height="180" />
+		<dead time="5" defaultaction="Dead_A" upaction="Dead_A" />
+		<shadow scale="300" bias="1" />
+		<normal action="Idle_A,Bore_A,Walk_A" prob="3500,2000,4500" movearea="150" maidExpired="Idle_A" />
+		<dropiteminfo dropHeight="200" dropDistanceBase="160" dropDistanceRandom="10" fireVelocity="150" globalDropBoxId="3" individualDropBoxId="22090007,922090007" globalHitDropBoxId="100000" />
+		<lookattarget lookAtMyPCWhenTalking="0" useTalkMotion="1" />
+		<aiInfo path="AI_PuppetBunnySummoner.xml" />
+	</environment>
+	<environment feature="EliteRenewal" locale="">
+		<model kfm="22090007_N_PuppetBunnyGreen" scale="1.15" />
+		<basic npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="elite_boss" nametag="1" nametagSize="18" defenceMaterial="1" hitImmune="99" abnormalImmune="99" level="40" class="3" rankIcon="b" carePathToEnemy="1" maxSpawnCount="1" groupSpawnCount="1" rareDegree="100" difficulty="40" raceString="spirit" eventTags="field_elite" gender="2" mainTags="라툰엘" subTags="동화" portrait="./Data/Resource/Image/Portrait/Mob/22090007_N_PuppetBunnyGreen_P.png" damagedVibrateDuration="0.5" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" skipFrame="1" bossSoundDistance="1300" bossSoundEndDistance="2400" />
+		<stat hp="132736" asp="100" msp="100" atp="81" evp="82" cap="57" cad="500" car="50" ndd="375" pap="17926" map="17931" par="105" mar="105" />
+		<speed rotation="720" walk="300" run="600" />
+		<distance avoid="140" sight="800" sightHeightUP="300" sightHeightDown="0" customLastSightRadius="2500" customLastSightHeightUp="525" customLastSightHeightDown="225" />
+		<skill ids="60021021" levels="1" priorities="1" probs="100" />
+		<collision shape="box" width="113.043" height="173.913" depth="113.043" />
+		<capsule radius="90" height="180" />
+		<dead time="5" defaultaction="Dead_A" upaction="Dead_A" />
+		<shadow scale="300" bias="1" />
+		<normal action="Idle_A,Bore_A,Walk_A" prob="3500,2000,4500" movearea="150" maidExpired="Idle_A" />
+		<dropiteminfo dropHeight="200" dropDistanceBase="160" dropDistanceRandom="10" fireVelocity="150" globalDropBoxId="3" individualDropBoxId="22090007,922090007" globalHitDropBoxId="100000" />
+		<lookattarget lookAtMyPCWhenTalking="0" useTalkMotion="1" />
+		<aiInfo path="AI_PuppetBunnySummoner.xml" />
+	</environment>
+	<effectdummy>
+		<dummy name="Eff_Head">
+			<attachInfo parentNode="Bip01 Head" applyWorldTransform="false" applyLocalScale="true" />
+			<transform translate="50.000000, 0.000000, 0.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.100000" />
+		</dummy>
+		<dummy name="Eff_Body">
+			<attachInfo parentNode="Bip01 Pelvis" applyWorldTransform="false" applyLocalScale="true" />
+			<transform translate="0.000000, 0.000000, 0.000000" rotation="0.000000, -90.000000, -90.000000" scale="1.100000" />
+		</dummy>
+		<dummy name="Eff_Foot">
+			<attachInfo parentNode="Bip01 Footsteps" applyWorldTransform="false" applyLocalScale="true" />
+			<transform translate="0.000000, 0.000000, 0.000000" rotation="0.000000, 0.000000, 90.000000" scale="1.100000" />
+		</dummy>
+		<dummy name="Eff_UI">
+			<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
+			<transform translate="0.000000, 0.000000, 350.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.000000" />
+		</dummy>
+		<dummy name="Eff_Head_World">
+			<attachInfo parentNode="Bip01 Head" applyWorldTransform="true" applyLocalScale="false" />
+			<transform translate="0.000000, 0.000000, 60.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.100000" />
+		</dummy>
+		<dummy name="Eff_Body_World">
+			<attachInfo parentNode="Bip01 Pelvis" applyWorldTransform="true" applyLocalScale="false" />
+			<transform translate="0.000000, 0.000000, 0.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.100000" />
+		</dummy>
+		<dummy name="Eff_Foot_World">
+			<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
+			<transform translate="0.000000, 0.000000, 0.000000" rotation="0.000000, 0.000000, 90.000000" scale="1.100000" />
+		</dummy>
+	</effectdummy>
+</ms2>

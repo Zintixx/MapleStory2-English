@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 파싱해서 사용하는 데이터이니 직접 수정하지 마세요 -->
+<ms2>
+	<environment feature="BlackOnyx" locale="">
+		<model kfm="11000505_Mafia1" scale="0.1" />
+		<basic npcAttackGroup="1" npcDefenseGroup="2" nametag="1" nametagSize="18" minimap="0" hpBar="1" defenceMaterial="1" hitImmune="99" abnormalImmune="99" level="60" rankIcon="c" difficulty="60" propertyTags="battle_on_spawn,keep_battle" raceString="combine" gender="0" mainTags="None" portrait="./Data/Resource/Image/Portrait/Mob/11000505_Mafia1_P.png" damagedColorScale="6" damagedVibrateDuration="1" damagedVibrateAmp="1" skipFrame="1" />
+		<stat hp="16335305" asp="100" msp="100" atp="80" evp="92" cap="67" cad="500" car="60" ndd="159120" pap="125285" map="125324" par="90" mar="90" scaleStatRate_1="8" scaleBaseTap_1="1693946" scaleBaseDef_1="2289" scaleBaseSpaRate_1="0.15" />
+		<speed rotation="720" walk="150" run="300" />
+		<distance avoid="100" sight="9900" sightHeightUP="990" sightHeightDown="930" customLastSightRadius="19900" customLastSightHeightUp="995" customLastSightHeightDown="940" />
+		<skill ids="49907301" levels="1" priorities="1" probs="100" />
+		<collision shape="box" width="1" height="1" depth="1" />
+		<capsule radius="30" height="150" />
+		<dead time="5" defaultaction="Dead_A" upaction="Dead_A" />
+		<push back="1" up="1" knockback="1" />
+		<shadow scale="3" bias="1" />
+		<normal action="Idle_A,Bore_A,Walk_A" prob="4500,1500,4000" maidExpired="Idle_A" />
+		<dropiteminfo dropHeight="50" dropDistanceBase="100" dropDistanceRandom="50" globalDropBoxId="74" />
+		<lookattarget lookAtMyPCWhenTalking="0" useTalkMotion="1" />
+		<aiInfo path="BossDungeon/BlackOnyx/AI_SignalSummon.xml" />
+		<exp customExp="0" />
+	</environment>
+</ms2>

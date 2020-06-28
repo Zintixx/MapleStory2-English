@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 파싱해서 사용하는 데이터이니 직접 수정하지 마세요 -->
+<ms2>
+	<environment feature="ShadowCataclysm" locale="">
+		<model kfm="21000257_M_SalamanderCuteBlack" />
+		<basic npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="enemy" nametag="1" nametagSize="18" defenceMaterial="1" hitImmune="1" abnormalImmune="1" level="55" class="3" rankIcon="b" carePathToEnemy="1" difficulty="55" raceString="spirit" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/21000257_M_SalamanderCuteBlack_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" skipFrame="1" />
+		<stat hp="390601" asp="100" msp="100" atp="81" evp="87" cap="65" cad="500" car="50" ndd="678" pap="450565" map="450705" par="90" mar="90" />
+		<speed rotation="720" walk="170" run="340" />
+		<distance avoid="60" sight="1200" sightHeightUP="300" sightHeightDown="0" />
+		<skill ids="40193001,40193002" levels="1,1" priorities="1,1" probs="70,30" coolDown="3000" />
+		<additionalEffect codes="60135001" levels="1" group="1,2" />
+		<collision shape="box" width="85" height="80" depth="80" />
+		<capsule radius="32" height="150" />
+		<dead time="5" defaultaction="Dead_A,Dead_B" upaction="Dead_B" />
+		<push back="1" up="1" knockback="1" />
+		<shadow scale="130" bias="1" />
+		<normal action="Idle_A,Bore_A,Walk_A" prob="4500,1500,4000" movearea="150" maidExpired="Idle_A" />
+		<dropiteminfo dropHeight="50" dropDistanceBase="100" dropDistanceRandom="50" globalDropBoxId="3" />
+		<lookattarget lookAtMyPCWhenTalking="0" useTalkMotion="1" />
+		<aiInfo path="AI_DefaultNew.xml" />
+		<exp customExp="55831" />
+	</environment>
+	<effectdummy>
+		<dummy name="Eff_Head">
+			<attachInfo parentNode="Bip01 Head" applyWorldTransform="false" applyLocalScale="true" />
+			<transform translate="5.000000, 0.000000, 0.000000" rotation="0.000000, 0.000000, 0.000000" scale="0.800000" />
+		</dummy>
+		<dummy name="Eff_Body">
+			<attachInfo parentNode="Bip01 Spine" applyWorldTransform="false" applyLocalScale="true" />
+			<transform translate="0.000000, 10.000000, 0.000000" rotation="0.000000, 0.000000, 0.000000" scale="0.800000" />
+		</dummy>
+		<dummy name="Eff_Foot">
+			<attachInfo parentNode="Scene Root" applyWorldTransform="false" applyLocalScale="true" />
+			<transform translate="0.000000, 0.000000, 0.000000" rotation="0.000000, 0.000000, 0.000000" scale="0.800000" />
+		</dummy>
+		<dummy name="Eff_UI">
+			<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
+			<transform translate="0.000000, -15.000000, 90.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.000000" />
+		</dummy>
+		<dummy name="Eff_Head_World">
+			<attachInfo parentNode="Bip01 Head" applyWorldTransform="true" applyLocalScale="false" />
+			<transform translate="0.000000, -5.000000, 0.000000" rotation="0.000000, 0.000000, 0.000000" scale="0.800000" />
+		</dummy>
+		<dummy name="Eff_Body_World">
+			<attachInfo parentNode="Bip01 Spine" applyWorldTransform="true" applyLocalScale="false" />
+			<transform translate="0.000000, 0.000000, -10.000000" rotation="0.000000, 0.000000, 0.000000" scale="0.800000" />
+		</dummy>
+		<dummy name="Eff_Foot_World">
+			<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
+			<transform translate="0.000000, 0.000000, 0.000000" rotation="0.000000, 0.000000, 0.000000" scale="0.800000" />
+		</dummy>
+	</effectdummy>
+</ms2>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 파싱해서 사용하는 데이터이니 직접 수정하지 마세요 -->
+<ms2>
+	<environment feature="Season1" locale="">
+		<model kfm="02010009_VigilanceCom" />
+		<basic friendly="1" npcAttackGroup="2" npcDefenseGroup="1" minimapIconName="friendly" nametag="1" nametagSize="18" defenceMaterial="1" hitImmune="1" abnormalImmune="1" level="40" rankIcon="c" carePathToEnemy="1" difficulty="30" raceString="unknown" gender="1" mainTags="None" portrait="./Data/Resource/Image/Portrait/Mob/02010009_VigilanceCom_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" />
+		<stat hp="111534524" asp="100" msp="100" atp="80" evp="82" cap="57" cad="500" car="50" ndd="375" pap="1" map="1" />
+		<speed rotation="720" walk="225" run="450" />
+		<distance avoid="100" sight="5000" sightHeightUP="600" sightHeightDown="300" customLastSightRadius="9900" customLastSightHeightUp="900" customLastSightHeightDown="350" />
+		<skill ids="50000222,50000222" levels="2,2" priorities="1,1" probs="70,30" />
+		<additionalEffect codes="50005005" levels="1" />
+		<collision shape="box" width="80" height="110" depth="80" />
+		<capsule radius="60" height="150" />
+		<dead time="9999" defaultaction="Dead_A" upaction="Dead_A" />
+		<push back="1" up="1" knockback="1" />
+		<shadow scale="150" bias="1" />
+		<normal action="Idle_A,Bore_A,Walk_A" prob="4100,900,5000" movearea="150" maidExpired="Idle_A" />
+		<dropiteminfo dropHeight="150" dropDistanceBase="100" dropDistanceRandom="50" globalDropBoxId="1,10001" />
+		<lookattarget lookAtMyPCWhenTalking="0" useTalkMotion="1" />
+		<aiInfo path="BossDungeon/DevilHugeBlue/AI_SummonerCrossbow_TypeA.xml" />
+	</environment>
+</ms2>

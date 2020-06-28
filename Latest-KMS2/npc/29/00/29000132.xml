@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 파싱해서 사용하는 데이터이니 직접 수정하지 마세요 -->
+<ms2>
+	<environment feature="Season1" locale="">
+		<model kfm="11000259_Darkwind03" scale="1.1" />
+		<basic friendly="1" npcAttackGroup="2" npcDefenseGroup="1" nametag="1" nametagSize="18" minimap="0" hpBar="1" defenceMaterial="1" hitImmune="1" abnormalImmune="1" level="25" rankIcon="c" carePathToEnemy="1" difficulty="25" raceString="unknown" gender="0" mainTags="None" portrait="./Data/Resource/Image/Portrait/Mob/11000259_Darkwind03_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" skipFrame="1" />
+		<stat hp="17890" asp="100" msp="100" atp="80" evp="82" cap="50" cad="500" car="50" ndd="75" pap="1" map="1" par="90" mar="90" />
+		<speed rotation="720" walk="150" run="350" />
+		<distance avoid="100" sight="2000" sightHeightUP="150" sightHeightDown="150" />
+		<skill ids="49003001" levels="1" priorities="1" probs="100" coolDown="2000" />
+		<collision shape="box" width="80" height="140" depth="80" />
+		<capsule radius="40" height="140" />
+		<dead time="2" defaultaction="Dead_A" upaction="Dead_A" />
+		<push knockback="1" />
+		<shadow scale="120" bias="1" />
+		<normal action="Attack_Idle_A" prob="10000" movearea="450" maidExpired="Idle_A" />
+		<dropiteminfo dropHeight="150" dropDistanceBase="100" dropDistanceRandom="50" globalDropBoxId="20000000" />
+		<lookattarget lookAtMyPCWhenTalking="0" useTalkMotion="1" />
+		<aiInfo path="AI_DefaultNew.xml" />
+	</environment>
+</ms2>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 파싱해서 사용하는 데이터이니 직접 수정하지 마세요 -->
+<ms2>
+	<environment feature="Season2" locale="">
+		<model kfm="02020105_M_SkeletonWhite02" scale="1.2" />
+		<basic npcAttackGroup="1" npcDefenseGroup="2" nametag="1" nametagSize="18" minimap="0" hpBar="1" defenceMaterial="1" hitImmune="1" abnormalImmune="1" level="40" rankIcon="c" carePathToEnemy="1" maxSpawnCount="2" groupSpawnCount="1" rareDegree="100" difficulty="40" raceString="undead" gender="2" mainTags="쉐도우스켈릭워리어" subTags="쉐도우" portrait="./Data/Resource/Image/Portrait/Mob/02020105_M_SkeletonWhite02_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" skipFrame="1" />
+		<stat hp="13384" asp="100" msp="100" atp="80" evp="82" cap="57" cad="500" car="50" ndd="375" pap="29343" map="29352" par="90" mar="90" />
+		<speed rotation="720" walk="145" run="290" />
+		<distance avoid="120" sight="750" sightHeightUP="300" sightHeightDown="0" />
+		<skill ids="40263001,40263011,40263021" levels="1,1,1" priorities="1,1,1" probs="40,30,30" coolDown="5000" />
+		<collision shape="box" width="80" height="120" depth="80" />
+		<capsule radius="70" height="150" />
+		<dead time="5" defaultaction="Dead_A,Dead_B" upaction="Dead_B" />
+		<push back="1" up="1" knockback="1" />
+		<shadow scale="130" bias="1" />
+		<normal action="Idle_A" prob="10000" maidExpired="Idle_A" />
+		<dropiteminfo dropHeight="100" dropDistanceBase="100" dropDistanceRandom="50" globalDropBoxId="5" />
+		<lookattarget lookAtMyPCWhenTalking="0" useTalkMotion="1" />
+		<aiInfo path="AI_DefaultNew.xml" />
+	</environment>
+	<environment feature="Season2" locale="CN">
+		<model kfm="02020028_M_SpokRak_CN" scale="1.2" />
+		<basic npcAttackGroup="1" npcDefenseGroup="2" nametag="1" nametagSize="18" minimap="0" hpBar="1" defenceMaterial="1" hitImmune="1" abnormalImmune="1" level="40" rankIcon="c" carePathToEnemy="1" maxSpawnCount="2" groupSpawnCount="1" rareDegree="100" difficulty="40" raceString="undead" gender="2" mainTags="쉐도우스켈릭워리어" subTags="쉐도우" portrait="./Data/Resource/Image/Portrait/Mob/02020028_M_SpokRak_CN_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" skipFrame="1" />
+		<stat hp="13384" asp="100" msp="100" atp="80" evp="82" cap="57" cad="500" car="50" ndd="375" pap="29343" map="29352" par="90" mar="90" />
+		<speed rotation="720" walk="145" run="290" />
+		<distance avoid="120" sight="750" sightHeightUP="300" sightHeightDown="0" />
+		<skill ids="40263031,40263041,40263051" levels="1,1,1" priorities="1,1,1" probs="40,30,30" coolDown="5000" />
+		<collision shape="box" width="80" height="120" depth="80" />
+		<capsule radius="70" height="150" />
+		<dead time="5" defaultaction="Dead_A,Dead_B" upaction="Dead_B" />
+		<push back="1" up="1" knockback="1" />
+		<shadow scale="130" bias="1" />
+		<normal action="Idle_A" prob="10000" maidExpired="Idle_A" />
+		<dropiteminfo dropHeight="100" dropDistanceBase="100" dropDistanceRandom="50" globalDropBoxId="5" />
+		<lookattarget lookAtMyPCWhenTalking="0" useTalkMotion="1" />
+		<aiInfo path="AI_DefaultNew.xml" />
+	</environment>
+</ms2>

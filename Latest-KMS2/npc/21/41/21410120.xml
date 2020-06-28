@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 파싱해서 사용하는 데이터이니 직접 수정하지 마세요 -->
+<ms2>
+	<environment feature="Kritias_Zakum01" locale="">
+		<model kfm="21410090_M_TotemZakumSummon" />
+		<basic npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="elite_boss" nametag="1" nametagSize="18" hpBar="1" defenceMaterial="4" hitImmune="99" abnormalImmune="99" level="70" rankIcon="c" rotationDisabled="1" difficulty="70" propertyTags="keep_battle" raceString="creature" gender="2" mainTags="None" portrait="./Data/Resource/Image/Portrait/Mob/21410090_M_TotemZakumSummon_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" />
+		<stat hp="83878449" asp="100" msp="100" atp="80" evp="130" cap="72" cad="250" car="100" ndd="1071" pap="7020442" map="7022566" par="190" mar="190" hiddenhpadd="8387844" hiddenwapadd="6179080" />
+		<distance avoid="100" sight="5000" sightHeightUP="1000" sightHeightDown="700" customLastSightRadius="9900" customLastSightHeightUp="9900" customLastSightHeightDown="350" />
+		<skill ids="50100145" levels="1" priorities="1" probs="100" />
+		<additionalEffect codes="50005318" levels="1" />
+		<collision shape="box" width="150" height="170" depth="150" />
+		<capsule radius="60" height="150" />
+		<dead time="2" defaultaction="Dead_A" upaction="Dead_A" />
+		<shadow scale="150" bias="1" />
+		<normal action="Idle_A" prob="10000" maidExpired="Idle_A" />
+		<dropiteminfo globalDropBoxId="74" />
+		<lookattarget lookAtMyPCWhenTalking="0" useTalkMotion="1" />
+		<aiInfo path="BossDungeon/ZakumBrown/Chaos/AI_TotemZakumSummon_Lava.xml" />
+		<exp customExp="0" />
+	</environment>
+	<effectdummy>
+		<dummy name="Eff_Head">
+			<attachInfo parentNode="Main_Point01" applyWorldTransform="false" applyLocalScale="true" />
+			<transform translate="0.000000, 0.000000, 150.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.000000" />
+		</dummy>
+		<dummy name="Eff_Body">
+			<attachInfo parentNode="Main_Point01" applyWorldTransform="false" applyLocalScale="true" />
+			<transform translate="0.000000, 0.000000, 75.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.000000" />
+		</dummy>
+		<dummy name="Eff_Foot">
+			<attachInfo parentNode="Main_Point01" applyWorldTransform="false" applyLocalScale="true" />
+			<transform translate="0.000000, 0.000000, 0.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.000000" />
+		</dummy>
+		<dummy name="Eff_UI">
+			<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
+			<transform translate="0.000000, 0.000000, 220.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.000000" />
+		</dummy>
+		<dummy name="Eff_Head_World">
+			<attachInfo parentNode="Main_Point01" applyWorldTransform="true" applyLocalScale="false" />
+			<transform translate="0.000000, 0.000000, 150.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.000000" />
+		</dummy>
+		<dummy name="Eff_Body_World">
+			<attachInfo parentNode="Main_Point01" applyWorldTransform="true" applyLocalScale="false" />
+			<transform translate="0.000000, 0.000000, 75.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.000000" />
+		</dummy>
+		<dummy name="Eff_Foot_World">
+			<attachInfo parentNode="Main_Point01" applyWorldTransform="true" applyLocalScale="false" />
+			<transform translate="0.000000, 0.000000, 0.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.000000" />
+		</dummy>
+	</effectdummy>
+</ms2>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 파싱해서 사용하는 데이터이니 직접 수정하지 마세요 -->
+<ms2>
+	<environment feature="Develop" locale="">
+		<model kfm="29500101_N_Archeon" scale="1.26" />
+		<basic npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="boss" nametag="1" nametagSize="18" hpBar="1" defenceMaterial="5" hitImmune="95" abnormalImmune="95" level="70" class="6" rankIcon="a" carePathToEnemy="1" difficulty="70" propertyTags="keep_battle" raceString="machine" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/29500101_N_Archeon_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" skipFrame="1" />
+		<stat hp="50550039" asp="100" msp="100" atp="120" evp="108" cap="72" cad="500" car="70" ndd="1071" pap="785484" map="785722" />
+		<speed rotation="400" walk="160" run="350" />
+		<distance avoid="120" sight="90000" sightHeightUP="9000" sightHeightDown="9000" customLastSightRadius="9999" customLastSightHeightUp="9999" customLastSightHeightDown="9999" />
+		<skill ids="40000001" levels="1" priorities="1" probs="100" coolDown="2000" />
+		<collision shape="box" width="200" height="350" depth="200" />
+		<capsule radius="35" height="100" />
+		<dead time="5" defaultaction="Dead_A" upaction="Dead_A" />
+		<push back="1" up="1" knockback="1" />
+		<shadow scale="120" bias="1" />
+		<normal action="Attack_Idle_A" prob="10000" maidExpired="Idle_A" />
+		<dropiteminfo globalDropBoxId="6" />
+		<lookattarget lookAtMyPCWhenTalking="0" useTalkMotion="1" />
+		<aiInfo path="AI_DefaultNew.xml" />
+	</environment>
+</ms2>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 파싱해서 사용하는 데이터이니 직접 수정하지 마세요 -->
+<ms2>
+	<environment feature="ChronicleDungeon60_01" locale="">
+		<model kfm="21000975_M_SnowIceGolemBaby" />
+		<basic npcAttackGroup="1" npcDefenseGroup="2" nametagSize="18" minimap="0" hpBar="1" defenceMaterial="6" hitImmune="1" abnormalImmune="1" level="60" rankIcon="c" difficulty="60" propertyTags="keep_battle,no_die" raceString="spirit" gender="2" mainTags="None" portrait="./Data/Resource/Image/Portrait/Mob/21000975_M_SnowIceGolemBaby_P.png" damagedVibrateDuration="0.8" damagedVibrateAmp="1" />
+		<stat hp="65383281" asp="100" msp="100" atp="80" evp="100" cap="67" cad="250" car="70" ndd="799" pap="751714" map="751945" par="150" mar="150" hiddenhpadd="30730142" hiddenwapadd="225583" />
+		<speed rotation="720" walk="260" run="520" />
+		<distance avoid="100" sight="5000" sightHeightUP="3000" sightHeightDown="3000" customLastSightRadius="9990" customLastSightHeightUp="9900" customLastSightHeightDown="9900" />
+		<skill ids="40500024" levels="1" priorities="1" probs="100" />
+		<collision shape="box" width="100" height="150" depth="100" />
+		<capsule radius="65" height="150" />
+		<dead time="2" defaultaction="Dead_A,Dead_B" upaction="Dead_B" />
+		<push back="1" up="1" knockback="1" />
+		<shadow scale="160" bias="1" />
+		<normal action="Idle_A,Bore_A,Walk_A" prob="4500,1000,4500" movearea="150" maidExpired="Idle_A" />
+		<dropiteminfo dropHeight="150" dropDistanceBase="140" dropDistanceRandom="10" globalDropBoxId="74" />
+		<lookattarget lookAtMyPCWhenTalking="0" useTalkMotion="1" />
+		<aiInfo path="BossDungeon/SnowQueen/Raid/Mob/AI_SnowIceGolemBaby_Raid_TypeC.xml" />
+		<exp customExp="0" />
+	</environment>
+</ms2>

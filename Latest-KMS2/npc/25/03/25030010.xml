@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 파싱해서 사용하는 데이터이니 직접 수정하지 마세요 -->
+<ms2>
+	<environment feature="Kritias_Turka01" locale="">
+		<model kfm="29500006_M_DarkEgoWeapon_LongSword_Type" scale="1.2" />
+		<basic npcAttackGroup="1" npcDefenseGroup="2" nametag="1" nametagSize="18" minimap="0" hpBar="1" defenceMaterial="3" hitImmune="1" abnormalImmune="1" level="70" rankIcon="c" carePathToEnemy="1" difficulty="70" propertyTags="keep_battle,battle_on_spawn" raceString="machine" gender="2" emotionID="29500006" mainTags="None" portrait="./Data/Resource/Image/Portrait/Mob/29500006_M_DarkEgoWeapon_LongSword_Type_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" skipFrame="1" />
+		<stat hp="2912446" asp="100" msp="100" atp="80" evp="102" cap="72" cad="200" car="70" ndd="1071" pap="847735" map="847735" par="90" mar="90" />
+		<speed rotation="720" walk="150" run="300" />
+		<distance avoid="60" sight="90000" sightHeightUP="9000" sightHeightDown="9000" customLastSightRadius="9999" customLastSightHeightUp="9999" customLastSightHeightDown="9999" />
+		<skill ids="49905451,49905452" levels="1,1" priorities="1,1" probs="50,50" coolDown="2000" />
+		<collision shape="box" width="100" height="160" depth="100" />
+		<capsule radius="60" height="150" />
+		<dead time="5" defaultaction="Dead_A,Dead_B" upaction="Dead_B" />
+		<push back="1" up="1" knockback="1" />
+		<shadow scale="120" bias="1" />
+		<normal action="Idle_A,Bore_A,Walk_A" prob="3500,1300,5200" movearea="75" maidExpired="Idle_A" />
+		<dropiteminfo dropHeight="50" dropDistanceBase="100" dropDistanceRandom="50" individualDropBoxId="391000011" />
+		<lookattarget lookAtMyPCWhenTalking="0" useTalkMotion="1" />
+		<aiInfo path="AI_DefaultNew.xml" />
+		<exp customExp="0" />
+	</environment>
+</ms2>

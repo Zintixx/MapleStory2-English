@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 파싱해서 사용하는 데이터이니 직접 수정하지 마세요 -->
+<ms2>
+	<environment feature="FameChallengeDungeon" locale="">
+		<model kfm="02010104_MapleGuard_Sword" />
+		<basic npcAttackGroup="1" npcDefenseGroup="2" nametag="1" nametagSize="18" hpBar="1" defenceMaterial="1" hitImmune="1" abnormalImmune="1" level="50" rankIcon="c" difficulty="50" raceString="combine" gender="0" mainTags="None" portrait="./Data/Resource/Image/Portrait/Mob/02010104_MapleGuard_Sword_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" skipFrame="1" />
+		<stat hp="22193" asp="100" msp="100" atp="80" evp="82" cap="62" cad="500" car="50" ndd="567" pap="28574" map="28583" par="90" mar="90" />
+		<speed rotation="720" walk="265" run="530" />
+		<distance avoid="100" sight="3600" sightHeightUP="999" sightHeightDown="999" customLastSightRadius="9999" customLastSightHeightUp="999" customLastSightHeightDown="999" />
+		<skill ids="50000218,50000219" levels="1,1" priorities="1,1" probs="70,30" />
+		<collision shape="box" width="80" height="110" depth="80" />
+		<capsule radius="60" height="150" />
+		<dead time="2" defaultaction="Dead_A,Dead_B" upaction="Dead_B" />
+		<push back="1" up="1" knockback="1" />
+		<shadow scale="150" bias="1" />
+		<normal action="Idle_A,Bore_A,Walk_A" prob="4100,900,5000" movearea="150" maidExpired="Idle_A" />
+		<dropiteminfo globalDropBoxId="1,10008" />
+		<lookattarget lookAtMyPCWhenTalking="0" useTalkMotion="1" />
+		<aiInfo path="BossDungeon/BaphometHuman02/AI_MapleGuardSword_TypeA.xml" />
+		<exp customExp="0" />
+	</environment>
+</ms2>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 파싱해서 사용하는 데이터이니 직접 수정하지 마세요 -->
+<ms2>
+	<environment feature="Kritias02" locale="">
+		<model kfm="21010103_M_KerbesThugGrenadePurple" />
+		<basic npcAttackGroup="1" npcDefenseGroup="2" nametag="1" nametagSize="18" minimap="0" hpBar="1" defenceMaterial="1" hitImmune="1" abnormalImmune="1" level="78" rankIcon="c" carePathToEnemy="1" difficulty="78" propertyTags="keep_battle" raceString="combine" gender="2" emotionID="21010103" subTags="임무용(준엘리트) - 쫄" portrait="./Data/Resource/Image/Portrait/Mob/21010103_M_KerbesThugGrenadePurple_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" skipFrame="1" />
+		<stat hp="2040469" asp="100" msp="100" atp="80" evp="110" cap="76" cad="500" car="78" ndd="1575" pap="935858" map="936137" par="90" mar="90" hiddenhpadd="891684" hiddenwapadd="486646" scaleStatRate_1="1.4" scaleBaseTap_1="14327811" scaleBaseDef_1="14025" scaleBaseSpaRate_1="0.2" scaleStatRate_2="1.4" scaleBaseTap_2="21059889" scaleBaseDef_2="21789" scaleBaseSpaRate_2="0.2" />
+		<speed rotation="720" walk="200" run="400" />
+		<distance avoid="100" sight="1200" sightHeightUP="525" sightHeightDown="225" customLastSightRadius="1800" customLastSightHeightUp="525" customLastSightHeightDown="225" />
+		<skill ids="60180106,60180108" levels="1,1" priorities="1,1" probs="50,50" />
+		<additionalEffect codes="90000931" levels="1" />
+		<collision shape="box" width="85" height="160" depth="100" />
+		<capsule radius="80" height="150" />
+		<dead time="5" defaultaction="Dead_A" upaction="Dead_A" />
+		<push back="1" up="1" knockback="1" />
+		<shadow scale="180" bias="1" />
+		<normal action="Idle_A,Bore_A,Walk_A" prob="6000,1000,3000" movearea="150" maidExpired="Idle_A" />
+		<dropiteminfo dropHeight="50" dropDistanceBase="100" dropDistanceRandom="50" />
+		<lookattarget lookAtMyPCWhenTalking="0" useTalkMotion="1" />
+		<aiInfo path="AI_DefaultNew.xml" />
+		<exp customExp="0" />
+	</environment>
+</ms2>

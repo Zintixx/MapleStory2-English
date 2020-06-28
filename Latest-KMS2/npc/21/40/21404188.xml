@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 파싱해서 사용하는 데이터이니 직접 수정하지 마세요 -->
+<ms2>
+	<environment feature="Season1" locale="">
+		<model kfm="21000188_M_DevilJuniorRed" scale="1.5" />
+		<basic npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="elite_boss" nametag="1" nametagSize="18" hpBar="1" defenceMaterial="1" hitImmune="99" abnormalImmune="99" level="24" rankIcon="c" difficulty="24" raceString="devil" gender="2" mainTags="None" portrait="./Data/Resource/Image/Portrait/Mob/21000188_M_DevilJuniorRed_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" skipFrame="1" />
+		<stat hp="12988" asp="100" msp="100" atp="80" evp="82" cap="49" cad="500" car="50" ndd="151" pap="7774" map="7776" />
+		<speed rotation="720" walk="1" run="5" />
+		<distance avoid="100" sight="3000" sightHeightUP="1000" sightHeightDown="700" customLastSightRadius="3000" customLastSightHeightUp="1000" customLastSightHeightDown="700" />
+		<skill ids="50000521" levels="1" priorities="1" probs="100" />
+		<collision shape="box" width="66.6667" height="146.667" depth="80" />
+		<capsule radius="50" height="160" />
+		<dead time="1" defaultaction="Dead_A,Dead_B" upaction="Dead_B" />
+		<push back="1" up="1" knockback="1" />
+		<shadow scale="160" bias="1" />
+		<normal action="Idle_A,Bore_A" prob="8000,2000" maidExpired="Idle_A" />
+		<dropiteminfo globalDropBoxId="74" />
+		<lookattarget lookAtMyPCWhenTalking="0" useTalkMotion="1" />
+		<aiInfo path="AI_DevilJuniorRedSummonTeleportCenterRight.xml" />
+	</environment>
+	<effectdummy>
+		<dummy name="Eff_Head">
+			<attachInfo parentNode="Bip01 Head" applyWorldTransform="false" applyLocalScale="true" />
+			<transform translate="20.000000, 0.000000, 0.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.000000" />
+		</dummy>
+		<dummy name="Eff_Body">
+			<attachInfo parentNode="Bip01 Pelvis" applyWorldTransform="false" applyLocalScale="true" />
+			<transform translate="0.000000, 10.000000, 0.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.000000" />
+		</dummy>
+		<dummy name="Eff_Foot">
+			<attachInfo parentNode="Bip01 Footsteps" applyWorldTransform="false" applyLocalScale="true" />
+			<transform translate="0.000000, -20.000000, 20.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.000000" />
+		</dummy>
+		<dummy name="Eff_UI">
+			<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
+			<transform translate="0.000000, -30.000000, 280.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.000000" />
+		</dummy>
+		<dummy name="Eff_Head_World">
+			<attachInfo parentNode="Bip01 Head" applyWorldTransform="true" applyLocalScale="false" />
+			<transform translate="0.000000, 0.000000, 30.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.000000" />
+		</dummy>
+		<dummy name="Eff_Body_World">
+			<attachInfo parentNode="Bip01 Pelvis" applyWorldTransform="true" applyLocalScale="false" />
+			<transform translate="0.000000, -10.000000, 0.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.000000" />
+		</dummy>
+		<dummy name="Eff_Foot_World">
+			<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
+			<transform translate="0.000000, 0.000000, 60.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.000000" />
+		</dummy>
+	</effectdummy>
+</ms2>

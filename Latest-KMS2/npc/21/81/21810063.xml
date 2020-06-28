@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 파싱해서 사용하는 데이터이니 직접 수정하지 마세요 -->
+<ms2>
+	<environment feature="SnowKingdom" locale="">
+		<model kfm="11003051_M_SnowFairy" scale="1.3" />
+		<basic npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="friendly" nametagSize="18" defenceMaterial="6" hitImmune="80" abnormalImmune="80" level="60" rankIcon="c" difficulty="60" propertyTags="keep_battle" raceString="spirit" gender="0" mainTags="None" portrait="./Data/Resource/Image/Portrait/Mob/11003051_M_SnowFairy_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" />
+		<stat hp="145332969" asp="100" msp="100" atp="80" evp="82" cap="67" cad="500" car="50" ndd="799" pap="50114" map="50129" />
+		<speed rotation="720" walk="260" run="520" />
+		<distance avoid="100" sight="9000" sightHeightUP="9000" sightHeightDown="9000" customLastSightRadius="9990" customLastSightHeightUp="9900" customLastSightHeightDown="9900" />
+		<skill ids="50000627" levels="1" priorities="1" probs="100" />
+		<collision shape="box" width="80" height="110" depth="80" />
+		<capsule radius="60" height="150" ignore="1" />
+		<dead time="999" defaultaction="Dead_A" upaction="Dead_A" />
+		<push back="1" up="1" knockback="1" />
+		<shadow scale="150" bias="1" />
+		<normal action="Idle_A,Bore_A,Walk_A" prob="4100,900,5000" movearea="150" maidExpired="Idle_A" />
+		<dropiteminfo globalDropBoxId="74" />
+		<lookattarget lookAtMyPCWhenTalking="0" useTalkMotion="1" />
+		<aiInfo path="BossDungeon/SnowKing/Friend/AI_SnowFairy_Left.xml" />
+		<exp customExp="0" />
+	</environment>
+	<effectdummy>
+		<dummy name="Eff_UI">
+			<attachInfo parentNode="Scene Root" applyLocalScale="false" applyWorldTransform="true" />
+			<transform translate="0.0, 0.0, 100.0" rotation="0.0, 0.0, 0.0" scale="1.0" />
+		</dummy>
+	</effectdummy>
+</ms2>

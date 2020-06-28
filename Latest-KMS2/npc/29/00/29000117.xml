@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 파싱해서 사용하는 데이터이니 직접 수정하지 마세요 -->
+<ms2>
+	<environment feature="Striker" locale="">
+		<model kfm="21000120_M_RobotScrapMetalBig02" scale="0.7" />
+		<basic npcAttackGroup="1" npcDefenseGroup="2" nametag="1" nametagSize="18" minimap="0" hpBar="1" defenceMaterial="3" hitImmune="1" abnormalImmune="1" level="29" rankIcon="c" carePathToEnemy="1" difficulty="29" raceString="machine" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/21000120_M_RobotScrapMetalBig02_P.png" damagedColorScale="8" damagedVibrateDuration="0.9" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" skipFrame="1" />
+		<stat hp="18937" asp="100" msp="100" atp="80" evp="82" cap="52" cad="500" car="50" ndd="210" pap="36944" map="36955" par="90" mar="90" />
+		<speed rotation="720" walk="165" run="330" />
+		<distance avoid="60" sight="400" sightHeightUP="300" sightHeightDown="0" />
+		<skill ids="40342001,40342021,40342011" levels="1,1,1" priorities="1,1,1" probs="40,40,20" coolDown="5000" />
+		<collision shape="box" width="270" height="130" depth="250" />
+		<capsule radius="180" height="230" />
+		<dead time="5" defaultaction="Dead_A" upaction="Dead_A" />
+		<push back="1" up="1" knockback="1" />
+		<shadow scale="400" bias="1" />
+		<normal action="Idle_A,Bore_A,Walk_A" prob="4500,1500,4000" movearea="150" maidExpired="Idle_A" />
+		<dropiteminfo dropHeight="100" dropDistanceBase="100" dropDistanceRandom="50" globalDropBoxId="5" />
+		<lookattarget lookAtMyPCWhenTalking="0" useTalkMotion="1" />
+		<aiInfo path="AI_DefaultNew.xml" />
+	</environment>
+</ms2>

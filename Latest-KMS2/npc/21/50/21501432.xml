@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 파싱해서 사용하는 데이터이니 직접 수정하지 마세요 -->
+<ms2>
+	<environment feature="DungeonOpen70CH5" locale="">
+		<model kfm="02020107_M_Lslime03" />
+		<basic npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="elite_boss" nametag="1" nametagSize="18" hpBar="1" defenceMaterial="6" hitImmune="87" abnormalImmune="87" level="70" rankIcon="c" difficulty="70" propertyTags="keep_battle" raceString="spirit" gender="2" emotionID="2020107" mainTags="None" portrait="./Data/Resource/Image/Portrait/Mob/02020107_M_Lslime03_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" />
+		<stat hp="229141556" asp="100" msp="100" atp="120" evp="130" cap="72" cad="500" car="70" ndd="1071" pap="80787605" map="80812042" par="190" mar="190" hiddenhpadd="91656622" hiddenwapadd="16159964" />
+		<speed rotation="720" walk="50" run="200" />
+		<distance avoid="140" sight="3000" sightHeightUP="500" sightHeightDown="130" customLastSightRadius="6500" customLastSightHeightUp="800" customLastSightHeightDown="130" />
+		<skill ids="49117062" levels="1" priorities="1" probs="100" />
+		<additionalEffect codes="50001203" levels="1" />
+		<collision shape="box" width="200" height="160" depth="200" />
+		<capsule radius="80" height="170" ignore="1" />
+		<dead time="2.7" defaultaction="Dead_A,Dead_B" upaction="Dead_B" />
+		<push back="0.5" up="0.5" knockback="0.5" />
+		<shadow scale="130" bias="1" />
+		<normal action="Idle_A,Bore_A,Walk_A" prob="3500,2000,4500" movearea="150" maidExpired="Idle_A" />
+		<lookattarget lookAtMyPCWhenTalking="0" useTalkMotion="1" />
+		<aiInfo path="BossDungeon/Blackbean/AI_SummonKingSlime.xml" />
+		<exp customExp="0" />
+	</environment>
+	<effectdummy>
+		<dummy name="Eff_Head">
+			<attachInfo parentNode="Head_Bone02" applyWorldTransform="false" applyLocalScale="true" />
+			<transform translate="15.000000, 0.000000, 0.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.200000" />
+		</dummy>
+		<dummy name="Eff_Body">
+			<attachInfo parentNode="Spine_Center_Point01" applyWorldTransform="false" applyLocalScale="true" />
+			<transform translate="0.000000, 0.000000, -20.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.200000" />
+		</dummy>
+		<dummy name="Eff_Foot">
+			<attachInfo parentNode="Scene Root" applyWorldTransform="false" applyLocalScale="true" />
+			<transform translate="0.000000, 0.000000, 0.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.200000" />
+		</dummy>
+		<dummy name="Eff_Head_World">
+			<attachInfo parentNode="Head_Bone02" applyWorldTransform="true" applyLocalScale="false" />
+			<transform translate="0.000000, 0.000000, 15.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.200000" />
+		</dummy>
+		<dummy name="Eff_Body_World">
+			<attachInfo parentNode="Spine_Center_Point01" applyWorldTransform="true" applyLocalScale="false" />
+			<transform translate="0.000000, 0.000000, -30.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.200000" />
+		</dummy>
+		<dummy name="Eff_Foot_World">
+			<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
+			<transform translate="0.000000, 0.000000, 0.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.200000" />
+		</dummy>
+	</effectdummy>
+</ms2>

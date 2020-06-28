@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 파싱해서 사용하는 데이터이니 직접 수정하지 마세요 -->
+<ms2>
+	<environment feature="Develop" locale="">
+		<model kfm="co_skillobj_octopus_A01" />
+		<basic npcAttackGroup="1" npcDefenseGroup="2" nametag="1" nametagSize="18" minimap="0" hpBar="1" defenceMaterial="1" hitImmune="99" abnormalImmune="99" level="60" rankIcon="c" carePathToEnemy="1" difficulty="60" propertyTags="keep_battle" raceString="combine" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/co_skillobj_octopus_A01_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" skipFrame="1" />
+		<stat hp="65169" asp="100" msp="100" atp="80" evp="82" cap="67" cad="500" car="50" ndd="610" pap="112757" map="112791" par="90" mar="90" />
+		<speed rotation="720" walk="150" run="300" />
+		<distance avoid="30" sight="4500" sightHeightUP="300" sightHeightDown="150" customLastSightRadius="4500" customLastSightHeightUp="300" customLastSightHeightDown="150" />
+		<skill ids="40600233,40600236" levels="1,1" priorities="1,1" probs="80,20" />
+		<collision shape="box" width="150" height="160" depth="100" />
+		<capsule radius="30" height="150" />
+		<dead time="5" defaultaction="Dead_A,Dead_B" upaction="Dead_B" />
+		<push back="1" up="1" knockback="1" />
+		<shadow scale="85" bias="1" />
+		<normal action="Idle_A,Bore_A,Walk_A" prob="4500,1000,4500" movearea="75" maidExpired="Idle_A" />
+		<dropiteminfo globalDropBoxId="74" />
+		<lookattarget lookAtMyPCWhenTalking="0" useTalkMotion="1" />
+		<aiInfo path="AI_DefaultNew.xml" />
+		<exp customExp="0" />
+	</environment>
+</ms2>

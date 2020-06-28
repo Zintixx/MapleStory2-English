@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 파싱해서 사용하는 데이터이니 직접 수정하지 마세요 -->
+<ms2>
+	<environment feature="GuildRaid01" locale="">
+		<model kfm="23000039_B_BullArmorBlue" scale="1.2" />
+		<basic npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="boss" nametag="1" nametagSize="18" hpBar="1" defenceMaterial="3" hitImmune="90" abnormalImmune="90" level="58" class="6" rankIcon="a" difficulty="58" propertyTags="keep_battle" raceString="mystic" gender="0" emotionID="23000039" mainTags="None" portrait="./Data/Resource/Image/Portrait/Mob/23000039_B_BullArmorBlue_P.png" damagedVibrateDuration="0.5" damagedVibrateAmp="1" checkCameraDistance="2500" extraCameraDistance="300" bossSoundDistance="900" bossSoundEndDistance="4000" />
+		<stat hp="196035282" asp="100" msp="100" atp="120" evp="96" cap="66" cad="500" car="50" ndd="1721" pap="933270" map="933557" par="120" mar="120" hiddenhpadd="124598570" hiddenwapadd="4438341" hiddennddadd="827" />
+		<speed rotation="720" walk="200" run="400" />
+		<distance avoid="400" sight="1500" sightHeightUP="900" sightHeightDown="1" customLastSightRadius="3500" customLastSightHeightUp="9999" customLastSightHeightDown="900" />
+		<skill ids="50100855" levels="1" priorities="1" probs="100" />
+		<additionalEffect codes="50004400" levels="1" />
+		<collision shape="box" width="220" height="250" depth="230" />
+		<capsule radius="150" height="300" />
+		<dead time="10" defaultaction="Dead_A" upaction="Dead_A" />
+		<shadow scale="640" bias="1" />
+		<normal action="Idle_A,Bore_A,Walk_A" prob="5000,3000,2000" movearea="150" maidExpired="Idle_A" />
+		<dropiteminfo dropHeight="300" dropDistanceBase="300" dropDistanceRandom="20" globalDropBoxId="74" />
+		<lookattarget lookAtMyPCWhenTalking="0" useTalkMotion="1" />
+		<aiInfo path="AI_GuildRaid_Stage10_BullArmorBlue.xml" />
+		<exp customExp="0" />
+	</environment>
+</ms2>

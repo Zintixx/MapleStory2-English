@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 파싱해서 사용하는 데이터이니 직접 수정하지 마세요 -->
+<ms2>
+	<environment feature="KarkarIsland" locale="">
+		<model kfm="21000441_M_CrowDevilWhite" />
+		<basic npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="enemy" nametag="1" nametagSize="18" hpBar="1" defenceMaterial="1" hitImmune="1" abnormalImmune="1" level="50" rankIcon="c" difficulty="50" propertyTags="keep_battle" raceString="mystic" gender="2" mainTags="None" portrait="./Data/Resource/Image/Portrait/Mob/21000441_M_CrowDevilWhite_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" skipFrame="1" />
+		<stat hp="22193" asp="100" msp="100" atp="80" evp="82" cap="62" cad="500" car="50" ndd="567" pap="20002" map="20008" />
+		<speed rotation="720" walk="60" run="200" />
+		<distance avoid="45" sight="400" sightHeightUP="300" sightHeightDown="0" />
+		<skill ids="50100959,50100081" levels="1,1" priorities="1,1" probs="80,20" coolDown="3000" />
+		<additionalEffect codes="90000814" levels="1" />
+		<collision shape="box" width="70" height="120" depth="70" />
+		<capsule radius="40" height="150" />
+		<dead time="5" defaultaction="Dead_A,Dead_B" upaction="Dead_A" />
+		<push back="1" up="1" knockback="1" />
+		<shadow scale="120" bias="1" />
+		<normal action="Idle_A" prob="10000" maidExpired="Idle_A" />
+		<dropiteminfo globalDropBoxId="1,10005" />
+		<lookattarget lookAtMyPCWhenTalking="0" useTalkMotion="1" />
+		<aiInfo path="AI_DefaultNew.xml" />
+	</environment>
+</ms2>

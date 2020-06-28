@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 파싱해서 사용하는 데이터이니 직접 수정하지 마세요 -->
+<ms2>
+	<environment feature="Season1" locale="">
+		<model kfm="21000304_M_DevilBatTridentPurple" />
+		<basic npcAttackGroup="1" npcDefenseGroup="2" nametagSize="18" minimap="0" hpBar="1" defenceMaterial="1" hitImmune="1" abnormalImmune="1" level="21" rankIcon="c" carePathToEnemy="1" difficulty="21" raceString="devil" gender="2" mainTags="None" portrait="./Data/Resource/Image/Portrait/Mob/21000304_M_DevilBatTridentPurple_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" skipFrame="1" />
+		<stat hp="711" asp="100" msp="100" atp="80" evp="82" cap="48" cad="500" car="50" ndd="121" pap="171" map="171" />
+		<speed rotation="720" walk="185" run="370" />
+		<distance avoid="60" sight="6000" sightHeightUP="150" sightHeightDown="150" customLastSightRadius="6000" customLastSightHeightUp="150" customLastSightHeightDown="150" />
+		<skill ids="40325001,40325011" levels="1,1" priorities="1,1" probs="80,20" />
+		<collision shape="box" width="85" height="110" depth="130" />
+		<capsule radius="60" height="150" ignore="1" />
+		<dead time="5" defaultaction="Dead_A,Dead_B" upaction="Dead_B" />
+		<push back="1" up="1" knockback="1" />
+		<shadow scale="130" bias="1" />
+		<normal action="Idle_A,Bore_A,Walk_A" prob="4500,1500,4000" movearea="150" maidExpired="Idle_A" />
+		<dropiteminfo dropHeight="50" dropDistanceBase="100" dropDistanceRandom="50" globalDropBoxId="74" />
+		<lookattarget lookAtMyPCWhenTalking="0" useTalkMotion="1" />
+		<aiInfo path="AI_DefaultNew.xml" />
+		<exp customExp="0" />
+	</environment>
+</ms2>

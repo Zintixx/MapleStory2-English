@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 파싱해서 사용하는 데이터이니 직접 수정하지 마세요 -->
+<ms2>
+	<environment feature="Season2" locale="">
+		<model kfm="21090082_M_BrownMaskAxe" scale="1.5" />
+		<basic npcAttackGroup="1" npcDefenseGroup="2" nametag="1" nametagSize="18" minimap="0" hpBar="1" defenceMaterial="1" hitImmune="1" abnormalImmune="1" level="31" rankIcon="c" carePathToEnemy="1" difficulty="31" raceString="unknown" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/21090082_M_BrownMaskAxe_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" skipFrame="1" />
+		<stat hp="123235" asp="100" msp="100" atp="80" evp="82" cap="53" cad="500" car="50" ndd="237" pap="5834" map="5836" par="90" mar="90" />
+		<speed rotation="720" walk="275" run="550" />
+		<distance avoid="100" sight="600" sightHeightUP="150" sightHeightDown="150" />
+		<skill ids="49006001,49006011" levels="1,1" priorities="1,1" probs="60,40" coolDown="3000" />
+		<additionalEffect codes="90000814" levels="1" />
+		<collision shape="box" width="66.6667" height="96.6667" depth="66.6667" />
+		<capsule radius="80" height="180" />
+		<dead time="5" defaultaction="Dead_A,Dead_B" upaction="Dead_A,Dead_B" />
+		<push knockback="1" />
+		<shadow scale="146" bias="1" />
+		<normal action="Idle_A,Bore_A,Walk_A" prob="4100,900,5000" movearea="303" maidExpired="Idle_A" />
+		<dropiteminfo dropHeight="150" dropDistanceBase="140" dropDistanceRandom="10" globalDropBoxId="1,10001" individualDropBoxId="729000024" />
+		<lookattarget lookAtMyPCWhenTalking="0" useTalkMotion="1" />
+		<aiInfo path="AI_DefaultNew.xml" />
+	</environment>
+	<effectdummy>
+		<dummy name="Eff_Head">
+			<attachInfo parentNode="Scene Root" applyWorldTransform="false" applyLocalScale="true" />
+			<transform translate="0.000000, 0.000000, 130.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.000000" />
+		</dummy>
+	</effectdummy>
+</ms2>

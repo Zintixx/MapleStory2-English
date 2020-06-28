@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 파싱해서 사용하는 데이터이니 직접 수정하지 마세요 -->
+<ms2>
+	<environment feature="ShadowCataclysm" locale="">
+		<model kfm="21000739_M_ConstructRobotFatRed" />
+		<basic npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="enemy" nametag="1" nametagSize="18" defenceMaterial="3" hitImmune="1" abnormalImmune="1" level="55" class="3" rankIcon="b" carePathToEnemy="1" difficulty="55" raceString="machine" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/21000739_M_ConstructRobotFatRed_P.png" damagedColorScale="10" damagedVibrateDuration="1" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" skipFrame="1" />
+		<stat hp="507781" asp="100" msp="100" atp="81" evp="87" cap="65" cad="500" car="50" ndd="746" pap="450565" map="450705" />
+		<speed rotation="720" walk="175" run="350" />
+		<distance avoid="70" sight="1200" sightHeightUP="300" sightHeightDown="0" />
+		<skill ids="49152001,49152011,49152021" levels="1,1,1" priorities="1,1,1" probs="60,20,20" coolDown="4000" />
+		<additionalEffect codes="60135001" levels="1" group="1,2" />
+		<collision shape="box" width="80" height="120" depth="130" />
+		<capsule radius="70" height="150" />
+		<dead time="5" defaultaction="Dead_A,Dead_B" upaction="Dead_B" />
+		<push knockback="1" />
+		<shadow scale="200" bias="1" />
+		<normal action="Idle_A,Bore_A,Walk_A" prob="3000,1000,6000" movearea="150" maidExpired="Idle_A" />
+		<dropiteminfo dropHeight="150" dropDistanceBase="140" dropDistanceRandom="10" globalDropBoxId="3" />
+		<lookattarget lookAtMyPCWhenTalking="0" useTalkMotion="1" />
+		<aiInfo path="AI_DefaultNew.xml" />
+		<exp customExp="0" />
+	</environment>
+	<effectdummy>
+		<dummy name="Eff_Body">
+			<attachInfo parentNode="Scene Root" applyLocalScale="true" applyWorldTransform="false" />
+			<transform translate="0.0, 0.0, 80.0" rotation="0.0, 0.0, 0.0" scale="1.0" />
+		</dummy>
+	</effectdummy>
+</ms2>

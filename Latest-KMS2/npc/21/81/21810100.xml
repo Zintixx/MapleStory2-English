@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 파싱해서 사용하는 데이터이니 직접 수정하지 마세요 -->
+<ms2>
+	<environment feature="Kritias_Turka03" locale="">
+		<model kfm="11004635_R_ArcheonMace" />
+		<basic friendly="1" npcAttackGroup="2" npcDefenseGroup="1" nametagSize="18" minimap="0" hpBar="1" defenceMaterial="3" hitImmune="1" abnormalImmune="1" level="70" rankIcon="c" difficulty="70" propertyTags="keep_battle,no_die" raceString="machine" gender="0" mainTags="None" portrait="./Data/Resource/Image/Portrait/Mob/11004635_R_ArcheonMace_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" />
+		<stat hp="323601894" asp="100" msp="100" atp="80" evp="102" cap="72" cad="500" car="70" ndd="642852" pap="1" map="1" />
+		<speed rotation="720" walk="225" run="450" />
+		<distance avoid="100" sight="5600" sightHeightUP="999" sightHeightDown="999" customLastSightRadius="99999" customLastSightHeightUp="1999" customLastSightHeightDown="1999" />
+		<skill ids="50009999" levels="1" priorities="1" probs="1000" />
+		<collision shape="box" width="5" height="5" depth="5" />
+		<capsule radius="60" height="150" ignore="1" />
+		<dead time="2" defaultaction="Idle_A" upaction="Idle_A" />
+		<push back="1" up="1" knockback="1" />
+		<shadow scale="300" bias="1" />
+		<normal action="Idle_A" prob="10000" maidExpired="Idle_A" />
+		<lookattarget lookAtMyPCWhenTalking="0" useTalkMotion="1" />
+		<aiInfo path="BossDungeon/TurkaHoodForce/Mob/AI_ArcheonMaceRegenEvent_TypeA.xml" />
+	</environment>
+</ms2>

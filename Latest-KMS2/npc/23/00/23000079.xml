@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 파싱해서 사용하는 데이터이니 직접 수정하지 마세요 -->
+<ms2>
+	<environment feature="NutaNuta" locale="">
+		<model kfm="23000079_B_TitanFourArmsGoldMaskSecondFloor" />
+		<basic npcAttackGroup="1" npcDefenseGroup="2" nametag="1" nametagSize="18" minimap="0" defenceMaterial="1" hitImmune="99" abnormalImmune="99" level="50" rankIcon="c" rotationDisabled="1" difficulty="50" propertyTags="keep_battle" raceString="unknown" gender="2" emotionID="23000079" mainTags="None" portrait="./Data/Resource/Image/Portrait/Mob/23000079_B_TitanFourArmsGoldMaskSecondFloor_P.png" damagedVibrateDuration="0.5" damagedVibrateAmp="1" />
+		<stat hp="60875537" asp="100" msp="100" atp="80" evp="82" cap="62" cad="500" car="50" ndd="567" pap="28574" map="28583" par="120" mar="120" />
+		<distance avoid="850" sight="1900" sightHeightUP="999" sightHeightDown="3000" customLastSightRadius="9999" customLastSightHeightUp="2000" customLastSightHeightDown="3000" />
+		<skill ids="50101232" levels="1" priorities="1" probs="100" />
+		<additionalEffect codes="50004400" levels="1" />
+		<collision shape="box" width="1470" height="600" depth="1200" widthOffset="80" />
+		<capsule radius="650" height="600" />
+		<dead time="10" defaultaction="Dead_A" upaction="Dead_A" />
+		<shadow bias="1" />
+		<normal action="Idle_A" prob="10000" maidExpired="Idle_A" />
+		<dropiteminfo globalDropBoxId="74" />
+		<lookattarget lookAtMyPCWhenTalking="0" useTalkMotion="1" />
+		<aiInfo path="BossDungeon/TitanFourArmsGoldMask/AI_TitanFourArmsGoldMaskSecondFloor.xml" />
+		<exp customExp="0" />
+	</environment>
+	<effectdummy>
+		<dummy name="Eff_Head">
+			<attachInfo parentNode="Bip01 Head" applyWorldTransform="false" applyLocalScale="true" />
+			<transform translate="65.000000, 0.000000, 0.000000" rotation="0.000000, -90.000000, -90.000000" scale="1.000000" />
+		</dummy>
+		<dummy name="Eff_Body">
+			<attachInfo parentNode="Bip01 Spine" applyWorldTransform="false" applyLocalScale="true" />
+			<transform translate="20.000000, 20.000000, 0.000000" rotation="0.000000, -90.000000, -90.000000" scale="1.000000" />
+		</dummy>
+		<dummy name="Eff_Foot">
+			<attachInfo parentNode="Bip01 Footsteps" applyWorldTransform="false" applyLocalScale="true" />
+			<transform translate="0.000000, 0.000000, 0.000000" rotation="0.000000, 0.000000, 90.000000" scale="1.000000" />
+		</dummy>
+		<dummy name="Eff_UI">
+			<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
+			<transform translate="0.000000, 0.000000, 120.000000" rotation="0.000000, 0.000000, 90.000000" scale="1.000000" />
+		</dummy>
+		<dummy name="Eff_Head_World">
+			<attachInfo parentNode="Bip01 Head" applyWorldTransform="true" applyLocalScale="false" />
+			<transform translate="0.000000, 0.000000, 75.000000" rotation="0.000000, 0.000000, 90.000000" scale="1.000000" />
+		</dummy>
+		<dummy name="Eff_Body_World">
+			<attachInfo parentNode="Bip01 Spine" applyWorldTransform="true" applyLocalScale="false" />
+			<transform translate="0.000000, -20.000000, 20.000000" rotation="0.000000, 0.000000, 90.000000" scale="1.000000" />
+		</dummy>
+		<dummy name="Eff_Foot_World">
+			<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
+			<transform translate="0.000000, 0.000000, 0.000000" rotation="0.000000, 0.000000, 90.000000" scale="1.000000" />
+		</dummy>
+	</effectdummy>
+</ms2>

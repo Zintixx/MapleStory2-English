@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 파싱해서 사용하는 데이터이니 직접 수정하지 마세요 -->
+<ms2>
+	<environment feature="NutaNuta" locale="">
+		<model kfm="21000897_M_ShadowSpiritCuteGreen" scale="1.2" />
+		<basic npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="enemy" nametag="1" nametagSize="18" hpBar="1" defenceMaterial="1" hitImmune="1" abnormalImmune="1" level="50" rankIcon="c" difficulty="50" propertyTags="keep_battle" raceString="spirit" gender="2" mainTags="None" portrait="./Data/Resource/Image/Portrait/Mob/21000897_M_ShadowSpiritCuteGreen_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" />
+		<stat hp="110967" asp="100" msp="100" atp="90" evp="99" cap="400" cad="500" car="50" ndd="567" pap="34289" map="34300" par="90" mar="90" hiddenhpadd="571480" hiddenwapadd="94294" hiddennddadd="123" />
+		<speed rotation="720" walk="250" run="500" />
+		<distance avoid="100" sight="700" sightHeightUP="1000" sightHeightDown="700" customLastSightRadius="9900" customLastSightHeightUp="9900" customLastSightHeightDown="350" />
+		<skill ids="50100966" levels="1" priorities="1" probs="100" />
+		<additionalEffect codes="50001026" levels="1" />
+		<collision shape="box" width="66.6667" height="146.667" depth="80" />
+		<capsule radius="50" height="160" />
+		<dead time="0.35" defaultaction="Dead_A" upaction="Dead_A" />
+		<push back="1" up="1" knockback="1" />
+		<shadow scale="160" bias="1" />
+		<normal action="Idle_A" prob="10000" maidExpired="Idle_A" />
+		<dropiteminfo globalDropBoxId="74" />
+		<lookattarget lookAtMyPCWhenTalking="0" useTalkMotion="1" />
+		<aiInfo path="BossDungeon/TitanFourArmsGoldMask/AI_ShadowSpiritCuteGreen_TypeA.xml" />
+		<exp customExp="0" />
+	</environment>
+	<effectdummy>
+		<dummy name="Eff_Head">
+			<attachInfo parentNode="Bip01 Head" applyWorldTransform="false" applyLocalScale="true" />
+			<transform translate="0.000000, 0.000000, 0.000000" rotation="0.000000, -90.000000, -90.000000" scale="1.000000" />
+		</dummy>
+		<dummy name="Eff_Body">
+			<attachInfo parentNode="Bip01 Spine" applyWorldTransform="false" applyLocalScale="true" />
+			<transform translate="20.000000, 0.000000, 0.000000" rotation="0.000000, -90.000000, -90.000000" scale="0.900000" />
+		</dummy>
+		<dummy name="Eff_Head_World">
+			<attachInfo parentNode="Bip01 Head" applyWorldTransform="true" applyLocalScale="false" />
+			<transform translate="0.000000, 0.000000, 0.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.000000" />
+		</dummy>
+		<dummy name="Eff_Body_World">
+			<attachInfo parentNode="Bip01 Pelvis" applyWorldTransform="true" applyLocalScale="false" />
+			<transform translate="0.000000, 0.000000, -10.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.000000" />
+		</dummy>
+	</effectdummy>
+</ms2>
