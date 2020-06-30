@@ -115,7 +115,7 @@
 
 			
 			<condition name="WaitTick" waitTick="500" >  
-				<transition state="스킬브레이크신호대기_시간다시셋팅" /> <!-- 다시 처음 단계로 돌아가서 다시 던전시간 초기화 하기-->						
+				<!-- <transition state="스킬브레이크신호대기_시간다시셋팅" /> --> <!-- 다시 처음 단계로 돌아가서 다시 던전시간 초기화 하기-->						
 			</condition>
 		  
 		<onExit>
@@ -145,7 +145,7 @@
 		</onEnter>
 
 			<condition name="WaitTick" waitTick="500" >     <!-- 파괴된 전투판 큐브 다시 생성되는 타이밍에 맞추어 보스 전투판으로 가는 포탈을 생성해야 하기 때문에 waitTick 시간 조절 함 -->			 
-				<transition state="스킬브레이크신호대기_시간셋팅안함" /> <!-- 던전시간 셋팅 하는 거 없는 초기화-->						
+				<!-- <transition state="스킬브레이크신호대기_시간셋팅안함" /> --> <!-- 던전시간 셋팅 하는 거 없는 초기화-->						
 			</condition>
 		  
 		<onExit>

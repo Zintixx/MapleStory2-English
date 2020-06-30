@@ -60,7 +60,7 @@
  
 	<state name="EntryDelay">
 		<onEnter>
-			<action name="SetMiniGameAreaForHack" boxID="9001" /><!--해킹 보안용 시작 box 설정-->		
+			<!--<action name="SetMiniGameAreaForHack" boxID="9001" />--><!--해킹 보안용 시작 box 설정-->		
 			<action name="SetUserValue" triggerID="9" key="MoveToTeamPortal" value="1" />		<!-- 팀 대기 공간으로 이동 시작 -->		
 			<action name="SetUserValue" triggerID="10" key="BannerCheckIn" value="1" />			<!-- 대기 공간 인원 체크 시작 -->
 			<action name="SetUserValue" triggerID="11" key="BannerCheckIn" value="1" />			<!-- 게임판 위 인원수 배너 표시 -->

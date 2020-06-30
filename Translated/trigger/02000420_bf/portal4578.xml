@@ -25,9 +25,11 @@
 			<action name="포탈을설정한다" arg1="7" arg2="1" arg3="1" arg4="1"/>   <!--	7시방향 태엽폭탄 있는 곳에 순간이동 포탈 등장시킴 -->	
 			<action name="포탈을설정한다" arg1="8" arg2="1" arg3="1" arg4="1"/>   <!--	8시방향 태엽폭탄 있는 곳에 순간이동 포탈 등장시킴 -->	
 
-			<transition state="종료" />		
 		</onEnter>
-
+		
+		<condition name="True" >
+			<transition state="종료" />
+		</condition>
 	</state>  
 
 	

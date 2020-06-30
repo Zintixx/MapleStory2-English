@@ -126,11 +126,12 @@
 			<action name="메쉬를설정한다" arg1="5241,5242,5243,5244" arg2="0" />		<!--  4페이즈 상하좌우 엘리베이터 길막 열기 -->		
 			<action name="AGENT를설정한다" arg1="1800000,1800001,1800002,1800003,1800004,1800005,1800006,1800007,1800008,1800009,1800010,1800011" arg2="0" />					
 		</onEnter>		
-			<condition name="WaitTick" waitTick="2000" >		
+		<condition name="WaitTick" waitTick="2000" >		
 			<transition state="완료" />					
-			</condition>	
+		</condition>
 	</state>		
 	
-	
+	<state name="완료">
+	</state>	
 </ms2>
 

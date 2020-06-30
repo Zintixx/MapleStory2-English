@@ -54,7 +54,7 @@
 	</state>
 	<state name="준비">
 		<onEnter>
-			<action name="SetMiniGameAreaForHack" boxID="105" />
+			<!--<action name="SetMiniGameAreaForHack" boxID="105" />-->
 			<action name="타이머를설정한다" arg1="2" arg2="1"/>
 			<action name="유저를이동시킨다" arg1="61000021" arg2="99" arg3="104" />
 			<action name="WidgetAction" arg1="OxQuizUGC" arg2="StartRound"/>
@@ -67,7 +67,7 @@
 	</state>
 	<state name="시작">
 		<onEnter>
-			<action name="SetMiniGameAreaForHack" boxID="105" />
+			<!--<action name="SetMiniGameAreaForHack" boxID="105" />-->
 		</onEnter>
 		<condition name="!유저를감지했으면" arg1="105">
 			<transition state="종료" />

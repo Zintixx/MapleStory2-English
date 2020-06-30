@@ -39,7 +39,7 @@
 
    <state name="DungeonStart" >		
         <onEnter>
-			<action name="SetMiniGameAreaForHack" boxID="9001" /><!--해킹 보안용 시작 box 설정-->									
+			<!-- <action name="SetMiniGameAreaForHack" boxID="9001" />--> <!--해킹 보안용 시작 box 설정-->									
 			<action name="연출UI를설정한다" arg1="1"/>
 			<action name="연출UI를설정한다" arg1="3"/>		
         </onEnter>
@@ -251,7 +251,7 @@
 			<action name="SetUserValue" key="RoundCustomerRow" value="10304" />			
 		</onEnter> 
 				<condition name="랜덤조건" arg1="15">				
-					<transition state="NpcGroup4205"/>
+					<!-- <transition state="NpcGroup4205"/> -->
 				</condition>		
 				<condition name="랜덤조건" arg1="14">			
 					<transition state="NpcGroup4208"/>

@@ -11,7 +11,7 @@
 
     <state name="포털활성화" posX="300" posY="199">
                     <condition name="UserValue" key="woodsoflife" value="1">
-						<transition state="포털비활성화" />
+						<!-- <transition state="포털비활성화" /> -->
 					</condition>	
     </state>
 
@@ -19,7 +19,7 @@
         <onEnter> 
             <action name="GuideEvent" eventID="10003067"/>
         </onEnter>
-				    <condition name="WaitTick" arg1="10000">
+				    <condition name="WaitTick" waitTick="10000">
 						<transition state="종료" />
 					</condition>	
     </state>

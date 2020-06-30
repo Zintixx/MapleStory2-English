@@ -247,7 +247,7 @@
 		
      <state name="GamblePass">  <!-- Gamble Pass Achieve -->			
 		<onEnter>
-			<action name="PlaySystemSoundInBox" arg1="9320" arg2="DDStop_Stage_GamblePass_01"/>							
+			<!-- <action name="PlaySystemSoundInBox" arg1="9320" arg2="DDStop_Stage_GamblePass_01"/> arg2 cannot find systemSound -->
 			<action name="SetUserValue" triggerID="7320" key="Color32" value="0" />	<!-- color reset-->		
 			<action name="SetUserValue" triggerID="3" key="GamblePass" value="32" />	<!-- Gamble Pass Bonus For Everyone-->			
 			<action name="메쉬를설정한다" arg1="532" arg2="0" arg3="0" arg4="0" arg5="2" /> <!--32 / Ground outter-->

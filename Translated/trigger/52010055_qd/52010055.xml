@@ -166,7 +166,7 @@
         <onEnter>
 			<action name="NPC를이동시킨다" arg1="3" arg2="PatrolDataOpenConder0" />
 			<action name="SetNpcEmotionSequence" arg1="5" arg2="Talk_A" />				
-			<action name="AddCinematicTalk" npcID="11003584" illustID="Schatten_normal" msg="$52010055_QD__52010055__7$" duration="2000" align="Reft"/>			
+			<action name="AddCinematicTalk" npcID="11003584" illustID="Schatten_normal" msg="$52010055_QD__52010055__7$" duration="2000"/>			
         </onEnter>	
 		<condition name="WaitTick" waitTick="3000">
 			<transition state="샤텐이동"/>
@@ -757,7 +757,7 @@
 			<action name="SetNpcEmotionSequence" arg1="13" arg2="Attack_Idle_A" />
 			<action name="SetNpcEmotionSequence" arg1="14" arg2="Attack_Idle_A" />
 			<action name="SetNpcEmotionSequence" arg1="15" arg2="Attack_Idle_A" />		
-			<action name="AddCinematicTalk" npcID="11003584" illustID="Schatten_normal" msg="$52010055_QD__52010055__24$" duration="3000" align="Reft"/>		
+			<action name="AddCinematicTalk" npcID="11003584" illustID="Schatten_normal" msg="$52010055_QD__52010055__24$" duration="3000"/>		
 			<action name="카메라경로를선택한다" arg1="4009,4010" arg2="0"/>
 			<action name="카메라를선택한다" arg1="4010" arg2="1"/>				
 			<action name="SetNpcEmotionSequence" arg1="15" arg2="Attack_Idle_A,Attack_01_A" />
@@ -771,7 +771,7 @@
 
     <state name="엔딩연출메이슨1"> <!-- 메이슨 검무 -->
         <onEnter>		
-			<action name="AddCinematicTalk" npcID="11003586" illustID="Mason_closeEye" msg="$52010055_QD__52010055__25$" duration="1500" align="Reft"/>		
+			<action name="AddCinematicTalk" npcID="11003586" illustID="Mason_closeEye" msg="$52010055_QD__52010055__25$" duration="1500"/>		
 			<action name="카메라를선택한다" arg1="4014" arg2="1"/>				
 			<action name="카메라경로를선택한다" arg1="4014,4015" arg2="0"/>
 			<action name="SetNpcEmotionSequence" arg1="13" arg2="Attack_Idle_A" />
@@ -788,7 +788,7 @@
         <onEnter>
 			<action name="이펙트를설정한다" arg1="500" arg2="1"/>	
 			<action name="이펙트를설정한다" arg1="501" arg2="1"/>					
-			<action name="AddCinematicTalk" npcID="11003776" illustID="Conder_normal" msg="$52010055_QD__52010055__26$" duration="3000" align="Reft"/>			
+			<action name="AddCinematicTalk" npcID="11003776" illustID="Conder_normal" msg="$52010055_QD__52010055__26$" duration="3000"/>			
 			<action name="카메라경로를선택한다" arg1="4016,4017" arg2="0"/>
 			<action name="NPC를이동시킨다" arg1="13" arg2="PatrolDataCondorAttack1" /> <!-- 엔딩 연출용 콘대르 돌진 -->	
 		</onEnter>	
