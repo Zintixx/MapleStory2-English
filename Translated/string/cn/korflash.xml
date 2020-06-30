@@ -1,5 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ms2>
+  <!--common-->
+  <!-- text제한 설정/국가마다 다름 ex) 가-힣 &#xAC00;-&#xD7A4;-->
   <key id="$s_common_text_restrict" value="0-9 a-z A-Z" />
   <key id="$s_common_confirm" value="OK" />
   <key id="$s_common_cancel" value="Cancel" />
@@ -49,6 +51,7 @@
   <key id="$s_common_web_guide_gallery" value="Exhibit" />
   <key id="$s_common_web_guide_ranking" value="Ranking" />
   <key id="$s_common_prob_info" value="Probability Info" />
+  <!-- only KR -->
   <key id="$s_common_normal" value="Normal" />
   <key id="$s_common_rare" value="Rare" />
   <key id="$s_common_elite" value="Exceptional" />
@@ -56,12 +59,14 @@
   <key id="$s_common_legendary" value="Legendary" />
   <key id="$s_common_artifact" value="Ascendant" />
   <key id="$s_cursor_talk" value="Chat" />
+  <!--상점 판매 태그  (메럿마켓, 캐시샵)-->
   <key id="$s_saletag_new" value="NEW" />
   <key id="$s_saletag_sale" value="SALE" />
   <key id="$s_saletag_event" value="EVENT" />
   <key id="$s_saletag_hot" value="HOT" />
   <key id="$s_saletag_special" value="SPECIAL" />
   <key id="$s_saletag_category_sale" value="SALE" />
+  <!--talkpanelsetting-->
   <key id="$s_talkpanelsetting_title" value="Chat Tab Options" />
   <key id="$s_talkpanelsetting_initialize" value="Reset" />
   <key id="$s_talkpanelsetting_apply" value="Apply" />
@@ -102,10 +107,12 @@
   <key id="$s_talkpanelsetting_systemevent" value="Event Notifications" />
   <key id="$s_talkpanelsetting_systemnotify" value="System Notifications" />
   <key id="$s_talkpanelsetting_tooltip_entire" value="Check Apply to All to apply transparency and font settings to all chat tabs." />
+  <!--messenger-->
   <key id="$messenger_tab_setting" value="Tab Settings" />
   <key id="$messenger_tab_delete" value="Delete Tab" />
   <key id="$messenger_tab_name_entire" value="Main" />
   <key id="$messenger_tab_name_item" value="Combat" />
+  <!--inventory-->
   <key id="$s_inventory_title" value="Inventory" />
   <key id="$s_inventory_tab_equip" value="Gear" />
   <key id="$s_inventory_tab_skill" value="Skill" />
@@ -162,6 +169,7 @@
   <key id="$s_inventory_item_socket_tooltip" value="&lt;FONT color='#FFD200' size='15' &gt;Sockets / Gemstones&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;\nUnlock item sockets, upgrade gemstones, and equip or unequip gemstones." feature="ItemSocketSystem" />
   <key id="$s_inventory_item_socket_disable_tooltip" value="&lt;FONT color='#FFD200' size='15' &gt;Sockets / Gemstones&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;\nUnlock item sockets, upgrade gemstones, and equip or unequip gemstones." feature="ItemSocketSystem" />
   <key id="$s_inventory_slotexpand_tooltip" value="&lt;FONT color='#FFD200' size='15' &gt;Expand&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;\nExpand the currently selected inventory tab by {0} slot(s).\nCan be expanded up to {1} slots." />
+  <!--itemoption-->
   <key id="$s_itemopion_title" value="Auto-loot Settings" />
   <key id="$s_itemopion_check_auto_equip" value="Equipment" />
   <key id="$s_itemopion_check_auto_skill" value="Skill items" />
@@ -180,6 +188,7 @@
   <key id="$s_itemopion_dropdown_rank_up04" value="&lt;FONT color='#c888ff'&gt;Epic&lt;/FONT&gt; or higher" />
   <key id="$s_itemopion_dropdown_rank_up03" value="&lt;FONT color='#45d1ff'&gt;Exceptional&lt;/FONT&gt; or higher" />
   <key id="$s_itemopion_dropdown_rank_up02" value="&lt;FONT color='#b0f350'&gt;Rare&lt;/FONT&gt; or higher" />
+  <!--gameoption-->
   <key id="$s_gameoption_tab_game" value="Game" />
   <key id="$s_gameoption_tab_graphic" value="Graphics" />
   <key id="$s_gameoption_tab_sound" value="Sound" />
@@ -300,11 +309,15 @@
   <key id="$s_gameoption_LearningQuest" value="Never Open Maple Guide Automatically" />
   <key id="$s_gameoption_HideHighlightMenu" value="Hide Bottom Icon Alerts (SP, AP, New Mail, Gear Alerts)" />
   <key id="$s_gameoption_MyGiveDamage" value="Show damage to enemies" />
+  <!--삭제 예정-->
   <key id="$s_gameoption_MyTakeDamage" value="Show damage to character" />
+  <!--삭제 예정-->
   <key id="$s_gameoption_MyGiveRecovery" value="Show Healing I Provide" />
   <key id="$s_gameoption_MyTakeRecovery" value="Show Healing I Receive" />
   <key id="$s_gameoption_PartyGiveDamage" value="Show party damage to enemies" />
+  <!--삭제 예정-->
   <key id="$s_gameoption_PartyTageDamage" value="Show damage to party members" />
+  <!--삭제 예정-->
   <key id="$s_gameoption_PartyRecovery" value="Show Healing Received by Party Members" />
   <key id="$s_gameoption_DropIcon" value="Show speech bubbles for dropped items" />
   <key id="$s_gameoption_GetMeso" value="Show Mesos earned" />
@@ -394,10 +407,12 @@
   <key id="$s_gameoption_optimizer_count" value="" />
   <key id="$s_gameoption_optimizer_useOptimizer" value="Auto-optimization" />
   <key id="$s_gameoption_optimizer_warning" value="Use this to keep your game experience optimized.\nIf the game becomes unstable, please\ntry disabling this option." />
+  <!--skill-->
   <key id="$s_skill_title" value="Skills" />
   <key id="$s_skill_active" value="Active" />
   <key id="$s_skill_passive" value="Passive" />
   <key id="$s_skill_action" value="Action" />
+  <!--quest-->
   <key id="$s_quest_information" value="Quest Journal" />
   <key id="$s_quest_alramadd_quest_max" value="You can track up to 40 quests." />
   <key id="$s_quest_title" value="Story" />
@@ -445,10 +460,13 @@
   <key id="$s_quest_on" value="ON" />
   <key id="$s_quest_off" value="OFF" />
   <key id="$s_quest_guide_tooltip_goto_dungeon" value="&lt;FONT color='#FFD200' size='15' &gt;Enter Alone&lt;/FONT&gt;\nExplore this dungeon by yourself. Allows you to move to the dungeon immediately from your current location." />
+  <key id="$s_quest_guide_tooltip_party_search" value="&lt;FONT color='#FFD200' size='15' &gt;Find Party&lt;/FONT&gt;\nRecruit other adventurers to enter the dungeon with you, then teleport to the dungeon entrance. If you're already in a party, this button will allow you to recruit additional party members.\n\nIf you want to enter the dungeon immediately with your current party, click the &lt;FONT color='#45D1FF'&gt;Enter with Party&lt;/FONT&gt; button in the Dungeon Directory entry for this dungeon." feature="DirectQuestFindParty" />
+  <!-- UIQuestGuideDialog -->
   <key id="$s_questguide_mission_field" value="Exploration Goals" />
   <key id="$s_questguide_mission_dungeon" value="Rank Mission" />
   <key id="$s_questguide_dungeon_play_info" value="Dungeon Info" />
   <key id="$s_questguide_dungeon_goal" value="Dungeon Clear Conditions" />
+  <!--gamemenu-->
   <key id="$s_gamemenu_btn_worldmap" value="World Map" />
   <key id="$s_gamemenu_btn_dungeonSearch" value="Challenge Map" />
   <key id="$s_gamemenu_btn_partysearch" value="Party Finder" />
@@ -520,11 +538,16 @@
   <key id="$s_gamemenu_btn_collectitemgroupevent" value="合成麦特核心" feature="Event" locale="CN" />
   <key id="$s_gamemenu_btn_bingoevent" value="Bingo" />
   <key id="$s_gamemenu_btn_wedding" value="结婚" feature="Wedding" />
+  <!--건설모드전환버튼-->
   <key id="$s_gamemenu_btn_demolish" value="Clear Indoor Space" />
   <key id="$s_gamemenu_btn_construct" value="Furnish" />
   <key id="$s_gamemenu_btn_normal" value="Stop Furnishing" />
   <key id="$s_gamemenu_btn_construct_tooltip" value="&lt;FONT color='#FFD200' size='15' &gt;Begin Building&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;\nPress the shortcut key to enter Build Mode\nand decorate your property.\nYou can only use Build Mode inside your home." />
   <key id="$s_gamemenu_btn_normal_tooltip" value="&lt;FONT color='#FFD200' size='15' &gt;Exiting Build Mode&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;\nPressing the shortcut key or the ESC key will end Build Mode\nand return you to Normal Mode. While you're in Character Mode,\nif you move outside the build area your mode will change automatically." />
+  <!--	<key id="$s_gamemenu_btn_shop" value="바니걸의 상점"/> -->
+  <!--2016.11.24 부동산 개편으로 삭제-->
+  <!--	<key id="$s_gamemenu_btn_shop_tooltip" value="&lt;FONT color='#FFD200' size='15' &gt;바니걸의 건설 상점&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;\n인테리어 스퀘어에서 판매되는 인기 아이템들을 한 곳에 모아둔 바니걸의 건설 상점입니다.\n건설 모드에서 바로 구입해서 배치할 수 있습니다.\n&lt;FONT color='#8dd502'&gt;인테리어 스퀘어에 가면 더 많은 상품과 직접 꾸민 모습을 볼 수 있습니다.&lt;/FONT&gt;"/>-->
+  <!--2016.11.24 부동산 개편으로 삭제-->
   <key id="$s_gamemenu_btn_demolish_tooltip" value="&lt;FONT color='#FFD200' size='15' &gt;Clear Indoor Space&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;\nPick up all furnishings that are set in your home.\nItems can be found in the construction material list.\nIf you go outside during the process, or if the placement changes, the entire process may be canceled.&lt;/FONT&gt;" />
   <key id="$s_gamemenu_btn_homebank_tooltip" value="&lt;FONT color='#FFD200' size='15' &gt;Use Safe&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;\nYou can freely use the safe at Goldus Bank. There is a short delay between uses." feature="UGCMapRenewal" />
   <key id="$s_gamemenu_btn_homedoctor_tooltip" value="&lt;FONT color='#FFD200' size='15' &gt;Call Primary Physician&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;\nYou can call your primary physician to heal your Tombshocked status. Your primary physician requires a short rest between treatments." feature="UGCMapRenewal" />
@@ -532,6 +555,7 @@
   <key id="$s_gamemenu_btn_quiz_promote_tooltip" value="&lt;FONT color='#FFD200' size='15' &gt;Promote Quiz&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;\nYou can promote your OX Quiz in World Chat up to 3 times. Has a 60 second cooldown." feature="UGCMapOX" />
   <key id="$s_construct_slot_pgup" value="&lt;FONT color='#FFD200' size='15' &gt;Previous Page&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;\nClicking this button or pressing the shortcut key will display the previous page of available items.\nPressing this on the first page will take you to the last page." />
   <key id="$s_construct_slot_pgdn" value="&lt;FONT color='#FFD200' size='15' &gt;Next Page&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;\nClicking this button or pressing the shortcut key will display the next page of available items.\nPressing this on the last page will take you back to the first page." />
+  <!--characterSelect-->
   <key id="$s_charselect_title" value="Character Select" />
   <key id="$s_charselect_create_newchar" value="Create New Character" />
   <key id="$s_charselect_start_game" value="Start" />
@@ -544,8 +568,10 @@
   <key id="$s_charselect_revival_char" value="Restore" />
   <key id="$s_charselect_final_delete" value="Delete" />
   <key id="$s_charselect_lock_tooltip" value="Please purchase a Character Card from the Meret Market." />
+  <!--characterCreateSelect-->
   <key id="$s_charcreateselect_btn_create_char" value="Create Character" />
   <key id="$s_charcreateselect_btn_prev" value="Back" />
+  <!--characterCreate-->
   <key id="$s_charcreate_look" value="Customize Appearance" />
   <key id="$s_charcreate_equip" value="Customize Equipment" />
   <key id="$s_charcreate_create" value="Create" />
@@ -571,11 +597,14 @@
   <key id="$s_charcreate_degree" value="Orientation" />
   <key id="$s_charcreate_btn_custom" value="Custom" />
   <key id="$s_charcreate_btn_guide" value="Guide" />
+  <!--camera edit-->
+  <!-- 사용 안함-->
   <key id="$s_cameraedit_desc_char_rightclick" value="Rotate your character by &lt;FONT color='#FFD200'&gt;right-clicking&lt;/FONT&gt;\nwith your mouse." />
   <key id="$s_cameraedit_desc_char_wheel" value="Zoom in or out using the &lt;FONT color='#FFD200'&gt;wheel&lt;/FONT&gt;\non your mouse." />
   <key id="$s_cameraedit_desc_custom_leftclick" value="Change location by &lt;FONT color='#FFD200'&gt;clicking&lt;/FONT&gt;\nwith your mouse." />
   <key id="$s_cameraedit_desc_custom_rightclick" value="Rotate by &lt;FONT color='#FFD200'&gt;right-clicking&lt;/FONT&gt;with your mouse." />
   <key id="$s_cameraedit_desc_custom_wheel" value="Change size or length by using the &lt;FONT color='#FFD200'&gt;wheel&lt;/FONT&gt;\non your mouse." />
+  <!-- -->
   <key id="$s_cameratedit_title_hair" value="Hairstyle Mouse Controls" />
   <key id="$s_cameraedit_desc_hair_leftclick" value="Re-position your hair by holding &lt;b&gt;left-click&lt;/b&gt; and dragging the mouse." />
   <key id="$s_cameraedit_desc_hair_rightclick" value="Rotate your character by &lt;b&gt;right-clicking&lt;/b&gt; and dragging the mouse." />
@@ -584,6 +613,7 @@
   <key id="$s_cameraedit_desc_makeup_leftclick" value="Adjust the position of your cosmetics by holding &lt;b&gt;left-click&lt;/b&gt; and dragging the mouse." />
   <key id="$s_cameraedit_desc_ makeup_rightclick" value="Rotate your cosmetics by holding &lt;b&gt;right-click&lt;/b&gt; and dragging the mouse." />
   <key id="$s_cameraedit_desc_makeup_wheel" value="Adjust the size of your cosmetics using the &lt;b&gt;mouse wheel&lt;/b&gt;." />
+  <!--worldmap-->
   <key id="$s_worldmap_southperry" value="Southperry" />
   <key id="$s_worldmap_lith" value="Lith Harbor" />
   <key id="$s_worldmap_henesys" value="Henesys" />
@@ -639,6 +669,7 @@
   <key id="$s_worldmap_mission_area" value="Select a destination." />
   <key id="$s_worldmap_take_aircraft" value="Sorties Left" />
   <key id="$s_worldmap_sky_fortress_mode" value="Track\nSky Fortress" />
+  <!--minimap-->
   <key id="$s_minimap_shop" value="Merchants" />
   <key id="$s_minimap_friendly_npc" value="Friendly NPCs" />
   <key id="$s_minimap_taming_pet" value="Capturable Monsters" feature="PetBattle" />
@@ -650,6 +681,7 @@
   <key id="$s_minimap_quest_epic" value="Epic Quests" />
   <key id="$s_minimap_quest_world" value="World Quests" />
   <key id="$s_minimap_quest_repeat" value="Repeatable Quests" />
+  <!--upper hud-->
   <key id="$s_upper_hud_tooltip_attend" value="&lt;FONT color='#FFD200' size='15' &gt;Attendance Event&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;\nCheck the attendance records for your account." />
   <key id="$s_upper_hud_tooltip_manufacture" value="&lt;FONT color='#FFD200' size='15' &gt;Assistant Progress&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;\nShows the progress your assistant has made on their task." />
   <key id="$s_upper_hud_tooltip_search" value="&lt;FONT color='#FFD200' size='15' &gt;Attendance Event&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;\nEnter a search keyword\nand view the search results in Maview." />
@@ -661,6 +693,7 @@
   <key id="$s_upper_hud_tooltip_keyboard_mouse" value="&lt;FONT color='#FFD200' size='15' &gt;Keyboard Presets&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;\nClick this to choose either Keyboard Only or Mouse and Keyboard key binding presets." />
   <key id="$s_upper_hud_tooltip_gamepad_on" value="&lt;FONT color='#FFD200' size='15' &gt;Stop Using Gamepad&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;\nClick this button to disable gamepad controls." />
   <key id="$s_upper_hud_tooltip_gamepad_off" value="&lt;FONT color='#FFD200' size='15' &gt;Use Gamepad&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;\nClick this button to enable gamepad controls." />
+  <!--myInfo-->
   <key id="$s_myInfo_title" value="Character" />
   <key id="$s_myInfo_guild_empty" value="No guild" />
   <key id="$s_myInfo_todaymemo" value="Enter a character motto." />
@@ -713,6 +746,8 @@
   <key id="$s_myInfo_reset_statpoint" value="Reset Attributes" />
   <key id="$s_myInfo_remain_statpoint" value="Attribute Points" />
   <key id="$s_myInfo_veil_panel_of_edit_statpoint" value="You can't distribute Attribute Points while participating in Mushking Royale. Try again after the match has ended." />
+  <key id="$s_myInfo_screenshot" value="KORFLASH_$S_MYINFO_SCREENSHOT_VALUE:[F]ScreenshotWebSend" feature="ScreenshotWebSend" />
+  <!--image upload-->
   <key id="$s_ugc_image_title_profile" value="Set Portrait" />
   <key id="$s_ugc_image_title_wedding_profile" value="设置头像" feature="Wedding" />
   <key id="$s_ugc_image_title_banner" value="Set Poster" />
@@ -727,10 +762,12 @@
   <key id="$s_ugc_image_tooltip_add" value="Add File" />
   <key id="$s_ugc_image_tooltip_open" value="Open Folder" />
   <key id="$s_ugc_image_lb_noimage" value="Add a new image!" />
+  <!--ugc item edit-->
   <key id="$s_ugc_itemedit_title" value="Maple Workshop" />
   <key id="$s_ugc_itemedit_btn_init" value="Reset" />
   <key id="$s_ugc_itemedit_btn_make" value="Create" />
   <key id="$s_ugc_itemedit_btn_apply" value="Create" />
+  <!-- 삭제 예정 -->
   <key id="$s_ugc_itemedit_btn_cancle" value="Cancel" />
   <key id="$s_ugc_itemedit_btn_newdraw" value="New" />
   <key id="$s_ugc_itemedit_btn_showtext" value="Content" />
@@ -754,8 +791,10 @@
   <key id="$s_ugc_itemedit_tooltip_add" value="Add File" />
   <key id="$s_ugc_itemedit_tooltip_cube_count" value="&lt;FONT color='#FFD200' size='15' &gt;Enter Item Quantity&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;\nEnter how many item you want to make from your design.\nYou can make as many as you have inventory space for." />
   <key id="$s_ugcitemedit_input_default" value="Enter item name (3 - 14 characters)" />
+  <!-- delete -->
   <key id="$s_ugc_itemedit_input_default" value="Enter item name (3 - 14 characters)" />
   <key id="$s_ugc_itemedit_cb_hide_ui" value="Hide UI" />
+  <!--ugc banner-->
   <key id="$s_ugc_banner_title" value="Display Reservation" />
   <key id="$s_ugc_banner_btn_upload" value="Reserve" />
   <key id="$s_ugc_banner_btn_newdraw" value="New" />
@@ -795,8 +834,10 @@
   <key id="$s_ugc_banner_lb_slot_icon_standby" value="Standby: {0}" />
   <key id="$s_ugc_banner_lb_slot_icon_reserved" value="[Reserved] {0}" />
   <key id="$s_ugc_banner_lb_slot_icon_pending" value="Awaiting reservation(s): {0}" />
+  <!--사용안함-->
   <key id="$s_ugc_banner_tooltip_add" value="Add File" />
   <key id="$s_ugc_banner_tooltip_open" value="Open Folder" />
+  <!--shop-->
   <key id="$s_shop_purchase" value="Items" />
   <key id="$s_shop_repurchase" value="Buy Back" />
   <key id="$s_shop_new_items" value="New" />
@@ -807,18 +848,22 @@
   <key id="$s_shop_notice_search" value="Enter search terms" />
   <key id="$s_shop_reset" value="Instant Restock" />
   <key id="$s_shop_soldout" value="Restock Unavailable" />
+  <!--품절된 경우-->
   <key id="$s_shop_stopsale" value="Restock Unavailable" />
+  <!--판매 중지된 경우-->
   <key id="$s_shop_label_new" value="NEW" />
   <key id="$s_shop_title_star" value="Star Shop" />
   <key id="$s_shop_gacha_btn_unequip_all" value="Unequip All" />
   <key id="$s_shop_gacha_btn_myequip" value="Reset" />
   <key id="$s_shop_gacha_btn_show_mainitems" value="View Main Item" />
+  <!--store-->
   <key id="$s_store_title" value="Bank Safe" />
   <key id="$s_store_savemeso" value="Deposit" />
   <key id="$s_store_takemeso" value="Withdraw" />
   <key id="$s_store_range" value="Sort" />
   <key id="$s_store_expand" value="Expand" />
   <key id="$s_objectstore_title" value="My Storage" />
+  <!--buddy-->
   <key id="$s_buddy_title" value="Friends" />
   <key id="$s_buddy_tab_player" value="Online" />
   <key id="$s_buddy_tab_list" value="Friends" />
@@ -844,16 +889,20 @@
   <key id="$s_buddy_empty_buddy" value="Look for a new friend!" />
   <key id="$s_buddy_empty_recv" value="You have no requests." />
   <key id="$s_buddy_empty_ban" value="No characters have been blocked." />
+  <!--cutscene-->
   <key id="$s_cutscene_skip_scene" value="SKIP" />
   <key id="$s_cutscene_skip_action" value="SKIP" />
   <key id="$s_cutscene_skip_state" value="SKIP" />
   <key id="$s_cutscene_skip" value="Skip" />
   <key id="$s_cutscene_skip_key" value="ESC" />
+  <!--partyDialog-->
   <key id="$s_party_searchDungeon" value="Searching for party..." />
+  <!--exp bar-->
   <key id="$s_exp_bonus" value="Charm Bonus" />
   <key id="$s_exp_combat" value="Combat" />
   <key id="$s_exp_adv" value="Adventure" />
   <key id="$s_exp_life" value="Lifestyle" />
+  <!--system menu-->
   <key id="$s_systemmenu_dragbar" value="Game Menu" />
   <key id="$s_systemmenu_option" value="Options" />
   <key id="$s_systemmenu_character" value="Switch Characters" />
@@ -861,6 +910,7 @@
   <key id="$s_systemmenu_exit" value="Exit Game" />
   <key id="$s_systemmenu_resume" value="Return to Game" />
   <key id="$s_systemmenu_graphic" value="Graphics" />
+  <!-- tooltip common -->
   <key id="$s_tooltip_empty" value="" />
   <key id="$s_tooltip_remain_time" value="Sec Left" />
   <key id="$s_tooltip_first_page" value="&lt;FONT color='#FFD200' size='15' &gt;First Page&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;\n&lt;FONT color='#909090'&gt;Return to the first page.&lt;/FONT&gt;" />
@@ -868,13 +918,17 @@
   <key id="$s_tooltip_next_page" value="&lt;FONT color='#FFD200' size='15' &gt;Next Batch&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;\nMove to the next group of pages." />
   <key id="$s_tooltip_last_page" value="&lt;FONT color='#FFD200' size='15' &gt;Last Page&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;\nGo to the last page." />
   <key id="$s_tooltip_dungeon_info" value="&lt;FONT color='#FFD200' size='15'&gt;Possible Rewards&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;Possible rewards found at the end of this challenge. Your actual rewards are chosen at random.\n\nSome rewards may be contained within selection boxes." />
+  <!--내 정보창 툴 팁-->
   <key id="$s_tooltip_myinfo_guild" value="&lt;FONT color='#FFD200' size='15' &gt;Guild&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;\nThis is the guild your character belongs to.&lt;/FONT&gt;" />
   <key id="$s_tooltip_myinfo_birthday" value="&lt;FONT color='#FFD200' size='15' &gt;Start Date&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;\nThis is the date your character began their adventure." />
+  <!--미사용-->
   <key id="$s_tooltip_myinfo_address" value="&lt;FONT color='#FFD200' size='15' &gt;Home&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;\nThis is the name of your home. All characters on an account share a single home." />
   <key id="$s_tooltip_myinfo_job" value="&lt;FONT color='#FFD200' size='15' &gt;Job&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;\nYour character's job determines the role they fulfill and the abilities they can utilize." />
   <key id="$s_tooltip_myinfo_good_interior_point" value="&lt;FONT color='#FFD200' size='15' &gt;Architect Points&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;\n&lt;FONT color='#8dd502'&gt;This Month/Total Points&lt;/FONT&gt;\nPeople who visit your home can nominate you as a star architect. Nominations earn you architect points. These points contribute towards this month's points, which get reset each month, and the total points you've received during your time in Maple World. You can nominate one architect per day per account." />
+  <!--메인 UI 툴 팁-->
   <key id="$s_tooltip_myinfo_hp" value="&lt;FONT color='#FFD200' size='15' &gt;Health&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;\nThis is your character's health. If your health reaches zero, you will be stuck under a tombstone and unable to act." />
   <key id="$s_tooltip_myinfo_sp" value="&lt;FONT color='#FFD200' size='15' &gt;Spirit&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;\nSpirit is a resource consumed by your combat skills. Once your spirit has been depleted, you will be unable to use combat skills. Spirit naturally regenerates over time." />
+  <!--내 정보창 툴 팁-->
   <key id="$s_tooltip_myinfo_profile" value="&lt;FONT color='#FFD200' size='15' &gt;Set Portrait&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;\nSet your portrait by selecting an image on your computer or using the portrait camera to take a picture in-game." />
   <key id="$s_tooltip_myinfo_todayword" value="&lt;FONT color='#FFD200' size='15' &gt;Quote of the Day&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;\nTry writing something for your Quote of the Day to show your friends.\n&lt;FONT size='8'&gt; &lt;/FONT&gt;\n&lt;Img Src='export_common_icon_lclick' vspace='-3'&gt;&lt;/Img&gt; You can enter your message here with a &lt;FONT color='#FFD200'&gt;left click&lt;/FONT&gt;&lt;FONT color='#FFFFFF'&gt;." />
   <key id="$s_tooltip_myinfo_tab_equip" value="&lt;FONT color='#FFD200' size='15' &gt;Gear&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;\nRight-click armor and accessories in the Equip tab of your inventory to equip them." />
@@ -895,7 +949,9 @@
   <key id="$s_tooltip_myinfo_adventure_level" value="&lt;FONT color='#FFD200' size='15' &gt;Prestige Rank&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;\nYour prestige rank unlocks special account-wide lifestyle perks." feature="AdventureLevel" />
   <key id="$s_tooltip_myinfo_gem_petSkin" value="&lt;FONT color='#FFD200' size='15' &gt;Pet Skin&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;\nThe summoned pet's appearance is changed to that of the equipped Pet Skin. The pet's appearance and attack animation will be altered, but its attributes will remain unchanged." feature="GemPetSkin" />
   <key id="$s_tooltip_myinfo_gem_meta" value="&lt;FONT color='#FFD200' size='15' &gt;麦特徽章&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;\n麦特徽章的能力值可以适用在角色上。" feature="GemMeta" />
+  <!--미니맵 정보 툴 팁-->
   <key id="$s_tooltip_minimap_channel" value="&lt;FONT color='#FFD200' size='15' &gt;Switch Channel&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;\nGo to a different channel on the same server." />
+  <!--월드맵의 경우 우측 하단 메인 메뉴 툴 팁 설명과 동일하게 사용-->
   <key id="$s_tooltip_minimap_worldmap" value="&lt;FONT color='#FFD200' size='15' &gt;World Map [M]&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;\nView the entire map of Maple World. The map also includes info on your current location and local monsters." />
   <key id="$s_tooltip_minimap_setting" value="&lt;FONT color='#FFD200' size='15' &gt;Minimap Settings&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;\nSelect the information that will be shown on your minimap." />
   <key id="$s_tooltip_minimap_minimize" value="&lt;FONT color='#FFD200' size='15' &gt;Minimize Minimap&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;\nMinimize the minimap so it can't be seen. Pressing the button again will restore it." />
@@ -913,6 +969,7 @@
   <key id="$s_tooltip_messenger_tab" value="&lt;FONT color='#FFD200' size='15' &gt;All Tab&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;\nThis is the default chat tab where all chat messages are shown.\n&lt;FONT size='8'&gt; &lt;/FONT&gt;\n &lt;Img Src='export_common_icon_rclick' vspace='-3'&gt;&lt;/Img&gt; You can change its position by left-clicking and dragging." />
   <key id="$s_tooltip_messenger_resize" value="&lt;FONT color='#FFD200' size='15' &gt;Chat Window Resize&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;\nChange the size of the chat window." />
   <key id="$s_tooltip_messenger_type" value="" />
+  <!--코드에서 생성-->
   <key id="$s_tooltip_myinfo_trophyPoint" value="&lt;FONT color='#FFD200' size='15' &gt;Trophies&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;\nThe number of trophies your character has earned." />
   <key id="$s_tooltip_myinfo_stat_itemLevel" value="&lt;FONT color='#FFD200' size='15' &gt;Gear Score&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;This is the sum of all Gear Score values from the gear your character currently has equipped. Gear Score is a numerical representation of your equipment's power. Some dungeons have minimum Gear Score requirements, but greater rewards.\n\nPlease note that off-hand items do not contribute to your Gear Score. (Shields, codices, and one-handed weapons placed in the second weapon slot are all considered off-hand items.)" />
   <key id="$s_tooltip_myinfo_stat_itemLevel_ohAdditional" value="&lt;FONT color='#FFD200' size='15' &gt;Gear Score&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;This the sum of all gear score values from the gear your character currently has equipped. Gear score is a numerical representation of your equipment's power. Some dungeons have minimum gear score requirements, but greater rewards.\n\nWhen dual-wielding weapons, only the weapon with the highest gear score will contribute to your total gear score. If the difference between your weapons' gear score is too great, your gear score will be penalized based on the difference.\n\nShields and codices do not contribute to your gear score. " feature="OHItemAdditionalLevel01" />
@@ -990,10 +1047,13 @@
   <key id="$s_tooltip_myinfo_stat_2_15" value="&lt;FONT color='#FFD200' size='15' &gt;Debuff Duration Reduction&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;\nReduces the duration of detrimental status effects used against you." />
   <key id="$s_tooltip_myinfo_stat_2_16" value="&lt;FONT color='#FFD200' size='15' &gt;Health Regen&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;\nIncreases the amount of health that regenerates over time." />
   <key id="$s_tooltip_myinfo_stat_2_17" value="&lt;FONT color='#FFD200' size='15' &gt;PvP Defense&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;\nReduces the damage taken from other players." />
+  <!--소지품 창 탭에 대한 툴 팁 설명-->
   <key id="$s_tooltip_inven_equip" value="&lt;FONT color='#FFD200' size='15' &gt;Gear&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;\nView your weapons, equipment, and accessories here." />
   <key id="$s_tooltip_inven_skin" value="&lt;FONT color='#FFD200' size='15' &gt;Outfits&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;\nView your cosmetic outfit items here." />
   <key id="$s_tooltip_inven_life" value="&lt;FONT color='#FFD200' size='15' &gt;Fishing/Music&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;\nSearches for fishing and music items." />
+  <!-- 기존 $s_tooltip_inven_construct -->
   <key id="$s_tooltip_inven_misc" value="&lt;FONT color='#FFD200' size='15' &gt;Misc&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;\nCheck all kinds of other items here." />
+  <!-- 기존 $s_tooltip_inven_etc -->
   <key id="$s_tooltip_inven_summon" value="&lt;FONT color='#FFD200' size='15' &gt;Mounts&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;\nView your ground and air mount items here." />
   <key id="$s_tooltip_inven_gem" value="&lt;FONT color='#FFD200' size='15' &gt;Gemstones&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;\nView your gemstones and gem dust here." />
   <key id="$s_tooltip_inven_quest" value="&lt;FONT color='#FFD200' size='15' &gt;Quest&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;\nView your quest items here." />
@@ -1006,9 +1066,12 @@
   <key id="$s_tooltip_inven_survival" value="&lt;FONT color='#FFD200' size='15' &gt;Mushking&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;\nItems for use  in Mushking Royale." feature="SurvivalContents01" />
   <key id="$s_tooltip_inven_lapenshard" value="&lt;FONT color='#FFD200' size='15' &gt;Lapenshards&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;\nView your lapenshards here." feature="Lapenshard01" />
   <key id="$s_tooltip_inven_piece" value="&lt;FONT color='#FFD200' size='15' &gt;Fragments&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;\nView item fragments here." feature="InventoryPieceTab" />
+  <!--미사용-->
   <key id="$s_tooltip_inven_skill" value="&lt;FONT color='#FFD200' size='15' &gt;Skill&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;\nCheck your skill items here." />
   <key id="$s_tooltip_inven_construct" value="&lt;FONT color='#FFD200' size='15' &gt;Build&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;\nCheck the items you can build with." />
   <key id="$s_tooltip_inven_etc" value="&lt;FONT color='#FFD200' size='15' &gt;Misc&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;\nCheck usable and other items here." />
+  <!-- -->
+  <!--게임 옵션에 대한 툴 팁 설명-->
   <key id="$s_tooltip_gameoption_game" value="&lt;FONT color='#FFD200' size='15' &gt;Game&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;\nChange settings related to gameplay." />
   <key id="$s_tooltip_gameoption_graphic" value="&lt;FONT color='#FFD200' size='15' &gt;Graphics&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;\nChange detailed graphic environment settings." />
   <key id="$s_tooltip_gameoption_sound" value="&lt;FONT color='#FFD200' size='15' &gt;Sound&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;\nAdjust individual sound settings." />
@@ -1033,6 +1096,7 @@
   <key id="$s_tooltip_charcustom_pos" value="&lt;FONT color='#FFD200' size='15' &gt;Placement&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;\nAdjust the placement." />
   <key id="$s_tooltip_charcustom_custompos" value="&lt;FONT color='#FFD200' size='15' &gt;Custom Setting&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;\nCustomize the item the way you want it." />
   <key id="$s_tooltip_charcustom_degree" value="&lt;FONT color='#FFD200' size='15' &gt;Angle&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;\nAdjust the angle of the item." />
+  <!--커뮤니티 툴 팁-->
   <key id="$s_tooltip_community_party" value="Party" />
   <key id="$s_tooltip_community_buddy" value="Friend" />
   <key id="$s_tooltip_community_tab_player" value="&lt;FONT color='#FFD200' size='15' &gt;Online&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;\nSee the list of players who are online and on this map." />
@@ -1066,15 +1130,18 @@
   <key id="$s_tooltip_ugcupload_guild_poster_apply" value="&lt;FONT color='#FFD200' size='15' &gt;Register&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;\nRegister the selected image as the guild poster." />
   <key id="$s_tooltip_ugcupload_blueprint_apply" value="&lt;FONT color='#FFD200' size='15' &gt;Select&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;\nConfirm the selected image." feature="Blueprint" />
   <key id="$s_tooltip_ugcbanner_apply" value="&lt;FONT color='#FFD200' size='15' &gt;Reserve&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;\nMake a reservation to display an image of your choice on the Display at a specific time." />
+  <!--아이템 염색 툴팁-->
   <key id="$s_tooltip_beauty_coloring_addbasket" value="&lt;FONT color='#FFD200' size='15' &gt;Add to Cart&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;\nAdd selected items to your cart." />
   <key id="$s_tooltip_beauty_coloring_reset" value="&lt;FONT color='#FFD200' size='15' &gt;Reset Color&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;\nResets the item to its original color." />
   <key id="$s_tooltip_beauty_coloring_pay" value="&lt;FONT color='#FFD200' size='15' &gt;Checkout&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;\nFinalize your purchase." />
+  <!--상점 툴팁-->
   <key id="$s_tooltip_shop_showenable" value="&lt;FONT color='#FFD200' size='15' &gt;Hide Unusable Items&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;\nShows only items you can currently use in the shop inventory." />
   <key id="$s_tooltip_shop_input_search" value="&lt;FONT color='#FFD200' size='15' &gt;Search&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;\nSearch for specific items." />
   <key id="$s_tooltip_shop_tab_purchase" value="&lt;FONT color='#FFD200' size='15' &gt;Items&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;\nThe list of items sold at the shop." />
   <key id="$s_tooltip_shop_tab_repurchase" value="&lt;FONT color='#FFD200' size='15' &gt;Repurchase&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;\nThe list of items that can be purchased again." />
   <key id="$s_tooltip_shop_tab_new_items" value="&lt;FONT color='#FFD200' size='15' &gt;New Items&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;\nA list of new items." />
   <key id="$s_tooltip_shop_btn_mainitem" value="&lt;FONT color='#FFD200' size='15' &gt;View Main Item&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;\nTry on the main item." />
+  <!--블랙마켓 툴팁-->
   <key id="$s_tooltip_blackmarket_tab_search" value="&lt;FONT color='#FFD200' size='15' &gt;Item Search&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;\nSearch the Black Market for items to buy." />
   <key id="$s_tooltip_blackmarket_tab_register" value="&lt;FONT color='#FFD200' size='15' &gt;Sale Listing&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;\nList items to be sold on the Black Market." />
   <key id="$s_tooltip_blackmarket_input_sellcount" value="&lt;FONT color='#FFD200' size='15' &gt;Quantity to Sell&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;\nDetermines how many items from a stack will be sold." />
@@ -1096,7 +1163,11 @@
   <key id="$s_tooltip_blackmarket_input_max_enchant" value="&lt;FONT color='#FFD200' size='15' &gt;Maximum Enchantment Level&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;\nSearch by the maximum enchantment level of the item you want." />
   <key id="$s_tooltip_blackmarket_input_min_socket" value="&lt;FONT color='#FFD200' size='15' &gt;Minimum Sockets&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;\nEnter the minimum number of sockets for the item you want to find." feature="ItemSocketSystem" />
   <key id="$s_tooltip_blackmarket_input_max_socket" value="&lt;FONT color='#FFD200' size='15' &gt;Maximum Sockets&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;\nEnter the maximum number of sockets for the item you want to find." feature="ItemSocketSystem" />
+  <!--미사용-->
   <key id="$s_tooltip_blackmarket_input_sellprice" value="&lt;FONT color='#FFD200' size='15' &gt;Sale Price&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;\nEnter a value between 10 and 9,900,000,000." />
+  <!--미사용-->
+  <!-- -->
+  <!--파티찾기 툴팁-->
   <key id="$s_tooltip_partysearch_tab_memeber_search" value="&lt;FONT color='#FFD200' size='15' &gt;Party Recruitment&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;\nParty leaders can wait for people to join their party via party recruitment." />
   <key id="$s_tooltip_partysearch_input_search" value="&lt;FONT color='#FFD200' size='15' &gt;By Title&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;\nEntering a search term will display a list of names including that term.\nHowever, the search will only be performed in the selected list." />
   <key id="$s_tooltip_partysearch_check_show_similar_level" value="&lt;FONT color='#FFD200' size='15' &gt;Hide Low Level Quests&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;\nExclusively displays dungeons near your level.\nUnchecking this will reveal the entire dungeon list." />
@@ -1117,12 +1188,16 @@
   <key id="$s_tooltip_partysearch_btn_party_join" value="&lt;FONT color='#FFD200' size='15' &gt;Join Party&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;\nPress this button to immediately join the party." />
   <key id="$s_tooltip_partysearch_btn_party_invite" value="&lt;FONT color='#FFD200' size='15' &gt;Party Invite&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;\nSend a party invitation to a character." />
   <key id="$s_tooltip_partysearchreg_input_title" value="&lt;FONT color='#FFD200' size='15' &gt;Title&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;\nTitles must contain a minimum of 2 characters." />
+  <!-- 게임메뉴 툴팁-->
   <key id="$s_gamemenu_ugc" value="&lt;FONT color='#FFD200' size='15' &gt;Screenshot Folder&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;\nOpen the folder to see the\nscreenshots you have taken." />
   <key id="$s_gamemenu_realestate" value="&lt;FONT color='#FFD200' size='15' &gt;Real Estate Contract&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;\nView the contract for the land plot currently associated with your home.\nOpen the contract to change your home's name, extend your contract, or cancel it." />
   <key id="$s_gamemenu_camera" value="&lt;FONT color='#FFD200' size='15' &gt;Portrait Camera&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;\nUse the camera to take a picture for your character portrait. The picture you take can be used immediately." />
+  <!--<key id="$s_gamemenu_warehouse" 	value="&lt;FONT color='#FFD200' size='15' &gt;이삿짐 보관 창고&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;\n집을 판매하거나 계약 기간이 만료됐을 때,\n집에 설치했던 아이템들 중에서 소지품으로\n바로 옮겨지지 않는 아이템이 보관됩니다.\n이 곳에 보관되는 아이템은 일정 기간 동안만\n보관되며, &lt;FONT color='#FF5F5F'&gt;보관 기간이 지나면 삭제됩니다." />-->
+  <!--20161124미사용-->
   <key id="$s_gamemenu_arena" value="&lt;FONT color='#FFD200' size='15' &gt;Personal Arena&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;\nApply to compete in arenas and fight other characters." />
   <key id="$s_gamemenu_petinfo" value="&lt;FONT color='#FFD200' size='15' &gt;Pet Info&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;\nView details about your summoned pet." />
   <key id="$s_gamemenu_apartment" value="&lt;FONT color='#FFD200' size='15' &gt;Golden Estates Recommended Apartments&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;\nGolden Estates Realty highly recommends these ridiculously popular apartments!\nYou can move into these apartments right away.\nYou can even sign the contracts right here, without going all the way to the apartments!\nSign a contract today!" />
+  <!-- msgbox -->
   <key id="$s_msgbox_cnt" value="个" />
   <key id="$s_msgbox_addsome1" value="+1" />
   <key id="$s_msgbox_addsome2" value="+10" />
@@ -1130,6 +1205,7 @@
   <key id="$s_msgbox_total" value="Total: {0}" />
   <key id="$s_msgbox_min" value="Min" />
   <key id="$s_msgbox_max" value="Max" />
+  <!-- trigger editor -->
   <key id="$s_triggerEditor_btn_clear_contents" value="Delete Triggers" />
   <key id="$s_triggerEditor_btn_clear_contents_tooltip" value="&lt;FONT color='#FFD200' size='15' &gt;Delete Triggers&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;\nDeletes all triggers associated with this trigger controller." />
   <key id="$s_triggerEditor_btn_rollback" value="Reset" />
@@ -1166,6 +1242,7 @@
   <key id="$s_triggerEditor_if" value="If" />
   <key id="$s_triggerEditor_set" value="set to" />
   <key id="$s_triggerEditor_goto" value="Go to" />
+  <!-- serverlist -->
   <key id="$s_serverlist_selectserver" value="Select Server" />
   <key id="$s_serverlist_enter" value="Enter" />
   <key id="$s_serverlist_state_comfort" value="Stable" />
@@ -1179,6 +1256,7 @@
   <key id="$s_serverlist_selectmode" value="Select Mode" />
   <key id="$s_regionlist_notice" value="Select the region closest to you for a better network connection." />
   <key id="$s_regionlist_prev" value="Servers" />
+  <!-- skillbook -->
   <key id="$s_skillbook_title" value="Skills" />
   <key id="$s_skillbook_passive" value="Passive" />
   <key id="$s_skillbook_upgrade" value="Upgrade Material" />
@@ -1213,6 +1291,7 @@
   <key id="$s_skillbook_tab_default_title" value="Skill Settings" />
   <key id="$s_skillbook_tab_default_rclick_menu_setting_tab" value="Change Name" />
   <key id="$s_skillbook_tab_default_rclick_menu_remove_tab" value="Delete Tab" />
+  <!-- achieve -->
   <key id="$s_achieve_title" value="Trophies" />
   <key id="$s_achieve_trophy_summary" value="Overview" />
   <key id="$s_achieve_heroTrophy" value="Trophy" />
@@ -1258,6 +1337,8 @@
   <key id="$s_achieve_reward_filter_etc" value="Miscellaneous" />
   <key id="$s_achieve_reward_filter_ok" value="Confirm" />
   <key id="$s_achieve_reward_filter_cancel" value="Cancel" />
+  <key id="$s_achieve_disabled" value="Purchase the Founder's Pack to access this." feature="FoundersPackMode" />
+  <!-- apartment -->
   <key id="$s_apartment_empty" value="Cannot move" />
   <key id="$s_apartment_broker" value="Here to sign a contract?\nTalk to me!" />
   <key id="$s_apartment_contract" value="Sign a Contract" />
@@ -1267,6 +1348,7 @@
   <key id="$s_apartment_gotoDoor" value="Move directly" />
   <key id="$s_apartment_myhome_tooltip" value="Action Key: Enter" />
   <key id="$s_owner_name" value="Address" />
+  <!-- real estate contract -->
   <key id="$s_realestate_confirm" value="Sign Contract" />
   <key id="$s_realestate_done" value="Close" />
   <key id="$s_realestate_brand" value="Golden Estates Realty" />
@@ -1278,6 +1360,7 @@
   <key id="$s_realestate_btn_change_auth" value="Access" />
   <key id="$s_realestate_title" value="Real Estate Contract" />
   <key id="$s_realestate_item_tooltip" value="&lt;FONT color='#FFD200' size='15' &gt;Maple Apartment ticket required.&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;\nYou need 1 Maple Apartment ticket to sign a contract.\nThe apartments will differ depending on the ticket type." />
+  <!-- real estate sell -->
   <key id="$s_realestate_sell_title" value="Real Estate Forfeiture Agreement" />
   <key id="$s_realestate_sell_address" value="Address: " />
   <key id="$s_realestate_sell_expire" value="Contract Duration: " />
@@ -1286,6 +1369,17 @@
   <key id="$s_realestate_sell_desc" value="&lt;FONT color='#C00000'&gt;You will forfeit the usage rights of your current land.&lt;/FONT&gt;\n\n1. If you forfeit land usage rights, the down payment and management fees you have paid will not be refunded.\n2. If you want to sign a new contract for the same land after the contract has been canceled, another down payment will be required.\n3. If you forfeit land usage rights, the indoor space of your house will stay the same while the outdoor materials will be returned.\n\n&lt;FONT color='#C00000'&gt;You cannot change your mind once you sign the agreement.&lt;/FONT&gt;" />
   <key id="$s_realestate_sell_confirm" value="Sign" />
   <key id="$s_realestate_sell_exit" value="Close" />
+  <!-- warehouse dialog -->
+  <!--
+	<key id="$s_warehouse_title" value="이삿짐 보관 창고"/>
+	<key id="$s_warehouse_get" value="받기"/>
+	<key id="$s_warehouse_get_complete" value="회수 완료"/>
+	<key id="$s_warehouse_get_expired" value="&lt;FONT color='#FF5F5F' &gt;기간만료&lt;/FONT&gt;"/>
+	<key id="$s_warehouse_empty" value="보관 중인 아이템이 없습니다."/>
+	<key id="$s_warehouse_get_all" value="한번에 받기"/>
+	<key id="$s_warehouse_get_all_tooltip" value="&lt;FONT color='#FFD200' size='15' &gt;한번에 받기&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;\n현재 페이지에 보관된 아이템을 한번에 받을 수 있습니다."/>-->
+  <!--20161124미사용-->
+  <!-- trade dialog -->
   <key id="$s_trade_confirm" value="Trade" />
   <key id="$s_trade_cancel" value="Cancel" />
   <key id="$s_trade_unlock" value="&lt;img src='export_icon_gray_unlock' vspace='-4'/&gt; Finalize Offer" />
@@ -1293,6 +1387,7 @@
   <key id="$s_trade_title" value="Trade" />
   <key id="$s_trade_oppenet_wait" value="&lt;img src='export_icon_gray_unlock' vspace='-4'/&gt; Still Thinking" />
   <key id="$s_trade_oppenet_lock" value="&lt;img src='export_icon_gray_lock' vspace='-4'/&gt; Offer Finalized" />
+  <!-- construction slot -->
   <key id="$s_construct_slot_up" value="Top" />
   <key id="$s_construct_slot_down" value="Down" />
   <key id="$s_construct_slot_rotate" value="Rotate" />
@@ -1301,8 +1396,10 @@
   <key id="$s_construct_slot_place" value="Place" />
   <key id="$s_construct_slot_exit" value="Exit" />
   <key id="$s_construct_slot_next" value="Next item" />
+  <!-- revival -->
   <key id="$s_revival_main" value="You are pinned under a tombstone." />
   <key id="$s_revival_main_dark" value="Pinned under a metal tombstone." />
+  <!-- construct help dialog -->
   <key id="$s_construct_help_title" value="Furnishing Help [A] " />
   <key id="$s_construct_help_cursor_move" value="Move Construction Cursor" />
   <key id="$s_construct_help_key_input" value="Move Furnishing" />
@@ -1320,18 +1417,22 @@
   <key id="$s_construct_help_key_pgup" value="Select the Furnishing Above" />
   <key id="$s_construct_help_key_pgdn" value="Select the Furnishing Below" />
   <key id="$s_construct_help_warn" value="You cannot interact with furnishings while decorating." />
+  <!-- cameramode help dialog -->
   <key id="$s_cameramode_help_title" value="Free Camera Help" />
   <key id="$s_cameramode_help_move" value="Free Camera Controls" />
   <key id="$s_cameramode_help_key_input" value="Move Camera" />
   <key id="$s_cameramode_help_mouse_wheel" value="Zoom in / Zoom Out" />
   <key id="$s_cameramode_help_mouse_rclick" value="Rotate Perspective" />
+  <!--UGC 건설-->
   <key id="$s_mainplayinfo_build_end" value="Start/Stop Furnishing" />
+  <!-- my house auth dialog-->
   <key id="$s_myhouseauth_title" value="Access" />
   <key id="$s_myhouseauth_public_all" value="Open to All" />
   <key id="$s_myhouseauth_public_part" value="Open to Some" />
   <key id="$s_myhouseauth_open_friend" value="Open to Friends" />
   <key id="$s_myhouseauth_open_guild" value="Open to Guild" />
   <key id="$s_myhouseauth_private" value="Private" />
+  <!-- maid -->
   <key id="$s_maid_l_birth" value="Birthday" />
   <key id="$s_maid_l_constel" value="Zodiac" />
   <key id="$s_maid_l_height" value="Height" />
@@ -1353,6 +1454,7 @@
   <key id="$s_maid_l_mood_good" value="Good" />
   <key id="$s_maid_l_mood_verygood" value="Very Good" />
   <key id="$s_maid_tooltip_mood" value="&lt;FONT color='#FFD200' size='15' &gt;Mood&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;\nShows the assistant's current mood.\nSpeaking and interacting with the assistant may change the assistant's mood.\nBeing offline will slowly decrease the assistant's mood." />
+  <!-- manufacture -->
   <key id="$s_manufacture_empty" value="There are no items being crafted. Submit an order to get started!" />
   <key id="$s_manufacture_make" value="Order" />
   <key id="$s_manufacture_get_by_merat" value="Instant Retrieval (For Development)" />
@@ -1361,11 +1463,14 @@
   <key id="$s_manufacture_get_item" value="Collect Order" />
   <key id="$s_manufacture_progress" value="In Progress" />
   <key id="$s_manufacture_complete" value="Done" />
+  <!-- manufacture status-->
   <key id="$s_mf_status_title" value="Assistant Task Progress" />
   <key id="$s_mf_status_empty" value="You can hire assistants to craft unique items for you. Place an assistant in your home via furnishing mode, then ask them about crafting." />
   <key id="$s_mf_status_ready" value="There are no items being crafted. Speak to your assistant to submit an order." />
   <key id="$s_mf_status_expired" value="The assistant's employment has ended, and their crafting order has been halted.\nHire an assistant again to resume crafting." />
+  <!--고용 기간 만료되도 제작은 유지하기로 결정했으므로 사용하지 않는 텍스트임-->
   <key id="$s_mf_status_item_get" value="Instant Retrieval" />
+  <!-- 우편 -->
   <key id="$s_mail_dialog_title" value="Mailbox" />
   <key id="$s_mail_dialog_bg_msg" value="Select a letter from the list." />
   <key id="$s_mail_new" value="Compose Mail" />
@@ -1398,9 +1503,11 @@
   <key id="$s_mail_delete" value="Delete" />
   <key id="$s_mail_ad_expired" value="Duration Ended" />
   <key id="$s_mail_ad_buy" value="Purchase Complete" />
+  <!-- 다이나믹 액션 -->
   <key id="$s_dynamic_title" value="Emotes" />
   <key id="$s_dynamic_input_tooltip" value="Bind an emote to a shortcut by clicking and then pressing a key." />
   <key id="$s_dynamic_open_dialog" value="&lt;FONT color='#FFD200' size='15' &gt;Emote&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;\nShows off your feelings with an animation." />
+  <!-- 커스텀 -->
   <key id="$s_common_custom_size" value="Size" />
   <key id="$s_common_custom_length" value="Length" />
   <key id="$s_common_custom_front_hair" value="Front" />
@@ -1418,7 +1525,9 @@
   <key id="$s_common_custom_add" value="cap data add" />
   <key id="$s_common_custom_delete" value="cap data delete" />
   <key id="$s_common_custom_color_basic" value="Basic Colors" />
+  <!--추천 색으로 염색-->
   <key id="$s_common_custom_color_detail" value="Custom" />
+  <!--고급 설정 색으로 염색-->
   <key id="$s_common_custom_hair_style" value="Hair" />
   <key id="$s_common_custom_makeup_style" value="Cosmetics" />
   <key id="$s_common_custom_face_style" value="Face" />
@@ -1429,6 +1538,7 @@
   <key id="$s_common_custom_skin_color" value="Skin Color" />
   <key id="$s_common_custom_mouse_lclick_rotate_cap" value="Left-click with the mouse\nto change headgear orientation." />
   <key id="$s_common_custom_mouse_rclick_rotate_cap" value="Right-click with the mouse\nto rotate the headgear." />
+  <!-- 뷰티샵 -->
   <key id="$s_beauty_title" value="Beauty Salon" />
   <key id="$s_beauty_title_skin" value="Dermatologist's Office" />
   <key id="$s_beauty_title_face" value="Plastic Surgery Office" />
@@ -1436,6 +1546,7 @@
   <key id="$s_beauty_random" value="Random" />
   <key id="$s_beauty_random_comment" value="Grants a &lt;FONT color='#00a2ed' &gt;random&lt;/font&gt; hairstyle from the styles below.\n(Mino can save any hairstyle you want to keep.)" />
   <key id="$s_beauty_equip_color_select" value="Select Dye" />
+  <!-- 삭제 예정 -->
   <key id="$s_beauty_color_select" value="Select Dye" />
   <key id="$s_beauty_notice_coloring_select" value="Select the item to dye." />
   <key id="$s_beauty_notice_coloring_equip" value="&lt;FONT size='14' &gt;Only showing visible items that can be dyed.&lt;/FONT&gt;" />
@@ -1444,13 +1555,16 @@
   <key id="$s_beauty_notice_face_select" value="Select a face." />
   <key id="$s_beauty_color_impossible_change" value="The color cannot be changed." />
   <key id="$s_beauty_confirm" value="You cannot revert this after changing.\nWould you like to change?" />
+  <!--뷰티샵에서 사용-->
   <key id="$s_beauty_coloring" value="Dye Workshop" />
   <key id="$s_beauty_select_item" value="Item Select" />
   <key id="$s_beauty_basket" value="My Cart" />
   <key id="$s_beauty_add_basket" value="Add to Cart" />
   <key id="$s_beauty_pay" value="Purchase" />
   <key id="$s_beauty_change_style" value="Change Style" />
+  <!--스타일 변경 이용료-->
   <key id="$s_beauty_change_color" value="Change Color" />
+  <!--기본 색상 변경 이용료-->
   <key id="$s_beauty_none" value="No Change" />
   <key id="$s_beauty_crop" value="Trim" />
   <key id="$s_beauty_special_hair" value="Special Hairstyle" />
@@ -1460,24 +1574,31 @@
   <key id="$s_beauty_tooltip_preview_with_cap" value="Wearing a hat may give you hat hair." />
   <key id="$s_beauty_style_select_title_special_hair" value="Select a Style" />
   <key id="$s_beauty_style_select_current_hair" value="Old Hairstyle" />
+  <!--사용 안함-->
   <key id="$s_beauty_style_select_new_hair" value="New Hairstyle" />
+  <!--사용 안함-->
   <key id="$s_beauty_style_select_btn_ok" value="Confirm" />
   <key id="$s_beauty_style_select_notice" value="If you decide to keep your old hairstyle, you'll get &lt;FONT color='#00a2ed' &gt;1 chic salon voucher.&lt;/FONT&gt; Get enough vouchers, and you can choose a new hairstyle from the chic salon stylist." />
   <key id="$s_beauty_title_my_style" value="My Hairstyle" />
   <key id="$s_beauty_btn_save_cur_style" value="Save Current Style" />
   <key id="$s_beauty_btn_extend_style_slot" value="Add Slots" />
   <key id="$s_beauty_title_my_style_hair" value="Saved Hairstyles" />
+  <!-- 계산서 -->
   <key id="$s_bill_title" value="Bill" />
   <key id="$s_bill_total" value="Total" />
   <key id="$s_bill_pcbang_total" value="Total: \n&lt;font size='16'&gt;(PC Cafe Discount)&lt;/font&gt;" />
+  <!-- 피팅돌 -->
   <key id="$s_fittingdoll_title" value="Mannequin" />
   <key id="$s_fittingdoll_transform" value="Swap Outfits" />
+  <!-- 카메라 -->
   <key id="$s_ugccamera_title" value="Portrait Camera" />
   <key id="$s_camera_free" value="Free Camera" />
   <key id="$s_camera_default" value="Default" />
+  <!-- 가이드 -->
   <key id="$s_guideevent_tip" value="&lt;FONT size='24'&gt;TIP&lt;/FONT&gt;" />
   <key id="$s_guideevent_skip" value="SKIP" />
   <key id="$s_guideevent_space" value="Space" />
+  <!-- 전직 -->
   <key id="$s_jobchange_difficulty" value="Crafting Difficulty:" />
   <key id="$s_jobchange_mainskill" value="Primary Skill" />
   <key id="$s_jobchange_str" value="Strength" />
@@ -1486,6 +1607,8 @@
   <key id="$s_jobchange_luck" value="Luck" />
   <key id="$s_jobchange_def" value="Defense" />
   <key id="$s_jobchange_range" value="Range" />
+  <!-- 신고 Report -->
+  <!-- 1:Character 클릭, 2:채팅창 클릭, 3:벽보/전광판, 4:마켓아이템, 5:부동산 -->
   <key id="$s_report_button_report" value="Report" />
   <key id="$s_report_subject" value="Name" />
   <key id="$s_report_reason" value="Reason" />
@@ -1534,29 +1657,35 @@
   <key id="$s_report_category7_main_reason" value="Inappropriate pet name" />
   <key id="$s_report_category7_sub_reason01" value="Misc" />
   <key id="$s_report_category7_description" value="• Blocking a character will hide various media related to the character, such as character portraits, chat messages, and mail.\n• You can manage your blocked character list in the Friends window.\n• False reports may result in &lt;FONT color='#be0202'&gt;severe penalties&lt;/FONT&gt;." />
+  <!-- 스토리북 -->
   <key id="$s_storybook_prev_page" value="Previous" />
   <key id="$s_storybook_next_page" value="Next" />
   <key id="$s_storybook_close" value="Close" />
+  <!-- 개인 대미지미터기 -->
   <key id="$s_individual_dps_timer" value="Time" />
   <key id="$s_individual_dps_tooltip_toggle" value="&lt;FONT color='#FFD200' size='15' &gt;Change Categories &lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;\nCycles through different meter categories." />
   <key id="$s_individual_dps_tooltip_reset" value="&lt;FONT color='#FFD200' size='15' &gt;Reset&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;\nResets all rankings and data." />
   <key id="$s_individual_dps_tooltip_close" value="&lt;FONT color='#FFD200' size='15' &gt;Disable Performance Meter&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;\nYou can set re-enable the meter from the Interfact options menu." />
+  <!-- 파티 대미지 미터기 -->
   <key id="$s_partydps_timer" value="Time" />
   <key id="$s_partydps_bottom_bar" value="Party Damage Meter" />
   <key id="$s_partydps_tooltip_notice" value="&lt;FONT color='#FFD200' size='15' &gt;Share&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;\nShares rankings and records in the party chat." />
   <key id="$s_partydps_tooltip_toggle" value="&lt;FONT color='#FFD200' size='15' &gt;Change Categories &lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;\nCycles through different meter categories." />
   <key id="$s_partydps_tooltip_reset" value="&lt;FONT color='#FFD200' size='15' &gt;Reset&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;\nResets all rankings and data." />
   <key id="$s_partydps_tooltip_close" value="&lt;FONT color='#FFD200' size='15' &gt;Disable Performance Meter&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;\nYou can set re-enable the meter from the Interfact options menu." />
+  <!-- 10인 파티 던전 미터기  -->
   <key id="$s_chaosdps_timer" value="Time" />
   <key id="$s_chaosdps_bottom_bar" value="(Tracks Only Select High-Difficulty Dungeons)" />
   <key id="$s_chaosdps_tooltip_notice" value="&lt;FONT color='#FFD200' size='15' &gt;Share&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;\nShares rankings and records in the party chat." />
   <key id="$s_chaosdps_tooltip_toggle" value="&lt;FONT color='#FFD200' size='15' &gt;Change Categories &lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;\nCycles through different meter categories." />
   <key id="$s_chaosdps_tooltip_reset" value="&lt;FONT color='#FFD200' size='15' &gt;Reset&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;\nResets all rankings and data." />
   <key id="$s_chaosdps_tooltip_close" value="&lt;FONT color='#FFD200' size='15' &gt;Disable Performance Meter&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;\nYou can set re-enable the meter from the Interfact options menu." />
+  <!-- 그룹 채팅 `초대 다이얼 -->
   <key id="$s_invitegroup_title" value="Invite to Chat" />
   <key id="$s_invitegroup_from_search" value="Invite by Name" />
   <key id="$s_invitegroup_from_comunity" value="Invite Friend" />
   <key id="$s_invitegroup_button_invite" value="Invite" />
+  <!-- item break -->
   <key id="$s_itembreak_title" value="Dismantle Items" />
   <key id="$s_itembreak_break" value="Dismantle" />
   <key id="$s_itembreak_retry" value="Back" />
@@ -1574,14 +1703,17 @@
   <key id="$s_itembreak_donation_tooltip_desc" value="&lt;FONT color='#FFD200' size='15' &gt;Donate Gear&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;\nDonate gear to complete your Green Hoods mission.\n- Only &lt;FONT color='#FF5F5F' &gt;Lv. 20+ items&lt;/FONT&gt; can be donated.\n- Donated items cannot be recovered.\n- Donations count towards the quest objective. There are no additional rewards for donating." />
   <key id="$s_itembreak_donation_done" value="Your donation was received!" />
   <key id="$s_itembreak_bundle_register" value="Add" />
+  <!-- messagebox-->
   <key id="$s_messagebox_group_name" value="Room Name" />
   <key id="$s_messagebox_group_alpha" value="Transparency" />
+  <!-- groupmessenger-->
   <key id="$s_groupmessenger_start_groupchat" value="&lt;FONT color='#FFD200' size='15' &gt;New Group Chat&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;\nClick the button to begin a new group chat." />
   <key id="$s_groupmessenger_minimize" value="&lt;FONT color='#FFD200' size='15' &gt;Minimize&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;\nMinimize group chat." />
   <key id="$s_groupmessenger_show_userlist" value="&lt;FONT color='#FFD200' size='15' &gt;View Participants&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;\nSee chat participants and invite players to the chat." />
   <key id="$s_groupmessenger_exit" value="&lt;FONT color='#FFD200' size='15' &gt;Exit&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;\nLeave group chat." />
   <key id="$s_groupmessenger_config" value="&lt;FONT color='#FFD200' size='15' &gt;Settings&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;\nRename the chat, or adjust the window transparency." />
   <key id="$s_groupmessenger_addbutton" value="Group Chat" />
+  <!-- guild -->
   <key id="$s_guild_mail_header" value="Guild Mail" />
   <key id="$s_guild_mail_content_desc" value="Character Count {0} / {1}" />
   <key id="$s_guild_mail_title" value="Title" />
@@ -1614,6 +1746,7 @@
   <key id="$s_guild_info_button_guild_rank" value="Rankings" />
   <key id="$s_guild_info_tooltip_how_to_gain_exp" value="&lt;FONT color='#FFD200' size='15' &gt;Guild Experience&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;\nEarned by:\n- Checking in\n- Playing the Dance Dance Stop mini-game\n- Completing guild quests\n- Clearing guild raids" />
   <key id="$s_guild_info_tooltip_how_to_gain_gold" value="&lt;FONT color='#FFD200' size='15' &gt;Guild Funds\nMax funds: {0}&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;\nEarned by:\n- Making donations\n- Playing the Dance Dance Stop mini-game\n- Completing guild quests\n- Clearing guild raids" />
+  <!-- 위에 문구 사용 안함, stringCommon에 있는 항목 사용함 -->
   <key id="$s_guild_tooltip_donate" value="{0} time(s)" />
   <key id="$s_guild_bottom_tooltip_house" value="&lt;FONT color='#FFD200' size='15' &gt;Enter Guild House&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;\nEnter the guild house and access guild-exclusive benefits." />
   <key id="$s_guild_bottom_tooltip_donate" value="&lt;FONT color='#FFD200' size='15' &gt;Guild Funds&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;\nDonate mesos to the guild. Donating to the guild grants character experience, guild coins, and guild contribution." />
@@ -1762,11 +1895,13 @@
   <key id="$s_guild_ui_vsGame_info_desc1" value="You can sign up for Dance Dance Stop every Saturday between 18:55 and 20:00." feature="GuildMinigame01" />
   <key id="$s_mavier_title" value="News &amp; Updates" />
   <key id="$s_webbrowserpopup_title2" value="MapleStory 2" />
+  <!-- 개인전장 -->
   <key id="$s_regist_arena_tooltip" value="Let me into the battle arena." />
   <key id="$s_regist_arena_reward_description" value="Reward: Rewards depend on the battle result." />
   <key id="$s_regist_arena_btn" value="Register" />
   <key id="$s_regist_arena_cancle_btn" value="Cancel Registration" />
   <key id="$s_regist_arena_enter_btn" value="Enter" />
+  <!-- 블랙마켓 -->
   <key id="$s_blackmarket_title" value="Black Market" />
   <key id="$s_blackmarket_tab_search" value="Search" />
   <key id="$s_blackmarket_tab_register" value="List" />
@@ -1801,7 +1936,9 @@
   <key id="$s_blackmarket_btn_register" value="List" />
   <key id="$s_blackmarket_btn_cancel_sell" value="Cancel Transaction" />
   <key id="$s_blackmarket_btn_cancel_sell_hide" value="Retrieve" />
+  <!-- 거래 중지 -->
   <key id="$s_blackmarket_btn_cancel_sell_expired" value="Retrieve" />
+  <!-- 기간 만료-->
   <key id="$s_blackmarket_btn_complete_buy" value="Purchase Complete" />
   <key id="$s_blackmarket_btn_buy" value="Purchase" />
   <key id="$s_blackmarket_btn_buy_expired" value="End" />
@@ -1833,8 +1970,11 @@
   <key id="$s_mesoMarket_own_product_expired" value="&lt;FONT color='#FF5F5F'&gt;This item's listing has expired. Click 'Retrieve' to get it back.&lt;/FONT&gt;" />
   <key id="$s_mesoMarket_own_product" value="&lt;FONT color='#FFD200'&gt;(This is your listing.)&lt;/FONT&gt;" />
   <key id="$s_mesoMarket_myMerat" value="My Merets" />
+  <key id="$s_mesoMarket_myToken" value="Balance" feature="MesoMarketNA" />
   <key id="$s_mesoMarket_myMerat_tooltip" value="Your total merets, which can be used to buy mesos.\nThis number does not include game merets." />
   <key id="$s_mesoMarket_after_tax_price" value="Profit" />
+  <key id="$s_mesoMarket_btn_detail" value="Meso Market Help" feature="MesoMarketNA" />
+  <!-- deprecated , 미사용 -->
   <key id="$s_blackmarket_period" value="" />
   <key id="$s_blackmarket_remind_time" value="Time Left:" />
   <key id="$s_blackmarket_notice_close" value="Cannot be used during preparations." />
@@ -1851,6 +1991,7 @@
   <key id="$s_tooltip_trophy_combat" value="Combat" />
   <key id="$s_tooltip_trophy_adventure" value="Adventure" />
   <key id="$s_tooltip_trophy_life" value="Lifestyle" />
+  <!-- 인챈트 -->
   <key id="$s_enchant_select_title" value="Enchantment" />
   <key id="$s_enchant_select_type1_title" value="Feeling Lucky?" />
   <key id="$s_enchant_select_type1_desc" value="Ophelia: A Chance for Success" />
@@ -1864,8 +2005,11 @@
   <key id="$s_enchant_retry" value="Back" />
   <key id="$s_enchant_fail" value="&lt;FONT color='#87807c' size='24' &gt;Enchant Failed&lt;/FONT&gt;" />
   <key id="$s_enchant_fail_desc0" value="" />
+  <!--실패 시 재료만 날아감-->
   <key id="$s_enchant_fail_desc1" value="&lt;FONT color='Failure will reduce this item's enchantment level.&lt;/FONT&gt;" />
+  <!--실패 시 하락-->
   <key id="$s_enchant_fail_desc2" value="&lt;FONT color='#FF5F5F'&gt;Failure will render this item Unstable.\nUnstable gear can no longer be enchanted.&lt;/FONT&gt;" />
+  <!--실패 시 불안정-->
   <key id="$s_enchant_success_desc" value="The above attributes will change upon success." />
   <key id="$s_enchant_item_select" value="Please select an item to enchant." />
   <key id="$s_enchant_fail_stack_point" value="Enchantment Charges" feature="EnchantReformation01" />
@@ -1873,13 +2017,16 @@
   <key id="$s_enchant_equip_ingredient_tooltip" value="&lt;FONT color='#FFD200' size='15' &gt;Catalysts&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;\nIn order to enchant Epic quality items or better beyond &lt;FONT color='#00A2ED'&gt;+10&lt;/FONT&gt;, you must sacrifice copies of that item. (These items don't need to be enchanted themselves.)\n\nIf you use more than the required number of catalysts, you can increase your enchant success chance up to &lt;FONT color='#00A2ED'&gt;30%&lt;/FONT&gt;.\n\nOnce you've selected an item to enchant, available catalysts will appear here. &lt;FONT color='#00A2ED'&gt;Locked&lt;/FONT&gt; and &lt;FONT color='#00A2ED'&gt;equipped&lt;/FONT&gt; items cannot be used as a catalyst.\n\n&lt;FONT color='#FF5F5F'&gt;Catalysts disappear after use.&lt;/FONT&gt;" feature="EnchantReformation01" />
   <key id="$s_enchant_equip_ingredient_peachy_tooltip" value="&lt;FONT color='#FFD200' size='15' &gt;Catalysts&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;\nIn order to enchant Epic quality items or better beyond &lt;FONT color='#00A2ED'&gt;+10&lt;/FONT&gt;, you must sacrifice copies of that item. (These items don't need to be enchanted themselves.)\n\nOnce you've selected an item to enchant, available catalysts will appear here. &lt;FONT color='#00A2ED'&gt;Locked&lt;/FONT&gt; and &lt;FONT color='#00A2ED'&gt;equipped&lt;/FONT&gt; items cannot be used as a catalyst.\n\n&lt;FONT color='#FF5F5F'&gt;Catalysts disappear after use.&lt;/FONT&gt;" feature="Peachy02" />
   <key id="$s_enchant_fail_stack_info_tooltip" value="&lt;FONT color='#FFD200' size='15' &gt;Enchantment Charges&lt;/FONT&gt; \n&lt;FONT size='3'&gt; &lt;/FONT&gt;\nEach time you fail to enchant an item, that item will gain enchantment charges.\n - Failing +10: 1 Charge \n - Failing +11: 2 Charges \n - Failing +12: 3 Charges \n - Failing +13: 4 Charges\n - Failing +14: 4 Charges\n - Failing +15: 5 Charges \nYou can spend enchantment charges to increase the success chance of future enchantments up to &lt;FONT color='#00A2ED'&gt;100%&lt;/FONT&gt;. \n\n&lt;FONT color='#FF5F5F'&gt;Spent enchantment charges will be consumed regardless of whether or not the enchant succeeds. &lt;/FONT&gt;" feature="EnchantReformation01" />
+  <!-- 스마트 추천 -->
   <key id="$s_smart_recommend_close" value="Next" />
   <key id="$s_smart_recommend_billing_confirm" value="Accept" />
   <key id="$s_smart_recommend_billing_cancel" value="Cancel" />
   <key id="$s_smart_recommend_billing_title" value="Bill" />
   <key id="$s_smart_recommend_billing_price" value="Price:" />
   <key id="$s_smart_recommend_billing_price_num" value="个" />
+  <!-- 가이드 동영상 -->
   <key id="$s_guidemovie_title" value="Mouse Guide" />
+  <!-- 몬스터 휴전-->
   <key id="$s_monster_peak_text_peak" value="The power of darkness grows." />
   <key id="$s_monster_peak_text_peace" value="Lapenta's power grows." />
   <key id="$s_monster_peak_text_notify_0" value="Darkness shall rule the world!" />
@@ -1892,14 +2039,19 @@
   <key id="$s_monster_peak_text_notify_7" value="Evil will consume this world..." />
   <key id="$s_monster_peak_text_notify_8" value="Servants of the underworld... claim what is yours!" />
   <key id="$s_monster_peak_text_notify_9" value="Darkness shall devour you you!" />
+  <!-- 출석 선물 -->
   <key id="$s_attend_gift_title" value="Rewards Calendar" />
   <key id="$s_attend_gift_message" value="Login rewards can be found in your mailbox." />
   <key id="$s_attend_gift_detail" value="Details" />
   <key id="$s_attend_gift_payAttend" value="Participate Early" />
+  <!-- DT출석 이벤트 -->
   <key id="$s_attend_dt_title" value="Reward" />
+  <!-- 월정액 패키지 -->
   <key id="$s_cash_attend_title" value="Daily Wonders" />
+  <!-- 상단 HP바 -->
   <key id="$s_upper_hpbar_elite" value="Elite" />
   <key id="$s_upper_hpbar_boss" value="Boss" />
+  <!-- UIDungeonRoomDialog -->
   <key id="$s_dungeon_room_dungeon_title" value="Dungeon Directory" />
   <key id="$s_dungeon_room_dungeon_info" value="Dungeon Background" />
   <key id="$s_dungeon_room_require_info" value="Restrictions" />
@@ -1928,6 +2080,7 @@
   <key id="$s_dungeon_room_change_expert_button" value="Become a Veteran" />
   <key id="$s_dungeon_room_united_weekly_count_toolipt" value="You'll get item rewards for the first 15 dungeons you clear per day (maximum 30 per week). For the 1st, 3rd, 5th, 10th, 15th, 20th, 25th, and 30th normal or hard adventure dungeon you clear every week, you'll also get a bonus box with extra goodies to help you on your journey.\n\n&lt;FONT color='#FFD200' size='15' &gt;Reward Limit&lt;/FONT&gt;\nWeekly: 30 &lt;FONT color='#C0C0C0'&gt;(Resets at midnight UTC every Friday)&lt;/FONT&gt;\nDaily: 15 &lt;FONT color='#C0C0C0'&gt;(Resets at midnight UTC)&lt;/FONT&gt;\n&lt;FONT color='#C0C0C0'&gt;Clear counts also reset when you hit level 50.&lt;/FONT&gt;" />
   <key id="$s_dungeon_room_favorite_mark_tooltip" value="&lt;FONT color='#FFD200' size='15' &gt;Favorites&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;\nAdd or remove dungeons from your favorites list." />
+  <!-- UIDungeonSearchDialog -->
   <key id="$s_dungeonSearch_title" value="Challenge Map" />
   <key id="$s_dungeonSearch_find_button" value="Find Party" />
   <key id="$s_dungeonSearch_cancel_button" value="Cancel Search" />
@@ -1963,9 +2116,11 @@
   <key id="$s_dungeonSearch_settting_normal" value="Pick Normal Adventures" />
   <key id="$s_dungeonSearch_settting_raid" value="Pick Hard Adventures" />
   <key id="$s_dungeonSearch_comming_soon" value="COMING SOON" />
+  <!-- UIDungeonSearchSelectDialog -->
   <key id="$s_dungeonSearchSelect_radio_recommend" value="Recommended Dungeons" />
   <key id="$s_dungeonSearchSelect_title_normal" value="Pick Normal Adventures" />
   <key id="$s_dungeonSearchSelect_title_raid" value="Pick Hard Adventures" />
+  <!-- UIDungeonRewardDialog -->
   <key id="$s_dungeonReward_result" value="Results" />
   <key id="$s_dungeonReward_mainItem" value="Rewards" />
   <key id="$s_dungeonReward_gainMeso" value="Mesos Earned" />
@@ -1980,9 +2135,13 @@
   <key id="$s_dungeonReward_rank_item" value="Rank Reward Items" />
   <key id="$s_dungeonReward_leave" value="Exit" />
   <key id="$s_dungeonReward_party_leave" value="Leave Party" />
+  <!-- title -->
   <key id="$s_title_empty" value="No title" />
+  <!-- 아이템 미리보기 -->
   <key id="$s_itempreview_title" value="Item Preview" />
+  <!-- 미리보기 -->
   <key id="$s_skillpreview_title" value="Preview" />
+  <!-- UIMeratMarketDialog -->
   <key id="$s_meratmarket_title" value="Meret Market" />
   <key id="$s_meratmarket_title_designers" value="Design Shop" />
   <key id="$s_meratmarket_title_myshop" value="My Shop" />
@@ -2064,11 +2223,13 @@
   <key id="$s_meratmarket_input_default_desc" value="Enter a detailed description of the item." />
   <key id="$s_meratmarket_btn_terms" value="Terms" />
   <key id="$s_meratmarket_btn_register" value="List" />
+  <!-- 메럿 마켓 홈 기본 label -->
   <key id="$s_meratmarket_home_label_0" value="FEATURED ITEMS" />
   <key id="$s_meratmarket_premium_label_0" value="FEATURED ITEMS" />
   <key id="$s_meratmarket_premium_label_1" value="NEW ITEMS" />
   <key id="$s_meratmarket_designers_label_0" value="PROMOTED ITEMS" />
   <key id="$s_meratmarket_designers_label_1" value="NEWEST ITEMS" />
+  <!-- meratMarketBillDialog 에서 쓰임 (정리 예정)-->
   <key id="$s_meratmarket_title_bill" value="Bill" />
   <key id="$s_meratmarket_title_bill_gift" value="Gift" />
   <key id="$s_meratmarket_text_gift_charname" value="Character Name" />
@@ -2076,6 +2237,7 @@
   <key id="$s_meratmarket_bill_notice_meratmarket_only_premium" value="" />
   <key id="$s_meratmarket_bill_notice_meratmarket" value="If an item from the Design Shop violates the ToS, the design will be deleted. The merets used to buy it will be refunded via mail." />
   <key id="$s_meratmarket_bill_notice_cashshop" value="Items bought from the Cash Shop are moved to Cash Storage. They must be moved to your inventory to be used." />
+  <!-- -->
   <key id="$s_meratmarket_tooltip_tab_home" value="&lt;FONT color='#FFD200' size='15' &gt;Meret Market Home&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;\nThe market's main page, highlighting featured items." />
   <key id="$s_meratmarket_tooltip_tab_designers" value="&lt;FONT color='#FFD200' size='15' &gt;Design Shop&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;\nBrowse and purchase products designed by players." />
   <key id="$s_meratmarket_tooltip_tab_myshop" value="&lt;FONT color='#FFD200' size='15' &gt;My Shop&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;\nList items you've created so other players can buy them!" />
@@ -2127,6 +2289,7 @@
   <key id="$s_meratmarketreg_tooltip_btn_delete" value="&lt;FONT color='#FFD200' size='15' &gt;Remove Item&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;\nIf you remove the item from your shop, you will need to list it as a new item in order to sell it again. This will reset any information associated with the listing, including sales records." />
   <key id="$s_meratmarketreg_tooltip_btn_stopsale" value="&lt;FONT color='#FFD200' size='15' &gt;Remove Listing&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;\nRemoved and expired listings do not show up for sale in the Design Shop, but they can be relisted at any time." />
   <key id="$s_meratmarketreg_tooltip_btn_register" value="&lt;FONT color='#FFD200' size='15' &gt;List&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;\nList the item in the Design Shop." />
+  <!-- 삭제예정-->
   <key id="$s_meratmarket_title_premium" value="Premium Shop" />
   <key id="$s_meratmarket_tooltip_tab_premium" value="&lt;FONT color='#FFD200' size='15' &gt;Premium Shop&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;\nBrowse and purchase premium items." />
   <key id="$s_meratmarket_dropdown_rank_popular" value="Most Popular" />
@@ -2141,12 +2304,15 @@
   <key id="$s_meratmarket_premium_label_2" value="SPECIAL ITEMS" />
   <key id="$s_meratmarket_designers_label_2" value="TODAY'S SELLER" />
   <key id="$s_meratmarketreg_tooltip_btn_royalty" value="" />
+  <!-- -->
+  <!-- 마켓 툴팁 -->
   <key id="$s_meratmarket_tooltip_seller" value="Seller" />
   <key id="$s_meratmarket_tooltip_product_desc" value="Description" />
   <key id="$s_meratmarket_tooltip_product_tag" value="Tags" />
   <key id="$s_meratmarket_tooltip_product_count" value="Total Sold" />
   <key id="$s_meratmarket_tooltip_sell_date" value="Sale Duration" />
   <key id="$s_meratmarket_tooltip_sell_price" value="Sale Price" />
+  <!-- 캐시샵 -->
   <key id="$s_cashshop_title" value="Cash Shop" />
   <key id="$s_cashshop_cash_charge_tilte" value="Get NX" />
   <key id="$s_cashshop_merat_charge_tilte" value="Buy Merets" />
@@ -2159,6 +2325,7 @@
   <key id="$s_cashshop_inven_info" value="You must move the item from cash storage to your inventory to use it." />
   <key id="$s_cashshop_inven_name" value="Cash Storage" />
   <key id="$s_cashshop_product_empty" value="" />
+  <!--캐시샵에 구매가능한 상품이 없을 때 : 구매가능한 상품이 없습니다.-->
   <key id="$s_cashshop_basket_select_all" value="Select All" />
   <key id="$s_cashshop_basket_buy" value="Purchase Selected Item(s)" />
   <key id="$s_cashshop_text_special" value="Special" />
@@ -2166,8 +2333,10 @@
   <key id="$s_cashshop_text_bill_notice" value="Your purchase will be sent to your mailbox." />
   <key id="$s_cashshop_text_basket_notice" value="| Your cart will not be saved." />
   <key id="$s_cash_soldout" value="Restock Unavailable" />
+  <!-- msgbox_input_apartment -->
   <key id="$s_msgbox_apartment_subtext1" value="Building" />
   <key id="$s_msgbox_apartment_subtext2" value="Unit" />
+  <!-- pcbang -->
   <key id="$s_pcbang_effect" value="PC Cafe Login Benefits" />
   <key id="$s_pcbang_bonus" value="PC Cafe Login Time Event" />
   <key id="$s_pcbang_items" value="PC Cafe Only Item" />
@@ -2176,6 +2345,7 @@
   <key id="$s_pcbang_title" value="PC Cafe Special Benefits" />
   <key id="$s_pcbang_off_msg" value="Not a Nexon PC cafe." />
   <key id="$s_pcbang_bonus_info" value="* PC cafe login event will check the total login time at the PC cafe. The login time resets every night at midnight." />
+  <!-- home password -->
   <key id="$s_home_password_title" value="Maple Caps" />
   <key id="$s_home_password_desc" value="This house requires a passcode. Passcode settings are automatically disabled after 24 hours." />
   <key id="$s_home_password_input_password" value="Enter Passcode\n(6 numbers)" />
@@ -2183,8 +2353,17 @@
   <key id="$s_home_password_confirm" value="OK" />
   <key id="$s_home_password_cancel" value="Cancel" />
   <key id="$s_home_password_stop" value="Stop using" />
+  <!-- home summon -->
   <key id="$s_home_summon_title" value="House Teleporter" />
   <key id="$s_home_summon_desc" value="&lt;p align='center'&gt;Summons a character from your house to your current location.\nPlease enter the name of the character you want to summon.&lt;/p&gt;" />
+  <!-- good interior -->
+  <!--
+	<key id="$s_good_interior_recommend" value="추천하기"/>
+	<key id="$s_good_interior_cancel" value="다음에"/>
+	<key id="$s_good_interior_desc" value="이 집이 마음에 들었다면\n스타 건축가로 추천해 주세요."/>
+	-->
+  <!-- Home Info -->
+  <!--2016.11.24 부동산 개편 시 추가-->
   <key id="$s_home_info_notice" value="Greeting" />
   <key id="$s_home_info_homename" value="Home Name" />
   <key id="$s_home_info_notice_modify" value="Home Details" />
@@ -2219,6 +2398,7 @@
   <key id="$s_home_info_tooltip_btn_housing_config" value="&lt;FONT color='#FFD200' size='15' &gt;My Home Settings&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;\nAdjust settings that affect your whole house, including activity permissions, camera, lighting, and background options." />
   <key id="$s_home_info_tooltip_btn_construct" value="&lt;FONT color='#FFD200' size='15' &gt;Start/Stop Furnishing (B)&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;\nEnter furnishing mode to place items you've bought for your house. Special building and design functions are only available in furnishing mode. Leave furnishing mode at any time through the exit button or hotkey." />
   <key id="$s_home_info_tooltip_btn_housing_balance" value="&lt;FONT color='#FFD200' size='15' &gt;Budget Settings&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;\nSet aside funds for your friends to furnish your house with. Others can only spend as much as you set aside when furnishing your house. This limit does not apply to you." />
+  <!-- 토큰지갑 -->
   <key id="$s_token_pocket_title" value="Wallet" />
   <key id="$s_token_pocket_honor_tooltip" value="&lt;FONT color='#FFD200' size='15' &gt;Valor Token&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;\nEarned by competing in the Maple Arena and PvP events. Spend Valor Tokens at the Arena Shop in the Maple Arena. Valor Tokens may be reset at an announced date." />
   <key id="$s_token_pocket_karma_tooltip" value="&lt;FONT color='#FFD200' size='15' &gt;Treva&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;\nEarned in the Twisted Pocket Realm. Used to buy special items from shadow merchants." />
@@ -2229,12 +2409,15 @@
   <key id="$s_token_pocket_mentor_token_tooltip" value="&lt;FONT color='#FFD200' size='15' &gt;Mentor Points&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;\nEarn Mentor Points by clearing dungeons with your mentee. Clearing dungeons with a normal returning user also grants a small amount of Mentor Points. Can be used at the Mentor Shop." />
   <key id="$s_token_pocket_mentee_token_tooltip" value="&lt;FONT color='#FFD200' size='15' &gt;Mentee Points&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;\nEarn Mentee Points by logging in daily, completing mentee missions, and clearing dungeons. Can be used at the Mentee Shop." />
   <key id="$s_token_pocket_star_point_tooltip" value="&lt;FONT color='#FFD200' size='15' &gt;Star Points&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;\nUsed in the Star Shop." />
+  <key id="$s_token_pocket_meso_market_token_tooltip" value="&lt;FONT color='#FFD200' size='15' &gt;Meso Tokens&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;\nCurrency used in the Black Market to purchase mesos. Click the Help button in the Black Market to find out how to purchase Meso Tokens." feature="MesoMarketToken" />
+  <!-- 네임택 심볼 -->
   <key id="$s_nametag_symbol_title" value="Insignia Settings" />
   <key id="$s_msgbox_ugc_turms_title" value="Please review the guidelines below before using User Generated Content." />
   <key id="$s_msgbox_ugc_turms_content" value="&lt;FONT color='#FFD200' &gt;In the event the following guidelines conflict with the UGC Policy, the terms of the UGC Policy will prevail.&lt;/FONT&gt;\n&lt;b&gt;Be Original&lt;/b&gt;&lt;TEXTFORMAT leftMargin='25'&gt;\n• You may only upload and share content that is your own work.\n• You may not use logos or trademarks belonging to someone else in your work.\n• Although some content you may find on the Internet has been designated as available for use in &quot;derivative works&quot; or &quot;for personal use,&quot; or &quot;use for nonprofit purposes,&quot; you may not use this content in your UGC for MapleStory 2 or any Nexon service. UGC submitted or uploaded to MapleStory 2 does not qualify as personal or non-profit use.\n• Do not upload or share the designs or logos of others—even if you have modified the design or logo.\n• While it is fine to be inspired by existing work created by other users, it is not okay to copy someone else's work. Create your own UGC. Be original.\n• You may not describe or tag your UGC with words or language that identifies it as a specific character, trademark or brand name.&lt;/textformat&gt;\n&lt;b&gt;Be Respectful&lt;/b&gt;&lt;TEXTFORMAT leftMargin='25'&gt;\n• You may not use images of real people—even if the images are of yourself, your friends or famous people—for any UGC including Outfits and other items, Displays, Guild Emblems, Housing or Character Portraits.\n• You may not upload or share any content that is offensive, suggestive, harassing, abusive, degrading, hateful, political, religious or violent.&lt;/textformat&gt;" />
   <key id="$s_msgbox_ugc_turms_detail_view" value="View UGC Warnings" />
   <key id="$s_msgbox_ugc_turms_ok" value="Agree and Start" />
   <key id="$s_msgbox_ugc_turms_center_homepage" value="View Full Policy" />
+  <!-- 파티 찾기 -->
   <key id="$s_partysearch_tab_memeber_seach" value="Recruit for Party" />
   <key id="$s_partysearch_check_show_similarlevel" value="Hide Low Level Quests" />
   <key id="$s_partysearch_btn_register_partysearch" value="Party Join Request" />
@@ -2256,6 +2439,7 @@
   <key id="$s_partysearch_notice_search_empty" value=" " />
   <key id="$s_partysearch_notice_for_adventure" value="Recruit party members." />
   <key id="$s_partysearch_notice_party_search_preparing" value="Reorganizing party entry system.\nYou cannot move right now." />
+  <!-- 파티 참가/파티 모집  등록-->
   <key id="$s_partysearchregister_dialogName" value="Party Finder" />
   <key id="$s_partysearchregister_title" value="Listing Title" />
   <key id="$s_partysearchregister_user_count" value="Members" />
@@ -2264,15 +2448,20 @@
   <key id="$s_partysearchregister_btn_modify" value="Edit" />
   <key id="$s_partysearchregister_btn_remove" value="Remove Listing" />
   <key id="$s_partysearchregister_check_allow_join" value="Anyone can join without approval." />
+  <!-- 방명록 -->
   <key id="$s_visitorsbook_title" value="Guest Book" />
   <key id="$s_visitorsbook_comment" value="Leave a comment in the guest book!" />
+  <!-- 이벤트 -->
   <key id="$s_systemmail_notify_detail" value="View Event Details" />
   <key id="$s_systemmail_notify_close" value="Close" />
   <key id="$s_systemmail_notify_onTime_Title" value="Special 3PM On Time!" />
   <key id="$s_systemmail_notify_onTime_Desc" value="5,000 NX will be given to the first 50,000 users.\nClick the Participate button to join.\nThe result will be sent to your mail once ready.\nUsers who do not win NX will be given 300 Merets." />
   <key id="$s_systemmail_notify_onTime_button" value="Participate" />
+  <!-- 개인전장 -->
   <key id="$s_individual_pvp_title" value="Personal Arena" />
+  <!-- GameSystem -->
   <key id="$s_system_msg_revive" value="Reviving soon." />
+  <!-- PVP Result -->
   <key id="$s_pvp_result_msg_rank" value="Rank" />
   <key id="$s_pvp_result_msg_name" value="Name" />
   <key id="$s_pvp_result_msg_score" value="Score" />
@@ -2284,10 +2473,13 @@
   <key id="$s_pvp_team_result_msg_detail" value="Results" />
   <key id="$s_pvp_team_result_msg_pillage" value="Plunder" />
   <key id="$s_pvp_team_score_detail" value="Details" />
+  <!-- 관전 -->
   <key id="$s_observe_observing_target" value="Currently Spectating: {0}" />
   <key id="$s_observe_quit_observe" value="Exit" />
+  <!-- Survival 관전 -->
   <key id="$s_survival_observe_observing_target" value="Currently Spectating: {0}" feature="SurvivalContents01" />
   <key id="$s_survival_observe_quit_observe" value=" Stop " feature="SurvivalContents01" />
+  <!-- Login -->
   <key id="$s_login_msg_id" value="ID" />
   <key id="$s_login_msg_pwd" value="Password" />
   <key id="$s_login_msg_login" value="Login" />
@@ -2299,6 +2491,7 @@
   <key id="$s_global_portal_enter" value="Enter" />
   <key id="$s_global_portal_close" value="Close" />
   <key id="$s_quiz_footer_text" value="Go to &quot;O&quot; for true and &quot;X&quot; for false." />
+  <!-- Interior -->
   <key id="$s_interior_build_title" value="Use Item" />
   <key id="$s_interior_build_btn_use" value="Use" />
   <key id="$s_interior_preview_detail" value="Show Details" />
@@ -2306,6 +2499,7 @@
   <key id="$s_interior_tooltip_shrink_height" value="&lt;FONT color='#FFD200' size='15' &gt;Decrease Height&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;Decrease the height of the your home. The area can be decreased down to a height of 3." />
   <key id="$s_interior_tooltip_extension_area" value="&lt;FONT color='#FFD200' size='15' &gt;Increase Area&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;Increase your home's area. The area can be increased to a maximum of 25 x 25." />
   <key id="$s_interior_tooltip_extension_height" value="&lt;FONT color='#FFD200' size='15' &gt;Increase Height&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;\nIncrease your home's height. The height can be increased to a maximum of 15." />
+  <!-- 다크스트림 -->
   <key id="$s_dark_stream_result_view_rank" value="View Ranking" />
   <key id="$s_dark_stream_result_out" value="Exit" />
   <key id="$s_dark_stream_result_exp" value="{0} Experience" />
@@ -2317,11 +2511,13 @@
   <key id="$s_massiveevent_moviecounter_stage" value="Tier" />
   <key id="$s_massiveevent_moviecounter_start" value="Start" />
   <key id="$s_massiveevent_moviecounter_count" value="秒前" />
+  <!--MainPlayerInfo-->
   <key id="$s_mainplayerinfo_hp" value="Health" />
   <key id="$s_mainplayerinfo_sp" value="Spirit" />
   <key id="$s_mainplayerinfo_ride_off_tooltip" value="Dismount" />
   <key id="$s_notice_dialog_title" value="News" />
   <key id="$s_notice_dialog_footer" value="* What's there to do today? Check out your Daily Missions and find out! Complete fun tasks and get rewards." />
+  <!-- 아이템 옵션 변경(재굴림) 사용안함.-->
   <key id="$s_itemremakeoption_title" value="Change Item Bonus Attributes" />
   <key id="$s_itemremakeoption_text_notice_select_item" value="Select the item." />
   <key id="$s_itemremakeoption_text_notice_select_cur_option" value="Select the stat you want to change." />
@@ -2335,6 +2531,8 @@
   <key id="$s_itemremakeoption_btn_change_option" value="Change Attribute" />
   <key id="$s_itemremakeoption_btn_select_new_option" value="Select Stat" />
   <key id="$s_itemremakeoption_btn_confirm" value="OK" />
+  <!-- -->
+  <!-- 아이템 옵션 변경(재굴림) : 인챈트 ui 와 공유-->
   <key id="$s_itemremake_try" value="Change Attributes" />
   <key id="$s_itemremake_retry" value="Redo" />
   <key id="$s_itemremake_apply" value="Apply Attributes" />
@@ -2342,16 +2540,19 @@
   <key id="$s_itemremake_desc_top_select" value="&lt;font color='#FF5F5F'&gt;Select the bonus attributes you want to keep." />
   <key id="$s_itemremake_desc_top_warning" value=" " />
   <key id="$s_itemremake_desc_bottom_warning" value="&lt;font color='#FF5F5F'&gt;Current attributes preserved by default." />
+  <!-- 펫 트레이닝 -->
   <key id="$s_item_pet_training_title" value="Pet Training" />
   <key id="$s_item_pet_training_select_item" value="Place the pet you want to train here." />
   <key id="$s_item_pet_training_complete_item" value="Your pet's training has finished." />
   <key id="$s_item_pet_training_confirm_ready" value="Begin Training" />
   <key id="$s_item_pet_training_confirm_complete" value="Close" />
+  <!-- 펫 학습 -->
   <key id="$s_item_pet_study_title" value="Pet Skill Training" />
   <key id="$s_item_pet_study_select_item" value="Select a pet to train." />
   <key id="$s_item_pet_study_complete_item" value="Your pet's training has finished." />
   <key id="$s_item_pet_study_confirm_ready" value="Use" />
   <key id="$s_item_pet_study_confirm_complete" value="Close" />
+  <!-- 낚시 도감 -->
   <key id="$s_fishingbook_title" value="Fish Album" />
   <key id="$s_fishingbook_water" value="Freshwater" />
   <key id="$s_fishingbook_seawater" value="Saltwater" />
@@ -2361,6 +2562,7 @@
   <key id="$s_fishingbook_bigfish_count" value="Total Prize Fish" />
   <key id="$s_fishingbook_big_size" value="Largest Fish" />
   <key id="$s_fishingbook_big_size2" value="Largest Found" />
+  <!-- 펫 정보 -->
   <key id="$s_petsetting_title" value="Pets" />
   <key id="$s_petsetting_summon_off" value="Cancel Summon" />
   <key id="$s_petsetting_auto_revive" value="&lt;font color='#000000'&gt;Auto-revive" />
@@ -2406,17 +2608,21 @@
   <key id="$s_petsystem_evolution_selected" value="Please select a pet to evolve." feature="PetEvolution01" />
   <key id="$s_petsystem_evolution_cost" value="Evolution Cost:" feature="PetEvolution01" />
   <key id="$s_petsystem_evolution_button" value="Evolve" feature="PetEvolution01" />
+  <!-- 인챈트 이전 시스템 -->
   <key id="$s_item_enchant_transform_title" value="Eligible Gear" feature="EnchantTransform01" />
   <key id="$s_item_enchant_transform_msg" value="You can convert enchanted gear into enchant scrolls." feature="EnchantTransform01" />
   <key id="$s_item_enchant_transform_selected" value="Choose an item to convert." feature="EnchantTransform01" />
   <key id="$s_item_enchant_transform_desc" value="&lt;FONT color='#C0C0C0'&gt;Conversion will destroy the gear item.&lt;/FONT&gt;" feature="EnchantTransform01" />
   <key id="$s_item_enchant_transform_notice" value="&lt;FONT color='#de3c15' size='15'&gt;Equipped gear cannot be converted.&lt;/FONT&gt;" feature="EnchantTransform01" />
+  <!-- 미사용-->
   <key id="$s_petsetting_renderer_empty_slot" value="Companion Candy to a companion.\nYour little friend will get stronger and gain special talents!" />
   <key id="$s_petextension_title" value="Feed Pet" />
   <key id="$s_petextension_ok" value="Feed" />
   <key id="$s_petnutrient_title" value="Companion Candy" />
   <key id="$s_petnutrient_ok" value="Feed Candy" />
+  <!-- 아이템 자동 사용 -->
   <key id="$s_itemautouse_title" value="Item Auto-use Settings" />
+  <!-- 악기연주 -->
   <key id="$s_playinstrument_main_title" value="Play Instrument" />
   <key id="$s_playinstrument_main_play_direct_tab" value="Improvise" />
   <key id="$s_playinstrument_main_play_score_tab" value="Play Score" />
@@ -2426,16 +2632,22 @@
   <key id="$s_playinstrument_score_play_ensemble" value="Ensemble" />
   <key id="$s_instrument_fold_tooltip" value="&lt;FONT color='#FFD200' size='15' &gt;Minimize&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;\nMinimize the Instrument window to get it out of the way.\nPressing it again will bring it back." />
   <key id="$s_instrument_unfold_tooltip" value="&lt;FONT color='#FFD200' size='15' &gt;Open&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;\nOpen the Instrument window.\nYou can only perform or switch styles while the window is open." />
+  <!--
+	<key id="$s_playinstrument_score_start_button" value="연주하기" />
+	<key id="$s_playinstrument_score_stop_button" value="연주 중지" />
+	-->
   <key id="$s_playinstrument_score_mastery_tooltip" value="&lt;FONT color='#FFD200' size='15' &gt;Performance Expertise&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;\nPlaying music scores increases your performance mastery. You'll gain more mastery the longer you perform. As your performance mastery increases in level, your visual performance style will grow more unique!" />
   <key id="$s_playinstrument_score_play_solo_tooltip" value="&lt;FONT color='#FFD200' size='15' &gt;Solo Performance&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;\nPerform without any other musicians to accompany you. Others can listen to your performance." />
   <key id="$s_playinstrument_score_play_ensemble_tooltip" value="&lt;FONT color='#FFD200' size='15' &gt;Ensemble Performance&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;\nPlay music with other members of your party. When the party leader begins, any other party members who are ready will automatically join in." />
   <key id="$s_playinstrument_score_empty_score" value="Select a music score to play." />
+  <!--악보제작-->
   <key id="$s_writemusic_charset" value="0-9ABCDEFGabcdefgSsOoLlTtVvRrNn&amp;&lt;&gt;.+\r\- NnMmPpYy," />
   <key id="$s_writemusic_title" value="Compose" />
   <key id="$s_writemusic_btn_help_storybook" value="Music Guide" />
   <key id="$s_writemusic_btn_help_webpage" value="Web Help" />
   <key id="$s_writemusic_btn_make" value="Compose Score" />
   <key id="$s_writemusic_btn_write_keyboard" value="Compose on a Keyboard" />
+  <!--숨김-->
   <key id="$s_writemusic_btn_copy_to_clipboard" value="Copy" />
   <key id="$s_writemusic_btn_load_file" value="Open File" />
   <key id="$s_writemusic_btn_save_file" value="Save File" />
@@ -2503,11 +2715,14 @@
   <key id="$s_levelup_package_widget" value="Navigator" />
   <key id="$s_expbar_exp" value="+{0} Experience" />
   <key id="$s_adventure_expbar_exp" value="+{0} Experience" />
+  <!-- UIBossRewardPreviewDialog -->
   <key id="$s_boss_reward_name" value="Possible Rewards" />
+  <!-- UIBeautyListDialog -->
   <key id="$s_beauty_list_title" value="Beauty" />
   <key id="$s_beauty_list_beauty" value="Beauty Salon" />
   <key id="$s_beauty_list_coloring" value="Dye Workshop" />
   <key id="$s_beauty_list_face" value="Plastic Surgery Office" />
+  <!--UIArcadeMainDialog-->
   <key id="$s_arcade_title" value="Maple Arcade" />
   <key id="$s_arcade_enter_button" value="Enter" />
   <key id="$s_arcade_my_best" value="My High Score" />
@@ -2515,12 +2730,15 @@
   <key id="$s_arcade_rank_text" value="Rank (Resets every Friday at 12:00 AM)" />
   <key id="$s_arcade_rank_tooltip" value="Rank updates every 10 minutes\nand resets every Friday at 12:00 AM." />
   <key id="$s_arcade_item_event_band" value="Event" feature="Event" />
+  <!-- UIEnterEventFieldDialog -->
   <key id="$s_enter_eventfield_dialog" value="Go to\nEvent Map" />
+  <!-- UICardReverseGameDialog -->
   <key id="$s_card_reverse_game_dialog_title" value="Festival Cutout" />
   <key id="$s_card_reverse_game_dialog_play_notice" value="After finding the item you want, click the Shuffle button.\nPressing the button will change the location of the item." />
   <key id="$s_card_reverse_game_dialog_play_reverse_card" value="Flip the card." />
   <key id="$s_card_reverse_game_dialog_play_result" value="You got the item.\nCheck your inventory window.\nPress the Mix button to restart the game." />
   <key id="$s_card_reverse_game_dialog_play_mix" value="Mix" />
+  <!-- 메이플 투기장 UIRankPVPDialog -->
   <key id="$s_rank_pvp_title" value="Maple Arena" />
   <key id="$s_rank_pvp_menu_register" value="Find Match" />
   <key id="$s_rank_pvp_menu_statistics" value="Statistics" />
@@ -2548,6 +2766,7 @@
   <key id="$s_rank_pvp_histroy_win_rate" value="Win Rate" />
   <key id="$s_rank_pvp_result_title" value="Arena Result" />
   <key id="$s_rank_pvp_result_rating" value="Score" />
+  <!-- 아이템 추가옵션 변경 UIItemRemakeScrollDialog -->
   <key id="$s_itemremake_scroll_title" value="Change Bonus Attributes" />
   <key id="$s_itemremake_scroll_notice_puton" value="Select an item to use the bonus re-roller on." />
   <key id="$s_itemremake_scroll_btn_use" value="Use" />
@@ -2569,6 +2788,7 @@
   <key id="$s_itemremake_scroll_notice_top_select_option_pet" value="&lt;font color='#FF5F5F'&gt;Select a bonus talent to apply." />
   <key id="$s_itemremake_scroll_notice_bottom_select_option_pet" value="&lt;font color='#FF5F5F'&gt;Current talents preserved by default." />
   <key id="$s_itemremake_scroll_notice_bottom_complete_pet" value="The selected bonus talent has been applied." />
+  <!-- 아이템 잠금 UIItemLockDialog -->
   <key id="$s_itemlock_title" value="Lock Items" />
   <key id="$s_itemlock_btn_lock" value="Lock" />
   <key id="$s_itemlock_btn_unlock" value="Unlock" />
@@ -2589,6 +2809,7 @@
   <key id="$s_itemlock_tooltip_msg_lock" value="&lt;FONT color='#FF4040'&gt;This item is locked.&lt;/FONT&gt;" />
   <key id="$s_itemlock_tooltip_msg_unlock" value="&lt;FONT color='#FF4040'&gt;This item will be unlocked in {0} hour(s) and {1} minute(s).&lt;/FONT&gt;" />
   <key id="$s_itemlock_tooltip_msg_unlock2" value="&lt;FONT color='#FF4040'&gt;This item will be unlocked in {0} minute(s).&lt;/FONT&gt;" />
+  <!-- 젬스톤(보석) 및 소켓  UIItemSocketSystemDialog -->
   <key id="$s_itemsocketsystem_title" value="Sockets / Gemstones" feature="ItemSocketSystem" />
   <key id="$s_itemsocketsystem_tab_gemstone_upgrade" value="Upgrade" feature="ItemSocketSystem" />
   <key id="$s_itemsocketsystem_tab_gemstone_puton_off" value="Equip" feature="ItemSocketSystem" />
@@ -2603,12 +2824,14 @@
   <key id="$s_itemsocketsystem_gemstoneswap_msg_puton_equip" value="转移宝石。\n\n&lt;FONT color='#FFD200'&gt;请选择要转移的道具。&lt;/FONT&gt;" feature="ItemSocketSystem" />
   <key id="$s_itemsocketsystem_gemstoneswap_btn" value="移动" feature="ItemSocketSystem" />
   <key id="$s_itemsocketsystem_gemstoneswap_retry_btn" value="重试" feature="ItemSocketSystem" />
+  <!-- 젬스톤(보석) 및 소켓 / 젬스톤(보석) 업그레이드(강화) page-->
   <key id="$s_itemsocketsystem_gemstoneupgrade_msg_puton_gemstone" value="&lt;FONT color='#FFD200'&gt;Select a gemstone to upgrade.&lt;/FONT&gt;" feature="ItemSocketSystem" />
   <key id="$s_itemsocketsystem_gemstoneupgrade_msg_success_upgrade" value="Upgraded" feature="ItemSocketSystem" />
   <key id="$s_itemsocketsystem_gemstoneupgrade_msg_fail_upgrade" value="Upgrade Failed" feature="ItemSocketSystem" />
   <key id="$s_itemsocketsystem_gemstoneupgrade_msg_maxlevel" value="This gemstone cannot be upgraded.\nPlease select a different gemstone." feature="ItemSocketSystem" />
   <key id="$s_itemsocketsystem_gemstoneupgrade_btn_upgrade" value="Upgrade" feature="ItemSocketSystem" />
   <key id="$s_itemsocketsystem_gemstoneupgrade_btn_restart" value="Try Again" feature="ItemSocketSystem" />
+  <!-- 젬스톤(보석) 및 소켓 / 젬스톤(보석) 장착 및 해제  page-->
   <key id="$s_itemsocketsystem_gemstonemanage_title_equip_slots" value="Item to Equip or Unequip Gemstones" feature="ItemSocketSystem" />
   <key id="$s_itemsocketsystem_gemstonemanage_title_gem_slots" value="Available Gemstones" feature="ItemSocketSystem" />
   <key id="$s_itemsocketsystem_gemstonemanage_msg_puton_equip" value="&lt;FONT color='#FFD200'&gt;Select an item to equip or unequip with gemstones.&lt;/FONT&gt;" feature="ItemSocketSystem" />
@@ -2616,6 +2839,7 @@
   <key id="$s_itemsocketsystem_gemstonemanage_msg_socket_lock" value="&lt;FONT color='#909090'&gt;Locked&lt;/font&gt;" feature="ItemSocketSystem" />
   <key id="$s_itemsocketsystem_gemstonemanage_msg_socket_empty" value="Empty Socket: Select a gemstone." feature="ItemSocketSystem" />
   <key id="$s_itemsocketsystem_gemstonemanage_msg_socket_lock_all" value="&lt;FONT color='#FFD200'&gt;All the sockets are locked.\nUse Socket Expansion to unlock the sockets.&lt;/FONT&gt;" feature="ItemSocketSystem" />
+  <!-- 젬스톤(보석) 및 소켓 / 소켓 확장 page-->
   <key id="$s_itemsocketsystem_socketunlock_title_equip_slots" value="Eligible Items" feature="ItemSocketSystem" />
   <key id="$s_itemsocketsystem_socketunlock_title_ingredient_slots" value="Catalysts" feature="ItemSocketSystem" />
   <key id="$s_itemsocketsystem_socketunlock_tooltip_info_ingredient_slots" value="&lt;FONT color='#FFD200' size='15' &gt;Socket Expansion Catalysts&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;\nSocket expansion requires an &lt;FONT color='#00A2ED'&gt;identical item&lt;/FONT&gt; as its target, at the same tier and &lt;FONT color='#00A2ED'&gt;with the same number of empty and locked sockets&lt;/FONT&gt;. An item with a locked gemstone cannot be used as a catalyst. Select the item you want to unlock sockets for to see a list of usable catalysts. &lt;FONT color='#FF5F5F'&gt;Catalysts disappear after use, along with gemstones if they are socketed.&lt;/FONT&gt;" feature="ItemSocketSystem" />
@@ -2629,6 +2853,7 @@
   <key id="$s_itemsocketsystem_socketunlock_btn_unlock" value="Unlock" feature="ItemSocketSystem" />
   <key id="$s_itemsocketsystem_socketunlock_btn_restart" value="Try Again" feature="ItemSocketSystem" />
   <key id="$s_itemsocketsystem_socketunlock_msg_unlock_all" value="All sockets are unlocked." feature="ItemSocketSystem" />
+  <!-- 젬스톤(보석) 및 소켓 / 소켓 이전 page-->
   <key id="$s_itemsocketsystem_sockettransfer_title_source_slots" value="要转移插槽的时装道具" feature="ItemSocketTransfer01" />
   <key id="$s_itemsocketsystem_sockettransfer_title_target_slots" value="要移入插槽的时装道具" feature="ItemSocketTransfer01" />
   <key id="$s_itemsocketsystem_sockettransfer_tooltip_info_target_slots" value="&lt;FONT color='#FFD200' size='15' &gt;插槽移入道具&lt;/FONT&gt;\n&lt;FONT size='3'/&gt;时装插槽转移只能在插槽数量相同的时装之间进行。移入时装插槽的道具的插槽必须全部为锁定状态。" feature="ItemSocketTransfer01" />
@@ -2639,12 +2864,15 @@
   <key id="$s_itemsocketsystem_sockettransfer_success_transfer" value="宝石槽转移成功" feature="ItemSocketTransfer01" />
   <key id="$s_itemsocketsystem_sockettransfer_btn_transfer" value="转移" feature="ItemSocketTransfer01" />
   <key id="$s_itemsocketsystem_sockettransfer_btn_restart" value="重试" feature="ItemSocketTransfer01" />
+  <!-- 젬스톤(보석) 이동 page-->
   <key id="$s_itemsocketsystem_gemstoneswap_source_slot" value="转移宝石的道具" feature="ItemSocketTransfer01" />
   <key id="$s_itemsocketsystem_gemstoneswap_dest_slot" value="被转移宝石的道具" feature="ItemSocketTransfer01" />
   <key id="$s_itemsocketsystem_gemstoneswap_msg_gem_slots" value="&lt;FONT color='#FFD200'&gt;请先选择需要转移宝石的道具。&lt;/font&gt;\n选择后，将自动显示可转移的宝石列表。" feature="ItemSocketSystem" />
+  <!-- 아파트 미리 보기 UIApartmentPreviewDialog -->
   <key id="$s_apartmentpreview_title" value="Make the contract right now!" feature="UGCMapRenewal" />
   <key id="$s_apartmentpreview_contract" value="Make the contract now" feature="UGCMapRenewal" />
   <key id="$s_apartmentpreview_location" value="View Location" feature="UGCMapRenewal" />
+  <!-- 특성 UICharacterAbilityDialog -->
   <key id="$s_characterability_title" value="天赋" feature="CharacterAbility" />
   <key id="$s_characterability_bottom_desc" value="消耗点数就能学习天赋。" feature="CharacterAbility" />
   <key id="$s_characterability_reset_button" value="初始化" feature="CharacterAbility" />
@@ -2666,6 +2894,7 @@
   <key id="$s_shadowBuff_unequip" value="Deactivate" />
   <key id="$s_shadowBuff_upgradeCost" value="Upgrade Cost" />
   <key id="$s_shadowBuff_reset" value="Reset" />
+  <!-- 키보드 조작법 -->
   <key id="$s_keyboard_guide_title" value="Keyboard Controls" />
   <key id="$s_keyboard_guide_menu" value="Menu" />
   <key id="$s_keyboard_guide_dynamic" value="Emotes" />
@@ -2691,6 +2920,7 @@
   <key id="$s_keyboard_guide_enter" value="Chat" />
   <key id="$s_keyboard_guide_comma" value="Walk" />
   <key id="$s_keyboard_guide_period" value="Crawl" />
+  <!-- 게임패드(XBox) -->
   <key id="$s_xbox_guide_title" value="Xbox Controller Controls" />
   <key id="$s_xbox_guide_lt" value="Quickslot Controls" />
   <key id="$s_xbox_guide_lb" value="Quickslot Controls" />
@@ -2712,6 +2942,7 @@
   <key id="$s_xbox_guide_r" value="Move Camera\nRight-click in mouse mode" />
   <key id="$s_xbox_guide_rup" value="Zoom In" />
   <key id="$s_xbox_guide_rdown" value="Zoom Out" />
+  <!-- 게임패드(Dual Shock) -->
   <key id="$s_dualshock_guide_title" value="DUALSHOCK®4 Controls" />
   <key id="$s_dualshock_guide_l2" value="Quickslot Controls" />
   <key id="$s_dualshock_guide_l1" value="Quickslot Controls" />
@@ -2733,6 +2964,7 @@
   <key id="$s_dualshock_guide_r" value="Move Camera\nRight-click in mouse mode" />
   <key id="$s_dualshock_guide_rup" value="Zoom In" />
   <key id="$s_dualshock_guide_rdown" value="Zoom Out" />
+  <!-- 마우스 조작 -->
   <key id="$s_mouse_guide_title" value="Mouse Controls" />
   <key id="$s_mouse_guide_menu" value="Menu" />
   <key id="$s_mouse_guide_dynamic" value="Emote" />
@@ -2757,6 +2989,7 @@
   <key id="$s_mouse_guide_r" value="Pick Up" />
   <key id="$s_mouse_guide_ext" value="Extra Quickslots" />
   <key id="$s_mouse_guide_f" value="Action" />
+  <!-- 게임 사전 -->
   <key id="$s_gamedictionary_title" value="Encyclopedia" />
   <key id="$s_gamedictionary_notice_default" value="Try searching for the information you are looking for." />
   <key id="$s_gamedictionary_notice_no_result" value="No search results." />
@@ -2767,19 +3000,24 @@
   <key id="$s_gamedictionary_tab_monster" value="Enemies" />
   <key id="$s_gamedictionary_tab_item" value="Items" />
   <key id="$s_gamedictionary_tooltip_search" value="&lt;FONT color='#FFD200' size='15' &gt;Encyclopedia&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;\nLook up useful information about items and characters found in Maple World." />
+  <!-- 소켓 스크롤 -->
   <key id="$s_itemsocket_scroll_title" value="Socket Scroll" feature="ItemSocketSystem" />
   <key id="$s_itemsocket_scroll_msg_puton" value="Select an item to use the scroll on." feature="ItemSocketSystem" />
   <key id="$s_itemsocket_scroll_btn_action" value="Use" feature="ItemSocketSystem" />
   <key id="$s_selectItemBox_title" value="Item Selection" />
   <key id="$s_selectItemBox_select_button" value="Claim Selection" />
   <key id="$s_selectItemBox_next_button" value="Next" />
+  <!-- 상자 여러개 열기 -->
   <key id="$s_ItemBox_MultiOpen_count" value="Open {0} / {1}" />
   <key id="$s_ItemBox_MultiOpen_warn" value="&lt;font color='#ff5f5f'&gt;★ You can open up to 500 containers at one time." />
   <key id="$s_ItemBox_MultiOpen_progress" value="&lt;font color='#ff5f5f'&gt;★ Automatically stops opening containers when your inventory is full." />
+  <!-- PVP RAKING -->
   <key id="$s_pvp_ranking_detail" value="Details" />
+  <!-- 재포장 스크롤 -->
   <key id="$s_item_repacking_scroll_title" value="Trader's Ribbon" feature="ItemRePacking" />
   <key id="$s_item_repacking_scroll_ready" value="Select the item to package." feature="ItemRePacking" />
   <key id="$s_item_repacking_scroll_ok" value="Package" feature="ItemRePacking" />
+  <!-- 파편 합성-->
   <key id="$s_item_exchange_title" value="Item Fragment Fusion" />
   <key id="$s_item_exchange_upgrade_title" value="Reverse Fusion" />
   <key id="$s_item_exchange_trading_title" value="Magic Crafting Recipe" feature="TradingMasteryRecipe" />
@@ -2795,6 +3033,7 @@
   <key id="$s_item_exchange_upgrade_item" value="Reverse Fusion Result" />
   <key id="$s_item_exchange_put_equipment" value="Select the gear item to fuse." />
   <key id="$s_item_exchange_upgrade_warning" value="When the gear item to fuse has an enchantment level, the enchantment level is maintained after fusion. You will be charged a fee based on the equipment level difference." />
+  <!-- 부루마블 -->
   <key id="$s_bluemarble_title" value="Mapleopoly" />
   <key id="$s_bluemarble_title" value="冬日大富翁" locale="CN" />
   <key id="$s_bluemarble_tag_starting" value="Start" />
@@ -2814,13 +3053,16 @@
   <key id="$s_bluemarble_close" value="Exit" />
   <key id="$s_bluemarble_notify_action_tour" value="Time to travel the board!" />
   <key id="$s_bluemarble_notify_action_paradise" value="Lucky you! You get a special treasure!" />
+  <!-- 맵 달성도 -->
   <key id="$s_fieldmission_title" value="Exploration Progress" />
   <key id="$s_fieldmission_mission_mode" value="Show Exploration Details" />
   <key id="$s_fieldmission_worldmap_mode" value="Hide" />
   <key id="$s_fieldmission_reward" value="Claim" />
+  <!-- survey -->
   <key id="$s_survey_dialog_title" value="Poll" />
   <key id="$s_survey_dialog_button_vote" value="Vote" />
   <key id="$s_survey_dialog_button_close" value="Abstain" />
+  <!-- 매직포털 -->
   <key id="$s_ugcportal_dialog_title" value="Portal Configuration" />
   <key id="$s_ugcportal_label_name" value="Portal Name" />
   <key id="$s_ugcportal_label_trigger" value="Method of Use" />
@@ -2836,6 +3078,7 @@
   <key id="$s_ugcportal_label_target_list_none" value="No Destination" />
   <key id="$s_ugcportal_button_apply" value="Save" />
   <key id="$s_ugcportal_button_cancel" value="Cancel" />
+  <!-- VIP -->
   <key id="$s_vip_dialog_title" value="Premium Club" />
   <key id="$s_vip_dialog_title_desc" value="Premium members receive special benefits!" />
   <key id="$s_vip_dialog_benefit_title" value="Premium Club Benefits" />
@@ -2853,6 +3096,7 @@
   <key id="$s_vip_goods_dialog_bill_total" value="Total Payment" />
   <key id="$s_vip_goods_dialog_bill_buy" value="Purchase" />
   <key id="$s_vip_goods_dialog_bill_desc" value="Premium Club activates upon purchase, and bonus items are distributed instantly to the active character." />
+  <!-- marketBillDialog 노란 계산서-->
   <key id="$s_marketbill_title_buy" value="Bill" />
   <key id="$s_marketbill_title_gift" value="Gift" />
   <key id="$s_marketbill_title_basket" value="Add to Cart" />
@@ -2866,6 +3110,7 @@
   <key id="$s_marketbill_notice_meratmarket_basket" value="" />
   <key id="$s_marketbill_notice_meratmarket" value="If an item from the Design Shop violates the ToS, the design will be deleted. The merets used to buy it will be refunded via mail." />
   <key id="$s_marketbill_notice_cashshop" value="Items bought from the Cash Shop are moved to Cash Storage. They must be moved to your inventory to be used." />
+  <!-- 숙련도 -->
   <key id="$s_mastery_dialog_title" value="Life Skills" feature="Mastery" />
   <key id="$s_mastery_guide_start" value="Start!" feature="Mastery" />
   <key id="$s_mastery_dialog_main_tab_gathering" value="Gathering" feature="Mastery" />
@@ -2910,10 +3155,12 @@
   <key id="$s_mastery_dialog_crafting_magic_scroll_meso" value="符文制作费用" feature="MagicScroll01" />
   <key id="$s_magic_scroll_dialog_crafting_warn" value="" feature="MagicScroll01" />
   <key id="$s_magic_scroll_dialog_crafting_job_warn" value="该符文的对应装备无法使用。" feature="MagicScroll01" />
+  <!-- 메이플 가이드 -->
   <key id="$s_learningquest_title" value="Maple Guide" />
   <key id="$s_learningquest_ok" value="Begin Lesson" />
   <key id="$s_learningquest_reward_accept" value="Acceptance Reward" />
   <key id="$s_learningquest_reward_complete" value="Quest Reward" />
+  <!-- gameranking -->
   <key id="$s_gameranking_dialog_title" value="Rankings" />
   <key id="$s_gameranking_dialog_columnname_rank" value="Rank" />
   <key id="$s_gameranking_dialog_columnname_cname" value="Name" />
@@ -2944,6 +3191,7 @@
   <key id="$s_gameranking_dialog_reward_tooltip_guildpvp" value="&lt;FONT color='#FFD200' size='15' &gt;Guild Championship Rankings and Reward Info&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;\nRewards change for each season.&lt;/FONT&gt;\n" />
   <key id="$s_gameranking_dialog_recommender" value="Recommend" />
   <key id="$s_gameranking_dialog_recommender_visit" value="Visit" />
+  <!-- house option -->
   <key id="$s_home_option_title" value="Home Permissions" />
   <key id="$s_home_option_text_public" value="Access" />
   <key id="$s_home_option_text_public_all" value="Public" />
@@ -2973,6 +3221,7 @@
   <key id="$s_home_option_inside_option_light_base" value="Default" />
   <key id="$s_home_option_inside_option_background_base" value="Default" />
   <key id="$s_home_option_inside_option_camera_base" value="Default" />
+  <!-- 건설모드 -->
   <key id="$s_ugc_cube_palette_dialog_useable" value="Hide Unusable" />
   <key id="$s_ugc_cube_palette_dialog_ownership" value="Show Owned" />
   <key id="$s_ugc_cube_palette_dialog_buycube" value="Instant Buy" />
@@ -2995,12 +3244,14 @@
   <key id="$s_ugc_housepoint_fold" value="&lt;FONT color='#FFD200' size='15' &gt;Minimize/Expand Menu&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;\nThe decoration list can be minimized or expanded." />
   <key id="$s_ugc_home_extensionarea" value="&lt;FONT color='#FFD200' size='15' &gt;Increase Area&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;\nIncrease your home's area. The area can be increased to a maximum of 25 x 25." />
   <key id="$s_ugc_home_extensionheight" value="&lt;FONT color='#FFD200' size='15' &gt;Increase Height&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;\nIncrease your home's height. The height can be increased to a maximum of 15." />
+  <!-- 동아리 -->
   <key id="$s_club_dialog_title" value="Clubs" />
   <key id="$s_club_dialog_add_member" value="Add Member" />
   <key id="$s_club_dialog_withdrawal" value="Leave" />
   <key id="$s_club_dialog_name_change" value="Change Name" />
   <key id="$s_club_dialog_setting_buff" value="Buff Settings" />
   <key id="$s_club_dialog_have_not_club_notice" value="You have not joined any clubs.\nCreate a party with friends first,\nthen create a club." />
+  <!-- 아이템 가차폰-->
   <key id="$s_item_lullubox_title" value="Lulu's Key" />
   <key id="$s_item_lullubox_single_open" value="Open 1" />
   <key id="$s_item_lullubox_multi_open" value="Open 10" />
@@ -3010,6 +3261,8 @@
   <key id="$s_item_lullubox_checkbox_auto_pay_box" value="Auto-purchase Mystery Boxes" />
   <key id="$s_item_lullubox_checkbox_auto_pay_box_tooltip" value="\nWhen you don't have as many mystery boxes as the number of keys used, you will automatically purchase more at a price of 1,000 mesos per box.\n\n" />
   <key id="$s_item_lullubox_checkbox_dont_show_effect_tooltip" value="Skip the exciting animations when opening boxes." />
+  <!-- 서구권 스타일 박스 분해기 아이콘 위 툴팁-->
+  <!-- 서구권 스타일 박스 스타일 코인샵 아이콘 위 툴팁-->
   <key id="$s_item_petbox_title" value="Pet Box" />
   <key id="$s_item_petbox_single_open" value="Open 1" />
   <key id="$s_item_petbox_multi_open" value="Open 10" />
@@ -3028,6 +3281,7 @@
   <key id="$s_autoaction_desc" value="Spend {2} to enable {0} ({1})?" />
   <key id="$s_autoaction_package" value="&lt;b&gt;{1}&lt;/b&gt; — {2}" />
   <key id="$s_ugc_extra_cn_screenshot" value="Screenshot" />
+  <!-- 스탬프 이벤트 -->
   <key id="$s_stamp_dialog_title" value="Stamp Tour" />
   <key id="$s_stamp_dialog_description" value="&lt;FONT color='#ffd200'&gt;Complete each goal&lt;/FONT&gt; to unlock the associated stamp. Mouse over a stamp to view its full requirements. Collect stamps to obtain the rewards listed below." />
   <key id="$s_stamp_dialog_description2" value="Some objectives may require leveling up, completing quests, or multiple days to complete." />
@@ -3037,10 +3291,13 @@
   <key id="$s_stamp_dialog_btn_complete_ok" value="Claim Reward" />
   <key id="$s_stamp_dialog_btn_ok" value="Close" />
   <key id="$s_levelup_package_title" value="Level Up" />
+  <!-- 특별판매 광고 -->
   <key id="$s_adpush_title_default" value="Special Offer" />
   <key id="$s_adpush_title_free" value="Special Offer" />
   <key id="$s_adpush_checkbox_not show today" value="Don't show again today" />
+  <!-- 부활 -->
   <key id="$s_revival_dialog_use_coupon" value="Use Instant Revive Voucher" />
+  <!-- 챕터북 -->
   <key id="$s_chapter_book_title" value="Story" />
   <key id="$s_chapter_book_reward" value="Chapter Reward" />
   <key id="$s_chapter_book_ok" value="OK" />
@@ -3049,6 +3306,7 @@
   <key id="$s_itemmergeoption_select_item" value="Select an item. The materials required will vary based on the item you're empowering.\n\n&lt;FONT color='#FF5F5F'&gt;You can add empowerment attributes to your gear by using empowerment crystals.&lt;/FONT&gt;" />
   <key id="$s_itemmergeoption_merge_info" value="Select an item. The materials required will vary based on the item you're empowering.\nEmpowerment can only be performed on headgear, top, bottom, gloves, shoes, and outfit items that are at least level 50.\n\n&lt;FONT color='#FF5F5F'&gt;Only one empowerment attribute can be granted to an item. Granting another empowerment attribute will remove the existing empowerment attribute on the item.&lt;/FONT&gt;" />
   <key id="$s_itemmergeoption_material_info" value="Select an item. The materials required will vary based on the item you're empowering.\nEmpowerment crystals can only be used when their level is at least as high as the item to be empowered.\nThe range of attributes given differ according to the tier of the empowerment material.\n\n&lt;FONT color='#FF5F5F'&gt;Empowerment crystals are consumed regardless of the outcome once you begin.&lt;/FONT&gt;" />
+  <!--텐센트 신고 시스템-->
   <key id="$s_tencent_user_report_title" value="Report" />
   <key id="$s_tencent_user_report_target_character" value="Name" />
   <key id="$s_tencent_user_report_target_item" value="Item" />
@@ -3074,6 +3332,7 @@
   <key id="$s_tencent_user_report_reason_name_club" value="Club Name" />
   <key id="$s_tencent_user_report_reason_name_guild" value="Guild Name" />
   <key id="$s_tencent_user_report_reason_comment" value="Please enter the reason for your report." />
+  <!-- 텐센트 중독 방지 -->
   <key id="$s_tencent_aas2_title" value="" />
   <key id="$s_item_merge_title" value="Item Empowerment" />
   <key id="$s_item_merge_do" value="Item Empowerment" />
@@ -3085,7 +3344,9 @@
   <key id="$s_item_merge_revert_warn" value="The target item must be the same tier as the empowerment reset crystal. The empowerment attribute will be removed upon use." />
   <key id="$s_item_merge_revert_ok" value="Remove" />
   <key id="$s_item_merge_ingredients" value="材料道具" feature="ItemMerge" />
+  <!--로딩-->
   <key id="$s_loading_movechannel_message" value="Hold on tight. You're going places!" />
+  <!--로딩-->
   <key id="$s_system_shop_auto_lure" value="Use Auto-bait" />
   <key id="$s_ugcmodelhouse_dialog_title" value="Starter Home" />
   <key id="$s_ugcmodelhouse_dialog_type1" value="Woodland Path" />
@@ -3094,6 +3355,7 @@
   <key id="$s_ugcmodelhouse_dialog_desc1" value="A pleasant garden home with a stream." />
   <key id="$s_ugcmodelhouse_dialog_desc2" value="A tidy home with a sweet pink motif." />
   <key id="$s_ugcmodelhouse_dialog_desc3" value="A compact bunker with all the latest tech from Kerning City." />
+  <!-- 시간과의 달리기 -->
   <key id="$s_time_run_title" value="Race against Time" />
   <key id="$s_time_run_day1" value="Day 1" />
   <key id="$s_time_run_day2" value="Day 2" />
@@ -3104,6 +3366,7 @@
   <key id="$s_time_run_day7" value="Day 7" />
   <key id="$s_time_run_quest" value="Objective" />
   <key id="$s_time_run_info" value="You can still complete previous days' objectives until the race is done." />
+  <!-- #37099 방송용 OX 퀴즈 이벤트 개발 - 방 생성 옵션 다이얼로그 -->
   <key id="$s_ugcox_create_title" value="OX Quiz Settings" feature="UGCMapOX" />
   <key id="$s_ugcox_create_label_entry_fee" value="Entry Fee (Mesos)" feature="UGCMapOX" />
   <key id="$s_ugcox_create_label_entry_max" value="Max Participants" feature="UGCMapOX" />
@@ -3114,27 +3377,42 @@
   <key id="$s_ugcox_create_label_host_fee" value="Host Fee:" feature="UGCMapOX" />
   <key id="$s_ugcox_create_button_create" value="Yes" feature="UGCMapOX" />
   <key id="$s_ugcox_create_button_cancel" value="No" feature="UGCMapOX" />
+  <!-- #37099 방송용 OX 퀴즈 이벤트 개발 - 집 주인 유틸 패널에 추가되는 버튼 -->
+  <!-- key id="$s_gamemenu_btn_quiz_create_tooltip" value=""  홈 버튼 있는 곳에 있습니다.-->
+  <!-- key id="$s_gamemenu_btn_quiz_promote_tooltip" value=""  홈 버튼 있는 곳에 있습니다. -->
+  <!-- #37099 방송용 OX 퀴즈 이벤트 개발 - 처음 대기 시 기본 표시 UI-->
   <key id="$s_ugcox_title_welcome_host" value="Press &quot;Start!&quot; to begin the OX Quiz. Once it begins, new participants cannot enter." feature="UGCMapOX" />
   <key id="$s_ugcox_title_welcome_entry" value="Waiting for the host to begin..." feature="UGCMapOX" />
   <key id="$s_ugcox_title_button_start" value="Start!" feature="UGCMapOX" />
+  <!-- #37099 방송용 OX 퀴즈 이벤트 개발 - 주인이 문제 내는 다이얼로그 -->
   <key id="$s_ugcox_host_title" value="Enter a question." feature="UGCMapOX" />
   <key id="$s_ugcox_host_button_terminate" value="End" feature="UGCMapOX" />
   <key id="$s_ugcox_host_button_submit" value="Submit" feature="UGCMapOX" />
   <key id="$s_ugcox_host_select_answer" value="What's the answer?" feature="UGCMapOX" />
+  <!-- #37099 방송용 OX 퀴즈 이벤트 개발 - 상금 다이얼로그 -->
   <key id="$s_prize_money_total" value="Total Jackpot" feature="UGCMapOX" />
   <key id="$s_prize_money_per_winner" value="Reward per Winner" feature="UGCMapOX" />
   <key id="$s_mail_usertype" value="Player Mail" />
+  <key id="$s_dailymission_point" value="每周任务点数" feature="DailyMission" />
+  <key id="$s_dailymission_title" value="冒险宝典" feature="DailyMission" />
+  <key id="$s_dailymission_start" value="任务开始~！" feature="DailyMission" />
+  <key id="$s_dailymission_mp" value="积分" feature="DailyMission" />
+  <key id="$s_dailymission_mp_start" value="0积分" feature="DailyMission" />
+  <key id="$s_dailymission_mp_info" value="&lt;FONT color='#FFD200' size='15' &gt;每周任务点数&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;\n每天完成新接到的每日任务时，即可获得每周任务点数。\n收集每周任务点数，可以获得每周奖励。\n&lt;FONT size='3'&gt; &lt;/FONT&gt;\n每日任务在每天0点自动更新。\n每周任务点数和每周奖励在每周五0点初始化。" feature="DailyMission" />
   <key id="$s_levelup_guide_reset_desc" value="Complete daily missions every day to get weekly bonus rewards.\nDaily missions are assigned based on your character level at midnight each day. Weekly bonuses reset at midnight on Fridays." />
+  <!-- 외형 추출권 -->
   <key id="$s_item_extraction_btn" value="Forge" />
   <key id="$s_item_extraction_title" value="Glamour Forging" />
   <key id="$s_item_extraction_result" value="Resulting Outfit" />
   <key id="$s_item_extraction_puton_item" value="Select a piece of gear to copy its appearance." />
   <key id="$s_item_extraction_warnning" value="Forging an item into an outfit will reduce its available Glamour Forges by 1. When this count reaches 0, you can no longer forge outfits from that item." />
+  <!--펫 스킨 배지 제작-->
   <key id="$s_pet_extraction_btn" value="Craft" feature="GemPetSkin" />
   <key id="$s_pet_extraction_title" value="Pet Skin Crafting Scroll" feature="GemPetSkin" />
   <key id="$s_pet_extraction_result" value="Result" feature="GemPetSkin" />
   <key id="$s_pet_extraction_puton_pet" value="Place a pet to copy its appearance." feature="GemPetSkin" />
   <key id="$s_pet_extraction_warnning" value="Creates a Pet Skin based on the selected pet.\nThe original pet will not be consumed." feature="GemPetSkin" />
+  <!--멘토링-->
   <key id="$s_mentoring_title" value="冒险家集结" feature="Mentoring" />
   <key id="$s_mentoring_shop" value="商店" feature="Mentoring" />
   <key id="$s_mentoring_party_request" value="组队邀请" feature="Mentoring" />
@@ -3177,6 +3455,7 @@
   <key id="$s_mentoring_invite_mentee_renderer_accept" value="接受" feature="Mentoring" />
   <key id="$s_mentoring_invite_mentee_renderer_reject" value="拒绝" feature="Mentoring" />
   <key id="$s_mentoring_invite_renderer_whisper" value="悄悄话" feature="Mentoring" />
+  <!-- 스페셜 아이템 -->
   <key id="$s_special_item_billboard_advertiser_title" value="Title" />
   <key id="$s_special_item_billboard_advertiser_desc" value="Content" />
   <key id="$s_special_item_billboard_advertiser_home_button" value="To House" />
@@ -3184,21 +3463,26 @@
   <key id="$s_special_item_billboard_advertiser_is_open_home" value="Make House Public" />
   <key id="$s_special_item_billboard_advertiser_request_install" value="Done" />
   <key id="$s_special_item_billboard_advertiser_desc_length" value="Character Count {0} / {1}" />
+  <!-- 공지 기계 설정 다이얼로그 -->
   <key id="$s_ugcnotice_dialog_title" value="Message" />
   <key id="$s_ugc_noticecube_dialog_label_message" value="Enter Message {0} / {1}" />
   <key id="$s_ugc_noticecube_dialog_label_distance" value="Display Distance" />
   <key id="$s_ugc_noticecube_dialog_btn_apply" value="Save" />
   <key id="$s_ugc_noticecube_dialog_slider_tooltip" value="{0} tile(s)" />
+  <!-- 평판 현황 -->
   <key id="$s_famepoint_board_title" value="Reputation" />
   <key id="$s_famepoint_board_fame_log" value="Message Board" />
   <key id="$s_alliance_quest_shop" value="Shop" />
   <key id="$s_alliance_quest_accept_all" value="Accept All" />
   <key id="$s_alliance_quest_complete_all" value="Complete All" />
+  <!-- 원격 수락 퀘스트 -->
   <key id="$s_quest_postbox_title" value="Available Quests" />
   <key id="$s_quest_postbox_desc" value="Please select a quest." />
+  <!-- 슈퍼 월드 채팅 -->
   <key id="$s_selectsuperworldchat_title" value="Super Chat Theme" />
   <key id="$s_selectsuperworldchat_use_coupon" value="Please a Super Chat Theme to use." />
   <key id="$s_selectsuperworldchat_select_button" value="Confirm" />
+  <!-- 슈반다의 오픈 갤러리 -->
   <key id="$s_gallery_title" value="Schwanda's Holiday Gallery" />
   <key id="$s_gallery_card_open_count" value="Schwanda's Gallery" />
   <key id="$s_gallery_desc_1" value="至2019年1月10日维护前！" locale="CN" />
@@ -3206,6 +3490,11 @@
   <key id="$s_gallery_board_reward_button" value="Get Reward" />
   <key id="$s_gallery_board_reward_title" value="Final Reward" />
   <key id="$s_item_treasure_map_bag_title" value="Select a key to analyze." />
+  <!-- (이벤트 타입 snowman) 케이크 만들기, 만두 만들기, 눈사람 만들기 축제 등 이벤트 -->
+  <!-- 신규 컨셉으로 해당 이벤트 활용하는 경우 ★컨셉명★ 확정 후 진행, 컨셉명으로 메뉴 UI, 스트링 등 모두 호출하는 방식(참고 일감 #68916) -->
+  <!-- 아래 스트링 추가 시 확정된 컨셉명으로 전체 한 세트 추가 -->
+  <!-- key Id 입력 규칙 : $s_snowman_@@@_.... (@@에 컨셉명 넣기) -->
+  <!-- 만두 만들기_컨셉명: dumpling -->
   <key id="$s_snowman_dumpling_recv_reward" value="Claim Gift" feature="Event" />
   <key id="$s_snowman_dumpling_complete_reward" value="Reward Complete" />
   <key id="$s_snowman_dumpling_daily_complete_desc_1" value="Pork Dumplings\n{0}/{1}" feature="Event" />
@@ -3220,6 +3509,11 @@
   <key id="$s_snowman_dumpling_event_desc" value="You can't obtain more filling for a completed dumpling until you claim the\nassociated gift. Dumpling status and reward limits reset daily at midnight." feature="Event" />
   <key id="$s_snowman_dumpling_help_title" value="Dumpling Festival Instructions" feature="Event" />
   <key id="$s_snowman_dumpling_help_desc" value="&lt;FONT color='#ffd200'&gt;Dumpling filling can be obtained in several ways:&lt;/FONT&gt;\n★ Completing Daily Missions\n★ Defeating monsters, fishing, or performing\n★ Gathering and crafting via Life Skills (excludes instant-gathering vouchers)" feature="Event" />
+  <!-- (이벤트 타입 snowman) 케이크 만들기, 만두 만들기, 눈사람 만들기 축제 등 이벤트 -->
+  <!-- 신규 컨셉으로 해당 이벤트 활용하는 경우 ★컨셉명★ 확정 후 진행, 컨셉명으로 메뉴 UI, 스트링 등 모두 호출하는 방식(참고 일감 #68916) -->
+  <!-- 아래 스트링 추가 시 확정된 컨셉명으로 전체 한 세트 추가 -->
+  <!-- key Id 입력 규칙 : $s_snowman_@@@_.... (@@에 컨셉명 넣기) -->
+  <!-- 눈사람 만들기_컨셉명: snowman -->
   <key id="$s_snowman_snowman_recv_reward" value="Claim Gift" feature="Event" />
   <key id="$s_snowman_snowman_complete_reward" value="Reward Complete" feature="Event" />
   <key id="$s_snowman_snowman_daily_complete_desc_1" value="Slime Snowmen Completed\n{0}/{1}" feature="Event" />
@@ -3234,6 +3528,11 @@
   <key id="$s_snowman_snowman_event_desc" value="※ Remember to click Receive Gift, as you'll no longer receive snowflakes once the snowman is complete.\n※ Snowman status and reward limits reset daily at midnight." feature="Event" />
   <key id="$s_snowman_snowman_help_title" value="Snowman Festival Instructions" feature="Event" />
   <key id="$s_snowman_snowman_help_desc" value="&lt;FONT color='#ffd200'&gt;Snowflakes can be obtained various ways:&lt;/FONT&gt;\n ★ Defeating monsters\n★ Fishing or performing\n ★ Gathering and crafting via Life Skills  (excludes auto-gathering voucher)" feature="Event" />
+  <!-- (이벤트 타입 snowman) 케이크 만들기, 만두 만들기, 눈사람 만들기 축제 등 이벤트 -->
+  <!-- 신규 컨셉으로 해당 이벤트 활용하는 경우 ★컨셉명★ 확정 후 진행, 컨셉명으로 메뉴 UI, 스트링 등 모두 호출하는 방식(참고 일감 #68916) -->
+  <!-- 아래 스트링 추가 시 확정된 컨셉명으로 전체 한 세트 추가 -->
+  <!-- key Id 입력 규칙 : $s_snowman_@@@_.... (@@에 컨셉명 넣기) -->
+  <!-- 웨딩 케이크 만들기_컨셉명: weddingcake (케이크 모양은 웨딩, 생일 컨셉 등 같이 사용해도 문제 없음)-->
   <key id="$s_snowman_weddingcake_recv_reward" value="Claim Gift" feature="Event" />
   <key id="$s_snowman_weddingcake_complete_reward" value="Reward Complete" feature="Event" />
   <key id="$s_snowman_weddingcake_daily_complete_desc_1" value="Cake Slices Completed\n{0}/{1}" feature="Event" />
@@ -3248,6 +3547,7 @@
   <key id="$s_snowman_weddingcake_event_desc" value="You can't obtain more fresh cream for a completed cake until you claim the\nassociated gift. Cake status and reward limits reset daily at midnight." feature="Event" />
   <key id="$s_snowman_weddingcake_help_title" value="Wedding Cake Festival Instructions" feature="Event" />
   <key id="$s_snowman_weddingcake_help_desc" value="&lt;FONT color='#ffd200'&gt;Fresh cream can be obtained in several ways:&lt;/FONT&gt;\n★ Win MC Kay mini-games (PvP excluded).\n★ Chance to receive from hunting, fishing, and performing.\n★ Chance to receive from successful mining, ranching, foraging, and farming." feature="Event" />
+  <!-- 가위바위보 이벤트 -->
   <key id="$s_banner_rps" value="Let's Rock!" />
   <key id="$s_rpsevent_title" value="Rock-Paper-Scissors Event" />
   <key id="$s_rpsevent_reward_button" value="Get Reward" />
@@ -3256,7 +3556,9 @@
   <key id="$s_rpsevent_subtitle" value="Daily Matches" />
   <key id="$s_rpsevent_desc" value="* Daily match meter and rewards reset every day at midnight." />
   <key id="$s_rpsevent_play_count" value="{0} matches" />
+  <!-- 거울  -->
   <key id="$s_itemedit_title" value="Check Mirror" />
+  <!-- PVP 난투 컨트롤 머신 -->
   <key id="$s_ugc_pvp_control_title" value="Home PvP Settings" />
   <key id="$s_ugc_pvp_control_label_type" value="PvP Type" />
   <key id="$s_ugc_pvp_control_label_buff" value="Health Settings" />
@@ -3282,7 +3584,9 @@
   <key id="$s_ugc_pvp_control_dropdown_time_3min" value="3 min" />
   <key id="$s_ugc_pvp_control_dropdown_time_5min" value="5 min" />
   <key id="$s_ugc_pvp_control_dropdown_time_10min" value="10 min" />
+  <!-- 서바이벌 옵저버  -->
   <key id="$s_survival_observer_exit_room" value="Exit" feature="SurvivalContents01" />
+  <!-- 키설정 선택 -->
   <key id="$s_keysetting_select_title" value="Control Presets" />
   <key id="$s_keysetting_select_default" value="Keyboard Only" />
   <key id="$s_keysetting_select_default_desc" value="Use the arrows keys to move." />
@@ -3294,10 +3598,12 @@
   <key id="$s_keysetting_select_mouse_button" value="Select" />
   <key id="$s_keysetting_select_recommend" value="RECOMMENDED" />
   <key id="$s_keysetting_select_beta" value="BETA" />
+  <!-- 머쉬킹 챔피언십 UIMapleSurvivalDialog 혹은 UIMapleSurvivalPassDialog -->
   <key id="$s_maple_survival_title" value="Mushking Royale" feature="SurvivalContents01" />
   <key id="$s_maple_survival_search_message" value="Searching for match..." feature="SurvivalContents01" />
   <key id="$s_maple_survival_season" value="Fight for the Mushking" feature="SurvivalContents01" />
   <key id="$s_maple_survival_season_reward" value="Reward" feature="SurvivalContents01" />
+  <!--NA CB2 한정-->
   <key id="$s_maple_survival_season_reward_deatil" value="Rewards are sent by mail at check-in every Thursday. Your royale level will reset at the start of the new season." feature="SurvivalContents01" />
   <key id="$s_maple_survival_season_reward_view" value="Season Rewards" feature="SurvivalContents01" />
   <key id="$s_maple_survival_survival_level" value="Royale Level" feature="SurvivalContents01" />
@@ -3320,6 +3626,41 @@
   <key id="$s_maple_survival_result_bottom_title" value="" feature="SurvivalContents01" />
   <key id="$s_maple_survival_result_bottom_level_up" value="Level Up" feature="SurvivalContents01" />
   <key id="$s_maple_survival_open_time" value="运营时间：下午5点～下午11点" locale="CN" feature="SurvivalContents01" />
+  <key id="$s_maple_survival_active_paid_pass" value="Activate" feature="SurvivalContents03" />
+  <key id="$s_maple_survival_level_text" value="Level Unlocked" feature="SurvivalContents03" />
+  <key id="$s_maple_survival_reward_detail" value="This pass grants you extra rewards as you increase your royale level. Get even more rewards when you use the gold pass!" feature="SurvivalContents03" />
+  <key id="$s_maple_survival_receive_button" value="Claim Rewards" feature="SurvivalContents03" />
+  <key id="$s_maple_survival_season_text_tooltip" value="Pre-season match results do not affect your ranking. Season rewards are delivered to your mailbox during maintenance." feature="SurvivalContents03" />
+  <key id="$s_maple_survival_champion_pass_title" value="Royale Pass" feature="SurvivalContents03" />
+  <key id="$s_maple_survival_champion_pass_tooltip" value="Press the 'Claim Rewards' button to claim rewards for reaching new royale levels. You may claim up to 8 levels worth of rewards at once." feature="SurvivalContents03" />
+  <key id="$s_maple_survival_complete_free" value="&lt;Img Src='survival_reward_icon' vspace='-10'&gt;You claimed all of your rewards. Nice!" feature="SurvivalContents03" />
+  <key id="$s_maple_survival_complete_paid" value="&lt;Img Src='survival_reward_icon' vspace='-10'&gt;You claimed all of your rewards. Nice!" feature="SurvivalContents03" />
+  <key id="$s_maple_survival_mode_selector_title" value="Select a Mode" feature="SurvivalContents03" />
+  <key id="$s_maple_survival_mode_selector_solo_title" value="Solo" feature="SurvivalContents03" />
+  <key id="$s_maple_survival_mode_selector_solo_desc" value="You stand &lt;FONT color='#ffd200'&gt;alone&lt;/FONT&gt;. Everyone else is an enemy." feature="SurvivalContents03" />
+  <key id="$s_maple_survival_mode_selector_squad_title" value="Squad" feature="SurvivalContents03" />
+  <key id="$s_maple_survival_mode_selector_squad_desc" value="Fight as a &lt;FONT color='#ffd200'&gt;party of 2-4 players&lt;/FONT&gt;. If you queue alone, you'll be placed in a party with &lt;FONT color='#d659ff'&gt;random players&lt;/FONT&gt;. Otherwise, you will be entered with your current party. If you're in a party, &lt;FONT color='#d659ff'&gt;only the party leader&lt;/FONT&gt; can join the queue. " feature="SurvivalContents03" />
+  <key id="$s_maple_survival_ui_skin_title" value="Equipped Medals" feature="SurvivalContents03" />
+  <key id="$s_maple_survival_skin_info_tooltip" value="Equip medals to change the appearance of tails, ground mounts, and gliders during Mushking Royale matches." feature="SurvivalContents03" />
+  <key id="$s_maple_survival_skin_slot_name1" value="Tail " feature="SurvivalContents03" />
+  <key id="$s_maple_survival_skin_slot_name2" value="Ground Mount" feature="SurvivalContents03" />
+  <key id="$s_maple_survival_skin_slot_name3" value="Glider" feature="SurvivalContents03" />
+  <key id="$s_maple_survival_ui_auto_item_title" value="Victory Celebration" feature="SurvivalContents03" />
+  <key id="$s_maple_survival_auto_item_tooltip" value="Drag fireworks to one of the slots below, and they'll go off &lt;FONT color='#ffd200'&gt;whenever you defeat another player during a match.&lt;/FONT&gt; One firework item will be consumed each time they explode. Only characters that have fireworks equipped can set them off. Unequip the fireworks by right-clicking." feature="SurvivalContents03" />
+  <key id="$s_maple_survival_levelInfo_level_title" value="Royale Level" feature="SurvivalContents03" />
+  <key id="$s_maple_survival_level_tooltip" value="Obtain experience in Mushking Royale to increase your royale level, which you can use to get royale pass rewards or even a new royale-themed insignia!" feature="SurvivalContents03" />
+  <key id="$s_maple_survival_reward_info_title" value="Royale Pass" feature="SurvivalContents03" />
+  <!--UIMapleSurvivalSkinDialog-->
+  <key id="$s_maple_survival_skin_ui_title" value="Mushking Royale Medals" feature="SurvivalContents03" />
+  <key id="$s_maple_survival_skin_ui_puton" value="Equip" feature="SurvivalContents03" />
+  <key id="$s_maple_survival_skin_ui_putoff" value="Unequip" feature="SurvivalContents03" />
+  <!--UIMapleSurvivalBuyBundleDialog-->
+  <key id="$s_maple_survival_buy_bundle_title" value="Mushking Royale Gold Pass" feature="SurvivalContents03" />
+  <key id="$s_maple_survival_buy_bundle_default_title" value="Gold Royale Pass" feature="SurvivalContents03" />
+  <key id="$s_maple_survival_buy_bundle_bundle_title" value="Gold Royale Pass Bundle" feature="SurvivalContents03" />
+  <key id="$s_maple_survival_buy_bundle_bundle_desc" value="Gold Royale Pass + Bonus Items" feature="SurvivalContents03" />
+  <key id="$s_maple_survival_buy_bundle_bundle_bonus_item" value="&lt;Img Src='icon_tiny_box' vspace='-3'/&gt; Bonus Items" feature="SurvivalContents03" />
+  <!-- UIAdventureLevelDialog -->
   <key id="$s_adventure_level_level" value="Rank {0}" />
   <key id="$s_adventure_level_dialog_level" value="Rank {0}" />
   <key id="$s_adventure_level_ability_max_level" value="&lt;FONT color='#d659ff' &gt;Max&lt;/FONT&gt;" />
@@ -3329,16 +3670,21 @@
   <key id="$s_adventure_level_1lv" value="Rank 1" />
   <key id="$s_adventure_level_weekly_mission_title" value="Weekly Mission" feature="AdventureLevelMission" />
   <key id="$s_adventure_level_weekly_mission_desc" value="Get rewards for increasing your prestige rank. Weekly missions reset every Friday at 00:00." feature="AdventureLevelMission" />
+  <!-- UIWorldChampionRewardDialog -->
   <key id="$s_world_champion_title" value="世界团队副本蘑菇大王" feature="WorldChampionMushroom" />
   <key id="$s_world_champion_explain1" value="蘑菇大王在同一时间内出现在&lt;FONT color='#00a2ed'&gt;所有频道&lt;/FONT&gt;并共用&lt;FONT color='#00a2ed'&gt;一个HP&lt;/FONT&gt;。\n冒险家抓捕蘑菇大王聚集的力量越大，出现的蘑菇大王就越强。\n只有使用&lt;FONT color='#00a2ed'&gt;阻隔孢子面霜&lt;/FONT&gt;后才能攻击蘑菇大王。" feature="WorldChampionMushroom" />
   <key id="$s_world_champion_explain2" value="&lt;font color='#ffd200'&gt;阻隔孢子面霜获得方式&lt;/FONT&gt;：签到奖励（邮件）" feature="WorldChampionMushroom" />
   <key id="$s_world_champion_explain3" value="&lt;FONT color='#ffd200'&gt;累积等级奖励&lt;/FONT&gt;：次周周一～周日邮件领取" feature="WorldChampionMushroom" />
   <key id="$s_world_champion_explain4" value="&lt;font color='#ffd200'&gt;排名奖励&lt;/FONT&gt;：下次维护后通过邮件领取" feature="WorldChampionMushroom" />
   <key id="$s_world_champion_move_field" value="Go there now" />
+  <!-- 버닝 레벨업 이벤트, UICharacterListDialog -->
   <key id="$s_burning_levelup_event_desc_btn" value="KORFLASH_$S_BURNING_LEVELUP_EVENT_DESC_BTN_VALUE:[F]Event" locale="" feature="Event" />
+  <!-- UIStormBar -->
   <key id="$stormbar_meter" value="{0} m" />
+  <!-- 전직 UI -->
   <key id="$s_change_job_btn_exit" value="ESC" />
   <key id="$s_change_job_btn_change" value="Rank Up!" />
+  <!-- UILapenshardSystemDialog -->
   <key id="$s_lapenshardsystemdialog_title" value="Lapenshard" feature="Lapenshard01" />
   <key id="$s_lapenshardsystemdialog_equip_page_desc" value="&lt;font color='#FFD200'&gt;Equipping Lapenshards&lt;/FONT&gt;\nYou can equip a lapenshard by either dragging it to a slot of an appropriate color or by right-clicking it in your inventory." feature="Lapenshard01" />
   <key id="$s_lapenshardsystemdialog_upgrade_page_ingredient_title" value="Fusion Catalysts" feature="Lapenshard01" />
@@ -3349,6 +3695,16 @@
   <key id="$s_lapenshardsystemdialog_upgrade_btn_success" value="Fusion Successful" feature="Lapenshard01" />
   <key id="$s_lapenshardsystemdialog_upgrade_btn_success_limit" value="&lt;FONT color='#707070' size='16' &gt;An unknown power is preventing the lapenshard from upgrading.&lt;/FONT&gt;" feature="Lapenshard01" />
   <key id="$s_lapenshardsystemdialog_upgrade_btn_fail" value="Fusion Failed" feature="Lapenshard01" />
+  <!--UIGameModeSelectDialog -->
+  <key id="$s_gamemode_select_title" value="KORFLASH_$S_GAMEMODE_SELECT_TITLE_VALUE:[F]MushKingRoyaleModeSelect" feature="MushKingRoyaleModeSelect" />
+  <key id="$s_gamemode_select_title_rpg" value="KORFLASH_$S_GAMEMODE_SELECT_TITLE_RPG_VALUE:[F]MushKingRoyaleModeSelect" feature="MushKingRoyaleModeSelect" />
+  <key id="$s_gamemode_select_title_royale" value="KORFLASH_$S_GAMEMODE_SELECT_TITLE_ROYALE_VALUE:[F]MushKingRoyaleModeSelect" feature="MushKingRoyaleModeSelect" />
+  <key id="$s_gamemode_select_sub_title_rpg" value="KORFLASH_$S_GAMEMODE_SELECT_SUB_TITLE_RPG_VALUE:[F]MushKingRoyaleModeSelect" feature="MushKingRoyaleModeSelect" />
+  <key id="$s_gamemode_select_sub_title_royale" value="KORFLASH_$S_GAMEMODE_SELECT_SUB_TITLE_ROYALE_VALUE:[F]MushKingRoyaleModeSelect" feature="MushKingRoyaleModeSelect" />
+  <key id="$s_gamemode_select_desc_rpg" value="KORFLASH_$S_GAMEMODE_SELECT_DESC_RPG_VALUE:[F]MushKingRoyaleModeSelect" feature="MushKingRoyaleModeSelect" />
+  <key id="$s_gamemode_select_desc_royale" value="KORFLASH_$S_GAMEMODE_SELECT_DESC_ROYALE_VALUE:[F]MushKingRoyaleModeSelect" feature="MushKingRoyaleModeSelect" />
+  <key id="$s_gamemode_select_tooltip_royale" value="KORFLASH_$S_GAMEMODE_SELECT_TOOLTIP_ROYALE_VALUE:[F]MushKingRoyaleModeSelect" feature="MushKingRoyaleModeSelect" />
+  <!-- 칠월칠석 커플 댄스 이벤트 -->
   <key id="$s_banner_couple_dance" value="KORFLASH_$S_BANNER_COUPLE_DANCE_VALUE" />
   <key id="$s_couple_dance_event_dialog_title" value="KORFLASH_$S_COUPLE_DANCE_EVENT_DIALOG_TITLE_VALUE" />
   <key id="$s_couple_dance_event_dialog_title" value="婚礼跳舞派对" locale="CN" />
@@ -3361,6 +3717,7 @@
   <key id="$s_couple_dance_event_dialog_reward_title1" value="KORFLASH_$S_COUPLE_DANCE_EVENT_DIALOG_REWARD_TITLE1_VALUE" />
   <key id="$s_couple_dance_event_dialog_reward_title2" value="KORFLASH_$S_COUPLE_DANCE_EVENT_DIALOG_REWARD_TITLE2_VALUE" />
   <key id="$s_couple_dance_event_message_stage_number" value="KORFLASH_$S_COUPLE_DANCE_EVENT_MESSAGE_STAGE_NUMBER_VALUE" />
+  <!-- 옷장 -->
   <key id="$s_closet_title" value="Wardrobe" feature="Closet" />
   <key id="$s_closet_text_shortcutkey" value="Hotkey" feature="Closet" />
   <key id="$s_closet_btn_puton" value="Equip" feature="Closet" />
@@ -3374,9 +3731,11 @@
   <key id="$s_closet_tooltip_btn_info" value="&lt;FONT color='#FFD200' size='15' &gt;Using the Wardrobe&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;\nThe wardrobe allows you to save gear or outfit sets and instantly switch between them. Simply set the tab type to either &quot;Gear&quot; or &quot;Outift&quot; and hit the &quot;Save&quot; button to save your currently equipped gear or outfits. You can equip wardrobe sets more quickly by assigning them to hotkeys! &#xA;&#xA;The wardrobe is unavailable while in combat. If you no longer possess an item or meet the requirements to equip it, that item will be ignored when equipping a set. If you don't see an equipped item displayed on your character, check the settings of your Transparency Badge." feature="Closet" />
   <key id="$s_closet_tooltip_btn_input" value="Bind a wardrobe set to a hotkey by clicking the text box and then pressing a key." feature="Closet" />
   <key id="$s_tooltip_myinfo_closet" value="&lt;FONT color='#FFD200' size='15' &gt;Manage Wardrobe&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;\nAssign gear and outfits into sets, so you can quickly equip them with a shortcut key!" feature="Closet" />
+  <!-- 재접속 -->
   <key id="$s_reconnect_message" value="Reconnecting. ({0}/{1})" />
   <key id="$s_reconnect_cancel" value="Cancel Reconnection Attempt" />
   <key id="$s_reconnect_cancel_tooltip" value="Cancel the reconnection attempt and return to the character select screen." />
+  <!-- UIItemBlueprintCreateDialog -->
   <key id="$s_blueprint_create_dialog_title" value="Blueprint" feature="Blueprint" />
   <key id="$s_blueprint_create_dialog_sub_title" value="Create Blueprint" feature="Blueprint" />
   <key id="$s_blueprint_create_dialog_add_icon" value="+" feature="Blueprint" />
@@ -3388,7 +3747,9 @@
   <key id="$s_blueprint_create_dialog_icon_desc" value="Select an image to be used as the item's icon." feature="Blueprint" />
   <key id="$s_blueprint_create_dialog_image_desc" value="Select Blueprint Preview Image" feature="Blueprint" />
   <key id="$s_blueprint_create_dialog_image_desc_detail" value="Best viewed at a resolution of 384x240." feature="Blueprint" />
+  <!-- UIHomeResizeDialog -->
   <key id="$s_homeresize_dialog_title" value="Blueprint Dimensions" feature="Blueprint" />
+  <!-- UIHomeMenuDialog -->
   <key id="$s_homemenu_dialog_craftmode" value="&lt;FONT color='#FFD200' size='15' &gt;Toggle Furnishing Mode (B)&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;\nEnter or exit Furnishing Mode. While in Furnishing Mode, you may place and adjust furnishings around your home. You must be in your home or a rented land plot to begin furnishing." />
   <key id="$s_homemenu_dialog_designmode" value="&lt;FONT color='#FFD200' size='15' &gt;Enter / Exit Decor Planner&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;\nA clean workplace to try out new furnishing arrangements at no cost! You can create a layout in the Decor Planner and implement it later in your house. Any unsaved layouts will be lost upon exiting the Decor Planner." />
   <key id="$s_homemenu_dialog_blueprintmode" value="&lt;FONT color='#FFD200' size='15' &gt;Enter / Exit Blueprint Designer&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;\nDesign home layouts which can be saved as blueprints and sold to other players in the Design Shop." feature="Blueprint" />
@@ -3404,14 +3765,17 @@
   <key id="$s_homemenu_dialog_blueprintexport" value="&lt;FONT color='#FFD200' size='15' &gt;Create Blueprint&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;\nTransform the current home layout in the Blueprint Designer into a blueprint item." feature="Blueprint" />
   <key id="$s_homemenu_dialog_blueprintshop" value="&lt;FONT color='#FFD200' size='15' &gt;Shop for Blueprints&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;\nView blueprints for sale in the design shop." feature="BlueprintMarket" />
   <key id="$s_sidepopup_fieldwar_enter" value="Enter" feature="" />
+  <!-- UICollectItemGroupEventDialog -->
   <key id="$s_collect_item_group_event_dialog_title" value="合成麦特核心" feature="Event" locale="CN" />
   <key id="$s_collect_item_group_event_dialog_desc1" value="*收集麦特核心后，点击[领取合成奖励]就可以获得奖励。" feature="Event" locale="CN" />
   <key id="$s_collect_item_group_event_dialog_desc2" value="*合成奖励时，不会消耗原有的奖励。" feature="Event" locale="CN" />
   <key id="$s_collect_item_group_event_dialog_guide" value="请通过打猎、演奏、钓鱼、通关副本收集麦特核心后合成吧！可以获得更好属性的麦特徽章哦！" feature="Event" locale="CN" />
   <key id="$s_collect_item_group_event_dialog_recieve_button" value="Claim Reward" feature="Event" />
+  <!-- UIChatEmoticonDialog -->
   <key id="$s_chat_emoticon_title" value="Sticker" feature="ChatEmoticon" />
   <key id="$s_chat_emoticon_empty_message" value="You have no stickers in your favorites." feature="ChatEmoticon" />
   <key id="$s_chat_emoticon_shop_button" value="Purchase" feature="ChatEmoticon" />
+  <!--UIBingoEventDialog-->
   <key id="$s_bingo_event_dialog_title" value="Blackout Bingo" feature="Event" />
   <key id="$s_bingo_event_dialog_receive_button" value="Claim" feature="Event" />
   <key id="$s_bingo_event_dialog_use_item_button" value="Use" feature="Event" />
@@ -3428,6 +3792,7 @@
   <key id="$s_bingo_event_complete_all_bingo" value="Bingo Blackout!" feature="Event" />
   <key id="$s_bingo_event_check" value="Use a {0} to cross off number {1}?" feature="Event" />
   <key id="$s_bingo_event_change_day" value="A new set of daily bingo numbers has been announced. Reopen the bingo window." feature="Event" />
+  <!--UIDungeonControlCenter-->
   <key id="$s_dungeon_control_center_title" value="Challenge Map" />
   <key id="$s_dungeon_control_center_find" value="Party Finder" />
   <key id="$s_dungeon_control_center_match" value="Join Queue" />
@@ -3534,6 +3899,7 @@
   <key id="$s_watchagame_title" value="Spectator Camera" />
   <key id="$s_watchagame_button1_tooltip" value="Controls your camera angle." />
   <key id="$s_watchagame_button2_tooltip" value="Exiting spectator mode." />
+  <!-- HideAndSeek Result -->
   <key id="$s_hideandseek_result_msg_detail" value="Results" />
   <key id="$s_hideandseek_result_msg_name" value="Name" />
   <key id="$s_hideandseek_msg_kill" value="KOs" />
@@ -3541,6 +3907,7 @@
   <key id="$s_hideandseek_msg_exp" value="Experience" />
   <key id="$s_hideandseek_msg_reward" value="Reward" />
   <key id="$s_hideandseek_reward_text" value="You got {0} item(s) as a reward." />
+  <!-- UIPaybackDialog -->
   <key id="$s_payback_dialog_title" value="返利进度" feature="Payback" />
   <key id="$s_payback_dialog_banner_chatballoon" value="提高冒险等级，就能获得返利！快来参与吧！" feature="Payback" />
   <key id="$s_payback_dialog_banner_title" value="橙蘑菇惊喜蛋" feature="Payback" />
@@ -3551,11 +3918,13 @@
   <key id="$s_payback_dialog_buy_product_btn" value="购买" feature="Payback" />
   <key id="$s_payback_dialog_status_title" value="返利进度" feature="Payback" />
   <key id="$s_gamemenu_btn_payback" value="返利" feature="Payback" />
+  <!-- UIItemGachaBoxDialog -->
   <key id="$s_itemgacha_dialog_single_open" value="Open One" feature="" />
   <key id="$s_itemgacha_dialog_multi_open" value="Open 10" feature="" />
   <key id="$s_itemgacha_dialog_probability" value="Odds" feature="" />
   <key id="$s_itemgacha_dialog_coinshop_open" value="Coin Shop" feature="" />
   <key id="$s_itemgacha_dialog_show_effect" value="Skip animation" feature="" />
+  <!-- UIUnlimitedEnchantDialog -->
   <key id="$s_unlimited_enchant_dialog_title" value="可极限突破的装备" feature="UnlimitedEnchant" />
   <key id="$s_unlimited_enchant_dialog_notice" value="请选择需要极限突破的装备" feature="UnlimitedEnchant" />
   <key id="$s_unlimited_enchant_dialog_desc" value="将潜藏在装备中的力量激发出来，\n转换成突破原有上限的装备。\n&lt;font color='#ec686e'&gt;请选择需要极限突破的装备。&lt;/font&gt;\n\n只有15强幽翼绯影系列武器才能进行极限突破。\n极限突破时，将保留随机属性。\n极限突破时，每隔10阶段赋予强力的属性。" feature="UnlimitedEnchant" />

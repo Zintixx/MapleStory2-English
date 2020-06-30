@@ -199,7 +199,7 @@
 			<action name="ShowGuideSummary" entityID="20000665" textID="20000665" durationTime="7000" /> 
 		    <action name="PlaySystemSoundInBox" arg2="System_ShowGuideSummary_01"/>  
         </onEnter>
-				<condition name="WaitTick" waitTick="10000" > 
+				<condition name="WaitTick" waitTick="22000" > 
 					<transition state="2차어나운스02" />
 				</condition> 
 				<condition name="몬스터가죽어있으면" arg1="99">
@@ -314,7 +314,7 @@
 				<condition name="몬스터가죽어있으면" arg1="99">
 					<transition state="2차웨이브실패" />
 				</condition>
-				<condition name="WaitTick" waitTick="10000" > 
+				<condition name="WaitTick" waitTick="22000" > 
 					<transition state="3차어나운스02" />
 				</condition> 
         <onExit>
