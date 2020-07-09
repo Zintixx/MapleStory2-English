@@ -3,7 +3,7 @@
 
 	<state name="대기">   
         <onEnter> 
-			<action name="포탈을설정한다" arg1="2" arg2="0" arg3="0" arg4="0"/>	
+			<action name="포탈을설정한다" arg1="2" arg2="1" arg3="1" arg4="0"/>	
 			<action name="메쉬를설정한다" arg1="2900-2905" arg2="1" arg3="0" arg4="0" arg5="0" /> 
 			<action name="이펙트를설정한다" arg1="12900" arg2="0" />  <!-- Vibrate Short-->
 			<action name="이펙트를설정한다" arg1="22900" arg2="0" />  <!-- Vibrate Sound-->
@@ -151,92 +151,81 @@
 			</onEnter>	
 <!-- 진행 유저 -->
 		<condition name="퀘스트유저를감지하면" arg1="9004" arg2="50001250" arg3="2">   <!-- Knight -->
-					<transition state="포털생성01"/>
+					<transition state="종료"/>
 				</condition>
 		<condition name="퀘스트유저를감지하면" arg1="9004" arg2="50001251" arg3="2">   <!-- Beginer -->
-					<transition state="포털생성01"/>
+					<transition state="종료"/>
 				</condition>
 		<condition name="퀘스트유저를감지하면" arg1="9004" arg2="50001252" arg3="2">   <!-- Berserker -->
-					<transition state="포털생성01"/>
+					<transition state="종료"/>
 				</condition>
 		<condition name="퀘스트유저를감지하면" arg1="9004" arg2="50001253" arg3="2">   <!-- Wizard -->
-					<transition state="포털생성01"/>
+					<transition state="종료"/>
 				</condition>
 		<condition name="퀘스트유저를감지하면" arg1="9004" arg2="50001254" arg3="2">   <!-- Priest -->
-					<transition state="포털생성01"/>
+					<transition state="종료"/>
 				</condition>
 		<condition name="퀘스트유저를감지하면" arg1="9004" arg2="50001255" arg3="2">   <!-- Ranger -->
-					<transition state="포털생성01"/>
+					<transition state="종료"/>
 				</condition>
 		<condition name="퀘스트유저를감지하면" arg1="9004" arg2="50001256" arg3="2">   <!-- HeavyGunner-->
-					<transition state="포털생성01"/>
+					<transition state="종료"/>
 				</condition>
 		<condition name="퀘스트유저를감지하면" arg1="9004" arg2="50001257" arg3="2">   <!-- Thief -->
-					<transition state="포털생성01"/>
+					<transition state="종료"/>
 				</condition>
 		<condition name="퀘스트유저를감지하면" arg1="9004" arg2="50001258" arg3="2">   <!-- Assassin -->
-					<transition state="포털생성01"/>
+					<transition state="종료"/>
 				</condition>
 		<condition name="퀘스트유저를감지하면" arg1="9004" arg2="50001259" arg3="2">   <!-- RuneBlader -->
-					<transition state="포털생성01"/>
+					<transition state="종료"/>
 				</condition>
 		<condition name="퀘스트유저를감지하면" arg1="9004" arg2="50001370" arg3="2">   <!-- Striker -->
-					<transition state="포털생성01"/>
+					<transition state="종료"/>
 				</condition>
 		<condition name="퀘스트유저를감지하면" arg1="9004" arg2="50001371" arg3="2">   <!-- Soulbinder -->
-					<transition state="포털생성01"/>
+					<transition state="종료"/>
 				</condition>				
 <!-- 완료 유저 -->
 		<condition name="퀘스트유저를감지하면" arg1="9004" arg2="50001250" arg3="3">   <!-- Knight -->
-					<transition state="포털생성01"/>
+					<transition state="종료"/>
 				</condition>
 		<condition name="퀘스트유저를감지하면" arg1="9004" arg2="50001251" arg3="3">   <!-- Beginer -->
-					<transition state="포털생성01"/>
+					<transition state="종료"/>
 				</condition>
 		<condition name="퀘스트유저를감지하면" arg1="9004" arg2="50001252" arg3="3">   <!-- Berserker -->
-					<transition state="포털생성01"/>
+					<transition state="종료"/>
 				</condition>
 		<condition name="퀘스트유저를감지하면" arg1="9004" arg2="50001253" arg3="3">   <!-- Wizard -->
-					<transition state="포털생성01"/>
+					<transition state="종료"/>
 				</condition>
 		<condition name="퀘스트유저를감지하면" arg1="9004" arg2="50001254" arg3="3">   <!-- Priest -->
-					<transition state="포털생성01"/>
+					<transition state="종료"/>
 				</condition>
 		<condition name="퀘스트유저를감지하면" arg1="9004" arg2="50001255" arg3="3">   <!-- Ranger -->
-					<transition state="포털생성01"/>
+					<transition state="종료"/>
 				</condition>
 		<condition name="퀘스트유저를감지하면" arg1="9004" arg2="50001256" arg3="3">   <!-- HeavyGunner -->
-					<transition state="포털생성01"/>
+					<transition state="종료"/>
 				</condition>
 		<condition name="퀘스트유저를감지하면" arg1="9004" arg2="50001257" arg3="3">   <!-- Thief -->
-					<transition state="포털생성01"/>
+					<transition state="종료"/>
 				</condition>
 		<condition name="퀘스트유저를감지하면" arg1="9004" arg2="50001258" arg3="3">   <!-- Assassin -->
-					<transition state="포털생성01"/>
+					<transition state="종료"/>
 				</condition>
 		<condition name="퀘스트유저를감지하면" arg1="9004" arg2="50001259" arg3="3">   <!-- RuneBlader -->
-					<transition state="포털생성01"/>
+					<transition state="종료"/>
 				</condition>		
 		<condition name="퀘스트유저를감지하면" arg1="9004" arg2="50001370" arg3="3">   <!-- Striker -->
-					<transition state="포털생성01"/>
+					<transition state="종료"/>
 				</condition>
 		<condition name="퀘스트유저를감지하면" arg1="9004" arg2="50001371" arg3="3">   <!-- Soulbinder -->
-					<transition state="포털생성01"/>
+					<transition state="종료"/>
 				</condition>							
     <onExit>
     </onExit>
     </state>			
-	
-    <state name="포털생성01" posX="392" posY="526">
-        <onEnter>
-			<action name="포탈을설정한다" arg1="2" arg2="1" arg3="1" arg4="0"/>	
-			</onEnter>	
-				<condition name="무조건" > 
-				<transition state="종료" />
-			</condition>
-    <onExit>
-    </onExit>
-    </state>		
  
     <state name="종료"> 
 		<onEnter>
