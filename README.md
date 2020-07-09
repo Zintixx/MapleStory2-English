@@ -22,7 +22,7 @@ I will normally compile new m2ds either every KMS2 patch or after a good amount 
 However, if you do not wish to rely on me, here are the steps to DIY.
 
 1. You will need [Miyuyami's MS2 Create Tool](https://github.com/Miyuyami/MS2Tools)
-2. Miyuyami's instructions should be clear as to how create it but just incase, make sure your argument settings for mode is **MS2F**
+2. Miyuyami's instructions should be clear as to how create it but just incase, make sure your argument settings for mode is **NS2F**
 ---
 
 Discord Tag: Zin#5035
