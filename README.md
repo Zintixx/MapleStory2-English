@@ -25,4 +25,4 @@ However, if you do not wish to rely on me, here are the steps to DIY.
 2. Miyuyami's instructions should be clear as to how create it but just incase, make sure your argument settings for mode is **NS2F**
 ---
 
-Discord Tag: Zin#5035
+Discord Tag: **Zin#5035**
