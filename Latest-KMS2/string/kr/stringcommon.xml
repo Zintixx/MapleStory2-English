@@ -101,6 +101,7 @@
 	<key id="s_err_invalid_item" value="아이템이 존재하지 않습니다." />
 	<key id="s_err_invalid_item_cannot_buy_by_period" value="구매 가능 기간이 아닙니다." />
 	<key id="s_err_lack_shopitem" value="재고가 부족합니다." />
+	<key id="s_err_shop_expired" value="상점이 만료되었습니다." />
 	<key id="s_msg_item_upgrade_level" value="레벨 {0} 업그레이드" />
 	<key id="s_msg_item_upgrade_failed" value="주문서가 희미한 빛을 내며 사라져 버렸습니다." />
 	<key id="s_msg_item_upgrade_complete" value="주문서가 밝게 빛나더니 신비로운 힘이 전해졌습니다." />
@@ -1214,6 +1215,7 @@
 	<key id="s_beauty_notice_hide_cap_by_transp_badge" value="투명 배지로 모자를 가린 상태입니다." />
 	<key id="s_beauty_msg_back_game_no_save" value="변경 사항을 &lt;FONT color=&apos;#FF5F5F&apos;&gt;저장하지 않고&lt;/FONT&gt;\n게임으로 돌아갑니다." />
 	<key id="s_beauty_msg_error_code" value="시스템 오류가 발생했습니다. code = {0}\n게임으로 돌아갑니다." />
+	<key id="s_beauty_msg_error_product_expired" value="판매 상품이 변경되었습니다.\n다시 시도해주세요." />
 	<key id="s_beauty_tooltip_price" value="{0}\n{1}" />
 	<key id="s_beauty_tooltip_price_with_requirelevel" value="{0}\n{1} 레벨 이상\n{2}" comment="{0}:아이템 이름, {1}:레벨 제한, {2}:가격" />
 	<key id="s_beauty_tooltip_price_with_achieve" value="{0}\n&lt;FONT color=&apos;#FF0000&apos;&gt;{1}&lt;/FONT&gt;\n{2}" comment="{0}:아이템 이름, {1}:트로피제한, {2}:가격" />
@@ -3971,6 +3973,7 @@
 	<key id="s_dungeonRoom_missionBar_tooltip_item" value="{0} 랭크: {1}점 이상\n" />
 	<key id="s_dungeonRoom_findMember_button_tooltip" value="&lt;FONT color=&apos;#FFD200&apos; size=&apos;15&apos; &gt;파티원 요청&lt;/FONT&gt;\n&lt;FONT size=&apos;3&apos;&gt; &lt;/FONT&gt;\n버튼을 클릭해서 던전을 함께 모험할 파티원을 모집할 수 있습니다." feature="FindDungeonHelp" />
 	<key id="s_dungeonRoom_findMember_button_tooltip" value="&lt;FONT color=&apos;#FFD200&apos; size=&apos;15&apos; &gt;파티원 요청&lt;/FONT&gt;\n&lt;FONT size=&apos;3&apos;&gt; &lt;/FONT&gt;\n버튼을 클릭해서 던전을 함께 모험할 파티원을 모집할 수 있습니다.\n초보 모험가와 함께 클리어할 경우, 친절한 기사 상자를 \n하루 {0}회 추가로 획득할 수 있습니다." feature="FindDungeonHelp" locale="CN" />
+	<key id="s_dungeonRoom_findHelper_button_tooltip" value="&lt;FONT color=&apos;#FFD200&apos; size=&apos;15&apos; &gt;도움 요청&lt;/FONT&gt;\n&lt;FONT size=&apos;3&apos;&gt; &lt;/FONT&gt;\n이 던전에 익숙한 숙련 모험가에게 도움을 요청할 수 있습니다.\n버튼을 클릭해서 함께 플레이할 숙련 모험가를 찾아보세요!\n\n&lt;FONT color=&apos;#FFD200&apos; size=&apos;15&apos; &gt;초보 모험가&lt;/FONT&gt;\n&lt;FONT size=&apos;3&apos;&gt; &lt;/FONT&gt;\n아직 이 던전을 플레이하는 데 익숙하지 않습니다.\n던전 클리어 횟수가 일정 이상이 되면 숙련 모험가가 될 수 있습니다.\n&lt;FONT color=&apos;#00AAEF&apos;&gt;- {0}회 이상\n" />
 	<key id="s_dungeonRoom_party_status_tooltip" value="{0}{1}\n" />
 	<key id="s_dungeonRoom_addExtraRewardCount" value="보상 횟수 추가\n({0}/{1})" />
 	<key id="s_dungeonRoom_unionRewardInfo" value="- &lt;FONT color=&apos;#00A2ED&apos;&gt;{0}&lt;/FONT&gt; 던전의 보상 획득 횟수가 공유됩니다." comment="{0}:던전 이름" />
@@ -5453,7 +5456,7 @@
 	<key id="s_vip_dialog_goods_sales_tooltip_week_limit" value="금요일 0시에 구매 횟수가 초기화 됩니다." />
 	<key id="s_vip_dialog_goods_sales_tooltip_month_limit" value="1일 0시에 구매 횟수가 초기화 됩니다." />
 	<key id="s_vip_dialog_goods_bill_name" value="&lt;FONT color=&apos;#C00000&apos;&gt;[{0}]&lt;/FONT&gt;을(를) 구매합니다." />
-	<key id="s_vip_dialog_goods_buy_limit" value="계약 만료 {0}일 전부터 연장할 수 있습니다.\n({1}부터 가능)" />
+	<key id="s_vip_dialog_goods_buy_limit" value="남은 혜택 기간이 {0}일 미만일 경우 연장할 수 있습니다.\n({1}부터 혜택 연장 가능)" />
 	<key id="s_vip_dialog_goods_buy_limit_time_string" value="{0}년 {1}월 {2}일 {3}시 {4}분" />
 	<key id="s_vip_reduce_fee" value="(프리미엄 할인)" />
 	<key id="s_vip_dialog_goods_free" value="&lt;p align=&apos;center&apos;&gt;무료&lt;/p&gt;" />
