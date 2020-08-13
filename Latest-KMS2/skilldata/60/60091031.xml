@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 파싱해서 사용하는 데이터이니 직접 수정하지 마세요 -->
+<ms2 feature="">
+	<basic>
+		<ui attackType="1" />
+		<kinds rangeType="2" element="3" />
+	</basic>
+	<level value="1">
+		<beginCondition probability="1">
+			<stat hp="1" />
+		</beginCondition>
+		<detectProperty rangeType="cylinder" distance="600" height="200" />
+		<motion>
+			<motionProperty sequenceName="Attack_01_D" motionEffect="NPC/Skill/SkullWizardCaptainGreen/Eff_SkullWizardCaptainGreen_Attack_01_D_Cast.xml" faceTarget="0" />
+			<attack point="p0" targetCount="1" magicPathID="60091031" attacktype="1" hitImmuneBreak="1" brokenOffence="1" brokenForce="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+				<rangeProperty rangeType="cylinder" distance="1000" height="200" applyTarget="1" castTarget="1" />
+				<arrowProperty overlap="1" explosion="1" collision="150.000000,25.000000,50.000000" effect="NPC/Skill/SkullWizardCaptainGreen/Eff_SkullWizardCaptainGreen_Attack_01_D_Ball.xml" effectRemain="NPC/Skill/SkullWizardCaptainGreen/Eff_SkullWizardCaptainGreen_Attack_01_D_Remain.xml" />
+				<damageProperty rate="0.7" effectRemain="NPC/Skill/SkullWizardCaptainGreen/Eff_SkullWizardCaptainGreen_Attack_01_D_Remain.xml" attackMaterial="6" />
+				<conditionSkill level="1" skillID="60021011" skillTarget="2" skillOwner="1" />
+			</attack>
+		</motion>
+	</level>
+	<level value="2">
+		<beginCondition probability="1">
+			<stat hp="1" />
+		</beginCondition>
+		<detectProperty rangeType="cylinder" distance="600" height="200" />
+		<motion>
+			<motionProperty sequenceName="Attack_01_D" motionEffect="NPC/Skill/SkullWizardCaptainGreen/Eff_SkullWizardCaptainGreen_Attack_01_D_Cast_NoVoice.xml" faceTarget="0" />
+			<attack point="p0" targetCount="1" magicPathID="60091031" attacktype="1" hitImmuneBreak="1" brokenOffence="1" brokenForce="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+				<rangeProperty rangeType="cylinder" distance="1000" height="200" applyTarget="1" castTarget="1" />
+				<arrowProperty overlap="1" explosion="1" collision="150.000000,25.000000,50.000000" effect="NPC/Skill/SkullWizardCaptainGreen/Eff_SkullWizardCaptainGreen_Attack_01_D_Ball.xml" effectRemain="NPC/Skill/SkullWizardCaptainGreen/Eff_SkullWizardCaptainGreen_Attack_01_D_Remain.xml" />
+				<damageProperty rate="0.7" effectRemain="NPC/Skill/SkullWizardCaptainGreen/Eff_SkullWizardCaptainGreen_Attack_01_D_Remain.xml" attackMaterial="6" />
+				<conditionSkill level="1" skillID="60021011" skillTarget="2" skillOwner="1" />
+			</attack>
+		</motion>
+	</level>
+</ms2>

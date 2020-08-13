@@ -1,0 +1,453 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 파싱해서 사용하는 데이터이니 직접 수정하지 마세요 -->
+<ms2 feature="">
+	<basic feature="Old_JobChange_01">
+		<ui icon="./Data/Resource/Image/skill/icon/10200181.png" exceptUI="1" attackType="1" />
+		<kinds subType="2" rangeType="1" immediateActive="1" />
+		<stateAttr superArmor="3" autoTargeting="0" />
+	</basic>
+	<level value="1" feature="Old_JobChange_01">
+		<beginCondition probability="1" cooldownTime="1">
+			<stat hp="1" />
+			<weapon lh="0" rh="50" />
+		</beginCondition>
+		<changeSkill originSkillID="10200181" />
+		<push back="300" />
+		<conditionSkill level="2" skillID="10200032" overlapCount="10" skillTarget="1">
+			<beginCondition probability="1" allowBattleRidingState="1" />
+		</conditionSkill>
+		<motion>
+			<motionProperty sequenceName="Berserker_MoonSmack_03_A" motionEffect="CH/Skill/Berserker/Eff_Berserker_MoonSmack_Cast_03.xml" keyMove="600" />
+			<attack point="p0" targetCount="1" attacktype="1" hitImmuneBreak="5" brokenForce="2" unrideOnHit="1" compulsionType="2">
+				<pauseProperty pauseDuration="0.2" pauseShakeDuration="0.2" pauseAmp="15" />
+				<rangeProperty rangeType="box" distance="450" height="150" width="400" applyTarget="1" />
+				<damageProperty rate="6.61" hitSpeedRate="0.8" hitPauseTime="0.5" effectHit="CH/Weapon/LargeSword/Eff_LargeSword_Hit_01.xml" push="1" pushdistance="150" pushApplyField="1" />
+			</attack>
+			<attack point="p1" targetCount="1" cubeMagicPathID="102001812" attacktype="1">
+				<rangeProperty applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty count="0" effectHit="CH/Weapon/LargeSword/Eff_LargeSword_Hit_01.xml" attackMaterial="1000" />
+				<conditionSkill splash="1" level="1" skillID="10200183" useDirection="1" />
+			</attack>
+			<attack point="p2" targetCount="1" cubeMagicPathID="102001813" attacktype="1">
+				<rangeProperty applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty count="0" effectHit="CH/Weapon/LargeSword/Eff_LargeSword_Hit_01.xml" attackMaterial="1000" />
+				<conditionSkill splash="1" level="1" skillID="10200183" delay="100" useDirection="1" />
+			</attack>
+			<attack point="p3" targetCount="1" cubeMagicPathID="102001814" attacktype="1">
+				<rangeProperty applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty count="0" effectHit="CH/Weapon/LargeSword/Eff_LargeSword_Hit_01.xml" attackMaterial="1000" />
+				<conditionSkill splash="1" level="1" skillID="10200183" delay="200" useDirection="1" />
+			</attack>
+		</motion>
+	</level>
+	<level value="2" feature="Old_JobChange_01">
+		<beginCondition probability="1" cooldownTime="1">
+			<stat hp="1" />
+			<weapon lh="0" rh="50" />
+		</beginCondition>
+		<changeSkill originSkillID="10200181" originSkillLevel="2" />
+		<push back="300" />
+		<conditionSkill level="2" skillID="10200032" overlapCount="10" skillTarget="1">
+			<beginCondition probability="1" allowBattleRidingState="1" />
+		</conditionSkill>
+		<motion>
+			<motionProperty sequenceName="Berserker_MoonSmack_03_A" motionEffect="CH/Skill/Berserker/Eff_Berserker_MoonSmack_Cast_03.xml" keyMove="600" />
+			<attack point="p0" targetCount="1" attacktype="1" hitImmuneBreak="5" brokenForce="2" unrideOnHit="1" compulsionType="2">
+				<pauseProperty pauseDuration="0.2" pauseShakeDuration="0.2" pauseAmp="15" />
+				<rangeProperty rangeType="box" distance="450" height="150" width="400" applyTarget="1" />
+				<damageProperty rate="7.38" hitSpeedRate="0.8" hitPauseTime="0.5" effectHit="CH/Weapon/LargeSword/Eff_LargeSword_Hit_01.xml" push="1" pushdistance="150" pushApplyField="1" />
+			</attack>
+			<attack point="p1" targetCount="1" cubeMagicPathID="102001812" attacktype="1">
+				<rangeProperty applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty count="0" effectHit="CH/Weapon/LargeSword/Eff_LargeSword_Hit_01.xml" attackMaterial="1000" />
+				<conditionSkill splash="1" level="1" skillID="10200183" useDirection="1" />
+			</attack>
+			<attack point="p2" targetCount="1" cubeMagicPathID="102001813" attacktype="1">
+				<rangeProperty applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty count="0" effectHit="CH/Weapon/LargeSword/Eff_LargeSword_Hit_01.xml" attackMaterial="1000" />
+				<conditionSkill splash="1" level="1" skillID="10200183" delay="100" useDirection="1" />
+			</attack>
+			<attack point="p3" targetCount="1" cubeMagicPathID="102001814" attacktype="1">
+				<rangeProperty applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty count="0" effectHit="CH/Weapon/LargeSword/Eff_LargeSword_Hit_01.xml" attackMaterial="1000" />
+				<conditionSkill splash="1" level="1" skillID="10200183" delay="200" useDirection="1" />
+			</attack>
+		</motion>
+	</level>
+	<level value="3" feature="Old_JobChange_01">
+		<beginCondition probability="1" cooldownTime="1">
+			<stat hp="1" />
+			<weapon lh="0" rh="50" />
+		</beginCondition>
+		<changeSkill originSkillID="10200181" originSkillLevel="3" />
+		<push back="300" />
+		<conditionSkill level="2" skillID="10200032" overlapCount="10" skillTarget="1">
+			<beginCondition probability="1" allowBattleRidingState="1" />
+		</conditionSkill>
+		<motion>
+			<motionProperty sequenceName="Berserker_MoonSmack_03_A" motionEffect="CH/Skill/Berserker/Eff_Berserker_MoonSmack_Cast_03.xml" keyMove="600" />
+			<attack point="p0" targetCount="1" attacktype="1" hitImmuneBreak="5" brokenForce="2" unrideOnHit="1" compulsionType="2">
+				<pauseProperty pauseDuration="0.2" pauseShakeDuration="0.2" pauseAmp="15" />
+				<rangeProperty rangeType="box" distance="450" height="150" width="400" applyTarget="1" />
+				<damageProperty rate="8.15" hitSpeedRate="0.8" hitPauseTime="0.5" effectHit="CH/Weapon/LargeSword/Eff_LargeSword_Hit_01.xml" push="1" pushdistance="150" pushApplyField="1" />
+			</attack>
+			<attack point="p1" targetCount="1" cubeMagicPathID="102001812" attacktype="1">
+				<rangeProperty applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty count="0" effectHit="CH/Weapon/LargeSword/Eff_LargeSword_Hit_01.xml" attackMaterial="1000" />
+				<conditionSkill splash="1" level="1" skillID="10200183" useDirection="1" />
+			</attack>
+			<attack point="p2" targetCount="1" cubeMagicPathID="102001813" attacktype="1">
+				<rangeProperty applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty count="0" effectHit="CH/Weapon/LargeSword/Eff_LargeSword_Hit_01.xml" attackMaterial="1000" />
+				<conditionSkill splash="1" level="1" skillID="10200183" delay="100" useDirection="1" />
+			</attack>
+			<attack point="p3" targetCount="1" cubeMagicPathID="102001814" attacktype="1">
+				<rangeProperty applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty count="0" effectHit="CH/Weapon/LargeSword/Eff_LargeSword_Hit_01.xml" attackMaterial="1000" />
+				<conditionSkill splash="1" level="1" skillID="10200183" delay="200" useDirection="1" />
+			</attack>
+		</motion>
+	</level>
+	<level value="4" feature="Old_JobChange_01">
+		<beginCondition probability="1" cooldownTime="1">
+			<stat hp="1" />
+			<weapon lh="0" rh="50" />
+		</beginCondition>
+		<changeSkill originSkillID="10200181" originSkillLevel="4" />
+		<push back="300" />
+		<conditionSkill level="2" skillID="10200032" overlapCount="10" skillTarget="1">
+			<beginCondition probability="1" allowBattleRidingState="1" />
+		</conditionSkill>
+		<motion>
+			<motionProperty sequenceName="Berserker_MoonSmack_03_A" motionEffect="CH/Skill/Berserker/Eff_Berserker_MoonSmack_Cast_03.xml" keyMove="600" />
+			<attack point="p0" targetCount="1" attacktype="1" hitImmuneBreak="5" brokenForce="2" unrideOnHit="1" compulsionType="2">
+				<pauseProperty pauseDuration="0.2" pauseShakeDuration="0.2" pauseAmp="15" />
+				<rangeProperty rangeType="box" distance="450" height="150" width="400" applyTarget="1" />
+				<damageProperty rate="8.92" hitSpeedRate="0.8" hitPauseTime="0.5" effectHit="CH/Weapon/LargeSword/Eff_LargeSword_Hit_01.xml" push="1" pushdistance="150" pushApplyField="1" />
+			</attack>
+			<attack point="p1" targetCount="1" cubeMagicPathID="102001812" attacktype="1">
+				<rangeProperty applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty count="0" effectHit="CH/Weapon/LargeSword/Eff_LargeSword_Hit_01.xml" attackMaterial="1000" />
+				<conditionSkill splash="1" level="1" skillID="10200183" useDirection="1" />
+			</attack>
+			<attack point="p2" targetCount="1" cubeMagicPathID="102001813" attacktype="1">
+				<rangeProperty applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty count="0" effectHit="CH/Weapon/LargeSword/Eff_LargeSword_Hit_01.xml" attackMaterial="1000" />
+				<conditionSkill splash="1" level="1" skillID="10200183" delay="100" useDirection="1" />
+			</attack>
+			<attack point="p3" targetCount="1" cubeMagicPathID="102001814" attacktype="1">
+				<rangeProperty applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty count="0" effectHit="CH/Weapon/LargeSword/Eff_LargeSword_Hit_01.xml" attackMaterial="1000" />
+				<conditionSkill splash="1" level="1" skillID="10200183" delay="200" useDirection="1" />
+			</attack>
+		</motion>
+	</level>
+	<level value="5" feature="Old_JobChange_01">
+		<beginCondition probability="1" cooldownTime="1">
+			<stat hp="1" />
+			<weapon lh="0" rh="50" />
+		</beginCondition>
+		<changeSkill originSkillID="10200181" originSkillLevel="5" />
+		<push back="300" />
+		<conditionSkill level="2" skillID="10200032" overlapCount="10" skillTarget="1">
+			<beginCondition probability="1" allowBattleRidingState="1" />
+		</conditionSkill>
+		<motion>
+			<motionProperty sequenceName="Berserker_MoonSmack_03_A" motionEffect="CH/Skill/Berserker/Eff_Berserker_MoonSmack_Cast_03.xml" keyMove="600" />
+			<attack point="p0" targetCount="1" attacktype="1" hitImmuneBreak="5" brokenForce="2" unrideOnHit="1" compulsionType="2">
+				<pauseProperty pauseDuration="0.2" pauseShakeDuration="0.2" pauseAmp="15" />
+				<rangeProperty rangeType="box" distance="450" height="150" width="400" applyTarget="1" />
+				<damageProperty rate="9.69" hitSpeedRate="0.8" hitPauseTime="0.5" effectHit="CH/Weapon/LargeSword/Eff_LargeSword_Hit_01.xml" push="1" pushdistance="150" pushApplyField="1" />
+			</attack>
+			<attack point="p1" targetCount="1" cubeMagicPathID="102001812" attacktype="1">
+				<rangeProperty applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty count="0" effectHit="CH/Weapon/LargeSword/Eff_LargeSword_Hit_01.xml" attackMaterial="1000" />
+				<conditionSkill splash="1" level="1" skillID="10200183" useDirection="1" />
+			</attack>
+			<attack point="p2" targetCount="1" cubeMagicPathID="102001813" attacktype="1">
+				<rangeProperty applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty count="0" effectHit="CH/Weapon/LargeSword/Eff_LargeSword_Hit_01.xml" attackMaterial="1000" />
+				<conditionSkill splash="1" level="1" skillID="10200183" delay="100" useDirection="1" />
+			</attack>
+			<attack point="p3" targetCount="1" cubeMagicPathID="102001814" attacktype="1">
+				<rangeProperty applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty count="0" effectHit="CH/Weapon/LargeSword/Eff_LargeSword_Hit_01.xml" attackMaterial="1000" />
+				<conditionSkill splash="1" level="1" skillID="10200183" delay="200" useDirection="1" />
+			</attack>
+		</motion>
+	</level>
+	<level value="6" feature="Old_JobChange_01">
+		<beginCondition probability="1" cooldownTime="1">
+			<stat hp="1" />
+			<weapon lh="0" rh="50" />
+		</beginCondition>
+		<changeSkill originSkillID="10200181" originSkillLevel="6" />
+		<push back="300" />
+		<conditionSkill level="2" skillID="10200032" overlapCount="10" skillTarget="1">
+			<beginCondition probability="1" allowBattleRidingState="1" />
+		</conditionSkill>
+		<motion>
+			<motionProperty sequenceName="Berserker_MoonSmack_03_A" motionEffect="CH/Skill/Berserker/Eff_Berserker_MoonSmack_Cast_03.xml" keyMove="600" />
+			<attack point="p0" targetCount="1" attacktype="1" hitImmuneBreak="5" brokenForce="2" unrideOnHit="1" compulsionType="2">
+				<pauseProperty pauseDuration="0.2" pauseShakeDuration="0.2" pauseAmp="15" />
+				<rangeProperty rangeType="box" distance="450" height="150" width="400" applyTarget="1" />
+				<damageProperty rate="10.46" hitSpeedRate="0.8" hitPauseTime="0.5" effectHit="CH/Weapon/LargeSword/Eff_LargeSword_Hit_01.xml" push="1" pushdistance="150" pushApplyField="1" />
+			</attack>
+			<attack point="p1" targetCount="1" cubeMagicPathID="102001812" attacktype="1">
+				<rangeProperty applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty count="0" effectHit="CH/Weapon/LargeSword/Eff_LargeSword_Hit_01.xml" attackMaterial="1000" />
+				<conditionSkill splash="1" level="1" skillID="10200183" useDirection="1" />
+			</attack>
+			<attack point="p2" targetCount="1" cubeMagicPathID="102001813" attacktype="1">
+				<rangeProperty applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty count="0" effectHit="CH/Weapon/LargeSword/Eff_LargeSword_Hit_01.xml" attackMaterial="1000" />
+				<conditionSkill splash="1" level="1" skillID="10200183" delay="100" useDirection="1" />
+			</attack>
+			<attack point="p3" targetCount="1" cubeMagicPathID="102001814" attacktype="1">
+				<rangeProperty applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty count="0" effectHit="CH/Weapon/LargeSword/Eff_LargeSword_Hit_01.xml" attackMaterial="1000" />
+				<conditionSkill splash="1" level="1" skillID="10200183" delay="200" useDirection="1" />
+			</attack>
+		</motion>
+	</level>
+	<level value="7" feature="Old_JobChange_01">
+		<beginCondition probability="1" cooldownTime="1">
+			<stat hp="1" />
+			<weapon lh="0" rh="50" />
+		</beginCondition>
+		<changeSkill originSkillID="10200181" originSkillLevel="7" />
+		<push back="300" />
+		<conditionSkill level="2" skillID="10200032" overlapCount="10" skillTarget="1">
+			<beginCondition probability="1" allowBattleRidingState="1" />
+		</conditionSkill>
+		<motion>
+			<motionProperty sequenceName="Berserker_MoonSmack_03_A" motionEffect="CH/Skill/Berserker/Eff_Berserker_MoonSmack_Cast_03.xml" keyMove="600" />
+			<attack point="p0" targetCount="1" attacktype="1" hitImmuneBreak="5" brokenForce="2" unrideOnHit="1" compulsionType="2">
+				<pauseProperty pauseDuration="0.2" pauseShakeDuration="0.2" pauseAmp="15" />
+				<rangeProperty rangeType="box" distance="450" height="150" width="400" applyTarget="1" />
+				<damageProperty rate="11.23" hitSpeedRate="0.8" hitPauseTime="0.5" effectHit="CH/Weapon/LargeSword/Eff_LargeSword_Hit_01.xml" push="1" pushdistance="150" pushApplyField="1" />
+			</attack>
+			<attack point="p1" targetCount="1" cubeMagicPathID="102001812" attacktype="1">
+				<rangeProperty applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty count="0" effectHit="CH/Weapon/LargeSword/Eff_LargeSword_Hit_01.xml" attackMaterial="1000" />
+				<conditionSkill splash="1" level="1" skillID="10200183" useDirection="1" />
+			</attack>
+			<attack point="p2" targetCount="1" cubeMagicPathID="102001813" attacktype="1">
+				<rangeProperty applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty count="0" effectHit="CH/Weapon/LargeSword/Eff_LargeSword_Hit_01.xml" attackMaterial="1000" />
+				<conditionSkill splash="1" level="1" skillID="10200183" delay="100" useDirection="1" />
+			</attack>
+			<attack point="p3" targetCount="1" cubeMagicPathID="102001814" attacktype="1">
+				<rangeProperty applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty count="0" effectHit="CH/Weapon/LargeSword/Eff_LargeSword_Hit_01.xml" attackMaterial="1000" />
+				<conditionSkill splash="1" level="1" skillID="10200183" delay="200" useDirection="1" />
+			</attack>
+		</motion>
+	</level>
+	<level value="8" feature="Old_JobChange_01">
+		<beginCondition probability="1" cooldownTime="1">
+			<stat hp="1" />
+			<weapon lh="0" rh="50" />
+		</beginCondition>
+		<changeSkill originSkillID="10200181" originSkillLevel="8" />
+		<push back="300" />
+		<conditionSkill level="2" skillID="10200032" overlapCount="10" skillTarget="1">
+			<beginCondition probability="1" allowBattleRidingState="1" />
+		</conditionSkill>
+		<motion>
+			<motionProperty sequenceName="Berserker_MoonSmack_03_A" motionEffect="CH/Skill/Berserker/Eff_Berserker_MoonSmack_Cast_03.xml" keyMove="600" />
+			<attack point="p0" targetCount="1" attacktype="1" hitImmuneBreak="5" brokenForce="2" unrideOnHit="1" compulsionType="2">
+				<pauseProperty pauseDuration="0.2" pauseShakeDuration="0.2" pauseAmp="15" />
+				<rangeProperty rangeType="box" distance="450" height="150" width="400" applyTarget="1" />
+				<damageProperty rate="12" hitSpeedRate="0.8" hitPauseTime="0.5" effectHit="CH/Weapon/LargeSword/Eff_LargeSword_Hit_01.xml" push="1" pushdistance="150" pushApplyField="1" />
+			</attack>
+			<attack point="p1" targetCount="1" cubeMagicPathID="102001812" attacktype="1">
+				<rangeProperty applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty count="0" effectHit="CH/Weapon/LargeSword/Eff_LargeSword_Hit_01.xml" attackMaterial="1000" />
+				<conditionSkill splash="1" level="1" skillID="10200183" useDirection="1" />
+			</attack>
+			<attack point="p2" targetCount="1" cubeMagicPathID="102001813" attacktype="1">
+				<rangeProperty applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty count="0" effectHit="CH/Weapon/LargeSword/Eff_LargeSword_Hit_01.xml" attackMaterial="1000" />
+				<conditionSkill splash="1" level="1" skillID="10200183" delay="100" useDirection="1" />
+			</attack>
+			<attack point="p3" targetCount="1" cubeMagicPathID="102001814" attacktype="1">
+				<rangeProperty applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty count="0" effectHit="CH/Weapon/LargeSword/Eff_LargeSword_Hit_01.xml" attackMaterial="1000" />
+				<conditionSkill splash="1" level="1" skillID="10200183" delay="200" useDirection="1" />
+			</attack>
+		</motion>
+	</level>
+	<level value="9" feature="Old_JobChange_01">
+		<beginCondition probability="1" cooldownTime="1">
+			<stat hp="1" />
+			<weapon lh="0" rh="50" />
+		</beginCondition>
+		<changeSkill originSkillID="10200181" originSkillLevel="9" />
+		<push back="300" />
+		<conditionSkill level="2" skillID="10200032" overlapCount="10" skillTarget="1">
+			<beginCondition probability="1" allowBattleRidingState="1" />
+		</conditionSkill>
+		<motion>
+			<motionProperty sequenceName="Berserker_MoonSmack_03_A" motionEffect="CH/Skill/Berserker/Eff_Berserker_MoonSmack_Cast_03.xml" keyMove="600" />
+			<attack point="p0" targetCount="1" attacktype="1" hitImmuneBreak="5" brokenForce="2" unrideOnHit="1" compulsionType="2">
+				<pauseProperty pauseDuration="0.2" pauseShakeDuration="0.2" pauseAmp="15" />
+				<rangeProperty rangeType="box" distance="450" height="150" width="400" applyTarget="1" />
+				<damageProperty rate="12.77" hitSpeedRate="0.8" hitPauseTime="0.5" effectHit="CH/Weapon/LargeSword/Eff_LargeSword_Hit_01.xml" push="1" pushdistance="150" pushApplyField="1" />
+			</attack>
+			<attack point="p1" targetCount="1" cubeMagicPathID="102001812" attacktype="1">
+				<rangeProperty applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty count="0" effectHit="CH/Weapon/LargeSword/Eff_LargeSword_Hit_01.xml" attackMaterial="1000" />
+				<conditionSkill splash="1" level="1" skillID="10200183" useDirection="1" />
+			</attack>
+			<attack point="p2" targetCount="1" cubeMagicPathID="102001813" attacktype="1">
+				<rangeProperty applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty count="0" effectHit="CH/Weapon/LargeSword/Eff_LargeSword_Hit_01.xml" attackMaterial="1000" />
+				<conditionSkill splash="1" level="1" skillID="10200183" delay="100" useDirection="1" />
+			</attack>
+			<attack point="p3" targetCount="1" cubeMagicPathID="102001814" attacktype="1">
+				<rangeProperty applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty count="0" effectHit="CH/Weapon/LargeSword/Eff_LargeSword_Hit_01.xml" attackMaterial="1000" />
+				<conditionSkill splash="1" level="1" skillID="10200183" delay="200" useDirection="1" />
+			</attack>
+		</motion>
+	</level>
+	<level value="10" feature="Old_JobChange_01">
+		<beginCondition probability="1" cooldownTime="1">
+			<stat hp="1" />
+			<weapon lh="0" rh="50" />
+		</beginCondition>
+		<changeSkill originSkillID="10200181" originSkillLevel="10" />
+		<push back="300" />
+		<conditionSkill level="2" skillID="10200032" overlapCount="10" skillTarget="1">
+			<beginCondition probability="1" allowBattleRidingState="1" />
+		</conditionSkill>
+		<motion>
+			<motionProperty sequenceName="Berserker_MoonSmack_03_A" motionEffect="CH/Skill/Berserker/Eff_Berserker_MoonSmack_Cast_03.xml" keyMove="600" />
+			<attack point="p0" targetCount="1" attacktype="1" hitImmuneBreak="5" brokenForce="2" unrideOnHit="1" compulsionType="2">
+				<pauseProperty pauseDuration="0.2" pauseShakeDuration="0.2" pauseAmp="15" />
+				<rangeProperty rangeType="box" distance="450" height="150" width="400" applyTarget="1" />
+				<damageProperty rate="13.54" hitSpeedRate="0.8" hitPauseTime="0.5" effectHit="CH/Weapon/LargeSword/Eff_LargeSword_Hit_01.xml" push="1" pushdistance="150" pushApplyField="1" />
+			</attack>
+			<attack point="p1" targetCount="1" cubeMagicPathID="102001812" attacktype="1">
+				<rangeProperty applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty count="0" effectHit="CH/Weapon/LargeSword/Eff_LargeSword_Hit_01.xml" attackMaterial="1000" />
+				<conditionSkill splash="1" level="1" skillID="10200183" useDirection="1" />
+			</attack>
+			<attack point="p2" targetCount="1" cubeMagicPathID="102001813" attacktype="1">
+				<rangeProperty applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty count="0" effectHit="CH/Weapon/LargeSword/Eff_LargeSword_Hit_01.xml" attackMaterial="1000" />
+				<conditionSkill splash="1" level="1" skillID="10200183" delay="100" useDirection="1" />
+			</attack>
+			<attack point="p3" targetCount="1" cubeMagicPathID="102001814" attacktype="1">
+				<rangeProperty applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty count="0" effectHit="CH/Weapon/LargeSword/Eff_LargeSword_Hit_01.xml" attackMaterial="1000" />
+				<conditionSkill splash="1" level="1" skillID="10200183" delay="200" useDirection="1" />
+			</attack>
+		</motion>
+	</level>
+	<level value="11" feature="Old_JobChange_01">
+		<beginCondition probability="1" cooldownTime="1">
+			<stat hp="1" />
+			<weapon lh="0" rh="50" />
+		</beginCondition>
+		<changeSkill originSkillID="10200181" originSkillLevel="11" />
+		<push back="300" />
+		<conditionSkill level="2" skillID="10200032" overlapCount="10" skillTarget="1">
+			<beginCondition probability="1" allowBattleRidingState="1" />
+		</conditionSkill>
+		<motion>
+			<motionProperty sequenceName="Berserker_MoonSmack_03_A" motionEffect="CH/Skill/Berserker/Eff_Berserker_MoonSmack_Cast_03.xml" keyMove="600" />
+			<attack point="p0" targetCount="1" attacktype="1" hitImmuneBreak="5" brokenForce="2" unrideOnHit="1" compulsionType="2">
+				<pauseProperty pauseDuration="0.2" pauseShakeDuration="0.2" pauseAmp="15" />
+				<rangeProperty rangeType="box" distance="450" height="150" width="400" applyTarget="1" />
+				<damageProperty rate="14.31" hitSpeedRate="0.8" hitPauseTime="0.5" effectHit="CH/Weapon/LargeSword/Eff_LargeSword_Hit_01.xml" push="1" pushdistance="150" pushApplyField="1" />
+			</attack>
+			<attack point="p1" targetCount="1" cubeMagicPathID="102001812" attacktype="1">
+				<rangeProperty applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty count="0" effectHit="CH/Weapon/LargeSword/Eff_LargeSword_Hit_01.xml" attackMaterial="1000" />
+				<conditionSkill splash="1" level="1" skillID="10200183" useDirection="1" />
+			</attack>
+			<attack point="p2" targetCount="1" cubeMagicPathID="102001813" attacktype="1">
+				<rangeProperty applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty count="0" effectHit="CH/Weapon/LargeSword/Eff_LargeSword_Hit_01.xml" attackMaterial="1000" />
+				<conditionSkill splash="1" level="1" skillID="10200183" delay="100" useDirection="1" />
+			</attack>
+			<attack point="p3" targetCount="1" cubeMagicPathID="102001814" attacktype="1">
+				<rangeProperty applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty count="0" effectHit="CH/Weapon/LargeSword/Eff_LargeSword_Hit_01.xml" attackMaterial="1000" />
+				<conditionSkill splash="1" level="1" skillID="10200183" delay="200" useDirection="1" />
+			</attack>
+		</motion>
+	</level>
+	<level value="12" feature="Old_JobChange_01">
+		<beginCondition probability="1" cooldownTime="1">
+			<stat hp="1" />
+			<weapon lh="0" rh="50" />
+		</beginCondition>
+		<changeSkill originSkillID="10200181" originSkillLevel="12" />
+		<push back="300" />
+		<conditionSkill level="2" skillID="10200032" overlapCount="10" skillTarget="1">
+			<beginCondition probability="1" allowBattleRidingState="1" />
+		</conditionSkill>
+		<motion>
+			<motionProperty sequenceName="Berserker_MoonSmack_03_A" motionEffect="CH/Skill/Berserker/Eff_Berserker_MoonSmack_Cast_03.xml" keyMove="600" />
+			<attack point="p0" targetCount="1" attacktype="1" hitImmuneBreak="5" brokenForce="2" unrideOnHit="1" compulsionType="2">
+				<pauseProperty pauseDuration="0.2" pauseShakeDuration="0.2" pauseAmp="15" />
+				<rangeProperty rangeType="box" distance="450" height="150" width="400" applyTarget="1" />
+				<damageProperty rate="15.08" hitSpeedRate="0.8" hitPauseTime="0.5" effectHit="CH/Weapon/LargeSword/Eff_LargeSword_Hit_01.xml" push="1" pushdistance="150" pushApplyField="1" />
+			</attack>
+			<attack point="p1" targetCount="1" cubeMagicPathID="102001812" attacktype="1">
+				<rangeProperty applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty count="0" effectHit="CH/Weapon/LargeSword/Eff_LargeSword_Hit_01.xml" attackMaterial="1000" />
+				<conditionSkill splash="1" level="1" skillID="10200183" useDirection="1" />
+			</attack>
+			<attack point="p2" targetCount="1" cubeMagicPathID="102001813" attacktype="1">
+				<rangeProperty applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty count="0" effectHit="CH/Weapon/LargeSword/Eff_LargeSword_Hit_01.xml" attackMaterial="1000" />
+				<conditionSkill splash="1" level="1" skillID="10200183" delay="100" useDirection="1" />
+			</attack>
+			<attack point="p3" targetCount="1" cubeMagicPathID="102001814" attacktype="1">
+				<rangeProperty applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty count="0" effectHit="CH/Weapon/LargeSword/Eff_LargeSword_Hit_01.xml" attackMaterial="1000" />
+				<conditionSkill splash="1" level="1" skillID="10200183" delay="200" useDirection="1" />
+			</attack>
+		</motion>
+	</level>
+</ms2>

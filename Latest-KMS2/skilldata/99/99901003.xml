@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 파싱해서 사용하는 데이터이니 직접 수정하지 마세요 -->
+<ms2 feature="">
+	<basic>
+		<ui attackType="3" />
+		<kinds subType="4" rangeType="2" unrideOnUse="1" />
+		<stateAttr ignoreReduceCooldown="1" />
+	</basic>
+	<level value="1">
+		<beginCondition probability="1" allowBattleRidingState="1" allowMapleSurvival="1">
+			<stat hp="1" />
+		</beginCondition>
+		<autoTargeting autoTargetingMaxDegree="45" />
+		<motion>
+			<motionProperty sequenceName="ObjectWeapon_TypeB_Attack_01_B" motionEffect="Item/Skill/Eff_ObjectWeapon_CommonThrow_Cast_01.xml" holdWeapon="0" />
+			<attack point="p0" targetCount="1" magicPathID="99900965" cubeMagicPathID="999009651" attacktype="3" brokenOffence="1" releaseObjectWeaponOnHit="0">
+				<rangeProperty rangeType="box" distance="450" height="150" width="450" applyTarget="7" />
+				<arrowProperty explosion="1" nonTarget="1" collision="40.000000,20.000000,30.000000" collisionAdd="0.000000,20.000000,10.000000" effect="Item/Skill/Eff_ObjectWeapon_Survival_Magnet_Ball_01.xml" />
+				<damageProperty count="0" attackMaterial="1" />
+				<conditionSkill splash="1" level="1" skillID="99901004" immediateActive="1">
+					<beginCondition probability="1" allowBattleRidingState="1" allowMapleSurvival="1" />
+				</conditionSkill>
+			</attack>
+		</motion>
+	</level>
+</ms2>

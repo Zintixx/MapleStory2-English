@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 파싱해서 사용하는 데이터이니 직접 수정하지 마세요 -->
+<ms2 feature="">
+	<basic>
+		<ui attackType="1" />
+		<kinds element="7" />
+	</basic>
+	<level value="1">
+		<beginCondition probability="1">
+			<stat hp="1" />
+		</beginCondition>
+		<detectProperty rangeType="box" distance="200" rangeAdd="0.000000,150.000000,130.000000" height="200" width="200" />
+		<motion>
+			<motionProperty sequenceName="Attack_01_C" motionEffect="NPC/Skill/ElfTwins/Eff_ElfTwins_Attack_01_C.xml" faceTarget="0" />
+			<attack point="p0" targetCount="10" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+				<rangeProperty rangeType="box" distance="200" rangeAdd="0.000000,150.000000,130.000000" height="200" width="200" applyTarget="1" castTarget="1" />
+				<arrowProperty nonTarget="1" effect="NPC/Skill/Temp/Eff_Temp.xml" />
+				<damageProperty rate="2" attackMaterial="1" />
+			</attack>
+		</motion>
+		<motion>
+			<motionProperty sequenceName="Attack_02_C" motionEffect="NPC/Skill/ElfTwins/Eff_ElfTwins_Attack_02_C.xml" movedistance="180" ignoreCollisionGroups="4" faceTarget="0" />
+			<attack point="p0" targetCount="10" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+				<rangeProperty rangeType="box" distance="250" rangeAdd="0.000000,150.000000,130.000000" height="200" width="250" applyTarget="1" castTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="2" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="400" pushduration="0.2" pushEaseType="1" pushFall="1" attackMaterial="1" />
+				<conditionSkill level="1" skillID="50000004" skillTarget="1" skillOwner="2" />
+			</attack>
+		</motion>
+	</level>
+	<level value="2">
+		<beginCondition probability="1">
+			<stat hp="1" />
+		</beginCondition>
+		<detectProperty rangeType="box" distance="150" height="200" width="150" />
+		<motion>
+			<motionProperty sequenceName="Attack_02_B" sequenceSpeed="2" motionEffect="NPC/Skill/ElfTwins/Eff_ElfTwins_Attack_02_B.xml" ignoreCollisionGroups="4" faceTarget="0" />
+			<attack point="p0" targetCount="1" magicPathID="5041" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+				<rangeProperty rangeType="box" distance="150" height="200" width="150" applyTarget="1" castTarget="1" />
+				<arrowProperty nonTarget="1" bounceType="3" bounceCount="5" collision="300.000000,200.000000,150.000000" collisionAdd="0.000000,200.000000,180.000000" effect="NPC/Skill/Temp/Eff_Temp.xml" />
+				<damageProperty rate="0.8" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
+			</attack>
+		</motion>
+	</level>
+</ms2>

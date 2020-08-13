@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 파싱해서 사용하는 데이터이니 직접 수정하지 마세요 -->
+<ms2 feature="">
+	<basic>
+		<ui attackType="1" />
+	</basic>
+	<level value="11">
+		<beginCondition probability="1">
+			<stat hp="1" />
+		</beginCondition>
+		<detectProperty rangeType="cylinder" distance="500" rangeAdd="0.000000,0.000000,50.000000" height="250" />
+		<motion>
+			<motionProperty sequenceName="Attack_Idle_Event" sequenceSpeed="0.5" faceTarget="0" doesPlayIdleOnSkillEnd="false" />
+			<attack point="p0" direction="0" attacktype="1" unrideOnHit="1">
+				<rangeProperty rangeType="cylinder" distance="1100" rangeAdd="0.000000,0.000000,50.000000" height="410" applyTarget="1" castTarget="1" />
+				<arrowProperty nonTarget="1" effect="NPC/Skill/Temp/Eff_Temp.xml" />
+				<damageProperty count="0" attackMaterial="1" />
+			</attack>
+		</motion>
+	</level>
+	<level value="12">
+		<beginCondition probability="1">
+			<stat hp="1" />
+		</beginCondition>
+		<motion>
+			<motionProperty sequenceName="Teleport_Event" motionEffect="NPC/Skill/IshuraRbladerDark/Eff_IshuraRbladerDark_Teleport_A.xml" faceTarget="0" doesPlayIdleOnSkillEnd="false" />
+			<attack point="p0" direction="0" attacktype="1" unrideOnHit="1">
+				<rangeProperty rangeType="cylinder" distance="1100" rangeAdd="0.000000,0.000000,50.000000" height="410" applyTarget="1" castTarget="1" />
+				<arrowProperty nonTarget="1" effect="NPC/Skill/Temp/Eff_Temp.xml" />
+				<damageProperty count="0" attackMaterial="1" />
+			</attack>
+		</motion>
+	</level>
+	<level value="21">
+		<beginCondition probability="1">
+			<stat hp="1" />
+		</beginCondition>
+		<motion>
+			<motionProperty sequenceName="Bore_Event" faceTarget="0" doesPlayIdleOnSkillEnd="false" />
+			<attack point="p0" direction="0" attacktype="1" unrideOnHit="1">
+				<rangeProperty rangeType="cylinder" distance="1100" rangeAdd="0.000000,0.000000,50.000000" height="410" applyTarget="1" castTarget="1" />
+				<arrowProperty nonTarget="1" effect="NPC/Skill/Temp/Eff_Temp.xml" />
+				<damageProperty count="0" attackMaterial="1" />
+			</attack>
+		</motion>
+	</level>
+	<level value="22">
+		<beginCondition probability="1">
+			<stat hp="1" />
+		</beginCondition>
+		<detectProperty rangeType="cylinder" distance="430" rangeAdd="0.000000,0.000000,50.000000" height="250" />
+		<motion>
+			<motionProperty sequenceName="Jump_Up_Event" motionEffect="NPC/Skill/RenduebianRbladerDark/Eff_RenduebianRbladerDark_Teleport_A.xml" faceTarget="0" doesPlayIdleOnSkillEnd="false" />
+			<attack point="p0" direction="0" attacktype="1" unrideOnHit="1">
+				<rangeProperty rangeType="cylinder" distance="1100" rangeAdd="0.000000,0.000000,50.000000" height="410" applyTarget="1" castTarget="1" />
+				<arrowProperty nonTarget="1" effect="NPC/Skill/Temp/Eff_Temp.xml" />
+				<damageProperty count="0" attackMaterial="1" />
+			</attack>
+		</motion>
+	</level>
+	<level value="31">
+		<beginCondition probability="1">
+			<stat hp="1" />
+		</beginCondition>
+		<detectProperty rangeType="cylinder" distance="450" rangeAdd="0.000000,0.000000,50.000000" height="250" />
+		<motion>
+			<motionProperty sequenceName="Bore_Event" faceTarget="0" doesPlayIdleOnSkillEnd="false" />
+			<attack point="p0" direction="0" attacktype="1" unrideOnHit="1">
+				<rangeProperty rangeType="box" distance="500" rangeAdd="0.000000,0.000000,50.000000" height="250" width="500" applyTarget="1" castTarget="1" />
+				<arrowProperty nonTarget="1" effect="NPC/Skill/Temp/Eff_Temp.xml" />
+				<damageProperty count="0" attackMaterial="1" />
+			</attack>
+		</motion>
+	</level>
+	<level value="32">
+		<beginCondition probability="1">
+			<stat hp="1" />
+		</beginCondition>
+		<detectProperty rangeType="cylinder" distance="2400" rangeAdd="0.000000,0.000000,320.000000" height="120" />
+		<motion>
+			<motionProperty sequenceName="Jump_Ready_Event" motionEffect="NPC/Skill/YuperiaRbladerDark/Eff_YuperiaRbladerDark_Teleport_A.xml" faceTarget="0" doesPlayIdleOnSkillEnd="false" />
+			<attack point="p0" direction="0" attacktype="1" unrideOnHit="1">
+				<rangeProperty rangeType="cylinder" distance="2400" rangeAdd="0.000000,0.000000,320.000000" height="120" applyTarget="1" castTarget="1" />
+				<arrowProperty nonTarget="1" effect="NPC/Skill/Temp/Eff_Temp.xml" />
+				<damageProperty count="0" attackMaterial="1" />
+			</attack>
+		</motion>
+	</level>
+	<level value="33">
+		<beginCondition probability="1">
+			<stat hp="1" />
+		</beginCondition>
+		<detectProperty rangeType="cylinder" distance="2400" rangeAdd="0.000000,0.000000,320.000000" height="120" />
+		<motion>
+			<motionProperty sequenceName="Jump_Ready_A" motionEffect="NPC/Skill/YuperiaRbladerDark/Eff_YuperiaRbladerDark_Teleport_A.xml" faceTarget="0" />
+			<attack point="p0" direction="0" attacktype="1" unrideOnHit="1">
+				<rangeProperty rangeType="cylinder" distance="2400" rangeAdd="0.000000,0.000000,320.000000" height="120" applyTarget="1" castTarget="1" />
+				<arrowProperty nonTarget="1" effect="NPC/Skill/Temp/Eff_Temp.xml" />
+				<damageProperty count="0" attackMaterial="1" />
+			</attack>
+		</motion>
+	</level>
+</ms2>

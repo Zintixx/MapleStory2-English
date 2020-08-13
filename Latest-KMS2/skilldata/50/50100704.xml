@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 파싱해서 사용하는 데이터이니 직접 수정하지 마세요 -->
+<ms2 feature="">
+	<basic>
+		<ui attackType="2" />
+		<kinds element="5" />
+	</basic>
+	<level value="1">
+		<beginCondition probability="1">
+			<stat hp="1" />
+		</beginCondition>
+		<conditionSkill level="1" skillID="50000238" skillTarget="1">
+			<beginCondition probability="1" allowBattleRidingState="1" />
+		</conditionSkill>
+		<motion>
+			<motionProperty sequenceName="Attack_01_E" motionEffect="NPC/Skill/CaptainHookFish/Eff_CaptainHookFish_Attack_01_E.xml" faceTarget="0" />
+			<attack point="p0" targetCount="50" attacktype="2" unrideOnHit="1" compulsionType="3">
+				<rangeProperty rangeType="cylinder" distance="5000" rangeAdd="0.000000,0.000000,100.000000" height="2500" applyTarget="1" castTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" damageByTargetMaxHP="0.1" attackMaterial="106" />
+				<conditionSkill level="1" skillID="50000017" skillTarget="2" skillOwner="1" />
+			</attack>
+		</motion>
+	</level>
+	<level value="2">
+		<beginCondition probability="1">
+			<stat hp="1" />
+		</beginCondition>
+		<conditionSkill level="1" skillID="50000238" skillTarget="1">
+			<beginCondition probability="1" allowBattleRidingState="1" />
+		</conditionSkill>
+		<motion>
+			<motionProperty sequenceName="Attack_01_J" sequenceSpeed="0.5" motionEffect="NPC/Skill/CaptainHookFish/Eff_CaptainHookFish_Attack_01_J.xml" faceTarget="0" />
+			<attack point="p0" attacktype="2" hitImmuneBreak="1" unrideOnHit="1">
+				<rangeProperty rangeType="cylinder" distance="5000" rangeAdd="0.000000,0.000000,100.000000" height="2500" applyTarget="1" castTarget="1" />
+				<arrowProperty nonTarget="1" effect="NPC/Skill/Temp/Eff_Temp.xml" />
+				<damageProperty count="0" rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="106" />
+			</attack>
+		</motion>
+		<motion>
+			<motionProperty sequenceName="Attack_02_J" motionEffect="NPC/Skill/CaptainHookFish/Eff_CaptainHookFish_Attack_02_J.xml" faceTarget="0" />
+			<attack point="p0" targetCount="50" attacktype="2" unrideOnHit="1" compulsionType="3">
+				<rangeProperty rangeType="cylinder" distance="5000" rangeAdd="0.000000,0.000000,100.000000" height="2500" applyTarget="1" castTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" damageByTargetMaxHP="0.1" attackMaterial="106" />
+				<conditionSkill level="1" skillID="50000017" skillTarget="2" skillOwner="1" />
+			</attack>
+		</motion>
+	</level>
+	<level value="3">
+		<beginCondition probability="1">
+			<stat hp="1" />
+		</beginCondition>
+		<conditionSkill level="2" skillID="50000238" skillTarget="1">
+			<beginCondition probability="1" allowBattleRidingState="1" />
+		</conditionSkill>
+		<motion>
+			<motionProperty sequenceName="Attack_01_J" sequenceSpeed="0.4" motionEffect="NPC/Skill/CaptainHookFish/Eff_CaptainHookFish_Attack_01_J_Chaos.xml" faceTarget="0" />
+			<attack point="p0" attacktype="2" hitImmuneBreak="1" unrideOnHit="1">
+				<rangeProperty rangeType="cylinder" distance="5000" rangeAdd="0.000000,0.000000,990.000000" height="2500" applyTarget="1" castTarget="1" />
+				<arrowProperty nonTarget="1" effect="NPC/Skill/Temp/Eff_Temp.xml" />
+				<damageProperty count="0" rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="106" />
+			</attack>
+		</motion>
+		<motion>
+			<motionProperty sequenceName="Attack_02_J" motionEffect="NPC/Skill/CaptainHookFish/Eff_CaptainHookFish_Attack_02_J_Chaos.xml" faceTarget="0" />
+			<attack point="p0" targetCount="50" attacktype="2" unrideOnHit="1" compulsionType="3">
+				<rangeProperty rangeType="cylinder" distance="5000" rangeAdd="0.000000,0.000000,990.000000" height="2500" applyTarget="1" castTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" damageByTargetMaxHP="0.1" attackMaterial="106" />
+				<conditionSkill level="1" skillID="50000017" skillTarget="2" skillOwner="1" />
+			</attack>
+		</motion>
+	</level>
+</ms2>

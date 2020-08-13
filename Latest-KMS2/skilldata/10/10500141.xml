@@ -1,0 +1,465 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 파싱해서 사용하는 데이터이니 직접 수정하지 마세요 -->
+<ms2 feature="">
+	<basic>
+		<ui icon="./Data/Resource/Image/skill/icon/10500141.png" attackType="1" showCastingBar="1" paramCastingBar="&lt;v startFrame=&quot;show&quot; color=&quot;green&quot; text=&quot;s_character_skill_charging&quot; ease=&quot;1&quot;/&gt;" />
+		<kinds subType="2" rangeType="2" continue="1" unrideOnUse="1" />
+		<stateAttr superArmor="3" autoTargeting="0" keyIsDown="1" useDefaultSkill="1" cooldownGroupID="10500141" clearCooldownFromPVPZone="1" />
+	</basic>
+	<level value="1" feature="CharacterBalance_01">
+		<beginCondition probability="1" cooldownTime="13" useCoolDownShowUI="1">
+			<requireEffect code="10500111" />
+			<stat hp="1" />
+			<weapon lh="0" rh="51" />
+		</beginCondition>
+		<changeSkill changeSkillCheckEffectID="10500161" changeSkillCheckEffectLevel="0" changeSkillCheckEffectOverlapCount="1" changeSkillID="10500144" changeSkillLevel="1" />
+		<push back="200" />
+		<upgrade level="43" skillIDs="10500021" skillLevels="8" />
+		<combo chargingSkill="1" inputSkill="10500141" outputSkill="10500142" />
+		<motion>
+			<motionProperty sequenceName="Ranger_ScrewDriveShot_A" loopEffect="CH/Skill/Ranger/Eff_Ranger_ScrewDriveShot_Loop_01.xml" strTagEffects="e0=CH/Skill/Ranger/Eff_Ranger_ScrewDriveShot_Cast_01.xml,e1=CH/Skill/Ranger/Eff_Ranger_ScrewDriveShot_Cast_02.xml" loopCount="5" />
+			<attack point="p0" targetCount="1" magicPathID="10500141" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="3" unrideOnHit="1">
+				<rangeProperty rangeType="frustum" distance="1200" height="250" width="300" endWidth="750" applyTarget="1" />
+				<arrowProperty rayPhysxTest="1" nonTarget="1" bounceType="3" bounceCount="20" collision="150.000000,200.000000,100.000000" collisionAdd="0.000000,0.000000,50.000000" effect="CH/Skill/Ranger/Eff_Ranger_ScrewDriveShot_Ball_01.xml" effectRemain="CH/Skill/Ranger/Eff_Ranger_ScrewDriveShot_Remain_01.xml" />
+				<damageProperty rate="3.74" hitPauseTime="0.2" push="1" pushdistance="25" pushduration="0.1" pushEaseType="1" attackMaterial="1" />
+			</attack>
+		</motion>
+	</level>
+	<level value="2" feature="CharacterBalance_01">
+		<beginCondition probability="1" cooldownTime="13" useCoolDownShowUI="1">
+			<requireEffect code="10500111" />
+			<stat hp="1" />
+			<weapon lh="0" rh="51" />
+		</beginCondition>
+		<changeSkill changeSkillCheckEffectID="10500161" changeSkillCheckEffectLevel="0" changeSkillCheckEffectOverlapCount="1" changeSkillID="10500144" changeSkillLevel="2" />
+		<push back="200" />
+		<upgrade level="45" skillIDs="10500021" skillLevels="8" />
+		<combo chargingSkill="1" inputSkill="10500141" outputSkill="10500142" />
+		<motion>
+			<motionProperty sequenceName="Ranger_ScrewDriveShot_A" loopEffect="CH/Skill/Ranger/Eff_Ranger_ScrewDriveShot_Loop_01.xml" strTagEffects="e0=CH/Skill/Ranger/Eff_Ranger_ScrewDriveShot_Cast_01.xml,e1=CH/Skill/Ranger/Eff_Ranger_ScrewDriveShot_Cast_02.xml" loopCount="5" />
+			<attack point="p0" targetCount="1" magicPathID="10500141" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="3" unrideOnHit="1">
+				<rangeProperty rangeType="frustum" distance="1200" height="250" width="300" endWidth="750" applyTarget="1" />
+				<arrowProperty rayPhysxTest="1" nonTarget="1" bounceType="3" bounceCount="20" collision="150.000000,200.000000,100.000000" collisionAdd="0.000000,0.000000,50.000000" effect="CH/Skill/Ranger/Eff_Ranger_ScrewDriveShot_Ball_01.xml" effectRemain="CH/Skill/Ranger/Eff_Ranger_ScrewDriveShot_Remain_01.xml" />
+				<damageProperty rate="4.01" hitPauseTime="0.2" push="1" pushdistance="25" pushduration="0.1" pushEaseType="1" attackMaterial="1" />
+			</attack>
+		</motion>
+	</level>
+	<level value="3" feature="CharacterBalance_01">
+		<beginCondition probability="1" cooldownTime="13" useCoolDownShowUI="1">
+			<requireEffect code="10500111" />
+			<stat hp="1" />
+			<weapon lh="0" rh="51" />
+		</beginCondition>
+		<changeSkill changeSkillCheckEffectID="10500161" changeSkillCheckEffectLevel="0" changeSkillCheckEffectOverlapCount="1" changeSkillID="10500144" changeSkillLevel="3" />
+		<push back="200" />
+		<upgrade level="47" skillIDs="10500021" skillLevels="8" />
+		<combo chargingSkill="1" inputSkill="10500141" outputSkill="10500142" />
+		<motion>
+			<motionProperty sequenceName="Ranger_ScrewDriveShot_A" loopEffect="CH/Skill/Ranger/Eff_Ranger_ScrewDriveShot_Loop_01.xml" strTagEffects="e0=CH/Skill/Ranger/Eff_Ranger_ScrewDriveShot_Cast_01.xml,e1=CH/Skill/Ranger/Eff_Ranger_ScrewDriveShot_Cast_02.xml" loopCount="5" />
+			<attack point="p0" targetCount="1" magicPathID="10500141" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="3" unrideOnHit="1">
+				<rangeProperty rangeType="frustum" distance="1200" height="250" width="300" endWidth="750" applyTarget="1" />
+				<arrowProperty rayPhysxTest="1" nonTarget="1" bounceType="3" bounceCount="20" collision="150.000000,200.000000,100.000000" collisionAdd="0.000000,0.000000,50.000000" effect="CH/Skill/Ranger/Eff_Ranger_ScrewDriveShot_Ball_01.xml" effectRemain="CH/Skill/Ranger/Eff_Ranger_ScrewDriveShot_Remain_01.xml" />
+				<damageProperty rate="4.28" hitPauseTime="0.2" push="1" pushdistance="25" pushduration="0.1" pushEaseType="1" attackMaterial="1" />
+			</attack>
+		</motion>
+	</level>
+	<level value="4" feature="CharacterBalance_01">
+		<beginCondition probability="1" cooldownTime="13" useCoolDownShowUI="1">
+			<requireEffect code="10500111" />
+			<stat hp="1" />
+			<weapon lh="0" rh="51" />
+		</beginCondition>
+		<changeSkill changeSkillCheckEffectID="10500161" changeSkillCheckEffectLevel="0" changeSkillCheckEffectOverlapCount="1" changeSkillID="10500144" changeSkillLevel="4" />
+		<push back="200" />
+		<upgrade level="49" skillIDs="10500021" skillLevels="8" />
+		<combo chargingSkill="1" inputSkill="10500141" outputSkill="10500142" />
+		<motion>
+			<motionProperty sequenceName="Ranger_ScrewDriveShot_A" loopEffect="CH/Skill/Ranger/Eff_Ranger_ScrewDriveShot_Loop_01.xml" strTagEffects="e0=CH/Skill/Ranger/Eff_Ranger_ScrewDriveShot_Cast_01.xml,e1=CH/Skill/Ranger/Eff_Ranger_ScrewDriveShot_Cast_02.xml" loopCount="5" />
+			<attack point="p0" targetCount="1" magicPathID="10500141" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="3" unrideOnHit="1">
+				<rangeProperty rangeType="frustum" distance="1200" height="250" width="300" endWidth="750" applyTarget="1" />
+				<arrowProperty rayPhysxTest="1" nonTarget="1" bounceType="3" bounceCount="20" collision="150.000000,200.000000,100.000000" collisionAdd="0.000000,0.000000,50.000000" effect="CH/Skill/Ranger/Eff_Ranger_ScrewDriveShot_Ball_01.xml" effectRemain="CH/Skill/Ranger/Eff_Ranger_ScrewDriveShot_Remain_01.xml" />
+				<damageProperty rate="4.55" hitPauseTime="0.2" push="1" pushdistance="25" pushduration="0.1" pushEaseType="1" attackMaterial="1" />
+			</attack>
+		</motion>
+	</level>
+	<level value="5" feature="CharacterBalance_01">
+		<beginCondition probability="1" cooldownTime="13" useCoolDownShowUI="1">
+			<requireEffect code="10500111" />
+			<stat hp="1" />
+			<weapon lh="0" rh="51" />
+		</beginCondition>
+		<changeSkill changeSkillCheckEffectID="10500161" changeSkillCheckEffectLevel="0" changeSkillCheckEffectOverlapCount="1" changeSkillID="10500144" changeSkillLevel="5" />
+		<push back="200" />
+		<upgrade level="51" skillIDs="10500021" skillLevels="8" />
+		<combo chargingSkill="1" inputSkill="10500141" outputSkill="10500142" />
+		<motion>
+			<motionProperty sequenceName="Ranger_ScrewDriveShot_A" loopEffect="CH/Skill/Ranger/Eff_Ranger_ScrewDriveShot_Loop_01.xml" strTagEffects="e0=CH/Skill/Ranger/Eff_Ranger_ScrewDriveShot_Cast_01.xml,e1=CH/Skill/Ranger/Eff_Ranger_ScrewDriveShot_Cast_02.xml" loopCount="5" />
+			<attack point="p0" targetCount="1" magicPathID="10500141" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="3" unrideOnHit="1">
+				<rangeProperty rangeType="frustum" distance="1200" height="250" width="300" endWidth="750" applyTarget="1" />
+				<arrowProperty rayPhysxTest="1" nonTarget="1" bounceType="3" bounceCount="20" collision="150.000000,200.000000,100.000000" collisionAdd="0.000000,0.000000,50.000000" effect="CH/Skill/Ranger/Eff_Ranger_ScrewDriveShot_Ball_01.xml" effectRemain="CH/Skill/Ranger/Eff_Ranger_ScrewDriveShot_Remain_01.xml" />
+				<damageProperty rate="4.82" hitPauseTime="0.2" push="1" pushdistance="25" pushduration="0.1" pushEaseType="1" attackMaterial="1" />
+			</attack>
+		</motion>
+	</level>
+	<level value="6" feature="CharacterBalance_01">
+		<beginCondition probability="1" cooldownTime="13" useCoolDownShowUI="1">
+			<requireEffect code="10500111" />
+			<stat hp="1" />
+			<weapon lh="0" rh="51" />
+		</beginCondition>
+		<changeSkill changeSkillCheckEffectID="10500161" changeSkillCheckEffectLevel="0" changeSkillCheckEffectOverlapCount="1" changeSkillID="10500144" changeSkillLevel="6" />
+		<push back="200" />
+		<upgrade level="53" skillIDs="10500021" skillLevels="8" />
+		<combo chargingSkill="1" inputSkill="10500141" outputSkill="10500142" />
+		<motion>
+			<motionProperty sequenceName="Ranger_ScrewDriveShot_A" loopEffect="CH/Skill/Ranger/Eff_Ranger_ScrewDriveShot_Loop_01.xml" strTagEffects="e0=CH/Skill/Ranger/Eff_Ranger_ScrewDriveShot_Cast_01.xml,e1=CH/Skill/Ranger/Eff_Ranger_ScrewDriveShot_Cast_02.xml" loopCount="5" />
+			<attack point="p0" targetCount="1" magicPathID="10500141" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="3" unrideOnHit="1">
+				<rangeProperty rangeType="frustum" distance="1200" height="250" width="300" endWidth="750" applyTarget="1" />
+				<arrowProperty rayPhysxTest="1" nonTarget="1" bounceType="3" bounceCount="20" collision="150.000000,200.000000,100.000000" collisionAdd="0.000000,0.000000,50.000000" effect="CH/Skill/Ranger/Eff_Ranger_ScrewDriveShot_Ball_01.xml" effectRemain="CH/Skill/Ranger/Eff_Ranger_ScrewDriveShot_Remain_01.xml" />
+				<damageProperty rate="5.09" hitPauseTime="0.2" push="1" pushdistance="25" pushduration="0.1" pushEaseType="1" attackMaterial="1" />
+			</attack>
+		</motion>
+	</level>
+	<level value="7" feature="CharacterBalance_01">
+		<beginCondition probability="1" cooldownTime="13" useCoolDownShowUI="1">
+			<requireEffect code="10500111" />
+			<stat hp="1" />
+			<weapon lh="0" rh="51" />
+		</beginCondition>
+		<changeSkill changeSkillCheckEffectID="10500161" changeSkillCheckEffectLevel="0" changeSkillCheckEffectOverlapCount="1" changeSkillID="10500144" changeSkillLevel="7" />
+		<push back="200" />
+		<upgrade level="55" skillIDs="10500021" skillLevels="8" />
+		<combo chargingSkill="1" inputSkill="10500141" outputSkill="10500142" />
+		<motion>
+			<motionProperty sequenceName="Ranger_ScrewDriveShot_A" loopEffect="CH/Skill/Ranger/Eff_Ranger_ScrewDriveShot_Loop_01.xml" strTagEffects="e0=CH/Skill/Ranger/Eff_Ranger_ScrewDriveShot_Cast_01.xml,e1=CH/Skill/Ranger/Eff_Ranger_ScrewDriveShot_Cast_02.xml" loopCount="5" />
+			<attack point="p0" targetCount="1" magicPathID="10500141" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="3" unrideOnHit="1">
+				<rangeProperty rangeType="frustum" distance="1200" height="250" width="300" endWidth="750" applyTarget="1" />
+				<arrowProperty rayPhysxTest="1" nonTarget="1" bounceType="3" bounceCount="20" collision="150.000000,200.000000,100.000000" collisionAdd="0.000000,0.000000,50.000000" effect="CH/Skill/Ranger/Eff_Ranger_ScrewDriveShot_Ball_01.xml" effectRemain="CH/Skill/Ranger/Eff_Ranger_ScrewDriveShot_Remain_01.xml" />
+				<damageProperty rate="5.36" hitPauseTime="0.2" push="1" pushdistance="25" pushduration="0.1" pushEaseType="1" attackMaterial="1" />
+			</attack>
+		</motion>
+	</level>
+	<level value="8" feature="CharacterBalance_01">
+		<beginCondition probability="1" cooldownTime="13" useCoolDownShowUI="1">
+			<requireEffect code="10500111" />
+			<stat hp="1" />
+			<weapon lh="0" rh="51" />
+		</beginCondition>
+		<changeSkill changeSkillCheckEffectID="10500161" changeSkillCheckEffectLevel="0" changeSkillCheckEffectOverlapCount="1" changeSkillID="10500144" changeSkillLevel="8" />
+		<push back="200" />
+		<upgrade level="57" skillIDs="10500021" skillLevels="8" />
+		<combo chargingSkill="1" inputSkill="10500141" outputSkill="10500142" />
+		<motion>
+			<motionProperty sequenceName="Ranger_ScrewDriveShot_A" loopEffect="CH/Skill/Ranger/Eff_Ranger_ScrewDriveShot_Loop_01.xml" strTagEffects="e0=CH/Skill/Ranger/Eff_Ranger_ScrewDriveShot_Cast_01.xml,e1=CH/Skill/Ranger/Eff_Ranger_ScrewDriveShot_Cast_02.xml" loopCount="5" />
+			<attack point="p0" targetCount="1" magicPathID="10500141" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="3" unrideOnHit="1">
+				<rangeProperty rangeType="frustum" distance="1200" height="250" width="300" endWidth="750" applyTarget="1" />
+				<arrowProperty rayPhysxTest="1" nonTarget="1" bounceType="3" bounceCount="20" collision="150.000000,200.000000,100.000000" collisionAdd="0.000000,0.000000,50.000000" effect="CH/Skill/Ranger/Eff_Ranger_ScrewDriveShot_Ball_01.xml" effectRemain="CH/Skill/Ranger/Eff_Ranger_ScrewDriveShot_Remain_01.xml" />
+				<damageProperty rate="5.63" hitPauseTime="0.2" push="1" pushdistance="25" pushduration="0.1" pushEaseType="1" attackMaterial="1" />
+			</attack>
+		</motion>
+	</level>
+	<level value="9" feature="CharacterBalance_01">
+		<beginCondition probability="1" cooldownTime="13" useCoolDownShowUI="1">
+			<requireEffect code="10500111" />
+			<stat hp="1" />
+			<weapon lh="0" rh="51" />
+		</beginCondition>
+		<changeSkill changeSkillCheckEffectID="10500161" changeSkillCheckEffectLevel="0" changeSkillCheckEffectOverlapCount="1" changeSkillID="10500144" changeSkillLevel="9" />
+		<push back="200" />
+		<upgrade level="59" skillIDs="10500021" skillLevels="8" />
+		<combo chargingSkill="1" inputSkill="10500141" outputSkill="10500142" />
+		<motion>
+			<motionProperty sequenceName="Ranger_ScrewDriveShot_A" loopEffect="CH/Skill/Ranger/Eff_Ranger_ScrewDriveShot_Loop_01.xml" strTagEffects="e0=CH/Skill/Ranger/Eff_Ranger_ScrewDriveShot_Cast_01.xml,e1=CH/Skill/Ranger/Eff_Ranger_ScrewDriveShot_Cast_02.xml" loopCount="5" />
+			<attack point="p0" targetCount="1" magicPathID="10500141" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="3" unrideOnHit="1">
+				<rangeProperty rangeType="frustum" distance="1200" height="250" width="300" endWidth="750" applyTarget="1" />
+				<arrowProperty rayPhysxTest="1" nonTarget="1" bounceType="3" bounceCount="20" collision="150.000000,200.000000,100.000000" collisionAdd="0.000000,0.000000,50.000000" effect="CH/Skill/Ranger/Eff_Ranger_ScrewDriveShot_Ball_01.xml" effectRemain="CH/Skill/Ranger/Eff_Ranger_ScrewDriveShot_Remain_01.xml" />
+				<damageProperty rate="5.9" hitPauseTime="0.2" push="1" pushdistance="25" pushduration="0.1" pushEaseType="1" attackMaterial="1" />
+			</attack>
+		</motion>
+	</level>
+	<level value="10" feature="CharacterBalance_01">
+		<beginCondition probability="1" cooldownTime="13" useCoolDownShowUI="1">
+			<requireEffect code="10500111" />
+			<stat hp="1" />
+			<weapon lh="0" rh="51" />
+		</beginCondition>
+		<changeSkill changeSkillCheckEffectID="10500161" changeSkillCheckEffectLevel="0" changeSkillCheckEffectOverlapCount="1" changeSkillID="10500144" changeSkillLevel="10" />
+		<push back="200" />
+		<upgrade level="61" skillIDs="10500021" skillLevels="8" />
+		<combo chargingSkill="1" inputSkill="10500141" outputSkill="10500142" />
+		<motion>
+			<motionProperty sequenceName="Ranger_ScrewDriveShot_A" loopEffect="CH/Skill/Ranger/Eff_Ranger_ScrewDriveShot_Loop_01.xml" strTagEffects="e0=CH/Skill/Ranger/Eff_Ranger_ScrewDriveShot_Cast_01.xml,e1=CH/Skill/Ranger/Eff_Ranger_ScrewDriveShot_Cast_02.xml" loopCount="5" />
+			<attack point="p0" targetCount="1" magicPathID="10500141" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="3" unrideOnHit="1">
+				<rangeProperty rangeType="frustum" distance="1200" height="250" width="300" endWidth="750" applyTarget="1" />
+				<arrowProperty rayPhysxTest="1" nonTarget="1" bounceType="3" bounceCount="20" collision="150.000000,200.000000,100.000000" collisionAdd="0.000000,0.000000,50.000000" effect="CH/Skill/Ranger/Eff_Ranger_ScrewDriveShot_Ball_01.xml" effectRemain="CH/Skill/Ranger/Eff_Ranger_ScrewDriveShot_Remain_01.xml" />
+				<damageProperty rate="6.17" hitPauseTime="0.2" push="1" pushdistance="25" pushduration="0.1" pushEaseType="1" attackMaterial="1" />
+			</attack>
+		</motion>
+	</level>
+	<level value="11" feature="CharacterBalance_01">
+		<beginCondition probability="1" cooldownTime="13" useCoolDownShowUI="1">
+			<requireEffect code="10500111" />
+			<stat hp="1" />
+			<weapon lh="0" rh="51" />
+		</beginCondition>
+		<changeSkill changeSkillCheckEffectID="10500161" changeSkillCheckEffectLevel="0" changeSkillCheckEffectOverlapCount="1" changeSkillID="10500144" changeSkillLevel="11" />
+		<push back="200" />
+		<upgrade level="63" skillIDs="10500021" skillLevels="8" />
+		<combo chargingSkill="1" inputSkill="10500141" outputSkill="10500142" />
+		<motion>
+			<motionProperty sequenceName="Ranger_ScrewDriveShot_A" loopEffect="CH/Skill/Ranger/Eff_Ranger_ScrewDriveShot_Loop_01.xml" strTagEffects="e0=CH/Skill/Ranger/Eff_Ranger_ScrewDriveShot_Cast_01.xml,e1=CH/Skill/Ranger/Eff_Ranger_ScrewDriveShot_Cast_02.xml" loopCount="5" />
+			<attack point="p0" targetCount="1" magicPathID="10500141" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="3" unrideOnHit="1">
+				<rangeProperty rangeType="frustum" distance="1200" height="250" width="300" endWidth="750" applyTarget="1" />
+				<arrowProperty rayPhysxTest="1" nonTarget="1" bounceType="3" bounceCount="20" collision="150.000000,200.000000,100.000000" collisionAdd="0.000000,0.000000,50.000000" effect="CH/Skill/Ranger/Eff_Ranger_ScrewDriveShot_Ball_01.xml" effectRemain="CH/Skill/Ranger/Eff_Ranger_ScrewDriveShot_Remain_01.xml" />
+				<damageProperty rate="6.44" hitPauseTime="0.2" push="1" pushdistance="25" pushduration="0.1" pushEaseType="1" attackMaterial="1" />
+			</attack>
+		</motion>
+	</level>
+	<level value="12" feature="CharacterBalance_01">
+		<beginCondition probability="1" cooldownTime="13" useCoolDownShowUI="1">
+			<requireEffect code="10500111" />
+			<stat hp="1" />
+			<weapon lh="0" rh="51" />
+		</beginCondition>
+		<changeSkill changeSkillCheckEffectID="10500161" changeSkillCheckEffectLevel="0" changeSkillCheckEffectOverlapCount="1" changeSkillID="10500144" changeSkillLevel="12" />
+		<push back="200" />
+		<upgrade level="65" skillIDs="10500021" skillLevels="8" />
+		<combo chargingSkill="1" inputSkill="10500141" outputSkill="10500142" />
+		<motion>
+			<motionProperty sequenceName="Ranger_ScrewDriveShot_A" loopEffect="CH/Skill/Ranger/Eff_Ranger_ScrewDriveShot_Loop_01.xml" strTagEffects="e0=CH/Skill/Ranger/Eff_Ranger_ScrewDriveShot_Cast_01.xml,e1=CH/Skill/Ranger/Eff_Ranger_ScrewDriveShot_Cast_02.xml" loopCount="5" />
+			<attack point="p0" targetCount="1" magicPathID="10500141" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="3" unrideOnHit="1">
+				<rangeProperty rangeType="frustum" distance="1200" height="250" width="300" endWidth="750" applyTarget="1" />
+				<arrowProperty rayPhysxTest="1" nonTarget="1" bounceType="3" bounceCount="20" collision="150.000000,200.000000,100.000000" collisionAdd="0.000000,0.000000,50.000000" effect="CH/Skill/Ranger/Eff_Ranger_ScrewDriveShot_Ball_01.xml" effectRemain="CH/Skill/Ranger/Eff_Ranger_ScrewDriveShot_Remain_01.xml" />
+				<damageProperty rate="6.71" hitPauseTime="0.2" push="1" pushdistance="25" pushduration="0.1" pushEaseType="1" attackMaterial="1" />
+			</attack>
+		</motion>
+	</level>
+	<level value="1">
+		<beginCondition probability="1" cooldownTime="13" useCoolDownShowUI="1">
+			<requireEffect code="10500111" />
+			<stat hp="1" />
+			<weapon lh="0" rh="51" />
+		</beginCondition>
+		<changeSkill changeSkillCheckEffectID="10500161" changeSkillCheckEffectLevel="0" changeSkillCheckEffectOverlapCount="1" changeSkillID="10500144" changeSkillLevel="1" />
+		<push back="200" />
+		<upgrade level="43" skillIDs="10500021" skillLevels="8" />
+		<combo chargingSkill="1" inputSkill="10500141" outputSkill="10500142" />
+		<motion>
+			<motionProperty sequenceName="Ranger_ScrewDriveShot_A" loopEffect="CH/Skill/Ranger/Eff_Ranger_ScrewDriveShot_Loop_01.xml" strTagEffects="e0=CH/Skill/Ranger/Eff_Ranger_ScrewDriveShot_Cast_01.xml,e1=CH/Skill/Ranger/Eff_Ranger_ScrewDriveShot_Cast_02.xml" loopCount="5" />
+			<attack point="p0" targetCount="1" magicPathID="10500141" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="3" unrideOnHit="1">
+				<rangeProperty rangeType="frustum" distance="1200" height="250" width="300" endWidth="750" applyTarget="1" />
+				<arrowProperty rayPhysxTest="1" nonTarget="1" bounceType="3" bounceCount="20" collision="150.000000,200.000000,100.000000" collisionAdd="0.000000,0.000000,50.000000" effect="CH/Skill/Ranger/Eff_Ranger_ScrewDriveShot_Ball_01.xml" effectRemain="CH/Skill/Ranger/Eff_Ranger_ScrewDriveShot_Remain_01.xml" />
+				<damageProperty rate="3.72" hitPauseTime="0.2" push="1" pushdistance="25" pushduration="0.1" pushEaseType="1" attackMaterial="1" />
+			</attack>
+		</motion>
+	</level>
+	<level value="2">
+		<beginCondition probability="1" cooldownTime="13" useCoolDownShowUI="1">
+			<requireEffect code="10500111" />
+			<stat hp="1" />
+			<weapon lh="0" rh="51" />
+		</beginCondition>
+		<changeSkill changeSkillCheckEffectID="10500161" changeSkillCheckEffectLevel="0" changeSkillCheckEffectOverlapCount="1" changeSkillID="10500144" changeSkillLevel="2" />
+		<push back="200" />
+		<upgrade level="45" skillIDs="10500021" skillLevels="8" />
+		<combo chargingSkill="1" inputSkill="10500141" outputSkill="10500142" />
+		<motion>
+			<motionProperty sequenceName="Ranger_ScrewDriveShot_A" loopEffect="CH/Skill/Ranger/Eff_Ranger_ScrewDriveShot_Loop_01.xml" strTagEffects="e0=CH/Skill/Ranger/Eff_Ranger_ScrewDriveShot_Cast_01.xml,e1=CH/Skill/Ranger/Eff_Ranger_ScrewDriveShot_Cast_02.xml" loopCount="5" />
+			<attack point="p0" targetCount="1" magicPathID="10500141" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="3" unrideOnHit="1">
+				<rangeProperty rangeType="frustum" distance="1200" height="250" width="300" endWidth="750" applyTarget="1" />
+				<arrowProperty rayPhysxTest="1" nonTarget="1" bounceType="3" bounceCount="20" collision="150.000000,200.000000,100.000000" collisionAdd="0.000000,0.000000,50.000000" effect="CH/Skill/Ranger/Eff_Ranger_ScrewDriveShot_Ball_01.xml" effectRemain="CH/Skill/Ranger/Eff_Ranger_ScrewDriveShot_Remain_01.xml" />
+				<damageProperty rate="3.99" hitPauseTime="0.2" push="1" pushdistance="25" pushduration="0.1" pushEaseType="1" attackMaterial="1" />
+			</attack>
+		</motion>
+	</level>
+	<level value="3">
+		<beginCondition probability="1" cooldownTime="13" useCoolDownShowUI="1">
+			<requireEffect code="10500111" />
+			<stat hp="1" />
+			<weapon lh="0" rh="51" />
+		</beginCondition>
+		<changeSkill changeSkillCheckEffectID="10500161" changeSkillCheckEffectLevel="0" changeSkillCheckEffectOverlapCount="1" changeSkillID="10500144" changeSkillLevel="3" />
+		<push back="200" />
+		<upgrade level="47" skillIDs="10500021" skillLevels="8" />
+		<combo chargingSkill="1" inputSkill="10500141" outputSkill="10500142" />
+		<motion>
+			<motionProperty sequenceName="Ranger_ScrewDriveShot_A" loopEffect="CH/Skill/Ranger/Eff_Ranger_ScrewDriveShot_Loop_01.xml" strTagEffects="e0=CH/Skill/Ranger/Eff_Ranger_ScrewDriveShot_Cast_01.xml,e1=CH/Skill/Ranger/Eff_Ranger_ScrewDriveShot_Cast_02.xml" loopCount="5" />
+			<attack point="p0" targetCount="1" magicPathID="10500141" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="3" unrideOnHit="1">
+				<rangeProperty rangeType="frustum" distance="1200" height="250" width="300" endWidth="750" applyTarget="1" />
+				<arrowProperty rayPhysxTest="1" nonTarget="1" bounceType="3" bounceCount="20" collision="150.000000,200.000000,100.000000" collisionAdd="0.000000,0.000000,50.000000" effect="CH/Skill/Ranger/Eff_Ranger_ScrewDriveShot_Ball_01.xml" effectRemain="CH/Skill/Ranger/Eff_Ranger_ScrewDriveShot_Remain_01.xml" />
+				<damageProperty rate="4.26" hitPauseTime="0.2" push="1" pushdistance="25" pushduration="0.1" pushEaseType="1" attackMaterial="1" />
+			</attack>
+		</motion>
+	</level>
+	<level value="4">
+		<beginCondition probability="1" cooldownTime="13" useCoolDownShowUI="1">
+			<requireEffect code="10500111" />
+			<stat hp="1" />
+			<weapon lh="0" rh="51" />
+		</beginCondition>
+		<changeSkill changeSkillCheckEffectID="10500161" changeSkillCheckEffectLevel="0" changeSkillCheckEffectOverlapCount="1" changeSkillID="10500144" changeSkillLevel="4" />
+		<push back="200" />
+		<upgrade level="49" skillIDs="10500021" skillLevels="8" />
+		<combo chargingSkill="1" inputSkill="10500141" outputSkill="10500142" />
+		<motion>
+			<motionProperty sequenceName="Ranger_ScrewDriveShot_A" loopEffect="CH/Skill/Ranger/Eff_Ranger_ScrewDriveShot_Loop_01.xml" strTagEffects="e0=CH/Skill/Ranger/Eff_Ranger_ScrewDriveShot_Cast_01.xml,e1=CH/Skill/Ranger/Eff_Ranger_ScrewDriveShot_Cast_02.xml" loopCount="5" />
+			<attack point="p0" targetCount="1" magicPathID="10500141" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="3" unrideOnHit="1">
+				<rangeProperty rangeType="frustum" distance="1200" height="250" width="300" endWidth="750" applyTarget="1" />
+				<arrowProperty rayPhysxTest="1" nonTarget="1" bounceType="3" bounceCount="20" collision="150.000000,200.000000,100.000000" collisionAdd="0.000000,0.000000,50.000000" effect="CH/Skill/Ranger/Eff_Ranger_ScrewDriveShot_Ball_01.xml" effectRemain="CH/Skill/Ranger/Eff_Ranger_ScrewDriveShot_Remain_01.xml" />
+				<damageProperty rate="4.53" hitPauseTime="0.2" push="1" pushdistance="25" pushduration="0.1" pushEaseType="1" attackMaterial="1" />
+			</attack>
+		</motion>
+	</level>
+	<level value="5">
+		<beginCondition probability="1" cooldownTime="13" useCoolDownShowUI="1">
+			<requireEffect code="10500111" />
+			<stat hp="1" />
+			<weapon lh="0" rh="51" />
+		</beginCondition>
+		<changeSkill changeSkillCheckEffectID="10500161" changeSkillCheckEffectLevel="0" changeSkillCheckEffectOverlapCount="1" changeSkillID="10500144" changeSkillLevel="5" />
+		<push back="200" />
+		<upgrade level="51" skillIDs="10500021" skillLevels="8" />
+		<combo chargingSkill="1" inputSkill="10500141" outputSkill="10500142" />
+		<motion>
+			<motionProperty sequenceName="Ranger_ScrewDriveShot_A" loopEffect="CH/Skill/Ranger/Eff_Ranger_ScrewDriveShot_Loop_01.xml" strTagEffects="e0=CH/Skill/Ranger/Eff_Ranger_ScrewDriveShot_Cast_01.xml,e1=CH/Skill/Ranger/Eff_Ranger_ScrewDriveShot_Cast_02.xml" loopCount="5" />
+			<attack point="p0" targetCount="1" magicPathID="10500141" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="3" unrideOnHit="1">
+				<rangeProperty rangeType="frustum" distance="1200" height="250" width="300" endWidth="750" applyTarget="1" />
+				<arrowProperty rayPhysxTest="1" nonTarget="1" bounceType="3" bounceCount="20" collision="150.000000,200.000000,100.000000" collisionAdd="0.000000,0.000000,50.000000" effect="CH/Skill/Ranger/Eff_Ranger_ScrewDriveShot_Ball_01.xml" effectRemain="CH/Skill/Ranger/Eff_Ranger_ScrewDriveShot_Remain_01.xml" />
+				<damageProperty rate="4.8" hitPauseTime="0.2" push="1" pushdistance="25" pushduration="0.1" pushEaseType="1" attackMaterial="1" />
+			</attack>
+		</motion>
+	</level>
+	<level value="6">
+		<beginCondition probability="1" cooldownTime="13" useCoolDownShowUI="1">
+			<requireEffect code="10500111" />
+			<stat hp="1" />
+			<weapon lh="0" rh="51" />
+		</beginCondition>
+		<changeSkill changeSkillCheckEffectID="10500161" changeSkillCheckEffectLevel="0" changeSkillCheckEffectOverlapCount="1" changeSkillID="10500144" changeSkillLevel="6" />
+		<push back="200" />
+		<upgrade level="53" skillIDs="10500021" skillLevels="8" />
+		<combo chargingSkill="1" inputSkill="10500141" outputSkill="10500142" />
+		<motion>
+			<motionProperty sequenceName="Ranger_ScrewDriveShot_A" loopEffect="CH/Skill/Ranger/Eff_Ranger_ScrewDriveShot_Loop_01.xml" strTagEffects="e0=CH/Skill/Ranger/Eff_Ranger_ScrewDriveShot_Cast_01.xml,e1=CH/Skill/Ranger/Eff_Ranger_ScrewDriveShot_Cast_02.xml" loopCount="5" />
+			<attack point="p0" targetCount="1" magicPathID="10500141" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="3" unrideOnHit="1">
+				<rangeProperty rangeType="frustum" distance="1200" height="250" width="300" endWidth="750" applyTarget="1" />
+				<arrowProperty rayPhysxTest="1" nonTarget="1" bounceType="3" bounceCount="20" collision="150.000000,200.000000,100.000000" collisionAdd="0.000000,0.000000,50.000000" effect="CH/Skill/Ranger/Eff_Ranger_ScrewDriveShot_Ball_01.xml" effectRemain="CH/Skill/Ranger/Eff_Ranger_ScrewDriveShot_Remain_01.xml" />
+				<damageProperty rate="5.07" hitPauseTime="0.2" push="1" pushdistance="25" pushduration="0.1" pushEaseType="1" attackMaterial="1" />
+			</attack>
+		</motion>
+	</level>
+	<level value="7">
+		<beginCondition probability="1" cooldownTime="13" useCoolDownShowUI="1">
+			<requireEffect code="10500111" />
+			<stat hp="1" />
+			<weapon lh="0" rh="51" />
+		</beginCondition>
+		<changeSkill changeSkillCheckEffectID="10500161" changeSkillCheckEffectLevel="0" changeSkillCheckEffectOverlapCount="1" changeSkillID="10500144" changeSkillLevel="7" />
+		<push back="200" />
+		<upgrade level="55" skillIDs="10500021" skillLevels="8" />
+		<combo chargingSkill="1" inputSkill="10500141" outputSkill="10500142" />
+		<motion>
+			<motionProperty sequenceName="Ranger_ScrewDriveShot_A" loopEffect="CH/Skill/Ranger/Eff_Ranger_ScrewDriveShot_Loop_01.xml" strTagEffects="e0=CH/Skill/Ranger/Eff_Ranger_ScrewDriveShot_Cast_01.xml,e1=CH/Skill/Ranger/Eff_Ranger_ScrewDriveShot_Cast_02.xml" loopCount="5" />
+			<attack point="p0" targetCount="1" magicPathID="10500141" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="3" unrideOnHit="1">
+				<rangeProperty rangeType="frustum" distance="1200" height="250" width="300" endWidth="750" applyTarget="1" />
+				<arrowProperty rayPhysxTest="1" nonTarget="1" bounceType="3" bounceCount="20" collision="150.000000,200.000000,100.000000" collisionAdd="0.000000,0.000000,50.000000" effect="CH/Skill/Ranger/Eff_Ranger_ScrewDriveShot_Ball_01.xml" effectRemain="CH/Skill/Ranger/Eff_Ranger_ScrewDriveShot_Remain_01.xml" />
+				<damageProperty rate="5.34" hitPauseTime="0.2" push="1" pushdistance="25" pushduration="0.1" pushEaseType="1" attackMaterial="1" />
+			</attack>
+		</motion>
+	</level>
+	<level value="8">
+		<beginCondition probability="1" cooldownTime="13" useCoolDownShowUI="1">
+			<requireEffect code="10500111" />
+			<stat hp="1" />
+			<weapon lh="0" rh="51" />
+		</beginCondition>
+		<changeSkill changeSkillCheckEffectID="10500161" changeSkillCheckEffectLevel="0" changeSkillCheckEffectOverlapCount="1" changeSkillID="10500144" changeSkillLevel="8" />
+		<push back="200" />
+		<upgrade level="57" skillIDs="10500021" skillLevels="8" />
+		<combo chargingSkill="1" inputSkill="10500141" outputSkill="10500142" />
+		<motion>
+			<motionProperty sequenceName="Ranger_ScrewDriveShot_A" loopEffect="CH/Skill/Ranger/Eff_Ranger_ScrewDriveShot_Loop_01.xml" strTagEffects="e0=CH/Skill/Ranger/Eff_Ranger_ScrewDriveShot_Cast_01.xml,e1=CH/Skill/Ranger/Eff_Ranger_ScrewDriveShot_Cast_02.xml" loopCount="5" />
+			<attack point="p0" targetCount="1" magicPathID="10500141" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="3" unrideOnHit="1">
+				<rangeProperty rangeType="frustum" distance="1200" height="250" width="300" endWidth="750" applyTarget="1" />
+				<arrowProperty rayPhysxTest="1" nonTarget="1" bounceType="3" bounceCount="20" collision="150.000000,200.000000,100.000000" collisionAdd="0.000000,0.000000,50.000000" effect="CH/Skill/Ranger/Eff_Ranger_ScrewDriveShot_Ball_01.xml" effectRemain="CH/Skill/Ranger/Eff_Ranger_ScrewDriveShot_Remain_01.xml" />
+				<damageProperty rate="5.61" hitPauseTime="0.2" push="1" pushdistance="25" pushduration="0.1" pushEaseType="1" attackMaterial="1" />
+			</attack>
+		</motion>
+	</level>
+	<level value="9">
+		<beginCondition probability="1" cooldownTime="13" useCoolDownShowUI="1">
+			<requireEffect code="10500111" />
+			<stat hp="1" />
+			<weapon lh="0" rh="51" />
+		</beginCondition>
+		<changeSkill changeSkillCheckEffectID="10500161" changeSkillCheckEffectLevel="0" changeSkillCheckEffectOverlapCount="1" changeSkillID="10500144" changeSkillLevel="9" />
+		<push back="200" />
+		<upgrade level="59" skillIDs="10500021" skillLevels="8" />
+		<combo chargingSkill="1" inputSkill="10500141" outputSkill="10500142" />
+		<motion>
+			<motionProperty sequenceName="Ranger_ScrewDriveShot_A" loopEffect="CH/Skill/Ranger/Eff_Ranger_ScrewDriveShot_Loop_01.xml" strTagEffects="e0=CH/Skill/Ranger/Eff_Ranger_ScrewDriveShot_Cast_01.xml,e1=CH/Skill/Ranger/Eff_Ranger_ScrewDriveShot_Cast_02.xml" loopCount="5" />
+			<attack point="p0" targetCount="1" magicPathID="10500141" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="3" unrideOnHit="1">
+				<rangeProperty rangeType="frustum" distance="1200" height="250" width="300" endWidth="750" applyTarget="1" />
+				<arrowProperty rayPhysxTest="1" nonTarget="1" bounceType="3" bounceCount="20" collision="150.000000,200.000000,100.000000" collisionAdd="0.000000,0.000000,50.000000" effect="CH/Skill/Ranger/Eff_Ranger_ScrewDriveShot_Ball_01.xml" effectRemain="CH/Skill/Ranger/Eff_Ranger_ScrewDriveShot_Remain_01.xml" />
+				<damageProperty rate="5.88" hitPauseTime="0.2" push="1" pushdistance="25" pushduration="0.1" pushEaseType="1" attackMaterial="1" />
+			</attack>
+		</motion>
+	</level>
+	<level value="10">
+		<beginCondition probability="1" cooldownTime="13" useCoolDownShowUI="1">
+			<requireEffect code="10500111" />
+			<stat hp="1" />
+			<weapon lh="0" rh="51" />
+		</beginCondition>
+		<changeSkill changeSkillCheckEffectID="10500161" changeSkillCheckEffectLevel="0" changeSkillCheckEffectOverlapCount="1" changeSkillID="10500144" changeSkillLevel="10" />
+		<push back="200" />
+		<upgrade level="61" skillIDs="10500021" skillLevels="8" />
+		<combo chargingSkill="1" inputSkill="10500141" outputSkill="10500142" />
+		<motion>
+			<motionProperty sequenceName="Ranger_ScrewDriveShot_A" loopEffect="CH/Skill/Ranger/Eff_Ranger_ScrewDriveShot_Loop_01.xml" strTagEffects="e0=CH/Skill/Ranger/Eff_Ranger_ScrewDriveShot_Cast_01.xml,e1=CH/Skill/Ranger/Eff_Ranger_ScrewDriveShot_Cast_02.xml" loopCount="5" />
+			<attack point="p0" targetCount="1" magicPathID="10500141" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="3" unrideOnHit="1">
+				<rangeProperty rangeType="frustum" distance="1200" height="250" width="300" endWidth="750" applyTarget="1" />
+				<arrowProperty rayPhysxTest="1" nonTarget="1" bounceType="3" bounceCount="20" collision="150.000000,200.000000,100.000000" collisionAdd="0.000000,0.000000,50.000000" effect="CH/Skill/Ranger/Eff_Ranger_ScrewDriveShot_Ball_01.xml" effectRemain="CH/Skill/Ranger/Eff_Ranger_ScrewDriveShot_Remain_01.xml" />
+				<damageProperty rate="6.15" hitPauseTime="0.2" push="1" pushdistance="25" pushduration="0.1" pushEaseType="1" attackMaterial="1" />
+			</attack>
+		</motion>
+	</level>
+	<level value="11">
+		<beginCondition probability="1" cooldownTime="13" useCoolDownShowUI="1">
+			<requireEffect code="10500111" />
+			<stat hp="1" />
+			<weapon lh="0" rh="51" />
+		</beginCondition>
+		<changeSkill changeSkillCheckEffectID="10500161" changeSkillCheckEffectLevel="0" changeSkillCheckEffectOverlapCount="1" changeSkillID="10500144" changeSkillLevel="11" />
+		<push back="200" />
+		<upgrade level="63" skillIDs="10500021" skillLevels="8" />
+		<combo chargingSkill="1" inputSkill="10500141" outputSkill="10500142" />
+		<motion>
+			<motionProperty sequenceName="Ranger_ScrewDriveShot_A" loopEffect="CH/Skill/Ranger/Eff_Ranger_ScrewDriveShot_Loop_01.xml" strTagEffects="e0=CH/Skill/Ranger/Eff_Ranger_ScrewDriveShot_Cast_01.xml,e1=CH/Skill/Ranger/Eff_Ranger_ScrewDriveShot_Cast_02.xml" loopCount="5" />
+			<attack point="p0" targetCount="1" magicPathID="10500141" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="3" unrideOnHit="1">
+				<rangeProperty rangeType="frustum" distance="1200" height="250" width="300" endWidth="750" applyTarget="1" />
+				<arrowProperty rayPhysxTest="1" nonTarget="1" bounceType="3" bounceCount="20" collision="150.000000,200.000000,100.000000" collisionAdd="0.000000,0.000000,50.000000" effect="CH/Skill/Ranger/Eff_Ranger_ScrewDriveShot_Ball_01.xml" effectRemain="CH/Skill/Ranger/Eff_Ranger_ScrewDriveShot_Remain_01.xml" />
+				<damageProperty rate="6.42" hitPauseTime="0.2" push="1" pushdistance="25" pushduration="0.1" pushEaseType="1" attackMaterial="1" />
+			</attack>
+		</motion>
+	</level>
+	<level value="12">
+		<beginCondition probability="1" cooldownTime="13" useCoolDownShowUI="1">
+			<requireEffect code="10500111" />
+			<stat hp="1" />
+			<weapon lh="0" rh="51" />
+		</beginCondition>
+		<changeSkill changeSkillCheckEffectID="10500161" changeSkillCheckEffectLevel="0" changeSkillCheckEffectOverlapCount="1" changeSkillID="10500144" changeSkillLevel="12" />
+		<push back="200" />
+		<upgrade level="65" skillIDs="10500021" skillLevels="8" />
+		<combo chargingSkill="1" inputSkill="10500141" outputSkill="10500142" />
+		<motion>
+			<motionProperty sequenceName="Ranger_ScrewDriveShot_A" loopEffect="CH/Skill/Ranger/Eff_Ranger_ScrewDriveShot_Loop_01.xml" strTagEffects="e0=CH/Skill/Ranger/Eff_Ranger_ScrewDriveShot_Cast_01.xml,e1=CH/Skill/Ranger/Eff_Ranger_ScrewDriveShot_Cast_02.xml" loopCount="5" />
+			<attack point="p0" targetCount="1" magicPathID="10500141" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="3" unrideOnHit="1">
+				<rangeProperty rangeType="frustum" distance="1200" height="250" width="300" endWidth="750" applyTarget="1" />
+				<arrowProperty rayPhysxTest="1" nonTarget="1" bounceType="3" bounceCount="20" collision="150.000000,200.000000,100.000000" collisionAdd="0.000000,0.000000,50.000000" effect="CH/Skill/Ranger/Eff_Ranger_ScrewDriveShot_Ball_01.xml" effectRemain="CH/Skill/Ranger/Eff_Ranger_ScrewDriveShot_Remain_01.xml" />
+				<damageProperty rate="6.69" hitPauseTime="0.2" push="1" pushdistance="25" pushduration="0.1" pushEaseType="1" attackMaterial="1" />
+			</attack>
+		</motion>
+	</level>
+</ms2>

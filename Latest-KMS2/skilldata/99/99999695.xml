@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 파싱해서 사용하는 데이터이니 직접 수정하지 마세요 -->
+<ms2 feature="">
+	<basic>
+		<ui attackType="2" />
+		<kinds element="6" />
+	</basic>
+	<level value="1">
+		<beginCondition probability="1">
+			<stat hp="1" />
+		</beginCondition>
+		<motion>
+			<motionProperty motionEffect="NPC/Skill/Blackbean/Eff_Blackbean_BottomField_PoisonAttackStateDown.xml" splashEndEffect="NPC/Skill/Blackbean/Eff_Blackbean_BottomField_PoisonAttackStateDown_End.xml" faceTarget="0" />
+			<attack point="p0" targetCount="50" attacktype="2" brokenOffence="1" brokenForce="1" releaseObjectWeaponOnHit="0" compulsionType="1,3">
+				<rangeProperty rangeType="box" distance="1350" rangeAdd="0.000000,1350.000000,0.000000" height="20" width="2700" applyTarget="5" castTarget="1" />
+				<damageProperty rate="0.04" attackMaterial="104" />
+				<conditionSkill level="1" skillID="50000155" skillTarget="2" skillOwner="1" />
+			</attack>
+		</motion>
+	</level>
+</ms2>

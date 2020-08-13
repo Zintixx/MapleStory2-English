@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 파싱해서 사용하는 데이터이니 직접 수정하지 마세요 -->
+<ms2 feature="">
+	<basic feature="JobChange_01">
+		<ui icon="./Data/Resource/Image/skill/icon/11000052.png" exceptUI="1" />
+		<kinds subType="2" immediateActive="1" unrideOnUse="1" />
+		<stateAttr superArmor="3" keyIsDown="1" />
+	</basic>
+	<level value="1" feature="JobChange_01">
+		<beginCondition probability="1">
+			<stat hp="1" />
+		</beginCondition>
+		<changeSkill originSkillID="11000051" />
+		<consume>
+			<stat ep="20" />
+		</consume>
+		<conditionSkill level="1" skillID="11000055" skillTarget="1">
+			<beginCondition probability="1" allowBattleRidingState="1" />
+		</conditionSkill>
+		<conditionSkill level="1" skillID="11000056" skillTarget="1">
+			<beginCondition probability="1" allowBattleRidingState="1" />
+		</conditionSkill>
+		<motion>
+			<motionProperty sequenceName="Striker_GuardDash_A" motionEffect="CH/Skill/Striker/Eff_Striker_GuardDash2_Cast_01.xml" movedistance="175" moveEaseType="2" ignoreCollisionGroups="4" />
+		</motion>
+	</level>
+</ms2>

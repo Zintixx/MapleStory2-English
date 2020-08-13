@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 파싱해서 사용하는 데이터이니 직접 수정하지 마세요 -->
+<ms2 feature="">
+	<basic>
+		<ui attackType="2" />
+		<kinds rangeType="2" element="7" />
+	</basic>
+	<level value="1">
+		<beginCondition probability="1">
+			<stat hp="1" />
+		</beginCondition>
+		<motion>
+			<motionProperty sequenceName="Attack_01_A" sequenceSpeed="0.55" motionEffect="NPC/Skill/GriffonIndianBoss/Eff_GriffonIndian02_Attack_01_A.xml" faceTarget="0" doesPlayIdleOnSkillEnd="false" />
+			<attack point="p0" targetCount="12" magicPathID="5131" attacktype="2" brokenOffence="1" unrideOnHit="1">
+				<rangeProperty rangeType="box" distance="1500" rangeAdd="0.000000,0.000000,140.000000" height="500" width="800" applyTarget="1" castTarget="1" />
+				<arrowProperty explosion="1" rayPhysxTest="1" nonTarget="1" collision="30.000000,1.000000,20.000000" collisionAdd="0.000000,10.000000,20.000000" effect="NPC/Skill/GriffonIndianBoss/Eff_GriffonIndian02_Attack_01_B_Ball.xml" />
+				<damageProperty rate="0.8" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
+				<conditionSkill level="1" skillID="50000120" skillTarget="2" skillOwner="1" />
+			</attack>
+		</motion>
+	</level>
+	<level value="2">
+		<beginCondition probability="1">
+			<stat hp="1" />
+		</beginCondition>
+		<motion>
+			<motionProperty sequenceName="Attack_02_A" faceTarget="0" doesPlayIdleOnSkillEnd="false" />
+			<attack point="p0" targetCount="50" attacktype="2" brokenOffence="2" brokenForce="3" unrideOnHit="1">
+				<rangeProperty rangeType="frustum" distance="800" rangeAdd="0.000000,0.000000,140.000000" height="250" width="700" endWidth="850" applyTarget="1" castTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="0.35" push="1" pushdistance="400" pushduration="0.65" pushEaseType="1" attackMaterial="1" />
+			</attack>
+			<attack point="p1" targetCount="50" attacktype="2" brokenOffence="2" brokenForce="3" unrideOnHit="1">
+				<rangeProperty rangeType="frustum" distance="1200" rangeAdd="0.000000,0.000000,140.000000" height="250" width="700" endWidth="1000" applyTarget="1" castTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="0.35" push="1" pushdistance="550" pushduration="0.65" pushEaseType="1" attackMaterial="1" />
+			</attack>
+			<attack point="p2" targetCount="50" attacktype="2" brokenOffence="2" brokenForce="3" unrideOnHit="1">
+				<rangeProperty rangeType="frustum" distance="1800" rangeAdd="0.000000,0.000000,140.000000" height="250" width="700" endWidth="1300" applyTarget="1" castTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="0.35" push="1" pushdistance="700" pushduration="0.65" pushEaseType="1" attackMaterial="1" />
+			</attack>
+			<attack point="p99" targetCount="1" magicPathID="5061" attacktype="2" hitImmuneBreak="1" unrideOnHit="1">
+				<rangeProperty rangeType="box" distance="1500" rangeAdd="0.000000,0.000000,140.000000" height="250" width="700" applyTarget="1" castTarget="1" />
+				<arrowProperty nonTarget="1" bounceType="3" bounceCount="50" collision="800.000000,350.000000,600.000000" collisionAdd="0.000000,350.000000,0.000000" effect="NPC/Skill/DevilHugeRed/Eff_DevilHugeRed_Bore_02_B_Ball.xml" />
+				<damageProperty rate="0.01" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="300" pushduration="0.65" pushEaseType="1" attackMaterial="1" />
+			</attack>
+		</motion>
+	</level>
+	<level value="3">
+		<beginCondition probability="1">
+			<stat hp="1" />
+		</beginCondition>
+		<motion>
+			<motionProperty sequenceName="Attack_01_A" sequenceSpeed="0.55" motionEffect="NPC/Skill/GriffonIndianBoss/Eff_GriffonIndian02_Attack_01_A.xml" faceTarget="0" doesPlayIdleOnSkillEnd="false" />
+			<attack point="p0" attacktype="2" brokenOffence="1" unrideOnHit="1">
+				<rangeProperty rangeType="box" distance="1500" rangeAdd="0.000000,0.000000,140.000000" height="500" width="800" applyTarget="1" castTarget="1" />
+				<arrowProperty nonTarget="1" effect="NPC/Skill/Temp/Eff_Temp.xml" />
+				<damageProperty rate="1" attackMaterial="1" />
+			</attack>
+		</motion>
+		<motion>
+			<motionProperty sequenceName="Attack_02_A" faceTarget="0" doesPlayIdleOnSkillEnd="false" />
+			<attack point="p0" targetCount="50" attacktype="2" brokenOffence="2" brokenForce="3" unrideOnHit="1">
+				<rangeProperty rangeType="frustum" distance="800" rangeAdd="0.000000,0.000000,140.000000" height="250" width="700" endWidth="850" applyTarget="1" castTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="0.35" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="400" pushduration="0.65" pushEaseType="1" attackMaterial="1" />
+			</attack>
+			<attack point="p1" targetCount="50" attacktype="2" brokenOffence="2" brokenForce="3" unrideOnHit="1">
+				<rangeProperty rangeType="frustum" distance="1200" rangeAdd="0.000000,0.000000,140.000000" height="250" width="700" endWidth="1000" applyTarget="1" castTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="0.35" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="550" pushduration="0.65" pushEaseType="1" attackMaterial="1" />
+			</attack>
+			<attack point="p2" targetCount="50" attacktype="2" brokenOffence="2" brokenForce="3" unrideOnHit="1">
+				<rangeProperty rangeType="frustum" distance="1800" rangeAdd="0.000000,0.000000,140.000000" height="250" width="700" endWidth="1300" applyTarget="1" castTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="0.35" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="700" pushduration="0.65" pushEaseType="1" attackMaterial="1" />
+			</attack>
+			<attack point="p99" targetCount="1" magicPathID="5061" attacktype="2" hitImmuneBreak="1" unrideOnHit="1">
+				<rangeProperty rangeType="box" distance="1500" rangeAdd="0.000000,0.000000,140.000000" height="250" width="700" applyTarget="1" castTarget="1" />
+				<arrowProperty nonTarget="1" bounceType="3" bounceCount="50" collision="800.000000,350.000000,600.000000" collisionAdd="0.000000,350.000000,0.000000" effect="NPC/Skill/DevilHugeRed/Eff_DevilHugeRed_Bore_02_B_Ball.xml" />
+				<damageProperty rate="0.01" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="300" pushduration="0.65" pushEaseType="1" attackMaterial="1" />
+			</attack>
+		</motion>
+	</level>
+</ms2>

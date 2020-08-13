@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 파싱해서 사용하는 데이터이니 직접 수정하지 마세요 -->
+<ms2 feature="">
+	<basic>
+		<ui attackType="1" />
+		<kinds rangeType="1" element="1" />
+	</basic>
+	<level value="1">
+		<beginCondition probability="1">
+			<stat hp="1" />
+		</beginCondition>
+		<sensorProperty rangeType="cylinder" distance="150" height="150" applyTarget="1" castTarget="1" />
+		<motion>
+			<motionProperty motionEffect="NPC/Skill/RobotHyperBooster/Eff_RobotHyperBooster_Attack_01_Q_MineTrap_Ball_Locate.xml" splashInvokeEffect="NPC/Skill/RobotHyperRace/Eff_RobotHyperRace_MineBomb_Attack.xml" faceTarget="0" />
+			<attack point="p0" targetCount="5" attacktype="1" brokenOffence="1" brokenForce="1" unrideOnHit="1">
+				<rangeProperty rangeType="cylinder" distance="200" height="100" applyTarget="1" castTarget="1" />
+				<damageProperty rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1000" />
+			</attack>
+		</motion>
+	</level>
+</ms2>

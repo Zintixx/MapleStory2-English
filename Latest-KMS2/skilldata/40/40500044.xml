@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 파싱해서 사용하는 데이터이니 직접 수정하지 마세요 -->
+<ms2 feature="">
+	<basic>
+		<ui attackType="2" />
+		<kinds rangeType="1" element="2" />
+	</basic>
+	<level value="1">
+		<beginCondition probability="1">
+			<stat hp="1" />
+		</beginCondition>
+		<motion>
+			<motionProperty sequenceName="Attack_01_B" motionEffect="NPC/Skill/IceSoldierMage/Eff_IceSoldierMage_Attack_01_B.xml" faceTarget="0" />
+			<attack point="p0" attacktype="2" unrideOnHit="1">
+				<rangeProperty rangeType="box" distance="1150" rangeAdd="0.000000,0.000000,100.000000" height="100" width="300" applyTarget="1" castTarget="1" />
+				<arrowProperty nonTarget="1" effect="NPC/Skill/Temp/Eff_Temp.xml" />
+				<damageProperty count="0" rate="1" attackMaterial="101" />
+			</attack>
+		</motion>
+		<motion>
+			<motionProperty sequenceName="Attack_02_B" motionEffect="NPC/Skill/IceSoldierMage/Eff_IceSoldierMage_Attack_02_B.xml" loopCount="1" faceTarget="0" />
+			<attack point="p0" attacktype="2" unrideOnHit="1">
+				<rangeProperty rangeType="box" distance="1150" rangeAdd="0.000000,0.000000,100.000000" height="100" width="300" applyTarget="1" castTarget="1" />
+				<arrowProperty nonTarget="1" effect="NPC/Skill/Temp/Eff_Temp.xml" />
+				<damageProperty count="0" rate="1" attackMaterial="101" />
+			</attack>
+		</motion>
+		<motion>
+			<motionProperty sequenceName="Attack_03_B" motionEffect="NPC/Skill/IceSoldierMage/Eff_IceSoldierMage_Attack_03_B.xml" faceTarget="0" />
+			<attack point="p0" targetCount="1" magicPathID="6281" direction="0" attacktype="2" unrideOnHit="1">
+				<rangeProperty rangeType="box" distance="1150" rangeAdd="0.000000,0.000000,100.000000" height="100" width="300" applyTarget="1" castTarget="1" />
+				<arrowProperty nonTarget="1" bounceCount="50" collision="150.000000,5.000000,5.000000" collisionAdd="0.000000,35.000000,70.000000" effect="NPC/Skill/IceSoldierMage/Eff_IceSoldierMage_Attack_03_B_Throw_Ball.xml" effectRemain="NPC/Skill/IceSoldierMage/Eff_IceSoldierMage_Attack_03_B_Throw_Ball_Remain.xml" />
+				<damageProperty rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="101" />
+			</attack>
+		</motion>
+	</level>
+</ms2>

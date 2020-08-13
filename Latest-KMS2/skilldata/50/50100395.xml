@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 파싱해서 사용하는 데이터이니 직접 수정하지 마세요 -->
+<ms2 feature="">
+	<basic>
+		<ui attackType="2" />
+	</basic>
+	<level value="1">
+		<beginCondition probability="1">
+			<stat hp="1" />
+		</beginCondition>
+		<motion>
+			<motionProperty sequenceName="Attack_01_G" sequenceSpeed="0.85" motionEffect="NPC/Skill/DevilHugeBlue/Eff_DevilHugeBlue_Attack_01_G_DownHPRecoveryItem1Lv.xml" faceTarget="0" />
+			<attack point="p0" attacktype="2" brokenOffence="2" unrideOnHit="1">
+				<rangeProperty rangeType="cylinder" distance="900" height="180" applyTarget="1" castTarget="1" />
+				<arrowProperty nonTarget="1" effect="NPC/Skill/Temp/Eff_Temp.xml" />
+				<damageProperty count="0" rate="0.01" attackMaterial="1" />
+			</attack>
+		</motion>
+		<motion>
+			<motionProperty sequenceName="Attack_02_G" motionEffect="NPC/Skill/DevilHugeBlue/Eff_DevilHugeBlue_Attack_02_G_DownHPRecoveryItem1Lv.xml" pushCylinderVelH="280" pushCylinderOuter="900" pushCylinderInner="10" pushCylinderHeight="600" faceTarget="0" />
+			<attack point="p0" targetCount="200" attacktype="2" brokenOffence="2" unrideOnHit="1">
+				<rangeProperty rangeType="cylinder" distance="900" rangeAdd="0.000000,0.000000,100.000000" height="1300" applyTarget="1" castTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="0.2" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="70" pushduration="0.2" pushEaseType="1" pushFall="1" attackMaterial="1" />
+				<conditionSkill level="1" skillID="50004800" skillTarget="2" skillOwner="1" />
+			</attack>
+			<attack point="p1" targetCount="200" attacktype="2" hitImmuneBreak="1" brokenOffence="2" unrideOnHit="1">
+				<rangeProperty rangeType="cylinder" distance="900" rangeAdd="0.000000,0.000000,100.000000" height="1300" applyTarget="1" castTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="0.2" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="70" pushduration="0.2" pushEaseType="1" pushFall="1" attackMaterial="1" />
+				<conditionSkill level="1" skillID="50004800" skillTarget="2" skillOwner="1" />
+			</attack>
+		</motion>
+		<motion>
+			<motionProperty sequenceName="Attack_03_G" faceTarget="0" />
+			<attack point="p0" targetCount="1" attacktype="2" brokenOffence="2" unrideOnHit="1">
+				<rangeProperty rangeType="cylinder" distance="900" height="600" applyTarget="1" castTarget="1" />
+				<arrowProperty nonTarget="1" effect="NPC/Skill/Temp/Eff_Temp.xml" />
+				<damageProperty count="0" rate="1" attackMaterial="1" />
+			</attack>
+		</motion>
+	</level>
+	<level value="2">
+		<beginCondition probability="1">
+			<stat hp="1" />
+		</beginCondition>
+		<motion>
+			<motionProperty sequenceName="Attack_01_G" sequenceSpeed="0.85" motionEffect="NPC/Skill/DevilHugeBlue/Eff_DevilHugeBlue_Attack_01_G_DownHPRecoveryItem2Lv.xml" faceTarget="0" />
+			<attack point="p0" attacktype="2" brokenOffence="2" unrideOnHit="1">
+				<rangeProperty rangeType="cylinder" distance="1400" height="180" applyTarget="1" castTarget="1" />
+				<arrowProperty nonTarget="1" effect="NPC/Skill/Temp/Eff_Temp.xml" />
+				<damageProperty count="0" rate="0.01" attackMaterial="1" />
+			</attack>
+		</motion>
+		<motion>
+			<motionProperty sequenceName="Attack_02_G" motionEffect="NPC/Skill/DevilHugeBlue/Eff_DevilHugeBlue_Attack_02_G_DownHPRecoveryItem2Lv.xml" pushCylinderVelH="340" pushCylinderOuter="1400" pushCylinderInner="10" pushCylinderHeight="600" faceTarget="0" />
+			<attack point="p0" targetCount="200" attacktype="2" brokenOffence="2" unrideOnHit="1">
+				<rangeProperty rangeType="cylinder" distance="1400" rangeAdd="0.000000,0.000000,100.000000" height="1300" applyTarget="1" castTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="0.35" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="120" pushduration="0.2" pushEaseType="1" pushFall="1" attackMaterial="1" />
+				<conditionSkill level="2" skillID="50004800" skillTarget="2" skillOwner="1" />
+			</attack>
+			<attack point="p1" targetCount="200" attacktype="2" hitImmuneBreak="1" brokenOffence="2" unrideOnHit="1">
+				<rangeProperty rangeType="cylinder" distance="1400" rangeAdd="0.000000,0.000000,100.000000" height="1300" applyTarget="1" castTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="0.35" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="120" pushduration="0.2" pushEaseType="1" pushFall="1" attackMaterial="1" />
+				<conditionSkill level="2" skillID="50004800" skillTarget="2" skillOwner="1" />
+			</attack>
+		</motion>
+		<motion>
+			<motionProperty sequenceName="Attack_03_G" faceTarget="0" />
+			<attack point="p0" targetCount="1" attacktype="2" brokenOffence="2" unrideOnHit="1">
+				<rangeProperty rangeType="cylinder" distance="1400" height="600" applyTarget="1" castTarget="1" />
+				<arrowProperty nonTarget="1" effect="NPC/Skill/Temp/Eff_Temp.xml" />
+				<damageProperty count="0" rate="1" attackMaterial="1" />
+			</attack>
+		</motion>
+	</level>
+	<level value="3">
+		<beginCondition probability="1">
+			<stat hp="1" />
+		</beginCondition>
+		<motion>
+			<motionProperty sequenceName="Attack_01_G" sequenceSpeed="0.85" motionEffect="NPC/Skill/DevilHugeBlue/Eff_DevilHugeBlue_Attack_01_G_DownHPRecoveryItem3Lv.xml" faceTarget="0" />
+			<attack point="p0" attacktype="2" brokenOffence="2" unrideOnHit="1">
+				<rangeProperty rangeType="cylinder" distance="2000" height="180" applyTarget="1" castTarget="1" />
+				<arrowProperty nonTarget="1" effect="NPC/Skill/Temp/Eff_Temp.xml" />
+				<damageProperty count="0" rate="0.01" attackMaterial="1" />
+			</attack>
+		</motion>
+		<motion>
+			<motionProperty sequenceName="Attack_02_G" motionEffect="NPC/Skill/DevilHugeBlue/Eff_DevilHugeBlue_Attack_02_G_DownHPRecoveryItem3Lv.xml" pushCylinderVelH="410" pushCylinderOuter="2000" pushCylinderInner="10" pushCylinderHeight="600" faceTarget="0" />
+			<attack point="p0" targetCount="200" attacktype="2" brokenOffence="2" unrideOnHit="1">
+				<rangeProperty rangeType="cylinder" distance="2000" rangeAdd="0.000000,0.000000,100.000000" height="1300" applyTarget="1" castTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="0.5" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="200" pushduration="0.2" pushEaseType="1" pushFall="1" attackMaterial="1" />
+				<conditionSkill level="3" skillID="50004800" skillTarget="2" skillOwner="1" />
+			</attack>
+			<attack point="p1" targetCount="200" attacktype="2" hitImmuneBreak="1" brokenOffence="2" unrideOnHit="1">
+				<rangeProperty rangeType="cylinder" distance="2000" rangeAdd="0.000000,0.000000,100.000000" height="1300" applyTarget="1" castTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="0.5" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="200" pushduration="0.2" pushEaseType="1" pushFall="1" attackMaterial="1" />
+				<conditionSkill level="3" skillID="50004800" skillTarget="2" skillOwner="1" />
+			</attack>
+		</motion>
+		<motion>
+			<motionProperty sequenceName="Attack_03_G" faceTarget="0" />
+			<attack point="p0" targetCount="1" attacktype="2" brokenOffence="2" unrideOnHit="1">
+				<rangeProperty rangeType="cylinder" distance="2000" height="600" applyTarget="1" castTarget="1" />
+				<arrowProperty nonTarget="1" effect="NPC/Skill/Temp/Eff_Temp.xml" />
+				<damageProperty count="0" rate="1" attackMaterial="1" />
+			</attack>
+		</motion>
+	</level>
+</ms2>

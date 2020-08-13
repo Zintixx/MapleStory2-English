@@ -32,6 +32,7 @@
 			<action type="limitDialog" dialogName="CheckoutBillDialog" />
 			<action type="limitDialog" dialogName="CheckoutDialog" />
 			<action type="limitDialog" dialogName="ShopDialog" />
+			<action type="limitDialog" dialogName="KeySettingSelectDialog" />
 			<action type="limit" limit="KeyConfigTab" />
 			<action type="limit" limit="ItemDrop" />
 			<action type="limit" limit="ItemPutOff" />
@@ -52,25 +53,9 @@
 			<action type="limit" limit="PortalUse" />
 		</openAction>
 	</event>
-	<event id="111" saveId="110" saveStep="11" isForce="1" desc="키타입설정창" feature="MouseContoller">
-		<open>
-			<condition type="fieldId" value="52000065" />
-		</open>
-		<close>
-			<condition type="guideClear" id="10960" />
-		</close>
-		<openAction>
-			<action type="limitDialog" dialogName="InventoryDialog" />
-			<action type="limitDialog" dialogName="MyInfoDialog" />
-			<action type="limit" limit="ItemPutOn" />
-			<action type="limit" limit="PlayerMove" />
-			<action type="limit" limit="PlayerControl" />
-		</openAction>
-	</event>
 	<event id="112" saveId="110" saveStep="13" isForce="1" desc="방향키 1개로 이동" feature="MouseContoller">
 		<open>
 			<condition type="fieldId" value="52000065" />
-			<condition type="guideClear" id="113" />
 		</open>
 		<close>
 			<condition type="position">
@@ -86,22 +71,6 @@
 			<action type="limit" limit="ItemPutOn" />
 			<action type="uiSummary" isNotClose="0" textId="110" controllerType="keyboard" />
 			<action type="uiSummary" isNotClose="0" textId="119" controllerType="gamepad" />
-		</openAction>
-	</event>
-	<event id="113" saveId="110" saveStep="12" isForce="1" desc="게임패드안내대기" feature="MouseContoller">
-		<open>
-			<condition type="fieldId" value="52000065" />
-			<condition type="guideClear" id="111" />
-		</open>
-		<close>
-			<condition type="timeout" value="3500" />
-		</close>
-		<openAction>
-			<action type="limitDialog" dialogName="InventoryDialog" />
-			<action type="limitDialog" dialogName="MyInfoDialog" />
-			<action type="limit" limit="ItemPutOn" />
-			<action type="limit" limit="PlayerMove" />
-			<action type="limit" limit="PlayerControl" />
 		</openAction>
 	</event>
 	<event id="120" saveId="110" saveStep="20" isForce="1" desc="잠시 정지">

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 파싱해서 사용하는 데이터이니 직접 수정하지 마세요 -->
+<ms2 feature="">
+	<basic>
+		<ui icon="./Data/Resource/Image/skill/icon/110000105.png" attackType="2" />
+		<stateAttr ignoreReduceCooldown="1" />
+	</basic>
+	<level value="1">
+		<beginCondition probability="1">
+			<stat hp="1" />
+		</beginCondition>
+		<motion>
+			<motionProperty splashInvokeEffect="CH/Quest/Eff_Quest_Splash_MusicPlay.xml" IgnoreOptimalHideCastEffect="true" IgnoreOptimalHideSplashInvokeEffect="true" />
+			<attack point="p0" targetCount="50" attacktype="2" releaseObjectWeaponOnHit="0">
+				<rangeProperty rangeType="cylinder" distance="450" rangeAdd="0.000000,0.000000,400.000000" height="300" applyTarget="1" />
+				<damageProperty count="0" />
+				<conditionSkill level="1" skillID="71000029" skillTarget="2" skillOwner="1" />
+				<conditionSkill level="1" skillID="71000032" skillTarget="2" skillOwner="1" />
+				<conditionSkill level="1" skillID="71000033" skillTarget="2" skillOwner="1">
+					<beginCondition probability="0.3" />
+				</conditionSkill>
+				<conditionSkill level="1" skillID="71000037" skillTarget="1" skillOwner="1">
+					<beginCondition probability="1">
+						<target hasBuffID="0" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="0" hasBuffCountCompare="Equals" hasNotBuffID="71000037" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+			</attack>
+		</motion>
+	</level>
+</ms2>

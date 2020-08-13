@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 파싱해서 사용하는 데이터이니 직접 수정하지 마세요 -->
+<ms2 feature="">
+	<basic>
+		<ui attackType="2" />
+		<kinds rangeType="2" element="5" />
+	</basic>
+	<level value="1">
+		<beginCondition probability="1">
+			<stat hp="1" />
+		</beginCondition>
+		<motion>
+			<motionProperty sequenceName="Attack_01_D" motionEffect="NPC/Skill/IshuraRbladerDark/Eff_IshuraRbladerDark_Attack_01_D_Pattern.xml" IgnoreOptimalHideCastEffect="true" IgnoreOptimalHideEndEffect="true" IgnoreOptimalHideSplashInvokeEffect="true" IgnoreOptimalHideSplashEndEffect="true" faceTarget="0" />
+			<attack point="p0" direction="0" attacktype="2" unrideOnHit="1">
+				<rangeProperty rangeType="frustum" distance="3800" rangeAdd="0.000000,0.000000,350.000000" height="120" width="1000" endWidth="2500" applyTarget="1" castTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty count="0" rate="1" IgnoreOptimalHideDamageHitEffect="true" IgnoreOptimalHideDamageRemainEffect="true" attackMaterial="106" />
+			</attack>
+		</motion>
+		<motion>
+			<motionProperty sequenceName="Attack_03_D" motionEffect="NPC/Skill/IshuraRbladerDark/Eff_IshuraRbladerDark_Attack_03_D_Pattern_Throw02.xml" IgnoreOptimalHideCastEffect="true" IgnoreOptimalHideEndEffect="true" IgnoreOptimalHideSplashInvokeEffect="true" IgnoreOptimalHideSplashEndEffect="true" faceTarget="0" />
+			<attack point="p0" targetCount="4" magicPathID="5744" direction="0" attacktype="2" unrideOnHit="1">
+				<rangeProperty rangeType="frustum" distance="3800" rangeAdd="0.000000,0.000000,350.000000" height="120" width="1000" endWidth="2500" applyTarget="1" castTarget="1" />
+				<arrowProperty explosion="1" collision="20.000000,0.000000,20.000000" collisionAdd="0.000000,20.000000,0.000000" effect="NPC/Skill/IshuraRbladerDark/Eff_IshuraRbladerDark_Attack_03_D_Pattern_Throw_BallPower_Guided.xml" effectRemain="NPC/Skill/IshuraRbladerDark/Eff_IshuraRbladerDark_Attack_03_D_Pattern_Throw_BallPower_Guided_Hit.xml" targetKeepEffect="NPC/Common/Eff_NPC_GuidedTarget_Dead.xml" />
+				<damageProperty rate="1.12" effectHit="NPC/Skill/IshuraRbladerDark/Eff_IshuraRbladerDark_Attack_03_D_Pattern_Throw_BallPower_Guided_Hit.xml" IgnoreOptimalHideDamageHitEffect="true" IgnoreOptimalHideDamageRemainEffect="true" attackMaterial="106" />
+				<conditionSkill level="1" skillID="50000016" skillTarget="2" skillOwner="1" />
+			</attack>
+		</motion>
+	</level>
+</ms2>

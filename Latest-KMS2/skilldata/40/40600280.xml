@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 파싱해서 사용하는 데이터이니 직접 수정하지 마세요 -->
+<ms2 feature="">
+	<basic>
+		<ui attackType="1" />
+		<kinds element="7" />
+	</basic>
+	<level value="1">
+		<beginCondition probability="1">
+			<stat hp="1" />
+		</beginCondition>
+		<motion>
+			<motionProperty sequenceName="Jump_Ready_A" motionEffect="NPC/Skill/RobotHyperBooster/Eff_RobotHyperBooster_Jump_Ready_A.xml" faceTarget="0" doesPlayIdleOnSkillEnd="false" />
+			<attack point="p0" direction="1" attacktype="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+				<rangeProperty rangeType="cylinder" distance="500" rangeAdd="0.000000,0.000000,140.000000" height="800" applyTarget="1" castTarget="1" />
+				<arrowProperty nonTarget="1" effect="NPC/Skill/Temp/Eff_Temp.xml" />
+				<damageProperty count="0" rate="0.01" attackMaterial="2" />
+			</attack>
+		</motion>
+	</level>
+	<level value="2">
+		<beginCondition probability="1">
+			<stat hp="1" />
+		</beginCondition>
+		<motion>
+			<motionProperty sequenceName="Jump_Land_A" motionEffect="NPC/Skill/RobotHyperBooster/Eff_RobotHyperBooster_Jump_Land_A.xml" faceTarget="0" doesPlayIdleOnSkillEnd="false" />
+			<attack point="p99" targetCount="10" direction="1" attacktype="1" brokenOffence="2" brokenForce="3" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+				<rangeProperty rangeType="cylinder" distance="200" rangeOffset="0.000000,0.000000,50.000000" height="350" applyTarget="1" castTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="0.01" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="2" />
+			</attack>
+		</motion>
+	</level>
+	<level value="3">
+		<beginCondition probability="1">
+			<stat hp="1" />
+		</beginCondition>
+		<motion>
+			<motionProperty sequenceName="Jump_Ready_A" motionEffect="NPC/Skill/RobotHyperBooster/Eff_RobotHyperBooster_Jump_Ready_A_Crash.xml" faceTarget="0" doesPlayIdleOnSkillEnd="false" />
+			<attack point="p0" targetCount="50" direction="1" attacktype="1" brokenOffence="4" brokenForce="3" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+				<rangeProperty rangeType="cylinder" distance="5000" height="170" applyTarget="1" castTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="0.03" attackMaterial="2" />
+			</attack>
+		</motion>
+	</level>
+	<level value="4">
+		<beginCondition probability="1">
+			<stat hp="1" />
+		</beginCondition>
+		<motion>
+			<motionProperty sequenceName="Jump_Land_A" motionEffect="NPC/Skill/RobotHyperBooster/Eff_RobotHyperBooster_Jump_Land_A_Electric.xml" faceTarget="0" doesPlayIdleOnSkillEnd="false" />
+			<attack point="p0" targetCount="1" cubeMagicPathID="6334" attacktype="2" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+				<rangeProperty includeCaster="2" rangeType="cylinder" distance="2500" height="180" applyTarget="2" castTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty count="0" rate="1" attackMaterial="103" />
+				<conditionSkill splash="1" level="1" skillID="40600287" interval="900" />
+			</attack>
+			<attack point="p99" targetCount="10" direction="1" attacktype="2" brokenOffence="99" brokenForce="3" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+				<rangeProperty rangeType="cylinder" distance="200" rangeOffset="0.000000,0.000000,50.000000" height="350" applyTarget="1" castTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="0.01" attackMaterial="2" />
+			</attack>
+			<attack point="p1" targetCount="1" cubeMagicPathID="6335" attacktype="2" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+				<rangeProperty includeCaster="2" rangeType="cylinder" distance="2500" height="180" applyTarget="2" castTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty count="0" rate="1" attackMaterial="103" />
+				<conditionSkill splash="1" level="1" skillID="40600287" interval="900" />
+			</attack>
+			<attack point="p2" targetCount="1" cubeMagicPathID="6336" attacktype="2" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+				<rangeProperty includeCaster="2" rangeType="cylinder" distance="2500" height="180" applyTarget="2" castTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty count="0" rate="1" attackMaterial="103" />
+				<conditionSkill splash="1" level="1" skillID="40600287" interval="900" />
+			</attack>
+			<attack point="p3" targetCount="1" cubeMagicPathID="6337" attacktype="2" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+				<rangeProperty includeCaster="2" rangeType="cylinder" distance="2500" height="180" applyTarget="2" castTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty count="0" rate="1" attackMaterial="103" />
+				<conditionSkill splash="1" level="1" skillID="40600287" interval="900" />
+			</attack>
+			<attack point="p4" targetCount="1" cubeMagicPathID="6338" attacktype="2" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+				<rangeProperty includeCaster="2" rangeType="cylinder" distance="2500" height="180" applyTarget="2" castTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty count="0" rate="1" attackMaterial="103" />
+				<conditionSkill splash="1" level="1" skillID="40600287" interval="900" />
+			</attack>
+			<attack point="p5" targetCount="1" cubeMagicPathID="6339" attacktype="2" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+				<rangeProperty includeCaster="2" rangeType="cylinder" distance="2500" height="180" applyTarget="2" castTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty count="0" rate="1" attackMaterial="103" />
+				<conditionSkill splash="1" level="1" skillID="40600287" interval="900" />
+			</attack>
+		</motion>
+	</level>
+	<level value="5">
+		<beginCondition probability="1">
+			<stat hp="1" />
+		</beginCondition>
+		<motion>
+			<motionProperty sequenceName="Jump_Land_A" motionEffect="NPC/Skill/RobotHyperBooster/Eff_RobotHyperBooster_Jump_Land_A.xml" faceTarget="0" doesPlayIdleOnSkillEnd="false" />
+			<attack point="p99" targetCount="10" direction="1" attacktype="1" brokenOffence="99" brokenForce="3" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+				<rangeProperty rangeType="cylinder" distance="200" rangeOffset="0.000000,0.000000,50.000000" height="350" applyTarget="1" castTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="0.01" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="2" />
+			</attack>
+		</motion>
+	</level>
+</ms2>

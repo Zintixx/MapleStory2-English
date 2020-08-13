@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 파싱해서 사용하는 데이터이니 직접 수정하지 마세요 -->
+<ms2 feature="">
+	<basic>
+		<ui attackType="3" />
+		<kinds subType="4" rangeType="2" unrideOnUse="1" />
+		<stateAttr autoTargetingType="1" ignoreReduceCooldown="1" />
+	</basic>
+	<level value="1">
+		<beginCondition probability="1">
+			<stat hp="1" />
+		</beginCondition>
+		<autoTargeting autoTargetingMaxDegree="90" />
+		<motion>
+			<motionProperty sequenceName="ObjectWeapon_TypeB_Attack_01_B" IgnoreOptimalHideCastEffect="true" IgnoreOptimalHideEndEffect="true" IgnoreOptimalHideSplashInvokeEffect="true" IgnoreOptimalHideSplashEndEffect="true" holdWeapon="0" />
+			<attack point="p0" targetCount="1" magicPathID="99900924" cubeMagicPathID="999009241" attacktype="3" hitImmuneBreak="5" brokenOffence="1" unrideOnHit="1" compulsionType="1">
+				<rangeProperty rangeType="box" distance="3000" height="150" width="450" applyTarget="1" />
+				<arrowProperty rayPhysxTest="1" nonTarget="1" collision="300.000000,25.000000,150.000000" collisionAdd="0.000000,25.000000,150.000000" effect="Item/Skill/Eff_ObjectWeapon_SpringBombThrow_Ball_01.xml" effectRemain="CH/Weapon/Cannon/Eff_Cannon_Attack01_Remain_01.xml" />
+				<damageProperty IgnoreOptimalHideDamageHitEffect="true" IgnoreOptimalHideDamageRemainEffect="true" attackMaterial="1" />
+				<conditionSkill level="1" skillID="50000955" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="50000337" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="0" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="1" skillID="50000955" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="50000338" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="0" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="1" skillID="50000959" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="50000340" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="0" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill splash="1" level="1" skillID="99900925" immediateActive="1" />
+			</attack>
+		</motion>
+	</level>
+</ms2>

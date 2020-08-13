@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 파싱해서 사용하는 데이터이니 직접 수정하지 마세요 -->
+<ms2 feature="">
+	<basic>
+		<ui attackType="2" />
+		<kinds element="7" />
+	</basic>
+	<level value="1">
+		<beginCondition probability="1" allowBattleRidingState="1">
+			<stat hp="1" />
+		</beginCondition>
+		<motion>
+			<motionProperty motionEffect="NPC/Skill/TurkaHoodForce/Eff_TurkaHoodForce_MeteorDrop.xml" faceTarget="0" />
+			<attack point="p0" targetCount="10" attacktype="2" brokenOffence="2" brokenForce="3" unrideOnHit="1">
+				<rangeProperty rangeType="cylinder" distance="210" rangeAdd="0.000000,0.000000,75.000000" height="900" applyTarget="5" castTarget="1" />
+				<damageProperty rate="1.3" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="102" />
+				<conditionSkill level="1" skillID="50000962" skillTarget="2" skillOwner="1">
+					<beginCondition probability="1" allowBattleRidingState="1">
+						<target hasBuffID="73000012" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="0" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+			</attack>
+		</motion>
+	</level>
+</ms2>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 파싱해서 사용하는 데이터이니 직접 수정하지 마세요 -->
+<ms2 feature="">
+	<basic>
+		<ui exceptUI="1" attackType="2" />
+		<kinds subType="1" rangeType="2" unrideOnUse="1" />
+		<stateAttr autoTargetingType="1" ignoreReduceCooldown="1" />
+	</basic>
+	<level value="1">
+		<beginCondition probability="1" cooldownTime="0.5" allowMapleSurvival="1">
+			<stat hp="1" />
+			<weapon lh="0" rh="56" />
+		</beginCondition>
+		<changeSkill originSkillID="1200011" />
+		<autoTargeting autoTargetingMaxDegree="90" />
+		<push back="150" />
+		<motion>
+			<motionProperty sequenceName="Orb_Jump_Attack_A" strTagEffects="e0=CH/Weapon/Orb/Eff_Orb3_JumpAttack_Cast_01.xml" />
+			<attack point="p0" targetCount="3" magicPathID="1200003" attacktype="2" hitImmuneBreak="1" brokenOffence="2" unrideOnHit="1">
+				<rangeProperty rangeType="frustum" distance="800" rangeAdd="0.000000,0.000000,120.000000" height="150" width="150" endWidth="900" applyTarget="1" />
+				<arrowProperty rayPhysxTest="1" nonTarget="1" collision="50.000000,25.000000,25.000000" collisionAdd="0.000000,25.000000,25.000000" effect="CH/Weapon/Orb/Eff_Orb_Attack01_Ball_01.xml" effectRemain="CH/Weapon/Orb/Eff_Orb_Attack01_Remain_01.xml" effectDestroy="CH/Weapon/Orb/Eff_Orb_Attack01_Destroy_01.xml" />
+				<damageProperty rate="0.21" effectHit="CH/Weapon/Orb/Eff_Orb_Hit_01.xml" attackMaterial="1" />
+			</attack>
+		</motion>
+	</level>
+</ms2>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 파싱해서 사용하는 데이터이니 직접 수정하지 마세요 -->
+<ms2 feature="">
+	<basic feature="JobChange_01">
+		<ui icon="./Data/Resource/Image/skill/icon/11100062.png" />
+		<kinds subType="2" spRecoverySkill="1" unrideOnUse="1" />
+		<stateAttr autoTargeting="0" notKeepEffect="1" useInGameTime="1" rechargeMaxCount="2" />
+	</basic>
+	<level value="1" feature="JobChange_01">
+		<beginCondition probability="1" cooldownTime="12" defaultRechargingCooldownTime="0.35" useCoolDownShowUI="1">
+			<stat hp="1" />
+		</beginCondition>
+		<conditionSkill level="1" skillID="11100065" skillTarget="1">
+			<beginCondition probability="1" allowBattleRidingState="1" />
+		</conditionSkill>
+		<conditionSkill level="1" skillID="11100063" skillTarget="1">
+			<beginCondition probability="1" allowBattleRidingState="1" />
+		</conditionSkill>
+		<motion>
+			<motionProperty sequenceName="SoulBinder_AwakeningMantra_A" motionEffect="CH/Skill/SoulBinder/Eff_SoulBinder_AwakenMatraRelease_Cast_01.xml" />
+			<attack point="p0" targetCount="1" releaseObjectWeaponOnHit="0">
+				<rangeProperty includeCaster="1" rangeType="cylinder" distance="150" height="150" applyTarget="2" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty count="0" attackMaterial="1000" />
+			</attack>
+		</motion>
+	</level>
+</ms2>

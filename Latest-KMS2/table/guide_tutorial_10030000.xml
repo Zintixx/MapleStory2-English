@@ -33,6 +33,7 @@
 			<action type="limitDialog" dialogName="CheckoutDialog" />
 			<action type="limitDialog" dialogName="ShopDialog" />
 			<action type="limitDialog" dialogName="StoreDialog" />
+			<action type="limitDialog" dialogName="KeySettingSelectDialog" />
 			<action type="limit" limit="KeyConfigTab" />
 			<action type="limit" limit="ItemDrop" />
 			<action type="limit" limit="ItemPutOff" />
@@ -57,59 +58,13 @@
 			<action type="OpenDialog" dialogName="KeySettingSelectDialog" />
 		</openAction>
 	</event>
-	<event id="10030006" isForce="1" saveId="10030005" saveStep="20" desc="키 타입 설정 버튼" feature="MouseContoller">
+	<event id="10030008" isForce="1" isNoSave="1" desc="트리거대기" feature="MouseContoller">
 		<open>
 			<condition type="fieldId" value="63000024" />
 			<condition type="guideClear" id="10030005" />
 		</open>
 		<close>
-			<condition type="anyOne">
-				<condition type="timeout" value="3000" />
-				<condition dialogName="KeySettingSelectDialog" isOpen="1" type="dialog" />
-			</condition>
-		</close>
-		<openAction>
-			<action type="effect" path="UGC_Test/Eff_Tutorial_Sound_target.xml">
-				<cube pos="-150,-1050,1800" />
-			</action>
-			<action type="uiArrowDialog" align="1" direction="0" childName="m_keyboardMode" dialogName="UpperHudDialog" entityId="10020005" offset="-3,15,0" textId="10960" />
-			<action type="uiArrowDialog" align="1" direction="0" childName="m_mouseMode" dialogName="UpperHudDialog" entityId="10020006" offset="-3,15,0" textId="10960" />
-			<action type="uiSummary" isNotClose="0" textId="10961" />
-			<action type="limitDialog" dialogName="InventoryDialog" />
-			<action type="limitDialog" dialogName="MyInfoDialog" />
-			<action type="limit" limit="ItemPutOn" />
-			<action type="limit" limit="PlayerMove" />
-		</openAction>
-	</event>
-	<event id="10030007" isForce="1" saveId="10030005" saveStep="30" desc="게임패드온오프 버튼" feature="GamePad">
-		<open>
-			<condition type="fieldId" value="63000024" />
-			<condition type="guideClear" id="10030006" />
-			<condition dialogName="KeySettingSelectDialog" isOpen="0" type="dialog" />
-		</open>
-		<close>
-			<condition type="timeout" value="3000" />
-		</close>
-		<openAction>
-			<action type="effect" path="UGC_Test/Eff_Tutorial_Sound_target.xml">
-				<cube pos="-150,-1050,1800" />
-			</action>
-			<action type="uiArrowDialog" align="1" direction="0" childName="m_gamePadOn" dialogName="UpperHudDialog" entityId="100200071" offset="-3,15,0" textId="10970" />
-			<action type="uiArrowDialog" align="1" direction="0" childName="m_gamePadOff" dialogName="UpperHudDialog" entityId="100200072" offset="-3,15,0" textId="10970" />
-			<action type="uiSummary" isNotClose="0" textId="10971" />
-			<action type="limitDialog" dialogName="InventoryDialog" />
-			<action type="limitDialog" dialogName="MyInfoDialog" />
-			<action type="limit" limit="ItemPutOn" />
-			<action type="limit" limit="PlayerMove" />
-		</openAction>
-	</event>
-	<event id="10030008" isForce="1" isNoSave="1" desc="트리거대기" feature="MouseContoller">
-		<open>
-			<condition type="fieldId" value="63000024" />
-			<condition type="guideClear" id="10030006" />
-		</open>
-		<close>
-			<condition type="timeout" value="3500" />
+			<condition type="timeout" value="1000" />
 		</close>
 		<openAction>
 			<action type="limitDialog" dialogName="InventoryDialog" />

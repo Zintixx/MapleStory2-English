@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 파싱해서 사용하는 데이터이니 직접 수정하지 마세요 -->
+<ms2 feature="">
+	<basic>
+		<kinds rangeType="1" />
+	</basic>
+	<level value="1">
+		<beginCondition probability="1">
+			<stat hp="1" />
+		</beginCondition>
+		<motion>
+			<motionProperty sequenceName="Attack_01_J" sequenceSpeed="0.6" />
+			<attack point="p0" targetCount="10" unrideOnHit="1">
+				<rangeProperty applyTarget="1" castTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="1" />
+			</attack>
+		</motion>
+	</level>
+	<level value="2">
+		<beginCondition probability="1">
+			<stat hp="1" />
+		</beginCondition>
+		<detectProperty rangeType="box" distance="300" height="200" width="400" />
+		<motion>
+			<motionProperty sequenceName="Attack_02_J" motionEffect="NPC/Skill/VasaraChen/Eff_VasaraChen_Attack_02_J_Loop_01.xml" movedistance="400" />
+			<attack point="p0" targetCount="10" attacktype="1" brokenOffence="1" brokenForce="1" unrideOnHit="1">
+				<rangeProperty rangeType="cylinder" distance="200" height="300" applyTarget="1" castTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="0.8" effectHit="NPC/Skill/VasaraChen/Eff_VasaraChen_Attack_Hit.xml" attackMaterial="1" />
+			</attack>
+			<attack point="p1" targetCount="10" attacktype="1" brokenOffence="1" brokenForce="1" unrideOnHit="1">
+				<rangeProperty rangeType="cylinder" distance="200" height="300" applyTarget="1" castTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="0.8" effectHit="NPC/Skill/VasaraChen/Eff_VasaraChen_Attack_Hit.xml" attackMaterial="1" />
+			</attack>
+		</motion>
+	</level>
+	<level value="3">
+		<beginCondition probability="1">
+			<stat hp="1" />
+		</beginCondition>
+		<detectProperty rangeType="box" distance="300" height="200" width="400" />
+		<motion>
+			<motionProperty sequenceName="Attack_02_J" motionEffect="NPC/Skill/VasaraChen/Eff_VasaraChen_Attack_02_J_Loop_01.xml" movedistance="400" />
+			<attack point="p0" targetCount="10" attacktype="1" brokenOffence="1" brokenForce="1" unrideOnHit="1">
+				<rangeProperty rangeType="cylinder" distance="200" height="300" applyTarget="1" castTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="0.9" effectHit="NPC/Skill/VasaraChen/Eff_VasaraChen_Attack_Hit.xml" attackMaterial="1" />
+			</attack>
+			<attack point="p1" targetCount="10" attacktype="1" brokenOffence="1" brokenForce="1" unrideOnHit="1">
+				<rangeProperty rangeType="cylinder" distance="200" height="300" applyTarget="1" castTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="0.9" effectHit="NPC/Skill/VasaraChen/Eff_VasaraChen_Attack_Hit.xml" attackMaterial="1" />
+			</attack>
+		</motion>
+	</level>
+	<level value="4">
+		<beginCondition probability="1">
+			<stat hp="1" />
+		</beginCondition>
+		<detectProperty rangeType="box" distance="300" height="200" width="400" />
+		<motion>
+			<motionProperty sequenceName="Attack_02_J" motionEffect="NPC/Skill/VasaraChen/Eff_VasaraChen_Attack_02_J_Loop_01.xml" movedistance="400" />
+			<attack point="p0" targetCount="10" attacktype="1" brokenOffence="1" brokenForce="1" unrideOnHit="1">
+				<rangeProperty rangeType="cylinder" distance="200" height="300" applyTarget="1" castTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="1" effectHit="NPC/Skill/VasaraChen/Eff_VasaraChen_Attack_Hit.xml" attackMaterial="1" />
+			</attack>
+			<attack point="p1" targetCount="10" attacktype="1" brokenOffence="1" brokenForce="1" unrideOnHit="1">
+				<rangeProperty rangeType="cylinder" distance="200" height="300" applyTarget="1" castTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="1" effectHit="NPC/Skill/VasaraChen/Eff_VasaraChen_Attack_Hit.xml" attackMaterial="1" />
+			</attack>
+		</motion>
+	</level>
+	<level value="5">
+		<beginCondition probability="1">
+			<stat hp="1" />
+		</beginCondition>
+		<detectProperty rangeType="box" distance="300" height="200" width="400" />
+		<motion>
+			<motionProperty sequenceName="Attack_02_J" motionEffect="NPC/Skill/VasaraChen/Eff_VasaraChen_Attack_02_J_Loop_01.xml" movedistance="400" />
+			<attack point="p0" targetCount="10" attacktype="1" brokenOffence="1" brokenForce="1" unrideOnHit="1">
+				<rangeProperty rangeType="cylinder" distance="200" height="300" applyTarget="1" castTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="1.2" effectHit="NPC/Skill/VasaraChen/Eff_VasaraChen_Attack_Hit.xml" attackMaterial="1" />
+			</attack>
+			<attack point="p1" targetCount="10" attacktype="1" brokenOffence="1" brokenForce="1" unrideOnHit="1">
+				<rangeProperty rangeType="cylinder" distance="200" height="300" applyTarget="1" castTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="1.2" effectHit="NPC/Skill/VasaraChen/Eff_VasaraChen_Attack_Hit.xml" attackMaterial="1" />
+			</attack>
+		</motion>
+	</level>
+	<level value="6">
+		<beginCondition probability="1">
+			<stat hp="1" />
+		</beginCondition>
+		<detectProperty rangeType="box" distance="300" height="200" width="400" />
+		<motion>
+			<motionProperty sequenceName="Attack_03_J" />
+			<attack point="p0" targetCount="1" unrideOnHit="1">
+				<rangeProperty applyTarget="1" castTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="1.5" />
+			</attack>
+		</motion>
+	</level>
+</ms2>

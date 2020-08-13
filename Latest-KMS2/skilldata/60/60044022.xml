@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 파싱해서 사용하는 데이터이니 직접 수정하지 마세요 -->
+<ms2 feature="">
+	<basic>
+		<ui attackType="1" />
+		<kinds rangeType="1" element="7" />
+	</basic>
+	<level value="3">
+		<beginCondition probability="1">
+			<stat hp="1" />
+		</beginCondition>
+		<motion>
+			<motionProperty splashInvokeEffect="NPC/Skill/BullAxePurple/Eff_BullAxePurple_Attack_B_02_SplashInvoke_01.xml" faceTarget="0" />
+			<attack point="p0" targetCount="5" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="3" unrideOnHit="1">
+				<rangeProperty rangeType="cylinder" distance="300" rangeAdd="0.000000,0.000000,200.000000" height="200" applyTarget="1" castTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="0.5" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="150" pushduration="0.7" pushEaseType="1" pushUpDistance="200" pushDown="1" attackMaterial="2" />
+			</attack>
+		</motion>
+	</level>
+</ms2>

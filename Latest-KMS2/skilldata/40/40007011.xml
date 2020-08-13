@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 파싱해서 사용하는 데이터이니 직접 수정하지 마세요 -->
+<ms2 feature="">
+	<basic>
+		<ui attackType="2" />
+		<kinds rangeType="1" element="6" />
+		<stateAttr superArmor="1" />
+	</basic>
+	<level value="1">
+		<beginCondition probability="1">
+			<stat hp="1" />
+		</beginCondition>
+		<detectProperty rangeType="box" distance="180" rangeOffset="0.000000,0.000000,50.000000" height="50" width="100" />
+		<motion>
+			<motionProperty sequenceName="Attack_Idle_A" faceTarget="0" />
+			<attack point="p0" targetCount="1" attacktype="2" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+				<rangeProperty rangeType="box" distance="180" height="200" width="100" applyTarget="1" castTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty count="0" />
+			</attack>
+		</motion>
+		<motion>
+			<motionProperty sequenceName="Attack_01_A" motionEffect="NPC/Skill/HornMushroom/Eff_HornMushroom_Attack_Wave.xml" faceTarget="0" />
+			<attack point="p0" targetCount="1" attacktype="2" brokenOffence="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+				<rangeProperty rangeType="frustum" distance="200" rangeOffset="0.000000,50.000000,0.000000" height="200" width="100" endWidth="150" applyTarget="1" castTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="0.5" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
+				<conditionSkill level="1" skillID="40007011" skillTarget="2" skillOwner="1" />
+			</attack>
+			<attack point="p1" targetCount="1" attacktype="2" brokenOffence="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+				<rangeProperty rangeType="frustum" distance="200" rangeOffset="0.000000,50.000000,0.000000" height="200" width="100" endWidth="150" applyTarget="1" castTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="0.5" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
+				<conditionSkill level="1" skillID="40007011" skillTarget="2" skillOwner="1" />
+			</attack>
+		</motion>
+	</level>
+</ms2>

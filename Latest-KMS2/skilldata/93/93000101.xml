@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 파싱해서 사용하는 데이터이니 직접 수정하지 마세요 -->
+<ms2 feature="">
+	<basic>
+		<ui icon="./Data/Resource/Image/skill/icon/10600091.png" attackType="1" />
+		<kinds type="3" subType="8" unrideOnUse="1" />
+		<stateAttr autoTargeting="0" keyIsDown="1" cooldownGroupID="63100000" />
+	</basic>
+	<level value="1">
+		<beginCondition probability="1" cooldownTime="3" useCoolDownShowUI="1">
+			<stat hp="1" />
+		</beginCondition>
+		<targetItem>
+			<item id="63100009" count="1" />
+		</targetItem>
+		<motion>
+			<motionProperty sequenceName="HeavyGunner_MedicalKit_A" motionEffect="Item/Pet/Eff_Pet_Trap_D01_Cast_01.xml" holdWeapon="0" />
+			<attack point="p0" targetCount="1" cubeMagicPathID="930000011" attacktype="1" compulsionType="1">
+				<petTamingProperty tamingGroup="4" trapLevel="1" />
+				<rangeProperty applyTarget="8" />
+				<arrowProperty rayPhysxTest="1" nonTarget="1" />
+				<conditionSkill splash="1" level="1" skillID="93000092" delay="30000" useDirection="1" onlySensingActive="1" />
+			</attack>
+		</motion>
+	</level>
+</ms2>

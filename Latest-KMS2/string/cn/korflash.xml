@@ -356,6 +356,7 @@
   <key id="$s_gameoption_whisperNotify" value="拒绝悄悄话" />
   <key id="$s_gameoption_homeRequest" value="拒绝做客邀请" />
   <key id="$s_gameoption_coupleEmotionRequest" value="拒绝双人动作邀请" />
+  <key id="$s_gameoption_singleriding" value="KORFLASH_$S_GAMEOPTION_SINGLERIDING_VALUE" />
   <key id="$s_gameoption_muteAll" value="静音" />
   <key id="$s_gameoption_playAll" value="一直播放声音" />
   <key id="$s_gameoption_disable_job_sound" value="使用通用语音" />
@@ -407,6 +408,7 @@
   <key id="$s_gameoption_optimizer_count" value="" />
   <key id="$s_gameoption_optimizer_useOptimizer" value="使用自动优化" />
   <key id="$s_gameoption_optimizer_warning" value="优化后进行游戏。根据游戏\n环境的变化，操作可能将变得较不流畅。\n如果游戏状况不稳定，请在选项中取消勾选。" />
+  <key id="$s_gameoption_optimizer_show_physx" value="KORFLASH_$S_GAMEOPTION_OPTIMIZER_SHOW_PHYSX_VALUE" />
   <!--skill-->
   <key id="$s_skill_title" value="技能" />
   <key id="$s_skill_active" value="主动" />
@@ -1690,7 +1692,7 @@
   <key id="$s_itembreak_break" value="分解" />
   <key id="$s_itembreak_retry" value="返回" />
   <key id="$s_itembreak_close" value="关闭" />
-  <key id="$s_itembreak_desc" value="分解道具后可以获得各种材料。\n请把想要分解的道具放上去。\n\n可分解道具：20级以上的装备道具" />
+  <key id="$s_itembreak_desc" value="分解道具后可以获得各种材料。\n请把想要分解的道具放上去。\n\n可分解道具：装备道具、宠物" />
   <key id="$s_itembreak_preview" value="分解获得道具" />
   <key id="$s_itembreak_desc_skin" value="时装道具" feature="SkinBreak" />
   <key id="$s_itembreak_desc_socket" value="宝石" feature="ItemSocketSystem" />
@@ -2072,8 +2074,6 @@
   <key id="$s_dungeon_room_high_score" value="最高纪录" />
   <key id="$s_dungeon_room_season_score" value="一周最高纪录" />
   <key id="$s_dungeon_room_findHelper_icon_tooltip" value="&lt;FONT color='#FFD200' size='15' &gt;纪念币获得次数&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;和新手冒险家一起通关副本，可以获得老司机币（获得数量与副本奖励获得次数无关）。\n在女王镇的斯巴达处，可以交换丰富的道具。\n\n老司机币一天最多只能获得10次。\n纪念币获得次数会在每天零点初始化。" feature="FindDungeonHelp" />
-  <key id="$s_dungeon_room_findHelper_button_tooltip" value="&lt;FONT color='#FFD200' size='15' &gt;寻求帮助&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;\n可以向熟悉这个副本的资深冒险家寻求帮助。\n点击按钮，寻找可以和你一起进行游戏的资深冒险家吧！\n\n&lt;FONT color='#FFD200' size='15' &gt;新手冒险家&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;\n目前还不熟悉这个副本。\n通关副本达到10次以上，就可以成为资深冒险家。\n但不满50级的冒险副本，只要角色达到50级以上，\n就可以自动成为资深冒险家。" feature="FindDungeonHelp" />
-  <key id="$s_dungeon_room_findHelper_button_tooltip" value="&lt;FONT color='#FFD200' size='15' &gt;寻求帮助&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;\n可以向熟悉这个副本的资深冒险家寻求帮助。\n点击按钮，寻找可以和你一起进行游戏的资深冒险家吧！\n\n&lt;FONT color='#FFD200' size='15' &gt;新手冒险家&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;\n目前还不熟悉这个副本。\n通关副本达到一定次数以上，就可以成为资深冒险家。\n但不满50级的冒险副本，只要角色达到50级以上，\n就可以自动成为资深冒险家。" feature="FindDungeonHelp" locale="CN" />
   <key id="$s_dungeon_room_change_expert_tooltip" value="&lt;FONT color='#FFD200' size='15' &gt;成为资深冒险家&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;\n通关副本的次数已达到成为资深冒险家的要求。\n成为资深冒险家后，和新手冒险家一起通关副本，\n可以获得额外奖励。\n点击按钮成为资深冒险家吧！" />
   <key id="$s_dungeon_room_findHelper_event" value="双倍老司机币活动" feature="FindDungeonHelp" />
   <key id="$s_dungeon_room_findMember_button" value="邀请队员" feature="FindDungeonHelp" />
@@ -3678,7 +3678,7 @@
   <key id="$s_world_champion_explain4" value="&lt;font color='#ffd200'&gt;排名奖励&lt;/FONT&gt;：下次维护后通过邮件领取" feature="WorldChampionMushroom" />
   <key id="$s_world_champion_move_field" value="前往出现地点" />
   <!-- 버닝 레벨업 이벤트, UICharacterListDialog -->
-  <key id="$s_burning_levelup_event_desc_btn" value="直升燃烧活动" locale="" feature="Event" />
+  <key id="$s_burning_levelup_event_desc_btn" value="斗燃活动" locale="" feature="Event" />
   <!-- UIStormBar -->
   <key id="$stormbar_meter" value="{0}M" />
   <!-- 전직 UI -->

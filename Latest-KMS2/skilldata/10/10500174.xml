@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 파싱해서 사용하는 데이터이니 직접 수정하지 마세요 -->
+<ms2 feature="">
+	<basic feature="JobChange_01">
+		<ui icon="./Data/Resource/Image/skill/icon/10500175.png" exceptUI="1" attackType="1" />
+		<kinds subType="2" rangeType="2" jump="10500174" element="1" unrideOnUse="1" groupIDs="10500202" />
+		<stateAttr moveType="1" keyIsDown="1" useDefaultSkill="1" clearCooldownFromPVPZone="1" ignoreReduceCooldown="1" />
+	</basic>
+	<level value="1" feature="JobChange_01">
+		<beginCondition probability="1" cooldownTime="0.25">
+			<stat hp="1" />
+			<weapon lh="0" rh="51" />
+		</beginCondition>
+		<changeSkill originSkillID="10500171" />
+		<autoTargeting autoTargetingMaxDegree="90" />
+		<motion>
+			<motionProperty sequenceName="Ranger_BlowingArrow4_A" selfInputCombo="selfinputcombo" sequenceSpeed="0.8" strTagEffects="e0=CH/Skill/Ranger/Eff_Ranger_Blowing_Cast_04.xml" />
+			<attack point="p0" targetCount="1" magicPathID="105000174" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+				<rangeProperty rangeType="frustum" distance="900" height="150" width="150" endWidth="600" applyTarget="1" />
+				<arrowProperty rayPhysxTest="1" nonTarget="1" bounceType="3" bounceCount="8" collision="25.000000,100.000000,15.000000" collisionAdd="0.000000,25.000000,15.000000" effect="CH/Skill/Ranger/Eff_Ranger_Blowing_Ball_05.xml" effectDestroy="CH/Skill/Ranger/Eff_Ranger_Blowing_Destroy_01.xml" />
+				<damageProperty rate="1.55" effectHit="CH/Skill/Ranger/Eff_Ranger_Blowing_Hit_02.xml" attackMaterial="100" />
+			</attack>
+			<attack point="p1" targetCount="1" magicPathID="105000175" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+				<rangeProperty rangeType="frustum" distance="900" height="150" width="150" endWidth="600" applyTarget="1" />
+				<arrowProperty rayPhysxTest="1" nonTarget="1" bounceType="3" bounceCount="8" collision="25.000000,100.000000,15.000000" collisionAdd="0.000000,25.000000,15.000000" effect="CH/Skill/Ranger/Eff_Ranger_Blowing_Ball_05.xml" effectDestroy="CH/Skill/Ranger/Eff_Ranger_Blowing_Destroy_01.xml" />
+				<damageProperty rate="1.55" effectHit="CH/Skill/Ranger/Eff_Ranger_Blowing_Hit_02.xml" attackMaterial="100" />
+			</attack>
+			<attack point="p2" targetCount="1" magicPathID="105000176" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+				<rangeProperty rangeType="frustum" distance="900" height="150" width="150" endWidth="600" applyTarget="1" />
+				<arrowProperty rayPhysxTest="1" nonTarget="1" bounceType="3" bounceCount="8" collision="25.000000,100.000000,15.000000" collisionAdd="0.000000,25.000000,15.000000" effect="CH/Skill/Ranger/Eff_Ranger_Blowing_Ball_05.xml" effectDestroy="CH/Skill/Ranger/Eff_Ranger_Blowing_Destroy_01.xml" />
+				<damageProperty rate="1.55" effectHit="CH/Skill/Ranger/Eff_Ranger_Blowing_Hit_02.xml" attackMaterial="100" />
+			</attack>
+			<attack point="p3" targetCount="3" magicPathID="105000216" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+				<rangeProperty rangeType="frustum" distance="950" height="150" width="150" endWidth="600" applyTarget="1" targetSelectType="3" />
+				<arrowProperty overlap="1" rayPhysxTest="1" effect="CH/Skill/Ranger/Eff_Ranger_BlowingGuided_Ball_01.xml" effectDestroy="CH/Skill/Ranger/Eff_Ranger_Blowing_Destroy_01.xml" />
+				<damageProperty rate="1.04" effectHit="CH/Skill/Ranger/Eff_Ranger_Blowing_Hit_02.xml" attackMaterial="100" />
+				<conditionSkill splash="1" level="1" skillID="10500175" />
+			</attack>
+		</motion>
+	</level>
+	<level value="2" feature="JobChange_01">
+		<beginCondition probability="1" cooldownTime="0.25">
+			<stat hp="1" />
+			<weapon lh="0" rh="51" />
+		</beginCondition>
+		<changeSkill originSkillID="10500171" originSkillLevel="2" />
+		<autoTargeting autoTargetingMaxDegree="90" />
+		<motion>
+			<motionProperty sequenceName="Ranger_BlowingArrow4_A" selfInputCombo="selfinputcombo" sequenceSpeed="0.8" strTagEffects="e0=CH/Skill/Ranger/Eff_Ranger_Blowing_Cast_04.xml" />
+			<attack point="p0" targetCount="1" magicPathID="105000174" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+				<rangeProperty rangeType="frustum" distance="900" height="150" width="150" endWidth="600" applyTarget="1" />
+				<arrowProperty rayPhysxTest="1" nonTarget="1" bounceType="3" bounceCount="8" collision="25.000000,100.000000,15.000000" collisionAdd="0.000000,25.000000,15.000000" effect="CH/Skill/Ranger/Eff_Ranger_Blowing_Ball_05.xml" effectDestroy="CH/Skill/Ranger/Eff_Ranger_Blowing_Destroy_01.xml" />
+				<damageProperty rate="1.63" effectHit="CH/Skill/Ranger/Eff_Ranger_Blowing_Hit_02.xml" attackMaterial="100" />
+			</attack>
+			<attack point="p1" targetCount="1" magicPathID="105000175" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+				<rangeProperty rangeType="frustum" distance="900" height="150" width="150" endWidth="600" applyTarget="1" />
+				<arrowProperty rayPhysxTest="1" nonTarget="1" bounceType="3" bounceCount="8" collision="25.000000,100.000000,15.000000" collisionAdd="0.000000,25.000000,15.000000" effect="CH/Skill/Ranger/Eff_Ranger_Blowing_Ball_05.xml" effectDestroy="CH/Skill/Ranger/Eff_Ranger_Blowing_Destroy_01.xml" />
+				<damageProperty rate="1.63" effectHit="CH/Skill/Ranger/Eff_Ranger_Blowing_Hit_02.xml" attackMaterial="100" />
+			</attack>
+			<attack point="p2" targetCount="1" magicPathID="105000176" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+				<rangeProperty rangeType="frustum" distance="900" height="150" width="150" endWidth="600" applyTarget="1" />
+				<arrowProperty rayPhysxTest="1" nonTarget="1" bounceType="3" bounceCount="8" collision="25.000000,100.000000,15.000000" collisionAdd="0.000000,25.000000,15.000000" effect="CH/Skill/Ranger/Eff_Ranger_Blowing_Ball_05.xml" effectDestroy="CH/Skill/Ranger/Eff_Ranger_Blowing_Destroy_01.xml" />
+				<damageProperty rate="1.63" effectHit="CH/Skill/Ranger/Eff_Ranger_Blowing_Hit_02.xml" attackMaterial="100" />
+			</attack>
+			<attack point="p3" targetCount="3" magicPathID="105000216" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+				<rangeProperty rangeType="frustum" distance="950" height="150" width="150" endWidth="600" applyTarget="1" targetSelectType="3" />
+				<arrowProperty overlap="1" rayPhysxTest="1" effect="CH/Skill/Ranger/Eff_Ranger_BlowingGuided_Ball_01.xml" effectDestroy="CH/Skill/Ranger/Eff_Ranger_Blowing_Destroy_01.xml" />
+				<damageProperty rate="1.08" effectHit="CH/Skill/Ranger/Eff_Ranger_Blowing_Hit_02.xml" attackMaterial="100" />
+				<conditionSkill splash="1" level="2" skillID="10500175" />
+			</attack>
+		</motion>
+	</level>
+	<level value="3" feature="JobChange_01">
+		<beginCondition probability="1" cooldownTime="0.25">
+			<stat hp="1" />
+			<weapon lh="0" rh="51" />
+		</beginCondition>
+		<changeSkill originSkillID="10500171" originSkillLevel="3" />
+		<autoTargeting autoTargetingMaxDegree="90" />
+		<motion>
+			<motionProperty sequenceName="Ranger_BlowingArrow4_A" selfInputCombo="selfinputcombo" sequenceSpeed="0.8" strTagEffects="e0=CH/Skill/Ranger/Eff_Ranger_Blowing_Cast_04.xml" />
+			<attack point="p0" targetCount="1" magicPathID="105000174" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+				<rangeProperty rangeType="frustum" distance="900" height="150" width="150" endWidth="600" applyTarget="1" />
+				<arrowProperty rayPhysxTest="1" nonTarget="1" bounceType="3" bounceCount="8" collision="25.000000,100.000000,15.000000" collisionAdd="0.000000,25.000000,15.000000" effect="CH/Skill/Ranger/Eff_Ranger_Blowing_Ball_05.xml" effectDestroy="CH/Skill/Ranger/Eff_Ranger_Blowing_Destroy_01.xml" />
+				<damageProperty rate="1.71" effectHit="CH/Skill/Ranger/Eff_Ranger_Blowing_Hit_02.xml" attackMaterial="100" />
+			</attack>
+			<attack point="p1" targetCount="1" magicPathID="105000175" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+				<rangeProperty rangeType="frustum" distance="900" height="150" width="150" endWidth="600" applyTarget="1" />
+				<arrowProperty rayPhysxTest="1" nonTarget="1" bounceType="3" bounceCount="8" collision="25.000000,100.000000,15.000000" collisionAdd="0.000000,25.000000,15.000000" effect="CH/Skill/Ranger/Eff_Ranger_Blowing_Ball_05.xml" effectDestroy="CH/Skill/Ranger/Eff_Ranger_Blowing_Destroy_01.xml" />
+				<damageProperty rate="1.71" effectHit="CH/Skill/Ranger/Eff_Ranger_Blowing_Hit_02.xml" attackMaterial="100" />
+			</attack>
+			<attack point="p2" targetCount="1" magicPathID="105000176" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+				<rangeProperty rangeType="frustum" distance="900" height="150" width="150" endWidth="600" applyTarget="1" />
+				<arrowProperty rayPhysxTest="1" nonTarget="1" bounceType="3" bounceCount="8" collision="25.000000,100.000000,15.000000" collisionAdd="0.000000,25.000000,15.000000" effect="CH/Skill/Ranger/Eff_Ranger_Blowing_Ball_05.xml" effectDestroy="CH/Skill/Ranger/Eff_Ranger_Blowing_Destroy_01.xml" />
+				<damageProperty rate="1.71" effectHit="CH/Skill/Ranger/Eff_Ranger_Blowing_Hit_02.xml" attackMaterial="100" />
+			</attack>
+			<attack point="p3" targetCount="3" magicPathID="105000216" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+				<rangeProperty rangeType="frustum" distance="950" height="150" width="150" endWidth="600" applyTarget="1" targetSelectType="3" />
+				<arrowProperty overlap="1" rayPhysxTest="1" effect="CH/Skill/Ranger/Eff_Ranger_BlowingGuided_Ball_01.xml" effectDestroy="CH/Skill/Ranger/Eff_Ranger_Blowing_Destroy_01.xml" />
+				<damageProperty rate="1.12" effectHit="CH/Skill/Ranger/Eff_Ranger_Blowing_Hit_02.xml" attackMaterial="100" />
+				<conditionSkill splash="1" level="3" skillID="10500175" />
+			</attack>
+		</motion>
+	</level>
+	<level value="4" feature="JobChange_01">
+		<beginCondition probability="1" cooldownTime="0.25">
+			<stat hp="1" />
+			<weapon lh="0" rh="51" />
+		</beginCondition>
+		<changeSkill originSkillID="10500171" originSkillLevel="4" />
+		<autoTargeting autoTargetingMaxDegree="90" />
+		<motion>
+			<motionProperty sequenceName="Ranger_BlowingArrow4_A" selfInputCombo="selfinputcombo" sequenceSpeed="0.8" strTagEffects="e0=CH/Skill/Ranger/Eff_Ranger_Blowing_Cast_04.xml" />
+			<attack point="p0" targetCount="1" magicPathID="105000174" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+				<rangeProperty rangeType="frustum" distance="900" height="150" width="150" endWidth="600" applyTarget="1" />
+				<arrowProperty rayPhysxTest="1" nonTarget="1" bounceType="3" bounceCount="8" collision="25.000000,100.000000,15.000000" collisionAdd="0.000000,25.000000,15.000000" effect="CH/Skill/Ranger/Eff_Ranger_Blowing_Ball_05.xml" effectDestroy="CH/Skill/Ranger/Eff_Ranger_Blowing_Destroy_01.xml" />
+				<damageProperty rate="1.79" effectHit="CH/Skill/Ranger/Eff_Ranger_Blowing_Hit_02.xml" attackMaterial="100" />
+			</attack>
+			<attack point="p1" targetCount="1" magicPathID="105000175" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+				<rangeProperty rangeType="frustum" distance="900" height="150" width="150" endWidth="600" applyTarget="1" />
+				<arrowProperty rayPhysxTest="1" nonTarget="1" bounceType="3" bounceCount="8" collision="25.000000,100.000000,15.000000" collisionAdd="0.000000,25.000000,15.000000" effect="CH/Skill/Ranger/Eff_Ranger_Blowing_Ball_05.xml" effectDestroy="CH/Skill/Ranger/Eff_Ranger_Blowing_Destroy_01.xml" />
+				<damageProperty rate="1.79" effectHit="CH/Skill/Ranger/Eff_Ranger_Blowing_Hit_02.xml" attackMaterial="100" />
+			</attack>
+			<attack point="p2" targetCount="1" magicPathID="105000176" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+				<rangeProperty rangeType="frustum" distance="900" height="150" width="150" endWidth="600" applyTarget="1" />
+				<arrowProperty rayPhysxTest="1" nonTarget="1" bounceType="3" bounceCount="8" collision="25.000000,100.000000,15.000000" collisionAdd="0.000000,25.000000,15.000000" effect="CH/Skill/Ranger/Eff_Ranger_Blowing_Ball_05.xml" effectDestroy="CH/Skill/Ranger/Eff_Ranger_Blowing_Destroy_01.xml" />
+				<damageProperty rate="1.79" effectHit="CH/Skill/Ranger/Eff_Ranger_Blowing_Hit_02.xml" attackMaterial="100" />
+			</attack>
+			<attack point="p3" targetCount="3" magicPathID="105000216" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+				<rangeProperty rangeType="frustum" distance="950" height="150" width="150" endWidth="600" applyTarget="1" targetSelectType="3" />
+				<arrowProperty overlap="1" rayPhysxTest="1" effect="CH/Skill/Ranger/Eff_Ranger_BlowingGuided_Ball_01.xml" effectDestroy="CH/Skill/Ranger/Eff_Ranger_Blowing_Destroy_01.xml" />
+				<damageProperty rate="1.16" effectHit="CH/Skill/Ranger/Eff_Ranger_Blowing_Hit_02.xml" attackMaterial="100" />
+				<conditionSkill splash="1" level="4" skillID="10500175" />
+			</attack>
+		</motion>
+	</level>
+	<level value="5" feature="JobChange_01">
+		<beginCondition probability="1" cooldownTime="0.25">
+			<stat hp="1" />
+			<weapon lh="0" rh="51" />
+		</beginCondition>
+		<changeSkill originSkillID="10500171" originSkillLevel="5" />
+		<autoTargeting autoTargetingMaxDegree="90" />
+		<motion>
+			<motionProperty sequenceName="Ranger_BlowingArrow4_A" selfInputCombo="selfinputcombo" sequenceSpeed="0.8" strTagEffects="e0=CH/Skill/Ranger/Eff_Ranger_Blowing_Cast_04.xml" />
+			<attack point="p0" targetCount="1" magicPathID="105000174" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+				<rangeProperty rangeType="frustum" distance="900" height="150" width="150" endWidth="600" applyTarget="1" />
+				<arrowProperty rayPhysxTest="1" nonTarget="1" bounceType="3" bounceCount="8" collision="25.000000,100.000000,15.000000" collisionAdd="0.000000,25.000000,15.000000" effect="CH/Skill/Ranger/Eff_Ranger_Blowing_Ball_05.xml" effectDestroy="CH/Skill/Ranger/Eff_Ranger_Blowing_Destroy_01.xml" />
+				<damageProperty rate="1.87" effectHit="CH/Skill/Ranger/Eff_Ranger_Blowing_Hit_02.xml" attackMaterial="100" />
+			</attack>
+			<attack point="p1" targetCount="1" magicPathID="105000175" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+				<rangeProperty rangeType="frustum" distance="900" height="150" width="150" endWidth="600" applyTarget="1" />
+				<arrowProperty rayPhysxTest="1" nonTarget="1" bounceType="3" bounceCount="8" collision="25.000000,100.000000,15.000000" collisionAdd="0.000000,25.000000,15.000000" effect="CH/Skill/Ranger/Eff_Ranger_Blowing_Ball_05.xml" effectDestroy="CH/Skill/Ranger/Eff_Ranger_Blowing_Destroy_01.xml" />
+				<damageProperty rate="1.87" effectHit="CH/Skill/Ranger/Eff_Ranger_Blowing_Hit_02.xml" attackMaterial="100" />
+			</attack>
+			<attack point="p2" targetCount="1" magicPathID="105000176" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+				<rangeProperty rangeType="frustum" distance="900" height="150" width="150" endWidth="600" applyTarget="1" />
+				<arrowProperty rayPhysxTest="1" nonTarget="1" bounceType="3" bounceCount="8" collision="25.000000,100.000000,15.000000" collisionAdd="0.000000,25.000000,15.000000" effect="CH/Skill/Ranger/Eff_Ranger_Blowing_Ball_05.xml" effectDestroy="CH/Skill/Ranger/Eff_Ranger_Blowing_Destroy_01.xml" />
+				<damageProperty rate="1.87" effectHit="CH/Skill/Ranger/Eff_Ranger_Blowing_Hit_02.xml" attackMaterial="100" />
+			</attack>
+			<attack point="p3" targetCount="3" magicPathID="105000216" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+				<rangeProperty rangeType="frustum" distance="950" height="150" width="150" endWidth="600" applyTarget="1" targetSelectType="3" />
+				<arrowProperty overlap="1" rayPhysxTest="1" effect="CH/Skill/Ranger/Eff_Ranger_BlowingGuided_Ball_01.xml" effectDestroy="CH/Skill/Ranger/Eff_Ranger_Blowing_Destroy_01.xml" />
+				<damageProperty rate="1.2" effectHit="CH/Skill/Ranger/Eff_Ranger_Blowing_Hit_02.xml" attackMaterial="100" />
+				<conditionSkill splash="1" level="5" skillID="10500175" />
+			</attack>
+		</motion>
+	</level>
+	<level value="6" feature="JobChange_01">
+		<beginCondition probability="1" cooldownTime="0.25">
+			<stat hp="1" />
+			<weapon lh="0" rh="51" />
+		</beginCondition>
+		<changeSkill originSkillID="10500171" originSkillLevel="6" />
+		<autoTargeting autoTargetingMaxDegree="90" />
+		<motion>
+			<motionProperty sequenceName="Ranger_BlowingArrow4_A" selfInputCombo="selfinputcombo" sequenceSpeed="0.8" strTagEffects="e0=CH/Skill/Ranger/Eff_Ranger_Blowing_Cast_04.xml" />
+			<attack point="p0" targetCount="1" magicPathID="105000174" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+				<rangeProperty rangeType="frustum" distance="900" height="150" width="150" endWidth="600" applyTarget="1" />
+				<arrowProperty rayPhysxTest="1" nonTarget="1" bounceType="3" bounceCount="8" collision="25.000000,100.000000,15.000000" collisionAdd="0.000000,25.000000,15.000000" effect="CH/Skill/Ranger/Eff_Ranger_Blowing_Ball_05.xml" effectDestroy="CH/Skill/Ranger/Eff_Ranger_Blowing_Destroy_01.xml" />
+				<damageProperty rate="1.95" effectHit="CH/Skill/Ranger/Eff_Ranger_Blowing_Hit_02.xml" attackMaterial="100" />
+			</attack>
+			<attack point="p1" targetCount="1" magicPathID="105000175" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+				<rangeProperty rangeType="frustum" distance="900" height="150" width="150" endWidth="600" applyTarget="1" />
+				<arrowProperty rayPhysxTest="1" nonTarget="1" bounceType="3" bounceCount="8" collision="25.000000,100.000000,15.000000" collisionAdd="0.000000,25.000000,15.000000" effect="CH/Skill/Ranger/Eff_Ranger_Blowing_Ball_05.xml" effectDestroy="CH/Skill/Ranger/Eff_Ranger_Blowing_Destroy_01.xml" />
+				<damageProperty rate="1.95" effectHit="CH/Skill/Ranger/Eff_Ranger_Blowing_Hit_02.xml" attackMaterial="100" />
+			</attack>
+			<attack point="p2" targetCount="1" magicPathID="105000176" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+				<rangeProperty rangeType="frustum" distance="900" height="150" width="150" endWidth="600" applyTarget="1" />
+				<arrowProperty rayPhysxTest="1" nonTarget="1" bounceType="3" bounceCount="8" collision="25.000000,100.000000,15.000000" collisionAdd="0.000000,25.000000,15.000000" effect="CH/Skill/Ranger/Eff_Ranger_Blowing_Ball_05.xml" effectDestroy="CH/Skill/Ranger/Eff_Ranger_Blowing_Destroy_01.xml" />
+				<damageProperty rate="1.95" effectHit="CH/Skill/Ranger/Eff_Ranger_Blowing_Hit_02.xml" attackMaterial="100" />
+			</attack>
+			<attack point="p3" targetCount="3" magicPathID="105000216" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+				<rangeProperty rangeType="frustum" distance="950" height="150" width="150" endWidth="600" applyTarget="1" targetSelectType="3" />
+				<arrowProperty overlap="1" rayPhysxTest="1" effect="CH/Skill/Ranger/Eff_Ranger_BlowingGuided_Ball_01.xml" effectDestroy="CH/Skill/Ranger/Eff_Ranger_Blowing_Destroy_01.xml" />
+				<damageProperty rate="1.24" effectHit="CH/Skill/Ranger/Eff_Ranger_Blowing_Hit_02.xml" attackMaterial="100" />
+				<conditionSkill splash="1" level="6" skillID="10500175" />
+			</attack>
+		</motion>
+	</level>
+	<level value="7" feature="JobChange_01">
+		<beginCondition probability="1" cooldownTime="0.25">
+			<stat hp="1" />
+			<weapon lh="0" rh="51" />
+		</beginCondition>
+		<changeSkill originSkillID="10500171" originSkillLevel="7" />
+		<autoTargeting autoTargetingMaxDegree="90" />
+		<motion>
+			<motionProperty sequenceName="Ranger_BlowingArrow4_A" selfInputCombo="selfinputcombo" sequenceSpeed="0.8" strTagEffects="e0=CH/Skill/Ranger/Eff_Ranger_Blowing_Cast_04.xml" />
+			<attack point="p0" targetCount="1" magicPathID="105000174" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+				<rangeProperty rangeType="frustum" distance="900" height="150" width="150" endWidth="600" applyTarget="1" />
+				<arrowProperty rayPhysxTest="1" nonTarget="1" bounceType="3" bounceCount="8" collision="25.000000,100.000000,15.000000" collisionAdd="0.000000,25.000000,15.000000" effect="CH/Skill/Ranger/Eff_Ranger_Blowing_Ball_05.xml" effectDestroy="CH/Skill/Ranger/Eff_Ranger_Blowing_Destroy_01.xml" />
+				<damageProperty rate="2.03" effectHit="CH/Skill/Ranger/Eff_Ranger_Blowing_Hit_02.xml" attackMaterial="100" />
+			</attack>
+			<attack point="p1" targetCount="1" magicPathID="105000175" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+				<rangeProperty rangeType="frustum" distance="900" height="150" width="150" endWidth="600" applyTarget="1" />
+				<arrowProperty rayPhysxTest="1" nonTarget="1" bounceType="3" bounceCount="8" collision="25.000000,100.000000,15.000000" collisionAdd="0.000000,25.000000,15.000000" effect="CH/Skill/Ranger/Eff_Ranger_Blowing_Ball_05.xml" effectDestroy="CH/Skill/Ranger/Eff_Ranger_Blowing_Destroy_01.xml" />
+				<damageProperty rate="2.03" effectHit="CH/Skill/Ranger/Eff_Ranger_Blowing_Hit_02.xml" attackMaterial="100" />
+			</attack>
+			<attack point="p2" targetCount="1" magicPathID="105000176" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+				<rangeProperty rangeType="frustum" distance="900" height="150" width="150" endWidth="600" applyTarget="1" />
+				<arrowProperty rayPhysxTest="1" nonTarget="1" bounceType="3" bounceCount="8" collision="25.000000,100.000000,15.000000" collisionAdd="0.000000,25.000000,15.000000" effect="CH/Skill/Ranger/Eff_Ranger_Blowing_Ball_05.xml" effectDestroy="CH/Skill/Ranger/Eff_Ranger_Blowing_Destroy_01.xml" />
+				<damageProperty rate="2.03" effectHit="CH/Skill/Ranger/Eff_Ranger_Blowing_Hit_02.xml" attackMaterial="100" />
+			</attack>
+			<attack point="p3" targetCount="3" magicPathID="105000216" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+				<rangeProperty rangeType="frustum" distance="950" height="150" width="150" endWidth="600" applyTarget="1" targetSelectType="3" />
+				<arrowProperty overlap="1" rayPhysxTest="1" effect="CH/Skill/Ranger/Eff_Ranger_BlowingGuided_Ball_01.xml" effectDestroy="CH/Skill/Ranger/Eff_Ranger_Blowing_Destroy_01.xml" />
+				<damageProperty rate="1.28" effectHit="CH/Skill/Ranger/Eff_Ranger_Blowing_Hit_02.xml" attackMaterial="100" />
+				<conditionSkill splash="1" level="7" skillID="10500175" />
+			</attack>
+		</motion>
+	</level>
+	<level value="8" feature="JobChange_01">
+		<beginCondition probability="1" cooldownTime="0.25">
+			<stat hp="1" />
+			<weapon lh="0" rh="51" />
+		</beginCondition>
+		<changeSkill originSkillID="10500171" originSkillLevel="8" />
+		<autoTargeting autoTargetingMaxDegree="90" />
+		<motion>
+			<motionProperty sequenceName="Ranger_BlowingArrow4_A" selfInputCombo="selfinputcombo" sequenceSpeed="0.8" strTagEffects="e0=CH/Skill/Ranger/Eff_Ranger_Blowing_Cast_04.xml" />
+			<attack point="p0" targetCount="1" magicPathID="105000174" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+				<rangeProperty rangeType="frustum" distance="900" height="150" width="150" endWidth="600" applyTarget="1" />
+				<arrowProperty rayPhysxTest="1" nonTarget="1" bounceType="3" bounceCount="8" collision="25.000000,100.000000,15.000000" collisionAdd="0.000000,25.000000,15.000000" effect="CH/Skill/Ranger/Eff_Ranger_Blowing_Ball_05.xml" effectDestroy="CH/Skill/Ranger/Eff_Ranger_Blowing_Destroy_01.xml" />
+				<damageProperty rate="2.11" effectHit="CH/Skill/Ranger/Eff_Ranger_Blowing_Hit_02.xml" attackMaterial="100" />
+			</attack>
+			<attack point="p1" targetCount="1" magicPathID="105000175" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+				<rangeProperty rangeType="frustum" distance="900" height="150" width="150" endWidth="600" applyTarget="1" />
+				<arrowProperty rayPhysxTest="1" nonTarget="1" bounceType="3" bounceCount="8" collision="25.000000,100.000000,15.000000" collisionAdd="0.000000,25.000000,15.000000" effect="CH/Skill/Ranger/Eff_Ranger_Blowing_Ball_05.xml" effectDestroy="CH/Skill/Ranger/Eff_Ranger_Blowing_Destroy_01.xml" />
+				<damageProperty rate="2.11" effectHit="CH/Skill/Ranger/Eff_Ranger_Blowing_Hit_02.xml" attackMaterial="100" />
+			</attack>
+			<attack point="p2" targetCount="1" magicPathID="105000176" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+				<rangeProperty rangeType="frustum" distance="900" height="150" width="150" endWidth="600" applyTarget="1" />
+				<arrowProperty rayPhysxTest="1" nonTarget="1" bounceType="3" bounceCount="8" collision="25.000000,100.000000,15.000000" collisionAdd="0.000000,25.000000,15.000000" effect="CH/Skill/Ranger/Eff_Ranger_Blowing_Ball_05.xml" effectDestroy="CH/Skill/Ranger/Eff_Ranger_Blowing_Destroy_01.xml" />
+				<damageProperty rate="2.11" effectHit="CH/Skill/Ranger/Eff_Ranger_Blowing_Hit_02.xml" attackMaterial="100" />
+			</attack>
+			<attack point="p3" targetCount="3" magicPathID="105000216" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+				<rangeProperty rangeType="frustum" distance="950" height="150" width="150" endWidth="600" applyTarget="1" targetSelectType="3" />
+				<arrowProperty overlap="1" rayPhysxTest="1" effect="CH/Skill/Ranger/Eff_Ranger_BlowingGuided_Ball_01.xml" effectDestroy="CH/Skill/Ranger/Eff_Ranger_Blowing_Destroy_01.xml" />
+				<damageProperty rate="1.32" effectHit="CH/Skill/Ranger/Eff_Ranger_Blowing_Hit_02.xml" attackMaterial="100" />
+				<conditionSkill splash="1" level="8" skillID="10500175" />
+			</attack>
+		</motion>
+	</level>
+	<level value="9" feature="JobChange_01">
+		<beginCondition probability="1" cooldownTime="0.25">
+			<stat hp="1" />
+			<weapon lh="0" rh="51" />
+		</beginCondition>
+		<changeSkill originSkillID="10500171" originSkillLevel="9" />
+		<autoTargeting autoTargetingMaxDegree="90" />
+		<motion>
+			<motionProperty sequenceName="Ranger_BlowingArrow4_A" selfInputCombo="selfinputcombo" sequenceSpeed="0.8" strTagEffects="e0=CH/Skill/Ranger/Eff_Ranger_Blowing_Cast_04.xml" />
+			<attack point="p0" targetCount="1" magicPathID="105000174" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+				<rangeProperty rangeType="frustum" distance="900" height="150" width="150" endWidth="600" applyTarget="1" />
+				<arrowProperty rayPhysxTest="1" nonTarget="1" bounceType="3" bounceCount="8" collision="25.000000,100.000000,15.000000" collisionAdd="0.000000,25.000000,15.000000" effect="CH/Skill/Ranger/Eff_Ranger_Blowing_Ball_05.xml" effectDestroy="CH/Skill/Ranger/Eff_Ranger_Blowing_Destroy_01.xml" />
+				<damageProperty rate="2.19" effectHit="CH/Skill/Ranger/Eff_Ranger_Blowing_Hit_02.xml" attackMaterial="100" />
+			</attack>
+			<attack point="p1" targetCount="1" magicPathID="105000175" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+				<rangeProperty rangeType="frustum" distance="900" height="150" width="150" endWidth="600" applyTarget="1" />
+				<arrowProperty rayPhysxTest="1" nonTarget="1" bounceType="3" bounceCount="8" collision="25.000000,100.000000,15.000000" collisionAdd="0.000000,25.000000,15.000000" effect="CH/Skill/Ranger/Eff_Ranger_Blowing_Ball_05.xml" effectDestroy="CH/Skill/Ranger/Eff_Ranger_Blowing_Destroy_01.xml" />
+				<damageProperty rate="2.19" effectHit="CH/Skill/Ranger/Eff_Ranger_Blowing_Hit_02.xml" attackMaterial="100" />
+			</attack>
+			<attack point="p2" targetCount="1" magicPathID="105000176" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+				<rangeProperty rangeType="frustum" distance="900" height="150" width="150" endWidth="600" applyTarget="1" />
+				<arrowProperty rayPhysxTest="1" nonTarget="1" bounceType="3" bounceCount="8" collision="25.000000,100.000000,15.000000" collisionAdd="0.000000,25.000000,15.000000" effect="CH/Skill/Ranger/Eff_Ranger_Blowing_Ball_05.xml" effectDestroy="CH/Skill/Ranger/Eff_Ranger_Blowing_Destroy_01.xml" />
+				<damageProperty rate="2.19" effectHit="CH/Skill/Ranger/Eff_Ranger_Blowing_Hit_02.xml" attackMaterial="100" />
+			</attack>
+			<attack point="p3" targetCount="3" magicPathID="105000216" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+				<rangeProperty rangeType="frustum" distance="950" height="150" width="150" endWidth="600" applyTarget="1" targetSelectType="3" />
+				<arrowProperty overlap="1" rayPhysxTest="1" effect="CH/Skill/Ranger/Eff_Ranger_BlowingGuided_Ball_01.xml" effectDestroy="CH/Skill/Ranger/Eff_Ranger_Blowing_Destroy_01.xml" />
+				<damageProperty rate="1.36" effectHit="CH/Skill/Ranger/Eff_Ranger_Blowing_Hit_02.xml" attackMaterial="100" />
+				<conditionSkill splash="1" level="9" skillID="10500175" />
+			</attack>
+		</motion>
+	</level>
+	<level value="10" feature="JobChange_01">
+		<beginCondition probability="1" cooldownTime="0.25">
+			<stat hp="1" />
+			<weapon lh="0" rh="51" />
+		</beginCondition>
+		<changeSkill originSkillID="10500171" originSkillLevel="10" />
+		<autoTargeting autoTargetingMaxDegree="90" />
+		<motion>
+			<motionProperty sequenceName="Ranger_BlowingArrow4_A" selfInputCombo="selfinputcombo" sequenceSpeed="0.8" strTagEffects="e0=CH/Skill/Ranger/Eff_Ranger_Blowing_Cast_04.xml" />
+			<attack point="p0" targetCount="1" magicPathID="105000174" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+				<rangeProperty rangeType="frustum" distance="900" height="150" width="150" endWidth="600" applyTarget="1" />
+				<arrowProperty rayPhysxTest="1" nonTarget="1" bounceType="3" bounceCount="8" collision="25.000000,100.000000,15.000000" collisionAdd="0.000000,25.000000,15.000000" effect="CH/Skill/Ranger/Eff_Ranger_Blowing_Ball_05.xml" effectDestroy="CH/Skill/Ranger/Eff_Ranger_Blowing_Destroy_01.xml" />
+				<damageProperty rate="2.27" effectHit="CH/Skill/Ranger/Eff_Ranger_Blowing_Hit_02.xml" attackMaterial="100" />
+			</attack>
+			<attack point="p1" targetCount="1" magicPathID="105000175" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+				<rangeProperty rangeType="frustum" distance="900" height="150" width="150" endWidth="600" applyTarget="1" />
+				<arrowProperty rayPhysxTest="1" nonTarget="1" bounceType="3" bounceCount="8" collision="25.000000,100.000000,15.000000" collisionAdd="0.000000,25.000000,15.000000" effect="CH/Skill/Ranger/Eff_Ranger_Blowing_Ball_05.xml" effectDestroy="CH/Skill/Ranger/Eff_Ranger_Blowing_Destroy_01.xml" />
+				<damageProperty rate="2.27" effectHit="CH/Skill/Ranger/Eff_Ranger_Blowing_Hit_02.xml" attackMaterial="100" />
+			</attack>
+			<attack point="p2" targetCount="1" magicPathID="105000176" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+				<rangeProperty rangeType="frustum" distance="900" height="150" width="150" endWidth="600" applyTarget="1" />
+				<arrowProperty rayPhysxTest="1" nonTarget="1" bounceType="3" bounceCount="8" collision="25.000000,100.000000,15.000000" collisionAdd="0.000000,25.000000,15.000000" effect="CH/Skill/Ranger/Eff_Ranger_Blowing_Ball_05.xml" effectDestroy="CH/Skill/Ranger/Eff_Ranger_Blowing_Destroy_01.xml" />
+				<damageProperty rate="2.27" effectHit="CH/Skill/Ranger/Eff_Ranger_Blowing_Hit_02.xml" attackMaterial="100" />
+			</attack>
+			<attack point="p3" targetCount="3" magicPathID="105000216" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+				<rangeProperty rangeType="frustum" distance="950" height="150" width="150" endWidth="600" applyTarget="1" targetSelectType="3" />
+				<arrowProperty overlap="1" rayPhysxTest="1" effect="CH/Skill/Ranger/Eff_Ranger_BlowingGuided_Ball_01.xml" effectDestroy="CH/Skill/Ranger/Eff_Ranger_Blowing_Destroy_01.xml" />
+				<damageProperty rate="1.4" effectHit="CH/Skill/Ranger/Eff_Ranger_Blowing_Hit_02.xml" attackMaterial="100" />
+				<conditionSkill splash="1" level="10" skillID="10500175" />
+			</attack>
+		</motion>
+	</level>
+	<level value="11" feature="JobChange_01">
+		<beginCondition probability="1" cooldownTime="0.25">
+			<stat hp="1" />
+			<weapon lh="0" rh="51" />
+		</beginCondition>
+		<changeSkill originSkillID="10500171" originSkillLevel="11" />
+		<autoTargeting autoTargetingMaxDegree="90" />
+		<motion>
+			<motionProperty sequenceName="Ranger_BlowingArrow4_A" selfInputCombo="selfinputcombo" sequenceSpeed="0.8" strTagEffects="e0=CH/Skill/Ranger/Eff_Ranger_Blowing_Cast_04.xml" />
+			<attack point="p0" targetCount="1" magicPathID="105000174" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+				<rangeProperty rangeType="frustum" distance="900" height="150" width="150" endWidth="600" applyTarget="1" />
+				<arrowProperty rayPhysxTest="1" nonTarget="1" bounceType="3" bounceCount="8" collision="25.000000,100.000000,15.000000" collisionAdd="0.000000,25.000000,15.000000" effect="CH/Skill/Ranger/Eff_Ranger_Blowing_Ball_05.xml" effectDestroy="CH/Skill/Ranger/Eff_Ranger_Blowing_Destroy_01.xml" />
+				<damageProperty rate="2.35" effectHit="CH/Skill/Ranger/Eff_Ranger_Blowing_Hit_02.xml" attackMaterial="100" />
+			</attack>
+			<attack point="p1" targetCount="1" magicPathID="105000175" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+				<rangeProperty rangeType="frustum" distance="900" height="150" width="150" endWidth="600" applyTarget="1" />
+				<arrowProperty rayPhysxTest="1" nonTarget="1" bounceType="3" bounceCount="8" collision="25.000000,100.000000,15.000000" collisionAdd="0.000000,25.000000,15.000000" effect="CH/Skill/Ranger/Eff_Ranger_Blowing_Ball_05.xml" effectDestroy="CH/Skill/Ranger/Eff_Ranger_Blowing_Destroy_01.xml" />
+				<damageProperty rate="2.35" effectHit="CH/Skill/Ranger/Eff_Ranger_Blowing_Hit_02.xml" attackMaterial="100" />
+			</attack>
+			<attack point="p2" targetCount="1" magicPathID="105000176" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+				<rangeProperty rangeType="frustum" distance="900" height="150" width="150" endWidth="600" applyTarget="1" />
+				<arrowProperty rayPhysxTest="1" nonTarget="1" bounceType="3" bounceCount="8" collision="25.000000,100.000000,15.000000" collisionAdd="0.000000,25.000000,15.000000" effect="CH/Skill/Ranger/Eff_Ranger_Blowing_Ball_05.xml" effectDestroy="CH/Skill/Ranger/Eff_Ranger_Blowing_Destroy_01.xml" />
+				<damageProperty rate="2.35" effectHit="CH/Skill/Ranger/Eff_Ranger_Blowing_Hit_02.xml" attackMaterial="100" />
+			</attack>
+			<attack point="p3" targetCount="3" magicPathID="105000216" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+				<rangeProperty rangeType="frustum" distance="950" height="150" width="150" endWidth="600" applyTarget="1" targetSelectType="3" />
+				<arrowProperty overlap="1" rayPhysxTest="1" effect="CH/Skill/Ranger/Eff_Ranger_BlowingGuided_Ball_01.xml" effectDestroy="CH/Skill/Ranger/Eff_Ranger_Blowing_Destroy_01.xml" />
+				<damageProperty rate="1.44" effectHit="CH/Skill/Ranger/Eff_Ranger_Blowing_Hit_02.xml" attackMaterial="100" />
+				<conditionSkill splash="1" level="11" skillID="10500175" />
+			</attack>
+		</motion>
+	</level>
+	<level value="12" feature="JobChange_01">
+		<beginCondition probability="1" cooldownTime="0.25">
+			<stat hp="1" />
+			<weapon lh="0" rh="51" />
+		</beginCondition>
+		<changeSkill originSkillID="10500171" originSkillLevel="12" />
+		<autoTargeting autoTargetingMaxDegree="90" />
+		<motion>
+			<motionProperty sequenceName="Ranger_BlowingArrow4_A" selfInputCombo="selfinputcombo" sequenceSpeed="0.8" strTagEffects="e0=CH/Skill/Ranger/Eff_Ranger_Blowing_Cast_04.xml" />
+			<attack point="p0" targetCount="1" magicPathID="105000174" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+				<rangeProperty rangeType="frustum" distance="900" height="150" width="150" endWidth="600" applyTarget="1" />
+				<arrowProperty rayPhysxTest="1" nonTarget="1" bounceType="3" bounceCount="8" collision="25.000000,100.000000,15.000000" collisionAdd="0.000000,25.000000,15.000000" effect="CH/Skill/Ranger/Eff_Ranger_Blowing_Ball_05.xml" effectDestroy="CH/Skill/Ranger/Eff_Ranger_Blowing_Destroy_01.xml" />
+				<damageProperty rate="2.43" effectHit="CH/Skill/Ranger/Eff_Ranger_Blowing_Hit_02.xml" attackMaterial="100" />
+			</attack>
+			<attack point="p1" targetCount="1" magicPathID="105000175" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+				<rangeProperty rangeType="frustum" distance="900" height="150" width="150" endWidth="600" applyTarget="1" />
+				<arrowProperty rayPhysxTest="1" nonTarget="1" bounceType="3" bounceCount="8" collision="25.000000,100.000000,15.000000" collisionAdd="0.000000,25.000000,15.000000" effect="CH/Skill/Ranger/Eff_Ranger_Blowing_Ball_05.xml" effectDestroy="CH/Skill/Ranger/Eff_Ranger_Blowing_Destroy_01.xml" />
+				<damageProperty rate="2.43" effectHit="CH/Skill/Ranger/Eff_Ranger_Blowing_Hit_02.xml" attackMaterial="100" />
+			</attack>
+			<attack point="p2" targetCount="1" magicPathID="105000176" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+				<rangeProperty rangeType="frustum" distance="900" height="150" width="150" endWidth="600" applyTarget="1" />
+				<arrowProperty rayPhysxTest="1" nonTarget="1" bounceType="3" bounceCount="8" collision="25.000000,100.000000,15.000000" collisionAdd="0.000000,25.000000,15.000000" effect="CH/Skill/Ranger/Eff_Ranger_Blowing_Ball_05.xml" effectDestroy="CH/Skill/Ranger/Eff_Ranger_Blowing_Destroy_01.xml" />
+				<damageProperty rate="2.43" effectHit="CH/Skill/Ranger/Eff_Ranger_Blowing_Hit_02.xml" attackMaterial="100" />
+			</attack>
+			<attack point="p3" targetCount="3" magicPathID="105000216" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+				<rangeProperty rangeType="frustum" distance="950" height="150" width="150" endWidth="600" applyTarget="1" targetSelectType="3" />
+				<arrowProperty overlap="1" rayPhysxTest="1" effect="CH/Skill/Ranger/Eff_Ranger_BlowingGuided_Ball_01.xml" effectDestroy="CH/Skill/Ranger/Eff_Ranger_Blowing_Destroy_01.xml" />
+				<damageProperty rate="1.48" effectHit="CH/Skill/Ranger/Eff_Ranger_Blowing_Hit_02.xml" attackMaterial="100" />
+				<conditionSkill splash="1" level="12" skillID="10500175" />
+			</attack>
+		</motion>
+	</level>
+</ms2>

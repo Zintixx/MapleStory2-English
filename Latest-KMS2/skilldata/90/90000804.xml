@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 파싱해서 사용하는 데이터이니 직접 수정하지 마세요 -->
+<ms2 feature="">
+	<basic>
+		<ui icon="./Data/Resource/Image/skill/icon/10500141.png" attackType="1" />
+		<kinds type="3" subType="3" jump="90000804" unrideOnUse="1" />
+		<stateAttr autoTargeting="0" cooldownGroupID="90000803" clearCooldownFromPVPZone="1" />
+	</basic>
+	<level value="1">
+		<beginCondition probability="1" cooldownTime="11" useCoolDownShowUI="1" allowMapleSurvival="1">
+			<stat hp="1" />
+		</beginCondition>
+		<changeSkill originSkillID="90000803" />
+		<targetItem>
+			<item id="20000907" count="1" />
+		</targetItem>
+		<motion>
+			<motionProperty sequenceName="Ranger_ScrewDriveShot_A" loopEffect="CH/Skill/Ranger/Eff_Ranger_ScrewDriveShot_Loop_01.xml" strTagEffects="e0=CH/Skill/Ranger/Eff_Ranger_ScrewDriveShot_Cast_01.xml,e1=CH/Skill/Ranger/Eff_Ranger_ScrewDriveShot_Cast_02.xml" holdWeapon="0" loopCount="5" />
+			<attack point="p0" targetCount="1" magicPathID="90000786" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+				<rangeProperty rangeType="frustum" distance="3000" height="300" width="200" endWidth="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" bounceType="3" bounceCount="20" collision="250.000000,200.000000,100.000000" collisionAdd="0.000000,100.000000,50.000000" effect="CH/Skill/Ranger/Eff_Ranger_ScrewDriveShot_Ball_01.xml" effectRemain="CH/Skill/Ranger/Eff_Ranger_ScrewDriveShot_Remain_01.xml" />
+				<damageProperty value="328" isConstDamageValue="1" attackMaterial="1" />
+			</attack>
+		</motion>
+	</level>
+</ms2>

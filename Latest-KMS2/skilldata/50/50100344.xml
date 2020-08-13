@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 파싱해서 사용하는 데이터이니 직접 수정하지 마세요 -->
+<ms2 feature="">
+	<basic>
+		<ui attackType="2" />
+		<kinds element="6" />
+	</basic>
+	<level value="1">
+		<beginCondition probability="1">
+			<stat hp="1" />
+		</beginCondition>
+		<motion>
+			<motionProperty sequenceName="Attack_01_I" motionEffect="NPC/Skill/TurtleHorn/Eff_TurtleHorn_Attack_01_I_Vomit.xml" faceTarget="0" />
+			<attack point="p0" targetCount="1" magicPathID="5137" direction="0" attacktype="2" unrideOnHit="1">
+				<rangeProperty rangeType="frustum" distance="2000" height="300" width="300" endWidth="2000" applyTarget="1" castTarget="1" />
+				<arrowProperty explosion="1" collision="80.000000,80.000000,40.000000" collisionAdd="0.000000,0.000000,40.000000" effect="NPC/Skill/TurtleHorn/Eff_TurtleHorn_Attack_01_I_Vomit_Ball.xml" />
+				<damageProperty rate="0.001" effectHit="CH/Common/Normal_Attack/Eff_Vomit_Attack_Hand_Hit.xml" attackMaterial="104" />
+				<conditionSkill level="1" skillID="50001400" skillTarget="2" skillOwner="1" />
+				<conditionSkill level="1" skillID="50001401" skillTarget="2" skillOwner="1" />
+			</attack>
+		</motion>
+	</level>
+</ms2>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 파싱해서 사용하는 데이터이니 직접 수정하지 마세요 -->
+<ms2 feature="">
+	<basic>
+		<ui icon="./Data/Resource/Image/item/icon/20000451.png" attackType="2" />
+		<stateAttr ignoreReduceCooldown="1" />
+	</basic>
+	<level value="1">
+		<beginCondition probability="1">
+			<stat hp="1" />
+		</beginCondition>
+		<motion>
+			<motionProperty />
+			<attack point="p0" targetCount="50" attacktype="2">
+				<rangeProperty rangeType="box" distance="70" rangeAdd="0.000000,50.000000,0.000000" height="70" width="70" applyTarget="5" />
+				<damageProperty damageByTargetMaxHP="0.01" attackMaterial="106" />
+				<conditionSkill level="1" skillID="70000128" skillTarget="2" skillOwner="1" />
+			</attack>
+		</motion>
+	</level>
+	<level value="2">
+		<beginCondition probability="1">
+			<stat hp="1" />
+		</beginCondition>
+		<motion>
+			<motionProperty />
+			<attack point="p0" targetCount="50" attacktype="2">
+				<rangeProperty rangeType="box" distance="70" height="70" width="70" applyTarget="5" />
+				<damageProperty damageByTargetMaxHP="0.01" attackMaterial="106" />
+				<conditionSkill level="1" skillID="70000128" skillTarget="2" skillOwner="1" />
+			</attack>
+		</motion>
+	</level>
+	<level value="3">
+		<beginCondition probability="1">
+			<stat hp="1" />
+		</beginCondition>
+		<motion>
+			<motionProperty />
+			<attack point="p0" targetCount="50" attacktype="2">
+				<rangeProperty rangeType="box" distance="70" height="70" width="70" applyTarget="5" />
+				<damageProperty damageByTargetMaxHP="0.2" attackMaterial="106" />
+				<conditionSkill level="1" skillID="70000007" skillTarget="2" skillOwner="1" />
+			</attack>
+		</motion>
+	</level>
+</ms2>

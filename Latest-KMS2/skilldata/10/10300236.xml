@@ -1,0 +1,626 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 파싱해서 사용하는 데이터이니 직접 수정하지 마세요 -->
+<ms2 feature="">
+	<basic feature="JobChange_02">
+		<ui icon="./Data/Resource/Image/skill/icon/10300231.png" exceptUI="1" attackType="2" />
+		<kinds subType="2" rangeType="2" jump="10300235" element="1" immediateActive="1" unrideOnUse="1" />
+		<stateAttr cooldownGroupID="10300231" clearCooldownFromPVPZone="1" />
+	</basic>
+	<basic feature="JobChange_01">
+		<ui icon="./Data/Resource/Image/skill/icon/10300231.png" exceptUI="1" attackType="2" />
+		<kinds subType="2" rangeType="2" jump="10300235" element="1" immediateActive="1" unrideOnUse="1" />
+		<stateAttr cooldownGroupID="10300231" clearCooldownFromPVPZone="1" />
+	</basic>
+	<level value="1" feature="JobChange_02">
+		<beginCondition probability="1" cooldownTime="8" useCoolDownShowUI="1">
+			<stat hp="1" />
+			<weapon lh="0" rh="52" />
+		</beginCondition>
+		<changeSkill originSkillID="10300231" />
+		<autoTargeting autoTargetingMaxDegree="60" />
+		<upgrade level="62" skillIDs="10300221" skillLevels="3" />
+		<conditionSkill level="1" skillID="10300244" skillTarget="1">
+			<beginCondition probability="1" allowBattleRidingState="1" />
+		</conditionSkill>
+		<motion>
+			<motionProperty sequenceName="Wizard_BBQParty_02_A" motionEffect="CH/Skill/Wizard/Eff_Wizard_BBQParty_Cast_02.xml" />
+			<attack point="p0" targetCount="1" magicPathID="10300231" cubeMagicPathID="103002311" attacktype="2" hitImmuneBreak="5" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="5" />
+				<rangeProperty rangeType="frustum" distance="800" height="150" width="300" endWidth="600" applyTarget="1" />
+				<arrowProperty rayPhysxTest="1" nonTarget="1" collision="200.000000,50.000000,150.000000" effect="NPC/Skill/Temp/Eff_Temp.xml" />
+				<damageProperty attackMaterial="100" />
+				<conditionSkill level="1" skillID="10300288" skillTarget="1" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<caster hasBuffID="10300281" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="0" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill splash="1" level="1" skillID="10300233" />
+				<conditionSkill splash="1" level="1" skillID="10300234" delay="10000" useDirection="1" onlySensingActive="1" />
+			</attack>
+		</motion>
+	</level>
+	<level value="2" feature="JobChange_02">
+		<beginCondition probability="1" cooldownTime="8" useCoolDownShowUI="1">
+			<stat hp="1" />
+			<weapon lh="0" rh="52" />
+		</beginCondition>
+		<changeSkill originSkillID="10300231" originSkillLevel="2" />
+		<autoTargeting autoTargetingMaxDegree="60" />
+		<upgrade level="62" skillIDs="10300221" skillLevels="3" />
+		<conditionSkill level="1" skillID="10300244" skillTarget="1">
+			<beginCondition probability="1" allowBattleRidingState="1" />
+		</conditionSkill>
+		<motion>
+			<motionProperty sequenceName="Wizard_BBQParty_02_A" motionEffect="CH/Skill/Wizard/Eff_Wizard_BBQParty_Cast_02.xml" />
+			<attack point="p0" targetCount="1" magicPathID="10300231" cubeMagicPathID="103002311" attacktype="2" hitImmuneBreak="5" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="5" />
+				<rangeProperty rangeType="frustum" distance="800" height="150" width="300" endWidth="600" applyTarget="1" />
+				<arrowProperty rayPhysxTest="1" nonTarget="1" collision="200.000000,50.000000,150.000000" effect="NPC/Skill/Temp/Eff_Temp.xml" />
+				<damageProperty attackMaterial="100" />
+				<conditionSkill level="1" skillID="10300288" skillTarget="1" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<caster hasBuffID="10300281" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="0" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill splash="1" level="2" skillID="10300233" />
+				<conditionSkill splash="1" level="2" skillID="10300234" delay="10000" useDirection="1" onlySensingActive="1" />
+			</attack>
+		</motion>
+	</level>
+	<level value="3" feature="JobChange_02">
+		<beginCondition probability="1" cooldownTime="8" useCoolDownShowUI="1">
+			<stat hp="1" />
+			<weapon lh="0" rh="52" />
+		</beginCondition>
+		<changeSkill originSkillID="10300231" originSkillLevel="3" />
+		<autoTargeting autoTargetingMaxDegree="60" />
+		<upgrade level="62" skillIDs="10300221" skillLevels="3" />
+		<conditionSkill level="1" skillID="10300244" skillTarget="1">
+			<beginCondition probability="1" allowBattleRidingState="1" />
+		</conditionSkill>
+		<motion>
+			<motionProperty sequenceName="Wizard_BBQParty_02_A" motionEffect="CH/Skill/Wizard/Eff_Wizard_BBQParty_Cast_02.xml" />
+			<attack point="p0" targetCount="1" magicPathID="10300231" cubeMagicPathID="103002311" attacktype="2" hitImmuneBreak="5" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="5" />
+				<rangeProperty rangeType="frustum" distance="800" height="150" width="300" endWidth="600" applyTarget="1" />
+				<arrowProperty rayPhysxTest="1" nonTarget="1" collision="200.000000,50.000000,150.000000" effect="NPC/Skill/Temp/Eff_Temp.xml" />
+				<damageProperty attackMaterial="100" />
+				<conditionSkill level="1" skillID="10300288" skillTarget="1" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<caster hasBuffID="10300281" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="0" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill splash="1" level="3" skillID="10300233" />
+				<conditionSkill splash="1" level="3" skillID="10300234" delay="10000" useDirection="1" onlySensingActive="1" />
+			</attack>
+		</motion>
+	</level>
+	<level value="4" feature="JobChange_02">
+		<beginCondition probability="1" cooldownTime="8" useCoolDownShowUI="1">
+			<stat hp="1" />
+			<weapon lh="0" rh="52" />
+		</beginCondition>
+		<changeSkill originSkillID="10300231" originSkillLevel="4" />
+		<autoTargeting autoTargetingMaxDegree="60" />
+		<upgrade level="62" skillIDs="10300221" skillLevels="3" />
+		<conditionSkill level="1" skillID="10300244" skillTarget="1">
+			<beginCondition probability="1" allowBattleRidingState="1" />
+		</conditionSkill>
+		<motion>
+			<motionProperty sequenceName="Wizard_BBQParty_02_A" motionEffect="CH/Skill/Wizard/Eff_Wizard_BBQParty_Cast_02.xml" />
+			<attack point="p0" targetCount="1" magicPathID="10300231" cubeMagicPathID="103002311" attacktype="2" hitImmuneBreak="5" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="5" />
+				<rangeProperty rangeType="frustum" distance="800" height="150" width="300" endWidth="600" applyTarget="1" />
+				<arrowProperty rayPhysxTest="1" nonTarget="1" collision="200.000000,50.000000,150.000000" effect="NPC/Skill/Temp/Eff_Temp.xml" />
+				<damageProperty attackMaterial="100" />
+				<conditionSkill level="1" skillID="10300288" skillTarget="1" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<caster hasBuffID="10300281" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="0" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill splash="1" level="4" skillID="10300233" />
+				<conditionSkill splash="1" level="4" skillID="10300234" delay="10000" useDirection="1" onlySensingActive="1" />
+			</attack>
+		</motion>
+	</level>
+	<level value="5" feature="JobChange_02">
+		<beginCondition probability="1" cooldownTime="8" useCoolDownShowUI="1">
+			<stat hp="1" />
+			<weapon lh="0" rh="52" />
+		</beginCondition>
+		<changeSkill originSkillID="10300231" originSkillLevel="5" />
+		<autoTargeting autoTargetingMaxDegree="60" />
+		<upgrade level="62" skillIDs="10300221" skillLevels="3" />
+		<conditionSkill level="1" skillID="10300244" skillTarget="1">
+			<beginCondition probability="1" allowBattleRidingState="1" />
+		</conditionSkill>
+		<motion>
+			<motionProperty sequenceName="Wizard_BBQParty_02_A" motionEffect="CH/Skill/Wizard/Eff_Wizard_BBQParty_Cast_02.xml" />
+			<attack point="p0" targetCount="1" magicPathID="10300231" cubeMagicPathID="103002311" attacktype="2" hitImmuneBreak="5" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="5" />
+				<rangeProperty rangeType="frustum" distance="800" height="150" width="300" endWidth="600" applyTarget="1" />
+				<arrowProperty rayPhysxTest="1" nonTarget="1" collision="200.000000,50.000000,150.000000" effect="NPC/Skill/Temp/Eff_Temp.xml" />
+				<damageProperty attackMaterial="100" />
+				<conditionSkill level="1" skillID="10300288" skillTarget="1" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<caster hasBuffID="10300281" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="0" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill splash="1" level="5" skillID="10300233" />
+				<conditionSkill splash="1" level="5" skillID="10300234" delay="10000" useDirection="1" onlySensingActive="1" />
+			</attack>
+		</motion>
+	</level>
+	<level value="6" feature="JobChange_02">
+		<beginCondition probability="1" cooldownTime="8" useCoolDownShowUI="1">
+			<stat hp="1" />
+			<weapon lh="0" rh="52" />
+		</beginCondition>
+		<changeSkill originSkillID="10300231" originSkillLevel="6" />
+		<autoTargeting autoTargetingMaxDegree="60" />
+		<upgrade level="62" skillIDs="10300221" skillLevels="3" />
+		<conditionSkill level="1" skillID="10300244" skillTarget="1">
+			<beginCondition probability="1" allowBattleRidingState="1" />
+		</conditionSkill>
+		<motion>
+			<motionProperty sequenceName="Wizard_BBQParty_02_A" motionEffect="CH/Skill/Wizard/Eff_Wizard_BBQParty_Cast_02.xml" />
+			<attack point="p0" targetCount="1" magicPathID="10300231" cubeMagicPathID="103002311" attacktype="2" hitImmuneBreak="5" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="5" />
+				<rangeProperty rangeType="frustum" distance="800" height="150" width="300" endWidth="600" applyTarget="1" />
+				<arrowProperty rayPhysxTest="1" nonTarget="1" collision="200.000000,50.000000,150.000000" effect="NPC/Skill/Temp/Eff_Temp.xml" />
+				<damageProperty attackMaterial="100" />
+				<conditionSkill level="1" skillID="10300288" skillTarget="1" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<caster hasBuffID="10300281" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="0" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill splash="1" level="6" skillID="10300233" />
+				<conditionSkill splash="1" level="6" skillID="10300234" delay="10000" useDirection="1" onlySensingActive="1" />
+			</attack>
+		</motion>
+	</level>
+	<level value="7" feature="JobChange_02">
+		<beginCondition probability="1" cooldownTime="8" useCoolDownShowUI="1">
+			<stat hp="1" />
+			<weapon lh="0" rh="52" />
+		</beginCondition>
+		<changeSkill originSkillID="10300231" originSkillLevel="7" />
+		<autoTargeting autoTargetingMaxDegree="60" />
+		<upgrade level="62" skillIDs="10300221" skillLevels="3" />
+		<conditionSkill level="1" skillID="10300244" skillTarget="1">
+			<beginCondition probability="1" allowBattleRidingState="1" />
+		</conditionSkill>
+		<motion>
+			<motionProperty sequenceName="Wizard_BBQParty_02_A" motionEffect="CH/Skill/Wizard/Eff_Wizard_BBQParty_Cast_02.xml" />
+			<attack point="p0" targetCount="1" magicPathID="10300231" cubeMagicPathID="103002311" attacktype="2" hitImmuneBreak="5" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="5" />
+				<rangeProperty rangeType="frustum" distance="800" height="150" width="300" endWidth="600" applyTarget="1" />
+				<arrowProperty rayPhysxTest="1" nonTarget="1" collision="200.000000,50.000000,150.000000" effect="NPC/Skill/Temp/Eff_Temp.xml" />
+				<damageProperty attackMaterial="100" />
+				<conditionSkill level="1" skillID="10300288" skillTarget="1" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<caster hasBuffID="10300281" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="0" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill splash="1" level="7" skillID="10300233" />
+				<conditionSkill splash="1" level="7" skillID="10300234" delay="10000" useDirection="1" onlySensingActive="1" />
+			</attack>
+		</motion>
+	</level>
+	<level value="8" feature="JobChange_02">
+		<beginCondition probability="1" cooldownTime="8" useCoolDownShowUI="1">
+			<stat hp="1" />
+			<weapon lh="0" rh="52" />
+		</beginCondition>
+		<changeSkill originSkillID="10300231" originSkillLevel="8" />
+		<autoTargeting autoTargetingMaxDegree="60" />
+		<upgrade level="62" skillIDs="10300221" skillLevels="3" />
+		<conditionSkill level="1" skillID="10300244" skillTarget="1">
+			<beginCondition probability="1" allowBattleRidingState="1" />
+		</conditionSkill>
+		<motion>
+			<motionProperty sequenceName="Wizard_BBQParty_02_A" motionEffect="CH/Skill/Wizard/Eff_Wizard_BBQParty_Cast_02.xml" />
+			<attack point="p0" targetCount="1" magicPathID="10300231" cubeMagicPathID="103002311" attacktype="2" hitImmuneBreak="5" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="5" />
+				<rangeProperty rangeType="frustum" distance="800" height="150" width="300" endWidth="600" applyTarget="1" />
+				<arrowProperty rayPhysxTest="1" nonTarget="1" collision="200.000000,50.000000,150.000000" effect="NPC/Skill/Temp/Eff_Temp.xml" />
+				<damageProperty attackMaterial="100" />
+				<conditionSkill level="1" skillID="10300288" skillTarget="1" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<caster hasBuffID="10300281" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="0" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill splash="1" level="8" skillID="10300233" />
+				<conditionSkill splash="1" level="8" skillID="10300234" delay="10000" useDirection="1" onlySensingActive="1" />
+			</attack>
+		</motion>
+	</level>
+	<level value="9" feature="JobChange_02">
+		<beginCondition probability="1" cooldownTime="8" useCoolDownShowUI="1">
+			<stat hp="1" />
+			<weapon lh="0" rh="52" />
+		</beginCondition>
+		<changeSkill originSkillID="10300231" originSkillLevel="9" />
+		<autoTargeting autoTargetingMaxDegree="60" />
+		<upgrade level="62" skillIDs="10300221" skillLevels="3" />
+		<conditionSkill level="1" skillID="10300244" skillTarget="1">
+			<beginCondition probability="1" allowBattleRidingState="1" />
+		</conditionSkill>
+		<motion>
+			<motionProperty sequenceName="Wizard_BBQParty_02_A" motionEffect="CH/Skill/Wizard/Eff_Wizard_BBQParty_Cast_02.xml" />
+			<attack point="p0" targetCount="1" magicPathID="10300231" cubeMagicPathID="103002311" attacktype="2" hitImmuneBreak="5" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="5" />
+				<rangeProperty rangeType="frustum" distance="800" height="150" width="300" endWidth="600" applyTarget="1" />
+				<arrowProperty rayPhysxTest="1" nonTarget="1" collision="200.000000,50.000000,150.000000" effect="NPC/Skill/Temp/Eff_Temp.xml" />
+				<damageProperty attackMaterial="100" />
+				<conditionSkill level="1" skillID="10300288" skillTarget="1" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<caster hasBuffID="10300281" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="0" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill splash="1" level="9" skillID="10300233" />
+				<conditionSkill splash="1" level="9" skillID="10300234" delay="10000" useDirection="1" onlySensingActive="1" />
+			</attack>
+		</motion>
+	</level>
+	<level value="10" feature="JobChange_02">
+		<beginCondition probability="1" cooldownTime="8" useCoolDownShowUI="1">
+			<stat hp="1" />
+			<weapon lh="0" rh="52" />
+		</beginCondition>
+		<changeSkill originSkillID="10300231" originSkillLevel="10" />
+		<autoTargeting autoTargetingMaxDegree="60" />
+		<upgrade level="62" skillIDs="10300221" skillLevels="3" />
+		<conditionSkill level="1" skillID="10300244" skillTarget="1">
+			<beginCondition probability="1" allowBattleRidingState="1" />
+		</conditionSkill>
+		<motion>
+			<motionProperty sequenceName="Wizard_BBQParty_02_A" motionEffect="CH/Skill/Wizard/Eff_Wizard_BBQParty_Cast_02.xml" />
+			<attack point="p0" targetCount="1" magicPathID="10300231" cubeMagicPathID="103002311" attacktype="2" hitImmuneBreak="5" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="5" />
+				<rangeProperty rangeType="frustum" distance="800" height="150" width="300" endWidth="600" applyTarget="1" />
+				<arrowProperty rayPhysxTest="1" nonTarget="1" collision="200.000000,50.000000,150.000000" effect="NPC/Skill/Temp/Eff_Temp.xml" />
+				<damageProperty attackMaterial="100" />
+				<conditionSkill level="1" skillID="10300288" skillTarget="1" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<caster hasBuffID="10300281" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="0" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill splash="1" level="10" skillID="10300233" />
+				<conditionSkill splash="1" level="10" skillID="10300234" delay="10000" useDirection="1" onlySensingActive="1" />
+			</attack>
+		</motion>
+	</level>
+	<level value="11" feature="JobChange_02">
+		<beginCondition probability="1" cooldownTime="8" useCoolDownShowUI="1">
+			<stat hp="1" />
+			<weapon lh="0" rh="52" />
+		</beginCondition>
+		<changeSkill originSkillID="10300231" originSkillLevel="11" />
+		<autoTargeting autoTargetingMaxDegree="60" />
+		<upgrade level="62" skillIDs="10300221" skillLevels="3" />
+		<conditionSkill level="1" skillID="10300244" skillTarget="1">
+			<beginCondition probability="1" allowBattleRidingState="1" />
+		</conditionSkill>
+		<motion>
+			<motionProperty sequenceName="Wizard_BBQParty_02_A" motionEffect="CH/Skill/Wizard/Eff_Wizard_BBQParty_Cast_02.xml" />
+			<attack point="p0" targetCount="1" magicPathID="10300231" cubeMagicPathID="103002311" attacktype="2" hitImmuneBreak="5" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="5" />
+				<rangeProperty rangeType="frustum" distance="800" height="150" width="300" endWidth="600" applyTarget="1" />
+				<arrowProperty rayPhysxTest="1" nonTarget="1" collision="200.000000,50.000000,150.000000" effect="NPC/Skill/Temp/Eff_Temp.xml" />
+				<damageProperty attackMaterial="100" />
+				<conditionSkill level="1" skillID="10300288" skillTarget="1" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<caster hasBuffID="10300281" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="0" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill splash="1" level="11" skillID="10300233" />
+				<conditionSkill splash="1" level="11" skillID="10300234" delay="10000" useDirection="1" onlySensingActive="1" />
+			</attack>
+		</motion>
+	</level>
+	<level value="12" feature="JobChange_02">
+		<beginCondition probability="1" cooldownTime="8" useCoolDownShowUI="1">
+			<stat hp="1" />
+			<weapon lh="0" rh="52" />
+		</beginCondition>
+		<changeSkill originSkillID="10300231" originSkillLevel="12" />
+		<autoTargeting autoTargetingMaxDegree="60" />
+		<upgrade level="62" skillIDs="10300221" skillLevels="3" />
+		<conditionSkill level="1" skillID="10300244" skillTarget="1">
+			<beginCondition probability="1" allowBattleRidingState="1" />
+		</conditionSkill>
+		<motion>
+			<motionProperty sequenceName="Wizard_BBQParty_02_A" motionEffect="CH/Skill/Wizard/Eff_Wizard_BBQParty_Cast_02.xml" />
+			<attack point="p0" targetCount="1" magicPathID="10300231" cubeMagicPathID="103002311" attacktype="2" hitImmuneBreak="5" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="5" />
+				<rangeProperty rangeType="frustum" distance="800" height="150" width="300" endWidth="600" applyTarget="1" />
+				<arrowProperty rayPhysxTest="1" nonTarget="1" collision="200.000000,50.000000,150.000000" effect="NPC/Skill/Temp/Eff_Temp.xml" />
+				<damageProperty attackMaterial="100" />
+				<conditionSkill level="1" skillID="10300288" skillTarget="1" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<caster hasBuffID="10300281" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="0" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill splash="1" level="12" skillID="10300233" />
+				<conditionSkill splash="1" level="12" skillID="10300234" delay="10000" useDirection="1" onlySensingActive="1" />
+			</attack>
+		</motion>
+	</level>
+	<level value="1" feature="JobChange_01">
+		<beginCondition probability="1" cooldownTime="8" useCoolDownShowUI="1">
+			<stat hp="1" />
+			<weapon lh="0" rh="52" />
+		</beginCondition>
+		<changeSkill originSkillID="10300231" />
+		<autoTargeting autoTargetingMaxDegree="60" />
+		<upgrade level="62" skillIDs="10300221" skillLevels="3" />
+		<conditionSkill level="1" skillID="10300244" skillTarget="1">
+			<beginCondition probability="1" allowBattleRidingState="1" />
+		</conditionSkill>
+		<motion>
+			<motionProperty sequenceName="Wizard_BBQParty_02_A" motionEffect="CH/Skill/Wizard/Eff_Wizard_BBQParty_Cast_02.xml" />
+			<attack point="p0" targetCount="1" magicPathID="10300231" cubeMagicPathID="103002311" attacktype="2" hitImmuneBreak="5" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="5" />
+				<rangeProperty rangeType="frustum" distance="800" height="150" width="300" endWidth="600" applyTarget="1" />
+				<arrowProperty rayPhysxTest="1" nonTarget="1" collision="200.000000,50.000000,150.000000" effect="NPC/Skill/Temp/Eff_Temp.xml" />
+				<damageProperty attackMaterial="100" />
+				<conditionSkill splash="1" level="1" skillID="10300233" />
+				<conditionSkill splash="1" level="1" skillID="10300234" delay="10000" useDirection="1" onlySensingActive="1" />
+			</attack>
+		</motion>
+	</level>
+	<level value="2" feature="JobChange_01">
+		<beginCondition probability="1" cooldownTime="8" useCoolDownShowUI="1">
+			<stat hp="1" />
+			<weapon lh="0" rh="52" />
+		</beginCondition>
+		<changeSkill originSkillID="10300231" originSkillLevel="2" />
+		<autoTargeting autoTargetingMaxDegree="60" />
+		<upgrade level="62" skillIDs="10300221" skillLevels="3" />
+		<conditionSkill level="1" skillID="10300244" skillTarget="1">
+			<beginCondition probability="1" allowBattleRidingState="1" />
+		</conditionSkill>
+		<motion>
+			<motionProperty sequenceName="Wizard_BBQParty_02_A" motionEffect="CH/Skill/Wizard/Eff_Wizard_BBQParty_Cast_02.xml" />
+			<attack point="p0" targetCount="1" magicPathID="10300231" cubeMagicPathID="103002311" attacktype="2" hitImmuneBreak="5" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="5" />
+				<rangeProperty rangeType="frustum" distance="800" height="150" width="300" endWidth="600" applyTarget="1" />
+				<arrowProperty rayPhysxTest="1" nonTarget="1" collision="200.000000,50.000000,150.000000" effect="NPC/Skill/Temp/Eff_Temp.xml" />
+				<damageProperty attackMaterial="100" />
+				<conditionSkill splash="1" level="2" skillID="10300233" />
+				<conditionSkill splash="1" level="2" skillID="10300234" delay="10000" useDirection="1" onlySensingActive="1" />
+			</attack>
+		</motion>
+	</level>
+	<level value="3" feature="JobChange_01">
+		<beginCondition probability="1" cooldownTime="8" useCoolDownShowUI="1">
+			<stat hp="1" />
+			<weapon lh="0" rh="52" />
+		</beginCondition>
+		<changeSkill originSkillID="10300231" originSkillLevel="3" />
+		<autoTargeting autoTargetingMaxDegree="60" />
+		<upgrade level="62" skillIDs="10300221" skillLevels="3" />
+		<conditionSkill level="1" skillID="10300244" skillTarget="1">
+			<beginCondition probability="1" allowBattleRidingState="1" />
+		</conditionSkill>
+		<motion>
+			<motionProperty sequenceName="Wizard_BBQParty_02_A" motionEffect="CH/Skill/Wizard/Eff_Wizard_BBQParty_Cast_02.xml" />
+			<attack point="p0" targetCount="1" magicPathID="10300231" cubeMagicPathID="103002311" attacktype="2" hitImmuneBreak="5" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="5" />
+				<rangeProperty rangeType="frustum" distance="800" height="150" width="300" endWidth="600" applyTarget="1" />
+				<arrowProperty rayPhysxTest="1" nonTarget="1" collision="200.000000,50.000000,150.000000" effect="NPC/Skill/Temp/Eff_Temp.xml" />
+				<damageProperty attackMaterial="100" />
+				<conditionSkill splash="1" level="3" skillID="10300233" />
+				<conditionSkill splash="1" level="3" skillID="10300234" delay="10000" useDirection="1" onlySensingActive="1" />
+			</attack>
+		</motion>
+	</level>
+	<level value="4" feature="JobChange_01">
+		<beginCondition probability="1" cooldownTime="8" useCoolDownShowUI="1">
+			<stat hp="1" />
+			<weapon lh="0" rh="52" />
+		</beginCondition>
+		<changeSkill originSkillID="10300231" originSkillLevel="4" />
+		<autoTargeting autoTargetingMaxDegree="60" />
+		<upgrade level="62" skillIDs="10300221" skillLevels="3" />
+		<conditionSkill level="1" skillID="10300244" skillTarget="1">
+			<beginCondition probability="1" allowBattleRidingState="1" />
+		</conditionSkill>
+		<motion>
+			<motionProperty sequenceName="Wizard_BBQParty_02_A" motionEffect="CH/Skill/Wizard/Eff_Wizard_BBQParty_Cast_02.xml" />
+			<attack point="p0" targetCount="1" magicPathID="10300231" cubeMagicPathID="103002311" attacktype="2" hitImmuneBreak="5" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="5" />
+				<rangeProperty rangeType="frustum" distance="800" height="150" width="300" endWidth="600" applyTarget="1" />
+				<arrowProperty rayPhysxTest="1" nonTarget="1" collision="200.000000,50.000000,150.000000" effect="NPC/Skill/Temp/Eff_Temp.xml" />
+				<damageProperty attackMaterial="100" />
+				<conditionSkill splash="1" level="4" skillID="10300233" />
+				<conditionSkill splash="1" level="4" skillID="10300234" delay="10000" useDirection="1" onlySensingActive="1" />
+			</attack>
+		</motion>
+	</level>
+	<level value="5" feature="JobChange_01">
+		<beginCondition probability="1" cooldownTime="8" useCoolDownShowUI="1">
+			<stat hp="1" />
+			<weapon lh="0" rh="52" />
+		</beginCondition>
+		<changeSkill originSkillID="10300231" originSkillLevel="5" />
+		<autoTargeting autoTargetingMaxDegree="60" />
+		<upgrade level="62" skillIDs="10300221" skillLevels="3" />
+		<conditionSkill level="1" skillID="10300244" skillTarget="1">
+			<beginCondition probability="1" allowBattleRidingState="1" />
+		</conditionSkill>
+		<motion>
+			<motionProperty sequenceName="Wizard_BBQParty_02_A" motionEffect="CH/Skill/Wizard/Eff_Wizard_BBQParty_Cast_02.xml" />
+			<attack point="p0" targetCount="1" magicPathID="10300231" cubeMagicPathID="103002311" attacktype="2" hitImmuneBreak="5" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="5" />
+				<rangeProperty rangeType="frustum" distance="800" height="150" width="300" endWidth="600" applyTarget="1" />
+				<arrowProperty rayPhysxTest="1" nonTarget="1" collision="200.000000,50.000000,150.000000" effect="NPC/Skill/Temp/Eff_Temp.xml" />
+				<damageProperty attackMaterial="100" />
+				<conditionSkill splash="1" level="5" skillID="10300233" />
+				<conditionSkill splash="1" level="5" skillID="10300234" delay="10000" useDirection="1" onlySensingActive="1" />
+			</attack>
+		</motion>
+	</level>
+	<level value="6" feature="JobChange_01">
+		<beginCondition probability="1" cooldownTime="8" useCoolDownShowUI="1">
+			<stat hp="1" />
+			<weapon lh="0" rh="52" />
+		</beginCondition>
+		<changeSkill originSkillID="10300231" originSkillLevel="6" />
+		<autoTargeting autoTargetingMaxDegree="60" />
+		<upgrade level="62" skillIDs="10300221" skillLevels="3" />
+		<conditionSkill level="1" skillID="10300244" skillTarget="1">
+			<beginCondition probability="1" allowBattleRidingState="1" />
+		</conditionSkill>
+		<motion>
+			<motionProperty sequenceName="Wizard_BBQParty_02_A" motionEffect="CH/Skill/Wizard/Eff_Wizard_BBQParty_Cast_02.xml" />
+			<attack point="p0" targetCount="1" magicPathID="10300231" cubeMagicPathID="103002311" attacktype="2" hitImmuneBreak="5" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="5" />
+				<rangeProperty rangeType="frustum" distance="800" height="150" width="300" endWidth="600" applyTarget="1" />
+				<arrowProperty rayPhysxTest="1" nonTarget="1" collision="200.000000,50.000000,150.000000" effect="NPC/Skill/Temp/Eff_Temp.xml" />
+				<damageProperty attackMaterial="100" />
+				<conditionSkill splash="1" level="6" skillID="10300233" />
+				<conditionSkill splash="1" level="6" skillID="10300234" delay="10000" useDirection="1" onlySensingActive="1" />
+			</attack>
+		</motion>
+	</level>
+	<level value="7" feature="JobChange_01">
+		<beginCondition probability="1" cooldownTime="8" useCoolDownShowUI="1">
+			<stat hp="1" />
+			<weapon lh="0" rh="52" />
+		</beginCondition>
+		<changeSkill originSkillID="10300231" originSkillLevel="7" />
+		<autoTargeting autoTargetingMaxDegree="60" />
+		<upgrade level="62" skillIDs="10300221" skillLevels="3" />
+		<conditionSkill level="1" skillID="10300244" skillTarget="1">
+			<beginCondition probability="1" allowBattleRidingState="1" />
+		</conditionSkill>
+		<motion>
+			<motionProperty sequenceName="Wizard_BBQParty_02_A" motionEffect="CH/Skill/Wizard/Eff_Wizard_BBQParty_Cast_02.xml" />
+			<attack point="p0" targetCount="1" magicPathID="10300231" cubeMagicPathID="103002311" attacktype="2" hitImmuneBreak="5" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="5" />
+				<rangeProperty rangeType="frustum" distance="800" height="150" width="300" endWidth="600" applyTarget="1" />
+				<arrowProperty rayPhysxTest="1" nonTarget="1" collision="200.000000,50.000000,150.000000" effect="NPC/Skill/Temp/Eff_Temp.xml" />
+				<damageProperty attackMaterial="100" />
+				<conditionSkill splash="1" level="7" skillID="10300233" />
+				<conditionSkill splash="1" level="7" skillID="10300234" delay="10000" useDirection="1" onlySensingActive="1" />
+			</attack>
+		</motion>
+	</level>
+	<level value="8" feature="JobChange_01">
+		<beginCondition probability="1" cooldownTime="8" useCoolDownShowUI="1">
+			<stat hp="1" />
+			<weapon lh="0" rh="52" />
+		</beginCondition>
+		<changeSkill originSkillID="10300231" originSkillLevel="8" />
+		<autoTargeting autoTargetingMaxDegree="60" />
+		<upgrade level="62" skillIDs="10300221" skillLevels="3" />
+		<conditionSkill level="1" skillID="10300244" skillTarget="1">
+			<beginCondition probability="1" allowBattleRidingState="1" />
+		</conditionSkill>
+		<motion>
+			<motionProperty sequenceName="Wizard_BBQParty_02_A" motionEffect="CH/Skill/Wizard/Eff_Wizard_BBQParty_Cast_02.xml" />
+			<attack point="p0" targetCount="1" magicPathID="10300231" cubeMagicPathID="103002311" attacktype="2" hitImmuneBreak="5" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="5" />
+				<rangeProperty rangeType="frustum" distance="800" height="150" width="300" endWidth="600" applyTarget="1" />
+				<arrowProperty rayPhysxTest="1" nonTarget="1" collision="200.000000,50.000000,150.000000" effect="NPC/Skill/Temp/Eff_Temp.xml" />
+				<damageProperty attackMaterial="100" />
+				<conditionSkill splash="1" level="8" skillID="10300233" />
+				<conditionSkill splash="1" level="8" skillID="10300234" delay="10000" useDirection="1" onlySensingActive="1" />
+			</attack>
+		</motion>
+	</level>
+	<level value="9" feature="JobChange_01">
+		<beginCondition probability="1" cooldownTime="8" useCoolDownShowUI="1">
+			<stat hp="1" />
+			<weapon lh="0" rh="52" />
+		</beginCondition>
+		<changeSkill originSkillID="10300231" originSkillLevel="9" />
+		<autoTargeting autoTargetingMaxDegree="60" />
+		<upgrade level="62" skillIDs="10300221" skillLevels="3" />
+		<conditionSkill level="1" skillID="10300244" skillTarget="1">
+			<beginCondition probability="1" allowBattleRidingState="1" />
+		</conditionSkill>
+		<motion>
+			<motionProperty sequenceName="Wizard_BBQParty_02_A" motionEffect="CH/Skill/Wizard/Eff_Wizard_BBQParty_Cast_02.xml" />
+			<attack point="p0" targetCount="1" magicPathID="10300231" cubeMagicPathID="103002311" attacktype="2" hitImmuneBreak="5" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="5" />
+				<rangeProperty rangeType="frustum" distance="800" height="150" width="300" endWidth="600" applyTarget="1" />
+				<arrowProperty rayPhysxTest="1" nonTarget="1" collision="200.000000,50.000000,150.000000" effect="NPC/Skill/Temp/Eff_Temp.xml" />
+				<damageProperty attackMaterial="100" />
+				<conditionSkill splash="1" level="9" skillID="10300233" />
+				<conditionSkill splash="1" level="9" skillID="10300234" delay="10000" useDirection="1" onlySensingActive="1" />
+			</attack>
+		</motion>
+	</level>
+	<level value="10" feature="JobChange_01">
+		<beginCondition probability="1" cooldownTime="8" useCoolDownShowUI="1">
+			<stat hp="1" />
+			<weapon lh="0" rh="52" />
+		</beginCondition>
+		<changeSkill originSkillID="10300231" originSkillLevel="10" />
+		<autoTargeting autoTargetingMaxDegree="60" />
+		<upgrade level="62" skillIDs="10300221" skillLevels="3" />
+		<conditionSkill level="1" skillID="10300244" skillTarget="1">
+			<beginCondition probability="1" allowBattleRidingState="1" />
+		</conditionSkill>
+		<motion>
+			<motionProperty sequenceName="Wizard_BBQParty_02_A" motionEffect="CH/Skill/Wizard/Eff_Wizard_BBQParty_Cast_02.xml" />
+			<attack point="p0" targetCount="1" magicPathID="10300231" cubeMagicPathID="103002311" attacktype="2" hitImmuneBreak="5" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="5" />
+				<rangeProperty rangeType="frustum" distance="800" height="150" width="300" endWidth="600" applyTarget="1" />
+				<arrowProperty rayPhysxTest="1" nonTarget="1" collision="200.000000,50.000000,150.000000" effect="NPC/Skill/Temp/Eff_Temp.xml" />
+				<damageProperty attackMaterial="100" />
+				<conditionSkill splash="1" level="10" skillID="10300233" />
+				<conditionSkill splash="1" level="10" skillID="10300234" delay="10000" useDirection="1" onlySensingActive="1" />
+			</attack>
+		</motion>
+	</level>
+	<level value="11" feature="JobChange_01">
+		<beginCondition probability="1" cooldownTime="8" useCoolDownShowUI="1">
+			<stat hp="1" />
+			<weapon lh="0" rh="52" />
+		</beginCondition>
+		<changeSkill originSkillID="10300231" originSkillLevel="11" />
+		<autoTargeting autoTargetingMaxDegree="60" />
+		<upgrade level="62" skillIDs="10300221" skillLevels="3" />
+		<conditionSkill level="1" skillID="10300244" skillTarget="1">
+			<beginCondition probability="1" allowBattleRidingState="1" />
+		</conditionSkill>
+		<motion>
+			<motionProperty sequenceName="Wizard_BBQParty_02_A" motionEffect="CH/Skill/Wizard/Eff_Wizard_BBQParty_Cast_02.xml" />
+			<attack point="p0" targetCount="1" magicPathID="10300231" cubeMagicPathID="103002311" attacktype="2" hitImmuneBreak="5" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="5" />
+				<rangeProperty rangeType="frustum" distance="800" height="150" width="300" endWidth="600" applyTarget="1" />
+				<arrowProperty rayPhysxTest="1" nonTarget="1" collision="200.000000,50.000000,150.000000" effect="NPC/Skill/Temp/Eff_Temp.xml" />
+				<damageProperty attackMaterial="100" />
+				<conditionSkill splash="1" level="11" skillID="10300233" />
+				<conditionSkill splash="1" level="11" skillID="10300234" delay="10000" useDirection="1" onlySensingActive="1" />
+			</attack>
+		</motion>
+	</level>
+	<level value="12" feature="JobChange_01">
+		<beginCondition probability="1" cooldownTime="8" useCoolDownShowUI="1">
+			<stat hp="1" />
+			<weapon lh="0" rh="52" />
+		</beginCondition>
+		<changeSkill originSkillID="10300231" originSkillLevel="12" />
+		<autoTargeting autoTargetingMaxDegree="60" />
+		<upgrade level="62" skillIDs="10300221" skillLevels="3" />
+		<conditionSkill level="1" skillID="10300244" skillTarget="1">
+			<beginCondition probability="1" allowBattleRidingState="1" />
+		</conditionSkill>
+		<motion>
+			<motionProperty sequenceName="Wizard_BBQParty_02_A" motionEffect="CH/Skill/Wizard/Eff_Wizard_BBQParty_Cast_02.xml" />
+			<attack point="p0" targetCount="1" magicPathID="10300231" cubeMagicPathID="103002311" attacktype="2" hitImmuneBreak="5" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="5" />
+				<rangeProperty rangeType="frustum" distance="800" height="150" width="300" endWidth="600" applyTarget="1" />
+				<arrowProperty rayPhysxTest="1" nonTarget="1" collision="200.000000,50.000000,150.000000" effect="NPC/Skill/Temp/Eff_Temp.xml" />
+				<damageProperty attackMaterial="100" />
+				<conditionSkill splash="1" level="12" skillID="10300233" />
+				<conditionSkill splash="1" level="12" skillID="10300234" delay="10000" useDirection="1" onlySensingActive="1" />
+			</attack>
+		</motion>
+	</level>
+</ms2>

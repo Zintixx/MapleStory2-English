@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 파싱해서 사용하는 데이터이니 직접 수정하지 마세요 -->
+<ms2 feature="">
+	<basic>
+		<ui attackType="1" />
+	</basic>
+	<level value="1">
+		<beginCondition probability="1">
+			<stat hp="1" />
+		</beginCondition>
+		<motion>
+			<motionProperty sequenceName="Attack_01_F" motionEffect="NPC/Skill/Papulatus/Eff_Papulatus_Attack_01_F.xml" />
+			<attack point="p0" targetCount="6" magicPathID="5504" cubeMagicPathID="50000486" attacktype="1" brokenOffence="1" unrideOnHit="1">
+				<rangeProperty rangeType="cylinder" distance="2500" height="100" applyTarget="1" castTarget="1" />
+				<arrowProperty nonTarget="1" effect="NPC/Skill/Papulatus/Eff_Papulatus_Attack_01_F_MineTrap_Ball.xml" />
+				<damageProperty count="0" rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
+				<conditionSkill splash="1" level="11" skillID="50100770" delay="20000" />
+			</attack>
+			<attack point="p1" targetCount="4" magicPathID="5505" cubeMagicPathID="50000486" attacktype="1" brokenOffence="1" unrideOnHit="1">
+				<rangeProperty rangeType="cylinder" distance="2500" height="100" applyTarget="1" castTarget="1" />
+				<arrowProperty nonTarget="1" effect="NPC/Skill/Papulatus/Eff_Papulatus_Attack_01_F_MineTrap_Ball.xml" />
+				<damageProperty count="0" rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
+				<conditionSkill splash="1" level="12" skillID="50100770" delay="20000" />
+			</attack>
+		</motion>
+	</level>
+	<level value="2">
+		<beginCondition probability="1">
+			<stat hp="1" />
+		</beginCondition>
+		<motion>
+			<motionProperty sequenceName="Attack_01_F" motionEffect="NPC/Skill/Papulatus/Eff_Papulatus_Attack_01_F.xml" />
+			<attack point="p0" targetCount="4" magicPathID="5506" cubeMagicPathID="50000486" attacktype="1" brokenOffence="1" unrideOnHit="1">
+				<rangeProperty rangeType="cylinder" distance="2500" height="100" applyTarget="1" castTarget="1" />
+				<arrowProperty nonTarget="1" effect="NPC/Skill/Papulatus/Eff_Papulatus_Attack_01_F_MineTrap_Ball.xml" />
+				<damageProperty count="0" rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
+				<conditionSkill splash="1" level="11" skillID="50100770" delay="20000" />
+			</attack>
+			<attack point="p1" targetCount="6" magicPathID="5507" cubeMagicPathID="50000486" attacktype="1" brokenOffence="1" unrideOnHit="1">
+				<rangeProperty rangeType="cylinder" distance="2500" height="100" applyTarget="1" castTarget="1" />
+				<arrowProperty nonTarget="1" effect="NPC/Skill/Papulatus/Eff_Papulatus_Attack_01_F_MineTrap_Ball.xml" />
+				<damageProperty count="0" rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
+				<conditionSkill splash="1" level="12" skillID="50100770" delay="20000" />
+			</attack>
+		</motion>
+	</level>
+	<level value="3">
+		<beginCondition probability="1">
+			<stat hp="1" />
+		</beginCondition>
+		<motion>
+			<motionProperty sequenceName="Attack_01_F" motionEffect="NPC/Skill/Papulatus/Eff_Papulatus_Attack_01_F.xml" />
+			<attack point="p0" targetCount="4" magicPathID="5508" cubeMagicPathID="50000486" attacktype="1" brokenOffence="1" unrideOnHit="1">
+				<rangeProperty rangeType="cylinder" distance="2500" height="100" applyTarget="1" castTarget="1" />
+				<arrowProperty nonTarget="1" effect="NPC/Skill/Papulatus/Eff_Papulatus_Attack_01_F_MineTrap_Ball.xml" />
+				<damageProperty count="0" rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
+				<conditionSkill splash="1" level="11" skillID="50100770" delay="20000" />
+			</attack>
+			<attack point="p1" targetCount="16" magicPathID="5509" cubeMagicPathID="50000486" attacktype="1" brokenOffence="1" unrideOnHit="1">
+				<rangeProperty rangeType="cylinder" distance="2500" height="100" applyTarget="1" castTarget="1" />
+				<arrowProperty nonTarget="1" effect="NPC/Skill/Papulatus/Eff_Papulatus_Attack_01_F_MineTrap_Ball.xml" />
+				<damageProperty count="0" rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
+				<conditionSkill splash="1" level="12" skillID="50100770" delay="20000" />
+			</attack>
+		</motion>
+	</level>
+	<level value="11">
+		<beginCondition probability="1">
+			<stat hp="1" />
+		</beginCondition>
+		<sensorProperty rangeType="cylinder" distance="50" height="50" applyTarget="1" castTarget="1" />
+		<motion>
+			<motionProperty motionEffect="NPC/Skill/Papulatus/Eff_Papulatus_Attack_01_F_MineTrap_Ball_Multiple2_Locate.xml" splashEndEffect="NPC/Skill/Papulatus/Eff_Papulatus_Attack_01_F_MineTrap_Ball_Multiple2_Vanish.xml" />
+			<attack point="p0" attacktype="1" brokenOffence="1" unrideOnHit="1">
+				<rangeProperty rangeType="cylinder" distance="50" height="50" applyTarget="1" castTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty count="0" rate="0.01" attackMaterial="1" />
+				<conditionSkill splash="1" level="1" skillID="99999874" delay="50" />
+			</attack>
+		</motion>
+	</level>
+	<level value="12">
+		<beginCondition probability="1">
+			<stat hp="1" />
+		</beginCondition>
+		<sensorProperty rangeType="cylinder" distance="50" height="50" applyTarget="1" castTarget="1" />
+		<motion>
+			<motionProperty motionEffect="NPC/Skill/Papulatus/Eff_Papulatus_Attack_01_F_MineTrap_Ball_Divide2_Locate.xml" splashEndEffect="NPC/Skill/Papulatus/Eff_Papulatus_Attack_01_F_MineTrap_Ball_Divide2_Vanish.xml" />
+			<attack point="p0" attacktype="1" brokenOffence="1" unrideOnHit="1">
+				<rangeProperty rangeType="cylinder" distance="50" height="50" applyTarget="1" castTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty count="0" rate="0.01" attackMaterial="1" />
+				<conditionSkill splash="1" level="1" skillID="99999873" delay="400" />
+			</attack>
+		</motion>
+	</level>
+</ms2>

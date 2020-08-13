@@ -1,0 +1,614 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 파싱해서 사용하는 데이터이니 직접 수정하지 마세요 -->
+<ms2 feature="">
+	<basic feature="JobChange_02">
+		<ui icon="./Data/Resource/Image/skill/icon/11100241.png" attackType="2" />
+		<kinds subType="2" rangeType="2" continue="1" unrideOnUse="1" />
+		<stateAttr autoTargeting="0" cooldownGroupID="11100242" ignoreReduceCooldown="1" />
+	</basic>
+	<basic feature="JobChange_01">
+		<ui icon="./Data/Resource/Image/skill/icon/11100241.png" attackType="2" />
+		<kinds subType="2" rangeType="2" continue="1" unrideOnUse="1" />
+		<stateAttr autoTargeting="0" cooldownGroupID="11100242" ignoreReduceCooldown="1" />
+	</basic>
+	<level value="1" feature="JobChange_02">
+		<beginCondition probability="1" cooldownTime="0.3">
+			<stat hp="1" />
+		</beginCondition>
+		<changeSkill changeSkillCheckEffectID="11100063,11100321" changeSkillCheckEffectLevel="1,0" changeSkillCheckEffectOverlapCount="0,0" changeSkillID="11100242,11100244" changeSkillLevel="1,1" />
+		<consume>
+			<stat sp="10" />
+		</consume>
+		<upgrade level="66" skillIDs="11100231" skillLevels="3" />
+		<motion>
+			<motionProperty sequenceName="Soulbinder_HarmonyofSprit_A" loopEffect="CH/Skill/SoulBinder/Eff_SoulBinder_HarmonyofSoul_Loop_01.xml" strTagEffects="e0=CH/Skill/SoulBinder/Eff_SoulBinder_HarmonyofSoul_Cast_01.xml" IgnoreOptimalHideCastEffect="true" />
+			<attack point="p0" targetCount="4" magicPathID="11100101" attacktype="2" releaseObjectWeaponOnHit="0">
+				<rangeProperty includeCaster="1" rangeType="cylinder" distance="400" height="150" applyTarget="2" />
+				<arrowProperty nonTarget="1" effectRay="CH/Skill/SoulBinder/Eff_SoulBinder_HarmonyofSoul_Ray_01.xml" />
+				<damageProperty count="0" attackMaterial="1000" />
+				<conditionSkill level="1" skillID="11100241" skillTarget="2" skillOwner="1" dependOnDamageCount="1" />
+			</attack>
+			<attack point="p1" targetCount="4" magicPathID="11100101" attacktype="2" releaseObjectWeaponOnHit="0">
+				<rangeProperty includeCaster="1" rangeType="cylinder" distance="400" height="150" applyTarget="2" />
+				<arrowProperty nonTarget="1" effectRay="CH/Skill/SoulBinder/Eff_SoulBinder_HarmonyofSoul_Ray_01.xml" />
+				<damageProperty count="0" attackMaterial="1000" />
+				<conditionSkill level="1" skillID="11100241" skillTarget="2" skillOwner="1" dependOnDamageCount="1" />
+			</attack>
+		</motion>
+	</level>
+	<level value="2" feature="JobChange_02">
+		<beginCondition probability="1" cooldownTime="0.3">
+			<stat hp="1" />
+		</beginCondition>
+		<changeSkill changeSkillCheckEffectID="11100063,11100321" changeSkillCheckEffectLevel="1,0" changeSkillCheckEffectOverlapCount="0,0" changeSkillID="11100242,11100244" changeSkillLevel="2,2" />
+		<consume>
+			<stat sp="10" />
+		</consume>
+		<upgrade level="66" skillIDs="11100231" skillLevels="3" />
+		<motion>
+			<motionProperty sequenceName="Soulbinder_HarmonyofSprit_A" loopEffect="CH/Skill/SoulBinder/Eff_SoulBinder_HarmonyofSoul_Loop_01.xml" strTagEffects="e0=CH/Skill/SoulBinder/Eff_SoulBinder_HarmonyofSoul_Cast_01.xml" IgnoreOptimalHideCastEffect="true" />
+			<attack point="p0" targetCount="4" magicPathID="11100101" attacktype="2" releaseObjectWeaponOnHit="0">
+				<rangeProperty includeCaster="1" rangeType="cylinder" distance="400" height="150" applyTarget="2" />
+				<arrowProperty nonTarget="1" effectRay="CH/Skill/SoulBinder/Eff_SoulBinder_HarmonyofSoul_Ray_01.xml" />
+				<damageProperty count="0" attackMaterial="1000" />
+				<conditionSkill level="2" skillID="11100241" skillTarget="2" skillOwner="1" dependOnDamageCount="1" />
+			</attack>
+			<attack point="p1" targetCount="4" magicPathID="11100101" attacktype="2" releaseObjectWeaponOnHit="0">
+				<rangeProperty includeCaster="1" rangeType="cylinder" distance="400" height="150" applyTarget="2" />
+				<arrowProperty nonTarget="1" effectRay="CH/Skill/SoulBinder/Eff_SoulBinder_HarmonyofSoul_Ray_01.xml" />
+				<damageProperty count="0" attackMaterial="1000" />
+				<conditionSkill level="2" skillID="11100241" skillTarget="2" skillOwner="1" dependOnDamageCount="1" />
+			</attack>
+		</motion>
+	</level>
+	<level value="3" feature="JobChange_02">
+		<beginCondition probability="1" cooldownTime="0.3">
+			<stat hp="1" />
+		</beginCondition>
+		<changeSkill changeSkillCheckEffectID="11100063,11100321" changeSkillCheckEffectLevel="1,0" changeSkillCheckEffectOverlapCount="0,0" changeSkillID="11100242,11100244" changeSkillLevel="3,3" />
+		<consume>
+			<stat sp="10" />
+		</consume>
+		<upgrade level="66" skillIDs="11100231" skillLevels="3" />
+		<motion>
+			<motionProperty sequenceName="Soulbinder_HarmonyofSprit_A" loopEffect="CH/Skill/SoulBinder/Eff_SoulBinder_HarmonyofSoul_Loop_01.xml" strTagEffects="e0=CH/Skill/SoulBinder/Eff_SoulBinder_HarmonyofSoul_Cast_01.xml" IgnoreOptimalHideCastEffect="true" />
+			<attack point="p0" targetCount="4" magicPathID="11100101" attacktype="2" releaseObjectWeaponOnHit="0">
+				<rangeProperty includeCaster="1" rangeType="cylinder" distance="400" height="150" applyTarget="2" />
+				<arrowProperty nonTarget="1" effectRay="CH/Skill/SoulBinder/Eff_SoulBinder_HarmonyofSoul_Ray_01.xml" />
+				<damageProperty count="0" attackMaterial="1000" />
+				<conditionSkill level="3" skillID="11100241" skillTarget="2" skillOwner="1" dependOnDamageCount="1" />
+			</attack>
+			<attack point="p1" targetCount="4" magicPathID="11100101" attacktype="2" releaseObjectWeaponOnHit="0">
+				<rangeProperty includeCaster="1" rangeType="cylinder" distance="400" height="150" applyTarget="2" />
+				<arrowProperty nonTarget="1" effectRay="CH/Skill/SoulBinder/Eff_SoulBinder_HarmonyofSoul_Ray_01.xml" />
+				<damageProperty count="0" attackMaterial="1000" />
+				<conditionSkill level="3" skillID="11100241" skillTarget="2" skillOwner="1" dependOnDamageCount="1" />
+			</attack>
+		</motion>
+	</level>
+	<level value="4" feature="JobChange_02">
+		<beginCondition probability="1" cooldownTime="0.3">
+			<stat hp="1" />
+		</beginCondition>
+		<changeSkill changeSkillCheckEffectID="11100063,11100321" changeSkillCheckEffectLevel="1,0" changeSkillCheckEffectOverlapCount="0,0" changeSkillID="11100242,11100244" changeSkillLevel="4,4" />
+		<consume>
+			<stat sp="10" />
+		</consume>
+		<upgrade level="66" skillIDs="11100231" skillLevels="3" />
+		<motion>
+			<motionProperty sequenceName="Soulbinder_HarmonyofSprit_A" loopEffect="CH/Skill/SoulBinder/Eff_SoulBinder_HarmonyofSoul_Loop_01.xml" strTagEffects="e0=CH/Skill/SoulBinder/Eff_SoulBinder_HarmonyofSoul_Cast_01.xml" IgnoreOptimalHideCastEffect="true" />
+			<attack point="p0" targetCount="4" magicPathID="11100101" attacktype="2" releaseObjectWeaponOnHit="0">
+				<rangeProperty includeCaster="1" rangeType="cylinder" distance="400" height="150" applyTarget="2" />
+				<arrowProperty nonTarget="1" effectRay="CH/Skill/SoulBinder/Eff_SoulBinder_HarmonyofSoul_Ray_01.xml" />
+				<damageProperty count="0" attackMaterial="1000" />
+				<conditionSkill level="4" skillID="11100241" skillTarget="2" skillOwner="1" dependOnDamageCount="1" />
+			</attack>
+			<attack point="p1" targetCount="4" magicPathID="11100101" attacktype="2" releaseObjectWeaponOnHit="0">
+				<rangeProperty includeCaster="1" rangeType="cylinder" distance="400" height="150" applyTarget="2" />
+				<arrowProperty nonTarget="1" effectRay="CH/Skill/SoulBinder/Eff_SoulBinder_HarmonyofSoul_Ray_01.xml" />
+				<damageProperty count="0" attackMaterial="1000" />
+				<conditionSkill level="4" skillID="11100241" skillTarget="2" skillOwner="1" dependOnDamageCount="1" />
+			</attack>
+		</motion>
+	</level>
+	<level value="5" feature="JobChange_02">
+		<beginCondition probability="1" cooldownTime="0.3">
+			<stat hp="1" />
+		</beginCondition>
+		<changeSkill changeSkillCheckEffectID="11100063,11100321" changeSkillCheckEffectLevel="1,0" changeSkillCheckEffectOverlapCount="0,0" changeSkillID="11100242,11100244" changeSkillLevel="5,5" />
+		<consume>
+			<stat sp="10" />
+		</consume>
+		<upgrade level="66" skillIDs="11100231" skillLevels="3" />
+		<motion>
+			<motionProperty sequenceName="Soulbinder_HarmonyofSprit_A" loopEffect="CH/Skill/SoulBinder/Eff_SoulBinder_HarmonyofSoul_Loop_01.xml" strTagEffects="e0=CH/Skill/SoulBinder/Eff_SoulBinder_HarmonyofSoul_Cast_01.xml" IgnoreOptimalHideCastEffect="true" />
+			<attack point="p0" targetCount="4" magicPathID="11100101" attacktype="2" releaseObjectWeaponOnHit="0">
+				<rangeProperty includeCaster="1" rangeType="cylinder" distance="400" height="150" applyTarget="2" />
+				<arrowProperty nonTarget="1" effectRay="CH/Skill/SoulBinder/Eff_SoulBinder_HarmonyofSoul_Ray_01.xml" />
+				<damageProperty count="0" attackMaterial="1000" />
+				<conditionSkill level="5" skillID="11100241" skillTarget="2" skillOwner="1" dependOnDamageCount="1" />
+			</attack>
+			<attack point="p1" targetCount="4" magicPathID="11100101" attacktype="2" releaseObjectWeaponOnHit="0">
+				<rangeProperty includeCaster="1" rangeType="cylinder" distance="400" height="150" applyTarget="2" />
+				<arrowProperty nonTarget="1" effectRay="CH/Skill/SoulBinder/Eff_SoulBinder_HarmonyofSoul_Ray_01.xml" />
+				<damageProperty count="0" attackMaterial="1000" />
+				<conditionSkill level="5" skillID="11100241" skillTarget="2" skillOwner="1" dependOnDamageCount="1" />
+			</attack>
+		</motion>
+	</level>
+	<level value="6" feature="JobChange_02">
+		<beginCondition probability="1" cooldownTime="0.3">
+			<stat hp="1" />
+		</beginCondition>
+		<changeSkill changeSkillCheckEffectID="11100063,11100321" changeSkillCheckEffectLevel="1,0" changeSkillCheckEffectOverlapCount="0,0" changeSkillID="11100242,11100244" changeSkillLevel="6,6" />
+		<consume>
+			<stat sp="10" />
+		</consume>
+		<upgrade level="66" skillIDs="11100231" skillLevels="3" />
+		<motion>
+			<motionProperty sequenceName="Soulbinder_HarmonyofSprit_A" loopEffect="CH/Skill/SoulBinder/Eff_SoulBinder_HarmonyofSoul_Loop_01.xml" strTagEffects="e0=CH/Skill/SoulBinder/Eff_SoulBinder_HarmonyofSoul_Cast_01.xml" IgnoreOptimalHideCastEffect="true" />
+			<attack point="p0" targetCount="4" magicPathID="11100101" attacktype="2" releaseObjectWeaponOnHit="0">
+				<rangeProperty includeCaster="1" rangeType="cylinder" distance="400" height="150" applyTarget="2" />
+				<arrowProperty nonTarget="1" effectRay="CH/Skill/SoulBinder/Eff_SoulBinder_HarmonyofSoul_Ray_01.xml" />
+				<damageProperty count="0" attackMaterial="1000" />
+				<conditionSkill level="6" skillID="11100241" skillTarget="2" skillOwner="1" dependOnDamageCount="1" />
+			</attack>
+			<attack point="p1" targetCount="4" magicPathID="11100101" attacktype="2" releaseObjectWeaponOnHit="0">
+				<rangeProperty includeCaster="1" rangeType="cylinder" distance="400" height="150" applyTarget="2" />
+				<arrowProperty nonTarget="1" effectRay="CH/Skill/SoulBinder/Eff_SoulBinder_HarmonyofSoul_Ray_01.xml" />
+				<damageProperty count="0" attackMaterial="1000" />
+				<conditionSkill level="6" skillID="11100241" skillTarget="2" skillOwner="1" dependOnDamageCount="1" />
+			</attack>
+		</motion>
+	</level>
+	<level value="7" feature="JobChange_02">
+		<beginCondition probability="1" cooldownTime="0.3">
+			<stat hp="1" />
+		</beginCondition>
+		<changeSkill changeSkillCheckEffectID="11100063,11100321" changeSkillCheckEffectLevel="1,0" changeSkillCheckEffectOverlapCount="0,0" changeSkillID="11100242,11100244" changeSkillLevel="7,7" />
+		<consume>
+			<stat sp="10" />
+		</consume>
+		<upgrade level="66" skillIDs="11100231" skillLevels="3" />
+		<motion>
+			<motionProperty sequenceName="Soulbinder_HarmonyofSprit_A" loopEffect="CH/Skill/SoulBinder/Eff_SoulBinder_HarmonyofSoul_Loop_01.xml" strTagEffects="e0=CH/Skill/SoulBinder/Eff_SoulBinder_HarmonyofSoul_Cast_01.xml" IgnoreOptimalHideCastEffect="true" />
+			<attack point="p0" targetCount="4" magicPathID="11100101" attacktype="2" releaseObjectWeaponOnHit="0">
+				<rangeProperty includeCaster="1" rangeType="cylinder" distance="400" height="150" applyTarget="2" />
+				<arrowProperty nonTarget="1" effectRay="CH/Skill/SoulBinder/Eff_SoulBinder_HarmonyofSoul_Ray_01.xml" />
+				<damageProperty count="0" attackMaterial="1000" />
+				<conditionSkill level="7" skillID="11100241" skillTarget="2" skillOwner="1" dependOnDamageCount="1" />
+			</attack>
+			<attack point="p1" targetCount="4" magicPathID="11100101" attacktype="2" releaseObjectWeaponOnHit="0">
+				<rangeProperty includeCaster="1" rangeType="cylinder" distance="400" height="150" applyTarget="2" />
+				<arrowProperty nonTarget="1" effectRay="CH/Skill/SoulBinder/Eff_SoulBinder_HarmonyofSoul_Ray_01.xml" />
+				<damageProperty count="0" attackMaterial="1000" />
+				<conditionSkill level="7" skillID="11100241" skillTarget="2" skillOwner="1" dependOnDamageCount="1" />
+			</attack>
+		</motion>
+	</level>
+	<level value="8" feature="JobChange_02">
+		<beginCondition probability="1" cooldownTime="0.3">
+			<stat hp="1" />
+		</beginCondition>
+		<changeSkill changeSkillCheckEffectID="11100063,11100321" changeSkillCheckEffectLevel="1,0" changeSkillCheckEffectOverlapCount="0,0" changeSkillID="11100242,11100244" changeSkillLevel="8,8" />
+		<consume>
+			<stat sp="10" />
+		</consume>
+		<upgrade level="66" skillIDs="11100231" skillLevels="3" />
+		<motion>
+			<motionProperty sequenceName="Soulbinder_HarmonyofSprit_A" loopEffect="CH/Skill/SoulBinder/Eff_SoulBinder_HarmonyofSoul_Loop_01.xml" strTagEffects="e0=CH/Skill/SoulBinder/Eff_SoulBinder_HarmonyofSoul_Cast_01.xml" IgnoreOptimalHideCastEffect="true" />
+			<attack point="p0" targetCount="4" magicPathID="11100101" attacktype="2" releaseObjectWeaponOnHit="0">
+				<rangeProperty includeCaster="1" rangeType="cylinder" distance="400" height="150" applyTarget="2" />
+				<arrowProperty nonTarget="1" effectRay="CH/Skill/SoulBinder/Eff_SoulBinder_HarmonyofSoul_Ray_01.xml" />
+				<damageProperty count="0" attackMaterial="1000" />
+				<conditionSkill level="8" skillID="11100241" skillTarget="2" skillOwner="1" dependOnDamageCount="1" />
+			</attack>
+			<attack point="p1" targetCount="4" magicPathID="11100101" attacktype="2" releaseObjectWeaponOnHit="0">
+				<rangeProperty includeCaster="1" rangeType="cylinder" distance="400" height="150" applyTarget="2" />
+				<arrowProperty nonTarget="1" effectRay="CH/Skill/SoulBinder/Eff_SoulBinder_HarmonyofSoul_Ray_01.xml" />
+				<damageProperty count="0" attackMaterial="1000" />
+				<conditionSkill level="8" skillID="11100241" skillTarget="2" skillOwner="1" dependOnDamageCount="1" />
+			</attack>
+		</motion>
+	</level>
+	<level value="9" feature="JobChange_02">
+		<beginCondition probability="1" cooldownTime="0.3">
+			<stat hp="1" />
+		</beginCondition>
+		<changeSkill changeSkillCheckEffectID="11100063,11100321" changeSkillCheckEffectLevel="1,0" changeSkillCheckEffectOverlapCount="0,0" changeSkillID="11100242,11100244" changeSkillLevel="9,9" />
+		<consume>
+			<stat sp="10" />
+		</consume>
+		<upgrade level="66" skillIDs="11100231" skillLevels="3" />
+		<motion>
+			<motionProperty sequenceName="Soulbinder_HarmonyofSprit_A" loopEffect="CH/Skill/SoulBinder/Eff_SoulBinder_HarmonyofSoul_Loop_01.xml" strTagEffects="e0=CH/Skill/SoulBinder/Eff_SoulBinder_HarmonyofSoul_Cast_01.xml" IgnoreOptimalHideCastEffect="true" />
+			<attack point="p0" targetCount="4" magicPathID="11100101" attacktype="2" releaseObjectWeaponOnHit="0">
+				<rangeProperty includeCaster="1" rangeType="cylinder" distance="400" height="150" applyTarget="2" />
+				<arrowProperty nonTarget="1" effectRay="CH/Skill/SoulBinder/Eff_SoulBinder_HarmonyofSoul_Ray_01.xml" />
+				<damageProperty count="0" attackMaterial="1000" />
+				<conditionSkill level="9" skillID="11100241" skillTarget="2" skillOwner="1" dependOnDamageCount="1" />
+			</attack>
+			<attack point="p1" targetCount="4" magicPathID="11100101" attacktype="2" releaseObjectWeaponOnHit="0">
+				<rangeProperty includeCaster="1" rangeType="cylinder" distance="400" height="150" applyTarget="2" />
+				<arrowProperty nonTarget="1" effectRay="CH/Skill/SoulBinder/Eff_SoulBinder_HarmonyofSoul_Ray_01.xml" />
+				<damageProperty count="0" attackMaterial="1000" />
+				<conditionSkill level="9" skillID="11100241" skillTarget="2" skillOwner="1" dependOnDamageCount="1" />
+			</attack>
+		</motion>
+	</level>
+	<level value="10" feature="JobChange_02">
+		<beginCondition probability="1" cooldownTime="0.3">
+			<stat hp="1" />
+		</beginCondition>
+		<changeSkill changeSkillCheckEffectID="11100063,11100321" changeSkillCheckEffectLevel="1,0" changeSkillCheckEffectOverlapCount="0,0" changeSkillID="11100242,11100244" changeSkillLevel="10,10" />
+		<consume>
+			<stat sp="10" />
+		</consume>
+		<upgrade level="66" skillIDs="11100231" skillLevels="3" />
+		<motion>
+			<motionProperty sequenceName="Soulbinder_HarmonyofSprit_A" loopEffect="CH/Skill/SoulBinder/Eff_SoulBinder_HarmonyofSoul_Loop_01.xml" strTagEffects="e0=CH/Skill/SoulBinder/Eff_SoulBinder_HarmonyofSoul_Cast_01.xml" IgnoreOptimalHideCastEffect="true" />
+			<attack point="p0" targetCount="4" magicPathID="11100101" attacktype="2" releaseObjectWeaponOnHit="0">
+				<rangeProperty includeCaster="1" rangeType="cylinder" distance="400" height="150" applyTarget="2" />
+				<arrowProperty nonTarget="1" effectRay="CH/Skill/SoulBinder/Eff_SoulBinder_HarmonyofSoul_Ray_01.xml" />
+				<damageProperty count="0" attackMaterial="1000" />
+				<conditionSkill level="10" skillID="11100241" skillTarget="2" skillOwner="1" dependOnDamageCount="1" />
+			</attack>
+			<attack point="p1" targetCount="4" magicPathID="11100101" attacktype="2" releaseObjectWeaponOnHit="0">
+				<rangeProperty includeCaster="1" rangeType="cylinder" distance="400" height="150" applyTarget="2" />
+				<arrowProperty nonTarget="1" effectRay="CH/Skill/SoulBinder/Eff_SoulBinder_HarmonyofSoul_Ray_01.xml" />
+				<damageProperty count="0" attackMaterial="1000" />
+				<conditionSkill level="10" skillID="11100241" skillTarget="2" skillOwner="1" dependOnDamageCount="1" />
+			</attack>
+		</motion>
+	</level>
+	<level value="11" feature="JobChange_02">
+		<beginCondition probability="1" cooldownTime="0.3">
+			<stat hp="1" />
+		</beginCondition>
+		<changeSkill changeSkillCheckEffectID="11100063,11100321" changeSkillCheckEffectLevel="1,0" changeSkillCheckEffectOverlapCount="0,0" changeSkillID="11100242,11100244" changeSkillLevel="11,11" />
+		<consume>
+			<stat sp="10" />
+		</consume>
+		<upgrade level="66" skillIDs="11100231" skillLevels="3" />
+		<motion>
+			<motionProperty sequenceName="Soulbinder_HarmonyofSprit_A" loopEffect="CH/Skill/SoulBinder/Eff_SoulBinder_HarmonyofSoul_Loop_01.xml" strTagEffects="e0=CH/Skill/SoulBinder/Eff_SoulBinder_HarmonyofSoul_Cast_01.xml" IgnoreOptimalHideCastEffect="true" />
+			<attack point="p0" targetCount="4" magicPathID="11100101" attacktype="2" releaseObjectWeaponOnHit="0">
+				<rangeProperty includeCaster="1" rangeType="cylinder" distance="400" height="150" applyTarget="2" />
+				<arrowProperty nonTarget="1" effectRay="CH/Skill/SoulBinder/Eff_SoulBinder_HarmonyofSoul_Ray_01.xml" />
+				<damageProperty count="0" attackMaterial="1000" />
+				<conditionSkill level="11" skillID="11100241" skillTarget="2" skillOwner="1" dependOnDamageCount="1" />
+			</attack>
+			<attack point="p1" targetCount="4" magicPathID="11100101" attacktype="2" releaseObjectWeaponOnHit="0">
+				<rangeProperty includeCaster="1" rangeType="cylinder" distance="400" height="150" applyTarget="2" />
+				<arrowProperty nonTarget="1" effectRay="CH/Skill/SoulBinder/Eff_SoulBinder_HarmonyofSoul_Ray_01.xml" />
+				<damageProperty count="0" attackMaterial="1000" />
+				<conditionSkill level="11" skillID="11100241" skillTarget="2" skillOwner="1" dependOnDamageCount="1" />
+			</attack>
+		</motion>
+	</level>
+	<level value="12" feature="JobChange_02">
+		<beginCondition probability="1" cooldownTime="0.3">
+			<stat hp="1" />
+		</beginCondition>
+		<changeSkill changeSkillCheckEffectID="11100063,11100321" changeSkillCheckEffectLevel="1,0" changeSkillCheckEffectOverlapCount="0,0" changeSkillID="11100242,11100244" changeSkillLevel="12,12" />
+		<consume>
+			<stat sp="10" />
+		</consume>
+		<upgrade level="66" skillIDs="11100231" skillLevels="3" />
+		<motion>
+			<motionProperty sequenceName="Soulbinder_HarmonyofSprit_A" loopEffect="CH/Skill/SoulBinder/Eff_SoulBinder_HarmonyofSoul_Loop_01.xml" strTagEffects="e0=CH/Skill/SoulBinder/Eff_SoulBinder_HarmonyofSoul_Cast_01.xml" IgnoreOptimalHideCastEffect="true" />
+			<attack point="p0" targetCount="4" magicPathID="11100101" attacktype="2" releaseObjectWeaponOnHit="0">
+				<rangeProperty includeCaster="1" rangeType="cylinder" distance="400" height="150" applyTarget="2" />
+				<arrowProperty nonTarget="1" effectRay="CH/Skill/SoulBinder/Eff_SoulBinder_HarmonyofSoul_Ray_01.xml" />
+				<damageProperty count="0" attackMaterial="1000" />
+				<conditionSkill level="12" skillID="11100241" skillTarget="2" skillOwner="1" dependOnDamageCount="1" />
+			</attack>
+			<attack point="p1" targetCount="4" magicPathID="11100101" attacktype="2" releaseObjectWeaponOnHit="0">
+				<rangeProperty includeCaster="1" rangeType="cylinder" distance="400" height="150" applyTarget="2" />
+				<arrowProperty nonTarget="1" effectRay="CH/Skill/SoulBinder/Eff_SoulBinder_HarmonyofSoul_Ray_01.xml" />
+				<damageProperty count="0" attackMaterial="1000" />
+				<conditionSkill level="12" skillID="11100241" skillTarget="2" skillOwner="1" dependOnDamageCount="1" />
+			</attack>
+		</motion>
+	</level>
+	<level value="1" feature="JobChange_01">
+		<beginCondition probability="1" cooldownTime="0.3">
+			<stat hp="1" />
+		</beginCondition>
+		<changeSkill changeSkillCheckEffectID="11100063" changeSkillCheckEffectLevel="1" changeSkillCheckEffectOverlapCount="0" changeSkillID="11100242" changeSkillLevel="1" />
+		<consume>
+			<stat sp="10" />
+		</consume>
+		<upgrade level="66" skillIDs="11100231" skillLevels="3" />
+		<motion>
+			<motionProperty sequenceName="Soulbinder_HarmonyofSprit_A" loopEffect="CH/Skill/SoulBinder/Eff_SoulBinder_HarmonyofSoul_Loop_01.xml" strTagEffects="e0=CH/Skill/SoulBinder/Eff_SoulBinder_HarmonyofSoul_Cast_01.xml" IgnoreOptimalHideCastEffect="true" />
+			<attack point="p0" targetCount="4" magicPathID="11100101" attacktype="2" releaseObjectWeaponOnHit="0">
+				<rangeProperty includeCaster="1" rangeType="cylinder" distance="400" height="150" applyTarget="2" />
+				<arrowProperty nonTarget="1" effectRay="CH/Skill/SoulBinder/Eff_SoulBinder_HarmonyofSoul_Ray_01.xml" />
+				<damageProperty count="0" attackMaterial="1000" />
+				<conditionSkill level="1" skillID="11100241" skillTarget="2" skillOwner="1" dependOnDamageCount="1" />
+			</attack>
+			<attack point="p1" targetCount="4" magicPathID="11100101" attacktype="2" releaseObjectWeaponOnHit="0">
+				<rangeProperty includeCaster="1" rangeType="cylinder" distance="400" height="150" applyTarget="2" />
+				<arrowProperty nonTarget="1" effectRay="CH/Skill/SoulBinder/Eff_SoulBinder_HarmonyofSoul_Ray_01.xml" />
+				<damageProperty count="0" attackMaterial="1000" />
+				<conditionSkill level="1" skillID="11100241" skillTarget="2" skillOwner="1" dependOnDamageCount="1" />
+			</attack>
+		</motion>
+	</level>
+	<level value="2" feature="JobChange_01">
+		<beginCondition probability="1" cooldownTime="0.3">
+			<stat hp="1" />
+		</beginCondition>
+		<changeSkill changeSkillCheckEffectID="11100063" changeSkillCheckEffectLevel="1" changeSkillCheckEffectOverlapCount="0" changeSkillID="11100242" changeSkillLevel="2" />
+		<consume>
+			<stat sp="10" />
+		</consume>
+		<upgrade level="66" skillIDs="11100231" skillLevels="3" />
+		<motion>
+			<motionProperty sequenceName="Soulbinder_HarmonyofSprit_A" loopEffect="CH/Skill/SoulBinder/Eff_SoulBinder_HarmonyofSoul_Loop_01.xml" strTagEffects="e0=CH/Skill/SoulBinder/Eff_SoulBinder_HarmonyofSoul_Cast_01.xml" IgnoreOptimalHideCastEffect="true" />
+			<attack point="p0" targetCount="4" magicPathID="11100101" attacktype="2" releaseObjectWeaponOnHit="0">
+				<rangeProperty includeCaster="1" rangeType="cylinder" distance="400" height="150" applyTarget="2" />
+				<arrowProperty nonTarget="1" effectRay="CH/Skill/SoulBinder/Eff_SoulBinder_HarmonyofSoul_Ray_01.xml" />
+				<damageProperty count="0" attackMaterial="1000" />
+				<conditionSkill level="2" skillID="11100241" skillTarget="2" skillOwner="1" dependOnDamageCount="1" />
+			</attack>
+			<attack point="p1" targetCount="4" magicPathID="11100101" attacktype="2" releaseObjectWeaponOnHit="0">
+				<rangeProperty includeCaster="1" rangeType="cylinder" distance="400" height="150" applyTarget="2" />
+				<arrowProperty nonTarget="1" effectRay="CH/Skill/SoulBinder/Eff_SoulBinder_HarmonyofSoul_Ray_01.xml" />
+				<damageProperty count="0" attackMaterial="1000" />
+				<conditionSkill level="2" skillID="11100241" skillTarget="2" skillOwner="1" dependOnDamageCount="1" />
+			</attack>
+		</motion>
+	</level>
+	<level value="3" feature="JobChange_01">
+		<beginCondition probability="1" cooldownTime="0.3">
+			<stat hp="1" />
+		</beginCondition>
+		<changeSkill changeSkillCheckEffectID="11100063" changeSkillCheckEffectLevel="1" changeSkillCheckEffectOverlapCount="0" changeSkillID="11100242" changeSkillLevel="3" />
+		<consume>
+			<stat sp="10" />
+		</consume>
+		<upgrade level="66" skillIDs="11100231" skillLevels="3" />
+		<motion>
+			<motionProperty sequenceName="Soulbinder_HarmonyofSprit_A" loopEffect="CH/Skill/SoulBinder/Eff_SoulBinder_HarmonyofSoul_Loop_01.xml" strTagEffects="e0=CH/Skill/SoulBinder/Eff_SoulBinder_HarmonyofSoul_Cast_01.xml" IgnoreOptimalHideCastEffect="true" />
+			<attack point="p0" targetCount="4" magicPathID="11100101" attacktype="2" releaseObjectWeaponOnHit="0">
+				<rangeProperty includeCaster="1" rangeType="cylinder" distance="400" height="150" applyTarget="2" />
+				<arrowProperty nonTarget="1" effectRay="CH/Skill/SoulBinder/Eff_SoulBinder_HarmonyofSoul_Ray_01.xml" />
+				<damageProperty count="0" attackMaterial="1000" />
+				<conditionSkill level="3" skillID="11100241" skillTarget="2" skillOwner="1" dependOnDamageCount="1" />
+			</attack>
+			<attack point="p1" targetCount="4" magicPathID="11100101" attacktype="2" releaseObjectWeaponOnHit="0">
+				<rangeProperty includeCaster="1" rangeType="cylinder" distance="400" height="150" applyTarget="2" />
+				<arrowProperty nonTarget="1" effectRay="CH/Skill/SoulBinder/Eff_SoulBinder_HarmonyofSoul_Ray_01.xml" />
+				<damageProperty count="0" attackMaterial="1000" />
+				<conditionSkill level="3" skillID="11100241" skillTarget="2" skillOwner="1" dependOnDamageCount="1" />
+			</attack>
+		</motion>
+	</level>
+	<level value="4" feature="JobChange_01">
+		<beginCondition probability="1" cooldownTime="0.3">
+			<stat hp="1" />
+		</beginCondition>
+		<changeSkill changeSkillCheckEffectID="11100063" changeSkillCheckEffectLevel="1" changeSkillCheckEffectOverlapCount="0" changeSkillID="11100242" changeSkillLevel="4" />
+		<consume>
+			<stat sp="10" />
+		</consume>
+		<upgrade level="66" skillIDs="11100231" skillLevels="3" />
+		<motion>
+			<motionProperty sequenceName="Soulbinder_HarmonyofSprit_A" loopEffect="CH/Skill/SoulBinder/Eff_SoulBinder_HarmonyofSoul_Loop_01.xml" strTagEffects="e0=CH/Skill/SoulBinder/Eff_SoulBinder_HarmonyofSoul_Cast_01.xml" IgnoreOptimalHideCastEffect="true" />
+			<attack point="p0" targetCount="4" magicPathID="11100101" attacktype="2" releaseObjectWeaponOnHit="0">
+				<rangeProperty includeCaster="1" rangeType="cylinder" distance="400" height="150" applyTarget="2" />
+				<arrowProperty nonTarget="1" effectRay="CH/Skill/SoulBinder/Eff_SoulBinder_HarmonyofSoul_Ray_01.xml" />
+				<damageProperty count="0" attackMaterial="1000" />
+				<conditionSkill level="4" skillID="11100241" skillTarget="2" skillOwner="1" dependOnDamageCount="1" />
+			</attack>
+			<attack point="p1" targetCount="4" magicPathID="11100101" attacktype="2" releaseObjectWeaponOnHit="0">
+				<rangeProperty includeCaster="1" rangeType="cylinder" distance="400" height="150" applyTarget="2" />
+				<arrowProperty nonTarget="1" effectRay="CH/Skill/SoulBinder/Eff_SoulBinder_HarmonyofSoul_Ray_01.xml" />
+				<damageProperty count="0" attackMaterial="1000" />
+				<conditionSkill level="4" skillID="11100241" skillTarget="2" skillOwner="1" dependOnDamageCount="1" />
+			</attack>
+		</motion>
+	</level>
+	<level value="5" feature="JobChange_01">
+		<beginCondition probability="1" cooldownTime="0.3">
+			<stat hp="1" />
+		</beginCondition>
+		<changeSkill changeSkillCheckEffectID="11100063" changeSkillCheckEffectLevel="1" changeSkillCheckEffectOverlapCount="0" changeSkillID="11100242" changeSkillLevel="5" />
+		<consume>
+			<stat sp="10" />
+		</consume>
+		<upgrade level="66" skillIDs="11100231" skillLevels="3" />
+		<motion>
+			<motionProperty sequenceName="Soulbinder_HarmonyofSprit_A" loopEffect="CH/Skill/SoulBinder/Eff_SoulBinder_HarmonyofSoul_Loop_01.xml" strTagEffects="e0=CH/Skill/SoulBinder/Eff_SoulBinder_HarmonyofSoul_Cast_01.xml" IgnoreOptimalHideCastEffect="true" />
+			<attack point="p0" targetCount="4" magicPathID="11100101" attacktype="2" releaseObjectWeaponOnHit="0">
+				<rangeProperty includeCaster="1" rangeType="cylinder" distance="400" height="150" applyTarget="2" />
+				<arrowProperty nonTarget="1" effectRay="CH/Skill/SoulBinder/Eff_SoulBinder_HarmonyofSoul_Ray_01.xml" />
+				<damageProperty count="0" attackMaterial="1000" />
+				<conditionSkill level="5" skillID="11100241" skillTarget="2" skillOwner="1" dependOnDamageCount="1" />
+			</attack>
+			<attack point="p1" targetCount="4" magicPathID="11100101" attacktype="2" releaseObjectWeaponOnHit="0">
+				<rangeProperty includeCaster="1" rangeType="cylinder" distance="400" height="150" applyTarget="2" />
+				<arrowProperty nonTarget="1" effectRay="CH/Skill/SoulBinder/Eff_SoulBinder_HarmonyofSoul_Ray_01.xml" />
+				<damageProperty count="0" attackMaterial="1000" />
+				<conditionSkill level="5" skillID="11100241" skillTarget="2" skillOwner="1" dependOnDamageCount="1" />
+			</attack>
+		</motion>
+	</level>
+	<level value="6" feature="JobChange_01">
+		<beginCondition probability="1" cooldownTime="0.3">
+			<stat hp="1" />
+		</beginCondition>
+		<changeSkill changeSkillCheckEffectID="11100063" changeSkillCheckEffectLevel="1" changeSkillCheckEffectOverlapCount="0" changeSkillID="11100242" changeSkillLevel="6" />
+		<consume>
+			<stat sp="10" />
+		</consume>
+		<upgrade level="66" skillIDs="11100231" skillLevels="3" />
+		<motion>
+			<motionProperty sequenceName="Soulbinder_HarmonyofSprit_A" loopEffect="CH/Skill/SoulBinder/Eff_SoulBinder_HarmonyofSoul_Loop_01.xml" strTagEffects="e0=CH/Skill/SoulBinder/Eff_SoulBinder_HarmonyofSoul_Cast_01.xml" IgnoreOptimalHideCastEffect="true" />
+			<attack point="p0" targetCount="4" magicPathID="11100101" attacktype="2" releaseObjectWeaponOnHit="0">
+				<rangeProperty includeCaster="1" rangeType="cylinder" distance="400" height="150" applyTarget="2" />
+				<arrowProperty nonTarget="1" effectRay="CH/Skill/SoulBinder/Eff_SoulBinder_HarmonyofSoul_Ray_01.xml" />
+				<damageProperty count="0" attackMaterial="1000" />
+				<conditionSkill level="6" skillID="11100241" skillTarget="2" skillOwner="1" dependOnDamageCount="1" />
+			</attack>
+			<attack point="p1" targetCount="4" magicPathID="11100101" attacktype="2" releaseObjectWeaponOnHit="0">
+				<rangeProperty includeCaster="1" rangeType="cylinder" distance="400" height="150" applyTarget="2" />
+				<arrowProperty nonTarget="1" effectRay="CH/Skill/SoulBinder/Eff_SoulBinder_HarmonyofSoul_Ray_01.xml" />
+				<damageProperty count="0" attackMaterial="1000" />
+				<conditionSkill level="6" skillID="11100241" skillTarget="2" skillOwner="1" dependOnDamageCount="1" />
+			</attack>
+		</motion>
+	</level>
+	<level value="7" feature="JobChange_01">
+		<beginCondition probability="1" cooldownTime="0.3">
+			<stat hp="1" />
+		</beginCondition>
+		<changeSkill changeSkillCheckEffectID="11100063" changeSkillCheckEffectLevel="1" changeSkillCheckEffectOverlapCount="0" changeSkillID="11100242" changeSkillLevel="7" />
+		<consume>
+			<stat sp="10" />
+		</consume>
+		<upgrade level="66" skillIDs="11100231" skillLevels="3" />
+		<motion>
+			<motionProperty sequenceName="Soulbinder_HarmonyofSprit_A" loopEffect="CH/Skill/SoulBinder/Eff_SoulBinder_HarmonyofSoul_Loop_01.xml" strTagEffects="e0=CH/Skill/SoulBinder/Eff_SoulBinder_HarmonyofSoul_Cast_01.xml" IgnoreOptimalHideCastEffect="true" />
+			<attack point="p0" targetCount="4" magicPathID="11100101" attacktype="2" releaseObjectWeaponOnHit="0">
+				<rangeProperty includeCaster="1" rangeType="cylinder" distance="400" height="150" applyTarget="2" />
+				<arrowProperty nonTarget="1" effectRay="CH/Skill/SoulBinder/Eff_SoulBinder_HarmonyofSoul_Ray_01.xml" />
+				<damageProperty count="0" attackMaterial="1000" />
+				<conditionSkill level="7" skillID="11100241" skillTarget="2" skillOwner="1" dependOnDamageCount="1" />
+			</attack>
+			<attack point="p1" targetCount="4" magicPathID="11100101" attacktype="2" releaseObjectWeaponOnHit="0">
+				<rangeProperty includeCaster="1" rangeType="cylinder" distance="400" height="150" applyTarget="2" />
+				<arrowProperty nonTarget="1" effectRay="CH/Skill/SoulBinder/Eff_SoulBinder_HarmonyofSoul_Ray_01.xml" />
+				<damageProperty count="0" attackMaterial="1000" />
+				<conditionSkill level="7" skillID="11100241" skillTarget="2" skillOwner="1" dependOnDamageCount="1" />
+			</attack>
+		</motion>
+	</level>
+	<level value="8" feature="JobChange_01">
+		<beginCondition probability="1" cooldownTime="0.3">
+			<stat hp="1" />
+		</beginCondition>
+		<changeSkill changeSkillCheckEffectID="11100063" changeSkillCheckEffectLevel="1" changeSkillCheckEffectOverlapCount="0" changeSkillID="11100242" changeSkillLevel="8" />
+		<consume>
+			<stat sp="10" />
+		</consume>
+		<upgrade level="66" skillIDs="11100231" skillLevels="3" />
+		<motion>
+			<motionProperty sequenceName="Soulbinder_HarmonyofSprit_A" loopEffect="CH/Skill/SoulBinder/Eff_SoulBinder_HarmonyofSoul_Loop_01.xml" strTagEffects="e0=CH/Skill/SoulBinder/Eff_SoulBinder_HarmonyofSoul_Cast_01.xml" IgnoreOptimalHideCastEffect="true" />
+			<attack point="p0" targetCount="4" magicPathID="11100101" attacktype="2" releaseObjectWeaponOnHit="0">
+				<rangeProperty includeCaster="1" rangeType="cylinder" distance="400" height="150" applyTarget="2" />
+				<arrowProperty nonTarget="1" effectRay="CH/Skill/SoulBinder/Eff_SoulBinder_HarmonyofSoul_Ray_01.xml" />
+				<damageProperty count="0" attackMaterial="1000" />
+				<conditionSkill level="8" skillID="11100241" skillTarget="2" skillOwner="1" dependOnDamageCount="1" />
+			</attack>
+			<attack point="p1" targetCount="4" magicPathID="11100101" attacktype="2" releaseObjectWeaponOnHit="0">
+				<rangeProperty includeCaster="1" rangeType="cylinder" distance="400" height="150" applyTarget="2" />
+				<arrowProperty nonTarget="1" effectRay="CH/Skill/SoulBinder/Eff_SoulBinder_HarmonyofSoul_Ray_01.xml" />
+				<damageProperty count="0" attackMaterial="1000" />
+				<conditionSkill level="8" skillID="11100241" skillTarget="2" skillOwner="1" dependOnDamageCount="1" />
+			</attack>
+		</motion>
+	</level>
+	<level value="9" feature="JobChange_01">
+		<beginCondition probability="1" cooldownTime="0.3">
+			<stat hp="1" />
+		</beginCondition>
+		<changeSkill changeSkillCheckEffectID="11100063" changeSkillCheckEffectLevel="1" changeSkillCheckEffectOverlapCount="0" changeSkillID="11100242" changeSkillLevel="9" />
+		<consume>
+			<stat sp="10" />
+		</consume>
+		<upgrade level="66" skillIDs="11100231" skillLevels="3" />
+		<motion>
+			<motionProperty sequenceName="Soulbinder_HarmonyofSprit_A" loopEffect="CH/Skill/SoulBinder/Eff_SoulBinder_HarmonyofSoul_Loop_01.xml" strTagEffects="e0=CH/Skill/SoulBinder/Eff_SoulBinder_HarmonyofSoul_Cast_01.xml" IgnoreOptimalHideCastEffect="true" />
+			<attack point="p0" targetCount="4" magicPathID="11100101" attacktype="2" releaseObjectWeaponOnHit="0">
+				<rangeProperty includeCaster="1" rangeType="cylinder" distance="400" height="150" applyTarget="2" />
+				<arrowProperty nonTarget="1" effectRay="CH/Skill/SoulBinder/Eff_SoulBinder_HarmonyofSoul_Ray_01.xml" />
+				<damageProperty count="0" attackMaterial="1000" />
+				<conditionSkill level="9" skillID="11100241" skillTarget="2" skillOwner="1" dependOnDamageCount="1" />
+			</attack>
+			<attack point="p1" targetCount="4" magicPathID="11100101" attacktype="2" releaseObjectWeaponOnHit="0">
+				<rangeProperty includeCaster="1" rangeType="cylinder" distance="400" height="150" applyTarget="2" />
+				<arrowProperty nonTarget="1" effectRay="CH/Skill/SoulBinder/Eff_SoulBinder_HarmonyofSoul_Ray_01.xml" />
+				<damageProperty count="0" attackMaterial="1000" />
+				<conditionSkill level="9" skillID="11100241" skillTarget="2" skillOwner="1" dependOnDamageCount="1" />
+			</attack>
+		</motion>
+	</level>
+	<level value="10" feature="JobChange_01">
+		<beginCondition probability="1" cooldownTime="0.3">
+			<stat hp="1" />
+		</beginCondition>
+		<changeSkill changeSkillCheckEffectID="11100063" changeSkillCheckEffectLevel="1" changeSkillCheckEffectOverlapCount="0" changeSkillID="11100242" changeSkillLevel="10" />
+		<consume>
+			<stat sp="10" />
+		</consume>
+		<upgrade level="66" skillIDs="11100231" skillLevels="3" />
+		<motion>
+			<motionProperty sequenceName="Soulbinder_HarmonyofSprit_A" loopEffect="CH/Skill/SoulBinder/Eff_SoulBinder_HarmonyofSoul_Loop_01.xml" strTagEffects="e0=CH/Skill/SoulBinder/Eff_SoulBinder_HarmonyofSoul_Cast_01.xml" IgnoreOptimalHideCastEffect="true" />
+			<attack point="p0" targetCount="4" magicPathID="11100101" attacktype="2" releaseObjectWeaponOnHit="0">
+				<rangeProperty includeCaster="1" rangeType="cylinder" distance="400" height="150" applyTarget="2" />
+				<arrowProperty nonTarget="1" effectRay="CH/Skill/SoulBinder/Eff_SoulBinder_HarmonyofSoul_Ray_01.xml" />
+				<damageProperty count="0" attackMaterial="1000" />
+				<conditionSkill level="10" skillID="11100241" skillTarget="2" skillOwner="1" dependOnDamageCount="1" />
+			</attack>
+			<attack point="p1" targetCount="4" magicPathID="11100101" attacktype="2" releaseObjectWeaponOnHit="0">
+				<rangeProperty includeCaster="1" rangeType="cylinder" distance="400" height="150" applyTarget="2" />
+				<arrowProperty nonTarget="1" effectRay="CH/Skill/SoulBinder/Eff_SoulBinder_HarmonyofSoul_Ray_01.xml" />
+				<damageProperty count="0" attackMaterial="1000" />
+				<conditionSkill level="10" skillID="11100241" skillTarget="2" skillOwner="1" dependOnDamageCount="1" />
+			</attack>
+		</motion>
+	</level>
+	<level value="11" feature="JobChange_01">
+		<beginCondition probability="1" cooldownTime="0.3">
+			<stat hp="1" />
+		</beginCondition>
+		<changeSkill changeSkillCheckEffectID="11100063" changeSkillCheckEffectLevel="1" changeSkillCheckEffectOverlapCount="0" changeSkillID="11100242" changeSkillLevel="11" />
+		<consume>
+			<stat sp="10" />
+		</consume>
+		<upgrade level="66" skillIDs="11100231" skillLevels="3" />
+		<motion>
+			<motionProperty sequenceName="Soulbinder_HarmonyofSprit_A" loopEffect="CH/Skill/SoulBinder/Eff_SoulBinder_HarmonyofSoul_Loop_01.xml" strTagEffects="e0=CH/Skill/SoulBinder/Eff_SoulBinder_HarmonyofSoul_Cast_01.xml" IgnoreOptimalHideCastEffect="true" />
+			<attack point="p0" targetCount="4" magicPathID="11100101" attacktype="2" releaseObjectWeaponOnHit="0">
+				<rangeProperty includeCaster="1" rangeType="cylinder" distance="400" height="150" applyTarget="2" />
+				<arrowProperty nonTarget="1" effectRay="CH/Skill/SoulBinder/Eff_SoulBinder_HarmonyofSoul_Ray_01.xml" />
+				<damageProperty count="0" attackMaterial="1000" />
+				<conditionSkill level="11" skillID="11100241" skillTarget="2" skillOwner="1" dependOnDamageCount="1" />
+			</attack>
+			<attack point="p1" targetCount="4" magicPathID="11100101" attacktype="2" releaseObjectWeaponOnHit="0">
+				<rangeProperty includeCaster="1" rangeType="cylinder" distance="400" height="150" applyTarget="2" />
+				<arrowProperty nonTarget="1" effectRay="CH/Skill/SoulBinder/Eff_SoulBinder_HarmonyofSoul_Ray_01.xml" />
+				<damageProperty count="0" attackMaterial="1000" />
+				<conditionSkill level="11" skillID="11100241" skillTarget="2" skillOwner="1" dependOnDamageCount="1" />
+			</attack>
+		</motion>
+	</level>
+	<level value="12" feature="JobChange_01">
+		<beginCondition probability="1" cooldownTime="0.3">
+			<stat hp="1" />
+		</beginCondition>
+		<changeSkill changeSkillCheckEffectID="11100063" changeSkillCheckEffectLevel="1" changeSkillCheckEffectOverlapCount="0" changeSkillID="11100242" changeSkillLevel="12" />
+		<consume>
+			<stat sp="10" />
+		</consume>
+		<upgrade level="66" skillIDs="11100231" skillLevels="3" />
+		<motion>
+			<motionProperty sequenceName="Soulbinder_HarmonyofSprit_A" loopEffect="CH/Skill/SoulBinder/Eff_SoulBinder_HarmonyofSoul_Loop_01.xml" strTagEffects="e0=CH/Skill/SoulBinder/Eff_SoulBinder_HarmonyofSoul_Cast_01.xml" IgnoreOptimalHideCastEffect="true" />
+			<attack point="p0" targetCount="4" magicPathID="11100101" attacktype="2" releaseObjectWeaponOnHit="0">
+				<rangeProperty includeCaster="1" rangeType="cylinder" distance="400" height="150" applyTarget="2" />
+				<arrowProperty nonTarget="1" effectRay="CH/Skill/SoulBinder/Eff_SoulBinder_HarmonyofSoul_Ray_01.xml" />
+				<damageProperty count="0" attackMaterial="1000" />
+				<conditionSkill level="12" skillID="11100241" skillTarget="2" skillOwner="1" dependOnDamageCount="1" />
+			</attack>
+			<attack point="p1" targetCount="4" magicPathID="11100101" attacktype="2" releaseObjectWeaponOnHit="0">
+				<rangeProperty includeCaster="1" rangeType="cylinder" distance="400" height="150" applyTarget="2" />
+				<arrowProperty nonTarget="1" effectRay="CH/Skill/SoulBinder/Eff_SoulBinder_HarmonyofSoul_Ray_01.xml" />
+				<damageProperty count="0" attackMaterial="1000" />
+				<conditionSkill level="12" skillID="11100241" skillTarget="2" skillOwner="1" dependOnDamageCount="1" />
+			</attack>
+		</motion>
+	</level>
+</ms2>

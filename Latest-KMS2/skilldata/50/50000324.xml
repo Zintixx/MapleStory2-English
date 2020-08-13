@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 파싱해서 사용하는 데이터이니 직접 수정하지 마세요 -->
+<ms2 feature="">
+	<basic>
+		<ui attackType="1" />
+		<kinds rangeType="1" element="7" />
+	</basic>
+	<level value="1">
+		<beginCondition probability="1">
+			<stat hp="1" />
+		</beginCondition>
+		<motion>
+			<motionProperty sequenceName="Attack_01_A" sequenceSpeed="0.8" motionEffect="NPC/Skill/BaphometHumanWhite/Eff_BaphometHumanWhite_Attack_01_A.xml" faceTarget="0" />
+			<attack point="p0" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="3" unrideOnHit="1">
+				<rangeProperty rangeType="box" distance="450" height="300" width="800" applyTarget="1" castTarget="1" />
+				<arrowProperty nonTarget="1" effect="NPC/Skill/Temp/Eff_Temp.xml" />
+				<damageProperty count="0" rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="2" />
+			</attack>
+		</motion>
+		<motion>
+			<motionProperty sequenceName="Attack_02_A" motionEffect="NPC/Skill/BaphometHumanWhite/Eff_BaphometHumanWhite_Attack_02_A.xml" faceTarget="0" />
+			<attack point="p0" targetCount="1" magicPathID="5101" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="3" unrideOnHit="1">
+				<rangeProperty rangeType="box" distance="550" height="300" width="300" applyTarget="1" castTarget="1" />
+				<arrowProperty nonTarget="1" bounceType="3" bounceCount="50" collision="450.000000,850.000000,300.000000" effect="NPC/Skill/DevilHugeRed/Eff_DevilHugeRed_Bore_02_B_Ball.xml" />
+				<damageProperty rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="500" pushduration="0.3" pushEaseType="1" attackMaterial="2" />
+				<conditionSkill level="1" skillID="50000004" skillTarget="2" skillOwner="1" />
+			</attack>
+			<attack point="p1" targetCount="1" magicPathID="5102" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="3" unrideOnHit="1">
+				<rangeProperty rangeType="box" distance="550" height="300" width="300" applyTarget="1" castTarget="1" />
+				<arrowProperty nonTarget="1" bounceType="3" bounceCount="50" collision="450.000000,850.000000,300.000000" effect="NPC/Skill/DevilHugeRed/Eff_DevilHugeRed_Bore_02_B_Ball.xml" />
+				<damageProperty rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="500" pushduration="0.3" pushEaseType="1" attackMaterial="2" />
+				<conditionSkill level="1" skillID="50000004" skillTarget="2" skillOwner="1" />
+			</attack>
+		</motion>
+	</level>
+	<level value="2">
+		<beginCondition probability="1">
+			<stat hp="1" />
+		</beginCondition>
+		<motion>
+			<motionProperty sequenceName="Attack_05_G" sequenceSpeed="1.2" motionEffect="NPC/Skill/BaphometHumanWhite/Eff_BaphometHumanWhite_Attack_05_G.xml" faceTarget="0" />
+			<attack point="p0" targetCount="50" attacktype="1" brokenOffence="1" unrideOnHit="1">
+				<rangeProperty rangeType="frustum" distance="1100" height="300" width="300" endWidth="750" applyTarget="1" castTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="0.01" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="-1" pushdistance="800" pushduration="0.65" pushEaseType="1" attackMaterial="1" />
+				<conditionSkill level="1" skillID="50000208" skillTarget="2" skillOwner="1" />
+			</attack>
+		</motion>
+		<motion>
+			<motionProperty sequenceName="Attack_01_A" sequenceSpeed="0.8" motionEffect="NPC/Skill/BaphometHumanWhite/Eff_BaphometHumanWhite_Attack_01_A.xml" faceTarget="0" />
+			<attack point="p0" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="3" unrideOnHit="1">
+				<rangeProperty rangeType="box" distance="450" height="300" width="800" applyTarget="1" castTarget="1" />
+				<arrowProperty nonTarget="1" effect="NPC/Skill/Temp/Eff_Temp.xml" />
+				<damageProperty count="0" rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="2" />
+			</attack>
+		</motion>
+		<motion>
+			<motionProperty sequenceName="Attack_02_A" motionEffect="NPC/Skill/BaphometHumanWhite/Eff_BaphometHumanWhite_Attack_02_A.xml" faceTarget="0" />
+			<attack point="p0" targetCount="1" magicPathID="5101" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="3" unrideOnHit="1">
+				<rangeProperty rangeType="box" distance="550" height="300" width="300" applyTarget="1" castTarget="1" />
+				<arrowProperty nonTarget="1" bounceType="3" bounceCount="50" collision="450.000000,850.000000,300.000000" effect="NPC/Skill/DevilHugeRed/Eff_DevilHugeRed_Bore_02_B_Ball.xml" />
+				<damageProperty rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="500" pushduration="0.3" pushEaseType="1" attackMaterial="2" />
+				<conditionSkill level="1" skillID="50000004" skillTarget="2" skillOwner="1" />
+			</attack>
+			<attack point="p1" targetCount="1" magicPathID="5102" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="3" unrideOnHit="1">
+				<rangeProperty rangeType="box" distance="550" height="300" width="300" applyTarget="1" castTarget="1" />
+				<arrowProperty nonTarget="1" bounceType="3" bounceCount="50" collision="450.000000,850.000000,300.000000" effect="NPC/Skill/DevilHugeRed/Eff_DevilHugeRed_Bore_02_B_Ball.xml" />
+				<damageProperty rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="500" pushduration="0.3" pushEaseType="1" attackMaterial="2" />
+				<conditionSkill level="1" skillID="50000004" skillTarget="2" skillOwner="1" />
+			</attack>
+		</motion>
+	</level>
+</ms2>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 파싱해서 사용하는 데이터이니 직접 수정하지 마세요 -->
+<ms2 feature="">
+	<basic>
+		<ui icon="./Data/Resource/Image/item/icon/20000517.png" attackType="3" />
+		<kinds type="3" subType="5" unrideOnUse="1" />
+		<stateAttr autoTargeting="0" keyIsDown="1" cooldownGroupID="90000557" ignoreReduceCooldown="1" />
+	</basic>
+	<level value="1">
+		<beginCondition probability="1" cooldownTime="0.6" useCoolDownShowUI="1">
+			<stat hp="1" />
+		</beginCondition>
+		<push back="150" />
+		<targetItem>
+			<item id="20000517" count="1" />
+		</targetItem>
+		<motion>
+			<motionProperty sequenceName="Ranger_GuidedArrow_A" selfInputCombo="selfinputcombo" strTagEffects="e0=CH/Skill/Ranger/Eff_Ranger_GuidedArrow_Cast_01.xml" holdWeapon="0" />
+			<attack point="p0" targetCount="5" magicPathID="900055641" attacktype="3" hitImmuneBreak="1" brokenOffence="2" brokenForce="1.5" unrideOnHit="1">
+				<rangeProperty rangeType="frustum" distance="900" height="250" width="300" endWidth="750" applyTarget="1" />
+				<arrowProperty overlap="1" effect="CH/Skill/Ranger/Eff_Ranger_GuidedArrow_Ball_01.xml" effectRemain="CH/Skill/Ranger/Eff_Ranger_GuidedArrow_Remain_01.xml" />
+				<damageProperty rate="0.27" hitSpeedRate="0.8" effectHit="CH/Weapon/Bow/Eff_Bow_Hit_01.xml" attackMaterial="1" />
+			</attack>
+		</motion>
+	</level>
+</ms2>

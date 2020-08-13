@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 파싱해서 사용하는 데이터이니 직접 수정하지 마세요 -->
+<ms2 feature="">
+	<basic>
+		<ui attackType="2" />
+		<kinds rangeType="2" element="7" />
+	</basic>
+	<level value="1">
+		<beginCondition probability="1">
+			<stat hp="1" />
+		</beginCondition>
+		<motion>
+			<motionProperty sequenceName="Attack_01_E_Loop" motionEffect="NPC/Skill/Pinkbean/Eff_Pinkbean_Attack_01_E.xml" loopCount="1" faceTarget="0" />
+			<attack point="p0" attacktype="2" unrideOnHit="1">
+				<rangeProperty rangeType="box" distance="1800" rangeAdd="0.000000,0.000000,100.000000" height="500" width="500" applyTarget="1" castTarget="1" />
+				<arrowProperty nonTarget="1" effect="NPC/Skill/Temp/Eff_Temp.xml" />
+				<damageProperty count="0" rate="1" attackMaterial="1" />
+			</attack>
+		</motion>
+	</level>
+	<level value="2">
+		<beginCondition probability="1">
+			<stat hp="1" />
+		</beginCondition>
+		<motion>
+			<motionProperty sequenceName="Attack_01_D" motionEffect="NPC/Skill/Pinkbean/Eff_Pinkbean_Attack_01_D.xml" faceTarget="0" />
+			<attack point="p0" attacktype="2" unrideOnHit="1">
+				<rangeProperty rangeType="box" distance="1800" rangeAdd="0.000000,0.000000,100.000000" height="500" width="500" applyTarget="1" castTarget="1" />
+				<arrowProperty nonTarget="1" effect="NPC/Skill/Temp/Eff_Temp.xml" />
+				<damageProperty count="0" rate="1" attackMaterial="1" />
+			</attack>
+		</motion>
+	</level>
+</ms2>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 파싱해서 사용하는 데이터이니 직접 수정하지 마세요 -->
+<ms2 feature="">
+	<basic>
+		<ui attackType="2" />
+		<kinds rangeType="2" element="7" />
+	</basic>
+	<level value="1">
+		<beginCondition probability="1">
+			<stat hp="1" />
+		</beginCondition>
+		<motion>
+			<motionProperty sequenceName="Jump_Ready_A" motionEffect="NPC/Skill/Pinkbean/Eff_Pinkbean_Jump_Ready_A.xml" faceTarget="0" doesPlayIdleOnSkillEnd="false" />
+			<attack point="p0" attacktype="2" unrideOnHit="1">
+				<rangeProperty rangeType="cylinder" distance="1750" rangeAdd="0.000000,0.000000,400.000000" height="250" applyTarget="1" castTarget="1" />
+				<arrowProperty nonTarget="1" effect="NPC/Skill/Temp/Eff_Temp.xml" />
+				<damageProperty count="0" rate="1" attackMaterial="1" />
+			</attack>
+		</motion>
+	</level>
+	<level value="2">
+		<beginCondition probability="1">
+			<stat hp="1" />
+		</beginCondition>
+		<motion>
+			<motionProperty sequenceName="Jump_Land_A" motionEffect="NPC/Skill/Pinkbean/Eff_Pinkbean_Jump_Land_A.xml" faceTarget="0" doesPlayIdleOnSkillEnd="false" />
+			<attack point="p0" attacktype="2" unrideOnHit="1">
+				<rangeProperty rangeType="cylinder" distance="300" height="50" applyTarget="1" castTarget="1" />
+				<arrowProperty nonTarget="1" effect="NPC/Skill/Temp/Eff_Temp.xml" />
+				<damageProperty count="0" rate="1" attackMaterial="1" />
+			</attack>
+		</motion>
+	</level>
+	<level value="11">
+		<beginCondition probability="1">
+			<stat hp="1" />
+		</beginCondition>
+		<conditionSkill level="1" skillID="50170022" skillTarget="1">
+			<beginCondition probability="1" allowBattleRidingState="1" />
+		</conditionSkill>
+		<motion>
+			<motionProperty sequenceName="Jump_Ready_A" motionEffect="NPC/Skill/Pinkbean/Eff_Pinkbean_Jump_Ready_A_Music.xml" faceTarget="0" doesPlayIdleOnSkillEnd="false" />
+			<attack point="p0" targetCount="3" magicPathID="7529" direction="4" attacktype="2" unrideOnHit="1" compulsionType="1,3">
+				<rangeProperty rangeType="cylinder" distance="1200" rangeAdd="0.000000,0.000000,400.000000" height="250" applyTarget="1" castTarget="1" />
+				<arrowProperty explosion="1" collision="25.000000,25.000000,25.000000" effect="NPC/Skill/Pinkbean/Eff_Pinkbean_Attack_01_D_Music_Throw_Ball_Guided.xml" />
+				<damageProperty count="0" attackMaterial="1" />
+				<conditionSkill level="2" skillID="50170006" skillTarget="2" skillOwner="1" />
+			</attack>
+		</motion>
+	</level>
+	<level value="12">
+		<beginCondition probability="1">
+			<stat hp="1" />
+		</beginCondition>
+		<conditionSkill level="1" skillID="50170022" skillTarget="1">
+			<beginCondition probability="1" allowBattleRidingState="1" />
+		</conditionSkill>
+		<motion>
+			<motionProperty sequenceName="Jump_Ready_A" motionEffect="NPC/Skill/Pinkbean/Eff_Pinkbean_Jump_Ready_A_Cofusion.xml" faceTarget="0" doesPlayIdleOnSkillEnd="false" />
+			<attack point="p0" targetCount="4" magicPathID="7530" direction="0" attacktype="2" unrideOnHit="1" compulsionType="1,3">
+				<rangeProperty rangeType="cylinder" distance="1500" rangeAdd="0.000000,0.000000,400.000000" height="250" applyTarget="1" castTarget="1" />
+				<arrowProperty explosion="1" collision="2.000000,2.000000,2.000000" effect="NPC/Skill/Pinkbean/Eff_Pinkbean_Attack_02_H_Controller_Ball_Guided.xml" />
+				<damageProperty count="0" attackMaterial="1" />
+				<conditionSkill level="1" skillID="50170010" skillTarget="2" skillOwner="1" />
+			</attack>
+		</motion>
+	</level>
+	<level value="13">
+		<beginCondition probability="1">
+			<stat hp="1" />
+		</beginCondition>
+		<conditionSkill level="1" skillID="50170022" skillTarget="1">
+			<beginCondition probability="1" allowBattleRidingState="1" />
+		</conditionSkill>
+		<motion>
+			<motionProperty sequenceName="Jump_Ready_A" motionEffect="NPC/Skill/Pinkbean/Eff_Pinkbean_Jump_Ready_A.xml" faceTarget="0" doesPlayIdleOnSkillEnd="false" />
+			<attack point="p0" attacktype="2" unrideOnHit="1">
+				<rangeProperty rangeType="cylinder" distance="1750" rangeAdd="0.000000,0.000000,400.000000" height="250" applyTarget="1" castTarget="1" />
+				<arrowProperty nonTarget="1" effect="NPC/Skill/Temp/Eff_Temp.xml" />
+				<damageProperty count="0" rate="1" attackMaterial="1" />
+			</attack>
+		</motion>
+	</level>
+</ms2>

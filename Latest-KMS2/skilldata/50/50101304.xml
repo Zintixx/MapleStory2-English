@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 파싱해서 사용하는 데이터이니 직접 수정하지 마세요 -->
+<ms2 feature="">
+	<basic>
+		<ui attackType="2" />
+		<kinds element="5" />
+	</basic>
+	<level value="1">
+		<beginCondition probability="1">
+			<stat hp="1" />
+		</beginCondition>
+		<conditionSkill level="1" skillID="50001093" skillTarget="1">
+			<beginCondition probability="1" allowBattleRidingState="1" />
+		</conditionSkill>
+		<motion>
+			<motionProperty sequenceName="Attack_01_E" motionEffect="NPC/Skill/TurkaHoodForce/Eff_TurkaHoodForce_Attack_01_E.xml" faceTarget="0" doesPlayIdleOnSkillEnd="false" />
+			<attack point="p0" attacktype="2" hitImmuneBreak="1" brokenOffence="2" brokenForce="5" unrideOnHit="1">
+				<rangeProperty rangeType="box" distance="420" rangeAdd="0.000000,0.000000,50.000000" height="430" width="400" applyTarget="1" castTarget="1" />
+				<damageProperty count="0" rate="1" effectHit="NPC/Skill/Temp/Eff_Temp.xml" attackMaterial="106" />
+			</attack>
+		</motion>
+	</level>
+	<level value="2">
+		<beginCondition probability="1">
+			<stat hp="1" />
+		</beginCondition>
+		<motion>
+			<motionProperty sequenceName="Attack_02_E" motionEffect="NPC/Skill/TurkaHoodForce/Eff_TurkaHoodForce_Attack_02_E_Throw.xml" faceTarget="0" doesPlayIdleOnSkillEnd="false" />
+			<attack point="p0" targetCount="1" magicPathID="5789" cubeMagicPathID="50000710" direction="0" attacktype="2" unrideOnHit="1" compulsionType="1,3">
+				<rangeProperty rangeType="frustum" distance="1700" rangeAdd="0.000000,0.000000,100.000000" height="550" width="300" endWidth="1000" applyTarget="1" castTarget="1" />
+				<arrowProperty explosion="1" collision="80.000000,10.000000,80.000000" collisionAdd="0.000000,50.000000,-20.000000" effect="NPC/Skill/TurkaHoodForce/Eff_TurkaHoodForce_Attack_02_E_Throw_Ball_Guided.xml" />
+				<damageProperty rate="0.01" effectHit="NPC/Skill/TurkaHoodForce/Eff_TurkaHoodForce_Attack_02_E_Throw_Ball_Guided_Hit.xml" attackMaterial="106" />
+				<conditionSkill splash="1" level="1" skillID="99999718" delay="1500" interval="500" />
+			</attack>
+		</motion>
+	</level>
+	<level value="22">
+		<beginCondition probability="1">
+			<stat hp="1" />
+		</beginCondition>
+		<motion>
+			<motionProperty sequenceName="Attack_022_E" motionEffect="NPC/Skill/TurkaHoodForce/Eff_TurkaHoodForce_Attack_02_E_Dash.xml" movedistance="1800" faceTarget="0" doesPlayIdleOnSkillEnd="false" />
+			<attack point="p0" direction="0" attacktype="2" brokenOffence="1" unrideOnHit="1">
+				<rangeProperty rangeType="cylinder" distance="3100" rangeAdd="0.000000,0.000000,50.000000" height="100" applyTarget="1" castTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty count="0" effectHit="NPC/Skill/Temp/Eff_Temp.xml" attackMaterial="106" />
+			</attack>
+		</motion>
+	</level>
+	<level value="3">
+		<beginCondition probability="1" allowBattleRidingState="1">
+			<stat hp="1" />
+		</beginCondition>
+		<detectProperty rangeType="cylinder" distance="1500" rangeAdd="0.000000,0.000000,50.000000" height="100" />
+		<motion>
+			<motionProperty sequenceName="Attack_02_E" sequenceSpeed="0.7" motionEffect="NPC/Skill/TurkaHoodForce/Eff_TurkaHoodForce_Attack_02_E_Delay.xml" loopCount="2" faceTarget="0" doesPlayIdleOnSkillEnd="false" />
+			<attack point="p0" direction="1" attacktype="2" brokenOffence="1" unrideOnHit="1">
+				<rangeProperty rangeType="box" distance="1500" height="250" width="900" applyTarget="1" castTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty count="0" rate="1" effectHit="NPC/Skill/Temp/Eff_Temp.xml" attackMaterial="106" />
+			</attack>
+		</motion>
+		<motion>
+			<motionProperty sequenceName="Attack_03_E" motionEffect="NPC/Skill/TurkaHoodForce/Eff_TurkaHoodForce_Attack_03_E.xml" faceTarget="0" doesPlayIdleOnSkillEnd="false" />
+			<attack point="p0" targetCount="1" cubeMagicPathID="5778" attacktype="2" unrideOnHit="1">
+				<rangeProperty includeCaster="1" rangeType="box" distance="2350" height="800" width="200" applyTarget="2" castTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty count="0" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="106" />
+				<conditionSkill splash="1" level="1" skillID="99999724" interval="500" fireCount="20">
+					<beginCondition probability="1" allowBattleRidingState="1" />
+				</conditionSkill>
+			</attack>
+			<attack point="p1" targetCount="50" attacktype="2" hitImmuneBreak="1" brokenOffence="2" brokenForce="5" unrideOnHit="1">
+				<rangeProperty rangeType="box" distance="2350" rangeOffset="0.000000,0.000000,50.000000" height="800" width="150" applyTarget="1" castTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="2" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="300" pushduration="0.3" pushEaseType="1" attackMaterial="106" />
+				<conditionSkill level="1" skillID="50000962" skillTarget="2" skillOwner="1">
+					<beginCondition probability="1" allowBattleRidingState="1">
+						<target hasBuffID="73000012" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="0" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+			</attack>
+			<attack point="p2" targetCount="50" attacktype="2" hitImmuneBreak="1" brokenOffence="2" brokenForce="5" unrideOnHit="1">
+				<rangeProperty rangeType="box" distance="2350" rangeOffset="0.000000,0.000000,50.000000" height="800" width="150" applyTarget="1" castTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="2" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="300" pushduration="0.3" pushEaseType="1" attackMaterial="106" />
+				<conditionSkill level="1" skillID="50000962" skillTarget="2" skillOwner="1">
+					<beginCondition probability="1" allowBattleRidingState="1">
+						<target hasBuffID="73000012" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="0" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+			</attack>
+		</motion>
+	</level>
+	<level value="4">
+		<beginCondition probability="1">
+			<stat hp="1" />
+		</beginCondition>
+		<motion>
+			<motionProperty sequenceName="Attack_02_E" motionEffect="NPC/Skill/TurkaHoodForce/Eff_TurkaHoodForce_Attack_02_D_ThrowBomb.xml" faceTarget="0" doesPlayIdleOnSkillEnd="false" />
+			<attack point="p0" targetCount="1" magicPathID="5789" cubeMagicPathID="50000710" direction="0" attacktype="2" unrideOnHit="1" compulsionType="1,3">
+				<rangeProperty rangeType="frustum" distance="1700" rangeAdd="0.000000,0.000000,100.000000" height="550" width="600" endWidth="1000" applyTarget="1" castTarget="1" />
+				<arrowProperty explosion="1" collision="80.000000,10.000000,80.000000" collisionAdd="0.000000,50.000000,-20.000000" effect="NPC/Skill/TurkaHoodForce/Eff_TurkaHoodForce_Attack_02_E_Throw_Ball_Guided.xml" />
+				<damageProperty rate="0.01" effectHit="NPC/Skill/TurkaHoodForce/Eff_TurkaHoodForce_Attack_02_E_Throw_Ball_Guided_Hit.xml" attackMaterial="106" />
+				<conditionSkill splash="1" level="1" skillID="99999718" delay="1500" interval="500" />
+			</attack>
+			<attack point="p1" targetCount="2" magicPathID="5784" direction="0" attacktype="2" brokenOffence="1" unrideOnHit="1" compulsionType="1,3">
+				<rangeProperty rangeType="frustum" distance="1900" rangeAdd="0.000000,0.000000,100.000000" height="550" width="800" endWidth="1200" applyTarget="1" castTarget="1" />
+				<arrowProperty explosion="1" collision="20.000000,0.000000,20.000000" collisionAdd="0.000000,20.000000,0.000000" effect="NPC/Skill/TurkaHoodForce/Eff_TurkaHoodForce_Attack_02_D_ThrowBomb_Ball_Guided.xml" />
+				<damageProperty count="0" effectHit="NPC/Skill/TurkaHoodForce/Eff_TurkaHoodForce_Attack_02_D_ThrowBomb_Ball_Guided_Hit.xml" attackMaterial="106" />
+				<conditionSkill level="1" skillID="50003134" skillTarget="2" skillOwner="1" />
+			</attack>
+		</motion>
+	</level>
+	<level value="11">
+		<beginCondition probability="1">
+			<stat hp="1" />
+		</beginCondition>
+		<conditionSkill level="2" skillID="50001093" skillTarget="1">
+			<beginCondition probability="1" allowBattleRidingState="1" />
+		</conditionSkill>
+		<motion>
+			<motionProperty sequenceName="Attack_01_E" motionEffect="NPC/Skill/TurkaHoodForce/Eff_TurkaHoodForce_Attack_01_E_Delay.xml" faceTarget="0" />
+			<attack point="p0" attacktype="2" hitImmuneBreak="1" brokenOffence="2" brokenForce="5" unrideOnHit="1">
+				<rangeProperty rangeType="box" distance="1800" rangeAdd="0.000000,0.000000,50.000000" height="430" width="400" applyTarget="1" castTarget="1" />
+				<damageProperty count="0" rate="1" effectHit="NPC/Skill/Temp/Eff_Temp.xml" attackMaterial="106" />
+			</attack>
+		</motion>
+		<motion>
+			<motionProperty sequenceName="Attack_03_E" motionEffect="NPC/Skill/TurkaHoodForce/Eff_TurkaHoodForce_Attack_03_E.xml" faceTarget="0" />
+			<attack point="p0" targetCount="1" cubeMagicPathID="5778" attacktype="2" unrideOnHit="1">
+				<rangeProperty includeCaster="1" rangeType="box" distance="2350" height="800" width="200" applyTarget="2" castTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty count="0" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="106" />
+				<conditionSkill splash="1" level="1" skillID="99999724" interval="500" fireCount="20" />
+			</attack>
+			<attack point="p1" targetCount="50" attacktype="2" hitImmuneBreak="1" brokenOffence="2" brokenForce="5" unrideOnHit="1">
+				<rangeProperty rangeType="box" distance="2350" rangeOffset="0.000000,0.000000,50.000000" height="800" width="150" applyTarget="1" castTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="2" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="300" pushduration="0.3" pushEaseType="1" attackMaterial="106" />
+				<conditionSkill level="1" skillID="50000962" skillTarget="2" skillOwner="1">
+					<beginCondition probability="1">
+						<target hasBuffID="73000012" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="0" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+			</attack>
+			<attack point="p2" targetCount="50" attacktype="2" hitImmuneBreak="1" brokenOffence="2" brokenForce="5" unrideOnHit="1">
+				<rangeProperty rangeType="box" distance="2350" rangeOffset="0.000000,0.000000,50.000000" height="800" width="150" applyTarget="1" castTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="2" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="300" pushduration="0.3" pushEaseType="1" attackMaterial="106" />
+				<conditionSkill level="1" skillID="50000962" skillTarget="2" skillOwner="1">
+					<beginCondition probability="1">
+						<target hasBuffID="73000012" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="0" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+			</attack>
+		</motion>
+	</level>
+</ms2>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 파싱해서 사용하는 데이터이니 직접 수정하지 마세요 -->
+<ms2 feature="">
+	<basic feature="JobChange_01">
+		<ui icon="./Data/Resource/Image/skill/icon/10100051.png" exceptUI="1" attackType="2" />
+		<kinds subType="2" />
+		<stateAttr autoTargeting="0" splashMaxCount="1" />
+	</basic>
+	<level value="1" feature="JobChange_01">
+		<beginCondition probability="1">
+			<stat hp="1" />
+		</beginCondition>
+		<sensorProperty rangeType="cylinder" distance="2000" height="600" />
+		<motion>
+			<motionProperty />
+			<attack point="p0" targetCount="1" attacktype="2" hitImmuneBreak="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="5" />
+				<rangeProperty includeCaster="1" rangeType="cylinder" distance="2000" height="600" applyTarget="2" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty count="0" attackMaterial="1000" />
+				<conditionSkill level="1" skillID="10300193" skillTarget="1" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<caster hasBuffID="0" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="0" hasBuffCountCompare="Equals" hasNotBuffID="10300192" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+			</attack>
+		</motion>
+	</level>
+	<level value="2" feature="JobChange_01">
+		<beginCondition probability="1">
+			<stat hp="1" />
+		</beginCondition>
+		<motion>
+			<motionProperty />
+			<attack point="p0" targetCount="8" attacktype="2" hitImmuneBreak="5" brokenOffence="2" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="5" />
+				<rangeProperty rangeType="cylinder" distance="300" height="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty count="0" attackMaterial="102" />
+				<conditionSkill level="1" skillID="10300051" skillTarget="2" skillOwner="1" />
+			</attack>
+		</motion>
+	</level>
+	<level value="20" feature="JobChange_01">
+		<beginCondition probability="1">
+			<stat hp="1" />
+		</beginCondition>
+		<motion>
+			<motionProperty />
+			<attack point="p0" targetCount="8" attacktype="2" hitImmuneBreak="5" brokenOffence="2" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="5" />
+				<rangeProperty rangeType="cylinder" distance="300" height="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty count="0" attackMaterial="102" />
+			</attack>
+		</motion>
+	</level>
+</ms2>

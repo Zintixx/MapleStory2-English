@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 파싱해서 사용하는 데이터이니 직접 수정하지 마세요 -->
+<ms2 feature="">
+	<basic>
+		<ui attackType="3" />
+		<kinds rangeType="2" unrideOnUse="1" releaseObjectWeapon="0" />
+		<stateAttr ignoreReduceCooldown="1" />
+	</basic>
+	<level value="1">
+		<beginCondition probability="1">
+			<stat hp="1" />
+		</beginCondition>
+		<motion>
+			<motionProperty motionEffect="Item/Skill/Eff_ObjectWeapon_SackSplash_Cast_01.xml" splashEndEffect="Item/Skill/Eff_ObjectWeapon_Sack_End_01.xml" holdWeapon="0" />
+			<attack point="p0" targetCount="10" attacktype="3" brokenOffence="1" unrideOnHit="1">
+				<rangeProperty rangeType="cylinder" distance="300" height="150" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="0.6" attackMaterial="1" />
+			</attack>
+		</motion>
+	</level>
+</ms2>

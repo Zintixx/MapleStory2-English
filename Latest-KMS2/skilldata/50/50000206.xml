@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 파싱해서 사용하는 데이터이니 직접 수정하지 마세요 -->
+<ms2 feature="">
+	<basic>
+		<ui attackType="1" />
+		<kinds element="7" />
+		<stateAttr superArmor="1" />
+	</basic>
+	<level value="1">
+		<beginCondition probability="1">
+			<stat hp="1" />
+		</beginCondition>
+		<motion>
+			<motionProperty sequenceName="Attack_01_B" motionEffect="NPC/Skill/Paul/Eff_Paul_Skill_Magnum_Break_Cast.xml" faceTarget="0" />
+			<attack point="p0" targetCount="1" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+				<rangeProperty rangeType="box" distance="350" height="150" width="300" applyTarget="1" castTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="100" pushduration="0.25" pushEaseType="1" attackMaterial="1" />
+			</attack>
+		</motion>
+	</level>
+</ms2>

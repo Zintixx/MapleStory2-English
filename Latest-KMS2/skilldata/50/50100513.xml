@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 파싱해서 사용하는 데이터이니 직접 수정하지 마세요 -->
+<ms2 feature="">
+	<basic>
+		<ui attackType="1" />
+	</basic>
+	<level value="1">
+		<beginCondition probability="1">
+			<stat hp="1" />
+		</beginCondition>
+		<motion>
+			<motionProperty sequenceName="Attack_01_A" motionEffect="NPC/Skill/DarkStar/Eff_DarkStar_Attack_01_A.xml" loopCount="1" faceTarget="0" />
+			<attack point="p0" direction="1" attacktype="1" unrideOnHit="1">
+				<rangeProperty rangeType="cylinder" distance="2000" height="1000" applyTarget="1" castTarget="1" />
+				<arrowProperty nonTarget="1" effect="NPC/Skill/Temp/Eff_Temp.xml" />
+				<damageProperty count="0" rate="0.3" attackMaterial="1" />
+			</attack>
+		</motion>
+		<motion>
+			<motionProperty sequenceName="Attack_02_A" motionEffect="NPC/Skill/DarkStar/Eff_DarkStar_Attack_02_A.xml" faceTarget="0" />
+			<attack point="p0" targetCount="50" attacktype="1" unrideOnHit="1">
+				<rangeProperty rangeType="cylinder" distance="450" height="400" applyTarget="1" castTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="1" push="1" pushdistance="300" pushduration="0.2" pushEaseType="1" attackMaterial="1" />
+				<conditionSkill level="1" skillID="50000013" skillTarget="2" skillOwner="1" />
+			</attack>
+		</motion>
+	</level>
+	<level value="2">
+		<beginCondition probability="1">
+			<stat hp="1" />
+		</beginCondition>
+		<conditionSkill level="1" skillID="50004001" skillTarget="1">
+			<beginCondition probability="1" allowBattleRidingState="1" />
+		</conditionSkill>
+		<motion>
+			<motionProperty sequenceName="Attack_Idle_A" faceTarget="0" />
+			<attack point="p0" attacktype="1" unrideOnHit="1" compulsionType="1">
+				<rangeProperty rangeType="cylinder" distance="100" height="600" applyTarget="1" castTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty count="0" rate="1" attackMaterial="1" />
+			</attack>
+		</motion>
+	</level>
+	<level value="3">
+		<beginCondition probability="1">
+			<stat hp="1" />
+		</beginCondition>
+		<motion>
+			<motionProperty sequenceName="Attack_01_A" motionEffect="NPC/Skill/DarkStar/Eff_DarkStar_Attack_01_A_NotCircle.xml" loopCount="1" faceTarget="0" />
+			<attack point="p0" direction="1" attacktype="1" unrideOnHit="1">
+				<rangeProperty rangeType="cylinder" distance="2000" height="1000" applyTarget="1" castTarget="1" />
+				<arrowProperty nonTarget="1" effect="NPC/Skill/Temp/Eff_Temp.xml" />
+				<damageProperty count="0" rate="0.3" attackMaterial="1" />
+			</attack>
+		</motion>
+		<motion>
+			<motionProperty sequenceName="Attack_02_A" motionEffect="NPC/Skill/DarkStar/Eff_DarkStar_Attack_02_A_NotCircle.xml" faceTarget="0" />
+			<attack point="p0" targetCount="50" attacktype="1" unrideOnHit="1">
+				<rangeProperty rangeType="cylinder" distance="150" height="150" applyTarget="1" castTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="1" push="1" pushdistance="300" pushduration="0.2" pushEaseType="1" attackMaterial="1" />
+			</attack>
+		</motion>
+	</level>
+</ms2>

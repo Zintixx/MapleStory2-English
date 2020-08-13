@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 파싱해서 사용하는 데이터이니 직접 수정하지 마세요 -->
+<ms2 feature="">
+	<basic>
+		<ui attackType="2" />
+		<kinds rangeType="2" element="1" />
+	</basic>
+	<level value="1">
+		<beginCondition probability="1">
+			<stat hp="1" />
+		</beginCondition>
+		<motion>
+			<motionProperty motionEffect="NPC/Skill/MachineSoldier_Staff/Eff_MachineSoldier_Staff_Attack_01_B_Cast.xml" splashEndEffect="NPC/Skill/MachineSoldier_Staff/Eff_MachineSoldier_Staff_Attack_01_B_Cast_End.xml" />
+			<attack point="p0" targetCount="10" attacktype="2" brokenOffence="1" unrideOnHit="1">
+				<rangeProperty rangeType="cylinder" distance="220" height="500" applyTarget="1" castTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="1" effectHit="CH/Common/Eff_Common_Fire_Hit.xml" attackMaterial="100" />
+			</attack>
+		</motion>
+	</level>
+</ms2>

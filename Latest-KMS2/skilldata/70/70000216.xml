@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 파싱해서 사용하는 데이터이니 직접 수정하지 마세요 -->
+<ms2 feature="">
+	<basic>
+		<ui attackType="1" />
+		<kinds subType="2" rangeType="1" unrideOnUse="1" releaseObjectWeapon="0" />
+		<stateAttr battle="0" ignoreReduceCooldown="1" />
+	</basic>
+	<level value="1">
+		<beginCondition probability="1">
+			<stat hp="1" />
+		</beginCondition>
+		<motion>
+			<motionProperty holdWeapon="0" />
+			<attack point="p0" targetCount="99" attacktype="1" unrideOnHit="1" compulsionType="1">
+				<rangeProperty rangeType="cylinder" distance="150" height="150" width="150" applyTarget="7" />
+				<damageProperty count="0" push="2" pushdistance="150" pushduration="3" pushEaseType="2" pushUpDistance="900" pushDown="1" />
+			</attack>
+		</motion>
+	</level>
+</ms2>

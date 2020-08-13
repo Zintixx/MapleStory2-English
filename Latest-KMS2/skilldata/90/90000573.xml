@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 파싱해서 사용하는 데이터이니 직접 수정하지 마세요 -->
+<ms2 feature="">
+	<basic>
+		<ui icon="./Data/Resource/Image/item/icon/20000526.png" />
+		<kinds type="3" subType="5" immediateActive="1" unrideOnUse="1" />
+		<stateAttr cooldownGroupID="90000557" ignoreReduceCooldown="1" />
+	</basic>
+	<level value="1">
+		<beginCondition probability="1" cooldownTime="60" useCoolDownShowUI="1">
+			<stat hp="1" />
+		</beginCondition>
+		<targetItem>
+			<item id="20000526" count="1" />
+		</targetItem>
+		<conditionSkill level="1" skillID="90000573" skillTarget="1">
+			<beginCondition probability="1" allowBattleRidingState="1" />
+		</conditionSkill>
+		<conditionSkill level="1" skillID="90000574" skillTarget="1">
+			<beginCondition probability="1" allowBattleRidingState="1" />
+		</conditionSkill>
+		<motion>
+			<motionProperty holdWeapon="0" />
+		</motion>
+	</level>
+</ms2>

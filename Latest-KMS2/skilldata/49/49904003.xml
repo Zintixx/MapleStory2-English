@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 파싱해서 사용하는 데이터이니 직접 수정하지 마세요 -->
+<ms2 feature="">
+	<basic>
+		<ui attackType="2" />
+		<kinds rangeType="2" element="7" />
+	</basic>
+	<level value="1">
+		<beginCondition probability="1">
+			<stat hp="1" />
+		</beginCondition>
+		<detectProperty rangeType="cylinder" distance="1200" height="400" />
+		<motion>
+			<motionProperty sequenceName="Attack_01_C" motionEffect="NPC/Skill/LapenturnedBlader/Eff_LapenturnedBlader_Attack_01_C.xml" />
+			<attack point="p0" targetCount="1" magicPathID="5735" attacktype="2" brokenOffence="1" brokenForce="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+				<rangeProperty rangeType="cylinder" distance="1200" height="400" applyTarget="1" castTarget="1" />
+				<arrowProperty explosion="1" nonTarget="1" collision="80.000000,35.000000,80.000000" collisionAdd="50.000000,35.000000,20.000000" effect="NPC/Skill/LapenturnedBlader/Eff_LapenturnedBlader_Attack_01_C_Ball.xml" />
+				<damageProperty rate="1" effectHit="NPC/Skill/LapenturnedBlader/Eff_LapenturnedBlader_Attack_01_C_Ball_Hit.xml" attackMaterial="100" />
+			</attack>
+		</motion>
+	</level>
+</ms2>

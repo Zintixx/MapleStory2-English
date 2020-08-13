@@ -1,0 +1,1593 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 파싱해서 사용하는 데이터이니 직접 수정하지 마세요 -->
+<ms2 feature="">
+	<basic feature="JobChange_01">
+		<ui icon="./Data/Resource/Image/skill/icon/10200251.png" exceptUI="1" attackType="1" />
+		<kinds subType="2" rangeType="1" jump="10200257" element="5" unrideOnUse="1" />
+		<stateAttr superArmor="3" superArmorApplyFieldType="1" moveType="1" keyIsDown="1" ignoreReduceCooldown="1" />
+	</basic>
+	<level value="1" feature="JobChange_01">
+		<beginCondition probability="1" cooldownTime="0.1">
+			<stat hp="1" />
+			<weapon lh="0" rh="50" />
+		</beginCondition>
+		<push back="150" />
+		<upgrade level="68" />
+		<combo comboSkill="1" comboOriginSkill="10200255" inputSkill="10200255" outputSkill="10200255" />
+		<motion>
+			<motionProperty sequenceName="Berserker_BloodSlash_03_A" sequenceSpeed="0.8" strTagEffects="e0=CH/Skill/Berserker/Eff_Berserker_BloodSlash_Cast_05.xml" keyMove="450" holdWeapon="0" />
+			<attack point="p0" targetCount="8" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="3" unrideOnHit="5">
+				<pauseProperty pauseDuration="0.1" pauseShakeDuration="0.12" pauseAmp="10" />
+				<rangeProperty rangeType="box" distance="300" rangeAdd="0.000000,25.000000,0.000000" height="150" width="350" applyTarget="1" />
+				<damageProperty rate="2.59" hitSpeedRate="0.95" effectHit="CH/Weapon/LargeSword/Eff_LargeSword_Hit_01.xml" attackMaterial="4" />
+				<conditionSkill level="1" skillID="10200253" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="1" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="1" skillID="10200254" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="2" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="1" skillID="10200255" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="3" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="1" skillID="10200256" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="4" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="1" skillID="10200257" skillTarget="2" skillOwner="11" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="5" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+			</attack>
+			<attack point="p1" targetCount="8" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="3" unrideOnHit="5">
+				<pauseProperty pauseDuration="0.1" pauseShakeDuration="0.12" pauseAmp="10" />
+				<rangeProperty rangeType="cylinder" distance="300" rangeAdd="0.000000,25.000000,0.000000" height="150" width="350" applyTarget="1" />
+				<damageProperty rate="2.59" hitSpeedRate="0.95" effectHit="CH/Weapon/LargeSword/Eff_LargeSword_Hit_01.xml" attackMaterial="4" />
+				<conditionSkill level="1" skillID="10200253" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="1" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="1" skillID="10200254" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="2" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="1" skillID="10200255" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="3" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="1" skillID="10200256" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="4" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="1" skillID="10200257" skillTarget="2" skillOwner="11" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="5" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+			</attack>
+			<attack point="p2" targetCount="8" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="3" unrideOnHit="5">
+				<pauseProperty pauseDuration="0.1" pauseShakeDuration="0.12" pauseAmp="10" />
+				<rangeProperty rangeType="cylinder" distance="300" rangeAdd="0.000000,25.000000,0.000000" height="150" width="350" applyTarget="1" />
+				<damageProperty rate="2.59" hitSpeedRate="0.95" effectHit="CH/Weapon/LargeSword/Eff_LargeSword_Hit_01.xml" attackMaterial="4" />
+				<conditionSkill level="1" skillID="10200253" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="1" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="1" skillID="10200254" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="2" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="1" skillID="10200255" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="3" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="1" skillID="10200256" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="4" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="1" skillID="10200257" skillTarget="2" skillOwner="11" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="5" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+			</attack>
+			<attack point="p3" targetCount="8" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="3" unrideOnHit="5">
+				<pauseProperty pauseDuration="0.2" pauseShakeDuration="0.15" pauseAmp="15" />
+				<rangeProperty rangeType="cylinder" distance="300" rangeAdd="0.000000,25.000000,0.000000" height="150" width="350" applyTarget="1" />
+				<damageProperty rate="3.09" hitSpeedRate="0.9" hitPauseTime="0.2" effectHit="CH/Weapon/LargeSword/Eff_LargeSword_Hit_01.xml" attackMaterial="4" />
+				<conditionSkill level="1" skillID="10200253" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="1" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="1" skillID="10200254" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="2" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="1" skillID="10200255" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="3" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="1" skillID="10200256" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="4" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="1" skillID="10200257" skillTarget="2" skillOwner="11" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="5" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+			</attack>
+		</motion>
+	</level>
+	<level value="2" feature="JobChange_01">
+		<beginCondition probability="1" cooldownTime="0.1">
+			<stat hp="1" />
+			<weapon lh="0" rh="50" />
+		</beginCondition>
+		<push back="150" />
+		<upgrade level="68" />
+		<combo comboSkill="1" comboOriginSkill="10200255" inputSkill="10200255" outputSkill="10200255" />
+		<motion>
+			<motionProperty sequenceName="Berserker_BloodSlash_03_A" sequenceSpeed="0.8" strTagEffects="e0=CH/Skill/Berserker/Eff_Berserker_BloodSlash_Cast_05.xml" keyMove="450" holdWeapon="0" />
+			<attack point="p0" targetCount="8" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="3" unrideOnHit="5">
+				<pauseProperty pauseDuration="0.1" pauseShakeDuration="0.12" pauseAmp="10" />
+				<rangeProperty rangeType="box" distance="300" rangeAdd="0.000000,25.000000,0.000000" height="150" width="350" applyTarget="1" />
+				<damageProperty rate="2.9" hitSpeedRate="0.95" effectHit="CH/Weapon/LargeSword/Eff_LargeSword_Hit_01.xml" attackMaterial="4" />
+				<conditionSkill level="2" skillID="10200253" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="1" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="2" skillID="10200254" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="2" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="2" skillID="10200255" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="3" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="2" skillID="10200256" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="4" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="2" skillID="10200257" skillTarget="2" skillOwner="11" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="5" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+			</attack>
+			<attack point="p1" targetCount="8" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="3" unrideOnHit="5">
+				<pauseProperty pauseDuration="0.1" pauseShakeDuration="0.12" pauseAmp="10" />
+				<rangeProperty rangeType="cylinder" distance="300" rangeAdd="0.000000,25.000000,0.000000" height="150" width="350" applyTarget="1" />
+				<damageProperty rate="2.9" hitSpeedRate="0.95" effectHit="CH/Weapon/LargeSword/Eff_LargeSword_Hit_01.xml" attackMaterial="4" />
+				<conditionSkill level="2" skillID="10200253" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="1" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="2" skillID="10200254" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="2" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="2" skillID="10200255" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="3" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="2" skillID="10200256" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="4" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="2" skillID="10200257" skillTarget="2" skillOwner="11" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="5" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+			</attack>
+			<attack point="p2" targetCount="8" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="3" unrideOnHit="5">
+				<pauseProperty pauseDuration="0.1" pauseShakeDuration="0.12" pauseAmp="10" />
+				<rangeProperty rangeType="cylinder" distance="300" rangeAdd="0.000000,25.000000,0.000000" height="150" width="350" applyTarget="1" />
+				<damageProperty rate="2.9" hitSpeedRate="0.95" effectHit="CH/Weapon/LargeSword/Eff_LargeSword_Hit_01.xml" attackMaterial="4" />
+				<conditionSkill level="2" skillID="10200253" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="1" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="2" skillID="10200254" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="2" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="2" skillID="10200255" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="3" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="2" skillID="10200256" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="4" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="2" skillID="10200257" skillTarget="2" skillOwner="11" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="5" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+			</attack>
+			<attack point="p3" targetCount="8" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="3" unrideOnHit="5">
+				<pauseProperty pauseDuration="0.2" pauseShakeDuration="0.15" pauseAmp="15" />
+				<rangeProperty rangeType="cylinder" distance="300" rangeAdd="0.000000,25.000000,0.000000" height="150" width="350" applyTarget="1" />
+				<damageProperty rate="3.4" hitSpeedRate="0.9" hitPauseTime="0.2" effectHit="CH/Weapon/LargeSword/Eff_LargeSword_Hit_01.xml" attackMaterial="4" />
+				<conditionSkill level="2" skillID="10200253" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="1" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="2" skillID="10200254" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="2" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="2" skillID="10200255" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="3" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="2" skillID="10200256" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="4" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="2" skillID="10200257" skillTarget="2" skillOwner="11" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="5" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+			</attack>
+		</motion>
+	</level>
+	<level value="3" feature="JobChange_01">
+		<beginCondition probability="1" cooldownTime="0.1">
+			<stat hp="1" />
+			<weapon lh="0" rh="50" />
+		</beginCondition>
+		<push back="150" />
+		<upgrade level="68" />
+		<combo comboSkill="1" comboOriginSkill="10200255" inputSkill="10200255" outputSkill="10200255" />
+		<motion>
+			<motionProperty sequenceName="Berserker_BloodSlash_03_A" sequenceSpeed="0.8" strTagEffects="e0=CH/Skill/Berserker/Eff_Berserker_BloodSlash_Cast_05.xml" keyMove="450" holdWeapon="0" />
+			<attack point="p0" targetCount="8" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="3" unrideOnHit="5">
+				<pauseProperty pauseDuration="0.1" pauseShakeDuration="0.12" pauseAmp="10" />
+				<rangeProperty rangeType="box" distance="300" rangeAdd="0.000000,25.000000,0.000000" height="150" width="350" applyTarget="1" />
+				<damageProperty rate="3.2" hitSpeedRate="0.95" effectHit="CH/Weapon/LargeSword/Eff_LargeSword_Hit_01.xml" attackMaterial="4" />
+				<conditionSkill level="3" skillID="10200253" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="1" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="3" skillID="10200254" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="2" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="3" skillID="10200255" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="3" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="3" skillID="10200256" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="4" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="3" skillID="10200257" skillTarget="2" skillOwner="11" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="5" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+			</attack>
+			<attack point="p1" targetCount="8" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="3" unrideOnHit="5">
+				<pauseProperty pauseDuration="0.1" pauseShakeDuration="0.12" pauseAmp="10" />
+				<rangeProperty rangeType="cylinder" distance="300" rangeAdd="0.000000,25.000000,0.000000" height="150" width="350" applyTarget="1" />
+				<damageProperty rate="3.2" hitSpeedRate="0.95" effectHit="CH/Weapon/LargeSword/Eff_LargeSword_Hit_01.xml" attackMaterial="4" />
+				<conditionSkill level="3" skillID="10200253" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="1" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="3" skillID="10200254" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="2" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="3" skillID="10200255" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="3" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="3" skillID="10200256" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="4" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="3" skillID="10200257" skillTarget="2" skillOwner="11" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="5" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+			</attack>
+			<attack point="p2" targetCount="8" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="3" unrideOnHit="5">
+				<pauseProperty pauseDuration="0.1" pauseShakeDuration="0.12" pauseAmp="10" />
+				<rangeProperty rangeType="cylinder" distance="300" rangeAdd="0.000000,25.000000,0.000000" height="150" width="350" applyTarget="1" />
+				<damageProperty rate="3.2" hitSpeedRate="0.95" effectHit="CH/Weapon/LargeSword/Eff_LargeSword_Hit_01.xml" attackMaterial="4" />
+				<conditionSkill level="3" skillID="10200253" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="1" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="3" skillID="10200254" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="2" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="3" skillID="10200255" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="3" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="3" skillID="10200256" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="4" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="3" skillID="10200257" skillTarget="2" skillOwner="11" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="5" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+			</attack>
+			<attack point="p3" targetCount="8" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="3" unrideOnHit="5">
+				<pauseProperty pauseDuration="0.2" pauseShakeDuration="0.15" pauseAmp="15" />
+				<rangeProperty rangeType="cylinder" distance="300" rangeAdd="0.000000,25.000000,0.000000" height="150" width="350" applyTarget="1" />
+				<damageProperty rate="3.7" hitSpeedRate="0.9" hitPauseTime="0.2" effectHit="CH/Weapon/LargeSword/Eff_LargeSword_Hit_01.xml" attackMaterial="4" />
+				<conditionSkill level="3" skillID="10200253" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="1" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="3" skillID="10200254" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="2" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="3" skillID="10200255" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="3" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="3" skillID="10200256" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="4" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="3" skillID="10200257" skillTarget="2" skillOwner="11" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="5" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+			</attack>
+		</motion>
+	</level>
+	<level value="4" feature="JobChange_01">
+		<beginCondition probability="1" cooldownTime="0.1">
+			<stat hp="1" />
+			<weapon lh="0" rh="50" />
+		</beginCondition>
+		<push back="150" />
+		<upgrade level="68" />
+		<combo comboSkill="1" comboOriginSkill="10200255" inputSkill="10200255" outputSkill="10200255" />
+		<motion>
+			<motionProperty sequenceName="Berserker_BloodSlash_03_A" sequenceSpeed="0.8" strTagEffects="e0=CH/Skill/Berserker/Eff_Berserker_BloodSlash_Cast_05.xml" keyMove="450" holdWeapon="0" />
+			<attack point="p0" targetCount="8" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="3" unrideOnHit="5">
+				<pauseProperty pauseDuration="0.1" pauseShakeDuration="0.12" pauseAmp="10" />
+				<rangeProperty rangeType="box" distance="300" rangeAdd="0.000000,25.000000,0.000000" height="150" width="350" applyTarget="1" />
+				<damageProperty rate="3.5" hitSpeedRate="0.95" effectHit="CH/Weapon/LargeSword/Eff_LargeSword_Hit_01.xml" attackMaterial="4" />
+				<conditionSkill level="4" skillID="10200253" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="1" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="4" skillID="10200254" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="2" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="4" skillID="10200255" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="3" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="4" skillID="10200256" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="4" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="4" skillID="10200257" skillTarget="2" skillOwner="11" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="5" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+			</attack>
+			<attack point="p1" targetCount="8" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="3" unrideOnHit="5">
+				<pauseProperty pauseDuration="0.1" pauseShakeDuration="0.12" pauseAmp="10" />
+				<rangeProperty rangeType="cylinder" distance="300" rangeAdd="0.000000,25.000000,0.000000" height="150" width="350" applyTarget="1" />
+				<damageProperty rate="3.5" hitSpeedRate="0.95" effectHit="CH/Weapon/LargeSword/Eff_LargeSword_Hit_01.xml" attackMaterial="4" />
+				<conditionSkill level="4" skillID="10200253" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="1" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="4" skillID="10200254" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="2" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="4" skillID="10200255" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="3" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="4" skillID="10200256" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="4" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="4" skillID="10200257" skillTarget="2" skillOwner="11" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="5" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+			</attack>
+			<attack point="p2" targetCount="8" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="3" unrideOnHit="5">
+				<pauseProperty pauseDuration="0.1" pauseShakeDuration="0.12" pauseAmp="10" />
+				<rangeProperty rangeType="cylinder" distance="300" rangeAdd="0.000000,25.000000,0.000000" height="150" width="350" applyTarget="1" />
+				<damageProperty rate="3.5" hitSpeedRate="0.95" effectHit="CH/Weapon/LargeSword/Eff_LargeSword_Hit_01.xml" attackMaterial="4" />
+				<conditionSkill level="4" skillID="10200253" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="1" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="4" skillID="10200254" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="2" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="4" skillID="10200255" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="3" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="4" skillID="10200256" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="4" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="4" skillID="10200257" skillTarget="2" skillOwner="11" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="5" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+			</attack>
+			<attack point="p3" targetCount="8" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="3" unrideOnHit="5">
+				<pauseProperty pauseDuration="0.2" pauseShakeDuration="0.15" pauseAmp="15" />
+				<rangeProperty rangeType="cylinder" distance="300" rangeAdd="0.000000,25.000000,0.000000" height="150" width="350" applyTarget="1" />
+				<damageProperty rate="4" hitSpeedRate="0.9" hitPauseTime="0.2" effectHit="CH/Weapon/LargeSword/Eff_LargeSword_Hit_01.xml" attackMaterial="4" />
+				<conditionSkill level="4" skillID="10200253" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="1" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="4" skillID="10200254" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="2" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="4" skillID="10200255" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="3" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="4" skillID="10200256" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="4" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="4" skillID="10200257" skillTarget="2" skillOwner="11" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="5" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+			</attack>
+		</motion>
+	</level>
+	<level value="5" feature="JobChange_01">
+		<beginCondition probability="1" cooldownTime="0.1">
+			<stat hp="1" />
+			<weapon lh="0" rh="50" />
+		</beginCondition>
+		<push back="150" />
+		<upgrade level="68" />
+		<combo comboSkill="1" comboOriginSkill="10200255" inputSkill="10200255" outputSkill="10200255" />
+		<motion>
+			<motionProperty sequenceName="Berserker_BloodSlash_03_A" sequenceSpeed="0.8" strTagEffects="e0=CH/Skill/Berserker/Eff_Berserker_BloodSlash_Cast_05.xml" keyMove="450" holdWeapon="0" />
+			<attack point="p0" targetCount="8" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="3" unrideOnHit="5">
+				<pauseProperty pauseDuration="0.1" pauseShakeDuration="0.12" pauseAmp="10" />
+				<rangeProperty rangeType="box" distance="300" rangeAdd="0.000000,25.000000,0.000000" height="150" width="350" applyTarget="1" />
+				<damageProperty rate="3.8" hitSpeedRate="0.95" effectHit="CH/Weapon/LargeSword/Eff_LargeSword_Hit_01.xml" attackMaterial="4" />
+				<conditionSkill level="5" skillID="10200253" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="1" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="5" skillID="10200254" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="2" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="5" skillID="10200255" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="3" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="5" skillID="10200256" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="4" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="5" skillID="10200257" skillTarget="2" skillOwner="11" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="5" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+			</attack>
+			<attack point="p1" targetCount="8" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="3" unrideOnHit="5">
+				<pauseProperty pauseDuration="0.1" pauseShakeDuration="0.12" pauseAmp="10" />
+				<rangeProperty rangeType="cylinder" distance="300" rangeAdd="0.000000,25.000000,0.000000" height="150" width="350" applyTarget="1" />
+				<damageProperty rate="3.8" hitSpeedRate="0.95" effectHit="CH/Weapon/LargeSword/Eff_LargeSword_Hit_01.xml" attackMaterial="4" />
+				<conditionSkill level="5" skillID="10200253" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="1" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="5" skillID="10200254" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="2" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="5" skillID="10200255" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="3" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="5" skillID="10200256" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="4" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="5" skillID="10200257" skillTarget="2" skillOwner="11" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="5" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+			</attack>
+			<attack point="p2" targetCount="8" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="3" unrideOnHit="5">
+				<pauseProperty pauseDuration="0.1" pauseShakeDuration="0.12" pauseAmp="10" />
+				<rangeProperty rangeType="cylinder" distance="300" rangeAdd="0.000000,25.000000,0.000000" height="150" width="350" applyTarget="1" />
+				<damageProperty rate="3.8" hitSpeedRate="0.95" effectHit="CH/Weapon/LargeSword/Eff_LargeSword_Hit_01.xml" attackMaterial="4" />
+				<conditionSkill level="5" skillID="10200253" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="1" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="5" skillID="10200254" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="2" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="5" skillID="10200255" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="3" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="5" skillID="10200256" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="4" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="5" skillID="10200257" skillTarget="2" skillOwner="11" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="5" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+			</attack>
+			<attack point="p3" targetCount="8" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="3" unrideOnHit="5">
+				<pauseProperty pauseDuration="0.2" pauseShakeDuration="0.15" pauseAmp="15" />
+				<rangeProperty rangeType="cylinder" distance="300" rangeAdd="0.000000,25.000000,0.000000" height="150" width="350" applyTarget="1" />
+				<damageProperty rate="4.3" hitSpeedRate="0.9" hitPauseTime="0.2" effectHit="CH/Weapon/LargeSword/Eff_LargeSword_Hit_01.xml" attackMaterial="4" />
+				<conditionSkill level="5" skillID="10200253" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="1" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="5" skillID="10200254" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="2" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="5" skillID="10200255" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="3" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="5" skillID="10200256" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="4" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="5" skillID="10200257" skillTarget="2" skillOwner="11" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="5" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+			</attack>
+		</motion>
+	</level>
+	<level value="6" feature="JobChange_01">
+		<beginCondition probability="1" cooldownTime="0.1">
+			<stat hp="1" />
+			<weapon lh="0" rh="50" />
+		</beginCondition>
+		<push back="150" />
+		<upgrade level="68" />
+		<combo comboSkill="1" comboOriginSkill="10200255" inputSkill="10200255" outputSkill="10200255" />
+		<motion>
+			<motionProperty sequenceName="Berserker_BloodSlash_03_A" sequenceSpeed="0.8" strTagEffects="e0=CH/Skill/Berserker/Eff_Berserker_BloodSlash_Cast_05.xml" keyMove="450" holdWeapon="0" />
+			<attack point="p0" targetCount="8" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="3" unrideOnHit="5">
+				<pauseProperty pauseDuration="0.1" pauseShakeDuration="0.12" pauseAmp="10" />
+				<rangeProperty rangeType="box" distance="300" rangeAdd="0.000000,25.000000,0.000000" height="150" width="350" applyTarget="1" />
+				<damageProperty rate="4.1" hitSpeedRate="0.95" effectHit="CH/Weapon/LargeSword/Eff_LargeSword_Hit_01.xml" attackMaterial="4" />
+				<conditionSkill level="6" skillID="10200253" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="1" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="6" skillID="10200254" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="2" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="6" skillID="10200255" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="3" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="6" skillID="10200256" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="4" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="6" skillID="10200257" skillTarget="2" skillOwner="11" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="5" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+			</attack>
+			<attack point="p1" targetCount="8" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="3" unrideOnHit="5">
+				<pauseProperty pauseDuration="0.1" pauseShakeDuration="0.12" pauseAmp="10" />
+				<rangeProperty rangeType="cylinder" distance="300" rangeAdd="0.000000,25.000000,0.000000" height="150" width="350" applyTarget="1" />
+				<damageProperty rate="4.1" hitSpeedRate="0.95" effectHit="CH/Weapon/LargeSword/Eff_LargeSword_Hit_01.xml" attackMaterial="4" />
+				<conditionSkill level="6" skillID="10200253" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="1" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="6" skillID="10200254" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="2" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="6" skillID="10200255" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="3" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="6" skillID="10200256" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="4" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="6" skillID="10200257" skillTarget="2" skillOwner="11" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="5" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+			</attack>
+			<attack point="p2" targetCount="8" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="3" unrideOnHit="5">
+				<pauseProperty pauseDuration="0.1" pauseShakeDuration="0.12" pauseAmp="10" />
+				<rangeProperty rangeType="cylinder" distance="300" rangeAdd="0.000000,25.000000,0.000000" height="150" width="350" applyTarget="1" />
+				<damageProperty rate="4.1" hitSpeedRate="0.95" effectHit="CH/Weapon/LargeSword/Eff_LargeSword_Hit_01.xml" attackMaterial="4" />
+				<conditionSkill level="6" skillID="10200253" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="1" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="6" skillID="10200254" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="2" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="6" skillID="10200255" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="3" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="6" skillID="10200256" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="4" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="6" skillID="10200257" skillTarget="2" skillOwner="11" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="5" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+			</attack>
+			<attack point="p3" targetCount="8" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="3" unrideOnHit="5">
+				<pauseProperty pauseDuration="0.2" pauseShakeDuration="0.15" pauseAmp="15" />
+				<rangeProperty rangeType="cylinder" distance="300" rangeAdd="0.000000,25.000000,0.000000" height="150" width="350" applyTarget="1" />
+				<damageProperty rate="4.6" hitSpeedRate="0.9" hitPauseTime="0.2" effectHit="CH/Weapon/LargeSword/Eff_LargeSword_Hit_01.xml" attackMaterial="4" />
+				<conditionSkill level="6" skillID="10200253" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="1" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="6" skillID="10200254" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="2" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="6" skillID="10200255" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="3" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="6" skillID="10200256" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="4" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="6" skillID="10200257" skillTarget="2" skillOwner="11" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="5" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+			</attack>
+		</motion>
+	</level>
+	<level value="7" feature="JobChange_01">
+		<beginCondition probability="1" cooldownTime="0.1">
+			<stat hp="1" />
+			<weapon lh="0" rh="50" />
+		</beginCondition>
+		<push back="150" />
+		<upgrade level="68" />
+		<combo comboSkill="1" comboOriginSkill="10200255" inputSkill="10200255" outputSkill="10200255" />
+		<motion>
+			<motionProperty sequenceName="Berserker_BloodSlash_03_A" sequenceSpeed="0.8" strTagEffects="e0=CH/Skill/Berserker/Eff_Berserker_BloodSlash_Cast_05.xml" keyMove="450" holdWeapon="0" />
+			<attack point="p0" targetCount="8" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="3" unrideOnHit="5">
+				<pauseProperty pauseDuration="0.1" pauseShakeDuration="0.12" pauseAmp="10" />
+				<rangeProperty rangeType="box" distance="300" rangeAdd="0.000000,25.000000,0.000000" height="150" width="350" applyTarget="1" />
+				<damageProperty rate="4.41" hitSpeedRate="0.95" effectHit="CH/Weapon/LargeSword/Eff_LargeSword_Hit_01.xml" attackMaterial="4" />
+				<conditionSkill level="7" skillID="10200253" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="1" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="7" skillID="10200254" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="2" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="7" skillID="10200255" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="3" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="7" skillID="10200256" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="4" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="7" skillID="10200257" skillTarget="2" skillOwner="11" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="5" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+			</attack>
+			<attack point="p1" targetCount="8" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="3" unrideOnHit="5">
+				<pauseProperty pauseDuration="0.1" pauseShakeDuration="0.12" pauseAmp="10" />
+				<rangeProperty rangeType="cylinder" distance="300" rangeAdd="0.000000,25.000000,0.000000" height="150" width="350" applyTarget="1" />
+				<damageProperty rate="4.41" hitSpeedRate="0.95" effectHit="CH/Weapon/LargeSword/Eff_LargeSword_Hit_01.xml" attackMaterial="4" />
+				<conditionSkill level="7" skillID="10200253" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="1" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="7" skillID="10200254" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="2" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="7" skillID="10200255" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="3" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="7" skillID="10200256" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="4" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="7" skillID="10200257" skillTarget="2" skillOwner="11" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="5" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+			</attack>
+			<attack point="p2" targetCount="8" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="3" unrideOnHit="5">
+				<pauseProperty pauseDuration="0.1" pauseShakeDuration="0.12" pauseAmp="10" />
+				<rangeProperty rangeType="cylinder" distance="300" rangeAdd="0.000000,25.000000,0.000000" height="150" width="350" applyTarget="1" />
+				<damageProperty rate="4.41" hitSpeedRate="0.95" effectHit="CH/Weapon/LargeSword/Eff_LargeSword_Hit_01.xml" attackMaterial="4" />
+				<conditionSkill level="7" skillID="10200253" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="1" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="7" skillID="10200254" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="2" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="7" skillID="10200255" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="3" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="7" skillID="10200256" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="4" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="7" skillID="10200257" skillTarget="2" skillOwner="11" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="5" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+			</attack>
+			<attack point="p3" targetCount="8" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="3" unrideOnHit="5">
+				<pauseProperty pauseDuration="0.2" pauseShakeDuration="0.15" pauseAmp="15" />
+				<rangeProperty rangeType="cylinder" distance="300" rangeAdd="0.000000,25.000000,0.000000" height="150" width="350" applyTarget="1" />
+				<damageProperty rate="4.91" hitSpeedRate="0.9" hitPauseTime="0.2" effectHit="CH/Weapon/LargeSword/Eff_LargeSword_Hit_01.xml" attackMaterial="4" />
+				<conditionSkill level="7" skillID="10200253" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="1" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="7" skillID="10200254" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="2" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="7" skillID="10200255" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="3" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="7" skillID="10200256" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="4" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="7" skillID="10200257" skillTarget="2" skillOwner="11" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="5" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+			</attack>
+		</motion>
+	</level>
+	<level value="8" feature="JobChange_01">
+		<beginCondition probability="1" cooldownTime="0.1">
+			<stat hp="1" />
+			<weapon lh="0" rh="50" />
+		</beginCondition>
+		<push back="150" />
+		<upgrade level="68" />
+		<combo comboSkill="1" comboOriginSkill="10200255" inputSkill="10200255" outputSkill="10200255" />
+		<motion>
+			<motionProperty sequenceName="Berserker_BloodSlash_03_A" sequenceSpeed="0.8" strTagEffects="e0=CH/Skill/Berserker/Eff_Berserker_BloodSlash_Cast_05.xml" keyMove="450" holdWeapon="0" />
+			<attack point="p0" targetCount="8" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="3" unrideOnHit="5">
+				<pauseProperty pauseDuration="0.1" pauseShakeDuration="0.12" pauseAmp="10" />
+				<rangeProperty rangeType="box" distance="300" rangeAdd="0.000000,25.000000,0.000000" height="150" width="350" applyTarget="1" />
+				<damageProperty rate="4.71" hitSpeedRate="0.95" effectHit="CH/Weapon/LargeSword/Eff_LargeSword_Hit_01.xml" attackMaterial="4" />
+				<conditionSkill level="8" skillID="10200253" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="1" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="8" skillID="10200254" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="2" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="8" skillID="10200255" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="3" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="8" skillID="10200256" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="4" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="8" skillID="10200257" skillTarget="2" skillOwner="11" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="5" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+			</attack>
+			<attack point="p1" targetCount="8" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="3" unrideOnHit="5">
+				<pauseProperty pauseDuration="0.1" pauseShakeDuration="0.12" pauseAmp="10" />
+				<rangeProperty rangeType="cylinder" distance="300" rangeAdd="0.000000,25.000000,0.000000" height="150" width="350" applyTarget="1" />
+				<damageProperty rate="4.71" hitSpeedRate="0.95" effectHit="CH/Weapon/LargeSword/Eff_LargeSword_Hit_01.xml" attackMaterial="4" />
+				<conditionSkill level="8" skillID="10200253" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="1" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="8" skillID="10200254" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="2" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="8" skillID="10200255" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="3" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="8" skillID="10200256" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="4" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="8" skillID="10200257" skillTarget="2" skillOwner="11" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="5" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+			</attack>
+			<attack point="p2" targetCount="8" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="3" unrideOnHit="5">
+				<pauseProperty pauseDuration="0.1" pauseShakeDuration="0.12" pauseAmp="10" />
+				<rangeProperty rangeType="cylinder" distance="300" rangeAdd="0.000000,25.000000,0.000000" height="150" width="350" applyTarget="1" />
+				<damageProperty rate="4.71" hitSpeedRate="0.95" effectHit="CH/Weapon/LargeSword/Eff_LargeSword_Hit_01.xml" attackMaterial="4" />
+				<conditionSkill level="8" skillID="10200253" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="1" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="8" skillID="10200254" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="2" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="8" skillID="10200255" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="3" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="8" skillID="10200256" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="4" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="8" skillID="10200257" skillTarget="2" skillOwner="11" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="5" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+			</attack>
+			<attack point="p3" targetCount="8" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="3" unrideOnHit="5">
+				<pauseProperty pauseDuration="0.2" pauseShakeDuration="0.15" pauseAmp="15" />
+				<rangeProperty rangeType="cylinder" distance="300" rangeAdd="0.000000,25.000000,0.000000" height="150" width="350" applyTarget="1" />
+				<damageProperty rate="5.21" hitSpeedRate="0.9" hitPauseTime="0.2" effectHit="CH/Weapon/LargeSword/Eff_LargeSword_Hit_01.xml" attackMaterial="4" />
+				<conditionSkill level="8" skillID="10200253" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="1" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="8" skillID="10200254" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="2" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="8" skillID="10200255" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="3" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="8" skillID="10200256" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="4" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="8" skillID="10200257" skillTarget="2" skillOwner="11" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="5" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+			</attack>
+		</motion>
+	</level>
+	<level value="9" feature="JobChange_01">
+		<beginCondition probability="1" cooldownTime="0.1">
+			<stat hp="1" />
+			<weapon lh="0" rh="50" />
+		</beginCondition>
+		<push back="150" />
+		<upgrade level="68" />
+		<combo comboSkill="1" comboOriginSkill="10200255" inputSkill="10200255" outputSkill="10200255" />
+		<motion>
+			<motionProperty sequenceName="Berserker_BloodSlash_03_A" sequenceSpeed="0.8" strTagEffects="e0=CH/Skill/Berserker/Eff_Berserker_BloodSlash_Cast_05.xml" keyMove="450" holdWeapon="0" />
+			<attack point="p0" targetCount="8" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="3" unrideOnHit="5">
+				<pauseProperty pauseDuration="0.1" pauseShakeDuration="0.12" pauseAmp="10" />
+				<rangeProperty rangeType="box" distance="300" rangeAdd="0.000000,25.000000,0.000000" height="150" width="350" applyTarget="1" />
+				<damageProperty rate="5.01" hitSpeedRate="0.95" effectHit="CH/Weapon/LargeSword/Eff_LargeSword_Hit_01.xml" attackMaterial="4" />
+				<conditionSkill level="9" skillID="10200253" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="1" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="9" skillID="10200254" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="2" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="9" skillID="10200255" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="3" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="9" skillID="10200256" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="4" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="9" skillID="10200257" skillTarget="2" skillOwner="11" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="5" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+			</attack>
+			<attack point="p1" targetCount="8" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="3" unrideOnHit="5">
+				<pauseProperty pauseDuration="0.1" pauseShakeDuration="0.12" pauseAmp="10" />
+				<rangeProperty rangeType="cylinder" distance="300" rangeAdd="0.000000,25.000000,0.000000" height="150" width="350" applyTarget="1" />
+				<damageProperty rate="5.01" hitSpeedRate="0.95" effectHit="CH/Weapon/LargeSword/Eff_LargeSword_Hit_01.xml" attackMaterial="4" />
+				<conditionSkill level="9" skillID="10200253" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="1" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="9" skillID="10200254" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="2" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="9" skillID="10200255" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="3" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="9" skillID="10200256" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="4" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="9" skillID="10200257" skillTarget="2" skillOwner="11" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="5" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+			</attack>
+			<attack point="p2" targetCount="8" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="3" unrideOnHit="5">
+				<pauseProperty pauseDuration="0.1" pauseShakeDuration="0.12" pauseAmp="10" />
+				<rangeProperty rangeType="cylinder" distance="300" rangeAdd="0.000000,25.000000,0.000000" height="150" width="350" applyTarget="1" />
+				<damageProperty rate="5.01" hitSpeedRate="0.95" effectHit="CH/Weapon/LargeSword/Eff_LargeSword_Hit_01.xml" attackMaterial="4" />
+				<conditionSkill level="9" skillID="10200253" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="1" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="9" skillID="10200254" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="2" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="9" skillID="10200255" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="3" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="9" skillID="10200256" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="4" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="9" skillID="10200257" skillTarget="2" skillOwner="11" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="5" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+			</attack>
+			<attack point="p3" targetCount="8" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="3" unrideOnHit="5">
+				<pauseProperty pauseDuration="0.2" pauseShakeDuration="0.15" pauseAmp="15" />
+				<rangeProperty rangeType="cylinder" distance="300" rangeAdd="0.000000,25.000000,0.000000" height="150" width="350" applyTarget="1" />
+				<damageProperty rate="5.51" hitSpeedRate="0.9" hitPauseTime="0.2" effectHit="CH/Weapon/LargeSword/Eff_LargeSword_Hit_01.xml" attackMaterial="4" />
+				<conditionSkill level="9" skillID="10200253" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="1" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="9" skillID="10200254" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="2" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="9" skillID="10200255" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="3" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="9" skillID="10200256" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="4" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="9" skillID="10200257" skillTarget="2" skillOwner="11" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="5" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+			</attack>
+		</motion>
+	</level>
+	<level value="10" feature="JobChange_01">
+		<beginCondition probability="1" cooldownTime="0.1">
+			<stat hp="1" />
+			<weapon lh="0" rh="50" />
+		</beginCondition>
+		<push back="150" />
+		<upgrade level="68" />
+		<combo comboSkill="1" comboOriginSkill="10200255" inputSkill="10200255" outputSkill="10200255" />
+		<motion>
+			<motionProperty sequenceName="Berserker_BloodSlash_03_A" sequenceSpeed="0.8" strTagEffects="e0=CH/Skill/Berserker/Eff_Berserker_BloodSlash_Cast_05.xml" keyMove="450" holdWeapon="0" />
+			<attack point="p0" targetCount="8" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="3" unrideOnHit="5">
+				<pauseProperty pauseDuration="0.1" pauseShakeDuration="0.12" pauseAmp="10" />
+				<rangeProperty rangeType="box" distance="300" rangeAdd="0.000000,25.000000,0.000000" height="150" width="350" applyTarget="1" />
+				<damageProperty rate="5.31" hitSpeedRate="0.95" effectHit="CH/Weapon/LargeSword/Eff_LargeSword_Hit_01.xml" attackMaterial="4" />
+				<conditionSkill level="10" skillID="10200253" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="1" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="10" skillID="10200254" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="2" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="10" skillID="10200255" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="3" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="10" skillID="10200256" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="4" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="10" skillID="10200257" skillTarget="2" skillOwner="11" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="5" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+			</attack>
+			<attack point="p1" targetCount="8" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="3" unrideOnHit="5">
+				<pauseProperty pauseDuration="0.1" pauseShakeDuration="0.12" pauseAmp="10" />
+				<rangeProperty rangeType="cylinder" distance="300" rangeAdd="0.000000,25.000000,0.000000" height="150" width="350" applyTarget="1" />
+				<damageProperty rate="5.31" hitSpeedRate="0.95" effectHit="CH/Weapon/LargeSword/Eff_LargeSword_Hit_01.xml" attackMaterial="4" />
+				<conditionSkill level="10" skillID="10200253" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="1" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="10" skillID="10200254" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="2" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="10" skillID="10200255" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="3" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="10" skillID="10200256" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="4" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="10" skillID="10200257" skillTarget="2" skillOwner="11" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="5" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+			</attack>
+			<attack point="p2" targetCount="8" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="3" unrideOnHit="5">
+				<pauseProperty pauseDuration="0.1" pauseShakeDuration="0.12" pauseAmp="10" />
+				<rangeProperty rangeType="cylinder" distance="300" rangeAdd="0.000000,25.000000,0.000000" height="150" width="350" applyTarget="1" />
+				<damageProperty rate="5.31" hitSpeedRate="0.95" effectHit="CH/Weapon/LargeSword/Eff_LargeSword_Hit_01.xml" attackMaterial="4" />
+				<conditionSkill level="10" skillID="10200253" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="1" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="10" skillID="10200254" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="2" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="10" skillID="10200255" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="3" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="10" skillID="10200256" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="4" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="10" skillID="10200257" skillTarget="2" skillOwner="11" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="5" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+			</attack>
+			<attack point="p3" targetCount="8" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="3" unrideOnHit="5">
+				<pauseProperty pauseDuration="0.2" pauseShakeDuration="0.15" pauseAmp="15" />
+				<rangeProperty rangeType="cylinder" distance="300" rangeAdd="0.000000,25.000000,0.000000" height="150" width="350" applyTarget="1" />
+				<damageProperty rate="5.81" hitSpeedRate="0.9" hitPauseTime="0.2" effectHit="CH/Weapon/LargeSword/Eff_LargeSword_Hit_01.xml" attackMaterial="4" />
+				<conditionSkill level="10" skillID="10200253" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="1" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="10" skillID="10200254" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="2" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="10" skillID="10200255" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="3" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="10" skillID="10200256" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="4" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="10" skillID="10200257" skillTarget="2" skillOwner="11" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="5" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+			</attack>
+		</motion>
+	</level>
+	<level value="11" feature="JobChange_01">
+		<beginCondition probability="1" cooldownTime="0.1">
+			<stat hp="1" />
+			<weapon lh="0" rh="50" />
+		</beginCondition>
+		<push back="150" />
+		<upgrade level="68" />
+		<combo comboSkill="1" comboOriginSkill="10200255" inputSkill="10200255" outputSkill="10200255" />
+		<motion>
+			<motionProperty sequenceName="Berserker_BloodSlash_03_A" sequenceSpeed="0.8" strTagEffects="e0=CH/Skill/Berserker/Eff_Berserker_BloodSlash_Cast_05.xml" keyMove="450" holdWeapon="0" />
+			<attack point="p0" targetCount="8" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="3" unrideOnHit="5">
+				<pauseProperty pauseDuration="0.1" pauseShakeDuration="0.12" pauseAmp="10" />
+				<rangeProperty rangeType="box" distance="300" rangeAdd="0.000000,25.000000,0.000000" height="150" width="350" applyTarget="1" />
+				<damageProperty rate="5.62" hitSpeedRate="0.95" effectHit="CH/Weapon/LargeSword/Eff_LargeSword_Hit_01.xml" attackMaterial="4" />
+				<conditionSkill level="11" skillID="10200253" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="1" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="11" skillID="10200254" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="2" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="11" skillID="10200255" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="3" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="11" skillID="10200256" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="4" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="11" skillID="10200257" skillTarget="2" skillOwner="11" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="5" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+			</attack>
+			<attack point="p1" targetCount="8" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="3" unrideOnHit="5">
+				<pauseProperty pauseDuration="0.1" pauseShakeDuration="0.12" pauseAmp="10" />
+				<rangeProperty rangeType="cylinder" distance="300" rangeAdd="0.000000,25.000000,0.000000" height="150" width="350" applyTarget="1" />
+				<damageProperty rate="5.62" hitSpeedRate="0.95" effectHit="CH/Weapon/LargeSword/Eff_LargeSword_Hit_01.xml" attackMaterial="4" />
+				<conditionSkill level="11" skillID="10200253" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="1" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="11" skillID="10200254" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="2" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="11" skillID="10200255" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="3" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="11" skillID="10200256" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="4" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="11" skillID="10200257" skillTarget="2" skillOwner="11" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="5" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+			</attack>
+			<attack point="p2" targetCount="8" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="3" unrideOnHit="5">
+				<pauseProperty pauseDuration="0.1" pauseShakeDuration="0.12" pauseAmp="10" />
+				<rangeProperty rangeType="cylinder" distance="300" rangeAdd="0.000000,25.000000,0.000000" height="150" width="350" applyTarget="1" />
+				<damageProperty rate="5.62" hitSpeedRate="0.95" effectHit="CH/Weapon/LargeSword/Eff_LargeSword_Hit_01.xml" attackMaterial="4" />
+				<conditionSkill level="11" skillID="10200253" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="1" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="11" skillID="10200254" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="2" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="11" skillID="10200255" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="3" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="11" skillID="10200256" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="4" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="11" skillID="10200257" skillTarget="2" skillOwner="11" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="5" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+			</attack>
+			<attack point="p3" targetCount="8" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="3" unrideOnHit="5">
+				<pauseProperty pauseDuration="0.2" pauseShakeDuration="0.15" pauseAmp="15" />
+				<rangeProperty rangeType="cylinder" distance="300" rangeAdd="0.000000,25.000000,0.000000" height="150" width="350" applyTarget="1" />
+				<damageProperty rate="6.12" hitSpeedRate="0.9" hitPauseTime="0.2" effectHit="CH/Weapon/LargeSword/Eff_LargeSword_Hit_01.xml" attackMaterial="4" />
+				<conditionSkill level="11" skillID="10200253" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="1" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="11" skillID="10200254" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="2" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="11" skillID="10200255" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="3" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="11" skillID="10200256" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="4" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="11" skillID="10200257" skillTarget="2" skillOwner="11" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="5" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+			</attack>
+		</motion>
+	</level>
+	<level value="12" feature="JobChange_01">
+		<beginCondition probability="1" cooldownTime="0.1">
+			<stat hp="1" />
+			<weapon lh="0" rh="50" />
+		</beginCondition>
+		<push back="150" />
+		<upgrade level="68" />
+		<combo comboSkill="1" comboOriginSkill="10200255" inputSkill="10200255" outputSkill="10200255" />
+		<motion>
+			<motionProperty sequenceName="Berserker_BloodSlash_03_A" sequenceSpeed="0.8" strTagEffects="e0=CH/Skill/Berserker/Eff_Berserker_BloodSlash_Cast_05.xml" keyMove="450" holdWeapon="0" />
+			<attack point="p0" targetCount="8" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="3" unrideOnHit="5">
+				<pauseProperty pauseDuration="0.1" pauseShakeDuration="0.12" pauseAmp="10" />
+				<rangeProperty rangeType="box" distance="300" rangeAdd="0.000000,25.000000,0.000000" height="150" width="350" applyTarget="1" />
+				<damageProperty rate="5.92" hitSpeedRate="0.95" effectHit="CH/Weapon/LargeSword/Eff_LargeSword_Hit_01.xml" attackMaterial="4" />
+				<conditionSkill level="12" skillID="10200253" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="1" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="12" skillID="10200254" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="2" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="12" skillID="10200255" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="3" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="12" skillID="10200256" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="4" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="12" skillID="10200257" skillTarget="2" skillOwner="11" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="5" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+			</attack>
+			<attack point="p1" targetCount="8" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="3" unrideOnHit="5">
+				<pauseProperty pauseDuration="0.1" pauseShakeDuration="0.12" pauseAmp="10" />
+				<rangeProperty rangeType="cylinder" distance="300" rangeAdd="0.000000,25.000000,0.000000" height="150" width="350" applyTarget="1" />
+				<damageProperty rate="5.92" hitSpeedRate="0.95" effectHit="CH/Weapon/LargeSword/Eff_LargeSword_Hit_01.xml" attackMaterial="4" />
+				<conditionSkill level="12" skillID="10200253" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="1" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="12" skillID="10200254" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="2" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="12" skillID="10200255" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="3" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="12" skillID="10200256" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="4" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="12" skillID="10200257" skillTarget="2" skillOwner="11" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="5" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+			</attack>
+			<attack point="p2" targetCount="8" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="3" unrideOnHit="5">
+				<pauseProperty pauseDuration="0.1" pauseShakeDuration="0.12" pauseAmp="10" />
+				<rangeProperty rangeType="cylinder" distance="300" rangeAdd="0.000000,25.000000,0.000000" height="150" width="350" applyTarget="1" />
+				<damageProperty rate="5.92" hitSpeedRate="0.95" effectHit="CH/Weapon/LargeSword/Eff_LargeSword_Hit_01.xml" attackMaterial="4" />
+				<conditionSkill level="12" skillID="10200253" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="1" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="12" skillID="10200254" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="2" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="12" skillID="10200255" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="3" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="12" skillID="10200256" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="4" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="12" skillID="10200257" skillTarget="2" skillOwner="11" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="5" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+			</attack>
+			<attack point="p3" targetCount="8" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="3" unrideOnHit="5">
+				<pauseProperty pauseDuration="0.2" pauseShakeDuration="0.15" pauseAmp="15" />
+				<rangeProperty rangeType="cylinder" distance="300" rangeAdd="0.000000,25.000000,0.000000" height="150" width="350" applyTarget="1" />
+				<damageProperty rate="6.42" hitSpeedRate="0.9" hitPauseTime="0.2" effectHit="CH/Weapon/LargeSword/Eff_LargeSword_Hit_01.xml" attackMaterial="4" />
+				<conditionSkill level="12" skillID="10200253" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="1" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="12" skillID="10200254" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="2" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="12" skillID="10200255" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="3" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="12" skillID="10200256" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="4" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="12" skillID="10200257" skillTarget="2" skillOwner="11" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10200243" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="5" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+					</beginCondition>
+				</conditionSkill>
+			</attack>
+		</motion>
+	</level>
+</ms2>
