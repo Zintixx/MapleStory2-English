@@ -3,9 +3,30 @@
 <ms2>
 	<level feature="JobChange_02">
 		<BasicProperty level="1" buffType="2" buffSubType="4" durationTick="20000" intervalTick="1000" resetCondition="2" maxBuffCount="10" casterIndividualEffect="1" clearEffectFromPVPZone="1" skillGroupType="1" />
-		<MotionProperty abnormalImmuneBreak="5" />
+		<MotionProperty abnormalImmuneBreak="5">
+			<OverlapKeepEffectProperty>
+				<start>
+					<overlap count="1" effect="CH/Skill/Wizard/Eff_Wizard_Hurricane_Start_01.xml" />
+					<overlap count="4" effect="CH/Skill/Wizard/Eff_Wizard_Hurricane_Start_02.xml" />
+					<overlap count="7" effect="CH/Skill/Wizard/Eff_Wizard_Hurricane_Start_03.xml" />
+				</start>
+				<keep>
+					<overlap count="1" effect="CH/Skill/Wizard/Eff_Wizard_Hurricane_Keep_01.xml" />
+					<overlap count="4" effect="CH/Skill/Wizard/Eff_Wizard_Hurricane_Keep_02.xml" />
+					<overlap count="7" effect="CH/Skill/Wizard/Eff_Wizard_Hurricane_Keep_03.xml" />
+				</keep>
+				<end>
+					<overlap count="1" effect="CH/Skill/Wizard/Eff_Wizard_Hurricane_Stop_01.xml" />
+					<overlap count="4" effect="CH/Skill/Wizard/Eff_Wizard_Hurricane_Stop_02.xml" />
+					<overlap count="7" effect="CH/Skill/Wizard/Eff_Wizard_Hurricane_Stop_03.xml" />
+				</end>
+			</OverlapKeepEffectProperty>
+		</MotionProperty>
 		<DotDamageProperty type="2" useGrade="1" rate="0.93" element="3" />
 		<UIProperty icon="./Data/Resource/Image/skill/icon/10300271_buff.png" />
+		<SpreadProperty type="1" count="1">
+			<rangeProperty rangeType="cylinder" distance="500" height="300" applyTarget="1" />
+		</SpreadProperty>
 		<conditionSkill level="1" skillID="10300275" skillTarget="1" skillOwner="3">
 			<beginCondition probability="1">
 				<owner hasBuffID="10300271" hasBuffLevel="0" hasBuffOwner="1" hasBuffCount="10" hasBuffCountCompare="Equals" eventCondition="10" eventSkillID="" eventEffectID="" />
@@ -15,9 +36,30 @@
 	</level>
 	<level feature="JobChange_02">
 		<BasicProperty level="2" buffType="2" buffSubType="4" durationTick="20000" intervalTick="1000" resetCondition="2" maxBuffCount="10" casterIndividualEffect="1" clearEffectFromPVPZone="1" skillGroupType="1" />
-		<MotionProperty abnormalImmuneBreak="5" />
+		<MotionProperty abnormalImmuneBreak="5">
+			<OverlapKeepEffectProperty>
+				<start>
+					<overlap count="1" effect="CH/Skill/Wizard/Eff_Wizard_Hurricane_Start_01.xml" />
+					<overlap count="4" effect="CH/Skill/Wizard/Eff_Wizard_Hurricane_Start_02.xml" />
+					<overlap count="7" effect="CH/Skill/Wizard/Eff_Wizard_Hurricane_Start_03.xml" />
+				</start>
+				<keep>
+					<overlap count="1" effect="CH/Skill/Wizard/Eff_Wizard_Hurricane_Keep_01.xml" />
+					<overlap count="4" effect="CH/Skill/Wizard/Eff_Wizard_Hurricane_Keep_02.xml" />
+					<overlap count="7" effect="CH/Skill/Wizard/Eff_Wizard_Hurricane_Keep_03.xml" />
+				</keep>
+				<end>
+					<overlap count="1" effect="CH/Skill/Wizard/Eff_Wizard_Hurricane_Stop_01.xml" />
+					<overlap count="4" effect="CH/Skill/Wizard/Eff_Wizard_Hurricane_Stop_02.xml" />
+					<overlap count="7" effect="CH/Skill/Wizard/Eff_Wizard_Hurricane_Stop_03.xml" />
+				</end>
+			</OverlapKeepEffectProperty>
+		</MotionProperty>
 		<DotDamageProperty type="2" useGrade="1" rate="1.04" element="3" />
 		<UIProperty icon="./Data/Resource/Image/skill/icon/10300271_buff.png" />
+		<SpreadProperty type="1" count="1">
+			<rangeProperty rangeType="cylinder" distance="500" height="300" applyTarget="1" />
+		</SpreadProperty>
 		<conditionSkill level="2" skillID="10300275" skillTarget="1" skillOwner="3">
 			<beginCondition probability="1">
 				<owner hasBuffID="10300271" hasBuffLevel="0" hasBuffOwner="1" hasBuffCount="10" hasBuffCountCompare="Equals" eventCondition="10" eventSkillID="" eventEffectID="" />
@@ -27,9 +69,30 @@
 	</level>
 	<level feature="JobChange_02">
 		<BasicProperty level="3" buffType="2" buffSubType="4" durationTick="20000" intervalTick="1000" resetCondition="2" maxBuffCount="10" casterIndividualEffect="1" clearEffectFromPVPZone="1" skillGroupType="1" />
-		<MotionProperty abnormalImmuneBreak="5" />
+		<MotionProperty abnormalImmuneBreak="5">
+			<OverlapKeepEffectProperty>
+				<start>
+					<overlap count="1" effect="CH/Skill/Wizard/Eff_Wizard_Hurricane_Start_01.xml" />
+					<overlap count="4" effect="CH/Skill/Wizard/Eff_Wizard_Hurricane_Start_02.xml" />
+					<overlap count="7" effect="CH/Skill/Wizard/Eff_Wizard_Hurricane_Start_03.xml" />
+				</start>
+				<keep>
+					<overlap count="1" effect="CH/Skill/Wizard/Eff_Wizard_Hurricane_Keep_01.xml" />
+					<overlap count="4" effect="CH/Skill/Wizard/Eff_Wizard_Hurricane_Keep_02.xml" />
+					<overlap count="7" effect="CH/Skill/Wizard/Eff_Wizard_Hurricane_Keep_03.xml" />
+				</keep>
+				<end>
+					<overlap count="1" effect="CH/Skill/Wizard/Eff_Wizard_Hurricane_Stop_01.xml" />
+					<overlap count="4" effect="CH/Skill/Wizard/Eff_Wizard_Hurricane_Stop_02.xml" />
+					<overlap count="7" effect="CH/Skill/Wizard/Eff_Wizard_Hurricane_Stop_03.xml" />
+				</end>
+			</OverlapKeepEffectProperty>
+		</MotionProperty>
 		<DotDamageProperty type="2" useGrade="1" rate="1.15" element="3" />
 		<UIProperty icon="./Data/Resource/Image/skill/icon/10300271_buff.png" />
+		<SpreadProperty type="1" count="1">
+			<rangeProperty rangeType="cylinder" distance="500" height="300" applyTarget="1" />
+		</SpreadProperty>
 		<conditionSkill level="3" skillID="10300275" skillTarget="1" skillOwner="3">
 			<beginCondition probability="1">
 				<owner hasBuffID="10300271" hasBuffLevel="0" hasBuffOwner="1" hasBuffCount="10" hasBuffCountCompare="Equals" eventCondition="10" eventSkillID="" eventEffectID="" />
@@ -39,9 +102,30 @@
 	</level>
 	<level feature="JobChange_02">
 		<BasicProperty level="4" buffType="2" buffSubType="4" durationTick="20000" intervalTick="1000" resetCondition="2" maxBuffCount="10" casterIndividualEffect="1" clearEffectFromPVPZone="1" skillGroupType="1" />
-		<MotionProperty abnormalImmuneBreak="5" />
+		<MotionProperty abnormalImmuneBreak="5">
+			<OverlapKeepEffectProperty>
+				<start>
+					<overlap count="1" effect="CH/Skill/Wizard/Eff_Wizard_Hurricane_Start_01.xml" />
+					<overlap count="4" effect="CH/Skill/Wizard/Eff_Wizard_Hurricane_Start_02.xml" />
+					<overlap count="7" effect="CH/Skill/Wizard/Eff_Wizard_Hurricane_Start_03.xml" />
+				</start>
+				<keep>
+					<overlap count="1" effect="CH/Skill/Wizard/Eff_Wizard_Hurricane_Keep_01.xml" />
+					<overlap count="4" effect="CH/Skill/Wizard/Eff_Wizard_Hurricane_Keep_02.xml" />
+					<overlap count="7" effect="CH/Skill/Wizard/Eff_Wizard_Hurricane_Keep_03.xml" />
+				</keep>
+				<end>
+					<overlap count="1" effect="CH/Skill/Wizard/Eff_Wizard_Hurricane_Stop_01.xml" />
+					<overlap count="4" effect="CH/Skill/Wizard/Eff_Wizard_Hurricane_Stop_02.xml" />
+					<overlap count="7" effect="CH/Skill/Wizard/Eff_Wizard_Hurricane_Stop_03.xml" />
+				</end>
+			</OverlapKeepEffectProperty>
+		</MotionProperty>
 		<DotDamageProperty type="2" useGrade="1" rate="1.26" element="3" />
 		<UIProperty icon="./Data/Resource/Image/skill/icon/10300271_buff.png" />
+		<SpreadProperty type="1" count="1">
+			<rangeProperty rangeType="cylinder" distance="500" height="300" applyTarget="1" />
+		</SpreadProperty>
 		<conditionSkill level="4" skillID="10300275" skillTarget="1" skillOwner="3">
 			<beginCondition probability="1">
 				<owner hasBuffID="10300271" hasBuffLevel="0" hasBuffOwner="1" hasBuffCount="10" hasBuffCountCompare="Equals" eventCondition="10" eventSkillID="" eventEffectID="" />
@@ -51,9 +135,30 @@
 	</level>
 	<level feature="JobChange_02">
 		<BasicProperty level="5" buffType="2" buffSubType="4" durationTick="20000" intervalTick="1000" resetCondition="2" maxBuffCount="10" casterIndividualEffect="1" clearEffectFromPVPZone="1" skillGroupType="1" />
-		<MotionProperty abnormalImmuneBreak="5" />
+		<MotionProperty abnormalImmuneBreak="5">
+			<OverlapKeepEffectProperty>
+				<start>
+					<overlap count="1" effect="CH/Skill/Wizard/Eff_Wizard_Hurricane_Start_01.xml" />
+					<overlap count="4" effect="CH/Skill/Wizard/Eff_Wizard_Hurricane_Start_02.xml" />
+					<overlap count="7" effect="CH/Skill/Wizard/Eff_Wizard_Hurricane_Start_03.xml" />
+				</start>
+				<keep>
+					<overlap count="1" effect="CH/Skill/Wizard/Eff_Wizard_Hurricane_Keep_01.xml" />
+					<overlap count="4" effect="CH/Skill/Wizard/Eff_Wizard_Hurricane_Keep_02.xml" />
+					<overlap count="7" effect="CH/Skill/Wizard/Eff_Wizard_Hurricane_Keep_03.xml" />
+				</keep>
+				<end>
+					<overlap count="1" effect="CH/Skill/Wizard/Eff_Wizard_Hurricane_Stop_01.xml" />
+					<overlap count="4" effect="CH/Skill/Wizard/Eff_Wizard_Hurricane_Stop_02.xml" />
+					<overlap count="7" effect="CH/Skill/Wizard/Eff_Wizard_Hurricane_Stop_03.xml" />
+				</end>
+			</OverlapKeepEffectProperty>
+		</MotionProperty>
 		<DotDamageProperty type="2" useGrade="1" rate="1.37" element="3" />
 		<UIProperty icon="./Data/Resource/Image/skill/icon/10300271_buff.png" />
+		<SpreadProperty type="1" count="1">
+			<rangeProperty rangeType="cylinder" distance="500" height="300" applyTarget="1" />
+		</SpreadProperty>
 		<conditionSkill level="5" skillID="10300275" skillTarget="1" skillOwner="3">
 			<beginCondition probability="1">
 				<owner hasBuffID="10300271" hasBuffLevel="0" hasBuffOwner="1" hasBuffCount="10" hasBuffCountCompare="Equals" eventCondition="10" eventSkillID="" eventEffectID="" />
@@ -63,9 +168,30 @@
 	</level>
 	<level feature="JobChange_02">
 		<BasicProperty level="6" buffType="2" buffSubType="4" durationTick="20000" intervalTick="1000" resetCondition="2" maxBuffCount="10" casterIndividualEffect="1" clearEffectFromPVPZone="1" skillGroupType="1" />
-		<MotionProperty abnormalImmuneBreak="5" />
+		<MotionProperty abnormalImmuneBreak="5">
+			<OverlapKeepEffectProperty>
+				<start>
+					<overlap count="1" effect="CH/Skill/Wizard/Eff_Wizard_Hurricane_Start_01.xml" />
+					<overlap count="4" effect="CH/Skill/Wizard/Eff_Wizard_Hurricane_Start_02.xml" />
+					<overlap count="7" effect="CH/Skill/Wizard/Eff_Wizard_Hurricane_Start_03.xml" />
+				</start>
+				<keep>
+					<overlap count="1" effect="CH/Skill/Wizard/Eff_Wizard_Hurricane_Keep_01.xml" />
+					<overlap count="4" effect="CH/Skill/Wizard/Eff_Wizard_Hurricane_Keep_02.xml" />
+					<overlap count="7" effect="CH/Skill/Wizard/Eff_Wizard_Hurricane_Keep_03.xml" />
+				</keep>
+				<end>
+					<overlap count="1" effect="CH/Skill/Wizard/Eff_Wizard_Hurricane_Stop_01.xml" />
+					<overlap count="4" effect="CH/Skill/Wizard/Eff_Wizard_Hurricane_Stop_02.xml" />
+					<overlap count="7" effect="CH/Skill/Wizard/Eff_Wizard_Hurricane_Stop_03.xml" />
+				</end>
+			</OverlapKeepEffectProperty>
+		</MotionProperty>
 		<DotDamageProperty type="2" useGrade="1" rate="1.48" element="3" />
 		<UIProperty icon="./Data/Resource/Image/skill/icon/10300271_buff.png" />
+		<SpreadProperty type="1" count="1">
+			<rangeProperty rangeType="cylinder" distance="500" height="300" applyTarget="1" />
+		</SpreadProperty>
 		<conditionSkill level="6" skillID="10300275" skillTarget="1" skillOwner="3">
 			<beginCondition probability="1">
 				<owner hasBuffID="10300271" hasBuffLevel="0" hasBuffOwner="1" hasBuffCount="10" hasBuffCountCompare="Equals" eventCondition="10" eventSkillID="" eventEffectID="" />
@@ -75,9 +201,30 @@
 	</level>
 	<level feature="JobChange_02">
 		<BasicProperty level="7" buffType="2" buffSubType="4" durationTick="20000" intervalTick="1000" resetCondition="2" maxBuffCount="10" casterIndividualEffect="1" clearEffectFromPVPZone="1" skillGroupType="1" />
-		<MotionProperty abnormalImmuneBreak="5" />
+		<MotionProperty abnormalImmuneBreak="5">
+			<OverlapKeepEffectProperty>
+				<start>
+					<overlap count="1" effect="CH/Skill/Wizard/Eff_Wizard_Hurricane_Start_01.xml" />
+					<overlap count="4" effect="CH/Skill/Wizard/Eff_Wizard_Hurricane_Start_02.xml" />
+					<overlap count="7" effect="CH/Skill/Wizard/Eff_Wizard_Hurricane_Start_03.xml" />
+				</start>
+				<keep>
+					<overlap count="1" effect="CH/Skill/Wizard/Eff_Wizard_Hurricane_Keep_01.xml" />
+					<overlap count="4" effect="CH/Skill/Wizard/Eff_Wizard_Hurricane_Keep_02.xml" />
+					<overlap count="7" effect="CH/Skill/Wizard/Eff_Wizard_Hurricane_Keep_03.xml" />
+				</keep>
+				<end>
+					<overlap count="1" effect="CH/Skill/Wizard/Eff_Wizard_Hurricane_Stop_01.xml" />
+					<overlap count="4" effect="CH/Skill/Wizard/Eff_Wizard_Hurricane_Stop_02.xml" />
+					<overlap count="7" effect="CH/Skill/Wizard/Eff_Wizard_Hurricane_Stop_03.xml" />
+				</end>
+			</OverlapKeepEffectProperty>
+		</MotionProperty>
 		<DotDamageProperty type="2" useGrade="1" rate="1.59" element="3" />
 		<UIProperty icon="./Data/Resource/Image/skill/icon/10300271_buff.png" />
+		<SpreadProperty type="1" count="1">
+			<rangeProperty rangeType="cylinder" distance="500" height="300" applyTarget="1" />
+		</SpreadProperty>
 		<conditionSkill level="7" skillID="10300275" skillTarget="1" skillOwner="3">
 			<beginCondition probability="1">
 				<owner hasBuffID="10300271" hasBuffLevel="0" hasBuffOwner="1" hasBuffCount="10" hasBuffCountCompare="Equals" eventCondition="10" eventSkillID="" eventEffectID="" />
@@ -87,9 +234,30 @@
 	</level>
 	<level feature="JobChange_02">
 		<BasicProperty level="8" buffType="2" buffSubType="4" durationTick="20000" intervalTick="1000" resetCondition="2" maxBuffCount="10" casterIndividualEffect="1" clearEffectFromPVPZone="1" skillGroupType="1" />
-		<MotionProperty abnormalImmuneBreak="5" />
+		<MotionProperty abnormalImmuneBreak="5">
+			<OverlapKeepEffectProperty>
+				<start>
+					<overlap count="1" effect="CH/Skill/Wizard/Eff_Wizard_Hurricane_Start_01.xml" />
+					<overlap count="4" effect="CH/Skill/Wizard/Eff_Wizard_Hurricane_Start_02.xml" />
+					<overlap count="7" effect="CH/Skill/Wizard/Eff_Wizard_Hurricane_Start_03.xml" />
+				</start>
+				<keep>
+					<overlap count="1" effect="CH/Skill/Wizard/Eff_Wizard_Hurricane_Keep_01.xml" />
+					<overlap count="4" effect="CH/Skill/Wizard/Eff_Wizard_Hurricane_Keep_02.xml" />
+					<overlap count="7" effect="CH/Skill/Wizard/Eff_Wizard_Hurricane_Keep_03.xml" />
+				</keep>
+				<end>
+					<overlap count="1" effect="CH/Skill/Wizard/Eff_Wizard_Hurricane_Stop_01.xml" />
+					<overlap count="4" effect="CH/Skill/Wizard/Eff_Wizard_Hurricane_Stop_02.xml" />
+					<overlap count="7" effect="CH/Skill/Wizard/Eff_Wizard_Hurricane_Stop_03.xml" />
+				</end>
+			</OverlapKeepEffectProperty>
+		</MotionProperty>
 		<DotDamageProperty type="2" useGrade="1" rate="1.7" element="3" />
 		<UIProperty icon="./Data/Resource/Image/skill/icon/10300271_buff.png" />
+		<SpreadProperty type="1" count="1">
+			<rangeProperty rangeType="cylinder" distance="500" height="300" applyTarget="1" />
+		</SpreadProperty>
 		<conditionSkill level="8" skillID="10300275" skillTarget="1" skillOwner="3">
 			<beginCondition probability="1">
 				<owner hasBuffID="10300271" hasBuffLevel="0" hasBuffOwner="1" hasBuffCount="10" hasBuffCountCompare="Equals" eventCondition="10" eventSkillID="" eventEffectID="" />
@@ -99,9 +267,30 @@
 	</level>
 	<level feature="JobChange_02">
 		<BasicProperty level="9" buffType="2" buffSubType="4" durationTick="20000" intervalTick="1000" resetCondition="2" maxBuffCount="10" casterIndividualEffect="1" clearEffectFromPVPZone="1" skillGroupType="1" />
-		<MotionProperty abnormalImmuneBreak="5" />
+		<MotionProperty abnormalImmuneBreak="5">
+			<OverlapKeepEffectProperty>
+				<start>
+					<overlap count="1" effect="CH/Skill/Wizard/Eff_Wizard_Hurricane_Start_01.xml" />
+					<overlap count="4" effect="CH/Skill/Wizard/Eff_Wizard_Hurricane_Start_02.xml" />
+					<overlap count="7" effect="CH/Skill/Wizard/Eff_Wizard_Hurricane_Start_03.xml" />
+				</start>
+				<keep>
+					<overlap count="1" effect="CH/Skill/Wizard/Eff_Wizard_Hurricane_Keep_01.xml" />
+					<overlap count="4" effect="CH/Skill/Wizard/Eff_Wizard_Hurricane_Keep_02.xml" />
+					<overlap count="7" effect="CH/Skill/Wizard/Eff_Wizard_Hurricane_Keep_03.xml" />
+				</keep>
+				<end>
+					<overlap count="1" effect="CH/Skill/Wizard/Eff_Wizard_Hurricane_Stop_01.xml" />
+					<overlap count="4" effect="CH/Skill/Wizard/Eff_Wizard_Hurricane_Stop_02.xml" />
+					<overlap count="7" effect="CH/Skill/Wizard/Eff_Wizard_Hurricane_Stop_03.xml" />
+				</end>
+			</OverlapKeepEffectProperty>
+		</MotionProperty>
 		<DotDamageProperty type="2" useGrade="1" rate="1.81" element="3" />
 		<UIProperty icon="./Data/Resource/Image/skill/icon/10300271_buff.png" />
+		<SpreadProperty type="1" count="1">
+			<rangeProperty rangeType="cylinder" distance="500" height="300" applyTarget="1" />
+		</SpreadProperty>
 		<conditionSkill level="9" skillID="10300275" skillTarget="1" skillOwner="3">
 			<beginCondition probability="1">
 				<owner hasBuffID="10300271" hasBuffLevel="0" hasBuffOwner="1" hasBuffCount="10" hasBuffCountCompare="Equals" eventCondition="10" eventSkillID="" eventEffectID="" />
@@ -111,9 +300,30 @@
 	</level>
 	<level feature="JobChange_02">
 		<BasicProperty level="10" buffType="2" buffSubType="4" durationTick="20000" intervalTick="1000" resetCondition="2" maxBuffCount="10" casterIndividualEffect="1" clearEffectFromPVPZone="1" skillGroupType="1" />
-		<MotionProperty abnormalImmuneBreak="5" />
+		<MotionProperty abnormalImmuneBreak="5">
+			<OverlapKeepEffectProperty>
+				<start>
+					<overlap count="1" effect="CH/Skill/Wizard/Eff_Wizard_Hurricane_Start_01.xml" />
+					<overlap count="4" effect="CH/Skill/Wizard/Eff_Wizard_Hurricane_Start_02.xml" />
+					<overlap count="7" effect="CH/Skill/Wizard/Eff_Wizard_Hurricane_Start_03.xml" />
+				</start>
+				<keep>
+					<overlap count="1" effect="CH/Skill/Wizard/Eff_Wizard_Hurricane_Keep_01.xml" />
+					<overlap count="4" effect="CH/Skill/Wizard/Eff_Wizard_Hurricane_Keep_02.xml" />
+					<overlap count="7" effect="CH/Skill/Wizard/Eff_Wizard_Hurricane_Keep_03.xml" />
+				</keep>
+				<end>
+					<overlap count="1" effect="CH/Skill/Wizard/Eff_Wizard_Hurricane_Stop_01.xml" />
+					<overlap count="4" effect="CH/Skill/Wizard/Eff_Wizard_Hurricane_Stop_02.xml" />
+					<overlap count="7" effect="CH/Skill/Wizard/Eff_Wizard_Hurricane_Stop_03.xml" />
+				</end>
+			</OverlapKeepEffectProperty>
+		</MotionProperty>
 		<DotDamageProperty type="2" useGrade="1" rate="1.92" element="3" />
 		<UIProperty icon="./Data/Resource/Image/skill/icon/10300271_buff.png" />
+		<SpreadProperty type="1" count="1">
+			<rangeProperty rangeType="cylinder" distance="500" height="300" applyTarget="1" />
+		</SpreadProperty>
 		<conditionSkill level="10" skillID="10300275" skillTarget="1" skillOwner="3">
 			<beginCondition probability="1">
 				<owner hasBuffID="10300271" hasBuffLevel="0" hasBuffOwner="1" hasBuffCount="10" hasBuffCountCompare="Equals" eventCondition="10" eventSkillID="" eventEffectID="" />
@@ -123,9 +333,30 @@
 	</level>
 	<level feature="JobChange_02">
 		<BasicProperty level="11" buffType="2" buffSubType="4" durationTick="20000" intervalTick="1000" resetCondition="2" maxBuffCount="10" casterIndividualEffect="1" clearEffectFromPVPZone="1" skillGroupType="1" />
-		<MotionProperty abnormalImmuneBreak="5" />
+		<MotionProperty abnormalImmuneBreak="5">
+			<OverlapKeepEffectProperty>
+				<start>
+					<overlap count="1" effect="CH/Skill/Wizard/Eff_Wizard_Hurricane_Start_01.xml" />
+					<overlap count="4" effect="CH/Skill/Wizard/Eff_Wizard_Hurricane_Start_02.xml" />
+					<overlap count="7" effect="CH/Skill/Wizard/Eff_Wizard_Hurricane_Start_03.xml" />
+				</start>
+				<keep>
+					<overlap count="1" effect="CH/Skill/Wizard/Eff_Wizard_Hurricane_Keep_01.xml" />
+					<overlap count="4" effect="CH/Skill/Wizard/Eff_Wizard_Hurricane_Keep_02.xml" />
+					<overlap count="7" effect="CH/Skill/Wizard/Eff_Wizard_Hurricane_Keep_03.xml" />
+				</keep>
+				<end>
+					<overlap count="1" effect="CH/Skill/Wizard/Eff_Wizard_Hurricane_Stop_01.xml" />
+					<overlap count="4" effect="CH/Skill/Wizard/Eff_Wizard_Hurricane_Stop_02.xml" />
+					<overlap count="7" effect="CH/Skill/Wizard/Eff_Wizard_Hurricane_Stop_03.xml" />
+				</end>
+			</OverlapKeepEffectProperty>
+		</MotionProperty>
 		<DotDamageProperty type="2" useGrade="1" rate="2.03" element="3" />
 		<UIProperty icon="./Data/Resource/Image/skill/icon/10300271_buff.png" />
+		<SpreadProperty type="1" count="1">
+			<rangeProperty rangeType="cylinder" distance="500" height="300" applyTarget="1" />
+		</SpreadProperty>
 		<conditionSkill level="11" skillID="10300275" skillTarget="1" skillOwner="3">
 			<beginCondition probability="1">
 				<owner hasBuffID="10300271" hasBuffLevel="0" hasBuffOwner="1" hasBuffCount="10" hasBuffCountCompare="Equals" eventCondition="10" eventSkillID="" eventEffectID="" />
@@ -135,9 +366,30 @@
 	</level>
 	<level feature="JobChange_02">
 		<BasicProperty level="12" buffType="2" buffSubType="4" durationTick="20000" intervalTick="1000" resetCondition="2" maxBuffCount="10" casterIndividualEffect="1" clearEffectFromPVPZone="1" skillGroupType="1" />
-		<MotionProperty abnormalImmuneBreak="5" />
+		<MotionProperty abnormalImmuneBreak="5">
+			<OverlapKeepEffectProperty>
+				<start>
+					<overlap count="1" effect="CH/Skill/Wizard/Eff_Wizard_Hurricane_Start_01.xml" />
+					<overlap count="4" effect="CH/Skill/Wizard/Eff_Wizard_Hurricane_Start_02.xml" />
+					<overlap count="7" effect="CH/Skill/Wizard/Eff_Wizard_Hurricane_Start_03.xml" />
+				</start>
+				<keep>
+					<overlap count="1" effect="CH/Skill/Wizard/Eff_Wizard_Hurricane_Keep_01.xml" />
+					<overlap count="4" effect="CH/Skill/Wizard/Eff_Wizard_Hurricane_Keep_02.xml" />
+					<overlap count="7" effect="CH/Skill/Wizard/Eff_Wizard_Hurricane_Keep_03.xml" />
+				</keep>
+				<end>
+					<overlap count="1" effect="CH/Skill/Wizard/Eff_Wizard_Hurricane_Stop_01.xml" />
+					<overlap count="4" effect="CH/Skill/Wizard/Eff_Wizard_Hurricane_Stop_02.xml" />
+					<overlap count="7" effect="CH/Skill/Wizard/Eff_Wizard_Hurricane_Stop_03.xml" />
+				</end>
+			</OverlapKeepEffectProperty>
+		</MotionProperty>
 		<DotDamageProperty type="2" useGrade="1" rate="2.14" element="3" />
 		<UIProperty icon="./Data/Resource/Image/skill/icon/10300271_buff.png" />
+		<SpreadProperty type="1" count="1">
+			<rangeProperty rangeType="cylinder" distance="500" height="300" applyTarget="1" />
+		</SpreadProperty>
 		<conditionSkill level="12" skillID="10300275" skillTarget="1" skillOwner="3">
 			<beginCondition probability="1">
 				<owner hasBuffID="10300271" hasBuffLevel="0" hasBuffOwner="1" hasBuffCount="10" hasBuffCountCompare="Equals" eventCondition="10" eventSkillID="" eventEffectID="" />
