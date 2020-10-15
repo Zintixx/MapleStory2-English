@@ -6,11 +6,6 @@
 		<kinds subType="2" jump="10300171" unrideOnUse="1" />
 		<stateAttr moveType="3" clearCooldownFromPVPZone="1" />
 	</basic>
-	<basic feature="Old_JobChange_01">
-		<ui icon="./Data/Resource/Image/skill/icon/10300171.png" attackType="2" />
-		<kinds subType="2" jump="10300171" unrideOnUse="1" />
-		<stateAttr moveType="3" clearCooldownFromPVPZone="1" />
-	</basic>
 	<level value="1" feature="JobChange_01">
 		<beginCondition probability="1" cooldownTime="60" useCoolDownShowUI="1">
 			<stat hp="1" />
@@ -19,31 +14,6 @@
 		<upgrade level="60" />
 		<conditionSkill level="1" skillID="10300171" skillTarget="1">
 			<beginCondition probability="1" allowBattleRidingState="1" />
-		</conditionSkill>
-		<motion>
-			<motionProperty sequenceName="Wizard_ManaControl_A" />
-		</motion>
-	</level>
-	<level value="1" feature="Old_JobChange_01">
-		<beginCondition probability="1" cooldownTime="60" useCoolDownShowUI="1">
-			<stat hp="1" />
-			<weapon lh="0" rh="52" />
-		</beginCondition>
-		<upgrade level="60" />
-		<conditionSkill level="1" skillID="10300171" skillTarget="1">
-			<beginCondition probability="1" allowBattleRidingState="1" />
-		</conditionSkill>
-		<conditionSkill level="1" skillID="10300172" skillTarget="1">
-			<beginCondition probability="0.66" allowBattleRidingState="1" />
-		</conditionSkill>
-		<conditionSkill level="1" skillID="10300173" skillTarget="1">
-			<beginCondition probability="0.33" allowBattleRidingState="1" />
-		</conditionSkill>
-		<conditionSkill level="1" skillID="10300175" skillTarget="1">
-			<beginCondition probability="0.2" allowBattleRidingState="1" />
-		</conditionSkill>
-		<conditionSkill level="1" skillID="10300176" skillTarget="1">
-			<beginCondition probability="0.1" allowBattleRidingState="1" />
 		</conditionSkill>
 		<motion>
 			<motionProperty sequenceName="Wizard_ManaControl_A" />

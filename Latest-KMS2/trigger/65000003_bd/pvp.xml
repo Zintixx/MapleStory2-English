@@ -33,8 +33,6 @@
         <onEnter>
             <action name="타이머를설정한다" arg1="1" arg2="1" arg3="0" />
 			<action name="업적이벤트를발생시킨다" arg1="104" arg2="trigger" arg3="dailyquest_start"/>
-			<!--길드 경험치 지급 / boxID="타겟박스id", 0이면 맵전체, type="GuildGainExp의 id" 2가 매시브이벤트-->
-			<action name="GiveGuildExp" boxID="0" type="2"/>
 			<action name="PVP존을설정한다" arg1="104" arg2="3" arg3="600" arg4="90001002" arg5="3" arg6="1,2,101,102,103" />
         </onEnter>
 				<condition name="시간이경과했으면" arg1="1" >
