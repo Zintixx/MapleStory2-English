@@ -29,6 +29,29 @@
 			</attack>
 		</motion>
 	</level>
+	<level value="1">
+		<beginCondition probability="1" cooldownTime="0.7">
+			<stat hp="1" />
+			<weapon lh="0" rh="52" />
+		</beginCondition>
+		<autoTargeting autoTargetingMaxDegree="90" />
+		<push back="150" />
+		<motion>
+			<motionProperty sequenceName="Wizard_MagicClaw_A" selfInputCombo="selfinputcombo" sequenceSpeed="1.2" strTagEffects="e0=CH/Skill/Wizard/Eff_Wizard_MagicClaw_Cast_01.xml" />
+			<attack point="p0" pointGroupID="10300001" targetCount="8" sequence="1" attacktype="2" hitImmuneBreak="1" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="5" />
+				<rangeProperty rangeType="frustum" distance="800" height="150" width="300" endWidth="600" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="0.71" effectRemain="CH/Skill/Wizard/Eff_Wizard_MagicClaw_Remain_01.xml" attackMaterial="1" />
+			</attack>
+			<attack point="p1" pointGroupID="103000011" targetCount="8" sequence="1" attacktype="2" hitImmuneBreak="1" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="5" />
+				<rangeProperty rangeType="frustum" distance="800" height="150" width="300" endWidth="600" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="0.71" effectRemain="CH/Skill/Wizard/Eff_Wizard_MagicClaw_Remain_01.xml" attackMaterial="1" />
+			</attack>
+		</motion>
+	</level>
 	<level value="2" feature="CharacterBalance_01">
 		<beginCondition probability="1" cooldownTime="0.7">
 			<stat hp="1" />
@@ -50,269 +73,6 @@
 				<rangeProperty rangeType="frustum" distance="800" height="150" width="300" endWidth="600" applyTarget="1" />
 				<arrowProperty nonTarget="1" />
 				<damageProperty rate="0.83" effectRemain="CH/Skill/Wizard/Eff_Wizard_MagicClaw_Remain_01.xml" attackMaterial="1" />
-			</attack>
-		</motion>
-	</level>
-	<level value="3" feature="CharacterBalance_01">
-		<beginCondition probability="1" cooldownTime="0.7">
-			<stat hp="1" />
-			<weapon lh="0" rh="52" />
-		</beginCondition>
-		<autoTargeting autoTargetingMaxDegree="90" />
-		<push back="150" />
-		<upgrade level="12" />
-		<motion>
-			<motionProperty sequenceName="Wizard_MagicClaw_A" selfInputCombo="selfinputcombo" sequenceSpeed="1.2" strTagEffects="e0=CH/Skill/Wizard/Eff_Wizard_MagicClaw_Cast_01.xml" />
-			<attack point="p0" pointGroupID="10300001" targetCount="8" sequence="1" attacktype="2" hitImmuneBreak="1" unrideOnHit="1">
-				<pauseProperty pauseShakeDuration="0.1" pauseAmp="5" />
-				<rangeProperty rangeType="frustum" distance="800" height="150" width="300" endWidth="600" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty rate="0.89" effectRemain="CH/Skill/Wizard/Eff_Wizard_MagicClaw_Remain_01.xml" attackMaterial="1" />
-			</attack>
-			<attack point="p1" pointGroupID="103000011" targetCount="8" sequence="1" attacktype="2" hitImmuneBreak="1" unrideOnHit="1">
-				<pauseProperty pauseShakeDuration="0.1" pauseAmp="5" />
-				<rangeProperty rangeType="frustum" distance="800" height="150" width="300" endWidth="600" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty rate="0.89" effectRemain="CH/Skill/Wizard/Eff_Wizard_MagicClaw_Remain_01.xml" attackMaterial="1" />
-			</attack>
-		</motion>
-	</level>
-	<level value="4" feature="CharacterBalance_01">
-		<beginCondition probability="1" cooldownTime="0.7">
-			<stat hp="1" />
-			<weapon lh="0" rh="52" />
-		</beginCondition>
-		<autoTargeting autoTargetingMaxDegree="90" />
-		<push back="150" />
-		<upgrade level="14" />
-		<motion>
-			<motionProperty sequenceName="Wizard_MagicClaw_A" selfInputCombo="selfinputcombo" sequenceSpeed="1.2" strTagEffects="e0=CH/Skill/Wizard/Eff_Wizard_MagicClaw_Cast_01.xml" />
-			<attack point="p0" pointGroupID="10300001" targetCount="8" sequence="1" attacktype="2" hitImmuneBreak="1" unrideOnHit="1">
-				<pauseProperty pauseShakeDuration="0.1" pauseAmp="5" />
-				<rangeProperty rangeType="frustum" distance="800" height="150" width="300" endWidth="600" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty rate="0.95" effectRemain="CH/Skill/Wizard/Eff_Wizard_MagicClaw_Remain_01.xml" attackMaterial="1" />
-			</attack>
-			<attack point="p1" pointGroupID="103000011" targetCount="8" sequence="1" attacktype="2" hitImmuneBreak="1" unrideOnHit="1">
-				<pauseProperty pauseShakeDuration="0.1" pauseAmp="5" />
-				<rangeProperty rangeType="frustum" distance="800" height="150" width="300" endWidth="600" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty rate="0.95" effectRemain="CH/Skill/Wizard/Eff_Wizard_MagicClaw_Remain_01.xml" attackMaterial="1" />
-			</attack>
-		</motion>
-	</level>
-	<level value="5" feature="CharacterBalance_01">
-		<beginCondition probability="1" cooldownTime="0.7">
-			<stat hp="1" />
-			<weapon lh="0" rh="52" />
-		</beginCondition>
-		<autoTargeting autoTargetingMaxDegree="90" />
-		<push back="150" />
-		<upgrade level="16" />
-		<motion>
-			<motionProperty sequenceName="Wizard_MagicClaw_A" selfInputCombo="selfinputcombo" sequenceSpeed="1.2" strTagEffects="e0=CH/Skill/Wizard/Eff_Wizard_MagicClaw_Cast_01.xml" />
-			<attack point="p0" pointGroupID="10300001" targetCount="8" sequence="1" attacktype="2" hitImmuneBreak="1" unrideOnHit="1">
-				<pauseProperty pauseShakeDuration="0.1" pauseAmp="5" />
-				<rangeProperty rangeType="frustum" distance="800" height="150" width="300" endWidth="600" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty rate="1.01" effectRemain="CH/Skill/Wizard/Eff_Wizard_MagicClaw_Remain_01.xml" attackMaterial="1" />
-			</attack>
-			<attack point="p1" pointGroupID="103000011" targetCount="8" sequence="1" attacktype="2" hitImmuneBreak="1" unrideOnHit="1">
-				<pauseProperty pauseShakeDuration="0.1" pauseAmp="5" />
-				<rangeProperty rangeType="frustum" distance="800" height="150" width="300" endWidth="600" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty rate="1.01" effectRemain="CH/Skill/Wizard/Eff_Wizard_MagicClaw_Remain_01.xml" attackMaterial="1" />
-			</attack>
-		</motion>
-	</level>
-	<level value="6" feature="CharacterBalance_01">
-		<beginCondition probability="1" cooldownTime="0.7">
-			<stat hp="1" />
-			<weapon lh="0" rh="52" />
-		</beginCondition>
-		<autoTargeting autoTargetingMaxDegree="90" />
-		<push back="150" />
-		<upgrade level="18" />
-		<motion>
-			<motionProperty sequenceName="Wizard_MagicClaw_A" selfInputCombo="selfinputcombo" sequenceSpeed="1.2" strTagEffects="e0=CH/Skill/Wizard/Eff_Wizard_MagicClaw_Cast_01.xml" />
-			<attack point="p0" pointGroupID="10300001" targetCount="8" sequence="1" attacktype="2" hitImmuneBreak="1" unrideOnHit="1">
-				<pauseProperty pauseShakeDuration="0.1" pauseAmp="5" />
-				<rangeProperty rangeType="frustum" distance="800" height="150" width="300" endWidth="600" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty rate="1.07" effectRemain="CH/Skill/Wizard/Eff_Wizard_MagicClaw_Remain_01.xml" attackMaterial="1" />
-			</attack>
-			<attack point="p1" pointGroupID="103000011" targetCount="8" sequence="1" attacktype="2" hitImmuneBreak="1" unrideOnHit="1">
-				<pauseProperty pauseShakeDuration="0.1" pauseAmp="5" />
-				<rangeProperty rangeType="frustum" distance="800" height="150" width="300" endWidth="600" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty rate="1.07" effectRemain="CH/Skill/Wizard/Eff_Wizard_MagicClaw_Remain_01.xml" attackMaterial="1" />
-			</attack>
-		</motion>
-	</level>
-	<level value="7" feature="CharacterBalance_01">
-		<beginCondition probability="1" cooldownTime="0.7">
-			<stat hp="1" />
-			<weapon lh="0" rh="52" />
-		</beginCondition>
-		<autoTargeting autoTargetingMaxDegree="90" />
-		<push back="150" />
-		<upgrade level="20" />
-		<motion>
-			<motionProperty sequenceName="Wizard_MagicClaw_A" selfInputCombo="selfinputcombo" sequenceSpeed="1.2" strTagEffects="e0=CH/Skill/Wizard/Eff_Wizard_MagicClaw_Cast_01.xml" />
-			<attack point="p0" pointGroupID="10300001" targetCount="8" sequence="1" attacktype="2" hitImmuneBreak="1" unrideOnHit="1">
-				<pauseProperty pauseShakeDuration="0.1" pauseAmp="5" />
-				<rangeProperty rangeType="frustum" distance="800" height="150" width="300" endWidth="600" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty rate="1.13" effectRemain="CH/Skill/Wizard/Eff_Wizard_MagicClaw_Remain_01.xml" attackMaterial="1" />
-			</attack>
-			<attack point="p1" pointGroupID="103000011" targetCount="8" sequence="1" attacktype="2" hitImmuneBreak="1" unrideOnHit="1">
-				<pauseProperty pauseShakeDuration="0.1" pauseAmp="5" />
-				<rangeProperty rangeType="frustum" distance="800" height="150" width="300" endWidth="600" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty rate="1.13" effectRemain="CH/Skill/Wizard/Eff_Wizard_MagicClaw_Remain_01.xml" attackMaterial="1" />
-			</attack>
-		</motion>
-	</level>
-	<level value="8" feature="CharacterBalance_01">
-		<beginCondition probability="1" cooldownTime="0.7">
-			<stat hp="1" />
-			<weapon lh="0" rh="52" />
-		</beginCondition>
-		<autoTargeting autoTargetingMaxDegree="90" />
-		<push back="150" />
-		<upgrade level="22" />
-		<motion>
-			<motionProperty sequenceName="Wizard_MagicClaw_A" selfInputCombo="selfinputcombo" sequenceSpeed="1.2" strTagEffects="e0=CH/Skill/Wizard/Eff_Wizard_MagicClaw_Cast_01.xml" />
-			<attack point="p0" pointGroupID="10300001" targetCount="8" sequence="1" attacktype="2" hitImmuneBreak="1" unrideOnHit="1">
-				<pauseProperty pauseShakeDuration="0.1" pauseAmp="5" />
-				<rangeProperty rangeType="frustum" distance="800" height="150" width="300" endWidth="600" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty rate="1.19" effectRemain="CH/Skill/Wizard/Eff_Wizard_MagicClaw_Remain_01.xml" attackMaterial="1" />
-			</attack>
-			<attack point="p1" pointGroupID="103000011" targetCount="8" sequence="1" attacktype="2" hitImmuneBreak="1" unrideOnHit="1">
-				<pauseProperty pauseShakeDuration="0.1" pauseAmp="5" />
-				<rangeProperty rangeType="frustum" distance="800" height="150" width="300" endWidth="600" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty rate="1.19" effectRemain="CH/Skill/Wizard/Eff_Wizard_MagicClaw_Remain_01.xml" attackMaterial="1" />
-			</attack>
-		</motion>
-	</level>
-	<level value="9" feature="CharacterBalance_01">
-		<beginCondition probability="1" cooldownTime="0.7">
-			<stat hp="1" />
-			<weapon lh="0" rh="52" />
-		</beginCondition>
-		<autoTargeting autoTargetingMaxDegree="90" />
-		<push back="150" />
-		<upgrade level="24" />
-		<motion>
-			<motionProperty sequenceName="Wizard_MagicClaw_A" selfInputCombo="selfinputcombo" sequenceSpeed="1.2" strTagEffects="e0=CH/Skill/Wizard/Eff_Wizard_MagicClaw_Cast_01.xml" />
-			<attack point="p0" pointGroupID="10300001" targetCount="8" sequence="1" attacktype="2" hitImmuneBreak="1" unrideOnHit="1">
-				<pauseProperty pauseShakeDuration="0.1" pauseAmp="5" />
-				<rangeProperty rangeType="frustum" distance="800" height="150" width="300" endWidth="600" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty rate="1.25" effectRemain="CH/Skill/Wizard/Eff_Wizard_MagicClaw_Remain_01.xml" attackMaterial="1" />
-			</attack>
-			<attack point="p1" pointGroupID="103000011" targetCount="8" sequence="1" attacktype="2" hitImmuneBreak="1" unrideOnHit="1">
-				<pauseProperty pauseShakeDuration="0.1" pauseAmp="5" />
-				<rangeProperty rangeType="frustum" distance="800" height="150" width="300" endWidth="600" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty rate="1.25" effectRemain="CH/Skill/Wizard/Eff_Wizard_MagicClaw_Remain_01.xml" attackMaterial="1" />
-			</attack>
-		</motion>
-	</level>
-	<level value="10" feature="CharacterBalance_01">
-		<beginCondition probability="1" cooldownTime="0.7">
-			<stat hp="1" />
-			<weapon lh="0" rh="52" />
-		</beginCondition>
-		<autoTargeting autoTargetingMaxDegree="90" />
-		<push back="150" />
-		<upgrade level="26" />
-		<motion>
-			<motionProperty sequenceName="Wizard_MagicClaw_A" selfInputCombo="selfinputcombo" sequenceSpeed="1.2" strTagEffects="e0=CH/Skill/Wizard/Eff_Wizard_MagicClaw_Cast_01.xml" />
-			<attack point="p0" pointGroupID="10300001" targetCount="8" sequence="1" attacktype="2" hitImmuneBreak="1" unrideOnHit="1">
-				<pauseProperty pauseShakeDuration="0.1" pauseAmp="5" />
-				<rangeProperty rangeType="frustum" distance="800" height="150" width="300" endWidth="600" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty rate="1.31" effectRemain="CH/Skill/Wizard/Eff_Wizard_MagicClaw_Remain_01.xml" attackMaterial="1" />
-			</attack>
-			<attack point="p1" pointGroupID="103000011" targetCount="8" sequence="1" attacktype="2" hitImmuneBreak="1" unrideOnHit="1">
-				<pauseProperty pauseShakeDuration="0.1" pauseAmp="5" />
-				<rangeProperty rangeType="frustum" distance="800" height="150" width="300" endWidth="600" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty rate="1.31" effectRemain="CH/Skill/Wizard/Eff_Wizard_MagicClaw_Remain_01.xml" attackMaterial="1" />
-			</attack>
-		</motion>
-	</level>
-	<level value="11" feature="CharacterBalance_01">
-		<beginCondition probability="1" cooldownTime="0.7">
-			<stat hp="1" />
-			<weapon lh="0" rh="52" />
-		</beginCondition>
-		<autoTargeting autoTargetingMaxDegree="90" />
-		<push back="150" />
-		<upgrade level="28" />
-		<motion>
-			<motionProperty sequenceName="Wizard_MagicClaw_A" selfInputCombo="selfinputcombo" sequenceSpeed="1.2" strTagEffects="e0=CH/Skill/Wizard/Eff_Wizard_MagicClaw_Cast_01.xml" />
-			<attack point="p0" pointGroupID="10300001" targetCount="8" sequence="1" attacktype="2" hitImmuneBreak="1" unrideOnHit="1">
-				<pauseProperty pauseShakeDuration="0.1" pauseAmp="5" />
-				<rangeProperty rangeType="frustum" distance="800" height="150" width="300" endWidth="600" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty rate="1.37" effectRemain="CH/Skill/Wizard/Eff_Wizard_MagicClaw_Remain_01.xml" attackMaterial="1" />
-			</attack>
-			<attack point="p1" pointGroupID="103000011" targetCount="8" sequence="1" attacktype="2" hitImmuneBreak="1" unrideOnHit="1">
-				<pauseProperty pauseShakeDuration="0.1" pauseAmp="5" />
-				<rangeProperty rangeType="frustum" distance="800" height="150" width="300" endWidth="600" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty rate="1.37" effectRemain="CH/Skill/Wizard/Eff_Wizard_MagicClaw_Remain_01.xml" attackMaterial="1" />
-			</attack>
-		</motion>
-	</level>
-	<level value="12" feature="CharacterBalance_01">
-		<beginCondition probability="1" cooldownTime="0.7">
-			<stat hp="1" />
-			<weapon lh="0" rh="52" />
-		</beginCondition>
-		<autoTargeting autoTargetingMaxDegree="90" />
-		<push back="150" />
-		<upgrade level="30" />
-		<motion>
-			<motionProperty sequenceName="Wizard_MagicClaw_A" selfInputCombo="selfinputcombo" sequenceSpeed="1.2" strTagEffects="e0=CH/Skill/Wizard/Eff_Wizard_MagicClaw_Cast_01.xml" />
-			<attack point="p0" pointGroupID="10300001" targetCount="8" sequence="1" attacktype="2" hitImmuneBreak="1" unrideOnHit="1">
-				<pauseProperty pauseShakeDuration="0.1" pauseAmp="5" />
-				<rangeProperty rangeType="frustum" distance="800" height="150" width="300" endWidth="600" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty rate="1.43" effectRemain="CH/Skill/Wizard/Eff_Wizard_MagicClaw_Remain_01.xml" attackMaterial="1" />
-			</attack>
-			<attack point="p1" pointGroupID="103000011" targetCount="8" sequence="1" attacktype="2" hitImmuneBreak="1" unrideOnHit="1">
-				<pauseProperty pauseShakeDuration="0.1" pauseAmp="5" />
-				<rangeProperty rangeType="frustum" distance="800" height="150" width="300" endWidth="600" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty rate="1.43" effectRemain="CH/Skill/Wizard/Eff_Wizard_MagicClaw_Remain_01.xml" attackMaterial="1" />
-			</attack>
-		</motion>
-	</level>
-	<level value="1">
-		<beginCondition probability="1" cooldownTime="0.7">
-			<stat hp="1" />
-			<weapon lh="0" rh="52" />
-		</beginCondition>
-		<autoTargeting autoTargetingMaxDegree="90" />
-		<push back="150" />
-		<motion>
-			<motionProperty sequenceName="Wizard_MagicClaw_A" selfInputCombo="selfinputcombo" sequenceSpeed="1.2" strTagEffects="e0=CH/Skill/Wizard/Eff_Wizard_MagicClaw_Cast_01.xml" />
-			<attack point="p0" pointGroupID="10300001" targetCount="8" sequence="1" attacktype="2" hitImmuneBreak="1" unrideOnHit="1">
-				<pauseProperty pauseShakeDuration="0.1" pauseAmp="5" />
-				<rangeProperty rangeType="frustum" distance="800" height="150" width="300" endWidth="600" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty rate="0.71" effectRemain="CH/Skill/Wizard/Eff_Wizard_MagicClaw_Remain_01.xml" attackMaterial="1" />
-			</attack>
-			<attack point="p1" pointGroupID="103000011" targetCount="8" sequence="1" attacktype="2" hitImmuneBreak="1" unrideOnHit="1">
-				<pauseProperty pauseShakeDuration="0.1" pauseAmp="5" />
-				<rangeProperty rangeType="frustum" distance="800" height="150" width="300" endWidth="600" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty rate="0.71" effectRemain="CH/Skill/Wizard/Eff_Wizard_MagicClaw_Remain_01.xml" attackMaterial="1" />
 			</attack>
 		</motion>
 	</level>
@@ -340,6 +100,30 @@
 			</attack>
 		</motion>
 	</level>
+	<level value="3" feature="CharacterBalance_01">
+		<beginCondition probability="1" cooldownTime="0.7">
+			<stat hp="1" />
+			<weapon lh="0" rh="52" />
+		</beginCondition>
+		<autoTargeting autoTargetingMaxDegree="90" />
+		<push back="150" />
+		<upgrade level="12" />
+		<motion>
+			<motionProperty sequenceName="Wizard_MagicClaw_A" selfInputCombo="selfinputcombo" sequenceSpeed="1.2" strTagEffects="e0=CH/Skill/Wizard/Eff_Wizard_MagicClaw_Cast_01.xml" />
+			<attack point="p0" pointGroupID="10300001" targetCount="8" sequence="1" attacktype="2" hitImmuneBreak="1" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="5" />
+				<rangeProperty rangeType="frustum" distance="800" height="150" width="300" endWidth="600" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="0.89" effectRemain="CH/Skill/Wizard/Eff_Wizard_MagicClaw_Remain_01.xml" attackMaterial="1" />
+			</attack>
+			<attack point="p1" pointGroupID="103000011" targetCount="8" sequence="1" attacktype="2" hitImmuneBreak="1" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="5" />
+				<rangeProperty rangeType="frustum" distance="800" height="150" width="300" endWidth="600" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="0.89" effectRemain="CH/Skill/Wizard/Eff_Wizard_MagicClaw_Remain_01.xml" attackMaterial="1" />
+			</attack>
+		</motion>
+	</level>
 	<level value="3">
 		<beginCondition probability="1" cooldownTime="0.7">
 			<stat hp="1" />
@@ -361,6 +145,30 @@
 				<rangeProperty rangeType="frustum" distance="800" height="150" width="300" endWidth="600" applyTarget="1" />
 				<arrowProperty nonTarget="1" />
 				<damageProperty rate="0.83" effectRemain="CH/Skill/Wizard/Eff_Wizard_MagicClaw_Remain_01.xml" attackMaterial="1" />
+			</attack>
+		</motion>
+	</level>
+	<level value="4" feature="CharacterBalance_01">
+		<beginCondition probability="1" cooldownTime="0.7">
+			<stat hp="1" />
+			<weapon lh="0" rh="52" />
+		</beginCondition>
+		<autoTargeting autoTargetingMaxDegree="90" />
+		<push back="150" />
+		<upgrade level="14" />
+		<motion>
+			<motionProperty sequenceName="Wizard_MagicClaw_A" selfInputCombo="selfinputcombo" sequenceSpeed="1.2" strTagEffects="e0=CH/Skill/Wizard/Eff_Wizard_MagicClaw_Cast_01.xml" />
+			<attack point="p0" pointGroupID="10300001" targetCount="8" sequence="1" attacktype="2" hitImmuneBreak="1" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="5" />
+				<rangeProperty rangeType="frustum" distance="800" height="150" width="300" endWidth="600" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="0.95" effectRemain="CH/Skill/Wizard/Eff_Wizard_MagicClaw_Remain_01.xml" attackMaterial="1" />
+			</attack>
+			<attack point="p1" pointGroupID="103000011" targetCount="8" sequence="1" attacktype="2" hitImmuneBreak="1" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="5" />
+				<rangeProperty rangeType="frustum" distance="800" height="150" width="300" endWidth="600" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="0.95" effectRemain="CH/Skill/Wizard/Eff_Wizard_MagicClaw_Remain_01.xml" attackMaterial="1" />
 			</attack>
 		</motion>
 	</level>
@@ -388,6 +196,30 @@
 			</attack>
 		</motion>
 	</level>
+	<level value="5" feature="CharacterBalance_01">
+		<beginCondition probability="1" cooldownTime="0.7">
+			<stat hp="1" />
+			<weapon lh="0" rh="52" />
+		</beginCondition>
+		<autoTargeting autoTargetingMaxDegree="90" />
+		<push back="150" />
+		<upgrade level="16" />
+		<motion>
+			<motionProperty sequenceName="Wizard_MagicClaw_A" selfInputCombo="selfinputcombo" sequenceSpeed="1.2" strTagEffects="e0=CH/Skill/Wizard/Eff_Wizard_MagicClaw_Cast_01.xml" />
+			<attack point="p0" pointGroupID="10300001" targetCount="8" sequence="1" attacktype="2" hitImmuneBreak="1" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="5" />
+				<rangeProperty rangeType="frustum" distance="800" height="150" width="300" endWidth="600" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="1.01" effectRemain="CH/Skill/Wizard/Eff_Wizard_MagicClaw_Remain_01.xml" attackMaterial="1" />
+			</attack>
+			<attack point="p1" pointGroupID="103000011" targetCount="8" sequence="1" attacktype="2" hitImmuneBreak="1" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="5" />
+				<rangeProperty rangeType="frustum" distance="800" height="150" width="300" endWidth="600" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="1.01" effectRemain="CH/Skill/Wizard/Eff_Wizard_MagicClaw_Remain_01.xml" attackMaterial="1" />
+			</attack>
+		</motion>
+	</level>
 	<level value="5">
 		<beginCondition probability="1" cooldownTime="0.7">
 			<stat hp="1" />
@@ -409,6 +241,30 @@
 				<rangeProperty rangeType="frustum" distance="800" height="150" width="300" endWidth="600" applyTarget="1" />
 				<arrowProperty nonTarget="1" />
 				<damageProperty rate="0.95" effectRemain="CH/Skill/Wizard/Eff_Wizard_MagicClaw_Remain_01.xml" attackMaterial="1" />
+			</attack>
+		</motion>
+	</level>
+	<level value="6" feature="CharacterBalance_01">
+		<beginCondition probability="1" cooldownTime="0.7">
+			<stat hp="1" />
+			<weapon lh="0" rh="52" />
+		</beginCondition>
+		<autoTargeting autoTargetingMaxDegree="90" />
+		<push back="150" />
+		<upgrade level="18" />
+		<motion>
+			<motionProperty sequenceName="Wizard_MagicClaw_A" selfInputCombo="selfinputcombo" sequenceSpeed="1.2" strTagEffects="e0=CH/Skill/Wizard/Eff_Wizard_MagicClaw_Cast_01.xml" />
+			<attack point="p0" pointGroupID="10300001" targetCount="8" sequence="1" attacktype="2" hitImmuneBreak="1" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="5" />
+				<rangeProperty rangeType="frustum" distance="800" height="150" width="300" endWidth="600" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="1.07" effectRemain="CH/Skill/Wizard/Eff_Wizard_MagicClaw_Remain_01.xml" attackMaterial="1" />
+			</attack>
+			<attack point="p1" pointGroupID="103000011" targetCount="8" sequence="1" attacktype="2" hitImmuneBreak="1" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="5" />
+				<rangeProperty rangeType="frustum" distance="800" height="150" width="300" endWidth="600" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="1.07" effectRemain="CH/Skill/Wizard/Eff_Wizard_MagicClaw_Remain_01.xml" attackMaterial="1" />
 			</attack>
 		</motion>
 	</level>
@@ -436,6 +292,30 @@
 			</attack>
 		</motion>
 	</level>
+	<level value="7" feature="CharacterBalance_01">
+		<beginCondition probability="1" cooldownTime="0.7">
+			<stat hp="1" />
+			<weapon lh="0" rh="52" />
+		</beginCondition>
+		<autoTargeting autoTargetingMaxDegree="90" />
+		<push back="150" />
+		<upgrade level="20" />
+		<motion>
+			<motionProperty sequenceName="Wizard_MagicClaw_A" selfInputCombo="selfinputcombo" sequenceSpeed="1.2" strTagEffects="e0=CH/Skill/Wizard/Eff_Wizard_MagicClaw_Cast_01.xml" />
+			<attack point="p0" pointGroupID="10300001" targetCount="8" sequence="1" attacktype="2" hitImmuneBreak="1" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="5" />
+				<rangeProperty rangeType="frustum" distance="800" height="150" width="300" endWidth="600" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="1.13" effectRemain="CH/Skill/Wizard/Eff_Wizard_MagicClaw_Remain_01.xml" attackMaterial="1" />
+			</attack>
+			<attack point="p1" pointGroupID="103000011" targetCount="8" sequence="1" attacktype="2" hitImmuneBreak="1" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="5" />
+				<rangeProperty rangeType="frustum" distance="800" height="150" width="300" endWidth="600" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="1.13" effectRemain="CH/Skill/Wizard/Eff_Wizard_MagicClaw_Remain_01.xml" attackMaterial="1" />
+			</attack>
+		</motion>
+	</level>
 	<level value="7">
 		<beginCondition probability="1" cooldownTime="0.7">
 			<stat hp="1" />
@@ -457,6 +337,30 @@
 				<rangeProperty rangeType="frustum" distance="800" height="150" width="300" endWidth="600" applyTarget="1" />
 				<arrowProperty nonTarget="1" />
 				<damageProperty rate="1.07" effectRemain="CH/Skill/Wizard/Eff_Wizard_MagicClaw_Remain_01.xml" attackMaterial="1" />
+			</attack>
+		</motion>
+	</level>
+	<level value="8" feature="CharacterBalance_01">
+		<beginCondition probability="1" cooldownTime="0.7">
+			<stat hp="1" />
+			<weapon lh="0" rh="52" />
+		</beginCondition>
+		<autoTargeting autoTargetingMaxDegree="90" />
+		<push back="150" />
+		<upgrade level="22" />
+		<motion>
+			<motionProperty sequenceName="Wizard_MagicClaw_A" selfInputCombo="selfinputcombo" sequenceSpeed="1.2" strTagEffects="e0=CH/Skill/Wizard/Eff_Wizard_MagicClaw_Cast_01.xml" />
+			<attack point="p0" pointGroupID="10300001" targetCount="8" sequence="1" attacktype="2" hitImmuneBreak="1" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="5" />
+				<rangeProperty rangeType="frustum" distance="800" height="150" width="300" endWidth="600" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="1.19" effectRemain="CH/Skill/Wizard/Eff_Wizard_MagicClaw_Remain_01.xml" attackMaterial="1" />
+			</attack>
+			<attack point="p1" pointGroupID="103000011" targetCount="8" sequence="1" attacktype="2" hitImmuneBreak="1" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="5" />
+				<rangeProperty rangeType="frustum" distance="800" height="150" width="300" endWidth="600" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="1.19" effectRemain="CH/Skill/Wizard/Eff_Wizard_MagicClaw_Remain_01.xml" attackMaterial="1" />
 			</attack>
 		</motion>
 	</level>
@@ -484,6 +388,30 @@
 			</attack>
 		</motion>
 	</level>
+	<level value="9" feature="CharacterBalance_01">
+		<beginCondition probability="1" cooldownTime="0.7">
+			<stat hp="1" />
+			<weapon lh="0" rh="52" />
+		</beginCondition>
+		<autoTargeting autoTargetingMaxDegree="90" />
+		<push back="150" />
+		<upgrade level="24" />
+		<motion>
+			<motionProperty sequenceName="Wizard_MagicClaw_A" selfInputCombo="selfinputcombo" sequenceSpeed="1.2" strTagEffects="e0=CH/Skill/Wizard/Eff_Wizard_MagicClaw_Cast_01.xml" />
+			<attack point="p0" pointGroupID="10300001" targetCount="8" sequence="1" attacktype="2" hitImmuneBreak="1" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="5" />
+				<rangeProperty rangeType="frustum" distance="800" height="150" width="300" endWidth="600" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="1.25" effectRemain="CH/Skill/Wizard/Eff_Wizard_MagicClaw_Remain_01.xml" attackMaterial="1" />
+			</attack>
+			<attack point="p1" pointGroupID="103000011" targetCount="8" sequence="1" attacktype="2" hitImmuneBreak="1" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="5" />
+				<rangeProperty rangeType="frustum" distance="800" height="150" width="300" endWidth="600" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="1.25" effectRemain="CH/Skill/Wizard/Eff_Wizard_MagicClaw_Remain_01.xml" attackMaterial="1" />
+			</attack>
+		</motion>
+	</level>
 	<level value="9">
 		<beginCondition probability="1" cooldownTime="0.7">
 			<stat hp="1" />
@@ -505,6 +433,30 @@
 				<rangeProperty rangeType="frustum" distance="800" height="150" width="300" endWidth="600" applyTarget="1" />
 				<arrowProperty nonTarget="1" />
 				<damageProperty rate="1.19" effectRemain="CH/Skill/Wizard/Eff_Wizard_MagicClaw_Remain_01.xml" attackMaterial="1" />
+			</attack>
+		</motion>
+	</level>
+	<level value="10" feature="CharacterBalance_01">
+		<beginCondition probability="1" cooldownTime="0.7">
+			<stat hp="1" />
+			<weapon lh="0" rh="52" />
+		</beginCondition>
+		<autoTargeting autoTargetingMaxDegree="90" />
+		<push back="150" />
+		<upgrade level="26" />
+		<motion>
+			<motionProperty sequenceName="Wizard_MagicClaw_A" selfInputCombo="selfinputcombo" sequenceSpeed="1.2" strTagEffects="e0=CH/Skill/Wizard/Eff_Wizard_MagicClaw_Cast_01.xml" />
+			<attack point="p0" pointGroupID="10300001" targetCount="8" sequence="1" attacktype="2" hitImmuneBreak="1" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="5" />
+				<rangeProperty rangeType="frustum" distance="800" height="150" width="300" endWidth="600" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="1.31" effectRemain="CH/Skill/Wizard/Eff_Wizard_MagicClaw_Remain_01.xml" attackMaterial="1" />
+			</attack>
+			<attack point="p1" pointGroupID="103000011" targetCount="8" sequence="1" attacktype="2" hitImmuneBreak="1" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="5" />
+				<rangeProperty rangeType="frustum" distance="800" height="150" width="300" endWidth="600" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="1.31" effectRemain="CH/Skill/Wizard/Eff_Wizard_MagicClaw_Remain_01.xml" attackMaterial="1" />
 			</attack>
 		</motion>
 	</level>
@@ -532,6 +484,30 @@
 			</attack>
 		</motion>
 	</level>
+	<level value="11" feature="CharacterBalance_01">
+		<beginCondition probability="1" cooldownTime="0.7">
+			<stat hp="1" />
+			<weapon lh="0" rh="52" />
+		</beginCondition>
+		<autoTargeting autoTargetingMaxDegree="90" />
+		<push back="150" />
+		<upgrade level="28" />
+		<motion>
+			<motionProperty sequenceName="Wizard_MagicClaw_A" selfInputCombo="selfinputcombo" sequenceSpeed="1.2" strTagEffects="e0=CH/Skill/Wizard/Eff_Wizard_MagicClaw_Cast_01.xml" />
+			<attack point="p0" pointGroupID="10300001" targetCount="8" sequence="1" attacktype="2" hitImmuneBreak="1" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="5" />
+				<rangeProperty rangeType="frustum" distance="800" height="150" width="300" endWidth="600" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="1.37" effectRemain="CH/Skill/Wizard/Eff_Wizard_MagicClaw_Remain_01.xml" attackMaterial="1" />
+			</attack>
+			<attack point="p1" pointGroupID="103000011" targetCount="8" sequence="1" attacktype="2" hitImmuneBreak="1" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="5" />
+				<rangeProperty rangeType="frustum" distance="800" height="150" width="300" endWidth="600" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="1.37" effectRemain="CH/Skill/Wizard/Eff_Wizard_MagicClaw_Remain_01.xml" attackMaterial="1" />
+			</attack>
+		</motion>
+	</level>
 	<level value="11">
 		<beginCondition probability="1" cooldownTime="0.7">
 			<stat hp="1" />
@@ -553,6 +529,30 @@
 				<rangeProperty rangeType="frustum" distance="800" height="150" width="300" endWidth="600" applyTarget="1" />
 				<arrowProperty nonTarget="1" />
 				<damageProperty rate="1.31" effectRemain="CH/Skill/Wizard/Eff_Wizard_MagicClaw_Remain_01.xml" attackMaterial="1" />
+			</attack>
+		</motion>
+	</level>
+	<level value="12" feature="CharacterBalance_01">
+		<beginCondition probability="1" cooldownTime="0.7">
+			<stat hp="1" />
+			<weapon lh="0" rh="52" />
+		</beginCondition>
+		<autoTargeting autoTargetingMaxDegree="90" />
+		<push back="150" />
+		<upgrade level="30" />
+		<motion>
+			<motionProperty sequenceName="Wizard_MagicClaw_A" selfInputCombo="selfinputcombo" sequenceSpeed="1.2" strTagEffects="e0=CH/Skill/Wizard/Eff_Wizard_MagicClaw_Cast_01.xml" />
+			<attack point="p0" pointGroupID="10300001" targetCount="8" sequence="1" attacktype="2" hitImmuneBreak="1" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="5" />
+				<rangeProperty rangeType="frustum" distance="800" height="150" width="300" endWidth="600" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="1.43" effectRemain="CH/Skill/Wizard/Eff_Wizard_MagicClaw_Remain_01.xml" attackMaterial="1" />
+			</attack>
+			<attack point="p1" pointGroupID="103000011" targetCount="8" sequence="1" attacktype="2" hitImmuneBreak="1" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="5" />
+				<rangeProperty rangeType="frustum" distance="800" height="150" width="300" endWidth="600" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="1.43" effectRemain="CH/Skill/Wizard/Eff_Wizard_MagicClaw_Remain_01.xml" attackMaterial="1" />
 			</attack>
 		</motion>
 	</level>

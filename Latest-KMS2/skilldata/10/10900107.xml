@@ -16,7 +16,7 @@
 		<consume>
 			<stat sp="40" />
 		</consume>
-		<combo comboOriginSkill="10900101" inputSkill="" outputSkill="" />
+		<combo comboOriginSkill="10900101" />
 		<motion>
 			<motionProperty sequenceName="RuneBlader_GroundDivide_A" strTagEffects="e0=CH/Skill/RuneBlader/Eff_RuneBlader_GroundDivide_Thunder_Cast_01.xml" movedistance="750" ignoreCollisionGroups="20" />
 			<attack point="p0" pointGroupID="10900107" targetCount="5" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
@@ -37,6 +37,37 @@
 			</attack>
 		</motion>
 	</level>
+	<level value="1">
+		<beginCondition probability="1" cooldownTime="7" useCoolDownShowUI="1">
+			<stat hp="1" />
+			<weapon lh="0" rh="54" />
+		</beginCondition>
+		<changeSkill originSkillID="10900101" />
+		<push back="150" />
+		<consume>
+			<stat sp="40" />
+		</consume>
+		<combo comboOriginSkill="10900101" />
+		<motion>
+			<motionProperty sequenceName="RuneBlader_GroundDivide_A" strTagEffects="e0=CH/Skill/RuneBlader/Eff_RuneBlader_GroundDivide_Thunder_Cast_01.xml" movedistance="750" ignoreCollisionGroups="20" />
+			<attack point="p0" pointGroupID="10900107" targetCount="5" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+				<rangeProperty rangeType="box" distance="375" height="150" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="0.83" effectRemain="CH/Skill/RuneBlader/Eff_RuneBlader_GroundDivide_HitRemain_01.xml" effectHit="CH/Common/Eff_Common_Electric_Hit.xml" attackMaterial="4" />
+			</attack>
+			<attack point="p1" pointGroupID="10900107" targetCount="5" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+				<rangeProperty rangeType="box" distance="375" height="150" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="0.83" effectRemain="CH/Skill/RuneBlader/Eff_RuneBlader_GroundDivide_HitRemain_01.xml" effectHit="CH/Common/Eff_Common_Electric_Hit.xml" attackMaterial="4" />
+			</attack>
+			<attack point="p2" targetCount="1" cubeMagicPathID="109001011" attacktype="1">
+				<rangeProperty includeCaster="1" rangeType="cylinder" distance="150" height="150" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty count="0" attackMaterial="1000" />
+				<conditionSkill splash="1" level="1" skillID="10900108" delay="500" useDirection="1" />
+			</attack>
+		</motion>
+	</level>
 	<level value="2" feature="CharacterBalance_01">
 		<beginCondition probability="1" cooldownTime="7" useCoolDownShowUI="1">
 			<stat hp="1" />
@@ -47,7 +78,7 @@
 		<consume>
 			<stat sp="40" />
 		</consume>
-		<combo comboOriginSkill="10900101" inputSkill="" outputSkill="" />
+		<combo comboOriginSkill="10900101" />
 		<motion>
 			<motionProperty sequenceName="RuneBlader_GroundDivide_A" strTagEffects="e0=CH/Skill/RuneBlader/Eff_RuneBlader_GroundDivide_Thunder_Cast_01.xml" movedistance="750" ignoreCollisionGroups="20" />
 			<attack point="p0" pointGroupID="10900107" targetCount="5" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
@@ -68,6 +99,37 @@
 			</attack>
 		</motion>
 	</level>
+	<level value="2">
+		<beginCondition probability="1" cooldownTime="7" useCoolDownShowUI="1">
+			<stat hp="1" />
+			<weapon lh="0" rh="54" />
+		</beginCondition>
+		<changeSkill originSkillID="10900101" originSkillLevel="2" />
+		<push back="150" />
+		<consume>
+			<stat sp="40" />
+		</consume>
+		<combo comboOriginSkill="10900101" />
+		<motion>
+			<motionProperty sequenceName="RuneBlader_GroundDivide_A" strTagEffects="e0=CH/Skill/RuneBlader/Eff_RuneBlader_GroundDivide_Thunder_Cast_01.xml" movedistance="750" ignoreCollisionGroups="20" />
+			<attack point="p0" pointGroupID="10900107" targetCount="5" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+				<rangeProperty rangeType="box" distance="750" height="150" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="0.89" effectRemain="CH/Skill/RuneBlader/Eff_RuneBlader_GroundDivide_HitRemain_01.xml" effectHit="CH/Common/Eff_Common_Electric_Hit.xml" attackMaterial="4" />
+			</attack>
+			<attack point="p1" pointGroupID="10900107" targetCount="5" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+				<rangeProperty rangeType="box" distance="375" height="150" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="0.89" effectRemain="CH/Skill/RuneBlader/Eff_RuneBlader_GroundDivide_HitRemain_01.xml" effectHit="CH/Common/Eff_Common_Electric_Hit.xml" attackMaterial="4" />
+			</attack>
+			<attack point="p2" targetCount="1" cubeMagicPathID="109001011" attacktype="1">
+				<rangeProperty includeCaster="1" rangeType="cylinder" distance="150" height="150" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty count="0" attackMaterial="1000" />
+				<conditionSkill splash="1" level="2" skillID="10900108" delay="500" useDirection="1" />
+			</attack>
+		</motion>
+	</level>
 	<level value="3" feature="CharacterBalance_01">
 		<beginCondition probability="1" cooldownTime="7" useCoolDownShowUI="1">
 			<stat hp="1" />
@@ -78,7 +140,7 @@
 		<consume>
 			<stat sp="40" />
 		</consume>
-		<combo comboOriginSkill="10900101" inputSkill="" outputSkill="" />
+		<combo comboOriginSkill="10900101" />
 		<motion>
 			<motionProperty sequenceName="RuneBlader_GroundDivide_A" strTagEffects="e0=CH/Skill/RuneBlader/Eff_RuneBlader_GroundDivide_Thunder_Cast_01.xml" movedistance="750" ignoreCollisionGroups="20" />
 			<attack point="p0" pointGroupID="10900107" targetCount="5" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
@@ -99,6 +161,37 @@
 			</attack>
 		</motion>
 	</level>
+	<level value="3">
+		<beginCondition probability="1" cooldownTime="7" useCoolDownShowUI="1">
+			<stat hp="1" />
+			<weapon lh="0" rh="54" />
+		</beginCondition>
+		<changeSkill originSkillID="10900101" originSkillLevel="3" />
+		<push back="150" />
+		<consume>
+			<stat sp="40" />
+		</consume>
+		<combo comboOriginSkill="10900101" />
+		<motion>
+			<motionProperty sequenceName="RuneBlader_GroundDivide_A" strTagEffects="e0=CH/Skill/RuneBlader/Eff_RuneBlader_GroundDivide_Thunder_Cast_01.xml" movedistance="750" ignoreCollisionGroups="20" />
+			<attack point="p0" pointGroupID="10900107" targetCount="5" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+				<rangeProperty rangeType="box" distance="750" height="150" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="0.95" effectRemain="CH/Skill/RuneBlader/Eff_RuneBlader_GroundDivide_HitRemain_01.xml" effectHit="CH/Common/Eff_Common_Electric_Hit.xml" attackMaterial="4" />
+			</attack>
+			<attack point="p1" pointGroupID="10900107" targetCount="5" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+				<rangeProperty rangeType="box" distance="375" height="150" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="0.95" effectRemain="CH/Skill/RuneBlader/Eff_RuneBlader_GroundDivide_HitRemain_01.xml" effectHit="CH/Common/Eff_Common_Electric_Hit.xml" attackMaterial="4" />
+			</attack>
+			<attack point="p2" targetCount="1" cubeMagicPathID="109001011" attacktype="1">
+				<rangeProperty includeCaster="1" rangeType="cylinder" distance="150" height="150" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty count="0" attackMaterial="1000" />
+				<conditionSkill splash="1" level="3" skillID="10900108" delay="500" useDirection="1" />
+			</attack>
+		</motion>
+	</level>
 	<level value="4" feature="CharacterBalance_01">
 		<beginCondition probability="1" cooldownTime="7" useCoolDownShowUI="1">
 			<stat hp="1" />
@@ -109,7 +202,7 @@
 		<consume>
 			<stat sp="40" />
 		</consume>
-		<combo comboOriginSkill="10900101" inputSkill="" outputSkill="" />
+		<combo comboOriginSkill="10900101" />
 		<motion>
 			<motionProperty sequenceName="RuneBlader_GroundDivide_A" strTagEffects="e0=CH/Skill/RuneBlader/Eff_RuneBlader_GroundDivide_Thunder_Cast_01.xml" movedistance="750" ignoreCollisionGroups="20" />
 			<attack point="p0" pointGroupID="10900107" targetCount="5" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
@@ -130,6 +223,37 @@
 			</attack>
 		</motion>
 	</level>
+	<level value="4">
+		<beginCondition probability="1" cooldownTime="7" useCoolDownShowUI="1">
+			<stat hp="1" />
+			<weapon lh="0" rh="54" />
+		</beginCondition>
+		<changeSkill originSkillID="10900101" originSkillLevel="4" />
+		<push back="150" />
+		<consume>
+			<stat sp="40" />
+		</consume>
+		<combo comboOriginSkill="10900101" />
+		<motion>
+			<motionProperty sequenceName="RuneBlader_GroundDivide_A" strTagEffects="e0=CH/Skill/RuneBlader/Eff_RuneBlader_GroundDivide_Thunder_Cast_01.xml" movedistance="750" ignoreCollisionGroups="20" />
+			<attack point="p0" pointGroupID="10900107" targetCount="5" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+				<rangeProperty rangeType="box" distance="750" height="150" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="1.01" effectRemain="CH/Skill/RuneBlader/Eff_RuneBlader_GroundDivide_HitRemain_01.xml" effectHit="CH/Common/Eff_Common_Electric_Hit.xml" attackMaterial="4" />
+			</attack>
+			<attack point="p1" pointGroupID="10900107" targetCount="5" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+				<rangeProperty rangeType="box" distance="375" height="150" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="1.01" effectRemain="CH/Skill/RuneBlader/Eff_RuneBlader_GroundDivide_HitRemain_01.xml" effectHit="CH/Common/Eff_Common_Electric_Hit.xml" attackMaterial="4" />
+			</attack>
+			<attack point="p2" targetCount="1" cubeMagicPathID="109001011" attacktype="1">
+				<rangeProperty includeCaster="1" rangeType="cylinder" distance="150" height="150" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty count="0" attackMaterial="1000" />
+				<conditionSkill splash="1" level="4" skillID="10900108" delay="500" useDirection="1" />
+			</attack>
+		</motion>
+	</level>
 	<level value="5" feature="CharacterBalance_01">
 		<beginCondition probability="1" cooldownTime="7" useCoolDownShowUI="1">
 			<stat hp="1" />
@@ -140,7 +264,7 @@
 		<consume>
 			<stat sp="40" />
 		</consume>
-		<combo comboOriginSkill="10900101" inputSkill="" outputSkill="" />
+		<combo comboOriginSkill="10900101" />
 		<motion>
 			<motionProperty sequenceName="RuneBlader_GroundDivide_A" strTagEffects="e0=CH/Skill/RuneBlader/Eff_RuneBlader_GroundDivide_Thunder_Cast_01.xml" movedistance="750" ignoreCollisionGroups="20" />
 			<attack point="p0" pointGroupID="10900107" targetCount="5" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
@@ -161,6 +285,37 @@
 			</attack>
 		</motion>
 	</level>
+	<level value="5">
+		<beginCondition probability="1" cooldownTime="7" useCoolDownShowUI="1">
+			<stat hp="1" />
+			<weapon lh="0" rh="54" />
+		</beginCondition>
+		<changeSkill originSkillID="10900101" originSkillLevel="5" />
+		<push back="150" />
+		<consume>
+			<stat sp="40" />
+		</consume>
+		<combo comboOriginSkill="10900101" />
+		<motion>
+			<motionProperty sequenceName="RuneBlader_GroundDivide_A" strTagEffects="e0=CH/Skill/RuneBlader/Eff_RuneBlader_GroundDivide_Thunder_Cast_01.xml" movedistance="750" ignoreCollisionGroups="20" />
+			<attack point="p0" pointGroupID="10900107" targetCount="5" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+				<rangeProperty rangeType="box" distance="750" height="150" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="1.07" effectRemain="CH/Skill/RuneBlader/Eff_RuneBlader_GroundDivide_HitRemain_01.xml" effectHit="CH/Common/Eff_Common_Electric_Hit.xml" attackMaterial="4" />
+			</attack>
+			<attack point="p1" pointGroupID="10900107" targetCount="5" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+				<rangeProperty rangeType="box" distance="375" height="150" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="1.07" effectRemain="CH/Skill/RuneBlader/Eff_RuneBlader_GroundDivide_HitRemain_01.xml" effectHit="CH/Common/Eff_Common_Electric_Hit.xml" attackMaterial="4" />
+			</attack>
+			<attack point="p2" targetCount="1" cubeMagicPathID="109001011" attacktype="1">
+				<rangeProperty includeCaster="1" rangeType="cylinder" distance="150" height="150" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty count="0" attackMaterial="1000" />
+				<conditionSkill splash="1" level="5" skillID="10900108" delay="500" useDirection="1" />
+			</attack>
+		</motion>
+	</level>
 	<level value="6" feature="CharacterBalance_01">
 		<beginCondition probability="1" cooldownTime="7" useCoolDownShowUI="1">
 			<stat hp="1" />
@@ -171,7 +326,7 @@
 		<consume>
 			<stat sp="40" />
 		</consume>
-		<combo comboOriginSkill="10900101" inputSkill="" outputSkill="" />
+		<combo comboOriginSkill="10900101" />
 		<motion>
 			<motionProperty sequenceName="RuneBlader_GroundDivide_A" strTagEffects="e0=CH/Skill/RuneBlader/Eff_RuneBlader_GroundDivide_Thunder_Cast_01.xml" movedistance="750" ignoreCollisionGroups="20" />
 			<attack point="p0" pointGroupID="10900107" targetCount="5" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
@@ -192,6 +347,37 @@
 			</attack>
 		</motion>
 	</level>
+	<level value="6">
+		<beginCondition probability="1" cooldownTime="7" useCoolDownShowUI="1">
+			<stat hp="1" />
+			<weapon lh="0" rh="54" />
+		</beginCondition>
+		<changeSkill originSkillID="10900101" originSkillLevel="6" />
+		<push back="150" />
+		<consume>
+			<stat sp="40" />
+		</consume>
+		<combo comboOriginSkill="10900101" />
+		<motion>
+			<motionProperty sequenceName="RuneBlader_GroundDivide_A" strTagEffects="e0=CH/Skill/RuneBlader/Eff_RuneBlader_GroundDivide_Thunder_Cast_01.xml" movedistance="750" ignoreCollisionGroups="20" />
+			<attack point="p0" pointGroupID="10900107" targetCount="5" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+				<rangeProperty rangeType="box" distance="750" height="150" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="1.13" effectRemain="CH/Skill/RuneBlader/Eff_RuneBlader_GroundDivide_HitRemain_01.xml" effectHit="CH/Common/Eff_Common_Electric_Hit.xml" attackMaterial="4" />
+			</attack>
+			<attack point="p1" pointGroupID="10900107" targetCount="5" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+				<rangeProperty rangeType="box" distance="375" height="150" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="1.13" effectRemain="CH/Skill/RuneBlader/Eff_RuneBlader_GroundDivide_HitRemain_01.xml" effectHit="CH/Common/Eff_Common_Electric_Hit.xml" attackMaterial="4" />
+			</attack>
+			<attack point="p2" targetCount="1" cubeMagicPathID="109001011" attacktype="1">
+				<rangeProperty includeCaster="1" rangeType="cylinder" distance="150" height="150" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty count="0" attackMaterial="1000" />
+				<conditionSkill splash="1" level="6" skillID="10900108" delay="500" useDirection="1" />
+			</attack>
+		</motion>
+	</level>
 	<level value="7" feature="CharacterBalance_01">
 		<beginCondition probability="1" cooldownTime="7" useCoolDownShowUI="1">
 			<stat hp="1" />
@@ -202,7 +388,7 @@
 		<consume>
 			<stat sp="40" />
 		</consume>
-		<combo comboOriginSkill="10900101" inputSkill="" outputSkill="" />
+		<combo comboOriginSkill="10900101" />
 		<motion>
 			<motionProperty sequenceName="RuneBlader_GroundDivide_A" strTagEffects="e0=CH/Skill/RuneBlader/Eff_RuneBlader_GroundDivide_Thunder_Cast_01.xml" movedistance="750" ignoreCollisionGroups="20" />
 			<attack point="p0" pointGroupID="10900107" targetCount="5" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
@@ -223,6 +409,37 @@
 			</attack>
 		</motion>
 	</level>
+	<level value="7">
+		<beginCondition probability="1" cooldownTime="7" useCoolDownShowUI="1">
+			<stat hp="1" />
+			<weapon lh="0" rh="54" />
+		</beginCondition>
+		<changeSkill originSkillID="10900101" originSkillLevel="7" />
+		<push back="150" />
+		<consume>
+			<stat sp="40" />
+		</consume>
+		<combo comboOriginSkill="10900101" />
+		<motion>
+			<motionProperty sequenceName="RuneBlader_GroundDivide_A" strTagEffects="e0=CH/Skill/RuneBlader/Eff_RuneBlader_GroundDivide_Thunder_Cast_01.xml" movedistance="750" ignoreCollisionGroups="20" />
+			<attack point="p0" pointGroupID="10900107" targetCount="5" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+				<rangeProperty rangeType="box" distance="750" height="150" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="1.19" effectRemain="CH/Skill/RuneBlader/Eff_RuneBlader_GroundDivide_HitRemain_01.xml" effectHit="CH/Common/Eff_Common_Electric_Hit.xml" attackMaterial="4" />
+			</attack>
+			<attack point="p1" pointGroupID="10900107" targetCount="5" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+				<rangeProperty rangeType="box" distance="375" height="150" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="1.19" effectRemain="CH/Skill/RuneBlader/Eff_RuneBlader_GroundDivide_HitRemain_01.xml" effectHit="CH/Common/Eff_Common_Electric_Hit.xml" attackMaterial="4" />
+			</attack>
+			<attack point="p2" targetCount="1" cubeMagicPathID="109001011" attacktype="1">
+				<rangeProperty includeCaster="1" rangeType="cylinder" distance="150" height="150" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty count="0" attackMaterial="1000" />
+				<conditionSkill splash="1" level="7" skillID="10900108" delay="500" useDirection="1" />
+			</attack>
+		</motion>
+	</level>
 	<level value="8" feature="CharacterBalance_01">
 		<beginCondition probability="1" cooldownTime="7" useCoolDownShowUI="1">
 			<stat hp="1" />
@@ -233,7 +450,7 @@
 		<consume>
 			<stat sp="40" />
 		</consume>
-		<combo comboOriginSkill="10900101" inputSkill="" outputSkill="" />
+		<combo comboOriginSkill="10900101" />
 		<motion>
 			<motionProperty sequenceName="RuneBlader_GroundDivide_A" strTagEffects="e0=CH/Skill/RuneBlader/Eff_RuneBlader_GroundDivide_Thunder_Cast_01.xml" movedistance="750" ignoreCollisionGroups="20" />
 			<attack point="p0" pointGroupID="10900107" targetCount="5" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
@@ -254,6 +471,37 @@
 			</attack>
 		</motion>
 	</level>
+	<level value="8">
+		<beginCondition probability="1" cooldownTime="7" useCoolDownShowUI="1">
+			<stat hp="1" />
+			<weapon lh="0" rh="54" />
+		</beginCondition>
+		<changeSkill originSkillID="10900101" originSkillLevel="8" />
+		<push back="150" />
+		<consume>
+			<stat sp="40" />
+		</consume>
+		<combo comboOriginSkill="10900101" />
+		<motion>
+			<motionProperty sequenceName="RuneBlader_GroundDivide_A" strTagEffects="e0=CH/Skill/RuneBlader/Eff_RuneBlader_GroundDivide_Thunder_Cast_01.xml" movedistance="750" ignoreCollisionGroups="20" />
+			<attack point="p0" pointGroupID="10900107" targetCount="5" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+				<rangeProperty rangeType="box" distance="750" height="150" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="1.25" effectRemain="CH/Skill/RuneBlader/Eff_RuneBlader_GroundDivide_HitRemain_01.xml" effectHit="CH/Common/Eff_Common_Electric_Hit.xml" attackMaterial="4" />
+			</attack>
+			<attack point="p1" pointGroupID="10900107" targetCount="5" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+				<rangeProperty rangeType="box" distance="375" height="150" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="1.25" effectRemain="CH/Skill/RuneBlader/Eff_RuneBlader_GroundDivide_HitRemain_01.xml" effectHit="CH/Common/Eff_Common_Electric_Hit.xml" attackMaterial="4" />
+			</attack>
+			<attack point="p2" targetCount="1" cubeMagicPathID="109001011" attacktype="1">
+				<rangeProperty includeCaster="1" rangeType="cylinder" distance="150" height="150" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty count="0" attackMaterial="1000" />
+				<conditionSkill splash="1" level="8" skillID="10900108" delay="500" useDirection="1" />
+			</attack>
+		</motion>
+	</level>
 	<level value="9" feature="CharacterBalance_01">
 		<beginCondition probability="1" cooldownTime="7" useCoolDownShowUI="1">
 			<stat hp="1" />
@@ -264,7 +512,7 @@
 		<consume>
 			<stat sp="40" />
 		</consume>
-		<combo comboOriginSkill="10900101" inputSkill="" outputSkill="" />
+		<combo comboOriginSkill="10900101" />
 		<motion>
 			<motionProperty sequenceName="RuneBlader_GroundDivide_A" strTagEffects="e0=CH/Skill/RuneBlader/Eff_RuneBlader_GroundDivide_Thunder_Cast_01.xml" movedistance="750" ignoreCollisionGroups="20" />
 			<attack point="p0" pointGroupID="10900107" targetCount="5" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
@@ -285,6 +533,37 @@
 			</attack>
 		</motion>
 	</level>
+	<level value="9">
+		<beginCondition probability="1" cooldownTime="7" useCoolDownShowUI="1">
+			<stat hp="1" />
+			<weapon lh="0" rh="54" />
+		</beginCondition>
+		<changeSkill originSkillID="10900101" originSkillLevel="9" />
+		<push back="150" />
+		<consume>
+			<stat sp="40" />
+		</consume>
+		<combo comboOriginSkill="10900101" />
+		<motion>
+			<motionProperty sequenceName="RuneBlader_GroundDivide_A" strTagEffects="e0=CH/Skill/RuneBlader/Eff_RuneBlader_GroundDivide_Thunder_Cast_01.xml" movedistance="750" ignoreCollisionGroups="20" />
+			<attack point="p0" pointGroupID="10900107" targetCount="5" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+				<rangeProperty rangeType="box" distance="750" height="150" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="1.31" effectRemain="CH/Skill/RuneBlader/Eff_RuneBlader_GroundDivide_HitRemain_01.xml" effectHit="CH/Common/Eff_Common_Electric_Hit.xml" attackMaterial="4" />
+			</attack>
+			<attack point="p1" pointGroupID="10900107" targetCount="5" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+				<rangeProperty rangeType="box" distance="375" height="150" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="1.31" effectRemain="CH/Skill/RuneBlader/Eff_RuneBlader_GroundDivide_HitRemain_01.xml" effectHit="CH/Common/Eff_Common_Electric_Hit.xml" attackMaterial="4" />
+			</attack>
+			<attack point="p2" targetCount="1" cubeMagicPathID="109001011" attacktype="1">
+				<rangeProperty includeCaster="1" rangeType="cylinder" distance="150" height="150" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty count="0" attackMaterial="1000" />
+				<conditionSkill splash="1" level="9" skillID="10900108" delay="500" useDirection="1" />
+			</attack>
+		</motion>
+	</level>
 	<level value="10" feature="CharacterBalance_01">
 		<beginCondition probability="1" cooldownTime="7" useCoolDownShowUI="1">
 			<stat hp="1" />
@@ -295,7 +574,7 @@
 		<consume>
 			<stat sp="40" />
 		</consume>
-		<combo comboOriginSkill="10900101" inputSkill="" outputSkill="" />
+		<combo comboOriginSkill="10900101" />
 		<motion>
 			<motionProperty sequenceName="RuneBlader_GroundDivide_A" strTagEffects="e0=CH/Skill/RuneBlader/Eff_RuneBlader_GroundDivide_Thunder_Cast_01.xml" movedistance="750" ignoreCollisionGroups="20" />
 			<attack point="p0" pointGroupID="10900107" targetCount="5" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
@@ -316,6 +595,37 @@
 			</attack>
 		</motion>
 	</level>
+	<level value="10">
+		<beginCondition probability="1" cooldownTime="7" useCoolDownShowUI="1">
+			<stat hp="1" />
+			<weapon lh="0" rh="54" />
+		</beginCondition>
+		<changeSkill originSkillID="10900101" originSkillLevel="10" />
+		<push back="150" />
+		<consume>
+			<stat sp="40" />
+		</consume>
+		<combo comboOriginSkill="10900101" />
+		<motion>
+			<motionProperty sequenceName="RuneBlader_GroundDivide_A" strTagEffects="e0=CH/Skill/RuneBlader/Eff_RuneBlader_GroundDivide_Thunder_Cast_01.xml" movedistance="750" ignoreCollisionGroups="20" />
+			<attack point="p0" pointGroupID="10900107" targetCount="5" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+				<rangeProperty rangeType="box" distance="750" height="150" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="1.37" effectRemain="CH/Skill/RuneBlader/Eff_RuneBlader_GroundDivide_HitRemain_01.xml" effectHit="CH/Common/Eff_Common_Electric_Hit.xml" attackMaterial="4" />
+			</attack>
+			<attack point="p1" pointGroupID="10900107" targetCount="5" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+				<rangeProperty rangeType="box" distance="375" height="150" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="1.37" effectRemain="CH/Skill/RuneBlader/Eff_RuneBlader_GroundDivide_HitRemain_01.xml" effectHit="CH/Common/Eff_Common_Electric_Hit.xml" attackMaterial="4" />
+			</attack>
+			<attack point="p2" targetCount="1" cubeMagicPathID="109001011" attacktype="1">
+				<rangeProperty includeCaster="1" rangeType="cylinder" distance="150" height="150" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty count="0" attackMaterial="1000" />
+				<conditionSkill splash="1" level="10" skillID="10900108" delay="500" useDirection="1" />
+			</attack>
+		</motion>
+	</level>
 	<level value="11" feature="CharacterBalance_01">
 		<beginCondition probability="1" cooldownTime="7" useCoolDownShowUI="1">
 			<stat hp="1" />
@@ -326,7 +636,7 @@
 		<consume>
 			<stat sp="40" />
 		</consume>
-		<combo comboOriginSkill="10900101" inputSkill="" outputSkill="" />
+		<combo comboOriginSkill="10900101" />
 		<motion>
 			<motionProperty sequenceName="RuneBlader_GroundDivide_A" strTagEffects="e0=CH/Skill/RuneBlader/Eff_RuneBlader_GroundDivide_Thunder_Cast_01.xml" movedistance="750" ignoreCollisionGroups="20" />
 			<attack point="p0" pointGroupID="10900107" targetCount="5" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
@@ -347,6 +657,37 @@
 			</attack>
 		</motion>
 	</level>
+	<level value="11">
+		<beginCondition probability="1" cooldownTime="7" useCoolDownShowUI="1">
+			<stat hp="1" />
+			<weapon lh="0" rh="54" />
+		</beginCondition>
+		<changeSkill originSkillID="10900101" originSkillLevel="11" />
+		<push back="150" />
+		<consume>
+			<stat sp="40" />
+		</consume>
+		<combo comboOriginSkill="10900101" />
+		<motion>
+			<motionProperty sequenceName="RuneBlader_GroundDivide_A" strTagEffects="e0=CH/Skill/RuneBlader/Eff_RuneBlader_GroundDivide_Thunder_Cast_01.xml" movedistance="750" ignoreCollisionGroups="20" />
+			<attack point="p0" pointGroupID="10900107" targetCount="5" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+				<rangeProperty rangeType="box" distance="750" height="150" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="1.43" effectRemain="CH/Skill/RuneBlader/Eff_RuneBlader_GroundDivide_HitRemain_01.xml" effectHit="CH/Common/Eff_Common_Electric_Hit.xml" attackMaterial="4" />
+			</attack>
+			<attack point="p1" pointGroupID="10900107" targetCount="5" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+				<rangeProperty rangeType="box" distance="375" height="150" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="1.43" effectRemain="CH/Skill/RuneBlader/Eff_RuneBlader_GroundDivide_HitRemain_01.xml" effectHit="CH/Common/Eff_Common_Electric_Hit.xml" attackMaterial="4" />
+			</attack>
+			<attack point="p2" targetCount="1" cubeMagicPathID="109001011" attacktype="1">
+				<rangeProperty includeCaster="1" rangeType="cylinder" distance="150" height="150" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty count="0" attackMaterial="1000" />
+				<conditionSkill splash="1" level="11" skillID="10900108" delay="500" useDirection="1" />
+			</attack>
+		</motion>
+	</level>
 	<level value="12" feature="CharacterBalance_01">
 		<beginCondition probability="1" cooldownTime="7" useCoolDownShowUI="1">
 			<stat hp="1" />
@@ -357,7 +698,7 @@
 		<consume>
 			<stat sp="40" />
 		</consume>
-		<combo comboOriginSkill="10900101" inputSkill="" outputSkill="" />
+		<combo comboOriginSkill="10900101" />
 		<motion>
 			<motionProperty sequenceName="RuneBlader_GroundDivide_A" strTagEffects="e0=CH/Skill/RuneBlader/Eff_RuneBlader_GroundDivide_Thunder_Cast_01.xml" movedistance="750" ignoreCollisionGroups="20" />
 			<attack point="p0" pointGroupID="10900107" targetCount="5" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
@@ -378,347 +719,6 @@
 			</attack>
 		</motion>
 	</level>
-	<level value="1">
-		<beginCondition probability="1" cooldownTime="7" useCoolDownShowUI="1">
-			<stat hp="1" />
-			<weapon lh="0" rh="54" />
-		</beginCondition>
-		<changeSkill originSkillID="10900101" />
-		<push back="150" />
-		<consume>
-			<stat sp="40" />
-		</consume>
-		<combo comboOriginSkill="10900101" inputSkill="" outputSkill="" />
-		<motion>
-			<motionProperty sequenceName="RuneBlader_GroundDivide_A" strTagEffects="e0=CH/Skill/RuneBlader/Eff_RuneBlader_GroundDivide_Thunder_Cast_01.xml" movedistance="750" ignoreCollisionGroups="20" />
-			<attack point="p0" pointGroupID="10900107" targetCount="5" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
-				<rangeProperty rangeType="box" distance="375" height="150" width="300" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty rate="0.83" effectRemain="CH/Skill/RuneBlader/Eff_RuneBlader_GroundDivide_HitRemain_01.xml" effectHit="CH/Common/Eff_Common_Electric_Hit.xml" attackMaterial="4" />
-			</attack>
-			<attack point="p1" pointGroupID="10900107" targetCount="5" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
-				<rangeProperty rangeType="box" distance="375" height="150" width="300" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty rate="0.83" effectRemain="CH/Skill/RuneBlader/Eff_RuneBlader_GroundDivide_HitRemain_01.xml" effectHit="CH/Common/Eff_Common_Electric_Hit.xml" attackMaterial="4" />
-			</attack>
-			<attack point="p2" targetCount="1" cubeMagicPathID="109001011" attacktype="1">
-				<rangeProperty includeCaster="1" rangeType="cylinder" distance="150" height="150" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty count="0" attackMaterial="1000" />
-				<conditionSkill splash="1" level="1" skillID="10900108" delay="500" useDirection="1" />
-			</attack>
-		</motion>
-	</level>
-	<level value="2">
-		<beginCondition probability="1" cooldownTime="7" useCoolDownShowUI="1">
-			<stat hp="1" />
-			<weapon lh="0" rh="54" />
-		</beginCondition>
-		<changeSkill originSkillID="10900101" originSkillLevel="2" />
-		<push back="150" />
-		<consume>
-			<stat sp="40" />
-		</consume>
-		<combo comboOriginSkill="10900101" inputSkill="" outputSkill="" />
-		<motion>
-			<motionProperty sequenceName="RuneBlader_GroundDivide_A" strTagEffects="e0=CH/Skill/RuneBlader/Eff_RuneBlader_GroundDivide_Thunder_Cast_01.xml" movedistance="750" ignoreCollisionGroups="20" />
-			<attack point="p0" pointGroupID="10900107" targetCount="5" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
-				<rangeProperty rangeType="box" distance="750" height="150" width="300" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty rate="0.89" effectRemain="CH/Skill/RuneBlader/Eff_RuneBlader_GroundDivide_HitRemain_01.xml" effectHit="CH/Common/Eff_Common_Electric_Hit.xml" attackMaterial="4" />
-			</attack>
-			<attack point="p1" pointGroupID="10900107" targetCount="5" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
-				<rangeProperty rangeType="box" distance="375" height="150" width="300" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty rate="0.89" effectRemain="CH/Skill/RuneBlader/Eff_RuneBlader_GroundDivide_HitRemain_01.xml" effectHit="CH/Common/Eff_Common_Electric_Hit.xml" attackMaterial="4" />
-			</attack>
-			<attack point="p2" targetCount="1" cubeMagicPathID="109001011" attacktype="1">
-				<rangeProperty includeCaster="1" rangeType="cylinder" distance="150" height="150" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty count="0" attackMaterial="1000" />
-				<conditionSkill splash="1" level="2" skillID="10900108" delay="500" useDirection="1" />
-			</attack>
-		</motion>
-	</level>
-	<level value="3">
-		<beginCondition probability="1" cooldownTime="7" useCoolDownShowUI="1">
-			<stat hp="1" />
-			<weapon lh="0" rh="54" />
-		</beginCondition>
-		<changeSkill originSkillID="10900101" originSkillLevel="3" />
-		<push back="150" />
-		<consume>
-			<stat sp="40" />
-		</consume>
-		<combo comboOriginSkill="10900101" inputSkill="" outputSkill="" />
-		<motion>
-			<motionProperty sequenceName="RuneBlader_GroundDivide_A" strTagEffects="e0=CH/Skill/RuneBlader/Eff_RuneBlader_GroundDivide_Thunder_Cast_01.xml" movedistance="750" ignoreCollisionGroups="20" />
-			<attack point="p0" pointGroupID="10900107" targetCount="5" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
-				<rangeProperty rangeType="box" distance="750" height="150" width="300" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty rate="0.95" effectRemain="CH/Skill/RuneBlader/Eff_RuneBlader_GroundDivide_HitRemain_01.xml" effectHit="CH/Common/Eff_Common_Electric_Hit.xml" attackMaterial="4" />
-			</attack>
-			<attack point="p1" pointGroupID="10900107" targetCount="5" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
-				<rangeProperty rangeType="box" distance="375" height="150" width="300" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty rate="0.95" effectRemain="CH/Skill/RuneBlader/Eff_RuneBlader_GroundDivide_HitRemain_01.xml" effectHit="CH/Common/Eff_Common_Electric_Hit.xml" attackMaterial="4" />
-			</attack>
-			<attack point="p2" targetCount="1" cubeMagicPathID="109001011" attacktype="1">
-				<rangeProperty includeCaster="1" rangeType="cylinder" distance="150" height="150" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty count="0" attackMaterial="1000" />
-				<conditionSkill splash="1" level="3" skillID="10900108" delay="500" useDirection="1" />
-			</attack>
-		</motion>
-	</level>
-	<level value="4">
-		<beginCondition probability="1" cooldownTime="7" useCoolDownShowUI="1">
-			<stat hp="1" />
-			<weapon lh="0" rh="54" />
-		</beginCondition>
-		<changeSkill originSkillID="10900101" originSkillLevel="4" />
-		<push back="150" />
-		<consume>
-			<stat sp="40" />
-		</consume>
-		<combo comboOriginSkill="10900101" inputSkill="" outputSkill="" />
-		<motion>
-			<motionProperty sequenceName="RuneBlader_GroundDivide_A" strTagEffects="e0=CH/Skill/RuneBlader/Eff_RuneBlader_GroundDivide_Thunder_Cast_01.xml" movedistance="750" ignoreCollisionGroups="20" />
-			<attack point="p0" pointGroupID="10900107" targetCount="5" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
-				<rangeProperty rangeType="box" distance="750" height="150" width="300" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty rate="1.01" effectRemain="CH/Skill/RuneBlader/Eff_RuneBlader_GroundDivide_HitRemain_01.xml" effectHit="CH/Common/Eff_Common_Electric_Hit.xml" attackMaterial="4" />
-			</attack>
-			<attack point="p1" pointGroupID="10900107" targetCount="5" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
-				<rangeProperty rangeType="box" distance="375" height="150" width="300" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty rate="1.01" effectRemain="CH/Skill/RuneBlader/Eff_RuneBlader_GroundDivide_HitRemain_01.xml" effectHit="CH/Common/Eff_Common_Electric_Hit.xml" attackMaterial="4" />
-			</attack>
-			<attack point="p2" targetCount="1" cubeMagicPathID="109001011" attacktype="1">
-				<rangeProperty includeCaster="1" rangeType="cylinder" distance="150" height="150" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty count="0" attackMaterial="1000" />
-				<conditionSkill splash="1" level="4" skillID="10900108" delay="500" useDirection="1" />
-			</attack>
-		</motion>
-	</level>
-	<level value="5">
-		<beginCondition probability="1" cooldownTime="7" useCoolDownShowUI="1">
-			<stat hp="1" />
-			<weapon lh="0" rh="54" />
-		</beginCondition>
-		<changeSkill originSkillID="10900101" originSkillLevel="5" />
-		<push back="150" />
-		<consume>
-			<stat sp="40" />
-		</consume>
-		<combo comboOriginSkill="10900101" inputSkill="" outputSkill="" />
-		<motion>
-			<motionProperty sequenceName="RuneBlader_GroundDivide_A" strTagEffects="e0=CH/Skill/RuneBlader/Eff_RuneBlader_GroundDivide_Thunder_Cast_01.xml" movedistance="750" ignoreCollisionGroups="20" />
-			<attack point="p0" pointGroupID="10900107" targetCount="5" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
-				<rangeProperty rangeType="box" distance="750" height="150" width="300" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty rate="1.07" effectRemain="CH/Skill/RuneBlader/Eff_RuneBlader_GroundDivide_HitRemain_01.xml" effectHit="CH/Common/Eff_Common_Electric_Hit.xml" attackMaterial="4" />
-			</attack>
-			<attack point="p1" pointGroupID="10900107" targetCount="5" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
-				<rangeProperty rangeType="box" distance="375" height="150" width="300" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty rate="1.07" effectRemain="CH/Skill/RuneBlader/Eff_RuneBlader_GroundDivide_HitRemain_01.xml" effectHit="CH/Common/Eff_Common_Electric_Hit.xml" attackMaterial="4" />
-			</attack>
-			<attack point="p2" targetCount="1" cubeMagicPathID="109001011" attacktype="1">
-				<rangeProperty includeCaster="1" rangeType="cylinder" distance="150" height="150" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty count="0" attackMaterial="1000" />
-				<conditionSkill splash="1" level="5" skillID="10900108" delay="500" useDirection="1" />
-			</attack>
-		</motion>
-	</level>
-	<level value="6">
-		<beginCondition probability="1" cooldownTime="7" useCoolDownShowUI="1">
-			<stat hp="1" />
-			<weapon lh="0" rh="54" />
-		</beginCondition>
-		<changeSkill originSkillID="10900101" originSkillLevel="6" />
-		<push back="150" />
-		<consume>
-			<stat sp="40" />
-		</consume>
-		<combo comboOriginSkill="10900101" inputSkill="" outputSkill="" />
-		<motion>
-			<motionProperty sequenceName="RuneBlader_GroundDivide_A" strTagEffects="e0=CH/Skill/RuneBlader/Eff_RuneBlader_GroundDivide_Thunder_Cast_01.xml" movedistance="750" ignoreCollisionGroups="20" />
-			<attack point="p0" pointGroupID="10900107" targetCount="5" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
-				<rangeProperty rangeType="box" distance="750" height="150" width="300" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty rate="1.13" effectRemain="CH/Skill/RuneBlader/Eff_RuneBlader_GroundDivide_HitRemain_01.xml" effectHit="CH/Common/Eff_Common_Electric_Hit.xml" attackMaterial="4" />
-			</attack>
-			<attack point="p1" pointGroupID="10900107" targetCount="5" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
-				<rangeProperty rangeType="box" distance="375" height="150" width="300" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty rate="1.13" effectRemain="CH/Skill/RuneBlader/Eff_RuneBlader_GroundDivide_HitRemain_01.xml" effectHit="CH/Common/Eff_Common_Electric_Hit.xml" attackMaterial="4" />
-			</attack>
-			<attack point="p2" targetCount="1" cubeMagicPathID="109001011" attacktype="1">
-				<rangeProperty includeCaster="1" rangeType="cylinder" distance="150" height="150" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty count="0" attackMaterial="1000" />
-				<conditionSkill splash="1" level="6" skillID="10900108" delay="500" useDirection="1" />
-			</attack>
-		</motion>
-	</level>
-	<level value="7">
-		<beginCondition probability="1" cooldownTime="7" useCoolDownShowUI="1">
-			<stat hp="1" />
-			<weapon lh="0" rh="54" />
-		</beginCondition>
-		<changeSkill originSkillID="10900101" originSkillLevel="7" />
-		<push back="150" />
-		<consume>
-			<stat sp="40" />
-		</consume>
-		<combo comboOriginSkill="10900101" inputSkill="" outputSkill="" />
-		<motion>
-			<motionProperty sequenceName="RuneBlader_GroundDivide_A" strTagEffects="e0=CH/Skill/RuneBlader/Eff_RuneBlader_GroundDivide_Thunder_Cast_01.xml" movedistance="750" ignoreCollisionGroups="20" />
-			<attack point="p0" pointGroupID="10900107" targetCount="5" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
-				<rangeProperty rangeType="box" distance="750" height="150" width="300" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty rate="1.19" effectRemain="CH/Skill/RuneBlader/Eff_RuneBlader_GroundDivide_HitRemain_01.xml" effectHit="CH/Common/Eff_Common_Electric_Hit.xml" attackMaterial="4" />
-			</attack>
-			<attack point="p1" pointGroupID="10900107" targetCount="5" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
-				<rangeProperty rangeType="box" distance="375" height="150" width="300" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty rate="1.19" effectRemain="CH/Skill/RuneBlader/Eff_RuneBlader_GroundDivide_HitRemain_01.xml" effectHit="CH/Common/Eff_Common_Electric_Hit.xml" attackMaterial="4" />
-			</attack>
-			<attack point="p2" targetCount="1" cubeMagicPathID="109001011" attacktype="1">
-				<rangeProperty includeCaster="1" rangeType="cylinder" distance="150" height="150" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty count="0" attackMaterial="1000" />
-				<conditionSkill splash="1" level="7" skillID="10900108" delay="500" useDirection="1" />
-			</attack>
-		</motion>
-	</level>
-	<level value="8">
-		<beginCondition probability="1" cooldownTime="7" useCoolDownShowUI="1">
-			<stat hp="1" />
-			<weapon lh="0" rh="54" />
-		</beginCondition>
-		<changeSkill originSkillID="10900101" originSkillLevel="8" />
-		<push back="150" />
-		<consume>
-			<stat sp="40" />
-		</consume>
-		<combo comboOriginSkill="10900101" inputSkill="" outputSkill="" />
-		<motion>
-			<motionProperty sequenceName="RuneBlader_GroundDivide_A" strTagEffects="e0=CH/Skill/RuneBlader/Eff_RuneBlader_GroundDivide_Thunder_Cast_01.xml" movedistance="750" ignoreCollisionGroups="20" />
-			<attack point="p0" pointGroupID="10900107" targetCount="5" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
-				<rangeProperty rangeType="box" distance="750" height="150" width="300" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty rate="1.25" effectRemain="CH/Skill/RuneBlader/Eff_RuneBlader_GroundDivide_HitRemain_01.xml" effectHit="CH/Common/Eff_Common_Electric_Hit.xml" attackMaterial="4" />
-			</attack>
-			<attack point="p1" pointGroupID="10900107" targetCount="5" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
-				<rangeProperty rangeType="box" distance="375" height="150" width="300" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty rate="1.25" effectRemain="CH/Skill/RuneBlader/Eff_RuneBlader_GroundDivide_HitRemain_01.xml" effectHit="CH/Common/Eff_Common_Electric_Hit.xml" attackMaterial="4" />
-			</attack>
-			<attack point="p2" targetCount="1" cubeMagicPathID="109001011" attacktype="1">
-				<rangeProperty includeCaster="1" rangeType="cylinder" distance="150" height="150" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty count="0" attackMaterial="1000" />
-				<conditionSkill splash="1" level="8" skillID="10900108" delay="500" useDirection="1" />
-			</attack>
-		</motion>
-	</level>
-	<level value="9">
-		<beginCondition probability="1" cooldownTime="7" useCoolDownShowUI="1">
-			<stat hp="1" />
-			<weapon lh="0" rh="54" />
-		</beginCondition>
-		<changeSkill originSkillID="10900101" originSkillLevel="9" />
-		<push back="150" />
-		<consume>
-			<stat sp="40" />
-		</consume>
-		<combo comboOriginSkill="10900101" inputSkill="" outputSkill="" />
-		<motion>
-			<motionProperty sequenceName="RuneBlader_GroundDivide_A" strTagEffects="e0=CH/Skill/RuneBlader/Eff_RuneBlader_GroundDivide_Thunder_Cast_01.xml" movedistance="750" ignoreCollisionGroups="20" />
-			<attack point="p0" pointGroupID="10900107" targetCount="5" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
-				<rangeProperty rangeType="box" distance="750" height="150" width="300" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty rate="1.31" effectRemain="CH/Skill/RuneBlader/Eff_RuneBlader_GroundDivide_HitRemain_01.xml" effectHit="CH/Common/Eff_Common_Electric_Hit.xml" attackMaterial="4" />
-			</attack>
-			<attack point="p1" pointGroupID="10900107" targetCount="5" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
-				<rangeProperty rangeType="box" distance="375" height="150" width="300" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty rate="1.31" effectRemain="CH/Skill/RuneBlader/Eff_RuneBlader_GroundDivide_HitRemain_01.xml" effectHit="CH/Common/Eff_Common_Electric_Hit.xml" attackMaterial="4" />
-			</attack>
-			<attack point="p2" targetCount="1" cubeMagicPathID="109001011" attacktype="1">
-				<rangeProperty includeCaster="1" rangeType="cylinder" distance="150" height="150" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty count="0" attackMaterial="1000" />
-				<conditionSkill splash="1" level="9" skillID="10900108" delay="500" useDirection="1" />
-			</attack>
-		</motion>
-	</level>
-	<level value="10">
-		<beginCondition probability="1" cooldownTime="7" useCoolDownShowUI="1">
-			<stat hp="1" />
-			<weapon lh="0" rh="54" />
-		</beginCondition>
-		<changeSkill originSkillID="10900101" originSkillLevel="10" />
-		<push back="150" />
-		<consume>
-			<stat sp="40" />
-		</consume>
-		<combo comboOriginSkill="10900101" inputSkill="" outputSkill="" />
-		<motion>
-			<motionProperty sequenceName="RuneBlader_GroundDivide_A" strTagEffects="e0=CH/Skill/RuneBlader/Eff_RuneBlader_GroundDivide_Thunder_Cast_01.xml" movedistance="750" ignoreCollisionGroups="20" />
-			<attack point="p0" pointGroupID="10900107" targetCount="5" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
-				<rangeProperty rangeType="box" distance="750" height="150" width="300" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty rate="1.37" effectRemain="CH/Skill/RuneBlader/Eff_RuneBlader_GroundDivide_HitRemain_01.xml" effectHit="CH/Common/Eff_Common_Electric_Hit.xml" attackMaterial="4" />
-			</attack>
-			<attack point="p1" pointGroupID="10900107" targetCount="5" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
-				<rangeProperty rangeType="box" distance="375" height="150" width="300" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty rate="1.37" effectRemain="CH/Skill/RuneBlader/Eff_RuneBlader_GroundDivide_HitRemain_01.xml" effectHit="CH/Common/Eff_Common_Electric_Hit.xml" attackMaterial="4" />
-			</attack>
-			<attack point="p2" targetCount="1" cubeMagicPathID="109001011" attacktype="1">
-				<rangeProperty includeCaster="1" rangeType="cylinder" distance="150" height="150" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty count="0" attackMaterial="1000" />
-				<conditionSkill splash="1" level="10" skillID="10900108" delay="500" useDirection="1" />
-			</attack>
-		</motion>
-	</level>
-	<level value="11">
-		<beginCondition probability="1" cooldownTime="7" useCoolDownShowUI="1">
-			<stat hp="1" />
-			<weapon lh="0" rh="54" />
-		</beginCondition>
-		<changeSkill originSkillID="10900101" originSkillLevel="11" />
-		<push back="150" />
-		<consume>
-			<stat sp="40" />
-		</consume>
-		<combo comboOriginSkill="10900101" inputSkill="" outputSkill="" />
-		<motion>
-			<motionProperty sequenceName="RuneBlader_GroundDivide_A" strTagEffects="e0=CH/Skill/RuneBlader/Eff_RuneBlader_GroundDivide_Thunder_Cast_01.xml" movedistance="750" ignoreCollisionGroups="20" />
-			<attack point="p0" pointGroupID="10900107" targetCount="5" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
-				<rangeProperty rangeType="box" distance="750" height="150" width="300" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty rate="1.43" effectRemain="CH/Skill/RuneBlader/Eff_RuneBlader_GroundDivide_HitRemain_01.xml" effectHit="CH/Common/Eff_Common_Electric_Hit.xml" attackMaterial="4" />
-			</attack>
-			<attack point="p1" pointGroupID="10900107" targetCount="5" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
-				<rangeProperty rangeType="box" distance="375" height="150" width="300" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty rate="1.43" effectRemain="CH/Skill/RuneBlader/Eff_RuneBlader_GroundDivide_HitRemain_01.xml" effectHit="CH/Common/Eff_Common_Electric_Hit.xml" attackMaterial="4" />
-			</attack>
-			<attack point="p2" targetCount="1" cubeMagicPathID="109001011" attacktype="1">
-				<rangeProperty includeCaster="1" rangeType="cylinder" distance="150" height="150" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty count="0" attackMaterial="1000" />
-				<conditionSkill splash="1" level="11" skillID="10900108" delay="500" useDirection="1" />
-			</attack>
-		</motion>
-	</level>
 	<level value="12">
 		<beginCondition probability="1" cooldownTime="7" useCoolDownShowUI="1">
 			<stat hp="1" />
@@ -729,7 +729,7 @@
 		<consume>
 			<stat sp="40" />
 		</consume>
-		<combo comboOriginSkill="10900101" inputSkill="" outputSkill="" />
+		<combo comboOriginSkill="10900101" />
 		<motion>
 			<motionProperty sequenceName="RuneBlader_GroundDivide_A" strTagEffects="e0=CH/Skill/RuneBlader/Eff_RuneBlader_GroundDivide_Thunder_Cast_01.xml" movedistance="750" ignoreCollisionGroups="20" />
 			<attack point="p0" pointGroupID="10900107" targetCount="5" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">

@@ -27,6 +27,27 @@
 			</attack>
 		</motion>
 	</level>
+	<level value="1">
+		<beginCondition probability="1" cooldownTime="0.6">
+			<stat hp="1" />
+			<weapon lh="34" rh="34" />
+		</beginCondition>
+		<autoTargeting autoTargetingMaxDegree="90" />
+		<push back="200" />
+		<motion>
+			<motionProperty sequenceName="Assassin_LuckySeven_A" selfInputCombo="selfinputcombo" strTagEffects="e0=CH/Skill/Assassin/Eff_Assassin_LuckySeven_Cast_01.xml" />
+			<attack point="p0" targetCount="1" magicPathID="10800001" sequence="1" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+				<rangeProperty rangeType="frustum" distance="800" height="150" width="150" endWidth="900" applyTarget="1" />
+				<arrowProperty overlap="1" rayPhysxTest="1" bounceType="2" bounceCount="1" bounceRadius="300" collision="50.000000,25.000000,25.000000" collisionAdd="0.000000,25.000000,25.000000" effect="CH/Skill/Assassin/Eff_Assassin_LuckySeven_Ball_01.xml" />
+				<damageProperty rate="0.76" effectHit="CH/Skill/Assassin/Eff_Assassin_LuckySeven_Hit_01.xml" attackMaterial="3" />
+			</attack>
+			<attack point="p1" targetCount="1" magicPathID="10800002" sequence="1" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+				<rangeProperty rangeType="frustum" distance="800" height="150" width="150" endWidth="900" applyTarget="1" />
+				<arrowProperty overlap="1" rayPhysxTest="1" bounceType="2" bounceCount="1" bounceRadius="300" collision="50.000000,25.000000,25.000000" collisionAdd="0.000000,25.000000,25.000000" effect="CH/Skill/Assassin/Eff_Assassin_LuckySeven_Ball_01.xml" />
+				<damageProperty hand="1" rate="0.76" effectHit="CH/Skill/Assassin/Eff_Assassin_LuckySeven_Hit_01.xml" attackMaterial="3" />
+			</attack>
+		</motion>
+	</level>
 	<level value="2" feature="CharacterBalance_01">
 		<beginCondition probability="1" cooldownTime="0.6">
 			<stat hp="1" />
@@ -46,247 +67,6 @@
 				<rangeProperty rangeType="frustum" distance="800" height="150" width="150" endWidth="900" applyTarget="1" />
 				<arrowProperty overlap="1" rayPhysxTest="1" bounceType="2" bounceCount="1" bounceRadius="300" collision="50.000000,25.000000,25.000000" collisionAdd="0.000000,25.000000,25.000000" effect="CH/Skill/Assassin/Eff_Assassin_LuckySeven_Ball_01.xml" />
 				<damageProperty hand="1" rate="0.83" effectHit="CH/Skill/Assassin/Eff_Assassin_LuckySeven_Hit_01.xml" attackMaterial="3" />
-			</attack>
-		</motion>
-	</level>
-	<level value="3" feature="CharacterBalance_01">
-		<beginCondition probability="1" cooldownTime="0.6">
-			<stat hp="1" />
-			<weapon lh="34" rh="34" />
-		</beginCondition>
-		<autoTargeting autoTargetingMaxDegree="90" />
-		<push back="200" />
-		<upgrade level="12" />
-		<motion>
-			<motionProperty sequenceName="Assassin_LuckySeven_A" selfInputCombo="selfinputcombo" strTagEffects="e0=CH/Skill/Assassin/Eff_Assassin_LuckySeven_Cast_01.xml" />
-			<attack point="p0" targetCount="1" magicPathID="10800001" sequence="1" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
-				<rangeProperty rangeType="frustum" distance="800" height="150" width="150" endWidth="900" applyTarget="1" />
-				<arrowProperty overlap="1" rayPhysxTest="1" bounceType="2" bounceCount="1" bounceRadius="300" collision="50.000000,25.000000,25.000000" collisionAdd="0.000000,25.000000,25.000000" effect="CH/Skill/Assassin/Eff_Assassin_LuckySeven_Ball_01.xml" />
-				<damageProperty rate="0.89" effectHit="CH/Skill/Assassin/Eff_Assassin_LuckySeven_Hit_01.xml" attackMaterial="3" />
-			</attack>
-			<attack point="p1" targetCount="1" magicPathID="10800002" sequence="1" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
-				<rangeProperty rangeType="frustum" distance="800" height="150" width="150" endWidth="900" applyTarget="1" />
-				<arrowProperty overlap="1" rayPhysxTest="1" bounceType="2" bounceCount="1" bounceRadius="300" collision="50.000000,25.000000,25.000000" collisionAdd="0.000000,25.000000,25.000000" effect="CH/Skill/Assassin/Eff_Assassin_LuckySeven_Ball_01.xml" />
-				<damageProperty hand="1" rate="0.89" effectHit="CH/Skill/Assassin/Eff_Assassin_LuckySeven_Hit_01.xml" attackMaterial="3" />
-			</attack>
-		</motion>
-	</level>
-	<level value="4" feature="CharacterBalance_01">
-		<beginCondition probability="1" cooldownTime="0.6">
-			<stat hp="1" />
-			<weapon lh="34" rh="34" />
-		</beginCondition>
-		<autoTargeting autoTargetingMaxDegree="90" />
-		<push back="200" />
-		<upgrade level="14" />
-		<motion>
-			<motionProperty sequenceName="Assassin_LuckySeven_A" selfInputCombo="selfinputcombo" strTagEffects="e0=CH/Skill/Assassin/Eff_Assassin_LuckySeven_Cast_01.xml" />
-			<attack point="p0" targetCount="1" magicPathID="10800001" sequence="1" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
-				<rangeProperty rangeType="frustum" distance="800" height="150" width="150" endWidth="900" applyTarget="1" />
-				<arrowProperty overlap="1" rayPhysxTest="1" bounceType="2" bounceCount="1" bounceRadius="300" collision="50.000000,25.000000,25.000000" collisionAdd="0.000000,25.000000,25.000000" effect="CH/Skill/Assassin/Eff_Assassin_LuckySeven_Ball_01.xml" />
-				<damageProperty rate="0.95" effectHit="CH/Skill/Assassin/Eff_Assassin_LuckySeven_Hit_01.xml" attackMaterial="3" />
-			</attack>
-			<attack point="p1" targetCount="1" magicPathID="10800002" sequence="1" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
-				<rangeProperty rangeType="frustum" distance="800" height="150" width="150" endWidth="900" applyTarget="1" />
-				<arrowProperty overlap="1" rayPhysxTest="1" bounceType="2" bounceCount="1" bounceRadius="300" collision="50.000000,25.000000,25.000000" collisionAdd="0.000000,25.000000,25.000000" effect="CH/Skill/Assassin/Eff_Assassin_LuckySeven_Ball_01.xml" />
-				<damageProperty hand="1" rate="0.95" effectHit="CH/Skill/Assassin/Eff_Assassin_LuckySeven_Hit_01.xml" attackMaterial="3" />
-			</attack>
-		</motion>
-	</level>
-	<level value="5" feature="CharacterBalance_01">
-		<beginCondition probability="1" cooldownTime="0.6">
-			<stat hp="1" />
-			<weapon lh="34" rh="34" />
-		</beginCondition>
-		<autoTargeting autoTargetingMaxDegree="90" />
-		<push back="200" />
-		<upgrade level="16" />
-		<motion>
-			<motionProperty sequenceName="Assassin_LuckySeven_A" selfInputCombo="selfinputcombo" strTagEffects="e0=CH/Skill/Assassin/Eff_Assassin_LuckySeven_Cast_01.xml" />
-			<attack point="p0" targetCount="1" magicPathID="10800001" sequence="1" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
-				<rangeProperty rangeType="frustum" distance="800" height="150" width="150" endWidth="900" applyTarget="1" />
-				<arrowProperty overlap="1" rayPhysxTest="1" bounceType="2" bounceCount="1" bounceRadius="300" collision="50.000000,25.000000,25.000000" collisionAdd="0.000000,25.000000,25.000000" effect="CH/Skill/Assassin/Eff_Assassin_LuckySeven_Ball_01.xml" />
-				<damageProperty rate="1.01" effectHit="CH/Skill/Assassin/Eff_Assassin_LuckySeven_Hit_01.xml" attackMaterial="3" />
-			</attack>
-			<attack point="p1" targetCount="1" magicPathID="10800002" sequence="1" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
-				<rangeProperty rangeType="frustum" distance="800" height="150" width="150" endWidth="900" applyTarget="1" />
-				<arrowProperty overlap="1" rayPhysxTest="1" bounceType="2" bounceCount="1" bounceRadius="300" collision="50.000000,25.000000,25.000000" collisionAdd="0.000000,25.000000,25.000000" effect="CH/Skill/Assassin/Eff_Assassin_LuckySeven_Ball_01.xml" />
-				<damageProperty hand="1" rate="1.01" effectHit="CH/Skill/Assassin/Eff_Assassin_LuckySeven_Hit_01.xml" attackMaterial="3" />
-			</attack>
-		</motion>
-	</level>
-	<level value="6" feature="CharacterBalance_01">
-		<beginCondition probability="1" cooldownTime="0.6">
-			<stat hp="1" />
-			<weapon lh="34" rh="34" />
-		</beginCondition>
-		<autoTargeting autoTargetingMaxDegree="90" />
-		<push back="200" />
-		<upgrade level="18" />
-		<motion>
-			<motionProperty sequenceName="Assassin_LuckySeven_A" selfInputCombo="selfinputcombo" strTagEffects="e0=CH/Skill/Assassin/Eff_Assassin_LuckySeven_Cast_01.xml" />
-			<attack point="p0" targetCount="1" magicPathID="10800001" sequence="1" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
-				<rangeProperty rangeType="frustum" distance="800" height="150" width="150" endWidth="900" applyTarget="1" />
-				<arrowProperty overlap="1" rayPhysxTest="1" bounceType="2" bounceCount="1" bounceRadius="300" collision="50.000000,25.000000,25.000000" collisionAdd="0.000000,25.000000,25.000000" effect="CH/Skill/Assassin/Eff_Assassin_LuckySeven_Ball_01.xml" />
-				<damageProperty rate="1.07" effectHit="CH/Skill/Assassin/Eff_Assassin_LuckySeven_Hit_01.xml" attackMaterial="3" />
-			</attack>
-			<attack point="p1" targetCount="1" magicPathID="10800002" sequence="1" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
-				<rangeProperty rangeType="frustum" distance="800" height="150" width="150" endWidth="900" applyTarget="1" />
-				<arrowProperty overlap="1" rayPhysxTest="1" bounceType="2" bounceCount="1" bounceRadius="300" collision="50.000000,25.000000,25.000000" collisionAdd="0.000000,25.000000,25.000000" effect="CH/Skill/Assassin/Eff_Assassin_LuckySeven_Ball_01.xml" />
-				<damageProperty hand="1" rate="1.07" effectHit="CH/Skill/Assassin/Eff_Assassin_LuckySeven_Hit_01.xml" attackMaterial="3" />
-			</attack>
-		</motion>
-	</level>
-	<level value="7" feature="CharacterBalance_01">
-		<beginCondition probability="1" cooldownTime="0.6">
-			<stat hp="1" />
-			<weapon lh="34" rh="34" />
-		</beginCondition>
-		<autoTargeting autoTargetingMaxDegree="90" />
-		<push back="200" />
-		<upgrade level="20" />
-		<motion>
-			<motionProperty sequenceName="Assassin_LuckySeven_A" selfInputCombo="selfinputcombo" strTagEffects="e0=CH/Skill/Assassin/Eff_Assassin_LuckySeven_Cast_01.xml" />
-			<attack point="p0" targetCount="1" magicPathID="10800001" sequence="1" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
-				<rangeProperty rangeType="frustum" distance="800" height="150" width="150" endWidth="900" applyTarget="1" />
-				<arrowProperty overlap="1" rayPhysxTest="1" bounceType="2" bounceCount="1" bounceRadius="300" collision="50.000000,25.000000,25.000000" collisionAdd="0.000000,25.000000,25.000000" effect="CH/Skill/Assassin/Eff_Assassin_LuckySeven_Ball_01.xml" />
-				<damageProperty rate="1.13" effectHit="CH/Skill/Assassin/Eff_Assassin_LuckySeven_Hit_01.xml" attackMaterial="3" />
-			</attack>
-			<attack point="p1" targetCount="1" magicPathID="10800002" sequence="1" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
-				<rangeProperty rangeType="frustum" distance="800" height="150" width="150" endWidth="900" applyTarget="1" />
-				<arrowProperty overlap="1" rayPhysxTest="1" bounceType="2" bounceCount="1" bounceRadius="300" collision="50.000000,25.000000,25.000000" collisionAdd="0.000000,25.000000,25.000000" effect="CH/Skill/Assassin/Eff_Assassin_LuckySeven_Ball_01.xml" />
-				<damageProperty hand="1" rate="1.13" effectHit="CH/Skill/Assassin/Eff_Assassin_LuckySeven_Hit_01.xml" attackMaterial="3" />
-			</attack>
-		</motion>
-	</level>
-	<level value="8" feature="CharacterBalance_01">
-		<beginCondition probability="1" cooldownTime="0.6">
-			<stat hp="1" />
-			<weapon lh="34" rh="34" />
-		</beginCondition>
-		<autoTargeting autoTargetingMaxDegree="90" />
-		<push back="200" />
-		<upgrade level="22" />
-		<motion>
-			<motionProperty sequenceName="Assassin_LuckySeven_A" selfInputCombo="selfinputcombo" strTagEffects="e0=CH/Skill/Assassin/Eff_Assassin_LuckySeven_Cast_01.xml" />
-			<attack point="p0" targetCount="1" magicPathID="10800001" sequence="1" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
-				<rangeProperty rangeType="frustum" distance="800" height="150" width="150" endWidth="900" applyTarget="1" />
-				<arrowProperty overlap="1" rayPhysxTest="1" bounceType="2" bounceCount="1" bounceRadius="300" collision="50.000000,25.000000,25.000000" collisionAdd="0.000000,25.000000,25.000000" effect="CH/Skill/Assassin/Eff_Assassin_LuckySeven_Ball_01.xml" />
-				<damageProperty rate="1.19" effectHit="CH/Skill/Assassin/Eff_Assassin_LuckySeven_Hit_01.xml" attackMaterial="3" />
-			</attack>
-			<attack point="p1" targetCount="1" magicPathID="10800002" sequence="1" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
-				<rangeProperty rangeType="frustum" distance="800" height="150" width="150" endWidth="900" applyTarget="1" />
-				<arrowProperty overlap="1" rayPhysxTest="1" bounceType="2" bounceCount="1" bounceRadius="300" collision="50.000000,25.000000,25.000000" collisionAdd="0.000000,25.000000,25.000000" effect="CH/Skill/Assassin/Eff_Assassin_LuckySeven_Ball_01.xml" />
-				<damageProperty hand="1" rate="1.19" effectHit="CH/Skill/Assassin/Eff_Assassin_LuckySeven_Hit_01.xml" attackMaterial="3" />
-			</attack>
-		</motion>
-	</level>
-	<level value="9" feature="CharacterBalance_01">
-		<beginCondition probability="1" cooldownTime="0.6">
-			<stat hp="1" />
-			<weapon lh="34" rh="34" />
-		</beginCondition>
-		<autoTargeting autoTargetingMaxDegree="90" />
-		<push back="200" />
-		<upgrade level="24" />
-		<motion>
-			<motionProperty sequenceName="Assassin_LuckySeven_A" selfInputCombo="selfinputcombo" strTagEffects="e0=CH/Skill/Assassin/Eff_Assassin_LuckySeven_Cast_01.xml" />
-			<attack point="p0" targetCount="1" magicPathID="10800001" sequence="1" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
-				<rangeProperty rangeType="frustum" distance="800" height="150" width="150" endWidth="900" applyTarget="1" />
-				<arrowProperty overlap="1" rayPhysxTest="1" bounceType="2" bounceCount="1" bounceRadius="300" collision="50.000000,25.000000,25.000000" collisionAdd="0.000000,25.000000,25.000000" effect="CH/Skill/Assassin/Eff_Assassin_LuckySeven_Ball_01.xml" />
-				<damageProperty rate="1.25" effectHit="CH/Skill/Assassin/Eff_Assassin_LuckySeven_Hit_01.xml" attackMaterial="3" />
-			</attack>
-			<attack point="p1" targetCount="1" magicPathID="10800002" sequence="1" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
-				<rangeProperty rangeType="frustum" distance="800" height="150" width="150" endWidth="900" applyTarget="1" />
-				<arrowProperty overlap="1" rayPhysxTest="1" bounceType="2" bounceCount="1" bounceRadius="300" collision="50.000000,25.000000,25.000000" collisionAdd="0.000000,25.000000,25.000000" effect="CH/Skill/Assassin/Eff_Assassin_LuckySeven_Ball_01.xml" />
-				<damageProperty hand="1" rate="1.25" effectHit="CH/Skill/Assassin/Eff_Assassin_LuckySeven_Hit_01.xml" attackMaterial="3" />
-			</attack>
-		</motion>
-	</level>
-	<level value="10" feature="CharacterBalance_01">
-		<beginCondition probability="1" cooldownTime="0.6">
-			<stat hp="1" />
-			<weapon lh="34" rh="34" />
-		</beginCondition>
-		<autoTargeting autoTargetingMaxDegree="90" />
-		<push back="200" />
-		<upgrade level="26" />
-		<motion>
-			<motionProperty sequenceName="Assassin_LuckySeven_A" selfInputCombo="selfinputcombo" strTagEffects="e0=CH/Skill/Assassin/Eff_Assassin_LuckySeven_Cast_01.xml" />
-			<attack point="p0" targetCount="1" magicPathID="10800001" sequence="1" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
-				<rangeProperty rangeType="frustum" distance="800" height="150" width="150" endWidth="900" applyTarget="1" />
-				<arrowProperty overlap="1" rayPhysxTest="1" bounceType="2" bounceCount="1" bounceRadius="300" collision="50.000000,25.000000,25.000000" collisionAdd="0.000000,25.000000,25.000000" effect="CH/Skill/Assassin/Eff_Assassin_LuckySeven_Ball_01.xml" />
-				<damageProperty rate="1.31" effectHit="CH/Skill/Assassin/Eff_Assassin_LuckySeven_Hit_01.xml" attackMaterial="3" />
-			</attack>
-			<attack point="p1" targetCount="1" magicPathID="10800002" sequence="1" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
-				<rangeProperty rangeType="frustum" distance="800" height="150" width="150" endWidth="900" applyTarget="1" />
-				<arrowProperty overlap="1" rayPhysxTest="1" bounceType="2" bounceCount="1" bounceRadius="300" collision="50.000000,25.000000,25.000000" collisionAdd="0.000000,25.000000,25.000000" effect="CH/Skill/Assassin/Eff_Assassin_LuckySeven_Ball_01.xml" />
-				<damageProperty hand="1" rate="1.31" effectHit="CH/Skill/Assassin/Eff_Assassin_LuckySeven_Hit_01.xml" attackMaterial="3" />
-			</attack>
-		</motion>
-	</level>
-	<level value="11" feature="CharacterBalance_01">
-		<beginCondition probability="1" cooldownTime="0.6">
-			<stat hp="1" />
-			<weapon lh="34" rh="34" />
-		</beginCondition>
-		<autoTargeting autoTargetingMaxDegree="90" />
-		<push back="200" />
-		<upgrade level="28" />
-		<motion>
-			<motionProperty sequenceName="Assassin_LuckySeven_A" selfInputCombo="selfinputcombo" strTagEffects="e0=CH/Skill/Assassin/Eff_Assassin_LuckySeven_Cast_01.xml" />
-			<attack point="p0" targetCount="1" magicPathID="10800001" sequence="1" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
-				<rangeProperty rangeType="frustum" distance="800" height="150" width="150" endWidth="900" applyTarget="1" />
-				<arrowProperty overlap="1" rayPhysxTest="1" bounceType="2" bounceCount="1" bounceRadius="300" collision="50.000000,25.000000,25.000000" collisionAdd="0.000000,25.000000,25.000000" effect="CH/Skill/Assassin/Eff_Assassin_LuckySeven_Ball_01.xml" />
-				<damageProperty rate="1.37" effectHit="CH/Skill/Assassin/Eff_Assassin_LuckySeven_Hit_01.xml" attackMaterial="3" />
-			</attack>
-			<attack point="p1" targetCount="1" magicPathID="10800002" sequence="1" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
-				<rangeProperty rangeType="frustum" distance="800" height="150" width="150" endWidth="900" applyTarget="1" />
-				<arrowProperty overlap="1" rayPhysxTest="1" bounceType="2" bounceCount="1" bounceRadius="300" collision="50.000000,25.000000,25.000000" collisionAdd="0.000000,25.000000,25.000000" effect="CH/Skill/Assassin/Eff_Assassin_LuckySeven_Ball_01.xml" />
-				<damageProperty hand="1" rate="1.37" effectHit="CH/Skill/Assassin/Eff_Assassin_LuckySeven_Hit_01.xml" attackMaterial="3" />
-			</attack>
-		</motion>
-	</level>
-	<level value="12" feature="CharacterBalance_01">
-		<beginCondition probability="1" cooldownTime="0.6">
-			<stat hp="1" />
-			<weapon lh="34" rh="34" />
-		</beginCondition>
-		<autoTargeting autoTargetingMaxDegree="90" />
-		<push back="200" />
-		<upgrade level="30" />
-		<motion>
-			<motionProperty sequenceName="Assassin_LuckySeven_A" selfInputCombo="selfinputcombo" strTagEffects="e0=CH/Skill/Assassin/Eff_Assassin_LuckySeven_Cast_01.xml" />
-			<attack point="p0" targetCount="1" magicPathID="10800001" sequence="1" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
-				<rangeProperty rangeType="frustum" distance="800" height="150" width="150" endWidth="900" applyTarget="1" />
-				<arrowProperty overlap="1" rayPhysxTest="1" bounceType="2" bounceCount="1" bounceRadius="300" collision="50.000000,25.000000,25.000000" collisionAdd="0.000000,25.000000,25.000000" effect="CH/Skill/Assassin/Eff_Assassin_LuckySeven_Ball_01.xml" />
-				<damageProperty rate="1.43" effectHit="CH/Skill/Assassin/Eff_Assassin_LuckySeven_Hit_01.xml" attackMaterial="3" />
-			</attack>
-			<attack point="p1" targetCount="1" magicPathID="10800002" sequence="1" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
-				<rangeProperty rangeType="frustum" distance="800" height="150" width="150" endWidth="900" applyTarget="1" />
-				<arrowProperty overlap="1" rayPhysxTest="1" bounceType="2" bounceCount="1" bounceRadius="300" collision="50.000000,25.000000,25.000000" collisionAdd="0.000000,25.000000,25.000000" effect="CH/Skill/Assassin/Eff_Assassin_LuckySeven_Ball_01.xml" />
-				<damageProperty hand="1" rate="1.43" effectHit="CH/Skill/Assassin/Eff_Assassin_LuckySeven_Hit_01.xml" attackMaterial="3" />
-			</attack>
-		</motion>
-	</level>
-	<level value="1">
-		<beginCondition probability="1" cooldownTime="0.6">
-			<stat hp="1" />
-			<weapon lh="34" rh="34" />
-		</beginCondition>
-		<autoTargeting autoTargetingMaxDegree="90" />
-		<push back="200" />
-		<motion>
-			<motionProperty sequenceName="Assassin_LuckySeven_A" selfInputCombo="selfinputcombo" strTagEffects="e0=CH/Skill/Assassin/Eff_Assassin_LuckySeven_Cast_01.xml" />
-			<attack point="p0" targetCount="1" magicPathID="10800001" sequence="1" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
-				<rangeProperty rangeType="frustum" distance="800" height="150" width="150" endWidth="900" applyTarget="1" />
-				<arrowProperty overlap="1" rayPhysxTest="1" bounceType="2" bounceCount="1" bounceRadius="300" collision="50.000000,25.000000,25.000000" collisionAdd="0.000000,25.000000,25.000000" effect="CH/Skill/Assassin/Eff_Assassin_LuckySeven_Ball_01.xml" />
-				<damageProperty rate="0.76" effectHit="CH/Skill/Assassin/Eff_Assassin_LuckySeven_Hit_01.xml" attackMaterial="3" />
-			</attack>
-			<attack point="p1" targetCount="1" magicPathID="10800002" sequence="1" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
-				<rangeProperty rangeType="frustum" distance="800" height="150" width="150" endWidth="900" applyTarget="1" />
-				<arrowProperty overlap="1" rayPhysxTest="1" bounceType="2" bounceCount="1" bounceRadius="300" collision="50.000000,25.000000,25.000000" collisionAdd="0.000000,25.000000,25.000000" effect="CH/Skill/Assassin/Eff_Assassin_LuckySeven_Ball_01.xml" />
-				<damageProperty hand="1" rate="0.76" effectHit="CH/Skill/Assassin/Eff_Assassin_LuckySeven_Hit_01.xml" attackMaterial="3" />
 			</attack>
 		</motion>
 	</level>
@@ -312,6 +92,28 @@
 			</attack>
 		</motion>
 	</level>
+	<level value="3" feature="CharacterBalance_01">
+		<beginCondition probability="1" cooldownTime="0.6">
+			<stat hp="1" />
+			<weapon lh="34" rh="34" />
+		</beginCondition>
+		<autoTargeting autoTargetingMaxDegree="90" />
+		<push back="200" />
+		<upgrade level="12" />
+		<motion>
+			<motionProperty sequenceName="Assassin_LuckySeven_A" selfInputCombo="selfinputcombo" strTagEffects="e0=CH/Skill/Assassin/Eff_Assassin_LuckySeven_Cast_01.xml" />
+			<attack point="p0" targetCount="1" magicPathID="10800001" sequence="1" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+				<rangeProperty rangeType="frustum" distance="800" height="150" width="150" endWidth="900" applyTarget="1" />
+				<arrowProperty overlap="1" rayPhysxTest="1" bounceType="2" bounceCount="1" bounceRadius="300" collision="50.000000,25.000000,25.000000" collisionAdd="0.000000,25.000000,25.000000" effect="CH/Skill/Assassin/Eff_Assassin_LuckySeven_Ball_01.xml" />
+				<damageProperty rate="0.89" effectHit="CH/Skill/Assassin/Eff_Assassin_LuckySeven_Hit_01.xml" attackMaterial="3" />
+			</attack>
+			<attack point="p1" targetCount="1" magicPathID="10800002" sequence="1" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+				<rangeProperty rangeType="frustum" distance="800" height="150" width="150" endWidth="900" applyTarget="1" />
+				<arrowProperty overlap="1" rayPhysxTest="1" bounceType="2" bounceCount="1" bounceRadius="300" collision="50.000000,25.000000,25.000000" collisionAdd="0.000000,25.000000,25.000000" effect="CH/Skill/Assassin/Eff_Assassin_LuckySeven_Ball_01.xml" />
+				<damageProperty hand="1" rate="0.89" effectHit="CH/Skill/Assassin/Eff_Assassin_LuckySeven_Hit_01.xml" attackMaterial="3" />
+			</attack>
+		</motion>
+	</level>
 	<level value="3">
 		<beginCondition probability="1" cooldownTime="0.6">
 			<stat hp="1" />
@@ -331,6 +133,28 @@
 				<rangeProperty rangeType="frustum" distance="800" height="150" width="150" endWidth="900" applyTarget="1" />
 				<arrowProperty overlap="1" rayPhysxTest="1" bounceType="2" bounceCount="1" bounceRadius="300" collision="50.000000,25.000000,25.000000" collisionAdd="0.000000,25.000000,25.000000" effect="CH/Skill/Assassin/Eff_Assassin_LuckySeven_Ball_01.xml" />
 				<damageProperty hand="1" rate="0.86" effectHit="CH/Skill/Assassin/Eff_Assassin_LuckySeven_Hit_01.xml" attackMaterial="3" />
+			</attack>
+		</motion>
+	</level>
+	<level value="4" feature="CharacterBalance_01">
+		<beginCondition probability="1" cooldownTime="0.6">
+			<stat hp="1" />
+			<weapon lh="34" rh="34" />
+		</beginCondition>
+		<autoTargeting autoTargetingMaxDegree="90" />
+		<push back="200" />
+		<upgrade level="14" />
+		<motion>
+			<motionProperty sequenceName="Assassin_LuckySeven_A" selfInputCombo="selfinputcombo" strTagEffects="e0=CH/Skill/Assassin/Eff_Assassin_LuckySeven_Cast_01.xml" />
+			<attack point="p0" targetCount="1" magicPathID="10800001" sequence="1" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+				<rangeProperty rangeType="frustum" distance="800" height="150" width="150" endWidth="900" applyTarget="1" />
+				<arrowProperty overlap="1" rayPhysxTest="1" bounceType="2" bounceCount="1" bounceRadius="300" collision="50.000000,25.000000,25.000000" collisionAdd="0.000000,25.000000,25.000000" effect="CH/Skill/Assassin/Eff_Assassin_LuckySeven_Ball_01.xml" />
+				<damageProperty rate="0.95" effectHit="CH/Skill/Assassin/Eff_Assassin_LuckySeven_Hit_01.xml" attackMaterial="3" />
+			</attack>
+			<attack point="p1" targetCount="1" magicPathID="10800002" sequence="1" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+				<rangeProperty rangeType="frustum" distance="800" height="150" width="150" endWidth="900" applyTarget="1" />
+				<arrowProperty overlap="1" rayPhysxTest="1" bounceType="2" bounceCount="1" bounceRadius="300" collision="50.000000,25.000000,25.000000" collisionAdd="0.000000,25.000000,25.000000" effect="CH/Skill/Assassin/Eff_Assassin_LuckySeven_Ball_01.xml" />
+				<damageProperty hand="1" rate="0.95" effectHit="CH/Skill/Assassin/Eff_Assassin_LuckySeven_Hit_01.xml" attackMaterial="3" />
 			</attack>
 		</motion>
 	</level>
@@ -356,6 +180,28 @@
 			</attack>
 		</motion>
 	</level>
+	<level value="5" feature="CharacterBalance_01">
+		<beginCondition probability="1" cooldownTime="0.6">
+			<stat hp="1" />
+			<weapon lh="34" rh="34" />
+		</beginCondition>
+		<autoTargeting autoTargetingMaxDegree="90" />
+		<push back="200" />
+		<upgrade level="16" />
+		<motion>
+			<motionProperty sequenceName="Assassin_LuckySeven_A" selfInputCombo="selfinputcombo" strTagEffects="e0=CH/Skill/Assassin/Eff_Assassin_LuckySeven_Cast_01.xml" />
+			<attack point="p0" targetCount="1" magicPathID="10800001" sequence="1" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+				<rangeProperty rangeType="frustum" distance="800" height="150" width="150" endWidth="900" applyTarget="1" />
+				<arrowProperty overlap="1" rayPhysxTest="1" bounceType="2" bounceCount="1" bounceRadius="300" collision="50.000000,25.000000,25.000000" collisionAdd="0.000000,25.000000,25.000000" effect="CH/Skill/Assassin/Eff_Assassin_LuckySeven_Ball_01.xml" />
+				<damageProperty rate="1.01" effectHit="CH/Skill/Assassin/Eff_Assassin_LuckySeven_Hit_01.xml" attackMaterial="3" />
+			</attack>
+			<attack point="p1" targetCount="1" magicPathID="10800002" sequence="1" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+				<rangeProperty rangeType="frustum" distance="800" height="150" width="150" endWidth="900" applyTarget="1" />
+				<arrowProperty overlap="1" rayPhysxTest="1" bounceType="2" bounceCount="1" bounceRadius="300" collision="50.000000,25.000000,25.000000" collisionAdd="0.000000,25.000000,25.000000" effect="CH/Skill/Assassin/Eff_Assassin_LuckySeven_Ball_01.xml" />
+				<damageProperty hand="1" rate="1.01" effectHit="CH/Skill/Assassin/Eff_Assassin_LuckySeven_Hit_01.xml" attackMaterial="3" />
+			</attack>
+		</motion>
+	</level>
 	<level value="5">
 		<beginCondition probability="1" cooldownTime="0.6">
 			<stat hp="1" />
@@ -375,6 +221,28 @@
 				<rangeProperty rangeType="frustum" distance="800" height="150" width="150" endWidth="900" applyTarget="1" />
 				<arrowProperty overlap="1" rayPhysxTest="1" bounceType="2" bounceCount="1" bounceRadius="300" collision="50.000000,25.000000,25.000000" collisionAdd="0.000000,25.000000,25.000000" effect="CH/Skill/Assassin/Eff_Assassin_LuckySeven_Ball_01.xml" />
 				<damageProperty hand="1" rate="0.96" effectHit="CH/Skill/Assassin/Eff_Assassin_LuckySeven_Hit_01.xml" attackMaterial="3" />
+			</attack>
+		</motion>
+	</level>
+	<level value="6" feature="CharacterBalance_01">
+		<beginCondition probability="1" cooldownTime="0.6">
+			<stat hp="1" />
+			<weapon lh="34" rh="34" />
+		</beginCondition>
+		<autoTargeting autoTargetingMaxDegree="90" />
+		<push back="200" />
+		<upgrade level="18" />
+		<motion>
+			<motionProperty sequenceName="Assassin_LuckySeven_A" selfInputCombo="selfinputcombo" strTagEffects="e0=CH/Skill/Assassin/Eff_Assassin_LuckySeven_Cast_01.xml" />
+			<attack point="p0" targetCount="1" magicPathID="10800001" sequence="1" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+				<rangeProperty rangeType="frustum" distance="800" height="150" width="150" endWidth="900" applyTarget="1" />
+				<arrowProperty overlap="1" rayPhysxTest="1" bounceType="2" bounceCount="1" bounceRadius="300" collision="50.000000,25.000000,25.000000" collisionAdd="0.000000,25.000000,25.000000" effect="CH/Skill/Assassin/Eff_Assassin_LuckySeven_Ball_01.xml" />
+				<damageProperty rate="1.07" effectHit="CH/Skill/Assassin/Eff_Assassin_LuckySeven_Hit_01.xml" attackMaterial="3" />
+			</attack>
+			<attack point="p1" targetCount="1" magicPathID="10800002" sequence="1" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+				<rangeProperty rangeType="frustum" distance="800" height="150" width="150" endWidth="900" applyTarget="1" />
+				<arrowProperty overlap="1" rayPhysxTest="1" bounceType="2" bounceCount="1" bounceRadius="300" collision="50.000000,25.000000,25.000000" collisionAdd="0.000000,25.000000,25.000000" effect="CH/Skill/Assassin/Eff_Assassin_LuckySeven_Ball_01.xml" />
+				<damageProperty hand="1" rate="1.07" effectHit="CH/Skill/Assassin/Eff_Assassin_LuckySeven_Hit_01.xml" attackMaterial="3" />
 			</attack>
 		</motion>
 	</level>
@@ -400,6 +268,28 @@
 			</attack>
 		</motion>
 	</level>
+	<level value="7" feature="CharacterBalance_01">
+		<beginCondition probability="1" cooldownTime="0.6">
+			<stat hp="1" />
+			<weapon lh="34" rh="34" />
+		</beginCondition>
+		<autoTargeting autoTargetingMaxDegree="90" />
+		<push back="200" />
+		<upgrade level="20" />
+		<motion>
+			<motionProperty sequenceName="Assassin_LuckySeven_A" selfInputCombo="selfinputcombo" strTagEffects="e0=CH/Skill/Assassin/Eff_Assassin_LuckySeven_Cast_01.xml" />
+			<attack point="p0" targetCount="1" magicPathID="10800001" sequence="1" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+				<rangeProperty rangeType="frustum" distance="800" height="150" width="150" endWidth="900" applyTarget="1" />
+				<arrowProperty overlap="1" rayPhysxTest="1" bounceType="2" bounceCount="1" bounceRadius="300" collision="50.000000,25.000000,25.000000" collisionAdd="0.000000,25.000000,25.000000" effect="CH/Skill/Assassin/Eff_Assassin_LuckySeven_Ball_01.xml" />
+				<damageProperty rate="1.13" effectHit="CH/Skill/Assassin/Eff_Assassin_LuckySeven_Hit_01.xml" attackMaterial="3" />
+			</attack>
+			<attack point="p1" targetCount="1" magicPathID="10800002" sequence="1" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+				<rangeProperty rangeType="frustum" distance="800" height="150" width="150" endWidth="900" applyTarget="1" />
+				<arrowProperty overlap="1" rayPhysxTest="1" bounceType="2" bounceCount="1" bounceRadius="300" collision="50.000000,25.000000,25.000000" collisionAdd="0.000000,25.000000,25.000000" effect="CH/Skill/Assassin/Eff_Assassin_LuckySeven_Ball_01.xml" />
+				<damageProperty hand="1" rate="1.13" effectHit="CH/Skill/Assassin/Eff_Assassin_LuckySeven_Hit_01.xml" attackMaterial="3" />
+			</attack>
+		</motion>
+	</level>
 	<level value="7">
 		<beginCondition probability="1" cooldownTime="0.6">
 			<stat hp="1" />
@@ -419,6 +309,28 @@
 				<rangeProperty rangeType="frustum" distance="800" height="150" width="150" endWidth="900" applyTarget="1" />
 				<arrowProperty overlap="1" rayPhysxTest="1" bounceType="2" bounceCount="1" bounceRadius="300" collision="50.000000,25.000000,25.000000" collisionAdd="0.000000,25.000000,25.000000" effect="CH/Skill/Assassin/Eff_Assassin_LuckySeven_Ball_01.xml" />
 				<damageProperty hand="1" rate="1.06" effectHit="CH/Skill/Assassin/Eff_Assassin_LuckySeven_Hit_01.xml" attackMaterial="3" />
+			</attack>
+		</motion>
+	</level>
+	<level value="8" feature="CharacterBalance_01">
+		<beginCondition probability="1" cooldownTime="0.6">
+			<stat hp="1" />
+			<weapon lh="34" rh="34" />
+		</beginCondition>
+		<autoTargeting autoTargetingMaxDegree="90" />
+		<push back="200" />
+		<upgrade level="22" />
+		<motion>
+			<motionProperty sequenceName="Assassin_LuckySeven_A" selfInputCombo="selfinputcombo" strTagEffects="e0=CH/Skill/Assassin/Eff_Assassin_LuckySeven_Cast_01.xml" />
+			<attack point="p0" targetCount="1" magicPathID="10800001" sequence="1" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+				<rangeProperty rangeType="frustum" distance="800" height="150" width="150" endWidth="900" applyTarget="1" />
+				<arrowProperty overlap="1" rayPhysxTest="1" bounceType="2" bounceCount="1" bounceRadius="300" collision="50.000000,25.000000,25.000000" collisionAdd="0.000000,25.000000,25.000000" effect="CH/Skill/Assassin/Eff_Assassin_LuckySeven_Ball_01.xml" />
+				<damageProperty rate="1.19" effectHit="CH/Skill/Assassin/Eff_Assassin_LuckySeven_Hit_01.xml" attackMaterial="3" />
+			</attack>
+			<attack point="p1" targetCount="1" magicPathID="10800002" sequence="1" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+				<rangeProperty rangeType="frustum" distance="800" height="150" width="150" endWidth="900" applyTarget="1" />
+				<arrowProperty overlap="1" rayPhysxTest="1" bounceType="2" bounceCount="1" bounceRadius="300" collision="50.000000,25.000000,25.000000" collisionAdd="0.000000,25.000000,25.000000" effect="CH/Skill/Assassin/Eff_Assassin_LuckySeven_Ball_01.xml" />
+				<damageProperty hand="1" rate="1.19" effectHit="CH/Skill/Assassin/Eff_Assassin_LuckySeven_Hit_01.xml" attackMaterial="3" />
 			</attack>
 		</motion>
 	</level>
@@ -444,6 +356,28 @@
 			</attack>
 		</motion>
 	</level>
+	<level value="9" feature="CharacterBalance_01">
+		<beginCondition probability="1" cooldownTime="0.6">
+			<stat hp="1" />
+			<weapon lh="34" rh="34" />
+		</beginCondition>
+		<autoTargeting autoTargetingMaxDegree="90" />
+		<push back="200" />
+		<upgrade level="24" />
+		<motion>
+			<motionProperty sequenceName="Assassin_LuckySeven_A" selfInputCombo="selfinputcombo" strTagEffects="e0=CH/Skill/Assassin/Eff_Assassin_LuckySeven_Cast_01.xml" />
+			<attack point="p0" targetCount="1" magicPathID="10800001" sequence="1" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+				<rangeProperty rangeType="frustum" distance="800" height="150" width="150" endWidth="900" applyTarget="1" />
+				<arrowProperty overlap="1" rayPhysxTest="1" bounceType="2" bounceCount="1" bounceRadius="300" collision="50.000000,25.000000,25.000000" collisionAdd="0.000000,25.000000,25.000000" effect="CH/Skill/Assassin/Eff_Assassin_LuckySeven_Ball_01.xml" />
+				<damageProperty rate="1.25" effectHit="CH/Skill/Assassin/Eff_Assassin_LuckySeven_Hit_01.xml" attackMaterial="3" />
+			</attack>
+			<attack point="p1" targetCount="1" magicPathID="10800002" sequence="1" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+				<rangeProperty rangeType="frustum" distance="800" height="150" width="150" endWidth="900" applyTarget="1" />
+				<arrowProperty overlap="1" rayPhysxTest="1" bounceType="2" bounceCount="1" bounceRadius="300" collision="50.000000,25.000000,25.000000" collisionAdd="0.000000,25.000000,25.000000" effect="CH/Skill/Assassin/Eff_Assassin_LuckySeven_Ball_01.xml" />
+				<damageProperty hand="1" rate="1.25" effectHit="CH/Skill/Assassin/Eff_Assassin_LuckySeven_Hit_01.xml" attackMaterial="3" />
+			</attack>
+		</motion>
+	</level>
 	<level value="9">
 		<beginCondition probability="1" cooldownTime="0.6">
 			<stat hp="1" />
@@ -463,6 +397,28 @@
 				<rangeProperty rangeType="frustum" distance="800" height="150" width="150" endWidth="900" applyTarget="1" />
 				<arrowProperty overlap="1" rayPhysxTest="1" bounceType="2" bounceCount="1" bounceRadius="300" collision="50.000000,25.000000,25.000000" collisionAdd="0.000000,25.000000,25.000000" effect="CH/Skill/Assassin/Eff_Assassin_LuckySeven_Ball_01.xml" />
 				<damageProperty hand="1" rate="1.16" effectHit="CH/Skill/Assassin/Eff_Assassin_LuckySeven_Hit_01.xml" attackMaterial="3" />
+			</attack>
+		</motion>
+	</level>
+	<level value="10" feature="CharacterBalance_01">
+		<beginCondition probability="1" cooldownTime="0.6">
+			<stat hp="1" />
+			<weapon lh="34" rh="34" />
+		</beginCondition>
+		<autoTargeting autoTargetingMaxDegree="90" />
+		<push back="200" />
+		<upgrade level="26" />
+		<motion>
+			<motionProperty sequenceName="Assassin_LuckySeven_A" selfInputCombo="selfinputcombo" strTagEffects="e0=CH/Skill/Assassin/Eff_Assassin_LuckySeven_Cast_01.xml" />
+			<attack point="p0" targetCount="1" magicPathID="10800001" sequence="1" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+				<rangeProperty rangeType="frustum" distance="800" height="150" width="150" endWidth="900" applyTarget="1" />
+				<arrowProperty overlap="1" rayPhysxTest="1" bounceType="2" bounceCount="1" bounceRadius="300" collision="50.000000,25.000000,25.000000" collisionAdd="0.000000,25.000000,25.000000" effect="CH/Skill/Assassin/Eff_Assassin_LuckySeven_Ball_01.xml" />
+				<damageProperty rate="1.31" effectHit="CH/Skill/Assassin/Eff_Assassin_LuckySeven_Hit_01.xml" attackMaterial="3" />
+			</attack>
+			<attack point="p1" targetCount="1" magicPathID="10800002" sequence="1" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+				<rangeProperty rangeType="frustum" distance="800" height="150" width="150" endWidth="900" applyTarget="1" />
+				<arrowProperty overlap="1" rayPhysxTest="1" bounceType="2" bounceCount="1" bounceRadius="300" collision="50.000000,25.000000,25.000000" collisionAdd="0.000000,25.000000,25.000000" effect="CH/Skill/Assassin/Eff_Assassin_LuckySeven_Ball_01.xml" />
+				<damageProperty hand="1" rate="1.31" effectHit="CH/Skill/Assassin/Eff_Assassin_LuckySeven_Hit_01.xml" attackMaterial="3" />
 			</attack>
 		</motion>
 	</level>
@@ -488,6 +444,28 @@
 			</attack>
 		</motion>
 	</level>
+	<level value="11" feature="CharacterBalance_01">
+		<beginCondition probability="1" cooldownTime="0.6">
+			<stat hp="1" />
+			<weapon lh="34" rh="34" />
+		</beginCondition>
+		<autoTargeting autoTargetingMaxDegree="90" />
+		<push back="200" />
+		<upgrade level="28" />
+		<motion>
+			<motionProperty sequenceName="Assassin_LuckySeven_A" selfInputCombo="selfinputcombo" strTagEffects="e0=CH/Skill/Assassin/Eff_Assassin_LuckySeven_Cast_01.xml" />
+			<attack point="p0" targetCount="1" magicPathID="10800001" sequence="1" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+				<rangeProperty rangeType="frustum" distance="800" height="150" width="150" endWidth="900" applyTarget="1" />
+				<arrowProperty overlap="1" rayPhysxTest="1" bounceType="2" bounceCount="1" bounceRadius="300" collision="50.000000,25.000000,25.000000" collisionAdd="0.000000,25.000000,25.000000" effect="CH/Skill/Assassin/Eff_Assassin_LuckySeven_Ball_01.xml" />
+				<damageProperty rate="1.37" effectHit="CH/Skill/Assassin/Eff_Assassin_LuckySeven_Hit_01.xml" attackMaterial="3" />
+			</attack>
+			<attack point="p1" targetCount="1" magicPathID="10800002" sequence="1" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+				<rangeProperty rangeType="frustum" distance="800" height="150" width="150" endWidth="900" applyTarget="1" />
+				<arrowProperty overlap="1" rayPhysxTest="1" bounceType="2" bounceCount="1" bounceRadius="300" collision="50.000000,25.000000,25.000000" collisionAdd="0.000000,25.000000,25.000000" effect="CH/Skill/Assassin/Eff_Assassin_LuckySeven_Ball_01.xml" />
+				<damageProperty hand="1" rate="1.37" effectHit="CH/Skill/Assassin/Eff_Assassin_LuckySeven_Hit_01.xml" attackMaterial="3" />
+			</attack>
+		</motion>
+	</level>
 	<level value="11">
 		<beginCondition probability="1" cooldownTime="0.6">
 			<stat hp="1" />
@@ -507,6 +485,28 @@
 				<rangeProperty rangeType="frustum" distance="800" height="150" width="150" endWidth="900" applyTarget="1" />
 				<arrowProperty overlap="1" rayPhysxTest="1" bounceType="2" bounceCount="1" bounceRadius="300" collision="50.000000,25.000000,25.000000" collisionAdd="0.000000,25.000000,25.000000" effect="CH/Skill/Assassin/Eff_Assassin_LuckySeven_Ball_01.xml" />
 				<damageProperty hand="1" rate="1.26" effectHit="CH/Skill/Assassin/Eff_Assassin_LuckySeven_Hit_01.xml" attackMaterial="3" />
+			</attack>
+		</motion>
+	</level>
+	<level value="12" feature="CharacterBalance_01">
+		<beginCondition probability="1" cooldownTime="0.6">
+			<stat hp="1" />
+			<weapon lh="34" rh="34" />
+		</beginCondition>
+		<autoTargeting autoTargetingMaxDegree="90" />
+		<push back="200" />
+		<upgrade level="30" />
+		<motion>
+			<motionProperty sequenceName="Assassin_LuckySeven_A" selfInputCombo="selfinputcombo" strTagEffects="e0=CH/Skill/Assassin/Eff_Assassin_LuckySeven_Cast_01.xml" />
+			<attack point="p0" targetCount="1" magicPathID="10800001" sequence="1" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+				<rangeProperty rangeType="frustum" distance="800" height="150" width="150" endWidth="900" applyTarget="1" />
+				<arrowProperty overlap="1" rayPhysxTest="1" bounceType="2" bounceCount="1" bounceRadius="300" collision="50.000000,25.000000,25.000000" collisionAdd="0.000000,25.000000,25.000000" effect="CH/Skill/Assassin/Eff_Assassin_LuckySeven_Ball_01.xml" />
+				<damageProperty rate="1.43" effectHit="CH/Skill/Assassin/Eff_Assassin_LuckySeven_Hit_01.xml" attackMaterial="3" />
+			</attack>
+			<attack point="p1" targetCount="1" magicPathID="10800002" sequence="1" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+				<rangeProperty rangeType="frustum" distance="800" height="150" width="150" endWidth="900" applyTarget="1" />
+				<arrowProperty overlap="1" rayPhysxTest="1" bounceType="2" bounceCount="1" bounceRadius="300" collision="50.000000,25.000000,25.000000" collisionAdd="0.000000,25.000000,25.000000" effect="CH/Skill/Assassin/Eff_Assassin_LuckySeven_Ball_01.xml" />
+				<damageProperty hand="1" rate="1.43" effectHit="CH/Skill/Assassin/Eff_Assassin_LuckySeven_Hit_01.xml" attackMaterial="3" />
 			</attack>
 		</motion>
 	</level>

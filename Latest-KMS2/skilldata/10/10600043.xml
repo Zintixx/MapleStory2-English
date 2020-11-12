@@ -2,7 +2,7 @@
 <!-- 파싱해서 사용하는 데이터이니 직접 수정하지 마세요 -->
 <ms2 feature="">
 	<basic>
-		<ui icon="./Data/Resource/Image/skill/icon/10600041.png" attackType="1" showCastingBar="1" paramCastingBar="&lt;v startFrame=&quot;showchargingred_start&quot; color=&quot;red2&quot; startGauge=&quot;1&quot; text=&quot;s_character_skill_chargingmax&quot; ease=&quot;1&quot;/&gt;" />
+		<ui icon="./Data/Resource/Image/skill/icon/10600041.png" attackType="1" showCastingBar="1" paramCastingBar="&lt;v startFrame=&quot;showchargingred_start&quot; color=&quot;red2&quot; text=&quot;s_character_skill_chargingmax&quot; startGauge=&quot;1&quot; ease=&quot;1&quot;/&gt;" />
 		<kinds subType="2" rangeType="2" continue="1" element="3" unrideOnUse="1" />
 		<stateAttr superArmor="3" notKeepEffect="1" keyIsDown="1" useDefaultSkill="1" useDefaultSkillID="10600071" ignoreReduceCooldown="1" />
 	</basic>
@@ -33,303 +33,6 @@
 			</attack>
 		</motion>
 	</level>
-	<level value="2" feature="CharacterBalance_01">
-		<beginCondition probability="1">
-			<stat hp="1" />
-			<weapon lh="0" rh="53" />
-		</beginCondition>
-		<autoTargeting autoTargetingMaxDegree="45" />
-		<push back="300" />
-		<combo comboSkill="1" chargingSkill="1" comboOriginSkill="10600041" inputSkill="10600041" outputSkill="10600043" />
-		<motion>
-			<motionProperty sequenceName="HeavyGunner_ElectricBlast3_A" loopEffect="CH/Skill/HeavyGunner/Eff_HeavyGunner_ElectricBlast3_Loop_01.xml" strTagEffects="e0=CH/Skill/HeavyGunner/Eff_HeavyGunner_ElectricBlast3_Cast_01.xml,e1=CH/Skill/HeavyGunner/Eff_HeavyGunner_ElectricBlast3_Cast_02.xml" loopCount="20" />
-			<attack point="p0" pointGroupID="10600043" targetCount="8" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="2" unrideOnHit="1">
-				<rangeProperty rangeType="box" distance="900" height="200" width="300" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty rate="4.74" effectRemain="CH/Skill/HeavyGunner/Eff_HeavyGunner_ElectricBlast_Remain_01.xml" effectHit="CH/Common/Eff_Common_Electric_Hit.xml" push="1" pushdistance="150" pushduration="0.2" pushEaseType="1" pushPriority="1" attackMaterial="1" />
-			</attack>
-			<attack point="p1" pointGroupID="106000431" targetCount="8" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="2" unrideOnHit="1">
-				<rangeProperty rangeType="box" distance="900" height="200" width="300" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty rate="4.74" effectRemain="CH/Skill/HeavyGunner/Eff_HeavyGunner_ElectricBlast_Remain_01.xml" effectHit="CH/Common/Eff_Common_Electric_Hit.xml" push="1" pushdistance="150" pushduration="0.2" pushEaseType="1" pushPriority="2" attackMaterial="1" />
-			</attack>
-			<attack point="p2" pointGroupID="106000432" targetCount="8" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="2" unrideOnHit="1">
-				<rangeProperty rangeType="box" distance="900" height="200" width="300" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty rate="4.74" effectRemain="CH/Skill/HeavyGunner/Eff_HeavyGunner_ElectricBlast_Remain_01.xml" effectHit="CH/Common/Eff_Common_Electric_Hit.xml" push="1" pushdistance="150" pushduration="0.2" pushEaseType="1" pushPriority="3" attackMaterial="1" />
-			</attack>
-		</motion>
-	</level>
-	<level value="3" feature="CharacterBalance_01">
-		<beginCondition probability="1">
-			<stat hp="1" />
-			<weapon lh="0" rh="53" />
-		</beginCondition>
-		<autoTargeting autoTargetingMaxDegree="45" />
-		<push back="300" />
-		<combo comboSkill="1" chargingSkill="1" comboOriginSkill="10600041" inputSkill="10600041" outputSkill="10600043" />
-		<motion>
-			<motionProperty sequenceName="HeavyGunner_ElectricBlast3_A" loopEffect="CH/Skill/HeavyGunner/Eff_HeavyGunner_ElectricBlast3_Loop_01.xml" strTagEffects="e0=CH/Skill/HeavyGunner/Eff_HeavyGunner_ElectricBlast3_Cast_01.xml,e1=CH/Skill/HeavyGunner/Eff_HeavyGunner_ElectricBlast3_Cast_02.xml" loopCount="20" />
-			<attack point="p0" pointGroupID="10600043" targetCount="8" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="2" unrideOnHit="1">
-				<rangeProperty rangeType="box" distance="900" height="200" width="300" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty rate="5.06" effectRemain="CH/Skill/HeavyGunner/Eff_HeavyGunner_ElectricBlast_Remain_01.xml" effectHit="CH/Common/Eff_Common_Electric_Hit.xml" push="1" pushdistance="150" pushduration="0.2" pushEaseType="1" pushPriority="1" attackMaterial="1" />
-			</attack>
-			<attack point="p1" pointGroupID="106000431" targetCount="8" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="2" unrideOnHit="1">
-				<rangeProperty rangeType="box" distance="900" height="200" width="300" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty rate="5.06" effectRemain="CH/Skill/HeavyGunner/Eff_HeavyGunner_ElectricBlast_Remain_01.xml" effectHit="CH/Common/Eff_Common_Electric_Hit.xml" push="1" pushdistance="150" pushduration="0.2" pushEaseType="1" pushPriority="2" attackMaterial="1" />
-			</attack>
-			<attack point="p2" pointGroupID="106000432" targetCount="8" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="2" unrideOnHit="1">
-				<rangeProperty rangeType="box" distance="900" height="200" width="300" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty rate="5.06" effectRemain="CH/Skill/HeavyGunner/Eff_HeavyGunner_ElectricBlast_Remain_01.xml" effectHit="CH/Common/Eff_Common_Electric_Hit.xml" push="1" pushdistance="150" pushduration="0.2" pushEaseType="1" pushPriority="3" attackMaterial="1" />
-			</attack>
-		</motion>
-	</level>
-	<level value="4" feature="CharacterBalance_01">
-		<beginCondition probability="1">
-			<stat hp="1" />
-			<weapon lh="0" rh="53" />
-		</beginCondition>
-		<autoTargeting autoTargetingMaxDegree="45" />
-		<push back="300" />
-		<combo comboSkill="1" chargingSkill="1" comboOriginSkill="10600041" inputSkill="10600041" outputSkill="10600043" />
-		<motion>
-			<motionProperty sequenceName="HeavyGunner_ElectricBlast3_A" loopEffect="CH/Skill/HeavyGunner/Eff_HeavyGunner_ElectricBlast3_Loop_01.xml" strTagEffects="e0=CH/Skill/HeavyGunner/Eff_HeavyGunner_ElectricBlast3_Cast_01.xml,e1=CH/Skill/HeavyGunner/Eff_HeavyGunner_ElectricBlast3_Cast_02.xml" loopCount="20" />
-			<attack point="p0" pointGroupID="10600043" targetCount="8" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="2" unrideOnHit="1">
-				<rangeProperty rangeType="box" distance="900" height="200" width="300" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty rate="5.38" effectRemain="CH/Skill/HeavyGunner/Eff_HeavyGunner_ElectricBlast_Remain_01.xml" effectHit="CH/Common/Eff_Common_Electric_Hit.xml" push="1" pushdistance="150" pushduration="0.2" pushEaseType="1" pushPriority="1" attackMaterial="1" />
-			</attack>
-			<attack point="p1" pointGroupID="106000431" targetCount="8" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="2" unrideOnHit="1">
-				<rangeProperty rangeType="box" distance="900" height="200" width="300" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty rate="5.38" effectRemain="CH/Skill/HeavyGunner/Eff_HeavyGunner_ElectricBlast_Remain_01.xml" effectHit="CH/Common/Eff_Common_Electric_Hit.xml" push="1" pushdistance="150" pushduration="0.2" pushEaseType="1" pushPriority="2" attackMaterial="1" />
-			</attack>
-			<attack point="p2" pointGroupID="106000432" targetCount="8" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="2" unrideOnHit="1">
-				<rangeProperty rangeType="box" distance="900" height="200" width="300" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty rate="5.38" effectRemain="CH/Skill/HeavyGunner/Eff_HeavyGunner_ElectricBlast_Remain_01.xml" effectHit="CH/Common/Eff_Common_Electric_Hit.xml" push="1" pushdistance="150" pushduration="0.2" pushEaseType="1" pushPriority="3" attackMaterial="1" />
-			</attack>
-		</motion>
-	</level>
-	<level value="5" feature="CharacterBalance_01">
-		<beginCondition probability="1">
-			<stat hp="1" />
-			<weapon lh="0" rh="53" />
-		</beginCondition>
-		<autoTargeting autoTargetingMaxDegree="45" />
-		<push back="300" />
-		<combo comboSkill="1" chargingSkill="1" comboOriginSkill="10600041" inputSkill="10600041" outputSkill="10600043" />
-		<motion>
-			<motionProperty sequenceName="HeavyGunner_ElectricBlast3_A" loopEffect="CH/Skill/HeavyGunner/Eff_HeavyGunner_ElectricBlast3_Loop_01.xml" strTagEffects="e0=CH/Skill/HeavyGunner/Eff_HeavyGunner_ElectricBlast3_Cast_01.xml,e1=CH/Skill/HeavyGunner/Eff_HeavyGunner_ElectricBlast3_Cast_02.xml" loopCount="20" />
-			<attack point="p0" pointGroupID="10600043" targetCount="8" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="2" unrideOnHit="1">
-				<rangeProperty rangeType="box" distance="900" height="200" width="300" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty rate="5.7" effectRemain="CH/Skill/HeavyGunner/Eff_HeavyGunner_ElectricBlast_Remain_01.xml" effectHit="CH/Common/Eff_Common_Electric_Hit.xml" push="1" pushdistance="150" pushduration="0.2" pushEaseType="1" pushPriority="1" attackMaterial="1" />
-			</attack>
-			<attack point="p1" pointGroupID="106000431" targetCount="8" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="2" unrideOnHit="1">
-				<rangeProperty rangeType="box" distance="900" height="200" width="300" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty rate="5.7" effectRemain="CH/Skill/HeavyGunner/Eff_HeavyGunner_ElectricBlast_Remain_01.xml" effectHit="CH/Common/Eff_Common_Electric_Hit.xml" push="1" pushdistance="150" pushduration="0.2" pushEaseType="1" pushPriority="2" attackMaterial="1" />
-			</attack>
-			<attack point="p2" pointGroupID="106000432" targetCount="8" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="2" unrideOnHit="1">
-				<rangeProperty rangeType="box" distance="900" height="200" width="300" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty rate="5.7" effectRemain="CH/Skill/HeavyGunner/Eff_HeavyGunner_ElectricBlast_Remain_01.xml" effectHit="CH/Common/Eff_Common_Electric_Hit.xml" push="1" pushdistance="150" pushduration="0.2" pushEaseType="1" pushPriority="3" attackMaterial="1" />
-			</attack>
-		</motion>
-	</level>
-	<level value="6" feature="CharacterBalance_01">
-		<beginCondition probability="1">
-			<stat hp="1" />
-			<weapon lh="0" rh="53" />
-		</beginCondition>
-		<autoTargeting autoTargetingMaxDegree="45" />
-		<push back="300" />
-		<combo comboSkill="1" chargingSkill="1" comboOriginSkill="10600041" inputSkill="10600041" outputSkill="10600043" />
-		<motion>
-			<motionProperty sequenceName="HeavyGunner_ElectricBlast3_A" loopEffect="CH/Skill/HeavyGunner/Eff_HeavyGunner_ElectricBlast3_Loop_01.xml" strTagEffects="e0=CH/Skill/HeavyGunner/Eff_HeavyGunner_ElectricBlast3_Cast_01.xml,e1=CH/Skill/HeavyGunner/Eff_HeavyGunner_ElectricBlast3_Cast_02.xml" loopCount="20" />
-			<attack point="p0" pointGroupID="10600043" targetCount="8" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="2" unrideOnHit="1">
-				<rangeProperty rangeType="box" distance="900" height="200" width="300" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty rate="6.02" effectRemain="CH/Skill/HeavyGunner/Eff_HeavyGunner_ElectricBlast_Remain_01.xml" effectHit="CH/Common/Eff_Common_Electric_Hit.xml" push="1" pushdistance="150" pushduration="0.2" pushEaseType="1" pushPriority="1" attackMaterial="1" />
-			</attack>
-			<attack point="p1" pointGroupID="106000431" targetCount="8" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="2" unrideOnHit="1">
-				<rangeProperty rangeType="box" distance="900" height="200" width="300" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty rate="6.02" effectRemain="CH/Skill/HeavyGunner/Eff_HeavyGunner_ElectricBlast_Remain_01.xml" effectHit="CH/Common/Eff_Common_Electric_Hit.xml" push="1" pushdistance="150" pushduration="0.2" pushEaseType="1" pushPriority="2" attackMaterial="1" />
-			</attack>
-			<attack point="p2" pointGroupID="106000432" targetCount="8" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="2" unrideOnHit="1">
-				<rangeProperty rangeType="box" distance="900" height="200" width="300" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty rate="6.02" effectRemain="CH/Skill/HeavyGunner/Eff_HeavyGunner_ElectricBlast_Remain_01.xml" effectHit="CH/Common/Eff_Common_Electric_Hit.xml" push="1" pushdistance="150" pushduration="0.2" pushEaseType="1" pushPriority="3" attackMaterial="1" />
-			</attack>
-		</motion>
-	</level>
-	<level value="7" feature="CharacterBalance_01">
-		<beginCondition probability="1">
-			<stat hp="1" />
-			<weapon lh="0" rh="53" />
-		</beginCondition>
-		<autoTargeting autoTargetingMaxDegree="45" />
-		<push back="300" />
-		<combo comboSkill="1" chargingSkill="1" comboOriginSkill="10600041" inputSkill="10600041" outputSkill="10600043" />
-		<motion>
-			<motionProperty sequenceName="HeavyGunner_ElectricBlast3_A" loopEffect="CH/Skill/HeavyGunner/Eff_HeavyGunner_ElectricBlast3_Loop_01.xml" strTagEffects="e0=CH/Skill/HeavyGunner/Eff_HeavyGunner_ElectricBlast3_Cast_01.xml,e1=CH/Skill/HeavyGunner/Eff_HeavyGunner_ElectricBlast3_Cast_02.xml" loopCount="20" />
-			<attack point="p0" pointGroupID="10600043" targetCount="8" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="2" unrideOnHit="1">
-				<rangeProperty rangeType="box" distance="900" height="200" width="300" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty rate="6.34" effectRemain="CH/Skill/HeavyGunner/Eff_HeavyGunner_ElectricBlast_Remain_01.xml" effectHit="CH/Common/Eff_Common_Electric_Hit.xml" push="1" pushdistance="150" pushduration="0.2" pushEaseType="1" pushPriority="1" attackMaterial="1" />
-			</attack>
-			<attack point="p1" pointGroupID="106000431" targetCount="8" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="2" unrideOnHit="1">
-				<rangeProperty rangeType="box" distance="900" height="200" width="300" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty rate="6.34" effectRemain="CH/Skill/HeavyGunner/Eff_HeavyGunner_ElectricBlast_Remain_01.xml" effectHit="CH/Common/Eff_Common_Electric_Hit.xml" push="1" pushdistance="150" pushduration="0.2" pushEaseType="1" pushPriority="2" attackMaterial="1" />
-			</attack>
-			<attack point="p2" pointGroupID="106000432" targetCount="8" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="2" unrideOnHit="1">
-				<rangeProperty rangeType="box" distance="900" height="200" width="300" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty rate="6.34" effectRemain="CH/Skill/HeavyGunner/Eff_HeavyGunner_ElectricBlast_Remain_01.xml" effectHit="CH/Common/Eff_Common_Electric_Hit.xml" push="1" pushdistance="150" pushduration="0.2" pushEaseType="1" pushPriority="3" attackMaterial="1" />
-			</attack>
-		</motion>
-	</level>
-	<level value="8" feature="CharacterBalance_01">
-		<beginCondition probability="1">
-			<stat hp="1" />
-			<weapon lh="0" rh="53" />
-		</beginCondition>
-		<autoTargeting autoTargetingMaxDegree="45" />
-		<push back="300" />
-		<combo comboSkill="1" chargingSkill="1" comboOriginSkill="10600041" inputSkill="10600041" outputSkill="10600043" />
-		<motion>
-			<motionProperty sequenceName="HeavyGunner_ElectricBlast3_A" loopEffect="CH/Skill/HeavyGunner/Eff_HeavyGunner_ElectricBlast3_Loop_01.xml" strTagEffects="e0=CH/Skill/HeavyGunner/Eff_HeavyGunner_ElectricBlast3_Cast_01.xml,e1=CH/Skill/HeavyGunner/Eff_HeavyGunner_ElectricBlast3_Cast_02.xml" loopCount="20" />
-			<attack point="p0" pointGroupID="10600043" targetCount="8" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="2" unrideOnHit="1">
-				<rangeProperty rangeType="box" distance="900" height="200" width="300" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty rate="6.66" effectRemain="CH/Skill/HeavyGunner/Eff_HeavyGunner_ElectricBlast_Remain_01.xml" effectHit="CH/Common/Eff_Common_Electric_Hit.xml" push="1" pushdistance="150" pushduration="0.2" pushEaseType="1" pushPriority="1" attackMaterial="1" />
-			</attack>
-			<attack point="p1" pointGroupID="106000431" targetCount="8" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="2" unrideOnHit="1">
-				<rangeProperty rangeType="box" distance="900" height="200" width="300" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty rate="6.66" effectRemain="CH/Skill/HeavyGunner/Eff_HeavyGunner_ElectricBlast_Remain_01.xml" effectHit="CH/Common/Eff_Common_Electric_Hit.xml" push="1" pushdistance="150" pushduration="0.2" pushEaseType="1" pushPriority="2" attackMaterial="1" />
-			</attack>
-			<attack point="p2" pointGroupID="106000432" targetCount="8" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="2" unrideOnHit="1">
-				<rangeProperty rangeType="box" distance="900" height="200" width="300" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty rate="6.66" effectRemain="CH/Skill/HeavyGunner/Eff_HeavyGunner_ElectricBlast_Remain_01.xml" effectHit="CH/Common/Eff_Common_Electric_Hit.xml" push="1" pushdistance="150" pushduration="0.2" pushEaseType="1" pushPriority="3" attackMaterial="1" />
-			</attack>
-		</motion>
-	</level>
-	<level value="9" feature="CharacterBalance_01">
-		<beginCondition probability="1">
-			<stat hp="1" />
-			<weapon lh="0" rh="53" />
-		</beginCondition>
-		<autoTargeting autoTargetingMaxDegree="45" />
-		<push back="300" />
-		<combo comboSkill="1" chargingSkill="1" comboOriginSkill="10600041" inputSkill="10600041" outputSkill="10600043" />
-		<motion>
-			<motionProperty sequenceName="HeavyGunner_ElectricBlast3_A" loopEffect="CH/Skill/HeavyGunner/Eff_HeavyGunner_ElectricBlast3_Loop_01.xml" strTagEffects="e0=CH/Skill/HeavyGunner/Eff_HeavyGunner_ElectricBlast3_Cast_01.xml,e1=CH/Skill/HeavyGunner/Eff_HeavyGunner_ElectricBlast3_Cast_02.xml" loopCount="20" />
-			<attack point="p0" pointGroupID="10600043" targetCount="8" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="2" unrideOnHit="1">
-				<rangeProperty rangeType="box" distance="900" height="200" width="300" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty rate="6.98" effectRemain="CH/Skill/HeavyGunner/Eff_HeavyGunner_ElectricBlast_Remain_01.xml" effectHit="CH/Common/Eff_Common_Electric_Hit.xml" push="1" pushdistance="150" pushduration="0.2" pushEaseType="1" pushPriority="1" attackMaterial="1" />
-			</attack>
-			<attack point="p1" pointGroupID="106000431" targetCount="8" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="2" unrideOnHit="1">
-				<rangeProperty rangeType="box" distance="900" height="200" width="300" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty rate="6.98" effectRemain="CH/Skill/HeavyGunner/Eff_HeavyGunner_ElectricBlast_Remain_01.xml" effectHit="CH/Common/Eff_Common_Electric_Hit.xml" push="1" pushdistance="150" pushduration="0.2" pushEaseType="1" pushPriority="2" attackMaterial="1" />
-			</attack>
-			<attack point="p2" pointGroupID="106000432" targetCount="8" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="2" unrideOnHit="1">
-				<rangeProperty rangeType="box" distance="900" height="200" width="300" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty rate="6.98" effectRemain="CH/Skill/HeavyGunner/Eff_HeavyGunner_ElectricBlast_Remain_01.xml" effectHit="CH/Common/Eff_Common_Electric_Hit.xml" push="1" pushdistance="150" pushduration="0.2" pushEaseType="1" pushPriority="3" attackMaterial="1" />
-			</attack>
-		</motion>
-	</level>
-	<level value="10" feature="CharacterBalance_01">
-		<beginCondition probability="1">
-			<stat hp="1" />
-			<weapon lh="0" rh="53" />
-		</beginCondition>
-		<autoTargeting autoTargetingMaxDegree="45" />
-		<push back="300" />
-		<combo comboSkill="1" chargingSkill="1" comboOriginSkill="10600041" inputSkill="10600041" outputSkill="10600043" />
-		<motion>
-			<motionProperty sequenceName="HeavyGunner_ElectricBlast3_A" loopEffect="CH/Skill/HeavyGunner/Eff_HeavyGunner_ElectricBlast3_Loop_01.xml" strTagEffects="e0=CH/Skill/HeavyGunner/Eff_HeavyGunner_ElectricBlast3_Cast_01.xml,e1=CH/Skill/HeavyGunner/Eff_HeavyGunner_ElectricBlast3_Cast_02.xml" loopCount="20" />
-			<attack point="p0" pointGroupID="10600043" targetCount="8" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="2" unrideOnHit="1">
-				<rangeProperty rangeType="box" distance="900" height="200" width="300" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty rate="7.3" effectRemain="CH/Skill/HeavyGunner/Eff_HeavyGunner_ElectricBlast_Remain_01.xml" effectHit="CH/Common/Eff_Common_Electric_Hit.xml" push="1" pushdistance="150" pushduration="0.2" pushEaseType="1" pushPriority="1" attackMaterial="1" />
-			</attack>
-			<attack point="p1" pointGroupID="106000431" targetCount="8" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="2" unrideOnHit="1">
-				<rangeProperty rangeType="box" distance="900" height="200" width="300" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty rate="7.3" effectRemain="CH/Skill/HeavyGunner/Eff_HeavyGunner_ElectricBlast_Remain_01.xml" effectHit="CH/Common/Eff_Common_Electric_Hit.xml" push="1" pushdistance="150" pushduration="0.2" pushEaseType="1" pushPriority="2" attackMaterial="1" />
-			</attack>
-			<attack point="p2" pointGroupID="106000432" targetCount="8" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="2" unrideOnHit="1">
-				<rangeProperty rangeType="box" distance="900" height="200" width="300" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty rate="7.3" effectRemain="CH/Skill/HeavyGunner/Eff_HeavyGunner_ElectricBlast_Remain_01.xml" effectHit="CH/Common/Eff_Common_Electric_Hit.xml" push="1" pushdistance="150" pushduration="0.2" pushEaseType="1" pushPriority="3" attackMaterial="1" />
-			</attack>
-		</motion>
-	</level>
-	<level value="11" feature="CharacterBalance_01">
-		<beginCondition probability="1">
-			<stat hp="1" />
-			<weapon lh="0" rh="53" />
-		</beginCondition>
-		<autoTargeting autoTargetingMaxDegree="45" />
-		<push back="300" />
-		<combo comboSkill="1" chargingSkill="1" comboOriginSkill="10600041" inputSkill="10600041" outputSkill="10600043" />
-		<motion>
-			<motionProperty sequenceName="HeavyGunner_ElectricBlast3_A" loopEffect="CH/Skill/HeavyGunner/Eff_HeavyGunner_ElectricBlast3_Loop_01.xml" strTagEffects="e0=CH/Skill/HeavyGunner/Eff_HeavyGunner_ElectricBlast3_Cast_01.xml,e1=CH/Skill/HeavyGunner/Eff_HeavyGunner_ElectricBlast3_Cast_02.xml" loopCount="20" />
-			<attack point="p0" pointGroupID="10600043" targetCount="8" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="2" unrideOnHit="1">
-				<rangeProperty rangeType="box" distance="900" height="200" width="300" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty rate="7.62" effectRemain="CH/Skill/HeavyGunner/Eff_HeavyGunner_ElectricBlast_Remain_01.xml" effectHit="CH/Common/Eff_Common_Electric_Hit.xml" push="1" pushdistance="150" pushduration="0.2" pushEaseType="1" pushPriority="1" attackMaterial="1" />
-			</attack>
-			<attack point="p1" pointGroupID="106000431" targetCount="8" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="2" unrideOnHit="1">
-				<rangeProperty rangeType="box" distance="900" height="200" width="300" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty rate="7.62" effectRemain="CH/Skill/HeavyGunner/Eff_HeavyGunner_ElectricBlast_Remain_01.xml" effectHit="CH/Common/Eff_Common_Electric_Hit.xml" push="1" pushdistance="150" pushduration="0.2" pushEaseType="1" pushPriority="2" attackMaterial="1" />
-			</attack>
-			<attack point="p2" pointGroupID="106000432" targetCount="8" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="2" unrideOnHit="1">
-				<rangeProperty rangeType="box" distance="900" height="200" width="300" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty rate="7.62" effectRemain="CH/Skill/HeavyGunner/Eff_HeavyGunner_ElectricBlast_Remain_01.xml" effectHit="CH/Common/Eff_Common_Electric_Hit.xml" push="1" pushdistance="150" pushduration="0.2" pushEaseType="1" pushPriority="3" attackMaterial="1" />
-			</attack>
-		</motion>
-	</level>
-	<level value="12" feature="CharacterBalance_01">
-		<beginCondition probability="1">
-			<stat hp="1" />
-			<weapon lh="0" rh="53" />
-		</beginCondition>
-		<autoTargeting autoTargetingMaxDegree="45" />
-		<push back="300" />
-		<combo comboSkill="1" chargingSkill="1" comboOriginSkill="10600041" inputSkill="10600041" outputSkill="10600043" />
-		<motion>
-			<motionProperty sequenceName="HeavyGunner_ElectricBlast3_A" loopEffect="CH/Skill/HeavyGunner/Eff_HeavyGunner_ElectricBlast3_Loop_01.xml" strTagEffects="e0=CH/Skill/HeavyGunner/Eff_HeavyGunner_ElectricBlast3_Cast_01.xml,e1=CH/Skill/HeavyGunner/Eff_HeavyGunner_ElectricBlast3_Cast_02.xml" loopCount="20" />
-			<attack point="p0" pointGroupID="10600043" targetCount="8" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="2" unrideOnHit="1">
-				<rangeProperty rangeType="box" distance="900" height="200" width="300" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty rate="7.94" effectRemain="CH/Skill/HeavyGunner/Eff_HeavyGunner_ElectricBlast_Remain_01.xml" effectHit="CH/Common/Eff_Common_Electric_Hit.xml" push="1" pushdistance="150" pushduration="0.2" pushEaseType="1" pushPriority="1" attackMaterial="1" />
-			</attack>
-			<attack point="p1" pointGroupID="106000431" targetCount="8" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="2" unrideOnHit="1">
-				<rangeProperty rangeType="box" distance="900" height="200" width="300" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty rate="7.94" effectRemain="CH/Skill/HeavyGunner/Eff_HeavyGunner_ElectricBlast_Remain_01.xml" effectHit="CH/Common/Eff_Common_Electric_Hit.xml" push="1" pushdistance="150" pushduration="0.2" pushEaseType="1" pushPriority="2" attackMaterial="1" />
-			</attack>
-			<attack point="p2" pointGroupID="106000432" targetCount="8" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="2" unrideOnHit="1">
-				<rangeProperty rangeType="box" distance="900" height="200" width="300" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty rate="7.94" effectRemain="CH/Skill/HeavyGunner/Eff_HeavyGunner_ElectricBlast_Remain_01.xml" effectHit="CH/Common/Eff_Common_Electric_Hit.xml" push="1" pushdistance="150" pushduration="0.2" pushEaseType="1" pushPriority="3" attackMaterial="1" />
-			</attack>
-		</motion>
-	</level>
 	<level value="1">
 		<beginCondition probability="1">
 			<stat hp="1" />
@@ -354,6 +57,33 @@
 				<rangeProperty rangeType="box" distance="900" height="200" width="300" applyTarget="1" />
 				<arrowProperty nonTarget="1" />
 				<damageProperty rate="4.55" effectRemain="CH/Skill/HeavyGunner/Eff_HeavyGunner_ElectricBlast_Remain_01.xml" effectHit="CH/Common/Eff_Common_Electric_Hit.xml" push="1" pushdistance="150" pushduration="0.2" pushEaseType="1" pushPriority="3" attackMaterial="1" />
+			</attack>
+		</motion>
+	</level>
+	<level value="2" feature="CharacterBalance_01">
+		<beginCondition probability="1">
+			<stat hp="1" />
+			<weapon lh="0" rh="53" />
+		</beginCondition>
+		<autoTargeting autoTargetingMaxDegree="45" />
+		<push back="300" />
+		<combo comboSkill="1" chargingSkill="1" comboOriginSkill="10600041" inputSkill="10600041" outputSkill="10600043" />
+		<motion>
+			<motionProperty sequenceName="HeavyGunner_ElectricBlast3_A" loopEffect="CH/Skill/HeavyGunner/Eff_HeavyGunner_ElectricBlast3_Loop_01.xml" strTagEffects="e0=CH/Skill/HeavyGunner/Eff_HeavyGunner_ElectricBlast3_Cast_01.xml,e1=CH/Skill/HeavyGunner/Eff_HeavyGunner_ElectricBlast3_Cast_02.xml" loopCount="20" />
+			<attack point="p0" pointGroupID="10600043" targetCount="8" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+				<rangeProperty rangeType="box" distance="900" height="200" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="4.74" effectRemain="CH/Skill/HeavyGunner/Eff_HeavyGunner_ElectricBlast_Remain_01.xml" effectHit="CH/Common/Eff_Common_Electric_Hit.xml" push="1" pushdistance="150" pushduration="0.2" pushEaseType="1" pushPriority="1" attackMaterial="1" />
+			</attack>
+			<attack point="p1" pointGroupID="106000431" targetCount="8" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+				<rangeProperty rangeType="box" distance="900" height="200" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="4.74" effectRemain="CH/Skill/HeavyGunner/Eff_HeavyGunner_ElectricBlast_Remain_01.xml" effectHit="CH/Common/Eff_Common_Electric_Hit.xml" push="1" pushdistance="150" pushduration="0.2" pushEaseType="1" pushPriority="2" attackMaterial="1" />
+			</attack>
+			<attack point="p2" pointGroupID="106000432" targetCount="8" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+				<rangeProperty rangeType="box" distance="900" height="200" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="4.74" effectRemain="CH/Skill/HeavyGunner/Eff_HeavyGunner_ElectricBlast_Remain_01.xml" effectHit="CH/Common/Eff_Common_Electric_Hit.xml" push="1" pushdistance="150" pushduration="0.2" pushEaseType="1" pushPriority="3" attackMaterial="1" />
 			</attack>
 		</motion>
 	</level>
@@ -384,6 +114,33 @@
 			</attack>
 		</motion>
 	</level>
+	<level value="3" feature="CharacterBalance_01">
+		<beginCondition probability="1">
+			<stat hp="1" />
+			<weapon lh="0" rh="53" />
+		</beginCondition>
+		<autoTargeting autoTargetingMaxDegree="45" />
+		<push back="300" />
+		<combo comboSkill="1" chargingSkill="1" comboOriginSkill="10600041" inputSkill="10600041" outputSkill="10600043" />
+		<motion>
+			<motionProperty sequenceName="HeavyGunner_ElectricBlast3_A" loopEffect="CH/Skill/HeavyGunner/Eff_HeavyGunner_ElectricBlast3_Loop_01.xml" strTagEffects="e0=CH/Skill/HeavyGunner/Eff_HeavyGunner_ElectricBlast3_Cast_01.xml,e1=CH/Skill/HeavyGunner/Eff_HeavyGunner_ElectricBlast3_Cast_02.xml" loopCount="20" />
+			<attack point="p0" pointGroupID="10600043" targetCount="8" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+				<rangeProperty rangeType="box" distance="900" height="200" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="5.06" effectRemain="CH/Skill/HeavyGunner/Eff_HeavyGunner_ElectricBlast_Remain_01.xml" effectHit="CH/Common/Eff_Common_Electric_Hit.xml" push="1" pushdistance="150" pushduration="0.2" pushEaseType="1" pushPriority="1" attackMaterial="1" />
+			</attack>
+			<attack point="p1" pointGroupID="106000431" targetCount="8" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+				<rangeProperty rangeType="box" distance="900" height="200" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="5.06" effectRemain="CH/Skill/HeavyGunner/Eff_HeavyGunner_ElectricBlast_Remain_01.xml" effectHit="CH/Common/Eff_Common_Electric_Hit.xml" push="1" pushdistance="150" pushduration="0.2" pushEaseType="1" pushPriority="2" attackMaterial="1" />
+			</attack>
+			<attack point="p2" pointGroupID="106000432" targetCount="8" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+				<rangeProperty rangeType="box" distance="900" height="200" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="5.06" effectRemain="CH/Skill/HeavyGunner/Eff_HeavyGunner_ElectricBlast_Remain_01.xml" effectHit="CH/Common/Eff_Common_Electric_Hit.xml" push="1" pushdistance="150" pushduration="0.2" pushEaseType="1" pushPriority="3" attackMaterial="1" />
+			</attack>
+		</motion>
+	</level>
 	<level value="3">
 		<beginCondition probability="1">
 			<stat hp="1" />
@@ -408,6 +165,33 @@
 				<rangeProperty rangeType="box" distance="900" height="200" width="300" applyTarget="1" />
 				<arrowProperty nonTarget="1" />
 				<damageProperty rate="5.17" effectRemain="CH/Skill/HeavyGunner/Eff_HeavyGunner_ElectricBlast_Remain_01.xml" effectHit="CH/Common/Eff_Common_Electric_Hit.xml" push="1" pushdistance="150" pushduration="0.2" pushEaseType="1" pushPriority="3" attackMaterial="1" />
+			</attack>
+		</motion>
+	</level>
+	<level value="4" feature="CharacterBalance_01">
+		<beginCondition probability="1">
+			<stat hp="1" />
+			<weapon lh="0" rh="53" />
+		</beginCondition>
+		<autoTargeting autoTargetingMaxDegree="45" />
+		<push back="300" />
+		<combo comboSkill="1" chargingSkill="1" comboOriginSkill="10600041" inputSkill="10600041" outputSkill="10600043" />
+		<motion>
+			<motionProperty sequenceName="HeavyGunner_ElectricBlast3_A" loopEffect="CH/Skill/HeavyGunner/Eff_HeavyGunner_ElectricBlast3_Loop_01.xml" strTagEffects="e0=CH/Skill/HeavyGunner/Eff_HeavyGunner_ElectricBlast3_Cast_01.xml,e1=CH/Skill/HeavyGunner/Eff_HeavyGunner_ElectricBlast3_Cast_02.xml" loopCount="20" />
+			<attack point="p0" pointGroupID="10600043" targetCount="8" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+				<rangeProperty rangeType="box" distance="900" height="200" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="5.38" effectRemain="CH/Skill/HeavyGunner/Eff_HeavyGunner_ElectricBlast_Remain_01.xml" effectHit="CH/Common/Eff_Common_Electric_Hit.xml" push="1" pushdistance="150" pushduration="0.2" pushEaseType="1" pushPriority="1" attackMaterial="1" />
+			</attack>
+			<attack point="p1" pointGroupID="106000431" targetCount="8" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+				<rangeProperty rangeType="box" distance="900" height="200" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="5.38" effectRemain="CH/Skill/HeavyGunner/Eff_HeavyGunner_ElectricBlast_Remain_01.xml" effectHit="CH/Common/Eff_Common_Electric_Hit.xml" push="1" pushdistance="150" pushduration="0.2" pushEaseType="1" pushPriority="2" attackMaterial="1" />
+			</attack>
+			<attack point="p2" pointGroupID="106000432" targetCount="8" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+				<rangeProperty rangeType="box" distance="900" height="200" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="5.38" effectRemain="CH/Skill/HeavyGunner/Eff_HeavyGunner_ElectricBlast_Remain_01.xml" effectHit="CH/Common/Eff_Common_Electric_Hit.xml" push="1" pushdistance="150" pushduration="0.2" pushEaseType="1" pushPriority="3" attackMaterial="1" />
 			</attack>
 		</motion>
 	</level>
@@ -438,6 +222,33 @@
 			</attack>
 		</motion>
 	</level>
+	<level value="5" feature="CharacterBalance_01">
+		<beginCondition probability="1">
+			<stat hp="1" />
+			<weapon lh="0" rh="53" />
+		</beginCondition>
+		<autoTargeting autoTargetingMaxDegree="45" />
+		<push back="300" />
+		<combo comboSkill="1" chargingSkill="1" comboOriginSkill="10600041" inputSkill="10600041" outputSkill="10600043" />
+		<motion>
+			<motionProperty sequenceName="HeavyGunner_ElectricBlast3_A" loopEffect="CH/Skill/HeavyGunner/Eff_HeavyGunner_ElectricBlast3_Loop_01.xml" strTagEffects="e0=CH/Skill/HeavyGunner/Eff_HeavyGunner_ElectricBlast3_Cast_01.xml,e1=CH/Skill/HeavyGunner/Eff_HeavyGunner_ElectricBlast3_Cast_02.xml" loopCount="20" />
+			<attack point="p0" pointGroupID="10600043" targetCount="8" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+				<rangeProperty rangeType="box" distance="900" height="200" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="5.7" effectRemain="CH/Skill/HeavyGunner/Eff_HeavyGunner_ElectricBlast_Remain_01.xml" effectHit="CH/Common/Eff_Common_Electric_Hit.xml" push="1" pushdistance="150" pushduration="0.2" pushEaseType="1" pushPriority="1" attackMaterial="1" />
+			</attack>
+			<attack point="p1" pointGroupID="106000431" targetCount="8" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+				<rangeProperty rangeType="box" distance="900" height="200" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="5.7" effectRemain="CH/Skill/HeavyGunner/Eff_HeavyGunner_ElectricBlast_Remain_01.xml" effectHit="CH/Common/Eff_Common_Electric_Hit.xml" push="1" pushdistance="150" pushduration="0.2" pushEaseType="1" pushPriority="2" attackMaterial="1" />
+			</attack>
+			<attack point="p2" pointGroupID="106000432" targetCount="8" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+				<rangeProperty rangeType="box" distance="900" height="200" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="5.7" effectRemain="CH/Skill/HeavyGunner/Eff_HeavyGunner_ElectricBlast_Remain_01.xml" effectHit="CH/Common/Eff_Common_Electric_Hit.xml" push="1" pushdistance="150" pushduration="0.2" pushEaseType="1" pushPriority="3" attackMaterial="1" />
+			</attack>
+		</motion>
+	</level>
 	<level value="5">
 		<beginCondition probability="1">
 			<stat hp="1" />
@@ -462,6 +273,33 @@
 				<rangeProperty rangeType="box" distance="900" height="200" width="300" applyTarget="1" />
 				<arrowProperty nonTarget="1" />
 				<damageProperty rate="5.79" effectRemain="CH/Skill/HeavyGunner/Eff_HeavyGunner_ElectricBlast_Remain_01.xml" effectHit="CH/Common/Eff_Common_Electric_Hit.xml" push="1" pushdistance="150" pushduration="0.2" pushEaseType="1" pushPriority="3" attackMaterial="1" />
+			</attack>
+		</motion>
+	</level>
+	<level value="6" feature="CharacterBalance_01">
+		<beginCondition probability="1">
+			<stat hp="1" />
+			<weapon lh="0" rh="53" />
+		</beginCondition>
+		<autoTargeting autoTargetingMaxDegree="45" />
+		<push back="300" />
+		<combo comboSkill="1" chargingSkill="1" comboOriginSkill="10600041" inputSkill="10600041" outputSkill="10600043" />
+		<motion>
+			<motionProperty sequenceName="HeavyGunner_ElectricBlast3_A" loopEffect="CH/Skill/HeavyGunner/Eff_HeavyGunner_ElectricBlast3_Loop_01.xml" strTagEffects="e0=CH/Skill/HeavyGunner/Eff_HeavyGunner_ElectricBlast3_Cast_01.xml,e1=CH/Skill/HeavyGunner/Eff_HeavyGunner_ElectricBlast3_Cast_02.xml" loopCount="20" />
+			<attack point="p0" pointGroupID="10600043" targetCount="8" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+				<rangeProperty rangeType="box" distance="900" height="200" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="6.02" effectRemain="CH/Skill/HeavyGunner/Eff_HeavyGunner_ElectricBlast_Remain_01.xml" effectHit="CH/Common/Eff_Common_Electric_Hit.xml" push="1" pushdistance="150" pushduration="0.2" pushEaseType="1" pushPriority="1" attackMaterial="1" />
+			</attack>
+			<attack point="p1" pointGroupID="106000431" targetCount="8" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+				<rangeProperty rangeType="box" distance="900" height="200" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="6.02" effectRemain="CH/Skill/HeavyGunner/Eff_HeavyGunner_ElectricBlast_Remain_01.xml" effectHit="CH/Common/Eff_Common_Electric_Hit.xml" push="1" pushdistance="150" pushduration="0.2" pushEaseType="1" pushPriority="2" attackMaterial="1" />
+			</attack>
+			<attack point="p2" pointGroupID="106000432" targetCount="8" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+				<rangeProperty rangeType="box" distance="900" height="200" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="6.02" effectRemain="CH/Skill/HeavyGunner/Eff_HeavyGunner_ElectricBlast_Remain_01.xml" effectHit="CH/Common/Eff_Common_Electric_Hit.xml" push="1" pushdistance="150" pushduration="0.2" pushEaseType="1" pushPriority="3" attackMaterial="1" />
 			</attack>
 		</motion>
 	</level>
@@ -492,6 +330,33 @@
 			</attack>
 		</motion>
 	</level>
+	<level value="7" feature="CharacterBalance_01">
+		<beginCondition probability="1">
+			<stat hp="1" />
+			<weapon lh="0" rh="53" />
+		</beginCondition>
+		<autoTargeting autoTargetingMaxDegree="45" />
+		<push back="300" />
+		<combo comboSkill="1" chargingSkill="1" comboOriginSkill="10600041" inputSkill="10600041" outputSkill="10600043" />
+		<motion>
+			<motionProperty sequenceName="HeavyGunner_ElectricBlast3_A" loopEffect="CH/Skill/HeavyGunner/Eff_HeavyGunner_ElectricBlast3_Loop_01.xml" strTagEffects="e0=CH/Skill/HeavyGunner/Eff_HeavyGunner_ElectricBlast3_Cast_01.xml,e1=CH/Skill/HeavyGunner/Eff_HeavyGunner_ElectricBlast3_Cast_02.xml" loopCount="20" />
+			<attack point="p0" pointGroupID="10600043" targetCount="8" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+				<rangeProperty rangeType="box" distance="900" height="200" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="6.34" effectRemain="CH/Skill/HeavyGunner/Eff_HeavyGunner_ElectricBlast_Remain_01.xml" effectHit="CH/Common/Eff_Common_Electric_Hit.xml" push="1" pushdistance="150" pushduration="0.2" pushEaseType="1" pushPriority="1" attackMaterial="1" />
+			</attack>
+			<attack point="p1" pointGroupID="106000431" targetCount="8" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+				<rangeProperty rangeType="box" distance="900" height="200" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="6.34" effectRemain="CH/Skill/HeavyGunner/Eff_HeavyGunner_ElectricBlast_Remain_01.xml" effectHit="CH/Common/Eff_Common_Electric_Hit.xml" push="1" pushdistance="150" pushduration="0.2" pushEaseType="1" pushPriority="2" attackMaterial="1" />
+			</attack>
+			<attack point="p2" pointGroupID="106000432" targetCount="8" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+				<rangeProperty rangeType="box" distance="900" height="200" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="6.34" effectRemain="CH/Skill/HeavyGunner/Eff_HeavyGunner_ElectricBlast_Remain_01.xml" effectHit="CH/Common/Eff_Common_Electric_Hit.xml" push="1" pushdistance="150" pushduration="0.2" pushEaseType="1" pushPriority="3" attackMaterial="1" />
+			</attack>
+		</motion>
+	</level>
 	<level value="7">
 		<beginCondition probability="1">
 			<stat hp="1" />
@@ -516,6 +381,33 @@
 				<rangeProperty rangeType="box" distance="900" height="200" width="300" applyTarget="1" />
 				<arrowProperty nonTarget="1" />
 				<damageProperty rate="6.41" effectRemain="CH/Skill/HeavyGunner/Eff_HeavyGunner_ElectricBlast_Remain_01.xml" effectHit="CH/Common/Eff_Common_Electric_Hit.xml" push="1" pushdistance="150" pushduration="0.2" pushEaseType="1" pushPriority="3" attackMaterial="1" />
+			</attack>
+		</motion>
+	</level>
+	<level value="8" feature="CharacterBalance_01">
+		<beginCondition probability="1">
+			<stat hp="1" />
+			<weapon lh="0" rh="53" />
+		</beginCondition>
+		<autoTargeting autoTargetingMaxDegree="45" />
+		<push back="300" />
+		<combo comboSkill="1" chargingSkill="1" comboOriginSkill="10600041" inputSkill="10600041" outputSkill="10600043" />
+		<motion>
+			<motionProperty sequenceName="HeavyGunner_ElectricBlast3_A" loopEffect="CH/Skill/HeavyGunner/Eff_HeavyGunner_ElectricBlast3_Loop_01.xml" strTagEffects="e0=CH/Skill/HeavyGunner/Eff_HeavyGunner_ElectricBlast3_Cast_01.xml,e1=CH/Skill/HeavyGunner/Eff_HeavyGunner_ElectricBlast3_Cast_02.xml" loopCount="20" />
+			<attack point="p0" pointGroupID="10600043" targetCount="8" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+				<rangeProperty rangeType="box" distance="900" height="200" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="6.66" effectRemain="CH/Skill/HeavyGunner/Eff_HeavyGunner_ElectricBlast_Remain_01.xml" effectHit="CH/Common/Eff_Common_Electric_Hit.xml" push="1" pushdistance="150" pushduration="0.2" pushEaseType="1" pushPriority="1" attackMaterial="1" />
+			</attack>
+			<attack point="p1" pointGroupID="106000431" targetCount="8" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+				<rangeProperty rangeType="box" distance="900" height="200" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="6.66" effectRemain="CH/Skill/HeavyGunner/Eff_HeavyGunner_ElectricBlast_Remain_01.xml" effectHit="CH/Common/Eff_Common_Electric_Hit.xml" push="1" pushdistance="150" pushduration="0.2" pushEaseType="1" pushPriority="2" attackMaterial="1" />
+			</attack>
+			<attack point="p2" pointGroupID="106000432" targetCount="8" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+				<rangeProperty rangeType="box" distance="900" height="200" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="6.66" effectRemain="CH/Skill/HeavyGunner/Eff_HeavyGunner_ElectricBlast_Remain_01.xml" effectHit="CH/Common/Eff_Common_Electric_Hit.xml" push="1" pushdistance="150" pushduration="0.2" pushEaseType="1" pushPriority="3" attackMaterial="1" />
 			</attack>
 		</motion>
 	</level>
@@ -546,6 +438,33 @@
 			</attack>
 		</motion>
 	</level>
+	<level value="9" feature="CharacterBalance_01">
+		<beginCondition probability="1">
+			<stat hp="1" />
+			<weapon lh="0" rh="53" />
+		</beginCondition>
+		<autoTargeting autoTargetingMaxDegree="45" />
+		<push back="300" />
+		<combo comboSkill="1" chargingSkill="1" comboOriginSkill="10600041" inputSkill="10600041" outputSkill="10600043" />
+		<motion>
+			<motionProperty sequenceName="HeavyGunner_ElectricBlast3_A" loopEffect="CH/Skill/HeavyGunner/Eff_HeavyGunner_ElectricBlast3_Loop_01.xml" strTagEffects="e0=CH/Skill/HeavyGunner/Eff_HeavyGunner_ElectricBlast3_Cast_01.xml,e1=CH/Skill/HeavyGunner/Eff_HeavyGunner_ElectricBlast3_Cast_02.xml" loopCount="20" />
+			<attack point="p0" pointGroupID="10600043" targetCount="8" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+				<rangeProperty rangeType="box" distance="900" height="200" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="6.98" effectRemain="CH/Skill/HeavyGunner/Eff_HeavyGunner_ElectricBlast_Remain_01.xml" effectHit="CH/Common/Eff_Common_Electric_Hit.xml" push="1" pushdistance="150" pushduration="0.2" pushEaseType="1" pushPriority="1" attackMaterial="1" />
+			</attack>
+			<attack point="p1" pointGroupID="106000431" targetCount="8" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+				<rangeProperty rangeType="box" distance="900" height="200" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="6.98" effectRemain="CH/Skill/HeavyGunner/Eff_HeavyGunner_ElectricBlast_Remain_01.xml" effectHit="CH/Common/Eff_Common_Electric_Hit.xml" push="1" pushdistance="150" pushduration="0.2" pushEaseType="1" pushPriority="2" attackMaterial="1" />
+			</attack>
+			<attack point="p2" pointGroupID="106000432" targetCount="8" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+				<rangeProperty rangeType="box" distance="900" height="200" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="6.98" effectRemain="CH/Skill/HeavyGunner/Eff_HeavyGunner_ElectricBlast_Remain_01.xml" effectHit="CH/Common/Eff_Common_Electric_Hit.xml" push="1" pushdistance="150" pushduration="0.2" pushEaseType="1" pushPriority="3" attackMaterial="1" />
+			</attack>
+		</motion>
+	</level>
 	<level value="9">
 		<beginCondition probability="1">
 			<stat hp="1" />
@@ -570,6 +489,33 @@
 				<rangeProperty rangeType="box" distance="900" height="200" width="300" applyTarget="1" />
 				<arrowProperty nonTarget="1" />
 				<damageProperty rate="7.03" effectRemain="CH/Skill/HeavyGunner/Eff_HeavyGunner_ElectricBlast_Remain_01.xml" effectHit="CH/Common/Eff_Common_Electric_Hit.xml" push="1" pushdistance="150" pushduration="0.2" pushEaseType="1" pushPriority="3" attackMaterial="1" />
+			</attack>
+		</motion>
+	</level>
+	<level value="10" feature="CharacterBalance_01">
+		<beginCondition probability="1">
+			<stat hp="1" />
+			<weapon lh="0" rh="53" />
+		</beginCondition>
+		<autoTargeting autoTargetingMaxDegree="45" />
+		<push back="300" />
+		<combo comboSkill="1" chargingSkill="1" comboOriginSkill="10600041" inputSkill="10600041" outputSkill="10600043" />
+		<motion>
+			<motionProperty sequenceName="HeavyGunner_ElectricBlast3_A" loopEffect="CH/Skill/HeavyGunner/Eff_HeavyGunner_ElectricBlast3_Loop_01.xml" strTagEffects="e0=CH/Skill/HeavyGunner/Eff_HeavyGunner_ElectricBlast3_Cast_01.xml,e1=CH/Skill/HeavyGunner/Eff_HeavyGunner_ElectricBlast3_Cast_02.xml" loopCount="20" />
+			<attack point="p0" pointGroupID="10600043" targetCount="8" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+				<rangeProperty rangeType="box" distance="900" height="200" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="7.3" effectRemain="CH/Skill/HeavyGunner/Eff_HeavyGunner_ElectricBlast_Remain_01.xml" effectHit="CH/Common/Eff_Common_Electric_Hit.xml" push="1" pushdistance="150" pushduration="0.2" pushEaseType="1" pushPriority="1" attackMaterial="1" />
+			</attack>
+			<attack point="p1" pointGroupID="106000431" targetCount="8" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+				<rangeProperty rangeType="box" distance="900" height="200" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="7.3" effectRemain="CH/Skill/HeavyGunner/Eff_HeavyGunner_ElectricBlast_Remain_01.xml" effectHit="CH/Common/Eff_Common_Electric_Hit.xml" push="1" pushdistance="150" pushduration="0.2" pushEaseType="1" pushPriority="2" attackMaterial="1" />
+			</attack>
+			<attack point="p2" pointGroupID="106000432" targetCount="8" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+				<rangeProperty rangeType="box" distance="900" height="200" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="7.3" effectRemain="CH/Skill/HeavyGunner/Eff_HeavyGunner_ElectricBlast_Remain_01.xml" effectHit="CH/Common/Eff_Common_Electric_Hit.xml" push="1" pushdistance="150" pushduration="0.2" pushEaseType="1" pushPriority="3" attackMaterial="1" />
 			</attack>
 		</motion>
 	</level>
@@ -600,6 +546,33 @@
 			</attack>
 		</motion>
 	</level>
+	<level value="11" feature="CharacterBalance_01">
+		<beginCondition probability="1">
+			<stat hp="1" />
+			<weapon lh="0" rh="53" />
+		</beginCondition>
+		<autoTargeting autoTargetingMaxDegree="45" />
+		<push back="300" />
+		<combo comboSkill="1" chargingSkill="1" comboOriginSkill="10600041" inputSkill="10600041" outputSkill="10600043" />
+		<motion>
+			<motionProperty sequenceName="HeavyGunner_ElectricBlast3_A" loopEffect="CH/Skill/HeavyGunner/Eff_HeavyGunner_ElectricBlast3_Loop_01.xml" strTagEffects="e0=CH/Skill/HeavyGunner/Eff_HeavyGunner_ElectricBlast3_Cast_01.xml,e1=CH/Skill/HeavyGunner/Eff_HeavyGunner_ElectricBlast3_Cast_02.xml" loopCount="20" />
+			<attack point="p0" pointGroupID="10600043" targetCount="8" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+				<rangeProperty rangeType="box" distance="900" height="200" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="7.62" effectRemain="CH/Skill/HeavyGunner/Eff_HeavyGunner_ElectricBlast_Remain_01.xml" effectHit="CH/Common/Eff_Common_Electric_Hit.xml" push="1" pushdistance="150" pushduration="0.2" pushEaseType="1" pushPriority="1" attackMaterial="1" />
+			</attack>
+			<attack point="p1" pointGroupID="106000431" targetCount="8" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+				<rangeProperty rangeType="box" distance="900" height="200" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="7.62" effectRemain="CH/Skill/HeavyGunner/Eff_HeavyGunner_ElectricBlast_Remain_01.xml" effectHit="CH/Common/Eff_Common_Electric_Hit.xml" push="1" pushdistance="150" pushduration="0.2" pushEaseType="1" pushPriority="2" attackMaterial="1" />
+			</attack>
+			<attack point="p2" pointGroupID="106000432" targetCount="8" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+				<rangeProperty rangeType="box" distance="900" height="200" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="7.62" effectRemain="CH/Skill/HeavyGunner/Eff_HeavyGunner_ElectricBlast_Remain_01.xml" effectHit="CH/Common/Eff_Common_Electric_Hit.xml" push="1" pushdistance="150" pushduration="0.2" pushEaseType="1" pushPriority="3" attackMaterial="1" />
+			</attack>
+		</motion>
+	</level>
 	<level value="11">
 		<beginCondition probability="1">
 			<stat hp="1" />
@@ -624,6 +597,33 @@
 				<rangeProperty rangeType="box" distance="900" height="200" width="300" applyTarget="1" />
 				<arrowProperty nonTarget="1" />
 				<damageProperty rate="7.65" effectRemain="CH/Skill/HeavyGunner/Eff_HeavyGunner_ElectricBlast_Remain_01.xml" effectHit="CH/Common/Eff_Common_Electric_Hit.xml" push="1" pushdistance="150" pushduration="0.2" pushEaseType="1" pushPriority="3" attackMaterial="1" />
+			</attack>
+		</motion>
+	</level>
+	<level value="12" feature="CharacterBalance_01">
+		<beginCondition probability="1">
+			<stat hp="1" />
+			<weapon lh="0" rh="53" />
+		</beginCondition>
+		<autoTargeting autoTargetingMaxDegree="45" />
+		<push back="300" />
+		<combo comboSkill="1" chargingSkill="1" comboOriginSkill="10600041" inputSkill="10600041" outputSkill="10600043" />
+		<motion>
+			<motionProperty sequenceName="HeavyGunner_ElectricBlast3_A" loopEffect="CH/Skill/HeavyGunner/Eff_HeavyGunner_ElectricBlast3_Loop_01.xml" strTagEffects="e0=CH/Skill/HeavyGunner/Eff_HeavyGunner_ElectricBlast3_Cast_01.xml,e1=CH/Skill/HeavyGunner/Eff_HeavyGunner_ElectricBlast3_Cast_02.xml" loopCount="20" />
+			<attack point="p0" pointGroupID="10600043" targetCount="8" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+				<rangeProperty rangeType="box" distance="900" height="200" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="7.94" effectRemain="CH/Skill/HeavyGunner/Eff_HeavyGunner_ElectricBlast_Remain_01.xml" effectHit="CH/Common/Eff_Common_Electric_Hit.xml" push="1" pushdistance="150" pushduration="0.2" pushEaseType="1" pushPriority="1" attackMaterial="1" />
+			</attack>
+			<attack point="p1" pointGroupID="106000431" targetCount="8" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+				<rangeProperty rangeType="box" distance="900" height="200" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="7.94" effectRemain="CH/Skill/HeavyGunner/Eff_HeavyGunner_ElectricBlast_Remain_01.xml" effectHit="CH/Common/Eff_Common_Electric_Hit.xml" push="1" pushdistance="150" pushduration="0.2" pushEaseType="1" pushPriority="2" attackMaterial="1" />
+			</attack>
+			<attack point="p2" pointGroupID="106000432" targetCount="8" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+				<rangeProperty rangeType="box" distance="900" height="200" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="7.94" effectRemain="CH/Skill/HeavyGunner/Eff_HeavyGunner_ElectricBlast_Remain_01.xml" effectHit="CH/Common/Eff_Common_Electric_Hit.xml" push="1" pushdistance="150" pushduration="0.2" pushEaseType="1" pushPriority="3" attackMaterial="1" />
 			</attack>
 		</motion>
 	</level>

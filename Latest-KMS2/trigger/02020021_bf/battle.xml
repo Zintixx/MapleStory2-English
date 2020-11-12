@@ -97,28 +97,12 @@
 			<action name="몬스터를생성한다" arg1="303" arg2="0" />
 			<!-- <독바닥 깔기 제어> -->
 		</onEnter>
-		<condition feature="FameChallengeBuff_01" name="AllOf">		<!-- <한국용 컨디션체크> -->
-			<group>
-				<condition name="DungeonCheckPlayTime" playSeconds="180" operator="LessEqual"/>
-				<condition name="몬스터가죽어있으면" arg1="201" />
-			</group>
-			<action name="DungeonMissionComplete" missionID="24095005" />
-			<transition state="전투_종료"/>
-		</condition>
-		<condition feature="FameChallengeBuff_02" name="AllOf">		<!-- <중국용 컨디션체크> -->
+		<condition name="AllOf">
 			<group>
 				<condition name="DungeonCheckPlayTime" playSeconds="70" operator="LessEqual"/>
 				<condition name="몬스터가죽어있으면" arg1="201" />
 			</group>
 			<action name="DungeonMissionComplete" missionID="24095006" />
-			<transition state="전투_종료"/>
-		</condition>
-		<condition feature="FameChallengeBuff_03" name="AllOf">		<!-- <NA용 컨디션체크> -->
-			<group>
-				<condition name="DungeonCheckPlayTime" playSeconds="270" operator="LessEqual"/>
-				<condition name="몬스터가죽어있으면" arg1="201" />
-			</group>
-			<action name="DungeonMissionComplete" missionID="24095010" />
 			<transition state="전투_종료"/>
 		</condition>
 		<condition name="몬스터가죽어있으면" arg1="201" >

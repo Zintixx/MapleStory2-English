@@ -14,7 +14,7 @@
 		<changeSkill originSkillID="10700091" />
 		<autoTargeting autoTargetingMaxDegree="45" />
 		<push back="300" />
-		<combo comboOriginSkill="10700091" inputSkill="" outputSkill="" />
+		<combo comboOriginSkill="10700091" />
 		<conditionSkill level="1" skillID="10700002" skillTarget="1">
 			<beginCondition probability="1" allowBattleRidingState="1" />
 		</conditionSkill>
@@ -26,353 +26,12 @@
 				<damageProperty hand="1" rate="1.22" effectHit="CH/Weapon/Dagger/Eff_Dagger_Hit_01.xml" />
 				<conditionSkill level="1" skillID="10700091" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
 					<beginCondition probability="1">
-						<target hasBuffID="10700011" hasBuffLevel="0" hasBuffOwner="1" hasBuffCount="0" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+						<target hasBuffID="10700011" hasBuffLevel="0" hasBuffOwner="1" hasBuffCount="0" hasBuffCountCompare="Equals" />
 					</beginCondition>
 				</conditionSkill>
 				<conditionSkill level="1" skillID="10700092" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
 					<beginCondition probability="1">
-						<target hasBuffID="10700111" hasBuffLevel="0" hasBuffOwner="1" hasBuffCount="0" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
-					</beginCondition>
-				</conditionSkill>
-			</attack>
-		</motion>
-	</level>
-	<level value="2" feature="CharacterBalance_04">
-		<beginCondition probability="1" cooldownTime="6" useCoolDownShowUI="1">
-			<stat hp="1" />
-			<weapon lh="31" rh="31" />
-		</beginCondition>
-		<changeSkill originSkillID="10700091" originSkillLevel="2" />
-		<autoTargeting autoTargetingMaxDegree="45" />
-		<push back="300" />
-		<combo comboOriginSkill="10700091" inputSkill="" outputSkill="" />
-		<conditionSkill level="1" skillID="10700002" skillTarget="1">
-			<beginCondition probability="1" allowBattleRidingState="1" />
-		</conditionSkill>
-		<motion>
-			<motionProperty sequenceName="Thief_SuddenAttack_B" strTagEffects="e0=CH/Skill_Feature_CharacterBalance_02/Thief/Eff_Thief_SuddenAttackEX_Cast_01.xml" ignoreCollisionGroups="20" />
-			<attack point="p0" pointGroupID="10700093" targetCount="8" direction="2" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="2" unrideOnHit="1">
-				<rangeProperty rangeType="cylinder" distance="300" rangeOffset="0.000000,50.000000,0.000000" height="150" width="410" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty hand="1" rate="1.31" effectHit="CH/Weapon/Dagger/Eff_Dagger_Hit_01.xml" />
-				<conditionSkill level="2" skillID="10700091" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
-					<beginCondition probability="1">
-						<target hasBuffID="10700011" hasBuffLevel="0" hasBuffOwner="1" hasBuffCount="0" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
-					</beginCondition>
-				</conditionSkill>
-				<conditionSkill level="2" skillID="10700092" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
-					<beginCondition probability="1">
-						<target hasBuffID="10700111" hasBuffLevel="0" hasBuffOwner="1" hasBuffCount="0" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
-					</beginCondition>
-				</conditionSkill>
-			</attack>
-		</motion>
-	</level>
-	<level value="3" feature="CharacterBalance_04">
-		<beginCondition probability="1" cooldownTime="6" useCoolDownShowUI="1">
-			<stat hp="1" />
-			<weapon lh="31" rh="31" />
-		</beginCondition>
-		<changeSkill originSkillID="10700091" originSkillLevel="3" />
-		<autoTargeting autoTargetingMaxDegree="45" />
-		<push back="300" />
-		<combo comboOriginSkill="10700091" inputSkill="" outputSkill="" />
-		<conditionSkill level="1" skillID="10700002" skillTarget="1">
-			<beginCondition probability="1" allowBattleRidingState="1" />
-		</conditionSkill>
-		<motion>
-			<motionProperty sequenceName="Thief_SuddenAttack_B" strTagEffects="e0=CH/Skill_Feature_CharacterBalance_02/Thief/Eff_Thief_SuddenAttackEX_Cast_01.xml" ignoreCollisionGroups="20" />
-			<attack point="p0" pointGroupID="10700093" targetCount="8" direction="2" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="2" unrideOnHit="1">
-				<rangeProperty rangeType="cylinder" distance="300" rangeOffset="0.000000,50.000000,0.000000" height="150" width="410" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty hand="1" rate="1.4" effectHit="CH/Weapon/Dagger/Eff_Dagger_Hit_01.xml" />
-				<conditionSkill level="3" skillID="10700091" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
-					<beginCondition probability="1">
-						<target hasBuffID="10700011" hasBuffLevel="0" hasBuffOwner="1" hasBuffCount="0" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
-					</beginCondition>
-				</conditionSkill>
-				<conditionSkill level="3" skillID="10700092" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
-					<beginCondition probability="1">
-						<target hasBuffID="10700111" hasBuffLevel="0" hasBuffOwner="1" hasBuffCount="0" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
-					</beginCondition>
-				</conditionSkill>
-			</attack>
-		</motion>
-	</level>
-	<level value="4" feature="CharacterBalance_04">
-		<beginCondition probability="1" cooldownTime="6" useCoolDownShowUI="1">
-			<stat hp="1" />
-			<weapon lh="31" rh="31" />
-		</beginCondition>
-		<changeSkill originSkillID="10700091" originSkillLevel="4" />
-		<autoTargeting autoTargetingMaxDegree="45" />
-		<push back="300" />
-		<combo comboOriginSkill="10700091" inputSkill="" outputSkill="" />
-		<conditionSkill level="1" skillID="10700002" skillTarget="1">
-			<beginCondition probability="1" allowBattleRidingState="1" />
-		</conditionSkill>
-		<motion>
-			<motionProperty sequenceName="Thief_SuddenAttack_B" strTagEffects="e0=CH/Skill_Feature_CharacterBalance_02/Thief/Eff_Thief_SuddenAttackEX_Cast_01.xml" ignoreCollisionGroups="20" />
-			<attack point="p0" pointGroupID="10700093" targetCount="8" direction="2" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="2" unrideOnHit="1">
-				<rangeProperty rangeType="cylinder" distance="300" rangeOffset="0.000000,50.000000,0.000000" height="150" width="410" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty hand="1" rate="1.49" effectHit="CH/Weapon/Dagger/Eff_Dagger_Hit_01.xml" />
-				<conditionSkill level="4" skillID="10700091" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
-					<beginCondition probability="1">
-						<target hasBuffID="10700011" hasBuffLevel="0" hasBuffOwner="1" hasBuffCount="0" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
-					</beginCondition>
-				</conditionSkill>
-				<conditionSkill level="4" skillID="10700092" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
-					<beginCondition probability="1">
-						<target hasBuffID="10700111" hasBuffLevel="0" hasBuffOwner="1" hasBuffCount="0" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
-					</beginCondition>
-				</conditionSkill>
-			</attack>
-		</motion>
-	</level>
-	<level value="5" feature="CharacterBalance_04">
-		<beginCondition probability="1" cooldownTime="6" useCoolDownShowUI="1">
-			<stat hp="1" />
-			<weapon lh="31" rh="31" />
-		</beginCondition>
-		<changeSkill originSkillID="10700091" originSkillLevel="5" />
-		<autoTargeting autoTargetingMaxDegree="45" />
-		<push back="300" />
-		<combo comboOriginSkill="10700091" inputSkill="" outputSkill="" />
-		<conditionSkill level="1" skillID="10700002" skillTarget="1">
-			<beginCondition probability="1" allowBattleRidingState="1" />
-		</conditionSkill>
-		<motion>
-			<motionProperty sequenceName="Thief_SuddenAttack_B" strTagEffects="e0=CH/Skill_Feature_CharacterBalance_02/Thief/Eff_Thief_SuddenAttackEX_Cast_01.xml" ignoreCollisionGroups="20" />
-			<attack point="p0" pointGroupID="10700093" targetCount="8" direction="2" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="2" unrideOnHit="1">
-				<rangeProperty rangeType="cylinder" distance="300" rangeOffset="0.000000,50.000000,0.000000" height="150" width="410" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty hand="1" rate="1.58" effectHit="CH/Weapon/Dagger/Eff_Dagger_Hit_01.xml" />
-				<conditionSkill level="5" skillID="10700091" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
-					<beginCondition probability="1">
-						<target hasBuffID="10700011" hasBuffLevel="0" hasBuffOwner="1" hasBuffCount="0" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
-					</beginCondition>
-				</conditionSkill>
-				<conditionSkill level="5" skillID="10700092" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
-					<beginCondition probability="1">
-						<target hasBuffID="10700111" hasBuffLevel="0" hasBuffOwner="1" hasBuffCount="0" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
-					</beginCondition>
-				</conditionSkill>
-			</attack>
-		</motion>
-	</level>
-	<level value="6" feature="CharacterBalance_04">
-		<beginCondition probability="1" cooldownTime="6" useCoolDownShowUI="1">
-			<stat hp="1" />
-			<weapon lh="31" rh="31" />
-		</beginCondition>
-		<changeSkill originSkillID="10700091" originSkillLevel="6" />
-		<autoTargeting autoTargetingMaxDegree="45" />
-		<push back="300" />
-		<combo comboOriginSkill="10700091" inputSkill="" outputSkill="" />
-		<conditionSkill level="1" skillID="10700002" skillTarget="1">
-			<beginCondition probability="1" allowBattleRidingState="1" />
-		</conditionSkill>
-		<motion>
-			<motionProperty sequenceName="Thief_SuddenAttack_B" strTagEffects="e0=CH/Skill_Feature_CharacterBalance_02/Thief/Eff_Thief_SuddenAttackEX_Cast_01.xml" ignoreCollisionGroups="20" />
-			<attack point="p0" pointGroupID="10700093" targetCount="8" direction="2" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="2" unrideOnHit="1">
-				<rangeProperty rangeType="cylinder" distance="300" rangeOffset="0.000000,50.000000,0.000000" height="150" width="410" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty hand="1" rate="1.67" effectHit="CH/Weapon/Dagger/Eff_Dagger_Hit_01.xml" />
-				<conditionSkill level="6" skillID="10700091" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
-					<beginCondition probability="1">
-						<target hasBuffID="10700011" hasBuffLevel="0" hasBuffOwner="1" hasBuffCount="0" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
-					</beginCondition>
-				</conditionSkill>
-				<conditionSkill level="6" skillID="10700092" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
-					<beginCondition probability="1">
-						<target hasBuffID="10700111" hasBuffLevel="0" hasBuffOwner="1" hasBuffCount="0" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
-					</beginCondition>
-				</conditionSkill>
-			</attack>
-		</motion>
-	</level>
-	<level value="7" feature="CharacterBalance_04">
-		<beginCondition probability="1" cooldownTime="6" useCoolDownShowUI="1">
-			<stat hp="1" />
-			<weapon lh="31" rh="31" />
-		</beginCondition>
-		<changeSkill originSkillID="10700091" originSkillLevel="7" />
-		<autoTargeting autoTargetingMaxDegree="45" />
-		<push back="300" />
-		<combo comboOriginSkill="10700091" inputSkill="" outputSkill="" />
-		<conditionSkill level="1" skillID="10700002" skillTarget="1">
-			<beginCondition probability="1" allowBattleRidingState="1" />
-		</conditionSkill>
-		<motion>
-			<motionProperty sequenceName="Thief_SuddenAttack_B" strTagEffects="e0=CH/Skill_Feature_CharacterBalance_02/Thief/Eff_Thief_SuddenAttackEX_Cast_01.xml" ignoreCollisionGroups="20" />
-			<attack point="p0" pointGroupID="10700093" targetCount="8" direction="2" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="2" unrideOnHit="1">
-				<rangeProperty rangeType="cylinder" distance="300" rangeOffset="0.000000,50.000000,0.000000" height="150" width="410" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty hand="1" rate="1.76" effectHit="CH/Weapon/Dagger/Eff_Dagger_Hit_01.xml" />
-				<conditionSkill level="7" skillID="10700091" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
-					<beginCondition probability="1">
-						<target hasBuffID="10700011" hasBuffLevel="0" hasBuffOwner="1" hasBuffCount="0" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
-					</beginCondition>
-				</conditionSkill>
-				<conditionSkill level="7" skillID="10700092" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
-					<beginCondition probability="1">
-						<target hasBuffID="10700111" hasBuffLevel="0" hasBuffOwner="1" hasBuffCount="0" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
-					</beginCondition>
-				</conditionSkill>
-			</attack>
-		</motion>
-	</level>
-	<level value="8" feature="CharacterBalance_04">
-		<beginCondition probability="1" cooldownTime="6" useCoolDownShowUI="1">
-			<stat hp="1" />
-			<weapon lh="31" rh="31" />
-		</beginCondition>
-		<changeSkill originSkillID="10700091" originSkillLevel="8" />
-		<autoTargeting autoTargetingMaxDegree="45" />
-		<push back="300" />
-		<combo comboOriginSkill="10700091" inputSkill="" outputSkill="" />
-		<conditionSkill level="1" skillID="10700002" skillTarget="1">
-			<beginCondition probability="1" allowBattleRidingState="1" />
-		</conditionSkill>
-		<motion>
-			<motionProperty sequenceName="Thief_SuddenAttack_B" strTagEffects="e0=CH/Skill_Feature_CharacterBalance_02/Thief/Eff_Thief_SuddenAttackEX_Cast_01.xml" ignoreCollisionGroups="20" />
-			<attack point="p0" pointGroupID="10700093" targetCount="8" direction="2" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="2" unrideOnHit="1">
-				<rangeProperty rangeType="cylinder" distance="300" rangeOffset="0.000000,50.000000,0.000000" height="150" width="410" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty hand="1" rate="1.85" effectHit="CH/Weapon/Dagger/Eff_Dagger_Hit_01.xml" />
-				<conditionSkill level="8" skillID="10700091" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
-					<beginCondition probability="1">
-						<target hasBuffID="10700011" hasBuffLevel="0" hasBuffOwner="1" hasBuffCount="0" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
-					</beginCondition>
-				</conditionSkill>
-				<conditionSkill level="8" skillID="10700092" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
-					<beginCondition probability="1">
-						<target hasBuffID="10700111" hasBuffLevel="0" hasBuffOwner="1" hasBuffCount="0" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
-					</beginCondition>
-				</conditionSkill>
-			</attack>
-		</motion>
-	</level>
-	<level value="9" feature="CharacterBalance_04">
-		<beginCondition probability="1" cooldownTime="6" useCoolDownShowUI="1">
-			<stat hp="1" />
-			<weapon lh="31" rh="31" />
-		</beginCondition>
-		<changeSkill originSkillID="10700091" originSkillLevel="9" />
-		<autoTargeting autoTargetingMaxDegree="45" />
-		<push back="300" />
-		<combo comboOriginSkill="10700091" inputSkill="" outputSkill="" />
-		<conditionSkill level="1" skillID="10700002" skillTarget="1">
-			<beginCondition probability="1" allowBattleRidingState="1" />
-		</conditionSkill>
-		<motion>
-			<motionProperty sequenceName="Thief_SuddenAttack_B" strTagEffects="e0=CH/Skill_Feature_CharacterBalance_02/Thief/Eff_Thief_SuddenAttackEX_Cast_01.xml" ignoreCollisionGroups="20" />
-			<attack point="p0" pointGroupID="10700093" targetCount="8" direction="2" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="2" unrideOnHit="1">
-				<rangeProperty rangeType="cylinder" distance="300" rangeOffset="0.000000,50.000000,0.000000" height="150" width="410" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty hand="1" rate="1.94" effectHit="CH/Weapon/Dagger/Eff_Dagger_Hit_01.xml" />
-				<conditionSkill level="9" skillID="10700091" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
-					<beginCondition probability="1">
-						<target hasBuffID="10700011" hasBuffLevel="0" hasBuffOwner="1" hasBuffCount="0" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
-					</beginCondition>
-				</conditionSkill>
-				<conditionSkill level="9" skillID="10700092" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
-					<beginCondition probability="1">
-						<target hasBuffID="10700111" hasBuffLevel="0" hasBuffOwner="1" hasBuffCount="0" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
-					</beginCondition>
-				</conditionSkill>
-			</attack>
-		</motion>
-	</level>
-	<level value="10" feature="CharacterBalance_04">
-		<beginCondition probability="1" cooldownTime="6" useCoolDownShowUI="1">
-			<stat hp="1" />
-			<weapon lh="31" rh="31" />
-		</beginCondition>
-		<changeSkill originSkillID="10700091" originSkillLevel="10" />
-		<autoTargeting autoTargetingMaxDegree="45" />
-		<push back="300" />
-		<combo comboOriginSkill="10700091" inputSkill="" outputSkill="" />
-		<conditionSkill level="1" skillID="10700002" skillTarget="1">
-			<beginCondition probability="1" allowBattleRidingState="1" />
-		</conditionSkill>
-		<motion>
-			<motionProperty sequenceName="Thief_SuddenAttack_B" strTagEffects="e0=CH/Skill_Feature_CharacterBalance_02/Thief/Eff_Thief_SuddenAttackEX_Cast_01.xml" ignoreCollisionGroups="20" />
-			<attack point="p0" pointGroupID="10700093" targetCount="8" direction="2" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="2" unrideOnHit="1">
-				<rangeProperty rangeType="cylinder" distance="300" rangeOffset="0.000000,50.000000,0.000000" height="150" width="410" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty hand="1" rate="2.03" effectHit="CH/Weapon/Dagger/Eff_Dagger_Hit_01.xml" />
-				<conditionSkill level="10" skillID="10700091" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
-					<beginCondition probability="1">
-						<target hasBuffID="10700011" hasBuffLevel="0" hasBuffOwner="1" hasBuffCount="0" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
-					</beginCondition>
-				</conditionSkill>
-				<conditionSkill level="10" skillID="10700092" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
-					<beginCondition probability="1">
-						<target hasBuffID="10700111" hasBuffLevel="0" hasBuffOwner="1" hasBuffCount="0" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
-					</beginCondition>
-				</conditionSkill>
-			</attack>
-		</motion>
-	</level>
-	<level value="11" feature="CharacterBalance_04">
-		<beginCondition probability="1" cooldownTime="6" useCoolDownShowUI="1">
-			<stat hp="1" />
-			<weapon lh="31" rh="31" />
-		</beginCondition>
-		<changeSkill originSkillID="10700091" originSkillLevel="11" />
-		<autoTargeting autoTargetingMaxDegree="45" />
-		<push back="300" />
-		<combo comboOriginSkill="10700091" inputSkill="" outputSkill="" />
-		<conditionSkill level="1" skillID="10700002" skillTarget="1">
-			<beginCondition probability="1" allowBattleRidingState="1" />
-		</conditionSkill>
-		<motion>
-			<motionProperty sequenceName="Thief_SuddenAttack_B" strTagEffects="e0=CH/Skill_Feature_CharacterBalance_02/Thief/Eff_Thief_SuddenAttackEX_Cast_01.xml" ignoreCollisionGroups="20" />
-			<attack point="p0" pointGroupID="10700093" targetCount="8" direction="2" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="2" unrideOnHit="1">
-				<rangeProperty rangeType="cylinder" distance="300" rangeOffset="0.000000,50.000000,0.000000" height="150" width="410" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty hand="1" rate="2.12" effectHit="CH/Weapon/Dagger/Eff_Dagger_Hit_01.xml" />
-				<conditionSkill level="11" skillID="10700091" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
-					<beginCondition probability="1">
-						<target hasBuffID="10700011" hasBuffLevel="0" hasBuffOwner="1" hasBuffCount="0" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
-					</beginCondition>
-				</conditionSkill>
-				<conditionSkill level="11" skillID="10700092" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
-					<beginCondition probability="1">
-						<target hasBuffID="10700111" hasBuffLevel="0" hasBuffOwner="1" hasBuffCount="0" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
-					</beginCondition>
-				</conditionSkill>
-			</attack>
-		</motion>
-	</level>
-	<level value="12" feature="CharacterBalance_04">
-		<beginCondition probability="1" cooldownTime="6" useCoolDownShowUI="1">
-			<stat hp="1" />
-			<weapon lh="31" rh="31" />
-		</beginCondition>
-		<changeSkill originSkillID="10700091" originSkillLevel="12" />
-		<autoTargeting autoTargetingMaxDegree="45" />
-		<push back="300" />
-		<combo comboOriginSkill="10700091" inputSkill="" outputSkill="" />
-		<conditionSkill level="1" skillID="10700002" skillTarget="1">
-			<beginCondition probability="1" allowBattleRidingState="1" />
-		</conditionSkill>
-		<motion>
-			<motionProperty sequenceName="Thief_SuddenAttack_B" strTagEffects="e0=CH/Skill_Feature_CharacterBalance_02/Thief/Eff_Thief_SuddenAttackEX_Cast_01.xml" ignoreCollisionGroups="20" />
-			<attack point="p0" pointGroupID="10700093" targetCount="8" direction="2" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="2" unrideOnHit="1">
-				<rangeProperty rangeType="cylinder" distance="300" rangeOffset="0.000000,50.000000,0.000000" height="150" width="410" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty hand="1" rate="2.21" effectHit="CH/Weapon/Dagger/Eff_Dagger_Hit_01.xml" />
-				<conditionSkill level="12" skillID="10700091" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
-					<beginCondition probability="1">
-						<target hasBuffID="10700011" hasBuffLevel="0" hasBuffOwner="1" hasBuffCount="0" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
-					</beginCondition>
-				</conditionSkill>
-				<conditionSkill level="12" skillID="10700092" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
-					<beginCondition probability="1">
-						<target hasBuffID="10700111" hasBuffLevel="0" hasBuffOwner="1" hasBuffCount="0" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+						<target hasBuffID="10700111" hasBuffLevel="0" hasBuffOwner="1" hasBuffCount="0" hasBuffCountCompare="Equals" />
 					</beginCondition>
 				</conditionSkill>
 			</attack>
@@ -386,7 +45,7 @@
 		<changeSkill originSkillID="10700091" />
 		<autoTargeting autoTargetingMaxDegree="45" />
 		<push back="300" />
-		<combo comboOriginSkill="10700091" inputSkill="" outputSkill="" />
+		<combo comboOriginSkill="10700091" />
 		<conditionSkill level="1" skillID="10700002" skillTarget="1">
 			<beginCondition probability="1" allowBattleRidingState="1" />
 		</conditionSkill>
@@ -398,12 +57,43 @@
 				<damageProperty hand="1" rate="1.22" effectHit="CH/Weapon/Dagger/Eff_Dagger_Hit_01.xml" />
 				<conditionSkill level="1" skillID="10700091" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
 					<beginCondition probability="1">
-						<target hasBuffID="10700011" hasBuffLevel="0" hasBuffOwner="1" hasBuffCount="0" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+						<target hasBuffID="10700011" hasBuffLevel="0" hasBuffOwner="1" hasBuffCount="0" hasBuffCountCompare="Equals" />
 					</beginCondition>
 				</conditionSkill>
 				<conditionSkill level="1" skillID="10700092" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
 					<beginCondition probability="1">
-						<target hasBuffID="10700111" hasBuffLevel="0" hasBuffOwner="1" hasBuffCount="0" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+						<target hasBuffID="10700111" hasBuffLevel="0" hasBuffOwner="1" hasBuffCount="0" hasBuffCountCompare="Equals" />
+					</beginCondition>
+				</conditionSkill>
+			</attack>
+		</motion>
+	</level>
+	<level value="2" feature="CharacterBalance_04">
+		<beginCondition probability="1" cooldownTime="6" useCoolDownShowUI="1">
+			<stat hp="1" />
+			<weapon lh="31" rh="31" />
+		</beginCondition>
+		<changeSkill originSkillID="10700091" originSkillLevel="2" />
+		<autoTargeting autoTargetingMaxDegree="45" />
+		<push back="300" />
+		<combo comboOriginSkill="10700091" />
+		<conditionSkill level="1" skillID="10700002" skillTarget="1">
+			<beginCondition probability="1" allowBattleRidingState="1" />
+		</conditionSkill>
+		<motion>
+			<motionProperty sequenceName="Thief_SuddenAttack_B" strTagEffects="e0=CH/Skill_Feature_CharacterBalance_02/Thief/Eff_Thief_SuddenAttackEX_Cast_01.xml" ignoreCollisionGroups="20" />
+			<attack point="p0" pointGroupID="10700093" targetCount="8" direction="2" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+				<rangeProperty rangeType="cylinder" distance="300" rangeOffset="0.000000,50.000000,0.000000" height="150" width="410" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty hand="1" rate="1.31" effectHit="CH/Weapon/Dagger/Eff_Dagger_Hit_01.xml" />
+				<conditionSkill level="2" skillID="10700091" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10700011" hasBuffLevel="0" hasBuffOwner="1" hasBuffCount="0" hasBuffCountCompare="Equals" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="2" skillID="10700092" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10700111" hasBuffLevel="0" hasBuffOwner="1" hasBuffCount="0" hasBuffCountCompare="Equals" />
 					</beginCondition>
 				</conditionSkill>
 			</attack>
@@ -417,7 +107,7 @@
 		<changeSkill originSkillID="10700091" originSkillLevel="2" />
 		<autoTargeting autoTargetingMaxDegree="45" />
 		<push back="300" />
-		<combo comboOriginSkill="10700091" inputSkill="" outputSkill="" />
+		<combo comboOriginSkill="10700091" />
 		<conditionSkill level="1" skillID="10700002" skillTarget="1">
 			<beginCondition probability="1" allowBattleRidingState="1" />
 		</conditionSkill>
@@ -429,12 +119,43 @@
 				<damageProperty hand="1" rate="1.31" effectHit="CH/Weapon/Dagger/Eff_Dagger_Hit_01.xml" />
 				<conditionSkill level="2" skillID="10700091" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
 					<beginCondition probability="1">
-						<target hasBuffID="10700011" hasBuffLevel="0" hasBuffOwner="1" hasBuffCount="0" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+						<target hasBuffID="10700011" hasBuffLevel="0" hasBuffOwner="1" hasBuffCount="0" hasBuffCountCompare="Equals" />
 					</beginCondition>
 				</conditionSkill>
 				<conditionSkill level="2" skillID="10700092" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
 					<beginCondition probability="1">
-						<target hasBuffID="10700111" hasBuffLevel="0" hasBuffOwner="1" hasBuffCount="0" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+						<target hasBuffID="10700111" hasBuffLevel="0" hasBuffOwner="1" hasBuffCount="0" hasBuffCountCompare="Equals" />
+					</beginCondition>
+				</conditionSkill>
+			</attack>
+		</motion>
+	</level>
+	<level value="3" feature="CharacterBalance_04">
+		<beginCondition probability="1" cooldownTime="6" useCoolDownShowUI="1">
+			<stat hp="1" />
+			<weapon lh="31" rh="31" />
+		</beginCondition>
+		<changeSkill originSkillID="10700091" originSkillLevel="3" />
+		<autoTargeting autoTargetingMaxDegree="45" />
+		<push back="300" />
+		<combo comboOriginSkill="10700091" />
+		<conditionSkill level="1" skillID="10700002" skillTarget="1">
+			<beginCondition probability="1" allowBattleRidingState="1" />
+		</conditionSkill>
+		<motion>
+			<motionProperty sequenceName="Thief_SuddenAttack_B" strTagEffects="e0=CH/Skill_Feature_CharacterBalance_02/Thief/Eff_Thief_SuddenAttackEX_Cast_01.xml" ignoreCollisionGroups="20" />
+			<attack point="p0" pointGroupID="10700093" targetCount="8" direction="2" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+				<rangeProperty rangeType="cylinder" distance="300" rangeOffset="0.000000,50.000000,0.000000" height="150" width="410" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty hand="1" rate="1.4" effectHit="CH/Weapon/Dagger/Eff_Dagger_Hit_01.xml" />
+				<conditionSkill level="3" skillID="10700091" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10700011" hasBuffLevel="0" hasBuffOwner="1" hasBuffCount="0" hasBuffCountCompare="Equals" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="3" skillID="10700092" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10700111" hasBuffLevel="0" hasBuffOwner="1" hasBuffCount="0" hasBuffCountCompare="Equals" />
 					</beginCondition>
 				</conditionSkill>
 			</attack>
@@ -448,7 +169,7 @@
 		<changeSkill originSkillID="10700091" originSkillLevel="3" />
 		<autoTargeting autoTargetingMaxDegree="45" />
 		<push back="300" />
-		<combo comboOriginSkill="10700091" inputSkill="" outputSkill="" />
+		<combo comboOriginSkill="10700091" />
 		<conditionSkill level="1" skillID="10700002" skillTarget="1">
 			<beginCondition probability="1" allowBattleRidingState="1" />
 		</conditionSkill>
@@ -460,12 +181,43 @@
 				<damageProperty hand="1" rate="1.4" effectHit="CH/Weapon/Dagger/Eff_Dagger_Hit_01.xml" />
 				<conditionSkill level="3" skillID="10700091" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
 					<beginCondition probability="1">
-						<target hasBuffID="10700011" hasBuffLevel="0" hasBuffOwner="1" hasBuffCount="0" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+						<target hasBuffID="10700011" hasBuffLevel="0" hasBuffOwner="1" hasBuffCount="0" hasBuffCountCompare="Equals" />
 					</beginCondition>
 				</conditionSkill>
 				<conditionSkill level="3" skillID="10700092" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
 					<beginCondition probability="1">
-						<target hasBuffID="10700111" hasBuffLevel="0" hasBuffOwner="1" hasBuffCount="0" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+						<target hasBuffID="10700111" hasBuffLevel="0" hasBuffOwner="1" hasBuffCount="0" hasBuffCountCompare="Equals" />
+					</beginCondition>
+				</conditionSkill>
+			</attack>
+		</motion>
+	</level>
+	<level value="4" feature="CharacterBalance_04">
+		<beginCondition probability="1" cooldownTime="6" useCoolDownShowUI="1">
+			<stat hp="1" />
+			<weapon lh="31" rh="31" />
+		</beginCondition>
+		<changeSkill originSkillID="10700091" originSkillLevel="4" />
+		<autoTargeting autoTargetingMaxDegree="45" />
+		<push back="300" />
+		<combo comboOriginSkill="10700091" />
+		<conditionSkill level="1" skillID="10700002" skillTarget="1">
+			<beginCondition probability="1" allowBattleRidingState="1" />
+		</conditionSkill>
+		<motion>
+			<motionProperty sequenceName="Thief_SuddenAttack_B" strTagEffects="e0=CH/Skill_Feature_CharacterBalance_02/Thief/Eff_Thief_SuddenAttackEX_Cast_01.xml" ignoreCollisionGroups="20" />
+			<attack point="p0" pointGroupID="10700093" targetCount="8" direction="2" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+				<rangeProperty rangeType="cylinder" distance="300" rangeOffset="0.000000,50.000000,0.000000" height="150" width="410" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty hand="1" rate="1.49" effectHit="CH/Weapon/Dagger/Eff_Dagger_Hit_01.xml" />
+				<conditionSkill level="4" skillID="10700091" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10700011" hasBuffLevel="0" hasBuffOwner="1" hasBuffCount="0" hasBuffCountCompare="Equals" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="4" skillID="10700092" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10700111" hasBuffLevel="0" hasBuffOwner="1" hasBuffCount="0" hasBuffCountCompare="Equals" />
 					</beginCondition>
 				</conditionSkill>
 			</attack>
@@ -479,7 +231,7 @@
 		<changeSkill originSkillID="10700091" originSkillLevel="4" />
 		<autoTargeting autoTargetingMaxDegree="45" />
 		<push back="300" />
-		<combo comboOriginSkill="10700091" inputSkill="" outputSkill="" />
+		<combo comboOriginSkill="10700091" />
 		<conditionSkill level="1" skillID="10700002" skillTarget="1">
 			<beginCondition probability="1" allowBattleRidingState="1" />
 		</conditionSkill>
@@ -491,12 +243,43 @@
 				<damageProperty hand="1" rate="1.49" effectHit="CH/Weapon/Dagger/Eff_Dagger_Hit_01.xml" />
 				<conditionSkill level="4" skillID="10700091" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
 					<beginCondition probability="1">
-						<target hasBuffID="10700011" hasBuffLevel="0" hasBuffOwner="1" hasBuffCount="0" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+						<target hasBuffID="10700011" hasBuffLevel="0" hasBuffOwner="1" hasBuffCount="0" hasBuffCountCompare="Equals" />
 					</beginCondition>
 				</conditionSkill>
 				<conditionSkill level="4" skillID="10700092" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
 					<beginCondition probability="1">
-						<target hasBuffID="10700111" hasBuffLevel="0" hasBuffOwner="1" hasBuffCount="0" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+						<target hasBuffID="10700111" hasBuffLevel="0" hasBuffOwner="1" hasBuffCount="0" hasBuffCountCompare="Equals" />
+					</beginCondition>
+				</conditionSkill>
+			</attack>
+		</motion>
+	</level>
+	<level value="5" feature="CharacterBalance_04">
+		<beginCondition probability="1" cooldownTime="6" useCoolDownShowUI="1">
+			<stat hp="1" />
+			<weapon lh="31" rh="31" />
+		</beginCondition>
+		<changeSkill originSkillID="10700091" originSkillLevel="5" />
+		<autoTargeting autoTargetingMaxDegree="45" />
+		<push back="300" />
+		<combo comboOriginSkill="10700091" />
+		<conditionSkill level="1" skillID="10700002" skillTarget="1">
+			<beginCondition probability="1" allowBattleRidingState="1" />
+		</conditionSkill>
+		<motion>
+			<motionProperty sequenceName="Thief_SuddenAttack_B" strTagEffects="e0=CH/Skill_Feature_CharacterBalance_02/Thief/Eff_Thief_SuddenAttackEX_Cast_01.xml" ignoreCollisionGroups="20" />
+			<attack point="p0" pointGroupID="10700093" targetCount="8" direction="2" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+				<rangeProperty rangeType="cylinder" distance="300" rangeOffset="0.000000,50.000000,0.000000" height="150" width="410" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty hand="1" rate="1.58" effectHit="CH/Weapon/Dagger/Eff_Dagger_Hit_01.xml" />
+				<conditionSkill level="5" skillID="10700091" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10700011" hasBuffLevel="0" hasBuffOwner="1" hasBuffCount="0" hasBuffCountCompare="Equals" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="5" skillID="10700092" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10700111" hasBuffLevel="0" hasBuffOwner="1" hasBuffCount="0" hasBuffCountCompare="Equals" />
 					</beginCondition>
 				</conditionSkill>
 			</attack>
@@ -510,7 +293,7 @@
 		<changeSkill originSkillID="10700091" originSkillLevel="5" />
 		<autoTargeting autoTargetingMaxDegree="45" />
 		<push back="300" />
-		<combo comboOriginSkill="10700091" inputSkill="" outputSkill="" />
+		<combo comboOriginSkill="10700091" />
 		<conditionSkill level="1" skillID="10700002" skillTarget="1">
 			<beginCondition probability="1" allowBattleRidingState="1" />
 		</conditionSkill>
@@ -522,12 +305,43 @@
 				<damageProperty hand="1" rate="1.58" effectHit="CH/Weapon/Dagger/Eff_Dagger_Hit_01.xml" />
 				<conditionSkill level="5" skillID="10700091" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
 					<beginCondition probability="1">
-						<target hasBuffID="10700011" hasBuffLevel="0" hasBuffOwner="1" hasBuffCount="0" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+						<target hasBuffID="10700011" hasBuffLevel="0" hasBuffOwner="1" hasBuffCount="0" hasBuffCountCompare="Equals" />
 					</beginCondition>
 				</conditionSkill>
 				<conditionSkill level="5" skillID="10700092" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
 					<beginCondition probability="1">
-						<target hasBuffID="10700111" hasBuffLevel="0" hasBuffOwner="1" hasBuffCount="0" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+						<target hasBuffID="10700111" hasBuffLevel="0" hasBuffOwner="1" hasBuffCount="0" hasBuffCountCompare="Equals" />
+					</beginCondition>
+				</conditionSkill>
+			</attack>
+		</motion>
+	</level>
+	<level value="6" feature="CharacterBalance_04">
+		<beginCondition probability="1" cooldownTime="6" useCoolDownShowUI="1">
+			<stat hp="1" />
+			<weapon lh="31" rh="31" />
+		</beginCondition>
+		<changeSkill originSkillID="10700091" originSkillLevel="6" />
+		<autoTargeting autoTargetingMaxDegree="45" />
+		<push back="300" />
+		<combo comboOriginSkill="10700091" />
+		<conditionSkill level="1" skillID="10700002" skillTarget="1">
+			<beginCondition probability="1" allowBattleRidingState="1" />
+		</conditionSkill>
+		<motion>
+			<motionProperty sequenceName="Thief_SuddenAttack_B" strTagEffects="e0=CH/Skill_Feature_CharacterBalance_02/Thief/Eff_Thief_SuddenAttackEX_Cast_01.xml" ignoreCollisionGroups="20" />
+			<attack point="p0" pointGroupID="10700093" targetCount="8" direction="2" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+				<rangeProperty rangeType="cylinder" distance="300" rangeOffset="0.000000,50.000000,0.000000" height="150" width="410" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty hand="1" rate="1.67" effectHit="CH/Weapon/Dagger/Eff_Dagger_Hit_01.xml" />
+				<conditionSkill level="6" skillID="10700091" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10700011" hasBuffLevel="0" hasBuffOwner="1" hasBuffCount="0" hasBuffCountCompare="Equals" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="6" skillID="10700092" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10700111" hasBuffLevel="0" hasBuffOwner="1" hasBuffCount="0" hasBuffCountCompare="Equals" />
 					</beginCondition>
 				</conditionSkill>
 			</attack>
@@ -541,7 +355,7 @@
 		<changeSkill originSkillID="10700091" originSkillLevel="6" />
 		<autoTargeting autoTargetingMaxDegree="45" />
 		<push back="300" />
-		<combo comboOriginSkill="10700091" inputSkill="" outputSkill="" />
+		<combo comboOriginSkill="10700091" />
 		<conditionSkill level="1" skillID="10700002" skillTarget="1">
 			<beginCondition probability="1" allowBattleRidingState="1" />
 		</conditionSkill>
@@ -553,12 +367,43 @@
 				<damageProperty hand="1" rate="1.67" effectHit="CH/Weapon/Dagger/Eff_Dagger_Hit_01.xml" />
 				<conditionSkill level="6" skillID="10700091" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
 					<beginCondition probability="1">
-						<target hasBuffID="10700011" hasBuffLevel="0" hasBuffOwner="1" hasBuffCount="0" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+						<target hasBuffID="10700011" hasBuffLevel="0" hasBuffOwner="1" hasBuffCount="0" hasBuffCountCompare="Equals" />
 					</beginCondition>
 				</conditionSkill>
 				<conditionSkill level="6" skillID="10700092" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
 					<beginCondition probability="1">
-						<target hasBuffID="10700111" hasBuffLevel="0" hasBuffOwner="1" hasBuffCount="0" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+						<target hasBuffID="10700111" hasBuffLevel="0" hasBuffOwner="1" hasBuffCount="0" hasBuffCountCompare="Equals" />
+					</beginCondition>
+				</conditionSkill>
+			</attack>
+		</motion>
+	</level>
+	<level value="7" feature="CharacterBalance_04">
+		<beginCondition probability="1" cooldownTime="6" useCoolDownShowUI="1">
+			<stat hp="1" />
+			<weapon lh="31" rh="31" />
+		</beginCondition>
+		<changeSkill originSkillID="10700091" originSkillLevel="7" />
+		<autoTargeting autoTargetingMaxDegree="45" />
+		<push back="300" />
+		<combo comboOriginSkill="10700091" />
+		<conditionSkill level="1" skillID="10700002" skillTarget="1">
+			<beginCondition probability="1" allowBattleRidingState="1" />
+		</conditionSkill>
+		<motion>
+			<motionProperty sequenceName="Thief_SuddenAttack_B" strTagEffects="e0=CH/Skill_Feature_CharacterBalance_02/Thief/Eff_Thief_SuddenAttackEX_Cast_01.xml" ignoreCollisionGroups="20" />
+			<attack point="p0" pointGroupID="10700093" targetCount="8" direction="2" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+				<rangeProperty rangeType="cylinder" distance="300" rangeOffset="0.000000,50.000000,0.000000" height="150" width="410" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty hand="1" rate="1.76" effectHit="CH/Weapon/Dagger/Eff_Dagger_Hit_01.xml" />
+				<conditionSkill level="7" skillID="10700091" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10700011" hasBuffLevel="0" hasBuffOwner="1" hasBuffCount="0" hasBuffCountCompare="Equals" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="7" skillID="10700092" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10700111" hasBuffLevel="0" hasBuffOwner="1" hasBuffCount="0" hasBuffCountCompare="Equals" />
 					</beginCondition>
 				</conditionSkill>
 			</attack>
@@ -572,7 +417,7 @@
 		<changeSkill originSkillID="10700091" originSkillLevel="7" />
 		<autoTargeting autoTargetingMaxDegree="45" />
 		<push back="300" />
-		<combo comboOriginSkill="10700091" inputSkill="" outputSkill="" />
+		<combo comboOriginSkill="10700091" />
 		<conditionSkill level="1" skillID="10700002" skillTarget="1">
 			<beginCondition probability="1" allowBattleRidingState="1" />
 		</conditionSkill>
@@ -584,12 +429,43 @@
 				<damageProperty hand="1" rate="1.76" effectHit="CH/Weapon/Dagger/Eff_Dagger_Hit_01.xml" />
 				<conditionSkill level="7" skillID="10700091" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
 					<beginCondition probability="1">
-						<target hasBuffID="10700011" hasBuffLevel="0" hasBuffOwner="1" hasBuffCount="0" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+						<target hasBuffID="10700011" hasBuffLevel="0" hasBuffOwner="1" hasBuffCount="0" hasBuffCountCompare="Equals" />
 					</beginCondition>
 				</conditionSkill>
 				<conditionSkill level="7" skillID="10700092" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
 					<beginCondition probability="1">
-						<target hasBuffID="10700111" hasBuffLevel="0" hasBuffOwner="1" hasBuffCount="0" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+						<target hasBuffID="10700111" hasBuffLevel="0" hasBuffOwner="1" hasBuffCount="0" hasBuffCountCompare="Equals" />
+					</beginCondition>
+				</conditionSkill>
+			</attack>
+		</motion>
+	</level>
+	<level value="8" feature="CharacterBalance_04">
+		<beginCondition probability="1" cooldownTime="6" useCoolDownShowUI="1">
+			<stat hp="1" />
+			<weapon lh="31" rh="31" />
+		</beginCondition>
+		<changeSkill originSkillID="10700091" originSkillLevel="8" />
+		<autoTargeting autoTargetingMaxDegree="45" />
+		<push back="300" />
+		<combo comboOriginSkill="10700091" />
+		<conditionSkill level="1" skillID="10700002" skillTarget="1">
+			<beginCondition probability="1" allowBattleRidingState="1" />
+		</conditionSkill>
+		<motion>
+			<motionProperty sequenceName="Thief_SuddenAttack_B" strTagEffects="e0=CH/Skill_Feature_CharacterBalance_02/Thief/Eff_Thief_SuddenAttackEX_Cast_01.xml" ignoreCollisionGroups="20" />
+			<attack point="p0" pointGroupID="10700093" targetCount="8" direction="2" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+				<rangeProperty rangeType="cylinder" distance="300" rangeOffset="0.000000,50.000000,0.000000" height="150" width="410" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty hand="1" rate="1.85" effectHit="CH/Weapon/Dagger/Eff_Dagger_Hit_01.xml" />
+				<conditionSkill level="8" skillID="10700091" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10700011" hasBuffLevel="0" hasBuffOwner="1" hasBuffCount="0" hasBuffCountCompare="Equals" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="8" skillID="10700092" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10700111" hasBuffLevel="0" hasBuffOwner="1" hasBuffCount="0" hasBuffCountCompare="Equals" />
 					</beginCondition>
 				</conditionSkill>
 			</attack>
@@ -603,7 +479,7 @@
 		<changeSkill originSkillID="10700091" originSkillLevel="8" />
 		<autoTargeting autoTargetingMaxDegree="45" />
 		<push back="300" />
-		<combo comboOriginSkill="10700091" inputSkill="" outputSkill="" />
+		<combo comboOriginSkill="10700091" />
 		<conditionSkill level="1" skillID="10700002" skillTarget="1">
 			<beginCondition probability="1" allowBattleRidingState="1" />
 		</conditionSkill>
@@ -615,12 +491,43 @@
 				<damageProperty hand="1" rate="1.85" effectHit="CH/Weapon/Dagger/Eff_Dagger_Hit_01.xml" />
 				<conditionSkill level="8" skillID="10700091" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
 					<beginCondition probability="1">
-						<target hasBuffID="10700011" hasBuffLevel="0" hasBuffOwner="1" hasBuffCount="0" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+						<target hasBuffID="10700011" hasBuffLevel="0" hasBuffOwner="1" hasBuffCount="0" hasBuffCountCompare="Equals" />
 					</beginCondition>
 				</conditionSkill>
 				<conditionSkill level="8" skillID="10700092" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
 					<beginCondition probability="1">
-						<target hasBuffID="10700111" hasBuffLevel="0" hasBuffOwner="1" hasBuffCount="0" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+						<target hasBuffID="10700111" hasBuffLevel="0" hasBuffOwner="1" hasBuffCount="0" hasBuffCountCompare="Equals" />
+					</beginCondition>
+				</conditionSkill>
+			</attack>
+		</motion>
+	</level>
+	<level value="9" feature="CharacterBalance_04">
+		<beginCondition probability="1" cooldownTime="6" useCoolDownShowUI="1">
+			<stat hp="1" />
+			<weapon lh="31" rh="31" />
+		</beginCondition>
+		<changeSkill originSkillID="10700091" originSkillLevel="9" />
+		<autoTargeting autoTargetingMaxDegree="45" />
+		<push back="300" />
+		<combo comboOriginSkill="10700091" />
+		<conditionSkill level="1" skillID="10700002" skillTarget="1">
+			<beginCondition probability="1" allowBattleRidingState="1" />
+		</conditionSkill>
+		<motion>
+			<motionProperty sequenceName="Thief_SuddenAttack_B" strTagEffects="e0=CH/Skill_Feature_CharacterBalance_02/Thief/Eff_Thief_SuddenAttackEX_Cast_01.xml" ignoreCollisionGroups="20" />
+			<attack point="p0" pointGroupID="10700093" targetCount="8" direction="2" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+				<rangeProperty rangeType="cylinder" distance="300" rangeOffset="0.000000,50.000000,0.000000" height="150" width="410" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty hand="1" rate="1.94" effectHit="CH/Weapon/Dagger/Eff_Dagger_Hit_01.xml" />
+				<conditionSkill level="9" skillID="10700091" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10700011" hasBuffLevel="0" hasBuffOwner="1" hasBuffCount="0" hasBuffCountCompare="Equals" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="9" skillID="10700092" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10700111" hasBuffLevel="0" hasBuffOwner="1" hasBuffCount="0" hasBuffCountCompare="Equals" />
 					</beginCondition>
 				</conditionSkill>
 			</attack>
@@ -634,7 +541,7 @@
 		<changeSkill originSkillID="10700091" originSkillLevel="9" />
 		<autoTargeting autoTargetingMaxDegree="45" />
 		<push back="300" />
-		<combo comboOriginSkill="10700091" inputSkill="" outputSkill="" />
+		<combo comboOriginSkill="10700091" />
 		<conditionSkill level="1" skillID="10700002" skillTarget="1">
 			<beginCondition probability="1" allowBattleRidingState="1" />
 		</conditionSkill>
@@ -646,12 +553,43 @@
 				<damageProperty hand="1" rate="1.94" effectHit="CH/Weapon/Dagger/Eff_Dagger_Hit_01.xml" />
 				<conditionSkill level="9" skillID="10700091" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
 					<beginCondition probability="1">
-						<target hasBuffID="10700011" hasBuffLevel="0" hasBuffOwner="1" hasBuffCount="0" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+						<target hasBuffID="10700011" hasBuffLevel="0" hasBuffOwner="1" hasBuffCount="0" hasBuffCountCompare="Equals" />
 					</beginCondition>
 				</conditionSkill>
 				<conditionSkill level="9" skillID="10700092" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
 					<beginCondition probability="1">
-						<target hasBuffID="10700111" hasBuffLevel="0" hasBuffOwner="1" hasBuffCount="0" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+						<target hasBuffID="10700111" hasBuffLevel="0" hasBuffOwner="1" hasBuffCount="0" hasBuffCountCompare="Equals" />
+					</beginCondition>
+				</conditionSkill>
+			</attack>
+		</motion>
+	</level>
+	<level value="10" feature="CharacterBalance_04">
+		<beginCondition probability="1" cooldownTime="6" useCoolDownShowUI="1">
+			<stat hp="1" />
+			<weapon lh="31" rh="31" />
+		</beginCondition>
+		<changeSkill originSkillID="10700091" originSkillLevel="10" />
+		<autoTargeting autoTargetingMaxDegree="45" />
+		<push back="300" />
+		<combo comboOriginSkill="10700091" />
+		<conditionSkill level="1" skillID="10700002" skillTarget="1">
+			<beginCondition probability="1" allowBattleRidingState="1" />
+		</conditionSkill>
+		<motion>
+			<motionProperty sequenceName="Thief_SuddenAttack_B" strTagEffects="e0=CH/Skill_Feature_CharacterBalance_02/Thief/Eff_Thief_SuddenAttackEX_Cast_01.xml" ignoreCollisionGroups="20" />
+			<attack point="p0" pointGroupID="10700093" targetCount="8" direction="2" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+				<rangeProperty rangeType="cylinder" distance="300" rangeOffset="0.000000,50.000000,0.000000" height="150" width="410" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty hand="1" rate="2.03" effectHit="CH/Weapon/Dagger/Eff_Dagger_Hit_01.xml" />
+				<conditionSkill level="10" skillID="10700091" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10700011" hasBuffLevel="0" hasBuffOwner="1" hasBuffCount="0" hasBuffCountCompare="Equals" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="10" skillID="10700092" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10700111" hasBuffLevel="0" hasBuffOwner="1" hasBuffCount="0" hasBuffCountCompare="Equals" />
 					</beginCondition>
 				</conditionSkill>
 			</attack>
@@ -665,7 +603,7 @@
 		<changeSkill originSkillID="10700091" originSkillLevel="10" />
 		<autoTargeting autoTargetingMaxDegree="45" />
 		<push back="300" />
-		<combo comboOriginSkill="10700091" inputSkill="" outputSkill="" />
+		<combo comboOriginSkill="10700091" />
 		<conditionSkill level="1" skillID="10700002" skillTarget="1">
 			<beginCondition probability="1" allowBattleRidingState="1" />
 		</conditionSkill>
@@ -677,12 +615,43 @@
 				<damageProperty hand="1" rate="2.03" effectHit="CH/Weapon/Dagger/Eff_Dagger_Hit_01.xml" />
 				<conditionSkill level="10" skillID="10700091" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
 					<beginCondition probability="1">
-						<target hasBuffID="10700011" hasBuffLevel="0" hasBuffOwner="1" hasBuffCount="0" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+						<target hasBuffID="10700011" hasBuffLevel="0" hasBuffOwner="1" hasBuffCount="0" hasBuffCountCompare="Equals" />
 					</beginCondition>
 				</conditionSkill>
 				<conditionSkill level="10" skillID="10700092" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
 					<beginCondition probability="1">
-						<target hasBuffID="10700111" hasBuffLevel="0" hasBuffOwner="1" hasBuffCount="0" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+						<target hasBuffID="10700111" hasBuffLevel="0" hasBuffOwner="1" hasBuffCount="0" hasBuffCountCompare="Equals" />
+					</beginCondition>
+				</conditionSkill>
+			</attack>
+		</motion>
+	</level>
+	<level value="11" feature="CharacterBalance_04">
+		<beginCondition probability="1" cooldownTime="6" useCoolDownShowUI="1">
+			<stat hp="1" />
+			<weapon lh="31" rh="31" />
+		</beginCondition>
+		<changeSkill originSkillID="10700091" originSkillLevel="11" />
+		<autoTargeting autoTargetingMaxDegree="45" />
+		<push back="300" />
+		<combo comboOriginSkill="10700091" />
+		<conditionSkill level="1" skillID="10700002" skillTarget="1">
+			<beginCondition probability="1" allowBattleRidingState="1" />
+		</conditionSkill>
+		<motion>
+			<motionProperty sequenceName="Thief_SuddenAttack_B" strTagEffects="e0=CH/Skill_Feature_CharacterBalance_02/Thief/Eff_Thief_SuddenAttackEX_Cast_01.xml" ignoreCollisionGroups="20" />
+			<attack point="p0" pointGroupID="10700093" targetCount="8" direction="2" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+				<rangeProperty rangeType="cylinder" distance="300" rangeOffset="0.000000,50.000000,0.000000" height="150" width="410" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty hand="1" rate="2.12" effectHit="CH/Weapon/Dagger/Eff_Dagger_Hit_01.xml" />
+				<conditionSkill level="11" skillID="10700091" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10700011" hasBuffLevel="0" hasBuffOwner="1" hasBuffCount="0" hasBuffCountCompare="Equals" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="11" skillID="10700092" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10700111" hasBuffLevel="0" hasBuffOwner="1" hasBuffCount="0" hasBuffCountCompare="Equals" />
 					</beginCondition>
 				</conditionSkill>
 			</attack>
@@ -696,7 +665,7 @@
 		<changeSkill originSkillID="10700091" originSkillLevel="11" />
 		<autoTargeting autoTargetingMaxDegree="45" />
 		<push back="300" />
-		<combo comboOriginSkill="10700091" inputSkill="" outputSkill="" />
+		<combo comboOriginSkill="10700091" />
 		<conditionSkill level="1" skillID="10700002" skillTarget="1">
 			<beginCondition probability="1" allowBattleRidingState="1" />
 		</conditionSkill>
@@ -708,12 +677,43 @@
 				<damageProperty hand="1" rate="2.12" effectHit="CH/Weapon/Dagger/Eff_Dagger_Hit_01.xml" />
 				<conditionSkill level="11" skillID="10700091" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
 					<beginCondition probability="1">
-						<target hasBuffID="10700011" hasBuffLevel="0" hasBuffOwner="1" hasBuffCount="0" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+						<target hasBuffID="10700011" hasBuffLevel="0" hasBuffOwner="1" hasBuffCount="0" hasBuffCountCompare="Equals" />
 					</beginCondition>
 				</conditionSkill>
 				<conditionSkill level="11" skillID="10700092" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
 					<beginCondition probability="1">
-						<target hasBuffID="10700111" hasBuffLevel="0" hasBuffOwner="1" hasBuffCount="0" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+						<target hasBuffID="10700111" hasBuffLevel="0" hasBuffOwner="1" hasBuffCount="0" hasBuffCountCompare="Equals" />
+					</beginCondition>
+				</conditionSkill>
+			</attack>
+		</motion>
+	</level>
+	<level value="12" feature="CharacterBalance_04">
+		<beginCondition probability="1" cooldownTime="6" useCoolDownShowUI="1">
+			<stat hp="1" />
+			<weapon lh="31" rh="31" />
+		</beginCondition>
+		<changeSkill originSkillID="10700091" originSkillLevel="12" />
+		<autoTargeting autoTargetingMaxDegree="45" />
+		<push back="300" />
+		<combo comboOriginSkill="10700091" />
+		<conditionSkill level="1" skillID="10700002" skillTarget="1">
+			<beginCondition probability="1" allowBattleRidingState="1" />
+		</conditionSkill>
+		<motion>
+			<motionProperty sequenceName="Thief_SuddenAttack_B" strTagEffects="e0=CH/Skill_Feature_CharacterBalance_02/Thief/Eff_Thief_SuddenAttackEX_Cast_01.xml" ignoreCollisionGroups="20" />
+			<attack point="p0" pointGroupID="10700093" targetCount="8" direction="2" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+				<rangeProperty rangeType="cylinder" distance="300" rangeOffset="0.000000,50.000000,0.000000" height="150" width="410" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty hand="1" rate="2.21" effectHit="CH/Weapon/Dagger/Eff_Dagger_Hit_01.xml" />
+				<conditionSkill level="12" skillID="10700091" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10700011" hasBuffLevel="0" hasBuffOwner="1" hasBuffCount="0" hasBuffCountCompare="Equals" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="12" skillID="10700092" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10700111" hasBuffLevel="0" hasBuffOwner="1" hasBuffCount="0" hasBuffCountCompare="Equals" />
 					</beginCondition>
 				</conditionSkill>
 			</attack>
@@ -727,7 +727,7 @@
 		<changeSkill originSkillID="10700091" originSkillLevel="12" />
 		<autoTargeting autoTargetingMaxDegree="45" />
 		<push back="300" />
-		<combo comboOriginSkill="10700091" inputSkill="" outputSkill="" />
+		<combo comboOriginSkill="10700091" />
 		<conditionSkill level="1" skillID="10700002" skillTarget="1">
 			<beginCondition probability="1" allowBattleRidingState="1" />
 		</conditionSkill>
@@ -739,756 +739,12 @@
 				<damageProperty hand="1" rate="2.21" effectHit="CH/Weapon/Dagger/Eff_Dagger_Hit_01.xml" />
 				<conditionSkill level="12" skillID="10700091" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
 					<beginCondition probability="1">
-						<target hasBuffID="10700011" hasBuffLevel="0" hasBuffOwner="1" hasBuffCount="0" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+						<target hasBuffID="10700011" hasBuffLevel="0" hasBuffOwner="1" hasBuffCount="0" hasBuffCountCompare="Equals" />
 					</beginCondition>
 				</conditionSkill>
 				<conditionSkill level="12" skillID="10700092" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
 					<beginCondition probability="1">
-						<target hasBuffID="10700111" hasBuffLevel="0" hasBuffOwner="1" hasBuffCount="0" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
-					</beginCondition>
-				</conditionSkill>
-			</attack>
-		</motion>
-	</level>
-	<level value="1" feature="CharacterBalance_01">
-		<beginCondition probability="1" cooldownTime="6" useCoolDownShowUI="1">
-			<stat hp="1" />
-			<weapon lh="31" rh="31" />
-		</beginCondition>
-		<changeSkill originSkillID="10700091" />
-		<autoTargeting autoTargetingMaxDegree="45" />
-		<push back="300" />
-		<combo comboOriginSkill="10700091" inputSkill="" outputSkill="" />
-		<conditionSkill level="1" skillID="10700002" skillTarget="1">
-			<beginCondition probability="1" allowBattleRidingState="1" />
-		</conditionSkill>
-		<motion>
-			<motionProperty sequenceName="Thief_SuddenAttack_B" strTagEffects="e0=CH/Skill/Thief/Eff_Thief_SuddenAttackEX_Cast_01.xml" ignoreCollisionGroups="20" />
-			<attack point="p0" pointGroupID="10700093" targetCount="8" direction="2" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="2" unrideOnHit="1">
-				<rangeProperty rangeType="cylinder" distance="220" rangeOffset="0.000000,50.000000,0.000000" height="150" width="300" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty hand="1" rate="1.06" effectHit="CH/Weapon/Dagger/Eff_Dagger_Hit_01.xml" />
-				<conditionSkill level="1" skillID="10700091" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
-					<beginCondition probability="1">
-						<target hasBuffID="10700011" hasBuffLevel="0" hasBuffOwner="1" hasBuffCount="0" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
-					</beginCondition>
-				</conditionSkill>
-				<conditionSkill level="1" skillID="10700092" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
-					<beginCondition probability="1">
-						<target hasBuffID="10700111" hasBuffLevel="0" hasBuffOwner="1" hasBuffCount="0" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
-					</beginCondition>
-				</conditionSkill>
-			</attack>
-		</motion>
-	</level>
-	<level value="2" feature="CharacterBalance_01">
-		<beginCondition probability="1" cooldownTime="6" useCoolDownShowUI="1">
-			<stat hp="1" />
-			<weapon lh="31" rh="31" />
-		</beginCondition>
-		<changeSkill originSkillID="10700091" originSkillLevel="2" />
-		<autoTargeting autoTargetingMaxDegree="45" />
-		<push back="300" />
-		<combo comboOriginSkill="10700091" inputSkill="" outputSkill="" />
-		<conditionSkill level="1" skillID="10700002" skillTarget="1">
-			<beginCondition probability="1" allowBattleRidingState="1" />
-		</conditionSkill>
-		<motion>
-			<motionProperty sequenceName="Thief_SuddenAttack_B" strTagEffects="e0=CH/Skill/Thief/Eff_Thief_SuddenAttackEX_Cast_01.xml" ignoreCollisionGroups="20" />
-			<attack point="p0" pointGroupID="10700093" targetCount="8" direction="2" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="2" unrideOnHit="1">
-				<rangeProperty rangeType="cylinder" distance="220" rangeOffset="0.000000,50.000000,0.000000" height="150" width="300" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty hand="1" rate="1.13" effectHit="CH/Weapon/Dagger/Eff_Dagger_Hit_01.xml" />
-				<conditionSkill level="2" skillID="10700091" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
-					<beginCondition probability="1">
-						<target hasBuffID="10700011" hasBuffLevel="0" hasBuffOwner="1" hasBuffCount="0" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
-					</beginCondition>
-				</conditionSkill>
-				<conditionSkill level="2" skillID="10700092" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
-					<beginCondition probability="1">
-						<target hasBuffID="10700111" hasBuffLevel="0" hasBuffOwner="1" hasBuffCount="0" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
-					</beginCondition>
-				</conditionSkill>
-			</attack>
-		</motion>
-	</level>
-	<level value="3" feature="CharacterBalance_01">
-		<beginCondition probability="1" cooldownTime="6" useCoolDownShowUI="1">
-			<stat hp="1" />
-			<weapon lh="31" rh="31" />
-		</beginCondition>
-		<changeSkill originSkillID="10700091" originSkillLevel="3" />
-		<autoTargeting autoTargetingMaxDegree="45" />
-		<push back="300" />
-		<combo comboOriginSkill="10700091" inputSkill="" outputSkill="" />
-		<conditionSkill level="1" skillID="10700002" skillTarget="1">
-			<beginCondition probability="1" allowBattleRidingState="1" />
-		</conditionSkill>
-		<motion>
-			<motionProperty sequenceName="Thief_SuddenAttack_B" strTagEffects="e0=CH/Skill/Thief/Eff_Thief_SuddenAttackEX_Cast_01.xml" ignoreCollisionGroups="20" />
-			<attack point="p0" pointGroupID="10700093" targetCount="8" direction="2" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="2" unrideOnHit="1">
-				<rangeProperty rangeType="cylinder" distance="220" rangeOffset="0.000000,50.000000,0.000000" height="150" width="300" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty hand="1" rate="1.2" effectHit="CH/Weapon/Dagger/Eff_Dagger_Hit_01.xml" />
-				<conditionSkill level="3" skillID="10700091" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
-					<beginCondition probability="1">
-						<target hasBuffID="10700011" hasBuffLevel="0" hasBuffOwner="1" hasBuffCount="0" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
-					</beginCondition>
-				</conditionSkill>
-				<conditionSkill level="3" skillID="10700092" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
-					<beginCondition probability="1">
-						<target hasBuffID="10700111" hasBuffLevel="0" hasBuffOwner="1" hasBuffCount="0" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
-					</beginCondition>
-				</conditionSkill>
-			</attack>
-		</motion>
-	</level>
-	<level value="4" feature="CharacterBalance_01">
-		<beginCondition probability="1" cooldownTime="6" useCoolDownShowUI="1">
-			<stat hp="1" />
-			<weapon lh="31" rh="31" />
-		</beginCondition>
-		<changeSkill originSkillID="10700091" originSkillLevel="4" />
-		<autoTargeting autoTargetingMaxDegree="45" />
-		<push back="300" />
-		<combo comboOriginSkill="10700091" inputSkill="" outputSkill="" />
-		<conditionSkill level="1" skillID="10700002" skillTarget="1">
-			<beginCondition probability="1" allowBattleRidingState="1" />
-		</conditionSkill>
-		<motion>
-			<motionProperty sequenceName="Thief_SuddenAttack_B" strTagEffects="e0=CH/Skill/Thief/Eff_Thief_SuddenAttackEX_Cast_01.xml" ignoreCollisionGroups="20" />
-			<attack point="p0" pointGroupID="10700093" targetCount="8" direction="2" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="2" unrideOnHit="1">
-				<rangeProperty rangeType="cylinder" distance="220" rangeOffset="0.000000,50.000000,0.000000" height="150" width="300" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty hand="1" rate="1.27" effectHit="CH/Weapon/Dagger/Eff_Dagger_Hit_01.xml" />
-				<conditionSkill level="4" skillID="10700091" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
-					<beginCondition probability="1">
-						<target hasBuffID="10700011" hasBuffLevel="0" hasBuffOwner="1" hasBuffCount="0" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
-					</beginCondition>
-				</conditionSkill>
-				<conditionSkill level="4" skillID="10700092" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
-					<beginCondition probability="1">
-						<target hasBuffID="10700111" hasBuffLevel="0" hasBuffOwner="1" hasBuffCount="0" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
-					</beginCondition>
-				</conditionSkill>
-			</attack>
-		</motion>
-	</level>
-	<level value="5" feature="CharacterBalance_01">
-		<beginCondition probability="1" cooldownTime="6" useCoolDownShowUI="1">
-			<stat hp="1" />
-			<weapon lh="31" rh="31" />
-		</beginCondition>
-		<changeSkill originSkillID="10700091" originSkillLevel="5" />
-		<autoTargeting autoTargetingMaxDegree="45" />
-		<push back="300" />
-		<combo comboOriginSkill="10700091" inputSkill="" outputSkill="" />
-		<conditionSkill level="1" skillID="10700002" skillTarget="1">
-			<beginCondition probability="1" allowBattleRidingState="1" />
-		</conditionSkill>
-		<motion>
-			<motionProperty sequenceName="Thief_SuddenAttack_B" strTagEffects="e0=CH/Skill/Thief/Eff_Thief_SuddenAttackEX_Cast_01.xml" ignoreCollisionGroups="20" />
-			<attack point="p0" pointGroupID="10700093" targetCount="8" direction="2" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="2" unrideOnHit="1">
-				<rangeProperty rangeType="cylinder" distance="220" rangeOffset="0.000000,50.000000,0.000000" height="150" width="300" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty hand="1" rate="1.34" effectHit="CH/Weapon/Dagger/Eff_Dagger_Hit_01.xml" />
-				<conditionSkill level="5" skillID="10700091" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
-					<beginCondition probability="1">
-						<target hasBuffID="10700011" hasBuffLevel="0" hasBuffOwner="1" hasBuffCount="0" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
-					</beginCondition>
-				</conditionSkill>
-				<conditionSkill level="5" skillID="10700092" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
-					<beginCondition probability="1">
-						<target hasBuffID="10700111" hasBuffLevel="0" hasBuffOwner="1" hasBuffCount="0" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
-					</beginCondition>
-				</conditionSkill>
-			</attack>
-		</motion>
-	</level>
-	<level value="6" feature="CharacterBalance_01">
-		<beginCondition probability="1" cooldownTime="6" useCoolDownShowUI="1">
-			<stat hp="1" />
-			<weapon lh="31" rh="31" />
-		</beginCondition>
-		<changeSkill originSkillID="10700091" originSkillLevel="6" />
-		<autoTargeting autoTargetingMaxDegree="45" />
-		<push back="300" />
-		<combo comboOriginSkill="10700091" inputSkill="" outputSkill="" />
-		<conditionSkill level="1" skillID="10700002" skillTarget="1">
-			<beginCondition probability="1" allowBattleRidingState="1" />
-		</conditionSkill>
-		<motion>
-			<motionProperty sequenceName="Thief_SuddenAttack_B" strTagEffects="e0=CH/Skill/Thief/Eff_Thief_SuddenAttackEX_Cast_01.xml" ignoreCollisionGroups="20" />
-			<attack point="p0" pointGroupID="10700093" targetCount="8" direction="2" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="2" unrideOnHit="1">
-				<rangeProperty rangeType="cylinder" distance="220" rangeOffset="0.000000,50.000000,0.000000" height="150" width="300" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty hand="1" rate="1.41" effectHit="CH/Weapon/Dagger/Eff_Dagger_Hit_01.xml" />
-				<conditionSkill level="6" skillID="10700091" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
-					<beginCondition probability="1">
-						<target hasBuffID="10700011" hasBuffLevel="0" hasBuffOwner="1" hasBuffCount="0" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
-					</beginCondition>
-				</conditionSkill>
-				<conditionSkill level="6" skillID="10700092" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
-					<beginCondition probability="1">
-						<target hasBuffID="10700111" hasBuffLevel="0" hasBuffOwner="1" hasBuffCount="0" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
-					</beginCondition>
-				</conditionSkill>
-			</attack>
-		</motion>
-	</level>
-	<level value="7" feature="CharacterBalance_01">
-		<beginCondition probability="1" cooldownTime="6" useCoolDownShowUI="1">
-			<stat hp="1" />
-			<weapon lh="31" rh="31" />
-		</beginCondition>
-		<changeSkill originSkillID="10700091" originSkillLevel="7" />
-		<autoTargeting autoTargetingMaxDegree="45" />
-		<push back="300" />
-		<combo comboOriginSkill="10700091" inputSkill="" outputSkill="" />
-		<conditionSkill level="1" skillID="10700002" skillTarget="1">
-			<beginCondition probability="1" allowBattleRidingState="1" />
-		</conditionSkill>
-		<motion>
-			<motionProperty sequenceName="Thief_SuddenAttack_B" strTagEffects="e0=CH/Skill/Thief/Eff_Thief_SuddenAttackEX_Cast_01.xml" ignoreCollisionGroups="20" />
-			<attack point="p0" pointGroupID="10700093" targetCount="8" direction="2" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="2" unrideOnHit="1">
-				<rangeProperty rangeType="cylinder" distance="220" rangeOffset="0.000000,50.000000,0.000000" height="150" width="300" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty hand="1" rate="1.48" effectHit="CH/Weapon/Dagger/Eff_Dagger_Hit_01.xml" />
-				<conditionSkill level="7" skillID="10700091" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
-					<beginCondition probability="1">
-						<target hasBuffID="10700011" hasBuffLevel="0" hasBuffOwner="1" hasBuffCount="0" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
-					</beginCondition>
-				</conditionSkill>
-				<conditionSkill level="7" skillID="10700092" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
-					<beginCondition probability="1">
-						<target hasBuffID="10700111" hasBuffLevel="0" hasBuffOwner="1" hasBuffCount="0" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
-					</beginCondition>
-				</conditionSkill>
-			</attack>
-		</motion>
-	</level>
-	<level value="8" feature="CharacterBalance_01">
-		<beginCondition probability="1" cooldownTime="6" useCoolDownShowUI="1">
-			<stat hp="1" />
-			<weapon lh="31" rh="31" />
-		</beginCondition>
-		<changeSkill originSkillID="10700091" originSkillLevel="8" />
-		<autoTargeting autoTargetingMaxDegree="45" />
-		<push back="300" />
-		<combo comboOriginSkill="10700091" inputSkill="" outputSkill="" />
-		<conditionSkill level="1" skillID="10700002" skillTarget="1">
-			<beginCondition probability="1" allowBattleRidingState="1" />
-		</conditionSkill>
-		<motion>
-			<motionProperty sequenceName="Thief_SuddenAttack_B" strTagEffects="e0=CH/Skill/Thief/Eff_Thief_SuddenAttackEX_Cast_01.xml" ignoreCollisionGroups="20" />
-			<attack point="p0" pointGroupID="10700093" targetCount="8" direction="2" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="2" unrideOnHit="1">
-				<rangeProperty rangeType="cylinder" distance="220" rangeOffset="0.000000,50.000000,0.000000" height="150" width="300" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty hand="1" rate="1.55" effectHit="CH/Weapon/Dagger/Eff_Dagger_Hit_01.xml" />
-				<conditionSkill level="8" skillID="10700091" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
-					<beginCondition probability="1">
-						<target hasBuffID="10700011" hasBuffLevel="0" hasBuffOwner="1" hasBuffCount="0" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
-					</beginCondition>
-				</conditionSkill>
-				<conditionSkill level="8" skillID="10700092" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
-					<beginCondition probability="1">
-						<target hasBuffID="10700111" hasBuffLevel="0" hasBuffOwner="1" hasBuffCount="0" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
-					</beginCondition>
-				</conditionSkill>
-			</attack>
-		</motion>
-	</level>
-	<level value="9" feature="CharacterBalance_01">
-		<beginCondition probability="1" cooldownTime="6" useCoolDownShowUI="1">
-			<stat hp="1" />
-			<weapon lh="31" rh="31" />
-		</beginCondition>
-		<changeSkill originSkillID="10700091" originSkillLevel="9" />
-		<autoTargeting autoTargetingMaxDegree="45" />
-		<push back="300" />
-		<combo comboOriginSkill="10700091" inputSkill="" outputSkill="" />
-		<conditionSkill level="1" skillID="10700002" skillTarget="1">
-			<beginCondition probability="1" allowBattleRidingState="1" />
-		</conditionSkill>
-		<motion>
-			<motionProperty sequenceName="Thief_SuddenAttack_B" strTagEffects="e0=CH/Skill/Thief/Eff_Thief_SuddenAttackEX_Cast_01.xml" ignoreCollisionGroups="20" />
-			<attack point="p0" pointGroupID="10700093" targetCount="8" direction="2" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="2" unrideOnHit="1">
-				<rangeProperty rangeType="cylinder" distance="220" rangeOffset="0.000000,50.000000,0.000000" height="150" width="300" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty hand="1" rate="1.62" effectHit="CH/Weapon/Dagger/Eff_Dagger_Hit_01.xml" />
-				<conditionSkill level="9" skillID="10700091" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
-					<beginCondition probability="1">
-						<target hasBuffID="10700011" hasBuffLevel="0" hasBuffOwner="1" hasBuffCount="0" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
-					</beginCondition>
-				</conditionSkill>
-				<conditionSkill level="9" skillID="10700092" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
-					<beginCondition probability="1">
-						<target hasBuffID="10700111" hasBuffLevel="0" hasBuffOwner="1" hasBuffCount="0" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
-					</beginCondition>
-				</conditionSkill>
-			</attack>
-		</motion>
-	</level>
-	<level value="10" feature="CharacterBalance_01">
-		<beginCondition probability="1" cooldownTime="6" useCoolDownShowUI="1">
-			<stat hp="1" />
-			<weapon lh="31" rh="31" />
-		</beginCondition>
-		<changeSkill originSkillID="10700091" originSkillLevel="10" />
-		<autoTargeting autoTargetingMaxDegree="45" />
-		<push back="300" />
-		<combo comboOriginSkill="10700091" inputSkill="" outputSkill="" />
-		<conditionSkill level="1" skillID="10700002" skillTarget="1">
-			<beginCondition probability="1" allowBattleRidingState="1" />
-		</conditionSkill>
-		<motion>
-			<motionProperty sequenceName="Thief_SuddenAttack_B" strTagEffects="e0=CH/Skill/Thief/Eff_Thief_SuddenAttackEX_Cast_01.xml" ignoreCollisionGroups="20" />
-			<attack point="p0" pointGroupID="10700093" targetCount="8" direction="2" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="2" unrideOnHit="1">
-				<rangeProperty rangeType="cylinder" distance="220" rangeOffset="0.000000,50.000000,0.000000" height="150" width="300" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty hand="1" rate="1.69" effectHit="CH/Weapon/Dagger/Eff_Dagger_Hit_01.xml" />
-				<conditionSkill level="10" skillID="10700091" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
-					<beginCondition probability="1">
-						<target hasBuffID="10700011" hasBuffLevel="0" hasBuffOwner="1" hasBuffCount="0" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
-					</beginCondition>
-				</conditionSkill>
-				<conditionSkill level="10" skillID="10700092" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
-					<beginCondition probability="1">
-						<target hasBuffID="10700111" hasBuffLevel="0" hasBuffOwner="1" hasBuffCount="0" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
-					</beginCondition>
-				</conditionSkill>
-			</attack>
-		</motion>
-	</level>
-	<level value="11" feature="CharacterBalance_01">
-		<beginCondition probability="1" cooldownTime="6" useCoolDownShowUI="1">
-			<stat hp="1" />
-			<weapon lh="31" rh="31" />
-		</beginCondition>
-		<changeSkill originSkillID="10700091" originSkillLevel="11" />
-		<autoTargeting autoTargetingMaxDegree="45" />
-		<push back="300" />
-		<combo comboOriginSkill="10700091" inputSkill="" outputSkill="" />
-		<conditionSkill level="1" skillID="10700002" skillTarget="1">
-			<beginCondition probability="1" allowBattleRidingState="1" />
-		</conditionSkill>
-		<motion>
-			<motionProperty sequenceName="Thief_SuddenAttack_B" strTagEffects="e0=CH/Skill/Thief/Eff_Thief_SuddenAttackEX_Cast_01.xml" ignoreCollisionGroups="20" />
-			<attack point="p0" pointGroupID="10700093" targetCount="8" direction="2" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="2" unrideOnHit="1">
-				<rangeProperty rangeType="cylinder" distance="220" rangeOffset="0.000000,50.000000,0.000000" height="150" width="300" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty hand="1" rate="1.76" effectHit="CH/Weapon/Dagger/Eff_Dagger_Hit_01.xml" />
-				<conditionSkill level="11" skillID="10700091" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
-					<beginCondition probability="1">
-						<target hasBuffID="10700011" hasBuffLevel="0" hasBuffOwner="1" hasBuffCount="0" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
-					</beginCondition>
-				</conditionSkill>
-				<conditionSkill level="11" skillID="10700092" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
-					<beginCondition probability="1">
-						<target hasBuffID="10700111" hasBuffLevel="0" hasBuffOwner="1" hasBuffCount="0" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
-					</beginCondition>
-				</conditionSkill>
-			</attack>
-		</motion>
-	</level>
-	<level value="12" feature="CharacterBalance_01">
-		<beginCondition probability="1" cooldownTime="6" useCoolDownShowUI="1">
-			<stat hp="1" />
-			<weapon lh="31" rh="31" />
-		</beginCondition>
-		<changeSkill originSkillID="10700091" originSkillLevel="12" />
-		<autoTargeting autoTargetingMaxDegree="45" />
-		<push back="300" />
-		<combo comboOriginSkill="10700091" inputSkill="" outputSkill="" />
-		<conditionSkill level="1" skillID="10700002" skillTarget="1">
-			<beginCondition probability="1" allowBattleRidingState="1" />
-		</conditionSkill>
-		<motion>
-			<motionProperty sequenceName="Thief_SuddenAttack_B" strTagEffects="e0=CH/Skill/Thief/Eff_Thief_SuddenAttackEX_Cast_01.xml" ignoreCollisionGroups="20" />
-			<attack point="p0" pointGroupID="10700093" targetCount="8" direction="2" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="2" unrideOnHit="1">
-				<rangeProperty rangeType="cylinder" distance="220" rangeOffset="0.000000,50.000000,0.000000" height="150" width="300" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty hand="1" rate="1.83" effectHit="CH/Weapon/Dagger/Eff_Dagger_Hit_01.xml" />
-				<conditionSkill level="12" skillID="10700091" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
-					<beginCondition probability="1">
-						<target hasBuffID="10700011" hasBuffLevel="0" hasBuffOwner="1" hasBuffCount="0" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
-					</beginCondition>
-				</conditionSkill>
-				<conditionSkill level="12" skillID="10700092" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
-					<beginCondition probability="1">
-						<target hasBuffID="10700111" hasBuffLevel="0" hasBuffOwner="1" hasBuffCount="0" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
-					</beginCondition>
-				</conditionSkill>
-			</attack>
-		</motion>
-	</level>
-	<level value="1">
-		<beginCondition probability="1" cooldownTime="6" useCoolDownShowUI="1">
-			<stat hp="1" />
-			<weapon lh="31" rh="31" />
-		</beginCondition>
-		<changeSkill originSkillID="10700091" />
-		<autoTargeting autoTargetingMaxDegree="45" />
-		<push back="300" />
-		<combo comboOriginSkill="10700091" inputSkill="" outputSkill="" />
-		<conditionSkill level="1" skillID="10700002" skillTarget="1">
-			<beginCondition probability="1" allowBattleRidingState="1" />
-		</conditionSkill>
-		<motion>
-			<motionProperty sequenceName="Thief_SuddenAttack_B" strTagEffects="e0=CH/Skill/Thief/Eff_Thief_SuddenAttackEX_Cast_01.xml" ignoreCollisionGroups="20" />
-			<attack point="p0" pointGroupID="10700093" targetCount="8" direction="2" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="2" unrideOnHit="1">
-				<rangeProperty rangeType="cylinder" distance="220" rangeOffset="0.000000,50.000000,0.000000" height="150" width="300" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty hand="1" rate="1.01" effectHit="CH/Weapon/Dagger/Eff_Dagger_Hit_01.xml" />
-				<conditionSkill level="1" skillID="10700091" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
-					<beginCondition probability="1">
-						<target hasBuffID="10700011" hasBuffLevel="0" hasBuffOwner="1" hasBuffCount="0" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
-					</beginCondition>
-				</conditionSkill>
-				<conditionSkill level="1" skillID="10700092" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
-					<beginCondition probability="1">
-						<target hasBuffID="10700111" hasBuffLevel="0" hasBuffOwner="1" hasBuffCount="0" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
-					</beginCondition>
-				</conditionSkill>
-			</attack>
-		</motion>
-	</level>
-	<level value="2">
-		<beginCondition probability="1" cooldownTime="6" useCoolDownShowUI="1">
-			<stat hp="1" />
-			<weapon lh="31" rh="31" />
-		</beginCondition>
-		<changeSkill originSkillID="10700091" originSkillLevel="2" />
-		<autoTargeting autoTargetingMaxDegree="45" />
-		<push back="300" />
-		<combo comboOriginSkill="10700091" inputSkill="" outputSkill="" />
-		<conditionSkill level="1" skillID="10700002" skillTarget="1">
-			<beginCondition probability="1" allowBattleRidingState="1" />
-		</conditionSkill>
-		<motion>
-			<motionProperty sequenceName="Thief_SuddenAttack_B" strTagEffects="e0=CH/Skill/Thief/Eff_Thief_SuddenAttackEX_Cast_01.xml" ignoreCollisionGroups="20" />
-			<attack point="p0" pointGroupID="10700093" targetCount="8" direction="2" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="2" unrideOnHit="1">
-				<rangeProperty rangeType="cylinder" distance="220" rangeOffset="0.000000,50.000000,0.000000" height="150" width="300" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty hand="1" rate="1.08" effectHit="CH/Weapon/Dagger/Eff_Dagger_Hit_01.xml" />
-				<conditionSkill level="2" skillID="10700091" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
-					<beginCondition probability="1">
-						<target hasBuffID="10700011" hasBuffLevel="0" hasBuffOwner="1" hasBuffCount="0" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
-					</beginCondition>
-				</conditionSkill>
-				<conditionSkill level="2" skillID="10700092" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
-					<beginCondition probability="1">
-						<target hasBuffID="10700111" hasBuffLevel="0" hasBuffOwner="1" hasBuffCount="0" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
-					</beginCondition>
-				</conditionSkill>
-			</attack>
-		</motion>
-	</level>
-	<level value="3">
-		<beginCondition probability="1" cooldownTime="6" useCoolDownShowUI="1">
-			<stat hp="1" />
-			<weapon lh="31" rh="31" />
-		</beginCondition>
-		<changeSkill originSkillID="10700091" originSkillLevel="3" />
-		<autoTargeting autoTargetingMaxDegree="45" />
-		<push back="300" />
-		<combo comboOriginSkill="10700091" inputSkill="" outputSkill="" />
-		<conditionSkill level="1" skillID="10700002" skillTarget="1">
-			<beginCondition probability="1" allowBattleRidingState="1" />
-		</conditionSkill>
-		<motion>
-			<motionProperty sequenceName="Thief_SuddenAttack_B" strTagEffects="e0=CH/Skill/Thief/Eff_Thief_SuddenAttackEX_Cast_01.xml" ignoreCollisionGroups="20" />
-			<attack point="p0" pointGroupID="10700093" targetCount="8" direction="2" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="2" unrideOnHit="1">
-				<rangeProperty rangeType="cylinder" distance="220" rangeOffset="0.000000,50.000000,0.000000" height="150" width="300" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty hand="1" rate="1.15" effectHit="CH/Weapon/Dagger/Eff_Dagger_Hit_01.xml" />
-				<conditionSkill level="3" skillID="10700091" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
-					<beginCondition probability="1">
-						<target hasBuffID="10700011" hasBuffLevel="0" hasBuffOwner="1" hasBuffCount="0" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
-					</beginCondition>
-				</conditionSkill>
-				<conditionSkill level="3" skillID="10700092" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
-					<beginCondition probability="1">
-						<target hasBuffID="10700111" hasBuffLevel="0" hasBuffOwner="1" hasBuffCount="0" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
-					</beginCondition>
-				</conditionSkill>
-			</attack>
-		</motion>
-	</level>
-	<level value="4">
-		<beginCondition probability="1" cooldownTime="6" useCoolDownShowUI="1">
-			<stat hp="1" />
-			<weapon lh="31" rh="31" />
-		</beginCondition>
-		<changeSkill originSkillID="10700091" originSkillLevel="4" />
-		<autoTargeting autoTargetingMaxDegree="45" />
-		<push back="300" />
-		<combo comboOriginSkill="10700091" inputSkill="" outputSkill="" />
-		<conditionSkill level="1" skillID="10700002" skillTarget="1">
-			<beginCondition probability="1" allowBattleRidingState="1" />
-		</conditionSkill>
-		<motion>
-			<motionProperty sequenceName="Thief_SuddenAttack_B" strTagEffects="e0=CH/Skill/Thief/Eff_Thief_SuddenAttackEX_Cast_01.xml" ignoreCollisionGroups="20" />
-			<attack point="p0" pointGroupID="10700093" targetCount="8" direction="2" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="2" unrideOnHit="1">
-				<rangeProperty rangeType="cylinder" distance="220" rangeOffset="0.000000,50.000000,0.000000" height="150" width="300" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty hand="1" rate="1.22" effectHit="CH/Weapon/Dagger/Eff_Dagger_Hit_01.xml" />
-				<conditionSkill level="4" skillID="10700091" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
-					<beginCondition probability="1">
-						<target hasBuffID="10700011" hasBuffLevel="0" hasBuffOwner="1" hasBuffCount="0" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
-					</beginCondition>
-				</conditionSkill>
-				<conditionSkill level="4" skillID="10700092" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
-					<beginCondition probability="1">
-						<target hasBuffID="10700111" hasBuffLevel="0" hasBuffOwner="1" hasBuffCount="0" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
-					</beginCondition>
-				</conditionSkill>
-			</attack>
-		</motion>
-	</level>
-	<level value="5">
-		<beginCondition probability="1" cooldownTime="6" useCoolDownShowUI="1">
-			<stat hp="1" />
-			<weapon lh="31" rh="31" />
-		</beginCondition>
-		<changeSkill originSkillID="10700091" originSkillLevel="5" />
-		<autoTargeting autoTargetingMaxDegree="45" />
-		<push back="300" />
-		<combo comboOriginSkill="10700091" inputSkill="" outputSkill="" />
-		<conditionSkill level="1" skillID="10700002" skillTarget="1">
-			<beginCondition probability="1" allowBattleRidingState="1" />
-		</conditionSkill>
-		<motion>
-			<motionProperty sequenceName="Thief_SuddenAttack_B" strTagEffects="e0=CH/Skill/Thief/Eff_Thief_SuddenAttackEX_Cast_01.xml" ignoreCollisionGroups="20" />
-			<attack point="p0" pointGroupID="10700093" targetCount="8" direction="2" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="2" unrideOnHit="1">
-				<rangeProperty rangeType="cylinder" distance="220" rangeOffset="0.000000,50.000000,0.000000" height="150" width="300" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty hand="1" rate="1.29" effectHit="CH/Weapon/Dagger/Eff_Dagger_Hit_01.xml" />
-				<conditionSkill level="5" skillID="10700091" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
-					<beginCondition probability="1">
-						<target hasBuffID="10700011" hasBuffLevel="0" hasBuffOwner="1" hasBuffCount="0" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
-					</beginCondition>
-				</conditionSkill>
-				<conditionSkill level="5" skillID="10700092" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
-					<beginCondition probability="1">
-						<target hasBuffID="10700111" hasBuffLevel="0" hasBuffOwner="1" hasBuffCount="0" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
-					</beginCondition>
-				</conditionSkill>
-			</attack>
-		</motion>
-	</level>
-	<level value="6">
-		<beginCondition probability="1" cooldownTime="6" useCoolDownShowUI="1">
-			<stat hp="1" />
-			<weapon lh="31" rh="31" />
-		</beginCondition>
-		<changeSkill originSkillID="10700091" originSkillLevel="6" />
-		<autoTargeting autoTargetingMaxDegree="45" />
-		<push back="300" />
-		<combo comboOriginSkill="10700091" inputSkill="" outputSkill="" />
-		<conditionSkill level="1" skillID="10700002" skillTarget="1">
-			<beginCondition probability="1" allowBattleRidingState="1" />
-		</conditionSkill>
-		<motion>
-			<motionProperty sequenceName="Thief_SuddenAttack_B" strTagEffects="e0=CH/Skill/Thief/Eff_Thief_SuddenAttackEX_Cast_01.xml" ignoreCollisionGroups="20" />
-			<attack point="p0" pointGroupID="10700093" targetCount="8" direction="2" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="2" unrideOnHit="1">
-				<rangeProperty rangeType="cylinder" distance="220" rangeOffset="0.000000,50.000000,0.000000" height="150" width="300" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty hand="1" rate="1.36" effectHit="CH/Weapon/Dagger/Eff_Dagger_Hit_01.xml" />
-				<conditionSkill level="6" skillID="10700091" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
-					<beginCondition probability="1">
-						<target hasBuffID="10700011" hasBuffLevel="0" hasBuffOwner="1" hasBuffCount="0" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
-					</beginCondition>
-				</conditionSkill>
-				<conditionSkill level="6" skillID="10700092" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
-					<beginCondition probability="1">
-						<target hasBuffID="10700111" hasBuffLevel="0" hasBuffOwner="1" hasBuffCount="0" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
-					</beginCondition>
-				</conditionSkill>
-			</attack>
-		</motion>
-	</level>
-	<level value="7">
-		<beginCondition probability="1" cooldownTime="6" useCoolDownShowUI="1">
-			<stat hp="1" />
-			<weapon lh="31" rh="31" />
-		</beginCondition>
-		<changeSkill originSkillID="10700091" originSkillLevel="7" />
-		<autoTargeting autoTargetingMaxDegree="45" />
-		<push back="300" />
-		<combo comboOriginSkill="10700091" inputSkill="" outputSkill="" />
-		<conditionSkill level="1" skillID="10700002" skillTarget="1">
-			<beginCondition probability="1" allowBattleRidingState="1" />
-		</conditionSkill>
-		<motion>
-			<motionProperty sequenceName="Thief_SuddenAttack_B" strTagEffects="e0=CH/Skill/Thief/Eff_Thief_SuddenAttackEX_Cast_01.xml" ignoreCollisionGroups="20" />
-			<attack point="p0" pointGroupID="10700093" targetCount="8" direction="2" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="2" unrideOnHit="1">
-				<rangeProperty rangeType="cylinder" distance="220" rangeOffset="0.000000,50.000000,0.000000" height="150" width="300" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty hand="1" rate="1.43" effectHit="CH/Weapon/Dagger/Eff_Dagger_Hit_01.xml" />
-				<conditionSkill level="7" skillID="10700091" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
-					<beginCondition probability="1">
-						<target hasBuffID="10700011" hasBuffLevel="0" hasBuffOwner="1" hasBuffCount="0" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
-					</beginCondition>
-				</conditionSkill>
-				<conditionSkill level="7" skillID="10700092" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
-					<beginCondition probability="1">
-						<target hasBuffID="10700111" hasBuffLevel="0" hasBuffOwner="1" hasBuffCount="0" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
-					</beginCondition>
-				</conditionSkill>
-			</attack>
-		</motion>
-	</level>
-	<level value="8">
-		<beginCondition probability="1" cooldownTime="6" useCoolDownShowUI="1">
-			<stat hp="1" />
-			<weapon lh="31" rh="31" />
-		</beginCondition>
-		<changeSkill originSkillID="10700091" originSkillLevel="8" />
-		<autoTargeting autoTargetingMaxDegree="45" />
-		<push back="300" />
-		<combo comboOriginSkill="10700091" inputSkill="" outputSkill="" />
-		<conditionSkill level="1" skillID="10700002" skillTarget="1">
-			<beginCondition probability="1" allowBattleRidingState="1" />
-		</conditionSkill>
-		<motion>
-			<motionProperty sequenceName="Thief_SuddenAttack_B" strTagEffects="e0=CH/Skill/Thief/Eff_Thief_SuddenAttackEX_Cast_01.xml" ignoreCollisionGroups="20" />
-			<attack point="p0" pointGroupID="10700093" targetCount="8" direction="2" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="2" unrideOnHit="1">
-				<rangeProperty rangeType="cylinder" distance="220" rangeOffset="0.000000,50.000000,0.000000" height="150" width="300" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty hand="1" rate="1.5" effectHit="CH/Weapon/Dagger/Eff_Dagger_Hit_01.xml" />
-				<conditionSkill level="8" skillID="10700091" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
-					<beginCondition probability="1">
-						<target hasBuffID="10700011" hasBuffLevel="0" hasBuffOwner="1" hasBuffCount="0" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
-					</beginCondition>
-				</conditionSkill>
-				<conditionSkill level="8" skillID="10700092" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
-					<beginCondition probability="1">
-						<target hasBuffID="10700111" hasBuffLevel="0" hasBuffOwner="1" hasBuffCount="0" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
-					</beginCondition>
-				</conditionSkill>
-			</attack>
-		</motion>
-	</level>
-	<level value="9">
-		<beginCondition probability="1" cooldownTime="6" useCoolDownShowUI="1">
-			<stat hp="1" />
-			<weapon lh="31" rh="31" />
-		</beginCondition>
-		<changeSkill originSkillID="10700091" originSkillLevel="9" />
-		<autoTargeting autoTargetingMaxDegree="45" />
-		<push back="300" />
-		<combo comboOriginSkill="10700091" inputSkill="" outputSkill="" />
-		<conditionSkill level="1" skillID="10700002" skillTarget="1">
-			<beginCondition probability="1" allowBattleRidingState="1" />
-		</conditionSkill>
-		<motion>
-			<motionProperty sequenceName="Thief_SuddenAttack_B" strTagEffects="e0=CH/Skill/Thief/Eff_Thief_SuddenAttackEX_Cast_01.xml" ignoreCollisionGroups="20" />
-			<attack point="p0" pointGroupID="10700093" targetCount="8" direction="2" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="2" unrideOnHit="1">
-				<rangeProperty rangeType="cylinder" distance="220" rangeOffset="0.000000,50.000000,0.000000" height="150" width="300" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty hand="1" rate="1.57" effectHit="CH/Weapon/Dagger/Eff_Dagger_Hit_01.xml" />
-				<conditionSkill level="9" skillID="10700091" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
-					<beginCondition probability="1">
-						<target hasBuffID="10700011" hasBuffLevel="0" hasBuffOwner="1" hasBuffCount="0" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
-					</beginCondition>
-				</conditionSkill>
-				<conditionSkill level="9" skillID="10700092" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
-					<beginCondition probability="1">
-						<target hasBuffID="10700111" hasBuffLevel="0" hasBuffOwner="1" hasBuffCount="0" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
-					</beginCondition>
-				</conditionSkill>
-			</attack>
-		</motion>
-	</level>
-	<level value="10">
-		<beginCondition probability="1" cooldownTime="6" useCoolDownShowUI="1">
-			<stat hp="1" />
-			<weapon lh="31" rh="31" />
-		</beginCondition>
-		<changeSkill originSkillID="10700091" originSkillLevel="10" />
-		<autoTargeting autoTargetingMaxDegree="45" />
-		<push back="300" />
-		<combo comboOriginSkill="10700091" inputSkill="" outputSkill="" />
-		<conditionSkill level="1" skillID="10700002" skillTarget="1">
-			<beginCondition probability="1" allowBattleRidingState="1" />
-		</conditionSkill>
-		<motion>
-			<motionProperty sequenceName="Thief_SuddenAttack_B" strTagEffects="e0=CH/Skill/Thief/Eff_Thief_SuddenAttackEX_Cast_01.xml" ignoreCollisionGroups="20" />
-			<attack point="p0" pointGroupID="10700093" targetCount="8" direction="2" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="2" unrideOnHit="1">
-				<rangeProperty rangeType="cylinder" distance="220" rangeOffset="0.000000,50.000000,0.000000" height="150" width="300" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty hand="1" rate="1.64" effectHit="CH/Weapon/Dagger/Eff_Dagger_Hit_01.xml" />
-				<conditionSkill level="10" skillID="10700091" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
-					<beginCondition probability="1">
-						<target hasBuffID="10700011" hasBuffLevel="0" hasBuffOwner="1" hasBuffCount="0" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
-					</beginCondition>
-				</conditionSkill>
-				<conditionSkill level="10" skillID="10700092" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
-					<beginCondition probability="1">
-						<target hasBuffID="10700111" hasBuffLevel="0" hasBuffOwner="1" hasBuffCount="0" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
-					</beginCondition>
-				</conditionSkill>
-			</attack>
-		</motion>
-	</level>
-	<level value="11">
-		<beginCondition probability="1" cooldownTime="6" useCoolDownShowUI="1">
-			<stat hp="1" />
-			<weapon lh="31" rh="31" />
-		</beginCondition>
-		<changeSkill originSkillID="10700091" originSkillLevel="11" />
-		<autoTargeting autoTargetingMaxDegree="45" />
-		<push back="300" />
-		<combo comboOriginSkill="10700091" inputSkill="" outputSkill="" />
-		<conditionSkill level="1" skillID="10700002" skillTarget="1">
-			<beginCondition probability="1" allowBattleRidingState="1" />
-		</conditionSkill>
-		<motion>
-			<motionProperty sequenceName="Thief_SuddenAttack_B" strTagEffects="e0=CH/Skill/Thief/Eff_Thief_SuddenAttackEX_Cast_01.xml" ignoreCollisionGroups="20" />
-			<attack point="p0" pointGroupID="10700093" targetCount="8" direction="2" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="2" unrideOnHit="1">
-				<rangeProperty rangeType="cylinder" distance="220" rangeOffset="0.000000,50.000000,0.000000" height="150" width="300" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty hand="1" rate="1.71" effectHit="CH/Weapon/Dagger/Eff_Dagger_Hit_01.xml" />
-				<conditionSkill level="11" skillID="10700091" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
-					<beginCondition probability="1">
-						<target hasBuffID="10700011" hasBuffLevel="0" hasBuffOwner="1" hasBuffCount="0" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
-					</beginCondition>
-				</conditionSkill>
-				<conditionSkill level="11" skillID="10700092" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
-					<beginCondition probability="1">
-						<target hasBuffID="10700111" hasBuffLevel="0" hasBuffOwner="1" hasBuffCount="0" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
-					</beginCondition>
-				</conditionSkill>
-			</attack>
-		</motion>
-	</level>
-	<level value="12">
-		<beginCondition probability="1" cooldownTime="6" useCoolDownShowUI="1">
-			<stat hp="1" />
-			<weapon lh="31" rh="31" />
-		</beginCondition>
-		<changeSkill originSkillID="10700091" originSkillLevel="12" />
-		<autoTargeting autoTargetingMaxDegree="45" />
-		<push back="300" />
-		<combo comboOriginSkill="10700091" inputSkill="" outputSkill="" />
-		<conditionSkill level="1" skillID="10700002" skillTarget="1">
-			<beginCondition probability="1" allowBattleRidingState="1" />
-		</conditionSkill>
-		<motion>
-			<motionProperty sequenceName="Thief_SuddenAttack_B" strTagEffects="e0=CH/Skill/Thief/Eff_Thief_SuddenAttackEX_Cast_01.xml" ignoreCollisionGroups="20" />
-			<attack point="p0" pointGroupID="10700093" targetCount="8" direction="2" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="2" unrideOnHit="1">
-				<rangeProperty rangeType="cylinder" distance="220" rangeOffset="0.000000,50.000000,0.000000" height="150" width="300" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty hand="1" rate="1.78" effectHit="CH/Weapon/Dagger/Eff_Dagger_Hit_01.xml" />
-				<conditionSkill level="12" skillID="10700091" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
-					<beginCondition probability="1">
-						<target hasBuffID="10700011" hasBuffLevel="0" hasBuffOwner="1" hasBuffCount="0" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
-					</beginCondition>
-				</conditionSkill>
-				<conditionSkill level="12" skillID="10700092" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
-					<beginCondition probability="1">
-						<target hasBuffID="10700111" hasBuffLevel="0" hasBuffOwner="1" hasBuffCount="0" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+						<target hasBuffID="10700111" hasBuffLevel="0" hasBuffOwner="1" hasBuffCount="0" hasBuffCountCompare="Equals" />
 					</beginCondition>
 				</conditionSkill>
 			</attack>

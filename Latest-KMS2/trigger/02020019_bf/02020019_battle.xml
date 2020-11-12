@@ -283,31 +283,13 @@
 			<action name="버프를걸어준다" arg1="241" arg2="49219001" arg3="1" arg4="1"/>
 			<action name="버프를걸어준다" arg1="242" arg2="49219001" arg3="1" arg4="1"/>
 		</onEnter>
-		<condition feature="FameChallengeBuff_01" name="AllOf">		<!-- <한국용 컨디션체크> -->
-			<group>
-				<condition name="DungeonCheckPlayTime" playSeconds="180" operator="LessEqual"/>
-				<condition name="몬스터가죽어있으면" arg1="241,242,243,244,245,246,247,248" />
-			</group>
-			<action name="DungeonMissionComplete" missionID="24093004" />
-			<action name="DungeonMissionComplete" missionID="24093005" />
-			<transition state="전투_종료"/>
-		</condition>
-		<condition feature="FameChallengeBuff_02" name="AllOf">		<!-- <중국용 컨디션체크> -->
+		<condition name="AllOf">
 			<group>
 				<condition name="DungeonCheckPlayTime" playSeconds="70" operator="LessEqual"/>
 				<condition name="몬스터가죽어있으면" arg1="241,242,243,244,245,246,247,248" />
 			</group>
 			<action name="DungeonMissionComplete" missionID="24093004" />
 			<action name="DungeonMissionComplete" missionID="24093006" />
-			<transition state="전투_종료"/>
-		</condition>
-		<condition feature="FameChallengeBuff_03" name="AllOf">		<!-- <NA용 컨디션체크> -->
-			<group>
-				<condition name="DungeonCheckPlayTime" playSeconds="270" operator="LessEqual"/>
-				<condition name="몬스터가죽어있으면" arg1="241,242,243,244,245,246,247,248" />
-			</group>
-			<action name="DungeonMissionComplete" missionID="24093004" />
-			<action name="DungeonMissionComplete" missionID="24093007" />
 			<transition state="전투_종료"/>
 		</condition>
 		<condition name="몬스터가죽어있으면" arg1="241,242,243,244,245,246,247,248" >

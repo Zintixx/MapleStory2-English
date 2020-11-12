@@ -28,6 +28,28 @@
 			</attack>
 		</motion>
 	</level>
+	<level value="1">
+		<beginCondition probability="1">
+			<requireEffect code="10500072" />
+			<stat hp="1" />
+		</beginCondition>
+		<autoTargeting autoTargetingMaxDegree="45" />
+		<push back="100" />
+		<upgrade level="28" skillIDs="10500071" skillLevels="7" />
+		<conditionSkill level="1" skillID="10500083" skillTarget="1">
+			<beginCondition probability="1" allowBattleRidingState="1" />
+		</conditionSkill>
+		<motion>
+			<motionProperty sequenceName="Ranger_EagleStrike_A" motionEffect="CH/Skill/Ranger/Eff_Ranger_EagleStrike_Cast_01.xml" holdWeapon="0" />
+			<attack point="p0" pointGroupID="10500081" targetCount="8" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="3" unrideOnHit="1">
+				<rangeProperty rangeType="box" distance="900" rangeOffset="0.000000,-50.000000,0.000000" height="250" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="3.02" hitSpeedRate="0.6" push="1" pushdistance="200" pushduration="0.25" pushEaseType="1" attackMaterial="1" />
+				<conditionSkill level="1" skillID="10500081" skillTarget="2" skillOwner="1" dependOnDamageCount="1" />
+				<conditionSkill level="1" skillID="10500082" skillTarget="2" skillOwner="1" dependOnDamageCount="1" />
+			</attack>
+		</motion>
+	</level>
 	<level value="2" feature="CharacterBalance_01">
 		<beginCondition probability="1">
 			<requireEffect code="10500072" />
@@ -45,6 +67,28 @@
 				<rangeProperty rangeType="box" distance="900" rangeOffset="0.000000,-50.000000,0.000000" height="250" width="300" applyTarget="1" />
 				<arrowProperty nonTarget="1" />
 				<damageProperty rate="3.15" hitSpeedRate="0.6" push="1" pushdistance="200" pushduration="0.25" pushEaseType="1" attackMaterial="1" />
+				<conditionSkill level="2" skillID="10500081" skillTarget="2" skillOwner="1" dependOnDamageCount="1" />
+				<conditionSkill level="2" skillID="10500082" skillTarget="2" skillOwner="1" dependOnDamageCount="1" />
+			</attack>
+		</motion>
+	</level>
+	<level value="2">
+		<beginCondition probability="1">
+			<requireEffect code="10500072" />
+			<stat hp="1" />
+		</beginCondition>
+		<autoTargeting autoTargetingMaxDegree="45" />
+		<push back="100" />
+		<upgrade level="30" skillIDs="10500071" skillLevels="7" />
+		<conditionSkill level="1" skillID="10500083" skillTarget="1">
+			<beginCondition probability="1" allowBattleRidingState="1" />
+		</conditionSkill>
+		<motion>
+			<motionProperty sequenceName="Ranger_EagleStrike_A" motionEffect="CH/Skill/Ranger/Eff_Ranger_EagleStrike_Cast_01.xml" holdWeapon="0" />
+			<attack point="p0" pointGroupID="10500081" targetCount="8" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="3" unrideOnHit="1">
+				<rangeProperty rangeType="box" distance="900" rangeOffset="0.000000,-50.000000,0.000000" height="250" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="3.23" hitSpeedRate="0.6" push="1" pushdistance="200" pushduration="0.25" pushEaseType="1" attackMaterial="1" />
 				<conditionSkill level="2" skillID="10500081" skillTarget="2" skillOwner="1" dependOnDamageCount="1" />
 				<conditionSkill level="2" skillID="10500082" skillTarget="2" skillOwner="1" dependOnDamageCount="1" />
 			</attack>
@@ -72,6 +116,28 @@
 			</attack>
 		</motion>
 	</level>
+	<level value="3">
+		<beginCondition probability="1">
+			<requireEffect code="10500072" />
+			<stat hp="1" />
+		</beginCondition>
+		<autoTargeting autoTargetingMaxDegree="45" />
+		<push back="100" />
+		<upgrade level="32" skillIDs="10500071" skillLevels="7" />
+		<conditionSkill level="1" skillID="10500083" skillTarget="1">
+			<beginCondition probability="1" allowBattleRidingState="1" />
+		</conditionSkill>
+		<motion>
+			<motionProperty sequenceName="Ranger_EagleStrike_A" motionEffect="CH/Skill/Ranger/Eff_Ranger_EagleStrike_Cast_01.xml" holdWeapon="0" />
+			<attack point="p0" pointGroupID="10500081" targetCount="8" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="3" unrideOnHit="1">
+				<rangeProperty rangeType="box" distance="900" rangeOffset="0.000000,-50.000000,0.000000" height="250" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="3.44" hitSpeedRate="0.6" push="1" pushdistance="200" pushduration="0.25" pushEaseType="1" attackMaterial="1" />
+				<conditionSkill level="3" skillID="10500081" skillTarget="2" skillOwner="1" dependOnDamageCount="1" />
+				<conditionSkill level="3" skillID="10500082" skillTarget="2" skillOwner="1" dependOnDamageCount="1" />
+			</attack>
+		</motion>
+	</level>
 	<level value="4" feature="CharacterBalance_01">
 		<beginCondition probability="1">
 			<requireEffect code="10500072" />
@@ -89,6 +155,28 @@
 				<rangeProperty rangeType="box" distance="900" rangeOffset="0.000000,-50.000000,0.000000" height="250" width="300" applyTarget="1" />
 				<arrowProperty nonTarget="1" />
 				<damageProperty rate="3.57" hitSpeedRate="0.6" push="1" pushdistance="200" pushduration="0.25" pushEaseType="1" attackMaterial="1" />
+				<conditionSkill level="4" skillID="10500081" skillTarget="2" skillOwner="1" dependOnDamageCount="1" />
+				<conditionSkill level="4" skillID="10500082" skillTarget="2" skillOwner="1" dependOnDamageCount="1" />
+			</attack>
+		</motion>
+	</level>
+	<level value="4">
+		<beginCondition probability="1">
+			<requireEffect code="10500072" />
+			<stat hp="1" />
+		</beginCondition>
+		<autoTargeting autoTargetingMaxDegree="45" />
+		<push back="100" />
+		<upgrade level="34" skillIDs="10500071" skillLevels="7" />
+		<conditionSkill level="1" skillID="10500083" skillTarget="1">
+			<beginCondition probability="1" allowBattleRidingState="1" />
+		</conditionSkill>
+		<motion>
+			<motionProperty sequenceName="Ranger_EagleStrike_A" motionEffect="CH/Skill/Ranger/Eff_Ranger_EagleStrike_Cast_01.xml" holdWeapon="0" />
+			<attack point="p0" pointGroupID="10500081" targetCount="8" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="3" unrideOnHit="1">
+				<rangeProperty rangeType="box" distance="900" rangeOffset="0.000000,-50.000000,0.000000" height="250" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="3.65" hitSpeedRate="0.6" push="1" pushdistance="200" pushduration="0.25" pushEaseType="1" attackMaterial="1" />
 				<conditionSkill level="4" skillID="10500081" skillTarget="2" skillOwner="1" dependOnDamageCount="1" />
 				<conditionSkill level="4" skillID="10500082" skillTarget="2" skillOwner="1" dependOnDamageCount="1" />
 			</attack>
@@ -116,6 +204,28 @@
 			</attack>
 		</motion>
 	</level>
+	<level value="5">
+		<beginCondition probability="1">
+			<requireEffect code="10500072" />
+			<stat hp="1" />
+		</beginCondition>
+		<autoTargeting autoTargetingMaxDegree="45" />
+		<push back="100" />
+		<upgrade level="36" skillIDs="10500071" skillLevels="7" />
+		<conditionSkill level="1" skillID="10500083" skillTarget="1">
+			<beginCondition probability="1" allowBattleRidingState="1" />
+		</conditionSkill>
+		<motion>
+			<motionProperty sequenceName="Ranger_EagleStrike_A" motionEffect="CH/Skill/Ranger/Eff_Ranger_EagleStrike_Cast_01.xml" holdWeapon="0" />
+			<attack point="p0" pointGroupID="10500081" targetCount="8" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="3" unrideOnHit="1">
+				<rangeProperty rangeType="box" distance="900" rangeOffset="0.000000,-50.000000,0.000000" height="250" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="3.86" hitSpeedRate="0.6" push="1" pushdistance="200" pushduration="0.25" pushEaseType="1" attackMaterial="1" />
+				<conditionSkill level="5" skillID="10500081" skillTarget="2" skillOwner="1" dependOnDamageCount="1" />
+				<conditionSkill level="5" skillID="10500082" skillTarget="2" skillOwner="1" dependOnDamageCount="1" />
+			</attack>
+		</motion>
+	</level>
 	<level value="6" feature="CharacterBalance_01">
 		<beginCondition probability="1">
 			<requireEffect code="10500072" />
@@ -133,6 +243,28 @@
 				<rangeProperty rangeType="box" distance="900" rangeOffset="0.000000,-50.000000,0.000000" height="250" width="300" applyTarget="1" />
 				<arrowProperty nonTarget="1" />
 				<damageProperty rate="3.99" hitSpeedRate="0.6" push="1" pushdistance="200" pushduration="0.25" pushEaseType="1" attackMaterial="1" />
+				<conditionSkill level="6" skillID="10500081" skillTarget="2" skillOwner="1" dependOnDamageCount="1" />
+				<conditionSkill level="6" skillID="10500082" skillTarget="2" skillOwner="1" dependOnDamageCount="1" />
+			</attack>
+		</motion>
+	</level>
+	<level value="6">
+		<beginCondition probability="1">
+			<requireEffect code="10500072" />
+			<stat hp="1" />
+		</beginCondition>
+		<autoTargeting autoTargetingMaxDegree="45" />
+		<push back="100" />
+		<upgrade level="38" skillIDs="10500071" skillLevels="7" />
+		<conditionSkill level="1" skillID="10500083" skillTarget="1">
+			<beginCondition probability="1" allowBattleRidingState="1" />
+		</conditionSkill>
+		<motion>
+			<motionProperty sequenceName="Ranger_EagleStrike_A" motionEffect="CH/Skill/Ranger/Eff_Ranger_EagleStrike_Cast_01.xml" holdWeapon="0" />
+			<attack point="p0" pointGroupID="10500081" targetCount="8" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="3" unrideOnHit="1">
+				<rangeProperty rangeType="box" distance="900" rangeOffset="0.000000,-50.000000,0.000000" height="250" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="4.07" hitSpeedRate="0.6" push="1" pushdistance="200" pushduration="0.25" pushEaseType="1" attackMaterial="1" />
 				<conditionSkill level="6" skillID="10500081" skillTarget="2" skillOwner="1" dependOnDamageCount="1" />
 				<conditionSkill level="6" skillID="10500082" skillTarget="2" skillOwner="1" dependOnDamageCount="1" />
 			</attack>
@@ -160,6 +292,28 @@
 			</attack>
 		</motion>
 	</level>
+	<level value="7">
+		<beginCondition probability="1">
+			<requireEffect code="10500072" />
+			<stat hp="1" />
+		</beginCondition>
+		<autoTargeting autoTargetingMaxDegree="45" />
+		<push back="100" />
+		<upgrade level="40" skillIDs="10500071" skillLevels="7" />
+		<conditionSkill level="1" skillID="10500083" skillTarget="1">
+			<beginCondition probability="1" allowBattleRidingState="1" />
+		</conditionSkill>
+		<motion>
+			<motionProperty sequenceName="Ranger_EagleStrike_A" motionEffect="CH/Skill/Ranger/Eff_Ranger_EagleStrike_Cast_01.xml" holdWeapon="0" />
+			<attack point="p0" pointGroupID="10500081" targetCount="8" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="3" unrideOnHit="1">
+				<rangeProperty rangeType="box" distance="900" rangeOffset="0.000000,-50.000000,0.000000" height="250" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="4.28" hitSpeedRate="0.6" push="1" pushdistance="200" pushduration="0.25" pushEaseType="1" attackMaterial="1" />
+				<conditionSkill level="7" skillID="10500081" skillTarget="2" skillOwner="1" dependOnDamageCount="1" />
+				<conditionSkill level="7" skillID="10500082" skillTarget="2" skillOwner="1" dependOnDamageCount="1" />
+			</attack>
+		</motion>
+	</level>
 	<level value="8" feature="CharacterBalance_01">
 		<beginCondition probability="1">
 			<requireEffect code="10500072" />
@@ -177,6 +331,28 @@
 				<rangeProperty rangeType="box" distance="900" rangeOffset="0.000000,-50.000000,0.000000" height="250" width="300" applyTarget="1" />
 				<arrowProperty nonTarget="1" />
 				<damageProperty rate="4.41" hitSpeedRate="0.6" push="1" pushdistance="200" pushduration="0.25" pushEaseType="1" attackMaterial="1" />
+				<conditionSkill level="8" skillID="10500081" skillTarget="2" skillOwner="1" dependOnDamageCount="1" />
+				<conditionSkill level="8" skillID="10500082" skillTarget="2" skillOwner="1" dependOnDamageCount="1" />
+			</attack>
+		</motion>
+	</level>
+	<level value="8">
+		<beginCondition probability="1">
+			<requireEffect code="10500072" />
+			<stat hp="1" />
+		</beginCondition>
+		<autoTargeting autoTargetingMaxDegree="45" />
+		<push back="100" />
+		<upgrade level="42" skillIDs="10500071" skillLevels="7" />
+		<conditionSkill level="1" skillID="10500083" skillTarget="1">
+			<beginCondition probability="1" allowBattleRidingState="1" />
+		</conditionSkill>
+		<motion>
+			<motionProperty sequenceName="Ranger_EagleStrike_A" motionEffect="CH/Skill/Ranger/Eff_Ranger_EagleStrike_Cast_01.xml" holdWeapon="0" />
+			<attack point="p0" pointGroupID="10500081" targetCount="8" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="3" unrideOnHit="1">
+				<rangeProperty rangeType="box" distance="900" rangeOffset="0.000000,-50.000000,0.000000" height="250" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="4.49" hitSpeedRate="0.6" push="1" pushdistance="200" pushduration="0.25" pushEaseType="1" attackMaterial="1" />
 				<conditionSkill level="8" skillID="10500081" skillTarget="2" skillOwner="1" dependOnDamageCount="1" />
 				<conditionSkill level="8" skillID="10500082" skillTarget="2" skillOwner="1" dependOnDamageCount="1" />
 			</attack>
@@ -204,6 +380,28 @@
 			</attack>
 		</motion>
 	</level>
+	<level value="9">
+		<beginCondition probability="1">
+			<requireEffect code="10500072" />
+			<stat hp="1" />
+		</beginCondition>
+		<autoTargeting autoTargetingMaxDegree="45" />
+		<push back="100" />
+		<upgrade level="44" skillIDs="10500071" skillLevels="7" />
+		<conditionSkill level="1" skillID="10500083" skillTarget="1">
+			<beginCondition probability="1" allowBattleRidingState="1" />
+		</conditionSkill>
+		<motion>
+			<motionProperty sequenceName="Ranger_EagleStrike_A" motionEffect="CH/Skill/Ranger/Eff_Ranger_EagleStrike_Cast_01.xml" holdWeapon="0" />
+			<attack point="p0" pointGroupID="10500081" targetCount="8" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="3" unrideOnHit="1">
+				<rangeProperty rangeType="box" distance="900" rangeOffset="0.000000,-50.000000,0.000000" height="250" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="4.7" hitSpeedRate="0.6" push="1" pushdistance="200" pushduration="0.25" pushEaseType="1" attackMaterial="1" />
+				<conditionSkill level="9" skillID="10500081" skillTarget="2" skillOwner="1" dependOnDamageCount="1" />
+				<conditionSkill level="9" skillID="10500082" skillTarget="2" skillOwner="1" dependOnDamageCount="1" />
+			</attack>
+		</motion>
+	</level>
 	<level value="10" feature="CharacterBalance_01">
 		<beginCondition probability="1">
 			<requireEffect code="10500072" />
@@ -221,6 +419,28 @@
 				<rangeProperty rangeType="box" distance="900" rangeOffset="0.000000,-50.000000,0.000000" height="250" width="300" applyTarget="1" />
 				<arrowProperty nonTarget="1" />
 				<damageProperty rate="4.83" hitSpeedRate="0.6" push="1" pushdistance="200" pushduration="0.25" pushEaseType="1" attackMaterial="1" />
+				<conditionSkill level="10" skillID="10500081" skillTarget="2" skillOwner="1" dependOnDamageCount="1" />
+				<conditionSkill level="10" skillID="10500082" skillTarget="2" skillOwner="1" dependOnDamageCount="1" />
+			</attack>
+		</motion>
+	</level>
+	<level value="10">
+		<beginCondition probability="1">
+			<requireEffect code="10500072" />
+			<stat hp="1" />
+		</beginCondition>
+		<autoTargeting autoTargetingMaxDegree="45" />
+		<push back="100" />
+		<upgrade level="46" skillIDs="10500071" skillLevels="7" />
+		<conditionSkill level="1" skillID="10500083" skillTarget="1">
+			<beginCondition probability="1" allowBattleRidingState="1" />
+		</conditionSkill>
+		<motion>
+			<motionProperty sequenceName="Ranger_EagleStrike_A" motionEffect="CH/Skill/Ranger/Eff_Ranger_EagleStrike_Cast_01.xml" holdWeapon="0" />
+			<attack point="p0" pointGroupID="10500081" targetCount="8" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="3" unrideOnHit="1">
+				<rangeProperty rangeType="box" distance="900" rangeOffset="0.000000,-50.000000,0.000000" height="250" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="4.91" hitSpeedRate="0.6" push="1" pushdistance="200" pushduration="0.25" pushEaseType="1" attackMaterial="1" />
 				<conditionSkill level="10" skillID="10500081" skillTarget="2" skillOwner="1" dependOnDamageCount="1" />
 				<conditionSkill level="10" skillID="10500082" skillTarget="2" skillOwner="1" dependOnDamageCount="1" />
 			</attack>
@@ -248,248 +468,6 @@
 			</attack>
 		</motion>
 	</level>
-	<level value="12" feature="CharacterBalance_01">
-		<beginCondition probability="1">
-			<requireEffect code="10500072" />
-			<stat hp="1" />
-		</beginCondition>
-		<autoTargeting autoTargetingMaxDegree="45" />
-		<push back="100" />
-		<upgrade level="50" skillIDs="10500071" skillLevels="7" />
-		<conditionSkill level="1" skillID="10500083" skillTarget="1">
-			<beginCondition probability="1" allowBattleRidingState="1" />
-		</conditionSkill>
-		<motion>
-			<motionProperty sequenceName="Ranger_EagleStrike_A" motionEffect="CH/Skill/Ranger/Eff_Ranger_EagleStrike_Cast_01.xml" holdWeapon="0" />
-			<attack point="p0" pointGroupID="10500081" targetCount="8" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="3" unrideOnHit="1">
-				<rangeProperty rangeType="box" distance="900" rangeOffset="0.000000,-50.000000,0.000000" height="250" width="300" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty rate="5.25" hitSpeedRate="0.6" push="1" pushdistance="200" pushduration="0.25" pushEaseType="1" attackMaterial="1" />
-				<conditionSkill level="12" skillID="10500081" skillTarget="2" skillOwner="1" dependOnDamageCount="1" />
-				<conditionSkill level="12" skillID="10500082" skillTarget="2" skillOwner="1" dependOnDamageCount="1" />
-			</attack>
-		</motion>
-	</level>
-	<level value="1">
-		<beginCondition probability="1">
-			<requireEffect code="10500072" />
-			<stat hp="1" />
-		</beginCondition>
-		<autoTargeting autoTargetingMaxDegree="45" />
-		<push back="100" />
-		<upgrade level="28" skillIDs="10500071" skillLevels="7" />
-		<conditionSkill level="1" skillID="10500083" skillTarget="1">
-			<beginCondition probability="1" allowBattleRidingState="1" />
-		</conditionSkill>
-		<motion>
-			<motionProperty sequenceName="Ranger_EagleStrike_A" motionEffect="CH/Skill/Ranger/Eff_Ranger_EagleStrike_Cast_01.xml" holdWeapon="0" />
-			<attack point="p0" pointGroupID="10500081" targetCount="8" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="3" unrideOnHit="1">
-				<rangeProperty rangeType="box" distance="900" rangeOffset="0.000000,-50.000000,0.000000" height="250" width="300" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty rate="3.02" hitSpeedRate="0.6" push="1" pushdistance="200" pushduration="0.25" pushEaseType="1" attackMaterial="1" />
-				<conditionSkill level="1" skillID="10500081" skillTarget="2" skillOwner="1" dependOnDamageCount="1" />
-				<conditionSkill level="1" skillID="10500082" skillTarget="2" skillOwner="1" dependOnDamageCount="1" />
-			</attack>
-		</motion>
-	</level>
-	<level value="2">
-		<beginCondition probability="1">
-			<requireEffect code="10500072" />
-			<stat hp="1" />
-		</beginCondition>
-		<autoTargeting autoTargetingMaxDegree="45" />
-		<push back="100" />
-		<upgrade level="30" skillIDs="10500071" skillLevels="7" />
-		<conditionSkill level="1" skillID="10500083" skillTarget="1">
-			<beginCondition probability="1" allowBattleRidingState="1" />
-		</conditionSkill>
-		<motion>
-			<motionProperty sequenceName="Ranger_EagleStrike_A" motionEffect="CH/Skill/Ranger/Eff_Ranger_EagleStrike_Cast_01.xml" holdWeapon="0" />
-			<attack point="p0" pointGroupID="10500081" targetCount="8" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="3" unrideOnHit="1">
-				<rangeProperty rangeType="box" distance="900" rangeOffset="0.000000,-50.000000,0.000000" height="250" width="300" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty rate="3.23" hitSpeedRate="0.6" push="1" pushdistance="200" pushduration="0.25" pushEaseType="1" attackMaterial="1" />
-				<conditionSkill level="2" skillID="10500081" skillTarget="2" skillOwner="1" dependOnDamageCount="1" />
-				<conditionSkill level="2" skillID="10500082" skillTarget="2" skillOwner="1" dependOnDamageCount="1" />
-			</attack>
-		</motion>
-	</level>
-	<level value="3">
-		<beginCondition probability="1">
-			<requireEffect code="10500072" />
-			<stat hp="1" />
-		</beginCondition>
-		<autoTargeting autoTargetingMaxDegree="45" />
-		<push back="100" />
-		<upgrade level="32" skillIDs="10500071" skillLevels="7" />
-		<conditionSkill level="1" skillID="10500083" skillTarget="1">
-			<beginCondition probability="1" allowBattleRidingState="1" />
-		</conditionSkill>
-		<motion>
-			<motionProperty sequenceName="Ranger_EagleStrike_A" motionEffect="CH/Skill/Ranger/Eff_Ranger_EagleStrike_Cast_01.xml" holdWeapon="0" />
-			<attack point="p0" pointGroupID="10500081" targetCount="8" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="3" unrideOnHit="1">
-				<rangeProperty rangeType="box" distance="900" rangeOffset="0.000000,-50.000000,0.000000" height="250" width="300" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty rate="3.44" hitSpeedRate="0.6" push="1" pushdistance="200" pushduration="0.25" pushEaseType="1" attackMaterial="1" />
-				<conditionSkill level="3" skillID="10500081" skillTarget="2" skillOwner="1" dependOnDamageCount="1" />
-				<conditionSkill level="3" skillID="10500082" skillTarget="2" skillOwner="1" dependOnDamageCount="1" />
-			</attack>
-		</motion>
-	</level>
-	<level value="4">
-		<beginCondition probability="1">
-			<requireEffect code="10500072" />
-			<stat hp="1" />
-		</beginCondition>
-		<autoTargeting autoTargetingMaxDegree="45" />
-		<push back="100" />
-		<upgrade level="34" skillIDs="10500071" skillLevels="7" />
-		<conditionSkill level="1" skillID="10500083" skillTarget="1">
-			<beginCondition probability="1" allowBattleRidingState="1" />
-		</conditionSkill>
-		<motion>
-			<motionProperty sequenceName="Ranger_EagleStrike_A" motionEffect="CH/Skill/Ranger/Eff_Ranger_EagleStrike_Cast_01.xml" holdWeapon="0" />
-			<attack point="p0" pointGroupID="10500081" targetCount="8" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="3" unrideOnHit="1">
-				<rangeProperty rangeType="box" distance="900" rangeOffset="0.000000,-50.000000,0.000000" height="250" width="300" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty rate="3.65" hitSpeedRate="0.6" push="1" pushdistance="200" pushduration="0.25" pushEaseType="1" attackMaterial="1" />
-				<conditionSkill level="4" skillID="10500081" skillTarget="2" skillOwner="1" dependOnDamageCount="1" />
-				<conditionSkill level="4" skillID="10500082" skillTarget="2" skillOwner="1" dependOnDamageCount="1" />
-			</attack>
-		</motion>
-	</level>
-	<level value="5">
-		<beginCondition probability="1">
-			<requireEffect code="10500072" />
-			<stat hp="1" />
-		</beginCondition>
-		<autoTargeting autoTargetingMaxDegree="45" />
-		<push back="100" />
-		<upgrade level="36" skillIDs="10500071" skillLevels="7" />
-		<conditionSkill level="1" skillID="10500083" skillTarget="1">
-			<beginCondition probability="1" allowBattleRidingState="1" />
-		</conditionSkill>
-		<motion>
-			<motionProperty sequenceName="Ranger_EagleStrike_A" motionEffect="CH/Skill/Ranger/Eff_Ranger_EagleStrike_Cast_01.xml" holdWeapon="0" />
-			<attack point="p0" pointGroupID="10500081" targetCount="8" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="3" unrideOnHit="1">
-				<rangeProperty rangeType="box" distance="900" rangeOffset="0.000000,-50.000000,0.000000" height="250" width="300" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty rate="3.86" hitSpeedRate="0.6" push="1" pushdistance="200" pushduration="0.25" pushEaseType="1" attackMaterial="1" />
-				<conditionSkill level="5" skillID="10500081" skillTarget="2" skillOwner="1" dependOnDamageCount="1" />
-				<conditionSkill level="5" skillID="10500082" skillTarget="2" skillOwner="1" dependOnDamageCount="1" />
-			</attack>
-		</motion>
-	</level>
-	<level value="6">
-		<beginCondition probability="1">
-			<requireEffect code="10500072" />
-			<stat hp="1" />
-		</beginCondition>
-		<autoTargeting autoTargetingMaxDegree="45" />
-		<push back="100" />
-		<upgrade level="38" skillIDs="10500071" skillLevels="7" />
-		<conditionSkill level="1" skillID="10500083" skillTarget="1">
-			<beginCondition probability="1" allowBattleRidingState="1" />
-		</conditionSkill>
-		<motion>
-			<motionProperty sequenceName="Ranger_EagleStrike_A" motionEffect="CH/Skill/Ranger/Eff_Ranger_EagleStrike_Cast_01.xml" holdWeapon="0" />
-			<attack point="p0" pointGroupID="10500081" targetCount="8" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="3" unrideOnHit="1">
-				<rangeProperty rangeType="box" distance="900" rangeOffset="0.000000,-50.000000,0.000000" height="250" width="300" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty rate="4.07" hitSpeedRate="0.6" push="1" pushdistance="200" pushduration="0.25" pushEaseType="1" attackMaterial="1" />
-				<conditionSkill level="6" skillID="10500081" skillTarget="2" skillOwner="1" dependOnDamageCount="1" />
-				<conditionSkill level="6" skillID="10500082" skillTarget="2" skillOwner="1" dependOnDamageCount="1" />
-			</attack>
-		</motion>
-	</level>
-	<level value="7">
-		<beginCondition probability="1">
-			<requireEffect code="10500072" />
-			<stat hp="1" />
-		</beginCondition>
-		<autoTargeting autoTargetingMaxDegree="45" />
-		<push back="100" />
-		<upgrade level="40" skillIDs="10500071" skillLevels="7" />
-		<conditionSkill level="1" skillID="10500083" skillTarget="1">
-			<beginCondition probability="1" allowBattleRidingState="1" />
-		</conditionSkill>
-		<motion>
-			<motionProperty sequenceName="Ranger_EagleStrike_A" motionEffect="CH/Skill/Ranger/Eff_Ranger_EagleStrike_Cast_01.xml" holdWeapon="0" />
-			<attack point="p0" pointGroupID="10500081" targetCount="8" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="3" unrideOnHit="1">
-				<rangeProperty rangeType="box" distance="900" rangeOffset="0.000000,-50.000000,0.000000" height="250" width="300" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty rate="4.28" hitSpeedRate="0.6" push="1" pushdistance="200" pushduration="0.25" pushEaseType="1" attackMaterial="1" />
-				<conditionSkill level="7" skillID="10500081" skillTarget="2" skillOwner="1" dependOnDamageCount="1" />
-				<conditionSkill level="7" skillID="10500082" skillTarget="2" skillOwner="1" dependOnDamageCount="1" />
-			</attack>
-		</motion>
-	</level>
-	<level value="8">
-		<beginCondition probability="1">
-			<requireEffect code="10500072" />
-			<stat hp="1" />
-		</beginCondition>
-		<autoTargeting autoTargetingMaxDegree="45" />
-		<push back="100" />
-		<upgrade level="42" skillIDs="10500071" skillLevels="7" />
-		<conditionSkill level="1" skillID="10500083" skillTarget="1">
-			<beginCondition probability="1" allowBattleRidingState="1" />
-		</conditionSkill>
-		<motion>
-			<motionProperty sequenceName="Ranger_EagleStrike_A" motionEffect="CH/Skill/Ranger/Eff_Ranger_EagleStrike_Cast_01.xml" holdWeapon="0" />
-			<attack point="p0" pointGroupID="10500081" targetCount="8" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="3" unrideOnHit="1">
-				<rangeProperty rangeType="box" distance="900" rangeOffset="0.000000,-50.000000,0.000000" height="250" width="300" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty rate="4.49" hitSpeedRate="0.6" push="1" pushdistance="200" pushduration="0.25" pushEaseType="1" attackMaterial="1" />
-				<conditionSkill level="8" skillID="10500081" skillTarget="2" skillOwner="1" dependOnDamageCount="1" />
-				<conditionSkill level="8" skillID="10500082" skillTarget="2" skillOwner="1" dependOnDamageCount="1" />
-			</attack>
-		</motion>
-	</level>
-	<level value="9">
-		<beginCondition probability="1">
-			<requireEffect code="10500072" />
-			<stat hp="1" />
-		</beginCondition>
-		<autoTargeting autoTargetingMaxDegree="45" />
-		<push back="100" />
-		<upgrade level="44" skillIDs="10500071" skillLevels="7" />
-		<conditionSkill level="1" skillID="10500083" skillTarget="1">
-			<beginCondition probability="1" allowBattleRidingState="1" />
-		</conditionSkill>
-		<motion>
-			<motionProperty sequenceName="Ranger_EagleStrike_A" motionEffect="CH/Skill/Ranger/Eff_Ranger_EagleStrike_Cast_01.xml" holdWeapon="0" />
-			<attack point="p0" pointGroupID="10500081" targetCount="8" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="3" unrideOnHit="1">
-				<rangeProperty rangeType="box" distance="900" rangeOffset="0.000000,-50.000000,0.000000" height="250" width="300" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty rate="4.7" hitSpeedRate="0.6" push="1" pushdistance="200" pushduration="0.25" pushEaseType="1" attackMaterial="1" />
-				<conditionSkill level="9" skillID="10500081" skillTarget="2" skillOwner="1" dependOnDamageCount="1" />
-				<conditionSkill level="9" skillID="10500082" skillTarget="2" skillOwner="1" dependOnDamageCount="1" />
-			</attack>
-		</motion>
-	</level>
-	<level value="10">
-		<beginCondition probability="1">
-			<requireEffect code="10500072" />
-			<stat hp="1" />
-		</beginCondition>
-		<autoTargeting autoTargetingMaxDegree="45" />
-		<push back="100" />
-		<upgrade level="46" skillIDs="10500071" skillLevels="7" />
-		<conditionSkill level="1" skillID="10500083" skillTarget="1">
-			<beginCondition probability="1" allowBattleRidingState="1" />
-		</conditionSkill>
-		<motion>
-			<motionProperty sequenceName="Ranger_EagleStrike_A" motionEffect="CH/Skill/Ranger/Eff_Ranger_EagleStrike_Cast_01.xml" holdWeapon="0" />
-			<attack point="p0" pointGroupID="10500081" targetCount="8" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="3" unrideOnHit="1">
-				<rangeProperty rangeType="box" distance="900" rangeOffset="0.000000,-50.000000,0.000000" height="250" width="300" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty rate="4.91" hitSpeedRate="0.6" push="1" pushdistance="200" pushduration="0.25" pushEaseType="1" attackMaterial="1" />
-				<conditionSkill level="10" skillID="10500081" skillTarget="2" skillOwner="1" dependOnDamageCount="1" />
-				<conditionSkill level="10" skillID="10500082" skillTarget="2" skillOwner="1" dependOnDamageCount="1" />
-			</attack>
-		</motion>
-	</level>
 	<level value="11">
 		<beginCondition probability="1">
 			<requireEffect code="10500072" />
@@ -509,6 +487,28 @@
 				<damageProperty rate="5.12" hitSpeedRate="0.6" push="1" pushdistance="200" pushduration="0.25" pushEaseType="1" attackMaterial="1" />
 				<conditionSkill level="11" skillID="10500081" skillTarget="2" skillOwner="1" dependOnDamageCount="1" />
 				<conditionSkill level="11" skillID="10500082" skillTarget="2" skillOwner="1" dependOnDamageCount="1" />
+			</attack>
+		</motion>
+	</level>
+	<level value="12" feature="CharacterBalance_01">
+		<beginCondition probability="1">
+			<requireEffect code="10500072" />
+			<stat hp="1" />
+		</beginCondition>
+		<autoTargeting autoTargetingMaxDegree="45" />
+		<push back="100" />
+		<upgrade level="50" skillIDs="10500071" skillLevels="7" />
+		<conditionSkill level="1" skillID="10500083" skillTarget="1">
+			<beginCondition probability="1" allowBattleRidingState="1" />
+		</conditionSkill>
+		<motion>
+			<motionProperty sequenceName="Ranger_EagleStrike_A" motionEffect="CH/Skill/Ranger/Eff_Ranger_EagleStrike_Cast_01.xml" holdWeapon="0" />
+			<attack point="p0" pointGroupID="10500081" targetCount="8" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="3" unrideOnHit="1">
+				<rangeProperty rangeType="box" distance="900" rangeOffset="0.000000,-50.000000,0.000000" height="250" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="5.25" hitSpeedRate="0.6" push="1" pushdistance="200" pushduration="0.25" pushEaseType="1" attackMaterial="1" />
+				<conditionSkill level="12" skillID="10500081" skillTarget="2" skillOwner="1" dependOnDamageCount="1" />
+				<conditionSkill level="12" skillID="10500082" skillTarget="2" skillOwner="1" dependOnDamageCount="1" />
 			</attack>
 		</motion>
 	</level>

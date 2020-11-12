@@ -17,7 +17,7 @@
 		<consume>
 			<stat sp="26" />
 		</consume>
-		<combo comboOriginSkill="10700031" inputSkill="" outputSkill="" />
+		<combo comboOriginSkill="10700031" />
 		<conditionSkill level="1" skillID="10700002" skillTarget="1">
 			<beginCondition probability="1" allowBattleRidingState="1" />
 		</conditionSkill>
@@ -35,6 +35,44 @@
 				<rangeProperty rangeType="cylinder" distance="300" height="150" applyTarget="1" />
 				<arrowProperty nonTarget="1" />
 				<damageProperty hand="2" rate="0.41" effectHit="CH/Weapon/Dagger/Eff_Dagger_Hit_01.xml" />
+			</attack>
+			<attack point="p2" pointGroupID="107000322" targetCount="8" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="1.5" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.15" pauseAmp="10" />
+				<rangeProperty rangeType="cylinder" distance="300" height="150" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty hand="2" rate="0.56" effectHit="CH/Weapon/Dagger/Eff_Dagger_Hit_01.xml" push="1" pushdistance="60" pushduration="0.1" pushEaseType="1" />
+			</attack>
+		</motion>
+	</level>
+	<level value="1" feature="CharacterBalance_02">
+		<beginCondition probability="1" cooldownTime="0.65">
+			<stat hp="1" />
+			<weapon lh="0" rh="31" />
+		</beginCondition>
+		<changeSkill originSkillID="10700031" />
+		<autoTargeting autoTargetingMaxDegree="90" />
+		<push back="200" />
+		<consume>
+			<stat sp="26" />
+		</consume>
+		<combo comboOriginSkill="10700031" />
+		<conditionSkill level="1" skillID="10700002" skillTarget="1">
+			<beginCondition probability="1" allowBattleRidingState="1" />
+		</conditionSkill>
+		<conditionSkill level="1" skillID="10700031" skillTarget="1">
+			<beginCondition probability="1" allowBattleRidingState="1" />
+		</conditionSkill>
+		<motion>
+			<motionProperty sequenceName="Thief_BladeDance_B" selfInputCombo="selfinputcombo" strTagEffects="e0=CH/Skill_Feature_CharacterBalance_02/Thief/Eff_Thief_BladeDanceEX_Cast_01.xml,e1=CH/Skill_Feature_CharacterBalance_02/Thief/Eff_Thief_BladeDanceEX_Cast_02.xml" />
+			<attack point="p0" pointGroupID="10700032" targetCount="8" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="1.5" unrideOnHit="1">
+				<rangeProperty rangeType="cylinder" distance="300" height="150" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty hand="2" rate="0.42" effectHit="CH/Weapon/Dagger/Eff_Dagger_Hit_01.xml" />
+			</attack>
+			<attack point="p1" pointGroupID="107000321" targetCount="8" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="1.5" unrideOnHit="1">
+				<rangeProperty rangeType="cylinder" distance="300" height="150" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty hand="2" rate="0.42" effectHit="CH/Weapon/Dagger/Eff_Dagger_Hit_01.xml" />
 			</attack>
 			<attack point="p2" pointGroupID="107000322" targetCount="8" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="1.5" unrideOnHit="1">
 				<pauseProperty pauseShakeDuration="0.15" pauseAmp="10" />
@@ -55,7 +93,7 @@
 		<consume>
 			<stat sp="26" />
 		</consume>
-		<combo comboOriginSkill="10700031" inputSkill="" outputSkill="" />
+		<combo comboOriginSkill="10700031" />
 		<conditionSkill level="1" skillID="10700002" skillTarget="1">
 			<beginCondition probability="1" allowBattleRidingState="1" />
 		</conditionSkill>
@@ -73,6 +111,44 @@
 				<rangeProperty rangeType="cylinder" distance="300" height="150" applyTarget="1" />
 				<arrowProperty nonTarget="1" />
 				<damageProperty hand="2" rate="0.44" effectHit="CH/Weapon/Dagger/Eff_Dagger_Hit_01.xml" />
+			</attack>
+			<attack point="p2" pointGroupID="107000322" targetCount="8" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="1.5" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.15" pauseAmp="10" />
+				<rangeProperty rangeType="cylinder" distance="300" height="150" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty hand="2" rate="0.59" effectHit="CH/Weapon/Dagger/Eff_Dagger_Hit_01.xml" push="1" pushdistance="60" pushduration="0.1" pushEaseType="1" />
+			</attack>
+		</motion>
+	</level>
+	<level value="2" feature="CharacterBalance_02">
+		<beginCondition probability="1" cooldownTime="0.65">
+			<stat hp="1" />
+			<weapon lh="0" rh="31" />
+		</beginCondition>
+		<changeSkill originSkillID="10700031" originSkillLevel="2" />
+		<autoTargeting autoTargetingMaxDegree="90" />
+		<push back="200" />
+		<consume>
+			<stat sp="26" />
+		</consume>
+		<combo comboOriginSkill="10700031" />
+		<conditionSkill level="1" skillID="10700002" skillTarget="1">
+			<beginCondition probability="1" allowBattleRidingState="1" />
+		</conditionSkill>
+		<conditionSkill level="2" skillID="10700031" skillTarget="1">
+			<beginCondition probability="1" allowBattleRidingState="1" />
+		</conditionSkill>
+		<motion>
+			<motionProperty sequenceName="Thief_BladeDance_B" selfInputCombo="selfinputcombo" strTagEffects="e0=CH/Skill_Feature_CharacterBalance_02/Thief/Eff_Thief_BladeDanceEX_Cast_01.xml,e1=CH/Skill_Feature_CharacterBalance_02/Thief/Eff_Thief_BladeDanceEX_Cast_02.xml" />
+			<attack point="p0" pointGroupID="10700032" targetCount="8" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="1.5" unrideOnHit="1">
+				<rangeProperty rangeType="cylinder" distance="300" height="150" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty hand="2" rate="0.45" effectHit="CH/Weapon/Dagger/Eff_Dagger_Hit_01.xml" />
+			</attack>
+			<attack point="p1" pointGroupID="107000321" targetCount="8" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="1.5" unrideOnHit="1">
+				<rangeProperty rangeType="cylinder" distance="300" height="150" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty hand="2" rate="0.45" effectHit="CH/Weapon/Dagger/Eff_Dagger_Hit_01.xml" />
 			</attack>
 			<attack point="p2" pointGroupID="107000322" targetCount="8" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="1.5" unrideOnHit="1">
 				<pauseProperty pauseShakeDuration="0.15" pauseAmp="10" />
@@ -93,7 +169,7 @@
 		<consume>
 			<stat sp="26" />
 		</consume>
-		<combo comboOriginSkill="10700031" inputSkill="" outputSkill="" />
+		<combo comboOriginSkill="10700031" />
 		<conditionSkill level="1" skillID="10700002" skillTarget="1">
 			<beginCondition probability="1" allowBattleRidingState="1" />
 		</conditionSkill>
@@ -111,6 +187,44 @@
 				<rangeProperty rangeType="cylinder" distance="300" height="150" applyTarget="1" />
 				<arrowProperty nonTarget="1" />
 				<damageProperty hand="2" rate="0.47" effectHit="CH/Weapon/Dagger/Eff_Dagger_Hit_01.xml" />
+			</attack>
+			<attack point="p2" pointGroupID="107000322" targetCount="8" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="1.5" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.15" pauseAmp="10" />
+				<rangeProperty rangeType="cylinder" distance="300" height="150" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty hand="2" rate="0.62" effectHit="CH/Weapon/Dagger/Eff_Dagger_Hit_01.xml" push="1" pushdistance="60" pushduration="0.1" pushEaseType="1" />
+			</attack>
+		</motion>
+	</level>
+	<level value="3" feature="CharacterBalance_02">
+		<beginCondition probability="1" cooldownTime="0.65">
+			<stat hp="1" />
+			<weapon lh="0" rh="31" />
+		</beginCondition>
+		<changeSkill originSkillID="10700031" originSkillLevel="3" />
+		<autoTargeting autoTargetingMaxDegree="90" />
+		<push back="200" />
+		<consume>
+			<stat sp="26" />
+		</consume>
+		<combo comboOriginSkill="10700031" />
+		<conditionSkill level="1" skillID="10700002" skillTarget="1">
+			<beginCondition probability="1" allowBattleRidingState="1" />
+		</conditionSkill>
+		<conditionSkill level="3" skillID="10700031" skillTarget="1">
+			<beginCondition probability="1" allowBattleRidingState="1" />
+		</conditionSkill>
+		<motion>
+			<motionProperty sequenceName="Thief_BladeDance_B" selfInputCombo="selfinputcombo" strTagEffects="e0=CH/Skill_Feature_CharacterBalance_02/Thief/Eff_Thief_BladeDanceEX_Cast_01.xml,e1=CH/Skill_Feature_CharacterBalance_02/Thief/Eff_Thief_BladeDanceEX_Cast_02.xml" />
+			<attack point="p0" pointGroupID="10700032" targetCount="8" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="1.5" unrideOnHit="1">
+				<rangeProperty rangeType="cylinder" distance="300" height="150" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty hand="2" rate="0.48" effectHit="CH/Weapon/Dagger/Eff_Dagger_Hit_01.xml" />
+			</attack>
+			<attack point="p1" pointGroupID="107000321" targetCount="8" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="1.5" unrideOnHit="1">
+				<rangeProperty rangeType="cylinder" distance="300" height="150" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty hand="2" rate="0.48" effectHit="CH/Weapon/Dagger/Eff_Dagger_Hit_01.xml" />
 			</attack>
 			<attack point="p2" pointGroupID="107000322" targetCount="8" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="1.5" unrideOnHit="1">
 				<pauseProperty pauseShakeDuration="0.15" pauseAmp="10" />
@@ -131,7 +245,7 @@
 		<consume>
 			<stat sp="26" />
 		</consume>
-		<combo comboOriginSkill="10700031" inputSkill="" outputSkill="" />
+		<combo comboOriginSkill="10700031" />
 		<conditionSkill level="1" skillID="10700002" skillTarget="1">
 			<beginCondition probability="1" allowBattleRidingState="1" />
 		</conditionSkill>
@@ -149,6 +263,44 @@
 				<rangeProperty rangeType="cylinder" distance="300" height="150" applyTarget="1" />
 				<arrowProperty nonTarget="1" />
 				<damageProperty hand="2" rate="0.5" effectHit="CH/Weapon/Dagger/Eff_Dagger_Hit_01.xml" />
+			</attack>
+			<attack point="p2" pointGroupID="107000322" targetCount="8" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="1.5" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.15" pauseAmp="10" />
+				<rangeProperty rangeType="cylinder" distance="300" height="150" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty hand="2" rate="0.65" effectHit="CH/Weapon/Dagger/Eff_Dagger_Hit_01.xml" push="1" pushdistance="60" pushduration="0.1" pushEaseType="1" />
+			</attack>
+		</motion>
+	</level>
+	<level value="4" feature="CharacterBalance_02">
+		<beginCondition probability="1" cooldownTime="0.65">
+			<stat hp="1" />
+			<weapon lh="0" rh="31" />
+		</beginCondition>
+		<changeSkill originSkillID="10700031" originSkillLevel="4" />
+		<autoTargeting autoTargetingMaxDegree="90" />
+		<push back="200" />
+		<consume>
+			<stat sp="26" />
+		</consume>
+		<combo comboOriginSkill="10700031" />
+		<conditionSkill level="1" skillID="10700002" skillTarget="1">
+			<beginCondition probability="1" allowBattleRidingState="1" />
+		</conditionSkill>
+		<conditionSkill level="4" skillID="10700031" skillTarget="1">
+			<beginCondition probability="1" allowBattleRidingState="1" />
+		</conditionSkill>
+		<motion>
+			<motionProperty sequenceName="Thief_BladeDance_B" selfInputCombo="selfinputcombo" strTagEffects="e0=CH/Skill_Feature_CharacterBalance_02/Thief/Eff_Thief_BladeDanceEX_Cast_01.xml,e1=CH/Skill_Feature_CharacterBalance_02/Thief/Eff_Thief_BladeDanceEX_Cast_02.xml" />
+			<attack point="p0" pointGroupID="10700032" targetCount="8" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="1.5" unrideOnHit="1">
+				<rangeProperty rangeType="cylinder" distance="300" height="150" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty hand="2" rate="0.51" effectHit="CH/Weapon/Dagger/Eff_Dagger_Hit_01.xml" />
+			</attack>
+			<attack point="p1" pointGroupID="107000321" targetCount="8" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="1.5" unrideOnHit="1">
+				<rangeProperty rangeType="cylinder" distance="300" height="150" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty hand="2" rate="0.51" effectHit="CH/Weapon/Dagger/Eff_Dagger_Hit_01.xml" />
 			</attack>
 			<attack point="p2" pointGroupID="107000322" targetCount="8" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="1.5" unrideOnHit="1">
 				<pauseProperty pauseShakeDuration="0.15" pauseAmp="10" />
@@ -169,7 +321,7 @@
 		<consume>
 			<stat sp="26" />
 		</consume>
-		<combo comboOriginSkill="10700031" inputSkill="" outputSkill="" />
+		<combo comboOriginSkill="10700031" />
 		<conditionSkill level="1" skillID="10700002" skillTarget="1">
 			<beginCondition probability="1" allowBattleRidingState="1" />
 		</conditionSkill>
@@ -187,6 +339,44 @@
 				<rangeProperty rangeType="cylinder" distance="300" height="150" applyTarget="1" />
 				<arrowProperty nonTarget="1" />
 				<damageProperty hand="2" rate="0.53" effectHit="CH/Weapon/Dagger/Eff_Dagger_Hit_01.xml" />
+			</attack>
+			<attack point="p2" pointGroupID="107000322" targetCount="8" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="1.5" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.15" pauseAmp="10" />
+				<rangeProperty rangeType="cylinder" distance="300" height="150" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty hand="2" rate="0.68" effectHit="CH/Weapon/Dagger/Eff_Dagger_Hit_01.xml" push="1" pushdistance="60" pushduration="0.1" pushEaseType="1" />
+			</attack>
+		</motion>
+	</level>
+	<level value="5" feature="CharacterBalance_02">
+		<beginCondition probability="1" cooldownTime="0.65">
+			<stat hp="1" />
+			<weapon lh="0" rh="31" />
+		</beginCondition>
+		<changeSkill originSkillID="10700031" originSkillLevel="5" />
+		<autoTargeting autoTargetingMaxDegree="90" />
+		<push back="200" />
+		<consume>
+			<stat sp="26" />
+		</consume>
+		<combo comboOriginSkill="10700031" />
+		<conditionSkill level="1" skillID="10700002" skillTarget="1">
+			<beginCondition probability="1" allowBattleRidingState="1" />
+		</conditionSkill>
+		<conditionSkill level="5" skillID="10700031" skillTarget="1">
+			<beginCondition probability="1" allowBattleRidingState="1" />
+		</conditionSkill>
+		<motion>
+			<motionProperty sequenceName="Thief_BladeDance_B" selfInputCombo="selfinputcombo" strTagEffects="e0=CH/Skill_Feature_CharacterBalance_02/Thief/Eff_Thief_BladeDanceEX_Cast_01.xml,e1=CH/Skill_Feature_CharacterBalance_02/Thief/Eff_Thief_BladeDanceEX_Cast_02.xml" />
+			<attack point="p0" pointGroupID="10700032" targetCount="8" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="1.5" unrideOnHit="1">
+				<rangeProperty rangeType="cylinder" distance="300" height="150" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty hand="2" rate="0.54" effectHit="CH/Weapon/Dagger/Eff_Dagger_Hit_01.xml" />
+			</attack>
+			<attack point="p1" pointGroupID="107000321" targetCount="8" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="1.5" unrideOnHit="1">
+				<rangeProperty rangeType="cylinder" distance="300" height="150" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty hand="2" rate="0.54" effectHit="CH/Weapon/Dagger/Eff_Dagger_Hit_01.xml" />
 			</attack>
 			<attack point="p2" pointGroupID="107000322" targetCount="8" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="1.5" unrideOnHit="1">
 				<pauseProperty pauseShakeDuration="0.15" pauseAmp="10" />
@@ -207,7 +397,7 @@
 		<consume>
 			<stat sp="26" />
 		</consume>
-		<combo comboOriginSkill="10700031" inputSkill="" outputSkill="" />
+		<combo comboOriginSkill="10700031" />
 		<conditionSkill level="1" skillID="10700002" skillTarget="1">
 			<beginCondition probability="1" allowBattleRidingState="1" />
 		</conditionSkill>
@@ -225,6 +415,44 @@
 				<rangeProperty rangeType="cylinder" distance="300" height="150" applyTarget="1" />
 				<arrowProperty nonTarget="1" />
 				<damageProperty hand="2" rate="0.56" effectHit="CH/Weapon/Dagger/Eff_Dagger_Hit_01.xml" />
+			</attack>
+			<attack point="p2" pointGroupID="107000322" targetCount="8" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="1.5" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.15" pauseAmp="10" />
+				<rangeProperty rangeType="cylinder" distance="300" height="150" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty hand="2" rate="0.71" effectHit="CH/Weapon/Dagger/Eff_Dagger_Hit_01.xml" push="1" pushdistance="60" pushduration="0.1" pushEaseType="1" />
+			</attack>
+		</motion>
+	</level>
+	<level value="6" feature="CharacterBalance_02">
+		<beginCondition probability="1" cooldownTime="0.65">
+			<stat hp="1" />
+			<weapon lh="0" rh="31" />
+		</beginCondition>
+		<changeSkill originSkillID="10700031" originSkillLevel="6" />
+		<autoTargeting autoTargetingMaxDegree="90" />
+		<push back="200" />
+		<consume>
+			<stat sp="26" />
+		</consume>
+		<combo comboOriginSkill="10700031" />
+		<conditionSkill level="1" skillID="10700002" skillTarget="1">
+			<beginCondition probability="1" allowBattleRidingState="1" />
+		</conditionSkill>
+		<conditionSkill level="6" skillID="10700031" skillTarget="1">
+			<beginCondition probability="1" allowBattleRidingState="1" />
+		</conditionSkill>
+		<motion>
+			<motionProperty sequenceName="Thief_BladeDance_B" selfInputCombo="selfinputcombo" strTagEffects="e0=CH/Skill_Feature_CharacterBalance_02/Thief/Eff_Thief_BladeDanceEX_Cast_01.xml,e1=CH/Skill_Feature_CharacterBalance_02/Thief/Eff_Thief_BladeDanceEX_Cast_02.xml" />
+			<attack point="p0" pointGroupID="10700032" targetCount="8" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="1.5" unrideOnHit="1">
+				<rangeProperty rangeType="cylinder" distance="300" height="150" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty hand="2" rate="0.57" effectHit="CH/Weapon/Dagger/Eff_Dagger_Hit_01.xml" />
+			</attack>
+			<attack point="p1" pointGroupID="107000321" targetCount="8" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="1.5" unrideOnHit="1">
+				<rangeProperty rangeType="cylinder" distance="300" height="150" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty hand="2" rate="0.57" effectHit="CH/Weapon/Dagger/Eff_Dagger_Hit_01.xml" />
 			</attack>
 			<attack point="p2" pointGroupID="107000322" targetCount="8" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="1.5" unrideOnHit="1">
 				<pauseProperty pauseShakeDuration="0.15" pauseAmp="10" />
@@ -245,7 +473,7 @@
 		<consume>
 			<stat sp="26" />
 		</consume>
-		<combo comboOriginSkill="10700031" inputSkill="" outputSkill="" />
+		<combo comboOriginSkill="10700031" />
 		<conditionSkill level="1" skillID="10700002" skillTarget="1">
 			<beginCondition probability="1" allowBattleRidingState="1" />
 		</conditionSkill>
@@ -263,6 +491,44 @@
 				<rangeProperty rangeType="cylinder" distance="300" height="150" applyTarget="1" />
 				<arrowProperty nonTarget="1" />
 				<damageProperty hand="2" rate="0.59" effectHit="CH/Weapon/Dagger/Eff_Dagger_Hit_01.xml" />
+			</attack>
+			<attack point="p2" pointGroupID="107000322" targetCount="8" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="1.5" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.15" pauseAmp="10" />
+				<rangeProperty rangeType="cylinder" distance="300" height="150" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty hand="2" rate="0.74" effectHit="CH/Weapon/Dagger/Eff_Dagger_Hit_01.xml" push="1" pushdistance="60" pushduration="0.1" pushEaseType="1" />
+			</attack>
+		</motion>
+	</level>
+	<level value="7" feature="CharacterBalance_02">
+		<beginCondition probability="1" cooldownTime="0.65">
+			<stat hp="1" />
+			<weapon lh="0" rh="31" />
+		</beginCondition>
+		<changeSkill originSkillID="10700031" originSkillLevel="7" />
+		<autoTargeting autoTargetingMaxDegree="90" />
+		<push back="200" />
+		<consume>
+			<stat sp="26" />
+		</consume>
+		<combo comboOriginSkill="10700031" />
+		<conditionSkill level="1" skillID="10700002" skillTarget="1">
+			<beginCondition probability="1" allowBattleRidingState="1" />
+		</conditionSkill>
+		<conditionSkill level="7" skillID="10700031" skillTarget="1">
+			<beginCondition probability="1" allowBattleRidingState="1" />
+		</conditionSkill>
+		<motion>
+			<motionProperty sequenceName="Thief_BladeDance_B" selfInputCombo="selfinputcombo" strTagEffects="e0=CH/Skill_Feature_CharacterBalance_02/Thief/Eff_Thief_BladeDanceEX_Cast_01.xml,e1=CH/Skill_Feature_CharacterBalance_02/Thief/Eff_Thief_BladeDanceEX_Cast_02.xml" />
+			<attack point="p0" pointGroupID="10700032" targetCount="8" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="1.5" unrideOnHit="1">
+				<rangeProperty rangeType="cylinder" distance="300" height="150" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty hand="2" rate="0.6" effectHit="CH/Weapon/Dagger/Eff_Dagger_Hit_01.xml" />
+			</attack>
+			<attack point="p1" pointGroupID="107000321" targetCount="8" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="1.5" unrideOnHit="1">
+				<rangeProperty rangeType="cylinder" distance="300" height="150" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty hand="2" rate="0.6" effectHit="CH/Weapon/Dagger/Eff_Dagger_Hit_01.xml" />
 			</attack>
 			<attack point="p2" pointGroupID="107000322" targetCount="8" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="1.5" unrideOnHit="1">
 				<pauseProperty pauseShakeDuration="0.15" pauseAmp="10" />
@@ -283,7 +549,7 @@
 		<consume>
 			<stat sp="26" />
 		</consume>
-		<combo comboOriginSkill="10700031" inputSkill="" outputSkill="" />
+		<combo comboOriginSkill="10700031" />
 		<conditionSkill level="1" skillID="10700002" skillTarget="1">
 			<beginCondition probability="1" allowBattleRidingState="1" />
 		</conditionSkill>
@@ -301,6 +567,44 @@
 				<rangeProperty rangeType="cylinder" distance="300" height="150" applyTarget="1" />
 				<arrowProperty nonTarget="1" />
 				<damageProperty hand="2" rate="0.62" effectHit="CH/Weapon/Dagger/Eff_Dagger_Hit_01.xml" />
+			</attack>
+			<attack point="p2" pointGroupID="107000322" targetCount="8" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="1.5" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.15" pauseAmp="10" />
+				<rangeProperty rangeType="cylinder" distance="300" height="150" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty hand="2" rate="0.77" effectHit="CH/Weapon/Dagger/Eff_Dagger_Hit_01.xml" push="1" pushdistance="60" pushduration="0.1" pushEaseType="1" />
+			</attack>
+		</motion>
+	</level>
+	<level value="8" feature="CharacterBalance_02">
+		<beginCondition probability="1" cooldownTime="0.65">
+			<stat hp="1" />
+			<weapon lh="0" rh="31" />
+		</beginCondition>
+		<changeSkill originSkillID="10700031" originSkillLevel="8" />
+		<autoTargeting autoTargetingMaxDegree="90" />
+		<push back="200" />
+		<consume>
+			<stat sp="26" />
+		</consume>
+		<combo comboOriginSkill="10700031" />
+		<conditionSkill level="1" skillID="10700002" skillTarget="1">
+			<beginCondition probability="1" allowBattleRidingState="1" />
+		</conditionSkill>
+		<conditionSkill level="8" skillID="10700031" skillTarget="1">
+			<beginCondition probability="1" allowBattleRidingState="1" />
+		</conditionSkill>
+		<motion>
+			<motionProperty sequenceName="Thief_BladeDance_B" selfInputCombo="selfinputcombo" strTagEffects="e0=CH/Skill_Feature_CharacterBalance_02/Thief/Eff_Thief_BladeDanceEX_Cast_01.xml,e1=CH/Skill_Feature_CharacterBalance_02/Thief/Eff_Thief_BladeDanceEX_Cast_02.xml" />
+			<attack point="p0" pointGroupID="10700032" targetCount="8" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="1.5" unrideOnHit="1">
+				<rangeProperty rangeType="cylinder" distance="300" height="150" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty hand="2" rate="0.63" effectHit="CH/Weapon/Dagger/Eff_Dagger_Hit_01.xml" />
+			</attack>
+			<attack point="p1" pointGroupID="107000321" targetCount="8" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="1.5" unrideOnHit="1">
+				<rangeProperty rangeType="cylinder" distance="300" height="150" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty hand="2" rate="0.63" effectHit="CH/Weapon/Dagger/Eff_Dagger_Hit_01.xml" />
 			</attack>
 			<attack point="p2" pointGroupID="107000322" targetCount="8" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="1.5" unrideOnHit="1">
 				<pauseProperty pauseShakeDuration="0.15" pauseAmp="10" />
@@ -321,7 +625,7 @@
 		<consume>
 			<stat sp="26" />
 		</consume>
-		<combo comboOriginSkill="10700031" inputSkill="" outputSkill="" />
+		<combo comboOriginSkill="10700031" />
 		<conditionSkill level="1" skillID="10700002" skillTarget="1">
 			<beginCondition probability="1" allowBattleRidingState="1" />
 		</conditionSkill>
@@ -339,6 +643,44 @@
 				<rangeProperty rangeType="cylinder" distance="300" height="150" applyTarget="1" />
 				<arrowProperty nonTarget="1" />
 				<damageProperty hand="2" rate="0.65" effectHit="CH/Weapon/Dagger/Eff_Dagger_Hit_01.xml" />
+			</attack>
+			<attack point="p2" pointGroupID="107000322" targetCount="8" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="1.5" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.15" pauseAmp="10" />
+				<rangeProperty rangeType="cylinder" distance="300" height="150" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty hand="2" rate="0.8" effectHit="CH/Weapon/Dagger/Eff_Dagger_Hit_01.xml" push="1" pushdistance="60" pushduration="0.1" pushEaseType="1" />
+			</attack>
+		</motion>
+	</level>
+	<level value="9" feature="CharacterBalance_02">
+		<beginCondition probability="1" cooldownTime="0.65">
+			<stat hp="1" />
+			<weapon lh="0" rh="31" />
+		</beginCondition>
+		<changeSkill originSkillID="10700031" originSkillLevel="9" />
+		<autoTargeting autoTargetingMaxDegree="90" />
+		<push back="200" />
+		<consume>
+			<stat sp="26" />
+		</consume>
+		<combo comboOriginSkill="10700031" />
+		<conditionSkill level="1" skillID="10700002" skillTarget="1">
+			<beginCondition probability="1" allowBattleRidingState="1" />
+		</conditionSkill>
+		<conditionSkill level="9" skillID="10700031" skillTarget="1">
+			<beginCondition probability="1" allowBattleRidingState="1" />
+		</conditionSkill>
+		<motion>
+			<motionProperty sequenceName="Thief_BladeDance_B" selfInputCombo="selfinputcombo" strTagEffects="e0=CH/Skill_Feature_CharacterBalance_02/Thief/Eff_Thief_BladeDanceEX_Cast_01.xml,e1=CH/Skill_Feature_CharacterBalance_02/Thief/Eff_Thief_BladeDanceEX_Cast_02.xml" />
+			<attack point="p0" pointGroupID="10700032" targetCount="8" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="1.5" unrideOnHit="1">
+				<rangeProperty rangeType="cylinder" distance="300" height="150" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty hand="2" rate="0.66" effectHit="CH/Weapon/Dagger/Eff_Dagger_Hit_01.xml" />
+			</attack>
+			<attack point="p1" pointGroupID="107000321" targetCount="8" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="1.5" unrideOnHit="1">
+				<rangeProperty rangeType="cylinder" distance="300" height="150" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty hand="2" rate="0.66" effectHit="CH/Weapon/Dagger/Eff_Dagger_Hit_01.xml" />
 			</attack>
 			<attack point="p2" pointGroupID="107000322" targetCount="8" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="1.5" unrideOnHit="1">
 				<pauseProperty pauseShakeDuration="0.15" pauseAmp="10" />
@@ -359,7 +701,7 @@
 		<consume>
 			<stat sp="26" />
 		</consume>
-		<combo comboOriginSkill="10700031" inputSkill="" outputSkill="" />
+		<combo comboOriginSkill="10700031" />
 		<conditionSkill level="1" skillID="10700002" skillTarget="1">
 			<beginCondition probability="1" allowBattleRidingState="1" />
 		</conditionSkill>
@@ -377,6 +719,44 @@
 				<rangeProperty rangeType="cylinder" distance="300" height="150" applyTarget="1" />
 				<arrowProperty nonTarget="1" />
 				<damageProperty hand="2" rate="0.68" effectHit="CH/Weapon/Dagger/Eff_Dagger_Hit_01.xml" />
+			</attack>
+			<attack point="p2" pointGroupID="107000322" targetCount="8" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="1.5" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.15" pauseAmp="10" />
+				<rangeProperty rangeType="cylinder" distance="300" height="150" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty hand="2" rate="0.83" effectHit="CH/Weapon/Dagger/Eff_Dagger_Hit_01.xml" push="1" pushdistance="60" pushduration="0.1" pushEaseType="1" />
+			</attack>
+		</motion>
+	</level>
+	<level value="10" feature="CharacterBalance_02">
+		<beginCondition probability="1" cooldownTime="0.65">
+			<stat hp="1" />
+			<weapon lh="0" rh="31" />
+		</beginCondition>
+		<changeSkill originSkillID="10700031" originSkillLevel="10" />
+		<autoTargeting autoTargetingMaxDegree="90" />
+		<push back="200" />
+		<consume>
+			<stat sp="26" />
+		</consume>
+		<combo comboOriginSkill="10700031" />
+		<conditionSkill level="1" skillID="10700002" skillTarget="1">
+			<beginCondition probability="1" allowBattleRidingState="1" />
+		</conditionSkill>
+		<conditionSkill level="10" skillID="10700031" skillTarget="1">
+			<beginCondition probability="1" allowBattleRidingState="1" />
+		</conditionSkill>
+		<motion>
+			<motionProperty sequenceName="Thief_BladeDance_B" selfInputCombo="selfinputcombo" strTagEffects="e0=CH/Skill_Feature_CharacterBalance_02/Thief/Eff_Thief_BladeDanceEX_Cast_01.xml,e1=CH/Skill_Feature_CharacterBalance_02/Thief/Eff_Thief_BladeDanceEX_Cast_02.xml" />
+			<attack point="p0" pointGroupID="10700032" targetCount="8" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="1.5" unrideOnHit="1">
+				<rangeProperty rangeType="cylinder" distance="300" height="150" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty hand="2" rate="0.69" effectHit="CH/Weapon/Dagger/Eff_Dagger_Hit_01.xml" />
+			</attack>
+			<attack point="p1" pointGroupID="107000321" targetCount="8" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="1.5" unrideOnHit="1">
+				<rangeProperty rangeType="cylinder" distance="300" height="150" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty hand="2" rate="0.69" effectHit="CH/Weapon/Dagger/Eff_Dagger_Hit_01.xml" />
 			</attack>
 			<attack point="p2" pointGroupID="107000322" targetCount="8" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="1.5" unrideOnHit="1">
 				<pauseProperty pauseShakeDuration="0.15" pauseAmp="10" />
@@ -397,7 +777,7 @@
 		<consume>
 			<stat sp="26" />
 		</consume>
-		<combo comboOriginSkill="10700031" inputSkill="" outputSkill="" />
+		<combo comboOriginSkill="10700031" />
 		<conditionSkill level="1" skillID="10700002" skillTarget="1">
 			<beginCondition probability="1" allowBattleRidingState="1" />
 		</conditionSkill>
@@ -415,6 +795,44 @@
 				<rangeProperty rangeType="cylinder" distance="300" height="150" applyTarget="1" />
 				<arrowProperty nonTarget="1" />
 				<damageProperty hand="2" rate="0.71" effectHit="CH/Weapon/Dagger/Eff_Dagger_Hit_01.xml" />
+			</attack>
+			<attack point="p2" pointGroupID="107000322" targetCount="8" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="1.5" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.15" pauseAmp="10" />
+				<rangeProperty rangeType="cylinder" distance="300" height="150" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty hand="2" rate="0.86" effectHit="CH/Weapon/Dagger/Eff_Dagger_Hit_01.xml" push="1" pushdistance="60" pushduration="0.1" pushEaseType="1" />
+			</attack>
+		</motion>
+	</level>
+	<level value="11" feature="CharacterBalance_02">
+		<beginCondition probability="1" cooldownTime="0.65">
+			<stat hp="1" />
+			<weapon lh="0" rh="31" />
+		</beginCondition>
+		<changeSkill originSkillID="10700031" originSkillLevel="11" />
+		<autoTargeting autoTargetingMaxDegree="90" />
+		<push back="200" />
+		<consume>
+			<stat sp="26" />
+		</consume>
+		<combo comboOriginSkill="10700031" />
+		<conditionSkill level="1" skillID="10700002" skillTarget="1">
+			<beginCondition probability="1" allowBattleRidingState="1" />
+		</conditionSkill>
+		<conditionSkill level="11" skillID="10700031" skillTarget="1">
+			<beginCondition probability="1" allowBattleRidingState="1" />
+		</conditionSkill>
+		<motion>
+			<motionProperty sequenceName="Thief_BladeDance_B" selfInputCombo="selfinputcombo" strTagEffects="e0=CH/Skill_Feature_CharacterBalance_02/Thief/Eff_Thief_BladeDanceEX_Cast_01.xml,e1=CH/Skill_Feature_CharacterBalance_02/Thief/Eff_Thief_BladeDanceEX_Cast_02.xml" />
+			<attack point="p0" pointGroupID="10700032" targetCount="8" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="1.5" unrideOnHit="1">
+				<rangeProperty rangeType="cylinder" distance="300" height="150" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty hand="2" rate="0.72" effectHit="CH/Weapon/Dagger/Eff_Dagger_Hit_01.xml" />
+			</attack>
+			<attack point="p1" pointGroupID="107000321" targetCount="8" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="1.5" unrideOnHit="1">
+				<rangeProperty rangeType="cylinder" distance="300" height="150" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty hand="2" rate="0.72" effectHit="CH/Weapon/Dagger/Eff_Dagger_Hit_01.xml" />
 			</attack>
 			<attack point="p2" pointGroupID="107000322" targetCount="8" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="1.5" unrideOnHit="1">
 				<pauseProperty pauseShakeDuration="0.15" pauseAmp="10" />
@@ -435,7 +853,7 @@
 		<consume>
 			<stat sp="26" />
 		</consume>
-		<combo comboOriginSkill="10700031" inputSkill="" outputSkill="" />
+		<combo comboOriginSkill="10700031" />
 		<conditionSkill level="1" skillID="10700002" skillTarget="1">
 			<beginCondition probability="1" allowBattleRidingState="1" />
 		</conditionSkill>
@@ -459,424 +877,6 @@
 				<rangeProperty rangeType="cylinder" distance="300" height="150" applyTarget="1" />
 				<arrowProperty nonTarget="1" />
 				<damageProperty hand="2" rate="0.89" effectHit="CH/Weapon/Dagger/Eff_Dagger_Hit_01.xml" push="1" pushdistance="60" pushduration="0.1" pushEaseType="1" />
-			</attack>
-		</motion>
-	</level>
-	<level value="1" feature="CharacterBalance_02">
-		<beginCondition probability="1" cooldownTime="0.65">
-			<stat hp="1" />
-			<weapon lh="0" rh="31" />
-		</beginCondition>
-		<changeSkill originSkillID="10700031" />
-		<autoTargeting autoTargetingMaxDegree="90" />
-		<push back="200" />
-		<consume>
-			<stat sp="26" />
-		</consume>
-		<combo comboOriginSkill="10700031" inputSkill="" outputSkill="" />
-		<conditionSkill level="1" skillID="10700002" skillTarget="1">
-			<beginCondition probability="1" allowBattleRidingState="1" />
-		</conditionSkill>
-		<conditionSkill level="1" skillID="10700031" skillTarget="1">
-			<beginCondition probability="1" allowBattleRidingState="1" />
-		</conditionSkill>
-		<motion>
-			<motionProperty sequenceName="Thief_BladeDance_B" selfInputCombo="selfinputcombo" strTagEffects="e0=CH/Skill_Feature_CharacterBalance_02/Thief/Eff_Thief_BladeDanceEX_Cast_01.xml,e1=CH/Skill_Feature_CharacterBalance_02/Thief/Eff_Thief_BladeDanceEX_Cast_02.xml" />
-			<attack point="p0" pointGroupID="10700032" targetCount="8" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="1.5" unrideOnHit="1">
-				<rangeProperty rangeType="cylinder" distance="300" height="150" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty hand="2" rate="0.42" effectHit="CH/Weapon/Dagger/Eff_Dagger_Hit_01.xml" />
-			</attack>
-			<attack point="p1" pointGroupID="107000321" targetCount="8" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="1.5" unrideOnHit="1">
-				<rangeProperty rangeType="cylinder" distance="300" height="150" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty hand="2" rate="0.42" effectHit="CH/Weapon/Dagger/Eff_Dagger_Hit_01.xml" />
-			</attack>
-			<attack point="p2" pointGroupID="107000322" targetCount="8" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="1.5" unrideOnHit="1">
-				<pauseProperty pauseShakeDuration="0.15" pauseAmp="10" />
-				<rangeProperty rangeType="cylinder" distance="300" height="150" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty hand="2" rate="0.56" effectHit="CH/Weapon/Dagger/Eff_Dagger_Hit_01.xml" push="1" pushdistance="60" pushduration="0.1" pushEaseType="1" />
-			</attack>
-		</motion>
-	</level>
-	<level value="2" feature="CharacterBalance_02">
-		<beginCondition probability="1" cooldownTime="0.65">
-			<stat hp="1" />
-			<weapon lh="0" rh="31" />
-		</beginCondition>
-		<changeSkill originSkillID="10700031" originSkillLevel="2" />
-		<autoTargeting autoTargetingMaxDegree="90" />
-		<push back="200" />
-		<consume>
-			<stat sp="26" />
-		</consume>
-		<combo comboOriginSkill="10700031" inputSkill="" outputSkill="" />
-		<conditionSkill level="1" skillID="10700002" skillTarget="1">
-			<beginCondition probability="1" allowBattleRidingState="1" />
-		</conditionSkill>
-		<conditionSkill level="2" skillID="10700031" skillTarget="1">
-			<beginCondition probability="1" allowBattleRidingState="1" />
-		</conditionSkill>
-		<motion>
-			<motionProperty sequenceName="Thief_BladeDance_B" selfInputCombo="selfinputcombo" strTagEffects="e0=CH/Skill_Feature_CharacterBalance_02/Thief/Eff_Thief_BladeDanceEX_Cast_01.xml,e1=CH/Skill_Feature_CharacterBalance_02/Thief/Eff_Thief_BladeDanceEX_Cast_02.xml" />
-			<attack point="p0" pointGroupID="10700032" targetCount="8" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="1.5" unrideOnHit="1">
-				<rangeProperty rangeType="cylinder" distance="300" height="150" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty hand="2" rate="0.45" effectHit="CH/Weapon/Dagger/Eff_Dagger_Hit_01.xml" />
-			</attack>
-			<attack point="p1" pointGroupID="107000321" targetCount="8" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="1.5" unrideOnHit="1">
-				<rangeProperty rangeType="cylinder" distance="300" height="150" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty hand="2" rate="0.45" effectHit="CH/Weapon/Dagger/Eff_Dagger_Hit_01.xml" />
-			</attack>
-			<attack point="p2" pointGroupID="107000322" targetCount="8" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="1.5" unrideOnHit="1">
-				<pauseProperty pauseShakeDuration="0.15" pauseAmp="10" />
-				<rangeProperty rangeType="cylinder" distance="300" height="150" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty hand="2" rate="0.59" effectHit="CH/Weapon/Dagger/Eff_Dagger_Hit_01.xml" push="1" pushdistance="60" pushduration="0.1" pushEaseType="1" />
-			</attack>
-		</motion>
-	</level>
-	<level value="3" feature="CharacterBalance_02">
-		<beginCondition probability="1" cooldownTime="0.65">
-			<stat hp="1" />
-			<weapon lh="0" rh="31" />
-		</beginCondition>
-		<changeSkill originSkillID="10700031" originSkillLevel="3" />
-		<autoTargeting autoTargetingMaxDegree="90" />
-		<push back="200" />
-		<consume>
-			<stat sp="26" />
-		</consume>
-		<combo comboOriginSkill="10700031" inputSkill="" outputSkill="" />
-		<conditionSkill level="1" skillID="10700002" skillTarget="1">
-			<beginCondition probability="1" allowBattleRidingState="1" />
-		</conditionSkill>
-		<conditionSkill level="3" skillID="10700031" skillTarget="1">
-			<beginCondition probability="1" allowBattleRidingState="1" />
-		</conditionSkill>
-		<motion>
-			<motionProperty sequenceName="Thief_BladeDance_B" selfInputCombo="selfinputcombo" strTagEffects="e0=CH/Skill_Feature_CharacterBalance_02/Thief/Eff_Thief_BladeDanceEX_Cast_01.xml,e1=CH/Skill_Feature_CharacterBalance_02/Thief/Eff_Thief_BladeDanceEX_Cast_02.xml" />
-			<attack point="p0" pointGroupID="10700032" targetCount="8" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="1.5" unrideOnHit="1">
-				<rangeProperty rangeType="cylinder" distance="300" height="150" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty hand="2" rate="0.48" effectHit="CH/Weapon/Dagger/Eff_Dagger_Hit_01.xml" />
-			</attack>
-			<attack point="p1" pointGroupID="107000321" targetCount="8" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="1.5" unrideOnHit="1">
-				<rangeProperty rangeType="cylinder" distance="300" height="150" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty hand="2" rate="0.48" effectHit="CH/Weapon/Dagger/Eff_Dagger_Hit_01.xml" />
-			</attack>
-			<attack point="p2" pointGroupID="107000322" targetCount="8" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="1.5" unrideOnHit="1">
-				<pauseProperty pauseShakeDuration="0.15" pauseAmp="10" />
-				<rangeProperty rangeType="cylinder" distance="300" height="150" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty hand="2" rate="0.62" effectHit="CH/Weapon/Dagger/Eff_Dagger_Hit_01.xml" push="1" pushdistance="60" pushduration="0.1" pushEaseType="1" />
-			</attack>
-		</motion>
-	</level>
-	<level value="4" feature="CharacterBalance_02">
-		<beginCondition probability="1" cooldownTime="0.65">
-			<stat hp="1" />
-			<weapon lh="0" rh="31" />
-		</beginCondition>
-		<changeSkill originSkillID="10700031" originSkillLevel="4" />
-		<autoTargeting autoTargetingMaxDegree="90" />
-		<push back="200" />
-		<consume>
-			<stat sp="26" />
-		</consume>
-		<combo comboOriginSkill="10700031" inputSkill="" outputSkill="" />
-		<conditionSkill level="1" skillID="10700002" skillTarget="1">
-			<beginCondition probability="1" allowBattleRidingState="1" />
-		</conditionSkill>
-		<conditionSkill level="4" skillID="10700031" skillTarget="1">
-			<beginCondition probability="1" allowBattleRidingState="1" />
-		</conditionSkill>
-		<motion>
-			<motionProperty sequenceName="Thief_BladeDance_B" selfInputCombo="selfinputcombo" strTagEffects="e0=CH/Skill_Feature_CharacterBalance_02/Thief/Eff_Thief_BladeDanceEX_Cast_01.xml,e1=CH/Skill_Feature_CharacterBalance_02/Thief/Eff_Thief_BladeDanceEX_Cast_02.xml" />
-			<attack point="p0" pointGroupID="10700032" targetCount="8" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="1.5" unrideOnHit="1">
-				<rangeProperty rangeType="cylinder" distance="300" height="150" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty hand="2" rate="0.51" effectHit="CH/Weapon/Dagger/Eff_Dagger_Hit_01.xml" />
-			</attack>
-			<attack point="p1" pointGroupID="107000321" targetCount="8" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="1.5" unrideOnHit="1">
-				<rangeProperty rangeType="cylinder" distance="300" height="150" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty hand="2" rate="0.51" effectHit="CH/Weapon/Dagger/Eff_Dagger_Hit_01.xml" />
-			</attack>
-			<attack point="p2" pointGroupID="107000322" targetCount="8" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="1.5" unrideOnHit="1">
-				<pauseProperty pauseShakeDuration="0.15" pauseAmp="10" />
-				<rangeProperty rangeType="cylinder" distance="300" height="150" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty hand="2" rate="0.65" effectHit="CH/Weapon/Dagger/Eff_Dagger_Hit_01.xml" push="1" pushdistance="60" pushduration="0.1" pushEaseType="1" />
-			</attack>
-		</motion>
-	</level>
-	<level value="5" feature="CharacterBalance_02">
-		<beginCondition probability="1" cooldownTime="0.65">
-			<stat hp="1" />
-			<weapon lh="0" rh="31" />
-		</beginCondition>
-		<changeSkill originSkillID="10700031" originSkillLevel="5" />
-		<autoTargeting autoTargetingMaxDegree="90" />
-		<push back="200" />
-		<consume>
-			<stat sp="26" />
-		</consume>
-		<combo comboOriginSkill="10700031" inputSkill="" outputSkill="" />
-		<conditionSkill level="1" skillID="10700002" skillTarget="1">
-			<beginCondition probability="1" allowBattleRidingState="1" />
-		</conditionSkill>
-		<conditionSkill level="5" skillID="10700031" skillTarget="1">
-			<beginCondition probability="1" allowBattleRidingState="1" />
-		</conditionSkill>
-		<motion>
-			<motionProperty sequenceName="Thief_BladeDance_B" selfInputCombo="selfinputcombo" strTagEffects="e0=CH/Skill_Feature_CharacterBalance_02/Thief/Eff_Thief_BladeDanceEX_Cast_01.xml,e1=CH/Skill_Feature_CharacterBalance_02/Thief/Eff_Thief_BladeDanceEX_Cast_02.xml" />
-			<attack point="p0" pointGroupID="10700032" targetCount="8" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="1.5" unrideOnHit="1">
-				<rangeProperty rangeType="cylinder" distance="300" height="150" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty hand="2" rate="0.54" effectHit="CH/Weapon/Dagger/Eff_Dagger_Hit_01.xml" />
-			</attack>
-			<attack point="p1" pointGroupID="107000321" targetCount="8" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="1.5" unrideOnHit="1">
-				<rangeProperty rangeType="cylinder" distance="300" height="150" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty hand="2" rate="0.54" effectHit="CH/Weapon/Dagger/Eff_Dagger_Hit_01.xml" />
-			</attack>
-			<attack point="p2" pointGroupID="107000322" targetCount="8" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="1.5" unrideOnHit="1">
-				<pauseProperty pauseShakeDuration="0.15" pauseAmp="10" />
-				<rangeProperty rangeType="cylinder" distance="300" height="150" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty hand="2" rate="0.68" effectHit="CH/Weapon/Dagger/Eff_Dagger_Hit_01.xml" push="1" pushdistance="60" pushduration="0.1" pushEaseType="1" />
-			</attack>
-		</motion>
-	</level>
-	<level value="6" feature="CharacterBalance_02">
-		<beginCondition probability="1" cooldownTime="0.65">
-			<stat hp="1" />
-			<weapon lh="0" rh="31" />
-		</beginCondition>
-		<changeSkill originSkillID="10700031" originSkillLevel="6" />
-		<autoTargeting autoTargetingMaxDegree="90" />
-		<push back="200" />
-		<consume>
-			<stat sp="26" />
-		</consume>
-		<combo comboOriginSkill="10700031" inputSkill="" outputSkill="" />
-		<conditionSkill level="1" skillID="10700002" skillTarget="1">
-			<beginCondition probability="1" allowBattleRidingState="1" />
-		</conditionSkill>
-		<conditionSkill level="6" skillID="10700031" skillTarget="1">
-			<beginCondition probability="1" allowBattleRidingState="1" />
-		</conditionSkill>
-		<motion>
-			<motionProperty sequenceName="Thief_BladeDance_B" selfInputCombo="selfinputcombo" strTagEffects="e0=CH/Skill_Feature_CharacterBalance_02/Thief/Eff_Thief_BladeDanceEX_Cast_01.xml,e1=CH/Skill_Feature_CharacterBalance_02/Thief/Eff_Thief_BladeDanceEX_Cast_02.xml" />
-			<attack point="p0" pointGroupID="10700032" targetCount="8" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="1.5" unrideOnHit="1">
-				<rangeProperty rangeType="cylinder" distance="300" height="150" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty hand="2" rate="0.57" effectHit="CH/Weapon/Dagger/Eff_Dagger_Hit_01.xml" />
-			</attack>
-			<attack point="p1" pointGroupID="107000321" targetCount="8" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="1.5" unrideOnHit="1">
-				<rangeProperty rangeType="cylinder" distance="300" height="150" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty hand="2" rate="0.57" effectHit="CH/Weapon/Dagger/Eff_Dagger_Hit_01.xml" />
-			</attack>
-			<attack point="p2" pointGroupID="107000322" targetCount="8" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="1.5" unrideOnHit="1">
-				<pauseProperty pauseShakeDuration="0.15" pauseAmp="10" />
-				<rangeProperty rangeType="cylinder" distance="300" height="150" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty hand="2" rate="0.71" effectHit="CH/Weapon/Dagger/Eff_Dagger_Hit_01.xml" push="1" pushdistance="60" pushduration="0.1" pushEaseType="1" />
-			</attack>
-		</motion>
-	</level>
-	<level value="7" feature="CharacterBalance_02">
-		<beginCondition probability="1" cooldownTime="0.65">
-			<stat hp="1" />
-			<weapon lh="0" rh="31" />
-		</beginCondition>
-		<changeSkill originSkillID="10700031" originSkillLevel="7" />
-		<autoTargeting autoTargetingMaxDegree="90" />
-		<push back="200" />
-		<consume>
-			<stat sp="26" />
-		</consume>
-		<combo comboOriginSkill="10700031" inputSkill="" outputSkill="" />
-		<conditionSkill level="1" skillID="10700002" skillTarget="1">
-			<beginCondition probability="1" allowBattleRidingState="1" />
-		</conditionSkill>
-		<conditionSkill level="7" skillID="10700031" skillTarget="1">
-			<beginCondition probability="1" allowBattleRidingState="1" />
-		</conditionSkill>
-		<motion>
-			<motionProperty sequenceName="Thief_BladeDance_B" selfInputCombo="selfinputcombo" strTagEffects="e0=CH/Skill_Feature_CharacterBalance_02/Thief/Eff_Thief_BladeDanceEX_Cast_01.xml,e1=CH/Skill_Feature_CharacterBalance_02/Thief/Eff_Thief_BladeDanceEX_Cast_02.xml" />
-			<attack point="p0" pointGroupID="10700032" targetCount="8" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="1.5" unrideOnHit="1">
-				<rangeProperty rangeType="cylinder" distance="300" height="150" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty hand="2" rate="0.6" effectHit="CH/Weapon/Dagger/Eff_Dagger_Hit_01.xml" />
-			</attack>
-			<attack point="p1" pointGroupID="107000321" targetCount="8" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="1.5" unrideOnHit="1">
-				<rangeProperty rangeType="cylinder" distance="300" height="150" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty hand="2" rate="0.6" effectHit="CH/Weapon/Dagger/Eff_Dagger_Hit_01.xml" />
-			</attack>
-			<attack point="p2" pointGroupID="107000322" targetCount="8" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="1.5" unrideOnHit="1">
-				<pauseProperty pauseShakeDuration="0.15" pauseAmp="10" />
-				<rangeProperty rangeType="cylinder" distance="300" height="150" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty hand="2" rate="0.74" effectHit="CH/Weapon/Dagger/Eff_Dagger_Hit_01.xml" push="1" pushdistance="60" pushduration="0.1" pushEaseType="1" />
-			</attack>
-		</motion>
-	</level>
-	<level value="8" feature="CharacterBalance_02">
-		<beginCondition probability="1" cooldownTime="0.65">
-			<stat hp="1" />
-			<weapon lh="0" rh="31" />
-		</beginCondition>
-		<changeSkill originSkillID="10700031" originSkillLevel="8" />
-		<autoTargeting autoTargetingMaxDegree="90" />
-		<push back="200" />
-		<consume>
-			<stat sp="26" />
-		</consume>
-		<combo comboOriginSkill="10700031" inputSkill="" outputSkill="" />
-		<conditionSkill level="1" skillID="10700002" skillTarget="1">
-			<beginCondition probability="1" allowBattleRidingState="1" />
-		</conditionSkill>
-		<conditionSkill level="8" skillID="10700031" skillTarget="1">
-			<beginCondition probability="1" allowBattleRidingState="1" />
-		</conditionSkill>
-		<motion>
-			<motionProperty sequenceName="Thief_BladeDance_B" selfInputCombo="selfinputcombo" strTagEffects="e0=CH/Skill_Feature_CharacterBalance_02/Thief/Eff_Thief_BladeDanceEX_Cast_01.xml,e1=CH/Skill_Feature_CharacterBalance_02/Thief/Eff_Thief_BladeDanceEX_Cast_02.xml" />
-			<attack point="p0" pointGroupID="10700032" targetCount="8" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="1.5" unrideOnHit="1">
-				<rangeProperty rangeType="cylinder" distance="300" height="150" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty hand="2" rate="0.63" effectHit="CH/Weapon/Dagger/Eff_Dagger_Hit_01.xml" />
-			</attack>
-			<attack point="p1" pointGroupID="107000321" targetCount="8" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="1.5" unrideOnHit="1">
-				<rangeProperty rangeType="cylinder" distance="300" height="150" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty hand="2" rate="0.63" effectHit="CH/Weapon/Dagger/Eff_Dagger_Hit_01.xml" />
-			</attack>
-			<attack point="p2" pointGroupID="107000322" targetCount="8" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="1.5" unrideOnHit="1">
-				<pauseProperty pauseShakeDuration="0.15" pauseAmp="10" />
-				<rangeProperty rangeType="cylinder" distance="300" height="150" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty hand="2" rate="0.77" effectHit="CH/Weapon/Dagger/Eff_Dagger_Hit_01.xml" push="1" pushdistance="60" pushduration="0.1" pushEaseType="1" />
-			</attack>
-		</motion>
-	</level>
-	<level value="9" feature="CharacterBalance_02">
-		<beginCondition probability="1" cooldownTime="0.65">
-			<stat hp="1" />
-			<weapon lh="0" rh="31" />
-		</beginCondition>
-		<changeSkill originSkillID="10700031" originSkillLevel="9" />
-		<autoTargeting autoTargetingMaxDegree="90" />
-		<push back="200" />
-		<consume>
-			<stat sp="26" />
-		</consume>
-		<combo comboOriginSkill="10700031" inputSkill="" outputSkill="" />
-		<conditionSkill level="1" skillID="10700002" skillTarget="1">
-			<beginCondition probability="1" allowBattleRidingState="1" />
-		</conditionSkill>
-		<conditionSkill level="9" skillID="10700031" skillTarget="1">
-			<beginCondition probability="1" allowBattleRidingState="1" />
-		</conditionSkill>
-		<motion>
-			<motionProperty sequenceName="Thief_BladeDance_B" selfInputCombo="selfinputcombo" strTagEffects="e0=CH/Skill_Feature_CharacterBalance_02/Thief/Eff_Thief_BladeDanceEX_Cast_01.xml,e1=CH/Skill_Feature_CharacterBalance_02/Thief/Eff_Thief_BladeDanceEX_Cast_02.xml" />
-			<attack point="p0" pointGroupID="10700032" targetCount="8" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="1.5" unrideOnHit="1">
-				<rangeProperty rangeType="cylinder" distance="300" height="150" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty hand="2" rate="0.66" effectHit="CH/Weapon/Dagger/Eff_Dagger_Hit_01.xml" />
-			</attack>
-			<attack point="p1" pointGroupID="107000321" targetCount="8" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="1.5" unrideOnHit="1">
-				<rangeProperty rangeType="cylinder" distance="300" height="150" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty hand="2" rate="0.66" effectHit="CH/Weapon/Dagger/Eff_Dagger_Hit_01.xml" />
-			</attack>
-			<attack point="p2" pointGroupID="107000322" targetCount="8" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="1.5" unrideOnHit="1">
-				<pauseProperty pauseShakeDuration="0.15" pauseAmp="10" />
-				<rangeProperty rangeType="cylinder" distance="300" height="150" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty hand="2" rate="0.8" effectHit="CH/Weapon/Dagger/Eff_Dagger_Hit_01.xml" push="1" pushdistance="60" pushduration="0.1" pushEaseType="1" />
-			</attack>
-		</motion>
-	</level>
-	<level value="10" feature="CharacterBalance_02">
-		<beginCondition probability="1" cooldownTime="0.65">
-			<stat hp="1" />
-			<weapon lh="0" rh="31" />
-		</beginCondition>
-		<changeSkill originSkillID="10700031" originSkillLevel="10" />
-		<autoTargeting autoTargetingMaxDegree="90" />
-		<push back="200" />
-		<consume>
-			<stat sp="26" />
-		</consume>
-		<combo comboOriginSkill="10700031" inputSkill="" outputSkill="" />
-		<conditionSkill level="1" skillID="10700002" skillTarget="1">
-			<beginCondition probability="1" allowBattleRidingState="1" />
-		</conditionSkill>
-		<conditionSkill level="10" skillID="10700031" skillTarget="1">
-			<beginCondition probability="1" allowBattleRidingState="1" />
-		</conditionSkill>
-		<motion>
-			<motionProperty sequenceName="Thief_BladeDance_B" selfInputCombo="selfinputcombo" strTagEffects="e0=CH/Skill_Feature_CharacterBalance_02/Thief/Eff_Thief_BladeDanceEX_Cast_01.xml,e1=CH/Skill_Feature_CharacterBalance_02/Thief/Eff_Thief_BladeDanceEX_Cast_02.xml" />
-			<attack point="p0" pointGroupID="10700032" targetCount="8" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="1.5" unrideOnHit="1">
-				<rangeProperty rangeType="cylinder" distance="300" height="150" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty hand="2" rate="0.69" effectHit="CH/Weapon/Dagger/Eff_Dagger_Hit_01.xml" />
-			</attack>
-			<attack point="p1" pointGroupID="107000321" targetCount="8" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="1.5" unrideOnHit="1">
-				<rangeProperty rangeType="cylinder" distance="300" height="150" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty hand="2" rate="0.69" effectHit="CH/Weapon/Dagger/Eff_Dagger_Hit_01.xml" />
-			</attack>
-			<attack point="p2" pointGroupID="107000322" targetCount="8" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="1.5" unrideOnHit="1">
-				<pauseProperty pauseShakeDuration="0.15" pauseAmp="10" />
-				<rangeProperty rangeType="cylinder" distance="300" height="150" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty hand="2" rate="0.83" effectHit="CH/Weapon/Dagger/Eff_Dagger_Hit_01.xml" push="1" pushdistance="60" pushduration="0.1" pushEaseType="1" />
-			</attack>
-		</motion>
-	</level>
-	<level value="11" feature="CharacterBalance_02">
-		<beginCondition probability="1" cooldownTime="0.65">
-			<stat hp="1" />
-			<weapon lh="0" rh="31" />
-		</beginCondition>
-		<changeSkill originSkillID="10700031" originSkillLevel="11" />
-		<autoTargeting autoTargetingMaxDegree="90" />
-		<push back="200" />
-		<consume>
-			<stat sp="26" />
-		</consume>
-		<combo comboOriginSkill="10700031" inputSkill="" outputSkill="" />
-		<conditionSkill level="1" skillID="10700002" skillTarget="1">
-			<beginCondition probability="1" allowBattleRidingState="1" />
-		</conditionSkill>
-		<conditionSkill level="11" skillID="10700031" skillTarget="1">
-			<beginCondition probability="1" allowBattleRidingState="1" />
-		</conditionSkill>
-		<motion>
-			<motionProperty sequenceName="Thief_BladeDance_B" selfInputCombo="selfinputcombo" strTagEffects="e0=CH/Skill_Feature_CharacterBalance_02/Thief/Eff_Thief_BladeDanceEX_Cast_01.xml,e1=CH/Skill_Feature_CharacterBalance_02/Thief/Eff_Thief_BladeDanceEX_Cast_02.xml" />
-			<attack point="p0" pointGroupID="10700032" targetCount="8" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="1.5" unrideOnHit="1">
-				<rangeProperty rangeType="cylinder" distance="300" height="150" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty hand="2" rate="0.72" effectHit="CH/Weapon/Dagger/Eff_Dagger_Hit_01.xml" />
-			</attack>
-			<attack point="p1" pointGroupID="107000321" targetCount="8" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="1.5" unrideOnHit="1">
-				<rangeProperty rangeType="cylinder" distance="300" height="150" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty hand="2" rate="0.72" effectHit="CH/Weapon/Dagger/Eff_Dagger_Hit_01.xml" />
-			</attack>
-			<attack point="p2" pointGroupID="107000322" targetCount="8" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="1.5" unrideOnHit="1">
-				<pauseProperty pauseShakeDuration="0.15" pauseAmp="10" />
-				<rangeProperty rangeType="cylinder" distance="300" height="150" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty hand="2" rate="0.86" effectHit="CH/Weapon/Dagger/Eff_Dagger_Hit_01.xml" push="1" pushdistance="60" pushduration="0.1" pushEaseType="1" />
 			</attack>
 		</motion>
 	</level>
@@ -891,7 +891,7 @@
 		<consume>
 			<stat sp="26" />
 		</consume>
-		<combo comboOriginSkill="10700031" inputSkill="" outputSkill="" />
+		<combo comboOriginSkill="10700031" />
 		<conditionSkill level="1" skillID="10700002" skillTarget="1">
 			<beginCondition probability="1" allowBattleRidingState="1" />
 		</conditionSkill>
@@ -913,918 +913,6 @@
 			<attack point="p2" pointGroupID="107000322" targetCount="8" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="1.5" unrideOnHit="1">
 				<pauseProperty pauseShakeDuration="0.15" pauseAmp="10" />
 				<rangeProperty rangeType="cylinder" distance="300" height="150" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty hand="2" rate="0.89" effectHit="CH/Weapon/Dagger/Eff_Dagger_Hit_01.xml" push="1" pushdistance="60" pushduration="0.1" pushEaseType="1" />
-			</attack>
-		</motion>
-	</level>
-	<level value="1" feature="CharacterBalance_01">
-		<beginCondition probability="1" cooldownTime="0.65">
-			<stat hp="1" />
-			<weapon lh="0" rh="31" />
-		</beginCondition>
-		<changeSkill originSkillID="10700031" />
-		<autoTargeting autoTargetingMaxDegree="90" />
-		<push back="200" />
-		<consume>
-			<stat sp="26" />
-		</consume>
-		<combo comboOriginSkill="10700031" inputSkill="" outputSkill="" />
-		<conditionSkill level="1" skillID="10700002" skillTarget="1">
-			<beginCondition probability="1" allowBattleRidingState="1" />
-		</conditionSkill>
-		<conditionSkill level="1" skillID="10700031" skillTarget="1">
-			<beginCondition probability="1" allowBattleRidingState="1" />
-		</conditionSkill>
-		<motion>
-			<motionProperty sequenceName="Thief_BladeDance_B" selfInputCombo="selfinputcombo" strTagEffects="e0=CH/Skill/Thief/Eff_Thief_BladeDanceEX_Cast_01.xml,e1=CH/Skill/Thief/Eff_Thief_BladeDanceEX_Cast_02.xml" />
-			<attack point="p0" pointGroupID="10700032" targetCount="8" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="1.5" unrideOnHit="1">
-				<rangeProperty rangeType="cylinder" distance="250" height="150" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty hand="2" rate="0.41" effectHit="CH/Weapon/Dagger/Eff_Dagger_Hit_01.xml" />
-			</attack>
-			<attack point="p1" pointGroupID="107000321" targetCount="8" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="1.5" unrideOnHit="1">
-				<rangeProperty rangeType="cylinder" distance="250" height="150" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty hand="2" rate="0.41" effectHit="CH/Weapon/Dagger/Eff_Dagger_Hit_01.xml" />
-			</attack>
-			<attack point="p2" pointGroupID="107000322" targetCount="8" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="1.5" unrideOnHit="1">
-				<pauseProperty pauseShakeDuration="0.15" pauseAmp="10" />
-				<rangeProperty rangeType="cylinder" distance="250" height="150" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty hand="2" rate="0.56" effectHit="CH/Weapon/Dagger/Eff_Dagger_Hit_01.xml" push="1" pushdistance="60" pushduration="0.1" pushEaseType="1" />
-			</attack>
-		</motion>
-	</level>
-	<level value="2" feature="CharacterBalance_01">
-		<beginCondition probability="1" cooldownTime="0.65">
-			<stat hp="1" />
-			<weapon lh="0" rh="31" />
-		</beginCondition>
-		<changeSkill originSkillID="10700031" originSkillLevel="2" />
-		<autoTargeting autoTargetingMaxDegree="90" />
-		<push back="200" />
-		<consume>
-			<stat sp="26" />
-		</consume>
-		<combo comboOriginSkill="10700031" inputSkill="" outputSkill="" />
-		<conditionSkill level="1" skillID="10700002" skillTarget="1">
-			<beginCondition probability="1" allowBattleRidingState="1" />
-		</conditionSkill>
-		<conditionSkill level="2" skillID="10700031" skillTarget="1">
-			<beginCondition probability="1" allowBattleRidingState="1" />
-		</conditionSkill>
-		<motion>
-			<motionProperty sequenceName="Thief_BladeDance_B" selfInputCombo="selfinputcombo" strTagEffects="e0=CH/Skill/Thief/Eff_Thief_BladeDanceEX_Cast_01.xml,e1=CH/Skill/Thief/Eff_Thief_BladeDanceEX_Cast_02.xml" />
-			<attack point="p0" pointGroupID="10700032" targetCount="8" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="1.5" unrideOnHit="1">
-				<rangeProperty rangeType="cylinder" distance="250" height="150" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty hand="2" rate="0.44" effectHit="CH/Weapon/Dagger/Eff_Dagger_Hit_01.xml" />
-			</attack>
-			<attack point="p1" pointGroupID="107000321" targetCount="8" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="1.5" unrideOnHit="1">
-				<rangeProperty rangeType="cylinder" distance="250" height="150" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty hand="2" rate="0.44" effectHit="CH/Weapon/Dagger/Eff_Dagger_Hit_01.xml" />
-			</attack>
-			<attack point="p2" pointGroupID="107000322" targetCount="8" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="1.5" unrideOnHit="1">
-				<pauseProperty pauseShakeDuration="0.15" pauseAmp="10" />
-				<rangeProperty rangeType="cylinder" distance="250" height="150" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty hand="2" rate="0.59" effectHit="CH/Weapon/Dagger/Eff_Dagger_Hit_01.xml" push="1" pushdistance="60" pushduration="0.1" pushEaseType="1" />
-			</attack>
-		</motion>
-	</level>
-	<level value="3" feature="CharacterBalance_01">
-		<beginCondition probability="1" cooldownTime="0.65">
-			<stat hp="1" />
-			<weapon lh="0" rh="31" />
-		</beginCondition>
-		<changeSkill originSkillID="10700031" originSkillLevel="3" />
-		<autoTargeting autoTargetingMaxDegree="90" />
-		<push back="200" />
-		<consume>
-			<stat sp="26" />
-		</consume>
-		<combo comboOriginSkill="10700031" inputSkill="" outputSkill="" />
-		<conditionSkill level="1" skillID="10700002" skillTarget="1">
-			<beginCondition probability="1" allowBattleRidingState="1" />
-		</conditionSkill>
-		<conditionSkill level="3" skillID="10700031" skillTarget="1">
-			<beginCondition probability="1" allowBattleRidingState="1" />
-		</conditionSkill>
-		<motion>
-			<motionProperty sequenceName="Thief_BladeDance_B" selfInputCombo="selfinputcombo" strTagEffects="e0=CH/Skill/Thief/Eff_Thief_BladeDanceEX_Cast_01.xml,e1=CH/Skill/Thief/Eff_Thief_BladeDanceEX_Cast_02.xml" />
-			<attack point="p0" pointGroupID="10700032" targetCount="8" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="1.5" unrideOnHit="1">
-				<rangeProperty rangeType="cylinder" distance="250" height="150" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty hand="2" rate="0.47" effectHit="CH/Weapon/Dagger/Eff_Dagger_Hit_01.xml" />
-			</attack>
-			<attack point="p1" pointGroupID="107000321" targetCount="8" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="1.5" unrideOnHit="1">
-				<rangeProperty rangeType="cylinder" distance="250" height="150" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty hand="2" rate="0.47" effectHit="CH/Weapon/Dagger/Eff_Dagger_Hit_01.xml" />
-			</attack>
-			<attack point="p2" pointGroupID="107000322" targetCount="8" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="1.5" unrideOnHit="1">
-				<pauseProperty pauseShakeDuration="0.15" pauseAmp="10" />
-				<rangeProperty rangeType="cylinder" distance="250" height="150" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty hand="2" rate="0.62" effectHit="CH/Weapon/Dagger/Eff_Dagger_Hit_01.xml" push="1" pushdistance="60" pushduration="0.1" pushEaseType="1" />
-			</attack>
-		</motion>
-	</level>
-	<level value="4" feature="CharacterBalance_01">
-		<beginCondition probability="1" cooldownTime="0.65">
-			<stat hp="1" />
-			<weapon lh="0" rh="31" />
-		</beginCondition>
-		<changeSkill originSkillID="10700031" originSkillLevel="4" />
-		<autoTargeting autoTargetingMaxDegree="90" />
-		<push back="200" />
-		<consume>
-			<stat sp="26" />
-		</consume>
-		<combo comboOriginSkill="10700031" inputSkill="" outputSkill="" />
-		<conditionSkill level="1" skillID="10700002" skillTarget="1">
-			<beginCondition probability="1" allowBattleRidingState="1" />
-		</conditionSkill>
-		<conditionSkill level="4" skillID="10700031" skillTarget="1">
-			<beginCondition probability="1" allowBattleRidingState="1" />
-		</conditionSkill>
-		<motion>
-			<motionProperty sequenceName="Thief_BladeDance_B" selfInputCombo="selfinputcombo" strTagEffects="e0=CH/Skill/Thief/Eff_Thief_BladeDanceEX_Cast_01.xml,e1=CH/Skill/Thief/Eff_Thief_BladeDanceEX_Cast_02.xml" />
-			<attack point="p0" pointGroupID="10700032" targetCount="8" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="1.5" unrideOnHit="1">
-				<rangeProperty rangeType="cylinder" distance="250" height="150" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty hand="2" rate="0.5" effectHit="CH/Weapon/Dagger/Eff_Dagger_Hit_01.xml" />
-			</attack>
-			<attack point="p1" pointGroupID="107000321" targetCount="8" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="1.5" unrideOnHit="1">
-				<rangeProperty rangeType="cylinder" distance="250" height="150" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty hand="2" rate="0.5" effectHit="CH/Weapon/Dagger/Eff_Dagger_Hit_01.xml" />
-			</attack>
-			<attack point="p2" pointGroupID="107000322" targetCount="8" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="1.5" unrideOnHit="1">
-				<pauseProperty pauseShakeDuration="0.15" pauseAmp="10" />
-				<rangeProperty rangeType="cylinder" distance="250" height="150" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty hand="2" rate="0.65" effectHit="CH/Weapon/Dagger/Eff_Dagger_Hit_01.xml" push="1" pushdistance="60" pushduration="0.1" pushEaseType="1" />
-			</attack>
-		</motion>
-	</level>
-	<level value="5" feature="CharacterBalance_01">
-		<beginCondition probability="1" cooldownTime="0.65">
-			<stat hp="1" />
-			<weapon lh="0" rh="31" />
-		</beginCondition>
-		<changeSkill originSkillID="10700031" originSkillLevel="5" />
-		<autoTargeting autoTargetingMaxDegree="90" />
-		<push back="200" />
-		<consume>
-			<stat sp="26" />
-		</consume>
-		<combo comboOriginSkill="10700031" inputSkill="" outputSkill="" />
-		<conditionSkill level="1" skillID="10700002" skillTarget="1">
-			<beginCondition probability="1" allowBattleRidingState="1" />
-		</conditionSkill>
-		<conditionSkill level="5" skillID="10700031" skillTarget="1">
-			<beginCondition probability="1" allowBattleRidingState="1" />
-		</conditionSkill>
-		<motion>
-			<motionProperty sequenceName="Thief_BladeDance_B" selfInputCombo="selfinputcombo" strTagEffects="e0=CH/Skill/Thief/Eff_Thief_BladeDanceEX_Cast_01.xml,e1=CH/Skill/Thief/Eff_Thief_BladeDanceEX_Cast_02.xml" />
-			<attack point="p0" pointGroupID="10700032" targetCount="8" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="1.5" unrideOnHit="1">
-				<rangeProperty rangeType="cylinder" distance="250" height="150" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty hand="2" rate="0.53" effectHit="CH/Weapon/Dagger/Eff_Dagger_Hit_01.xml" />
-			</attack>
-			<attack point="p1" pointGroupID="107000321" targetCount="8" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="1.5" unrideOnHit="1">
-				<rangeProperty rangeType="cylinder" distance="250" height="150" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty hand="2" rate="0.53" effectHit="CH/Weapon/Dagger/Eff_Dagger_Hit_01.xml" />
-			</attack>
-			<attack point="p2" pointGroupID="107000322" targetCount="8" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="1.5" unrideOnHit="1">
-				<pauseProperty pauseShakeDuration="0.15" pauseAmp="10" />
-				<rangeProperty rangeType="cylinder" distance="250" height="150" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty hand="2" rate="0.68" effectHit="CH/Weapon/Dagger/Eff_Dagger_Hit_01.xml" push="1" pushdistance="60" pushduration="0.1" pushEaseType="1" />
-			</attack>
-		</motion>
-	</level>
-	<level value="6" feature="CharacterBalance_01">
-		<beginCondition probability="1" cooldownTime="0.65">
-			<stat hp="1" />
-			<weapon lh="0" rh="31" />
-		</beginCondition>
-		<changeSkill originSkillID="10700031" originSkillLevel="6" />
-		<autoTargeting autoTargetingMaxDegree="90" />
-		<push back="200" />
-		<consume>
-			<stat sp="26" />
-		</consume>
-		<combo comboOriginSkill="10700031" inputSkill="" outputSkill="" />
-		<conditionSkill level="1" skillID="10700002" skillTarget="1">
-			<beginCondition probability="1" allowBattleRidingState="1" />
-		</conditionSkill>
-		<conditionSkill level="6" skillID="10700031" skillTarget="1">
-			<beginCondition probability="1" allowBattleRidingState="1" />
-		</conditionSkill>
-		<motion>
-			<motionProperty sequenceName="Thief_BladeDance_B" selfInputCombo="selfinputcombo" strTagEffects="e0=CH/Skill/Thief/Eff_Thief_BladeDanceEX_Cast_01.xml,e1=CH/Skill/Thief/Eff_Thief_BladeDanceEX_Cast_02.xml" />
-			<attack point="p0" pointGroupID="10700032" targetCount="8" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="1.5" unrideOnHit="1">
-				<rangeProperty rangeType="cylinder" distance="250" height="150" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty hand="2" rate="0.56" effectHit="CH/Weapon/Dagger/Eff_Dagger_Hit_01.xml" />
-			</attack>
-			<attack point="p1" pointGroupID="107000321" targetCount="8" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="1.5" unrideOnHit="1">
-				<rangeProperty rangeType="cylinder" distance="250" height="150" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty hand="2" rate="0.56" effectHit="CH/Weapon/Dagger/Eff_Dagger_Hit_01.xml" />
-			</attack>
-			<attack point="p2" pointGroupID="107000322" targetCount="8" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="1.5" unrideOnHit="1">
-				<pauseProperty pauseShakeDuration="0.15" pauseAmp="10" />
-				<rangeProperty rangeType="cylinder" distance="250" height="150" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty hand="2" rate="0.71" effectHit="CH/Weapon/Dagger/Eff_Dagger_Hit_01.xml" push="1" pushdistance="60" pushduration="0.1" pushEaseType="1" />
-			</attack>
-		</motion>
-	</level>
-	<level value="7" feature="CharacterBalance_01">
-		<beginCondition probability="1" cooldownTime="0.65">
-			<stat hp="1" />
-			<weapon lh="0" rh="31" />
-		</beginCondition>
-		<changeSkill originSkillID="10700031" originSkillLevel="7" />
-		<autoTargeting autoTargetingMaxDegree="90" />
-		<push back="200" />
-		<consume>
-			<stat sp="26" />
-		</consume>
-		<combo comboOriginSkill="10700031" inputSkill="" outputSkill="" />
-		<conditionSkill level="1" skillID="10700002" skillTarget="1">
-			<beginCondition probability="1" allowBattleRidingState="1" />
-		</conditionSkill>
-		<conditionSkill level="7" skillID="10700031" skillTarget="1">
-			<beginCondition probability="1" allowBattleRidingState="1" />
-		</conditionSkill>
-		<motion>
-			<motionProperty sequenceName="Thief_BladeDance_B" selfInputCombo="selfinputcombo" strTagEffects="e0=CH/Skill/Thief/Eff_Thief_BladeDanceEX_Cast_01.xml,e1=CH/Skill/Thief/Eff_Thief_BladeDanceEX_Cast_02.xml" />
-			<attack point="p0" pointGroupID="10700032" targetCount="8" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="1.5" unrideOnHit="1">
-				<rangeProperty rangeType="cylinder" distance="250" height="150" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty hand="2" rate="0.59" effectHit="CH/Weapon/Dagger/Eff_Dagger_Hit_01.xml" />
-			</attack>
-			<attack point="p1" pointGroupID="107000321" targetCount="8" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="1.5" unrideOnHit="1">
-				<rangeProperty rangeType="cylinder" distance="250" height="150" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty hand="2" rate="0.59" effectHit="CH/Weapon/Dagger/Eff_Dagger_Hit_01.xml" />
-			</attack>
-			<attack point="p2" pointGroupID="107000322" targetCount="8" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="1.5" unrideOnHit="1">
-				<pauseProperty pauseShakeDuration="0.15" pauseAmp="10" />
-				<rangeProperty rangeType="cylinder" distance="250" height="150" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty hand="2" rate="0.74" effectHit="CH/Weapon/Dagger/Eff_Dagger_Hit_01.xml" push="1" pushdistance="60" pushduration="0.1" pushEaseType="1" />
-			</attack>
-		</motion>
-	</level>
-	<level value="8" feature="CharacterBalance_01">
-		<beginCondition probability="1" cooldownTime="0.65">
-			<stat hp="1" />
-			<weapon lh="0" rh="31" />
-		</beginCondition>
-		<changeSkill originSkillID="10700031" originSkillLevel="8" />
-		<autoTargeting autoTargetingMaxDegree="90" />
-		<push back="200" />
-		<consume>
-			<stat sp="26" />
-		</consume>
-		<combo comboOriginSkill="10700031" inputSkill="" outputSkill="" />
-		<conditionSkill level="1" skillID="10700002" skillTarget="1">
-			<beginCondition probability="1" allowBattleRidingState="1" />
-		</conditionSkill>
-		<conditionSkill level="8" skillID="10700031" skillTarget="1">
-			<beginCondition probability="1" allowBattleRidingState="1" />
-		</conditionSkill>
-		<motion>
-			<motionProperty sequenceName="Thief_BladeDance_B" selfInputCombo="selfinputcombo" strTagEffects="e0=CH/Skill/Thief/Eff_Thief_BladeDanceEX_Cast_01.xml,e1=CH/Skill/Thief/Eff_Thief_BladeDanceEX_Cast_02.xml" />
-			<attack point="p0" pointGroupID="10700032" targetCount="8" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="1.5" unrideOnHit="1">
-				<rangeProperty rangeType="cylinder" distance="250" height="150" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty hand="2" rate="0.62" effectHit="CH/Weapon/Dagger/Eff_Dagger_Hit_01.xml" />
-			</attack>
-			<attack point="p1" pointGroupID="107000321" targetCount="8" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="1.5" unrideOnHit="1">
-				<rangeProperty rangeType="cylinder" distance="250" height="150" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty hand="2" rate="0.62" effectHit="CH/Weapon/Dagger/Eff_Dagger_Hit_01.xml" />
-			</attack>
-			<attack point="p2" pointGroupID="107000322" targetCount="8" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="1.5" unrideOnHit="1">
-				<pauseProperty pauseShakeDuration="0.15" pauseAmp="10" />
-				<rangeProperty rangeType="cylinder" distance="250" height="150" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty hand="2" rate="0.77" effectHit="CH/Weapon/Dagger/Eff_Dagger_Hit_01.xml" push="1" pushdistance="60" pushduration="0.1" pushEaseType="1" />
-			</attack>
-		</motion>
-	</level>
-	<level value="9" feature="CharacterBalance_01">
-		<beginCondition probability="1" cooldownTime="0.65">
-			<stat hp="1" />
-			<weapon lh="0" rh="31" />
-		</beginCondition>
-		<changeSkill originSkillID="10700031" originSkillLevel="9" />
-		<autoTargeting autoTargetingMaxDegree="90" />
-		<push back="200" />
-		<consume>
-			<stat sp="26" />
-		</consume>
-		<combo comboOriginSkill="10700031" inputSkill="" outputSkill="" />
-		<conditionSkill level="1" skillID="10700002" skillTarget="1">
-			<beginCondition probability="1" allowBattleRidingState="1" />
-		</conditionSkill>
-		<conditionSkill level="9" skillID="10700031" skillTarget="1">
-			<beginCondition probability="1" allowBattleRidingState="1" />
-		</conditionSkill>
-		<motion>
-			<motionProperty sequenceName="Thief_BladeDance_B" selfInputCombo="selfinputcombo" strTagEffects="e0=CH/Skill/Thief/Eff_Thief_BladeDanceEX_Cast_01.xml,e1=CH/Skill/Thief/Eff_Thief_BladeDanceEX_Cast_02.xml" />
-			<attack point="p0" pointGroupID="10700032" targetCount="8" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="1.5" unrideOnHit="1">
-				<rangeProperty rangeType="cylinder" distance="250" height="150" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty hand="2" rate="0.65" effectHit="CH/Weapon/Dagger/Eff_Dagger_Hit_01.xml" />
-			</attack>
-			<attack point="p1" pointGroupID="107000321" targetCount="8" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="1.5" unrideOnHit="1">
-				<rangeProperty rangeType="cylinder" distance="250" height="150" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty hand="2" rate="0.65" effectHit="CH/Weapon/Dagger/Eff_Dagger_Hit_01.xml" />
-			</attack>
-			<attack point="p2" pointGroupID="107000322" targetCount="8" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="1.5" unrideOnHit="1">
-				<pauseProperty pauseShakeDuration="0.15" pauseAmp="10" />
-				<rangeProperty rangeType="cylinder" distance="250" height="150" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty hand="2" rate="0.8" effectHit="CH/Weapon/Dagger/Eff_Dagger_Hit_01.xml" push="1" pushdistance="60" pushduration="0.1" pushEaseType="1" />
-			</attack>
-		</motion>
-	</level>
-	<level value="10" feature="CharacterBalance_01">
-		<beginCondition probability="1" cooldownTime="0.65">
-			<stat hp="1" />
-			<weapon lh="0" rh="31" />
-		</beginCondition>
-		<changeSkill originSkillID="10700031" originSkillLevel="10" />
-		<autoTargeting autoTargetingMaxDegree="90" />
-		<push back="200" />
-		<consume>
-			<stat sp="26" />
-		</consume>
-		<combo comboOriginSkill="10700031" inputSkill="" outputSkill="" />
-		<conditionSkill level="1" skillID="10700002" skillTarget="1">
-			<beginCondition probability="1" allowBattleRidingState="1" />
-		</conditionSkill>
-		<conditionSkill level="10" skillID="10700031" skillTarget="1">
-			<beginCondition probability="1" allowBattleRidingState="1" />
-		</conditionSkill>
-		<motion>
-			<motionProperty sequenceName="Thief_BladeDance_B" selfInputCombo="selfinputcombo" strTagEffects="e0=CH/Skill/Thief/Eff_Thief_BladeDanceEX_Cast_01.xml,e1=CH/Skill/Thief/Eff_Thief_BladeDanceEX_Cast_02.xml" />
-			<attack point="p0" pointGroupID="10700032" targetCount="8" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="1.5" unrideOnHit="1">
-				<rangeProperty rangeType="cylinder" distance="250" height="150" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty hand="2" rate="0.68" effectHit="CH/Weapon/Dagger/Eff_Dagger_Hit_01.xml" />
-			</attack>
-			<attack point="p1" pointGroupID="107000321" targetCount="8" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="1.5" unrideOnHit="1">
-				<rangeProperty rangeType="cylinder" distance="250" height="150" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty hand="2" rate="0.68" effectHit="CH/Weapon/Dagger/Eff_Dagger_Hit_01.xml" />
-			</attack>
-			<attack point="p2" pointGroupID="107000322" targetCount="8" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="1.5" unrideOnHit="1">
-				<pauseProperty pauseShakeDuration="0.15" pauseAmp="10" />
-				<rangeProperty rangeType="cylinder" distance="250" height="150" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty hand="2" rate="0.83" effectHit="CH/Weapon/Dagger/Eff_Dagger_Hit_01.xml" push="1" pushdistance="60" pushduration="0.1" pushEaseType="1" />
-			</attack>
-		</motion>
-	</level>
-	<level value="11" feature="CharacterBalance_01">
-		<beginCondition probability="1" cooldownTime="0.65">
-			<stat hp="1" />
-			<weapon lh="0" rh="31" />
-		</beginCondition>
-		<changeSkill originSkillID="10700031" originSkillLevel="11" />
-		<autoTargeting autoTargetingMaxDegree="90" />
-		<push back="200" />
-		<consume>
-			<stat sp="26" />
-		</consume>
-		<combo comboOriginSkill="10700031" inputSkill="" outputSkill="" />
-		<conditionSkill level="1" skillID="10700002" skillTarget="1">
-			<beginCondition probability="1" allowBattleRidingState="1" />
-		</conditionSkill>
-		<conditionSkill level="11" skillID="10700031" skillTarget="1">
-			<beginCondition probability="1" allowBattleRidingState="1" />
-		</conditionSkill>
-		<motion>
-			<motionProperty sequenceName="Thief_BladeDance_B" selfInputCombo="selfinputcombo" strTagEffects="e0=CH/Skill/Thief/Eff_Thief_BladeDanceEX_Cast_01.xml,e1=CH/Skill/Thief/Eff_Thief_BladeDanceEX_Cast_02.xml" />
-			<attack point="p0" pointGroupID="10700032" targetCount="8" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="1.5" unrideOnHit="1">
-				<rangeProperty rangeType="cylinder" distance="250" height="150" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty hand="2" rate="0.71" effectHit="CH/Weapon/Dagger/Eff_Dagger_Hit_01.xml" />
-			</attack>
-			<attack point="p1" pointGroupID="107000321" targetCount="8" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="1.5" unrideOnHit="1">
-				<rangeProperty rangeType="cylinder" distance="250" height="150" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty hand="2" rate="0.71" effectHit="CH/Weapon/Dagger/Eff_Dagger_Hit_01.xml" />
-			</attack>
-			<attack point="p2" pointGroupID="107000322" targetCount="8" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="1.5" unrideOnHit="1">
-				<pauseProperty pauseShakeDuration="0.15" pauseAmp="10" />
-				<rangeProperty rangeType="cylinder" distance="250" height="150" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty hand="2" rate="0.86" effectHit="CH/Weapon/Dagger/Eff_Dagger_Hit_01.xml" push="1" pushdistance="60" pushduration="0.1" pushEaseType="1" />
-			</attack>
-		</motion>
-	</level>
-	<level value="12" feature="CharacterBalance_01">
-		<beginCondition probability="1" cooldownTime="0.65">
-			<stat hp="1" />
-			<weapon lh="0" rh="31" />
-		</beginCondition>
-		<changeSkill originSkillID="10700031" originSkillLevel="12" />
-		<autoTargeting autoTargetingMaxDegree="90" />
-		<push back="200" />
-		<consume>
-			<stat sp="26" />
-		</consume>
-		<combo comboOriginSkill="10700031" inputSkill="" outputSkill="" />
-		<conditionSkill level="1" skillID="10700002" skillTarget="1">
-			<beginCondition probability="1" allowBattleRidingState="1" />
-		</conditionSkill>
-		<conditionSkill level="12" skillID="10700031" skillTarget="1">
-			<beginCondition probability="1" allowBattleRidingState="1" />
-		</conditionSkill>
-		<motion>
-			<motionProperty sequenceName="Thief_BladeDance_B" selfInputCombo="selfinputcombo" strTagEffects="e0=CH/Skill/Thief/Eff_Thief_BladeDanceEX_Cast_01.xml,e1=CH/Skill/Thief/Eff_Thief_BladeDanceEX_Cast_02.xml" />
-			<attack point="p0" pointGroupID="10700032" targetCount="8" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="1.5" unrideOnHit="1">
-				<rangeProperty rangeType="cylinder" distance="250" height="150" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty hand="2" rate="0.74" effectHit="CH/Weapon/Dagger/Eff_Dagger_Hit_01.xml" />
-			</attack>
-			<attack point="p1" pointGroupID="107000321" targetCount="8" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="1.5" unrideOnHit="1">
-				<rangeProperty rangeType="cylinder" distance="250" height="150" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty hand="2" rate="0.74" effectHit="CH/Weapon/Dagger/Eff_Dagger_Hit_01.xml" />
-			</attack>
-			<attack point="p2" pointGroupID="107000322" targetCount="8" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="1.5" unrideOnHit="1">
-				<pauseProperty pauseShakeDuration="0.15" pauseAmp="10" />
-				<rangeProperty rangeType="cylinder" distance="250" height="150" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty hand="2" rate="0.89" effectHit="CH/Weapon/Dagger/Eff_Dagger_Hit_01.xml" push="1" pushdistance="60" pushduration="0.1" pushEaseType="1" />
-			</attack>
-		</motion>
-	</level>
-	<level value="1">
-		<beginCondition probability="1" cooldownTime="0.65">
-			<stat hp="1" />
-			<weapon lh="0" rh="31" />
-		</beginCondition>
-		<changeSkill originSkillID="10700031" />
-		<autoTargeting autoTargetingMaxDegree="90" />
-		<push back="200" />
-		<consume>
-			<stat sp="26" />
-		</consume>
-		<combo comboOriginSkill="10700031" inputSkill="" outputSkill="" />
-		<conditionSkill level="1" skillID="10700002" skillTarget="1">
-			<beginCondition probability="1" allowBattleRidingState="1" />
-		</conditionSkill>
-		<conditionSkill level="1" skillID="10700031" skillTarget="1">
-			<beginCondition probability="1" allowBattleRidingState="1" />
-		</conditionSkill>
-		<motion>
-			<motionProperty sequenceName="Thief_BladeDance_B" selfInputCombo="selfinputcombo" strTagEffects="e0=CH/Skill/Thief/Eff_Thief_BladeDanceEX_Cast_01.xml,e1=CH/Skill/Thief/Eff_Thief_BladeDanceEX_Cast_02.xml" />
-			<attack point="p0" pointGroupID="10700032" targetCount="8" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="1.5" unrideOnHit="1">
-				<rangeProperty rangeType="cylinder" distance="250" height="150" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty hand="2" rate="0.42" effectHit="CH/Weapon/Dagger/Eff_Dagger_Hit_01.xml" />
-			</attack>
-			<attack point="p1" pointGroupID="107000321" targetCount="8" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="1.5" unrideOnHit="1">
-				<rangeProperty rangeType="cylinder" distance="250" height="150" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty hand="2" rate="0.42" effectHit="CH/Weapon/Dagger/Eff_Dagger_Hit_01.xml" />
-			</attack>
-			<attack point="p2" pointGroupID="107000322" targetCount="8" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="1.5" unrideOnHit="1">
-				<pauseProperty pauseShakeDuration="0.15" pauseAmp="10" />
-				<rangeProperty rangeType="cylinder" distance="250" height="150" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty hand="2" rate="0.56" effectHit="CH/Weapon/Dagger/Eff_Dagger_Hit_01.xml" push="1" pushdistance="60" pushduration="0.1" pushEaseType="1" />
-			</attack>
-		</motion>
-	</level>
-	<level value="2">
-		<beginCondition probability="1" cooldownTime="0.65">
-			<stat hp="1" />
-			<weapon lh="0" rh="31" />
-		</beginCondition>
-		<changeSkill originSkillID="10700031" originSkillLevel="2" />
-		<autoTargeting autoTargetingMaxDegree="90" />
-		<push back="200" />
-		<consume>
-			<stat sp="26" />
-		</consume>
-		<combo comboOriginSkill="10700031" inputSkill="" outputSkill="" />
-		<conditionSkill level="1" skillID="10700002" skillTarget="1">
-			<beginCondition probability="1" allowBattleRidingState="1" />
-		</conditionSkill>
-		<conditionSkill level="2" skillID="10700031" skillTarget="1">
-			<beginCondition probability="1" allowBattleRidingState="1" />
-		</conditionSkill>
-		<motion>
-			<motionProperty sequenceName="Thief_BladeDance_B" selfInputCombo="selfinputcombo" strTagEffects="e0=CH/Skill/Thief/Eff_Thief_BladeDanceEX_Cast_01.xml,e1=CH/Skill/Thief/Eff_Thief_BladeDanceEX_Cast_02.xml" />
-			<attack point="p0" pointGroupID="10700032" targetCount="8" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="1.5" unrideOnHit="1">
-				<rangeProperty rangeType="cylinder" distance="250" height="150" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty hand="2" rate="0.45" effectHit="CH/Weapon/Dagger/Eff_Dagger_Hit_01.xml" />
-			</attack>
-			<attack point="p1" pointGroupID="107000321" targetCount="8" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="1.5" unrideOnHit="1">
-				<rangeProperty rangeType="cylinder" distance="250" height="150" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty hand="2" rate="0.45" effectHit="CH/Weapon/Dagger/Eff_Dagger_Hit_01.xml" />
-			</attack>
-			<attack point="p2" pointGroupID="107000322" targetCount="8" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="1.5" unrideOnHit="1">
-				<pauseProperty pauseShakeDuration="0.15" pauseAmp="10" />
-				<rangeProperty rangeType="cylinder" distance="250" height="150" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty hand="2" rate="0.59" effectHit="CH/Weapon/Dagger/Eff_Dagger_Hit_01.xml" push="1" pushdistance="60" pushduration="0.1" pushEaseType="1" />
-			</attack>
-		</motion>
-	</level>
-	<level value="3">
-		<beginCondition probability="1" cooldownTime="0.65">
-			<stat hp="1" />
-			<weapon lh="0" rh="31" />
-		</beginCondition>
-		<changeSkill originSkillID="10700031" originSkillLevel="3" />
-		<autoTargeting autoTargetingMaxDegree="90" />
-		<push back="200" />
-		<consume>
-			<stat sp="26" />
-		</consume>
-		<combo comboOriginSkill="10700031" inputSkill="" outputSkill="" />
-		<conditionSkill level="1" skillID="10700002" skillTarget="1">
-			<beginCondition probability="1" allowBattleRidingState="1" />
-		</conditionSkill>
-		<conditionSkill level="3" skillID="10700031" skillTarget="1">
-			<beginCondition probability="1" allowBattleRidingState="1" />
-		</conditionSkill>
-		<motion>
-			<motionProperty sequenceName="Thief_BladeDance_B" selfInputCombo="selfinputcombo" strTagEffects="e0=CH/Skill/Thief/Eff_Thief_BladeDanceEX_Cast_01.xml,e1=CH/Skill/Thief/Eff_Thief_BladeDanceEX_Cast_02.xml" />
-			<attack point="p0" pointGroupID="10700032" targetCount="8" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="1.5" unrideOnHit="1">
-				<rangeProperty rangeType="cylinder" distance="250" height="150" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty hand="2" rate="0.48" effectHit="CH/Weapon/Dagger/Eff_Dagger_Hit_01.xml" />
-			</attack>
-			<attack point="p1" pointGroupID="107000321" targetCount="8" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="1.5" unrideOnHit="1">
-				<rangeProperty rangeType="cylinder" distance="250" height="150" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty hand="2" rate="0.48" effectHit="CH/Weapon/Dagger/Eff_Dagger_Hit_01.xml" />
-			</attack>
-			<attack point="p2" pointGroupID="107000322" targetCount="8" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="1.5" unrideOnHit="1">
-				<pauseProperty pauseShakeDuration="0.15" pauseAmp="10" />
-				<rangeProperty rangeType="cylinder" distance="250" height="150" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty hand="2" rate="0.62" effectHit="CH/Weapon/Dagger/Eff_Dagger_Hit_01.xml" push="1" pushdistance="60" pushduration="0.1" pushEaseType="1" />
-			</attack>
-		</motion>
-	</level>
-	<level value="4">
-		<beginCondition probability="1" cooldownTime="0.65">
-			<stat hp="1" />
-			<weapon lh="0" rh="31" />
-		</beginCondition>
-		<changeSkill originSkillID="10700031" originSkillLevel="4" />
-		<autoTargeting autoTargetingMaxDegree="90" />
-		<push back="200" />
-		<consume>
-			<stat sp="26" />
-		</consume>
-		<combo comboOriginSkill="10700031" inputSkill="" outputSkill="" />
-		<conditionSkill level="1" skillID="10700002" skillTarget="1">
-			<beginCondition probability="1" allowBattleRidingState="1" />
-		</conditionSkill>
-		<conditionSkill level="4" skillID="10700031" skillTarget="1">
-			<beginCondition probability="1" allowBattleRidingState="1" />
-		</conditionSkill>
-		<motion>
-			<motionProperty sequenceName="Thief_BladeDance_B" selfInputCombo="selfinputcombo" strTagEffects="e0=CH/Skill/Thief/Eff_Thief_BladeDanceEX_Cast_01.xml,e1=CH/Skill/Thief/Eff_Thief_BladeDanceEX_Cast_02.xml" />
-			<attack point="p0" pointGroupID="10700032" targetCount="8" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="1.5" unrideOnHit="1">
-				<rangeProperty rangeType="cylinder" distance="250" height="150" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty hand="2" rate="0.51" effectHit="CH/Weapon/Dagger/Eff_Dagger_Hit_01.xml" />
-			</attack>
-			<attack point="p1" pointGroupID="107000321" targetCount="8" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="1.5" unrideOnHit="1">
-				<rangeProperty rangeType="cylinder" distance="250" height="150" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty hand="2" rate="0.51" effectHit="CH/Weapon/Dagger/Eff_Dagger_Hit_01.xml" />
-			</attack>
-			<attack point="p2" pointGroupID="107000322" targetCount="8" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="1.5" unrideOnHit="1">
-				<pauseProperty pauseShakeDuration="0.15" pauseAmp="10" />
-				<rangeProperty rangeType="cylinder" distance="250" height="150" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty hand="2" rate="0.65" effectHit="CH/Weapon/Dagger/Eff_Dagger_Hit_01.xml" push="1" pushdistance="60" pushduration="0.1" pushEaseType="1" />
-			</attack>
-		</motion>
-	</level>
-	<level value="5">
-		<beginCondition probability="1" cooldownTime="0.65">
-			<stat hp="1" />
-			<weapon lh="0" rh="31" />
-		</beginCondition>
-		<changeSkill originSkillID="10700031" originSkillLevel="5" />
-		<autoTargeting autoTargetingMaxDegree="90" />
-		<push back="200" />
-		<consume>
-			<stat sp="26" />
-		</consume>
-		<combo comboOriginSkill="10700031" inputSkill="" outputSkill="" />
-		<conditionSkill level="1" skillID="10700002" skillTarget="1">
-			<beginCondition probability="1" allowBattleRidingState="1" />
-		</conditionSkill>
-		<conditionSkill level="5" skillID="10700031" skillTarget="1">
-			<beginCondition probability="1" allowBattleRidingState="1" />
-		</conditionSkill>
-		<motion>
-			<motionProperty sequenceName="Thief_BladeDance_B" selfInputCombo="selfinputcombo" strTagEffects="e0=CH/Skill/Thief/Eff_Thief_BladeDanceEX_Cast_01.xml,e1=CH/Skill/Thief/Eff_Thief_BladeDanceEX_Cast_02.xml" />
-			<attack point="p0" pointGroupID="10700032" targetCount="8" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="1.5" unrideOnHit="1">
-				<rangeProperty rangeType="cylinder" distance="250" height="150" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty hand="2" rate="0.54" effectHit="CH/Weapon/Dagger/Eff_Dagger_Hit_01.xml" />
-			</attack>
-			<attack point="p1" pointGroupID="107000321" targetCount="8" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="1.5" unrideOnHit="1">
-				<rangeProperty rangeType="cylinder" distance="250" height="150" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty hand="2" rate="0.54" effectHit="CH/Weapon/Dagger/Eff_Dagger_Hit_01.xml" />
-			</attack>
-			<attack point="p2" pointGroupID="107000322" targetCount="8" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="1.5" unrideOnHit="1">
-				<pauseProperty pauseShakeDuration="0.15" pauseAmp="10" />
-				<rangeProperty rangeType="cylinder" distance="250" height="150" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty hand="2" rate="0.68" effectHit="CH/Weapon/Dagger/Eff_Dagger_Hit_01.xml" push="1" pushdistance="60" pushduration="0.1" pushEaseType="1" />
-			</attack>
-		</motion>
-	</level>
-	<level value="6">
-		<beginCondition probability="1" cooldownTime="0.65">
-			<stat hp="1" />
-			<weapon lh="0" rh="31" />
-		</beginCondition>
-		<changeSkill originSkillID="10700031" originSkillLevel="6" />
-		<autoTargeting autoTargetingMaxDegree="90" />
-		<push back="200" />
-		<consume>
-			<stat sp="26" />
-		</consume>
-		<combo comboOriginSkill="10700031" inputSkill="" outputSkill="" />
-		<conditionSkill level="1" skillID="10700002" skillTarget="1">
-			<beginCondition probability="1" allowBattleRidingState="1" />
-		</conditionSkill>
-		<conditionSkill level="6" skillID="10700031" skillTarget="1">
-			<beginCondition probability="1" allowBattleRidingState="1" />
-		</conditionSkill>
-		<motion>
-			<motionProperty sequenceName="Thief_BladeDance_B" selfInputCombo="selfinputcombo" strTagEffects="e0=CH/Skill/Thief/Eff_Thief_BladeDanceEX_Cast_01.xml,e1=CH/Skill/Thief/Eff_Thief_BladeDanceEX_Cast_02.xml" />
-			<attack point="p0" pointGroupID="10700032" targetCount="8" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="1.5" unrideOnHit="1">
-				<rangeProperty rangeType="cylinder" distance="250" height="150" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty hand="2" rate="0.57" effectHit="CH/Weapon/Dagger/Eff_Dagger_Hit_01.xml" />
-			</attack>
-			<attack point="p1" pointGroupID="107000321" targetCount="8" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="1.5" unrideOnHit="1">
-				<rangeProperty rangeType="cylinder" distance="250" height="150" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty hand="2" rate="0.57" effectHit="CH/Weapon/Dagger/Eff_Dagger_Hit_01.xml" />
-			</attack>
-			<attack point="p2" pointGroupID="107000322" targetCount="8" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="1.5" unrideOnHit="1">
-				<pauseProperty pauseShakeDuration="0.15" pauseAmp="10" />
-				<rangeProperty rangeType="cylinder" distance="250" height="150" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty hand="2" rate="0.71" effectHit="CH/Weapon/Dagger/Eff_Dagger_Hit_01.xml" push="1" pushdistance="60" pushduration="0.1" pushEaseType="1" />
-			</attack>
-		</motion>
-	</level>
-	<level value="7">
-		<beginCondition probability="1" cooldownTime="0.65">
-			<stat hp="1" />
-			<weapon lh="0" rh="31" />
-		</beginCondition>
-		<changeSkill originSkillID="10700031" originSkillLevel="7" />
-		<autoTargeting autoTargetingMaxDegree="90" />
-		<push back="200" />
-		<consume>
-			<stat sp="26" />
-		</consume>
-		<combo comboOriginSkill="10700031" inputSkill="" outputSkill="" />
-		<conditionSkill level="1" skillID="10700002" skillTarget="1">
-			<beginCondition probability="1" allowBattleRidingState="1" />
-		</conditionSkill>
-		<conditionSkill level="7" skillID="10700031" skillTarget="1">
-			<beginCondition probability="1" allowBattleRidingState="1" />
-		</conditionSkill>
-		<motion>
-			<motionProperty sequenceName="Thief_BladeDance_B" selfInputCombo="selfinputcombo" strTagEffects="e0=CH/Skill/Thief/Eff_Thief_BladeDanceEX_Cast_01.xml,e1=CH/Skill/Thief/Eff_Thief_BladeDanceEX_Cast_02.xml" />
-			<attack point="p0" pointGroupID="10700032" targetCount="8" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="1.5" unrideOnHit="1">
-				<rangeProperty rangeType="cylinder" distance="250" height="150" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty hand="2" rate="0.6" effectHit="CH/Weapon/Dagger/Eff_Dagger_Hit_01.xml" />
-			</attack>
-			<attack point="p1" pointGroupID="107000321" targetCount="8" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="1.5" unrideOnHit="1">
-				<rangeProperty rangeType="cylinder" distance="250" height="150" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty hand="2" rate="0.6" effectHit="CH/Weapon/Dagger/Eff_Dagger_Hit_01.xml" />
-			</attack>
-			<attack point="p2" pointGroupID="107000322" targetCount="8" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="1.5" unrideOnHit="1">
-				<pauseProperty pauseShakeDuration="0.15" pauseAmp="10" />
-				<rangeProperty rangeType="cylinder" distance="250" height="150" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty hand="2" rate="0.74" effectHit="CH/Weapon/Dagger/Eff_Dagger_Hit_01.xml" push="1" pushdistance="60" pushduration="0.1" pushEaseType="1" />
-			</attack>
-		</motion>
-	</level>
-	<level value="8">
-		<beginCondition probability="1" cooldownTime="0.65">
-			<stat hp="1" />
-			<weapon lh="0" rh="31" />
-		</beginCondition>
-		<changeSkill originSkillID="10700031" originSkillLevel="8" />
-		<autoTargeting autoTargetingMaxDegree="90" />
-		<push back="200" />
-		<consume>
-			<stat sp="26" />
-		</consume>
-		<combo comboOriginSkill="10700031" inputSkill="" outputSkill="" />
-		<conditionSkill level="1" skillID="10700002" skillTarget="1">
-			<beginCondition probability="1" allowBattleRidingState="1" />
-		</conditionSkill>
-		<conditionSkill level="8" skillID="10700031" skillTarget="1">
-			<beginCondition probability="1" allowBattleRidingState="1" />
-		</conditionSkill>
-		<motion>
-			<motionProperty sequenceName="Thief_BladeDance_B" selfInputCombo="selfinputcombo" strTagEffects="e0=CH/Skill/Thief/Eff_Thief_BladeDanceEX_Cast_01.xml,e1=CH/Skill/Thief/Eff_Thief_BladeDanceEX_Cast_02.xml" />
-			<attack point="p0" pointGroupID="10700032" targetCount="8" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="1.5" unrideOnHit="1">
-				<rangeProperty rangeType="cylinder" distance="250" height="150" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty hand="2" rate="0.63" effectHit="CH/Weapon/Dagger/Eff_Dagger_Hit_01.xml" />
-			</attack>
-			<attack point="p1" pointGroupID="107000321" targetCount="8" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="1.5" unrideOnHit="1">
-				<rangeProperty rangeType="cylinder" distance="250" height="150" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty hand="2" rate="0.63" effectHit="CH/Weapon/Dagger/Eff_Dagger_Hit_01.xml" />
-			</attack>
-			<attack point="p2" pointGroupID="107000322" targetCount="8" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="1.5" unrideOnHit="1">
-				<pauseProperty pauseShakeDuration="0.15" pauseAmp="10" />
-				<rangeProperty rangeType="cylinder" distance="250" height="150" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty hand="2" rate="0.77" effectHit="CH/Weapon/Dagger/Eff_Dagger_Hit_01.xml" push="1" pushdistance="60" pushduration="0.1" pushEaseType="1" />
-			</attack>
-		</motion>
-	</level>
-	<level value="9">
-		<beginCondition probability="1" cooldownTime="0.65">
-			<stat hp="1" />
-			<weapon lh="0" rh="31" />
-		</beginCondition>
-		<changeSkill originSkillID="10700031" originSkillLevel="9" />
-		<autoTargeting autoTargetingMaxDegree="90" />
-		<push back="200" />
-		<consume>
-			<stat sp="26" />
-		</consume>
-		<combo comboOriginSkill="10700031" inputSkill="" outputSkill="" />
-		<conditionSkill level="1" skillID="10700002" skillTarget="1">
-			<beginCondition probability="1" allowBattleRidingState="1" />
-		</conditionSkill>
-		<conditionSkill level="9" skillID="10700031" skillTarget="1">
-			<beginCondition probability="1" allowBattleRidingState="1" />
-		</conditionSkill>
-		<motion>
-			<motionProperty sequenceName="Thief_BladeDance_B" selfInputCombo="selfinputcombo" strTagEffects="e0=CH/Skill/Thief/Eff_Thief_BladeDanceEX_Cast_01.xml,e1=CH/Skill/Thief/Eff_Thief_BladeDanceEX_Cast_02.xml" />
-			<attack point="p0" pointGroupID="10700032" targetCount="8" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="1.5" unrideOnHit="1">
-				<rangeProperty rangeType="cylinder" distance="250" height="150" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty hand="2" rate="0.66" effectHit="CH/Weapon/Dagger/Eff_Dagger_Hit_01.xml" />
-			</attack>
-			<attack point="p1" pointGroupID="107000321" targetCount="8" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="1.5" unrideOnHit="1">
-				<rangeProperty rangeType="cylinder" distance="250" height="150" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty hand="2" rate="0.66" effectHit="CH/Weapon/Dagger/Eff_Dagger_Hit_01.xml" />
-			</attack>
-			<attack point="p2" pointGroupID="107000322" targetCount="8" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="1.5" unrideOnHit="1">
-				<pauseProperty pauseShakeDuration="0.15" pauseAmp="10" />
-				<rangeProperty rangeType="cylinder" distance="250" height="150" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty hand="2" rate="0.8" effectHit="CH/Weapon/Dagger/Eff_Dagger_Hit_01.xml" push="1" pushdistance="60" pushduration="0.1" pushEaseType="1" />
-			</attack>
-		</motion>
-	</level>
-	<level value="10">
-		<beginCondition probability="1" cooldownTime="0.65">
-			<stat hp="1" />
-			<weapon lh="0" rh="31" />
-		</beginCondition>
-		<changeSkill originSkillID="10700031" originSkillLevel="10" />
-		<autoTargeting autoTargetingMaxDegree="90" />
-		<push back="200" />
-		<consume>
-			<stat sp="26" />
-		</consume>
-		<combo comboOriginSkill="10700031" inputSkill="" outputSkill="" />
-		<conditionSkill level="1" skillID="10700002" skillTarget="1">
-			<beginCondition probability="1" allowBattleRidingState="1" />
-		</conditionSkill>
-		<conditionSkill level="10" skillID="10700031" skillTarget="1">
-			<beginCondition probability="1" allowBattleRidingState="1" />
-		</conditionSkill>
-		<motion>
-			<motionProperty sequenceName="Thief_BladeDance_B" selfInputCombo="selfinputcombo" strTagEffects="e0=CH/Skill/Thief/Eff_Thief_BladeDanceEX_Cast_01.xml,e1=CH/Skill/Thief/Eff_Thief_BladeDanceEX_Cast_02.xml" />
-			<attack point="p0" pointGroupID="10700032" targetCount="8" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="1.5" unrideOnHit="1">
-				<rangeProperty rangeType="cylinder" distance="250" height="150" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty hand="2" rate="0.69" effectHit="CH/Weapon/Dagger/Eff_Dagger_Hit_01.xml" />
-			</attack>
-			<attack point="p1" pointGroupID="107000321" targetCount="8" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="1.5" unrideOnHit="1">
-				<rangeProperty rangeType="cylinder" distance="250" height="150" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty hand="2" rate="0.69" effectHit="CH/Weapon/Dagger/Eff_Dagger_Hit_01.xml" />
-			</attack>
-			<attack point="p2" pointGroupID="107000322" targetCount="8" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="1.5" unrideOnHit="1">
-				<pauseProperty pauseShakeDuration="0.15" pauseAmp="10" />
-				<rangeProperty rangeType="cylinder" distance="250" height="150" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty hand="2" rate="0.83" effectHit="CH/Weapon/Dagger/Eff_Dagger_Hit_01.xml" push="1" pushdistance="60" pushduration="0.1" pushEaseType="1" />
-			</attack>
-		</motion>
-	</level>
-	<level value="11">
-		<beginCondition probability="1" cooldownTime="0.65">
-			<stat hp="1" />
-			<weapon lh="0" rh="31" />
-		</beginCondition>
-		<changeSkill originSkillID="10700031" originSkillLevel="11" />
-		<autoTargeting autoTargetingMaxDegree="90" />
-		<push back="200" />
-		<consume>
-			<stat sp="26" />
-		</consume>
-		<combo comboOriginSkill="10700031" inputSkill="" outputSkill="" />
-		<conditionSkill level="1" skillID="10700002" skillTarget="1">
-			<beginCondition probability="1" allowBattleRidingState="1" />
-		</conditionSkill>
-		<conditionSkill level="11" skillID="10700031" skillTarget="1">
-			<beginCondition probability="1" allowBattleRidingState="1" />
-		</conditionSkill>
-		<motion>
-			<motionProperty sequenceName="Thief_BladeDance_B" selfInputCombo="selfinputcombo" strTagEffects="e0=CH/Skill/Thief/Eff_Thief_BladeDanceEX_Cast_01.xml,e1=CH/Skill/Thief/Eff_Thief_BladeDanceEX_Cast_02.xml" />
-			<attack point="p0" pointGroupID="10700032" targetCount="8" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="1.5" unrideOnHit="1">
-				<rangeProperty rangeType="cylinder" distance="250" height="150" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty hand="2" rate="0.72" effectHit="CH/Weapon/Dagger/Eff_Dagger_Hit_01.xml" />
-			</attack>
-			<attack point="p1" pointGroupID="107000321" targetCount="8" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="1.5" unrideOnHit="1">
-				<rangeProperty rangeType="cylinder" distance="250" height="150" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty hand="2" rate="0.72" effectHit="CH/Weapon/Dagger/Eff_Dagger_Hit_01.xml" />
-			</attack>
-			<attack point="p2" pointGroupID="107000322" targetCount="8" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="1.5" unrideOnHit="1">
-				<pauseProperty pauseShakeDuration="0.15" pauseAmp="10" />
-				<rangeProperty rangeType="cylinder" distance="250" height="150" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty hand="2" rate="0.86" effectHit="CH/Weapon/Dagger/Eff_Dagger_Hit_01.xml" push="1" pushdistance="60" pushduration="0.1" pushEaseType="1" />
-			</attack>
-		</motion>
-	</level>
-	<level value="12">
-		<beginCondition probability="1" cooldownTime="0.65">
-			<stat hp="1" />
-			<weapon lh="0" rh="31" />
-		</beginCondition>
-		<changeSkill originSkillID="10700031" originSkillLevel="12" />
-		<autoTargeting autoTargetingMaxDegree="90" />
-		<push back="200" />
-		<consume>
-			<stat sp="26" />
-		</consume>
-		<combo comboOriginSkill="10700031" inputSkill="" outputSkill="" />
-		<conditionSkill level="1" skillID="10700002" skillTarget="1">
-			<beginCondition probability="1" allowBattleRidingState="1" />
-		</conditionSkill>
-		<conditionSkill level="12" skillID="10700031" skillTarget="1">
-			<beginCondition probability="1" allowBattleRidingState="1" />
-		</conditionSkill>
-		<motion>
-			<motionProperty sequenceName="Thief_BladeDance_B" selfInputCombo="selfinputcombo" strTagEffects="e0=CH/Skill/Thief/Eff_Thief_BladeDanceEX_Cast_01.xml,e1=CH/Skill/Thief/Eff_Thief_BladeDanceEX_Cast_02.xml" />
-			<attack point="p0" pointGroupID="10700032" targetCount="8" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="1.5" unrideOnHit="1">
-				<rangeProperty rangeType="cylinder" distance="250" height="150" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty hand="2" rate="0.75" effectHit="CH/Weapon/Dagger/Eff_Dagger_Hit_01.xml" />
-			</attack>
-			<attack point="p1" pointGroupID="107000321" targetCount="8" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="1.5" unrideOnHit="1">
-				<rangeProperty rangeType="cylinder" distance="250" height="150" applyTarget="1" />
-				<arrowProperty nonTarget="1" />
-				<damageProperty hand="2" rate="0.75" effectHit="CH/Weapon/Dagger/Eff_Dagger_Hit_01.xml" />
-			</attack>
-			<attack point="p2" pointGroupID="107000322" targetCount="8" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="1.5" unrideOnHit="1">
-				<pauseProperty pauseShakeDuration="0.15" pauseAmp="10" />
-				<rangeProperty rangeType="cylinder" distance="250" height="150" applyTarget="1" />
 				<arrowProperty nonTarget="1" />
 				<damageProperty hand="2" rate="0.89" effectHit="CH/Weapon/Dagger/Eff_Dagger_Hit_01.xml" push="1" pushdistance="60" pushduration="0.1" pushEaseType="1" />
 			</attack>

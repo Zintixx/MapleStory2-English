@@ -23,6 +23,23 @@
 			</attack>
 		</motion>
 	</level>
+	<level value="1">
+		<beginCondition probability="1" cooldownTime="0.4">
+			<stat hp="1" />
+			<weapon lh="0" rh="56" />
+		</beginCondition>
+		<autoTargeting autoTargetingMaxDegree="90" />
+		<push back="150" />
+		<combo inputSkill="11100011" outputSkill="11100012" />
+		<motion>
+			<motionProperty sequenceName="SoulBinder_ChainSphere_01_A" strTagEffects="e0=CH/Skill/SoulBinder/Eff_SoulBinder_ChainSphere_Cast_01.xml" keyMove="25" />
+			<attack point="p0" targetCount="1" magicPathID="11100011" attacktype="2" hitImmuneBreak="1" brokenOffence="2" brokenForce="1.2" unrideOnHit="1">
+				<rangeProperty rangeType="box" distance="750" height="150" width="250" applyTarget="1" />
+				<arrowProperty rayPhysxTest="1" nonTarget="1" collision="50.000000,25.000000,25.000000" collisionAdd="0.000000,25.000000,25.000000" effect="CH/Skill/SoulBinder/Eff_SoulBinder_ChainSphere_Ball_01.xml" effectRemain="CH/Skill/SoulBinder/Eff_SoulBinder_ChainSphere_Remain_01.xml" effectDestroy="CH/Skill/SoulBinder/Eff_SoulBinder_ChainSphere_Remain_01.xml" />
+				<damageProperty rate="0.38" effectHit="CH/Weapon/Orb/Eff_Orb_Hit_01.xml" attackMaterial="1" />
+			</attack>
+		</motion>
+	</level>
 	<level value="2" feature="CharacterBalance_01">
 		<beginCondition probability="1" cooldownTime="0.4">
 			<stat hp="1" />
@@ -38,203 +55,6 @@
 				<rangeProperty rangeType="box" distance="750" height="150" width="250" applyTarget="1" />
 				<arrowProperty rayPhysxTest="1" nonTarget="1" collision="50.000000,25.000000,25.000000" collisionAdd="0.000000,25.000000,25.000000" effect="CH/Skill/SoulBinder/Eff_SoulBinder_ChainSphere_Ball_01.xml" effectRemain="CH/Skill/SoulBinder/Eff_SoulBinder_ChainSphere_Remain_01.xml" effectDestroy="CH/Skill/SoulBinder/Eff_SoulBinder_ChainSphere_Remain_01.xml" />
 				<damageProperty rate="0.44" effectHit="CH/Weapon/Orb/Eff_Orb_Hit_01.xml" attackMaterial="1" />
-			</attack>
-		</motion>
-	</level>
-	<level value="3" feature="CharacterBalance_01">
-		<beginCondition probability="1" cooldownTime="0.4">
-			<stat hp="1" />
-			<weapon lh="0" rh="56" />
-		</beginCondition>
-		<autoTargeting autoTargetingMaxDegree="90" />
-		<push back="150" />
-		<upgrade level="12" />
-		<combo inputSkill="11100011" outputSkill="11100012" />
-		<motion>
-			<motionProperty sequenceName="SoulBinder_ChainSphere_01_A" strTagEffects="e0=CH/Skill/SoulBinder/Eff_SoulBinder_ChainSphere_Cast_01.xml" keyMove="25" />
-			<attack point="p0" targetCount="1" magicPathID="11100011" attacktype="2" hitImmuneBreak="1" brokenOffence="2" brokenForce="1.2" unrideOnHit="1">
-				<rangeProperty rangeType="box" distance="750" height="150" width="250" applyTarget="1" />
-				<arrowProperty rayPhysxTest="1" nonTarget="1" collision="50.000000,25.000000,25.000000" collisionAdd="0.000000,25.000000,25.000000" effect="CH/Skill/SoulBinder/Eff_SoulBinder_ChainSphere_Ball_01.xml" effectRemain="CH/Skill/SoulBinder/Eff_SoulBinder_ChainSphere_Remain_01.xml" effectDestroy="CH/Skill/SoulBinder/Eff_SoulBinder_ChainSphere_Remain_01.xml" />
-				<damageProperty rate="0.47" effectHit="CH/Weapon/Orb/Eff_Orb_Hit_01.xml" attackMaterial="1" />
-			</attack>
-		</motion>
-	</level>
-	<level value="4" feature="CharacterBalance_01">
-		<beginCondition probability="1" cooldownTime="0.4">
-			<stat hp="1" />
-			<weapon lh="0" rh="56" />
-		</beginCondition>
-		<autoTargeting autoTargetingMaxDegree="90" />
-		<push back="150" />
-		<upgrade level="14" />
-		<combo inputSkill="11100011" outputSkill="11100012" />
-		<motion>
-			<motionProperty sequenceName="SoulBinder_ChainSphere_01_A" strTagEffects="e0=CH/Skill/SoulBinder/Eff_SoulBinder_ChainSphere_Cast_01.xml" keyMove="25" />
-			<attack point="p0" targetCount="1" magicPathID="11100011" attacktype="2" hitImmuneBreak="1" brokenOffence="2" brokenForce="1.2" unrideOnHit="1">
-				<rangeProperty rangeType="box" distance="750" height="150" width="250" applyTarget="1" />
-				<arrowProperty rayPhysxTest="1" nonTarget="1" collision="50.000000,25.000000,25.000000" collisionAdd="0.000000,25.000000,25.000000" effect="CH/Skill/SoulBinder/Eff_SoulBinder_ChainSphere_Ball_01.xml" effectRemain="CH/Skill/SoulBinder/Eff_SoulBinder_ChainSphere_Remain_01.xml" effectDestroy="CH/Skill/SoulBinder/Eff_SoulBinder_ChainSphere_Remain_01.xml" />
-				<damageProperty rate="0.5" effectHit="CH/Weapon/Orb/Eff_Orb_Hit_01.xml" attackMaterial="1" />
-			</attack>
-		</motion>
-	</level>
-	<level value="5" feature="CharacterBalance_01">
-		<beginCondition probability="1" cooldownTime="0.4">
-			<stat hp="1" />
-			<weapon lh="0" rh="56" />
-		</beginCondition>
-		<autoTargeting autoTargetingMaxDegree="90" />
-		<push back="150" />
-		<upgrade level="16" />
-		<combo inputSkill="11100011" outputSkill="11100012" />
-		<motion>
-			<motionProperty sequenceName="SoulBinder_ChainSphere_01_A" strTagEffects="e0=CH/Skill/SoulBinder/Eff_SoulBinder_ChainSphere_Cast_01.xml" keyMove="25" />
-			<attack point="p0" targetCount="1" magicPathID="11100011" attacktype="2" hitImmuneBreak="1" brokenOffence="2" brokenForce="1.2" unrideOnHit="1">
-				<rangeProperty rangeType="box" distance="750" height="150" width="250" applyTarget="1" />
-				<arrowProperty rayPhysxTest="1" nonTarget="1" collision="50.000000,25.000000,25.000000" collisionAdd="0.000000,25.000000,25.000000" effect="CH/Skill/SoulBinder/Eff_SoulBinder_ChainSphere_Ball_01.xml" effectRemain="CH/Skill/SoulBinder/Eff_SoulBinder_ChainSphere_Remain_01.xml" effectDestroy="CH/Skill/SoulBinder/Eff_SoulBinder_ChainSphere_Remain_01.xml" />
-				<damageProperty rate="0.53" effectHit="CH/Weapon/Orb/Eff_Orb_Hit_01.xml" attackMaterial="1" />
-			</attack>
-		</motion>
-	</level>
-	<level value="6" feature="CharacterBalance_01">
-		<beginCondition probability="1" cooldownTime="0.4">
-			<stat hp="1" />
-			<weapon lh="0" rh="56" />
-		</beginCondition>
-		<autoTargeting autoTargetingMaxDegree="90" />
-		<push back="150" />
-		<upgrade level="18" />
-		<combo inputSkill="11100011" outputSkill="11100012" />
-		<motion>
-			<motionProperty sequenceName="SoulBinder_ChainSphere_01_A" strTagEffects="e0=CH/Skill/SoulBinder/Eff_SoulBinder_ChainSphere_Cast_01.xml" keyMove="25" />
-			<attack point="p0" targetCount="1" magicPathID="11100011" attacktype="2" hitImmuneBreak="1" brokenOffence="2" brokenForce="1.2" unrideOnHit="1">
-				<rangeProperty rangeType="box" distance="750" height="150" width="250" applyTarget="1" />
-				<arrowProperty rayPhysxTest="1" nonTarget="1" collision="50.000000,25.000000,25.000000" collisionAdd="0.000000,25.000000,25.000000" effect="CH/Skill/SoulBinder/Eff_SoulBinder_ChainSphere_Ball_01.xml" effectRemain="CH/Skill/SoulBinder/Eff_SoulBinder_ChainSphere_Remain_01.xml" effectDestroy="CH/Skill/SoulBinder/Eff_SoulBinder_ChainSphere_Remain_01.xml" />
-				<damageProperty rate="0.56" effectHit="CH/Weapon/Orb/Eff_Orb_Hit_01.xml" attackMaterial="1" />
-			</attack>
-		</motion>
-	</level>
-	<level value="7" feature="CharacterBalance_01">
-		<beginCondition probability="1" cooldownTime="0.4">
-			<stat hp="1" />
-			<weapon lh="0" rh="56" />
-		</beginCondition>
-		<autoTargeting autoTargetingMaxDegree="90" />
-		<push back="150" />
-		<upgrade level="20" />
-		<combo inputSkill="11100011" outputSkill="11100012" />
-		<motion>
-			<motionProperty sequenceName="SoulBinder_ChainSphere_01_A" strTagEffects="e0=CH/Skill/SoulBinder/Eff_SoulBinder_ChainSphere_Cast_01.xml" keyMove="25" />
-			<attack point="p0" targetCount="1" magicPathID="11100011" attacktype="2" hitImmuneBreak="1" brokenOffence="2" brokenForce="1.2" unrideOnHit="1">
-				<rangeProperty rangeType="box" distance="750" height="150" width="250" applyTarget="1" />
-				<arrowProperty rayPhysxTest="1" nonTarget="1" collision="50.000000,25.000000,25.000000" collisionAdd="0.000000,25.000000,25.000000" effect="CH/Skill/SoulBinder/Eff_SoulBinder_ChainSphere_Ball_01.xml" effectRemain="CH/Skill/SoulBinder/Eff_SoulBinder_ChainSphere_Remain_01.xml" effectDestroy="CH/Skill/SoulBinder/Eff_SoulBinder_ChainSphere_Remain_01.xml" />
-				<damageProperty rate="0.59" effectHit="CH/Weapon/Orb/Eff_Orb_Hit_01.xml" attackMaterial="1" />
-			</attack>
-		</motion>
-	</level>
-	<level value="8" feature="CharacterBalance_01">
-		<beginCondition probability="1" cooldownTime="0.4">
-			<stat hp="1" />
-			<weapon lh="0" rh="56" />
-		</beginCondition>
-		<autoTargeting autoTargetingMaxDegree="90" />
-		<push back="150" />
-		<upgrade level="22" />
-		<combo inputSkill="11100011" outputSkill="11100012" />
-		<motion>
-			<motionProperty sequenceName="SoulBinder_ChainSphere_01_A" strTagEffects="e0=CH/Skill/SoulBinder/Eff_SoulBinder_ChainSphere_Cast_01.xml" keyMove="25" />
-			<attack point="p0" targetCount="1" magicPathID="11100011" attacktype="2" hitImmuneBreak="1" brokenOffence="2" brokenForce="1.2" unrideOnHit="1">
-				<rangeProperty rangeType="box" distance="750" height="150" width="250" applyTarget="1" />
-				<arrowProperty rayPhysxTest="1" nonTarget="1" collision="50.000000,25.000000,25.000000" collisionAdd="0.000000,25.000000,25.000000" effect="CH/Skill/SoulBinder/Eff_SoulBinder_ChainSphere_Ball_01.xml" effectRemain="CH/Skill/SoulBinder/Eff_SoulBinder_ChainSphere_Remain_01.xml" effectDestroy="CH/Skill/SoulBinder/Eff_SoulBinder_ChainSphere_Remain_01.xml" />
-				<damageProperty rate="0.62" effectHit="CH/Weapon/Orb/Eff_Orb_Hit_01.xml" attackMaterial="1" />
-			</attack>
-		</motion>
-	</level>
-	<level value="9" feature="CharacterBalance_01">
-		<beginCondition probability="1" cooldownTime="0.4">
-			<stat hp="1" />
-			<weapon lh="0" rh="56" />
-		</beginCondition>
-		<autoTargeting autoTargetingMaxDegree="90" />
-		<push back="150" />
-		<upgrade level="24" />
-		<combo inputSkill="11100011" outputSkill="11100012" />
-		<motion>
-			<motionProperty sequenceName="SoulBinder_ChainSphere_01_A" strTagEffects="e0=CH/Skill/SoulBinder/Eff_SoulBinder_ChainSphere_Cast_01.xml" keyMove="25" />
-			<attack point="p0" targetCount="1" magicPathID="11100011" attacktype="2" hitImmuneBreak="1" brokenOffence="2" brokenForce="1.2" unrideOnHit="1">
-				<rangeProperty rangeType="box" distance="750" height="150" width="250" applyTarget="1" />
-				<arrowProperty rayPhysxTest="1" nonTarget="1" collision="50.000000,25.000000,25.000000" collisionAdd="0.000000,25.000000,25.000000" effect="CH/Skill/SoulBinder/Eff_SoulBinder_ChainSphere_Ball_01.xml" effectRemain="CH/Skill/SoulBinder/Eff_SoulBinder_ChainSphere_Remain_01.xml" effectDestroy="CH/Skill/SoulBinder/Eff_SoulBinder_ChainSphere_Remain_01.xml" />
-				<damageProperty rate="0.65" effectHit="CH/Weapon/Orb/Eff_Orb_Hit_01.xml" attackMaterial="1" />
-			</attack>
-		</motion>
-	</level>
-	<level value="10" feature="CharacterBalance_01">
-		<beginCondition probability="1" cooldownTime="0.4">
-			<stat hp="1" />
-			<weapon lh="0" rh="56" />
-		</beginCondition>
-		<autoTargeting autoTargetingMaxDegree="90" />
-		<push back="150" />
-		<upgrade level="26" />
-		<combo inputSkill="11100011" outputSkill="11100012" />
-		<motion>
-			<motionProperty sequenceName="SoulBinder_ChainSphere_01_A" strTagEffects="e0=CH/Skill/SoulBinder/Eff_SoulBinder_ChainSphere_Cast_01.xml" keyMove="25" />
-			<attack point="p0" targetCount="1" magicPathID="11100011" attacktype="2" hitImmuneBreak="1" brokenOffence="2" brokenForce="1.2" unrideOnHit="1">
-				<rangeProperty rangeType="box" distance="750" height="150" width="250" applyTarget="1" />
-				<arrowProperty rayPhysxTest="1" nonTarget="1" collision="50.000000,25.000000,25.000000" collisionAdd="0.000000,25.000000,25.000000" effect="CH/Skill/SoulBinder/Eff_SoulBinder_ChainSphere_Ball_01.xml" effectRemain="CH/Skill/SoulBinder/Eff_SoulBinder_ChainSphere_Remain_01.xml" effectDestroy="CH/Skill/SoulBinder/Eff_SoulBinder_ChainSphere_Remain_01.xml" />
-				<damageProperty rate="0.68" effectHit="CH/Weapon/Orb/Eff_Orb_Hit_01.xml" attackMaterial="1" />
-			</attack>
-		</motion>
-	</level>
-	<level value="11" feature="CharacterBalance_01">
-		<beginCondition probability="1" cooldownTime="0.4">
-			<stat hp="1" />
-			<weapon lh="0" rh="56" />
-		</beginCondition>
-		<autoTargeting autoTargetingMaxDegree="90" />
-		<push back="150" />
-		<upgrade level="28" />
-		<combo inputSkill="11100011" outputSkill="11100012" />
-		<motion>
-			<motionProperty sequenceName="SoulBinder_ChainSphere_01_A" strTagEffects="e0=CH/Skill/SoulBinder/Eff_SoulBinder_ChainSphere_Cast_01.xml" keyMove="25" />
-			<attack point="p0" targetCount="1" magicPathID="11100011" attacktype="2" hitImmuneBreak="1" brokenOffence="2" brokenForce="1.2" unrideOnHit="1">
-				<rangeProperty rangeType="box" distance="750" height="150" width="250" applyTarget="1" />
-				<arrowProperty rayPhysxTest="1" nonTarget="1" collision="50.000000,25.000000,25.000000" collisionAdd="0.000000,25.000000,25.000000" effect="CH/Skill/SoulBinder/Eff_SoulBinder_ChainSphere_Ball_01.xml" effectRemain="CH/Skill/SoulBinder/Eff_SoulBinder_ChainSphere_Remain_01.xml" effectDestroy="CH/Skill/SoulBinder/Eff_SoulBinder_ChainSphere_Remain_01.xml" />
-				<damageProperty rate="0.71" effectHit="CH/Weapon/Orb/Eff_Orb_Hit_01.xml" attackMaterial="1" />
-			</attack>
-		</motion>
-	</level>
-	<level value="12" feature="CharacterBalance_01">
-		<beginCondition probability="1" cooldownTime="0.4">
-			<stat hp="1" />
-			<weapon lh="0" rh="56" />
-		</beginCondition>
-		<autoTargeting autoTargetingMaxDegree="90" />
-		<push back="150" />
-		<upgrade level="30" />
-		<combo inputSkill="11100011" outputSkill="11100012" />
-		<motion>
-			<motionProperty sequenceName="SoulBinder_ChainSphere_01_A" strTagEffects="e0=CH/Skill/SoulBinder/Eff_SoulBinder_ChainSphere_Cast_01.xml" keyMove="25" />
-			<attack point="p0" targetCount="1" magicPathID="11100011" attacktype="2" hitImmuneBreak="1" brokenOffence="2" brokenForce="1.2" unrideOnHit="1">
-				<rangeProperty rangeType="box" distance="750" height="150" width="250" applyTarget="1" />
-				<arrowProperty rayPhysxTest="1" nonTarget="1" collision="50.000000,25.000000,25.000000" collisionAdd="0.000000,25.000000,25.000000" effect="CH/Skill/SoulBinder/Eff_SoulBinder_ChainSphere_Ball_01.xml" effectRemain="CH/Skill/SoulBinder/Eff_SoulBinder_ChainSphere_Remain_01.xml" effectDestroy="CH/Skill/SoulBinder/Eff_SoulBinder_ChainSphere_Remain_01.xml" />
-				<damageProperty rate="0.74" effectHit="CH/Weapon/Orb/Eff_Orb_Hit_01.xml" attackMaterial="1" />
-			</attack>
-		</motion>
-	</level>
-	<level value="1">
-		<beginCondition probability="1" cooldownTime="0.4">
-			<stat hp="1" />
-			<weapon lh="0" rh="56" />
-		</beginCondition>
-		<autoTargeting autoTargetingMaxDegree="90" />
-		<push back="150" />
-		<combo inputSkill="11100011" outputSkill="11100012" />
-		<motion>
-			<motionProperty sequenceName="SoulBinder_ChainSphere_01_A" strTagEffects="e0=CH/Skill/SoulBinder/Eff_SoulBinder_ChainSphere_Cast_01.xml" keyMove="25" />
-			<attack point="p0" targetCount="1" magicPathID="11100011" attacktype="2" hitImmuneBreak="1" brokenOffence="2" brokenForce="1.2" unrideOnHit="1">
-				<rangeProperty rangeType="box" distance="750" height="150" width="250" applyTarget="1" />
-				<arrowProperty rayPhysxTest="1" nonTarget="1" collision="50.000000,25.000000,25.000000" collisionAdd="0.000000,25.000000,25.000000" effect="CH/Skill/SoulBinder/Eff_SoulBinder_ChainSphere_Ball_01.xml" effectRemain="CH/Skill/SoulBinder/Eff_SoulBinder_ChainSphere_Remain_01.xml" effectDestroy="CH/Skill/SoulBinder/Eff_SoulBinder_ChainSphere_Remain_01.xml" />
-				<damageProperty rate="0.38" effectHit="CH/Weapon/Orb/Eff_Orb_Hit_01.xml" attackMaterial="1" />
 			</attack>
 		</motion>
 	</level>
@@ -256,6 +76,24 @@
 			</attack>
 		</motion>
 	</level>
+	<level value="3" feature="CharacterBalance_01">
+		<beginCondition probability="1" cooldownTime="0.4">
+			<stat hp="1" />
+			<weapon lh="0" rh="56" />
+		</beginCondition>
+		<autoTargeting autoTargetingMaxDegree="90" />
+		<push back="150" />
+		<upgrade level="12" />
+		<combo inputSkill="11100011" outputSkill="11100012" />
+		<motion>
+			<motionProperty sequenceName="SoulBinder_ChainSphere_01_A" strTagEffects="e0=CH/Skill/SoulBinder/Eff_SoulBinder_ChainSphere_Cast_01.xml" keyMove="25" />
+			<attack point="p0" targetCount="1" magicPathID="11100011" attacktype="2" hitImmuneBreak="1" brokenOffence="2" brokenForce="1.2" unrideOnHit="1">
+				<rangeProperty rangeType="box" distance="750" height="150" width="250" applyTarget="1" />
+				<arrowProperty rayPhysxTest="1" nonTarget="1" collision="50.000000,25.000000,25.000000" collisionAdd="0.000000,25.000000,25.000000" effect="CH/Skill/SoulBinder/Eff_SoulBinder_ChainSphere_Ball_01.xml" effectRemain="CH/Skill/SoulBinder/Eff_SoulBinder_ChainSphere_Remain_01.xml" effectDestroy="CH/Skill/SoulBinder/Eff_SoulBinder_ChainSphere_Remain_01.xml" />
+				<damageProperty rate="0.47" effectHit="CH/Weapon/Orb/Eff_Orb_Hit_01.xml" attackMaterial="1" />
+			</attack>
+		</motion>
+	</level>
 	<level value="3">
 		<beginCondition probability="1" cooldownTime="0.4">
 			<stat hp="1" />
@@ -271,6 +109,24 @@
 				<rangeProperty rangeType="box" distance="750" height="150" width="250" applyTarget="1" />
 				<arrowProperty rayPhysxTest="1" nonTarget="1" collision="50.000000,25.000000,25.000000" collisionAdd="0.000000,25.000000,25.000000" effect="CH/Skill/SoulBinder/Eff_SoulBinder_ChainSphere_Ball_01.xml" effectRemain="CH/Skill/SoulBinder/Eff_SoulBinder_ChainSphere_Remain_01.xml" effectDestroy="CH/Skill/SoulBinder/Eff_SoulBinder_ChainSphere_Remain_01.xml" />
 				<damageProperty rate="0.44" effectHit="CH/Weapon/Orb/Eff_Orb_Hit_01.xml" attackMaterial="1" />
+			</attack>
+		</motion>
+	</level>
+	<level value="4" feature="CharacterBalance_01">
+		<beginCondition probability="1" cooldownTime="0.4">
+			<stat hp="1" />
+			<weapon lh="0" rh="56" />
+		</beginCondition>
+		<autoTargeting autoTargetingMaxDegree="90" />
+		<push back="150" />
+		<upgrade level="14" />
+		<combo inputSkill="11100011" outputSkill="11100012" />
+		<motion>
+			<motionProperty sequenceName="SoulBinder_ChainSphere_01_A" strTagEffects="e0=CH/Skill/SoulBinder/Eff_SoulBinder_ChainSphere_Cast_01.xml" keyMove="25" />
+			<attack point="p0" targetCount="1" magicPathID="11100011" attacktype="2" hitImmuneBreak="1" brokenOffence="2" brokenForce="1.2" unrideOnHit="1">
+				<rangeProperty rangeType="box" distance="750" height="150" width="250" applyTarget="1" />
+				<arrowProperty rayPhysxTest="1" nonTarget="1" collision="50.000000,25.000000,25.000000" collisionAdd="0.000000,25.000000,25.000000" effect="CH/Skill/SoulBinder/Eff_SoulBinder_ChainSphere_Ball_01.xml" effectRemain="CH/Skill/SoulBinder/Eff_SoulBinder_ChainSphere_Remain_01.xml" effectDestroy="CH/Skill/SoulBinder/Eff_SoulBinder_ChainSphere_Remain_01.xml" />
+				<damageProperty rate="0.5" effectHit="CH/Weapon/Orb/Eff_Orb_Hit_01.xml" attackMaterial="1" />
 			</attack>
 		</motion>
 	</level>
@@ -292,6 +148,24 @@
 			</attack>
 		</motion>
 	</level>
+	<level value="5" feature="CharacterBalance_01">
+		<beginCondition probability="1" cooldownTime="0.4">
+			<stat hp="1" />
+			<weapon lh="0" rh="56" />
+		</beginCondition>
+		<autoTargeting autoTargetingMaxDegree="90" />
+		<push back="150" />
+		<upgrade level="16" />
+		<combo inputSkill="11100011" outputSkill="11100012" />
+		<motion>
+			<motionProperty sequenceName="SoulBinder_ChainSphere_01_A" strTagEffects="e0=CH/Skill/SoulBinder/Eff_SoulBinder_ChainSphere_Cast_01.xml" keyMove="25" />
+			<attack point="p0" targetCount="1" magicPathID="11100011" attacktype="2" hitImmuneBreak="1" brokenOffence="2" brokenForce="1.2" unrideOnHit="1">
+				<rangeProperty rangeType="box" distance="750" height="150" width="250" applyTarget="1" />
+				<arrowProperty rayPhysxTest="1" nonTarget="1" collision="50.000000,25.000000,25.000000" collisionAdd="0.000000,25.000000,25.000000" effect="CH/Skill/SoulBinder/Eff_SoulBinder_ChainSphere_Ball_01.xml" effectRemain="CH/Skill/SoulBinder/Eff_SoulBinder_ChainSphere_Remain_01.xml" effectDestroy="CH/Skill/SoulBinder/Eff_SoulBinder_ChainSphere_Remain_01.xml" />
+				<damageProperty rate="0.53" effectHit="CH/Weapon/Orb/Eff_Orb_Hit_01.xml" attackMaterial="1" />
+			</attack>
+		</motion>
+	</level>
 	<level value="5">
 		<beginCondition probability="1" cooldownTime="0.4">
 			<stat hp="1" />
@@ -307,6 +181,24 @@
 				<rangeProperty rangeType="box" distance="750" height="150" width="250" applyTarget="1" />
 				<arrowProperty rayPhysxTest="1" nonTarget="1" collision="50.000000,25.000000,25.000000" collisionAdd="0.000000,25.000000,25.000000" effect="CH/Skill/SoulBinder/Eff_SoulBinder_ChainSphere_Ball_01.xml" effectRemain="CH/Skill/SoulBinder/Eff_SoulBinder_ChainSphere_Remain_01.xml" effectDestroy="CH/Skill/SoulBinder/Eff_SoulBinder_ChainSphere_Remain_01.xml" />
 				<damageProperty rate="0.5" effectHit="CH/Weapon/Orb/Eff_Orb_Hit_01.xml" attackMaterial="1" />
+			</attack>
+		</motion>
+	</level>
+	<level value="6" feature="CharacterBalance_01">
+		<beginCondition probability="1" cooldownTime="0.4">
+			<stat hp="1" />
+			<weapon lh="0" rh="56" />
+		</beginCondition>
+		<autoTargeting autoTargetingMaxDegree="90" />
+		<push back="150" />
+		<upgrade level="18" />
+		<combo inputSkill="11100011" outputSkill="11100012" />
+		<motion>
+			<motionProperty sequenceName="SoulBinder_ChainSphere_01_A" strTagEffects="e0=CH/Skill/SoulBinder/Eff_SoulBinder_ChainSphere_Cast_01.xml" keyMove="25" />
+			<attack point="p0" targetCount="1" magicPathID="11100011" attacktype="2" hitImmuneBreak="1" brokenOffence="2" brokenForce="1.2" unrideOnHit="1">
+				<rangeProperty rangeType="box" distance="750" height="150" width="250" applyTarget="1" />
+				<arrowProperty rayPhysxTest="1" nonTarget="1" collision="50.000000,25.000000,25.000000" collisionAdd="0.000000,25.000000,25.000000" effect="CH/Skill/SoulBinder/Eff_SoulBinder_ChainSphere_Ball_01.xml" effectRemain="CH/Skill/SoulBinder/Eff_SoulBinder_ChainSphere_Remain_01.xml" effectDestroy="CH/Skill/SoulBinder/Eff_SoulBinder_ChainSphere_Remain_01.xml" />
+				<damageProperty rate="0.56" effectHit="CH/Weapon/Orb/Eff_Orb_Hit_01.xml" attackMaterial="1" />
 			</attack>
 		</motion>
 	</level>
@@ -328,6 +220,24 @@
 			</attack>
 		</motion>
 	</level>
+	<level value="7" feature="CharacterBalance_01">
+		<beginCondition probability="1" cooldownTime="0.4">
+			<stat hp="1" />
+			<weapon lh="0" rh="56" />
+		</beginCondition>
+		<autoTargeting autoTargetingMaxDegree="90" />
+		<push back="150" />
+		<upgrade level="20" />
+		<combo inputSkill="11100011" outputSkill="11100012" />
+		<motion>
+			<motionProperty sequenceName="SoulBinder_ChainSphere_01_A" strTagEffects="e0=CH/Skill/SoulBinder/Eff_SoulBinder_ChainSphere_Cast_01.xml" keyMove="25" />
+			<attack point="p0" targetCount="1" magicPathID="11100011" attacktype="2" hitImmuneBreak="1" brokenOffence="2" brokenForce="1.2" unrideOnHit="1">
+				<rangeProperty rangeType="box" distance="750" height="150" width="250" applyTarget="1" />
+				<arrowProperty rayPhysxTest="1" nonTarget="1" collision="50.000000,25.000000,25.000000" collisionAdd="0.000000,25.000000,25.000000" effect="CH/Skill/SoulBinder/Eff_SoulBinder_ChainSphere_Ball_01.xml" effectRemain="CH/Skill/SoulBinder/Eff_SoulBinder_ChainSphere_Remain_01.xml" effectDestroy="CH/Skill/SoulBinder/Eff_SoulBinder_ChainSphere_Remain_01.xml" />
+				<damageProperty rate="0.59" effectHit="CH/Weapon/Orb/Eff_Orb_Hit_01.xml" attackMaterial="1" />
+			</attack>
+		</motion>
+	</level>
 	<level value="7">
 		<beginCondition probability="1" cooldownTime="0.4">
 			<stat hp="1" />
@@ -343,6 +253,24 @@
 				<rangeProperty rangeType="box" distance="750" height="150" width="250" applyTarget="1" />
 				<arrowProperty rayPhysxTest="1" nonTarget="1" collision="50.000000,25.000000,25.000000" collisionAdd="0.000000,25.000000,25.000000" effect="CH/Skill/SoulBinder/Eff_SoulBinder_ChainSphere_Ball_01.xml" effectRemain="CH/Skill/SoulBinder/Eff_SoulBinder_ChainSphere_Remain_01.xml" effectDestroy="CH/Skill/SoulBinder/Eff_SoulBinder_ChainSphere_Remain_01.xml" />
 				<damageProperty rate="0.56" effectHit="CH/Weapon/Orb/Eff_Orb_Hit_01.xml" attackMaterial="1" />
+			</attack>
+		</motion>
+	</level>
+	<level value="8" feature="CharacterBalance_01">
+		<beginCondition probability="1" cooldownTime="0.4">
+			<stat hp="1" />
+			<weapon lh="0" rh="56" />
+		</beginCondition>
+		<autoTargeting autoTargetingMaxDegree="90" />
+		<push back="150" />
+		<upgrade level="22" />
+		<combo inputSkill="11100011" outputSkill="11100012" />
+		<motion>
+			<motionProperty sequenceName="SoulBinder_ChainSphere_01_A" strTagEffects="e0=CH/Skill/SoulBinder/Eff_SoulBinder_ChainSphere_Cast_01.xml" keyMove="25" />
+			<attack point="p0" targetCount="1" magicPathID="11100011" attacktype="2" hitImmuneBreak="1" brokenOffence="2" brokenForce="1.2" unrideOnHit="1">
+				<rangeProperty rangeType="box" distance="750" height="150" width="250" applyTarget="1" />
+				<arrowProperty rayPhysxTest="1" nonTarget="1" collision="50.000000,25.000000,25.000000" collisionAdd="0.000000,25.000000,25.000000" effect="CH/Skill/SoulBinder/Eff_SoulBinder_ChainSphere_Ball_01.xml" effectRemain="CH/Skill/SoulBinder/Eff_SoulBinder_ChainSphere_Remain_01.xml" effectDestroy="CH/Skill/SoulBinder/Eff_SoulBinder_ChainSphere_Remain_01.xml" />
+				<damageProperty rate="0.62" effectHit="CH/Weapon/Orb/Eff_Orb_Hit_01.xml" attackMaterial="1" />
 			</attack>
 		</motion>
 	</level>
@@ -364,6 +292,24 @@
 			</attack>
 		</motion>
 	</level>
+	<level value="9" feature="CharacterBalance_01">
+		<beginCondition probability="1" cooldownTime="0.4">
+			<stat hp="1" />
+			<weapon lh="0" rh="56" />
+		</beginCondition>
+		<autoTargeting autoTargetingMaxDegree="90" />
+		<push back="150" />
+		<upgrade level="24" />
+		<combo inputSkill="11100011" outputSkill="11100012" />
+		<motion>
+			<motionProperty sequenceName="SoulBinder_ChainSphere_01_A" strTagEffects="e0=CH/Skill/SoulBinder/Eff_SoulBinder_ChainSphere_Cast_01.xml" keyMove="25" />
+			<attack point="p0" targetCount="1" magicPathID="11100011" attacktype="2" hitImmuneBreak="1" brokenOffence="2" brokenForce="1.2" unrideOnHit="1">
+				<rangeProperty rangeType="box" distance="750" height="150" width="250" applyTarget="1" />
+				<arrowProperty rayPhysxTest="1" nonTarget="1" collision="50.000000,25.000000,25.000000" collisionAdd="0.000000,25.000000,25.000000" effect="CH/Skill/SoulBinder/Eff_SoulBinder_ChainSphere_Ball_01.xml" effectRemain="CH/Skill/SoulBinder/Eff_SoulBinder_ChainSphere_Remain_01.xml" effectDestroy="CH/Skill/SoulBinder/Eff_SoulBinder_ChainSphere_Remain_01.xml" />
+				<damageProperty rate="0.65" effectHit="CH/Weapon/Orb/Eff_Orb_Hit_01.xml" attackMaterial="1" />
+			</attack>
+		</motion>
+	</level>
 	<level value="9">
 		<beginCondition probability="1" cooldownTime="0.4">
 			<stat hp="1" />
@@ -379,6 +325,24 @@
 				<rangeProperty rangeType="box" distance="750" height="150" width="250" applyTarget="1" />
 				<arrowProperty rayPhysxTest="1" nonTarget="1" collision="50.000000,25.000000,25.000000" collisionAdd="0.000000,25.000000,25.000000" effect="CH/Skill/SoulBinder/Eff_SoulBinder_ChainSphere_Ball_01.xml" effectRemain="CH/Skill/SoulBinder/Eff_SoulBinder_ChainSphere_Remain_01.xml" effectDestroy="CH/Skill/SoulBinder/Eff_SoulBinder_ChainSphere_Remain_01.xml" />
 				<damageProperty rate="0.62" effectHit="CH/Weapon/Orb/Eff_Orb_Hit_01.xml" attackMaterial="1" />
+			</attack>
+		</motion>
+	</level>
+	<level value="10" feature="CharacterBalance_01">
+		<beginCondition probability="1" cooldownTime="0.4">
+			<stat hp="1" />
+			<weapon lh="0" rh="56" />
+		</beginCondition>
+		<autoTargeting autoTargetingMaxDegree="90" />
+		<push back="150" />
+		<upgrade level="26" />
+		<combo inputSkill="11100011" outputSkill="11100012" />
+		<motion>
+			<motionProperty sequenceName="SoulBinder_ChainSphere_01_A" strTagEffects="e0=CH/Skill/SoulBinder/Eff_SoulBinder_ChainSphere_Cast_01.xml" keyMove="25" />
+			<attack point="p0" targetCount="1" magicPathID="11100011" attacktype="2" hitImmuneBreak="1" brokenOffence="2" brokenForce="1.2" unrideOnHit="1">
+				<rangeProperty rangeType="box" distance="750" height="150" width="250" applyTarget="1" />
+				<arrowProperty rayPhysxTest="1" nonTarget="1" collision="50.000000,25.000000,25.000000" collisionAdd="0.000000,25.000000,25.000000" effect="CH/Skill/SoulBinder/Eff_SoulBinder_ChainSphere_Ball_01.xml" effectRemain="CH/Skill/SoulBinder/Eff_SoulBinder_ChainSphere_Remain_01.xml" effectDestroy="CH/Skill/SoulBinder/Eff_SoulBinder_ChainSphere_Remain_01.xml" />
+				<damageProperty rate="0.68" effectHit="CH/Weapon/Orb/Eff_Orb_Hit_01.xml" attackMaterial="1" />
 			</attack>
 		</motion>
 	</level>
@@ -400,6 +364,24 @@
 			</attack>
 		</motion>
 	</level>
+	<level value="11" feature="CharacterBalance_01">
+		<beginCondition probability="1" cooldownTime="0.4">
+			<stat hp="1" />
+			<weapon lh="0" rh="56" />
+		</beginCondition>
+		<autoTargeting autoTargetingMaxDegree="90" />
+		<push back="150" />
+		<upgrade level="28" />
+		<combo inputSkill="11100011" outputSkill="11100012" />
+		<motion>
+			<motionProperty sequenceName="SoulBinder_ChainSphere_01_A" strTagEffects="e0=CH/Skill/SoulBinder/Eff_SoulBinder_ChainSphere_Cast_01.xml" keyMove="25" />
+			<attack point="p0" targetCount="1" magicPathID="11100011" attacktype="2" hitImmuneBreak="1" brokenOffence="2" brokenForce="1.2" unrideOnHit="1">
+				<rangeProperty rangeType="box" distance="750" height="150" width="250" applyTarget="1" />
+				<arrowProperty rayPhysxTest="1" nonTarget="1" collision="50.000000,25.000000,25.000000" collisionAdd="0.000000,25.000000,25.000000" effect="CH/Skill/SoulBinder/Eff_SoulBinder_ChainSphere_Ball_01.xml" effectRemain="CH/Skill/SoulBinder/Eff_SoulBinder_ChainSphere_Remain_01.xml" effectDestroy="CH/Skill/SoulBinder/Eff_SoulBinder_ChainSphere_Remain_01.xml" />
+				<damageProperty rate="0.71" effectHit="CH/Weapon/Orb/Eff_Orb_Hit_01.xml" attackMaterial="1" />
+			</attack>
+		</motion>
+	</level>
 	<level value="11">
 		<beginCondition probability="1" cooldownTime="0.4">
 			<stat hp="1" />
@@ -415,6 +397,24 @@
 				<rangeProperty rangeType="box" distance="750" height="150" width="250" applyTarget="1" />
 				<arrowProperty rayPhysxTest="1" nonTarget="1" collision="50.000000,25.000000,25.000000" collisionAdd="0.000000,25.000000,25.000000" effect="CH/Skill/SoulBinder/Eff_SoulBinder_ChainSphere_Ball_01.xml" effectRemain="CH/Skill/SoulBinder/Eff_SoulBinder_ChainSphere_Remain_01.xml" effectDestroy="CH/Skill/SoulBinder/Eff_SoulBinder_ChainSphere_Remain_01.xml" />
 				<damageProperty rate="0.68" effectHit="CH/Weapon/Orb/Eff_Orb_Hit_01.xml" attackMaterial="1" />
+			</attack>
+		</motion>
+	</level>
+	<level value="12" feature="CharacterBalance_01">
+		<beginCondition probability="1" cooldownTime="0.4">
+			<stat hp="1" />
+			<weapon lh="0" rh="56" />
+		</beginCondition>
+		<autoTargeting autoTargetingMaxDegree="90" />
+		<push back="150" />
+		<upgrade level="30" />
+		<combo inputSkill="11100011" outputSkill="11100012" />
+		<motion>
+			<motionProperty sequenceName="SoulBinder_ChainSphere_01_A" strTagEffects="e0=CH/Skill/SoulBinder/Eff_SoulBinder_ChainSphere_Cast_01.xml" keyMove="25" />
+			<attack point="p0" targetCount="1" magicPathID="11100011" attacktype="2" hitImmuneBreak="1" brokenOffence="2" brokenForce="1.2" unrideOnHit="1">
+				<rangeProperty rangeType="box" distance="750" height="150" width="250" applyTarget="1" />
+				<arrowProperty rayPhysxTest="1" nonTarget="1" collision="50.000000,25.000000,25.000000" collisionAdd="0.000000,25.000000,25.000000" effect="CH/Skill/SoulBinder/Eff_SoulBinder_ChainSphere_Ball_01.xml" effectRemain="CH/Skill/SoulBinder/Eff_SoulBinder_ChainSphere_Remain_01.xml" effectDestroy="CH/Skill/SoulBinder/Eff_SoulBinder_ChainSphere_Remain_01.xml" />
+				<damageProperty rate="0.74" effectHit="CH/Weapon/Orb/Eff_Orb_Hit_01.xml" attackMaterial="1" />
 			</attack>
 		</motion>
 	</level>

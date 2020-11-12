@@ -31,20 +31,6 @@
 			</attack>
 		</motion>
 	</level>
-	<level value="22">
-		<beginCondition probability="1">
-			<stat hp="1" />
-		</beginCondition>
-		<motion>
-			<motionProperty sequenceName="Attack_02_E" motionEffect="NPC/Skill/IshuraRbladerDark/Eff_IshuraRbladerDark_Attack_02_E_MagicBottom.xml" faceTarget="0" doesPlayIdleOnSkillEnd="false" />
-			<attack point="p0" targetCount="1" magicPathID="5731" cubeMagicPathID="50000628" direction="0" attacktype="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
-				<rangeProperty rangeType="box" distance="1200" rangeAdd="0.000000,0.000000,50.000000" height="250" width="250" applyTarget="1" castTarget="1" />
-				<arrowProperty collision="20.000000,0.000000,20.000000" collisionAdd="0.000000,20.000000,0.000000" effect="NPC/Skill/IshuraRbladerDark/Eff_IshuraRbladerDark_Attack_02_E_MagicBottom_Throw_Ball_Guided.xml" />
-				<damageProperty effectHit="NPC/Skill/IshuraRbladerDark/Eff_IshuraRbladerDark_Attack_02_E_MagicBottom_Throw_Ball_Guided_Hit.xml" attackMaterial="1" />
-				<conditionSkill splash="1" level="1" skillID="99999771" delay="1500" interval="500" fireCount="10" />
-			</attack>
-		</motion>
-	</level>
 	<level value="3">
 		<beginCondition probability="1">
 			<stat hp="1" />
@@ -68,6 +54,20 @@
 				<rangeProperty rangeType="box" distance="1200" height="800" width="350" applyTarget="1" castTarget="1" />
 				<arrowProperty nonTarget="1" effect="NPC/Skill/Temp/Eff_Temp.xml" />
 				<damageProperty count="0" attackMaterial="1" />
+			</attack>
+		</motion>
+	</level>
+	<level value="22">
+		<beginCondition probability="1">
+			<stat hp="1" />
+		</beginCondition>
+		<motion>
+			<motionProperty sequenceName="Attack_02_E" motionEffect="NPC/Skill/IshuraRbladerDark/Eff_IshuraRbladerDark_Attack_02_E_MagicBottom.xml" faceTarget="0" doesPlayIdleOnSkillEnd="false" />
+			<attack point="p0" targetCount="1" magicPathID="5731" cubeMagicPathID="50000628" direction="0" attacktype="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+				<rangeProperty rangeType="box" distance="1200" rangeAdd="0.000000,0.000000,50.000000" height="250" width="250" applyTarget="1" castTarget="1" />
+				<arrowProperty collision="20.000000,0.000000,20.000000" collisionAdd="0.000000,20.000000,0.000000" effect="NPC/Skill/IshuraRbladerDark/Eff_IshuraRbladerDark_Attack_02_E_MagicBottom_Throw_Ball_Guided.xml" />
+				<damageProperty effectHit="NPC/Skill/IshuraRbladerDark/Eff_IshuraRbladerDark_Attack_02_E_MagicBottom_Throw_Ball_Guided_Hit.xml" attackMaterial="1" />
+				<conditionSkill splash="1" level="1" skillID="99999771" delay="1500" interval="500" fireCount="10" />
 			</attack>
 		</motion>
 	</level>
