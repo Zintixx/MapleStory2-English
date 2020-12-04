@@ -12,7 +12,8 @@ The repo is organized as so:
  
 - **Latest-GMS2** - The latest and last strings from GMS2.
 - **Latest-KMS2** - The latest KMS2 strings from the KMS2 client. 
-- **build** - These xmls are used for the site only. They are converted to a format that Weblate (the translation tool) takes.
+- **Translation** - This contains the latest translations contributed. This is a combination of GMS2 strings with community-driven translated KMS2 strings for content that did not reach GMS2.
+- **build** - DEPRECATED. Please ignore as this is slowly transitioned out. ~~These xmls are used for the site only. They are converted to a format that Weblate (the translation tool) takes.~~
 
 ---
 
