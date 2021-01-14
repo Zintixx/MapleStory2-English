@@ -1,0 +1,2029 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ms2>
+	<skill id="80000001" comment="ride">
+		<basic>
+			<kinds type="3" subType="10" />
+			<stateAttr battle="0" ignoreReduceCooldown="1" />
+		</basic>
+		<level value="1">
+			<motion>
+				<motionProperty motionEffect="Item/Ride/Eff_Item_Ride_Use.xml" />
+			</motion>
+		</level>
+	</skill>
+	<skill id="80010001" comment="flight">
+		<basic>
+			<kinds type="3" subType="7" unrideOnUse="1" />
+			<stateAttr battle="0" ignoreReduceCooldown="1" />
+		</basic>
+		<level value="1">
+			<beginCondition onlyFlyableMap="1" />
+			<glideProperty gravity="5" heightLimit="2600" horizontalVelocity="250" verticalVelocity="250" verticalVibrateAmplitude="300" verticalVibrateFrequency="3000" bEffect="1" effectRun="CH/Fly/Eff_FlyTypeA_Balloon_Run.xml" effectIdle="CH/Fly/Eff_FlyTypeA_Balloon_Idle.xml" aniIdle="FlyTypeA_Idle_A" aniRun="FlyTypeA_Run_A" />
+			<motion>
+				<motionProperty ignoreCollisionGroups="20" />
+			</motion>
+		</level>
+	</skill>
+	<skill id="80010002" comment="flight">
+		<basic>
+			<kinds type="3" subType="7" unrideOnUse="1" />
+			<stateAttr battle="0" ignoreReduceCooldown="1" />
+		</basic>
+		<level value="1">
+			<beginCondition onlyFlyableMap="1" />
+			<glideProperty gravity="5" heightLimit="400" horizontalVelocity="650" verticalVelocity="100" verticalVibrateAmplitude="400" verticalVibrateFrequency="750" bEffect="1" effectRun="CH/Fly/Eff_FlyTypeA_Eagle_Run.xml" effectIdle="CH/Fly/Eff_FlyTypeA_Eagle_Idle.xml" aniIdle="FlyTypeA_Idle_A" aniRun="FlyTypeA_Run_A" />
+			<motion>
+				<motionProperty ignoreCollisionGroups="20" />
+			</motion>
+		</level>
+	</skill>
+	<skill id="80010003" comment="flight">
+		<basic>
+			<kinds type="3" subType="7" unrideOnUse="1" />
+			<stateAttr battle="0" ignoreReduceCooldown="1" />
+		</basic>
+		<level value="1">
+			<beginCondition onlyFlyableMap="1" />
+			<glideProperty gravity="5" heightLimit="2600" horizontalVelocity="250" verticalVelocity="250" verticalVibrateAmplitude="100" verticalVibrateFrequency="100" bEffect="1" effectRun="CH/Fly/Eff_FlyTypeA_PigAngel_Run.xml" effectIdle="CH/Fly/Eff_FlyTypeA_PigAngel_Idle.xml" aniIdle="FlyTypeA_Idle_A" aniRun="FlyTypeA_Run_A" />
+			<motion>
+				<motionProperty ignoreCollisionGroups="20" />
+			</motion>
+		</level>
+	</skill>
+	<skill id="80010004" comment="flight">
+		<basic>
+			<kinds type="3" subType="7" unrideOnUse="1" />
+			<stateAttr battle="0" ignoreReduceCooldown="1" />
+		</basic>
+		<level value="1">
+			<beginCondition onlyFlyableMap="1" />
+			<glideProperty gravity="5" heightLimit="2600" horizontalVelocity="250" verticalVelocity="250" verticalVibrateAmplitude="210" verticalVibrateFrequency="3000" bEffect="1" effectRun="CH/Fly/Eff_FlyTypeA_Bulb_Run.xml" effectIdle="CH/Fly/Eff_FlyTypeA_Bulb_Idle.xml" aniIdle="FlyTypeA_Idle_A" aniRun="FlyTypeA_Run_A" />
+			<motion>
+				<motionProperty ignoreCollisionGroups="20" />
+			</motion>
+		</level>
+	</skill>
+	<skill id="80010005" comment="flight">
+		<basic>
+			<kinds type="3" subType="7" unrideOnUse="1" />
+			<stateAttr battle="0" ignoreReduceCooldown="1" />
+		</basic>
+		<level value="1">
+			<beginCondition onlyFlyableMap="1" />
+			<glideProperty gravity="5" heightLimit="1200" horizontalVelocity="550" verticalVelocity="170" bEffect="1" effectRun="CH/Fly/Eff_FlyTypeA_Ufo_Run.xml" effectIdle="CH/Fly/Eff_FlyTypeA_Ufo_Idle.xml" aniIdle="FlyTypeA_Idle_A" aniRun="FlyTypeA_Run_A" />
+			<motion>
+				<motionProperty ignoreCollisionGroups="20" />
+			</motion>
+		</level>
+	</skill>
+	<skill id="80010006" comment="flight">
+		<basic>
+			<kinds type="3" subType="7" unrideOnUse="1" />
+			<stateAttr battle="0" ignoreReduceCooldown="1" />
+		</basic>
+		<level value="1">
+			<beginCondition onlyFlyableMap="1" />
+			<glideProperty gravity="5" heightLimit="1300" horizontalAccelerate="200" horizontalVelocity="50" verticalVelocity="170" glideHorizontalAccelerateLimit="500" bEffect="1" effectRun="CH/Fly/Eff_FlyTypeB_Missile_Run.xml" effectIdle="CH/Fly/Eff_FlyTypeB_Missile_Idle.xml" aniIdle="FlyTypeB_Idle_A" aniRun="FlyTypeB_Run_A" />
+			<motion>
+				<motionProperty ignoreCollisionGroups="20" />
+			</motion>
+		</level>
+	</skill>
+	<skill id="80010007" comment="flight">
+		<basic>
+			<kinds type="3" subType="7" unrideOnUse="1" />
+			<stateAttr battle="0" ignoreReduceCooldown="1" />
+		</basic>
+		<level value="1">
+			<beginCondition onlyFlyableMap="1" />
+			<glideProperty gravity="5" heightLimit="1300" horizontalAccelerate="200" horizontalVelocity="50" verticalVelocity="170" glideHorizontalAccelerateLimit="500" bEffect="1" effectRun="CH/Fly/Eff_FlyTypeB_Rocket_Run.xml" effectIdle="CH/Fly/Eff_FlyTypeB_Rocket_Idle.xml" aniIdle="FlyTypeB_Idle_A" aniRun="FlyTypeB_Run_A" />
+			<motion>
+				<motionProperty ignoreCollisionGroups="20" />
+			</motion>
+		</level>
+	</skill>
+	<skill id="80010008" comment="flight">
+		<basic>
+			<kinds type="3" subType="7" unrideOnUse="1" />
+			<stateAttr battle="0" ignoreReduceCooldown="1" />
+		</basic>
+		<level value="1">
+			<beginCondition onlyFlyableMap="1" />
+			<glideProperty gravity="5" heightLimit="400" horizontalVelocity="650" verticalVelocity="100" verticalVibrateAmplitude="100" verticalVibrateFrequency="2000" bEffect="1" effectRun="CH/Fly/Eff_FlyTypeC_PaperPlane_Run.xml" effectIdle="CH/Fly/Eff_FlyTypeC_PaperPlane_Idle.xml" aniIdle="FlyTypeC_Idle_A" aniRun="FlyTypeC_Run_A" />
+			<motion>
+				<motionProperty ignoreCollisionGroups="20" />
+			</motion>
+		</level>
+	</skill>
+	<skill id="80010009" comment="flight">
+		<basic>
+			<kinds type="3" subType="7" unrideOnUse="1" />
+			<stateAttr battle="0" ignoreReduceCooldown="1" />
+		</basic>
+		<level value="1">
+			<beginCondition onlyFlyableMap="1" />
+			<glideProperty gravity="5" heightLimit="400" horizontalVelocity="650" verticalVelocity="100" verticalVibrateAmplitude="100" verticalVibrateFrequency="2000" bEffect="1" effectRun="CH/Fly/Eff_FlyTypeC_Drone_Run.xml" effectIdle="CH/Fly/Eff_FlyTypeC_Drone_Idle.xml" aniIdle="FlyTypeC_Idle_A" aniRun="FlyTypeC_Run_A" />
+			<motion>
+				<motionProperty ignoreCollisionGroups="20" />
+			</motion>
+		</level>
+	</skill>
+	<skill id="80010010" comment="flight">
+		<basic>
+			<kinds type="3" subType="7" unrideOnUse="1" />
+			<stateAttr battle="0" ignoreReduceCooldown="1" />
+		</basic>
+		<level value="1">
+			<beginCondition onlyFlyableMap="1" />
+			<glideProperty gravity="5" heightLimit="400" horizontalVelocity="650" verticalVelocity="100" verticalVibrateAmplitude="100" verticalVibrateFrequency="2000" bEffect="1" effectRun="CH/Fly/Eff_FlyTypeC_SnowCrystal_Run.xml" effectIdle="CH/Fly/Eff_FlyTypeC_SnowCrystal_Idle.xml" aniIdle="FlyTypeC_Idle_A" aniRun="FlyTypeC_Run_A" />
+			<motion>
+				<motionProperty ignoreCollisionGroups="20" />
+			</motion>
+		</level>
+	</skill>
+	<skill id="80010011" comment="flight">
+		<basic>
+			<kinds type="3" subType="7" unrideOnUse="1" />
+			<stateAttr battle="0" ignoreReduceCooldown="1" />
+		</basic>
+		<level value="1">
+			<beginCondition onlyFlyableMap="1" />
+			<glideProperty gravity="5" heightLimit="1200" horizontalVelocity="550" verticalVelocity="170" verticalVibrateAmplitude="300" bEffect="1" effectRun="CH/Fly/Eff_FlyTypeD_RunaFlight_Run.xml" effectIdle="CH/Fly/Eff_FlyTypeD_RunaFlight_Idle.xml" aniIdle="FlyTypeD_Idle_A" aniRun="FlyTypeD_Run_A" />
+			<motion>
+				<motionProperty ignoreCollisionGroups="20" />
+			</motion>
+		</level>
+	</skill>
+	<skill id="80010012" comment="flight">
+		<basic>
+			<kinds type="3" subType="7" unrideOnUse="1" />
+			<stateAttr battle="0" ignoreReduceCooldown="1" />
+		</basic>
+		<level value="1">
+			<beginCondition onlyFlyableMap="1" />
+			<glideProperty gravity="5" heightLimit="2600" horizontalVelocity="250" verticalVelocity="250" verticalVibrateAmplitude="210" verticalVibrateFrequency="3000" bEffect="1" effectRun="CH/Fly/Eff_FlyTypeF_DuckyBall_Run.xml" effectIdle="CH/Fly/Eff_FlyTypeF_DuckyBall_Idle.xml" aniIdle="FlyTypeF_Idle_A" aniRun="FlyTypeF_Run_A" />
+			<motion>
+				<motionProperty ignoreCollisionGroups="20" />
+			</motion>
+		</level>
+	</skill>
+	<skill id="80010013" comment="flight">
+		<basic>
+			<kinds type="3" subType="7" unrideOnUse="1" />
+			<stateAttr battle="0" ignoreReduceCooldown="1" />
+		</basic>
+		<level value="1">
+			<beginCondition onlyFlyableMap="1" />
+			<glideProperty gravity="5" heightLimit="1200" horizontalVelocity="550" verticalVelocity="170" verticalVibrateAmplitude="500" verticalVibrateFrequency="1200" bEffect="1" effectRun="CH/Fly/Eff_FlyTypeG_SlimeAngel_Run.xml" effectIdle="CH/Fly/Eff_FlyTypeG_SlimeAngel_Idle.xml" aniIdle="FlyTypeG_Idle_A" aniRun="FlyTypeG_Run_A" />
+			<motion>
+				<motionProperty ignoreCollisionGroups="20" />
+			</motion>
+		</level>
+	</skill>
+	<skill id="80010014" comment="flight">
+		<basic>
+			<kinds type="3" subType="7" unrideOnUse="1" />
+			<stateAttr battle="0" ignoreReduceCooldown="1" />
+		</basic>
+		<level value="1">
+			<beginCondition onlyFlyableMap="1" />
+			<glideProperty gravity="5" heightLimit="400" horizontalVelocity="650" verticalVelocity="100" verticalVibrateAmplitude="100" verticalVibrateFrequency="5000" bEffect="1" effectRun="CH/Fly/Eff_FlyTypeC_AutumnColors_Run.xml" effectIdle="CH/Fly/Eff_FlyTypeC_AutumnColors_Idle.xml" aniIdle="FlyTypeC_Idle_A" aniRun="FlyTypeC_Run_A" />
+			<motion>
+				<motionProperty ignoreCollisionGroups="20" />
+			</motion>
+		</level>
+	</skill>
+	<skill id="80010015" comment="flight">
+		<basic>
+			<kinds type="3" subType="7" unrideOnUse="1" />
+			<stateAttr battle="0" ignoreReduceCooldown="1" />
+		</basic>
+		<level value="1">
+			<beginCondition onlyFlyableMap="1" />
+			<glideProperty gravity="5" heightLimit="1200" horizontalVelocity="650" verticalVelocity="170" verticalVibrateAmplitude="150" verticalVibrateFrequency="1500" bEffect="1" effectRun="CH/Fly/Eff_FlyTypeC_Plane_Run.xml" effectIdle="CH/Fly/Eff_FlyTypeC_Plane_Idle.xml" aniIdle="FlyTypeC_Idle_A" aniRun="FlyTypeC_Run_A" />
+			<motion>
+				<motionProperty ignoreCollisionGroups="20" />
+			</motion>
+		</level>
+	</skill>
+	<skill id="80010016" comment="flight">
+		<basic>
+			<kinds type="3" subType="7" unrideOnUse="1" />
+			<stateAttr battle="0" ignoreReduceCooldown="1" />
+		</basic>
+		<level value="1">
+			<beginCondition onlyFlyableMap="1" />
+			<glideProperty gravity="5" heightLimit="1300" horizontalAccelerate="200" horizontalVelocity="50" verticalVelocity="170" verticalVibrateAmplitude="70" verticalVibrateFrequency="3000" glideHorizontalAccelerateLimit="500" bEffect="1" effectRun="CH/Fly/Eff_FlyTypeH_GoldenDragon_Run.xml" effectIdle="CH/Fly/Eff_FlyTypeH_GoldenDragon_Idle.xml" aniIdle="FlyTypeH_Idle_A" aniRun="FlyTypeH_Idle_A" />
+			<motion>
+				<motionProperty ignoreCollisionGroups="20" />
+			</motion>
+		</level>
+	</skill>
+	<skill id="80010017" comment="flight">
+		<basic>
+			<kinds type="3" subType="7" unrideOnUse="1" />
+			<stateAttr battle="0" ignoreReduceCooldown="1" />
+		</basic>
+		<level value="1">
+			<beginCondition onlyFlyableMap="1" />
+			<glideProperty gravity="5" heightLimit="2600" horizontalVelocity="250" verticalVelocity="250" verticalVibrateAmplitude="210" verticalVibrateFrequency="3000" bEffect="1" effectRun="CH/Fly/Eff_FlyTypeA_DuckyBalloon_Run.xml" effectIdle="CH/Fly/Eff_FlyTypeA_DuckyBalloon_Idle.xml" aniIdle="FlyTypeA_Idle_A" aniRun="FlyTypeA_Run_A" />
+			<motion>
+				<motionProperty ignoreCollisionGroups="20" />
+			</motion>
+		</level>
+	</skill>
+	<skill id="80010018" comment="flight">
+		<basic>
+			<kinds type="3" subType="7" unrideOnUse="1" />
+			<stateAttr battle="0" ignoreReduceCooldown="1" />
+		</basic>
+		<level value="1">
+			<beginCondition onlyFlyableMap="1" />
+			<glideProperty gravity="5" heightLimit="2600" horizontalVelocity="250" verticalVelocity="250" verticalVibrateAmplitude="210" verticalVibrateFrequency="3000" bEffect="1" effectRun="CH/Fly/Eff_FlyTypeA_MushroomBalloon_Run.xml" effectIdle="CH/Fly/Eff_FlyTypeA_MushroomBalloon_Idle.xml" aniIdle="FlyTypeA_Idle_A" aniRun="FlyTypeA_Run_A" />
+			<motion>
+				<motionProperty ignoreCollisionGroups="20" />
+			</motion>
+		</level>
+	</skill>
+	<skill id="80010019" comment="flight">
+		<basic>
+			<kinds type="3" subType="7" unrideOnUse="1" />
+			<stateAttr battle="0" ignoreReduceCooldown="1" />
+		</basic>
+		<level value="1">
+			<beginCondition onlyFlyableMap="1" />
+			<glideProperty gravity="5" heightLimit="1300" horizontalAccelerate="200" horizontalVelocity="100" verticalVelocity="170" verticalVibrateAmplitude="100" verticalVibrateFrequency="3000" glideHorizontalAccelerateLimit="550" bEffect="1" effectRun="CH/Fly/Eff_FlyTypeI_Rudolph_Run.xml" effectIdle="CH/Fly/Eff_FlyTypeI_Rudolph_Idle.xml" aniIdle="FlyTypeI_Idle_A" aniRun="FlyTypeI_Run_A" />
+			<motion>
+				<motionProperty ignoreCollisionGroups="20" />
+			</motion>
+		</level>
+	</skill>
+	<skill id="80010020" comment="flight">
+		<basic>
+			<kinds type="3" subType="7" unrideOnUse="1" />
+			<stateAttr battle="0" ignoreReduceCooldown="1" />
+		</basic>
+		<level value="1">
+			<beginCondition onlyFlyableMap="1" />
+			<glideProperty gravity="5" heightLimit="1200" horizontalVelocity="550" verticalVelocity="170" verticalVibrateAmplitude="100" verticalVibrateFrequency="3000" bEffect="1" effectRun="CH/Fly/Eff_FlyTypeF_LightlyBalloon_Run.xml" effectIdle="CH/Fly/Eff_FlyTypeF_LightlyBalloon_Idle.xml" aniIdle="FlyTypeF_Idle_A" aniRun="FlyTypeF_Run_A" />
+			<motion>
+				<motionProperty ignoreCollisionGroups="20" />
+			</motion>
+		</level>
+	</skill>
+	<skill id="80010021" comment="flight">
+		<basic>
+			<kinds type="3" subType="7" unrideOnUse="1" />
+			<stateAttr battle="0" ignoreReduceCooldown="1" />
+		</basic>
+		<level value="1">
+			<beginCondition onlyFlyableMap="1" />
+			<glideProperty gravity="5" heightLimit="1200" horizontalVelocity="650" verticalVelocity="170" verticalVibrateAmplitude="150" verticalVibrateFrequency="1500" bEffect="1" effectRun="CH/Fly/Eff_FlyTypeJ_Magpie_Run.xml" effectIdle="CH/Fly/Eff_FlyTypeJ_Magpie_Idle.xml" aniIdle="FlyTypeJ_Idle_A" aniRun="FlyTypeJ_Run_A" />
+			<motion>
+				<motionProperty ignoreCollisionGroups="20" />
+			</motion>
+		</level>
+	</skill>
+	<skill id="80010022" comment="flight">
+		<basic>
+			<kinds type="3" subType="7" unrideOnUse="1" />
+			<stateAttr battle="0" ignoreReduceCooldown="1" />
+		</basic>
+		<level value="1">
+			<beginCondition onlyFlyableMap="1" />
+			<glideProperty gravity="5" heightLimit="2600" horizontalVelocity="250" verticalVelocity="250" verticalVibrateAmplitude="210" verticalVibrateFrequency="3000" bEffect="1" effectRun="CH/Fly/Eff_FlyTypeA_Lotus_Run.xml" effectIdle="CH/Fly/Eff_FlyTypeA_Lotus_Idle.xml" aniIdle="FlyTypeA_Idle_A" aniRun="FlyTypeA_Run_A" />
+			<motion>
+				<motionProperty ignoreCollisionGroups="20" />
+			</motion>
+		</level>
+	</skill>
+	<skill id="80010023" comment="flight">
+		<basic>
+			<kinds type="3" subType="7" unrideOnUse="1" />
+			<stateAttr battle="0" ignoreReduceCooldown="1" />
+		</basic>
+		<level value="1">
+			<beginCondition onlyFlyableMap="1" />
+			<glideProperty gravity="5" heightLimit="400" horizontalVelocity="700" verticalVelocity="100" verticalVibrateAmplitude="100" verticalVibrateFrequency="2000" bEffect="1" effectRun="CH/Fly/Eff_FlyTypeC_Pinkbean01_Run.xml" effectIdle="CH/Fly/Eff_FlyTypeC_Pinkbean01_Idle.xml" aniIdle="Ride_Idle_D_Smile" aniRun="Ride_Idle_D_Smile" />
+			<motion>
+				<motionProperty ignoreCollisionGroups="20" />
+			</motion>
+		</level>
+	</skill>
+	<skill id="80010024" comment="flight">
+		<basic>
+			<kinds type="3" subType="7" unrideOnUse="1" />
+			<stateAttr battle="0" ignoreReduceCooldown="1" />
+		</basic>
+		<level value="1">
+			<beginCondition onlyFlyableMap="1" />
+			<glideProperty gravity="5" heightLimit="2600" horizontalVelocity="350" verticalVelocity="250" verticalVibrateAmplitude="210" verticalVibrateFrequency="1500" bEffect="1" effectRun="CH/Fly/Eff_FlyTypeA_RedLantern_Run.xml" effectIdle="CH/Fly/Eff_FlyTypeA_RedLantern_Idle.xml" aniIdle="FlyTypeA_Idle_02_A" aniRun="FlyTypeA_Run_02_A" />
+			<motion>
+				<motionProperty ignoreCollisionGroups="20" />
+			</motion>
+		</level>
+	</skill>
+	<skill id="80010025" comment="flight">
+		<basic>
+			<kinds type="3" subType="7" unrideOnUse="1" />
+			<stateAttr battle="0" ignoreReduceCooldown="1" />
+		</basic>
+		<level value="1">
+			<beginCondition onlyFlyableMap="1" />
+			<glideProperty gravity="5" heightLimit="1300" horizontalAccelerate="200" horizontalVelocity="100" verticalVelocity="170" verticalVibrateAmplitude="100" verticalVibrateFrequency="3000" glideHorizontalAccelerateLimit="550" bEffect="1" effectRun="CH/Fly/Eff_FlyTypeM_ToyTrain_Run.xml" effectIdle="CH/Fly/Eff_FlyTypeM_ToyTrain_Idle.xml" aniIdle="FlyTypeM_Idle_A" aniRun="FlyTypeM_Run_A" />
+			<motion>
+				<motionProperty ignoreCollisionGroups="20" />
+			</motion>
+		</level>
+	</skill>
+	<skill id="80010026" comment="flight">
+		<basic>
+			<kinds type="3" subType="7" unrideOnUse="1" />
+			<stateAttr battle="0" ignoreReduceCooldown="1" />
+		</basic>
+		<level value="1">
+			<beginCondition onlyFlyableMap="1" />
+			<glideProperty gravity="5" heightLimit="400" horizontalVelocity="650" verticalVelocity="100" verticalVibrateAmplitude="100" verticalVibrateFrequency="2000" bEffect="1" effectRun="CH/Fly/Eff_FlyTypeC_PaperPlane_Run.xml" effectIdle="CH/Fly/Eff_FlyTypeC_PaperPlane_Idle.xml" aniIdle="FlyTypeC_Idle_A" aniRun="FlyTypeC_Run_A" />
+			<motion>
+				<motionProperty ignoreCollisionGroups="20" />
+			</motion>
+		</level>
+	</skill>
+	<skill id="80010027" comment="flight">
+		<basic>
+			<kinds type="3" subType="7" unrideOnUse="1" />
+			<stateAttr battle="0" ignoreReduceCooldown="1" />
+		</basic>
+		<level value="1">
+			<beginCondition onlyFlyableMap="1" />
+			<glideProperty gravity="5" heightLimit="1300" horizontalAccelerate="200" horizontalVelocity="100" verticalVelocity="170" verticalVibrateAmplitude="100" verticalVibrateFrequency="3000" glideHorizontalAccelerateLimit="550" bEffect="1" effectRun="CH/Fly/Eff_FlyTypeI_LuckyBag_Run.xml" effectIdle="CH/Fly/Eff_FlyTypeI_LuckyBag_Idle.xml" aniIdle="FlyTypeK_Idle_A" aniRun="FlyTypeK_Run_A" />
+			<motion>
+				<motionProperty ignoreCollisionGroups="20" />
+			</motion>
+		</level>
+	</skill>
+	<skill id="80010028" comment="flight">
+		<basic>
+			<kinds type="3" subType="7" unrideOnUse="1" />
+			<stateAttr battle="0" ignoreReduceCooldown="1" />
+		</basic>
+		<level value="1">
+			<beginCondition onlyFlyableMap="1" />
+			<glideProperty gravity="5" heightLimit="1300" horizontalAccelerate="200" horizontalVelocity="100" verticalVelocity="170" verticalVibrateAmplitude="100" verticalVibrateFrequency="3000" glideHorizontalAccelerateLimit="550" bEffect="1" effectRun="CH/Fly/Eff_FlyTypeI_Mirinda_Run.xml" effectIdle="CH/Fly/Eff_FlyTypeI_Mirinda_Idle.xml" aniIdle="FlyTypeL_Idle_A" aniRun="FlyTypeL_Run_A" />
+			<motion>
+				<motionProperty ignoreCollisionGroups="20" />
+			</motion>
+		</level>
+	</skill>
+	<skill id="80010029" comment="flight">
+		<basic>
+			<kinds type="3" subType="7" unrideOnUse="1" />
+			<stateAttr battle="0" ignoreReduceCooldown="1" />
+		</basic>
+		<level value="1">
+			<beginCondition onlyFlyableMap="1" />
+			<glideProperty gravity="5" heightLimit="2600" horizontalVelocity="250" verticalVelocity="250" verticalVibrateAmplitude="210" verticalVibrateFrequency="3000" bEffect="1" effectRun="CH/Fly/Eff_FlyTypeA_Lay_Run_A.xml" effectIdle="CH/Fly/Eff_FlyTypeA_Lay_Idle_A.xml" aniIdle="FlyTypeA_Idle_A" aniRun="FlyTypeA_Run_A" />
+			<motion>
+				<motionProperty ignoreCollisionGroups="20" />
+			</motion>
+		</level>
+	</skill>
+	<skill id="80010030" comment="flight">
+		<basic>
+			<kinds type="3" subType="7" unrideOnUse="1" />
+			<stateAttr battle="0" ignoreReduceCooldown="1" />
+		</basic>
+		<level value="1">
+			<beginCondition onlyFlyableMap="1" />
+			<glideProperty gravity="5" heightLimit="400" horizontalVelocity="700" verticalVelocity="100" verticalVibrateAmplitude="100" verticalVibrateFrequency="2000" bEffect="1" effectRun="CH/Fly/Eff_FlyTypeN_Run.xml" effectIdle="CH/Fly/Eff_FlyTypeN_Idle.xml" aniIdle="FlyTypeN_Idle_A" aniRun="FlyTypeN_Run_A" />
+			<motion>
+				<motionProperty ignoreCollisionGroups="20" />
+			</motion>
+		</level>
+	</skill>
+	<skill id="80010031" comment="flight">
+		<basic>
+			<kinds type="3" subType="7" unrideOnUse="1" />
+			<stateAttr battle="0" ignoreReduceCooldown="1" />
+		</basic>
+		<level value="1">
+			<beginCondition onlyFlyableMap="1" />
+			<glideProperty gravity="5" heightLimit="1200" horizontalVelocity="550" verticalVelocity="170" verticalVibrateAmplitude="500" verticalVibrateFrequency="1200" bEffect="1" effectRun="CH/Fly/Eff_FlyTypeG_SlimeAngelGreen_Run.xml" effectIdle="CH/Fly/Eff_FlyTypeG_SlimeAngelGreen_Idle.xml" aniIdle="FlyTypeG_Idle_A" aniRun="FlyTypeG_Run_A" />
+			<motion>
+				<motionProperty ignoreCollisionGroups="20" />
+			</motion>
+		</level>
+	</skill>
+	<skill id="80010032" comment="flight">
+		<basic>
+			<kinds type="3" subType="7" unrideOnUse="1" />
+			<stateAttr battle="0" ignoreReduceCooldown="1" />
+		</basic>
+		<level value="1">
+			<beginCondition onlyFlyableMap="1" />
+			<glideProperty gravity="5" heightLimit="2600" horizontalVelocity="250" verticalVelocity="250" verticalVibrateAmplitude="210" verticalVibrateFrequency="3000" bEffect="1" effectRun="CH/Fly/Eff_FlyTypeA_DuckyBalloon_Run.xml" effectIdle="CH/Fly/Eff_FlyTypeA_DuckyBalloon_Idle.xml" aniIdle="FlyTypeA_Idle_A" aniRun="FlyTypeA_Run_A" />
+			<motion>
+				<motionProperty ignoreCollisionGroups="20" />
+			</motion>
+		</level>
+	</skill>
+	<skill id="80010033" comment="flight">
+		<basic>
+			<kinds type="3" subType="7" offsetNameTag="-145" unrideOnUse="1" />
+			<stateAttr battle="0" ignoreReduceCooldown="1" />
+		</basic>
+		<level value="1">
+			<beginCondition onlyFlyableMap="1" />
+			<glideProperty gravity="5" heightLimit="400" horizontalVelocity="700" verticalVelocity="100" verticalVibrateAmplitude="100" verticalVibrateFrequency="2000" bEffect="1" effectRun="CH/Fly/Eff_FlyTypeN_Run_MoonWalker.xml" effectIdle="CH/Fly/Eff_FlyTypeN_Idle_MoonWalker.xml" aniIdle="FlyTypeN_Idle_MoonWalker_A" aniRun="FlyTypeN_Run_MoonWalker_A" />
+			<motion>
+				<motionProperty ignoreCollisionGroups="20" />
+			</motion>
+		</level>
+	</skill>
+	<skill id="80010034" comment="flight">
+		<basic>
+			<kinds type="3" subType="7" unrideOnUse="1" />
+			<stateAttr battle="0" ignoreReduceCooldown="1" />
+		</basic>
+		<level value="1">
+			<beginCondition onlyFlyableMap="1" />
+			<glideProperty gravity="5" heightLimit="2600" horizontalVelocity="250" verticalVelocity="250" verticalVibrateAmplitude="210" verticalVibrateFrequency="3000" bEffect="1" effectRun="CH/Fly/Eff_FlyTypeA_Lay_Run_A.xml" effectIdle="CH/Fly/Eff_FlyTypeA_Lay_Idle_A.xml" aniIdle="FlyTypeA_Idle_A" aniRun="FlyTypeA_Run_A" />
+			<motion>
+				<motionProperty ignoreCollisionGroups="20" />
+			</motion>
+		</level>
+	</skill>
+	<skill id="80010035" comment="flight">
+		<basic>
+			<kinds type="3" subType="7" unrideOnUse="1" />
+			<stateAttr battle="0" ignoreReduceCooldown="1" />
+		</basic>
+		<level value="1">
+			<beginCondition onlyFlyableMap="1" />
+			<glideProperty gravity="5" heightLimit="2600" horizontalVelocity="250" verticalVelocity="250" verticalVibrateAmplitude="100" verticalVibrateFrequency="100" bEffect="1" effectRun="CH/Fly/Eff_FlyTypeA_PigAngel_Run.xml" effectIdle="CH/Fly/Eff_FlyTypeA_PigAngel_Idle.xml" aniIdle="FlyTypeA_Idle_A" aniRun="FlyTypeA_Run_A" />
+			<motion>
+				<motionProperty ignoreCollisionGroups="20" />
+			</motion>
+		</level>
+	</skill>
+	<skill id="80010036" comment="flight">
+		<basic>
+			<kinds type="3" subType="7" unrideOnUse="1" />
+			<stateAttr battle="0" ignoreReduceCooldown="1" />
+		</basic>
+		<level value="1">
+			<beginCondition onlyFlyableMap="1" />
+			<glideProperty gravity="5" heightLimit="2600" horizontalVelocity="250" verticalVelocity="250" verticalVibrateAmplitude="210" verticalVibrateFrequency="3000" bEffect="1" effectRun="CH/Fly/Eff_FlyTypeA_RudolphBalloon_Run_A.xml" effectIdle="CH/Fly/Eff_FlyTypeA_RudolphBalloon_Idle_A..xml" aniIdle="FlyTypeA_Idle_A" aniRun="FlyTypeA_Run_A" />
+			<motion>
+				<motionProperty ignoreCollisionGroups="20" />
+			</motion>
+		</level>
+	</skill>
+	<skill id="80010037" comment="flight">
+		<basic>
+			<kinds type="3" subType="7" unrideOnUse="1" />
+			<stateAttr battle="0" ignoreReduceCooldown="1" />
+		</basic>
+		<level value="1">
+			<beginCondition onlyFlyableMap="1" />
+			<glideProperty gravity="5" heightLimit="1300" horizontalAccelerate="200" horizontalVelocity="100" verticalVelocity="170" verticalVibrateAmplitude="70" verticalVibrateFrequency="3000" glideHorizontalAccelerateLimit="550" bEffect="1" effectRun="CH/Fly/Eff_FlyTypeH_WhiteTiger_Run.xml" effectIdle="CH/Fly/Eff_FlyTypeH_WhiteTiger_Idle.xml" aniIdle="FlyTypeO_Idle_A" aniRun="FlyTypeO_Run_A" />
+			<motion>
+				<motionProperty ignoreCollisionGroups="20" />
+			</motion>
+		</level>
+	</skill>
+	<skill id="80010038" comment="flight">
+		<basic>
+			<kinds type="3" subType="7" unrideOnUse="1" />
+			<stateAttr battle="0" ignoreReduceCooldown="1" />
+		</basic>
+		<level value="1">
+			<beginCondition onlyFlyableMap="1" />
+			<glideProperty gravity="5" heightLimit="1300" horizontalAccelerate="200" horizontalVelocity="50" verticalVelocity="170" verticalVibrateAmplitude="70" verticalVibrateFrequency="3000" glideHorizontalAccelerateLimit="500" bEffect="1" effectRun="CH/Fly/Eff_FlyTypeH_GoldenDragon_Run.xml" effectIdle="CH/Fly/Eff_FlyTypeH_GoldenDragon_Idle.xml" aniIdle="FlyTypeH_Idle_A" aniRun="FlyTypeH_Idle_A" />
+			<motion>
+				<motionProperty ignoreCollisionGroups="20" />
+			</motion>
+		</level>
+	</skill>
+	<skill id="80010039" comment="flight">
+		<basic>
+			<kinds type="3" subType="7" unrideOnUse="1" />
+			<stateAttr battle="0" ignoreReduceCooldown="1" />
+		</basic>
+		<level value="1">
+			<beginCondition onlyFlyableMap="1" />
+			<glideProperty gravity="5" heightLimit="1200" horizontalVelocity="650" verticalVelocity="170" verticalVibrateAmplitude="150" verticalVibrateFrequency="1500" bEffect="1" effectRun="CH/Fly/Eff_FlyTypeC_Plane_Run.xml" effectIdle="CH/Fly/Eff_FlyTypeC_Plane_Idle.xml" aniIdle="FlyTypeC_Idle_A" aniRun="FlyTypeC_Run_A" />
+			<motion>
+				<motionProperty ignoreCollisionGroups="20" />
+			</motion>
+		</level>
+	</skill>
+	<skill id="80010040" comment="flight">
+		<basic>
+			<kinds type="3" subType="7" unrideOnUse="1" />
+			<stateAttr battle="0" ignoreReduceCooldown="1" />
+		</basic>
+		<level value="1">
+			<beginCondition onlyFlyableMap="1" />
+			<glideProperty gravity="5" heightLimit="400" horizontalVelocity="700" verticalVelocity="100" verticalVibrateAmplitude="100" verticalVibrateFrequency="2000" bEffect="1" effectRun="CH/Fly/Eff_FlyTypeO_Run.xml" effectIdle="CH/Fly/Eff_FlyTypeO_Idle.xml" aniIdle="FlyTypeP_Idle_A" aniRun="FlyTypeP_Run_A" />
+			<motion>
+				<motionProperty ignoreCollisionGroups="20" />
+			</motion>
+		</level>
+	</skill>
+	<skill id="80010041" comment="flight">
+		<basic>
+			<kinds type="3" subType="7" unrideOnUse="1" />
+			<stateAttr battle="0" ignoreReduceCooldown="1" />
+		</basic>
+		<level value="1">
+			<beginCondition onlyFlyableMap="1" />
+			<glideProperty gravity="5" heightLimit="400" horizontalVelocity="650" verticalVelocity="100" verticalVibrateAmplitude="100" verticalVibrateFrequency="2000" bEffect="1" effectRun="CH/Fly/Eff_FlyTypeQ_FlyingPanda_Run.xml" effectIdle="CH/Fly/Eff_FlyTypeQ_FlyingPanda_Idle.xml" aniIdle="FlyTypeQ_Idle_A" aniRun="FlyTypeQ_Run_A" />
+			<motion>
+				<motionProperty ignoreCollisionGroups="20" />
+			</motion>
+		</level>
+	</skill>
+	<skill id="80010042" comment="flight">
+		<basic>
+			<kinds type="3" subType="7" unrideOnUse="1" />
+			<stateAttr battle="0" ignoreReduceCooldown="1" />
+		</basic>
+		<level value="1">
+			<beginCondition onlyFlyableMap="1" />
+			<glideProperty gravity="5" heightLimit="2600" horizontalVelocity="250" verticalVelocity="250" verticalVibrateAmplitude="210" verticalVibrateFrequency="3000" bEffect="1" effectRun="CH/Fly/Eff_FlyTypeF_Chocoball_Run.xml" effectIdle="CH/Fly/Eff_FlyTypeF_Chocoball_Idle.xml" aniIdle="FlyTypeF_Idle_A" aniRun="FlyTypeF_Run_A" />
+			<motion>
+				<motionProperty ignoreCollisionGroups="20" />
+			</motion>
+		</level>
+	</skill>
+	<skill id="80010043" comment="flight">
+		<basic>
+			<kinds type="3" subType="7" unrideOnUse="1" />
+			<stateAttr battle="0" ignoreReduceCooldown="1" />
+		</basic>
+		<level value="1">
+			<beginCondition onlyFlyableMap="1" />
+			<glideProperty gravity="5" heightLimit="2600" horizontalVelocity="350" verticalVelocity="250" verticalVibrateAmplitude="210" verticalVibrateFrequency="1500" bEffect="1" effectRun="CH/Fly/Eff_FlyTypeS_AirBalloon01_Run.xml" effectIdle="CH/Fly/Eff_FlyTypeS_AirBalloon01_Idle.xml" aniIdle="FlyTypeS_Idle_A" aniRun="FlyTypeS_Run_A" />
+			<motion>
+				<motionProperty ignoreCollisionGroups="20" />
+			</motion>
+		</level>
+	</skill>
+	<skill id="80010044" comment="flight">
+		<basic>
+			<kinds type="3" subType="7" unrideOnUse="1" />
+			<stateAttr battle="0" ignoreReduceCooldown="1" />
+		</basic>
+		<level value="1">
+			<beginCondition onlyFlyableMap="1" />
+			<glideProperty gravity="5" heightLimit="1300" horizontalAccelerate="200" horizontalVelocity="100" verticalVelocity="100" verticalVibrateAmplitude="100" verticalVibrateFrequency="1500" glideHorizontalAccelerateLimit="550" bEffect="1" effectRun="CH/Fly/Eff_FlyTypeR_Surfboard01_Run.xml" effectIdle="CH/Fly/Eff_FlyTypeR_Surfboard01_Idle.xml" aniIdle="FlyTypeR_Idle_A" aniRun="FlyTypeR_Run_A" />
+			<motion>
+				<motionProperty ignoreCollisionGroups="20" />
+			</motion>
+		</level>
+	</skill>
+	<skill id="80010045" comment="flight">
+		<basic>
+			<kinds type="3" subType="7" unrideOnUse="1" />
+			<stateAttr battle="0" ignoreReduceCooldown="1" />
+		</basic>
+		<level value="1">
+			<beginCondition onlyFlyableMap="1" />
+			<glideProperty gravity="5" heightLimit="2600" horizontalVelocity="650" verticalVelocity="250" verticalVibrateAmplitude="100" verticalVibrateFrequency="2000" bEffect="1" effectRun="CH/Fly/Eff_FlyTypeT_Firebird_Run.xml" effectIdle="CH/Fly/Eff_FlyTypeT_Firebird_Idle.xml" aniIdle="FlyTypeT_Idle_A" aniRun="FlyTypeT_Run_A" />
+			<motion>
+				<motionProperty ignoreCollisionGroups="20" />
+			</motion>
+		</level>
+	</skill>
+	<skill id="80010046" comment="flight">
+		<basic>
+			<kinds type="3" subType="7" unrideOnUse="1" />
+			<stateAttr battle="0" ignoreReduceCooldown="1" />
+		</basic>
+		<level value="1">
+			<beginCondition onlyFlyableMap="1" />
+			<glideProperty gravity="5" heightLimit="1300" horizontalAccelerate="200" horizontalVelocity="100" verticalVelocity="170" verticalVibrateAmplitude="150" verticalVibrateFrequency="2000" glideHorizontalAccelerateLimit="550" bEffect="1" effectRun="CH/Fly/Eff_FlyTypeS_Heart01_Run.xml" effectIdle="CH/Fly/Eff_FlyTypeS_Heart01_Idle.xml" aniIdle="FlyTypeS_Idle_A" aniRun="FlyTypeS_Run_A" />
+			<motion>
+				<motionProperty ignoreCollisionGroups="20" />
+			</motion>
+		</level>
+	</skill>
+	<skill id="80010047" comment="flight">
+		<basic>
+			<kinds type="3" subType="7" unrideOnUse="1" />
+			<stateAttr battle="0" ignoreReduceCooldown="1" />
+		</basic>
+		<level value="1">
+			<beginCondition onlyFlyableMap="1" />
+			<glideProperty gravity="5" heightLimit="2600" horizontalVelocity="250" verticalVelocity="250" verticalVibrateAmplitude="210" verticalVibrateFrequency="3000" bEffect="1" effectRun="CH/Fly/Eff_FlyType_DukeyBalloon01_Run_A.xml" effectIdle="CH/Fly/Eff_FlyType_DukeyBalloon01_Idle_A.xml" aniIdle="FlyTypeV_Idle_A" aniRun="FlyTypeV_Run_A" />
+			<motion>
+				<motionProperty ignoreCollisionGroups="20" />
+			</motion>
+		</level>
+	</skill>
+	<skill id="80010048" comment="flight">
+		<basic>
+			<kinds type="3" subType="7" unrideOnUse="1" />
+			<stateAttr battle="0" ignoreReduceCooldown="1" />
+		</basic>
+		<level value="1">
+			<beginCondition onlyFlyableMap="1" />
+			<glideProperty gravity="5" heightLimit="400" horizontalVelocity="650" verticalVelocity="100" verticalVibrateAmplitude="100" verticalVibrateFrequency="5000" bEffect="1" effectRun="CH/Fly/40400057_UGC_Cherryblossoms_Run_A.xml" effectIdle="CH/Fly/40400057_UGC_Cherryblossoms_Idle_A.xml" aniIdle="FlyTypeC_Idle_A" aniRun="FlyTypeC_Run_A" />
+			<motion>
+				<motionProperty ignoreCollisionGroups="20" />
+			</motion>
+		</level>
+	</skill>
+	<skill id="80010049" comment="flight">
+		<basic>
+			<kinds type="3" subType="7" unrideOnUse="1" />
+			<stateAttr battle="0" ignoreReduceCooldown="1" />
+		</basic>
+		<level value="1">
+			<beginCondition onlyFlyableMap="1" />
+			<glideProperty gravity="5" heightLimit="400" horizontalVelocity="700" verticalVelocity="100" verticalVibrateAmplitude="100" verticalVibrateFrequency="2000" bEffect="1" effectRun="CH/Fly/Eff_FlyTypeC_FlyKite_Run.xml" effectIdle="CH/Fly/Eff_FlyTypeC_FlyKite_Idle.xml" aniIdle="FlyTypeC_Idle_A" aniRun="FlyTypeC_Run_A" />
+			<motion>
+				<motionProperty ignoreCollisionGroups="20" />
+			</motion>
+		</level>
+	</skill>
+	<skill id="80010050" comment="flight">
+		<basic>
+			<kinds type="3" subType="7" unrideOnUse="1" />
+			<stateAttr battle="0" ignoreReduceCooldown="1" />
+		</basic>
+		<level value="1">
+			<beginCondition onlyFlyableMap="1" />
+			<glideProperty gravity="5" heightLimit="1200" horizontalVelocity="650" verticalVelocity="170" verticalVibrateAmplitude="150" verticalVibrateFrequency="1500" bEffect="1" effectRun="CH/Fly/40400056_UGC_RainbowCloud_Run_A.xml" effectIdle="CH/Fly/40400056_UGC_RainbowCloud_Idle_A.xml" aniIdle="FlyTypeC_Idle_A" aniRun="FlyTypeC_Run_A" />
+			<motion>
+				<motionProperty ignoreCollisionGroups="20" />
+			</motion>
+		</level>
+	</skill>
+	<skill id="80010051" comment="flight">
+		<basic>
+			<kinds type="3" subType="7" offsetNameTag="-190" unrideOnUse="1" />
+			<stateAttr battle="0" ignoreReduceCooldown="1" />
+		</basic>
+		<level value="1">
+			<beginCondition onlyFlyableMap="1" />
+			<glideProperty gravity="5" heightLimit="400" horizontalVelocity="700" verticalVelocity="100" verticalVibrateAmplitude="100" verticalVibrateFrequency="2000" bEffect="1" effectRun="CH/Fly/Eff_FlyTypeX_Run.xml" effectIdle="CH/Fly/Eff_FlyTypeX_Idle.xml" aniIdle="FlyTypeX_Idle_A" aniRun="FlyTypeX_Run_A" />
+			<motion>
+				<motionProperty ignoreCollisionGroups="20" />
+			</motion>
+		</level>
+	</skill>
+	<skill id="80010052" comment="flight">
+		<basic>
+			<kinds type="3" subType="7" unrideOnUse="1" />
+			<stateAttr battle="0" ignoreReduceCooldown="1" />
+		</basic>
+		<level value="1">
+			<beginCondition onlyFlyableMap="1" />
+			<glideProperty gravity="5" heightLimit="400" horizontalVelocity="650" verticalVelocity="100" verticalVibrateAmplitude="100" verticalVibrateFrequency="5000" bEffect="1" effectRun="CH/Fly/40400058_UGC_Petal_Run_A.xml" effectIdle="CH/Fly/40400058_UGC_Petal_Idle_A.xml" aniIdle="FlyTypeC_Idle_A" aniRun="FlyTypeC_Run_A" />
+			<motion>
+				<motionProperty ignoreCollisionGroups="20" />
+			</motion>
+		</level>
+	</skill>
+	<skill id="80010053" comment="flight">
+		<basic>
+			<kinds type="3" subType="7" unrideOnUse="1" />
+			<stateAttr battle="0" ignoreReduceCooldown="1" />
+		</basic>
+		<level value="1">
+			<beginCondition onlyFlyableMap="1" />
+			<glideProperty gravity="5" heightLimit="400" horizontalVelocity="650" verticalVelocity="100" verticalVibrateAmplitude="100" verticalVibrateFrequency="5000" bEffect="1" effectRun="CH/Fly/40400049_UGC_Toilet_Run_A.xml" effectIdle="CH/Fly/40400049_UGC_Toilet_Idle_A.xml" aniIdle="FlyTypeW_Idle_A" aniRun="FlyTypeW_Run_A" />
+			<motion>
+				<motionProperty ignoreCollisionGroups="20" />
+			</motion>
+		</level>
+	</skill>
+	<skill id="80010054" comment="flight">
+		<basic>
+			<kinds type="3" subType="7" unrideOnUse="1" />
+			<stateAttr battle="0" ignoreReduceCooldown="1" />
+		</basic>
+		<level value="1">
+			<beginCondition onlyFlyableMap="1" />
+			<glideProperty gravity="5" heightLimit="1200" horizontalVelocity="550" verticalVelocity="170" verticalVibrateAmplitude="150" verticalVibrateFrequency="1200" bEffect="1" effectRun="CH/Fly/40400063_UGC_SlimeAngelRainbow_Run_A.xml" effectIdle="CH/Fly/40400063_UGC_SlimeAngelRainbow_Idle_A.xml" aniIdle="FlyTypeY_Idle_A" aniRun="FlyTypeY_Run_A" />
+			<motion>
+				<motionProperty ignoreCollisionGroups="20" />
+			</motion>
+		</level>
+	</skill>
+	<skill id="80010055" comment="flight">
+		<basic>
+			<kinds type="3" subType="7" unrideOnUse="1" />
+			<stateAttr battle="0" ignoreReduceCooldown="1" />
+		</basic>
+		<level value="1">
+			<beginCondition onlyFlyableMap="1" />
+			<glideProperty gravity="5" heightLimit="1300" horizontalAccelerate="200" horizontalVelocity="100" verticalVelocity="170" verticalVibrateAmplitude="70" verticalVibrateFrequency="3000" glideHorizontalAccelerateLimit="550" bEffect="1" effectRun="CH/Fly/40400051_UGC_GoldenWhale_Run_A.xml" effectIdle="CH/Fly/40400051_UGC_GoldenWhale_Idle_A.xml" aniIdle="FlyType001_Idle_A" aniRun="FlyType001_Run_A" />
+			<motion>
+				<motionProperty ignoreCollisionGroups="20" />
+			</motion>
+		</level>
+	</skill>
+	<skill id="80010056" comment="flight">
+		<basic>
+			<kinds type="3" subType="7" unrideOnUse="1" />
+			<stateAttr battle="0" ignoreReduceCooldown="1" />
+		</basic>
+		<level value="1">
+			<beginCondition onlyFlyableMap="1" />
+			<glideProperty gravity="5" heightLimit="400" horizontalVelocity="650" verticalVelocity="100" verticalVibrateAmplitude="100" verticalVibrateFrequency="2000" bEffect="1" effectRun="CH/Fly/40400053_UGC_JjongjjeuShip_Run_A.xml" effectIdle="CH/Fly/40400053_UGC_JjongjjeuShip_Idle_A.xml" aniIdle="FlyTypeZ_Idle_A" aniRun="FlyTypeZ_Run_A" />
+			<motion>
+				<motionProperty ignoreCollisionGroups="20" />
+			</motion>
+		</level>
+	</skill>
+	<skill id="80010057" comment="flight">
+		<basic>
+			<kinds type="3" subType="7" unrideOnUse="1" />
+			<stateAttr battle="0" ignoreReduceCooldown="1" />
+		</basic>
+		<level value="1">
+			<beginCondition onlyFlyableMap="1" />
+			<glideProperty gravity="5" horizontalVelocity="350" verticalVelocity="-50" bEffect="1" effectRun="CH/Fly/Eff_FlyTypeC_PaperPlane_Run.xml" effectIdle="CH/Fly/Eff_FlyTypeC_PaperPlane_Idle.xml" aniIdle="FlyTypeC_Idle_A" aniRun="FlyTypeC_Run_A" onGroundDisable="1" />
+			<motion>
+				<motionProperty ignoreCollisionGroups="20" />
+			</motion>
+		</level>
+	</skill>
+	<skill id="80010058" comment="flight">
+		<basic>
+			<kinds type="3" subType="7" unrideOnUse="1" />
+			<stateAttr battle="0" ignoreReduceCooldown="1" />
+		</basic>
+		<level value="1">
+			<beginCondition onlyFlyableMap="1" />
+			<glideProperty gravity="5" heightLimit="400" horizontalVelocity="700" verticalVelocity="100" verticalVibrateAmplitude="100" verticalVibrateFrequency="2000" bEffect="1" effectRun="CH/Fly/40400065_UGC_CarpPilot_Run_A.xml" effectIdle="CH/Fly/40400065_UGC_CarpPilot_Idle_A.xml" aniIdle="FlyType003_Idle_A" aniRun="FlyType003_Run_A" />
+			<motion>
+				<motionProperty ignoreCollisionGroups="20" />
+			</motion>
+		</level>
+	</skill>
+	<skill id="80010059" comment="flight">
+		<basic>
+			<kinds type="3" subType="7" unrideOnUse="1" />
+			<stateAttr battle="0" ignoreReduceCooldown="1" />
+		</basic>
+		<level value="1">
+			<beginCondition onlyFlyableMap="1" />
+			<glideProperty gravity="5" heightLimit="2600" horizontalVelocity="250" verticalVelocity="250" verticalVibrateAmplitude="210" verticalVibrateFrequency="3000" bEffect="1" effectRun="CH/Fly/Eff_FlyTypeF_Chocoball_Run.xml" effectIdle="CH/Fly/Eff_FlyTypeF_Chocoball_Idle.xml" aniIdle="FlyTypeF_Idle_A" aniRun="FlyTypeF_Run_A" />
+			<motion>
+				<motionProperty ignoreCollisionGroups="20" />
+			</motion>
+		</level>
+	</skill>
+	<skill id="80010060" comment="ride">
+		<basic>
+			<kinds type="3" subType="7" unrideOnUse="1" />
+			<stateAttr battle="0" ignoreReduceCooldown="1" />
+		</basic>
+		<level value="1">
+			<beginCondition onlyFlyableMap="1" />
+			<glideProperty gravity="5" heightLimit="400" horizontalVelocity="650" verticalVelocity="100" verticalVibrateAmplitude="100" verticalVibrateFrequency="5000" bEffect="1" effectRun="CH/Fly/50600229_UGC_ElectricFan_Run_A.xml" effectIdle="CH/Fly/50600229_UGC_ElectricFan_Idle_A.xml" aniIdle="FlyType002_Idle_A" aniRun="FlyType002_Run_A" />
+			<motion>
+				<motionProperty ignoreCollisionGroups="20" />
+			</motion>
+		</level>
+	</skill>
+	<skill id="80010061" comment="flight">
+		<basic>
+			<kinds type="3" subType="7" unrideOnUse="1" />
+			<stateAttr battle="0" ignoreReduceCooldown="1" />
+		</basic>
+		<level value="1">
+			<beginCondition onlyFlyableMap="1" />
+			<glideProperty gravity="5" heightLimit="2600" horizontalVelocity="250" verticalVelocity="250" verticalVibrateAmplitude="210" verticalVibrateFrequency="3000" bEffect="1" effectRun="CH/Fly/Eff_FlyType_Mushroomairballoon_Run_A.xml" effectIdle="CH/Fly/Eff_FlyType_Mushroomairballoon_Idle_A.xml" aniIdle="FlyTypeV_Idle_A" aniRun="FlyTypeV_Run_A" />
+			<motion>
+				<motionProperty ignoreCollisionGroups="20" />
+			</motion>
+		</level>
+	</skill>
+	<skill id="80010062" comment="flight">
+		<basic>
+			<kinds type="3" subType="7" unrideOnUse="1" />
+			<stateAttr battle="0" ignoreReduceCooldown="1" />
+		</basic>
+		<level value="1">
+			<beginCondition onlyFlyableMap="1" />
+			<glideProperty gravity="5" heightLimit="400" horizontalVelocity="700" verticalVelocity="100" verticalVibrateAmplitude="100" verticalVibrateFrequency="2000" bEffect="1" effectRun="CH/Fly/Eff_FlyTypeC_MushroomBoat_Run_A.xml" effectIdle="CH/Fly/Eff_FlyTypeC_MushroomBoat_Idle_A.xml" aniIdle="FlyType004_Idle_A" aniRun="FlyType004_Idle_A" />
+			<motion>
+				<motionProperty ignoreCollisionGroups="20" />
+			</motion>
+		</level>
+	</skill>
+	<skill id="80010063" comment="flight">
+		<basic>
+			<kinds type="3" subType="7" unrideOnUse="1" />
+			<stateAttr battle="0" ignoreReduceCooldown="1" />
+		</basic>
+		<level value="1">
+			<beginCondition onlyFlyableMap="1" />
+			<glideProperty gravity="5" heightLimit="400" horizontalVelocity="700" verticalVelocity="100" verticalVibrateAmplitude="100" verticalVibrateFrequency="2000" bEffect="1" effectRun="CH/Fly/40400054_UGC_NewMoon_Run_A.xml" effectIdle="CH/Fly/40400054_UGC_NewMoon_Idle_A.xml" aniIdle="FlyType004_Idle_A" aniRun="FlyType004_Idle_A" />
+			<motion>
+				<motionProperty ignoreCollisionGroups="20" />
+			</motion>
+		</level>
+	</skill>
+	<skill id="80010064" comment="flight">
+		<basic>
+			<kinds type="3" subType="7" unrideOnUse="1" />
+			<stateAttr battle="0" ignoreReduceCooldown="1" />
+		</basic>
+		<level value="1">
+			<beginCondition onlyFlyableMap="1" />
+			<glideProperty gravity="5" heightLimit="400" horizontalVelocity="700" verticalVelocity="100" verticalVibrateAmplitude="100" verticalVibrateFrequency="2000" bEffect="1" effectRun="CH/Fly/40400040_F_HooverBoard_Run_A.xml" effectIdle="CH/Fly/40400040_F_HooverBoard_Idle_A.xml" aniIdle="FlyType012_Idle_A" aniRun="FlyType012_Run_A" />
+			<motion>
+				<motionProperty ignoreCollisionGroups="20" />
+			</motion>
+		</level>
+	</skill>
+	<skill id="80010065" comment="flight">
+		<basic>
+			<kinds type="3" subType="7" unrideOnUse="1" />
+			<stateAttr battle="0" ignoreReduceCooldown="1" />
+		</basic>
+		<level value="1">
+			<beginCondition onlyFlyableMap="1" />
+			<glideProperty gravity="5" heightLimit="2600" horizontalVelocity="350" verticalVelocity="250" verticalVibrateAmplitude="210" verticalVibrateFrequency="1500" bEffect="1" effectRun="CH/Fly/40400102_F_clover_Run_A.xml" effectIdle="CH/Fly/40400102_F_clover_Idle_A.xml" aniIdle="FlyTypeA_Idle_A" aniRun="FlyTypeA_Run_A" />
+			<motion>
+				<motionProperty ignoreCollisionGroups="20" />
+			</motion>
+		</level>
+	</skill>
+	<skill id="80010066" comment="flight">
+		<basic>
+			<kinds type="3" subType="7" unrideOnUse="1" />
+			<stateAttr battle="0" ignoreReduceCooldown="1" />
+		</basic>
+		<level value="1">
+			<beginCondition onlyFlyableMap="1" />
+			<glideProperty gravity="5" heightLimit="2600" horizontalVelocity="250" verticalVelocity="250" verticalVibrateAmplitude="210" verticalVibrateFrequency="1500" bEffect="1" effectRun="CH/Fly/40400102_F_clover_Run_A.xml" effectIdle="CH/Fly/40400102_F_clover_Idle_A.xml" aniIdle="FlyTypeA_Idle_A" aniRun="FlyTypeA_Run_A" />
+			<motion>
+				<motionProperty ignoreCollisionGroups="20" />
+			</motion>
+		</level>
+	</skill>
+	<skill id="80010067" comment="New가챠전용">
+		<basic>
+			<kinds type="3" subType="7" unrideOnUse="1" />
+			<stateAttr battle="0" ignoreReduceCooldown="1" />
+		</basic>
+		<level value="1">
+			<beginCondition onlyFlyableMap="1" />
+			<glideProperty gravity="5" heightLimit="1200" horizontalVelocity="650" verticalVelocity="170" verticalVibrateAmplitude="50" verticalVibrateFrequency="2000" bEffect="1" effectRun="CH/Fly/40410016_F_CreamWhale_Run.xml" effectIdle="CH/Fly/40410016_F_CreamWhale_Idle.xml" aniIdle="FlyType029_Idle" aniRun="FlyType029_Run" />
+			<motion>
+				<motionProperty ignoreCollisionGroups="20" />
+			</motion>
+		</level>
+	</skill>
+	<skill id="80010068" comment="New가챠전용">
+		<basic>
+			<kinds type="3" subType="7" unrideOnUse="1" />
+			<stateAttr battle="0" ignoreReduceCooldown="1" />
+		</basic>
+		<level value="1">
+			<beginCondition onlyFlyableMap="1" />
+			<glideProperty gravity="5" heightLimit="1200" horizontalVelocity="650" verticalVelocity="170" verticalVibrateAmplitude="50" verticalVibrateFrequency="2000" bEffect="1" effectRun="CH/Fly/40410018_F_PearlShell_Run.xml" effectIdle="CH/Fly/40410018_F_PearlShell_Idle.xml" aniIdle="FlyType036_Idle" aniRun="FlyType036_Run" />
+			<motion>
+				<motionProperty ignoreCollisionGroups="20" />
+			</motion>
+		</level>
+	</skill>
+	<skill id="80010069" comment="New가챠전용">
+		<basic>
+			<kinds type="3" subType="7" unrideOnUse="1" />
+			<stateAttr battle="0" ignoreReduceCooldown="1" />
+		</basic>
+		<level value="1">
+			<beginCondition onlyFlyableMap="1" />
+			<glideProperty gravity="5" heightLimit="2600" horizontalVelocity="350" verticalVelocity="250" verticalVibrateAmplitude="210" verticalVibrateFrequency="1500" bEffect="1" effectRun="CH/Fly/40410019_F_Flamingo_Run.xml" effectIdle="CH/Fly/40410019_F_Flamingo_Idle.xml" aniIdle="FlyType030_Idle" aniRun="FlyType030_Run" />
+			<motion>
+				<motionProperty ignoreCollisionGroups="20" />
+			</motion>
+		</level>
+	</skill>
+	<skill id="80010070" comment="New가챠전용">
+		<basic>
+			<kinds type="3" subType="7" unrideOnUse="1" />
+			<stateAttr battle="0" ignoreReduceCooldown="1" />
+		</basic>
+		<level value="1">
+			<beginCondition onlyFlyableMap="1" />
+			<glideProperty gravity="5" heightLimit="2600" horizontalVelocity="350" verticalVelocity="250" verticalVibrateAmplitude="210" verticalVibrateFrequency="1500" bEffect="1" effectRun="CH/Fly/40410020_F_ParaGliding_Run.xml" effectIdle="CH/Fly/40410020_F_ParaGliding_Idle.xml" aniIdle="FlyType004_Idle_A" aniRun="FlyType004_Idle_A" />
+			<motion>
+				<motionProperty ignoreCollisionGroups="20" />
+			</motion>
+		</level>
+	</skill>
+	<skill id="80010071" comment="flight">
+		<basic>
+			<kinds type="3" subType="7" unrideOnUse="1" />
+			<stateAttr battle="0" ignoreReduceCooldown="1" />
+		</basic>
+		<level value="1">
+			<beginCondition onlyFlyableMap="1" />
+			<glideProperty gravity="5" heightLimit="2600" horizontalVelocity="650" verticalVelocity="250" verticalVibrateAmplitude="100" verticalVibrateFrequency="2000" bEffect="1" effectRun="CH/Fly/40400071_UGC_BlackPhoenix_Run_A.xml" effectIdle="CH/Fly/40400071_UGC_BlackPhoenix_Idle_A.xml" aniIdle="FlyType005_Idle_A" aniRun="FlyType005_Run_A" />
+			<motion>
+				<motionProperty ignoreCollisionGroups="20" />
+			</motion>
+		</level>
+	</skill>
+	<skill id="80010072" comment="flight">
+		<basic>
+			<kinds type="3" subType="7" unrideOnUse="1" />
+			<stateAttr battle="0" ignoreReduceCooldown="1" />
+		</basic>
+		<level value="1">
+			<beginCondition onlyFlyableMap="1" />
+			<glideProperty gravity="5" heightLimit="400" horizontalVelocity="700" verticalVelocity="100" verticalVibrateAmplitude="100" verticalVibrateFrequency="2000" bEffect="1" effectRun="CH/Fly/40400072_F_FantasticRay_Run_A.xml" effectIdle="CH/Fly/40400072_F_FantasticRay_Idle_A.xml" aniIdle="FlyType013_Idle_A" aniRun="FlyType013_Run_A" />
+			<motion>
+				<motionProperty ignoreCollisionGroups="20" />
+			</motion>
+		</level>
+	</skill>
+	<skill id="80010073" comment="flight">
+		<basic>
+			<kinds type="3" subType="7" unrideOnUse="1" />
+			<stateAttr battle="0" ignoreReduceCooldown="1" />
+		</basic>
+		<level value="1">
+			<beginCondition onlyFlyableMap="1" />
+			<glideProperty gravity="5" heightLimit="400" horizontalVelocity="700" verticalVelocity="100" verticalVibrateAmplitude="100" verticalVibrateFrequency="2000" bEffect="1" effectRun="CH/Fly/40400073_F_Molamola_Run_A.xml" effectIdle="CH/Fly/40400073_F_Molamola_Idle_A.xml" aniIdle="FlyTypeW_Idle_A" aniRun="FlyTypeW_Run_A" />
+			<motion>
+				<motionProperty ignoreCollisionGroups="20" />
+			</motion>
+		</level>
+	</skill>
+	<skill id="80010074" comment="flight">
+		<basic>
+			<kinds type="3" subType="7" unrideOnUse="1" />
+			<stateAttr battle="0" ignoreReduceCooldown="1" />
+		</basic>
+		<level value="1">
+			<beginCondition onlyFlyableMap="1" />
+			<glideProperty gravity="5" heightLimit="400" horizontalVelocity="700" verticalVelocity="100" verticalVibrateAmplitude="100" verticalVibrateFrequency="2000" bEffect="1" effectRun="CH/Fly/40400074_F_WaterJetpack_Run_A.xml" effectIdle="CH/Fly/40400074_F_WaterJetpack_Idle_A.xml" aniIdle="FlyType019_Idle_A" aniRun="FlyType019_Run_A" />
+			<motion>
+				<motionProperty ignoreCollisionGroups="20" />
+			</motion>
+		</level>
+	</skill>
+	<skill id="80010075" comment="flight">
+		<basic>
+			<kinds type="3" subType="7" unrideOnUse="1" />
+			<stateAttr battle="0" ignoreReduceCooldown="1" />
+		</basic>
+		<level value="1">
+			<beginCondition onlyFlyableMap="1" />
+			<glideProperty gravity="5" heightLimit="400" horizontalVelocity="700" verticalVelocity="100" verticalVibrateAmplitude="100" verticalVibrateFrequency="2000" bEffect="1" effectRun="CH/Fly/40400075_F_Fan_Run_A.xml" effectIdle="CH/Fly/40400075_F_Fan_Idle_A.xml" aniIdle="FlyTypeC_Idle_A" aniRun="FlyTypeC_Run_A" />
+			<motion>
+				<motionProperty ignoreCollisionGroups="20" />
+			</motion>
+		</level>
+	</skill>
+	<skill id="80010076" comment="flight">
+		<basic>
+			<kinds type="3" subType="7" unrideOnUse="1" />
+			<stateAttr battle="0" ignoreReduceCooldown="1" />
+		</basic>
+		<level value="1">
+			<beginCondition onlyFlyableMap="1" />
+			<glideProperty gravity="5" heightLimit="400" horizontalVelocity="700" verticalVelocity="100" verticalVibrateAmplitude="100" verticalVibrateFrequency="2000" bEffect="1" effectRun="CH/Fly/40400076_F_carpet_Run_A.xml" effectIdle="CH/Fly/40400076_F_carpet_Idle_A.xml" aniIdle="FlyType015_Idle_A" aniRun="FlyType015_Run_A" />
+			<motion>
+				<motionProperty ignoreCollisionGroups="20" />
+			</motion>
+		</level>
+	</skill>
+	<skill id="80010077" comment="New가챠전용">
+		<basic>
+			<kinds type="3" subType="7" unrideOnUse="1" />
+			<stateAttr battle="0" ignoreReduceCooldown="1" />
+		</basic>
+		<level value="1">
+			<beginCondition onlyFlyableMap="1" />
+			<glideProperty gravity="5" heightLimit="1200" horizontalVelocity="650" verticalVelocity="170" verticalVibrateAmplitude="50" verticalVibrateFrequency="2000" bEffect="1" effectRun="CH/Fly/40410021_F_FlyingCat_Run.xml" effectIdle="CH/Fly/40410021_F_FlyingCat_Idle.xml" aniIdle="FlyType028_Idle" aniRun="FlyType028_Run" />
+			<motion>
+				<motionProperty ignoreCollisionGroups="20" />
+			</motion>
+		</level>
+	</skill>
+	<skill id="80010078" comment="New가챠전용">
+		<basic>
+			<kinds type="3" subType="7" unrideOnUse="1" />
+			<stateAttr battle="0" ignoreReduceCooldown="1" />
+		</basic>
+		<level value="1">
+			<beginCondition onlyFlyableMap="1" />
+			<glideProperty gravity="5" heightLimit="1300" horizontalAccelerate="200" horizontalVelocity="100" verticalVelocity="170" verticalVibrateAmplitude="150" verticalVibrateFrequency="2000" glideHorizontalAccelerateLimit="550" bEffect="1" effectRun="CH/Fly/40410022_F_FairyBed_Run.xml" effectIdle="CH/Fly/40410022_F_FairyBed_Idle.xml" aniIdle="FlyType018_Idle_A" aniRun="FlyType018_Run_A" />
+			<motion>
+				<motionProperty ignoreCollisionGroups="20" />
+			</motion>
+		</level>
+	</skill>
+	<skill id="80010079" comment="flight">
+		<basic>
+			<kinds type="3" subType="7" unrideOnUse="1" />
+			<stateAttr battle="0" ignoreReduceCooldown="1" />
+		</basic>
+		<level value="1">
+			<beginCondition onlyFlyableMap="1" />
+			<glideProperty gravity="5" heightLimit="400" horizontalVelocity="700" verticalVelocity="100" verticalVibrateAmplitude="100" verticalVibrateFrequency="2000" bEffect="1" effectRun="CH/Fly/40400079_F_Flyingship_Run_A.xml" effectIdle="CH/Fly/40400079_F_Flyingship_Idle_A.xml" aniIdle="FlyType004_Idle_A" aniRun="FlyType004_Run_A" />
+			<motion>
+				<motionProperty ignoreCollisionGroups="20" />
+			</motion>
+		</level>
+	</skill>
+	<skill id="80010080" comment="flight">
+		<basic>
+			<kinds type="3" subType="7" unrideOnUse="1" />
+			<stateAttr battle="0" ignoreReduceCooldown="1" />
+		</basic>
+		<level value="1">
+			<beginCondition onlyFlyableMap="1" />
+			<glideProperty gravity="5" heightLimit="400" horizontalVelocity="650" verticalVelocity="100" verticalVibrateAmplitude="100" verticalVibrateFrequency="5000" bEffect="1" effectRun="CH/Fly/40400080_F_tornado_Run_A.xml" effectIdle="CH/Fly/40400080_F_tornado_Idle_A.xml" aniIdle="FlyType011_Idle_A" aniRun="FlyType011_Run_A" />
+			<motion>
+				<motionProperty ignoreCollisionGroups="20" />
+			</motion>
+		</level>
+	</skill>
+	<skill id="80010081" comment="flight">
+		<basic>
+			<kinds type="3" subType="7" unrideOnUse="1" />
+			<stateAttr battle="0" ignoreReduceCooldown="1" />
+		</basic>
+		<level value="1">
+			<beginCondition onlyFlyableMap="1" />
+			<glideProperty gravity="5" heightLimit="400" horizontalVelocity="700" verticalVelocity="100" verticalVibrateAmplitude="100" verticalVibrateFrequency="2000" bEffect="1" effectRun="CH/Fly/40400081_R_Flybed_Run_A.xml" effectIdle="CH/Fly/40400081_R_Flybed_Idle_A.xml" aniIdle="FlyType018_Idle_A" aniRun="FlyType018_Run_A" />
+			<motion>
+				<motionProperty ignoreCollisionGroups="20" />
+			</motion>
+		</level>
+	</skill>
+	<skill id="80010082" comment="flight">
+		<basic>
+			<kinds type="3" subType="7" unrideOnUse="1" />
+			<stateAttr battle="0" ignoreReduceCooldown="1" />
+		</basic>
+		<level value="1">
+			<beginCondition onlyFlyableMap="1" />
+			<glideProperty gravity="5" heightLimit="2600" horizontalVelocity="250" verticalVelocity="250" verticalVibrateAmplitude="210" verticalVibrateFrequency="3000" bEffect="1" effectRun="CH/Fly/40400082_UGC_PumpkinBalloon_Run_A.xml" effectIdle="CH/Fly/40400082_UGC_PumpkinBalloon_Idle_A.xml" aniIdle="FlyTypeA_Idle_A" aniRun="FlyTypeA_Run_A" />
+			<motion>
+				<motionProperty ignoreCollisionGroups="20" />
+			</motion>
+		</level>
+	</skill>
+	<skill id="80010083" comment="New가챠전용">
+		<basic>
+			<kinds type="3" subType="7" unrideOnUse="1" />
+			<stateAttr battle="0" ignoreReduceCooldown="1" />
+		</basic>
+		<level value="1">
+			<beginCondition onlyFlyableMap="1" />
+			<glideProperty gravity="5" heightLimit="400" horizontalVelocity="700" verticalVelocity="100" verticalVibrateAmplitude="100" verticalVibrateFrequency="2000" bEffect="1" effectRun="CH/Fly/40410023_F_FlyingMaple_Run.xml" effectIdle="CH/Fly/40410023_F_FlyingMaple_Idle.xml" aniIdle="FlyTypeE_Idle_A" aniRun="FlyTypeE_Run_A" />
+			<motion>
+				<motionProperty ignoreCollisionGroups="20" />
+			</motion>
+		</level>
+	</skill>
+	<skill id="80010084" comment="New가챠전용">
+		<basic>
+			<kinds type="3" subType="7" unrideOnUse="1" />
+			<stateAttr battle="0" ignoreReduceCooldown="1" />
+		</basic>
+		<level value="1">
+			<beginCondition onlyFlyableMap="1" />
+			<glideProperty gravity="5" heightLimit="1300" horizontalAccelerate="200" horizontalVelocity="100" verticalVelocity="170" verticalVibrateAmplitude="150" verticalVibrateFrequency="2000" glideHorizontalAccelerateLimit="550" bEffect="1" effectRun="CH/Fly/40410024_F_Halloween01_Run.xml" effectIdle="CH/Fly/40410024_F_Halloween01_Idle.xml" aniIdle="FlyType033_Idle" aniRun="FlyType033_Run" />
+			<motion>
+				<motionProperty ignoreCollisionGroups="20" />
+			</motion>
+		</level>
+	</skill>
+	<skill id="80010085" comment="New가챠전용">
+		<basic>
+			<kinds type="3" subType="7" unrideOnUse="1" />
+			<stateAttr battle="0" ignoreReduceCooldown="1" />
+		</basic>
+		<level value="1">
+			<beginCondition onlyFlyableMap="1" />
+			<glideProperty gravity="5" heightLimit="1300" horizontalAccelerate="200" horizontalVelocity="100" verticalVelocity="170" verticalVibrateAmplitude="150" verticalVibrateFrequency="2000" glideHorizontalAccelerateLimit="550" bEffect="1" effectRun="CH/Fly/40410013_F_MusicNote_Run.xml" effectIdle="CH/Fly/40410013_F_MusicNote_Idle.xml" aniIdle="FlyType004_Idle_A" aniRun="FlyType004_Idle_A" />
+			<motion>
+				<motionProperty ignoreCollisionGroups="20" />
+			</motion>
+		</level>
+	</skill>
+	<skill id="80010086" comment="New가챠전용">
+		<basic>
+			<kinds type="3" subType="7" unrideOnUse="1" />
+			<stateAttr battle="0" ignoreReduceCooldown="1" />
+		</basic>
+		<level value="1">
+			<beginCondition onlyFlyableMap="1" />
+			<glideProperty gravity="5" heightLimit="400" horizontalVelocity="700" verticalVelocity="100" verticalVibrateAmplitude="100" verticalVibrateFrequency="2000" bEffect="1" effectRun="CH/Fly/40410015_F_Rocketpal_Run.xml" effectIdle="CH/Fly/40410015_F_Rocketpal_Idle.xml" aniIdle="FlyType035_Idle" aniRun="FlyType035_Run" />
+			<motion>
+				<motionProperty ignoreCollisionGroups="20" />
+			</motion>
+		</level>
+	</skill>
+	<skill id="80010087" comment="flight">
+		<basic>
+			<kinds type="3" subType="7" unrideOnUse="1" />
+			<stateAttr battle="0" ignoreReduceCooldown="1" />
+		</basic>
+		<level value="1">
+			<beginCondition onlyFlyableMap="1" />
+			<glideProperty gravity="5" heightLimit="2600" horizontalVelocity="250" verticalVelocity="250" verticalVibrateAmplitude="210" verticalVibrateFrequency="1500" bEffect="1" effectRun="CH/Fly/Eff_FlyType_FullMoonBalloon01_Run_A.xml" effectIdle="CH/Fly/Eff_FlyType_FullMoonBalloon01_Idle_A.xml" aniIdle="FlyTypeS_Idle_A" aniRun="FlyTypeS_Run_A" />
+			<motion>
+				<motionProperty ignoreCollisionGroups="20" />
+			</motion>
+		</level>
+	</skill>
+	<skill id="80010088" comment="flight">
+		<basic>
+			<kinds type="3" subType="7" unrideOnUse="1" />
+			<stateAttr battle="0" ignoreReduceCooldown="1" />
+		</basic>
+		<level value="1">
+			<beginCondition onlyFlyableMap="1" />
+			<glideProperty gravity="5" heightLimit="400" horizontalVelocity="650" verticalVelocity="100" verticalVibrateAmplitude="100" verticalVibrateFrequency="5000" bEffect="1" effectRun="CH/Fly/40400088_UGC_DuckyFan_Run_A.xml" effectIdle="CH/Fly/40400088_UGC_DuckyFan_Idle_A.xml" aniIdle="FlyType002_Idle_A" aniRun="FlyType002_Run_A" />
+			<motion>
+				<motionProperty ignoreCollisionGroups="20" />
+			</motion>
+		</level>
+	</skill>
+	<skill id="80010089" comment="flight">
+		<basic>
+			<kinds type="3" subType="7" unrideOnUse="1" />
+			<stateAttr battle="0" ignoreReduceCooldown="1" />
+		</basic>
+		<level value="1">
+			<beginCondition onlyFlyableMap="1" />
+			<glideProperty gravity="5" heightLimit="400" horizontalVelocity="700" verticalVelocity="100" verticalVibrateAmplitude="100" verticalVibrateFrequency="2000" bEffect="1" effectRun="CH/Fly/40400089_F_Fan_Run_A.xml" effectIdle="CH/Fly/40400089_F_Fan_Idle_A.xml" aniIdle="FlyTypeC_Idle_A" aniRun="FlyTypeC_Run_A" />
+			<motion>
+				<motionProperty ignoreCollisionGroups="20" />
+			</motion>
+		</level>
+	</skill>
+	<skill id="80010090" comment="flight">
+		<basic>
+			<kinds type="3" subType="7" unrideOnUse="1" />
+			<stateAttr battle="0" ignoreReduceCooldown="1" />
+		</basic>
+		<level value="1">
+			<beginCondition onlyFlyableMap="1" />
+			<glideProperty gravity="5" heightLimit="400" horizontalVelocity="700" verticalVelocity="100" verticalVibrateAmplitude="100" verticalVibrateFrequency="2000" bEffect="1" effectRun="CH/Fly/40400095_F_Molamola_Run_A.xml" effectIdle="CH/Fly/40400095_F_Molamola_Idle_A.xml" aniIdle="FlyTypeW_Idle_A" aniRun="FlyTypeW_Run_A" />
+			<motion>
+				<motionProperty ignoreCollisionGroups="20" />
+			</motion>
+		</level>
+	</skill>
+	<skill id="80010091" comment="flight">
+		<basic>
+			<kinds type="3" subType="7" unrideOnUse="1" />
+			<stateAttr battle="0" ignoreReduceCooldown="1" />
+		</basic>
+		<level value="1">
+			<beginCondition onlyFlyableMap="1" />
+			<glideProperty gravity="5" heightLimit="400" horizontalVelocity="700" verticalVelocity="100" verticalVibrateAmplitude="100" verticalVibrateFrequency="2000" bEffect="1" effectRun="CH/Fly/40400060_F_Planet_Run.xml" effectIdle="CH/Fly/40400060_F_Planet_Idle.xml" aniIdle="Ride_Idle_018" aniRun="Ride_Idle_018" />
+			<motion>
+				<motionProperty ignoreCollisionGroups="20" />
+			</motion>
+		</level>
+	</skill>
+	<skill id="80010094" comment="flight">
+		<basic>
+			<kinds type="3" subType="7" unrideOnUse="1" />
+			<stateAttr battle="0" ignoreReduceCooldown="1" />
+		</basic>
+		<level value="1">
+			<beginCondition onlyFlyableMap="1" />
+			<glideProperty gravity="5" heightLimit="400" horizontalVelocity="700" verticalVelocity="100" verticalVibrateAmplitude="100" verticalVibrateFrequency="2000" bEffect="1" effectRun="CH/Fly/Eff_FlyTypeN_Run.xml" effectIdle="CH/Fly/Eff_FlyTypeN_Idle.xml" aniIdle="FlyTypeN_Idle_A" aniRun="FlyTypeN_Run_A" />
+			<motion>
+				<motionProperty ignoreCollisionGroups="20" />
+			</motion>
+		</level>
+	</skill>
+	<skill id="80010095" comment="flight">
+		<basic>
+			<kinds type="3" subType="7" unrideOnUse="1" />
+			<stateAttr battle="0" ignoreReduceCooldown="1" />
+		</basic>
+		<level value="1">
+			<beginCondition onlyFlyableMap="1" />
+			<glideProperty gravity="5" heightLimit="400" horizontalVelocity="700" verticalVelocity="100" verticalVibrateAmplitude="100" verticalVibrateFrequency="2000" bEffect="1" effectRun="CH/Fly/40400090_F_OrienBrush_Run_A.xml" effectIdle="CH/Fly/40400090_F_OrienBrush_Idle_A.xml" aniIdle="FlyType007_Idle_A" aniRun="FlyType007_Run_A" />
+			<motion>
+				<motionProperty ignoreCollisionGroups="20" />
+			</motion>
+		</level>
+	</skill>
+	<skill id="80010096" comment="flight">
+		<basic>
+			<kinds type="3" subType="7" unrideOnUse="1" />
+			<stateAttr battle="0" ignoreReduceCooldown="1" />
+		</basic>
+		<level value="1">
+			<beginCondition onlyFlyableMap="1" />
+			<glideProperty gravity="5" heightLimit="400" horizontalVelocity="650" verticalVelocity="100" verticalVibrateAmplitude="100" verticalVibrateFrequency="2000" bEffect="1" effectRun="CH/Fly/40400096_F_Bathtub_Run_A.xml" effectIdle="CH/Fly/40400096_F_Bathtub_Idle_A.xml" aniIdle="FlyType006_Idle_A" aniRun="FlyType006_Run_A" />
+			<motion>
+				<motionProperty ignoreCollisionGroups="20" />
+			</motion>
+		</level>
+	</skill>
+	<skill id="80010097" comment="flight">
+		<basic>
+			<kinds type="3" subType="7" unrideOnUse="1" />
+			<stateAttr battle="0" ignoreReduceCooldown="1" />
+		</basic>
+		<level value="1">
+			<beginCondition onlyFlyableMap="1" />
+			<glideProperty gravity="5" heightLimit="400" horizontalVelocity="650" verticalVelocity="100" verticalVibrateAmplitude="100" verticalVibrateFrequency="2000" bEffect="1" effectRun="CH/Fly/40400110_F_razer_Run_A.xml" effectIdle="CH/Fly/40400110_F_razer_Idle_A.xml" aniIdle="FlyTypeC_Idle_A" aniRun="FlyTypeC_Run_A" />
+			<motion>
+				<motionProperty ignoreCollisionGroups="20" />
+			</motion>
+		</level>
+	</skill>
+	<skill id="80010098" comment="flight">
+		<basic>
+			<kinds type="3" subType="7" unrideOnUse="1" />
+			<stateAttr battle="0" ignoreReduceCooldown="1" />
+		</basic>
+		<level value="1">
+			<beginCondition onlyFlyableMap="1" />
+			<glideProperty gravity="5" heightLimit="1300" horizontalAccelerate="200" horizontalVelocity="50" verticalVelocity="170" verticalVibrateAmplitude="150" verticalVibrateFrequency="2000" glideHorizontalAccelerateLimit="500" bEffect="1" effectRun="CH/Fly/40400097_F_Melody_Run_A.xml" effectIdle="CH/Fly/40400097_F_Melody_Idle_A.xml" aniIdle="FlyType004_Idle_A" aniRun="FlyType004_Idle_A" />
+			<motion>
+				<motionProperty ignoreCollisionGroups="20" />
+			</motion>
+		</level>
+	</skill>
+	<skill id="80010099" comment="flight">
+		<basic>
+			<kinds type="3" subType="7" unrideOnUse="1" />
+			<stateAttr battle="0" ignoreReduceCooldown="1" />
+		</basic>
+		<level value="1">
+			<beginCondition onlyFlyableMap="1" />
+			<glideProperty gravity="5" heightLimit="1300" horizontalAccelerate="200" horizontalVelocity="100" verticalVelocity="170" verticalVibrateAmplitude="150" verticalVibrateFrequency="2000" glideHorizontalAccelerateLimit="550" bEffect="1" effectRun="CH/Fly/40400097_F_Melody_Run_A.xml" effectIdle="CH/Fly/40400097_F_Melody_Idle_A.xml" aniIdle="FlyType004_Idle_A" aniRun="FlyType004_Idle_A" />
+			<motion>
+				<motionProperty ignoreCollisionGroups="20" />
+			</motion>
+		</level>
+	</skill>
+	<skill id="80010100" comment="flight">
+		<basic>
+			<kinds type="3" subType="7" unrideOnUse="1" />
+			<stateAttr battle="0" ignoreReduceCooldown="1" />
+		</basic>
+		<level value="1">
+			<beginCondition onlyFlyableMap="1" />
+			<glideProperty gravity="5" heightLimit="1300" horizontalAccelerate="200" horizontalVelocity="100" verticalVelocity="170" verticalVibrateAmplitude="70" verticalVibrateFrequency="3000" glideHorizontalAccelerateLimit="550" bEffect="1" effectRun="CH/Fly/40400046_IceDragon_Run_A.xml" effectIdle="CH/Fly/40400046_IceDragon_Idle_A.xml" aniIdle="FlyTypeH_Idle_A" aniRun="FlyTypeH_Idle_A" />
+			<motion>
+				<motionProperty ignoreCollisionGroups="20" />
+			</motion>
+		</level>
+	</skill>
+	<skill id="80010101" comment="flight">
+		<basic>
+			<kinds type="3" subType="7" unrideOnUse="1" />
+			<stateAttr battle="0" ignoreReduceCooldown="1" />
+		</basic>
+		<level value="1">
+			<beginCondition onlyFlyableMap="1" />
+			<glideProperty gravity="5" heightLimit="400" horizontalVelocity="700" verticalVelocity="100" verticalVibrateAmplitude="100" verticalVibrateFrequency="2000" bEffect="1" effectRun="CH/Fly/40400062_F_ChristmasSocks_Run_A.xml" effectIdle="CH/Fly/40400062_F_ChristmasSocks_Idle_A.xml" aniIdle="FlyTypeK_Idle_A" aniRun="FlyTypeK_Run_A" />
+			<motion>
+				<motionProperty ignoreCollisionGroups="20" />
+			</motion>
+		</level>
+	</skill>
+	<skill id="80010102" comment="flight">
+		<basic>
+			<kinds type="3" subType="7" unrideOnUse="1" />
+			<stateAttr battle="0" ignoreReduceCooldown="1" />
+		</basic>
+		<level value="1">
+			<beginCondition onlyFlyableMap="1" />
+			<glideProperty gravity="5" heightLimit="2600" horizontalVelocity="250" verticalVelocity="250" verticalVibrateAmplitude="210" verticalVibrateFrequency="3000" bEffect="1" effectRun="CH/Fly/40400064_F_Snowman_Run_A.xml" effectIdle="CH/Fly/40400064_F_Snowman_Idle_A.xml" aniIdle="FlyTypeA_Idle_A" aniRun="FlyTypeA_Run_A" />
+			<motion>
+				<motionProperty ignoreCollisionGroups="20" />
+			</motion>
+		</level>
+	</skill>
+	<skill id="80010103" comment="flight">
+		<basic>
+			<kinds type="3" subType="7" unrideOnUse="1" />
+			<stateAttr battle="0" ignoreReduceCooldown="1" />
+		</basic>
+		<level value="1">
+			<beginCondition onlyFlyableMap="1" />
+			<glideProperty gravity="5" heightLimit="1300" horizontalAccelerate="200" horizontalVelocity="100" verticalVelocity="170" verticalVibrateAmplitude="50" verticalVibrateFrequency="2000" glideHorizontalAccelerateLimit="550" bEffect="1" effectRun="CH/Fly/40400098_F_spaceplane_Run_A.xml" effectIdle="CH/Fly/40400098_F_spaceplane_Idle_A.xml" aniIdle="FlyType004_Idle_A" aniRun="FlyType004_Idle_A" />
+			<motion>
+				<motionProperty ignoreCollisionGroups="20" />
+			</motion>
+		</level>
+	</skill>
+	<skill id="80010104" comment="flight">
+		<basic>
+			<kinds type="3" subType="7" unrideOnUse="1" />
+			<stateAttr battle="0" ignoreReduceCooldown="1" />
+		</basic>
+		<level value="1">
+			<beginCondition onlyFlyableMap="1" />
+			<glideProperty gravity="5" heightLimit="1200" horizontalVelocity="650" verticalVelocity="170" verticalVibrateAmplitude="150" verticalVibrateFrequency="1500" bEffect="1" effectRun="CH/Fly/40400099_F_Kylin_Run_A.xml" effectIdle="CH/Fly/40400099_F_Kylin_Idle_A.xml" aniIdle="FlyType008_Idle_A" aniRun="FlyType008_Run_A" />
+			<motion>
+				<motionProperty ignoreCollisionGroups="20" />
+			</motion>
+		</level>
+	</skill>
+	<skill id="80010105" comment="flight">
+		<basic>
+			<kinds type="3" subType="7" unrideOnUse="1" />
+			<stateAttr battle="0" ignoreReduceCooldown="1" />
+		</basic>
+		<level value="1">
+			<beginCondition onlyFlyableMap="1" />
+			<glideProperty gravity="5" heightLimit="1200" horizontalVelocity="650" verticalVelocity="170" verticalVibrateAmplitude="150" verticalVibrateFrequency="1500" bEffect="1" effectRun="CH/Fly/40400100_F_Cupcake_Run_A.xml" effectIdle="CH/Fly/40400100_F_Cupcake_Idle_A.xml" aniIdle="FlyType010_Idle_A" aniRun="FlyType010_Run_A" />
+			<motion>
+				<motionProperty ignoreCollisionGroups="20" />
+			</motion>
+		</level>
+	</skill>
+	<skill id="80010106" comment="flight">
+		<basic>
+			<kinds type="3" subType="7" unrideOnUse="1" />
+			<stateAttr battle="0" ignoreReduceCooldown="1" />
+		</basic>
+		<level value="1">
+			<beginCondition onlyFlyableMap="1" />
+			<glideProperty gravity="5" heightLimit="1200" horizontalVelocity="650" verticalVelocity="170" verticalVibrateAmplitude="50" verticalVibrateFrequency="2000" bEffect="1" effectRun="CH/Fly/40400101_F_Lotus_Run.xml" effectIdle="CH/Fly/40400101_F_Lotus_Idle.xml" aniIdle="FlyTypeC_Idle_A" aniRun="FlyTypeC_Run_A" />
+			<motion>
+				<motionProperty ignoreCollisionGroups="20" />
+			</motion>
+		</level>
+	</skill>
+	<skill id="80010107" comment="flight">
+		<basic>
+			<kinds type="3" subType="7" unrideOnUse="1" />
+			<stateAttr battle="0" ignoreReduceCooldown="1" />
+		</basic>
+		<level value="1">
+			<beginCondition onlyFlyableMap="1" />
+			<glideProperty gravity="5" heightLimit="1200" horizontalVelocity="550" verticalVelocity="170" verticalVibrateAmplitude="50" verticalVibrateFrequency="2000" bEffect="1" effectRun="CH/Fly/40400103_F_Easteregg_Run_A.xml" effectIdle="CH/Fly/40400103_F_Easteregg_Idle_A.xml" aniIdle="FlyType014_Idle_A" aniRun="FlyType014_Run_A" />
+			<motion>
+				<motionProperty ignoreCollisionGroups="20" />
+			</motion>
+		</level>
+	</skill>
+	<skill id="80010108" comment="flight">
+		<basic>
+			<kinds type="3" subType="7" unrideOnUse="1" />
+			<stateAttr battle="0" ignoreReduceCooldown="1" />
+		</basic>
+		<level value="1">
+			<beginCondition onlyFlyableMap="1" />
+			<glideProperty gravity="5" heightLimit="1300" horizontalAccelerate="200" horizontalVelocity="100" verticalVelocity="170" verticalVibrateAmplitude="150" verticalVibrateFrequency="2000" glideHorizontalAccelerateLimit="550" bEffect="1" effectRun="CH/Fly/40400104_F_transformers_Run_A.xml" effectIdle="CH/Fly/40400104_F_transformers_Idle_A.xml" aniIdle="FlyType016_Idle_A" aniRun="FlyType016_Run_A" />
+			<motion>
+				<motionProperty ignoreCollisionGroups="20" />
+			</motion>
+		</level>
+	</skill>
+	<skill id="80010109" comment="flight">
+		<basic>
+			<kinds type="3" subType="7" unrideOnUse="1" />
+			<stateAttr battle="0" ignoreReduceCooldown="1" />
+		</basic>
+		<level value="1">
+			<beginCondition onlyFlyableMap="1" />
+			<glideProperty gravity="5" heightLimit="400" horizontalVelocity="700" verticalVelocity="100" verticalVibrateAmplitude="100" verticalVibrateFrequency="2000" bEffect="1" effectRun="CH/Fly/40400105_F_wingsneaker_Run_A.xml" effectIdle="CH/Fly/40400105_F_wingsneaker_Idle_A.xml" aniIdle="FlyTypeZ_Idle_A" aniRun="FlyTypeZ_Run_A" />
+			<motion>
+				<motionProperty ignoreCollisionGroups="20" />
+			</motion>
+		</level>
+	</skill>
+	<skill id="80010110" comment="flight">
+		<basic>
+			<kinds type="3" subType="7" unrideOnUse="1" />
+			<stateAttr battle="0" ignoreReduceCooldown="1" />
+		</basic>
+		<level value="1">
+			<beginCondition onlyFlyableMap="1" />
+			<glideProperty gravity="5" heightLimit="2600" horizontalVelocity="350" verticalVelocity="250" verticalVibrateAmplitude="210" verticalVibrateFrequency="1500" bEffect="1" effectRun="CH/Fly/40400106_F_HoneyBee_Run_A.xml" effectIdle="CH/Fly/40400106_F_HoneyBee_Idle_A.xml" aniIdle="FlyType017_Idle_A" aniRun="FlyType017_Run_A" />
+			<motion>
+				<motionProperty ignoreCollisionGroups="20" />
+			</motion>
+		</level>
+	</skill>
+	<skill id="80010111" comment="flight">
+		<basic>
+			<kinds type="3" subType="7" unrideOnUse="1" />
+			<stateAttr battle="0" ignoreReduceCooldown="1" />
+		</basic>
+		<level value="1">
+			<beginCondition onlyFlyableMap="1" />
+			<glideProperty gravity="5" heightLimit="400" horizontalVelocity="700" verticalVelocity="100" verticalVibrateAmplitude="100" verticalVibrateFrequency="2000" bEffect="1" effectRun="CH/Fly/40400111_F_skyfortress_Run_A.xml" effectIdle="CH/Fly/40400111_F_skyfortress_Idle_A.xml" aniIdle="FlyType009_Idle_A" aniRun="FlyType009_Run_A" />
+			<motion>
+				<motionProperty ignoreCollisionGroups="20" />
+			</motion>
+		</level>
+	</skill>
+	<skill id="80010112" comment="flight">
+		<basic>
+			<kinds type="3" subType="7" unrideOnUse="1" />
+			<stateAttr battle="0" ignoreReduceCooldown="1" />
+		</basic>
+		<level value="1">
+			<beginCondition onlyFlyableMap="1" />
+			<glideProperty gravity="5" heightLimit="2600" horizontalVelocity="250" verticalVelocity="250" verticalVibrateAmplitude="210" verticalVibrateFrequency="3000" bEffect="1" effectRun="CH/Fly/40400112_F_PinkbeanBalloon_Run_A.xml" effectIdle="CH/Fly/40400112_F_PinkbeanBalloon_Idle_A.xml" aniIdle="FlyTypeA_Idle_A" aniRun="FlyTypeA_Run_A" />
+			<motion>
+				<motionProperty ignoreCollisionGroups="20" />
+			</motion>
+		</level>
+	</skill>
+	<skill id="80010113" comment="flight">
+		<basic>
+			<kinds type="3" subType="7" unrideOnUse="1" />
+			<stateAttr battle="0" ignoreReduceCooldown="1" />
+		</basic>
+		<level value="1">
+			<beginCondition onlyFlyableMap="1" />
+			<glideProperty gravity="5" heightLimit="400" horizontalVelocity="700" verticalVelocity="100" verticalVibrateAmplitude="100" verticalVibrateFrequency="2000" bEffect="1" effectRun="CH/Fly/40400113_F_ColosseumManager_Run_A.xml" effectIdle="CH/Fly/40400113_F_ColosseumManager_Idle_A.xml" aniIdle="Ride_Idle_D_Smile" aniRun="Ride_Idle_D_Smile" />
+			<motion>
+				<motionProperty ignoreCollisionGroups="20" />
+			</motion>
+		</level>
+	</skill>
+	<skill id="80010114" comment="flight">
+		<basic>
+			<kinds type="3" subType="7" unrideOnUse="1" />
+			<stateAttr battle="0" ignoreReduceCooldown="1" />
+		</basic>
+		<level value="1">
+			<beginCondition onlyFlyableMap="1" />
+			<glideProperty gravity="5" heightLimit="2600" horizontalVelocity="250" verticalVelocity="250" verticalVibrateAmplitude="210" verticalVibrateFrequency="3000" bEffect="1" effectRun="CH/Fly/40400114_F_PurpleBalloon_Run_A.xml" effectIdle="CH/Fly/40400114_F_PurpleBalloon_Idle_A.xml" aniIdle="FlyTypeA_Idle_A" aniRun="FlyTypeA_Run_A" />
+			<motion>
+				<motionProperty ignoreCollisionGroups="20" />
+			</motion>
+		</level>
+	</skill>
+	<skill id="80010115" comment="flight">
+		<basic>
+			<kinds type="3" subType="7" unrideOnUse="1" />
+			<stateAttr battle="0" ignoreReduceCooldown="1" />
+		</basic>
+		<level value="1">
+			<beginCondition onlyFlyableMap="1" />
+			<glideProperty gravity="5" heightLimit="1200" horizontalVelocity="650" verticalVelocity="170" verticalVibrateAmplitude="50" verticalVibrateFrequency="2000" bEffect="1" effectRun="CH/Fly/40400107_F_UFO_Run_A.xml" effectIdle="CH/Fly/40400107_F_UFO_Idle_A.xml" aniIdle="FlyTypeE_Idle_A" aniRun="FlyTypeE_Run_A" />
+			<motion>
+				<motionProperty ignoreCollisionGroups="20" />
+			</motion>
+		</level>
+	</skill>
+	<skill id="80010116" comment="New가챠전용">
+		<basic>
+			<kinds type="3" subType="7" unrideOnUse="1" />
+			<stateAttr battle="0" ignoreReduceCooldown="1" />
+		</basic>
+		<level value="1">
+			<beginCondition onlyFlyableMap="1" />
+			<glideProperty gravity="5" heightLimit="1200" horizontalVelocity="650" verticalVelocity="170" verticalVibrateAmplitude="50" verticalVibrateFrequency="2000" bEffect="1" effectRun="CH/Fly/40410014_F_Turntable_01_Run.xml" effectIdle="CH/Fly/40410014_F_Turntable_01_Idle.xml" aniIdle="FlyType026_Idle" aniRun="FlyType026_Run" />
+			<motion>
+				<motionProperty ignoreCollisionGroups="20" />
+			</motion>
+		</level>
+	</skill>
+	<skill id="80010117" comment="flight">
+		<basic>
+			<kinds type="3" subType="7" unrideOnUse="1" />
+			<stateAttr battle="0" ignoreReduceCooldown="1" />
+		</basic>
+		<level value="1">
+			<beginCondition onlyFlyableMap="1" />
+			<glideProperty gravity="5" heightLimit="1200" horizontalVelocity="650" verticalVelocity="170" verticalVibrateAmplitude="50" verticalVibrateFrequency="2000" bEffect="1" effectRun="CH/Fly/40400109_F_umbrella_Run_A.xml" effectIdle="CH/Fly/40400109_F_umbrella_Idle_A.xml" aniIdle="FlyTypeY_Idle_A" aniRun="FlyTypeY_Run_A" />
+			<motion>
+				<motionProperty ignoreCollisionGroups="20" />
+			</motion>
+		</level>
+	</skill>
+	<skill id="80010118" comment="flight">
+		<basic>
+			<kinds type="3" subType="7" unrideOnUse="1" />
+			<stateAttr battle="0" ignoreReduceCooldown="1" />
+		</basic>
+		<level value="1">
+			<beginCondition onlyFlyableMap="1" />
+			<glideProperty gravity="5" heightLimit="1300" horizontalAccelerate="200" horizontalVelocity="50" verticalVelocity="170" verticalVibrateAmplitude="50" verticalVibrateFrequency="2000" glideHorizontalAccelerateLimit="500" bEffect="1" effectRun="CH/Fly/40400098_F_spaceplane_Run_A.xml" effectIdle="CH/Fly/40400098_F_spaceplane_Idle_A.xml" aniIdle="FlyType004_Idle_A" aniRun="FlyType004_Idle_A" />
+			<motion>
+				<motionProperty ignoreCollisionGroups="20" />
+			</motion>
+		</level>
+	</skill>
+	<skill id="80010119" comment="flight">
+		<basic>
+			<kinds type="3" subType="7" unrideOnUse="1" />
+			<stateAttr battle="0" ignoreReduceCooldown="1" />
+		</basic>
+		<level value="1">
+			<beginCondition onlyFlyableMap="1" />
+			<glideProperty gravity="5" heightLimit="1200" horizontalVelocity="650" verticalVelocity="170" verticalVibrateAmplitude="50" verticalVibrateFrequency="2000" bEffect="1" effectRun="CH/Fly/40400103_F_Easteregg_Run_A.xml" effectIdle="CH/Fly/40400103_F_Easteregg_Idle_A.xml" aniIdle="FlyType014_Idle_A" aniRun="FlyType014_Run_A" />
+			<motion>
+				<motionProperty ignoreCollisionGroups="20" />
+			</motion>
+		</level>
+	</skill>
+	<skill id="80010120" comment="flight">
+		<basic>
+			<kinds type="3" subType="7" unrideOnUse="1" />
+			<stateAttr battle="0" ignoreReduceCooldown="1" />
+		</basic>
+		<level value="1">
+			<beginCondition onlyFlyableMap="1" />
+			<glideProperty gravity="5" heightLimit="1300" horizontalAccelerate="200" horizontalVelocity="50" verticalVelocity="170" verticalVibrateAmplitude="150" verticalVibrateFrequency="2000" glideHorizontalAccelerateLimit="500" bEffect="1" effectRun="CH/Fly/40400104_F_transformers_Run_A.xml" effectIdle="CH/Fly/40400104_F_transformers_Idle_A.xml" aniIdle="FlyType016_Idle_A" aniRun="FlyType016_Run_A" />
+			<motion>
+				<motionProperty ignoreCollisionGroups="20" />
+			</motion>
+		</level>
+	</skill>
+	<skill id="80010121" comment="flight">
+		<basic>
+			<kinds type="3" subType="7" unrideOnUse="1" />
+			<stateAttr battle="0" ignoreReduceCooldown="1" />
+		</basic>
+		<level value="1">
+			<beginCondition onlyFlyableMap="1" />
+			<glideProperty gravity="5" heightLimit="400" horizontalVelocity="700" verticalVelocity="100" verticalVibrateAmplitude="100" verticalVibrateFrequency="2000" bEffect="1" effectRun="CH/Fly/40400066_F_Dragon_Run_A.xml" effectIdle="CH/Fly/40400066_F_Dragon_Idle_A.xml" aniIdle="Ride_Idle_025" aniRun="Ride_Idle_025" />
+			<motion>
+				<motionProperty ignoreCollisionGroups="20" />
+			</motion>
+		</level>
+	</skill>
+	<skill id="80010122" comment="flight">
+		<basic>
+			<kinds type="3" subType="7" unrideOnUse="1" />
+			<stateAttr battle="0" ignoreReduceCooldown="1" />
+		</basic>
+		<level value="1">
+			<beginCondition onlyFlyableMap="1" />
+			<glideProperty gravity="5" heightLimit="2600" horizontalVelocity="250" verticalVelocity="250" verticalVibrateAmplitude="210" verticalVibrateFrequency="3000" bEffect="1" effectRun="CH/Fly/40400120_F_2yearsCake_Run_A.xml" effectIdle="CH/Fly/40400120_F_2yearsCake_Idle_A.xml" aniIdle="FlyTypeA_Idle_A" aniRun="FlyTypeA_Run_A" />
+			<motion>
+				<motionProperty ignoreCollisionGroups="20" />
+			</motion>
+		</level>
+	</skill>
+	<skill id="80010123" comment="flight">
+		<basic>
+			<kinds type="3" subType="7" unrideOnUse="1" />
+			<stateAttr battle="0" ignoreReduceCooldown="1" />
+		</basic>
+		<level value="1">
+			<beginCondition onlyFlyableMap="1" />
+			<glideProperty gravity="5" heightLimit="1300" horizontalAccelerate="200" horizontalVelocity="100" verticalVelocity="170" verticalVibrateAmplitude="150" verticalVibrateFrequency="2000" glideHorizontalAccelerateLimit="550" bEffect="1" effectRun="CH/Fly/40400123_F_RedDragonfly_Run_A.xml" effectIdle="CH/Fly/40400123_F_RedDragonfly_Idle_A.xml" aniIdle="FlyType020_Idle_A" aniRun="FlyType020_Run_A" />
+			<motion>
+				<motionProperty ignoreCollisionGroups="20" />
+			</motion>
+		</level>
+	</skill>
+	<skill id="80010124" comment="flight">
+		<basic>
+			<kinds type="3" subType="7" unrideOnUse="1" />
+			<stateAttr battle="0" ignoreReduceCooldown="1" />
+		</basic>
+		<level value="1">
+			<beginCondition onlyFlyableMap="1" />
+			<glideProperty gravity="5" heightLimit="2600" horizontalVelocity="350" verticalVelocity="250" verticalVibrateAmplitude="210" verticalVibrateFrequency="1500" bEffect="1" effectRun="CH/Fly/40400116_F_Crowtit_Run.xml" effectIdle="CH/Fly/40400116_F_Crowtit_Idle.xml" aniIdle="FlyType023_Idle" aniRun="FlyType023_Run" />
+			<motion>
+				<motionProperty ignoreCollisionGroups="20" />
+			</motion>
+		</level>
+	</skill>
+	<skill id="80010125" comment="flight">
+		<basic>
+			<kinds type="3" subType="7" unrideOnUse="1" />
+			<stateAttr battle="0" ignoreReduceCooldown="1" />
+		</basic>
+		<level value="1">
+			<beginCondition onlyFlyableMap="1" />
+			<glideProperty gravity="5" heightLimit="1200" horizontalVelocity="650" verticalVelocity="170" verticalVibrateAmplitude="50" verticalVibrateFrequency="2000" bEffect="1" effectRun="CH/Fly/40400118_F_HalloweenUmbrella_01_Run.xml" effectIdle="CH/Fly/40400118_F_HalloweenUmbrella_01_Idle.xml" aniIdle="FlyType022_Idle_A" aniRun="FlyType022_Run_A" />
+			<motion>
+				<motionProperty ignoreCollisionGroups="20" />
+			</motion>
+		</level>
+	</skill>
+	<skill id="80010126" comment="flight">
+		<basic>
+			<kinds type="3" subType="7" unrideOnUse="1" />
+			<stateAttr battle="0" ignoreReduceCooldown="1" />
+		</basic>
+		<level value="1">
+			<beginCondition onlyFlyableMap="1" />
+			<glideProperty gravity="5" heightLimit="400" horizontalVelocity="700" verticalVelocity="100" verticalVibrateAmplitude="100" verticalVibrateFrequency="2000" bEffect="1" effectRun="CH/Fly/40400119_F_fullmoon_Run_A.xml" effectIdle="CH/Fly/40400119_F_fullmoon_Idle_A.xml" aniIdle="FlyType004_Idle_A" aniRun="FlyType004_Idle_A" />
+			<motion>
+				<motionProperty ignoreCollisionGroups="20" />
+			</motion>
+		</level>
+	</skill>
+	<skill id="80010127" comment="New가챠전용">
+		<basic>
+			<kinds type="3" subType="7" unrideOnUse="1" />
+			<stateAttr battle="0" ignoreReduceCooldown="1" />
+		</basic>
+		<level value="1">
+			<beginCondition onlyFlyableMap="1" />
+			<glideProperty gravity="5" heightLimit="400" horizontalVelocity="700" verticalVelocity="100" verticalVibrateAmplitude="100" verticalVibrateFrequency="2000" bEffect="1" effectRun="CH/Fly/40410017_F_Violin_Run.xml" effectIdle="CH/Fly/40410017_F_Violin_Idle.xml" aniIdle="FlyType027_Idle" aniRun="FlyType027_Run" />
+			<motion>
+				<motionProperty ignoreCollisionGroups="20" />
+			</motion>
+		</level>
+	</skill>
+	<skill id="80010128" comment="flight">
+		<basic>
+			<kinds type="3" subType="7" unrideOnUse="1" />
+			<stateAttr battle="0" ignoreReduceCooldown="1" />
+		</basic>
+		<level value="1">
+			<beginCondition onlyFlyableMap="1" />
+			<glideProperty gravity="5" heightLimit="2600" horizontalVelocity="250" verticalVelocity="250" verticalVibrateAmplitude="210" verticalVibrateFrequency="3000" bEffect="1" effectRun="CH/Fly/40400122_F_GrandParents_01_Run.xml" effectIdle="CH/Fly/40400122_F_GrandParents_01_Idle.xml" aniIdle="FlyTypeA_Idle_A" aniRun="FlyTypeA_Run_A" />
+			<motion>
+				<motionProperty ignoreCollisionGroups="20" />
+			</motion>
+		</level>
+	</skill>
+	<skill id="80010129" comment="flight">
+		<basic>
+			<kinds type="3" subType="7" unrideOnUse="1" />
+			<stateAttr battle="0" ignoreReduceCooldown="1" />
+		</basic>
+		<level value="1">
+			<beginCondition onlyFlyableMap="1" />
+			<glideProperty gravity="5" heightLimit="400" horizontalVelocity="700" verticalVelocity="100" verticalVibrateAmplitude="100" verticalVibrateFrequency="2000" bEffect="1" effectRun="CH/Fly/40400121_F_MagicBook_01_Run.xml" effectIdle="CH/Fly/40400121_F_MagicBook_01_Idle.xml" aniIdle="FlyType021_Idle_A" aniRun="FlyType021_Run_A" />
+			<motion>
+				<motionProperty ignoreCollisionGroups="20" />
+			</motion>
+		</level>
+	</skill>
+	<skill id="80010130" comment="flight">
+		<basic>
+			<kinds type="3" subType="7" unrideOnUse="1" />
+			<stateAttr battle="0" ignoreReduceCooldown="1" />
+		</basic>
+		<level value="1">
+			<beginCondition onlyFlyableMap="1" />
+			<glideProperty gravity="5" heightLimit="2600" horizontalVelocity="350" verticalVelocity="250" verticalVibrateAmplitude="210" verticalVibrateFrequency="1500" bEffect="1" effectRun="CH/Fly/40400124_F_FrankenBalloon_01_Run.xml" effectIdle="CH/Fly/40400124_F_FrankenBalloon_01_Idle.xml" aniIdle="FlyTypeA_Idle_A" aniRun="FlyTypeA_Run_A" />
+			<motion>
+				<motionProperty ignoreCollisionGroups="20" />
+			</motion>
+		</level>
+	</skill>
+	<skill id="80010131" comment="flight">
+		<basic>
+			<kinds type="3" subType="7" unrideOnUse="1" />
+			<stateAttr battle="0" ignoreReduceCooldown="1" />
+		</basic>
+		<level value="1">
+			<beginCondition onlyFlyableMap="1" />
+			<glideProperty gravity="5" heightLimit="400" horizontalVelocity="700" verticalVelocity="100" verticalVibrateAmplitude="100" verticalVibrateFrequency="2000" bEffect="1" effectRun="CH/Fly/40400125_F_PumpkinPie_01_Run.xml" effectIdle="CH/Fly/40400125_F_PumpkinPie_01_Idle.xml" aniIdle="FlyType025_Idle" aniRun="FlyType025_Run" />
+			<motion>
+				<motionProperty ignoreCollisionGroups="20" />
+			</motion>
+		</level>
+	</skill>
+	<skill id="80010132" comment="flight">
+		<basic>
+			<kinds type="3" subType="7" unrideOnUse="1" />
+			<stateAttr battle="0" ignoreReduceCooldown="1" />
+		</basic>
+		<level value="1">
+			<beginCondition onlyFlyableMap="1" />
+			<glideProperty gravity="5" heightLimit="2600" horizontalVelocity="350" verticalVelocity="250" verticalVibrateAmplitude="210" verticalVibrateFrequency="1500" bEffect="1" effectRun="CH/Fly/40400126_F_SantaFace_01_Run.xml" effectIdle="CH/Fly/40400126_F_SantaFace_01_Idle.xml" aniIdle="FlyTypeA_Idle_A" aniRun="FlyTypeA_Run_A" />
+			<motion>
+				<motionProperty ignoreCollisionGroups="20" />
+			</motion>
+		</level>
+	</skill>
+	<skill id="80010133" comment="flight">
+		<basic>
+			<kinds type="3" subType="7" unrideOnUse="1" />
+			<stateAttr battle="0" ignoreReduceCooldown="1" />
+		</basic>
+		<level value="1">
+			<beginCondition onlyFlyableMap="1" />
+			<glideProperty gravity="5" heightLimit="1300" horizontalAccelerate="200" horizontalVelocity="100" verticalVelocity="170" verticalVibrateAmplitude="150" verticalVibrateFrequency="2000" glideHorizontalAccelerateLimit="550" bEffect="1" effectRun="CH/Fly/40400128_F_Candy_01_Run.xml" effectIdle="CH/Fly/40400128_F_Candy_01_Idle.xml" aniIdle="Ride_Idle_Y" aniRun="Ride_Idle_Y" />
+			<motion>
+				<motionProperty ignoreCollisionGroups="20" />
+			</motion>
+		</level>
+	</skill>
+	<skill id="80010134" comment="New가챠전용">
+		<basic>
+			<kinds type="3" subType="7" unrideOnUse="1" />
+			<stateAttr battle="0" ignoreReduceCooldown="1" />
+		</basic>
+		<level value="1">
+			<beginCondition onlyFlyableMap="1" />
+			<glideProperty gravity="5" heightLimit="1200" horizontalVelocity="650" verticalVelocity="170" verticalVibrateAmplitude="50" verticalVibrateFrequency="2000" bEffect="1" effectRun="CH/Fly/40410011_F_DukeyUmbrella_Run.xml" effectIdle="CH/Fly/40410011_F_DukeyUmbrella_Idle.xml" aniIdle="FlyType031_Idle" aniRun="FlyType031_Run" />
+			<motion>
+				<motionProperty ignoreCollisionGroups="20" />
+			</motion>
+		</level>
+	</skill>
+	<skill id="80010135" comment="New가챠전용">
+		<basic>
+			<kinds type="3" subType="7" unrideOnUse="1" />
+			<stateAttr battle="0" ignoreReduceCooldown="1" />
+		</basic>
+		<level value="1">
+			<beginCondition onlyFlyableMap="1" />
+			<glideProperty gravity="5" heightLimit="400" horizontalVelocity="700" verticalVelocity="100" verticalVibrateAmplitude="100" verticalVibrateFrequency="2000" bEffect="1" effectRun="CH/Fly/40400125_F_PumpkinPie_01_Run.xml" effectIdle="CH/Fly/40400125_F_PumpkinPie_01_Idle.xml" aniIdle="FlyType025_Idle" aniRun="FlyType025_Run" />
+			<motion>
+				<motionProperty ignoreCollisionGroups="20" />
+			</motion>
+		</level>
+	</skill>
+	<skill id="80010136" comment="New가챠전용">
+		<basic>
+			<kinds type="3" subType="7" unrideOnUse="1" />
+			<stateAttr battle="0" ignoreReduceCooldown="1" />
+		</basic>
+		<level value="1">
+			<beginCondition onlyFlyableMap="1" />
+			<glideProperty gravity="5" heightLimit="1300" horizontalAccelerate="200" horizontalVelocity="100" verticalVelocity="170" verticalVibrateAmplitude="150" verticalVibrateFrequency="2000" glideHorizontalAccelerateLimit="550" bEffect="1" effectRun="CH/Fly/40400077_F_witchbroom_Run.xml" effectIdle="CH/Fly/40400077_F_witchbroom_Idle.xml" aniIdle="FlyType024_Idle" aniRun="FlyType024_Run" />
+			<motion>
+				<motionProperty ignoreCollisionGroups="20" />
+			</motion>
+		</level>
+	</skill>
+	<skill id="80010137" comment="New가챠전용">
+		<basic>
+			<kinds type="3" subType="7" unrideOnUse="1" />
+			<stateAttr battle="0" ignoreReduceCooldown="1" />
+		</basic>
+		<level value="1">
+			<beginCondition onlyFlyableMap="1" />
+			<glideProperty gravity="5" heightLimit="1300" horizontalAccelerate="200" horizontalVelocity="100" verticalVelocity="170" verticalVibrateAmplitude="150" verticalVibrateFrequency="2000" glideHorizontalAccelerateLimit="550" bEffect="1" effectRun="CH/Fly/40410006_F_DuckyHelicopter_01_Run.xml" effectIdle="CH/Fly/40410006_F_DuckyHelicopter_01_Idle.xml" aniIdle="FlyTypeA_Idle_A" aniRun="FlyTypeA_Run_A" />
+			<motion>
+				<motionProperty ignoreCollisionGroups="20" />
+			</motion>
+		</level>
+	</skill>
+	<skill id="80010138" comment="New가챠전용">
+		<basic>
+			<kinds type="3" subType="7" unrideOnUse="1" />
+			<stateAttr battle="0" ignoreReduceCooldown="1" />
+		</basic>
+		<level value="1">
+			<beginCondition onlyFlyableMap="1" />
+			<glideProperty gravity="5" heightLimit="2600" horizontalVelocity="350" verticalVelocity="250" verticalVibrateAmplitude="210" verticalVibrateFrequency="1500" bEffect="1" effectRun="CH/Fly/40400126_F_SantaFace_01_Run.xml" effectIdle="CH/Fly/40400126_F_SantaFace_01_Idle.xml" aniIdle="FlyTypeA_Idle_A" aniRun="FlyTypeA_Run_A" />
+			<motion>
+				<motionProperty ignoreCollisionGroups="20" />
+			</motion>
+		</level>
+	</skill>
+	<skill id="80010139" comment="New가챠전용">
+		<basic>
+			<kinds type="3" subType="7" unrideOnUse="1" />
+			<stateAttr battle="0" ignoreReduceCooldown="1" />
+		</basic>
+		<level value="1">
+			<beginCondition onlyFlyableMap="1" />
+			<glideProperty gravity="5" heightLimit="2600" horizontalVelocity="350" verticalVelocity="250" verticalVibrateAmplitude="210" verticalVibrateFrequency="1500" bEffect="1" effectRun="CH/Fly/40400116_F_Crowtit_Run.xml" effectIdle="CH/Fly/40400116_F_Crowtit_Idle.xml" aniIdle="FlyType023_Idle" aniRun="FlyType023_Run" />
+			<motion>
+				<motionProperty ignoreCollisionGroups="20" />
+			</motion>
+		</level>
+	</skill>
+	<skill id="80010140" comment="flight">
+		<basic>
+			<kinds type="3" subType="7" unrideOnUse="1" />
+			<stateAttr battle="0" ignoreReduceCooldown="1" />
+		</basic>
+		<level value="1">
+			<beginCondition onlyFlyableMap="1" />
+			<glideProperty gravity="5" heightLimit="400" horizontalVelocity="700" verticalVelocity="100" verticalVibrateAmplitude="100" verticalVibrateFrequency="2000" bEffect="1" effectRun="CH/Fly/40400127_F_OrientalUmbrella_01_Run.xml" effectIdle="CH/Fly/40400127_F_OrientalUmbrella_01_Idle.xml" aniIdle="FlyTypeA_Idle_A" aniRun="FlyTypeA_Run_A" />
+			<motion>
+				<motionProperty ignoreCollisionGroups="20" />
+			</motion>
+		</level>
+	</skill>
+	<skill id="80010141" comment="New가챠전용">
+		<basic>
+			<kinds type="3" subType="7" unrideOnUse="1" />
+			<stateAttr battle="0" ignoreReduceCooldown="1" />
+		</basic>
+		<level value="1">
+			<beginCondition onlyFlyableMap="1" />
+			<glideProperty gravity="5" heightLimit="400" horizontalVelocity="700" verticalVelocity="100" verticalVibrateAmplitude="100" verticalVibrateFrequency="2000" bEffect="1" effectRun="CH/Fly/40400127_F_OrientalUmbrella_01_Run.xml" effectIdle="CH/Fly/40400127_F_OrientalUmbrella_01_Idle.xml" aniIdle="FlyTypeA_Idle_A" aniRun="FlyTypeA_Run_A" />
+			<motion>
+				<motionProperty ignoreCollisionGroups="20" />
+			</motion>
+		</level>
+	</skill>
+	<skill id="80010142" comment="flight">
+		<basic>
+			<kinds type="3" subType="7" unrideOnUse="1" />
+			<stateAttr battle="0" ignoreReduceCooldown="1" />
+		</basic>
+		<level value="1">
+			<beginCondition onlyFlyableMap="1" />
+			<glideProperty gravity="5" heightLimit="1200" horizontalVelocity="650" verticalVelocity="170" verticalVibrateAmplitude="50" verticalVibrateFrequency="2000" bEffect="1" effectRun="CH/Fly/40400129_F_Sushi01_Run.xml" effectIdle="CH/Fly/40400129_F_Sushi01_Idle.xml" aniIdle="FlyTypeC_Idle_A" aniRun="FlyTypeC_Run_A" />
+			<motion>
+				<motionProperty ignoreCollisionGroups="20" />
+			</motion>
+		</level>
+	</skill>
+	<skill id="80010143" comment="flight">
+		<basic>
+			<kinds type="3" subType="7" unrideOnUse="1" />
+			<stateAttr battle="0" ignoreReduceCooldown="1" />
+		</basic>
+		<level value="1">
+			<beginCondition onlyFlyableMap="1" />
+			<glideProperty gravity="5" heightLimit="1200" horizontalVelocity="650" verticalVelocity="170" verticalVibrateAmplitude="50" verticalVibrateFrequency="2000" bEffect="1" effectRun="CH/Fly/40400130_F_Sushi02_Run.xml" effectIdle="CH/Fly/40400130_F_Sushi02_Idle.xml" aniIdle="FlyTypeC_Idle_A" aniRun="FlyTypeC_Run_A" />
+			<motion>
+				<motionProperty ignoreCollisionGroups="20" />
+			</motion>
+		</level>
+	</skill>
+	<skill id="80010144" comment="flight">
+		<basic>
+			<kinds type="3" subType="7" unrideOnUse="1" />
+			<stateAttr battle="0" ignoreReduceCooldown="1" />
+		</basic>
+		<level value="1">
+			<beginCondition onlyFlyableMap="1" />
+			<glideProperty gravity="5" heightLimit="1200" horizontalVelocity="650" verticalVelocity="170" verticalVibrateAmplitude="50" verticalVibrateFrequency="2000" bEffect="1" effectRun="CH/Fly/40400131_F_Sushi03_Run.xml" effectIdle="CH/Fly/40400131_F_Sushi03_Idle.xml" aniIdle="FlyTypeC_Idle_A" aniRun="FlyTypeC_Run_A" />
+			<motion>
+				<motionProperty ignoreCollisionGroups="20" />
+			</motion>
+		</level>
+	</skill>
+	<skill id="80010145" comment="New가챠전용">
+		<basic>
+			<kinds type="3" subType="7" unrideOnUse="1" />
+			<stateAttr battle="0" ignoreReduceCooldown="1" />
+		</basic>
+		<level value="1">
+			<beginCondition onlyFlyableMap="1" />
+			<glideProperty gravity="5" heightLimit="2600" horizontalVelocity="350" verticalVelocity="250" verticalVibrateAmplitude="210" verticalVibrateFrequency="1500" bEffect="1" effectRun="CH/Fly/40410010_F_FlyMagicBook_Run.xml" effectIdle="CH/Fly/40410010_F_FlyMagicBook_Idle.xml" aniIdle="FlyTypeA_Idle_A" aniRun="FlyTypeA_Run_A" />
+			<motion>
+				<motionProperty ignoreCollisionGroups="20" />
+			</motion>
+		</level>
+	</skill>
+	<skill id="80010146" comment="New가챠전용">
+		<basic>
+			<kinds type="3" subType="7" unrideOnUse="1" />
+			<stateAttr battle="0" ignoreReduceCooldown="1" />
+		</basic>
+		<level value="1">
+			<beginCondition onlyFlyableMap="1" />
+			<glideProperty gravity="5" heightLimit="1300" horizontalAccelerate="200" horizontalVelocity="100" verticalVelocity="170" verticalVibrateAmplitude="150" verticalVibrateFrequency="2000" glideHorizontalAccelerateLimit="550" bEffect="1" effectRun="CH/Fly/40400128_F_Candy_01_Run.xml" effectIdle="CH/Fly/40400128_F_Candy_01_Idle.xml" aniIdle="Ride_Idle_Y" aniRun="Ride_Idle_Y" />
+			<motion>
+				<motionProperty ignoreCollisionGroups="20" />
+			</motion>
+		</level>
+	</skill>
+	<skill id="80010147" comment="New가챠전용">
+		<basic>
+			<kinds type="3" subType="7" unrideOnUse="1" />
+			<stateAttr battle="0" ignoreReduceCooldown="1" />
+		</basic>
+		<level value="1">
+			<beginCondition onlyFlyableMap="1" />
+			<glideProperty gravity="5" heightLimit="400" horizontalVelocity="700" verticalVelocity="100" verticalVibrateAmplitude="100" verticalVibrateFrequency="2000" bEffect="1" effectRun="CH/Fly/40410012_F_PepperShaker_Run.xml" effectIdle="CH/Fly/40410012_F_PepperShaker_Idle.xml" aniIdle="FlyType032_Idle" aniRun="FlyType032_Run" />
+			<motion>
+				<motionProperty ignoreCollisionGroups="20" />
+			</motion>
+		</level>
+	</skill>
+	<skill id="80010148" comment="New가챠전용">
+		<basic>
+			<kinds type="3" subType="7" unrideOnUse="1" />
+			<stateAttr battle="0" ignoreReduceCooldown="1" />
+		</basic>
+		<level value="1">
+			<beginCondition onlyFlyableMap="1" />
+			<glideProperty gravity="5" heightLimit="400" horizontalVelocity="700" verticalVelocity="100" verticalVibrateAmplitude="100" verticalVibrateFrequency="2000" bEffect="1" effectRun="CH/Fly/40400081_R_Flybed_Run_A.xml" effectIdle="CH/Fly/40400081_R_Flybed_Idle_A.xml" aniIdle="FlyType018_Idle_A" aniRun="FlyType018_Run_A" />
+			<motion>
+				<motionProperty ignoreCollisionGroups="20" />
+			</motion>
+		</level>
+	</skill>
+	<skill id="80010149" comment="New가챠전용">
+		<basic>
+			<kinds type="3" subType="7" unrideOnUse="1" />
+			<stateAttr battle="0" ignoreReduceCooldown="1" />
+		</basic>
+		<level value="1">
+			<beginCondition onlyFlyableMap="1" />
+			<glideProperty gravity="5" heightLimit="400" horizontalVelocity="700" verticalVelocity="100" verticalVibrateAmplitude="100" verticalVibrateFrequency="2000" bEffect="1" effectRun="CH/Fly/40400079_F_Flyingship_Run_A.xml" effectIdle="CH/Fly/40400079_F_Flyingship_Idle_A.xml" aniIdle="FlyType004_Idle_A" aniRun="FlyType004_Run_A" />
+			<motion>
+				<motionProperty ignoreCollisionGroups="20" />
+			</motion>
+		</level>
+	</skill>
+	<skill id="80010150" comment="flight">
+		<basic>
+			<kinds type="3" subType="7" unrideOnUse="1" />
+			<stateAttr battle="0" ignoreReduceCooldown="1" />
+		</basic>
+		<level value="1">
+			<beginCondition onlyFlyableMap="1" />
+			<glideProperty gravity="5" heightLimit="1300" horizontalAccelerate="200" horizontalVelocity="100" verticalVelocity="170" verticalVibrateAmplitude="150" verticalVibrateFrequency="2000" glideHorizontalAccelerateLimit="550" bEffect="1" effectRun="CH/Fly/40400077_F_witchbroom_Run.xml" effectIdle="CH/Fly/40400077_F_witchbroom_Idle.xml" aniIdle="FlyType024_Idle" aniRun="FlyType024_Run" />
+			<motion>
+				<motionProperty ignoreCollisionGroups="20" />
+			</motion>
+		</level>
+	</skill>
+	<skill id="80010151" comment="New가챠전용">
+		<basic>
+			<kinds type="3" subType="7" unrideOnUse="1" />
+			<stateAttr battle="0" ignoreReduceCooldown="1" />
+		</basic>
+		<level value="1">
+			<beginCondition onlyFlyableMap="1" />
+			<glideProperty gravity="5" heightLimit="1300" horizontalAccelerate="200" horizontalVelocity="100" verticalVelocity="170" verticalVibrateAmplitude="150" verticalVibrateFrequency="2000" glideHorizontalAccelerateLimit="550" bEffect="1" effectRun="CH/Fly/Eff_FlyTypeS_Heart01_Run.xml" effectIdle="CH/Fly/Eff_FlyTypeS_Heart01_Idle.xml" aniIdle="FlyTypeS_Idle_A" aniRun="FlyTypeS_Run_A" />
+			<motion>
+				<motionProperty ignoreCollisionGroups="20" />
+			</motion>
+		</level>
+	</skill>
+	<skill id="80010152" comment="flight">
+		<basic>
+			<kinds type="3" subType="7" unrideOnUse="1" />
+			<stateAttr battle="0" ignoreReduceCooldown="1" />
+		</basic>
+		<level value="1">
+			<beginCondition onlyFlyableMap="1" />
+			<glideProperty gravity="5" heightLimit="400" horizontalVelocity="700" verticalVelocity="100" verticalVibrateAmplitude="100" verticalVibrateFrequency="2000" bEffect="1" effectRun="CH/Fly/40410029_F_DuckyBall02_Run_A.xml" effectIdle="CH/Fly/40410029_F_DuckyBall02_idle_A.xml" aniIdle="FlyType007_Idle_A" aniRun="FlyType007_Run_A" />
+			<motion>
+				<motionProperty ignoreCollisionGroups="20" />
+			</motion>
+		</level>
+	</skill>
+	<skill id="80080001" comment="하강탈것 메달">
+		<basic>
+			<kinds type="3" subType="7" unrideOnUse="1" />
+			<stateAttr battle="0" ignoreReduceCooldown="1" />
+		</basic>
+		<level value="1">
+			<beginCondition onlyFlyableMap="1" />
+			<glideProperty gravity="5" horizontalVelocity="350" verticalVelocity="-50" bEffect="1" effectRun="CH/Fly/20920001_UGC_Plane_Run_A.xml" effectIdle="CH/Fly/20920001_UGC_Plane_Idle_A.xml" aniIdle="FlyTypeC_Idle_A" aniRun="FlyTypeC_Run_A" onGroundDisable="1" />
+			<motion>
+				<motionProperty ignoreCollisionGroups="20" />
+			</motion>
+		</level>
+	</skill>
+	<skill id="80080002" comment="하강탈것 메달">
+		<basic>
+			<kinds type="3" subType="7" unrideOnUse="1" />
+			<stateAttr battle="0" ignoreReduceCooldown="1" />
+		</basic>
+		<level value="1">
+			<beginCondition onlyFlyableMap="1" />
+			<glideProperty gravity="5" horizontalVelocity="350" verticalVelocity="-50" bEffect="1" effectRun="CH/Fly/20920002_UGC_PaperPlane_01_Run_A.xml" effectIdle="CH/Fly/20920002_UGC_PaperPlane_01_Idle_A.xml" aniIdle="FlyTypeC_Idle_A" aniRun="FlyTypeC_Run_A" onGroundDisable="1" />
+			<motion>
+				<motionProperty ignoreCollisionGroups="20" />
+			</motion>
+		</level>
+	</skill>
+	<skill id="80080003" comment="하강탈것 메달">
+		<basic>
+			<kinds type="3" subType="7" unrideOnUse="1" />
+			<stateAttr battle="0" ignoreReduceCooldown="1" />
+		</basic>
+		<level value="1">
+			<beginCondition onlyFlyableMap="1" />
+			<glideProperty gravity="5" horizontalVelocity="350" verticalVelocity="-50" bEffect="1" effectRun="CH/Fly/20920003_UGC_SymbolofPeace_Run_A.xml" effectIdle="CH/Fly/20920003_UGC_SymbolofPeace_Idle_A.xml" aniIdle="FlyTypeJ_Idle_A" aniRun="FlyTypeJ_Run_A" onGroundDisable="1" />
+			<motion>
+				<motionProperty ignoreCollisionGroups="20" />
+			</motion>
+		</level>
+	</skill>
+	<skill id="80080004" comment="flight">
+		<basic>
+			<kinds type="3" subType="7" unrideOnUse="1" />
+			<stateAttr battle="0" ignoreReduceCooldown="1" />
+		</basic>
+		<level value="1">
+			<beginCondition onlyFlyableMap="1" />
+			<glideProperty gravity="5" heightLimit="2600" horizontalVelocity="250" verticalVelocity="250" verticalVibrateAmplitude="210" verticalVibrateFrequency="1500" bEffect="1" effectRun="CH/Fly/40400086_UGC_JoddyBalloon_Run_A.xml" effectIdle="CH/Fly/40400086_UGC_JoddyBalloon_Idle_A.xml" aniIdle="FlyTypeA_Idle_A" aniRun="FlyTypeA_Run_A" />
+			<motion>
+				<motionProperty ignoreCollisionGroups="20" />
+			</motion>
+		</level>
+	</skill>
+	<skill id="80080005" comment="하강탈것 메달">
+		<basic>
+			<kinds type="3" subType="7" unrideOnUse="1" />
+			<stateAttr battle="0" ignoreReduceCooldown="1" />
+		</basic>
+		<level value="1">
+			<beginCondition onlyFlyableMap="1" />
+			<glideProperty gravity="5" horizontalVelocity="350" verticalVelocity="-50" bEffect="1" effectRun="CH/Fly/40400058_UGC_Petal_Run_A.xml" effectIdle="CH/Fly/40400058_UGC_Petal_Idle_A.xml" aniIdle="FlyTypeC_Idle_A" aniRun="FlyTypeC_Run_A" onGroundDisable="1" />
+			<motion>
+				<motionProperty ignoreCollisionGroups="20" />
+			</motion>
+		</level>
+	</skill>
+</ms2>

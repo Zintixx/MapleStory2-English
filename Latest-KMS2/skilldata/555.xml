@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ms2>
+	<skill id="55555551">
+		<basic />
+		<level value="1">
+			<motion>
+				<motionProperty sequenceName="Skill_SoulBind_Cast_A" motionEffect="CH/Skill/Priest/Eff_Priest_HolyCross_Cast_01.xml" />
+				<attack point="p0" targetCount="5" attacktype="2">
+					<rangeProperty rangeType="cylinder" distance="300" height="100" applyTarget="2" castTarget="1" />
+					<arrowProperty nonTarget="1" />
+					<damageProperty count="0" attackMaterial="1000" />
+				</attack>
+			</motion>
+		</level>
+	</skill>
+	<skill id="55555552">
+		<basic />
+		<level value="1">
+			<motion>
+				<motionProperty sequenceName="Bore_A" motionEffect="CH/Skill/Priest/Eff_Priest_HolySymbol_Cast_01.xml" />
+				<attack point="p0" targetCount="5" attacktype="1">
+					<rangeProperty rangeType="cylinder" distance="300" height="100" applyTarget="2" castTarget="1" />
+					<arrowProperty nonTarget="1" />
+					<damageProperty count="0" attackMaterial="1000" />
+				</attack>
+			</motion>
+		</level>
+	</skill>
+	<skill id="55555553">
+		<basic />
+		<level value="1">
+			<motion>
+				<motionProperty sequenceName="Attack_01_A" splashInvokeEffect="CH/Skill/HeavyGunner/Eff_HeavyGunner_RocketLauncher_Invoke_01.xml" />
+				<attack point="p0" targetCount="5" attacktype="1" brokenOffence="2" brokenForce="3">
+					<rangeProperty rangeType="cylinder" distance="300" height="200" applyTarget="1" castTarget="1" />
+					<arrowProperty nonTarget="1" />
+					<damageProperty rate="1" attackMaterial="1" />
+				</attack>
+				<attack point="p0" targetCount="1" attacktype="1">
+					<rangeProperty rangeType="cylinder" distance="150" height="100" includeCaster="1" applyTarget="2" castTarget="1" />
+					<arrowProperty nonTarget="1" />
+					<damageProperty attackMaterial="1000" />
+				</attack>
+			</motion>
+		</level>
+	</skill>
+</ms2>

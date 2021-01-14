@@ -2,13 +2,13 @@
 <!-- 파싱해서 사용하는 데이터이니 직접 수정하지 마세요 -->
 <ms2>
 	<level>
-		<beginCondition probability="1" applyPvPZoneType="1" />
+		<beginCondition applyPvPZoneType="1" />
 		<BasicProperty level="1" group="90000295" durationTick="60000" deadKeepEffect="1" />
 		<MotionProperty startEffect="Item/Use/Eff_ViolentPotion_Fire_Use_Start.xml" />
 		<UIProperty icon="./Data/Resource/Image/Item/icon/20000304.png" />
 		<conditionSkill level="1" skillID="90000296" skillTarget="2">
 			<beginCondition probability="0.1">
-				<owner hasBuffID="0" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="0" hasBuffCountCompare="Equals" eventCondition="6" ignoreOwnerEvent="1" eventSkillID="" eventEffectID="" />
+				<owner hasBuffID="0" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="0" hasBuffCountCompare="Equals" eventCondition="6" ignoreOwnerEvent="1" />
 			</beginCondition>
 		</conditionSkill>
 	</level>

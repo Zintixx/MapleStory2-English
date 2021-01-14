@@ -1,0 +1,735 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ms2>
+	<skill id="49600001" comment="블리체">
+		<basic>
+			<ui attackType="2" />
+			<kinds rangeType="2" element="7" />
+		</basic>
+		<level value="1">
+			<detectProperty rangeType="cylinder" distance="1900" height="250" />
+			<motion>
+				<motionProperty sequenceName="Attack_01_E" sequenceSpeed="1.2" motionEffect="NPC/Skill/Bliche/Eff_Bliche_WindSlash_Attack_01_E_Start.xml" />
+				<attack point="p0" targetCount="1" attacktype="2" brokenOffence="1" unrideOnHit="1">
+					<rangeProperty rangeType="box" distance="1000" height="200" width="200" applyTarget="1" castTarget="1" />
+					<damageProperty count="0" rate="0.5" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" attackMaterial="4" />
+				</attack>
+			</motion>
+			<motion>
+				<motionProperty sequenceName="Attack_02_E" motionEffect="NPC/Skill/Bliche/Eff_Bliche_WindSlash_Attack_02_E_Cast.xml" loopCount="3" faceTarget="0" />
+				<attack point="p0" targetCount="1" attacktype="2" brokenOffence="1" unrideOnHit="1">
+					<rangeProperty rangeType="box" distance="1000" height="200" width="200" applyTarget="1" castTarget="1" />
+					<damageProperty count="0" rate="0.5" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" attackMaterial="4" />
+				</attack>
+			</motion>
+			<motion>
+				<motionProperty sequenceName="Attack_03_E" sequenceSpeed="1.2" motionEffect="NPC/Skill/Bliche/Eff_Bliche_WindSlash_Attack_03_E.xml" />
+				<attack point="p0" targetCount="1" magicPathID="5680" attacktype="2" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+					<rangeProperty rangeType="box" applyTarget="1" castTarget="1" />
+					<arrowProperty nonTarget="1" bounceType="3" bounceCount="1" collision="250.000000,250.000000,250.000000" effect="NPC/Skill/Bliche/Eff_Bliche_WindSlash_Ball_01.xml" />
+					<damageProperty rate="0.5" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="5" pushdistance="150" pushduration="0.3" pushPriority="1" attackMaterial="4" />
+					<conditionSkill level="1" skillID="49287001" skillTarget="2" skillOwner="1" />
+				</attack>
+			</motion>
+			<motion>
+				<motionProperty sequenceName="Attack_04_E" sequenceSpeed="1.2" />
+				<attack point="p0" targetCount="1" magicPathID="5680" attacktype="2" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+					<rangeProperty rangeType="box" applyTarget="1" castTarget="1" />
+					<arrowProperty nonTarget="1" bounceType="3" bounceCount="1" collision="250.000000,250.000000,250.000000" effect="NPC/Skill/Bliche/Eff_Bliche_WindSlash_Ball_02.xml" />
+					<damageProperty rate="0.5" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="5" pushdistance="150" pushduration="0.3" pushPriority="1" attackMaterial="4" />
+					<conditionSkill level="1" skillID="49287001" skillTarget="2" skillOwner="1" />
+				</attack>
+			</motion>
+			<motion>
+				<motionProperty sequenceName="Attack_05_E" sequenceSpeed="1.2" motionEffect="NPC/Skill/Bliche/Eff_Bliche_WindSlash_Attack_03_E.xml" />
+				<attack point="p0" targetCount="1" magicPathID="5680" attacktype="2" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+					<rangeProperty rangeType="box" applyTarget="1" castTarget="1" />
+					<arrowProperty nonTarget="1" bounceType="3" bounceCount="1" collision="250.000000,250.000000,250.000000" effect="NPC/Skill/Bliche/Eff_Bliche_WindSlash_Ball_01.xml" />
+					<damageProperty rate="0.5" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="5" pushdistance="150" pushduration="0.3" pushPriority="1" attackMaterial="4" />
+					<conditionSkill level="1" skillID="49287001" skillTarget="2" skillOwner="1" />
+				</attack>
+			</motion>
+			<motion>
+				<motionProperty sequenceName="Attack_06_E" sequenceSpeed="1.2" />
+				<attack point="p0" targetCount="1" magicPathID="5680" attacktype="2" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+					<rangeProperty rangeType="box" applyTarget="1" castTarget="1" />
+					<arrowProperty nonTarget="1" bounceType="3" bounceCount="1" collision="250.000000,250.000000,250.000000" effect="NPC/Skill/Bliche/Eff_Bliche_WindSlash_Ball_02.xml" />
+					<damageProperty rate="0.5" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="5" pushdistance="150" pushduration="0.3" pushPriority="1" attackMaterial="4" />
+					<conditionSkill level="1" skillID="49287001" skillTarget="2" skillOwner="1" />
+				</attack>
+			</motion>
+			<motion>
+				<motionProperty sequenceName="Attack_07_E" sequenceSpeed="1.2" motionEffect="NPC/Skill/Bliche/Eff_Bliche_WindSlash_Attack_07_E.xml" />
+				<attack point="p0" targetCount="1" magicPathID="5680" attacktype="2" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+					<rangeProperty rangeType="box" applyTarget="1" castTarget="1" />
+					<arrowProperty nonTarget="1" bounceType="3" bounceCount="1" collision="250.000000,250.000000,250.000000" effect="NPC/Skill/Bliche/Eff_Bliche_WindSlash_Ball_03.xml" />
+					<damageProperty rate="0.5" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="5" pushdistance="150" pushduration="0.3" pushPriority="1" attackMaterial="4" />
+					<conditionSkill level="1" skillID="49287001" skillTarget="2" skillOwner="1" />
+				</attack>
+			</motion>
+		</level>
+	</skill>
+	<skill id="49600002" comment="블리체">
+		<basic>
+			<ui attackType="1" />
+			<kinds rangeType="1" element="7" />
+		</basic>
+		<level value="1">
+			<detectProperty rangeType="box" distance="150" height="150" width="200" />
+			<motion>
+				<motionProperty sequenceName="Attack_01_A" sequenceSpeed="1.2" />
+				<attack point="p0" targetCount="1" attacktype="1" brokenOffence="1" unrideOnHit="1">
+					<rangeProperty rangeType="box" distance="200" height="200" width="200" applyTarget="1" castTarget="1" />
+					<damageProperty count="0" rate="0.4" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="4" />
+				</attack>
+			</motion>
+			<motion>
+				<motionProperty sequenceName="Attack_02_A" sequenceSpeed="1.4" motionEffect="NPC/Skill/Bliche/Eff_Bliche_Attack_02_A.xml" faceTarget="0" />
+				<attack point="p0" targetCount="1" attacktype="1" brokenOffence="1" unrideOnHit="1">
+					<rangeProperty rangeType="box" distance="200" height="200" width="220" applyTarget="1" castTarget="1" />
+					<damageProperty rate="0.4" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="4" />
+				</attack>
+			</motion>
+			<motion>
+				<motionProperty sequenceName="Return_02_A" sequenceSpeed="1.1" faceTarget="0" />
+				<attack point="p0" targetCount="1" attacktype="1" brokenOffence="1" unrideOnHit="1">
+					<rangeProperty rangeType="box" distance="200" height="200" width="200" applyTarget="1" castTarget="1" />
+					<damageProperty count="0" rate="0.4" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="4" />
+				</attack>
+			</motion>
+		</level>
+	</skill>
+	<skill id="49600003" comment="블리체">
+		<basic>
+			<ui attackType="1" />
+			<kinds rangeType="1" element="7" />
+		</basic>
+		<level value="1">
+			<detectProperty rangeType="box" distance="150" height="150" width="200" />
+			<motion>
+				<motionProperty sequenceName="Attack_01_B" sequenceSpeed="1.3" />
+				<attack point="p0" targetCount="1" attacktype="1" brokenOffence="1" unrideOnHit="1">
+					<rangeProperty rangeType="box" distance="200" height="200" width="200" applyTarget="1" castTarget="1" />
+					<damageProperty count="0" rate="0.4" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="4" />
+				</attack>
+			</motion>
+			<motion>
+				<motionProperty sequenceName="Attack_02_B" motionEffect="NPC/Skill/Bliche/Eff_Bliche_Attack_02_B.xml" movedistance="150" moveEaseType="1" faceTarget="0" />
+				<attack point="p0" targetCount="1" attacktype="1" brokenOffence="1" unrideOnHit="1">
+					<rangeProperty rangeType="box" distance="400" rangeOffset="0.000000,-100.000000,0.000000" height="200" width="150" applyTarget="1" castTarget="1" />
+					<damageProperty rate="0.4" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="4" />
+				</attack>
+			</motion>
+			<motion>
+				<motionProperty sequenceName="Return_02_B" faceTarget="0" />
+				<attack point="p0" targetCount="1" attacktype="1" brokenOffence="1" unrideOnHit="1">
+					<rangeProperty rangeType="box" distance="200" height="200" width="150" applyTarget="1" castTarget="1" />
+					<damageProperty count="0" rate="0.4" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="4" />
+				</attack>
+			</motion>
+		</level>
+	</skill>
+	<skill id="49600004" comment="블리체">
+		<basic>
+			<ui attackType="1" />
+			<kinds rangeType="1" element="7" />
+		</basic>
+		<level value="1">
+			<detectProperty rangeType="box" distance="150" height="150" width="200" />
+			<motion>
+				<motionProperty sequenceName="Attack_01_C" sequenceSpeed="1.3" />
+				<attack point="p0" targetCount="1" attacktype="1" brokenOffence="1" unrideOnHit="1">
+					<rangeProperty rangeType="box" distance="200" height="200" width="200" applyTarget="1" castTarget="1" />
+					<damageProperty count="0" rate="0.3" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="4" />
+				</attack>
+			</motion>
+			<motion>
+				<motionProperty sequenceName="Attack_02_C" sequenceSpeed="1.6" motionEffect="NPC/Skill/Bliche/Eff_Bliche_Attack_02_C.xml" movedistance="50" moveEaseType="1" faceTarget="0" />
+				<attack point="p0" targetCount="1" attacktype="1" brokenOffence="1" unrideOnHit="1">
+					<rangeProperty rangeType="box" distance="225" rangeOffset="0.000000,-50.000000,0.000000" height="200" width="300" applyTarget="1" castTarget="1" />
+					<damageProperty rate="0.3" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="4" />
+				</attack>
+				<attack point="p1" targetCount="1" attacktype="1" brokenOffence="1" unrideOnHit="1">
+					<rangeProperty rangeType="box" distance="225" rangeOffset="0.000000,-50.000000,0.000000" height="200" width="300" applyTarget="1" castTarget="1" />
+					<damageProperty rate="0.3" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="4" />
+				</attack>
+				<attack point="p2" targetCount="1" attacktype="1" brokenOffence="1" unrideOnHit="1">
+					<rangeProperty rangeType="box" distance="225" rangeOffset="0.000000,-50.000000,0.000000" height="200" width="300" applyTarget="1" castTarget="1" />
+					<damageProperty rate="0.3" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="4" />
+				</attack>
+				<attack point="p3" targetCount="1" attacktype="1" brokenOffence="1" unrideOnHit="1">
+					<rangeProperty rangeType="box" distance="225" rangeOffset="0.000000,-50.000000,0.000000" height="200" width="300" applyTarget="1" castTarget="1" />
+					<damageProperty rate="0.3" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="4" />
+				</attack>
+			</motion>
+			<motion>
+				<motionProperty sequenceName="Return_02_C" faceTarget="0" />
+				<attack point="p0" targetCount="1" attacktype="1" brokenOffence="1" unrideOnHit="1">
+					<rangeProperty rangeType="box" distance="200" height="200" width="200" applyTarget="1" castTarget="1" />
+					<damageProperty count="0" rate="0.3" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="4" />
+				</attack>
+			</motion>
+		</level>
+	</skill>
+	<skill id="49600005" comment="블리체">
+		<basic>
+			<ui attackType="1" />
+			<kinds rangeType="1" element="7" />
+		</basic>
+		<level value="1">
+			<detectProperty rangeType="box" distance="150" height="150" width="200" />
+			<motion>
+				<motionProperty sequenceName="Attack_01_A" sequenceSpeed="1.2" />
+				<attack point="p0" targetCount="1" attacktype="1" brokenOffence="1" unrideOnHit="1">
+					<rangeProperty rangeType="box" distance="200" height="200" width="200" applyTarget="1" castTarget="1" />
+					<damageProperty count="0" rate="0.4" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="4" />
+				</attack>
+			</motion>
+			<motion>
+				<motionProperty sequenceName="Attack_02_A" sequenceSpeed="1.4" motionEffect="NPC/Skill/Bliche/Eff_Bliche_Attack_02_A_2.xml" faceTarget="0" />
+				<attack point="p0" targetCount="1" attacktype="1" brokenOffence="1" unrideOnHit="1">
+					<rangeProperty rangeType="box" distance="250" rangeOffset="0.000000,-50.000000,0.000000" height="200" width="220" applyTarget="1" castTarget="1" />
+					<damageProperty rate="0.4" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="4" />
+				</attack>
+			</motion>
+			<motion>
+				<motionProperty sequenceName="Attack_03_A" sequenceSpeed="1.8" motionEffect="NPC/Skill/Bliche/Eff_Bliche_Attack_03_A.xml" movedistance="250" moveEaseType="1" faceTarget="0" />
+				<attack point="p0" targetCount="1" attacktype="1" brokenOffence="1" unrideOnHit="1">
+					<rangeProperty rangeType="cylinder" distance="250" rangeOffset="0.000000,50.000000,0.000000" height="200" width="180" applyTarget="1" castTarget="1" />
+					<damageProperty rate="0.4" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="5" pushdistance="250" pushduration="0.5" attackMaterial="4" />
+				</attack>
+			</motion>
+		</level>
+	</skill>
+	<skill id="49600006" comment="블리체">
+		<basic>
+			<ui attackType="1" />
+			<kinds rangeType="1" element="7" />
+		</basic>
+		<level value="1">
+			<detectProperty rangeType="box" distance="150" height="150" width="200" />
+			<motion>
+				<motionProperty sequenceName="Attack_01_B" sequenceSpeed="1.3" />
+				<attack point="p0" targetCount="1" attacktype="1" brokenOffence="1" unrideOnHit="1">
+					<rangeProperty rangeType="box" distance="200" height="200" width="200" applyTarget="1" castTarget="1" />
+					<damageProperty count="0" rate="0.3" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="4" />
+				</attack>
+			</motion>
+			<motion>
+				<motionProperty sequenceName="Attack_02_B" motionEffect="NPC/Skill/Bliche/Eff_Bliche_Attack_02_B_2.xml" movedistance="150" moveEaseType="1" faceTarget="0" />
+				<attack point="p0" targetCount="1" attacktype="1" brokenOffence="1" unrideOnHit="1">
+					<rangeProperty rangeType="box" distance="400" rangeOffset="0.000000,-100.000000,0.000000" height="200" width="150" applyTarget="1" castTarget="1" />
+					<damageProperty rate="0.3" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="4" />
+				</attack>
+				<attack point="p1" targetCount="1" attacktype="1" brokenOffence="1" unrideOnHit="1">
+					<rangeProperty rangeType="box" distance="400" rangeOffset="0.000000,-100.000000,0.000000" height="200" width="150" applyTarget="1" castTarget="1" />
+					<damageProperty rate="0.3" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="4" />
+				</attack>
+			</motion>
+			<motion>
+				<motionProperty sequenceName="Attack_03_B" sequenceSpeed="2" motionEffect="NPC/Skill/Bliche/Eff_Bliche_Attack_03_B.xml" movedistance="100" moveEaseType="1" faceTarget="0" />
+				<attack point="p0" targetCount="1" attacktype="1" brokenOffence="1" unrideOnHit="1">
+					<rangeProperty rangeType="box" distance="250" rangeOffset="0.000000,-50.000000,0.000000" height="200" width="300" applyTarget="1" castTarget="1" />
+					<damageProperty rate="0.3" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="5" pushdistance="250" pushduration="0.6" pushUpDistance="150" attackMaterial="4" />
+				</attack>
+			</motion>
+		</level>
+	</skill>
+	<skill id="49600007" comment="블리체">
+		<basic>
+			<ui attackType="1" />
+			<kinds rangeType="1" element="7" />
+		</basic>
+		<level value="1">
+			<detectProperty rangeType="box" distance="150" height="150" width="200" />
+			<motion>
+				<motionProperty sequenceName="Attack_01_C" sequenceSpeed="1.3" />
+				<attack point="p0" targetCount="1" attacktype="1" brokenOffence="1" unrideOnHit="1">
+					<rangeProperty rangeType="box" distance="200" height="200" width="200" applyTarget="1" castTarget="1" />
+					<damageProperty count="0" rate="0.3" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="4" />
+				</attack>
+			</motion>
+			<motion>
+				<motionProperty sequenceName="Attack_02_C" sequenceSpeed="1.6" motionEffect="NPC/Skill/Bliche/Eff_Bliche_Attack_02_C_2.xml" movedistance="50" moveEaseType="1" faceTarget="0" />
+				<attack point="p0" targetCount="1" attacktype="1" brokenOffence="1" unrideOnHit="1">
+					<rangeProperty rangeType="box" distance="225" rangeOffset="0.000000,-50.000000,0.000000" height="200" width="300" applyTarget="1" castTarget="1" />
+					<damageProperty rate="0.3" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="4" />
+				</attack>
+				<attack point="p1" targetCount="1" attacktype="1" brokenOffence="1" unrideOnHit="1">
+					<rangeProperty rangeType="box" distance="225" rangeOffset="0.000000,-50.000000,0.000000" height="200" width="300" applyTarget="1" castTarget="1" />
+					<damageProperty rate="0.3" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="4" />
+				</attack>
+				<attack point="p2" targetCount="1" attacktype="1" brokenOffence="1" unrideOnHit="1">
+					<rangeProperty rangeType="box" distance="225" rangeOffset="0.000000,-50.000000,0.000000" height="200" width="300" applyTarget="1" castTarget="1" />
+					<damageProperty rate="0.3" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="4" />
+				</attack>
+				<attack point="p3" targetCount="1" attacktype="1" brokenOffence="1" unrideOnHit="1">
+					<rangeProperty rangeType="box" distance="225" rangeOffset="0.000000,-50.000000,0.000000" height="200" width="300" applyTarget="1" castTarget="1" />
+					<damageProperty rate="0.3" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="4" />
+				</attack>
+			</motion>
+			<motion>
+				<motionProperty sequenceName="Attack_03_C" sequenceSpeed="1.4" motionEffect="NPC/Skill/Bliche/Eff_Bliche_Attack_03_C.xml" movedistance="200" moveEaseType="1" faceTarget="0" />
+				<attack point="p0" targetCount="1" attacktype="1" brokenOffence="1" unrideOnHit="1">
+					<rangeProperty rangeType="box" distance="300" rangeOffset="0.000000,-50.000000,0.000000" height="200" width="200" applyTarget="1" castTarget="1" />
+					<damageProperty rate="0.3" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="5" pushdistance="250" pushduration="0.6" pushUpDistance="150" attackMaterial="4" />
+				</attack>
+			</motion>
+		</level>
+	</skill>
+	<skill id="49600008" comment="블리체">
+		<basic>
+			<ui attackType="2" />
+			<kinds rangeType="2" element="7" />
+		</basic>
+		<level value="1">
+			<detectProperty rangeType="cylinder" distance="2000" rangeOffset="0.000000,-50.000000,0.000000" height="250" />
+			<motion>
+				<motionProperty sequenceName="Attack_01_D" movedistance="-300" moveEaseType="1" ignoreCollisionGroups="20" />
+				<attack point="p0" targetCount="1" attacktype="2" brokenOffence="1" unrideOnHit="1">
+					<rangeProperty rangeType="box" distance="800" rangeOffset="0.000000,-600.000000,0.000000" height="200" width="250" applyTarget="1" castTarget="1" />
+					<damageProperty count="0" rate="2" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" attackMaterial="4" />
+				</attack>
+			</motion>
+			<motion>
+				<motionProperty sequenceName="Attack_02_D" motionEffect="NPC/Skill/Bliche/Eff_Bliche_CorsairSlash_Attack_02_D.xml" ignoreCollisionGroups="20" />
+				<attack point="p0" targetCount="1" attacktype="2" brokenOffence="1" unrideOnHit="1">
+					<rangeProperty rangeType="box" distance="800" rangeOffset="0.000000,-600.000000,0.000000" height="200" width="250" applyTarget="1" castTarget="1" />
+					<damageProperty count="0" rate="2" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" attackMaterial="4" />
+				</attack>
+			</motion>
+			<motion>
+				<motionProperty sequenceName="Attack_03_D" motionEffect="NPC/Skill/Bliche/Eff_Bliche_CorsairSlash_Attack_03_D_Cast.xml" ignoreCollisionGroups="20" />
+				<attack point="p0" targetCount="1" attacktype="2" brokenOffence="1" unrideOnHit="1">
+					<rangeProperty rangeType="box" distance="800" rangeOffset="0.000000,-600.000000,0.000000" height="200" width="250" applyTarget="1" castTarget="1" />
+					<damageProperty count="0" rate="2" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" attackMaterial="4" />
+				</attack>
+			</motion>
+			<motion>
+				<motionProperty sequenceName="Attack_06_D" motionEffect="NPC/Skill/Bliche/Eff_Bliche_CorsairSlash_Attack_04_D.xml" movedistance="1650" moveEaseType="1" ignoreCollisionGroups="20" faceTarget="0" />
+				<attack point="p0" targetCount="1" magicPathID="5684" attacktype="2" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+					<rangeProperty rangeType="box" applyTarget="1" castTarget="1" />
+					<arrowProperty nonTarget="1" bounceType="3" bounceCount="1" collision="180.000000,250.000000,250.000000" effect="NPC/Skill/DevilHugeRed/Eff_DevilHugeRed_Bore_02_B_Ball.xml" />
+					<damageProperty rate="2" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="5" pushdistance="100" pushduration="0.3" pushPriority="1" attackMaterial="4" />
+					<conditionSkill level="1" skillID="49287001" skillTarget="2" skillOwner="1" />
+				</attack>
+			</motion>
+		</level>
+		<level value="2">
+			<detectProperty rangeType="cylinder" distance="2000" height="250" />
+			<motion>
+				<motionProperty sequenceName="Attack_01_D" movedistance="-550" moveEaseType="1" ignoreCollisionGroups="20" />
+				<attack point="p0" targetCount="1" attacktype="2" brokenOffence="1" unrideOnHit="1">
+					<rangeProperty rangeType="box" applyTarget="1" castTarget="1" />
+					<damageProperty count="0" rate="2" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" attackMaterial="4" />
+				</attack>
+			</motion>
+			<motion>
+				<motionProperty sequenceName="Attack_02_D" motionEffect="NPC/Skill/Bliche/Eff_Bliche_CorsairSlash_Attack_02_D_2.xml" ignoreCollisionGroups="20" />
+				<attack point="p0" targetCount="1" attacktype="2" brokenOffence="1" unrideOnHit="1">
+					<rangeProperty rangeType="box" applyTarget="1" castTarget="1" />
+					<damageProperty count="0" rate="2" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" attackMaterial="4" />
+				</attack>
+			</motion>
+			<motion>
+				<motionProperty sequenceName="Attack_03_D" motionEffect="NPC/Skill/Bliche/Eff_Bliche_CorsairSlash_Attack_03_D_Cast.xml" ignoreCollisionGroups="20" loopCount="2" />
+				<attack point="p0" targetCount="1" attacktype="2" brokenOffence="1" unrideOnHit="1">
+					<rangeProperty rangeType="box" applyTarget="1" castTarget="1" />
+					<damageProperty count="0" rate="2" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" attackMaterial="4" />
+				</attack>
+			</motion>
+			<motion>
+				<motionProperty sequenceName="Attack_04_D" motionEffect="NPC/Skill/Bliche/Eff_Bliche_CorsairSlash_Attack_04_D.xml" movedistance="1650" moveEaseType="1" ignoreCollisionGroups="20" faceTarget="0" />
+				<attack point="p0" targetCount="1" magicPathID="5684" attacktype="2" brokenOffence="1" unrideOnHit="1">
+					<rangeProperty rangeType="box" applyTarget="1" castTarget="1" />
+					<arrowProperty nonTarget="1" bounceType="3" bounceCount="1" collision="180.000000,250.000000,250.000000" effect="NPC/Skill/DevilHugeRed/Eff_DevilHugeRed_Bore_02_B_Ball.xml" />
+					<damageProperty rate="2" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="5" pushdistance="100" pushduration="0.3" pushPriority="1" attackMaterial="4" />
+					<conditionSkill level="1" skillID="49287001" skillTarget="2" skillOwner="1" />
+				</attack>
+			</motion>
+			<motion>
+				<motionProperty sequenceName="Attack_05_D" motionEffect="NPC/Skill/Bliche/Eff_Bliche_CorsairSlash_Attack_05_D.xml" movedistance="1650" moveEaseType="1" ignoreCollisionGroups="20" />
+				<attack point="p0" targetCount="1" magicPathID="5684" attacktype="2" brokenOffence="1" unrideOnHit="1">
+					<rangeProperty rangeType="box" applyTarget="1" castTarget="1" />
+					<arrowProperty nonTarget="1" bounceType="3" bounceCount="1" collision="180.000000,250.000000,250.000000" effect="NPC/Skill/DevilHugeRed/Eff_DevilHugeRed_Bore_02_B_Ball.xml" />
+					<damageProperty rate="2" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="5" pushdistance="100" pushduration="0.3" pushPriority="1" attackMaterial="4" />
+					<conditionSkill level="1" skillID="49287001" skillTarget="2" skillOwner="1" />
+				</attack>
+			</motion>
+			<motion>
+				<motionProperty sequenceName="Attack_06_D" motionEffect="NPC/Skill/Bliche/Eff_Bliche_CorsairSlash_Attack_05_D.xml" movedistance="1650" moveEaseType="1" ignoreCollisionGroups="20" />
+				<attack point="p0" targetCount="1" magicPathID="5684" attacktype="2" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+					<rangeProperty rangeType="box" applyTarget="1" castTarget="1" />
+					<arrowProperty nonTarget="1" bounceType="3" bounceCount="1" collision="180.000000,250.000000,250.000000" effect="NPC/Skill/DevilHugeRed/Eff_DevilHugeRed_Bore_02_B_Ball.xml" />
+					<damageProperty rate="2" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="5" pushdistance="400" pushduration="0.6" pushEaseType="1" pushUpDistance="50" pushDown="1" pushPriority="1" attackMaterial="4" />
+					<conditionSkill level="1" skillID="49287001" skillTarget="2" skillOwner="1" />
+				</attack>
+			</motion>
+		</level>
+	</skill>
+	<skill id="49600009" comment="블리체">
+		<basic>
+			<ui attackType="1" />
+			<kinds rangeType="1" element="7" />
+		</basic>
+		<level value="1">
+			<detectProperty rangeType="box" distance="700" height="250" width="300" />
+			<motion>
+				<motionProperty sequenceName="Attack_01_F" motionEffect="NPC/Skill/Bliche/Eff_Bliche_MoonSlash_Attack_01_F.xml" />
+				<attack point="p0" targetCount="1" attacktype="1" brokenOffence="1" unrideOnHit="1">
+					<rangeProperty rangeType="cylinder" distance="700" height="200" width="100" applyTarget="1" castTarget="1" />
+					<damageProperty count="0" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" damageByTargetMaxHP="0.5" push="1" attackMaterial="4" />
+				</attack>
+			</motion>
+			<motion>
+				<motionProperty sequenceName="Attack_02_F" motionEffect="NPC/Skill/Bliche/Eff_Bliche_MoonSlash_Attack_02_F_Start.xml" />
+				<attack point="p0" targetCount="1" attacktype="1" brokenOffence="1" unrideOnHit="1">
+					<rangeProperty rangeType="cylinder" distance="700" height="200" width="100" applyTarget="1" castTarget="1" />
+					<damageProperty count="0" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" damageByTargetMaxHP="0.5" push="1" attackMaterial="4" />
+				</attack>
+			</motion>
+			<motion>
+				<motionProperty sequenceName="Attack_03_F" motionEffect="NPC/Skill/Bliche/Eff_Bliche_MoonSlash_Attack_03_F_Cast01.xml" loopCount="4" doesPlayIdleOnSkillEnd="false" />
+				<attack point="p0" targetCount="1" attacktype="1" brokenOffence="1" unrideOnHit="1">
+					<rangeProperty rangeType="cylinder" distance="700" height="200" width="100" applyTarget="1" castTarget="1" />
+					<damageProperty count="0" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" damageByTargetMaxHP="0.5" push="1" attackMaterial="4" />
+				</attack>
+			</motion>
+		</level>
+		<level value="2">
+			<detectProperty rangeType="box" distance="700" height="250" width="300" />
+			<motion>
+				<motionProperty sequenceName="Attack_04_F" motionEffect="NPC/Skill/Bliche/Eff_Bliche_MoonSlash_Attack_04_F.xml" faceTarget="0" doesPlayIdleOnSkillEnd="false" />
+				<attack point="p0" targetCount="1" attacktype="1" brokenOffence="1" unrideOnHit="1" compulsionType="3">
+					<rangeProperty rangeType="cylinder" distance="500" height="300" width="500" applyTarget="1" castTarget="1" />
+					<damageProperty effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" damageByTargetMaxHP="0.5" push="1" pushdistance="300" pushduration="0.5" pushPriority="1" attackMaterial="4" />
+				</attack>
+			</motion>
+		</level>
+		<level value="3">
+			<detectProperty rangeType="box" distance="700" height="250" width="300" />
+			<motion>
+				<motionProperty sequenceName="Attack_05_F" motionEffect="NPC/Skill/Bliche/Eff_Bliche_MoonSlash_Attack_05_F.xml" faceTarget="0" doesPlayIdleOnSkillEnd="false" />
+				<attack point="p0" targetCount="1" attacktype="1" brokenOffence="1" unrideOnHit="1" compulsionType="3">
+					<rangeProperty rangeType="hole_cylinder" height="300" width="500" endWidth="1200" applyTarget="1" castTarget="1" />
+					<damageProperty effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" damageByTargetMaxHP="0.5" push="2" pushdistance="400" pushduration="0.5" pushPriority="2" attackMaterial="4" />
+				</attack>
+			</motion>
+		</level>
+		<level value="4">
+			<detectProperty rangeType="box" distance="700" height="250" width="300" />
+			<motion>
+				<motionProperty sequenceName="Attack_06_F" motionEffect="NPC/Skill/Bliche/Eff_Bliche_MoonSlash_Attack_04_F.xml" faceTarget="0" />
+				<attack point="p0" targetCount="1" attacktype="1" brokenOffence="1" unrideOnHit="1" compulsionType="3">
+					<rangeProperty rangeType="cylinder" distance="500" height="300" width="500" applyTarget="1" castTarget="1" />
+					<damageProperty effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" damageByTargetMaxHP="0.5" push="1" pushdistance="300" pushduration="0.5" pushPriority="3" attackMaterial="4" />
+				</attack>
+			</motion>
+		</level>
+	</skill>
+	<skill id="49600010" comment="블리체">
+		<basic>
+			<ui attackType="1" />
+			<kinds rangeType="1" element="7" />
+		</basic>
+		<level value="1">
+			<detectProperty rangeType="box" distance="700" height="250" width="300" />
+			<motion>
+				<motionProperty sequenceName="Jump_Ready_A" sequenceSpeed="1.5" ignoreCollisionGroups="20" />
+				<attack point="p0" targetCount="1" attacktype="1" brokenOffence="1" unrideOnHit="1">
+					<rangeProperty rangeType="cylinder" distance="700" height="200" width="100" applyTarget="1" castTarget="1" />
+					<damageProperty count="0" rate="0.1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" attackMaterial="3" />
+				</attack>
+			</motion>
+			<motion>
+				<motionProperty sequenceName="Jump_Up_A" sequenceSpeed="1.5" ignoreCollisionGroups="20" />
+				<attack point="p0" targetCount="1" attacktype="1" brokenOffence="1" unrideOnHit="1">
+					<rangeProperty rangeType="cylinder" distance="700" height="300" width="400" applyTarget="1" castTarget="1" />
+					<damageProperty count="0" rate="0.1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" attackMaterial="3" />
+				</attack>
+			</motion>
+		</level>
+		<level value="2">
+			<detectProperty rangeType="box" distance="700" height="250" width="300" />
+			<motion>
+				<motionProperty sequenceName="Jump_Down_A" sequenceSpeed="1.2" ignoreCollisionGroups="20" />
+				<attack point="p0" targetCount="1" attacktype="1" brokenOffence="1" unrideOnHit="1">
+					<rangeProperty rangeType="cylinder" distance="700" height="200" width="100" applyTarget="1" castTarget="1" />
+					<damageProperty count="0" rate="0.1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" attackMaterial="3" />
+				</attack>
+			</motion>
+			<motion>
+				<motionProperty sequenceName="Jump_Land_A" ignoreCollisionGroups="20" />
+				<attack point="p0" targetCount="1" attacktype="1" brokenOffence="1" unrideOnHit="1">
+					<rangeProperty rangeType="cylinder" distance="700" height="300" width="400" applyTarget="1" castTarget="1" />
+					<damageProperty count="0" rate="0.1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" attackMaterial="3" />
+				</attack>
+			</motion>
+		</level>
+	</skill>
+	<skill id="49600011" comment="블리체">
+		<basic>
+			<ui attackType="1" />
+			<kinds rangeType="1" element="7" />
+		</basic>
+		<level value="1">
+			<conditionSkill level="1" skillID="49287004" skillTarget="1">
+				<beginCondition allowBattleRidingState="1" />
+			</conditionSkill>
+			<motion>
+				<motionProperty sequenceName="Phase_Shift_A" />
+				<attack point="p0" attacktype="1" unrideOnHit="1">
+					<rangeProperty rangeType="cylinder" distance="700" height="300" width="400" applyTarget="1" castTarget="1" />
+					<damageProperty count="0" rate="0.1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" />
+				</attack>
+			</motion>
+		</level>
+		<level value="2">
+			<conditionSkill level="1" skillID="49287005" skillTarget="1">
+				<beginCondition allowBattleRidingState="1" />
+			</conditionSkill>
+			<motion>
+				<motionProperty sequenceName="Phase_Shift_A" />
+				<attack point="p0" attacktype="1" unrideOnHit="1">
+					<rangeProperty rangeType="cylinder" distance="700" height="300" width="400" applyTarget="1" castTarget="1" />
+					<damageProperty count="0" rate="0.1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" />
+				</attack>
+			</motion>
+		</level>
+		<level value="3">
+			<conditionSkill level="2" skillID="49287005" skillTarget="1">
+				<beginCondition allowBattleRidingState="1" />
+			</conditionSkill>
+			<motion>
+				<motionProperty sequenceName="Phase_Shift_A" />
+				<attack point="p0" attacktype="1" unrideOnHit="1">
+					<rangeProperty rangeType="cylinder" distance="700" height="300" width="400" applyTarget="1" castTarget="1" />
+					<damageProperty count="0" rate="0.1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" />
+				</attack>
+			</motion>
+		</level>
+	</skill>
+	<skill id="49600012" comment="블리체">
+		<basic>
+			<ui attackType="1" />
+			<kinds rangeType="1" element="7" />
+		</basic>
+		<level value="1">
+			<detectProperty rangeType="box" distance="350" height="250" width="300" />
+			<motion>
+				<motionProperty sequenceName="Phase_Shift_A" ignoreCollisionGroups="20" faceTarget="0" />
+				<attack point="p0" attacktype="1" unrideOnHit="1">
+					<rangeProperty rangeType="box" distance="400" height="250" width="300" applyTarget="1" castTarget="1" />
+					<damageProperty count="0" rate="0.1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" />
+				</attack>
+			</motion>
+		</level>
+	</skill>
+	<skill id="49600013" comment="블리체">
+		<basic>
+			<ui attackType="1" />
+			<kinds rangeType="1" element="7" />
+		</basic>
+		<level value="1">
+			<detectProperty rangeType="cylinder" distance="1700" height="300" />
+			<motion>
+				<motionProperty sequenceName="Phase_Shift_A" ignoreCollisionGroups="20" faceTarget="0" />
+				<attack point="p0" attacktype="1" unrideOnHit="1">
+					<rangeProperty rangeType="box" distance="1000" height="250" width="300" applyTarget="1" castTarget="1" />
+					<damageProperty count="0" rate="0.1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" />
+				</attack>
+			</motion>
+		</level>
+	</skill>
+	<skill id="49600014" comment="블리체">
+		<basic>
+			<ui attackType="1" />
+			<kinds rangeType="1" element="7" />
+		</basic>
+		<level value="1">
+			<detectProperty rangeType="box" distance="500" rangeOffset="0.000000,350.000000,0.000000" height="250" width="300" />
+			<motion>
+				<motionProperty sequenceName="Phase_Shift_A" ignoreCollisionGroups="20" faceTarget="0" />
+				<attack point="p0" attacktype="1" unrideOnHit="1">
+					<rangeProperty rangeType="box" distance="400" height="250" width="300" applyTarget="1" castTarget="1" />
+					<damageProperty count="0" rate="0.1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" />
+				</attack>
+			</motion>
+		</level>
+	</skill>
+	<skill id="49600015" comment="블리체">
+		<basic>
+			<ui attackType="2" />
+			<kinds element="7" />
+		</basic>
+		<level value="1">
+			<detectProperty rangeType="cylinder" distance="1700" height="250" />
+			<motion>
+				<motionProperty sequenceName="RangeAttack_01_A" motionEffect="NPC/Skill/Bliche/Eff_Bliche_ShipLazerDrop_RangeAttack_01_A.xml" faceTarget="0" />
+				<attack point="p0" targetCount="1" cubeMagicPathID="5498" attacktype="2" unrideOnHit="1">
+					<rangeProperty rangeType="cylinder" distance="1700" height="250" applyTarget="1" castTarget="1" />
+					<arrowProperty nonTarget="1" />
+					<damageProperty count="0" rate="2.5" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="4" />
+					<actionSkill splash="1" level="1" skillID="99999796" interval="1000" />
+				</attack>
+				<attack point="p1" targetCount="1" cubeMagicPathID="5498" attacktype="2" unrideOnHit="1">
+					<rangeProperty rangeType="cylinder" distance="1700" height="250" applyTarget="1" castTarget="1" />
+					<arrowProperty nonTarget="1" />
+					<damageProperty count="0" rate="2.5" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="4" />
+					<actionSkill splash="1" level="1" skillID="99999796" interval="1000" />
+				</attack>
+				<attack point="p2" targetCount="1" cubeMagicPathID="5498" attacktype="2" unrideOnHit="1">
+					<rangeProperty rangeType="cylinder" distance="1700" height="250" applyTarget="1" castTarget="1" />
+					<arrowProperty nonTarget="1" />
+					<damageProperty count="0" rate="2.5" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="4" />
+					<actionSkill splash="1" level="1" skillID="99999796" interval="1000" />
+				</attack>
+				<attack point="p3" targetCount="1" cubeMagicPathID="5498" attacktype="2" unrideOnHit="1">
+					<rangeProperty rangeType="cylinder" distance="1700" height="250" applyTarget="1" castTarget="1" />
+					<arrowProperty nonTarget="1" />
+					<damageProperty count="0" rate="2.5" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="4" />
+					<actionSkill splash="1" level="1" skillID="99999796" interval="1000" />
+				</attack>
+				<attack point="p4" targetCount="1" cubeMagicPathID="5498" attacktype="2" unrideOnHit="1">
+					<rangeProperty rangeType="cylinder" distance="1700" height="250" applyTarget="1" castTarget="1" />
+					<arrowProperty nonTarget="1" />
+					<damageProperty count="0" rate="2.5" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="4" />
+					<actionSkill splash="1" level="1" skillID="99999796" interval="1000" />
+				</attack>
+			</motion>
+		</level>
+	</skill>
+	<skill id="49600016" comment="블리체">
+		<basic>
+			<ui attackType="1" />
+			<kinds rangeType="1" element="7" />
+		</basic>
+		<level value="1">
+			<detectProperty rangeType="box" distance="700" height="250" width="300" />
+			<motion>
+				<motionProperty sequenceName="Attack_01_F" motionEffect="NPC/Skill/Bliche/Eff_Bliche_MoonSlash_Attack_01_F.xml" />
+				<attack point="p0" targetCount="1" attacktype="1" brokenOffence="1" unrideOnHit="1">
+					<rangeProperty rangeType="cylinder" distance="700" height="200" width="100" applyTarget="1" castTarget="1" />
+					<damageProperty count="0" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" damageByTargetMaxHP="0.5" push="1" attackMaterial="4" />
+				</attack>
+			</motion>
+			<motion>
+				<motionProperty sequenceName="Attack_02_F" motionEffect="NPC/Skill/Bliche/Eff_Bliche_MoonSlash_Attack_02_F_Start.xml" />
+				<attack point="p0" targetCount="1" attacktype="1" brokenOffence="1" unrideOnHit="1">
+					<rangeProperty rangeType="cylinder" distance="700" height="200" width="100" applyTarget="1" castTarget="1" />
+					<damageProperty count="0" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" damageByTargetMaxHP="0.5" push="1" attackMaterial="4" />
+				</attack>
+			</motion>
+			<motion>
+				<motionProperty sequenceName="Attack_03_F" motionEffect="NPC/Skill/Bliche/Eff_Bliche_MoonSlash_Attack_03_F_Cast02.xml" loopCount="4" doesPlayIdleOnSkillEnd="false" />
+				<attack point="p0" targetCount="1" attacktype="1" brokenOffence="1" unrideOnHit="1">
+					<rangeProperty rangeType="cylinder" distance="700" height="200" width="100" applyTarget="1" castTarget="1" />
+					<damageProperty count="0" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" damageByTargetMaxHP="0.5" push="1" attackMaterial="4" />
+				</attack>
+			</motion>
+		</level>
+		<level value="2">
+			<detectProperty rangeType="box" distance="700" height="250" width="300" />
+			<motion>
+				<motionProperty sequenceName="Attack_05_F" motionEffect="NPC/Skill/Bliche/Eff_Bliche_MoonSlash_Attack_05_F.xml" faceTarget="0" doesPlayIdleOnSkillEnd="false" />
+				<attack point="p0" targetCount="1" attacktype="1" brokenOffence="1" unrideOnHit="1" compulsionType="3">
+					<rangeProperty rangeType="hole_cylinder" height="300" width="500" endWidth="1200" applyTarget="1" castTarget="1" />
+					<damageProperty effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" damageByTargetMaxHP="0.5" push="2" pushdistance="300" pushduration="0.5" pushPriority="1" attackMaterial="4" />
+				</attack>
+			</motion>
+		</level>
+		<level value="3">
+			<detectProperty rangeType="box" distance="700" height="250" width="300" />
+			<motion>
+				<motionProperty sequenceName="Attack_04_F" motionEffect="NPC/Skill/Bliche/Eff_Bliche_MoonSlash_Attack_04_F.xml" faceTarget="0" doesPlayIdleOnSkillEnd="false" />
+				<attack point="p0" targetCount="1" attacktype="1" brokenOffence="1" unrideOnHit="1" compulsionType="3">
+					<rangeProperty rangeType="cylinder" distance="500" height="300" width="500" applyTarget="1" castTarget="1" />
+					<damageProperty effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" damageByTargetMaxHP="0.5" push="1" pushdistance="400" pushduration="0.5" pushPriority="2" attackMaterial="4" />
+				</attack>
+			</motion>
+		</level>
+		<level value="4">
+			<detectProperty rangeType="box" distance="700" height="250" width="300" />
+			<motion>
+				<motionProperty sequenceName="Attack_05_F" motionEffect="NPC/Skill/Bliche/Eff_Bliche_MoonSlash_Attack_05_F.xml" faceTarget="0" />
+				<attack point="p0" targetCount="1" attacktype="1" brokenOffence="1" unrideOnHit="1" compulsionType="3">
+					<rangeProperty rangeType="hole_cylinder" height="300" width="500" endWidth="1200" applyTarget="1" castTarget="1" />
+					<damageProperty effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" damageByTargetMaxHP="0.5" push="2" pushdistance="300" pushduration="0.5" pushPriority="3" attackMaterial="4" />
+				</attack>
+			</motion>
+		</level>
+	</skill>
+	<skill id="49600017" comment="블리체">
+		<basic>
+			<ui attackType="2" />
+			<kinds rangeType="2" element="7" />
+		</basic>
+		<level value="1">
+			<detectProperty rangeType="cylinder" distance="1900" height="250" />
+			<motion>
+				<motionProperty sequenceName="Attack_01_E" sequenceSpeed="1.2" motionEffect="NPC/Skill/Bliche/Eff_Bliche_WindSlash_Attack_01_E_Start.xml" />
+				<attack point="p0" targetCount="1" attacktype="2" brokenOffence="1" unrideOnHit="1">
+					<rangeProperty rangeType="box" distance="1000" height="200" width="200" applyTarget="1" castTarget="1" />
+					<damageProperty count="0" rate="0.4" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" attackMaterial="4" />
+				</attack>
+			</motion>
+			<motion>
+				<motionProperty sequenceName="Attack_02_E" motionEffect="NPC/Skill/Bliche/Eff_Bliche_WindSlash_Attack_02_E_Cast.xml" loopCount="3" faceTarget="0" doesPlayIdleOnSkillEnd="false" />
+				<attack point="p0" targetCount="1" attacktype="2" brokenOffence="1" unrideOnHit="1">
+					<rangeProperty rangeType="box" distance="1000" height="200" width="200" applyTarget="1" castTarget="1" />
+					<damageProperty count="0" rate="0.4" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" attackMaterial="4" />
+				</attack>
+			</motion>
+		</level>
+		<level value="2">
+			<detectProperty rangeType="cylinder" distance="1900" height="250" />
+			<motion>
+				<motionProperty sequenceName="Attack_03_E" sequenceSpeed="1.2" motionEffect="NPC/Skill/Bliche/Eff_Bliche_WindSlash_Attack_03_E.xml" doesPlayIdleOnSkillEnd="false" />
+				<attack point="p0" targetCount="1" magicPathID="5680" attacktype="2" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+					<rangeProperty rangeType="box" applyTarget="1" castTarget="1" />
+					<arrowProperty nonTarget="1" bounceType="3" bounceCount="1" collision="250.000000,250.000000,250.000000" effect="NPC/Skill/Bliche/Eff_Bliche_WindSlash_Ball_01.xml" />
+					<damageProperty rate="0.4" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="5" pushdistance="150" pushduration="0.3" pushPriority="1" attackMaterial="4" />
+					<conditionSkill level="1" skillID="49287001" skillTarget="2" skillOwner="1" />
+				</attack>
+			</motion>
+			<motion>
+				<motionProperty sequenceName="Attack_04_E" sequenceSpeed="1.2" doesPlayIdleOnSkillEnd="false" />
+				<attack point="p0" targetCount="1" magicPathID="5680" attacktype="2" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+					<rangeProperty rangeType="box" applyTarget="1" castTarget="1" />
+					<arrowProperty nonTarget="1" bounceType="3" bounceCount="1" collision="250.000000,250.000000,250.000000" effect="NPC/Skill/Bliche/Eff_Bliche_WindSlash_Ball_02.xml" />
+					<damageProperty rate="0.4" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="5" pushdistance="150" pushduration="0.3" pushPriority="1" attackMaterial="4" />
+					<conditionSkill level="1" skillID="49287001" skillTarget="2" skillOwner="1" />
+				</attack>
+			</motion>
+			<motion>
+				<motionProperty sequenceName="Attack_05_E" sequenceSpeed="1.2" motionEffect="NPC/Skill/Bliche/Eff_Bliche_WindSlash_Attack_03_E.xml" doesPlayIdleOnSkillEnd="false" />
+				<attack point="p0" targetCount="1" magicPathID="5680" attacktype="2" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+					<rangeProperty rangeType="box" applyTarget="1" castTarget="1" />
+					<arrowProperty nonTarget="1" bounceType="3" bounceCount="1" collision="250.000000,250.000000,250.000000" effect="NPC/Skill/Bliche/Eff_Bliche_WindSlash_Ball_01.xml" />
+					<damageProperty rate="0.4" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="5" pushdistance="150" pushduration="0.3" pushPriority="1" attackMaterial="4" />
+					<conditionSkill level="1" skillID="49287001" skillTarget="2" skillOwner="1" />
+				</attack>
+			</motion>
+			<motion>
+				<motionProperty sequenceName="Attack_06_E" sequenceSpeed="1.2" doesPlayIdleOnSkillEnd="false" />
+				<attack point="p0" targetCount="1" magicPathID="5680" attacktype="2" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+					<rangeProperty rangeType="box" applyTarget="1" castTarget="1" />
+					<arrowProperty nonTarget="1" bounceType="3" bounceCount="1" collision="250.000000,250.000000,250.000000" effect="NPC/Skill/Bliche/Eff_Bliche_WindSlash_Ball_02.xml" />
+					<damageProperty rate="0.4" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="5" pushdistance="150" pushduration="0.3" pushPriority="1" attackMaterial="4" />
+					<conditionSkill level="1" skillID="49287001" skillTarget="2" skillOwner="1" />
+				</attack>
+			</motion>
+		</level>
+		<level value="3">
+			<detectProperty rangeType="cylinder" distance="1900" height="250" />
+			<motion>
+				<motionProperty sequenceName="Attack_07_E" sequenceSpeed="1.2" motionEffect="NPC/Skill/Bliche/Eff_Bliche_WindSlash_Attack_07_E.xml" />
+				<attack point="p0" targetCount="1" magicPathID="5680" attacktype="2" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+					<rangeProperty rangeType="box" applyTarget="1" castTarget="1" />
+					<arrowProperty nonTarget="1" bounceType="3" bounceCount="1" collision="250.000000,250.000000,250.000000" effect="NPC/Skill/Bliche/Eff_Bliche_WindSlash_Ball_03.xml" />
+					<damageProperty rate="0.4" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="5" pushdistance="150" pushduration="0.3" pushPriority="1" attackMaterial="4" />
+					<conditionSkill level="1" skillID="49287001" skillTarget="2" skillOwner="1" />
+				</attack>
+			</motion>
+		</level>
+	</skill>
+</ms2>

@@ -2,14 +2,12 @@
 <!-- 파싱해서 사용하는 데이터이니 직접 수정하지 마세요 -->
 <ms2>
 	<level>
-		<beginCondition probability="1" allowBattleRidingState="1" allowMapleSurvival="1" />
+		<beginCondition allowBattleRidingState="1" />
 		<BasicProperty level="1" buffType="2" durationTick="150" intervalTick="96" resetCondition="1" dotCondition="1" logoutClearEffect="1" leaveFieldClearEffect="1" />
 		<MotionProperty abnormalImmuneBreak="5" />
 		<CancelEffectProperty cancelEffectCodes="71000049,71000053" />
 		<DotDamageProperty type="1" damageByTargetMaxHP="1" />
 		<UIProperty icon="./Data/Resource/Image/skill/icon/100000001.png" iconOnOff="0" />
-		<conditionSkill level="1" skillID="70001091" skillTarget="1" activeByIntervalTick="1">
-			<beginCondition probability="1" allowMapleSurvival="1" />
-		</conditionSkill>
+		<conditionSkill level="1" skillID="70001091" skillTarget="1" activeByIntervalTick="1" />
 	</level>
 </ms2>

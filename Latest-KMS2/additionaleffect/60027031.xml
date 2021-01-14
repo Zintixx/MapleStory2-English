@@ -2,8 +2,8 @@
 <!-- 파싱해서 사용하는 데이터이니 직접 수정하지 마세요 -->
 <ms2>
 	<level>
-		<beginCondition probability="1">
-			<caster hasBuffID="0" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="0" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="">
+		<beginCondition>
+			<caster hasBuffID="0" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="0" hasBuffCountCompare="Equals">
 				<compareStat hp="0.3" func="LessEquals" />
 			</caster>
 		</beginCondition>
@@ -11,6 +11,6 @@
 		<MotionProperty startEffect="NPC/Skill/BullAxeBrown/Eff_BullAxeBrown_Attack_02_B_Kill_Hit.xml" abnormalImmuneBreak="1" />
 		<StatusProperty compulsionEventTypes="1" compulsionEventRate="0.000000" />
 		<DotDamageProperty type="1" element="7" damageByTargetMaxHP="0.2" />
-		<UIProperty icon="" iconOnOff="0" />
+		<UIProperty iconOnOff="0" />
 	</level>
 </ms2>

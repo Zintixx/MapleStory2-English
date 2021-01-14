@@ -5,10 +5,10 @@
 		<BasicProperty level="1" buffType="2" buffSubType="4" durationTick="20000" resetCondition="1" casterIndividualEffect="1" clearEffectFromPVPZone="1" skillGroupType="1" />
 		<MotionProperty startEffect="CH/Skill/Wizard/Eff_Wizard_Hurricane_Start_02.xml" keepEffect="CH/Skill/Wizard/Eff_Wizard_Hurricane_Keep_02.xml" stopEffect="CH/Skill/Wizard/Eff_Wizard_Hurricane_Stop_02.xml" abnormalImmuneBreak="5" />
 		<CancelEffectProperty cancelCheckSameCaster="1" cancelEffectCodes="10300272" />
-		<UIProperty icon="" iconOnOff="0" />
+		<UIProperty iconOnOff="0" />
 		<conditionSkill level="1" skillID="10300274" skillTarget="1" skillOwner="3">
-			<beginCondition probability="1">
-				<owner hasBuffID="10300271" hasBuffLevel="0" hasBuffOwner="1" hasBuffCount="7" hasBuffCountCompare="Equals" eventCondition="10" eventSkillID="" eventEffectID="" />
+			<beginCondition>
+				<owner hasBuffID="10300271" hasBuffLevel="0" hasBuffOwner="1" hasBuffCount="7" hasBuffCountCompare="Equals" eventCondition="10" />
 			</beginCondition>
 		</conditionSkill>
 	</level>

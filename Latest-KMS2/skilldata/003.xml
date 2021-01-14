@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ms2>
+	<skill id="300001" comment="양손검">
+		<basic>
+			<ui attackType="1" />
+			<kinds subType="1" rangeType="1" jump="300011" unrideOnUse="1" />
+			<stateAttr autoTargetingType="1" moveType="1" keyIsDown="1" clearCooldownFromPVPZone="1" ignoreReduceCooldown="1" />
+		</basic>
+		<level value="1">
+			<beginCondition cooldownTime="0.6">
+				<weapon lh="0" rh="50" />
+			</beginCondition>
+			<autoTargeting autoTargetingMaxDegree="90" />
+			<push back="300" />
+			<combo inputSkill="300001" outputSkill="300002" />
+			<motion>
+				<motionProperty sequenceName="LargeSword_Attack_01_A" strTagEffects="e0=CH/Weapon/LargeSword/Eff_LargeSword_Attack01_Cast_01.xml" keyMove="25" />
+				<attack point="p0" pointGroupID="300001" targetCount="3" direction="2" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="3" unrideOnHit="1">
+					<pauseProperty pauseDuration="0.2" pauseShakeDuration="0.15" pauseAmp="15" />
+					<rangeProperty rangeType="box" distance="250" rangeAdd="0.000000,25.000000,0.000000" height="150" width="350" applyTarget="1" />
+					<arrowProperty nonTarget="1" />
+					<damageProperty rate="0.75" hitSpeedRate="0.5" effectHit="CH/Weapon/LargeSword/Eff_LargeSword_Hit_01.xml" />
+				</attack>
+			</motion>
+		</level>
+	</skill>
+	<skill id="300002" comment="양손검">
+		<basic>
+			<ui attackType="1" />
+			<kinds subType="1" rangeType="1" unrideOnUse="1" />
+			<stateAttr autoTargetingType="1" moveType="1" ignoreReduceCooldown="1" />
+		</basic>
+		<level value="1">
+			<beginCondition>
+				<weapon lh="0" rh="50" />
+			</beginCondition>
+			<autoTargeting autoTargetingMaxDegree="90" />
+			<push back="300" />
+			<combo comboSkill="1" comboOriginSkill="300001" inputSkill="300001" outputSkill="300003" />
+			<motion>
+				<motionProperty sequenceName="LargeSword_Attack_02_A" strTagEffects="e0=CH/Weapon/LargeSword/Eff_LargeSword_Attack02_Cast_01.xml" keyMove="25" />
+				<attack point="p0" pointGroupID="300002" targetCount="3" direction="1" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="3" unrideOnHit="1">
+					<pauseProperty pauseDuration="0.2" pauseShakeDuration="0.15" pauseAmp="15" />
+					<rangeProperty rangeType="box" distance="250" rangeAdd="0.000000,25.000000,0.000000" height="150" width="350" applyTarget="1" />
+					<arrowProperty nonTarget="1" />
+					<damageProperty rate="0.75" hitSpeedRate="0.5" effectHit="CH/Weapon/LargeSword/Eff_LargeSword_Hit_01.xml" />
+				</attack>
+			</motion>
+		</level>
+	</skill>
+	<skill id="300003" comment="양손검">
+		<basic>
+			<ui attackType="1" />
+			<kinds subType="1" rangeType="1" unrideOnUse="1" />
+			<stateAttr autoTargetingType="1" moveType="1" ignoreReduceCooldown="1" />
+		</basic>
+		<level value="1">
+			<beginCondition>
+				<weapon lh="0" rh="50" />
+			</beginCondition>
+			<autoTargeting autoTargetingMaxDegree="90" />
+			<push back="150" />
+			<combo comboSkill="1" comboOriginSkill="300001" inputSkill="300001" outputSkill="300001" />
+			<motion>
+				<motionProperty sequenceName="LargeSword_Attack_03_A" strTagEffects="e0=CH/Weapon/LargeSword/Eff_LargeSword_Attack03_Cast_01.xml" keyMove="40" />
+				<attack point="p0" pointGroupID="300003" targetCount="3" direction="2" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="3" unrideOnHit="1">
+					<pauseProperty pauseShakeDuration="0.15" pauseAmp="15" />
+					<rangeProperty rangeType="box" distance="250" rangeAdd="0.000000,25.000000,0.000000" height="150" width="350" applyTarget="1" />
+					<arrowProperty nonTarget="1" />
+					<damageProperty rate="0.75" hitSpeedRate="0.5" effectHit="CH/Weapon/LargeSword/Eff_LargeSword_Hit_01.xml" />
+				</attack>
+			</motion>
+		</level>
+	</skill>
+	<skill id="300011" comment="양손검">
+		<basic>
+			<ui attackType="1" />
+			<kinds subType="1" rangeType="1" unrideOnUse="1" />
+			<stateAttr autoTargetingType="1" ignoreReduceCooldown="1" />
+		</basic>
+		<level value="1">
+			<beginCondition cooldownTime="0.6">
+				<weapon lh="0" rh="50" />
+			</beginCondition>
+			<autoTargeting autoTargetingMaxDegree="90" />
+			<motion>
+				<motionProperty sequenceName="LargeSword_Jump_Attack_A" strTagEffects="e0=CH/Weapon/LargeSword/Eff_LargeSword_JumpAttack_Cast_01.xml" />
+				<attack point="p0" pointGroupID="300011" targetCount="3" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="3" unrideOnHit="1">
+					<rangeProperty rangeType="box" distance="250" rangeAdd="0.000000,0.000000,120.000000" height="150" width="120" applyTarget="1" />
+					<arrowProperty nonTarget="1" />
+					<damageProperty rate="0.45" effectHit="CH/Weapon/LargeSword/Eff_LargeSword_Hit_01.xml" />
+				</attack>
+			</motion>
+		</level>
+	</skill>
+</ms2>
