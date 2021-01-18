@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 파싱해서 사용하는 데이터이니 직접 수정하지 마세요 -->
+<ms2 feature="">
+	<basic>
+		<ui attackType="1" />
+		<kinds rangeType="1" element="7" />
+	</basic>
+	<level value="1">
+		<beginCondition probability="1">
+			<stat hp="1" />
+		</beginCondition>
+		<detectProperty rangeType="box" distance="250" rangeOffset="0.000000,0.000000,50.000000" height="150" width="300" />
+		<motion>
+			<motionProperty sequenceName="Attack_01_C" strTagEffects="e0=NPC/Skill/GraveRobber/Eff_GraveRobber_Attack_01_A_Cast_01.xml" faceTarget="0" doesPlayIdleOnSkillEnd="false" aniSkipTime="1" />
+			<attack point="p0" attacktype="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+				<rangeProperty applyTarget="1" castTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty count="0" />
+			</attack>
+		</motion>
+		<motion>
+			<motionProperty sequenceName="Attack_02_C" doesPlayIdleOnSkillEnd="false" />
+			<attack point="p0" targetCount="1" magicPathID="49908631" cubeMagicPathID="499086311" attacktype="1" brokenOffence="1" unrideOnHit="1">
+				<rangeProperty rangeType="box" distance="1200" height="200" width="1200" applyTarget="1" castTarget="1" />
+				<arrowProperty nonTarget="1" collision="50.000000,25.000000,25.000000" collisionAdd="0.000000,25.000000,25.000000" effect="NPC/Skill/GraveRobber/Eff_GraveRobber_Attack_02_C_Ball_01.xml" />
+				<damageProperty count="0" attackMaterial="1" />
+				<conditionSkill splash="1" level="1" skillID="49908632" immediateActive="1" nonTargetActive="1" />
+			</attack>
+			<attack point="p1" targetCount="1" magicPathID="49908632" cubeMagicPathID="499086311" attacktype="1" unrideOnHit="1">
+				<rangeProperty rangeType="box" distance="1200" height="200" width="1200" applyTarget="1" castTarget="1" />
+				<arrowProperty nonTarget="1" collision="50.000000,25.000000,25.000000" collisionAdd="0.000000,25.000000,25.000000" effect="NPC/Skill/GraveRobber/Eff_GraveRobber_Attack_02_C_Ball_01.xml" />
+				<damageProperty count="0" attackMaterial="1" />
+				<conditionSkill splash="1" level="1" skillID="49908632" immediateActive="1" nonTargetActive="1" />
+			</attack>
+			<attack point="p2" targetCount="1" magicPathID="49908633" cubeMagicPathID="499086311" attacktype="1" unrideOnHit="1">
+				<rangeProperty rangeType="box" distance="1200" height="200" width="1200" applyTarget="1" castTarget="1" />
+				<arrowProperty nonTarget="1" collision="50.000000,25.000000,25.000000" collisionAdd="0.000000,25.000000,25.000000" effect="NPC/Skill/GraveRobber/Eff_GraveRobber_Attack_02_C_Ball_01.xml" />
+				<damageProperty count="0" attackMaterial="1" />
+				<conditionSkill splash="1" level="1" skillID="49908632" immediateActive="1" nonTargetActive="1" />
+			</attack>
+			<attack point="p3" targetCount="1" magicPathID="49908634" cubeMagicPathID="499086311" attacktype="1" unrideOnHit="1">
+				<rangeProperty rangeType="box" distance="1200" height="200" width="1200" applyTarget="1" castTarget="1" />
+				<arrowProperty nonTarget="1" collision="50.000000,25.000000,25.000000" collisionAdd="0.000000,25.000000,25.000000" effect="NPC/Skill/GraveRobber/Eff_GraveRobber_Attack_02_C_Ball_01.xml" />
+				<damageProperty count="0" attackMaterial="1" />
+				<conditionSkill splash="1" level="1" skillID="49908632" immediateActive="1" nonTargetActive="1" />
+			</attack>
+			<attack point="p4" targetCount="1" magicPathID="49908635" cubeMagicPathID="499086311" attacktype="1" unrideOnHit="1">
+				<rangeProperty rangeType="box" distance="1200" height="200" width="1200" applyTarget="1" castTarget="1" />
+				<arrowProperty nonTarget="1" collision="50.000000,25.000000,25.000000" collisionAdd="0.000000,25.000000,25.000000" effect="NPC/Skill/GraveRobber/Eff_GraveRobber_Attack_02_C_Ball_01.xml" />
+				<damageProperty count="0" attackMaterial="1" />
+				<conditionSkill splash="1" level="1" skillID="49908632" immediateActive="1" nonTargetActive="1" />
+			</attack>
+		</motion>
+		<motion>
+			<motionProperty sequenceName="Attack_03_C" faceTarget="0" aniSkipTime="1" />
+			<attack point="p0" attacktype="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+				<rangeProperty applyTarget="1" castTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty count="0" />
+			</attack>
+		</motion>
+	</level>
+</ms2>

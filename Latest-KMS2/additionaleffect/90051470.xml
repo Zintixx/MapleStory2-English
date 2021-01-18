@@ -2,7 +2,7 @@
 <!-- 파싱해서 사용하는 데이터이니 직접 수정하지 마세요 -->
 <ms2>
 	<level feature="Season3">
-		<beginCondition applyPvPZoneType="1" />
+		<beginCondition probability="1" applyPvPZoneType="1" />
 		<BasicProperty level="1" buffSubType="2" durationTick="11000" coolDownTime="24" doNotClearEffectFromEnterPVPZone="1" />
 		<MotionProperty abnormalImmuneBreak="5" />
 		<StatusProperty>
@@ -10,8 +10,8 @@
 		</StatusProperty>
 		<UIProperty icon="./Data/Resource/Image/Skill/icon/weapon_buff_fury.png" />
 		<conditionSkill level="1" skillID="90051471" skillTarget="1">
-			<beginCondition>
-				<owner hasBuffID="90051470" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="0" hasBuffCountCompare="Equals" eventCondition="16" />
+			<beginCondition probability="1">
+				<owner hasBuffID="90051470" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="0" hasBuffCountCompare="Equals" eventCondition="16" eventSkillID="" eventEffectID="" />
 			</beginCondition>
 		</conditionSkill>
 	</level>

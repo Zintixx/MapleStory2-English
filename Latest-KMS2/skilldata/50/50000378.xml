@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 파싱해서 사용하는 데이터이니 직접 수정하지 마세요 -->
+<ms2 feature="">
+	<basic>
+		<ui attackType="2" />
+		<kinds element="7" />
+	</basic>
+	<level value="1">
+		<beginCondition probability="1">
+			<stat hp="1" />
+		</beginCondition>
+		<motion>
+			<motionProperty sequenceName="Attack_01_D" motionEffect="NPC/Skill/GriffonIndianBoss/Eff_GriffonIndian02_Attack_01_D.xml" faceTarget="0" doesPlayIdleOnSkillEnd="false" />
+			<attack point="p0" targetCount="1" attacktype="2" brokenOffence="2" brokenForce="3" unrideOnHit="1">
+				<rangeProperty includeCaster="1" rangeType="box" distance="3000" height="200" width="300" applyTarget="2" castTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty count="0" rate="1" attackMaterial="1" />
+				<conditionSkill level="1" skillID="50000303" skillTarget="1" skillOwner="1" />
+			</attack>
+		</motion>
+	</level>
+	<level value="2">
+		<beginCondition probability="1">
+			<stat hp="1" />
+		</beginCondition>
+		<motion>
+			<motionProperty sequenceName="Attack_01_D" motionEffect="NPC/Skill/GriffonIndianBoss/Eff_GriffonIndian02_Attack_01_D.xml" faceTarget="0" doesPlayIdleOnSkillEnd="false" />
+			<attack point="p0" targetCount="1" attacktype="2" brokenOffence="2" brokenForce="3" unrideOnHit="1">
+				<rangeProperty includeCaster="1" rangeType="box" distance="3000" height="200" width="300" applyTarget="2" castTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty count="0" rate="1" attackMaterial="1" />
+				<conditionSkill level="2" skillID="50000303" skillTarget="1" skillOwner="1" />
+			</attack>
+		</motion>
+	</level>
+</ms2>

@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 파싱해서 사용하는 데이터이니 직접 수정하지 마세요 -->
+<ms2 feature="">
+	<basic>
+		<ui attackType="2" />
+	</basic>
+	<level value="1">
+		<beginCondition probability="1">
+			<stat hp="1" />
+		</beginCondition>
+		<detectProperty rangeType="box" distance="2000" height="200" width="3000" />
+		<motion>
+			<motionProperty sequenceName="Attack_01_E" motionEffect="NPC/Skill/MikaWades/Eff_MikaWades_Rain_Attack_01_E_Cast_01.xml" faceTarget="0" />
+			<attack point="p0" targetCount="10" attacktype="2" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+				<rangeProperty rangeType="cylinder" distance="150" height="150" applyTarget="1" castTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty attackMaterial="1" />
+			</attack>
+		</motion>
+	</level>
+	<level value="2">
+		<beginCondition probability="1">
+			<stat hp="1" />
+		</beginCondition>
+		<detectProperty rangeType="cylinder" distance="1500" height="350" />
+		<motion>
+			<motionProperty sequenceName="Attack_02_E" faceTarget="0" />
+			<attack point="p0" targetCount="1" cubeMagicPathID="6412" attacktype="2" unrideOnHit="1">
+				<rangeProperty includeCaster="1" rangeType="cylinder" distance="2000" height="350" applyTarget="2" castTarget="1" />
+				<damageProperty count="0" rate="1" effectHit="NPC/Skill/MikaWades/Eff_MikaWades_Rain_Attack_01_E_Hit.xml" attackMaterial="106" />
+				<conditionSkill splash="1" level="1" skillID="35003307" delay="1000" />
+			</attack>
+			<attack point="p1" targetCount="1" cubeMagicPathID="6413" attacktype="2" unrideOnHit="1">
+				<rangeProperty includeCaster="1" rangeType="cylinder" distance="2000" height="350" applyTarget="2" castTarget="1" />
+				<damageProperty count="0" rate="1" effectHit="NPC/Skill/MikaWades/Eff_MikaWades_Rain_Attack_01_E_Hit.xml" attackMaterial="106" />
+				<conditionSkill splash="1" level="1" skillID="35003307" delay="1000" />
+			</attack>
+			<attack point="p2" targetCount="1" cubeMagicPathID="6414" attacktype="2" unrideOnHit="1">
+				<rangeProperty includeCaster="1" rangeType="cylinder" distance="2000" height="350" applyTarget="2" castTarget="1" />
+				<damageProperty count="0" rate="1" effectHit="NPC/Skill/MikaWades/Eff_MikaWades_Rain_Attack_01_E_Hit.xml" attackMaterial="106" />
+				<conditionSkill splash="1" level="1" skillID="35003307" delay="1000" />
+			</attack>
+			<attack point="p3" targetCount="1" cubeMagicPathID="6415" attacktype="2" unrideOnHit="1">
+				<rangeProperty includeCaster="1" rangeType="cylinder" distance="2000" height="350" applyTarget="2" castTarget="1" />
+				<damageProperty count="0" rate="1" effectHit="NPC/Skill/MikaWades/Eff_MikaWades_Rain_Attack_01_E_Hit.xml" attackMaterial="106" />
+				<conditionSkill splash="1" level="1" skillID="35003307" delay="1000" />
+			</attack>
+			<attack point="p4" targetCount="1" cubeMagicPathID="6416" attacktype="2" unrideOnHit="1">
+				<rangeProperty includeCaster="1" rangeType="cylinder" distance="2000" height="350" applyTarget="2" castTarget="1" />
+				<damageProperty count="0" rate="1" effectHit="NPC/Skill/MikaWades/Eff_MikaWades_Rain_Attack_01_E_Hit.xml" attackMaterial="106" />
+				<conditionSkill splash="1" level="1" skillID="35003307" delay="1000" />
+			</attack>
+			<attack point="p5" targetCount="1" cubeMagicPathID="6417" attacktype="2" unrideOnHit="1">
+				<rangeProperty includeCaster="1" rangeType="cylinder" distance="2000" height="350" applyTarget="2" castTarget="1" />
+				<damageProperty count="0" rate="1" effectHit="NPC/Skill/MikaWades/Eff_MikaWades_Rain_Attack_01_E_Hit.xml" attackMaterial="106" />
+				<conditionSkill splash="1" level="1" skillID="35003307" delay="1000" />
+			</attack>
+		</motion>
+	</level>
+	<level value="3">
+		<beginCondition probability="1">
+			<stat hp="1" />
+		</beginCondition>
+		<motion>
+			<motionProperty sequenceName="Attack_02_E" faceTarget="0" />
+			<attack point="p0" targetCount="1" cubeMagicPathID="6431" attacktype="2" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+				<rangeProperty includeCaster="1" rangeType="cylinder" distance="2000" height="350" applyTarget="2" castTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty count="0" rate="1" effectHit="NPC/Skill/MikaWades/Eff_MikaWades_Rain_Attack_01_E_Hit.xml" attackMaterial="106" />
+				<conditionSkill splash="1" level="1" skillID="35003307" delay="1000" />
+			</attack>
+			<attack point="p1" targetCount="1" cubeMagicPathID="6432" attacktype="2" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+				<rangeProperty includeCaster="1" rangeType="cylinder" distance="2000" height="350" applyTarget="2" castTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty count="0" rate="1" effectHit="NPC/Skill/MikaWades/Eff_MikaWades_Rain_Attack_01_E_Hit.xml" attackMaterial="106" />
+				<conditionSkill splash="1" level="1" skillID="35003307" delay="1000" />
+			</attack>
+			<attack point="p2" targetCount="1" cubeMagicPathID="6433" attacktype="2" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+				<rangeProperty includeCaster="1" rangeType="cylinder" distance="2000" height="350" applyTarget="2" castTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty count="0" rate="1" effectHit="NPC/Skill/MikaWades/Eff_MikaWades_Rain_Attack_01_E_Hit.xml" attackMaterial="106" />
+				<conditionSkill splash="1" level="1" skillID="35003307" delay="1000" />
+			</attack>
+			<attack point="p3" targetCount="1" cubeMagicPathID="6434" attacktype="2" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+				<rangeProperty includeCaster="1" rangeType="cylinder" distance="2000" height="350" applyTarget="2" castTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty count="0" rate="1" effectHit="NPC/Skill/MikaWades/Eff_MikaWades_Rain_Attack_01_E_Hit.xml" attackMaterial="106" />
+				<conditionSkill splash="1" level="1" skillID="35003307" delay="1000" />
+			</attack>
+			<attack point="p4" targetCount="1" cubeMagicPathID="6435" attacktype="2" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+				<rangeProperty includeCaster="1" rangeType="cylinder" distance="2000" height="350" applyTarget="2" castTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty count="0" rate="1" effectHit="NPC/Skill/MikaWades/Eff_MikaWades_Rain_Attack_01_E_Hit.xml" attackMaterial="106" />
+				<conditionSkill splash="1" level="1" skillID="35003307" delay="1000" />
+			</attack>
+			<attack point="p5" targetCount="1" cubeMagicPathID="6436" attacktype="2" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+				<rangeProperty includeCaster="1" rangeType="cylinder" distance="2000" height="350" applyTarget="2" castTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty count="0" rate="1" effectHit="NPC/Skill/MikaWades/Eff_MikaWades_Rain_Attack_01_E_Hit.xml" attackMaterial="106" />
+				<conditionSkill splash="1" level="1" skillID="35003307" delay="1000" />
+			</attack>
+		</motion>
+	</level>
+	<level value="4">
+		<beginCondition probability="1">
+			<stat hp="1" />
+		</beginCondition>
+		<motion>
+			<motionProperty sequenceName="Attack_02_E" faceTarget="0" />
+			<attack point="p0" targetCount="1" cubeMagicPathID="6441" attacktype="2" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+				<rangeProperty includeCaster="1" rangeType="cylinder" distance="2000" height="350" applyTarget="2" castTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty count="0" rate="1" effectHit="NPC/Skill/MikaWades/Eff_MikaWades_Rain_Attack_01_E_Hit.xml" attackMaterial="106" />
+				<conditionSkill splash="1" level="1" skillID="35003307" delay="1000" />
+			</attack>
+			<attack point="p1" targetCount="1" cubeMagicPathID="6442" attacktype="2" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+				<rangeProperty includeCaster="1" rangeType="cylinder" distance="2000" height="350" applyTarget="2" castTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty count="0" rate="1" effectHit="NPC/Skill/MikaWades/Eff_MikaWades_Rain_Attack_01_E_Hit.xml" attackMaterial="106" />
+				<conditionSkill splash="1" level="1" skillID="35003307" delay="1000" />
+			</attack>
+			<attack point="p2" targetCount="1" cubeMagicPathID="6443" attacktype="2" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+				<rangeProperty includeCaster="1" rangeType="cylinder" distance="2000" height="350" applyTarget="2" castTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty count="0" rate="1" effectHit="NPC/Skill/MikaWades/Eff_MikaWades_Rain_Attack_01_E_Hit.xml" attackMaterial="106" />
+				<conditionSkill splash="1" level="1" skillID="35003307" delay="1000" />
+			</attack>
+			<attack point="p3" targetCount="1" cubeMagicPathID="6444" attacktype="2" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+				<rangeProperty includeCaster="1" rangeType="cylinder" distance="2000" height="350" applyTarget="2" castTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty count="0" rate="1" effectHit="NPC/Skill/MikaWades/Eff_MikaWades_Rain_Attack_01_E_Hit.xml" attackMaterial="106" />
+				<conditionSkill splash="1" level="1" skillID="35003307" delay="1000" />
+			</attack>
+			<attack point="p4" targetCount="1" cubeMagicPathID="6445" attacktype="2" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+				<rangeProperty includeCaster="1" rangeType="cylinder" distance="2000" height="350" applyTarget="2" castTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty count="0" rate="1" effectHit="NPC/Skill/MikaWades/Eff_MikaWades_Rain_Attack_01_E_Hit.xml" attackMaterial="106" />
+				<conditionSkill splash="1" level="1" skillID="35003307" delay="1000" />
+			</attack>
+			<attack point="p5" targetCount="1" cubeMagicPathID="6446" attacktype="2" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+				<rangeProperty includeCaster="1" rangeType="cylinder" distance="2000" height="350" applyTarget="2" castTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty count="0" rate="1" effectHit="NPC/Skill/MikaWades/Eff_MikaWades_Rain_Attack_01_E_Hit.xml" attackMaterial="106" />
+				<conditionSkill splash="1" level="1" skillID="35003307" delay="1000" />
+			</attack>
+		</motion>
+	</level>
+	<level value="5">
+		<beginCondition probability="1">
+			<stat hp="1" />
+		</beginCondition>
+		<detectProperty rangeType="box" distance="2000" height="200" width="2000" />
+		<motion>
+			<motionProperty sequenceName="Attack_03_E" motionEffect="NPC/Skill/MikaWades/Eff_MikaWades_Rain_Attack_01_E_Cast_03.xml" faceTarget="0" />
+			<attack point="p0" targetCount="10" attacktype="2" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+				<rangeProperty rangeType="cylinder" distance="150" height="150" applyTarget="1" castTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty attackMaterial="106" />
+			</attack>
+		</motion>
+	</level>
+	<level value="6">
+		<beginCondition probability="1">
+			<stat hp="1" />
+		</beginCondition>
+		<detectProperty rangeType="box" distance="2000" height="200" width="2000" />
+		<motion>
+			<motionProperty sequenceName="Attack_02_E" faceTarget="0" />
+			<attack point="p0" targetCount="1" attacktype="2" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+				<rangeProperty applyTarget="1" castTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="1" attackMaterial="106" />
+			</attack>
+		</motion>
+	</level>
+</ms2>

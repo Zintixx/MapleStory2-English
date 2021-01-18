@@ -1,0 +1,729 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 파싱해서 사용하는 데이터이니 직접 수정하지 마세요 -->
+<ms2 feature="">
+	<basic>
+		<ui icon="./Data/Resource/Image/skill/icon/10500021.png" attackType="1" />
+		<kinds subType="2" rangeType="2" jump="10500021" element="1" unrideOnUse="1" />
+		<stateAttr keyIsDown="1" useDefaultSkill="1" clearCooldownFromPVPZone="1" ignoreReduceCooldown="1" />
+	</basic>
+	<level value="1" feature="CharacterBalance_01">
+		<beginCondition probability="1" cooldownTime="0.5">
+			<stat hp="1" />
+			<weapon lh="0" rh="51" />
+		</beginCondition>
+		<autoTargeting autoTargetingMaxDegree="90" />
+		<consume>
+			<stat sp="7" />
+		</consume>
+		<upgrade level="16" skillIDs="10500001,10500011" skillLevels="3,1" />
+		<combo inputSkill="10500021" outputSkill="10500022" />
+		<motion>
+			<motionProperty sequenceName="Ranger_RapidShot_01_A" strTagEffects="e0=CH/Skill/Ranger/Eff_Ranger_RapidShot_Cast_01.xml,e1=CH/Skill/Ranger/Eff_Ranger_RapidShot_Cast_02.xml" />
+			<attack point="p0" targetCount="1" magicPathID="10500021" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+				<rangeProperty rangeType="frustum" distance="900" height="150" width="150" endWidth="600" applyTarget="1" />
+				<arrowProperty rayPhysxTest="1" nonTarget="1" bounceType="3" bounceCount="4" collision="25.000000,100.000000,15.000000" collisionAdd="0.000000,25.000000,15.000000" effect="CH/Skill/Ranger/Eff_Ranger_RapidShot_Ball_01.xml" effectDestroy="CH/Skill/Ranger/Eff_Ranger_RapidShot_Destroy_01.xml" />
+				<damageProperty rate="0.4" effectHit="CH/Skill/Ranger/Eff_Ranger_RapidShot_Hit_01.xml" attackMaterial="100" />
+			</attack>
+			<attack point="p1" targetCount="1" magicPathID="105000211" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+				<rangeProperty rangeType="frustum" distance="900" height="150" width="150" endWidth="600" applyTarget="1" />
+				<arrowProperty rayPhysxTest="1" nonTarget="1" bounceType="3" bounceCount="4" collision="25.000000,100.000000,15.000000" collisionAdd="0.000000,25.000000,15.000000" effect="CH/Skill/Ranger/Eff_Ranger_RapidShot_Ball_01.xml" effectDestroy="CH/Skill/Ranger/Eff_Ranger_RapidShot_Destroy_01.xml" />
+				<damageProperty rate="0.4" effectHit="CH/Skill/Ranger/Eff_Ranger_RapidShot_Hit_01.xml" attackMaterial="100" />
+			</attack>
+			<attack point="p2" targetCount="1" magicPathID="105000212" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+				<rangeProperty rangeType="frustum" distance="900" height="150" width="150" endWidth="600" applyTarget="1" />
+				<arrowProperty rayPhysxTest="1" nonTarget="1" bounceType="3" bounceCount="4" collision="25.000000,100.000000,15.000000" collisionAdd="0.000000,25.000000,15.000000" effect="CH/Skill/Ranger/Eff_Ranger_RapidShot_Ball_01.xml" effectDestroy="CH/Skill/Ranger/Eff_Ranger_RapidShot_Destroy_01.xml" />
+				<damageProperty rate="0.4" effectHit="CH/Skill/Ranger/Eff_Ranger_RapidShot_Hit_01.xml" attackMaterial="100" />
+			</attack>
+		</motion>
+	</level>
+	<level value="1">
+		<beginCondition probability="1" cooldownTime="0.5">
+			<stat hp="1" />
+			<weapon lh="0" rh="51" />
+		</beginCondition>
+		<autoTargeting autoTargetingMaxDegree="90" />
+		<consume>
+			<stat sp="7" />
+		</consume>
+		<upgrade level="16" skillIDs="10500001,10500011" skillLevels="3,3" />
+		<combo inputSkill="10500021" outputSkill="10500022" />
+		<motion>
+			<motionProperty sequenceName="Ranger_RapidShot_01_A" strTagEffects="e0=CH/Skill/Ranger/Eff_Ranger_RapidShot_Cast_01.xml,e1=CH/Skill/Ranger/Eff_Ranger_RapidShot_Cast_02.xml" />
+			<attack point="p0" targetCount="1" magicPathID="10500021" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+				<rangeProperty rangeType="frustum" distance="900" height="150" width="150" endWidth="600" applyTarget="1" />
+				<arrowProperty rayPhysxTest="1" nonTarget="1" bounceType="3" bounceCount="4" collision="25.000000,100.000000,15.000000" collisionAdd="0.000000,25.000000,15.000000" effect="CH/Skill/Ranger/Eff_Ranger_RapidShot_Ball_01.xml" effectDestroy="CH/Skill/Ranger/Eff_Ranger_RapidShot_Destroy_01.xml" />
+				<damageProperty rate="0.42" effectHit="CH/Skill/Ranger/Eff_Ranger_RapidShot_Hit_01.xml" attackMaterial="100" />
+			</attack>
+			<attack point="p1" targetCount="1" magicPathID="105000211" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+				<rangeProperty rangeType="frustum" distance="900" height="150" width="150" endWidth="600" applyTarget="1" />
+				<arrowProperty rayPhysxTest="1" nonTarget="1" bounceType="3" bounceCount="4" collision="25.000000,100.000000,15.000000" collisionAdd="0.000000,25.000000,15.000000" effect="CH/Skill/Ranger/Eff_Ranger_RapidShot_Ball_01.xml" effectDestroy="CH/Skill/Ranger/Eff_Ranger_RapidShot_Destroy_01.xml" />
+				<damageProperty rate="0.42" effectHit="CH/Skill/Ranger/Eff_Ranger_RapidShot_Hit_01.xml" attackMaterial="100" />
+			</attack>
+			<attack point="p2" targetCount="1" magicPathID="105000212" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+				<rangeProperty rangeType="frustum" distance="900" height="150" width="150" endWidth="600" applyTarget="1" />
+				<arrowProperty rayPhysxTest="1" nonTarget="1" bounceType="3" bounceCount="4" collision="25.000000,100.000000,15.000000" collisionAdd="0.000000,25.000000,15.000000" effect="CH/Skill/Ranger/Eff_Ranger_RapidShot_Ball_01.xml" effectDestroy="CH/Skill/Ranger/Eff_Ranger_RapidShot_Destroy_01.xml" />
+				<damageProperty rate="0.42" effectHit="CH/Skill/Ranger/Eff_Ranger_RapidShot_Hit_01.xml" attackMaterial="100" />
+			</attack>
+		</motion>
+	</level>
+	<level value="2" feature="CharacterBalance_01">
+		<beginCondition probability="1" cooldownTime="0.5">
+			<stat hp="1" />
+			<weapon lh="0" rh="51" />
+		</beginCondition>
+		<autoTargeting autoTargetingMaxDegree="90" />
+		<consume>
+			<stat sp="7" />
+		</consume>
+		<upgrade level="18" skillIDs="10500001,10500011" skillLevels="3,1" />
+		<combo inputSkill="10500021" outputSkill="10500022" />
+		<motion>
+			<motionProperty sequenceName="Ranger_RapidShot_01_A" strTagEffects="e0=CH/Skill/Ranger/Eff_Ranger_RapidShot_Cast_01.xml,e1=CH/Skill/Ranger/Eff_Ranger_RapidShot_Cast_02.xml" />
+			<attack point="p0" targetCount="1" magicPathID="10500021" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+				<rangeProperty rangeType="frustum" distance="900" height="150" width="150" endWidth="600" applyTarget="1" />
+				<arrowProperty rayPhysxTest="1" nonTarget="1" bounceType="3" bounceCount="4" collision="25.000000,100.000000,15.000000" collisionAdd="0.000000,25.000000,15.000000" effect="CH/Skill/Ranger/Eff_Ranger_RapidShot_Ball_01.xml" effectDestroy="CH/Skill/Ranger/Eff_Ranger_RapidShot_Destroy_01.xml" />
+				<damageProperty rate="0.43" effectHit="CH/Skill/Ranger/Eff_Ranger_RapidShot_Hit_01.xml" attackMaterial="100" />
+			</attack>
+			<attack point="p1" targetCount="1" magicPathID="105000211" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+				<rangeProperty rangeType="frustum" distance="900" height="150" width="150" endWidth="600" applyTarget="1" />
+				<arrowProperty rayPhysxTest="1" nonTarget="1" bounceType="3" bounceCount="4" collision="25.000000,100.000000,15.000000" collisionAdd="0.000000,25.000000,15.000000" effect="CH/Skill/Ranger/Eff_Ranger_RapidShot_Ball_01.xml" effectDestroy="CH/Skill/Ranger/Eff_Ranger_RapidShot_Destroy_01.xml" />
+				<damageProperty rate="0.43" effectHit="CH/Skill/Ranger/Eff_Ranger_RapidShot_Hit_01.xml" attackMaterial="100" />
+			</attack>
+			<attack point="p2" targetCount="1" magicPathID="105000212" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+				<rangeProperty rangeType="frustum" distance="900" height="150" width="150" endWidth="600" applyTarget="1" />
+				<arrowProperty rayPhysxTest="1" nonTarget="1" bounceType="3" bounceCount="4" collision="25.000000,100.000000,15.000000" collisionAdd="0.000000,25.000000,15.000000" effect="CH/Skill/Ranger/Eff_Ranger_RapidShot_Ball_01.xml" effectDestroy="CH/Skill/Ranger/Eff_Ranger_RapidShot_Destroy_01.xml" />
+				<damageProperty rate="0.43" effectHit="CH/Skill/Ranger/Eff_Ranger_RapidShot_Hit_01.xml" attackMaterial="100" />
+			</attack>
+		</motion>
+	</level>
+	<level value="2">
+		<beginCondition probability="1" cooldownTime="0.5">
+			<stat hp="1" />
+			<weapon lh="0" rh="51" />
+		</beginCondition>
+		<autoTargeting autoTargetingMaxDegree="90" />
+		<consume>
+			<stat sp="7" />
+		</consume>
+		<upgrade level="18" skillIDs="10500001,10500011" skillLevels="3,3" />
+		<combo inputSkill="10500021" outputSkill="10500022" />
+		<motion>
+			<motionProperty sequenceName="Ranger_RapidShot_01_A" strTagEffects="e0=CH/Skill/Ranger/Eff_Ranger_RapidShot_Cast_01.xml,e1=CH/Skill/Ranger/Eff_Ranger_RapidShot_Cast_02.xml" />
+			<attack point="p0" targetCount="1" magicPathID="10500021" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+				<rangeProperty rangeType="frustum" distance="900" height="150" width="150" endWidth="600" applyTarget="1" />
+				<arrowProperty rayPhysxTest="1" nonTarget="1" bounceType="3" bounceCount="4" collision="25.000000,100.000000,15.000000" collisionAdd="0.000000,25.000000,15.000000" effect="CH/Skill/Ranger/Eff_Ranger_RapidShot_Ball_01.xml" effectDestroy="CH/Skill/Ranger/Eff_Ranger_RapidShot_Destroy_01.xml" />
+				<damageProperty rate="0.45" effectHit="CH/Skill/Ranger/Eff_Ranger_RapidShot_Hit_01.xml" attackMaterial="100" />
+			</attack>
+			<attack point="p1" targetCount="1" magicPathID="105000211" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+				<rangeProperty rangeType="frustum" distance="900" height="150" width="150" endWidth="600" applyTarget="1" />
+				<arrowProperty rayPhysxTest="1" nonTarget="1" bounceType="3" bounceCount="4" collision="25.000000,100.000000,15.000000" collisionAdd="0.000000,25.000000,15.000000" effect="CH/Skill/Ranger/Eff_Ranger_RapidShot_Ball_01.xml" effectDestroy="CH/Skill/Ranger/Eff_Ranger_RapidShot_Destroy_01.xml" />
+				<damageProperty rate="0.45" effectHit="CH/Skill/Ranger/Eff_Ranger_RapidShot_Hit_01.xml" attackMaterial="100" />
+			</attack>
+			<attack point="p2" targetCount="1" magicPathID="105000212" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+				<rangeProperty rangeType="frustum" distance="900" height="150" width="150" endWidth="600" applyTarget="1" />
+				<arrowProperty rayPhysxTest="1" nonTarget="1" bounceType="3" bounceCount="4" collision="25.000000,100.000000,15.000000" collisionAdd="0.000000,25.000000,15.000000" effect="CH/Skill/Ranger/Eff_Ranger_RapidShot_Ball_01.xml" effectDestroy="CH/Skill/Ranger/Eff_Ranger_RapidShot_Destroy_01.xml" />
+				<damageProperty rate="0.45" effectHit="CH/Skill/Ranger/Eff_Ranger_RapidShot_Hit_01.xml" attackMaterial="100" />
+			</attack>
+		</motion>
+	</level>
+	<level value="3" feature="CharacterBalance_01">
+		<beginCondition probability="1" cooldownTime="0.5">
+			<stat hp="1" />
+			<weapon lh="0" rh="51" />
+		</beginCondition>
+		<autoTargeting autoTargetingMaxDegree="90" />
+		<consume>
+			<stat sp="7" />
+		</consume>
+		<upgrade level="20" skillIDs="10500001,10500011" skillLevels="3,1" />
+		<combo inputSkill="10500021" outputSkill="10500022" />
+		<motion>
+			<motionProperty sequenceName="Ranger_RapidShot_01_A" strTagEffects="e0=CH/Skill/Ranger/Eff_Ranger_RapidShot_Cast_01.xml,e1=CH/Skill/Ranger/Eff_Ranger_RapidShot_Cast_02.xml" />
+			<attack point="p0" targetCount="1" magicPathID="10500021" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+				<rangeProperty rangeType="frustum" distance="900" height="150" width="150" endWidth="600" applyTarget="1" />
+				<arrowProperty rayPhysxTest="1" nonTarget="1" bounceType="3" bounceCount="4" collision="25.000000,100.000000,15.000000" collisionAdd="0.000000,25.000000,15.000000" effect="CH/Skill/Ranger/Eff_Ranger_RapidShot_Ball_01.xml" effectDestroy="CH/Skill/Ranger/Eff_Ranger_RapidShot_Destroy_01.xml" />
+				<damageProperty rate="0.46" effectHit="CH/Skill/Ranger/Eff_Ranger_RapidShot_Hit_01.xml" attackMaterial="100" />
+			</attack>
+			<attack point="p1" targetCount="1" magicPathID="105000211" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+				<rangeProperty rangeType="frustum" distance="900" height="150" width="150" endWidth="600" applyTarget="1" />
+				<arrowProperty rayPhysxTest="1" nonTarget="1" bounceType="3" bounceCount="4" collision="25.000000,100.000000,15.000000" collisionAdd="0.000000,25.000000,15.000000" effect="CH/Skill/Ranger/Eff_Ranger_RapidShot_Ball_01.xml" effectDestroy="CH/Skill/Ranger/Eff_Ranger_RapidShot_Destroy_01.xml" />
+				<damageProperty rate="0.46" effectHit="CH/Skill/Ranger/Eff_Ranger_RapidShot_Hit_01.xml" attackMaterial="100" />
+			</attack>
+			<attack point="p2" targetCount="1" magicPathID="105000212" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+				<rangeProperty rangeType="frustum" distance="900" height="150" width="150" endWidth="600" applyTarget="1" />
+				<arrowProperty rayPhysxTest="1" nonTarget="1" bounceType="3" bounceCount="4" collision="25.000000,100.000000,15.000000" collisionAdd="0.000000,25.000000,15.000000" effect="CH/Skill/Ranger/Eff_Ranger_RapidShot_Ball_01.xml" effectDestroy="CH/Skill/Ranger/Eff_Ranger_RapidShot_Destroy_01.xml" />
+				<damageProperty rate="0.46" effectHit="CH/Skill/Ranger/Eff_Ranger_RapidShot_Hit_01.xml" attackMaterial="100" />
+			</attack>
+		</motion>
+	</level>
+	<level value="3">
+		<beginCondition probability="1" cooldownTime="0.5">
+			<stat hp="1" />
+			<weapon lh="0" rh="51" />
+		</beginCondition>
+		<autoTargeting autoTargetingMaxDegree="90" />
+		<consume>
+			<stat sp="7" />
+		</consume>
+		<upgrade level="20" skillIDs="10500001,10500011" skillLevels="3,3" />
+		<combo inputSkill="10500021" outputSkill="10500022" />
+		<motion>
+			<motionProperty sequenceName="Ranger_RapidShot_01_A" strTagEffects="e0=CH/Skill/Ranger/Eff_Ranger_RapidShot_Cast_01.xml,e1=CH/Skill/Ranger/Eff_Ranger_RapidShot_Cast_02.xml" />
+			<attack point="p0" targetCount="1" magicPathID="10500021" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+				<rangeProperty rangeType="frustum" distance="900" height="150" width="150" endWidth="600" applyTarget="1" />
+				<arrowProperty rayPhysxTest="1" nonTarget="1" bounceType="3" bounceCount="4" collision="25.000000,100.000000,15.000000" collisionAdd="0.000000,25.000000,15.000000" effect="CH/Skill/Ranger/Eff_Ranger_RapidShot_Ball_01.xml" effectDestroy="CH/Skill/Ranger/Eff_Ranger_RapidShot_Destroy_01.xml" />
+				<damageProperty rate="0.48" effectHit="CH/Skill/Ranger/Eff_Ranger_RapidShot_Hit_01.xml" attackMaterial="100" />
+			</attack>
+			<attack point="p1" targetCount="1" magicPathID="105000211" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+				<rangeProperty rangeType="frustum" distance="900" height="150" width="150" endWidth="600" applyTarget="1" />
+				<arrowProperty rayPhysxTest="1" nonTarget="1" bounceType="3" bounceCount="4" collision="25.000000,100.000000,15.000000" collisionAdd="0.000000,25.000000,15.000000" effect="CH/Skill/Ranger/Eff_Ranger_RapidShot_Ball_01.xml" effectDestroy="CH/Skill/Ranger/Eff_Ranger_RapidShot_Destroy_01.xml" />
+				<damageProperty rate="0.48" effectHit="CH/Skill/Ranger/Eff_Ranger_RapidShot_Hit_01.xml" attackMaterial="100" />
+			</attack>
+			<attack point="p2" targetCount="1" magicPathID="105000212" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+				<rangeProperty rangeType="frustum" distance="900" height="150" width="150" endWidth="600" applyTarget="1" />
+				<arrowProperty rayPhysxTest="1" nonTarget="1" bounceType="3" bounceCount="4" collision="25.000000,100.000000,15.000000" collisionAdd="0.000000,25.000000,15.000000" effect="CH/Skill/Ranger/Eff_Ranger_RapidShot_Ball_01.xml" effectDestroy="CH/Skill/Ranger/Eff_Ranger_RapidShot_Destroy_01.xml" />
+				<damageProperty rate="0.48" effectHit="CH/Skill/Ranger/Eff_Ranger_RapidShot_Hit_01.xml" attackMaterial="100" />
+			</attack>
+		</motion>
+	</level>
+	<level value="4" feature="CharacterBalance_01">
+		<beginCondition probability="1" cooldownTime="0.5">
+			<stat hp="1" />
+			<weapon lh="0" rh="51" />
+		</beginCondition>
+		<autoTargeting autoTargetingMaxDegree="90" />
+		<consume>
+			<stat sp="7" />
+		</consume>
+		<upgrade level="22" skillIDs="10500001,10500011" skillLevels="3,1" />
+		<combo inputSkill="10500021" outputSkill="10500022" />
+		<motion>
+			<motionProperty sequenceName="Ranger_RapidShot_01_A" strTagEffects="e0=CH/Skill/Ranger/Eff_Ranger_RapidShot_Cast_01.xml,e1=CH/Skill/Ranger/Eff_Ranger_RapidShot_Cast_02.xml" />
+			<attack point="p0" targetCount="1" magicPathID="10500021" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+				<rangeProperty rangeType="frustum" distance="900" height="150" width="150" endWidth="600" applyTarget="1" />
+				<arrowProperty rayPhysxTest="1" nonTarget="1" bounceType="3" bounceCount="4" collision="25.000000,100.000000,15.000000" collisionAdd="0.000000,25.000000,15.000000" effect="CH/Skill/Ranger/Eff_Ranger_RapidShot_Ball_01.xml" effectDestroy="CH/Skill/Ranger/Eff_Ranger_RapidShot_Destroy_01.xml" />
+				<damageProperty rate="0.49" effectHit="CH/Skill/Ranger/Eff_Ranger_RapidShot_Hit_01.xml" attackMaterial="100" />
+			</attack>
+			<attack point="p1" targetCount="1" magicPathID="105000211" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+				<rangeProperty rangeType="frustum" distance="900" height="150" width="150" endWidth="600" applyTarget="1" />
+				<arrowProperty rayPhysxTest="1" nonTarget="1" bounceType="3" bounceCount="4" collision="25.000000,100.000000,15.000000" collisionAdd="0.000000,25.000000,15.000000" effect="CH/Skill/Ranger/Eff_Ranger_RapidShot_Ball_01.xml" effectDestroy="CH/Skill/Ranger/Eff_Ranger_RapidShot_Destroy_01.xml" />
+				<damageProperty rate="0.49" effectHit="CH/Skill/Ranger/Eff_Ranger_RapidShot_Hit_01.xml" attackMaterial="100" />
+			</attack>
+			<attack point="p2" targetCount="1" magicPathID="105000212" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+				<rangeProperty rangeType="frustum" distance="900" height="150" width="150" endWidth="600" applyTarget="1" />
+				<arrowProperty rayPhysxTest="1" nonTarget="1" bounceType="3" bounceCount="4" collision="25.000000,100.000000,15.000000" collisionAdd="0.000000,25.000000,15.000000" effect="CH/Skill/Ranger/Eff_Ranger_RapidShot_Ball_01.xml" effectDestroy="CH/Skill/Ranger/Eff_Ranger_RapidShot_Destroy_01.xml" />
+				<damageProperty rate="0.49" effectHit="CH/Skill/Ranger/Eff_Ranger_RapidShot_Hit_01.xml" attackMaterial="100" />
+			</attack>
+		</motion>
+	</level>
+	<level value="4">
+		<beginCondition probability="1" cooldownTime="0.5">
+			<stat hp="1" />
+			<weapon lh="0" rh="51" />
+		</beginCondition>
+		<autoTargeting autoTargetingMaxDegree="90" />
+		<consume>
+			<stat sp="7" />
+		</consume>
+		<upgrade level="22" skillIDs="10500001,10500011" skillLevels="3,3" />
+		<combo inputSkill="10500021" outputSkill="10500022" />
+		<motion>
+			<motionProperty sequenceName="Ranger_RapidShot_01_A" strTagEffects="e0=CH/Skill/Ranger/Eff_Ranger_RapidShot_Cast_01.xml,e1=CH/Skill/Ranger/Eff_Ranger_RapidShot_Cast_02.xml" />
+			<attack point="p0" targetCount="1" magicPathID="10500021" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+				<rangeProperty rangeType="frustum" distance="900" height="150" width="150" endWidth="600" applyTarget="1" />
+				<arrowProperty rayPhysxTest="1" nonTarget="1" bounceType="3" bounceCount="4" collision="25.000000,100.000000,15.000000" collisionAdd="0.000000,25.000000,15.000000" effect="CH/Skill/Ranger/Eff_Ranger_RapidShot_Ball_01.xml" effectDestroy="CH/Skill/Ranger/Eff_Ranger_RapidShot_Destroy_01.xml" />
+				<damageProperty rate="0.51" effectHit="CH/Skill/Ranger/Eff_Ranger_RapidShot_Hit_01.xml" attackMaterial="100" />
+			</attack>
+			<attack point="p1" targetCount="1" magicPathID="105000211" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+				<rangeProperty rangeType="frustum" distance="900" height="150" width="150" endWidth="600" applyTarget="1" />
+				<arrowProperty rayPhysxTest="1" nonTarget="1" bounceType="3" bounceCount="4" collision="25.000000,100.000000,15.000000" collisionAdd="0.000000,25.000000,15.000000" effect="CH/Skill/Ranger/Eff_Ranger_RapidShot_Ball_01.xml" effectDestroy="CH/Skill/Ranger/Eff_Ranger_RapidShot_Destroy_01.xml" />
+				<damageProperty rate="0.51" effectHit="CH/Skill/Ranger/Eff_Ranger_RapidShot_Hit_01.xml" attackMaterial="100" />
+			</attack>
+			<attack point="p2" targetCount="1" magicPathID="105000212" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+				<rangeProperty rangeType="frustum" distance="900" height="150" width="150" endWidth="600" applyTarget="1" />
+				<arrowProperty rayPhysxTest="1" nonTarget="1" bounceType="3" bounceCount="4" collision="25.000000,100.000000,15.000000" collisionAdd="0.000000,25.000000,15.000000" effect="CH/Skill/Ranger/Eff_Ranger_RapidShot_Ball_01.xml" effectDestroy="CH/Skill/Ranger/Eff_Ranger_RapidShot_Destroy_01.xml" />
+				<damageProperty rate="0.51" effectHit="CH/Skill/Ranger/Eff_Ranger_RapidShot_Hit_01.xml" attackMaterial="100" />
+			</attack>
+		</motion>
+	</level>
+	<level value="5" feature="CharacterBalance_01">
+		<beginCondition probability="1" cooldownTime="0.5">
+			<stat hp="1" />
+			<weapon lh="0" rh="51" />
+		</beginCondition>
+		<autoTargeting autoTargetingMaxDegree="90" />
+		<consume>
+			<stat sp="7" />
+		</consume>
+		<upgrade level="24" skillIDs="10500001,10500011" skillLevels="3,1" />
+		<combo inputSkill="10500021" outputSkill="10500022" />
+		<motion>
+			<motionProperty sequenceName="Ranger_RapidShot_01_A" strTagEffects="e0=CH/Skill/Ranger/Eff_Ranger_RapidShot_Cast_01.xml,e1=CH/Skill/Ranger/Eff_Ranger_RapidShot_Cast_02.xml" />
+			<attack point="p0" targetCount="1" magicPathID="10500021" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+				<rangeProperty rangeType="frustum" distance="900" height="150" width="150" endWidth="600" applyTarget="1" />
+				<arrowProperty rayPhysxTest="1" nonTarget="1" bounceType="3" bounceCount="4" collision="25.000000,100.000000,15.000000" collisionAdd="0.000000,25.000000,15.000000" effect="CH/Skill/Ranger/Eff_Ranger_RapidShot_Ball_01.xml" effectDestroy="CH/Skill/Ranger/Eff_Ranger_RapidShot_Destroy_01.xml" />
+				<damageProperty rate="0.52" effectHit="CH/Skill/Ranger/Eff_Ranger_RapidShot_Hit_01.xml" attackMaterial="100" />
+			</attack>
+			<attack point="p1" targetCount="1" magicPathID="105000211" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+				<rangeProperty rangeType="frustum" distance="900" height="150" width="150" endWidth="600" applyTarget="1" />
+				<arrowProperty rayPhysxTest="1" nonTarget="1" bounceType="3" bounceCount="4" collision="25.000000,100.000000,15.000000" collisionAdd="0.000000,25.000000,15.000000" effect="CH/Skill/Ranger/Eff_Ranger_RapidShot_Ball_01.xml" effectDestroy="CH/Skill/Ranger/Eff_Ranger_RapidShot_Destroy_01.xml" />
+				<damageProperty rate="0.52" effectHit="CH/Skill/Ranger/Eff_Ranger_RapidShot_Hit_01.xml" attackMaterial="100" />
+			</attack>
+			<attack point="p2" targetCount="1" magicPathID="105000212" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+				<rangeProperty rangeType="frustum" distance="900" height="150" width="150" endWidth="600" applyTarget="1" />
+				<arrowProperty rayPhysxTest="1" nonTarget="1" bounceType="3" bounceCount="4" collision="25.000000,100.000000,15.000000" collisionAdd="0.000000,25.000000,15.000000" effect="CH/Skill/Ranger/Eff_Ranger_RapidShot_Ball_01.xml" effectDestroy="CH/Skill/Ranger/Eff_Ranger_RapidShot_Destroy_01.xml" />
+				<damageProperty rate="0.52" effectHit="CH/Skill/Ranger/Eff_Ranger_RapidShot_Hit_01.xml" attackMaterial="100" />
+			</attack>
+		</motion>
+	</level>
+	<level value="5">
+		<beginCondition probability="1" cooldownTime="0.5">
+			<stat hp="1" />
+			<weapon lh="0" rh="51" />
+		</beginCondition>
+		<autoTargeting autoTargetingMaxDegree="90" />
+		<consume>
+			<stat sp="7" />
+		</consume>
+		<upgrade level="24" skillIDs="10500001,10500011" skillLevels="3,3" />
+		<combo inputSkill="10500021" outputSkill="10500022" />
+		<motion>
+			<motionProperty sequenceName="Ranger_RapidShot_01_A" strTagEffects="e0=CH/Skill/Ranger/Eff_Ranger_RapidShot_Cast_01.xml,e1=CH/Skill/Ranger/Eff_Ranger_RapidShot_Cast_02.xml" />
+			<attack point="p0" targetCount="1" magicPathID="10500021" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+				<rangeProperty rangeType="frustum" distance="900" height="150" width="150" endWidth="600" applyTarget="1" />
+				<arrowProperty rayPhysxTest="1" nonTarget="1" bounceType="3" bounceCount="4" collision="25.000000,100.000000,15.000000" collisionAdd="0.000000,25.000000,15.000000" effect="CH/Skill/Ranger/Eff_Ranger_RapidShot_Ball_01.xml" effectDestroy="CH/Skill/Ranger/Eff_Ranger_RapidShot_Destroy_01.xml" />
+				<damageProperty rate="0.54" effectHit="CH/Skill/Ranger/Eff_Ranger_RapidShot_Hit_01.xml" attackMaterial="100" />
+			</attack>
+			<attack point="p1" targetCount="1" magicPathID="105000211" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+				<rangeProperty rangeType="frustum" distance="900" height="150" width="150" endWidth="600" applyTarget="1" />
+				<arrowProperty rayPhysxTest="1" nonTarget="1" bounceType="3" bounceCount="4" collision="25.000000,100.000000,15.000000" collisionAdd="0.000000,25.000000,15.000000" effect="CH/Skill/Ranger/Eff_Ranger_RapidShot_Ball_01.xml" effectDestroy="CH/Skill/Ranger/Eff_Ranger_RapidShot_Destroy_01.xml" />
+				<damageProperty rate="0.54" effectHit="CH/Skill/Ranger/Eff_Ranger_RapidShot_Hit_01.xml" attackMaterial="100" />
+			</attack>
+			<attack point="p2" targetCount="1" magicPathID="105000212" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+				<rangeProperty rangeType="frustum" distance="900" height="150" width="150" endWidth="600" applyTarget="1" />
+				<arrowProperty rayPhysxTest="1" nonTarget="1" bounceType="3" bounceCount="4" collision="25.000000,100.000000,15.000000" collisionAdd="0.000000,25.000000,15.000000" effect="CH/Skill/Ranger/Eff_Ranger_RapidShot_Ball_01.xml" effectDestroy="CH/Skill/Ranger/Eff_Ranger_RapidShot_Destroy_01.xml" />
+				<damageProperty rate="0.54" effectHit="CH/Skill/Ranger/Eff_Ranger_RapidShot_Hit_01.xml" attackMaterial="100" />
+			</attack>
+		</motion>
+	</level>
+	<level value="6" feature="CharacterBalance_01">
+		<beginCondition probability="1" cooldownTime="0.5">
+			<stat hp="1" />
+			<weapon lh="0" rh="51" />
+		</beginCondition>
+		<autoTargeting autoTargetingMaxDegree="90" />
+		<consume>
+			<stat sp="7" />
+		</consume>
+		<upgrade level="26" skillIDs="10500001,10500011" skillLevels="3,1" />
+		<combo inputSkill="10500021" outputSkill="10500022" />
+		<motion>
+			<motionProperty sequenceName="Ranger_RapidShot_01_A" strTagEffects="e0=CH/Skill/Ranger/Eff_Ranger_RapidShot_Cast_01.xml,e1=CH/Skill/Ranger/Eff_Ranger_RapidShot_Cast_02.xml" />
+			<attack point="p0" targetCount="1" magicPathID="10500021" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+				<rangeProperty rangeType="frustum" distance="900" height="150" width="150" endWidth="600" applyTarget="1" />
+				<arrowProperty rayPhysxTest="1" nonTarget="1" bounceType="3" bounceCount="4" collision="25.000000,100.000000,15.000000" collisionAdd="0.000000,25.000000,15.000000" effect="CH/Skill/Ranger/Eff_Ranger_RapidShot_Ball_01.xml" effectDestroy="CH/Skill/Ranger/Eff_Ranger_RapidShot_Destroy_01.xml" />
+				<damageProperty rate="0.55" effectHit="CH/Skill/Ranger/Eff_Ranger_RapidShot_Hit_01.xml" attackMaterial="100" />
+			</attack>
+			<attack point="p1" targetCount="1" magicPathID="105000211" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+				<rangeProperty rangeType="frustum" distance="900" height="150" width="150" endWidth="600" applyTarget="1" />
+				<arrowProperty rayPhysxTest="1" nonTarget="1" bounceType="3" bounceCount="4" collision="25.000000,100.000000,15.000000" collisionAdd="0.000000,25.000000,15.000000" effect="CH/Skill/Ranger/Eff_Ranger_RapidShot_Ball_01.xml" effectDestroy="CH/Skill/Ranger/Eff_Ranger_RapidShot_Destroy_01.xml" />
+				<damageProperty rate="0.55" effectHit="CH/Skill/Ranger/Eff_Ranger_RapidShot_Hit_01.xml" attackMaterial="100" />
+			</attack>
+			<attack point="p2" targetCount="1" magicPathID="105000212" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+				<rangeProperty rangeType="frustum" distance="900" height="150" width="150" endWidth="600" applyTarget="1" />
+				<arrowProperty rayPhysxTest="1" nonTarget="1" bounceType="3" bounceCount="4" collision="25.000000,100.000000,15.000000" collisionAdd="0.000000,25.000000,15.000000" effect="CH/Skill/Ranger/Eff_Ranger_RapidShot_Ball_01.xml" effectDestroy="CH/Skill/Ranger/Eff_Ranger_RapidShot_Destroy_01.xml" />
+				<damageProperty rate="0.55" effectHit="CH/Skill/Ranger/Eff_Ranger_RapidShot_Hit_01.xml" attackMaterial="100" />
+			</attack>
+		</motion>
+	</level>
+	<level value="6">
+		<beginCondition probability="1" cooldownTime="0.5">
+			<stat hp="1" />
+			<weapon lh="0" rh="51" />
+		</beginCondition>
+		<autoTargeting autoTargetingMaxDegree="90" />
+		<consume>
+			<stat sp="7" />
+		</consume>
+		<upgrade level="26" skillIDs="10500001,10500011" skillLevels="3,3" />
+		<combo inputSkill="10500021" outputSkill="10500022" />
+		<motion>
+			<motionProperty sequenceName="Ranger_RapidShot_01_A" strTagEffects="e0=CH/Skill/Ranger/Eff_Ranger_RapidShot_Cast_01.xml,e1=CH/Skill/Ranger/Eff_Ranger_RapidShot_Cast_02.xml" />
+			<attack point="p0" targetCount="1" magicPathID="10500021" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+				<rangeProperty rangeType="frustum" distance="900" height="150" width="150" endWidth="600" applyTarget="1" />
+				<arrowProperty rayPhysxTest="1" nonTarget="1" bounceType="3" bounceCount="4" collision="25.000000,100.000000,15.000000" collisionAdd="0.000000,25.000000,15.000000" effect="CH/Skill/Ranger/Eff_Ranger_RapidShot_Ball_01.xml" effectDestroy="CH/Skill/Ranger/Eff_Ranger_RapidShot_Destroy_01.xml" />
+				<damageProperty rate="0.57" effectHit="CH/Skill/Ranger/Eff_Ranger_RapidShot_Hit_01.xml" attackMaterial="100" />
+			</attack>
+			<attack point="p1" targetCount="1" magicPathID="105000211" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+				<rangeProperty rangeType="frustum" distance="900" height="150" width="150" endWidth="600" applyTarget="1" />
+				<arrowProperty rayPhysxTest="1" nonTarget="1" bounceType="3" bounceCount="4" collision="25.000000,100.000000,15.000000" collisionAdd="0.000000,25.000000,15.000000" effect="CH/Skill/Ranger/Eff_Ranger_RapidShot_Ball_01.xml" effectDestroy="CH/Skill/Ranger/Eff_Ranger_RapidShot_Destroy_01.xml" />
+				<damageProperty rate="0.57" effectHit="CH/Skill/Ranger/Eff_Ranger_RapidShot_Hit_01.xml" attackMaterial="100" />
+			</attack>
+			<attack point="p2" targetCount="1" magicPathID="105000212" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+				<rangeProperty rangeType="frustum" distance="900" height="150" width="150" endWidth="600" applyTarget="1" />
+				<arrowProperty rayPhysxTest="1" nonTarget="1" bounceType="3" bounceCount="4" collision="25.000000,100.000000,15.000000" collisionAdd="0.000000,25.000000,15.000000" effect="CH/Skill/Ranger/Eff_Ranger_RapidShot_Ball_01.xml" effectDestroy="CH/Skill/Ranger/Eff_Ranger_RapidShot_Destroy_01.xml" />
+				<damageProperty rate="0.57" effectHit="CH/Skill/Ranger/Eff_Ranger_RapidShot_Hit_01.xml" attackMaterial="100" />
+			</attack>
+		</motion>
+	</level>
+	<level value="7" feature="CharacterBalance_01">
+		<beginCondition probability="1" cooldownTime="0.5">
+			<stat hp="1" />
+			<weapon lh="0" rh="51" />
+		</beginCondition>
+		<autoTargeting autoTargetingMaxDegree="90" />
+		<consume>
+			<stat sp="7" />
+		</consume>
+		<upgrade level="28" skillIDs="10500001,10500011" skillLevels="3,1" />
+		<combo inputSkill="10500021" outputSkill="10500022" />
+		<motion>
+			<motionProperty sequenceName="Ranger_RapidShot_01_A" strTagEffects="e0=CH/Skill/Ranger/Eff_Ranger_RapidShot_Cast_01.xml,e1=CH/Skill/Ranger/Eff_Ranger_RapidShot_Cast_02.xml" />
+			<attack point="p0" targetCount="1" magicPathID="10500021" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+				<rangeProperty rangeType="frustum" distance="900" height="150" width="150" endWidth="600" applyTarget="1" />
+				<arrowProperty rayPhysxTest="1" nonTarget="1" bounceType="3" bounceCount="4" collision="25.000000,100.000000,15.000000" collisionAdd="0.000000,25.000000,15.000000" effect="CH/Skill/Ranger/Eff_Ranger_RapidShot_Ball_01.xml" effectDestroy="CH/Skill/Ranger/Eff_Ranger_RapidShot_Destroy_01.xml" />
+				<damageProperty rate="0.58" effectHit="CH/Skill/Ranger/Eff_Ranger_RapidShot_Hit_01.xml" attackMaterial="100" />
+			</attack>
+			<attack point="p1" targetCount="1" magicPathID="105000211" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+				<rangeProperty rangeType="frustum" distance="900" height="150" width="150" endWidth="600" applyTarget="1" />
+				<arrowProperty rayPhysxTest="1" nonTarget="1" bounceType="3" bounceCount="4" collision="25.000000,100.000000,15.000000" collisionAdd="0.000000,25.000000,15.000000" effect="CH/Skill/Ranger/Eff_Ranger_RapidShot_Ball_01.xml" effectDestroy="CH/Skill/Ranger/Eff_Ranger_RapidShot_Destroy_01.xml" />
+				<damageProperty rate="0.58" effectHit="CH/Skill/Ranger/Eff_Ranger_RapidShot_Hit_01.xml" attackMaterial="100" />
+			</attack>
+			<attack point="p2" targetCount="1" magicPathID="105000212" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+				<rangeProperty rangeType="frustum" distance="900" height="150" width="150" endWidth="600" applyTarget="1" />
+				<arrowProperty rayPhysxTest="1" nonTarget="1" bounceType="3" bounceCount="4" collision="25.000000,100.000000,15.000000" collisionAdd="0.000000,25.000000,15.000000" effect="CH/Skill/Ranger/Eff_Ranger_RapidShot_Ball_01.xml" effectDestroy="CH/Skill/Ranger/Eff_Ranger_RapidShot_Destroy_01.xml" />
+				<damageProperty rate="0.58" effectHit="CH/Skill/Ranger/Eff_Ranger_RapidShot_Hit_01.xml" attackMaterial="100" />
+			</attack>
+		</motion>
+	</level>
+	<level value="7">
+		<beginCondition probability="1" cooldownTime="0.5">
+			<stat hp="1" />
+			<weapon lh="0" rh="51" />
+		</beginCondition>
+		<autoTargeting autoTargetingMaxDegree="90" />
+		<consume>
+			<stat sp="7" />
+		</consume>
+		<upgrade level="28" skillIDs="10500001,10500011" skillLevels="3,3" />
+		<combo inputSkill="10500021" outputSkill="10500022" />
+		<motion>
+			<motionProperty sequenceName="Ranger_RapidShot_01_A" strTagEffects="e0=CH/Skill/Ranger/Eff_Ranger_RapidShot_Cast_01.xml,e1=CH/Skill/Ranger/Eff_Ranger_RapidShot_Cast_02.xml" />
+			<attack point="p0" targetCount="1" magicPathID="10500021" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+				<rangeProperty rangeType="frustum" distance="900" height="150" width="150" endWidth="600" applyTarget="1" />
+				<arrowProperty rayPhysxTest="1" nonTarget="1" bounceType="3" bounceCount="4" collision="25.000000,100.000000,15.000000" collisionAdd="0.000000,25.000000,15.000000" effect="CH/Skill/Ranger/Eff_Ranger_RapidShot_Ball_01.xml" effectDestroy="CH/Skill/Ranger/Eff_Ranger_RapidShot_Destroy_01.xml" />
+				<damageProperty rate="0.6" effectHit="CH/Skill/Ranger/Eff_Ranger_RapidShot_Hit_01.xml" attackMaterial="100" />
+			</attack>
+			<attack point="p1" targetCount="1" magicPathID="105000211" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+				<rangeProperty rangeType="frustum" distance="900" height="150" width="150" endWidth="600" applyTarget="1" />
+				<arrowProperty rayPhysxTest="1" nonTarget="1" bounceType="3" bounceCount="4" collision="25.000000,100.000000,15.000000" collisionAdd="0.000000,25.000000,15.000000" effect="CH/Skill/Ranger/Eff_Ranger_RapidShot_Ball_01.xml" effectDestroy="CH/Skill/Ranger/Eff_Ranger_RapidShot_Destroy_01.xml" />
+				<damageProperty rate="0.6" effectHit="CH/Skill/Ranger/Eff_Ranger_RapidShot_Hit_01.xml" attackMaterial="100" />
+			</attack>
+			<attack point="p2" targetCount="1" magicPathID="105000212" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+				<rangeProperty rangeType="frustum" distance="900" height="150" width="150" endWidth="600" applyTarget="1" />
+				<arrowProperty rayPhysxTest="1" nonTarget="1" bounceType="3" bounceCount="4" collision="25.000000,100.000000,15.000000" collisionAdd="0.000000,25.000000,15.000000" effect="CH/Skill/Ranger/Eff_Ranger_RapidShot_Ball_01.xml" effectDestroy="CH/Skill/Ranger/Eff_Ranger_RapidShot_Destroy_01.xml" />
+				<damageProperty rate="0.6" effectHit="CH/Skill/Ranger/Eff_Ranger_RapidShot_Hit_01.xml" attackMaterial="100" />
+			</attack>
+		</motion>
+	</level>
+	<level value="8" feature="CharacterBalance_01">
+		<beginCondition probability="1" cooldownTime="0.5">
+			<stat hp="1" />
+			<weapon lh="0" rh="51" />
+		</beginCondition>
+		<autoTargeting autoTargetingMaxDegree="90" />
+		<consume>
+			<stat sp="7" />
+		</consume>
+		<upgrade level="30" skillIDs="10500001,10500011" skillLevels="3,1" />
+		<combo inputSkill="10500021" outputSkill="10500022" />
+		<motion>
+			<motionProperty sequenceName="Ranger_RapidShot_01_A" strTagEffects="e0=CH/Skill/Ranger/Eff_Ranger_RapidShot_Cast_01.xml,e1=CH/Skill/Ranger/Eff_Ranger_RapidShot_Cast_02.xml" />
+			<attack point="p0" targetCount="1" magicPathID="10500021" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+				<rangeProperty rangeType="frustum" distance="900" height="150" width="150" endWidth="600" applyTarget="1" />
+				<arrowProperty rayPhysxTest="1" nonTarget="1" bounceType="3" bounceCount="4" collision="25.000000,100.000000,15.000000" collisionAdd="0.000000,25.000000,15.000000" effect="CH/Skill/Ranger/Eff_Ranger_RapidShot_Ball_01.xml" effectDestroy="CH/Skill/Ranger/Eff_Ranger_RapidShot_Destroy_01.xml" />
+				<damageProperty rate="0.61" effectHit="CH/Skill/Ranger/Eff_Ranger_RapidShot_Hit_01.xml" attackMaterial="100" />
+			</attack>
+			<attack point="p1" targetCount="1" magicPathID="105000211" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+				<rangeProperty rangeType="frustum" distance="900" height="150" width="150" endWidth="600" applyTarget="1" />
+				<arrowProperty rayPhysxTest="1" nonTarget="1" bounceType="3" bounceCount="4" collision="25.000000,100.000000,15.000000" collisionAdd="0.000000,25.000000,15.000000" effect="CH/Skill/Ranger/Eff_Ranger_RapidShot_Ball_01.xml" effectDestroy="CH/Skill/Ranger/Eff_Ranger_RapidShot_Destroy_01.xml" />
+				<damageProperty rate="0.61" effectHit="CH/Skill/Ranger/Eff_Ranger_RapidShot_Hit_01.xml" attackMaterial="100" />
+			</attack>
+			<attack point="p2" targetCount="1" magicPathID="105000212" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+				<rangeProperty rangeType="frustum" distance="900" height="150" width="150" endWidth="600" applyTarget="1" />
+				<arrowProperty rayPhysxTest="1" nonTarget="1" bounceType="3" bounceCount="4" collision="25.000000,100.000000,15.000000" collisionAdd="0.000000,25.000000,15.000000" effect="CH/Skill/Ranger/Eff_Ranger_RapidShot_Ball_01.xml" effectDestroy="CH/Skill/Ranger/Eff_Ranger_RapidShot_Destroy_01.xml" />
+				<damageProperty rate="0.61" effectHit="CH/Skill/Ranger/Eff_Ranger_RapidShot_Hit_01.xml" attackMaterial="100" />
+			</attack>
+		</motion>
+	</level>
+	<level value="8">
+		<beginCondition probability="1" cooldownTime="0.5">
+			<stat hp="1" />
+			<weapon lh="0" rh="51" />
+		</beginCondition>
+		<autoTargeting autoTargetingMaxDegree="90" />
+		<consume>
+			<stat sp="7" />
+		</consume>
+		<upgrade level="30" skillIDs="10500001,10500011" skillLevels="3,3" />
+		<combo inputSkill="10500021" outputSkill="10500022" />
+		<motion>
+			<motionProperty sequenceName="Ranger_RapidShot_01_A" strTagEffects="e0=CH/Skill/Ranger/Eff_Ranger_RapidShot_Cast_01.xml,e1=CH/Skill/Ranger/Eff_Ranger_RapidShot_Cast_02.xml" />
+			<attack point="p0" targetCount="1" magicPathID="10500021" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+				<rangeProperty rangeType="frustum" distance="900" height="150" width="150" endWidth="600" applyTarget="1" />
+				<arrowProperty rayPhysxTest="1" nonTarget="1" bounceType="3" bounceCount="4" collision="25.000000,100.000000,15.000000" collisionAdd="0.000000,25.000000,15.000000" effect="CH/Skill/Ranger/Eff_Ranger_RapidShot_Ball_01.xml" effectDestroy="CH/Skill/Ranger/Eff_Ranger_RapidShot_Destroy_01.xml" />
+				<damageProperty rate="0.63" effectHit="CH/Skill/Ranger/Eff_Ranger_RapidShot_Hit_01.xml" attackMaterial="100" />
+			</attack>
+			<attack point="p1" targetCount="1" magicPathID="105000211" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+				<rangeProperty rangeType="frustum" distance="900" height="150" width="150" endWidth="600" applyTarget="1" />
+				<arrowProperty rayPhysxTest="1" nonTarget="1" bounceType="3" bounceCount="4" collision="25.000000,100.000000,15.000000" collisionAdd="0.000000,25.000000,15.000000" effect="CH/Skill/Ranger/Eff_Ranger_RapidShot_Ball_01.xml" effectDestroy="CH/Skill/Ranger/Eff_Ranger_RapidShot_Destroy_01.xml" />
+				<damageProperty rate="0.63" effectHit="CH/Skill/Ranger/Eff_Ranger_RapidShot_Hit_01.xml" attackMaterial="100" />
+			</attack>
+			<attack point="p2" targetCount="1" magicPathID="105000212" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+				<rangeProperty rangeType="frustum" distance="900" height="150" width="150" endWidth="600" applyTarget="1" />
+				<arrowProperty rayPhysxTest="1" nonTarget="1" bounceType="3" bounceCount="4" collision="25.000000,100.000000,15.000000" collisionAdd="0.000000,25.000000,15.000000" effect="CH/Skill/Ranger/Eff_Ranger_RapidShot_Ball_01.xml" effectDestroy="CH/Skill/Ranger/Eff_Ranger_RapidShot_Destroy_01.xml" />
+				<damageProperty rate="0.63" effectHit="CH/Skill/Ranger/Eff_Ranger_RapidShot_Hit_01.xml" attackMaterial="100" />
+			</attack>
+		</motion>
+	</level>
+	<level value="9" feature="CharacterBalance_01">
+		<beginCondition probability="1" cooldownTime="0.5">
+			<stat hp="1" />
+			<weapon lh="0" rh="51" />
+		</beginCondition>
+		<autoTargeting autoTargetingMaxDegree="90" />
+		<consume>
+			<stat sp="7" />
+		</consume>
+		<upgrade level="32" skillIDs="10500001,10500011" skillLevels="3,1" />
+		<combo inputSkill="10500021" outputSkill="10500022" />
+		<motion>
+			<motionProperty sequenceName="Ranger_RapidShot_01_A" strTagEffects="e0=CH/Skill/Ranger/Eff_Ranger_RapidShot_Cast_01.xml,e1=CH/Skill/Ranger/Eff_Ranger_RapidShot_Cast_02.xml" />
+			<attack point="p0" targetCount="1" magicPathID="10500021" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+				<rangeProperty rangeType="frustum" distance="900" height="150" width="150" endWidth="600" applyTarget="1" />
+				<arrowProperty rayPhysxTest="1" nonTarget="1" bounceType="3" bounceCount="4" collision="25.000000,100.000000,15.000000" collisionAdd="0.000000,25.000000,15.000000" effect="CH/Skill/Ranger/Eff_Ranger_RapidShot_Ball_01.xml" effectDestroy="CH/Skill/Ranger/Eff_Ranger_RapidShot_Destroy_01.xml" />
+				<damageProperty rate="0.64" effectHit="CH/Skill/Ranger/Eff_Ranger_RapidShot_Hit_01.xml" attackMaterial="100" />
+			</attack>
+			<attack point="p1" targetCount="1" magicPathID="105000211" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+				<rangeProperty rangeType="frustum" distance="900" height="150" width="150" endWidth="600" applyTarget="1" />
+				<arrowProperty rayPhysxTest="1" nonTarget="1" bounceType="3" bounceCount="4" collision="25.000000,100.000000,15.000000" collisionAdd="0.000000,25.000000,15.000000" effect="CH/Skill/Ranger/Eff_Ranger_RapidShot_Ball_01.xml" effectDestroy="CH/Skill/Ranger/Eff_Ranger_RapidShot_Destroy_01.xml" />
+				<damageProperty rate="0.64" effectHit="CH/Skill/Ranger/Eff_Ranger_RapidShot_Hit_01.xml" attackMaterial="100" />
+			</attack>
+			<attack point="p2" targetCount="1" magicPathID="105000212" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+				<rangeProperty rangeType="frustum" distance="900" height="150" width="150" endWidth="600" applyTarget="1" />
+				<arrowProperty rayPhysxTest="1" nonTarget="1" bounceType="3" bounceCount="4" collision="25.000000,100.000000,15.000000" collisionAdd="0.000000,25.000000,15.000000" effect="CH/Skill/Ranger/Eff_Ranger_RapidShot_Ball_01.xml" effectDestroy="CH/Skill/Ranger/Eff_Ranger_RapidShot_Destroy_01.xml" />
+				<damageProperty rate="0.64" effectHit="CH/Skill/Ranger/Eff_Ranger_RapidShot_Hit_01.xml" attackMaterial="100" />
+			</attack>
+		</motion>
+	</level>
+	<level value="9">
+		<beginCondition probability="1" cooldownTime="0.5">
+			<stat hp="1" />
+			<weapon lh="0" rh="51" />
+		</beginCondition>
+		<autoTargeting autoTargetingMaxDegree="90" />
+		<consume>
+			<stat sp="7" />
+		</consume>
+		<upgrade level="32" skillIDs="10500001,10500011" skillLevels="3,3" />
+		<combo inputSkill="10500021" outputSkill="10500022" />
+		<motion>
+			<motionProperty sequenceName="Ranger_RapidShot_01_A" strTagEffects="e0=CH/Skill/Ranger/Eff_Ranger_RapidShot_Cast_01.xml,e1=CH/Skill/Ranger/Eff_Ranger_RapidShot_Cast_02.xml" />
+			<attack point="p0" targetCount="1" magicPathID="10500021" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+				<rangeProperty rangeType="frustum" distance="900" height="150" width="150" endWidth="600" applyTarget="1" />
+				<arrowProperty rayPhysxTest="1" nonTarget="1" bounceType="3" bounceCount="4" collision="25.000000,100.000000,15.000000" collisionAdd="0.000000,25.000000,15.000000" effect="CH/Skill/Ranger/Eff_Ranger_RapidShot_Ball_01.xml" effectDestroy="CH/Skill/Ranger/Eff_Ranger_RapidShot_Destroy_01.xml" />
+				<damageProperty rate="0.66" effectHit="CH/Skill/Ranger/Eff_Ranger_RapidShot_Hit_01.xml" attackMaterial="100" />
+			</attack>
+			<attack point="p1" targetCount="1" magicPathID="105000211" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+				<rangeProperty rangeType="frustum" distance="900" height="150" width="150" endWidth="600" applyTarget="1" />
+				<arrowProperty rayPhysxTest="1" nonTarget="1" bounceType="3" bounceCount="4" collision="25.000000,100.000000,15.000000" collisionAdd="0.000000,25.000000,15.000000" effect="CH/Skill/Ranger/Eff_Ranger_RapidShot_Ball_01.xml" effectDestroy="CH/Skill/Ranger/Eff_Ranger_RapidShot_Destroy_01.xml" />
+				<damageProperty rate="0.66" effectHit="CH/Skill/Ranger/Eff_Ranger_RapidShot_Hit_01.xml" attackMaterial="100" />
+			</attack>
+			<attack point="p2" targetCount="1" magicPathID="105000212" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+				<rangeProperty rangeType="frustum" distance="900" height="150" width="150" endWidth="600" applyTarget="1" />
+				<arrowProperty rayPhysxTest="1" nonTarget="1" bounceType="3" bounceCount="4" collision="25.000000,100.000000,15.000000" collisionAdd="0.000000,25.000000,15.000000" effect="CH/Skill/Ranger/Eff_Ranger_RapidShot_Ball_01.xml" effectDestroy="CH/Skill/Ranger/Eff_Ranger_RapidShot_Destroy_01.xml" />
+				<damageProperty rate="0.66" effectHit="CH/Skill/Ranger/Eff_Ranger_RapidShot_Hit_01.xml" attackMaterial="100" />
+			</attack>
+		</motion>
+	</level>
+	<level value="10" feature="CharacterBalance_01">
+		<beginCondition probability="1" cooldownTime="0.5">
+			<stat hp="1" />
+			<weapon lh="0" rh="51" />
+		</beginCondition>
+		<autoTargeting autoTargetingMaxDegree="90" />
+		<consume>
+			<stat sp="7" />
+		</consume>
+		<upgrade level="34" skillIDs="10500001,10500011" skillLevels="3,1" />
+		<combo inputSkill="10500021" outputSkill="10500022" />
+		<motion>
+			<motionProperty sequenceName="Ranger_RapidShot_01_A" strTagEffects="e0=CH/Skill/Ranger/Eff_Ranger_RapidShot_Cast_01.xml,e1=CH/Skill/Ranger/Eff_Ranger_RapidShot_Cast_02.xml" />
+			<attack point="p0" targetCount="1" magicPathID="10500021" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+				<rangeProperty rangeType="frustum" distance="900" height="150" width="150" endWidth="600" applyTarget="1" />
+				<arrowProperty rayPhysxTest="1" nonTarget="1" bounceType="3" bounceCount="4" collision="25.000000,100.000000,15.000000" collisionAdd="0.000000,25.000000,15.000000" effect="CH/Skill/Ranger/Eff_Ranger_RapidShot_Ball_01.xml" effectDestroy="CH/Skill/Ranger/Eff_Ranger_RapidShot_Destroy_01.xml" />
+				<damageProperty rate="0.67" effectHit="CH/Skill/Ranger/Eff_Ranger_RapidShot_Hit_01.xml" attackMaterial="100" />
+			</attack>
+			<attack point="p1" targetCount="1" magicPathID="105000211" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+				<rangeProperty rangeType="frustum" distance="900" height="150" width="150" endWidth="600" applyTarget="1" />
+				<arrowProperty rayPhysxTest="1" nonTarget="1" bounceType="3" bounceCount="4" collision="25.000000,100.000000,15.000000" collisionAdd="0.000000,25.000000,15.000000" effect="CH/Skill/Ranger/Eff_Ranger_RapidShot_Ball_01.xml" effectDestroy="CH/Skill/Ranger/Eff_Ranger_RapidShot_Destroy_01.xml" />
+				<damageProperty rate="0.67" effectHit="CH/Skill/Ranger/Eff_Ranger_RapidShot_Hit_01.xml" attackMaterial="100" />
+			</attack>
+			<attack point="p2" targetCount="1" magicPathID="105000212" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+				<rangeProperty rangeType="frustum" distance="900" height="150" width="150" endWidth="600" applyTarget="1" />
+				<arrowProperty rayPhysxTest="1" nonTarget="1" bounceType="3" bounceCount="4" collision="25.000000,100.000000,15.000000" collisionAdd="0.000000,25.000000,15.000000" effect="CH/Skill/Ranger/Eff_Ranger_RapidShot_Ball_01.xml" effectDestroy="CH/Skill/Ranger/Eff_Ranger_RapidShot_Destroy_01.xml" />
+				<damageProperty rate="0.67" effectHit="CH/Skill/Ranger/Eff_Ranger_RapidShot_Hit_01.xml" attackMaterial="100" />
+			</attack>
+		</motion>
+	</level>
+	<level value="10">
+		<beginCondition probability="1" cooldownTime="0.5">
+			<stat hp="1" />
+			<weapon lh="0" rh="51" />
+		</beginCondition>
+		<autoTargeting autoTargetingMaxDegree="90" />
+		<consume>
+			<stat sp="7" />
+		</consume>
+		<upgrade level="34" skillIDs="10500001,10500011" skillLevels="3,3" />
+		<combo inputSkill="10500021" outputSkill="10500022" />
+		<motion>
+			<motionProperty sequenceName="Ranger_RapidShot_01_A" strTagEffects="e0=CH/Skill/Ranger/Eff_Ranger_RapidShot_Cast_01.xml,e1=CH/Skill/Ranger/Eff_Ranger_RapidShot_Cast_02.xml" />
+			<attack point="p0" targetCount="1" magicPathID="10500021" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+				<rangeProperty rangeType="frustum" distance="900" height="150" width="150" endWidth="600" applyTarget="1" />
+				<arrowProperty rayPhysxTest="1" nonTarget="1" bounceType="3" bounceCount="4" collision="25.000000,100.000000,15.000000" collisionAdd="0.000000,25.000000,15.000000" effect="CH/Skill/Ranger/Eff_Ranger_RapidShot_Ball_01.xml" effectDestroy="CH/Skill/Ranger/Eff_Ranger_RapidShot_Destroy_01.xml" />
+				<damageProperty rate="0.69" effectHit="CH/Skill/Ranger/Eff_Ranger_RapidShot_Hit_01.xml" attackMaterial="100" />
+			</attack>
+			<attack point="p1" targetCount="1" magicPathID="105000211" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+				<rangeProperty rangeType="frustum" distance="900" height="150" width="150" endWidth="600" applyTarget="1" />
+				<arrowProperty rayPhysxTest="1" nonTarget="1" bounceType="3" bounceCount="4" collision="25.000000,100.000000,15.000000" collisionAdd="0.000000,25.000000,15.000000" effect="CH/Skill/Ranger/Eff_Ranger_RapidShot_Ball_01.xml" effectDestroy="CH/Skill/Ranger/Eff_Ranger_RapidShot_Destroy_01.xml" />
+				<damageProperty rate="0.69" effectHit="CH/Skill/Ranger/Eff_Ranger_RapidShot_Hit_01.xml" attackMaterial="100" />
+			</attack>
+			<attack point="p2" targetCount="1" magicPathID="105000212" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+				<rangeProperty rangeType="frustum" distance="900" height="150" width="150" endWidth="600" applyTarget="1" />
+				<arrowProperty rayPhysxTest="1" nonTarget="1" bounceType="3" bounceCount="4" collision="25.000000,100.000000,15.000000" collisionAdd="0.000000,25.000000,15.000000" effect="CH/Skill/Ranger/Eff_Ranger_RapidShot_Ball_01.xml" effectDestroy="CH/Skill/Ranger/Eff_Ranger_RapidShot_Destroy_01.xml" />
+				<damageProperty rate="0.69" effectHit="CH/Skill/Ranger/Eff_Ranger_RapidShot_Hit_01.xml" attackMaterial="100" />
+			</attack>
+		</motion>
+	</level>
+	<level value="11" feature="CharacterBalance_01">
+		<beginCondition probability="1" cooldownTime="0.5">
+			<stat hp="1" />
+			<weapon lh="0" rh="51" />
+		</beginCondition>
+		<autoTargeting autoTargetingMaxDegree="90" />
+		<consume>
+			<stat sp="7" />
+		</consume>
+		<upgrade level="36" skillIDs="10500001,10500011" skillLevels="3,1" />
+		<combo inputSkill="10500021" outputSkill="10500022" />
+		<motion>
+			<motionProperty sequenceName="Ranger_RapidShot_01_A" strTagEffects="e0=CH/Skill/Ranger/Eff_Ranger_RapidShot_Cast_01.xml,e1=CH/Skill/Ranger/Eff_Ranger_RapidShot_Cast_02.xml" />
+			<attack point="p0" targetCount="1" magicPathID="10500021" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+				<rangeProperty rangeType="frustum" distance="900" height="150" width="150" endWidth="600" applyTarget="1" />
+				<arrowProperty rayPhysxTest="1" nonTarget="1" bounceType="3" bounceCount="4" collision="25.000000,100.000000,15.000000" collisionAdd="0.000000,25.000000,15.000000" effect="CH/Skill/Ranger/Eff_Ranger_RapidShot_Ball_01.xml" effectDestroy="CH/Skill/Ranger/Eff_Ranger_RapidShot_Destroy_01.xml" />
+				<damageProperty rate="0.7" effectHit="CH/Skill/Ranger/Eff_Ranger_RapidShot_Hit_01.xml" attackMaterial="100" />
+			</attack>
+			<attack point="p1" targetCount="1" magicPathID="105000211" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+				<rangeProperty rangeType="frustum" distance="900" height="150" width="150" endWidth="600" applyTarget="1" />
+				<arrowProperty rayPhysxTest="1" nonTarget="1" bounceType="3" bounceCount="4" collision="25.000000,100.000000,15.000000" collisionAdd="0.000000,25.000000,15.000000" effect="CH/Skill/Ranger/Eff_Ranger_RapidShot_Ball_01.xml" effectDestroy="CH/Skill/Ranger/Eff_Ranger_RapidShot_Destroy_01.xml" />
+				<damageProperty rate="0.7" effectHit="CH/Skill/Ranger/Eff_Ranger_RapidShot_Hit_01.xml" attackMaterial="100" />
+			</attack>
+			<attack point="p2" targetCount="1" magicPathID="105000212" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+				<rangeProperty rangeType="frustum" distance="900" height="150" width="150" endWidth="600" applyTarget="1" />
+				<arrowProperty rayPhysxTest="1" nonTarget="1" bounceType="3" bounceCount="4" collision="25.000000,100.000000,15.000000" collisionAdd="0.000000,25.000000,15.000000" effect="CH/Skill/Ranger/Eff_Ranger_RapidShot_Ball_01.xml" effectDestroy="CH/Skill/Ranger/Eff_Ranger_RapidShot_Destroy_01.xml" />
+				<damageProperty rate="0.7" effectHit="CH/Skill/Ranger/Eff_Ranger_RapidShot_Hit_01.xml" attackMaterial="100" />
+			</attack>
+		</motion>
+	</level>
+	<level value="11">
+		<beginCondition probability="1" cooldownTime="0.5">
+			<stat hp="1" />
+			<weapon lh="0" rh="51" />
+		</beginCondition>
+		<autoTargeting autoTargetingMaxDegree="90" />
+		<consume>
+			<stat sp="7" />
+		</consume>
+		<upgrade level="36" skillIDs="10500001,10500011" skillLevels="3,3" />
+		<combo inputSkill="10500021" outputSkill="10500022" />
+		<motion>
+			<motionProperty sequenceName="Ranger_RapidShot_01_A" strTagEffects="e0=CH/Skill/Ranger/Eff_Ranger_RapidShot_Cast_01.xml,e1=CH/Skill/Ranger/Eff_Ranger_RapidShot_Cast_02.xml" />
+			<attack point="p0" targetCount="1" magicPathID="10500021" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+				<rangeProperty rangeType="frustum" distance="900" height="150" width="150" endWidth="600" applyTarget="1" />
+				<arrowProperty rayPhysxTest="1" nonTarget="1" bounceType="3" bounceCount="4" collision="25.000000,100.000000,15.000000" collisionAdd="0.000000,25.000000,15.000000" effect="CH/Skill/Ranger/Eff_Ranger_RapidShot_Ball_01.xml" effectDestroy="CH/Skill/Ranger/Eff_Ranger_RapidShot_Destroy_01.xml" />
+				<damageProperty rate="0.72" effectHit="CH/Skill/Ranger/Eff_Ranger_RapidShot_Hit_01.xml" attackMaterial="100" />
+			</attack>
+			<attack point="p1" targetCount="1" magicPathID="105000211" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+				<rangeProperty rangeType="frustum" distance="900" height="150" width="150" endWidth="600" applyTarget="1" />
+				<arrowProperty rayPhysxTest="1" nonTarget="1" bounceType="3" bounceCount="4" collision="25.000000,100.000000,15.000000" collisionAdd="0.000000,25.000000,15.000000" effect="CH/Skill/Ranger/Eff_Ranger_RapidShot_Ball_01.xml" effectDestroy="CH/Skill/Ranger/Eff_Ranger_RapidShot_Destroy_01.xml" />
+				<damageProperty rate="0.72" effectHit="CH/Skill/Ranger/Eff_Ranger_RapidShot_Hit_01.xml" attackMaterial="100" />
+			</attack>
+			<attack point="p2" targetCount="1" magicPathID="105000212" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+				<rangeProperty rangeType="frustum" distance="900" height="150" width="150" endWidth="600" applyTarget="1" />
+				<arrowProperty rayPhysxTest="1" nonTarget="1" bounceType="3" bounceCount="4" collision="25.000000,100.000000,15.000000" collisionAdd="0.000000,25.000000,15.000000" effect="CH/Skill/Ranger/Eff_Ranger_RapidShot_Ball_01.xml" effectDestroy="CH/Skill/Ranger/Eff_Ranger_RapidShot_Destroy_01.xml" />
+				<damageProperty rate="0.72" effectHit="CH/Skill/Ranger/Eff_Ranger_RapidShot_Hit_01.xml" attackMaterial="100" />
+			</attack>
+		</motion>
+	</level>
+	<level value="12" feature="CharacterBalance_01">
+		<beginCondition probability="1" cooldownTime="0.5">
+			<stat hp="1" />
+			<weapon lh="0" rh="51" />
+		</beginCondition>
+		<autoTargeting autoTargetingMaxDegree="90" />
+		<consume>
+			<stat sp="7" />
+		</consume>
+		<upgrade level="38" skillIDs="10500001,10500011" skillLevels="3,1" />
+		<combo inputSkill="10500021" outputSkill="10500022" />
+		<motion>
+			<motionProperty sequenceName="Ranger_RapidShot_01_A" strTagEffects="e0=CH/Skill/Ranger/Eff_Ranger_RapidShot_Cast_01.xml,e1=CH/Skill/Ranger/Eff_Ranger_RapidShot_Cast_02.xml" />
+			<attack point="p0" targetCount="1" magicPathID="10500021" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+				<rangeProperty rangeType="frustum" distance="900" height="150" width="150" endWidth="600" applyTarget="1" />
+				<arrowProperty rayPhysxTest="1" nonTarget="1" bounceType="3" bounceCount="4" collision="25.000000,100.000000,15.000000" collisionAdd="0.000000,25.000000,15.000000" effect="CH/Skill/Ranger/Eff_Ranger_RapidShot_Ball_01.xml" effectDestroy="CH/Skill/Ranger/Eff_Ranger_RapidShot_Destroy_01.xml" />
+				<damageProperty rate="0.73" effectHit="CH/Skill/Ranger/Eff_Ranger_RapidShot_Hit_01.xml" attackMaterial="100" />
+			</attack>
+			<attack point="p1" targetCount="1" magicPathID="105000211" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+				<rangeProperty rangeType="frustum" distance="900" height="150" width="150" endWidth="600" applyTarget="1" />
+				<arrowProperty rayPhysxTest="1" nonTarget="1" bounceType="3" bounceCount="4" collision="25.000000,100.000000,15.000000" collisionAdd="0.000000,25.000000,15.000000" effect="CH/Skill/Ranger/Eff_Ranger_RapidShot_Ball_01.xml" effectDestroy="CH/Skill/Ranger/Eff_Ranger_RapidShot_Destroy_01.xml" />
+				<damageProperty rate="0.73" effectHit="CH/Skill/Ranger/Eff_Ranger_RapidShot_Hit_01.xml" attackMaterial="100" />
+			</attack>
+			<attack point="p2" targetCount="1" magicPathID="105000212" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+				<rangeProperty rangeType="frustum" distance="900" height="150" width="150" endWidth="600" applyTarget="1" />
+				<arrowProperty rayPhysxTest="1" nonTarget="1" bounceType="3" bounceCount="4" collision="25.000000,100.000000,15.000000" collisionAdd="0.000000,25.000000,15.000000" effect="CH/Skill/Ranger/Eff_Ranger_RapidShot_Ball_01.xml" effectDestroy="CH/Skill/Ranger/Eff_Ranger_RapidShot_Destroy_01.xml" />
+				<damageProperty rate="0.73" effectHit="CH/Skill/Ranger/Eff_Ranger_RapidShot_Hit_01.xml" attackMaterial="100" />
+			</attack>
+		</motion>
+	</level>
+	<level value="12">
+		<beginCondition probability="1" cooldownTime="0.5">
+			<stat hp="1" />
+			<weapon lh="0" rh="51" />
+		</beginCondition>
+		<autoTargeting autoTargetingMaxDegree="90" />
+		<consume>
+			<stat sp="7" />
+		</consume>
+		<upgrade level="38" skillIDs="10500001,10500011" skillLevels="3,3" />
+		<combo inputSkill="10500021" outputSkill="10500022" />
+		<motion>
+			<motionProperty sequenceName="Ranger_RapidShot_01_A" strTagEffects="e0=CH/Skill/Ranger/Eff_Ranger_RapidShot_Cast_01.xml,e1=CH/Skill/Ranger/Eff_Ranger_RapidShot_Cast_02.xml" />
+			<attack point="p0" targetCount="1" magicPathID="10500021" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+				<rangeProperty rangeType="frustum" distance="900" height="150" width="150" endWidth="600" applyTarget="1" />
+				<arrowProperty rayPhysxTest="1" nonTarget="1" bounceType="3" bounceCount="4" collision="25.000000,100.000000,15.000000" collisionAdd="0.000000,25.000000,15.000000" effect="CH/Skill/Ranger/Eff_Ranger_RapidShot_Ball_01.xml" effectDestroy="CH/Skill/Ranger/Eff_Ranger_RapidShot_Destroy_01.xml" />
+				<damageProperty rate="0.75" effectHit="CH/Skill/Ranger/Eff_Ranger_RapidShot_Hit_01.xml" attackMaterial="100" />
+			</attack>
+			<attack point="p1" targetCount="1" magicPathID="105000211" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+				<rangeProperty rangeType="frustum" distance="900" height="150" width="150" endWidth="600" applyTarget="1" />
+				<arrowProperty rayPhysxTest="1" nonTarget="1" bounceType="3" bounceCount="4" collision="25.000000,100.000000,15.000000" collisionAdd="0.000000,25.000000,15.000000" effect="CH/Skill/Ranger/Eff_Ranger_RapidShot_Ball_01.xml" effectDestroy="CH/Skill/Ranger/Eff_Ranger_RapidShot_Destroy_01.xml" />
+				<damageProperty rate="0.75" effectHit="CH/Skill/Ranger/Eff_Ranger_RapidShot_Hit_01.xml" attackMaterial="100" />
+			</attack>
+			<attack point="p2" targetCount="1" magicPathID="105000212" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+				<rangeProperty rangeType="frustum" distance="900" height="150" width="150" endWidth="600" applyTarget="1" />
+				<arrowProperty rayPhysxTest="1" nonTarget="1" bounceType="3" bounceCount="4" collision="25.000000,100.000000,15.000000" collisionAdd="0.000000,25.000000,15.000000" effect="CH/Skill/Ranger/Eff_Ranger_RapidShot_Ball_01.xml" effectDestroy="CH/Skill/Ranger/Eff_Ranger_RapidShot_Destroy_01.xml" />
+				<damageProperty rate="0.75" effectHit="CH/Skill/Ranger/Eff_Ranger_RapidShot_Hit_01.xml" attackMaterial="100" />
+			</attack>
+		</motion>
+	</level>
+</ms2>

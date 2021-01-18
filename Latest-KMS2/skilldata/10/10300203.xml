@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 파싱해서 사용하는 데이터이니 직접 수정하지 마세요 -->
+<ms2 feature="">
+	<basic feature="JobChange_01">
+		<ui icon="./Data/Resource/Image/skill/icon/10300201.png" exceptUI="1" attackType="2" />
+		<kinds subType="2" rangeType="2" jump="10300203" element="3" unrideOnUse="1" />
+		<stateAttr clearCooldownFromPVPZone="1" />
+	</basic>
+	<level value="1" feature="JobChange_01">
+		<beginCondition probability="1" cooldownTime="1">
+			<stat hp="1" />
+			<weapon lh="0" rh="52" />
+		</beginCondition>
+		<changeSkill originSkillID="10300201" />
+		<autoTargeting autoTargetingMaxDegree="90" />
+		<conditionSkill level="1" skillID="10300203" skillTarget="1">
+			<beginCondition probability="1" allowBattleRidingState="1" />
+		</conditionSkill>
+		<motion>
+			<motionProperty sequenceName="Wizard_MagneticField_01_A" motionEffect="CH/Skill/Wizard/Eff_Wizard_MagneticField_Cast_01.xml" />
+			<attack point="p0" targetCount="1" magicPathID="10300203" cubeMagicPathID="103002031" attacktype="2" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="5" />
+				<rangeProperty rangeType="frustum" distance="750" height="300" width="300" endWidth="600" applyTarget="1" />
+				<arrowProperty nonTarget="1" collision="200.000000,50.000000,150.000000" effect="NPC/Skill/Temp/Eff_Temp.xml" />
+				<damageProperty count="0" pushApplyField="1" attackMaterial="1000" />
+				<conditionSkill splash="1" level="1" skillID="10300204" immediateActive="1" />
+			</attack>
+		</motion>
+	</level>
+	<level value="2" feature="JobChange_01">
+		<beginCondition probability="1" cooldownTime="1">
+			<stat hp="1" />
+			<weapon lh="0" rh="52" />
+		</beginCondition>
+		<changeSkill originSkillID="10300201" originSkillLevel="2" />
+		<autoTargeting autoTargetingMaxDegree="90" />
+		<conditionSkill level="1" skillID="10300203" skillTarget="1">
+			<beginCondition probability="1" allowBattleRidingState="1" />
+		</conditionSkill>
+		<motion>
+			<motionProperty sequenceName="Wizard_MagneticField_01_A" motionEffect="CH/Skill/Wizard/Eff_Wizard_MagneticField_Cast_01.xml" />
+			<attack point="p0" targetCount="1" magicPathID="10300203" cubeMagicPathID="103002031" attacktype="2" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="5" />
+				<rangeProperty rangeType="frustum" distance="750" height="300" width="300" endWidth="600" applyTarget="1" />
+				<arrowProperty nonTarget="1" collision="200.000000,50.000000,150.000000" effect="NPC/Skill/Temp/Eff_Temp.xml" />
+				<damageProperty count="0" pushApplyField="1" attackMaterial="1000" />
+				<conditionSkill splash="1" level="2" skillID="10300204" immediateActive="1" />
+			</attack>
+		</motion>
+	</level>
+	<level value="3" feature="JobChange_01">
+		<beginCondition probability="1" cooldownTime="1">
+			<stat hp="1" />
+			<weapon lh="0" rh="52" />
+		</beginCondition>
+		<changeSkill originSkillID="10300201" originSkillLevel="3" />
+		<autoTargeting autoTargetingMaxDegree="90" />
+		<conditionSkill level="1" skillID="10300203" skillTarget="1">
+			<beginCondition probability="1" allowBattleRidingState="1" />
+		</conditionSkill>
+		<motion>
+			<motionProperty sequenceName="Wizard_MagneticField_01_A" motionEffect="CH/Skill/Wizard/Eff_Wizard_MagneticField_Cast_01.xml" />
+			<attack point="p0" targetCount="1" magicPathID="10300203" cubeMagicPathID="103002031" attacktype="2" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="5" />
+				<rangeProperty rangeType="frustum" distance="750" height="300" width="300" endWidth="600" applyTarget="1" />
+				<arrowProperty nonTarget="1" collision="200.000000,50.000000,150.000000" effect="NPC/Skill/Temp/Eff_Temp.xml" />
+				<damageProperty count="0" pushApplyField="1" attackMaterial="1000" />
+				<conditionSkill splash="1" level="3" skillID="10300204" immediateActive="1" />
+			</attack>
+		</motion>
+	</level>
+	<level value="4" feature="JobChange_01">
+		<beginCondition probability="1" cooldownTime="1">
+			<stat hp="1" />
+			<weapon lh="0" rh="52" />
+		</beginCondition>
+		<changeSkill originSkillID="10300201" originSkillLevel="4" />
+		<autoTargeting autoTargetingMaxDegree="90" />
+		<conditionSkill level="1" skillID="10300203" skillTarget="1">
+			<beginCondition probability="1" allowBattleRidingState="1" />
+		</conditionSkill>
+		<motion>
+			<motionProperty sequenceName="Wizard_MagneticField_01_A" motionEffect="CH/Skill/Wizard/Eff_Wizard_MagneticField_Cast_01.xml" />
+			<attack point="p0" targetCount="1" magicPathID="10300203" cubeMagicPathID="103002031" attacktype="2" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="5" />
+				<rangeProperty rangeType="frustum" distance="750" height="300" width="300" endWidth="600" applyTarget="1" />
+				<arrowProperty nonTarget="1" collision="200.000000,50.000000,150.000000" effect="NPC/Skill/Temp/Eff_Temp.xml" />
+				<damageProperty count="0" pushApplyField="1" attackMaterial="1000" />
+				<conditionSkill splash="1" level="4" skillID="10300204" immediateActive="1" />
+			</attack>
+		</motion>
+	</level>
+	<level value="5" feature="JobChange_01">
+		<beginCondition probability="1" cooldownTime="1">
+			<stat hp="1" />
+			<weapon lh="0" rh="52" />
+		</beginCondition>
+		<changeSkill originSkillID="10300201" originSkillLevel="5" />
+		<autoTargeting autoTargetingMaxDegree="90" />
+		<conditionSkill level="1" skillID="10300203" skillTarget="1">
+			<beginCondition probability="1" allowBattleRidingState="1" />
+		</conditionSkill>
+		<motion>
+			<motionProperty sequenceName="Wizard_MagneticField_01_A" motionEffect="CH/Skill/Wizard/Eff_Wizard_MagneticField_Cast_01.xml" />
+			<attack point="p0" targetCount="1" magicPathID="10300203" cubeMagicPathID="103002031" attacktype="2" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="5" />
+				<rangeProperty rangeType="frustum" distance="750" height="300" width="300" endWidth="600" applyTarget="1" />
+				<arrowProperty nonTarget="1" collision="200.000000,50.000000,150.000000" effect="NPC/Skill/Temp/Eff_Temp.xml" />
+				<damageProperty count="0" pushApplyField="1" attackMaterial="1000" />
+				<conditionSkill splash="1" level="5" skillID="10300204" immediateActive="1" />
+			</attack>
+		</motion>
+	</level>
+	<level value="6" feature="JobChange_01">
+		<beginCondition probability="1" cooldownTime="1">
+			<stat hp="1" />
+			<weapon lh="0" rh="52" />
+		</beginCondition>
+		<changeSkill originSkillID="10300201" originSkillLevel="6" />
+		<autoTargeting autoTargetingMaxDegree="90" />
+		<conditionSkill level="1" skillID="10300203" skillTarget="1">
+			<beginCondition probability="1" allowBattleRidingState="1" />
+		</conditionSkill>
+		<motion>
+			<motionProperty sequenceName="Wizard_MagneticField_01_A" motionEffect="CH/Skill/Wizard/Eff_Wizard_MagneticField_Cast_01.xml" />
+			<attack point="p0" targetCount="1" magicPathID="10300203" cubeMagicPathID="103002031" attacktype="2" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="5" />
+				<rangeProperty rangeType="frustum" distance="750" height="300" width="300" endWidth="600" applyTarget="1" />
+				<arrowProperty nonTarget="1" collision="200.000000,50.000000,150.000000" effect="NPC/Skill/Temp/Eff_Temp.xml" />
+				<damageProperty count="0" pushApplyField="1" attackMaterial="1000" />
+				<conditionSkill splash="1" level="6" skillID="10300204" immediateActive="1" />
+			</attack>
+		</motion>
+	</level>
+	<level value="7" feature="JobChange_01">
+		<beginCondition probability="1" cooldownTime="1">
+			<stat hp="1" />
+			<weapon lh="0" rh="52" />
+		</beginCondition>
+		<changeSkill originSkillID="10300201" originSkillLevel="7" />
+		<autoTargeting autoTargetingMaxDegree="90" />
+		<conditionSkill level="1" skillID="10300203" skillTarget="1">
+			<beginCondition probability="1" allowBattleRidingState="1" />
+		</conditionSkill>
+		<motion>
+			<motionProperty sequenceName="Wizard_MagneticField_01_A" motionEffect="CH/Skill/Wizard/Eff_Wizard_MagneticField_Cast_01.xml" />
+			<attack point="p0" targetCount="1" magicPathID="10300203" cubeMagicPathID="103002031" attacktype="2" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="5" />
+				<rangeProperty rangeType="frustum" distance="750" height="300" width="300" endWidth="600" applyTarget="1" />
+				<arrowProperty nonTarget="1" collision="200.000000,50.000000,150.000000" effect="NPC/Skill/Temp/Eff_Temp.xml" />
+				<damageProperty count="0" pushApplyField="1" attackMaterial="1000" />
+				<conditionSkill splash="1" level="7" skillID="10300204" immediateActive="1" />
+			</attack>
+		</motion>
+	</level>
+	<level value="8" feature="JobChange_01">
+		<beginCondition probability="1" cooldownTime="1">
+			<stat hp="1" />
+			<weapon lh="0" rh="52" />
+		</beginCondition>
+		<changeSkill originSkillID="10300201" originSkillLevel="8" />
+		<autoTargeting autoTargetingMaxDegree="90" />
+		<conditionSkill level="1" skillID="10300203" skillTarget="1">
+			<beginCondition probability="1" allowBattleRidingState="1" />
+		</conditionSkill>
+		<motion>
+			<motionProperty sequenceName="Wizard_MagneticField_01_A" motionEffect="CH/Skill/Wizard/Eff_Wizard_MagneticField_Cast_01.xml" />
+			<attack point="p0" targetCount="1" magicPathID="10300203" cubeMagicPathID="103002031" attacktype="2" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="5" />
+				<rangeProperty rangeType="frustum" distance="750" height="300" width="300" endWidth="600" applyTarget="1" />
+				<arrowProperty nonTarget="1" collision="200.000000,50.000000,150.000000" effect="NPC/Skill/Temp/Eff_Temp.xml" />
+				<damageProperty count="0" pushApplyField="1" attackMaterial="1000" />
+				<conditionSkill splash="1" level="8" skillID="10300204" immediateActive="1" />
+			</attack>
+		</motion>
+	</level>
+	<level value="9" feature="JobChange_01">
+		<beginCondition probability="1" cooldownTime="1">
+			<stat hp="1" />
+			<weapon lh="0" rh="52" />
+		</beginCondition>
+		<changeSkill originSkillID="10300201" originSkillLevel="9" />
+		<autoTargeting autoTargetingMaxDegree="90" />
+		<conditionSkill level="1" skillID="10300203" skillTarget="1">
+			<beginCondition probability="1" allowBattleRidingState="1" />
+		</conditionSkill>
+		<motion>
+			<motionProperty sequenceName="Wizard_MagneticField_01_A" motionEffect="CH/Skill/Wizard/Eff_Wizard_MagneticField_Cast_01.xml" />
+			<attack point="p0" targetCount="1" magicPathID="10300203" cubeMagicPathID="103002031" attacktype="2" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="5" />
+				<rangeProperty rangeType="frustum" distance="750" height="300" width="300" endWidth="600" applyTarget="1" />
+				<arrowProperty nonTarget="1" collision="200.000000,50.000000,150.000000" effect="NPC/Skill/Temp/Eff_Temp.xml" />
+				<damageProperty count="0" pushApplyField="1" attackMaterial="1000" />
+				<conditionSkill splash="1" level="9" skillID="10300204" immediateActive="1" />
+			</attack>
+		</motion>
+	</level>
+	<level value="10" feature="JobChange_01">
+		<beginCondition probability="1" cooldownTime="1">
+			<stat hp="1" />
+			<weapon lh="0" rh="52" />
+		</beginCondition>
+		<changeSkill originSkillID="10300201" originSkillLevel="10" />
+		<autoTargeting autoTargetingMaxDegree="90" />
+		<conditionSkill level="1" skillID="10300203" skillTarget="1">
+			<beginCondition probability="1" allowBattleRidingState="1" />
+		</conditionSkill>
+		<motion>
+			<motionProperty sequenceName="Wizard_MagneticField_01_A" motionEffect="CH/Skill/Wizard/Eff_Wizard_MagneticField_Cast_01.xml" />
+			<attack point="p0" targetCount="1" magicPathID="10300203" cubeMagicPathID="103002031" attacktype="2" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="5" />
+				<rangeProperty rangeType="frustum" distance="750" height="300" width="300" endWidth="600" applyTarget="1" />
+				<arrowProperty nonTarget="1" collision="200.000000,50.000000,150.000000" effect="NPC/Skill/Temp/Eff_Temp.xml" />
+				<damageProperty count="0" pushApplyField="1" attackMaterial="1000" />
+				<conditionSkill splash="1" level="10" skillID="10300204" immediateActive="1" />
+			</attack>
+		</motion>
+	</level>
+	<level value="11" feature="JobChange_01">
+		<beginCondition probability="1" cooldownTime="1">
+			<stat hp="1" />
+			<weapon lh="0" rh="52" />
+		</beginCondition>
+		<changeSkill originSkillID="10300201" originSkillLevel="11" />
+		<autoTargeting autoTargetingMaxDegree="90" />
+		<conditionSkill level="1" skillID="10300203" skillTarget="1">
+			<beginCondition probability="1" allowBattleRidingState="1" />
+		</conditionSkill>
+		<motion>
+			<motionProperty sequenceName="Wizard_MagneticField_01_A" motionEffect="CH/Skill/Wizard/Eff_Wizard_MagneticField_Cast_01.xml" />
+			<attack point="p0" targetCount="1" magicPathID="10300203" cubeMagicPathID="103002031" attacktype="2" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="5" />
+				<rangeProperty rangeType="frustum" distance="750" height="300" width="300" endWidth="600" applyTarget="1" />
+				<arrowProperty nonTarget="1" collision="200.000000,50.000000,150.000000" effect="NPC/Skill/Temp/Eff_Temp.xml" />
+				<damageProperty count="0" pushApplyField="1" attackMaterial="1000" />
+				<conditionSkill splash="1" level="11" skillID="10300204" immediateActive="1" />
+			</attack>
+		</motion>
+	</level>
+	<level value="12" feature="JobChange_01">
+		<beginCondition probability="1" cooldownTime="1">
+			<stat hp="1" />
+			<weapon lh="0" rh="52" />
+		</beginCondition>
+		<changeSkill originSkillID="10300201" originSkillLevel="12" />
+		<autoTargeting autoTargetingMaxDegree="90" />
+		<conditionSkill level="1" skillID="10300203" skillTarget="1">
+			<beginCondition probability="1" allowBattleRidingState="1" />
+		</conditionSkill>
+		<motion>
+			<motionProperty sequenceName="Wizard_MagneticField_01_A" motionEffect="CH/Skill/Wizard/Eff_Wizard_MagneticField_Cast_01.xml" />
+			<attack point="p0" targetCount="1" magicPathID="10300203" cubeMagicPathID="103002031" attacktype="2" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="5" />
+				<rangeProperty rangeType="frustum" distance="750" height="300" width="300" endWidth="600" applyTarget="1" />
+				<arrowProperty nonTarget="1" collision="200.000000,50.000000,150.000000" effect="NPC/Skill/Temp/Eff_Temp.xml" />
+				<damageProperty count="0" pushApplyField="1" attackMaterial="1000" />
+				<conditionSkill splash="1" level="12" skillID="10300204" immediateActive="1" />
+			</attack>
+		</motion>
+	</level>
+</ms2>

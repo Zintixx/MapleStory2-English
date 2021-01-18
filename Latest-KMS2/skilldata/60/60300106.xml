@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 파싱해서 사용하는 데이터이니 직접 수정하지 마세요 -->
+<ms2 feature="">
+	<basic>
+		<ui attackType="2" />
+		<kinds rangeType="1" element="7" />
+	</basic>
+	<level value="1">
+		<beginCondition probability="1">
+			<stat hp="1" />
+		</beginCondition>
+		<detectProperty rangeType="box" distance="600" height="1000" width="200" />
+		<motion>
+			<motionProperty sequenceName="Attack_01_F" motionEffect="NPC/Skill/RenduebianRbladerDark/Eff_RenduebianRbladerDark_01_F_Cast.xml" faceTarget="0" doesPlayIdleOnSkillEnd="false" />
+			<attack point="p0" targetCount="1" magicPathID="6152" cubeMagicPathID="6155" attacktype="2" unrideOnHit="1">
+				<rangeProperty rangeType="box" distance="850" height="35" width="800" applyTarget="1" castTarget="1" />
+				<arrowProperty explosion="1" nonTarget="1" collision="100.000000,100.000000,50.000000" collisionAdd="0.000000,200.000000,20.000000" effect="NPC/Skill/RenduebianRbladerDark/Eff_RenduebianRbladerDark_01_F_Throw_Ball.xml" effectRemain="NPC/Skill/RenduebianRbladerDark/Eff_RenduebianRbladerDark_01_F_Throw_Ball_Remain.xml" targetKeepEffect="NPC/Common/Eff_NPC_Attack_Hit_01.xml" />
+				<damageProperty rate="1" effectRemain="NPC/Common/Eff_NPC_Attack_Hit_01.xml" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" />
+				<conditionSkill splash="1" level="1" skillID="99999762" delay="1300" interval="500" fireCount="3" />
+			</attack>
+		</motion>
+	</level>
+	<level value="2">
+		<beginCondition probability="1">
+			<stat hp="1" />
+		</beginCondition>
+		<detectProperty rangeType="box" distance="600" height="1000" width="200" />
+		<motion>
+			<motionProperty sequenceName="Attack_02_F" motionEffect="NPC/Skill/RenduebianRbladerDark/Eff_RenduebianRbladerDark_02_F_Cast.xml" faceTarget="0" />
+			<attack point="p0" targetCount="1" magicPathID="6153" cubeMagicPathID="6155" attacktype="2" unrideOnHit="1">
+				<rangeProperty rangeType="box" distance="850" height="35" width="800" applyTarget="1" castTarget="1" />
+				<arrowProperty explosion="1" nonTarget="1" collision="100.000000,100.000000,50.000000" collisionAdd="0.000000,200.000000,20.000000" effect="NPC/Skill/RenduebianRbladerDark/Eff_RenduebianRbladerDark_01_F_Throw_Ball.xml" effectRemain="NPC/Skill/RenduebianRbladerDark/Eff_RenduebianRbladerDark_01_F_Throw_Ball_Remain.xml" targetKeepEffect="NPC/Common/Eff_NPC_Attack_Hit_01.xml" />
+				<damageProperty rate="1" effectRemain="NPC/Common/Eff_NPC_Attack_Hit_01.xml" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" />
+				<conditionSkill splash="1" level="2" skillID="99999762" delay="1300" interval="500" fireCount="6" />
+			</attack>
+		</motion>
+	</level>
+	<level value="3">
+		<beginCondition probability="1">
+			<stat hp="1" />
+		</beginCondition>
+		<detectProperty rangeType="box" distance="600" height="1000" width="200" />
+		<motion>
+			<motionProperty sequenceName="Attack_03_F" motionEffect="NPC/Skill/RenduebianRbladerDark/Eff_RenduebianRbladerDark_03_F_Cast.xml" faceTarget="0" />
+			<attack point="p0" targetCount="1" magicPathID="6154" cubeMagicPathID="6155" attacktype="2" unrideOnHit="1">
+				<rangeProperty rangeType="box" distance="850" height="35" width="800" applyTarget="1" castTarget="1" />
+				<arrowProperty explosion="1" collision="100.000000,100.000000,50.000000" collisionAdd="0.000000,200.000000,20.000000" effect="NPC/Skill/RenduebianRbladerDark/Eff_RenduebianRbladerDark_01_F_Throw_Ball.xml" effectRemain="NPC/Skill/RenduebianRbladerDark/Eff_RenduebianRbladerDark_01_F_Throw_Ball_Remain.xml" targetKeepEffect="NPC/Common/Eff_NPC_Attack_Hit_01.xml" />
+				<damageProperty rate="1" effectRemain="NPC/Common/Eff_NPC_Attack_Hit_01.xml" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" />
+				<conditionSkill splash="1" level="3" skillID="99999762" delay="1300" interval="500" fireCount="12" />
+			</attack>
+		</motion>
+	</level>
+	<level value="4">
+		<beginCondition probability="1">
+			<stat hp="1" />
+		</beginCondition>
+		<detectProperty rangeType="box" distance="800" height="80" width="300" />
+		<motion>
+			<motionProperty sequenceName="Attack_04_F" ignoreCollisionGroups="4" faceTarget="0" />
+			<attack point="p0" targetCount="10" direction="1" attacktype="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+				<rangeProperty rangeType="box" distance="800" height="80" width="200" applyTarget="1" castTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty count="0" attackMaterial="6" />
+			</attack>
+		</motion>
+	</level>
+</ms2>

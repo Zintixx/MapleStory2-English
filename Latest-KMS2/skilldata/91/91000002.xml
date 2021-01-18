@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 파싱해서 사용하는 데이터이니 직접 수정하지 마세요 -->
+<ms2 feature="">
+	<basic>
+		<ui attackType="2" />
+		<kinds unrideOnUse="1" />
+		<stateAttr autoTargeting="0" ignoreReduceCooldown="1" />
+	</basic>
+	<level value="1">
+		<beginCondition probability="1">
+			<stat hp="1" />
+		</beginCondition>
+		<push back="200" />
+		<motion>
+			<motionProperty motionEffect="CH/Skill/Priest/Eff_Priest_HolyCrossSplash_Cast_01.xml" splashInvokeEffect="CH/Skill/Priest/Eff_Priest_HolyCross_Invoke_01.xml" splashEndEffect="CH/Skill/Priest/Eff_Priest_HolyCross_End_01.xml" />
+			<attack point="p0" targetCount="8" attacktype="2" hitImmuneBreak="5">
+				<rangeProperty rangeType="cylinder" distance="300" height="150" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="1.67" push="1" pushduration="0.3" pushEaseType="1" pushUpDistance="100" />
+			</attack>
+		</motion>
+	</level>
+</ms2>

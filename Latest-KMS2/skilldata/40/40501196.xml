@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 파싱해서 사용하는 데이터이니 직접 수정하지 마세요 -->
+<ms2 feature="">
+	<basic>
+		<ui attackType="2" />
+		<kinds rangeType="2" element="1" />
+	</basic>
+	<level value="1">
+		<beginCondition probability="1">
+			<stat hp="1" />
+		</beginCondition>
+		<detectProperty rangeType="frustum" distance="1800" rangeOffset="0.000000,0.000000,50.000000" height="1200" width="3000" endWidth="3000" />
+		<motion>
+			<motionProperty sequenceName="Idle_B" motionEffect="NPC/Skill/ETC/Eff_NPC_MadracanCannon_01.xml" faceTarget="0" />
+			<attack point="p0" targetCount="1" magicPathID="6246" cubeMagicPathID="6233" attacktype="2" brokenOffence="1" unrideOnHit="1">
+				<rangeProperty rangeType="frustum" distance="1800" height="3000" width="3000" endWidth="3000" applyTarget="1" castTarget="1" />
+				<arrowProperty overlap="1" explosion="1" rayPhysxTest="1" nonTarget="1" collision="75.000000,75.000000,75.000000" effect="NPC/Skill/ETC/Eff_NPC_MadracanCannon_Ball.xml" effectRemain="NPC/Skill/ETC/Eff_NPC_MadracanCannon_Ball_remain.xml" />
+				<damageProperty rate="0.01" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
+				<conditionSkill splash="1" level="1" skillID="40501197" delay="10" />
+			</attack>
+		</motion>
+	</level>
+</ms2>

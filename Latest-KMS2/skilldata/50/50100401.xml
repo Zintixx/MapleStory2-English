@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 파싱해서 사용하는 데이터이니 직접 수정하지 마세요 -->
+<ms2 feature="">
+	<basic>
+		<ui attackType="2" />
+		<stateAttr notKeepEffect="1" />
+	</basic>
+	<level value="1">
+		<beginCondition probability="1">
+			<stat hp="1" />
+		</beginCondition>
+		<conditionSkill level="1" skillID="50000258" skillTarget="1">
+			<beginCondition probability="1" allowBattleRidingState="1" />
+		</conditionSkill>
+		<motion>
+			<motionProperty sequenceName="Attack_01_I" motionEffect="NPC/Skill/DevilHugeBlue/Eff_DevilHugeBlue_Attack_01_I.xml" faceTarget="0" doesPlayIdleOnSkillEnd="false" />
+			<attack point="p0" direction="1" attacktype="2" unrideOnHit="1">
+				<rangeProperty rangeType="cylinder" distance="5000" rangeAdd="0.000000,0.000000,350.000000" height="600" applyTarget="1" castTarget="1" />
+				<arrowProperty nonTarget="1" effect="NPC/Skill/Temp/Eff_Temp.xml" />
+				<damageProperty rate="1" attackMaterial="1" />
+			</attack>
+		</motion>
+		<motion>
+			<motionProperty sequenceName="Attack_02_I" loopEffect="NPC/Skill/DevilHugeBlue/Eff_DevilHugeBlue_Attack_02_I.xml" pushCylinderVelH="-550" pushCylinderOuter="2400" pushCylinderInner="50" pushCylinderHeight="900" faceTarget="0" doesPlayIdleOnSkillEnd="false" />
+			<attack point="p0" direction="1" attacktype="2" unrideOnHit="1">
+				<rangeProperty rangeType="cylinder" distance="5000" rangeAdd="0.000000,0.000000,350.000000" height="1200" applyTarget="1" castTarget="1" />
+				<arrowProperty nonTarget="1" effect="NPC/Skill/Temp/Eff_Temp.xml" />
+				<damageProperty rate="1" attackMaterial="1" />
+			</attack>
+		</motion>
+		<motion>
+			<motionProperty sequenceName="Attack_06_I" loopEffect="NPC/Skill/DevilHugeBlue/Eff_DevilHugeBlue_Attack_02_I.xml" pushCylinderVelH="-550" pushCylinderOuter="2400" pushCylinderInner="50" pushCylinderHeight="900" faceTarget="0" doesPlayIdleOnSkillEnd="false" />
+			<attack point="p0" targetCount="50" direction="1" attacktype="2" unrideOnHit="1" compulsionType="1">
+				<rangeProperty rangeType="cylinder" distance="2000" rangeAdd="0.000000,0.000000,350.000000" height="1200" applyTarget="1" castTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="0.001" attackMaterial="1" />
+				<conditionSkill level="1" skillID="50000012" skillTarget="2" skillOwner="1" />
+			</attack>
+		</motion>
+		<motion>
+			<motionProperty sequenceName="Attack_03_I" sequenceSpeed="0.65" motionEffect="NPC/Skill/DevilHugeBlue/Eff_DevilHugeBlue_Attack_03_I.xml" faceTarget="0" doesPlayIdleOnSkillEnd="false" />
+			<attack point="p0" targetCount="50" attacktype="2" hitImmuneBreak="1" brokenOffence="2" brokenForce="3" unrideOnHit="1" compulsionType="1">
+				<rangeProperty rangeType="cylinder" distance="99999" rangeAdd="0.000000,0.000000,999.000000" height="9999" applyTarget="1" castTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="0.001" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="30" pushduration="0.3" pushEaseType="1" attackMaterial="1" />
+				<conditionSkill level="1" skillID="50000014" skillTarget="2" skillOwner="1" />
+			</attack>
+		</motion>
+		<motion>
+			<motionProperty sequenceName="Attack_04_I" motionEffect="NPC/Skill/DevilHugeBlue/Eff_DevilHugeBlue_Attack_04_I_Stun.xml" loopCount="33" faceTarget="0" doesPlayIdleOnSkillEnd="false" />
+			<attack point="p0" direction="1" attacktype="2" unrideOnHit="1">
+				<rangeProperty rangeType="cylinder" distance="5000" rangeAdd="0.000000,0.000000,350.000000" height="1200" applyTarget="1" castTarget="1" />
+				<arrowProperty nonTarget="1" effect="NPC/Skill/Temp/Eff_Temp.xml" />
+				<damageProperty rate="1" attackMaterial="1" />
+			</attack>
+		</motion>
+		<motion>
+			<motionProperty sequenceName="Attack_05_I" motionEffect="NPC/Skill/DevilHugeBlue/Eff_DevilHugeBlue_Attack_05_I.xml" faceTarget="0" doesPlayIdleOnSkillEnd="false" />
+			<attack point="p0" attacktype="2" unrideOnHit="1">
+				<rangeProperty rangeType="cylinder" distance="2500" height="1200" applyTarget="1" castTarget="1" />
+				<arrowProperty nonTarget="1" effect="NPC/Skill/Temp/Eff_Temp.xml" />
+				<damageProperty count="0" rate="1" attackMaterial="1" />
+			</attack>
+		</motion>
+	</level>
+	<level value="2">
+		<beginCondition probability="1">
+			<stat hp="1" />
+		</beginCondition>
+		<conditionSkill level="1" skillID="50000258" skillTarget="1">
+			<beginCondition probability="1" allowBattleRidingState="1" />
+		</conditionSkill>
+		<motion>
+			<motionProperty sequenceName="Attack_01_I" motionEffect="NPC/Skill/DevilHugeBlue/Eff_DevilHugeBlue_Attack_01_I.xml" faceTarget="0" doesPlayIdleOnSkillEnd="false" />
+			<attack point="p0" direction="1" attacktype="2" unrideOnHit="1">
+				<rangeProperty rangeType="cylinder" distance="5000" rangeAdd="0.000000,0.000000,350.000000" height="1200" applyTarget="1" castTarget="1" />
+				<arrowProperty nonTarget="1" effect="NPC/Skill/Temp/Eff_Temp.xml" />
+				<damageProperty count="0" rate="1" attackMaterial="1" />
+			</attack>
+		</motion>
+		<motion>
+			<motionProperty sequenceName="Attack_02_I" loopEffect="NPC/Skill/DevilHugeBlue/Eff_DevilHugeBlue_Attack_02_I.xml" faceTarget="0" doesPlayIdleOnSkillEnd="false" />
+			<attack point="p0" targetCount="1" cubeMagicPathID="5426" direction="1" attacktype="2" unrideOnHit="1">
+				<rangeProperty includeCaster="2" rangeType="cylinder" distance="5000" rangeAdd="0.000000,0.000000,350.000000" height="1200" applyTarget="2" castTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty count="0" rate="1" attackMaterial="1" />
+				<conditionSkill splash="1" level="1" skillID="99999893" interval="500" fireCount="10" />
+			</attack>
+		</motion>
+		<motion>
+			<motionProperty sequenceName="Attack_06_I" loopEffect="NPC/Skill/DevilHugeBlue/Eff_DevilHugeBlue_Attack_02_I.xml" faceTarget="0" doesPlayIdleOnSkillEnd="false" />
+			<attack point="p0" direction="1" attacktype="2" unrideOnHit="1">
+				<rangeProperty rangeType="cylinder" distance="5000" rangeAdd="0.000000,0.000000,350.000000" height="1200" applyTarget="1" castTarget="1" />
+				<arrowProperty nonTarget="1" effect="NPC/Skill/Temp/Eff_Temp.xml" />
+				<damageProperty count="0" rate="1" attackMaterial="1" />
+			</attack>
+		</motion>
+		<motion>
+			<motionProperty sequenceName="Attack_03_I" sequenceSpeed="0.65" motionEffect="NPC/Skill/DevilHugeBlue/Eff_DevilHugeBlue_Attack_03_I.xml" faceTarget="0" doesPlayIdleOnSkillEnd="false" />
+			<attack point="p0" targetCount="50" attacktype="2" brokenOffence="2" brokenForce="3" unrideOnHit="1" compulsionType="1">
+				<rangeProperty rangeType="cylinder" distance="5000" rangeAdd="0.000000,0.000000,120.000000" height="1200" applyTarget="1" castTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="0.5" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
+				<conditionSkill level="1" skillID="50005003" skillTarget="2" skillOwner="1" />
+			</attack>
+			<attack point="p1" targetCount="50" attacktype="2" brokenOffence="2" brokenForce="3" unrideOnHit="1" compulsionType="1">
+				<rangeProperty rangeType="cylinder" distance="5000" rangeAdd="0.000000,0.000000,120.000000" height="1200" applyTarget="1" castTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="0.5" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
+				<conditionSkill level="1" skillID="50005004" skillTarget="2" skillOwner="1">
+					<beginCondition probability="1">
+						<target hasBuffID="50005005" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="0" hasBuffCountCompare="Equals" />
+					</beginCondition>
+				</conditionSkill>
+			</attack>
+			<attack point="p2" targetCount="50" attacktype="2" brokenOffence="2" brokenForce="3" unrideOnHit="1" compulsionType="1">
+				<rangeProperty rangeType="cylinder" distance="5000" rangeAdd="0.000000,0.000000,120.000000" height="1200" applyTarget="1" castTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="0.5" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
+				<conditionSkill level="1" skillID="50005004" skillTarget="2" skillOwner="1">
+					<beginCondition probability="1">
+						<target hasBuffID="50005005" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="0" hasBuffCountCompare="Equals" />
+					</beginCondition>
+				</conditionSkill>
+			</attack>
+		</motion>
+		<motion>
+			<motionProperty sequenceName="Attack_04_I" motionEffect="NPC/Skill/DevilHugeBlue/Eff_DevilHugeBlue_Attack_04_I_Stun.xml" loopCount="1" faceTarget="0" doesPlayIdleOnSkillEnd="false" />
+			<attack point="p0" direction="1" attacktype="2" unrideOnHit="1">
+				<rangeProperty rangeType="cylinder" distance="5000" rangeAdd="0.000000,0.000000,350.000000" height="1200" applyTarget="1" castTarget="1" />
+				<arrowProperty nonTarget="1" effect="NPC/Skill/Temp/Eff_Temp.xml" />
+				<damageProperty rate="1" attackMaterial="1" />
+			</attack>
+		</motion>
+		<motion>
+			<motionProperty sequenceName="Attack_05_I" motionEffect="NPC/Skill/DevilHugeBlue/Eff_DevilHugeBlue_Attack_05_I.xml" faceTarget="0" doesPlayIdleOnSkillEnd="false" />
+			<attack point="p0" attacktype="2" unrideOnHit="1">
+				<rangeProperty rangeType="cylinder" distance="2500" height="1200" applyTarget="1" castTarget="1" />
+				<arrowProperty nonTarget="1" effect="NPC/Skill/Temp/Eff_Temp.xml" />
+				<damageProperty count="0" rate="1" attackMaterial="1" />
+			</attack>
+		</motion>
+	</level>
+</ms2>

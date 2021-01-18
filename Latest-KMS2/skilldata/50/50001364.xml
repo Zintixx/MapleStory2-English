@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 파싱해서 사용하는 데이터이니 직접 수정하지 마세요 -->
+<ms2 feature="">
+	<basic>
+		<ui attackType="2" />
+		<kinds rangeType="2" element="1" />
+	</basic>
+	<level value="1">
+		<beginCondition probability="1">
+			<stat hp="1" />
+		</beginCondition>
+		<motion>
+			<motionProperty sequenceName="Attack_02_A" motionEffect="NPC/Skill/BalrogCrimson/Eff_BalrogCrimson_Attack_02_A_ThrowBig.xml" faceTarget="0" />
+			<attack point="p0" targetCount="1" magicPathID="5764" attacktype="2" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+				<rangeProperty rangeType="box" distance="3000" rangeAdd="0.000000,0.000000,50.000000" height="230" width="800" applyTarget="1" castTarget="1" />
+				<arrowProperty nonTarget="1" bounceCount="50" collision="140.000000,100.000000,80.000000" collisionAdd="0.000000,150.000000,100.000000" effect="NPC/Skill/BalrogCrimson/Eff_BalrogCrimson_Attack_02_A_ThrowBig_Ball.xml" effectRemain="NPC/Skill/BalrogCrimson/Eff_BalrogCrimson_Attack_02_A_ThrowBig_Ball_Remain.xml" />
+				<damageProperty rate="1" effectHit="NPC/Skill/BalrogCrimson/Eff_BalrogCrimson_Attack_02_A_ThrowBig_Ball_Hit.xml" attackMaterial="100" />
+				<conditionSkill level="1" skillID="50001657" skillTarget="2" skillOwner="1" />
+			</attack>
+		</motion>
+	</level>
+	<level value="2">
+		<beginCondition probability="1">
+			<stat hp="1" />
+		</beginCondition>
+		<motion>
+			<motionProperty sequenceName="Attack_02_A" motionEffect="NPC/Skill/BalrogCrimson/Eff_BalrogCrimson_Attack_02_A_ThrowBig.xml" faceTarget="0" />
+			<attack point="p0" targetCount="1" magicPathID="5772" attacktype="2" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+				<rangeProperty rangeType="box" distance="3000" rangeAdd="0.000000,0.000000,50.000000" height="230" width="800" applyTarget="1" castTarget="1" />
+				<arrowProperty nonTarget="1" bounceCount="50" collision="140.000000,100.000000,80.000000" collisionAdd="0.000000,150.000000,100.000000" effect="NPC/Skill/BalrogCrimson/Eff_BalrogCrimson_Attack_02_A_ThrowBig_Ball.xml" effectRemain="NPC/Skill/BalrogCrimson/Eff_BalrogCrimson_Attack_02_A_ThrowBig_Ball_Remain.xml" />
+				<damageProperty rate="1" effectHit="NPC/Skill/BalrogCrimson/Eff_BalrogCrimson_Attack_02_A_ThrowBig_Ball_Hit.xml" attackMaterial="100" />
+				<conditionSkill level="1" skillID="50001657" skillTarget="2" skillOwner="1" />
+			</attack>
+		</motion>
+	</level>
+</ms2>

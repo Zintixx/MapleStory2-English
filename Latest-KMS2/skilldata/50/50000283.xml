@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 파싱해서 사용하는 데이터이니 직접 수정하지 마세요 -->
+<ms2 feature="">
+	<basic>
+		<ui attackType="1" />
+		<kinds element="7" />
+	</basic>
+	<level value="1">
+		<beginCondition probability="1">
+			<stat hp="1" />
+		</beginCondition>
+		<motion>
+			<motionProperty sequenceName="Attack_01_A" motionEffect="NPC/Skill/WoodFourBlock/Eff_WoodFourBlock_Attack_01_A.xml" faceTarget="0" />
+			<attack point="p0" targetCount="1" attacktype="1" brokenOffence="1" unrideOnHit="1">
+				<rangeProperty rangeType="box" distance="100" height="190" width="80" applyTarget="1" castTarget="1" />
+				<arrowProperty nonTarget="1" effect="NPC/Skill/Temp/Eff_Temp.xml" />
+				<damageProperty count="0" rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
+			</attack>
+		</motion>
+		<motion>
+			<motionProperty sequenceName="Attack_02_A" motionEffect="NPC/Skill/WoodFourBlock/Eff_WoodFourBlock_Attack_02_A.xml" faceTarget="0" />
+			<attack point="p0" targetCount="1" attacktype="1" brokenOffence="1" unrideOnHit="1">
+				<rangeProperty rangeType="box" distance="150" height="190" width="100" applyTarget="1" castTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
+			</attack>
+		</motion>
+	</level>
+</ms2>

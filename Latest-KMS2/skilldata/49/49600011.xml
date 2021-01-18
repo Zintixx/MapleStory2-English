@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 파싱해서 사용하는 데이터이니 직접 수정하지 마세요 -->
+<ms2 feature="">
+	<basic>
+		<ui attackType="1" />
+		<kinds rangeType="1" element="7" />
+	</basic>
+	<level value="1">
+		<beginCondition probability="1">
+			<stat hp="1" />
+		</beginCondition>
+		<conditionSkill level="1" skillID="49287004" skillTarget="1">
+			<beginCondition probability="1" allowBattleRidingState="1" />
+		</conditionSkill>
+		<motion>
+			<motionProperty sequenceName="Phase_Shift_A" />
+			<attack point="p0" attacktype="1" unrideOnHit="1">
+				<rangeProperty rangeType="cylinder" distance="700" height="300" width="400" applyTarget="1" castTarget="1" />
+				<damageProperty count="0" rate="0.1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" />
+			</attack>
+		</motion>
+	</level>
+	<level value="2">
+		<beginCondition probability="1">
+			<stat hp="1" />
+		</beginCondition>
+		<conditionSkill level="1" skillID="49287005" skillTarget="1">
+			<beginCondition probability="1" allowBattleRidingState="1" />
+		</conditionSkill>
+		<motion>
+			<motionProperty sequenceName="Phase_Shift_A" />
+			<attack point="p0" attacktype="1" unrideOnHit="1">
+				<rangeProperty rangeType="cylinder" distance="700" height="300" width="400" applyTarget="1" castTarget="1" />
+				<damageProperty count="0" rate="0.1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" />
+			</attack>
+		</motion>
+	</level>
+	<level value="3">
+		<beginCondition probability="1">
+			<stat hp="1" />
+		</beginCondition>
+		<conditionSkill level="2" skillID="49287005" skillTarget="1">
+			<beginCondition probability="1" allowBattleRidingState="1" />
+		</conditionSkill>
+		<motion>
+			<motionProperty sequenceName="Phase_Shift_A" />
+			<attack point="p0" attacktype="1" unrideOnHit="1">
+				<rangeProperty rangeType="cylinder" distance="700" height="300" width="400" applyTarget="1" castTarget="1" />
+				<damageProperty count="0" rate="0.1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" />
+			</attack>
+		</motion>
+	</level>
+</ms2>

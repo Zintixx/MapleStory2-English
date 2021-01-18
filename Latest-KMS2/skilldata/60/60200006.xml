@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 파싱해서 사용하는 데이터이니 직접 수정하지 마세요 -->
+<ms2 feature="">
+	<basic>
+		<ui attackType="2" />
+		<kinds rangeType="1" element="7" />
+	</basic>
+	<level value="1">
+		<beginCondition probability="1">
+			<stat hp="1" />
+		</beginCondition>
+		<detectProperty rangeType="box" distance="600" height="1000" width="200" />
+		<motion>
+			<motionProperty sequenceName="Attack_01_F" motionEffect="NPC/Skill/Mason/Eff_Mason_Attack_01_F.xml" faceTarget="0" />
+			<attack point="p0" targetCount="1" magicPathID="6003" cubeMagicPathID="6005" attacktype="2" unrideOnHit="1">
+				<rangeProperty rangeType="box" distance="850" height="35" width="800" applyTarget="1" castTarget="1" />
+				<arrowProperty explosion="1" nonTarget="1" collision="100.000000,100.000000,50.000000" collisionAdd="0.000000,200.000000,20.000000" effect="NPC/Skill/Mason/Eff_Mason_Attack_01_F_Throw_Ball.xml" effectRemain="NPC/Skill/Mason/Eff_Mason_Attack_01_F_Throw_Ball_Remain.xml" targetKeepEffect="NPC/Common/Eff_NPC_Attack_Hit_01.xml" />
+				<damageProperty rate="1" effectRemain="NPC/Common/Eff_NPC_Attack_Hit_01.xml" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" />
+				<conditionSkill splash="1" level="1" skillID="99999793" delay="1300" interval="500" fireCount="10" />
+			</attack>
+		</motion>
+	</level>
+	<level value="2">
+		<beginCondition probability="1">
+			<stat hp="1" />
+		</beginCondition>
+		<detectProperty rangeType="box" distance="600" height="1000" width="200" />
+		<motion>
+			<motionProperty sequenceName="Attack_02_F" motionEffect="NPC/Skill/Mason/Eff_Mason_Attack_02_F.xml" faceTarget="0" />
+			<attack point="p0" targetCount="1" magicPathID="6004" cubeMagicPathID="6005" attacktype="2" unrideOnHit="1">
+				<rangeProperty rangeType="box" distance="850" height="35" width="800" applyTarget="1" castTarget="1" />
+				<arrowProperty explosion="1" collision="100.000000,100.000000,50.000000" collisionAdd="0.000000,200.000000,20.000000" effect="NPC/Skill/Mason/Eff_Mason_Attack_02_F_Throw_Ball.xml" effectRemain="NPC/Skill/Mason/Eff_Mason_Attack_02_F_Throw_Ball_Remain.xml" targetKeepEffect="NPC/Common/Eff_NPC_Attack_Hit_01.xml" />
+				<damageProperty rate="1" effectRemain="NPC/Common/Eff_NPC_Attack_Hit_01.xml" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" />
+				<conditionSkill splash="1" level="1" skillID="99999793" delay="1300" interval="500" fireCount="10" />
+			</attack>
+		</motion>
+	</level>
+</ms2>

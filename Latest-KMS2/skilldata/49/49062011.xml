@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 파싱해서 사용하는 데이터이니 직접 수정하지 마세요 -->
+<ms2 feature="">
+	<basic>
+		<ui attackType="1" />
+		<kinds rangeType="2" element="7" />
+	</basic>
+	<level value="1">
+		<beginCondition probability="1">
+			<stat hp="1" />
+		</beginCondition>
+		<detectProperty rangeType="cylinder" distance="900" height="170" />
+		<motion>
+			<motionProperty sequenceName="Attack_01_B" motionEffect="NPC/Skill/Anos/Eff_Anos_Attack_01_B_Cast.xml" faceTarget="0" />
+			<attack point="p0" targetCount="8" magicPathID="49062011" attacktype="1" brokenOffence="1" unrideOnHit="1">
+				<rangeProperty rangeType="cylinder" distance="900" height="170" applyTarget="1" castTarget="1" />
+				<arrowProperty nonTarget="1" collision="20.000000,0.000000,150.000000" collisionAdd="0.000000,20.000000,0.000000" effect="NPC/Skill/Anos/Eff_Anos_Attack_01_B_Ball.xml" effectRemain="NPC/Skill/Anos/Eff_Anos_Attack_01_B_Ball_Remain.xml" />
+				<damageProperty rate="0.5" effectHit="NPC/Skill/Anos/Eff_Anos_Attack_01_B_Ball_Hit.xml" attackMaterial="1" />
+			</attack>
+		</motion>
+	</level>
+</ms2>

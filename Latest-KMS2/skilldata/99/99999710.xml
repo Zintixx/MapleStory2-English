@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 파싱해서 사용하는 데이터이니 직접 수정하지 마세요 -->
+<ms2 feature="">
+	<basic>
+		<ui attackType="1" />
+		<kinds element="1" />
+	</basic>
+	<level value="1">
+		<beginCondition probability="1">
+			<stat hp="1" />
+		</beginCondition>
+		<motion>
+			<motionProperty motionEffect="NPC/Skill/ArcaneBlader/Eff_ArcaneBlader_Attack_01_C_DamageField.xml" splashInvokeEffect="NPC/Skill/ArcaneBlader/Eff_ArcaneBlader_Attack_01_C_Invoke.xml" splashEndEffect="NPC/Skill/ArcaneBlader/Eff_ArcaneBlader_Attack_01_C_Invoke_End.xml" faceTarget="0" />
+			<attack point="p0" targetCount="50" attacktype="1" brokenOffence="1" unrideOnHit="1" compulsionType="1,3">
+				<rangeProperty rangeType="cylinder" distance="75" height="200" applyTarget="5" castTarget="1" />
+				<damageProperty count="0" attackMaterial="103" />
+				<conditionSkill level="1" skillID="49289072" skillTarget="2" skillOwner="2" />
+			</attack>
+		</motion>
+	</level>
+	<level value="2">
+		<beginCondition probability="1">
+			<stat hp="1" />
+		</beginCondition>
+		<motion>
+			<motionProperty faceTarget="0" />
+			<attack point="p0" targetCount="50" attacktype="1" brokenOffence="1" unrideOnHit="1" compulsionType="1,3">
+				<rangeProperty rangeType="cylinder" distance="75" height="200" applyTarget="6" castTarget="1" />
+				<damageProperty count="0" attackMaterial="103" />
+				<conditionSkill level="1" skillID="49289071" skillTarget="2" skillOwner="2" />
+			</attack>
+		</motion>
+	</level>
+</ms2>

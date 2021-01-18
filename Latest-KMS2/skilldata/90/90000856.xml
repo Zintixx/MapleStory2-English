@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 파싱해서 사용하는 데이터이니 직접 수정하지 마세요 -->
+<ms2 feature="">
+	<basic>
+		<ui icon="./Data/Resource/Image/skill/icon/10400071.png" />
+		<kinds type="3" subType="3" element="4" unrideOnUse="1" />
+		<stateAttr battle="0" autoTargeting="0" clearCooldownFromPVPZone="1" />
+	</basic>
+	<level value="1">
+		<beginCondition probability="1" cooldownTime="30" useCoolDownShowUI="1" allowMapleSurvival="1">
+			<stat hp="1" />
+		</beginCondition>
+		<targetItem>
+			<item id="20000980" count="1" />
+		</targetItem>
+		<motion>
+			<motionProperty sequenceName="Priest_ShieldOfArchon_A" motionEffect="Item/Use/Eff_GreenhoodFirework_Use.xml" endEffect="CH/Skill/Priest/Eff_Priest_Heal_Cast_01.xml" holdWeapon="0" />
+			<attack point="p0" targetCount="4" releaseObjectWeaponOnHit="0">
+				<rangeProperty includeCaster="1" rangeType="cylinder" distance="300" height="150" applyTarget="2" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty count="0" attackMaterial="1000" />
+				<conditionSkill level="1" skillID="70001102" skillTarget="2" skillOwner="1">
+					<beginCondition probability="1" allowMapleSurvival="1" />
+				</conditionSkill>
+			</attack>
+		</motion>
+	</level>
+</ms2>

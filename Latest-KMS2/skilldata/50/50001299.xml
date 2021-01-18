@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 파싱해서 사용하는 데이터이니 직접 수정하지 마세요 -->
+<ms2 feature="">
+	<basic>
+		<ui attackType="1" />
+		<kinds rangeType="1" element="5" />
+	</basic>
+	<level value="1">
+		<beginCondition probability="1">
+			<stat hp="1" />
+		</beginCondition>
+		<conditionSkill level="1" skillID="50004525" skillTarget="1">
+			<beginCondition probability="1" allowBattleRidingState="1" />
+		</conditionSkill>
+		<motion>
+			<motionProperty sequenceName="Attack_01_C" faceTarget="0" doesPlayIdleOnSkillEnd="false" />
+			<attack point="p0" attacktype="1" unrideOnHit="1">
+				<rangeProperty rangeType="box" distance="520" height="200" width="300" applyTarget="1" castTarget="1" />
+				<arrowProperty nonTarget="1" effect="NPC/Skill/Temp/Eff_Temp.xml" />
+				<damageProperty count="0" rate="1" attackMaterial="106" />
+			</attack>
+		</motion>
+	</level>
+	<level value="2">
+		<beginCondition probability="1">
+			<stat hp="1" />
+		</beginCondition>
+		<motion>
+			<motionProperty sequenceName="Attack_02_C" loopCount="2" faceTarget="0" doesPlayIdleOnSkillEnd="false" />
+			<attack point="p0" attacktype="1" unrideOnHit="1">
+				<rangeProperty rangeType="box" distance="520" height="200" width="300" applyTarget="1" castTarget="1" />
+				<arrowProperty nonTarget="1" effect="NPC/Skill/Temp/Eff_Temp.xml" />
+				<damageProperty count="0" rate="1" attackMaterial="106" />
+			</attack>
+		</motion>
+	</level>
+	<level value="3">
+		<beginCondition probability="1">
+			<stat hp="1" />
+		</beginCondition>
+		<conditionSkill level="1" skillID="50004526" skillTarget="1">
+			<beginCondition probability="1" allowBattleRidingState="1" />
+		</conditionSkill>
+		<motion>
+			<motionProperty sequenceName="Attack_03_C" faceTarget="0" doesPlayIdleOnSkillEnd="false" />
+			<attack point="p0" attacktype="1" unrideOnHit="1">
+				<rangeProperty rangeType="box" distance="520" height="200" width="300" applyTarget="1" castTarget="1" />
+				<arrowProperty nonTarget="1" effect="NPC/Skill/Temp/Eff_Temp.xml" />
+				<damageProperty count="0" rate="1" attackMaterial="106" />
+			</attack>
+		</motion>
+	</level>
+	<level value="11">
+		<beginCondition probability="1">
+			<stat hp="1" />
+		</beginCondition>
+		<conditionSkill level="1" skillID="50004525" skillTarget="1">
+			<beginCondition probability="1" allowBattleRidingState="1" />
+		</conditionSkill>
+		<motion>
+			<motionProperty sequenceName="Attack_01_C" faceTarget="0" doesPlayIdleOnSkillEnd="false" />
+			<attack point="p10" targetCount="1" cubeMagicPathID="50000674" attacktype="1" unrideOnHit="1">
+				<rangeProperty includeCaster="1" rangeType="cylinder" distance="2500" height="100" applyTarget="2" castTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty count="0" rate="1" attackMaterial="1" />
+				<conditionSkill splash="1" level="1" skillID="99999778" delay="1" interval="300" immediateActive="1" fireCount="50" />
+			</attack>
+			<attack point="p11" targetCount="1" cubeMagicPathID="50000675" attacktype="1" unrideOnHit="1">
+				<rangeProperty includeCaster="1" rangeType="cylinder" distance="2500" height="100" applyTarget="2" castTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty count="0" rate="1" attackMaterial="1" />
+				<conditionSkill splash="1" level="2" skillID="99999778" delay="1" interval="300" immediateActive="1" fireCount="50" />
+			</attack>
+			<attack point="p12" targetCount="1" cubeMagicPathID="50000676" attacktype="1" unrideOnHit="1">
+				<rangeProperty includeCaster="1" rangeType="cylinder" distance="2500" height="100" applyTarget="2" castTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty count="0" rate="1" attackMaterial="1" />
+				<conditionSkill splash="1" level="1" skillID="99999777" delay="1" interval="300" immediateActive="1" fireCount="50" />
+			</attack>
+		</motion>
+	</level>
+	<level value="12">
+		<beginCondition probability="1">
+			<stat hp="1" />
+		</beginCondition>
+		<conditionSkill level="1" skillID="50004525" skillTarget="1">
+			<beginCondition probability="1" allowBattleRidingState="1" />
+		</conditionSkill>
+		<motion>
+			<motionProperty sequenceName="Attack_01_C" faceTarget="0" doesPlayIdleOnSkillEnd="false" />
+			<attack point="p10" targetCount="1" cubeMagicPathID="50000682" attacktype="1" unrideOnHit="1">
+				<rangeProperty includeCaster="1" rangeType="cylinder" distance="2500" height="100" applyTarget="2" castTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty count="0" rate="1" attackMaterial="1" />
+				<conditionSkill splash="1" level="1" skillID="99999778" delay="1" interval="300" immediateActive="1" fireCount="50" />
+			</attack>
+			<attack point="p11" targetCount="1" cubeMagicPathID="50000683" attacktype="1" unrideOnHit="1">
+				<rangeProperty includeCaster="1" rangeType="cylinder" distance="2500" height="100" applyTarget="2" castTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty count="0" rate="1" attackMaterial="1" />
+				<conditionSkill splash="1" level="2" skillID="99999778" delay="1" interval="300" immediateActive="1" fireCount="50" />
+			</attack>
+			<attack point="p12" targetCount="1" cubeMagicPathID="50000684" attacktype="1" unrideOnHit="1">
+				<rangeProperty includeCaster="1" rangeType="cylinder" distance="2500" height="100" applyTarget="2" castTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty count="0" rate="1" attackMaterial="1" />
+				<conditionSkill splash="1" level="1" skillID="99999777" delay="1" interval="300" immediateActive="1" fireCount="50" />
+			</attack>
+		</motion>
+	</level>
+	<level value="13">
+		<beginCondition probability="1">
+			<stat hp="1" />
+		</beginCondition>
+		<conditionSkill level="1" skillID="50004525" skillTarget="1">
+			<beginCondition probability="1" allowBattleRidingState="1" />
+		</conditionSkill>
+		<motion>
+			<motionProperty sequenceName="Attack_01_C" faceTarget="0" doesPlayIdleOnSkillEnd="false" />
+			<attack point="p10" targetCount="1" cubeMagicPathID="50000685" attacktype="1" unrideOnHit="1">
+				<rangeProperty includeCaster="1" rangeType="cylinder" distance="2500" height="100" applyTarget="2" castTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty count="0" rate="1" attackMaterial="1" />
+				<conditionSkill splash="1" level="1" skillID="99999778" delay="1" interval="300" immediateActive="1" fireCount="50" />
+			</attack>
+			<attack point="p11" targetCount="1" cubeMagicPathID="50000686" attacktype="1" unrideOnHit="1">
+				<rangeProperty includeCaster="1" rangeType="cylinder" distance="2500" height="100" applyTarget="2" castTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty count="0" rate="1" attackMaterial="1" />
+				<conditionSkill splash="1" level="2" skillID="99999778" delay="1" interval="300" immediateActive="1" fireCount="50" />
+			</attack>
+			<attack point="p12" targetCount="1" cubeMagicPathID="50000687" attacktype="1" unrideOnHit="1">
+				<rangeProperty includeCaster="1" rangeType="cylinder" distance="2500" height="100" applyTarget="2" castTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty count="0" rate="1" attackMaterial="1" />
+				<conditionSkill splash="1" level="1" skillID="99999777" delay="1" interval="300" immediateActive="1" fireCount="50" />
+			</attack>
+		</motion>
+	</level>
+	<level value="21">
+		<beginCondition probability="1">
+			<stat hp="1" />
+		</beginCondition>
+		<conditionSkill level="1" skillID="50004525" skillTarget="1">
+			<beginCondition probability="1" allowBattleRidingState="1" />
+		</conditionSkill>
+		<motion>
+			<motionProperty sequenceName="Attack_01_C" faceTarget="0" doesPlayIdleOnSkillEnd="false" />
+			<attack point="p10" targetCount="1" cubeMagicPathID="50000677" attacktype="1" unrideOnHit="1">
+				<rangeProperty includeCaster="1" rangeType="cylinder" distance="2500" height="100" applyTarget="2" castTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty count="0" rate="1" attackMaterial="1" />
+				<conditionSkill splash="1" level="1" skillID="99999778" delay="1" interval="300" immediateActive="1" fireCount="50" />
+			</attack>
+			<attack point="p11" targetCount="1" cubeMagicPathID="50000678" attacktype="1" unrideOnHit="1">
+				<rangeProperty includeCaster="1" rangeType="cylinder" distance="2500" height="100" applyTarget="2" castTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty count="0" rate="1" attackMaterial="1" />
+				<conditionSkill splash="1" level="2" skillID="99999778" delay="1" interval="300" immediateActive="1" fireCount="50" />
+			</attack>
+			<attack point="p12" targetCount="1" cubeMagicPathID="50000679" attacktype="1" unrideOnHit="1">
+				<rangeProperty includeCaster="1" rangeType="cylinder" distance="2500" height="100" applyTarget="2" castTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty count="0" rate="1" attackMaterial="1" />
+				<conditionSkill splash="1" level="1" skillID="99999777" delay="1" interval="300" immediateActive="1" fireCount="50" />
+			</attack>
+		</motion>
+	</level>
+	<level value="22">
+		<beginCondition probability="1">
+			<stat hp="1" />
+		</beginCondition>
+		<conditionSkill level="1" skillID="50004525" skillTarget="1">
+			<beginCondition probability="1" allowBattleRidingState="1" />
+		</conditionSkill>
+		<motion>
+			<motionProperty sequenceName="Attack_01_C" faceTarget="0" doesPlayIdleOnSkillEnd="false" />
+			<attack point="p10" targetCount="1" cubeMagicPathID="50000688" attacktype="1" unrideOnHit="1">
+				<rangeProperty includeCaster="1" rangeType="cylinder" distance="2500" height="100" applyTarget="2" castTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty count="0" rate="1" attackMaterial="1" />
+				<conditionSkill splash="1" level="1" skillID="99999778" delay="1" interval="300" immediateActive="1" fireCount="50" />
+			</attack>
+			<attack point="p11" targetCount="1" cubeMagicPathID="50000689" attacktype="1" unrideOnHit="1">
+				<rangeProperty includeCaster="1" rangeType="cylinder" distance="2500" height="100" applyTarget="2" castTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty count="0" rate="1" attackMaterial="1" />
+				<conditionSkill splash="1" level="2" skillID="99999778" delay="1" interval="300" immediateActive="1" fireCount="50" />
+			</attack>
+			<attack point="p12" targetCount="1" cubeMagicPathID="50000690" attacktype="1" unrideOnHit="1">
+				<rangeProperty includeCaster="1" rangeType="cylinder" distance="2500" height="100" applyTarget="2" castTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty count="0" rate="1" attackMaterial="1" />
+				<conditionSkill splash="1" level="1" skillID="99999777" delay="1" interval="300" immediateActive="1" fireCount="50" />
+			</attack>
+		</motion>
+	</level>
+	<level value="23">
+		<beginCondition probability="1">
+			<stat hp="1" />
+		</beginCondition>
+		<conditionSkill level="1" skillID="50004525" skillTarget="1">
+			<beginCondition probability="1" allowBattleRidingState="1" />
+		</conditionSkill>
+		<motion>
+			<motionProperty sequenceName="Attack_01_C" faceTarget="0" doesPlayIdleOnSkillEnd="false" />
+			<attack point="p10" targetCount="1" cubeMagicPathID="50000691" attacktype="1" unrideOnHit="1">
+				<rangeProperty includeCaster="1" rangeType="cylinder" distance="2500" height="100" applyTarget="2" castTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty count="0" rate="1" attackMaterial="1" />
+				<conditionSkill splash="1" level="1" skillID="99999778" delay="1" interval="300" immediateActive="1" fireCount="50" />
+			</attack>
+			<attack point="p11" targetCount="1" cubeMagicPathID="50000692" attacktype="1" unrideOnHit="1">
+				<rangeProperty includeCaster="1" rangeType="cylinder" distance="2500" height="100" applyTarget="2" castTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty count="0" rate="1" attackMaterial="1" />
+				<conditionSkill splash="1" level="2" skillID="99999778" delay="1" interval="300" immediateActive="1" fireCount="50" />
+			</attack>
+			<attack point="p12" targetCount="1" cubeMagicPathID="50000693" attacktype="1" unrideOnHit="1">
+				<rangeProperty includeCaster="1" rangeType="cylinder" distance="2500" height="100" applyTarget="2" castTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty count="0" rate="1" attackMaterial="1" />
+				<conditionSkill splash="1" level="1" skillID="99999777" delay="1" interval="300" immediateActive="1" fireCount="50" />
+			</attack>
+		</motion>
+	</level>
+</ms2>

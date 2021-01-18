@@ -1,0 +1,897 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 파싱해서 사용하는 데이터이니 직접 수정하지 마세요 -->
+<ms2 feature="">
+	<basic feature="JobChange_02">
+		<ui icon="./Data/Resource/Image/skill/icon/11000331.png" exceptUI="1" attackType="1" />
+		<kinds subType="2" rangeType="1" jump="11000266" element="1" unrideOnUse="1" groupIDs="11000331" />
+		<stateAttr superArmor="3" superArmorApplyFieldType="1" autoTargetingType="1" moveType="2" cooldownGroupID="11000261" clearCooldownFromPVPZone="1" ignoreReduceCooldown="1" movingInMovekey="1" />
+	</basic>
+	<level value="1" feature="JobChange_02">
+		<beginCondition probability="1" cooldownTime="0.3" useCoolDownShowUI="1">
+			<stat hp="1" />
+			<weapon lh="0" rh="55" />
+		</beginCondition>
+		<changeSkill originSkillID="11000261" />
+		<autoTargeting autoTargetingMaxDegree="180" />
+		<push back="150" />
+		<conditionSkill level="1" skillID="11000291" skillTarget="1">
+			<beginCondition probability="1" allowBattleRidingState="1" />
+		</conditionSkill>
+		<motion>
+			<motionProperty sequenceName="Striker_TornadoCutterEX_A" strTagEffects="e0=CH/Skill/Striker/Eff_Striker_TornadoCutterEX_Cast_01.xml,e1=CH/Skill/Striker/Eff_Striker_TornadoCutterEX_Cast_02.xml" />
+			<attack point="p0" targetCount="8" direction="2" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="1.2" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="8" />
+				<rangeProperty rangeType="cylinder" distance="330" height="150" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="2.31" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+				<conditionSkill level="1" skillID="11000333" skillTarget="2" skillOwner="1" />
+			</attack>
+			<attack point="p1" targetCount="8" direction="2" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="1.2" unrideOnHit="1">
+				<rangeProperty rangeType="cylinder" distance="330" height="150" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="2.31" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+				<conditionSkill level="1" skillID="11000333" skillTarget="2" skillOwner="1" />
+			</attack>
+			<attack point="p2" targetCount="8" direction="2" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="1.2" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="8" />
+				<rangeProperty rangeType="cylinder" distance="330" height="150" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="2.31" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+				<conditionSkill level="1" skillID="11000333" skillTarget="2" skillOwner="1" />
+			</attack>
+			<attack point="p3" targetCount="8" direction="2" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="1.2" unrideOnHit="1">
+				<rangeProperty rangeType="cylinder" distance="330" height="150" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="2.31" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+				<conditionSkill level="1" skillID="11000333" skillTarget="2" skillOwner="1" />
+			</attack>
+			<attack point="p4" targetCount="8" direction="2" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="1.2" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="8" />
+				<rangeProperty rangeType="cylinder" distance="330" height="150" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="2.31" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+				<conditionSkill level="1" skillID="11000333" skillTarget="2" skillOwner="1" />
+			</attack>
+			<attack point="p5" targetCount="8" direction="2" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="1.2" unrideOnHit="1">
+				<rangeProperty rangeType="cylinder" distance="330" height="150" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="2.31" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+				<conditionSkill level="1" skillID="11000333" skillTarget="2" skillOwner="1" />
+			</attack>
+			<attack point="p6" targetCount="8" direction="2" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="1.2" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="8" />
+				<rangeProperty rangeType="cylinder" distance="330" height="150" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="2.31" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+				<conditionSkill level="1" skillID="11000333" skillTarget="2" skillOwner="1" />
+			</attack>
+			<attack point="p7" targetCount="8" direction="2" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="1.2" unrideOnHit="1">
+				<rangeProperty rangeType="cylinder" distance="330" height="150" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="2.31" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+				<conditionSkill level="1" skillID="11000333" skillTarget="2" skillOwner="1" />
+			</attack>
+			<attack point="p8" targetCount="8" direction="2" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="1.2" unrideOnHit="1">
+				<pauseProperty pauseDuration="0.15" pauseShakeDuration="0.4" pauseAmp="20" />
+				<rangeProperty rangeType="cylinder" distance="330" height="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="2.31" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+				<conditionSkill level="1" skillID="11000333" skillTarget="2" skillOwner="1" />
+			</attack>
+		</motion>
+	</level>
+	<level value="2" feature="JobChange_02">
+		<beginCondition probability="1" cooldownTime="0.3" useCoolDownShowUI="1">
+			<stat hp="1" />
+			<weapon lh="0" rh="55" />
+		</beginCondition>
+		<changeSkill originSkillID="11000261" originSkillLevel="2" />
+		<autoTargeting autoTargetingMaxDegree="180" />
+		<push back="150" />
+		<conditionSkill level="1" skillID="11000291" skillTarget="1">
+			<beginCondition probability="1" allowBattleRidingState="1" />
+		</conditionSkill>
+		<motion>
+			<motionProperty sequenceName="Striker_TornadoCutterEX_A" strTagEffects="e0=CH/Skill/Striker/Eff_Striker_TornadoCutterEX_Cast_01.xml,e1=CH/Skill/Striker/Eff_Striker_TornadoCutterEX_Cast_02.xml" />
+			<attack point="p0" targetCount="8" direction="2" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="1.2" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="8" />
+				<rangeProperty rangeType="cylinder" distance="330" height="150" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="2.57" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+				<conditionSkill level="2" skillID="11000333" skillTarget="2" skillOwner="1" />
+			</attack>
+			<attack point="p1" targetCount="8" direction="2" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="1.2" unrideOnHit="1">
+				<rangeProperty rangeType="cylinder" distance="330" height="150" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="2.57" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+				<conditionSkill level="2" skillID="11000333" skillTarget="2" skillOwner="1" />
+			</attack>
+			<attack point="p2" targetCount="8" direction="2" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="1.2" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="8" />
+				<rangeProperty rangeType="cylinder" distance="330" height="150" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="2.57" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+				<conditionSkill level="2" skillID="11000333" skillTarget="2" skillOwner="1" />
+			</attack>
+			<attack point="p3" targetCount="8" direction="2" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="1.2" unrideOnHit="1">
+				<rangeProperty rangeType="cylinder" distance="330" height="150" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="2.57" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+				<conditionSkill level="2" skillID="11000333" skillTarget="2" skillOwner="1" />
+			</attack>
+			<attack point="p4" targetCount="8" direction="2" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="1.2" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="8" />
+				<rangeProperty rangeType="cylinder" distance="330" height="150" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="2.57" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+				<conditionSkill level="2" skillID="11000333" skillTarget="2" skillOwner="1" />
+			</attack>
+			<attack point="p5" targetCount="8" direction="2" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="1.2" unrideOnHit="1">
+				<rangeProperty rangeType="cylinder" distance="330" height="150" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="2.57" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+				<conditionSkill level="2" skillID="11000333" skillTarget="2" skillOwner="1" />
+			</attack>
+			<attack point="p6" targetCount="8" direction="2" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="1.2" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="8" />
+				<rangeProperty rangeType="cylinder" distance="330" height="150" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="2.57" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+				<conditionSkill level="2" skillID="11000333" skillTarget="2" skillOwner="1" />
+			</attack>
+			<attack point="p7" targetCount="8" direction="2" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="1.2" unrideOnHit="1">
+				<rangeProperty rangeType="cylinder" distance="330" height="150" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="2.57" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+				<conditionSkill level="2" skillID="11000333" skillTarget="2" skillOwner="1" />
+			</attack>
+			<attack point="p8" targetCount="8" direction="2" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="1.2" unrideOnHit="1">
+				<pauseProperty pauseDuration="0.15" pauseShakeDuration="0.4" pauseAmp="20" />
+				<rangeProperty rangeType="cylinder" distance="330" height="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="2.57" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+				<conditionSkill level="2" skillID="11000333" skillTarget="2" skillOwner="1" />
+			</attack>
+		</motion>
+	</level>
+	<level value="3" feature="JobChange_02">
+		<beginCondition probability="1" cooldownTime="0.3" useCoolDownShowUI="1">
+			<stat hp="1" />
+			<weapon lh="0" rh="55" />
+		</beginCondition>
+		<changeSkill originSkillID="11000261" originSkillLevel="3" />
+		<autoTargeting autoTargetingMaxDegree="180" />
+		<push back="150" />
+		<conditionSkill level="1" skillID="11000291" skillTarget="1">
+			<beginCondition probability="1" allowBattleRidingState="1" />
+		</conditionSkill>
+		<motion>
+			<motionProperty sequenceName="Striker_TornadoCutterEX_A" strTagEffects="e0=CH/Skill/Striker/Eff_Striker_TornadoCutterEX_Cast_01.xml,e1=CH/Skill/Striker/Eff_Striker_TornadoCutterEX_Cast_02.xml" />
+			<attack point="p0" targetCount="8" direction="2" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="1.2" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="8" />
+				<rangeProperty rangeType="cylinder" distance="330" height="150" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="2.83" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+				<conditionSkill level="3" skillID="11000333" skillTarget="2" skillOwner="1" />
+			</attack>
+			<attack point="p1" targetCount="8" direction="2" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="1.2" unrideOnHit="1">
+				<rangeProperty rangeType="cylinder" distance="330" height="150" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="2.83" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+				<conditionSkill level="3" skillID="11000333" skillTarget="2" skillOwner="1" />
+			</attack>
+			<attack point="p2" targetCount="8" direction="2" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="1.2" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="8" />
+				<rangeProperty rangeType="cylinder" distance="330" height="150" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="2.83" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+				<conditionSkill level="3" skillID="11000333" skillTarget="2" skillOwner="1" />
+			</attack>
+			<attack point="p3" targetCount="8" direction="2" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="1.2" unrideOnHit="1">
+				<rangeProperty rangeType="cylinder" distance="330" height="150" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="2.83" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+				<conditionSkill level="3" skillID="11000333" skillTarget="2" skillOwner="1" />
+			</attack>
+			<attack point="p4" targetCount="8" direction="2" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="1.2" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="8" />
+				<rangeProperty rangeType="cylinder" distance="330" height="150" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="2.83" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+				<conditionSkill level="3" skillID="11000333" skillTarget="2" skillOwner="1" />
+			</attack>
+			<attack point="p5" targetCount="8" direction="2" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="1.2" unrideOnHit="1">
+				<rangeProperty rangeType="cylinder" distance="330" height="150" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="2.83" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+				<conditionSkill level="3" skillID="11000333" skillTarget="2" skillOwner="1" />
+			</attack>
+			<attack point="p6" targetCount="8" direction="2" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="1.2" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="8" />
+				<rangeProperty rangeType="cylinder" distance="330" height="150" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="2.83" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+				<conditionSkill level="3" skillID="11000333" skillTarget="2" skillOwner="1" />
+			</attack>
+			<attack point="p7" targetCount="8" direction="2" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="1.2" unrideOnHit="1">
+				<rangeProperty rangeType="cylinder" distance="330" height="150" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="2.83" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+				<conditionSkill level="3" skillID="11000333" skillTarget="2" skillOwner="1" />
+			</attack>
+			<attack point="p8" targetCount="8" direction="2" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="1.2" unrideOnHit="1">
+				<pauseProperty pauseDuration="0.15" pauseShakeDuration="0.4" pauseAmp="20" />
+				<rangeProperty rangeType="cylinder" distance="330" height="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="2.83" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+				<conditionSkill level="3" skillID="11000333" skillTarget="2" skillOwner="1" />
+			</attack>
+		</motion>
+	</level>
+	<level value="4" feature="JobChange_02">
+		<beginCondition probability="1" cooldownTime="0.3" useCoolDownShowUI="1">
+			<stat hp="1" />
+			<weapon lh="0" rh="55" />
+		</beginCondition>
+		<changeSkill originSkillID="11000261" originSkillLevel="4" />
+		<autoTargeting autoTargetingMaxDegree="180" />
+		<push back="150" />
+		<conditionSkill level="1" skillID="11000291" skillTarget="1">
+			<beginCondition probability="1" allowBattleRidingState="1" />
+		</conditionSkill>
+		<motion>
+			<motionProperty sequenceName="Striker_TornadoCutterEX_A" strTagEffects="e0=CH/Skill/Striker/Eff_Striker_TornadoCutterEX_Cast_01.xml,e1=CH/Skill/Striker/Eff_Striker_TornadoCutterEX_Cast_02.xml" />
+			<attack point="p0" targetCount="8" direction="2" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="1.2" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="8" />
+				<rangeProperty rangeType="cylinder" distance="330" height="150" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="3.09" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+				<conditionSkill level="4" skillID="11000333" skillTarget="2" skillOwner="1" />
+			</attack>
+			<attack point="p1" targetCount="8" direction="2" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="1.2" unrideOnHit="1">
+				<rangeProperty rangeType="cylinder" distance="330" height="150" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="3.09" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+				<conditionSkill level="4" skillID="11000333" skillTarget="2" skillOwner="1" />
+			</attack>
+			<attack point="p2" targetCount="8" direction="2" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="1.2" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="8" />
+				<rangeProperty rangeType="cylinder" distance="330" height="150" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="3.09" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+				<conditionSkill level="4" skillID="11000333" skillTarget="2" skillOwner="1" />
+			</attack>
+			<attack point="p3" targetCount="8" direction="2" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="1.2" unrideOnHit="1">
+				<rangeProperty rangeType="cylinder" distance="330" height="150" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="3.09" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+				<conditionSkill level="4" skillID="11000333" skillTarget="2" skillOwner="1" />
+			</attack>
+			<attack point="p4" targetCount="8" direction="2" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="1.2" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="8" />
+				<rangeProperty rangeType="cylinder" distance="330" height="150" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="3.09" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+				<conditionSkill level="4" skillID="11000333" skillTarget="2" skillOwner="1" />
+			</attack>
+			<attack point="p5" targetCount="8" direction="2" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="1.2" unrideOnHit="1">
+				<rangeProperty rangeType="cylinder" distance="330" height="150" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="3.09" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+				<conditionSkill level="4" skillID="11000333" skillTarget="2" skillOwner="1" />
+			</attack>
+			<attack point="p6" targetCount="8" direction="2" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="1.2" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="8" />
+				<rangeProperty rangeType="cylinder" distance="330" height="150" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="3.09" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+				<conditionSkill level="4" skillID="11000333" skillTarget="2" skillOwner="1" />
+			</attack>
+			<attack point="p7" targetCount="8" direction="2" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="1.2" unrideOnHit="1">
+				<rangeProperty rangeType="cylinder" distance="330" height="150" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="3.09" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+				<conditionSkill level="4" skillID="11000333" skillTarget="2" skillOwner="1" />
+			</attack>
+			<attack point="p8" targetCount="8" direction="2" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="1.2" unrideOnHit="1">
+				<pauseProperty pauseDuration="0.15" pauseShakeDuration="0.4" pauseAmp="20" />
+				<rangeProperty rangeType="cylinder" distance="330" height="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="3.09" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+				<conditionSkill level="4" skillID="11000333" skillTarget="2" skillOwner="1" />
+			</attack>
+		</motion>
+	</level>
+	<level value="5" feature="JobChange_02">
+		<beginCondition probability="1" cooldownTime="0.3" useCoolDownShowUI="1">
+			<stat hp="1" />
+			<weapon lh="0" rh="55" />
+		</beginCondition>
+		<changeSkill originSkillID="11000261" originSkillLevel="5" />
+		<autoTargeting autoTargetingMaxDegree="180" />
+		<push back="150" />
+		<conditionSkill level="1" skillID="11000291" skillTarget="1">
+			<beginCondition probability="1" allowBattleRidingState="1" />
+		</conditionSkill>
+		<motion>
+			<motionProperty sequenceName="Striker_TornadoCutterEX_A" strTagEffects="e0=CH/Skill/Striker/Eff_Striker_TornadoCutterEX_Cast_01.xml,e1=CH/Skill/Striker/Eff_Striker_TornadoCutterEX_Cast_02.xml" />
+			<attack point="p0" targetCount="8" direction="2" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="1.2" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="8" />
+				<rangeProperty rangeType="cylinder" distance="330" height="150" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="3.35" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+				<conditionSkill level="5" skillID="11000333" skillTarget="2" skillOwner="1" />
+			</attack>
+			<attack point="p1" targetCount="8" direction="2" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="1.2" unrideOnHit="1">
+				<rangeProperty rangeType="cylinder" distance="330" height="150" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="3.35" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+				<conditionSkill level="5" skillID="11000333" skillTarget="2" skillOwner="1" />
+			</attack>
+			<attack point="p2" targetCount="8" direction="2" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="1.2" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="8" />
+				<rangeProperty rangeType="cylinder" distance="330" height="150" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="3.35" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+				<conditionSkill level="5" skillID="11000333" skillTarget="2" skillOwner="1" />
+			</attack>
+			<attack point="p3" targetCount="8" direction="2" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="1.2" unrideOnHit="1">
+				<rangeProperty rangeType="cylinder" distance="330" height="150" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="3.35" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+				<conditionSkill level="5" skillID="11000333" skillTarget="2" skillOwner="1" />
+			</attack>
+			<attack point="p4" targetCount="8" direction="2" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="1.2" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="8" />
+				<rangeProperty rangeType="cylinder" distance="330" height="150" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="3.35" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+				<conditionSkill level="5" skillID="11000333" skillTarget="2" skillOwner="1" />
+			</attack>
+			<attack point="p5" targetCount="8" direction="2" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="1.2" unrideOnHit="1">
+				<rangeProperty rangeType="cylinder" distance="330" height="150" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="3.35" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+				<conditionSkill level="5" skillID="11000333" skillTarget="2" skillOwner="1" />
+			</attack>
+			<attack point="p6" targetCount="8" direction="2" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="1.2" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="8" />
+				<rangeProperty rangeType="cylinder" distance="330" height="150" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="3.35" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+				<conditionSkill level="5" skillID="11000333" skillTarget="2" skillOwner="1" />
+			</attack>
+			<attack point="p7" targetCount="8" direction="2" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="1.2" unrideOnHit="1">
+				<rangeProperty rangeType="cylinder" distance="330" height="150" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="3.35" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+				<conditionSkill level="5" skillID="11000333" skillTarget="2" skillOwner="1" />
+			</attack>
+			<attack point="p8" targetCount="8" direction="2" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="1.2" unrideOnHit="1">
+				<pauseProperty pauseDuration="0.15" pauseShakeDuration="0.4" pauseAmp="20" />
+				<rangeProperty rangeType="cylinder" distance="330" height="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="3.35" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+				<conditionSkill level="5" skillID="11000333" skillTarget="2" skillOwner="1" />
+			</attack>
+		</motion>
+	</level>
+	<level value="6" feature="JobChange_02">
+		<beginCondition probability="1" cooldownTime="0.3" useCoolDownShowUI="1">
+			<stat hp="1" />
+			<weapon lh="0" rh="55" />
+		</beginCondition>
+		<changeSkill originSkillID="11000261" originSkillLevel="6" />
+		<autoTargeting autoTargetingMaxDegree="180" />
+		<push back="150" />
+		<conditionSkill level="1" skillID="11000291" skillTarget="1">
+			<beginCondition probability="1" allowBattleRidingState="1" />
+		</conditionSkill>
+		<motion>
+			<motionProperty sequenceName="Striker_TornadoCutterEX_A" strTagEffects="e0=CH/Skill/Striker/Eff_Striker_TornadoCutterEX_Cast_01.xml,e1=CH/Skill/Striker/Eff_Striker_TornadoCutterEX_Cast_02.xml" />
+			<attack point="p0" targetCount="8" direction="2" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="1.2" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="8" />
+				<rangeProperty rangeType="cylinder" distance="330" height="150" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="3.61" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+				<conditionSkill level="6" skillID="11000333" skillTarget="2" skillOwner="1" />
+			</attack>
+			<attack point="p1" targetCount="8" direction="2" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="1.2" unrideOnHit="1">
+				<rangeProperty rangeType="cylinder" distance="330" height="150" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="3.61" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+				<conditionSkill level="6" skillID="11000333" skillTarget="2" skillOwner="1" />
+			</attack>
+			<attack point="p2" targetCount="8" direction="2" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="1.2" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="8" />
+				<rangeProperty rangeType="cylinder" distance="330" height="150" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="3.61" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+				<conditionSkill level="6" skillID="11000333" skillTarget="2" skillOwner="1" />
+			</attack>
+			<attack point="p3" targetCount="8" direction="2" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="1.2" unrideOnHit="1">
+				<rangeProperty rangeType="cylinder" distance="330" height="150" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="3.61" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+				<conditionSkill level="6" skillID="11000333" skillTarget="2" skillOwner="1" />
+			</attack>
+			<attack point="p4" targetCount="8" direction="2" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="1.2" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="8" />
+				<rangeProperty rangeType="cylinder" distance="330" height="150" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="3.61" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+				<conditionSkill level="6" skillID="11000333" skillTarget="2" skillOwner="1" />
+			</attack>
+			<attack point="p5" targetCount="8" direction="2" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="1.2" unrideOnHit="1">
+				<rangeProperty rangeType="cylinder" distance="330" height="150" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="3.61" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+				<conditionSkill level="6" skillID="11000333" skillTarget="2" skillOwner="1" />
+			</attack>
+			<attack point="p6" targetCount="8" direction="2" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="1.2" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="8" />
+				<rangeProperty rangeType="cylinder" distance="330" height="150" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="3.61" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+				<conditionSkill level="6" skillID="11000333" skillTarget="2" skillOwner="1" />
+			</attack>
+			<attack point="p7" targetCount="8" direction="2" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="1.2" unrideOnHit="1">
+				<rangeProperty rangeType="cylinder" distance="330" height="150" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="3.61" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+				<conditionSkill level="6" skillID="11000333" skillTarget="2" skillOwner="1" />
+			</attack>
+			<attack point="p8" targetCount="8" direction="2" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="1.2" unrideOnHit="1">
+				<pauseProperty pauseDuration="0.15" pauseShakeDuration="0.4" pauseAmp="20" />
+				<rangeProperty rangeType="cylinder" distance="330" height="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="3.61" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+				<conditionSkill level="6" skillID="11000333" skillTarget="2" skillOwner="1" />
+			</attack>
+		</motion>
+	</level>
+	<level value="7" feature="JobChange_02">
+		<beginCondition probability="1" cooldownTime="0.3" useCoolDownShowUI="1">
+			<stat hp="1" />
+			<weapon lh="0" rh="55" />
+		</beginCondition>
+		<changeSkill originSkillID="11000261" originSkillLevel="7" />
+		<autoTargeting autoTargetingMaxDegree="180" />
+		<push back="150" />
+		<conditionSkill level="1" skillID="11000291" skillTarget="1">
+			<beginCondition probability="1" allowBattleRidingState="1" />
+		</conditionSkill>
+		<motion>
+			<motionProperty sequenceName="Striker_TornadoCutterEX_A" strTagEffects="e0=CH/Skill/Striker/Eff_Striker_TornadoCutterEX_Cast_01.xml,e1=CH/Skill/Striker/Eff_Striker_TornadoCutterEX_Cast_02.xml" />
+			<attack point="p0" targetCount="8" direction="2" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="1.2" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="8" />
+				<rangeProperty rangeType="cylinder" distance="330" height="150" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="3.87" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+				<conditionSkill level="7" skillID="11000333" skillTarget="2" skillOwner="1" />
+			</attack>
+			<attack point="p1" targetCount="8" direction="2" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="1.2" unrideOnHit="1">
+				<rangeProperty rangeType="cylinder" distance="330" height="150" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="3.87" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+				<conditionSkill level="7" skillID="11000333" skillTarget="2" skillOwner="1" />
+			</attack>
+			<attack point="p2" targetCount="8" direction="2" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="1.2" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="8" />
+				<rangeProperty rangeType="cylinder" distance="330" height="150" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="3.87" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+				<conditionSkill level="7" skillID="11000333" skillTarget="2" skillOwner="1" />
+			</attack>
+			<attack point="p3" targetCount="8" direction="2" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="1.2" unrideOnHit="1">
+				<rangeProperty rangeType="cylinder" distance="330" height="150" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="3.87" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+				<conditionSkill level="7" skillID="11000333" skillTarget="2" skillOwner="1" />
+			</attack>
+			<attack point="p4" targetCount="8" direction="2" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="1.2" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="8" />
+				<rangeProperty rangeType="cylinder" distance="330" height="150" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="3.87" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+				<conditionSkill level="7" skillID="11000333" skillTarget="2" skillOwner="1" />
+			</attack>
+			<attack point="p5" targetCount="8" direction="2" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="1.2" unrideOnHit="1">
+				<rangeProperty rangeType="cylinder" distance="330" height="150" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="3.87" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+				<conditionSkill level="7" skillID="11000333" skillTarget="2" skillOwner="1" />
+			</attack>
+			<attack point="p6" targetCount="8" direction="2" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="1.2" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="8" />
+				<rangeProperty rangeType="cylinder" distance="330" height="150" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="3.87" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+				<conditionSkill level="7" skillID="11000333" skillTarget="2" skillOwner="1" />
+			</attack>
+			<attack point="p7" targetCount="8" direction="2" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="1.2" unrideOnHit="1">
+				<rangeProperty rangeType="cylinder" distance="330" height="150" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="3.87" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+				<conditionSkill level="7" skillID="11000333" skillTarget="2" skillOwner="1" />
+			</attack>
+			<attack point="p8" targetCount="8" direction="2" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="1.2" unrideOnHit="1">
+				<pauseProperty pauseDuration="0.15" pauseShakeDuration="0.4" pauseAmp="20" />
+				<rangeProperty rangeType="cylinder" distance="330" height="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="3.87" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+				<conditionSkill level="7" skillID="11000333" skillTarget="2" skillOwner="1" />
+			</attack>
+		</motion>
+	</level>
+	<level value="8" feature="JobChange_02">
+		<beginCondition probability="1" cooldownTime="0.3" useCoolDownShowUI="1">
+			<stat hp="1" />
+			<weapon lh="0" rh="55" />
+		</beginCondition>
+		<changeSkill originSkillID="11000261" originSkillLevel="8" />
+		<autoTargeting autoTargetingMaxDegree="180" />
+		<push back="150" />
+		<conditionSkill level="1" skillID="11000291" skillTarget="1">
+			<beginCondition probability="1" allowBattleRidingState="1" />
+		</conditionSkill>
+		<motion>
+			<motionProperty sequenceName="Striker_TornadoCutterEX_A" strTagEffects="e0=CH/Skill/Striker/Eff_Striker_TornadoCutterEX_Cast_01.xml,e1=CH/Skill/Striker/Eff_Striker_TornadoCutterEX_Cast_02.xml" />
+			<attack point="p0" targetCount="8" direction="2" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="1.2" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="8" />
+				<rangeProperty rangeType="cylinder" distance="330" height="150" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="4.13" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+				<conditionSkill level="8" skillID="11000333" skillTarget="2" skillOwner="1" />
+			</attack>
+			<attack point="p1" targetCount="8" direction="2" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="1.2" unrideOnHit="1">
+				<rangeProperty rangeType="cylinder" distance="330" height="150" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="4.13" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+				<conditionSkill level="8" skillID="11000333" skillTarget="2" skillOwner="1" />
+			</attack>
+			<attack point="p2" targetCount="8" direction="2" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="1.2" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="8" />
+				<rangeProperty rangeType="cylinder" distance="330" height="150" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="4.13" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+				<conditionSkill level="8" skillID="11000333" skillTarget="2" skillOwner="1" />
+			</attack>
+			<attack point="p3" targetCount="8" direction="2" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="1.2" unrideOnHit="1">
+				<rangeProperty rangeType="cylinder" distance="330" height="150" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="4.13" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+				<conditionSkill level="8" skillID="11000333" skillTarget="2" skillOwner="1" />
+			</attack>
+			<attack point="p4" targetCount="8" direction="2" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="1.2" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="8" />
+				<rangeProperty rangeType="cylinder" distance="330" height="150" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="4.13" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+				<conditionSkill level="8" skillID="11000333" skillTarget="2" skillOwner="1" />
+			</attack>
+			<attack point="p5" targetCount="8" direction="2" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="1.2" unrideOnHit="1">
+				<rangeProperty rangeType="cylinder" distance="330" height="150" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="4.13" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+				<conditionSkill level="8" skillID="11000333" skillTarget="2" skillOwner="1" />
+			</attack>
+			<attack point="p6" targetCount="8" direction="2" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="1.2" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="8" />
+				<rangeProperty rangeType="cylinder" distance="330" height="150" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="4.13" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+				<conditionSkill level="8" skillID="11000333" skillTarget="2" skillOwner="1" />
+			</attack>
+			<attack point="p7" targetCount="8" direction="2" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="1.2" unrideOnHit="1">
+				<rangeProperty rangeType="cylinder" distance="330" height="150" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="4.13" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+				<conditionSkill level="8" skillID="11000333" skillTarget="2" skillOwner="1" />
+			</attack>
+			<attack point="p8" targetCount="8" direction="2" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="1.2" unrideOnHit="1">
+				<pauseProperty pauseDuration="0.15" pauseShakeDuration="0.4" pauseAmp="20" />
+				<rangeProperty rangeType="cylinder" distance="330" height="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="4.13" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+				<conditionSkill level="8" skillID="11000333" skillTarget="2" skillOwner="1" />
+			</attack>
+		</motion>
+	</level>
+	<level value="9" feature="JobChange_02">
+		<beginCondition probability="1" cooldownTime="0.3" useCoolDownShowUI="1">
+			<stat hp="1" />
+			<weapon lh="0" rh="55" />
+		</beginCondition>
+		<changeSkill originSkillID="11000261" originSkillLevel="9" />
+		<autoTargeting autoTargetingMaxDegree="180" />
+		<push back="150" />
+		<conditionSkill level="1" skillID="11000291" skillTarget="1">
+			<beginCondition probability="1" allowBattleRidingState="1" />
+		</conditionSkill>
+		<motion>
+			<motionProperty sequenceName="Striker_TornadoCutterEX_A" strTagEffects="e0=CH/Skill/Striker/Eff_Striker_TornadoCutterEX_Cast_01.xml,e1=CH/Skill/Striker/Eff_Striker_TornadoCutterEX_Cast_02.xml" />
+			<attack point="p0" targetCount="8" direction="2" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="1.2" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="8" />
+				<rangeProperty rangeType="cylinder" distance="330" height="150" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="4.39" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+				<conditionSkill level="9" skillID="11000333" skillTarget="2" skillOwner="1" />
+			</attack>
+			<attack point="p1" targetCount="8" direction="2" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="1.2" unrideOnHit="1">
+				<rangeProperty rangeType="cylinder" distance="330" height="150" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="4.39" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+				<conditionSkill level="9" skillID="11000333" skillTarget="2" skillOwner="1" />
+			</attack>
+			<attack point="p2" targetCount="8" direction="2" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="1.2" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="8" />
+				<rangeProperty rangeType="cylinder" distance="330" height="150" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="4.39" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+				<conditionSkill level="9" skillID="11000333" skillTarget="2" skillOwner="1" />
+			</attack>
+			<attack point="p3" targetCount="8" direction="2" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="1.2" unrideOnHit="1">
+				<rangeProperty rangeType="cylinder" distance="330" height="150" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="4.39" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+				<conditionSkill level="9" skillID="11000333" skillTarget="2" skillOwner="1" />
+			</attack>
+			<attack point="p4" targetCount="8" direction="2" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="1.2" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="8" />
+				<rangeProperty rangeType="cylinder" distance="330" height="150" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="4.39" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+				<conditionSkill level="9" skillID="11000333" skillTarget="2" skillOwner="1" />
+			</attack>
+			<attack point="p5" targetCount="8" direction="2" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="1.2" unrideOnHit="1">
+				<rangeProperty rangeType="cylinder" distance="330" height="150" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="4.39" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+				<conditionSkill level="9" skillID="11000333" skillTarget="2" skillOwner="1" />
+			</attack>
+			<attack point="p6" targetCount="8" direction="2" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="1.2" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="8" />
+				<rangeProperty rangeType="cylinder" distance="330" height="150" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="4.39" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+				<conditionSkill level="9" skillID="11000333" skillTarget="2" skillOwner="1" />
+			</attack>
+			<attack point="p7" targetCount="8" direction="2" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="1.2" unrideOnHit="1">
+				<rangeProperty rangeType="cylinder" distance="330" height="150" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="4.39" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+				<conditionSkill level="9" skillID="11000333" skillTarget="2" skillOwner="1" />
+			</attack>
+			<attack point="p8" targetCount="8" direction="2" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="1.2" unrideOnHit="1">
+				<pauseProperty pauseDuration="0.2" pauseShakeDuration="0.4" pauseAmp="20" />
+				<rangeProperty rangeType="cylinder" distance="330" height="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="4.39" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+				<conditionSkill level="9" skillID="11000333" skillTarget="2" skillOwner="1" />
+			</attack>
+		</motion>
+	</level>
+	<level value="10" feature="JobChange_02">
+		<beginCondition probability="1" cooldownTime="0.3" useCoolDownShowUI="1">
+			<stat hp="1" />
+			<weapon lh="0" rh="55" />
+		</beginCondition>
+		<changeSkill originSkillID="11000261" originSkillLevel="10" />
+		<autoTargeting autoTargetingMaxDegree="180" />
+		<push back="150" />
+		<conditionSkill level="1" skillID="11000291" skillTarget="1">
+			<beginCondition probability="1" allowBattleRidingState="1" />
+		</conditionSkill>
+		<motion>
+			<motionProperty sequenceName="Striker_TornadoCutterEX_A" strTagEffects="e0=CH/Skill/Striker/Eff_Striker_TornadoCutterEX_Cast_01.xml,e1=CH/Skill/Striker/Eff_Striker_TornadoCutterEX_Cast_02.xml" />
+			<attack point="p0" targetCount="8" direction="2" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="1.2" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="8" />
+				<rangeProperty rangeType="cylinder" distance="330" height="150" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="4.65" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+				<conditionSkill level="10" skillID="11000333" skillTarget="2" skillOwner="1" />
+			</attack>
+			<attack point="p1" targetCount="8" direction="2" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="1.2" unrideOnHit="1">
+				<rangeProperty rangeType="cylinder" distance="330" height="150" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="4.65" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+				<conditionSkill level="10" skillID="11000333" skillTarget="2" skillOwner="1" />
+			</attack>
+			<attack point="p2" targetCount="8" direction="2" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="1.2" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="8" />
+				<rangeProperty rangeType="cylinder" distance="330" height="150" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="4.65" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+				<conditionSkill level="10" skillID="11000333" skillTarget="2" skillOwner="1" />
+			</attack>
+			<attack point="p3" targetCount="8" direction="2" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="1.2" unrideOnHit="1">
+				<rangeProperty rangeType="cylinder" distance="330" height="150" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="4.65" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+				<conditionSkill level="10" skillID="11000333" skillTarget="2" skillOwner="1" />
+			</attack>
+			<attack point="p4" targetCount="8" direction="2" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="1.2" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="8" />
+				<rangeProperty rangeType="cylinder" distance="330" height="150" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="4.65" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+				<conditionSkill level="10" skillID="11000333" skillTarget="2" skillOwner="1" />
+			</attack>
+			<attack point="p5" targetCount="8" direction="2" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="1.2" unrideOnHit="1">
+				<rangeProperty rangeType="cylinder" distance="330" height="150" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="4.65" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+				<conditionSkill level="10" skillID="11000333" skillTarget="2" skillOwner="1" />
+			</attack>
+			<attack point="p6" targetCount="8" direction="2" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="1.2" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="8" />
+				<rangeProperty rangeType="cylinder" distance="330" height="150" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="4.65" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+				<conditionSkill level="10" skillID="11000333" skillTarget="2" skillOwner="1" />
+			</attack>
+			<attack point="p7" targetCount="8" direction="2" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="1.2" unrideOnHit="1">
+				<rangeProperty rangeType="cylinder" distance="330" height="150" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="4.65" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+				<conditionSkill level="10" skillID="11000333" skillTarget="2" skillOwner="1" />
+			</attack>
+			<attack point="p8" targetCount="8" direction="2" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="1.2" unrideOnHit="1">
+				<pauseProperty pauseDuration="0.15" pauseShakeDuration="0.4" pauseAmp="20" />
+				<rangeProperty rangeType="cylinder" distance="330" height="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="4.65" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+				<conditionSkill level="10" skillID="11000333" skillTarget="2" skillOwner="1" />
+			</attack>
+		</motion>
+	</level>
+	<level value="11" feature="JobChange_02">
+		<beginCondition probability="1" cooldownTime="0.3" useCoolDownShowUI="1">
+			<stat hp="1" />
+			<weapon lh="0" rh="55" />
+		</beginCondition>
+		<changeSkill originSkillID="11000261" originSkillLevel="11" />
+		<autoTargeting autoTargetingMaxDegree="180" />
+		<push back="150" />
+		<conditionSkill level="1" skillID="11000291" skillTarget="1">
+			<beginCondition probability="1" allowBattleRidingState="1" />
+		</conditionSkill>
+		<motion>
+			<motionProperty sequenceName="Striker_TornadoCutterEX_A" strTagEffects="e0=CH/Skill/Striker/Eff_Striker_TornadoCutterEX_Cast_01.xml,e1=CH/Skill/Striker/Eff_Striker_TornadoCutterEX_Cast_02.xml" />
+			<attack point="p0" targetCount="8" direction="2" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="1.2" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="8" />
+				<rangeProperty rangeType="cylinder" distance="330" height="150" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="4.91" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+				<conditionSkill level="11" skillID="11000333" skillTarget="2" skillOwner="1" />
+			</attack>
+			<attack point="p1" targetCount="8" direction="2" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="1.2" unrideOnHit="1">
+				<rangeProperty rangeType="cylinder" distance="330" height="150" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="4.91" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+				<conditionSkill level="11" skillID="11000333" skillTarget="2" skillOwner="1" />
+			</attack>
+			<attack point="p2" targetCount="8" direction="2" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="1.2" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="8" />
+				<rangeProperty rangeType="cylinder" distance="330" height="150" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="4.91" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+				<conditionSkill level="11" skillID="11000333" skillTarget="2" skillOwner="1" />
+			</attack>
+			<attack point="p3" targetCount="8" direction="2" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="1.2" unrideOnHit="1">
+				<rangeProperty rangeType="cylinder" distance="330" height="150" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="4.91" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+				<conditionSkill level="11" skillID="11000333" skillTarget="2" skillOwner="1" />
+			</attack>
+			<attack point="p4" targetCount="8" direction="2" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="1.2" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="8" />
+				<rangeProperty rangeType="cylinder" distance="330" height="150" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="4.91" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+				<conditionSkill level="11" skillID="11000333" skillTarget="2" skillOwner="1" />
+			</attack>
+			<attack point="p5" targetCount="8" direction="2" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="1.2" unrideOnHit="1">
+				<rangeProperty rangeType="cylinder" distance="330" height="150" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="4.91" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+				<conditionSkill level="11" skillID="11000333" skillTarget="2" skillOwner="1" />
+			</attack>
+			<attack point="p6" targetCount="8" direction="2" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="1.2" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="8" />
+				<rangeProperty rangeType="cylinder" distance="330" height="150" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="4.91" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+				<conditionSkill level="11" skillID="11000333" skillTarget="2" skillOwner="1" />
+			</attack>
+			<attack point="p7" targetCount="8" direction="2" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="1.2" unrideOnHit="1">
+				<rangeProperty rangeType="cylinder" distance="330" height="150" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="4.91" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+				<conditionSkill level="11" skillID="11000333" skillTarget="2" skillOwner="1" />
+			</attack>
+			<attack point="p8" targetCount="8" direction="2" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="1.2" unrideOnHit="1">
+				<pauseProperty pauseDuration="0.15" pauseShakeDuration="0.4" pauseAmp="20" />
+				<rangeProperty rangeType="cylinder" distance="330" height="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="4.91" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+				<conditionSkill level="11" skillID="11000333" skillTarget="2" skillOwner="1" />
+			</attack>
+		</motion>
+	</level>
+	<level value="12" feature="JobChange_02">
+		<beginCondition probability="1" cooldownTime="0.3" useCoolDownShowUI="1">
+			<stat hp="1" />
+			<weapon lh="0" rh="55" />
+		</beginCondition>
+		<changeSkill originSkillID="11000261" originSkillLevel="12" />
+		<autoTargeting autoTargetingMaxDegree="180" />
+		<push back="150" />
+		<conditionSkill level="1" skillID="11000291" skillTarget="1">
+			<beginCondition probability="1" allowBattleRidingState="1" />
+		</conditionSkill>
+		<motion>
+			<motionProperty sequenceName="Striker_TornadoCutterEX_A" strTagEffects="e0=CH/Skill/Striker/Eff_Striker_TornadoCutterEX_Cast_01.xml,e1=CH/Skill/Striker/Eff_Striker_TornadoCutterEX_Cast_02.xml" />
+			<attack point="p0" targetCount="8" direction="2" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="1.2" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="8" />
+				<rangeProperty rangeType="cylinder" distance="330" height="150" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="5.17" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+				<conditionSkill level="12" skillID="11000333" skillTarget="2" skillOwner="1" />
+			</attack>
+			<attack point="p1" targetCount="8" direction="2" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="1.2" unrideOnHit="1">
+				<rangeProperty rangeType="cylinder" distance="330" height="150" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="5.17" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+				<conditionSkill level="12" skillID="11000333" skillTarget="2" skillOwner="1" />
+			</attack>
+			<attack point="p2" targetCount="8" direction="2" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="1.2" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="8" />
+				<rangeProperty rangeType="cylinder" distance="330" height="150" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="5.17" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+				<conditionSkill level="12" skillID="11000333" skillTarget="2" skillOwner="1" />
+			</attack>
+			<attack point="p3" targetCount="8" direction="2" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="1.2" unrideOnHit="1">
+				<rangeProperty rangeType="cylinder" distance="330" height="150" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="5.17" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+				<conditionSkill level="12" skillID="11000333" skillTarget="2" skillOwner="1" />
+			</attack>
+			<attack point="p4" targetCount="8" direction="2" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="1.2" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="8" />
+				<rangeProperty rangeType="cylinder" distance="330" height="150" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="5.17" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+				<conditionSkill level="12" skillID="11000333" skillTarget="2" skillOwner="1" />
+			</attack>
+			<attack point="p5" targetCount="8" direction="2" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="1.2" unrideOnHit="1">
+				<rangeProperty rangeType="cylinder" distance="330" height="150" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="5.17" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+				<conditionSkill level="12" skillID="11000333" skillTarget="2" skillOwner="1" />
+			</attack>
+			<attack point="p6" targetCount="8" direction="2" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="1.2" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="8" />
+				<rangeProperty rangeType="cylinder" distance="330" height="150" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="5.17" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+				<conditionSkill level="12" skillID="11000333" skillTarget="2" skillOwner="1" />
+			</attack>
+			<attack point="p7" targetCount="8" direction="2" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="1.2" unrideOnHit="1">
+				<rangeProperty rangeType="cylinder" distance="330" height="150" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="5.17" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+				<conditionSkill level="12" skillID="11000333" skillTarget="2" skillOwner="1" />
+			</attack>
+			<attack point="p8" targetCount="8" direction="2" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="1.2" unrideOnHit="1">
+				<pauseProperty pauseDuration="0.15" pauseShakeDuration="0.4" pauseAmp="20" />
+				<rangeProperty rangeType="cylinder" distance="330" height="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="5.17" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+				<conditionSkill level="12" skillID="11000333" skillTarget="2" skillOwner="1" />
+			</attack>
+		</motion>
+	</level>
+</ms2>

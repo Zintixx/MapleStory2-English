@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 파싱해서 사용하는 데이터이니 직접 수정하지 마세요 -->
+<ms2 feature="">
+	<basic>
+		<ui attackType="1" />
+		<kinds rangeType="1" element="7" />
+	</basic>
+	<level value="1">
+		<beginCondition probability="1">
+			<stat hp="1" />
+		</beginCondition>
+		<detectProperty rangeType="cylinder" distance="4000" rangeOffset="0.000000,0.000000,50.000000" height="50" />
+		<motion>
+			<motionProperty sequenceName="Attack_01_A" motionEffect="NPC/Skill/Ureus/Eff_Ureus_TotemBuff_Attack.xml" />
+			<attack point="p0" targetCount="10" attacktype="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+				<rangeProperty rangeType="cylinder" distance="4000" height="200" applyTarget="2" castTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty count="0" rate="0.5" attackMaterial="1" />
+				<conditionSkill level="1" skillID="49016001" skillTarget="2" skillOwner="1">
+					<beginCondition probability="1">
+						<target hasBuffID="49016002" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="0" hasBuffCountCompare="Equals" />
+					</beginCondition>
+				</conditionSkill>
+			</attack>
+		</motion>
+	</level>
+</ms2>

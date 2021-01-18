@@ -2,14 +2,14 @@
 <!-- 파싱해서 사용하는 데이터이니 직접 수정하지 마세요 -->
 <ms2>
 	<level>
-		<beginCondition applyPvPZoneType="1">
-			<owner hasBuffID="0" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="0" hasBuffCountCompare="Equals">
+		<beginCondition probability="1" applyPvPZoneType="1">
+			<owner hasBuffID="0" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="0" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="">
 				<compareStat hp="0.2" func="GreaterEquals" />
 			</owner>
 		</beginCondition>
 		<BasicProperty level="1" buffType="2" durationTick="100" casterIndividualEffect="1" doNotClearEffectFromEnterPVPZone="1" />
 		<MotionProperty abnormalImmuneBreak="5" />
 		<DotDamageProperty type="3" useGrade="1" damageByTargetMaxHP="0.005" soundMaterial="100" notKill="1" />
-		<UIProperty iconOnOff="0" />
+		<UIProperty icon="" iconOnOff="0" />
 	</level>
 </ms2>

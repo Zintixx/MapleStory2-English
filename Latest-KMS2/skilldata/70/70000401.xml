@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 파싱해서 사용하는 데이터이니 직접 수정하지 마세요 -->
+<ms2 feature="">
+	<basic>
+		<ui attackType="2" />
+		<stateAttr ignoreReduceCooldown="1" />
+	</basic>
+	<level value="1">
+		<beginCondition target="1" probability="1" allowBattleRidingState="1" allowMapleSurvival="1">
+			<stat hp="1" />
+		</beginCondition>
+		<motion>
+			<motionProperty IgnoreOptimalHideCastEffect="true" IgnoreOptimalHideSplashInvokeEffect="true" />
+			<attack point="p0" targetCount="3" attacktype="2" releaseObjectWeaponOnHit="0">
+				<rangeProperty rangeType="cylinder" distance="75" rangeAdd="0.000000,0.000000,100.000000" height="100" applyTarget="2" targetSelectType="2" targetSelectParty="1" />
+				<damageProperty count="0" attackMaterial="1000" />
+				<conditionSkill level="1" skillID="70001131" skillTarget="2" skillOwner="1">
+					<beginCondition probability="1" allowBattleRidingState="1" allowMapleSurvival="1">
+						<caster hasBuffID="70001121" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="0" hasBuffCountCompare="Equals" />
+						<target hasBuffID="99920003" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="0" hasBuffCountCompare="Equals" hasNotBuffID="70001241" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="1" skillID="70001141" skillTarget="2" skillOwner="1">
+					<beginCondition probability="1" allowBattleRidingState="1" allowMapleSurvival="1">
+						<caster hasBuffID="70001121" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="0" hasBuffCountCompare="Equals" />
+						<target hasBuffID="71001001" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="0" hasBuffCountCompare="Equals" hasNotBuffID="70001241" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="1" skillID="70001151" skillTarget="2" skillOwner="1">
+					<beginCondition probability="1" allowBattleRidingState="1" allowMapleSurvival="1">
+						<caster hasBuffID="70001121" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="0" hasBuffCountCompare="Equals" />
+						<target hasBuffID="71000067" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="0" hasBuffCountCompare="Equals" hasNotBuffID="70001241" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="1" skillID="70001171" skillTarget="2" skillOwner="1">
+					<beginCondition probability="1" allowBattleRidingState="1" allowMapleSurvival="1">
+						<caster hasBuffID="70001121" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="0" hasBuffCountCompare="Equals" />
+						<target hasBuffID="70001021" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="0" hasBuffCountCompare="Equals" hasNotBuffID="70001241" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="1" skillID="70001201" skillTarget="2" skillOwner="1">
+					<beginCondition probability="1" allowBattleRidingState="1" allowMapleSurvival="1">
+						<caster hasBuffID="70001121" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="0" hasBuffCountCompare="Equals" />
+						<target hasBuffID="99901007" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="0" hasBuffCountCompare="Equals" hasNotBuffID="70001241" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="1" skillID="70001211" skillTarget="2" skillOwner="1">
+					<beginCondition probability="1" allowBattleRidingState="1" allowMapleSurvival="1">
+						<caster hasBuffID="70001121" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="0" hasBuffCountCompare="Equals" />
+						<target hasBuffID="99901008" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="0" hasBuffCountCompare="Equals" hasNotBuffID="70001241" />
+					</beginCondition>
+				</conditionSkill>
+			</attack>
+		</motion>
+	</level>
+</ms2>

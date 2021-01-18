@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 파싱해서 사용하는 데이터이니 직접 수정하지 마세요 -->
+<ms2 feature="">
+	<basic>
+		<ui attackType="2" />
+		<kinds rangeType="2" />
+	</basic>
+	<level value="1">
+		<beginCondition probability="1">
+			<stat hp="1" />
+		</beginCondition>
+		<detectProperty rangeType="cylinder" distance="3000" height="300" />
+		<motion>
+			<motionProperty sequenceName="Idle_B" motionEffect="NPC\Skill\Dummy\Eff_Dummy_SuicideBomb_Cast_Kritias.xml" />
+			<attack point="p2" targetCount="30" attacktype="2" hitImmuneBreak="99" brokenOffence="2" brokenForce="2" unrideOnHit="1" compulsionType="1,3">
+				<rangeProperty rangeType="cylinder" distance="375" height="300" applyTarget="3" castTarget="3" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="300" pushduration="0.75" pushEaseType="1" pushUpDistance="150" attackMaterial="103" />
+				<conditionSkill level="1" skillID="42030261" skillTarget="2" skillOwner="1">
+					<beginCondition probability="1">
+						<target hasBuffID="42030262" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="0" hasBuffCountCompare="Equals" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="1" skillID="42030263" skillTarget="2" skillOwner="2">
+					<beginCondition probability="1">
+						<target hasBuffID="0" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="0" hasBuffCountCompare="Equals" hasNotBuffID="42030262" />
+					</beginCondition>
+				</conditionSkill>
+			</attack>
+		</motion>
+	</level>
+</ms2>

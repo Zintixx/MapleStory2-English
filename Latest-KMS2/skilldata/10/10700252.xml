@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 파싱해서 사용하는 데이터이니 직접 수정하지 마세요 -->
+<ms2 feature="">
+	<basic feature="JobChange_01">
+		<ui icon="./Data/Resource/Image/skill/icon/10000001.png" exceptUI="1" attackType="1" />
+		<kinds subType="2" rangeType="1" jump="10700252" unrideOnUse="1" holdAttack="1" />
+		<stateAttr autoTargetingType="1" keyIsDown="1" clearCooldownFromPVPZone="1" ignoreReduceCooldown="1" />
+	</basic>
+	<level value="1" feature="JobChange_01">
+		<beginCondition probability="1" cooldownTime="0.7">
+			<stat hp="1" />
+		</beginCondition>
+		<autoTargeting autoTargetingMaxDegree="90" />
+		<motion>
+			<motionProperty sequenceName="Thief_Hold_Attack_01_A" strTagEffects="e0=CH/Skill/Thief/Eff_Thief_HoldAttack_Cast_01.xml" />
+			<attack point="p0" pointGroupID="10000001" targetCount="1" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="5" />
+				<rangeProperty rangeType="box" distance="200" rangeAdd="0.000000,25.000000,0.000000" height="150" width="150" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="3.4" hitSpeedRate="0.8" effectHit="CH/Weapon/Dagger/Eff_Dagger_Hit_01.xml" />
+			</attack>
+		</motion>
+	</level>
+</ms2>

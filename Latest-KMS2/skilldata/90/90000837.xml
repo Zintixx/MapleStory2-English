@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 파싱해서 사용하는 데이터이니 직접 수정하지 마세요 -->
+<ms2 feature="">
+	<basic>
+		<ui icon="./Data/Resource/Image/item/icon/20000216.png" />
+		<kinds type="3" subType="3" unrideOnUse="1" releaseObjectWeapon="0" />
+		<stateAttr battle="0" cooldownGroupID="80000001" />
+	</basic>
+	<level value="1">
+		<beginCondition probability="1" cooldownTime="20" useCoolDownShowUI="1" onlyFlyableMap="1" allowMapleSurvival="1">
+			<stat hp="1" />
+		</beginCondition>
+		<targetItem>
+			<item id="20000967" count="1" />
+		</targetItem>
+		<motion>
+			<motionProperty motionEffect="Item/Use/Maid/Eff_Item_NatureSpring_Cast_01.xml" holdWeapon="0" />
+			<attack point="p0" targetCount="1" compulsionType="1">
+				<rangeProperty includeCaster="1" rangeType="cylinder" distance="150" height="300" applyTarget="2" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty push="2" pushdistance="150" pushduration="3" pushEaseType="2" pushUpDistance="900" pushDown="1" />
+				<conditionSkill level="1" skillID="70001251" skillTarget="1" skillOwner="1">
+					<beginCondition probability="1" allowMapleSurvival="1" />
+				</conditionSkill>
+			</attack>
+		</motion>
+	</level>
+</ms2>

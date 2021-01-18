@@ -2,8 +2,8 @@
 <!-- 파싱해서 사용하는 데이터이니 직접 수정하지 마세요 -->
 <ms2>
 	<level>
-		<beginCondition applyPvPZoneType="1">
-			<owner hasBuffID="90050985" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="0" hasBuffCountCompare="Equals" />
+		<beginCondition probability="1" applyPvPZoneType="1">
+			<owner hasBuffID="90050985" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="0" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
 		</beginCondition>
 		<BasicProperty level="1" durationTick="120000" delayTick="2799" clearEffectFromPVPZone="1" />
 		<MotionProperty keepEffect="Item/Skill/Eff_Item_HeartPraline_Keep_02.xml" stopEffect="Item/Skill/Eff_Item_HeartPraline_Stop_02.xml" IgnoreOptimalHideKeepEffect="true" IgnoreOptimalHideStopEffect="true" abnormalImmuneBreak="5" />
@@ -13,7 +13,7 @@
 		<UIProperty icon="./Data/Resource/Image/Skill/icon/BuffRose.png" />
 		<conditionSkill level="1" skillID="90050984" skillTarget="2">
 			<beginCondition probability="0.06">
-				<owner hasBuffID="90050986" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="0" hasBuffCountCompare="Equals" eventCondition="6" ignoreOwnerEvent="1" />
+				<owner hasBuffID="90050986" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="0" hasBuffCountCompare="Equals" eventCondition="6" ignoreOwnerEvent="1" eventSkillID="" eventEffectID="" />
 			</beginCondition>
 		</conditionSkill>
 	</level>

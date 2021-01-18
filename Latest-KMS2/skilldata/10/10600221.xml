@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 파싱해서 사용하는 데이터이니 직접 수정하지 마세요 -->
+<ms2 feature="">
+	<basic feature="JobChange_01">
+		<ui icon="./Data/Resource/Image/skill/icon/10600221.png" attackType="1" />
+		<kinds subType="2" unrideOnUse="1" />
+		<stateAttr autoTargeting="0" />
+	</basic>
+	<level value="1" feature="JobChange_01">
+		<beginCondition probability="1" cooldownTime="5" useCoolDownShowUI="1">
+			<stat hp="1" />
+		</beginCondition>
+		<motion>
+			<motionProperty motionEffect="CH/Skill/HeavyGunner/Eff_HeavyGunner_LittleArmory_Cast_01.xml" holdWeapon="0" />
+			<attack point="p0" targetCount="1" cubeMagicPathID="106002211" attacktype="1">
+				<arrowProperty nonTarget="1" />
+				<damageProperty count="0" />
+				<conditionSkill splash="1" level="1" skillID="10600222" interval="300" immediateActive="1" fireCount="200" />
+			</attack>
+		</motion>
+	</level>
+</ms2>

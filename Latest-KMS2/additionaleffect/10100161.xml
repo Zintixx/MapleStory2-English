@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- 파싱해서 사용하는 데이터이니 직접 수정하지 마세요 -->
 <ms2>
-	<level>
-		<beginCondition>
+	<level feature="CharacterBalance_01">
+		<beginCondition probability="1">
 			<requireSkillCodes code="10100161" />
 		</beginCondition>
 		<BasicProperty level="1" buffSubType="2" durationTick="3000" skillGroupType="1" />
@@ -10,10 +10,26 @@
 		<StatusProperty>
 			<Stat parvalue="450" marvalue="450" />
 		</StatusProperty>
-		<UIProperty iconOnOff="0" />
+		<UIProperty icon="" iconOnOff="0" />
 		<conditionSkill level="1" skillID="10100124" skillTarget="1">
-			<beginCondition>
-				<owner hasBuffID="0" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="0" hasBuffCountCompare="Equals" eventCondition="4" />
+			<beginCondition probability="1">
+				<owner hasBuffID="0" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="0" hasBuffCountCompare="Equals" eventCondition="4" eventSkillID="" eventEffectID="" />
+			</beginCondition>
+		</conditionSkill>
+	</level>
+	<level>
+		<beginCondition probability="1">
+			<requireSkillCodes code="10100161" />
+		</beginCondition>
+		<BasicProperty level="1" buffSubType="2" durationTick="3000" skillGroupType="1" />
+		<MotionProperty abnormalImmuneBreak="5" />
+		<StatusProperty>
+			<Stat parvalue="450" marvalue="450" />
+		</StatusProperty>
+		<UIProperty icon="" iconOnOff="0" />
+		<conditionSkill level="1" skillID="10100124" skillTarget="1">
+			<beginCondition probability="1">
+				<owner hasBuffID="0" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="0" hasBuffCountCompare="Equals" eventCondition="4" eventSkillID="" eventEffectID="" />
 			</beginCondition>
 		</conditionSkill>
 	</level>

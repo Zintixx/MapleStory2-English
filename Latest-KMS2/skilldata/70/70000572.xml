@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 파싱해서 사용하는 데이터이니 직접 수정하지 마세요 -->
+<ms2 feature="">
+	<basic>
+		<ui attackType="1" />
+		<stateAttr ignoreReduceCooldown="1" />
+	</basic>
+	<level value="1">
+		<beginCondition probability="1">
+			<stat hp="1" />
+		</beginCondition>
+		<motion>
+			<attack point="p0" targetCount="50" direction="0" attacktype="1" releaseObjectWeaponOnHit="0" compulsionType="1,3">
+				<rangeProperty rangeType="cylinder" distance="14500" rangeAdd="0.000000,0.000000,3900.000000" height="9900" applyTarget="5" />
+				<damageProperty count="0" attackMaterial="106" />
+				<conditionSkill level="1" skillID="50005310" skillTarget="2" skillOwner="1">
+					<beginCondition probability="1">
+						<target hasBuffID="50005307" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="0" hasBuffCountCompare="Equals" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="1" skillID="50005316" skillTarget="2" skillOwner="1">
+					<beginCondition probability="1">
+						<target hasBuffID="50005307" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="0" hasBuffCountCompare="Equals" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="1" skillID="50005313" skillTarget="2" skillOwner="1">
+					<beginCondition probability="1">
+						<target hasBuffID="50005308" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="0" hasBuffCountCompare="Equals" />
+					</beginCondition>
+				</conditionSkill>
+			</attack>
+		</motion>
+	</level>
+</ms2>

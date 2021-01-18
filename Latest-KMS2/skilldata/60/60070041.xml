@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 파싱해서 사용하는 데이터이니 직접 수정하지 마세요 -->
+<ms2 feature="">
+	<basic>
+		<ui attackType="2" />
+		<kinds rangeType="2" element="7" />
+	</basic>
+	<level value="1">
+		<beginCondition probability="1">
+			<stat hp="1" />
+		</beginCondition>
+		<detectProperty rangeType="box" distance="750" height="200" width="300" />
+		<motion>
+			<motionProperty sequenceName="Attack_01_E" motionEffect="NPC/Skill/KnightHollowArmor/Eff_KnightHollowArmor_Attack_01_E_Cast.xml" />
+			<attack point="p0" targetCount="1" magicPathID="60030041" attacktype="2" brokenOffence="1" brokenForce="1" unrideOnHit="1">
+				<rangeProperty rangeType="box" distance="750" height="200" width="300" applyTarget="1" castTarget="1" />
+				<arrowProperty nonTarget="1" bounceType="3" bounceCount="90" collision="25.000000,30.000000,50.000000" effect="NPC/Skill/KnightHollowArmor/Eff_KnightHollowArmor_Attack_01_E_Ball_01.xml" effectRemain="NPC/Skill/KnightHollowArmor/Eff_KnightHollowArmor_Attack_01_E_Ball_01_Remain.xml" />
+				<damageProperty rate="0.3" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
+			</attack>
+			<attack point="p1" targetCount="4" magicPathID="60030042" attacktype="2" brokenOffence="1" brokenForce="1" unrideOnHit="1">
+				<rangeProperty rangeType="box" distance="750" height="200" width="300" applyTarget="1" castTarget="1" />
+				<arrowProperty nonTarget="1" collision="25.000000,30.000000,50.000000" effect="NPC/Skill/KnightHollowArmor/Eff_KnightHollowArmor_Attack_01_E_Ball_02.xml" effectRemain="NPC/Skill/KnightHollowArmor/Eff_KnightHollowArmor_Attack_01_E_Ball_02_Remain.xml" />
+				<damageProperty rate="0.3" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
+			</attack>
+		</motion>
+	</level>
+</ms2>

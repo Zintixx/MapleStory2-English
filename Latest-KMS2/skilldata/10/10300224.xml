@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 파싱해서 사용하는 데이터이니 직접 수정하지 마세요 -->
+<ms2 feature="">
+	<basic feature="JobChange_01">
+		<ui icon="./Data/Resource/Image/skill/icon/10400101.png" exceptUI="1" attackType="2" />
+		<kinds subType="2" rangeType="2" element="1" />
+		<stateAttr autoTargeting="0" />
+	</basic>
+	<level value="1" feature="JobChange_01">
+		<beginCondition probability="1">
+			<stat hp="1" />
+		</beginCondition>
+		<motion>
+			<motionProperty splashInvokeEffect="CH/Skill/Wizard/Eff_Wizard_Kindling_SplashInvoke_04.xml" />
+			<attack point="p0" targetCount="8" attacktype="2" hitImmuneBreak="5" brokenOffence="2" brokenForce="3" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="5" />
+				<rangeProperty rangeType="cylinder" distance="350" height="150" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="3.71" push="1" pushdistance="1" pushduration="0.3" pushEaseType="1" pushApplyField="1" attackMaterial="100" />
+				<conditionSkill level="1" skillID="10300222" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="0" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="0" hasBuffCountCompare="Equals" hasNotBuffID="10300227" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="1" skillID="10300226" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10300021" hasBuffLevel="0" hasBuffOwner="1" hasBuffCount="0" hasBuffCountCompare="Equals" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="1" skillID="10300227" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10300222" hasBuffLevel="0" hasBuffOwner="1" hasBuffCount="0" hasBuffCountCompare="Equals" />
+					</beginCondition>
+				</conditionSkill>
+			</attack>
+		</motion>
+	</level>
+	<level value="2" feature="JobChange_01">
+		<beginCondition probability="1">
+			<stat hp="1" />
+		</beginCondition>
+		<motion>
+			<motionProperty splashInvokeEffect="CH/Skill/Wizard/Eff_Wizard_Kindling_SplashInvoke_04.xml" />
+			<attack point="p0" targetCount="8" attacktype="2" hitImmuneBreak="5" brokenOffence="2" brokenForce="3" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="5" />
+				<rangeProperty rangeType="cylinder" distance="350" height="150" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="4.14" push="1" pushdistance="1" pushduration="0.3" pushEaseType="1" pushApplyField="1" attackMaterial="100" />
+				<conditionSkill level="2" skillID="10300222" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="0" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="0" hasBuffCountCompare="Equals" hasNotBuffID="10300227" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="2" skillID="10300226" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10300021" hasBuffLevel="0" hasBuffOwner="1" hasBuffCount="0" hasBuffCountCompare="Equals" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="2" skillID="10300227" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10300222" hasBuffLevel="0" hasBuffOwner="1" hasBuffCount="0" hasBuffCountCompare="Equals" />
+					</beginCondition>
+				</conditionSkill>
+			</attack>
+		</motion>
+	</level>
+	<level value="3" feature="JobChange_01">
+		<beginCondition probability="1">
+			<stat hp="1" />
+		</beginCondition>
+		<motion>
+			<motionProperty splashInvokeEffect="CH/Skill/Wizard/Eff_Wizard_Kindling_SplashInvoke_04.xml" />
+			<attack point="p0" targetCount="8" attacktype="2" hitImmuneBreak="5" brokenOffence="2" brokenForce="3" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="5" />
+				<rangeProperty rangeType="cylinder" distance="350" height="150" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="4.57" push="1" pushdistance="1" pushduration="0.3" pushEaseType="1" pushApplyField="1" attackMaterial="100" />
+				<conditionSkill level="3" skillID="10300222" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="0" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="0" hasBuffCountCompare="Equals" hasNotBuffID="10300227" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="3" skillID="10300226" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10300021" hasBuffLevel="0" hasBuffOwner="1" hasBuffCount="0" hasBuffCountCompare="Equals" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="3" skillID="10300227" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10300222" hasBuffLevel="0" hasBuffOwner="1" hasBuffCount="0" hasBuffCountCompare="Equals" />
+					</beginCondition>
+				</conditionSkill>
+			</attack>
+		</motion>
+	</level>
+	<level value="4" feature="JobChange_01">
+		<beginCondition probability="1">
+			<stat hp="1" />
+		</beginCondition>
+		<motion>
+			<motionProperty splashInvokeEffect="CH/Skill/Wizard/Eff_Wizard_Kindling_SplashInvoke_04.xml" />
+			<attack point="p0" targetCount="8" attacktype="2" hitImmuneBreak="5" brokenOffence="2" brokenForce="3" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="5" />
+				<rangeProperty rangeType="cylinder" distance="350" height="150" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="5" push="1" pushdistance="1" pushduration="0.3" pushEaseType="1" pushApplyField="1" attackMaterial="100" />
+				<conditionSkill level="4" skillID="10300222" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="0" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="0" hasBuffCountCompare="Equals" hasNotBuffID="10300227" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="4" skillID="10300226" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10300021" hasBuffLevel="0" hasBuffOwner="1" hasBuffCount="0" hasBuffCountCompare="Equals" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="4" skillID="10300227" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10300222" hasBuffLevel="0" hasBuffOwner="1" hasBuffCount="0" hasBuffCountCompare="Equals" />
+					</beginCondition>
+				</conditionSkill>
+			</attack>
+		</motion>
+	</level>
+	<level value="5" feature="JobChange_01">
+		<beginCondition probability="1">
+			<stat hp="1" />
+		</beginCondition>
+		<motion>
+			<motionProperty splashInvokeEffect="CH/Skill/Wizard/Eff_Wizard_Kindling_SplashInvoke_04.xml" />
+			<attack point="p0" targetCount="8" attacktype="2" hitImmuneBreak="5" brokenOffence="2" brokenForce="3" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="5" />
+				<rangeProperty rangeType="cylinder" distance="350" height="150" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="5.43" push="1" pushdistance="1" pushduration="0.3" pushEaseType="1" pushApplyField="1" attackMaterial="100" />
+				<conditionSkill level="5" skillID="10300222" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="0" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="0" hasBuffCountCompare="Equals" hasNotBuffID="10300227" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="5" skillID="10300226" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10300021" hasBuffLevel="0" hasBuffOwner="1" hasBuffCount="0" hasBuffCountCompare="Equals" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="5" skillID="10300227" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10300222" hasBuffLevel="0" hasBuffOwner="1" hasBuffCount="0" hasBuffCountCompare="Equals" />
+					</beginCondition>
+				</conditionSkill>
+			</attack>
+		</motion>
+	</level>
+	<level value="6" feature="JobChange_01">
+		<beginCondition probability="1">
+			<stat hp="1" />
+		</beginCondition>
+		<motion>
+			<motionProperty splashInvokeEffect="CH/Skill/Wizard/Eff_Wizard_Kindling_SplashInvoke_04.xml" />
+			<attack point="p0" targetCount="8" attacktype="2" hitImmuneBreak="5" brokenOffence="2" brokenForce="3" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="5" />
+				<rangeProperty rangeType="cylinder" distance="350" height="150" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="5.86" push="1" pushdistance="1" pushduration="0.3" pushEaseType="1" pushApplyField="1" attackMaterial="100" />
+				<conditionSkill level="6" skillID="10300222" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="0" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="0" hasBuffCountCompare="Equals" hasNotBuffID="10300227" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="6" skillID="10300226" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10300021" hasBuffLevel="0" hasBuffOwner="1" hasBuffCount="0" hasBuffCountCompare="Equals" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="6" skillID="10300227" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10300222" hasBuffLevel="0" hasBuffOwner="1" hasBuffCount="0" hasBuffCountCompare="Equals" />
+					</beginCondition>
+				</conditionSkill>
+			</attack>
+		</motion>
+	</level>
+	<level value="7" feature="JobChange_01">
+		<beginCondition probability="1">
+			<stat hp="1" />
+		</beginCondition>
+		<motion>
+			<motionProperty splashInvokeEffect="CH/Skill/Wizard/Eff_Wizard_Kindling_SplashInvoke_04.xml" />
+			<attack point="p0" targetCount="8" attacktype="2" hitImmuneBreak="5" brokenOffence="2" brokenForce="3" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="5" />
+				<rangeProperty rangeType="cylinder" distance="350" height="150" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="6.29" push="1" pushdistance="1" pushduration="0.3" pushEaseType="1" pushApplyField="1" attackMaterial="100" />
+				<conditionSkill level="7" skillID="10300222" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="0" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="0" hasBuffCountCompare="Equals" hasNotBuffID="10300227" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="7" skillID="10300226" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10300021" hasBuffLevel="0" hasBuffOwner="1" hasBuffCount="0" hasBuffCountCompare="Equals" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="7" skillID="10300227" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10300222" hasBuffLevel="0" hasBuffOwner="1" hasBuffCount="0" hasBuffCountCompare="Equals" />
+					</beginCondition>
+				</conditionSkill>
+			</attack>
+		</motion>
+	</level>
+	<level value="8" feature="JobChange_01">
+		<beginCondition probability="1">
+			<stat hp="1" />
+		</beginCondition>
+		<motion>
+			<motionProperty splashInvokeEffect="CH/Skill/Wizard/Eff_Wizard_Kindling_SplashInvoke_04.xml" />
+			<attack point="p0" targetCount="8" attacktype="2" hitImmuneBreak="5" brokenOffence="2" brokenForce="3" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="5" />
+				<rangeProperty rangeType="cylinder" distance="350" height="150" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="6.72" push="1" pushdistance="1" pushduration="0.3" pushEaseType="1" pushApplyField="1" attackMaterial="100" />
+				<conditionSkill level="8" skillID="10300222" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="0" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="0" hasBuffCountCompare="Equals" hasNotBuffID="10300227" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="8" skillID="10300226" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10300021" hasBuffLevel="0" hasBuffOwner="1" hasBuffCount="0" hasBuffCountCompare="Equals" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="8" skillID="10300227" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10300222" hasBuffLevel="0" hasBuffOwner="1" hasBuffCount="0" hasBuffCountCompare="Equals" />
+					</beginCondition>
+				</conditionSkill>
+			</attack>
+		</motion>
+	</level>
+	<level value="9" feature="JobChange_01">
+		<beginCondition probability="1">
+			<stat hp="1" />
+		</beginCondition>
+		<motion>
+			<motionProperty splashInvokeEffect="CH/Skill/Wizard/Eff_Wizard_Kindling_SplashInvoke_04.xml" />
+			<attack point="p0" targetCount="8" attacktype="2" hitImmuneBreak="5" brokenOffence="2" brokenForce="3" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="5" />
+				<rangeProperty rangeType="cylinder" distance="350" height="150" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="7.15" push="1" pushdistance="1" pushduration="0.3" pushEaseType="1" pushApplyField="1" attackMaterial="100" />
+				<conditionSkill level="9" skillID="10300222" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="0" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="0" hasBuffCountCompare="Equals" hasNotBuffID="10300227" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="9" skillID="10300226" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10300021" hasBuffLevel="0" hasBuffOwner="1" hasBuffCount="0" hasBuffCountCompare="Equals" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="9" skillID="10300227" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10300222" hasBuffLevel="0" hasBuffOwner="1" hasBuffCount="0" hasBuffCountCompare="Equals" />
+					</beginCondition>
+				</conditionSkill>
+			</attack>
+		</motion>
+	</level>
+	<level value="10" feature="JobChange_01">
+		<beginCondition probability="1">
+			<stat hp="1" />
+		</beginCondition>
+		<motion>
+			<motionProperty splashInvokeEffect="CH/Skill/Wizard/Eff_Wizard_Kindling_SplashInvoke_04.xml" />
+			<attack point="p0" targetCount="8" attacktype="2" hitImmuneBreak="5" brokenOffence="2" brokenForce="3" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="5" />
+				<rangeProperty rangeType="cylinder" distance="350" height="150" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="7.58" push="1" pushdistance="1" pushduration="0.3" pushEaseType="1" pushApplyField="1" attackMaterial="100" />
+				<conditionSkill level="10" skillID="10300222" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="0" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="0" hasBuffCountCompare="Equals" hasNotBuffID="10300227" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="10" skillID="10300226" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10300021" hasBuffLevel="0" hasBuffOwner="1" hasBuffCount="0" hasBuffCountCompare="Equals" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="10" skillID="10300227" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10300222" hasBuffLevel="0" hasBuffOwner="1" hasBuffCount="0" hasBuffCountCompare="Equals" />
+					</beginCondition>
+				</conditionSkill>
+			</attack>
+		</motion>
+	</level>
+	<level value="11" feature="JobChange_01">
+		<beginCondition probability="1">
+			<stat hp="1" />
+		</beginCondition>
+		<motion>
+			<motionProperty splashInvokeEffect="CH/Skill/Wizard/Eff_Wizard_Kindling_SplashInvoke_04.xml" />
+			<attack point="p0" targetCount="8" attacktype="2" hitImmuneBreak="5" brokenOffence="2" brokenForce="3" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="5" />
+				<rangeProperty rangeType="cylinder" distance="350" height="150" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="8.01" push="1" pushdistance="1" pushduration="0.3" pushEaseType="1" pushApplyField="1" attackMaterial="100" />
+				<conditionSkill level="11" skillID="10300222" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="0" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="0" hasBuffCountCompare="Equals" hasNotBuffID="10300227" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="11" skillID="10300226" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10300021" hasBuffLevel="0" hasBuffOwner="1" hasBuffCount="0" hasBuffCountCompare="Equals" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="11" skillID="10300227" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10300222" hasBuffLevel="0" hasBuffOwner="1" hasBuffCount="0" hasBuffCountCompare="Equals" />
+					</beginCondition>
+				</conditionSkill>
+			</attack>
+		</motion>
+	</level>
+	<level value="12" feature="JobChange_01">
+		<beginCondition probability="1">
+			<stat hp="1" />
+		</beginCondition>
+		<motion>
+			<motionProperty splashInvokeEffect="CH/Skill/Wizard/Eff_Wizard_Kindling_SplashInvoke_04.xml" />
+			<attack point="p0" targetCount="8" attacktype="2" hitImmuneBreak="5" brokenOffence="2" brokenForce="3" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="5" />
+				<rangeProperty rangeType="cylinder" distance="350" height="150" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="8.44" push="1" pushdistance="1" pushduration="0.3" pushEaseType="1" pushApplyField="1" attackMaterial="100" />
+				<conditionSkill level="12" skillID="10300222" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="0" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="0" hasBuffCountCompare="Equals" hasNotBuffID="10300227" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="12" skillID="10300226" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10300021" hasBuffLevel="0" hasBuffOwner="1" hasBuffCount="0" hasBuffCountCompare="Equals" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="12" skillID="10300227" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<target hasBuffID="10300222" hasBuffLevel="0" hasBuffOwner="1" hasBuffCount="0" hasBuffCountCompare="Equals" />
+					</beginCondition>
+				</conditionSkill>
+			</attack>
+		</motion>
+	</level>
+</ms2>

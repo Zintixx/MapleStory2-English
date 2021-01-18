@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 파싱해서 사용하는 데이터이니 직접 수정하지 마세요 -->
+<ms2 feature="">
+	<basic>
+		<ui attackType="1" />
+	</basic>
+	<level value="1">
+		<beginCondition probability="1">
+			<stat hp="1" />
+		</beginCondition>
+		<detectProperty rangeType="cylinder" distance="100" height="100" />
+		<motion>
+			<motionProperty sequenceName="Attack_Idle_A" />
+			<attack point="p0" targetCount="4" magicPathID="5408" cubeMagicPathID="5409" attacktype="1" brokenOffence="1" unrideOnHit="1">
+				<rangeProperty rangeType="cylinder" distance="300" height="100" applyTarget="2" castTarget="1" />
+				<arrowProperty nonTarget="1" effect="NPC/Skill/BullArmorRed/Eff_BullArmorRed_PillarCrashCheck_MineTrap_Ball.xml" />
+				<damageProperty count="0" rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="2" />
+				<conditionSkill splash="1" level="1" skillID="50100864" delay="99999000" />
+			</attack>
+		</motion>
+	</level>
+</ms2>

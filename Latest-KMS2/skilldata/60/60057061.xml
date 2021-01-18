@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 파싱해서 사용하는 데이터이니 직접 수정하지 마세요 -->
+<ms2 feature="">
+	<basic>
+		<ui attackType="1" />
+		<kinds rangeType="1" element="5" />
+	</basic>
+	<level value="1">
+		<beginCondition probability="1">
+			<stat hp="1" />
+		</beginCondition>
+		<detectProperty rangeType="box" distance="1500" height="200" width="200" />
+		<motion>
+			<motionProperty sequenceName="Attack_01_A" sequenceSpeed="0.5" motionEffect="NPC/Skill/DragonDevilBigHead/Eff_DragonDevilBigHeadPurple_Attack_01_A.xml" />
+			<attack point="p0" targetCount="1" attacktype="1" brokenOffence="2" brokenForce="3" unrideOnHit="1">
+				<rangeProperty rangeType="box" distance="1500" height="200" width="200" applyTarget="1" castTarget="1" />
+				<arrowProperty nonTarget="1" effect="NPC/Skill/Temp/Eff_Temp.xml" />
+				<damageProperty count="0" attackMaterial="104" />
+			</attack>
+		</motion>
+		<motion>
+			<motionProperty sequenceName="Attack_02_A" motionEffect="NPC/Skill/DragonDevilBigHead/Eff_DragonDevilBigHeadPurple_Attack_02_A.xml" faceTarget="0" />
+			<attack point="p0" targetCount="1" magicPathID="60013061" cubeMagicPathID="600130611" attacktype="1" brokenOffence="2" brokenForce="3" unrideOnHit="1">
+				<rangeProperty rangeType="box" distance="1500" height="200" width="200" applyTarget="1" castTarget="1" />
+				<arrowProperty nonTarget="1" collision="50.000000,50.000000,50.000000" effect="NPC/Skill/DragonDevilBigHead/Eff_DragonDevilBigHeadPurple_Attack_02_A_Ball.xml" />
+				<damageProperty rate="0.3" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="104" />
+				<conditionSkill splash="1" level="1" skillID="60013062" delay="1500" />
+			</attack>
+		</motion>
+	</level>
+</ms2>

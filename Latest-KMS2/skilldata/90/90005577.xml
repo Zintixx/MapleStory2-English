@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 파싱해서 사용하는 데이터이니 직접 수정하지 마세요 -->
+<ms2 feature="">
+	<basic>
+		<ui attackType="3" />
+		<kinds type="3" subType="5" releaseObjectWeapon="0" />
+		<stateAttr battle="0" ignoreReduceCooldown="1" />
+	</basic>
+	<level value="1">
+		<beginCondition probability="1" cooldownTime="0.5">
+			<stat hp="1" />
+		</beginCondition>
+		<motion>
+			<motionProperty motionEffect="Item/Use/Eff_StunGrenadeSplash_Cast_01.xml" splashInvokeEffect="Item/Use/Eff_StunGrenade_Invoke_01.xml" />
+			<attack point="p0" targetCount="5" attacktype="3" hitImmuneBreak="5" unrideOnHit="1">
+				<rangeProperty rangeType="cylinder" distance="200" height="300" applyTarget="1" />
+				<damageProperty rate="17.37" attackMaterial="1000" />
+			</attack>
+		</motion>
+	</level>
+</ms2>

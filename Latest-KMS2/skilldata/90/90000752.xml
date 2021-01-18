@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 파싱해서 사용하는 데이터이니 직접 수정하지 마세요 -->
+<ms2 feature="">
+	<basic>
+		<ui icon="./Data/Resource/Image/item/icon/20000685.png" attackType="3" />
+		<kinds type="3" subType="5" unrideOnUse="1" />
+		<stateAttr battle="0" autoTargeting="0" cooldownGroupID="90000557" ignoreReduceCooldown="1" />
+	</basic>
+	<level value="1">
+		<beginCondition probability="1" cooldownTime="240" useCoolDownShowUI="1">
+			<requireMapCodes code="2000410" />
+			<stat hp="1" />
+		</beginCondition>
+		<targetItem>
+			<item id="20000876" count="1" />
+		</targetItem>
+		<conditionSkill level="1" skillID="90000766" skillTarget="1">
+			<beginCondition probability="1" allowBattleRidingState="1" />
+		</conditionSkill>
+		<motion>
+			<motionProperty motionEffect="Item/Use/Eff_DarkWind_Use.xml" holdWeapon="0" />
+			<attack point="p0" targetCount="1" cubeMagicPathID="900006921" attacktype="3" hitImmuneBreak="1">
+				<arrowProperty nonTarget="1" />
+				<damageProperty count="0" />
+				<conditionSkill splash="1" level="1" skillID="90000753" delay="3500" interval="1000" fireCount="10" />
+			</attack>
+		</motion>
+	</level>
+</ms2>

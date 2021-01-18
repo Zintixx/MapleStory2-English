@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 파싱해서 사용하는 데이터이니 직접 수정하지 마세요 -->
+<ms2 feature="">
+	<basic>
+		<ui attackType="2" />
+		<kinds rangeType="2" element="5" />
+	</basic>
+	<level value="1">
+		<beginCondition probability="1">
+			<stat hp="1" />
+		</beginCondition>
+		<motion>
+			<motionProperty sequenceName="Attack_01_C" motionEffect="NPC/Skill/DarkSpirit/Eff_DarkSpirit_Attack_01_C.xml" faceTarget="0" />
+			<attack point="p0" targetCount="1" magicPathID="5536" direction="0" attacktype="2" unrideOnHit="1">
+				<rangeProperty rangeType="box" distance="9900" rangeAdd="0.000000,0.000000,100.000000" height="200" width="300" applyTarget="1" castTarget="1" />
+				<arrowProperty nonTarget="1" bounceCount="50" collision="120.000000,40.000000,100.000000" collisionAdd="0.000000,35.000000,50.000000" effect="NPC/Skill/DarkSpirit/Eff_DarkSpirit_Attack_01_C_Throw_Ball.xml" effectRemain="NPC/Skill/DarkSpirit/Eff_DarkSpirit_Attack_01_C_Throw_Ball_Remain.xml" />
+				<damageProperty rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="106" />
+				<conditionSkill level="1" skillID="50000510" skillTarget="2" skillOwner="1">
+					<beginCondition probability="1">
+						<target hasBuffID="50000910" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="0" hasBuffCountCompare="Equals" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="1" skillID="50000195" skillTarget="2" skillOwner="1">
+					<beginCondition probability="1">
+						<target hasBuffID="50000510" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="0" hasBuffCountCompare="Equals" />
+					</beginCondition>
+				</conditionSkill>
+			</attack>
+		</motion>
+	</level>
+</ms2>

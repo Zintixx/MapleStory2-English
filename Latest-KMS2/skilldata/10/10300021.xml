@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 파싱해서 사용하는 데이터이니 직접 수정하지 마세요 -->
+<ms2 feature="">
+	<basic>
+		<ui icon="./Data/Resource/Image/skill/icon/10300021.png" attackType="2" />
+		<kinds subType="2" rangeType="2" jump="10300021" element="1" unrideOnUse="1" />
+		<stateAttr keyIsDown="1" useDefaultSkill="1" ignoreReduceCooldown="1" />
+	</basic>
+	<level value="1" feature="JobChange_02">
+		<beginCondition probability="1">
+			<stat hp="1" />
+			<weapon lh="0" rh="52" />
+		</beginCondition>
+		<autoTargeting autoTargetingMaxDegree="45" />
+		<push back="150" />
+		<consume>
+			<stat sp="25" />
+		</consume>
+		<upgrade level="10" />
+		<motion>
+			<motionProperty sequenceName="Wizard_FlameWave_A" selfInputCombo="selfinputcombo" strTagEffects="e0=CH/Skill/Wizard/Eff_Wizard_FlameWave_Cast_01.xml" />
+			<attack point="p0" pointGroupID="10300051" targetCount="8" attacktype="2" brokenOffence="1" unrideOnHit="1">
+				<rangeProperty rangeType="frustum" distance="800" height="150" width="200" endWidth="600" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="4" effectHit="CH/Common/Eff_Common_Fire_Hit.xml" attackMaterial="101" />
+				<conditionSkill level="1" skillID="10300021" skillTarget="2" skillOwner="1" dependOnDamageCount="1" />
+				<conditionSkill level="1" skillID="10300286" skillTarget="1" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<caster hasBuffID="10300281" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="0" hasBuffCountCompare="Equals" />
+					</beginCondition>
+				</conditionSkill>
+			</attack>
+		</motion>
+	</level>
+	<level value="2" feature="JobChange_02">
+		<beginCondition probability="1">
+			<stat hp="1" />
+			<weapon lh="0" rh="52" />
+		</beginCondition>
+		<autoTargeting autoTargetingMaxDegree="45" />
+		<push back="150" />
+		<consume>
+			<stat sp="25" />
+		</consume>
+		<upgrade level="12" />
+		<motion>
+			<motionProperty sequenceName="Wizard_FlameWave_A" selfInputCombo="selfinputcombo" strTagEffects="e0=CH/Skill/Wizard/Eff_Wizard_FlameWave_Cast_01.xml" />
+			<attack point="p0" pointGroupID="10300051" targetCount="8" attacktype="2" brokenOffence="1" unrideOnHit="1">
+				<rangeProperty rangeType="frustum" distance="800" height="150" width="200" endWidth="600" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="4.42" effectHit="CH/Common/Eff_Common_Fire_Hit.xml" attackMaterial="101" />
+				<conditionSkill level="2" skillID="10300021" skillTarget="2" skillOwner="1" dependOnDamageCount="1" />
+				<conditionSkill level="1" skillID="10300286" skillTarget="1" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<caster hasBuffID="10300281" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="0" hasBuffCountCompare="Equals" />
+					</beginCondition>
+				</conditionSkill>
+			</attack>
+		</motion>
+	</level>
+	<level value="3" feature="JobChange_02">
+		<beginCondition probability="1">
+			<stat hp="1" />
+			<weapon lh="0" rh="52" />
+		</beginCondition>
+		<autoTargeting autoTargetingMaxDegree="45" />
+		<push back="150" />
+		<consume>
+			<stat sp="25" />
+		</consume>
+		<upgrade level="14" />
+		<motion>
+			<motionProperty sequenceName="Wizard_FlameWave_A" selfInputCombo="selfinputcombo" strTagEffects="e0=CH/Skill/Wizard/Eff_Wizard_FlameWave_Cast_01.xml" />
+			<attack point="p0" pointGroupID="10300051" targetCount="8" attacktype="2" brokenOffence="1" unrideOnHit="1">
+				<rangeProperty rangeType="frustum" distance="800" height="150" width="200" endWidth="600" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="4.84" effectHit="CH/Common/Eff_Common_Fire_Hit.xml" attackMaterial="101" />
+				<conditionSkill level="3" skillID="10300021" skillTarget="2" skillOwner="1" dependOnDamageCount="1" />
+				<conditionSkill level="1" skillID="10300286" skillTarget="1" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<caster hasBuffID="10300281" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="0" hasBuffCountCompare="Equals" />
+					</beginCondition>
+				</conditionSkill>
+			</attack>
+		</motion>
+	</level>
+	<level value="4" feature="JobChange_02">
+		<beginCondition probability="1">
+			<stat hp="1" />
+			<weapon lh="0" rh="52" />
+		</beginCondition>
+		<autoTargeting autoTargetingMaxDegree="45" />
+		<push back="150" />
+		<consume>
+			<stat sp="25" />
+		</consume>
+		<upgrade level="16" />
+		<motion>
+			<motionProperty sequenceName="Wizard_FlameWave_A" selfInputCombo="selfinputcombo" strTagEffects="e0=CH/Skill/Wizard/Eff_Wizard_FlameWave_Cast_01.xml" />
+			<attack point="p0" pointGroupID="10300051" targetCount="8" attacktype="2" brokenOffence="1" unrideOnHit="1">
+				<rangeProperty rangeType="frustum" distance="800" height="150" width="200" endWidth="600" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="5.26" effectHit="CH/Common/Eff_Common_Fire_Hit.xml" attackMaterial="101" />
+				<conditionSkill level="4" skillID="10300021" skillTarget="2" skillOwner="1" dependOnDamageCount="1" />
+				<conditionSkill level="1" skillID="10300286" skillTarget="1" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<caster hasBuffID="10300281" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="0" hasBuffCountCompare="Equals" />
+					</beginCondition>
+				</conditionSkill>
+			</attack>
+		</motion>
+	</level>
+	<level value="5" feature="JobChange_02">
+		<beginCondition probability="1">
+			<stat hp="1" />
+			<weapon lh="0" rh="52" />
+		</beginCondition>
+		<autoTargeting autoTargetingMaxDegree="45" />
+		<push back="150" />
+		<consume>
+			<stat sp="25" />
+		</consume>
+		<upgrade level="18" />
+		<motion>
+			<motionProperty sequenceName="Wizard_FlameWave_A" selfInputCombo="selfinputcombo" strTagEffects="e0=CH/Skill/Wizard/Eff_Wizard_FlameWave_Cast_01.xml" />
+			<attack point="p0" pointGroupID="10300051" targetCount="8" attacktype="2" brokenOffence="1" unrideOnHit="1">
+				<rangeProperty rangeType="frustum" distance="800" height="150" width="200" endWidth="600" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="5.68" effectHit="CH/Common/Eff_Common_Fire_Hit.xml" attackMaterial="101" />
+				<conditionSkill level="5" skillID="10300021" skillTarget="2" skillOwner="1" dependOnDamageCount="1" />
+				<conditionSkill level="1" skillID="10300286" skillTarget="1" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<caster hasBuffID="10300281" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="0" hasBuffCountCompare="Equals" />
+					</beginCondition>
+				</conditionSkill>
+			</attack>
+		</motion>
+	</level>
+	<level value="6" feature="JobChange_02">
+		<beginCondition probability="1">
+			<stat hp="1" />
+			<weapon lh="0" rh="52" />
+		</beginCondition>
+		<autoTargeting autoTargetingMaxDegree="45" />
+		<push back="150" />
+		<consume>
+			<stat sp="25" />
+		</consume>
+		<upgrade level="20" />
+		<motion>
+			<motionProperty sequenceName="Wizard_FlameWave_A" selfInputCombo="selfinputcombo" strTagEffects="e0=CH/Skill/Wizard/Eff_Wizard_FlameWave_Cast_01.xml" />
+			<attack point="p0" pointGroupID="10300051" targetCount="8" attacktype="2" brokenOffence="1" unrideOnHit="1">
+				<rangeProperty rangeType="frustum" distance="800" height="150" width="200" endWidth="600" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="6.1" effectHit="CH/Common/Eff_Common_Fire_Hit.xml" attackMaterial="101" />
+				<conditionSkill level="6" skillID="10300021" skillTarget="2" skillOwner="1" dependOnDamageCount="1" />
+				<conditionSkill level="1" skillID="10300286" skillTarget="1" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<caster hasBuffID="10300281" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="0" hasBuffCountCompare="Equals" />
+					</beginCondition>
+				</conditionSkill>
+			</attack>
+		</motion>
+	</level>
+	<level value="7" feature="JobChange_02">
+		<beginCondition probability="1">
+			<stat hp="1" />
+			<weapon lh="0" rh="52" />
+		</beginCondition>
+		<autoTargeting autoTargetingMaxDegree="45" />
+		<push back="150" />
+		<consume>
+			<stat sp="25" />
+		</consume>
+		<upgrade level="22" />
+		<motion>
+			<motionProperty sequenceName="Wizard_FlameWave_A" selfInputCombo="selfinputcombo" strTagEffects="e0=CH/Skill/Wizard/Eff_Wizard_FlameWave_Cast_01.xml" />
+			<attack point="p0" pointGroupID="10300051" targetCount="8" attacktype="2" brokenOffence="1" unrideOnHit="1">
+				<rangeProperty rangeType="frustum" distance="800" height="150" width="200" endWidth="600" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="6.52" effectHit="CH/Common/Eff_Common_Fire_Hit.xml" attackMaterial="101" />
+				<conditionSkill level="7" skillID="10300021" skillTarget="2" skillOwner="1" dependOnDamageCount="1" />
+				<conditionSkill level="1" skillID="10300286" skillTarget="1" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<caster hasBuffID="10300281" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="0" hasBuffCountCompare="Equals" />
+					</beginCondition>
+				</conditionSkill>
+			</attack>
+		</motion>
+	</level>
+	<level value="8" feature="JobChange_02">
+		<beginCondition probability="1">
+			<stat hp="1" />
+			<weapon lh="0" rh="52" />
+		</beginCondition>
+		<autoTargeting autoTargetingMaxDegree="45" />
+		<push back="150" />
+		<consume>
+			<stat sp="25" />
+		</consume>
+		<upgrade level="24" />
+		<motion>
+			<motionProperty sequenceName="Wizard_FlameWave_A" selfInputCombo="selfinputcombo" strTagEffects="e0=CH/Skill/Wizard/Eff_Wizard_FlameWave_Cast_01.xml" />
+			<attack point="p0" pointGroupID="10300051" targetCount="8" attacktype="2" brokenOffence="1" unrideOnHit="1">
+				<rangeProperty rangeType="frustum" distance="800" height="150" width="200" endWidth="600" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="6.94" effectHit="CH/Common/Eff_Common_Fire_Hit.xml" attackMaterial="101" />
+				<conditionSkill level="8" skillID="10300021" skillTarget="2" skillOwner="1" dependOnDamageCount="1" />
+				<conditionSkill level="1" skillID="10300286" skillTarget="1" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<caster hasBuffID="10300281" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="0" hasBuffCountCompare="Equals" />
+					</beginCondition>
+				</conditionSkill>
+			</attack>
+		</motion>
+	</level>
+	<level value="9" feature="JobChange_02">
+		<beginCondition probability="1">
+			<stat hp="1" />
+			<weapon lh="0" rh="52" />
+		</beginCondition>
+		<autoTargeting autoTargetingMaxDegree="45" />
+		<push back="150" />
+		<consume>
+			<stat sp="25" />
+		</consume>
+		<upgrade level="26" />
+		<motion>
+			<motionProperty sequenceName="Wizard_FlameWave_A" selfInputCombo="selfinputcombo" strTagEffects="e0=CH/Skill/Wizard/Eff_Wizard_FlameWave_Cast_01.xml" />
+			<attack point="p0" pointGroupID="10300051" targetCount="8" attacktype="2" brokenOffence="1" unrideOnHit="1">
+				<rangeProperty rangeType="frustum" distance="800" height="150" width="200" endWidth="600" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="7.36" effectHit="CH/Common/Eff_Common_Fire_Hit.xml" attackMaterial="101" />
+				<conditionSkill level="9" skillID="10300021" skillTarget="2" skillOwner="1" dependOnDamageCount="1" />
+				<conditionSkill level="1" skillID="10300286" skillTarget="1" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<caster hasBuffID="10300281" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="0" hasBuffCountCompare="Equals" />
+					</beginCondition>
+				</conditionSkill>
+			</attack>
+		</motion>
+	</level>
+	<level value="10" feature="JobChange_02">
+		<beginCondition probability="1">
+			<stat hp="1" />
+			<weapon lh="0" rh="52" />
+		</beginCondition>
+		<autoTargeting autoTargetingMaxDegree="45" />
+		<push back="150" />
+		<consume>
+			<stat sp="25" />
+		</consume>
+		<upgrade level="28" />
+		<motion>
+			<motionProperty sequenceName="Wizard_FlameWave_A" selfInputCombo="selfinputcombo" strTagEffects="e0=CH/Skill/Wizard/Eff_Wizard_FlameWave_Cast_01.xml" />
+			<attack point="p0" pointGroupID="10300051" targetCount="8" attacktype="2" brokenOffence="1" unrideOnHit="1">
+				<rangeProperty rangeType="frustum" distance="800" height="150" width="200" endWidth="600" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="7.78" effectHit="CH/Common/Eff_Common_Fire_Hit.xml" attackMaterial="101" />
+				<conditionSkill level="10" skillID="10300021" skillTarget="2" skillOwner="1" dependOnDamageCount="1" />
+				<conditionSkill level="1" skillID="10300286" skillTarget="1" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<caster hasBuffID="10300281" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="0" hasBuffCountCompare="Equals" />
+					</beginCondition>
+				</conditionSkill>
+			</attack>
+		</motion>
+	</level>
+	<level value="11" feature="JobChange_02">
+		<beginCondition probability="1">
+			<stat hp="1" />
+			<weapon lh="0" rh="52" />
+		</beginCondition>
+		<autoTargeting autoTargetingMaxDegree="45" />
+		<push back="150" />
+		<consume>
+			<stat sp="25" />
+		</consume>
+		<upgrade level="30" />
+		<motion>
+			<motionProperty sequenceName="Wizard_FlameWave_A" selfInputCombo="selfinputcombo" strTagEffects="e0=CH/Skill/Wizard/Eff_Wizard_FlameWave_Cast_01.xml" />
+			<attack point="p0" pointGroupID="10300051" targetCount="8" attacktype="2" brokenOffence="1" unrideOnHit="1">
+				<rangeProperty rangeType="frustum" distance="800" height="150" width="200" endWidth="600" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="8.2" effectHit="CH/Common/Eff_Common_Fire_Hit.xml" attackMaterial="101" />
+				<conditionSkill level="11" skillID="10300021" skillTarget="2" skillOwner="1" dependOnDamageCount="1" />
+				<conditionSkill level="1" skillID="10300286" skillTarget="1" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<caster hasBuffID="10300281" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="0" hasBuffCountCompare="Equals" />
+					</beginCondition>
+				</conditionSkill>
+			</attack>
+		</motion>
+	</level>
+	<level value="12" feature="JobChange_02">
+		<beginCondition probability="1">
+			<stat hp="1" />
+			<weapon lh="0" rh="52" />
+		</beginCondition>
+		<autoTargeting autoTargetingMaxDegree="45" />
+		<push back="150" />
+		<consume>
+			<stat sp="25" />
+		</consume>
+		<upgrade level="32" />
+		<motion>
+			<motionProperty sequenceName="Wizard_FlameWave_A" selfInputCombo="selfinputcombo" strTagEffects="e0=CH/Skill/Wizard/Eff_Wizard_FlameWave_Cast_01.xml" />
+			<attack point="p0" pointGroupID="10300051" targetCount="8" attacktype="2" brokenOffence="1" unrideOnHit="1">
+				<rangeProperty rangeType="frustum" distance="800" height="150" width="200" endWidth="600" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="8.62" effectHit="CH/Common/Eff_Common_Fire_Hit.xml" attackMaterial="101" />
+				<conditionSkill level="12" skillID="10300021" skillTarget="2" skillOwner="1" dependOnDamageCount="1" />
+				<conditionSkill level="1" skillID="10300286" skillTarget="1" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1">
+						<caster hasBuffID="10300281" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="0" hasBuffCountCompare="Equals" />
+					</beginCondition>
+				</conditionSkill>
+			</attack>
+		</motion>
+	</level>
+</ms2>

@@ -1,6 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- 파싱해서 사용하는 데이터이니 직접 수정하지 마세요 -->
 <ms2>
+	<level feature="CharacterBalance_01">
+		<BasicProperty level="1" buffType="2" buffSubType="2" buffCategory="8" durationTick="6000" resetCondition="2" maxBuffCount="10" casterIndividualEffect="1" clearEffectFromPVPZone="1" skillGroupType="1" />
+		<MotionProperty keepEffect="Additional/Slow/Eff_Additional_IceSlow_Keep.xml" stopEffect="Additional/Slow/Eff_Additional_IceSlow_Stop.xml" abnormalImmuneBreak="5" />
+		<StatusProperty>
+			<Stat msprate="-0.04" jmprate="-0.04" rmsprate="-0.04" />
+		</StatusProperty>
+		<UIProperty icon="./Data/Resource/Image/skill/icon/10500031_buff.png" iconOnOff="0" />
+		<conditionSkill level="1" skillID="10500032" skillTarget="1">
+			<beginCondition probability="1">
+				<owner hasBuffID="10500033" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="10" hasBuffCountCompare="Equals" eventCondition="10" eventSkillID="" eventEffectID="" />
+			</beginCondition>
+		</conditionSkill>
+	</level>
 	<level>
 		<BasicProperty level="1" buffType="2" buffSubType="2" buffCategory="8" durationTick="6000" resetCondition="2" maxBuffCount="10" casterIndividualEffect="1" clearEffectFromPVPZone="1" skillGroupType="1" />
 		<MotionProperty keepEffect="Additional/Slow/Eff_Additional_IceSlow_Keep.xml" stopEffect="Additional/Slow/Eff_Additional_IceSlow_Stop.xml" abnormalImmuneBreak="5" />
@@ -9,8 +22,8 @@
 		</StatusProperty>
 		<UIProperty icon="./Data/Resource/Image/skill/icon/10500031_buff.png" iconOnOff="0" />
 		<conditionSkill level="1" skillID="10500032" skillTarget="1">
-			<beginCondition>
-				<owner hasBuffID="10500033" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="10" hasBuffCountCompare="Equals" eventCondition="10" />
+			<beginCondition probability="1">
+				<owner hasBuffID="10500033" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="10" hasBuffCountCompare="Equals" eventCondition="10" eventSkillID="" eventEffectID="" />
 			</beginCondition>
 		</conditionSkill>
 	</level>

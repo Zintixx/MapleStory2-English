@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 파싱해서 사용하는 데이터이니 직접 수정하지 마세요 -->
+<ms2 feature="">
+	<basic>
+		<ui attackType="1" />
+		<kinds rangeType="1" element="7" />
+	</basic>
+	<level value="1">
+		<beginCondition probability="1">
+			<stat hp="1" />
+		</beginCondition>
+		<detectProperty rangeType="cylinder" distance="1000" height="200" />
+		<motion>
+			<motionProperty splashInvokeEffect="NPC/Skill/TigerHugeWildToothBlack/Eff_TigerHugeWildToothBlack_Attack_01_F_Invoke.xml" faceTarget="0" />
+			<attack point="p0" targetCount="5" attacktype="1" hitImmuneBreak="1" brokenOffence="1" brokenForce="1" unrideOnHit="1">
+				<rangeProperty rangeType="cylinder" distance="1000" height="200" applyTarget="1" castTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="0.3" push="1" pushdistance="300" pushduration="0.3" pushEaseType="1" attackMaterial="1" />
+			</attack>
+		</motion>
+	</level>
+</ms2>

@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 파싱해서 사용하는 데이터이니 직접 수정하지 마세요 -->
+<ms2 feature="">
+	<basic feature="JobChange_02">
+		<ui icon="./Data/Resource/Image/skill/icon/10100291.png" exceptUI="1" attackType="1" />
+		<kinds subType="2" rangeType="1" continue="1" immediateActive="1" unrideOnUse="1" />
+		<stateAttr superArmor="3" superArmorApplyFieldType="1" autoTargeting="0" moveType="1" ignoreReduceCooldown="1" />
+	</basic>
+	<level value="1" feature="JobChange_02">
+		<beginCondition probability="1">
+			<stat hp="1" />
+			<weapon lh="41" rh="0" />
+		</beginCondition>
+		<changeSkill originSkillID="10100291" />
+		<consume>
+			<stat ep="10" />
+		</consume>
+		<motion>
+			<motionProperty sequenceName="Knight_ShieldPress_A" strTagEffects="e0=CH/Skill/Knight/Eff_Knight_ShieldPress_Cast_01.xml,e1=CH/Skill/Knight/Eff_Knight_ShieldPress_Cast_02.xml,e2=CH/Skill/Knight/Eff_Knight_ShieldPress_Cast_03.xml" loopKeepEffect="CH/Skill/Knight/Eff_Knight_ShieldPress_LoopKeep2_01.xml" loopEndEffect="CH/Skill/Knight/Eff_Knight_ShieldPress_LoopEnd_01.xml" movedistance="200" />
+			<attack point="p0" targetCount="8" attacktype="1" hitImmuneBreak="5">
+				<rangeProperty rangeType="box" distance="350" height="150" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="0.61" effectHit="CH/Skill/Knight/Eff_Knight_ShieldRush_Hit_01.xml" attackMaterial="11" />
+			</attack>
+			<attack point="p1" targetCount="8" attacktype="1" hitImmuneBreak="5">
+				<rangeProperty rangeType="frustum" distance="600" height="150" width="300" endWidth="750" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="2.05" effectHit="CH/Weapon/Sword/Eff_Sword_Hit_01.xml" attackMaterial="11" />
+			</attack>
+		</motion>
+	</level>
+	<level value="2" feature="JobChange_02">
+		<beginCondition probability="1">
+			<stat hp="1" />
+			<weapon lh="41" rh="0" />
+		</beginCondition>
+		<changeSkill originSkillID="10100291" originSkillLevel="2" />
+		<consume>
+			<stat ep="10" />
+		</consume>
+		<motion>
+			<motionProperty sequenceName="Knight_ShieldPress_A" strTagEffects="e0=CH/Skill/Knight/Eff_Knight_ShieldPress_Cast_01.xml,e1=CH/Skill/Knight/Eff_Knight_ShieldPress_Cast_02.xml,e2=CH/Skill/Knight/Eff_Knight_ShieldPress_Cast_03.xml" loopKeepEffect="CH/Skill/Knight/Eff_Knight_ShieldPress_LoopKeep2_01.xml" loopEndEffect="CH/Skill/Knight/Eff_Knight_ShieldPress_LoopEnd_01.xml" movedistance="200" />
+			<attack point="p0" targetCount="8" attacktype="1" hitImmuneBreak="5">
+				<rangeProperty rangeType="box" distance="350" height="150" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="0.68" effectHit="CH/Skill/Knight/Eff_Knight_ShieldRush_Hit_01.xml" attackMaterial="11" />
+			</attack>
+			<attack point="p1" targetCount="8" attacktype="1" hitImmuneBreak="5">
+				<rangeProperty rangeType="frustum" distance="600" height="150" width="300" endWidth="750" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="2.28" effectHit="CH/Weapon/Sword/Eff_Sword_Hit_01.xml" attackMaterial="11" />
+			</attack>
+		</motion>
+	</level>
+	<level value="3" feature="JobChange_02">
+		<beginCondition probability="1">
+			<stat hp="1" />
+			<weapon lh="41" rh="0" />
+		</beginCondition>
+		<changeSkill originSkillID="10100291" originSkillLevel="3" />
+		<consume>
+			<stat ep="10" />
+		</consume>
+		<motion>
+			<motionProperty sequenceName="Knight_ShieldPress_A" strTagEffects="e0=CH/Skill/Knight/Eff_Knight_ShieldPress_Cast_01.xml,e1=CH/Skill/Knight/Eff_Knight_ShieldPress_Cast_02.xml,e2=CH/Skill/Knight/Eff_Knight_ShieldPress_Cast_03.xml" loopKeepEffect="CH/Skill/Knight/Eff_Knight_ShieldPress_LoopKeep2_01.xml" loopEndEffect="CH/Skill/Knight/Eff_Knight_ShieldPress_LoopEnd_01.xml" movedistance="200" />
+			<attack point="p0" targetCount="8" attacktype="1" hitImmuneBreak="5">
+				<rangeProperty rangeType="box" distance="350" height="150" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="0.75" effectHit="CH/Skill/Knight/Eff_Knight_ShieldRush_Hit_01.xml" attackMaterial="11" />
+			</attack>
+			<attack point="p1" targetCount="8" attacktype="1" hitImmuneBreak="5">
+				<rangeProperty rangeType="frustum" distance="600" height="150" width="300" endWidth="750" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="2.51" effectHit="CH/Weapon/Sword/Eff_Sword_Hit_01.xml" attackMaterial="11" />
+			</attack>
+		</motion>
+	</level>
+	<level value="4" feature="JobChange_02">
+		<beginCondition probability="1">
+			<stat hp="1" />
+			<weapon lh="41" rh="0" />
+		</beginCondition>
+		<changeSkill originSkillID="10100291" originSkillLevel="4" />
+		<consume>
+			<stat ep="10" />
+		</consume>
+		<motion>
+			<motionProperty sequenceName="Knight_ShieldPress_A" strTagEffects="e0=CH/Skill/Knight/Eff_Knight_ShieldPress_Cast_01.xml,e1=CH/Skill/Knight/Eff_Knight_ShieldPress_Cast_02.xml,e2=CH/Skill/Knight/Eff_Knight_ShieldPress_Cast_03.xml" loopKeepEffect="CH/Skill/Knight/Eff_Knight_ShieldPress_LoopKeep2_01.xml" loopEndEffect="CH/Skill/Knight/Eff_Knight_ShieldPress_LoopEnd_01.xml" movedistance="200" />
+			<attack point="p0" targetCount="8" attacktype="1" hitImmuneBreak="5">
+				<rangeProperty rangeType="box" distance="350" height="150" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="0.82" effectHit="CH/Skill/Knight/Eff_Knight_ShieldRush_Hit_01.xml" attackMaterial="11" />
+			</attack>
+			<attack point="p1" targetCount="8" attacktype="1" hitImmuneBreak="5">
+				<rangeProperty rangeType="frustum" distance="600" height="150" width="300" endWidth="750" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="2.74" effectHit="CH/Weapon/Sword/Eff_Sword_Hit_01.xml" attackMaterial="11" />
+			</attack>
+		</motion>
+	</level>
+	<level value="5" feature="JobChange_02">
+		<beginCondition probability="1">
+			<stat hp="1" />
+			<weapon lh="41" rh="0" />
+		</beginCondition>
+		<changeSkill originSkillID="10100291" originSkillLevel="5" />
+		<consume>
+			<stat ep="10" />
+		</consume>
+		<motion>
+			<motionProperty sequenceName="Knight_ShieldPress_A" strTagEffects="e0=CH/Skill/Knight/Eff_Knight_ShieldPress_Cast_01.xml,e1=CH/Skill/Knight/Eff_Knight_ShieldPress_Cast_02.xml,e2=CH/Skill/Knight/Eff_Knight_ShieldPress_Cast_03.xml" loopKeepEffect="CH/Skill/Knight/Eff_Knight_ShieldPress_LoopKeep2_01.xml" loopEndEffect="CH/Skill/Knight/Eff_Knight_ShieldPress_LoopEnd_01.xml" movedistance="200" />
+			<attack point="p0" targetCount="8" attacktype="1" hitImmuneBreak="5">
+				<rangeProperty rangeType="box" distance="350" height="150" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="0.89" effectHit="CH/Skill/Knight/Eff_Knight_ShieldRush_Hit_01.xml" attackMaterial="11" />
+			</attack>
+			<attack point="p1" targetCount="8" attacktype="1" hitImmuneBreak="5">
+				<rangeProperty rangeType="frustum" distance="600" height="150" width="300" endWidth="750" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="2.97" effectHit="CH/Weapon/Sword/Eff_Sword_Hit_01.xml" attackMaterial="11" />
+			</attack>
+		</motion>
+	</level>
+	<level value="6" feature="JobChange_02">
+		<beginCondition probability="1">
+			<stat hp="1" />
+			<weapon lh="41" rh="0" />
+		</beginCondition>
+		<changeSkill originSkillID="10100291" originSkillLevel="6" />
+		<consume>
+			<stat ep="10" />
+		</consume>
+		<motion>
+			<motionProperty sequenceName="Knight_ShieldPress_A" strTagEffects="e0=CH/Skill/Knight/Eff_Knight_ShieldPress_Cast_01.xml,e1=CH/Skill/Knight/Eff_Knight_ShieldPress_Cast_02.xml,e2=CH/Skill/Knight/Eff_Knight_ShieldPress_Cast_03.xml" loopKeepEffect="CH/Skill/Knight/Eff_Knight_ShieldPress_LoopKeep2_01.xml" loopEndEffect="CH/Skill/Knight/Eff_Knight_ShieldPress_LoopEnd_01.xml" movedistance="200" />
+			<attack point="p0" targetCount="8" attacktype="1" hitImmuneBreak="5">
+				<rangeProperty rangeType="box" distance="350" height="150" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="0.96" effectHit="CH/Skill/Knight/Eff_Knight_ShieldRush_Hit_01.xml" attackMaterial="11" />
+			</attack>
+			<attack point="p1" targetCount="8" attacktype="1" hitImmuneBreak="5">
+				<rangeProperty rangeType="frustum" distance="600" height="150" width="300" endWidth="750" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="3.2" effectHit="CH/Weapon/Sword/Eff_Sword_Hit_01.xml" attackMaterial="11" />
+			</attack>
+		</motion>
+	</level>
+	<level value="7" feature="JobChange_02">
+		<beginCondition probability="1">
+			<stat hp="1" />
+			<weapon lh="41" rh="0" />
+		</beginCondition>
+		<changeSkill originSkillID="10100291" originSkillLevel="7" />
+		<consume>
+			<stat ep="10" />
+		</consume>
+		<motion>
+			<motionProperty sequenceName="Knight_ShieldPress_A" strTagEffects="e0=CH/Skill/Knight/Eff_Knight_ShieldPress_Cast_01.xml,e1=CH/Skill/Knight/Eff_Knight_ShieldPress_Cast_02.xml,e2=CH/Skill/Knight/Eff_Knight_ShieldPress_Cast_03.xml" loopKeepEffect="CH/Skill/Knight/Eff_Knight_ShieldPress_LoopKeep2_01.xml" loopEndEffect="CH/Skill/Knight/Eff_Knight_ShieldPress_LoopEnd_01.xml" movedistance="200" />
+			<attack point="p0" targetCount="8" attacktype="1" hitImmuneBreak="5">
+				<rangeProperty rangeType="box" distance="350" height="150" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="1.03" effectHit="CH/Skill/Knight/Eff_Knight_ShieldRush_Hit_01.xml" attackMaterial="11" />
+			</attack>
+			<attack point="p1" targetCount="8" attacktype="1" hitImmuneBreak="5">
+				<rangeProperty rangeType="frustum" distance="600" height="150" width="300" endWidth="750" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="3.43" effectHit="CH/Weapon/Sword/Eff_Sword_Hit_01.xml" attackMaterial="11" />
+			</attack>
+		</motion>
+	</level>
+	<level value="8" feature="JobChange_02">
+		<beginCondition probability="1">
+			<stat hp="1" />
+			<weapon lh="41" rh="0" />
+		</beginCondition>
+		<changeSkill originSkillID="10100291" originSkillLevel="8" />
+		<consume>
+			<stat ep="10" />
+		</consume>
+		<motion>
+			<motionProperty sequenceName="Knight_ShieldPress_A" strTagEffects="e0=CH/Skill/Knight/Eff_Knight_ShieldPress_Cast_01.xml,e1=CH/Skill/Knight/Eff_Knight_ShieldPress_Cast_02.xml,e2=CH/Skill/Knight/Eff_Knight_ShieldPress_Cast_03.xml" loopKeepEffect="CH/Skill/Knight/Eff_Knight_ShieldPress_LoopKeep2_01.xml" loopEndEffect="CH/Skill/Knight/Eff_Knight_ShieldPress_LoopEnd_01.xml" movedistance="200" />
+			<attack point="p0" targetCount="8" attacktype="1" hitImmuneBreak="5">
+				<rangeProperty rangeType="box" distance="350" height="150" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="1.1" effectHit="CH/Skill/Knight/Eff_Knight_ShieldRush_Hit_01.xml" attackMaterial="11" />
+			</attack>
+			<attack point="p1" targetCount="8" attacktype="1" hitImmuneBreak="5">
+				<rangeProperty rangeType="frustum" distance="600" height="150" width="300" endWidth="750" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="3.66" effectHit="CH/Weapon/Sword/Eff_Sword_Hit_01.xml" attackMaterial="11" />
+			</attack>
+		</motion>
+	</level>
+	<level value="9" feature="JobChange_02">
+		<beginCondition probability="1">
+			<stat hp="1" />
+			<weapon lh="41" rh="0" />
+		</beginCondition>
+		<changeSkill originSkillID="10100291" originSkillLevel="9" />
+		<consume>
+			<stat ep="10" />
+		</consume>
+		<motion>
+			<motionProperty sequenceName="Knight_ShieldPress_A" strTagEffects="e0=CH/Skill/Knight/Eff_Knight_ShieldPress_Cast_01.xml,e1=CH/Skill/Knight/Eff_Knight_ShieldPress_Cast_02.xml,e2=CH/Skill/Knight/Eff_Knight_ShieldPress_Cast_03.xml" loopKeepEffect="CH/Skill/Knight/Eff_Knight_ShieldPress_LoopKeep2_01.xml" loopEndEffect="CH/Skill/Knight/Eff_Knight_ShieldPress_LoopEnd_01.xml" movedistance="200" />
+			<attack point="p0" targetCount="8" attacktype="1" hitImmuneBreak="5">
+				<rangeProperty rangeType="box" distance="350" height="150" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="1.17" effectHit="CH/Skill/Knight/Eff_Knight_ShieldRush_Hit_01.xml" attackMaterial="11" />
+			</attack>
+			<attack point="p1" targetCount="8" attacktype="1" hitImmuneBreak="5">
+				<rangeProperty rangeType="frustum" distance="600" height="150" width="300" endWidth="750" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="3.89" effectHit="CH/Weapon/Sword/Eff_Sword_Hit_01.xml" attackMaterial="11" />
+			</attack>
+		</motion>
+	</level>
+	<level value="10" feature="JobChange_02">
+		<beginCondition probability="1">
+			<stat hp="1" />
+			<weapon lh="41" rh="0" />
+		</beginCondition>
+		<changeSkill originSkillID="10100291" originSkillLevel="10" />
+		<consume>
+			<stat ep="10" />
+		</consume>
+		<motion>
+			<motionProperty sequenceName="Knight_ShieldPress_A" strTagEffects="e0=CH/Skill/Knight/Eff_Knight_ShieldPress_Cast_01.xml,e1=CH/Skill/Knight/Eff_Knight_ShieldPress_Cast_02.xml,e2=CH/Skill/Knight/Eff_Knight_ShieldPress_Cast_03.xml" loopKeepEffect="CH/Skill/Knight/Eff_Knight_ShieldPress_LoopKeep2_01.xml" loopEndEffect="CH/Skill/Knight/Eff_Knight_ShieldPress_LoopEnd_01.xml" movedistance="200" />
+			<attack point="p0" targetCount="8" attacktype="1" hitImmuneBreak="5">
+				<rangeProperty rangeType="box" distance="350" height="150" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="1.24" effectHit="CH/Skill/Knight/Eff_Knight_ShieldRush_Hit_01.xml" attackMaterial="11" />
+			</attack>
+			<attack point="p1" targetCount="8" attacktype="1" hitImmuneBreak="5">
+				<rangeProperty rangeType="frustum" distance="600" height="150" width="300" endWidth="750" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="4.12" effectHit="CH/Weapon/Sword/Eff_Sword_Hit_01.xml" attackMaterial="11" />
+			</attack>
+		</motion>
+	</level>
+	<level value="11" feature="JobChange_02">
+		<beginCondition probability="1">
+			<stat hp="1" />
+			<weapon lh="41" rh="0" />
+		</beginCondition>
+		<changeSkill originSkillID="10100291" originSkillLevel="11" />
+		<consume>
+			<stat ep="10" />
+		</consume>
+		<motion>
+			<motionProperty sequenceName="Knight_ShieldPress_A" strTagEffects="e0=CH/Skill/Knight/Eff_Knight_ShieldPress_Cast_01.xml,e1=CH/Skill/Knight/Eff_Knight_ShieldPress_Cast_02.xml,e2=CH/Skill/Knight/Eff_Knight_ShieldPress_Cast_03.xml" loopKeepEffect="CH/Skill/Knight/Eff_Knight_ShieldPress_LoopKeep2_01.xml" loopEndEffect="CH/Skill/Knight/Eff_Knight_ShieldPress_LoopEnd_01.xml" movedistance="200" />
+			<attack point="p0" targetCount="8" attacktype="1" hitImmuneBreak="5">
+				<rangeProperty rangeType="box" distance="350" height="150" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="1.31" effectHit="CH/Skill/Knight/Eff_Knight_ShieldRush_Hit_01.xml" attackMaterial="11" />
+			</attack>
+			<attack point="p1" targetCount="8" attacktype="1" hitImmuneBreak="5">
+				<rangeProperty rangeType="frustum" distance="600" height="150" width="300" endWidth="750" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="4.35" effectHit="CH/Weapon/Sword/Eff_Sword_Hit_01.xml" attackMaterial="11" />
+			</attack>
+		</motion>
+	</level>
+	<level value="12" feature="JobChange_02">
+		<beginCondition probability="1">
+			<stat hp="1" />
+			<weapon lh="41" rh="0" />
+		</beginCondition>
+		<changeSkill originSkillID="10100291" originSkillLevel="12" />
+		<consume>
+			<stat ep="10" />
+		</consume>
+		<motion>
+			<motionProperty sequenceName="Knight_ShieldPress_A" strTagEffects="e0=CH/Skill/Knight/Eff_Knight_ShieldPress_Cast_01.xml,e1=CH/Skill/Knight/Eff_Knight_ShieldPress_Cast_02.xml,e2=CH/Skill/Knight/Eff_Knight_ShieldPress_Cast_03.xml" loopKeepEffect="CH/Skill/Knight/Eff_Knight_ShieldPress_LoopKeep2_01.xml" loopEndEffect="CH/Skill/Knight/Eff_Knight_ShieldPress_LoopEnd_01.xml" movedistance="200" />
+			<attack point="p0" targetCount="8" attacktype="1" hitImmuneBreak="5">
+				<rangeProperty rangeType="box" distance="350" height="150" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="1.38" effectHit="CH/Skill/Knight/Eff_Knight_ShieldRush_Hit_01.xml" attackMaterial="11" />
+			</attack>
+			<attack point="p1" targetCount="8" attacktype="1" hitImmuneBreak="5">
+				<rangeProperty rangeType="frustum" distance="600" height="150" width="300" endWidth="750" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="4.58" effectHit="CH/Weapon/Sword/Eff_Sword_Hit_01.xml" attackMaterial="11" />
+			</attack>
+		</motion>
+	</level>
+</ms2>

@@ -2,15 +2,15 @@
 <!-- 파싱해서 사용하는 데이터이니 직접 수정하지 마세요 -->
 <ms2>
 	<level>
-		<beginCondition allowBattleRidingState="1">
-			<owner hasBuffID="70001041" hasBuffLevel="1" hasBuffOwner="0" hasBuffCount="0" hasBuffCountCompare="Equals" />
+		<beginCondition probability="1" allowBattleRidingState="1" allowMapleSurvival="1">
+			<owner hasBuffID="70001041" hasBuffLevel="1" hasBuffOwner="0" hasBuffCount="0" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
 		</beginCondition>
 		<BasicProperty level="1" buffType="2" durationTick="10000" intervalTick="1000" resetCondition="2" maxBuffCount="10" dotCondition="1" logoutClearEffect="1" leaveFieldClearEffect="1" />
 		<MotionProperty abnormalImmuneBreak="5" />
 		<UIProperty icon="./Data/Resource/Image/skill/icon/70001021.png" iconOnOff="0" />
 		<conditionSkill level="1" skillID="70001031" skillTarget="1" activeByIntervalTick="1">
-			<beginCondition>
-				<owner hasBuffID="70001051" hasBuffLevel="1" hasBuffOwner="0" hasBuffCount="10" hasBuffCountCompare="Equals" />
+			<beginCondition probability="1" allowMapleSurvival="1">
+				<owner hasBuffID="70001051" hasBuffLevel="1" hasBuffOwner="0" hasBuffCount="10" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
 			</beginCondition>
 		</conditionSkill>
 	</level>

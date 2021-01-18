@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 파싱해서 사용하는 데이터이니 직접 수정하지 마세요 -->
+<ms2 feature="">
+	<basic>
+		<ui attackType="1" />
+		<kinds rangeType="1" element="7" />
+	</basic>
+	<level value="1">
+		<beginCondition probability="1">
+			<stat hp="1" />
+		</beginCondition>
+		<detectProperty rangeType="cylinder" distance="3000" height="250" />
+		<motion>
+			<motionProperty sequenceName="Attack_01_F" motionEffect="NPC/Skill/Schatten/Eff_Schatten_Attack_01_F_Start.xml" faceTarget="0" />
+			<attack point="p0" targetCount="1" attacktype="1" brokenOffence="1" unrideOnHit="1">
+				<rangeProperty rangeType="box" applyTarget="1" castTarget="1" />
+				<damageProperty count="0" attackMaterial="4" />
+			</attack>
+		</motion>
+		<motion>
+			<motionProperty sequenceName="Attack_02_F" faceTarget="0" />
+			<attack point="p0" targetCount="3" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+				<rangeProperty rangeType="box" applyTarget="1" castTarget="1" />
+				<damageProperty count="0" rate="0.5" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="100" pushduration="0.3" attackMaterial="9" />
+			</attack>
+		</motion>
+	</level>
+	<level value="2">
+		<beginCondition probability="1">
+			<stat hp="1" />
+		</beginCondition>
+		<detectProperty rangeType="cylinder" distance="3000" height="250" />
+		<motion>
+			<motionProperty sequenceName="Attack_03_F" motionEffect="NPC/Skill/Schatten/Eff_Schatten_Attack_03_F.xml" faceTarget="0" />
+			<attack point="p0" targetCount="1" magicPathID="5688" cubeMagicPathID="600240311" attacktype="2" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+				<rangeProperty rangeType="box" applyTarget="1" castTarget="1" />
+				<arrowProperty collision="100.000000,100.000000,100.000000" effect="NPC/Skill/Schatten/Eff_Schatten_Attack_03_F_Ball_01.xml" />
+				<damageProperty rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="300" pushduration="1.5" pushUpDistance="700" pushDown="1" attackMaterial="100" />
+				<conditionSkill splash="1" level="1" skillID="99999790" delay="3000" />
+			</attack>
+			<attack point="p1" targetCount="1" magicPathID="5689" cubeMagicPathID="600240311" attacktype="2" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+				<rangeProperty rangeType="box" applyTarget="1" castTarget="1" />
+				<arrowProperty collision="100.000000,100.000000,100.000000" effect="NPC/Skill/Schatten/Eff_Schatten_Attack_03_F_Ball_01.xml" />
+				<damageProperty rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="300" pushduration="1.5" pushUpDistance="700" pushDown="1" attackMaterial="100" />
+				<conditionSkill splash="1" level="1" skillID="99999790" delay="3000" />
+			</attack>
+			<attack point="p2" targetCount="1" magicPathID="5690" cubeMagicPathID="600240311" attacktype="2" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+				<rangeProperty rangeType="box" applyTarget="1" castTarget="1" />
+				<arrowProperty collision="100.000000,100.000000,100.000000" effect="NPC/Skill/Schatten/Eff_Schatten_Attack_03_F_Ball_01.xml" />
+				<damageProperty rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="300" pushduration="1.5" pushUpDistance="700" pushDown="1" attackMaterial="100" />
+				<conditionSkill splash="1" level="1" skillID="99999790" delay="3000" />
+			</attack>
+			<attack point="p3" targetCount="1" magicPathID="5691" cubeMagicPathID="600240311" attacktype="2" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+				<rangeProperty rangeType="box" applyTarget="1" castTarget="1" />
+				<arrowProperty collision="100.000000,100.000000,100.000000" effect="NPC/Skill/Schatten/Eff_Schatten_Attack_03_F_Ball_01.xml" />
+				<damageProperty rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="300" pushduration="1.5" pushUpDistance="700" pushDown="1" attackMaterial="100" />
+				<conditionSkill splash="1" level="1" skillID="99999790" delay="3000" />
+			</attack>
+			<attack point="p4" targetCount="1" magicPathID="5692" cubeMagicPathID="600240311" attacktype="2" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+				<rangeProperty rangeType="box" applyTarget="1" castTarget="1" />
+				<arrowProperty collision="100.000000,100.000000,100.000000" effect="NPC/Skill/Schatten/Eff_Schatten_Attack_03_F_Ball_01.xml" />
+				<damageProperty rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="300" pushduration="1.5" pushUpDistance="700" pushDown="1" attackMaterial="100" />
+				<conditionSkill splash="1" level="1" skillID="99999790" delay="3000" />
+			</attack>
+			<attack point="p5" targetCount="1" magicPathID="5693" cubeMagicPathID="600240311" attacktype="2" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+				<rangeProperty rangeType="box" applyTarget="1" castTarget="1" />
+				<arrowProperty collision="100.000000,100.000000,100.000000" effect="NPC/Skill/Schatten/Eff_Schatten_Attack_03_F_Ball_01.xml" />
+				<damageProperty rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="300" pushduration="1.5" pushUpDistance="700" pushDown="1" attackMaterial="100" />
+				<conditionSkill splash="1" level="1" skillID="99999790" delay="3000" />
+			</attack>
+			<attack point="p6" targetCount="2" magicPathID="5694" cubeMagicPathID="600240311" attacktype="2" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+				<rangeProperty rangeType="box" applyTarget="1" castTarget="1" />
+				<arrowProperty collision="100.000000,100.000000,100.000000" effect="NPC/Skill/Schatten/Eff_Schatten_Attack_03_F_Ball_01.xml" />
+				<damageProperty rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="300" pushduration="1.5" pushUpDistance="700" pushDown="1" attackMaterial="100" />
+				<conditionSkill splash="1" level="1" skillID="99999790" delay="3150" />
+			</attack>
+			<attack point="p7" targetCount="4" magicPathID="5695" cubeMagicPathID="600240311" attacktype="2" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+				<rangeProperty rangeType="box" applyTarget="1" castTarget="1" />
+				<arrowProperty collision="100.000000,100.000000,100.000000" effect="NPC/Skill/Schatten/Eff_Schatten_Attack_03_F_Ball_01.xml" />
+				<damageProperty rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="300" pushduration="1.5" pushUpDistance="700" pushDown="1" attackMaterial="100" />
+				<conditionSkill splash="1" level="1" skillID="99999790" delay="4000" />
+			</attack>
+		</motion>
+		<motion>
+			<motionProperty sequenceName="Attack_04_F" motionEffect="NPC/Skill/Schatten/Eff_Schatten_Attack_04_F.xml" />
+			<attack point="p0" targetCount="1" attacktype="2" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+				<rangeProperty rangeType="box" applyTarget="1" castTarget="1" />
+				<damageProperty count="0" rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="300" pushduration="1.5" pushUpDistance="700" pushDown="1" attackMaterial="100" />
+			</attack>
+			<attack point="p0" targetCount="1" attacktype="2" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+				<rangeProperty rangeType="box" applyTarget="1" castTarget="1" />
+				<damageProperty count="0" rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="300" pushduration="1.5" pushUpDistance="700" pushDown="1" attackMaterial="100" />
+			</attack>
+		</motion>
+	</level>
+</ms2>

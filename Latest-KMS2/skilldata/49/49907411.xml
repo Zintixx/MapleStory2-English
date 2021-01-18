@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 파싱해서 사용하는 데이터이니 직접 수정하지 마세요 -->
+<ms2 feature="">
+	<basic>
+		<ui attackType="1" />
+		<kinds rangeType="2" element="7" />
+	</basic>
+	<level value="1">
+		<beginCondition probability="1">
+			<stat hp="1" />
+		</beginCondition>
+		<detectProperty rangeType="box" distance="200" height="300" width="450" />
+		<motion>
+			<motionProperty sequenceName="Attack_01_B" strTagEffects="e0=NPC/Skill/MafiaDaggerWeapon/Eff_MafiaDaggerWeapon_Attack_01_B_Cast_01.xml,e1=NPC/Skill/MafiaDaggerWeapon/Eff_MafiaDaggerWeapon_Attack_01_B_Cast_02.xml" faceTarget="0" />
+			<attack point="p0" targetCount="10" attacktype="1" unrideOnHit="1">
+				<rangeProperty rangeType="box" distance="200" height="300" width="150" applyTarget="1" castTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="0.5" attackMaterial="1" />
+			</attack>
+			<attack point="p1" targetCount="10" attacktype="1" unrideOnHit="1">
+				<rangeProperty rangeType="box" distance="200" height="300" width="150" applyTarget="1" castTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="0.5" attackMaterial="1" />
+			</attack>
+		</motion>
+	</level>
+</ms2>

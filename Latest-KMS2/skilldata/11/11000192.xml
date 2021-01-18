@@ -1,0 +1,1113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 파싱해서 사용하는 데이터이니 직접 수정하지 마세요 -->
+<ms2 feature="">
+	<basic feature="JobChange_02">
+		<ui icon="./Data/Resource/Image/skill/icon/11000192.png" exceptUI="1" attackType="1" />
+		<kinds subType="2" rangeType="1" jump="11000192" element="1" unrideOnUse="1" groupIDs="11000311" />
+		<stateAttr superArmor="3" autoTargetingType="1" moveType="1" cooldownGroupID="11000191" clearCooldownFromPVPZone="1" ignoreReduceCooldown="1" />
+	</basic>
+	<level value="1" feature="JobChange_02">
+		<beginCondition probability="1" cooldownTime="0.3">
+			<stat hp="1" />
+		</beginCondition>
+		<changeSkill originSkillID="11000191" />
+		<autoTargeting autoTargetingMaxDegree="180" />
+		<push back="150" />
+		<conditionSkill level="1" skillID="11000291" skillTarget="1">
+			<beginCondition probability="1" allowBattleRidingState="1" />
+		</conditionSkill>
+		<motion>
+			<motionProperty sequenceName="Striker_ValkanPunch_B" sequenceSpeed="1.6" strTagEffects="e0=CH/Skill/Striker/Eff_Striker_ValkanPunchEX_Cast_01.xml,e1=CH/Skill/Striker/Eff_Striker_ValkanPunchEX_Cast_02.xml,e2=CH/Skill/Striker/Eff_Striker_ValkanPunchEX_Cast_03.xml" />
+			<attack point="p0" targetCount="8" direction="2" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="15" />
+				<rangeProperty rangeType="box" distance="440" rangeAdd="0.000000,25.000000,0.000000" height="150" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="0.93" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+			</attack>
+			<attack point="p1" targetCount="8" direction="1" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="15" />
+				<rangeProperty rangeType="box" distance="440" rangeAdd="0.000000,25.000000,0.000000" height="150" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="0.93" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+			</attack>
+			<attack point="p2" targetCount="8" direction="1" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="15" />
+				<rangeProperty rangeType="box" distance="440" rangeAdd="0.000000,25.000000,0.000000" height="150" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="0.93" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+			</attack>
+			<attack point="p3" targetCount="8" direction="2" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="15" />
+				<rangeProperty rangeType="box" distance="440" rangeAdd="0.000000,25.000000,0.000000" height="150" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="0.93" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+			</attack>
+			<attack point="p4" targetCount="8" direction="1" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="15" />
+				<rangeProperty rangeType="box" distance="440" rangeAdd="0.000000,25.000000,0.000000" height="150" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="0.93" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+			</attack>
+			<attack point="p5" targetCount="8" direction="1" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="15" />
+				<rangeProperty rangeType="box" distance="440" rangeAdd="0.000000,25.000000,0.000000" height="150" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="0.93" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+			</attack>
+			<attack point="p6" targetCount="8" direction="1" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="15" />
+				<rangeProperty rangeType="box" distance="440" rangeAdd="0.000000,25.000000,0.000000" height="150" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="0.93" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+			</attack>
+			<attack point="p7" targetCount="8" direction="1" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="15" />
+				<rangeProperty rangeType="box" distance="440" rangeAdd="0.000000,25.000000,0.000000" height="150" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="0.93" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+			</attack>
+			<attack point="p8" targetCount="8" direction="1" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="15" />
+				<rangeProperty rangeType="box" distance="440" rangeAdd="0.000000,25.000000,0.000000" height="150" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="0.93" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+			</attack>
+			<attack point="p9" targetCount="8" direction="1" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="15" />
+				<rangeProperty rangeType="box" distance="440" rangeAdd="0.000000,25.000000,0.000000" height="150" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="0.93" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+			</attack>
+			<attack point="p10" targetCount="8" direction="1" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="15" />
+				<rangeProperty rangeType="box" distance="440" rangeAdd="0.000000,25.000000,0.000000" height="150" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="0.93" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+			</attack>
+			<attack point="p11" targetCount="8" direction="1" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="15" />
+				<rangeProperty rangeType="box" distance="440" rangeAdd="0.000000,25.000000,0.000000" height="150" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="0.93" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+			</attack>
+			<attack point="p12" targetCount="8" direction="2" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="15" />
+				<rangeProperty rangeType="box" distance="490" rangeAdd="0.000000,25.000000,0.000000" height="150" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="2.47" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+			</attack>
+		</motion>
+	</level>
+	<level value="2" feature="JobChange_02">
+		<beginCondition probability="1" cooldownTime="0.3">
+			<stat hp="1" />
+		</beginCondition>
+		<changeSkill originSkillID="11000191" originSkillLevel="2" />
+		<autoTargeting autoTargetingMaxDegree="180" />
+		<push back="150" />
+		<conditionSkill level="1" skillID="11000291" skillTarget="1">
+			<beginCondition probability="1" allowBattleRidingState="1" />
+		</conditionSkill>
+		<motion>
+			<motionProperty sequenceName="Striker_ValkanPunch_B" sequenceSpeed="1.6" strTagEffects="e0=CH/Skill/Striker/Eff_Striker_ValkanPunchEX_Cast_01.xml,e1=CH/Skill/Striker/Eff_Striker_ValkanPunchEX_Cast_02.xml,e2=CH/Skill/Striker/Eff_Striker_ValkanPunchEX_Cast_03.xml" />
+			<attack point="p0" targetCount="8" direction="2" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="15" />
+				<rangeProperty rangeType="box" distance="440" rangeAdd="0.000000,25.000000,0.000000" height="150" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="1.02" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+			</attack>
+			<attack point="p1" targetCount="8" direction="1" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="15" />
+				<rangeProperty rangeType="box" distance="440" rangeAdd="0.000000,25.000000,0.000000" height="150" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="1.02" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+			</attack>
+			<attack point="p2" targetCount="8" direction="1" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="15" />
+				<rangeProperty rangeType="box" distance="440" rangeAdd="0.000000,25.000000,0.000000" height="150" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="1.02" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+			</attack>
+			<attack point="p3" targetCount="8" direction="2" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="15" />
+				<rangeProperty rangeType="box" distance="440" rangeAdd="0.000000,25.000000,0.000000" height="150" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="1.02" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+			</attack>
+			<attack point="p4" targetCount="8" direction="1" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="15" />
+				<rangeProperty rangeType="box" distance="440" rangeAdd="0.000000,25.000000,0.000000" height="150" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="1.02" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+			</attack>
+			<attack point="p5" targetCount="8" direction="1" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="15" />
+				<rangeProperty rangeType="box" distance="440" rangeAdd="0.000000,25.000000,0.000000" height="150" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="1.02" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+			</attack>
+			<attack point="p6" targetCount="8" direction="1" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="15" />
+				<rangeProperty rangeType="box" distance="440" rangeAdd="0.000000,25.000000,0.000000" height="150" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="1.02" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+			</attack>
+			<attack point="p7" targetCount="8" direction="1" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="15" />
+				<rangeProperty rangeType="box" distance="440" rangeAdd="0.000000,25.000000,0.000000" height="150" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="1.02" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+			</attack>
+			<attack point="p8" targetCount="8" direction="1" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="15" />
+				<rangeProperty rangeType="box" distance="440" rangeAdd="0.000000,25.000000,0.000000" height="150" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="1.02" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+			</attack>
+			<attack point="p9" targetCount="8" direction="1" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="15" />
+				<rangeProperty rangeType="box" distance="440" rangeAdd="0.000000,25.000000,0.000000" height="150" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="1.02" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+			</attack>
+			<attack point="p10" targetCount="8" direction="1" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="15" />
+				<rangeProperty rangeType="box" distance="440" rangeAdd="0.000000,25.000000,0.000000" height="150" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="1.02" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+			</attack>
+			<attack point="p11" targetCount="8" direction="1" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="15" />
+				<rangeProperty rangeType="box" distance="440" rangeAdd="0.000000,25.000000,0.000000" height="150" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="1.02" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+			</attack>
+			<attack point="p12" targetCount="8" direction="2" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="15" />
+				<rangeProperty rangeType="box" distance="490" rangeAdd="0.000000,25.000000,0.000000" height="150" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="2.76" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+			</attack>
+		</motion>
+	</level>
+	<level value="3" feature="JobChange_02">
+		<beginCondition probability="1" cooldownTime="0.3">
+			<stat hp="1" />
+		</beginCondition>
+		<changeSkill originSkillID="11000191" originSkillLevel="3" />
+		<autoTargeting autoTargetingMaxDegree="180" />
+		<push back="150" />
+		<conditionSkill level="1" skillID="11000291" skillTarget="1">
+			<beginCondition probability="1" allowBattleRidingState="1" />
+		</conditionSkill>
+		<motion>
+			<motionProperty sequenceName="Striker_ValkanPunch_B" sequenceSpeed="1.6" strTagEffects="e0=CH/Skill/Striker/Eff_Striker_ValkanPunchEX_Cast_01.xml,e1=CH/Skill/Striker/Eff_Striker_ValkanPunchEX_Cast_02.xml,e2=CH/Skill/Striker/Eff_Striker_ValkanPunchEX_Cast_03.xml" />
+			<attack point="p0" targetCount="8" direction="2" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="15" />
+				<rangeProperty rangeType="box" distance="440" rangeAdd="0.000000,25.000000,0.000000" height="150" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="1.11" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+			</attack>
+			<attack point="p1" targetCount="8" direction="1" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="15" />
+				<rangeProperty rangeType="box" distance="440" rangeAdd="0.000000,25.000000,0.000000" height="150" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="1.11" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+			</attack>
+			<attack point="p2" targetCount="8" direction="1" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="15" />
+				<rangeProperty rangeType="box" distance="440" rangeAdd="0.000000,25.000000,0.000000" height="150" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="1.11" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+			</attack>
+			<attack point="p3" targetCount="8" direction="2" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="15" />
+				<rangeProperty rangeType="box" distance="440" rangeAdd="0.000000,25.000000,0.000000" height="150" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="1.11" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+			</attack>
+			<attack point="p4" targetCount="8" direction="1" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="15" />
+				<rangeProperty rangeType="box" distance="440" rangeAdd="0.000000,25.000000,0.000000" height="150" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="1.11" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+			</attack>
+			<attack point="p5" targetCount="8" direction="1" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="15" />
+				<rangeProperty rangeType="box" distance="440" rangeAdd="0.000000,25.000000,0.000000" height="150" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="1.11" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+			</attack>
+			<attack point="p6" targetCount="8" direction="1" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="15" />
+				<rangeProperty rangeType="box" distance="440" rangeAdd="0.000000,25.000000,0.000000" height="150" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="1.11" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+			</attack>
+			<attack point="p7" targetCount="8" direction="1" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="15" />
+				<rangeProperty rangeType="box" distance="440" rangeAdd="0.000000,25.000000,0.000000" height="150" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="1.11" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+			</attack>
+			<attack point="p8" targetCount="8" direction="1" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="15" />
+				<rangeProperty rangeType="box" distance="440" rangeAdd="0.000000,25.000000,0.000000" height="150" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="1.11" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+			</attack>
+			<attack point="p9" targetCount="8" direction="1" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="15" />
+				<rangeProperty rangeType="box" distance="440" rangeAdd="0.000000,25.000000,0.000000" height="150" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="1.11" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+			</attack>
+			<attack point="p10" targetCount="8" direction="1" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="15" />
+				<rangeProperty rangeType="box" distance="440" rangeAdd="0.000000,25.000000,0.000000" height="150" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="1.11" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+			</attack>
+			<attack point="p11" targetCount="8" direction="1" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="15" />
+				<rangeProperty rangeType="box" distance="440" rangeAdd="0.000000,25.000000,0.000000" height="150" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="1.11" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+			</attack>
+			<attack point="p12" targetCount="8" direction="2" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="15" />
+				<rangeProperty rangeType="box" distance="490" rangeAdd="0.000000,25.000000,0.000000" height="150" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="3.05" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+			</attack>
+		</motion>
+	</level>
+	<level value="4" feature="JobChange_02">
+		<beginCondition probability="1" cooldownTime="0.3">
+			<stat hp="1" />
+		</beginCondition>
+		<changeSkill originSkillID="11000191" originSkillLevel="4" />
+		<autoTargeting autoTargetingMaxDegree="180" />
+		<push back="150" />
+		<conditionSkill level="1" skillID="11000291" skillTarget="1">
+			<beginCondition probability="1" allowBattleRidingState="1" />
+		</conditionSkill>
+		<motion>
+			<motionProperty sequenceName="Striker_ValkanPunch_B" sequenceSpeed="1.6" strTagEffects="e0=CH/Skill/Striker/Eff_Striker_ValkanPunchEX_Cast_01.xml,e1=CH/Skill/Striker/Eff_Striker_ValkanPunchEX_Cast_02.xml,e2=CH/Skill/Striker/Eff_Striker_ValkanPunchEX_Cast_03.xml" />
+			<attack point="p0" targetCount="8" direction="2" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="15" />
+				<rangeProperty rangeType="box" distance="440" rangeAdd="0.000000,25.000000,0.000000" height="150" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="1.2" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+			</attack>
+			<attack point="p1" targetCount="8" direction="1" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="15" />
+				<rangeProperty rangeType="box" distance="440" rangeAdd="0.000000,25.000000,0.000000" height="150" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="1.2" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+			</attack>
+			<attack point="p2" targetCount="8" direction="1" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="15" />
+				<rangeProperty rangeType="box" distance="440" rangeAdd="0.000000,25.000000,0.000000" height="150" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="1.2" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+			</attack>
+			<attack point="p3" targetCount="8" direction="2" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="15" />
+				<rangeProperty rangeType="box" distance="440" rangeAdd="0.000000,25.000000,0.000000" height="150" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="1.2" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+			</attack>
+			<attack point="p4" targetCount="8" direction="1" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="15" />
+				<rangeProperty rangeType="box" distance="440" rangeAdd="0.000000,25.000000,0.000000" height="150" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="1.2" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+			</attack>
+			<attack point="p5" targetCount="8" direction="1" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="15" />
+				<rangeProperty rangeType="box" distance="440" rangeAdd="0.000000,25.000000,0.000000" height="150" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="1.2" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+			</attack>
+			<attack point="p6" targetCount="8" direction="1" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="15" />
+				<rangeProperty rangeType="box" distance="440" rangeAdd="0.000000,25.000000,0.000000" height="150" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="1.2" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+			</attack>
+			<attack point="p7" targetCount="8" direction="1" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="15" />
+				<rangeProperty rangeType="box" distance="440" rangeAdd="0.000000,25.000000,0.000000" height="150" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="1.2" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+			</attack>
+			<attack point="p8" targetCount="8" direction="1" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="15" />
+				<rangeProperty rangeType="box" distance="440" rangeAdd="0.000000,25.000000,0.000000" height="150" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="1.2" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+			</attack>
+			<attack point="p9" targetCount="8" direction="1" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="15" />
+				<rangeProperty rangeType="box" distance="440" rangeAdd="0.000000,25.000000,0.000000" height="150" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="1.2" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+			</attack>
+			<attack point="p10" targetCount="8" direction="1" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="15" />
+				<rangeProperty rangeType="box" distance="440" rangeAdd="0.000000,25.000000,0.000000" height="150" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="1.2" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+			</attack>
+			<attack point="p11" targetCount="8" direction="1" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="15" />
+				<rangeProperty rangeType="box" distance="440" rangeAdd="0.000000,25.000000,0.000000" height="150" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="1.2" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+			</attack>
+			<attack point="p12" targetCount="8" direction="2" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="15" />
+				<rangeProperty rangeType="box" distance="490" rangeAdd="0.000000,25.000000,0.000000" height="150" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="3.34" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+			</attack>
+		</motion>
+	</level>
+	<level value="5" feature="JobChange_02">
+		<beginCondition probability="1" cooldownTime="0.3">
+			<stat hp="1" />
+		</beginCondition>
+		<changeSkill originSkillID="11000191" originSkillLevel="5" />
+		<autoTargeting autoTargetingMaxDegree="180" />
+		<push back="150" />
+		<conditionSkill level="1" skillID="11000291" skillTarget="1">
+			<beginCondition probability="1" allowBattleRidingState="1" />
+		</conditionSkill>
+		<motion>
+			<motionProperty sequenceName="Striker_ValkanPunch_B" sequenceSpeed="1.6" strTagEffects="e0=CH/Skill/Striker/Eff_Striker_ValkanPunchEX_Cast_01.xml,e1=CH/Skill/Striker/Eff_Striker_ValkanPunchEX_Cast_02.xml,e2=CH/Skill/Striker/Eff_Striker_ValkanPunchEX_Cast_03.xml" />
+			<attack point="p0" targetCount="8" direction="2" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="15" />
+				<rangeProperty rangeType="box" distance="440" rangeAdd="0.000000,25.000000,0.000000" height="150" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="1.29" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+			</attack>
+			<attack point="p1" targetCount="8" direction="1" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="15" />
+				<rangeProperty rangeType="box" distance="440" rangeAdd="0.000000,25.000000,0.000000" height="150" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="1.29" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+			</attack>
+			<attack point="p2" targetCount="8" direction="1" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="15" />
+				<rangeProperty rangeType="box" distance="440" rangeAdd="0.000000,25.000000,0.000000" height="150" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="1.29" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+			</attack>
+			<attack point="p3" targetCount="8" direction="2" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="15" />
+				<rangeProperty rangeType="box" distance="440" rangeAdd="0.000000,25.000000,0.000000" height="150" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="1.29" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+			</attack>
+			<attack point="p4" targetCount="8" direction="1" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="15" />
+				<rangeProperty rangeType="box" distance="440" rangeAdd="0.000000,25.000000,0.000000" height="150" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="1.29" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+			</attack>
+			<attack point="p5" targetCount="8" direction="1" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="15" />
+				<rangeProperty rangeType="box" distance="440" rangeAdd="0.000000,25.000000,0.000000" height="150" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="1.29" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+			</attack>
+			<attack point="p6" targetCount="8" direction="1" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="15" />
+				<rangeProperty rangeType="box" distance="440" rangeAdd="0.000000,25.000000,0.000000" height="150" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="1.29" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+			</attack>
+			<attack point="p7" targetCount="8" direction="1" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="15" />
+				<rangeProperty rangeType="box" distance="440" rangeAdd="0.000000,25.000000,0.000000" height="150" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="1.29" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+			</attack>
+			<attack point="p8" targetCount="8" direction="1" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="15" />
+				<rangeProperty rangeType="box" distance="440" rangeAdd="0.000000,25.000000,0.000000" height="150" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="1.29" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+			</attack>
+			<attack point="p9" targetCount="8" direction="1" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="15" />
+				<rangeProperty rangeType="box" distance="440" rangeAdd="0.000000,25.000000,0.000000" height="150" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="1.29" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+			</attack>
+			<attack point="p10" targetCount="8" direction="1" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="15" />
+				<rangeProperty rangeType="box" distance="440" rangeAdd="0.000000,25.000000,0.000000" height="150" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="1.29" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+			</attack>
+			<attack point="p11" targetCount="8" direction="1" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="15" />
+				<rangeProperty rangeType="box" distance="440" rangeAdd="0.000000,25.000000,0.000000" height="150" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="1.29" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+			</attack>
+			<attack point="p12" targetCount="8" direction="2" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="15" />
+				<rangeProperty rangeType="box" distance="490" rangeAdd="0.000000,25.000000,0.000000" height="150" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="3.63" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+			</attack>
+		</motion>
+	</level>
+	<level value="6" feature="JobChange_02">
+		<beginCondition probability="1" cooldownTime="0.3">
+			<stat hp="1" />
+		</beginCondition>
+		<changeSkill originSkillID="11000191" originSkillLevel="6" />
+		<autoTargeting autoTargetingMaxDegree="180" />
+		<push back="150" />
+		<conditionSkill level="1" skillID="11000291" skillTarget="1">
+			<beginCondition probability="1" allowBattleRidingState="1" />
+		</conditionSkill>
+		<motion>
+			<motionProperty sequenceName="Striker_ValkanPunch_B" sequenceSpeed="1.6" strTagEffects="e0=CH/Skill/Striker/Eff_Striker_ValkanPunchEX_Cast_01.xml,e1=CH/Skill/Striker/Eff_Striker_ValkanPunchEX_Cast_02.xml,e2=CH/Skill/Striker/Eff_Striker_ValkanPunchEX_Cast_03.xml" />
+			<attack point="p0" targetCount="8" direction="2" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="15" />
+				<rangeProperty rangeType="box" distance="440" rangeAdd="0.000000,25.000000,0.000000" height="150" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="1.38" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+			</attack>
+			<attack point="p1" targetCount="8" direction="1" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="15" />
+				<rangeProperty rangeType="box" distance="440" rangeAdd="0.000000,25.000000,0.000000" height="150" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="1.38" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+			</attack>
+			<attack point="p2" targetCount="8" direction="1" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="15" />
+				<rangeProperty rangeType="box" distance="440" rangeAdd="0.000000,25.000000,0.000000" height="150" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="1.38" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+			</attack>
+			<attack point="p3" targetCount="8" direction="2" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="15" />
+				<rangeProperty rangeType="box" distance="440" rangeAdd="0.000000,25.000000,0.000000" height="150" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="1.38" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+			</attack>
+			<attack point="p4" targetCount="8" direction="1" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="15" />
+				<rangeProperty rangeType="box" distance="440" rangeAdd="0.000000,25.000000,0.000000" height="150" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="1.38" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+			</attack>
+			<attack point="p5" targetCount="8" direction="1" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="15" />
+				<rangeProperty rangeType="box" distance="440" rangeAdd="0.000000,25.000000,0.000000" height="150" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="1.38" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+			</attack>
+			<attack point="p6" targetCount="8" direction="1" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="15" />
+				<rangeProperty rangeType="box" distance="440" rangeAdd="0.000000,25.000000,0.000000" height="150" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="1.38" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+			</attack>
+			<attack point="p7" targetCount="8" direction="1" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="15" />
+				<rangeProperty rangeType="box" distance="440" rangeAdd="0.000000,25.000000,0.000000" height="150" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="1.38" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+			</attack>
+			<attack point="p8" targetCount="8" direction="1" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="15" />
+				<rangeProperty rangeType="box" distance="440" rangeAdd="0.000000,25.000000,0.000000" height="150" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="1.38" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+			</attack>
+			<attack point="p9" targetCount="8" direction="1" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="15" />
+				<rangeProperty rangeType="box" distance="440" rangeAdd="0.000000,25.000000,0.000000" height="150" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="1.38" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+			</attack>
+			<attack point="p10" targetCount="8" direction="1" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="15" />
+				<rangeProperty rangeType="box" distance="440" rangeAdd="0.000000,25.000000,0.000000" height="150" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="1.38" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+			</attack>
+			<attack point="p11" targetCount="8" direction="1" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="15" />
+				<rangeProperty rangeType="box" distance="440" rangeAdd="0.000000,25.000000,0.000000" height="150" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="1.38" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+			</attack>
+			<attack point="p12" targetCount="8" direction="2" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="15" />
+				<rangeProperty rangeType="box" distance="490" rangeAdd="0.000000,25.000000,0.000000" height="150" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="3.92" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+			</attack>
+		</motion>
+	</level>
+	<level value="7" feature="JobChange_02">
+		<beginCondition probability="1" cooldownTime="0.3">
+			<stat hp="1" />
+		</beginCondition>
+		<changeSkill originSkillID="11000191" originSkillLevel="7" />
+		<autoTargeting autoTargetingMaxDegree="180" />
+		<push back="150" />
+		<conditionSkill level="1" skillID="11000291" skillTarget="1">
+			<beginCondition probability="1" allowBattleRidingState="1" />
+		</conditionSkill>
+		<motion>
+			<motionProperty sequenceName="Striker_ValkanPunch_B" sequenceSpeed="1.6" strTagEffects="e0=CH/Skill/Striker/Eff_Striker_ValkanPunchEX_Cast_01.xml,e1=CH/Skill/Striker/Eff_Striker_ValkanPunchEX_Cast_02.xml,e2=CH/Skill/Striker/Eff_Striker_ValkanPunchEX_Cast_03.xml" />
+			<attack point="p0" targetCount="8" direction="2" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="15" />
+				<rangeProperty rangeType="box" distance="440" rangeAdd="0.000000,25.000000,0.000000" height="150" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="1.47" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+			</attack>
+			<attack point="p1" targetCount="8" direction="1" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="15" />
+				<rangeProperty rangeType="box" distance="440" rangeAdd="0.000000,25.000000,0.000000" height="150" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="1.47" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+			</attack>
+			<attack point="p2" targetCount="8" direction="1" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="15" />
+				<rangeProperty rangeType="box" distance="440" rangeAdd="0.000000,25.000000,0.000000" height="150" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="1.47" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+			</attack>
+			<attack point="p3" targetCount="8" direction="2" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="15" />
+				<rangeProperty rangeType="box" distance="440" rangeAdd="0.000000,25.000000,0.000000" height="150" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="1.47" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+			</attack>
+			<attack point="p4" targetCount="8" direction="1" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="15" />
+				<rangeProperty rangeType="box" distance="440" rangeAdd="0.000000,25.000000,0.000000" height="150" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="1.47" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+			</attack>
+			<attack point="p5" targetCount="8" direction="1" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="15" />
+				<rangeProperty rangeType="box" distance="440" rangeAdd="0.000000,25.000000,0.000000" height="150" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="1.47" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+			</attack>
+			<attack point="p6" targetCount="8" direction="1" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="15" />
+				<rangeProperty rangeType="box" distance="440" rangeAdd="0.000000,25.000000,0.000000" height="150" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="1.47" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+			</attack>
+			<attack point="p7" targetCount="8" direction="1" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="15" />
+				<rangeProperty rangeType="box" distance="440" rangeAdd="0.000000,25.000000,0.000000" height="150" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="1.47" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+			</attack>
+			<attack point="p8" targetCount="8" direction="1" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="15" />
+				<rangeProperty rangeType="box" distance="440" rangeAdd="0.000000,25.000000,0.000000" height="150" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="1.47" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+			</attack>
+			<attack point="p9" targetCount="8" direction="1" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="15" />
+				<rangeProperty rangeType="box" distance="440" rangeAdd="0.000000,25.000000,0.000000" height="150" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="1.47" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+			</attack>
+			<attack point="p10" targetCount="8" direction="1" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="15" />
+				<rangeProperty rangeType="box" distance="440" rangeAdd="0.000000,25.000000,0.000000" height="150" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="1.47" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+			</attack>
+			<attack point="p11" targetCount="8" direction="1" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="15" />
+				<rangeProperty rangeType="box" distance="440" rangeAdd="0.000000,25.000000,0.000000" height="150" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="1.47" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+			</attack>
+			<attack point="p12" targetCount="8" direction="2" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="15" />
+				<rangeProperty rangeType="box" distance="490" rangeAdd="0.000000,25.000000,0.000000" height="150" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="4.21" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+			</attack>
+		</motion>
+	</level>
+	<level value="8" feature="JobChange_02">
+		<beginCondition probability="1" cooldownTime="0.3">
+			<stat hp="1" />
+		</beginCondition>
+		<changeSkill originSkillID="11000191" originSkillLevel="8" />
+		<autoTargeting autoTargetingMaxDegree="180" />
+		<push back="150" />
+		<conditionSkill level="1" skillID="11000291" skillTarget="1">
+			<beginCondition probability="1" allowBattleRidingState="1" />
+		</conditionSkill>
+		<motion>
+			<motionProperty sequenceName="Striker_ValkanPunch_B" sequenceSpeed="1.6" strTagEffects="e0=CH/Skill/Striker/Eff_Striker_ValkanPunchEX_Cast_01.xml,e1=CH/Skill/Striker/Eff_Striker_ValkanPunchEX_Cast_02.xml,e2=CH/Skill/Striker/Eff_Striker_ValkanPunchEX_Cast_03.xml" />
+			<attack point="p0" targetCount="8" direction="2" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="15" />
+				<rangeProperty rangeType="box" distance="440" rangeAdd="0.000000,25.000000,0.000000" height="150" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="1.56" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+			</attack>
+			<attack point="p1" targetCount="8" direction="1" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="15" />
+				<rangeProperty rangeType="box" distance="440" rangeAdd="0.000000,25.000000,0.000000" height="150" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="1.56" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+			</attack>
+			<attack point="p2" targetCount="8" direction="1" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="15" />
+				<rangeProperty rangeType="box" distance="440" rangeAdd="0.000000,25.000000,0.000000" height="150" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="1.56" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+			</attack>
+			<attack point="p3" targetCount="8" direction="2" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="15" />
+				<rangeProperty rangeType="box" distance="440" rangeAdd="0.000000,25.000000,0.000000" height="150" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="1.56" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+			</attack>
+			<attack point="p4" targetCount="8" direction="1" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="15" />
+				<rangeProperty rangeType="box" distance="440" rangeAdd="0.000000,25.000000,0.000000" height="150" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="1.56" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+			</attack>
+			<attack point="p5" targetCount="8" direction="1" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="15" />
+				<rangeProperty rangeType="box" distance="440" rangeAdd="0.000000,25.000000,0.000000" height="150" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="1.56" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+			</attack>
+			<attack point="p6" targetCount="8" direction="1" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="15" />
+				<rangeProperty rangeType="box" distance="440" rangeAdd="0.000000,25.000000,0.000000" height="150" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="1.56" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+			</attack>
+			<attack point="p7" targetCount="8" direction="1" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="15" />
+				<rangeProperty rangeType="box" distance="440" rangeAdd="0.000000,25.000000,0.000000" height="150" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="1.56" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+			</attack>
+			<attack point="p8" targetCount="8" direction="1" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="15" />
+				<rangeProperty rangeType="box" distance="440" rangeAdd="0.000000,25.000000,0.000000" height="150" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="1.56" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+			</attack>
+			<attack point="p9" targetCount="8" direction="1" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="15" />
+				<rangeProperty rangeType="box" distance="440" rangeAdd="0.000000,25.000000,0.000000" height="150" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="1.56" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+			</attack>
+			<attack point="p10" targetCount="8" direction="1" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="15" />
+				<rangeProperty rangeType="box" distance="440" rangeAdd="0.000000,25.000000,0.000000" height="150" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="1.56" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+			</attack>
+			<attack point="p11" targetCount="8" direction="1" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="15" />
+				<rangeProperty rangeType="box" distance="440" rangeAdd="0.000000,25.000000,0.000000" height="150" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="1.56" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+			</attack>
+			<attack point="p12" targetCount="8" direction="2" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="15" />
+				<rangeProperty rangeType="box" distance="490" rangeAdd="0.000000,25.000000,0.000000" height="150" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="4.5" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+			</attack>
+		</motion>
+	</level>
+	<level value="9" feature="JobChange_02">
+		<beginCondition probability="1" cooldownTime="0.3">
+			<stat hp="1" />
+		</beginCondition>
+		<changeSkill originSkillID="11000191" originSkillLevel="9" />
+		<autoTargeting autoTargetingMaxDegree="180" />
+		<push back="150" />
+		<conditionSkill level="1" skillID="11000291" skillTarget="1">
+			<beginCondition probability="1" allowBattleRidingState="1" />
+		</conditionSkill>
+		<motion>
+			<motionProperty sequenceName="Striker_ValkanPunch_B" sequenceSpeed="1.6" strTagEffects="e0=CH/Skill/Striker/Eff_Striker_ValkanPunchEX_Cast_01.xml,e1=CH/Skill/Striker/Eff_Striker_ValkanPunchEX_Cast_02.xml,e2=CH/Skill/Striker/Eff_Striker_ValkanPunchEX_Cast_03.xml" />
+			<attack point="p0" targetCount="8" direction="2" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="15" />
+				<rangeProperty rangeType="box" distance="440" rangeAdd="0.000000,25.000000,0.000000" height="150" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="1.65" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+			</attack>
+			<attack point="p1" targetCount="8" direction="1" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="15" />
+				<rangeProperty rangeType="box" distance="440" rangeAdd="0.000000,25.000000,0.000000" height="150" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="1.65" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+			</attack>
+			<attack point="p2" targetCount="8" direction="1" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="15" />
+				<rangeProperty rangeType="box" distance="440" rangeAdd="0.000000,25.000000,0.000000" height="150" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="1.65" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+			</attack>
+			<attack point="p3" targetCount="8" direction="2" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="15" />
+				<rangeProperty rangeType="box" distance="440" rangeAdd="0.000000,25.000000,0.000000" height="150" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="1.65" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+			</attack>
+			<attack point="p4" targetCount="8" direction="1" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="15" />
+				<rangeProperty rangeType="box" distance="440" rangeAdd="0.000000,25.000000,0.000000" height="150" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="1.65" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+			</attack>
+			<attack point="p5" targetCount="8" direction="1" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="15" />
+				<rangeProperty rangeType="box" distance="440" rangeAdd="0.000000,25.000000,0.000000" height="150" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="1.65" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+			</attack>
+			<attack point="p6" targetCount="8" direction="1" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="15" />
+				<rangeProperty rangeType="box" distance="440" rangeAdd="0.000000,25.000000,0.000000" height="150" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="1.65" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+			</attack>
+			<attack point="p7" targetCount="8" direction="1" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="15" />
+				<rangeProperty rangeType="box" distance="440" rangeAdd="0.000000,25.000000,0.000000" height="150" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="1.65" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+			</attack>
+			<attack point="p8" targetCount="8" direction="1" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="15" />
+				<rangeProperty rangeType="box" distance="440" rangeAdd="0.000000,25.000000,0.000000" height="150" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="1.65" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+			</attack>
+			<attack point="p9" targetCount="8" direction="1" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="15" />
+				<rangeProperty rangeType="box" distance="440" rangeAdd="0.000000,25.000000,0.000000" height="150" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="1.65" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+			</attack>
+			<attack point="p10" targetCount="8" direction="1" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="15" />
+				<rangeProperty rangeType="box" distance="440" rangeAdd="0.000000,25.000000,0.000000" height="150" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="1.65" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+			</attack>
+			<attack point="p11" targetCount="8" direction="1" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="15" />
+				<rangeProperty rangeType="box" distance="440" rangeAdd="0.000000,25.000000,0.000000" height="150" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="1.65" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+			</attack>
+			<attack point="p12" targetCount="8" direction="2" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="15" />
+				<rangeProperty rangeType="box" distance="490" rangeAdd="0.000000,25.000000,0.000000" height="150" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="4.79" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+			</attack>
+		</motion>
+	</level>
+	<level value="10" feature="JobChange_02">
+		<beginCondition probability="1" cooldownTime="0.3">
+			<stat hp="1" />
+		</beginCondition>
+		<changeSkill originSkillID="11000191" originSkillLevel="10" />
+		<autoTargeting autoTargetingMaxDegree="180" />
+		<push back="150" />
+		<conditionSkill level="1" skillID="11000291" skillTarget="1">
+			<beginCondition probability="1" allowBattleRidingState="1" />
+		</conditionSkill>
+		<motion>
+			<motionProperty sequenceName="Striker_ValkanPunch_B" sequenceSpeed="1.6" strTagEffects="e0=CH/Skill/Striker/Eff_Striker_ValkanPunchEX_Cast_01.xml,e1=CH/Skill/Striker/Eff_Striker_ValkanPunchEX_Cast_02.xml,e2=CH/Skill/Striker/Eff_Striker_ValkanPunchEX_Cast_03.xml" />
+			<attack point="p0" targetCount="8" direction="2" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="15" />
+				<rangeProperty rangeType="box" distance="440" rangeAdd="0.000000,25.000000,0.000000" height="150" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="1.74" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+			</attack>
+			<attack point="p1" targetCount="8" direction="1" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="15" />
+				<rangeProperty rangeType="box" distance="440" rangeAdd="0.000000,25.000000,0.000000" height="150" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="1.74" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+			</attack>
+			<attack point="p2" targetCount="8" direction="1" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="15" />
+				<rangeProperty rangeType="box" distance="440" rangeAdd="0.000000,25.000000,0.000000" height="150" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="1.74" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+			</attack>
+			<attack point="p3" targetCount="8" direction="2" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="15" />
+				<rangeProperty rangeType="box" distance="440" rangeAdd="0.000000,25.000000,0.000000" height="150" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="1.74" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+			</attack>
+			<attack point="p4" targetCount="8" direction="1" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="15" />
+				<rangeProperty rangeType="box" distance="440" rangeAdd="0.000000,25.000000,0.000000" height="150" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="1.74" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+			</attack>
+			<attack point="p5" targetCount="8" direction="1" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="15" />
+				<rangeProperty rangeType="box" distance="440" rangeAdd="0.000000,25.000000,0.000000" height="150" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="1.74" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+			</attack>
+			<attack point="p6" targetCount="8" direction="1" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="15" />
+				<rangeProperty rangeType="box" distance="440" rangeAdd="0.000000,25.000000,0.000000" height="150" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="1.74" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+			</attack>
+			<attack point="p7" targetCount="8" direction="1" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="15" />
+				<rangeProperty rangeType="box" distance="440" rangeAdd="0.000000,25.000000,0.000000" height="150" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="1.74" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+			</attack>
+			<attack point="p8" targetCount="8" direction="1" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="15" />
+				<rangeProperty rangeType="box" distance="440" rangeAdd="0.000000,25.000000,0.000000" height="150" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="1.74" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+			</attack>
+			<attack point="p9" targetCount="8" direction="1" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="15" />
+				<rangeProperty rangeType="box" distance="440" rangeAdd="0.000000,25.000000,0.000000" height="150" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="1.74" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+			</attack>
+			<attack point="p10" targetCount="8" direction="1" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="15" />
+				<rangeProperty rangeType="box" distance="440" rangeAdd="0.000000,25.000000,0.000000" height="150" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="1.74" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+			</attack>
+			<attack point="p11" targetCount="8" direction="1" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="15" />
+				<rangeProperty rangeType="box" distance="440" rangeAdd="0.000000,25.000000,0.000000" height="150" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="1.74" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+			</attack>
+			<attack point="p12" targetCount="8" direction="2" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="15" />
+				<rangeProperty rangeType="box" distance="490" rangeAdd="0.000000,25.000000,0.000000" height="150" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="5.08" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+			</attack>
+		</motion>
+	</level>
+	<level value="11" feature="JobChange_02">
+		<beginCondition probability="1" cooldownTime="0.3">
+			<stat hp="1" />
+		</beginCondition>
+		<changeSkill originSkillID="11000191" originSkillLevel="11" />
+		<autoTargeting autoTargetingMaxDegree="180" />
+		<push back="150" />
+		<conditionSkill level="1" skillID="11000291" skillTarget="1">
+			<beginCondition probability="1" allowBattleRidingState="1" />
+		</conditionSkill>
+		<motion>
+			<motionProperty sequenceName="Striker_ValkanPunch_B" sequenceSpeed="1.6" strTagEffects="e0=CH/Skill/Striker/Eff_Striker_ValkanPunchEX_Cast_01.xml,e1=CH/Skill/Striker/Eff_Striker_ValkanPunchEX_Cast_02.xml,e2=CH/Skill/Striker/Eff_Striker_ValkanPunchEX_Cast_03.xml" />
+			<attack point="p0" targetCount="8" direction="2" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="15" />
+				<rangeProperty rangeType="box" distance="440" rangeAdd="0.000000,25.000000,0.000000" height="150" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="1.83" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+			</attack>
+			<attack point="p1" targetCount="8" direction="1" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="15" />
+				<rangeProperty rangeType="box" distance="440" rangeAdd="0.000000,25.000000,0.000000" height="150" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="1.83" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+			</attack>
+			<attack point="p2" targetCount="8" direction="1" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="15" />
+				<rangeProperty rangeType="box" distance="440" rangeAdd="0.000000,25.000000,0.000000" height="150" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="1.83" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+			</attack>
+			<attack point="p3" targetCount="8" direction="2" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="15" />
+				<rangeProperty rangeType="box" distance="440" rangeAdd="0.000000,25.000000,0.000000" height="150" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="1.83" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+			</attack>
+			<attack point="p4" targetCount="8" direction="1" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="15" />
+				<rangeProperty rangeType="box" distance="440" rangeAdd="0.000000,25.000000,0.000000" height="150" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="1.83" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+			</attack>
+			<attack point="p5" targetCount="8" direction="1" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="15" />
+				<rangeProperty rangeType="box" distance="440" rangeAdd="0.000000,25.000000,0.000000" height="150" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="1.83" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+			</attack>
+			<attack point="p6" targetCount="8" direction="1" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="15" />
+				<rangeProperty rangeType="box" distance="440" rangeAdd="0.000000,25.000000,0.000000" height="150" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="1.83" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+			</attack>
+			<attack point="p7" targetCount="8" direction="1" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="15" />
+				<rangeProperty rangeType="box" distance="440" rangeAdd="0.000000,25.000000,0.000000" height="150" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="1.83" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+			</attack>
+			<attack point="p8" targetCount="8" direction="1" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="15" />
+				<rangeProperty rangeType="box" distance="440" rangeAdd="0.000000,25.000000,0.000000" height="150" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="1.83" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+			</attack>
+			<attack point="p9" targetCount="8" direction="1" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="15" />
+				<rangeProperty rangeType="box" distance="440" rangeAdd="0.000000,25.000000,0.000000" height="150" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="1.83" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+			</attack>
+			<attack point="p10" targetCount="8" direction="1" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="15" />
+				<rangeProperty rangeType="box" distance="440" rangeAdd="0.000000,25.000000,0.000000" height="150" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="1.83" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+			</attack>
+			<attack point="p11" targetCount="8" direction="1" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="15" />
+				<rangeProperty rangeType="box" distance="440" rangeAdd="0.000000,25.000000,0.000000" height="150" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="1.83" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+			</attack>
+			<attack point="p12" targetCount="8" direction="2" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="15" />
+				<rangeProperty rangeType="box" distance="490" rangeAdd="0.000000,25.000000,0.000000" height="150" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="5.37" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+			</attack>
+		</motion>
+	</level>
+	<level value="12" feature="JobChange_02">
+		<beginCondition probability="1" cooldownTime="0.3">
+			<stat hp="1" />
+		</beginCondition>
+		<changeSkill originSkillID="11000191" originSkillLevel="12" />
+		<autoTargeting autoTargetingMaxDegree="180" />
+		<push back="150" />
+		<conditionSkill level="1" skillID="11000291" skillTarget="1">
+			<beginCondition probability="1" allowBattleRidingState="1" />
+		</conditionSkill>
+		<motion>
+			<motionProperty sequenceName="Striker_ValkanPunch_B" sequenceSpeed="1.6" strTagEffects="e0=CH/Skill/Striker/Eff_Striker_ValkanPunchEX_Cast_01.xml,e1=CH/Skill/Striker/Eff_Striker_ValkanPunchEX_Cast_02.xml,e2=CH/Skill/Striker/Eff_Striker_ValkanPunchEX_Cast_03.xml" />
+			<attack point="p0" targetCount="8" direction="2" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="15" />
+				<rangeProperty rangeType="box" distance="440" rangeAdd="0.000000,25.000000,0.000000" height="150" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="1.92" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+			</attack>
+			<attack point="p1" targetCount="8" direction="1" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="15" />
+				<rangeProperty rangeType="box" distance="440" rangeAdd="0.000000,25.000000,0.000000" height="150" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="1.92" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+			</attack>
+			<attack point="p2" targetCount="8" direction="1" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="15" />
+				<rangeProperty rangeType="box" distance="440" rangeAdd="0.000000,25.000000,0.000000" height="150" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="1.92" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+			</attack>
+			<attack point="p3" targetCount="8" direction="2" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="15" />
+				<rangeProperty rangeType="box" distance="440" rangeAdd="0.000000,25.000000,0.000000" height="150" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="1.92" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+			</attack>
+			<attack point="p4" targetCount="8" direction="1" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="15" />
+				<rangeProperty rangeType="box" distance="440" rangeAdd="0.000000,25.000000,0.000000" height="150" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="1.92" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+			</attack>
+			<attack point="p5" targetCount="8" direction="1" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="15" />
+				<rangeProperty rangeType="box" distance="440" rangeAdd="0.000000,25.000000,0.000000" height="150" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="1.92" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+			</attack>
+			<attack point="p6" targetCount="8" direction="1" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="15" />
+				<rangeProperty rangeType="box" distance="440" rangeAdd="0.000000,25.000000,0.000000" height="150" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="1.92" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+			</attack>
+			<attack point="p7" targetCount="8" direction="1" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="15" />
+				<rangeProperty rangeType="box" distance="440" rangeAdd="0.000000,25.000000,0.000000" height="150" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="1.92" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+			</attack>
+			<attack point="p8" targetCount="8" direction="1" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="15" />
+				<rangeProperty rangeType="box" distance="440" rangeAdd="0.000000,25.000000,0.000000" height="150" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="1.92" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+			</attack>
+			<attack point="p9" targetCount="8" direction="1" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="15" />
+				<rangeProperty rangeType="box" distance="440" rangeAdd="0.000000,25.000000,0.000000" height="150" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="1.92" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+			</attack>
+			<attack point="p10" targetCount="8" direction="1" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="15" />
+				<rangeProperty rangeType="box" distance="440" rangeAdd="0.000000,25.000000,0.000000" height="150" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="1.92" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+			</attack>
+			<attack point="p11" targetCount="8" direction="1" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="15" />
+				<rangeProperty rangeType="box" distance="440" rangeAdd="0.000000,25.000000,0.000000" height="150" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="1.92" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+			</attack>
+			<attack point="p12" targetCount="8" direction="2" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+				<pauseProperty pauseShakeDuration="0.1" pauseAmp="15" />
+				<rangeProperty rangeType="box" distance="490" rangeAdd="0.000000,25.000000,0.000000" height="150" width="300" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="5.66" effectHit="CH/Weapon/Knuckle/Eff_Knuckle_Fire_Hit_01.xml" attackMaterial="1" />
+			</attack>
+		</motion>
+	</level>
+</ms2>

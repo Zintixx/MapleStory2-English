@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 파싱해서 사용하는 데이터이니 직접 수정하지 마세요 -->
+<ms2 feature="">
+	<basic>
+		<ui attackType="1" />
+		<stateAttr ignoreReduceCooldown="1" />
+	</basic>
+	<level value="1">
+		<beginCondition probability="1">
+			<stat hp="1" />
+		</beginCondition>
+		<motion>
+			<attack point="p0" attacktype="1" brokenOffence="99" brokenForce="5" unrideOnHit="1">
+				<rangeProperty rangeType="cylinder" distance="4000" height="1100" />
+				<damageProperty count="0" attackMaterial="1000" superArmorBreak="1" />
+			</attack>
+		</motion>
+	</level>
+</ms2>

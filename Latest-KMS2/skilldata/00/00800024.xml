@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 파싱해서 사용하는 데이터이니 직접 수정하지 마세요 -->
+<ms2 feature="">
+	<basic>
+		<ui attackType="1" />
+		<kinds subType="1" rangeType="1" unrideOnUse="1" />
+		<stateAttr autoTargetingType="1" moveType="1" ignoreReduceCooldown="1" />
+	</basic>
+	<level value="1">
+		<beginCondition probability="1" allowMapleSurvival="1">
+			<stat hp="1" />
+			<weapon lh="31" rh="31" />
+		</beginCondition>
+		<autoTargeting autoTargetingMaxDegree="90" />
+		<push back="150" />
+		<combo comboSkill="1" comboOriginSkill="800021" inputSkill="800021" outputSkill="800021" />
+		<motion>
+			<motionProperty sequenceName="Dagger_Attack_04_B" strTagEffects="e0=CH/Weapon/Dagger/Eff_DaggerDagger_Attack04_Cast_01.xml" keyMove="50" />
+			<attack point="p0" pointGroupID="800024" targetCount="3" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+				<rangeProperty rangeType="box" distance="200" height="150" width="200" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty hand="1" rate="0.4" hitSpeedRate="0.8" effectHit="CH/Weapon/Dagger/Eff_Dagger_Hit_01.xml" />
+			</attack>
+		</motion>
+	</level>
+</ms2>

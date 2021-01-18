@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 파싱해서 사용하는 데이터이니 직접 수정하지 마세요 -->
+<ms2 feature="">
+	<basic>
+		<ui attackType="2" />
+		<kinds element="5" />
+	</basic>
+	<level value="1">
+		<beginCondition probability="1">
+			<stat hp="1" />
+		</beginCondition>
+		<motion>
+			<motionProperty motionEffect="NPC/Skill/Papulatus/Eff_Papulatus_PalmLaser_Bomb_Ready.xml" splashInvokeEffect="NPC/Skill/Papulatus/Eff_Papulatus_PalmLaser_Bomb_Attack.xml" faceTarget="0" />
+			<attack point="p0" targetCount="50" attacktype="2" brokenOffence="2" brokenForce="3" unrideOnHit="1">
+				<rangeProperty rangeType="cylinder" distance="200" height="350" applyTarget="5" castTarget="1" />
+				<damageProperty rate="2" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="106" />
+			</attack>
+		</motion>
+	</level>
+</ms2>

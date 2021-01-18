@@ -2,16 +2,16 @@
 <!-- 파싱해서 사용하는 데이터이니 직접 수정하지 마세요 -->
 <ms2>
 	<level>
-		<beginCondition applyPvPZoneType="1">
+		<beginCondition probability="1" applyPvPZoneType="1">
 			<job code="60" />
-			<owner hasBuffID="90050582" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="5" hasBuffCountCompare="Equals" />
+			<owner hasBuffID="90050582" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="5" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
 		</beginCondition>
 		<BasicProperty level="1" keepCondition="99" doNotClearEffectFromEnterPVPZone="1" />
 		<MotionProperty startEffect="Item/Skill/Eff_Item_BalrogWeapon_FireAura_Start_01.xml" keepEffect="Item/Skill/Eff_Item_BalrogWeapon_FireAura5_Keep_01.xml" stopEffect="Item/Skill/Eff_Item_BalrogWeapon_FireAura5_Stop_01.xml" />
-		<UIProperty iconOnOff="0" />
+		<UIProperty icon="" iconOnOff="0" />
 		<conditionSkill level="1" skillID="90050588" skillTarget="2">
-			<beginCondition>
-				<owner hasBuffID="0" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="0" hasBuffCountCompare="Equals" eventCondition="6" />
+			<beginCondition probability="1">
+				<owner hasBuffID="0" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="0" hasBuffCountCompare="Equals" eventCondition="6" eventSkillID="" eventEffectID="" />
 			</beginCondition>
 		</conditionSkill>
 	</level>

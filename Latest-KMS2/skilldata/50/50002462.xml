@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 파싱해서 사용하는 데이터이니 직접 수정하지 마세요 -->
+<ms2 feature="">
+	<basic>
+		<ui attackType="2" />
+		<kinds rangeType="2" element="7" />
+	</basic>
+	<level value="1">
+		<beginCondition probability="1">
+			<stat hp="1" />
+		</beginCondition>
+		<detectProperty rangeType="cylinder" distance="3000" rangeAdd="0.000000,0.000000,100.000000" height="400" />
+		<motion>
+			<motionProperty sequenceName="Attack_01_C" sequenceSpeed="0.8" motionEffect="NPC/Skill/StatueAnimal/Eff_StatueAnimal02_Attack_01_C.xml" faceTarget="0" />
+			<attack point="p0" targetCount="1" magicPathID="7521" direction="0" attacktype="2" unrideOnHit="1" compulsionType="1">
+				<rangeProperty rangeType="cylinder" distance="3000" rangeOffset="0.000000,0.000000,-150.000000" height="100" applyTarget="2" castTarget="1" />
+				<arrowProperty explosion="1" collision="50.000000,50.000000,50.000000" effect="NPC/Skill/StatueAnimal/Eff_StatueAnimal01_Attack_01_C_Order_Throw_Ball_Guided.xml" />
+				<damageProperty count="0" rate="0.01" effectHit="NPC/Skill/Pinkbean/Eff_Pinkbean_BiggerDeffenceUp_Cast.xml" attackMaterial="106" />
+				<conditionSkill level="1" skillID="50170017" skillTarget="2" skillOwner="1" />
+			</attack>
+		</motion>
+	</level>
+</ms2>

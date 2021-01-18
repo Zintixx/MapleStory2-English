@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 파싱해서 사용하는 데이터이니 직접 수정하지 마세요 -->
+<ms2 feature="">
+	<basic />
+	<level value="1">
+		<beginCondition probability="1">
+			<stat hp="1" />
+		</beginCondition>
+		<motion>
+			<motionProperty sequenceName="Attack_01_A" motionEffect="NPC/Skill/PuppetBunnySummoner/Eff_PuppetBunnySummoner_Crow_Cast.xml" faceTarget="0" />
+			<attack point="p0" attacktype="1" hitImmuneBreak="1" brokenOffence="1" brokenForce="1">
+				<rangeProperty rangeType="box" distance="650" height="200" width="200" applyTarget="1" castTarget="1" />
+				<arrowProperty rayPhysxTest="1" effect="NPC/Skill/Temp/Eff_Temp.xml" />
+				<damageProperty count="0" attackMaterial="6" />
+			</attack>
+		</motion>
+		<motion>
+			<motionProperty sequenceName="Attack_02_A" loopCount="1" faceTarget="0" />
+			<attack point="p0" attacktype="1" hitImmuneBreak="1" brokenOffence="1" brokenForce="1">
+				<rangeProperty rangeType="box" distance="500" height="250" width="200" applyTarget="1" castTarget="1" />
+				<arrowProperty rayPhysxTest="1" />
+				<damageProperty count="0" attackMaterial="6" />
+			</attack>
+		</motion>
+		<motion>
+			<motionProperty sequenceName="Attack_03_A" />
+			<attack point="p0" targetCount="1" magicPathID="5284" attacktype="1" hitImmuneBreak="1" brokenOffence="1" brokenForce="1">
+				<rangeProperty rangeType="box" distance="1000" height="200" width="300" applyTarget="1" castTarget="1" />
+				<arrowProperty overlap="1" rayPhysxTest="1" bounceType="1" bounceCount="3" bounceRadius="500" collision="100.000000,25.000000,50.000000" effect="NPC/Skill/PuppetBunnySummoner/Eff_PuppetBunnySummoner_Crow_Ball.xml" />
+				<damageProperty rate="1" effectHit="NPC/Skill/PuppetBunnySummoner/Eff_PuppetBunnySummoner_Crow_Ball_Hit.xml" attackMaterial="6" />
+				<conditionSkill level="1" skillID="50160004" skillTarget="2" />
+			</attack>
+		</motion>
+	</level>
+</ms2>

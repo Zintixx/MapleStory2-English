@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 파싱해서 사용하는 데이터이니 직접 수정하지 마세요 -->
+<ms2 feature="">
+	<basic>
+		<ui icon="./Data/Resource/Image/Skill/Icon/10300021.png" attackType="1" />
+		<kinds subType="2" rangeType="2" element="7" immediateActive="1" />
+		<stateAttr superArmor="3" autoTargetingType="1" keyIsDown="1" ignoreReduceCooldown="1" />
+	</basic>
+	<level value="1">
+		<beginCondition probability="1" allowBattleRidingState="1" onlyBattleRidingState="1">
+			<stat hp="1" />
+		</beginCondition>
+		<autoTargeting autoTargetingMaxDegree="45" />
+		<motion>
+			<motionProperty sequenceName="Attack_01_A" sequenceSpeed="0.5" motionEffect="NPC/Skill/Machinegun/Eff_Machinegun_Attack_01_B.xml" IgnoreOptimalHideCastEffect="true" IgnoreOptimalHideEndEffect="true" IgnoreOptimalHideSplashInvokeEffect="true" IgnoreOptimalHideSplashEndEffect="true" holdWeapon="0" />
+			<attack point="p0" targetCount="50" attacktype="1" hitImmuneBreak="5" brokenOffence="10" brokenForce="1" unrideOnHit="1">
+				<pauseProperty pauseDuration="0.5" pauseShakeDuration="0.1" pauseAmp="10" />
+				<rangeProperty rangeType="frustum" distance="700" height="200" width="200" endWidth="900" applyTarget="1" />
+				<damageProperty rate="1.3" hitPauseTime="0.3" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" IgnoreOptimalHideDamageHitEffect="true" IgnoreOptimalHideDamageRemainEffect="true" push="1" pushdistance="150" pushduration="0.3" pushEaseType="1" attackMaterial="9" />
+				<conditionSkill level="1" skillID="99910372" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
+					<beginCondition probability="1" allowBattleRidingState="1" onlyBattleRidingState="1" />
+				</conditionSkill>
+			</attack>
+		</motion>
+	</level>
+</ms2>

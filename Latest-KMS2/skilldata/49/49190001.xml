@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 파싱해서 사용하는 데이터이니 직접 수정하지 마세요 -->
+<ms2 feature="">
+	<basic>
+		<ui attackType="2" />
+		<kinds rangeType="2" element="1" />
+	</basic>
+	<level value="1">
+		<beginCondition probability="1">
+			<stat hp="1" />
+		</beginCondition>
+		<detectProperty rangeType="cylinder" distance="3000" rangeOffset="0.000000,0.000000,-1000.000000" height="3000" width="300" />
+		<conditionSkill level="1" skillID="60072001" skillTarget="1">
+			<beginCondition probability="1" allowBattleRidingState="1" />
+		</conditionSkill>
+		<conditionSkill level="1" skillID="40356012" skillTarget="1">
+			<beginCondition probability="1" allowBattleRidingState="1" />
+		</conditionSkill>
+		<conditionSkill level="1" skillID="40356013" skillTarget="1">
+			<beginCondition probability="1" allowBattleRidingState="1" />
+		</conditionSkill>
+		<motion>
+			<motionProperty sequenceName="Attack_01_C" motionEffect="NPC/Skill/CannonWeaponNormal/Eff_CannonWeaponNormal_Attack_01_C_Cast_02.xml" />
+			<attack point="p0" targetCount="1" magicPathID="49063006" cubeMagicPathID="490630001" attacktype="2" brokenOffence="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+				<rangeProperty rangeType="box" distance="750" rangeOffset="0.000000,0.000000,-1000.000000" height="3000" width="800" applyTarget="1" castTarget="1" />
+				<arrowProperty bounceType="3" bounceCount="50" collision="50.000000,50.000000,50.000000" collisionAdd="25.000000,25.000000,25.000000" effect="NPC/Skill/CannonWeaponNormal/Eff_CannonWeaponNormal_Attack_01_C_Ball_02.xml" />
+				<damageProperty count="0" attackMaterial="1" />
+				<conditionSkill splash="1" level="1" skillID="49190002" delay="500" nonTargetActive="1" />
+			</attack>
+			<attack point="p1" targetCount="1" magicPathID="49063007" cubeMagicPathID="490630001" attacktype="2" brokenOffence="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+				<rangeProperty rangeType="box" distance="750" rangeOffset="0.000000,0.000000,-1000.000000" height="3000" width="800" applyTarget="1" castTarget="1" />
+				<arrowProperty bounceType="3" bounceCount="50" collision="50.000000,50.000000,50.000000" collisionAdd="25.000000,25.000000,25.000000" effect="NPC/Skill/CannonWeaponNormal/Eff_CannonWeaponNormal_Attack_01_C_Ball_02.xml" />
+				<damageProperty count="0" attackMaterial="1" />
+				<conditionSkill splash="1" level="1" skillID="49190003" delay="500" nonTargetActive="1" />
+			</attack>
+			<attack point="p2" targetCount="1" magicPathID="49063008" cubeMagicPathID="490630001" attacktype="2" brokenOffence="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+				<rangeProperty rangeType="box" distance="750" rangeOffset="0.000000,0.000000,-1000.000000" height="3000" width="800" applyTarget="1" castTarget="1" />
+				<arrowProperty bounceType="3" bounceCount="50" collision="50.000000,50.000000,50.000000" collisionAdd="25.000000,25.000000,25.000000" effect="NPC/Skill/CannonWeaponNormal/Eff_CannonWeaponNormal_Attack_01_C_Ball_02.xml" />
+				<damageProperty count="0" attackMaterial="1" />
+				<conditionSkill splash="1" level="1" skillID="49190004" delay="500" nonTargetActive="1" />
+			</attack>
+			<attack point="p3" targetCount="1" magicPathID="49063009" cubeMagicPathID="490630001" attacktype="2" brokenOffence="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+				<rangeProperty rangeType="box" distance="750" rangeOffset="0.000000,0.000000,-1000.000000" height="3000" width="800" applyTarget="1" castTarget="1" />
+				<arrowProperty bounceType="3" bounceCount="50" collision="50.000000,50.000000,50.000000" collisionAdd="25.000000,25.000000,25.000000" effect="NPC/Skill/CannonWeaponNormal/Eff_CannonWeaponNormal_Attack_01_C_Ball_02.xml" />
+				<damageProperty count="0" attackMaterial="1" />
+				<conditionSkill splash="1" level="1" skillID="49190005" delay="500" nonTargetActive="1" />
+			</attack>
+		</motion>
+	</level>
+</ms2>

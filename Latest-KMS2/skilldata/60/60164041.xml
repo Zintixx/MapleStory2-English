@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 파싱해서 사용하는 데이터이니 직접 수정하지 마세요 -->
+<ms2 feature="">
+	<basic>
+		<ui attackType="2" />
+		<kinds rangeType="2" element="7" />
+	</basic>
+	<level value="1">
+		<beginCondition probability="1">
+			<stat hp="1" />
+		</beginCondition>
+		<detectProperty rangeType="cylinder" distance="1200" rangeOffset="0.000000,300.000000,0.000000" height="900" />
+		<motion>
+			<motionProperty sequenceName="Attack_01_E" motionEffect="NPC/Skill/Mevidic/Eff_Mevidic_Attack_01_E_Cast.xml" faceTarget="0" />
+			<attack point="p0" targetCount="2" magicPathID="60164041" attacktype="2" brokenOffence="1" unrideOnHit="1">
+				<rangeProperty rangeType="cylinder" distance="1200" rangeOffset="0.000000,300.000000,0.000000" height="900" applyTarget="1" castTarget="1" />
+				<arrowProperty nonTarget="1" effectRay="NPC/Skill/Mevidic/Eff_Mevidic_Attack_01_E_Ray.xml" rayType="1" />
+				<damageProperty rate="0.45" effectHit="NPC/Skill/Mevidic/Eff_Mevidic_Attack_01_E_Hit.xml" attackMaterial="1" />
+			</attack>
+			<attack point="p1" targetCount="2" magicPathID="60164041" attacktype="2" brokenOffence="1" unrideOnHit="1">
+				<rangeProperty rangeType="cylinder" distance="1200" rangeOffset="0.000000,300.000000,0.000000" height="900" applyTarget="1" castTarget="1" />
+				<arrowProperty nonTarget="1" effectRay="NPC/Skill/Mevidic/Eff_Mevidic_Attack_01_E_Ray.xml" rayType="1" />
+				<damageProperty rate="0.45" effectHit="NPC/Skill/Mevidic/Eff_Mevidic_Attack_01_E_Hit.xml" attackMaterial="1" />
+			</attack>
+			<attack point="p2" targetCount="2" magicPathID="60164041" attacktype="2" brokenOffence="1" unrideOnHit="1">
+				<rangeProperty rangeType="cylinder" distance="1200" rangeOffset="0.000000,300.000000,0.000000" height="900" applyTarget="1" castTarget="1" />
+				<arrowProperty nonTarget="1" effectRay="NPC/Skill/Mevidic/Eff_Mevidic_Attack_01_E_Ray.xml" rayType="1" />
+				<damageProperty rate="0.45" effectHit="NPC/Skill/Mevidic/Eff_Mevidic_Attack_01_E_Hit.xml" attackMaterial="1" />
+			</attack>
+			<attack point="p3" targetCount="2" magicPathID="60164041" attacktype="2" brokenOffence="1" unrideOnHit="1">
+				<rangeProperty rangeType="cylinder" distance="1200" rangeOffset="0.000000,300.000000,0.000000" height="900" applyTarget="1" castTarget="1" />
+				<arrowProperty nonTarget="1" effectRay="NPC/Skill/Mevidic/Eff_Mevidic_Attack_01_E_Ray.xml" rayType="1" />
+				<damageProperty rate="0.45" effectHit="NPC/Skill/Mevidic/Eff_Mevidic_Attack_01_E_Hit.xml" attackMaterial="1" />
+			</attack>
+		</motion>
+	</level>
+</ms2>

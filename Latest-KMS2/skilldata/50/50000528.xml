@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 파싱해서 사용하는 데이터이니 직접 수정하지 마세요 -->
+<ms2 feature="">
+	<basic>
+		<ui attackType="1" />
+		<kinds element="5" />
+	</basic>
+	<level value="1">
+		<beginCondition probability="1">
+			<stat hp="1" />
+		</beginCondition>
+		<motion>
+			<motionProperty sequenceName="Attack_01_D" motionEffect="NPC/Skill/DarkSpirit/Eff_DarkSpirit_Attack_01_D.xml" faceTarget="0" doesPlayIdleOnSkillEnd="false" />
+			<attack point="p0" attacktype="1" unrideOnHit="1">
+				<rangeProperty rangeType="box" distance="2000" height="100" width="300" applyTarget="1" castTarget="1" />
+				<arrowProperty nonTarget="1" effect="NPC/Skill/Temp/Eff_Temp.xml" />
+				<damageProperty count="0" rate="1" attackMaterial="106" />
+			</attack>
+		</motion>
+	</level>
+	<level value="2">
+		<beginCondition probability="1">
+			<stat hp="1" />
+		</beginCondition>
+		<motion>
+			<motionProperty sequenceName="Attack_02_D" motionEffect="NPC/Skill/DarkSpirit/Eff_DarkSpirit_Attack_02_D.xml" loopCount="4" faceTarget="0" doesPlayIdleOnSkillEnd="false" />
+			<attack point="p0" attacktype="1" unrideOnHit="1">
+				<rangeProperty rangeType="box" distance="600" height="100" width="300" applyTarget="1" castTarget="1" />
+				<arrowProperty nonTarget="1" effect="NPC/Skill/Temp/Eff_Temp.xml" />
+				<damageProperty count="0" rate="1" attackMaterial="106" />
+			</attack>
+		</motion>
+	</level>
+	<level value="3">
+		<beginCondition probability="1">
+			<stat hp="1" />
+		</beginCondition>
+		<motion>
+			<motionProperty sequenceName="Attack_03_D" motionEffect="NPC/Skill/DarkSpirit/Eff_DarkSpirit_Attack_03_D.xml" movedistance="900" faceTarget="0" doesPlayIdleOnSkillEnd="false" />
+			<attack point="p0" attacktype="1" unrideOnHit="1">
+				<rangeProperty rangeType="box" distance="600" height="100" width="300" applyTarget="1" castTarget="1" />
+				<arrowProperty nonTarget="1" effect="NPC/Skill/Temp/Eff_Temp.xml" />
+				<damageProperty count="0" rate="1" attackMaterial="106" />
+			</attack>
+		</motion>
+	</level>
+	<level value="4">
+		<beginCondition probability="1">
+			<stat hp="1" />
+		</beginCondition>
+		<motion>
+			<motionProperty sequenceName="Attack_04_D" motionEffect="NPC/Skill/DarkSpirit/Eff_DarkSpirit_Attack_04_D.xml" faceTarget="0" doesPlayIdleOnSkillEnd="false" />
+			<attack point="p0" targetCount="10" attacktype="1" unrideOnHit="1">
+				<rangeProperty rangeType="cylinder" distance="230" height="100" applyTarget="1" castTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="106" />
+				<conditionSkill level="1" skillID="50000510" skillTarget="2" skillOwner="1">
+					<beginCondition probability="1">
+						<target hasBuffID="50000910" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="0" hasBuffCountCompare="Equals" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="1" skillID="50000195" skillTarget="2" skillOwner="1">
+					<beginCondition probability="1">
+						<target hasBuffID="50000510" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="0" hasBuffCountCompare="Equals" />
+					</beginCondition>
+				</conditionSkill>
+			</attack>
+		</motion>
+	</level>
+	<level value="22">
+		<beginCondition probability="1">
+			<stat hp="1" />
+		</beginCondition>
+		<motion>
+			<motionProperty sequenceName="Attack_02_D" motionEffect="NPC/Skill/DarkSpirit/Eff_DarkSpirit_Attack_02_D_Aura.xml" faceTarget="0" doesPlayIdleOnSkillEnd="false" />
+			<attack point="p0" targetCount="10" attacktype="1" unrideOnHit="1" compulsionType="1,3">
+				<rangeProperty rangeType="cylinder" distance="1000" rangeAdd="0.000000,0.000000,250.000000" rangeOffset="0.000000,0.000000,-30.000000" height="10" applyTarget="1" castTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty count="0" attackMaterial="106" />
+				<conditionSkill level="1" skillID="50000510" skillTarget="2" skillOwner="1">
+					<beginCondition probability="1">
+						<target hasBuffID="50000910" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="0" hasBuffCountCompare="Equals" />
+					</beginCondition>
+				</conditionSkill>
+				<conditionSkill level="1" skillID="50000195" skillTarget="2" skillOwner="1">
+					<beginCondition probability="1">
+						<target hasBuffID="50000510" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="0" hasBuffCountCompare="Equals" />
+					</beginCondition>
+				</conditionSkill>
+			</attack>
+		</motion>
+	</level>
+	<level value="33">
+		<beginCondition probability="1">
+			<stat hp="1" />
+		</beginCondition>
+		<motion>
+			<motionProperty sequenceName="Attack_03_D" motionEffect="NPC/Skill/DarkSpirit/Eff_DarkSpirit_Attack_03_D.xml" movedistance="500" faceTarget="0" doesPlayIdleOnSkillEnd="false" />
+			<attack point="p0" attacktype="1" unrideOnHit="1">
+				<rangeProperty rangeType="box" distance="600" height="100" width="300" applyTarget="1" castTarget="1" />
+				<arrowProperty nonTarget="1" effect="NPC/Skill/Temp/Eff_Temp.xml" />
+				<damageProperty count="0" rate="1" attackMaterial="106" />
+			</attack>
+		</motion>
+	</level>
+</ms2>

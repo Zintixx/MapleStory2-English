@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 파싱해서 사용하는 데이터이니 직접 수정하지 마세요 -->
+<ms2 feature="">
+	<basic feature="JobChange_01">
+		<ui icon="./Data/Resource/Image/skill/icon/10700203.png" exceptUI="1" attackType="1" />
+		<kinds subType="2" rangeType="1" jump="10700202" unrideOnUse="1" />
+		<stateAttr autoTargetingType="1" keyIsDown="1" cooldownGroupID="10700200" clearCooldownFromPVPZone="1" />
+	</basic>
+	<level value="1" feature="JobChange_01">
+		<beginCondition probability="1" cooldownTime="3" useCoolDownShowUI="1">
+			<requireEffect code="10700194" />
+			<stat hp="1" />
+			<weapon lh="31" rh="31" />
+		</beginCondition>
+		<changeSkill originSkillID="10700200" />
+		<autoTargeting autoTargetingMaxDegree="90" />
+		<push back="100" />
+		<consume>
+			<stat sp="50" />
+		</consume>
+		<combo inputSkill="10700202" outputSkill="10700203" />
+		<conditionSkill level="1" skillID="10700201" skillTarget="1">
+			<beginCondition probability="1" allowBattleRidingState="1" />
+		</conditionSkill>
+		<motion>
+			<motionProperty sequenceName="Thief_ShadowStep_01_B" strTagEffects="e0=CH/Skill/Thief/Eff_Thief_ShadowStep_Cast_04.xml" />
+			<attack point="p0" pointGroupID="10700181" targetCount="8" direction="2" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+				<pauseProperty pauseDuration="0.2" pauseShakeDuration="0.2" pauseAmp="20" />
+				<rangeProperty rangeType="box" distance="300" height="150" width="200" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="25.11" hitSpeedRate="0.8" effectHit="CH/Skill/Thief/Eff_Thief_ShadowStep_Hit_01.xml" />
+			</attack>
+		</motion>
+	</level>
+	<level value="2" feature="JobChange_01">
+		<beginCondition probability="1" cooldownTime="3" useCoolDownShowUI="1">
+			<requireEffect code="10700194" />
+			<stat hp="1" />
+			<weapon lh="31" rh="31" />
+		</beginCondition>
+		<changeSkill originSkillID="10700200" originSkillLevel="2" />
+		<autoTargeting autoTargetingMaxDegree="90" />
+		<push back="100" />
+		<consume>
+			<stat sp="50" />
+		</consume>
+		<combo inputSkill="10700202" outputSkill="10700203" />
+		<conditionSkill level="1" skillID="10700201" skillTarget="1">
+			<beginCondition probability="1" allowBattleRidingState="1" />
+		</conditionSkill>
+		<motion>
+			<motionProperty sequenceName="Thief_ShadowStep_01_B" strTagEffects="e0=CH/Skill/Thief/Eff_Thief_ShadowStep_Cast_04.xml" />
+			<attack point="p0" pointGroupID="10700181" targetCount="8" direction="2" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+				<pauseProperty pauseDuration="0.2" pauseShakeDuration="0.2" pauseAmp="20" />
+				<rangeProperty rangeType="box" distance="300" height="150" width="200" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="28.04" hitSpeedRate="0.8" effectHit="CH/Skill/Thief/Eff_Thief_ShadowStep_Hit_01.xml" />
+			</attack>
+		</motion>
+	</level>
+	<level value="3" feature="JobChange_01">
+		<beginCondition probability="1" cooldownTime="3" useCoolDownShowUI="1">
+			<requireEffect code="10700194" />
+			<stat hp="1" />
+			<weapon lh="31" rh="31" />
+		</beginCondition>
+		<changeSkill originSkillID="10700200" originSkillLevel="3" />
+		<autoTargeting autoTargetingMaxDegree="90" />
+		<push back="100" />
+		<consume>
+			<stat sp="50" />
+		</consume>
+		<combo inputSkill="10700202" outputSkill="10700203" />
+		<conditionSkill level="1" skillID="10700201" skillTarget="1">
+			<beginCondition probability="1" allowBattleRidingState="1" />
+		</conditionSkill>
+		<motion>
+			<motionProperty sequenceName="Thief_ShadowStep_01_B" strTagEffects="e0=CH/Skill/Thief/Eff_Thief_ShadowStep_Cast_04.xml" />
+			<attack point="p0" pointGroupID="10700181" targetCount="8" direction="2" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+				<pauseProperty pauseDuration="0.2" pauseShakeDuration="0.2" pauseAmp="20" />
+				<rangeProperty rangeType="box" distance="300" height="150" width="200" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="30.97" hitSpeedRate="0.8" effectHit="CH/Skill/Thief/Eff_Thief_ShadowStep_Hit_01.xml" />
+			</attack>
+		</motion>
+	</level>
+	<level value="4" feature="JobChange_01">
+		<beginCondition probability="1" cooldownTime="3" useCoolDownShowUI="1">
+			<requireEffect code="10700194" />
+			<stat hp="1" />
+			<weapon lh="31" rh="31" />
+		</beginCondition>
+		<changeSkill originSkillID="10700200" originSkillLevel="4" />
+		<autoTargeting autoTargetingMaxDegree="90" />
+		<push back="100" />
+		<consume>
+			<stat sp="50" />
+		</consume>
+		<combo inputSkill="10700202" outputSkill="10700203" />
+		<conditionSkill level="1" skillID="10700201" skillTarget="1">
+			<beginCondition probability="1" allowBattleRidingState="1" />
+		</conditionSkill>
+		<motion>
+			<motionProperty sequenceName="Thief_ShadowStep_01_B" strTagEffects="e0=CH/Skill/Thief/Eff_Thief_ShadowStep_Cast_04.xml" />
+			<attack point="p0" pointGroupID="10700181" targetCount="8" direction="2" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+				<pauseProperty pauseDuration="0.2" pauseShakeDuration="0.2" pauseAmp="20" />
+				<rangeProperty rangeType="box" distance="300" height="150" width="200" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="33.9" hitSpeedRate="0.8" effectHit="CH/Skill/Thief/Eff_Thief_ShadowStep_Hit_01.xml" />
+			</attack>
+		</motion>
+	</level>
+	<level value="5" feature="JobChange_01">
+		<beginCondition probability="1" cooldownTime="3" useCoolDownShowUI="1">
+			<requireEffect code="10700194" />
+			<stat hp="1" />
+			<weapon lh="31" rh="31" />
+		</beginCondition>
+		<changeSkill originSkillID="10700200" originSkillLevel="5" />
+		<autoTargeting autoTargetingMaxDegree="90" />
+		<push back="100" />
+		<consume>
+			<stat sp="50" />
+		</consume>
+		<combo inputSkill="10700202" outputSkill="10700203" />
+		<conditionSkill level="1" skillID="10700201" skillTarget="1">
+			<beginCondition probability="1" allowBattleRidingState="1" />
+		</conditionSkill>
+		<motion>
+			<motionProperty sequenceName="Thief_ShadowStep_01_B" strTagEffects="e0=CH/Skill/Thief/Eff_Thief_ShadowStep_Cast_04.xml" />
+			<attack point="p0" pointGroupID="10700181" targetCount="8" direction="2" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+				<pauseProperty pauseDuration="0.2" pauseShakeDuration="0.2" pauseAmp="20" />
+				<rangeProperty rangeType="box" distance="300" height="150" width="200" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="36.83" hitSpeedRate="0.8" effectHit="CH/Skill/Thief/Eff_Thief_ShadowStep_Hit_01.xml" />
+			</attack>
+		</motion>
+	</level>
+	<level value="6" feature="JobChange_01">
+		<beginCondition probability="1" cooldownTime="3" useCoolDownShowUI="1">
+			<requireEffect code="10700194" />
+			<stat hp="1" />
+			<weapon lh="31" rh="31" />
+		</beginCondition>
+		<changeSkill originSkillID="10700200" originSkillLevel="6" />
+		<autoTargeting autoTargetingMaxDegree="90" />
+		<push back="100" />
+		<consume>
+			<stat sp="50" />
+		</consume>
+		<combo inputSkill="10700202" outputSkill="10700203" />
+		<conditionSkill level="1" skillID="10700201" skillTarget="1">
+			<beginCondition probability="1" allowBattleRidingState="1" />
+		</conditionSkill>
+		<motion>
+			<motionProperty sequenceName="Thief_ShadowStep_01_B" strTagEffects="e0=CH/Skill/Thief/Eff_Thief_ShadowStep_Cast_04.xml" />
+			<attack point="p0" pointGroupID="10700181" targetCount="8" direction="2" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+				<pauseProperty pauseDuration="0.2" pauseShakeDuration="0.2" pauseAmp="20" />
+				<rangeProperty rangeType="box" distance="300" height="150" width="200" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="39.76" hitSpeedRate="0.8" effectHit="CH/Skill/Thief/Eff_Thief_ShadowStep_Hit_01.xml" />
+			</attack>
+		</motion>
+	</level>
+	<level value="7" feature="JobChange_01">
+		<beginCondition probability="1" cooldownTime="3" useCoolDownShowUI="1">
+			<requireEffect code="10700194" />
+			<stat hp="1" />
+			<weapon lh="31" rh="31" />
+		</beginCondition>
+		<changeSkill originSkillID="10700200" originSkillLevel="7" />
+		<autoTargeting autoTargetingMaxDegree="90" />
+		<push back="100" />
+		<consume>
+			<stat sp="50" />
+		</consume>
+		<combo inputSkill="10700202" outputSkill="10700203" />
+		<conditionSkill level="1" skillID="10700201" skillTarget="1">
+			<beginCondition probability="1" allowBattleRidingState="1" />
+		</conditionSkill>
+		<motion>
+			<motionProperty sequenceName="Thief_ShadowStep_01_B" strTagEffects="e0=CH/Skill/Thief/Eff_Thief_ShadowStep_Cast_04.xml" />
+			<attack point="p0" pointGroupID="10700181" targetCount="8" direction="2" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+				<pauseProperty pauseDuration="0.2" pauseShakeDuration="0.2" pauseAmp="20" />
+				<rangeProperty rangeType="box" distance="300" height="150" width="200" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="42.69" hitSpeedRate="0.8" effectHit="CH/Skill/Thief/Eff_Thief_ShadowStep_Hit_01.xml" />
+			</attack>
+		</motion>
+	</level>
+	<level value="8" feature="JobChange_01">
+		<beginCondition probability="1" cooldownTime="3" useCoolDownShowUI="1">
+			<requireEffect code="10700194" />
+			<stat hp="1" />
+			<weapon lh="31" rh="31" />
+		</beginCondition>
+		<changeSkill originSkillID="10700200" originSkillLevel="8" />
+		<autoTargeting autoTargetingMaxDegree="90" />
+		<push back="100" />
+		<consume>
+			<stat sp="50" />
+		</consume>
+		<combo inputSkill="10700202" outputSkill="10700203" />
+		<conditionSkill level="1" skillID="10700201" skillTarget="1">
+			<beginCondition probability="1" allowBattleRidingState="1" />
+		</conditionSkill>
+		<motion>
+			<motionProperty sequenceName="Thief_ShadowStep_01_B" strTagEffects="e0=CH/Skill/Thief/Eff_Thief_ShadowStep_Cast_04.xml" />
+			<attack point="p0" pointGroupID="10700181" targetCount="8" direction="2" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+				<pauseProperty pauseDuration="0.2" pauseShakeDuration="0.2" pauseAmp="20" />
+				<rangeProperty rangeType="box" distance="300" height="150" width="200" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="45.62" hitSpeedRate="0.8" effectHit="CH/Skill/Thief/Eff_Thief_ShadowStep_Hit_01.xml" />
+			</attack>
+		</motion>
+	</level>
+	<level value="9" feature="JobChange_01">
+		<beginCondition probability="1" cooldownTime="3" useCoolDownShowUI="1">
+			<requireEffect code="10700194" />
+			<stat hp="1" />
+			<weapon lh="31" rh="31" />
+		</beginCondition>
+		<changeSkill originSkillID="10700200" originSkillLevel="9" />
+		<autoTargeting autoTargetingMaxDegree="90" />
+		<push back="100" />
+		<consume>
+			<stat sp="50" />
+		</consume>
+		<combo inputSkill="10700202" outputSkill="10700203" />
+		<conditionSkill level="1" skillID="10700201" skillTarget="1">
+			<beginCondition probability="1" allowBattleRidingState="1" />
+		</conditionSkill>
+		<motion>
+			<motionProperty sequenceName="Thief_ShadowStep_01_B" strTagEffects="e0=CH/Skill/Thief/Eff_Thief_ShadowStep_Cast_04.xml" />
+			<attack point="p0" pointGroupID="10700181" targetCount="8" direction="2" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+				<pauseProperty pauseDuration="0.2" pauseShakeDuration="0.2" pauseAmp="20" />
+				<rangeProperty rangeType="box" distance="300" height="150" width="200" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="48.55" hitSpeedRate="0.8" effectHit="CH/Skill/Thief/Eff_Thief_ShadowStep_Hit_01.xml" />
+			</attack>
+		</motion>
+	</level>
+	<level value="10" feature="JobChange_01">
+		<beginCondition probability="1" cooldownTime="3" useCoolDownShowUI="1">
+			<requireEffect code="10700194" />
+			<stat hp="1" />
+			<weapon lh="31" rh="31" />
+		</beginCondition>
+		<changeSkill originSkillID="10700200" originSkillLevel="10" />
+		<autoTargeting autoTargetingMaxDegree="90" />
+		<push back="100" />
+		<consume>
+			<stat sp="50" />
+		</consume>
+		<combo inputSkill="10700202" outputSkill="10700203" />
+		<conditionSkill level="1" skillID="10700201" skillTarget="1">
+			<beginCondition probability="1" allowBattleRidingState="1" />
+		</conditionSkill>
+		<motion>
+			<motionProperty sequenceName="Thief_ShadowStep_01_B" strTagEffects="e0=CH/Skill/Thief/Eff_Thief_ShadowStep_Cast_04.xml" />
+			<attack point="p0" pointGroupID="10700181" targetCount="8" direction="2" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+				<pauseProperty pauseDuration="0.2" pauseShakeDuration="0.2" pauseAmp="20" />
+				<rangeProperty rangeType="box" distance="300" height="150" width="200" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="51.48" hitSpeedRate="0.8" effectHit="CH/Skill/Thief/Eff_Thief_ShadowStep_Hit_01.xml" />
+			</attack>
+		</motion>
+	</level>
+	<level value="11" feature="JobChange_01">
+		<beginCondition probability="1" cooldownTime="3" useCoolDownShowUI="1">
+			<requireEffect code="10700194" />
+			<stat hp="1" />
+			<weapon lh="31" rh="31" />
+		</beginCondition>
+		<changeSkill originSkillID="10700200" originSkillLevel="11" />
+		<autoTargeting autoTargetingMaxDegree="90" />
+		<push back="100" />
+		<consume>
+			<stat sp="50" />
+		</consume>
+		<combo inputSkill="10700202" outputSkill="10700203" />
+		<conditionSkill level="1" skillID="10700201" skillTarget="1">
+			<beginCondition probability="1" allowBattleRidingState="1" />
+		</conditionSkill>
+		<motion>
+			<motionProperty sequenceName="Thief_ShadowStep_01_B" strTagEffects="e0=CH/Skill/Thief/Eff_Thief_ShadowStep_Cast_04.xml" />
+			<attack point="p0" pointGroupID="10700181" targetCount="8" direction="2" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+				<pauseProperty pauseDuration="0.2" pauseShakeDuration="0.2" pauseAmp="20" />
+				<rangeProperty rangeType="box" distance="300" height="150" width="200" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="54.41" hitSpeedRate="0.8" effectHit="CH/Skill/Thief/Eff_Thief_ShadowStep_Hit_01.xml" />
+			</attack>
+		</motion>
+	</level>
+	<level value="12" feature="JobChange_01">
+		<beginCondition probability="1" cooldownTime="3" useCoolDownShowUI="1">
+			<requireEffect code="10700194" />
+			<stat hp="1" />
+			<weapon lh="31" rh="31" />
+		</beginCondition>
+		<changeSkill originSkillID="10700200" originSkillLevel="12" />
+		<autoTargeting autoTargetingMaxDegree="90" />
+		<push back="100" />
+		<consume>
+			<stat sp="50" />
+		</consume>
+		<combo inputSkill="10700202" outputSkill="10700203" />
+		<conditionSkill level="1" skillID="10700201" skillTarget="1">
+			<beginCondition probability="1" allowBattleRidingState="1" />
+		</conditionSkill>
+		<motion>
+			<motionProperty sequenceName="Thief_ShadowStep_01_B" strTagEffects="e0=CH/Skill/Thief/Eff_Thief_ShadowStep_Cast_04.xml" />
+			<attack point="p0" pointGroupID="10700181" targetCount="8" direction="2" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+				<pauseProperty pauseDuration="0.2" pauseShakeDuration="0.2" pauseAmp="20" />
+				<rangeProperty rangeType="box" distance="300" height="150" width="200" applyTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="57.34" hitSpeedRate="0.8" effectHit="CH/Skill/Thief/Eff_Thief_ShadowStep_Hit_01.xml" />
+			</attack>
+		</motion>
+	</level>
+</ms2>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 파싱해서 사용하는 데이터이니 직접 수정하지 마세요 -->
+<ms2 feature="">
+	<basic>
+		<ui attackType="2" />
+		<kinds rangeType="2" />
+	</basic>
+	<level value="1">
+		<beginCondition probability="1">
+			<stat hp="1" />
+		</beginCondition>
+		<detectProperty rangeType="frustum" distance="1400" rangeAdd="0.000000,0.000000,250.000000" height="480" width="100" endWidth="1200" />
+		<motion>
+			<motionProperty sequenceName="Attack_01_B" motionEffect="NPC/Skill/CerberosThreeHeadBrown/Eff_CerberosThreeHeadBrown_Attack_01_B.xml" faceTarget="0" />
+			<attack point="p99" targetCount="50" direction="4" attacktype="2" unrideOnHit="1" releaseObjectWeaponOnHit="0" compulsionType="1" grabTargetType="2">
+				<rangeProperty rangeType="box" distance="600" rangeOffset="0.000000,0.000000,170.000000" height="300" width="1000" applyTarget="1" castTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="0.01" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="20" pushduration="0.2" pushEaseType="1" attackMaterial="1" />
+				<conditionSkill level="1" skillID="50000245" skillTarget="2" skillOwner="1" />
+			</attack>
+		</motion>
+		<motion>
+			<motionProperty sequenceName="Attack_02_B" motionEffect="NPC/Skill/CerberosThreeHeadBrown/Eff_CerberosThreeHeadBrown_Attack_02_B.xml" faceTarget="0" />
+			<attack point="p0" targetCount="1" magicPathID="5370" cubeMagicPathID="50000349" direction="4" attacktype="2" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+				<rangeProperty rangeType="frustum" distance="1400" rangeAdd="0.000000,0.000000,250.000000" height="480" width="100" endWidth="1200" applyTarget="1" castTarget="1" />
+				<arrowProperty explosion="1" collision="80.000000,10.000000,80.000000" collisionAdd="0.000000,50.000000,-20.000000" effect="NPC/Skill/CerberosThreeHeadBrown/Eff_CerberosThreeHeadBrown_Attack_02_B_Ball_Guided.xml" />
+				<damageProperty rate="0.03" effectHit="NPC/Skill/CerberosThreeHeadBrown/Eff_CerberosThreeHeadBrown_Attack_02_B_Ball_Guided_Hit.xml" attackMaterial="1" />
+				<conditionSkill splash="1" level="1" skillID="99999901" delay="2000" />
+			</attack>
+		</motion>
+	</level>
+</ms2>

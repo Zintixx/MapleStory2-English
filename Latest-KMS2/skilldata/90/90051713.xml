@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 파싱해서 사용하는 데이터이니 직접 수정하지 마세요 -->
+<ms2 feature="">
+	<basic>
+		<ui attackType="3" />
+		<stateAttr autoTargeting="0" ignoreReduceCooldown="1" />
+	</basic>
+	<level value="1">
+		<beginCondition probability="1" invokeEffectFactor="0">
+			<stat hp="1" />
+		</beginCondition>
+		<motion>
+			<attack point="p0" targetCount="1" magicPathID="900517101" attacktype="3" hitImmuneBreak="5">
+				<rangeProperty rangeType="cylinder" distance="900" rangeOffset="0.000000,0.000000,-300.000000" height="600" applyTarget="1" />
+				<arrowProperty collision="50.000000,50.000000,50.000000" effect="NPC/Skill/Temp/Eff_Temp.xml" />
+				<damageProperty count="0" />
+				<conditionSkill level="1" skillID="90051713" skillTarget="2" skillOwner="1" />
+			</attack>
+		</motion>
+	</level>
+</ms2>

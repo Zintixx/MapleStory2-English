@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 파싱해서 사용하는 데이터이니 직접 수정하지 마세요 -->
+<ms2 feature="">
+	<basic>
+		<ui attackType="1" />
+		<stateAttr ignoreReduceCooldown="1" />
+	</basic>
+	<level value="1">
+		<beginCondition probability="1">
+			<stat hp="1" />
+		</beginCondition>
+		<motion>
+			<motionProperty motionEffect="DynamicObject/Eff_SkillObj_pe_SteamTrapB_L_Idle.xml" splashInvokeEffect="DynamicObject/Eff_SkillObj_pe_SteamTrapB_L_Attack.xml" />
+			<attack point="p0" targetCount="50" attacktype="1" hitImmuneBreak="5" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+				<rangeProperty rangeType="box" distance="300" rangeAdd="0.000000,50.000000,0.000000" height="70" width="200" applyTarget="5" />
+				<damageProperty effectHit="CH/Common/CH/Common/Eff_Trap_Hit.xml" damageByTargetMaxHP="0.1" push="1" pushdistance="300" pushduration="0.3" pushEaseType="1" pushUpDistance="100" pushFall="1" attackMaterial="1" />
+			</attack>
+		</motion>
+	</level>
+</ms2>

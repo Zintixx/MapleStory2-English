@@ -2,15 +2,15 @@
 <!-- 파싱해서 사용하는 데이터이니 직접 수정하지 마세요 -->
 <ms2>
 	<level>
-		<beginCondition applyPvPZoneType="1">
+		<beginCondition probability="1" applyPvPZoneType="1">
 			<requireSkillCodes code="33333333" />
-			<owner hasBuffID="0" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="0" hasBuffCountCompare="Equals" hasSkillID="10900131" hasSkillLevel="4" />
+			<owner hasBuffID="0" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="0" hasBuffCountCompare="Equals" hasSkillID="10900131" hasSkillLevel="4" eventSkillID="" eventEffectID="" />
 		</beginCondition>
 		<BasicProperty level="1" keepCondition="99" doNotClearEffectFromEnterPVPZone="1" />
-		<UIProperty iconOnOff="0" />
+		<UIProperty icon="" iconOnOff="0" />
 		<conditionSkill level="4" skillID="90050407" skillTarget="1">
-			<beginCondition>
-				<owner hasBuffID="0" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="0" hasBuffCountCompare="Equals" eventCondition="7" eventSkillID="10900131" />
+			<beginCondition probability="1">
+				<owner hasBuffID="0" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="0" hasBuffCountCompare="Equals" eventCondition="7" eventSkillID="10900131" eventEffectID="" />
 			</beginCondition>
 		</conditionSkill>
 	</level>

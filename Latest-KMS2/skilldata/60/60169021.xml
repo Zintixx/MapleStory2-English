@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 파싱해서 사용하는 데이터이니 직접 수정하지 마세요 -->
+<ms2 feature="">
+	<basic>
+		<ui attackType="2" />
+		<kinds rangeType="2" element="5" />
+	</basic>
+	<level value="1">
+		<beginCondition probability="1">
+			<stat hp="1" />
+		</beginCondition>
+		<detectProperty rangeType="box" distance="750" height="200" width="600" />
+		<motion>
+			<motionProperty sequenceName="Attack_01_B" motionEffect="NPC/Skill/ZealotLeader01/Eff_ZealotLeader01_Attack_01_B_Cast_Elite.xml" strTagEffects="e0=NPC/Skill/ZealotLeader01/Eff_ZealotLeader01_Attack_01_B.xml" pushCylinderVelH="-500" pushCylinderOuter="1250" pushCylinderInner="350" pushCylinderHeight="200" />
+			<attack point="p0" targetCount="5" attacktype="2" brokenOffence="1" brokenForce="1" unrideOnHit="1">
+				<rangeProperty rangeType="cylinder" distance="350" height="200" applyTarget="1" castTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty count="0" push="1" attackMaterial="1" />
+			</attack>
+			<attack point="p1" targetCount="1" cubeMagicPathID="601690211" attacktype="1" hitImmuneBreak="1" unrideOnHit="1">
+				<rangeProperty rangeType="cylinder" distance="350" height="200" applyTarget="1" castTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty count="0" />
+				<conditionSkill splash="1" level="1" skillID="60169022" interval="1000" immediateActive="1" fireCount="5" />
+			</attack>
+		</motion>
+	</level>
+</ms2>

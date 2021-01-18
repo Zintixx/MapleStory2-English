@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 파싱해서 사용하는 데이터이니 직접 수정하지 마세요 -->
+<ms2 feature="">
+	<basic>
+		<ui attackType="3" />
+		<kinds subType="4" rangeType="2" unrideOnUse="1" />
+		<stateAttr ignoreReduceCooldown="1" />
+	</basic>
+	<level value="1">
+		<beginCondition probability="1" allowBattleRidingState="1" allowMapleSurvival="1">
+			<stat hp="1" />
+		</beginCondition>
+		<autoTargeting autoTargetingMaxDegree="45" />
+		<push back="150" />
+		<motion>
+			<motionProperty sequenceName="ObjectWeapon_TypeB_Attack_01_C" motionEffect="Item/Skill/Eff_ObjectWeapon_Survival_ArconCart_Cast_01.xml" holdWeapon="0" />
+			<attack point="p0" targetCount="1" magicPathID="99900966" attacktype="3" hitImmuneBreak="5" brokenOffence="2" unrideOnHit="1" compulsionType="1">
+				<rangeProperty rangeType="box" distance="750" rangeAdd="0.000000,0.000000,50.000000" height="100" width="450" applyTarget="5" />
+				<arrowProperty nonTarget="1" bounceType="3" bounceCount="99" collision="80.000000,40.000000,80.000000" collisionAdd="0.000000,40.000000,0.000000" effect="Item/Skill/Eff_ObjectWeapon_Survival_AcornCart_Ball_01.xml" />
+				<damageProperty value="150" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" isConstDamageValue="1" push="1" pushdistance="300" pushduration="0.7" pushEaseType="1" pushUpDistance="50" pushFall="1" attackMaterial="1" />
+			</attack>
+		</motion>
+	</level>
+</ms2>

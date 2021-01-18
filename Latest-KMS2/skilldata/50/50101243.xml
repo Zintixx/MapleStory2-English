@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 파싱해서 사용하는 데이터이니 직접 수정하지 마세요 -->
+<ms2 feature="">
+	<basic>
+		<ui attackType="1" />
+	</basic>
+	<level value="1">
+		<beginCondition probability="1">
+			<stat hp="1" />
+		</beginCondition>
+		<conditionSkill level="1" skillID="50003121" skillTarget="1">
+			<beginCondition probability="1" allowBattleRidingState="1" />
+		</conditionSkill>
+		<motion>
+			<motionProperty sequenceName="AttackGrab_01_A" motionEffect="NPC/Skill/TitanFourArmsGoldMask/Eff_TitanFourArmsGoldMaskThirdFloor_AttackGrab_01_A.xml" faceTarget="0" doesPlayIdleOnSkillEnd="false" />
+			<attack point="p0" direction="0" attacktype="1" unrideOnHit="1">
+				<rangeProperty rangeType="cylinder" distance="2400" height="250" applyTarget="1" castTarget="1" />
+				<arrowProperty nonTarget="1" effect="NPC/Skill/Temp/Eff_Temp.xml" />
+				<damageProperty count="0" rate="1" attackMaterial="1" />
+			</attack>
+		</motion>
+		<motion>
+			<motionProperty sequenceName="AttackGrab_02_A" motionEffect="NPC/Skill/TitanFourArmsGoldMask/Eff_TitanFourArmsGoldMaskThirdFloor_AttackGrab_02_A.xml" faceTarget="0" doesPlayIdleOnSkillEnd="false" />
+			<attack point="p0" targetCount="1" cubeMagicPathID="5529" direction="0" attacktype="2" unrideOnHit="1">
+				<rangeProperty includeCaster="1" rangeType="cylinder" distance="2400" rangeAdd="0.000000,0.000000,140.000000" height="250" applyTarget="2" castTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty count="0" rate="1" attackMaterial="1" />
+				<conditionSkill splash="1" level="1" skillID="99999862" interval="500" fireCount="9" />
+			</attack>
+		</motion>
+		<motion>
+			<motionProperty sequenceName="AttackGrab_03_A" loopEffect="NPC/Skill/TitanFourArmsGoldMask/Eff_TitanFourArmsGoldMaskThirdFloor_AttackGrab_02_A_Loop.xml" loopCount="2" faceTarget="0" doesPlayIdleOnSkillEnd="false" />
+			<attack point="p0" targetCount="10" direction="0" attacktype="1" unrideOnHit="1">
+				<rangeProperty rangeType="cylinder" distance="2400" rangeAdd="0.000000,0.000000,140.000000" height="250" applyTarget="1" castTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty count="0" attackMaterial="1" />
+				<conditionSkill level="1" skillID="50003120" skillTarget="2" skillOwner="1" />
+			</attack>
+		</motion>
+		<motion>
+			<motionProperty sequenceName="AttackGrab_04_A" motionEffect="NPC/Skill/TitanFourArmsGoldMask/Eff_TitanFourArmsGoldMaskThirdFloor_AttackGrab_02_A.xml" faceTarget="0" doesPlayIdleOnSkillEnd="false" />
+			<attack point="p0" targetCount="50" direction="0" attacktype="1" unrideOnHit="1" compulsionType="1">
+				<rangeProperty rangeType="cylinder" distance="550" rangeOffset="0.000000,1150.000000,70.000000" height="3" applyTarget="1" castTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty count="0" attackMaterial="1" />
+				<conditionSkill level="1" skillID="50003122" skillTarget="2" skillOwner="1" />
+			</attack>
+		</motion>
+		<motion>
+			<motionProperty sequenceName="AttackGrab_05_A" motionEffect="NPC/Skill/TitanFourArmsGoldMask/Eff_TitanFourArmsGoldMaskThirdFloor_AttackGrab_02_A_Finish.xml" faceTarget="0" doesPlayIdleOnSkillEnd="false" />
+			<attack point="p0" targetCount="3" direction="0" attacktype="1" unrideOnHit="1" compulsionType="1" grabTargetType="1" grabNodeCategory="LHand">
+				<rangeProperty rangeType="cylinder" distance="480" rangeOffset="0.000000,1150.000000,0.000000" height="350" applyTarget="1" castTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="0.01" attackMaterial="1" />
+				<conditionSkill level="1" skillID="50003118" skillTarget="2" skillOwner="1" />
+			</attack>
+			<attack point="p1" targetCount="50" direction="0" attacktype="1" unrideOnHit="1" compulsionType="1,3">
+				<rangeProperty rangeType="cylinder" distance="480" rangeOffset="0.000000,1150.000000,70.000000" height="3" applyTarget="1" castTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="0.03" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="600" pushduration="0.3" pushEaseType="1" attackMaterial="1" />
+			</attack>
+		</motion>
+	</level>
+	<level value="2">
+		<beginCondition probability="1">
+			<stat hp="1" />
+		</beginCondition>
+		<conditionSkill level="1" skillID="50003121" skillTarget="1">
+			<beginCondition probability="1" allowBattleRidingState="1" />
+		</conditionSkill>
+		<motion>
+			<motionProperty sequenceName="AttackGrab_01_A" motionEffect="NPC/Skill/TitanFourArmsGoldMask/Eff_TitanFourArmsGoldMaskThirdFloor_AttackGrab_01_A.xml" faceTarget="0" doesPlayIdleOnSkillEnd="false" />
+			<attack point="p0" direction="0" attacktype="1" unrideOnHit="1">
+				<rangeProperty rangeType="cylinder" distance="2400" height="250" applyTarget="1" castTarget="1" />
+				<arrowProperty nonTarget="1" effect="NPC/Skill/Temp/Eff_Temp.xml" />
+				<damageProperty count="0" rate="1" attackMaterial="1" />
+			</attack>
+		</motion>
+		<motion>
+			<motionProperty sequenceName="AttackGrab_02_A" motionEffect="NPC/Skill/TitanFourArmsGoldMask/Eff_TitanFourArmsGoldMaskThirdFloor_AttackGrab_02_A.xml" faceTarget="0" doesPlayIdleOnSkillEnd="false" />
+			<attack point="p0" targetCount="1" cubeMagicPathID="5529" direction="0" attacktype="2" unrideOnHit="1">
+				<rangeProperty includeCaster="1" rangeType="cylinder" distance="2400" rangeAdd="0.000000,0.000000,140.000000" height="250" applyTarget="2" castTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty count="0" rate="1" attackMaterial="1" />
+				<conditionSkill splash="1" level="1" skillID="99999862" interval="500" fireCount="9" />
+			</attack>
+		</motion>
+		<motion>
+			<motionProperty sequenceName="AttackGrab_03_A" loopEffect="NPC/Skill/TitanFourArmsGoldMask/Eff_TitanFourArmsGoldMaskThirdFloor_AttackGrab_02_A_Loop.xml" loopCount="2" faceTarget="0" doesPlayIdleOnSkillEnd="false" />
+			<attack point="p0" targetCount="10" direction="0" attacktype="1" unrideOnHit="1">
+				<rangeProperty rangeType="cylinder" distance="2400" rangeAdd="0.000000,0.000000,140.000000" height="250" applyTarget="1" castTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty count="0" attackMaterial="1" />
+				<conditionSkill level="1" skillID="50003120" skillTarget="2" skillOwner="1" />
+			</attack>
+		</motion>
+		<motion>
+			<motionProperty sequenceName="AttackGrab_04_A" motionEffect="NPC/Skill/TitanFourArmsGoldMask/Eff_TitanFourArmsGoldMaskThirdFloor_AttackGrab_02_A.xml" faceTarget="0" doesPlayIdleOnSkillEnd="false" />
+			<attack point="p0" targetCount="50" direction="0" attacktype="1" unrideOnHit="1" compulsionType="1">
+				<rangeProperty rangeType="cylinder" distance="550" rangeOffset="0.000000,1150.000000,70.000000" height="3" applyTarget="1" castTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty count="0" attackMaterial="1" />
+				<conditionSkill level="1" skillID="50003122" skillTarget="2" skillOwner="1" />
+			</attack>
+		</motion>
+		<motion>
+			<motionProperty sequenceName="AttackGrab_05_A" motionEffect="NPC/Skill/TitanFourArmsGoldMask/Eff_TitanFourArmsGoldMaskThirdFloor_AttackGrab_02_A_Finish.xml" faceTarget="0" doesPlayIdleOnSkillEnd="false" />
+			<attack point="p0" targetCount="8" direction="0" attacktype="1" unrideOnHit="1" compulsionType="1" grabTargetType="1" grabNodeCategory="LHand">
+				<rangeProperty rangeType="cylinder" distance="480" rangeOffset="0.000000,1150.000000,0.000000" height="350" applyTarget="1" castTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="0.01" attackMaterial="1" />
+				<conditionSkill level="1" skillID="50003118" skillTarget="2" skillOwner="1" />
+			</attack>
+			<attack point="p1" targetCount="50" direction="0" attacktype="1" unrideOnHit="1" compulsionType="1,3">
+				<rangeProperty rangeType="cylinder" distance="480" rangeOffset="0.000000,1150.000000,70.000000" height="3" applyTarget="1" castTarget="1" />
+				<arrowProperty nonTarget="1" />
+				<damageProperty rate="0.03" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="600" pushduration="0.3" pushEaseType="1" attackMaterial="1" />
+			</attack>
+		</motion>
+	</level>
+</ms2>

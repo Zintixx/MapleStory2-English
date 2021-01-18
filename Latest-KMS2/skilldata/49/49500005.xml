@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 파싱해서 사용하는 데이터이니 직접 수정하지 마세요 -->
+<ms2 feature="">
+	<basic>
+		<ui attackType="2" />
+		<kinds rangeType="2" element="7" />
+	</basic>
+	<level value="1">
+		<beginCondition probability="1">
+			<stat hp="1" />
+		</beginCondition>
+		<detectProperty rangeType="cylinder" distance="1900" rangeOffset="0.000000,0.000000,-400.000000" height="1000" />
+		<motion>
+			<motionProperty sequenceName="Attack_01_D" motionEffect="NPC/Skill/Schatten/Eff_Schatten_BurningShot_Attack_01_D_Start.xml" />
+			<attack point="p0" targetCount="1" attacktype="2" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+				<rangeProperty rangeType="cylinder" distance="2000" rangeOffset="0.000000,0.000000,-400.000000" height="1000" applyTarget="1" castTarget="1" />
+				<damageProperty count="0" push="1" attackMaterial="100" />
+			</attack>
+		</motion>
+		<motion>
+			<motionProperty sequenceName="Attack_02_D" motionEffect="NPC/Skill/Schatten/Eff_Schatten_BurningShot_Attack_02_D_Cast.xml" movedistance="-200" moveEaseType="1" faceTarget="0" />
+			<attack point="p0" targetCount="1" attacktype="2" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+				<rangeProperty rangeType="cylinder" distance="2000" rangeOffset="0.000000,0.000000,-400.000000" height="1000" applyTarget="1" castTarget="1" />
+				<damageProperty count="0" push="1" attackMaterial="100" />
+			</attack>
+		</motion>
+		<motion>
+			<motionProperty sequenceName="Attack_03_D" motionEffect="NPC/Skill/Schatten/Eff_Schatten_BurningShot_Attack_03_D.xml" movedistance="-200" moveEaseType="1" />
+			<attack point="p0" targetCount="1" magicPathID="5671" attacktype="2" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+				<rangeProperty rangeType="cylinder" distance="2000" rangeOffset="0.000000,0.000000,-400.000000" height="1000" applyTarget="1" castTarget="1" />
+				<arrowProperty explosion="1" rayPhysxTest="1" collision="190.000000,100.000000,110.000000" collisionAdd="0.000000,100.000000,110.000000" effect="NPC/Skill/Schatten/Eff_Schatten_BurningShot_Attack_03_D_Ball.xml" effectDestroy="NPC/Skill/Schatten/Eff_Schatten_BurningShot_Attack_03_D_Ball_Hit.xml" />
+				<damageProperty rate="3.5" effectHit="NPC/Skill/Schatten/Eff_Schatten_BurningShot_Attack_03_D_Ball_Hit.xml" push="5" pushdistance="600" pushduration="0.7" pushEaseType="1" pushUpDistance="150" pushDown="1" pushPriority="1" attackMaterial="100" />
+			</attack>
+		</motion>
+	</level>
+	<level value="2">
+		<beginCondition probability="1">
+			<stat hp="1" />
+		</beginCondition>
+		<detectProperty rangeType="cylinder" distance="1900" rangeOffset="0.000000,0.000000,-400.000000" height="1000" />
+		<motion>
+			<motionProperty sequenceName="Attack_01_D" motionEffect="NPC/Skill/Schatten/Eff_Schatten_BurningShot_Attack_01_D_Start.xml" />
+			<attack point="p0" targetCount="1" attacktype="2" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+				<rangeProperty rangeType="cylinder" distance="2000" rangeOffset="0.000000,0.000000,-400.000000" height="1000" applyTarget="1" castTarget="1" />
+				<damageProperty count="0" push="1" attackMaterial="100" />
+			</attack>
+		</motion>
+		<motion>
+			<motionProperty sequenceName="Attack_02_D" motionEffect="NPC/Skill/Schatten/Eff_Schatten_BurningShot_Attack_02_D_Cast.xml" movedistance="-200" moveEaseType="1" faceTarget="0" />
+			<attack point="p0" targetCount="1" attacktype="2" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+				<rangeProperty rangeType="cylinder" distance="2000" rangeOffset="0.000000,0.000000,-400.000000" height="1000" applyTarget="1" castTarget="1" />
+				<damageProperty count="0" push="1" attackMaterial="100" />
+			</attack>
+		</motion>
+		<motion>
+			<motionProperty sequenceName="Attack_03_D" motionEffect="NPC/Skill/Schatten/Eff_Schatten_BurningShot_Attack_03_D.xml" movedistance="-200" moveEaseType="1" />
+			<attack point="p0" targetCount="1" magicPathID="5671" cubeMagicPathID="50000661" attacktype="2" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+				<rangeProperty rangeType="cylinder" distance="2000" rangeOffset="0.000000,0.000000,-400.000000" height="1000" applyTarget="1" castTarget="1" />
+				<arrowProperty explosion="1" rayPhysxTest="1" collision="190.000000,100.000000,110.000000" collisionAdd="0.000000,100.000000,110.000000" effect="NPC/Skill/Schatten/Eff_Schatten_BurningShot_Attack_03_D_Ball.xml" effectDestroy="NPC/Skill/Schatten/Eff_Schatten_BurningShot_Attack_03_D_Ball_Hit.xml" />
+				<damageProperty rate="3.5" effectHit="NPC/Skill/Schatten/Eff_Schatten_BurningShot_Attack_03_D_Ball_Hit.xml" push="5" pushdistance="600" pushduration="0.7" pushEaseType="1" pushUpDistance="150" pushDown="1" pushPriority="1" attackMaterial="100" />
+				<conditionSkill splash="1" level="1" skillID="99999789" delay="900" interval="1000" fireCount="10" />
+			</attack>
+		</motion>
+	</level>
+</ms2>

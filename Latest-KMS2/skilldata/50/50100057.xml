@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 파싱해서 사용하는 데이터이니 직접 수정하지 마세요 -->
+<ms2 feature="">
+	<basic>
+		<ui attackType="2" />
+		<kinds rangeType="2" element="5" />
+	</basic>
+	<level value="1">
+		<beginCondition probability="1">
+			<stat hp="1" />
+		</beginCondition>
+		<motion>
+			<motionProperty sequenceName="Attack_01_A" motionEffect="NPC/Skill/WitchCerberosTrainer/Eff_WitchCerberosTrainer_Attack_01_A_Throw.xml" faceTarget="0" />
+			<attack point="p0" direction="4" attacktype="2" unrideOnHit="1">
+				<rangeProperty rangeType="frustum" distance="1300" height="170" width="100" endWidth="1300" applyTarget="1" castTarget="1" />
+				<arrowProperty nonTarget="1" effect="NPC/Skill/Temp/Eff_Temp.xml" />
+				<damageProperty count="0" rate="1" attackMaterial="106" />
+			</attack>
+		</motion>
+		<motion>
+			<motionProperty sequenceName="Attack_02_A" motionEffect="NPC/Skill/WitchCerberosTrainer/Eff_WitchCerberosTrainer_Attack_02_A_Throw.xml" faceTarget="0" />
+			<attack point="p0" direction="4" attacktype="2" unrideOnHit="1">
+				<rangeProperty rangeType="frustum" distance="1300" height="170" width="100" endWidth="1300" applyTarget="1" castTarget="1" />
+				<arrowProperty nonTarget="1" effect="NPC/Skill/Temp/Eff_Temp.xml" />
+				<damageProperty count="0" rate="1" attackMaterial="106" />
+			</attack>
+		</motion>
+		<motion>
+			<motionProperty sequenceName="Attack_03_A" motionEffect="NPC/Skill/WitchCerberosTrainer/Eff_WitchCerberosTrainer_Attack_03_A_Throw.xml" faceTarget="0" />
+			<attack point="p0" targetCount="1" magicPathID="5374" cubeMagicPathID="50000355" direction="4" attacktype="2" unrideOnHit="1">
+				<rangeProperty rangeType="frustum" distance="1300" height="170" width="100" endWidth="1300" applyTarget="1" castTarget="1" />
+				<arrowProperty explosion="1" collision="80.000000,10.000000,80.000000" collisionAdd="0.000000,50.000000,-20.000000" effect="NPC/Skill/WitchCerberosTrainer/Eff_WitchCerberosTrainer_Attack_03_A_Throw_Ball_Guided.xml" />
+				<damageProperty rate="0.03" effectHit="NPC/Skill/WitchCerberosTrainer/Eff_WitchCerberosTrainer_Attack_03_A_Throw_Ball_Guided_Hit.xml" attackMaterial="106" />
+				<conditionSkill splash="1" level="1" skillID="99999925" delay="1200" interval="500" fireCount="60" />
+			</attack>
+		</motion>
+	</level>
+</ms2>

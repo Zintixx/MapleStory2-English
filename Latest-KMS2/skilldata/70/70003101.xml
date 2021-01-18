@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 파싱해서 사용하는 데이터이니 직접 수정하지 마세요 -->
+<ms2 feature="">
+	<basic>
+		<ui icon="./Data/Resource/Image/Skill/icon/20000031.png" attackType="1" />
+		<kinds rangeType="1" jump="70003101" unrideOnUse="1" />
+		<stateAttr keyIsDown="1" ignoreReduceCooldown="1" />
+	</basic>
+	<level value="1">
+		<beginCondition probability="1" cooldownTime="5" useCoolDownShowUI="1">
+			<stat hp="1" />
+		</beginCondition>
+		<motion>
+			<motionProperty sequenceName="Survival_FireBall_03_A" holdWeapon="0" />
+			<attack point="p0" pointGroupID="70003101" targetCount="1" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" compulsionType="1">
+				<rangeProperty includeCaster="1" rangeType="cylinder" distance="450" height="400" applyTarget="2" />
+				<damageProperty count="0" attackMaterial="1" />
+				<conditionSkill splash="1" level="1" skillID="70003111" delay="100" />
+			</attack>
+		</motion>
+	</level>
+</ms2>

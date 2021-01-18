@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 파싱해서 사용하는 데이터이니 직접 수정하지 마세요 -->
+<ms2 feature="">
+	<basic>
+		<kinds subType="4" rangeType="2" jump="99900121" unrideOnUse="1" />
+	</basic>
+	<level value="1">
+		<beginCondition probability="1">
+			<stat hp="1" />
+		</beginCondition>
+		<changeSkill changeSkillID="0" changeSkillLevel="1" />
+		<autoTargeting autoTargetingMaxDegree="45" />
+		<motion>
+			<motionProperty sequenceName="BuildMod_Jump_Land_A" motionEffect="Item/Skill/Eff_ObjectWeapon_ChickenHouse_Cast_01.xml" />
+			<attack point="p0" targetCount="6" magicPathID="99900121" attacktype="1" hitImmuneBreak="5" brokenOffence="1" unrideOnHit="1">
+				<rangeProperty rangeType="box" distance="750" height="150" width="450" applyTarget="1" castTarget="1" />
+				<arrowProperty nonTarget="1" bounceType="3" bounceCount="99" collision="80.000000,50.000000,100.000000" collisionAdd="0.000000,50.000000,0.000000" effect="Item/Skill/Eff_ObjectWeapon_ChickenHouse_Ball_01.xml" />
+				<damageProperty rate="0.3" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="6" />
+			</attack>
+		</motion>
+	</level>
+</ms2>

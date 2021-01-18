@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 파싱해서 사용하는 데이터이니 직접 수정하지 마세요 -->
+<ms2 feature="">
+	<basic>
+		<ui attackType="1" />
+		<kinds rangeType="2" element="7" />
+	</basic>
+	<level value="1">
+		<beginCondition probability="1">
+			<stat hp="1" />
+		</beginCondition>
+		<detectProperty rangeType="box" distance="600" rangeOffset="0.000000,0.000000,50.000000" height="50" width="150" />
+		<motion>
+			<motionProperty sequenceName="Attack_01_B" motionEffect="NPC/Skill/LegoGolemSmall/Eff_LegoGolemSmall_Attack_01_B_Cast.xml" strTagEffects="e0=NPC/Skill/LegoGolemSmall/Eff_LegoGolemSmall_Attack_01_B.xml" />
+			<attack point="p0" targetCount="1" magicPathID="40224011" cubeMagicPathID="402250111" attacktype="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+				<rangeProperty rangeType="box" distance="600" height="200" width="150" applyTarget="1" castTarget="1" />
+				<arrowProperty nonTarget="1" collision="50.000000,25.000000,125.000000" collisionAdd="0.000000,25.000000,25.000000" effect="NPC/Skill/LegoGolemSmall/Eff_LegoGolemSmall_Attack_01_B_Ball.xml" />
+				<damageProperty count="0" attackMaterial="1" />
+				<conditionSkill splash="1" level="1" skillID="40225012" immediateActive="1" />
+			</attack>
+		</motion>
+	</level>
+</ms2>
