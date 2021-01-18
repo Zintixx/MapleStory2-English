@@ -2,13 +2,12 @@
 <!-- 파싱해서 사용하는 데이터이니 직접 수정하지 마세요 -->
 <ms2>
 	<level>
-		<beginCondition probability="1" allowMapleSurvival="1" />
 		<BasicProperty level="1" buffType="2" buffSubType="2" buffCategory="1" intervalTick="100" keepCondition="99" logoutClearEffect="1" leaveFieldClearEffect="1" ignoreReduceTimeCondition="1" />
 		<MotionProperty abnormalImmuneBreak="99" />
 		<UIProperty icon="./Data/Resource/Image/skill/icon/IceCubePrison.png" iconOnOff="0" />
 		<conditionSkill level="1" skillID="70000129" skillTarget="1" activeByIntervalTick="1">
-			<beginCondition probability="1" allowMapleSurvival="1">
-				<owner hasBuffID="70000128" hasBuffLevel="1" hasBuffOwner="0" hasBuffCount="10" hasBuffCountCompare="Equals" eventSkillID="" eventEffectID="" />
+			<beginCondition>
+				<owner hasBuffID="70000128" hasBuffLevel="1" hasBuffOwner="0" hasBuffCount="10" hasBuffCountCompare="Equals" />
 			</beginCondition>
 		</conditionSkill>
 	</level>

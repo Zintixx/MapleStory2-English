@@ -1,0 +1,553 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ms2>
+	<skill id="31000001" comment="크리티아스 가고일 블랙">
+		<basic>
+			<ui attackType="1" />
+			<kinds rangeType="1" element="7" />
+		</basic>
+		<level value="1">
+			<detectProperty rangeType="box" distance="200" height="250" width="230" />
+			<motion>
+				<motionProperty sequenceName="Attack_01_A" motionEffect="NPC/Skill/StoneGargoyleBlack/Eff_StoneGargoyleBlack_Attack_01_A.xml" />
+				<attack point="p0" targetCount="5" attacktype="1" brokenOffence="1" unrideOnHit="1">
+					<rangeProperty rangeType="box" distance="250" height="200" width="230" applyTarget="1" castTarget="1" />
+					<damageProperty rate="0.5" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
+				</attack>
+				<attack point="p1" targetCount="10" attacktype="1" brokenOffence="1" unrideOnHit="1">
+					<rangeProperty rangeType="box" distance="250" height="200" width="230" applyTarget="1" castTarget="1" />
+					<damageProperty rate="0.5" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
+				</attack>
+			</motion>
+		</level>
+	</skill>
+	<skill id="31000002" comment="크리티아스 가고일 블랙">
+		<basic>
+			<ui attackType="1" />
+			<kinds rangeType="1" element="7" />
+		</basic>
+		<level value="1">
+			<detectProperty rangeType="cylinder" distance="300" height="200" />
+			<motion>
+				<motionProperty sequenceName="Attack_01_B" motionEffect="NPC/Skill/StoneGargoyleBlack/Eff_StoneGargoyleBlack_Attack_01_B.xml" />
+				<attack point="p0" targetCount="5" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+					<rangeProperty rangeType="cylinder" distance="150" rangeOffset="0.000000,150.000000,0.000000" height="200" applyTarget="1" castTarget="1" />
+					<damageProperty rate="1.3" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
+				</attack>
+			</motion>
+		</level>
+	</skill>
+	<skill id="31000003" comment="크리티아스 기계 잠자리">
+		<basic>
+			<ui attackType="1" />
+			<kinds rangeType="1" element="7" />
+		</basic>
+		<level value="1">
+			<detectProperty rangeType="box" distance="120" height="250" width="120" />
+			<motion>
+				<motionProperty sequenceName="Attack_01_A" motionEffect="NPC/Skill/KritiasDragonfly/Eff_KritiasDragonfly_Attack_01_A.xml" faceTarget="0" />
+				<attack point="p0" targetCount="5" attacktype="1" brokenOffence="1" unrideOnHit="1">
+					<rangeProperty rangeType="box" distance="150" height="250" width="120" applyTarget="1" castTarget="1" />
+					<damageProperty rate="0.3" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
+				</attack>
+				<attack point="p1" targetCount="5" attacktype="1" brokenOffence="1" unrideOnHit="1">
+					<rangeProperty rangeType="box" distance="150" height="250" width="120" applyTarget="1" castTarget="1" />
+					<damageProperty rate="0.2" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
+				</attack>
+				<attack point="p2" targetCount="5" attacktype="1" brokenOffence="1" unrideOnHit="1">
+					<rangeProperty rangeType="box" distance="150" height="250" width="120" applyTarget="1" castTarget="1" />
+					<damageProperty rate="0.2" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
+				</attack>
+				<attack point="p3" targetCount="5" attacktype="1" brokenOffence="1" unrideOnHit="1">
+					<rangeProperty rangeType="box" distance="150" height="250" width="120" applyTarget="1" castTarget="1" />
+					<damageProperty rate="0.15" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
+				</attack>
+				<attack point="p4" targetCount="5" attacktype="1" brokenOffence="1" unrideOnHit="1">
+					<rangeProperty rangeType="box" distance="150" height="250" width="120" applyTarget="1" castTarget="1" />
+					<damageProperty rate="0.15" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
+				</attack>
+			</motion>
+		</level>
+	</skill>
+	<skill id="31000004" comment="크리티아스 기계 잠자리">
+		<basic>
+			<ui attackType="1" />
+			<kinds rangeType="2" element="7" />
+		</basic>
+		<level value="1">
+			<detectProperty rangeType="box" distance="250" height="250" width="250" />
+			<motion>
+				<motionProperty sequenceName="Attack_01_B" motionEffect="NPC/Skill/KritiasDragonfly/Eff_KritiasDragonfly_Attack_01_B.xml" faceTarget="0" />
+				<attack point="p0" targetCount="5" attacktype="1" brokenOffence="1" unrideOnHit="1">
+					<rangeProperty rangeType="box" distance="450" height="250" width="150" applyTarget="1" castTarget="1" />
+					<damageProperty rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
+				</attack>
+				<attack point="p1" targetCount="5" attacktype="1" brokenOffence="1" unrideOnHit="1">
+					<rangeProperty rangeType="box" distance="450" height="250" width="150" applyTarget="1" castTarget="1" />
+					<damageProperty rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
+				</attack>
+			</motion>
+		</level>
+	</skill>
+	<skill id="31000005" comment="크리티아스 멧돼지">
+		<basic>
+			<ui attackType="1" />
+			<kinds rangeType="1" element="7" />
+		</basic>
+		<level value="1">
+			<detectProperty rangeType="box" distance="200" height="200" width="170" />
+			<motion>
+				<motionProperty sequenceName="Attack_01_A" motionEffect="NPC/Skill/KerbesWildBoar/Eff_KerbesWildBoar_Attack_01_A.xml" />
+				<attack point="p0" targetCount="1" attacktype="1" brokenOffence="1" unrideOnHit="1">
+					<rangeProperty rangeType="box" distance="200" height="200" width="170" applyTarget="1" castTarget="1" />
+					<arrowProperty nonTarget="1" />
+					<damageProperty rate="0.8" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
+				</attack>
+			</motion>
+		</level>
+	</skill>
+	<skill id="31000006" comment="크리티아스 멧돼지">
+		<basic>
+			<ui attackType="1" />
+			<kinds rangeType="1" element="7" />
+		</basic>
+		<level value="1">
+			<detectProperty rangeType="box" distance="600" height="200" width="170" />
+			<motion>
+				<motionProperty sequenceName="Attack_01_B" motionEffect="NPC/Skill/KerbesWildBoar/Eff_KerbesWildBoar_Attack_01_B.xml" movedistance="700" />
+				<attack point="p0" targetCount="5" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+					<rangeProperty rangeType="box" distance="200" height="200" width="170" applyTarget="1" castTarget="1" />
+					<damageProperty rate="0.2" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="400" pushduration="0.6" pushEaseType="1" pushPriorityHitImmune="1" attackMaterial="1" />
+				</attack>
+				<attack point="p1" targetCount="5" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+					<rangeProperty rangeType="box" distance="200" height="200" width="170" applyTarget="1" castTarget="1" />
+					<damageProperty rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
+				</attack>
+			</motion>
+		</level>
+	</skill>
+	<skill id="31000007" comment="크리티아스 기계 거미 블루">
+		<basic>
+			<ui attackType="1" />
+			<kinds rangeType="1" element="7" />
+		</basic>
+		<level value="1">
+			<detectProperty rangeType="box" distance="120" height="250" width="120" />
+			<motion>
+				<motionProperty sequenceName="Attack_01_A" motionEffect="NPC/Skill/KritiasSpider/Eff_KritiasSpider_Attack_01_A.xml" faceTarget="0" />
+				<attack point="p0" targetCount="5" attacktype="1" brokenOffence="1" unrideOnHit="1">
+					<rangeProperty rangeType="box" distance="150" height="250" width="120" applyTarget="1" castTarget="1" />
+					<damageProperty rate="0.2" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
+				</attack>
+				<attack point="p1" targetCount="5" attacktype="1" brokenOffence="1" unrideOnHit="1">
+					<rangeProperty rangeType="box" distance="150" height="250" width="120" applyTarget="1" castTarget="1" />
+					<damageProperty rate="0.1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
+				</attack>
+				<attack point="p2" targetCount="5" attacktype="1" brokenOffence="1" unrideOnHit="1">
+					<rangeProperty rangeType="box" distance="150" height="250" width="120" applyTarget="1" castTarget="1" />
+					<damageProperty rate="0.1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
+				</attack>
+				<attack point="p3" targetCount="5" attacktype="1" brokenOffence="1" unrideOnHit="1">
+					<rangeProperty rangeType="box" distance="150" height="250" width="120" applyTarget="1" castTarget="1" />
+					<damageProperty rate="0.1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
+				</attack>
+				<attack point="p4" targetCount="5" attacktype="1" brokenOffence="1" unrideOnHit="1">
+					<rangeProperty rangeType="box" distance="150" height="250" width="120" applyTarget="1" castTarget="1" />
+					<damageProperty rate="0.1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
+				</attack>
+				<attack point="p5" targetCount="5" attacktype="1" brokenOffence="1" unrideOnHit="1">
+					<rangeProperty rangeType="box" distance="150" height="250" width="120" applyTarget="1" castTarget="1" />
+					<damageProperty rate="0.1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
+				</attack>
+				<attack point="p6" targetCount="5" attacktype="1" brokenOffence="1" unrideOnHit="1">
+					<rangeProperty rangeType="box" distance="150" height="250" width="120" applyTarget="1" castTarget="1" />
+					<damageProperty rate="0.1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
+				</attack>
+				<attack point="p7" targetCount="5" attacktype="1" brokenOffence="1" unrideOnHit="1">
+					<rangeProperty rangeType="box" distance="150" height="250" width="120" applyTarget="1" castTarget="1" />
+					<damageProperty rate="0.1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
+				</attack>
+			</motion>
+		</level>
+	</skill>
+	<skill id="31000008" comment="크리티아스 기계 거미 블루">
+		<basic>
+			<ui attackType="2" />
+			<kinds rangeType="2" element="7" />
+		</basic>
+		<level value="1">
+			<detectProperty rangeType="box" distance="400" height="250" width="150" />
+			<motion>
+				<motionProperty sequenceName="Attack_01_B" motionEffect="NPC/Skill/KritiasSpider/Eff_KritiasSpider_Attack_01_B.xml" />
+				<attack point="p0" targetCount="4" magicPathID="6524" attacktype="2" brokenOffence="1" unrideOnHit="1">
+					<rangeProperty rangeType="box" distance="400" height="250" width="150" applyTarget="1" castTarget="1" />
+					<arrowProperty nonTarget="1" collision="50.000000,35.000000,50.000000" collisionAdd="0.000000,0.000000,50.000000" effect="NPC/Skill/KritiasSpider/Eff_KritiasSpider_Attack_01_B_Ball.xml" />
+					<damageProperty rate="0.7" effectHit="NPC/Skill/KritiasSpider/Eff_KritiasSpider_Attack_01_B_Ball_Hit.xml" attackMaterial="104" />
+				</attack>
+			</motion>
+		</level>
+	</skill>
+	<skill id="31000009" comment="크리티아스 가고일 레드">
+		<basic>
+			<ui attackType="1" />
+			<kinds rangeType="1" element="7" />
+		</basic>
+		<level value="1">
+			<detectProperty rangeType="box" distance="200" height="250" width="230" />
+			<motion>
+				<motionProperty sequenceName="Attack_01_A" motionEffect="NPC/Skill/StoneGargoyleRed/Eff_StoneGargoyleRed_Attack_01_A.xml" />
+				<attack point="p0" targetCount="5" attacktype="1" brokenOffence="1" unrideOnHit="1">
+					<rangeProperty rangeType="box" distance="250" height="200" width="230" applyTarget="1" castTarget="1" />
+					<damageProperty rate="0.5" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
+				</attack>
+				<attack point="p1" targetCount="10" attacktype="1" brokenOffence="1" unrideOnHit="1">
+					<rangeProperty rangeType="box" distance="250" height="200" width="230" applyTarget="1" castTarget="1" />
+					<damageProperty rate="0.5" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
+				</attack>
+			</motion>
+		</level>
+	</skill>
+	<skill id="31000010" comment="크리티아스 가고일 레드">
+		<basic>
+			<ui attackType="1" />
+			<kinds rangeType="1" element="7" />
+		</basic>
+		<level value="1">
+			<detectProperty rangeType="cylinder" distance="300" height="200" />
+			<motion>
+				<motionProperty sequenceName="Attack_01_B" motionEffect="NPC/Skill/StoneGargoyleRed/Eff_StoneGargoyleRed_Attack_01_B.xml" />
+				<attack point="p0" targetCount="5" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+					<rangeProperty rangeType="cylinder" distance="150" rangeOffset="0.000000,150.000000,0.000000" height="200" applyTarget="1" castTarget="1" />
+					<damageProperty rate="1.3" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
+				</attack>
+			</motion>
+		</level>
+	</skill>
+	<skill id="31000011" comment="크리티아스 기계 거미 블랙">
+		<basic>
+			<ui attackType="1" />
+			<kinds rangeType="1" element="7" />
+		</basic>
+		<level value="1">
+			<detectProperty rangeType="box" distance="120" height="250" width="120" />
+			<motion>
+				<motionProperty sequenceName="Attack_01_A" motionEffect="NPC/Skill/KritiasSpiderBlack/Eff_KritiasSpiderBlack_Attack_01_A.xml" faceTarget="0" />
+				<attack point="p0" targetCount="5" attacktype="1" brokenOffence="1" unrideOnHit="1">
+					<rangeProperty rangeType="box" distance="150" height="250" width="120" applyTarget="1" castTarget="1" />
+					<damageProperty rate="0.2" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
+				</attack>
+				<attack point="p1" targetCount="5" attacktype="1" brokenOffence="1" unrideOnHit="1">
+					<rangeProperty rangeType="box" distance="150" height="250" width="120" applyTarget="1" castTarget="1" />
+					<damageProperty rate="0.1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
+				</attack>
+				<attack point="p2" targetCount="5" attacktype="1" brokenOffence="1" unrideOnHit="1">
+					<rangeProperty rangeType="box" distance="150" height="250" width="120" applyTarget="1" castTarget="1" />
+					<damageProperty rate="0.1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
+				</attack>
+				<attack point="p3" targetCount="5" attacktype="1" brokenOffence="1" unrideOnHit="1">
+					<rangeProperty rangeType="box" distance="150" height="250" width="120" applyTarget="1" castTarget="1" />
+					<damageProperty rate="0.1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
+				</attack>
+				<attack point="p4" targetCount="5" attacktype="1" brokenOffence="1" unrideOnHit="1">
+					<rangeProperty rangeType="box" distance="150" height="250" width="120" applyTarget="1" castTarget="1" />
+					<damageProperty rate="0.1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
+				</attack>
+				<attack point="p5" targetCount="5" attacktype="1" brokenOffence="1" unrideOnHit="1">
+					<rangeProperty rangeType="box" distance="150" height="250" width="120" applyTarget="1" castTarget="1" />
+					<damageProperty rate="0.1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
+				</attack>
+				<attack point="p6" targetCount="5" attacktype="1" brokenOffence="1" unrideOnHit="1">
+					<rangeProperty rangeType="box" distance="150" height="250" width="120" applyTarget="1" castTarget="1" />
+					<damageProperty rate="0.1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
+				</attack>
+				<attack point="p7" targetCount="5" attacktype="1" brokenOffence="1" unrideOnHit="1">
+					<rangeProperty rangeType="box" distance="150" height="250" width="120" applyTarget="1" castTarget="1" />
+					<damageProperty rate="0.1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
+				</attack>
+			</motion>
+		</level>
+	</skill>
+	<skill id="31000012" comment="크리티아스 기계 거미 블랙">
+		<basic>
+			<ui attackType="2" />
+			<kinds rangeType="2" element="7" />
+		</basic>
+		<level value="1">
+			<detectProperty rangeType="box" distance="400" height="250" width="150" />
+			<motion>
+				<motionProperty sequenceName="Attack_01_B" motionEffect="NPC/Skill/KritiasSpiderBlack/Eff_KritiasSpiderBlack_Attack_01_B.xml" />
+				<attack point="p0" targetCount="4" magicPathID="6524" attacktype="2" brokenOffence="1" unrideOnHit="1">
+					<rangeProperty rangeType="box" distance="400" height="250" width="150" applyTarget="1" castTarget="1" />
+					<arrowProperty nonTarget="1" collision="50.000000,35.000000,50.000000" collisionAdd="0.000000,0.000000,50.000000" effect="NPC/Skill/KritiasSpiderBlack/Eff_KritiasSpiderBlack_Attack_01_B_Ball.xml" />
+					<damageProperty rate="0.7" effectHit="NPC/Skill/KritiasSpiderBlack/Eff_KritiasSpiderBlack_Attack_01_B_Ball_Hit.xml" attackMaterial="104" />
+				</attack>
+			</motion>
+		</level>
+	</skill>
+	<skill id="31000013" comment="크리티아스 기계 거미 레드">
+		<basic>
+			<ui attackType="1" />
+			<kinds rangeType="1" element="7" />
+		</basic>
+		<level value="1">
+			<detectProperty rangeType="box" distance="120" height="250" width="120" />
+			<motion>
+				<motionProperty sequenceName="Attack_01_A" motionEffect="NPC/Skill/KritiasSpiderRed/Eff_KritiasSpiderRed_Attack_01_A.xml" faceTarget="0" />
+				<attack point="p0" targetCount="5" attacktype="1" brokenOffence="1" unrideOnHit="1">
+					<rangeProperty rangeType="box" distance="150" height="250" width="120" applyTarget="1" castTarget="1" />
+					<damageProperty rate="0.2" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
+				</attack>
+				<attack point="p1" targetCount="5" attacktype="1" brokenOffence="1" unrideOnHit="1">
+					<rangeProperty rangeType="box" distance="150" height="250" width="120" applyTarget="1" castTarget="1" />
+					<damageProperty rate="0.1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
+				</attack>
+				<attack point="p2" targetCount="5" attacktype="1" brokenOffence="1" unrideOnHit="1">
+					<rangeProperty rangeType="box" distance="150" height="250" width="120" applyTarget="1" castTarget="1" />
+					<damageProperty rate="0.1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
+				</attack>
+				<attack point="p3" targetCount="5" attacktype="1" brokenOffence="1" unrideOnHit="1">
+					<rangeProperty rangeType="box" distance="150" height="250" width="120" applyTarget="1" castTarget="1" />
+					<damageProperty rate="0.1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
+				</attack>
+				<attack point="p4" targetCount="5" attacktype="1" brokenOffence="1" unrideOnHit="1">
+					<rangeProperty rangeType="box" distance="150" height="250" width="120" applyTarget="1" castTarget="1" />
+					<damageProperty rate="0.1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
+				</attack>
+				<attack point="p5" targetCount="5" attacktype="1" brokenOffence="1" unrideOnHit="1">
+					<rangeProperty rangeType="box" distance="150" height="250" width="120" applyTarget="1" castTarget="1" />
+					<damageProperty rate="0.1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
+				</attack>
+				<attack point="p6" targetCount="5" attacktype="1" brokenOffence="1" unrideOnHit="1">
+					<rangeProperty rangeType="box" distance="150" height="250" width="120" applyTarget="1" castTarget="1" />
+					<damageProperty rate="0.1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
+				</attack>
+				<attack point="p7" targetCount="5" attacktype="1" brokenOffence="1" unrideOnHit="1">
+					<rangeProperty rangeType="box" distance="150" height="250" width="120" applyTarget="1" castTarget="1" />
+					<damageProperty rate="0.1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
+				</attack>
+			</motion>
+		</level>
+	</skill>
+	<skill id="31000014" comment="크리티아스 기계 거미 레드">
+		<basic>
+			<ui attackType="2" />
+			<kinds rangeType="2" element="7" />
+		</basic>
+		<level value="1">
+			<detectProperty rangeType="box" distance="400" height="250" width="150" />
+			<motion>
+				<motionProperty sequenceName="Attack_01_B" motionEffect="NPC/Skill/KritiasSpiderRed/Eff_KritiasSpiderRed_Attack_01_B.xml" />
+				<attack point="p0" targetCount="4" magicPathID="6524" attacktype="2" brokenOffence="1" unrideOnHit="1">
+					<rangeProperty rangeType="box" distance="400" height="250" width="150" applyTarget="1" castTarget="1" />
+					<arrowProperty nonTarget="1" collision="50.000000,35.000000,50.000000" collisionAdd="0.000000,0.000000,50.000000" effect="NPC/Skill/KritiasSpiderRed/Eff_KritiasSpiderRed_Attack_01_B_Ball.xml" />
+					<damageProperty rate="0.7" effectHit="NPC/Skill/KritiasSpiderRed/Eff_KritiasSpiderRed_Attack_01_B_Ball_Hit.xml" attackMaterial="104" />
+				</attack>
+			</motion>
+		</level>
+	</skill>
+	<skill id="31000015" comment="크리티아스 변이된 버럭모랑">
+		<basic>
+			<ui attackType="1" />
+			<kinds rangeType="1" element="7" />
+		</basic>
+		<level value="1">
+			<detectProperty rangeType="box" distance="270" height="250" width="230" />
+			<motion>
+				<motionProperty sequenceName="Attack_01_A" motionEffect="NPC/Skill/KritiasTribeModified/Eff_KritiasTribeModified_Attack_01_A.xml" />
+				<attack point="p0" targetCount="5" attacktype="1" brokenOffence="1" unrideOnHit="1">
+					<rangeProperty rangeType="box" distance="250" rangeOffset="0.000000,50.000000,0.000000" height="200" width="230" applyTarget="1" castTarget="1" />
+					<damageProperty rate="0.5" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
+				</attack>
+				<attack point="p1" targetCount="5" attacktype="1" brokenOffence="1" unrideOnHit="1">
+					<rangeProperty rangeType="box" distance="250" rangeOffset="0.000000,50.000000,0.000000" height="200" width="230" applyTarget="1" castTarget="1" />
+					<damageProperty rate="0.5" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
+				</attack>
+			</motion>
+		</level>
+	</skill>
+	<skill id="31000016" comment="크리티아스 변이된 버럭모랑">
+		<basic>
+			<ui attackType="1" />
+			<kinds rangeType="1" element="7" />
+		</basic>
+		<level value="1">
+			<detectProperty rangeType="cylinder" distance="310" height="200" />
+			<motion>
+				<motionProperty sequenceName="Attack_01_B" motionEffect="NPC/Skill/KritiasTribeModified/Eff_KritiasTribeModified_Attack_01_B.xml" />
+				<attack point="p0" targetCount="5" attacktype="1" brokenOffence="1" unrideOnHit="1">
+					<rangeProperty rangeType="cylinder" distance="150" rangeOffset="0.000000,160.000000,0.000000" height="200" applyTarget="1" castTarget="1" />
+					<damageProperty rate="1.3" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
+				</attack>
+			</motion>
+		</level>
+	</skill>
+	<skill id="31000017" comment="크리티아스 변이된 포잉">
+		<basic>
+			<ui attackType="1" />
+			<kinds rangeType="1" element="7" />
+		</basic>
+		<level value="1">
+			<detectProperty rangeType="box" distance="80" height="250" width="100" />
+			<motion>
+				<motionProperty sequenceName="Attack_01_A" motionEffect="NPC/Skill/KritiasSlimeHalf/Eff_KritiasSlimeHalf_Attack_01_A.xml" />
+				<attack point="p0" targetCount="5" attacktype="1" brokenOffence="1" unrideOnHit="1">
+					<rangeProperty rangeType="box" distance="100" height="250" width="100" applyTarget="1" castTarget="1" />
+					<damageProperty rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
+				</attack>
+			</motion>
+		</level>
+	</skill>
+	<skill id="31000018" comment="크리티아스 기계전갈 옐로">
+		<basic>
+			<ui attackType="1" />
+			<kinds rangeType="1" element="7" />
+		</basic>
+		<level value="1">
+			<detectProperty rangeType="box" distance="170" height="250" width="100" />
+			<motion>
+				<motionProperty sequenceName="Attack_01_A" motionEffect="NPC/Skill/MekaScorpionYellow/Eff_MekaScorpionYellow_Attack_01_A.xml" />
+				<attack point="p0" targetCount="5" attacktype="1" brokenOffence="1" unrideOnHit="1">
+					<rangeProperty rangeType="box" distance="220" height="250" width="150" applyTarget="1" castTarget="1" />
+					<damageProperty rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
+				</attack>
+			</motion>
+		</level>
+	</skill>
+	<skill id="31000019" comment="크리티아스 기계전갈 옐로">
+		<basic>
+			<ui attackType="2" />
+			<kinds rangeType="2" element="7" />
+		</basic>
+		<level value="1">
+			<detectProperty rangeType="box" distance="400" height="250" width="150" />
+			<motion>
+				<motionProperty sequenceName="Attack_01_B" motionEffect="NPC/Skill/MekaScorpionYellow/Eff_MekaScorpionYellow_Attack_01_B.xml" />
+				<attack point="p0" targetCount="1" magicPathID="6525" attacktype="2" brokenOffence="1" unrideOnHit="1">
+					<rangeProperty rangeType="box" distance="400" height="250" width="150" applyTarget="1" castTarget="1" />
+					<arrowProperty nonTarget="1" bounceType="3" bounceCount="5" collision="50.000000,35.000000,50.000000" effect="NPC/Skill/Temp/Eff_Temp.xml" />
+					<damageProperty rate="0.7" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="104" />
+				</attack>
+			</motion>
+		</level>
+	</skill>
+	<skill id="31000020" comment="크리티아스 기계전갈 옐로">
+		<basic>
+			<ui attackType="1" />
+			<kinds rangeType="1" element="7" />
+		</basic>
+		<level value="1">
+			<detectProperty rangeType="box" distance="150" height="250" width="120" />
+			<motion>
+				<motionProperty sequenceName="Attack_01_C" motionEffect="NPC/Skill/MekaScorpionYellow/Eff_MekaScorpionYellow_Attack_01_C.xml" faceTarget="0" />
+				<attack point="p0" targetCount="5" attacktype="1" brokenOffence="1" unrideOnHit="1">
+					<rangeProperty rangeType="box" distance="200" height="250" width="150" applyTarget="1" castTarget="1" />
+					<damageProperty rate="0.2" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
+				</attack>
+				<attack point="p1" targetCount="5" attacktype="1" brokenOffence="1" unrideOnHit="1">
+					<rangeProperty rangeType="box" distance="200" height="250" width="150" applyTarget="1" castTarget="1" />
+					<damageProperty rate="0.1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
+				</attack>
+			</motion>
+		</level>
+	</skill>
+	<skill id="31000021" comment="크리티아스 기계전갈 블루">
+		<basic>
+			<ui attackType="1" />
+			<kinds rangeType="1" element="7" />
+		</basic>
+		<level value="1">
+			<detectProperty rangeType="box" distance="170" height="250" width="100" />
+			<motion>
+				<motionProperty sequenceName="Attack_01_A" motionEffect="NPC/Skill/MekaScorpionBlue/Eff_MekaScorpionBlue_Attack_01_A.xml" />
+				<attack point="p0" targetCount="5" attacktype="1" brokenOffence="1" unrideOnHit="1">
+					<rangeProperty rangeType="box" distance="200" height="250" width="100" applyTarget="1" castTarget="1" />
+					<damageProperty rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
+				</attack>
+			</motion>
+		</level>
+	</skill>
+	<skill id="31000022" comment="크리티아스 기계전갈 블루">
+		<basic>
+			<ui attackType="2" />
+			<kinds rangeType="2" element="7" />
+		</basic>
+		<level value="1">
+			<detectProperty rangeType="box" distance="400" height="250" width="150" />
+			<motion>
+				<motionProperty sequenceName="Attack_01_B" motionEffect="NPC/Skill/MekaScorpionBlue/Eff_MekaScorpionBlue_Attack_01_B.xml" />
+				<attack point="p0" targetCount="1" magicPathID="6525" attacktype="2" brokenOffence="1" unrideOnHit="1">
+					<rangeProperty rangeType="box" distance="400" height="250" width="150" applyTarget="1" castTarget="1" />
+					<arrowProperty nonTarget="1" bounceType="3" bounceCount="5" collision="50.000000,35.000000,50.000000" effect="NPC/Skill/Temp/Eff_Temp.xml" />
+					<damageProperty rate="0.7" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="104" />
+				</attack>
+			</motion>
+		</level>
+	</skill>
+	<skill id="31000023" comment="크리티아스 기계전갈 블루">
+		<basic>
+			<ui attackType="1" />
+			<kinds rangeType="1" element="7" />
+		</basic>
+		<level value="1">
+			<detectProperty rangeType="box" distance="150" height="250" width="120" />
+			<motion>
+				<motionProperty sequenceName="Attack_01_C" motionEffect="NPC/Skill/MekaScorpionBlue/Eff_MekaScorpionBlue_Attack_01_C.xml" faceTarget="0" />
+				<attack point="p0" targetCount="5" attacktype="1" brokenOffence="1" unrideOnHit="1">
+					<rangeProperty rangeType="box" distance="180" height="250" width="150" applyTarget="1" castTarget="1" />
+					<damageProperty rate="0.2" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
+				</attack>
+				<attack point="p1" targetCount="5" attacktype="1" brokenOffence="1" unrideOnHit="1">
+					<rangeProperty rangeType="box" distance="180" height="250" width="150" applyTarget="1" castTarget="1" />
+					<damageProperty rate="0.1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
+				</attack>
+			</motion>
+		</level>
+	</skill>
+	<skill id="31000024" comment="크리티아스 기계 거미 블루">
+		<basic>
+			<ui attackType="1" />
+			<kinds rangeType="1" element="7" />
+		</basic>
+		<level value="1">
+			<detectProperty rangeType="cylinder" distance="120" height="250" />
+			<motion>
+				<motionProperty sequenceName="Attack_01_B" motionEffect="NPC/Skill/KritiasSpider/Eff_KritiasSpider_Attack_01_B02.xml" faceTarget="0" />
+				<attack point="p0" targetCount="5" attacktype="1" brokenOffence="1" unrideOnHit="1">
+					<rangeProperty rangeType="cylinder" distance="150" height="250" applyTarget="1" castTarget="1" />
+					<damageProperty rate="0.7" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
+				</attack>
+			</motion>
+		</level>
+	</skill>
+	<skill id="31000025" comment="크리티아스 기계 거미 블랙">
+		<basic>
+			<ui attackType="1" />
+			<kinds rangeType="1" element="7" />
+		</basic>
+		<level value="1">
+			<detectProperty rangeType="cylinder" distance="120" height="250" />
+			<motion>
+				<motionProperty sequenceName="Attack_01_B" motionEffect="NPC/Skill/KritiasSpiderBlack/Eff_KritiasSpiderBlack_Attack_01_B02.xml" faceTarget="0" />
+				<attack point="p0" targetCount="5" attacktype="1" brokenOffence="1" unrideOnHit="1">
+					<rangeProperty rangeType="cylinder" distance="150" height="250" applyTarget="1" castTarget="1" />
+					<damageProperty rate="0.7" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
+				</attack>
+			</motion>
+		</level>
+	</skill>
+	<skill id="31000026" comment="크리티아스 기계 거미 레드">
+		<basic>
+			<ui attackType="1" />
+			<kinds rangeType="1" element="7" />
+		</basic>
+		<level value="1">
+			<detectProperty rangeType="cylinder" distance="120" height="250" />
+			<motion>
+				<motionProperty sequenceName="Attack_01_B" motionEffect="NPC/Skill/KritiasSpiderRed/Eff_KritiasSpiderRed_Attack_01_B02.xml" faceTarget="0" />
+				<attack point="p0" targetCount="5" attacktype="1" brokenOffence="1" unrideOnHit="1">
+					<rangeProperty rangeType="cylinder" distance="150" height="250" applyTarget="1" castTarget="1" />
+					<damageProperty rate="0.7" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
+				</attack>
+			</motion>
+		</level>
+	</skill>
+</ms2>

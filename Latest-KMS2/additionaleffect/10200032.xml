@@ -10,19 +10,10 @@
 		<UIProperty icon="./Data/Resource/Image/skill/icon/10200171_buff.png" />
 		<InvokeEffectProperty skillID="10200021" types="2" values="0.000000" rates="0.160000" />
 		<conditionSkill level="1" skillID="10200193" skillTarget="1">
-			<beginCondition probability="1">
-				<owner hasBuffID="10200032" hasBuffLevel="2" hasBuffOwner="1" hasBuffCount="10" hasBuffCountCompare="Equals" eventCondition="10" eventSkillID="" eventEffectID="" />
+			<beginCondition>
+				<owner hasBuffID="10200032" hasBuffLevel="2" hasBuffOwner="1" hasBuffCount="10" hasBuffCountCompare="Equals" eventCondition="10" />
 			</beginCondition>
 		</conditionSkill>
-	</level>
-	<level feature="CharacterBalance_01">
-		<BasicProperty level="1" buffSubType="2" durationTick="7000" resetCondition="2" maxBuffCount="10" coolDownTime="1" clearEffectFromPVPZone="1" skillGroupType="1" />
-		<MotionProperty abnormalImmuneBreak="5" />
-		<StatusProperty>
-			<Stat sp_rgpvalue="1" />
-		</StatusProperty>
-		<UIProperty icon="./Data/Resource/Image/skill/icon/10200031_buff.png" />
-		<InvokeEffectProperty skillID="10200021" types="2" values="0.000000" rates="0.160000" />
 	</level>
 	<level>
 		<BasicProperty level="1" buffSubType="2" durationTick="7000" resetCondition="2" maxBuffCount="10" coolDownTime="1" clearEffectFromPVPZone="1" skillGroupType="1" />

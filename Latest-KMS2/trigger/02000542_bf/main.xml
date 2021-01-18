@@ -74,7 +74,7 @@
 	<state name="몬스터생성하기2">	
 		<onEnter>
 			<action name="SideNpcTalk" npcID="11004643" illust="SlaveWoman3_normal" duration="4000" script="$02000542_BF__MAIN__3$" />		
-			<action name="몬스터를생성한다" arg1="102" arg2="1" />												
+			<action name="몬스터를생성한다" arg1="102,1021" arg2="1" />												
 		</onEnter>					
 		<condition name="유저를감지했으면" arg1="703" arg2="0">
 			<transition state="몬스터생성하기3"/>
@@ -84,7 +84,7 @@
 	<state name="몬스터생성하기3">	
 		<onEnter>
 			<action name="SideNpcTalk" npcID="11004643" illust="SlaveWoman3_normal" duration="4000" script="$02000542_BF__MAIN__4$" />			
-			<action name="몬스터를생성한다" arg1="103" arg2="1" />												
+			<action name="몬스터를생성한다" arg1="103,1031,1032,1033" arg2="1" />												
 		</onEnter>					
 		<condition name="유저를감지했으면" arg1="704" arg2="0">
 			<transition state="몬스터생성하기4"/>
@@ -93,7 +93,7 @@
 
 	<state name="몬스터생성하기4">	
 		<onEnter>			
-			<action name="몬스터를생성한다" arg1="104" arg2="1" />												
+			<action name="몬스터를생성한다" arg1="104,1041" arg2="1" />												
 		</onEnter>					
 			<condition name="몬스터가죽어있으면" arg1="102,103,104">
 				<transition state="문열기오브젝트설정2"/> 
@@ -126,9 +126,9 @@
 
 	<state name="감옥문부시기4">
 		<onEnter>	
-			<action name="몬스터를생성한다" arg1="116" arg2="0" />						
+			<action name="몬스터를생성한다" arg1="116,1161,1162,1163,1164" arg2="0" />						
         </onEnter>		
-		<condition name="몬스터가죽어있으면" arg1="116">
+		<condition name="몬스터가죽어있으면" arg1="116,1161,1162,1163,1164">
 				<transition state="감옥문부시기5"/> 
 		</condition>	
 	</state>	
@@ -176,10 +176,10 @@
 		<action name="몬스터소멸시킨다" arg1="114"/>					
 		<action name="EnableSpawnPointPC" spawnPointID="0" isEnable="0" />			
 		<action name="EnableSpawnPointPC" spawnPointID="1" isEnable="1" />		
-		<action name="몬스터를생성한다" arg1="106,107,108,109" arg2="0" />	
+		<action name="몬스터를생성한다" arg1="106,107,108,109,1081,1082,1083" arg2="0" />	
 		<action name="몬스터를생성한다" arg1="117,118,119,120" arg2="0" />			
 		</onEnter>					
-			<condition name="몬스터가죽어있으면" arg1="106,107,108,109">
+			<condition name="몬스터가죽어있으면" arg1="106,107,108,109,1081,1082,1083">
 				<transition state="보스스폰"/> 
 			</condition>			
 	</state> 

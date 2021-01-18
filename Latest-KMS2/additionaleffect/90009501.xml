@@ -2,8 +2,8 @@
 <!-- 파싱해서 사용하는 데이터이니 직접 수정하지 마세요 -->
 <ms2>
 	<level>
-		<beginCondition probability="1" applyPvPZoneType="1">
-			<owner hasBuffID="0" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="0" hasBuffCountCompare="Equals" hasNotBuffID="90050979" eventSkillID="" eventEffectID="" />
+		<beginCondition applyPvPZoneType="1">
+			<owner hasBuffID="0" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="0" hasBuffCountCompare="Equals" hasNotBuffID="90050979" />
 		</beginCondition>
 		<BasicProperty level="1" keepCondition="99" doNotClearEffectFromEnterPVPZone="1" />
 		<MotionProperty keepEffect="Item/Passive/Eff_Item_WinterTier3_Keep_01.xml" stopEffect="Item/Passive/Eff_Item_WinterTier3_Stop_01.xml" />
@@ -13,6 +13,6 @@
 		<FinalStatusProperty>
 			<Stat finalwapminrate="-0.9" finalwapmaxrate="-0.9" />
 		</FinalStatusProperty>
-		<UIProperty icon="" iconOnOff="0" />
+		<UIProperty iconOnOff="0" />
 	</level>
 </ms2>
