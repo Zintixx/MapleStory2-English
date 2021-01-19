@@ -853,7 +853,7 @@
 			</motion>
 			<motion>
 				<motionProperty sequenceName="Attack_03_B" faceTarget="0" doesPlayIdleOnSkillEnd="false" />
-				<attack point="p0" targetCount="3" magicPathID="5280" direction="0" attacktype="2" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+				<attack point="p0" targetCount="3" magicPathID="5280" direction="0" attacktype="2" attackMethodType="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
 					<rangeProperty rangeType="cylinder" distance="3000" rangeAdd="0.000000,0.000000,140.000000" height="350" applyTarget="1" castTarget="1" />
 					<arrowProperty collision="80.000000,10.000000,80.000000" collisionAdd="0.000000,50.000000,-20.000000" />
 					<damageProperty rate="2.2" push="5" pushdistance="100" pushduration="0.2" pushEaseType="1" attackMaterial="1" />
@@ -5727,7 +5727,7 @@
 			<detectProperty rangeType="cylinder" distance="100" height="100" />
 			<motion>
 				<motionProperty sequenceName="Attack_01_C" sequenceSpeed="0.65" motionEffect="NPC/Skill/BullAxeBlue/Eff_BullAxeBlue_Attack_01_C_Cast_01.xml" />
-				<attack point="p0" targetCount="1" magicPathID="5554" cubeMagicPathID="5409" attacktype="1" brokenOffence="1" unrideOnHit="1">
+				<attack point="p0" targetCount="1" magicPathID="5554" cubeMagicPathID="5409" attacktype="1" attackMethodType="1" brokenOffence="1" unrideOnHit="1">
 					<rangeProperty rangeType="cylinder" distance="300" height="100" applyTarget="2" castTarget="1" />
 					<arrowProperty nonTarget="1" />
 					<damageProperty count="0" rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="2" />
@@ -5755,7 +5755,7 @@
 			<detectProperty rangeType="cylinder" distance="100" height="100" />
 			<motion>
 				<motionProperty sequenceName="Attack_01_C" sequenceSpeed="0.65" motionEffect="NPC/Skill/BullAxeBlue/Eff_BullAxeBlue_Attack_01_C_Cast_01.xml" />
-				<attack point="p0" targetCount="1" magicPathID="5555" cubeMagicPathID="5409" attacktype="1" brokenOffence="1" unrideOnHit="1">
+				<attack point="p0" targetCount="1" magicPathID="5555" cubeMagicPathID="5409" attacktype="1" attackMethodType="1" brokenOffence="1" unrideOnHit="1">
 					<rangeProperty rangeType="cylinder" distance="300" height="100" applyTarget="2" castTarget="1" />
 					<arrowProperty nonTarget="1" />
 					<damageProperty count="0" rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="2" />
@@ -22717,7 +22717,7 @@
 					<conditionSkill level="1" skillID="50001083" skillTarget="2" skillOwner="1" />
 					<conditionSkill level="1" skillID="50004409" skillTarget="2" skillOwner="1" />
 				</attack>
-				<attack point="p1" targetCount="1" magicPathID="5679" attacktype="2" hitImmuneBreak="1" unrideOnHit="1" compulsionType="1,3">
+				<attack point="p1" targetCount="1" magicPathID="5679" attacktype="2" attackMethodType="1" hitImmuneBreak="1" unrideOnHit="1" compulsionType="1,3">
 					<rangeProperty rangeType="box" distance="1350" height="500" width="130" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" collision="250.000000,25.000000,50.000000" collisionAdd="0.000000,25.000000,50.000000" />
 					<damageProperty rate="1" attackMaterial="105" />
@@ -22737,7 +22737,7 @@
 						</beginCondition>
 					</conditionSkill>
 				</attack>
-				<attack point="p2" targetCount="1" magicPathID="5679" attacktype="2" hitImmuneBreak="1" unrideOnHit="1" compulsionType="1,3">
+				<attack point="p2" targetCount="1" magicPathID="5679" attacktype="2" attackMethodType="1" hitImmuneBreak="1" unrideOnHit="1" compulsionType="1,3">
 					<rangeProperty rangeType="box" distance="1350" height="500" width="130" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" collision="250.000000,25.000000,50.000000" collisionAdd="0.000000,25.000000,50.000000" />
 					<damageProperty rate="1" attackMaterial="105" />
@@ -22777,7 +22777,7 @@
 					<conditionSkill level="1" skillID="50001083" skillTarget="2" skillOwner="1" />
 					<conditionSkill level="1" skillID="50004410" skillTarget="2" skillOwner="1" />
 				</attack>
-				<attack point="p1" targetCount="1" magicPathID="5679" attacktype="2" hitImmuneBreak="1" unrideOnHit="1" compulsionType="1,3">
+				<attack point="p1" targetCount="1" magicPathID="5679" attacktype="2" attackMethodType="1" hitImmuneBreak="1" unrideOnHit="1" compulsionType="1,3">
 					<rangeProperty rangeType="box" distance="1350" height="500" width="130" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" collision="250.000000,25.000000,50.000000" collisionAdd="0.000000,25.000000,50.000000" />
 					<damageProperty rate="1" attackMaterial="105" />
@@ -22797,7 +22797,7 @@
 						</beginCondition>
 					</conditionSkill>
 				</attack>
-				<attack point="p2" targetCount="1" magicPathID="5679" attacktype="2" hitImmuneBreak="1" unrideOnHit="1" compulsionType="1,3">
+				<attack point="p2" targetCount="1" magicPathID="5679" attacktype="2" attackMethodType="1" hitImmuneBreak="1" unrideOnHit="1" compulsionType="1,3">
 					<rangeProperty rangeType="box" distance="1350" height="500" width="130" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" collision="250.000000,25.000000,50.000000" collisionAdd="0.000000,25.000000,50.000000" />
 					<damageProperty rate="1" attackMaterial="105" />
@@ -24892,7 +24892,7 @@
 			</motion>
 			<motion>
 				<motionProperty sequenceName="Attack_02_C" motionEffect="NPC/Skill/CaptainHookFish/Eff_CaptainHookFish_Attack_02_C.xml" movedistance="1000" ignoreCollisionGroups="4" faceTarget="0" />
-				<attack point="p0" targetCount="1" magicPathID="5366" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="3" unrideOnHit="1">
+				<attack point="p0" targetCount="1" magicPathID="5366" attacktype="1" attackMethodType="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="3" unrideOnHit="1">
 					<rangeProperty rangeType="box" distance="900" height="420" width="500" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" bounceType="3" bounceCount="50" collision="400.000000,300.000000,420.000000" collisionAdd="0.000000,50.000000,0.000000" />
 					<damageProperty rate="1.2" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="400" pushduration="0.2" pushEaseType="1" attackMaterial="1" />
@@ -25027,7 +25027,7 @@
 			</motion>
 			<motion>
 				<motionProperty sequenceName="Attack_02_C" motionEffect="NPC/Skill/CaptainHookFish/Eff_CaptainHookFish_Attack_02_C.xml" movedistance="1000" faceTarget="0" />
-				<attack point="p0" targetCount="1" magicPathID="5366" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="3" unrideOnHit="1">
+				<attack point="p0" targetCount="1" magicPathID="5366" attacktype="1" attackMethodType="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="3" unrideOnHit="1">
 					<rangeProperty rangeType="box" distance="900" height="420" width="500" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" bounceType="3" bounceCount="50" collision="400.000000,300.000000,420.000000" collisionAdd="0.000000,50.000000,0.000000" />
 					<damageProperty rate="1.2" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
@@ -26421,19 +26421,19 @@
 		<level value="1">
 			<motion>
 				<motionProperty sequenceName="Attack_01_F" motionEffect="NPC/Skill/Papulatus/Eff_Papulatus_Attack_01_F.xml" />
-				<attack point="p0" targetCount="16" magicPathID="5432" cubeMagicPathID="50000486" attacktype="1" brokenOffence="1" unrideOnHit="1">
+				<attack point="p0" targetCount="16" magicPathID="5432" cubeMagicPathID="50000486" attacktype="1" attackMethodType="1" brokenOffence="1" unrideOnHit="1">
 					<rangeProperty rangeType="cylinder" distance="2500" height="100" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" />
 					<damageProperty count="0" rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
 					<actionSkill splash="1" level="2" skillID="50100742" delay="23000" />
 				</attack>
-				<attack point="p1" targetCount="8" magicPathID="5433" cubeMagicPathID="50000486" attacktype="1" brokenOffence="1" unrideOnHit="1">
+				<attack point="p1" targetCount="8" magicPathID="5433" cubeMagicPathID="50000486" attacktype="1" attackMethodType="1" brokenOffence="1" unrideOnHit="1">
 					<rangeProperty rangeType="cylinder" distance="2500" height="100" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" />
 					<damageProperty count="0" rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
 					<actionSkill splash="1" level="3" skillID="50100742" delay="23000" />
 				</attack>
-				<attack point="p2" targetCount="8" magicPathID="5434" cubeMagicPathID="50000486" attacktype="1" brokenOffence="1" unrideOnHit="1">
+				<attack point="p2" targetCount="8" magicPathID="5434" cubeMagicPathID="50000486" attacktype="1" attackMethodType="1" brokenOffence="1" unrideOnHit="1">
 					<rangeProperty rangeType="cylinder" distance="2500" height="100" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" />
 					<damageProperty count="0" rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
@@ -26485,19 +26485,19 @@
 		<level value="1">
 			<motion>
 				<motionProperty sequenceName="Attack_01_F" motionEffect="NPC/Skill/Papulatus/Eff_Papulatus_Attack_01_F.xml" />
-				<attack point="p0" targetCount="9" magicPathID="5435" cubeMagicPathID="50000486" attacktype="1" brokenOffence="1" unrideOnHit="1">
+				<attack point="p0" targetCount="9" magicPathID="5435" cubeMagicPathID="50000486" attacktype="1" attackMethodType="1" brokenOffence="1" unrideOnHit="1">
 					<rangeProperty rangeType="cylinder" distance="2500" height="100" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" />
 					<damageProperty count="0" rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
 					<actionSkill splash="1" level="2" skillID="50100742" delay="23000" />
 				</attack>
-				<attack point="p1" targetCount="13" magicPathID="5436" cubeMagicPathID="50000486" attacktype="1" brokenOffence="1" unrideOnHit="1">
+				<attack point="p1" targetCount="13" magicPathID="5436" cubeMagicPathID="50000486" attacktype="1" attackMethodType="1" brokenOffence="1" unrideOnHit="1">
 					<rangeProperty rangeType="cylinder" distance="2500" height="100" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" />
 					<damageProperty count="0" rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
 					<actionSkill splash="1" level="3" skillID="50100742" delay="23000" />
 				</attack>
-				<attack point="p2" targetCount="10" magicPathID="5437" cubeMagicPathID="50000486" attacktype="1" brokenOffence="1" unrideOnHit="1">
+				<attack point="p2" targetCount="10" magicPathID="5437" cubeMagicPathID="50000486" attacktype="1" attackMethodType="1" brokenOffence="1" unrideOnHit="1">
 					<rangeProperty rangeType="cylinder" distance="2500" height="100" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" />
 					<damageProperty count="0" rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
@@ -26508,13 +26508,13 @@
 		<level value="2">
 			<motion>
 				<motionProperty sequenceName="Attack_01_F" motionEffect="NPC/Skill/Papulatus/Eff_Papulatus_Attack_01_F.xml" />
-				<attack point="p0" targetCount="6" magicPathID="5438" cubeMagicPathID="50000486" attacktype="1" brokenOffence="1" unrideOnHit="1">
+				<attack point="p0" targetCount="6" magicPathID="5438" cubeMagicPathID="50000486" attacktype="1" attackMethodType="1" brokenOffence="1" unrideOnHit="1">
 					<rangeProperty rangeType="cylinder" distance="2500" height="100" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" />
 					<damageProperty count="0" rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
 					<actionSkill splash="1" level="2" skillID="50100742" delay="23000" />
 				</attack>
-				<attack point="p2" targetCount="26" magicPathID="5439" cubeMagicPathID="50000486" attacktype="1" brokenOffence="1" unrideOnHit="1">
+				<attack point="p2" targetCount="26" magicPathID="5439" cubeMagicPathID="50000486" attacktype="1" attackMethodType="1" brokenOffence="1" unrideOnHit="1">
 					<rangeProperty rangeType="cylinder" distance="2500" height="100" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" />
 					<damageProperty count="0" rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
@@ -28838,19 +28838,19 @@
 		<level value="1">
 			<motion>
 				<motionProperty sequenceName="Attack_01_F" motionEffect="NPC/Skill/Papulatus/Eff_Papulatus_Attack_01_F.xml" />
-				<attack point="p0" targetCount="8" magicPathID="5394" cubeMagicPathID="50000486" attacktype="1" brokenOffence="1" unrideOnHit="1">
+				<attack point="p0" targetCount="8" magicPathID="5394" cubeMagicPathID="50000486" attacktype="1" attackMethodType="1" brokenOffence="1" unrideOnHit="1">
 					<rangeProperty rangeType="cylinder" distance="2500" height="100" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" />
 					<damageProperty count="0" rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
 					<actionSkill splash="1" level="2" skillID="50100758" delay="20000" />
 				</attack>
-				<attack point="p1" targetCount="4" magicPathID="5395" cubeMagicPathID="50000486" attacktype="1" brokenOffence="1" unrideOnHit="1">
+				<attack point="p1" targetCount="4" magicPathID="5395" cubeMagicPathID="50000486" attacktype="1" attackMethodType="1" brokenOffence="1" unrideOnHit="1">
 					<rangeProperty rangeType="cylinder" distance="2500" height="100" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" />
 					<damageProperty count="0" rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
 					<actionSkill splash="1" level="3" skillID="50100758" delay="20000" />
 				</attack>
-				<attack point="p2" targetCount="4" magicPathID="5396" cubeMagicPathID="50000486" attacktype="1" brokenOffence="1" unrideOnHit="1">
+				<attack point="p2" targetCount="4" magicPathID="5396" cubeMagicPathID="50000486" attacktype="1" attackMethodType="1" brokenOffence="1" unrideOnHit="1">
 					<rangeProperty rangeType="cylinder" distance="2500" height="100" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" />
 					<damageProperty count="0" rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
@@ -28902,19 +28902,19 @@
 		<level value="1">
 			<motion>
 				<motionProperty sequenceName="Attack_01_F" motionEffect="NPC/Skill/Papulatus/Eff_Papulatus_Attack_01_F.xml" />
-				<attack point="p0" targetCount="8" magicPathID="5397" cubeMagicPathID="50000486" attacktype="1" brokenOffence="1" unrideOnHit="1">
+				<attack point="p0" targetCount="8" magicPathID="5397" cubeMagicPathID="50000486" attacktype="1" attackMethodType="1" brokenOffence="1" unrideOnHit="1">
 					<rangeProperty rangeType="cylinder" distance="2500" height="100" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" />
 					<damageProperty count="0" rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
 					<actionSkill splash="1" level="2" skillID="50100758" delay="20000" />
 				</attack>
-				<attack point="p1" targetCount="4" magicPathID="5398" cubeMagicPathID="50000486" attacktype="1" brokenOffence="1" unrideOnHit="1">
+				<attack point="p1" targetCount="4" magicPathID="5398" cubeMagicPathID="50000486" attacktype="1" attackMethodType="1" brokenOffence="1" unrideOnHit="1">
 					<rangeProperty rangeType="cylinder" distance="2500" height="100" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" />
 					<damageProperty count="0" rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
 					<actionSkill splash="1" level="3" skillID="50100758" delay="20000" />
 				</attack>
-				<attack point="p2" targetCount="4" magicPathID="5399" cubeMagicPathID="50000486" attacktype="1" brokenOffence="1" unrideOnHit="1">
+				<attack point="p2" targetCount="4" magicPathID="5399" cubeMagicPathID="50000486" attacktype="1" attackMethodType="1" brokenOffence="1" unrideOnHit="1">
 					<rangeProperty rangeType="cylinder" distance="2500" height="100" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" />
 					<damageProperty count="0" rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
@@ -30493,13 +30493,13 @@
 		<level value="1">
 			<motion>
 				<motionProperty sequenceName="Attack_01_F" motionEffect="NPC/Skill/Papulatus/Eff_Papulatus_Attack_01_F.xml" />
-				<attack point="p0" targetCount="6" magicPathID="5504" cubeMagicPathID="50000486" attacktype="1" brokenOffence="1" unrideOnHit="1">
+				<attack point="p0" targetCount="6" magicPathID="5504" cubeMagicPathID="50000486" attacktype="1" attackMethodType="1" brokenOffence="1" unrideOnHit="1">
 					<rangeProperty rangeType="cylinder" distance="2500" height="100" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" />
 					<damageProperty count="0" rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
 					<actionSkill splash="1" level="11" skillID="50100770" delay="20000" />
 				</attack>
-				<attack point="p1" targetCount="4" magicPathID="5505" cubeMagicPathID="50000486" attacktype="1" brokenOffence="1" unrideOnHit="1">
+				<attack point="p1" targetCount="4" magicPathID="5505" cubeMagicPathID="50000486" attacktype="1" attackMethodType="1" brokenOffence="1" unrideOnHit="1">
 					<rangeProperty rangeType="cylinder" distance="2500" height="100" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" />
 					<damageProperty count="0" rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
@@ -30510,13 +30510,13 @@
 		<level value="2">
 			<motion>
 				<motionProperty sequenceName="Attack_01_F" motionEffect="NPC/Skill/Papulatus/Eff_Papulatus_Attack_01_F.xml" />
-				<attack point="p0" targetCount="4" magicPathID="5506" cubeMagicPathID="50000486" attacktype="1" brokenOffence="1" unrideOnHit="1">
+				<attack point="p0" targetCount="4" magicPathID="5506" cubeMagicPathID="50000486" attacktype="1" attackMethodType="1" brokenOffence="1" unrideOnHit="1">
 					<rangeProperty rangeType="cylinder" distance="2500" height="100" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" />
 					<damageProperty count="0" rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
 					<actionSkill splash="1" level="11" skillID="50100770" delay="20000" />
 				</attack>
-				<attack point="p1" targetCount="6" magicPathID="5507" cubeMagicPathID="50000486" attacktype="1" brokenOffence="1" unrideOnHit="1">
+				<attack point="p1" targetCount="6" magicPathID="5507" cubeMagicPathID="50000486" attacktype="1" attackMethodType="1" brokenOffence="1" unrideOnHit="1">
 					<rangeProperty rangeType="cylinder" distance="2500" height="100" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" />
 					<damageProperty count="0" rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
@@ -30527,13 +30527,13 @@
 		<level value="3">
 			<motion>
 				<motionProperty sequenceName="Attack_01_F" motionEffect="NPC/Skill/Papulatus/Eff_Papulatus_Attack_01_F.xml" />
-				<attack point="p0" targetCount="4" magicPathID="5508" cubeMagicPathID="50000486" attacktype="1" brokenOffence="1" unrideOnHit="1">
+				<attack point="p0" targetCount="4" magicPathID="5508" cubeMagicPathID="50000486" attacktype="1" attackMethodType="1" brokenOffence="1" unrideOnHit="1">
 					<rangeProperty rangeType="cylinder" distance="2500" height="100" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" />
 					<damageProperty count="0" rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
 					<actionSkill splash="1" level="11" skillID="50100770" delay="20000" />
 				</attack>
-				<attack point="p1" targetCount="16" magicPathID="5509" cubeMagicPathID="50000486" attacktype="1" brokenOffence="1" unrideOnHit="1">
+				<attack point="p1" targetCount="16" magicPathID="5509" cubeMagicPathID="50000486" attacktype="1" attackMethodType="1" brokenOffence="1" unrideOnHit="1">
 					<rangeProperty rangeType="cylinder" distance="2500" height="100" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" />
 					<damageProperty count="0" rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
@@ -34335,7 +34335,7 @@
 			<detectProperty rangeType="cylinder" distance="100" height="100" />
 			<motion>
 				<motionProperty sequenceName="Attack_Idle_A" />
-				<attack point="p0" targetCount="4" magicPathID="5408" cubeMagicPathID="5409" attacktype="1" brokenOffence="1" unrideOnHit="1">
+				<attack point="p0" targetCount="4" magicPathID="5408" cubeMagicPathID="5409" attacktype="1" attackMethodType="1" brokenOffence="1" unrideOnHit="1">
 					<rangeProperty rangeType="cylinder" distance="300" height="100" applyTarget="2" castTarget="1" />
 					<arrowProperty nonTarget="1" />
 					<damageProperty count="0" rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="2" />
@@ -38936,7 +38936,7 @@
 					<damageProperty rate="0.02" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="101" />
 					<conditionSkill level="1" skillID="50000171" skillTarget="2" skillOwner="1" />
 				</attack>
-				<attack point="p90" targetCount="3" magicPathID="5454" cubeMagicPathID="50000511" attacktype="2" brokenOffence="1" unrideOnHit="1">
+				<attack point="p90" targetCount="3" magicPathID="5454" cubeMagicPathID="50000511" attacktype="2" attackMethodType="1" brokenOffence="1" unrideOnHit="1">
 					<rangeProperty rangeType="cylinder" distance="2500" height="100" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" />
 					<damageProperty count="0" rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="101" />
@@ -38950,7 +38950,7 @@
 						<beginCondition probability="0.3" />
 					</conditionSkill>
 				</attack>
-				<attack point="p91" targetCount="3" magicPathID="5455" cubeMagicPathID="50000511" attacktype="2" brokenOffence="1" unrideOnHit="1">
+				<attack point="p91" targetCount="3" magicPathID="5455" cubeMagicPathID="50000511" attacktype="2" attackMethodType="1" brokenOffence="1" unrideOnHit="1">
 					<rangeProperty rangeType="cylinder" distance="2500" height="100" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" />
 					<damageProperty count="0" rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="101" />
@@ -38964,7 +38964,7 @@
 						<beginCondition probability="0.3" />
 					</conditionSkill>
 				</attack>
-				<attack point="p92" targetCount="3" magicPathID="5456" cubeMagicPathID="50000511" attacktype="2" brokenOffence="1" unrideOnHit="1">
+				<attack point="p92" targetCount="3" magicPathID="5456" cubeMagicPathID="50000511" attacktype="2" attackMethodType="1" brokenOffence="1" unrideOnHit="1">
 					<rangeProperty rangeType="cylinder" distance="2500" height="100" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" />
 					<damageProperty count="0" rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="101" />
@@ -38978,7 +38978,7 @@
 						<beginCondition probability="0.3" />
 					</conditionSkill>
 				</attack>
-				<attack point="p93" targetCount="3" magicPathID="5457" cubeMagicPathID="50000511" attacktype="2" brokenOffence="1" unrideOnHit="1">
+				<attack point="p93" targetCount="3" magicPathID="5457" cubeMagicPathID="50000511" attacktype="2" attackMethodType="1" brokenOffence="1" unrideOnHit="1">
 					<rangeProperty rangeType="cylinder" distance="2500" height="100" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" />
 					<damageProperty count="0" rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="101" />
@@ -38992,7 +38992,7 @@
 						<beginCondition probability="0.3" />
 					</conditionSkill>
 				</attack>
-				<attack point="p94" targetCount="3" magicPathID="5458" cubeMagicPathID="50000511" attacktype="2" brokenOffence="1" unrideOnHit="1">
+				<attack point="p94" targetCount="3" magicPathID="5458" cubeMagicPathID="50000511" attacktype="2" attackMethodType="1" brokenOffence="1" unrideOnHit="1">
 					<rangeProperty rangeType="cylinder" distance="2500" height="100" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" />
 					<damageProperty count="0" rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="101" />
@@ -39006,7 +39006,7 @@
 						<beginCondition probability="0.3" />
 					</conditionSkill>
 				</attack>
-				<attack point="p95" targetCount="3" magicPathID="5459" cubeMagicPathID="50000511" attacktype="2" brokenOffence="1" unrideOnHit="1">
+				<attack point="p95" targetCount="3" magicPathID="5459" cubeMagicPathID="50000511" attacktype="2" attackMethodType="1" brokenOffence="1" unrideOnHit="1">
 					<rangeProperty rangeType="cylinder" distance="2500" height="100" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" />
 					<damageProperty count="0" rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="101" />
@@ -47150,7 +47150,7 @@
 			</motion>
 			<motion>
 				<motionProperty sequenceName="Attack_02_E" motionEffect="NPC/Skill/DevilHugeRed/Eff_DevilHugeRed_Attack_02_E.xml" movedistance="1200" ignoreCollisionGroups="4" faceTarget="0" />
-				<attack point="p0" targetCount="1" magicPathID="5048" attacktype="1" hitImmuneBreak="1" brokenOffence="2" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+				<attack point="p0" targetCount="1" magicPathID="5048" attacktype="1" attackMethodType="1" hitImmuneBreak="1" brokenOffence="2" unrideOnHit="1" releaseObjectWeaponOnHit="0">
 					<rangeProperty rangeType="box" distance="900" height="320" width="500" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" bounceType="3" bounceCount="50" collision="450.000000,500.000000,420.000000" collisionAdd="0.000000,100.000000,0.000000" />
 					<damageProperty rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
