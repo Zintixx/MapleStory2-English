@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ms2>
 	<skill id="81000001" comment="메이드 아이템">
-		<basic>
+		<basic mainType="3">
 			<ui icon="./Data/Resource/Image/item/icon/20000208.png" attackType="1" />
-			<kinds type="3" subType="3" unrideOnUse="1" />
+			<kinds unrideOnUse="1" />
 			<stateAttr battle="0" autoTargetingType="1" cooldownGroupID="80000001" ignoreReduceCooldown="1" />
 		</basic>
 		<level value="1">
@@ -14,17 +14,17 @@
 			</targetItem>
 			<motion>
 				<motionProperty sequenceName="Item_Throw_A" strTagEffects="e0=Item/Use/Maid/Eff_Item_Paint_Cast_01.xml" holdWeapon="0" />
-				<attack point="p0" targetCount="1" magicPathID="81000001" cubeMagicPathID="810000011" attacktype="1" brokenOffence="1">
+				<attack point="p0" targetCount="1" magicPathID="81000001" cubeMagicPathID="810000011" attacktype="1" attackMethodType="1" brokenOffence="1">
 					<rangeProperty rangeType="box" distance="750" height="150" width="450" applyTarget="2" />
 					<arrowProperty rayPhysxTest="1" nonTarget="1" collision="60.000000,0.000000,50.000000" collisionAdd="20.000000,0.000000,25.000000" effect="Item/Use/Maid/Eff_Item_Paint_Ball_01.xml" />
 					<damageProperty count="0" attackMaterial="1" />
-					<actionSkill splash="1" level="1" skillID="81000002" immediateActive="1" />
+					<actionSkill skillID="81000002" level="1" immediateActive="1" />
 				</attack>
 			</motion>
 		</level>
 	</skill>
 	<skill id="81000002" comment="메이드 아이템">
-		<basic>
+		<basic mainType="30">
 			<ui attackType="1" />
 			<stateAttr ignoreReduceCooldown="1" />
 		</basic>
@@ -36,15 +36,15 @@
 					<rangeProperty rangeType="cylinder" distance="200" height="150" applyTarget="2" />
 					<arrowProperty nonTarget="1" />
 					<damageProperty count="0" attackMaterial="1000" />
-					<conditionSkill level="1" skillID="81000001" skillTarget="2" skillOwner="1" />
+					<actionAdditional additionalID="81000001" level="1" skillTarget="2" skillOwner="1" />
 				</attack>
 			</motion>
 		</level>
 	</skill>
 	<skill id="81000011" comment="메이드 아이템">
-		<basic>
+		<basic mainType="3">
 			<ui icon="./Data/Resource/Image/item/icon/20000209.png" />
-			<kinds type="3" subType="3" unrideOnUse="1" releaseObjectWeapon="0" />
+			<kinds unrideOnUse="1" releaseObjectWeapon="0" />
 			<stateAttr battle="0" cooldownGroupID="80000001" ignoreReduceCooldown="1" />
 		</basic>
 		<level value="1">
@@ -58,9 +58,9 @@
 		</level>
 	</skill>
 	<skill id="81000021" comment="메이드 아이템">
-		<basic>
+		<basic mainType="3">
 			<ui icon="./Data/Resource/Image/item/icon/20000210.png" />
-			<kinds type="3" subType="3" unrideOnUse="1" releaseObjectWeapon="0" />
+			<kinds unrideOnUse="1" releaseObjectWeapon="0" />
 			<stateAttr battle="0" cooldownGroupID="80000001" ignoreReduceCooldown="1" />
 		</basic>
 		<level value="1">
@@ -74,9 +74,9 @@
 		</level>
 	</skill>
 	<skill id="81000031" comment="메이드 아이템">
-		<basic>
+		<basic mainType="3">
 			<ui icon="./Data/Resource/Image/item/icon/20000211.png" />
-			<kinds type="3" subType="3" unrideOnUse="1" />
+			<kinds unrideOnUse="1" />
 			<stateAttr battle="0" cooldownGroupID="80000001" ignoreReduceCooldown="1" />
 		</basic>
 		<level value="1">
@@ -84,18 +84,18 @@
 			<targetItem>
 				<item id="20000211" count="1" />
 			</targetItem>
-			<conditionSkill level="1" skillID="81000031">
+			<actionAdditional additionalID="81000031" level="1">
 				<beginCondition allowBattleRidingState="1" />
-			</conditionSkill>
+			</actionAdditional>
 			<motion>
 				<motionProperty sequenceName="Vomit_A" motionEffect="Item/Use/Maid/Eff_Item_Vomit_Start_01.xml" holdWeapon="0" />
 			</motion>
 		</level>
 	</skill>
 	<skill id="81000041" comment="메이드 아이템">
-		<basic>
+		<basic mainType="3">
 			<ui icon="./Data/Resource/Image/item/icon/20000212.png" />
-			<kinds type="3" subType="3" unrideOnUse="1" releaseObjectWeapon="0" />
+			<kinds unrideOnUse="1" releaseObjectWeapon="0" />
 			<stateAttr battle="0" cooldownGroupID="80000001" ignoreReduceCooldown="1" />
 		</basic>
 		<level value="1">
@@ -103,18 +103,18 @@
 			<targetItem>
 				<item id="20000212" count="1" />
 			</targetItem>
-			<conditionSkill level="1" skillID="81000041">
+			<actionAdditional additionalID="81000041" level="1">
 				<beginCondition allowBattleRidingState="1" />
-			</conditionSkill>
+			</actionAdditional>
 			<motion>
 				<motionProperty motionEffect="Item/Use/Maid/Eff_Item_Smoke_Cast_01.xml" holdWeapon="0" />
 			</motion>
 		</level>
 	</skill>
 	<skill id="81000051" comment="메이드 아이템">
-		<basic>
+		<basic mainType="3">
 			<ui icon="./Data/Resource/Image/item/icon/20000213.png" />
-			<kinds type="3" subType="3" unrideOnUse="1" releaseObjectWeapon="0" />
+			<kinds unrideOnUse="1" releaseObjectWeapon="0" />
 			<stateAttr battle="0" cooldownGroupID="80000001" ignoreReduceCooldown="1" />
 		</basic>
 		<level value="1">
@@ -122,18 +122,18 @@
 			<targetItem>
 				<item id="20000213" count="1" />
 			</targetItem>
-			<conditionSkill level="1" skillID="81000051">
+			<actionAdditional additionalID="81000051" level="1">
 				<beginCondition allowBattleRidingState="1" />
-			</conditionSkill>
+			</actionAdditional>
 			<motion>
 				<motionProperty holdWeapon="0" />
 			</motion>
 		</level>
 	</skill>
 	<skill id="81000061" comment="메이드 아이템">
-		<basic>
+		<basic mainType="3">
 			<ui icon="./Data/Resource/Image/item/icon/20000214.png" />
-			<kinds type="3" subType="3" unrideOnUse="1" />
+			<kinds unrideOnUse="1" />
 			<stateAttr battle="0" cooldownGroupID="80000001" ignoreReduceCooldown="1" />
 		</basic>
 		<level value="1">
@@ -141,18 +141,18 @@
 			<targetItem>
 				<item id="20000214" count="1" />
 			</targetItem>
-			<conditionSkill level="1" skillID="81000061">
+			<actionAdditional additionalID="81000061" level="1">
 				<beginCondition allowBattleRidingState="1" />
-			</conditionSkill>
+			</actionAdditional>
 			<motion>
 				<motionProperty sequenceName="Item_BBQ_A" holdWeapon="0" />
 			</motion>
 		</level>
 	</skill>
 	<skill id="81000071" comment="메이드 아이템">
-		<basic>
+		<basic mainType="3">
 			<ui icon="./Data/Resource/Image/item/icon/20000215.png" />
-			<kinds type="3" subType="3" unrideOnUse="1" />
+			<kinds unrideOnUse="1" />
 			<stateAttr battle="0" cooldownGroupID="80000001" ignoreReduceCooldown="1" />
 		</basic>
 		<level value="1">
@@ -165,10 +165,10 @@
 			</motion>
 		</level>
 	</skill>
-	<skill id="81000081" comment="메이드 아이템">
-		<basic>
+	<skill id="81000081" comment="메이드 아이템 - 스프링 덩굴">
+		<basic mainType="3">
 			<ui icon="./Data/Resource/Image/item/icon/20000216.png" />
-			<kinds type="3" subType="3" unrideOnUse="1" releaseObjectWeapon="0" />
+			<kinds unrideOnUse="1" releaseObjectWeapon="0" />
 			<stateAttr battle="0" cooldownGroupID="80000001" ignoreReduceCooldown="1" />
 		</basic>
 		<level value="1">
@@ -187,9 +187,9 @@
 		</level>
 	</skill>
 	<skill id="81000091" comment="메이드 아이템">
-		<basic>
+		<basic mainType="3">
 			<ui icon="./Data/Resource/Image/item/icon/20000217.png" />
-			<kinds type="3" subType="3" unrideOnUse="1" releaseObjectWeapon="0" />
+			<kinds unrideOnUse="1" releaseObjectWeapon="0" />
 			<stateAttr battle="0" cooldownGroupID="80000001" ignoreReduceCooldown="1" />
 		</basic>
 		<level value="1">
@@ -197,18 +197,18 @@
 			<targetItem>
 				<item id="20000217" count="1" />
 			</targetItem>
-			<conditionSkill level="1" skillID="81000091">
+			<actionAdditional additionalID="81000091" level="1">
 				<beginCondition allowBattleRidingState="1" />
-			</conditionSkill>
+			</actionAdditional>
 			<motion>
 				<motionProperty holdWeapon="0" />
 			</motion>
 		</level>
 	</skill>
 	<skill id="81000101" comment="메이드 아이템">
-		<basic>
+		<basic mainType="3">
 			<ui icon="./Data/Resource/Image/item/icon/20000218.png" />
-			<kinds type="3" subType="3" unrideOnUse="1" releaseObjectWeapon="0" />
+			<kinds unrideOnUse="1" releaseObjectWeapon="0" />
 			<stateAttr battle="0" cooldownGroupID="80000001" ignoreReduceCooldown="1" />
 		</basic>
 		<level value="1">
@@ -222,15 +222,15 @@
 					<rangeProperty rangeType="cylinder" distance="225" height="300" applyTarget="1" />
 					<arrowProperty nonTarget="1" />
 					<damageProperty count="0" attackMaterial="1000" />
-					<conditionSkill level="1" skillID="81000101" skillTarget="2" skillOwner="1" />
+					<actionAdditional additionalID="81000101" level="1" skillTarget="2" skillOwner="1" />
 				</attack>
 			</motion>
 		</level>
 	</skill>
 	<skill id="81000111" comment="메이드 아이템">
-		<basic>
+		<basic mainType="3">
 			<ui icon="./Data/Resource/Image/item/icon/20000219.png" />
-			<kinds type="3" subType="3" unrideOnUse="1" releaseObjectWeapon="0" />
+			<kinds unrideOnUse="1" releaseObjectWeapon="0" />
 			<stateAttr battle="0" cooldownGroupID="80000001" ignoreReduceCooldown="1" />
 		</basic>
 		<level value="1">
@@ -238,35 +238,35 @@
 			<targetItem>
 				<item id="20000219" count="1" />
 			</targetItem>
-			<conditionSkill level="1" skillID="81000111">
+			<actionAdditional additionalID="81000111" level="1">
 				<beginCondition allowBattleRidingState="1" />
-			</conditionSkill>
+			</actionAdditional>
 			<motion>
 				<motionProperty motionEffect="Item/Use/Maid/Eff_Item_Arrow_Cast_01.xml" holdWeapon="0" />
 			</motion>
 		</level>
 	</skill>
 	<skill id="81000121" comment="메이드 아이템">
-		<basic>
+		<basic mainType="3">
 			<ui icon="./Data/Resource/Image/item/icon/20000220.png" />
-			<kinds type="3" subType="3" unrideOnUse="1" releaseObjectWeapon="0" />
+			<kinds unrideOnUse="1" releaseObjectWeapon="0" />
 			<stateAttr battle="0" cooldownGroupID="80000001" ignoreReduceCooldown="1" />
 		</basic>
 		<level value="1">
 			<beginCondition cooldownTime="20" useCoolDownShowUI="1" />
 			<consume useItem="1" />
-			<conditionSkill level="1" skillID="81000121">
+			<actionAdditional additionalID="81000121" level="1">
 				<beginCondition allowBattleRidingState="1" />
-			</conditionSkill>
+			</actionAdditional>
 			<motion>
 				<motionProperty motionEffect="Item/Use/Maid/Eff_Item_Smoke_Cast_02.xml" holdWeapon="0" />
 			</motion>
 		</level>
 	</skill>
 	<skill id="81000131" comment="메이드 아이템">
-		<basic>
+		<basic mainType="3">
 			<ui icon="./Data/Resource/Image/item/icon/20000221.png" />
-			<kinds type="3" subType="3" unrideOnUse="1" />
+			<kinds unrideOnUse="1" />
 			<stateAttr battle="0" cooldownGroupID="80000001" ignoreReduceCooldown="1" />
 		</basic>
 		<level value="1">
@@ -274,18 +274,18 @@
 			<targetItem>
 				<item id="20000221" count="1" />
 			</targetItem>
-			<conditionSkill level="1" skillID="81000131">
+			<actionAdditional additionalID="81000131" level="1">
 				<beginCondition allowBattleRidingState="1" />
-			</conditionSkill>
+			</actionAdditional>
 			<motion>
 				<motionProperty sequenceName="Item_Sit_Chair_A" motionEffect="Item/Use/Maid/Eff_Item_Chair_Cast_01.xml" holdWeapon="0" />
 			</motion>
 		</level>
 	</skill>
 	<skill id="81000141" comment="메이드 아이템">
-		<basic>
+		<basic mainType="3">
 			<ui icon="./Data/Resource/Image/item/icon/20000222.png" />
-			<kinds type="3" subType="3" unrideOnUse="1" />
+			<kinds unrideOnUse="1" />
 			<stateAttr battle="0" cooldownGroupID="80000001" ignoreReduceCooldown="1" />
 		</basic>
 		<level value="1">
@@ -293,18 +293,18 @@
 			<targetItem>
 				<item id="20000222" count="1" />
 			</targetItem>
-			<conditionSkill level="1" skillID="81000141">
+			<actionAdditional additionalID="81000141" level="1">
 				<beginCondition allowBattleRidingState="1" />
-			</conditionSkill>
+			</actionAdditional>
 			<motion>
 				<motionProperty sequenceName="Stun_A" holdWeapon="0" loopCount="7" />
 			</motion>
 		</level>
 	</skill>
 	<skill id="81000151" comment="메이드 아이템">
-		<basic>
+		<basic mainType="3">
 			<ui icon="./Data/Resource/Image/item/icon/20000223.png" />
-			<kinds type="3" subType="3" unrideOnUse="1" releaseObjectWeapon="0" />
+			<kinds unrideOnUse="1" releaseObjectWeapon="0" />
 			<stateAttr battle="0" cooldownGroupID="80000001" ignoreReduceCooldown="1" />
 		</basic>
 		<level value="1">
@@ -312,18 +312,18 @@
 			<targetItem>
 				<item id="20000223" count="1" />
 			</targetItem>
-			<conditionSkill level="1" skillID="81000151">
+			<actionAdditional additionalID="81000151" level="1">
 				<beginCondition allowBattleRidingState="1" />
-			</conditionSkill>
+			</actionAdditional>
 			<motion>
 				<motionProperty holdWeapon="0" />
 			</motion>
 		</level>
 	</skill>
 	<skill id="81000161" comment="메이드 아이템">
-		<basic>
+		<basic mainType="3">
 			<ui icon="./Data/Resource/Image/item/icon/20000224.png" />
-			<kinds type="3" subType="3" unrideOnUse="1" releaseObjectWeapon="0" />
+			<kinds unrideOnUse="1" releaseObjectWeapon="0" />
 			<stateAttr battle="0" cooldownGroupID="80000001" ignoreReduceCooldown="1" />
 		</basic>
 		<level value="1">
@@ -331,18 +331,18 @@
 			<targetItem>
 				<item id="20000224" count="1" />
 			</targetItem>
-			<conditionSkill level="1" skillID="81000161">
+			<actionAdditional additionalID="81000161" level="1">
 				<beginCondition allowBattleRidingState="1" />
-			</conditionSkill>
+			</actionAdditional>
 			<motion>
 				<motionProperty holdWeapon="0" />
 			</motion>
 		</level>
 	</skill>
 	<skill id="81000171" comment="메이드 아이템">
-		<basic>
+		<basic mainType="3">
 			<ui icon="./Data/Resource/Image/item/icon/20000225.png" />
-			<kinds type="3" subType="3" unrideOnUse="1" />
+			<kinds unrideOnUse="1" />
 			<stateAttr battle="0" cooldownGroupID="80000001" ignoreReduceCooldown="1" />
 		</basic>
 		<level value="1">
@@ -356,9 +356,9 @@
 		</level>
 	</skill>
 	<skill id="81000181" comment="메이드 아이템">
-		<basic>
+		<basic mainType="3">
 			<ui icon="./Data/Resource/Image/item/icon/20000226.png" />
-			<kinds type="3" subType="3" unrideOnUse="1" releaseObjectWeapon="0" />
+			<kinds unrideOnUse="1" releaseObjectWeapon="0" />
 			<stateAttr battle="0" cooldownGroupID="80000001" ignoreReduceCooldown="1" />
 		</basic>
 		<level value="1">
@@ -366,18 +366,18 @@
 			<targetItem>
 				<item id="20000226" count="1" />
 			</targetItem>
-			<conditionSkill level="1" skillID="81000181">
+			<actionAdditional additionalID="81000181" level="1">
 				<beginCondition allowBattleRidingState="1" />
-			</conditionSkill>
+			</actionAdditional>
 			<motion>
 				<motionProperty holdWeapon="0" />
 			</motion>
 		</level>
 	</skill>
 	<skill id="81000191" comment="메이드 아이템">
-		<basic>
+		<basic mainType="3">
 			<ui icon="./Data/Resource/Image/item/icon/20000227.png" />
-			<kinds type="3" subType="3" unrideOnUse="1" />
+			<kinds unrideOnUse="1" />
 			<stateAttr battle="0" cooldownGroupID="80000001" ignoreReduceCooldown="1" />
 		</basic>
 		<level value="1">
@@ -391,15 +391,15 @@
 					<rangeProperty rangeType="cylinder" distance="150" height="300" includeCaster="1" applyTarget="2" />
 					<arrowProperty nonTarget="1" />
 					<damageProperty count="0" />
-					<conditionSkill level="1" skillID="81000191" skillTarget="1" skillOwner="1" />
+					<actionAdditional additionalID="81000191" level="1" skillTarget="1" skillOwner="1" />
 				</attack>
 			</motion>
 		</level>
 	</skill>
 	<skill id="81000201" comment="메이드 아이템">
-		<basic>
+		<basic mainType="3">
 			<ui icon="./Data/Resource/Image/item/icon/20000228.png" />
-			<kinds type="3" subType="3" unrideOnUse="1" releaseObjectWeapon="0" />
+			<kinds unrideOnUse="1" releaseObjectWeapon="0" />
 			<stateAttr battle="0" cooldownGroupID="80000001" ignoreReduceCooldown="1" />
 		</basic>
 		<level value="1">
@@ -413,9 +413,9 @@
 		</level>
 	</skill>
 	<skill id="81000211" comment="메이드 아이템">
-		<basic>
+		<basic mainType="3">
 			<ui icon="./Data/Resource/Image/item/icon/20000229.png" />
-			<kinds type="3" subType="3" unrideOnUse="1" releaseObjectWeapon="0" />
+			<kinds unrideOnUse="1" releaseObjectWeapon="0" />
 			<stateAttr battle="0" cooldownGroupID="80000001" ignoreReduceCooldown="1" />
 		</basic>
 		<level value="1">
@@ -423,18 +423,18 @@
 			<targetItem>
 				<item id="20000229" count="1" />
 			</targetItem>
-			<conditionSkill level="1" skillID="81000211">
+			<actionAdditional additionalID="81000211" level="1">
 				<beginCondition allowBattleRidingState="1" />
-			</conditionSkill>
+			</actionAdditional>
 			<motion>
 				<motionProperty motionEffect="Item/Use/Maid/Eff_Item_Star_Cast_01.xml" holdWeapon="0" />
 			</motion>
 		</level>
 	</skill>
 	<skill id="81000221" comment="메이드 아이템">
-		<basic>
+		<basic mainType="3">
 			<ui icon="./Data/Resource/Image/item/icon/20000230.png" />
-			<kinds type="3" subType="3" unrideOnUse="1" releaseObjectWeapon="0" />
+			<kinds unrideOnUse="1" releaseObjectWeapon="0" />
 			<stateAttr battle="0" cooldownGroupID="80000001" ignoreReduceCooldown="1" />
 		</basic>
 		<level value="1">
@@ -442,18 +442,18 @@
 			<targetItem>
 				<item id="20000230" count="1" />
 			</targetItem>
-			<conditionSkill level="1" skillID="81000221">
+			<actionAdditional additionalID="81000221" level="1">
 				<beginCondition allowBattleRidingState="1" />
-			</conditionSkill>
+			</actionAdditional>
 			<motion>
 				<motionProperty holdWeapon="0" />
 			</motion>
 		</level>
 	</skill>
 	<skill id="81000231" comment="메이드 아이템">
-		<basic>
+		<basic mainType="3">
 			<ui icon="./Data/Resource/Image/item/icon/20000231.png" />
-			<kinds type="3" subType="3" unrideOnUse="1" />
+			<kinds unrideOnUse="1" />
 			<stateAttr battle="0" cooldownGroupID="80000001" ignoreReduceCooldown="1" />
 		</basic>
 		<level value="1">
@@ -467,9 +467,9 @@
 		</level>
 	</skill>
 	<skill id="81000241" comment="메이드 아이템">
-		<basic>
+		<basic mainType="3">
 			<ui icon="./Data/Resource/Image/item/icon/20000232.png" />
-			<kinds type="3" subType="3" unrideOnUse="1" />
+			<kinds unrideOnUse="1" />
 			<stateAttr battle="0" cooldownGroupID="80000001" ignoreReduceCooldown="1" />
 		</basic>
 		<level value="1">
@@ -483,15 +483,15 @@
 					<rangeProperty rangeType="cylinder" distance="150" height="300" includeCaster="1" applyTarget="2" />
 					<arrowProperty nonTarget="1" />
 					<damageProperty count="0" />
-					<conditionSkill level="1" skillID="81000241" skillTarget="1" skillOwner="1" />
+					<actionAdditional additionalID="81000241" level="1" skillTarget="1" skillOwner="1" />
 				</attack>
 			</motion>
 		</level>
 	</skill>
 	<skill id="81000251" comment="메이드 아이템">
-		<basic>
+		<basic mainType="3">
 			<ui icon="./Data/Resource/Image/item/icon/20000237.png" />
-			<kinds type="3" subType="3" unrideOnUse="1" releaseObjectWeapon="0" />
+			<kinds unrideOnUse="1" releaseObjectWeapon="0" />
 			<stateAttr battle="0" cooldownGroupID="80000001" ignoreReduceCooldown="1" />
 		</basic>
 		<level value="1">
@@ -499,18 +499,18 @@
 			<targetItem>
 				<item id="20000237" count="1" />
 			</targetItem>
-			<conditionSkill level="1" skillID="81000251">
+			<actionAdditional additionalID="81000251" level="1">
 				<beginCondition allowBattleRidingState="1" />
-			</conditionSkill>
+			</actionAdditional>
 			<motion>
 				<motionProperty motionEffect="Item/Use/Maid/Eff_Item_CampFire_Cast_01.xml" holdWeapon="0" />
 			</motion>
 		</level>
 	</skill>
 	<skill id="81000261" comment="메이드 아이템">
-		<basic>
+		<basic mainType="3">
 			<ui icon="./Data/Resource/Image/item/icon/20000238.png" />
-			<kinds type="3" subType="3" unrideOnUse="1" />
+			<kinds unrideOnUse="1" />
 			<stateAttr battle="0" cooldownGroupID="80000001" ignoreReduceCooldown="1" />
 		</basic>
 		<level value="1">
@@ -518,9 +518,9 @@
 			<targetItem>
 				<item id="20000238" count="1" />
 			</targetItem>
-			<conditionSkill level="1" skillID="81000261">
+			<actionAdditional additionalID="81000261" level="1">
 				<beginCondition allowBattleRidingState="1" />
-			</conditionSkill>
+			</actionAdditional>
 			<motion>
 				<motionProperty sequenceName="Emotion_Faint_A" motionEffect="Item/Use/Maid/Eff_Item_DarkEnergy_Cast_01.xml" holdWeapon="0" />
 			</motion>

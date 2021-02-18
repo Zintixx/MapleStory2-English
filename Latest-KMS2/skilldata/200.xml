@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ms2>
-	<skill id="20000001" comment="액션 스킬">
-		<basic>
+	<skill id="20000001" comment="빠른 헤엄">
+		<basic mainType="11">
 			<ui icon="./Data/Resource/Image/skill/icon/20000001.png" exceptUI="1" />
-			<kinds subType="11" continue="1" unrideOnUse="1" />
+			<kinds continue="1" />
 			<stateAttr battle="0" ignoreReduceCooldown="1" />
 		</basic>
 		<level value="1">
@@ -15,10 +15,10 @@
 			</motion>
 		</level>
 	</skill>
-	<skill id="20000011" comment="액션 스킬">
-		<basic>
+	<skill id="20000011" comment="암벽 등반">
+		<basic mainType="13">
 			<ui icon="./Data/Resource/Image/skill/icon/20000011.png" exceptUI="1" />
-			<kinds subType="13" jump="20000011" unrideOnUse="1" />
+			<kinds jump="20000011" />
 			<stateAttr battle="0" ignoreReduceCooldown="1" />
 		</basic>
 		<level value="1">
@@ -27,23 +27,10 @@
 			</motion>
 		</level>
 	</skill>
-	<skill id="20000021" comment="액션 스킬">
-		<basic>
-			<ui icon="./Data/Resource/Image/skill/icon/20000021.png" />
-			<kinds subType="7" jump="20000021" continue="1" unrideOnUse="1" />
-			<stateAttr battle="0" ignoreReduceCooldown="1" />
-		</basic>
-		<level value="1">
-			<glideProperty gravity="5" heightLimit="1600" horizontalVelocity="210" verticalVelocity="180" verticalVibrateAmplitude="300" verticalVibrateFrequency="1500" bEffect="1" effectRun="CH/Fly/Eff_FlyTypeA_Balloon_Run.xml" effectIdle="CH/Fly/Eff_FlyTypeA_Balloon_Idle.xml" aniIdle="FlyTypeA_Idle_A" aniLeft="FlyTypeA_Run_A" aniRun="FlyTypeA_Run_A" />
-			<motion>
-				<motionProperty ignoreCollisionGroups="20" holdWeapon="0" />
-			</motion>
-		</level>
-	</skill>
-	<skill id="20000031" comment="액션 스킬">
-		<basic>
+	<skill id="20000031" comment="붙잡기">
+		<basic mainType="12">
 			<ui icon="./Data/Resource/Image/skill/icon/20000031.png" />
-			<kinds subType="12" jump="20000031" unrideOnUse="1" />
+			<kinds jump="20000031" />
 			<stateAttr battle="0" ignoreReduceCooldown="1" />
 		</basic>
 		<level value="1">
@@ -52,227 +39,55 @@
 			</motion>
 		</level>
 	</skill>
-	<skill id="20000041" comment="액션 스킬">
-		<basic>
-			<ui icon="./Data/Resource/Image/skill/icon/20000041.png" />
-			<kinds subType="7" jump="20000041" continue="1" unrideOnUse="1" />
-			<stateAttr battle="0" ignoreReduceCooldown="1" />
-		</basic>
-		<level value="1">
-			<glideProperty gravity="5" heightLimit="300" horizontalVelocity="650" verticalVelocity="100" verticalVibrateAmplitude="400" verticalVibrateFrequency="750" bEffect="1" effectRun="CH/Fly/Eff_FlyTypeA_Eagle_Run.xml" effectIdle="CH/Fly/Eff_FlyTypeA_Eagle_Idle.xml" aniIdle="FlyTypeA_Idle_A" aniLeft="FlyTypeA_Run_A" aniRun="FlyTypeA_Run_A" />
-			<motion>
-				<motionProperty ignoreCollisionGroups="20" holdWeapon="0" />
-			</motion>
-		</level>
-	</skill>
-	<skill id="20000051" comment="액션 스킬">
-		<basic>
-			<ui icon="./Data/Resource/Image/skill/icon/20000051.png" />
-			<kinds subType="7" jump="20000051" continue="1" unrideOnUse="1" />
-			<stateAttr battle="0" ignoreReduceCooldown="1" />
-		</basic>
-		<level value="1">
-			<glideProperty gravity="5" heightLimit="1600" horizontalVelocity="250" verticalVelocity="250" verticalVibrateAmplitude="100" verticalVibrateFrequency="100" bEffect="1" effectRun="CH/Fly/Eff_FlyTypeA_PigAngel_Run.xml" effectIdle="CH/Fly/Eff_FlyTypeA_PigAngel_Idle.xml" aniIdle="FlyTypeA_Idle_A" aniLeft="FlyTypeA_Run_A" aniRun="FlyTypeA_Run_A" />
-			<motion>
-				<motionProperty ignoreCollisionGroups="20" holdWeapon="0" />
-			</motion>
-		</level>
-	</skill>
-	<skill id="20000061" comment="액션 스킬">
-		<basic>
+	<skill id="20000061" comment="원기 회복">
+		<basic mainType="2">
 			<ui icon="./Data/Resource/Image/skill/icon/20000061.png" />
-			<kinds subType="2" jump="20000061" immediateActive="1" unrideOnUse="1" releaseObjectWeapon="0" />
+			<kinds jump="20000061" immediateActive="1" unrideOnUse="1" releaseObjectWeapon="0" />
 			<stateAttr battle="0" clearCooldownFromPVPZone="1" />
 		</basic>
 		<level value="1">
 			<beginCondition cooldownTime="240" useCoolDownShowUI="1" />
-			<conditionSkill level="1" skillID="20000061" skillTarget="1">
+			<actionAdditional additionalID="20000061" level="1" skillTarget="1">
 				<beginCondition allowBattleRidingState="1" />
-			</conditionSkill>
+			</actionAdditional>
 			<motion>
 				<motionProperty holdWeapon="0" />
 			</motion>
 		</level>
 		<level value="2">
 			<beginCondition cooldownTime="240" useCoolDownShowUI="1" />
-			<conditionSkill level="2" skillID="20000061" skillTarget="1">
+			<actionAdditional additionalID="20000061" level="2" skillTarget="1">
 				<beginCondition allowBattleRidingState="1" />
-			</conditionSkill>
+			</actionAdditional>
 			<motion>
 				<motionProperty holdWeapon="0" />
 			</motion>
 		</level>
 		<level value="3">
 			<beginCondition cooldownTime="240" useCoolDownShowUI="1" />
-			<conditionSkill level="3" skillID="20000061" skillTarget="1">
+			<actionAdditional additionalID="20000061" level="3" skillTarget="1">
 				<beginCondition allowBattleRidingState="1" />
-			</conditionSkill>
+			</actionAdditional>
 			<motion>
 				<motionProperty holdWeapon="0" />
 			</motion>
 		</level>
 		<level value="4">
 			<beginCondition cooldownTime="240" useCoolDownShowUI="1" />
-			<conditionSkill level="4" skillID="20000061" skillTarget="1">
+			<actionAdditional additionalID="20000061" level="4" skillTarget="1">
 				<beginCondition allowBattleRidingState="1" />
-			</conditionSkill>
+			</actionAdditional>
 			<motion>
 				<motionProperty holdWeapon="0" />
 			</motion>
 		</level>
 		<level value="5">
 			<beginCondition cooldownTime="240" useCoolDownShowUI="1" />
-			<conditionSkill level="5" skillID="20000061" skillTarget="1">
+			<actionAdditional additionalID="20000061" level="5" skillTarget="1">
 				<beginCondition allowBattleRidingState="1" />
-			</conditionSkill>
+			</actionAdditional>
 			<motion>
 				<motionProperty holdWeapon="0" />
-			</motion>
-		</level>
-	</skill>
-	<skill id="20000071" comment="액션 스킬">
-		<basic>
-			<ui icon="./Data/Resource/Image/skill/icon/20000071.png" />
-			<kinds subType="7" jump="20000071" continue="1" unrideOnUse="1" />
-			<stateAttr battle="0" ignoreReduceCooldown="1" />
-		</basic>
-		<level value="1">
-			<glideProperty gravity="5" heightLimit="1600" horizontalVelocity="250" verticalVelocity="250" verticalVibrateAmplitude="210" verticalVibrateFrequency="3000" bEffect="1" effectRun="CH/Fly/Eff_FlyTypeA_Bulb_Run.xml" effectIdle="CH/Fly/Eff_FlyTypeA_Bulb_Idle.xml" aniIdle="FlyTypeA_Idle_A" aniLeft="FlyTypeA_Run_A" aniRun="FlyTypeA_Run_A" />
-			<motion>
-				<motionProperty ignoreCollisionGroups="20" holdWeapon="0" />
-			</motion>
-		</level>
-	</skill>
-	<skill id="20000081" comment="액션 스킬">
-		<basic>
-			<ui icon="./Data/Resource/Image/skill/icon/20000081.png" />
-			<kinds subType="7" jump="20000081" continue="1" unrideOnUse="1" />
-			<stateAttr battle="0" ignoreReduceCooldown="1" />
-		</basic>
-		<level value="1">
-			<glideProperty gravity="5" heightLimit="950" horizontalVelocity="450" verticalVelocity="170" bEffect="1" effectRun="CH/Fly/Eff_FlyTypeA_Ufo_Run.xml" effectIdle="CH/Fly/Eff_FlyTypeA_Ufo_Idle.xml" aniIdle="FlyTypeA_Idle_A" aniLeft="FlyTypeA_Run_A" aniRun="FlyTypeA_Run_A" />
-			<motion>
-				<motionProperty ignoreCollisionGroups="20" holdWeapon="0" />
-			</motion>
-		</level>
-	</skill>
-	<skill id="20000091" comment="액션 스킬">
-		<basic>
-			<ui icon="./Data/Resource/Image/skill/icon/20000091.png" />
-			<kinds subType="7" jump="20000091" continue="1" unrideOnUse="1" />
-			<stateAttr battle="0" ignoreReduceCooldown="1" />
-		</basic>
-		<level value="1">
-			<glideProperty gravity="5" heightLimit="1000" horizontalAccelerate="50" horizontalVelocity="300" verticalVelocity="180" glideHorizontalAccelerateLimit="250" bEffect="1" effectRun="CH/Fly/Eff_FlyTypeB_Missile_Run.xml" effectIdle="CH/Fly/Eff_FlyTypeB_Missile_Idle.xml" aniIdle="FlyTypeB_Idle_A" aniLeft="FlyTypeB_Run_A" aniRun="FlyTypeB_Run_A" />
-			<motion>
-				<motionProperty ignoreCollisionGroups="20" holdWeapon="0" />
-			</motion>
-		</level>
-	</skill>
-	<skill id="20000101" comment="액션 스킬">
-		<basic>
-			<ui icon="./Data/Resource/Image/skill/icon/20000101.png" />
-			<kinds subType="7" jump="20000101" continue="1" unrideOnUse="1" />
-			<stateAttr battle="0" ignoreReduceCooldown="1" />
-		</basic>
-		<level value="1">
-			<glideProperty gravity="5" heightLimit="1000" horizontalAccelerate="50" horizontalVelocity="300" verticalVelocity="180" glideHorizontalAccelerateLimit="250" bEffect="1" effectRun="CH/Fly/Eff_FlyTypeB_Rocket_Run.xml" effectIdle="CH/Fly/Eff_FlyTypeB_Rocket_Idle.xml" aniIdle="FlyTypeB_Idle_A" aniLeft="FlyTypeB_Run_A" aniRun="FlyTypeB_Run_A" />
-			<motion>
-				<motionProperty ignoreCollisionGroups="20" holdWeapon="0" />
-			</motion>
-		</level>
-	</skill>
-	<skill id="20000111" comment="액션 스킬">
-		<basic>
-			<ui icon="./Data/Resource/Image/skill/icon/20000111.png" />
-			<kinds subType="7" jump="20000111" continue="1" unrideOnUse="1" />
-			<stateAttr battle="0" ignoreReduceCooldown="1" />
-		</basic>
-		<level value="1">
-			<glideProperty gravity="5" heightLimit="300" horizontalVelocity="650" verticalVelocity="100" verticalVibrateAmplitude="100" verticalVibrateFrequency="2000" bEffect="1" effectRun="CH/Fly/Eff_FlyTypeC_PaperPlane_Run.xml" effectIdle="CH/Fly/Eff_FlyTypeC_PaperPlane_Idle.xml" aniIdle="FlyTypeC_Idle_A" aniLeft="FlyTypeC_Run_A" aniRun="FlyTypeC_Run_A" />
-			<motion>
-				<motionProperty ignoreCollisionGroups="20" holdWeapon="0" />
-			</motion>
-		</level>
-	</skill>
-	<skill id="20000121" comment="액션 스킬">
-		<basic>
-			<ui icon="./Data/Resource/Image/skill/icon/20000121.png" />
-			<kinds subType="7" jump="20000121" continue="1" unrideOnUse="1" />
-			<stateAttr battle="0" ignoreReduceCooldown="1" />
-		</basic>
-		<level value="1">
-			<glideProperty gravity="5" heightLimit="300" horizontalVelocity="650" verticalVelocity="100" verticalVibrateAmplitude="100" verticalVibrateFrequency="2000" bEffect="1" effectRun="CH/Fly/Eff_FlyTypeC_Drone_Run.xml" effectIdle="CH/Fly/Eff_FlyTypeC_Drone_Idle.xml" aniIdle="FlyTypeC_Idle_A" aniLeft="FlyTypeC_Run_A" aniRun="FlyTypeC_Run_A" />
-			<motion>
-				<motionProperty ignoreCollisionGroups="20" holdWeapon="0" />
-			</motion>
-		</level>
-	</skill>
-	<skill id="20000131" comment="액션 스킬">
-		<basic>
-			<ui icon="./Data/Resource/Image/skill/icon/20000131.png" />
-			<kinds subType="7" jump="20000131" continue="1" unrideOnUse="1" />
-			<stateAttr battle="0" ignoreReduceCooldown="1" />
-		</basic>
-		<level value="1">
-			<glideProperty gravity="5" heightLimit="300" horizontalVelocity="650" verticalVelocity="100" verticalVibrateAmplitude="100" verticalVibrateFrequency="2000" bEffect="1" effectRun="CH/Fly/Eff_FlyTypeC_SnowCrystal_Run.xml" effectIdle="CH/Fly/Eff_FlyTypeC_SnowCrystal_Idle.xml" aniIdle="FlyTypeC_Idle_A" aniLeft="FlyTypeC_Run_A" aniRun="FlyTypeC_Run_A" />
-			<motion>
-				<motionProperty ignoreCollisionGroups="20" holdWeapon="0" />
-			</motion>
-		</level>
-	</skill>
-	<skill id="20000141" comment="액션 스킬">
-		<basic>
-			<ui icon="./Data/Resource/Image/skill/icon/20000141.png" />
-			<kinds subType="7" jump="20000141" continue="1" unrideOnUse="1" />
-			<stateAttr battle="0" ignoreReduceCooldown="1" />
-		</basic>
-		<level value="1">
-			<glideProperty gravity="5" heightLimit="300" horizontalVelocity="400" verticalVelocity="100" verticalVibrateAmplitude="300" bEffect="1" effectRun="CH/Fly/Eff_FlyTypeD_RunaFlight_Run.xml" effectIdle="CH/Fly/Eff_FlyTypeD_RunaFlight_Idle.xml" aniIdle="FlyTypeD_Idle_A" aniLeft="FlyTypeD_Run_A" aniRun="FlyTypeD_Run_A" />
-			<motion>
-				<motionProperty ignoreCollisionGroups="20" holdWeapon="0" />
-			</motion>
-		</level>
-	</skill>
-	<skill id="20000151" comment="액션 스킬">
-		<basic>
-			<ui icon="./Data/Resource/Image/skill/icon/20000151.png" />
-			<kinds subType="7" jump="20000151" continue="1" unrideOnUse="1" />
-			<stateAttr battle="0" ignoreReduceCooldown="1" />
-		</basic>
-		<level value="1">
-			<glideProperty gravity="5" heightLimit="1600" horizontalVelocity="250" verticalVelocity="250" verticalVibrateAmplitude="210" verticalVibrateFrequency="1500" bEffect="1" effectRun="CH/Fly/Eff_FlyTypeF_DuckyBall_Run.xml" effectIdle="CH/Fly/Eff_FlyTypeF_DuckyBall_Idle.xml" aniIdle="FlyTypeF_Idle_A" aniLeft="FlyTypeF_Run_A" aniRun="FlyTypeF_Run_A" />
-			<motion>
-				<motionProperty ignoreCollisionGroups="20" holdWeapon="0" />
-			</motion>
-		</level>
-	</skill>
-	<skill id="20000161" comment="액션 스킬">
-		<basic>
-			<ui icon="./Data/Resource/Image/skill/icon/20000161.png" />
-			<kinds subType="7" jump="20000161" continue="1" unrideOnUse="1" />
-			<stateAttr battle="0" ignoreReduceCooldown="1" />
-		</basic>
-		<level value="1">
-			<glideProperty gravity="5" heightLimit="950" horizontalVelocity="450" verticalVelocity="170" verticalVibrateAmplitude="500" verticalVibrateFrequency="1200" bEffect="1" effectRun="CH/Fly/Eff_FlyTypeG_SlimeAngel_Run.xml" effectIdle="CH/Fly/Eff_FlyTypeG_SlimeAngel_Idle.xml" aniIdle="FlyTypeG_Idle_A" aniLeft="FlyTypeG_Run_A" aniRun="FlyTypeG_Run_A" />
-			<motion>
-				<motionProperty ignoreCollisionGroups="20" holdWeapon="0" />
-			</motion>
-		</level>
-	</skill>
-	<skill id="20000171" comment="액션 스킬">
-		<basic>
-			<ui icon="./Data/Resource/Image/skill/icon/20000171.png" />
-			<kinds subType="7" jump="20000171" continue="1" unrideOnUse="1" />
-			<stateAttr battle="0" ignoreReduceCooldown="1" />
-		</basic>
-		<level value="1">
-			<consume>
-				<stat ep="20" />
-			</consume>
-			<glideProperty gravity="5" heightLimit="300" horizontalVelocity="650" verticalVelocity="100" verticalVibrateAmplitude="100" verticalVibrateFrequency="5000" bEffect="1" effectRun="CH/Fly/Eff_FlyTypeC_AutumnColors_Run.xml" effectIdle="CH/Fly/Eff_FlyTypeC_AutumnColors_Idle.xml" aniIdle="FlyTypeC_Idle_A" aniLeft="FlyTypeC_Run_A" aniRun="FlyTypeC_Run_A" />
-			<motion>
-				<motionProperty ignoreCollisionGroups="20" holdWeapon="0" />
 			</motion>
 		</level>
 	</skill>

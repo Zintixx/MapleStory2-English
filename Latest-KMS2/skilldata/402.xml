@@ -17,7 +17,7 @@
 			</motion>
 			<motion>
 				<motionProperty sequenceName="Attack_02_A" sequenceSpeed="1.5" strTagEffects="e0=NPC/Skill/Larva/Eff_Larva_Attack_02_A.xml" movedistance="550" faceTarget="0" />
-				<attack point="p0" targetCount="1" magicPathID="5287" attacktype="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+				<attack point="p0" targetCount="1" magicPathID="5287" attacktype="1" attackMethodType="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
 					<rangeProperty rangeType="box" distance="300" height="200" width="150" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" bounceType="3" bounceCount="5" collision="150.000000,75.000000,150.000000" effect="NPC/Skill/Temp/Eff_Temp.xml" />
 					<damageProperty rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
@@ -38,7 +38,7 @@
 		<level value="1">
 			<motion>
 				<motionProperty sequenceName="Attack_02_A" sequenceSpeed="2" movedistance="550" faceTarget="0" />
-				<attack point="p0" targetCount="1" magicPathID="5287" attacktype="1">
+				<attack point="p0" targetCount="1" magicPathID="5287" attacktype="1" attackMethodType="1">
 					<rangeProperty rangeType="box" distance="300" height="150" width="150" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" bounceType="3" bounceCount="5" collision="150.000000,75.000000,100.000000" effect="NPC/Skill/Temp/Eff_Temp.xml" />
 					<damageProperty rate="1" attackMaterial="1" />
@@ -66,9 +66,9 @@
 		</basic>
 		<level value="1">
 			<detectProperty rangeType="box" distance="600" rangeOffset="0.000000,0.000000,50.000000" height="150" width="150" />
-			<conditionSkill level="1" skillID="50160009" skillTarget="1">
+			<actionAdditional additionalID="50160009" level="1" skillTarget="1">
 				<beginCondition allowBattleRidingState="1" />
-			</conditionSkill>
+			</actionAdditional>
 			<motion>
 				<motionProperty sequenceName="Attack_01_B" motionEffect="NPC/Skill/Larva/Eff_Larva_IncreaseNdd_Cast_01.xml" faceTarget="0" />
 				<attack point="p0" targetCount="1" attacktype="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
@@ -273,23 +273,23 @@
 			<detectProperty rangeType="cylinder" distance="300" rangeOffset="0.000000,0.000000,50.000000" height="150" />
 			<motion>
 				<motionProperty sequenceName="Attack_01_B" faceTarget="0" doesPlayIdleOnSkillEnd="false" />
-				<attack point="p0" targetCount="4" magicPathID="40203011" cubeMagicPathID="402030111" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+				<attack point="p0" targetCount="4" magicPathID="40203011" cubeMagicPathID="402030111" attacktype="1" attackMethodType="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
 					<rangeProperty rangeType="cylinder" distance="300" height="200" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" effect="NPC/Skill/AliceZombie/Eff_AliceZombie_Attack_02_A_Ball_01.xml" />
 					<damageProperty count="0" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" />
-					<actionSkill splash="1" level="1" skillID="40203012" delay="1500" />
+					<actionSkill skillID="40203012" level="1" delay="1500" />
 				</attack>
-				<attack point="p1" targetCount="4" magicPathID="40203012" cubeMagicPathID="402030111" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+				<attack point="p1" targetCount="4" magicPathID="40203012" cubeMagicPathID="402030111" attacktype="1" attackMethodType="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
 					<rangeProperty rangeType="cylinder" distance="300" height="200" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" effect="NPC/Skill/AliceZombie/Eff_AliceZombie_Attack_02_A_Ball_01.xml" />
 					<damageProperty count="0" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" />
-					<actionSkill splash="1" level="1" skillID="40203012" delay="1500" />
+					<actionSkill skillID="40203012" level="1" delay="1500" />
 				</attack>
 			</motion>
 		</level>
 	</skill>
 	<skill id="40203012" comment="톱스 리버 : 보라">
-		<basic>
+		<basic mainType="30">
 			<ui attackType="1" />
 			<kinds rangeType="1" element="7" />
 		</basic>
@@ -319,25 +319,25 @@
 					<rangeProperty rangeType="box" distance="200" height="200" width="300" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" />
 					<damageProperty rate="0.25" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="300" pushduration="0.5" attackMaterial="1" />
-					<conditionSkill level="1" skillID="50000413" skillTarget="2" skillOwner="1" />
+					<actionAdditional additionalID="50000413" level="1" skillTarget="2" skillOwner="1" />
 				</attack>
 				<attack point="p1" targetCount="10" attacktype="1" unrideOnHit="1">
 					<rangeProperty rangeType="box" distance="200" height="200" width="300" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" />
 					<damageProperty rate="0.25" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="300" pushduration="0.5" attackMaterial="1" />
-					<conditionSkill level="1" skillID="50000413" skillTarget="2" skillOwner="1" />
+					<actionAdditional additionalID="50000413" level="1" skillTarget="2" skillOwner="1" />
 				</attack>
 				<attack point="p2" targetCount="10" attacktype="1" unrideOnHit="1">
 					<rangeProperty rangeType="box" distance="200" height="200" width="300" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" />
 					<damageProperty rate="0.25" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="300" pushduration="0.5" attackMaterial="1" />
-					<conditionSkill level="1" skillID="50000413" skillTarget="2" skillOwner="1" />
+					<actionAdditional additionalID="50000413" level="1" skillTarget="2" skillOwner="1" />
 				</attack>
 				<attack point="p3" targetCount="10" attacktype="1" unrideOnHit="1">
 					<rangeProperty rangeType="box" distance="200" height="200" width="300" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" />
 					<damageProperty rate="0.25" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="300" pushduration="0.5" attackMaterial="1" />
-					<conditionSkill level="1" skillID="50000413" skillTarget="2" skillOwner="1" />
+					<actionAdditional additionalID="50000413" level="1" skillTarget="2" skillOwner="1" />
 				</attack>
 			</motion>
 			<motion>
@@ -350,9 +350,9 @@
 			<kinds rangeType="1" element="7" />
 		</basic>
 		<level value="1">
-			<conditionSkill level="1" skillID="50000448" skillTarget="1">
+			<actionAdditional additionalID="50000448" level="1" skillTarget="1">
 				<beginCondition allowBattleRidingState="1" />
-			</conditionSkill>
+			</actionAdditional>
 			<motion>
 				<motionProperty sequenceName="Attack_Idle_A" faceTarget="0" />
 			</motion>
@@ -692,17 +692,17 @@
 			<detectProperty rangeType="box" distance="600" rangeOffset="0.000000,0.000000,50.000000" height="150" width="150" />
 			<motion>
 				<motionProperty sequenceName="Attack_01_A" motionEffect="NPC/Skill/GoblinMohicanJunior/Eff_GoblinMohicanJunior_Attack_01_A.xml" />
-				<attack point="p0" targetCount="1" magicPathID="40213001" cubeMagicPathID="402140011" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+				<attack point="p0" targetCount="1" magicPathID="40213001" cubeMagicPathID="402140011" attackMethodType="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
 					<rangeProperty rangeType="box" distance="600" height="200" width="150" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" effect="NPC/Skill/GoblinMohicanJunior/Eff_GoblinMohicanJunior_Attack_01_A_Ball_01.xml" />
 					<damageProperty count="0" />
-					<actionSkill splash="1" level="1" skillID="40213002" delay="1500" />
+					<actionSkill skillID="40213002" level="1" delay="1500" />
 				</attack>
 			</motion>
 		</level>
 	</skill>
 	<skill id="40213002" comment="코볼크">
-		<basic>
+		<basic mainType="30">
 			<ui attackType="1" />
 			<kinds rangeType="1" element="7" />
 		</basic>
@@ -727,17 +727,17 @@
 			<detectProperty rangeType="box" distance="600" rangeOffset="0.000000,0.000000,50.000000" height="150" width="150" />
 			<motion>
 				<motionProperty sequenceName="Attack_01_B" motionEffect="NPC/Skill/GoblinMohicanJunior/Eff_GoblinMohicanJunior_Attack_01_B.xml" />
-				<attack point="p0" targetCount="1" magicPathID="40214001" cubeMagicPathID="402140011" attacktype="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+				<attack point="p0" targetCount="1" magicPathID="40214001" cubeMagicPathID="402140011" attacktype="1" attackMethodType="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
 					<rangeProperty rangeType="box" distance="600" height="200" width="150" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" collision="25.000000,25.000000,150.000000" effect="NPC/Skill/GoblinMohicanJunior/Eff_GoblinMohicanJunior_Attack_01_B_Ball.xml" />
 					<damageProperty count="0" effectHit="NPC/Skill/GoblinMohicanJunior/Eff_GoblinMohican_Bomb_hit.xml" attackMaterial="1" />
-					<actionSkill splash="1" level="1" skillID="40214002" delay="1500" immediateActive="1" />
+					<actionSkill skillID="40214002" level="1" delay="1500" immediateActive="1" />
 				</attack>
 			</motion>
 		</level>
 	</skill>
 	<skill id="40214002" comment="코볼쿠">
-		<basic>
+		<basic mainType="30">
 			<ui attackType="1" />
 			<kinds rangeType="1" element="7" />
 		</basic>
@@ -1141,12 +1141,12 @@
 			<detectProperty rangeType="box" distance="600" rangeOffset="0.000000,0.000000,50.000000" height="50" width="150" />
 			<motion>
 				<motionProperty sequenceName="Attack_01_A" motionEffect="NPC/Skill/LegoGolemSmall/Eff_LegoGolemSmall_Attack_01_A_Cast.xml" strTagEffects="e0=NPC/Skill/LegoGolemSmall/Eff_LegoGolemSmall_Attack_01_A.xml" />
-				<attack point="p0" targetCount="1" magicPathID="40224001" attacktype="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+				<attack point="p0" targetCount="1" magicPathID="40224001" attacktype="1" attackMethodType="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
 					<rangeProperty rangeType="box" distance="600" height="200" width="150" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" collision="50.000000,25.000000,125.000000" collisionAdd="0.000000,25.000000,25.000000" effect="NPC/Skill/LegoGolemSmall/Eff_LegoGolemSmall_Attack_01_A_Ball.xml" effectRemain="NPC/Skill/LegoGolemSmall/Eff_LegoGolemSmall_Attack_01_A_Ball_Remain.xml" />
 					<damageProperty rate="0.5" effectHit="NPC/Skill/LegoGolemSmall/Eff_LegoGolemSmall_Attack_01_A_Ball_Hit.xml" attackMaterial="1" />
 				</attack>
-				<attack point="p1" targetCount="1" magicPathID="40224002" attacktype="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+				<attack point="p1" targetCount="1" magicPathID="40224002" attacktype="1" attackMethodType="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
 					<rangeProperty rangeType="box" distance="600" height="200" width="150" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" collision="50.000000,25.000000,125.000000" collisionAdd="0.000000,25.000000,25.000000" effect="NPC/Skill/LegoGolemSmall/Eff_LegoGolemSmall_Attack_01_A_Ball.xml" effectRemain="NPC/Skill/LegoGolemSmall/Eff_LegoGolemSmall_Attack_01_A_Ball_Remain.xml" />
 					<damageProperty rate="0.5" effectHit="NPC/Skill/LegoGolemSmall/Eff_LegoGolemSmall_Attack_01_A_Ball_Hit.xml" attackMaterial="1" />
@@ -1163,7 +1163,7 @@
 			<detectProperty rangeType="box" distance="600" rangeOffset="0.000000,0.000000,50.000000" height="50" width="150" />
 			<motion>
 				<motionProperty sequenceName="Attack_01_B" strTagEffects="e0=NPC/Skill/LegoGolemSmall/Eff_LegoGolemSmall_Attack_01_B.xml" />
-				<attack point="p0" targetCount="1" magicPathID="40224011" attacktype="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+				<attack point="p0" targetCount="1" magicPathID="40224011" attacktype="1" attackMethodType="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
 					<rangeProperty rangeType="box" distance="600" height="200" width="150" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" collision="50.000000,25.000000,125.000000" collisionAdd="0.000000,25.000000,25.000000" effect="NPC/Skill/LegoGolemSmall/Eff_LegoGolemSmall_Attack_01_B_Ball.xml" effectRemain="NPC/Skill/LegoGolemSmall/Eff_LegoGolemSmall_Attack_01_B_Ball_Remain.xml" />
 					<damageProperty rate="1" attackMaterial="1" />
@@ -1197,12 +1197,12 @@
 			<detectProperty rangeType="box" distance="600" rangeOffset="0.000000,0.000000,50.000000" height="50" width="150" />
 			<motion>
 				<motionProperty sequenceName="Attack_01_A" strTagEffects="e0=NPC/Skill/LegoGolemSmall/Eff_LegoGolemSmall_Attack_01_A.xml" />
-				<attack point="p0" targetCount="1" magicPathID="40224001" attacktype="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+				<attack point="p0" targetCount="1" magicPathID="40224001" attacktype="1" attackMethodType="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
 					<rangeProperty rangeType="box" distance="600" height="200" width="150" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" collision="50.000000,25.000000,125.000000" collisionAdd="0.000000,25.000000,25.000000" effect="NPC/Skill/LegoGolemSmall/Eff_LegoGolemSmall_Attack_01_A_Ball.xml" effectRemain="NPC/Skill/LegoGolemSmall/Eff_LegoGolemSmall_Attack_01_A_Ball_Remain.xml" />
 					<damageProperty rate="0.5" effectHit="NPC/Skill/LegoGolemSmall/Eff_LegoGolemSmall_Attack_01_A_Ball_Hit.xml" attackMaterial="1" />
 				</attack>
-				<attack point="p1" targetCount="1" magicPathID="40224002" attacktype="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+				<attack point="p1" targetCount="1" magicPathID="40224002" attacktype="1" attackMethodType="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
 					<rangeProperty rangeType="box" distance="600" height="200" width="150" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" collision="50.000000,25.000000,125.000000" collisionAdd="0.000000,25.000000,25.000000" effect="NPC/Skill/LegoGolemSmall/Eff_LegoGolemSmall_Attack_01_A_Ball.xml" effectRemain="NPC/Skill/LegoGolemSmall/Eff_LegoGolemSmall_Attack_01_A_Ball_Remain.xml" />
 					<damageProperty rate="0.5" effectHit="NPC/Skill/LegoGolemSmall/Eff_LegoGolemSmall_Attack_01_A_Ball_Hit.xml" attackMaterial="1" />
@@ -1219,17 +1219,17 @@
 			<detectProperty rangeType="box" distance="600" rangeOffset="0.000000,0.000000,50.000000" height="50" width="150" />
 			<motion>
 				<motionProperty sequenceName="Attack_01_B" motionEffect="NPC/Skill/LegoGolemSmall/Eff_LegoGolemSmall_Attack_01_B_Cast.xml" strTagEffects="e0=NPC/Skill/LegoGolemSmall/Eff_LegoGolemSmall_Attack_01_B.xml" />
-				<attack point="p0" targetCount="1" magicPathID="40224011" cubeMagicPathID="402250111" attacktype="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+				<attack point="p0" targetCount="1" magicPathID="40224011" cubeMagicPathID="402250111" attacktype="1" attackMethodType="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
 					<rangeProperty rangeType="box" distance="600" height="200" width="150" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" collision="50.000000,25.000000,125.000000" collisionAdd="0.000000,25.000000,25.000000" effect="NPC/Skill/LegoGolemSmall/Eff_LegoGolemSmall_Attack_01_B_Ball.xml" />
 					<damageProperty count="0" attackMaterial="1" />
-					<actionSkill splash="1" level="1" skillID="40225012" immediateActive="1" />
+					<actionSkill skillID="40225012" level="1" immediateActive="1" />
 				</attack>
 			</motion>
 		</level>
 	</skill>
 	<skill id="40225012" comment="블록 골렘 B">
-		<basic>
+		<basic mainType="30">
 			<ui attackType="1" />
 			<kinds rangeType="1" element="7" />
 		</basic>
@@ -1269,12 +1269,12 @@
 			<detectProperty rangeType="box" distance="600" rangeOffset="0.000000,0.000000,50.000000" height="50" width="150" />
 			<motion>
 				<motionProperty sequenceName="Attack_01_A" strTagEffects="e0=NPC/Skill/LegoGolemSmall/Eff_LegoGolemSmall_Attack_01_A.xml" />
-				<attack point="p0" targetCount="1" magicPathID="40224001" attacktype="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+				<attack point="p0" targetCount="1" magicPathID="40224001" attacktype="1" attackMethodType="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
 					<rangeProperty rangeType="box" distance="600" height="200" width="150" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" collision="50.000000,25.000000,125.000000" collisionAdd="0.000000,25.000000,25.000000" effect="NPC/Skill/LegoGolemSmall/Eff_LegoGolemSmall_Attack_01_A_Ball.xml" effectRemain="NPC/Skill/LegoGolemSmall/Eff_LegoGolemSmall_Attack_01_A_Ball_Remain.xml" />
 					<damageProperty rate="0.5" effectHit="NPC/Skill/LegoGolemSmall/Eff_LegoGolemSmall_Attack_01_A_Ball_Hit.xml" attackMaterial="1" />
 				</attack>
-				<attack point="p1" targetCount="1" magicPathID="40224002" attacktype="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+				<attack point="p1" targetCount="1" magicPathID="40224002" attacktype="1" attackMethodType="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
 					<rangeProperty rangeType="box" distance="600" height="200" width="150" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" collision="50.000000,25.000000,125.000000" collisionAdd="0.000000,25.000000,25.000000" effect="NPC/Skill/LegoGolemSmall/Eff_LegoGolemSmall_Attack_01_A_Ball.xml" effectRemain="NPC/Skill/LegoGolemSmall/Eff_LegoGolemSmall_Attack_01_A_Ball_Remain.xml" />
 					<damageProperty rate="0.5" effectHit="NPC/Skill/LegoGolemSmall/Eff_LegoGolemSmall_Attack_01_A_Ball_Hit.xml" attackMaterial="1" />
@@ -1291,7 +1291,7 @@
 			<detectProperty rangeType="box" distance="600" rangeOffset="0.000000,0.000000,50.000000" height="50" width="150" />
 			<motion>
 				<motionProperty sequenceName="Attack_01_B" strTagEffects="e0=NPC/Skill/LegoGolemSmall/Eff_LegoGolemSmall_Attack_01_B.xml" />
-				<attack point="p0" targetCount="1" magicPathID="40224011" attacktype="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+				<attack point="p0" targetCount="1" magicPathID="40224011" attacktype="1" attackMethodType="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
 					<rangeProperty rangeType="box" distance="600" height="200" width="150" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" collision="50.000000,25.000000,125.000000" collisionAdd="0.000000,25.000000,25.000000" effect="NPC/Skill/LegoGolemSmall/Eff_LegoGolemSmall_Attack_01_B_Ball.xml" effectRemain="NPC/Skill/LegoGolemSmall/Eff_LegoGolemSmall_Attack_01_B_Ball_Remain.xml" />
 					<damageProperty rate="1" effectHit="NPC/Skill/LegoGolemSmall/Eff_LegoGolemSmall_Attack_01_B_Ball_Hit.xml" attackMaterial="1" />
@@ -1410,7 +1410,7 @@
 			<detectProperty rangeType="box" distance="900" rangeOffset="0.000000,0.000000,50.000000" height="50" width="450" />
 			<motion>
 				<motionProperty sequenceName="Attack_01_C" motionEffect="NPC/Skill/CerberosShort/Eff_CerberosShort_Attack_01_C.xml" />
-				<attack point="p0" targetCount="1" magicPathID="40227021" attacktype="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+				<attack point="p0" targetCount="1" magicPathID="40227021" attacktype="1" attackMethodType="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
 					<rangeProperty rangeType="box" distance="900" height="200" width="450" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" collision="50.000000,50.000000,50.000000" effect="NPC/Skill/CerberosShort/Eff_CerberosShort_Attack_01_C_Ball.xml" effectRemain="NPC/Skill/CerberosShort/Eff_CerberosShort_Attack_01_C_Ball_Hit.xml" />
 					<damageProperty rate="1" effectHit="NPC/Skill/CerberosShort/Eff_CerberosShort_Attack_01_C_Ball_Hit.xml" attackMaterial="1" />
@@ -1512,7 +1512,7 @@
 			<detectProperty rangeType="box" distance="900" rangeOffset="0.000000,0.000000,50.000000" height="50" width="450" />
 			<motion>
 				<motionProperty sequenceName="Attack_01_C" motionEffect="NPC/Skill/CerberosShort/Eff_CerberosShort_Attack_01_C.xml" />
-				<attack point="p0" targetCount="1" magicPathID="40227021" attacktype="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+				<attack point="p0" targetCount="1" magicPathID="40227021" attacktype="1" attackMethodType="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
 					<rangeProperty rangeType="box" distance="900" height="200" width="450" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" collision="50.000000,50.000000,50.000000" effect="NPC/Skill/CerberosShort/Eff_CerberosShort_Attack_01_C_Ball.xml" effectRemain="NPC/Skill/CerberosShort/Eff_CerberosShort_Attack_01_C_Ball_Hit.xml" />
 					<damageProperty rate="1" effectHit="NPC/Skill/CerberosShort/Eff_CerberosShort_Attack_01_C_Ball_Hit.xml" attackMaterial="1" />
@@ -1614,7 +1614,7 @@
 			<detectProperty rangeType="box" distance="900" rangeOffset="0.000000,0.000000,50.000000" height="50" width="450" />
 			<motion>
 				<motionProperty sequenceName="Attack_01_C" motionEffect="NPC/Skill/CerberosShort/Eff_CerberosShort_Attack_01_C.xml" />
-				<attack point="p0" targetCount="1" magicPathID="40227021" attacktype="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+				<attack point="p0" targetCount="1" magicPathID="40227021" attacktype="1" attackMethodType="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
 					<rangeProperty rangeType="box" distance="900" height="200" width="450" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" collision="50.000000,50.000000,50.000000" effect="NPC/Skill/CerberosShort/Eff_CerberosShort_Attack_01_C_Ball.xml" effectRemain="NPC/Skill/CerberosShort/Eff_CerberosShort_Attack_01_C_Ball_Hit.xml" />
 					<damageProperty rate="1" effectHit="NPC/Skill/CerberosShort/Eff_CerberosShort_Attack_01_C_Ball_Hit.xml" attackMaterial="1" />
@@ -1660,7 +1660,7 @@
 					<rangeProperty rangeType="box" distance="300" height="200" width="150" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" />
 					<damageProperty rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
-					<conditionSkill level="1" skillID="40230011" skillTarget="2" skillOwner="1" />
+					<actionAdditional additionalID="40230011" level="1" skillTarget="2" skillOwner="1" />
 				</attack>
 			</motion>
 		</level>
@@ -1720,7 +1720,7 @@
 					<rangeProperty rangeType="box" distance="300" height="200" width="150" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" />
 					<damageProperty rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
-					<conditionSkill level="1" skillID="40231011" skillTarget="2" skillOwner="1" />
+					<actionAdditional additionalID="40231011" level="1" skillTarget="2" skillOwner="1" />
 				</attack>
 			</motion>
 		</level>
@@ -1780,7 +1780,7 @@
 					<rangeProperty rangeType="box" distance="300" height="200" width="150" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" />
 					<damageProperty rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
-					<conditionSkill level="1" skillID="40231011" skillTarget="2" skillOwner="1" />
+					<actionAdditional additionalID="40231011" level="1" skillTarget="2" skillOwner="1" />
 				</attack>
 			</motion>
 		</level>
@@ -1814,7 +1814,7 @@
 					<rangeProperty rangeType="box" distance="300" height="200" width="150" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" />
 					<damageProperty rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
-					<conditionSkill level="1" skillID="50000447" skillTarget="2" skillOwner="1" />
+					<actionAdditional additionalID="50000447" level="1" skillTarget="2" skillOwner="1" />
 				</attack>
 			</motion>
 		</level>
@@ -1882,7 +1882,7 @@
 					<rangeProperty rangeType="frustum" distance="450" rangeAdd="0.000000,0.000000,150.000000" height="200" width="100" endWidth="300" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" />
 					<damageProperty rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
-					<conditionSkill level="1" skillID="40234001" skillTarget="2" skillOwner="1" />
+					<actionAdditional additionalID="40234001" level="1" skillTarget="2" skillOwner="1" />
 				</attack>
 			</motion>
 		</level>
@@ -1975,9 +1975,9 @@
 		</basic>
 		<level value="1">
 			<detectProperty rangeType="box" distance="600" rangeOffset="0.000000,0.000000,50.000000" height="150" width="150" />
-			<conditionSkill level="1" skillID="40236011" skillTarget="1">
+			<actionAdditional additionalID="40236011" level="1" skillTarget="1">
 				<beginCondition allowBattleRidingState="1" />
-			</conditionSkill>
+			</actionAdditional>
 			<motion>
 				<motionProperty sequenceName="Attack_01_B" motionEffect="NPC/Skill/PelicanFighterShortYellow/Eff_PelicanFighterShortYellow_Attack_01_B_Cast_01.xml" />
 				<attack point="p0" targetCount="1" attacktype="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
@@ -2338,7 +2338,7 @@
 			<detectProperty rangeType="box" distance="500" rangeOffset="0.000000,0.000000,50.000000" height="150" width="100" />
 			<motion>
 				<motionProperty sequenceName="Attack_01_A" motionEffect="NPC/Skill/LeaderTwingko/Eff_LeaderTwingko_Attack_01_A.xml" />
-				<attack point="p0" targetCount="1" magicPathID="5003" attacktype="2" brokenOffence="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+				<attack point="p0" targetCount="1" magicPathID="5003" attacktype="2" attackMethodType="1" brokenOffence="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
 					<rangeProperty rangeType="box" distance="500" height="200" width="100" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" collision="70.000000,35.000000,100.000000" collisionAdd="0.000000,35.000000,50.000000" effect="NPC/Skill/LeaderTwingko/Eff_LeaderTwingko_Attack_Ball.xml" effectRemain="NPC/Common/Eff_NPC_Attack_Hit_01.xml" />
 					<damageProperty rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="9" />
@@ -2355,13 +2355,13 @@
 			<detectProperty rangeType="box" distance="400" rangeOffset="0.000000,0.000000,50.000000" height="150" width="100" />
 			<motion>
 				<motionProperty sequenceName="Skill_ThrowingArtifact_Cast_A" motionEffect="NPC/Skill/LeaderTwingko/Eff_LeaderTwingko_Skill_ThrowingArtifact_Cast_A.xml" />
-				<attack point="p0" targetCount="1" magicPathID="5005" attacktype="2" brokenOffence="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+				<attack point="p0" targetCount="1" magicPathID="5005" attacktype="2" attackMethodType="1" brokenOffence="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
 					<rangeProperty rangeType="box" distance="400" height="200" width="100" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" collision="70.000000,35.000000,100.000000" collisionAdd="0.000000,35.000000,50.000000" effect="NPC/Skill/LeaderTwingko/Eff_LeaderTwingko_Skill_ThrowingArtifact_Cast_Ball.xml" effectRemain="NPC/Common/Eff_NPC_Attack_Hit_01.xml" />
 					<damageProperty rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="2" />
-					<conditionSkill level="1" skillID="50000046" skillTarget="2" skillOwner="1">
+					<actionAdditional additionalID="50000046" level="1" skillTarget="2" skillOwner="1">
 						<beginCondition probability="0.3" />
-					</conditionSkill>
+					</actionAdditional>
 				</attack>
 			</motion>
 		</level>
@@ -2371,9 +2371,9 @@
 			<kinds rangeType="1" element="7" />
 		</basic>
 		<level value="1">
-			<conditionSkill level="1" skillID="50000421" skillTarget="1">
+			<actionAdditional additionalID="50000421" level="1" skillTarget="1">
 				<beginCondition allowBattleRidingState="1" />
-			</conditionSkill>
+			</actionAdditional>
 			<motion>
 				<attack point="p0" unrideOnHit="1" releaseObjectWeaponOnHit="0">
 					<rangeProperty includeCaster="1" />
@@ -2426,7 +2426,7 @@
 			<detectProperty rangeType="box" distance="800" rangeOffset="0.000000,0.000000,50.000000" height="50" width="400" />
 			<motion>
 				<motionProperty sequenceName="Attack_01_A" motionEffect="NPC/Skill/Pim/Eff_Pim_Attack_01_A.xml" />
-				<attack point="p0" targetCount="3" magicPathID="49021001" attacktype="2" brokenOffence="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+				<attack point="p0" targetCount="3" magicPathID="49021001" attacktype="2" attackMethodType="1" brokenOffence="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
 					<rangeProperty rangeType="box" distance="800" height="200" width="600" applyTarget="1" castTarget="1" />
 					<arrowProperty explosion="1" collision="70.000000,35.000000,100.000000" collisionAdd="0.000000,35.000000,50.000000" effect="NPC/Skill/Pim/Eff_Pim_Attack_Ball_A.xml" effectRemain="NPC/Common/Eff_NPC_Attack_Hit_01.xml" />
 					<damageProperty rate="1.2" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
@@ -2525,7 +2525,7 @@
 			</motion>
 			<motion>
 				<motionProperty sequenceName="AttackThrow_03_A" />
-				<attack point="p0" targetCount="3" magicPathID="40255001" attacktype="1" brokenOffence="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+				<attack point="p0" targetCount="3" magicPathID="40255001" attacktype="1" attackMethodType="1" brokenOffence="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
 					<rangeProperty rangeType="box" distance="600" rangeOffset="0.000000,0.000000,10.000000" height="200" width="200" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" collision="60.000000,1.000000,130.000000" collisionAdd="0.000000,20.000000,20.000000" effect="NPC/Skill/BungBung/Eff_BungBung_AttackThrow_02_A_Ball.xml" />
 					<damageProperty rate="0.4" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
@@ -2550,7 +2550,7 @@
 			</motion>
 			<motion>
 				<motionProperty sequenceName="Attack_Direct_02_A" strTagEffects="e0=NPC/Skill/AppleMonkey/Eff_AppleMonkey_Attack_Direct_02_A.xml" />
-				<attack point="p0" targetCount="1" magicPathID="40256001" attacktype="1" brokenOffence="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+				<attack point="p0" targetCount="1" magicPathID="40256001" attacktype="1" attackMethodType="1" brokenOffence="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
 					<rangeProperty rangeType="frustum" distance="750" height="200" width="150" endWidth="300" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" collision="25.000000,0.000000,150.000000" collisionAdd="0.000000,25.000000,0.000000" effect="NPC/Skill/AppleMonkey/Eff_AppleMonkey_Attack_Direct_02_A_YellowBall.xml" />
 					<damageProperty rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
@@ -2567,17 +2567,17 @@
 			<detectProperty rangeType="box" distance="600" rangeOffset="0.000000,0.000000,50.000000" height="50" width="150" />
 			<motion>
 				<motionProperty sequenceName="Attack_01_A" motionEffect="NPC/Skill/BrownMaskAxe/Eff_BrownMaskAxe_Attack_01_A.xml" />
-				<attack point="p0" targetCount="1" magicPathID="40257001" cubeMagicPathID="402570011" attacktype="1" brokenOffence="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+				<attack point="p0" targetCount="1" magicPathID="40257001" cubeMagicPathID="402570011" attacktype="1" attackMethodType="1" brokenOffence="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
 					<rangeProperty rangeType="box" distance="200" height="200" width="150" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" bounceType="3" bounceCount="30" collision="25.000000,25.000000,25.000000" effect="NPC/Skill/BrownMaskAxe/Eff_BrownMaskAxe_Attack_01_A_Ball.xml" />
 					<damageProperty rate="0.5" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
-					<actionSkill splash="1" level="1" skillID="40257002" interval="500" immediateActive="1" />
+					<actionSkill skillID="40257002" level="1" interval="500" immediateActive="1" />
 				</attack>
 			</motion>
 		</level>
 	</skill>
 	<skill id="40257002" comment="툼바 니바 ">
-		<basic>
+		<basic mainType="30">
 			<ui attackType="1" />
 			<kinds rangeType="1" element="7" />
 		</basic>
@@ -2669,7 +2669,7 @@
 			<detectProperty rangeType="cylinder" distance="250" rangeOffset="0.000000,0.000000,50.000000" height="150" />
 			<motion>
 				<motionProperty sequenceName="Attack_01_B" />
-				<attack point="p0" targetCount="8" magicPathID="5068" attacktype="1" brokenOffence="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+				<attack point="p0" targetCount="8" magicPathID="5068" attacktype="1" attackMethodType="1" brokenOffence="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
 					<rangeProperty rangeType="cylinder" distance="250" height="200" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" collision="50.000000,0.000000,100.000000" collisionAdd="0.000000,25.000000,50.000000" effect="NPC/Skill/FairyPotHat/Eff_FairyPotHat03_Attack_01_B_Ball.xml" />
 					<damageProperty rate="0.33" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
@@ -2703,7 +2703,7 @@
 			<detectProperty rangeType="cylinder" distance="250" rangeOffset="0.000000,0.000000,50.000000" height="150" />
 			<motion>
 				<motionProperty sequenceName="Attack_01_B" />
-				<attack point="p0" targetCount="8" magicPathID="5068" attacktype="1" brokenOffence="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+				<attack point="p0" targetCount="8" magicPathID="5068" attacktype="1" attackMethodType="1" brokenOffence="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
 					<rangeProperty rangeType="cylinder" distance="250" height="200" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" collision="50.000000,0.000000,100.000000" collisionAdd="0.000000,25.000000,50.000000" effect="NPC/Skill/FairyPotHat/Eff_FairyPotHat03_Attack_01_B_Ball.xml" />
 					<damageProperty rate="0.33" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
@@ -2753,7 +2753,7 @@
 			</motion>
 			<motion>
 				<motionProperty sequenceName="Attack_02_B" strTagEffects="e0=NPC/Skill/AppleMonkey/Eff_AppleMonkey_Attack_Direct_02_A.xml" movedistance="25" />
-				<attack point="p0" targetCount="1" magicPathID="40256001" attacktype="1" brokenOffence="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+				<attack point="p0" targetCount="1" magicPathID="40256001" attacktype="1" attackMethodType="1" brokenOffence="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
 					<rangeProperty rangeType="frustum" distance="750" height="200" width="150" endWidth="300" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" collision="25.000000,0.000000,150.000000" collisionAdd="0.000000,25.000000,0.000000" effect="NPC/Skill/AppleMonkey/Eff_AppleMonkey_Attack_Direct_02_A_YellowBall.xml" />
 					<damageProperty rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
@@ -2867,7 +2867,7 @@
 			<detectProperty rangeType="box" distance="350" rangeOffset="0.000000,0.000000,50.000000" height="150" width="100" />
 			<motion>
 				<motionProperty sequenceName="Attack_Idle_A" sequenceSpeed="1.5" />
-				<attack point="p0" attacktype="1" brokenOffence="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+				<attack point="p0" attacktype="1" attackMethodType="1" brokenOffence="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
 					<rangeProperty rangeType="box" distance="350" height="200" width="100" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" effect="NPC/Skill/Temp/Eff_Temp.xml" />
 					<damageProperty rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
@@ -2937,7 +2937,7 @@
 			<detectProperty rangeType="box" distance="150" rangeOffset="0.000000,0.000000,50.000000" height="150" width="100" />
 			<motion>
 				<motionProperty sequenceName="Attack_01_A" motionEffect="NPC/Skill/SkeletonWhite/Eff_SkeletonWhite02_Attack_02_A.xml" />
-				<attack point="p0" targetCount="1" magicPathID="5404" attacktype="1" brokenOffence="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+				<attack point="p0" targetCount="1" magicPathID="5404" attacktype="1" attackMethodType="1" brokenOffence="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
 					<rangeProperty rangeType="box" distance="150" height="200" width="100" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" collision="50.000000,25.000000,100.000000" effect="NPC/Skill/SkeletonWhite/Eff_SkeletonWhite02_Attack_02_A_Ball.xml" />
 					<damageProperty rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
@@ -2989,7 +2989,7 @@
 			<detectProperty rangeType="box" distance="150" rangeOffset="0.000000,0.000000,50.000000" height="150" width="100" />
 			<motion>
 				<motionProperty sequenceName="Attack_01_A" motionEffect="NPC/Skill/SpokRak/Eff_SpokRak_Attack_01_D.xml" />
-				<attack point="p0" targetCount="1" magicPathID="5404" attacktype="1" brokenOffence="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+				<attack point="p0" targetCount="1" magicPathID="5404" attacktype="1" attackMethodType="1" brokenOffence="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
 					<rangeProperty rangeType="box" distance="150" height="200" width="100" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" collision="50.000000,25.000000,100.000000" effect="NPC/Skill/SpokRak/Eff_SpokRak_Attack_01_D_Ball.xml" />
 					<damageProperty rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
@@ -3006,7 +3006,7 @@
 			<detectProperty rangeType="box" distance="500" rangeOffset="0.000000,0.000000,50.000000" height="50" width="300" />
 			<motion>
 				<motionProperty sequenceName="Attack_01_A" />
-				<attack point="p0" targetCount="1" magicPathID="5049" direction="1" attacktype="1" brokenOffence="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+				<attack point="p0" targetCount="1" magicPathID="5049" direction="1" attacktype="1" attackMethodType="1" brokenOffence="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
 					<rangeProperty rangeType="box" distance="500" height="200" width="300" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" collision="50.000000,25.000000,100.000000" effect="NPC/Skill/SkeletonWhiteHorn/Eff_SkeletonWhiteHorn_Attack_01_A_Ball.xml" />
 					<damageProperty rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
@@ -3024,7 +3024,7 @@
 			<detectProperty rangeType="box" distance="250" rangeOffset="0.000000,0.000000,50.000000" height="50" width="100" />
 			<motion>
 				<motionProperty sequenceName="Attack_Idle_A" sequenceSpeed="1.5" />
-				<attack point="p0" attacktype="1" brokenOffence="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+				<attack point="p0" attacktype="1" attackMethodType="1" brokenOffence="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
 					<rangeProperty rangeType="box" distance="250" height="200" width="100" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" effect="NPC/Skill/Temp/Eff_Temp.xml" />
 					<damageProperty rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
@@ -3049,7 +3049,7 @@
 			<detectProperty rangeType="box" distance="500" rangeOffset="0.000000,0.000000,50.000000" height="50" width="300" />
 			<motion>
 				<motionProperty sequenceName="Attack_01_A" motionEffect="NPC/Skill/HalstoneRak/Eff_HalstoneRak_Attack_01_C.xml" />
-				<attack point="p0" targetCount="1" magicPathID="5404" direction="1" attacktype="1" brokenOffence="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+				<attack point="p0" targetCount="1" magicPathID="5404" direction="1" attacktype="1" attackMethodType="1" brokenOffence="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
 					<rangeProperty rangeType="box" distance="500" height="200" width="300" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" collision="50.000000,25.000000,100.000000" effect="NPC/Skill/HalstoneRak/Eff_HalstoneRak_Attack_01_C_Ball.xml" />
 					<damageProperty rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
@@ -3067,7 +3067,7 @@
 			<detectProperty rangeType="box" distance="250" rangeOffset="0.000000,0.000000,50.000000" height="50" width="100" />
 			<motion>
 				<motionProperty sequenceName="Attack_Idle_A" sequenceSpeed="1.5" />
-				<attack point="p0" attacktype="1" brokenOffence="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+				<attack point="p0" attacktype="1" attackMethodType="1" brokenOffence="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
 					<rangeProperty rangeType="box" distance="250" height="200" width="100" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" effect="NPC/Skill/Temp/Eff_Temp.xml" />
 					<damageProperty rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
@@ -3092,7 +3092,7 @@
 			<detectProperty rangeType="box" distance="130" rangeOffset="0.000000,0.000000,50.000000" height="150" width="130" />
 			<motion>
 				<motionProperty sequenceName="Attack_01_A" loopCount="1" />
-				<attack point="p0" targetCount="1" direction="1" attacktype="1" brokenOffence="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+				<attack point="p0" targetCount="1" direction="1" attacktype="1" attackMethodType="1" brokenOffence="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
 					<rangeProperty rangeType="box" distance="130" height="200" width="130" applyTarget="1" castTarget="1" />
 					<arrowProperty effect="NPC/Skill/Temp/Eff_Temp.xml" />
 					<damageProperty count="0" attackMaterial="1" />
@@ -3117,7 +3117,7 @@
 			<detectProperty rangeType="box" distance="1100" rangeOffset="0.000000,0.000000,50.000000" height="50" width="150" />
 			<motion>
 				<motionProperty sequenceName="Magic_Direct_01_A" />
-				<attack point="p0" targetCount="1" direction="1" attacktype="2" brokenOffence="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+				<attack point="p0" targetCount="1" direction="1" attacktype="2" attackMethodType="1" brokenOffence="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
 					<rangeProperty applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" effect="NPC/Skill/Temp/Eff_Temp.xml" />
 					<damageProperty rate="1" attackMaterial="1" />
@@ -3125,7 +3125,7 @@
 			</motion>
 			<motion>
 				<motionProperty sequenceName="Magic_Direct_02_A" motionEffect="NPC/Skill/FairyConehat/Eff_FairyConehat_Magic_Direct_02_A.xml" />
-				<attack point="p0" targetCount="1" magicPathID="40266001" attacktype="2" brokenOffence="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+				<attack point="p0" targetCount="1" magicPathID="40266001" attacktype="2" attackMethodType="1" brokenOffence="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
 					<rangeProperty rangeType="box" distance="1100" rangeOffset="0.000000,0.000000,50.000000" height="50" width="150" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" bounceType="3" bounceCount="5" collision="100.000000,45.000000,100.000000" collisionAdd="0.000000,25.000000,50.000000" effect="NPC/Skill/FairyConehat/Eff_FairyConehat_Magic_Direct_02_A_Ball_Big.xml" />
 					<damageProperty rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
@@ -3160,7 +3160,7 @@
 			<detectProperty rangeType="box" distance="250" rangeOffset="0.000000,0.000000,50.000000" height="150" width="100" />
 			<motion>
 				<motionProperty sequenceName="Attack_Idle_A" sequenceSpeed="1.3" />
-				<attack point="p0" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+				<attack point="p0" attacktype="1" attackMethodType="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
 					<rangeProperty rangeType="box" distance="250" height="200" width="100" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" effect="NPC/Skill/Temp/Eff_Temp.xml" />
 					<damageProperty rate="1" attackMaterial="1" />
@@ -3202,7 +3202,7 @@
 			<detectProperty rangeType="box" distance="600" rangeOffset="0.000000,0.000000,50.000000" height="50" width="300" />
 			<motion>
 				<motionProperty sequenceName="Attack_01_A" />
-				<attack point="p0" targetCount="1" magicPathID="40268011" direction="1" attacktype="1" brokenOffence="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+				<attack point="p0" targetCount="1" magicPathID="40268011" direction="1" attacktype="1" attackMethodType="1" brokenOffence="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
 					<rangeProperty rangeType="box" distance="600" height="200" width="300" applyTarget="1" castTarget="1" />
 					<arrowProperty bounceType="1" bounceCount="5" bounceRadius="600" collision="50.000000,25.000000,150.000000" effect="NPC/Skill/FrogSoldierDagger/Eff_FrogSoldierDagger_Attack_01_A_Ball.xml" />
 					<damageProperty rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
@@ -3219,7 +3219,7 @@
 			<detectProperty rangeType="box" distance="600" rangeOffset="0.000000,0.000000,50.000000" height="150" width="200" />
 			<motion>
 				<motionProperty sequenceName="Attack_01_A" motionEffect="NPC/Skill/FrogWizardWandRed/Eff_FrogWizardWandRed_Attack_01_A.xml" />
-				<attack point="p0" targetCount="1" magicPathID="40275001" direction="1" attacktype="2" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+				<attack point="p0" targetCount="1" magicPathID="40275001" direction="1" attacktype="2" attackMethodType="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
 					<rangeProperty rangeType="box" distance="600" height="200" width="200" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" collision="50.000000,25.000000,150.000000" effect="NPC/Skill/FrogWizardWandRed/Eff_FrogWizardWandRed_Attack_01_A_Ball.xml" />
 					<damageProperty rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
@@ -3236,17 +3236,17 @@
 			<detectProperty rangeType="box" distance="600" rangeOffset="0.000000,0.000000,50.000000" height="50" width="150" />
 			<motion>
 				<motionProperty sequenceName="Attack_02_A" motionEffect="NPC/Skill/FrogWizardWandRed/Eff_FrogWizardWandRed_Attack_02_A.xml" />
-				<attack point="p0" targetCount="1" direction="1" attacktype="2" brokenOffence="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+				<attack point="p0" targetCount="1" direction="1" attacktype="2" attackMethodType="1" brokenOffence="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
 					<rangeProperty rangeType="box" distance="600" height="200" width="150" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" effect="NPC/Skill/Temp/Eff_Temp.xml" />
 					<damageProperty rate="1" attackMaterial="1" />
 				</attack>
-				<attack point="p0" targetCount="1" magicPathID="40275011" attacktype="2" brokenOffence="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+				<attack point="p0" targetCount="1" magicPathID="40275011" attacktype="2" attackMethodType="1" brokenOffence="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
 					<rangeProperty rangeType="box" distance="600" height="200" width="150" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" bounceType="3" bounceCount="5" collision="50.000000,25.000000,100.000000" collisionAdd="0.000000,25.000000,50.000000" effect="NPC/Skill/FrogWizardWandRed/Eff_FrogWizardWandRed_Attack_02_A_Ball.xml" />
 					<damageProperty rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
 				</attack>
-				<attack point="p0" targetCount="3" magicPathID="40275013" attacktype="2" brokenOffence="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+				<attack point="p0" targetCount="3" magicPathID="40275013" attacktype="2" attackMethodType="1" brokenOffence="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
 					<rangeProperty rangeType="box" distance="600" height="200" width="150" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" collision="50.000000,25.000000,100.000000" collisionAdd="0.000000,25.000000,50.000000" effect="NPC/Skill/FrogWizardWandRed/Eff_FrogWizardWandRed_Attack_02_A_Ball_Small.xml" />
 					<damageProperty rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
@@ -3281,7 +3281,7 @@
 			<detectProperty rangeType="box" distance="250" rangeOffset="0.000000,0.000000,50.000000" height="150" width="100" />
 			<motion>
 				<motionProperty sequenceName="Attack_Idle_A" sequenceSpeed="1.3" />
-				<attack point="p0" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+				<attack point="p0" attacktype="1" attackMethodType="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
 					<rangeProperty rangeType="box" distance="250" height="200" width="100" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" effect="NPC/Skill/Temp/Eff_Temp.xml" />
 					<damageProperty rate="1" attackMaterial="1" />
@@ -3323,7 +3323,7 @@
 			<detectProperty rangeType="box" distance="500" rangeOffset="0.000000,0.000000,50.000000" height="50" width="300" />
 			<motion>
 				<motionProperty sequenceName="Attack_01_A" />
-				<attack point="p0" targetCount="1" magicPathID="5064" direction="1" attacktype="1" brokenOffence="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+				<attack point="p0" targetCount="1" magicPathID="5064" direction="1" attacktype="1" attackMethodType="1" brokenOffence="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
 					<rangeProperty rangeType="box" distance="500" height="200" width="300" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" collision="50.000000,25.000000,150.000000" effect="NPC/Skill/FrogSoldierDagger/Eff_FrogSoldierDagger_Attack_01_A_Ball.xml" />
 					<damageProperty rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
@@ -3340,7 +3340,7 @@
 			<detectProperty rangeType="box" distance="600" rangeOffset="0.000000,0.000000,50.000000" height="50" width="200" />
 			<motion>
 				<motionProperty sequenceName="Attack_01_A" motionEffect="NPC/Skill/FrogWizardWandBlue/Eff_FrogWizardWandBlue_Attack_01_A.xml" />
-				<attack point="p0" targetCount="1" magicPathID="40275001" direction="1" attacktype="2" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+				<attack point="p0" targetCount="1" magicPathID="40275001" direction="1" attacktype="2" attackMethodType="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
 					<rangeProperty rangeType="box" distance="600" height="200" width="200" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" collision="50.000000,25.000000,150.000000" effect="NPC/Skill/FrogWizardWandBlue/Eff_FrogWizardWandBlue_Attack_01_A_Ball.xml" />
 					<damageProperty rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
@@ -3357,17 +3357,17 @@
 			<detectProperty rangeType="box" distance="600" rangeOffset="0.000000,0.000000,50.000000" height="50" width="150" />
 			<motion>
 				<motionProperty sequenceName="Attack_02_A" motionEffect="NPC/Skill/FrogWizardWandBlue/Eff_FrogWizardWandBlue_Attack_02_A.xml" />
-				<attack point="p0" targetCount="1" direction="1" attacktype="2" brokenOffence="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+				<attack point="p0" targetCount="1" direction="1" attacktype="2" attackMethodType="1" brokenOffence="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
 					<rangeProperty rangeType="box" distance="600" height="200" width="150" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" effect="NPC/Skill/Temp/Eff_Temp.xml" />
 					<damageProperty rate="1" attackMaterial="1" />
 				</attack>
-				<attack point="p0" targetCount="1" magicPathID="40275011" attacktype="2" brokenOffence="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+				<attack point="p0" targetCount="1" magicPathID="40275011" attacktype="2" attackMethodType="1" brokenOffence="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
 					<rangeProperty rangeType="box" distance="600" height="200" width="150" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" bounceType="3" bounceCount="5" collision="50.000000,25.000000,100.000000" collisionAdd="0.000000,25.000000,50.000000" effect="NPC/Skill/FrogWizardWandBlue/Eff_FrogWizardWandBlue_Attack_02_A_Ball.xml" />
 					<damageProperty rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
 				</attack>
-				<attack point="p0" targetCount="5" magicPathID="40275014" attacktype="2" brokenOffence="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+				<attack point="p0" targetCount="5" magicPathID="40275014" attacktype="2" attackMethodType="1" brokenOffence="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
 					<rangeProperty rangeType="box" distance="600" height="200" width="150" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" collision="50.000000,25.000000,100.000000" collisionAdd="0.000000,25.000000,50.000000" effect="NPC/Skill/FrogWizardWandBlue/Eff_FrogWizardWandBlue_Attack_02_A_Ball_Small.xml" />
 					<damageProperty rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
@@ -3401,7 +3401,7 @@
 			<detectProperty rangeType="box" distance="250" rangeOffset="0.000000,0.000000,50.000000" height="150" width="100" />
 			<motion>
 				<motionProperty sequenceName="Attack_Idle_A" sequenceSpeed="1.3" />
-				<attack point="p0" attacktype="1" brokenOffence="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+				<attack point="p0" attacktype="1" attackMethodType="1" brokenOffence="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
 					<rangeProperty rangeType="box" distance="250" height="200" width="100" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" effect="NPC/Skill/Temp/Eff_Temp.xml" />
 					<damageProperty rate="1" attackMaterial="1" />
@@ -3443,7 +3443,7 @@
 			<detectProperty rangeType="box" distance="500" rangeOffset="0.000000,0.000000,50.000000" height="50" width="300" />
 			<motion>
 				<motionProperty sequenceName="Attack_01_A" />
-				<attack point="p0" targetCount="1" magicPathID="5064" direction="1" attacktype="1" brokenOffence="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+				<attack point="p0" targetCount="1" magicPathID="5064" direction="1" attacktype="1" attackMethodType="1" brokenOffence="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
 					<rangeProperty rangeType="box" distance="500" height="200" width="300" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" collision="50.000000,25.000000,150.000000" effect="NPC/Skill/FrogSoldierDagger/Eff_FrogSoldierDagger_Attack_01_A_Ball.xml" />
 					<damageProperty rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
@@ -3460,7 +3460,7 @@
 			<detectProperty rangeType="box" distance="600" rangeOffset="0.000000,0.000000,50.000000" height="50" width="200" />
 			<motion>
 				<motionProperty sequenceName="Attack_01_A" motionEffect="NPC/Skill/FrogWizardWandGreen/Eff_FrogWizardWandGreen_Attack_01_A.xml" />
-				<attack point="p0" targetCount="1" magicPathID="40275001" direction="1" attacktype="2" brokenOffence="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+				<attack point="p0" targetCount="1" magicPathID="40275001" direction="1" attacktype="2" attackMethodType="1" brokenOffence="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
 					<rangeProperty rangeType="box" distance="600" height="200" width="200" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" collision="50.000000,25.000000,150.000000" effect="NPC/Skill/FrogWizardWandGreen/Eff_FrogWizardWandGreen_Attack_01_A_Ball.xml" />
 					<damageProperty rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
@@ -3477,17 +3477,17 @@
 			<detectProperty rangeType="box" distance="600" rangeOffset="0.000000,0.000000,50.000000" height="50" width="150" />
 			<motion>
 				<motionProperty sequenceName="Attack_02_A" motionEffect="NPC/Skill/FrogWizardWandGreen/Eff_FrogWizardWandGreen_Attack_02_A.xml" />
-				<attack point="p0" targetCount="1" direction="1" attacktype="2" brokenOffence="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+				<attack point="p0" targetCount="1" direction="1" attacktype="2" attackMethodType="1" brokenOffence="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
 					<rangeProperty rangeType="box" distance="600" height="200" width="150" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" effect="NPC/Skill/Temp/Eff_Temp.xml" />
 					<damageProperty rate="1" attackMaterial="1" />
 				</attack>
-				<attack point="p0" targetCount="1" magicPathID="40275011" attacktype="2" brokenOffence="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+				<attack point="p0" targetCount="1" magicPathID="40275011" attacktype="2" attackMethodType="1" brokenOffence="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
 					<rangeProperty rangeType="box" distance="600" height="200" width="150" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" bounceType="3" bounceCount="5" collision="50.000000,25.000000,100.000000" collisionAdd="0.000000,25.000000,50.000000" effect="NPC/Skill/FrogWizardWandGreen/Eff_FrogWizardWandGreen_Attack_02_A_Ball.xml" />
 					<damageProperty rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
 				</attack>
-				<attack point="p0" targetCount="2" magicPathID="40275012" attacktype="2" brokenOffence="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+				<attack point="p0" targetCount="2" magicPathID="40275012" attacktype="2" attackMethodType="1" brokenOffence="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
 					<rangeProperty rangeType="box" distance="600" height="200" width="150" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" collision="50.000000,25.000000,100.000000" collisionAdd="0.000000,25.000000,50.000000" effect="NPC/Skill/FrogWizardWandGreen/Eff_FrogWizardWandGreen_Attack_02_A_Ball_Small.xml" />
 					<damageProperty rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
@@ -3504,7 +3504,7 @@
 			<detectProperty rangeType="box" distance="100" rangeOffset="0.000000,0.000000,50.000000" height="150" width="80" />
 			<motion>
 				<motionProperty sequenceName="Attack_01_A" />
-				<attack point="p0" targetCount="1" attacktype="1" brokenOffence="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+				<attack point="p0" targetCount="1" attacktype="1" attackMethodType="1" brokenOffence="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
 					<rangeProperty rangeType="box" distance="100" height="200" width="80" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" effect="NPC/Skill/Temp/Eff_Temp.xml" />
 					<damageProperty count="0" rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
@@ -3530,7 +3530,7 @@
 			<detectProperty rangeType="box" distance="300" rangeOffset="0.000000,0.000000,50.000000" height="150" width="80" />
 			<motion>
 				<motionProperty sequenceName="Attack_01_B" sequenceSpeed="0.7" />
-				<attack point="p0" targetCount="1" attacktype="1" brokenOffence="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+				<attack point="p0" targetCount="1" attacktype="1" attackMethodType="1" brokenOffence="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
 					<rangeProperty rangeType="box" distance="300" height="200" width="80" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" effect="NPC/Skill/Temp/Eff_Temp.xml" />
 					<damageProperty count="0" rate="0.33" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
@@ -3565,7 +3565,7 @@
 			<detectProperty rangeType="box" distance="100" rangeOffset="0.000000,0.000000,50.000000" height="150" width="80" />
 			<motion>
 				<motionProperty sequenceName="Attack_01_A" />
-				<attack point="p0" targetCount="1" attacktype="1" brokenOffence="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+				<attack point="p0" targetCount="1" attacktype="1" attackMethodType="1" brokenOffence="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
 					<rangeProperty rangeType="box" distance="100" height="200" width="80" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" effect="NPC/Skill/Temp/Eff_Temp.xml" />
 					<damageProperty count="0" rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
@@ -3591,7 +3591,7 @@
 			<detectProperty rangeType="box" distance="300" rangeOffset="0.000000,0.000000,50.000000" height="150" width="80" />
 			<motion>
 				<motionProperty sequenceName="Attack_01_B" sequenceSpeed="0.7" />
-				<attack point="p0" targetCount="1" attacktype="1" brokenOffence="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+				<attack point="p0" targetCount="1" attacktype="1" attackMethodType="1" brokenOffence="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
 					<rangeProperty rangeType="box" distance="300" height="200" width="80" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" effect="NPC/Skill/Temp/Eff_Temp.xml" />
 					<damageProperty count="0" rate="0.33" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
@@ -3626,7 +3626,7 @@
 			<detectProperty rangeType="box" distance="100" rangeOffset="0.000000,0.000000,50.000000" height="150" width="80" />
 			<motion>
 				<motionProperty sequenceName="Attack_01_A" />
-				<attack point="p0" targetCount="1" attacktype="1" brokenOffence="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+				<attack point="p0" targetCount="1" attacktype="1" attackMethodType="1" brokenOffence="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
 					<rangeProperty rangeType="box" distance="100" height="200" width="80" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" effect="NPC/Skill/Temp/Eff_Temp.xml" />
 					<damageProperty count="0" rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
@@ -3652,7 +3652,7 @@
 			<detectProperty rangeType="box" distance="300" rangeOffset="0.000000,0.000000,50.000000" height="150" width="80" />
 			<motion>
 				<motionProperty sequenceName="Attack_01_B" sequenceSpeed="0.7" />
-				<attack point="p0" targetCount="1" attacktype="1" brokenOffence="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+				<attack point="p0" targetCount="1" attacktype="1" attackMethodType="1" brokenOffence="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
 					<rangeProperty rangeType="box" distance="300" height="200" width="80" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" effect="NPC/Skill/Temp/Eff_Temp.xml" />
 					<damageProperty count="0" rate="0.33" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
@@ -3687,7 +3687,7 @@
 			<detectProperty rangeType="box" distance="100" rangeOffset="0.000000,0.000000,50.000000" height="150" width="80" />
 			<motion>
 				<motionProperty sequenceName="Attack_01_A" />
-				<attack point="p0" targetCount="1" attacktype="1" brokenOffence="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+				<attack point="p0" targetCount="1" attacktype="1" attackMethodType="1" brokenOffence="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
 					<rangeProperty rangeType="box" distance="100" height="200" width="80" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" effect="NPC/Skill/Temp/Eff_Temp.xml" />
 					<damageProperty count="0" rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
@@ -3712,7 +3712,7 @@
 			<detectProperty rangeType="box" distance="130" rangeOffset="0.000000,0.000000,50.000000" height="150" width="80" />
 			<motion>
 				<motionProperty sequenceName="Attack_01_A" />
-				<attack point="p0" targetCount="1" attacktype="1" brokenOffence="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+				<attack point="p0" targetCount="1" attacktype="1" attackMethodType="1" brokenOffence="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
 					<rangeProperty rangeType="box" distance="130" height="200" width="80" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" effect="NPC/Skill/Temp/Eff_Temp.xml" />
 					<damageProperty count="0" rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
@@ -3737,7 +3737,7 @@
 			<detectProperty rangeType="box" distance="130" rangeOffset="0.000000,0.000000,50.000000" height="150" width="80" />
 			<motion>
 				<motionProperty sequenceName="Attack_01_B" />
-				<attack point="p0" targetCount="1" attacktype="1" brokenOffence="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+				<attack point="p0" targetCount="1" attacktype="1" attackMethodType="1" brokenOffence="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
 					<rangeProperty rangeType="box" distance="130" height="200" width="80" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" effect="NPC/Skill/Temp/Eff_Temp.xml" />
 					<damageProperty count="0" rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
@@ -3829,7 +3829,7 @@
 			<detectProperty rangeType="box" distance="220" rangeOffset="0.000000,0.000000,50.000000" height="150" width="80" />
 			<motion>
 				<motionProperty sequenceName="Attack_01_C" sequenceSpeed="0.7" />
-				<attack point="p0" targetCount="1" attacktype="1" brokenOffence="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+				<attack point="p0" targetCount="1" attacktype="1" attackMethodType="1" brokenOffence="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
 					<rangeProperty rangeType="box" distance="220" height="200" width="80" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" effect="NPC/Skill/Temp/Eff_Temp.xml" />
 					<damageProperty count="0" rate="0.33" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
@@ -3864,7 +3864,7 @@
 			<detectProperty rangeType="box" distance="130" rangeOffset="0.000000,0.000000,50.000000" height="150" width="80" />
 			<motion>
 				<motionProperty sequenceName="Attack_01_A" />
-				<attack point="p0" targetCount="1" attacktype="1" brokenOffence="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+				<attack point="p0" targetCount="1" attacktype="1" attackMethodType="1" brokenOffence="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
 					<rangeProperty rangeType="box" distance="130" height="200" width="80" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" effect="NPC/Skill/Temp/Eff_Temp.xml" />
 					<damageProperty count="0" rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
@@ -3889,7 +3889,7 @@
 			<detectProperty rangeType="box" distance="130" rangeOffset="0.000000,0.000000,50.000000" height="150" width="80" />
 			<motion>
 				<motionProperty sequenceName="Attack_01_B" />
-				<attack point="p0" targetCount="1" attacktype="1" brokenOffence="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+				<attack point="p0" targetCount="1" attacktype="1" attackMethodType="1" brokenOffence="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
 					<rangeProperty rangeType="box" distance="130" height="200" width="80" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" effect="NPC/Skill/Temp/Eff_Temp.xml" />
 					<damageProperty count="0" rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
@@ -3964,7 +3964,7 @@
 			<detectProperty rangeType="box" distance="600" rangeOffset="0.000000,0.000000,50.000000" height="150" width="100" />
 			<motion>
 				<motionProperty sequenceName="Attack_01_B" />
-				<attack point="p0" attacktype="1" brokenOffence="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+				<attack point="p0" attacktype="1" attackMethodType="1" brokenOffence="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
 					<rangeProperty rangeType="box" distance="600" height="200" width="100" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" effect="NPC/Skill/Temp/Eff_Temp.xml" />
 					<damageProperty rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
@@ -3972,7 +3972,7 @@
 			</motion>
 			<motion>
 				<motionProperty sequenceName="Attack_02_B" />
-				<attack point="p0" targetCount="1" magicPathID="5065" direction="1" attacktype="1" brokenOffence="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+				<attack point="p0" targetCount="1" magicPathID="5065" direction="1" attacktype="1" attackMethodType="1" brokenOffence="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
 					<rangeProperty rangeType="box" distance="600" height="200" width="100" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" collision="50.000000,25.000000,150.000000" effect="NPC/Skill/RabbitShortBandage/Eff_RabbitShortBandage_Attack_02_B_Ball.xml" />
 					<damageProperty rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
@@ -3989,7 +3989,7 @@
 			<detectProperty rangeType="box" distance="200" rangeOffset="0.000000,0.000000,50.000000" height="150" width="80" />
 			<motion>
 				<motionProperty sequenceName="Attack_01_A" />
-				<attack point="p0" targetCount="1" attacktype="1" brokenOffence="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+				<attack point="p0" targetCount="1" attacktype="1" attackMethodType="1" brokenOffence="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
 					<rangeProperty rangeType="box" distance="200" height="200" width="80" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" effect="NPC/Skill/Temp/Eff_Temp.xml" />
 					<damageProperty count="0" rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
@@ -4014,7 +4014,7 @@
 			<detectProperty rangeType="box" distance="200" rangeOffset="0.000000,0.000000,50.000000" height="150" width="80" />
 			<motion>
 				<motionProperty sequenceName="Attack_01_B" />
-				<attack point="p0" targetCount="1" attacktype="1" brokenOffence="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+				<attack point="p0" targetCount="1" attacktype="1" attackMethodType="1" brokenOffence="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
 					<rangeProperty rangeType="box" distance="200" height="200" width="80" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" effect="NPC/Skill/Temp/Eff_Temp.xml" />
 					<damageProperty count="0" rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
@@ -4076,7 +4076,7 @@
 					<rangeProperty rangeType="box" distance="150" height="200" width="150" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" />
 					<damageProperty rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
-					<conditionSkill level="1" skillID="50000414" skillTarget="1" skillOwner="1" />
+					<actionAdditional additionalID="50000414" level="1" skillTarget="1" skillOwner="1" />
 				</attack>
 			</motion>
 		</level>
@@ -4107,7 +4107,7 @@
 			<detectProperty rangeType="box" distance="600" rangeOffset="0.000000,0.000000,50.000000" height="50" width="300" />
 			<motion>
 				<motionProperty sequenceName="Attack_01_A" motionEffect="NPC/Skill/LeaderTwingko/Eff_LeaderTwingko_Attack_01_A.xml" />
-				<attack point="p0" targetCount="1" magicPathID="40076001" attacktype="2" brokenOffence="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+				<attack point="p0" targetCount="1" magicPathID="40076001" attacktype="2" attackMethodType="1" brokenOffence="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
 					<rangeProperty rangeType="box" distance="600" height="200" width="300" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" collision="25.000000,-20.000000,125.000000" collisionAdd="0.000000,40.000000,25.000000" effect="NPC/Skill/LeaderTwingko/Eff_LeaderTwingko_Attack_Ball.xml" effectRemain="NPC/Common/Eff_NPC_Attack_Hit_01.xml" />
 					<damageProperty rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="9" />
@@ -4124,13 +4124,13 @@
 			<detectProperty rangeType="box" distance="600" rangeOffset="0.000000,0.000000,50.000000" height="50" width="300" />
 			<motion>
 				<motionProperty sequenceName="Skill_ThrowingArtifact_Cast_A" motionEffect="NPC/Skill/LeaderTwingko/Eff_LeaderTwingko_Skill_ThrowingArtifact_Cast_A.xml" />
-				<attack point="p0" targetCount="1" magicPathID="40076011" attacktype="2" brokenOffence="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+				<attack point="p0" targetCount="1" magicPathID="40076011" attacktype="2" attackMethodType="1" brokenOffence="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
 					<rangeProperty rangeType="box" distance="600" height="200" width="300" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" collision="30.000000,25.000000,150.000000" collisionAdd="0.000000,25.000000,0.000000" effect="NPC/Skill/LeaderTwingko/Eff_LeaderTwingko_Skill_ThrowingArtifact_Cast_Ball.xml" effectRemain="NPC/Common/Eff_NPC_Attack_Hit_01.xml" />
 					<damageProperty rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="2" />
-					<conditionSkill level="1" skillID="50000046" skillTarget="2" skillOwner="1">
+					<actionAdditional additionalID="50000046" level="1" skillTarget="2" skillOwner="1">
 						<beginCondition probability="0.3" />
-					</conditionSkill>
+					</actionAdditional>
 				</attack>
 			</motion>
 		</level>
@@ -4139,7 +4139,7 @@
 		<basic />
 		<level value="1">
 			<beginCondition cooldownTime="999" />
-			<conditionSkill level="1" skillID="50000421" skillTarget="1" />
+			<actionAdditional additionalID="50000421" level="1" skillTarget="1" />
 			<motion>
 				<attack point="p0" attacktype="1">
 					<rangeProperty includeCaster="1" />
@@ -4209,7 +4209,7 @@
 			<detectProperty rangeType="box" distance="800" rangeOffset="0.000000,0.000000,50.000000" height="50" width="400" />
 			<motion>
 				<motionProperty sequenceName="Attack_01_A" motionEffect="NPC/Skill/Pim/Eff_Pim_Attack_01_A.xml" />
-				<attack point="p0" targetCount="3" magicPathID="49021001" attacktype="2" brokenOffence="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+				<attack point="p0" targetCount="3" magicPathID="49021001" attacktype="2" attackMethodType="1" brokenOffence="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
 					<rangeProperty rangeType="box" distance="800" height="200" width="600" applyTarget="1" castTarget="1" />
 					<arrowProperty explosion="1" collision="70.000000,35.000000,100.000000" collisionAdd="0.000000,35.000000,50.000000" effect="NPC/Skill/Pim/Eff_Pim_Attack_Ball_A.xml" effectRemain="NPC/Common/Eff_NPC_Attack_Hit_01.xml" />
 					<damageProperty rate="1.2" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
@@ -4261,7 +4261,7 @@
 			<detectProperty rangeType="box" distance="400" rangeOffset="0.000000,0.000000,50.000000" height="150" width="200" />
 			<motion>
 				<motionProperty sequenceName="Attack_01_A" faceTarget="0" />
-				<attack point="p0" targetCount="1" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+				<attack point="p0" targetCount="1" attacktype="1" attackMethodType="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
 					<rangeProperty rangeType="box" distance="400" height="200" width="200" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" effect="NPC/Skill/Temp/Eff_Temp.xml" />
 					<damageProperty rate="1" attackMaterial="102" />
@@ -4273,7 +4273,7 @@
 					<rangeProperty rangeType="box" distance="200" rangeAdd="0.000000,150.000000,0.000000" height="200" width="200" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" />
 					<damageProperty rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="300" pushduration="0.2" pushEaseType="1" attackMaterial="102" />
-					<conditionSkill level="1" skillID="50000107" skillTarget="2" skillOwner="1" />
+					<actionAdditional additionalID="50000107" level="1" skillTarget="2" skillOwner="1" />
 				</attack>
 			</motion>
 		</level>
@@ -4287,7 +4287,7 @@
 			<detectProperty rangeType="box" distance="600" rangeOffset="0.000000,0.000000,50.000000" height="50" width="200" />
 			<motion>
 				<motionProperty sequenceName="AttackThrow_01_A" />
-				<attack point="p0" targetCount="1" attacktype="1" brokenOffence="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+				<attack point="p0" targetCount="1" attacktype="1" attackMethodType="1" brokenOffence="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
 					<rangeProperty rangeType="box" distance="600" height="200" width="200" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" effect="NPC/Skill/Temp/Eff_Temp.xml" />
 					<damageProperty count="0" rate="1" attackMaterial="1" />
@@ -4295,7 +4295,7 @@
 			</motion>
 			<motion>
 				<motionProperty sequenceName="AttackThrow_03_A" />
-				<attack point="p0" targetCount="1" magicPathID="5036" attacktype="1" brokenOffence="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+				<attack point="p0" targetCount="1" magicPathID="5036" attacktype="1" attackMethodType="1" brokenOffence="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
 					<rangeProperty rangeType="box" distance="600" height="200" width="200" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" collision="60.000000,1.000000,130.000000" collisionAdd="0.000000,20.000000,20.000000" effect="NPC/Skill/BungBung/Eff_BungBung_AttackThrow_02_A_Ball.xml" />
 					<damageProperty rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
@@ -4312,7 +4312,7 @@
 			<detectProperty rangeType="box" distance="600" rangeOffset="0.000000,0.000000,50.000000" height="50" width="200" />
 			<motion>
 				<motionProperty sequenceName="Attack_01_A" motionEffect="NPC/Skill/BungBung/Eff_BungBungBig_Attack_01_A.xml" />
-				<attack point="p0" targetCount="3" magicPathID="50363" attacktype="2" brokenOffence="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+				<attack point="p0" targetCount="3" magicPathID="50363" attacktype="2" attackMethodType="1" brokenOffence="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
 					<rangeProperty rangeType="box" distance="600" height="200" width="200" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" collision="50.000000,25.000000,100.000000" collisionAdd="0.000000,25.000000,50.000000" effect="NPC/Skill/BungBung/Eff_BungBungBig_Attack_01_A_Ball.xml" />
 					<damageProperty rate="0.3" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
@@ -4363,7 +4363,7 @@
 			<detectProperty rangeType="box" distance="130" rangeOffset="0.000000,0.000000,50.000000" height="150" width="130" />
 			<motion>
 				<motionProperty sequenceName="Attack_01_A" loopCount="1" />
-				<attack point="p0" targetCount="1" direction="1" attacktype="1" brokenOffence="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+				<attack point="p0" targetCount="1" direction="1" attacktype="1" attackMethodType="1" brokenOffence="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
 					<rangeProperty rangeType="box" distance="130" height="200" width="130" applyTarget="1" castTarget="1" />
 					<arrowProperty effect="NPC/Skill/Temp/Eff_Temp.xml" />
 					<damageProperty count="0" attackMaterial="1" />
@@ -4388,7 +4388,7 @@
 			<detectProperty rangeType="box" distance="600" rangeOffset="0.000000,0.000000,50.000000" height="50" width="150" />
 			<motion>
 				<motionProperty sequenceName="Magic_Direct_01_A" />
-				<attack point="p0" targetCount="1" direction="1" attacktype="2" brokenOffence="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+				<attack point="p0" targetCount="1" direction="1" attacktype="2" attackMethodType="1" brokenOffence="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
 					<rangeProperty rangeType="box" distance="600" height="200" width="150" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" effect="NPC/Skill/Temp/Eff_Temp.xml" />
 					<damageProperty rate="1" attackMaterial="1" />
@@ -4396,12 +4396,12 @@
 			</motion>
 			<motion>
 				<motionProperty sequenceName="Magic_Direct_02_A" motionEffect="NPC/Skill/FairyConehat/Eff_FairyConehat_Magic_Direct_02_A.xml" />
-				<attack point="p0" targetCount="1" magicPathID="40070001" attacktype="2" brokenOffence="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+				<attack point="p0" targetCount="1" magicPathID="40070001" attacktype="2" attackMethodType="1" brokenOffence="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
 					<rangeProperty rangeType="box" distance="600" height="200" width="150" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" bounceType="3" bounceCount="5" collision="50.000000,25.000000,100.000000" collisionAdd="0.000000,25.000000,50.000000" effect="NPC/Skill/FairyConehat/Eff_FairyConehat_Magic_Direct_02_A_Ball.xml" />
 					<damageProperty rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
 				</attack>
-				<attack point="p0" targetCount="4" magicPathID="40070003" attacktype="2" brokenOffence="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+				<attack point="p0" targetCount="4" magicPathID="40070003" attacktype="2" attackMethodType="1" brokenOffence="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
 					<rangeProperty rangeType="box" distance="600" height="200" width="150" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" bounceType="3" bounceCount="5" collision="50.000000,25.000000,100.000000" collisionAdd="0.000000,25.000000,50.000000" effect="NPC/Skill/FairyConehat/Eff_FairyConehat_Magic_Direct_02_A_Ball_Small.xml" />
 					<damageProperty rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
@@ -4418,7 +4418,7 @@
 			<detectProperty rangeType="box" distance="600" rangeOffset="0.000000,0.000000,50.000000" height="50" width="200" />
 			<motion>
 				<motionProperty sequenceName="AttackThrow_01_A" />
-				<attack point="p0" targetCount="1" attacktype="1" brokenOffence="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+				<attack point="p0" targetCount="1" attacktype="1" attackMethodType="1" brokenOffence="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
 					<rangeProperty rangeType="box" distance="600" height="200" width="200" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" effect="NPC/Skill/Temp/Eff_Temp.xml" />
 					<damageProperty count="0" attackMaterial="1" />
@@ -4426,7 +4426,7 @@
 			</motion>
 			<motion>
 				<motionProperty sequenceName="AttackThrow_03_A" />
-				<attack point="p0" targetCount="1" magicPathID="5036" attacktype="1" brokenOffence="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+				<attack point="p0" targetCount="1" magicPathID="5036" attacktype="1" attackMethodType="1" brokenOffence="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
 					<rangeProperty rangeType="box" distance="600" height="200" width="200" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" collision="60.000000,1.000000,130.000000" collisionAdd="0.000000,20.000000,20.000000" effect="NPC/Skill/BungBung/Eff_BungBung_AttackThrow_02_A_Ball.xml" />
 					<damageProperty rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />

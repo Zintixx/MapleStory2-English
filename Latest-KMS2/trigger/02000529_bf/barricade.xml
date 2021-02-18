@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ms2>  <!--  ModelID = 5291 -->
+	<state name="대기"> 
+    <onEnter>
+		<!-- 초기화 -->
+		<action name="SetUserValue" key="BattleEnd" value="0" />
+     </onEnter>	
+			<condition name="유저를감지했으면" arg1="101">
+					<transition state="난이도체크"/>
+			</condition>
+	</state>   
+  
+
+
+	<state name="난이도체크">
+		<onEnter>  
+		</onEnter>	
+
+			<condition name="DungeonID" dungeonID="23081003">  <!-- 6인던전으로 입장하면 6인용 보스 등장,   dungeonID 의 숫자는 DungeonRoom.xlsx 에 정의된 던전코드-->			 
+				<transition state="카운트대기" />
+			</condition>	
+		
+			<condition name="DungeonID" dungeonID="23080003">   <!-- 4인던전으로 입장하면 4인용 보스 등장, 4인은 입구 막지 안음-->			 
+				<transition state="종료" />
+			</condition>	
+
+			
+			<condition name="WaitTick" waitTick="2000" > <!-- 2초 뒤에 다음 단계 진행  -->	
+				<transition state="카운트발동" />
+			</condition>			
+	</state>
+
+	
+	<state name="카운트대기">
+		<onEnter>  
+		</onEnter>	
+		
+			<condition name="WaitTick" waitTick="1800" > 
+				<transition state="카운트발동"/> 	
+			</condition>
+					
+	</state>
+	
+	
+	<state name="카운트발동">
+		<onEnter>  
+			<action name="이벤트UI를설정한다" arg1="1" arg2="$02000384_BF__BARRICADE__0$" arg3="3000" />
+		</onEnter>	
+		
+			<!-- 핑크빈과 블랙빈 죽으면 AI에서 이 트리거에게 BattleEnd = 1 신호를 보냄, 혹시 몰라서 두 보스가 죽으면 동시에 같은 신호 보내게 함-->
+			<condition name="UserValue" key="BattleEnd" value="1">  
+				<transition state="종료"/>
+			</condition>	 		
+		
+			<condition name="WaitTick" waitTick="28200" > 
+				<transition state="차단"/> 	
+			</condition>
+					
+	</state>
+
+	
+    <state name="차단">
+        <onEnter>
+            <action name="포탈을설정한다" arg1="11" arg2="0" arg3="0" arg4="0"/>		
+        </onEnter>
+
+			<condition name="WaitTick" waitTick="1200" > 
+				<transition state="종료"/> 	
+			</condition>
+			
+		<onExit>
+		</onExit>		
+    </state>	
+
+	
+	<state name="종료">
+	</state>
+	
+</ms2>

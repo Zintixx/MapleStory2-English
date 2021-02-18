@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ms2>   <!--  ModelID = 529 -->
+
+  <state name="idle">
+    <onEnter>
+		<!-- 초기화 
+		<action name="메쉬를설정한다" arg1="50" arg2="0" arg3="0" arg4="0" arg5="0" />			
+		<action name="포탈을설정한다" arg1="2" arg2="1" arg3="1" arg4="1"/>
+		<action name="포탈을설정한다" arg1="3" arg2="1" arg3="1" arg4="1"/>	-->
+		<action name="SetUserValue" key="SecondBattleMove" value="0" /> <!-- 이 변수가 1이 되면, 두번째 전투판으로 가기 위한 트리거 벽 제거하기 -->
+		<action name="SetUserValue" key="VacuumMessage" value="0" />		<!-- VacuumMessage변수 0으로 초기 셋팅, 진공청소기 흡수도니 플레이어 있으면 메시지 출력 하기 위한 용도-->					
+		<action name="SetUserValue" key="BattleEnd" value="0" />
+		<action name="포탈을설정한다" arg1="13" arg2="0" arg3="0" arg4="0"/>		<!-- 두번째 시작 지점에서 전투판으로 가는 포탈 최초에는 감추기 -->	
+
+     </onEnter>
+		<condition name="유저를감지했으면" arg1="101">
+				<transition state="난이도체크"/>
+		</condition>					
+    <onExit>
+    </onExit>
+  </state> 
+
+  
+	<state name="난이도체크">
+		<onEnter>
+			<action name="메쉬를설정한다" arg1="50" arg2="1" arg3="0" arg4="0" arg5="0" />			
+			<action name="메쉬를설정한다" arg1="51-60" arg2="1" arg3="0" arg4="0" arg5="0" />		<!-- 두번째 전투판으로 가는 철문 오브젝트 생성  -->				
+            <action name="포탈을설정한다" arg1="2" arg2="0" arg3="0" arg4="0"/>
+            <action name="포탈을설정한다" arg1="3" arg2="0" arg3="0" arg4="0"/>
+			
+			<action name="포탈을설정한다" arg1="11" arg2="1" arg3="1" arg4="1"/>
+		</onEnter>
+		
+			<condition name="DungeonID" dungeonID="23081003">  <!-- 6인던전으로 입장하면 6인용 보스 등장,   dungeonID 의 숫자는 DungeonRoom.xlsx 에 정의된 던전코드-->			 
+				<transition state="어려운난이도보스등장" />
+			</condition>	
+		
+			<condition name="DungeonID" dungeonID="23080003">   <!-- 4인던전으로 입장하면 4인용 보스 등장-->			 
+				<transition state="보통난이도보스등장" />
+			</condition>			
+		
+		
+		
+			<condition name="WaitTick" waitTick="2000" > <!-- 2초 뒤에 다음 단계 진행  -->	
+				<transition state="어려운난이도보스등장" />
+			</condition>				
+		
+			
+		<!-- *주석처리 필수!! 던전ID로 조건체크하는 설정법 예시:  현재 입장한 던전ID가 23051003  이라면 , <transition state="여려움난이도보스등장" /> 실행
+			<condition name="DungeonID" dungeonID="23051003">  
+				<transition state="여려움난이도보스등장" />
+			</condition> 
+		*주석처리 필수!! -->    	
+		
+		
+		
+		<!-- *주석처리 필수!! DungeonLevel 파라미터 항목으로 던전 난이도별 보스 생성 설정법 예시:  현재 입장한 던전 DungeonLevel = 3  이라면 , <transition state="여려움난이도보스등장" /> 실행
+			
+			<condition name="DungeonLevel" level="2">
+				<transition state="보통난이도보스등장" />	
+			</condition>
+				
+			<condition name="DungeonLevel" level="3">
+				<transition state="어려운난이도보스등장" />	
+			</condition>	
+			
+		*주석처리 필수!! -->    	
+		
+			
+		<onExit>
+		</onExit>
+	</state>  
+	
+
+	<state name="어려운난이도보스등장">
+		<onEnter>
+			<action name="몬스터를생성한다" arg1="99" arg2="0" />
+		</onEnter>
+		
+			<condition name="WaitTick" waitTick="1700" > <!-- 1.7초 뒤에 다음 단계 진행  -->	
+				<transition state="전투진행중" />
+			</condition>			
+
+		<onExit>
+		</onExit>
+	</state>  
+
+
+	<state name="보통난이도보스등장">
+		<onEnter>
+			<action name="몬스터를생성한다" arg1="98" arg2="0" />
+		</onEnter>
+		
+			<condition name="WaitTick" waitTick="1700" > <!-- 1.7초 뒤에 다음 단계 진행  -->	
+				<transition state="전투진행중" />
+			</condition>				
+
+		<onExit>
+		</onExit>
+	</state>  
+	
+	
+	<state name="전투진행중">
+		<onEnter>	
+		</onEnter>
+		
+			<condition name="UserValue" key="SecondBattleMove" value="1" > <!-- "AI_Pinkbean_Together_Hard.xml" 에서 이 변수 1 신호를 받아서 이 트러거 부분을 실행함-->
+				<transition state="막힌문열기"/>	
+			</condition>	
+			
+
+			<condition name="UserValue" key="VacuumMessage" value="1">  <!-- 블랙빈 진공청소기 흡수된 플레이어 있으면 AI에서 이 신호 VacuumMessage = 1 보냄-->
+				<transition state="메시지출력"/>
+			</condition>
+			
+			
+			<!-- 핑크빈과 블랙빈 죽으면 AI에서 이 트리거에게 BattleEnd = 1 신호를 보냄, 혹시 몰라서 두 보스가 죽으면 동시에 같은 신호 보내게 함-->
+			<condition name="UserValue" key="BattleEnd" value="1">  
+				<transition state="클리어처리"/>
+			</condition>
+			
+
+			
+			
+			<condition name="DungeonTimeOut" >						
+				<transition state="던전실패" />
+			</condition>				
+			<condition name="DungeonCheckState" checkState="Fail">  <!--던전을 포기해서 실패한 경우-->
+				<transition state="던전실패" />
+			</condition>				
+			
+		<onExit>
+		</onExit>
+	</state>  	
+
+
+	<state name="막힌문열기">
+		<onEnter>
+			<action name="SetUserValue" key="SecondBattleMove" value="0" /> <!-- 이 변수 다시 0으로 꼭 초기화 하기, 하지 않으면 무한 루프 빨림 -->
+			<action name="메쉬를설정한다" arg1="50" arg2="0" arg3="0" arg4="0" arg5="0" />		<!-- 두번째 전투판으로 가는 트리거메쉬 벽 제거하기  -->	
+			<action name="메쉬를설정한다" arg1="51-60" arg2="0" arg3="0" arg4="50" arg5="1" />		<!-- 두번째 전투판으로 가는 철문 오브젝트 제거하기  -->	
+			<action name="포탈을설정한다" arg1="13" arg2="1" arg3="1" arg4="1"/>		<!-- 두번째 시작 지점에서 전투판으로 가는 포탈 등장시키기 -->	
+		</onEnter>
+		
+			<condition name="WaitTick" waitTick="1200" > <!-- 2초 뒤에 다음 단계 진행  -->	
+				<transition state="전투진행중" />
+			</condition>
+			
+		<onExit>
+		</onExit> 
+	</state>	
+	
+
+   <state name="메시지출력">
+    <onEnter>
+		<!-- 안내 메시지 호출하기 -->
+		<action name="ShowGuideSummary" entityID="29200008" textID="29200008" durationTime='6200'/> 
+		<action name="SetUserValue" key="VacuumMessage" value="0" />		<!-- VacuumMessage변수 0으로 초기 셋팅-->		 	 			
+    </onEnter>
+
+		<condition name="WaitTick" waitTick="900" > 
+			<transition state="전투진행중"/>	
+		</condition>	
+	
+    <onExit>
+    </onExit>
+  </state>	
+	
+
+
+
+
+	<state name="던전실패">
+		<onEnter> 
+			<action name="몬스터소멸시킨다" arg1="all" />			
+		</onEnter>		 
+				<condition name="WaitTick" waitTick="1500" > 
+					<action name="DungeonFail" /> 
+					<transition state="종료처리" />
+				</condition>
+	</state> 		
+	
+	
+
+	
+	<state name="클리어처리"> 
+		<onEnter>      
+		</onEnter>
+			<condition name="WaitTick" waitTick="8000" > 
+				<action name="DungeonClear" /> 
+				<transition state="종료처리" />
+			</condition>
+	</state>		
+
+	
+	
+	<state name="종료처리">
+		<onEnter>
+			<action name="DungeonEnableGiveUp" isEnable="0" />		
+		
+			<action name="메쉬를설정한다" arg1="50" arg2="0" arg3="0" arg4="0" arg5="0" />		<!-- 두번째 전투판으로 가는 트리거메쉬 벽 제거하기, 보스가 첫번째 전투판에서 죽을 수 있어서 무조건 트리거 벽 제거함  -->			
+			<action name="메쉬를설정한다" arg1="51-60" arg2="0" arg3="0" arg4="50" arg5="1" />		<!-- 두번째 전투판으로 가는 철문 오브젝트 제거하기  -->	
+			<action name="몬스터소멸시킨다" arg1="all" />			
+			<action name="포탈을설정한다" arg1="2" arg2="1" arg3="1" arg4="1"/>
+			<action name="포탈을설정한다" arg1="3" arg2="1" arg3="1" arg4="1"/>
+            <action name="포탈을설정한다" arg1="11" arg2="1" arg3="1" arg4="1"/>		<!-- Barricade.xml 에서 포탈 감추기 했는데, 클리어 하면 다 포탈 등장시키기 -->		
+			<action name="포탈을설정한다" arg1="13" arg2="1" arg3="1" arg4="1"/>			
+		</onEnter>
+		<onExit>
+		</onExit>
+	</state>
+
+</ms2>

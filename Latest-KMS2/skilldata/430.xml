@@ -9,17 +9,17 @@
 			<detectProperty rangeType="cylinder" distance="99999" rangeOffset="0.000000,0.000000,-2200.000000" height="9999" />
 			<motion>
 				<motionProperty sequenceName="Attack_01_A" motionEffect="NPC/Skill/Missileport/Eff_Missileport_Attack_01_A_Cast.xml" />
-				<attack point="p0" targetCount="4" magicPathID="6404" attacktype="2" brokenOffence="1" unrideOnHit="1" compulsionType="1">
+				<attack point="p0" targetCount="4" magicPathID="6404" attacktype="2" attackMethodType="1" brokenOffence="1" unrideOnHit="1" compulsionType="1">
 					<rangeProperty rangeType="cylinder" distance="99999" rangeOffset="0.000000,0.000000,-2200.000000" height="9999" applyTarget="1" castTarget="1" />
 					<arrowProperty overlap="1" collision="75.000000,75.000000,75.000000" effect="NPC/Skill/Missileport/Eff_Missileport_Attack_01_A_Ball.xml" effectRemain="NPC/Skill/Missileport/Eff_Missileport_Attack_01_A_Ball_remain.xml" />
 					<damageProperty attackMaterial="1" />
-					<actionSkill splash="1" level="1" skillID="43000011" removeDelay="1500" />
+					<actionSkill skillID="43000011" level="1" removeDelay="1500" />
 				</attack>
 			</motion>
 		</level>
 	</skill>
 	<skill id="43000011" comment="검은군단 미사일 포트 (군단전)">
-		<basic>
+		<basic mainType="30">
 			<ui attackType="2" />
 			<kinds rangeType="2" element="1" />
 		</basic>

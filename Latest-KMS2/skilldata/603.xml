@@ -129,19 +129,19 @@
 					<rangeProperty rangeType="box" distance="1050" height="80" width="200" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" />
 					<damageProperty rate="3" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="6" />
-					<conditionSkill level="1" skillID="50000007" skillTarget="2" skillOwner="1" />
+					<actionAdditional additionalID="50000007" level="1" skillTarget="2" skillOwner="1" />
 				</attack>
 				<attack point="p1" targetCount="10" direction="1" attacktype="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
 					<rangeProperty rangeType="box" distance="1050" rangeZRotateDegree="30" height="80" width="200" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" />
 					<damageProperty rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="6" />
-					<conditionSkill level="1" skillID="50000007" skillTarget="2" skillOwner="1" />
+					<actionAdditional additionalID="50000007" level="1" skillTarget="2" skillOwner="1" />
 				</attack>
 				<attack point="p2" targetCount="10" direction="1" attacktype="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
 					<rangeProperty rangeType="box" distance="1050" rangeZRotateDegree="-30" height="80" width="200" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" />
 					<damageProperty rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="6" />
-					<conditionSkill level="1" skillID="50000007" skillTarget="2" skillOwner="1" />
+					<actionAdditional additionalID="50000007" level="1" skillTarget="2" skillOwner="1" />
 				</attack>
 			</motion>
 		</level>
@@ -158,7 +158,7 @@
 		</level>
 	</skill>
 	<skill id="60300005" comment="흑화 유페리아">
-		<basic>
+		<basic mainType="30">
 			<ui attackType="2" />
 			<kinds rangeType="1" element="7" />
 		</basic>
@@ -166,11 +166,11 @@
 			<detectProperty rangeType="cylinder" distance="2400" height="300" />
 			<motion>
 				<motionProperty sequenceName="Attack_01_E" motionEffect="NPC/Skill/YuperiaRbladerDark/Eff_YuperiaRbladerDark_Attack_01_E_Cast.xml" faceTarget="0" />
-				<attack point="p0" targetCount="1" cubeMagicPathID="6111" attacktype="2">
+				<attack point="p0" targetCount="1" cubeMagicPathID="6111" attacktype="2" attackMethodType="1">
 					<rangeProperty rangeType="cylinder" distance="2400" height="300" applyTarget="1" castTarget="1" />
 					<arrowProperty explosion="1" nonTarget="1" effect="NPC/Skill/Temp/Eff_Temp.xml" />
 					<damageProperty count="0" rate="1.5" />
-					<actionSkill splash="1" level="2" skillID="60300005" interval="500" immediateActive="1" fireCount="20" useDirection="1" />
+					<actionSkill skillID="60300005" level="2" interval="500" immediateActive="1" fireCount="20" useDirection="1" />
 				</attack>
 			</motion>
 		</level>
@@ -194,53 +194,53 @@
 		<level value="1">
 			<motion>
 				<motionProperty sequenceName="Attack_01_F" motionEffect="NPC/Skill/YuperiaRbladerDark/Eff_YuperiaRbladerDark_Attack_01_F_Cast.xml" faceTarget="0" />
-				<attack point="p0" targetCount="1" magicPathID="6112" attacktype="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+				<attack point="p0" targetCount="1" magicPathID="6112" attacktype="1" attackMethodType="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
 					<rangeProperty rangeType="box" distance="2500" rangeAdd="0.000000,0.000000,300.000000" height="300" width="300" applyTarget="1" castTarget="1" />
 					<arrowProperty explosion="1" nonTarget="1" bounceType="3" bounceCount="5" collision="900.000000,300.000000,50.000000" collisionAdd="900.000000,0.000000,50.000000" effect="NPC/Skill/YuperiaRbladerDark/Eff_YuperiaRbladerDark_Attack_01_F_Ball.xml" effectRemain="NPC/Skill/YuperiaRbladerDark/Eff_YuperiaRbladerDark_Attack_01_F_Ball_Remain.xml" targetKeepEffect="NPC/Common/Eff_NPC_Attack_Hit_01.xml" />
 					<damageProperty rate="2" effectRemain="NPC/Common/Eff_NPC_Attack_Hit_01.xml" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="5" pushdistance="800" pushduration="1" pushUpDistance="300" attackMaterial="1" />
-					<conditionSkill level="1" skillID="62100003" skillTarget="2" skillOwner="1" />
-					<conditionSkill level="1" skillID="62100004" skillTarget="2" skillOwner="1" />
+					<actionAdditional additionalID="62100003" level="1" skillTarget="2" skillOwner="1" />
+					<actionAdditional additionalID="62100004" level="1" skillTarget="2" skillOwner="1" />
 				</attack>
 			</motion>
 		</level>
 		<level value="2">
 			<motion>
 				<motionProperty sequenceName="Attack_01_F" sequenceSpeed="0.6" motionEffect="NPC/Skill/YuperiaRbladerDark/Eff_YuperiaRbladerDark_Attack_01_F_Cast_Slow.xml" faceTarget="0" />
-				<attack point="p0" targetCount="1" magicPathID="6388" attacktype="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+				<attack point="p0" targetCount="1" magicPathID="6388" attacktype="1" attackMethodType="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
 					<rangeProperty rangeType="box" distance="2500" rangeOffset="0.000000,0.000000,30.000000" height="100" width="1400" applyTarget="1" castTarget="1" />
 					<arrowProperty explosion="1" nonTarget="1" bounceType="3" bounceCount="5" collision="900.000000,100.000000,50.000000" collisionAdd="900.000000,0.000000,50.000000" effect="NPC/Skill/YuperiaRbladerDark/Eff_YuperiaRbladerDark_Attack_01_F_Ball.xml" effectRemain="NPC/Skill/YuperiaRbladerDark/Eff_YuperiaRbladerDark_Attack_01_F_Ball_Remain.xml" targetKeepEffect="NPC/Common/Eff_NPC_Attack_Hit_01.xml" />
 					<damageProperty rate="1" effectRemain="NPC/Common/Eff_NPC_Attack_Hit_01.xml" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="5" pushdistance="100" pushduration="1.1" pushUpDistance="400" attackMaterial="1" />
-					<conditionSkill level="1" skillID="50000154" skillTarget="2" skillOwner="1" />
+					<actionAdditional additionalID="50000154" level="1" skillTarget="2" skillOwner="1" />
 				</attack>
 				<attack point="p1" targetCount="1" magicPathID="6388" attacktype="1" attackMethodType="1" brokenOffence="2" brokenForce="2" unrideOnHit="1" compulsionType="1">
 					<rangeProperty rangeType="box" distance="2500" rangeOffset="0.000000,0.000000,30.000000" height="100" width="1400" applyTarget="2" castTarget="1" />
 					<arrowProperty explosion="1" nonTarget="1" bounceType="3" bounceCount="5" collision="900.000000,100.000000,50.000000" collisionAdd="900.000000,0.000000,50.000000" />
 					<damageProperty attackMaterial="1" />
-					<conditionSkill level="1" skillID="50000368" skillTarget="2" skillOwner="1" />
+					<actionAdditional additionalID="50000368" level="1" skillTarget="2" skillOwner="1" />
 				</attack>
 			</motion>
 		</level>
 		<level value="3">
 			<motion>
 				<motionProperty sequenceName="Attack_01_F" sequenceSpeed="0.6" motionEffect="NPC/Skill/YuperiaRbladerDark/Eff_YuperiaRbladerDark_Attack_01_F_Cast_Slow.xml" faceTarget="0" />
-				<attack point="p0" targetCount="1" magicPathID="6388" attacktype="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+				<attack point="p0" targetCount="1" magicPathID="6388" attacktype="1" attackMethodType="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
 					<rangeProperty rangeType="box" distance="2500" rangeOffset="0.000000,0.000000,30.000000" height="100" width="1400" applyTarget="1" castTarget="1" />
 					<arrowProperty explosion="1" nonTarget="1" bounceType="3" bounceCount="5" collision="900.000000,100.000000,50.000000" collisionAdd="900.000000,0.000000,50.000000" effect="NPC/Skill/YuperiaRbladerDark/Eff_YuperiaRbladerDark_Attack_01_F_Ball.xml" effectRemain="NPC/Skill/YuperiaRbladerDark/Eff_YuperiaRbladerDark_Attack_01_F_Ball_Remain.xml" targetKeepEffect="NPC/Common/Eff_NPC_Attack_Hit_01.xml" />
 					<damageProperty rate="1" effectRemain="NPC/Common/Eff_NPC_Attack_Hit_01.xml" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="5" pushdistance="100" pushduration="1.1" pushUpDistance="400" attackMaterial="1" />
-					<conditionSkill level="1" skillID="50000154" skillTarget="2" skillOwner="1" />
+					<actionAdditional additionalID="50000154" level="1" skillTarget="2" skillOwner="1" />
 				</attack>
 				<attack point="p1" targetCount="1" magicPathID="6388" attacktype="1" attackMethodType="1" brokenOffence="2" brokenForce="2" unrideOnHit="1" compulsionType="1">
 					<rangeProperty rangeType="box" distance="2500" rangeOffset="0.000000,0.000000,30.000000" height="100" width="1400" applyTarget="2" castTarget="1" />
 					<arrowProperty explosion="1" nonTarget="1" bounceType="3" bounceCount="5" collision="900.000000,100.000000,50.000000" collisionAdd="900.000000,0.000000,50.000000" />
 					<damageProperty attackMaterial="1" />
-					<conditionSkill level="1" skillID="50000369" skillTarget="2" skillOwner="1" />
+					<actionAdditional additionalID="50000369" level="1" skillTarget="2" skillOwner="1" />
 				</attack>
 			</motion>
 		</level>
 		<level value="12">
 			<motion>
 				<motionProperty sequenceName="Attack_01_F" sequenceSpeed="0.6" motionEffect="NPC/Skill/YuperiaRbladerDark/Eff_YuperiaRbladerDark_Attack_01_F_Cast_Slow.xml" faceTarget="0" />
-				<attack point="p0" targetCount="1" magicPathID="6388" attacktype="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+				<attack point="p0" targetCount="1" magicPathID="6388" attacktype="1" attackMethodType="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
 					<rangeProperty rangeType="box" distance="2500" rangeOffset="0.000000,0.000000,30.000000" height="100" width="1400" applyTarget="1" castTarget="1" />
 					<arrowProperty explosion="1" nonTarget="1" bounceType="3" bounceCount="5" collision="900.000000,100.000000,50.000000" collisionAdd="900.000000,0.000000,50.000000" effect="NPC/Skill/YuperiaRbladerDark/Eff_YuperiaRbladerDark_Attack_01_F_Ball.xml" effectRemain="NPC/Skill/YuperiaRbladerDark/Eff_YuperiaRbladerDark_Attack_01_F_Ball_Remain.xml" targetKeepEffect="NPC/Common/Eff_NPC_Attack_Hit_01.xml" />
 					<damageProperty rate="1" effectRemain="NPC/Common/Eff_NPC_Attack_Hit_01.xml" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
@@ -250,7 +250,7 @@
 		<level value="13">
 			<motion>
 				<motionProperty sequenceName="Attack_01_F" sequenceSpeed="0.6" motionEffect="NPC/Skill/YuperiaRbladerDark/Eff_YuperiaRbladerDark_Attack_01_F_Cast_Slow.xml" faceTarget="0" />
-				<attack point="p0" targetCount="1" magicPathID="6388" attacktype="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+				<attack point="p0" targetCount="1" magicPathID="6388" attacktype="1" attackMethodType="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
 					<rangeProperty rangeType="box" distance="2500" rangeOffset="0.000000,0.000000,30.000000" height="100" width="1400" applyTarget="1" castTarget="1" />
 					<arrowProperty explosion="1" nonTarget="1" bounceType="3" bounceCount="5" collision="900.000000,100.000000,50.000000" collisionAdd="900.000000,0.000000,50.000000" effect="NPC/Skill/YuperiaRbladerDark/Eff_YuperiaRbladerDark_Attack_01_F_Ball.xml" effectRemain="NPC/Skill/YuperiaRbladerDark/Eff_YuperiaRbladerDark_Attack_01_F_Ball_Remain.xml" targetKeepEffect="NPC/Common/Eff_NPC_Attack_Hit_01.xml" />
 					<damageProperty rate="1" effectRemain="NPC/Common/Eff_NPC_Attack_Hit_01.xml" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
@@ -266,42 +266,42 @@
 		<level value="1">
 			<motion>
 				<motionProperty sequenceName="Attack_01_G" motionEffect="NPC/Skill/YuperiaRbladerDark/Eff_YuperiaRbladerDark_Attack_01_G_Cast.xml" faceTarget="0" />
-				<attack point="p0" targetCount="1" cubeMagicPathID="6113" attacktype="1" brokenOffence="1" unrideOnHit="1">
+				<attack point="p0" targetCount="1" cubeMagicPathID="6113" attacktype="1" attackMethodType="1" brokenOffence="1" unrideOnHit="1">
 					<rangeProperty rangeType="box" distance="1500" height="300" width="400" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" effect="NPC/Skill/Temp/Eff_Temp.xml" />
 					<damageProperty rate="1" attackMaterial="1" />
-					<actionSkill splash="1" level="2" skillID="60300013" delay="15000" />
+					<actionSkill skillID="60300013" level="2" delay="15000" />
 				</attack>
-				<attack point="p0" targetCount="1" cubeMagicPathID="6114" attacktype="1" brokenOffence="1" unrideOnHit="1">
+				<attack point="p0" targetCount="1" cubeMagicPathID="6114" attacktype="1" attackMethodType="1" brokenOffence="1" unrideOnHit="1">
 					<rangeProperty rangeType="box" distance="1500" height="300" width="400" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" effect="NPC/Skill/Temp/Eff_Temp.xml" />
 					<damageProperty rate="1" attackMaterial="1" />
-					<actionSkill splash="1" level="2" skillID="60300013" delay="15000" />
+					<actionSkill skillID="60300013" level="2" delay="15000" />
 				</attack>
-				<attack point="p0" targetCount="1" cubeMagicPathID="6115" attacktype="1" brokenOffence="1" unrideOnHit="1">
+				<attack point="p0" targetCount="1" cubeMagicPathID="6115" attacktype="1" attackMethodType="1" brokenOffence="1" unrideOnHit="1">
 					<rangeProperty rangeType="box" distance="1500" height="300" width="400" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" effect="NPC/Skill/Temp/Eff_Temp.xml" />
 					<damageProperty rate="1" attackMaterial="1" />
-					<actionSkill splash="1" level="2" skillID="60300013" delay="15000" />
+					<actionSkill skillID="60300013" level="2" delay="15000" />
 				</attack>
-				<attack point="p0" targetCount="1" cubeMagicPathID="6116" attacktype="1" brokenOffence="1" unrideOnHit="1">
+				<attack point="p0" targetCount="1" cubeMagicPathID="6116" attacktype="1" attackMethodType="1" brokenOffence="1" unrideOnHit="1">
 					<rangeProperty rangeType="box" distance="1500" height="300" width="400" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" effect="NPC/Skill/Temp/Eff_Temp.xml" />
 					<damageProperty rate="1" attackMaterial="1" />
-					<actionSkill splash="1" level="2" skillID="60300013" delay="15000" />
+					<actionSkill skillID="60300013" level="2" delay="15000" />
 				</attack>
-				<attack point="p0" targetCount="1" cubeMagicPathID="6117" attacktype="1" brokenOffence="1" unrideOnHit="1">
+				<attack point="p0" targetCount="1" cubeMagicPathID="6117" attacktype="1" attackMethodType="1" brokenOffence="1" unrideOnHit="1">
 					<rangeProperty rangeType="box" distance="1500" height="300" width="400" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" effect="NPC/Skill/Temp/Eff_Temp.xml" />
 					<damageProperty rate="1" attackMaterial="1" />
-					<actionSkill splash="1" level="2" skillID="60300013" delay="15000" />
+					<actionSkill skillID="60300013" level="2" delay="15000" />
 				</attack>
 			</motion>
 		</level>
 		<level value="2">
 			<motion>
 				<motionProperty sequenceName="Attack_02_G" sequenceSpeed="1.5" motionEffect="NPC/Skill/YuperiaRbladerDark/Eff_YuperiaRbladerDark_Attack_02_G_Cast.xml" faceTarget="0" />
-				<attack point="p0" targetCount="1" attacktype="1" brokenOffence="1" unrideOnHit="1">
+				<attack point="p0" targetCount="1" attacktype="1" attackMethodType="1" brokenOffence="1" unrideOnHit="1">
 					<rangeProperty rangeType="box" distance="1500" height="300" width="400" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" effect="NPC/Skill/Temp/Eff_Temp.xml" />
 					<damageProperty rate="1" attackMaterial="1" />
@@ -338,7 +338,7 @@
 					<rangeProperty rangeType="cylinder" distance="500" height="200" includeCaster="1" applyTarget="2" castTarget="1" />
 					<arrowProperty nonTarget="1" />
 					<damageProperty rate="1" />
-					<conditionSkill level="1" skillID="62100002" skillTarget="1" skillOwner="1" />
+					<actionAdditional additionalID="62100002" level="1" skillTarget="1" skillOwner="1" />
 				</attack>
 			</motion>
 		</level>
@@ -372,9 +372,9 @@
 		</level>
 		<level value="3">
 			<detectProperty rangeType="cylinder" distance="300" height="300" />
-			<conditionSkill level="1" skillID="70002181" skillTarget="1">
+			<actionAdditional additionalID="70002181" level="1" skillTarget="1">
 				<beginCondition allowBattleRidingState="1" />
-			</conditionSkill>
+			</actionAdditional>
 			<motion>
 				<motionProperty sequenceName="Attack_03_J" motionEffect="NPC/Skill/YuperiaRbladerDark/Eff_YuperiaRbladerDark_Attack_03_J_Cast.xml" faceTarget="0" />
 				<attack point="p0" targetCount="20" attacktype="1" hitImmuneBreak="1" brokenOffence="1" brokenForce="1" unrideOnHit="1">
@@ -386,9 +386,9 @@
 		</level>
 		<level value="4">
 			<detectProperty rangeType="cylinder" distance="1100" rangeAdd="0.000000,0.000000,310.000000" height="380" />
-			<conditionSkill level="3" skillID="50000264" skillTarget="1">
+			<actionAdditional additionalID="50000264" level="3" skillTarget="1">
 				<beginCondition allowBattleRidingState="1" />
-			</conditionSkill>
+			</actionAdditional>
 			<motion>
 				<motionProperty sequenceName="Attack_03_J" motionEffect="NPC/Skill/YuperiaRbladerDark/Eff_YuperiaRbladerDark_Attack_03_J_Cast_Small.xml" faceTarget="0" />
 				<attack point="p0" targetCount="20" attacktype="1" hitImmuneBreak="1" brokenOffence="1" brokenForce="1" unrideOnHit="1" compulsionType="1,3">
@@ -467,7 +467,7 @@
 		</level>
 	</skill>
 	<skill id="60300013" comment="흑화 유페리아">
-		<basic>
+		<basic mainType="30">
 			<ui attackType="2" />
 			<kinds element="7" />
 		</basic>
@@ -479,7 +479,7 @@
 					<rangeProperty rangeType="cylinder" distance="50" height="50" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" />
 					<damageProperty count="0" rate="0.01" attackMaterial="1" />
-					<actionSkill splash="1" level="1" skillID="99999765" delay="500" />
+					<actionSkill skillID="99999765" level="1" delay="500" />
 				</attack>
 			</motion>
 		</level>
@@ -497,7 +497,7 @@
 					<rangeProperty rangeType="box" distance="150" height="150" width="150" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" />
 					<damageProperty rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
-					<conditionSkill level="1" skillID="62100022" skillTarget="2" skillOwner="1" />
+					<actionAdditional additionalID="62100022" level="1" skillTarget="2" skillOwner="1" />
 				</attack>
 			</motion>
 		</level>
@@ -509,7 +509,7 @@
 					<rangeProperty rangeType="box" distance="150" height="150" width="150" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" />
 					<damageProperty effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" damageByTargetMaxHP="1" attackMaterial="1" />
-					<conditionSkill level="1" skillID="62100023" skillTarget="1" skillOwner="1" />
+					<actionAdditional additionalID="62100023" level="1" skillTarget="1" skillOwner="1" />
 				</attack>
 			</motion>
 		</level>
@@ -527,7 +527,7 @@
 					<rangeProperty rangeType="cylinder" distance="500" height="200" includeCaster="1" applyTarget="2" castTarget="1" />
 					<arrowProperty nonTarget="1" />
 					<damageProperty rate="1" />
-					<conditionSkill level="1" skillID="62100008" skillTarget="1" skillOwner="1" />
+					<actionAdditional additionalID="62100008" level="1" skillTarget="1" skillOwner="1" />
 				</attack>
 			</motion>
 		</level>
@@ -545,7 +545,7 @@
 					<rangeProperty rangeType="cylinder" distance="500" height="200" includeCaster="1" applyTarget="2" castTarget="1" />
 					<arrowProperty nonTarget="1" />
 					<damageProperty rate="1" />
-					<conditionSkill level="1" skillID="62100008" skillTarget="1" skillOwner="1" />
+					<actionAdditional additionalID="62100008" level="1" skillTarget="1" skillOwner="1" />
 				</attack>
 			</motion>
 		</level>
@@ -596,19 +596,19 @@
 					<rangeProperty rangeType="box" distance="1050" height="80" width="200" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" />
 					<damageProperty rate="0.6" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="100" pushduration="0.2" attackMaterial="6" />
-					<conditionSkill level="1" skillID="50000013" skillTarget="2" skillOwner="1" />
+					<actionAdditional additionalID="50000013" level="1" skillTarget="2" skillOwner="1" />
 				</attack>
 				<attack point="p1" targetCount="10" direction="1" attacktype="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
 					<rangeProperty rangeType="box" distance="1050" rangeZRotateDegree="30" height="80" width="200" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" />
 					<damageProperty rate="0.6" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="100" pushduration="0.2" attackMaterial="6" />
-					<conditionSkill level="1" skillID="50000013" skillTarget="2" skillOwner="1" />
+					<actionAdditional additionalID="50000013" level="1" skillTarget="2" skillOwner="1" />
 				</attack>
 				<attack point="p2" targetCount="10" direction="1" attacktype="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
 					<rangeProperty rangeType="box" distance="1050" rangeZRotateDegree="-30" height="80" width="200" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" />
 					<damageProperty rate="0.6" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="100" pushduration="0.2" attackMaterial="6" />
-					<conditionSkill level="1" skillID="50000013" skillTarget="2" skillOwner="1" />
+					<actionAdditional additionalID="50000013" level="1" skillTarget="2" skillOwner="1" />
 				</attack>
 			</motion>
 		</level>
@@ -740,7 +740,7 @@
 		<level value="1">
 			<motion>
 				<motionProperty sequenceName="Attack_01_D" motionEffect="NPC/Skill/RenduebianRbladerDark/Eff_RenduebianRbladerDark_01_D_Cast.xml" loopEffect="NPC/Skill/RenduebianRbladerDark/Eff_RenduebianRbladerDark_01_D_Ready.xml" faceTarget="0" doesPlayIdleOnSkillEnd="false" />
-				<attack point="p0" attacktype="1" unrideOnHit="1">
+				<attack point="p0" attacktype="1" attackMethodType="1" unrideOnHit="1">
 					<rangeProperty rangeType="box" distance="1200" height="320" width="500" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" effect="NPC/Skill/Temp/Eff_Temp.xml" />
 					<damageProperty count="0" attackMaterial="2" />
@@ -751,11 +751,11 @@
 			<push up="200" />
 			<motion>
 				<motionProperty sequenceName="Attack_02_D" motionEffect="NPC/Skill/RenduebianRbladerDark/Eff_RenduebianRbladerDark_02_D_Cast.xml" loopEffect="NPC/Skill/RenduebianRbladerDark/Eff_RenduebianRbladerDark_02_D_Loop.xml" movedistance="1700" moveEaseType="2" faceTarget="0" doesPlayIdleOnSkillEnd="false" />
-				<attack point="p0" targetCount="1" cubeMagicPathID="6151" attacktype="1" brokenOffence="1" unrideOnHit="1" compulsionType="1,3">
+				<attack point="p0" targetCount="1" cubeMagicPathID="6151" attacktype="1" attackMethodType="1" brokenOffence="1" unrideOnHit="1" compulsionType="1,3">
 					<rangeProperty rangeType="box" distance="200" height="320" width="250" includeCaster="1" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" effect="NPC/Skill/DevilHugeRed/Eff_DevilHugeRed_Bore_02_B_Ball.xml" />
 					<damageProperty rate="2.1" effectRemain="CH/Skill/RuneBlader/Eff_RuneBlader_GroundDivide_HitRemain_01.xml" push="1" pushdistance="400" pushduration="0.3" pushEaseType="1" pushUpDistance="150" attackMaterial="1" />
-					<actionSkill splash="1" level="1" skillID="99999763" delay="4294966396" interval="1000" fireCount="23" />
+					<actionSkill skillID="99999763" level="1" delay="4294966396" interval="1000" fireCount="23" />
 				</attack>
 				<attack point="p1" targetCount="1" magicPathID="6150" attacktype="1" brokenOffence="1" unrideOnHit="1" compulsionType="1,3">
 					<rangeProperty rangeType="box" distance="450" rangeOffset="0.000000,50.000000,0.000000" height="320" width="250" applyTarget="1" castTarget="1" />
@@ -807,7 +807,7 @@
 			<detectProperty rangeType="box" distance="300" height="320" width="500" />
 			<motion>
 				<motionProperty sequenceName="Attack_01_E" motionEffect="NPC/Skill/RenduebianRbladerDark/Eff_RenduebianRbladerDark_01_E_Cast.xml" faceTarget="0" doesPlayIdleOnSkillEnd="false" />
-				<attack point="p0" attacktype="1" brokenOffence="1" unrideOnHit="1">
+				<attack point="p0" attacktype="1" attackMethodType="1" brokenOffence="1" unrideOnHit="1">
 					<rangeProperty rangeType="box" distance="500" height="320" width="500" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" effect="NPC/Skill/Temp/Eff_Temp.xml" />
 					<damageProperty rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
@@ -830,7 +830,7 @@
 			<detectProperty rangeType="box" />
 			<motion>
 				<motionProperty sequenceName="Attack_03_E" motionEffect="NPC/Skill/RenduebianRbladerDark/Eff_RenduebianRbladerDark_03_E_Cast.xml" faceTarget="0" doesPlayIdleOnSkillEnd="false" />
-				<attack point="p0" attacktype="1" brokenOffence="1" unrideOnHit="1">
+				<attack point="p0" attacktype="1" attackMethodType="1" brokenOffence="1" unrideOnHit="1">
 					<rangeProperty rangeType="box" distance="500" height="320" width="500" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" effect="NPC/Skill/Temp/Eff_Temp.xml" />
 					<damageProperty rate="1" attackMaterial="1" />
@@ -858,11 +858,11 @@
 			<detectProperty rangeType="box" distance="600" height="1000" width="200" />
 			<motion>
 				<motionProperty sequenceName="Attack_01_F" motionEffect="NPC/Skill/RenduebianRbladerDark/Eff_RenduebianRbladerDark_01_F_Cast.xml" faceTarget="0" doesPlayIdleOnSkillEnd="false" />
-				<attack point="p0" targetCount="1" magicPathID="6152" cubeMagicPathID="6155" attacktype="2" unrideOnHit="1">
+				<attack point="p0" targetCount="1" magicPathID="6152" cubeMagicPathID="6155" attacktype="2" attackMethodType="1" unrideOnHit="1">
 					<rangeProperty rangeType="box" distance="850" height="35" width="800" applyTarget="1" castTarget="1" />
 					<arrowProperty explosion="1" nonTarget="1" collision="100.000000,100.000000,50.000000" collisionAdd="0.000000,200.000000,20.000000" effect="NPC/Skill/RenduebianRbladerDark/Eff_RenduebianRbladerDark_01_F_Throw_Ball.xml" effectRemain="NPC/Skill/RenduebianRbladerDark/Eff_RenduebianRbladerDark_01_F_Throw_Ball_Remain.xml" targetKeepEffect="NPC/Common/Eff_NPC_Attack_Hit_01.xml" />
 					<damageProperty rate="1" effectRemain="NPC/Common/Eff_NPC_Attack_Hit_01.xml" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" />
-					<actionSkill splash="1" level="1" skillID="99999762" delay="1300" interval="500" fireCount="3" />
+					<actionSkill skillID="99999762" level="1" delay="1300" interval="500" fireCount="3" />
 				</attack>
 			</motion>
 		</level>
@@ -870,11 +870,11 @@
 			<detectProperty rangeType="box" distance="600" height="1000" width="200" />
 			<motion>
 				<motionProperty sequenceName="Attack_02_F" motionEffect="NPC/Skill/RenduebianRbladerDark/Eff_RenduebianRbladerDark_02_F_Cast.xml" faceTarget="0" />
-				<attack point="p0" targetCount="1" magicPathID="6153" cubeMagicPathID="6155" attacktype="2" unrideOnHit="1">
+				<attack point="p0" targetCount="1" magicPathID="6153" cubeMagicPathID="6155" attacktype="2" attackMethodType="1" unrideOnHit="1">
 					<rangeProperty rangeType="box" distance="850" height="35" width="800" applyTarget="1" castTarget="1" />
 					<arrowProperty explosion="1" nonTarget="1" collision="100.000000,100.000000,50.000000" collisionAdd="0.000000,200.000000,20.000000" effect="NPC/Skill/RenduebianRbladerDark/Eff_RenduebianRbladerDark_01_F_Throw_Ball.xml" effectRemain="NPC/Skill/RenduebianRbladerDark/Eff_RenduebianRbladerDark_01_F_Throw_Ball_Remain.xml" targetKeepEffect="NPC/Common/Eff_NPC_Attack_Hit_01.xml" />
 					<damageProperty rate="1" effectRemain="NPC/Common/Eff_NPC_Attack_Hit_01.xml" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" />
-					<actionSkill splash="1" level="2" skillID="99999762" delay="1300" interval="500" fireCount="6" />
+					<actionSkill skillID="99999762" level="2" delay="1300" interval="500" fireCount="6" />
 				</attack>
 			</motion>
 		</level>
@@ -882,11 +882,11 @@
 			<detectProperty rangeType="box" distance="600" height="1000" width="200" />
 			<motion>
 				<motionProperty sequenceName="Attack_03_F" motionEffect="NPC/Skill/RenduebianRbladerDark/Eff_RenduebianRbladerDark_03_F_Cast.xml" faceTarget="0" />
-				<attack point="p0" targetCount="1" magicPathID="6154" cubeMagicPathID="6155" attacktype="2" unrideOnHit="1">
+				<attack point="p0" targetCount="1" magicPathID="6154" cubeMagicPathID="6155" attacktype="2" attackMethodType="1" unrideOnHit="1">
 					<rangeProperty rangeType="box" distance="850" height="35" width="800" applyTarget="1" castTarget="1" />
 					<arrowProperty explosion="1" collision="100.000000,100.000000,50.000000" collisionAdd="0.000000,200.000000,20.000000" effect="NPC/Skill/RenduebianRbladerDark/Eff_RenduebianRbladerDark_01_F_Throw_Ball.xml" effectRemain="NPC/Skill/RenduebianRbladerDark/Eff_RenduebianRbladerDark_01_F_Throw_Ball_Remain.xml" targetKeepEffect="NPC/Common/Eff_NPC_Attack_Hit_01.xml" />
 					<damageProperty rate="1" effectRemain="NPC/Common/Eff_NPC_Attack_Hit_01.xml" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" />
-					<actionSkill splash="1" level="3" skillID="99999762" delay="1300" interval="500" fireCount="12" />
+					<actionSkill skillID="99999762" level="3" delay="1300" interval="500" fireCount="12" />
 				</attack>
 			</motion>
 		</level>
@@ -915,7 +915,7 @@
 					<rangeProperty rangeType="box" distance="400" height="250" width="200" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" />
 					<damageProperty rate="0.5" effectHit="NPC/Skill/RenduebianRbladerDark/Eff_RenduebianRbladerDark_01_G_Hit.xml" attackMaterial="6" />
-					<conditionSkill level="1" skillID="62100025" skillTarget="2" skillOwner="1" />
+					<actionAdditional additionalID="62100025" level="1" skillTarget="2" skillOwner="1" />
 				</attack>
 			</motion>
 		</level>
@@ -927,13 +927,13 @@
 					<rangeProperty rangeType="box" distance="400" height="350" width="200" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" />
 					<damageProperty rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="6" />
-					<conditionSkill level="1" skillID="62100011" skillTarget="2" skillOwner="1" />
+					<actionAdditional additionalID="62100011" level="1" skillTarget="2" skillOwner="1" />
 				</attack>
 				<attack point="p0" targetCount="1" attacktype="1" brokenOffence="1" brokenForce="1" unrideOnHit="1" compulsionType="1,3" grabTargetType="2">
 					<rangeProperty rangeType="box" distance="400" height="350" width="200" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" />
 					<damageProperty rate="1" attackMaterial="6" />
-					<conditionSkill level="1" skillID="62100012" skillTarget="2" skillOwner="1" />
+					<actionAdditional additionalID="62100012" level="1" skillTarget="2" skillOwner="1" />
 				</attack>
 			</motion>
 		</level>
@@ -961,7 +961,7 @@
 					<rangeProperty rangeType="cylinder" distance="500" height="200" includeCaster="1" applyTarget="2" castTarget="1" />
 					<arrowProperty nonTarget="1" />
 					<damageProperty rate="1" />
-					<conditionSkill level="1" skillID="62100009" skillTarget="1" skillOwner="1" />
+					<actionAdditional additionalID="62100009" level="1" skillTarget="1" skillOwner="1" />
 				</attack>
 			</motion>
 		</level>
@@ -1030,7 +1030,7 @@
 					<rangeProperty rangeType="cylinder" distance="500" height="200" includeCaster="1" applyTarget="2" castTarget="1" />
 					<arrowProperty nonTarget="1" />
 					<damageProperty rate="1" />
-					<conditionSkill level="1" skillID="62100017" skillTarget="1" skillOwner="1" />
+					<actionAdditional additionalID="62100017" level="1" skillTarget="1" skillOwner="1" />
 				</attack>
 			</motion>
 		</level>
@@ -1117,7 +1117,7 @@
 					<rangeProperty rangeType="cylinder" distance="1500" rangeAdd="0.000000,150.000000,0.000000" rangeOffset="0.000000,200.000000,0.000000" height="600" includeCaster="1" applyTarget="2" castTarget="1" />
 					<arrowProperty nonTarget="1" />
 					<damageProperty count="0" attackMaterial="1" />
-					<conditionSkill level="1" skillID="62100015" skillTarget="1" skillOwner="1" />
+					<actionAdditional additionalID="62100015" level="1" skillTarget="1" skillOwner="1" />
 				</attack>
 			</motion>
 		</level>
@@ -1147,7 +1147,7 @@
 					<rangeProperty rangeType="cylinder" distance="1500" rangeAdd="0.000000,150.000000,0.000000" rangeOffset="0.000000,200.000000,0.000000" height="600" includeCaster="1" applyTarget="2" castTarget="1" />
 					<arrowProperty nonTarget="1" />
 					<damageProperty count="0" attackMaterial="1" />
-					<conditionSkill level="1" skillID="62100015" skillTarget="1" skillOwner="1" />
+					<actionAdditional additionalID="62100015" level="1" skillTarget="1" skillOwner="1" />
 				</attack>
 			</motion>
 		</level>
@@ -1161,7 +1161,7 @@
 			<detectProperty rangeType="cylinder" distance="1100" rangeOffset="0.000000,0.000000,50.000000" height="280" />
 			<motion>
 				<motionProperty sequenceName="Attack_01_J" motionEffect="NPC/Skill/RenduebianRbladerDark/Eff_RenduebianRbladerDark_Pattern_Attack_01_J.xml" faceTarget="0" doesPlayIdleOnSkillEnd="false" />
-				<attack point="p0" direction="0" attacktype="1" brokenOffence="1" brokenForce="1" unrideOnHit="1">
+				<attack point="p0" direction="0" attacktype="1" attackMethodType="1" brokenOffence="1" brokenForce="1" unrideOnHit="1">
 					<rangeProperty rangeType="cylinder" distance="1100" rangeOffset="0.000000,0.000000,50.000000" height="280" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" effect="NPC/Skill/Temp/Eff_Temp.xml" />
 					<damageProperty count="0" attackMaterial="1" />
@@ -1172,7 +1172,7 @@
 			<detectProperty rangeType="cylinder" distance="1100" rangeOffset="0.000000,0.000000,50.000000" height="280" />
 			<motion>
 				<motionProperty sequenceName="Attack_Idle_A" motionEffect="NPC/Skill/RenduebianRbladerDark/Eff_RenduebianRbladerDark_Pattern_Attack_Idle_A.xml" faceTarget="0" doesPlayIdleOnSkillEnd="false" />
-				<attack point="p0" direction="0" attacktype="1" brokenOffence="1" unrideOnHit="1">
+				<attack point="p0" direction="0" attacktype="1" attackMethodType="1" brokenOffence="1" unrideOnHit="1">
 					<rangeProperty rangeType="cylinder" distance="1100" rangeOffset="0.000000,0.000000,50.000000" height="280" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" effect="NPC/Skill/Temp/Eff_Temp.xml" />
 					<damageProperty count="0" />
@@ -1181,9 +1181,9 @@
 		</level>
 		<level value="3">
 			<detectProperty rangeType="cylinder" distance="1100" rangeAdd="0.000000,0.000000,310.000000" height="380" />
-			<conditionSkill level="2" skillID="50000264" skillTarget="1">
+			<actionAdditional additionalID="50000264" level="2" skillTarget="1">
 				<beginCondition allowBattleRidingState="1" />
-			</conditionSkill>
+			</actionAdditional>
 			<motion>
 				<motionProperty sequenceName="Attack_01_K" motionEffect="NPC/Skill/RenduebianRbladerDark/Eff_RenduebianRbladerDark_Pattern_Attack_01_K_Burst.xml" faceTarget="0" doesPlayIdleOnSkillEnd="false" />
 				<attack point="p0" targetCount="20" direction="0" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="3" unrideOnHit="1" compulsionType="1,3">
@@ -1197,7 +1197,7 @@
 			<detectProperty rangeType="cylinder" distance="1100" rangeOffset="0.000000,0.000000,50.000000" height="280" />
 			<motion>
 				<motionProperty sequenceName="Stun_A" motionEffect="NPC/Skill/RenduebianRbladerDark/Eff_RenduebianRbladerDark_Pattern_Stun.xml" faceTarget="0" doesPlayIdleOnSkillEnd="false" />
-				<attack point="p0" direction="0" attacktype="1" brokenOffence="1" unrideOnHit="1">
+				<attack point="p0" direction="0" attacktype="1" attackMethodType="1" brokenOffence="1" unrideOnHit="1">
 					<rangeProperty rangeType="cylinder" distance="1100" rangeOffset="0.000000,0.000000,50.000000" height="280" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" effect="NPC/Skill/Temp/Eff_Temp.xml" />
 					<damageProperty count="0" attackMaterial="1" />
@@ -1214,7 +1214,7 @@
 			<detectProperty rangeType="box" distance="450" height="120" width="500" />
 			<motion>
 				<motionProperty sequenceName="Attack_01_E" motionEffect="NPC/Skill/RenduebianRbladerDark/Eff_RenduebianRbladerDark_01_E_Cast.xml" faceTarget="0" />
-				<attack point="p0" attacktype="1" brokenOffence="1" unrideOnHit="1">
+				<attack point="p0" attacktype="1" attackMethodType="1" brokenOffence="1" unrideOnHit="1">
 					<rangeProperty rangeType="box" distance="450" height="120" width="500" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" effect="NPC/Skill/Temp/Eff_Temp.xml" />
 					<damageProperty rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
@@ -1241,7 +1241,7 @@
 			<detectProperty rangeType="box" distance="800" height="120" width="500" />
 			<motion>
 				<motionProperty sequenceName="Attack_01_E" motionEffect="NPC/Skill/RenduebianRbladerDark/Eff_RenduebianRbladerDark_01_E_Cast.xml" faceTarget="0" />
-				<attack point="p0" attacktype="1" brokenOffence="1" unrideOnHit="1">
+				<attack point="p0" attacktype="1" attackMethodType="1" brokenOffence="1" unrideOnHit="1">
 					<rangeProperty rangeType="box" distance="750" height="120" width="600" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" effect="NPC/Skill/Temp/Eff_Temp.xml" />
 					<damageProperty rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
@@ -1268,7 +1268,7 @@
 			<detectProperty rangeType="box" distance="450" height="120" width="500" />
 			<motion>
 				<motionProperty sequenceName="Attack_01_E" motionEffect="NPC/Skill/RenduebianRbladerDark/Eff_RenduebianRbladerDark_01_E_Cast.xml" faceTarget="0" />
-				<attack point="p0" attacktype="1" brokenOffence="1" unrideOnHit="1">
+				<attack point="p0" attacktype="1" attackMethodType="1" brokenOffence="1" unrideOnHit="1">
 					<rangeProperty rangeType="box" distance="450" height="120" width="500" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" effect="NPC/Skill/Temp/Eff_Temp.xml" />
 					<damageProperty rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
@@ -1295,7 +1295,7 @@
 			<detectProperty rangeType="box" distance="800" height="120" width="500" />
 			<motion>
 				<motionProperty sequenceName="Attack_01_E" motionEffect="NPC/Skill/RenduebianRbladerDark/Eff_RenduebianRbladerDark_01_E_Cast.xml" faceTarget="0" />
-				<attack point="p0" attacktype="1" brokenOffence="1" unrideOnHit="1">
+				<attack point="p0" attacktype="1" attackMethodType="1" brokenOffence="1" unrideOnHit="1">
 					<rangeProperty rangeType="box" distance="750" height="120" width="600" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" effect="NPC/Skill/Temp/Eff_Temp.xml" />
 					<damageProperty rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
@@ -1327,13 +1327,13 @@
 			<detectProperty rangeType="box" distance="400" height="200" width="600" />
 			<motion>
 				<motionProperty motionEffect="NPC/Skill/Orde/Eff_Orde_IceSphere_A_Cast.xml" faceTarget="0" />
-				<attack point="p0" targetCount="4" magicPathID="7101" attacktype="2" unrideOnHit="1">
+				<attack point="p0" targetCount="4" magicPathID="7101" attacktype="2" attackMethodType="1" unrideOnHit="1">
 					<rangeProperty rangeType="box" distance="750" height="200" width="600" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" collision="70.000000,70.000000,70.000000" effect="NPC/Skill/Orde/Eff_Orde_IceSphere_A_Ball.xml" effectRemain="NPC/Skill/Orde/Eff_Orde_IceSphere_A_Ball_Remain.xml" />
 					<damageProperty effectHit="NPC/Skill/Orde/Eff_Orde_IceSphere_A_Ball_Hit.xml" attackMaterial="1000" />
-					<conditionSkill level="1" skillID="62100203" skillTarget="2" skillOwner="1" />
-					<conditionSkill level="1" skillID="62100204" skillTarget="2" skillOwner="1" />
-					<conditionSkill level="1" skillID="62100207" skillTarget="2" skillOwner="1" />
+					<actionAdditional additionalID="62100203" level="1" skillTarget="2" skillOwner="1" />
+					<actionAdditional additionalID="62100204" level="1" skillTarget="2" skillOwner="1" />
+					<actionAdditional additionalID="62100207" level="1" skillTarget="2" skillOwner="1" />
 				</attack>
 			</motion>
 		</level>
@@ -1346,13 +1346,13 @@
 			<detectProperty rangeType="box" distance="400" height="200" width="600" />
 			<motion>
 				<motionProperty motionEffect="NPC/Skill/Orde/Eff_Orde_IceSphere_A_Cast.xml" faceTarget="0" />
-				<attack point="p0" targetCount="7" magicPathID="7102" attacktype="2" unrideOnHit="1">
+				<attack point="p0" targetCount="7" magicPathID="7102" attacktype="2" attackMethodType="1" unrideOnHit="1">
 					<rangeProperty rangeType="box" distance="750" height="200" width="600" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" collision="70.000000,70.000000,70.000000" effect="NPC/Skill/BlackRobeMagician/Eff_BlackRobeMagician_Attack_01_A_Ball.xml" effectRemain="NPC/Skill/Orde/Eff_Orde_IceSphere_A_Ball_Remain.xml" />
 					<damageProperty effectHit="NPC/Skill/Orde/Eff_Orde_IceSphere_A_Ball_Hit.xml" attackMaterial="1000" />
-					<conditionSkill level="1" skillID="62100205" skillTarget="2" skillOwner="1" />
-					<conditionSkill level="1" skillID="62100206" skillTarget="2" skillOwner="1" />
-					<conditionSkill level="1" skillID="62100208" skillTarget="2" skillOwner="1" />
+					<actionAdditional additionalID="62100205" level="1" skillTarget="2" skillOwner="1" />
+					<actionAdditional additionalID="62100206" level="1" skillTarget="2" skillOwner="1" />
+					<actionAdditional additionalID="62100208" level="1" skillTarget="2" skillOwner="1" />
 				</attack>
 			</motion>
 		</level>
@@ -1365,7 +1365,7 @@
 			<detectProperty rangeType="box" distance="400" height="200" width="600" />
 			<motion>
 				<motionProperty sequenceName="Attack_01_H" motionEffect="NPC/Skill/Timaion/Eff_Timaion_Attack_01_H_Cast.xml" faceTarget="0" />
-				<attack point="p0" targetCount="1" magicPathID="7103" attacktype="2" unrideOnHit="1">
+				<attack point="p0" targetCount="1" magicPathID="7103" attacktype="2" attackMethodType="1" unrideOnHit="1">
 					<rangeProperty rangeType="box" distance="750" height="200" width="600" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" bounceType="3" bounceCount="10" collision="450.000000,50.000000,150.000000" collisionAdd="0.000000,100.000000,0.000000" effect="NPC/Skill/Timaion/Eff_Timaion_Attack_01_H_Ball.xml" />
 					<damageProperty rate="1.1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="101" />
@@ -1381,7 +1381,7 @@
 			<detectProperty rangeType="box" distance="400" height="200" width="600" />
 			<motion>
 				<motionProperty sequenceName="Attack_01_I" motionEffect="NPC/Skill/Timaion/Eff_Timaion_Attack_01_I_Cast.xml" faceTarget="0" />
-				<attack point="p0" targetCount="1" magicPathID="7104" attacktype="2" unrideOnHit="1">
+				<attack point="p0" targetCount="1" magicPathID="7104" attacktype="2" attackMethodType="1" unrideOnHit="1">
 					<rangeProperty rangeType="box" distance="750" height="200" width="600" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" bounceType="3" bounceCount="10" collision="450.000000,50.000000,150.000000" collisionAdd="0.000000,100.000000,0.000000" effect="NPC/Skill/Timaion/Eff_Timaion_Attack_01_I_Ball.xml" />
 					<damageProperty rate="1.1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="101" />
@@ -1397,7 +1397,7 @@
 			<detectProperty rangeType="box" distance="400" height="200" width="600" />
 			<motion>
 				<motionProperty sequenceName="Attack_01_H" motionEffect="NPC/Skill/Timaion/Eff_Timaion_Attack_01_H_Cast02.xml" faceTarget="0" />
-				<attack point="p0" targetCount="1" magicPathID="7105" attacktype="2" unrideOnHit="1">
+				<attack point="p0" targetCount="1" magicPathID="7105" attacktype="2" attackMethodType="1" unrideOnHit="1">
 					<rangeProperty rangeType="box" distance="750" height="200" width="600" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" bounceType="3" bounceCount="10" collision="450.000000,50.000000,150.000000" collisionAdd="0.000000,100.000000,0.000000" effect="NPC/Skill/Timaion/Eff_Timaion_Attack_01_H_Ball.xml" />
 					<damageProperty rate="1.1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="101" />
@@ -1413,7 +1413,7 @@
 			<detectProperty rangeType="box" distance="400" height="200" width="600" />
 			<motion>
 				<motionProperty sequenceName="Attack_01_I" motionEffect="NPC/Skill/Timaion/Eff_Timaion_Attack_01_I_Cast02.xml" faceTarget="0" />
-				<attack point="p0" targetCount="1" magicPathID="7106" attacktype="2" unrideOnHit="1">
+				<attack point="p0" targetCount="1" magicPathID="7106" attacktype="2" attackMethodType="1" unrideOnHit="1">
 					<rangeProperty rangeType="box" distance="750" height="200" width="600" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" bounceType="3" bounceCount="10" collision="450.000000,50.000000,150.000000" collisionAdd="0.000000,100.000000,0.000000" effect="NPC/Skill/Timaion/Eff_Timaion_Attack_01_I_Ball.xml" />
 					<damageProperty rate="1.1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="101" />
@@ -1433,7 +1433,7 @@
 					<rangeProperty rangeType="box" distance="7000" height="900" width="1350" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" />
 					<damageProperty attackMaterial="1000" />
-					<actionSkill splash="1" level="1" skillID="60300208" delay="1500" removeDelay="2000" />
+					<actionSkill skillID="60300208" level="1" delay="1500" removeDelay="2000" />
 				</attack>
 			</motion>
 		</level>
@@ -1445,13 +1445,13 @@
 					<rangeProperty rangeType="box" distance="7000" height="900" width="1350" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" />
 					<damageProperty attackMaterial="1000" />
-					<actionSkill splash="1" level="1" skillID="60300208" delay="1500" removeDelay="2000" />
+					<actionSkill skillID="60300208" level="1" delay="1500" removeDelay="2000" />
 				</attack>
 			</motion>
 		</level>
 	</skill>
 	<skill id="60300208" comment="티마이온">
-		<basic>
+		<basic mainType="30">
 			<ui attackType="2" />
 		</basic>
 		<level value="1">
@@ -1461,7 +1461,7 @@
 				<attack point="p0" targetCount="50" attacktype="2" unrideOnHit="1">
 					<rangeProperty rangeType="box" distance="50" rangeAdd="0.000000,50.000000,0.000000" height="300" width="100" applyTarget="1" castTarget="1" />
 					<damageProperty rate="0.7" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="101" />
-					<conditionSkill level="1" skillID="62100217" skillTarget="2" skillOwner="1" />
+					<actionAdditional additionalID="62100217" level="1" skillTarget="2" skillOwner="1" />
 				</attack>
 			</motion>
 		</level>
@@ -1506,12 +1506,12 @@
 			<detectProperty rangeType="box" distance="1350" height="900" width="1350" />
 			<motion>
 				<motionProperty sequenceName="Attack_01_D" motionEffect="NPC/Skill/Timaion/Eff_Timaion_Attack_01_D_Cast.xml" faceTarget="0" />
-				<attack point="p0" targetCount="6" magicPathID="7110" attacktype="2" unrideOnHit="1">
+				<attack point="p0" targetCount="6" magicPathID="7110" attacktype="2" attackMethodType="1" unrideOnHit="1">
 					<rangeProperty rangeType="box" distance="1350" height="900" width="1350" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" collision="50.000000,20.000000,150.000000" collisionAdd="0.000000,30.000000,0.000000" effect="NPC/Skill/Timaion/Eff_Timaion_Attack_01_D_Ball.xml" effectRemain="NPC/Skill/Timaion/Eff_Timaion_Attack_01_D_Ball_Remain.xml" />
 					<damageProperty effectHit="NPC/Skill/Timaion/Eff_Timaion_Attack_01_D_Ball_Hit.xml" attackMaterial="1000" />
-					<conditionSkill level="1" skillID="62100209" skillTarget="2" skillOwner="1" />
-					<conditionSkill level="1" skillID="62100207" skillTarget="2" skillOwner="1" />
+					<actionAdditional additionalID="62100209" level="1" skillTarget="2" skillOwner="1" />
+					<actionAdditional additionalID="62100207" level="1" skillTarget="2" skillOwner="1" />
 				</attack>
 			</motion>
 		</level>
@@ -1519,12 +1519,12 @@
 			<detectProperty rangeType="box" distance="1350" height="900" width="1350" />
 			<motion>
 				<motionProperty sequenceName="Attack_01_D" motionEffect="NPC/Skill/Timaion/Eff_Timaion_Attack_01_D_Cast.xml" faceTarget="0" />
-				<attack point="p0" targetCount="6" magicPathID="7111" attacktype="2" unrideOnHit="1">
+				<attack point="p0" targetCount="6" magicPathID="7111" attacktype="2" attackMethodType="1" unrideOnHit="1">
 					<rangeProperty rangeType="box" distance="1350" height="900" width="1350" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" collision="50.000000,20.000000,150.000000" collisionAdd="0.000000,30.000000,0.000000" effect="NPC/Skill/Timaion/Eff_Timaion_Attack_01_D_Ball.xml" effectRemain="NPC/Skill/Timaion/Eff_Timaion_Attack_01_D_Ball_Remain.xml" />
 					<damageProperty effectHit="NPC/Skill/Timaion/Eff_Timaion_Attack_01_D_Ball_Hit.xml" attackMaterial="1000" />
-					<conditionSkill level="1" skillID="62100209" skillTarget="2" skillOwner="1" />
-					<conditionSkill level="1" skillID="62100207" skillTarget="2" skillOwner="1" />
+					<actionAdditional additionalID="62100209" level="1" skillTarget="2" skillOwner="1" />
+					<actionAdditional additionalID="62100207" level="1" skillTarget="2" skillOwner="1" />
 				</attack>
 			</motion>
 		</level>
@@ -1532,12 +1532,12 @@
 			<detectProperty rangeType="box" distance="1350" height="900" width="1350" />
 			<motion>
 				<motionProperty sequenceName="Attack_01_D" motionEffect="NPC/Skill/Timaion/Eff_Timaion_Attack_01_D_Cast.xml" faceTarget="0" />
-				<attack point="p0" targetCount="6" magicPathID="7112" attacktype="2" unrideOnHit="1">
+				<attack point="p0" targetCount="6" magicPathID="7112" attacktype="2" attackMethodType="1" unrideOnHit="1">
 					<rangeProperty rangeType="box" distance="1350" height="900" width="1350" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" collision="50.000000,20.000000,150.000000" collisionAdd="0.000000,30.000000,0.000000" effect="NPC/Skill/Timaion/Eff_Timaion_Attack_01_D_Ball.xml" effectRemain="NPC/Skill/Timaion/Eff_Timaion_Attack_01_D_Ball_Remain.xml" />
 					<damageProperty effectHit="NPC/Skill/Timaion/Eff_Timaion_Attack_01_D_Ball_Hit.xml" attackMaterial="1000" />
-					<conditionSkill level="1" skillID="62100209" skillTarget="2" skillOwner="1" />
-					<conditionSkill level="1" skillID="62100207" skillTarget="2" skillOwner="1" />
+					<actionAdditional additionalID="62100209" level="1" skillTarget="2" skillOwner="1" />
+					<actionAdditional additionalID="62100207" level="1" skillTarget="2" skillOwner="1" />
 				</attack>
 			</motion>
 		</level>
@@ -1550,12 +1550,12 @@
 			<detectProperty rangeType="box" distance="1350" height="900" width="1350" />
 			<motion>
 				<motionProperty sequenceName="Attack_01_E" motionEffect="NPC/Skill/Timaion/Eff_Timaion_Attack_01_E_Cast.xml" faceTarget="0" />
-				<attack point="p0" targetCount="6" magicPathID="7113" attacktype="2" unrideOnHit="1">
+				<attack point="p0" targetCount="6" magicPathID="7113" attacktype="2" attackMethodType="1" unrideOnHit="1">
 					<rangeProperty rangeType="box" distance="1350" height="900" width="1350" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" collision="50.000000,20.000000,150.000000" collisionAdd="0.000000,30.000000,0.000000" effect="NPC/Skill/Timaion/Eff_Timaion_Attack_01_E_Ball.xml" effectRemain="NPC/Skill/Timaion/Eff_Timaion_Attack_01_E_Ball_Remain.xml" />
 					<damageProperty effectHit="NPC/Skill/Timaion/Eff_Timaion_Attack_01_E_Ball_Hit.xml" attackMaterial="1000" />
-					<conditionSkill level="1" skillID="62100210" skillTarget="2" skillOwner="1" />
-					<conditionSkill level="1" skillID="62100208" skillTarget="2" skillOwner="1" />
+					<actionAdditional additionalID="62100210" level="1" skillTarget="2" skillOwner="1" />
+					<actionAdditional additionalID="62100208" level="1" skillTarget="2" skillOwner="1" />
 				</attack>
 			</motion>
 		</level>
@@ -1563,12 +1563,12 @@
 			<detectProperty rangeType="box" distance="1350" height="900" width="1350" />
 			<motion>
 				<motionProperty sequenceName="Attack_01_E" motionEffect="NPC/Skill/Timaion/Eff_Timaion_Attack_01_E_Cast.xml" faceTarget="0" />
-				<attack point="p0" targetCount="6" magicPathID="7114" attacktype="2" unrideOnHit="1">
+				<attack point="p0" targetCount="6" magicPathID="7114" attacktype="2" attackMethodType="1" unrideOnHit="1">
 					<rangeProperty rangeType="box" distance="1350" height="900" width="1350" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" collision="50.000000,20.000000,150.000000" collisionAdd="0.000000,30.000000,0.000000" effect="NPC/Skill/Timaion/Eff_Timaion_Attack_01_E_Ball.xml" effectRemain="NPC/Skill/Timaion/Eff_Timaion_Attack_01_E_Ball_Remain.xml" />
 					<damageProperty effectHit="NPC/Skill/Timaion/Eff_Timaion_Attack_01_E_Ball_Hit.xml" attackMaterial="1000" />
-					<conditionSkill level="1" skillID="62100210" skillTarget="2" skillOwner="1" />
-					<conditionSkill level="1" skillID="62100208" skillTarget="2" skillOwner="1" />
+					<actionAdditional additionalID="62100210" level="1" skillTarget="2" skillOwner="1" />
+					<actionAdditional additionalID="62100208" level="1" skillTarget="2" skillOwner="1" />
 				</attack>
 			</motion>
 		</level>
@@ -1576,12 +1576,12 @@
 			<detectProperty rangeType="box" distance="1350" height="900" width="1350" />
 			<motion>
 				<motionProperty sequenceName="Attack_01_E" motionEffect="NPC/Skill/Timaion/Eff_Timaion_Attack_01_E_Cast.xml" faceTarget="0" />
-				<attack point="p0" targetCount="6" magicPathID="7115" attacktype="2" unrideOnHit="1">
+				<attack point="p0" targetCount="6" magicPathID="7115" attacktype="2" attackMethodType="1" unrideOnHit="1">
 					<rangeProperty rangeType="box" distance="1350" height="900" width="1350" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" collision="50.000000,20.000000,150.000000" collisionAdd="0.000000,30.000000,0.000000" effect="NPC/Skill/Timaion/Eff_Timaion_Attack_01_E_Ball.xml" effectRemain="NPC/Skill/Timaion/Eff_Timaion_Attack_01_E_Ball_Remain.xml" />
 					<damageProperty effectHit="NPC/Skill/Timaion/Eff_Timaion_Attack_01_E_Ball_Hit.xml" attackMaterial="1000" />
-					<conditionSkill level="1" skillID="62100210" skillTarget="2" skillOwner="1" />
-					<conditionSkill level="1" skillID="62100208" skillTarget="2" skillOwner="1" />
+					<actionAdditional additionalID="62100210" level="1" skillTarget="2" skillOwner="1" />
+					<actionAdditional additionalID="62100208" level="1" skillTarget="2" skillOwner="1" />
 				</attack>
 			</motion>
 		</level>
@@ -1594,12 +1594,12 @@
 			<detectProperty rangeType="box" distance="1350" height="900" width="1350" />
 			<motion>
 				<motionProperty sequenceName="Attack_01_F" motionEffect="NPC/Skill/Timaion/Eff_Timaion_Attack_01_F_Cast.xml" faceTarget="0" />
-				<attack point="p0" targetCount="9" magicPathID="7116" attacktype="2" unrideOnHit="1">
+				<attack point="p0" targetCount="9" magicPathID="7116" attacktype="2" attackMethodType="1" unrideOnHit="1">
 					<rangeProperty rangeType="box" distance="1350" height="900" width="1350" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" collision="50.000000,20.000000,150.000000" collisionAdd="0.000000,30.000000,0.000000" effect="NPC/Skill/Timaion/Eff_Timaion_Attack_01_D_Ball.xml" effectRemain="NPC/Skill/Timaion/Eff_Timaion_Attack_01_D_Ball_Remain.xml" />
 					<damageProperty effectHit="NPC/Skill/Timaion/Eff_Timaion_Attack_01_D_Ball_Hit.xml" attackMaterial="1000" />
-					<conditionSkill level="1" skillID="62100211" skillTarget="2" skillOwner="1" />
-					<conditionSkill level="1" skillID="62100207" skillTarget="2" skillOwner="1" />
+					<actionAdditional additionalID="62100211" level="1" skillTarget="2" skillOwner="1" />
+					<actionAdditional additionalID="62100207" level="1" skillTarget="2" skillOwner="1" />
 				</attack>
 			</motion>
 		</level>
@@ -1607,12 +1607,12 @@
 			<detectProperty rangeType="box" distance="1350" height="900" width="1350" />
 			<motion>
 				<motionProperty sequenceName="Attack_01_F" motionEffect="NPC/Skill/Timaion/Eff_Timaion_Attack_01_F_Cast.xml" faceTarget="0" />
-				<attack point="p0" targetCount="10" magicPathID="7117" attacktype="2" unrideOnHit="1">
+				<attack point="p0" targetCount="10" magicPathID="7117" attacktype="2" attackMethodType="1" unrideOnHit="1">
 					<rangeProperty rangeType="box" distance="1350" height="900" width="1350" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" collision="50.000000,20.000000,150.000000" collisionAdd="0.000000,30.000000,0.000000" effect="NPC/Skill/Timaion/Eff_Timaion_Attack_01_D_Ball.xml" effectRemain="NPC/Skill/Timaion/Eff_Timaion_Attack_01_D_Ball_Remain.xml" />
 					<damageProperty effectHit="NPC/Skill/Timaion/Eff_Timaion_Attack_01_D_Ball_Hit.xml" attackMaterial="1000" />
-					<conditionSkill level="1" skillID="62100211" skillTarget="2" skillOwner="1" />
-					<conditionSkill level="1" skillID="62100207" skillTarget="2" skillOwner="1" />
+					<actionAdditional additionalID="62100211" level="1" skillTarget="2" skillOwner="1" />
+					<actionAdditional additionalID="62100207" level="1" skillTarget="2" skillOwner="1" />
 				</attack>
 			</motion>
 		</level>
@@ -1625,12 +1625,12 @@
 			<detectProperty rangeType="box" distance="1350" height="900" width="1350" />
 			<motion>
 				<motionProperty sequenceName="Attack_01_G" motionEffect="NPC/Skill/Timaion/Eff_Timaion_Attack_01_G_Cast.xml" faceTarget="0" />
-				<attack point="p0" targetCount="9" magicPathID="7118" attacktype="2" unrideOnHit="1">
+				<attack point="p0" targetCount="9" magicPathID="7118" attacktype="2" attackMethodType="1" unrideOnHit="1">
 					<rangeProperty rangeType="box" distance="1350" height="900" width="1350" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" collision="50.000000,20.000000,150.000000" collisionAdd="0.000000,30.000000,0.000000" effect="NPC/Skill/Timaion/Eff_Timaion_Attack_01_E_Ball.xml" effectRemain="NPC/Skill/Timaion/Eff_Timaion_Attack_01_E_Ball_Remain.xml" />
 					<damageProperty effectHit="NPC/Skill/Timaion/Eff_Timaion_Attack_01_E_Ball_Hit.xml" attackMaterial="1000" />
-					<conditionSkill level="1" skillID="62100212" skillTarget="2" skillOwner="1" />
-					<conditionSkill level="1" skillID="62100208" skillTarget="2" skillOwner="1" />
+					<actionAdditional additionalID="62100212" level="1" skillTarget="2" skillOwner="1" />
+					<actionAdditional additionalID="62100208" level="1" skillTarget="2" skillOwner="1" />
 				</attack>
 			</motion>
 		</level>
@@ -1638,12 +1638,12 @@
 			<detectProperty rangeType="box" distance="1350" height="900" width="1350" />
 			<motion>
 				<motionProperty sequenceName="Attack_01_G" motionEffect="NPC/Skill/Timaion/Eff_Timaion_Attack_01_G_Cast.xml" faceTarget="0" />
-				<attack point="p0" targetCount="10" magicPathID="7119" attacktype="2" unrideOnHit="1">
+				<attack point="p0" targetCount="10" magicPathID="7119" attacktype="2" attackMethodType="1" unrideOnHit="1">
 					<rangeProperty rangeType="box" distance="1350" height="900" width="1350" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" collision="50.000000,20.000000,150.000000" collisionAdd="0.000000,30.000000,0.000000" effect="NPC/Skill/Timaion/Eff_Timaion_Attack_01_E_Ball.xml" effectRemain="NPC/Skill/Timaion/Eff_Timaion_Attack_01_E_Ball_Remain.xml" />
 					<damageProperty effectHit="NPC/Skill/Timaion/Eff_Timaion_Attack_01_E_Ball_Hit.xml" attackMaterial="1000" />
-					<conditionSkill level="1" skillID="62100212" skillTarget="2" skillOwner="1" />
-					<conditionSkill level="1" skillID="62100208" skillTarget="2" skillOwner="1" />
+					<actionAdditional additionalID="62100212" level="1" skillTarget="2" skillOwner="1" />
+					<actionAdditional additionalID="62100208" level="1" skillTarget="2" skillOwner="1" />
 				</attack>
 			</motion>
 		</level>
@@ -1738,26 +1738,26 @@
 			<detectProperty rangeType="box" distance="1350" height="900" width="1350" />
 			<motion>
 				<motionProperty sequenceName="Attack_01_D" motionEffect="NPC/Skill/Timaion/Eff_Timaion_Attack_01_D_Cast.xml" faceTarget="0" />
-				<attack point="p0" targetCount="5" magicPathID="7140" attacktype="2" unrideOnHit="1">
+				<attack point="p0" targetCount="5" magicPathID="7140" attacktype="2" attackMethodType="1" unrideOnHit="1">
 					<rangeProperty rangeType="box" distance="1350" height="900" width="1350" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" collision="50.000000,20.000000,150.000000" collisionAdd="0.000000,30.000000,0.000000" effect="NPC/Skill/Timaion/Eff_Timaion_Attack_01_D_Ball.xml" effectRemain="NPC/Skill/Timaion/Eff_Timaion_Attack_01_D_Ball_Remain.xml" />
 					<damageProperty effectHit="NPC/Skill/Timaion/Eff_Timaion_Attack_01_D_Ball_Hit.xml" attackMaterial="1000" />
-					<conditionSkill level="1" skillID="62100232" skillTarget="2" skillOwner="1" />
-					<conditionSkill level="1" skillID="62100237" skillTarget="2" skillOwner="1" />
+					<actionAdditional additionalID="62100232" level="1" skillTarget="2" skillOwner="1" />
+					<actionAdditional additionalID="62100237" level="1" skillTarget="2" skillOwner="1" />
 				</attack>
-				<attack point="p1" targetCount="5" magicPathID="7144" attacktype="2" unrideOnHit="1">
+				<attack point="p1" targetCount="5" magicPathID="7144" attacktype="2" attackMethodType="1" unrideOnHit="1">
 					<rangeProperty rangeType="box" distance="1350" height="900" width="1350" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" collision="50.000000,20.000000,150.000000" collisionAdd="0.000000,30.000000,0.000000" effect="NPC/Skill/Timaion/Eff_Timaion_Attack_01_D_Ball.xml" effectRemain="NPC/Skill/Timaion/Eff_Timaion_Attack_01_D_Ball_Remain.xml" />
 					<damageProperty effectHit="NPC/Skill/Timaion/Eff_Timaion_Attack_01_D_Ball_Hit.xml" attackMaterial="1000" />
-					<conditionSkill level="1" skillID="62100232" skillTarget="2" skillOwner="1" />
-					<conditionSkill level="1" skillID="62100237" skillTarget="2" skillOwner="1" />
+					<actionAdditional additionalID="62100232" level="1" skillTarget="2" skillOwner="1" />
+					<actionAdditional additionalID="62100237" level="1" skillTarget="2" skillOwner="1" />
 				</attack>
-				<attack point="p2" targetCount="5" magicPathID="7145" attacktype="2" unrideOnHit="1">
+				<attack point="p2" targetCount="5" magicPathID="7145" attacktype="2" attackMethodType="1" unrideOnHit="1">
 					<rangeProperty rangeType="box" distance="1350" height="900" width="1350" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" collision="50.000000,20.000000,150.000000" collisionAdd="0.000000,30.000000,0.000000" effect="NPC/Skill/Timaion/Eff_Timaion_Attack_01_D_Ball.xml" effectRemain="NPC/Skill/Timaion/Eff_Timaion_Attack_01_D_Ball_Remain.xml" />
 					<damageProperty effectHit="NPC/Skill/Timaion/Eff_Timaion_Attack_01_D_Ball_Hit.xml" attackMaterial="1000" />
-					<conditionSkill level="1" skillID="62100232" skillTarget="2" skillOwner="1" />
-					<conditionSkill level="1" skillID="62100237" skillTarget="2" skillOwner="1" />
+					<actionAdditional additionalID="62100232" level="1" skillTarget="2" skillOwner="1" />
+					<actionAdditional additionalID="62100237" level="1" skillTarget="2" skillOwner="1" />
 				</attack>
 			</motion>
 		</level>
@@ -1765,26 +1765,26 @@
 			<detectProperty rangeType="box" distance="1350" height="900" width="1350" />
 			<motion>
 				<motionProperty sequenceName="Attack_01_D" motionEffect="NPC/Skill/Timaion/Eff_Timaion_Attack_01_D_Cast.xml" faceTarget="0" />
-				<attack point="p0" targetCount="5" magicPathID="7141" attacktype="2" unrideOnHit="1">
+				<attack point="p0" targetCount="5" magicPathID="7141" attacktype="2" attackMethodType="1" unrideOnHit="1">
 					<rangeProperty rangeType="box" distance="1350" height="900" width="1350" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" collision="50.000000,20.000000,150.000000" collisionAdd="0.000000,30.000000,0.000000" effect="NPC/Skill/Timaion/Eff_Timaion_Attack_01_D_Ball.xml" effectRemain="NPC/Skill/Timaion/Eff_Timaion_Attack_01_D_Ball_Remain.xml" />
 					<damageProperty effectHit="NPC/Skill/Timaion/Eff_Timaion_Attack_01_D_Ball_Hit.xml" attackMaterial="1000" />
-					<conditionSkill level="1" skillID="62100232" skillTarget="2" skillOwner="1" />
-					<conditionSkill level="1" skillID="62100237" skillTarget="2" skillOwner="1" />
+					<actionAdditional additionalID="62100232" level="1" skillTarget="2" skillOwner="1" />
+					<actionAdditional additionalID="62100237" level="1" skillTarget="2" skillOwner="1" />
 				</attack>
-				<attack point="p1" targetCount="5" magicPathID="7146" attacktype="2" unrideOnHit="1">
+				<attack point="p1" targetCount="5" magicPathID="7146" attacktype="2" attackMethodType="1" unrideOnHit="1">
 					<rangeProperty rangeType="box" distance="1350" height="900" width="1350" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" collision="50.000000,20.000000,150.000000" collisionAdd="0.000000,30.000000,0.000000" effect="NPC/Skill/Timaion/Eff_Timaion_Attack_01_D_Ball.xml" effectRemain="NPC/Skill/Timaion/Eff_Timaion_Attack_01_D_Ball_Remain.xml" />
 					<damageProperty effectHit="NPC/Skill/Timaion/Eff_Timaion_Attack_01_D_Ball_Hit.xml" attackMaterial="1000" />
-					<conditionSkill level="1" skillID="62100232" skillTarget="2" skillOwner="1" />
-					<conditionSkill level="1" skillID="62100237" skillTarget="2" skillOwner="1" />
+					<actionAdditional additionalID="62100232" level="1" skillTarget="2" skillOwner="1" />
+					<actionAdditional additionalID="62100237" level="1" skillTarget="2" skillOwner="1" />
 				</attack>
-				<attack point="p2" targetCount="5" magicPathID="7147" attacktype="2" unrideOnHit="1">
+				<attack point="p2" targetCount="5" magicPathID="7147" attacktype="2" attackMethodType="1" unrideOnHit="1">
 					<rangeProperty rangeType="box" distance="1350" height="900" width="1350" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" collision="50.000000,20.000000,150.000000" collisionAdd="0.000000,30.000000,0.000000" effect="NPC/Skill/Timaion/Eff_Timaion_Attack_01_D_Ball.xml" effectRemain="NPC/Skill/Timaion/Eff_Timaion_Attack_01_D_Ball_Remain.xml" />
 					<damageProperty effectHit="NPC/Skill/Timaion/Eff_Timaion_Attack_01_D_Ball_Hit.xml" attackMaterial="1000" />
-					<conditionSkill level="1" skillID="62100232" skillTarget="2" skillOwner="1" />
-					<conditionSkill level="1" skillID="62100237" skillTarget="2" skillOwner="1" />
+					<actionAdditional additionalID="62100232" level="1" skillTarget="2" skillOwner="1" />
+					<actionAdditional additionalID="62100237" level="1" skillTarget="2" skillOwner="1" />
 				</attack>
 			</motion>
 		</level>
@@ -1792,26 +1792,26 @@
 			<detectProperty rangeType="box" distance="1350" height="900" width="1350" />
 			<motion>
 				<motionProperty sequenceName="Attack_01_D" motionEffect="NPC/Skill/Timaion/Eff_Timaion_Attack_01_D_Cast.xml" faceTarget="0" />
-				<attack point="p0" targetCount="5" magicPathID="7142" attacktype="2" unrideOnHit="1">
+				<attack point="p0" targetCount="5" magicPathID="7142" attacktype="2" attackMethodType="1" unrideOnHit="1">
 					<rangeProperty rangeType="box" distance="1350" height="900" width="1350" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" collision="50.000000,20.000000,150.000000" collisionAdd="0.000000,30.000000,0.000000" effect="NPC/Skill/Timaion/Eff_Timaion_Attack_01_D_Ball.xml" effectRemain="NPC/Skill/Timaion/Eff_Timaion_Attack_01_D_Ball_Remain.xml" />
 					<damageProperty effectHit="NPC/Skill/Timaion/Eff_Timaion_Attack_01_D_Ball_Hit.xml" attackMaterial="1000" />
-					<conditionSkill level="1" skillID="62100232" skillTarget="2" skillOwner="1" />
-					<conditionSkill level="1" skillID="62100237" skillTarget="2" skillOwner="1" />
+					<actionAdditional additionalID="62100232" level="1" skillTarget="2" skillOwner="1" />
+					<actionAdditional additionalID="62100237" level="1" skillTarget="2" skillOwner="1" />
 				</attack>
-				<attack point="p1" targetCount="5" magicPathID="7148" attacktype="2" unrideOnHit="1">
+				<attack point="p1" targetCount="5" magicPathID="7148" attacktype="2" attackMethodType="1" unrideOnHit="1">
 					<rangeProperty rangeType="box" distance="1350" height="900" width="1350" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" collision="50.000000,20.000000,150.000000" collisionAdd="0.000000,30.000000,0.000000" effect="NPC/Skill/Timaion/Eff_Timaion_Attack_01_D_Ball.xml" effectRemain="NPC/Skill/Timaion/Eff_Timaion_Attack_01_D_Ball_Remain.xml" />
 					<damageProperty effectHit="NPC/Skill/Timaion/Eff_Timaion_Attack_01_D_Ball_Hit.xml" attackMaterial="1000" />
-					<conditionSkill level="1" skillID="62100232" skillTarget="2" skillOwner="1" />
-					<conditionSkill level="1" skillID="62100237" skillTarget="2" skillOwner="1" />
+					<actionAdditional additionalID="62100232" level="1" skillTarget="2" skillOwner="1" />
+					<actionAdditional additionalID="62100237" level="1" skillTarget="2" skillOwner="1" />
 				</attack>
-				<attack point="p2" targetCount="5" magicPathID="7149" attacktype="2" unrideOnHit="1">
+				<attack point="p2" targetCount="5" magicPathID="7149" attacktype="2" attackMethodType="1" unrideOnHit="1">
 					<rangeProperty rangeType="box" distance="1350" height="900" width="1350" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" collision="50.000000,20.000000,150.000000" collisionAdd="0.000000,30.000000,0.000000" effect="NPC/Skill/Timaion/Eff_Timaion_Attack_01_D_Ball.xml" effectRemain="NPC/Skill/Timaion/Eff_Timaion_Attack_01_D_Ball_Remain.xml" />
 					<damageProperty effectHit="NPC/Skill/Timaion/Eff_Timaion_Attack_01_D_Ball_Hit.xml" attackMaterial="1000" />
-					<conditionSkill level="1" skillID="62100232" skillTarget="2" skillOwner="1" />
-					<conditionSkill level="1" skillID="62100237" skillTarget="2" skillOwner="1" />
+					<actionAdditional additionalID="62100232" level="1" skillTarget="2" skillOwner="1" />
+					<actionAdditional additionalID="62100237" level="1" skillTarget="2" skillOwner="1" />
 				</attack>
 			</motion>
 		</level>
@@ -1819,26 +1819,26 @@
 			<detectProperty rangeType="box" distance="1350" height="900" width="1350" />
 			<motion>
 				<motionProperty sequenceName="Attack_01_D" motionEffect="NPC/Skill/Timaion/Eff_Timaion_Attack_01_D_Cast.xml" faceTarget="0" />
-				<attack point="p0" targetCount="5" magicPathID="7143" attacktype="2" unrideOnHit="1">
+				<attack point="p0" targetCount="5" magicPathID="7143" attacktype="2" attackMethodType="1" unrideOnHit="1">
 					<rangeProperty rangeType="box" distance="1350" height="900" width="1350" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" collision="50.000000,20.000000,150.000000" collisionAdd="0.000000,30.000000,0.000000" effect="NPC/Skill/Timaion/Eff_Timaion_Attack_01_D_Ball.xml" effectRemain="NPC/Skill/Timaion/Eff_Timaion_Attack_01_D_Ball_Remain.xml" />
 					<damageProperty effectHit="NPC/Skill/Timaion/Eff_Timaion_Attack_01_D_Ball_Hit.xml" attackMaterial="1000" />
-					<conditionSkill level="1" skillID="62100232" skillTarget="2" skillOwner="1" />
-					<conditionSkill level="1" skillID="62100237" skillTarget="2" skillOwner="1" />
+					<actionAdditional additionalID="62100232" level="1" skillTarget="2" skillOwner="1" />
+					<actionAdditional additionalID="62100237" level="1" skillTarget="2" skillOwner="1" />
 				</attack>
-				<attack point="p1" targetCount="5" magicPathID="7150" attacktype="2" unrideOnHit="1">
+				<attack point="p1" targetCount="5" magicPathID="7150" attacktype="2" attackMethodType="1" unrideOnHit="1">
 					<rangeProperty rangeType="box" distance="1350" height="900" width="1350" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" collision="50.000000,20.000000,150.000000" collisionAdd="0.000000,30.000000,0.000000" effect="NPC/Skill/Timaion/Eff_Timaion_Attack_01_D_Ball.xml" effectRemain="NPC/Skill/Timaion/Eff_Timaion_Attack_01_D_Ball_Remain.xml" />
 					<damageProperty effectHit="NPC/Skill/Timaion/Eff_Timaion_Attack_01_D_Ball_Hit.xml" attackMaterial="1000" />
-					<conditionSkill level="1" skillID="62100232" skillTarget="2" skillOwner="1" />
-					<conditionSkill level="1" skillID="62100237" skillTarget="2" skillOwner="1" />
+					<actionAdditional additionalID="62100232" level="1" skillTarget="2" skillOwner="1" />
+					<actionAdditional additionalID="62100237" level="1" skillTarget="2" skillOwner="1" />
 				</attack>
-				<attack point="p2" targetCount="5" magicPathID="7151" attacktype="2" unrideOnHit="1">
+				<attack point="p2" targetCount="5" magicPathID="7151" attacktype="2" attackMethodType="1" unrideOnHit="1">
 					<rangeProperty rangeType="box" distance="1350" height="900" width="1350" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" collision="50.000000,20.000000,150.000000" collisionAdd="0.000000,30.000000,0.000000" effect="NPC/Skill/Timaion/Eff_Timaion_Attack_01_D_Ball.xml" effectRemain="NPC/Skill/Timaion/Eff_Timaion_Attack_01_D_Ball_Remain.xml" />
 					<damageProperty effectHit="NPC/Skill/Timaion/Eff_Timaion_Attack_01_D_Ball_Hit.xml" attackMaterial="1000" />
-					<conditionSkill level="1" skillID="62100232" skillTarget="2" skillOwner="1" />
-					<conditionSkill level="1" skillID="62100237" skillTarget="2" skillOwner="1" />
+					<actionAdditional additionalID="62100232" level="1" skillTarget="2" skillOwner="1" />
+					<actionAdditional additionalID="62100237" level="1" skillTarget="2" skillOwner="1" />
 				</attack>
 			</motion>
 		</level>
@@ -1854,9 +1854,9 @@
 				<attack point="p0" targetCount="10" attacktype="2" unrideOnHit="1">
 					<rangeProperty rangeType="cylinder" distance="75" height="900" applyTarget="1" castTarget="1" />
 					<damageProperty attackMaterial="1000" />
-					<conditionSkill level="1" skillID="62100209" skillTarget="2" skillOwner="1" />
-					<conditionSkill level="1" skillID="62100210" skillTarget="2" skillOwner="1" />
-					<conditionSkill level="1" skillID="62100207" skillTarget="2" skillOwner="1" />
+					<actionAdditional additionalID="62100209" level="1" skillTarget="2" skillOwner="1" />
+					<actionAdditional additionalID="62100210" level="1" skillTarget="2" skillOwner="1" />
+					<actionAdditional additionalID="62100207" level="1" skillTarget="2" skillOwner="1" />
 				</attack>
 			</motion>
 		</level>
@@ -1869,26 +1869,26 @@
 			<detectProperty rangeType="box" distance="1350" height="900" width="1350" />
 			<motion>
 				<motionProperty sequenceName="Attack_01_E" motionEffect="NPC/Skill/Timaion/Eff_Timaion_Attack_01_E_Cast.xml" faceTarget="0" />
-				<attack point="p0" targetCount="8" magicPathID="7160" attacktype="2" unrideOnHit="1">
+				<attack point="p0" targetCount="8" magicPathID="7160" attacktype="2" attackMethodType="1" unrideOnHit="1">
 					<rangeProperty rangeType="box" distance="1350" height="900" width="1350" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" collision="50.000000,20.000000,150.000000" collisionAdd="0.000000,30.000000,0.000000" effect="NPC/Skill/Timaion/Eff_Timaion_Attack_01_E_Ball.xml" effectRemain="NPC/Skill/Timaion/Eff_Timaion_Attack_01_E_Ball_Remain.xml" />
 					<damageProperty effectHit="NPC/Skill/Timaion/Eff_Timaion_Attack_01_E_Ball_Hit.xml" attackMaterial="1000" />
-					<conditionSkill level="1" skillID="62100233" skillTarget="2" skillOwner="1" />
-					<conditionSkill level="1" skillID="62100238" skillTarget="2" skillOwner="1" />
+					<actionAdditional additionalID="62100233" level="1" skillTarget="2" skillOwner="1" />
+					<actionAdditional additionalID="62100238" level="1" skillTarget="2" skillOwner="1" />
 				</attack>
-				<attack point="p1" targetCount="8" magicPathID="7165" attacktype="2" unrideOnHit="1">
+				<attack point="p1" targetCount="8" magicPathID="7165" attacktype="2" attackMethodType="1" unrideOnHit="1">
 					<rangeProperty rangeType="box" distance="1350" height="900" width="1350" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" collision="50.000000,20.000000,150.000000" collisionAdd="0.000000,30.000000,0.000000" effect="NPC/Skill/Timaion/Eff_Timaion_Attack_01_E_Ball.xml" effectRemain="NPC/Skill/Timaion/Eff_Timaion_Attack_01_E_Ball_Remain.xml" />
 					<damageProperty effectHit="NPC/Skill/Timaion/Eff_Timaion_Attack_01_E_Ball_Hit.xml" attackMaterial="1000" />
-					<conditionSkill level="1" skillID="62100233" skillTarget="2" skillOwner="1" />
-					<conditionSkill level="1" skillID="62100238" skillTarget="2" skillOwner="1" />
+					<actionAdditional additionalID="62100233" level="1" skillTarget="2" skillOwner="1" />
+					<actionAdditional additionalID="62100238" level="1" skillTarget="2" skillOwner="1" />
 				</attack>
-				<attack point="p2" targetCount="8" magicPathID="7166" attacktype="2" unrideOnHit="1">
+				<attack point="p2" targetCount="8" magicPathID="7166" attacktype="2" attackMethodType="1" unrideOnHit="1">
 					<rangeProperty rangeType="box" distance="1350" height="900" width="1350" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" collision="50.000000,20.000000,150.000000" collisionAdd="0.000000,30.000000,0.000000" effect="NPC/Skill/Timaion/Eff_Timaion_Attack_01_E_Ball.xml" effectRemain="NPC/Skill/Timaion/Eff_Timaion_Attack_01_E_Ball_Remain.xml" />
 					<damageProperty effectHit="NPC/Skill/Timaion/Eff_Timaion_Attack_01_E_Ball_Hit.xml" attackMaterial="1000" />
-					<conditionSkill level="1" skillID="62100233" skillTarget="2" skillOwner="1" />
-					<conditionSkill level="1" skillID="62100238" skillTarget="2" skillOwner="1" />
+					<actionAdditional additionalID="62100233" level="1" skillTarget="2" skillOwner="1" />
+					<actionAdditional additionalID="62100238" level="1" skillTarget="2" skillOwner="1" />
 				</attack>
 			</motion>
 		</level>
@@ -1896,26 +1896,26 @@
 			<detectProperty rangeType="box" distance="1350" height="900" width="1350" />
 			<motion>
 				<motionProperty sequenceName="Attack_01_E" motionEffect="NPC/Skill/Timaion/Eff_Timaion_Attack_01_E_Cast.xml" faceTarget="0" />
-				<attack point="p0" targetCount="8" magicPathID="7161" attacktype="2" unrideOnHit="1">
+				<attack point="p0" targetCount="8" magicPathID="7161" attacktype="2" attackMethodType="1" unrideOnHit="1">
 					<rangeProperty rangeType="box" distance="1350" height="900" width="1350" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" collision="50.000000,20.000000,150.000000" collisionAdd="0.000000,30.000000,0.000000" effect="NPC/Skill/Timaion/Eff_Timaion_Attack_01_E_Ball.xml" effectRemain="NPC/Skill/Timaion/Eff_Timaion_Attack_01_E_Ball_Remain.xml" />
 					<damageProperty effectHit="NPC/Skill/Timaion/Eff_Timaion_Attack_01_E_Ball_Hit.xml" attackMaterial="1000" />
-					<conditionSkill level="1" skillID="62100233" skillTarget="2" skillOwner="1" />
-					<conditionSkill level="1" skillID="62100238" skillTarget="2" skillOwner="1" />
+					<actionAdditional additionalID="62100233" level="1" skillTarget="2" skillOwner="1" />
+					<actionAdditional additionalID="62100238" level="1" skillTarget="2" skillOwner="1" />
 				</attack>
-				<attack point="p1" targetCount="8" magicPathID="7167" attacktype="2" unrideOnHit="1">
+				<attack point="p1" targetCount="8" magicPathID="7167" attacktype="2" attackMethodType="1" unrideOnHit="1">
 					<rangeProperty rangeType="box" distance="1350" height="900" width="1350" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" collision="50.000000,20.000000,150.000000" collisionAdd="0.000000,30.000000,0.000000" effect="NPC/Skill/Timaion/Eff_Timaion_Attack_01_E_Ball.xml" effectRemain="NPC/Skill/Timaion/Eff_Timaion_Attack_01_E_Ball_Remain.xml" />
 					<damageProperty effectHit="NPC/Skill/Timaion/Eff_Timaion_Attack_01_E_Ball_Hit.xml" attackMaterial="1000" />
-					<conditionSkill level="1" skillID="62100233" skillTarget="2" skillOwner="1" />
-					<conditionSkill level="1" skillID="62100238" skillTarget="2" skillOwner="1" />
+					<actionAdditional additionalID="62100233" level="1" skillTarget="2" skillOwner="1" />
+					<actionAdditional additionalID="62100238" level="1" skillTarget="2" skillOwner="1" />
 				</attack>
-				<attack point="p2" targetCount="8" magicPathID="7168" attacktype="2" unrideOnHit="1">
+				<attack point="p2" targetCount="8" magicPathID="7168" attacktype="2" attackMethodType="1" unrideOnHit="1">
 					<rangeProperty rangeType="box" distance="1350" height="900" width="1350" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" collision="50.000000,20.000000,150.000000" collisionAdd="0.000000,30.000000,0.000000" effect="NPC/Skill/Timaion/Eff_Timaion_Attack_01_E_Ball.xml" effectRemain="NPC/Skill/Timaion/Eff_Timaion_Attack_01_E_Ball_Remain.xml" />
 					<damageProperty effectHit="NPC/Skill/Timaion/Eff_Timaion_Attack_01_E_Ball_Hit.xml" attackMaterial="1000" />
-					<conditionSkill level="1" skillID="62100233" skillTarget="2" skillOwner="1" />
-					<conditionSkill level="1" skillID="62100238" skillTarget="2" skillOwner="1" />
+					<actionAdditional additionalID="62100233" level="1" skillTarget="2" skillOwner="1" />
+					<actionAdditional additionalID="62100238" level="1" skillTarget="2" skillOwner="1" />
 				</attack>
 			</motion>
 		</level>
@@ -1923,26 +1923,26 @@
 			<detectProperty rangeType="box" distance="1350" height="900" width="1350" />
 			<motion>
 				<motionProperty sequenceName="Attack_01_E" motionEffect="NPC/Skill/Timaion/Eff_Timaion_Attack_01_E_Cast.xml" faceTarget="0" />
-				<attack point="p0" targetCount="8" magicPathID="7162" attacktype="2" unrideOnHit="1">
+				<attack point="p0" targetCount="8" magicPathID="7162" attacktype="2" attackMethodType="1" unrideOnHit="1">
 					<rangeProperty rangeType="box" distance="1350" height="900" width="1350" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" collision="50.000000,20.000000,150.000000" collisionAdd="0.000000,30.000000,0.000000" effect="NPC/Skill/Timaion/Eff_Timaion_Attack_01_E_Ball.xml" effectRemain="NPC/Skill/Timaion/Eff_Timaion_Attack_01_E_Ball_Remain.xml" />
 					<damageProperty effectHit="NPC/Skill/Timaion/Eff_Timaion_Attack_01_E_Ball_Hit.xml" attackMaterial="1000" />
-					<conditionSkill level="1" skillID="62100233" skillTarget="2" skillOwner="1" />
-					<conditionSkill level="1" skillID="62100238" skillTarget="2" skillOwner="1" />
+					<actionAdditional additionalID="62100233" level="1" skillTarget="2" skillOwner="1" />
+					<actionAdditional additionalID="62100238" level="1" skillTarget="2" skillOwner="1" />
 				</attack>
-				<attack point="p1" targetCount="8" magicPathID="7169" attacktype="2" unrideOnHit="1">
+				<attack point="p1" targetCount="8" magicPathID="7169" attacktype="2" attackMethodType="1" unrideOnHit="1">
 					<rangeProperty rangeType="box" distance="1350" height="900" width="1350" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" collision="50.000000,20.000000,150.000000" collisionAdd="0.000000,30.000000,0.000000" effect="NPC/Skill/Timaion/Eff_Timaion_Attack_01_E_Ball.xml" effectRemain="NPC/Skill/Timaion/Eff_Timaion_Attack_01_E_Ball_Remain.xml" />
 					<damageProperty effectHit="NPC/Skill/Timaion/Eff_Timaion_Attack_01_E_Ball_Hit.xml" attackMaterial="1000" />
-					<conditionSkill level="1" skillID="62100233" skillTarget="2" skillOwner="1" />
-					<conditionSkill level="1" skillID="62100238" skillTarget="2" skillOwner="1" />
+					<actionAdditional additionalID="62100233" level="1" skillTarget="2" skillOwner="1" />
+					<actionAdditional additionalID="62100238" level="1" skillTarget="2" skillOwner="1" />
 				</attack>
-				<attack point="p2" targetCount="8" magicPathID="7170" attacktype="2" unrideOnHit="1">
+				<attack point="p2" targetCount="8" magicPathID="7170" attacktype="2" attackMethodType="1" unrideOnHit="1">
 					<rangeProperty rangeType="box" distance="1350" height="900" width="1350" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" collision="50.000000,20.000000,150.000000" collisionAdd="0.000000,30.000000,0.000000" effect="NPC/Skill/Timaion/Eff_Timaion_Attack_01_E_Ball.xml" effectRemain="NPC/Skill/Timaion/Eff_Timaion_Attack_01_E_Ball_Remain.xml" />
 					<damageProperty effectHit="NPC/Skill/Timaion/Eff_Timaion_Attack_01_E_Ball_Hit.xml" attackMaterial="1000" />
-					<conditionSkill level="1" skillID="62100233" skillTarget="2" skillOwner="1" />
-					<conditionSkill level="1" skillID="62100238" skillTarget="2" skillOwner="1" />
+					<actionAdditional additionalID="62100233" level="1" skillTarget="2" skillOwner="1" />
+					<actionAdditional additionalID="62100238" level="1" skillTarget="2" skillOwner="1" />
 				</attack>
 			</motion>
 		</level>
@@ -1950,26 +1950,26 @@
 			<detectProperty rangeType="box" distance="1350" height="900" width="1350" />
 			<motion>
 				<motionProperty sequenceName="Attack_01_E" motionEffect="NPC/Skill/Timaion/Eff_Timaion_Attack_01_E_Cast.xml" faceTarget="0" />
-				<attack point="p0" targetCount="8" magicPathID="7163" attacktype="2" unrideOnHit="1">
+				<attack point="p0" targetCount="8" magicPathID="7163" attacktype="2" attackMethodType="1" unrideOnHit="1">
 					<rangeProperty rangeType="box" distance="1350" height="900" width="1350" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" collision="50.000000,20.000000,150.000000" collisionAdd="0.000000,30.000000,0.000000" effect="NPC/Skill/Timaion/Eff_Timaion_Attack_01_E_Ball.xml" effectRemain="NPC/Skill/Timaion/Eff_Timaion_Attack_01_E_Ball_Remain.xml" />
 					<damageProperty effectHit="NPC/Skill/Timaion/Eff_Timaion_Attack_01_E_Ball_Hit.xml" attackMaterial="1000" />
-					<conditionSkill level="1" skillID="62100233" skillTarget="2" skillOwner="1" />
-					<conditionSkill level="1" skillID="62100238" skillTarget="2" skillOwner="1" />
+					<actionAdditional additionalID="62100233" level="1" skillTarget="2" skillOwner="1" />
+					<actionAdditional additionalID="62100238" level="1" skillTarget="2" skillOwner="1" />
 				</attack>
-				<attack point="p1" targetCount="8" magicPathID="7175" attacktype="2" unrideOnHit="1">
+				<attack point="p1" targetCount="8" magicPathID="7175" attacktype="2" attackMethodType="1" unrideOnHit="1">
 					<rangeProperty rangeType="box" distance="1350" height="900" width="1350" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" collision="50.000000,20.000000,150.000000" collisionAdd="0.000000,30.000000,0.000000" effect="NPC/Skill/Timaion/Eff_Timaion_Attack_01_E_Ball.xml" effectRemain="NPC/Skill/Timaion/Eff_Timaion_Attack_01_E_Ball_Remain.xml" />
 					<damageProperty effectHit="NPC/Skill/Timaion/Eff_Timaion_Attack_01_E_Ball_Hit.xml" attackMaterial="1000" />
-					<conditionSkill level="1" skillID="62100233" skillTarget="2" skillOwner="1" />
-					<conditionSkill level="1" skillID="62100238" skillTarget="2" skillOwner="1" />
+					<actionAdditional additionalID="62100233" level="1" skillTarget="2" skillOwner="1" />
+					<actionAdditional additionalID="62100238" level="1" skillTarget="2" skillOwner="1" />
 				</attack>
-				<attack point="p2" targetCount="8" magicPathID="7176" attacktype="2" unrideOnHit="1">
+				<attack point="p2" targetCount="8" magicPathID="7176" attacktype="2" attackMethodType="1" unrideOnHit="1">
 					<rangeProperty rangeType="box" distance="1350" height="900" width="1350" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" collision="50.000000,20.000000,150.000000" collisionAdd="0.000000,30.000000,0.000000" effect="NPC/Skill/Timaion/Eff_Timaion_Attack_01_E_Ball.xml" effectRemain="NPC/Skill/Timaion/Eff_Timaion_Attack_01_E_Ball_Remain.xml" />
 					<damageProperty effectHit="NPC/Skill/Timaion/Eff_Timaion_Attack_01_E_Ball_Hit.xml" attackMaterial="1000" />
-					<conditionSkill level="1" skillID="62100233" skillTarget="2" skillOwner="1" />
-					<conditionSkill level="1" skillID="62100238" skillTarget="2" skillOwner="1" />
+					<actionAdditional additionalID="62100233" level="1" skillTarget="2" skillOwner="1" />
+					<actionAdditional additionalID="62100238" level="1" skillTarget="2" skillOwner="1" />
 				</attack>
 			</motion>
 		</level>
@@ -1982,7 +1982,7 @@
 			<detectProperty rangeType="box" distance="400" height="200" width="600" />
 			<motion>
 				<motionProperty sequenceName="Attack_01_H" sequenceSpeed="0.7" motionEffect="NPC/Skill/Timaion/Eff_Timaion_Attack_01_H_Cast.xml" faceTarget="0" />
-				<attack point="p0" targetCount="1" magicPathID="7121" attacktype="2" unrideOnHit="1">
+				<attack point="p0" targetCount="1" magicPathID="7121" attacktype="2" attackMethodType="1" unrideOnHit="1">
 					<rangeProperty rangeType="box" distance="750" height="200" width="600" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" bounceType="3" bounceCount="10" collision="450.000000,50.000000,70.000000" collisionAdd="0.000000,100.000000,0.000000" effect="NPC/Skill/Timaion/Eff_Timaion_Attack_01_H_Ball.xml" />
 					<damageProperty rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="101" />
@@ -1993,7 +1993,7 @@
 			<detectProperty rangeType="box" distance="400" height="200" width="600" />
 			<motion>
 				<motionProperty sequenceName="Attack_01_H" sequenceSpeed="0.7" motionEffect="NPC/Skill/Timaion/Eff_Timaion_Attack_01_H_Cast.xml" faceTarget="0" />
-				<attack point="p0" targetCount="1" magicPathID="7122" attacktype="2" unrideOnHit="1">
+				<attack point="p0" targetCount="1" magicPathID="7122" attacktype="2" attackMethodType="1" unrideOnHit="1">
 					<rangeProperty rangeType="box" distance="750" height="200" width="600" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" bounceType="3" bounceCount="10" collision="450.000000,50.000000,70.000000" collisionAdd="0.000000,100.000000,0.000000" effect="NPC/Skill/Timaion/Eff_Timaion_Attack_01_H_Ball.xml" />
 					<damageProperty rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="101" />
@@ -2004,7 +2004,7 @@
 			<detectProperty rangeType="box" distance="400" height="200" width="600" />
 			<motion>
 				<motionProperty sequenceName="Attack_01_I" sequenceSpeed="0.7" motionEffect="NPC/Skill/Timaion/Eff_Timaion_Attack_01_H_Cast.xml" faceTarget="0" />
-				<attack point="p0" targetCount="1" magicPathID="7123" attacktype="2" unrideOnHit="1">
+				<attack point="p0" targetCount="1" magicPathID="7123" attacktype="2" attackMethodType="1" unrideOnHit="1">
 					<rangeProperty rangeType="box" distance="750" height="200" width="600" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" bounceType="3" bounceCount="10" collision="450.000000,50.000000,70.000000" collisionAdd="0.000000,100.000000,0.000000" effect="NPC/Skill/Timaion/Eff_Timaion_Attack_01_H_Ball.xml" />
 					<damageProperty rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="101" />
@@ -2015,7 +2015,7 @@
 			<detectProperty rangeType="box" distance="400" height="200" width="600" />
 			<motion>
 				<motionProperty sequenceName="Attack_01_I" sequenceSpeed="0.7" motionEffect="NPC/Skill/Timaion/Eff_Timaion_Attack_01_H_Cast.xml" faceTarget="0" />
-				<attack point="p0" targetCount="1" magicPathID="7124" attacktype="2" unrideOnHit="1">
+				<attack point="p0" targetCount="1" magicPathID="7124" attacktype="2" attackMethodType="1" unrideOnHit="1">
 					<rangeProperty rangeType="box" distance="750" height="200" width="600" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" bounceType="3" bounceCount="10" collision="450.000000,50.000000,70.000000" collisionAdd="0.000000,100.000000,0.000000" effect="NPC/Skill/Timaion/Eff_Timaion_Attack_01_H_Ball.xml" />
 					<damageProperty rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="101" />
@@ -2031,7 +2031,7 @@
 			<detectProperty rangeType="box" distance="400" height="200" width="600" />
 			<motion>
 				<motionProperty sequenceName="Attack_01_H" sequenceSpeed="0.7" motionEffect="NPC/Skill/Timaion/Eff_Timaion_Attack_01_H_Cast.xml" faceTarget="0" />
-				<attack point="p0" targetCount="1" magicPathID="7125" attacktype="2" unrideOnHit="1">
+				<attack point="p0" targetCount="1" magicPathID="7125" attacktype="2" attackMethodType="1" unrideOnHit="1">
 					<rangeProperty rangeType="box" distance="750" height="200" width="600" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" bounceType="3" bounceCount="10" collision="450.000000,50.000000,70.000000" collisionAdd="0.000000,100.000000,0.000000" effect="NPC/Skill/Timaion/Eff_Timaion_Attack_01_H_Ball.xml" />
 					<damageProperty rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="101" />
@@ -2042,7 +2042,7 @@
 			<detectProperty rangeType="box" distance="400" height="200" width="600" />
 			<motion>
 				<motionProperty sequenceName="Attack_01_H" sequenceSpeed="0.7" motionEffect="NPC/Skill/Timaion/Eff_Timaion_Attack_01_H_Cast.xml" faceTarget="0" />
-				<attack point="p0" targetCount="1" magicPathID="7126" attacktype="2" unrideOnHit="1">
+				<attack point="p0" targetCount="1" magicPathID="7126" attacktype="2" attackMethodType="1" unrideOnHit="1">
 					<rangeProperty rangeType="box" distance="750" height="200" width="600" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" bounceType="3" bounceCount="10" collision="450.000000,50.000000,70.000000" collisionAdd="0.000000,100.000000,0.000000" effect="NPC/Skill/Timaion/Eff_Timaion_Attack_01_H_Ball.xml" />
 					<damageProperty rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="101" />
@@ -2053,7 +2053,7 @@
 			<detectProperty rangeType="box" distance="400" height="200" width="600" />
 			<motion>
 				<motionProperty sequenceName="Attack_01_I" sequenceSpeed="0.7" motionEffect="NPC/Skill/Timaion/Eff_Timaion_Attack_01_H_Cast.xml" faceTarget="0" />
-				<attack point="p0" targetCount="1" magicPathID="7127" attacktype="2" unrideOnHit="1">
+				<attack point="p0" targetCount="1" magicPathID="7127" attacktype="2" attackMethodType="1" unrideOnHit="1">
 					<rangeProperty rangeType="box" distance="750" height="200" width="600" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" bounceType="3" bounceCount="10" collision="450.000000,50.000000,70.000000" collisionAdd="0.000000,100.000000,0.000000" effect="NPC/Skill/Timaion/Eff_Timaion_Attack_01_H_Ball.xml" />
 					<damageProperty rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="101" />
@@ -2064,7 +2064,7 @@
 			<detectProperty rangeType="box" distance="400" height="200" width="600" />
 			<motion>
 				<motionProperty sequenceName="Attack_01_I" sequenceSpeed="0.7" motionEffect="NPC/Skill/Timaion/Eff_Timaion_Attack_01_H_Cast.xml" faceTarget="0" />
-				<attack point="p0" targetCount="1" magicPathID="7128" attacktype="2" unrideOnHit="1">
+				<attack point="p0" targetCount="1" magicPathID="7128" attacktype="2" attackMethodType="1" unrideOnHit="1">
 					<rangeProperty rangeType="box" distance="750" height="200" width="600" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" bounceType="3" bounceCount="10" collision="450.000000,50.000000,70.000000" collisionAdd="0.000000,100.000000,0.000000" effect="NPC/Skill/Timaion/Eff_Timaion_Attack_01_H_Ball.xml" />
 					<damageProperty rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="101" />
@@ -2080,7 +2080,7 @@
 			<detectProperty rangeType="box" distance="400" height="200" width="600" />
 			<motion>
 				<motionProperty sequenceName="Attack_01_H" sequenceSpeed="0.7" motionEffect="NPC/Skill/Timaion/Eff_Timaion_Attack_01_H_Cast.xml" faceTarget="0" />
-				<attack point="p0" targetCount="1" magicPathID="7129" attacktype="2" unrideOnHit="1">
+				<attack point="p0" targetCount="1" magicPathID="7129" attacktype="2" attackMethodType="1" unrideOnHit="1">
 					<rangeProperty rangeType="box" distance="750" height="200" width="600" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" bounceType="3" bounceCount="10" collision="450.000000,50.000000,70.000000" collisionAdd="0.000000,100.000000,0.000000" effect="NPC/Skill/Timaion/Eff_Timaion_Attack_01_H_Ball.xml" />
 					<damageProperty rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="101" />
@@ -2091,7 +2091,7 @@
 			<detectProperty rangeType="box" distance="400" height="200" width="600" />
 			<motion>
 				<motionProperty sequenceName="Attack_01_H" sequenceSpeed="0.7" motionEffect="NPC/Skill/Timaion/Eff_Timaion_Attack_01_H_Cast.xml" faceTarget="0" />
-				<attack point="p0" targetCount="1" magicPathID="7130" attacktype="2" unrideOnHit="1">
+				<attack point="p0" targetCount="1" magicPathID="7130" attacktype="2" attackMethodType="1" unrideOnHit="1">
 					<rangeProperty rangeType="box" distance="750" height="200" width="600" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" bounceType="3" bounceCount="10" collision="450.000000,50.000000,70.000000" collisionAdd="0.000000,100.000000,0.000000" effect="NPC/Skill/Timaion/Eff_Timaion_Attack_01_H_Ball.xml" />
 					<damageProperty rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="101" />
@@ -2102,7 +2102,7 @@
 			<detectProperty rangeType="box" distance="400" height="200" width="600" />
 			<motion>
 				<motionProperty sequenceName="Attack_01_I" sequenceSpeed="0.7" motionEffect="NPC/Skill/Timaion/Eff_Timaion_Attack_01_H_Cast.xml" faceTarget="0" />
-				<attack point="p0" targetCount="1" magicPathID="7131" attacktype="2" unrideOnHit="1">
+				<attack point="p0" targetCount="1" magicPathID="7131" attacktype="2" attackMethodType="1" unrideOnHit="1">
 					<rangeProperty rangeType="box" distance="750" height="200" width="600" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" bounceType="3" bounceCount="10" collision="450.000000,50.000000,70.000000" collisionAdd="0.000000,100.000000,0.000000" effect="NPC/Skill/Timaion/Eff_Timaion_Attack_01_H_Ball.xml" />
 					<damageProperty rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="101" />
@@ -2113,7 +2113,7 @@
 			<detectProperty rangeType="box" distance="400" height="200" width="600" />
 			<motion>
 				<motionProperty sequenceName="Attack_01_I" sequenceSpeed="0.7" motionEffect="NPC/Skill/Timaion/Eff_Timaion_Attack_01_H_Cast.xml" faceTarget="0" />
-				<attack point="p0" targetCount="1" magicPathID="7132" attacktype="2" unrideOnHit="1">
+				<attack point="p0" targetCount="1" magicPathID="7132" attacktype="2" attackMethodType="1" unrideOnHit="1">
 					<rangeProperty rangeType="box" distance="750" height="200" width="600" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" bounceType="3" bounceCount="10" collision="450.000000,50.000000,70.000000" collisionAdd="0.000000,100.000000,0.000000" effect="NPC/Skill/Timaion/Eff_Timaion_Attack_01_H_Ball.xml" />
 					<damageProperty rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="101" />
@@ -2133,13 +2133,13 @@
 					<rangeProperty rangeType="box" distance="7000" height="900" width="4000" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" />
 					<damageProperty attackMaterial="1000" />
-					<actionSkill splash="1" level="1" skillID="60300228" delay="1500" removeDelay="2000" />
+					<actionSkill skillID="60300228" level="1" delay="1500" removeDelay="2000" />
 				</attack>
 			</motion>
 		</level>
 	</skill>
 	<skill id="60300228" comment="티마이온">
-		<basic>
+		<basic mainType="30">
 			<ui attackType="2" />
 		</basic>
 		<level value="1">
@@ -2149,7 +2149,7 @@
 				<attack point="p0" targetCount="50" attacktype="2" unrideOnHit="1">
 					<rangeProperty rangeType="box" distance="50" rangeAdd="0.000000,50.000000,0.000000" height="300" width="100" applyTarget="1" castTarget="1" />
 					<damageProperty rate="0.7" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="101" />
-					<conditionSkill level="1" skillID="62100236" skillTarget="2" skillOwner="1" />
+					<actionAdditional additionalID="62100236" level="1" skillTarget="2" skillOwner="1" />
 				</attack>
 			</motion>
 		</level>
@@ -2166,7 +2166,7 @@
 					<rangeProperty rangeType="cylinder" distance="30000" height="550" width="550" includeCaster="1" applyTarget="2" castTarget="2" />
 					<arrowProperty nonTarget="1" />
 					<damageProperty count="0" attackMaterial="2" />
-					<conditionSkill level="1" skillID="73000105" skillTarget="2" skillOwner="1" />
+					<actionAdditional additionalID="73000105" level="1" skillTarget="2" skillOwner="1" />
 				</attack>
 			</motion>
 		</level>
@@ -2183,7 +2183,7 @@
 					<rangeProperty rangeType="cylinder" distance="30000" height="550" width="550" includeCaster="1" applyTarget="2" castTarget="2" />
 					<arrowProperty nonTarget="1" />
 					<damageProperty count="0" attackMaterial="2" />
-					<conditionSkill level="1" skillID="73000107" skillTarget="2" skillOwner="1" />
+					<actionAdditional additionalID="73000107" level="1" skillTarget="2" skillOwner="1" />
 				</attack>
 			</motion>
 		</level>
@@ -2200,7 +2200,7 @@
 					<rangeProperty rangeType="cylinder" distance="30000" height="550" width="550" includeCaster="1" applyTarget="2" castTarget="2" />
 					<arrowProperty nonTarget="1" />
 					<damageProperty count="0" attackMaterial="2" />
-					<conditionSkill level="1" skillID="73000109" skillTarget="2" skillOwner="1" />
+					<actionAdditional additionalID="73000109" level="1" skillTarget="2" skillOwner="1" />
 				</attack>
 			</motion>
 		</level>
@@ -2217,7 +2217,7 @@
 					<rangeProperty rangeType="cylinder" distance="30000" height="550" width="550" includeCaster="1" applyTarget="2" castTarget="2" />
 					<arrowProperty nonTarget="1" />
 					<damageProperty count="0" attackMaterial="2" />
-					<conditionSkill level="1" skillID="73000111" skillTarget="2" skillOwner="1" />
+					<actionAdditional additionalID="73000111" level="1" skillTarget="2" skillOwner="1" />
 				</attack>
 			</motion>
 		</level>
@@ -2290,12 +2290,12 @@
 			<detectProperty rangeType="box" distance="1350" height="900" width="1350" />
 			<motion>
 				<motionProperty sequenceName="Attack_A" motionEffect="NPC/Skill/TimaionBlack/Eff_TimaionBlack_Attack_01_A_Cast.xml" faceTarget="0" />
-				<attack point="p0" targetCount="16" magicPathID="7180" attacktype="2" unrideOnHit="1">
+				<attack point="p0" targetCount="16" magicPathID="7180" attacktype="2" attackMethodType="1" unrideOnHit="1">
 					<rangeProperty rangeType="box" distance="1350" height="900" width="1350" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" collision="20.000000,10.000000,150.000000" collisionAdd="0.000000,10.000000,0.000000" effect="NPC/Skill/TimaionBlack/Eff_TimaionBlack_Attack_01_A_Ball.xml" effectRemain="NPC/Skill/TimaionBlack/Eff_TimaionBlack_Attack_01_A_Ball_Remain.xml" />
 					<damageProperty effectHit="NPC/Skill/TimaionBlack/Eff_TimaionBlack_Attack_01_A_Ball_Hit.xml" attackMaterial="1000" />
-					<conditionSkill level="1" skillID="62100240" skillTarget="2" skillOwner="1" />
-					<conditionSkill level="1" skillID="62100237" skillTarget="2" skillOwner="1" />
+					<actionAdditional additionalID="62100240" level="1" skillTarget="2" skillOwner="1" />
+					<actionAdditional additionalID="62100237" level="1" skillTarget="2" skillOwner="1" />
 				</attack>
 			</motion>
 		</level>
@@ -2308,12 +2308,12 @@
 			<detectProperty rangeType="box" distance="1350" height="900" width="1350" />
 			<motion>
 				<motionProperty sequenceName="Attack_A" motionEffect="NPC/Skill/TimaionBlack/Eff_TimaionBlack_Attack_01_A_Cast.xml" faceTarget="0" />
-				<attack point="p0" targetCount="9" magicPathID="7181" attacktype="2" unrideOnHit="1">
+				<attack point="p0" targetCount="9" magicPathID="7181" attacktype="2" attackMethodType="1" unrideOnHit="1">
 					<rangeProperty rangeType="box" distance="1350" height="900" width="1350" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" collision="20.000000,10.000000,150.000000" collisionAdd="0.000000,10.000000,0.000000" effect="NPC/Skill/TimaionBlack/Eff_TimaionBlack_Attack_01_A_Ball.xml" effectRemain="NPC/Skill/TimaionBlack/Eff_TimaionBlack_Attack_01_A_Ball_Remain.xml" />
 					<damageProperty effectHit="NPC/Skill/TimaionBlack/Eff_TimaionBlack_Attack_01_A_Ball_Hit.xml" attackMaterial="1000" />
-					<conditionSkill level="1" skillID="62100241" skillTarget="2" skillOwner="1" />
-					<conditionSkill level="1" skillID="62100237" skillTarget="2" skillOwner="1" />
+					<actionAdditional additionalID="62100241" level="1" skillTarget="2" skillOwner="1" />
+					<actionAdditional additionalID="62100237" level="1" skillTarget="2" skillOwner="1" />
 				</attack>
 			</motion>
 		</level>
@@ -2326,12 +2326,12 @@
 			<detectProperty rangeType="box" distance="1350" height="900" width="1350" />
 			<motion>
 				<motionProperty sequenceName="Attack_A" motionEffect="NPC/Skill/TimaionWhite/Eff_TimaionWhite_Attack_01_A_Cast.xml" faceTarget="0" />
-				<attack point="p0" targetCount="16" magicPathID="7182" attacktype="2" unrideOnHit="1">
+				<attack point="p0" targetCount="16" magicPathID="7182" attacktype="2" attackMethodType="1" unrideOnHit="1">
 					<rangeProperty rangeType="box" distance="1350" height="900" width="1350" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" collision="20.000000,10.000000,150.000000" collisionAdd="0.000000,10.000000,0.000000" effect="NPC/Skill/TimaionWhite/Eff_TimaionWhite_Attack_01_A_Ball.xml" effectRemain="NPC/Skill/TimaionWhite/Eff_TimaionWhite_Attack_01_A_Ball_Remain.xml" />
 					<damageProperty effectHit="NPC/Skill/TimaionWhite/Eff_TimaionWhite_Attack_01_A_Ball_Hit.xml" attackMaterial="1000" />
-					<conditionSkill level="1" skillID="62100242" skillTarget="2" skillOwner="1" />
-					<conditionSkill level="1" skillID="62100238" skillTarget="2" skillOwner="1" />
+					<actionAdditional additionalID="62100242" level="1" skillTarget="2" skillOwner="1" />
+					<actionAdditional additionalID="62100238" level="1" skillTarget="2" skillOwner="1" />
 				</attack>
 			</motion>
 		</level>
@@ -2344,12 +2344,12 @@
 			<detectProperty rangeType="box" distance="1350" height="900" width="1350" />
 			<motion>
 				<motionProperty sequenceName="Attack_A" motionEffect="NPC/Skill/TimaionWhite/Eff_TimaionWhite_Attack_01_A_Cast.xml" faceTarget="0" />
-				<attack point="p0" targetCount="9" magicPathID="7183" attacktype="2" unrideOnHit="1">
+				<attack point="p0" targetCount="9" magicPathID="7183" attacktype="2" attackMethodType="1" unrideOnHit="1">
 					<rangeProperty rangeType="box" distance="1350" height="900" width="1350" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" collision="20.000000,10.000000,150.000000" collisionAdd="0.000000,10.000000,0.000000" effect="NPC/Skill/TimaionWhite/Eff_TimaionWhite_Attack_01_A_Ball.xml" effectRemain="NPC/Skill/TimaionWhite/Eff_TimaionWhite_Attack_01_A_Ball_Remain.xml" />
 					<damageProperty effectHit="NPC/Skill/TimaionWhite/Eff_TimaionWhite_Attack_01_A_Ball_Hit.xml" attackMaterial="1000" />
-					<conditionSkill level="1" skillID="62100243" skillTarget="2" skillOwner="1" />
-					<conditionSkill level="1" skillID="62100238" skillTarget="2" skillOwner="1" />
+					<actionAdditional additionalID="62100243" level="1" skillTarget="2" skillOwner="1" />
+					<actionAdditional additionalID="62100238" level="1" skillTarget="2" skillOwner="1" />
 				</attack>
 			</motion>
 		</level>
@@ -2362,12 +2362,12 @@
 			<detectProperty rangeType="box" distance="1350" height="900" width="1350" />
 			<motion>
 				<motionProperty sequenceName="Attack_A" motionEffect="NPC/Skill/TimaionBlack/Eff_TimaionBlack_Attack_01_A_Cast.xml" faceTarget="0" />
-				<attack point="p0" targetCount="16" magicPathID="7171" attacktype="2" unrideOnHit="1">
+				<attack point="p0" targetCount="16" magicPathID="7171" attacktype="2" attackMethodType="1" unrideOnHit="1">
 					<rangeProperty rangeType="box" distance="1350" height="900" width="1350" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" collision="20.000000,10.000000,150.000000" collisionAdd="0.000000,10.000000,0.000000" effect="NPC/Skill/TimaionBlack/Eff_TimaionBlack_Attack_01_A_Ball.xml" effectRemain="NPC/Skill/TimaionBlack/Eff_TimaionBlack_Attack_01_A_Ball_Remain.xml" />
 					<damageProperty effectHit="NPC/Skill/TimaionBlack/Eff_TimaionBlack_Attack_01_A_Ball_Hit.xml" attackMaterial="1000" />
-					<conditionSkill level="1" skillID="62100213" skillTarget="2" skillOwner="1" />
-					<conditionSkill level="1" skillID="62100207" skillTarget="2" skillOwner="1" />
+					<actionAdditional additionalID="62100213" level="1" skillTarget="2" skillOwner="1" />
+					<actionAdditional additionalID="62100207" level="1" skillTarget="2" skillOwner="1" />
 				</attack>
 			</motion>
 		</level>
@@ -2380,12 +2380,12 @@
 			<detectProperty rangeType="box" distance="1350" height="900" width="1350" />
 			<motion>
 				<motionProperty sequenceName="Attack_A" motionEffect="NPC/Skill/TimaionBlack/Eff_TimaionBlack_Attack_01_A02_Cast.xml" faceTarget="0" />
-				<attack point="p0" targetCount="9" magicPathID="7172" attacktype="2" unrideOnHit="1">
+				<attack point="p0" targetCount="9" magicPathID="7172" attacktype="2" attackMethodType="1" unrideOnHit="1">
 					<rangeProperty rangeType="box" distance="1350" height="900" width="1350" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" collision="20.000000,10.000000,150.000000" collisionAdd="0.000000,10.000000,0.000000" effect="NPC/Skill/TimaionBlack/Eff_TimaionBlack_Attack_01_A_Ball.xml" effectRemain="NPC/Skill/TimaionBlack/Eff_TimaionBlack_Attack_01_A_Ball_Remain.xml" />
 					<damageProperty effectHit="NPC/Skill/TimaionBlack/Eff_TimaionBlack_Attack_01_A_Ball_Hit.xml" attackMaterial="1000" />
-					<conditionSkill level="1" skillID="62100214" skillTarget="2" skillOwner="1" />
-					<conditionSkill level="1" skillID="62100207" skillTarget="2" skillOwner="1" />
+					<actionAdditional additionalID="62100214" level="1" skillTarget="2" skillOwner="1" />
+					<actionAdditional additionalID="62100207" level="1" skillTarget="2" skillOwner="1" />
 				</attack>
 			</motion>
 		</level>
@@ -2398,12 +2398,12 @@
 			<detectProperty rangeType="box" distance="1350" height="900" width="1350" />
 			<motion>
 				<motionProperty sequenceName="Attack_A" motionEffect="NPC/Skill/TimaionWhite/Eff_TimaionWhite_Attack_01_A_Cast.xml" faceTarget="0" />
-				<attack point="p0" targetCount="16" magicPathID="7173" attacktype="2" unrideOnHit="1">
+				<attack point="p0" targetCount="16" magicPathID="7173" attacktype="2" attackMethodType="1" unrideOnHit="1">
 					<rangeProperty rangeType="box" distance="1350" height="900" width="1350" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" collision="20.000000,10.000000,150.000000" collisionAdd="0.000000,10.000000,0.000000" effect="NPC/Skill/TimaionWhite/Eff_TimaionWhite_Attack_01_A_Ball.xml" effectRemain="NPC/Skill/TimaionWhite/Eff_TimaionWhite_Attack_01_A_Ball_Remain.xml" />
 					<damageProperty effectHit="NPC/Skill/TimaionWhite/Eff_TimaionWhite_Attack_01_A_Ball_Hit.xml" attackMaterial="1000" />
-					<conditionSkill level="1" skillID="62100215" skillTarget="2" skillOwner="1" />
-					<conditionSkill level="1" skillID="62100208" skillTarget="2" skillOwner="1" />
+					<actionAdditional additionalID="62100215" level="1" skillTarget="2" skillOwner="1" />
+					<actionAdditional additionalID="62100208" level="1" skillTarget="2" skillOwner="1" />
 				</attack>
 			</motion>
 		</level>
@@ -2416,12 +2416,12 @@
 			<detectProperty rangeType="box" distance="1350" height="900" width="1350" />
 			<motion>
 				<motionProperty sequenceName="Attack_A" motionEffect="NPC/Skill/TimaionWhite/Eff_TimaionWhite_Attack_01_A02_Cast.xml" faceTarget="0" />
-				<attack point="p0" targetCount="9" magicPathID="7174" attacktype="2" unrideOnHit="1">
+				<attack point="p0" targetCount="9" magicPathID="7174" attacktype="2" attackMethodType="1" unrideOnHit="1">
 					<rangeProperty rangeType="box" distance="1350" height="900" width="1350" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" collision="20.000000,10.000000,150.000000" collisionAdd="0.000000,10.000000,0.000000" effect="NPC/Skill/TimaionWhite/Eff_TimaionWhite_Attack_01_A_Ball.xml" effectRemain="NPC/Skill/TimaionWhite/Eff_TimaionWhite_Attack_01_A_Ball_Remain.xml" />
 					<damageProperty effectHit="NPC/Skill/TimaionWhite/Eff_TimaionWhite_Attack_01_A_Ball_Hit.xml" attackMaterial="1000" />
-					<conditionSkill level="1" skillID="62100216" skillTarget="2" skillOwner="1" />
-					<conditionSkill level="1" skillID="62100208" skillTarget="2" skillOwner="1" />
+					<actionAdditional additionalID="62100216" level="1" skillTarget="2" skillOwner="1" />
+					<actionAdditional additionalID="62100208" level="1" skillTarget="2" skillOwner="1" />
 				</attack>
 			</motion>
 		</level>
@@ -2434,7 +2434,7 @@
 			<detectProperty rangeType="box" distance="7000" height="200" width="600" />
 			<motion>
 				<motionProperty faceTarget="0" />
-				<attack point="p0" targetCount="1" magicPathID="6470" attacktype="2" unrideOnHit="1">
+				<attack point="p0" targetCount="1" magicPathID="6470" attacktype="2" attackMethodType="1" unrideOnHit="1">
 					<rangeProperty rangeType="box" distance="7000" height="200" width="600" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" bounceType="3" bounceCount="10" collision="450.000000,50.000000,100.000000" collisionAdd="0.000000,100.000000,0.000000" effect="NPC/Skill/EpicQuest_Dummy/Eff_EpicQuest_Skill_Ball.xml" />
 					<damageProperty rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="101" />
@@ -2445,7 +2445,7 @@
 			<detectProperty rangeType="box" distance="7000" height="200" width="600" />
 			<motion>
 				<motionProperty faceTarget="0" />
-				<attack point="p0" targetCount="1" magicPathID="6471" attacktype="2" unrideOnHit="1">
+				<attack point="p0" targetCount="1" magicPathID="6471" attacktype="2" attackMethodType="1" unrideOnHit="1">
 					<rangeProperty rangeType="box" distance="7000" height="200" width="600" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" bounceType="3" bounceCount="10" collision="450.000000,50.000000,100.000000" collisionAdd="0.000000,100.000000,0.000000" effect="NPC/Skill/EpicQuest_Dummy/Eff_EpicQuest_Skill_Ball.xml" />
 					<damageProperty rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="101" />
@@ -2456,7 +2456,7 @@
 			<detectProperty rangeType="box" distance="7000" height="200" width="600" />
 			<motion>
 				<motionProperty faceTarget="0" />
-				<attack point="p0" targetCount="1" magicPathID="6472" attacktype="2" unrideOnHit="1">
+				<attack point="p0" targetCount="1" magicPathID="6472" attacktype="2" attackMethodType="1" unrideOnHit="1">
 					<rangeProperty rangeType="box" distance="7000" height="200" width="600" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" bounceType="3" bounceCount="10" collision="450.000000,50.000000,100.000000" collisionAdd="0.000000,100.000000,0.000000" effect="NPC/Skill/EpicQuest_Dummy/Eff_EpicQuest_Skill_Ball.xml" />
 					<damageProperty rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="101" />
@@ -2539,7 +2539,7 @@
 			<detectProperty rangeType="box" distance="400" height="200" width="600" />
 			<motion>
 				<motionProperty sequenceName="Attack_01_H" motionEffect="NPC/Skill/Timaion/Eff_Timaion_Attack_01_H_Cast.xml" faceTarget="0" />
-				<attack point="p0" targetCount="1" magicPathID="7103" attacktype="2" unrideOnHit="1">
+				<attack point="p0" targetCount="1" magicPathID="7103" attacktype="2" attackMethodType="1" unrideOnHit="1">
 					<rangeProperty rangeType="box" distance="750" height="200" width="600" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" bounceType="3" bounceCount="10" collision="580.000000,50.000000,150.000000" collisionAdd="0.000000,100.000000,0.000000" effect="NPC/Skill/Timaion/Eff_Timaion_Attack_01_H_Ball.xml" />
 					<damageProperty rate="0.8" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="101" />
@@ -2555,7 +2555,7 @@
 			<detectProperty rangeType="box" distance="400" height="200" width="600" />
 			<motion>
 				<motionProperty sequenceName="Attack_01_I" motionEffect="NPC/Skill/Timaion/Eff_Timaion_Attack_01_I_Cast.xml" faceTarget="0" />
-				<attack point="p0" targetCount="1" magicPathID="7104" attacktype="2" unrideOnHit="1">
+				<attack point="p0" targetCount="1" magicPathID="7104" attacktype="2" attackMethodType="1" unrideOnHit="1">
 					<rangeProperty rangeType="box" distance="750" height="200" width="600" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" bounceType="3" bounceCount="10" collision="580.000000,50.000000,150.000000" collisionAdd="0.000000,100.000000,0.000000" effect="NPC/Skill/Timaion/Eff_Timaion_Attack_01_I_Ball.xml" />
 					<damageProperty rate="0.8" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="101" />
@@ -2571,7 +2571,7 @@
 			<detectProperty rangeType="box" distance="400" height="200" width="600" />
 			<motion>
 				<motionProperty sequenceName="Attack_01_H" motionEffect="NPC/Skill/Timaion/Eff_Timaion_Attack_01_H_Cast02.xml" faceTarget="0" />
-				<attack point="p0" targetCount="1" magicPathID="7105" attacktype="2" unrideOnHit="1">
+				<attack point="p0" targetCount="1" magicPathID="7105" attacktype="2" attackMethodType="1" unrideOnHit="1">
 					<rangeProperty rangeType="box" distance="750" height="200" width="600" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" bounceType="3" bounceCount="10" collision="580.000000,50.000000,150.000000" collisionAdd="0.000000,100.000000,0.000000" effect="NPC/Skill/Timaion/Eff_Timaion_Attack_01_H_Ball.xml" />
 					<damageProperty rate="0.8" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="101" />
@@ -2587,7 +2587,7 @@
 			<detectProperty rangeType="box" distance="400" height="200" width="600" />
 			<motion>
 				<motionProperty sequenceName="Attack_01_I" motionEffect="NPC/Skill/Timaion/Eff_Timaion_Attack_01_I_Cast02.xml" faceTarget="0" />
-				<attack point="p0" targetCount="1" magicPathID="7106" attacktype="2" unrideOnHit="1">
+				<attack point="p0" targetCount="1" magicPathID="7106" attacktype="2" attackMethodType="1" unrideOnHit="1">
 					<rangeProperty rangeType="box" distance="750" height="200" width="600" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" bounceType="3" bounceCount="10" collision="580.000000,50.000000,150.000000" collisionAdd="0.000000,100.000000,0.000000" effect="NPC/Skill/Timaion/Eff_Timaion_Attack_01_I_Ball.xml" />
 					<damageProperty rate="0.8" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="101" />
@@ -2603,12 +2603,12 @@
 			<detectProperty rangeType="box" distance="1350" height="900" width="1350" />
 			<motion>
 				<motionProperty sequenceName="Attack_01_D" motionEffect="NPC/Skill/Timaion/Eff_Timaion_Attack_01_D_Cast.xml" faceTarget="0" />
-				<attack point="p0" targetCount="6" magicPathID="7110" attacktype="2" unrideOnHit="1">
+				<attack point="p0" targetCount="6" magicPathID="7110" attacktype="2" attackMethodType="1" unrideOnHit="1">
 					<rangeProperty rangeType="box" distance="1350" height="900" width="1350" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" collision="50.000000,20.000000,150.000000" collisionAdd="0.000000,30.000000,0.000000" effect="NPC/Skill/Timaion/Eff_Timaion_Attack_01_D_Ball.xml" effectRemain="NPC/Skill/Timaion/Eff_Timaion_Attack_01_D_Ball_Remain.xml" />
 					<damageProperty effectHit="NPC/Skill/Timaion/Eff_Timaion_Attack_01_D_Ball_Hit.xml" attackMaterial="1000" />
-					<conditionSkill level="1" skillID="62100220" skillTarget="2" skillOwner="1" />
-					<conditionSkill level="1" skillID="62100228" skillTarget="2" skillOwner="1" />
+					<actionAdditional additionalID="62100220" level="1" skillTarget="2" skillOwner="1" />
+					<actionAdditional additionalID="62100228" level="1" skillTarget="2" skillOwner="1" />
 				</attack>
 			</motion>
 		</level>
@@ -2621,12 +2621,12 @@
 			<detectProperty rangeType="box" distance="1350" height="900" width="1350" />
 			<motion>
 				<motionProperty sequenceName="Attack_01_E" motionEffect="NPC/Skill/Timaion/Eff_Timaion_Attack_01_E_Cast.xml" faceTarget="0" />
-				<attack point="p0" targetCount="6" magicPathID="7113" attacktype="2" unrideOnHit="1">
+				<attack point="p0" targetCount="6" magicPathID="7113" attacktype="2" attackMethodType="1" unrideOnHit="1">
 					<rangeProperty rangeType="box" distance="1350" height="900" width="1350" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" collision="50.000000,20.000000,150.000000" collisionAdd="0.000000,30.000000,0.000000" effect="NPC/Skill/Timaion/Eff_Timaion_Attack_01_E_Ball.xml" effectRemain="NPC/Skill/Timaion/Eff_Timaion_Attack_01_E_Ball_Remain.xml" />
 					<damageProperty effectHit="NPC/Skill/Timaion/Eff_Timaion_Attack_01_E_Ball_Hit.xml" attackMaterial="1000" />
-					<conditionSkill level="1" skillID="62100221" skillTarget="2" skillOwner="1" />
-					<conditionSkill level="1" skillID="62100229" skillTarget="2" skillOwner="1" />
+					<actionAdditional additionalID="62100221" level="1" skillTarget="2" skillOwner="1" />
+					<actionAdditional additionalID="62100229" level="1" skillTarget="2" skillOwner="1" />
 				</attack>
 			</motion>
 		</level>
@@ -2671,12 +2671,12 @@
 			<detectProperty rangeType="box" distance="1350" height="900" width="1350" />
 			<motion>
 				<motionProperty sequenceName="Attack_A" motionEffect="NPC/Skill/TimaionBlack/Eff_TimaionBlack_Attack_01_A_Cast.xml" faceTarget="0" />
-				<attack point="p0" targetCount="16" magicPathID="7171" attacktype="2" unrideOnHit="1">
+				<attack point="p0" targetCount="16" magicPathID="7171" attacktype="2" attackMethodType="1" unrideOnHit="1">
 					<rangeProperty rangeType="box" distance="1350" height="900" width="1350" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" collision="20.000000,10.000000,150.000000" collisionAdd="0.000000,10.000000,0.000000" effect="NPC/Skill/TimaionBlack/Eff_TimaionBlack_Attack_01_A_Ball.xml" effectRemain="NPC/Skill/TimaionBlack/Eff_TimaionBlack_Attack_01_A_Ball_Remain.xml" />
 					<damageProperty effectHit="NPC/Skill/TimaionBlack/Eff_TimaionBlack_Attack_01_A_Ball_Hit.xml" attackMaterial="1000" />
-					<conditionSkill level="1" skillID="62100222" skillTarget="2" skillOwner="1" />
-					<conditionSkill level="1" skillID="62100228" skillTarget="2" skillOwner="1" />
+					<actionAdditional additionalID="62100222" level="1" skillTarget="2" skillOwner="1" />
+					<actionAdditional additionalID="62100228" level="1" skillTarget="2" skillOwner="1" />
 				</attack>
 			</motion>
 		</level>
@@ -2689,12 +2689,12 @@
 			<detectProperty rangeType="box" distance="1350" height="900" width="1350" />
 			<motion>
 				<motionProperty sequenceName="Attack_A" motionEffect="NPC/Skill/TimaionWhite/Eff_TimaionWhite_Attack_01_A_Cast.xml" faceTarget="0" />
-				<attack point="p0" targetCount="16" magicPathID="7173" attacktype="2" unrideOnHit="1">
+				<attack point="p0" targetCount="16" magicPathID="7173" attacktype="2" attackMethodType="1" unrideOnHit="1">
 					<rangeProperty rangeType="box" distance="1350" height="900" width="1350" applyTarget="1" castTarget="1" />
 					<arrowProperty nonTarget="1" collision="20.000000,10.000000,150.000000" collisionAdd="0.000000,10.000000,0.000000" effect="NPC/Skill/TimaionWhite/Eff_TimaionWhite_Attack_01_A_Ball.xml" effectRemain="NPC/Skill/TimaionWhite/Eff_TimaionWhite_Attack_01_A_Ball_Remain.xml" />
 					<damageProperty effectHit="NPC/Skill/TimaionWhite/Eff_TimaionWhite_Attack_01_A_Ball_Hit.xml" attackMaterial="1000" />
-					<conditionSkill level="1" skillID="62100223" skillTarget="2" skillOwner="1" />
-					<conditionSkill level="1" skillID="62100229" skillTarget="2" skillOwner="1" />
+					<actionAdditional additionalID="62100223" level="1" skillTarget="2" skillOwner="1" />
+					<actionAdditional additionalID="62100229" level="1" skillTarget="2" skillOwner="1" />
 				</attack>
 			</motion>
 		</level>

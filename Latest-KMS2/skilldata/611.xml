@@ -102,7 +102,7 @@
 			<detectProperty rangeType="circle" distance="450" rangeOffset="0.000000,0.000000,50.000000" height="200" width="150" />
 			<motion>
 				<motionProperty sequenceName="Attack_01_A" sequenceSpeed="1.2" motionEffect="NPC/Skill/Pet_DevilHugeBlue/Eff_Pet_DevilHugeBlue_Attack_01_A.xml" faceTarget="0" />
-				<attack point="p0" targetCount="1" magicPathID="95009" attacktype="3" brokenOffence="1" unrideOnHit="1">
+				<attack point="p0" targetCount="1" magicPathID="95009" attacktype="3" attackMethodType="1" brokenOffence="1" unrideOnHit="1">
 					<rangeProperty rangeType="box" distance="450" height="200" width="200" applyTarget="1" castTarget="1" />
 					<arrowProperty rayPhysxTest="1" collision="50.000000,50.000000,50.000000" effect="NPC/Skill/Pet_DevilHugeBlue/Eff_Pet_DevilHugeBlue_Attack_01_A_Ball.xml" />
 					<damageProperty rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
@@ -248,7 +248,7 @@
 				<attack point="p0" targetCount="3" attacktype="3" brokenOffence="1" unrideOnHit="1">
 					<rangeProperty rangeType="cylinder" distance="150" height="150" applyTarget="1" castTarget="1" />
 					<damageProperty rate="14.2" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
-					<conditionSkill level="1" skillID="61100131" skillTarget="2" skillOwner="1" />
+					<actionAdditional additionalID="61100131" level="1" skillTarget="2" skillOwner="1" />
 				</attack>
 			</motion>
 		</level>
@@ -265,7 +265,7 @@
 				<attack point="p0" targetCount="3" attacktype="3" brokenOffence="1" unrideOnHit="1">
 					<rangeProperty rangeType="cylinder" distance="150" height="150" applyTarget="1" castTarget="1" />
 					<damageProperty rate="14.2" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
-					<conditionSkill level="1" skillID="61100132" skillTarget="2" skillOwner="1" />
+					<actionAdditional additionalID="61100132" level="1" skillTarget="2" skillOwner="1" />
 				</attack>
 			</motion>
 		</level>
@@ -588,7 +588,7 @@
 			<detectProperty rangeType="box" distance="600" rangeOffset="0.000000,0.000000,50.000000" height="50" width="150" />
 			<motion>
 				<motionProperty sequenceName="Attack_01_B" motionEffect="NPC/Skill/Pet_Balrog/Eff_Pet_Balrog_01_Attack_01_B_Cast.xml" />
-				<attack point="p0" targetCount="1" magicPathID="61110290" attacktype="3" brokenOffence="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+				<attack point="p0" targetCount="1" magicPathID="61110290" attacktype="3" attackMethodType="1" brokenOffence="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
 					<rangeProperty rangeType="box" distance="600" rangeOffset="0.000000,0.000000,50.000000" height="50" width="150" applyTarget="1" castTarget="1" />
 					<arrowProperty explosion="1" nonTarget="1" collision="50.000000,25.000000,150.000000" collisionAdd="0.000000,25.000000,50.000000" effect="NPC/Skill/Pet_Balrog/Eff_Pet_Balrog_01_Attack_01_B_Ball.xml" />
 					<damageProperty rate="1.005" effectHit="NPC/Skill/Pet_Balrog/Eff_Pet_Balrog_01_Attack_01_B_Ball_Hit.xml" attackMaterial="100" />
@@ -606,7 +606,7 @@
 			<detectProperty rangeType="box" distance="600" rangeOffset="0.000000,0.000000,50.000000" height="50" width="150" />
 			<motion>
 				<motionProperty sequenceName="Attack_01_B" motionEffect="NPC/Skill/Pet_BalrogMagicBurster/Eff_Pet_BalrogMagicBurster_Attack_01_B_Cast.xml" />
-				<attack point="p0" targetCount="1" magicPathID="61110300" attacktype="3" brokenOffence="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+				<attack point="p0" targetCount="1" magicPathID="61110300" attacktype="3" attackMethodType="1" brokenOffence="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
 					<rangeProperty rangeType="box" distance="600" rangeOffset="0.000000,0.000000,50.000000" height="50" width="150" applyTarget="1" castTarget="1" />
 					<arrowProperty explosion="1" nonTarget="1" collision="50.000000,25.000000,150.000000" collisionAdd="0.000000,25.000000,50.000000" effect="NPC/Skill/Pet_BalrogMagicBurster/Eff_Pet_BalrogMagicBurster_Attack_01_B_Ball.xml" />
 					<damageProperty rate="1.03" effectHit="NPC/Skill/Pet_BalrogMagicBurster/Eff_Pet_BalrogMagicBurster_Attack_01_B_Ball_Hit.xml" attackMaterial="100" />
@@ -624,7 +624,7 @@
 			<detectProperty rangeType="box" distance="600" rangeOffset="0.000000,0.000000,50.000000" height="50" width="150" />
 			<motion>
 				<motionProperty sequenceName="Attack_01_B" motionEffect="NPC/Skill/Pet_BalrogMagicBurster/Eff_Pet_BalrogMagicBurster_Attack_01_B_Cast.xml" />
-				<attack point="p0" targetCount="1" magicPathID="61110310" attacktype="3" brokenOffence="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+				<attack point="p0" targetCount="1" magicPathID="61110310" attacktype="3" attackMethodType="1" brokenOffence="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
 					<rangeProperty rangeType="box" distance="600" rangeOffset="0.000000,0.000000,50.000000" height="50" width="150" applyTarget="1" castTarget="1" />
 					<arrowProperty explosion="1" nonTarget="1" collision="50.000000,25.000000,150.000000" collisionAdd="0.000000,25.000000,50.000000" effect="NPC/Skill/Pet_BalrogMagicBurster/Eff_Pet_BalrogMagicBurster_Attack_01_B_Ball.xml" />
 					<damageProperty rate="1" effectHit="NPC/Skill/Pet_BalrogMagicBurster/Eff_Pet_BalrogMagicBurster_Attack_01_B_Ball_Hit.xml" attackMaterial="100" />
@@ -676,7 +676,7 @@
 			<detectProperty rangeType="circle" distance="450" rangeOffset="0.000000,0.000000,50.000000" height="200" width="150" />
 			<motion>
 				<motionProperty sequenceName="Attack_01_A" motionEffect="NPC/Skill/Pet_Drako_01/Eff_Pet_Drako_01_Attack_01_A_Cast_01.xml" faceTarget="0" />
-				<attack point="p0" targetCount="1" magicPathID="61000010" attacktype="3" brokenOffence="1" unrideOnHit="1">
+				<attack point="p0" targetCount="1" magicPathID="61000010" attacktype="3" attackMethodType="1" brokenOffence="1" unrideOnHit="1">
 					<rangeProperty rangeType="box" distance="450" height="200" width="150" applyTarget="1" castTarget="1" />
 					<arrowProperty rayPhysxTest="1" collision="50.000000,25.000000,125.000000" collisionAdd="0.000000,25.000000,25.000000" effect="NPC/Skill/Pet_Drako_01/Eff_Pet_Drako_01_Attack_01_A_Ball_01.xml" effectRemain="NPC/Skill/Pet_Drako_01/Eff_Pet_Drako_01_Attack_01_A_Ball_01_Remain.xml" />
 					<damageProperty rate="1.32" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
@@ -711,7 +711,7 @@
 			<detectProperty rangeType="circle" distance="450" rangeOffset="0.000000,0.000000,50.000000" height="200" width="150" />
 			<motion>
 				<motionProperty sequenceName="Attack_01_A" motionEffect="NPC/Skill/Pet_Griffon_01/Eff_Pet_Griffon_01_Attack_01_A_Cast_01.xml" faceTarget="0" />
-				<attack point="p0" targetCount="1" magicPathID="61000010" attacktype="3" brokenOffence="1" unrideOnHit="1">
+				<attack point="p0" targetCount="1" magicPathID="61000010" attacktype="3" attackMethodType="1" brokenOffence="1" unrideOnHit="1">
 					<rangeProperty rangeType="box" distance="450" height="200" width="150" applyTarget="1" castTarget="1" />
 					<arrowProperty rayPhysxTest="1" collision="50.000000,25.000000,125.000000" collisionAdd="0.000000,25.000000,25.000000" effect="NPC/Skill/Pet_Griffon_01/Eff_Pet_Griffon_01_Attack_01_A_Ball_01.xml" effectRemain="NPC/Skill/Pet_Griffon_01/Eff_Pet_Griffon_01_Attack_01_A_Ball_01_Remain.xml" />
 					<damageProperty rate="0.88" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
@@ -814,7 +814,7 @@
 			<detectProperty rangeType="circle" distance="450" rangeOffset="0.000000,0.000000,50.000000" height="200" width="150" />
 			<motion>
 				<motionProperty sequenceName="Attack_01_A" motionEffect="NPC/Skill/Pet_Minibean/Eff_Pet_Minibean_Attack_01_A_Cast_01.xml" faceTarget="0" />
-				<attack point="p0" targetCount="1" magicPathID="61000010" attacktype="3" brokenOffence="1" unrideOnHit="1">
+				<attack point="p0" targetCount="1" magicPathID="61000010" attacktype="3" attackMethodType="1" brokenOffence="1" unrideOnHit="1">
 					<rangeProperty rangeType="box" distance="450" height="200" width="150" applyTarget="1" castTarget="1" />
 					<arrowProperty rayPhysxTest="1" collision="50.000000,25.000000,125.000000" collisionAdd="0.000000,25.000000,25.000000" effect="NPC/Skill/Pet_Minibean/Eff_Pet_Minibean_Attack_01_A_Ball_01.xml" />
 					<damageProperty rate="1.72" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
@@ -832,7 +832,7 @@
 			<detectProperty rangeType="circle" distance="450" rangeOffset="0.000000,0.000000,50.000000" height="200" width="150" />
 			<motion>
 				<motionProperty sequenceName="Attack_01_A" motionEffect="NPC/Skill/Pet_HalloweenCarriage/Eff_Pet_HalloweenCarriage_Attack_01_A_Cast_01.xml" faceTarget="0" />
-				<attack point="p0" targetCount="1" magicPathID="61000000" attacktype="3" brokenOffence="1" unrideOnHit="1">
+				<attack point="p0" targetCount="1" magicPathID="61000000" attacktype="3" attackMethodType="1" brokenOffence="1" unrideOnHit="1">
 					<rangeProperty rangeType="box" distance="450" height="200" width="150" applyTarget="1" castTarget="1" />
 					<arrowProperty rayPhysxTest="1" collision="50.000000,25.000000,125.000000" collisionAdd="0.000000,25.000000,25.000000" effect="NPC/Skill/Pet_HalloweenCarriage/Eff_Pet_HalloweenCarriage_Attack_01_A_Ball_01.xml" effectRemain="NPC/Skill/Pet_HalloweenCarriage/Eff_Pet_HalloweenCarriage_Attack_01_A_Ball_Remain_01.xml" />
 					<damageProperty rate="0.745" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
@@ -930,7 +930,7 @@
 			</motion>
 			<motion>
 				<motionProperty sequenceName="Attack_02_A" motionEffect="NPC/Skill/Pet_SlimeAngelRainbow/Eff_Pet_SlimeAngelRainbow_Attack_01_A_Cast_01.xml" faceTarget="0" />
-				<attack point="p0" targetCount="1" magicPathID="61000020" attacktype="3" brokenOffence="1" unrideOnHit="1">
+				<attack point="p0" targetCount="1" magicPathID="61000020" attacktype="3" attackMethodType="1" brokenOffence="1" unrideOnHit="1">
 					<rangeProperty rangeType="box" distance="450" height="200" width="150" applyTarget="1" castTarget="1" />
 					<arrowProperty rayPhysxTest="1" collision="50.000000,25.000000,125.000000" collisionAdd="0.000000,25.000000,25.000000" effect="NPC/Skill/Pet_SlimeAngelRainbow/Eff_Pet_SlimeAngelRainbow_Attack_01_A_Ball_01.xml" effectRemain="NPC/Skill/Pet_SlimeAngelRainbow/Eff_Pet_SlimeAngelRainbow_Attack_01_A_Ball_Remain_01.xml" />
 					<damageProperty rate="1.265" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
@@ -1001,7 +1001,7 @@
 			<detectProperty rangeType="circle" distance="450" rangeOffset="0.000000,0.000000,50.000000" height="200" width="150" />
 			<motion>
 				<motionProperty sequenceName="Attack_01_A" motionEffect="NPC/Skill/Pet_PumpkinDevil/Eff_Pet_PumpkinDevil_Attack_01_A_Cast_01.xml" faceTarget="0" />
-				<attack point="p0" targetCount="1" magicPathID="61000020" attacktype="3" brokenOffence="1" unrideOnHit="1">
+				<attack point="p0" targetCount="1" magicPathID="61000020" attacktype="3" attackMethodType="1" brokenOffence="1" unrideOnHit="1">
 					<rangeProperty rangeType="box" distance="450" height="200" width="150" applyTarget="1" castTarget="1" />
 					<arrowProperty rayPhysxTest="1" collision="50.000000,25.000000,125.000000" collisionAdd="0.000000,25.000000,25.000000" effect="NPC/Skill/Pet_PumpkinDevil/Eff_Pet_PumpkinDevil_Attack_01_A_Ball_01.xml" effectRemain="NPC/Skill/Pet_PumpkinDevil/Eff_Pet_PumpkinDevil_Attack_01_A_Ball_Remain_01.xml" />
 					<damageProperty rate="0.85" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
@@ -1037,7 +1037,7 @@
 			<detectProperty rangeType="circle" distance="450" rangeOffset="0.000000,0.000000,50.000000" height="200" width="150" />
 			<motion>
 				<motionProperty sequenceName="Attack_01_A" motionEffect="NPC/Skill/Pet_Gigantika/Eff_Pet_Gigantika_Attack_01_A_Cast_01.xml" faceTarget="0" />
-				<attack point="p0" targetCount="1" magicPathID="61000020" attacktype="3" brokenOffence="1" unrideOnHit="1">
+				<attack point="p0" targetCount="1" magicPathID="61000020" attacktype="3" attackMethodType="1" brokenOffence="1" unrideOnHit="1">
 					<rangeProperty rangeType="box" distance="450" height="200" width="150" applyTarget="1" castTarget="1" />
 					<arrowProperty rayPhysxTest="1" collision="50.000000,25.000000,125.000000" collisionAdd="0.000000,25.000000,25.000000" effect="NPC/Skill/Pet_Gigantika/Eff_Pet_Gigantika_Attack_01_A_Ball_01.xml" effectRemain="NPC/Skill/Pet_Gigantika/Eff_Pet_Gigantika_Attack_01_A_Ball_01_Remain.xml" />
 					<damageProperty rate="0.605" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
@@ -1055,7 +1055,7 @@
 			<detectProperty rangeType="box" distance="700" rangeOffset="0.000000,0.000000,50.000000" height="50" width="450" />
 			<motion>
 				<motionProperty sequenceName="Attack_01_A" motionEffect="NPC/Skill/Pet_Zakum/Eff_ZakumWalkingArm_Attack_01_A.xml" faceTarget="0" />
-				<attack point="p0" targetCount="1" magicPathID="61110550" attacktype="3" brokenOffence="1" unrideOnHit="1">
+				<attack point="p0" targetCount="1" magicPathID="61110550" attacktype="3" attackMethodType="1" brokenOffence="1" unrideOnHit="1">
 					<rangeProperty rangeType="box" distance="700" rangeOffset="0.000000,0.000000,50.000000" height="50" width="450" applyTarget="1" castTarget="1" />
 					<arrowProperty explosion="1" nonTarget="1" collision="50.000000,25.000000,150.000000" collisionAdd="0.000000,25.000000,50.000000" effect="NPC/Skill/Pet_Zakum/Eff_ZakumWalkingArm_Attack_01_A_Ball.xml" />
 					<damageProperty rate="1.17" effectHit="NPC/Skill/Pet_Zakum/Eff_ZakumWalkingArm_Attack_01_A_Ball_Hit.xml" attackMaterial="106" />
@@ -1157,7 +1157,7 @@
 			<detectProperty rangeType="circle" distance="450" rangeOffset="0.000000,0.000000,50.000000" height="250" width="150" />
 			<motion>
 				<motionProperty sequenceName="Attack_01_A" motionEffect="NPC/Skill/Pet_CrystalHoverSpringMachine/Eff_CrystalHoverSpringMachine_Attack_01_A.xml" faceTarget="0" />
-				<attack point="p0" targetCount="1" magicPathID="61000020" attacktype="3" brokenOffence="1" unrideOnHit="1">
+				<attack point="p0" targetCount="1" magicPathID="61000020" attacktype="3" attackMethodType="1" brokenOffence="1" unrideOnHit="1">
 					<rangeProperty rangeType="box" distance="450" height="200" width="150" applyTarget="1" castTarget="1" />
 					<arrowProperty rayPhysxTest="1" collision="50.000000,35.000000,50.000000" collisionAdd="0.000000,35.000000,50.000000" effect="NPC/Skill/Pet_CrystalHoverSpringMachine/Eff_CrystalHoverSpringMachine_Attack_01_A_Ball.xml" />
 					<damageProperty rate="1.762" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
@@ -1175,7 +1175,7 @@
 			<detectProperty rangeType="box" distance="450" height="250" width="250" />
 			<motion>
 				<motionProperty sequenceName="Attack_01_A" motionEffect="NPC/Skill/Pet_KritiasTribeSling/Eff_KritiasTribeSling_Attack_01_A.xml" />
-				<attack point="p0" targetCount="1" magicPathID="61000020" attacktype="3" brokenOffence="1" unrideOnHit="1">
+				<attack point="p0" targetCount="1" magicPathID="61000020" attacktype="3" attackMethodType="1" brokenOffence="1" unrideOnHit="1">
 					<rangeProperty rangeType="box" distance="450" height="250" width="200" applyTarget="1" castTarget="1" />
 					<arrowProperty collision="50.000000,35.000000,50.000000" collisionAdd="0.000000,35.000000,50.000000" effect="NPC/Skill/Pet_KritiasTribeSling/Eff_KritiasTribeSling_Attack_01_A_Ball.xml" />
 					<damageProperty rate="1.366" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="104" />
@@ -1210,7 +1210,7 @@
 			<detectProperty rangeType="box" distance="400" height="250" width="150" />
 			<motion>
 				<motionProperty sequenceName="Attack_01_A" motionEffect="NPC/Skill/Pet_KritiasEarthwormBlue/Eff_KritiasEarthwormBlue_Attack_01_A.xml" faceTarget="0" />
-				<attack point="p0" targetCount="1" magicPathID="61000020" attacktype="3" brokenOffence="1" unrideOnHit="1">
+				<attack point="p0" targetCount="1" magicPathID="61000020" attacktype="3" attackMethodType="1" brokenOffence="1" unrideOnHit="1">
 					<rangeProperty rangeType="box" distance="450" height="250" width="150" applyTarget="1" castTarget="1" />
 					<arrowProperty collision="50.000000,35.000000,50.000000" collisionAdd="0.000000,35.000000,50.000000" effect="NPC/Skill/Pet_KritiasEarthwormBlue/Eff_KritiasEarthwormBlue_Attack_01_A_Ball.xml" />
 					<damageProperty rate="1.332" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
@@ -1262,7 +1262,7 @@
 			<detectProperty rangeType="box" distance="450" rangeOffset="0.000000,0.000000,50.000000" height="250" width="250" />
 			<motion>
 				<motionProperty sequenceName="Attack_01_A" motionEffect="NPC/Skill/Pet_CrystalSpringMachine/Eff_CrystalSpringMachine_Attack_01_A.xml" faceTarget="0" />
-				<attack point="p0" targetCount="1" magicPathID="61000020" attacktype="3" brokenOffence="1" unrideOnHit="1">
+				<attack point="p0" targetCount="1" magicPathID="61000020" attacktype="3" attackMethodType="1" brokenOffence="1" unrideOnHit="1">
 					<rangeProperty rangeType="box" distance="450" height="250" width="150" applyTarget="1" castTarget="1" />
 					<arrowProperty rayPhysxTest="1" collision="50.000000,35.000000,50.000000" collisionAdd="0.000000,35.000000,50.000000" effect="NPC/Skill/Pet_CrystalSpringMachine/Eff_CrystalSpringMachine_Attack_01_A_Ball.xml" />
 					<damageProperty rate="1.475" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
@@ -1314,7 +1314,7 @@
 			<detectProperty rangeType="box" distance="450" rangeAdd="0.000000,25.000000,0.000000" height="250" width="200" />
 			<motion>
 				<motionProperty sequenceName="Attack_01_A" motionEffect="NPC/Skill/Pet_MekaShooter/Eff_MekaShooter_Attack_01_A.xml" faceTarget="0" />
-				<attack point="p0" targetCount="1" magicPathID="61000020" attacktype="3" brokenOffence="1" unrideOnHit="1">
+				<attack point="p0" targetCount="1" magicPathID="61000020" attacktype="3" attackMethodType="1" brokenOffence="1" unrideOnHit="1">
 					<rangeProperty rangeType="box" distance="450" height="250" width="150" applyTarget="1" castTarget="1" />
 					<arrowProperty collision="50.000000,35.000000,50.000000" collisionAdd="0.000000,35.000000,50.000000" effect="NPC/Skill/Pet_MekaShooter/Eff_MekaShooter_Attack_01_A_Ball.xml" />
 					<damageProperty rate="1.174" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="8" />
@@ -1438,7 +1438,7 @@
 			<detectProperty rangeType="circle" distance="450" rangeOffset="0.000000,0.000000,50.000000" height="200" width="150" />
 			<motion>
 				<motionProperty sequenceName="Attack_01_A" motionEffect="NPC/Skill/Pet_SpringFairy/Eff_Pet_SpringFairy_01_A_Cast_01.xml" faceTarget="0" />
-				<attack point="p0" targetCount="1" magicPathID="61000020" attacktype="3" brokenOffence="1" unrideOnHit="1">
+				<attack point="p0" targetCount="1" magicPathID="61000020" attacktype="3" attackMethodType="1" brokenOffence="1" unrideOnHit="1">
 					<rangeProperty rangeType="box" distance="450" height="200" width="150" applyTarget="1" castTarget="1" />
 					<arrowProperty rayPhysxTest="1" collision="50.000000,25.000000,125.000000" collisionAdd="0.000000,25.000000,25.000000" effect="NPC/Skill/Pet_SpringFairy/Eff_Pet_SpringFairy_01_A_Ball_01.xml" effectRemain="NPC/Skill/Pet_SpringFairy/Eff_Pet_SpringFairy_01_A_Ball_01_Remain.xml" />
 					<damageProperty rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
