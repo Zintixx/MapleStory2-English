@@ -94,6 +94,7 @@
 	<key id="s_err_lack_mentor_token" value="멘토 포인트가 부족합니다." />
 	<key id="s_err_lack_mentee_token" value="멘티 포인트가 부족합니다." />
 	<key id="s_err_lack_star_point" value="별 포인트가 부족합니다." />
+	<key id="s_err_lack_guild_event_fund" value="이벤트 길드 기금이 부족합니다." />
 	<key id="s_err_not_learn_skill" value="아직 습득하지 않은 스킬입니다." />
 	<key id="s_item_err_code" value="시스템 오류 : 아이템. code = {0}" />
 	<key id="s_err_invalid_item" value="아이템이 존재하지 않습니다." />
@@ -777,15 +778,18 @@
 	<key id="s_guild_ui_skill_require_level" value="{0}레벨" />
 	<key id="s_guild_ui_event_max_user_count" value="최대 인원 {0}명" />
 	<key id="s_guild_ui_info_guild_exp" value="길드 경험치 {0} / {1}" />
+	<key id="s_guild_ui_info_guild_exp_event" value="획득시 경험치 &lt;FONT color=&apos;#FF4040&apos;&gt;x{0}배&lt;/FONT&gt;\n길드 경험치 {1} / {2}" />
 	<key id="s_guild_ui_info_guild_exp_max" value="길드 경험치 MAX" />
 	<key id="s_guild_ui_info_guild_exp_tooltip" value="&lt;FONT color=&apos;#FFD200&apos; size=&apos;15&apos; &gt;길드 경험치&lt;/FONT&gt;\n&lt;FONT size=&apos;3&apos;&gt; &lt;/FONT&gt;\n- 출석 시 획득\n- 미니 게임 대전 참여 시 획득\n- 길드 퀘스트 완료 시 획득\n" />
 	<key id="s_guild_ui_info_guild_fund_tooltip" value="&lt;FONT color=&apos;#FFD200&apos; size=&apos;15&apos; &gt;길드 기금\n최대금액: {0}&lt;/FONT&gt;\n&lt;FONT size=&apos;3&apos;&gt; &lt;/FONT&gt;\n길드 레벨이 2, 5, 8, 11, 15에 도달 시 길드 기금 최대치가 증가합니다.\n\n- 출석 시 획득\n- 기부 시 획득\n- 미니 게임 대전 참여 시 획득\n- 길드 퀘스트 완료 시 획득\n" />
 	<key id="s_guild_ui_info_guild_raid_tooltip" value="- 길드 레이드 클리어 시 획득" />
 	<key id="s_guild_ui_search_search_name" value="검색할 이름을 입력하세요." />
 	<key id="s_guild_ui_skill_use_skill" value="&lt;p align=&apos;center&apos;&gt;&lt;FONT color=&apos;#FFA200&apos;&gt;{0}&lt;/FONT&gt;&lt;Img Src=&apos;export_icon_guild_fund&apos; vspace=&apos;-4&apos;&gt;&lt;/Img&gt;을 사용하여 &lt;FONT color=&apos;#FFA200&apos;&gt;{1}&lt;/FONT&gt; 스킬을 사용하시겠습니까?\n\n※ 길드 기금 금액과 버프 종류를 꼭 확인해주세요.&lt;/p&gt;" />
+	<key id="s_guild_ui_skill_use_skill_event" value="&lt;p align=&apos;center&apos;&gt;&lt;FONT color=&apos;#FFA200&apos;&gt;{0}&lt;/FONT&gt;&lt;Img Src=&apos;export_common_icon_item_90000026&apos; vspace=&apos;-4&apos;&gt;&lt;/Img&gt;을 사용하여 &lt;FONT color=&apos;#FFA200&apos;&gt;{1}&lt;/FONT&gt; 스킬을 사용하시겠습니까?\n\n※ 길드 기금 금액과 버프 종류를 꼭 확인해주세요.&lt;/p&gt;" />
 	<key id="s_guild_ui_skill_use_personal_skill" value="&lt;FONT color=&apos;#FFA200&apos;&gt;{0}&lt;/FONT&gt;&lt;Img Src=&apos;export_common_icon_meso&apos; vspace=&apos;-4&apos;&gt;&lt;/Img&gt;을 사용하여 &lt;FONT color=&apos;#FFA200&apos;&gt;{1}&lt;/FONT&gt; 스킬을 사용하시겠습니까?\n\n※ 사용 시 메소가 소비됩니다." />
 	<key id="s_guild_ui_skill_use_skill_term_agree" value="주의 사항을 충분히 읽고 확인했습니다." />
 	<key id="s_guild_ui_skill_upgrade_popup" value="&lt;FONT color=&apos;#FFA200&apos;&gt;{0}&lt;/FONT&gt;&lt;Img Src=&apos;export_icon_guild_fund&apos; vspace=&apos;-4&apos;&gt;&lt;/Img&gt;을 사용하여\n&lt;FONT color=&apos;#FFA200&apos;&gt;{1}&lt;/FONT&gt; 스킬을 &lt;FONT color=&apos;#FFA200&apos;&gt;레벨 {2}&lt;/FONT&gt; 스킬로\n업그레이드를 진행하시겠습니까?" />
+	<key id="s_guild_ui_event_skill_upgrade_popup" value="&lt;FONT color=&apos;#FFA200&apos;&gt;{0}&lt;/FONT&gt;&lt;Img Src=&apos;export_common_icon_item_90000026&apos; vspace=&apos;-4&apos;&gt;&lt;/Img&gt;을 사용하여\n&lt;FONT color=&apos;#FFA200&apos;&gt;{1}&lt;/FONT&gt; 스킬을 &lt;FONT color=&apos;#FFA200&apos;&gt;레벨 {2}&lt;/FONT&gt; 스킬로\n업그레이드를 진행하시겠습니까?" />
 	<key id="s_guild_ui_house_upgrade_upgrade" value="업그레이드\n{0} &lt;Img Src=&apos;export_icon_guild_fund&apos; vspace=&apos;-6&apos;&gt;&lt;/Img&gt;" />
 	<key id="s_guild_ui_house_change_theme" value="테마 변경\n{0} &lt;Img Src=&apos;export_icon_guild_fund&apos; vspace=&apos;-6&apos;&gt;&lt;/Img&gt;" />
 	<key id="s_guild_ui_house_use_upgrade" value="&lt;FONT color=&apos;#FFA200&apos;&gt;{0}&lt;/FONT&gt;&lt;Img Src=&apos;export_icon_guild_fund&apos; vspace=&apos;-4&apos;&gt;&lt;/Img&gt;을 사용하여 &lt;FONT color=&apos;#FFA200&apos;&gt;{2}&lt;/FONT&gt; 테마로 업그레이드 하시겠습니까?" />
@@ -843,6 +847,7 @@
 	<key id="s_guild_err_fail_this_field" value="대상이 초대 받을 수 없는 위치에 있습니다." />
 	<key id="s_guild_err_not_enough_guild_level" value="길드 레벨이 부족합니다." />
 	<key id="s_guild_err_not_enough_guild_fund" value="길드 기금이 부족합니다." />
+	<key id="s_guild_err_not_enough_guild_event_fund" value="길드 이벤트 기금이 부족합니다." />
 	<key id="s_guild_err_cannot_use_skill" value="지금은 길드 스킬을 사용할 수 없습니다." />
 	<key id="s_guild_err_cannot_open_event_create_date" value="길드를 생성한지 24시간 이후에 사용할 수 있습니다." />
 	<key id="s_guild_err_too_short_to_search" value="최소 2글자 이상 입력해주세요." />
@@ -2146,7 +2151,6 @@
 	<key id="s_word_skill" value="스킬" />
 	<key id="s_word_skill_active" value="액티브" />
 	<key id="s_word_skill_passive" value="패시브" />
-	<key id="s_word_skill_move" value="액션" />
 	<key id="s_word_cooltime" value="쿨타임 {0}초" />
 	<key id="s_word_needs" value="필요 무기 : {0}" />
 	<key id="s_word_enable_jobs" value="직업 : {0}" />
@@ -4920,6 +4924,7 @@
 	<key id="s_play_instrument_instrument_category_name_28" value="심벌즈" feature="drumInstrument" />
 	<key id="s_play_instrument_instrument_category_name_29" value="큰북" feature="drumInstrument" />
 	<key id="s_play_instrument_instrument_category_name_30" value="작은북" feature="drumInstrument" />
+	<key id="s_play_instrument_instrument_category_name_35" value="프렛리스 베이스 기타" />
 	<key id="s_writemusic_complete_make" value="악보 제작을 완료했습니다." />
 	<key id="s_writemusic_playline_show_per_time" value="시간으로 보기" />
 	<key id="s_writemusic_playline_show_per_bar" value="마디로 보기" />
@@ -6405,16 +6410,6 @@
 	<key id="s_unlimited_enchant_err_lack_meso" value="메소가 부족합니다." feature="UnlimitedEnchant" />
 	<key id="s_unlimited_enchant_err_max_unlimited_grade" value="한계돌파 최대 단계에 도달한 장비 입니다." feature="UnlimitedEnchant" />
 	<key id="s_unlimited_enchant_err_system" value="시스템 오류 {0}" feature="UnlimitedEnchant" />
-	<key id="s_payback_dialog_period" value="기간: {0}년 {1}월 {2}일 ~ {3}년 {4}월 {5}일" feature="Payback" />
-	<key id="s_payback_dialog_status_percent" value="{0}% 페이백" feature="Payback" />
-	<key id="s_payback_dialog_status_level" value="{0} 레벨" feature="Payback" />
-	<key id="s_payback_dialog_maret" value="{0} &lt;Img Src=&apos;export_common_icon_bluemerat_large&apos; vspace=&apos;-5&apos;/&gt;&lt;font size=&apos;20&apos; color=&apos;#a0a0a0&apos;&gt; / {1}&lt;/font&gt;" feature="Payback" />
-	<key id="s_payback_dialog_merat_text_red_merat" value="&lt;font color=&apos;#ED442A&apos;&gt;{0} &lt;/font&gt;&lt;Img Src=&apos;export_common_icon_redmerat_large&apos; vspace=&apos;-5&apos;/&gt;&lt;font size=&apos;20&apos; color=&apos;#a0a0a0&apos;&gt; / {1}&lt;/font&gt;" feature="Payback" />
-	<key id="s_payback_bill_bottom_detail_text" value="※ 페이백 이벤트 진행 중!" feature="Payback" />
-	<key id="s_payback_bill_bottom_button_text" value="자세히 보기" feature="Payback" />
-	<key id="s_tooltip_gamemenu_payback" value="&lt;FONT color=&apos;#FFD200&apos; size=&apos;15&apos; &gt;페이백{0}&lt;/FONT&gt;\n&lt;FONT size=&apos;3&apos;&gt; &lt;/FONT&gt;\n주황버섯의 파워업 뽑기에 소모한 메럿의 일부를\n페이백 받을 수 있습니다." feature="Payback" />
-	<key id="s_payback_error_reward_time" value="페이백 정산 작업 중입니다.\n\n[정산 작업 시간] 00:00 ~ 00:05 " feature="Payback" />
-	<key id="s_payback_error_uiopen_end_time" value="페이백 이벤트가 종료 되었습니다." feature="Payback" />
 	<key id="s_itemgacha_dialog_title" value="{0}" feature="" />
 	<key id="s_itemgacha_dialog_gacha_type_skin" value="스킨" feature="" />
 	<key id="s_itemgacha_dialog_gacha_type_look" value="외형" feature="" />
@@ -6463,4 +6458,11 @@
 	<key id="s_delete_account_check_certid_fail_invalid_certnameid" value="계정 해지 신청이 실패하였습니다.\n인증할 이름과 신분번호가 올바르지 않습니다." />
 	<key id="s_delete_account_check_certid_fail_invalid_skey" value="계정 해지 신청이 실패하였습니다.\n세션키가 올바르지 않습니다." />
 	<key id="s_delete_account_check_certid_fail_invalid_platformsn" value="계정 해지 신청이 실패하였습니다.\n인증할 정보가 올바르지 않습니다." />
+	<key id="s_quest_start_err_has_quest" value="이미 퀘스트를 가지고 있습니다." />
+	<key id="s_quest_start_err_completed" value="이미 수행한 퀘스트 입니다." />
+	<key id="s_quest_start_err_level" value="레벨이 낮아서 사용 할 수 없습니다." />
+	<key id="s_quest_start_err_invalid" value="퀘스트를 수락을 할 수 없습니다." />
+	<key id="s_quest_start_success" value="퀘스트가 수락 되었습니다." />
+	<key id="s_quest_start_title" value="퀘스트 시작 아이템" />
+	<key id="s_quest_start_msg" value="{0}\n퀘스트를 등록 합니다.\n\n등록된 퀘스트는 다시 아이템으로 되돌릴 수 없습니다.\n\n등록 하시겠습니까?" />
 </ms2>
