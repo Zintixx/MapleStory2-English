@@ -3,14 +3,17 @@
 <ms2>
 	<environment feature="event" locale="">
 		<quest>
-			<basic chapterID="2201" questID="30000422" questType="2" account="2" standardLevel="10" autoStart="0" disableGiveup="1" exceptChapterClear="0" repeatable="2" usePeriod="1440" eventTag="" locking="1" tabIndex="-1" forceRegistGuide="0" useNavi="FALSE" />
+			<basic chapterID="2202" questID="30000425" questType="2" account="2" standardLevel="10" autoStart="0" disableGiveup="1" exceptChapterClear="0" repeatable="2" usePeriod="1440" eventTag="202103_CherryBlossom" locking="0" tabIndex="-1" forceRegistGuide="0" useNavi="FALSE" usePostbox="1" />
 			<notify completeUiEffect="" acceptSoundKey="" completeSoundKey="" />
 			<require level="10" maxLevel="0" job="" quest="" selectableQuest="" unrequire="" field="" achievement="0" unreqAchievement="" groupID="0" dayOfWeek="" gearScore="0" />
-			<start npc="11200005" />
-			<complete npc="11200005" />
+			<start npc="11001002" />
+			<complete npc="11001002" />
 			<acceptReward />
 			<completeReward exp="0" relativeExp="" money="0" karma="0" lu="0">
-				<essentialItem code="30001099" rank="1"  count="1" />
+				<essentialItem code="20320056" rank="4" count="1" />
+				<essentialItem code="30001103" rank="1" count="5" />
+				<globalEssentialItem code="20320062" rank="4" count="1" />
+				<globalEssentialItem code="30001104" rank="1" count="5" />
 			</completeReward>
 			<progressMap progressMap="" />
 			<guide guideType="" guideIcon="" guideMinLevel="0" guideMaxLevel="0" />
@@ -20,7 +23,7 @@
 			<remoteComplete useRemote="0" requireField="0" requireDungeonClear="0" />
 			<summonPortal fieldID="0" portalID="0" />
 			<eventMission event="" />
-			<condition type="item_exist" code="30001102" value="10" />
+			<condition type="npc" code="23001006" value="1" />
 		</quest>
 	</environment>
 </ms2>
