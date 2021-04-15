@@ -6,13 +6,12 @@
 			<kinds rangeType="1" element="7" />
 		</basic>
 		<level value="1">
-			<detectProperty rangeType="cylinder" distance="150" rangeOffset="0.000000,0.000000,50.000000" height="200" />
-			<motion>
-				<motionProperty sequenceName="Idle_A" faceTarget="0" />
+			<detectProperty rangeType="cylinder" distance="150" rangeOffset="0,0,50" height="200" />
+			<motion sequenceName="Idle_A" faceTarget="0">
 				<attack point="p0" targetCount="1" cubeMagicPathID="41000001" attacktype="1" unrideOnHit="1">
-					<rangeProperty rangeType="cylinder" distance="150" height="200" includeCaster="1" applyTarget="2" castTarget="2" />
-					<arrowProperty nonTarget="1" />
-					<damageProperty count="0" rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_Fire_01.xml" attackMaterial="1" />
+					<range rangeType="cylinder" distance="150" height="200" includeCaster="1" applyTarget="2" castTarget="2" />
+					<arrow nonTarget="1" />
+					<damage count="0" rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_Fire_01.xml" attackMaterial="1" />
 					<actionSkill skillID="41000002" level="1" interval="500" fireCount="3" nonTargetActive="1" />
 				</attack>
 			</motion>
@@ -24,12 +23,11 @@
 			<kinds rangeType="1" element="7" />
 		</basic>
 		<level value="1">
-			<motion>
-				<motionProperty faceTarget="0" />
+			<motion faceTarget="0">
 				<attack point="p0" targetCount="100" attacktype="1" hitImmuneBreak="1" unrideOnHit="1" compulsionType="1">
-					<rangeProperty rangeType="box" distance="300" rangeAdd="0.000000,300.000000,450.000000" height="450" width="600" applyTarget="1" castTarget="1" />
-					<arrowProperty nonTarget="1" />
-					<damageProperty rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_Fire_01.xml" damageByTargetMaxHP="0.2" attackMaterial="1" />
+					<range rangeType="box" distance="300" rangeAdd="0,300,450" height="450" width="600" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_Fire_01.xml" damageByTargetMaxHP="0.2" attackMaterial="1" />
 					<actionAdditional additionalID="40361201" level="1" skillTarget="2" skillOwner="1" />
 				</attack>
 			</motion>
@@ -41,21 +39,19 @@
 			<kinds rangeType="1" element="7" />
 		</basic>
 		<level value="1">
-			<detectProperty rangeType="box" distance="150" rangeOffset="0.000000,0.000000,50.000000" height="150" width="150" />
-			<motion>
-				<motionProperty sequenceName="Attack_01_A" />
+			<detectProperty rangeType="box" distance="150" rangeOffset="0,0,50" height="150" width="150" />
+			<motion sequenceName="Attack_01_A">
 				<attack point="p0" targetCount="5" attacktype="1" attackMethodType="1" brokenOffence="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
-					<rangeProperty rangeType="box" distance="150" height="200" width="150" applyTarget="1" castTarget="1" />
-					<arrowProperty nonTarget="1" effect="NPC/Skill/Temp/Eff_Temp.xml" />
-					<damageProperty count="0" rate="1" attackMaterial="5" />
+					<range rangeType="box" distance="150" height="200" width="150" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" effect="NPC/Skill/Temp/Eff_Temp.xml" />
+					<damage count="0" rate="1" attackMaterial="5" />
 				</attack>
 			</motion>
-			<motion>
-				<motionProperty sequenceName="Attack_003_A" motionEffect="NPC/Skill/Slime/Eff_Slime_Attack_003_A.xml" movedistance="100" />
+			<motion sequenceName="Attack_003_A" motionEffect="NPC/Skill/Slime/Eff_Slime_Attack_003_A.xml" movedistance="100">
 				<attack point="p0" targetCount="5" attacktype="1" brokenOffence="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
-					<rangeProperty rangeType="cylinder" distance="75" height="200" applyTarget="1" castTarget="1" />
-					<arrowProperty nonTarget="1" />
-					<damageProperty rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="5" />
+					<range rangeType="cylinder" distance="75" height="200" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="5" />
 				</attack>
 			</motion>
 		</level>
@@ -66,21 +62,19 @@
 			<kinds rangeType="1" element="7" />
 		</basic>
 		<level value="1">
-			<detectProperty rangeType="box" distance="300" rangeOffset="0.000000,0.000000,50.000000" height="150" width="300" />
-			<motion>
-				<motionProperty sequenceName="Attack_01_A" />
+			<detectProperty rangeType="box" distance="300" rangeOffset="0,0,50" height="150" width="300" />
+			<motion sequenceName="Attack_01_A">
 				<attack point="p0" targetCount="5" attacktype="1" attackMethodType="1" brokenOffence="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
-					<rangeProperty rangeType="box" distance="300" height="200" width="300" applyTarget="1" castTarget="1" />
-					<arrowProperty nonTarget="1" effect="NPC/Skill/Temp/Eff_Temp.xml" />
-					<damageProperty count="0" rate="1" attackMaterial="5" />
+					<range rangeType="box" distance="300" height="200" width="300" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" effect="NPC/Skill/Temp/Eff_Temp.xml" />
+					<damage count="0" rate="1" attackMaterial="5" />
 				</attack>
 			</motion>
-			<motion>
-				<motionProperty sequenceName="Attack_003_A" motionEffect="NPC/Skill/Slime/Eff_Slime_Attack_003_A.xml" movedistance="200" />
+			<motion sequenceName="Attack_003_A" motionEffect="NPC/Skill/Slime/Eff_Slime_Attack_003_A.xml" movedistance="200">
 				<attack point="p0" targetCount="5" attacktype="1" brokenOffence="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
-					<rangeProperty rangeType="cylinder" distance="100" height="200" applyTarget="1" castTarget="1" />
-					<arrowProperty nonTarget="1" />
-					<damageProperty rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="5" />
+					<range rangeType="cylinder" distance="100" height="200" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="5" />
 				</attack>
 			</motion>
 		</level>
@@ -91,21 +85,19 @@
 			<kinds rangeType="1" element="7" />
 		</basic>
 		<level value="1">
-			<detectProperty rangeType="box" distance="450" rangeOffset="0.000000,0.000000,50.000000" height="150" width="450" />
-			<motion>
-				<motionProperty sequenceName="Attack_01_A" />
+			<detectProperty rangeType="box" distance="450" rangeOffset="0,0,50" height="150" width="450" />
+			<motion sequenceName="Attack_01_A">
 				<attack point="p0" targetCount="5" attacktype="1" attackMethodType="1" brokenOffence="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
-					<rangeProperty rangeType="box" distance="450" height="200" width="450" applyTarget="1" castTarget="1" />
-					<arrowProperty nonTarget="1" effect="NPC/Skill/Temp/Eff_Temp.xml" />
-					<damageProperty count="0" rate="1" attackMaterial="5" />
+					<range rangeType="box" distance="450" height="200" width="450" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" effect="NPC/Skill/Temp/Eff_Temp.xml" />
+					<damage count="0" rate="1" attackMaterial="5" />
 				</attack>
 			</motion>
-			<motion>
-				<motionProperty sequenceName="Attack_003_A" motionEffect="NPC/Skill/Slime/Eff_Slime_Attack_003_A.xml" movedistance="300" />
+			<motion sequenceName="Attack_003_A" motionEffect="NPC/Skill/Slime/Eff_Slime_Attack_003_A.xml" movedistance="300">
 				<attack point="p0" targetCount="5" attacktype="1" brokenOffence="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
-					<rangeProperty rangeType="cylinder" distance="150" height="200" applyTarget="1" castTarget="1" />
-					<arrowProperty nonTarget="1" />
-					<damageProperty rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="5" />
+					<range rangeType="cylinder" distance="150" height="200" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="5" />
 				</attack>
 			</motion>
 		</level>
@@ -117,12 +109,11 @@
 		</basic>
 		<level value="1">
 			<detectProperty rangeType="cylinder" distance="150" height="150" />
-			<motion>
-				<motionProperty sequenceName="Attack_01_A" motionEffect="NPC/Skill/Sling/Eff_Sling_Attack_01_A_Cast_Brown.xml" ignoreCollisionGroups="20" />
+			<motion sequenceName="Attack_01_A" motionEffect="NPC/Skill/Sling/Eff_Sling_Attack_01_A_Cast_Brown.xml" ignoreCollisionGroups="20">
 				<attack point="p0" targetCount="1" attacktype="1" unrideOnHit="1">
-					<rangeProperty rangeType="cylinder" distance="150" rangeAdd="0.000000,0.000000,50.000000" height="150" applyTarget="1" castTarget="1" targetSelectType="2" targetHasBuffID="40361002" />
-					<arrowProperty nonTarget="1" />
-					<damageProperty effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" damageByTargetMaxHP="1" attackMaterial="1" />
+					<range rangeType="cylinder" distance="150" rangeAdd="0,0,50" height="150" applyTarget="1" castTarget="1" targetSelectType="2" targetHasBuffID="40361002" />
+					<arrow nonTarget="1" />
+					<damage effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" damageByTargetMaxHP="1" attackMaterial="1" />
 					<actionAdditional additionalID="40361101" level="1" skillTarget="1" skillOwner="1" />
 					<actionAdditional additionalID="40361103" level="1" skillTarget="1" skillOwner="1" />
 				</attack>
@@ -136,12 +127,11 @@
 		</basic>
 		<level value="1">
 			<detectProperty rangeType="cylinder" distance="300" height="100" />
-			<motion>
-				<motionProperty sequenceName="Bore_A" sequenceSpeed="1.2" motionEffect="NPC/Skill/Sling/Eff_Sling_Attack_01_B_Splash_Cast_Sound.xml" ignoreCollisionGroups="20" />
+			<motion sequenceName="Bore_A" sequenceSpeed="1.2" motionEffect="NPC/Skill/Sling/Eff_Sling_Attack_01_B_Splash_Cast_Sound.xml" ignoreCollisionGroups="20">
 				<attack point="p0" targetCount="1" cubeMagicPathID="41000001" attacktype="1" brokenOffence="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
-					<rangeProperty rangeType="cylinder" distance="300" height="100" includeCaster="1" applyTarget="2" castTarget="1" />
-					<arrowProperty nonTarget="1" />
-					<damageProperty count="0" rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
+					<range rangeType="cylinder" distance="300" height="100" includeCaster="1" applyTarget="2" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage count="0" rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
 					<actionSkill skillID="41000112" level="1" immediateActive="1" nonTargetActive="1" />
 				</attack>
 			</motion>
@@ -154,12 +144,11 @@
 		</basic>
 		<level value="1">
 			<detectProperty rangeType="cylinder" distance="200" height="200" />
-			<motion>
-				<motionProperty splashInvokeEffect="NPC/Skill/Sling/Eff_Sling_Attack_01_B_Splash_Cast_Level00.xml" />
+			<motion splashInvokeEffect="NPC/Skill/Sling/Eff_Sling_Attack_01_B_Splash_Cast_Level00.xml">
 				<attack point="p0" targetCount="10" attacktype="1" brokenOffence="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
-					<rangeProperty rangeType="cylinder" distance="200" height="200" applyTarget="1" castTarget="1" />
-					<arrowProperty nonTarget="1" />
-					<damageProperty rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
+					<range rangeType="cylinder" distance="200" height="200" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
 					<actionAdditional additionalID="40361102" level="1" skillTarget="2" skillOwner="1" />
 				</attack>
 			</motion>
@@ -172,12 +161,11 @@
 		</basic>
 		<level value="1">
 			<detectProperty rangeType="cylinder" distance="300" height="100" />
-			<motion>
-				<motionProperty sequenceName="Bore_A" sequenceSpeed="1.2" motionEffect="NPC/Skill/Sling/Eff_Sling_Attack_01_B_Splash_Cast_Sound.xml" ignoreCollisionGroups="20" />
+			<motion sequenceName="Bore_A" sequenceSpeed="1.2" motionEffect="NPC/Skill/Sling/Eff_Sling_Attack_01_B_Splash_Cast_Sound.xml" ignoreCollisionGroups="20">
 				<attack point="p0" targetCount="1" cubeMagicPathID="41000002" attacktype="1" brokenOffence="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
-					<rangeProperty rangeType="cylinder" distance="300" height="100" includeCaster="1" applyTarget="2" castTarget="1" />
-					<arrowProperty nonTarget="1" />
-					<damageProperty count="0" rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
+					<range rangeType="cylinder" distance="300" height="100" includeCaster="1" applyTarget="2" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage count="0" rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
 					<actionSkill skillID="41000122" level="1" immediateActive="1" nonTargetActive="1" />
 				</attack>
 			</motion>
@@ -190,12 +178,11 @@
 		</basic>
 		<level value="1">
 			<detectProperty rangeType="cylinder" distance="220" height="200" />
-			<motion>
-				<motionProperty splashInvokeEffect="NPC/Skill/Sling/Eff_Sling_Attack_01_B_Splash_Cast_Level01.xml" />
+			<motion splashInvokeEffect="NPC/Skill/Sling/Eff_Sling_Attack_01_B_Splash_Cast_Level01.xml">
 				<attack point="p0" targetCount="10" attacktype="1" brokenOffence="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
-					<rangeProperty rangeType="cylinder" distance="220" height="200" applyTarget="1" castTarget="1" />
-					<arrowProperty nonTarget="1" />
-					<damageProperty rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
+					<range rangeType="cylinder" distance="220" height="200" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
 					<actionAdditional additionalID="40361102" level="1" skillTarget="2" skillOwner="1" />
 				</attack>
 			</motion>
@@ -208,12 +195,11 @@
 		</basic>
 		<level value="1">
 			<detectProperty rangeType="cylinder" distance="300" height="100" />
-			<motion>
-				<motionProperty sequenceName="Bore_A" sequenceSpeed="1.2" motionEffect="NPC/Skill/Sling/Eff_Sling_Attack_01_B_Splash_Cast_Sound.xml" ignoreCollisionGroups="20" />
+			<motion sequenceName="Bore_A" sequenceSpeed="1.2" motionEffect="NPC/Skill/Sling/Eff_Sling_Attack_01_B_Splash_Cast_Sound.xml" ignoreCollisionGroups="20">
 				<attack point="p0" targetCount="1" cubeMagicPathID="41000003" attacktype="1" brokenOffence="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
-					<rangeProperty rangeType="cylinder" distance="300" height="100" includeCaster="1" applyTarget="2" castTarget="1" />
-					<arrowProperty nonTarget="1" />
-					<damageProperty count="0" rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
+					<range rangeType="cylinder" distance="300" height="100" includeCaster="1" applyTarget="2" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage count="0" rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
 					<actionSkill skillID="41000132" level="1" immediateActive="1" nonTargetActive="1" />
 				</attack>
 			</motion>
@@ -226,12 +212,11 @@
 		</basic>
 		<level value="1">
 			<detectProperty rangeType="cylinder" distance="240" height="200" />
-			<motion>
-				<motionProperty splashInvokeEffect="NPC/Skill/Sling/Eff_Sling_Attack_01_B_Splash_Cast_Level02.xml" />
+			<motion splashInvokeEffect="NPC/Skill/Sling/Eff_Sling_Attack_01_B_Splash_Cast_Level02.xml">
 				<attack point="p0" targetCount="10" attacktype="1" brokenOffence="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
-					<rangeProperty rangeType="cylinder" distance="240" height="200" applyTarget="1" castTarget="1" />
-					<arrowProperty nonTarget="1" />
-					<damageProperty rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
+					<range rangeType="cylinder" distance="240" height="200" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
 					<actionAdditional additionalID="40361102" level="1" skillTarget="2" skillOwner="1" />
 				</attack>
 			</motion>
@@ -244,12 +229,11 @@
 		</basic>
 		<level value="1">
 			<detectProperty rangeType="cylinder" distance="300" height="100" />
-			<motion>
-				<motionProperty sequenceName="Bore_A" sequenceSpeed="1.2" motionEffect="NPC/Skill/Sling/Eff_Sling_Attack_01_B_Splash_Cast_Sound.xml" ignoreCollisionGroups="20" />
+			<motion sequenceName="Bore_A" sequenceSpeed="1.2" motionEffect="NPC/Skill/Sling/Eff_Sling_Attack_01_B_Splash_Cast_Sound.xml" ignoreCollisionGroups="20">
 				<attack point="p0" targetCount="1" cubeMagicPathID="41000004" attacktype="1" brokenOffence="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
-					<rangeProperty rangeType="cylinder" distance="300" height="100" includeCaster="1" applyTarget="2" castTarget="1" />
-					<arrowProperty nonTarget="1" />
-					<damageProperty count="0" rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
+					<range rangeType="cylinder" distance="300" height="100" includeCaster="1" applyTarget="2" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage count="0" rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
 					<actionSkill skillID="41000142" level="1" immediateActive="1" nonTargetActive="1" />
 				</attack>
 			</motion>
@@ -262,12 +246,11 @@
 		</basic>
 		<level value="1">
 			<detectProperty rangeType="cylinder" distance="260" height="200" />
-			<motion>
-				<motionProperty splashInvokeEffect="NPC/Skill/Sling/Eff_Sling_Attack_01_B_Splash_Cast_Level03.xml" />
+			<motion splashInvokeEffect="NPC/Skill/Sling/Eff_Sling_Attack_01_B_Splash_Cast_Level03.xml">
 				<attack point="p0" targetCount="10" attacktype="1" brokenOffence="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
-					<rangeProperty rangeType="cylinder" distance="260" height="200" applyTarget="1" castTarget="1" />
-					<arrowProperty nonTarget="1" />
-					<damageProperty rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
+					<range rangeType="cylinder" distance="260" height="200" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
 					<actionAdditional additionalID="40361102" level="1" skillTarget="2" skillOwner="1" />
 				</attack>
 			</motion>
@@ -280,12 +263,11 @@
 		</basic>
 		<level value="1">
 			<detectProperty rangeType="cylinder" distance="300" height="100" />
-			<motion>
-				<motionProperty sequenceName="Bore_A" sequenceSpeed="1.2" motionEffect="NPC/Skill/Sling/Eff_Sling_Attack_01_B_Splash_Cast_Sound.xml" ignoreCollisionGroups="20" />
+			<motion sequenceName="Bore_A" sequenceSpeed="1.2" motionEffect="NPC/Skill/Sling/Eff_Sling_Attack_01_B_Splash_Cast_Sound.xml" ignoreCollisionGroups="20">
 				<attack point="p0" targetCount="1" cubeMagicPathID="41000005" attacktype="1" brokenOffence="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
-					<rangeProperty rangeType="cylinder" distance="300" height="100" includeCaster="1" applyTarget="2" castTarget="1" />
-					<arrowProperty nonTarget="1" />
-					<damageProperty count="0" rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
+					<range rangeType="cylinder" distance="300" height="100" includeCaster="1" applyTarget="2" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage count="0" rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
 					<actionSkill skillID="41000152" level="1" immediateActive="1" nonTargetActive="1" />
 				</attack>
 			</motion>
@@ -298,12 +280,11 @@
 		</basic>
 		<level value="1">
 			<detectProperty rangeType="cylinder" distance="280" height="200" />
-			<motion>
-				<motionProperty splashInvokeEffect="NPC/Skill/Sling/Eff_Sling_Attack_01_B_Splash_Cast_Level04.xml" />
+			<motion splashInvokeEffect="NPC/Skill/Sling/Eff_Sling_Attack_01_B_Splash_Cast_Level04.xml">
 				<attack point="p0" targetCount="10" attacktype="1" brokenOffence="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
-					<rangeProperty rangeType="cylinder" distance="280" height="200" applyTarget="1" castTarget="1" />
-					<arrowProperty nonTarget="1" />
-					<damageProperty rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
+					<range rangeType="cylinder" distance="280" height="200" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
 					<actionAdditional additionalID="40361102" level="1" skillTarget="2" skillOwner="1" />
 				</attack>
 			</motion>
@@ -316,12 +297,11 @@
 		</basic>
 		<level value="1">
 			<detectProperty rangeType="cylinder" distance="300" height="100" />
-			<motion>
-				<motionProperty sequenceName="Bore_A" sequenceSpeed="1.2" motionEffect="NPC/Skill/Sling/Eff_Sling_Attack_01_B_Splash_Cast_Sound.xml" ignoreCollisionGroups="20" />
+			<motion sequenceName="Bore_A" sequenceSpeed="1.2" motionEffect="NPC/Skill/Sling/Eff_Sling_Attack_01_B_Splash_Cast_Sound.xml" ignoreCollisionGroups="20">
 				<attack point="p0" targetCount="1" cubeMagicPathID="41000006" attacktype="1" brokenOffence="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
-					<rangeProperty rangeType="cylinder" distance="300" height="100" includeCaster="1" applyTarget="2" castTarget="1" />
-					<arrowProperty nonTarget="1" />
-					<damageProperty count="0" rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
+					<range rangeType="cylinder" distance="300" height="100" includeCaster="1" applyTarget="2" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage count="0" rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
 					<actionSkill skillID="41000162" level="1" immediateActive="1" nonTargetActive="1" />
 				</attack>
 			</motion>
@@ -334,12 +314,11 @@
 		</basic>
 		<level value="1">
 			<detectProperty rangeType="cylinder" distance="300" height="200" />
-			<motion>
-				<motionProperty splashInvokeEffect="NPC/Skill/Sling/Eff_Sling_Attack_01_B_Splash_Cast_Level05.xml" />
+			<motion splashInvokeEffect="NPC/Skill/Sling/Eff_Sling_Attack_01_B_Splash_Cast_Level05.xml">
 				<attack point="p0" targetCount="10" attacktype="1" brokenOffence="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
-					<rangeProperty rangeType="cylinder" distance="300" height="200" applyTarget="1" castTarget="1" />
-					<arrowProperty nonTarget="1" />
-					<damageProperty rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
+					<range rangeType="cylinder" distance="300" height="200" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
 					<actionAdditional additionalID="40361102" level="1" skillTarget="2" skillOwner="1" />
 				</attack>
 			</motion>
@@ -352,12 +331,11 @@
 		</basic>
 		<level value="1">
 			<detectProperty rangeType="cylinder" distance="300" height="100" />
-			<motion>
-				<motionProperty sequenceName="Bore_A" sequenceSpeed="1.2" motionEffect="NPC/Skill/Sling/Eff_Sling_Attack_01_B_Splash_Cast_Sound.xml" ignoreCollisionGroups="20" />
+			<motion sequenceName="Bore_A" sequenceSpeed="1.2" motionEffect="NPC/Skill/Sling/Eff_Sling_Attack_01_B_Splash_Cast_Sound.xml" ignoreCollisionGroups="20">
 				<attack point="p0" targetCount="1" cubeMagicPathID="41000007" attacktype="1" brokenOffence="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
-					<rangeProperty rangeType="cylinder" distance="300" height="100" includeCaster="1" applyTarget="2" castTarget="1" />
-					<arrowProperty nonTarget="1" />
-					<damageProperty count="0" rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
+					<range rangeType="cylinder" distance="300" height="100" includeCaster="1" applyTarget="2" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage count="0" rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
 					<actionSkill skillID="41000172" level="1" immediateActive="1" nonTargetActive="1" />
 				</attack>
 			</motion>
@@ -370,12 +348,11 @@
 		</basic>
 		<level value="1">
 			<detectProperty rangeType="cylinder" distance="320" height="200" />
-			<motion>
-				<motionProperty splashInvokeEffect="NPC/Skill/Sling/Eff_Sling_Attack_01_B_Splash_Cast_Level06.xml" />
+			<motion splashInvokeEffect="NPC/Skill/Sling/Eff_Sling_Attack_01_B_Splash_Cast_Level06.xml">
 				<attack point="p0" targetCount="10" attacktype="1" brokenOffence="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
-					<rangeProperty rangeType="cylinder" distance="320" height="200" applyTarget="1" castTarget="1" />
-					<arrowProperty nonTarget="1" />
-					<damageProperty rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
+					<range rangeType="cylinder" distance="320" height="200" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
 					<actionAdditional additionalID="40361102" level="1" skillTarget="2" skillOwner="1" />
 				</attack>
 			</motion>
@@ -388,12 +365,11 @@
 		</basic>
 		<level value="1">
 			<detectProperty rangeType="cylinder" distance="300" height="100" />
-			<motion>
-				<motionProperty sequenceName="Bore_A" sequenceSpeed="1.2" motionEffect="NPC/Skill/Sling/Eff_Sling_Attack_01_B_Splash_Cast_Sound.xml" ignoreCollisionGroups="20" />
+			<motion sequenceName="Bore_A" sequenceSpeed="1.2" motionEffect="NPC/Skill/Sling/Eff_Sling_Attack_01_B_Splash_Cast_Sound.xml" ignoreCollisionGroups="20">
 				<attack point="p0" targetCount="1" cubeMagicPathID="41000008" attacktype="1" brokenOffence="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
-					<rangeProperty rangeType="cylinder" distance="300" height="100" includeCaster="1" applyTarget="2" castTarget="1" />
-					<arrowProperty nonTarget="1" />
-					<damageProperty count="0" rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
+					<range rangeType="cylinder" distance="300" height="100" includeCaster="1" applyTarget="2" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage count="0" rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
 					<actionSkill skillID="41000182" level="1" immediateActive="1" nonTargetActive="1" />
 				</attack>
 			</motion>
@@ -406,12 +382,11 @@
 		</basic>
 		<level value="1">
 			<detectProperty rangeType="cylinder" distance="340" height="200" />
-			<motion>
-				<motionProperty splashInvokeEffect="NPC/Skill/Sling/Eff_Sling_Attack_01_B_Splash_Cast_Level07.xml" />
+			<motion splashInvokeEffect="NPC/Skill/Sling/Eff_Sling_Attack_01_B_Splash_Cast_Level07.xml">
 				<attack point="p0" targetCount="10" attacktype="1" brokenOffence="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
-					<rangeProperty rangeType="cylinder" distance="340" height="200" applyTarget="1" castTarget="1" />
-					<arrowProperty nonTarget="1" />
-					<damageProperty rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
+					<range rangeType="cylinder" distance="340" height="200" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
 					<actionAdditional additionalID="40361102" level="1" skillTarget="2" skillOwner="1" />
 				</attack>
 			</motion>
@@ -424,12 +399,11 @@
 		</basic>
 		<level value="1">
 			<detectProperty rangeType="cylinder" distance="300" height="100" />
-			<motion>
-				<motionProperty sequenceName="Bore_A" sequenceSpeed="1.2" motionEffect="NPC/Skill/Sling/Eff_Sling_Attack_01_B_Splash_Cast_Sound.xml" ignoreCollisionGroups="20" />
+			<motion sequenceName="Bore_A" sequenceSpeed="1.2" motionEffect="NPC/Skill/Sling/Eff_Sling_Attack_01_B_Splash_Cast_Sound.xml" ignoreCollisionGroups="20">
 				<attack point="p0" targetCount="1" cubeMagicPathID="41000009" attacktype="1" brokenOffence="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
-					<rangeProperty rangeType="cylinder" distance="300" height="100" includeCaster="1" applyTarget="2" castTarget="1" />
-					<arrowProperty nonTarget="1" />
-					<damageProperty count="0" rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
+					<range rangeType="cylinder" distance="300" height="100" includeCaster="1" applyTarget="2" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage count="0" rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
 					<actionSkill skillID="41000192" level="1" immediateActive="1" nonTargetActive="1" />
 				</attack>
 			</motion>
@@ -442,12 +416,11 @@
 		</basic>
 		<level value="1">
 			<detectProperty rangeType="cylinder" distance="360" height="200" />
-			<motion>
-				<motionProperty splashInvokeEffect="NPC/Skill/Sling/Eff_Sling_Attack_01_B_Splash_Cast_Level08.xml" />
+			<motion splashInvokeEffect="NPC/Skill/Sling/Eff_Sling_Attack_01_B_Splash_Cast_Level08.xml">
 				<attack point="p0" targetCount="10" attacktype="1" brokenOffence="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
-					<rangeProperty rangeType="cylinder" distance="360" height="200" applyTarget="1" castTarget="1" />
-					<arrowProperty nonTarget="1" />
-					<damageProperty rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
+					<range rangeType="cylinder" distance="360" height="200" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
 					<actionAdditional additionalID="40361102" level="1" skillTarget="2" skillOwner="1" />
 				</attack>
 			</motion>
@@ -460,12 +433,11 @@
 		</basic>
 		<level value="1">
 			<detectProperty rangeType="cylinder" distance="300" height="100" />
-			<motion>
-				<motionProperty sequenceName="Bore_A" sequenceSpeed="1.2" motionEffect="NPC/Skill/Sling/Eff_Sling_Attack_01_B_Splash_Cast_Sound.xml" ignoreCollisionGroups="20" />
+			<motion sequenceName="Bore_A" sequenceSpeed="1.2" motionEffect="NPC/Skill/Sling/Eff_Sling_Attack_01_B_Splash_Cast_Sound.xml" ignoreCollisionGroups="20">
 				<attack point="p0" targetCount="1" cubeMagicPathID="41000010" attacktype="1" brokenOffence="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
-					<rangeProperty rangeType="cylinder" distance="300" height="100" includeCaster="1" applyTarget="2" castTarget="1" />
-					<arrowProperty nonTarget="1" />
-					<damageProperty count="0" rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
+					<range rangeType="cylinder" distance="300" height="100" includeCaster="1" applyTarget="2" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage count="0" rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
 					<actionSkill skillID="41000202" level="1" immediateActive="1" nonTargetActive="1" />
 				</attack>
 			</motion>
@@ -478,12 +450,11 @@
 		</basic>
 		<level value="1">
 			<detectProperty rangeType="cylinder" distance="380" height="200" />
-			<motion>
-				<motionProperty splashInvokeEffect="NPC/Skill/Sling/Eff_Sling_Attack_01_B_Splash_Cast_Level09.xml" />
+			<motion splashInvokeEffect="NPC/Skill/Sling/Eff_Sling_Attack_01_B_Splash_Cast_Level09.xml">
 				<attack point="p0" targetCount="10" attacktype="1" brokenOffence="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
-					<rangeProperty rangeType="cylinder" distance="380" height="200" applyTarget="1" castTarget="1" />
-					<arrowProperty nonTarget="1" />
-					<damageProperty rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
+					<range rangeType="cylinder" distance="380" height="200" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
 					<actionAdditional additionalID="40361102" level="1" skillTarget="2" skillOwner="1" />
 				</attack>
 			</motion>
@@ -496,12 +467,11 @@
 		</basic>
 		<level value="1">
 			<detectProperty rangeType="cylinder" distance="300" height="100" />
-			<motion>
-				<motionProperty sequenceName="Bore_A" sequenceSpeed="1.2" motionEffect="NPC/Skill/Sling/Eff_Sling_Attack_01_B_Splash_Cast_Sound.xml" ignoreCollisionGroups="20" />
+			<motion sequenceName="Bore_A" sequenceSpeed="1.2" motionEffect="NPC/Skill/Sling/Eff_Sling_Attack_01_B_Splash_Cast_Sound.xml" ignoreCollisionGroups="20">
 				<attack point="p0" targetCount="1" cubeMagicPathID="41000011" attacktype="1" brokenOffence="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
-					<rangeProperty rangeType="cylinder" distance="300" height="100" includeCaster="1" applyTarget="2" castTarget="1" />
-					<arrowProperty nonTarget="1" />
-					<damageProperty count="0" rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
+					<range rangeType="cylinder" distance="300" height="100" includeCaster="1" applyTarget="2" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage count="0" rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
 					<actionSkill skillID="41000212" level="1" immediateActive="1" nonTargetActive="1" />
 				</attack>
 			</motion>
@@ -514,12 +484,11 @@
 		</basic>
 		<level value="1">
 			<detectProperty rangeType="cylinder" distance="400" height="200" />
-			<motion>
-				<motionProperty splashInvokeEffect="NPC/Skill/Sling/Eff_Sling_Attack_01_B_Splash_Cast_Level10.xml" />
+			<motion splashInvokeEffect="NPC/Skill/Sling/Eff_Sling_Attack_01_B_Splash_Cast_Level10.xml">
 				<attack point="p0" targetCount="10" attacktype="1" brokenOffence="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
-					<rangeProperty rangeType="cylinder" distance="400" height="200" applyTarget="1" castTarget="1" />
-					<arrowProperty nonTarget="1" />
-					<damageProperty rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
+					<range rangeType="cylinder" distance="400" height="200" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
 					<actionAdditional additionalID="40361102" level="1" skillTarget="2" skillOwner="1" />
 				</attack>
 			</motion>
@@ -532,12 +501,11 @@
 		</basic>
 		<level value="1">
 			<detectProperty rangeType="cylinder" distance="450" height="200" />
-			<motion>
-				<motionProperty sequenceName="Attack_02_A" sequenceSpeed="2" motionEffect="NPC/Skill/Slime/Eff_Slime_Attack_004_A.xml" />
+			<motion sequenceName="Attack_02_A" sequenceSpeed="2" motionEffect="NPC/Skill/Slime/Eff_Slime_Attack_004_A.xml">
 				<attack point="p0" targetCount="10" attacktype="1" brokenOffence="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
-					<rangeProperty rangeType="cylinder" distance="450" rangeAdd="0.000000,0.000000,100.000000" height="200" applyTarget="1" castTarget="1" />
-					<arrowProperty nonTarget="1" />
-					<damageProperty effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="5" />
+					<range rangeType="cylinder" distance="450" rangeAdd="0,0,100" height="200" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="5" />
 					<actionAdditional additionalID="99910250" level="1" skillTarget="2" skillOwner="1" />
 				</attack>
 			</motion>
@@ -550,12 +518,11 @@
 		</basic>
 		<level value="1">
 			<detectProperty rangeType="cylinder" distance="450" height="200" />
-			<motion>
-				<motionProperty sequenceName="Attack_01_A" sequenceSpeed="1.2" motionEffect="NPC/Skill/Sling/Eff_Sling_Attack_01_A_Cast_Brown.xml" />
+			<motion sequenceName="Attack_01_A" sequenceSpeed="1.2" motionEffect="NPC/Skill/Sling/Eff_Sling_Attack_01_A_Cast_Brown.xml">
 				<attack point="p0" targetCount="10" attacktype="1" brokenOffence="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
-					<rangeProperty rangeType="cylinder" distance="450" rangeAdd="0.000000,0.000000,100.000000" height="200" applyTarget="1" castTarget="1" />
-					<arrowProperty nonTarget="1" />
-					<damageProperty effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="5" />
+					<range rangeType="cylinder" distance="450" rangeAdd="0,0,100" height="200" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="5" />
 					<actionAdditional additionalID="99910260" level="1" skillTarget="2" skillOwner="1" />
 				</attack>
 			</motion>
@@ -567,13 +534,12 @@
 			<kinds rangeType="2" element="7" />
 		</basic>
 		<level value="1">
-			<detectProperty rangeType="box" distance="750" rangeOffset="0.000000,0.000000,50.000000" height="50" width="600" />
-			<motion>
-				<motionProperty sequenceName="Attack_01_B" motionEffect="NPC/Skill/DesertDragonWing/Eff_DesertDragonWing_Attack_02_A_Cast.xml" />
+			<detectProperty rangeType="box" distance="750" rangeOffset="0,0,50" height="50" width="600" />
+			<motion sequenceName="Attack_01_B" motionEffect="NPC/Skill/DesertDragonWing/Eff_DesertDragonWing_Attack_02_A_Cast.xml">
 				<attack point="p0" targetCount="1" magicPathID="41001001" attacktype="1" attackMethodType="1" brokenOffence="1" unrideOnHit="1">
-					<rangeProperty rangeType="box" distance="750" height="200" width="600" applyTarget="1" castTarget="1" />
-					<arrowProperty overlap="1" collision="50.000000,25.000000,125.000000" collisionAdd="0.000000,25.000000,25.000000" effect="NPC/Skill/DesertDragonWing/Eff_DesertDragonWing_Attack_02_A_Ball.xml" effectRemain="NPC/Skill/DesertDragonWing/Eff_DesertDragonWing_Attack_02_A_Ball_Remain.xml" />
-					<damageProperty rate="1" damageByTargetMaxHP="0.95" attackMaterial="1" />
+					<range rangeType="box" distance="750" height="200" width="600" applyTarget="1" castTarget="1" />
+					<arrow overlap="1" collision="50,25,125" collisionAdd="0,25,25" effect="NPC/Skill/DesertDragonWing/Eff_DesertDragonWing_Attack_02_A_Ball.xml" effectRemain="NPC/Skill/DesertDragonWing/Eff_DesertDragonWing_Attack_02_A_Ball_Remain.xml" />
+					<damage rate="1" damageByTargetMaxHP="0.95" attackMaterial="1" />
 				</attack>
 			</motion>
 		</level>
@@ -584,13 +550,12 @@
 			<kinds rangeType="1" element="7" />
 		</basic>
 		<level value="1">
-			<detectProperty rangeType="cylinder" distance="300" rangeOffset="0.000000,0.000000,50.000000" height="50" />
-			<motion>
-				<motionProperty sequenceName="Bore_A" motionEffect="NPC/Skill/Sling/Eff_Sling_Attack_01_B_Splash_Cast_Sound.xml" />
+			<detectProperty rangeType="cylinder" distance="300" rangeOffset="0,0,50" height="50" />
+			<motion sequenceName="Bore_A" motionEffect="NPC/Skill/Sling/Eff_Sling_Attack_01_B_Splash_Cast_Sound.xml">
 				<attack point="p0" targetCount="1" attacktype="1" brokenOffence="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
-					<rangeProperty rangeType="cylinder" distance="300" rangeOffset="0.000000,0.000000,50.000000" height="50" includeCaster="1" applyTarget="2" castTarget="1" />
-					<arrowProperty nonTarget="1" />
-					<damageProperty count="0" rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
+					<range rangeType="cylinder" distance="300" rangeOffset="0,0,50" height="50" includeCaster="1" applyTarget="2" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage count="0" rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
 					<actionSkill skillID="41001012" level="1" immediateActive="1" nonTargetActive="1" />
 				</attack>
 			</motion>
@@ -602,13 +567,12 @@
 			<kinds rangeType="1" element="7" />
 		</basic>
 		<level value="1">
-			<detectProperty rangeType="cylinder" distance="300" rangeOffset="0.000000,0.000000,50.000000" height="50" />
-			<motion>
-				<motionProperty splashInvokeEffect="NPC/Skill/Sling/Eff_Sling_Attack_01_B_Splash_Cast.xml" />
+			<detectProperty rangeType="cylinder" distance="300" rangeOffset="0,0,50" height="50" />
+			<motion splashInvokeEffect="NPC/Skill/Sling/Eff_Sling_Attack_01_B_Splash_Cast.xml">
 				<attack point="p0" targetCount="10" attacktype="1" brokenOffence="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
-					<rangeProperty rangeType="cylinder" distance="300" height="200" applyTarget="1" castTarget="1" />
-					<arrowProperty nonTarget="1" />
-					<damageProperty rate="0.3" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
+					<range rangeType="cylinder" distance="300" height="200" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.3" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
 					<actionAdditional additionalID="40361102" level="1" skillTarget="2" skillOwner="1" />
 				</attack>
 			</motion>
@@ -620,13 +584,12 @@
 			<kinds rangeType="2" element="1" />
 		</basic>
 		<level value="1">
-			<detectProperty rangeType="cylinder" distance="600" rangeOffset="0.000000,0.000000,50.000000" height="50" width="900" />
-			<motion>
-				<motionProperty sequenceName="Attack_01_A" motionEffect="NPC/Skill/Bulbul/Eff_Bulbul_Attack_03_A.xml" />
+			<detectProperty rangeType="cylinder" distance="600" rangeOffset="0,0,50" height="50" width="900" />
+			<motion sequenceName="Attack_01_A" motionEffect="NPC/Skill/Bulbul/Eff_Bulbul_Attack_03_A.xml">
 				<attack point="p0" targetCount="1" magicPathID="41001101" attacktype="1" attackMethodType="1" brokenOffence="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
-					<rangeProperty rangeType="box" distance="900" height="200" width="300" applyTarget="1" castTarget="1" />
-					<arrowProperty nonTarget="1" collision="50.000000,25.000000,150.000000" effect="NPC/Skill/Bulbul/Eff_Bulbul_Attack_03_A_Ball.xml" effectRemain="NPC/Common/Eff_NPC_Attack_Hit_01.xml" />
-					<damageProperty rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
+					<range rangeType="box" distance="900" height="200" width="300" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" collision="50,25,150" effect="NPC/Skill/Bulbul/Eff_Bulbul_Attack_03_A_Ball.xml" effectRemain="NPC/Common/Eff_NPC_Attack_Hit_01.xml" />
+					<damage rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
 				</attack>
 			</motion>
 		</level>
@@ -638,13 +601,12 @@
 			<stateAttr superArmor="1" />
 		</basic>
 		<level value="1">
-			<detectProperty rangeType="cylinder" distance="500" rangeOffset="0.000000,0.000000,50.000000" height="300" />
-			<motion>
-				<motionProperty sequenceName="Attack_01_A" motionEffect="NPC/Skill/Bulbul/Eff_Bulbul_Attack_02_B.xml" />
+			<detectProperty rangeType="cylinder" distance="500" rangeOffset="0,0,50" height="300" />
+			<motion sequenceName="Attack_01_A" motionEffect="NPC/Skill/Bulbul/Eff_Bulbul_Attack_02_B.xml">
 				<attack point="p0" targetCount="10" attacktype="1" brokenOffence="2" brokenForce="3" unrideOnHit="1">
-					<rangeProperty rangeType="frustum" distance="1000" rangeAdd="0.000000,0.000000,100.000000" height="300" width="300" endWidth="450" applyTarget="1" castTarget="1" />
-					<arrowProperty nonTarget="1" />
-					<damageProperty rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="150" pushduration="0.2" pushEaseType="1" pushFall="1" attackMaterial="1" />
+					<range rangeType="frustum" distance="1000" rangeAdd="0,0,100" height="300" width="300" endWidth="450" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="150" pushduration="0.2" pushEaseType="1" pushFall="1" attackMaterial="1" />
 				</attack>
 			</motion>
 		</level>
@@ -656,13 +618,12 @@
 			<stateAttr superArmor="1" />
 		</basic>
 		<level value="3">
-			<detectProperty rangeType="box" distance="160" rangeOffset="0.000000,0.000000,50.000000" height="150" width="230" />
-			<motion>
-				<motionProperty sequenceName="Attack_01_A" motionEffect="NPC/Skill/SandstoneDwarf/Eff_SandstoneDwarf_Attack_01_A.xml" faceTarget="0" />
+			<detectProperty rangeType="box" distance="160" rangeOffset="0,0,50" height="150" width="230" />
+			<motion sequenceName="Attack_01_A" motionEffect="NPC/Skill/SandstoneDwarf/Eff_SandstoneDwarf_Attack_01_A.xml" faceTarget="0">
 				<attack point="p0" targetCount="50" attacktype="1" brokenOffence="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
-					<rangeProperty rangeType="box" distance="160" height="200" width="230" applyTarget="1" castTarget="1" />
-					<arrowProperty nonTarget="1" />
-					<damageProperty rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
+					<range rangeType="box" distance="160" height="200" width="230" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
 				</attack>
 			</motion>
 		</level>
@@ -674,21 +635,19 @@
 			<stateAttr superArmor="1" />
 		</basic>
 		<level value="2">
-			<detectProperty rangeType="box" distance="650" rangeOffset="0.000000,0.000000,50.000000" height="150" width="400" />
-			<motion>
-				<motionProperty sequenceName="Attack_01_B" sequenceSpeed="0.65" faceTarget="0" />
+			<detectProperty rangeType="box" distance="650" rangeOffset="0,0,50" height="150" width="400" />
+			<motion sequenceName="Attack_01_B" sequenceSpeed="0.65" faceTarget="0">
 				<attack point="p0" targetCount="50" direction="1" attacktype="1" attackMethodType="1" hitImmuneBreak="1" brokenOffence="2" unrideOnHit="1" releaseObjectWeaponOnHit="0">
-					<rangeProperty rangeType="box" distance="650" height="200" width="400" applyTarget="1" castTarget="1" />
-					<arrowProperty nonTarget="1" effect="NPC/Skill/Temp/Eff_Temp.xml" />
-					<damageProperty count="0" rate="1" attackMaterial="1" />
+					<range rangeType="box" distance="650" height="200" width="400" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" effect="NPC/Skill/Temp/Eff_Temp.xml" />
+					<damage count="0" rate="1" attackMaterial="1" />
 				</attack>
 			</motion>
-			<motion>
-				<motionProperty sequenceName="Attack_02_B" motionEffect="NPC/Skill/SandstoneDwarf/Eff_SandstoneDwarf_Attack_02_B.xml" movedistance="500" ignoreCollisionGroups="4" faceTarget="0" />
+			<motion sequenceName="Attack_02_B" motionEffect="NPC/Skill/SandstoneDwarf/Eff_SandstoneDwarf_Attack_02_B.xml" movedistance="500" ignoreCollisionGroups="4" faceTarget="0">
 				<attack point="p0" targetCount="50" direction="1" attacktype="1" hitImmuneBreak="1" brokenOffence="2" unrideOnHit="1" releaseObjectWeaponOnHit="0">
-					<rangeProperty rangeType="cylinder" distance="180" height="200" applyTarget="1" castTarget="1" />
-					<arrowProperty nonTarget="1" />
-					<damageProperty rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="250" pushduration="0.2" pushEaseType="1" attackMaterial="1" />
+					<range rangeType="cylinder" distance="180" height="200" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="250" pushduration="0.2" pushEaseType="1" attackMaterial="1" />
 				</attack>
 			</motion>
 		</level>
@@ -700,13 +659,12 @@
 			<stateAttr superArmor="1" />
 		</basic>
 		<level value="3">
-			<detectProperty rangeType="box" distance="160" rangeOffset="0.000000,0.000000,50.000000" height="150" width="230" />
-			<motion>
-				<motionProperty sequenceName="Attack_01_A" motionEffect="NPC/Skill/SandstoneDwarf/Eff_SandstoneDwarf_Attack_01_A.xml" faceTarget="0" />
+			<detectProperty rangeType="box" distance="160" rangeOffset="0,0,50" height="150" width="230" />
+			<motion sequenceName="Attack_01_A" motionEffect="NPC/Skill/SandstoneDwarf/Eff_SandstoneDwarf_Attack_01_A.xml" faceTarget="0">
 				<attack point="p0" targetCount="50" attacktype="1" brokenOffence="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
-					<rangeProperty rangeType="box" distance="160" height="200" width="230" applyTarget="1" castTarget="1" />
-					<arrowProperty nonTarget="1" />
-					<damageProperty rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
+					<range rangeType="box" distance="160" height="200" width="230" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
 				</attack>
 			</motion>
 		</level>
@@ -718,21 +676,19 @@
 			<stateAttr superArmor="1" />
 		</basic>
 		<level value="2">
-			<detectProperty rangeType="box" distance="650" rangeOffset="0.000000,0.000000,50.000000" height="150" width="400" />
-			<motion>
-				<motionProperty sequenceName="Attack_01_B" sequenceSpeed="0.65" faceTarget="0" />
+			<detectProperty rangeType="box" distance="650" rangeOffset="0,0,50" height="150" width="400" />
+			<motion sequenceName="Attack_01_B" sequenceSpeed="0.65" faceTarget="0">
 				<attack point="p0" targetCount="50" direction="1" attacktype="1" attackMethodType="1" brokenOffence="2" unrideOnHit="1" releaseObjectWeaponOnHit="0">
-					<rangeProperty rangeType="box" distance="650" height="200" width="400" applyTarget="1" castTarget="1" />
-					<arrowProperty nonTarget="1" effect="NPC/Skill/Temp/Eff_Temp.xml" />
-					<damageProperty count="0" rate="1" attackMaterial="1" />
+					<range rangeType="box" distance="650" height="200" width="400" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" effect="NPC/Skill/Temp/Eff_Temp.xml" />
+					<damage count="0" rate="1" attackMaterial="1" />
 				</attack>
 			</motion>
-			<motion>
-				<motionProperty sequenceName="Attack_02_B" motionEffect="NPC/Skill/SandstoneDwarf/Eff_SandstoneDwarf_Attack_02_B.xml" movedistance="500" ignoreCollisionGroups="4" faceTarget="0" />
+			<motion sequenceName="Attack_02_B" motionEffect="NPC/Skill/SandstoneDwarf/Eff_SandstoneDwarf_Attack_02_B.xml" movedistance="500" ignoreCollisionGroups="4" faceTarget="0">
 				<attack point="p0" targetCount="50" direction="1" attacktype="1" brokenOffence="2" unrideOnHit="1" releaseObjectWeaponOnHit="0">
-					<rangeProperty rangeType="cylinder" distance="180" height="200" applyTarget="1" castTarget="1" />
-					<arrowProperty nonTarget="1" />
-					<damageProperty rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="250" pushduration="0.2" pushEaseType="1" attackMaterial="1" />
+					<range rangeType="cylinder" distance="180" height="200" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="250" pushduration="0.2" pushEaseType="1" attackMaterial="1" />
 				</attack>
 			</motion>
 		</level>
@@ -743,21 +699,19 @@
 			<kinds rangeType="1" element="7" />
 		</basic>
 		<level value="1">
-			<detectProperty rangeType="box" distance="150" rangeOffset="0.000000,0.000000,50.000000" height="150" width="150" />
-			<motion>
-				<motionProperty sequenceName="Attack_01_A" />
+			<detectProperty rangeType="box" distance="150" rangeOffset="0,0,50" height="150" width="150" />
+			<motion sequenceName="Attack_01_A">
 				<attack point="p0" targetCount="1" attacktype="1" attackMethodType="1" brokenOffence="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
-					<rangeProperty rangeType="box" distance="150" height="200" width="150" applyTarget="1" castTarget="1" />
-					<arrowProperty nonTarget="1" effect="NPC/Skill/Temp/Eff_Temp.xml" />
-					<damageProperty rate="0.5" attackMaterial="1" />
+					<range rangeType="box" distance="150" height="200" width="150" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" effect="NPC/Skill/Temp/Eff_Temp.xml" />
+					<damage rate="0.5" attackMaterial="1" />
 				</attack>
 			</motion>
-			<motion>
-				<motionProperty sequenceName="Attack_02_A" motionEffect="NPC/Skill/Cluka/Eff_Cluka_Attack_02_A.xml" />
+			<motion sequenceName="Attack_02_A" motionEffect="NPC/Skill/Cluka/Eff_Cluka_Attack_02_A.xml">
 				<attack point="p0" targetCount="1" attacktype="1" brokenOffence="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
-					<rangeProperty rangeType="box" distance="150" height="200" width="150" applyTarget="1" castTarget="1" />
-					<arrowProperty nonTarget="1" />
-					<damageProperty rate="0.5" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
+					<range rangeType="box" distance="150" height="200" width="150" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.5" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
 				</attack>
 			</motion>
 		</level>
@@ -768,13 +722,12 @@
 			<kinds rangeType="1" element="7" />
 		</basic>
 		<level value="1">
-			<detectProperty rangeType="box" distance="150" rangeOffset="0.000000,0.000000,50.000000" height="150" width="100" />
-			<motion>
-				<motionProperty sequenceName="Attack_01_A" motionEffect="NPC/Skill/Hallycao/Eff_Hallycao_Attack_01_A.xml" />
+			<detectProperty rangeType="box" distance="150" rangeOffset="0,0,50" height="150" width="100" />
+			<motion sequenceName="Attack_01_A" motionEffect="NPC/Skill/Hallycao/Eff_Hallycao_Attack_01_A.xml">
 				<attack point="p0" targetCount="1" attacktype="1" brokenOffence="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
-					<rangeProperty rangeType="box" distance="150" height="200" width="100" applyTarget="1" castTarget="1" />
-					<arrowProperty nonTarget="1" />
-					<damageProperty rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
+					<range rangeType="box" distance="150" height="200" width="100" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
 				</attack>
 			</motion>
 		</level>
@@ -785,19 +738,18 @@
 			<kinds rangeType="1" element="7" />
 		</basic>
 		<level value="1">
-			<detectProperty rangeType="cylinder" distance="500" rangeOffset="0.000000,0.000000,50.000000" height="150" />
-			<motion>
-				<motionProperty sequenceName="Attack_01_C" motionEffect="NPC/Skill/Hallycao/Eff_Hallycao_Attack_01_C_Cast.xml" faceTarget="0" />
+			<detectProperty rangeType="cylinder" distance="500" rangeOffset="0,0,50" height="150" />
+			<motion sequenceName="Attack_01_C" motionEffect="NPC/Skill/Hallycao/Eff_Hallycao_Attack_01_C_Cast.xml" faceTarget="0">
 				<attack point="p0" targetCount="1" attacktype="1" brokenOffence="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
-					<rangeProperty rangeType="cylinder" distance="500" height="200" includeCaster="1" applyTarget="2" castTarget="1" />
-					<arrowProperty nonTarget="1" />
-					<damageProperty rate="1" />
+					<range rangeType="cylinder" distance="500" height="200" includeCaster="1" applyTarget="2" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="1" />
 					<actionAdditional additionalID="40363001" level="1" skillTarget="1" dependOnDamageCount="1" />
 				</attack>
 				<attack point="p1" targetCount="1" attacktype="1" brokenOffence="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
-					<rangeProperty rangeType="cylinder" distance="500" height="200" includeCaster="1" applyTarget="2" castTarget="1" />
-					<arrowProperty nonTarget="1" />
-					<damageProperty rate="1" />
+					<range rangeType="cylinder" distance="500" height="200" includeCaster="1" applyTarget="2" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="1" />
 					<actionAdditional additionalID="40363001" level="1" skillTarget="1" dependOnDamageCount="1" />
 				</attack>
 			</motion>
@@ -809,28 +761,27 @@
 			<kinds rangeType="1" element="7" />
 		</basic>
 		<level value="1">
-			<detectProperty rangeType="box" distance="200" rangeOffset="0.000000,0.000000,50.000000" height="150" width="100" />
-			<motion>
-				<motionProperty sequenceName="Attack_01_D" motionEffect="NPC/Skill/Hallycao/Eff_Hallycao_Attack_01_D_Cast.xml" ignoreCollisionGroups="4" />
+			<detectProperty rangeType="box" distance="200" rangeOffset="0,0,50" height="150" width="100" />
+			<motion sequenceName="Attack_01_D" motionEffect="NPC/Skill/Hallycao/Eff_Hallycao_Attack_01_D_Cast.xml" ignoreCollisionGroups="4">
 				<attack point="p0" targetCount="1" attacktype="1" brokenOffence="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
-					<rangeProperty rangeType="box" distance="200" height="200" width="100" applyTarget="1" castTarget="1" />
-					<arrowProperty nonTarget="1" />
-					<damageProperty rate="0.4" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
+					<range rangeType="box" distance="200" height="200" width="100" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.4" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
 				</attack>
 				<attack point="p1" targetCount="1" attacktype="1" brokenOffence="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
-					<rangeProperty rangeType="box" distance="200" height="200" width="100" applyTarget="1" castTarget="1" />
-					<arrowProperty nonTarget="1" />
-					<damageProperty rate="0.4" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
+					<range rangeType="box" distance="200" height="200" width="100" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.4" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
 				</attack>
 				<attack point="p2" targetCount="1" attacktype="1" brokenOffence="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
-					<rangeProperty rangeType="box" distance="200" height="200" width="100" applyTarget="1" castTarget="1" />
-					<arrowProperty nonTarget="1" />
-					<damageProperty rate="0.4" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
+					<range rangeType="box" distance="200" height="200" width="100" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.4" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
 				</attack>
 				<attack point="p3" targetCount="1" attacktype="1" brokenOffence="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
-					<rangeProperty rangeType="box" distance="200" height="200" width="100" applyTarget="1" castTarget="1" />
-					<arrowProperty nonTarget="1" />
-					<damageProperty rate="0.4" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
+					<range rangeType="box" distance="200" height="200" width="100" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.4" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
 				</attack>
 			</motion>
 		</level>

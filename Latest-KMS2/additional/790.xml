@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ms2>
+	<additional id="79000001">
+		<level stringParam="10,9">
+			<BasicProperty level="1" durationTick="200000" deadKeepEffect="1" />
+			<Stat>
+				<v type="pap" value="0.1" isRate="1" />
+				<v type="map" value="0.1" isRate="1" />
+			</Stat>
+			<UIProperty icon="./Data/Resource/Image/skill/icon/MonsterOffenceUp_Penalty.png" />
+		</level>
+	</additional>
+	<additional id="79000002">
+		<level stringParam="10,9">
+			<BasicProperty level="1" buffType="2" durationTick="200000" deadKeepEffect="1" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<Stat>
+				<v type="pap" value="-0.1" isRate="1" />
+				<v type="map" value="-0.1" isRate="1" />
+			</Stat>
+			<UIProperty icon="./Data/Resource/Image/skill/icon/destroyWeapon_Penalty.png" />
+		</level>
+	</additional>
+	<additional id="79000003">
+		<level>
+			<BasicProperty level="1" keepCondition="99" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<MotionProperty keepEffect="Additional/Etc/Eff_Target_Red_Keep.xml" clearCondition="0" />
+		</level>
+	</additional>
+	<additional id="79000004">
+		<level>
+			<BasicProperty level="1" keepCondition="99" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<MotionProperty keepEffect="Additional/Etc/Eff_Target_Blue_Keep.xml" clearCondition="0" />
+		</level>
+	</additional>
+	<additional id="79010010">
+		<level stringParam="4">
+			<BasicProperty level="1" group="90" buffSubType="5" durationTick="3600000" deadKeepEffect="1" />
+			<MotionProperty startEffect="CH/Common/Eff_Trophy_Start.xml" abnormalImmuneBreak="5" />
+			<Stat>
+				<v type="pen" value="0.04" isRate="1" />
+			</Stat>
+			<UIProperty icon="./Data/Resource/Image/Skill/icon/Trophy_buff.png" />
+		</level>
+	</additional>
+	<additional id="79010011">
+		<level stringParam="5">
+			<BasicProperty level="1" group="90" buffSubType="5" durationTick="3600000" deadKeepEffect="1" />
+			<MotionProperty startEffect="CH/Common/Eff_Trophy_Start.xml" abnormalImmuneBreak="5" />
+			<SpecialAbility>
+				<v type="sgi_boss" value="50" />
+			</SpecialAbility>
+			<UIProperty icon="./Data/Resource/Image/Skill/icon/Trophy_buff.png" />
+		</level>
+	</additional>
+	<additional id="79070009">
+		<level stringParam="20">
+			<beginCondition>
+				<requireMapCodes code="2000350" />
+			</beginCondition>
+			<BasicProperty level="1" group="90" buffSubType="5" durationTick="3600000" deadKeepEffect="1" />
+			<MotionProperty startEffect="CH/Common/Eff_Trophy_Start.xml" abnormalImmuneBreak="5" />
+			<Stat>
+				<v type="evp" value="20" />
+			</Stat>
+			<UIProperty icon="./Data/Resource/Image/Skill/icon/Trophy_buff.png" />
+		</level>
+	</additional>
+	<additional id="79070012">
+		<level stringParam="3">
+			<BasicProperty level="1" group="90" buffSubType="5" durationTick="3600000" deadKeepEffect="1" />
+			<MotionProperty startEffect="CH/Common/Eff_Trophy_Start.xml" abnormalImmuneBreak="5" />
+			<Stat>
+				<v type="pap" value="0.03" isRate="1" />
+				<v type="map" value="0.03" isRate="1" />
+			</Stat>
+			<UIProperty icon="./Data/Resource/Image/Skill/icon/Trophy_buff.png" />
+		</level>
+	</additional>
+	<additional id="79070013">
+		<level stringParam="7">
+			<BasicProperty level="1" group="90" buffSubType="5" durationTick="3600000" deadKeepEffect="1" />
+			<MotionProperty startEffect="CH/Common/Eff_Trophy_Start.xml" abnormalImmuneBreak="5" />
+			<Stat>
+				<v type="atp" value="7" />
+			</Stat>
+			<UIProperty icon="./Data/Resource/Image/Skill/icon/Trophy_buff.png" />
+		</level>
+	</additional>
+</ms2>

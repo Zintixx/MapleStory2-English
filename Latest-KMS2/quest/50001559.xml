@@ -1,15 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- 파싱해서 사용하는 데이터이니 직접 수정하지 마세요 -->
 <ms2>
-	<environment feature="Quest2017" locale="">
+	<environment feature="Quest2017">
 		<quest>
-			<basic chapterID="4075" questID="50001559" questType="0" account="0" standardLevel="22" autoStart="0" disableGiveup="0" exceptChapterClear="0" repeatable="0" usePeriod="" eventTag="" locking="0" tabIndex="-1" forceRegistGuide="0" useNavi="FALSE" />
-			<notify completeUiEffect="" acceptSoundKey="" completeSoundKey="" />
-			<require level="22" maxLevel="0" job="" quest="50001558" selectableQuest="" unrequire="" field="" achievement="0" unreqAchievement="" groupID="0" dayOfWeek="" gearScore="0" />
+			<basic questID="50001559" chapterID="4075" standardLevel="22" useNavi="FALSE" />
+			<require level="22" quest="50001558" />
 			<start npc="11000101" />
 			<complete npc="11003241" />
-			<acceptReward />
-			<completeReward exp="60905" relativeExp="epicQuest" money="2800" karma="0" lu="0">
+			<completeReward exp="60905" relativeExp="epicQuest" money="2800">
 				<essentialItem code="32000005" rank="2" count="1" />
 				<essentialItem code="20000022" rank="1" count="9" />
 				<essentialItem code="20000028" rank="1" count="9" />
@@ -28,14 +26,8 @@
 				<globalEssentialJobItem code="11600940" rank="2" count="1" />
 			</completeReward>
 			<progressMap progressMap="02000083" />
-			<guide guideType="" guideIcon="" guideMinLevel="0" guideMaxLevel="0" />
-			<gotoNpc enable="0" gotoField="0" gotoPortal="0" />
-			<gotoDungeon state="1" gotoDungeon="21005001" gotoInstanceID="0" />
-			<remoteAccept useRemote="0" requireField="0" />
-			<remoteComplete useRemote="0" requireField="0" requireDungeonClear="0" />
-			<summonPortal fieldID="0" portalID="0" />
-			<eventMission event="" />
-			<condition type="npc" code="24000010" value="1" target="02000243" />
+			<gotoDungeon state="1" gotoDungeon="21005001" />
+			<condition type="npc" code="24000010" target="02000243" value="1" />
 		</quest>
 	</environment>
 </ms2>

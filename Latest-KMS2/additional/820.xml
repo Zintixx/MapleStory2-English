@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ms2>
+	<additional id="82000001">
+		<level>
+			<beginCondition allowDeadState="1" applyPvPZoneType="1" />
+			<BasicProperty level="1" keepCondition="99" deadKeepEffect="1" doNotClearEffectFromEnterPVPZone="1" />
+			<conditionSkill level="1" skillID="82000002" skillTarget="1">
+				<beginCondition allowDeadState="1">
+					<owner eventCondition="13" />
+				</beginCondition>
+			</conditionSkill>
+		</level>
+	</additional>
+	<additional id="82000002">
+		<level>
+			<beginCondition allowDeadState="1" applyPvPZoneType="1" />
+			<BasicProperty level="1" durationTick="1000" delayTick="200" deadKeepEffect="1" />
+			<MotionProperty abnormalImmuneBreak="5" />
+			<UIProperty icon="./Data/Resource/Image/item/icon/20000227.png" />
+			<splashSkill level="1" skillID="82100002" />
+		</level>
+	</additional>
+	<additional id="82000011">
+		<level>
+			<beginCondition>
+				<owner>
+					<compareStat hp="0.2" func="LessEquals" />
+				</owner>
+			</beginCondition>
+			<BasicProperty level="1" keepCondition="99" deadKeepEffect="1" doNotClearEffectFromEnterPVPZone="1" />
+			<MotionProperty keepEffect="Item/Passive/Eff_Item_RedArrow_Keep_01.xml" />
+			<UIProperty icon="./Data/Resource/Image/item/icon/20000227.png" />
+		</level>
+	</additional>
+	<additional id="82000021">
+		<level>
+			<BasicProperty level="1" keepCondition="99" deadKeepEffect="1" doNotClearEffectFromEnterPVPZone="1" />
+			<conditionSkill level="1" skillID="82000022" skillTarget="1">
+				<beginCondition allowDeadState="1">
+					<owner eventCondition="11" />
+				</beginCondition>
+			</conditionSkill>
+		</level>
+	</additional>
+	<additional id="82000022">
+		<level>
+			<BasicProperty level="1" durationTick="3000" />
+			<MotionProperty keepEffect="Additional/Haste/Eff_Additional_Haste_Keep.xml" abnormalImmuneBreak="5" />
+			<Stat>
+				<v type="msp" value="1" isRate="1" />
+				<v type="rmsp" value="1" isRate="1" />
+			</Stat>
+			<UIProperty icon="./Data/Resource/Image/skill/icon/SpeedUp.png" />
+		</level>
+	</additional>
+</ms2>

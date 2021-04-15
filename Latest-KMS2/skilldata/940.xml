@@ -1,99 +1,84 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ms2>
-	<skill id="94000001">
-		<basic mainType="9">
+	<skill id="94000001" comment="마토스 캔디팩 순한맛">
+		<basic mainType="18" param1="1000">
 			<ui icon="./Data/Resource/Image/item/icon/20000208.png" attackType="1" />
 			<stateAttr autoTargetingType="1" keyIsDown="1" cooldownGroupID="63000000" />
-		</basic>
-		<level value="1">
-			<beginCondition cooldownTime="0.55" />
 			<autoTargeting autoTargetingMaxDegree="60" autoTargetUseMove="1" />
-			<consume useItem="1" />
-			<motion>
-				<motionProperty sequenceName="Item_Throw_A" motionEffect="Item/PetTaming/Eff_Item_PetTamingCandy_Cast_01.xml" holdWeapon="0" />
+		</basic>
+		<level value="1" cooldown="550">
+			<motion sequenceName="Item_Throw_A" motionEffect="Item/PetTaming/Eff_Item_PetTamingCandy_Cast_01.xml" holdWeapon="0">
 				<attack point="p0" targetCount="1" magicPathID="94000001" cubeMagicPathID="940000011" attacktype="1" attackMethodType="1" brokenOffence="1" compulsionType="1">
-					<petTamingProperty tamingPoint="1000" />
-					<rangeProperty rangeType="box" distance="600" height="450" width="150" applyTarget="8" />
-					<arrowProperty rayPhysxTest="1" collision="50.000000,0.000000,50.000000" collisionAdd="20.000000,0.000000,100.000000" effect="Item/PetTaming/Eff_Item_PetTamingCandy_Ball_01.xml" />
-					<damageProperty effectHit="Item/PetTaming/Eff_Item_PetTamingCandy_Keep_01.xml" attackMaterial="1" />
+					<range rangeType="box" distance="600" height="450" width="150" applyTarget="8" />
+					<arrow rayPhysxTest="1" collision="50,0,50" collisionAdd="20,0,100" effect="Item/PetTaming/Eff_Item_PetTamingCandy_Ball_01.xml" />
+					<damage effectHit="Item/PetTaming/Eff_Item_PetTamingCandy_Keep_01.xml" attackMaterial="1" />
 					<actionAdditional additionalID="63000000" level="1" skillTarget="2" skillOwner="1" />
 					<actionSkill skillID="94000002" level="1" immediateActive="1" />
 				</attack>
 			</motion>
 		</level>
 	</skill>
-	<skill id="94000002">
-		<basic mainType="9">
+	<skill id="94000002" comment="마토스 캔디팩 스플래쉬">
+		<basic mainType="18">
 			<ui attackType="1" />
-			<stateAttr autoTargeting="0" />
+			<autoTargeting autoTargetingMaxDegree="180" />
+			<condition invokeEffectFactor="0" />
 		</basic>
 		<level value="1">
-			<beginCondition invokeEffectFactor="0" />
-			<autoTargeting autoTargetingMaxDegree="180" />
-			<motion>
-				<motionProperty splashInvokeEffect="Item/PetTaming/Eff_Item_PetTamingCandy_Invoke_01.xml" />
+			<motion splashInvokeEffect="Item/PetTaming/Eff_Item_PetTamingCandy_Invoke_01.xml">
 				<attack point="p0" targetCount="1" attacktype="1" brokenOffence="1" compulsionType="1">
-					<rangeProperty rangeType="cylinder" distance="150" rangeAdd="0.000000,0.000000,100.000000" height="300" applyTarget="8" />
-					<damageProperty attackMaterial="1000" />
+					<range rangeType="cylinder" distance="150" rangeAdd="0,0,100" height="300" applyTarget="8" />
+					<damage attackMaterial="1000" />
 				</attack>
 			</motion>
 		</level>
 	</skill>
-	<skill id="94000003">
-		<basic mainType="9">
+	<skill id="94000003" comment="마토스 캔디팩 매운맛">
+		<basic mainType="18" param1="2000">
 			<ui icon="./Data/Resource/Image/item/icon/20000208.png" attackType="1" />
 			<stateAttr autoTargetingType="1" keyIsDown="1" cooldownGroupID="63000000" />
-		</basic>
-		<level value="1">
-			<beginCondition cooldownTime="0.55" />
 			<autoTargeting autoTargetingMaxDegree="60" autoTargetUseMove="1" />
-			<consume useItem="1" />
-			<motion>
-				<motionProperty sequenceName="Item_Throw_A" motionEffect="Item/PetTaming/Eff_Item_PetTamingCandy_Cast_01.xml" holdWeapon="0" />
+		</basic>
+		<level value="1" cooldown="550">
+			<motion sequenceName="Item_Throw_A" motionEffect="Item/PetTaming/Eff_Item_PetTamingCandy_Cast_01.xml" holdWeapon="0">
 				<attack point="p0" targetCount="1" magicPathID="94000001" cubeMagicPathID="940000011" attacktype="1" attackMethodType="1" brokenOffence="1" compulsionType="1">
-					<petTamingProperty tamingPoint="2000" />
-					<rangeProperty rangeType="box" distance="600" height="450" width="150" applyTarget="8" />
-					<arrowProperty rayPhysxTest="1" collision="50.000000,0.000000,50.000000" collisionAdd="20.000000,0.000000,100.000000" effect="Item/PetTaming/Eff_Item_PetTamingCandy_Ball_01.xml" />
-					<damageProperty effectHit="Item/PetTaming/Eff_Item_PetTamingCandy_Keep_01.xml" attackMaterial="1" />
+					<range rangeType="box" distance="600" height="450" width="150" applyTarget="8" />
+					<arrow rayPhysxTest="1" collision="50,0,50" collisionAdd="20,0,100" effect="Item/PetTaming/Eff_Item_PetTamingCandy_Ball_01.xml" />
+					<damage effectHit="Item/PetTaming/Eff_Item_PetTamingCandy_Keep_01.xml" attackMaterial="1" />
 					<actionAdditional additionalID="63000000" level="1" skillTarget="2" skillOwner="1" />
 					<actionSkill skillID="94000002" level="1" immediateActive="1" />
 				</attack>
 			</motion>
 		</level>
 	</skill>
-	<skill id="94000005">
-		<basic mainType="9">
+	<skill id="94000005" comment="라피스 캡슐">
+		<basic mainType="19">
 			<ui icon="./Data/Resource/Image/item/icon/20000208.png" attackType="1" />
 			<stateAttr autoTargetingType="1" keyIsDown="1" cooldownGroupID="63000000" />
-		</basic>
-		<level value="1">
-			<beginCondition cooldownTime="0.55" />
 			<autoTargeting autoTargetingMaxDegree="60" autoTargetUseMove="1" />
-			<consume useItem="1" />
-			<motion>
-				<motionProperty sequenceName="Item_Throw_A" motionEffect="Item/PetTaming/Eff_Item_PetTamingLapis_Cast_01.xml" holdWeapon="0" />
+		</basic>
+		<level value="1" cooldown="550">
+			<motion sequenceName="Item_Throw_A" motionEffect="Item/PetTaming/Eff_Item_PetTamingLapis_Cast_01.xml" holdWeapon="0">
 				<attack point="p0" targetCount="1" magicPathID="94000001" cubeMagicPathID="940000011" attacktype="1" attackMethodType="1" brokenOffence="1" compulsionType="1">
-					<petTamingProperty tamingGroup="1" trapLevel="3" tamingPoint="9000" forcedTaming="1" />
-					<rangeProperty rangeType="box" distance="600" height="450" width="150" applyTarget="8" />
-					<arrowProperty rayPhysxTest="1" collision="50.000000,0.000000,50.000000" collisionAdd="20.000000,0.000000,100.000000" effect="Item/PetTaming/Eff_Item_PetTamingLapis_Ball_01.xml" effectRemain="Item/PetTaming/Eff_Item_PetTamingLapis_HitRemain_01.xml" />
-					<damageProperty attackMaterial="1" />
+					<range rangeType="box" distance="600" height="450" width="150" applyTarget="8" />
+					<arrow rayPhysxTest="1" collision="50,0,50" collisionAdd="20,0,100" effect="Item/PetTaming/Eff_Item_PetTamingLapis_Ball_01.xml" effectRemain="Item/PetTaming/Eff_Item_PetTamingLapis_HitRemain_01.xml" />
+					<damage attackMaterial="1" />
 					<actionAdditional additionalID="63000000" level="1" skillTarget="2" skillOwner="1" />
 					<actionSkill skillID="94000006" level="1" immediateActive="1" />
 				</attack>
 			</motion>
 		</level>
 	</skill>
-	<skill id="94000006">
-		<basic mainType="9">
+	<skill id="94000006" comment="라피스 캡슐 스플래쉬">
+		<basic mainType="19">
 			<ui attackType="1" />
-			<stateAttr autoTargeting="0" />
+			<autoTargeting autoTargetingMaxDegree="180" />
+			<condition invokeEffectFactor="0" />
 		</basic>
 		<level value="1">
-			<beginCondition invokeEffectFactor="0" />
-			<autoTargeting autoTargetingMaxDegree="180" />
 			<motion>
 				<attack point="p0" targetCount="1" attacktype="1" brokenOffence="1" compulsionType="1">
-					<rangeProperty rangeType="cylinder" distance="150" rangeAdd="0.000000,0.000000,100.000000" height="300" applyTarget="8" />
+					<range rangeType="cylinder" distance="150" rangeAdd="0,0,100" height="300" applyTarget="8" />
 				</attack>
 			</motion>
 		</level>

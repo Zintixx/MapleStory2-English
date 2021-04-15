@@ -1,0 +1,537 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ms2>
+	<additional id="50160005">
+		<level>
+			<BasicProperty level="1" buffType="2" buffSubType="1" durationTick="3000" intervalTick="500" dotCondition="1" />
+			<MotionProperty abnormalImmuneBreak="1" />
+			<DotDamageProperty type="1" rate="0.25" element="7" />
+			<UIProperty icon="./Data/Resource/Image/skill/icon/Bleed.png" />
+		</level>
+	</additional>
+	<additional id="50160006">
+		<level>
+			<BasicProperty level="1" durationTick="5000" intervalTick="500" />
+			<MotionProperty keepEffect="NPC/Skill/SalamanderCute/Eff_SalamanderCute_Splash_Keep.xml" abnormalImmuneBreak="1" />
+			<splashSkill level="1" skillID="40191021" immediateActive="1" />
+		</level>
+	</additional>
+	<additional id="50160007">
+		<level>
+			<BasicProperty level="1" durationTick="1000" />
+			<MotionProperty abnormalImmuneBreak="1" />
+			<RecoveryProperty hpRate="0.3" />
+		</level>
+	</additional>
+	<additional id="50160008">
+		<level>
+			<BasicProperty level="1" durationTick="15000" keepCondition="1" />
+			<MotionProperty keepEffect="NPC/Skill/Larva/Eff_Larva_IncreasePap_Keep_01.xml" stopEffect="NPC/Skill/Larva/Eff_Larva_IncreasePap_Stop_01.xml" abnormalImmuneBreak="1" />
+			<Stat>
+				<v type="pap" value="0.5" isRate="1" />
+				<v type="map" value="0.5" isRate="1" />
+			</Stat>
+			<UIProperty icon="./Data/Resource/Image/skill/icon/MonsterOffenceUp.png" iconOnOff="0" />
+		</level>
+	</additional>
+	<additional id="50160009">
+		<level>
+			<BasicProperty level="1" durationTick="15000" keepCondition="1" />
+			<MotionProperty keepEffect="NPC/Skill/Larva/Eff_Larva_IncreaseNdd_Keep_01.xml" stopEffect="NPC/Skill/Larva/Eff_Larva_IncreaseNdd_Stop_01.xml" abnormalImmuneBreak="1" />
+			<Stat>
+				<v type="ndd" value="0.5" isRate="1" />
+			</Stat>
+			<UIProperty icon="./Data/Resource/Image/skill/icon/MonsterOffenceUp.png" iconOnOff="0" />
+		</level>
+	</additional>
+	<additional id="50170001">
+		<level stringParam="99">
+			<BasicProperty level="1" buffType="2" buffSubType="1" durationTick="1500" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<MotionProperty keepEffect="Additional/Offense/Eff_Additional_OffenseDownDebuff_Keep.xml" IgnoreOptimalHideStartEffect="1" abnormalImmuneBreak="1" />
+			<Stat>
+				<v type="pap" value="-0.99" isRate="1" />
+				<v type="map" value="-0.99" isRate="1" />
+			</Stat>
+			<UIProperty icon="./Data/Resource/Image/skill/icon/destroyWeapon.png" />
+		</level>
+		<level stringParam="99">
+			<BasicProperty level="2" buffType="2" buffSubType="1" durationTick="7000" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<MotionProperty keepEffect="Additional/Offense/Eff_Additional_OffenseDownDebuff_Keep.xml" IgnoreOptimalHideStartEffect="1" abnormalImmuneBreak="1" />
+			<Stat>
+				<v type="pap" value="-0.85" isRate="1" />
+				<v type="map" value="-0.85" isRate="1" />
+			</Stat>
+			<UIProperty icon="./Data/Resource/Image/skill/icon/destroyWeapon.png" />
+		</level>
+	</additional>
+	<additional id="50170002">
+		<level>
+			<BasicProperty level="1" group="1" buffType="2" buffSubType="1" durationTick="3000" resetCondition="1" />
+			<MotionProperty keepEffect="NPC/Skill/YetiTwoHeadWhite/Eff_YetiTwoHeadWhite_FrozenCube_Keep.xml" stopEffect="NPC/Skill/YetiTwoHeadWhite/Eff_YetiTwoHeadWhite_FrozenCube_Stop.xml" IgnoreOptimalHideStartEffect="1" stun="7" abnormalImmuneBreak="1" />
+			<SpecialAbility>
+				<v type="defensive_physicaldamage" value="-500" />
+				<v type="defensive_magicaldamage" value="-500" />
+			</SpecialAbility>
+			<UIProperty icon="./Data/Resource/Image/skill/icon/IceCubePrison.png" />
+		</level>
+	</additional>
+	<additional id="50170003">
+		<level>
+			<BasicProperty level="1" delayTick="2000" keepCondition="99" />
+			<MotionProperty keepEffect="NPC/Skill/SnowKing/Eff_SnowKing_CurseMode_Keep.xml" abnormalImmuneBreak="1" />
+			<UIProperty icon="./Data/Resource/Image/skill/icon/MonsterDarknessMode.png" />
+		</level>
+	</additional>
+	<additional id="50170004">
+		<level stringParam="18,5">
+			<BasicProperty level="1" buffType="2" buffSubType="1" durationTick="10000" intervalTick="1100" resetCondition="2" maxBuffCount="5" dotCondition="1" logoutClearEffect="1" coolDownTime="1.9" />
+			<MotionProperty keepEffect="Additional/Burn/Eff_Additional_BlindDarkBurn_Keep.xml" stopEffect="Additional/Burn/Eff_Additional_BlindDarkBurn_Stop.xml" IgnoreOptimalHideStartEffect="1" abnormalImmuneBreak="1" />
+			<Stat>
+				<v type="atp" value="-0.18" isRate="1" />
+			</Stat>
+			<DotDamageProperty type="2" element="5" damageByTargetMaxHP="0.0045" />
+			<UIProperty icon="./Data/Resource/Image/skill/icon/FireDark.png" />
+		</level>
+	</additional>
+	<additional id="50170005">
+		<level stringParam="75">
+			<BasicProperty level="1" group="95" buffSubType="1" durationTick="270000" />
+			<MotionProperty startEffect="NPC/Skill/BigWingChimera/Eff_BigWingChimera_Order_Start.xml" keepEffect="NPC/Skill/BigWingChimera/Eff_BigWingChimera_Order_Keep.xml" abnormalImmuneBreak="1" />
+			<Stat>
+				<v type="par" value="1125" />
+				<v type="mar" value="1125" />
+			</Stat>
+			<UIProperty icon="./Data/Resource/Image/skill/icon/MonsterDarknessMode.png" />
+		</level>
+	</additional>
+	<additional id="50170006">
+		<level>
+			<BasicProperty level="1" buffType="2" buffSubType="1" durationTick="21000" intervalTick="3000" dotCondition="1" logoutClearEffect="1" />
+			<MotionProperty startEffect="NPC/Skill/Pinkbean/Eff_Pinkbean_Attack_01_D_Music_Throw_Ball_Guided_Hit.xml" keepEffect="NPC/Skill/Pinkbean/Eff_Pinkbean_MusicBomb_Keep.xml" IgnoreOptimalHideStartEffect="1" abnormalImmuneBreak="1" />
+			<ImmuneEffectProperty immuneEffectCodes="50170007" />
+			<UIProperty icon="./Data/Resource/Image/skill/icon/TimeBombMusic.png" />
+			<splashSkill level="1" skillID="99999741" interval="1000" immediateActive="1" />
+		</level>
+		<level>
+			<BasicProperty level="2" buffType="2" buffSubType="1" durationTick="16000" intervalTick="3000" dotCondition="1" logoutClearEffect="1" />
+			<MotionProperty startEffect="NPC/Skill/Pinkbean/Eff_Pinkbean_Attack_01_D_Music_Throw_Ball_Guided_Hit.xml" keepEffect="NPC/Skill/Pinkbean/Eff_Pinkbean_MusicBomb_Keep.xml" IgnoreOptimalHideStartEffect="1" abnormalImmuneBreak="1" />
+			<ImmuneEffectProperty immuneEffectCodes="50170007" />
+			<UIProperty icon="./Data/Resource/Image/skill/icon/TimeBombMusic.png" />
+			<splashSkill level="1" skillID="99999741" interval="1000" immediateActive="1" />
+		</level>
+	</additional>
+	<additional id="50170007">
+		<level>
+			<BasicProperty level="1" group="88" buffType="2" buffSubType="3" durationTick="3000" />
+			<MotionProperty keepEffect="NPC/Skill/Pinkbean/Eff_Pinkbean_StunDance_Keep.xml" IgnoreOptimalHideStartEffect="1" stun="99" stunAnimation="Emotion_Dance_H" abnormalImmuneBreak="1" />
+			<UIProperty icon="./Data/Resource/Image/skill/icon/StunDance.png" />
+		</level>
+	</additional>
+	<additional id="50170008">
+		<level>
+			<BasicProperty level="1" group="88" buffType="2" buffSubType="3" durationTick="3000" coolDownTime="4.5" />
+			<MotionProperty keepEffect="NPC/Skill/Pinkbean/Eff_Pinkbean_StunDance_Keep.xml" IgnoreOptimalHideStartEffect="1" stun="99" stunAnimation="Emotion_Dance_I" abnormalImmuneBreak="1" />
+			<UIProperty icon="./Data/Resource/Image/skill/icon/StunDance.png" />
+		</level>
+	</additional>
+	<additional id="50170009">
+		<level>
+			<BasicProperty level="1" group="88" buffType="2" buffSubType="3" durationTick="3000" />
+			<MotionProperty keepEffect="NPC/Skill/Pinkbean/Eff_Pinkbean_StunDance_Keep.xml" IgnoreOptimalHideStartEffect="1" stun="99" stunAnimation="Emotion_Dance_B" abnormalImmuneBreak="1" />
+			<UIProperty icon="./Data/Resource/Image/skill/icon/StunDance.png" />
+		</level>
+		<level>
+			<BasicProperty level="2" group="88" buffType="2" buffSubType="3" durationTick="6000" />
+			<MotionProperty keepEffect="NPC/Skill/Pinkbean/Eff_Pinkbean_StunDance_Keep.xml" IgnoreOptimalHideStartEffect="1" stun="99" stunAnimation="Emotion_Dance_B" abnormalImmuneBreak="1" />
+			<UIProperty icon="./Data/Resource/Image/skill/icon/StunDance.png" />
+		</level>
+	</additional>
+	<additional id="50170010">
+		<level>
+			<BasicProperty level="1" group="89" buffType="2" durationTick="21000" />
+			<MotionProperty startEffect="NPC/Skill/Pinkbean/Eff_Pinkbean_Attack_02_H_Controller_Ball_Guided_Hit.xml" keepEffect="Additional/Confusion/Eff_Additional_Confusion_Keep.xml" stopEffect="Additional/Confusion/Eff_Additional_Confusion_Stop.xml" IgnoreOptimalHideStartEffect="1" confusionMove="1" abnormalImmuneBreak="1" />
+			<UIProperty icon="./Data/Resource/Image/skill/icon/Confusion.png" />
+		</level>
+	</additional>
+	<additional id="50170011">
+		<level stringParam="1">
+			<BasicProperty level="1" buffType="2" buffSubType="1" durationTick="31000" intervalTick="1799" dotCondition="1" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<MotionProperty keepEffect="NPC/Skill/Pinkbean/Eff_Pinkbean_Additional_HPOneState_Keep.xml" IgnoreOptimalHideStartEffect="1" abnormalImmuneBreak="1" />
+			<UIProperty icon="./Data/Resource/Image/skill/icon/MonsterPinkbeanCurse.png" />
+			<splashSkill level="1" skillID="99999737" interval="1000" immediateActive="1" />
+		</level>
+	</additional>
+	<additional id="50170012">
+		<level>
+			<BasicProperty level="1" group="1" buffType="2" buffSubType="3" durationTick="8000" delayTick="500" />
+			<MotionProperty keepEffect="NPC/Skill/Pinkbean/Eff_Pinkbean_Additional_Stun_Keep.xml" IgnoreOptimalHideStartEffect="1" stun="1" abnormalImmuneBreak="99" />
+			<CancelEffectProperty cancelEffectCodes="50170019,50170020" />
+			<UIProperty icon="./Data/Resource/Image/skill/icon/Stun.png" />
+		</level>
+	</additional>
+	<additional id="50170013">
+		<level>
+			<BasicProperty level="1" durationTick="15000" delayTick="500" />
+			<MotionProperty abnormalImmuneBreak="1" />
+		</level>
+	</additional>
+	<additional id="50170014">
+		<level>
+			<BasicProperty level="1" durationTick="500" />
+			<MotionProperty abnormalImmuneBreak="1" />
+			<DefensiveProperty invincible="2" />
+		</level>
+		<level>
+			<BasicProperty level="2" durationTick="1000" />
+			<MotionProperty abnormalImmuneBreak="1" />
+			<DefensiveProperty invincible="2" />
+		</level>
+		<level>
+			<BasicProperty level="3" durationTick="1500" />
+			<MotionProperty abnormalImmuneBreak="1" />
+			<DefensiveProperty invincible="2" />
+		</level>
+	</additional>
+	<additional id="50170015">
+		<level stringParam="50">
+			<BasicProperty level="1" buffType="2" durationTick="16000" />
+			<MotionProperty keepEffect="NPC/Skill/StatueHuman/Eff_StatueHuman_Attack_01_A_Hit_Keep.xml" IgnoreOptimalHideStartEffect="1" abnormalImmuneBreak="1" />
+			<Stat>
+				<v type="pap" value="-0.5" isRate="1" />
+				<v type="map" value="-0.5" isRate="1" />
+			</Stat>
+			<UIProperty icon="./Data/Resource/Image/skill/icon/destroyWeapon.png" />
+		</level>
+		<level stringParam="70">
+			<BasicProperty level="2" durationTick="16000" />
+			<MotionProperty keepEffect="NPC/Skill/StatueHuman/Eff_StatueHuman_Attack_01_A_Hit_Keep.xml" abnormalImmuneBreak="1" />
+			<Stat>
+				<v type="par" value="1050" />
+				<v type="mar" value="1050" />
+			</Stat>
+			<UIProperty icon="./Data/Resource/Image/skill/icon/MonsterDefenceUp.png" />
+		</level>
+	</additional>
+	<additional id="50170016">
+		<level stringParam="30,3">
+			<BasicProperty level="1" buffType="2" durationTick="16000" resetCondition="2" maxBuffCount="3" />
+			<MotionProperty keepEffect="NPC/Skill/StatueAnimal/Eff_StatueAnimal_Attack_01_A_Hit_Keep.xml" IgnoreOptimalHideStartEffect="1" abnormalImmuneBreak="1" />
+			<Stat>
+				<v type="pap" value="-0.3" isRate="1" />
+				<v type="map" value="-0.3" isRate="1" />
+			</Stat>
+			<UIProperty icon="./Data/Resource/Image/skill/icon/destroyWeapon.png" />
+		</level>
+	</additional>
+	<additional id="50170017">
+		<level>
+			<BasicProperty level="1" durationTick="111000" />
+			<MotionProperty startEffect="NPC/Skill/Pinkbean/Eff_Pinkbean_BiggerDeffenceUp_Cast.xml" abnormalImmuneBreak="1" />
+		</level>
+	</additional>
+	<additional id="50170018">
+		<level>
+			<BasicProperty level="1" durationTick="1000" />
+			<MotionProperty startEffect="NPC/Skill/Pinkbean/Eff_Pinkbean_Splash_HPOneState.xml" IgnoreOptimalHideStartEffect="1" abnormalImmuneBreak="1" />
+		</level>
+	</additional>
+	<additional id="50170019">
+		<level>
+			<BasicProperty level="1" durationTick="5000" resetCondition="1" />
+			<MotionProperty keepEffect="NPC/Skill/Pinkbean/Eff_Pinkbean_Invincible_Keep.xml" abnormalImmuneBreak="1" />
+			<DefensiveProperty invincible="2" />
+			<UIProperty icon="./Data/Resource/Image/skill/icon/MonsterInvincible.png" />
+		</level>
+	</additional>
+	<additional id="50170020">
+		<level>
+			<BasicProperty level="1" durationTick="99999000" />
+			<MotionProperty abnormalImmuneBreak="1" />
+			<CancelEffectProperty cancelEffectCodes="50170019" />
+		</level>
+	</additional>
+	<additional id="50170021">
+		<level stringParam="30,70">
+			<BasicProperty level="1" group="45" keepCondition="99" />
+			<MotionProperty keepEffect="NPC/Skill/Pinkbean/Eff_Pinkbean_BiggerDeffenceUp_Keep.xml" abnormalImmuneBreak="1" scale="0.45" />
+			<Stat>
+				<v type="pap" value="0.3" isRate="1" />
+				<v type="map" value="0.3" isRate="1" />
+				<v type="par" value="1050" />
+				<v type="mar" value="1050" />
+			</Stat>
+			<UIProperty icon="./Data/Resource/Image/skill/icon/MonsterStateUp_Penalty.png" />
+		</level>
+	</additional>
+	<additional id="50170022">
+		<level>
+			<BasicProperty level="1" group="45" durationTick="1000" />
+			<MotionProperty abnormalImmuneBreak="1" />
+			<CancelEffectProperty cancelEffectCodes="50170020" />
+		</level>
+	</additional>
+	<additional id="50170023">
+		<level stringParam="99">
+			<BasicProperty level="1" group="44" delayTick="3500" keepCondition="99" />
+			<MotionProperty keepEffect="NPC/Skill/Pinkbean/Eff_Pinkbean_Additional_Reflection_Keep.xml" abnormalImmuneBreak="1" />
+			<SpecialAbility>
+				<v type="defensive_physicaldamage" value="990" />
+				<v type="defensive_magicaldamage" value="990" />
+			</SpecialAbility>
+			<ReflectProperty reflectionRate="1" reflectionAdditionalEffectId="50170024" reflectionAdditionalEffectLevel="1" reflectionCount="99999" />
+			<UIProperty icon="./Data/Resource/Image/skill/Icon/MonsterReflection.png" />
+		</level>
+		<level stringParam="99">
+			<BasicProperty level="2" group="44" durationTick="8000" />
+			<MotionProperty keepEffect="NPC/Skill/Pinkbean/Eff_Pinkbean_Additional_Reflection_Keep.xml" abnormalImmuneBreak="1" />
+			<SpecialAbility>
+				<v type="defensive_physicaldamage" value="990" />
+				<v type="defensive_magicaldamage" value="990" />
+			</SpecialAbility>
+			<ReflectProperty reflectionRate="1" reflectionAdditionalEffectId="50170024" reflectionAdditionalEffectLevel="1" reflectionCount="99999" />
+			<UIProperty icon="./Data/Resource/Image/skill/Icon/MonsterReflection.png" />
+		</level>
+	</additional>
+	<additional id="50170024">
+		<level>
+			<BasicProperty level="1" />
+			<MotionProperty abnormalImmuneBreak="1" />
+			<OffensiveProperty hitImmuneBreak="1" />
+			<DotDamageProperty type="1" element="5" damageByTargetMaxHP="0.11" />
+		</level>
+	</additional>
+	<additional id="50170025">
+		<level stringParam="99">
+			<BasicProperty level="1" durationTick="11000" delayTick="1500" />
+			<MotionProperty keepEffect="NPC/Skill/StatueAnimal/Eff_StatueAnimal_Additional_Reflection_Keep.xml" abnormalImmuneBreak="1" />
+			<SpecialAbility>
+				<v type="defensive_physicaldamage" value="990" />
+				<v type="defensive_magicaldamage" value="990" />
+			</SpecialAbility>
+			<ReflectProperty reflectionRate="1" reflectionAdditionalEffectId="50170026" reflectionAdditionalEffectLevel="1" reflectionCount="99999" />
+			<UIProperty icon="./Data/Resource/Image/skill/Icon/MonsterReflection.png" />
+		</level>
+	</additional>
+	<additional id="50170026">
+		<level>
+			<BasicProperty level="1" />
+			<MotionProperty abnormalImmuneBreak="1" />
+			<OffensiveProperty hitImmuneBreak="1" />
+			<DotDamageProperty type="1" element="5" damageByTargetMaxHP="0.11" />
+		</level>
+	</additional>
+	<additional id="50170027">
+		<level>
+			<BasicProperty level="1" group="44" durationTick="1000" />
+			<MotionProperty abnormalImmuneBreak="1" />
+			<CancelEffectProperty cancelEffectCodes="50170023" />
+		</level>
+	</additional>
+	<additional id="50170028">
+		<level stringParam="45">
+			<BasicProperty level="1" buffType="2" buffSubType="1" durationTick="5000" resetCondition="1" />
+			<MotionProperty keepEffect="NPC/Skill/LizardDragonIce/Eff_LizardDragonIce_SlowIce_Keep.xml" abnormalImmuneBreak="1" />
+			<Stat>
+				<v type="msp" value="-0.45" isRate="1" />
+				<v type="rmsp" value="-0.45" isRate="1" />
+			</Stat>
+			<UIProperty icon="./Data/Resource/Image/skill/icon/SpeedDown.png" />
+		</level>
+	</additional>
+	<additional id="50170029">
+		<level stringParam="30,3">
+			<BasicProperty level="1" buffType="2" buffSubType="1" durationTick="10000" resetCondition="2" maxBuffCount="3" />
+			<MotionProperty keepEffect="Additional/HitRateDown/Eff_Additional_HitRateDown_Keep.xml" stopEffect="Additional/HitRateDown/Eff_Additional_HitRateDown_Stop.xml" IgnoreOptimalHideStartEffect="1" abnormalImmuneBreak="1" />
+			<Stat>
+				<v type="atp" value="-0.3" isRate="1" />
+			</Stat>
+			<UIProperty icon="./Data/Resource/Image/skill/icon/exhaust.png" />
+		</level>
+	</additional>
+	<additional id="50170030">
+		<level>
+			<BasicProperty level="1" buffSubType="5" durationTick="1000" intervalTick="600" dotCondition="1" />
+			<MotionProperty startEffect="NPC/Skill/KnightHollowArmorSwordRed/Eff_KnightHollowArmorSwordRed_HPRecover_Start.xml" abnormalImmuneBreak="5" />
+			<RecoveryProperty hpRate="0.48" />
+			<UIProperty icon="./Data/Resource/Image/skill/icon/MonsterHPRecovery.png" />
+		</level>
+		<level>
+			<BasicProperty level="2" buffSubType="5" durationTick="1000" intervalTick="600" dotCondition="1" />
+			<MotionProperty startEffect="NPC/Skill/KnightHollowArmorSwordRed/Eff_KnightHollowArmorSwordRed_HPRecover_Start.xml" abnormalImmuneBreak="5" />
+			<RecoveryProperty hpRate="0.2" />
+			<UIProperty icon="./Data/Resource/Image/skill/icon/MonsterHPRecovery.png" />
+		</level>
+	</additional>
+	<additional id="50170031">
+		<level>
+			<BasicProperty level="1" durationTick="500" intervalTick="300" dotCondition="1" />
+			<MotionProperty keepEffect="NPC/Skill/SnowKing/Eff_SnowKing_SelfDamageSummonDeath.xml" abnormalImmuneBreak="99" />
+			<DotDamageProperty type="2" damageByTargetMaxHP="0.03" />
+		</level>
+	</additional>
+	<additional id="50170032">
+		<level>
+			<BasicProperty level="1" keepCondition="99" />
+			<MotionProperty abnormalImmuneBreak="1" />
+			<ImmuneEffectProperty immuneEffectCodes="50170056,50170057,50170058,50170059" />
+		</level>
+	</additional>
+	<additional id="50170051">
+		<level>
+			<BasicProperty level="1" group="1" buffType="2" buffSubType="3" durationTick="1000" resetCondition="1" ignoreReduceTimeCondition="1" />
+			<MotionProperty stun="2" abnormalImmuneBreak="1" />
+		</level>
+	</additional>
+	<additional id="50170052">
+		<level>
+			<BasicProperty level="1" group="1" buffType="2" buffSubType="3" durationTick="13000" />
+			<MotionProperty keepEffect="Additional/Stun/Eff_Additional_Stun_Keep.xml" stopEffect="Additional/Stun/Eff_Additional_Stun_Stop.xml" IgnoreOptimalHideStartEffect="1" stun="1" abnormalImmuneBreak="95" />
+			<UIProperty icon="./Data/Resource/Image/skill/icon/Stun.png" />
+		</level>
+	</additional>
+	<additional id="50170053">
+		<level stringParam="80">
+			<BasicProperty level="1" buffType="2" buffSubType="1" durationTick="1799" />
+			<MotionProperty keepEffect="Additional/Offense/Eff_Additional_OffenseDownDebuff_Keep.xml" IgnoreOptimalHideStartEffect="1" abnormalImmuneBreak="1" />
+			<Stat>
+				<v type="pap" value="-0.8" isRate="1" />
+				<v type="map" value="-0.8" isRate="1" />
+			</Stat>
+			<UIProperty icon="./Data/Resource/Image/skill/icon/destroyWeapon.png" isHideCooltime="1" />
+		</level>
+		<level stringParam="80">
+			<BasicProperty level="2" buffType="2" buffSubType="1" durationTick="1799" />
+			<MotionProperty keepEffect="Additional/Offense/Eff_Additional_OffenseDownDebuff_Keep.xml" IgnoreOptimalHideStartEffect="1" abnormalImmuneBreak="1" />
+			<Stat>
+				<v type="pap" value="-0.8" isRate="1" />
+				<v type="map" value="-0.8" isRate="1" />
+			</Stat>
+			<UIProperty icon="./Data/Resource/Image/skill/icon/destroyWeapon.png" isHideCooltime="1" />
+		</level>
+	</additional>
+	<additional id="50170054">
+		<level stringParam="50">
+			<BasicProperty level="1" buffType="2" buffSubType="1" durationTick="3000" />
+			<MotionProperty keepEffect="Additional/Offense/Eff_Additional_OffenseDownDebuff_Keep.xml" IgnoreOptimalHideStartEffect="1" abnormalImmuneBreak="1" />
+			<Stat>
+				<v type="pap" value="-0.5" isRate="1" />
+				<v type="map" value="-0.5" isRate="1" />
+			</Stat>
+			<UIProperty icon="./Data/Resource/Image/skill/icon/destroyWeapon.png" />
+		</level>
+	</additional>
+	<additional id="50170055">
+		<level>
+			<BasicProperty level="1" buffSubType="1" durationTick="1500" />
+			<MotionProperty abnormalImmuneBreak="1" />
+			<Stat>
+				<v type="ndd" value="9" isRate="1" />
+			</Stat>
+			<UIProperty icon="./Data/Resource/Image/skill/icon/MonsterDefenceUp.png" />
+		</level>
+	</additional>
+	<additional id="50170056">
+		<level stringParam="50">
+			<BasicProperty level="1" buffSubType="1" durationTick="61000" intervalTick="1000" dotCondition="1" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<MotionProperty keepEffect="NPC/Skill/YetiTwoHeadWhite/Eff_YetiTwoHeadWhite_Additional_FireHealSP_Keep.xml" stopEffect="NPC/Skill/YetiTwoHeadWhite/Eff_YetiTwoHeadWhite_Additional_FireHealSP_Stop.xml" IgnoreOptimalHideStartEffect="1" abnormalImmuneBreak="1" />
+			<CancelEffectProperty cancelEffectCodes="10300071,10600164" />
+			<ImmuneEffectProperty immuneEffectCodes="10300071,10600164" />
+			<RecoveryProperty hpRate="0.03" />
+			<ConsumeProperty spRate="-0.5" />
+			<UIProperty icon="./Data/Resource/Image/skill/icon/FirePlayerBody.png" />
+		</level>
+	</additional>
+	<additional id="50170057">
+		<level stringParam="50">
+			<BasicProperty level="1" buffSubType="1" durationTick="11000" />
+			<MotionProperty keepEffect="NPC/Skill/SnowFairy/Eff_SnowFairy_Additional_OffenceUp_Keep.xml" IgnoreOptimalHideStartEffect="1" abnormalImmuneBreak="1" />
+			<CancelEffectProperty cancelEffectCodes="50170058" />
+			<Stat>
+				<v type="pap" value="0.5" isRate="1" />
+				<v type="map" value="0.5" isRate="1" />
+			</Stat>
+			<UIProperty icon="./Data/Resource/Image/skill/icon/OffenceState.png" />
+		</level>
+	</additional>
+	<additional id="50170058">
+		<level stringParam="50">
+			<BasicProperty level="1" buffSubType="1" durationTick="11000" />
+			<MotionProperty keepEffect="NPC/Skill/SnowFairy/Eff_SnowFairy_Additional_DefenceUp_Keep.xml" IgnoreOptimalHideStartEffect="1" abnormalImmuneBreak="1" />
+			<CancelEffectProperty cancelEffectCodes="50170057" />
+			<Stat>
+				<v type="ndd" value="0.5" isRate="1" />
+			</Stat>
+			<UIProperty icon="./Data/Resource/Image/skill/icon/DefenceState.png" />
+		</level>
+	</additional>
+	<additional id="50170059">
+		<level stringParam="50">
+			<BasicProperty level="1" buffSubType="1" durationTick="11000" />
+			<MotionProperty keepEffect="NPC/Skill/SnowFairy/Eff_SnowFairy_Additional_MoveSpeedUp_Keep.xml" IgnoreOptimalHideStartEffect="1" abnormalImmuneBreak="1" />
+			<Stat>
+				<v type="msp" value="0.5" isRate="1" />
+			</Stat>
+			<UIProperty icon="./Data/Resource/Image/skill/icon/SpeedUp.png" />
+		</level>
+	</additional>
+	<additional id="50170060">
+		<level stringParam="80,30">
+			<BasicProperty level="1" group="95" buffSubType="1" durationTick="5000" />
+			<MotionProperty startEffect="NPC/Skill/GargoyleMadriaSoldier/Eff_GargoyleIronMace_Buff_Start.xml" keepEffect="NPC/Skill/GargoyleMadriaSoldier/Eff_GargoyleIronMace_Buff_Keep.xml" abnormalImmuneBreak="1" />
+			<Stat>
+				<v type="pap" value="0.3" isRate="1" />
+				<v type="map" value="0.3" isRate="1" />
+				<v type="par" value="1200" />
+				<v type="mar" value="1200" />
+			</Stat>
+			<UIProperty icon="./Data/Resource/Image/skill/icon/MonsterDarknessMode.png" />
+		</level>
+	</additional>
+	<additional id="50170061">
+		<level stringParam="60">
+			<BasicProperty level="1" buffType="2" buffSubType="1" durationTick="16000" />
+			<MotionProperty keepEffect="NPC/Skill/ZakumArm/Eff_ZakumArm_HitRateDown_Keep.xml" stopEffect="NPC/Skill/ZakumArm/Eff_ZakumArm_HitRateDown_Stop.xml" IgnoreOptimalHideStartEffect="1" abnormalImmuneBreak="1" />
+			<Stat>
+				<v type="atp" value="-0.6" isRate="1" />
+			</Stat>
+			<UIProperty icon="./Data/Resource/Image/skill/icon/exhaust.png" />
+		</level>
+	</additional>
+	<additional id="50170062">
+		<level stringParam="50">
+			<BasicProperty level="1" durationTick="41000" />
+			<MotionProperty abnormalImmuneBreak="1" />
+			<Stat>
+				<v type="par" value="750" />
+				<v type="mar" value="750" />
+			</Stat>
+			<UIProperty icon="./Data/Resource/Image/skill/icon/MonsterDefenceUp.png" />
+		</level>
+		<level stringParam="80">
+			<BasicProperty level="2" durationTick="600000" />
+			<MotionProperty abnormalImmuneBreak="1" />
+			<Stat>
+				<v type="par" value="1200" />
+				<v type="mar" value="1200" />
+			</Stat>
+			<UIProperty icon="./Data/Resource/Image/skill/icon/MonsterDefenceUp.png" />
+		</level>
+	</additional>
+	<additional id="50170063">
+		<level stringParam="50">
+			<BasicProperty level="1" buffType="2" durationTick="21000" intervalTick="800" dotCondition="1" logoutClearEffect="1" />
+			<MotionProperty keepEffect="Additional/DownHPRecoveryItem/Eff_Additional_DownHPRecoveryItem_Keep.xml" IgnoreOptimalHideStartEffect="1" abnormalImmuneBreak="1" />
+			<StatusProperty itemRecoveryHPRate="-0.5" />
+			<DotDamageProperty damageByTargetMaxHP="0.01" />
+			<UIProperty icon="./Data/Resource/Image/skill/icon/HPRecoveryItemDown.png" />
+		</level>
+	</additional>
+	<additional id="50170064">
+		<level>
+			<BasicProperty level="1" buffType="2" buffSubType="2" durationTick="16000" intervalTick="1500" dotCondition="1" />
+			<MotionProperty keepEffect="Additional/Shock/Eff_Additional_Shock_Keep.xml" stopEffect="Additional/Shock/Eff_Additional_Shock_Stop.xml" IgnoreOptimalHideStartEffect="1" abnormalImmuneBreak="1" />
+			<OffensiveProperty hitImmuneBreak="5" />
+			<DotDamageProperty type="2" rate="0.12" element="3" />
+			<UIProperty icon="./Data/Resource/Image/skill/icon/ElectronicShork.png" />
+		</level>
+	</additional>
+</ms2>

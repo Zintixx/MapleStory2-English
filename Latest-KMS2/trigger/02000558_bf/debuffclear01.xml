@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ms2>
+	
+	<state name="시작">
+		<onEnter>
+		
+		</onEnter>
+		
+		<condition name="CheckUser">
+			<action name="SetUserValue" triggerID="9003" key="debuffclearcounter" value="0" />
+			<transition state="디버프클리어대기" /> 
+		</condition>	
+		
+		<onExit>
+		</onExit>
+	</state>	
+	
+	<state name="디버프클리어대기">
+		<condition name="UserValue" key="debuffclearcounter" value="1">
+			<action name="DebugString" string="변수 체크"/>
+			<transition state="디버프클리어작동"/>
+		</condition>
+	</state>
+
+    <state name="디버프클리어작동">
+		<condition name="UserValue" key="debuffclearcounter" value="1">
+			<action name="버프를삭제한다" arg1="2001" arg2="44200001"/>	
+			<action name="SetUserValue" triggerID="9003" key="debuffclearcounter" value="0" />
+			<action name="DebugString" string="버프 클리어"/>
+			<transition state="디버프클리어대기"/>
+		</condition>		
+	</state>
+
+
+</ms2>

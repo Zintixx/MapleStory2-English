@@ -143,12 +143,10 @@
 			<condition name="CheckNpcDamage" spawnPointID="102" damageRate="1.0" operator="GreaterEqual">
 				<transition state="성공연출시작" />
 			</condition>
-
-			<!-- 인페르녹 보스 스폰ID : 102 의 몬스터가 지금까지 받은 대미지가 HP 기준 대비 100%보다 적으면 던전 실패 처리-->
-			<condition name="CheckNpcDamage" spawnPointID="102" damageRate="1.0" operator="Less"> <!-- 인페르녹 보스 스폰ID : 102 -->
+			<!-- 인페르녹 보스 스폰ID : 102 의 몬스터가 지금까지 받은 대미지가 HP 기준 대비 100%보다 적거나, 함선을 공격하지 않아 102 몬스터가 소환되지 않은 상태라면 던전 실패 처리-->
+			<condition name="True" >
 				<transition state="실패연출시작" />
 			</condition>
-
 		<!--	condition name="CheckNpcDamage"   파라미터 기능 설명
 
 					spawnPointID: 체크할 NPC스폰포인트ID 스포너 안에 여러 NPC가 있을 경우 맨 첫 NPC를 체크합니다.

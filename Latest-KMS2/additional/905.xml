@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ms2>
+	<additional id="90500001">
+		<level stringParam="25">
+			<BasicProperty level="1" keepCondition="99" doNotClearEffectFromEnterPVPZone="1" />
+			<conditionSkill level="1" skillID="90500002" skillTarget="2">
+				<beginCondition probability="0.03">
+					<owner eventCondition="6" ignoreOwnerEvent="1" />
+				</beginCondition>
+			</conditionSkill>
+		</level>
+	</additional>
+	<additional id="90500002">
+		<level stringParam="20">
+			<BasicProperty level="1" durationTick="3000" intervalTick="1000" dotCondition="1" />
+			<MotionProperty keepEffect="Additional/Bleed/Eff_Additional_Bleed_Keep.xml" abnormalImmuneBreak="5" />
+			<DotDamageProperty type="1" rate="0.2" />
+			<UIProperty icon="./Data/Resource/Image/Skill/icon/05000050_normal.png" />
+		</level>
+	</additional>
+	<additional id="90500011">
+		<level stringParam="20">
+			<BasicProperty level="1" keepCondition="99" doNotClearEffectFromEnterPVPZone="1" />
+			<conditionSkill level="1" skillID="90500012" skillTarget="1">
+				<beginCondition probability="0.03">
+					<owner eventCondition="6" ignoreOwnerEvent="1" />
+				</beginCondition>
+			</conditionSkill>
+		</level>
+	</additional>
+	<additional id="90500012">
+		<level stringParam="100">
+			<BasicProperty level="1" durationTick="7000" />
+			<MotionProperty abnormalImmuneBreak="5" />
+			<Stat>
+				<v type="asp" value="1" isRate="1" />
+			</Stat>
+			<UIProperty icon="./Data/Resource/Image/Skill/icon/05000050_normal.png" />
+		</level>
+	</additional>
+</ms2>

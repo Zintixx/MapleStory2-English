@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ms2>
+	<additional id="40300011">
+		<level>
+			<BasicProperty level="1" buffType="2" buffSubType="3" durationTick="1000" />
+			<MotionProperty stun="6" abnormalImmuneBreak="1" />
+		</level>
+	</additional>
+	<additional id="40319001">
+		<level>
+			<BasicProperty level="1" buffType="2" buffSubType="2" durationTick="5000" intervalTick="1000" dotCondition="1" logoutClearEffect="1" />
+			<MotionProperty keepEffect="Additional/Burn/Eff_Additional_Burn_Keep.xml" stopEffect="Additional/Burn/Eff_Additional_Burn_Stop.xml" abnormalImmuneBreak="1" />
+			<DotDamageProperty type="2" rate="0.1" element="1" />
+			<UIProperty icon="./Data/Resource/Image/skill/icon/Fire.png" />
+		</level>
+	</additional>
+	<additional id="40339011">
+		<level>
+			<BasicProperty level="1" buffType="2" durationTick="3000" />
+			<MotionProperty keepEffect="NPC/Skill/BoogieJunior/Eff_BoogieJunior_Attack_01_B_Keep.xml" stopEffect="NPC/Skill/BoogieJunior/Eff_BoogieJunior_Attack_01_B_Stop.xml" abnormalImmuneBreak="1" skillUseDisable="4" />
+			<UIProperty icon="./Data/Resource/Image/skill/icon/Silence.png" />
+		</level>
+	</additional>
+	<additional id="40353001">
+		<level>
+			<BasicProperty level="1" buffType="2" buffSubType="1" durationTick="1000" />
+			<MotionProperty stun="2" abnormalImmuneBreak="1" />
+		</level>
+	</additional>
+	<additional id="40356011">
+		<level>
+			<beginCondition>
+				<owner targetCheckRange="150" targetInRangeCount="2" targetFriendly="2" targetCountSign="Equals" />
+			</beginCondition>
+			<BasicProperty level="1" buffSubType="1" keepCondition="99" />
+			<MotionProperty keepEffect="Item/Skill/Eff_ObjectWeapon_CannonGuide_Keep_01.xml" />
+		</level>
+	</additional>
+	<additional id="40356012">
+		<level>
+			<BasicProperty level="1" durationTick="1000" />
+			<MotionProperty abnormalImmuneBreak="1" />
+			<CancelEffectProperty cancelPassiveEffect="1" cancelEffectCodes="40356011" />
+		</level>
+	</additional>
+	<additional id="40356013">
+		<level>
+			<BasicProperty level="1" durationTick="1000" intervalTick="500" delayTick="4900" />
+			<MotionProperty abnormalImmuneBreak="1" />
+			<conditionSkill level="1" skillID="40356011" skillTarget="1" activeByIntervalTick="1" />
+		</level>
+	</additional>
+	<additional id="40356021">
+		<level>
+			<beginCondition>
+				<owner targetCheckRange="150" targetInRangeCount="2" targetFriendly="2" targetCountSign="Equals" />
+			</beginCondition>
+			<BasicProperty level="1" buffSubType="1" keepCondition="99" />
+			<MotionProperty keepEffect="Item/Skill/Eff_ObjectWeapon_CannonGuide_Keep_02.xml" />
+		</level>
+	</additional>
+	<additional id="40356022">
+		<level>
+			<BasicProperty level="1" durationTick="1000" />
+			<MotionProperty abnormalImmuneBreak="1" />
+			<CancelEffectProperty cancelPassiveEffect="1" cancelEffectCodes="40356021" />
+		</level>
+	</additional>
+	<additional id="40356023">
+		<level>
+			<BasicProperty level="1" durationTick="1000" intervalTick="500" delayTick="4900" />
+			<MotionProperty abnormalImmuneBreak="1" />
+			<conditionSkill level="1" skillID="40356021" skillTarget="1" activeByIntervalTick="1" />
+		</level>
+	</additional>
+	<additional id="40356031">
+		<level>
+			<beginCondition>
+				<owner targetCheckRange="150" targetInRangeCount="2" targetFriendly="2" targetCountSign="Equals" />
+			</beginCondition>
+			<BasicProperty level="1" buffSubType="1" keepCondition="99" />
+			<MotionProperty keepEffect="Item/Skill/Eff_ObjectWeapon_CannonGuide_Keep_03.xml" />
+		</level>
+	</additional>
+	<additional id="40356032">
+		<level>
+			<BasicProperty level="1" durationTick="1000" />
+			<MotionProperty abnormalImmuneBreak="1" />
+			<CancelEffectProperty cancelPassiveEffect="1" cancelEffectCodes="40356031" />
+		</level>
+	</additional>
+	<additional id="40356033">
+		<level>
+			<BasicProperty level="1" durationTick="1000" intervalTick="500" delayTick="4900" />
+			<MotionProperty abnormalImmuneBreak="1" />
+			<conditionSkill level="1" skillID="40356031" skillTarget="1" activeByIntervalTick="1" />
+		</level>
+	</additional>
+	<additional id="40361001">
+		<level>
+			<BasicProperty level="1" keepCondition="99" />
+			<MotionProperty clearCondition="0" />
+			<DefensiveProperty invincible="2" />
+		</level>
+	</additional>
+	<additional id="40361002">
+		<level>
+			<BasicProperty level="1" keepCondition="99" />
+			<MotionProperty clearCondition="0" />
+		</level>
+	</additional>
+	<additional id="40361101">
+		<level>
+			<BasicProperty level="1" buffSubType="1" durationTick="9999000" delayTick="1000" resetCondition="2" maxBuffCount="10" />
+			<UIProperty icon="./Data/Resource/Image/skill/icon/MonsterOffenceUp.png" />
+		</level>
+	</additional>
+	<additional id="40361102">
+		<level stringParam="50">
+			<BasicProperty level="1" buffType="2" buffSubType="2" durationTick="10000" intervalTick="949" />
+			<MotionProperty keepEffect="Additional/Poison/Eff_Additional_Poison_Keep.xml" stopEffect="Additional/Poison/Eff_Additional_Poison_Stop.xml" abnormalImmuneBreak="5" />
+			<Stat>
+				<v type="msp" value="-0.5" isRate="1" />
+				<v type="rmsp" value="-0.5" isRate="1" />
+			</Stat>
+			<DotDamageProperty type="1" element="6" damageByTargetMaxHP="0.05" soundMaterial="104" />
+			<UIProperty icon="./Data/Resource/Image/skill/icon/Poison.png" />
+		</level>
+	</additional>
+	<additional id="40361103">
+		<level>
+			<BasicProperty level="1" buffSubType="4" durationTick="1000" />
+			<MotionProperty startEffect="NPC/Skill/Hallycao/Eff_Hallycao_Attack_01_C_Cast.xml" abnormalImmuneBreak="1" />
+			<RecoveryProperty hpRate="0.2" />
+		</level>
+	</additional>
+	<additional id="40361111">
+		<level>
+			<beginCondition>
+				<owner hasBuffID="40361101" hasBuffLevel="1" hasBuffOwner="0" hasBuffCount="1" hasBuffCountCompare="Equals" />
+			</beginCondition>
+			<BasicProperty level="1" buffSubType="1" keepCondition="99" />
+			<MotionProperty clearCondition="0" scale="0.1" />
+			<CancelEffectProperty cancelPassiveEffect="1" />
+			<Stat>
+				<v type="ndd" value="0.2" isRate="1" />
+				<v type="pap" value="0.3" isRate="1" />
+				<v type="map" value="0.3" isRate="1" />
+			</Stat>
+			<UIProperty icon="./Data/Resource/Image/skill/icon/MonsterOffenceUp.png" />
+		</level>
+	</additional>
+	<additional id="40361112">
+		<level>
+			<beginCondition>
+				<owner hasBuffID="40361101" hasBuffLevel="1" hasBuffOwner="0" hasBuffCount="2" hasBuffCountCompare="Equals" />
+			</beginCondition>
+			<BasicProperty level="1" buffSubType="1" keepCondition="99" />
+			<MotionProperty clearCondition="0" scale="0.2" />
+			<CancelEffectProperty cancelPassiveEffect="1" cancelEffectCodes="40361111" />
+			<Stat>
+				<v type="ndd" value="0.4" isRate="1" />
+				<v type="pap" value="0.6" isRate="1" />
+				<v type="map" value="0.6" isRate="1" />
+			</Stat>
+			<UIProperty icon="./Data/Resource/Image/skill/icon/MonsterOffenceUp.png" />
+		</level>
+	</additional>
+	<additional id="40361113">
+		<level>
+			<beginCondition>
+				<owner hasBuffID="40361101" hasBuffLevel="1" hasBuffOwner="0" hasBuffCount="3" hasBuffCountCompare="Equals" />
+			</beginCondition>
+			<BasicProperty level="1" buffSubType="1" keepCondition="99" />
+			<MotionProperty clearCondition="0" scale="0.3" />
+			<CancelEffectProperty cancelPassiveEffect="1" cancelEffectCodes="40361112" />
+			<Stat>
+				<v type="ndd" value="0.6" isRate="1" />
+				<v type="pap" value="0.9" isRate="1" />
+				<v type="map" value="0.9" isRate="1" />
+			</Stat>
+			<UIProperty icon="./Data/Resource/Image/skill/icon/MonsterOffenceUp.png" />
+		</level>
+	</additional>
+	<additional id="40361114">
+		<level>
+			<beginCondition>
+				<owner hasBuffID="40361101" hasBuffLevel="1" hasBuffOwner="0" hasBuffCount="4" hasBuffCountCompare="Equals" />
+			</beginCondition>
+			<BasicProperty level="1" buffSubType="1" keepCondition="99" />
+			<MotionProperty clearCondition="0" scale="0.4" />
+			<CancelEffectProperty cancelPassiveEffect="1" cancelEffectCodes="40361113" />
+			<Stat>
+				<v type="ndd" value="0.8" isRate="1" />
+				<v type="pap" value="1.2" isRate="1" />
+				<v type="map" value="1.2" isRate="1" />
+			</Stat>
+			<UIProperty icon="./Data/Resource/Image/skill/icon/MonsterOffenceUp.png" />
+		</level>
+	</additional>
+	<additional id="40361115">
+		<level>
+			<beginCondition>
+				<owner hasBuffID="40361101" hasBuffLevel="1" hasBuffOwner="0" hasBuffCount="5" hasBuffCountCompare="Equals" />
+			</beginCondition>
+			<BasicProperty level="1" buffSubType="1" keepCondition="99" />
+			<MotionProperty clearCondition="0" scale="0.5" />
+			<CancelEffectProperty cancelPassiveEffect="1" cancelEffectCodes="40361114" />
+			<Stat>
+				<v type="ndd" value="1" isRate="1" />
+				<v type="pap" value="1.5" isRate="1" />
+				<v type="map" value="1.5" isRate="1" />
+			</Stat>
+			<UIProperty icon="./Data/Resource/Image/skill/icon/MonsterOffenceUp.png" />
+		</level>
+	</additional>
+	<additional id="40361116">
+		<level>
+			<beginCondition>
+				<owner hasBuffID="40361101" hasBuffLevel="1" hasBuffOwner="0" hasBuffCount="6" hasBuffCountCompare="Equals" />
+			</beginCondition>
+			<BasicProperty level="1" buffSubType="1" keepCondition="99" />
+			<MotionProperty clearCondition="0" scale="0.6" />
+			<CancelEffectProperty cancelPassiveEffect="1" cancelEffectCodes="40361115" />
+			<Stat>
+				<v type="ndd" value="1.2" isRate="1" />
+				<v type="pap" value="1.8" isRate="1" />
+				<v type="map" value="1.8" isRate="1" />
+			</Stat>
+			<UIProperty icon="./Data/Resource/Image/skill/icon/MonsterOffenceUp.png" />
+		</level>
+	</additional>
+	<additional id="40361117">
+		<level>
+			<beginCondition>
+				<owner hasBuffID="40361101" hasBuffLevel="1" hasBuffOwner="0" hasBuffCount="7" hasBuffCountCompare="Equals" />
+			</beginCondition>
+			<BasicProperty level="1" buffSubType="1" keepCondition="99" />
+			<MotionProperty clearCondition="0" scale="0.7" />
+			<CancelEffectProperty cancelPassiveEffect="1" cancelEffectCodes="40361116" />
+			<Stat>
+				<v type="ndd" value="1.4" isRate="1" />
+				<v type="pap" value="2.1" isRate="1" />
+				<v type="map" value="2.1" isRate="1" />
+			</Stat>
+			<UIProperty icon="./Data/Resource/Image/skill/icon/MonsterOffenceUp.png" />
+		</level>
+	</additional>
+	<additional id="40361118">
+		<level>
+			<beginCondition>
+				<owner hasBuffID="40361101" hasBuffLevel="1" hasBuffOwner="0" hasBuffCount="8" hasBuffCountCompare="Equals" />
+			</beginCondition>
+			<BasicProperty level="1" buffSubType="1" keepCondition="99" />
+			<MotionProperty clearCondition="0" scale="0.8" />
+			<CancelEffectProperty cancelPassiveEffect="1" cancelEffectCodes="40361117" />
+			<Stat>
+				<v type="ndd" value="1.6" isRate="1" />
+				<v type="pap" value="2.4" isRate="1" />
+				<v type="map" value="2.4" isRate="1" />
+			</Stat>
+			<UIProperty icon="./Data/Resource/Image/skill/icon/MonsterOffenceUp.png" />
+		</level>
+	</additional>
+	<additional id="40361119">
+		<level>
+			<beginCondition>
+				<owner hasBuffID="40361101" hasBuffLevel="1" hasBuffOwner="0" hasBuffCount="9" hasBuffCountCompare="Equals" />
+			</beginCondition>
+			<BasicProperty level="1" buffSubType="1" keepCondition="99" />
+			<MotionProperty clearCondition="0" scale="0.9" />
+			<CancelEffectProperty cancelPassiveEffect="1" cancelEffectCodes="40361118" />
+			<Stat>
+				<v type="ndd" value="1.8" isRate="1" />
+				<v type="pap" value="2.7" isRate="1" />
+				<v type="map" value="2.7" isRate="1" />
+			</Stat>
+			<UIProperty icon="./Data/Resource/Image/skill/icon/MonsterOffenceUp.png" />
+		</level>
+	</additional>
+	<additional id="40361120">
+		<level>
+			<beginCondition>
+				<owner hasBuffID="40361101" hasBuffLevel="1" hasBuffOwner="0" hasBuffCount="10" hasBuffCountCompare="Equals" />
+			</beginCondition>
+			<BasicProperty level="1" buffSubType="1" keepCondition="99" />
+			<MotionProperty clearCondition="0" scale="1" />
+			<CancelEffectProperty cancelPassiveEffect="1" cancelEffectCodes="40361119" />
+			<Stat>
+				<v type="ndd" value="2" isRate="1" />
+				<v type="pap" value="3" isRate="1" />
+				<v type="map" value="3" isRate="1" />
+			</Stat>
+			<UIProperty icon="./Data/Resource/Image/skill/icon/MonsterOffenceUp.png" />
+		</level>
+	</additional>
+	<additional id="40361201">
+		<level>
+			<BasicProperty level="1" durationTick="2000" resetCondition="1" />
+		</level>
+	</additional>
+	<additional id="40362001">
+		<level>
+			<BasicProperty level="1" keepCondition="99" />
+			<MotionProperty clearCondition="0" />
+			<SpecialAbility>
+				<v type="longdistancedamagereduce" value="990" />
+				<v type="defensive_magicaldamage" value="990" />
+			</SpecialAbility>
+			<UIProperty icon="./Data/Resource/Image/skill/icon/MonsterDefenceUp.png" />
+		</level>
+	</additional>
+	<additional id="40363001">
+		<level>
+			<BasicProperty level="1" buffSubType="4" durationTick="1000" />
+			<MotionProperty startEffect="NPC/Skill/Hallycao/Eff_Hallycao_Attack_01_C_Cast.xml" abnormalImmuneBreak="1" />
+			<RecoveryProperty hpRate="0.2" />
+		</level>
+	</additional>
+	<additional id="40363011">
+		<level>
+			<beginCondition>
+				<owner>
+					<compareStat hp="0.5" func="Greater" />
+				</owner>
+			</beginCondition>
+			<BasicProperty level="1" keepCondition="99" />
+			<MotionProperty clearCondition="0" />
+			<Stat>
+				<v type="ndd" value="-0.9" isRate="1" />
+			</Stat>
+		</level>
+	</additional>
+	<additional id="40363012">
+		<level>
+			<beginCondition>
+				<owner requireStates="gosStun">
+					<compareStat hp="0.5" func="LessEquals" />
+				</owner>
+			</beginCondition>
+			<BasicProperty level="1" buffType="2" keepCondition="99" />
+			<MotionProperty clearCondition="0" />
+			<Stat>
+				<v type="ndd" value="-0.99" isRate="1" />
+			</Stat>
+		</level>
+	</additional>
+	<additional id="40363013">
+		<level>
+			<BasicProperty level="1" keepCondition="99" />
+			<MotionProperty keepEffect="NPC/Skill/ETC/Eff_NPC_CircleGuide_2_300.xml" clearCondition="0" abnormalImmuneBreak="1" />
+		</level>
+	</additional>
+	<additional id="40363014">
+		<level>
+			<BasicProperty level="1" keepCondition="99" />
+			<MotionProperty keepEffect="NPC/Skill/ETC/Eff_NPC_CircleGuide_2_450.xml" clearCondition="0" abnormalImmuneBreak="1" />
+		</level>
+	</additional>
+	<additional id="40363015">
+		<level>
+			<BasicProperty level="1" keepCondition="99" />
+			<MotionProperty keepEffect="NPC/Skill/FoxCute/Eff_FoxCute_BodyEffect_RangeUp3.xml" clearCondition="0" abnormalImmuneBreak="1" />
+		</level>
+	</additional>
+</ms2>

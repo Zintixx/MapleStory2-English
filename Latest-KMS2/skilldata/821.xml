@@ -6,8 +6,18 @@
 			<stateAttr battle="0" ignoreReduceCooldown="1" />
 		</basic>
 		<level value="1">
-			<motion>
-				<motionProperty sequenceName="Emotion_Pet_A" holdWeapon="0" />
+			<motion sequenceName="Emotion_Pet_A" holdWeapon="0" />
+		</level>
+	</skill>
+	<skill id="82100002" comment="소심한 복수펜던트 스플래시">
+		<basic mainType="30" />
+		<level value="1">
+			<motion splashInvokeEffect="Item/Skill/Eff_ItemOption_TombStone_Invoke_01.xml">
+				<attack point="p0" targetCount="10" attacktype="3" unrideOnHit="1">
+					<range rangeType="cylinder" distance="300" rangeAdd="0,0,0" rangeOffset="0,0,0" height="150" applyTarget="1" />
+					<arrow nonTarget="1" collision="0,0,0" collisionAdd="0,0,0" />
+					<damage rate="1.81" attackMaterial="1000" />
+				</attack>
 			</motion>
 		</level>
 	</skill>

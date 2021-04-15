@@ -6,13 +6,8 @@
 			<kinds continue="1" />
 			<stateAttr battle="0" ignoreReduceCooldown="1" />
 		</basic>
-		<level value="1">
-			<consume>
-				<stat ep="20" />
-			</consume>
-			<motion>
-				<motionProperty sequenceSpeed="0.9" movedistance="300" moveEaseType="2" ignoreCollisionGroups="20" holdWeapon="0" />
-			</motion>
+		<level value="1" ep="20">
+			<motion sequenceSpeed="0.9" movedistance="300" moveEaseType="2" ignoreCollisionGroups="20" holdWeapon="0" />
 		</level>
 	</skill>
 	<skill id="20000011" comment="암벽 등반">
@@ -22,9 +17,7 @@
 			<stateAttr battle="0" ignoreReduceCooldown="1" />
 		</basic>
 		<level value="1">
-			<motion>
-				<motionProperty ignoreCollisionGroups="20" holdWeapon="0" />
-			</motion>
+			<motion ignoreCollisionGroups="20" holdWeapon="0" />
 		</level>
 	</skill>
 	<skill id="20000031" comment="붙잡기">
@@ -34,9 +27,7 @@
 			<stateAttr battle="0" ignoreReduceCooldown="1" />
 		</basic>
 		<level value="1">
-			<motion>
-				<motionProperty sequenceName="Hold_Idle_A" ignoreCollisionGroups="20" holdWeapon="0" />
-			</motion>
+			<motion sequenceName="Hold_Idle_A" ignoreCollisionGroups="20" holdWeapon="0" />
 		</level>
 	</skill>
 	<skill id="20000061" comment="원기 회복">
@@ -44,51 +35,37 @@
 			<ui icon="./Data/Resource/Image/skill/icon/20000061.png" />
 			<kinds jump="20000061" immediateActive="1" unrideOnUse="1" releaseObjectWeapon="0" />
 			<stateAttr battle="0" clearCooldownFromPVPZone="1" />
+			<condition useCoolDownShowUI="1" />
 		</basic>
-		<level value="1">
-			<beginCondition cooldownTime="240" useCoolDownShowUI="1" />
+		<level value="1" cooldown="240000">
 			<actionAdditional additionalID="20000061" level="1" skillTarget="1">
 				<beginCondition allowBattleRidingState="1" />
 			</actionAdditional>
-			<motion>
-				<motionProperty holdWeapon="0" />
-			</motion>
+			<motion holdWeapon="0" />
 		</level>
-		<level value="2">
-			<beginCondition cooldownTime="240" useCoolDownShowUI="1" />
+		<level value="2" cooldown="240000">
 			<actionAdditional additionalID="20000061" level="2" skillTarget="1">
 				<beginCondition allowBattleRidingState="1" />
 			</actionAdditional>
-			<motion>
-				<motionProperty holdWeapon="0" />
-			</motion>
+			<motion holdWeapon="0" />
 		</level>
-		<level value="3">
-			<beginCondition cooldownTime="240" useCoolDownShowUI="1" />
+		<level value="3" cooldown="240000">
 			<actionAdditional additionalID="20000061" level="3" skillTarget="1">
 				<beginCondition allowBattleRidingState="1" />
 			</actionAdditional>
-			<motion>
-				<motionProperty holdWeapon="0" />
-			</motion>
+			<motion holdWeapon="0" />
 		</level>
-		<level value="4">
-			<beginCondition cooldownTime="240" useCoolDownShowUI="1" />
+		<level value="4" cooldown="240000">
 			<actionAdditional additionalID="20000061" level="4" skillTarget="1">
 				<beginCondition allowBattleRidingState="1" />
 			</actionAdditional>
-			<motion>
-				<motionProperty holdWeapon="0" />
-			</motion>
+			<motion holdWeapon="0" />
 		</level>
-		<level value="5">
-			<beginCondition cooldownTime="240" useCoolDownShowUI="1" />
+		<level value="5" cooldown="240000">
 			<actionAdditional additionalID="20000061" level="5" skillTarget="1">
 				<beginCondition allowBattleRidingState="1" />
 			</actionAdditional>
-			<motion>
-				<motionProperty holdWeapon="0" />
-			</motion>
+			<motion holdWeapon="0" />
 		</level>
 	</skill>
 </ms2>

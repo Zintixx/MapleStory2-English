@@ -1,0 +1,2821 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ms2>
+	<additional id="70000005">
+		<level stringParam="99">
+			<BasicProperty level="1" buffType="2" durationTick="500" />
+			<MotionProperty keepEffect="Additional/Offense/Eff_Additional_OffenseDownDebuff_Keep.xml" />
+			<Stat>
+				<v type="pap" value="-0.99" isRate="1" />
+				<v type="map" value="-0.99" isRate="1" />
+			</Stat>
+			<UIProperty icon="./Data/Resource/Image/skill/icon/destroyWeapon.png" isHideCooltime="1" />
+		</level>
+	</additional>
+	<additional id="70000006">
+		<level stringParam="99">
+			<BasicProperty level="1" buffType="2" durationTick="500" />
+			<MotionProperty keepEffect="Additional/Offense/Eff_Additional_OffenseDownDebuff_Keep.xml" />
+			<Stat>
+				<v type="pap" value="-0.99" isRate="1" />
+				<v type="map" value="-0.99" isRate="1" />
+			</Stat>
+			<UIProperty icon="./Data/Resource/Image/skill/icon/destroyWeapon.png" isHideCooltime="1" />
+		</level>
+	</additional>
+	<additional id="70000007">
+		<level>
+			<BasicProperty level="1" group="1" buffType="2" durationTick="699" />
+			<MotionProperty keepEffect="Additional/Stun/Eff_Additional_Stun_Keep.xml" stun="1" abnormalImmuneBreak="5" />
+			<UIProperty icon="./Data/Resource/Image/skill/icon/Stun.png" />
+		</level>
+		<level>
+			<BasicProperty level="2" group="1" buffType="2" durationTick="3000" resetCondition="1" />
+			<MotionProperty keepEffect="Additional/Stun/Eff_Additional_Stun_Keep.xml" stun="1" abnormalImmuneBreak="5" />
+			<UIProperty icon="./Data/Resource/Image/skill/icon/Stun.png" />
+		</level>
+	</additional>
+	<additional id="70000008">
+		<level>
+			<BasicProperty level="1" durationTick="2000" resetCondition="1" />
+			<MotionProperty startEffect="CH/Common/Eff_RacingSpeedUp.xml" keepEffect="Additional/Haste/Eff_Additional_Haste_Keep.xml" />
+			<CancelEffectProperty cancelEffectCodes="70000009" />
+			<Stat>
+				<v type="msp" value="3" isRate="1" />
+			</Stat>
+			<UIProperty icon="./Data/Resource/Image/skill/icon/SpeedUp.png" />
+		</level>
+		<level>
+			<BasicProperty level="2" durationTick="5000" resetCondition="1" />
+			<MotionProperty startEffect="CH/Common/Eff_RacingSpeedUp.xml" keepEffect="Additional/Haste/Eff_Additional_Haste_Keep.xml" scale="0.5" />
+			<CancelEffectProperty cancelEffectCodes="70000009" />
+			<Stat>
+				<v type="msp" value="2" isRate="1" />
+			</Stat>
+			<UIProperty icon="./Data/Resource/Image/skill/icon/SpeedUp.png" />
+		</level>
+	</additional>
+	<additional id="70000009">
+		<level>
+			<BasicProperty level="1" buffType="2" durationTick="2000" resetCondition="1" />
+			<MotionProperty startEffect="CH/Common/Eff_RacingSpeedDown.xml" keepEffect="Additional/Slow/Eff_Additional_Slow_Keep.xml" stopEffect="Additional/Slow/Eff_Additional_Slow_Stop.xml" />
+			<CancelEffectProperty cancelEffectCodes="70000008" />
+			<Stat>
+				<v type="msp" value="-0.5" isRate="1" />
+				<v type="rmsp" value="-0.5" isRate="1" />
+			</Stat>
+			<UIProperty icon="./Data/Resource/Image/skill/icon/SpeedDown.png" />
+		</level>
+		<level>
+			<BasicProperty level="2" buffType="2" durationTick="3500" resetCondition="1" />
+			<MotionProperty startEffect="CH/Common/Eff_RacingSpeedDown.xml" keepEffect="Additional/Slow/Eff_Additional_Slow_Keep.xml" stopEffect="Additional/Slow/Eff_Additional_Slow_Stop.xml" />
+			<CancelEffectProperty cancelEffectCodes="70000008" />
+			<Stat>
+				<v type="msp" value="-0.5" isRate="1" />
+				<v type="rmsp" value="-0.5" isRate="1" />
+			</Stat>
+			<UIProperty icon="./Data/Resource/Image/skill/icon/SpeedDown.png" />
+		</level>
+	</additional>
+	<additional id="70000010">
+		<level stringParam="1">
+			<BasicProperty level="1" buffType="2" buffCategory="6" durationTick="5000" intervalTick="1000" resetCondition="1" />
+			<MotionProperty keepEffect="Additional/Poison/Eff_Additional_Poison_Keep.xml" stopEffect="Additional/Poison/Eff_Additional_Poison_Stop.xml" />
+			<DotDamageProperty damageByTargetMaxHP="0.01" />
+			<UIProperty icon="./Data/Resource/Image/skill/icon/Poison.png" />
+		</level>
+		<level stringParam="3">
+			<BasicProperty level="2" buffType="2" buffCategory="6" durationTick="5000" intervalTick="1000" resetCondition="1" />
+			<MotionProperty keepEffect="Additional/Poison/Eff_Additional_Poison_Keep.xml" stopEffect="Additional/Poison/Eff_Additional_Poison_Stop.xml" />
+			<DotDamageProperty damageByTargetMaxHP="0.03" />
+			<UIProperty icon="./Data/Resource/Image/skill/icon/Poison.png" />
+		</level>
+		<level stringParam="20">
+			<BasicProperty level="3" buffType="2" buffCategory="6" durationTick="5000" intervalTick="1000" resetCondition="1" />
+			<MotionProperty keepEffect="Additional/Poison/Eff_Additional_Poison_Keep.xml" stopEffect="Additional/Poison/Eff_Additional_Poison_Stop.xml" />
+			<DotDamageProperty damageByTargetMaxHP="0.2" />
+			<UIProperty icon="./Data/Resource/Image/skill/icon/Poison.png" />
+		</level>
+	</additional>
+	<additional id="70000011">
+		<level stringParam="10">
+			<BasicProperty level="1" buffType="2" durationTick="10000" intervalTick="1000" />
+			<MotionProperty keepEffect="Additional/Steam/Eff_Additional_Steam_Keep.xml" abnormalImmuneBreak="5" />
+			<DotDamageProperty value="10" isConstDotDamageValue="1" />
+			<UIProperty icon="./Data/Resource/Image/skill/icon/Fire.png" />
+		</level>
+	</additional>
+	<additional id="70000014">
+		<level stringParam="20">
+			<BasicProperty level="1" buffType="2" durationTick="10000" intervalTick="1000" />
+			<MotionProperty keepEffect="Additional/Steam/Eff_Additional_Steam_Keep.xml" abnormalImmuneBreak="5" />
+			<DotDamageProperty value="20" isConstDotDamageValue="1" />
+			<UIProperty icon="./Data/Resource/Image/skill/icon/Fire.png" />
+		</level>
+	</additional>
+	<additional id="70000015">
+		<level>
+			<BasicProperty level="1" buffType="2" durationTick="10000" intervalTick="1000" />
+			<MotionProperty keepEffect="Additional/Bleed/Eff_Additional_Bleed_Keep.xml" abnormalImmuneBreak="5" />
+			<DotDamageProperty value="10" isConstDotDamageValue="1" />
+			<UIProperty icon="./Data/Resource/Image/skill/icon/Bleed.png" />
+		</level>
+	</additional>
+	<additional id="70000016">
+		<level>
+			<BasicProperty level="1" buffType="2" durationTick="10000" intervalTick="1000" />
+			<MotionProperty keepEffect="Additional/Bleed/Eff_Additional_Bleed_Keep.xml" abnormalImmuneBreak="5" />
+			<DotDamageProperty value="10" isConstDotDamageValue="1" />
+			<UIProperty icon="./Data/Resource/Image/skill/icon/Bleed.png" />
+		</level>
+	</additional>
+	<additional id="70000017">
+		<level stringParam="5">
+			<BasicProperty level="1" buffType="2" durationTick="1100" />
+			<MotionProperty abnormalImmuneBreak="5" />
+			<Stat>
+				<v type="ndd" value="-0.05" isRate="1" />
+			</Stat>
+			<UIProperty icon="./Data/Resource/Image/skill/icon/ShadowPoison.png" isHideCooltime="1" />
+		</level>
+	</additional>
+	<additional id="70000018">
+		<level stringParam="0.5,3">
+			<BasicProperty level="1" durationTick="100" intervalTick="100" />
+			<RecoveryProperty hpRate="0.03" />
+		</level>
+	</additional>
+	<additional id="70000019">
+		<level stringParam="10,2,1">
+			<BasicProperty level="1" buffSubType="4" durationTick="900000" intervalTick="2000" />
+			<MotionProperty startEffect="CH/Common/Eff_BlessOfEreb_Cast.xml" keepEffect="CH/Common/Eff_BlessOfEreb_Keep.xml" />
+			<SpecialAbility>
+				<v type="seg" value="100" />
+			</SpecialAbility>
+			<RecoveryProperty hpRate="0.01" />
+			<UIProperty icon="./Data/Resource/Image/Skill/icon/05000050_normal.png" />
+		</level>
+	</additional>
+	<additional id="70000020">
+		<level stringParam="7,15">
+			<BasicProperty level="1" durationTick="900000" />
+			<MotionProperty startEffect="CH/Common/Eff_BlessOfEreb_Cast.xml" keepEffect="CH/Common/Eff_BlessOfEreb_Keep.xml" />
+			<Stat>
+				<v type="str" value="15" />
+				<v type="msp" value="7" />
+			</Stat>
+			<UIProperty icon="./Data/Resource/Image/skill/icon/02000040_normal.png" />
+		</level>
+	</additional>
+	<additional id="70000021">
+		<level>
+			<BasicProperty level="1" buffType="2" durationTick="1100" resetCondition="1" />
+			<MotionProperty abnormalImmuneBreak="5" />
+			<DotDamageProperty damageByTargetMaxHP="0.02" />
+			<UIProperty icon="./Data/Resource/Image/skill/icon/ShadowPoison.png" />
+		</level>
+	</additional>
+	<additional id="70000022">
+		<level>
+			<BasicProperty level="1" buffType="2" durationTick="1100" />
+			<DotDamageProperty damageByTargetMaxHP="0.007" />
+			<UIProperty icon="./Data/Resource/Image/skill/icon/ShadowPoison.png" isHideCooltime="1" />
+		</level>
+		<level stringParam="70">
+			<BasicProperty level="2" buffType="2" durationTick="1100" />
+			<MotionProperty keepEffect="Additional/Offense/Eff_Additional_OffenseDownDebuff_Keep.xml" />
+			<Stat>
+				<v type="pap" value="-0.7" isRate="1" />
+				<v type="map" value="-0.7" isRate="1" />
+			</Stat>
+			<DotDamageProperty damageByTargetMaxHP="0.04" />
+			<UIProperty icon="./Data/Resource/Image/skill/icon/ShadowPoison.png" isHideCooltime="1" />
+		</level>
+	</additional>
+	<additional id="70000023">
+		<level stringParam="45">
+			<BasicProperty level="1" buffType="2" durationTick="1100" />
+			<MotionProperty keepEffect="Additional/Slow/Eff_Additional_Slow_Keep.xml" stopEffect="Additional/Slow/Eff_Additional_Slow_Stop.xml" />
+			<Stat>
+				<v type="msp" value="-0.45" isRate="1" />
+				<v type="rmsp" value="-0.45" isRate="1" />
+			</Stat>
+			<UIProperty icon="./Data/Resource/Image/skill/icon/SpeedDown.png" isHideCooltime="1" />
+		</level>
+	</additional>
+	<additional id="70000024">
+		<level>
+			<BasicProperty level="1" durationTick="1000" resetCondition="1" />
+			<MotionProperty startEffect="Additional/Steam/Eff_Additional_Jumping.xml" />
+		</level>
+	</additional>
+	<additional id="70000025">
+		<level>
+			<BasicProperty level="1" buffType="2" buffCategory="99" durationTick="9999000" />
+			<MotionProperty abnormalImmuneBreak="5" />
+			<Stat>
+				<v type="ep" value="-1" isRate="1" />
+			</Stat>
+		</level>
+	</additional>
+	<additional id="70000026">
+		<level>
+			<BasicProperty level="1" buffType="2" buffCategory="99" durationTick="9999000" />
+			<MotionProperty abnormalImmuneBreak="5" />
+			<CancelEffectProperty cancelBuffCategories="99" />
+		</level>
+	</additional>
+	<additional id="70000027">
+		<level stringParam="1150">
+			<beginCondition onlyShadowWorld="1" />
+			<BasicProperty level="1" keepCondition="99" deadKeepEffect="1" doNotClearEffectFromEnterPVPZone="1" />
+			<MotionProperty abnormalImmuneBreak="5" superArmor="1" />
+			<FinalStat>
+				<v type="hp" value="11.5" isRate="1" />
+			</FinalStat>
+			<UIProperty icon="./Data/Resource/Image/skill/icon/shadowPower_buff.png" />
+		</level>
+	</additional>
+	<additional id="70000028">
+		<level>
+			<BasicProperty level="1" buffType="2" durationTick="1800000" deadKeepEffect="1" />
+			<MotionProperty abnormalImmuneBreak="5" />
+			<UIProperty icon="./Data/Resource/Image/skill/icon/shadowDominated_debuff.png" />
+		</level>
+	</additional>
+	<additional id="70000029">
+		<level>
+			<BasicProperty level="1" durationTick="600000" deadKeepEffect="1" pvpOnOff="1" />
+			<MotionProperty keepEffect="CH/Common/Eff_ProtectOfEreb_Keep.xml" abnormalImmuneBreak="5" />
+			<UIProperty icon="./Data/Resource/Image/skill/icon/lapentaProtection_buff.png" />
+		</level>
+	</additional>
+	<additional id="70000030">
+		<level>
+			<BasicProperty level="1" buffType="2" durationTick="100" intervalTick="100" />
+			<MotionProperty abnormalImmuneBreak="5" />
+			<CancelEffectProperty cancelEffectCodes="70000029" />
+		</level>
+	</additional>
+	<additional id="70000031">
+		<level stringParam="1050">
+			<BasicProperty level="1" durationTick="100" />
+			<MotionProperty abnormalImmuneBreak="5" />
+			<RecoveryProperty hpRate="1" />
+		</level>
+	</additional>
+	<additional id="70000032">
+		<level stringParam="5">
+			<BasicProperty level="1" durationTick="5000" resetCondition="1" deadKeepEffect="1" pvpOnOff="1" />
+			<MotionProperty keepEffect="CH/Common/Eff_ProtectOfEreb_Keep.xml" abnormalImmuneBreak="5" />
+			<UIProperty icon="./Data/Resource/Image/skill/icon/safeMove_buff.png" />
+		</level>
+	</additional>
+	<additional id="70000033">
+		<level>
+			<BasicProperty level="1" buffType="2" durationTick="2000" resetCondition="1" />
+			<MotionProperty startEffect="NPC/Skill/Patos/Eff_HealWaterCube_Cast.xml" abnormalImmuneBreak="1" />
+			<CancelEffectProperty cancelEffectCodes="50000930" />
+			<RecoveryProperty hpRate="0.01" />
+		</level>
+	</additional>
+	<additional id="70000034">
+		<level>
+			<BasicProperty level="1" buffType="2" durationTick="500" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<MotionProperty stun="6" abnormalImmuneBreak="1" />
+		</level>
+	</additional>
+	<additional id="70000035">
+		<level stringParam="30">
+			<BasicProperty level="1" durationTick="30000" logoutClearEffect="1" />
+			<MotionProperty keepEffect="CH/Skill/Priest/Eff_Priest_HeavensShield_Keep_01.xml" abnormalImmuneBreak="5" />
+			<Stat>
+				<v type="pap" value="0.3" isRate="1" />
+				<v type="map" value="0.3" isRate="1" />
+			</Stat>
+			<UIProperty icon="./Data/Resource/Image/skill/icon/ExpUp.png" iconBalloonOnOff="1" />
+		</level>
+	</additional>
+	<additional id="70000037">
+		<level stringParam="50">
+			<BasicProperty level="1" durationTick="30000" logoutClearEffect="1" />
+			<MotionProperty keepEffect="CH/Skill/Priest/Eff_Priest_HeavensShield_Keep_01.xml" abnormalImmuneBreak="5" />
+			<ConsumeProperty spRate="-0.5" />
+			<UIProperty icon="./Data/Resource/Image/skill/icon/BaphometCrazyState.png" iconBalloonOnOff="1" />
+		</level>
+	</additional>
+	<additional id="70000039">
+		<level stringParam="10">
+			<BasicProperty level="1" durationTick="30000" intervalTick="1000" logoutClearEffect="1" />
+			<MotionProperty keepEffect="CH/Skill/Priest/Eff_Priest_HeavensShield_Keep_01.xml" abnormalImmuneBreak="5" />
+			<RecoveryProperty hpRate="0.1" />
+			<UIProperty icon="./Data/Resource/Image/skill/icon/MonsterHPRecovery.png" iconBalloonOnOff="1" />
+		</level>
+	</additional>
+	<additional id="70000040">
+		<level>
+			<BasicProperty level="1" buffType="2" durationTick="2000" doNotClearEffectFromEnterPVPZone="1" />
+			<MotionProperty abnormalImmuneBreak="5" skillUseDisable="62" />
+		</level>
+	</additional>
+	<additional id="70000041">
+		<level stringParam="50">
+			<BasicProperty level="1" durationTick="30000" logoutClearEffect="1" />
+			<MotionProperty keepEffect="CH/Skill/Assassin/Eff_Assassin_FatalAttack_Keep_01.xml" stopEffect="CH/Skill/Assassin/Eff_Assassin_FatalAttack_Stop_01.xml" abnormalImmuneBreak="5" />
+			<Stat>
+				<v type="pap" value="0.5" isRate="1" />
+				<v type="map" value="0.5" isRate="1" />
+			</Stat>
+			<UIProperty icon="./Data/Resource/Image/skill/icon/BaphometCrazyState.png" iconBalloonOnOff="1" />
+		</level>
+	</additional>
+	<additional id="70000043">
+		<level>
+			<BasicProperty level="1" buffType="2" durationTick="100" intervalTick="100" />
+			<MotionProperty abnormalImmuneBreak="5" />
+			<OffensiveProperty hitImmuneBreak="5" />
+			<DotDamageProperty type="1" value="30000" element="1" isConstDotDamageValue="1" />
+		</level>
+	</additional>
+	<additional id="70000044">
+		<level>
+			<BasicProperty level="1" durationTick="180000" />
+			<MotionProperty alphaBlending="0.5" abnormalImmuneBreak="5" />
+			<ImmuneEffectProperty immuneEffectCodes="70000045" />
+			<UIProperty icon="./Data/Resource/Image/skill/icon/DefenceState.png" />
+		</level>
+	</additional>
+	<additional id="70000045">
+		<level>
+			<BasicProperty level="1" buffType="2" durationTick="1000" />
+			<MotionProperty abnormalImmuneBreak="5" />
+			<DotDamageProperty type="1" damageByTargetMaxHP="1" />
+		</level>
+	</additional>
+	<additional id="70000046">
+		<level>
+			<BasicProperty level="1" buffType="2" buffCategory="6" durationTick="6000" intervalTick="1000" resetCondition="1" />
+			<MotionProperty keepEffect="Additional/Poison/Eff_Additional_Poison_Keep.xml" stopEffect="Additional/Poison/Eff_Additional_Poison_Stop.xml" />
+			<DotDamageProperty damageByTargetMaxHP="0.1" />
+			<UIProperty icon="./Data/Resource/Image/skill/icon/Poison.png" />
+		</level>
+	</additional>
+	<additional id="70000047">
+		<level>
+			<BasicProperty level="1" buffType="2" durationTick="2000" resetCondition="1" />
+			<MotionProperty startEffect="NPC/Skill/Patos/Eff_HealWaterCube_Cast.xml" abnormalImmuneBreak="1" />
+			<CancelEffectProperty cancelEffectCodes="50001402,50000006" />
+			<RecoveryProperty hpRate="0.01" />
+		</level>
+	</additional>
+	<additional id="70000048">
+		<level>
+			<BasicProperty level="1" durationTick="100" />
+			<MotionProperty abnormalImmuneBreak="5" />
+			<RecoveryProperty spRate="1" />
+		</level>
+	</additional>
+	<additional id="70000049">
+		<level>
+			<BasicProperty level="1" buffType="2" durationTick="2000" resetCondition="1" />
+			<MotionProperty startEffect="NPC/Skill/Patos/Eff_HealWaterCube_Cast.xml" abnormalImmuneBreak="1" />
+			<RecoveryProperty hpRate="0.01" />
+		</level>
+	</additional>
+	<additional id="70000050">
+		<level stringParam="5,10">
+			<BasicProperty level="1" buffType="2" buffCategory="6" durationTick="10000" intervalTick="949" resetCondition="2" maxBuffCount="10" />
+			<MotionProperty keepEffect="Additional/Poison/Eff_Additional_Poison_Keep.xml" stopEffect="Additional/Poison/Eff_Additional_Poison_Stop.xml" />
+			<Stat>
+				<v type="msp" value="-0.05" isRate="1" />
+				<v type="rmsp" value="-0.05" isRate="1" />
+			</Stat>
+			<DotDamageProperty type="1" value="1" element="6" isConstDotDamageValue="1" />
+			<UIProperty icon="./Data/Resource/Image/skill/icon/Poison.png" />
+		</level>
+	</additional>
+	<additional id="70000051">
+		<level>
+			<BasicProperty level="1" durationTick="1000" />
+			<CancelEffectProperty cancelEffectCodes="70000050" />
+			<RecoveryProperty hpRate="1" />
+		</level>
+	</additional>
+	<additional id="70000054">
+		<level stringParam="10">
+			<BasicProperty level="1" buffType="2" durationTick="8000" intervalTick="1000" />
+			<MotionProperty keepEffect="Additional/Bleed/Eff_Additional_Bleed_Keep.xml" abnormalImmuneBreak="5" />
+			<CancelEffectProperty cancelEffectCodes="50000239" />
+			<ImmuneEffectProperty immuneEffectCodes="50000239" />
+			<DotDamageProperty value="10" isConstDotDamageValue="1" />
+			<UIProperty icon="./Data/Resource/Image/skill/icon/Bleed.png" />
+		</level>
+	</additional>
+	<additional id="70000055">
+		<level>
+			<BasicProperty level="1" group="1" buffType="2" durationTick="8000" resetCondition="1" />
+			<MotionProperty keepEffect="Additional/Stun/Eff_Additional_Stun_Keep.xml" stun="1" abnormalImmuneBreak="999" />
+			<UIProperty icon="./Data/Resource/Image/skill/icon/Stun.png" />
+		</level>
+	</additional>
+	<additional id="70000056">
+		<level stringParam="99">
+			<BasicProperty level="1" buffType="2" durationTick="1100" />
+			<MotionProperty keepEffect="Additional/Offense/Eff_Additional_OffenseDownDebuff_Keep.xml" />
+			<Stat>
+				<v type="pap" value="-0.99" isRate="1" />
+				<v type="map" value="-0.99" isRate="1" />
+			</Stat>
+			<UIProperty icon="./Data/Resource/Image/skill/icon/destroyWeapon.png" isHideCooltime="1" />
+		</level>
+		<level stringParam="70">
+			<BasicProperty level="2" buffType="2" durationTick="1100" />
+			<MotionProperty keepEffect="Additional/Offense/Eff_Additional_OffenseDownDebuff_Keep.xml" />
+			<Stat>
+				<v type="pap" value="-0.7" isRate="1" />
+				<v type="map" value="-0.7" isRate="1" />
+			</Stat>
+			<UIProperty icon="./Data/Resource/Image/skill/icon/destroyWeapon.png" isHideCooltime="1" />
+		</level>
+	</additional>
+	<additional id="70000057">
+		<level>
+			<BasicProperty level="1" buffType="2" durationTick="20000" deadKeepEffect="1" logoutClearEffect="1" leaveFieldClearEffect="1" doNotClearEffectFromEnterPVPZone="1" />
+			<MotionProperty abnormalImmuneBreak="5" skillUseDisable="62" />
+		</level>
+	</additional>
+	<additional id="70000058">
+		<level stringParam="150">
+			<BasicProperty level="1" durationTick="60000" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<MotionProperty keepEffect="Additional/Haste/Eff_Additional_Haste_Keep.xml" />
+			<Stat>
+				<v type="msp" value="150" />
+			</Stat>
+			<UIProperty icon="./Data/Resource/Image/skill/icon/SpeedUp.png" />
+		</level>
+	</additional>
+	<additional id="70000059">
+		<level>
+			<BasicProperty level="1" buffType="2" durationTick="11000" intervalTick="1000" resetCondition="1" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<MotionProperty keepEffect="Additional/Burn/Eff_Additional_Burn_Keep.xml" stopEffect="Additional/Burn/Eff_Additional_Burn_Stop.xml" abnormalImmuneBreak="5" />
+			<DotDamageProperty damageByTargetMaxHP="0.005" />
+			<UIProperty icon="./Data/Resource/Image/skill/icon/Fire.png" />
+		</level>
+		<level>
+			<BasicProperty level="2" buffType="2" durationTick="11000" intervalTick="1000" resetCondition="1" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<MotionProperty keepEffect="Additional/Burn/Eff_Additional_Burn_Keep.xml" stopEffect="Additional/Burn/Eff_Additional_Burn_Stop.xml" abnormalImmuneBreak="5" />
+			<DotDamageProperty damageByTargetMaxHP="0.03" />
+			<UIProperty icon="./Data/Resource/Image/skill/icon/Fire.png" />
+		</level>
+	</additional>
+	<additional id="70000060">
+		<level>
+			<BasicProperty level="1" buffType="2" durationTick="800" resetCondition="1" />
+			<MotionProperty startEffect="Additional/Burn/Eff_Additional_BurnTimePlus_Cast.xml" abnormalImmuneBreak="5" />
+		</level>
+	</additional>
+	<additional id="70000061">
+		<level>
+			<BasicProperty level="1" buffType="2" durationTick="2000" resetCondition="1" />
+			<MotionProperty abnormalImmuneBreak="1" />
+			<CancelEffectProperty cancelEffectCodes="70000059,40319001,50000080" />
+		</level>
+	</additional>
+	<additional id="70000062">
+		<level stringParam="15,10,10">
+			<BasicProperty level="1" durationTick="600000" deadKeepEffect="1" logoutClearEffect="1" leaveFieldClearEffect="1" clearEffectFromPVPZone="1" />
+			<MotionProperty abnormalImmuneBreak="5" />
+			<Stat>
+				<v type="hp" value="0.15" isRate="1" />
+				<v type="ndd" value="0.1" isRate="1" />
+				<v type="pap" value="0.1" isRate="1" />
+				<v type="map" value="0.1" isRate="1" />
+			</Stat>
+			<UIProperty icon="./Data/Resource/Image/skill/icon/PvPBalanceRevision_Lv1.png" isHideCooltime="1" />
+		</level>
+		<level stringParam="45,20,20">
+			<BasicProperty level="2" durationTick="600000" deadKeepEffect="1" logoutClearEffect="1" leaveFieldClearEffect="1" clearEffectFromPVPZone="1" />
+			<MotionProperty abnormalImmuneBreak="5" />
+			<Stat>
+				<v type="hp" value="0.45" isRate="1" />
+				<v type="ndd" value="0.2" isRate="1" />
+				<v type="pap" value="0.2" isRate="1" />
+				<v type="map" value="0.2" isRate="1" />
+			</Stat>
+			<UIProperty icon="./Data/Resource/Image/skill/icon/PvPBalanceRevision_Lv2.png" isHideCooltime="1" />
+		</level>
+		<level stringParam="90,30,30">
+			<BasicProperty level="3" durationTick="600000" deadKeepEffect="1" logoutClearEffect="1" leaveFieldClearEffect="1" clearEffectFromPVPZone="1" />
+			<MotionProperty abnormalImmuneBreak="5" />
+			<Stat>
+				<v type="hp" value="0.9" isRate="1" />
+				<v type="ndd" value="0.3" isRate="1" />
+				<v type="pap" value="0.3" isRate="1" />
+				<v type="map" value="0.3" isRate="1" />
+			</Stat>
+			<UIProperty icon="./Data/Resource/Image/skill/icon/PvPBalanceRevision_Lv3.png" isHideCooltime="1" />
+		</level>
+		<level stringParam="120,40,40">
+			<BasicProperty level="4" durationTick="600000" deadKeepEffect="1" logoutClearEffect="1" leaveFieldClearEffect="1" clearEffectFromPVPZone="1" />
+			<MotionProperty abnormalImmuneBreak="5" />
+			<Stat>
+				<v type="hp" value="1.2" isRate="1" />
+				<v type="ndd" value="0.4" isRate="1" />
+				<v type="pap" value="0.4" isRate="1" />
+				<v type="map" value="0.4" isRate="1" />
+			</Stat>
+			<UIProperty icon="./Data/Resource/Image/skill/icon/PvPBalanceRevision_Lv4.png" isHideCooltime="1" />
+		</level>
+		<level stringParam="180,50,50">
+			<BasicProperty level="5" durationTick="600000" deadKeepEffect="1" logoutClearEffect="1" leaveFieldClearEffect="1" clearEffectFromPVPZone="1" />
+			<MotionProperty abnormalImmuneBreak="5" />
+			<Stat>
+				<v type="hp" value="1.8" isRate="1" />
+				<v type="ndd" value="0.5" isRate="1" />
+				<v type="pap" value="0.5" isRate="1" />
+				<v type="map" value="0.5" isRate="1" />
+			</Stat>
+			<UIProperty icon="./Data/Resource/Image/skill/icon/PvPBalanceRevision_Lv5.png" isHideCooltime="1" />
+		</level>
+		<level stringParam="250,70,70">
+			<BasicProperty level="6" durationTick="600000" deadKeepEffect="1" logoutClearEffect="1" leaveFieldClearEffect="1" clearEffectFromPVPZone="1" />
+			<MotionProperty abnormalImmuneBreak="5" />
+			<Stat>
+				<v type="hp" value="2.5" isRate="1" />
+				<v type="ndd" value="0.7" isRate="1" />
+				<v type="pap" value="0.7" isRate="1" />
+				<v type="map" value="0.7" isRate="1" />
+			</Stat>
+			<UIProperty icon="./Data/Resource/Image/skill/icon/PvPBalanceRevision_Lv6.png" isHideCooltime="1" />
+		</level>
+		<level stringParam="300,80,80">
+			<BasicProperty level="7" durationTick="600000" deadKeepEffect="1" logoutClearEffect="1" leaveFieldClearEffect="1" clearEffectFromPVPZone="1" />
+			<MotionProperty abnormalImmuneBreak="5" />
+			<Stat>
+				<v type="hp" value="3" isRate="1" />
+				<v type="ndd" value="0.8" isRate="1" />
+				<v type="pap" value="0.8" isRate="1" />
+				<v type="map" value="0.8" isRate="1" />
+			</Stat>
+			<UIProperty icon="./Data/Resource/Image/skill/icon/PvPBalanceRevision_Lv7.png" isHideCooltime="1" />
+		</level>
+		<level stringParam="450,90,90">
+			<BasicProperty level="8" durationTick="600000" deadKeepEffect="1" logoutClearEffect="1" leaveFieldClearEffect="1" clearEffectFromPVPZone="1" />
+			<MotionProperty abnormalImmuneBreak="5" />
+			<Stat>
+				<v type="hp" value="4.5" isRate="1" />
+				<v type="ndd" value="0.9" isRate="1" />
+				<v type="pap" value="0.9" isRate="1" />
+				<v type="map" value="0.9" isRate="1" />
+			</Stat>
+			<UIProperty icon="./Data/Resource/Image/skill/icon/PvPBalanceRevision_Lv8.png" isHideCooltime="1" />
+		</level>
+		<level stringParam="600,100,100">
+			<BasicProperty level="9" durationTick="600000" deadKeepEffect="1" logoutClearEffect="1" leaveFieldClearEffect="1" clearEffectFromPVPZone="1" />
+			<MotionProperty abnormalImmuneBreak="5" />
+			<Stat>
+				<v type="hp" value="6" isRate="1" />
+				<v type="ndd" value="1" isRate="1" />
+				<v type="pap" value="1" isRate="1" />
+				<v type="map" value="1" isRate="1" />
+			</Stat>
+			<UIProperty icon="./Data/Resource/Image/skill/icon/PvPBalanceRevision_Lv9.png" isHideCooltime="1" />
+		</level>
+	</additional>
+	<additional id="70000063">
+		<level stringParam="10,2,1">
+			<BasicProperty level="1" buffSubType="4" durationTick="900000" intervalTick="2000" dotCondition="1" />
+			<MotionProperty startEffect="CH/Common/Eff_BlessOfEreb_Cast.xml" keepEffect="CH/Common/Eff_BlessOfEreb_Keep.xml" abnormalImmuneBreak="5" />
+			<SpecialAbility>
+				<v type="smd" value="100" />
+			</SpecialAbility>
+			<RecoveryProperty hpRate="0.01" />
+			<UIProperty icon="./Data/Resource/Image/Skill/icon/PvPWinner.png" />
+		</level>
+	</additional>
+	<additional id="70000064">
+		<level>
+			<BasicProperty level="1" durationTick="1000" delayTick="9" clearEffectFromPVPZone="1" />
+			<MotionProperty abnormalImmuneBreak="5" />
+			<RecoveryProperty hpRate="1" />
+		</level>
+	</additional>
+	<additional id="70000065">
+		<level>
+			<BasicProperty level="1" buffType="2" durationTick="3000" intervalTick="800" resetCondition="1" logoutClearEffect="1" />
+			<MotionProperty keepEffect="Additional/Burn/Eff_Additional_Burn_Keep.xml" stopEffect="Additional/Burn/Eff_Additional_Burn_Stop.xml" abnormalImmuneBreak="5" />
+			<DotDamageProperty damageByTargetMaxHP="0.05" />
+			<UIProperty icon="./Data/Resource/Image/skill/icon/Fire.png" />
+		</level>
+		<level>
+			<BasicProperty level="2" buffType="2" durationTick="4000" intervalTick="400" resetCondition="1" logoutClearEffect="1" />
+			<MotionProperty keepEffect="Additional/Burn/Eff_Additional_Burn_Keep.xml" stopEffect="Additional/Burn/Eff_Additional_Burn_Stop.xml" abnormalImmuneBreak="5" />
+			<DotDamageProperty damageByTargetMaxHP="0.35" />
+			<UIProperty icon="./Data/Resource/Image/skill/icon/Fire.png" />
+		</level>
+	</additional>
+	<additional id="70000066">
+		<level stringParam="5,10">
+			<BasicProperty level="1" keepCondition="99" deadKeepEffect="1" clearEffectFromPVPZone="1" doNotClearEffectFromEnterPVPZone="1" />
+			<SpecialAbility>
+				<v type="seg" value="50" />
+				<v type="smd" value="100" />
+			</SpecialAbility>
+			<UIProperty icon="./Data/Resource/Image/skill/icon/partyBonus_Lv1.png" isHideCooltime="1" />
+		</level>
+		<level stringParam="7,20">
+			<BasicProperty level="2" keepCondition="99" deadKeepEffect="1" clearEffectFromPVPZone="1" doNotClearEffectFromEnterPVPZone="1" />
+			<SpecialAbility>
+				<v type="seg" value="70" />
+				<v type="smd" value="200" />
+			</SpecialAbility>
+			<UIProperty icon="./Data/Resource/Image/skill/icon/partyBonus_Lv2.png" isHideCooltime="1" />
+		</level>
+		<level stringParam="10,30">
+			<BasicProperty level="3" keepCondition="99" deadKeepEffect="1" clearEffectFromPVPZone="1" doNotClearEffectFromEnterPVPZone="1" />
+			<SpecialAbility>
+				<v type="seg" value="100" />
+				<v type="smd" value="300" />
+			</SpecialAbility>
+			<UIProperty icon="./Data/Resource/Image/skill/icon/partyBonus_Lv3.png" isHideCooltime="1" />
+		</level>
+	</additional>
+	<additional id="70000068">
+		<level stringParam="5,200">
+			<BasicProperty level="1" buffSubType="1" durationTick="5000" />
+			<MotionProperty keepEffect="Additional/Haste/Eff_Additional_Haste_Keep.xml" abnormalImmuneBreak="5" />
+			<Stat>
+				<v type="msp" value="2" isRate="1" />
+				<v type="rmsp" value="2" isRate="1" />
+			</Stat>
+			<UIProperty icon="./Data/Resource/Image/skill/icon/SpeedUp.png" />
+		</level>
+	</additional>
+	<additional id="70000069">
+		<level>
+			<BasicProperty level="1" keepCondition="99" logoutClearEffect="1" leaveFieldClearEffect="1" clearEffectFromPVPZone="1" doNotClearEffectFromEnterPVPZone="1" />
+			<MotionProperty abnormalImmuneBreak="5" superArmor="1" />
+			<FinalStat>
+				<v type="hp" value="20.4" isRate="1" />
+			</FinalStat>
+			<UIProperty icon="./Data/Resource/Image/skill/icon/shadowPower_buff.png" />
+		</level>
+	</additional>
+	<additional id="70000070">
+		<level>
+			<BasicProperty level="1" buffType="2" durationTick="10000" intervalTick="2000" resetCondition="1" />
+			<MotionProperty abnormalImmuneBreak="5" />
+			<Stat>
+				<v type="pap" value="1" isRate="1" />
+				<v type="map" value="1" isRate="1" />
+			</Stat>
+			<DotDamageProperty damageByTargetMaxHP="0.1" />
+			<UIProperty icon="./Data/Resource/Image/skill/icon/ShadowPoison.png" />
+		</level>
+	</additional>
+	<additional id="70000071">
+		<level stringParam="10">
+			<BasicProperty level="1" buffType="2" durationTick="4000000" deadKeepEffect="1" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<MotionProperty abnormalImmuneBreak="5" />
+			<StatusProperty itemRecoveryHPRate="-0.1" healRecoveryHPRate="-0.1" />
+			<UIProperty icon="./Data/Resource/Image/skill/icon/HPRecoveryItemDown.png" isHideCooltime="1" />
+		</level>
+		<level stringParam="20">
+			<BasicProperty level="2" buffType="2" durationTick="4000000" deadKeepEffect="1" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<MotionProperty abnormalImmuneBreak="5" />
+			<StatusProperty itemRecoveryHPRate="-0.2" healRecoveryHPRate="-0.2" />
+			<UIProperty icon="./Data/Resource/Image/skill/icon/HPRecoveryItemDown.png" isHideCooltime="1" />
+		</level>
+		<level stringParam="50">
+			<BasicProperty level="3" buffType="2" durationTick="4000000" deadKeepEffect="1" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<MotionProperty abnormalImmuneBreak="5" />
+			<StatusProperty itemRecoveryHPRate="-0.5" healRecoveryHPRate="-0.5" />
+			<UIProperty icon="./Data/Resource/Image/skill/icon/HPRecoveryItemDown.png" isHideCooltime="1" />
+		</level>
+		<level stringParam="80">
+			<BasicProperty level="4" buffType="2" durationTick="4000000" deadKeepEffect="1" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<MotionProperty abnormalImmuneBreak="5" />
+			<StatusProperty itemRecoveryHPRate="-0.8" healRecoveryHPRate="-0.8" />
+			<UIProperty icon="./Data/Resource/Image/skill/icon/HPRecoveryItemDown.png" isHideCooltime="1" />
+		</level>
+		<level stringParam="95">
+			<BasicProperty level="5" buffType="2" durationTick="4000000" deadKeepEffect="1" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<MotionProperty abnormalImmuneBreak="5" />
+			<StatusProperty itemRecoveryHPRate="-0.95" healRecoveryHPRate="-0.95" />
+			<UIProperty icon="./Data/Resource/Image/skill/icon/HPRecoveryItemDown.png" isHideCooltime="1" />
+		</level>
+	</additional>
+	<additional id="70000072">
+		<level>
+			<BasicProperty level="1" durationTick="5000" deadKeepEffect="1" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<MotionProperty startEffect="BG/Common/Eff_footprint.xml" keepEffect="BG/Common/Eff_Light_defalt03.xml" abnormalImmuneBreak="5" />
+		</level>
+	</additional>
+	<additional id="70000073">
+		<level>
+			<beginCondition allowDeadState="1" />
+			<BasicProperty level="1" buffType="2" keepCondition="99" deadKeepEffect="1" logoutClearEffect="1" leaveFieldClearEffect="1" disableRevivalHere="1" />
+			<MotionProperty abnormalImmuneBreak="1" />
+			<UIProperty icon="./Data/Resource/Image/skill/icon/ResurrectionProhibition.png" />
+		</level>
+	</additional>
+	<additional id="70000074">
+		<level>
+			<BasicProperty level="1" buffType="2" durationTick="3000" />
+			<MotionProperty keepEffect="Additional/Confusion/Eff_Additional_Confusion_Keep.xml" stopEffect="Additional/Confusion/Eff_Additional_Confusion_Stop.xml" confusionMove="1" abnormalImmuneBreak="5" />
+			<UIProperty icon="./Data/Resource/Image/skill/icon/Confusion.png" />
+		</level>
+	</additional>
+	<additional id="70000075">
+		<level>
+			<BasicProperty level="1" durationTick="300" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<MotionProperty hide="1" clearCondition="3,4,7,11,12" alphaBlending="0.3" abnormalImmuneBreak="5" />
+		</level>
+	</additional>
+	<additional id="70000076">
+		<level>
+			<BasicProperty level="1" buffType="2" durationTick="1100" intervalTick="899" />
+			<MotionProperty keepEffect="Additional/Poison/Eff_Additional_Poison_Keep.xml" stopEffect="Additional/Poison/Eff_Additional_Poison_Stop.xml" />
+			<DotDamageProperty damageByTargetMaxHP="0.07" />
+			<UIProperty icon="./Data/Resource/Image/skill/icon/ShadowPoison.png" isHideCooltime="1" />
+		</level>
+	</additional>
+	<additional id="70000077">
+		<level>
+			<BasicProperty level="1" buffType="2" durationTick="1100" intervalTick="1000" />
+			<MotionProperty keepEffect="Additional/Poison/Eff_Additional_Poison_Keep.xml" stopEffect="Additional/Poison/Eff_Additional_Poison_Stop.xml" />
+			<DotDamageProperty damageByTargetMaxHP="0.04" />
+			<UIProperty icon="./Data/Resource/Image/skill/icon/ShadowPoison.png" isHideCooltime="1" />
+		</level>
+		<level>
+			<BasicProperty level="2" buffType="2" durationTick="1100" intervalTick="1000" />
+			<MotionProperty keepEffect="Additional/Poison/Eff_Additional_Poison_Keep.xml" stopEffect="Additional/Poison/Eff_Additional_Poison_Stop.xml" />
+			<DotDamageProperty damageByTargetMaxHP="0.08" />
+			<UIProperty icon="./Data/Resource/Image/skill/icon/ShadowPoison.png" isHideCooltime="1" />
+		</level>
+		<level>
+			<BasicProperty level="3" buffType="2" durationTick="11000" intervalTick="1000" dotCondition="1" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<MotionProperty keepEffect="Additional/Poison/Eff_Additional_Poison_Keep.xml" stopEffect="Additional/Poison/Eff_Additional_Poison_Stop.xml" />
+			<DotDamageProperty damageByTargetMaxHP="0.11" />
+			<UIProperty icon="./Data/Resource/Image/skill/icon/ShadowPoison.png" isHideCooltime="1" />
+		</level>
+	</additional>
+	<additional id="70000078">
+		<level>
+			<BasicProperty level="1" buffType="2" durationTick="1100" intervalTick="600" />
+			<MotionProperty keepEffect="NPC/Skill/BaphometHuman/Eff_BaphometHuman_SpDown_Keep.xml" />
+			<CancelEffectProperty cancelEffectCodes="50000084,10300071,10600164" />
+			<ImmuneEffectProperty immuneEffectCodes="10300071,10600164" />
+			<Stat>
+				<v type="sp" value="-100" />
+			</Stat>
+			<UIProperty icon="./Data/Resource/Image/skill/icon/SpDown.png" isHideCooltime="1" />
+		</level>
+	</additional>
+	<additional id="70000079">
+		<level>
+			<beginCondition>
+				<requireMapCategoryCodes code="9" />
+			</beginCondition>
+			<BasicProperty level="1" buffType="2" durationTick="604800000" deadKeepEffect="1" logoutClearEffect="1" leaveFieldClearEffect="1" doNotClearEffectFromEnterPVPZone="1" />
+			<MotionProperty abnormalImmuneBreak="5" skillUseDisable="40" />
+		</level>
+	</additional>
+	<additional id="70000080">
+		<level>
+			<BasicProperty level="1" group="91" durationTick="8000" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<MotionProperty startEffect="CH/Common/Eff_RacingSpeedUp.xml" keepEffect="Additional/Haste/Eff_Additional_Haste_Keep.xml" />
+			<CancelEffectProperty cancelEffectCodes="70000081" />
+			<Stat>
+				<v type="msp" value="2" isRate="1" />
+			</Stat>
+			<RecoveryProperty hpRate="0.15" />
+			<UIProperty icon="./Data/Resource/Image/Skill/Icon/RandomEffectCube.PNG" />
+		</level>
+	</additional>
+	<additional id="70000081">
+		<level>
+			<BasicProperty level="1" group="91" buffType="2" durationTick="8000" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<MotionProperty startEffect="CH/Common/Eff_RacingSpeedDown.xml" keepEffect="Additional/Slow/Eff_Additional_Slow_Keep.xml" stopEffect="Additional/Slow/Eff_Additional_Slow_Stop.xml" />
+			<Stat>
+				<v type="msp" value="-0.5" isRate="1" />
+				<v type="rmsp" value="-0.5" isRate="1" />
+			</Stat>
+			<RecoveryProperty hpRate="0.15" />
+			<UIProperty icon="./Data/Resource/Image/Skill/Icon/RandomEffectCube.PNG" />
+		</level>
+	</additional>
+	<additional id="70000082">
+		<level>
+			<BasicProperty level="1" durationTick="8000" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<MotionProperty startEffect="Additional/Etc/Eff_Additional_SizeUp.xml" stopEffect="Additional/Etc/Eff_Additional_SizeDown.xml" scale="1.5" />
+			<Stat>
+				<v type="msp" value="2" isRate="1" />
+			</Stat>
+			<RecoveryProperty hpRate="0.15" />
+			<UIProperty icon="./Data/Resource/Image/Skill/Icon/RandomEffectCube.PNG" />
+		</level>
+	</additional>
+	<additional id="70000083">
+		<level>
+			<BasicProperty level="1" durationTick="3000" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<MotionProperty startEffect="Additional/Hp/Eff_Additional_PotionHpRecovery_Cast.xml" clearCondition="12" />
+			<RecoveryProperty hpRate="0.15" />
+			<UIProperty icon="./Data/Resource/Image/Skill/Icon/RandomEffectCube.PNG" iconOnOff="0" />
+		</level>
+	</additional>
+	<additional id="70000084">
+		<level>
+			<BasicProperty level="1" durationTick="1500" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<MotionProperty startEffect="BG/Common/Eff_Massive_Dead.xml" clearCondition="12" scale="1.3" />
+			<Stat>
+				<v type="msp" value="-0.5" isRate="1" />
+			</Stat>
+			<UIProperty icon="./Data/Resource/Image/Item/icon/20000290.png" iconOnOff="0" />
+		</level>
+	</additional>
+	<additional id="70000085">
+		<level stringParam="30">
+			<BasicProperty level="1" durationTick="8000" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<MotionProperty keepEffect="BG/Common/Eff_Massive_shield.xml" clearCondition="12" />
+			<CancelEffectProperty cancelEffectCodes="70000081" />
+			<Stat>
+				<v type="msp" value="1.3" isRate="1" />
+			</Stat>
+			<DefensiveProperty invincible="2" />
+			<RecoveryProperty hpRate="0.15" />
+			<UIProperty icon="./Data/Resource/Image/Skill/Icon/RandomEffectCube.PNG" />
+		</level>
+	</additional>
+	<additional id="70000086">
+		<level stringParam="2,200">
+			<BasicProperty level="1" durationTick="2000" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<MotionProperty keepEffect="Additional/Haste/Eff_Additional_Haste_Keep.xml" />
+			<Stat>
+				<v type="msp" value="2" isRate="1" />
+			</Stat>
+			<UIProperty icon="./Data/Resource/Image/skill/icon/SpeedUp.png" />
+		</level>
+	</additional>
+	<additional id="70000087">
+		<level>
+			<BasicProperty level="1" durationTick="6000000" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<MotionProperty keepEffect="Additional/Etc/Eff_Additional_Arcade_Focus.xml" clearCondition="12" />
+			<UIProperty icon="./Data/Resource/Image/Skill/Icon/RandomEffectCube.PNG" iconOnOff="0" />
+		</level>
+	</additional>
+	<additional id="70000088">
+		<level>
+			<BasicProperty level="1" keepCondition="99" deadKeepEffect="1" logoutClearEffect="1" leaveFieldClearEffect="1" doNotClearEffectFromEnterPVPZone="1" />
+			<conditionSkill level="1" skillID="70000090" skillTarget="1">
+				<beginCondition>
+					<owner eventCondition="4" />
+				</beginCondition>
+			</conditionSkill>
+		</level>
+	</additional>
+	<additional id="70000089">
+		<level>
+			<BasicProperty level="1" keepCondition="99" deadKeepEffect="1" logoutClearEffect="1" leaveFieldClearEffect="1" doNotClearEffectFromEnterPVPZone="1" />
+			<conditionSkill level="1" skillID="70000090" skillTarget="1">
+				<beginCondition>
+					<owner eventCondition="7" />
+				</beginCondition>
+			</conditionSkill>
+		</level>
+	</additional>
+	<additional id="70000090">
+		<level>
+			<BasicProperty level="1" durationTick="5000" deadKeepEffect="1" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<MotionProperty abnormalImmuneBreak="5" />
+			<CancelEffectProperty cancelEffectCodes="70000075" />
+			<ImmuneEffectProperty immuneEffectCodes="70000075" />
+		</level>
+	</additional>
+	<additional id="70000091">
+		<level>
+			<BasicProperty level="1" durationTick="7000" logoutClearEffect="1" leaveFieldClearEffect="1" doNotClearEffectFromEnterPVPZone="1" />
+			<DefensiveProperty invincible="3" />
+		</level>
+	</additional>
+	<additional id="70000092">
+		<level>
+			<BasicProperty level="1" buffType="2" durationTick="1100" intervalTick="1000" />
+			<MotionProperty keepEffect="Additional/Poison/Eff_Additional_Poison_Keep.xml" stopEffect="Additional/Poison/Eff_Additional_Poison_Stop.xml" />
+			<DotDamageProperty damageByTargetMaxHP="0.1" />
+			<UIProperty icon="./Data/Resource/Image/skill/icon/ShadowPoison.png" isHideCooltime="1" />
+		</level>
+	</additional>
+	<additional id="70000093">
+		<level>
+			<BasicProperty level="1" buffType="2" keepCondition="99" />
+			<UIProperty icon="./Data/Resource/Image/Item/icon/20000314.png" />
+		</level>
+	</additional>
+	<additional id="70000094">
+		<level>
+			<BasicProperty level="1" buffType="2" durationTick="5000" />
+			<MotionProperty keepEffect="Additional/RadialBlur/Eff_Additional_RadialBlur_Keep.xml" abnormalImmuneBreak="5" />
+		</level>
+	</additional>
+	<additional id="70000095">
+		<level>
+			<BasicProperty level="1" buffType="2" keepCondition="99" />
+			<MotionProperty keepEffect="Additional/RadialBlur/Eff_Additional_RadialBlur2_Keep.xml" skillUseDisable="60" />
+			<CancelEffectProperty cancelPassiveEffect="1" cancelEffectCodes="70000093,70000094" />
+			<Stat>
+				<v type="asp" value="-0.5" isRate="1" />
+				<v type="msp" value="-0.8" isRate="1" />
+				<v type="jmp" value="-1" isRate="1" />
+				<v type="rmsp" value="-0.8" isRate="1" />
+			</Stat>
+			<SpecialAbility>
+				<v type="offensive_physicaldamage" value="-1000" />
+				<v type="offensive_magicaldamage" value="-1000" />
+			</SpecialAbility>
+			<UIProperty icon="./Data/Resource/Image/Item/icon/20000314.png" />
+		</level>
+	</additional>
+	<additional id="70000096">
+		<level>
+			<BasicProperty level="1" buffType="2" durationTick="100" />
+			<MotionProperty abnormalImmuneBreak="5" />
+			<CancelEffectProperty cancelPassiveEffect="1" cancelEffectCodes="70000093,70000094,70000095" />
+		</level>
+	</additional>
+	<additional id="70000097">
+		<level>
+			<BasicProperty level="1" keepCondition="99" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<MotionProperty startEffect="CH/Common/Eff_Common_VioletAura_Start.xml" keepEffect="CH/Common/Eff_Common_VioletAura_Keep.xml" />
+			<CancelEffectProperty cancelPassiveEffect="1" cancelEffectCodes="70000093,70000094,70000095" />
+		</level>
+	</additional>
+	<additional id="70000098">
+		<level>
+			<BasicProperty level="1" buffType="2" keepCondition="99" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<MotionProperty keepEffect="Additional/ScreenMasking/Eff_Additional_ScreenMasking3_Keep.xml" />
+			<UIProperty icon="./Data/Resource/Image/Skill/icon/Darkness.png" />
+		</level>
+	</additional>
+	<additional id="70000099">
+		<level stringParam="15,5,60">
+			<BasicProperty level="1" buffSubType="4" durationTick="900000" resetCondition="2" maxBuffCount="60" />
+			<Stat>
+				<v type="hp" value="5" />
+			</Stat>
+			<UIProperty icon="./Data/Resource/Image/Skill/icon/05000050_normal.png" />
+		</level>
+	</additional>
+	<additional id="70000100">
+		<level>
+			<BasicProperty level="1" durationTick="1000" intervalTick="600" />
+			<CancelEffectProperty cancelPassiveEffect="1" cancelEffectCodes="70000099" />
+		</level>
+	</additional>
+	<additional id="70000101">
+		<level>
+			<BasicProperty level="1" buffType="2" durationTick="100" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<MotionProperty abnormalImmuneBreak="5" />
+			<CancelEffectProperty cancelPassiveEffect="1" cancelEffectCodes="70000098,70000104" />
+		</level>
+	</additional>
+	<additional id="70000102">
+		<level>
+			<BasicProperty level="1" keepCondition="99" deadKeepEffect="1" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<MotionProperty keepEffect="CH/Common/Eff_InnerLight_01.xml" />
+			<UIProperty icon="./Data/Resource/Image/Skill/icon/InnerLight.png" />
+		</level>
+		<level>
+			<BasicProperty level="2" keepCondition="99" deadKeepEffect="1" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<MotionProperty keepEffect="CH/Common/Eff_InnerLight_02.xml" />
+			<UIProperty icon="./Data/Resource/Image/Skill/icon/InnerLight.png" />
+		</level>
+	</additional>
+	<additional id="70000103">
+		<level>
+			<BasicProperty level="1" durationTick="100" deadKeepEffect="1" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<MotionProperty abnormalImmuneBreak="5" />
+			<CancelEffectProperty cancelPassiveEffect="1" cancelEffectCodes="70000102" />
+		</level>
+	</additional>
+	<additional id="70000104">
+		<level>
+			<BasicProperty level="1" buffType="2" keepCondition="99" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<MotionProperty keepEffect="Additional/ScreenMasking/Eff_Additional_ScreenMasking2_Keep.xml" />
+		</level>
+	</additional>
+	<additional id="70000105">
+		<level>
+			<BasicProperty level="1" durationTick="180000" deadKeepEffect="1" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<MotionProperty alphaBlending="0.5" abnormalImmuneBreak="5" />
+			<ImmuneEffectProperty immuneEffectCodes="70000045" />
+			<UIProperty icon="./Data/Resource/Image/skill/icon/DefenceState.png" iconOnOff="0" />
+		</level>
+	</additional>
+	<additional id="70000106">
+		<level>
+			<beginCondition allowBattleRidingState="1" />
+			<BasicProperty level="1" durationTick="600000" deadKeepEffect="1" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<MotionProperty keepEffect="Additional/ScreenMasking/Eff_Additional_CameraMasking_Keep.xml" abnormalImmuneBreak="5" />
+			<ImmuneEffectProperty immuneEffectCodes="70000045" />
+			<UIProperty icon="./Data/Resource/Image/skill/icon/DefenceState.png" iconOnOff="0" />
+		</level>
+	</additional>
+	<additional id="70000107">
+		<level>
+			<BasicProperty level="1" buffType="2" durationTick="9999000" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<MotionProperty stun="3" abnormalImmuneBreak="5" />
+			<DefensiveProperty invincible="3" />
+		</level>
+	</additional>
+	<additional id="70000108">
+		<level stringParam="20">
+			<BasicProperty level="1" keepCondition="99" deadKeepEffect="1" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<Stat>
+				<v type="msp" value="0.2" isRate="1" />
+				<v type="rmsp" value="0.2" isRate="1" />
+			</Stat>
+			<UIProperty icon="./Data/Resource/Image/Skill/icon/41000015.PNG" />
+		</level>
+	</additional>
+	<additional id="70000109">
+		<level stringParam="30">
+			<BasicProperty level="1" buffSubType="4" intervalTick="500" keepCondition="99" deadKeepEffect="1" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<Stat>
+				<v type="msp" value="0.3" isRate="1" />
+				<v type="rmsp" value="0.3" isRate="1" />
+			</Stat>
+			<UIProperty icon="./Data/Resource/Image/skill/icon/100001.png" />
+			<conditionSkill level="1" skillID="70000110" skillTarget="1" activeByIntervalTick="1" />
+		</level>
+	</additional>
+	<additional id="70000110">
+		<level>
+			<BasicProperty level="1" buffSubType="4" durationTick="1000" resetCondition="1" logoutClearEffect="1" leaveFieldClearEffect="1" coolDownTime="1" />
+			<MotionProperty abnormalImmuneBreak="5" />
+			<RecoveryProperty hpRate="0.05" />
+		</level>
+	</additional>
+	<additional id="70000111">
+		<level>
+			<BasicProperty level="1" keepCondition="99" deadKeepEffect="1" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<MotionProperty abnormalImmuneBreak="5" superArmor="1" />
+		</level>
+	</additional>
+	<additional id="70000112">
+		<level stringParam="10,200">
+			<BasicProperty level="1" buffSubType="1" durationTick="12000" maxBuffCount="15" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<MotionProperty keepEffect="Additional/Haste/Eff_Additional_Haste_Keep_03.xml" />
+			<Stat>
+				<v type="msp" value="2" isRate="1" />
+			</Stat>
+			<UIProperty icon="./Data/Resource/Image/skill/icon/SpeedUp.png" iconBalloonOnOff="1" />
+		</level>
+	</additional>
+	<additional id="70000113">
+		<level>
+			<BasicProperty level="1" durationTick="180000" />
+			<MotionProperty abnormalImmuneBreak="5" />
+			<ImmuneEffectProperty immuneEffectCodes="70000114" />
+			<UIProperty icon="./Data/Resource/Image/Item/icon/20000451.png" />
+		</level>
+	</additional>
+	<additional id="70000114">
+		<level>
+			<BasicProperty level="1" buffType="2" durationTick="5000" intervalTick="1000" dotCondition="1" />
+			<MotionProperty abnormalImmuneBreak="5" />
+			<Stat>
+				<v type="msp" value="-0.5" isRate="1" />
+				<v type="jmp" value="-0.5" isRate="1" />
+				<v type="rmsp" value="-0.5" isRate="1" />
+			</Stat>
+			<DotDamageProperty type="1" damageByTargetMaxHP="0.2" />
+		</level>
+	</additional>
+	<additional id="70000115">
+		<level stringParam="30,50">
+			<BasicProperty level="1" buffSubType="4" intervalTick="500" keepCondition="99" resetCondition="1" deadKeepEffect="1" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<Stat>
+				<v type="msp" value="0.3" isRate="1" />
+				<v type="pap" value="0.5" isRate="1" />
+				<v type="map" value="0.5" isRate="1" />
+				<v type="rmsp" value="0.3" isRate="1" />
+			</Stat>
+			<UIProperty icon="./Data/Resource/Image/skill/icon/100001.png" />
+			<conditionSkill level="1" skillID="70000110" skillTarget="1" activeByIntervalTick="1" />
+		</level>
+	</additional>
+	<additional id="70000116">
+		<level stringParam="99">
+			<BasicProperty level="1" buffType="2" durationTick="1100" intervalTick="600" />
+			<MotionProperty keepEffect="Additional/Offense/Eff_Additional_OffenseDownDebuff_Keep.xml" IgnoreOptimalHideStartEffect="1" />
+			<Stat>
+				<v type="pap" value="-0.99" isRate="1" />
+				<v type="map" value="-0.99" isRate="1" />
+			</Stat>
+			<DotDamageProperty damageByTargetMaxHP="0.02" />
+			<UIProperty icon="./Data/Resource/Image/skill/icon/destroyWeapon_ShadowPoison.png" isHideCooltime="1" />
+		</level>
+	</additional>
+	<additional id="70000118">
+		<level>
+			<BasicProperty level="1" keepCondition="99" deadKeepEffect="1" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<MotionProperty superArmor="3" />
+			<ImmuneEffectProperty immuneEffectCodes="50000004,50000007,50000010,50000016,50000143,50000144" />
+			<Stat>
+				<v type="atp" value="300" />
+			</Stat>
+		</level>
+	</additional>
+	<additional id="70000119">
+		<level>
+			<BasicProperty level="1" durationTick="1000" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<MotionProperty startEffect="BG/Common/Eff_HenesysDefence_Bomb_01.xml" />
+			<Stat>
+				<v type="msp" value="-0.5" isRate="1" />
+			</Stat>
+			<UIProperty icon="./Data/Resource/Image/Item/icon/20000290.png" iconOnOff="0" />
+		</level>
+	</additional>
+	<additional id="70000120">
+		<level>
+			<BasicProperty level="1" keepCondition="99" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<MotionProperty keepEffect="Additional/Slow/Eff_Additional_Slow_Keep.xml" />
+		</level>
+	</additional>
+	<additional id="70000121">
+		<level>
+			<BasicProperty level="1" buffSubType="4" durationTick="900000" intervalTick="2000" />
+			<MotionProperty startEffect="CH/Common/Eff_BlessOfEreb_Cast.xml" keepEffect="CH/Common/Eff_BlessOfEreb_Keep.xml" />
+			<SpecialAbility>
+				<v type="seg" value="100" />
+			</SpecialAbility>
+			<RecoveryProperty hpRate="0.01" />
+			<UIProperty icon="./Data/Resource/Image/Skill/icon/70000121.png" />
+		</level>
+	</additional>
+	<additional id="70000122">
+		<level>
+			<BasicProperty level="1" buffSubType="4" durationTick="900000" intervalTick="2000" />
+			<MotionProperty startEffect="CH/Skill/Ranger/Eff_Ranger_GoldenEagle_Start_01.xml" keepEffect="CH/Skill/Ranger/Eff_Ranger_GoldenEagle_Keep_01.xml" stopEffect="CH/Skill/Ranger/Eff_Ranger_GoldenEagle_Stop_01.xml" />
+			<RecoveryProperty hpRate="0.01" />
+			<UIProperty icon="./Data/Resource/Image/Skill/icon/70000121.png" iconOnOff="0" />
+		</level>
+	</additional>
+	<additional id="70000123">
+		<level stringParam="200">
+			<BasicProperty level="1" durationTick="6000000" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<MotionProperty startEffect="CH/Common/Eff_RacingSpeedUp.xml" keepEffect="Additional/Haste/Eff_Additional_Haste_Keep.xml" />
+			<Stat>
+				<v type="wapmin" value="2" isRate="1" />
+				<v type="wapmax" value="2" isRate="1" />
+			</Stat>
+			<UIProperty icon="./Data/Resource/Image/Skill/Icon/WeaponUpgrade.PNG" />
+		</level>
+	</additional>
+	<additional id="70000124">
+		<level>
+			<BasicProperty level="1" useInGameTime="1" durationTick="60000000" deadKeepEffect="1" logoutClearEffect="1" leaveFieldClearEffect="1" costumeSetID="10000001" />
+			<MotionProperty abnormalImmuneBreak="5" />
+		</level>
+	</additional>
+	<additional id="70000125">
+		<level>
+			<BasicProperty level="1" durationTick="1600" logoutClearEffect="1" />
+			<MotionProperty startEffect="Additional/Etc/Eff_Additional_SizeUp.xml" clearCondition="12" scale="1" />
+		</level>
+	</additional>
+	<additional id="70000126">
+		<level>
+			<BasicProperty level="1" buffType="2" durationTick="1500" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<MotionProperty startEffect="NPC/Skill/Pinkbean/Eff_Pinkbean_Attack_02_H_Controller_Ball_Guided_Hit.xml" keepEffect="Additional/Confusion/Eff_Additional_Confusion_Keep.xml" stopEffect="Additional/Confusion/Eff_Additional_Confusion_Stop.xml" confusionMove="1" abnormalImmuneBreak="5" />
+			<UIProperty icon="./Data/Resource/Image/skill/icon/Confusion.png" />
+		</level>
+	</additional>
+	<additional id="70000127">
+		<level>
+			<BasicProperty level="1" buffType="2" durationTick="2000" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<MotionProperty keepEffect="Additional/Stun/Eff_Additional_Stun_Water_Keep.xml" stun="99" stunAnimation="Jump_Fall_A" abnormalImmuneBreak="5" />
+			<UIProperty icon="./Data/Resource/Image/skill/icon/WaterPrison.png" />
+		</level>
+	</additional>
+	<additional id="70000128">
+		<level stringParam="6,10">
+			<BasicProperty level="1" buffType="2" buffCategory="6" durationTick="5000" intervalTick="2000" resetCondition="2" maxBuffCount="10" logoutClearEffect="1" leaveFieldClearEffect="1" ignoreReduceTimeCondition="1" />
+			<MotionProperty keepEffect="NPC/Skill/Scorpion/Eff_Scorpion_Attack_01_B_Ice_Keep.xml" />
+			<Stat>
+				<v type="msp" value="-0.06" isRate="1" />
+				<v type="rmsp" value="-0.06" isRate="1" />
+			</Stat>
+			<UIProperty icon="./Data/Resource/Image/skill/icon/TimeBombIce.png" />
+		</level>
+	</additional>
+	<additional id="70000129">
+		<level>
+			<BasicProperty level="1" buffType="2" buffSubType="1" buffCategory="7" durationTick="7000" intervalTick="1000" logoutClearEffect="1" leaveFieldClearEffect="1" ignoreReduceTimeCondition="1" />
+			<MotionProperty keepEffect="NPC/Skill/YetiTwoHeadWhite/Eff_YetiTwoHeadWhite_FrozenCube_Keep.xml" stopEffect="NPC/Skill/YetiTwoHeadWhite/Eff_YetiTwoHeadWhite_FrozenCube_Stop.xml" stun="3" abnormalImmuneBreak="99" />
+			<CancelEffectProperty cancelPassiveEffect="1" cancelEffectCodes="70000128" />
+			<ImmuneEffectProperty immuneEffectCodes="70000128" />
+			<DefensiveProperty invincible="2" />
+			<DotDamageProperty damageByTargetMaxHP="0.01" />
+			<UIProperty icon="./Data/Resource/Image/skill/icon/IceCubePrison.png" />
+		</level>
+	</additional>
+	<additional id="70000130">
+		<level stringParam="10">
+			<BasicProperty level="1" group="1" buffType="2" buffCategory="8" durationTick="4000" resetCondition="2" maxBuffCount="4" logoutClearEffect="1" leaveFieldClearEffect="1" ignoreReduceTimeCondition="1" />
+			<MotionProperty keepEffect="NPC/Skill/Scorpion/Eff_Scorpion_Attack_01_B_Ice_Keep.xml" />
+			<Stat>
+				<v type="msp" value="-0.1" isRate="1" />
+				<v type="rmsp" value="-0.1" isRate="1" />
+			</Stat>
+			<UIProperty icon="./Data/Resource/Image/skill/icon/TimeBombIce.png" />
+		</level>
+	</additional>
+	<additional id="70000131">
+		<level>
+			<BasicProperty level="1" group="1" buffType="2" buffSubType="1" buffCategory="7" durationTick="5000" resetCondition="1" logoutClearEffect="1" leaveFieldClearEffect="1" ignoreReduceTimeCondition="1" />
+			<MotionProperty keepEffect="NPC/Skill/YetiTwoHeadWhite/Eff_YetiTwoHeadWhite_FrozenCube_Keep.xml" stopEffect="NPC/Skill/YetiTwoHeadWhite/Eff_YetiTwoHeadWhite_FrozenCube_Stop.xml" stun="7" abnormalImmuneBreak="99" />
+			<ImmuneEffectProperty immuneEffectCodes="70000130" />
+			<DefensiveProperty invincible="2" />
+			<DotDamageProperty damageByTargetMaxHP="0.01" />
+			<UIProperty icon="./Data/Resource/Image/skill/icon/IceCubePrison.png" />
+		</level>
+	</additional>
+	<additional id="70000132">
+		<level>
+			<BasicProperty level="1" keepCondition="99" deadKeepEffect="1" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<MotionProperty startEffect="CH/Common/Eff_userMinigameWinner_Cast.xml" keepEffect="CH/Common/Eff_userMinigameWinner_Keep.xml" />
+			<UIProperty icon="./Data/Resource/Image/Skill/icon/Firework.png" isHideCooltime="1" />
+		</level>
+	</additional>
+	<additional id="70000133">
+		<level>
+			<BasicProperty level="1" buffType="2" buffSubType="1" buffCategory="1" intervalTick="100" keepCondition="99" logoutClearEffect="1" leaveFieldClearEffect="1" ignoreReduceTimeCondition="1" />
+			<MotionProperty abnormalImmuneBreak="99" />
+			<UIProperty icon="./Data/Resource/Image/skill/icon/IceCubePrison.png" iconOnOff="0" />
+			<conditionSkill level="1" skillID="70000129" skillTarget="1" activeByIntervalTick="1">
+				<beginCondition>
+					<owner hasBuffID="70000128" hasBuffLevel="1" hasBuffOwner="0" hasBuffCount="10" hasBuffCountCompare="Equals" />
+				</beginCondition>
+			</conditionSkill>
+		</level>
+	</additional>
+	<additional id="70000134">
+		<level>
+			<BasicProperty level="1" buffType="2" durationTick="11000" intervalTick="1000" dotCondition="1" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<MotionProperty keepEffect="Additional/Burn/Eff_Additional_Burn_Keep.xml" stopEffect="Additional/Burn/Eff_Additional_Burn_Stop.xml" IgnoreOptimalHideStartEffect="1" abnormalImmuneBreak="5" />
+			<CancelEffectProperty cancelEffectCodes="50000088" />
+			<ImmuneEffectProperty immuneEffectCodes="50000088" />
+			<DotDamageProperty damageByTargetMaxHP="0.05" />
+			<UIProperty icon="./Data/Resource/Image/skill/icon/Fire.png" />
+		</level>
+	</additional>
+	<additional id="70000135">
+		<level>
+			<BasicProperty level="1" buffType="2" durationTick="11000" intervalTick="1000" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<MotionProperty keepEffect="Additional/Burn/Eff_Additional_Burn_Keep.xml" stopEffect="Additional/Burn/Eff_Additional_Burn_Stop.xml" IgnoreOptimalHideStartEffect="1" abnormalImmuneBreak="5" />
+			<Stat>
+				<v type="sp_inv" value="-100" />
+			</Stat>
+			<UIProperty icon="./Data/Resource/Image/skill/icon/SpDown.png" />
+		</level>
+	</additional>
+	<additional id="70000141">
+		<level>
+			<BasicProperty level="1" buffType="2" durationTick="1000" resetCondition="1" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<MotionProperty keepEffect="Additional/Stun/Eff_Additional_Stun_Keep.xml" stun="1" abnormalImmuneBreak="5" />
+			<UIProperty icon="./Data/Resource/Image/skill/icon/Stun.png" />
+		</level>
+	</additional>
+	<additional id="70000142">
+		<level>
+			<BasicProperty level="1" buffType="2" durationTick="600" delayTick="899" resetCondition="1" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<MotionProperty abnormalImmuneBreak="5" />
+			<ImmuneEffectProperty immuneEffectCodes="70000141" />
+		</level>
+	</additional>
+	<additional id="70000143">
+		<level stringParam="99">
+			<BasicProperty level="1" buffType="2" durationTick="1100" intervalTick="600" />
+			<MotionProperty keepEffect="Additional/Offense/Eff_Additional_OffenseDownDebuff_Keep.xml" IgnoreOptimalHideStartEffect="1" />
+			<Stat>
+				<v type="pap" value="-0.99" isRate="1" />
+				<v type="map" value="-0.99" isRate="1" />
+			</Stat>
+			<DotDamageProperty damageByTargetMaxHP="0.02" />
+			<UIProperty icon="./Data/Resource/Image/skill/icon/destroyWeapon_ShadowPoison.png" isHideCooltime="1" />
+		</level>
+		<level stringParam="99">
+			<BasicProperty level="2" buffType="2" durationTick="4000" intervalTick="600" />
+			<MotionProperty keepEffect="Additional/Offense/Eff_Additional_OffenseDownDebuff_Keep.xml" IgnoreOptimalHideStartEffect="1" />
+			<Stat>
+				<v type="pap" value="-0.99" isRate="1" />
+				<v type="map" value="-0.99" isRate="1" />
+			</Stat>
+			<DotDamageProperty damageByTargetMaxHP="0.02" />
+			<UIProperty icon="./Data/Resource/Image/skill/icon/destroyWeapon_ShadowPoison.png" isHideCooltime="1" />
+		</level>
+	</additional>
+	<additional id="70000151">
+		<level stringParam="0.5,25">
+			<BasicProperty level="1" buffType="2" durationTick="2000" intervalTick="500" resetCondition="1" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<MotionProperty abnormalImmuneBreak="5" />
+			<UIProperty icon="./Data/Resource/Image/skill/icon/FuryIceDamage.png" />
+			<conditionSkill level="1" skillID="70000152" skillTarget="1" activeByIntervalTick="1" />
+		</level>
+	</additional>
+	<additional id="70000152">
+		<level>
+			<BasicProperty level="1" buffType="2" durationTick="2000" resetCondition="2" maxBuffCount="4" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<MotionProperty keepEffect="Additional/Cold/Eff_Additional_Cold_Keep.xml" stopEffect="Additional/Cold/Eff_Additional_Cold_Stop.xml" abnormalImmuneBreak="5" />
+			<Stat>
+				<v type="msp" value="-0.25" isRate="1" />
+				<v type="rmsp" value="-0.25" isRate="1" />
+			</Stat>
+			<conditionSkill level="1" skillID="70000153" skillTarget="1">
+				<beginCondition>
+					<owner hasBuffID="70000152" hasBuffLevel="1" hasBuffOwner="0" hasBuffCount="4" hasBuffCountCompare="Equals" eventCondition="10" />
+				</beginCondition>
+			</conditionSkill>
+		</level>
+	</additional>
+	<additional id="70000153">
+		<level>
+			<BasicProperty level="1" buffType="2" durationTick="1000" delayTick="400" resetCondition="1" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<MotionProperty keepEffect="Additional/Freeze/Eff_Additional_Freeze_Keep.xml" stopEffect="Additional/Freeze/Eff_Additional_Freeze_Stop.xml" stun="3" abnormalImmuneBreak="5" />
+			<CancelEffectProperty cancelEffectCodes="70000151,70000152" />
+			<ImmuneEffectProperty immuneEffectCodes="70000151" />
+			<UIProperty icon="./Data/Resource/Image/skill/icon/IceCubePrison.png" />
+		</level>
+	</additional>
+	<additional id="70000154">
+		<level>
+			<BasicProperty level="1" buffType="2" durationTick="600" delayTick="1899" resetCondition="1" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<MotionProperty abnormalImmuneBreak="5" />
+			<ImmuneEffectProperty immuneEffectCodes="70000151" />
+		</level>
+	</additional>
+	<additional id="70000155">
+		<level>
+			<BasicProperty level="1" keepCondition="99" resetCondition="1" logoutClearEffect="1" leaveFieldClearEffect="1" doNotClearEffectFromEnterPVPZone="1" />
+			<MotionProperty superArmor="1" />
+			<FinalStat>
+				<v type="hp" value="55.2" isRate="1" />
+			</FinalStat>
+			<UIProperty icon="./Data/Resource/Image/Skill/Icon/OffenceState.png" isHideCooltime="1" />
+		</level>
+	</additional>
+	<additional id="70000156">
+		<level>
+			<BasicProperty level="1" durationTick="2500" intervalTick="2000" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<MotionProperty abnormalImmuneBreak="5" />
+			<DefensiveProperty invincible="2" />
+			<UIProperty icon="./Data/Resource/Image/Skill/Icon/RandomEffectCube.PNG" isHideCooltime="1" />
+		</level>
+	</additional>
+	<additional id="70000157">
+		<level>
+			<BasicProperty level="1" keepCondition="99" resetCondition="1" maxBuffCount="10" logoutClearEffect="1" leaveFieldClearEffect="1" doNotClearEffectFromEnterPVPZone="1" />
+			<SpecialAbility>
+				<v type="offensive_physicaldamage" value="100" />
+				<v type="offensive_magicaldamage" value="100" />
+			</SpecialAbility>
+			<UIProperty icon="./Data/Resource/Image/Skill/Icon/90001002.png" isHideCooltime="1" />
+		</level>
+	</additional>
+	<additional id="70000158">
+		<level>
+			<BasicProperty level="1" keepCondition="99" resetCondition="1" maxBuffCount="10" logoutClearEffect="1" leaveFieldClearEffect="1" doNotClearEffectFromEnterPVPZone="1" />
+			<SpecialAbility>
+				<v type="defensive_physicaldamage" value="100" />
+				<v type="defensive_magicaldamage" value="100" />
+			</SpecialAbility>
+			<UIProperty icon="./Data/Resource/Image/Skill/Icon/90001002.png" isHideCooltime="1" />
+		</level>
+	</additional>
+	<additional id="70000161">
+		<level>
+			<BasicProperty level="1" buffType="2" durationTick="5000" resetCondition="1" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<MotionProperty keepEffect="Additional/Darkness/Eff_Additional_Darkness_Keep.xml" stopEffect="Additional/Darkness/Eff_Additional_Darkness_Stop.xml" abnormalImmuneBreak="5" />
+			<UIProperty icon="./Data/Resource/Image/skill/icon/ShadowPoison.png" />
+		</level>
+	</additional>
+	<additional id="70000162">
+		<level>
+			<BasicProperty level="1" buffType="2" durationTick="600" delayTick="899" resetCondition="1" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<MotionProperty abnormalImmuneBreak="5" />
+			<ImmuneEffectProperty immuneEffectCodes="70000161" />
+		</level>
+	</additional>
+	<additional id="70000163">
+		<level stringParam="10">
+			<BasicProperty level="1" keepCondition="99" resetCondition="1" deadKeepEffect="1" />
+			<SpecialAbility>
+				<v type="offensive_physicaldamage" value="100" />
+				<v type="offensive_magicaldamage" value="100" />
+			</SpecialAbility>
+			<UIProperty icon="./Data/Resource/Image/skill/icon/RaidDungeonEvent.png" />
+		</level>
+		<level stringParam="15">
+			<BasicProperty level="2" keepCondition="99" resetCondition="1" deadKeepEffect="1" />
+			<SpecialAbility>
+				<v type="offensive_physicaldamage" value="150" />
+				<v type="offensive_magicaldamage" value="150" />
+			</SpecialAbility>
+			<UIProperty icon="./Data/Resource/Image/skill/icon/RaidDungeonEvent.png" />
+		</level>
+		<level stringParam="20">
+			<BasicProperty level="3" keepCondition="99" resetCondition="1" deadKeepEffect="1" />
+			<SpecialAbility>
+				<v type="offensive_physicaldamage" value="200" />
+				<v type="offensive_magicaldamage" value="200" />
+			</SpecialAbility>
+			<UIProperty icon="./Data/Resource/Image/skill/icon/RaidDungeonEvent.png" />
+		</level>
+		<level stringParam="25">
+			<BasicProperty level="4" keepCondition="99" resetCondition="1" deadKeepEffect="1" />
+			<SpecialAbility>
+				<v type="offensive_physicaldamage" value="250" />
+				<v type="offensive_magicaldamage" value="250" />
+			</SpecialAbility>
+			<UIProperty icon="./Data/Resource/Image/skill/icon/RaidDungeonEvent.png" />
+		</level>
+		<level stringParam="30">
+			<BasicProperty level="5" keepCondition="99" resetCondition="1" deadKeepEffect="1" />
+			<SpecialAbility>
+				<v type="offensive_physicaldamage" value="300" />
+				<v type="offensive_magicaldamage" value="300" />
+			</SpecialAbility>
+			<UIProperty icon="./Data/Resource/Image/skill/icon/RaidDungeonEvent.png" />
+		</level>
+		<level stringParam="35">
+			<BasicProperty level="6" keepCondition="99" resetCondition="1" deadKeepEffect="1" />
+			<SpecialAbility>
+				<v type="offensive_physicaldamage" value="350" />
+				<v type="offensive_magicaldamage" value="350" />
+			</SpecialAbility>
+			<UIProperty icon="./Data/Resource/Image/skill/icon/RaidDungeonEvent.png" />
+		</level>
+		<level stringParam="40">
+			<BasicProperty level="7" keepCondition="99" resetCondition="1" deadKeepEffect="1" />
+			<SpecialAbility>
+				<v type="offensive_physicaldamage" value="400" />
+				<v type="offensive_magicaldamage" value="400" />
+			</SpecialAbility>
+			<UIProperty icon="./Data/Resource/Image/skill/icon/RaidDungeonEvent.png" />
+		</level>
+		<level stringParam="45">
+			<BasicProperty level="8" keepCondition="99" resetCondition="1" deadKeepEffect="1" />
+			<SpecialAbility>
+				<v type="offensive_physicaldamage" value="450" />
+				<v type="offensive_magicaldamage" value="450" />
+			</SpecialAbility>
+			<UIProperty icon="./Data/Resource/Image/skill/icon/RaidDungeonEvent.png" />
+		</level>
+		<level stringParam="50">
+			<BasicProperty level="9" keepCondition="99" resetCondition="1" deadKeepEffect="1" />
+			<SpecialAbility>
+				<v type="offensive_physicaldamage" value="500" />
+				<v type="offensive_magicaldamage" value="500" />
+			</SpecialAbility>
+			<UIProperty icon="./Data/Resource/Image/skill/icon/RaidDungeonEvent.png" />
+		</level>
+	</additional>
+	<additional id="70000164">
+		<level>
+			<BasicProperty level="1" buffType="2" keepCondition="99" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<MotionProperty keepEffect="Additional/ScreenMasking/Eff_Additional_ScreenMasking4_Keep.xml" />
+		</level>
+	</additional>
+	<additional id="70000171">
+		<level>
+			<BasicProperty level="1" keepCondition="99" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<MotionProperty superArmor="1" />
+			<FinalStat>
+				<v type="hp" value="36.8" isRate="1" />
+			</FinalStat>
+			<UIProperty icon="./Data/Resource/Image/skill/icon/HousePvpFreeforAll.png" />
+		</level>
+	</additional>
+	<additional id="70000172">
+		<level>
+			<BasicProperty level="1" keepCondition="99" deadKeepEffect="1" clearEffectFromPVPZone="1" doNotClearEffectFromEnterPVPZone="1" />
+			<UIProperty icon="./Data/Resource/Image/skill/icon/EnsembleBonus_buff_01.png" isHideCooltime="1" />
+		</level>
+		<level stringParam="50">
+			<BasicProperty level="2" keepCondition="99" deadKeepEffect="1" clearEffectFromPVPZone="1" doNotClearEffectFromEnterPVPZone="1" />
+			<UIProperty icon="./Data/Resource/Image/skill/icon/EnsembleBonus_buff_02.png" isHideCooltime="1" />
+		</level>
+		<level stringParam="60">
+			<BasicProperty level="3" keepCondition="99" deadKeepEffect="1" clearEffectFromPVPZone="1" doNotClearEffectFromEnterPVPZone="1" />
+			<UIProperty icon="./Data/Resource/Image/skill/icon/EnsembleBonus_buff_03.png" isHideCooltime="1" />
+		</level>
+		<level stringParam="70">
+			<BasicProperty level="4" keepCondition="99" deadKeepEffect="1" clearEffectFromPVPZone="1" doNotClearEffectFromEnterPVPZone="1" />
+			<UIProperty icon="./Data/Resource/Image/skill/icon/EnsembleBonus_buff_04.png" isHideCooltime="1" />
+		</level>
+		<level stringParam="75">
+			<BasicProperty level="5" keepCondition="99" deadKeepEffect="1" clearEffectFromPVPZone="1" doNotClearEffectFromEnterPVPZone="1" />
+			<UIProperty icon="./Data/Resource/Image/skill/icon/EnsembleBonus_buff_05.png" isHideCooltime="1" />
+		</level>
+		<level stringParam="80">
+			<BasicProperty level="6" keepCondition="99" deadKeepEffect="1" clearEffectFromPVPZone="1" doNotClearEffectFromEnterPVPZone="1" />
+			<UIProperty icon="./Data/Resource/Image/skill/icon/EnsembleBonus_buff_06.png" isHideCooltime="1" />
+		</level>
+		<level stringParam="85">
+			<BasicProperty level="7" keepCondition="99" deadKeepEffect="1" clearEffectFromPVPZone="1" doNotClearEffectFromEnterPVPZone="1" />
+			<UIProperty icon="./Data/Resource/Image/skill/icon/EnsembleBonus_buff_07.png" isHideCooltime="1" />
+		</level>
+		<level stringParam="90">
+			<BasicProperty level="8" keepCondition="99" deadKeepEffect="1" clearEffectFromPVPZone="1" doNotClearEffectFromEnterPVPZone="1" />
+			<UIProperty icon="./Data/Resource/Image/skill/icon/EnsembleBonus_buff_08.png" isHideCooltime="1" />
+		</level>
+		<level stringParam="95">
+			<BasicProperty level="9" keepCondition="99" deadKeepEffect="1" clearEffectFromPVPZone="1" doNotClearEffectFromEnterPVPZone="1" />
+			<UIProperty icon="./Data/Resource/Image/skill/icon/EnsembleBonus_buff_09.png" isHideCooltime="1" />
+		</level>
+		<level stringParam="100">
+			<BasicProperty level="10" keepCondition="99" deadKeepEffect="1" clearEffectFromPVPZone="1" doNotClearEffectFromEnterPVPZone="1" />
+			<UIProperty icon="./Data/Resource/Image/skill/icon/EnsembleBonus_buff_10.png" isHideCooltime="1" />
+		</level>
+	</additional>
+	<additional id="70000173">
+		<level>
+			<BasicProperty level="1" keepCondition="99" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<MotionProperty superArmor="1" />
+			<FinalStat>
+				<v type="hp" value="50" isRate="1" />
+			</FinalStat>
+			<UIProperty icon="./Data/Resource/Image/skill/icon/HousePvpFreeforAll.png" />
+		</level>
+		<level>
+			<BasicProperty level="2" keepCondition="99" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<MotionProperty superArmor="1" />
+			<FinalStat>
+				<v type="hp" value="100" isRate="1" />
+			</FinalStat>
+			<UIProperty icon="./Data/Resource/Image/skill/icon/HousePvpFreeforAll.png" />
+		</level>
+		<level>
+			<BasicProperty level="3" keepCondition="99" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<MotionProperty superArmor="1" />
+			<FinalStat>
+				<v type="hp" value="300" isRate="1" />
+			</FinalStat>
+			<UIProperty icon="./Data/Resource/Image/skill/icon/HousePvpFreeforAll.png" />
+		</level>
+		<level>
+			<BasicProperty level="4" keepCondition="99" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<MotionProperty superArmor="1" />
+			<FinalStat>
+				<v type="hp" value="500" isRate="1" />
+			</FinalStat>
+			<UIProperty icon="./Data/Resource/Image/skill/icon/HousePvpFreeforAll.png" />
+		</level>
+	</additional>
+	<additional id="70000174">
+		<level>
+			<BasicProperty level="1" keepCondition="99" doNotClearEffectFromEnterPVPZone="1" />
+			<UIProperty icon="./Data/Resource/Image/skill/icon/scaleBuff.png" isHideCooltime="1" />
+		</level>
+	</additional>
+	<additional id="70000177">
+		<level stringParam="10">
+			<BasicProperty level="1" keepCondition="99" resetCondition="1" deadKeepEffect="1" />
+			<SpecialAbility>
+				<v type="offensive_physicaldamage" value="100" />
+				<v type="offensive_magicaldamage" value="100" />
+			</SpecialAbility>
+			<UIProperty icon="./Data/Resource/Image/skill/icon/RaidDungeonEvent.png" />
+		</level>
+		<level stringParam="15">
+			<BasicProperty level="2" keepCondition="99" resetCondition="1" deadKeepEffect="1" />
+			<SpecialAbility>
+				<v type="offensive_physicaldamage" value="150" />
+				<v type="offensive_magicaldamage" value="150" />
+			</SpecialAbility>
+			<UIProperty icon="./Data/Resource/Image/skill/icon/RaidDungeonEvent.png" />
+		</level>
+		<level stringParam="20">
+			<BasicProperty level="3" keepCondition="99" resetCondition="1" deadKeepEffect="1" />
+			<SpecialAbility>
+				<v type="offensive_physicaldamage" value="200" />
+				<v type="offensive_magicaldamage" value="200" />
+			</SpecialAbility>
+			<UIProperty icon="./Data/Resource/Image/skill/icon/RaidDungeonEvent.png" />
+		</level>
+		<level stringParam="25">
+			<BasicProperty level="4" keepCondition="99" resetCondition="1" deadKeepEffect="1" />
+			<SpecialAbility>
+				<v type="offensive_physicaldamage" value="250" />
+				<v type="offensive_magicaldamage" value="250" />
+			</SpecialAbility>
+			<UIProperty icon="./Data/Resource/Image/skill/icon/RaidDungeonEvent.png" />
+		</level>
+		<level stringParam="30">
+			<BasicProperty level="5" keepCondition="99" resetCondition="1" deadKeepEffect="1" />
+			<SpecialAbility>
+				<v type="offensive_physicaldamage" value="300" />
+				<v type="offensive_magicaldamage" value="300" />
+			</SpecialAbility>
+			<UIProperty icon="./Data/Resource/Image/skill/icon/RaidDungeonEvent.png" />
+		</level>
+		<level stringParam="35">
+			<BasicProperty level="6" keepCondition="99" resetCondition="1" deadKeepEffect="1" />
+			<SpecialAbility>
+				<v type="offensive_physicaldamage" value="350" />
+				<v type="offensive_magicaldamage" value="350" />
+			</SpecialAbility>
+			<UIProperty icon="./Data/Resource/Image/skill/icon/RaidDungeonEvent.png" />
+		</level>
+		<level stringParam="40">
+			<BasicProperty level="7" keepCondition="99" resetCondition="1" deadKeepEffect="1" />
+			<SpecialAbility>
+				<v type="offensive_physicaldamage" value="400" />
+				<v type="offensive_magicaldamage" value="400" />
+			</SpecialAbility>
+			<UIProperty icon="./Data/Resource/Image/skill/icon/RaidDungeonEvent.png" />
+		</level>
+		<level stringParam="45">
+			<BasicProperty level="8" keepCondition="99" resetCondition="1" deadKeepEffect="1" />
+			<SpecialAbility>
+				<v type="offensive_physicaldamage" value="450" />
+				<v type="offensive_magicaldamage" value="450" />
+			</SpecialAbility>
+			<UIProperty icon="./Data/Resource/Image/skill/icon/RaidDungeonEvent.png" />
+		</level>
+		<level stringParam="50">
+			<BasicProperty level="9" keepCondition="99" resetCondition="1" deadKeepEffect="1" />
+			<SpecialAbility>
+				<v type="offensive_physicaldamage" value="500" />
+				<v type="offensive_magicaldamage" value="500" />
+			</SpecialAbility>
+			<UIProperty icon="./Data/Resource/Image/skill/icon/RaidDungeonEvent.png" />
+		</level>
+	</additional>
+	<additional id="70000201">
+		<level>
+			<BasicProperty level="1" intervalTick="1000" keepCondition="99" dotCondition="1" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<Stat>
+				<v type="msp" value="1500" />
+			</Stat>
+			<DefensiveProperty invincible="1" />
+			<RecoveryProperty hpRate="0.5" />
+		</level>
+	</additional>
+	<additional id="70000202">
+		<level stringParam="10">
+			<BasicProperty level="1" keepCondition="99" resetCondition="1" deadKeepEffect="1" />
+			<SpecialAbility>
+				<v type="offensive_physicaldamage" value="100" />
+				<v type="offensive_magicaldamage" value="100" />
+			</SpecialAbility>
+			<UIProperty icon="./Data/Resource/Image/skill/icon/RaidDungeonEvent.png" />
+		</level>
+		<level stringParam="15">
+			<BasicProperty level="2" keepCondition="99" resetCondition="1" deadKeepEffect="1" />
+			<SpecialAbility>
+				<v type="offensive_physicaldamage" value="150" />
+				<v type="offensive_magicaldamage" value="150" />
+			</SpecialAbility>
+			<UIProperty icon="./Data/Resource/Image/skill/icon/RaidDungeonEvent.png" />
+		</level>
+		<level stringParam="20">
+			<BasicProperty level="3" keepCondition="99" resetCondition="1" deadKeepEffect="1" />
+			<SpecialAbility>
+				<v type="offensive_physicaldamage" value="200" />
+				<v type="offensive_magicaldamage" value="200" />
+			</SpecialAbility>
+			<UIProperty icon="./Data/Resource/Image/skill/icon/RaidDungeonEvent.png" />
+		</level>
+		<level stringParam="25">
+			<BasicProperty level="4" keepCondition="99" resetCondition="1" deadKeepEffect="1" />
+			<SpecialAbility>
+				<v type="offensive_physicaldamage" value="250" />
+				<v type="offensive_magicaldamage" value="250" />
+			</SpecialAbility>
+			<UIProperty icon="./Data/Resource/Image/skill/icon/RaidDungeonEvent.png" />
+		</level>
+		<level stringParam="30">
+			<BasicProperty level="5" keepCondition="99" resetCondition="1" deadKeepEffect="1" />
+			<SpecialAbility>
+				<v type="offensive_physicaldamage" value="300" />
+				<v type="offensive_magicaldamage" value="300" />
+			</SpecialAbility>
+			<UIProperty icon="./Data/Resource/Image/skill/icon/RaidDungeonEvent.png" />
+		</level>
+		<level stringParam="35">
+			<BasicProperty level="6" keepCondition="99" resetCondition="1" deadKeepEffect="1" />
+			<SpecialAbility>
+				<v type="offensive_physicaldamage" value="350" />
+				<v type="offensive_magicaldamage" value="350" />
+			</SpecialAbility>
+			<UIProperty icon="./Data/Resource/Image/skill/icon/RaidDungeonEvent.png" />
+		</level>
+		<level stringParam="40">
+			<BasicProperty level="7" keepCondition="99" resetCondition="1" deadKeepEffect="1" />
+			<SpecialAbility>
+				<v type="offensive_physicaldamage" value="400" />
+				<v type="offensive_magicaldamage" value="400" />
+			</SpecialAbility>
+			<UIProperty icon="./Data/Resource/Image/skill/icon/RaidDungeonEvent.png" />
+		</level>
+		<level stringParam="45">
+			<BasicProperty level="8" keepCondition="99" resetCondition="1" deadKeepEffect="1" />
+			<SpecialAbility>
+				<v type="offensive_physicaldamage" value="450" />
+				<v type="offensive_magicaldamage" value="450" />
+			</SpecialAbility>
+			<UIProperty icon="./Data/Resource/Image/skill/icon/RaidDungeonEvent.png" />
+		</level>
+		<level stringParam="50">
+			<BasicProperty level="9" keepCondition="99" resetCondition="1" deadKeepEffect="1" />
+			<SpecialAbility>
+				<v type="offensive_physicaldamage" value="500" />
+				<v type="offensive_magicaldamage" value="500" />
+			</SpecialAbility>
+			<UIProperty icon="./Data/Resource/Image/skill/icon/RaidDungeonEvent.png" />
+		</level>
+	</additional>
+	<additional id="70000576">
+		<level stringParam="99">
+			<BasicProperty level="1" buffType="2" durationTick="4000" logoutClearEffect="1" leaveFieldClearEffect="1" coolDownTime="2" />
+			<MotionProperty keepEffect="Additional/Offense/Eff_Additional_OffenseDownDebuff_Keep.xml" IgnoreOptimalHideStartEffect="1" />
+			<Stat>
+				<v type="pap" value="-0.99" isRate="1" />
+				<v type="map" value="-0.99" isRate="1" />
+			</Stat>
+			<UIProperty icon="./Data/Resource/Image/skill/icon/destroyWeapon_ShadowPoison.png" />
+		</level>
+	</additional>
+	<additional id="70001001">
+		<level>
+			<beginCondition allowDeadState="1" />
+			<BasicProperty level="1" keepCondition="99" deadKeepEffect="1" logoutClearEffect="1" leaveFieldClearEffect="1" doNotClearEffectFromEnterPVPZone="1" />
+			<MotionProperty alphaBlending="0.4" />
+			<UIProperty icon="./Data/Resource/Image/skill/icon/10300091_buff.png" iconOnOff="0" />
+		</level>
+	</additional>
+	<additional id="70001011">
+		<level>
+			<beginCondition allowBattleRidingState="1">
+				<owner hasBuffID="70001041" hasBuffLevel="1" hasBuffOwner="0" hasBuffCount="0" hasBuffCountCompare="Equals" />
+			</beginCondition>
+			<BasicProperty level="1" buffType="2" durationTick="10000" intervalTick="1000" resetCondition="2" maxBuffCount="10" dotCondition="1" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<MotionProperty abnormalImmuneBreak="5" />
+			<UIProperty icon="./Data/Resource/Image/skill/icon/70001011.png" />
+			<conditionSkill level="1" skillID="70001021" skillTarget="1" activeByIntervalTick="1">
+				<beginCondition>
+					<owner hasBuffID="70001011" hasBuffLevel="1" hasBuffOwner="0" hasBuffCount="10" hasBuffCountCompare="Equals" />
+				</beginCondition>
+			</conditionSkill>
+		</level>
+	</additional>
+	<additional id="70001021">
+		<level>
+			<beginCondition allowBattleRidingState="1">
+				<owner hasBuffID="70001041" hasBuffLevel="1" hasBuffOwner="0" hasBuffCount="0" hasBuffCountCompare="Equals" />
+			</beginCondition>
+			<BasicProperty level="1" buffType="2" durationTick="3000" intervalTick="1000" resetCondition="1" dotCondition="1" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<MotionProperty abnormalImmuneBreak="5" />
+			<DotDamageProperty type="1" value="100" soundMaterial="1000" isConstDotDamageValue="1" />
+			<DotBuffProperty target="1" buffID="70001051" buffLevel="1" />
+			<UIProperty icon="./Data/Resource/Image/skill/icon/70001021.png" isHideCooltime="1" />
+		</level>
+	</additional>
+	<additional id="70001031">
+		<level>
+			<beginCondition allowBattleRidingState="1">
+				<owner hasBuffID="70001041" hasBuffLevel="1" hasBuffOwner="0" hasBuffCount="0" hasBuffCountCompare="Equals" />
+			</beginCondition>
+			<BasicProperty level="1" buffType="2" durationTick="10000" resetCondition="1" deadKeepEffect="1" logoutClearEffect="1" leaveFieldClearEffect="1" coolDownTime="9" />
+			<MotionProperty abnormalImmuneBreak="5" />
+			<CancelEffectProperty cancelEffectCodes="70001011,70001021,70001041,70001051" />
+			<DotDamageProperty type="1" damageByTargetMaxHP="1" soundMaterial="1000" />
+			<UIProperty icon="./Data/Resource/Image/skill/icon/100000001.png" isHideCooltime="1" />
+		</level>
+	</additional>
+	<additional id="70001041">
+		<level>
+			<beginCondition allowBattleRidingState="1" />
+			<BasicProperty level="1" buffType="2" durationTick="3000" intervalTick="1000" resetCondition="1" dotCondition="1" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<MotionProperty abnormalImmuneBreak="5" />
+			<DotBuffProperty target="1" buffID="70001011" buffLevel="1" />
+			<UIProperty icon="./Data/Resource/Image/skill/icon/70001041.png" isHideCooltime="1" />
+		</level>
+	</additional>
+	<additional id="70001051">
+		<level>
+			<beginCondition allowBattleRidingState="1">
+				<owner hasBuffID="70001041" hasBuffLevel="1" hasBuffOwner="0" hasBuffCount="0" hasBuffCountCompare="Equals" />
+			</beginCondition>
+			<BasicProperty level="1" buffType="2" durationTick="10000" intervalTick="1000" resetCondition="2" maxBuffCount="10" dotCondition="1" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<MotionProperty abnormalImmuneBreak="5" />
+			<UIProperty icon="./Data/Resource/Image/skill/icon/70001021.png" iconOnOff="0" />
+			<conditionSkill level="1" skillID="70001031" skillTarget="1" activeByIntervalTick="1">
+				<beginCondition>
+					<owner hasBuffID="70001051" hasBuffLevel="1" hasBuffOwner="0" hasBuffCount="10" hasBuffCountCompare="Equals" />
+				</beginCondition>
+			</conditionSkill>
+		</level>
+	</additional>
+	<additional id="70001061">
+		<level>
+			<beginCondition allowBattleRidingState="1" />
+			<BasicProperty level="1" buffType="2" durationTick="150" intervalTick="96" resetCondition="1" dotCondition="1" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<MotionProperty abnormalImmuneBreak="5" />
+			<CancelEffectProperty cancelEffectCodes="71000049,71000053" />
+			<DotDamageProperty type="1" damageByTargetMaxHP="1" />
+			<UIProperty icon="./Data/Resource/Image/skill/icon/100000001.png" iconOnOff="0" />
+			<conditionSkill level="1" skillID="70001091" skillTarget="1" activeByIntervalTick="1" />
+		</level>
+	</additional>
+	<additional id="70001071">
+		<level>
+			<beginCondition allowBattleRidingState="1">
+				<owner hasBuffID="70001041" hasBuffLevel="1" hasBuffOwner="0" hasBuffCount="0" hasBuffCountCompare="Equals" />
+			</beginCondition>
+			<BasicProperty level="1" buffType="2" keepCondition="99" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<MotionProperty clearCondition="0" abnormalImmuneBreak="5" />
+			<Stat>
+				<v type="msp" value="-0.5" isRate="1" />
+				<v type="rmsp" value="-0.5" isRate="1" />
+			</Stat>
+			<UIProperty icon="./Data/Resource/Image/skill/icon/70001041.png" iconOnOff="0" />
+		</level>
+	</additional>
+	<additional id="70001081">
+		<level>
+			<BasicProperty level="1" durationTick="27000" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<MotionProperty keepEffect="BG/Common/Sound/Eff_Sound_Object_Survival_MushBalloon_Flying_Loop_01.xml" abnormalImmuneBreak="5" />
+		</level>
+	</additional>
+	<additional id="70001091">
+		<level>
+			<beginCondition allowBattleRidingState="1" />
+			<BasicProperty level="1" buffType="2" durationTick="10000" resetCondition="1" deadKeepEffect="1" logoutClearEffect="1" leaveFieldClearEffect="1" coolDownTime="9" />
+			<MotionProperty abnormalImmuneBreak="5" />
+			<UIProperty icon="./Data/Resource/Image/skill/icon/100000001.png" isHideCooltime="1" />
+		</level>
+	</additional>
+	<additional id="70001101">
+		<level>
+			<beginCondition allowBattleRidingState="1" />
+			<BasicProperty level="1" durationTick="100" intervalTick="100" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<MotionProperty abnormalImmuneBreak="5" />
+			<CancelEffectProperty cancelEffectCodes="99910340,99910360" />
+		</level>
+	</additional>
+	<additional id="70001102">
+		<level feature="SurvivalContentsTeam">
+			<BasicProperty level="1" buffSubType="4" durationTick="100" intervalTick="100" delayTick="1000" />
+			<MotionProperty startEffect="Additional/Hp/Eff_Additional_HpRecovery_Cast.xml" abnormalImmuneBreak="5" />
+			<RecoveryProperty hpValue="150" />
+			<UIProperty icon="./Data/Resource/Image/skill/icon/10400071.png" iconOnOff="0" />
+		</level>
+	</additional>
+	<additional id="70001103">
+		<level feature="SurvivalContentsTeam">
+			<BasicProperty level="1" buffSubType="4" durationTick="100" intervalTick="100" delayTick="1000" />
+			<MotionProperty startEffect="Additional/Hp/Eff_Additional_HpRecovery_Cast.xml" abnormalImmuneBreak="5" />
+			<RecoveryProperty hpValue="150" />
+			<UIProperty icon="./Data/Resource/Image/skill/icon/10400071.png" iconOnOff="0" />
+		</level>
+	</additional>
+	<additional id="70001111">
+		<level feature="SurvivalContentsTeam">
+			<beginCondition allowBattleRidingState="1">
+				<owner hasBuffID="70001121" hasBuffLevel="1" hasBuffOwner="0" hasBuffCount="0" hasBuffCountCompare="Equals" requireStates="gosEmotion,gosEmotionIdle" />
+			</beginCondition>
+			<BasicProperty level="1" intervalTick="500" keepCondition="99" resetCondition="1" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<MotionProperty startEffect="ETC/Eff_SurvivalContents_TeamCure_start.xml" keepEffect="ETC/Eff_SurvivalContents_TeamCure_Range_on.xml" clearCondition="0" />
+			<UIProperty icon="./Data/Resource/Image/skill/icon/Mentoring.png" iconOnOff="0" />
+			<conditionSkill level="1" skillID="70001241" skillTarget="1" activeByIntervalTick="1" />
+			<splashSkill level="1" skillID="70000401" interval="400" />
+		</level>
+	</additional>
+	<additional id="70001121">
+		<level feature="SurvivalContentsTeam">
+			<beginCondition allowBattleRidingState="1" />
+			<BasicProperty level="1" keepCondition="99" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<MotionProperty clearCondition="0" />
+			<UIProperty icon="./Data/Resource/Image/Item/icon/90000791.png" isHideCooltime="1" />
+		</level>
+	</additional>
+	<additional id="70001131">
+		<level feature="SurvivalContentsTeam">
+			<beginCondition allowBattleRidingState="1" />
+			<BasicProperty level="1" durationTick="100" resetCondition="1" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<MotionProperty startEffect="ETC/Eff_SurvivalContents_TeamCure_apply.xml" />
+			<CancelEffectProperty cancelEffectCodes="99920003" />
+		</level>
+	</additional>
+	<additional id="70001141">
+		<level feature="SurvivalContentsTeam">
+			<beginCondition allowBattleRidingState="1" />
+			<BasicProperty level="1" durationTick="100" resetCondition="1" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<MotionProperty startEffect="ETC/Eff_SurvivalContents_TeamCure_apply.xml" />
+			<CancelEffectProperty cancelEffectCodes="71001001" />
+		</level>
+	</additional>
+	<additional id="70001151">
+		<level feature="SurvivalContentsTeam">
+			<beginCondition allowBattleRidingState="1" />
+			<BasicProperty level="1" durationTick="100" resetCondition="1" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<MotionProperty startEffect="ETC/Eff_SurvivalContents_TeamCure_apply.xml" />
+			<CancelEffectProperty cancelEffectCodes="71000067" />
+		</level>
+	</additional>
+	<additional id="70001161">
+		<level feature="SurvivalContentsTeam">
+			<beginCondition allowBattleRidingState="1" />
+			<BasicProperty level="1" durationTick="100" resetCondition="1" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<MotionProperty startEffect="ETC/Eff_SurvivalContents_TeamCure_apply.xml" />
+			<CancelEffectProperty cancelEffectCodes="70001011" />
+		</level>
+	</additional>
+	<additional id="70001171">
+		<level feature="SurvivalContentsTeam">
+			<beginCondition allowBattleRidingState="1" />
+			<BasicProperty level="1" durationTick="100" resetCondition="1" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<MotionProperty startEffect="ETC/Eff_SurvivalContents_TeamCure_apply.xml" />
+			<CancelEffectProperty cancelEffectCodes="70001021" />
+		</level>
+	</additional>
+	<additional id="70001181">
+		<level feature="SurvivalContentsTeam">
+			<beginCondition allowBattleRidingState="1" />
+			<BasicProperty level="1" durationTick="100" resetCondition="1" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<MotionProperty startEffect="ETC/Eff_SurvivalContents_TeamCure_apply.xml" />
+			<CancelEffectProperty cancelEffectCodes="70001041" />
+		</level>
+	</additional>
+	<additional id="70001191">
+		<level feature="SurvivalContentsTeam">
+			<beginCondition allowBattleRidingState="1" />
+			<BasicProperty level="1" durationTick="100" resetCondition="1" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<MotionProperty startEffect="ETC/Eff_SurvivalContents_TeamCure_apply.xml" />
+			<CancelEffectProperty cancelEffectCodes="70001051" />
+		</level>
+	</additional>
+	<additional id="70001201">
+		<level feature="SurvivalContentsTeam">
+			<beginCondition allowBattleRidingState="1" />
+			<BasicProperty level="1" durationTick="100" resetCondition="1" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<MotionProperty startEffect="ETC/Eff_SurvivalContents_TeamCure_apply.xml" />
+			<CancelEffectProperty cancelEffectCodes="99901007" />
+		</level>
+	</additional>
+	<additional id="70001211">
+		<level feature="SurvivalContentsTeam">
+			<beginCondition allowBattleRidingState="1" />
+			<BasicProperty level="1" durationTick="100" resetCondition="1" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<MotionProperty startEffect="ETC/Eff_SurvivalContents_TeamCure_apply.xml" />
+			<CancelEffectProperty cancelEffectCodes="99901008" />
+		</level>
+	</additional>
+	<additional id="70001221">
+		<level feature="SurvivalContentsTeam">
+			<beginCondition allowBattleRidingState="1" />
+			<BasicProperty level="1" buffType="2" durationTick="999999000" resetCondition="1" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<MotionProperty abnormalImmuneBreak="5" />
+		</level>
+	</additional>
+	<additional id="70001231">
+		<level feature="SurvivalContentsTeam">
+			<beginCondition allowBattleRidingState="1">
+				<owner hasNotBuffID="99920003" />
+			</beginCondition>
+			<BasicProperty level="1" intervalTick="1000" keepCondition="99" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<MotionProperty clearCondition="0" />
+			<conditionSkill level="1" skillID="70001221" skillTarget="1" activeByIntervalTick="1">
+				<beginCondition>
+					<owner hasNotBuffID="99920003" />
+				</beginCondition>
+			</conditionSkill>
+		</level>
+	</additional>
+	<additional id="70001241">
+		<level feature="SurvivalContentsTeam">
+			<beginCondition allowBattleRidingState="1">
+				<owner requireStates="gosEmotion,gosEmotionIdle" />
+			</beginCondition>
+			<BasicProperty level="1" durationTick="1000" logoutClearEffect="1" leaveFieldClearEffect="1" />
+		</level>
+	</additional>
+	<additional id="70001251">
+		<level feature="SurvivalContentsTeam">
+			<beginCondition allowBattleRidingState="1" />
+			<BasicProperty level="1" durationTick="3000" resetCondition="1" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<ImmuneEffectProperty immuneEffectCodes="99920003" />
+		</level>
+	</additional>
+	<additional id="70002001">
+		<level>
+			<BasicProperty level="1" buffSubType="1" keepCondition="99" />
+			<MotionProperty abnormalImmuneBreak="5" />
+			<Stat>
+				<v type="pap" value="0.3" isRate="1" />
+				<v type="map" value="0.3" isRate="1" />
+			</Stat>
+			<UIProperty icon="./Data/Resource/Image/Skill/icon/MonsterOffenceUp.png" />
+		</level>
+	</additional>
+	<additional id="70002011">
+		<level>
+			<BasicProperty level="1" buffSubType="1" durationTick="9999000" intervalTick="2000" />
+			<MotionProperty abnormalImmuneBreak="5" />
+			<RecoveryProperty hpRate="0.01" />
+			<UIProperty icon="./Data/Resource/Image/Skill/icon/MonsterHPRecovery.png" isHideCooltime="1" />
+		</level>
+	</additional>
+	<additional id="70002021">
+		<level>
+			<BasicProperty level="1" buffSubType="1" keepCondition="99" />
+			<MotionProperty abnormalImmuneBreak="5" />
+			<Stat>
+				<v type="asp" value="0.1" isRate="1" />
+			</Stat>
+			<UIProperty icon="./Data/Resource/Image/Skill/icon/90000807.png" />
+		</level>
+	</additional>
+	<additional id="70002031">
+		<level>
+			<BasicProperty level="1" buffSubType="1" keepCondition="99" />
+			<MotionProperty abnormalImmuneBreak="5" />
+			<Stat>
+				<v type="hp" value="0.1" isRate="1" />
+			</Stat>
+			<UIProperty icon="./Data/Resource/Image/Skill/icon/MonsterPhysicalDefenceUp.png" />
+		</level>
+	</additional>
+	<additional id="70002041">
+		<level>
+			<BasicProperty level="1" buffSubType="1" keepCondition="99" />
+			<MotionProperty abnormalImmuneBreak="5" />
+			<Stat>
+				<v type="cap" value="130" />
+			</Stat>
+			<UIProperty icon="./Data/Resource/Image/Skill/icon/90000799.png" />
+		</level>
+	</additional>
+	<additional id="70002051">
+		<level>
+			<BasicProperty level="1" buffSubType="1" keepCondition="99" />
+			<MotionProperty abnormalImmuneBreak="5" />
+			<Stat>
+				<v type="evp" value="80" />
+			</Stat>
+			<UIProperty icon="./Data/Resource/Image/Skill/icon/90000797.png" />
+		</level>
+	</additional>
+	<additional id="70002061">
+		<level>
+			<BasicProperty level="1" buffType="2" durationTick="10000" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<MotionProperty keepEffect="NPC/Skill/DragonDevilBigHead/Eff_DragonDevilBigHead_paralyze_keep.xml" abnormalImmuneBreak="5" />
+			<UIProperty icon="./Data/Resource/Image/Skill/icon/shadowDominated_debuff.png" isHideCooltime="1" />
+		</level>
+	</additional>
+	<additional id="70002062">
+		<level>
+			<BasicProperty level="1" buffSubType="1" durationTick="1000" />
+			<MotionProperty abnormalImmuneBreak="5" />
+			<CancelEffectProperty cancelPassiveEffect="1" cancelEffectCodes="70002061" />
+			<UIProperty icon="./Data/Resource/Image/Skill/icon/90000792.png" iconOnOff="0" />
+		</level>
+	</additional>
+	<additional id="70002071">
+		<level>
+			<BasicProperty level="1" buffSubType="1" keepCondition="99" />
+			<MotionProperty abnormalImmuneBreak="5" />
+			<Stat>
+				<v type="pap" value="0.3" isRate="1" />
+				<v type="map" value="0.3" isRate="1" />
+			</Stat>
+			<UIProperty icon="./Data/Resource/Image/Skill/icon/MonsterOffenceUp.png" />
+		</level>
+	</additional>
+	<additional id="70002072">
+		<level>
+			<BasicProperty level="1" buffSubType="1" durationTick="1000" />
+			<MotionProperty abnormalImmuneBreak="5" />
+			<CancelEffectProperty cancelPassiveEffect="1" cancelEffectCodes="70002071" />
+			<UIProperty icon="./Data/Resource/Image/Skill/icon/MonsterOffenceUp.png" iconOnOff="0" />
+		</level>
+	</additional>
+	<additional id="70002081">
+		<level>
+			<BasicProperty level="1" buffSubType="1" keepCondition="99" />
+			<MotionProperty keepEffect="Additional/Defense/Eff_Additional_Shield_Keep_02.xml" abnormalImmuneBreak="5" />
+			<Stat>
+				<v type="ndd" value="2" isRate="1" />
+			</Stat>
+			<UIProperty icon="./Data/Resource/Image/Skill/icon/90000792.png" />
+		</level>
+	</additional>
+	<additional id="70002082">
+		<level>
+			<BasicProperty level="1" buffSubType="1" durationTick="1000" />
+			<MotionProperty abnormalImmuneBreak="5" />
+			<CancelEffectProperty cancelPassiveEffect="1" cancelEffectCodes="70002081" />
+			<UIProperty icon="./Data/Resource/Image/Skill/icon/90000792.png" iconOnOff="0" />
+		</level>
+	</additional>
+	<additional id="70002091">
+		<level>
+			<BasicProperty level="1" buffSubType="1" keepCondition="99" />
+			<MotionProperty abnormalImmuneBreak="5" />
+			<Stat>
+				<v type="asp" value="0.3" isRate="1" />
+			</Stat>
+			<UIProperty icon="./Data/Resource/Image/Skill/icon/90000807.png" />
+		</level>
+	</additional>
+	<additional id="70002092">
+		<level>
+			<BasicProperty level="1" buffSubType="1" durationTick="1000" />
+			<MotionProperty abnormalImmuneBreak="5" />
+			<CancelEffectProperty cancelPassiveEffect="1" cancelEffectCodes="70002091" />
+			<UIProperty icon="./Data/Resource/Image/Skill/icon/90000807.png" iconOnOff="0" />
+		</level>
+	</additional>
+	<additional id="70002101">
+		<level>
+			<BasicProperty level="1" buffSubType="1" keepCondition="99" />
+			<MotionProperty abnormalImmuneBreak="5" />
+			<Stat>
+				<v type="cap" value="130" />
+			</Stat>
+			<UIProperty icon="./Data/Resource/Image/Skill/icon/90000799.png" />
+		</level>
+	</additional>
+	<additional id="70002102">
+		<level>
+			<BasicProperty level="1" buffSubType="1" durationTick="1000" />
+			<MotionProperty abnormalImmuneBreak="5" />
+			<CancelEffectProperty cancelPassiveEffect="1" cancelEffectCodes="70002101" />
+			<UIProperty icon="./Data/Resource/Image/Skill/icon/90000799.png" iconOnOff="0" />
+		</level>
+	</additional>
+	<additional id="70002103">
+		<level>
+			<BasicProperty level="1" buffSubType="1" keepCondition="99" resetCondition="2" maxBuffCount="3" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<MotionProperty keepEffect="Additional/Etc/Eff_Additional_JumpUp_01_Keep.xml" stopEffect="Additional/Etc/Eff_Additional_JumpUp_01_Stop.xml" IgnoreOptimalHideStartEffect="1" abnormalImmuneBreak="5" />
+			<Stat>
+				<v type="jmp" value="2" isRate="1" />
+			</Stat>
+			<UIProperty icon="./Data/Resource/Image/Skill/icon/JumpUp.png" />
+		</level>
+	</additional>
+	<additional id="70002104">
+		<level>
+			<BasicProperty level="1" buffSubType="1" durationTick="1000" intervalTick="1000" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<MotionProperty abnormalImmuneBreak="5" />
+			<CancelEffectProperty cancelPassiveEffect="1" cancelEffectCodes="70002103" />
+		</level>
+	</additional>
+	<additional id="70002105">
+		<level>
+			<BasicProperty level="1" buffSubType="1" keepCondition="99" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<MotionProperty keepEffect="Additional/Etc/Eff_Additional_JumpUp_02_Keep.xml" stopEffect="Additional/Etc/Eff_Additional_JumpUp_02_Stop.xml" IgnoreOptimalHideStartEffect="1" abnormalImmuneBreak="5" />
+			<CancelEffectProperty cancelPassiveEffect="1" cancelEffectCodes="70002103" />
+			<Stat>
+				<v type="jmp" value="6" isRate="1" />
+			</Stat>
+			<UIProperty icon="./Data/Resource/Image/Skill/icon/SuperJumpUp.png" />
+		</level>
+	</additional>
+	<additional id="70002106">
+		<level>
+			<BasicProperty level="1" buffType="2" buffSubType="2" durationTick="20000" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<MotionProperty keepEffect="Additional/Etc/Eff_Additional_Extinction_Keep.xml" stopEffect="Additional/Etc/Eff_Additional_Extinction_Stop.xml" IgnoreOptimalHideStartEffect="1" abnormalImmuneBreak="5" skillUseDisable="62" />
+			<UIProperty icon="./Data/Resource/Image/Skill/icon/shadowDominated_debuff.png" />
+		</level>
+	</additional>
+	<additional id="70002107">
+		<level>
+			<BasicProperty level="1" buffType="2" buffSubType="2" durationTick="1000" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<MotionProperty startEffect="Additional/Etc/Eff_Additional_Extinction_Explosion.xml" abnormalImmuneBreak="5" />
+			<DotDamageProperty type="2" value="999999" element="6" damageByTargetMaxHP="1" isConstDotDamageValue="1" />
+		</level>
+	</additional>
+	<additional id="70002108">
+		<level>
+			<BasicProperty level="1" buffSubType="1" durationTick="1000" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<MotionProperty abnormalImmuneBreak="5" />
+			<CancelEffectProperty cancelPassiveEffect="1" cancelEffectCodes="70002106,70002107" />
+		</level>
+	</additional>
+	<additional id="70002109">
+		<level>
+			<BasicProperty level="1" buffType="2" buffSubType="1" durationTick="999999000" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<MotionProperty keepEffect="Additional/Etc/Eff_Additional_CarrySeed_Keep.xml" IgnoreOptimalHideStartEffect="1" abnormalImmuneBreak="5" skillUseDisable="62" />
+			<Stat>
+				<v type="msp" value="-0.5" isRate="1" />
+				<v type="rmsp" value="-0.7" isRate="1" />
+			</Stat>
+			<UIProperty icon="./Data/Resource/Image/Skill/icon/CarrySeed.png" isHideCooltime="1" iconBalloonOnOff="1" />
+		</level>
+		<level>
+			<BasicProperty level="2" buffType="2" buffSubType="1" durationTick="999999000" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<MotionProperty keepEffect="Additional/Etc/Eff_Additional_CarrySeed_Keep.xml" IgnoreOptimalHideStartEffect="1" abnormalImmuneBreak="5" skillUseDisable="62" />
+			<Stat>
+				<v type="msp" value="-0.5" isRate="1" />
+				<v type="rmsp" value="-0.7" isRate="1" />
+			</Stat>
+			<UIProperty icon="./Data/Resource/Image/Skill/icon/CarrySeed.png" isHideCooltime="1" iconBalloonOnOff="1" />
+		</level>
+	</additional>
+	<additional id="70002110">
+		<level>
+			<BasicProperty level="1" buffSubType="1" durationTick="1000" intervalTick="1000" />
+			<MotionProperty abnormalImmuneBreak="5" />
+			<CancelEffectProperty cancelPassiveEffect="1" cancelEffectCodes="70002109" />
+		</level>
+	</additional>
+	<additional id="70002111">
+		<level>
+			<beginCondition>
+				<owner hasBuffID="70002109" hasBuffLevel="1" hasBuffOwner="0" hasBuffCount="0" hasBuffCountCompare="Equals" />
+			</beginCondition>
+			<BasicProperty level="1" buffType="2" buffSubType="2" durationTick="1000" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<MotionProperty abnormalImmuneBreak="5" />
+			<CancelEffectProperty cancelPassiveEffect="1" cancelEffectCodes="70002109" />
+			<DotDamageProperty type="1" />
+			<splashSkill level="1" skillID="42030003" immediateActive="1" />
+		</level>
+	</additional>
+	<additional id="70002112">
+		<level>
+			<BasicProperty level="1" buffSubType="1" durationTick="1000" intervalTick="1000" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<MotionProperty abnormalImmuneBreak="5" />
+			<CancelEffectProperty cancelPassiveEffect="1" cancelEffectCodes="70002105" />
+		</level>
+	</additional>
+	<additional id="70002121">
+		<level>
+			<beginCondition allowDeadState="1" />
+			<BasicProperty level="1" buffType="2" intervalTick="1000" keepCondition="99" resetCondition="1" dotCondition="1" deadKeepEffect="1" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<UIProperty icon="./Data/Resource/Image/Skill/icon/CurseOfYuperia.png" isHideCooltime="1" />
+			<conditionSkill level="1" skillID="70002182" skillTarget="1" activeByIntervalTick="1" />
+		</level>
+	</additional>
+	<additional id="70002122">
+		<level>
+			<BasicProperty level="1" buffType="2" durationTick="99999000" intervalTick="2500" resetCondition="2" maxBuffCount="5" dotCondition="1" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<MotionProperty abnormalImmuneBreak="5" />
+			<DotDamageProperty type="2" damageByTargetMaxHP="0.05" />
+			<UIProperty icon="./Data/Resource/Image/Skill/icon/Bleed.png" isHideCooltime="1" iconBalloonOnOff="1" />
+		</level>
+	</additional>
+	<additional id="70002123">
+		<level>
+			<BasicProperty level="1" durationTick="1000" resetCondition="1" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<MotionProperty abnormalImmuneBreak="5" />
+			<CancelEffectProperty cancelPassiveEffect="1" cancelEffectCodes="70002122" />
+			<UIProperty icon="./Data/Resource/Image/Skill/icon/CurseOfYuperia.png" iconOnOff="0" />
+		</level>
+	</additional>
+	<additional id="70002131">
+		<level>
+			<beginCondition allowDeadState="1" />
+			<BasicProperty level="1" buffType="2" intervalTick="1000" keepCondition="99" resetCondition="1" deadKeepEffect="1" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<UIProperty icon="./Data/Resource/Image/Skill/icon/CurseOfRenduebian.png" />
+			<conditionSkill level="1" skillID="70002183" skillTarget="1" activeByIntervalTick="1" />
+		</level>
+	</additional>
+	<additional id="70002141">
+		<level>
+			<beginCondition allowDeadState="1" />
+			<BasicProperty level="1" buffType="2" intervalTick="1000" keepCondition="99" resetCondition="1" deadKeepEffect="1" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<UIProperty icon="./Data/Resource/Image/Skill/icon/CurseOfIshura.png" />
+			<conditionSkill level="1" skillID="70002184" skillTarget="1" activeByIntervalTick="1" />
+		</level>
+	</additional>
+	<additional id="70002151">
+		<level>
+			<beginCondition allowDeadState="1" />
+			<BasicProperty level="1" buffType="2" durationTick="999999000" deadKeepEffect="1" logoutClearEffect="1" leaveFieldClearEffect="1" disableRevivalHere="1" />
+			<MotionProperty abnormalImmuneBreak="1" />
+			<UIProperty icon="./Data/Resource/Image/skill/icon/ResurrectionProhibition.png" isHideCooltime="1" />
+		</level>
+	</additional>
+	<additional id="70002161">
+		<level>
+			<beginCondition allowDeadState="1" />
+			<BasicProperty level="1" buffType="2" durationTick="1000" deadKeepEffect="1" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<MotionProperty abnormalImmuneBreak="1" />
+			<CancelEffectProperty cancelPassiveEffect="1" cancelEffectCodes="70002151" />
+			<UIProperty icon="./Data/Resource/Image/skill/icon/ResurrectionProhibition.png" iconOnOff="0" />
+		</level>
+	</additional>
+	<additional id="70002171">
+		<level>
+			<BasicProperty level="1" buffType="2" durationTick="15000" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<MotionProperty abnormalImmuneBreak="1" />
+		</level>
+	</additional>
+	<additional id="70002181">
+		<level>
+			<BasicProperty level="1" buffType="2" durationTick="15000" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<MotionProperty abnormalImmuneBreak="1" />
+		</level>
+	</additional>
+	<additional id="70002182">
+		<level>
+			<beginCondition allowDeadState="1" />
+			<BasicProperty level="1" buffType="2" durationTick="1000" intervalTick="1000" deadKeepEffect="1" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<MotionProperty abnormalImmuneBreak="5" />
+			<DotDamageProperty type="2" damageByTargetMaxHP="0.1" />
+			<UIProperty icon="./Data/Resource/Image/Skill/icon/CurseOfYuperia.png" iconOnOff="0" isHideCooltime="1" />
+		</level>
+	</additional>
+	<additional id="70002183">
+		<level>
+			<beginCondition allowDeadState="1" />
+			<BasicProperty level="1" buffType="2" durationTick="2000" deadKeepEffect="1" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<MotionProperty abnormalImmuneBreak="5" />
+			<FinalStat>
+				<v type="atp" value="-0.99" isRate="1" />
+			</FinalStat>
+			<UIProperty icon="./Data/Resource/Image/Skill/icon/CurseOfRenduebian.png" iconOnOff="0" />
+		</level>
+	</additional>
+	<additional id="70002184">
+		<level>
+			<beginCondition allowDeadState="1" />
+			<BasicProperty level="1" buffType="2" durationTick="2000" deadKeepEffect="1" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<MotionProperty abnormalImmuneBreak="5" />
+			<FinalStat>
+				<v type="hp" value="-0.9" isRate="1" />
+				<v type="msp" value="-0.9" isRate="1" />
+			</FinalStat>
+			<UIProperty icon="./Data/Resource/Image/Skill/icon/CurseOfIshura.png" iconOnOff="0" />
+		</level>
+	</additional>
+	<additional id="70002185">
+		<level>
+			<BasicProperty level="2" buffType="2" durationTick="3000" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<MotionProperty abnormalImmuneBreak="5" />
+			<CancelEffectProperty cancelPassiveEffect="1" cancelEffectCodes="70002181" />
+			<ImmuneEffectProperty immuneEffectCodes="70002181" />
+		</level>
+	</additional>
+	<additional id="70002190">
+		<level>
+			<beginCondition allowDeadState="1" />
+			<BasicProperty level="1" buffType="2" durationTick="3299" intervalTick="1000" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<UIProperty icon="./Data/Resource/Image/Skill/icon/CurseOfYuperia.png" isHideCooltime="1" />
+			<conditionSkill level="1" skillID="70002182" skillTarget="1" activeByIntervalTick="1" />
+		</level>
+	</additional>
+	<additional id="70002191">
+		<level>
+			<beginCondition allowDeadState="1" />
+			<BasicProperty level="1" buffType="2" durationTick="3299" intervalTick="1000" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<UIProperty icon="./Data/Resource/Image/Skill/icon/CurseOfRenduebian.png" isHideCooltime="1" />
+			<conditionSkill level="1" skillID="70002183" skillTarget="1" activeByIntervalTick="1" />
+		</level>
+	</additional>
+	<additional id="70002192">
+		<level>
+			<beginCondition allowDeadState="1" />
+			<BasicProperty level="1" buffType="2" durationTick="3299" intervalTick="1000" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<UIProperty icon="./Data/Resource/Image/Skill/icon/CurseOfIshura.png" isHideCooltime="1" />
+			<conditionSkill level="1" skillID="70002184" skillTarget="1" activeByIntervalTick="1" />
+		</level>
+	</additional>
+	<additional id="70002201">
+		<level>
+			<BasicProperty level="1" durationTick="99999000" attackPossibleSkillIDs="9901027,99901028" />
+			<MotionProperty keepEffect="Additional/Defense/Eff_Additional_Shield_Keep_03.xml" abnormalImmuneBreak="5" />
+			<UIProperty icon="./Data/Resource/Image/Skill/icon/MonsterInvincible.png" isHideCooltime="1" />
+		</level>
+	</additional>
+	<additional id="70002211">
+		<level>
+			<BasicProperty level="1" />
+			<MotionProperty abnormalImmuneBreak="5" />
+			<CancelEffectProperty cancelPassiveEffect="1" cancelEffectCodes="70002201" />
+		</level>
+	</additional>
+	<additional id="70002221">
+		<level>
+			<BasicProperty level="1" keepCondition="99" />
+			<MotionProperty keepEffect="Additional/Etc/Eff_Additional_LegionBuff_Keep.xml" abnormalImmuneBreak="5" />
+			<UIProperty icon="./Data/Resource/Image/Skill/icon/Boss_buff_shield.png" />
+		</level>
+	</additional>
+	<additional id="70002231">
+		<level>
+			<BasicProperty level="1" buffType="2" durationTick="999999000" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<MotionProperty keepEffect="Additional/Etc/Eff_Additional_LegionBuff_Keep.xml" IgnoreOptimalHideStartEffect="1" clearCondition="7,12,13" abnormalImmuneBreak="5" />
+			<FinalStat>
+				<v type="msp" value="-0.5" isRate="1" />
+			</FinalStat>
+			<UIProperty icon="./Data/Resource/Image/Skill/icon/41000015.png" isHideCooltime="1" iconBalloonOnOff="1" />
+		</level>
+	</additional>
+	<additional id="70002241">
+		<level>
+			<BasicProperty level="1" buffType="2" durationTick="999999000" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<MotionProperty keepEffect="Additional/Etc/Eff_Additional_LegionBuff_Keep.xml" IgnoreOptimalHideStartEffect="1" clearCondition="7,12,13" abnormalImmuneBreak="5" />
+			<FinalStat>
+				<v type="msp" value="-0.5" isRate="1" />
+			</FinalStat>
+			<UIProperty icon="./Data/Resource/Image/Skill/icon/41000015.png" isHideCooltime="1" iconBalloonOnOff="1" />
+		</level>
+	</additional>
+	<additional id="70002251">
+		<level>
+			<BasicProperty level="1" buffType="2" durationTick="999999000" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<MotionProperty keepEffect="Additional/Etc/Eff_Additional_LegionBuff_Keep.xml" IgnoreOptimalHideStartEffect="1" clearCondition="7,12,13" abnormalImmuneBreak="5" />
+			<FinalStat>
+				<v type="msp" value="-0.5" isRate="1" />
+			</FinalStat>
+			<UIProperty icon="./Data/Resource/Image/Skill/icon/41000015.png" isHideCooltime="1" iconBalloonOnOff="1" />
+		</level>
+	</additional>
+	<additional id="70002261">
+		<level>
+			<BasicProperty level="1" buffType="2" durationTick="999999000" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<MotionProperty keepEffect="Additional/Etc/Eff_Additional_LegionBuff_Keep.xml" IgnoreOptimalHideStartEffect="1" clearCondition="7,12,13" abnormalImmuneBreak="5" />
+			<FinalStat>
+				<v type="msp" value="-0.5" isRate="1" />
+			</FinalStat>
+			<UIProperty icon="./Data/Resource/Image/Skill/icon/41000015.png" isHideCooltime="1" iconBalloonOnOff="1" />
+		</level>
+	</additional>
+	<additional id="70002271">
+		<level>
+			<beginCondition>
+				<owner hasBuffID="70002401" hasBuffLevel="1" hasBuffOwner="0" hasBuffCount="1" hasBuffCountCompare="Equals" />
+			</beginCondition>
+			<BasicProperty level="1" buffType="2" durationTick="1000" intervalTick="1000" resetCondition="2" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<MotionProperty IgnoreOptimalHideStartEffect="1" abnormalImmuneBreak="5" />
+			<DotDamageProperty type="2" damageByTargetMaxHP="0.03" />
+		</level>
+	</additional>
+	<additional id="70002272">
+		<level>
+			<beginCondition>
+				<owner hasBuffID="70002401" hasBuffLevel="1" hasBuffOwner="0" hasBuffCount="1" hasBuffCountCompare="Equals" />
+			</beginCondition>
+			<BasicProperty level="1" buffType="2" durationTick="1000" intervalTick="1000" resetCondition="2" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<MotionProperty IgnoreOptimalHideStartEffect="1" abnormalImmuneBreak="5" />
+			<DotDamageProperty type="2" damageByTargetMaxHP="0.045" />
+		</level>
+	</additional>
+	<additional id="70002281">
+		<level>
+			<beginCondition>
+				<owner hasBuffID="70002201" hasBuffLevel="1" hasBuffOwner="0" hasBuffCount="1" hasBuffCountCompare="Equals" />
+			</beginCondition>
+			<BasicProperty level="1" buffType="2" durationTick="1000" intervalTick="1000" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<MotionProperty IgnoreOptimalHideStartEffect="1" abnormalImmuneBreak="5" />
+			<DotDamageProperty type="2" damageByTargetMaxHP="0.25" />
+		</level>
+	</additional>
+	<additional id="70002291">
+		<level>
+			<beginCondition>
+				<owner hasBuffID="70002201" hasBuffLevel="1" hasBuffOwner="0" hasBuffCount="1" hasBuffCountCompare="Equals" />
+			</beginCondition>
+			<BasicProperty level="1" buffType="2" durationTick="1000" intervalTick="1000" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<MotionProperty IgnoreOptimalHideStartEffect="1" abnormalImmuneBreak="5" />
+			<DotDamageProperty type="2" damageByTargetMaxHP="0.25" />
+		</level>
+	</additional>
+	<additional id="70002301">
+		<level>
+			<beginCondition>
+				<owner hasBuffID="70002201" hasBuffLevel="1" hasBuffOwner="0" hasBuffCount="1" hasBuffCountCompare="Equals" />
+			</beginCondition>
+			<BasicProperty level="1" buffType="2" durationTick="1000" intervalTick="1000" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<MotionProperty IgnoreOptimalHideStartEffect="1" abnormalImmuneBreak="5" />
+			<DotDamageProperty type="2" damageByTargetMaxHP="0.25" />
+		</level>
+	</additional>
+	<additional id="70002311">
+		<level>
+			<BasicProperty level="1" buffType="2" durationTick="999999000" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<MotionProperty keepEffect="Additional/Etc/Eff_Additional_LegionBuff_Keep.xml" IgnoreOptimalHideStartEffect="1" clearCondition="7,12,13" abnormalImmuneBreak="5" />
+			<FinalStat>
+				<v type="msp" value="-0.5" isRate="1" />
+			</FinalStat>
+			<UIProperty icon="./Data/Resource/Image/Skill/icon/41000015.png" isHideCooltime="1" iconBalloonOnOff="1" />
+		</level>
+	</additional>
+	<additional id="70002321">
+		<level>
+			<BasicProperty level="1" buffType="2" durationTick="999999000" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<MotionProperty keepEffect="Additional/Etc/Eff_Additional_LegionBuff_Keep.xml" IgnoreOptimalHideStartEffect="1" clearCondition="7,12,13" abnormalImmuneBreak="5" />
+			<FinalStat>
+				<v type="msp" value="-0.5" isRate="1" />
+			</FinalStat>
+			<UIProperty icon="./Data/Resource/Image/Skill/icon/41000015.png" isHideCooltime="1" iconBalloonOnOff="1" />
+		</level>
+	</additional>
+	<additional id="70002331">
+		<level>
+			<BasicProperty level="1" buffType="2" durationTick="999999000" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<MotionProperty keepEffect="Additional/Etc/Eff_Additional_LegionBuff_Keep.xml" IgnoreOptimalHideStartEffect="1" clearCondition="7,12,13" abnormalImmuneBreak="5" />
+			<FinalStat>
+				<v type="msp" value="-0.5" isRate="1" />
+			</FinalStat>
+			<UIProperty icon="./Data/Resource/Image/Skill/icon/41000015.png" isHideCooltime="1" iconBalloonOnOff="1" />
+		</level>
+	</additional>
+	<additional id="70002341">
+		<level>
+			<BasicProperty level="1" buffType="2" durationTick="999999000" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<MotionProperty keepEffect="Additional/Etc/Eff_Additional_LegionBuff_Keep.xml" IgnoreOptimalHideStartEffect="1" clearCondition="7,12,13" abnormalImmuneBreak="5" />
+			<FinalStat>
+				<v type="msp" value="-0.5" isRate="1" />
+			</FinalStat>
+			<UIProperty icon="./Data/Resource/Image/Skill/icon/41000015.png" isHideCooltime="1" iconBalloonOnOff="1" />
+		</level>
+	</additional>
+	<additional id="70002351">
+		<level>
+			<beginCondition>
+				<owner hasBuffID="70002201" hasBuffLevel="1" hasBuffOwner="0" hasBuffCount="1" hasBuffCountCompare="Equals" />
+			</beginCondition>
+			<BasicProperty level="1" buffType="2" durationTick="1000" intervalTick="1000" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<MotionProperty IgnoreOptimalHideStartEffect="1" abnormalImmuneBreak="5" />
+			<DotDamageProperty type="2" damageByTargetMaxHP="0.05" />
+		</level>
+	</additional>
+	<additional id="70002361">
+		<level>
+			<BasicProperty level="1" keepCondition="99" attackPossibleSkillIDs="99901025,99901026" />
+			<MotionProperty keepEffect="Additional/Defense/Eff_Additional_Shield_Keep_04.xml" abnormalImmuneBreak="5" />
+			<UIProperty icon="./Data/Resource/Image/Skill/icon/MonsterInvincible.png" />
+		</level>
+	</additional>
+	<additional id="70002371">
+		<level>
+			<BasicProperty level="1" buffType="2" durationTick="1000" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<MotionProperty abnormalImmuneBreak="5" />
+			<splashSkill level="1" skillID="70003081" immediateActive="1" />
+		</level>
+	</additional>
+	<additional id="70002381">
+		<level>
+			<BasicProperty level="1" group="22" buffSubType="5" durationTick="100" intervalTick="100" />
+			<MotionProperty startEffect="Additional/Hp/Eff_Additional_PotionHpRecovery_Cast.xml" />
+			<RecoveryProperty hpValue="1200" />
+		</level>
+	</additional>
+	<additional id="70002391">
+		<level>
+			<BasicProperty level="1" durationTick="99999000" attackPossibleSkillIDs="70003091,70003111,70003121,70003122,70003124" />
+			<MotionProperty keepEffect="Additional/Defense/Eff_Additional_Shield_Keep_05.xml" abnormalImmuneBreak="5" />
+			<UIProperty icon="./Data/Resource/Image/Skill/icon/MonsterInvincible.png" isHideCooltime="1" />
+		</level>
+	</additional>
+	<additional id="70002401">
+		<level>
+			<BasicProperty level="1" keepCondition="99" attackPossibleSkillIDs="70003091,70003111,70003121,70003122,70003124" attackPossibleDotEffectIDs="70002271,70002272" />
+			<MotionProperty keepEffect="Additional/Defense/Eff_Additional_Shield_Keep_06.xml" abnormalImmuneBreak="5" />
+			<UIProperty icon="./Data/Resource/Image/Skill/icon/MonsterInvincible.png" />
+		</level>
+	</additional>
+	<additional id="70002501">
+		<level stringParam="3">
+			<beginCondition>
+				<owner hasBuffID="70002504" hasBuffLevel="1" hasBuffOwner="0" hasBuffCount="3,5" hasBuffCountCompare="GreaterEquals,LessEquals" />
+			</beginCondition>
+			<BasicProperty level="1" durationTick="999999000" resetCondition="2" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<CancelEffectProperty cancelPassiveEffect="1" cancelEffectCodes="70002502,70002503,70002701" />
+			<UIProperty icon="./Data/Resource/Image/Skill/icon/110000006.png" isHideCooltime="1" />
+		</level>
+	</additional>
+	<additional id="70002502">
+		<level stringParam="5">
+			<beginCondition>
+				<owner hasBuffID="70002504" hasBuffLevel="1" hasBuffOwner="0" hasBuffCount="6,8" hasBuffCountCompare="GreaterEquals,LessEquals" />
+			</beginCondition>
+			<BasicProperty level="1" durationTick="999999000" resetCondition="2" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<CancelEffectProperty cancelPassiveEffect="1" cancelEffectCodes="70002501,70002503,70002701" />
+			<UIProperty icon="./Data/Resource/Image/Skill/icon/110000006.png" isHideCooltime="1" />
+		</level>
+	</additional>
+	<additional id="70002503">
+		<level stringParam="7">
+			<beginCondition>
+				<owner hasBuffID="70002504" hasBuffLevel="1" hasBuffOwner="0" hasBuffCount="9" hasBuffCountCompare="Equals" />
+			</beginCondition>
+			<BasicProperty level="1" durationTick="999999000" resetCondition="2" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<CancelEffectProperty cancelPassiveEffect="1" cancelEffectCodes="70002501,70002502,70002701" />
+			<UIProperty icon="./Data/Resource/Image/Skill/icon/110000006.png" isHideCooltime="1" />
+		</level>
+	</additional>
+	<additional id="70002504">
+		<level>
+			<BasicProperty level="1" buffType="2" durationTick="999999000" resetCondition="2" maxBuffCount="9" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<UIProperty icon="./Data/Resource/Image/Skill/icon/110000006.png" isHideCooltime="1" />
+		</level>
+	</additional>
+	<additional id="70002511">
+		<level stringParam="20">
+			<BasicProperty level="1" durationTick="999999000" resetCondition="2" maxBuffCount="20" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<UIProperty icon="./Data/Resource/Image/Skill/icon/110000009.png" isHideCooltime="1" />
+			<conditionSkill level="1" skillID="70002512" skillTarget="1">
+				<beginCondition>
+					<owner hasBuffID="70002511" hasBuffLevel="1" hasBuffOwner="0" hasBuffCount="19" hasBuffCountCompare="Equals" eventCondition="10" />
+				</beginCondition>
+			</conditionSkill>
+		</level>
+	</additional>
+	<additional id="70002512">
+		<level>
+			<BasicProperty level="1" buffType="2" durationTick="999999000" resetCondition="2" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<CancelEffectProperty cancelPassiveEffect="1" cancelEffectCodes="70002501,70002502,70002503,70002702" />
+			<UIProperty icon="./Data/Resource/Image/Skill/icon/110000009.png" isHideCooltime="1" />
+		</level>
+	</additional>
+	<additional id="70002521">
+		<level stringParam="3">
+			<beginCondition>
+				<owner hasBuffID="70002524" hasBuffLevel="1" hasBuffOwner="0" hasBuffCount="3,5" hasBuffCountCompare="GreaterEquals,LessEquals" />
+			</beginCondition>
+			<BasicProperty level="1" durationTick="999999000" resetCondition="2" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<CancelEffectProperty cancelPassiveEffect="1" cancelEffectCodes="70002522,70002523,70002702" />
+			<UIProperty icon="./Data/Resource/Image/Skill/icon/110000006.png" isHideCooltime="1" />
+		</level>
+	</additional>
+	<additional id="70002522">
+		<level stringParam="5">
+			<beginCondition>
+				<owner hasBuffID="70002524" hasBuffLevel="1" hasBuffOwner="0" hasBuffCount="6,8" hasBuffCountCompare="GreaterEquals,LessEquals" />
+			</beginCondition>
+			<BasicProperty level="1" durationTick="999999000" resetCondition="2" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<CancelEffectProperty cancelPassiveEffect="1" cancelEffectCodes="70002521,70002523,70002702" />
+			<UIProperty icon="./Data/Resource/Image/Skill/icon/110000006.png" isHideCooltime="1" />
+		</level>
+	</additional>
+	<additional id="70002523">
+		<level stringParam="7">
+			<beginCondition>
+				<owner hasBuffID="70002524" hasBuffLevel="1" hasBuffOwner="0" hasBuffCount="9" hasBuffCountCompare="Equals" />
+			</beginCondition>
+			<BasicProperty level="1" durationTick="999999000" resetCondition="2" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<CancelEffectProperty cancelPassiveEffect="1" cancelEffectCodes="70002521,70002522,70002702" />
+			<UIProperty icon="./Data/Resource/Image/Skill/icon/110000006.png" isHideCooltime="1" />
+		</level>
+	</additional>
+	<additional id="70002524">
+		<level>
+			<BasicProperty level="1" buffType="2" durationTick="999999000" resetCondition="2" maxBuffCount="9" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<UIProperty icon="./Data/Resource/Image/Skill/icon/110000006.png" isHideCooltime="1" />
+		</level>
+	</additional>
+	<additional id="70002531">
+		<level stringParam="20">
+			<BasicProperty level="1" durationTick="999999000" resetCondition="2" maxBuffCount="20" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<UIProperty icon="./Data/Resource/Image/Skill/icon/110000009.png" isHideCooltime="1" />
+			<conditionSkill level="1" skillID="70002532" skillTarget="1">
+				<beginCondition>
+					<owner hasBuffID="70002531" hasBuffLevel="1" hasBuffOwner="0" hasBuffCount="19" hasBuffCountCompare="Equals" eventCondition="10" />
+				</beginCondition>
+			</conditionSkill>
+		</level>
+	</additional>
+	<additional id="70002532">
+		<level>
+			<BasicProperty level="1" buffType="2" durationTick="999999000" resetCondition="2" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<CancelEffectProperty cancelPassiveEffect="1" cancelEffectCodes="70002501,70002502,70002503,70002702" />
+			<UIProperty icon="./Data/Resource/Image/Skill/icon/110000009.png" isHideCooltime="1" />
+		</level>
+	</additional>
+	<additional id="70002541">
+		<level>
+			<BasicProperty level="1" durationTick="999999000" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<MotionProperty startEffect="CH/Common/Eff_ChangeCh.xml" abnormalImmuneBreak="5" scale="1.5" />
+			<Stat>
+				<v type="hp" value="3" isRate="1" />
+			</Stat>
+			<FinalStat>
+				<v type="msp" value="0.5" isRate="1" />
+				<v type="jmp" value="0.5" isRate="1" />
+			</FinalStat>
+			<SpecialAbility>
+				<v type="offensive_physicaldamage" value="2000" />
+				<v type="offensive_magicaldamage" value="2000" />
+				<v type="defensive_physicaldamage" value="2000" />
+				<v type="defensive_magicaldamage" value="2000" />
+			</SpecialAbility>
+			<UIProperty icon="./Data/Resource/Image/Skill/icon/90001002.png" />
+		</level>
+	</additional>
+	<additional id="70002551">
+		<level>
+			<BasicProperty level="1" buffType="2" />
+			<CancelEffectProperty cancelPassiveEffect="1" cancelEffectCodes="70002541" />
+		</level>
+	</additional>
+	<additional id="70002561">
+		<level>
+			<BasicProperty level="1" buffType="2" />
+			<CancelEffectProperty cancelPassiveEffect="1" cancelEffectCodes="70002501,70002502,70002503,70002504" />
+		</level>
+	</additional>
+	<additional id="70002571">
+		<level>
+			<BasicProperty level="1" buffType="2" />
+			<CancelEffectProperty cancelPassiveEffect="1" cancelEffectCodes="70002521,70002522,70002523,70002524" />
+		</level>
+	</additional>
+	<additional id="70002581">
+		<level stringParam="50">
+			<BasicProperty level="1" buffType="2" durationTick="30000" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<MotionProperty keepEffect="Additional/Etc/Eff_Additional_SpDown_Keep.xml" stopEffect="Additional/Etc/Eff_Additional_SpDown_Stop.xml" />
+			<FinalStat>
+				<v type="msp" value="-0.5" isRate="1" />
+			</FinalStat>
+			<UIProperty icon="./Data/Resource/Image/Skill/icon/41000004.PNG" />
+		</level>
+	</additional>
+	<additional id="70002591">
+		<level stringParam="50">
+			<BasicProperty level="1" buffType="2" durationTick="30000" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<MotionProperty keepEffect="Additional/Etc/Eff_Additional_Extinction_Keep.xml" stopEffect="Additional/Etc/Eff_Additional_Extinction_Stop.xml" />
+			<FinalStat>
+				<v type="pap" value="-0.5" isRate="1" />
+				<v type="map" value="-0.5" isRate="1" />
+			</FinalStat>
+			<UIProperty icon="./Data/Resource/Image/Skill/icon/destroyWeapon_Penalty.png" />
+		</level>
+	</additional>
+	<additional id="70002601">
+		<level stringParam="50">
+			<BasicProperty level="1" buffType="2" durationTick="30000" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<MotionProperty keepEffect="Additional/Defense/Eff_Additional_DefenseDown_Keep.xml" stopEffect="Additional/Defense/Eff_Additional_DefenseDown_Stop.xml" />
+			<FinalStat>
+				<v type="hp" value="-0.5" isRate="1" />
+			</FinalStat>
+			<UIProperty icon="./Data/Resource/Image/Skill/icon/DefenseDown.png" />
+		</level>
+	</additional>
+	<additional id="70002701">
+		<level>
+			<beginCondition>
+				<owner hasBuffID="70002504" hasBuffLevel="1" hasBuffOwner="0" hasBuffCount="2" hasBuffCountCompare="LessEquals" />
+			</beginCondition>
+			<BasicProperty level="1" durationTick="999999000" resetCondition="2" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<CancelEffectProperty cancelPassiveEffect="1" cancelEffectCodes="70002501,70002502,70002503" />
+		</level>
+	</additional>
+	<additional id="70002702">
+		<level>
+			<beginCondition>
+				<owner hasBuffID="70002524" hasBuffLevel="1" hasBuffOwner="0" hasBuffCount="2" hasBuffCountCompare="LessEquals" />
+			</beginCondition>
+			<BasicProperty level="1" durationTick="999999000" resetCondition="2" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<CancelEffectProperty cancelPassiveEffect="1" cancelEffectCodes="70002521,70002522,70002523" />
+		</level>
+	</additional>
+	<additional id="70003001">
+		<level>
+			<beginCondition allowDeadState="1" />
+			<BasicProperty level="1" keepCondition="99" deadKeepEffect="1" logoutClearEffect="1" leaveFieldClearEffect="1" clearEffectFromPVPZone="1" doNotClearEffectFromEnterPVPZone="1" />
+		</level>
+	</additional>
+	<additional id="70003002">
+		<level>
+			<beginCondition allowDeadState="1" />
+			<BasicProperty level="1" keepCondition="99" deadKeepEffect="1" logoutClearEffect="1" leaveFieldClearEffect="1" clearEffectFromPVPZone="1" doNotClearEffectFromEnterPVPZone="1" />
+		</level>
+	</additional>
+	<additional id="70003003">
+		<level>
+			<beginCondition allowDeadState="1" />
+			<BasicProperty level="1" keepCondition="99" deadKeepEffect="1" logoutClearEffect="1" leaveFieldClearEffect="1" clearEffectFromPVPZone="1" doNotClearEffectFromEnterPVPZone="1" />
+		</level>
+	</additional>
+	<additional id="70003004">
+		<level>
+			<beginCondition allowDeadState="1" />
+			<BasicProperty level="1" keepCondition="99" deadKeepEffect="1" logoutClearEffect="1" leaveFieldClearEffect="1" clearEffectFromPVPZone="1" doNotClearEffectFromEnterPVPZone="1" />
+		</level>
+	</additional>
+	<additional id="70004001">
+		<level>
+			<beginCondition allowDeadState="1" />
+			<BasicProperty level="1" keepCondition="99" deadKeepEffect="1" logoutClearEffect="1" leaveFieldClearEffect="1" clearEffectFromPVPZone="1" doNotClearEffectFromEnterPVPZone="1" />
+		</level>
+	</additional>
+	<additional id="70004002">
+		<level>
+			<beginCondition allowDeadState="1" />
+			<BasicProperty level="1" keepCondition="99" deadKeepEffect="1" logoutClearEffect="1" leaveFieldClearEffect="1" clearEffectFromPVPZone="1" doNotClearEffectFromEnterPVPZone="1" />
+		</level>
+	</additional>
+	<additional id="70004003">
+		<level>
+			<beginCondition allowDeadState="1" />
+			<BasicProperty level="1" keepCondition="99" deadKeepEffect="1" logoutClearEffect="1" leaveFieldClearEffect="1" clearEffectFromPVPZone="1" doNotClearEffectFromEnterPVPZone="1" />
+		</level>
+	</additional>
+</ms2>

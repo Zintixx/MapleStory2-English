@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ms2>
+	<additional id="42030101">
+		<level>
+			<BasicProperty level="1" buffType="2" durationTick="5000" />
+			<MotionProperty keepEffect="Additional/Slow/Eff_Additional_Slow_Keep.xml" stopEffect="Additional/Slow/Eff_Additional_Slow_Stop.xml" abnormalImmuneBreak="1" />
+			<Stat>
+				<v type="msp" value="-0.7" isRate="1" />
+				<v type="rmsp" value="-0.7" isRate="1" />
+			</Stat>
+			<UIProperty icon="./Data/Resource/Image/skill/icon/71000063.png" />
+		</level>
+	</additional>
+	<additional id="42030111">
+		<level>
+			<BasicProperty level="1" buffType="2" durationTick="5000" />
+			<MotionProperty keepEffect="Additional/Slow/Eff_Additional_Slow_Keep.xml" stopEffect="Additional/Slow/Eff_Additional_Slow_Stop.xml" abnormalImmuneBreak="1" />
+			<Stat>
+				<v type="msp" value="-0.5" isRate="1" />
+				<v type="rmsp" value="-0.5" isRate="1" />
+			</Stat>
+			<UIProperty icon="./Data/Resource/Image/skill/icon/71000063.png" />
+		</level>
+	</additional>
+	<additional id="42030121">
+		<level>
+			<BasicProperty level="1" buffType="2" durationTick="5000" />
+			<MotionProperty keepEffect="Additional/Confusion/Eff_Additional_Confusion_Keep.xml" stopEffect="Additional/Confusion/Eff_Additional_Confusion_Stop.xml" confusionMove="1" abnormalImmuneBreak="1" />
+			<UIProperty icon="./Data/Resource/Image/skill/icon/MonsterInvincible.png" />
+		</level>
+	</additional>
+	<additional id="42030251">
+		<level>
+			<beginCondition>
+				<owner hasBuffID="42030252" hasBuffLevel="1" hasBuffOwner="0" hasBuffCount="1" hasBuffCountCompare="Equals" />
+			</beginCondition>
+			<BasicProperty level="1" buffType="2" durationTick="1000" intervalTick="1000" dotCondition="1" />
+			<MotionProperty abnormalImmuneBreak="1" />
+			<DotDamageProperty type="1" damageByTargetMaxHP="1" />
+		</level>
+	</additional>
+	<additional id="42030252">
+		<level>
+			<BasicProperty level="1" keepCondition="99" />
+			<MotionProperty abnormalImmuneBreak="1" />
+		</level>
+	</additional>
+	<additional id="42030261">
+		<level>
+			<beginCondition>
+				<owner hasBuffID="42030262" hasBuffLevel="1" hasBuffOwner="0" hasBuffCount="1" hasBuffCountCompare="Equals" />
+			</beginCondition>
+			<BasicProperty level="1" buffType="2" durationTick="10000" />
+			<MotionProperty keepEffect="NPC/Skill/Dummy/Eff_Dummy_SuicideBomb_Keep_Kritias_Big.xml" stopEffect="NPC/Skill/Dummy/Eff_Dummy_SuicideBomb_Stop_Kritias_Big.xml" stun="1" abnormalImmuneBreak="99" />
+			<Stat>
+				<v type="par" value="-0.9" isRate="1" />
+				<v type="mar" value="-0.9" isRate="1" />
+			</Stat>
+			<UIProperty icon="./Data/Resource/Image/skill/icon/59000001.png" />
+		</level>
+	</additional>
+	<additional id="42030262">
+		<level>
+			<BasicProperty level="1" keepCondition="99" />
+			<MotionProperty abnormalImmuneBreak="1" />
+		</level>
+	</additional>
+	<additional id="42030263">
+		<level>
+			<BasicProperty level="1" buffType="2" durationTick="10000" intervalTick="1000" dotCondition="1" />
+			<MotionProperty keepEffect="NPC/Skill/Dummy/Eff_Dummy_SuicideBomb_Keep_Kritias.xml" stopEffect="NPC/Skill/Dummy/Eff_Dummy_SuicideBomb_Keep_Kritias.xml" abnormalImmuneBreak="1" />
+			<DotDamageProperty type="2" value="150" element="3" />
+			<UIProperty icon="./Data/Resource/Image/skill/icon/ElectronicShork.png" />
+		</level>
+	</additional>
+</ms2>

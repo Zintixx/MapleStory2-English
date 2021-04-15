@@ -4,16 +4,15 @@
 		<basic>
 			<ui attackType="1" />
 			<kinds rangeType="1" element="7" />
+			<push up="75" />
 		</basic>
 		<level value="1">
-			<push up="75" />
-			<detectProperty rangeType="box" distance="200" rangeOffset="0.000000,0.000000,50.000000" height="200" width="225" />
-			<motion>
-				<motionProperty sequenceName="Attack_01_A" motionEffect="NPC/Skill/Conder/Eff_Conder_Attack_01_A_Cast.xml" faceTarget="0" />
+			<detectProperty rangeType="box" distance="200" rangeOffset="0,0,50" height="200" width="225" />
+			<motion sequenceName="Attack_01_A" motionEffect="NPC/Skill/Conder/Eff_Conder_Attack_01_A_Cast.xml" faceTarget="0">
 				<attack point="p0" targetCount="3" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
-					<rangeProperty rangeType="box" distance="200" height="250" width="300" applyTarget="1" castTarget="1" />
-					<arrowProperty nonTarget="1" />
-					<damageProperty rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushduration="0.15" pushEaseType="1" pushUpDistance="75" attackMaterial="1" />
+					<range rangeType="box" distance="200" height="250" width="300" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushduration="0.15" pushEaseType="1" pushUpDistance="75" attackMaterial="1" />
 				</attack>
 			</motion>
 		</level>
@@ -22,16 +21,15 @@
 		<basic>
 			<ui attackType="1" />
 			<kinds rangeType="1" element="7" />
+			<push up="450" />
 		</basic>
 		<level value="1">
-			<push up="450" />
-			<detectProperty rangeType="cylinder" distance="200" rangeOffset="0.000000,0.000000,50.000000" height="200" />
-			<motion>
-				<motionProperty sequenceName="Attack_01_B" motionEffect="NPC/Skill/Conder/Eff_Conder_Attack_01_B_Cast.xml" faceTarget="0" />
+			<detectProperty rangeType="cylinder" distance="200" rangeOffset="0,0,50" height="200" />
+			<motion sequenceName="Attack_01_B" motionEffect="NPC/Skill/Conder/Eff_Conder_Attack_01_B_Cast.xml" faceTarget="0">
 				<attack point="p0" targetCount="10" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
-					<rangeProperty rangeType="cylinder" distance="200" rangeOffset="0.000000,200.000000,0.000000" height="200" applyTarget="1" castTarget="1" />
-					<arrowProperty nonTarget="1" />
-					<damageProperty rate="1.5" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushduration="0.5" pushEaseType="1" pushUpDistance="450" attackMaterial="1" />
+					<range rangeType="cylinder" distance="200" rangeOffset="0,200,0" height="200" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="1.5" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushduration="0.5" pushEaseType="1" pushUpDistance="450" attackMaterial="1" />
 				</attack>
 			</motion>
 		</level>
@@ -43,23 +41,21 @@
 		</basic>
 		<level value="1">
 			<detectProperty rangeType="box" />
-			<motion>
-				<motionProperty sequenceName="Attack_01_C" motionEffect="NPC/Skill/Conder/Eff_Conder_Attack_01_C.xml" faceTarget="0" doesPlayIdleOnSkillEnd="false" />
+			<motion sequenceName="Attack_01_C" motionEffect="NPC/Skill/Conder/Eff_Conder_Attack_01_C.xml" faceTarget="0" doesPlayIdleOnSkillEnd="false">
 				<attack point="p0" attacktype="1" attackMethodType="1" brokenOffence="1" unrideOnHit="1">
-					<rangeProperty rangeType="box" distance="500" height="320" width="500" applyTarget="1" castTarget="1" />
-					<arrowProperty nonTarget="1" effect="NPC/Skill/Temp/Eff_Temp.xml" />
-					<damageProperty rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
+					<range rangeType="box" distance="500" height="320" width="500" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" effect="NPC/Skill/Temp/Eff_Temp.xml" />
+					<damage rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
 				</attack>
 			</motion>
 		</level>
 		<level value="2">
 			<detectProperty rangeType="box" distance="350" height="320" width="500" />
-			<motion>
-				<motionProperty sequenceName="Attack_03_C" motionEffect="NPC/Skill/Conder/Eff_Conder_Attack_03_C.xml" movedistance="400" faceTarget="0" doesPlayIdleOnSkillEnd="false" />
+			<motion sequenceName="Attack_03_C" motionEffect="NPC/Skill/Conder/Eff_Conder_Attack_03_C.xml" movedistance="400" faceTarget="0" doesPlayIdleOnSkillEnd="false">
 				<attack point="p0" targetCount="50" attacktype="1" brokenOffence="1" unrideOnHit="1">
-					<rangeProperty rangeType="cylinder" distance="350" rangeAdd="0.000000,0.000000,120.000000" rangeOffset="0.000000,300.000000,0.000000" height="130" applyTarget="1" castTarget="1" />
-					<arrowProperty nonTarget="1" />
-					<damageProperty rate="2.5" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="150" pushduration="0.2" pushEaseType="1" attackMaterial="1" />
+					<range rangeType="cylinder" distance="350" rangeAdd="0,0,120" rangeOffset="0,300,0" height="130" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="2.5" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="150" pushduration="0.2" pushEaseType="1" attackMaterial="1" />
 				</attack>
 			</motion>
 		</level>
@@ -70,13 +66,12 @@
 			<kinds rangeType="1" element="7" />
 		</basic>
 		<level value="1">
-			<detectProperty rangeType="frustum" distance="1200" rangeAdd="0.000000,0.000000,150.000000" height="200" width="100" endWidth="800" />
-			<motion>
-				<motionProperty sequenceName="Attack_01_D" motionEffect="NPC/Skill/Conder/Eff_Conder_Attack_01_D.xml" faceTarget="0" />
+			<detectProperty rangeType="frustum" distance="1200" rangeAdd="0,0,150" height="200" width="100" endWidth="800" />
+			<motion sequenceName="Attack_01_D" motionEffect="NPC/Skill/Conder/Eff_Conder_Attack_01_D.xml" faceTarget="0">
 				<attack point="p0" targetCount="5" attacktype="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="3" unrideOnHit="1">
-					<rangeProperty rangeType="frustum" distance="1200" rangeAdd="0.000000,0.000000,150.000000" height="200" width="100" endWidth="800" applyTarget="1" castTarget="1" />
-					<arrowProperty nonTarget="1" />
-					<damageProperty rate="0.6" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="2" pushdistance="1600" pushduration="0.5" pushEaseType="1" attackMaterial="1" />
+					<range rangeType="frustum" distance="1200" rangeAdd="0,0,150" height="200" width="100" endWidth="800" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.6" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="2" pushdistance="1600" pushduration="0.5" pushEaseType="1" attackMaterial="1" />
 					<actionAdditional additionalID="49179201" level="1" skillTarget="2" skillOwner="1" />
 				</attack>
 			</motion>
@@ -88,22 +83,20 @@
 			<kinds rangeType="1" element="7" />
 		</basic>
 		<level value="1">
-			<motion>
-				<motionProperty sequenceName="Attack_01_E" motionEffect="NPC/Skill/Conder/Eff_Conder_Attack_01_E.xml" faceTarget="0" doesPlayIdleOnSkillEnd="false" />
+			<motion sequenceName="Attack_01_E" motionEffect="NPC/Skill/Conder/Eff_Conder_Attack_01_E.xml" faceTarget="0" doesPlayIdleOnSkillEnd="false">
 				<attack point="p0" targetCount="1" attacktype="1" unrideOnHit="1" compulsionType="1" grabTargetType="1" grabNodeCategory="Body02">
-					<rangeProperty rangeType="box" distance="300" rangeAdd="0.000000,100.000000,0.000000" height="300" width="450" applyTarget="1" castTarget="1" />
-					<arrowProperty nonTarget="1" />
-					<damageProperty rate="0.02" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" />
+					<range rangeType="box" distance="300" rangeAdd="0,100,0" height="300" width="450" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.02" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" />
 				</attack>
 			</motion>
 		</level>
 		<level value="2">
-			<motion>
-				<motionProperty sequenceName="Attack_02_E" motionEffect="NPC/Skill/Conder/Eff_Conder_Attack_02_E.xml" faceTarget="0" doesPlayIdleOnSkillEnd="false" />
+			<motion sequenceName="Attack_02_E" motionEffect="NPC/Skill/Conder/Eff_Conder_Attack_02_E.xml" faceTarget="0" doesPlayIdleOnSkillEnd="false">
 				<attack point="p99" targetCount="1" attacktype="1" hitImmuneBreak="1" unrideOnHit="1" compulsionType="1,3" grabTargetType="2">
-					<rangeProperty rangeType="cylinder" distance="150" rangeOffset="0.000000,0.000000,100.000000" height="400" applyTarget="1" castTarget="1" />
-					<arrowProperty nonTarget="1" />
-					<damageProperty rate="0.02" push="1" pushdistance="30" pushduration="0.3" pushEaseType="1" pushFall="1" />
+					<range rangeType="cylinder" distance="150" rangeOffset="0,0,100" height="400" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.02" push="1" pushdistance="30" pushduration="0.3" pushEaseType="1" pushFall="1" />
 				</attack>
 			</motion>
 		</level>
@@ -115,25 +108,23 @@
 		</basic>
 		<level value="1">
 			<detectProperty rangeType="cylinder" distance="600" height="200" />
-			<motion>
-				<motionProperty sequenceName="Attack_01_F" motionEffect="NPC/Skill/Conder/Eff_Conder_Attack_01_F.xml" movedistance="400" ignoreCollisionGroups="4" />
+			<motion sequenceName="Attack_01_F" motionEffect="NPC/Skill/Conder/Eff_Conder_Attack_01_F.xml" movedistance="400" ignoreCollisionGroups="4">
 				<attack point="p0" direction="1" attacktype="1" attackMethodType="1" unrideOnHit="1">
-					<rangeProperty rangeType="cylinder" distance="600" height="200" applyTarget="1" castTarget="1" />
-					<arrowProperty nonTarget="1" effect="NPC/Skill/Temp/Eff_Temp.xml" />
-					<damageProperty count="0" rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" />
+					<range rangeType="cylinder" distance="600" height="200" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" effect="NPC/Skill/Temp/Eff_Temp.xml" />
+					<damage count="0" rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" />
 				</attack>
 			</motion>
-			<motion>
-				<motionProperty sequenceName="Attack_02_F" motionEffect="NPC/Skill/Conder/Eff_Conder_Attack_02_F.xml" faceTarget="0" />
+			<motion sequenceName="Attack_02_F" motionEffect="NPC/Skill/Conder/Eff_Conder_Attack_02_F.xml" faceTarget="0">
 				<attack point="p0" targetCount="1" direction="1" attacktype="1" hitImmuneBreak="1" unrideOnHit="1" compulsionType="1,3">
-					<rangeProperty rangeType="cylinder" distance="250" rangeAdd="0.000000,0.000000,150.000000" height="50" applyTarget="1" castTarget="1" />
-					<arrowProperty nonTarget="1" />
-					<damageProperty rate="2" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="200" pushduration="0.3" pushEaseType="1" pushFall="1" />
+					<range rangeType="cylinder" distance="250" rangeAdd="0,0,150" height="50" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="2" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="200" pushduration="0.3" pushEaseType="1" pushFall="1" />
 				</attack>
 				<attack point="p99" targetCount="1" direction="1" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1" compulsionType="1,3">
-					<rangeProperty rangeType="cylinder" distance="200" rangeOffset="0.000000,0.000000,200.000000" height="500" applyTarget="1" castTarget="1" />
-					<arrowProperty nonTarget="1" />
-					<damageProperty rate="2" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="50" pushduration="0.1" pushEaseType="1" />
+					<range rangeType="cylinder" distance="200" rangeOffset="0,0,200" height="500" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="2" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="50" pushduration="0.1" pushEaseType="1" />
 					<actionAdditional additionalID="52200003" level="1" skillTarget="2" skillOwner="1" />
 				</attack>
 			</motion>
@@ -146,197 +137,189 @@
 			<stateAttr superArmor="3" />
 		</basic>
 		<level value="1">
-			<motion>
-				<motionProperty sequenceName="Attack_01_G" motionEffect="NPC/Skill/Conder/Eff_Conder_Attack_01_G.xml" faceTarget="0" doesPlayIdleOnSkillEnd="false" />
+			<motion sequenceName="Attack_01_G" motionEffect="NPC/Skill/Conder/Eff_Conder_Attack_01_G.xml" faceTarget="0" doesPlayIdleOnSkillEnd="false">
 				<attack point="p0" attacktype="1" brokenOffence="2" unrideOnHit="1">
-					<rangeProperty rangeType="box" distance="900" height="500" width="500" applyTarget="1" castTarget="1" />
-					<arrowProperty nonTarget="1" />
-					<damageProperty rate="0.35" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" />
+					<range rangeType="box" distance="900" height="500" width="500" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.35" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" />
 				</attack>
 			</motion>
 		</level>
 		<level value="2">
-			<motion>
-				<motionProperty sequenceName="Attack_02_G" motionEffect="NPC/Skill/Conder/Eff_Conder_Attack_02_G.xml" movedistance="150" faceTarget="0" doesPlayIdleOnSkillEnd="false" />
+			<motion sequenceName="Attack_02_G" motionEffect="NPC/Skill/Conder/Eff_Conder_Attack_02_G.xml" movedistance="150" faceTarget="0" doesPlayIdleOnSkillEnd="false">
 				<attack point="p0" targetCount="50" attacktype="1" brokenOffence="2" brokenForce="85" unrideOnHit="1">
-					<rangeProperty rangeType="hole_cylinder" distance="400" height="350" width="230" endWidth="400" applyTarget="1" castTarget="1" />
-					<arrowProperty nonTarget="1" />
-					<damageProperty rate="0.35" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushduration="0.2" pushEaseType="1" pushPriority="50" />
+					<range rangeType="hole_cylinder" distance="400" height="350" width="230" endWidth="400" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.35" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushduration="0.2" pushEaseType="1" pushPriority="50" />
 				</attack>
 				<attack point="p1" targetCount="50" attacktype="1" brokenOffence="2" brokenForce="85" unrideOnHit="1">
-					<rangeProperty rangeType="hole_cylinder" distance="400" height="350" width="230" endWidth="400" applyTarget="1" castTarget="1" />
-					<arrowProperty nonTarget="1" />
-					<damageProperty rate="0.35" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushduration="0.2" pushEaseType="1" pushPriority="50" />
+					<range rangeType="hole_cylinder" distance="400" height="350" width="230" endWidth="400" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.35" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushduration="0.2" pushEaseType="1" pushPriority="50" />
 				</attack>
 				<attack point="p2" targetCount="50" attacktype="1" brokenOffence="2" brokenForce="85" unrideOnHit="1">
-					<rangeProperty rangeType="hole_cylinder" distance="400" height="350" width="230" endWidth="400" applyTarget="1" castTarget="1" />
-					<arrowProperty nonTarget="1" />
-					<damageProperty rate="0.35" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushduration="0.2" pushEaseType="1" pushPriority="50" />
+					<range rangeType="hole_cylinder" distance="400" height="350" width="230" endWidth="400" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.35" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushduration="0.2" pushEaseType="1" pushPriority="50" />
 				</attack>
 				<attack point="p3" targetCount="50" attacktype="1" brokenOffence="2" brokenForce="85" unrideOnHit="1">
-					<rangeProperty rangeType="hole_cylinder" distance="400" height="350" width="230" endWidth="400" applyTarget="1" castTarget="1" />
-					<arrowProperty nonTarget="1" />
-					<damageProperty rate="0.35" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushduration="0.2" pushEaseType="1" pushPriority="50" />
+					<range rangeType="hole_cylinder" distance="400" height="350" width="230" endWidth="400" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.35" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushduration="0.2" pushEaseType="1" pushPriority="50" />
 				</attack>
 			</motion>
 		</level>
 		<level value="3">
-			<motion>
-				<motionProperty sequenceName="Attack_03_G" motionEffect="NPC/Skill/Conder/Eff_Conder_Attack_03_G.xml" movedistance="600" faceTarget="0" doesPlayIdleOnSkillEnd="false" />
+			<motion sequenceName="Attack_03_G" motionEffect="NPC/Skill/Conder/Eff_Conder_Attack_03_G.xml" movedistance="600" faceTarget="0" doesPlayIdleOnSkillEnd="false">
 				<attack point="p0" targetCount="50" attacktype="1" brokenOffence="2" brokenForce="85" unrideOnHit="1">
-					<rangeProperty rangeType="hole_cylinder" distance="400" height="350" width="230" endWidth="400" applyTarget="1" castTarget="1" />
-					<arrowProperty nonTarget="1" />
-					<damageProperty rate="0.35" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushduration="0.2" pushEaseType="1" pushPriority="50" />
+					<range rangeType="hole_cylinder" distance="400" height="350" width="230" endWidth="400" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.35" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushduration="0.2" pushEaseType="1" pushPriority="50" />
 				</attack>
 				<attack point="p1" targetCount="50" attacktype="1" brokenOffence="2" brokenForce="85" unrideOnHit="1">
-					<rangeProperty rangeType="hole_cylinder" distance="400" height="350" width="230" endWidth="400" applyTarget="1" castTarget="1" />
-					<arrowProperty nonTarget="1" />
-					<damageProperty rate="0.35" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushduration="0.2" pushEaseType="1" pushPriority="50" />
+					<range rangeType="hole_cylinder" distance="400" height="350" width="230" endWidth="400" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.35" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushduration="0.2" pushEaseType="1" pushPriority="50" />
 				</attack>
 				<attack point="p2" targetCount="50" attacktype="1" brokenOffence="2" brokenForce="85" unrideOnHit="1">
-					<rangeProperty rangeType="hole_cylinder" distance="400" height="350" width="230" endWidth="400" applyTarget="1" castTarget="1" />
-					<arrowProperty nonTarget="1" />
-					<damageProperty rate="0.35" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushduration="0.2" pushEaseType="1" pushPriority="50" />
+					<range rangeType="hole_cylinder" distance="400" height="350" width="230" endWidth="400" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.35" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushduration="0.2" pushEaseType="1" pushPriority="50" />
 				</attack>
 				<attack point="p3" targetCount="50" attacktype="1" brokenOffence="2" brokenForce="85" unrideOnHit="1">
-					<rangeProperty rangeType="hole_cylinder" distance="400" height="350" width="230" endWidth="400" applyTarget="1" castTarget="1" />
-					<arrowProperty nonTarget="1" />
-					<damageProperty rate="0.35" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushduration="0.2" pushEaseType="1" pushPriority="50" />
+					<range rangeType="hole_cylinder" distance="400" height="350" width="230" endWidth="400" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.35" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushduration="0.2" pushEaseType="1" pushPriority="50" />
 				</attack>
 				<attack point="p4" targetCount="50" attacktype="1" brokenOffence="2" brokenForce="85" unrideOnHit="1">
-					<rangeProperty rangeType="hole_cylinder" distance="400" height="350" width="230" endWidth="400" applyTarget="1" castTarget="1" />
-					<arrowProperty nonTarget="1" />
-					<damageProperty rate="0.35" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushduration="0.2" pushEaseType="1" pushPriority="50" />
+					<range rangeType="hole_cylinder" distance="400" height="350" width="230" endWidth="400" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.35" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushduration="0.2" pushEaseType="1" pushPriority="50" />
 				</attack>
 				<attack point="p5" targetCount="50" attacktype="1" brokenOffence="2" brokenForce="85" unrideOnHit="1">
-					<rangeProperty rangeType="hole_cylinder" distance="400" height="350" width="230" endWidth="400" applyTarget="1" castTarget="1" />
-					<arrowProperty nonTarget="1" />
-					<damageProperty rate="0.35" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushduration="0.2" pushEaseType="1" pushPriority="50" />
+					<range rangeType="hole_cylinder" distance="400" height="350" width="230" endWidth="400" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.35" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushduration="0.2" pushEaseType="1" pushPriority="50" />
 				</attack>
 			</motion>
 		</level>
 		<level value="4">
-			<motion>
-				<motionProperty sequenceName="Attack_04_G" motionEffect="NPC/Skill/Conder/Eff_Conder_Attack_04_G.xml" movedistance="300" faceTarget="0" doesPlayIdleOnSkillEnd="false" />
+			<motion sequenceName="Attack_04_G" motionEffect="NPC/Skill/Conder/Eff_Conder_Attack_04_G.xml" movedistance="300" faceTarget="0" doesPlayIdleOnSkillEnd="false">
 				<attack point="p0" targetCount="50" attacktype="1" brokenOffence="2" brokenForce="85" unrideOnHit="1">
-					<rangeProperty rangeType="hole_cylinder" distance="400" height="350" width="230" endWidth="400" applyTarget="1" castTarget="1" />
-					<arrowProperty nonTarget="1" />
-					<damageProperty rate="0.35" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushduration="0.2" pushEaseType="1" pushPriority="50" />
+					<range rangeType="hole_cylinder" distance="400" height="350" width="230" endWidth="400" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.35" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushduration="0.2" pushEaseType="1" pushPriority="50" />
 				</attack>
 				<attack point="p1" targetCount="50" attacktype="1" brokenOffence="2" brokenForce="85" unrideOnHit="1">
-					<rangeProperty rangeType="hole_cylinder" distance="400" height="350" width="230" endWidth="400" applyTarget="1" castTarget="1" />
-					<arrowProperty nonTarget="1" />
-					<damageProperty rate="0.35" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushduration="0.2" pushEaseType="1" pushPriority="50" />
+					<range rangeType="hole_cylinder" distance="400" height="350" width="230" endWidth="400" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.35" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushduration="0.2" pushEaseType="1" pushPriority="50" />
 				</attack>
 				<attack point="p2" targetCount="50" attacktype="1" brokenOffence="2" brokenForce="85" unrideOnHit="1">
-					<rangeProperty rangeType="hole_cylinder" distance="400" height="350" width="230" endWidth="400" applyTarget="1" castTarget="1" />
-					<arrowProperty nonTarget="1" />
-					<damageProperty rate="0.35" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushduration="0.2" pushEaseType="1" pushPriority="50" />
+					<range rangeType="hole_cylinder" distance="400" height="350" width="230" endWidth="400" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.35" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushduration="0.2" pushEaseType="1" pushPriority="50" />
 				</attack>
 				<attack point="p3" targetCount="50" attacktype="1" brokenOffence="2" brokenForce="85" unrideOnHit="1">
-					<rangeProperty rangeType="hole_cylinder" distance="400" height="350" width="230" endWidth="400" applyTarget="1" castTarget="1" />
-					<arrowProperty nonTarget="1" />
-					<damageProperty rate="0.35" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushduration="0.2" pushEaseType="1" pushPriority="50" />
+					<range rangeType="hole_cylinder" distance="400" height="350" width="230" endWidth="400" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.35" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushduration="0.2" pushEaseType="1" pushPriority="50" />
 				</attack>
 			</motion>
 		</level>
 		<level value="5">
-			<motion>
-				<motionProperty sequenceName="Attack_05_G" motionEffect="NPC/Skill/Conder/Eff_Conder_Attack_05_G.xml" movedistance="300" faceTarget="0" doesPlayIdleOnSkillEnd="false" />
+			<motion sequenceName="Attack_05_G" motionEffect="NPC/Skill/Conder/Eff_Conder_Attack_05_G.xml" movedistance="300" faceTarget="0" doesPlayIdleOnSkillEnd="false">
 				<attack point="p0" targetCount="50" attacktype="1" brokenOffence="2" brokenForce="85" unrideOnHit="1">
-					<rangeProperty rangeType="hole_cylinder" distance="400" height="350" width="230" endWidth="400" applyTarget="1" castTarget="1" />
-					<arrowProperty nonTarget="1" />
-					<damageProperty rate="0.35" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushduration="0.2" pushEaseType="1" pushPriority="50" />
+					<range rangeType="hole_cylinder" distance="400" height="350" width="230" endWidth="400" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.35" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushduration="0.2" pushEaseType="1" pushPriority="50" />
 				</attack>
 				<attack point="p1" targetCount="50" attacktype="1" brokenOffence="2" brokenForce="85" unrideOnHit="1">
-					<rangeProperty rangeType="hole_cylinder" distance="400" height="350" width="230" endWidth="400" applyTarget="1" castTarget="1" />
-					<arrowProperty nonTarget="1" />
-					<damageProperty rate="0.35" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushduration="0.2" pushEaseType="1" pushPriority="50" />
+					<range rangeType="hole_cylinder" distance="400" height="350" width="230" endWidth="400" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.35" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushduration="0.2" pushEaseType="1" pushPriority="50" />
 				</attack>
 				<attack point="p2" targetCount="50" attacktype="1" brokenOffence="2" brokenForce="85" unrideOnHit="1">
-					<rangeProperty rangeType="hole_cylinder" distance="400" height="350" width="230" endWidth="400" applyTarget="1" castTarget="1" />
-					<arrowProperty nonTarget="1" />
-					<damageProperty rate="0.35" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushduration="0.2" pushEaseType="1" pushPriority="50" />
+					<range rangeType="hole_cylinder" distance="400" height="350" width="230" endWidth="400" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.35" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushduration="0.2" pushEaseType="1" pushPriority="50" />
 				</attack>
 				<attack point="p3" targetCount="50" attacktype="1" brokenOffence="2" brokenForce="85" unrideOnHit="1">
-					<rangeProperty rangeType="hole_cylinder" distance="400" height="350" width="230" endWidth="400" applyTarget="1" castTarget="1" />
-					<arrowProperty nonTarget="1" />
-					<damageProperty rate="0.35" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushduration="0.2" pushEaseType="1" pushPriority="50" />
+					<range rangeType="hole_cylinder" distance="400" height="350" width="230" endWidth="400" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.35" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushduration="0.2" pushEaseType="1" pushPriority="50" />
 				</attack>
 			</motion>
 		</level>
 		<level value="6">
-			<motion>
-				<motionProperty sequenceName="Attack_06_G" motionEffect="NPC/Skill/Conder/Eff_Conder_Attack_06_G.xml" movedistance="300" faceTarget="0" doesPlayIdleOnSkillEnd="false" />
+			<motion sequenceName="Attack_06_G" motionEffect="NPC/Skill/Conder/Eff_Conder_Attack_06_G.xml" movedistance="300" faceTarget="0" doesPlayIdleOnSkillEnd="false">
 				<attack point="p0" targetCount="50" attacktype="1" brokenOffence="2" brokenForce="85" unrideOnHit="1">
-					<rangeProperty rangeType="hole_cylinder" distance="400" height="350" width="230" endWidth="400" applyTarget="1" castTarget="1" />
-					<arrowProperty nonTarget="1" />
-					<damageProperty rate="0.35" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushduration="0.2" pushEaseType="1" pushPriority="50" />
+					<range rangeType="hole_cylinder" distance="400" height="350" width="230" endWidth="400" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.35" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushduration="0.2" pushEaseType="1" pushPriority="50" />
 				</attack>
 				<attack point="p0" targetCount="50" attacktype="1" brokenOffence="2" brokenForce="85" unrideOnHit="1">
-					<rangeProperty rangeType="hole_cylinder" distance="400" height="350" width="230" endWidth="400" applyTarget="1" castTarget="1" />
-					<arrowProperty nonTarget="1" />
-					<damageProperty rate="0.35" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" />
+					<range rangeType="hole_cylinder" distance="400" height="350" width="230" endWidth="400" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.35" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" />
 				</attack>
 			</motion>
 		</level>
 		<level value="12">
-			<motion>
-				<motionProperty sequenceName="Attack_02_G" motionEffect="NPC/Skill/Conder/Eff_Conder_Attack_02_G.xml" movedistance="50" faceTarget="0" doesPlayIdleOnSkillEnd="false" />
+			<motion sequenceName="Attack_02_G" motionEffect="NPC/Skill/Conder/Eff_Conder_Attack_02_G.xml" movedistance="50" faceTarget="0" doesPlayIdleOnSkillEnd="false">
 				<attack point="p0" targetCount="50" attacktype="1" brokenOffence="2" brokenForce="85" unrideOnHit="1">
-					<rangeProperty rangeType="hole_cylinder" distance="400" height="350" width="230" endWidth="400" applyTarget="1" castTarget="1" />
-					<arrowProperty nonTarget="1" />
-					<damageProperty rate="0.35" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushduration="0.2" pushEaseType="1" pushPriority="50" />
+					<range rangeType="hole_cylinder" distance="400" height="350" width="230" endWidth="400" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.35" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushduration="0.2" pushEaseType="1" pushPriority="50" />
 				</attack>
 				<attack point="p1" targetCount="50" attacktype="1" brokenOffence="2" brokenForce="85" unrideOnHit="1">
-					<rangeProperty rangeType="hole_cylinder" distance="400" height="350" width="230" endWidth="400" applyTarget="1" castTarget="1" />
-					<arrowProperty nonTarget="1" />
-					<damageProperty rate="0.35" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushduration="0.2" pushEaseType="1" pushPriority="50" />
+					<range rangeType="hole_cylinder" distance="400" height="350" width="230" endWidth="400" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.35" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushduration="0.2" pushEaseType="1" pushPriority="50" />
 				</attack>
 				<attack point="p2" targetCount="50" attacktype="1" brokenOffence="2" brokenForce="85" unrideOnHit="1">
-					<rangeProperty rangeType="hole_cylinder" distance="400" height="350" width="230" endWidth="400" applyTarget="1" castTarget="1" />
-					<arrowProperty nonTarget="1" />
-					<damageProperty rate="0.35" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushduration="0.2" pushEaseType="1" pushPriority="50" />
+					<range rangeType="hole_cylinder" distance="400" height="350" width="230" endWidth="400" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.35" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushduration="0.2" pushEaseType="1" pushPriority="50" />
 				</attack>
 				<attack point="p3" targetCount="50" attacktype="1" brokenOffence="2" brokenForce="85" unrideOnHit="1">
-					<rangeProperty rangeType="hole_cylinder" distance="400" height="350" width="230" endWidth="400" applyTarget="1" castTarget="1" />
-					<arrowProperty nonTarget="1" />
-					<damageProperty rate="0.35" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushduration="0.2" pushEaseType="1" pushPriority="50" />
+					<range rangeType="hole_cylinder" distance="400" height="350" width="230" endWidth="400" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.35" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushduration="0.2" pushEaseType="1" pushPriority="50" />
 				</attack>
 			</motion>
 		</level>
 		<level value="13">
-			<motion>
-				<motionProperty sequenceName="Attack_03_G" motionEffect="NPC/Skill/Conder/Eff_Conder_Attack_03_G.xml" movedistance="150" faceTarget="0" doesPlayIdleOnSkillEnd="false" />
+			<motion sequenceName="Attack_03_G" motionEffect="NPC/Skill/Conder/Eff_Conder_Attack_03_G.xml" movedistance="150" faceTarget="0" doesPlayIdleOnSkillEnd="false">
 				<attack point="p0" targetCount="50" attacktype="1" brokenOffence="2" brokenForce="85" unrideOnHit="1">
-					<rangeProperty rangeType="hole_cylinder" distance="400" height="350" width="230" endWidth="400" applyTarget="1" castTarget="1" />
-					<arrowProperty nonTarget="1" />
-					<damageProperty rate="0.35" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushduration="0.2" pushEaseType="1" pushPriority="50" />
+					<range rangeType="hole_cylinder" distance="400" height="350" width="230" endWidth="400" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.35" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushduration="0.2" pushEaseType="1" pushPriority="50" />
 				</attack>
 				<attack point="p1" targetCount="50" attacktype="1" brokenOffence="2" brokenForce="85" unrideOnHit="1">
-					<rangeProperty rangeType="hole_cylinder" distance="400" height="350" width="230" endWidth="400" applyTarget="1" castTarget="1" />
-					<arrowProperty nonTarget="1" />
-					<damageProperty rate="0.35" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushduration="0.2" pushEaseType="1" pushPriority="50" />
+					<range rangeType="hole_cylinder" distance="400" height="350" width="230" endWidth="400" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.35" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushduration="0.2" pushEaseType="1" pushPriority="50" />
 				</attack>
 				<attack point="p2" targetCount="50" attacktype="1" brokenOffence="2" brokenForce="85" unrideOnHit="1">
-					<rangeProperty rangeType="hole_cylinder" distance="400" height="350" width="230" endWidth="400" applyTarget="1" castTarget="1" />
-					<arrowProperty nonTarget="1" />
-					<damageProperty rate="0.35" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushduration="0.2" pushEaseType="1" pushPriority="50" />
+					<range rangeType="hole_cylinder" distance="400" height="350" width="230" endWidth="400" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.35" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushduration="0.2" pushEaseType="1" pushPriority="50" />
 				</attack>
 				<attack point="p3" targetCount="50" attacktype="1" brokenOffence="2" brokenForce="85" unrideOnHit="1">
-					<rangeProperty rangeType="hole_cylinder" distance="400" height="350" width="230" endWidth="400" applyTarget="1" castTarget="1" />
-					<arrowProperty nonTarget="1" />
-					<damageProperty rate="0.35" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushduration="0.2" pushEaseType="1" pushPriority="50" />
+					<range rangeType="hole_cylinder" distance="400" height="350" width="230" endWidth="400" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.35" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushduration="0.2" pushEaseType="1" pushPriority="50" />
 				</attack>
 				<attack point="p4" targetCount="50" attacktype="1" brokenOffence="2" brokenForce="85" unrideOnHit="1">
-					<rangeProperty rangeType="hole_cylinder" distance="400" height="350" width="230" endWidth="400" applyTarget="1" castTarget="1" />
-					<arrowProperty nonTarget="1" />
-					<damageProperty rate="0.35" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushduration="0.2" pushEaseType="1" pushPriority="50" />
+					<range rangeType="hole_cylinder" distance="400" height="350" width="230" endWidth="400" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.35" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushduration="0.2" pushEaseType="1" pushPriority="50" />
 				</attack>
 				<attack point="p5" targetCount="50" attacktype="1" brokenOffence="2" brokenForce="85" unrideOnHit="1">
-					<rangeProperty rangeType="hole_cylinder" distance="400" height="350" width="230" endWidth="400" applyTarget="1" castTarget="1" />
-					<arrowProperty nonTarget="1" />
-					<damageProperty rate="0.35" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushduration="0.2" pushEaseType="1" pushPriority="50" />
+					<range rangeType="hole_cylinder" distance="400" height="350" width="230" endWidth="400" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.35" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushduration="0.2" pushEaseType="1" pushPriority="50" />
 				</attack>
 			</motion>
 		</level>
@@ -347,32 +330,29 @@
 			<kinds element="7" />
 		</basic>
 		<level value="1">
-			<motion>
-				<motionProperty sequenceName="Jump_Ready_A" motionEffect="NPC/Skill/Conder/Eff_Conder_Jump_Ready_A.xml" faceTarget="0" doesPlayIdleOnSkillEnd="false" />
+			<motion sequenceName="Jump_Ready_A" motionEffect="NPC/Skill/Conder/Eff_Conder_Jump_Ready_A.xml" faceTarget="0" doesPlayIdleOnSkillEnd="false">
 				<attack point="p0" direction="1" attacktype="1" attackMethodType="1" unrideOnHit="1">
-					<rangeProperty rangeType="cylinder" distance="500" rangeAdd="0.000000,0.000000,140.000000" rangeZRotateDegree="800" height="800" applyTarget="1" castTarget="1" />
-					<arrowProperty nonTarget="1" effect="NPC/Skill/Temp/Eff_Temp.xml" />
-					<damageProperty count="0" rate="0.01" attackMaterial="2" />
+					<range rangeType="cylinder" distance="500" rangeAdd="0,0,140" rangeZRotateDegree="800" height="800" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" effect="NPC/Skill/Temp/Eff_Temp.xml" />
+					<damage count="0" rate="0.01" attackMaterial="2" />
 				</attack>
 			</motion>
 		</level>
 		<level value="2">
-			<motion>
-				<motionProperty sequenceName="Jump_Land_A" motionEffect="NPC/Skill/Conder/Eff_Conder_Jump_Land_A.xml" faceTarget="0" doesPlayIdleOnSkillEnd="false" />
+			<motion sequenceName="Jump_Land_A" motionEffect="NPC/Skill/Conder/Eff_Conder_Jump_Land_A.xml" faceTarget="0" doesPlayIdleOnSkillEnd="false">
 				<attack point="p99" targetCount="10" direction="1" attacktype="1" unrideOnHit="1">
-					<rangeProperty rangeType="cylinder" distance="200" rangeOffset="0.000000,0.000000,50.000000" rangeZRotateDegree="350" height="350" applyTarget="1" castTarget="1" />
-					<arrowProperty nonTarget="1" />
-					<damageProperty rate="0.01" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="2" />
+					<range rangeType="cylinder" distance="200" rangeOffset="0,0,50" rangeZRotateDegree="350" height="350" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.01" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="2" />
 				</attack>
 			</motion>
 		</level>
 		<level value="3">
-			<motion>
-				<motionProperty sequenceName="Jump_Ready_A" motionEffect="NPC/Skill/Conder/Eff_Conder_Jump_Ready_A.xml" faceTarget="0" doesPlayIdleOnSkillEnd="false" />
+			<motion sequenceName="Jump_Ready_A" motionEffect="NPC/Skill/Conder/Eff_Conder_Jump_Ready_A.xml" faceTarget="0" doesPlayIdleOnSkillEnd="false">
 				<attack point="p0" targetCount="50" direction="1" attacktype="1" unrideOnHit="1">
-					<rangeProperty rangeType="cylinder" distance="5000" rangeZRotateDegree="170" height="170" applyTarget="1" castTarget="1" />
-					<arrowProperty nonTarget="1" />
-					<damageProperty rate="0.03" attackMaterial="2" />
+					<range rangeType="cylinder" distance="5000" rangeZRotateDegree="170" height="170" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.03" attackMaterial="2" />
 				</attack>
 			</motion>
 		</level>
@@ -383,24 +363,22 @@
 			<kinds rangeType="2" element="3" />
 		</basic>
 		<level value="1">
-			<detectProperty rangeType="cylinder" distance="7000" rangeAdd="0.000000,0.000000,9999.000000" />
-			<motion>
-				<motionProperty sequenceName="Attack_Idle_A" faceTarget="0" />
+			<detectProperty rangeType="cylinder" distance="7000" rangeAdd="0,0,9999" />
+			<motion sequenceName="Attack_Idle_A" faceTarget="0">
 				<attack point="p0" attacktype="1" attackMethodType="1" unrideOnHit="1">
-					<rangeProperty rangeType="cylinder" distance="7000" rangeAdd="0.000000,0.000000,9999.000000" applyTarget="1" castTarget="1" />
-					<arrowProperty nonTarget="1" effect="NPC/Skill/Temp/Eff_Temp.xml" />
-					<damageProperty count="0" rate="1" attackMaterial="103" />
+					<range rangeType="cylinder" distance="7000" rangeAdd="0,0,9999" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" effect="NPC/Skill/Temp/Eff_Temp.xml" />
+					<damage count="0" rate="1" attackMaterial="103" />
 				</attack>
 			</motion>
 		</level>
 		<level value="2">
-			<detectProperty rangeType="cylinder" distance="2500" rangeAdd="0.000000,0.000000,150.000000" height="500" />
-			<motion>
-				<motionProperty sequenceName="Attack_Idle_A" faceTarget="0" />
+			<detectProperty rangeType="cylinder" distance="2500" rangeAdd="0,0,150" height="500" />
+			<motion sequenceName="Attack_Idle_A" faceTarget="0">
 				<attack point="p0" attacktype="1" attackMethodType="1" unrideOnHit="1">
-					<rangeProperty rangeType="cylinder" distance="2500" rangeAdd="0.000000,0.000000,150.000000" rangeZRotateDegree="500" height="500" applyTarget="1" castTarget="1" />
-					<arrowProperty nonTarget="1" effect="NPC/Skill/Temp/Eff_Temp.xml" />
-					<damageProperty count="0" rate="1" attackMaterial="103" />
+					<range rangeType="cylinder" distance="2500" rangeAdd="0,0,150" rangeZRotateDegree="500" height="500" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" effect="NPC/Skill/Temp/Eff_Temp.xml" />
+					<damage count="0" rate="1" attackMaterial="103" />
 				</attack>
 			</motion>
 		</level>
@@ -411,13 +389,12 @@
 			<kinds element="7" />
 		</basic>
 		<level value="1">
-			<detectProperty rangeType="cylinder" distance="1100" rangeAdd="0.000000,0.000000,150.000000" height="250" />
-			<motion>
-				<motionProperty sequenceName="Attack_01_A" faceTarget="0" />
+			<detectProperty rangeType="cylinder" distance="1100" rangeAdd="0,0,150" height="250" />
+			<motion sequenceName="Attack_01_A" faceTarget="0">
 				<attack point="p0" attacktype="1" attackMethodType="1" brokenOffence="4" unrideOnHit="1">
-					<rangeProperty rangeType="cylinder" distance="1100" rangeAdd="0.000000,0.000000,150.000000" height="250" applyTarget="1" castTarget="1" />
-					<arrowProperty nonTarget="1" effect="NPC/Skill/Temp/Eff_Temp.xml" />
-					<damageProperty count="0" rate="1" />
+					<range rangeType="cylinder" distance="1100" rangeAdd="0,0,150" height="250" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" effect="NPC/Skill/Temp/Eff_Temp.xml" />
+					<damage count="0" rate="1" />
 				</attack>
 			</motion>
 		</level>
@@ -428,55 +405,51 @@
 			<kinds rangeType="2" element="7" />
 		</basic>
 		<level value="1">
-			<motion>
-				<motionProperty sequenceName="Attack_01_I" motionEffect="NPC/Skill/Conder/Eff_Conder_Attack_01_I.xml" faceTarget="0" doesPlayIdleOnSkillEnd="false" />
+			<motion sequenceName="Attack_01_I" motionEffect="NPC/Skill/Conder/Eff_Conder_Attack_01_I.xml" faceTarget="0" doesPlayIdleOnSkillEnd="false">
 				<attack point="p0" attacktype="1" attackMethodType="1" unrideOnHit="1">
-					<rangeProperty rangeType="box" distance="1200" height="320" width="500" applyTarget="1" castTarget="1" />
-					<arrowProperty nonTarget="1" effect="NPC/Skill/Temp/Eff_Temp.xml" />
-					<damageProperty count="0" rate="0.03" attackMaterial="2" />
+					<range rangeType="box" distance="1200" height="320" width="500" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" effect="NPC/Skill/Temp/Eff_Temp.xml" />
+					<damage count="0" rate="0.03" attackMaterial="2" />
 				</attack>
 			</motion>
 		</level>
 		<level value="2">
-			<motion>
-				<motionProperty sequenceName="Attack_02_I" motionEffect="NPC/Skill/Conder/Eff_Conder_Attack_02_I.xml" movedistance="1500" faceTarget="0" doesPlayIdleOnSkillEnd="false" />
+			<motion sequenceName="Attack_02_I" motionEffect="NPC/Skill/Conder/Eff_Conder_Attack_02_I.xml" movedistance="1500" faceTarget="0" doesPlayIdleOnSkillEnd="false">
 				<attack point="p0" targetCount="1" magicPathID="6101" attacktype="1" attackMethodType="1" brokenOffence="1" unrideOnHit="1" compulsionType="1,3" grabTargetType="1" grabNodeCategory="Body02">
-					<rangeProperty rangeType="box" distance="1200" height="320" width="500" applyTarget="1" castTarget="1" />
-					<arrowProperty nonTarget="1" bounceType="3" bounceCount="50" collision="100.000000,50.000000,500.000000" collisionAdd="0.000000,300.000000,0.000000" effect="NPC/Skill/DevilHugeRed/Eff_DevilHugeRed_Bore_02_B_Ball.xml" />
-					<damageProperty rate="0.03" attackMaterial="1" />
+					<range rangeType="box" distance="1200" height="320" width="500" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" bounceType="3" bounceCount="50" collision="100,50,500" collisionAdd="0,300,0" effect="NPC/Skill/DevilHugeRed/Eff_DevilHugeRed_Bore_02_B_Ball.xml" />
+					<damage rate="0.03" attackMaterial="1" />
 				</attack>
 				<attack point="p1" targetCount="1" magicPathID="6101" attacktype="1" attackMethodType="1" brokenOffence="1" unrideOnHit="1" compulsionType="1,3" grabTargetType="1" grabNodeCategory="Body02">
-					<rangeProperty rangeType="box" distance="1200" height="320" width="500" applyTarget="1" castTarget="1" />
-					<arrowProperty nonTarget="1" bounceType="3" bounceCount="50" collision="100.000000,50.000000,500.000000" collisionAdd="0.000000,300.000000,0.000000" effect="NPC/Skill/DevilHugeRed/Eff_DevilHugeRed_Bore_02_B_Ball.xml" />
-					<damageProperty rate="0.03" attackMaterial="1" />
+					<range rangeType="box" distance="1200" height="320" width="500" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" bounceType="3" bounceCount="50" collision="100,50,500" collisionAdd="0,300,0" effect="NPC/Skill/DevilHugeRed/Eff_DevilHugeRed_Bore_02_B_Ball.xml" />
+					<damage rate="0.03" attackMaterial="1" />
 				</attack>
 				<attack point="p2" targetCount="1" magicPathID="6101" attacktype="1" attackMethodType="1" brokenOffence="1" unrideOnHit="1" compulsionType="1,3" grabTargetType="1" grabNodeCategory="Body02">
-					<rangeProperty rangeType="box" distance="1200" height="320" width="500" applyTarget="1" castTarget="1" />
-					<arrowProperty nonTarget="1" bounceType="3" bounceCount="50" collision="100.000000,50.000000,500.000000" collisionAdd="0.000000,300.000000,0.000000" effect="NPC/Skill/DevilHugeRed/Eff_DevilHugeRed_Bore_02_B_Ball.xml" />
-					<damageProperty rate="0.03" attackMaterial="1" />
+					<range rangeType="box" distance="1200" height="320" width="500" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" bounceType="3" bounceCount="50" collision="100,50,500" collisionAdd="0,300,0" effect="NPC/Skill/DevilHugeRed/Eff_DevilHugeRed_Bore_02_B_Ball.xml" />
+					<damage rate="0.03" attackMaterial="1" />
 				</attack>
 				<attack point="p3" targetCount="1" magicPathID="6101" attacktype="1" attackMethodType="1" brokenOffence="1" unrideOnHit="1" compulsionType="1,3" grabTargetType="1" grabNodeCategory="Body02">
-					<rangeProperty rangeType="box" distance="1200" height="320" width="500" applyTarget="1" castTarget="1" />
-					<arrowProperty nonTarget="1" bounceType="3" bounceCount="50" collision="100.000000,50.000000,500.000000" collisionAdd="0.000000,300.000000,0.000000" effect="NPC/Skill/DevilHugeRed/Eff_DevilHugeRed_Bore_02_B_Ball.xml" />
-					<damageProperty rate="0.03" attackMaterial="1" />
+					<range rangeType="box" distance="1200" height="320" width="500" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" bounceType="3" bounceCount="50" collision="100,50,500" collisionAdd="0,300,0" effect="NPC/Skill/DevilHugeRed/Eff_DevilHugeRed_Bore_02_B_Ball.xml" />
+					<damage rate="0.03" attackMaterial="1" />
 				</attack>
 				<attack point="p99" targetCount="5" attacktype="1" hitImmuneBreak="1" unrideOnHit="1" compulsionType="1,3" grabTargetType="2">
-					<rangeProperty rangeType="cylinder" distance="150" rangeOffset="0.000000,0.000000,200.000000" height="400" applyTarget="1" castTarget="1" />
-					<arrowProperty nonTarget="1" />
-					<damageProperty rate="0.03" push="1" pushdistance="30" pushduration="0.3" pushEaseType="1" pushFall="1" superArmorBreak="1" />
+					<range rangeType="cylinder" distance="150" rangeOffset="0,0,200" height="400" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.03" push="1" pushdistance="30" pushduration="0.3" pushEaseType="1" pushFall="1" superArmorBreak="1" />
 					<actionAdditional additionalID="52200002" level="1" skillTarget="2" skillOwner="1" />
 				</attack>
 			</motion>
 		</level>
 		<level value="3">
-			<push up="350" />
-			<detectProperty rangeType="cylinder" distance="200" rangeOffset="0.000000,0.000000,50.000000" height="200" />
-			<motion>
-				<motionProperty sequenceName="Attack_03_I" motionEffect="NPC/Skill/Conder/Eff_Conder_Attack_03_I.xml" faceTarget="0" />
+			<detectProperty rangeType="cylinder" distance="200" rangeOffset="0,0,50" height="200" />
+			<motion sequenceName="Attack_03_I" motionEffect="NPC/Skill/Conder/Eff_Conder_Attack_03_I.xml" faceTarget="0">
 				<attack point="p5" targetCount="10" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
-					<rangeProperty rangeType="cylinder" distance="200" rangeOffset="0.000000,200.000000,0.000000" height="200" applyTarget="1" castTarget="1" />
-					<arrowProperty nonTarget="1" />
-					<damageProperty rate="0.03" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="800" pushduration="0.5" pushEaseType="1" pushUpDistance="350" attackMaterial="1" />
+					<range rangeType="cylinder" distance="200" rangeOffset="0,200,0" height="200" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.03" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="800" pushduration="0.5" pushEaseType="1" pushUpDistance="350" attackMaterial="1" />
 				</attack>
 			</motion>
 		</level>
@@ -487,47 +460,45 @@
 			<kinds element="7" />
 		</basic>
 		<level value="1">
-			<motion>
-				<motionProperty sequenceName="Attack_01_H" motionEffect="NPC/Skill/Conder/Eff_Conder_Attack_01_H.xml" movedistance="500" faceTarget="0" doesPlayIdleOnSkillEnd="false" />
+			<motion sequenceName="Attack_01_H" motionEffect="NPC/Skill/Conder/Eff_Conder_Attack_01_H.xml" movedistance="500" faceTarget="0" doesPlayIdleOnSkillEnd="false">
 				<attack point="p0" targetCount="50" attacktype="1" brokenOffence="2" brokenForce="85" unrideOnHit="1">
-					<rangeProperty rangeType="hole_cylinder" distance="400" height="350" width="230" endWidth="400" applyTarget="1" castTarget="1" />
-					<arrowProperty nonTarget="1" />
-					<damageProperty rate="0.7" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushduration="0.2" pushEaseType="1" pushPriority="50" />
+					<range rangeType="hole_cylinder" distance="400" height="350" width="230" endWidth="400" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.7" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushduration="0.2" pushEaseType="1" pushPriority="50" />
 				</attack>
 				<attack point="p1" targetCount="50" attacktype="1" brokenOffence="2" brokenForce="85" unrideOnHit="1">
-					<rangeProperty rangeType="hole_cylinder" distance="400" height="350" width="230" endWidth="400" applyTarget="1" castTarget="1" />
-					<arrowProperty nonTarget="1" />
-					<damageProperty rate="0.7" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushduration="0.2" pushEaseType="1" pushPriority="50" />
+					<range rangeType="hole_cylinder" distance="400" height="350" width="230" endWidth="400" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.7" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushduration="0.2" pushEaseType="1" pushPriority="50" />
 				</attack>
 				<attack point="p2" targetCount="50" attacktype="1" brokenOffence="2" brokenForce="85" unrideOnHit="1">
-					<rangeProperty rangeType="hole_cylinder" distance="400" height="350" width="230" endWidth="400" applyTarget="1" castTarget="1" />
-					<arrowProperty nonTarget="1" />
-					<damageProperty rate="0.7" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushduration="0.2" pushEaseType="1" pushPriority="50" />
+					<range rangeType="hole_cylinder" distance="400" height="350" width="230" endWidth="400" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.7" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushduration="0.2" pushEaseType="1" pushPriority="50" />
 				</attack>
 				<attack point="p3" targetCount="50" attacktype="1" brokenOffence="2" brokenForce="85" unrideOnHit="1">
-					<rangeProperty rangeType="hole_cylinder" distance="400" height="350" width="230" endWidth="400" applyTarget="1" castTarget="1" />
-					<arrowProperty nonTarget="1" />
-					<damageProperty rate="0.7" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushduration="0.2" pushEaseType="1" pushPriority="50" />
+					<range rangeType="hole_cylinder" distance="400" height="350" width="230" endWidth="400" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.7" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushduration="0.2" pushEaseType="1" pushPriority="50" />
 				</attack>
 				<attack point="p4" targetCount="50" attacktype="1" brokenOffence="2" brokenForce="85" unrideOnHit="1">
-					<rangeProperty rangeType="hole_cylinder" distance="400" height="350" width="230" endWidth="400" applyTarget="1" castTarget="1" />
-					<arrowProperty nonTarget="1" />
-					<damageProperty rate="0.7" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushduration="0.2" pushEaseType="1" pushPriority="50" />
+					<range rangeType="hole_cylinder" distance="400" height="350" width="230" endWidth="400" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.7" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushduration="0.2" pushEaseType="1" pushPriority="50" />
 				</attack>
 				<attack point="p5" targetCount="50" attacktype="1" brokenOffence="2" brokenForce="85" unrideOnHit="1">
-					<rangeProperty rangeType="hole_cylinder" distance="400" height="350" width="230" endWidth="400" applyTarget="1" castTarget="1" />
-					<arrowProperty nonTarget="1" />
-					<damageProperty rate="0.7" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushduration="0.2" pushEaseType="1" pushPriority="50" />
+					<range rangeType="hole_cylinder" distance="400" height="350" width="230" endWidth="400" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.7" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushduration="0.2" pushEaseType="1" pushPriority="50" />
 				</attack>
 			</motion>
 		</level>
 		<level value="2">
-			<motion>
-				<motionProperty sequenceName="Attack_02_H" motionEffect="NPC/Skill/Conder/Eff_Conder_Attack_02_H.xml" faceTarget="0" doesPlayIdleOnSkillEnd="false" />
+			<motion sequenceName="Attack_02_H" motionEffect="NPC/Skill/Conder/Eff_Conder_Attack_02_H.xml" faceTarget="0" doesPlayIdleOnSkillEnd="false">
 				<attack point="p6" targetCount="50" attacktype="1" brokenOffence="2" brokenForce="85" unrideOnHit="1">
-					<rangeProperty rangeType="hole_cylinder" distance="400" height="350" width="230" endWidth="400" applyTarget="1" castTarget="1" />
-					<arrowProperty nonTarget="1" />
-					<damageProperty rate="0.7" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushduration="0.2" pushEaseType="1" pushPriority="50" />
+					<range rangeType="hole_cylinder" distance="400" height="350" width="230" endWidth="400" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.7" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushduration="0.2" pushEaseType="1" pushPriority="50" />
 				</attack>
 			</motion>
 		</level>
@@ -539,47 +510,44 @@
 			<stateAttr superArmor="3" />
 		</basic>
 		<level value="1">
-			<motion>
-				<motionProperty sequenceName="Attack_01_J" motionEffect="NPC/Skill/Conder/Eff_Conder_Attack_01_J.xml" faceTarget="0" doesPlayIdleOnSkillEnd="false" />
+			<motion sequenceName="Attack_01_J" motionEffect="NPC/Skill/Conder/Eff_Conder_Attack_01_J.xml" faceTarget="0" doesPlayIdleOnSkillEnd="false">
 				<attack point="p0" attacktype="2" brokenOffence="2" unrideOnHit="1">
-					<rangeProperty applyTarget="1" castTarget="1" />
-					<arrowProperty nonTarget="1" />
-					<damageProperty rate="0.1" />
+					<range applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.1" />
 				</attack>
 			</motion>
 		</level>
 		<level value="2">
-			<detectProperty rangeType="cylinder" distance="500" rangeOffset="0.000000,0.000000,50.000000" height="150" />
-			<motion>
-				<motionProperty sequenceName="Attack_02_J" motionEffect="NPC/Skill/Conder/Eff_Conder_Attack_02_J.xml" faceTarget="0" />
+			<detectProperty rangeType="cylinder" distance="500" rangeOffset="0,0,50" height="150" />
+			<motion sequenceName="Attack_02_J" motionEffect="NPC/Skill/Conder/Eff_Conder_Attack_02_J.xml" faceTarget="0">
 				<attack point="p99" targetCount="1" attacktype="1" brokenOffence="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
-					<rangeProperty rangeType="cylinder" distance="500" height="200" includeCaster="1" applyTarget="2" castTarget="1" />
-					<arrowProperty nonTarget="1" />
-					<damageProperty rate="1" />
+					<range rangeType="cylinder" distance="500" height="200" includeCaster="1" applyTarget="2" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="1" />
 					<actionAdditional additionalID="52200001" level="1" skillTarget="1" skillOwner="1" />
 				</attack>
 				<attack point="p99" targetCount="1" attacktype="1" brokenOffence="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
-					<rangeProperty rangeType="cylinder" distance="500" height="200" includeCaster="1" applyTarget="2" castTarget="1" />
-					<arrowProperty nonTarget="1" />
-					<damageProperty rate="1" />
+					<range rangeType="cylinder" distance="500" height="200" includeCaster="1" applyTarget="2" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="1" />
 					<actionAdditional additionalID="49287007" level="1" skillTarget="1" skillOwner="1" />
 				</attack>
 			</motion>
 		</level>
 		<level value="3">
-			<detectProperty rangeType="cylinder" distance="500" rangeOffset="0.000000,0.000000,50.000000" height="150" />
-			<motion>
-				<motionProperty sequenceName="Attack_02_J" motionEffect="NPC/Skill/Conder/Eff_Conder_Attack_02_J.xml" faceTarget="0" />
+			<detectProperty rangeType="cylinder" distance="500" rangeOffset="0,0,50" height="150" />
+			<motion sequenceName="Attack_02_J" motionEffect="NPC/Skill/Conder/Eff_Conder_Attack_02_J.xml" faceTarget="0">
 				<attack point="p99" targetCount="1" attacktype="1" brokenOffence="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
-					<rangeProperty rangeType="cylinder" distance="500" height="200" includeCaster="1" applyTarget="2" castTarget="1" />
-					<arrowProperty nonTarget="1" />
-					<damageProperty rate="1" />
+					<range rangeType="cylinder" distance="500" height="200" includeCaster="1" applyTarget="2" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="1" />
 					<actionAdditional additionalID="52200001" level="1" skillTarget="1" skillOwner="1" />
 				</attack>
 				<attack point="p99" targetCount="1" attacktype="1" brokenOffence="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
-					<rangeProperty rangeType="cylinder" distance="500" height="200" includeCaster="1" applyTarget="2" castTarget="1" />
-					<arrowProperty nonTarget="1" />
-					<damageProperty rate="1" />
+					<range rangeType="cylinder" distance="500" height="200" includeCaster="1" applyTarget="2" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="1" />
 					<actionAdditional additionalID="49287007" level="2" skillTarget="1" skillOwner="1" />
 				</attack>
 			</motion>
@@ -593,23 +561,21 @@
 		</basic>
 		<level value="1">
 			<detectProperty rangeType="box" />
-			<motion>
-				<motionProperty sequenceName="Attack_01_C" motionEffect="NPC/Skill/Conder/Eff_Conder_Attack_01_C.xml" faceTarget="0" doesPlayIdleOnSkillEnd="false" />
+			<motion sequenceName="Attack_01_C" motionEffect="NPC/Skill/Conder/Eff_Conder_Attack_01_C.xml" faceTarget="0" doesPlayIdleOnSkillEnd="false">
 				<attack point="p0" attacktype="1" attackMethodType="1" brokenOffence="1" unrideOnHit="1">
-					<rangeProperty rangeType="box" distance="500" height="320" width="500" applyTarget="1" castTarget="1" />
-					<arrowProperty nonTarget="1" effect="NPC/Skill/Temp/Eff_Temp.xml" />
-					<damageProperty rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
+					<range rangeType="box" distance="500" height="320" width="500" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" effect="NPC/Skill/Temp/Eff_Temp.xml" />
+					<damage rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
 				</attack>
 			</motion>
 		</level>
 		<level value="2">
 			<detectProperty rangeType="box" distance="350" height="320" width="500" />
-			<motion>
-				<motionProperty sequenceName="Attack_02_C" motionEffect="NPC/Skill/Conder/Eff_Conder_Attack_02_C.xml" doesPlayIdleOnSkillEnd="false" />
+			<motion sequenceName="Attack_02_C" motionEffect="NPC/Skill/Conder/Eff_Conder_Attack_02_C.xml" doesPlayIdleOnSkillEnd="false">
 				<attack point="p0" targetCount="50" attacktype="1" brokenOffence="70" brokenForce="5" unrideOnHit="1" compulsionType="1,3">
-					<rangeProperty rangeType="cylinder" distance="6000" rangeAdd="0.000000,0.000000,120.000000" height="1500" />
-					<arrowProperty nonTarget="1" />
-					<damageProperty rate="1.2" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="450" pushduration="1" pushEaseType="1" pushUpDistance="900" pushDown="1" attackMaterial="1000" />
+					<range rangeType="cylinder" distance="6000" rangeAdd="0,0,120" height="1500" />
+					<arrow nonTarget="1" />
+					<damage rate="1.2" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="450" pushduration="1" pushEaseType="1" pushUpDistance="900" pushDown="1" attackMaterial="1000" />
 				</attack>
 			</motion>
 		</level>
@@ -622,12 +588,11 @@
 		</basic>
 		<level value="1">
 			<detectProperty rangeType="box" />
-			<motion>
-				<motionProperty sequenceName="Talk_A" faceTarget="0" doesPlayIdleOnSkillEnd="false" />
+			<motion sequenceName="Talk_A" faceTarget="0" doesPlayIdleOnSkillEnd="false">
 				<attack point="p0" attacktype="1" attackMethodType="1" brokenOffence="1" unrideOnHit="1">
-					<rangeProperty rangeType="box" distance="500" height="320" width="500" applyTarget="1" castTarget="1" />
-					<arrowProperty nonTarget="1" effect="NPC/Skill/Temp/Eff_Temp.xml" />
-					<damageProperty rate="1" attackMaterial="1" />
+					<range rangeType="box" distance="500" height="320" width="500" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" effect="NPC/Skill/Temp/Eff_Temp.xml" />
+					<damage rate="1" attackMaterial="1" />
 				</attack>
 			</motion>
 		</level>
