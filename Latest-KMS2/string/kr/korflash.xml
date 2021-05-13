@@ -360,6 +360,7 @@
 	<key id="$s_gameoption_systemSoundStep" value="시스템 음성" />
 	<key id="$s_gameoption_instrumentStep" value="악기 연주" />
 	<key id="$s_gameoption_instrumentStep_isOffBgm" value="악보 연주를 들을 때 배경음 끄기" />
+	<key id="$s_gameoption_charSoundStep" value="캐릭터 음성" />
 	<key id="$s_gameoption_effect" value="효과" />
 	<key id="$s_gameoption_sound_effect" value="효과음" />
 	<key id="$s_gameoption_sound_background" value="배경음악" />
@@ -958,8 +959,7 @@
 	<key id="$s_tooltip_myinfo_stat_0_6" value="&lt;FONT color=&apos;#FFD200&apos; size=&apos;15&apos; &gt;LUK&lt;/FONT&gt;\n&lt;FONT size=&apos;3&apos;&gt; &lt;/FONT&gt;\n시프/어쌔신의 주요 능력치입니다.\n위자드/시프/어쌔신/헤비거너의 물리 공격력이 증가하며 크리티컬 확률에 영향을 줍니다." />
 	<key id="$s_tooltip_myinfo_stat_0_7" value="&lt;FONT color=&apos;#FFD200&apos; size=&apos;15&apos; &gt;이동속도&lt;/FONT&gt;\n&lt;FONT size=&apos;3&apos;&gt; &lt;/FONT&gt;\n캐릭터가 지상에서 이동하는 속도입니다.\n100%가 기본 상태이며 최대 170%까지 상승할 수 있습니다." />
 	<key id="$s_tooltip_myinfo_stat_1_0" value="&lt;FONT color=&apos;#FFD200&apos; size=&apos;15&apos; &gt;무기 공격력&lt;/FONT&gt;\n&lt;FONT size=&apos;3&apos;&gt; &lt;/FONT&gt;\n착용하고 있는 오른손 장비의 공격력입니다.\n적을 공격 시 입히는 대미지가 증가합니다." />
-	<key id="$s_tooltip_myinfo_stat_1_1" value="&lt;FONT color=&apos;#FFD200&apos; size=&apos;15&apos; &gt;전투력&lt;/FONT&gt;\n&lt;FONT size=&apos;3&apos;&gt; &lt;/FONT&gt;\n캐릭터의 전투력입니다. 적을 공격 시 입히는 대미지가 증가합니다.\n착용 중인 무기의 등급이 높을수록 효율이 증가하며\n무기를 착용하지 않은 경우 효과가 적용되지 않습니다." />
-	<key id="$s_tooltip_myinfo_stat_1_1_kr" value="&lt;FONT color=&apos;#FFD200&apos; size=&apos;15&apos; &gt;전투력&lt;/FONT&gt;\n&lt;FONT size=&apos;3&apos;&gt; &lt;/FONT&gt;\n캐릭터의 전투력입니다.\n적을 공격 시 입히는 대미지가 증가합니다." />
+	<key id="$s_tooltip_myinfo_stat_1_1" value="&lt;FONT color=&apos;#FFD200&apos; size=&apos;15&apos; &gt;전투력&lt;/FONT&gt;\n&lt;FONT size=&apos;3&apos;&gt; &lt;/FONT&gt;\n캐릭터의 전투력입니다.\n적을 공격 시 입히는 대미지가 증가합니다." />
 	<key id="$s_tooltip_myinfo_stat_1_2" value="&lt;FONT color=&apos;#FFD200&apos; size=&apos;15&apos; &gt;물리 공격력&lt;/FONT&gt;\n&lt;FONT size=&apos;3&apos;&gt; &lt;/FONT&gt;\n적에게 물리 공격 시 입히는 대미지가 증가합니다." />
 	<key id="$s_tooltip_myinfo_stat_1_3" value="&lt;FONT color=&apos;#FFD200&apos; size=&apos;15&apos; &gt;마법 공격력&lt;/FONT&gt;\n&lt;FONT size=&apos;3&apos;&gt; &lt;/FONT&gt;\n적에게 마법 공격 시 입히는 대미지가 증가합니다." />
 	<key id="$s_tooltip_myinfo_stat_1_4" value="&lt;FONT color=&apos;#FFD200&apos; size=&apos;15&apos; &gt;방어력 관통&lt;/FONT&gt;\n&lt;FONT size=&apos;3&apos;&gt; &lt;/FONT&gt;\n적을 공격 시 방어력과 완전 방어를 일부 무시합니다." />
@@ -2066,8 +2066,12 @@
 	<key id="$s_meratmarket_text_ban_msg" value="차단된 상품입니다." />
 	<key id="$s_meratmarket_text_empty_sales" value="등록된 상품이 없습니다." />
 	<key id="$s_meratmarket_text_empty_search" value="검색 결과가 없습니다." />
-	<key id="$s_meratmarket_text_limited_soldout" value="판매 종료" />
+	<key id="$s_meratmarket_text_limited_soldout" value="Coming Soon..." />
 	<key id="$s_meratmarket_text_limited_expired" value="판매 종료" />
+	<key id="$s_meratmarket_text_changeable_comming_soon" value="Coming Soon..." />
+	<key id="$s_meratmarket_text_changeable_remainTime" value="남은 시간 : {0}" />
+	<key id="$s_meratmarket_text_changeable_nextTime" value="다음 판매까지 : {0}" />
+	<key id="$s_meratmarket_text_changeable_extra_button_label" value="상품 설명" />
 	<key id="$s_meratmarket_market_retract" value="청약 철회" />
 	<key id="$s_meratmarket_check_enable_design" value="등록 가능한 디자인 아이템만 보기" />
 	<key id="$s_meratmarket_check_agree_terms" value="주의 사항을 충분히 읽었으며, 이용에 동의합니다." />
@@ -2824,15 +2828,10 @@
 	<key id="$s_bluemarble_tag_starting" value="출발" />
 	<key id="$s_bluemarble_tag_paradise" value="보물창고" />
 	<key id="$s_bluemarble_tag_worldtour" value="세계여행" />
+	<key id="$s_bluemarble_tag_trap" value="감옥" />
 	<key id="$s_bluemarble_complete_count" value="누적 완주 횟수 :" />
-	<key id="$s_bluemarble_warning" value="주사위를 던지면 마블 티켓 1개가 소모됩니다." />
-	<key id="$s_bluemarble_warning" value="주사위를 던지면 마블 티켓 1개가 소모됩니다." feature="Event" locale="CN" />
-	<key id="$s_bluemarble_warning" value="주사위를 던지면 에네르 주화 2개가 소모됩니다." locale="NA" />
-	<key id="$s_bluemarble_warning" value="주사위를 던지면 메이플 코인 1개가 소모됩니다." feature="Event" locale="JP" />
-	<key id="$s_bluemarble_coin_count" value="소지한 티켓 개수 :" />
-	<key id="$s_bluemarble_coin_count" value="소지한 티켓 개수 :" feature="Event" locale="CN" />
-	<key id="$s_bluemarble_coin_count" value="소지한 코인 개수 :" locale="NA" />
-	<key id="$s_bluemarble_coin_count" value="소지한 코인 개수 :" feature="Event" locale="JP" />
+	<key id="$s_bluemarble_warning" value="주사위를 던지면 {0} {1}개가 소모됩니다." />
+	<key id="$s_bluemarble_coin_count" value="소지 개수:" />
 	<key id="$s_bluemarble_dice_result" value="{0}칸 이동!" />
 	<key id="$s_bluemarble_notify_action_fail" value="꽝!! 다음엔 잘될꺼야" />
 	<key id="$s_bluemarble_notify_action_trap" value="숫자 {0} 이상이 되면 석방해주지!" />
