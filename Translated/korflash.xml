@@ -1,4 +1,4 @@
-<?xml version='1.0' encoding='utf-8'?>
+<?xml version="1.0" encoding="utf-8"?>
 <ms2>
 	<key id="$s_common_text_restrict" value="0-9 a-z A-Z" />
 	<key id="$s_common_confirm" value="OK" />
@@ -345,6 +345,7 @@
 	<key id="$s_gameoption_whisperNotify" value="Block whispers" />
 	<key id="$s_gameoption_homeRequest" value="Block home invites" />
 	<key id="$s_gameoption_coupleEmotionRequest" value="Block Buddy Emote invites" />
+	<key id="$s_gameoption_singleriding" value="2인 탈것 혼자 타기" />
 	<key id="$s_gameoption_muteAll" value="Mute" />
 	<key id="$s_gameoption_playAll" value="Play Sounds in Background" />
 	<key id="$s_gameoption_disable_job_sound" value="Use Generic Sound" />
@@ -359,6 +360,7 @@
 	<key id="$s_gameoption_systemSoundStep" value="System Voices" />
 	<key id="$s_gameoption_instrumentStep" value="Instruments" />
 	<key id="$s_gameoption_instrumentStep_isOffBgm" value="Mute BGM during performances" />
+	<key id="$s_gameoption_charSoundStep" value="캐릭터 음성" />
 	<key id="$s_gameoption_effect" value="Effects" />
 	<key id="$s_gameoption_sound_effect" value="Sound Effects" />
 	<key id="$s_gameoption_sound_background" value="Music" />
@@ -396,6 +398,7 @@
 	<key id="$s_gameoption_optimizer_count" value="" />
 	<key id="$s_gameoption_optimizer_useOptimizer" value="Auto-optimization" />
 	<key id="$s_gameoption_optimizer_warning" value="Use this to keep your game experience optimized.\nIf the game becomes unstable, please\ntry disabling this option." />
+	<key id="$s_gameoption_optimizer_show_physx" value="다른 캐릭터 헤어 물리 적용하기" />
 	<key id="$s_skill_title" value="Skills" />
 	<key id="$s_skill_active" value="Active" />
 	<key id="$s_skill_passive" value="Passive" />
@@ -957,7 +960,6 @@
 	<key id="$s_tooltip_myinfo_stat_0_7" value="&lt;FONT color='#FFD200' size='15' &gt;Movement Speed&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;\nYour character's ground movement speed. 100% represents normal speed. Can be increased up to 170%." />
 	<key id="$s_tooltip_myinfo_stat_1_0" value="&lt;FONT color='#FFD200' size='15' &gt;Weapon Attack&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;\nThe total attack power of your equipped gear. Increases the damage dealt to enemies." />
 	<key id="$s_tooltip_myinfo_stat_1_1" value="&lt;FONT color='#FFD200' size='15' &gt;Bonus Attack&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;\nYour bonus attack power. Increases damage dealt to enemies. Its efficiency increases with your weapon's tier. Has no effect when no weapon is equipped." />
-	<key id="$s_tooltip_myinfo_stat_1_1_kr" value="&lt;FONT color='#FFD200' size='15' &gt;Bonus Attack&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;\nYour bonus attack power. Increases damage dealt to enemies." />
 	<key id="$s_tooltip_myinfo_stat_1_2" value="&lt;FONT color='#FFD200' size='15' &gt;Physical Attack&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;\nIncreases the damage dealt to enemies with physical attacks." />
 	<key id="$s_tooltip_myinfo_stat_1_3" value="&lt;FONT color='#FFD200' size='15' &gt;Magic Attack&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;\nIncreases the damage dealt to enemies from magic attacks." />
 	<key id="$s_tooltip_myinfo_stat_1_4" value="&lt;FONT color='#FFD200' size='15' &gt;Piercing&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;\nIgnores a portion of the enemy's defense and perfect guard when attacking." />
@@ -1187,6 +1189,7 @@
 	<key id="$s_serverlist_selectmode" value="Select Mode" />
 	<key id="$s_regionlist_notice" value="Select the region closest to you for a better network connection." />
 	<key id="$s_regionlist_prev" value="Servers" />
+	<key id="$s_delete_account" value="Delete Account" />
 	<key id="$s_skillbook_title" value="Skills" />
 	<key id="$s_skillbook_passive" value="Passive" />
 	<key id="$s_skillbook_upgrade" value="Upgrade Material" />
@@ -2066,6 +2069,10 @@
 	<key id="$s_meratmarket_text_empty_search" value="No search results." />
 	<key id="$s_meratmarket_text_limited_soldout" value="Out of Stock" />
 	<key id="$s_meratmarket_text_limited_expired" value="Out of Stock" />
+	<key id="$s_meratmarket_text_changeable_comming_soon" value="Coming Soon..." />
+	<key id="$s_meratmarket_text_changeable_remainTime" value="남은 시간 : {0}" />
+	<key id="$s_meratmarket_text_changeable_nextTime" value="다음 판매까지 : {0}" />
+	<key id="$s_meratmarket_text_changeable_extra_button_label" value="상품 설명" />
 	<key id="$s_meratmarket_market_retract" value="Refunding" />
 	<key id="$s_meratmarket_check_enable_design" value="Hide Pre-existing Designs" />
 	<key id="$s_meratmarket_check_agree_terms" value="I have read and agreed to the terms and conditions." />
@@ -2822,15 +2829,10 @@
 	<key id="$s_bluemarble_tag_starting" value="Start" />
 	<key id="$s_bluemarble_tag_paradise" value="Treasure Trove" />
 	<key id="$s_bluemarble_tag_worldtour" value="Round Trip" />
+	<key id="$s_bluemarble_tag_trap" value="감옥" />
 	<key id="$s_bluemarble_complete_count" value="Times Around Board:" />
 	<key id="$s_bluemarble_warning" value="Each roll costs 1 Marvel Ticket" />
-	<key id="$s_bluemarble_warning" value="Each roll costs 1 Marvel Ticket" feature="Event" locale="CN" />
-	<key id="$s_bluemarble_warning" value="Each roll costs 1 Marvel Ticket" locale="NA" />
-	<key id="$s_bluemarble_warning" value="Each roll costs 1 Marvel Ticket" feature="Event" locale="JP" />
 	<key id="$s_bluemarble_coin_count" value="Marvel Tickets:" />
-	<key id="$s_bluemarble_coin_count" value="Marvel Tickets:" feature="Event" locale="CN" />
-	<key id="$s_bluemarble_coin_count" value="Marvel Tickets:" locale="NA" />
-	<key id="$s_bluemarble_coin_count" value="Marvel Tickets:" feature="Event" locale="JP" />
 	<key id="$s_bluemarble_dice_result" value="You rolled {0}!" />
 	<key id="$s_bluemarble_notify_action_fail" value="Bummer! Better luck next time!" />
 	<key id="$s_bluemarble_notify_action_trap" value="It'll release when the number passes {0}!" />
@@ -3589,16 +3591,6 @@
 	<key id="$s_hideandseek_msg_exp" value="Experience" />
 	<key id="$s_hideandseek_msg_reward" value="Reward" />
 	<key id="$s_hideandseek_reward_text" value="You got {0} item(s) as a reward." />
-	<key id="$s_payback_dialog_title" value="Payback Achievement Status" feature="Payback" />
-	<key id="$s_payback_dialog_banner_chatballoon" value="Anyone can payback just by raising their adventure level! Join now!" feature="Payback" />
-	<key id="$s_payback_dialog_banner_title" value="Orange Mushroom Power-Up Capsule" feature="Payback" />
-	<key id="$s_payback_dialog_banner_subtitle" value="Payback Event &lt;font color='#ec686e'&gt;100%&lt;/font&gt; maxed" feature="Payback" />
-	<key id="$s_payback_dialog_banner_desc" value="** The payback amount will be paid in regular merets with no expiration date and will be sent by mail on midnight on the 1st of the following month after the event ends.\n** You can receive paybacks of up to 10,000 merets, excluding the amount purchased with game merets and event merets." feature="Payback" />
-	<key id="$s_payback_dialog_banner_desc" value="** 페이백 금액은 사용 기한이 없는 일반 메럿으로 지급되며, 이벤트 종료 후 다음 달 1일 자정 기준 우편으로 발송됩니다.\n** 최대 10만 메럿까지 페이백 받을 수 있으며 게임 메럿, 이벤트 메럿으로 구입한 금액은 제외됩니다." feature="Payback" locale="CN" />
-	<key id="$s_payback_dialog_predict_title" value="Current Expected Meret Payback" feature="Payback" />
-	<key id="$s_payback_dialog_buy_product_btn" value="Purchase" feature="Payback" />
-	<key id="$s_payback_dialog_status_title" value="Payback Attainment Status" feature="Payback" />
-	<key id="$s_gamemenu_btn_payback" value="Payback" feature="Payback" />
 	<key id="$s_itemgacha_dialog_single_open" value="Open One" feature="" />
 	<key id="$s_itemgacha_dialog_multi_open" value="Open 10" feature="" />
 	<key id="$s_itemgacha_dialog_probability" value="Odds" feature="" />
@@ -3609,8 +3601,6 @@
 	<key id="$s_unlimited_enchant_dialog_desc" value="Extract the power hidden in equipment\nSwitch to equipment that breaks through the limits.\n&lt;font color='#ec686e'&gt;Please select an equipment item to limit break.&lt;/font&gt;\n\nLimit breaks are only possible with a 15* fire prism weapon.\nThe random bonus will be retained after limitbreaks.\nEvery 10 limit breaks, a powerful ability is added." feature="UnlimitedEnchant" />
 	<key id="$s_unlimited_enchant_dialog_enchant" value="Limit Break" feature="UnlimitedEnchant" />
 	<key id="$s_unlimited_enchant_dialog_retry" value="Retry" feature="UnlimitedEnchant" />
-	<key id="$s_gameoption_singleriding" value="Riding alone on a 2-person ride" />
-	<key id="$s_gameoption_optimizer_show_physx" value="Applying different character hair physics" />
 	<key id="$s_longtermattendgift_dialog_reward" value="Reward List" feature="" />
 	<key id="$s_longtermattendgift_dialog_state" value="My Status" feature="" />
 	<key id="$s_longtermattendgift_dialog_btn_attendance" value="Add Ducky Ball" feature="" />
