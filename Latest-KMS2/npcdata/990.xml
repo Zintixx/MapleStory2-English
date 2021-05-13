@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ms2>
+	<npc id="99000038">
+		<environment feature="Season1" npcAttackGroup="1" npcDefenseGroup="2" nametag="1" minimap="0" hpBar="1" defenceMaterial="1" hitImmune="1" abnormalImmune="1" level="17" rankIcon="c" carePathToEnemy="1" raceString="animal" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/02020094_M_SandStrauch_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" lookAtMyPCWhenTalking="0">
+			<model kfm="02020094_M_SandStrauch" scale="1.1" shadowScale="95" rotationSpeed="720" walkSpeed="165" runSpeed="330" />
+			<stat hp="1350" asp="100" msp="100" atp="80" evp="82" cap="46" cad="500" car="50" ndd="85" pap="863" map="863" par="90" mar="90" />
+			<distance avoid="100" sight="400" sightHeightUP="300" sightHeightDown="0" />
+			<skill ids="49008001" levels="1" probs="100" />
+			<additionalEffect codes="90000814" levels="1" />
+			<collision shape="box" width="80" height="80" depth="80" />
+			<capsule radius="55" height="150" />
+			<dead time="5" defaultaction="Dead_A" upaction="Dead_B" />
+			<push back="1" up="1" knockback="1" />
+			<normal action="Idle_A,Bore_A,Walk_A" prob="4500,1000,4500" movearea="150" />
+			<dropiteminfo dropHeight="150" dropDistanceBase="140" dropDistanceRandom="10" globalDropBoxId="1,10003" />
+		</environment>
+	</npc>
+	<npc id="99000039">
+		<environment feature="Season1" npcAttackGroup="1" npcDefenseGroup="2" nametag="1" minimap="0" hpBar="1" defenceMaterial="1" hitImmune="1" abnormalImmune="1" level="17" rankIcon="c" carePathToEnemy="1" raceString="animal" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/02020096_M_AppleMonkeyBrown_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" lookAtMyPCWhenTalking="0">
+			<model kfm="02020096_M_AppleMonkeyBrown" scale="1.4" shadowScale="95" rotationSpeed="720" walkSpeed="200" runSpeed="400" />
+			<stat hp="6754" asp="100" msp="100" atp="80" evp="82" cap="46" cad="500" car="50" ndd="85" pap="3452" map="3453" par="90" mar="90" />
+			<distance avoid="100" sight="600" sightHeightUP="300" sightHeightDown="0" />
+			<skill ids="49009001,49009011" levels="1,1" probs="50,50" />
+			<additionalEffect codes="90000814" levels="1" />
+			<collision shape="box" width="80" height="110" depth="100" />
+			<capsule radius="55" height="150" />
+			<dead time="5" defaultaction="Dead_A" upaction="Dead_B" />
+			<push back="1" up="1" knockback="1" />
+			<normal action="Idle_A,Bore_A,Walk_A" prob="4500,1000,4500" movearea="150" />
+			<dropiteminfo dropHeight="100" dropDistanceBase="100" dropDistanceRandom="50" globalDropBoxId="1,10003" individualDropBoxId="799000039" />
+		</environment>
+	</npc>
+	<npc id="99000040">
+		<environment feature="Season1" npcAttackGroup="1" npcDefenseGroup="2" nametag="1" minimap="0" hpBar="1" defenceMaterial="1" hitImmune="1" abnormalImmune="1" level="25" rankIcon="c" carePathToEnemy="1" raceString="combine" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/02020178_M_FrogSoldierSpearGreen_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" lookAtMyPCWhenTalking="0">
+			<model kfm="02020178_M_FrogSoldierSpearGreen" shadowScale="140" rotationSpeed="720" walkSpeed="250" runSpeed="500" />
+			<stat hp="3578" asp="100" msp="100" atp="80" evp="82" cap="50" cad="500" car="50" ndd="162" pap="2944" map="2945" par="90" mar="90" />
+			<distance avoid="100" sight="600" sightHeightUP="300" sightHeightDown="0" />
+			<skill ids="49010001,49010011" levels="1,1" probs="50,50" />
+			<additionalEffect codes="90000814" levels="1" />
+			<collision shape="box" width="180" height="130" depth="180" />
+			<capsule radius="65" height="200" />
+			<dead time="10" defaultaction="Dead_A,Dead_B" upaction="Dead_B" />
+			<push back="1" up="1" knockback="1" />
+			<normal action="Idle_A,Bore_A,Walk_A" prob="4500,1000,4500" movearea="150" />
+			<dropiteminfo dropHeight="150" dropDistanceBase="140" dropDistanceRandom="10" globalDropBoxId="1,10008" />
+			<aiInfo path="AI_DefaultNew_LessHpUsingOnceIdx2.xml" />
+		</environment>
+	</npc>
+	<npc id="99000041">
+		<environment feature="Season1" npcAttackGroup="1" npcDefenseGroup="2" nametag="1" minimap="0" hpBar="1" defenceMaterial="1" hitImmune="1" abnormalImmune="1" rankIcon="c" carePathToEnemy="1" raceString="plant" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/02020001_M_OrangeMushroom_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" customExp="0" lookAtMyPCWhenTalking="0">
+			<model kfm="02020001_M_OrangeMushroom" shadowScale="130" rotationSpeed="720" walkSpeed="110" runSpeed="220" />
+			<stat hp="3" asp="100" msp="100" atp="80" evp="82" cap="38" cad="500" car="50" ndd="9" />
+			<distance avoid="60" sightHeightUP="0" sightHeightDown="0" />
+			<skill ids="40000001" levels="1" probs="100" />
+			<collision shape="box" width="60" height="80" depth="60" />
+			<capsule radius="35" height="100" />
+			<dead time="2" defaultaction="Dead_A,Dead_B" upaction="Dead_B" />
+			<push back="1" up="1" knockback="1" />
+			<normal action="Idle_A,Bore_A,Walk_A" prob="4500,1500,4000" movearea="150" />
+			<dropiteminfo dropHeight="150" dropDistanceBase="140" dropDistanceRandom="10" />
+			<aiInfo path="AI_Default_SkillOnly.xml" />
+		</environment>
+	</npc>
+	<npc id="99000042">
+		<environment feature="Season1" npcAttackGroup="1" npcDefenseGroup="2" nametag="1" minimap="0" hpBar="1" defenceMaterial="1" hitImmune="1" abnormalImmune="1" level="2" rankIcon="c" carePathToEnemy="1" raceString="animal" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/21000099_M_MinipigPink_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" customExp="0" lookAtMyPCWhenTalking="0">
+			<model kfm="21000099_M_MinipigPink" shadowScale="150" rotationSpeed="720" walkSpeed="215" runSpeed="430" />
+			<stat hp="10" asp="100" msp="100" atp="80" evp="82" cap="38" cad="500" car="50" ndd="10" />
+			<distance avoid="60" sightHeightUP="0" sightHeightDown="0" />
+			<skill ids="49012001" levels="1" probs="100" />
+			<collision shape="box" width="65" height="75" depth="120" />
+			<capsule radius="60" height="150" />
+			<dead time="2" defaultaction="Dead_A,Dead_B" upaction="Dead_B" />
+			<push back="1" up="1" knockback="1" />
+			<normal action="Idle_A,Attack_Idle_B,Walk_A" prob="3500,1500,5000" movearea="150" />
+			<dropiteminfo dropHeight="150" dropDistanceBase="140" dropDistanceRandom="10" />
+			<aiInfo path="AI_Default_SkillOnly.xml" />
+		</environment>
+	</npc>
+	<npc id="99000055">
+		<environment feature="Season1" npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="elite_boss" nametag="1" defenceMaterial="1" hitImmune="99" abnormalImmune="99" level="32" class="3" rankIcon="b" carePathToEnemy="1" raceString="undead" bossNotify="1" gender="0" portrait="./Data/Resource/Image/Portrait/Mob/21000322_M_ZombieMushroom_P.png" damagedVibrateDuration="0.5" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" bossSoundDistance="1300" bossSoundEndDistance="2400" lookAtMyPCWhenTalking="0">
+			<model kfm="21000322_M_ZombieMushroom" scale="1.6" shadowScale="400" rotationSpeed="720" walkSpeed="100" runSpeed="200" />
+			<stat hp="557935" asp="100" msp="100" atp="81" evp="82" cap="53" cad="500" car="50" ndd="250" pap="36163" map="36175" par="105" mar="105" />
+			<distance avoid="140" sight="800" sightHeightUP="300" sightHeightDown="0" customLastSightRadius="2500" customLastSightHeightUp="525" customLastSightHeightDown="225" />
+			<skill ids="50000429" levels="1" probs="100" />
+			<collision shape="box" width="156.25" height="106.25" depth="156.25" />
+			<capsule radius="130" height="150" />
+			<dead time="5" defaultaction="Dead_A" upaction="Dead_A" />
+			<normal action="Idle_A,Bore_A,Walk_A" prob="3500,3500,3000" movearea="150" />
+			<dropiteminfo dropHeight="150" dropDistanceBase="200" dropDistanceRandom="10" fireVelocity="150" globalDropBoxId="3" globalHitDropBoxId="100000" />
+			<aiInfo path="AI_ZombieMushMom.xml" />
+		</environment>
+	</npc>
+</ms2>

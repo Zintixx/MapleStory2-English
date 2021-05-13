@@ -3,7 +3,7 @@
 <ms2>
 	<environment feature="Develop" locale="">
 		<model kfm="21000930_M_DevilHornSpearBlue" scale="1.25" />
-		<basic npcAttackGroup="1" npcDefenseGroup="2" nametag="1" nametagSize="18" defenceMaterial="1" hitImmune="98" abnormalImmune="98" level="70" class="7" rankIcon="b" carePathToEnemy="1" difficulty="70" propertyTags="keep_battle,battle_on_spawn" raceString="animal" gender="2" mainTags="None" portrait="./Data/Resource/Image/Portrait/Mob/21000930_M_DevilHornSpearBlue_P.png" damagedColorScale="10" damagedVibrateDuration="1" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Cube_Regen_DarkTear.xml" skipFrame="1" />
+		<basic npcAttackGroup="1" npcDefenseGroup="2" nametag="1" nametagSize="18" defenceMaterial="1" hitImmune="98" abnormalImmune="98" level="70" class="7" rankIcon="b" carePathToEnemy="1" propertyTags="keep_battle,battle_on_spawn" raceString="animal" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/21000930_M_DevilHornSpearBlue_P.png" damagedColorScale="10" damagedVibrateDuration="1" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Cube_Regen_DarkTear.xml" />
 		<stat hp="3942903" asp="100" msp="100" atp="81" evp="102" cap="72" cad="500" car="70" ndd="1071" pap="588133" map="452547" par="90" mar="90" scaleStatRate_1="8" scaleBaseTap_1="6064143" scaleBaseDef_1="7086" scaleBaseSpaRate_1="0.15" />
 		<speed rotation="720" walk="120" run="240" />
 		<distance avoid="100" sight="999999" sightHeightUP="99999" sightHeightDown="99999" customLastSightRadius="999999" customLastSightHeightUp="99999" customLastSightHeightDown="800" />
@@ -15,13 +15,13 @@
 		<shadow scale="130" bias="1" />
 		<normal action="Idle_A" prob="10000" movearea="150" maidExpired="Idle_A" />
 		<dropiteminfo dropHeight="50" dropDistanceBase="100" dropDistanceRandom="50" globalDropBoxId="7" />
-		<lookattarget lookAtMyPCWhenTalking="0" useTalkMotion="1" />
+		<lookattarget lookAtMyPCWhenTalking="0" />
 		<aiInfo path="AI_DefaultNew.xml" />
 	</environment>
 	<effectdummy>
 		<dummy name="Eff_UI">
-			<attachInfo parentNode="Scene Root" applyLocalScale="false" applyWorldTransform="true" />
-			<transform translate="0.0, 0.0, 320.0" rotation="0.0, 0.0, 0.0" scale="1.0" />
+			<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
+			<transform translate="0,0,320" />
 		</dummy>
 	</effectdummy>
 </ms2>

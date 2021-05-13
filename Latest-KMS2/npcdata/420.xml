@@ -1,0 +1,920 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ms2>
+	<npc id="42000001">
+		<environment feature="Develop" npcAttackGroup="1" npcDefenseGroup="2" nametag="1" minimap="0" hpBar="1" defenceMaterial="1" hitImmune="1" abnormalImmune="1" level="52" rankIcon="c" carePathToEnemy="1" raceString="animal" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/21000750_M_FloccusRabbitBlue_P.png" damagedColorScale="10" damagedVibrateDuration="1" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" lookAtMyPCWhenTalking="0">
+			<model kfm="21000750_M_FloccusRabbitBlue" shadowScale="130" rotationSpeed="720" walkSpeed="120" runSpeed="240" />
+			<stat hp="23207" asp="100" msp="100" atp="80" evp="84" cap="63" cad="500" car="52" ndd="610" pap="32236" map="32246" par="90" mar="90" />
+			<distance avoid="100" sight="400" sightHeightUP="300" sightHeightDown="0" />
+			<skill ids="60101001,60101011" levels="1,1" probs="80,20" />
+			<additionalEffect codes="60135001" levels="1" group="1,2" />
+			<collision shape="box" width="150" height="130" depth="150" />
+			<capsule radius="50" height="180" />
+			<dead time="5" defaultaction="Dead_A,Dead_B" upaction="Dead_B" />
+			<push back="1" up="1" knockback="1" />
+			<normal action="Idle_A,Bore_A,Walk_A" prob="4100,900,5000" movearea="150" />
+			<dropiteminfo dropHeight="150" dropDistanceBase="100" dropDistanceRandom="50" globalDropBoxId="1,10003" />
+			<aiInfo path="AI_DefaultNew_ShadowGate.xml" />
+		</environment>
+	</npc>
+	<npc id="42010001">
+		<environment feature="ShadowCataclysm" npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="enemy" nametag="1" defenceMaterial="1" hitImmune="1" abnormalImmune="1" level="55" class="3" rankIcon="b" carePathToEnemy="1" raceString="animal" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/21000251_M_FrilledLizardPurple_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" customExp="55831" lookAtMyPCWhenTalking="0">
+			<model kfm="21000251_M_FrilledLizardPurple" shadowScale="130" rotationSpeed="720" walkSpeed="170" runSpeed="340" />
+			<stat hp="20524710" asp="100" msp="100" atp="81" evp="87" cap="65" cad="500" car="50" ndd="678" pap="473690" map="473760" par="90" mar="90" scaleStatRate_1="1.4" scaleBaseTap_1="15194412" scaleBaseDef_1="14863" scaleBaseSpaRate_1="0.2" scaleStatRate_2="1.4" scaleBaseTap_2="22349270" scaleBaseDef_2="23089" scaleBaseSpaRate_2="0.2" />
+			<distance avoid="60" sight="1200" sightHeightUP="300" sightHeightDown="0" />
+			<skill ids="40187001,40187011" levels="1,1" probs="80,20" />
+			<additionalEffect codes="60135001" levels="1" group="1,2" />
+			<collision shape="box" width="130" height="130" depth="100" />
+			<capsule radius="80" height="150" />
+			<dead time="5" defaultaction="Dead_A,Dead_B" upaction="Dead_B" />
+			<push back="1" up="1" knockback="1" />
+			<normal action="Idle_A,Bore_A,Walk_A" prob="4500,1500,4000" movearea="150" />
+			<dropiteminfo dropHeight="50" dropDistanceBase="100" dropDistanceRandom="50" globalDropBoxId="3" />
+			<effectdummy>
+				<dummy name="Eff_Head">
+					<attachInfo parentNode="Bip01 Head" />
+					<transform translate="30,10,0" />
+				</dummy>
+				<dummy name="Eff_Body">
+					<attachInfo parentNode="Bip01 Spine1" />
+				</dummy>
+				<dummy name="Eff_UI">
+					<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,-20,220" />
+				</dummy>
+				<dummy name="Eff_Head_World">
+					<attachInfo parentNode="Bip01 Head" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,-15,30" />
+				</dummy>
+				<dummy name="Eff_Body_World">
+					<attachInfo parentNode="Bip01 Spine1" applyWorldTransform="true" applyLocalScale="false" />
+				</dummy>
+			</effectdummy>
+		</environment>
+	</npc>
+	<npc id="42010002">
+		<environment feature="ShadowCataclysm" npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="enemy" nametag="1" defenceMaterial="1" hitImmune="1" abnormalImmune="1" level="55" class="3" rankIcon="b" carePathToEnemy="1" raceString="spirit" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/21000257_M_SalamanderCuteBlack_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" customExp="55831" lookAtMyPCWhenTalking="0">
+			<model kfm="21000257_M_SalamanderCuteBlack" shadowScale="130" rotationSpeed="720" walkSpeed="170" runSpeed="340" />
+			<stat hp="20524710" asp="100" msp="100" atp="81" evp="87" cap="65" cad="500" car="50" ndd="678" pap="473690" map="473760" par="90" mar="90" scaleStatRate_1="1.4" scaleBaseTap_1="15194412" scaleBaseDef_1="14863" scaleBaseSpaRate_1="0.2" scaleStatRate_2="1.4" scaleBaseTap_2="22349270" scaleBaseDef_2="23089" scaleBaseSpaRate_2="0.2" />
+			<distance avoid="60" sight="1200" sightHeightUP="300" sightHeightDown="0" />
+			<skill ids="40193001,40193002" levels="1,1" probs="70,30" />
+			<additionalEffect codes="60135001" levels="1" group="1,2" />
+			<collision shape="box" width="85" height="80" depth="80" />
+			<capsule radius="32" height="150" />
+			<dead time="5" defaultaction="Dead_A,Dead_B" upaction="Dead_B" />
+			<push back="1" up="1" knockback="1" />
+			<normal action="Idle_A,Bore_A,Walk_A" prob="4500,1500,4000" movearea="150" />
+			<dropiteminfo dropHeight="50" dropDistanceBase="100" dropDistanceRandom="50" globalDropBoxId="3" />
+			<effectdummy>
+				<dummy name="Eff_Head">
+					<attachInfo parentNode="Bip01 Head" />
+					<transform translate="5,0,0" scale="0.8" />
+				</dummy>
+				<dummy name="Eff_Body">
+					<attachInfo parentNode="Bip01 Spine" />
+					<transform translate="0,10,0" scale="0.8" />
+				</dummy>
+				<dummy name="Eff_Foot">
+					<attachInfo parentNode="Scene Root" />
+					<transform scale="0.8" />
+				</dummy>
+				<dummy name="Eff_UI">
+					<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,-15,90" />
+				</dummy>
+				<dummy name="Eff_Head_World">
+					<attachInfo parentNode="Bip01 Head" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,-5,0" scale="0.8" />
+				</dummy>
+				<dummy name="Eff_Body_World">
+					<attachInfo parentNode="Bip01 Spine" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,0,-10" scale="0.8" />
+				</dummy>
+				<dummy name="Eff_Foot_World">
+					<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
+					<transform scale="0.8" />
+				</dummy>
+			</effectdummy>
+		</environment>
+	</npc>
+	<npc id="42010003">
+		<environment feature="ShadowCataclysm" npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="enemy" nametag="1" defenceMaterial="1" hitImmune="1" abnormalImmune="1" level="55" class="3" rankIcon="b" carePathToEnemy="1" raceString="combine" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/21000262_M_OnionTallWhite_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" customExp="55831" lookAtMyPCWhenTalking="0">
+			<model kfm="21000262_M_OnionTallWhite" shadowScale="130" rotationSpeed="720" walkSpeed="155" runSpeed="310" />
+			<stat hp="20524710" asp="100" msp="100" atp="81" evp="87" cap="65" cad="500" car="50" ndd="678" pap="473690" map="473760" par="90" mar="90" scaleStatRate_1="1.4" scaleBaseTap_1="15194412" scaleBaseDef_1="14863" scaleBaseSpaRate_1="0.2" scaleStatRate_2="1.4" scaleBaseTap_2="22349270" scaleBaseDef_2="23089" scaleBaseSpaRate_2="0.2" />
+			<distance avoid="60" sight="1200" sightHeightUP="300" sightHeightDown="0" />
+			<skill ids="40194001" levels="1" probs="100" />
+			<additionalEffect codes="60135001" levels="1" group="1,2" />
+			<collision shape="box" width="85" height="130" depth="80" />
+			<capsule radius="32" height="150" />
+			<dead time="5" defaultaction="Dead_A,Dead_B" upaction="Dead_B" />
+			<push back="1" up="1" knockback="1" />
+			<normal action="Idle_A,Bore_A,Walk_A" prob="4500,1500,4000" movearea="150" />
+			<dropiteminfo dropHeight="50" dropDistanceBase="100" dropDistanceRandom="50" globalDropBoxId="3" />
+			<effectdummy>
+				<dummy name="Eff_Head">
+					<attachInfo parentNode="Bip01 Head" />
+					<transform translate="40,0,0" />
+				</dummy>
+				<dummy name="Eff_Body">
+					<attachInfo parentNode="Bip01 Spine1" />
+					<transform translate="30,0,0" />
+				</dummy>
+				<dummy name="Eff_UI">
+					<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,0,220" />
+				</dummy>
+				<dummy name="Eff_Head_World">
+					<attachInfo parentNode="Bip01 Head" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,0,40" />
+				</dummy>
+				<dummy name="Eff_Body_World">
+					<attachInfo parentNode="Bip01 Spine1" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,0,-15" />
+				</dummy>
+			</effectdummy>
+		</environment>
+	</npc>
+	<npc id="42010004">
+		<environment feature="ShadowCataclysm" npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="enemy" nametag="1" defenceMaterial="1" hitImmune="1" abnormalImmune="1" level="55" class="3" rankIcon="b" carePathToEnemy="1" raceString="combine" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/21000280_M_RabbitClockZombie_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" customExp="55831" lookAtMyPCWhenTalking="0">
+			<model kfm="21000280_M_RabbitClockZombie" shadowScale="130" rotationSpeed="720" walkSpeed="125" runSpeed="350" />
+			<stat hp="20524710" asp="100" msp="100" atp="81" evp="87" cap="65" cad="500" car="50" ndd="678" pap="473690" map="473760" par="90" mar="90" scaleStatRate_1="1.4" scaleBaseTap_1="15194412" scaleBaseDef_1="14863" scaleBaseSpaRate_1="0.2" scaleStatRate_2="1.4" scaleBaseTap_2="22349270" scaleBaseDef_2="23089" scaleBaseSpaRate_2="0.2" />
+			<distance avoid="60" sight="1200" sightHeightUP="300" sightHeightDown="0" />
+			<skill ids="40212001" levels="1" probs="100" />
+			<additionalEffect codes="60135001" levels="1" group="1,2" />
+			<collision shape="box" width="85" height="130" depth="80" />
+			<capsule radius="60" height="150" />
+			<dead time="5" defaultaction="Dead_A,Dead_B" upaction="Dead_B" />
+			<push back="1" up="1" knockback="1" />
+			<normal action="Idle_A,Bore_A,Walk_A" prob="4500,1500,4000" movearea="150" />
+			<dropiteminfo dropHeight="150" dropDistanceBase="100" dropDistanceRandom="50" globalDropBoxId="3" />
+			<effectdummy>
+				<dummy name="Eff_Head">
+					<attachInfo parentNode="Bip01 Head" />
+					<transform translate="25,5,0" />
+				</dummy>
+				<dummy name="Eff_Body">
+					<attachInfo parentNode="Bip01 Footsteps" />
+				</dummy>
+				<dummy name="Eff_UI">
+					<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,0,250" />
+				</dummy>
+				<dummy name="Eff_Head_World">
+					<attachInfo parentNode="Bip01 Head" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,-10,25" />
+				</dummy>
+				<dummy name="Eff_Body_World">
+					<attachInfo parentNode="Bip01 Footsteps" applyWorldTransform="true" applyLocalScale="false" />
+				</dummy>
+			</effectdummy>
+		</environment>
+	</npc>
+	<npc id="42010005">
+		<environment feature="ShadowCataclysm" npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="enemy" nametag="1" defenceMaterial="1" hitImmune="1" abnormalImmune="1" level="55" class="3" rankIcon="b" carePathToEnemy="1" raceString="devil" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/21000306_M_DevilBatTridentWhite_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" customExp="55831" lookAtMyPCWhenTalking="0">
+			<model kfm="21000306_M_DevilBatTridentWhite" scale="1.3" shadowScale="130" rotationSpeed="720" walkSpeed="200" runSpeed="400" />
+			<stat hp="20524710" asp="100" msp="100" atp="81" evp="87" cap="65" cad="500" car="50" ndd="678" pap="473690" map="473760" par="90" mar="90" scaleStatRate_1="1.4" scaleBaseTap_1="15194412" scaleBaseDef_1="14863" scaleBaseSpaRate_1="0.2" scaleStatRate_2="1.4" scaleBaseTap_2="22349270" scaleBaseDef_2="23089" scaleBaseSpaRate_2="0.2" />
+			<distance avoid="100" sight="1200" sightHeightUP="300" sightHeightDown="0" />
+			<skill ids="40147001,40147011" levels="1,1" probs="70,30" />
+			<additionalEffect codes="60135001" levels="1" group="1,2" />
+			<collision shape="box" width="100" height="130" depth="150" />
+			<capsule radius="100" height="180" />
+			<dead time="5" defaultaction="Dead_A,Dead_B" upaction="Dead_B" />
+			<push back="1" up="1" knockback="1" />
+			<normal action="Idle_A,Bore_A,Walk_A" prob="4500,1500,4000" movearea="150" />
+			<dropiteminfo dropHeight="50" dropDistanceBase="100" dropDistanceRandom="50" globalDropBoxId="3" />
+			<effectdummy>
+				<dummy name="Eff_Head">
+					<attachInfo parentNode="Bip01 Head" />
+					<transform translate="10,0,0" />
+				</dummy>
+				<dummy name="Eff_Body">
+					<attachInfo parentNode="Bip01 Spine1" />
+					<transform translate="0,20,0" />
+				</dummy>
+				<dummy name="Eff_Foot">
+					<attachInfo parentNode="Scene Root" />
+					<transform translate="0,0,40" />
+				</dummy>
+				<dummy name="Eff_UI">
+					<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="-20,-30,180" />
+				</dummy>
+				<dummy name="Eff_Head_World">
+					<attachInfo parentNode="Bip01 Head" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,-10,0" />
+				</dummy>
+				<dummy name="Eff_Body_World">
+					<attachInfo parentNode="Bip01 Spine1" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,-10,-20" />
+				</dummy>
+				<dummy name="Eff_Foot_World">
+					<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,0,40" />
+				</dummy>
+			</effectdummy>
+		</environment>
+	</npc>
+	<npc id="42010006">
+		<environment feature="ShadowCataclysm" npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="enemy" nametag="1" defenceMaterial="1" hitImmune="1" abnormalImmune="1" level="55" class="3" rankIcon="b" carePathToEnemy="1" raceString="bug" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/21000438_M_BeetleSoldierGreen_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" customExp="55831" lookAtMyPCWhenTalking="0">
+			<model kfm="21000438_M_BeetleSoldierGreen" shadowScale="120" rotationSpeed="720" walkSpeed="60" runSpeed="340" />
+			<stat hp="20524710" asp="100" msp="100" atp="81" evp="87" cap="65" cad="500" car="50" ndd="678" pap="473690" map="473760" par="90" mar="90" scaleStatRate_1="1.4" scaleBaseTap_1="15194412" scaleBaseDef_1="14863" scaleBaseSpaRate_1="0.2" scaleStatRate_2="1.4" scaleBaseTap_2="22349270" scaleBaseDef_2="23089" scaleBaseSpaRate_2="0.2" />
+			<distance avoid="45" sight="1200" sightHeightUP="300" sightHeightDown="0" />
+			<skill ids="49162001,49162011" levels="1,1" probs="80,20" />
+			<additionalEffect codes="60135001" levels="1" group="1,2" />
+			<collision shape="box" width="70" height="120" depth="70" />
+			<capsule radius="40" height="150" />
+			<dead time="5" defaultaction="Dead_A" upaction="Dead_A" />
+			<push back="1" up="1" knockback="1" />
+			<normal action="Idle_A,Bore_A,Walk_A" prob="6000,1000,3000" movearea="150" />
+			<dropiteminfo dropHeight="50" dropDistanceBase="100" dropDistanceRandom="50" globalDropBoxId="3" />
+			<effectdummy>
+				<dummy name="Eff_Head">
+					<attachInfo parentNode="Bip01 Head" />
+					<transform scale="0.78" />
+				</dummy>
+				<dummy name="Eff_Body">
+					<attachInfo parentNode="Bip01 Pelvis" />
+					<transform scale="0.75" />
+				</dummy>
+				<dummy name="Eff_Foot">
+					<attachInfo parentNode="Scene Root" />
+					<transform scale="0.67" />
+				</dummy>
+				<dummy name="Eff_UI">
+					<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,0,155" />
+				</dummy>
+				<dummy name="Eff_Head_World">
+					<attachInfo parentNode="Bip01 Head" applyWorldTransform="true" applyLocalScale="false" />
+					<transform scale="0.78" />
+				</dummy>
+				<dummy name="Eff_Body_World">
+					<attachInfo parentNode="Bip01 Pelvis" applyWorldTransform="true" applyLocalScale="false" />
+					<transform scale="0.75" />
+				</dummy>
+				<dummy name="Eff_Foot_World">
+					<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
+					<transform scale="0.67" />
+				</dummy>
+			</effectdummy>
+		</environment>
+	</npc>
+	<npc id="42010007">
+		<environment feature="ShadowCataclysm" npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="enemy" nametag="1" defenceMaterial="3" hitImmune="1" abnormalImmune="1" level="55" class="3" rankIcon="b" carePathToEnemy="1" raceString="machine" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/21000739_M_ConstructRobotFatRed_P.png" damagedColorScale="10" damagedVibrateDuration="1" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" customExp="55831" lookAtMyPCWhenTalking="0">
+			<model kfm="21000739_M_ConstructRobotFatRed" shadowScale="200" rotationSpeed="720" walkSpeed="175" runSpeed="350" />
+			<stat hp="20524710" asp="100" msp="100" atp="81" evp="87" cap="65" cad="500" car="50" ndd="746" pap="473690" map="473760" scaleStatRate_1="1.4" scaleBaseTap_1="15194412" scaleBaseDef_1="14863" scaleBaseSpaRate_1="0.2" scaleStatRate_2="1.4" scaleBaseTap_2="22349270" scaleBaseDef_2="23089" scaleBaseSpaRate_2="0.2" />
+			<distance avoid="70" sight="1200" sightHeightUP="300" sightHeightDown="0" />
+			<skill ids="49152001,49152011,49152021" levels="1,1,1" probs="60,20,20" />
+			<additionalEffect codes="60135001" levels="1" group="1,2" />
+			<collision shape="box" width="80" height="120" depth="130" />
+			<capsule radius="70" height="150" />
+			<dead time="5" defaultaction="Dead_A,Dead_B" upaction="Dead_B" />
+			<push knockback="1" />
+			<normal action="Idle_A,Bore_A,Walk_A" prob="3000,1000,6000" movearea="150" />
+			<dropiteminfo dropHeight="150" dropDistanceBase="140" dropDistanceRandom="10" globalDropBoxId="3" />
+			<effectdummy>
+				<dummy name="Eff_Head">
+					<attachInfo parentNode="Bip01 Head" />
+					<transform translate="0,30,0" scale="0.9" />
+				</dummy>
+				<dummy name="Eff_Body">
+					<attachInfo parentNode="Bip01 Pelvis" />
+					<transform translate="0,20,0" scale="0.95" />
+				</dummy>
+				<dummy name="Eff_Foot">
+					<attachInfo parentNode="Scene Root" />
+					<transform scale="0.78" />
+				</dummy>
+				<dummy name="Eff_UI">
+					<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,-50,220" />
+				</dummy>
+				<dummy name="Eff_Head_World">
+					<attachInfo parentNode="Bip01 Head" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,-30,0" scale="0.9" />
+				</dummy>
+				<dummy name="Eff_Body_World">
+					<attachInfo parentNode="Bip01 Pelvis" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,-20,0" scale="0.95" />
+				</dummy>
+				<dummy name="Eff_Foot_World">
+					<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
+					<transform scale="0.78" />
+				</dummy>
+			</effectdummy>
+		</environment>
+	</npc>
+	<npc id="42010008">
+		<environment feature="ShadowCataclysm" npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="enemy" nametag="1" defenceMaterial="1" hitImmune="1" abnormalImmune="1" level="55" class="3" rankIcon="b" carePathToEnemy="1" raceString="undead" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/21000680_M_AnubisGuardSilver_P.png" damagedColorScale="10" damagedVibrateDuration="1" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" customExp="55831" lookAtMyPCWhenTalking="0">
+			<model kfm="21000680_M_AnubisGuardSilver" shadowScale="200" rotationSpeed="720" walkSpeed="170" runSpeed="340" />
+			<stat hp="20524710" asp="100" msp="100" atp="81" evp="87" cap="65" cad="500" car="50" ndd="746" pap="473690" map="473760" scaleStatRate_1="1.4" scaleBaseTap_1="15194412" scaleBaseDef_1="14863" scaleBaseSpaRate_1="0.2" scaleStatRate_2="1.4" scaleBaseTap_2="22349270" scaleBaseDef_2="23089" scaleBaseSpaRate_2="0.2" />
+			<distance avoid="70" sight="1200" sightHeightUP="300" sightHeightDown="0" />
+			<skill ids="49142001,49142011" levels="1,1" probs="50,50" />
+			<additionalEffect codes="60135001" levels="1" group="1,2" />
+			<collision shape="box" width="80" height="120" depth="130" />
+			<capsule radius="70" height="150" />
+			<dead time="5" defaultaction="Dead_A,Dead_B" upaction="Dead_B" />
+			<push knockback="1" />
+			<normal action="Idle_A,Bore_A,Walk_A" prob="3000,1000,6000" movearea="150" />
+			<dropiteminfo dropHeight="150" dropDistanceBase="140" dropDistanceRandom="10" globalDropBoxId="3" />
+		</environment>
+	</npc>
+	<npc id="42020001">
+		<environment feature="ShadowCataclysm" npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="enemy" nametag="1" defenceMaterial="1" hitImmune="99" abnormalImmune="99" level="55" class="3" rankIcon="b" carePathToEnemy="1" raceString="animal" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/22000033_N_LarvaBlueHelmet_P.png" damagedVibrateDuration="0.5" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" customExp="55831" lookAtMyPCWhenTalking="0">
+			<model kfm="22000033_N_LarvaBlueHelmet" shadowScale="380" rotationSpeed="720" walkSpeed="150" runSpeed="300" />
+			<stat hp="65695711" asp="100" msp="100" atp="81" evp="87" cap="65" cad="500" car="50" ndd="678" pap="473690" map="473760" par="105" scaleStatRate_1="1.4" scaleBaseTap_1="15194412" scaleBaseDef_1="14863" scaleBaseSpaRate_1="0.2" scaleStatRate_2="1.4" scaleBaseTap_2="22349270" scaleBaseDef_2="23089" scaleBaseSpaRate_2="0.2" />
+			<distance avoid="140" sight="1200" sightHeightUP="300" sightHeightDown="0" customLastSightRadius="2500" customLastSightHeightUp="525" customLastSightHeightDown="225" />
+			<skill ids="50000356" levels="1" probs="100" />
+			<additionalEffect codes="60135001" levels="1" group="1,3" />
+			<collision shape="box" width="180" height="180" depth="300" />
+			<capsule radius="110" height="150" />
+			<dead time="5" defaultaction="Dead_A" upaction="Dead_A" />
+			<normal action="Idle_A,Bore_A,Walk_A" prob="3500,2000,4500" movearea="150" />
+			<dropiteminfo dropHeight="150" dropDistanceBase="200" dropDistanceRandom="10" fireVelocity="150" globalDropBoxId="3" />
+			<aiInfo path="AI_LarvaBlueHelmet_Wanted.xml" />
+			<effectdummy>
+				<dummy name="Eff_Head">
+					<attachInfo parentNode="Bip01 Head" />
+					<transform translate="30,0,0" />
+				</dummy>
+				<dummy name="Eff_Body">
+					<attachInfo parentNode="Scene Root" />
+					<transform translate="0,0,75" scale="1.2" />
+				</dummy>
+				<dummy name="Eff_UI">
+					<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,-50,230" />
+				</dummy>
+				<dummy name="Eff_Head_World">
+					<attachInfo parentNode="Bip01 Head" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,-30,-10" />
+				</dummy>
+				<dummy name="Eff_Body_World">
+					<attachInfo parentNode="Bip01 Spine1" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,-30,-50" scale="1.2" />
+				</dummy>
+			</effectdummy>
+		</environment>
+	</npc>
+	<npc id="42020002">
+		<environment feature="ShadowCataclysm" npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="enemy" nametag="1" defenceMaterial="3" hitImmune="99" abnormalImmune="99" level="55" class="3" rankIcon="b" carePathToEnemy="1" raceString="devil" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/22000045_N_KnightHollowArmorWhite_P.png" damagedVibrateDuration="0.5" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" customExp="55831" lookAtMyPCWhenTalking="0">
+			<model kfm="22000045_N_KnightHollowArmorWhite" shadowScale="380" rotationSpeed="720" walkSpeed="250" runSpeed="500" />
+			<stat hp="65695711" asp="100" msp="100" atp="81" evp="87" cap="65" cad="500" car="50" ndd="678" pap="473690" map="473760" par="105" scaleStatRate_1="1.4" scaleBaseTap_1="15194412" scaleBaseDef_1="14863" scaleBaseSpaRate_1="0.2" scaleStatRate_2="1.4" scaleBaseTap_2="22349270" scaleBaseDef_2="23089" scaleBaseSpaRate_2="0.2" />
+			<distance avoid="140" sight="1200" sightHeightUP="300" sightHeightDown="0" customLastSightRadius="2500" customLastSightHeightUp="525" customLastSightHeightDown="225" />
+			<skill ids="50009999" levels="1" probs="100" />
+			<additionalEffect codes="60135001" levels="1" group="1,3" />
+			<collision shape="box" width="150" height="200" depth="150" />
+			<capsule radius="110" height="150" />
+			<dead time="5" defaultaction="Dead_A" upaction="Dead_A" />
+			<normal action="Idle_A,Bore_A,Walk_A" prob="3500,2000,4500" movearea="150" />
+			<dropiteminfo dropHeight="150" dropDistanceBase="200" dropDistanceRandom="10" fireVelocity="150" globalDropBoxId="3" />
+			<aiInfo path="AI_KnightHollowArmorWhite_Wanted.xml" />
+			<effectdummy>
+				<dummy name="Eff_Head">
+					<attachInfo parentNode="Point_Head" />
+					<transform translate="0,0,30" />
+				</dummy>
+				<dummy name="Eff_Body">
+					<attachInfo parentNode="Dummy_body" />
+					<transform translate="0,0,-20" />
+				</dummy>
+				<dummy name="Eff_UI">
+					<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,0,400" />
+				</dummy>
+				<dummy name="Eff_Head_World">
+					<attachInfo parentNode="Point_Head" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,0,30" />
+				</dummy>
+				<dummy name="Eff_Body_World">
+					<attachInfo parentNode="Dummy_body" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,0,-20" />
+				</dummy>
+			</effectdummy>
+		</environment>
+	</npc>
+	<npc id="42020003">
+		<environment feature="ShadowCataclysm" npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="enemy" nametag="1" defenceMaterial="1" hitImmune="99" abnormalImmune="99" level="55" class="3" rankIcon="b" carePathToEnemy="1" raceString="animal" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/22000050_N_CerberosTallBrown_P.png" damagedVibrateDuration="0.5" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" customExp="55831" lookAtMyPCWhenTalking="0">
+			<model kfm="22000050_N_CerberosTallBrown" scale="1.4" shadowScale="380" rotationSpeed="720" walkSpeed="250" runSpeed="500" />
+			<stat hp="65695711" asp="100" msp="100" atp="81" evp="87" cap="65" cad="500" car="50" ndd="678" pap="473690" map="473760" par="105" scaleStatRate_1="1.4" scaleBaseTap_1="15194412" scaleBaseDef_1="14863" scaleBaseSpaRate_1="0.2" scaleStatRate_2="1.4" scaleBaseTap_2="22349270" scaleBaseDef_2="23089" scaleBaseSpaRate_2="0.2" />
+			<distance avoid="140" sight="1200" sightHeightUP="300" sightHeightDown="0" customLastSightRadius="2500" customLastSightHeightUp="525" customLastSightHeightDown="225" />
+			<skill ids="50009999" levels="1" probs="100" />
+			<additionalEffect codes="60135001" levels="1" group="1,3" />
+			<collision shape="box" width="250" height="170" depth="250" />
+			<capsule radius="130" height="150" />
+			<dead time="5" defaultaction="Dead_A" upaction="Dead_A" />
+			<normal action="Idle_A,Bore_A,Walk_A" prob="3500,2000,4500" movearea="150" />
+			<dropiteminfo dropHeight="150" dropDistanceBase="200" dropDistanceRandom="10" fireVelocity="150" globalDropBoxId="3" />
+			<aiInfo path="AI_CerberosTallNormal_Wanted.xml" />
+			<effectdummy>
+				<dummy name="Eff_Head">
+					<attachInfo parentNode="Bip01 Head" />
+					<transform scale="0.9" />
+				</dummy>
+				<dummy name="Eff_Body">
+					<attachInfo parentNode="Bip01 Spine" />
+					<transform translate="20,20,0" scale="0.9" />
+				</dummy>
+				<dummy name="Eff_Foot">
+					<attachInfo parentNode="Scene Root" />
+					<transform translate="0,20,0" scale="0.9" />
+				</dummy>
+				<dummy name="Eff_UI">
+					<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,-40,180" />
+				</dummy>
+				<dummy name="Eff_Head_World">
+					<attachInfo parentNode="Bip01 Head" applyWorldTransform="true" applyLocalScale="false" />
+					<transform scale="0.9" />
+				</dummy>
+				<dummy name="Eff_Body_World">
+					<attachInfo parentNode="Bip01 Spine" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,-30,0" scale="0.9" />
+				</dummy>
+				<dummy name="Eff_Foot_World">
+					<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,20,0" scale="0.9" />
+				</dummy>
+			</effectdummy>
+		</environment>
+	</npc>
+	<npc id="42020004">
+		<environment feature="ShadowCataclysm" npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="enemy" nametag="1" defenceMaterial="1" hitImmune="99" abnormalImmune="99" level="55" class="3" rankIcon="b" carePathToEnemy="1" raceString="mystic" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/22000037_N_DragonDevilBigHeadBlue_P.png" damagedColorScale="4" damagedVibrateDuration="0.5" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" customExp="55831" lookAtMyPCWhenTalking="0">
+			<model kfm="22000037_N_DragonDevilBigHeadBlue" scale="1.4" shadowScale="380" rotationSpeed="720" walkSpeed="250" runSpeed="500" />
+			<stat hp="65695711" asp="100" msp="100" atp="81" evp="87" cap="65" cad="500" car="50" ndd="678" pap="473690" map="473760" par="105" scaleStatRate_1="1.4" scaleBaseTap_1="15194412" scaleBaseDef_1="14863" scaleBaseSpaRate_1="0.2" scaleStatRate_2="1.4" scaleBaseTap_2="22349270" scaleBaseDef_2="23089" scaleBaseSpaRate_2="0.2" />
+			<distance avoid="140" sight="1200" sightHeightUP="300" sightHeightDown="0" customLastSightRadius="2500" customLastSightHeightUp="525" customLastSightHeightDown="225" />
+			<skill ids="50009999" levels="1" probs="100" />
+			<additionalEffect codes="60135001" levels="1" group="1,3" />
+			<collision shape="box" width="120" height="200" depth="180" />
+			<capsule radius="110" height="150" ignore="1" />
+			<dead time="5" defaultaction="Dead_A" upaction="Dead_A" />
+			<normal action="Idle_A,Bore_A,Walk_A" prob="3500,2000,4500" movearea="150" />
+			<dropiteminfo dropHeight="150" dropDistanceBase="200" dropDistanceRandom="10" fireVelocity="150" globalDropBoxId="3" />
+			<aiInfo path="AI_DragonDevilBigHeadBlue_Wanted.xml" />
+			<effectdummy>
+				<dummy name="Eff_Head">
+					<attachInfo parentNode="Bip01 Head" />
+					<transform translate="50,0,0" scale="1.1" />
+				</dummy>
+				<dummy name="Eff_Body">
+					<attachInfo parentNode="Bip01 Spine" />
+					<transform translate="20,30,0" scale="1.1" />
+				</dummy>
+				<dummy name="Eff_Foot">
+					<attachInfo parentNode="Bip01 Footsteps" />
+					<transform scale="1.1" />
+				</dummy>
+				<dummy name="Eff_UI">
+					<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,-60,430" />
+				</dummy>
+				<dummy name="Eff_Damage">
+					<attachInfo parentNode="Eff_UI" applyWorldTransform="true" applyLocalScale="false" />
+					<transform rotation="0,0,90" />
+				</dummy>
+				<dummy name="Eff_Head_World">
+					<attachInfo parentNode="Bip01 Head" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,-60,20" scale="1.1" />
+				</dummy>
+				<dummy name="Eff_Body_World">
+					<attachInfo parentNode="Bip01 Spine" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,-40,0" scale="1.1" />
+				</dummy>
+				<dummy name="Eff_Foot_World">
+					<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,0,50" rotation="0,0,90" scale="1.1" />
+				</dummy>
+			</effectdummy>
+		</environment>
+	</npc>
+	<npc id="42020005">
+		<environment feature="ShadowCataclysm" npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="enemy" nametag="1" defenceMaterial="1" hitImmune="99" abnormalImmune="99" level="55" class="3" rankIcon="b" carePathToEnemy="1" raceString="mystic" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/22000054_N_BullAxePurple_P.png" damagedVibrateDuration="0.5" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" customExp="55831" lookAtMyPCWhenTalking="0">
+			<model kfm="22000054_N_BullAxePurple" shadowScale="380" rotationSpeed="721" walkSpeed="250" runSpeed="500" />
+			<stat hp="65695711" asp="100" msp="100" atp="81" evp="87" cap="65" cad="500" car="50" ndd="678" pap="473690" map="473760" par="105" scaleStatRate_1="1.4" scaleBaseTap_1="15194412" scaleBaseDef_1="14863" scaleBaseSpaRate_1="0.2" scaleStatRate_2="1.4" scaleBaseTap_2="22349270" scaleBaseDef_2="23089" scaleBaseSpaRate_2="0.2" />
+			<distance avoid="140" sight="1200" sightHeightUP="300" sightHeightDown="0" customLastSightRadius="2500" customLastSightHeightUp="525" customLastSightHeightDown="225" />
+			<skill ids="50009999" levels="1" probs="100" />
+			<additionalEffect codes="60135001" levels="1" group="1,3" />
+			<collision shape="box" width="250" height="170" depth="250" />
+			<capsule radius="130" height="150" />
+			<dead time="5" defaultaction="Dead_A" upaction="Dead_A" />
+			<normal action="Idle_A,Bore_A,Walk_A" prob="3500,2000,4500" movearea="150" />
+			<dropiteminfo dropHeight="150" dropDistanceBase="200" dropDistanceRandom="10" fireVelocity="150" globalDropBoxId="3" />
+			<aiInfo path="AI_BullAxePurple_Wanted.xml" />
+			<effectdummy>
+				<dummy name="Eff_Body">
+					<attachInfo parentNode="Scene Root" />
+					<transform translate="0,0,150" scale="1.3" />
+				</dummy>
+				<dummy name="Eff_UI">
+					<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,0,250" />
+				</dummy>
+			</effectdummy>
+		</environment>
+	</npc>
+	<npc id="42020006">
+		<environment feature="ShadowCataclysm" npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="enemy" nametag="1" defenceMaterial="1" hitImmune="99" abnormalImmune="99" level="55" class="3" rankIcon="b" carePathToEnemy="1" raceString="combine" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/22000070_N_CrowMagicPurple_P.png" damagedVibrateDuration="0.5" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" customExp="55831" lookAtMyPCWhenTalking="0">
+			<model kfm="22000070_N_CrowMagicPurple" scale="1.2" shadowScale="640" rotationSpeed="720" walkSpeed="180" runSpeed="360" />
+			<stat hp="65695711" asp="100" msp="100" atp="81" evp="87" cap="65" cad="500" car="50" ndd="678" pap="473690" map="473760" par="105" scaleStatRate_1="1.4" scaleBaseTap_1="15194412" scaleBaseDef_1="14863" scaleBaseSpaRate_1="0.2" scaleStatRate_2="1.4" scaleBaseTap_2="22349270" scaleBaseDef_2="23089" scaleBaseSpaRate_2="0.2" />
+			<distance avoid="140" sight="1200" sightHeightUP="300" sightHeightDown="0" customLastSightRadius="2500" customLastSightHeightUp="525" customLastSightHeightDown="225" />
+			<skill ids="50009999" levels="1" probs="100" />
+			<additionalEffect codes="60135001" levels="1" group="1,3" />
+			<collision shape="box" width="100" height="150" depth="100" />
+			<capsule radius="130" height="150" />
+			<dead time="5" defaultaction="Dead_A" upaction="Dead_A" />
+			<normal action="Idle_A,Bore_A,Walk_A" prob="3500,2000,4500" movearea="150" />
+			<dropiteminfo dropHeight="150" dropDistanceBase="200" dropDistanceRandom="10" fireVelocity="150" globalDropBoxId="3" />
+			<aiInfo path="AI_CrowMagic_Wanted.xml" />
+			<effectdummy>
+				<dummy name="Eff_Body">
+					<attachInfo parentNode="Scene Root" />
+					<transform translate="0,0,150" scale="1.3" />
+				</dummy>
+				<dummy name="Eff_UI">
+					<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,0,250" />
+				</dummy>
+			</effectdummy>
+		</environment>
+	</npc>
+	<npc id="42020007">
+		<environment feature="ShadowCataclysm" npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="enemy" nametag="1" defenceMaterial="1" hitImmune="99" abnormalImmune="99" level="55" class="3" rankIcon="b" carePathToEnemy="1" raceString="combine" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/22000076_N_ShadowFamilyHorsePurple_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" customExp="55831" lookAtMyPCWhenTalking="0">
+			<model kfm="22000076_N_ShadowFamilyHorsePurple" scale="1.2" shadowScale="200" rotationSpeed="720" walkSpeed="300" runSpeed="450" />
+			<stat hp="65695711" asp="100" msp="100" atp="81" evp="87" cap="65" cad="500" car="50" ndd="678" pap="473690" map="473760" par="105" scaleStatRate_1="1.4" scaleBaseTap_1="15194412" scaleBaseDef_1="14863" scaleBaseSpaRate_1="0.2" scaleStatRate_2="1.4" scaleBaseTap_2="22349270" scaleBaseDef_2="23089" scaleBaseSpaRate_2="0.2" />
+			<distance avoid="45" sight="1200" sightHeightUP="300" sightHeightDown="0" customLastSightRadius="2500" customLastSightHeightUp="525" customLastSightHeightDown="225" />
+			<skill ids="40367001,40367011" levels="1,1" probs="80,20" />
+			<additionalEffect codes="60135001" levels="1" group="1,3" />
+			<collision shape="box" width="160" height="200" depth="160" />
+			<capsule radius="130" height="150" ignore="1" />
+			<dead time="1" defaultaction="Dead_A,Dead_B" upaction="Dead_A" />
+			<normal action="Idle_A,Bore_A,Walk_A" prob="6000,1000,3000" movearea="250" />
+			<dropiteminfo dropHeight="50" dropDistanceBase="100" dropDistanceRandom="50" globalDropBoxId="3" />
+			<aiInfo path="AI_ModShadowFamilyHorse_Wanted.xml" />
+			<effectdummy>
+				<dummy name="Eff_Body">
+					<attachInfo parentNode="Scene Root" />
+					<transform translate="0,0,125" />
+				</dummy>
+				<dummy name="Eff_UI">
+					<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,0,200" />
+				</dummy>
+			</effectdummy>
+		</environment>
+	</npc>
+	<npc id="42030001">
+		<environment feature="ShadowCataclysm" npcAttackGroup="1" npcDefenseGroup="2" nametag="1" minimap="0" hpBar="1" defenceMaterial="4" hitImmune="99" abnormalImmune="99" level="55" rankIcon="c" rotationDisabled="1" propertyTags="keep_battle" raceString="creature" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/21000906_M_ShadowTotemGemRed_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" customExp="550473" lookAtMyPCWhenTalking="0">
+			<model kfm="21000906_M_ShadowTotemGemRed" scale="2" shadowScale="160" />
+			<stat hp="93851016" asp="100" msp="100" atp="90" evp="99" cap="400" cad="500" car="50" ndd="678" pap="38313" map="38325" par="90" mar="90" scaleStatRate_1="1.4" scaleBaseTap_1="15194412" scaleBaseDef_1="14863" scaleBaseSpaRate_1="0.2" scaleStatRate_2="1.4" scaleBaseTap_2="22349270" scaleBaseDef_2="23089" scaleBaseSpaRate_2="0.2" />
+			<distance avoid="100" sight="5000" sightHeightUP="1000" sightHeightDown="700" customLastSightRadius="9900" customLastSightHeightUp="9900" customLastSightHeightDown="350" />
+			<skill ids="50100978" levels="1" probs="100" />
+			<collision shape="box" width="80" height="180" depth="80" />
+			<capsule radius="50" height="160" />
+			<dead time="2" defaultaction="Dead_A" upaction="Dead_A" />
+			<normal action="Idle_A" prob="10000" />
+			<aiInfo path="AI_TwistedCrack_Object.xml" />
+		</environment>
+	</npc>
+	<npc id="42030002">
+		<environment feature="ShadowCataclysm" npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="enemy" nametag="1" defenceMaterial="1" hitImmune="1" abnormalImmune="1" level="55" class="3" rankIcon="b" carePathToEnemy="1" raceString="bug" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/21000438_M_BeetleSoldierGreen_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" customExp="0" lookAtMyPCWhenTalking="0">
+			<model kfm="21000438_M_BeetleSoldierGreen" shadowScale="120" rotationSpeed="720" walkSpeed="60" runSpeed="340" />
+			<stat hp="20524710" asp="100" msp="100" atp="81" evp="87" cap="65" cad="500" car="50" ndd="678" pap="473690" map="473760" par="90" mar="90" scaleStatRate_1="1.4" scaleBaseTap_1="15194412" scaleBaseDef_1="14863" scaleBaseSpaRate_1="0.2" scaleStatRate_2="1.4" scaleBaseTap_2="22349270" scaleBaseDef_2="23089" scaleBaseSpaRate_2="0.2" />
+			<distance avoid="45" sight="1200" sightHeightUP="300" sightHeightDown="0" />
+			<skill ids="49162001,49162011" levels="1,1" probs="80,20" />
+			<additionalEffect codes="60135001" levels="1" group="1,2" />
+			<collision shape="box" width="70" height="120" depth="70" />
+			<capsule radius="40" height="150" />
+			<dead time="5" defaultaction="Dead_A" upaction="Dead_A" />
+			<push back="1" up="1" knockback="1" />
+			<normal action="Idle_A,Bore_A,Walk_A" prob="6000,1000,3000" movearea="150" />
+			<dropiteminfo dropHeight="50" dropDistanceBase="100" dropDistanceRandom="50" globalDropBoxId="3" />
+			<effectdummy>
+				<dummy name="Eff_Body">
+					<attachInfo parentNode="Scene Root" />
+					<transform translate="0,0,50" scale="0.7" />
+				</dummy>
+			</effectdummy>
+		</environment>
+	</npc>
+	<npc id="42030003">
+		<environment feature="ShadowCataclysm" npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="enemy" nametag="1" defenceMaterial="3" hitImmune="1" abnormalImmune="1" level="55" class="3" rankIcon="b" carePathToEnemy="1" raceString="machine" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/21000739_M_ConstructRobotFatRed_P.png" damagedColorScale="10" damagedVibrateDuration="1" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" customExp="0" lookAtMyPCWhenTalking="0">
+			<model kfm="21000739_M_ConstructRobotFatRed" shadowScale="200" rotationSpeed="720" walkSpeed="175" runSpeed="350" />
+			<stat hp="20524710" asp="100" msp="100" atp="81" evp="87" cap="65" cad="500" car="50" ndd="746" pap="473690" map="473760" scaleStatRate_1="1.4" scaleBaseTap_1="15194412" scaleBaseDef_1="14863" scaleBaseSpaRate_1="0.2" scaleStatRate_2="1.4" scaleBaseTap_2="22349270" scaleBaseDef_2="23089" scaleBaseSpaRate_2="0.2" />
+			<distance avoid="70" sight="1200" sightHeightUP="300" sightHeightDown="0" />
+			<skill ids="49152001,49152011,49152021" levels="1,1,1" probs="60,20,20" />
+			<additionalEffect codes="60135001" levels="1" group="1,2" />
+			<collision shape="box" width="80" height="120" depth="130" />
+			<capsule radius="70" height="150" />
+			<dead time="5" defaultaction="Dead_A,Dead_B" upaction="Dead_B" />
+			<push knockback="1" />
+			<normal action="Idle_A,Bore_A,Walk_A" prob="3000,1000,6000" movearea="150" />
+			<dropiteminfo dropHeight="150" dropDistanceBase="140" dropDistanceRandom="10" globalDropBoxId="3" />
+			<effectdummy>
+				<dummy name="Eff_Body">
+					<attachInfo parentNode="Scene Root" />
+					<transform translate="0,0,80" />
+				</dummy>
+			</effectdummy>
+		</environment>
+	</npc>
+	<npc id="42030004">
+		<environment feature="ShadowCataclysm" npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="enemy" nametag="1" defenceMaterial="1" hitImmune="1" abnormalImmune="1" level="55" class="3" rankIcon="b" carePathToEnemy="1" raceString="undead" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/21000680_M_AnubisGuardSilver_P.png" damagedColorScale="10" damagedVibrateDuration="1" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" customExp="0" lookAtMyPCWhenTalking="0">
+			<model kfm="21000680_M_AnubisGuardSilver" shadowScale="200" rotationSpeed="720" walkSpeed="170" runSpeed="340" />
+			<stat hp="20524710" asp="100" msp="100" atp="81" evp="87" cap="65" cad="500" car="50" ndd="746" pap="473690" map="473760" scaleStatRate_1="1.4" scaleBaseTap_1="15194412" scaleBaseDef_1="14863" scaleBaseSpaRate_1="0.2" scaleStatRate_2="1.4" scaleBaseTap_2="22349270" scaleBaseDef_2="23089" scaleBaseSpaRate_2="0.2" />
+			<distance avoid="70" sight="1200" sightHeightUP="300" sightHeightDown="0" />
+			<skill ids="49142001,49142011" levels="1,1" probs="50,50" />
+			<additionalEffect codes="60135001" levels="1" group="1,2" />
+			<collision shape="box" width="80" height="120" depth="130" />
+			<capsule radius="70" height="150" />
+			<dead time="5" defaultaction="Dead_A,Dead_B" upaction="Dead_B" />
+			<push knockback="1" />
+			<normal action="Idle_A,Bore_A,Walk_A" prob="3000,1000,6000" movearea="150" />
+			<dropiteminfo dropHeight="150" dropDistanceBase="140" dropDistanceRandom="10" globalDropBoxId="3" />
+			<effectdummy>
+				<dummy name="Eff_Body">
+					<attachInfo parentNode="Scene Root" />
+					<transform translate="0,0,75" />
+				</dummy>
+			</effectdummy>
+		</environment>
+	</npc>
+	<npc id="42030005">
+		<environment feature="ShadowCataclysm" npcAttackGroup="1" npcDefenseGroup="2" nametag="1" minimap="0" hpBar="1" defenceMaterial="5" hitImmune="1" abnormalImmune="1" level="55" rankIcon="c" carePathToEnemy="1" raceString="undead" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/21000667_M_FrozenCorpseFatSilver_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" customExp="0" lookAtMyPCWhenTalking="0">
+			<model kfm="21000667_M_FrozenCorpseFatSilver" shadowScale="230" rotationSpeed="720" walkSpeed="145" runSpeed="290" />
+			<stat hp="296763" asp="100" msp="100" atp="80" evp="87" cap="65" cad="500" car="50" ndd="678" pap="505737" map="505893" par="90" mar="90" />
+			<distance avoid="90" sight="400" sightHeightUP="300" sightHeightDown="0" />
+			<skill ids="40389001,40389011" levels="1,1" probs="20,80" />
+			<collision shape="box" width="60" height="80" depth="60" />
+			<capsule radius="40" height="150" />
+			<dead time="5" defaultaction="Dead_A,Dead_B" upaction="Dead_B" />
+			<push back="1" up="1" knockback="1" />
+			<normal action="Idle_A,Bore_A,Walk_A" prob="4000,1000,5000" movearea="150" />
+			<dropiteminfo dropHeight="150" dropDistanceBase="100" dropDistanceRandom="50" globalDropBoxId="1" />
+		</environment>
+	</npc>
+	<npc id="42030006">
+		<environment feature="ShadowCataclysm" npcAttackGroup="1" npcDefenseGroup="2" nametag="1" minimap="0" hpBar="1" defenceMaterial="1" hitImmune="1" abnormalImmune="1" level="55" rankIcon="c" carePathToEnemy="1" raceString="animal" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/21000670_M_CatSphinxPink_P.png" damagedColorScale="6" damagedVibrateDuration="1" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" customExp="0" lookAtMyPCWhenTalking="0">
+			<model kfm="21000670_M_CatSphinxPink" shadowScale="200" rotationSpeed="720" walkSpeed="130" runSpeed="360" />
+			<stat hp="385792" asp="100" msp="100" atp="80" evp="87" cap="65" cad="500" car="50" ndd="746" pap="505737" map="505893" />
+			<distance avoid="70" sight="400" sightHeightUP="300" sightHeightDown="0" />
+			<skill ids="49115001,49115011" levels="1,1" probs="90,10" />
+			<collision shape="box" width="80" height="120" depth="130" />
+			<capsule radius="70" height="150" />
+			<dead time="5" defaultaction="Dead_A,Dead_B" upaction="Dead_B" />
+			<push knockback="1" />
+			<normal action="Idle_A,Bore_A,Walk_A" prob="3000,1000,6000" movearea="150" />
+			<dropiteminfo dropHeight="150" dropDistanceBase="140" dropDistanceRandom="10" globalDropBoxId="1" />
+		</environment>
+	</npc>
+	<npc id="42030007">
+		<environment feature="ShadowCataclysm" npcAttackGroup="1" npcDefenseGroup="2" nametag="1" minimap="0" hpBar="1" defenceMaterial="1" hitImmune="1" abnormalImmune="1" level="55" rankIcon="c" carePathToEnemy="1" raceString="undead" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/21000677_M_PriestMummyWhite_P.png" damagedColorScale="6" damagedVibrateDuration="1" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" customExp="0" lookAtMyPCWhenTalking="0">
+			<model kfm="21000677_M_PriestMummyWhite" shadowScale="200" rotationSpeed="720" walkSpeed="130" runSpeed="340" />
+			<stat hp="385792" asp="100" msp="100" atp="80" evp="87" cap="65" cad="500" car="50" ndd="746" pap="505737" map="505893" />
+			<distance avoid="70" sight="400" sightHeightUP="300" sightHeightDown="0" />
+			<skill ids="49139001,49139011" levels="1,1" probs="90,10" />
+			<collision shape="box" width="80" height="120" depth="130" />
+			<capsule radius="70" height="150" />
+			<dead time="5" defaultaction="Dead_A,Dead_B" upaction="Dead_B" />
+			<push knockback="1" />
+			<normal action="Idle_A,Bore_A,Walk_A" prob="3000,1000,6000" movearea="150" />
+			<dropiteminfo dropHeight="150" dropDistanceBase="140" dropDistanceRandom="10" globalDropBoxId="1" />
+		</environment>
+	</npc>
+	<npc id="42030008">
+		<environment feature="ShadowCataclysm" npcAttackGroup="1" npcDefenseGroup="2" nametag="1" minimap="0" hpBar="1" defenceMaterial="1" hitImmune="1" abnormalImmune="1" level="55" rankIcon="c" carePathToEnemy="1" raceString="undead" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/21000678_M_AnubisGuardNormal_P.png" damagedColorScale="6" damagedVibrateDuration="1" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" customExp="0" lookAtMyPCWhenTalking="0">
+			<model kfm="21000678_M_AnubisGuardNormal" shadowScale="200" rotationSpeed="720" walkSpeed="130" runSpeed="340" />
+			<stat hp="385792" asp="100" msp="100" atp="80" evp="87" cap="65" cad="500" car="50" ndd="746" pap="505737" map="505893" />
+			<distance avoid="70" sight="400" sightHeightUP="300" sightHeightDown="0" />
+			<skill ids="49140001,49140011" levels="1,1" probs="50,50" />
+			<collision shape="box" width="80" height="120" depth="130" />
+			<capsule radius="70" height="150" />
+			<dead time="5" defaultaction="Dead_A,Dead_B" upaction="Dead_B" />
+			<push knockback="1" />
+			<normal action="Idle_A,Bore_A,Walk_A" prob="3000,1000,6000" movearea="150" />
+			<dropiteminfo dropHeight="150" dropDistanceBase="140" dropDistanceRandom="10" globalDropBoxId="1" />
+		</environment>
+	</npc>
+	<npc id="42030009">
+		<environment feature="ShadowCataclysm" npcAttackGroup="1" npcDefenseGroup="2" nametag="1" minimap="0" hpBar="1" defenceMaterial="1" hitImmune="1" abnormalImmune="1" level="55" rankIcon="c" carePathToEnemy="1" raceString="undead" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/21000686_M_SwordDanceGreen_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" customExp="0" lookAtMyPCWhenTalking="0">
+			<model kfm="21000686_M_SwordDanceGreen" shadowScale="120" rotationSpeed="720" walkSpeed="60" runSpeed="360" />
+			<stat hp="296763" asp="100" msp="100" atp="80" evp="87" cap="65" cad="500" car="50" ndd="678" pap="505737" map="505893" par="90" mar="90" />
+			<distance avoid="45" sight="400" sightHeightUP="300" sightHeightDown="0" />
+			<skill ids="40393001,40393011" levels="1,1" probs="80,20" />
+			<collision shape="box" width="70" height="120" depth="70" />
+			<capsule radius="40" height="150" />
+			<dead time="5" defaultaction="Dead_A,Dead_B" upaction="Dead_A" />
+			<push back="1" up="1" knockback="1" />
+			<normal action="Idle_A,Bore_A,Walk_A" prob="6000,1000,3000" movearea="150" />
+			<dropiteminfo dropHeight="50" dropDistanceBase="100" dropDistanceRandom="50" globalDropBoxId="1" />
+		</environment>
+	</npc>
+	<npc id="42030010">
+		<environment feature="ShadowCataclysm" npcAttackGroup="1" npcDefenseGroup="2" nametag="1" minimap="0" hpBar="1" defenceMaterial="1" hitImmune="1" abnormalImmune="1" level="55" rankIcon="c" carePathToEnemy="1" raceString="undead" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/21000687_M_SnakeTamerPink_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" customExp="0" lookAtMyPCWhenTalking="0">
+			<model kfm="21000687_M_SnakeTamerPink" shadowScale="120" rotationSpeed="720" walkSpeed="60" runSpeed="420" />
+			<stat hp="296763" asp="100" msp="100" atp="80" evp="87" cap="65" cad="500" car="50" ndd="678" pap="505737" map="505893" par="90" mar="90" />
+			<distance avoid="45" sight="400" sightHeightUP="300" sightHeightDown="0" />
+			<skill ids="40394001,40394011" levels="1,1" probs="80,20" />
+			<collision shape="box" width="70" height="120" depth="70" />
+			<capsule radius="40" height="150" />
+			<dead time="5" defaultaction="Dead_A,Dead_B" upaction="Dead_A" />
+			<push back="1" up="1" knockback="1" />
+			<normal action="Idle_A,Bore_A,Walk_A" prob="6000,1000,3000" movearea="150" />
+			<dropiteminfo dropHeight="50" dropDistanceBase="100" dropDistanceRandom="50" globalDropBoxId="1" />
+		</environment>
+	</npc>
+	<npc id="42030011">
+		<environment feature="ShadowCataclysm" npcAttackGroup="1" npcDefenseGroup="2" nametag="1" minimap="0" hpBar="1" defenceMaterial="3" hitImmune="1" abnormalImmune="1" level="55" rankIcon="c" carePathToEnemy="1" raceString="machine" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/21000715_M_GameConsoleBlack_P.png" damagedColorScale="6" damagedVibrateDuration="1" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" customExp="0" lookAtMyPCWhenTalking="0">
+			<model kfm="21000715_M_GameConsoleBlack" shadowScale="200" rotationSpeed="720" walkSpeed="130" runSpeed="360" />
+			<stat hp="385792" asp="100" msp="100" atp="80" evp="87" cap="65" cad="500" car="50" ndd="746" pap="505737" map="505893" />
+			<distance avoid="70" sight="400" sightHeightUP="300" sightHeightDown="0" />
+			<skill ids="49167001,49167011" levels="1,1" probs="50,50" />
+			<collision shape="box" width="80" height="120" depth="130" />
+			<capsule radius="70" height="150" />
+			<dead time="5" defaultaction="Dead_A,Dead_B" upaction="Dead_B" />
+			<push knockback="1" />
+			<normal action="Idle_A,Bore_A,Walk_A" prob="3000,1000,6000" movearea="150" />
+			<dropiteminfo dropHeight="150" dropDistanceBase="140" dropDistanceRandom="10" globalDropBoxId="1" />
+		</environment>
+	</npc>
+	<npc id="42030012">
+		<environment feature="ShadowCataclysm" npcAttackGroup="1" npcDefenseGroup="2" nametag="1" minimap="0" hpBar="1" defenceMaterial="3" hitImmune="1" abnormalImmune="1" level="55" rankIcon="c" carePathToEnemy="1" raceString="machine" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/21000727_M_GameHandleBlack_P.png" damagedColorScale="6" damagedVibrateDuration="1" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" customExp="0" lookAtMyPCWhenTalking="0">
+			<model kfm="21000727_M_GameHandleBlack" shadowScale="200" rotationSpeed="720" walkSpeed="130" runSpeed="420" />
+			<stat hp="385792" asp="100" msp="100" atp="80" evp="87" cap="65" cad="500" car="50" ndd="746" pap="505737" map="505893" />
+			<distance avoid="70" sight="400" sightHeightUP="300" sightHeightDown="0" />
+			<skill ids="49168001,49168011" levels="1,1" probs="50,50" />
+			<collision shape="box" width="80" height="120" depth="130" />
+			<capsule radius="70" height="150" />
+			<dead time="5" defaultaction="Dead_A,Dead_B" upaction="Dead_B" />
+			<push knockback="1" />
+			<normal action="Idle_A,Bore_A,Walk_A" prob="3000,1000,6000" movearea="150" />
+			<dropiteminfo dropHeight="150" dropDistanceBase="140" dropDistanceRandom="10" globalDropBoxId="1" />
+		</environment>
+	</npc>
+	<npc id="42030013">
+		<environment feature="ShadowCataclysm" npcAttackGroup="1" npcDefenseGroup="2" nametag="1" minimap="0" hpBar="1" defenceMaterial="3" hitImmune="1" abnormalImmune="1" level="55" rankIcon="c" carePathToEnemy="1" raceString="machine" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/21000721_M_GameArcadeBlack_P.png" damagedColorScale="6" damagedVibrateDuration="1" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" customExp="0" lookAtMyPCWhenTalking="0">
+			<model kfm="21000721_M_GameArcadeBlack" shadowScale="300" rotationSpeed="720" walkSpeed="130" runSpeed="300" />
+			<stat hp="385792" asp="100" msp="100" atp="80" evp="87" cap="65" cad="500" car="50" ndd="746" pap="505737" map="505893" />
+			<distance avoid="70" sight="400" sightHeightUP="300" sightHeightDown="0" />
+			<skill ids="49173001,49173011" levels="1,1" probs="50,50" />
+			<collision shape="box" width="150" height="120" depth="150" />
+			<capsule radius="70" height="150" />
+			<dead time="5" defaultaction="Dead_A,Dead_B" upaction="Dead_B" />
+			<push knockback="1" />
+			<normal action="Idle_A,Bore_A,Walk_A" prob="3000,1000,6000" movearea="150" />
+			<dropiteminfo dropHeight="150" dropDistanceBase="140" dropDistanceRandom="10" globalDropBoxId="1" />
+		</environment>
+	</npc>
+	<npc id="42030014">
+		<environment feature="ShadowCataclysm" npcAttackGroup="1" npcDefenseGroup="2" nametag="1" minimap="0" hpBar="1" defenceMaterial="3" hitImmune="1" abnormalImmune="1" level="55" rankIcon="c" carePathToEnemy="1" raceString="machine" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/21000734_M_ConstructRobotTongsBlue_P.png" damagedColorScale="6" damagedVibrateDuration="1" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" customExp="0" lookAtMyPCWhenTalking="0">
+			<model kfm="21000734_M_ConstructRobotTongsBlue" shadowScale="200" rotationSpeed="720" walkSpeed="210" runSpeed="420" />
+			<stat hp="385792" asp="100" msp="100" atp="80" evp="87" cap="65" cad="500" car="50" ndd="746" pap="505737" map="505893" />
+			<distance avoid="70" sight="400" sightHeightUP="300" sightHeightDown="0" />
+			<skill ids="49146001,49146011" levels="1,1" probs="50,50" />
+			<collision shape="box" width="80" height="120" depth="130" />
+			<capsule radius="70" height="150" />
+			<dead time="5" defaultaction="Dead_A,Dead_B" upaction="Dead_B" />
+			<push knockback="1" />
+			<normal action="Idle_A,Bore_A,Walk_A" prob="3000,1000,6000" movearea="150" />
+			<dropiteminfo dropHeight="150" dropDistanceBase="140" dropDistanceRandom="10" globalDropBoxId="1" />
+		</environment>
+	</npc>
+	<npc id="42030015">
+		<environment feature="ShadowCataclysm" npcAttackGroup="1" npcDefenseGroup="2" nametag="1" minimap="0" hpBar="1" defenceMaterial="3" hitImmune="1" abnormalImmune="1" level="55" rankIcon="c" carePathToEnemy="1" raceString="machine" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/21000737_M_ConstructRobotWeldBlue_P.png" damagedColorScale="6" damagedVibrateDuration="1" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" customExp="0" lookAtMyPCWhenTalking="0">
+			<model kfm="21000737_M_ConstructRobotWeldBlue" scale="1.3" shadowScale="200" rotationSpeed="720" walkSpeed="130" runSpeed="360" />
+			<stat hp="385792" asp="100" msp="100" atp="80" evp="87" cap="65" cad="500" car="50" ndd="746" pap="505737" map="505893" />
+			<distance avoid="70" sight="400" sightHeightUP="300" sightHeightDown="0" />
+			<skill ids="49151001,49151011" levels="1,1" probs="50,50" />
+			<collision shape="box" width="80" height="120" depth="130" />
+			<capsule radius="70" height="150" />
+			<dead time="5" defaultaction="Dead_A,Dead_B" upaction="Dead_B" />
+			<push knockback="1" />
+			<normal action="Idle_A,Bore_A,Walk_A" prob="3000,1000,6000" movearea="150" />
+			<dropiteminfo dropHeight="150" dropDistanceBase="140" dropDistanceRandom="10" globalDropBoxId="1" />
+		</environment>
+	</npc>
+	<npc id="42030016">
+		<environment feature="ShadowCataclysm" npcAttackGroup="1" npcDefenseGroup="2" nametag="1" minimap="0" hpBar="1" defenceMaterial="3" hitImmune="1" abnormalImmune="1" level="55" rankIcon="c" carePathToEnemy="1" raceString="machine" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/21000740_M_ConstructRobotFatBlue_P.png" damagedColorScale="6" damagedVibrateDuration="1" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" customExp="0" lookAtMyPCWhenTalking="0">
+			<model kfm="21000740_M_ConstructRobotFatBlue" scale="1.3" shadowScale="200" rotationSpeed="720" walkSpeed="150" runSpeed="300" />
+			<stat hp="385792" asp="100" msp="100" atp="80" evp="87" cap="65" cad="500" car="50" ndd="746" pap="505737" map="505893" />
+			<distance avoid="70" sight="400" sightHeightUP="300" sightHeightDown="0" />
+			<skill ids="49152001,49152011,49152021" levels="1,1,1" probs="60,20,20" />
+			<collision shape="box" width="80" height="120" depth="130" />
+			<capsule radius="70" height="150" />
+			<dead time="5" defaultaction="Dead_A,Dead_B" upaction="Dead_B" />
+			<push knockback="1" />
+			<normal action="Idle_A,Bore_A,Walk_A" prob="3000,1000,6000" movearea="150" />
+			<dropiteminfo dropHeight="150" dropDistanceBase="140" dropDistanceRandom="10" globalDropBoxId="1" />
+		</environment>
+	</npc>
+	<npc id="42030017">
+		<environment feature="ShadowCataclysm" npcAttackGroup="1" npcDefenseGroup="2" nametag="1" minimap="0" hpBar="1" defenceMaterial="1" hitImmune="1" abnormalImmune="1" level="55" rankIcon="c" carePathToEnemy="1" raceString="animal" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/21000743_M_ShadowFamilyStingerBlue_P.png" damagedColorScale="6" damagedVibrateDuration="1" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" customExp="0" lookAtMyPCWhenTalking="0">
+			<model kfm="21000743_M_ShadowFamilyStingerBlue" shadowScale="130" rotationSpeed="720" walkSpeed="120" runSpeed="400" />
+			<stat hp="296763" asp="100" msp="100" atp="80" evp="87" cap="65" cad="500" car="50" ndd="678" pap="505737" map="505893" par="90" mar="90" />
+			<distance avoid="100" sight="400" sightHeightUP="300" sightHeightDown="0" />
+			<skill ids="40409001,40409011" levels="1,1" probs="80,20" />
+			<collision shape="box" width="150" height="130" depth="150" />
+			<capsule radius="50" height="180" />
+			<dead time="5" defaultaction="Dead_A,Dead_B" upaction="Dead_B" />
+			<push back="1" up="1" knockback="1" />
+			<normal action="Idle_A,Bore_A,Walk_A" prob="4100,900,5000" movearea="150" />
+			<dropiteminfo dropHeight="150" dropDistanceBase="100" dropDistanceRandom="50" globalDropBoxId="1" />
+		</environment>
+	</npc>
+	<npc id="42030018">
+		<environment feature="ShadowCataclysm" npcAttackGroup="1" npcDefenseGroup="2" nametag="1" minimap="0" hpBar="1" defenceMaterial="1" hitImmune="1" abnormalImmune="1" level="55" rankIcon="c" carePathToEnemy="1" raceString="animal" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/21000744_M_ShadowFamilyMagicianBlue_P.png" damagedColorScale="6" damagedVibrateDuration="1" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" customExp="0" lookAtMyPCWhenTalking="0">
+			<model kfm="21000744_M_ShadowFamilyMagicianBlue" shadowScale="130" rotationSpeed="720" walkSpeed="120" runSpeed="360" />
+			<stat hp="296763" asp="100" msp="100" atp="80" evp="87" cap="65" cad="500" car="50" ndd="678" pap="505737" map="505893" par="90" mar="90" />
+			<distance avoid="100" sight="400" sightHeightUP="300" sightHeightDown="0" />
+			<skill ids="40410001,40410011" levels="1,1" probs="80,20" />
+			<collision shape="box" width="150" height="130" depth="150" />
+			<capsule radius="50" height="180" />
+			<dead time="5" defaultaction="Dead_A,Dead_B" upaction="Dead_B" />
+			<push back="1" up="1" knockback="1" />
+			<normal action="Idle_A,Bore_A,Walk_A" prob="4100,900,5000" movearea="150" />
+			<dropiteminfo dropHeight="150" dropDistanceBase="100" dropDistanceRandom="50" globalDropBoxId="1" />
+		</environment>
+	</npc>
+	<npc id="42030019">
+		<environment feature="ShadowCataclysm" npcAttackGroup="1" npcDefenseGroup="2" nametag="1" minimap="0" hpBar="1" defenceMaterial="1" hitImmune="1" abnormalImmune="1" level="55" rankIcon="c" carePathToEnemy="1" raceString="animal" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/21000751_M_FloccusRabbitDarkBlue_P.png" damagedColorScale="6" damagedVibrateDuration="1" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" customExp="0" lookAtMyPCWhenTalking="0">
+			<model kfm="21000751_M_FloccusRabbitDarkBlue" shadowScale="130" rotationSpeed="720" walkSpeed="120" runSpeed="340" />
+			<stat hp="296763" asp="100" msp="100" atp="80" evp="87" cap="65" cad="500" car="50" ndd="678" pap="505737" map="505893" par="90" mar="90" />
+			<distance avoid="100" sight="400" sightHeightUP="300" sightHeightDown="0" />
+			<skill ids="60102001,60102011" levels="1,1" probs="80,20" />
+			<collision shape="box" width="150" height="130" depth="150" />
+			<capsule radius="50" height="180" />
+			<dead time="5" defaultaction="Dead_A,Dead_B" upaction="Dead_B" />
+			<push back="1" up="1" knockback="1" />
+			<normal action="Idle_A,Bore_A,Walk_A" prob="4100,900,5000" movearea="150" />
+			<dropiteminfo dropHeight="150" dropDistanceBase="100" dropDistanceRandom="50" globalDropBoxId="1" />
+		</environment>
+	</npc>
+	<npc id="42030020">
+		<environment feature="ShadowCataclysm" npcAttackGroup="1" npcDefenseGroup="2" nametag="1" minimap="0" hpBar="1" defenceMaterial="1" hitImmune="1" abnormalImmune="1" level="55" rankIcon="c" carePathToEnemy="1" raceString="animal" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/21000752_M_SkiPenguinDarkBlue_P.png" damagedColorScale="6" damagedVibrateDuration="1" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" customExp="0" lookAtMyPCWhenTalking="0">
+			<model kfm="21000752_M_SkiPenguinDarkBlue" shadowScale="130" rotationSpeed="720" walkSpeed="120" runSpeed="350" />
+			<stat hp="296763" asp="100" msp="100" atp="80" evp="87" cap="65" cad="500" car="50" ndd="678" pap="505737" map="505893" par="90" mar="90" />
+			<distance avoid="100" sight="400" sightHeightUP="300" sightHeightDown="0" />
+			<skill ids="60103001,60103011" levels="1,1" probs="80,20" />
+			<collision shape="box" width="150" height="130" depth="150" />
+			<capsule radius="50" height="180" />
+			<dead time="5" defaultaction="Dead_A,Dead_B" upaction="Dead_B" />
+			<push back="1" up="1" knockback="1" />
+			<normal action="Idle_A,Bore_A,Walk_A" prob="4100,900,5000" movearea="150" />
+			<dropiteminfo dropHeight="150" dropDistanceBase="100" dropDistanceRandom="50" globalDropBoxId="1" />
+		</environment>
+	</npc>
+	<npc id="42030021">
+		<environment feature="ShadowCataclysm" npcAttackGroup="1" npcDefenseGroup="2" nametag="1" minimap="0" hpBar="1" defenceMaterial="1" hitImmune="1" abnormalImmune="1" level="55" rankIcon="c" carePathToEnemy="1" raceString="animal" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/21000772_M_IceDuckNormal_P.png" damagedColorScale="6" damagedVibrateDuration="1" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" customExp="0" lookAtMyPCWhenTalking="0">
+			<model kfm="21000772_M_IceDuckNormal" shadowScale="130" rotationSpeed="720" walkSpeed="120" runSpeed="360" />
+			<stat hp="296763" asp="100" msp="100" atp="80" evp="87" cap="65" cad="500" car="50" ndd="678" pap="505737" map="505893" par="90" mar="90" />
+			<distance avoid="100" sight="400" sightHeightUP="300" sightHeightDown="0" />
+			<skill ids="60112001,60112011" levels="1,1" probs="80,20" />
+			<collision shape="box" width="150" height="130" depth="150" />
+			<capsule radius="50" height="180" />
+			<dead time="5" defaultaction="Dead_A,Dead_B" upaction="Dead_B" />
+			<push back="1" up="1" knockback="1" />
+			<normal action="Idle_A,Bore_A,Walk_A" prob="4100,900,5000" movearea="150" />
+			<dropiteminfo dropHeight="150" dropDistanceBase="100" dropDistanceRandom="50" globalDropBoxId="1" />
+		</environment>
+	</npc>
+	<npc id="42030022">
+		<environment feature="ShadowCataclysm" npcAttackGroup="1" npcDefenseGroup="2" nametag="1" minimap="0" hpBar="1" defenceMaterial="1" hitImmune="1" abnormalImmune="1" level="55" rankIcon="c" carePathToEnemy="1" raceString="animal" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/21000782_M_DesertLizardPurple_P.png" damagedColorScale="6" damagedVibrateDuration="1" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" customExp="0" lookAtMyPCWhenTalking="0">
+			<model kfm="21000782_M_DesertLizardPurple" shadowScale="130" rotationSpeed="720" walkSpeed="120" runSpeed="390" />
+			<stat hp="296763" asp="100" msp="100" atp="80" evp="87" cap="65" cad="500" car="50" ndd="678" pap="505737" map="505893" par="90" mar="90" />
+			<distance avoid="100" sight="400" sightHeightUP="300" sightHeightDown="0" />
+			<skill ids="40405001,40405011" levels="1,1" probs="80,20" />
+			<collision shape="box" width="150" height="130" depth="150" />
+			<capsule radius="50" height="180" />
+			<dead time="5" defaultaction="Dead_A,Dead_B" upaction="Dead_B" />
+			<push back="1" up="1" knockback="1" />
+			<normal action="Idle_A,Bore_A,Walk_A" prob="4100,900,5000" movearea="150" />
+			<dropiteminfo dropHeight="150" dropDistanceBase="100" dropDistanceRandom="50" globalDropBoxId="1" />
+		</environment>
+	</npc>
+	<npc id="42030023">
+		<environment feature="ShadowCataclysm" npcAttackGroup="1" npcDefenseGroup="2" nametag="1" minimap="0" hpBar="1" defenceMaterial="1" hitImmune="1" abnormalImmune="1" level="55" rankIcon="c" carePathToEnemy="1" raceString="animal" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/21000787_M_DesertCrowWhite_P.png" damagedColorScale="6" damagedVibrateDuration="1" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" customExp="0" lookAtMyPCWhenTalking="0">
+			<model kfm="21000787_M_DesertCrowWhite" shadowScale="130" rotationSpeed="720" walkSpeed="120" runSpeed="370" />
+			<stat hp="296763" asp="100" msp="100" atp="80" evp="87" cap="65" cad="500" car="50" ndd="678" pap="505737" map="505893" par="90" mar="90" />
+			<distance avoid="100" sight="400" sightHeightUP="300" sightHeightDown="0" />
+			<skill ids="49220001,49220011" levels="1,1" probs="80,20" />
+			<collision shape="box" width="150" height="130" depth="150" />
+			<capsule radius="50" height="180" />
+			<dead time="5" defaultaction="Dead_A,Dead_B" upaction="Dead_B" />
+			<push back="1" up="1" knockback="1" />
+			<normal action="Idle_A,Bore_A,Walk_A" prob="4100,900,5000" movearea="150" />
+			<dropiteminfo dropHeight="150" dropDistanceBase="100" dropDistanceRandom="50" globalDropBoxId="1" />
+		</environment>
+	</npc>
+	<npc id="42030024">
+		<environment feature="ShadowCataclysm" npcAttackGroup="1" npcDefenseGroup="2" nametag="1" minimap="0" hpBar="1" defenceMaterial="1" hitImmune="1" abnormalImmune="1" level="55" rankIcon="c" carePathToEnemy="1" raceString="animal" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/21000788_M_DesertHarpyPurple_P.png" damagedColorScale="6" damagedVibrateDuration="1" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" customExp="0" lookAtMyPCWhenTalking="0">
+			<model kfm="21000788_M_DesertHarpyPurple" shadowScale="130" rotationSpeed="720" walkSpeed="120" runSpeed="370" />
+			<stat hp="296763" asp="100" msp="100" atp="80" evp="87" cap="65" cad="500" car="50" ndd="678" pap="505737" map="505893" par="90" mar="90" />
+			<distance avoid="100" sight="400" sightHeightUP="300" sightHeightDown="0" />
+			<skill ids="60113001,60113011" levels="1,1" probs="80,20" />
+			<collision shape="box" width="150" height="130" depth="150" />
+			<capsule radius="50" height="180" />
+			<dead time="5" defaultaction="Dead_A,Dead_B" upaction="Dead_B" />
+			<push back="1" up="1" knockback="1" />
+			<normal action="Idle_A,Bore_A,Walk_A" prob="4100,900,5000" movearea="150" />
+			<dropiteminfo dropHeight="150" dropDistanceBase="100" dropDistanceRandom="50" globalDropBoxId="1" />
+		</environment>
+	</npc>
+</ms2>

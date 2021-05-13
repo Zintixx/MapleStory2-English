@@ -3,7 +3,7 @@
 <ms2>
 	<environment feature="Barkhant" locale="">
 		<model kfm="21000441_M_CrowDevilWhite" />
-		<basic npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="enemy" nametag="1" nametagSize="18" hpBar="1" defenceMaterial="1" hitImmune="1" abnormalImmune="1" level="50" rankIcon="c" difficulty="50" propertyTags="keep_battle" raceString="mystic" gender="2" mainTags="None" portrait="./Data/Resource/Image/Portrait/Mob/21000441_M_CrowDevilWhite_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" />
+		<basic npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="enemy" nametag="1" nametagSize="18" hpBar="1" defenceMaterial="1" hitImmune="1" abnormalImmune="1" level="50" rankIcon="c" propertyTags="keep_battle" raceString="mystic" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/21000441_M_CrowDevilWhite_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" />
 		<stat hp="71497" asp="100" msp="100" atp="80" evp="97" cap="62" cad="500" car="50" ndd="690" pap="40082" map="40088" par="120" mar="120" />
 		<speed rotation="720" walk="60" run="200" />
 		<distance avoid="45" sight="3500" sightHeightUP="350" sightHeightDown="999" customLastSightRadius="9999" customLastSightHeightUp="350" customLastSightHeightDown="999" />
@@ -15,38 +15,38 @@
 		<shadow scale="120" bias="1" />
 		<normal action="Idle_A" prob="10000" maidExpired="Idle_A" />
 		<dropiteminfo globalDropBoxId="74" />
-		<lookattarget lookAtMyPCWhenTalking="0" useTalkMotion="1" />
+		<lookattarget lookAtMyPCWhenTalking="0" />
 		<aiInfo path="BossDungeon/BarkhantBlue/AI_CrowDevilWhite_TypeA.xml" />
 		<exp customExp="0" />
 	</environment>
 	<effectdummy>
 		<dummy name="Eff_Head">
-			<attachInfo parentNode="Bip01 Head" applyWorldTransform="false" applyLocalScale="true" />
-			<transform translate="0.000000, 0.000000, 0.000000" rotation="0.000000, 0.000000, 0.000000" scale="0.850000" />
+			<attachInfo parentNode="Bip01 Head" />
+			<transform scale="0.85" />
 		</dummy>
 		<dummy name="Eff_Body">
-			<attachInfo parentNode="Bip01 Pelvis" applyWorldTransform="false" applyLocalScale="true" />
-			<transform translate="0.000000, 0.000000, 0.000000" rotation="0.000000, 0.000000, 0.000000" scale="0.900000" />
+			<attachInfo parentNode="Bip01 Pelvis" />
+			<transform scale="0.9" />
 		</dummy>
 		<dummy name="Eff_Foot">
-			<attachInfo parentNode="Scene Root" applyWorldTransform="false" applyLocalScale="true" />
-			<transform translate="0.000000, 0.000000, 0.000000" rotation="0.000000, 0.000000, 0.000000" scale="0.750000" />
+			<attachInfo parentNode="Scene Root" />
+			<transform scale="0.75" />
 		</dummy>
 		<dummy name="Eff_UI">
 			<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
-			<transform translate="0.000000, -30.000000, 180.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.000000" />
+			<transform translate="0,-30,180" />
 		</dummy>
 		<dummy name="Eff_Head_World">
 			<attachInfo parentNode="Bip01 Head" applyWorldTransform="true" applyLocalScale="false" />
-			<transform translate="0.000000, 0.000000, 0.000000" rotation="0.000000, 0.000000, 0.000000" scale="0.850000" />
+			<transform scale="0.85" />
 		</dummy>
 		<dummy name="Eff_Body_World">
 			<attachInfo parentNode="Bip01 Pelvis" applyWorldTransform="true" applyLocalScale="false" />
-			<transform translate="0.000000, 0.000000, 0.000000" rotation="0.000000, 0.000000, 0.000000" scale="0.900000" />
+			<transform scale="0.9" />
 		</dummy>
 		<dummy name="Eff_Foot_World">
 			<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
-			<transform translate="0.000000, 0.000000, 0.000000" rotation="0.000000, 0.000000, 0.000000" scale="0.750000" />
+			<transform scale="0.75" />
 		</dummy>
 	</effectdummy>
 </ms2>

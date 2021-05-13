@@ -3,7 +3,7 @@
 <ms2>
 	<environment feature="NutaNuta" locale="">
 		<model kfm="21000892_M_ShadowSpiritFatPurple" />
-		<basic npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="enemy" nametag="1" nametagSize="18" hpBar="1" defenceMaterial="1" hitImmune="1" abnormalImmune="1" level="50" rankIcon="c" difficulty="50" propertyTags="keep_battle" raceString="spirit" gender="2" mainTags="None" portrait="./Data/Resource/Image/Portrait/Mob/21000892_M_ShadowSpiritFatPurple_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" />
+		<basic npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="enemy" nametag="1" nametagSize="18" hpBar="1" defenceMaterial="1" hitImmune="1" abnormalImmune="1" level="50" rankIcon="c" propertyTags="keep_battle" raceString="spirit" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/21000892_M_ShadowSpiritFatPurple_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" />
 		<stat hp="2047341" asp="100" msp="100" atp="90" evp="99" cap="400" cad="500" car="50" ndd="690" pap="1553737" map="1553866" par="90" mar="90" />
 		<speed rotation="720" walk="150" run="300" />
 		<distance avoid="100" sight="900" sightHeightUP="1000" sightHeightDown="700" customLastSightRadius="9900" customLastSightHeightUp="9900" customLastSightHeightDown="350" />
@@ -16,30 +16,29 @@
 		<shadow scale="200" bias="1" />
 		<normal action="Idle_A" prob="10000" maidExpired="Idle_A" />
 		<dropiteminfo globalDropBoxId="74" />
-		<lookattarget lookAtMyPCWhenTalking="0" useTalkMotion="1" />
+		<lookattarget lookAtMyPCWhenTalking="0" />
 		<aiInfo path="BossDungeon/TitanFourArmsGoldMask/AI_ShadowSpiritFatPurple_TypeA.xml" />
 		<exp customExp="0" />
 	</environment>
 	<effectdummy>
 		<dummy name="Eff_Head">
-			<attachInfo parentNode="Bip01 Head" applyWorldTransform="false" applyLocalScale="true" />
-			<transform translate="0.000000, 0.000000, 0.000000" rotation="0.000000, -90.000000, -90.000000" scale="1.000000" />
+			<attachInfo parentNode="Bip01 Head" />
+			<transform rotation="0,-90,-90" />
 		</dummy>
 		<dummy name="Eff_Body">
-			<attachInfo parentNode="Bip01 Spine" applyWorldTransform="false" applyLocalScale="true" />
-			<transform translate="20.000000, 0.000000, 0.000000" rotation="0.000000, -90.000000, -90.000000" scale="0.900000" />
+			<attachInfo parentNode="Bip01 Spine" />
+			<transform translate="20,0,0" rotation="0,-90,-90" scale="0.9" />
 		</dummy>
 		<dummy name="Eff_UI">
 			<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
-			<transform translate="0.000000, 0.000000, 280.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.000000" />
+			<transform translate="0,0,280" />
 		</dummy>
 		<dummy name="Eff_Head_World">
 			<attachInfo parentNode="Bip01 Head" applyWorldTransform="true" applyLocalScale="false" />
-			<transform translate="0.000000, 0.000000, 0.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.000000" />
 		</dummy>
 		<dummy name="Eff_Body_World">
 			<attachInfo parentNode="Bip01 Pelvis" applyWorldTransform="true" applyLocalScale="false" />
-			<transform translate="0.000000, 0.000000, -10.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.000000" />
+			<transform translate="0,0,-10" />
 		</dummy>
 	</effectdummy>
 </ms2>

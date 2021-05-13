@@ -3,7 +3,7 @@
 <ms2>
 	<environment feature="" locale="">
 		<model kfm="23000034_B_YetiTwoHeadBlack" />
-		<basic npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="elite_boss" nametag="1" nametagSize="18" defenceMaterial="1" hitImmune="99" abnormalImmune="99" level="40" class="3" rankIcon="b" difficulty="40" propertyTags="hide_hpbar_level,event_icon,no_regen_hp,atp_formula_01,keep_battle" raceString="mystic" bossNotify="1" gender="2" mainTags="None" portrait="./Data/Resource/Image/Portrait/Mob/23000034_B_YetiTwoHeadBlack_P.png" damagedVibrateDuration="0.5" damagedVibrateAmp="1" skipFrame="1" checkCameraDistance="2500" extraCameraDistance="450" bossSoundDistance="2500" bossSoundEndDistance="4000" />
+		<basic npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="elite_boss" nametag="1" nametagSize="18" defenceMaterial="1" hitImmune="99" abnormalImmune="99" level="40" class="3" rankIcon="b" propertyTags="hide_hpbar_level,event_icon,no_regen_hp,atp_formula_01,keep_battle" raceString="mystic" bossNotify="1" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/23000034_B_YetiTwoHeadBlack_P.png" damagedVibrateDuration="0.5" damagedVibrateAmp="1" checkCameraDistance="2500" extraCameraDistance="450" bossSoundDistance="2500" bossSoundEndDistance="4000" />
 		<stat hp="14352800" asp="100" msp="100" atp="120" evp="87" cap="57" cad="500" car="50" ndd="375" pap="60863" map="60863" par="120" mar="120" />
 		<speed rotation="720" walk="200" run="400" />
 		<distance avoid="400" sight="600" sightHeightUP="300" sightHeightDown="225" customLastSightRadius="3500" customLastSightHeightUp="525" customLastSightHeightDown="225" />
@@ -13,12 +13,11 @@
 		<collision shape="box" width="480" height="430" depth="380" />
 		<corpse width="650" height="150" depth="350" added="120" offsetNametag="-200" hitAble="1" rotation="345" />
 		<capsule radius="180" height="320" />
-		<capsule radius="1500" height="500" />
 		<dead time="20" defaultaction="Dead_A" upaction="Dead_A" />
 		<shadow scale="950" bias="1" />
 		<normal action="Idle_A,Bore_A,Walk_A" prob="5000,3000,2000" movearea="150" maidExpired="Idle_A" />
 		<dropiteminfo dropHeight="300" dropDistanceBase="300" dropDistanceRandom="20" globalDropBoxId="74" />
-		<lookattarget lookAtMyPCWhenTalking="0" useTalkMotion="1" />
+		<lookattarget lookAtMyPCWhenTalking="0" />
 		<aiInfo path="AI_EventYetiTwoHeadBlack.xml" />
 	</environment>
 </ms2>

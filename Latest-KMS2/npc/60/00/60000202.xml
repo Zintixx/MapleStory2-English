@@ -3,7 +3,7 @@
 <ms2>
 	<environment feature="Colosseum01" locale="">
 		<model kfm="11003087_Orde" scale="1.2" />
-		<basic npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="boss" nametag="1" nametagSize="18" defenceMaterial="1" hitImmune="99" abnormalImmune="99" level="70" class="6" rankIcon="a" carePathToEnemy="1" difficulty="70" raceString="combine" gender="0" emotionID="11003087" mainTags="None" portrait="./Data/Resource/Image/Portrait/Npc/11003087_Orde_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" />
+		<basic npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="boss" nametag="1" nametagSize="18" defenceMaterial="1" hitImmune="99" abnormalImmune="99" level="70" class="6" rankIcon="a" carePathToEnemy="1" raceString="combine" gender="0" emotionID="11003087" portrait="./Data/Resource/Image/Portrait/Npc/11003087_Orde_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" />
 		<stat hp="302294300" asp="100" msp="100" atp="120" evp="108" cap="72" cad="200" car="70" ndd="1071" pap="4764012" map="4764012" par="90" mar="90" scaleStatRate_1="1.4" scaleBaseTap_1="54163291" scaleBaseDef_1="15096" scaleBaseSpaRate_1="0.2" scaleStatRate_2="1.4" scaleBaseTap_2="66522694" scaleBaseDef_2="28469" scaleBaseSpaRate_2="0.2" />
 		<speed rotation="720" walk="300" run="700" />
 		<distance avoid="50" sight="90000" sightHeightUP="9000" sightHeightDown="9000" customLastSightRadius="9999" customLastSightHeightUp="9999" customLastSightHeightDown="9999" />
@@ -16,38 +16,38 @@
 		<shadow scale="150" bias="1" />
 		<normal action="Idle_A,Bore_A" prob="7000,3000" maidExpired="Idle_A" />
 		<dropiteminfo globalDeadDropBoxId="1011" />
-		<lookattarget lookAtMyPCWhenTalking="0" useTalkMotion="1" />
+		<lookattarget lookAtMyPCWhenTalking="0" />
 		<aiInfo path="BossDungeon/Colosseum/AI_Orde_Colosseum.xml" />
 		<exp customExp="0" />
 	</environment>
 	<effectdummy>
 		<dummy name="Eff_Head">
-			<attachInfo parentNode="Bip01 Head" applyWorldTransform="false" applyLocalScale="true" />
-			<transform translate="20.000000, 10.000000, 0.000000" rotation="0.000000, 0.000000, 0.000000" scale="0.900000" />
+			<attachInfo parentNode="Bip01 Head" />
+			<transform translate="20,10,0" scale="0.9" />
 		</dummy>
 		<dummy name="Eff_Body">
-			<attachInfo parentNode="Bip01 Spine1" applyWorldTransform="false" applyLocalScale="true" />
-			<transform translate="0.000000, 3.000000, 0.000000" rotation="0.000000, 0.000000, 0.000000" scale="0.900000" />
+			<attachInfo parentNode="Bip01 Spine1" />
+			<transform translate="0,3,0" scale="0.9" />
 		</dummy>
 		<dummy name="Eff_Foot">
-			<attachInfo parentNode="Bip01" applyWorldTransform="false" applyLocalScale="true" />
-			<transform translate="2.000000, 0.000000, 0.000000" rotation="0.000000, 0.000000, 0.000000" scale="0.900000" />
+			<attachInfo parentNode="Bip01" />
+			<transform translate="2,0,0" scale="0.9" />
 		</dummy>
 		<dummy name="Eff_UI">
 			<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
-			<transform translate="0.000000, 0.000000, 260.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.000000" />
+			<transform translate="0,0,260" />
 		</dummy>
 		<dummy name="Eff_Head_World">
 			<attachInfo parentNode="Bip01 Head" applyWorldTransform="true" applyLocalScale="false" />
-			<transform translate="0.000000, -11.000000, 25.000000" rotation="0.000000, 0.000000, 0.000000" scale="0.900000" />
+			<transform translate="0,-11,25" scale="0.9" />
 		</dummy>
 		<dummy name="Eff_Body_World">
 			<attachInfo parentNode="Bip01 Spine1" applyWorldTransform="true" applyLocalScale="false" />
-			<transform translate="0.000000, -3.000000, 0.000000" rotation="0.000000, 0.000000, 0.000000" scale="0.900000" />
+			<transform translate="0,-3,0" scale="0.9" />
 		</dummy>
 		<dummy name="Eff_Foot_World">
 			<attachInfo parentNode="Bip01" applyWorldTransform="true" applyLocalScale="false" />
-			<transform translate="2.000000, 0.000000, 0.000000" rotation="0.000000, 0.000000, 0.000000" scale="0.900000" />
+			<transform translate="2,0,0" scale="0.9" />
 		</dummy>
 	</effectdummy>
 </ms2>

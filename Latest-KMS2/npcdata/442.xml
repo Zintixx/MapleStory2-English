@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ms2>
+	<npc id="44200001">
+		<environment feature="DungeonOS03" npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="boss" nametag="1" defenceMaterial="1" hitImmune="99" abnormalImmune="99" level="70" class="6" rankIcon="a" raceString="mystic" gender="2" emotionID="23000033" portrait="./Data/Resource/Image/Portrait/Mob/23000033_B_YetiTwoHeadWhite_P.png" damagedVibrateDuration="0.5" damagedVibrateAmp="1" checkCameraDistance="5000" extraCameraDistance="550" bossSoundDistance="5000" bossSoundEndDistance="99999" customExp="0" lookAtMyPCWhenTalking="0">
+			<model kfm="23000033_B_YetiTwoHeadWhite" shadowScale="950" rotationSpeed="720" walkSpeed="200" runSpeed="400" />
+			<stat hp="163567592" asp="100" msp="100" atp="120" evp="108" cap="72" cad="500" car="70" ndd="1178" pap="3004799" map="3004799" par="120" mar="120" />
+			<distance avoid="400" sight="600" sightHeightUP="300" customLastSightRadius="3500" customLastSightHeightUp="525" customLastSightHeightDown="50" />
+			<skill ids="50100407" levels="1" probs="100" />
+			<additionalEffect codes="50004400" levels="1" />
+			<collision shape="box" width="480" height="350" depth="380" />
+			<corpse width="650" height="150" depth="350" added="120" offsetNametag="-200" rotation="345" />
+			<capsule radius="180" height="250" ignore="1" />
+			<dead time="10" defaultaction="Dead_A" upaction="Dead_A" />
+			<normal action="Idle_A,Bore_A,Walk_A" prob="5000,3000,2000" movearea="150" />
+			<dropiteminfo dropHeight="300" dropDistanceBase="300" dropDistanceRandom="20" globalDropBoxId="74" globalDeadDropBoxId="1011" />
+			<aiInfo path="BossDungeon/DungeonOS03/AI_YetiTwoHeadWhite_Normal.xml" />
+		</environment>
+	</npc>
+	<npc id="44200002">
+		<environment feature="DungeonOS03" npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="boss" nametag="1" defenceMaterial="3" hitImmune="99" abnormalImmune="99" level="70" class="6" rankIcon="a" raceString="machine" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/23000077_B_Papulatus_P.png" damagedVibrateDuration="0.5" damagedVibrateAmp="1" checkCameraDistance="5000" extraCameraDistance="550" bossSoundDistance="5000" bossSoundEndDistance="99999" customExp="0" lookAtMyPCWhenTalking="0">
+			<model kfm="23000077_B_Papulatus" scale="1.05" shadowScale="640" rotationSpeed="720" walkSpeed="75" runSpeed="150" />
+			<stat hp="278064907" asp="100" msp="100" atp="120" evp="108" cap="72" cad="500" car="70" ndd="1071" pap="5007998" map="5007998" par="120" mar="120" />
+			<distance avoid="400" sight="1500" sightHeightUP="350" sightHeightDown="200" customLastSightRadius="3500" customLastSightHeightUp="525" customLastSightHeightDown="800" />
+			<skill ids="50100752" levels="1" probs="100" />
+			<additionalEffect codes="50004400" levels="1" />
+			<collision shape="box" width="330" height="400" depth="230" />
+			<corpse width="300" height="150" depth="1" added="950" offsetNametag="-200" rotation="0" />
+			<capsule radius="170" height="320" />
+			<dead time="20" defaultaction="Dead_A" upaction="Dead_A" />
+			<normal action="Idle_A,Bore_A,Walk_A" prob="5000,3000,2000" movearea="150" />
+			<dropiteminfo dropHeight="300" dropDistanceBase="300" dropDistanceRandom="20" globalDropBoxId="74" globalDeadDropBoxId="1011" />
+			<aiInfo path="BossDungeon/DungeonOS03/AI_Papulatus.xml" />
+		</environment>
+	</npc>
+	<npc id="44200003">
+		<environment feature="DungeonOS03" npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="boss" nametag="1" defenceMaterial="1" hitImmune="98" abnormalImmune="98" level="70" class="6" rankIcon="a" raceString="devil" gender="0" portrait="./Data/Resource/Image/Portrait/Mob/02030005_Balrog_P.png" damagedVibrateDuration="0.5" damagedVibrateAmp="1" checkCameraDistance="5000" extraCameraDistance="550" bossSoundDistance="5000" bossSoundEndDistance="99999" customExp="0" lookAtMyPCWhenTalking="0">
+			<model kfm="02030005_Balrog" shadowScale="1000" rotationSpeed="720" walkSpeed="125" runSpeed="250" />
+			<stat hp="327135184" asp="100" msp="100" atp="120" evp="108" cap="72" cad="500" car="70" ndd="1071" pap="5608958" map="5608958" par="120" mar="120" />
+			<distance avoid="400" sight="600" sightHeightUP="300" sightHeightDown="225" customLastSightRadius="3500" customLastSightHeightUp="525" customLastSightHeightDown="225" />
+			<skill ids="50100365" levels="1" probs="100" />
+			<additionalEffect codes="50004400" levels="1" />
+			<collision shape="box" width="600" height="550" depth="500" />
+			<corpse width="1000" height="300" depth="300" added="350" offsetNametag="-200" rotation="0" />
+			<capsule radius="250" height="550" />
+			<dead time="25" defaultaction="Dead_A" upaction="Dead_A" />
+			<normal action="Idle_A,Bore_A,Walk_A" prob="5000,3000,2000" movearea="150" />
+			<dropiteminfo dropHeight="420" dropDistanceBase="530" dropDistanceRandom="50" globalDropBoxId="74" globalDeadDropBoxId="1011" />
+			<aiInfo path="BossDungeon/DungeonOS03/AI_Balrog.xml" />
+		</environment>
+	</npc>
+	<npc id="44200004">
+		<environment feature="DungeonOS03" npcAttackGroup="1" npcDefenseGroup="2" hpBar="1" defenceMaterial="2" hitImmune="99" abnormalImmune="99" rankIcon="c" rotationDisabled="1" carePathToEnemy="1" propertyTags="keep_battle" raceString="creature" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/21000987_M_or_fi_cubric_pillar_P.png" damagedVibrateDuration="0.5" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" customExp="0" lookAtMyPCWhenTalking="0">
+			<model kfm="21000987_M_or_fi_cubric_pillar" shadowScale="160" />
+			<stat hp="5000000" asp="100" msp="100" atp="80" cap="38" cad="500" car="70" ndd="1071" />
+			<distance avoid="100" sight="9999" sightHeightUP="9999" sightHeightDown="700" customLastSightRadius="9900" customLastSightHeightUp="9900" customLastSightHeightDown="350" />
+			<collision shape="box" width="150" height="180" depth="150" />
+			<capsule radius="50" height="160" ignore="1" />
+			<dead time="2" defaultaction="Dead_A" upaction="Dead_A" />
+			<normal action="Idle_A" prob="10000" />
+			<aiInfo path="BossDungeon/DungeonOS03/AI_buffstatue_01.xml" />
+		</environment>
+	</npc>
+</ms2>

@@ -3,7 +3,7 @@
 <ms2>
 	<environment feature="Kritias_2018_12" locale="">
 		<model kfm="21010022_M_KritiasSlime" scale="1.5" />
-		<basic npcAttackGroup="1" npcDefenseGroup="2" nametag="1" nametagSize="18" minimap="0" hpBar="1" defenceMaterial="5" hitImmune="1" abnormalImmune="1" level="71" rankIcon="c" carePathToEnemy="1" maxSpawnCount="3" groupSpawnCount="1" rareDegree="100" difficulty="71" propertyTags="back_to_on_battle_end" raceString="fairy" gender="2" emotionID="21010022" portrait="./Data/Resource/Image/Portrait/Mob/21010022_M_KritiasSlime_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" skipFrame="1" />
+		<basic npcAttackGroup="1" npcDefenseGroup="2" nametag="1" nametagSize="18" minimap="0" hpBar="1" defenceMaterial="5" hitImmune="1" abnormalImmune="1" level="71" rankIcon="c" carePathToEnemy="1" propertyTags="back_to_on_battle_end" raceString="fairy" gender="2" emotionID="21010022" portrait="./Data/Resource/Image/Portrait/Mob/21010022_M_KritiasSlime_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" />
 		<stat hp="1420402" asp="100" msp="100" atp="80" evp="103" cap="73" cad="500" car="71" ndd="1120" pap="601362" map="601359" par="90" mar="90" scaleStatRate_1="1.4" scaleBaseTap_1="9474843" scaleBaseDef_1="9318" scaleBaseSpaRate_1="0.2" scaleStatRate_2="1.4" scaleBaseTap_2="13839356" scaleBaseDef_2="14482" scaleBaseSpaRate_2="0.2" />
 		<speed rotation="720" walk="80" run="240" />
 		<distance avoid="60" sight="450" sightHeightUP="300" sightHeightDown="0" customLastSightRadius="1800" customLastSightHeightUp="300" />
@@ -16,13 +16,13 @@
 		<shadow scale="120" bias="1" />
 		<normal action="Idle_A,Bore_A,Walk_A" prob="4500,1500,4000" movearea="150" maidExpired="Idle_A" />
 		<dropiteminfo dropHeight="50" dropDistanceBase="100" dropDistanceRandom="50" globalDropBoxId="1,10007" individualDropBoxId="725020005" />
-		<lookattarget lookAtMyPCWhenTalking="0" useTalkMotion="1" />
+		<lookattarget lookAtMyPCWhenTalking="0" />
 		<aiInfo path="AI_DefaultNew.xml" />
 	</environment>
 	<effectdummy>
 		<dummy name="Eff_UI">
-			<attachInfo parentNode="Scene Root" applyLocalScale="false" applyWorldTransform="true" />
-			<transform translate="0.0, 0.0, 130.0" rotation="0.0, 0.0, 0.0" scale="1.0" />
+			<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
+			<transform translate="0,0,130" />
 		</dummy>
 	</effectdummy>
 </ms2>

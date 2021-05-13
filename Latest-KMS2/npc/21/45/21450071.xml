@@ -3,7 +3,7 @@
 <ms2>
 	<environment feature="BlackOnyx" locale="">
 		<model kfm="22000067_N_BeetleBigBlue" scale="1.65" />
-		<basic npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="elite_boss" nametag="1" nametagSize="18" defenceMaterial="1" hitImmune="98" abnormalImmune="98" level="60" class="3" rankIcon="b" difficulty="60" propertyTags="battle_on_spawn,keep_battle" raceString="bug" gender="2" emotionID="22000067" mainTags="None" portrait="./Data/Resource/Image/Portrait/Mob/22000067_N_BeetleBigBlue_P.png" damagedVibrateDuration="0.5" damagedVibrateAmp="1" regenEffect="BG/Common/Sound/Eff_Sound_Regen.xml" skipFrame="1" checkCameraDistance="2500" extraCameraDistance="400" />
+		<basic npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="elite_boss" nametag="1" nametagSize="18" defenceMaterial="1" hitImmune="98" abnormalImmune="98" level="60" class="3" rankIcon="b" propertyTags="battle_on_spawn,keep_battle" raceString="bug" gender="2" emotionID="22000067" portrait="./Data/Resource/Image/Portrait/Mob/22000067_N_BeetleBigBlue_P.png" damagedVibrateDuration="0.5" damagedVibrateAmp="1" regenEffect="BG/Common/Sound/Eff_Sound_Regen.xml" checkCameraDistance="2500" extraCameraDistance="400" />
 		<stat hp="888588" asp="100" msp="100" atp="81" evp="92" cap="67" cad="250" car="60" ndd="799" pap="211254" map="211260" par="225" mar="225" />
 		<speed rotation="720" walk="175" run="350" />
 		<distance avoid="100" sight="2000" sightHeightUP="500" sightHeightDown="230" customLastSightRadius="2500" customLastSightHeightUp="750" customLastSightHeightDown="330" />
@@ -15,42 +15,42 @@
 		<shadow scale="450" bias="1" />
 		<normal action="Idle_A,Bore_A,Walk_A" prob="5000,3000,2000" movearea="150" maidExpired="Idle_A" />
 		<dropiteminfo dropHeight="300" dropDistanceBase="300" dropDistanceRandom="20" globalDropBoxId="74" />
-		<lookattarget lookAtMyPCWhenTalking="0" useTalkMotion="1" />
+		<lookattarget lookAtMyPCWhenTalking="0" />
 		<aiInfo path="BossDungeon/BlackOnyx/AI_BeetleBigBlue_TypeA.xml" />
 		<exp customExp="0" />
 	</environment>
 	<effectdummy>
 		<dummy name="Eff_Head">
-			<attachInfo parentNode="Bip01 Head" applyWorldTransform="false" applyLocalScale="true" />
-			<transform translate="50.000000, 10.000000, 0.000000" rotation="-90.000000, -90.000000, 0.000000" scale="1.100000" />
+			<attachInfo parentNode="Bip01 Head" />
+			<transform translate="50,10,0" rotation="-90,-90,0" scale="1.1" />
 		</dummy>
 		<dummy name="Eff_Body">
-			<attachInfo parentNode="Bip01 Pelvis" applyWorldTransform="false" applyLocalScale="true" />
-			<transform translate="30.000000, 10.000000, 0.000000" rotation="180.000000, -90.000000, 90.000000" scale="1.30000" />
+			<attachInfo parentNode="Bip01 Pelvis" />
+			<transform translate="30,10,0" rotation="180,-90,90" scale="1.3" />
 		</dummy>
 		<dummy name="Eff_Foot">
-			<attachInfo parentNode="Bip01 Footsteps" applyWorldTransform="false" applyLocalScale="true" />
-			<transform translate="0.000000, -10.000000, 0.000000" rotation="0.000000, 0.000000, 90.000000" scale="1.100000" />
+			<attachInfo parentNode="Bip01 Footsteps" />
+			<transform translate="0,-10,0" rotation="0,0,90" scale="1.1" />
 		</dummy>
 		<dummy name="Eff_UI">
 			<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
-			<transform translate="0.000000, -30.000000, 400.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.000000" />
+			<transform translate="0,-30,400" />
 		</dummy>
 		<dummy name="Eff_Damage">
-			<attachInfo parentNode="Eff_UI" applyWorldTransform="false" applyLocalScale="false" />
-			<transform translate="0.000000, 0.000000, -300.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.000000" />
+			<attachInfo parentNode="Eff_UI" applyLocalScale="false" />
+			<transform translate="0,0,-300" />
 		</dummy>
 		<dummy name="Eff_Head_World">
 			<attachInfo parentNode="Bip01 Head" applyWorldTransform="true" applyLocalScale="false" />
-			<transform translate="0.000000, -50.000000, 70.000000" rotation="0.000000, 0.000000, 90.000000" scale="1.100000" />
+			<transform translate="0,-50,70" rotation="0,0,90" scale="1.1" />
 		</dummy>
 		<dummy name="Eff_Body_World">
 			<attachInfo parentNode="Bip01 Pelvis" applyWorldTransform="true" applyLocalScale="false" />
-			<transform translate="0.000000, -15.000000, 50.000000" rotation="0.000000, 0.000000, 90.000000" scale="1.30000" />
+			<transform translate="0,-15,50" rotation="0,0,90" scale="1.3" />
 		</dummy>
 		<dummy name="Eff_Foot_World">
 			<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
-			<transform translate="0.000000, 0.000000, 0.000000" rotation="0.000000, 0.000000, 90.000000" scale="1.100000" />
+			<transform rotation="0,0,90" scale="1.1" />
 		</dummy>
 	</effectdummy>
 </ms2>

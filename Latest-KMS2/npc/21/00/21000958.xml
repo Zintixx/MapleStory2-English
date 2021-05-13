@@ -3,7 +3,7 @@
 <ms2>
 	<environment feature="Develop" locale="">
 		<model kfm="21000958_M_DemonGunBlue" />
-		<basic npcAttackGroup="1" npcDefenseGroup="2" nametag="1" nametagSize="18" minimap="0" hpBar="1" defenceMaterial="3" hitImmune="1" abnormalImmune="1" rankIcon="c" carePathToEnemy="1" rareDegree="100" difficulty="1" raceString="spirit" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/21000958_M_DemonGunBlue_P.png" damagedColorScale="6" damagedVibrateDuration="1" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" skipFrame="1" />
+		<basic npcAttackGroup="1" npcDefenseGroup="2" nametag="1" nametagSize="18" minimap="0" hpBar="1" defenceMaterial="3" hitImmune="1" abnormalImmune="1" rankIcon="c" carePathToEnemy="1" raceString="spirit" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/21000958_M_DemonGunBlue_P.png" damagedColorScale="6" damagedVibrateDuration="1" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" />
 		<stat hp="22" asp="100" msp="100" atp="80" evp="82" cap="38" cad="500" car="50" ndd="9" pap="7" map="7" par="90" mar="90" />
 		<speed rotation="720" walk="175" run="350" />
 		<distance avoid="100" sight="500" sightHeightUP="300" sightHeightDown="0" />
@@ -15,37 +15,37 @@
 		<shadow scale="200" bias="1" />
 		<normal action="Idle_A,Bore_A,Walk_A" prob="4500,1000,4500" movearea="150" maidExpired="Idle_A" />
 		<dropiteminfo dropHeight="150" dropDistanceBase="140" dropDistanceRandom="10" />
-		<lookattarget lookAtMyPCWhenTalking="0" useTalkMotion="1" />
+		<lookattarget lookAtMyPCWhenTalking="0" />
 		<aiInfo path="Test/AI_DefaultTest.xml" />
 	</environment>
 	<effectdummy>
 		<dummy name="Eff_Head">
-			<attachInfo parentNode="GunBlue_Head_Bone05" applyWorldTransform="false" applyLocalScale="true" />
-			<transform translate="17.000000, -7.000000, 0.000000" rotation="0.000000, 0.000000, 0.000000" scale="0.800000" />
+			<attachInfo parentNode="GunBlue_Head_Bone05" />
+			<transform translate="17,-7,0" scale="0.8" />
 		</dummy>
 		<dummy name="Eff_Body">
-			<attachInfo parentNode="GunBlue_Body_Point02" applyWorldTransform="false" applyLocalScale="true" />
-			<transform translate="0.000000, -12.000000, 4.000000" rotation="0.000000, 0.000000, 0.000000" scale="0.800000" />
+			<attachInfo parentNode="GunBlue_Body_Point02" />
+			<transform translate="0,-12,4" scale="0.8" />
 		</dummy>
 		<dummy name="Eff_Foot">
-			<attachInfo parentNode="Main_Point01 NonAccum" applyWorldTransform="false" applyLocalScale="true" />
-			<transform translate="0.000000, 0.000000, 0.000000" rotation="0.000000, 0.000000, 0.000000" scale="0.800000" />
+			<attachInfo parentNode="Main_Point01 NonAccum" />
+			<transform scale="0.8" />
 		</dummy>
 		<dummy name="Eff_UI">
 			<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
-			<transform translate="0.000000, 0.000000, 230.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.000000" />
+			<transform translate="0,0,230" />
 		</dummy>
 		<dummy name="Eff_Head_World">
 			<attachInfo parentNode="GunBlue_Head_Bone05" applyWorldTransform="true" applyLocalScale="false" />
-			<transform translate="0.000000, -9.000000, 14.000000" rotation="0.000000, 0.000000, 0.000000" scale="0.800000" />
+			<transform translate="0,-9,14" scale="0.8" />
 		</dummy>
 		<dummy name="Eff_Body_World">
 			<attachInfo parentNode="GunBlue_Body_Point02" applyWorldTransform="true" applyLocalScale="false" />
-			<transform translate="0.000000, -5.000000, -12.000000" rotation="0.000000, 0.000000, 0.000000" scale="0.800000" />
+			<transform translate="0,-5,-12" scale="0.8" />
 		</dummy>
 		<dummy name="Eff_Foot_World">
 			<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
-			<transform translate="0.000000, 0.000000, 0.000000" rotation="0.000000, 0.000000, 0.000000" scale="0.800000" />
+			<transform scale="0.8" />
 		</dummy>
 	</effectdummy>
 </ms2>

@@ -3,7 +3,7 @@
 <ms2>
 	<environment feature="Kritias_Turka01" locale="">
 		<model kfm="29500102_N_ArcheonBlack" scale="1.85" />
-		<basic npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="boss" nametag="1" nametagSize="18" hpBar="1" defenceMaterial="1" hitImmune="95" abnormalImmune="95" level="70" class="6" rankIcon="a" carePathToEnemy="1" difficulty="70" propertyTags="keep_battle" raceString="machine" gender="0" emotionID="29500102" mainTags="None" portrait="./Data/Resource/Image/Portrait/Mob/29500102_N_ArcheonBlack_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" regenEffect="NPC/Skill/Archeon/Eff_Archeon_Regen.xml" skipFrame="1" />
+		<basic npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="boss" nametag="1" nametagSize="18" hpBar="1" defenceMaterial="1" hitImmune="95" abnormalImmune="95" level="70" class="6" rankIcon="a" carePathToEnemy="1" propertyTags="keep_battle" raceString="machine" gender="0" emotionID="29500102" portrait="./Data/Resource/Image/Portrait/Mob/29500102_N_ArcheonBlack_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" regenEffect="NPC/Skill/Archeon/Eff_Archeon_Regen.xml" />
 		<stat hp="2574923336" asp="100" msp="100" atp="120" evp="130" cap="72" cad="250" car="70" ndd="2464" pap="65199416" map="65199416" par="220" mar="220" />
 		<speed rotation="400" walk="190" run="190" />
 		<distance avoid="50" sight="3000" sightHeightUP="3000" sightHeightDown="3000" customLastSightRadius="3000" customLastSightHeightUp="3000" customLastSightHeightDown="3000" />
@@ -13,30 +13,30 @@
 		<dead time="5" defaultaction="Dead_A" upaction="Dead_A" />
 		<shadow scale="120" bias="1" />
 		<normal action="Idle_A,Attack_Idle_A" prob="7000,3000" maidExpired="Idle_A" />
-		<lookattarget lookAtMyPCWhenTalking="0" useTalkMotion="1" />
+		<lookattarget lookAtMyPCWhenTalking="0" />
 		<aiInfo path="BossDungeon/Archeon/Boss/AI_Archeon.xml" />
 		<exp customExp="0" />
 	</environment>
 	<effectdummy>
 		<dummy name="Eff_Head">
-			<attachInfo parentNode="Head_Point01" applyWorldTransform="false" applyLocalScale="true" />
-			<transform translate="15.000000, 15.000000, 0.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.000000" />
+			<attachInfo parentNode="Head_Point01" />
+			<transform translate="15,15,0" />
 		</dummy>
 		<dummy name="Eff_Body">
-			<attachInfo parentNode="Bip01 Spine" applyWorldTransform="false" applyLocalScale="true" />
-			<transform translate="0.000000, 15.000000, 0.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.000000" />
+			<attachInfo parentNode="Bip01 Spine" />
+			<transform translate="0,15,0" />
 		</dummy>
 		<dummy name="Eff_UI">
 			<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
-			<transform translate="0.000000, 0.000000, 510.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.000000" />
+			<transform translate="0,0,510" />
 		</dummy>
 		<dummy name="Eff_Head_World">
 			<attachInfo parentNode="Head_Point01" applyWorldTransform="true" applyLocalScale="false" />
-			<transform translate="0.000000, -30.000000, 15.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.000000" />
+			<transform translate="0,-30,15" />
 		</dummy>
 		<dummy name="Eff_Body_World">
 			<attachInfo parentNode="Bip01 Spine" applyWorldTransform="true" applyLocalScale="false" />
-			<transform translate="0.000000, -25.000000, 0.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.000000" />
+			<transform translate="0,-25,0" />
 		</dummy>
 	</effectdummy>
 </ms2>

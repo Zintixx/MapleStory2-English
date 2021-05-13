@@ -3,7 +3,7 @@
 <ms2>
 	<environment feature="DarkCastle" locale="">
 		<model kfm="21000742_M_ShadowFamilyMagicianPurple" scale="1.5" />
-		<basic npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="enemy" nametagSize="18" hpBar="1" defenceMaterial="1" hitImmune="1" abnormalImmune="1" level="56" class="7" rankIcon="b" carePathToEnemy="1" difficulty="56" raceString="spirit" gender="2" mainTags="None" portrait="./Data/Resource/Image/Portrait/Mob/21000742_M_ShadowFamilyMagicianPurple_P.png" damagedColorScale="10" damagedVibrateDuration="1" damagedVibrateAmp="1" deadEffect="BG/Common/Eff_Monster_Death.xml" skipFrame="1" />
+		<basic npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="enemy" nametagSize="18" hpBar="1" defenceMaterial="1" hitImmune="1" abnormalImmune="1" level="56" class="7" rankIcon="b" carePathToEnemy="1" raceString="spirit" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/21000742_M_ShadowFamilyMagicianPurple_P.png" damagedColorScale="10" damagedVibrateDuration="1" damagedVibrateAmp="1" deadEffect="BG/Common/Eff_Monster_Death.xml" />
 		<stat hp="212061" asp="100" msp="100" atp="81" evp="82" cap="65" cad="500" car="50" ndd="702" pap="340214" map="340319" par="90" mar="90" />
 		<speed rotation="720" walk="120" run="240" />
 		<distance avoid="100" sight="450" sightHeightUP="300" sightHeightDown="150" />
@@ -16,18 +16,18 @@
 		<shadow scale="130" bias="1" />
 		<normal action="Idle_A,Bore_A,Walk_A" prob="4100,900,5000" movearea="250" maidExpired="Idle_A" />
 		<dropiteminfo globalDropBoxId="74" />
-		<lookattarget lookAtMyPCWhenTalking="0" useTalkMotion="1" />
+		<lookattarget lookAtMyPCWhenTalking="0" />
 		<aiInfo path="AI_Default_Summon_24003228.xml" />
 		<exp customExp="0" />
 	</environment>
 	<effectdummy>
 		<dummy name="Eff_Body">
-			<attachInfo parentNode="Scene Root" applyLocalScale="true" applyWorldTransform="false" />
-			<transform translate="0.0, 0.0, 125.0" rotation="0.0, 0.0, 0.0" scale="1.0" />
+			<attachInfo parentNode="Scene Root" />
+			<transform translate="0,0,125" />
 		</dummy>
 		<dummy name="Eff_UI">
-			<attachInfo parentNode="Scene Root" applyLocalScale="false" applyWorldTransform="true" />
-			<transform translate="0.0, 0.0, 250.0" rotation="0.0, 0.0, 0.0" scale="1.0" />
+			<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
+			<transform translate="0,0,250" />
 		</dummy>
 	</effectdummy>
 </ms2>

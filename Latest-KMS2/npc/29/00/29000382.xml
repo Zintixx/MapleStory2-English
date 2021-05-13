@@ -3,7 +3,7 @@
 <ms2>
 	<environment feature="FameContents_EP1_02" locale="">
 		<model kfm="22000113_N_BalrogCrimson" scale="0.9" />
-		<basic npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="enemy" nametag="1" nametagSize="18" hpBar="1" defenceMaterial="1" hitImmune="1" abnormalImmune="1" level="50" rankIcon="c" difficulty="50" propertyTags="battle_on_spawn,keep_battle" raceString="devil" gender="0" mainTags="None" portrait="./Data/Resource/Image/Portrait/Mob/22000113_N_BalrogCrimson_P.png" damagedVibrateDuration="0.5" damagedVibrateAmp="1" />
+		<basic npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="enemy" nametag="1" nametagSize="18" hpBar="1" defenceMaterial="1" hitImmune="1" abnormalImmune="1" level="50" rankIcon="c" propertyTags="battle_on_spawn,keep_battle" raceString="devil" gender="0" portrait="./Data/Resource/Image/Portrait/Mob/22000113_N_BalrogCrimson_P.png" damagedVibrateDuration="0.5" damagedVibrateAmp="1" />
 		<stat hp="133160" asp="100" msp="100" atp="80" evp="88" cap="62" cad="500" car="50" ndd="1135" pap="34289" map="228667" par="105" mar="105" />
 		<speed rotation="400" walk="210" run="420" />
 		<distance avoid="150" sight="9000" sightHeightUP="950" sightHeightDown="800" customLastSightRadius="9900" customLastSightHeightUp="980" customLastSightHeightDown="850" />
@@ -13,14 +13,14 @@
 		<dead time="2.5" defaultaction="Dead_01_A" upaction="Dead_01_A" />
 		<shadow scale="500" bias="1" />
 		<normal action="Idle_A,Bore_A,Walk_A" prob="3500,2000,4500" movearea="150" maidExpired="Idle_A" />
-		<lookattarget lookAtMyPCWhenTalking="0" useTalkMotion="1" />
+		<lookattarget lookAtMyPCWhenTalking="0" />
 		<aiInfo path="BossDungeon/BalrogMagicBurster/Mob/AI_BalrogCrimson_CLeftType.xml" />
 		<exp customExp="0" />
 	</environment>
 	<effectdummy>
 		<dummy name="Eff_UI">
-			<attachInfo parentNode="Scene Root" applyLocalScale="false" applyWorldTransform="true" />
-			<transform translate="0.0, 0.0, 500.0" rotation="0.0, 0.0, 0.0" scale="1.0" />
+			<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
+			<transform translate="0,0,500" />
 		</dummy>
 	</effectdummy>
 </ms2>

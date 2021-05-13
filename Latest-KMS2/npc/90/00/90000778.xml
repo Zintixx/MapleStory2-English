@@ -3,8 +3,8 @@
 <ms2>
 	<environment feature="Develop" locale="">
 		<model kfm="21090025_M_PimBlack" scale="1.25" />
-		<basic npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="enemy" nametag="1" nametagSize="18" hpBar="1" defenceMaterial="1" hitImmune="1" abnormalImmune="1" level="8" rankIcon="c" carePathToEnemy="1" difficulty="8" raceString="devil" gender="2" portrait="./Data/Resource/Image/Portrait/Npc/21090025_M_PimBlack_P.png" damagedColorScale="6" damagedVibrateDuration="0.9" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" skipFrame="1" />
-		<stat hp="238" asp="100" msp="100" atp="80" evp="82" cap="41" cad="500" car="50" ndd="30" pap="36" map="36" par="90" mar="90" hiddenhpadd03="714" hiddenwapadd03="-12" hiddenhpadd04="714" hiddenwapadd04="-12" />
+		<basic npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="enemy" nametag="1" nametagSize="18" hpBar="1" defenceMaterial="1" hitImmune="1" abnormalImmune="1" level="8" rankIcon="c" carePathToEnemy="1" raceString="devil" gender="2" portrait="./Data/Resource/Image/Portrait/Npc/21090025_M_PimBlack_P.png" damagedColorScale="6" damagedVibrateDuration="0.9" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" />
+		<stat hp="238" asp="100" msp="100" atp="80" evp="82" cap="41" cad="500" car="50" ndd="30" pap="36" map="36" par="90" mar="90" />
 		<speed rotation="720" walk="200" run="400" />
 		<distance avoid="250" sight="5000" sightHeightUP="300" sightHeightDown="150" customLastSightRadius="9000" customLastSightHeightUp="300" customLastSightHeightDown="150" />
 		<skill ids="50000647,50000648" levels="1,1" priorities="1,1" probs="80,20" />
@@ -14,7 +14,7 @@
 		<push back="1" up="1" knockback="1" />
 		<shadow scale="85" bias="1" />
 		<normal action="Idle_A,Bore_A,Walk_A" prob="4500,1000,4500" movearea="75" maidExpired="Idle_A" />
-		<lookattarget lookAtMyPCWhenTalking="0" useTalkMotion="1" />
+		<lookattarget lookAtMyPCWhenTalking="0" />
 		<aiInfo path="AI_DefaultNew.xml" />
 		<exp customExp="0" />
 	</environment>

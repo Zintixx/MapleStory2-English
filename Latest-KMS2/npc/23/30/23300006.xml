@@ -3,7 +3,7 @@
 <ms2>
 	<environment feature="Develop" locale="">
 		<model kfm="23000040_B_BullArmorGreen" scale="1.2" />
-		<basic npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="elite_boss" nametag="1" nametagSize="18" defenceMaterial="3" hitImmune="99" abnormalImmune="99" level="70" class="6" rankIcon="a" difficulty="70" propertyTags="battle_on_spawn,keep_battle" raceString="mystic" gender="2" mainTags="None" portrait="./Data/Resource/Image/Portrait/Mob/23000040_B_BullArmorGreen_P.png" damagedVibrateDuration="0.5" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Cube_Regen_DarkTear.xml" />
+		<basic npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="elite_boss" nametag="1" nametagSize="18" defenceMaterial="3" hitImmune="99" abnormalImmune="99" level="70" class="6" rankIcon="a" propertyTags="battle_on_spawn,keep_battle" raceString="mystic" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/23000040_B_BullArmorGreen_P.png" damagedVibrateDuration="0.5" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Cube_Regen_DarkTear.xml" />
 		<stat hp="13309825" asp="100" msp="100" atp="120" evp="108" cap="72" cad="500" car="70" ndd="1071" pap="659807" map="660006" par="120" mar="120" scaleStatRate_1="8" scaleBaseTap_1="6064143" scaleBaseDef_1="7086" scaleBaseSpaRate_1="0.15" />
 		<speed rotation="720" walk="200" run="400" />
 		<distance avoid="400" sight="999999" sightHeightUP="99999" sightHeightDown="99999" customLastSightRadius="999999" customLastSightHeightUp="9999" customLastSightHeightDown="9999" />
@@ -16,13 +16,13 @@
 		<shadow scale="640" bias="1" />
 		<normal action="Idle_A" prob="10000" movearea="150" maidExpired="Idle_A" />
 		<dropiteminfo dropHeight="50" dropDistanceBase="100" dropDistanceRandom="50" globalDropBoxId="6" globalDeadDropBoxId="1011" />
-		<lookattarget lookAtMyPCWhenTalking="0" useTalkMotion="1" />
+		<lookattarget lookAtMyPCWhenTalking="0" />
 		<aiInfo path="EventDoungeon/AI_BullArmorGreen_Event.xml" />
 	</environment>
 	<effectdummy>
 		<dummy name="Eff_UI">
-			<attachInfo parentNode="Scene Root" applyLocalScale="false" applyWorldTransform="true" />
-			<transform translate="0.0, 0.0, 330.0" rotation="0.0, 0.0, 0.0" scale="1.0" />
+			<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
+			<transform translate="0,0,330" />
 		</dummy>
 	</effectdummy>
 </ms2>

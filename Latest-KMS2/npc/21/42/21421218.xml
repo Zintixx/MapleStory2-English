@@ -3,7 +3,7 @@
 <ms2>
 	<environment feature="ChronicleDungeon60_01" locale="">
 		<model kfm="23000085_B_Mevidic" scale="2" />
-		<basic npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="boss" nametag="1" nametagSize="18" defenceMaterial="1" hitImmune="99" abnormalImmune="99" level="60" class="6" rankIcon="a" carePathToEnemy="1" difficulty="60" propertyTags="keep_battle,fixed_big_monster" raceString="mystic" gender="2" mainTags="None" portrait="./Data/Resource/Image/Portrait/Mob/23000085_B_Mevidic_P.png" damagedColorScale="10" damagedVibrateDuration="1" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" skipFrame="1" bossSoundDistance="99999" bossSoundEndDistance="99999" />
+		<basic npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="boss" nametag="1" nametagSize="18" defenceMaterial="1" hitImmune="99" abnormalImmune="99" level="60" class="6" rankIcon="a" carePathToEnemy="1" propertyTags="keep_battle,fixed_big_monster" raceString="mystic" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/23000085_B_Mevidic_P.png" damagedColorScale="10" damagedVibrateDuration="1" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" bossSoundDistance="99999" bossSoundEndDistance="99999" />
 		<stat hp="3625243" asp="100" msp="100" atp="120" evp="88" cap="67" cad="500" car="50" ndd="610" pap="541516" map="541683" par="90" mar="90" />
 		<speed rotation="720" walk="600" run="1000" />
 		<distance avoid="100" sight="9999" sightHeightUP="9999" sightHeightDown="0" customLastSightRadius="4500" customLastSightHeightUp="300" customLastSightHeightDown="150" />
@@ -16,14 +16,14 @@
 		<shadow scale="130" bias="1" />
 		<normal action="Idle_A" prob="10000" maidExpired="Idle_A" />
 		<dropiteminfo globalDropBoxId="74" />
-		<lookattarget lookAtMyPCWhenTalking="0" useTalkMotion="1" />
+		<lookattarget lookAtMyPCWhenTalking="0" />
 		<aiInfo path="AI_Mevidic_PartyDungeon_Epic.xml" />
 		<exp customExp="0" />
 	</environment>
 	<effectdummy>
 		<dummy name="Eff_UI">
-			<attachInfo parentNode="Scene Root" applyLocalScale="false" applyWorldTransform="true" />
-			<transform translate="0.0, -300.0, 480.0" rotation="0.0, 0.0, 0.0" scale="1.0" />
+			<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
+			<transform translate="0,-300,480" />
 		</dummy>
 	</effectdummy>
 </ms2>

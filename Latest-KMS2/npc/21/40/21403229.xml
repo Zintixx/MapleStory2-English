@@ -3,7 +3,7 @@
 <ms2>
 	<environment feature="Season3" locale="">
 		<model kfm="21000229_M_PirateSkullCannon" scale="1.1" />
-		<basic npcAttackGroup="1" npcDefenseGroup="2" nametag="1" nametagSize="18" minimap="0" hpBar="1" defenceMaterial="1" hitImmune="1" abnormalImmune="1" level="50" rankIcon="c" carePathToEnemy="1" difficulty="50" raceString="undead" gender="2" mainTags="None" portrait="./Data/Resource/Image/Portrait/Mob/21000229_M_PirateSkullCannon_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" />
+		<basic npcAttackGroup="1" npcDefenseGroup="2" nametag="1" nametagSize="18" minimap="0" hpBar="1" defenceMaterial="1" hitImmune="1" abnormalImmune="1" level="50" rankIcon="c" carePathToEnemy="1" raceString="undead" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/21000229_M_PirateSkullCannon_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" />
 		<stat hp="142038" asp="100" msp="100" atp="80" evp="82" cap="62" cad="500" car="50" ndd="567" pap="49433" map="49449" />
 		<speed rotation="720" walk="135" run="270" />
 		<distance avoid="60" sight="9000" sightHeightUP="300" sightHeightDown="100" customLastSightRadius="9900" customLastSightHeightUp="9900" customLastSightHeightDown="9900" />
@@ -15,13 +15,13 @@
 		<shadow scale="130" bias="1" />
 		<normal action="Idle_A" prob="10000" maidExpired="Idle_A" />
 		<dropiteminfo globalDropBoxId="74" />
-		<lookattarget lookAtMyPCWhenTalking="0" useTalkMotion="1" />
+		<lookattarget lookAtMyPCWhenTalking="0" />
 		<aiInfo path="BossDungeon/CaptainHookFish01/AI_PirateSkullCannonSummon.xml" />
 		<exp customExp="0" />
 	</environment>
 	<environment feature="Season3" locale="CN">
 		<model kfm="21000809_M_MermanSmallBlue" scale="1.1" />
-		<basic npcAttackGroup="1" npcDefenseGroup="2" nametag="1" nametagSize="18" minimap="0" hpBar="1" defenceMaterial="1" hitImmune="1" abnormalImmune="1" level="50" rankIcon="c" carePathToEnemy="1" difficulty="50" raceString="undead" gender="2" mainTags="None" portrait="./Data/Resource/Image/Portrait/Mob/21000809_M_MermanSmallBlue_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" />
+		<basic npcAttackGroup="1" npcDefenseGroup="2" nametag="1" nametagSize="18" minimap="0" hpBar="1" defenceMaterial="1" hitImmune="1" abnormalImmune="1" level="50" rankIcon="c" carePathToEnemy="1" raceString="undead" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/21000809_M_MermanSmallBlue_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" />
 		<stat hp="1423572" asp="100" msp="100" atp="80" evp="82" cap="62" cad="500" car="50" ndd="839" pap="183808" map="183824" />
 		<speed rotation="720" walk="135" run="270" />
 		<distance avoid="60" sight="9000" sightHeightUP="300" sightHeightDown="100" customLastSightRadius="9900" customLastSightHeightUp="9900" customLastSightHeightDown="9900" />
@@ -33,30 +33,30 @@
 		<shadow scale="130" bias="1" />
 		<normal action="Idle_A" prob="10000" maidExpired="Idle_A" />
 		<dropiteminfo globalDropBoxId="74" />
-		<lookattarget lookAtMyPCWhenTalking="0" useTalkMotion="1" />
+		<lookattarget lookAtMyPCWhenTalking="0" />
 		<aiInfo path="BossDungeon/CaptainHookFish01/AI_PirateSkullCannonSummon_CN.xml" />
 		<exp customExp="0" />
 	</environment>
 	<effectdummy>
 		<dummy name="Eff_Head">
-			<attachInfo parentNode="Bip01 Head" applyWorldTransform="false" applyLocalScale="true" />
-			<transform translate="10.000000, 15.000000, 0.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.000000" />
+			<attachInfo parentNode="Bip01 Head" />
+			<transform translate="10,15,0" />
 		</dummy>
 		<dummy name="Eff_Body">
-			<attachInfo parentNode="Bip01 Spine1" applyWorldTransform="false" applyLocalScale="true" />
-			<transform translate="10.000000, 15.000000, 0.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.000000" />
+			<attachInfo parentNode="Bip01 Spine1" />
+			<transform translate="10,15,0" />
 		</dummy>
 		<dummy name="Eff_UI">
 			<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
-			<transform translate="0.000000, -40.000000, 180.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.000000" />
+			<transform translate="0,-40,180" />
 		</dummy>
 		<dummy name="Eff_Head_World">
 			<attachInfo parentNode="Bip01 Head" applyWorldTransform="true" applyLocalScale="false" />
-			<transform translate="15.000000, -20.000000, 0.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.000000" />
+			<transform translate="15,-20,0" />
 		</dummy>
 		<dummy name="Eff_Body_World">
 			<attachInfo parentNode="Bip01 Spine1" applyWorldTransform="true" applyLocalScale="false" />
-			<transform translate="0.000000, -20.000000, 0.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.000000" />
+			<transform translate="0,-20,0" />
 		</dummy>
 	</effectdummy>
 </ms2>

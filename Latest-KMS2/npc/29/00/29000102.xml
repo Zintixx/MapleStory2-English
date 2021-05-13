@@ -3,7 +3,7 @@
 <ms2>
 	<environment feature="Striker" locale="">
 		<model kfm="21000313_M_PelicanFighterShortBlack" />
-		<basic npcAttackGroup="1" npcDefenseGroup="2" nametag="1" nametagSize="18" minimap="0" hpBar="1" defenceMaterial="1" hitImmune="1" abnormalImmune="1" level="7" rankIcon="c" carePathToEnemy="1" difficulty="7" raceString="combine" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/21000313_M_PelicanFighterShortBlack_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" skipFrame="1" />
+		<basic npcAttackGroup="1" npcDefenseGroup="2" nametag="1" nametagSize="18" minimap="0" hpBar="1" defenceMaterial="1" hitImmune="1" abnormalImmune="1" level="7" rankIcon="c" carePathToEnemy="1" raceString="combine" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/21000313_M_PelicanFighterShortBlack_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" />
 		<stat hp="191" asp="100" msp="100" atp="80" evp="82" cap="41" cad="500" car="50" ndd="25" pap="15" map="15" par="90" mar="90" />
 		<speed rotation="720" walk="160" run="320" />
 		<distance avoid="60" sight="1500" sightHeightUP="300" sightHeightDown="0" />
@@ -15,14 +15,14 @@
 		<shadow scale="130" bias="1" />
 		<normal action="Idle_A,Bore_A,Walk_A" prob="4500,1500,4000" movearea="150" maidExpired="Idle_A" />
 		<dropiteminfo dropHeight="50" dropDistanceBase="100" dropDistanceRandom="50" globalDropBoxId="74" />
-		<lookattarget lookAtMyPCWhenTalking="0" useTalkMotion="1" />
+		<lookattarget lookAtMyPCWhenTalking="0" />
 		<aiInfo path="AI_DefaultNew.xml" />
 		<exp customExp="0" />
 	</environment>
 	<effectdummy>
 		<dummy name="Eff_UI">
 			<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
-			<transform translate="0.000000, 0.000000, 170.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.000000" />
+			<transform translate="0,0,170" />
 		</dummy>
 	</effectdummy>
 </ms2>

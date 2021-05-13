@@ -3,7 +3,7 @@
 <ms2>
 	<environment feature="Season2" locale="">
 		<model kfm="21000812_M_MermanFatBlue" scale="1.1" />
-		<basic npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="enemy" nametag="1" nametagSize="18" hpBar="1" defenceMaterial="1" hitImmune="1" abnormalImmune="1" level="41" rankIcon="c" carePathToEnemy="1" difficulty="41" propertyTags="keep_battle" raceString="animal" gender="2" mainTags="None" portrait="./Data/Resource/Image/Portrait/Mob/21000812_M_MermanFatBlue_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" />
+		<basic npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="enemy" nametag="1" nametagSize="18" hpBar="1" defenceMaterial="1" hitImmune="1" abnormalImmune="1" level="41" rankIcon="c" carePathToEnemy="1" propertyTags="keep_battle" raceString="animal" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/21000812_M_MermanFatBlue_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" />
 		<stat hp="9439" asp="100" msp="100" atp="80" evp="82" cap="58" cad="250" car="50" ndd="393" pap="4343" map="4344" />
 		<speed rotation="720" walk="155" run="310" />
 		<distance avoid="60" sight="1300" sightHeightUP="300" sightHeightDown="100" customLastSightRadius="9900" customLastSightHeightUp="9900" customLastSightHeightDown="9900" />
@@ -15,14 +15,14 @@
 		<shadow scale="130" bias="1" />
 		<normal action="Idle_A" prob="10000" maidExpired="Idle_A" />
 		<dropiteminfo globalDropBoxId="74" />
-		<lookattarget lookAtMyPCWhenTalking="0" useTalkMotion="1" />
+		<lookattarget lookAtMyPCWhenTalking="0" />
 		<aiInfo path="BossDungeon/CaptainHookFish01/AI_MermanFatBlue.xml" />
 		<exp customExp="0" />
 	</environment>
 	<effectdummy>
 		<dummy name="Eff_UI">
-			<attachInfo parentNode="Scene Root" applyLocalScale="false" applyWorldTransform="true" />
-			<transform translate="0.0, 0.0, 210.0" rotation="0.0, 0.0, 0.0" scale="1.0" />
+			<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
+			<transform translate="0,0,210" />
 		</dummy>
 	</effectdummy>
 </ms2>

@@ -1,26 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- 파싱해서 사용하는 데이터이니 직접 수정하지 마세요 -->
 <ms2>
-	<environment feature="TimeAttackDungeon" locale="">
-		<model kfm="22000022_N_BearBigLog" />
-		<basic npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="elite_boss" nametag="1" nametagSize="18" defenceMaterial="1" hitImmune="99" abnormalImmune="99" level="50" class="3" rankIcon="b" carePathToEnemy="1" difficulty="50" propertyTags="keep_battle,atp_formula_01" raceString="animal" gender="2" mainTags="None" portrait="./Data/Resource/Image/Portrait/Mob/22000022_N_BearBigLog_P.png" damagedVibrateDuration="0.5" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" skipFrame="1" />
-		<stat hp="1620158" asp="100" msp="100" atp="81" evp="105" cap="100" cad="500" car="50" ndd="567" pap="240026" map="240100" par="390" mar="390" scaleStatRate_1="3" scaleBaseTap_1="6709626" scaleBaseDef_1="1753" scaleBaseSpaRate_1="0.35" scaleStatRate_2="3" scaleBaseTap_2="17184472" scaleBaseDef_2="7056" scaleBaseSpaRate_2="0.35" />
-		<speed rotation="720" walk="300" run="600" />
-		<distance avoid="140" sight="2500" sightHeightUP="300" sightHeightDown="0" customLastSightRadius="2500" customLastSightHeightUp="525" customLastSightHeightDown="225" />
-		<skill ids="50000356" levels="1" priorities="1" probs="100" />
-		<collision shape="box" width="200" height="220" depth="170" />
-		<capsule radius="110" height="350" />
-		<dead time="2" defaultaction="Dead_A" upaction="Dead_A" />
-		<shadow scale="360" bias="1" />
-		<normal action="Idle_A,Bore_A,Walk_A" prob="3500,2000,4500" movearea="150" maidExpired="Idle_A" />
-		<dropiteminfo dropHeight="150" dropDistanceBase="200" dropDistanceRandom="10" fireVelocity="150" globalDropBoxId="74" />
-		<lookattarget lookAtMyPCWhenTalking="0" useTalkMotion="1" />
-		<aiInfo path="AI_BearBigLog_DarkStream.xml" />
-		<exp customExp="0" />
-	</environment>
 	<environment feature="TorrentOfDark" locale="">
 		<model kfm="22000022_N_BearBigLog" />
-		<basic npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="elite_boss" nametag="1" nametagSize="18" defenceMaterial="1" hitImmune="99" abnormalImmune="99" level="50" class="3" rankIcon="b" carePathToEnemy="1" difficulty="50" propertyTags="keep_battle,atp_formula_01" raceString="animal" gender="2" mainTags="None" portrait="./Data/Resource/Image/Portrait/Mob/22000022_N_BearBigLog_P.png" damagedVibrateDuration="0.5" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" skipFrame="1" />
+		<basic npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="elite_boss" nametag="1" nametagSize="18" defenceMaterial="1" hitImmune="99" abnormalImmune="99" level="50" class="3" rankIcon="b" carePathToEnemy="1" propertyTags="keep_battle,atp_formula_01" raceString="animal" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/22000022_N_BearBigLog_P.png" damagedVibrateDuration="0.5" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" />
 		<stat hp="16940251" asp="100" msp="100" atp="81" evp="105" cap="100" cad="500" car="50" ndd="567" pap="173561" map="173571" par="390" mar="390" scaleStatRate_1="3" scaleBaseTap_1="6709626" scaleBaseDef_1="1753" scaleBaseSpaRate_1="0.35" scaleStatRate_2="3" scaleBaseTap_2="17184472" scaleBaseDef_2="7056" scaleBaseSpaRate_2="0.35" />
 		<speed rotation="720" walk="300" run="600" />
 		<distance avoid="140" sight="2500" sightHeightUP="300" sightHeightDown="0" customLastSightRadius="2500" customLastSightHeightUp="525" customLastSightHeightDown="225" />
@@ -32,38 +15,38 @@
 		<shadow scale="360" bias="1" />
 		<normal action="Idle_A,Bore_A,Walk_A" prob="3500,2000,4500" movearea="150" maidExpired="Idle_A" />
 		<dropiteminfo dropHeight="150" dropDistanceBase="200" dropDistanceRandom="10" fireVelocity="150" globalDropBoxId="74" />
-		<lookattarget lookAtMyPCWhenTalking="0" useTalkMotion="1" />
+		<lookattarget lookAtMyPCWhenTalking="0" />
 		<aiInfo path="AI_BearBigLog_DarkStream.xml" />
 		<exp customExp="0" />
 	</environment>
 	<effectdummy>
 		<dummy name="Eff_Head">
-			<attachInfo parentNode="Bip01 Head" applyWorldTransform="false" applyLocalScale="true" />
-			<transform translate="30.000000, 10.000000, 0.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.100000" />
+			<attachInfo parentNode="Bip01 Head" />
+			<transform translate="30,10,0" scale="1.1" />
 		</dummy>
 		<dummy name="Eff_Body">
-			<attachInfo parentNode="Bip01 Pelvis" applyWorldTransform="false" applyLocalScale="true" />
-			<transform translate="0.000000, 0.000000, 0.000000" rotation="0.000000, -90.000000, -90.000000" scale="1.100000" />
+			<attachInfo parentNode="Bip01 Pelvis" />
+			<transform rotation="0,-90,-90" scale="1.1" />
 		</dummy>
 		<dummy name="Eff_Foot">
-			<attachInfo parentNode="Bip01 Footsteps" applyWorldTransform="false" applyLocalScale="true" />
-			<transform translate="0.000000, 0.000000, 0.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.100000" />
+			<attachInfo parentNode="Bip01 Footsteps" />
+			<transform scale="1.1" />
 		</dummy>
 		<dummy name="Eff_UI">
 			<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
-			<transform translate="0.000000, -30.000000, 280.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.000000" />
+			<transform translate="0,-30,280" />
 		</dummy>
 		<dummy name="Eff_Head_World">
 			<attachInfo parentNode="Bip01 Head" applyWorldTransform="true" applyLocalScale="false" />
-			<transform translate="0.000000, -15.000000, 25.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.100000" />
+			<transform translate="0,-15,25" scale="1.1" />
 		</dummy>
 		<dummy name="Eff_Body_World">
 			<attachInfo parentNode="Bip01 Pelvis" applyWorldTransform="true" applyLocalScale="false" />
-			<transform translate="0.000000, 0.000000, 0.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.100000" />
+			<transform scale="1.1" />
 		</dummy>
 		<dummy name="Eff_Foot_World">
 			<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
-			<transform translate="0.000000, 0.000000, 0.000000" rotation="0.000000, 0.000000, 90.000000" scale="1.100000" />
+			<transform rotation="0,0,90" scale="1.1" />
 		</dummy>
 	</effectdummy>
 </ms2>

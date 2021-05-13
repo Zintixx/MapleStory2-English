@@ -3,7 +3,7 @@
 <ms2>
 	<environment feature="SnowKingdom" locale="">
 		<model kfm="21800073_M_Seolnunyi" />
-		<basic friendly="1" npcAttackGroup="2" npcDefenseGroup="1" minimapIconName="friendly" nametag="1" nametagSize="18" hpBar="1" defenceMaterial="1" hitImmune="80" abnormalImmune="80" level="54" rankIcon="c" difficulty="54" propertyTags="keep_battle,no_die" raceString="unknown" gender="0" mainTags="None" portrait="./Data/Resource/Image/Portrait/Mob/21800073_M_Seolnunyi_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" />
+		<basic friendly="1" npcAttackGroup="2" npcDefenseGroup="1" minimapIconName="friendly" nametag="1" nametagSize="18" hpBar="1" defenceMaterial="1" hitImmune="80" abnormalImmune="80" level="54" rankIcon="c" propertyTags="keep_battle,no_die" raceString="unknown" gender="0" portrait="./Data/Resource/Image/Portrait/Mob/21800073_M_Seolnunyi_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" />
 		<stat hp="242201429" asp="100" msp="100" atp="99999" evp="82" cap="64" cad="500" car="50" ndd="655" pap="36207" map="36218" />
 		<speed rotation="720" walk="210" run="420" />
 		<distance avoid="140" sight="5000" sightHeightUP="5000" sightHeightDown="5000" customLastSightRadius="9900" customLastSightHeightUp="9900" customLastSightHeightDown="9900" />
@@ -14,14 +14,14 @@
 		<dead time="1" defaultaction="Idle_A" upaction="Idle_A" />
 		<shadow scale="320" bias="1" />
 		<normal action="Idle_A,Bore_A,Walk_A" prob="4100,900,5000" maidExpired="Idle_A" />
-		<lookattarget lookAtMyPCWhenTalking="0" useTalkMotion="1" />
+		<lookattarget lookAtMyPCWhenTalking="0" />
 		<aiInfo path="BossDungeon/SnowQueen/Friend/AI_Seolnunyi_TypeF.xml" />
 		<exp customExp="0" />
 	</environment>
 	<effectdummy>
 		<dummy name="Eff_UI">
-			<attachInfo parentNode="Scene Root" applyLocalScale="false" applyWorldTransform="true" />
-			<transform translate="0.0, 0.0, 210.0" rotation="0.0, 0.0, 0.0" scale="1.0" />
+			<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
+			<transform translate="0,0,210" />
 		</dummy>
 	</effectdummy>
 </ms2>

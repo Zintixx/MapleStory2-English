@@ -3,7 +3,7 @@
 <ms2>
 	<environment feature="Quest2017" locale="">
 		<model kfm="22000109_N_ArmorDemonBigHandPurple" scale="1.85" />
-		<basic npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="boss" nametag="1" nametagSize="18" defenceMaterial="3" hitImmune="99" abnormalImmune="99" level="10" class="6" rankIcon="a" carePathToEnemy="1" difficulty="10" raceString="unknown" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/22000109_N_ArmorDemonBigHandPurple_P.png" damagedVibrateDuration="0.5" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" />
+		<basic npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="boss" nametag="1" nametagSize="18" defenceMaterial="3" hitImmune="99" abnormalImmune="99" level="10" class="6" rankIcon="a" carePathToEnemy="1" raceString="unknown" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/22000109_N_ArmorDemonBigHandPurple_P.png" damagedVibrateDuration="0.5" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" />
 		<stat hp="6000" asp="100" msp="100" atp="81" evp="82" cap="42" cad="500" car="50" ndd="30" pap="100" map="100" par="105" mar="105" />
 		<speed rotation="400" walk="190" run="380" />
 		<distance avoid="140" sight="2000" sightHeightUP="500" sightHeightDown="0" customLastSightRadius="5500" customLastSightHeightUp="900" customLastSightHeightDown="225" />
@@ -14,14 +14,14 @@
 		<shadow scale="550" bias="1" />
 		<normal action="Idle_A,Bore_A,Walk_A" prob="3500,2000,4500" movearea="150" maidExpired="Idle_A" />
 		<dropiteminfo dropHeight="150" dropDistanceBase="200" dropDistanceRandom="10" fireVelocity="150" />
-		<lookattarget lookAtMyPCWhenTalking="0" useTalkMotion="1" />
+		<lookattarget lookAtMyPCWhenTalking="0" />
 		<aiInfo path="AI_GiganticMadronSpartoi_Intro.xml" />
 		<exp customExp="2803" />
 	</environment>
 	<effectdummy>
 		<dummy name="Eff_UI">
-			<attachInfo parentNode="Scene Root" applyLocalScale="false" applyWorldTransform="true" />
-			<transform translate="0.0, 0.0, 410.0" rotation="0.0, 0.0, 0.0" scale="1.0" />
+			<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
+			<transform translate="0,0,410" />
 		</dummy>
 	</effectdummy>
 </ms2>

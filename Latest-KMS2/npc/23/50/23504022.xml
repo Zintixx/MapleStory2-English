@@ -3,7 +3,7 @@
 <ms2>
 	<environment feature="Kritias_Turka02" locale="">
 		<model kfm="90001280_M_DecrepitOverwatcher" scale="1.7" />
-		<basic npcAttackGroup="1" npcDefenseGroup="2" nametag="1" nametagSize="18" minimap="0" defenceMaterial="3" hitImmune="90" abnormalImmune="90" level="70" class="7" rankIcon="b" carePathToEnemy="1" maxSpawnCount="1" groupSpawnCount="1" difficulty="70" propertyTags="back_to_on_battle_end" raceString="machine" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/21001028_M_CrystalSpringMachine_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" skipFrame="1" />
+		<basic npcAttackGroup="1" npcDefenseGroup="2" nametag="1" nametagSize="18" minimap="0" defenceMaterial="3" hitImmune="90" abnormalImmune="90" level="70" class="7" rankIcon="b" carePathToEnemy="1" propertyTags="back_to_on_battle_end" raceString="machine" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/21001028_M_CrystalSpringMachine_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" />
 		<stat hp="7258777" asp="100" msp="100" atp="81" evp="102" cap="72" cad="250" car="70" ndd="1071" pap="4367043" map="4367912" par="190" mar="190" scaleStatRate_1="1.4" scaleBaseTap_1="8935624" scaleBaseDef_1="8790" scaleBaseSpaRate_1="0.2" scaleStatRate_2="1.4" scaleBaseTap_2="13037074" scaleBaseDef_2="13661" scaleBaseSpaRate_2="0.2" />
 		<speed rotation="720" walk="200" run="500" />
 		<distance avoid="150" sight="1800" sightHeightUP="525" sightHeightDown="225" customLastSightRadius="5000" customLastSightHeightUp="525" customLastSightHeightDown="225" />
@@ -15,13 +15,13 @@
 		<shadow scale="120" bias="1" />
 		<normal action="Idle_A,Bore_A" prob="5500,4500" maidExpired="Idle_A" />
 		<dropiteminfo dropHeight="50" dropDistanceBase="100" dropDistanceRandom="50" globalDropBoxId="3" />
-		<lookattarget lookAtMyPCWhenTalking="0" useTalkMotion="1" />
+		<lookattarget lookAtMyPCWhenTalking="0" />
 		<aiInfo path="BossDungeon/Timaion/AI_Timaion_Guardian.xml" />
 	</environment>
 	<effectdummy>
 		<dummy name="Eff_UI">
-			<attachInfo parentNode="Scene Root" applyLocalScale="false" applyWorldTransform="true" />
-			<transform translate="0.0, 0.0, 360.0" rotation="0.0, 0.0, 0.0" scale="1.0" />
+			<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
+			<transform translate="0,0,360" />
 		</dummy>
 	</effectdummy>
 </ms2>

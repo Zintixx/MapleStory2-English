@@ -3,7 +3,7 @@
 <ms2>
 	<environment feature="KarkarIsland" locale="">
 		<model kfm="21000400_M_RedFlowerSnakeRed" scale="2.2" />
-		<basic npcAttackGroup="1" npcDefenseGroup="2" nametag="1" nametagSize="18" minimap="0" hpBar="1" defenceMaterial="1" hitImmune="1" abnormalImmune="1" level="50" rankIcon="c" carePathToEnemy="1" maxSpawnCount="2" groupSpawnCount="2" rareDegree="100" difficulty="50" raceString="animal" gender="2" mainTags="랑랑스" subTags="숲,초원" portrait="./Data/Resource/Image/Portrait/Mob/21000400_M_RedFlowerSnakeRed_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" skipFrame="1" />
+		<basic npcAttackGroup="1" npcDefenseGroup="2" nametag="1" nametagSize="18" minimap="0" hpBar="1" defenceMaterial="1" hitImmune="1" abnormalImmune="1" level="50" rankIcon="c" carePathToEnemy="1" raceString="animal" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/21000400_M_RedFlowerSnakeRed_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" />
 		<stat hp="22193" asp="100" msp="100" atp="80" evp="82" cap="62" cad="500" car="50" ndd="567" pap="28574" map="28583" />
 		<speed rotation="720" walk="125" run="250" />
 		<distance avoid="100" sight="400" sightHeightUP="300" sightHeightDown="0" />
@@ -16,37 +16,37 @@
 		<shadow scale="95" bias="1" />
 		<normal action="Idle_A,Bore_A,Walk_A" prob="4500,1000,4500" movearea="150" maidExpired="Idle_A" />
 		<dropiteminfo dropHeight="150" dropDistanceBase="140" dropDistanceRandom="10" globalDropBoxId="1,10003" />
-		<lookattarget lookAtMyPCWhenTalking="0" useTalkMotion="1" />
+		<lookattarget lookAtMyPCWhenTalking="0" />
 		<aiInfo path="AI_DefaultNew.xml" />
 	</environment>
 	<effectdummy>
 		<dummy name="Eff_Head">
-			<attachInfo parentNode="Scene Root" applyWorldTransform="false" applyLocalScale="true" />
-			<transform translate="0.000000, 0.000000, 0.000000" rotation="0.000000, 0.000000, 0.000000" scale="0.600000" />
+			<attachInfo parentNode="Scene Root" />
+			<transform scale="0.6" />
 		</dummy>
 		<dummy name="Eff_Body">
-			<attachInfo parentNode="Scene Root" applyWorldTransform="false" applyLocalScale="true" />
-			<transform translate="0.000000, 0.000000, 15.000000" rotation="0.000000, 0.000000, 0.000000" scale="0.600000" />
+			<attachInfo parentNode="Scene Root" />
+			<transform translate="0,0,15" scale="0.6" />
 		</dummy>
 		<dummy name="Eff_Foot">
-			<attachInfo parentNode="Scene Root" applyWorldTransform="false" applyLocalScale="true" />
-			<transform translate="0.000000, 0.000000, 0.000000" rotation="0.000000, 0.000000, 0.000000" scale="0.400000" />
+			<attachInfo parentNode="Scene Root" />
+			<transform scale="0.4" />
 		</dummy>
 		<dummy name="Eff_UI">
 			<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
-			<transform translate="0.000000, 0.000000, 150.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.000000" />
+			<transform translate="0,0,150" />
 		</dummy>
 		<dummy name="Eff_Head_World">
 			<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
-			<transform translate="0.000000, 0.000000, 0.000000" rotation="0.000000, 0.000000, 0.000000" scale="0.700000" />
+			<transform scale="0.7" />
 		</dummy>
 		<dummy name="Eff_Body_World">
 			<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
-			<transform translate="0.000000, 0.000000, 30.000000" rotation="0.000000, 0.000000, 0.000000" scale="0.700000" />
+			<transform translate="0,0,30" scale="0.7" />
 		</dummy>
 		<dummy name="Eff_Foot_World">
 			<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
-			<transform translate="0.000000, 0.000000, 0.000000" rotation="0.000000, 0.000000, 0.000000" scale="0.700000" />
+			<transform scale="0.7" />
 		</dummy>
 	</effectdummy>
 </ms2>

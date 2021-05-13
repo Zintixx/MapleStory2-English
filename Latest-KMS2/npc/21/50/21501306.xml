@@ -3,7 +3,7 @@
 <ms2>
 	<environment feature="Kritias_Inferno01" locale="">
 		<model kfm="21000998_M_BalrogSoldierSpear" />
-		<basic npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="enemy" nametag="1" nametagSize="18" hpBar="1" defenceMaterial="1" hitImmune="80" abnormalImmune="80" level="70" rankIcon="c" difficulty="70" propertyTags="keep_battle" raceString="devil" gender="0" portrait="./Data/Resource/Image/Portrait/Mob/21000998_M_BalrogSoldierSpear_P.png" damagedColorScale="6" damagedVibrateDuration="1" damagedVibrateAmp="1" />
+		<basic npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="enemy" nametag="1" nametagSize="18" hpBar="1" defenceMaterial="1" hitImmune="80" abnormalImmune="80" level="70" rankIcon="c" propertyTags="keep_battle" raceString="devil" gender="0" portrait="./Data/Resource/Image/Portrait/Mob/21000998_M_BalrogSoldierSpear_P.png" damagedColorScale="6" damagedVibrateDuration="1" damagedVibrateAmp="1" />
 		<stat hp="53394846" asp="100" msp="100" atp="80" evp="130" cap="72" cad="250" car="100" ndd="1071" pap="19745005" map="19748182" par="190" mar="190" />
 		<speed rotation="720" walk="185" run="370" />
 		<distance avoid="150" sight="9000" sightHeightUP="950" sightHeightDown="800" customLastSightRadius="9900" customLastSightHeightUp="980" customLastSightHeightDown="850" />
@@ -13,38 +13,38 @@
 		<dead time="2.3" defaultaction="Dead_A" upaction="Dead_A" />
 		<shadow scale="350" bias="1" />
 		<normal action="Idle_A" prob="10000" maidExpired="Idle_A" />
-		<lookattarget lookAtMyPCWhenTalking="0" useTalkMotion="1" />
+		<lookattarget lookAtMyPCWhenTalking="0" />
 		<aiInfo path="BossDungeon/BalrogMagicBurster/MobKritias/AI_BalrogSoldierSpear_TypeA.xml" />
 		<exp customExp="0" />
 	</environment>
 	<effectdummy>
 		<dummy name="Eff_Head">
-			<attachInfo parentNode="Bip01 Head" applyWorldTransform="false" applyLocalScale="true" />
-			<transform translate="30.000000, 10.000000, 0.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.000000" />
+			<attachInfo parentNode="Bip01 Head" />
+			<transform translate="30,10,0" />
 		</dummy>
 		<dummy name="Eff_Body">
-			<attachInfo parentNode="Bip01 Pelvis" applyWorldTransform="false" applyLocalScale="true" />
-			<transform translate="0.000000, 5.000000, 0.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.000000" />
+			<attachInfo parentNode="Bip01 Pelvis" />
+			<transform translate="0,5,0" />
 		</dummy>
 		<dummy name="Eff_Foot">
-			<attachInfo parentNode="Main_Point01 NonAccum" applyWorldTransform="false" applyLocalScale="true" />
-			<transform translate="0.000000, 30.000000, 0.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.000000" />
+			<attachInfo parentNode="Main_Point01 NonAccum" />
+			<transform translate="0,30,0" />
 		</dummy>
 		<dummy name="Eff_UI">
 			<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
-			<transform translate="-12.000000, -30.000000, 220.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.000000" />
+			<transform translate="-12,-30,220" />
 		</dummy>
 		<dummy name="Eff_Head_World">
 			<attachInfo parentNode="Bip01 Head" applyWorldTransform="true" applyLocalScale="false" />
-			<transform translate="0.000000, -30.000000, -15.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.000000" />
+			<transform translate="0,-30,-15" />
 		</dummy>
 		<dummy name="Eff_Body_World">
 			<attachInfo parentNode="Bip01 Pelvis" applyWorldTransform="true" applyLocalScale="false" />
-			<transform translate="0.000000, -5.000000, 0.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.000000" />
+			<transform translate="0,-5,0" />
 		</dummy>
 		<dummy name="Eff_Foot_World">
 			<attachInfo parentNode="Main_Point01 NonAccum" applyWorldTransform="true" applyLocalScale="false" />
-			<transform translate="0.000000, 30.000000, 0.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.000000" />
+			<transform translate="0,30,0" />
 		</dummy>
 	</effectdummy>
 </ms2>

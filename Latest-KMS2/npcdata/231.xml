@@ -1,0 +1,978 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ms2>
+	<npc id="23100006">
+		<environment feature="DungeonBoss_4P" npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="boss" nametag="1" defenceMaterial="4" hitImmune="99" abnormalImmune="99" level="50" class="6" rankIcon="a" propertyTags="keep_battle" raceString="spirit" gender="0" portrait="./Data/Resource/Image/Portrait/Mob/23000006_B_SandstoneGiantBlueShine_P.png" damagedVibrateDuration="0.5" damagedVibrateAmp="1" checkCameraDistance="2500" extraCameraDistance="300" bossSoundDistance="2500" bossSoundEndDistance="99999" customExp="0" lookAtMyPCWhenTalking="0">
+			<model kfm="23000006_B_SandstoneGiantBlueShine" scale="2.3" shadowScale="640" rotationSpeed="720" walkSpeed="125" runSpeed="250" />
+			<stat hp="2787719" asp="100" msp="100" atp="120" evp="94" cap="62" cad="500" car="50" ndd="709" pap="228507" map="228560" par="120" mar="120" />
+			<distance avoid="400" sight="600" sightHeightUP="1000" sightHeightDown="225" customLastSightRadius="9999" customLastSightHeightUp="9999" customLastSightHeightDown="9999" />
+			<skill ids="50001000" levels="1" probs="100" />
+			<additionalEffect codes="50004400" levels="1" />
+			<collision shape="box" width="152.174" height="217.391" depth="152.174" />
+			<corpse width="700" height="150" depth="330" added="170" offsetNametag="-200" rotation="345" />
+			<capsule radius="170" height="600" />
+			<dead time="10" defaultaction="Dead_A" upaction="Dead_A" extendRoomTime="60000" />
+			<normal action="Idle_A,Bore_A,Walk_A" prob="5000,3000,2000" movearea="150" />
+			<dropiteminfo dropHeight="320" dropDistanceBase="400" dropDistanceRandom="20" globalDropBoxId="74" globalDeadDropBoxId="1011" />
+			<aiInfo path="BossDungeon/SandstoneGiantBlueShine/AI_SandstoneGiantBlueShine.xml" />
+			<effectdummy>
+				<dummy name="Eff_Head">
+					<attachInfo parentNode="Bip01 Head" />
+					<transform translate="30,10,0" scale="1.6" />
+				</dummy>
+				<dummy name="Eff_Body">
+					<attachInfo parentNode="Bip01 Spine" />
+					<transform translate="0,50,0" scale="1.6" />
+				</dummy>
+				<dummy name="Eff_Foot">
+					<attachInfo parentNode="Bip01 Footsteps" />
+					<transform scale="1.6" />
+				</dummy>
+				<dummy name="Eff_UI">
+					<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,0,500" />
+				</dummy>
+				<dummy name="Eff_Damage">
+					<attachInfo parentNode="Eff_UI" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,0,-370" />
+				</dummy>
+				<dummy name="Eff_Head_World">
+					<attachInfo parentNode="Bip01 Head" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,-30,70" scale="1.6" />
+				</dummy>
+				<dummy name="Eff_Body_World">
+					<attachInfo parentNode="Bip01 Spine" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,-50,0" scale="1.6" />
+				</dummy>
+				<dummy name="Eff_Foot_World">
+					<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
+					<transform scale="1.6" />
+				</dummy>
+			</effectdummy>
+		</environment>
+	</npc>
+	<npc id="23100007">
+		<environment feature="DungeonBoss_4P" npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="boss" nametag="1" defenceMaterial="1" hitImmune="98" abnormalImmune="98" level="30" class="6" rankIcon="a" propertyTags="keep_battle" raceString="devil" gender="0" portrait="./Data/Resource/Image/Portrait/Mob/23000007_B_DevilHugeBlue_P.png" damagedVibrateDuration="0.5" damagedVibrateAmp="1" checkCameraDistance="99999" extraCameraDistance="550" bossSoundDistance="3500" bossSoundEndDistance="99999" customExp="0" lookAtMyPCWhenTalking="0">
+			<model kfm="23000007_B_DevilHugeBlue" shadowScale="800" rotationSpeed="720" walkSpeed="150" runSpeed="300" />
+			<stat hp="226638" asp="100" msp="100" atp="120" evp="88" cap="52" cad="500" car="50" ndd="223" pap="5448" map="5450" par="120" mar="120" />
+			<distance avoid="400" sight="6000" sightHeightUP="300" sightHeightDown="230" customLastSightRadius="999999" customLastSightHeightUp="410" customLastSightHeightDown="350" />
+			<skill ids="50100385" levels="1" probs="100" />
+			<additionalEffect codes="50004400" levels="1" />
+			<collision shape="box" width="450" height="400" depth="375" />
+			<corpse width="600" height="150" depth="380" added="220" offsetNametag="-200" rotation="345" />
+			<capsule radius="170" height="450" />
+			<dead time="10" defaultaction="Dead_A" upaction="Dead_A" />
+			<normal action="Idle_A,Bore_A,Walk_A" prob="5000,3000,2000" movearea="150" />
+			<dropiteminfo dropHeight="180" dropDistanceBase="300" dropDistanceRandom="20" globalDropBoxId="74" globalDeadDropBoxId="1011" />
+			<aiInfo path="BossDungeon/DevilHugeBlue/AI_DevilHugeBlue.xml" />
+			<effectdummy>
+				<dummy name="Eff_Head">
+					<attachInfo parentNode="Bip01 Head" />
+					<transform translate="30,20,0" scale="1.5" />
+				</dummy>
+				<dummy name="Eff_Body">
+					<attachInfo parentNode="Bip01 Spine1" />
+					<transform translate="30,70,0" scale="1.5" />
+				</dummy>
+				<dummy name="Eff_Foot">
+					<attachInfo parentNode="Bip01 Footsteps" />
+					<transform scale="1.5" />
+				</dummy>
+				<dummy name="Eff_UI">
+					<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,0,500" rotation="0,0,90" scale="2" />
+				</dummy>
+				<dummy name="Eff_Damage">
+					<attachInfo parentNode="Scene Root" />
+					<transform translate="0,0,70" />
+				</dummy>
+				<dummy name="Eff_Head_World">
+					<attachInfo parentNode="Bip01 Head" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,-30,20" scale="1.5" />
+				</dummy>
+				<dummy name="Eff_Body_World">
+					<attachInfo parentNode="Bip01 Spine1" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,-70,50" scale="1.5" />
+				</dummy>
+				<dummy name="Eff_Foot_World">
+					<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
+					<transform scale="1.5" />
+				</dummy>
+			</effectdummy>
+		</environment>
+	</npc>
+	<npc id="23100011">
+		<environment feature="DungeonBoss_4P" npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="boss" nametag="1" defenceMaterial="1" hitImmune="99" abnormalImmune="99" level="50" class="6" rankIcon="a" propertyTags="keep_battle" raceString="mystic" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/23000011_B_LizardDragonFire_P.png" damagedVibrateDuration="0.5" damagedVibrateAmp="1" checkCameraDistance="2500" extraCameraDistance="300" bossSoundDistance="2500" bossSoundEndDistance="99999" lookAtMyPCWhenTalking="0">
+			<model kfm="23000011_B_LizardDragonFire" scale="1.4" shadowScale="900" rotationSpeed="400" walkSpeed="200" runSpeed="400" />
+			<stat hp="20782713" asp="100" msp="100" atp="120" evp="88" cap="62" cad="500" car="50" ndd="567" pap="199148" map="199211" par="120" mar="120" />
+			<distance avoid="400" sight="99999" sightHeightUP="300" sightHeightDown="110" customLastSightRadius="99999" customLastSightHeightUp="525" customLastSightHeightDown="110" />
+			<skill ids="50009999" levels="1" probs="100" />
+			<additionalEffect codes="50004400" levels="1" />
+			<collision shape="box" width="250" height="210" depth="330" depthOffset="180" />
+			<corpse width="350" height="200" depth="770" offsetNametag="-200" rotation="0" />
+			<capsule radius="140" height="300" />
+			<dead time="10" defaultaction="Dead_A" upaction="Dead_A" extendRoomTime="60000" />
+			<normal action="Idle_A,Bore_A,Walk_A" prob="5000,3000,2000" movearea="150" />
+			<dropiteminfo globalDropBoxId="74" />
+			<aiInfo path="AI_LizardDragonFire.xml" />
+			<effectdummy>
+				<dummy name="Eff_Head">
+					<attachInfo parentNode="Bip01 Head" />
+					<transform translate="30,-10,0" scale="1.8" />
+				</dummy>
+				<dummy name="Eff_Body">
+					<attachInfo parentNode="Bip01 Spine2" />
+					<transform translate="0,40,0" scale="1.8" />
+				</dummy>
+				<dummy name="Eff_Foot">
+					<attachInfo parentNode="Scene Root" />
+					<transform scale="1.8" />
+				</dummy>
+				<dummy name="Eff_UI">
+					<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,-250,380" />
+				</dummy>
+				<dummy name="Eff_Head_World">
+					<attachInfo parentNode="Bip01 Head" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,-50,0" scale="1.8" />
+				</dummy>
+				<dummy name="Eff_Body_World">
+					<attachInfo parentNode="Bip01 Spine2" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,0,-50" scale="1.8" />
+				</dummy>
+				<dummy name="Eff_Foot_World">
+					<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
+					<transform scale="1.8" />
+				</dummy>
+			</effectdummy>
+		</environment>
+	</npc>
+	<npc id="23100015">
+		<environment feature="DungeonBoss_4P" npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="boss" nametag="1" defenceMaterial="1" hitImmune="98" abnormalImmune="98" level="41" class="6" rankIcon="a" propertyTags="keep_battle" raceString="devil" gender="0" portrait="./Data/Resource/Image/Portrait/Mob/23000015_B_CaptainHookFish01_P.png" damagedVibrateDuration="0.5" damagedVibrateAmp="1" checkCameraDistance="2500" extraCameraDistance="300" bossSoundDistance="2500" bossSoundEndDistance="99999" customExp="0" lookAtMyPCWhenTalking="0">
+			<model kfm="23000015_B_CaptainHookFish01" scale="1.8" shadowScale="640" rotationSpeed="720" walkSpeed="225" runSpeed="450" />
+			<stat hp="247227" asp="100" msp="100" atp="120" evp="88" cap="58" cad="500" car="50" ndd="393" pap="21975" map="21982" par="120" mar="120" />
+			<distance avoid="400" sight="800" sightHeightUP="300" sightHeightDown="800" customLastSightRadius="9900" customLastSightHeightUp="525" customLastSightHeightDown="800" />
+			<skill ids="50100700" levels="1" probs="100" />
+			<additionalEffect codes="50004400" levels="1" />
+			<collision shape="box" width="140" height="200" depth="125" />
+			<corpse width="350" height="150" depth="300" offsetNametag="-200" rotation="0" />
+			<capsule radius="150" height="320" />
+			<dead time="10" defaultaction="Dead_A" upaction="Dead_A" />
+			<normal action="Idle_A,Bore_A,Walk_A" prob="5000,3000,2000" movearea="150" />
+			<dropiteminfo dropHeight="300" dropDistanceBase="300" dropDistanceRandom="20" globalDropBoxId="74" globalDeadDropBoxId="1011" individualDropBoxId="723100015" />
+			<aiInfo path="BossDungeon/CaptainHookFish01/AI_CaptainHookFish01.xml" />
+			<effectdummy>
+				<dummy name="Eff_Head">
+					<attachInfo parentNode="Bip01 Head" />
+					<transform translate="30,0,0" scale="1.4" />
+				</dummy>
+				<dummy name="Eff_Body">
+					<attachInfo parentNode="Bip01 Spine1" />
+					<transform scale="1.4" />
+				</dummy>
+				<dummy name="Eff_Foot">
+					<attachInfo parentNode="Bip01 Footsteps" />
+				</dummy>
+				<dummy name="Eff_UI">
+					<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,-50,430" rotation="0,0,90" />
+				</dummy>
+				<dummy name="Eff_Damage">
+					<attachInfo parentNode="Eff_UI" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,0,-370" />
+				</dummy>
+				<dummy name="Eff_Head_World">
+					<attachInfo parentNode="Bip01 Head" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,0,50" />
+				</dummy>
+				<dummy name="Eff_Body_World">
+					<attachInfo parentNode="Bip01 Spine1" applyWorldTransform="true" applyLocalScale="false" />
+					<transform scale="1.4" />
+				</dummy>
+			</effectdummy>
+		</environment>
+	</npc>
+	<npc id="23100021">
+		<environment feature="DungeonBoss_4P" npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="boss" nametag="1" defenceMaterial="1" hitImmune="99" abnormalImmune="99" level="39" class="6" rankIcon="a" raceString="mystic" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/23000021_B_GriffonPharaoh01_P.png" damagedVibrateDuration="0.5" damagedVibrateAmp="1" checkCameraDistance="2500" extraCameraDistance="300" bossSoundDistance="900" bossSoundEndDistance="99999" customExp="0" lookAtMyPCWhenTalking="0">
+			<model kfm="23000021_B_GriffonPharaoh01" scale="2" shadowScale="640" rotationSpeed="720" walkSpeed="175" runSpeed="350" />
+			<stat hp="231520" asp="100" msp="100" atp="120" evp="88" cap="57" cad="500" car="50" ndd="358" pap="18696" map="18702" par="120" mar="120" />
+			<distance avoid="400" sight="600" sightHeightUP="300" sightHeightDown="110" customLastSightRadius="5555" customLastSightHeightUp="9999" customLastSightHeightDown="9999" />
+			<skill ids="50000383" levels="1" probs="100" />
+			<additionalEffect codes="50004400" levels="1" />
+			<combat canShowHideTarget="true" />
+			<collision shape="box" width="145" height="165" depth="225" />
+			<corpse width="300" height="250" depth="600" offsetNametag="-200" rotation="-90" />
+			<capsule radius="180" height="300" ignore="1" />
+			<dead time="10" defaultaction="Dead_A" upaction="Dead_A" />
+			<normal action="Idle_A,Bore_A,Walk_A" prob="5000,3000,2000" movearea="150" />
+			<dropiteminfo dropHeight="300" dropDistanceBase="300" dropDistanceRandom="20" globalDropBoxId="74" globalDeadDropBoxId="1011" />
+			<aiInfo path="BossDungeon/GriffonPharaoh01Boss/AI_GriffonPharaoh01Boss.xml" />
+			<effectdummy>
+				<dummy name="Eff_Head">
+					<attachInfo parentNode="Bip01 Head" />
+					<transform translate="30,0,0" scale="1.5" />
+				</dummy>
+				<dummy name="Eff_Body">
+					<attachInfo parentNode="Bip01 Spine2" />
+					<transform translate="0,-15,0" scale="1.5" />
+				</dummy>
+				<dummy name="Eff_Foot">
+					<attachInfo parentNode="Bip01 Footsteps" />
+					<transform translate="15,-50,0" scale="1.5" />
+				</dummy>
+				<dummy name="Eff_UI">
+					<attachInfo parentNode="Bip01 Head" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,0,200" rotation="0,0,90" />
+				</dummy>
+				<dummy name="Eff_Damage">
+					<attachInfo parentNode="Eff_UI" applyLocalScale="false" />
+					<transform translate="0,0,-230" scale="2" />
+				</dummy>
+				<dummy name="Eff_Head_World">
+					<attachInfo parentNode="Bip01 Head" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,0,60" scale="1.5" />
+				</dummy>
+				<dummy name="Eff_Body_World">
+					<attachInfo parentNode="Bip01 Spine2" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,0,30" scale="1.5" />
+				</dummy>
+				<dummy name="Eff_Foot_World">
+					<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
+					<transform scale="1.5" />
+				</dummy>
+			</effectdummy>
+		</environment>
+	</npc>
+	<npc id="23100025">
+		<environment feature="DungeonBoss_4P" npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="boss" nametag="1" defenceMaterial="1" hitImmune="99" abnormalImmune="99" level="35" class="6" rankIcon="a" raceString="devil" gender="0" portrait="./Data/Resource/Image/Portrait/Mob/23000025_B_BaphometHuman02_P.png" damagedVibrateDuration="0.5" damagedVibrateAmp="1" checkCameraDistance="2500" extraCameraDistance="300" bossSoundDistance="2500" bossSoundEndDistance="4000" customExp="0" lookAtMyPCWhenTalking="0">
+			<model kfm="23000025_B_BaphometHuman02" shadowScale="640" rotationSpeed="720" walkSpeed="200" runSpeed="400" />
+			<stat hp="233637" asp="100" msp="100" atp="120" evp="88" cap="55" cad="500" car="50" ndd="294" pap="15907" map="15913" par="120" mar="120" />
+			<distance avoid="400" sight="1800" sightHeightUP="300" sightHeightDown="1" customLastSightRadius="3500" customLastSightHeightUp="525" customLastSightHeightDown="1" />
+			<skill ids="50000326" levels="1" probs="100" />
+			<additionalEffect codes="50004400" levels="1" />
+			<collision shape="box" width="320" height="380" depth="220" />
+			<corpse width="650" height="150" depth="250" added="120" offsetNametag="-200" rotation="345" />
+			<capsule radius="173" height="320" />
+			<dead time="10" defaultaction="Dead_A" upaction="Dead_A" />
+			<normal action="Idle_A,Bore_A,Walk_A" prob="5000,3000,2000" movearea="150" />
+			<dropiteminfo dropHeight="300" dropDistanceBase="300" dropDistanceRandom="20" globalDropBoxId="74" globalDeadDropBoxId="1011" individualDropBoxId="723100025" />
+			<aiInfo path="BossDungeon/BaphometHuman02/AI_BaphometHuman02.xml" />
+			<effectdummy>
+				<dummy name="Eff_Head">
+					<attachInfo parentNode="Bip01 Head" />
+					<transform translate="40,0,0" scale="1.3" />
+				</dummy>
+				<dummy name="Eff_Body">
+					<attachInfo parentNode="Bip01 Spine1" />
+					<transform translate="30,30,0" scale="1.3" />
+				</dummy>
+				<dummy name="Eff_Foot">
+					<attachInfo parentNode="Bip01 Footsteps" />
+					<transform scale="1.3" />
+				</dummy>
+				<dummy name="Eff_UI">
+					<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,-110,400" />
+				</dummy>
+				<dummy name="Eff_Damage">
+					<attachInfo parentNode="Eff_UI" applyLocalScale="false" />
+					<transform translate="0,0,-370" />
+				</dummy>
+				<dummy name="Eff_Head_World">
+					<attachInfo parentNode="Bip01 Head" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,-40,-10" scale="1.3" />
+				</dummy>
+				<dummy name="Eff_Body_World">
+					<attachInfo parentNode="Bip01 Spine1" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,-50,0" scale="1.3" />
+				</dummy>
+				<dummy name="Eff_Foot_World">
+					<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
+					<transform scale="1.3" />
+				</dummy>
+			</effectdummy>
+		</environment>
+	</npc>
+	<npc id="23100033">
+		<environment feature="DungeonBoss_4P" npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="boss" nametag="1" defenceMaterial="1" hitImmune="99" abnormalImmune="99" level="50" class="6" rankIcon="a" propertyTags="keep_battle" raceString="mystic" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/23000033_B_YetiTwoHeadWhite_P.png" damagedVibrateDuration="0.5" damagedVibrateAmp="1" checkCameraDistance="5000" extraCameraDistance="550" bossSoundDistance="5000" bossSoundEndDistance="5000" customExp="0" lookAtMyPCWhenTalking="0">
+			<model kfm="23000033_B_YetiTwoHeadWhite" shadowScale="950" rotationSpeed="720" walkSpeed="200" runSpeed="400" />
+			<stat hp="1828250" asp="100" msp="100" atp="120" evp="94" cap="62" cad="500" car="50" ndd="624" pap="202851" map="202906" par="120" mar="120" />
+			<distance avoid="400" sight="600" sightHeightUP="300" customLastSightRadius="3500" customLastSightHeightUp="525" customLastSightHeightDown="50" />
+			<skill ids="50100407" levels="1" probs="100" />
+			<additionalEffect codes="50004400" levels="1" />
+			<collision shape="box" width="480" height="350" depth="380" />
+			<corpse width="650" height="150" depth="350" added="120" offsetNametag="-200" rotation="345" />
+			<capsule radius="180" height="250" ignore="1" />
+			<dead time="10" defaultaction="Dead_A" upaction="Dead_A" extendRoomTime="60000" />
+			<normal action="Idle_A,Bore_A,Walk_A" prob="5000,3000,2000" movearea="150" />
+			<dropiteminfo dropHeight="300" dropDistanceBase="300" dropDistanceRandom="20" globalDropBoxId="74" globalDeadDropBoxId="1011" />
+			<aiInfo path="BossDungeon/YetiTwoHeadWhite/AI_YetiTwoHeadWhite.xml" />
+			<effectdummy>
+				<dummy name="Eff_Head">
+					<attachInfo parentNode="Bip01 Spine2" />
+					<transform translate="75,-80,0" scale="1.5" />
+				</dummy>
+				<dummy name="Eff_Body">
+					<attachInfo parentNode="Bip01 Spine2" />
+					<transform scale="1.5" />
+				</dummy>
+				<dummy name="Eff_Foot">
+					<attachInfo parentNode="Bip01 Footsteps" />
+					<transform scale="1.5" />
+				</dummy>
+				<dummy name="Eff_UI">
+					<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,-100,400" />
+				</dummy>
+				<dummy name="Eff_Damage">
+					<attachInfo parentNode="Eff_UI" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,0,-370" />
+				</dummy>
+				<dummy name="Eff_Head_World">
+					<attachInfo parentNode="Bip01 Spine2" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,-60,100" scale="1.5" />
+				</dummy>
+				<dummy name="Eff_Body_World">
+					<attachInfo parentNode="Eff_Body" applyWorldTransform="true" applyLocalScale="false" />
+					<transform scale="1.5" />
+				</dummy>
+				<dummy name="Eff_Foot_World">
+					<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
+					<transform scale="1.5" />
+				</dummy>
+			</effectdummy>
+		</environment>
+	</npc>
+	<npc id="23100039">
+		<environment feature="DungeonBoss_4P" npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="boss" nametag="1" defenceMaterial="3" hitImmune="99" abnormalImmune="99" level="28" class="6" rankIcon="a" raceString="mystic" gender="0" portrait="./Data/Resource/Image/Portrait/Mob/23000039_B_BullArmorBlue_P.png" damagedVibrateDuration="0.5" damagedVibrateAmp="1" checkCameraDistance="2500" extraCameraDistance="300" bossSoundDistance="900" bossSoundEndDistance="4000" customExp="0" lookAtMyPCWhenTalking="0">
+			<model kfm="23000039_B_BullArmorBlue" scale="1.25" shadowScale="640" rotationSpeed="720" walkSpeed="200" runSpeed="400" />
+			<stat hp="121403" asp="100" msp="100" atp="120" evp="88" cap="51" cad="500" car="50" ndd="198" pap="10578" map="10581" par="120" mar="120" />
+			<distance avoid="400" sight="1100" sightHeightUP="320" sightHeightDown="1" customLastSightRadius="3500" customLastSightHeightUp="525" customLastSightHeightDown="1" />
+			<skill ids="50100855" levels="1" probs="100" />
+			<additionalEffect codes="50004400" levels="1" />
+			<collision shape="box" width="220" height="250" depth="230" />
+			<corpse width="650" height="150" depth="250" added="120" offsetNametag="-200" rotation="345" />
+			<capsule radius="150" height="300" ignore="1" />
+			<dead time="10" defaultaction="Dead_A" upaction="Dead_A" />
+			<normal action="Idle_A,Bore_A,Walk_A" prob="5000,3000,2000" movearea="150" />
+			<dropiteminfo dropHeight="300" dropDistanceBase="300" dropDistanceRandom="20" globalDropBoxId="74" globalDeadDropBoxId="1011" />
+			<aiInfo path="BossDungeon/BullArmorBlue/AI_BullArmorBlue.xml" />
+			<effectdummy>
+				<dummy name="Eff_Head">
+					<attachInfo parentNode="Bip01 Head" />
+					<transform translate="20,-50,0" scale="1.3" />
+				</dummy>
+				<dummy name="Eff_Body">
+					<attachInfo parentNode="Bip01 Spine1" />
+					<transform translate="20,20,0" scale="1.3" />
+				</dummy>
+				<dummy name="Eff_Foot">
+					<attachInfo parentNode="Scene Root" />
+					<transform scale="1.3" />
+				</dummy>
+				<dummy name="Eff_UI">
+					<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,-150,400" />
+				</dummy>
+				<dummy name="Eff_Head_World">
+					<attachInfo parentNode="Bip01 Head" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,-20,60" scale="1.3" />
+				</dummy>
+				<dummy name="Eff_Body_World">
+					<attachInfo parentNode="Bip01 Spine1" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,-50,0" scale="1.3" />
+				</dummy>
+				<dummy name="Eff_Foot_World">
+					<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
+					<transform scale="1.3" />
+				</dummy>
+			</effectdummy>
+		</environment>
+	</npc>
+	<npc id="23100041">
+		<environment feature="DungeonBoss_4P" npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="boss" nametag="1" defenceMaterial="3" hitImmune="98" abnormalImmune="98" level="38" class="6" rankIcon="a" propertyTags="keep_battle" raceString="mystic" gender="0" portrait="./Data/Resource/Image/Portrait/Mob/23000041_B_BullArmorRed_P.png" damagedVibrateDuration="0.5" damagedVibrateAmp="1" checkCameraDistance="2500" extraCameraDistance="300" bossSoundDistance="900" bossSoundEndDistance="6000" customExp="0" lookAtMyPCWhenTalking="0">
+			<model kfm="23000041_B_BullArmorRed" scale="1.25" shadowScale="640" rotationSpeed="720" walkSpeed="200" runSpeed="400" />
+			<stat hp="286108" asp="100" msp="100" atp="120" evp="88" cap="56" cad="500" car="50" ndd="342" pap="24075" map="24083" par="120" mar="120" />
+			<distance avoid="400" sight="1100" sightHeightUP="320" sightHeightDown="1" customLastSightRadius="5000" customLastSightHeightUp="9999" customLastSightHeightDown="900" />
+			<skill ids="50100855" levels="1" probs="100" />
+			<additionalEffect codes="50004400" levels="1" />
+			<collision shape="box" width="220" height="250" depth="230" />
+			<corpse width="650" height="150" depth="250" added="120" offsetNametag="-200" rotation="345" />
+			<capsule radius="150" height="300" ignore="1" />
+			<dead time="10" defaultaction="Dead_A" upaction="Dead_A" />
+			<normal action="Idle_A,Bore_A,Walk_A" prob="5000,3000,2000" movearea="150" />
+			<dropiteminfo dropHeight="300" dropDistanceBase="300" dropDistanceRandom="20" globalDropBoxId="74" globalDeadDropBoxId="1011" />
+			<aiInfo path="BossDungeon/BullArmorRed/AI_BullArmorRed.xml" />
+			<effectdummy>
+				<dummy name="Eff_Head">
+					<attachInfo parentNode="Bip01 Head" />
+					<transform translate="20,-50,0" scale="1.3" />
+				</dummy>
+				<dummy name="Eff_Body">
+					<attachInfo parentNode="Bip01 Spine1" />
+					<transform translate="20,20,0" scale="1.3" />
+				</dummy>
+				<dummy name="Eff_Foot">
+					<attachInfo parentNode="Scene Root" />
+					<transform scale="1.3" />
+				</dummy>
+				<dummy name="Eff_UI">
+					<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,-150,400" />
+				</dummy>
+				<dummy name="Eff_Head_World">
+					<attachInfo parentNode="Bip01 Head" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,-20,60" scale="1.3" />
+				</dummy>
+				<dummy name="Eff_Body_World">
+					<attachInfo parentNode="Bip01 Spine1" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,-50,0" scale="1.3" />
+				</dummy>
+				<dummy name="Eff_Foot_World">
+					<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
+					<transform scale="1.3" />
+				</dummy>
+			</effectdummy>
+		</environment>
+	</npc>
+	<npc id="23100055">
+		<environment feature="DungeonBoss_4P" npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="boss" nametag="1" defenceMaterial="3" hitImmune="99" abnormalImmune="99" level="32" class="6" rankIcon="a" propertyTags="keep_battle" raceString="machine" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/23000055_B_RobotHyperBoosterRed_P.png" damagedVibrateDuration="0.5" damagedVibrateAmp="1" checkCameraDistance="9999" extraCameraDistance="500" bossSoundDistance="2500" bossSoundEndDistance="99999" customExp="0" lookAtMyPCWhenTalking="0">
+			<model kfm="23000055_B_RobotHyperBoosterRed" scale="1.6" shadowScale="640" rotationSpeed="720" walkSpeed="200" runSpeed="400" />
+			<stat hp="185978" asp="100" msp="100" atp="120" evp="88" cap="53" cad="500" car="50" ndd="250" pap="13362" map="13367" par="120" mar="120" />
+			<distance avoid="400" sight="600" sightHeightUP="525" sightHeightDown="225" customLastSightRadius="9999" customLastSightHeightUp="9999" customLastSightHeightDown="9999" />
+			<skill ids="50100437" levels="1" probs="100" />
+			<additionalEffect codes="50004400" levels="1" />
+			<collision shape="box" width="240" height="280" depth="180" />
+			<corpse width="430" height="150" depth="380" added="40" offsetNametag="-200" rotation="170" />
+			<capsule radius="130" height="300" />
+			<dead time="10" defaultaction="Dead_A" upaction="Dead_A" />
+			<normal action="Idle_A,Bore_A,Walk_A" prob="5000,3000,2000" movearea="150" />
+			<dropiteminfo dropHeight="300" dropDistanceBase="300" dropDistanceRandom="20" globalDropBoxId="74" globalDeadDropBoxId="1011" />
+			<aiInfo path="BossDungeon/RobotHyperBoosterRed/AI_RobotHyperBoosterRed.xml" />
+			<effectdummy>
+				<dummy name="Eff_Head">
+					<attachInfo parentNode="Bip01 Neck" />
+					<transform translate="-50,0,0" scale="1.5" />
+				</dummy>
+				<dummy name="Eff_Body">
+					<attachInfo parentNode="Bip01 Spine1" />
+					<transform translate="25,-20,0" scale="1.5" />
+				</dummy>
+				<dummy name="Eff_Foot">
+					<attachInfo parentNode="Bip01 Footsteps" />
+					<transform scale="1.5" />
+				</dummy>
+				<dummy name="Eff_UI">
+					<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,-50,550" />
+				</dummy>
+				<dummy name="Eff_Damage">
+					<attachInfo parentNode="Eff_UI" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,0,-370" rotation="0,0,90" />
+				</dummy>
+				<dummy name="Eff_Head_World">
+					<attachInfo parentNode="Bip01 Neck" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,10,-70" scale="1.5" />
+				</dummy>
+				<dummy name="Eff_Body_World">
+					<attachInfo parentNode="Bip01 Spine1" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,0,50" scale="1.5" />
+				</dummy>
+				<dummy name="Eff_Foot_World">
+					<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
+					<transform scale="1.5" />
+				</dummy>
+			</effectdummy>
+		</environment>
+	</npc>
+	<npc id="23100056">
+		<environment feature="DungeonBoss_4P" npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="boss" nametag="1" defenceMaterial="3" hitImmune="98" abnormalImmune="98" level="50" class="6" rankIcon="a" propertyTags="keep_battle" raceString="machine" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/23000056_B_RobotHyperBoosterBlue_P.png" damagedVibrateDuration="0.5" damagedVibrateAmp="1" checkCameraDistance="2500" extraCameraDistance="500" bossSoundDistance="2500" bossSoundEndDistance="4000" customExp="0" lookAtMyPCWhenTalking="0">
+			<model kfm="23000056_B_RobotHyperBoosterBlue" scale="1.6" shadowScale="640" rotationSpeed="720" walkSpeed="200" runSpeed="400" />
+			<stat hp="2661892" asp="100" msp="100" atp="120" evp="91" cap="62" cad="500" car="50" ndd="567" pap="193313" map="193354" par="120" mar="120" />
+			<distance avoid="400" sight="600" sightHeightUP="525" sightHeightDown="225" customLastSightRadius="3500" customLastSightHeightUp="525" customLastSightHeightDown="225" />
+			<skill ids="50100437" levels="1" probs="100" />
+			<additionalEffect codes="50004400" levels="1" />
+			<collision shape="box" width="240" height="280" depth="180" />
+			<corpse width="430" height="150" depth="380" added="40" offsetNametag="-200" rotation="170" />
+			<capsule radius="130" height="300" />
+			<dead time="10" defaultaction="Dead_A" upaction="Dead_A" extendRoomTime="60000" />
+			<normal action="Idle_A,Bore_A,Walk_A" prob="5000,3000,2000" movearea="150" />
+			<dropiteminfo dropHeight="300" dropDistanceBase="300" dropDistanceRandom="20" globalDropBoxId="74" globalDeadDropBoxId="1011" />
+			<aiInfo path="BossDungeon/RobotHyperBoosterBlue/AI_RobotHyperBoosterBlue.xml" />
+			<effectdummy>
+				<dummy name="Eff_Head">
+					<attachInfo parentNode="Bip01 Neck" />
+					<transform translate="-50,0,0" scale="1.5" />
+				</dummy>
+				<dummy name="Eff_Body">
+					<attachInfo parentNode="Bip01 Spine1" />
+					<transform translate="25,-20,0" scale="1.5" />
+				</dummy>
+				<dummy name="Eff_Foot">
+					<attachInfo parentNode="Bip01 Footsteps" />
+					<transform scale="1.5" />
+				</dummy>
+				<dummy name="Eff_UI">
+					<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,-50,550" />
+				</dummy>
+				<dummy name="Eff_Damage">
+					<attachInfo parentNode="Eff_UI" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,0,-370" rotation="0,0,90" />
+				</dummy>
+				<dummy name="Eff_Head_World">
+					<attachInfo parentNode="Bip01 Neck" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,10,-70" scale="1.5" />
+				</dummy>
+				<dummy name="Eff_Body_World">
+					<attachInfo parentNode="Bip01 Spine1" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,0,50" scale="1.5" />
+				</dummy>
+				<dummy name="Eff_Foot_World">
+					<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
+					<transform scale="1.5" />
+				</dummy>
+			</effectdummy>
+		</environment>
+	</npc>
+	<npc id="23100077">
+		<environment feature="DungeonBoss_4P" npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="boss" nametag="1" defenceMaterial="3" hitImmune="99" abnormalImmune="99" level="40" class="6" rankIcon="a" raceString="machine" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/23000077_B_Papulatus_P.png" damagedVibrateDuration="0.5" damagedVibrateAmp="1" checkCameraDistance="2500" extraCameraDistance="300" bossSoundDistance="900" bossSoundEndDistance="99999" customExp="0" lookAtMyPCWhenTalking="0">
+			<model kfm="23000077_B_Papulatus" scale="1.05" shadowScale="640" rotationSpeed="720" walkSpeed="75" runSpeed="150" />
+			<stat hp="467678" asp="100" msp="100" atp="120" evp="88" cap="57" cad="500" car="50" ndd="375" pap="27050" map="27058" par="120" mar="120" />
+			<distance avoid="400" sight="1500" sightHeightUP="350" sightHeightDown="200" customLastSightRadius="3500" customLastSightHeightUp="525" customLastSightHeightDown="800" />
+			<skill ids="50100752" levels="1" probs="100" />
+			<additionalEffect codes="50004400" levels="1" />
+			<collision shape="box" width="330" height="400" depth="230" />
+			<corpse width="300" height="150" depth="1" added="950" offsetNametag="-200" rotation="0" />
+			<capsule radius="170" height="320" />
+			<dead time="20" defaultaction="Dead_A" upaction="Dead_A" />
+			<normal action="Idle_A,Bore_A,Walk_A" prob="5000,3000,2000" movearea="150" />
+			<dropiteminfo dropHeight="300" dropDistanceBase="300" dropDistanceRandom="20" globalDropBoxId="74" globalDeadDropBoxId="1011" />
+			<aiInfo path="BossDungeon/Papulatus/AI_Papulatus.xml" />
+			<effectdummy>
+				<dummy name="Eff_Head">
+					<attachInfo parentNode="Bip02 Head" />
+					<transform translate="100,0,0" scale="1.5" />
+				</dummy>
+				<dummy name="Eff_Body">
+					<attachInfo parentNode="Bip02 Spine" />
+					<transform scale="1.5" />
+				</dummy>
+				<dummy name="Eff_Foot">
+					<attachInfo parentNode="Bip02 Footsteps" />
+					<transform scale="1.5" />
+				</dummy>
+				<dummy name="Eff_UI">
+					<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,0,550" />
+				</dummy>
+				<dummy name="Eff_Damage">
+					<attachInfo parentNode="Eff_UI" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,0,-480" />
+				</dummy>
+				<dummy name="Eff_Head_World">
+					<attachInfo parentNode="Bip02 Head" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,0,100" scale="1.5" />
+				</dummy>
+				<dummy name="Eff_Body_World">
+					<attachInfo parentNode="Bip02 Spine" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,0,100" scale="1.5" />
+				</dummy>
+				<dummy name="Eff_Foot_World">
+					<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
+					<transform scale="1.5" />
+				</dummy>
+			</effectdummy>
+		</environment>
+	</npc>
+	<npc id="23100084">
+		<environment feature="SnowKingdom" npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="boss" nametag="1" defenceMaterial="1" hitImmune="99" abnormalImmune="99" level="54" class="6" rankIcon="a" propertyTags="keep_battle" raceString="spirit" gender="1" portrait="./Data/Resource/Image/Portrait/Mob/23000084_B_SnowQueen_P.png" damagedVibrateDuration="0.5" damagedVibrateAmp="1" checkCameraDistance="3000" extraCameraDistance="300" bossSoundDistance="2500" bossSoundEndDistance="9000" customExp="0" lookAtMyPCWhenTalking="0">
+			<model kfm="23000084_B_SnowQueen" scale="1.3" shadowScale="300" rotationSpeed="720" walkSpeed="200" runSpeed="400" />
+			<stat hp="1248648" asp="100" msp="100" atp="120" evp="88" cap="64" cad="250" car="50" ndd="786" pap="412153" map="412280" par="120" mar="120" />
+			<distance avoid="400" sight="5000" sightHeightUP="5999" sightHeightDown="5999" customLastSightRadius="99999" customLastSightHeightUp="99999" customLastSightHeightDown="99999" />
+			<skill ids="50001051" levels="1" probs="100" />
+			<additionalEffect codes="50004400" levels="1" />
+			<collision shape="box" width="120" height="200" depth="100" />
+			<capsule radius="30" height="200" />
+			<dead time="2.3" defaultaction="Dead_A" upaction="Dead_A" />
+			<normal action="Idle_A" prob="10000" />
+			<dropiteminfo dropHeight="300" dropDistanceBase="300" dropDistanceRandom="20" globalDropBoxId="74" />
+			<aiInfo path="BossDungeon/SnowQueen/AI_SnowQueen_TypeA.xml" />
+			<effectdummy>
+				<dummy name="Eff_Head">
+					<attachInfo parentNode="Bip01 Head" />
+					<transform translate="40,10,0" />
+				</dummy>
+				<dummy name="Eff_Body">
+					<attachInfo parentNode="Bip01 Spine" />
+				</dummy>
+				<dummy name="Eff_Foot">
+					<attachInfo parentNode="Main_Point01" />
+					<transform translate="0,0,40" />
+				</dummy>
+				<dummy name="Eff_UI">
+					<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,0,280" />
+				</dummy>
+				<dummy name="Eff_Damage">
+					<attachInfo parentNode="Eff_UI" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,0,-140" />
+				</dummy>
+				<dummy name="Eff_Head_World">
+					<attachInfo parentNode="Bip01 Head" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,-20,50" />
+				</dummy>
+				<dummy name="Eff_Body_World">
+					<attachInfo parentNode="Bip01 Spine" applyWorldTransform="true" applyLocalScale="false" />
+				</dummy>
+				<dummy name="Eff_Foot_World">
+					<attachInfo parentNode="Main_Point01" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,0,50" />
+				</dummy>
+			</effectdummy>
+		</environment>
+	</npc>
+	<npc id="23100086">
+		<environment feature="SnowKingdom" npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="boss" nametag="1" defenceMaterial="1" hitImmune="99" abnormalImmune="99" level="54" class="6" rankIcon="a" propertyTags="keep_battle" raceString="spirit" gender="1" portrait="./Data/Resource/Image/Portrait/Mob/23000084_B_SnowQueen_P.png" damagedVibrateDuration="0.5" damagedVibrateAmp="1" checkCameraDistance="3000" extraCameraDistance="300" bossSoundDistance="2500" bossSoundEndDistance="9000" customExp="0" lookAtMyPCWhenTalking="0">
+			<model kfm="23000084_B_SnowQueen" scale="1.3" shadowScale="300" rotationSpeed="720" walkSpeed="200" runSpeed="400" />
+			<stat hp="1248648" asp="100" msp="100" atp="120" evp="88" cap="64" cad="250" car="50" ndd="786" pap="412153" map="412280" par="120" mar="120" />
+			<distance avoid="400" sight="5000" sightHeightUP="5999" sightHeightDown="5999" customLastSightRadius="99999" customLastSightHeightUp="99999" customLastSightHeightDown="99999" />
+			<skill ids="50001051" levels="1" probs="100" />
+			<additionalEffect codes="50004400" levels="1" />
+			<collision shape="box" width="120" height="200" depth="100" />
+			<capsule radius="30" height="200" />
+			<dead time="2.3" defaultaction="Dead_A" upaction="Dead_A" />
+			<normal action="Idle_A" prob="10000" />
+			<dropiteminfo dropHeight="300" dropDistanceBase="300" dropDistanceRandom="20" globalDropBoxId="74" />
+			<aiInfo path="BossDungeon/SnowQueen/AI_SnowQueen_TypeB.xml" />
+			<effectdummy>
+				<dummy name="Eff_Head">
+					<attachInfo parentNode="Bip01 Head" />
+					<transform translate="40,10,0" />
+				</dummy>
+				<dummy name="Eff_Body">
+					<attachInfo parentNode="Bip01 Spine" />
+				</dummy>
+				<dummy name="Eff_Foot">
+					<attachInfo parentNode="Main_Point01" />
+					<transform translate="0,0,40" />
+				</dummy>
+				<dummy name="Eff_UI">
+					<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,0,280" />
+				</dummy>
+				<dummy name="Eff_Damage">
+					<attachInfo parentNode="Eff_UI" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,0,-140" />
+				</dummy>
+				<dummy name="Eff_Head_World">
+					<attachInfo parentNode="Bip01 Head" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,-20,50" />
+				</dummy>
+				<dummy name="Eff_Body_World">
+					<attachInfo parentNode="Bip01 Spine" applyWorldTransform="true" applyLocalScale="false" />
+				</dummy>
+				<dummy name="Eff_Foot_World">
+					<attachInfo parentNode="Main_Point01" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,0,50" />
+				</dummy>
+			</effectdummy>
+		</environment>
+	</npc>
+	<npc id="23100087">
+		<environment feature="SnowKingdom" npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="boss" nametag="1" defenceMaterial="1" hitImmune="99" abnormalImmune="99" level="54" class="6" rankIcon="a" propertyTags="keep_battle" raceString="spirit" gender="1" portrait="./Data/Resource/Image/Portrait/Mob/23000084_B_SnowQueen_P.png" damagedVibrateDuration="0.5" damagedVibrateAmp="1" checkCameraDistance="3000" extraCameraDistance="300" bossSoundDistance="2500" bossSoundEndDistance="9000" customExp="0" lookAtMyPCWhenTalking="0">
+			<model kfm="23000084_B_SnowQueen" scale="1.3" shadowScale="300" rotationSpeed="720" walkSpeed="200" runSpeed="400" />
+			<stat hp="1248648" asp="100" msp="100" atp="120" evp="88" cap="64" cad="250" car="50" ndd="786" pap="412153" map="412280" par="120" mar="120" />
+			<distance avoid="400" sight="5000" sightHeightUP="5999" sightHeightDown="5999" customLastSightRadius="99999" customLastSightHeightUp="99999" customLastSightHeightDown="99999" />
+			<skill ids="50001051" levels="1" probs="100" />
+			<additionalEffect codes="50004400" levels="1" />
+			<collision shape="box" width="120" height="200" depth="100" />
+			<capsule radius="30" height="200" />
+			<dead time="2.3" defaultaction="Dead_A" upaction="Dead_A" />
+			<normal action="Idle_A" prob="10000" />
+			<dropiteminfo dropHeight="300" dropDistanceBase="300" dropDistanceRandom="20" globalDropBoxId="74" />
+			<aiInfo path="BossDungeon/SnowQueen/AI_SnowQueen_TypeC.xml" />
+			<effectdummy>
+				<dummy name="Eff_Head">
+					<attachInfo parentNode="Bip01 Head" />
+					<transform translate="40,10,0" />
+				</dummy>
+				<dummy name="Eff_Body">
+					<attachInfo parentNode="Bip01 Spine" />
+				</dummy>
+				<dummy name="Eff_Foot">
+					<attachInfo parentNode="Main_Point01" />
+					<transform translate="0,0,40" />
+				</dummy>
+				<dummy name="Eff_UI">
+					<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,0,280" />
+				</dummy>
+				<dummy name="Eff_Damage">
+					<attachInfo parentNode="Eff_UI" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,0,-140" />
+				</dummy>
+				<dummy name="Eff_Head_World">
+					<attachInfo parentNode="Bip01 Head" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,-20,50" />
+				</dummy>
+				<dummy name="Eff_Body_World">
+					<attachInfo parentNode="Bip01 Spine" applyWorldTransform="true" applyLocalScale="false" />
+				</dummy>
+				<dummy name="Eff_Foot_World">
+					<attachInfo parentNode="Main_Point01" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,0,50" />
+				</dummy>
+			</effectdummy>
+		</environment>
+	</npc>
+	<npc id="23100100">
+		<environment feature="DungeonBoss_4P" npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="boss" nametag="1" defenceMaterial="4" hitImmune="99" abnormalImmune="99" level="31" class="6" rankIcon="a" propertyTags="keep_battle" raceString="spirit" gender="0" portrait="./Data/Resource/Image/Portrait/Mob/23000100_B_SandstoneGiant_P.png" damagedVibrateDuration="0.5" damagedVibrateAmp="1" checkCameraDistance="2500" extraCameraDistance="300" bossSoundDistance="900" bossSoundEndDistance="99999" customExp="0" lookAtMyPCWhenTalking="0">
+			<model kfm="23000100_B_SandstoneGiant" scale="2.3" shadowScale="640" rotationSpeed="720" walkSpeed="125" runSpeed="250" />
+			<stat hp="216723" asp="100" msp="100" atp="120" evp="88" cap="53" cad="500" car="50" ndd="237" pap="14531" map="14535" par="120" mar="120" />
+			<distance avoid="400" sight="600" sightHeightUP="1000" sightHeightDown="225" customLastSightRadius="9999" customLastSightHeightUp="9999" customLastSightHeightDown="9999" />
+			<skill ids="50001000" levels="1" probs="100" />
+			<additionalEffect codes="50004400" levels="1" />
+			<collision shape="box" width="152.174" height="217.391" depth="152.174" />
+			<corpse width="700" height="150" depth="330" added="170" offsetNametag="-200" rotation="345" />
+			<capsule radius="170" height="600" />
+			<dead time="8" defaultaction="Dead_A" upaction="Dead_A" />
+			<normal action="Idle_A,Bore_A,Walk_A" prob="5000,3000,2000" movearea="150" />
+			<dropiteminfo dropHeight="320" dropDistanceBase="400" dropDistanceRandom="20" globalDropBoxId="74" globalDeadDropBoxId="1011" />
+			<aiInfo path="BossDungeon/SandstoneGiant/AI_SandstoneGiant.xml" />
+			<effectdummy>
+				<dummy name="Eff_Head">
+					<attachInfo parentNode="Bip01 Head" />
+					<transform translate="30,10,0" scale="1.6" />
+				</dummy>
+				<dummy name="Eff_Body">
+					<attachInfo parentNode="Bip01 Spine" />
+					<transform translate="0,50,0" scale="1.6" />
+				</dummy>
+				<dummy name="Eff_Foot">
+					<attachInfo parentNode="Bip01 Footsteps" />
+					<transform scale="1.6" />
+				</dummy>
+				<dummy name="Eff_UI">
+					<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,0,500" />
+				</dummy>
+				<dummy name="Eff_Damage">
+					<attachInfo parentNode="Eff_UI" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,0,-370" />
+				</dummy>
+				<dummy name="Eff_Head_World">
+					<attachInfo parentNode="Bip01 Head" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,-30,70" scale="1.6" />
+				</dummy>
+				<dummy name="Eff_Body_World">
+					<attachInfo parentNode="Bip01 Spine" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,-50,0" scale="1.6" />
+				</dummy>
+				<dummy name="Eff_Foot_World">
+					<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
+					<transform scale="1.6" />
+				</dummy>
+			</effectdummy>
+		</environment>
+	</npc>
+	<npc id="23190005">
+		<environment feature="DungeonBoss_4P" npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="boss" nametag="1" defenceMaterial="1" hitImmune="98" abnormalImmune="98" level="50" class="6" rankIcon="a" carePathToEnemy="1" raceString="devil" gender="0" portrait="./Data/Resource/Image/Portrait/Mob/02030005_Balrog_P.png" damagedVibrateDuration="0.5" damagedVibrateAmp="1" checkCameraDistance="2500" extraCameraDistance="600" bossSoundDistance="99999" bossSoundEndDistance="99999" customExp="0" lookAtMyPCWhenTalking="0">
+			<model kfm="02030005_Balrog" shadowScale="1000" rotationSpeed="720" walkSpeed="125" runSpeed="250" />
+			<stat hp="41086088" asp="100" msp="100" atp="120" evp="88" cap="62" cad="500" car="50" ndd="567" pap="199148" map="199211" par="120" mar="120" />
+			<distance avoid="400" sight="600" sightHeightUP="300" sightHeightDown="225" customLastSightRadius="3500" customLastSightHeightUp="525" customLastSightHeightDown="225" />
+			<skill ids="50100365" levels="1" probs="100" />
+			<additionalEffect codes="50004400" levels="1" />
+			<collision shape="box" width="600" height="550" depth="500" />
+			<corpse width="1000" height="300" depth="300" added="350" offsetNametag="-200" rotation="0" />
+			<capsule radius="250" height="550" />
+			<dead time="10" defaultaction="Dead_A" upaction="Dead_A" extendRoomTime="60000" />
+			<normal action="Idle_A,Bore_A,Walk_A" prob="5000,3000,2000" movearea="150" />
+			<dropiteminfo globalDropBoxId="74" />
+			<aiInfo path="BossDungeon/Balrog/AI_Balrog.xml" />
+			<effectdummy>
+				<dummy name="Eff_Head">
+					<attachInfo parentNode="Bip01 Head" />
+					<transform scale="1.8" />
+				</dummy>
+				<dummy name="Eff_Body">
+					<attachInfo parentNode="Bip01 Spine" />
+					<transform translate="300,50,0" scale="1.8" />
+				</dummy>
+				<dummy name="Eff_Foot">
+					<attachInfo parentNode="Bip01 Footsteps" />
+					<transform scale="1.8" />
+				</dummy>
+				<dummy name="Eff_UI">
+					<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,-300,600" />
+				</dummy>
+				<dummy name="Eff_Damage">
+					<attachInfo parentNode="Eff_UI" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,0,-370" />
+				</dummy>
+				<dummy name="Eff_Head_World">
+					<attachInfo parentNode="Bip01 Head" applyWorldTransform="true" applyLocalScale="false" />
+					<transform scale="1.8" />
+				</dummy>
+				<dummy name="Eff_Body_World">
+					<attachInfo parentNode="Bip01 Spine2" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,-100,50" scale="1.8" />
+				</dummy>
+				<dummy name="Eff_Foot_World">
+					<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,-100,0" scale="1.8" />
+				</dummy>
+			</effectdummy>
+		</environment>
+	</npc>
+	<npc id="23190066">
+		<environment feature="KarkarIsland" npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="boss" nametag="1" defenceMaterial="1" hitImmune="98" abnormalImmune="98" level="50" class="6" rankIcon="a" propertyTags="keep_battle" raceString="bug" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/22000066_N_BeetleBigYellow_P.png" damagedVibrateDuration="0.5" damagedVibrateAmp="1" checkCameraDistance="2500" extraCameraDistance="300" bossSoundDistance="9900" bossSoundEndDistance="9999" customExp="0" lookAtMyPCWhenTalking="0">
+			<model kfm="22000066_N_BeetleBigYellow" scale="1.65" shadowScale="450" rotationSpeed="720" walkSpeed="200" runSpeed="400" />
+			<stat hp="2956303" asp="100" msp="100" atp="120" evp="91" cap="62" cad="500" car="50" ndd="567" pap="178982" map="179028" par="120" mar="120" />
+			<distance avoid="400" sight="2500" sightHeightUP="300" sightHeightDown="1" customLastSightRadius="3500" customLastSightHeightUp="525" customLastSightHeightDown="350" />
+			<skill ids="50101200" levels="1" probs="100" />
+			<additionalEffect codes="50004400" levels="1" />
+			<collision shape="box" width="150" height="200" depth="120" />
+			<corpse width="350" height="150" depth="200" added="100" offsetNametag="-200" rotation="345" />
+			<capsule radius="110" height="320" />
+			<dead time="10" defaultaction="Dead_A" upaction="Dead_A" extendRoomTime="60000" />
+			<normal action="Idle_A,Bore_A,Walk_A" prob="5000,3000,2000" movearea="150" />
+			<dropiteminfo dropHeight="300" dropDistanceBase="300" dropDistanceRandom="20" globalDropBoxId="74" globalDeadDropBoxId="1011" />
+			<aiInfo path="BossDungeon/BeetleBigYellow/AI_BeetleBigYellow.xml" />
+			<effectdummy>
+				<dummy name="Eff_Head">
+					<attachInfo parentNode="Bip01 Head" />
+					<transform translate="50,10,0" rotation="-90,-90,0" scale="1.1" />
+				</dummy>
+				<dummy name="Eff_Body">
+					<attachInfo parentNode="Bip01 Pelvis" />
+					<transform translate="30,10,0" rotation="180,-90,90" scale="1.3" />
+				</dummy>
+				<dummy name="Eff_Foot">
+					<attachInfo parentNode="Bip01 Footsteps" />
+					<transform translate="0,-10,0" rotation="0,0,90" scale="1.1" />
+				</dummy>
+				<dummy name="Eff_UI">
+					<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,-30,400" />
+				</dummy>
+				<dummy name="Eff_Damage">
+					<attachInfo parentNode="Eff_UI" applyLocalScale="false" />
+					<transform translate="0,0,-300" />
+				</dummy>
+				<dummy name="Eff_Head_World">
+					<attachInfo parentNode="Bip01 Head" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,-50,70" rotation="0,0,90" scale="1.1" />
+				</dummy>
+				<dummy name="Eff_Body_World">
+					<attachInfo parentNode="Bip01 Pelvis" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,-15,50" rotation="0,0,90" scale="1.3" />
+				</dummy>
+				<dummy name="Eff_Foot_World">
+					<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
+					<transform rotation="0,0,90" scale="1.1" />
+				</dummy>
+			</effectdummy>
+		</environment>
+	</npc>
+	<npc id="23190105">
+		<environment feature="DarkCastle" npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="boss" nametag="1" defenceMaterial="1" hitImmune="90" abnormalImmune="90" level="56" class="6" rankIcon="a" propertyTags="keep_battle" raceString="animal" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/22000105_N_ChangeLionBlue_P.png" damagedVibrateDuration="0.5" damagedVibrateAmp="1" checkCameraDistance="2500" extraCameraDistance="300" bossSoundDistance="900" bossSoundEndDistance="99999" customExp="0" lookAtMyPCWhenTalking="0">
+			<model kfm="22000105_N_ChangeLionBlue" scale="1.3" shadowScale="500" rotationSpeed="500" walkSpeed="125" runSpeed="250" />
+			<stat hp="1282727" asp="100" msp="100" atp="120" evp="88" cap="65" cad="500" car="50" ndd="702" pap="519773" map="519933" par="120" mar="120" />
+			<distance avoid="400" sight="1500" sightHeightUP="300" sightHeightDown="110" customLastSightRadius="5555" customLastSightHeightUp="9999" customLastSightHeightDown="9999" />
+			<skill ids="50000662" levels="1" probs="100" />
+			<additionalEffect codes="50004400" levels="1" />
+			<collision shape="box" width="160" height="180" depth="220" depthOffset="30" />
+			<corpse width="300" height="250" depth="600" offsetNametag="-200" rotation="-90" />
+			<capsule radius="100" height="200" />
+			<dead time="10" defaultaction="Dead_A" upaction="Dead_A" />
+			<normal action="Idle_A,Bore_A,Walk_A" prob="5000,3000,2000" movearea="150" />
+			<dropiteminfo globalDropBoxId="74" />
+			<aiInfo path="BossDungeon/ChangeLion/AI_ChangeLionBlue.xml" />
+			<effectdummy>
+				<dummy name="Eff_Head">
+					<attachInfo parentNode="Bip01 Head" />
+					<transform translate="20,20,0" scale="1.1" />
+				</dummy>
+				<dummy name="Eff_Body">
+					<attachInfo parentNode="Bip01 Spine2" />
+					<transform translate="30,30,0" scale="1.1" />
+				</dummy>
+				<dummy name="Eff_Foot">
+					<attachInfo parentNode="Main_Point01" />
+					<transform translate="0,-60,0" scale="1.1" />
+				</dummy>
+				<dummy name="Eff_UI">
+					<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,-150,300" />
+				</dummy>
+				<dummy name="Eff_Damage">
+					<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,-200,150" />
+				</dummy>
+				<dummy name="Eff_Head_World">
+					<attachInfo parentNode="Bip01 Head" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,-35,10" scale="1.1" />
+				</dummy>
+				<dummy name="Eff_Body_World">
+					<attachInfo parentNode="Bip01 Spine2" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,-50,-30" scale="1.1" />
+				</dummy>
+				<dummy name="Eff_Foot_World">
+					<attachInfo parentNode="Main_Point01" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,-75,0" scale="1.1" />
+				</dummy>
+			</effectdummy>
+		</environment>
+	</npc>
+	<npc id="23190106">
+		<environment feature="DarkCastle" npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="boss" nametag="1" defenceMaterial="1" hitImmune="90" abnormalImmune="90" level="56" class="6" rankIcon="a" propertyTags="keep_battle" raceString="animal" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/22000106_N_ChangeLionRed_P.png" damagedVibrateDuration="0.5" damagedVibrateAmp="1" checkCameraDistance="2500" extraCameraDistance="300" bossSoundDistance="900" bossSoundEndDistance="99999" customExp="0" lookAtMyPCWhenTalking="0">
+			<model kfm="22000106_N_ChangeLionRed" scale="1.3" shadowScale="500" rotationSpeed="500" walkSpeed="125" runSpeed="250" />
+			<stat hp="1282727" asp="100" msp="100" atp="120" evp="88" cap="65" cad="500" car="50" ndd="702" pap="519773" map="519933" par="120" mar="120" />
+			<distance avoid="400" sight="1500" sightHeightUP="300" sightHeightDown="110" customLastSightRadius="5555" customLastSightHeightUp="9999" customLastSightHeightDown="9999" />
+			<skill ids="50000663" levels="1" probs="100" />
+			<additionalEffect codes="50004400" levels="1" />
+			<collision shape="box" width="160" height="180" depth="220" depthOffset="30" />
+			<corpse width="300" height="250" depth="600" offsetNametag="-200" rotation="-90" />
+			<capsule radius="100" height="200" />
+			<dead time="10" defaultaction="Dead_A" upaction="Dead_A" />
+			<normal action="Idle_A,Bore_A,Walk_A" prob="5000,3000,2000" movearea="150" />
+			<dropiteminfo globalDropBoxId="74" />
+			<aiInfo path="BossDungeon/ChangeLion/AI_ChangeLionRed.xml" />
+			<effectdummy>
+				<dummy name="Eff_Head">
+					<attachInfo parentNode="Bip01 Head" />
+					<transform translate="20,20,0" scale="1.1" />
+				</dummy>
+				<dummy name="Eff_Body">
+					<attachInfo parentNode="Bip01 Spine2" />
+					<transform translate="30,30,0" scale="1.1" />
+				</dummy>
+				<dummy name="Eff_Foot">
+					<attachInfo parentNode="Main_Point01" />
+					<transform translate="0,-60,0" scale="1.1" />
+				</dummy>
+				<dummy name="Eff_UI">
+					<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,-150,300" />
+				</dummy>
+				<dummy name="Eff_Damage">
+					<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,-200,150" />
+				</dummy>
+				<dummy name="Eff_Head_World">
+					<attachInfo parentNode="Bip01 Head" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,-35,10" scale="1.1" />
+				</dummy>
+				<dummy name="Eff_Body_World">
+					<attachInfo parentNode="Bip01 Spine2" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,-50,-30" scale="1.1" />
+				</dummy>
+				<dummy name="Eff_Foot_World">
+					<attachInfo parentNode="Main_Point01" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,-75,0" scale="1.1" />
+				</dummy>
+			</effectdummy>
+		</environment>
+	</npc>
+</ms2>

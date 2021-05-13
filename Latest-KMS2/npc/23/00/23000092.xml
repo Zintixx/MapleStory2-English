@@ -3,7 +3,7 @@
 <ms2>
 	<environment feature="CrimsonBalrog01" locale="">
 		<model kfm="23000092_B_AirshipBalrogCrimsonFlame" scale="0.95" />
-		<basic npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="boss" nametagSize="18" defenceMaterial="2" hitImmune="99" abnormalImmune="99" level="65" class="6" rankIcon="a" rotationDisabled="1" difficulty="65" propertyTags="battle_on_spawn,keep_battle,fixed_big_monster,hide_hpbar_level,no_die,immune_debuff,always_display_upper_hp_bar" raceString="machine" gender="2" mainTags="None" portrait="./Data/Resource/Image/Portrait/Mob/23000092_B_AirshipBalrogCrimsonFlame_P.png" damagedVibrateDuration="0.5" damagedVibrateAmp="1" />
+		<basic npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="boss" nametagSize="18" defenceMaterial="2" hitImmune="99" abnormalImmune="99" level="65" class="6" rankIcon="a" rotationDisabled="1" propertyTags="battle_on_spawn,keep_battle,fixed_big_monster,hide_hpbar_level,no_die,immune_debuff,always_display_upper_hp_bar" raceString="machine" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/23000092_B_AirshipBalrogCrimsonFlame_P.png" damagedVibrateDuration="0.5" damagedVibrateAmp="1" />
 		<stat hp="600000000" asp="100" msp="100" atp="120" evp="103" cap="70" cad="500" car="65" ndd="1000441" pap="3748467" map="3748890" par="150" mar="150" />
 		<speed walk="200" run="400" />
 		<distance avoid="3200" sight="15000" sightHeightUP="2500" sightHeightDown="900" customLastSightRadius="18000" customLastSightHeightUp="3100" customLastSightHeightDown="999" />
@@ -14,42 +14,42 @@
 		<dead time="5" defaultaction="Idle_A" upaction="Idle_A" />
 		<normal action="Idle_A" prob="10000" maidExpired="Idle_A" />
 		<dropiteminfo globalDropBoxId="74" />
-		<lookattarget lookAtMyPCWhenTalking="0" useTalkMotion="1" />
+		<lookattarget lookAtMyPCWhenTalking="0" />
 		<aiInfo path="BossDungeon/BalrogMagicBurster/AI_AirshipBalrogCrimsonFlame.xml" />
 		<exp customExp="0" />
 	</environment>
 	<effectdummy>
 		<dummy name="Eff_Head">
-			<attachInfo parentNode="Dummy01" applyWorldTransform="false" applyLocalScale="true" />
-			<transform translate="0.000000, 20.000000, 750.000000" rotation="0.000000, 0.000000, 90.000000" scale="2.000000" />
+			<attachInfo parentNode="Dummy01" />
+			<transform translate="0,20,750" rotation="0,0,90" scale="2" />
 		</dummy>
 		<dummy name="Eff_Body">
-			<attachInfo parentNode="Dummy01" applyWorldTransform="false" applyLocalScale="true" />
-			<transform translate="0.000000, 0.000000, 350.000000" rotation="0.000000, 0.000000, 90.000000" scale="2.000000" />
+			<attachInfo parentNode="Dummy01" />
+			<transform translate="0,0,350" rotation="0,0,90" scale="2" />
 		</dummy>
 		<dummy name="Eff_Foot">
-			<attachInfo parentNode="Dummy01" applyWorldTransform="false" applyLocalScale="true" />
-			<transform translate="0.000000, 0.000000, 0.000000" rotation="0.000000, 0.000000, 90.000000" scale="2.000000" />
+			<attachInfo parentNode="Dummy01" />
+			<transform rotation="0,0,90" scale="2" />
 		</dummy>
 		<dummy name="Eff_UI">
 			<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
-			<transform translate="0.000000, 0.000000, 900.000000" rotation="0.000000, 0.000000, 90.000000" scale="2.000000" />
+			<transform translate="0,0,900" rotation="0,0,90" scale="2" />
 		</dummy>
 		<dummy name="Eff_Damage">
 			<attachInfo parentNode="Eff_UI" applyWorldTransform="true" applyLocalScale="false" />
-			<transform translate="0.000000, 0.000000, -600.000000" rotation="0.000000, 0.000000, 90.000000" scale="1.000000" />
+			<transform translate="0,0,-600" rotation="0,0,90" />
 		</dummy>
 		<dummy name="Eff_Head_World">
 			<attachInfo parentNode="Dummy01" applyWorldTransform="true" applyLocalScale="false" />
-			<transform translate="0.000000, 20.000000, 750.000000" rotation="0.000000, 0.000000, 90.000000" scale="2.000000" />
+			<transform translate="0,20,750" rotation="0,0,90" scale="2" />
 		</dummy>
 		<dummy name="Eff_Body_World">
 			<attachInfo parentNode="Dummy01" applyWorldTransform="true" applyLocalScale="false" />
-			<transform translate="0.000000, 0.000000, 350.000000" rotation="0.000000, 0.000000, 90.000000" scale="2.000000" />
+			<transform translate="0,0,350" rotation="0,0,90" scale="2" />
 		</dummy>
 		<dummy name="Eff_Foot_World">
 			<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
-			<transform translate="0.000000, 0.000000, 0.000000" rotation="0.000000, 0.000000, 90.000000" scale="4.000000" />
+			<transform rotation="0,0,90" scale="4" />
 		</dummy>
 	</effectdummy>
 </ms2>

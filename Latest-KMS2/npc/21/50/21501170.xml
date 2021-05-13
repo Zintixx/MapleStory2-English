@@ -3,7 +3,7 @@
 <ms2>
 	<environment feature="LapentaDungeon" locale="">
 		<model kfm="21000432_M_DesertDragonMagicGreen" />
-		<basic npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="enemy" nametag="1" nametagSize="18" hpBar="1" defenceMaterial="1" hitImmune="1" abnormalImmune="1" level="60" rankIcon="c" difficulty="60" propertyTags="keep_battle" raceString="mystic" gender="2" emotionID="21000432" mainTags="None" portrait="./Data/Resource/Image/Portrait/Mob/21000432_M_DesertDragonMagicGreen_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" />
+		<basic npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="enemy" nametag="1" nametagSize="18" hpBar="1" defenceMaterial="1" hitImmune="1" abnormalImmune="1" level="60" rankIcon="c" propertyTags="keep_battle" raceString="mystic" gender="2" emotionID="21000432" portrait="./Data/Resource/Image/Portrait/Mob/21000432_M_DesertDragonMagicGreen_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" />
 		<stat hp="4000649" asp="100" msp="100" atp="90" evp="125" cap="67" cad="250" car="90" ndd="930" pap="1298354" map="1298608" par="225" mar="225" />
 		<speed rotation="720" walk="60" run="200" />
 		<distance avoid="45" sight="1500" sightHeightUP="300" sightHeightDown="200" customLastSightRadius="2800" customLastSightHeightUp="525" customLastSightHeightDown="225" />
@@ -15,41 +15,40 @@
 		<shadow scale="120" bias="1" />
 		<normal action="Idle_A,Bore_A,Walk_A" prob="6000,1000,3000" movearea="150" maidExpired="Idle_A" />
 		<dropiteminfo dropHeight="50" dropDistanceBase="100" dropDistanceRandom="50" globalDropBoxId="74" />
-		<lookattarget lookAtMyPCWhenTalking="0" useTalkMotion="1" />
+		<lookattarget lookAtMyPCWhenTalking="0" />
 		<aiInfo path="BossDungeon/IshuraRbladerDark/Mob/AI_DesertDragonMagicGreen.xml" />
 	</environment>
 	<effectdummy>
 		<dummy name="Eff_Head">
-			<attachInfo parentNode="Bip01 Head" applyWorldTransform="false" applyLocalScale="true" />
-			<transform translate="0.000000, 10.000000, 0.000000" rotation="0.000000, 0.000000, 0.000000" scale="0.900000" />
+			<attachInfo parentNode="Bip01 Head" />
+			<transform translate="0,10,0" scale="0.9" />
 		</dummy>
 		<dummy name="Eff_Body">
-			<attachInfo parentNode="Bip01 Pelvis" applyWorldTransform="false" applyLocalScale="true" />
-			<transform translate="-20.000000, 20.000000, 0.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.000000" />
+			<attachInfo parentNode="Bip01 Pelvis" />
+			<transform translate="-20,20,0" />
 		</dummy>
 		<dummy name="Eff_Foot">
-			<attachInfo parentNode="Scene Root" applyWorldTransform="false" applyLocalScale="true" />
-			<transform translate="0.000000, -20.000000, 0.000000" rotation="0.000000, 0.000000, 0.000000" scale="0.800000" />
+			<attachInfo parentNode="Scene Root" />
+			<transform translate="0,-20,0" scale="0.8" />
 		</dummy>
 		<dummy name="Eff_UI">
 			<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
-			<transform translate="0.000000, -40.000000, 150.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.000000" />
+			<transform translate="0,-40,150" />
 		</dummy>
 		<dummy name="Eff_Damage">
 			<attachInfo parentNode="Bip01 Head" applyWorldTransform="true" applyLocalScale="false" />
-			<transform translate="0.000000, 0.000000, 0.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.000000" />
 		</dummy>
 		<dummy name="Eff_Head_World">
 			<attachInfo parentNode="Bip01 Head" applyWorldTransform="true" applyLocalScale="false" />
-			<transform translate="0.000000, -10.000000, 0.000000" rotation="0.000000, 0.000000, 0.000000" scale="0.900000" />
+			<transform translate="0,-10,0" scale="0.9" />
 		</dummy>
 		<dummy name="Eff_Body_World">
 			<attachInfo parentNode="Bip01 Pelvis" applyWorldTransform="true" applyLocalScale="false" />
-			<transform translate="0.000000, -20.000000, -20.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.000000" />
+			<transform translate="0,-20,-20" />
 		</dummy>
 		<dummy name="Eff_Foot_World">
 			<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
-			<transform translate="0.000000, -20.000000, 0.000000" rotation="0.000000, 0.000000, 0.000000" scale="0.800000" />
+			<transform translate="0,-20,0" scale="0.8" />
 		</dummy>
 	</effectdummy>
 </ms2>

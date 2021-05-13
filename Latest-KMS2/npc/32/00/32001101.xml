@@ -1,28 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- 파싱해서 사용하는 데이터이니 직접 수정하지 마세요 -->
 <ms2>
-	<environment feature="TimeAttackDungeon" locale="">
-		<model kfm="21000456_M_ToadCrownBlack" />
-		<basic npcAttackGroup="2" npcDefenseGroup="4" nametag="1" nametagSize="18" minimap="0" hpBar="1" defenceMaterial="1" hitImmune="99" abnormalImmune="99" level="50" rankIcon="c" carePathToEnemy="1" difficulty="39" propertyTags="ignore_pc,keep_battle,atp_formula_01" raceString="animal" gender="2" mainTags="None" portrait="./Data/Resource/Image/Portrait/Mob/21000456_M_ToadCrownBlack_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" skipFrame="1" />
-		<stat hp="25522" asp="100" msp="100" atp="80" evp="90" cap="310" cad="500" car="50" ndd="999999" pap="99999999" map="99999999" par="210" mar="210" scaleStatRate_1="3" scaleBaseTap_1="1368667" scaleBaseDef_1="1428" scaleBaseSpaRate_1="0.25" scaleStatRate_2="3" scaleBaseTap_2="2662004" scaleBaseDef_2="2274" scaleBaseSpaRate_2="0.25" />
-		<speed rotation="720" />
-		<distance avoid="60" sight="2500" sightHeightUP="300" sightHeightDown="0" customLastSightRadius="2500" customLastSightHeightUp="525" customLastSightHeightDown="225" />
-		<skill ids="49101001" levels="1" priorities="1" probs="100" coolDown="2000" />
-		<additionalEffect codes="49101001,49101002,49101005" levels="1,1,1" />
-		<collision shape="box" width="90" height="130" depth="90" />
-		<capsule radius="80" height="150" />
-		<dead time="2" defaultaction="Dead_A,Dead_B" upaction="Dead_B" />
-		<push back="1" up="1" knockback="1" />
-		<shadow scale="130" bias="1" />
-		<normal action="Idle_A,Bore_A" prob="5000,5000" maidExpired="Idle_A" />
-		<dropiteminfo dropHeight="50" dropDistanceBase="100" dropDistanceRandom="50" globalDropBoxId="74" />
-		<lookattarget lookAtMyPCWhenTalking="0" useTalkMotion="1" />
-		<aiInfo path="AI_DefaultNew_NotMoveNotStandby.xml" />
-		<exp customExp="0" />
-	</environment>
 	<environment feature="TorrentOfDark" locale="">
 		<model kfm="21000456_M_ToadCrownBlack" />
-		<basic npcAttackGroup="2" npcDefenseGroup="4" nametag="1" nametagSize="18" minimap="0" hpBar="1" defenceMaterial="1" hitImmune="99" abnormalImmune="99" level="50" rankIcon="c" carePathToEnemy="1" difficulty="50" propertyTags="ignore_pc,keep_battle,atp_formula_01" raceString="animal" gender="2" mainTags="None" portrait="./Data/Resource/Image/Portrait/Mob/21000456_M_ToadCrownBlack_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" skipFrame="1" />
+		<basic npcAttackGroup="2" npcDefenseGroup="4" nametag="1" nametagSize="18" minimap="0" hpBar="1" defenceMaterial="1" hitImmune="99" abnormalImmune="99" level="50" rankIcon="c" carePathToEnemy="1" propertyTags="ignore_pc,keep_battle,atp_formula_01" raceString="animal" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/21000456_M_ToadCrownBlack_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" />
 		<stat hp="25522" asp="100" msp="100" atp="80" evp="90" cap="310" cad="500" car="50" ndd="999999" pap="99999999" map="99999999" par="210" mar="210" scaleStatRate_1="3" scaleBaseTap_1="1368667" scaleBaseDef_1="1428" scaleBaseSpaRate_1="0.25" scaleStatRate_2="3" scaleBaseTap_2="2662004" scaleBaseDef_2="2274" scaleBaseSpaRate_2="0.25" />
 		<speed rotation="720" />
 		<distance avoid="60" sight="2500" sightHeightUP="300" sightHeightDown="0" customLastSightRadius="2500" customLastSightHeightUp="525" customLastSightHeightDown="225" />
@@ -35,30 +16,30 @@
 		<shadow scale="130" bias="1" />
 		<normal action="Idle_A,Bore_A" prob="5000,5000" maidExpired="Idle_A" />
 		<dropiteminfo dropHeight="50" dropDistanceBase="100" dropDistanceRandom="50" globalDropBoxId="74" />
-		<lookattarget lookAtMyPCWhenTalking="0" useTalkMotion="1" />
+		<lookattarget lookAtMyPCWhenTalking="0" />
 		<aiInfo path="AI_Toad_DrarkStream.xml" />
 		<exp customExp="0" />
 	</environment>
 	<effectdummy>
 		<dummy name="Eff_Head">
-			<attachInfo parentNode="Bip01 Head" applyWorldTransform="false" applyLocalScale="true" />
-			<transform translate="20.000000, -15.000000, 0.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.000000" />
+			<attachInfo parentNode="Bip01 Head" />
+			<transform translate="20,-15,0" />
 		</dummy>
 		<dummy name="Eff_Body">
-			<attachInfo parentNode="Bip01 Spine1" applyWorldTransform="false" applyLocalScale="true" />
-			<transform translate="0.000000, 10.000000, 0.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.000000" />
+			<attachInfo parentNode="Bip01 Spine1" />
+			<transform translate="0,10,0" />
 		</dummy>
 		<dummy name="Eff_UI">
 			<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
-			<transform translate="0.000000, -20.000000, 160.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.000000" />
+			<transform translate="0,-20,160" />
 		</dummy>
 		<dummy name="Eff_Head_World">
 			<attachInfo parentNode="Bip01 Head" applyWorldTransform="true" applyLocalScale="false" />
-			<transform translate="0.000000, 15.000000, 20.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.000000" />
+			<transform translate="0,15,20" />
 		</dummy>
 		<dummy name="Eff_Body_World">
 			<attachInfo parentNode="Bip01 Spine1" applyWorldTransform="true" applyLocalScale="false" />
-			<transform translate="0.000000, 0.000000, -10.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.000000" />
+			<transform translate="0,0,-10" />
 		</dummy>
 	</effectdummy>
 </ms2>

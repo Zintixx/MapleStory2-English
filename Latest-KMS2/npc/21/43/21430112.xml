@@ -3,7 +3,7 @@
 <ms2>
 	<environment feature="LapentaDungeon" locale="">
 		<model kfm="21000269_M_LarvaHornRed" scale="0.7" />
-		<basic npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="enemy" nametag="1" nametagSize="18" hpBar="1" defenceMaterial="1" hitImmune="99" abnormalImmune="99" level="60" rankIcon="c" carePathToEnemy="1" difficulty="60" raceString="bug" gender="2" mainTags="None" portrait="./Data/Resource/Image/Portrait/Mob/21000269_M_LarvaHornRed_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" skipFrame="1" />
+		<basic npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="enemy" nametag="1" nametagSize="18" hpBar="1" defenceMaterial="1" hitImmune="99" abnormalImmune="99" level="60" rankIcon="c" carePathToEnemy="1" raceString="bug" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/21000269_M_LarvaHornRed_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" />
 		<stat hp="25559707" asp="100" msp="100" atp="80" evp="125" cap="67" cad="500" car="90" ndd="799" pap="2203267" map="2203699" par="225" mar="225" />
 		<speed rotation="720" walk="140" run="280" />
 		<distance avoid="60" sight="600" sightHeightUP="300" sightHeightDown="300" customLastSightRadius="3500" customLastSightHeightUp="450" customLastSightHeightDown="450" />
@@ -15,14 +15,14 @@
 		<shadow scale="130" bias="1" />
 		<normal action="Idle_A,Bore_A,Walk_A" prob="4500,1500,4000" movearea="150" maidExpired="Idle_A" />
 		<dropiteminfo globalDropBoxId="74" />
-		<lookattarget lookAtMyPCWhenTalking="0" useTalkMotion="1" />
+		<lookattarget lookAtMyPCWhenTalking="0" />
 		<aiInfo path="AI_DefaultNew_LessHpUsingOnceIdx2.xml" />
 		<exp customExp="0" />
 	</environment>
 	<effectdummy>
 		<dummy name="Eff_UI">
-			<attachInfo parentNode="Scene Root" applyLocalScale="false" applyWorldTransform="true" />
-			<transform translate="0.0, 0.0, 130.0" rotation="0.0, 0.0, 0.0" scale="1.0" />
+			<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
+			<transform translate="0,0,130" />
 		</dummy>
 	</effectdummy>
 </ms2>

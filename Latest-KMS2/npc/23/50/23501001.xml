@@ -3,7 +3,7 @@
 <ms2>
 	<environment feature="LapentaDungeon" locale="">
 		<model kfm="23501001_B_YuperiaRbladerDark" scale="1.5" />
-		<basic npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="boss" nametag="1" nametagSize="18" defenceMaterial="1" hitImmune="99" abnormalImmune="99" level="60" class="6" rankIcon="a" carePathToEnemy="1" difficulty="60" propertyTags="battle_on_spawn,keep_battle" raceString="combine" gender="1" emotionID="23501001" mainTags="None" portrait="./Data/Resource/Image/Portrait/Mob/23501001_B_YuperiaRbladerDark_P.png" damagedColorScale="6" damagedVibrateDuration="0.5" damagedVibrateAmp="1" />
+		<basic npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="boss" nametag="1" nametagSize="18" defenceMaterial="1" hitImmune="99" abnormalImmune="99" level="60" class="6" rankIcon="a" carePathToEnemy="1" propertyTags="battle_on_spawn,keep_battle" raceString="combine" gender="1" emotionID="23501001" portrait="./Data/Resource/Image/Portrait/Mob/23501001_B_YuperiaRbladerDark_P.png" damagedColorScale="6" damagedVibrateDuration="0.5" damagedVibrateAmp="1" />
 		<stat hp="1635440206" asp="100" msp="100" atp="120" evp="125" cap="67" cad="250" car="90" ndd="930" pap="3617964" map="3617964" par="225" mar="225" />
 		<speed rotation="400" walk="220" run="470" />
 		<distance avoid="120" sight="90000" sightHeightUP="9000" sightHeightDown="9000" customLastSightRadius="9999" customLastSightHeightUp="9999" customLastSightHeightDown="9999" />
@@ -16,38 +16,38 @@
 		<shadow scale="180" bias="1" />
 		<normal action="Attack_Idle_A" prob="10000" maidExpired="Idle_A" />
 		<dropiteminfo globalDropBoxId="74" />
-		<lookattarget lookAtMyPCWhenTalking="0" useTalkMotion="1" />
+		<lookattarget lookAtMyPCWhenTalking="0" />
 		<aiInfo path="BossDungeon/EyeOfLapenta/AI_YuperiaRbladerDark.xml" />
 		<exp customExp="0" />
 	</environment>
 	<effectdummy>
 		<dummy name="Eff_Head">
-			<attachInfo parentNode="Bip01 Head" applyWorldTransform="false" applyLocalScale="true" />
-			<transform translate="20.000000, 10.000000, 0.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.000000" />
+			<attachInfo parentNode="Bip01 Head" />
+			<transform translate="20,10,0" />
 		</dummy>
 		<dummy name="Eff_Body">
-			<attachInfo parentNode="Bip01 Spine" applyWorldTransform="false" applyLocalScale="true" />
-			<transform translate="0.000000, 5.000000, 0.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.000000" />
+			<attachInfo parentNode="Bip01 Spine" />
+			<transform translate="0,5,0" />
 		</dummy>
 		<dummy name="Eff_Foot">
-			<attachInfo parentNode="Main_A NonAccum" applyWorldTransform="false" applyLocalScale="true" />
-			<transform translate="-6.000000, 0.000000, 0.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.000000" />
+			<attachInfo parentNode="Main_A NonAccum" />
+			<transform translate="-6,0,0" />
 		</dummy>
 		<dummy name="Eff_UI">
 			<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
-			<transform translate="-7.000000, 0.000000, 280.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.000000" />
+			<transform translate="-7,0,280" />
 		</dummy>
 		<dummy name="Eff_Head_World">
 			<attachInfo parentNode="Bip01 Head" applyWorldTransform="true" applyLocalScale="false" />
-			<transform translate="0.000000, -15.000000, 30.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.000000" />
+			<transform translate="0,-15,30" />
 		</dummy>
 		<dummy name="Eff_Body_World">
 			<attachInfo parentNode="Bip01 Spine" applyWorldTransform="true" applyLocalScale="false" />
-			<transform translate="0.000000, -5.000000, 0.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.000000" />
+			<transform translate="0,-5,0" />
 		</dummy>
 		<dummy name="Eff_Foot_World">
 			<attachInfo parentNode="Main_A NonAccum" applyWorldTransform="true" applyLocalScale="false" />
-			<transform translate="-8.000000, 0.000000, 0.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.000000" />
+			<transform translate="-8,0,0" />
 		</dummy>
 	</effectdummy>
 </ms2>

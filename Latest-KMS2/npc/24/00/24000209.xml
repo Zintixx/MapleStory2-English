@@ -3,20 +3,20 @@
 <ms2>
 	<environment feature="Season2" locale="">
 		<model kfm="Dummy" />
-		<basic friendly="1" npcAttackGroup="2" npcDefenseGroup="1" nametagSize="18" minimap="0" hpBar="1" defenceMaterial="1" hitImmune="99" abnormalImmune="99" level="36" rankIcon="c" carePathToEnemy="1" difficulty="36" propertyTags="big_hp_bar, always_display_hp_bar, no_regen_hp" raceString="unknown" gender="2" mainTags="None" portrait="./Data/Resource/Image/Portrait/Mob/Dummy_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" skipFrame="1" />
+		<basic friendly="1" npcAttackGroup="2" npcDefenseGroup="1" nametagSize="18" minimap="0" hpBar="1" defenceMaterial="1" hitImmune="99" abnormalImmune="99" level="36" rankIcon="c" carePathToEnemy="1" propertyTags="big_hp_bar,always_display_hp_bar,no_regen_hp" raceString="unknown" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/Dummy_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" />
 		<stat hp="50" asp="100" msp="100" atp="80" evp="82" cap="55" cad="500" car="50" ndd="9999999" map="18881" par="90" mar="90" />
 		<distance avoid="300" sightHeightUP="0" sightHeightDown="0" />
 		<collision shape="box" width="150" height="150" depth="150" />
 		<capsule radius="75" height="150" ignore="1" />
 		<dead time="5" defaultaction="Idle_A" upaction="Idle_A" />
 		<normal action="Idle_A" prob="10000" movearea="200" maidExpired="Idle_A" />
-		<lookattarget lookAtMyPCWhenTalking="0" useTalkMotion="1" />
+		<lookattarget lookAtMyPCWhenTalking="0" />
 		<exp customExp="0" />
 	</environment>
 	<effectdummy>
 		<dummy name="Eff_UI">
-			<attachInfo parentNode="Scene Root" applyLocalScale="false" applyWorldTransform="true" />
-			<transform translate="0.0, 0.0, 300.0" rotation="0.0, 0.0, 0.0" scale="1.0" />
+			<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
+			<transform translate="0,0,300" />
 		</dummy>
 	</effectdummy>
 </ms2>

@@ -3,7 +3,7 @@
 <ms2>
 	<environment feature="ChronicleDungeon60_01" locale="">
 		<model kfm="23000085_B_Mevidic" scale="2" />
-		<basic friendly="1" npcAttackGroup="2" npcDefenseGroup="1" nametag="1" nametagSize="18" minimap="0" defenceMaterial="1" hitImmune="99" abnormalImmune="99" level="60" class="6" rankIcon="a" carePathToEnemy="1" difficulty="60" propertyTags="no_die" raceString="mystic" gender="2" mainTags="None" portrait="./Data/Resource/Image/Portrait/Mob/23000085_B_Mevidic_P.png" damagedColorScale="10" damagedVibrateDuration="1" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_mevidic_spawn_01.xml" skipFrame="1" />
+		<basic friendly="1" npcAttackGroup="2" npcDefenseGroup="1" nametag="1" nametagSize="18" minimap="0" defenceMaterial="1" hitImmune="99" abnormalImmune="99" level="60" class="6" rankIcon="a" carePathToEnemy="1" propertyTags="no_die" raceString="mystic" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/23000085_B_Mevidic_P.png" damagedColorScale="10" damagedVibrateDuration="1" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_mevidic_spawn_01.xml" />
 		<stat hp="3625243" asp="100" msp="100" atp="120" evp="88" cap="67" cad="500" car="50" ndd="610" pap="541516" map="541683" par="90" mar="90" />
 		<speed rotation="720" />
 		<distance avoid="100" sightHeightUP="0" sightHeightDown="0" />
@@ -15,14 +15,14 @@
 		<push back="1" up="1" knockback="1" />
 		<shadow scale="130" bias="1" />
 		<normal action="Run_A" prob="10000" maidExpired="Idle_A" />
-		<lookattarget lookAtMyPCWhenTalking="0" useTalkMotion="1" />
+		<lookattarget lookAtMyPCWhenTalking="0" />
 		<aiInfo path="AI_Mevidic_Cinematic_Epic.xml" />
 		<exp customExp="0" />
 	</environment>
 	<effectdummy>
 		<dummy name="Eff_UI">
-			<attachInfo parentNode="Scene Root" applyLocalScale="false" applyWorldTransform="true" />
-			<transform translate="0.0, -300.0, 480.0" rotation="0.0, 0.0, 0.0" scale="1.0" />
+			<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
+			<transform translate="0,-300,480" />
 		</dummy>
 	</effectdummy>
 </ms2>

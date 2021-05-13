@@ -3,7 +3,7 @@
 <ms2>
 	<environment feature="GuildRaid01" locale="">
 		<model kfm="21000977_M_IceSoldierMageBlue" scale="1.4" />
-		<basic npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="enemy" nametag="1" nametagSize="18" defenceMaterial="3" hitImmune="1" abnormalImmune="1" level="55" class="3" rankIcon="b" difficulty="55" propertyTags="keep_battle" raceString="spirit" gender="2" mainTags="None" portrait="./Data/Resource/Image/Portrait/Mob/21000977_M_IceSoldierMageBlue_P.png" damagedVibrateDuration="0.8" damagedVibrateAmp="1" />
+		<basic npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="enemy" nametag="1" nametagSize="18" defenceMaterial="3" hitImmune="1" abnormalImmune="1" level="55" class="3" rankIcon="b" propertyTags="keep_battle" raceString="spirit" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/21000977_M_IceSoldierMageBlue_P.png" damagedVibrateDuration="0.8" damagedVibrateAmp="1" />
 		<stat hp="5742448" asp="100" msp="100" atp="81" evp="87" cap="65" cad="500" car="50" ndd="678" pap="280840" map="280863" par="90" mar="90" />
 		<speed rotation="150" />
 		<distance avoid="100" sight="5000" sightHeightUP="3000" sightHeightDown="3000" customLastSightRadius="9990" customLastSightHeightUp="9900" customLastSightHeightDown="9900" />
@@ -15,14 +15,14 @@
 		<shadow scale="150" bias="1" />
 		<normal action="Idle_A,Bore_A,Walk_A" prob="4500,1000,4500" movearea="150" maidExpired="Idle_A" />
 		<dropiteminfo dropHeight="150" dropDistanceBase="140" dropDistanceRandom="10" globalDropBoxId="74" />
-		<lookattarget lookAtMyPCWhenTalking="0" useTalkMotion="1" />
+		<lookattarget lookAtMyPCWhenTalking="0" />
 		<aiInfo path="AI_GuildRaid_Stage01_SnowQueenSummonTypeB.xml" />
 		<exp customExp="0" />
 	</environment>
 	<effectdummy>
 		<dummy name="Eff_UI">
-			<attachInfo parentNode="Scene Root" applyLocalScale="false" applyWorldTransform="true" />
-			<transform translate="0.0, 0.0, 310.0" rotation="0.0, 0.0, 0.0" scale="1.0" />
+			<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
+			<transform translate="0,0,310" />
 		</dummy>
 	</effectdummy>
 </ms2>

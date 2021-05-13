@@ -3,7 +3,7 @@
 <ms2>
 	<environment feature="Season3" locale="">
 		<model kfm="21000410_M_DarkStar" scale="1.2" />
-		<basic npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="elite_boss" nametag="1" nametagSize="18" hpBar="1" defenceMaterial="1" hitImmune="1" abnormalImmune="1" level="50" rankIcon="c" difficulty="50" raceString="spirit" gender="2" mainTags="None" portrait="./Data/Resource/Image/Portrait/Mob/21000410_M_DarkStar_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" />
+		<basic npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="elite_boss" nametag="1" nametagSize="18" hpBar="1" defenceMaterial="1" hitImmune="1" abnormalImmune="1" level="50" rankIcon="c" raceString="spirit" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/21000410_M_DarkStar_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" />
 		<stat hp="407249" asp="100" msp="100" atp="80" evp="82" cap="62" cad="500" car="50" ndd="567" pap="28574" map="28583" />
 		<speed rotation="720" walk="45" run="90" />
 		<distance avoid="60" sight="9000" sightHeightUP="300" sightHeightDown="100" customLastSightRadius="9900" customLastSightHeightUp="9900" customLastSightHeightDown="9900" />
@@ -16,37 +16,37 @@
 		<shadow scale="160" bias="1" />
 		<normal action="Idle_A" prob="10000" maidExpired="Idle_A" />
 		<dropiteminfo globalDropBoxId="74" />
-		<lookattarget lookAtMyPCWhenTalking="0" useTalkMotion="1" />
+		<lookattarget lookAtMyPCWhenTalking="0" />
 		<aiInfo path="BossDungeon/Papulatus_Chaos/AI_DarkStarSummon_Chaos_TypeA.xml" />
 	</environment>
 	<effectdummy>
 		<dummy name="Eff_Head">
-			<attachInfo parentNode="Tail_Bone01" applyWorldTransform="false" applyLocalScale="true" />
-			<transform translate="0.000000, 0.000000, 0.000000" rotation="0.000000, 0.000000, 0.000000" scale="0.800000" />
+			<attachInfo parentNode="Tail_Bone01" />
+			<transform scale="0.8" />
 		</dummy>
 		<dummy name="Eff_Body">
-			<attachInfo parentNode="Body_Point03" applyWorldTransform="false" applyLocalScale="true" />
-			<transform translate="0.000000, 0.000000, -20.000000" rotation="0.000000, 0.000000, 0.000000" scale="0.800000" />
+			<attachInfo parentNode="Body_Point03" />
+			<transform translate="0,0,-20" scale="0.8" />
 		</dummy>
 		<dummy name="Eff_Foot">
-			<attachInfo parentNode="Center_Point02" applyWorldTransform="false" applyLocalScale="true" />
-			<transform translate="0.000000, 0.000000, -40.000000" rotation="0.000000, 0.000000, 0.000000" scale="0.800000" />
+			<attachInfo parentNode="Center_Point02" />
+			<transform translate="0,0,-40" scale="0.8" />
 		</dummy>
 		<dummy name="Eff_UI">
 			<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
-			<transform translate="0.000000, 0.000000, 130.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.000000" />
+			<transform translate="0,0,130" />
 		</dummy>
 		<dummy name="Eff_Head_World">
 			<attachInfo parentNode="Tail_Bone01" applyWorldTransform="true" applyLocalScale="false" />
-			<transform translate="0.000000, 0.000000, 0.000000" rotation="0.000000, 0.000000, 0.000000" scale="0.800000" />
+			<transform scale="0.8" />
 		</dummy>
 		<dummy name="Eff_Body_World">
 			<attachInfo parentNode="Body_Point03" applyWorldTransform="true" applyLocalScale="false" />
-			<transform translate="0.000000, 0.000000, -20.000000" rotation="0.000000, 0.000000, 0.000000" scale="0.800000" />
+			<transform translate="0,0,-20" scale="0.8" />
 		</dummy>
 		<dummy name="Eff_Foot_World">
 			<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
-			<transform translate="0.000000, 0.000000, 10.000000" rotation="0.000000, 0.000000, 0.000000" scale="0.800000" />
+			<transform translate="0,0,10" scale="0.8" />
 		</dummy>
 	</effectdummy>
 </ms2>

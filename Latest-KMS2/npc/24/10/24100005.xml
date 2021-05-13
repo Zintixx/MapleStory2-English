@@ -3,7 +3,7 @@
 <ms2>
 	<environment feature="FameChallengeDungeon" locale="">
 		<model kfm="22000113_N_BalrogCrimson" scale="0.8" />
-		<basic npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="boss" nametag="1" nametagSize="18" hpBar="1" defenceMaterial="1" hitImmune="99" abnormalImmune="99" level="50" class="6" rankIcon="a" difficulty="50" raceString="devil" gender="2" mainTags="None" portrait="./Data/Resource/Image/Portrait/Mob/22000113_N_BalrogCrimson_P.png" damagedVibrateDuration="0.5" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" skipFrame="1" />
+		<basic npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="boss" nametag="1" nametagSize="18" hpBar="1" defenceMaterial="1" hitImmune="99" abnormalImmune="99" level="50" class="6" rankIcon="a" raceString="devil" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/22000113_N_BalrogCrimson_P.png" damagedVibrateDuration="0.5" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" />
 		<stat hp="29946622" asp="100" msp="100" atp="120" evp="87" cap="62" cad="500" car="50" ndd="567" pap="128024" map="128024" par="105" mar="105" />
 		<speed rotation="720" walk="175" run="350" />
 		<distance avoid="250" sight="2000" sightHeightUP="150" sightHeightDown="150" customLastSightRadius="3500" customLastSightHeightUp="300" customLastSightHeightDown="300" />
@@ -14,14 +14,14 @@
 		<shadow scale="380" bias="1" />
 		<normal action="Idle_A,Bore_A" prob="4500,1500" movearea="450" maidExpired="Idle_A" />
 		<dropiteminfo globalDropBoxId="74" />
-		<lookattarget lookAtMyPCWhenTalking="0" useTalkMotion="1" />
+		<lookattarget lookAtMyPCWhenTalking="0" />
 		<aiInfo path="AI_BalrogCrimson_FR_Lv1_Nerf.xml" />
 		<exp customExp="0" />
 	</environment>
 	<effectdummy>
 		<dummy name="Eff_UI">
-			<attachInfo parentNode="Scene Root" applyLocalScale="false" applyWorldTransform="true" />
-			<transform translate="0.0, 0.0, 400.0" rotation="0.0, 0.0, 0.0" scale="1.0" />
+			<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
+			<transform translate="0,0,400" />
 		</dummy>
 	</effectdummy>
 </ms2>

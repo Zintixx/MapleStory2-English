@@ -3,7 +3,7 @@
 <ms2>
 	<environment feature="KarkarIsland" locale="">
 		<model kfm="21000433_M_BeetleWingYellow" scale="1.3" />
-		<basic npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="enemy" nametag="1" nametagSize="18" hpBar="1" defenceMaterial="1" hitImmune="1" abnormalImmune="1" level="50" rankIcon="c" difficulty="50" propertyTags="keep_battle" raceString="bug" gender="2" mainTags="None" portrait="./Data/Resource/Image/Portrait/Mob/21000433_M_BeetleWingYellow_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" />
+		<basic npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="enemy" nametag="1" nametagSize="18" hpBar="1" defenceMaterial="1" hitImmune="1" abnormalImmune="1" level="50" rankIcon="c" propertyTags="keep_battle" raceString="bug" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/21000433_M_BeetleWingYellow_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" />
 		<stat hp="125833" asp="100" msp="100" atp="80" evp="88" cap="62" cad="500" car="50" ndd="567" pap="36123" map="36134" mar="90" />
 		<speed rotation="720" walk="155" run="310" />
 		<distance avoid="45" sight="3200" sightHeightUP="300" customLastSightRadius="9900" customLastSightHeightUp="9900" customLastSightHeightDown="50" />
@@ -15,38 +15,38 @@
 		<shadow scale="120" bias="1" />
 		<normal action="Idle_A,Bore_A,Walk_A" prob="6000,1000,3000" movearea="150" maidExpired="Idle_A" />
 		<dropiteminfo globalDropBoxId="74" />
-		<lookattarget lookAtMyPCWhenTalking="0" useTalkMotion="1" />
+		<lookattarget lookAtMyPCWhenTalking="0" />
 		<aiInfo path="BossDungeon/BeetleBigYellow/AI_Default.xml" />
 		<exp customExp="0" />
 	</environment>
 	<effectdummy>
 		<dummy name="Eff_Head">
-			<attachInfo parentNode="Scene Root" applyWorldTransform="false" applyLocalScale="true" />
-			<transform translate="0.000000, 0.000000, 0.000000" rotation="0.000000, 0.000000, 0.000000" scale="0.720000" />
+			<attachInfo parentNode="Scene Root" />
+			<transform scale="0.72" />
 		</dummy>
 		<dummy name="Eff_Body">
-			<attachInfo parentNode="Scene Root" applyWorldTransform="false" applyLocalScale="true" />
-			<transform translate="0.000000, 0.000000, 0.000000" rotation="0.000000, 0.000000, 0.000000" scale="0.750000" />
+			<attachInfo parentNode="Scene Root" />
+			<transform scale="0.75" />
 		</dummy>
 		<dummy name="Eff_Foot">
-			<attachInfo parentNode="Scene Root" applyWorldTransform="false" applyLocalScale="true" />
-			<transform translate="0.000000, 0.000000, 0.000000" rotation="0.000000, 0.000000, 0.000000" scale="0.600000" />
+			<attachInfo parentNode="Scene Root" />
+			<transform scale="0.6" />
 		</dummy>
 		<dummy name="Eff_UI">
 			<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
-			<transform translate="0.000000, 0.000000, 100.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.000000" />
+			<transform translate="0,0,100" />
 		</dummy>
 		<dummy name="Eff_Head_World">
 			<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
-			<transform translate="0.000000, 0.000000, 20.000000" rotation="0.000000, 0.000000, 0.000000" scale="0.720000" />
+			<transform translate="0,0,20" scale="0.72" />
 		</dummy>
 		<dummy name="Eff_Body_World">
 			<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
-			<transform translate="0.000000, 0.000000, 0.000000" rotation="0.000000, 0.000000, 0.000000" scale="0.750000" />
+			<transform scale="0.75" />
 		</dummy>
 		<dummy name="Eff_Foot_World">
 			<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
-			<transform translate="0.000000, 0.000000, 0.000000" rotation="0.000000, 0.000000, 0.000000" scale="0.600000" />
+			<transform scale="0.6" />
 		</dummy>
 	</effectdummy>
 </ms2>

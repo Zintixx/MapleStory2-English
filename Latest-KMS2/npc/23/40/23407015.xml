@@ -3,7 +3,7 @@
 <ms2>
 	<environment feature="Kritias_Zakum01" locale="">
 		<model kfm="23405071_B_ZakumBrown05" />
-		<basic npcAttackGroup="1" npcDefenseGroup="2" nametagSize="18" minimap="0" defenceMaterial="4" hitImmune="99" abnormalImmune="99" level="70" class="3" rankIcon="b" rotationDisabled="1" difficulty="70" propertyTags="keep_battle,fixed_big_monster,collision_position" raceString="unknown" gender="2" mainTags="None" portrait="./Data/Resource/Image/Portrait/Mob/23405071_B_ZakumBrown05_P.png" damagedVibrateDuration="0.5" damagedVibrateAmp="1" />
+		<basic npcAttackGroup="1" npcDefenseGroup="2" nametagSize="18" minimap="0" defenceMaterial="4" hitImmune="99" abnormalImmune="99" level="70" class="3" rankIcon="b" rotationDisabled="1" propertyTags="keep_battle,fixed_big_monster,collision_position" raceString="unknown" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/23405071_B_ZakumBrown05_P.png" damagedVibrateDuration="0.5" damagedVibrateAmp="1" />
 		<stat hp="2567443226" asp="100" msp="100" atp="120" evp="130" cap="72" cad="250" car="100" ndd="1071" pap="18344937" map="18347888" par="205" mar="205" />
 		<distance avoid="2000" sight="3000" sightHeightUP="2000" sightHeightDown="999" customLastSightRadius="4200" customLastSightHeightUp="4200" customLastSightHeightDown="999" />
 		<skill ids="50100100" levels="4" priorities="1" probs="100" />
@@ -14,7 +14,7 @@
 		<shadow scale="1" bias="1" />
 		<normal action="Idle_A" prob="10000" maidExpired="Idle_A" />
 		<dropiteminfo dropHeight="320" dropDistanceBase="400" dropDistanceRandom="20" globalDropBoxId="74" />
-		<lookattarget lookAtMyPCWhenTalking="0" useTalkMotion="1" />
+		<lookattarget lookAtMyPCWhenTalking="0" />
 		<aiInfo path="BossDungeon/ZakumBrown/Chaos/Normal/AI_ZakumBrown05.xml" />
 		<nodeCollisions>
 			<collision targetNode="Arm05_03" volume="300,300,400" offset="375,-75,-400" />
@@ -26,8 +26,8 @@
 	</environment>
 	<effectdummy>
 		<dummy name="Eff_UI">
-			<attachInfo parentNode="Scene Root" applyLocalScale="false" applyWorldTransform="true" />
-			<transform translate="850.0, 0.0, 500.0" rotation="0.0, 0.0, 0.0" scale="1.0" />
+			<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
+			<transform translate="850,0,500" />
 		</dummy>
 	</effectdummy>
 </ms2>
