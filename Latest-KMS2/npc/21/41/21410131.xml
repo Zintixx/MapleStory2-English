@@ -3,7 +3,7 @@
 <ms2>
 	<environment feature="DungeonOpen70AH4" locale="">
 		<model kfm="02020109_L_SandstoneDwarf2" scale="1.7" />
-		<basic npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="elite_boss" nametag="1" nametagSize="18" hpBar="1" defenceMaterial="4" hitImmune="99" abnormalImmune="99" level="70" rankIcon="c" carePathToEnemy="1" difficulty="70" propertyTags="keep_battle,battle_on_spawn" raceString="spirit" gender="2" mainTags="None" portrait="./Data/Resource/Image/Portrait/Mob/02020109_L_SandstoneDwarf2_P.png" damagedColorScale="4" damagedVibrateDuration="0.7" damagedVibrateAmp="1" regenEffect="NPC/Common/Eff_NPC_Regen_C_Normal.xml" skipFrame="1" />
+		<basic npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="elite_boss" nametag="1" nametagSize="18" hpBar="1" defenceMaterial="4" hitImmune="99" abnormalImmune="99" level="70" rankIcon="c" carePathToEnemy="1" propertyTags="keep_battle,battle_on_spawn" raceString="spirit" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/02020109_L_SandstoneDwarf2_P.png" damagedColorScale="4" damagedVibrateDuration="0.7" damagedVibrateAmp="1" regenEffect="NPC/Common/Eff_NPC_Regen_C_Normal.xml" />
 		<stat hp="48540769" asp="100" msp="100" atp="80" evp="102" cap="72" cad="500" car="70" ndd="1071" pap="16157521" map="16162408" />
 		<speed rotation="720" walk="100" run="200" />
 		<distance avoid="100" sight="600" sightHeightUP="300" sightHeightDown="0" />
@@ -14,38 +14,38 @@
 		<shadow scale="200" bias="1" />
 		<normal action="Idle_A,Bore_A,Walk_A" prob="4500,1000,4500" movearea="150" maidExpired="Idle_A" />
 		<dropiteminfo dropHeight="150" dropDistanceBase="140" dropDistanceRandom="10" globalDropBoxId="74" />
-		<lookattarget lookAtMyPCWhenTalking="0" useTalkMotion="1" />
+		<lookattarget lookAtMyPCWhenTalking="0" />
 		<aiInfo path="BossDungeon/DungeonOfTime/AI_SandstoneDwarf2CloseAttack.xml" />
 		<exp customExp="0" />
 	</environment>
 	<effectdummy>
 		<dummy name="Eff_Head">
-			<attachInfo parentNode="Bip01 Head" applyWorldTransform="false" applyLocalScale="true" />
-			<transform translate="20.000000, 5.000000, 0.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.100000" />
+			<attachInfo parentNode="Bip01 Head" />
+			<transform translate="20,5,0" scale="1.1" />
 		</dummy>
 		<dummy name="Eff_Body">
-			<attachInfo parentNode="Bip01 Spine" applyWorldTransform="false" applyLocalScale="true" />
-			<transform translate="0.000000, 0.000000, 0.000000" rotation="-0.000000, -0.000000, 0.000000" scale="1.100000" />
+			<attachInfo parentNode="Bip01 Spine" />
+			<transform scale="1.1" />
 		</dummy>
 		<dummy name="Eff_Foot">
-			<attachInfo parentNode="Bip01 Footsteps" applyWorldTransform="false" applyLocalScale="true" />
-			<transform translate="0.000000, 0.000000, 0.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.100000" />
+			<attachInfo parentNode="Bip01 Footsteps" />
+			<transform scale="1.1" />
 		</dummy>
 		<dummy name="Eff_UI">
 			<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
-			<transform translate="0.000000, 0.000000, 270.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.000000" />
+			<transform translate="0,0,270" />
 		</dummy>
 		<dummy name="Eff_Head_World">
 			<attachInfo parentNode="Bip01 Head" applyWorldTransform="true" applyLocalScale="false" />
-			<transform translate="0.000000, -20.000000, 30.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.100000" />
+			<transform translate="0,-20,30" scale="1.1" />
 		</dummy>
 		<dummy name="Eff_Body_World">
 			<attachInfo parentNode="Bip01 Spine" applyWorldTransform="true" applyLocalScale="false" />
-			<transform translate="0.000000, 0.000000, 0.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.100000" />
+			<transform scale="1.1" />
 		</dummy>
 		<dummy name="Eff_Foot_World">
 			<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
-			<transform translate="0.000000, 0.000000, 0.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.100000" />
+			<transform scale="1.1" />
 		</dummy>
 	</effectdummy>
 </ms2>

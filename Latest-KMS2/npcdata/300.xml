@@ -1,0 +1,477 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ms2>
+	<npc id="30000001">
+		<environment npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="elite_boss" nametag="1" defenceMaterial="1" hitImmune="1" abnormalImmune="1" level="47" class="7" rankIcon="b" carePathToEnemy="1" propertyTags="keep_battle" raceString="creature" gender="1" portrait="./Data/Resource/Image/Portrait/Mob/21000165_M_AliceBandage_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" bossSoundDistance="1300" bossSoundEndDistance="2400" customExp="0" lookAtMyPCWhenTalking="0">
+			<model kfm="21000165_M_AliceBandage" scale="1.3" shadowScale="220" rotationSpeed="720" walkSpeed="300" runSpeed="600" />
+			<stat hp="160235" asp="100" msp="100" atp="81" evp="82" cap="61" cad="500" car="50" ndd="505" pap="38801" map="38813" par="90" mar="90" />
+			<distance avoid="70" sight="800" sightHeightUP="300" sightHeightDown="0" customLastSightRadius="2500" customLastSightHeightUp="525" customLastSightHeightDown="225" />
+			<skill ids="50001005" levels="1" probs="100" />
+			<additionalEffect codes="60000001" levels="1" />
+			<collision shape="box" width="76.9231" height="138.462" depth="76.9231" />
+			<capsule radius="70" height="180" />
+			<dead time="0.5" defaultaction="Dead_A" upaction="Dead_B" revival="21800006" count="1" lifeTime="10" />
+			<push knockback="0.5" />
+			<normal action="Idle_A,Bore_A,Walk_A" prob="4500,1500,4000" movearea="150" />
+			<dropiteminfo dropHeight="150" dropDistanceBase="100" dropDistanceRandom="50" globalDropBoxId="74" />
+			<aiInfo path="AI_AliceBandage_Brave.xml" />
+			<effectdummy>
+				<dummy name="Eff_UI">
+					<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,0,220" />
+				</dummy>
+			</effectdummy>
+		</environment>
+	</npc>
+	<npc id="30000002">
+		<environment npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="elite_boss" nametag="1" defenceMaterial="1" hitImmune="1" abnormalImmune="1" level="47" class="7" rankIcon="b" carePathToEnemy="1" propertyTags="keep_battle" raceString="undead" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/22000011_N_ZombieTitanAxe_P.png" damagedVibrateDuration="0.5" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" bossSoundDistance="1300" bossSoundEndDistance="2400" customExp="0" lookAtMyPCWhenTalking="0">
+			<model kfm="22000011_N_ZombieTitanAxe" shadowScale="360" rotationSpeed="720" walkSpeed="225" runSpeed="450" />
+			<stat hp="160235" asp="100" msp="100" atp="81" evp="82" cap="61" cad="500" car="50" ndd="505" pap="38801" map="38813" par="90" mar="90" />
+			<distance avoid="140" sight="400" sightHeightUP="300" sightHeightDown="0" customLastSightRadius="2500" customLastSightHeightUp="525" customLastSightHeightDown="225" />
+			<skill ids="50100010" levels="1" probs="100" />
+			<additionalEffect codes="60000001" levels="1" />
+			<collision shape="box" width="200" height="220" depth="170" />
+			<capsule radius="110" height="350" />
+			<dead time="0.5" defaultaction="Dead_A" upaction="Dead_A" revival="21800006" count="1" lifeTime="10" />
+			<push knockback="0.5" />
+			<normal action="Idle_A,Bore_A,Walk_A" prob="3500,2000,4500" movearea="150" />
+			<dropiteminfo dropHeight="150" dropDistanceBase="200" dropDistanceRandom="10" fireVelocity="150" globalDropBoxId="74" />
+			<aiInfo path="AI_ZombieTitanAxe_Brave.xml" />
+			<effectdummy>
+				<dummy name="Eff_UI">
+					<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,0,280" />
+				</dummy>
+			</effectdummy>
+		</environment>
+		<environment locale="CN" npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="elite_boss" nametag="1" defenceMaterial="1" hitImmune="1" abnormalImmune="1" level="47" class="7" rankIcon="b" carePathToEnemy="1" propertyTags="keep_battle" raceString="undead" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/22000012_N_ZombieTitanMushroom_P.png" damagedVibrateDuration="0.5" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" bossSoundDistance="1300" bossSoundEndDistance="2400" customExp="0" lookAtMyPCWhenTalking="0">
+			<model kfm="22000012_N_ZombieTitanMushroom" shadowScale="360" rotationSpeed="720" walkSpeed="225" runSpeed="450" />
+			<stat hp="160235" asp="100" msp="100" atp="81" evp="82" cap="61" cad="500" car="50" ndd="505" pap="38801" map="38813" par="90" mar="90" />
+			<distance avoid="140" sight="400" sightHeightUP="300" sightHeightDown="0" customLastSightRadius="2500" customLastSightHeightUp="525" customLastSightHeightDown="225" />
+			<skill ids="50100010" levels="1" probs="100" />
+			<additionalEffect codes="60000001" levels="1" />
+			<collision shape="box" width="200" height="220" depth="170" />
+			<capsule radius="110" height="350" />
+			<dead time="0.5" defaultaction="Dead_A" upaction="Dead_A" revival="21800006" count="1" lifeTime="10" />
+			<push knockback="0.5" />
+			<normal action="Idle_A,Bore_A,Walk_A" prob="3500,2000,4500" movearea="150" />
+			<dropiteminfo dropHeight="150" dropDistanceBase="200" dropDistanceRandom="10" fireVelocity="150" globalDropBoxId="74" />
+			<aiInfo path="AI_ZombieTitanMushroom_CN.xml" />
+			<effectdummy>
+				<dummy name="Eff_UI">
+					<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,0,280" />
+				</dummy>
+			</effectdummy>
+		</environment>
+	</npc>
+	<npc id="30000003">
+		<environment npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="elite_boss" nametag="1" defenceMaterial="1" hitImmune="1" abnormalImmune="1" level="47" class="7" rankIcon="b" carePathToEnemy="1" propertyTags="keep_battle" raceString="combine" gender="0" portrait="./Data/Resource/Image/Portrait/Mob/02030001_M_Baraha_P.png" damagedColorScale="4" damagedVibrateDuration="0.7" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" bossSoundDistance="1300" bossSoundEndDistance="2400" customExp="0" lookAtMyPCWhenTalking="0">
+			<model kfm="02030001_M_Baraha" shadowScale="300" rotationSpeed="720" walkSpeed="100" runSpeed="400" />
+			<stat hp="160235" asp="100" msp="100" atp="81" evp="82" cap="61" cad="500" car="50" ndd="505" pap="38801" map="38813" par="90" mar="90" />
+			<distance avoid="140" sight="900" sightHeightUP="300" sightHeightDown="0" customLastSightRadius="2500" customLastSightHeightUp="525" customLastSightHeightDown="225" />
+			<skill ids="60011001" levels="1" probs="100" />
+			<additionalEffect codes="60000001" levels="1" />
+			<collision shape="box" width="250" height="200" depth="200" />
+			<capsule radius="130" height="200" />
+			<dead time="0.5" defaultaction="Dead_A" upaction="Dead_A" revival="21800006" count="1" lifeTime="10" />
+			<push knockback="0.5" />
+			<normal action="Idle_A,Bore_A,Walk_A" prob="3500,2000,4500" movearea="150" />
+			<dropiteminfo dropHeight="150" dropDistanceBase="200" dropDistanceRandom="10" fireVelocity="150" globalDropBoxId="74" />
+			<aiInfo path="AI_Baraha_Brave.xml" />
+			<effectdummy>
+				<dummy name="Eff_UI">
+					<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,0,260" />
+				</dummy>
+			</effectdummy>
+		</environment>
+	</npc>
+	<npc id="30000004">
+		<environment npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="elite_boss" nametag="1" defenceMaterial="1" hitImmune="1" abnormalImmune="1" level="47" class="7" rankIcon="b" carePathToEnemy="1" propertyTags="keep_battle" raceString="undead" gender="1" portrait="./Data/Resource/Image/Portrait/Mob/21000166_M_AliceZombie_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" bossSoundDistance="1300" bossSoundEndDistance="2400" customExp="0" lookAtMyPCWhenTalking="0">
+			<model kfm="21000166_M_AliceZombie" scale="1.3" shadowScale="220" rotationSpeed="720" walkSpeed="300" runSpeed="600" />
+			<stat hp="160235" asp="100" msp="100" atp="81" evp="82" cap="61" cad="500" car="50" ndd="505" pap="38801" map="38813" par="90" mar="90" />
+			<distance avoid="70" sight="800" sightHeightUP="300" sightHeightDown="0" customLastSightRadius="2500" customLastSightHeightUp="525" customLastSightHeightDown="225" />
+			<skill ids="50012001" levels="1" probs="100" />
+			<additionalEffect codes="60000001" levels="1" />
+			<collision shape="box" width="76.9231" height="138.462" depth="76.9231" />
+			<capsule radius="70" height="180" />
+			<dead time="0.5" defaultaction="Dead_A" upaction="Dead_B" revival="21800006" count="1" lifeTime="10" />
+			<push knockback="0.5" />
+			<normal action="Idle_A,Bore_A,Walk_A" prob="4500,1500,4000" movearea="150" />
+			<dropiteminfo dropHeight="150" dropDistanceBase="100" dropDistanceRandom="50" globalDropBoxId="74" />
+			<aiInfo path="AI_AliceZombie_Brave.xml" />
+			<effectdummy>
+				<dummy name="Eff_UI">
+					<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,0,230" />
+				</dummy>
+			</effectdummy>
+		</environment>
+	</npc>
+	<npc id="30000005">
+		<environment npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="elite_boss" nametag="1" defenceMaterial="1" hitImmune="1" abnormalImmune="1" level="47" class="7" rankIcon="b" propertyTags="keep_battle" raceString="mystic" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/22000038_N_DragonDevilBigHeadPurple_P.png" damagedColorScale="4" damagedVibrateDuration="0.5" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" bossSoundDistance="1300" bossSoundEndDistance="2400" customExp="0" lookAtMyPCWhenTalking="0">
+			<model kfm="22000038_N_DragonDevilBigHeadPurple" scale="1.4" shadowScale="380" rotationSpeed="720" walkSpeed="250" runSpeed="500" />
+			<stat hp="160235" asp="100" msp="100" atp="81" evp="82" cap="61" cad="500" car="50" ndd="505" pap="38801" map="38813" par="90" mar="90" />
+			<distance avoid="140" sight="400" sightHeightUP="300" sightHeightDown="0" customLastSightRadius="2500" customLastSightHeightUp="250" customLastSightHeightDown="80" />
+			<skill ids="50009999" levels="1" probs="100" />
+			<additionalEffect codes="60000001" levels="1" />
+			<collision shape="box" width="120" height="120" depth="180" />
+			<capsule radius="110" height="150" ignore="1" />
+			<dead time="0.5" defaultaction="Dead_A" upaction="Dead_A" revival="21800006" count="1" lifeTime="10" />
+			<push knockback="0.5" />
+			<normal action="Idle_A,Bore_A,Walk_A" prob="3500,2000,4500" movearea="150" />
+			<dropiteminfo dropHeight="150" dropDistanceBase="200" dropDistanceRandom="10" fireVelocity="150" globalDropBoxId="74" />
+			<aiInfo path="AI_DragonDevilBigHeadPurple_Brave.xml" />
+			<effectdummy>
+				<dummy name="Eff_UI">
+					<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,0,380" />
+				</dummy>
+			</effectdummy>
+		</environment>
+	</npc>
+	<npc id="30000006">
+		<environment npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="elite_boss" nametag="1" defenceMaterial="1" hitImmune="1" abnormalImmune="1" level="47" class="7" rankIcon="b" carePathToEnemy="1" propertyTags="keep_battle" raceString="animal" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/22000005_N_CurseEyeLavaBig_P.png" damagedVibrateDuration="0.5" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" bossSoundDistance="1300" bossSoundEndDistance="2400" customExp="0" lookAtMyPCWhenTalking="0">
+			<model kfm="22000005_N_CurseEyeLavaBig" scale="4" shadowScale="800" rotationSpeed="720" walkSpeed="200" runSpeed="400" />
+			<stat hp="160235" asp="100" msp="100" atp="81" evp="82" cap="61" cad="500" car="50" ndd="505" pap="38801" map="38813" par="90" mar="90" />
+			<distance avoid="200" sight="800" sightHeightUP="300" sightHeightDown="0" customLastSightRadius="2500" customLastSightHeightUp="525" customLastSightHeightDown="225" />
+			<skill ids="50000351,50000087" levels="1,2" probs="70,30" />
+			<additionalEffect codes="60000001" levels="1" />
+			<collision shape="box" width="54" height="40" depth="96" />
+			<capsule radius="130" height="200" />
+			<dead time="0.5" defaultaction="Dead_A" upaction="Dead_A" revival="21800006" count="1" lifeTime="10" />
+			<push knockback="0.5" />
+			<normal action="Idle_A,Bore_A,Walk_A" prob="4500,1000,4500" movearea="150" />
+			<dropiteminfo dropHeight="300" dropDistanceBase="100" dropDistanceRandom="50" globalDropBoxId="74" />
+			<aiInfo path="AI_CurseEyeLavaBig_Brave.xml" />
+		</environment>
+	</npc>
+	<npc id="30000007">
+		<environment npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="elite_boss" nametag="1" defenceMaterial="1" hitImmune="1" abnormalImmune="1" level="47" class="7" rankIcon="b" carePathToEnemy="1" propertyTags="keep_battle" raceString="undead" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/21000322_M_ZombieMushroom_P.png" damagedVibrateDuration="0.5" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" bossSoundDistance="1300" bossSoundEndDistance="2400" customExp="0" lookAtMyPCWhenTalking="0">
+			<model kfm="21000322_M_ZombieMushroom" scale="1.6" shadowScale="400" rotationSpeed="720" walkSpeed="100" runSpeed="200" />
+			<stat hp="160235" asp="100" msp="100" atp="81" evp="82" cap="61" cad="500" car="50" ndd="505" pap="38801" map="38813" par="90" mar="90" />
+			<distance avoid="140" sight="800" sightHeightUP="300" sightHeightDown="0" customLastSightRadius="2500" customLastSightHeightUp="525" customLastSightHeightDown="225" />
+			<skill ids="50000429" levels="1" probs="100" />
+			<additionalEffect codes="60000001" levels="1" />
+			<collision shape="box" width="156.25" height="106.25" depth="156.25" />
+			<capsule radius="130" height="150" />
+			<dead time="0.5" defaultaction="Dead_A" upaction="Dead_A" revival="21800006" count="1" lifeTime="10" />
+			<push knockback="0.5" />
+			<normal action="Idle_A,Bore_A,Walk_A" prob="3500,3500,3000" movearea="150" />
+			<dropiteminfo dropHeight="150" dropDistanceBase="200" dropDistanceRandom="10" fireVelocity="150" globalDropBoxId="74" />
+			<aiInfo path="AI_ZombieMushMom_Brave.xml" />
+			<effectdummy>
+				<dummy name="Eff_UI">
+					<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,0,230" />
+				</dummy>
+			</effectdummy>
+		</environment>
+	</npc>
+	<npc id="30000008">
+		<environment npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="elite_boss" nametag="1" defenceMaterial="2" hitImmune="1" abnormalImmune="1" level="47" class="7" rankIcon="b" carePathToEnemy="1" propertyTags="keep_battle" raceString="undead" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/02030013_N_Ghostump_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" bossSoundDistance="1300" bossSoundEndDistance="2000" customExp="0" lookAtMyPCWhenTalking="0">
+			<model kfm="02030013_N_Ghostump" scale="1.3" shadowScale="360" rotationSpeed="720" walkSpeed="300" runSpeed="600" />
+			<stat hp="160235" asp="100" msp="100" atp="81" evp="82" cap="61" cad="500" car="50" ndd="505" pap="38801" map="38813" par="90" mar="90" />
+			<distance avoid="140" sight="1200" sightHeightUP="300" sightHeightDown="0" customLastSightRadius="2500" customLastSightHeightUp="525" customLastSightHeightDown="225" />
+			<skill ids="50000188,50000189,50000190" levels="1,1,1" probs="35,55,10" />
+			<additionalEffect codes="60000001" levels="1" />
+			<collision shape="box" width="230.769" height="120" depth="169.231" />
+			<capsule radius="130" height="320" />
+			<dead time="0.5" defaultaction="Dead_A" upaction="Dead_B" revival="21800006" count="1" lifeTime="10" />
+			<push knockback="0.5" />
+			<normal action="Idle_A,Bore_A,Walk_A" prob="3500,3000,3500" />
+			<dropiteminfo dropHeight="150" dropDistanceBase="200" dropDistanceRandom="10" fireVelocity="150" globalDropBoxId="74" />
+			<aiInfo path="AI_Ghostump_Brave.xml" />
+			<effectdummy>
+				<dummy name="Eff_UI">
+					<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,0,230" />
+				</dummy>
+			</effectdummy>
+		</environment>
+	</npc>
+	<npc id="30000009">
+		<environment npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="elite_boss" nametag="1" defenceMaterial="6" hitImmune="1" abnormalImmune="1" level="47" class="7" rankIcon="b" carePathToEnemy="1" propertyTags="keep_battle" raceString="spirit" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/02020107_M_Lslime02_P.png" damagedVibrateDuration="0.5" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" bossSoundDistance="1300" bossSoundEndDistance="2400" customExp="0" lookAtMyPCWhenTalking="0">
+			<model kfm="02020107_M_Lslime02" scale="1.3" shadowScale="130" rotationSpeed="720" walkSpeed="200" runSpeed="400" />
+			<stat hp="160235" asp="100" msp="100" atp="81" evp="82" cap="61" cad="500" car="50" ndd="505" pap="38801" map="38813" par="90" mar="90" />
+			<distance avoid="100" sight="800" sightHeightUP="300" sightHeightDown="0" customLastSightRadius="2500" customLastSightHeightUp="525" customLastSightHeightDown="225" />
+			<skill ids="50000264" levels="1" probs="100" />
+			<additionalEffect codes="60000001" levels="1" />
+			<collision shape="box" width="200" height="160" depth="200" />
+			<capsule radius="80" height="170" />
+			<dead time="0.5" defaultaction="Dead_A,Dead_B" upaction="Dead_B" revival="21800006" count="1" lifeTime="10" />
+			<push back="0.5" up="0.5" knockback="0.5" />
+			<normal action="Idle_A,Bore_A,Walk_A" prob="4500,1500,4000" movearea="150" />
+			<dropiteminfo dropHeight="150" dropDistanceBase="200" dropDistanceRandom="50" globalDropBoxId="74" />
+			<aiInfo path="AI_KingSlimeNew_Brave.xml" />
+			<effectdummy>
+				<dummy name="Eff_UI">
+					<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,0,230" />
+				</dummy>
+			</effectdummy>
+		</environment>
+	</npc>
+	<npc id="30000010">
+		<environment npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="elite_boss" nametag="1" defenceMaterial="1" hitImmune="1" abnormalImmune="1" level="47" class="7" rankIcon="b" carePathToEnemy="1" propertyTags="keep_battle" raceString="mystic" gender="0" portrait="./Data/Resource/Image/Portrait/Mob/22000059_N_ManoRed_P.png" damagedVibrateDuration="0.5" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" bossSoundDistance="1300" bossSoundEndDistance="2400" customExp="0" lookAtMyPCWhenTalking="0">
+			<model kfm="22000059_N_ManoRed" scale="2" shadowScale="400" rotationSpeed="720" walkSpeed="50" runSpeed="200" />
+			<stat hp="160235" asp="100" msp="100" atp="81" evp="82" cap="61" cad="500" car="50" ndd="505" pap="38801" map="38813" par="90" mar="90" />
+			<distance avoid="140" sight="900" sightHeightUP="300" sightHeightDown="0" customLastSightRadius="2500" customLastSightHeightUp="525" customLastSightHeightDown="225" />
+			<skill ids="60026041" levels="1" probs="100" />
+			<additionalEffect codes="60000001" levels="1" />
+			<collision shape="box" width="150" height="100" depth="190" />
+			<capsule radius="150" height="150" />
+			<dead time="0.5" defaultaction="Dead_B" upaction="Dead_B" revival="21800006" count="1" lifeTime="10" />
+			<push knockback="0.5" />
+			<normal action="Idle_A,Bore_A,Walk_A" prob="3500,2000,4500" movearea="150" />
+			<dropiteminfo dropHeight="150" dropDistanceBase="200" dropDistanceRandom="10" fireVelocity="150" globalDropBoxId="74" />
+			<aiInfo path="AI_ManoRed_Brave.xml" />
+			<effectdummy>
+				<dummy name="Eff_UI">
+					<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,0,280" />
+				</dummy>
+			</effectdummy>
+		</environment>
+	</npc>
+	<npc id="30000011">
+		<environment npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="elite_boss" nametag="1" defenceMaterial="1" hitImmune="1" abnormalImmune="1" level="47" class="7" rankIcon="b" carePathToEnemy="1" propertyTags="keep_battle" raceString="spirit" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/02030007_PuppetBunny01_P.png" damagedVibrateDuration="0.5" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" bossSoundDistance="1300" bossSoundEndDistance="2400" customExp="0" lookAtMyPCWhenTalking="0">
+			<model kfm="02030007_PuppetBunny01" scale="1.15" shadowScale="300" rotationSpeed="720" walkSpeed="200" runSpeed="400" />
+			<stat hp="160235" asp="100" msp="100" atp="81" evp="82" cap="61" cad="500" car="50" ndd="505" pap="38801" map="38813" par="90" mar="90" />
+			<distance avoid="140" sight="800" sightHeightUP="300" sightHeightDown="0" customLastSightRadius="2500" customLastSightHeightUp="250" customLastSightHeightDown="80" />
+			<skill ids="60016001" levels="1" probs="100" />
+			<additionalEffect codes="60000001" levels="1" />
+			<collision shape="box" width="113.043" height="120" depth="113.043" />
+			<capsule radius="90" height="180" />
+			<dead time="0.5" defaultaction="Dead_A" upaction="Dead_A" revival="21800006" count="1" lifeTime="10" />
+			<push knockback="0.5" />
+			<normal action="Idle_A,Bore_A,Walk_A" prob="3500,2000,4500" movearea="150" />
+			<dropiteminfo dropHeight="200" dropDistanceBase="160" dropDistanceRandom="10" fireVelocity="150" globalDropBoxId="74" />
+			<aiInfo path="AI_PuppetBunny_Brave.xml" />
+			<effectdummy>
+				<dummy name="Eff_UI">
+					<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,0,230" />
+				</dummy>
+			</effectdummy>
+		</environment>
+	</npc>
+	<npc id="30000012">
+		<environment npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="elite_boss" nametag="1" defenceMaterial="1" hitImmune="1" abnormalImmune="1" level="47" class="7" rankIcon="b" carePathToEnemy="1" propertyTags="keep_battle" raceString="animal" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/22000024_N_BearPandaBigBamboo_P.png" damagedVibrateDuration="0.5" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" bossSoundDistance="1300" bossSoundEndDistance="2400" customExp="0" lookAtMyPCWhenTalking="0">
+			<model kfm="22000024_N_BearPandaBigBamboo" shadowScale="360" rotationSpeed="720" walkSpeed="250" runSpeed="500" />
+			<stat hp="160235" asp="100" msp="100" atp="81" evp="82" cap="61" cad="500" car="50" ndd="505" pap="38801" map="38813" par="90" mar="90" />
+			<distance avoid="140" sight="400" sightHeightUP="300" sightHeightDown="0" customLastSightRadius="2500" customLastSightHeightUp="250" customLastSightHeightDown="80" />
+			<skill ids="50100391" levels="1" probs="100" />
+			<additionalEffect codes="60000001" levels="1" />
+			<collision shape="box" width="200" height="220" depth="170" />
+			<capsule radius="110" height="350" />
+			<dead time="0.5" defaultaction="Dead_A" upaction="Dead_A" revival="21800006" count="1" lifeTime="10" />
+			<push knockback="0.5" />
+			<normal action="Idle_A,Bore_A,Walk_A" prob="3500,2000,4500" movearea="150" />
+			<dropiteminfo dropHeight="150" dropDistanceBase="200" dropDistanceRandom="10" fireVelocity="150" globalDropBoxId="74" />
+			<aiInfo path="AI_BearPandaBigBamboo_Brave.xml" />
+			<effectdummy>
+				<dummy name="Eff_UI">
+					<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,0,230" />
+				</dummy>
+			</effectdummy>
+		</environment>
+		<environment locale="CN" npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="elite_boss" nametag="1" defenceMaterial="1" hitImmune="1" abnormalImmune="1" level="47" class="7" rankIcon="b" carePathToEnemy="1" propertyTags="keep_battle" raceString="animal" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/22000024_N_BearPandaBigBamboo_CN_P.png" damagedVibrateDuration="0.5" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" bossSoundDistance="1300" bossSoundEndDistance="2400" customExp="0" lookAtMyPCWhenTalking="0">
+			<model kfm="22000024_N_BearPandaBigBamboo_CN" shadowScale="360" rotationSpeed="720" walkSpeed="250" runSpeed="500" />
+			<stat hp="160235" asp="100" msp="100" atp="81" evp="82" cap="61" cad="500" car="50" ndd="505" pap="38801" map="38813" par="90" mar="90" />
+			<distance avoid="140" sight="400" sightHeightUP="300" sightHeightDown="0" customLastSightRadius="2500" customLastSightHeightUp="250" customLastSightHeightDown="80" />
+			<skill ids="50100391" levels="1" probs="100" />
+			<additionalEffect codes="60000001" levels="1" />
+			<collision shape="box" width="200" height="220" depth="170" />
+			<capsule radius="110" height="350" />
+			<dead time="0.5" defaultaction="Dead_A" upaction="Dead_A" revival="21800006" count="1" lifeTime="10" />
+			<push knockback="0.5" />
+			<normal action="Idle_A,Bore_A,Walk_A" prob="3500,2000,4500" movearea="150" />
+			<dropiteminfo dropHeight="150" dropDistanceBase="200" dropDistanceRandom="10" fireVelocity="150" globalDropBoxId="74" />
+			<aiInfo path="AI_BearPandaBigBamboo_Brave.xml" />
+			<effectdummy>
+				<dummy name="Eff_UI">
+					<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,0,230" />
+				</dummy>
+			</effectdummy>
+		</environment>
+	</npc>
+	<npc id="30000013">
+		<environment npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="elite_boss" nametag="1" defenceMaterial="1" hitImmune="1" abnormalImmune="1" level="47" class="7" rankIcon="b" carePathToEnemy="1" propertyTags="keep_battle" raceString="spirit" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/22090007_N_PuppetBunnyGreen_P.png" damagedVibrateDuration="0.5" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" bossSoundDistance="1300" bossSoundEndDistance="2400" customExp="0" lookAtMyPCWhenTalking="0">
+			<model kfm="22090007_N_PuppetBunnyGreen" scale="1.15" shadowScale="300" rotationSpeed="720" walkSpeed="300" runSpeed="600" />
+			<stat hp="160235" asp="100" msp="100" atp="81" evp="82" cap="61" cad="500" car="50" ndd="505" pap="38801" map="38813" par="90" mar="90" />
+			<distance avoid="140" sight="800" sightHeightUP="300" sightHeightDown="0" customLastSightRadius="2500" customLastSightHeightUp="525" customLastSightHeightDown="225" />
+			<skill ids="60021021" levels="1" probs="100" />
+			<additionalEffect codes="60000001" levels="1" />
+			<collision shape="box" width="113.043" height="173.913" depth="113.043" />
+			<capsule radius="90" height="180" />
+			<dead time="0.5" defaultaction="Dead_A" upaction="Dead_A" revival="21800006" count="1" lifeTime="10" />
+			<push knockback="0.5" />
+			<normal action="Idle_A,Bore_A,Walk_A" prob="3500,2000,4500" movearea="150" />
+			<dropiteminfo dropHeight="200" dropDistanceBase="160" dropDistanceRandom="10" fireVelocity="150" globalDropBoxId="74" />
+			<aiInfo path="AI_PuppetBunnySummoner_Brave.xml" />
+			<effectdummy>
+				<dummy name="Eff_UI">
+					<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,0,230" />
+				</dummy>
+			</effectdummy>
+		</environment>
+	</npc>
+	<npc id="30000014">
+		<environment npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="elite_boss" nametag="1" defenceMaterial="1" hitImmune="1" abnormalImmune="1" level="47" class="7" rankIcon="b" carePathToEnemy="1" propertyTags="keep_battle" raceString="mystic" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/22000053_N_BullAxeBrown_P.png" damagedVibrateDuration="0.5" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" bossSoundDistance="1300" bossSoundEndDistance="2400" customExp="0" lookAtMyPCWhenTalking="0">
+			<model kfm="22000053_N_BullAxeBrown" shadowScale="380" rotationSpeed="720" walkSpeed="250" runSpeed="500" />
+			<stat hp="160235" asp="100" msp="100" atp="81" evp="82" cap="61" cad="500" car="50" ndd="505" pap="38801" map="38813" par="90" mar="90" />
+			<distance avoid="140" sight="400" sightHeightUP="300" sightHeightDown="0" customLastSightRadius="2500" customLastSightHeightUp="525" customLastSightHeightDown="225" />
+			<skill ids="50009999" levels="1" probs="100" />
+			<additionalEffect codes="60000001" levels="1" />
+			<collision shape="box" width="250" height="170" depth="250" />
+			<capsule radius="130" height="150" />
+			<dead time="0.5" defaultaction="Dead_A" upaction="Dead_A" revival="21800006" count="1" lifeTime="10" />
+			<push knockback="0.5" />
+			<normal action="Idle_A,Bore_A,Walk_A" prob="3500,2000,4500" movearea="150" />
+			<dropiteminfo dropHeight="150" dropDistanceBase="200" dropDistanceRandom="10" fireVelocity="150" globalDropBoxId="74" />
+			<aiInfo path="AI_BullAxeBrown_Brave.xml" />
+			<effectdummy>
+				<dummy name="Eff_UI">
+					<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,0,280" />
+				</dummy>
+			</effectdummy>
+		</environment>
+	</npc>
+	<npc id="30000015">
+		<environment npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="elite_boss" nametag="1" defenceMaterial="1" hitImmune="1" abnormalImmune="1" level="47" class="7" rankIcon="b" carePathToEnemy="1" propertyTags="keep_battle" raceString="machine" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/22000042_N_RobotHyperRaceWhite_P.png" damagedVibrateDuration="0.5" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" bossSoundDistance="1300" bossSoundEndDistance="2400" customExp="0" lookAtMyPCWhenTalking="0">
+			<model kfm="22000042_N_RobotHyperRaceWhite" shadowScale="380" rotationSpeed="720" walkSpeed="250" runSpeed="500" />
+			<stat hp="160235" asp="100" msp="100" atp="81" evp="82" cap="61" cad="500" car="50" ndd="505" pap="38801" map="38813" par="90" mar="90" />
+			<distance avoid="140" sight="400" sightHeightUP="300" sightHeightDown="0" customLastSightRadius="2500" customLastSightHeightUp="525" customLastSightHeightDown="225" />
+			<skill ids="50009999" levels="1" probs="100" />
+			<additionalEffect codes="60000001" levels="1" />
+			<collision shape="box" width="150" height="200" depth="150" />
+			<capsule radius="110" height="150" />
+			<dead time="0.5" defaultaction="Dead_A" upaction="Dead_A" revival="21800006" count="1" lifeTime="10" />
+			<push knockback="0.5" />
+			<normal action="Idle_A,Bore_A,Walk_A" prob="3500,2000,4500" movearea="150" />
+			<dropiteminfo dropHeight="150" dropDistanceBase="200" dropDistanceRandom="10" fireVelocity="150" globalDropBoxId="74" />
+			<aiInfo path="AI_RobotHyperRaceWhite_Brave.xml" />
+			<effectdummy>
+				<dummy name="Eff_UI">
+					<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,0,230" />
+				</dummy>
+			</effectdummy>
+		</environment>
+	</npc>
+	<npc id="30000016">
+		<environment npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="elite_boss" nametag="1" defenceMaterial="1" hitImmune="1" abnormalImmune="1" level="47" class="7" rankIcon="b" carePathToEnemy="1" propertyTags="keep_battle" raceString="animal" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/22000034_N_LarvaYellowHelmet_P.png" damagedVibrateDuration="0.5" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" bossSoundDistance="1300" bossSoundEndDistance="2400" customExp="0" lookAtMyPCWhenTalking="0">
+			<model kfm="22000034_N_LarvaYellowHelmet" shadowScale="380" rotationSpeed="720" walkSpeed="150" runSpeed="300" />
+			<stat hp="160235" asp="100" msp="100" atp="81" evp="82" cap="61" cad="500" car="50" ndd="505" pap="38801" map="38813" par="90" mar="90" />
+			<distance avoid="140" sight="400" sightHeightUP="300" sightHeightDown="0" customLastSightRadius="2500" customLastSightHeightUp="525" customLastSightHeightDown="225" />
+			<skill ids="60035001" levels="1" probs="100" />
+			<additionalEffect codes="60000001" levels="1" />
+			<collision shape="box" width="180" height="180" depth="300" />
+			<capsule radius="110" height="150" />
+			<dead time="0.5" defaultaction="Dead_A" upaction="Dead_A" revival="21800006" count="1" lifeTime="10" />
+			<push knockback="0.5" />
+			<normal action="Idle_A,Bore_A,Walk_A" prob="3500,2000,4500" movearea="150" />
+			<dropiteminfo dropHeight="150" dropDistanceBase="200" dropDistanceRandom="10" fireVelocity="150" globalDropBoxId="74" />
+			<aiInfo path="AI_LarvaYellowHelmet_Brave.xml" />
+			<effectdummy>
+				<dummy name="Eff_UI">
+					<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,0,230" />
+				</dummy>
+			</effectdummy>
+		</environment>
+	</npc>
+	<npc id="30000017">
+		<environment npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="elite_boss" nametag="1" defenceMaterial="1" hitImmune="1" abnormalImmune="1" level="47" class="7" rankIcon="b" carePathToEnemy="1" propertyTags="keep_battle" raceString="animal" bossNotify="1" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/22000023_N_BearBigTelepole_P.png" damagedVibrateDuration="0.5" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" bossSoundDistance="1300" bossSoundEndDistance="2400" customExp="0" lookAtMyPCWhenTalking="0">
+			<model kfm="22000023_N_BearBigTelepole" shadowScale="360" rotationSpeed="720" walkSpeed="250" runSpeed="500" />
+			<stat hp="160235" asp="100" msp="100" atp="81" evp="82" cap="61" cad="500" car="50" ndd="505" pap="38801" map="38813" par="90" mar="90" />
+			<distance avoid="140" sight="400" sightHeightUP="300" sightHeightDown="0" customLastSightRadius="2500" customLastSightHeightUp="525" customLastSightHeightDown="225" />
+			<skill ids="50000356" levels="1" probs="100" />
+			<additionalEffect codes="60000001" levels="1" />
+			<collision shape="box" width="200" height="220" depth="170" />
+			<capsule radius="110" height="350" />
+			<dead time="0.5" defaultaction="Dead_A" upaction="Dead_A" revival="21800006" count="1" lifeTime="10" />
+			<push knockback="0.5" />
+			<normal action="Idle_A,Bore_A,Walk_A" prob="3500,2000,4500" movearea="150" />
+			<dropiteminfo dropHeight="150" dropDistanceBase="200" dropDistanceRandom="10" fireVelocity="150" globalDropBoxId="74" />
+			<aiInfo path="AI_BearBigTelepole_Brave.xml" />
+			<effectdummy>
+				<dummy name="Eff_UI">
+					<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,0,230" />
+				</dummy>
+			</effectdummy>
+		</environment>
+	</npc>
+	<npc id="30000018">
+		<environment npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="elite_boss" nametag="1" defenceMaterial="1" hitImmune="1" abnormalImmune="1" level="47" class="7" rankIcon="b" carePathToEnemy="1" propertyTags="keep_battle" raceString="animal" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/22000052_N_CerberosTallGreen_P.png" damagedVibrateDuration="0.5" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" bossSoundDistance="1300" bossSoundEndDistance="2400" customExp="0" lookAtMyPCWhenTalking="0">
+			<model kfm="22000052_N_CerberosTallGreen" scale="2" shadowScale="380" rotationSpeed="720" walkSpeed="250" runSpeed="500" />
+			<stat hp="160235" asp="100" msp="100" atp="81" evp="82" cap="61" cad="500" car="50" ndd="505" pap="38801" map="38813" par="90" mar="90" />
+			<distance avoid="140" sight="400" sightHeightUP="300" sightHeightDown="0" customLastSightRadius="2500" customLastSightHeightUp="525" customLastSightHeightDown="225" />
+			<skill ids="50009999" levels="1" probs="100" />
+			<additionalEffect codes="60000001" levels="1" />
+			<collision shape="box" width="200" height="100" depth="170" />
+			<capsule radius="130" height="150" />
+			<dead time="0.5" defaultaction="Dead_A" upaction="Dead_A" revival="21800006" count="1" lifeTime="10" />
+			<push knockback="0.5" />
+			<normal action="Idle_A,Bore_A,Walk_A" prob="3500,2000,4500" movearea="150" />
+			<dropiteminfo dropHeight="150" dropDistanceBase="200" dropDistanceRandom="10" fireVelocity="150" globalDropBoxId="74" />
+			<aiInfo path="AI_CerberosTallGreen_Brave.xml" />
+			<effectdummy>
+				<dummy name="Eff_UI">
+					<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,0,300" />
+				</dummy>
+			</effectdummy>
+		</environment>
+	</npc>
+	<npc id="30000019">
+		<environment npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="elite_boss" nametag="1" defenceMaterial="1" hitImmune="1" abnormalImmune="1" level="47" class="7" rankIcon="b" carePathToEnemy="1" propertyTags="keep_battle" raceString="devil" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/22000045_N_KnightHollowArmorWhite_P.png" damagedVibrateDuration="0.5" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" bossSoundDistance="1300" bossSoundEndDistance="2400" customExp="0" lookAtMyPCWhenTalking="0">
+			<model kfm="22000045_N_KnightHollowArmorWhite" shadowScale="380" rotationSpeed="720" walkSpeed="250" runSpeed="500" />
+			<stat hp="160235" asp="100" msp="100" atp="81" evp="82" cap="61" cad="500" car="50" ndd="505" pap="38801" map="38813" par="90" mar="90" />
+			<distance avoid="140" sight="400" sightHeightUP="300" sightHeightDown="0" customLastSightRadius="2500" customLastSightHeightUp="525" customLastSightHeightDown="225" />
+			<skill ids="50009999" levels="1" probs="100" />
+			<additionalEffect codes="60000001" levels="1" />
+			<collision shape="box" width="150" height="200" depth="150" />
+			<capsule radius="110" height="150" />
+			<dead time="0.5" defaultaction="Dead_A" upaction="Dead_A" revival="21800006" count="1" lifeTime="10" />
+			<push knockback="0.5" />
+			<normal action="Idle_A,Bore_A,Walk_A" prob="3500,2000,4500" movearea="150" />
+			<dropiteminfo dropHeight="150" dropDistanceBase="200" dropDistanceRandom="10" fireVelocity="150" globalDropBoxId="74" />
+			<aiInfo path="AI_KnightHollowArmorWhite_Brave.xml" />
+			<effectdummy>
+				<dummy name="Eff_UI">
+					<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,0,280" />
+				</dummy>
+			</effectdummy>
+		</environment>
+	</npc>
+	<npc id="30000020">
+		<environment npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="elite_boss" nametag="1" defenceMaterial="3" hitImmune="1" abnormalImmune="1" level="47" class="7" rankIcon="b" carePathToEnemy="1" propertyTags="keep_battle" raceString="machine" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/21000123_M_RobotScrapMetalBig03_P.png" damagedColorScale="8" damagedVibrateDuration="0.9" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" bossSoundDistance="1300" bossSoundEndDistance="2400" customExp="0" lookAtMyPCWhenTalking="0">
+			<model kfm="21000123_M_RobotScrapMetalBig03" shadowScale="400" rotationSpeed="720" walkSpeed="225" runSpeed="450" />
+			<stat hp="160235" asp="100" msp="100" atp="81" evp="82" cap="61" cad="500" car="50" ndd="505" pap="38801" map="38813" par="90" mar="90" />
+			<distance avoid="60" sight="400" sightHeightUP="300" sightHeightDown="0" customLastSightRadius="2500" customLastSightHeightUp="525" customLastSightHeightDown="225" />
+			<skill ids="60024001" levels="1" probs="100" />
+			<additionalEffect codes="60000001" levels="1" />
+			<collision shape="box" width="270" height="250" depth="250" />
+			<capsule radius="180" height="230" />
+			<dead time="0.5" defaultaction="Dead_A" upaction="Dead_A" revival="21800006" count="1" lifeTime="10" />
+			<push back="1" up="1" knockback="0.5" />
+			<normal action="Idle_A,Bore_A,Walk_A" prob="4500,1500,4000" movearea="150" />
+			<dropiteminfo dropHeight="50" dropDistanceBase="100" dropDistanceRandom="50" globalDropBoxId="74" />
+			<aiInfo path="AI_BlackBigRobot_Brave.xml" />
+			<effectdummy>
+				<dummy name="Eff_UI">
+					<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,0,380" />
+				</dummy>
+			</effectdummy>
+		</environment>
+	</npc>
+</ms2>

@@ -3,7 +3,7 @@
 <ms2>
 	<environment feature="FameChallengeDungeon" locale="">
 		<model kfm="23000102_B_Schatten" scale="1.25" />
-		<basic npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="boss" nametag="1" nametagSize="18" defenceMaterial="1" hitImmune="99" abnormalImmune="99" level="50" class="6" rankIcon="a" difficulty="50" propertyTags="battle_on_spawn,keep_battle" raceString="combine" gender="1" mainTags="None" portrait="./Data/Resource/Image/Portrait/Mob/23000102_B_Schatten_P.png" damagedColorScale="6" damagedVibrateDuration="0.5" damagedVibrateAmp="1" />
+		<basic npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="boss" nametag="1" nametagSize="18" defenceMaterial="1" hitImmune="99" abnormalImmune="99" level="50" class="6" rankIcon="a" propertyTags="battle_on_spawn,keep_battle" raceString="combine" gender="1" portrait="./Data/Resource/Image/Portrait/Mob/23000102_B_Schatten_P.png" damagedColorScale="6" damagedVibrateDuration="0.5" damagedVibrateAmp="1" />
 		<stat hp="31630167" asp="100" msp="100" atp="120" evp="107" cap="62" cad="250" car="90" ndd="1377" pap="1287811" map="1287811" par="90" mar="90" />
 		<speed rotation="400" walk="220" run="470" />
 		<distance avoid="120" sight="90000" sightHeightUP="9000" sightHeightDown="9000" customLastSightRadius="9999" customLastSightHeightUp="9999" customLastSightHeightDown="9999" />
@@ -16,38 +16,34 @@
 		<shadow scale="180" bias="1" />
 		<normal action="Attack_Idle_A" prob="10000" maidExpired="Idle_A" />
 		<dropiteminfo globalDropBoxId="74" />
-		<lookattarget lookAtMyPCWhenTalking="0" useTalkMotion="1" />
+		<lookattarget lookAtMyPCWhenTalking="0" />
 		<aiInfo path="BossDungeon/Schatten/AI_Schatten_FR_Lv2.xml" />
 		<exp customExp="0" />
 	</environment>
 	<effectdummy>
 		<dummy name="Eff_Head">
-			<attachInfo parentNode="Bip01 Head" applyWorldTransform="false" applyLocalScale="true" />
-			<transform translate="30.000000, 10.000000, 0.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.000000" />
+			<attachInfo parentNode="Bip01 Head" />
+			<transform translate="30,10,0" />
 		</dummy>
 		<dummy name="Eff_Body">
-			<attachInfo parentNode="Bip01 Spine" applyWorldTransform="false" applyLocalScale="true" />
-			<transform translate="0.000000, 0.000000, 0.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.000000" />
+			<attachInfo parentNode="Bip01 Spine" />
 		</dummy>
 		<dummy name="Eff_Foot">
-			<attachInfo parentNode="Bip01" applyWorldTransform="false" applyLocalScale="true" />
-			<transform translate="0.000000, 0.000000, 0.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.000000" />
+			<attachInfo parentNode="Bip01" />
 		</dummy>
 		<dummy name="Eff_UI">
 			<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
-			<transform translate="0.000000, -10.000000, 200.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.000000" />
+			<transform translate="0,-10,200" />
 		</dummy>
 		<dummy name="Eff_Head_World">
 			<attachInfo parentNode="Bip01 Head" applyWorldTransform="true" applyLocalScale="false" />
-			<transform translate="0.000000, -12.000000, 37.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.000000" />
+			<transform translate="0,-12,37" />
 		</dummy>
 		<dummy name="Eff_Body_World">
 			<attachInfo parentNode="Bip01 Spine" applyWorldTransform="true" applyLocalScale="false" />
-			<transform translate="0.000000, 0.000000, 0.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.000000" />
 		</dummy>
 		<dummy name="Eff_Foot_World">
 			<attachInfo parentNode="Bip01" applyWorldTransform="true" applyLocalScale="false" />
-			<transform translate="0.000000, 0.000000, 0.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.000000" />
 		</dummy>
 	</effectdummy>
 </ms2>

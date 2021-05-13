@@ -3,7 +3,7 @@
 <ms2>
 	<environment feature="DarkCastle" locale="">
 		<model kfm="21000961_M_DemonMaulBlue" />
-		<basic npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="enemy" nametag="1" nametagSize="18" hpBar="1" defenceMaterial="1" hitImmune="1" abnormalImmune="1" level="55" rankIcon="c" carePathToEnemy="1" difficulty="55" raceString="devil" gender="2" mainTags="None" portrait="./Data/Resource/Image/Portrait/Npc/21000961_M_DemonMaulBlue_P.png" damagedColorScale="6" damagedVibrateDuration="0.9" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" skipFrame="1" />
+		<basic npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="enemy" nametag="1" nametagSize="18" hpBar="1" defenceMaterial="1" hitImmune="1" abnormalImmune="1" level="55" rankIcon="c" carePathToEnemy="1" raceString="devil" gender="2" portrait="./Data/Resource/Image/Portrait/Npc/21000961_M_DemonMaulBlue_P.png" damagedColorScale="6" damagedVibrateDuration="0.9" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" />
 		<stat hp="24730" asp="100" msp="100" atp="80" evp="82" cap="65" cad="500" car="50" ndd="678" pap="9578" map="9581" par="90" mar="90" />
 		<speed rotation="720" walk="200" run="400" />
 		<distance avoid="100" sight="5000" sightHeightUP="300" sightHeightDown="150" customLastSightRadius="9000" customLastSightHeightUp="300" customLastSightHeightDown="150" />
@@ -15,38 +15,38 @@
 		<shadow scale="85" bias="1" />
 		<normal action="Idle_A,Bore_A,Walk_A" prob="4500,1000,4500" movearea="75" maidExpired="Idle_A" />
 		<dropiteminfo globalDropBoxId="74" />
-		<lookattarget lookAtMyPCWhenTalking="0" useTalkMotion="1" />
+		<lookattarget lookAtMyPCWhenTalking="0" />
 		<aiInfo path="AI_DefaultNew.xml" />
 		<exp customExp="0" />
 	</environment>
 	<effectdummy>
 		<dummy name="Eff_Head">
-			<attachInfo parentNode="GunBlue_Head_Bone05" applyWorldTransform="false" applyLocalScale="true" />
-			<transform translate="13.000000, -5.000000, 0.000000" rotation="0.000000, 0.000000, 0.000000" scale="0.800000" />
+			<attachInfo parentNode="GunBlue_Head_Bone05" />
+			<transform translate="13,-5,0" scale="0.8" />
 		</dummy>
 		<dummy name="Eff_Body">
-			<attachInfo parentNode="GunBlue_Body_Point02" applyWorldTransform="false" applyLocalScale="true" />
-			<transform translate="0.000000, -5.000000, 5.000000" rotation="0.000000, 0.000000, 0.000000" scale="0.800000" />
+			<attachInfo parentNode="GunBlue_Body_Point02" />
+			<transform translate="0,-5,5" scale="0.8" />
 		</dummy>
 		<dummy name="Eff_Foot">
-			<attachInfo parentNode="Main_Point01 NonAccum" applyWorldTransform="false" applyLocalScale="true" />
-			<transform translate="0.000000, 0.000000, 0.000000" rotation="0.000000, 0.000000, 0.000000" scale="0.800000" />
+			<attachInfo parentNode="Main_Point01 NonAccum" />
+			<transform scale="0.8" />
 		</dummy>
 		<dummy name="Eff_UI">
 			<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
-			<transform translate="0.000000, -25.000000, 270.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.000000" />
+			<transform translate="0,-25,270" />
 		</dummy>
 		<dummy name="Eff_Head_World">
 			<attachInfo parentNode="GunBlue_Head_Bone05" applyWorldTransform="true" applyLocalScale="false" />
-			<transform translate="0.000000, -11.000000, 15.000000" rotation="0.000000, 0.000000, 0.000000" scale="0.800000" />
+			<transform translate="0,-11,15" scale="0.8" />
 		</dummy>
 		<dummy name="Eff_Body_World">
 			<attachInfo parentNode="GunBlue_Body_Point02" applyWorldTransform="true" applyLocalScale="false" />
-			<transform translate="0.000000, -7.000000, -7.000000" rotation="0.000000, 0.000000, 0.000000" scale="0.800000" />
+			<transform translate="0,-7,-7" scale="0.8" />
 		</dummy>
 		<dummy name="Eff_Foot_World">
 			<attachInfo parentNode="Main_Point01 NonAccum" applyWorldTransform="true" applyLocalScale="false" />
-			<transform translate="0.000000, 0.000000, 0.000000" rotation="0.000000, 0.000000, 0.000000" scale="0.800000" />
+			<transform scale="0.8" />
 		</dummy>
 	</effectdummy>
 </ms2>

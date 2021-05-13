@@ -3,7 +3,7 @@
 <ms2>
 	<environment feature="Kandura" locale="">
 		<model kfm="21000933_M_DarkSpiritScythe" scale="1.15" />
-		<basic npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="elite_boss" nametag="1" nametagSize="18" hpBar="1" defenceMaterial="1" hitImmune="1" abnormalImmune="1" level="50" rankIcon="c" difficulty="50" propertyTags="keep_battle,fixed_big_monster" raceString="unknown" gender="2" mainTags="None" portrait="./Data/Resource/Image/Portrait/Mob/21000933_M_DarkSpiritScythe_P.png" damagedVibrateDuration="0.5" damagedVibrateAmp="1" regenEffect="NPC/Common/Eff_NPC_Regen_D_Normal.xml" />
+		<basic npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="elite_boss" nametag="1" nametagSize="18" hpBar="1" defenceMaterial="1" hitImmune="1" abnormalImmune="1" level="50" rankIcon="c" propertyTags="keep_battle,fixed_big_monster" raceString="unknown" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/21000933_M_DarkSpiritScythe_P.png" damagedVibrateDuration="0.5" damagedVibrateAmp="1" regenEffect="NPC/Common/Eff_NPC_Regen_D_Normal.xml" />
 		<stat hp="490373" asp="100" msp="100" atp="80" evp="82" cap="62" cad="500" car="50" ndd="690" pap="479161" map="479178" par="120" mar="90" />
 		<speed rotation="720" walk="225" run="450" />
 		<distance avoid="60" sight="5000" sightHeightUP="800" sightHeightDown="100" customLastSightRadius="99999" customLastSightHeightUp="800" customLastSightHeightDown="100" />
@@ -15,13 +15,13 @@
 		<shadow bias="1" />
 		<normal action="Idle_A" prob="10000" maidExpired="Idle_A" />
 		<dropiteminfo globalDropBoxId="74" />
-		<lookattarget lookAtMyPCWhenTalking="0" useTalkMotion="1" />
+		<lookattarget lookAtMyPCWhenTalking="0" />
 		<aiInfo path="BossDungeon/KanduraBigBurster/DarkSpiritSummon/DarkSpiritScythe/AI_DarkSpiritScythe_36Room.xml" />
 	</environment>
 	<effectdummy>
 		<dummy name="Eff_UI">
-			<attachInfo parentNode="Scene Root" applyLocalScale="false" applyWorldTransform="true" />
-			<transform translate="0.0, 0.0, 230.0" rotation="0.0, 0.0, 0.0" scale="1.0" />
+			<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
+			<transform translate="0,0,230" />
 		</dummy>
 	</effectdummy>
 </ms2>

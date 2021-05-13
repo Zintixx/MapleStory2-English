@@ -3,7 +3,7 @@
 <ms2>
 	<environment feature="Season2" locale="">
 		<model kfm="02020192_M_RabbitFatBandagePurple" scale="0.7" />
-		<basic npcAttackGroup="1" npcDefenseGroup="2" nametag="1" nametagSize="18" minimap="0" hpBar="1" defenceMaterial="1" hitImmune="1" abnormalImmune="1" level="32" rankIcon="c" carePathToEnemy="1" maxSpawnCount="1" groupSpawnCount="1" rareDegree="100" difficulty="32" raceString="undead" gender="2" mainTags="토끼붕대" subTags="도시,연구소" portrait="./Data/Resource/Image/Portrait/Mob/02020192_M_RabbitFatBandagePurple_P.png" damagedColorScale="8" damagedVibrateDuration="0.9" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" skipFrame="1" />
+		<basic npcAttackGroup="1" npcDefenseGroup="2" nametag="1" nametagSize="18" minimap="0" hpBar="1" defenceMaterial="1" hitImmune="1" abnormalImmune="1" level="32" rankIcon="c" carePathToEnemy="1" raceString="undead" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/02020192_M_RabbitFatBandagePurple_P.png" damagedColorScale="8" damagedVibrateDuration="0.9" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" />
 		<stat hp="10027" asp="100" msp="100" atp="80" evp="82" cap="53" cad="500" car="50" ndd="275" pap="4520" map="4521" par="90" mar="90" />
 		<speed rotation="720" walk="95" run="190" />
 		<distance avoid="70" sight="400" sightHeightUP="300" sightHeightDown="0" />
@@ -15,38 +15,38 @@
 		<shadow scale="126" bias="1" />
 		<normal action="Idle_A,Walk_A" prob="6000,4000" movearea="150" maidExpired="Idle_A" />
 		<dropiteminfo dropHeight="50" dropDistanceBase="100" dropDistanceRandom="50" globalDropBoxId="1,10009" />
-		<lookattarget lookAtMyPCWhenTalking="0" useTalkMotion="1" />
+		<lookattarget lookAtMyPCWhenTalking="0" />
 		<aiInfo path="AI_DefaultNew_SplashDot.xml" />
 		<exp customExp="2114" />
 	</environment>
 	<effectdummy>
 		<dummy name="Eff_Head">
-			<attachInfo parentNode="Bip01 Head" applyWorldTransform="false" applyLocalScale="true" />
-			<transform translate="30.000000, -10.000000, 0.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.100000" />
+			<attachInfo parentNode="Bip01 Head" />
+			<transform translate="30,-10,0" scale="1.1" />
 		</dummy>
 		<dummy name="Eff_Body">
-			<attachInfo parentNode="Bip01 Spine" applyWorldTransform="false" applyLocalScale="true" />
-			<transform translate="0.000000, 0.000000, 0.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.100000" />
+			<attachInfo parentNode="Bip01 Spine" />
+			<transform scale="1.1" />
 		</dummy>
 		<dummy name="Eff_Foot">
-			<attachInfo parentNode="Scene Root" applyWorldTransform="false" applyLocalScale="true" />
-			<transform translate="0.000000, 0.000000, 0.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.100000" />
+			<attachInfo parentNode="Scene Root" />
+			<transform scale="1.1" />
 		</dummy>
 		<dummy name="Eff_UI">
 			<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
-			<transform translate="0.000000, 0.000000, 200.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.000000" />
+			<transform translate="0,0,200" />
 		</dummy>
 		<dummy name="Eff_Head_World">
 			<attachInfo parentNode="Bip01 Head" applyWorldTransform="true" applyLocalScale="false" />
-			<transform translate="0.000000, 10.000000, 20.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.100000" />
+			<transform translate="0,10,20" scale="1.1" />
 		</dummy>
 		<dummy name="Eff_Body_World">
 			<attachInfo parentNode="Bip01 Spine" applyWorldTransform="true" applyLocalScale="false" />
-			<transform translate="0.000000, 0.000000, 0.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.100000" />
+			<transform scale="1.1" />
 		</dummy>
 		<dummy name="Eff_Foot_World">
 			<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
-			<transform translate="0.000000, 0.000000, 0.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.100000" />
+			<transform scale="1.1" />
 		</dummy>
 	</effectdummy>
 </ms2>

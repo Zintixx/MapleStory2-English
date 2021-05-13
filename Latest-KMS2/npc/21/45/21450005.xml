@@ -3,7 +3,7 @@
 <ms2>
 	<environment feature="BlackOnyx" locale="">
 		<model kfm="21001010_M_MaidForce_CombatKnife" />
-		<basic npcAttackGroup="1" npcDefenseGroup="2" nametag="1" nametagSize="18" hpBar="1" defenceMaterial="1" hitImmune="1" abnormalImmune="1" level="60" rankIcon="c" carePathToEnemy="1" difficulty="60" propertyTags="keep_battle,battle_on_spawn" raceString="combine" gender="1" emotionID="90001295" mainTags="None" portrait="./Data/Resource/Image/Portrait/Mob/21001010_M_MaidForce_CombatKnife_P.png" damagedColorScale="6" damagedVibrateDuration="1" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" skipFrame="1" />
+		<basic npcAttackGroup="1" npcDefenseGroup="2" nametag="1" nametagSize="18" hpBar="1" defenceMaterial="1" hitImmune="1" abnormalImmune="1" level="60" rankIcon="c" carePathToEnemy="1" propertyTags="keep_battle,battle_on_spawn" raceString="combine" gender="1" emotionID="90001295" portrait="./Data/Resource/Image/Portrait/Mob/21001010_M_MaidForce_CombatKnife_P.png" damagedColorScale="6" damagedVibrateDuration="1" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" />
 		<stat hp="70635" asp="100" msp="100" atp="80" evp="92" cap="67" cad="500" car="60" ndd="799" pap="124837" map="124840" par="90" mar="90" scaleStatRate_1="8" scaleBaseTap_1="1693946" scaleBaseDef_1="2289" scaleBaseSpaRate_1="0.15" />
 		<speed rotation="720" walk="100" run="400" />
 		<distance avoid="100" sight="3000" sightHeightUP="300" sightHeightDown="130" customLastSightRadius="3500" customLastSightHeightUp="350" customLastSightHeightDown="220" />
@@ -15,37 +15,37 @@
 		<shadow scale="180" bias="1" />
 		<normal action="Idle_A,Bore_A,Walk_A" prob="4500,1500,4000" movearea="150" maidExpired="Idle_A" />
 		<dropiteminfo dropHeight="50" dropDistanceBase="100" dropDistanceRandom="50" globalDropBoxId="74" />
-		<lookattarget lookAtMyPCWhenTalking="0" useTalkMotion="1" />
+		<lookattarget lookAtMyPCWhenTalking="0" />
 		<aiInfo path="AI_DefaultNew.xml" />
 	</environment>
 	<effectdummy>
 		<dummy name="Eff_Head">
-			<attachInfo parentNode="Bip01 Head" applyWorldTransform="false" applyLocalScale="true" />
-			<transform translate="20.000000, 15.000000, 0.000000" rotation="0.000000, 0.000000, 0.000000" scale="0.800000" />
+			<attachInfo parentNode="Bip01 Head" />
+			<transform translate="20,15,0" scale="0.8" />
 		</dummy>
 		<dummy name="Eff_Body">
-			<attachInfo parentNode="Bip01 Pelvis" applyWorldTransform="false" applyLocalScale="true" />
-			<transform translate="5.000000, 8.000000, 0.000000" rotation="0.000000, 0.000000, 0.000000" scale="0.800000" />
+			<attachInfo parentNode="Bip01 Pelvis" />
+			<transform translate="5,8,0" scale="0.8" />
 		</dummy>
 		<dummy name="Eff_Foot">
-			<attachInfo parentNode="Bip01" applyWorldTransform="false" applyLocalScale="true" />
-			<transform translate="0.000000, 0.000000, 0.000000" rotation="0.000000, 0.000000, 0.000000" scale="0.800000" />
+			<attachInfo parentNode="Bip01" />
+			<transform scale="0.8" />
 		</dummy>
 		<dummy name="Eff_UI">
 			<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
-			<transform translate="0.000000, -10.000000, 170.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.000000" />
+			<transform translate="0,-10,170" />
 		</dummy>
 		<dummy name="Eff_Head_World">
 			<attachInfo parentNode="Bip01 Head" applyWorldTransform="true" applyLocalScale="false" />
-			<transform translate="0.000000, -17.000000, 18.000000" rotation="0.000000, 0.000000, 0.000000" scale="0.800000" />
+			<transform translate="0,-17,18" scale="0.8" />
 		</dummy>
 		<dummy name="Eff_Body_World">
 			<attachInfo parentNode="Bip01 Pelvis" applyWorldTransform="true" applyLocalScale="false" />
-			<transform translate="0.000000, -8.000000, 5.000000" rotation="0.000000, 0.000000, 0.000000" scale="0.800000" />
+			<transform translate="0,-8,5" scale="0.8" />
 		</dummy>
 		<dummy name="Eff_Foot_World">
 			<attachInfo parentNode="Bip01" applyWorldTransform="true" applyLocalScale="false" />
-			<transform translate="0.000000, 0.000000, 0.000000" rotation="0.000000, 0.000000, 0.000000" scale="0.800000" />
+			<transform scale="0.8" />
 		</dummy>
 	</effectdummy>
 </ms2>

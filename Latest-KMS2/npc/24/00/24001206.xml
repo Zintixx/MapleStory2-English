@@ -3,24 +3,24 @@
 <ms2>
 	<environment feature="Season2" locale="">
 		<model kfm="Dummy" />
-		<basic friendly="1" npcAttackGroup="2" npcDefenseGroup="1" nametagSize="18" minimap="0" hpBar="1" defenceMaterial="1" hitImmune="99" abnormalImmune="99" level="37" rankIcon="c" carePathToEnemy="1" difficulty="37" propertyTags="big_hp_bar, always_display_hp_bar" raceString="unknown" gender="2" mainTags="None" portrait="./Data/Resource/Image/Portrait/Mob/Dummy_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" />
+		<basic friendly="1" npcAttackGroup="2" npcDefenseGroup="1" nametagSize="18" minimap="0" hpBar="1" defenceMaterial="1" hitImmune="99" abnormalImmune="99" level="37" rankIcon="c" carePathToEnemy="1" propertyTags="big_hp_bar,always_display_hp_bar" raceString="unknown" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/Dummy_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" />
 		<stat hp="14066" asp="100" msp="100" atp="80" evp="82" cap="56" cad="500" car="50" ndd="325" map="10320" par="90" mar="90" />
 		<distance avoid="300" sight="1000" sightHeightUP="0" sightHeightDown="0" />
 		<collision shape="box" width="550" height="250" depth="450" />
 		<capsule radius="100" height="300" />
 		<dead time="5" defaultaction="Idle_A" upaction="Idle_A" />
 		<normal action="Idle_A" prob="10000" movearea="200" maidExpired="Idle_A" />
-		<lookattarget lookAtMyPCWhenTalking="0" useTalkMotion="1" />
+		<lookattarget lookAtMyPCWhenTalking="0" />
 		<exp customExp="0" />
 	</environment>
 	<effectdummy>
 		<dummy name="Eff_Head">
-			<attachInfo parentNode="Scene Root" applyWorldTransform="false" applyLocalScale="true" />
-			<transform translate="200.000000, 150.000000, 0.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.000000" />
+			<attachInfo parentNode="Scene Root" />
+			<transform translate="200,150,0" />
 		</dummy>
 		<dummy name="Eff_UI">
 			<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
-			<transform translate="100.000000, 150.000000, 180.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.000000" />
+			<transform translate="100,150,180" />
 		</dummy>
 	</effectdummy>
 </ms2>

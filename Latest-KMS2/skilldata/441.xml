@@ -6,76 +6,161 @@
 			<kinds element="7" />
 		</basic>
 		<level value="1">
-			<motion sequenceName="Attack_01_A" motionEffect="NPC/Skill/BullArmorBlue/Eff_BullArmorBlue_Attack_01_A.xml" faceTarget="0" doesPlayIdleOnSkillEnd="false">
-				<attack point="p0" attacktype="1" attackMethodType="1" unrideOnHit="1">
-					<range rangeType="box" distance="900" height="500" width="500" applyTarget="1" castTarget="1" />
-					<arrow nonTarget="1" effect="NPC/Skill/Temp/Eff_Temp.xml" />
-					<damage count="0" rate="0.7" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="2" />
+			<motion sequenceName="Attack_B_1" motionEffect="NPC/Skill/BlueLuke/Eff_BlueLuke_Attack_B.xml">
+				<attack point="p0" targetCount="1" attacktype="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+					<range rangeType="cylinder" distance="400" rangeOffset="0,100,0" height="300" includeCaster="2" applyTarget="2" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage count="0" attackMaterial="100" />
 				</attack>
 			</motion>
 		</level>
 		<level value="2">
-			<motion sequenceName="Attack_02_A" motionEffect="NPC/Skill/BullArmorBlue/Eff_BullArmorBlue_Attack_02_A.xml" movedistance="300" faceTarget="0" doesPlayIdleOnSkillEnd="false">
-				<attack point="p0" targetCount="50" attacktype="1" brokenOffence="85" brokenForce="3" unrideOnHit="1">
-					<range rangeType="box" distance="300" rangeAdd="0,0,70" rangeOffset="500,0,30" rangeZRotateDegree="-90" height="500" width="900" applyTarget="1" castTarget="1" />
+			<motion sequenceName="Attack_B_2" motionEffect="NPC/Skill/BlueLuke/Eff_BlueLuke_Attack_B_01.xml" movedistance="450">
+				<attack point="p0" targetCount="1" cubeMagicPathID="44119997" attacktype="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+					<range rangeType="cylinder" distance="3000" height="50" includeCaster="2" applyTarget="2" castTarget="1" />
 					<arrow nonTarget="1" />
-					<damage rate="0.7" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="100" pushduration="0.2" pushEaseType="1" attackMaterial="2" />
+					<damage count="0" rate="1" attackMaterial="100" />
+					<actionSkill skillID="44111080" level="1" interval="500" fireCount="10" />
 				</attack>
-				<attack point="p1" targetCount="50" attacktype="1" brokenOffence="85" brokenForce="3" unrideOnHit="1">
-					<range rangeType="box" distance="300" rangeAdd="0,0,70" rangeOffset="0,500,30" height="500" width="1000" applyTarget="1" castTarget="1" />
+				<attack point="p1" targetCount="1" cubeMagicPathID="44119997" attacktype="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+					<range rangeType="cylinder" distance="3000" height="50" includeCaster="2" applyTarget="2" castTarget="1" />
 					<arrow nonTarget="1" />
-					<damage rate="0.7" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="100" pushduration="0.2" pushEaseType="1" attackMaterial="2" />
+					<damage count="0" rate="1" attackMaterial="100" />
+					<actionSkill skillID="44111080" level="1" interval="500" fireCount="10" />
 				</attack>
-				<attack point="p2" targetCount="50" attacktype="1" brokenOffence="85" brokenForce="3" unrideOnHit="1">
-					<range rangeType="box" distance="300" rangeAdd="0,0,70" rangeOffset="-500,0,30" rangeZRotateDegree="90" height="500" width="900" applyTarget="1" castTarget="1" />
+				<attack point="p2" targetCount="1" cubeMagicPathID="44119997" attacktype="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+					<range rangeType="cylinder" distance="3000" height="50" includeCaster="2" applyTarget="2" castTarget="1" />
 					<arrow nonTarget="1" />
-					<damage rate="0.7" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="100" pushduration="0.2" pushEaseType="1" attackMaterial="2" />
+					<damage count="0" rate="1" attackMaterial="100" />
+					<actionSkill skillID="44111080" level="1" interval="500" fireCount="10" />
+				</attack>
+				<attack point="p3" targetCount="1" cubeMagicPathID="44119997" attacktype="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+					<range rangeType="cylinder" distance="3000" height="50" includeCaster="2" applyTarget="2" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage count="0" rate="1" attackMaterial="100" />
+					<actionSkill skillID="44111080" level="1" interval="500" fireCount="10" />
+				</attack>
+				<attack point="p3" targetCount="1" attacktype="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+					<range rangeType="cylinder" distance="300" rangeOffset="0,100,0" height="100" includeCaster="2" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.25" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="300" pushduration="0.2" pushEaseType="1" attackMaterial="1" />
 				</attack>
 			</motion>
 		</level>
 		<level value="3">
-			<motion sequenceName="Attack_03_A" motionEffect="NPC/Skill/BullArmorBlue/Eff_BullArmorBlue_Attack_03_A.xml" faceTarget="0" doesPlayIdleOnSkillEnd="false">
-				<attack point="p0" attacktype="1" attackMethodType="1" unrideOnHit="1">
-					<range rangeType="box" distance="900" height="500" width="500" applyTarget="1" castTarget="1" />
-					<arrow nonTarget="1" effect="NPC/Skill/Temp/Eff_Temp.xml" />
-					<damage count="0" rate="0.7" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="2" />
+			<motion sequenceName="Attack_B_3" motionEffect="NPC/Skill/BlueLuke/Eff_BlueLuke_Attack_B_02.xml" movedistance="450">
+				<attack point="p0" targetCount="1" cubeMagicPathID="44119997" attacktype="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+					<range rangeType="cylinder" distance="3000" height="50" includeCaster="2" applyTarget="2" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage count="0" rate="1" attackMaterial="100" />
+					<actionSkill skillID="44111080" level="1" interval="500" fireCount="10" />
+				</attack>
+				<attack point="p1" targetCount="1" cubeMagicPathID="44119997" attacktype="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+					<range rangeType="cylinder" distance="3000" height="50" includeCaster="2" applyTarget="2" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage count="0" rate="1" attackMaterial="100" />
+					<actionSkill skillID="44111080" level="1" interval="500" fireCount="10" />
+				</attack>
+				<attack point="p2" targetCount="1" cubeMagicPathID="44119997" attacktype="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+					<range rangeType="cylinder" distance="3000" height="50" includeCaster="2" applyTarget="2" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage count="0" rate="1" attackMaterial="100" />
+					<actionSkill skillID="44111080" level="1" interval="500" fireCount="10" />
+				</attack>
+				<attack point="p3" targetCount="1" cubeMagicPathID="44119997" attacktype="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+					<range rangeType="cylinder" distance="3000" height="50" includeCaster="2" applyTarget="2" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage count="0" rate="1" attackMaterial="100" />
+					<actionSkill skillID="44111080" level="1" interval="500" fireCount="10" />
+				</attack>
+				<attack point="p4" targetCount="1" cubeMagicPathID="44119997" attacktype="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+					<range rangeType="cylinder" distance="3000" height="50" includeCaster="2" applyTarget="2" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage count="0" rate="1" attackMaterial="100" />
+					<actionSkill skillID="44111080" level="1" interval="500" fireCount="10" />
+				</attack>
+				<attack point="p4" targetCount="1" attacktype="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+					<range rangeType="cylinder" distance="300" rangeOffset="0,100,0" height="100" includeCaster="2" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.25" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="300" pushduration="0.2" pushEaseType="1" attackMaterial="1" />
 				</attack>
 			</motion>
 		</level>
 		<level value="4">
-			<motion sequenceName="Attack_04_A" motionEffect="NPC/Skill/BullArmorBlue/Eff_BullArmorBlue_Attack_04_A.xml" movedistance="300" faceTarget="0" doesPlayIdleOnSkillEnd="false">
-				<attack point="p0" targetCount="50" attacktype="1" brokenOffence="85" brokenForce="3" unrideOnHit="1">
-					<range rangeType="box" distance="300" rangeAdd="0,0,70" rangeOffset="-500,0,30" rangeZRotateDegree="90" height="500" width="900" applyTarget="1" castTarget="1" />
+			<motion sequenceName="Attack_B_4" motionEffect="NPC/Skill/BlueLuke/Eff_BlueLuke_Attack_B_03.xml" movedistance="450">
+				<attack point="p0" targetCount="1" cubeMagicPathID="44119997" attacktype="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+					<range rangeType="cylinder" distance="3000" height="50" includeCaster="2" applyTarget="2" castTarget="1" />
 					<arrow nonTarget="1" />
-					<damage rate="0.7" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="100" pushduration="0.2" pushEaseType="1" attackMaterial="2" />
+					<damage count="0" rate="1" attackMaterial="100" />
+					<actionSkill skillID="44111080" level="1" interval="500" fireCount="10" />
 				</attack>
-				<attack point="p1" targetCount="50" attacktype="1" brokenOffence="85" brokenForce="3" unrideOnHit="1">
-					<range rangeType="box" distance="300" rangeAdd="0,0,70" rangeOffset="0,500,30" height="500" width="1000" applyTarget="1" castTarget="1" />
+				<attack point="p1" targetCount="1" cubeMagicPathID="44119997" attacktype="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+					<range rangeType="cylinder" distance="3000" height="50" includeCaster="2" applyTarget="2" castTarget="1" />
 					<arrow nonTarget="1" />
-					<damage rate="0.7" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="100" pushduration="0.2" pushEaseType="1" attackMaterial="2" />
+					<damage count="0" rate="1" attackMaterial="100" />
+					<actionSkill skillID="44111080" level="1" interval="500" fireCount="10" />
 				</attack>
-				<attack point="p2" targetCount="50" attacktype="1" brokenOffence="85" brokenForce="3" unrideOnHit="1">
-					<range rangeType="box" distance="300" rangeAdd="0,0,70" rangeOffset="500,0,30" rangeZRotateDegree="-90" height="500" width="900" applyTarget="1" castTarget="1" />
+				<attack point="p2" targetCount="1" cubeMagicPathID="44119997" attacktype="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+					<range rangeType="cylinder" distance="3000" height="50" includeCaster="2" applyTarget="2" castTarget="1" />
 					<arrow nonTarget="1" />
-					<damage rate="0.7" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="100" pushduration="0.2" pushEaseType="1" attackMaterial="2" />
+					<damage count="0" rate="1" attackMaterial="100" />
+					<actionSkill skillID="44111080" level="1" interval="500" fireCount="10" />
+				</attack>
+				<attack point="p3" targetCount="1" cubeMagicPathID="44119997" attacktype="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+					<range rangeType="cylinder" distance="3000" height="50" includeCaster="2" applyTarget="2" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage count="0" rate="1" attackMaterial="100" />
+					<actionSkill skillID="44111080" level="1" interval="500" fireCount="10" />
+				</attack>
+				<attack point="p4" targetCount="1" cubeMagicPathID="44119997" attacktype="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+					<range rangeType="cylinder" distance="3000" height="50" includeCaster="2" applyTarget="2" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage count="0" rate="1" attackMaterial="100" />
+					<actionSkill skillID="44111080" level="1" interval="500" fireCount="10" />
+				</attack>
+				<attack point="p4" targetCount="1" attacktype="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+					<range rangeType="cylinder" distance="300" rangeOffset="0,100,0" height="100" includeCaster="2" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.25" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="300" pushduration="0.2" pushEaseType="1" attackMaterial="1" />
 				</attack>
 			</motion>
 		</level>
 		<level value="5">
-			<motion sequenceName="Attack_05_A" sequenceSpeed="0.7" faceTarget="0" doesPlayIdleOnSkillEnd="false">
-				<attack point="p0" attacktype="1" attackMethodType="1" unrideOnHit="1">
-					<range rangeType="box" distance="900" height="500" width="500" applyTarget="1" castTarget="1" />
-					<arrow nonTarget="1" effect="NPC/Skill/Temp/Eff_Temp.xml" />
-					<damage count="0" rate="0.7" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="2" />
+			<motion sequenceName="Attack_B_5" motionEffect="NPC/Skill/BlueLuke/Eff_BlueLuke_Attack_B_04.xml" movedistance="450">
+				<attack point="p0" targetCount="1" cubeMagicPathID="44119997" attacktype="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+					<range rangeType="cylinder" distance="3000" height="50" includeCaster="2" applyTarget="2" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage count="0" rate="1" attackMaterial="100" />
+					<actionSkill skillID="44111080" level="1" interval="500" fireCount="10" />
 				</attack>
-			</motion>
-		</level>
-		<level value="6">
-			<motion sequenceName="Attack_06_A" faceTarget="0" doesPlayIdleOnSkillEnd="false">
-				<attack point="p0" attacktype="1" attackMethodType="1" unrideOnHit="1">
-					<range rangeType="box" distance="900" height="500" width="500" applyTarget="1" castTarget="1" />
-					<arrow nonTarget="1" effect="NPC/Skill/Temp/Eff_Temp.xml" />
-					<damage count="0" rate="0.7" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="2" />
+				<attack point="p1" targetCount="1" cubeMagicPathID="44119997" attacktype="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+					<range rangeType="cylinder" distance="3000" height="50" includeCaster="2" applyTarget="2" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage count="0" rate="1" attackMaterial="100" />
+					<actionSkill skillID="44111080" level="1" interval="500" fireCount="10" />
+				</attack>
+				<attack point="p2" targetCount="1" cubeMagicPathID="44119997" attacktype="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+					<range rangeType="cylinder" distance="3000" height="50" includeCaster="2" applyTarget="2" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage count="0" rate="1" attackMaterial="100" />
+					<actionSkill skillID="44111080" level="1" interval="500" fireCount="10" />
+				</attack>
+				<attack point="p3" targetCount="1" cubeMagicPathID="44119997" attacktype="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+					<range rangeType="cylinder" distance="3000" height="50" includeCaster="2" applyTarget="2" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage count="0" rate="1" attackMaterial="100" />
+					<actionSkill skillID="44111080" level="1" interval="500" fireCount="10" />
+				</attack>
+				<attack point="p4" targetCount="1" cubeMagicPathID="44119997" attacktype="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+					<range rangeType="cylinder" distance="3000" height="50" includeCaster="2" applyTarget="2" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage count="0" rate="1" attackMaterial="100" />
+					<actionSkill skillID="44111080" level="1" interval="500" fireCount="10" />
+				</attack>
+				<attack point="p4" targetCount="1" attacktype="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+					<range rangeType="cylinder" distance="300" rangeOffset="0,100,0" height="100" includeCaster="2" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.25" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="300" pushduration="0.2" pushEaseType="1" attackMaterial="1" />
 				</attack>
 			</motion>
 		</level>
@@ -86,214 +171,254 @@
 			<kinds element="7" />
 		</basic>
 		<level value="1">
-			<motion sequenceName="Attack_01_D" motionEffect="NPC/Skill/BullArmorBlue/Eff_BullArmorBlue_Attack_01_D.xml" faceTarget="0" doesPlayIdleOnSkillEnd="false">
-				<attack point="p0" attacktype="1" attackMethodType="1" unrideOnHit="1">
-					<range rangeType="box" distance="900" height="500" width="500" applyTarget="1" castTarget="1" />
-					<arrow nonTarget="1" effect="NPC/Skill/Temp/Eff_Temp.xml" />
-					<damage count="0" rate="0.7" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="2" />
+			<motion sequenceName="Attack_D" motionEffect="NPC/Skill/BlueLuke/Eff_BlueLuke_Attack_D.xml">
+				<attack point="p0" targetCount="1" cubeMagicPathID="44119999" attacktype="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+					<range rangeType="cylinder" distance="2000" height="100" includeCaster="2" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage count="0" rate="1" push="1" pushdistance="200" pushduration="1" pushEaseType="1" pushUpDistance="600" attackMaterial="100" superArmorBreak="1" />
+					<actionSkill skillID="44111090" level="1" delay="1000" interval="200" fireCount="5" />
+				</attack>
+				<attack point="p0" targetCount="1" cubeMagicPathID="44119993" attacktype="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+					<range rangeType="cylinder" distance="2000" height="100" includeCaster="2" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage count="0" rate="1" push="1" pushdistance="200" pushduration="1" pushEaseType="1" pushUpDistance="600" attackMaterial="100" superArmorBreak="1" />
+					<actionSkill skillID="44111090" level="1" delay="1000" interval="200" fireCount="5" />
+				</attack>
+				<attack point="p1" targetCount="1" cubeMagicPathID="44119994" attacktype="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+					<range rangeType="cylinder" distance="2000" height="100" includeCaster="2" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage count="0" rate="1" push="1" pushdistance="200" pushduration="1" pushEaseType="1" pushUpDistance="600" attackMaterial="100" superArmorBreak="1" />
+					<actionSkill skillID="44111090" level="1" delay="1000" interval="200" fireCount="5" />
+				</attack>
+				<attack point="p2" targetCount="1" cubeMagicPathID="44119995" attacktype="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+					<range rangeType="cylinder" distance="2000" height="100" includeCaster="2" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage count="0" rate="1" push="1" pushdistance="200" pushduration="1" pushEaseType="1" pushUpDistance="600" attackMaterial="100" superArmorBreak="1" />
+					<actionSkill skillID="44111090" level="1" delay="1000" interval="200" fireCount="5" />
 				</attack>
 			</motion>
 		</level>
 		<level value="2">
-			<motion sequenceName="Attack_02_D" motionEffect="NPC/Skill/BullArmorBlue/Eff_BullArmorBlue_Attack_02_D.xml" movedistance="150" faceTarget="0" doesPlayIdleOnSkillEnd="false">
-				<attack point="p0" targetCount="50" attacktype="1" brokenOffence="85" brokenForce="3" unrideOnHit="1">
-					<range rangeType="box" distance="300" rangeAdd="0,0,70" rangeOffset="0,-800,30" height="500" width="1000" applyTarget="1" castTarget="1" />
+			<motion sequenceName="Attack_D" motionEffect="NPC/Skill/BlueLuke/Eff_BlueLuke_Attack_D.xml">
+				<attack point="p0" targetCount="1" cubeMagicPathID="44119999" attacktype="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+					<range rangeType="cylinder" distance="2000" height="100" includeCaster="2" applyTarget="1" castTarget="1" />
 					<arrow nonTarget="1" />
-					<damage rate="0.7" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="50" pushduration="0.2" pushEaseType="1" attackMaterial="2" />
+					<damage count="0" rate="1" push="1" pushdistance="200" pushduration="1" pushEaseType="1" pushUpDistance="600" attackMaterial="100" superArmorBreak="1" />
+					<actionSkill skillID="44111090" level="1" delay="1000" interval="200" fireCount="5" />
 				</attack>
-				<attack point="p1" targetCount="50" attacktype="1" brokenOffence="85" brokenForce="3" unrideOnHit="1">
-					<range rangeType="box" distance="300" rangeAdd="0,0,70" rangeOffset="500,0,30" rangeZRotateDegree="-90" height="500" width="1000" applyTarget="1" castTarget="1" />
+				<attack point="p0" targetCount="1" cubeMagicPathID="44119994" attacktype="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+					<range rangeType="cylinder" distance="2000" height="100" includeCaster="2" applyTarget="1" castTarget="1" />
 					<arrow nonTarget="1" />
-					<damage rate="0.7" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="50" pushduration="0.2" pushEaseType="1" attackMaterial="2" />
+					<damage count="0" rate="1" push="1" pushdistance="200" pushduration="1" pushEaseType="1" pushUpDistance="600" attackMaterial="100" superArmorBreak="1" />
+					<actionSkill skillID="44111090" level="1" delay="1000" interval="200" fireCount="5" />
 				</attack>
-				<attack point="p2" targetCount="50" attacktype="1" brokenOffence="85" brokenForce="3" unrideOnHit="1">
-					<range rangeType="box" distance="300" rangeAdd="0,0,70" rangeOffset="0,500,30" height="500" width="1000" applyTarget="1" castTarget="1" />
+				<attack point="p1" targetCount="1" cubeMagicPathID="44119993" attacktype="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+					<range rangeType="cylinder" distance="2000" height="100" includeCaster="2" applyTarget="1" castTarget="1" />
 					<arrow nonTarget="1" />
-					<damage rate="0.7" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="50" pushduration="0.2" pushEaseType="1" attackMaterial="2" />
+					<damage count="0" rate="1" push="1" pushdistance="200" pushduration="1" pushEaseType="1" pushUpDistance="600" attackMaterial="100" superArmorBreak="1" />
+					<actionSkill skillID="44111090" level="1" delay="1000" interval="200" fireCount="5" />
 				</attack>
-				<attack point="p3" targetCount="50" attacktype="1" brokenOffence="85" brokenForce="3" unrideOnHit="1">
-					<range rangeType="box" distance="300" rangeAdd="0,0,70" rangeOffset="-500,0,30" rangeZRotateDegree="90" height="500" width="1000" applyTarget="1" castTarget="1" />
+				<attack point="p2" targetCount="1" cubeMagicPathID="44119995" attacktype="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+					<range rangeType="cylinder" distance="2000" height="100" includeCaster="2" applyTarget="1" castTarget="1" />
 					<arrow nonTarget="1" />
-					<damage rate="0.7" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="50" pushduration="0.2" pushEaseType="1" attackMaterial="2" />
+					<damage count="0" rate="1" push="1" pushdistance="200" pushduration="1" pushEaseType="1" pushUpDistance="600" attackMaterial="100" superArmorBreak="1" />
+					<actionSkill skillID="44111090" level="1" delay="1000" interval="200" fireCount="5" />
 				</attack>
 			</motion>
 		</level>
 		<level value="3">
-			<motion sequenceName="Attack_03_D" motionEffect="NPC/Skill/BullArmorBlue/Eff_BullArmorBlue_Attack_03_D.xml" movedistance="600" faceTarget="0" doesPlayIdleOnSkillEnd="false">
-				<attack point="p0" targetCount="50" attacktype="1" brokenOffence="85" brokenForce="3" unrideOnHit="1">
-					<range rangeType="box" distance="300" rangeAdd="0,0,70" rangeOffset="0,-800,30" height="500" width="1000" applyTarget="1" castTarget="1" />
+			<motion sequenceName="Attack_D" motionEffect="NPC/Skill/BlueLuke/Eff_BlueLuke_Attack_D.xml">
+				<attack point="p0" targetCount="1" cubeMagicPathID="44119999" attacktype="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+					<range rangeType="cylinder" distance="2000" height="100" includeCaster="2" applyTarget="1" castTarget="1" />
 					<arrow nonTarget="1" />
-					<damage rate="0.7" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="50" pushduration="0.2" pushEaseType="1" attackMaterial="2" />
+					<damage count="0" rate="1" push="1" pushdistance="200" pushduration="1" pushEaseType="1" pushUpDistance="600" attackMaterial="100" superArmorBreak="1" />
+					<actionSkill skillID="44111090" level="1" delay="1000" interval="200" fireCount="5" />
 				</attack>
-				<attack point="p1" targetCount="50" attacktype="1" brokenOffence="85" brokenForce="3" unrideOnHit="1">
-					<range rangeType="box" distance="300" rangeAdd="0,0,70" rangeOffset="500,0,30" rangeZRotateDegree="-90" height="500" width="1000" applyTarget="1" castTarget="1" />
+				<attack point="p0" targetCount="1" cubeMagicPathID="44119995" attacktype="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+					<range rangeType="cylinder" distance="2000" height="100" includeCaster="2" applyTarget="1" castTarget="1" />
 					<arrow nonTarget="1" />
-					<damage rate="0.7" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="50" pushduration="0.2" pushEaseType="1" attackMaterial="2" />
+					<damage count="0" rate="1" push="1" pushdistance="200" pushduration="1" pushEaseType="1" pushUpDistance="600" attackMaterial="100" superArmorBreak="1" />
+					<actionSkill skillID="44111090" level="1" delay="1000" interval="200" fireCount="5" />
 				</attack>
-				<attack point="p2" targetCount="50" attacktype="1" brokenOffence="85" brokenForce="3" unrideOnHit="1">
-					<range rangeType="box" distance="300" rangeAdd="0,0,70" rangeOffset="0,500,30" height="500" width="1000" applyTarget="1" castTarget="1" />
+				<attack point="p1" targetCount="1" cubeMagicPathID="44119993" attacktype="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+					<range rangeType="cylinder" distance="2000" height="100" includeCaster="2" applyTarget="1" castTarget="1" />
 					<arrow nonTarget="1" />
-					<damage rate="0.7" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="50" pushduration="0.2" pushEaseType="1" attackMaterial="2" />
+					<damage count="0" rate="1" push="1" pushdistance="200" pushduration="1" pushEaseType="1" pushUpDistance="600" attackMaterial="100" superArmorBreak="1" />
+					<actionSkill skillID="44111090" level="1" delay="1000" interval="200" fireCount="5" />
 				</attack>
-				<attack point="p3" targetCount="50" attacktype="1" brokenOffence="85" brokenForce="3" unrideOnHit="1">
-					<range rangeType="box" distance="300" rangeAdd="0,0,70" rangeOffset="-500,0,30" rangeZRotateDegree="90" height="500" width="1000" applyTarget="1" castTarget="1" />
+				<attack point="p2" targetCount="1" cubeMagicPathID="44119994" attacktype="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+					<range rangeType="cylinder" distance="2000" height="100" includeCaster="2" applyTarget="1" castTarget="1" />
 					<arrow nonTarget="1" />
-					<damage rate="0.7" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="50" pushduration="0.2" pushEaseType="1" attackMaterial="2" />
-				</attack>
-				<attack point="p4" targetCount="50" attacktype="1" brokenOffence="85" brokenForce="3" unrideOnHit="1">
-					<range rangeType="box" distance="300" rangeAdd="0,0,70" rangeOffset="0,-800,30" height="500" width="1000" applyTarget="1" castTarget="1" />
-					<arrow nonTarget="1" />
-					<damage rate="0.7" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="50" pushduration="0.2" pushEaseType="1" attackMaterial="2" />
-				</attack>
-				<attack point="p5" targetCount="50" attacktype="1" brokenOffence="85" brokenForce="3" unrideOnHit="1">
-					<range rangeType="box" distance="300" rangeAdd="0,0,70" rangeOffset="500,0,30" rangeZRotateDegree="-90" height="500" width="1000" applyTarget="1" castTarget="1" />
-					<arrow nonTarget="1" />
-					<damage rate="0.7" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="50" pushduration="0.2" pushEaseType="1" attackMaterial="2" />
+					<damage count="0" rate="1" push="1" pushdistance="200" pushduration="1" pushEaseType="1" pushUpDistance="600" attackMaterial="100" superArmorBreak="1" />
+					<actionSkill skillID="44111090" level="1" delay="1000" interval="200" fireCount="5" />
 				</attack>
 			</motion>
 		</level>
 		<level value="4">
-			<motion sequenceName="Attack_04_D" motionEffect="NPC/Skill/BullArmorBlue/Eff_BullArmorBlue_Attack_04_D.xml" movedistance="300" faceTarget="0" doesPlayIdleOnSkillEnd="false">
-				<attack point="p0" targetCount="50" attacktype="1" brokenOffence="85" brokenForce="3" unrideOnHit="1">
-					<range rangeType="box" distance="300" rangeAdd="0,0,70" rangeOffset="0,-800,30" height="500" width="1000" applyTarget="1" castTarget="1" />
+			<motion sequenceName="Attack_D" motionEffect="NPC/Skill/BlueLuke/Eff_BlueLuke_Attack_D.xml">
+				<attack point="p0" targetCount="1" cubeMagicPathID="44119999" attacktype="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+					<range rangeType="cylinder" distance="2000" height="100" includeCaster="2" applyTarget="1" castTarget="1" />
 					<arrow nonTarget="1" />
-					<damage rate="0.7" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="50" pushduration="0.2" pushEaseType="1" attackMaterial="2" />
+					<damage count="0" rate="1" push="1" pushdistance="200" pushduration="1" pushEaseType="1" pushUpDistance="600" attackMaterial="100" superArmorBreak="1" />
+					<actionSkill skillID="44111090" level="1" delay="1000" interval="200" fireCount="5" />
 				</attack>
-				<attack point="p1" targetCount="50" attacktype="1" brokenOffence="85" brokenForce="3" unrideOnHit="1">
-					<range rangeType="box" distance="300" rangeAdd="0,0,70" rangeOffset="500,0,30" rangeZRotateDegree="-90" height="500" width="1000" applyTarget="1" castTarget="1" />
+				<attack point="p0" targetCount="1" cubeMagicPathID="44119993" attacktype="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+					<range rangeType="cylinder" distance="2000" height="100" includeCaster="2" applyTarget="1" castTarget="1" />
 					<arrow nonTarget="1" />
-					<damage rate="0.7" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="50" pushduration="0.2" pushEaseType="1" attackMaterial="2" />
+					<damage count="0" rate="1" push="1" pushdistance="200" pushduration="1" pushEaseType="1" pushUpDistance="600" attackMaterial="100" superArmorBreak="1" />
+					<actionSkill skillID="44111090" level="1" delay="1000" interval="200" fireCount="5" />
 				</attack>
-				<attack point="p2" targetCount="50" attacktype="1" brokenOffence="85" brokenForce="3" unrideOnHit="1">
-					<range rangeType="box" distance="300" rangeAdd="0,0,70" rangeOffset="0,500,30" height="500" width="1000" applyTarget="1" castTarget="1" />
+				<attack point="p1" targetCount="1" cubeMagicPathID="44119994" attacktype="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+					<range rangeType="cylinder" distance="2000" height="100" includeCaster="2" applyTarget="1" castTarget="1" />
 					<arrow nonTarget="1" />
-					<damage rate="0.7" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="50" pushduration="0.2" pushEaseType="1" attackMaterial="2" />
+					<damage count="0" rate="1" push="1" pushdistance="200" pushduration="1" pushEaseType="1" pushUpDistance="600" attackMaterial="100" superArmorBreak="1" />
+					<actionSkill skillID="44111090" level="1" delay="1000" interval="200" fireCount="5" />
 				</attack>
-				<attack point="p3" targetCount="50" attacktype="1" brokenOffence="85" brokenForce="3" unrideOnHit="1">
-					<range rangeType="box" distance="300" rangeAdd="0,0,70" rangeOffset="-500,0,30" rangeZRotateDegree="90" height="500" width="1000" applyTarget="1" castTarget="1" />
+				<attack point="p2" targetCount="1" cubeMagicPathID="44119995" attacktype="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+					<range rangeType="cylinder" distance="2000" height="100" includeCaster="2" applyTarget="1" castTarget="1" />
 					<arrow nonTarget="1" />
-					<damage rate="0.7" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="50" pushduration="0.2" pushEaseType="1" attackMaterial="2" />
+					<damage count="0" rate="1" push="1" pushdistance="200" pushduration="1" pushEaseType="1" pushUpDistance="600" attackMaterial="100" superArmorBreak="1" />
+					<actionSkill skillID="44111090" level="1" delay="1000" interval="200" fireCount="5" />
 				</attack>
 			</motion>
 		</level>
 		<level value="5">
-			<motion sequenceName="Attack_05_D" motionEffect="NPC/Skill/BullArmorBlue/Eff_BullArmorBlue_Attack_05_D.xml" movedistance="300" faceTarget="0" doesPlayIdleOnSkillEnd="false">
-				<attack point="p0" targetCount="50" attacktype="1" brokenOffence="85" brokenForce="3" unrideOnHit="1">
-					<range rangeType="box" distance="300" rangeAdd="0,0,70" rangeOffset="0,-800,30" height="500" width="1000" applyTarget="1" castTarget="1" />
+			<motion sequenceName="Attack_D" motionEffect="NPC/Skill/BlueLuke/Eff_BlueLuke_Attack_D.xml">
+				<attack point="p0" targetCount="1" cubeMagicPathID="44119999" attacktype="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+					<range rangeType="cylinder" distance="2000" height="100" includeCaster="2" applyTarget="1" castTarget="1" />
 					<arrow nonTarget="1" />
-					<damage rate="0.7" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="50" pushduration="0.2" pushEaseType="1" attackMaterial="2" />
+					<damage count="0" rate="1" push="1" pushdistance="200" pushduration="1" pushEaseType="1" pushUpDistance="600" attackMaterial="100" superArmorBreak="1" />
+					<actionSkill skillID="44111090" level="1" delay="1000" interval="200" fireCount="5" />
 				</attack>
-				<attack point="p1" targetCount="50" attacktype="1" brokenOffence="85" brokenForce="3" unrideOnHit="1">
-					<range rangeType="box" distance="300" rangeAdd="0,0,70" rangeOffset="500,0,30" rangeZRotateDegree="-90" height="500" width="1000" applyTarget="1" castTarget="1" />
+				<attack point="p0" targetCount="1" cubeMagicPathID="44119994" attacktype="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+					<range rangeType="cylinder" distance="2000" height="100" includeCaster="2" applyTarget="1" castTarget="1" />
 					<arrow nonTarget="1" />
-					<damage rate="0.7" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="50" pushduration="0.2" pushEaseType="1" attackMaterial="2" />
+					<damage count="0" rate="1" push="1" pushdistance="200" pushduration="1" pushEaseType="1" pushUpDistance="600" attackMaterial="100" superArmorBreak="1" />
+					<actionSkill skillID="44111090" level="1" delay="1000" interval="200" fireCount="5" />
 				</attack>
-				<attack point="p2" targetCount="50" attacktype="1" brokenOffence="85" brokenForce="3" unrideOnHit="1">
-					<range rangeType="box" distance="300" rangeAdd="0,0,70" rangeOffset="0,500,30" height="500" width="1000" applyTarget="1" castTarget="1" />
+				<attack point="p1" targetCount="1" cubeMagicPathID="44119993" attacktype="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+					<range rangeType="cylinder" distance="2000" height="100" includeCaster="2" applyTarget="1" castTarget="1" />
 					<arrow nonTarget="1" />
-					<damage rate="0.7" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="50" pushduration="0.2" pushEaseType="1" attackMaterial="2" />
+					<damage count="0" rate="1" push="1" pushdistance="200" pushduration="1" pushEaseType="1" pushUpDistance="600" attackMaterial="100" superArmorBreak="1" />
+					<actionSkill skillID="44111090" level="1" delay="1000" interval="200" fireCount="5" />
 				</attack>
-				<attack point="p3" targetCount="50" attacktype="1" brokenOffence="85" brokenForce="3" unrideOnHit="1">
-					<range rangeType="box" distance="300" rangeAdd="0,0,70" rangeOffset="-500,0,30" rangeZRotateDegree="90" height="500" width="1000" applyTarget="1" castTarget="1" />
+				<attack point="p2" targetCount="1" cubeMagicPathID="44119995" attacktype="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+					<range rangeType="cylinder" distance="2000" height="100" includeCaster="2" applyTarget="1" castTarget="1" />
 					<arrow nonTarget="1" />
-					<damage rate="0.7" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="50" pushduration="0.2" pushEaseType="1" attackMaterial="2" />
+					<damage count="0" rate="1" push="1" pushdistance="200" pushduration="1" pushEaseType="1" pushUpDistance="600" attackMaterial="100" superArmorBreak="1" />
+					<actionSkill skillID="44111090" level="1" delay="1000" interval="200" fireCount="5" />
 				</attack>
 			</motion>
 		</level>
 		<level value="6">
-			<motion sequenceName="Attack_06_D" motionEffect="NPC/Skill/BullArmorBlue/Eff_BullArmorBlue_Attack_06_D.xml" movedistance="300" faceTarget="0" doesPlayIdleOnSkillEnd="false">
-				<attack point="p0" targetCount="50" attacktype="1" brokenOffence="85" brokenForce="3" unrideOnHit="1">
-					<range rangeType="box" distance="300" rangeAdd="0,0,70" rangeOffset="0,-800,30" height="500" width="1000" applyTarget="1" castTarget="1" />
+			<motion sequenceName="Attack_D" motionEffect="NPC/Skill/BlueLuke/Eff_BlueLuke_Attack_D.xml">
+				<attack point="p0" targetCount="1" cubeMagicPathID="44119999" attacktype="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+					<range rangeType="cylinder" distance="2000" height="100" includeCaster="2" applyTarget="1" castTarget="1" />
 					<arrow nonTarget="1" />
-					<damage rate="0.7" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="50" pushduration="0.2" pushEaseType="1" attackMaterial="2" />
+					<damage count="0" rate="1" push="1" pushdistance="200" pushduration="1" pushEaseType="1" pushUpDistance="600" attackMaterial="100" superArmorBreak="1" />
+					<actionSkill skillID="44111090" level="1" delay="1000" interval="200" fireCount="5" />
 				</attack>
-				<attack point="p1" targetCount="50" attacktype="1" brokenOffence="85" brokenForce="3" unrideOnHit="1">
-					<range rangeType="box" distance="300" rangeAdd="0,0,70" rangeOffset="500,0,30" rangeZRotateDegree="-90" height="500" width="1000" applyTarget="1" castTarget="1" />
+				<attack point="p0" targetCount="1" cubeMagicPathID="44119995" attacktype="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+					<range rangeType="cylinder" distance="2000" height="100" includeCaster="2" applyTarget="1" castTarget="1" />
 					<arrow nonTarget="1" />
-					<damage rate="0.7" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="50" pushduration="0.2" pushEaseType="1" attackMaterial="2" />
+					<damage count="0" rate="1" push="1" pushdistance="200" pushduration="1" pushEaseType="1" pushUpDistance="600" attackMaterial="100" superArmorBreak="1" />
+					<actionSkill skillID="44111090" level="1" delay="1000" interval="200" fireCount="5" />
 				</attack>
-				<attack point="p2" targetCount="50" attacktype="1" brokenOffence="85" brokenForce="3" unrideOnHit="1">
-					<range rangeType="box" distance="300" rangeAdd="0,0,70" rangeOffset="0,500,30" height="500" width="1000" applyTarget="1" castTarget="1" />
+				<attack point="p1" targetCount="1" cubeMagicPathID="44119993" attacktype="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+					<range rangeType="cylinder" distance="2000" height="100" includeCaster="2" applyTarget="1" castTarget="1" />
 					<arrow nonTarget="1" />
-					<damage rate="0.7" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="50" pushduration="0.2" pushEaseType="1" attackMaterial="2" />
+					<damage count="0" rate="1" push="1" pushdistance="200" pushduration="1" pushEaseType="1" pushUpDistance="600" attackMaterial="100" superArmorBreak="1" />
+					<actionSkill skillID="44111090" level="1" delay="1000" interval="200" fireCount="5" />
 				</attack>
-				<attack point="p3" targetCount="50" attacktype="1" brokenOffence="85" brokenForce="3" unrideOnHit="1">
-					<range rangeType="box" distance="300" rangeAdd="0,0,70" rangeOffset="-500,0,30" rangeZRotateDegree="90" height="500" width="1000" applyTarget="1" castTarget="1" />
+				<attack point="p2" targetCount="1" cubeMagicPathID="44119994" attacktype="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+					<range rangeType="cylinder" distance="2000" height="100" includeCaster="2" applyTarget="1" castTarget="1" />
 					<arrow nonTarget="1" />
-					<damage rate="0.7" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="50" pushduration="0.2" pushEaseType="1" attackMaterial="2" />
-				</attack>
-				<attack point="p4" targetCount="50" attacktype="1" brokenOffence="85" brokenForce="3" unrideOnHit="1">
-					<range rangeType="box" distance="300" rangeAdd="0,0,70" rangeOffset="0,-800,30" height="500" width="1000" applyTarget="1" castTarget="1" />
-					<arrow nonTarget="1" />
-					<damage rate="0.7" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="50" pushduration="0.2" pushEaseType="1" attackMaterial="2" />
-				</attack>
-				<attack point="p5" targetCount="50" attacktype="1" brokenOffence="85" brokenForce="3" unrideOnHit="1">
-					<range rangeType="box" distance="300" rangeAdd="0,0,70" rangeOffset="500,0,30" rangeZRotateDegree="-90" height="500" width="1000" applyTarget="1" castTarget="1" />
-					<arrow nonTarget="1" />
-					<damage rate="0.7" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="50" pushduration="0.2" pushEaseType="1" attackMaterial="2" />
-				</attack>
-				<attack point="p6" targetCount="50" attacktype="1" brokenOffence="85" brokenForce="3" unrideOnHit="1">
-					<range rangeType="box" distance="300" rangeAdd="0,0,70" rangeOffset="0,500,30" height="500" width="1000" applyTarget="1" castTarget="1" />
-					<arrow nonTarget="1" />
-					<damage rate="0.7" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="50" pushduration="0.2" pushEaseType="1" attackMaterial="2" />
+					<damage count="0" rate="1" push="1" pushdistance="200" pushduration="1" pushEaseType="1" pushUpDistance="600" attackMaterial="100" superArmorBreak="1" />
+					<actionSkill skillID="44111090" level="1" delay="1000" interval="200" fireCount="5" />
 				</attack>
 			</motion>
 		</level>
-		<level value="12">
-			<motion sequenceName="Attack_02_D" motionEffect="NPC/Skill/BullArmorBlue/Eff_BullArmorBlue_Attack_02_D.xml" movedistance="50" faceTarget="0" doesPlayIdleOnSkillEnd="false">
-				<attack point="p0" targetCount="50" attacktype="1" brokenOffence="85" brokenForce="3" unrideOnHit="1">
-					<range rangeType="box" distance="300" rangeAdd="0,0,70" rangeOffset="0,-800,30" height="500" width="1000" applyTarget="1" castTarget="1" />
+		<level value="7">
+			<motion sequenceName="Attack_D" motionEffect="NPC/Skill/BlueLuke/Eff_BlueLuke_Attack_D.xml">
+				<attack point="p0" targetCount="1" cubeMagicPathID="44119999" attacktype="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+					<range rangeType="cylinder" distance="2000" height="100" includeCaster="2" applyTarget="1" castTarget="1" />
 					<arrow nonTarget="1" />
-					<damage rate="0.7" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="50" pushduration="0.2" pushEaseType="1" attackMaterial="2" />
+					<damage count="0" rate="1" push="1" pushdistance="200" pushduration="1" pushEaseType="1" pushUpDistance="600" attackMaterial="100" superArmorBreak="1" />
+					<actionSkill skillID="44111090" level="1" delay="1000" interval="200" fireCount="5" />
 				</attack>
-				<attack point="p1" targetCount="50" attacktype="1" brokenOffence="85" brokenForce="3" unrideOnHit="1">
-					<range rangeType="box" distance="300" rangeAdd="0,0,70" rangeOffset="500,0,30" rangeZRotateDegree="-90" height="500" width="1000" applyTarget="1" castTarget="1" />
+				<attack point="p0" targetCount="1" cubeMagicPathID="44119995" attacktype="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+					<range rangeType="cylinder" distance="2000" height="100" includeCaster="2" applyTarget="1" castTarget="1" />
 					<arrow nonTarget="1" />
-					<damage rate="0.7" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="50" pushduration="0.2" pushEaseType="1" attackMaterial="2" />
+					<damage count="0" rate="1" push="1" pushdistance="200" pushduration="1" pushEaseType="1" pushUpDistance="600" attackMaterial="100" superArmorBreak="1" />
+					<actionSkill skillID="44111090" level="1" delay="1000" interval="200" fireCount="5" />
 				</attack>
-				<attack point="p2" targetCount="50" attacktype="1" brokenOffence="85" brokenForce="3" unrideOnHit="1">
-					<range rangeType="box" distance="300" rangeAdd="0,0,70" rangeOffset="0,500,30" height="500" width="1000" applyTarget="1" castTarget="1" />
+				<attack point="p1" targetCount="1" cubeMagicPathID="44119993" attacktype="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+					<range rangeType="cylinder" distance="2000" height="100" includeCaster="2" applyTarget="1" castTarget="1" />
 					<arrow nonTarget="1" />
-					<damage rate="0.7" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="50" pushduration="0.2" pushEaseType="1" attackMaterial="2" />
+					<damage count="0" rate="1" push="1" pushdistance="200" pushduration="1" pushEaseType="1" pushUpDistance="600" attackMaterial="100" superArmorBreak="1" />
+					<actionSkill skillID="44111090" level="1" delay="1000" interval="200" fireCount="5" />
 				</attack>
-				<attack point="p3" targetCount="50" attacktype="1" brokenOffence="85" brokenForce="3" unrideOnHit="1">
-					<range rangeType="box" distance="300" rangeAdd="0,0,70" rangeOffset="-500,0,30" rangeZRotateDegree="90" height="500" width="1000" applyTarget="1" castTarget="1" />
+				<attack point="p2" targetCount="1" cubeMagicPathID="44119994" attacktype="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+					<range rangeType="cylinder" distance="2000" height="100" includeCaster="2" applyTarget="1" castTarget="1" />
 					<arrow nonTarget="1" />
-					<damage rate="0.7" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="50" pushduration="0.2" pushEaseType="1" attackMaterial="2" />
+					<damage count="0" rate="1" push="1" pushdistance="200" pushduration="1" pushEaseType="1" pushUpDistance="600" attackMaterial="100" superArmorBreak="1" />
+					<actionSkill skillID="44111090" level="1" delay="1000" interval="200" fireCount="5" />
 				</attack>
 			</motion>
 		</level>
-		<level value="13">
-			<motion sequenceName="Attack_03_D" motionEffect="NPC/Skill/BullArmorBlue/Eff_BullArmorBlue_Attack_03_D.xml" movedistance="150" faceTarget="0" doesPlayIdleOnSkillEnd="false">
-				<attack point="p0" targetCount="50" attacktype="1" brokenOffence="85" brokenForce="3" unrideOnHit="1">
-					<range rangeType="box" distance="300" rangeAdd="0,0,70" rangeOffset="0,-800,30" height="500" width="1000" applyTarget="1" castTarget="1" />
+		<level value="8">
+			<motion sequenceName="Attack_D" motionEffect="NPC/Skill/BlueLuke/Eff_BlueLuke_Attack_D.xml">
+				<attack point="p0" targetCount="1" cubeMagicPathID="44119999" attacktype="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+					<range rangeType="cylinder" distance="2000" height="100" includeCaster="2" applyTarget="1" castTarget="1" />
 					<arrow nonTarget="1" />
-					<damage rate="0.7" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="50" pushduration="0.2" pushEaseType="1" attackMaterial="2" />
+					<damage count="0" rate="1" push="1" pushdistance="200" pushduration="1" pushEaseType="1" pushUpDistance="600" attackMaterial="100" superArmorBreak="1" />
+					<actionSkill skillID="44111090" level="1" delay="1000" interval="200" fireCount="5" />
 				</attack>
-				<attack point="p1" targetCount="50" attacktype="1" brokenOffence="85" brokenForce="3" unrideOnHit="1">
-					<range rangeType="box" distance="300" rangeAdd="0,0,70" rangeOffset="500,0,30" rangeZRotateDegree="-90" height="500" width="1000" applyTarget="1" castTarget="1" />
+				<attack point="p0" targetCount="1" cubeMagicPathID="44119994" attacktype="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+					<range rangeType="cylinder" distance="2000" height="100" includeCaster="2" applyTarget="1" castTarget="1" />
 					<arrow nonTarget="1" />
-					<damage rate="0.7" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="50" pushduration="0.2" pushEaseType="1" attackMaterial="2" />
+					<damage count="0" rate="1" push="1" pushdistance="200" pushduration="1" pushEaseType="1" pushUpDistance="600" attackMaterial="100" superArmorBreak="1" />
+					<actionSkill skillID="44111090" level="1" delay="1000" interval="200" fireCount="5" />
 				</attack>
-				<attack point="p2" targetCount="50" attacktype="1" brokenOffence="85" brokenForce="3" unrideOnHit="1">
-					<range rangeType="box" distance="300" rangeAdd="0,0,70" rangeOffset="0,500,30" height="500" width="1000" applyTarget="1" castTarget="1" />
+				<attack point="p1" targetCount="1" cubeMagicPathID="44119993" attacktype="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+					<range rangeType="cylinder" distance="2000" height="100" includeCaster="2" applyTarget="1" castTarget="1" />
 					<arrow nonTarget="1" />
-					<damage rate="0.7" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="50" pushduration="0.2" pushEaseType="1" attackMaterial="2" />
+					<damage count="0" rate="1" push="1" pushdistance="200" pushduration="1" pushEaseType="1" pushUpDistance="600" attackMaterial="100" superArmorBreak="1" />
+					<actionSkill skillID="44111090" level="1" delay="1000" interval="200" fireCount="5" />
 				</attack>
-				<attack point="p3" targetCount="50" attacktype="1" brokenOffence="85" brokenForce="3" unrideOnHit="1">
-					<range rangeType="box" distance="300" rangeAdd="0,0,70" rangeOffset="-500,0,30" rangeZRotateDegree="90" height="500" width="1000" applyTarget="1" castTarget="1" />
+				<attack point="p2" targetCount="1" cubeMagicPathID="44119995" attacktype="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+					<range rangeType="cylinder" distance="2000" height="100" includeCaster="2" applyTarget="1" castTarget="1" />
 					<arrow nonTarget="1" />
-					<damage rate="0.7" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="50" pushduration="0.2" pushEaseType="1" attackMaterial="2" />
+					<damage count="0" rate="1" push="1" pushdistance="200" pushduration="1" pushEaseType="1" pushUpDistance="600" attackMaterial="100" superArmorBreak="1" />
+					<actionSkill skillID="44111090" level="1" delay="1000" interval="200" fireCount="5" />
 				</attack>
-				<attack point="p4" targetCount="50" attacktype="1" brokenOffence="85" brokenForce="3" unrideOnHit="1">
-					<range rangeType="box" distance="300" rangeAdd="0,0,70" rangeOffset="0,-800,30" height="500" width="1000" applyTarget="1" castTarget="1" />
+			</motion>
+		</level>
+		<level value="9">
+			<motion sequenceName="Attack_D" motionEffect="NPC/Skill/BlueLuke/Eff_BlueLuke_Attack_D.xml">
+				<attack point="p0" targetCount="1" cubeMagicPathID="44119999" attacktype="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+					<range rangeType="cylinder" distance="2000" height="100" includeCaster="2" applyTarget="1" castTarget="1" />
 					<arrow nonTarget="1" />
-					<damage rate="0.7" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="50" pushduration="0.2" pushEaseType="1" attackMaterial="2" />
+					<damage count="0" rate="1" push="1" pushdistance="200" pushduration="1" pushEaseType="1" pushUpDistance="600" attackMaterial="100" superArmorBreak="1" />
+					<actionSkill skillID="44111090" level="1" delay="1000" interval="200" fireCount="5" />
 				</attack>
-				<attack point="p5" targetCount="50" attacktype="1" brokenOffence="85" brokenForce="3" unrideOnHit="1">
-					<range rangeType="box" distance="300" rangeAdd="0,0,70" rangeOffset="500,0,30" rangeZRotateDegree="-90" height="500" width="1000" applyTarget="1" castTarget="1" />
+				<attack point="p0" targetCount="1" cubeMagicPathID="44119995" attacktype="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+					<range rangeType="cylinder" distance="2000" height="100" includeCaster="2" applyTarget="1" castTarget="1" />
 					<arrow nonTarget="1" />
-					<damage rate="0.7" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="50" pushduration="0.2" pushEaseType="1" attackMaterial="2" />
+					<damage count="0" rate="1" push="1" pushdistance="200" pushduration="1" pushEaseType="1" pushUpDistance="600" attackMaterial="100" superArmorBreak="1" />
+					<actionSkill skillID="44111090" level="1" delay="1000" interval="200" fireCount="5" />
+				</attack>
+				<attack point="p1" targetCount="1" cubeMagicPathID="44119993" attacktype="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+					<range rangeType="cylinder" distance="2000" height="100" includeCaster="2" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage count="0" rate="1" push="1" pushdistance="200" pushduration="1" pushEaseType="1" pushUpDistance="600" attackMaterial="100" superArmorBreak="1" />
+					<actionSkill skillID="44111090" level="1" delay="1000" interval="200" fireCount="5" />
+				</attack>
+				<attack point="p2" targetCount="1" cubeMagicPathID="44119994" attacktype="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+					<range rangeType="cylinder" distance="2000" height="100" includeCaster="2" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage count="0" rate="1" push="1" pushdistance="200" pushduration="1" pushEaseType="1" pushUpDistance="600" attackMaterial="100" superArmorBreak="1" />
+					<actionSkill skillID="44111090" level="1" delay="1000" interval="200" fireCount="5" />
 				</attack>
 			</motion>
 		</level>
@@ -304,116 +429,977 @@
 			<kinds element="7" />
 		</basic>
 		<level value="1">
-			<detectProperty rangeType="box" distance="550" height="320" width="500" />
-			<motion sequenceName="Attack_01_B" motionEffect="NPC/Skill/BullArmorBlue/Eff_BullArmorBlue_Attack_01_B.xml" faceTarget="0" doesPlayIdleOnSkillEnd="false">
-				<attack point="p0" attacktype="1" attackMethodType="1" unrideOnHit="1">
-					<range rangeType="box" distance="500" height="320" width="500" applyTarget="1" castTarget="1" />
-					<arrow nonTarget="1" effect="NPC/Skill/Temp/Eff_Temp.xml" />
-					<damage count="0" rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="2" />
+			<motion sequenceName="Attack_C" motionEffect="NPC/Skill/BlueLuke/Eff_BlueLuke_Attack_C.xml" faceTarget="0">
+				<attack point="p0" targetCount="1" magicPathID="44119998" direction="0" attacktype="2" attackMethodType="1" unrideOnHit="1">
+					<range rangeType="cylinder" distance="200" height="300" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" bounceType="3" collision="400,400,400" collisionAdd="0,80,0" effect="NPC/Skill/BlueLuke/Eff_BlueLuke_Punch.xml" />
+					<damage rate="0.15" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="5" pushdistance="900" pushduration="0.5" pushEaseType="1" attackMaterial="106" superArmorBreak="1" />
 				</attack>
 			</motion>
 		</level>
 		<level value="2">
-			<detectProperty rangeType="box" distance="550" height="320" width="500" />
-			<motion sequenceName="Attack_02_B" motionEffect="NPC/Skill/BullArmorBlue/Eff_BullArmorBlue_Attack_02_B.xml" faceTarget="0" doesPlayIdleOnSkillEnd="false">
-				<attack point="p0" targetCount="50" attacktype="1" unrideOnHit="1">
-					<range rangeType="cylinder" distance="350" rangeAdd="0,0,120" rangeOffset="0,410,0" height="130" applyTarget="1" castTarget="1" />
-					<arrow nonTarget="1" />
-					<damage rate="1.2" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="150" pushduration="0.2" pushEaseType="1" attackMaterial="2" />
+			<motion sequenceName="Attack_C" motionEffect="NPC/Skill/BlueLuke/Eff_BlueLuke_Attack_C.xml" faceTarget="0">
+				<attack point="p0" targetCount="1" magicPathID="44119998" direction="0" attacktype="2" attackMethodType="1" unrideOnHit="1">
+					<range rangeType="cylinder" distance="200" height="300" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" bounceType="3" collision="400,400,400" collisionAdd="0,80,0" effect="NPC/Skill/BlueLuke/Eff_BlueLuke_Punch.xml" />
+					<damage rate="0.15" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="5" pushdistance="900" pushduration="0.5" pushEaseType="1" attackMaterial="106" superArmorBreak="1" />
 				</attack>
 			</motion>
 		</level>
 		<level value="3">
-			<detectProperty rangeType="box" distance="1500" height="320" width="500" />
-			<motion sequenceName="Attack_02_B" motionEffect="NPC/Skill/BullArmorBlue/Eff_BullArmorBlue_Attack_02_B.xml" movedistance="650" faceTarget="0" doesPlayIdleOnSkillEnd="false">
-				<attack point="p0" targetCount="50" attacktype="1" unrideOnHit="1">
-					<range rangeType="cylinder" distance="350" rangeAdd="0,0,120" rangeOffset="0,410,0" height="130" applyTarget="1" castTarget="1" />
-					<arrow nonTarget="1" />
-					<damage rate="1.2" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="150" pushduration="0.2" pushEaseType="1" attackMaterial="2" />
-				</attack>
-			</motion>
-		</level>
-		<level value="11">
-			<detectProperty rangeType="cylinder" distance="550" height="320" />
-			<motion sequenceName="Attack_001_B" motionEffect="NPC/Skill/BullArmorBlue/Eff_BullArmorBlue_Attack_001_B.xml" faceTarget="0" doesPlayIdleOnSkillEnd="false">
-				<attack point="p0" attacktype="1" attackMethodType="1" unrideOnHit="1">
-					<range rangeType="cylinder" distance="550" height="320" applyTarget="1" castTarget="1" />
-					<arrow nonTarget="1" effect="NPC/Skill/Temp/Eff_Temp.xml" />
-					<damage count="0" rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="2" />
+			<motion sequenceName="Attack_C" motionEffect="NPC/Skill/BlueLuke/Eff_BlueLuke_Attack_C.xml" faceTarget="0">
+				<attack point="p0" targetCount="1" magicPathID="44119998" direction="0" attacktype="2" attackMethodType="1" unrideOnHit="1">
+					<range rangeType="cylinder" distance="200" height="300" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" bounceType="3" collision="400,400,400" collisionAdd="0,80,0" effect="NPC/Skill/BlueLuke/Eff_BlueLuke_Punch.xml" />
+					<damage rate="0.15" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="5" pushdistance="900" pushduration="0.5" pushEaseType="1" attackMaterial="106" superArmorBreak="1" />
 				</attack>
 			</motion>
 		</level>
 	</skill>
 	<skill id="44111030">
 		<basic>
-			<ui attackType="1" />
-			<kinds element="7" />
+			<ui attackType="2" />
+			<stateAttr notKeepEffect="1" />
 		</basic>
 		<level value="1">
-			<detectProperty rangeType="box" distance="550" height="320" width="500" />
-			<motion sequenceName="Attack_01_B" motionEffect="NPC/Skill/BullArmorBlue/Eff_BullArmorBlue_Attack_01_B_Magic.xml" faceTarget="0" doesPlayIdleOnSkillEnd="false">
-				<attack point="p0" attacktype="1" attackMethodType="1" unrideOnHit="1">
-					<range rangeType="box" distance="500" height="320" width="500" applyTarget="1" castTarget="1" />
-					<arrow nonTarget="1" effect="NPC/Skill/Temp/Eff_Temp.xml" />
-					<damage count="0" rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="2" />
+			<motion sequenceName="Attack_E" motionEffect="NPC/Skill/BlueLuke/Eff_BlueLuke_Attack_E.xml" faceTarget="0">
+				<attack point="p6" targetCount="50" attacktype="2" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+					<range rangeType="box" distance="2000" rangeZRotateDegree="25" height="330" width="130" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="300" pushduration="0.2" pushEaseType="1" attackMaterial="1" />
+				</attack>
+				<attack point="p7" targetCount="50" attacktype="2" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+					<range rangeType="box" distance="2000" rangeZRotateDegree="30" height="330" width="130" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="300" pushduration="0.2" pushEaseType="1" attackMaterial="1" />
+				</attack>
+				<attack point="p8" targetCount="50" attacktype="2" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+					<range rangeType="box" distance="2000" rangeZRotateDegree="35" height="330" width="130" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="300" pushduration="0.2" pushEaseType="1" attackMaterial="1" />
+				</attack>
+				<attack point="p9" targetCount="50" attacktype="2" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+					<range rangeType="box" distance="2000" rangeZRotateDegree="40" height="330" width="130" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="300" pushduration="0.2" pushEaseType="1" attackMaterial="1" />
+				</attack>
+				<attack point="p10" targetCount="50" attacktype="2" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+					<range rangeType="box" distance="2000" rangeZRotateDegree="45" height="330" width="130" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="300" pushduration="0.2" pushEaseType="1" attackMaterial="1" />
+				</attack>
+				<attack point="p11" targetCount="50" attacktype="2" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+					<range rangeType="box" distance="2000" rangeZRotateDegree="50" height="330" width="130" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="300" pushduration="0.2" pushEaseType="1" attackMaterial="1" />
+				</attack>
+				<attack point="p12" targetCount="50" attacktype="2" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+					<range rangeType="box" distance="2000" rangeZRotateDegree="55" height="330" width="130" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="300" pushduration="0.2" pushEaseType="1" attackMaterial="1" />
+				</attack>
+				<attack point="p13" targetCount="50" attacktype="2" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+					<range rangeType="box" distance="2000" rangeZRotateDegree="60" height="330" width="130" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="300" pushduration="0.2" pushEaseType="1" attackMaterial="1" />
+				</attack>
+				<attack point="p14" targetCount="50" attacktype="2" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+					<range rangeType="box" distance="2000" rangeZRotateDegree="65" height="330" width="130" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="300" pushduration="0.2" pushEaseType="1" attackMaterial="1" />
+				</attack>
+				<attack point="p15" targetCount="50" attacktype="2" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+					<range rangeType="box" distance="2000" rangeZRotateDegree="70" height="330" width="130" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="300" pushduration="0.2" pushEaseType="1" attackMaterial="1" />
+				</attack>
+				<attack point="p16" targetCount="50" attacktype="2" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+					<range rangeType="box" distance="2000" rangeZRotateDegree="75" height="330" width="130" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="300" pushduration="0.2" pushEaseType="1" attackMaterial="1" />
+				</attack>
+				<attack point="p17" targetCount="50" attacktype="2" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+					<range rangeType="box" distance="2000" rangeZRotateDegree="80" height="330" width="130" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="300" pushduration="0.2" pushEaseType="1" attackMaterial="1" />
+				</attack>
+				<attack point="p18" targetCount="50" attacktype="2" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+					<range rangeType="box" distance="2000" rangeZRotateDegree="85" height="330" width="130" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="300" pushduration="0.2" pushEaseType="1" attackMaterial="1" />
+				</attack>
+				<attack point="p19" targetCount="50" attacktype="2" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+					<range rangeType="box" distance="2000" rangeZRotateDegree="90" height="330" width="130" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="300" pushduration="0.2" pushEaseType="1" attackMaterial="1" />
+				</attack>
+				<attack point="p20" targetCount="50" attacktype="2" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+					<range rangeType="box" distance="2000" rangeZRotateDegree="95" height="330" width="130" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="300" pushduration="0.2" pushEaseType="1" attackMaterial="1" />
+				</attack>
+				<attack point="p21" targetCount="50" attacktype="2" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+					<range rangeType="box" distance="2000" rangeZRotateDegree="100" height="330" width="130" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="300" pushduration="0.2" pushEaseType="1" attackMaterial="1" />
+				</attack>
+				<attack point="p22" targetCount="50" attacktype="2" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+					<range rangeType="box" distance="2000" rangeZRotateDegree="105" height="330" width="130" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="300" pushduration="0.2" pushEaseType="1" attackMaterial="1" />
+				</attack>
+				<attack point="p23" targetCount="50" attacktype="2" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+					<range rangeType="box" distance="2000" rangeZRotateDegree="110" height="330" width="130" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="300" pushduration="0.2" pushEaseType="1" attackMaterial="1" />
+				</attack>
+				<attack point="p24" targetCount="50" attacktype="2" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+					<range rangeType="box" distance="2000" rangeZRotateDegree="115" height="330" width="130" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="300" pushduration="0.2" pushEaseType="1" attackMaterial="1" />
+				</attack>
+				<attack point="p25" targetCount="50" attacktype="2" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+					<range rangeType="box" distance="2000" rangeZRotateDegree="120" height="330" width="130" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="300" pushduration="0.2" pushEaseType="1" attackMaterial="1" />
+				</attack>
+				<attack point="p26" targetCount="50" attacktype="2" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+					<range rangeType="box" distance="2000" rangeZRotateDegree="125" height="330" width="130" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="300" pushduration="0.2" pushEaseType="1" attackMaterial="1" />
+				</attack>
+				<attack point="p27" targetCount="50" attacktype="2" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+					<range rangeType="box" distance="2000" rangeZRotateDegree="130" height="330" width="130" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="300" pushduration="0.2" pushEaseType="1" attackMaterial="1" />
+				</attack>
+				<attack point="p28" targetCount="50" attacktype="2" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+					<range rangeType="box" distance="2000" rangeZRotateDegree="135" height="330" width="130" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="300" pushduration="0.2" pushEaseType="1" attackMaterial="1" />
+				</attack>
+				<attack point="p29" targetCount="50" attacktype="2" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+					<range rangeType="box" distance="2000" rangeZRotateDegree="140" height="330" width="130" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="300" pushduration="0.2" pushEaseType="1" attackMaterial="1" />
+				</attack>
+				<attack point="p30" targetCount="50" attacktype="2" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+					<range rangeType="box" distance="2000" rangeZRotateDegree="145" height="330" width="130" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="300" pushduration="0.2" pushEaseType="1" attackMaterial="1" />
+				</attack>
+				<attack point="p31" targetCount="50" attacktype="2" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+					<range rangeType="box" distance="2000" rangeZRotateDegree="150" height="330" width="130" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="300" pushduration="0.2" pushEaseType="1" attackMaterial="1" />
+				</attack>
+				<attack point="p32" targetCount="50" attacktype="2" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+					<range rangeType="box" distance="2000" rangeZRotateDegree="155" height="330" width="130" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="300" pushduration="0.2" pushEaseType="1" attackMaterial="1" />
+				</attack>
+				<attack point="p33" targetCount="50" attacktype="2" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+					<range rangeType="box" distance="2000" rangeZRotateDegree="160" height="330" width="130" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="300" pushduration="0.2" pushEaseType="1" attackMaterial="1" />
+				</attack>
+				<attack point="p34" targetCount="50" attacktype="2" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+					<range rangeType="box" distance="2000" rangeZRotateDegree="165" height="330" width="130" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="300" pushduration="0.2" pushEaseType="1" attackMaterial="1" />
+				</attack>
+				<attack point="p35" targetCount="50" attacktype="2" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+					<range rangeType="box" distance="2000" rangeZRotateDegree="170" height="330" width="130" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="300" pushduration="0.2" pushEaseType="1" attackMaterial="1" />
+				</attack>
+				<attack point="p36" targetCount="50" attacktype="2" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+					<range rangeType="box" distance="2000" rangeZRotateDegree="175" height="330" width="130" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="300" pushduration="0.2" pushEaseType="1" attackMaterial="1" />
+				</attack>
+				<attack point="p37" targetCount="50" attacktype="2" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+					<range rangeType="box" distance="2000" rangeZRotateDegree="180" height="330" width="130" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="300" pushduration="0.2" pushEaseType="1" attackMaterial="1" />
+				</attack>
+				<attack point="p38" targetCount="50" attacktype="2" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+					<range rangeType="box" distance="2000" rangeZRotateDegree="185" height="330" width="130" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="300" pushduration="0.2" pushEaseType="1" attackMaterial="1" />
+				</attack>
+				<attack point="p39" targetCount="50" attacktype="2" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+					<range rangeType="box" distance="2000" rangeZRotateDegree="190" height="330" width="130" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="300" pushduration="0.2" pushEaseType="1" attackMaterial="1" />
+				</attack>
+				<attack point="p40" targetCount="50" attacktype="2" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+					<range rangeType="box" distance="2000" rangeZRotateDegree="195" height="330" width="130" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="300" pushduration="0.2" pushEaseType="1" attackMaterial="1" />
+				</attack>
+				<attack point="p41" targetCount="50" attacktype="2" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+					<range rangeType="box" distance="2000" rangeZRotateDegree="200" height="330" width="130" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="300" pushduration="0.2" pushEaseType="1" attackMaterial="1" />
+				</attack>
+				<attack point="p42" targetCount="50" attacktype="2" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+					<range rangeType="box" distance="2000" rangeZRotateDegree="205" height="330" width="130" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="300" pushduration="0.2" pushEaseType="1" attackMaterial="1" />
+				</attack>
+				<attack point="p43" targetCount="50" attacktype="2" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+					<range rangeType="box" distance="2000" rangeZRotateDegree="210" height="330" width="130" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="300" pushduration="0.2" pushEaseType="1" attackMaterial="1" />
+				</attack>
+				<attack point="p44" targetCount="50" attacktype="2" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+					<range rangeType="box" distance="2000" rangeZRotateDegree="215" height="330" width="130" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="300" pushduration="0.2" pushEaseType="1" attackMaterial="1" />
+				</attack>
+				<attack point="p45" targetCount="50" attacktype="2" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+					<range rangeType="box" distance="2000" rangeZRotateDegree="220" height="330" width="130" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="300" pushduration="0.2" pushEaseType="1" attackMaterial="1" />
+				</attack>
+				<attack point="p46" targetCount="50" attacktype="2" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+					<range rangeType="box" distance="2000" rangeZRotateDegree="230" height="330" width="130" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="300" pushduration="0.2" pushEaseType="1" attackMaterial="1" />
+				</attack>
+				<attack point="p47" targetCount="50" attacktype="2" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+					<range rangeType="box" distance="2000" rangeZRotateDegree="235" height="330" width="130" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="300" pushduration="0.2" pushEaseType="1" attackMaterial="1" />
+				</attack>
+				<attack point="p48" targetCount="50" attacktype="2" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+					<range rangeType="box" distance="2000" rangeZRotateDegree="240" height="330" width="130" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="300" pushduration="0.2" pushEaseType="1" attackMaterial="1" />
+				</attack>
+				<attack point="p49" targetCount="50" attacktype="2" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+					<range rangeType="box" distance="2000" rangeZRotateDegree="245" height="330" width="130" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="300" pushduration="0.2" pushEaseType="1" attackMaterial="1" />
+				</attack>
+				<attack point="p50" targetCount="50" attacktype="2" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+					<range rangeType="box" distance="2000" rangeZRotateDegree="250" height="330" width="130" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="300" pushduration="0.2" pushEaseType="1" attackMaterial="1" />
+				</attack>
+				<attack point="p51" targetCount="50" attacktype="2" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+					<range rangeType="box" distance="2000" rangeZRotateDegree="255" height="330" width="130" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="300" pushduration="0.2" pushEaseType="1" attackMaterial="1" />
+				</attack>
+				<attack point="p52" targetCount="50" attacktype="2" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+					<range rangeType="box" distance="2000" rangeZRotateDegree="260" height="330" width="130" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="300" pushduration="0.2" pushEaseType="1" attackMaterial="1" />
+				</attack>
+				<attack point="p53" targetCount="50" attacktype="2" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+					<range rangeType="box" distance="2000" rangeZRotateDegree="265" height="330" width="130" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="300" pushduration="0.2" pushEaseType="1" attackMaterial="1" />
+				</attack>
+				<attack point="p54" targetCount="50" attacktype="2" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+					<range rangeType="box" distance="2000" rangeZRotateDegree="270" height="330" width="130" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="300" pushduration="0.2" pushEaseType="1" attackMaterial="1" />
+				</attack>
+				<attack point="p55" targetCount="50" attacktype="2" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+					<range rangeType="box" distance="2000" rangeZRotateDegree="275" height="330" width="130" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="300" pushduration="0.2" pushEaseType="1" attackMaterial="1" />
+				</attack>
+				<attack point="p56" targetCount="50" attacktype="2" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+					<range rangeType="box" distance="2000" rangeZRotateDegree="280" height="330" width="130" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="300" pushduration="0.2" pushEaseType="1" attackMaterial="1" />
+				</attack>
+				<attack point="p57" targetCount="50" attacktype="2" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+					<range rangeType="box" distance="2000" rangeZRotateDegree="285" height="330" width="130" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="300" pushduration="0.2" pushEaseType="1" attackMaterial="1" />
+				</attack>
+				<attack point="p58" targetCount="50" attacktype="2" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+					<range rangeType="box" distance="2000" rangeZRotateDegree="290" height="330" width="130" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="300" pushduration="0.2" pushEaseType="1" attackMaterial="1" />
+				</attack>
+				<attack point="p59" targetCount="50" attacktype="2" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+					<range rangeType="box" distance="2000" rangeZRotateDegree="300" height="330" width="130" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="300" pushduration="0.2" pushEaseType="1" attackMaterial="1" />
+				</attack>
+				<attack point="p60" targetCount="50" attacktype="2" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+					<range rangeType="box" distance="2000" rangeZRotateDegree="305" height="330" width="130" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="300" pushduration="0.2" pushEaseType="1" attackMaterial="1" />
+				</attack>
+				<attack point="p61" targetCount="50" attacktype="2" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+					<range rangeType="box" distance="2000" rangeZRotateDegree="310" height="330" width="130" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="300" pushduration="0.2" pushEaseType="1" attackMaterial="1" />
+				</attack>
+				<attack point="p62" targetCount="50" attacktype="2" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+					<range rangeType="box" distance="2000" rangeZRotateDegree="315" height="330" width="130" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="300" pushduration="0.2" pushEaseType="1" attackMaterial="1" />
+				</attack>
+				<attack point="p63" targetCount="50" attacktype="2" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+					<range rangeType="box" distance="2000" rangeZRotateDegree="320" height="330" width="130" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="300" pushduration="0.2" pushEaseType="1" attackMaterial="1" />
 				</attack>
 			</motion>
 		</level>
 		<level value="2">
-			<detectProperty rangeType="box" distance="550" height="320" width="500" />
-			<motion sequenceName="Attack_02_B" motionEffect="NPC/Skill/BullArmorBlue/Eff_BullArmorBlue_Attack_02_B_Magic.xml" faceTarget="0" doesPlayIdleOnSkillEnd="false">
-				<attack point="p0" targetCount="50" attacktype="1" unrideOnHit="1">
-					<range rangeType="cylinder" distance="350" rangeAdd="0,0,120" rangeOffset="0,410,0" height="130" applyTarget="1" castTarget="1" />
+			<motion sequenceName="Attack_E" motionEffect="NPC/Skill/BlueLuke/Eff_BlueLuke_Attack_E.xml" faceTarget="0">
+				<attack point="p0" targetCount="50" attacktype="2" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+					<range rangeType="box" distance="2000" height="330" width="130" applyTarget="1" castTarget="1" />
 					<arrow nonTarget="1" />
-					<damage rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="150" pushduration="0.2" pushEaseType="1" attackMaterial="2" />
+					<damage rate="0.2" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="300" pushduration="0.2" pushEaseType="1" attackMaterial="1" />
 				</attack>
-				<attack point="p1" targetCount="1" cubeMagicPathID="5405" attacktype="1" unrideOnHit="1">
-					<range rangeType="cylinder" distance="350" rangeAdd="0,0,120" rangeOffset="0,410,0" height="130" includeCaster="1" applyTarget="2" castTarget="1" />
+				<attack point="p1" targetCount="50" attacktype="2" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+					<range rangeType="box" distance="2000" rangeZRotateDegree="4.5" height="330" width="130" applyTarget="1" castTarget="1" />
 					<arrow nonTarget="1" />
-					<damage count="0" rate="1.2" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="2" />
-					<actionSkill skillID="99999907" level="1" interval="500" fireCount="120" />
+					<damage rate="0.2" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="300" pushduration="0.2" pushEaseType="1" attackMaterial="1" />
+				</attack>
+				<attack point="p2" targetCount="50" attacktype="2" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+					<range rangeType="box" distance="2000" rangeZRotateDegree="9" height="330" width="130" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.2" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="300" pushduration="0.2" pushEaseType="1" attackMaterial="1" />
+				</attack>
+				<attack point="p3" targetCount="50" attacktype="2" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+					<range rangeType="box" distance="2000" rangeZRotateDegree="13.5" height="330" width="130" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.2" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="300" pushduration="0.2" pushEaseType="1" attackMaterial="1" />
+				</attack>
+				<attack point="p4" targetCount="50" attacktype="2" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+					<range rangeType="box" distance="2000" rangeZRotateDegree="18" height="330" width="130" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.2" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="300" pushduration="0.2" pushEaseType="1" attackMaterial="1" />
+				</attack>
+				<attack point="p5" targetCount="50" attacktype="2" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+					<range rangeType="box" distance="2000" rangeZRotateDegree="22.5" height="330" width="130" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.2" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="300" pushduration="0.2" pushEaseType="1" attackMaterial="1" />
+				</attack>
+				<attack point="p6" targetCount="50" attacktype="2" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+					<range rangeType="box" distance="2000" rangeZRotateDegree="27" height="330" width="130" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.2" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="300" pushduration="0.2" pushEaseType="1" attackMaterial="1" />
+				</attack>
+				<attack point="p7" targetCount="50" attacktype="2" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+					<range rangeType="box" distance="2000" rangeZRotateDegree="31.5" height="330" width="130" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.2" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="300" pushduration="0.2" pushEaseType="1" attackMaterial="1" />
+				</attack>
+				<attack point="p8" targetCount="50" attacktype="2" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+					<range rangeType="box" distance="2000" rangeZRotateDegree="36" height="330" width="130" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.2" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="300" pushduration="0.2" pushEaseType="1" attackMaterial="1" />
+				</attack>
+				<attack point="p9" targetCount="50" attacktype="2" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+					<range rangeType="box" distance="2000" rangeZRotateDegree="40.5" height="330" width="130" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.2" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="300" pushduration="0.2" pushEaseType="1" attackMaterial="1" />
+				</attack>
+				<attack point="p10" targetCount="50" attacktype="2" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+					<range rangeType="box" distance="2000" rangeZRotateDegree="45" height="330" width="130" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.2" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="300" pushduration="0.2" pushEaseType="1" attackMaterial="1" />
+				</attack>
+				<attack point="p11" targetCount="50" attacktype="2" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+					<range rangeType="box" distance="2000" rangeZRotateDegree="49.5" height="330" width="130" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.2" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="300" pushduration="0.2" pushEaseType="1" attackMaterial="1" />
+				</attack>
+				<attack point="p12" targetCount="50" attacktype="2" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+					<range rangeType="box" distance="2000" rangeZRotateDegree="54" height="330" width="130" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.2" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="300" pushduration="0.2" pushEaseType="1" attackMaterial="1" />
+				</attack>
+				<attack point="p13" targetCount="50" attacktype="2" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+					<range rangeType="box" distance="2000" rangeZRotateDegree="58.5" height="330" width="130" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.2" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="300" pushduration="0.2" pushEaseType="1" attackMaterial="1" />
+				</attack>
+				<attack point="p14" targetCount="50" attacktype="2" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+					<range rangeType="box" distance="2000" rangeZRotateDegree="63" height="330" width="130" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.2" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="300" pushduration="0.2" pushEaseType="1" attackMaterial="1" />
+				</attack>
+				<attack point="p15" targetCount="50" attacktype="2" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+					<range rangeType="box" distance="2000" rangeZRotateDegree="67.5" height="330" width="130" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.2" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="300" pushduration="0.2" pushEaseType="1" attackMaterial="1" />
+				</attack>
+				<attack point="p16" targetCount="50" attacktype="2" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+					<range rangeType="box" distance="2000" rangeZRotateDegree="72" height="330" width="130" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.2" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="300" pushduration="0.2" pushEaseType="1" attackMaterial="1" />
+				</attack>
+				<attack point="p17" targetCount="50" attacktype="2" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+					<range rangeType="box" distance="2000" rangeZRotateDegree="76.5" height="330" width="130" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.2" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="300" pushduration="0.2" pushEaseType="1" attackMaterial="1" />
+				</attack>
+				<attack point="p18" targetCount="50" attacktype="2" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+					<range rangeType="box" distance="2000" rangeZRotateDegree="81" height="330" width="130" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.2" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="300" pushduration="0.2" pushEaseType="1" attackMaterial="1" />
+				</attack>
+				<attack point="p19" targetCount="50" attacktype="2" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+					<range rangeType="box" distance="2000" rangeZRotateDegree="85.5" height="330" width="130" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.2" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="300" pushduration="0.2" pushEaseType="1" attackMaterial="1" />
+				</attack>
+				<attack point="p20" targetCount="50" attacktype="2" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+					<range rangeType="box" distance="2000" rangeZRotateDegree="90" height="330" width="130" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.2" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="300" pushduration="0.2" pushEaseType="1" attackMaterial="1" />
+				</attack>
+				<attack point="p21" targetCount="50" attacktype="2" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+					<range rangeType="box" distance="2000" rangeZRotateDegree="94.5" height="330" width="130" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.2" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="300" pushduration="0.2" pushEaseType="1" attackMaterial="1" />
+				</attack>
+				<attack point="p22" targetCount="50" attacktype="2" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+					<range rangeType="box" distance="2000" rangeZRotateDegree="99" height="330" width="130" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.2" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="300" pushduration="0.2" pushEaseType="1" attackMaterial="1" />
+				</attack>
+				<attack point="p23" targetCount="50" attacktype="2" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+					<range rangeType="box" distance="2000" rangeZRotateDegree="103.5" height="330" width="130" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.2" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="300" pushduration="0.2" pushEaseType="1" attackMaterial="1" />
+				</attack>
+				<attack point="p24" targetCount="50" attacktype="2" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+					<range rangeType="box" distance="2000" rangeZRotateDegree="108" height="330" width="130" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.2" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="300" pushduration="0.2" pushEaseType="1" attackMaterial="1" />
+				</attack>
+				<attack point="p25" targetCount="50" attacktype="2" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+					<range rangeType="box" distance="2000" rangeZRotateDegree="112.5" height="330" width="130" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.2" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="300" pushduration="0.2" pushEaseType="1" attackMaterial="1" />
+				</attack>
+				<attack point="p26" targetCount="50" attacktype="2" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+					<range rangeType="box" distance="2000" rangeZRotateDegree="117" height="330" width="130" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.2" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="300" pushduration="0.2" pushEaseType="1" attackMaterial="1" />
+				</attack>
+				<attack point="p27" targetCount="50" attacktype="2" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+					<range rangeType="box" distance="2000" rangeZRotateDegree="121.5" height="330" width="130" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.2" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="300" pushduration="0.2" pushEaseType="1" attackMaterial="1" />
+				</attack>
+				<attack point="p28" targetCount="50" attacktype="2" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+					<range rangeType="box" distance="2000" rangeZRotateDegree="126" height="330" width="130" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.2" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="300" pushduration="0.2" pushEaseType="1" attackMaterial="1" />
+				</attack>
+				<attack point="p29" targetCount="50" attacktype="2" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+					<range rangeType="box" distance="2000" rangeZRotateDegree="130.5" height="330" width="130" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.2" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="300" pushduration="0.2" pushEaseType="1" attackMaterial="1" />
+				</attack>
+				<attack point="p30" targetCount="50" attacktype="2" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+					<range rangeType="box" distance="2000" rangeZRotateDegree="135" height="330" width="130" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.2" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="300" pushduration="0.2" pushEaseType="1" attackMaterial="1" />
+				</attack>
+				<attack point="p31" targetCount="50" attacktype="2" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+					<range rangeType="box" distance="2000" rangeZRotateDegree="139.5" height="330" width="130" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.2" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="300" pushduration="0.2" pushEaseType="1" attackMaterial="1" />
+				</attack>
+				<attack point="p32" targetCount="50" attacktype="2" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+					<range rangeType="box" distance="2000" rangeZRotateDegree="144" height="330" width="130" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.2" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="300" pushduration="0.2" pushEaseType="1" attackMaterial="1" />
+				</attack>
+				<attack point="p33" targetCount="50" attacktype="2" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+					<range rangeType="box" distance="2000" rangeZRotateDegree="148.5" height="330" width="130" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.2" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="300" pushduration="0.2" pushEaseType="1" attackMaterial="1" />
+				</attack>
+				<attack point="p34" targetCount="50" attacktype="2" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+					<range rangeType="box" distance="2000" rangeZRotateDegree="153" height="330" width="130" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.2" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="300" pushduration="0.2" pushEaseType="1" attackMaterial="1" />
+				</attack>
+				<attack point="p35" targetCount="50" attacktype="2" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+					<range rangeType="box" distance="2000" rangeZRotateDegree="157.5" height="330" width="130" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.2" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="300" pushduration="0.2" pushEaseType="1" attackMaterial="1" />
+				</attack>
+				<attack point="p36" targetCount="50" attacktype="2" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+					<range rangeType="box" distance="2000" rangeZRotateDegree="162" height="330" width="130" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.2" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="300" pushduration="0.2" pushEaseType="1" attackMaterial="1" />
+				</attack>
+				<attack point="p37" targetCount="50" attacktype="2" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+					<range rangeType="box" distance="2000" rangeZRotateDegree="166.5" height="330" width="130" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.2" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="300" pushduration="0.2" pushEaseType="1" attackMaterial="1" />
+				</attack>
+				<attack point="p38" targetCount="50" attacktype="2" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+					<range rangeType="box" distance="2000" rangeZRotateDegree="171" height="330" width="130" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.2" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="300" pushduration="0.2" pushEaseType="1" attackMaterial="1" />
+				</attack>
+				<attack point="p39" targetCount="50" attacktype="2" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+					<range rangeType="box" distance="2000" rangeZRotateDegree="175.5" height="330" width="130" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.2" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="300" pushduration="0.2" pushEaseType="1" attackMaterial="1" />
+				</attack>
+				<attack point="p40" targetCount="50" attacktype="2" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+					<range rangeType="box" distance="2000" rangeZRotateDegree="180" height="330" width="130" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.2" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="300" pushduration="0.2" pushEaseType="1" attackMaterial="1" />
+				</attack>
+				<attack point="p41" targetCount="50" attacktype="2" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+					<range rangeType="box" distance="2000" rangeZRotateDegree="184.5" height="330" width="130" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.2" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="300" pushduration="0.2" pushEaseType="1" attackMaterial="1" />
+				</attack>
+				<attack point="p42" targetCount="50" attacktype="2" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+					<range rangeType="box" distance="2000" rangeZRotateDegree="189" height="330" width="130" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.2" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="300" pushduration="0.2" pushEaseType="1" attackMaterial="1" />
+				</attack>
+				<attack point="p43" targetCount="50" attacktype="2" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+					<range rangeType="box" distance="2000" rangeZRotateDegree="193.5" height="330" width="130" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.2" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="300" pushduration="0.2" pushEaseType="1" attackMaterial="1" />
+				</attack>
+				<attack point="p44" targetCount="50" attacktype="2" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+					<range rangeType="box" distance="2000" rangeZRotateDegree="198" height="330" width="130" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.2" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="300" pushduration="0.2" pushEaseType="1" attackMaterial="1" />
+				</attack>
+				<attack point="p45" targetCount="50" attacktype="2" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+					<range rangeType="box" distance="2000" rangeZRotateDegree="202.5" height="330" width="130" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.2" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="300" pushduration="0.2" pushEaseType="1" attackMaterial="1" />
+				</attack>
+				<attack point="p46" targetCount="50" attacktype="2" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+					<range rangeType="box" distance="2000" rangeZRotateDegree="207" height="330" width="130" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.2" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="300" pushduration="0.2" pushEaseType="1" attackMaterial="1" />
+				</attack>
+				<attack point="p47" targetCount="50" attacktype="2" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+					<range rangeType="box" distance="2000" rangeZRotateDegree="211.5" height="330" width="130" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.2" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="300" pushduration="0.2" pushEaseType="1" attackMaterial="1" />
+				</attack>
+				<attack point="p48" targetCount="50" attacktype="2" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+					<range rangeType="box" distance="2000" rangeZRotateDegree="216" height="330" width="130" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.2" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="300" pushduration="0.2" pushEaseType="1" attackMaterial="1" />
+				</attack>
+				<attack point="p49" targetCount="50" attacktype="2" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+					<range rangeType="box" distance="2000" rangeZRotateDegree="220.5" height="330" width="130" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.2" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="300" pushduration="0.2" pushEaseType="1" attackMaterial="1" />
+				</attack>
+				<attack point="p50" targetCount="50" attacktype="2" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+					<range rangeType="box" distance="2000" rangeZRotateDegree="225" height="330" width="130" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.2" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="300" pushduration="0.2" pushEaseType="1" attackMaterial="1" />
+				</attack>
+				<attack point="p51" targetCount="50" attacktype="2" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+					<range rangeType="box" distance="2000" rangeZRotateDegree="229.5" height="330" width="130" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.2" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="300" pushduration="0.2" pushEaseType="1" attackMaterial="1" />
+				</attack>
+				<attack point="p52" targetCount="50" attacktype="2" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+					<range rangeType="box" distance="2000" rangeZRotateDegree="234" height="330" width="130" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.2" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="300" pushduration="0.2" pushEaseType="1" attackMaterial="1" />
+				</attack>
+				<attack point="p53" targetCount="50" attacktype="2" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+					<range rangeType="box" distance="2000" rangeZRotateDegree="238.5" height="330" width="130" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.2" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="300" pushduration="0.2" pushEaseType="1" attackMaterial="1" />
+				</attack>
+				<attack point="p54" targetCount="50" attacktype="2" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+					<range rangeType="box" distance="2000" rangeZRotateDegree="243" height="330" width="130" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.2" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="300" pushduration="0.2" pushEaseType="1" attackMaterial="1" />
+				</attack>
+				<attack point="p55" targetCount="50" attacktype="2" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+					<range rangeType="box" distance="2000" rangeZRotateDegree="247.5" height="330" width="130" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.2" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="300" pushduration="0.2" pushEaseType="1" attackMaterial="1" />
+				</attack>
+				<attack point="p56" targetCount="50" attacktype="2" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+					<range rangeType="box" distance="2000" rangeZRotateDegree="252" height="330" width="130" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.2" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="300" pushduration="0.2" pushEaseType="1" attackMaterial="1" />
+				</attack>
+				<attack point="p57" targetCount="50" attacktype="2" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+					<range rangeType="box" distance="2000" rangeZRotateDegree="256.5" height="330" width="130" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.2" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="300" pushduration="0.2" pushEaseType="1" attackMaterial="1" />
+				</attack>
+				<attack point="p58" targetCount="50" attacktype="2" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+					<range rangeType="box" distance="2000" rangeZRotateDegree="261" height="330" width="130" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.2" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="300" pushduration="0.2" pushEaseType="1" attackMaterial="1" />
+				</attack>
+				<attack point="p59" targetCount="50" attacktype="2" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+					<range rangeType="box" distance="2000" rangeZRotateDegree="265.5" height="330" width="130" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.2" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="300" pushduration="0.2" pushEaseType="1" attackMaterial="1" />
+				</attack>
+				<attack point="p60" targetCount="50" attacktype="2" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+					<range rangeType="box" distance="2000" rangeZRotateDegree="270" height="330" width="130" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.2" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="300" pushduration="0.2" pushEaseType="1" attackMaterial="1" />
+				</attack>
+				<attack point="p61" targetCount="50" attacktype="2" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+					<range rangeType="box" distance="2000" rangeZRotateDegree="274.5" height="330" width="130" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.2" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="300" pushduration="0.2" pushEaseType="1" attackMaterial="1" />
+				</attack>
+				<attack point="p62" targetCount="50" attacktype="2" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+					<range rangeType="box" distance="2000" rangeZRotateDegree="279" height="330" width="130" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.2" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="300" pushduration="0.2" pushEaseType="1" attackMaterial="1" />
+				</attack>
+				<attack point="p63" targetCount="50" attacktype="2" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+					<range rangeType="box" distance="2000" rangeZRotateDegree="283.5" height="330" width="130" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.2" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="300" pushduration="0.2" pushEaseType="1" attackMaterial="1" />
 				</attack>
 			</motion>
 		</level>
 		<level value="3">
-			<detectProperty rangeType="box" distance="800" height="320" width="500" />
-			<motion sequenceName="Attack_02_B" motionEffect="NPC/Skill/BullArmorBlue/Eff_BullArmorBlue_Attack_02_B_Magic.xml" movedistance="330" faceTarget="0" doesPlayIdleOnSkillEnd="false">
-				<attack point="p0" targetCount="50" attacktype="1" unrideOnHit="1">
-					<range rangeType="cylinder" distance="350" rangeAdd="0,0,120" rangeOffset="0,410,0" height="130" applyTarget="1" castTarget="1" />
+			<motion sequenceName="Attack_E" motionEffect="NPC/Skill/BlueLuke/Eff_BlueLuke_Attack_E.xml" faceTarget="0">
+				<attack point="p0" targetCount="50" attacktype="2" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+					<range rangeType="box" distance="2000" height="330" width="130" applyTarget="1" castTarget="1" />
 					<arrow nonTarget="1" />
-					<damage rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="150" pushduration="0.2" pushEaseType="1" attackMaterial="2" />
+					<damage rate="0.3" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="300" pushduration="0.2" pushEaseType="1" attackMaterial="1" />
 				</attack>
-				<attack point="p1" targetCount="1" cubeMagicPathID="5405" attacktype="1" unrideOnHit="1">
-					<range rangeType="cylinder" distance="350" rangeAdd="0,0,120" rangeOffset="0,410,0" height="130" includeCaster="1" applyTarget="2" castTarget="1" />
+				<attack point="p1" targetCount="50" attacktype="2" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+					<range rangeType="box" distance="2000" rangeZRotateDegree="4.5" height="330" width="130" applyTarget="1" castTarget="1" />
 					<arrow nonTarget="1" />
-					<damage count="0" rate="1.2" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="2" />
-					<actionSkill skillID="99999907" level="1" interval="500" fireCount="120" />
+					<damage rate="0.3" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="300" pushduration="0.2" pushEaseType="1" attackMaterial="1" />
 				</attack>
-			</motion>
-		</level>
-		<level value="4">
-			<detectProperty rangeType="box" distance="650" height="320" width="500" />
-			<motion sequenceName="Attack_02_B" motionEffect="NPC/Skill/BullArmorBlue/Eff_BullArmorBlue_Attack_02_B_Magic.xml" movedistance="165" faceTarget="0" doesPlayIdleOnSkillEnd="false">
-				<attack point="p0" targetCount="50" attacktype="1" unrideOnHit="1">
-					<range rangeType="cylinder" distance="350" rangeAdd="0,0,120" rangeOffset="0,410,0" height="130" applyTarget="1" castTarget="1" />
+				<attack point="p2" targetCount="50" attacktype="2" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+					<range rangeType="box" distance="2000" rangeZRotateDegree="9" height="330" width="130" applyTarget="1" castTarget="1" />
 					<arrow nonTarget="1" />
-					<damage rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="150" pushduration="0.2" pushEaseType="1" attackMaterial="2" />
+					<damage rate="0.3" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="300" pushduration="0.2" pushEaseType="1" attackMaterial="1" />
 				</attack>
-				<attack point="p1" targetCount="1" cubeMagicPathID="5405" attacktype="1" unrideOnHit="1">
-					<range rangeType="cylinder" distance="350" rangeAdd="0,0,120" rangeOffset="0,410,0" height="130" includeCaster="1" applyTarget="2" castTarget="1" />
+				<attack point="p3" targetCount="50" attacktype="2" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+					<range rangeType="box" distance="2000" rangeZRotateDegree="13.5" height="330" width="130" applyTarget="1" castTarget="1" />
 					<arrow nonTarget="1" />
-					<damage count="0" rate="1.2" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="2" />
-					<actionSkill skillID="99999907" level="1" interval="500" fireCount="120" />
+					<damage rate="0.3" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="300" pushduration="0.2" pushEaseType="1" attackMaterial="1" />
 				</attack>
-			</motion>
-		</level>
-		<level value="11">
-			<detectProperty rangeType="cylinder" distance="550" height="320" />
-			<motion sequenceName="Attack_001_B" motionEffect="NPC/Skill/BullArmorBlue/Eff_BullArmorBlue_Attack_001_B_Magic.xml" faceTarget="0" doesPlayIdleOnSkillEnd="false">
-				<attack point="p0" attacktype="1" attackMethodType="1" unrideOnHit="1">
-					<range rangeType="cylinder" distance="550" height="320" applyTarget="1" castTarget="1" />
-					<arrow nonTarget="1" effect="NPC/Skill/Temp/Eff_Temp.xml" />
-					<damage count="0" rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="2" />
+				<attack point="p4" targetCount="50" attacktype="2" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+					<range rangeType="box" distance="2000" rangeZRotateDegree="18" height="330" width="130" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.3" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="300" pushduration="0.2" pushEaseType="1" attackMaterial="1" />
+				</attack>
+				<attack point="p5" targetCount="50" attacktype="2" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+					<range rangeType="box" distance="2000" rangeZRotateDegree="22.5" height="330" width="130" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.3" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="300" pushduration="0.2" pushEaseType="1" attackMaterial="1" />
+				</attack>
+				<attack point="p6" targetCount="50" attacktype="2" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+					<range rangeType="box" distance="2000" rangeZRotateDegree="27" height="330" width="130" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.3" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="300" pushduration="0.2" pushEaseType="1" attackMaterial="1" />
+				</attack>
+				<attack point="p7" targetCount="50" attacktype="2" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+					<range rangeType="box" distance="2000" rangeZRotateDegree="31.5" height="330" width="130" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.3" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="300" pushduration="0.2" pushEaseType="1" attackMaterial="1" />
+				</attack>
+				<attack point="p8" targetCount="50" attacktype="2" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+					<range rangeType="box" distance="2000" rangeZRotateDegree="36" height="330" width="130" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.3" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="300" pushduration="0.2" pushEaseType="1" attackMaterial="1" />
+				</attack>
+				<attack point="p9" targetCount="50" attacktype="2" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+					<range rangeType="box" distance="2000" rangeZRotateDegree="40.5" height="330" width="130" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.3" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="300" pushduration="0.2" pushEaseType="1" attackMaterial="1" />
+				</attack>
+				<attack point="p10" targetCount="50" attacktype="2" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+					<range rangeType="box" distance="2000" rangeZRotateDegree="45" height="330" width="130" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.3" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="300" pushduration="0.2" pushEaseType="1" attackMaterial="1" />
+				</attack>
+				<attack point="p11" targetCount="50" attacktype="2" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+					<range rangeType="box" distance="2000" rangeZRotateDegree="49.5" height="330" width="130" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.3" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="300" pushduration="0.2" pushEaseType="1" attackMaterial="1" />
+				</attack>
+				<attack point="p12" targetCount="50" attacktype="2" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+					<range rangeType="box" distance="2000" rangeZRotateDegree="54" height="330" width="130" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.3" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="300" pushduration="0.2" pushEaseType="1" attackMaterial="1" />
+				</attack>
+				<attack point="p13" targetCount="50" attacktype="2" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+					<range rangeType="box" distance="2000" rangeZRotateDegree="58.5" height="330" width="130" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.3" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="300" pushduration="0.2" pushEaseType="1" attackMaterial="1" />
+				</attack>
+				<attack point="p14" targetCount="50" attacktype="2" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+					<range rangeType="box" distance="2000" rangeZRotateDegree="63" height="330" width="130" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.3" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="300" pushduration="0.2" pushEaseType="1" attackMaterial="1" />
+				</attack>
+				<attack point="p15" targetCount="50" attacktype="2" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+					<range rangeType="box" distance="2000" rangeZRotateDegree="67.5" height="330" width="130" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.3" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="300" pushduration="0.2" pushEaseType="1" attackMaterial="1" />
+				</attack>
+				<attack point="p16" targetCount="50" attacktype="2" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+					<range rangeType="box" distance="2000" rangeZRotateDegree="72" height="330" width="130" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.3" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="300" pushduration="0.2" pushEaseType="1" attackMaterial="1" />
+				</attack>
+				<attack point="p17" targetCount="50" attacktype="2" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+					<range rangeType="box" distance="2000" rangeZRotateDegree="76.5" height="330" width="130" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.3" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="300" pushduration="0.2" pushEaseType="1" attackMaterial="1" />
+				</attack>
+				<attack point="p18" targetCount="50" attacktype="2" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+					<range rangeType="box" distance="2000" rangeZRotateDegree="81" height="330" width="130" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.3" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="300" pushduration="0.2" pushEaseType="1" attackMaterial="1" />
+				</attack>
+				<attack point="p19" targetCount="50" attacktype="2" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+					<range rangeType="box" distance="2000" rangeZRotateDegree="85.5" height="330" width="130" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.3" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="300" pushduration="0.2" pushEaseType="1" attackMaterial="1" />
+				</attack>
+				<attack point="p20" targetCount="50" attacktype="2" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+					<range rangeType="box" distance="2000" rangeZRotateDegree="90" height="330" width="130" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.3" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="300" pushduration="0.2" pushEaseType="1" attackMaterial="1" />
+				</attack>
+				<attack point="p21" targetCount="50" attacktype="2" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+					<range rangeType="box" distance="2000" rangeZRotateDegree="94.5" height="330" width="130" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.3" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="300" pushduration="0.2" pushEaseType="1" attackMaterial="1" />
+				</attack>
+				<attack point="p22" targetCount="50" attacktype="2" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+					<range rangeType="box" distance="2000" rangeZRotateDegree="99" height="330" width="130" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.3" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="300" pushduration="0.2" pushEaseType="1" attackMaterial="1" />
+				</attack>
+				<attack point="p23" targetCount="50" attacktype="2" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+					<range rangeType="box" distance="2000" rangeZRotateDegree="103.5" height="330" width="130" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.3" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="300" pushduration="0.2" pushEaseType="1" attackMaterial="1" />
+				</attack>
+				<attack point="p24" targetCount="50" attacktype="2" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+					<range rangeType="box" distance="2000" rangeZRotateDegree="108" height="330" width="130" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.3" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="300" pushduration="0.2" pushEaseType="1" attackMaterial="1" />
+				</attack>
+				<attack point="p25" targetCount="50" attacktype="2" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+					<range rangeType="box" distance="2000" rangeZRotateDegree="112.5" height="330" width="130" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.3" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="300" pushduration="0.2" pushEaseType="1" attackMaterial="1" />
+				</attack>
+				<attack point="p26" targetCount="50" attacktype="2" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+					<range rangeType="box" distance="2000" rangeZRotateDegree="117" height="330" width="130" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.3" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="300" pushduration="0.2" pushEaseType="1" attackMaterial="1" />
+				</attack>
+				<attack point="p27" targetCount="50" attacktype="2" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+					<range rangeType="box" distance="2000" rangeZRotateDegree="121.5" height="330" width="130" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.3" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="300" pushduration="0.2" pushEaseType="1" attackMaterial="1" />
+				</attack>
+				<attack point="p28" targetCount="50" attacktype="2" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+					<range rangeType="box" distance="2000" rangeZRotateDegree="126" height="330" width="130" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.3" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="300" pushduration="0.2" pushEaseType="1" attackMaterial="1" />
+				</attack>
+				<attack point="p29" targetCount="50" attacktype="2" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+					<range rangeType="box" distance="2000" rangeZRotateDegree="130.5" height="330" width="130" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.3" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="300" pushduration="0.2" pushEaseType="1" attackMaterial="1" />
+				</attack>
+				<attack point="p30" targetCount="50" attacktype="2" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+					<range rangeType="box" distance="2000" rangeZRotateDegree="135" height="330" width="130" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.3" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="300" pushduration="0.2" pushEaseType="1" attackMaterial="1" />
+				</attack>
+				<attack point="p31" targetCount="50" attacktype="2" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+					<range rangeType="box" distance="2000" rangeZRotateDegree="139.5" height="330" width="130" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.3" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="300" pushduration="0.2" pushEaseType="1" attackMaterial="1" />
+				</attack>
+				<attack point="p32" targetCount="50" attacktype="2" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+					<range rangeType="box" distance="2000" rangeZRotateDegree="144" height="330" width="130" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.3" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="300" pushduration="0.2" pushEaseType="1" attackMaterial="1" />
+				</attack>
+				<attack point="p33" targetCount="50" attacktype="2" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+					<range rangeType="box" distance="2000" rangeZRotateDegree="148.5" height="330" width="130" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.3" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="300" pushduration="0.2" pushEaseType="1" attackMaterial="1" />
+				</attack>
+				<attack point="p34" targetCount="50" attacktype="2" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+					<range rangeType="box" distance="2000" rangeZRotateDegree="153" height="330" width="130" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.3" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="300" pushduration="0.2" pushEaseType="1" attackMaterial="1" />
+				</attack>
+				<attack point="p35" targetCount="50" attacktype="2" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+					<range rangeType="box" distance="2000" rangeZRotateDegree="157.5" height="330" width="130" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.3" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="300" pushduration="0.2" pushEaseType="1" attackMaterial="1" />
+				</attack>
+				<attack point="p36" targetCount="50" attacktype="2" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+					<range rangeType="box" distance="2000" rangeZRotateDegree="162" height="330" width="130" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.3" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="300" pushduration="0.2" pushEaseType="1" attackMaterial="1" />
+				</attack>
+				<attack point="p37" targetCount="50" attacktype="2" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+					<range rangeType="box" distance="2000" rangeZRotateDegree="166.5" height="330" width="130" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.3" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="300" pushduration="0.2" pushEaseType="1" attackMaterial="1" />
+				</attack>
+				<attack point="p38" targetCount="50" attacktype="2" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+					<range rangeType="box" distance="2000" rangeZRotateDegree="171" height="330" width="130" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.3" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="300" pushduration="0.2" pushEaseType="1" attackMaterial="1" />
+				</attack>
+				<attack point="p39" targetCount="50" attacktype="2" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+					<range rangeType="box" distance="2000" rangeZRotateDegree="175.5" height="330" width="130" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.3" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="300" pushduration="0.2" pushEaseType="1" attackMaterial="1" />
+				</attack>
+				<attack point="p40" targetCount="50" attacktype="2" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+					<range rangeType="box" distance="2000" rangeZRotateDegree="180" height="330" width="130" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.3" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="300" pushduration="0.2" pushEaseType="1" attackMaterial="1" />
+				</attack>
+				<attack point="p41" targetCount="50" attacktype="2" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+					<range rangeType="box" distance="2000" rangeZRotateDegree="184.5" height="330" width="130" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.3" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="300" pushduration="0.2" pushEaseType="1" attackMaterial="1" />
+				</attack>
+				<attack point="p42" targetCount="50" attacktype="2" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+					<range rangeType="box" distance="2000" rangeZRotateDegree="189" height="330" width="130" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.3" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="300" pushduration="0.2" pushEaseType="1" attackMaterial="1" />
+				</attack>
+				<attack point="p43" targetCount="50" attacktype="2" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+					<range rangeType="box" distance="2000" rangeZRotateDegree="193.5" height="330" width="130" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.3" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="300" pushduration="0.2" pushEaseType="1" attackMaterial="1" />
+				</attack>
+				<attack point="p44" targetCount="50" attacktype="2" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+					<range rangeType="box" distance="2000" rangeZRotateDegree="198" height="330" width="130" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.3" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="300" pushduration="0.2" pushEaseType="1" attackMaterial="1" />
+				</attack>
+				<attack point="p45" targetCount="50" attacktype="2" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+					<range rangeType="box" distance="2000" rangeZRotateDegree="202.5" height="330" width="130" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.3" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="300" pushduration="0.2" pushEaseType="1" attackMaterial="1" />
+				</attack>
+				<attack point="p46" targetCount="50" attacktype="2" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+					<range rangeType="box" distance="2000" rangeZRotateDegree="207" height="330" width="130" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.3" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="300" pushduration="0.2" pushEaseType="1" attackMaterial="1" />
+				</attack>
+				<attack point="p47" targetCount="50" attacktype="2" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+					<range rangeType="box" distance="2000" rangeZRotateDegree="211.5" height="330" width="130" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.3" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="300" pushduration="0.2" pushEaseType="1" attackMaterial="1" />
+				</attack>
+				<attack point="p48" targetCount="50" attacktype="2" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+					<range rangeType="box" distance="2000" rangeZRotateDegree="216" height="330" width="130" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.3" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="300" pushduration="0.2" pushEaseType="1" attackMaterial="1" />
+				</attack>
+				<attack point="p49" targetCount="50" attacktype="2" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+					<range rangeType="box" distance="2000" rangeZRotateDegree="220.5" height="330" width="130" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.3" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="300" pushduration="0.2" pushEaseType="1" attackMaterial="1" />
+				</attack>
+				<attack point="p50" targetCount="50" attacktype="2" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+					<range rangeType="box" distance="2000" rangeZRotateDegree="225" height="330" width="130" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.3" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="300" pushduration="0.2" pushEaseType="1" attackMaterial="1" />
+				</attack>
+				<attack point="p51" targetCount="50" attacktype="2" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+					<range rangeType="box" distance="2000" rangeZRotateDegree="229.5" height="330" width="130" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.3" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="300" pushduration="0.2" pushEaseType="1" attackMaterial="1" />
+				</attack>
+				<attack point="p52" targetCount="50" attacktype="2" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+					<range rangeType="box" distance="2000" rangeZRotateDegree="234" height="330" width="130" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.3" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="300" pushduration="0.2" pushEaseType="1" attackMaterial="1" />
+				</attack>
+				<attack point="p53" targetCount="50" attacktype="2" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+					<range rangeType="box" distance="2000" rangeZRotateDegree="238.5" height="330" width="130" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.3" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="300" pushduration="0.2" pushEaseType="1" attackMaterial="1" />
+				</attack>
+				<attack point="p54" targetCount="50" attacktype="2" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+					<range rangeType="box" distance="2000" rangeZRotateDegree="243" height="330" width="130" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.3" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="300" pushduration="0.2" pushEaseType="1" attackMaterial="1" />
+				</attack>
+				<attack point="p55" targetCount="50" attacktype="2" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+					<range rangeType="box" distance="2000" rangeZRotateDegree="247.5" height="330" width="130" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.3" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="300" pushduration="0.2" pushEaseType="1" attackMaterial="1" />
+				</attack>
+				<attack point="p56" targetCount="50" attacktype="2" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+					<range rangeType="box" distance="2000" rangeZRotateDegree="252" height="330" width="130" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.3" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="300" pushduration="0.2" pushEaseType="1" attackMaterial="1" />
+				</attack>
+				<attack point="p57" targetCount="50" attacktype="2" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+					<range rangeType="box" distance="2000" rangeZRotateDegree="256.5" height="330" width="130" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.3" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="300" pushduration="0.2" pushEaseType="1" attackMaterial="1" />
+				</attack>
+				<attack point="p58" targetCount="50" attacktype="2" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+					<range rangeType="box" distance="2000" rangeZRotateDegree="261" height="330" width="130" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.3" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="300" pushduration="0.2" pushEaseType="1" attackMaterial="1" />
+				</attack>
+				<attack point="p59" targetCount="50" attacktype="2" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+					<range rangeType="box" distance="2000" rangeZRotateDegree="265.5" height="330" width="130" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.3" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="300" pushduration="0.2" pushEaseType="1" attackMaterial="1" />
+				</attack>
+				<attack point="p60" targetCount="50" attacktype="2" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+					<range rangeType="box" distance="2000" rangeZRotateDegree="270" height="330" width="130" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.3" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="300" pushduration="0.2" pushEaseType="1" attackMaterial="1" />
+				</attack>
+				<attack point="p61" targetCount="50" attacktype="2" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+					<range rangeType="box" distance="2000" rangeZRotateDegree="274.5" height="330" width="130" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.3" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="300" pushduration="0.2" pushEaseType="1" attackMaterial="1" />
+				</attack>
+				<attack point="p62" targetCount="50" attacktype="2" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+					<range rangeType="box" distance="2000" rangeZRotateDegree="279" height="330" width="130" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.3" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="300" pushduration="0.2" pushEaseType="1" attackMaterial="1" />
+				</attack>
+				<attack point="p63" targetCount="50" attacktype="2" hitImmuneBreak="1" brokenOffence="2" brokenForce="2" unrideOnHit="1">
+					<range rangeType="box" distance="2000" rangeZRotateDegree="283.5" height="330" width="130" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.3" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="300" pushduration="0.2" pushEaseType="1" attackMaterial="1" />
 				</attack>
 			</motion>
 		</level>
@@ -421,79 +1407,404 @@
 	<skill id="44111040">
 		<basic>
 			<ui attackType="1" />
-			<kinds rangeType="2" element="7" />
+			<kinds element="7" />
 		</basic>
 		<level value="1">
-			<motion sequenceName="Attack_01_C" motionEffect="NPC/Skill/BullArmorBlue/Eff_BullArmorBlue_Attack_01_C.xml" faceTarget="0" doesPlayIdleOnSkillEnd="false">
-				<attack point="p0" attacktype="1" attackMethodType="1" unrideOnHit="1">
-					<range rangeType="box" distance="1200" height="320" width="500" applyTarget="1" castTarget="1" />
-					<arrow nonTarget="1" effect="NPC/Skill/Temp/Eff_Temp.xml" />
-					<damage count="0" rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="2" />
+			<motion sequenceName="Attack_F" motionEffect="NPC/Skill/BlueLuke/Eff_BlueLuke_Attack_F_CircleCircle.xml" faceTarget="0">
+				<attack point="p0" targetCount="1" attacktype="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+					<range rangeType="cylinder" distance="1000" height="100" includeCaster="2" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.5" push="1" pushdistance="300" pushduration="0.5" pushEaseType="1" attackMaterial="106" superArmorBreak="1" />
+				</attack>
+				<attack point="p1" targetCount="1" attacktype="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+					<range rangeType="cylinder" distance="1000" rangeOffset="150,0,0" height="100" includeCaster="2" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.5" push="1" pushdistance="300" pushduration="0.5" pushEaseType="1" attackMaterial="106" superArmorBreak="1" />
 				</attack>
 			</motion>
 		</level>
 		<level value="2">
-			<motion sequenceName="Attack_02_C" sequenceSpeed="0.75" loopEffect="NPC/Skill/BullArmorBlue/Eff_BullArmorBlue_Attack_02_C.xml" loopCount="2" faceTarget="0" doesPlayIdleOnSkillEnd="false">
-				<attack point="p0" attacktype="1" attackMethodType="1" unrideOnHit="1">
-					<range rangeType="box" distance="500" height="320" width="500" applyTarget="1" castTarget="1" />
-					<arrow nonTarget="1" effect="NPC/Skill/Temp/Eff_Temp.xml" />
-					<damage count="0" rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="2" />
+			<motion sequenceName="Attack_F" motionEffect="NPC/Skill/BlueLuke/Eff_BlueLuke_Attack_F_DonutDonut.xml" faceTarget="0">
+				<attack point="p0" targetCount="1" attacktype="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+					<range rangeType="hole_cylinder" height="100" width="1000" endWidth="2000" includeCaster="2" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.5" push="1" pushdistance="300" pushduration="0.5" pushEaseType="1" attackMaterial="106" superArmorBreak="1" />
+				</attack>
+				<attack point="p1" targetCount="1" attacktype="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+					<range rangeType="hole_cylinder" height="100" width="1000" endWidth="2000" includeCaster="2" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.5" push="1" pushdistance="300" pushduration="0.5" pushEaseType="1" attackMaterial="106" superArmorBreak="1" />
 				</attack>
 			</motion>
 		</level>
 		<level value="3">
-			<motion sequenceName="Attack_03_C" motionEffect="NPC/Skill/BullArmorBlue/Eff_BullArmorBlue_Attack_03_C.xml" movedistance="1500" ignoreCollisionGroups="4" faceTarget="0" doesPlayIdleOnSkillEnd="false">
-				<attack point="p0" targetCount="1" magicPathID="5406" attacktype="1" attackMethodType="1" hitImmuneBreak="1" brokenOffence="2" brokenForce="3" unrideOnHit="1">
-					<range rangeType="box" distance="1200" height="320" width="500" applyTarget="1" castTarget="1" />
-					<arrow nonTarget="1" bounceType="3" bounceCount="50" collision="300,350,500" effect="NPC/Skill/DevilHugeRed/Eff_DevilHugeRed_Bore_02_B_Ball.xml" />
-					<damage rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="300" pushduration="0.2" pushEaseType="1" attackMaterial="2" />
+			<motion sequenceName="Attack_F" motionEffect="NPC/Skill/BlueLuke/Eff_BlueLuke_Attack_F_CircleDonut.xml" faceTarget="0">
+				<attack point="p0" targetCount="1" attacktype="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+					<range rangeType="cylinder" distance="1000" height="100" includeCaster="2" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.5" push="1" pushdistance="300" pushduration="0.5" pushEaseType="1" attackMaterial="106" superArmorBreak="1" />
+				</attack>
+				<attack point="p1" targetCount="1" attacktype="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+					<range rangeType="hole_cylinder" height="100" width="1000" endWidth="2000" includeCaster="2" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.5" push="1" pushdistance="300" pushduration="0.5" pushEaseType="1" attackMaterial="106" superArmorBreak="1" />
 				</attack>
 			</motion>
 		</level>
 		<level value="4">
-			<motion sequenceName="Attack_04_C" faceTarget="0" doesPlayIdleOnSkillEnd="false">
-				<attack point="p0" attacktype="1" attackMethodType="1" unrideOnHit="1">
-					<range rangeType="box" distance="500" height="320" width="500" applyTarget="1" castTarget="1" />
-					<arrow nonTarget="1" effect="NPC/Skill/Temp/Eff_Temp.xml" />
-					<damage count="0" rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="2" />
+			<motion sequenceName="Attack_F" motionEffect="NPC/Skill/BlueLuke/Eff_BlueLuke_Attack_F_DonutCircle.xml" faceTarget="0">
+				<attack point="p0" targetCount="1" attacktype="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+					<range rangeType="hole_cylinder" height="100" width="1000" endWidth="2000" includeCaster="2" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.5" push="1" pushdistance="300" pushduration="0.5" pushEaseType="1" attackMaterial="106" superArmorBreak="1" />
+				</attack>
+				<attack point="p1" targetCount="1" attacktype="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+					<range rangeType="cylinder" distance="1000" height="100" includeCaster="2" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.5" push="1" pushdistance="300" pushduration="0.5" pushEaseType="1" attackMaterial="106" superArmorBreak="1" />
 				</attack>
 			</motion>
 		</level>
-		<level value="22">
-			<motion sequenceName="Attack_02_C" sequenceSpeed="0.75" loopEffect="NPC/Skill/BullArmorBlue/Eff_BullArmorBlue_Attack_02_C.xml" loopCount="1" faceTarget="0" doesPlayIdleOnSkillEnd="false">
-				<attack point="p0" attacktype="1" attackMethodType="1" unrideOnHit="1">
-					<range rangeType="box" distance="500" height="320" width="500" applyTarget="1" castTarget="1" />
-					<arrow nonTarget="1" effect="NPC/Skill/Temp/Eff_Temp.xml" />
-					<damage count="0" rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="2" />
+		<level value="5">
+			<motion sequenceName="Attack_F" motionEffect="NPC/Skill/BlueLuke/Eff_BlueLuke_Attack_F_CircleCircle.xml" faceTarget="0">
+				<attack point="p0" targetCount="1" attacktype="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+					<range rangeType="cylinder" distance="1000" height="100" includeCaster="2" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.7" push="1" pushdistance="300" pushduration="0.5" pushEaseType="1" attackMaterial="106" superArmorBreak="1" />
+				</attack>
+				<attack point="p1" targetCount="1" attacktype="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+					<range rangeType="cylinder" distance="1000" height="100" includeCaster="2" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.7" push="1" pushdistance="300" pushduration="0.5" pushEaseType="1" attackMaterial="106" superArmorBreak="1" />
+				</attack>
+			</motion>
+		</level>
+		<level value="6">
+			<motion sequenceName="Attack_F" motionEffect="NPC/Skill/BlueLuke/Eff_BlueLuke_Attack_F_DonutDonut.xml" faceTarget="0">
+				<attack point="p0" targetCount="1" attacktype="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+					<range rangeType="hole_cylinder" height="100" width="1000" endWidth="2000" includeCaster="2" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.7" push="1" pushdistance="300" pushduration="0.5" pushEaseType="1" attackMaterial="106" superArmorBreak="1" />
+				</attack>
+				<attack point="p1" targetCount="1" attacktype="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+					<range rangeType="hole_cylinder" height="100" width="1000" endWidth="2000" includeCaster="2" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.7" push="1" pushdistance="300" pushduration="0.5" pushEaseType="1" attackMaterial="106" superArmorBreak="1" />
+				</attack>
+			</motion>
+		</level>
+		<level value="7">
+			<motion sequenceName="Attack_F" motionEffect="NPC/Skill/BlueLuke/Eff_BlueLuke_Attack_F_CircleDonut.xml" faceTarget="0">
+				<attack point="p0" targetCount="1" attacktype="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+					<range rangeType="cylinder" distance="1000" height="100" includeCaster="2" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.7" push="1" pushdistance="300" pushduration="0.5" pushEaseType="1" attackMaterial="106" superArmorBreak="1" />
+				</attack>
+				<attack point="p1" targetCount="1" attacktype="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+					<range rangeType="hole_cylinder" height="100" width="1000" endWidth="2000" includeCaster="2" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.7" push="1" pushdistance="300" pushduration="0.5" pushEaseType="1" attackMaterial="106" superArmorBreak="1" />
+				</attack>
+			</motion>
+		</level>
+		<level value="8">
+			<motion sequenceName="Attack_F" motionEffect="NPC/Skill/BlueLuke/Eff_BlueLuke_Attack_F_DonutCircle.xml" faceTarget="0">
+				<attack point="p0" targetCount="1" attacktype="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+					<range rangeType="hole_cylinder" height="100" width="1000" endWidth="2000" includeCaster="2" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.7" push="1" pushdistance="300" pushduration="0.5" pushEaseType="1" attackMaterial="106" superArmorBreak="1" />
+				</attack>
+				<attack point="p1" targetCount="1" attacktype="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+					<range rangeType="cylinder" distance="1000" height="100" includeCaster="2" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.7" push="1" pushdistance="300" pushduration="0.5" pushEaseType="1" attackMaterial="106" superArmorBreak="1" />
+				</attack>
+			</motion>
+		</level>
+		<level value="9">
+			<motion sequenceName="Attack_F" motionEffect="NPC/Skill/BlueLuke/Eff_BlueLuke_Attack_F_CircleCircle.xml" faceTarget="0">
+				<attack point="p0" targetCount="1" attacktype="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+					<range rangeType="cylinder" distance="1000" height="100" includeCaster="2" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="1" push="1" pushdistance="600" pushduration="0.5" pushEaseType="1" attackMaterial="106" superArmorBreak="1" />
+				</attack>
+				<attack point="p1" targetCount="1" attacktype="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+					<range rangeType="cylinder" distance="1000" height="100" includeCaster="2" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="1" push="1" pushdistance="600" pushduration="0.5" pushEaseType="1" attackMaterial="106" superArmorBreak="1" />
+				</attack>
+			</motion>
+		</level>
+		<level value="10">
+			<motion sequenceName="Attack_F" motionEffect="NPC/Skill/BlueLuke/Eff_BlueLuke_Attack_F_DonutDonut.xml" faceTarget="0">
+				<attack point="p0" targetCount="1" attacktype="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+					<range rangeType="hole_cylinder" height="100" width="1000" endWidth="2000" includeCaster="2" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="1" push="1" pushdistance="600" pushduration="0.5" pushEaseType="1" attackMaterial="106" superArmorBreak="1" />
+				</attack>
+				<attack point="p1" targetCount="1" attacktype="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+					<range rangeType="hole_cylinder" height="100" width="1000" endWidth="2000" includeCaster="2" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="1" push="1" pushdistance="600" pushduration="0.5" pushEaseType="1" attackMaterial="106" superArmorBreak="1" />
+				</attack>
+			</motion>
+		</level>
+		<level value="11">
+			<motion sequenceName="Attack_F" motionEffect="NPC/Skill/BlueLuke/Eff_BlueLuke_Attack_F_CircleDonut.xml" faceTarget="0">
+				<attack point="p0" targetCount="1" attacktype="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+					<range rangeType="cylinder" distance="1000" height="100" includeCaster="2" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="1" push="1" pushdistance="600" pushduration="0.5" pushEaseType="1" attackMaterial="106" superArmorBreak="1" />
+				</attack>
+				<attack point="p1" targetCount="1" attacktype="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+					<range rangeType="hole_cylinder" height="100" width="1000" endWidth="2000" includeCaster="2" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="1" push="1" pushdistance="600" pushduration="0.5" pushEaseType="1" attackMaterial="106" superArmorBreak="1" />
+				</attack>
+			</motion>
+		</level>
+		<level value="12">
+			<motion sequenceName="Attack_F" motionEffect="NPC/Skill/BlueLuke/Eff_BlueLuke_Attack_F_DonutCircle.xml" faceTarget="0">
+				<attack point="p0" targetCount="1" attacktype="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+					<range rangeType="hole_cylinder" height="100" width="1000" endWidth="2000" includeCaster="2" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="1" push="1" pushdistance="600" pushduration="0.5" pushEaseType="1" attackMaterial="106" superArmorBreak="1" />
+				</attack>
+				<attack point="p1" targetCount="1" attacktype="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+					<range rangeType="cylinder" distance="1000" height="100" includeCaster="2" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="1" push="1" pushdistance="600" pushduration="0.5" pushEaseType="1" attackMaterial="106" superArmorBreak="1" />
 				</attack>
 			</motion>
 		</level>
 	</skill>
 	<skill id="44111050">
 		<basic>
-			<ui attackType="2" />
+			<ui attackType="1" />
 			<kinds element="7" />
 		</basic>
 		<level value="1">
-			<motion sequenceName="Attack_01_E" faceTarget="0">
-				<attack point="p0" attacktype="2" attackMethodType="1" unrideOnHit="1">
-					<range rangeType="box" distance="500" height="320" width="500" applyTarget="1" castTarget="1" />
-					<arrow nonTarget="1" effect="NPC/Skill/Temp/Eff_Temp.xml" />
-					<damage count="0" rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
-				</attack>
-			</motion>
-			<motion sequenceName="Attack_02_E" pushCylinderVelH="300" pushCylinderOuter="1100" pushCylinderInner="50" pushCylinderHeight="900" faceTarget="0">
-				<attack point="p0" targetCount="50" attacktype="2" brokenOffence="2" brokenForce="3" unrideOnHit="1">
-					<range rangeType="cylinder" distance="1000" rangeAdd="0,0,120" height="130" applyTarget="1" castTarget="1" />
+			<motion sequenceName="Attack_A" motionEffect="NPC/Skill/BlueLuke/Eff_BlueLuke_Attack_A.xml" faceTarget="0">
+				<attack point="p0" targetCount="1" attacktype="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+					<range rangeType="cylinder" distance="300" rangeOffset="0,200,75" height="300" applyTarget="1" castTarget="1" />
 					<arrow nonTarget="1" />
-					<damage count="0" rate="0.02" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="25" pushduration="0.2" pushEaseType="1" attackMaterial="1" />
+					<damage rate="0.5" push="1" pushdistance="200" pushduration="0.2" pushEaseType="1" attackMaterial="100" />
+				</attack>
+				<attack point="p1" targetCount="1" cubeMagicPathID="44119980" attacktype="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+					<range rangeType="cylinder" distance="3000" height="50" includeCaster="2" applyTarget="2" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage count="0" rate="1" attackMaterial="100" />
+					<actionSkill skillID="44111100" level="1" interval="500" fireCount="2" />
+				</attack>
+				<attack point="p2" targetCount="1" cubeMagicPathID="44119981" attacktype="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+					<range rangeType="cylinder" distance="3000" height="50" includeCaster="2" applyTarget="2" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage count="0" rate="1" attackMaterial="100" />
+					<actionSkill skillID="44111100" level="1" interval="500" fireCount="2" />
+				</attack>
+				<attack point="p3" targetCount="1" cubeMagicPathID="44119982" attacktype="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+					<range rangeType="cylinder" distance="3000" height="50" includeCaster="2" applyTarget="2" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage count="0" rate="1" attackMaterial="100" />
+					<actionSkill skillID="44111100" level="1" interval="500" fireCount="2" />
+				</attack>
+				<attack point="p4" targetCount="1" cubeMagicPathID="44119983" attacktype="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+					<range rangeType="cylinder" distance="3000" height="50" includeCaster="2" applyTarget="2" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage count="0" rate="1" attackMaterial="100" />
+					<actionSkill skillID="44111100" level="1" interval="500" fireCount="2" />
+				</attack>
+				<attack point="p5" targetCount="1" cubeMagicPathID="44119984" attacktype="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+					<range rangeType="cylinder" distance="3000" height="50" includeCaster="2" applyTarget="2" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage count="0" rate="1" attackMaterial="100" />
+					<actionSkill skillID="44111100" level="1" interval="500" fireCount="2" />
+				</attack>
+				<attack point="p6" targetCount="1" cubeMagicPathID="44119985" attacktype="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+					<range rangeType="cylinder" distance="3000" height="50" includeCaster="2" applyTarget="2" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage count="0" rate="1" attackMaterial="100" />
+					<actionSkill skillID="44111100" level="1" interval="500" fireCount="2" />
+				</attack>
+				<attack point="p7" targetCount="1" cubeMagicPathID="44119986" attacktype="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+					<range rangeType="cylinder" distance="3000" height="50" includeCaster="2" applyTarget="2" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage count="0" rate="1" attackMaterial="100" />
+					<actionSkill skillID="44111100" level="1" interval="500" fireCount="2" />
+				</attack>
+				<attack point="p8" targetCount="1" cubeMagicPathID="44119987" attacktype="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+					<range rangeType="cylinder" distance="3000" height="50" includeCaster="2" applyTarget="2" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage count="0" rate="1" attackMaterial="100" />
+					<actionSkill skillID="44111100" level="1" interval="500" fireCount="2" />
+				</attack>
+				<attack point="p9" targetCount="1" cubeMagicPathID="44119988" attacktype="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+					<range rangeType="cylinder" distance="3000" height="50" includeCaster="2" applyTarget="2" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage count="0" rate="1" attackMaterial="100" />
+					<actionSkill skillID="44111100" level="1" interval="500" fireCount="2" />
+				</attack>
+				<attack point="p10" targetCount="1" cubeMagicPathID="44119989" attacktype="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+					<range rangeType="cylinder" distance="3000" height="50" includeCaster="2" applyTarget="2" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage count="0" rate="1" attackMaterial="100" />
+					<actionSkill skillID="44111100" level="1" interval="500" fireCount="2" />
+				</attack>
+				<attack point="p11" targetCount="1" cubeMagicPathID="44119990" attacktype="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+					<range rangeType="cylinder" distance="3000" height="50" includeCaster="2" applyTarget="2" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage count="0" rate="1" attackMaterial="100" />
+					<actionSkill skillID="44111100" level="1" interval="500" fireCount="2" />
 				</attack>
 			</motion>
-			<motion sequenceName="Attack_03_E" faceTarget="0">
-				<attack point="p0" attacktype="2" attackMethodType="1" unrideOnHit="1">
-					<range rangeType="box" distance="500" height="320" width="500" applyTarget="1" castTarget="1" />
-					<arrow nonTarget="1" effect="NPC/Skill/Temp/Eff_Temp.xml" />
-					<damage count="0" rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
+		</level>
+		<level value="2">
+			<motion sequenceName="Attack_A" motionEffect="NPC/Skill/BlueLuke/Eff_BlueLuke_Attack_A.xml" faceTarget="0">
+				<attack point="p0" targetCount="1" attacktype="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+					<range rangeType="cylinder" distance="300" rangeOffset="0,0,75" height="300" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="1" push="1" pushdistance="200" pushduration="0.2" pushEaseType="1" attackMaterial="100" />
+				</attack>
+				<attack point="p1" targetCount="1" cubeMagicPathID="44119980" attacktype="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+					<range rangeType="cylinder" distance="3000" height="50" includeCaster="2" applyTarget="2" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage count="0" rate="1" attackMaterial="100" />
+					<actionSkill skillID="44111100" level="2" interval="500" fireCount="2" />
+				</attack>
+				<attack point="p2" targetCount="1" cubeMagicPathID="44119981" attacktype="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+					<range rangeType="cylinder" distance="3000" height="50" includeCaster="2" applyTarget="2" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage count="0" rate="1" attackMaterial="100" />
+					<actionSkill skillID="44111100" level="2" interval="500" fireCount="2" />
+				</attack>
+				<attack point="p3" targetCount="1" cubeMagicPathID="44119982" attacktype="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+					<range rangeType="cylinder" distance="3000" height="50" includeCaster="2" applyTarget="2" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage count="0" rate="1" attackMaterial="100" />
+					<actionSkill skillID="44111100" level="2" interval="500" fireCount="2" />
+				</attack>
+				<attack point="p4" targetCount="1" cubeMagicPathID="44119983" attacktype="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+					<range rangeType="cylinder" distance="3000" height="50" includeCaster="2" applyTarget="2" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage count="0" rate="1" attackMaterial="100" />
+					<actionSkill skillID="44111100" level="2" interval="500" fireCount="2" />
+				</attack>
+				<attack point="p5" targetCount="1" cubeMagicPathID="44119984" attacktype="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+					<range rangeType="cylinder" distance="3000" height="50" includeCaster="2" applyTarget="2" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage count="0" rate="1" attackMaterial="100" />
+					<actionSkill skillID="44111100" level="2" interval="500" fireCount="2" />
+				</attack>
+				<attack point="p6" targetCount="1" cubeMagicPathID="44119985" attacktype="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+					<range rangeType="cylinder" distance="3000" height="50" includeCaster="2" applyTarget="2" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage count="0" rate="1" attackMaterial="100" />
+					<actionSkill skillID="44111100" level="2" interval="500" fireCount="2" />
+				</attack>
+				<attack point="p7" targetCount="1" cubeMagicPathID="44119986" attacktype="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+					<range rangeType="cylinder" distance="3000" height="50" includeCaster="2" applyTarget="2" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage count="0" rate="1" attackMaterial="100" />
+					<actionSkill skillID="44111100" level="2" interval="500" fireCount="2" />
+				</attack>
+				<attack point="p8" targetCount="1" cubeMagicPathID="44119987" attacktype="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+					<range rangeType="cylinder" distance="3000" height="50" includeCaster="2" applyTarget="2" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage count="0" rate="1" attackMaterial="100" />
+					<actionSkill skillID="44111100" level="2" interval="500" fireCount="2" />
+				</attack>
+				<attack point="p9" targetCount="1" cubeMagicPathID="44119988" attacktype="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+					<range rangeType="cylinder" distance="3000" height="50" includeCaster="2" applyTarget="2" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage count="0" rate="1" attackMaterial="100" />
+					<actionSkill skillID="44111100" level="2" interval="500" fireCount="2" />
+				</attack>
+				<attack point="p10" targetCount="1" cubeMagicPathID="44119989" attacktype="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+					<range rangeType="cylinder" distance="3000" height="50" includeCaster="2" applyTarget="2" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage count="0" rate="1" attackMaterial="100" />
+					<actionSkill skillID="44111100" level="2" interval="500" fireCount="2" />
+				</attack>
+				<attack point="p11" targetCount="1" cubeMagicPathID="44119990" attacktype="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+					<range rangeType="cylinder" distance="3000" height="50" includeCaster="2" applyTarget="2" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage count="0" rate="1" attackMaterial="100" />
+					<actionSkill skillID="44111100" level="2" interval="500" fireCount="2" />
+				</attack>
+			</motion>
+		</level>
+		<level value="3">
+			<motion sequenceName="Attack_A" motionEffect="NPC/Skill/BlueLuke/Eff_BlueLuke_Attack_A.xml" faceTarget="0">
+				<attack point="p0" targetCount="1" attacktype="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+					<range rangeType="cylinder" distance="300" rangeOffset="0,0,75" height="300" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="1" push="1" pushdistance="200" pushduration="0.2" pushEaseType="1" attackMaterial="100" />
+				</attack>
+				<attack point="p1" targetCount="1" cubeMagicPathID="44119980" attacktype="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+					<range rangeType="cylinder" distance="3000" height="50" includeCaster="2" applyTarget="2" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage count="0" rate="1" attackMaterial="100" />
+					<actionSkill skillID="44111100" level="3" interval="500" fireCount="2" />
+				</attack>
+				<attack point="p2" targetCount="1" cubeMagicPathID="44119981" attacktype="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+					<range rangeType="cylinder" distance="3000" height="50" includeCaster="2" applyTarget="2" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage count="0" rate="1" attackMaterial="100" />
+					<actionSkill skillID="44111100" level="3" interval="500" fireCount="2" />
+				</attack>
+				<attack point="p3" targetCount="1" cubeMagicPathID="44119982" attacktype="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+					<range rangeType="cylinder" distance="3000" height="50" includeCaster="2" applyTarget="2" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage count="0" rate="1" attackMaterial="100" />
+					<actionSkill skillID="44111100" level="3" interval="500" fireCount="2" />
+				</attack>
+				<attack point="p4" targetCount="1" cubeMagicPathID="44119983" attacktype="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+					<range rangeType="cylinder" distance="3000" height="50" includeCaster="2" applyTarget="2" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage count="0" rate="1" attackMaterial="100" />
+					<actionSkill skillID="44111100" level="3" interval="500" fireCount="2" />
+				</attack>
+				<attack point="p5" targetCount="1" cubeMagicPathID="44119984" attacktype="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+					<range rangeType="cylinder" distance="3000" height="50" includeCaster="2" applyTarget="2" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage count="0" rate="1" attackMaterial="100" />
+					<actionSkill skillID="44111100" level="3" interval="500" fireCount="2" />
+				</attack>
+				<attack point="p6" targetCount="1" cubeMagicPathID="44119985" attacktype="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+					<range rangeType="cylinder" distance="3000" height="50" includeCaster="2" applyTarget="2" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage count="0" rate="1" attackMaterial="100" />
+					<actionSkill skillID="44111100" level="3" interval="500" fireCount="2" />
+				</attack>
+				<attack point="p7" targetCount="1" cubeMagicPathID="44119986" attacktype="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+					<range rangeType="cylinder" distance="3000" height="50" includeCaster="2" applyTarget="2" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage count="0" rate="1" attackMaterial="100" />
+					<actionSkill skillID="44111100" level="3" interval="500" fireCount="2" />
+				</attack>
+				<attack point="p8" targetCount="1" cubeMagicPathID="44119987" attacktype="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+					<range rangeType="cylinder" distance="3000" height="50" includeCaster="2" applyTarget="2" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage count="0" rate="1" attackMaterial="100" />
+					<actionSkill skillID="44111100" level="3" interval="500" fireCount="2" />
+				</attack>
+				<attack point="p9" targetCount="1" cubeMagicPathID="44119988" attacktype="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+					<range rangeType="cylinder" distance="3000" height="50" includeCaster="2" applyTarget="2" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage count="0" rate="1" attackMaterial="100" />
+					<actionSkill skillID="44111100" level="3" interval="500" fireCount="2" />
+				</attack>
+				<attack point="p10" targetCount="1" cubeMagicPathID="44119989" attacktype="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+					<range rangeType="cylinder" distance="3000" height="50" includeCaster="2" applyTarget="2" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage count="0" rate="1" attackMaterial="100" />
+					<actionSkill skillID="44111100" level="3" interval="500" fireCount="2" />
+				</attack>
+				<attack point="p11" targetCount="1" cubeMagicPathID="44119990" attacktype="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+					<range rangeType="cylinder" distance="3000" height="50" includeCaster="2" applyTarget="2" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage count="0" rate="1" attackMaterial="100" />
+					<actionSkill skillID="44111100" level="3" interval="500" fireCount="2" />
 				</attack>
 			</motion>
 		</level>
@@ -501,21 +1812,15 @@
 	<skill id="44111060">
 		<basic>
 			<ui attackType="1" />
-			<kinds element="7" />
+			<kinds rangeType="1" element="7" />
 		</basic>
 		<level value="1">
-			<motion sequenceName="Attack_01_G" motionEffect="NPC/Skill/BullArmorBlue/Eff_BullArmorBlue_Attack_01_G.xml" faceTarget="0">
-				<attack point="p0" attacktype="1" attackMethodType="1" unrideOnHit="1">
-					<range rangeType="box" distance="380" height="320" width="500" applyTarget="1" castTarget="1" />
-					<arrow nonTarget="1" effect="NPC/Skill/Temp/Eff_Temp.xml" />
-					<damage count="0" rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="2" />
-				</attack>
-			</motion>
-			<motion sequenceName="Attack_02_G" motionEffect="NPC/Skill/BullArmorBlue/Eff_BullArmorBlue_Attack_02_G.xml" faceTarget="0">
-				<attack point="p0" targetCount="50" attacktype="1" unrideOnHit="1">
-					<range rangeType="box" distance="400" rangeAdd="0,120,0" height="320" width="700" applyTarget="1" castTarget="1" />
+			<detectProperty rangeType="box" distance="200" rangeOffset="0,0,50" height="150" width="150" />
+			<motion sequenceName="Attack_A" strTagEffects="e0=NPC/Skill/SalamanderCute/Eff_SalamanderCute_Attack_01_A.xml" movedistance="150">
+				<attack point="p0" targetCount="1" attacktype="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+					<range rangeType="box" distance="200" height="200" width="150" applyTarget="1" castTarget="1" />
 					<arrow nonTarget="1" />
-					<damage rate="0.7" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="2" />
+					<damage rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
 				</attack>
 			</motion>
 		</level>
@@ -523,35 +1828,15 @@
 	<skill id="44111070">
 		<basic>
 			<ui attackType="1" />
-			<kinds element="7" />
+			<kinds rangeType="1" element="1" />
 		</basic>
 		<level value="1">
-			<motion sequenceName="Attack_01_G" motionEffect="NPC/Skill/BullArmorBlue/Eff_BullArmorBlue_Attack_01_G.xml" faceTarget="0">
-				<attack point="p0" attacktype="1" attackMethodType="1" unrideOnHit="1">
-					<range rangeType="box" distance="380" height="320" width="500" applyTarget="1" castTarget="1" />
-					<arrow nonTarget="1" effect="NPC/Skill/Temp/Eff_Temp.xml" />
-					<damage count="0" rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="2" />
-				</attack>
-			</motion>
-			<motion sequenceName="Attack_03_G" motionEffect="NPC/Skill/BullArmorBlue/Eff_BullArmorBlue_Attack_03_G.xml" faceTarget="0">
-				<attack point="p0" targetCount="50" attacktype="1" unrideOnHit="1">
-					<range rangeType="box" distance="400" rangeAdd="0,120,0" height="320" width="700" applyTarget="1" castTarget="1" />
+			<detectProperty rangeType="box" distance="300" rangeOffset="0,0,50" height="150" width="150" />
+			<motion sequenceName="Dead_B" motionEffect="NPC/Skill/BlueLukeJunior/Eff_BlueLukeJunior_Bomb.xml">
+				<attack point="p0" targetCount="1" attacktype="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
+					<range rangeType="cylinder" distance="300" rangeOffset="0,0,0" height="200" applyTarget="1" castTarget="1" />
 					<arrow nonTarget="1" />
-					<damage rate="0.7" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="2" />
-				</attack>
-			</motion>
-			<motion sequenceName="Attack_04_G" motionEffect="NPC/Skill/BullArmorBlue/Eff_BullArmorBlue_Attack_04_G.xml" faceTarget="0">
-				<attack point="p0" attacktype="1" attackMethodType="1" unrideOnHit="1">
-					<range rangeType="box" distance="350" rangeAdd="0,250,0" height="320" width="400" applyTarget="1" castTarget="1" />
-					<arrow nonTarget="1" effect="NPC/Skill/Temp/Eff_Temp.xml" />
-					<damage count="0" rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="2" />
-				</attack>
-			</motion>
-			<motion sequenceName="Attack_05_G" motionEffect="NPC/Skill/BullArmorBlue/Eff_BullArmorBlue_Attack_05_G.xml" movedistance="275" faceTarget="0">
-				<attack point="p0" targetCount="50" attacktype="1" unrideOnHit="1">
-					<range rangeType="box" distance="350" rangeAdd="0,250,0" height="320" width="400" applyTarget="1" castTarget="1" />
-					<arrow nonTarget="1" />
-					<damage rate="0.7" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="2" />
+					<damage rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
 				</attack>
 			</motion>
 		</level>
@@ -559,33 +1844,13 @@
 	<skill id="44111080">
 		<basic>
 			<ui attackType="2" />
-			<kinds element="7" />
+			<kinds element="1" />
 		</basic>
 		<level value="1">
-			<motion sequenceName="Attack_01_E" sequenceSpeed="0.6" motionEffect="NPC/Skill/BullArmorBlue/Eff_BullArmorBlue_Attack_01_E_Crash.xml" faceTarget="0">
-				<attack point="p0" attacktype="2" attackMethodType="1" unrideOnHit="1">
-					<range rangeType="box" distance="500" height="320" width="500" applyTarget="1" castTarget="1" />
-					<arrow nonTarget="1" effect="NPC/Skill/Temp/Eff_Temp.xml" />
-					<damage count="0" rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
-				</attack>
-			</motion>
-			<motion sequenceName="Attack_02_E" sequenceSpeed="0.6" motionEffect="NPC/Skill/BullArmorBlue/Eff_BullArmorBlue_Attack_02_E_Crash.xml" pushCylinderVelH="300" pushCylinderOuter="1100" pushCylinderInner="50" pushCylinderHeight="900" faceTarget="0">
-				<attack point="p0" targetCount="50" attacktype="2" brokenOffence="2" brokenForce="3" unrideOnHit="1">
-					<range rangeType="cylinder" distance="1000" rangeAdd="0,0,120" height="130" applyTarget="1" castTarget="1" />
-					<arrow nonTarget="1" />
-					<damage rate="0.02" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="100" pushduration="0.2" pushEaseType="1" attackMaterial="1" />
-				</attack>
-				<attack point="p1" targetCount="50" attacktype="2" brokenOffence="85" brokenForce="3" unrideOnHit="1">
-					<range rangeType="cylinder" distance="5000" rangeOffset="0,0,200" height="3000" applyTarget="1" castTarget="1" />
-					<arrow nonTarget="1" />
-					<damage rate="0.02" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="1" pushduration="0.2" pushEaseType="1" attackMaterial="1" />
-				</attack>
-			</motion>
-			<motion sequenceName="Attack_03_E" faceTarget="0">
-				<attack point="p0" attacktype="2" attackMethodType="1" unrideOnHit="1">
-					<range rangeType="box" distance="500" height="320" width="500" applyTarget="1" castTarget="1" />
-					<arrow nonTarget="1" effect="NPC/Skill/Temp/Eff_Temp.xml" />
-					<damage count="0" rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
+			<motion motionEffect="NPC/Skill/BlueLuke/Eff_BlueLuke_Attack_B_Fire.xml" splashLifeTick="5000" faceTarget="0">
+				<attack point="p0" targetCount="10" attacktype="2" brokenOffence="1" unrideOnHit="1">
+					<range rangeType="box" distance="45" rangeAdd="0,45,0" height="375" width="90" applyTarget="1" castTarget="1" />
+					<damage rate="0.15" attackMaterial="106" />
 				</attack>
 			</motion>
 		</level>
@@ -593,15 +1858,59 @@
 	<skill id="44111090">
 		<basic>
 			<ui attackType="2" />
-			<kinds rangeType="1" element="7" />
+			<kinds element="1" />
 		</basic>
 		<level value="1">
-			<motion sequenceName="Attack_01_F" motionEffect="NPC/Skill/BullArmorBlue/Eff_BullArmorBlue_Attack_01_F.xml" faceTarget="0">
-				<attack point="p0" targetCount="50" attacktype="2" unrideOnHit="1">
-					<range rangeType="frustum" distance="1300" rangeAdd="0,0,140" height="320" width="400" endWidth="1000" applyTarget="1" castTarget="1" />
-					<arrow nonTarget="1" />
-					<damage rate="0.15" push="1" pushdistance="150" pushduration="0.2" pushEaseType="1" attackMaterial="1" />
-					<actionAdditional additionalID="50000193" level="1" skillTarget="2" skillOwner="1" />
+			<motion motionEffect="NPC/Skill/BlueLuke/Eff_BlueLuke_Attack_D_Fire.xml" splashLifeTick="2000" faceTarget="0">
+				<attack point="p0" targetCount="10" attacktype="2" brokenOffence="1" unrideOnHit="1">
+					<range rangeType="box" distance="45" rangeAdd="0,45,0" height="375" width="90" applyTarget="1" castTarget="1" />
+					<damage rate="0.3" push="1" pushduration="1" pushEaseType="1" pushUpDistance="300" pushPriorityHitImmune="1" attackMaterial="100" />
+				</attack>
+			</motion>
+		</level>
+		<level value="2">
+			<motion motionEffect="NPC/Skill/BlueLuke/Eff_BlueLuke_Attack_D_Fire.xml" splashLifeTick="2000" faceTarget="0">
+				<attack point="p0" targetCount="10" attacktype="2" brokenOffence="1" unrideOnHit="1">
+					<range rangeType="box" distance="45" rangeAdd="0,45,0" height="375" width="90" applyTarget="1" castTarget="1" />
+					<damage rate="0.4" push="1" pushduration="1" pushEaseType="1" pushUpDistance="450" pushPriorityHitImmune="1" attackMaterial="100" />
+				</attack>
+			</motion>
+		</level>
+		<level value="3">
+			<motion motionEffect="NPC/Skill/BlueLuke/Eff_BlueLuke_Attack_D_Fire.xml" splashLifeTick="2000" faceTarget="0">
+				<attack point="p0" targetCount="10" attacktype="2" brokenOffence="1" unrideOnHit="1">
+					<range rangeType="box" distance="45" rangeAdd="0,45,0" height="375" width="90" applyTarget="1" castTarget="1" />
+					<damage rate="0.5" push="1" pushduration="1" pushEaseType="1" pushUpDistance="600" pushPriorityHitImmune="1" attackMaterial="100" />
+				</attack>
+			</motion>
+		</level>
+	</skill>
+	<skill id="44111100">
+		<basic>
+			<ui attackType="2" />
+			<kinds element="1" />
+		</basic>
+		<level value="1">
+			<motion motionEffect="NPC/Skill/BlueLuke/Eff_BlueLuke_Attack_A_Fire.xml" splashLifeTick="1000" faceTarget="0">
+				<attack point="p0" targetCount="10" attacktype="2" brokenOffence="1" unrideOnHit="1">
+					<range rangeType="box" distance="45" rangeAdd="0,45,0" height="375" width="90" applyTarget="1" castTarget="1" />
+					<damage rate="0.15" attackMaterial="106" />
+				</attack>
+			</motion>
+		</level>
+		<level value="2">
+			<motion motionEffect="NPC/Skill/BlueLuke/Eff_BlueLuke_Attack_A_Fire.xml" splashLifeTick="1000" faceTarget="0">
+				<attack point="p0" targetCount="10" attacktype="2" brokenOffence="1" unrideOnHit="1">
+					<range rangeType="box" distance="45" rangeAdd="0,45,0" height="375" width="90" applyTarget="1" castTarget="1" />
+					<damage rate="0.2" attackMaterial="106" />
+				</attack>
+			</motion>
+		</level>
+		<level value="3">
+			<motion motionEffect="NPC/Skill/BlueLuke/Eff_BlueLuke_Attack_A_Fire.xml" splashLifeTick="1000" faceTarget="0">
+				<attack point="p0" targetCount="10" attacktype="2" brokenOffence="1" unrideOnHit="1">
+					<range rangeType="box" distance="45" rangeAdd="0,45,0" height="375" width="90" applyTarget="1" castTarget="1" />
+					<damage rate="0.25" attackMaterial="106" />
 				</attack>
 			</motion>
 		</level>
@@ -628,7 +1937,7 @@
 			<kinds rangeType="1" element="7" />
 		</basic>
 		<level value="1">
-			<detectProperty rangeType="box" distance="200" rangeOffset="0,0,50" height="150" width="150" />
+			<detectProperty rangeType="box" distance="300" rangeOffset="0,0,50" height="150" width="150" />
 			<motion sequenceName="Attack_01_B" motionEffect="NPC/Skill/SalamanderCute/Eff_SalamanderCute_Attack_01_B_Fire_Cast.xml" strTagEffects="e0=NPC/Skill/SalamanderCute/Eff_SalamanderCute_Attack_01_B_Fire.xml">
 				<attack point="p0" targetCount="1" attacktype="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
 					<range rangeType="cylinder" distance="150" rangeOffset="0,100,0" height="200" applyTarget="1" castTarget="1" />

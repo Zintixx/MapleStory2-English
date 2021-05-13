@@ -1,0 +1,2239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ms2>
+	<npc id="32000101">
+		<environment feature="TorrentOfDark" npcAttackGroup="1" npcDefenseGroup="2" nametag="1" minimap="0" hpBar="1" defenceMaterial="1" hitImmune="1" abnormalImmune="1" level="50" rankIcon="c" carePathToEnemy="1" propertyTags="keep_battle,atp_formula_01" raceString="undead" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/02020104_M_SkeletonWhite01_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" customExp="0" lookAtMyPCWhenTalking="0">
+			<model kfm="02020104_M_SkeletonWhite01" shadowScale="170" rotationSpeed="720" walkSpeed="180" runSpeed="360" />
+			<stat hp="81686" asp="100" msp="100" atp="80" evp="82" cap="62" cad="500" car="50" ndd="567" pap="27960" map="27964" par="90" mar="90" scaleStatRate_1="3" scaleBaseTap_1="714854" scaleBaseDef_1="964" scaleBaseSpaRate_1="0.15" scaleStatRate_2="3" scaleBaseTap_2="1582530" scaleBaseDef_2="2000" scaleBaseSpaRate_2="0.15" />
+			<distance avoid="100" sight="2500" sightHeightUP="300" sightHeightDown="0" customLastSightRadius="2500" customLastSightHeightUp="525" customLastSightHeightDown="225" />
+			<skill ids="40262001,40262011" levels="1,1" probs="50,50" />
+			<collision shape="box" width="80" height="110" depth="80" />
+			<capsule radius="70" height="150" />
+			<dead time="2" defaultaction="Dead_A,Dead_B" upaction="Dead_B" />
+			<push back="1" up="1" knockback="1" />
+			<normal action="Idle_A" prob="10000" />
+			<dropiteminfo dropHeight="150" dropDistanceBase="100" dropDistanceRandom="50" globalDropBoxId="74" />
+			<effectdummy>
+				<dummy name="Eff_Head">
+					<attachInfo parentNode="Bip01 Head" />
+					<transform translate="30,0,0" scale="0.9" />
+				</dummy>
+				<dummy name="Eff_Body">
+					<attachInfo parentNode="Bip01 Pelvis" />
+					<transform scale="0.9" />
+				</dummy>
+				<dummy name="Eff_Foot">
+					<attachInfo parentNode="Scene Root" />
+					<transform scale="0.9" />
+				</dummy>
+				<dummy name="Eff_UI">
+					<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,0,150" />
+				</dummy>
+				<dummy name="Eff_Head_World">
+					<attachInfo parentNode="Bip01 Head" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,0,30" scale="0.9" />
+				</dummy>
+				<dummy name="Eff_Body_World">
+					<attachInfo parentNode="Bip01 Pelvis" applyWorldTransform="true" applyLocalScale="false" />
+					<transform scale="0.9" />
+				</dummy>
+				<dummy name="Eff_Foot_World">
+					<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
+					<transform scale="0.9" />
+				</dummy>
+			</effectdummy>
+		</environment>
+		<environment feature="TorrentOfDark" locale="CN" npcAttackGroup="1" npcDefenseGroup="2" nametag="1" minimap="0" hpBar="1" defenceMaterial="1" hitImmune="1" abnormalImmune="1" level="50" rankIcon="c" carePathToEnemy="1" propertyTags="keep_battle,atp_formula_01" raceString="undead" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/02020026_M_StoneRak_CN_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" customExp="0" lookAtMyPCWhenTalking="0">
+			<model kfm="02020026_M_StoneRak_CN" shadowScale="170" rotationSpeed="720" walkSpeed="180" runSpeed="360" />
+			<stat hp="81686" asp="100" msp="100" atp="80" evp="82" cap="62" cad="500" car="50" ndd="567" pap="27960" map="27964" par="90" mar="90" scaleStatRate_1="3" scaleBaseTap_1="714854" scaleBaseDef_1="964" scaleBaseSpaRate_1="0.15" scaleStatRate_2="3" scaleBaseTap_2="1582530" scaleBaseDef_2="2000" scaleBaseSpaRate_2="0.15" />
+			<distance avoid="100" sight="2500" sightHeightUP="300" sightHeightDown="0" customLastSightRadius="2500" customLastSightHeightUp="525" customLastSightHeightDown="225" />
+			<skill ids="40262001,40262011" levels="1,1" probs="50,50" />
+			<collision shape="box" width="80" height="110" depth="80" />
+			<capsule radius="70" height="150" />
+			<dead time="2" defaultaction="Dead_A,Dead_B" upaction="Dead_B" />
+			<push back="1" up="1" knockback="1" />
+			<normal action="Idle_A" prob="10000" />
+			<dropiteminfo dropHeight="150" dropDistanceBase="100" dropDistanceRandom="50" globalDropBoxId="74" />
+			<effectdummy>
+				<dummy name="Eff_Head">
+					<attachInfo parentNode="Bip01 Head" />
+					<transform translate="30,0,0" scale="0.9" />
+				</dummy>
+				<dummy name="Eff_Body">
+					<attachInfo parentNode="Bip01 Pelvis" />
+					<transform scale="0.9" />
+				</dummy>
+				<dummy name="Eff_Foot">
+					<attachInfo parentNode="Scene Root" />
+					<transform scale="0.9" />
+				</dummy>
+				<dummy name="Eff_UI">
+					<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,0,150" />
+				</dummy>
+				<dummy name="Eff_Head_World">
+					<attachInfo parentNode="Bip01 Head" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,0,30" scale="0.9" />
+				</dummy>
+				<dummy name="Eff_Body_World">
+					<attachInfo parentNode="Bip01 Pelvis" applyWorldTransform="true" applyLocalScale="false" />
+					<transform scale="0.9" />
+				</dummy>
+				<dummy name="Eff_Foot_World">
+					<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
+					<transform scale="0.9" />
+				</dummy>
+			</effectdummy>
+		</environment>
+	</npc>
+	<npc id="32000102">
+		<environment feature="TorrentOfDark" locale="CN" npcAttackGroup="1" npcDefenseGroup="2" nametag="1" minimap="0" hpBar="1" defenceMaterial="1" hitImmune="1" abnormalImmune="1" level="50" rankIcon="c" carePathToEnemy="1" propertyTags="keep_battle,atp_formula_01" raceString="undead" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/02020027_M_HalstoneRak_CN_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" customExp="0" lookAtMyPCWhenTalking="0">
+			<model kfm="02020027_M_HalstoneRak_CN" shadowScale="130" rotationSpeed="720" walkSpeed="135" runSpeed="270" />
+			<stat hp="81686" asp="100" msp="100" atp="80" evp="82" cap="62" cad="500" car="50" ndd="567" pap="27960" map="27964" par="90" mar="90" scaleStatRate_1="3" scaleBaseTap_1="714854" scaleBaseDef_1="964" scaleBaseSpaRate_1="0.15" scaleStatRate_2="3" scaleBaseTap_2="1582530" scaleBaseDef_2="2000" scaleBaseSpaRate_2="0.15" />
+			<distance avoid="120" sight="2500" sightHeightUP="300" sightHeightDown="0" customLastSightRadius="2500" customLastSightHeightUp="525" customLastSightHeightDown="225" />
+			<skill ids="40264021,40264031" levels="1,1" probs="80,20" />
+			<collision shape="box" width="80" height="120" depth="80" />
+			<capsule radius="70" height="150" />
+			<dead time="2" defaultaction="Dead_A,Dead_B" upaction="Dead_B" />
+			<push back="1" up="1" knockback="1" />
+			<normal action="Idle_A,Bore_A,Walk_A" prob="4500,1000,4500" movearea="150" />
+			<dropiteminfo dropHeight="150" dropDistanceBase="100" dropDistanceRandom="50" globalDropBoxId="74" />
+			<aiInfo path="AI_DefaultNew_DarkStream.xml" />
+			<effectdummy>
+				<dummy name="Eff_Head">
+					<attachInfo parentNode="Bip01 Head" />
+					<transform translate="30,0,0" scale="0.9" />
+				</dummy>
+				<dummy name="Eff_Body">
+					<attachInfo parentNode="Bip01 Pelvis" />
+					<transform scale="0.9" />
+				</dummy>
+				<dummy name="Eff_Foot">
+					<attachInfo parentNode="Scene Root" />
+					<transform scale="0.9" />
+				</dummy>
+				<dummy name="Eff_UI">
+					<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,0,150" />
+				</dummy>
+				<dummy name="Eff_Head_World">
+					<attachInfo parentNode="Bip01 Head" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,0,30" scale="0.9" />
+				</dummy>
+				<dummy name="Eff_Body_World">
+					<attachInfo parentNode="Bip01 Pelvis" applyWorldTransform="true" applyLocalScale="false" />
+					<transform scale="0.9" />
+				</dummy>
+				<dummy name="Eff_Foot_World">
+					<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
+					<transform scale="0.9" />
+				</dummy>
+			</effectdummy>
+		</environment>
+		<environment feature="TorrentOfDark" npcAttackGroup="1" npcDefenseGroup="2" nametag="1" minimap="0" hpBar="1" defenceMaterial="1" hitImmune="1" abnormalImmune="1" level="50" rankIcon="c" carePathToEnemy="1" propertyTags="keep_battle,atp_formula_01" raceString="undead" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/02020106_L_SkeletonWhiteHorn_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" customExp="0" lookAtMyPCWhenTalking="0">
+			<model kfm="02020106_L_SkeletonWhiteHorn" shadowScale="130" rotationSpeed="720" walkSpeed="135" runSpeed="270" />
+			<stat hp="81686" asp="100" msp="100" atp="80" evp="82" cap="62" cad="500" car="50" ndd="567" pap="27960" map="27964" par="90" mar="90" scaleStatRate_1="3" scaleBaseTap_1="714854" scaleBaseDef_1="964" scaleBaseSpaRate_1="0.15" scaleStatRate_2="3" scaleBaseTap_2="1582530" scaleBaseDef_2="2000" scaleBaseSpaRate_2="0.15" />
+			<distance avoid="120" sight="2500" sightHeightUP="300" sightHeightDown="0" customLastSightRadius="2500" customLastSightHeightUp="525" customLastSightHeightDown="225" />
+			<skill ids="40264001,40264011" levels="1,1" probs="80,20" />
+			<collision shape="box" width="80" height="120" depth="80" />
+			<capsule radius="70" height="150" />
+			<dead time="2" defaultaction="Dead_A,Dead_B" upaction="Dead_B" />
+			<push back="1" up="1" knockback="1" />
+			<normal action="Idle_A,Bore_A,Walk_A" prob="4500,1000,4500" movearea="150" />
+			<dropiteminfo dropHeight="150" dropDistanceBase="100" dropDistanceRandom="50" globalDropBoxId="74" />
+			<aiInfo path="AI_DefaultNew_DarkStream.xml" />
+			<effectdummy>
+				<dummy name="Eff_Head">
+					<attachInfo parentNode="Bip01 Head" />
+					<transform translate="30,0,0" scale="0.9" />
+				</dummy>
+				<dummy name="Eff_Body">
+					<attachInfo parentNode="Bip01 Pelvis" />
+					<transform scale="0.9" />
+				</dummy>
+				<dummy name="Eff_Foot">
+					<attachInfo parentNode="Scene Root" />
+					<transform scale="0.9" />
+				</dummy>
+				<dummy name="Eff_UI">
+					<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,0,150" />
+				</dummy>
+				<dummy name="Eff_Head_World">
+					<attachInfo parentNode="Bip01 Head" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,0,30" scale="0.9" />
+				</dummy>
+				<dummy name="Eff_Body_World">
+					<attachInfo parentNode="Bip01 Pelvis" applyWorldTransform="true" applyLocalScale="false" />
+					<transform scale="0.9" />
+				</dummy>
+				<dummy name="Eff_Foot_World">
+					<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
+					<transform scale="0.9" />
+				</dummy>
+			</effectdummy>
+		</environment>
+	</npc>
+	<npc id="32000201">
+		<environment feature="TorrentOfDark" npcAttackGroup="1" npcDefenseGroup="2" nametag="1" minimap="0" hpBar="1" defenceMaterial="1" hitImmune="1" abnormalImmune="1" level="50" rankIcon="c" carePathToEnemy="1" propertyTags="keep_battle,atp_formula_01" raceString="undead" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/02020190_M_RabbitShortBandagePurple_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" customExp="0" lookAtMyPCWhenTalking="0">
+			<model kfm="02020190_M_RabbitShortBandagePurple" scale="0.7" shadowScale="114" rotationSpeed="720" walkSpeed="170" runSpeed="340" />
+			<stat hp="81686" asp="100" msp="100" atp="80" evp="82" cap="62" cad="500" car="50" ndd="567" pap="27960" map="27964" par="90" mar="90" scaleStatRate_1="3" scaleBaseTap_1="714854" scaleBaseDef_1="964" scaleBaseSpaRate_1="0.15" scaleStatRate_2="3" scaleBaseTap_2="1582530" scaleBaseDef_2="2000" scaleBaseSpaRate_2="0.15" />
+			<distance avoid="70" sight="2500" sightHeightUP="300" sightHeightDown="0" customLastSightRadius="2500" customLastSightHeightUp="525" customLastSightHeightDown="225" />
+			<skill ids="40285001" levels="1" probs="100" />
+			<collision shape="box" width="110" height="130" depth="110" />
+			<capsule radius="50" height="150" />
+			<dead time="2" defaultaction="Dead_A,Dead_B" upaction="Dead_B" />
+			<push back="1" up="1" knockback="1" />
+			<normal action="Idle_A,Bore_A,Walk_A" prob="4500,1000,4500" movearea="150" />
+			<dropiteminfo dropHeight="100" dropDistanceBase="100" dropDistanceRandom="50" globalDropBoxId="74" />
+			<effectdummy>
+				<dummy name="Eff_Head">
+					<attachInfo parentNode="Bip01 Head" />
+					<transform translate="20,0,0" scale="0.7" />
+				</dummy>
+				<dummy name="Eff_Body">
+					<attachInfo parentNode="Bip01 Spine" />
+				</dummy>
+				<dummy name="Eff_Foot">
+					<attachInfo parentNode="Scene Root" />
+					<transform scale="0.7" />
+				</dummy>
+				<dummy name="Eff_UI">
+					<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,-15,120" />
+				</dummy>
+				<dummy name="Eff_Head_World">
+					<attachInfo parentNode="Bip01 Head" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,0,15" scale="0.7" />
+				</dummy>
+				<dummy name="Eff_Body_World">
+					<attachInfo parentNode="Bip01 Spine" applyWorldTransform="true" applyLocalScale="false" />
+					<transform scale="0.7" />
+				</dummy>
+				<dummy name="Eff_Foot_World">
+					<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
+					<transform scale="0.7" />
+				</dummy>
+			</effectdummy>
+		</environment>
+	</npc>
+	<npc id="32000202">
+		<environment feature="TorrentOfDark" npcAttackGroup="1" npcDefenseGroup="2" nametag="1" minimap="0" hpBar="1" defenceMaterial="1" hitImmune="1" abnormalImmune="1" level="50" rankIcon="c" carePathToEnemy="1" propertyTags="keep_battle,atp_formula_01" raceString="undead" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/02020191_M_RabbitTallBandagePurple_P.png" damagedColorScale="8" damagedVibrateDuration="0.9" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" customExp="0" lookAtMyPCWhenTalking="0">
+			<model kfm="02020191_M_RabbitTallBandagePurple" scale="0.7" shadowScale="126" rotationSpeed="720" walkSpeed="160" runSpeed="320" />
+			<stat hp="81686" asp="100" msp="100" atp="80" evp="82" cap="62" cad="500" car="50" ndd="567" pap="27960" map="27964" par="90" mar="90" scaleStatRate_1="3" scaleBaseTap_1="714854" scaleBaseDef_1="964" scaleBaseSpaRate_1="0.15" scaleStatRate_2="3" scaleBaseTap_2="1582530" scaleBaseDef_2="2000" scaleBaseSpaRate_2="0.15" />
+			<distance avoid="70" sight="2500" sightHeightUP="300" sightHeightDown="0" customLastSightRadius="2500" customLastSightHeightUp="525" customLastSightHeightDown="225" />
+			<skill ids="40286001,40286011" levels="1,1" probs="50,50" />
+			<collision shape="box" width="150" height="130" depth="150" />
+			<capsule radius="60" height="150" />
+			<dead time="2" defaultaction="Dead_A,Dead_B" upaction="Dead_B" />
+			<push back="1" up="1" knockback="1" />
+			<normal action="Idle_A,Bore_A,Walk_A" prob="4500,1000,4500" movearea="150" />
+			<dropiteminfo dropHeight="50" dropDistanceBase="100" dropDistanceRandom="50" globalDropBoxId="74" />
+			<aiInfo path="AI_DefaultNew_DarkStream.xml" />
+			<effectdummy>
+				<dummy name="Eff_Head">
+					<attachInfo parentNode="Bip01 Head" />
+					<transform translate="30,0,0" scale="0.9" />
+				</dummy>
+				<dummy name="Eff_Body">
+					<attachInfo parentNode="Bip01 Spine1" />
+					<transform scale="0.9" />
+				</dummy>
+				<dummy name="Eff_Foot">
+					<attachInfo parentNode="Scene Root" />
+					<transform scale="0.9" />
+				</dummy>
+				<dummy name="Eff_UI">
+					<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,0,200" />
+				</dummy>
+				<dummy name="Eff_Head_World">
+					<attachInfo parentNode="Bip01 Head" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,0,20" scale="0.9" />
+				</dummy>
+				<dummy name="Eff_Body_World">
+					<attachInfo parentNode="Bip01 Spine1" applyWorldTransform="true" applyLocalScale="false" />
+					<transform scale="0.9" />
+				</dummy>
+				<dummy name="Eff_Foot_World">
+					<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
+					<transform scale="0.9" />
+				</dummy>
+			</effectdummy>
+		</environment>
+	</npc>
+	<npc id="32000203">
+		<environment feature="TorrentOfDark" npcAttackGroup="1" npcDefenseGroup="2" nametag="1" minimap="0" hpBar="1" defenceMaterial="1" hitImmune="1" abnormalImmune="1" level="50" rankIcon="c" carePathToEnemy="1" propertyTags="keep_battle,atp_formula_01" raceString="undead" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/02020192_M_RabbitFatBandagePurple_P.png" damagedColorScale="8" damagedVibrateDuration="0.9" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" customExp="0" lookAtMyPCWhenTalking="0">
+			<model kfm="02020192_M_RabbitFatBandagePurple" scale="0.7" shadowScale="126" rotationSpeed="720" walkSpeed="95" runSpeed="190" />
+			<stat hp="81686" asp="100" msp="100" atp="80" evp="82" cap="62" cad="500" car="50" ndd="567" pap="27960" map="27964" par="90" mar="90" scaleStatRate_1="3" scaleBaseTap_1="714854" scaleBaseDef_1="964" scaleBaseSpaRate_1="0.15" scaleStatRate_2="3" scaleBaseTap_2="1582530" scaleBaseDef_2="2000" scaleBaseSpaRate_2="0.15" />
+			<distance avoid="70" sight="2500" sightHeightUP="300" sightHeightDown="0" customLastSightRadius="2500" customLastSightHeightUp="525" customLastSightHeightDown="225" />
+			<skill ids="40287001,40287011" levels="1,1" probs="1,99" />
+			<collision shape="box" width="210" height="130" depth="210" />
+			<capsule radius="60" height="150" />
+			<dead time="2" defaultaction="Dead_A" upaction="Dead_A" />
+			<push back="0.5" up="0.5" knockback="0.5" />
+			<normal action="Idle_A,Walk_A" prob="6000,4000" movearea="150" />
+			<dropiteminfo dropHeight="50" dropDistanceBase="100" dropDistanceRandom="50" globalDropBoxId="74" />
+			<aiInfo path="AI_DefaultNew_SplashDot.xml" />
+			<effectdummy>
+				<dummy name="Eff_Head">
+					<attachInfo parentNode="Bip01 Head" />
+					<transform translate="30,-10,0" scale="1.1" />
+				</dummy>
+				<dummy name="Eff_Body">
+					<attachInfo parentNode="Bip01 Spine" />
+					<transform scale="1.1" />
+				</dummy>
+				<dummy name="Eff_Foot">
+					<attachInfo parentNode="Scene Root" />
+					<transform scale="1.1" />
+				</dummy>
+				<dummy name="Eff_UI">
+					<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,0,200" />
+				</dummy>
+				<dummy name="Eff_Head_World">
+					<attachInfo parentNode="Bip01 Head" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,10,20" scale="1.1" />
+				</dummy>
+				<dummy name="Eff_Body_World">
+					<attachInfo parentNode="Bip01 Spine" applyWorldTransform="true" applyLocalScale="false" />
+					<transform scale="1.1" />
+				</dummy>
+				<dummy name="Eff_Foot_World">
+					<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
+					<transform scale="1.1" />
+				</dummy>
+			</effectdummy>
+		</environment>
+	</npc>
+	<npc id="32000301">
+		<environment feature="TorrentOfDark" npcAttackGroup="1" npcDefenseGroup="2" nametag="1" minimap="0" hpBar="1" defenceMaterial="1" hitImmune="1" abnormalImmune="1" level="50" rankIcon="c" carePathToEnemy="1" propertyTags="keep_battle,atp_formula_01" raceString="fairy" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/21090025_M_PimBlack_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" customExp="0" lookAtMyPCWhenTalking="0">
+			<model kfm="21090025_M_PimBlack" scale="1.3" shadowScale="170" rotationSpeed="720" walkSpeed="100" runSpeed="300" />
+			<stat hp="81686" asp="100" msp="100" atp="80" evp="82" cap="62" cad="500" car="50" ndd="567" pap="27960" map="27964" par="90" mar="90" scaleStatRate_1="3" scaleBaseTap_1="714854" scaleBaseDef_1="964" scaleBaseSpaRate_1="0.15" scaleStatRate_2="3" scaleBaseTap_2="1582530" scaleBaseDef_2="2000" scaleBaseSpaRate_2="0.15" />
+			<distance avoid="100" sight="2500" sightHeightUP="300" sightHeightDown="0" />
+			<skill ids="49118001,49118011" levels="1,1" probs="70,30" />
+			<collision shape="box" width="100" height="140" depth="100" />
+			<capsule radius="60" height="150" />
+			<dead time="2" defaultaction="Dead_A,Dead_B" upaction="Dead_B" />
+			<push back="1" up="1" knockback="1" />
+			<normal action="Idle_A,Bore_A,Walk_A" prob="4500,1000,4500" movearea="150" />
+			<dropiteminfo dropHeight="150" dropDistanceBase="100" dropDistanceRandom="50" globalDropBoxId="74" />
+			<aiInfo path="AI_DefaultNew_LessHpUsingOnceIdx2.xml" />
+			<effectdummy>
+				<dummy name="Eff_Head">
+					<attachInfo parentNode="Head_Point01" />
+					<transform translate="30,0,0" scale="0.9" />
+				</dummy>
+				<dummy name="Eff_Body">
+					<attachInfo parentNode="Body_Bone02" />
+					<transform translate="-20,0,0" scale="0.9" />
+				</dummy>
+				<dummy name="Eff_Foot">
+					<attachInfo parentNode="Scene Root" />
+					<transform translate="0,0,50" scale="0.9" />
+				</dummy>
+				<dummy name="Eff_UI">
+					<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,0,190" />
+				</dummy>
+				<dummy name="Eff_Head_World">
+					<attachInfo parentNode="Head_Point01" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,0,30" scale="0.9" />
+				</dummy>
+				<dummy name="Eff_Body_World">
+					<attachInfo parentNode="Body_Bone02" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,10,-20" scale="0.9" />
+				</dummy>
+				<dummy name="Eff_Foot_World">
+					<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,0,50" scale="0.9" />
+				</dummy>
+			</effectdummy>
+		</environment>
+	</npc>
+	<npc id="32000302">
+		<environment feature="TorrentOfDark" npcAttackGroup="1" npcDefenseGroup="2" nametag="1" minimap="0" hpBar="1" defenceMaterial="1" hitImmune="1" abnormalImmune="1" level="50" rankIcon="c" carePathToEnemy="1" propertyTags="keep_battle,atp_formula_01" raceString="undead" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/21000178_M_ZombieBoyNormal_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" customExp="0" lookAtMyPCWhenTalking="0">
+			<model kfm="21000178_M_ZombieBoyNormal" shadowScale="130" rotationSpeed="720" walkSpeed="100" runSpeed="200" />
+			<stat hp="81686" asp="100" msp="100" atp="80" evp="82" cap="62" cad="500" car="50" ndd="567" pap="27960" map="27964" par="90" mar="90" scaleStatRate_1="3" scaleBaseTap_1="714854" scaleBaseDef_1="964" scaleBaseSpaRate_1="0.15" scaleStatRate_2="3" scaleBaseTap_2="1582530" scaleBaseDef_2="2000" scaleBaseSpaRate_2="0.15" />
+			<distance avoid="100" sight="2500" sightHeightUP="300" sightHeightDown="0" customLastSightRadius="2500" customLastSightHeightUp="525" customLastSightHeightDown="225" />
+			<skill ids="40143001,40143011" levels="1,1" probs="50,50" />
+			<collision shape="box" width="85" height="130" depth="80" />
+			<capsule radius="32" height="150" />
+			<dead time="2" defaultaction="Dead_A,Dead_B" upaction="Dead_B" />
+			<push back="1" up="1" knockback="1" />
+			<normal action="Idle_A,Bore_A,Walk_A" prob="4500,1500,4000" movearea="150" />
+			<dropiteminfo dropHeight="100" dropDistanceBase="100" dropDistanceRandom="50" globalDropBoxId="74" />
+			<aiInfo path="AI_DefaultNew_DarkStream.xml" />
+			<effectdummy>
+				<dummy name="Eff_Head">
+					<attachInfo parentNode="Bip01 Head" />
+					<transform translate="20,0,0" />
+				</dummy>
+				<dummy name="Eff_Body">
+					<attachInfo parentNode="Bip01 Spine" />
+					<transform translate="10,10,0" />
+				</dummy>
+				<dummy name="Eff_UI">
+					<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,-30,170" />
+				</dummy>
+				<dummy name="Eff_Head_World">
+					<attachInfo parentNode="Bip01 Head" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,-10,20" />
+				</dummy>
+				<dummy name="Eff_Body_World">
+					<attachInfo parentNode="Bip01 Spine" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,-10,10" scale="0.9" />
+				</dummy>
+			</effectdummy>
+		</environment>
+	</npc>
+	<npc id="32000401">
+		<environment feature="TorrentOfDark" npcAttackGroup="1" npcDefenseGroup="2" nametag="1" minimap="0" hpBar="1" defenceMaterial="1" hitImmune="1" abnormalImmune="1" level="50" rankIcon="c" carePathToEnemy="1" propertyTags="keep_battle,atp_formula_01" raceString="combine" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/21000280_M_RabbitClockZombie_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" customExp="0" lookAtMyPCWhenTalking="0">
+			<model kfm="21000280_M_RabbitClockZombie" shadowScale="130" rotationSpeed="720" walkSpeed="125" runSpeed="250" />
+			<stat hp="40842" asp="100" msp="100" atp="80" evp="82" cap="62" cad="500" car="50" ndd="567" pap="27960" map="27964" par="90" mar="90" scaleStatRate_1="3" scaleBaseTap_1="714854" scaleBaseDef_1="964" scaleBaseSpaRate_1="0.15" scaleStatRate_2="3" scaleBaseTap_2="1582530" scaleBaseDef_2="2000" scaleBaseSpaRate_2="0.15" />
+			<distance avoid="60" sight="2500" sightHeightUP="300" sightHeightDown="0" customLastSightRadius="2500" customLastSightHeightUp="525" customLastSightHeightDown="225" />
+			<skill ids="40212001" levels="1" probs="100" />
+			<collision shape="box" width="85" height="130" depth="80" />
+			<capsule radius="60" height="150" />
+			<dead time="2" defaultaction="Dead_A,Dead_B" upaction="Dead_B" />
+			<push back="1" up="1" knockback="1" />
+			<normal action="Idle_A,Bore_A,Walk_A" prob="4500,1500,4000" movearea="150" />
+			<dropiteminfo dropHeight="150" dropDistanceBase="100" dropDistanceRandom="50" globalDropBoxId="74" />
+			<aiInfo path="AI_DefaultNew_DarkStream.xml" />
+			<effectdummy>
+				<dummy name="Eff_Head">
+					<attachInfo parentNode="Bip01 Head" />
+					<transform translate="25,5,0" />
+				</dummy>
+				<dummy name="Eff_Body">
+					<attachInfo parentNode="Bip01 Footsteps" />
+				</dummy>
+				<dummy name="Eff_UI">
+					<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,0,250" />
+				</dummy>
+				<dummy name="Eff_Head_World">
+					<attachInfo parentNode="Bip01 Head" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,-10,25" />
+				</dummy>
+				<dummy name="Eff_Body_World">
+					<attachInfo parentNode="Bip01 Footsteps" applyWorldTransform="true" applyLocalScale="false" />
+				</dummy>
+			</effectdummy>
+		</environment>
+	</npc>
+	<npc id="32000501">
+		<environment feature="TorrentOfDark" npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="elite_boss" nametag="1" defenceMaterial="1" hitImmune="99" abnormalImmune="99" level="50" class="3" rankIcon="b" carePathToEnemy="1" propertyTags="keep_battle,atp_formula_01" raceString="plant" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/21000320_M_OldBlueMushroom_P.png" damagedVibrateDuration="0.5" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" customExp="0" lookAtMyPCWhenTalking="0">
+			<model kfm="21000320_M_OldBlueMushroom" scale="1.6" shadowScale="400" rotationSpeed="720" walkSpeed="100" runSpeed="200" />
+			<stat hp="387140" asp="100" msp="100" atp="81" evp="82" cap="62" cad="500" car="50" ndd="567" pap="10905" map="10907" par="90" mar="90" scaleStatRate_1="3" scaleBaseTap_1="714854" scaleBaseDef_1="964" scaleBaseSpaRate_1="0.15" scaleStatRate_2="3" scaleBaseTap_2="1582530" scaleBaseDef_2="2000" scaleBaseSpaRate_2="0.15" />
+			<distance avoid="140" sight="2500" sightHeightUP="300" sightHeightDown="0" customLastSightRadius="2500" customLastSightHeightUp="525" customLastSightHeightDown="225" />
+			<skill ids="50000323" levels="1" probs="100" />
+			<additionalEffect codes="60129001" levels="1" />
+			<collision shape="box" width="156.25" height="106.25" depth="156.25" />
+			<capsule radius="130" height="150" />
+			<dead time="2" defaultaction="Dead_A" upaction="Dead_A" />
+			<normal action="Idle_A,Bore_A,Walk_A" prob="3500,3500,3000" movearea="150" />
+			<dropiteminfo dropHeight="150" dropDistanceBase="200" dropDistanceRandom="10" fireVelocity="150" globalDropBoxId="74" />
+			<aiInfo path="AI_MushMomBlue.xml" />
+			<effectdummy>
+				<dummy name="Eff_Head">
+					<attachInfo parentNode="004_Head_Point01" />
+					<transform translate="0,0,20" scale="1.2" />
+				</dummy>
+				<dummy name="Eff_Body">
+					<attachInfo parentNode="004_Main_Point01" />
+					<transform translate="0,0,20" scale="1.2" />
+				</dummy>
+				<dummy name="Eff_Foot">
+					<attachInfo parentNode="Scene Root" />
+					<transform rotation="0,0,90" scale="1.2" />
+				</dummy>
+				<dummy name="Eff_UI">
+					<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,0,250" rotation="0,0,90" />
+				</dummy>
+				<dummy name="Eff_Head_World">
+					<attachInfo parentNode="004_Head_Point01" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,0,30" scale="1.2" />
+				</dummy>
+				<dummy name="Eff_Body_World">
+					<attachInfo parentNode="004_Main_Point01" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,0,30" scale="1.2" />
+				</dummy>
+				<dummy name="Eff_Foot_World">
+					<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
+					<transform rotation="0,0,90" scale="1.2" />
+				</dummy>
+			</effectdummy>
+		</environment>
+	</npc>
+	<npc id="32000601">
+		<environment feature="TorrentOfDark" npcAttackGroup="1" npcDefenseGroup="2" nametag="1" minimap="0" hpBar="1" defenceMaterial="1" hitImmune="1" abnormalImmune="1" level="50" rankIcon="c" carePathToEnemy="1" propertyTags="keep_battle,atp_formula_01" raceString="animal" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/21000302_M_TigerWhite_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" customExp="0" lookAtMyPCWhenTalking="0">
+			<model kfm="21000302_M_TigerWhite" shadowScale="130" rotationSpeed="720" walkSpeed="300" runSpeed="600" />
+			<stat hp="153752" asp="100" msp="100" atp="80" evp="82" cap="300" cad="500" car="50" ndd="567" pap="67403" map="67415" par="150" mar="150" scaleStatRate_1="3" scaleBaseTap_1="933866" scaleBaseDef_1="1177" scaleBaseSpaRate_1="0.2" scaleStatRate_2="3" scaleBaseTap_2="1766735" scaleBaseDef_2="2091" scaleBaseSpaRate_2="0.2" />
+			<distance avoid="60" sight="2500" sightHeightUP="300" sightHeightDown="0" customLastSightRadius="2500" customLastSightHeightUp="525" customLastSightHeightDown="225" />
+			<skill ids="49093011" levels="1" probs="100" />
+			<collision shape="box" width="85" height="110" depth="130" />
+			<capsule radius="60" height="150" />
+			<dead time="2" defaultaction="Dead_A,Dead_B" upaction="Dead_B" />
+			<push back="1" up="1" knockback="1" />
+			<normal action="Idle_A,Bore_A,Walk_A" prob="4500,1500,4000" movearea="150" />
+			<dropiteminfo dropHeight="50" dropDistanceBase="100" dropDistanceRandom="50" globalDropBoxId="74" />
+			<aiInfo path="AI_DefaultNew_DarkStream.xml" />
+			<effectdummy>
+				<dummy name="Eff_Head">
+					<attachInfo parentNode="Bip01 Head" />
+					<transform translate="20,0,0" />
+				</dummy>
+				<dummy name="Eff_Body">
+					<attachInfo parentNode="Bip01 Spine1" />
+					<transform translate="0,20,0" />
+				</dummy>
+				<dummy name="Eff_UI">
+					<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,-30,130" />
+				</dummy>
+				<dummy name="Eff_Head_World">
+					<attachInfo parentNode="Bip01 Head" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,0,20" />
+				</dummy>
+				<dummy name="Eff_Body_World">
+					<attachInfo parentNode="Bip01 Spine1" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,0,-20" />
+				</dummy>
+			</effectdummy>
+		</environment>
+	</npc>
+	<npc id="32000602">
+		<environment feature="TorrentOfDark" npcAttackGroup="1" npcDefenseGroup="2" nametag="1" minimap="0" hpBar="1" defenceMaterial="1" hitImmune="1" abnormalImmune="1" level="50" rankIcon="c" carePathToEnemy="1" propertyTags="keep_battle,atp_formula_01" raceString="animal" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/21000303_M_TigerBlack_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" customExp="0" lookAtMyPCWhenTalking="0">
+			<model kfm="21000303_M_TigerBlack" shadowScale="130" rotationSpeed="720" />
+			<stat hp="200288" asp="100" msp="100" atp="80" evp="82" cap="300" cad="500" car="50" ndd="567" pap="67403" map="67415" par="150" mar="150" scaleStatRate_1="3" scaleBaseTap_1="933866" scaleBaseDef_1="1177" scaleBaseSpaRate_1="0.2" scaleStatRate_2="3" scaleBaseTap_2="1766735" scaleBaseDef_2="2091" scaleBaseSpaRate_2="0.2" />
+			<distance avoid="60" sight="2500" sightHeightUP="300" sightHeightDown="0" customLastSightRadius="2500" customLastSightHeightUp="525" customLastSightHeightDown="225" />
+			<skill ids="49094001" levels="1" probs="100" />
+			<collision shape="box" width="85" height="110" depth="130" />
+			<capsule radius="60" height="150" />
+			<dead time="2" defaultaction="Dead_A,Dead_B" upaction="Dead_B" />
+			<push back="1" up="1" knockback="1" />
+			<normal action="Idle_A,Bore_A,Walk_A" prob="4500,1500,4000" />
+			<dropiteminfo dropHeight="50" dropDistanceBase="100" dropDistanceRandom="50" globalDropBoxId="74" />
+			<aiInfo path="AI_DefaultNew_NotMove.xml" />
+			<effectdummy>
+				<dummy name="Eff_Head">
+					<attachInfo parentNode="Bip01 Head" />
+					<transform translate="20,0,0" />
+				</dummy>
+				<dummy name="Eff_Body">
+					<attachInfo parentNode="Bip01 Spine1" />
+					<transform translate="0,20,0" />
+				</dummy>
+				<dummy name="Eff_UI">
+					<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,-30,130" />
+				</dummy>
+				<dummy name="Eff_Head_World">
+					<attachInfo parentNode="Bip01 Head" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,0,20" />
+				</dummy>
+				<dummy name="Eff_Body_World">
+					<attachInfo parentNode="Bip01 Spine1" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,0,-20" />
+				</dummy>
+			</effectdummy>
+		</environment>
+	</npc>
+	<npc id="32000701">
+		<environment feature="TorrentOfDark" npcAttackGroup="1" npcDefenseGroup="2" nametag="1" minimap="0" hpBar="1" defenceMaterial="1" hitImmune="1" abnormalImmune="1" level="50" rankIcon="c" carePathToEnemy="1" propertyTags="keep_battle,atp_formula_01" raceString="combine" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/21000281_M_GoblinMohicanJuniorBlue_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" customExp="0" lookAtMyPCWhenTalking="0">
+			<model kfm="21000281_M_GoblinMohicanJuniorBlue" scale="0.8" shadowScale="130" rotationSpeed="720" />
+			<stat hp="246760" asp="100" msp="100" atp="80" evp="82" cap="300" cad="500" car="50" ndd="567" pap="342557" map="342618" par="150" mar="150" scaleStatRate_1="3" scaleBaseTap_1="933866" scaleBaseDef_1="1177" scaleBaseSpaRate_1="0.2" scaleStatRate_2="3" scaleBaseTap_2="1766735" scaleBaseDef_2="2091" scaleBaseSpaRate_2="0.2" />
+			<distance avoid="60" sight="2500" sightHeightUP="300" sightHeightDown="0" customLastSightRadius="2500" customLastSightHeightUp="525" customLastSightHeightDown="225" />
+			<skill ids="49095001" levels="1" probs="100" />
+			<collision shape="box" width="150" height="130" depth="150" />
+			<capsule radius="50" height="180" />
+			<dead time="2" defaultaction="Dead_A,Dead_B" upaction="Dead_B" />
+			<push back="1" up="1" knockback="1" />
+			<normal action="Idle_A,Bore_A,Walk_A" prob="4500,1500,4000" />
+			<dropiteminfo dropHeight="50" dropDistanceBase="100" dropDistanceRandom="50" globalDropBoxId="74" />
+			<aiInfo path="AI_DefaultNew_NotMove.xml" />
+			<effectdummy>
+				<dummy name="Eff_Head">
+					<attachInfo parentNode="Bip01 Head" />
+					<transform translate="40,0,0" />
+				</dummy>
+				<dummy name="Eff_Body">
+					<attachInfo parentNode="Bip01 Spine" />
+				</dummy>
+				<dummy name="Eff_UI">
+					<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,-20,150" />
+				</dummy>
+				<dummy name="Eff_Head_World">
+					<attachInfo parentNode="Bip01 Head" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,-10,30" />
+				</dummy>
+				<dummy name="Eff_Body_World">
+					<attachInfo parentNode="Bip01 Spine" applyWorldTransform="true" applyLocalScale="false" />
+				</dummy>
+			</effectdummy>
+		</environment>
+	</npc>
+	<npc id="32000702">
+		<environment feature="TorrentOfDark" npcAttackGroup="1" npcDefenseGroup="2" nametag="1" minimap="0" hpBar="1" defenceMaterial="1" hitImmune="1" abnormalImmune="1" level="50" rankIcon="c" carePathToEnemy="1" propertyTags="keep_battle,atp_formula_01" raceString="combine" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/22000048_N_GoblinMohicanKattlebellBlue_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" customExp="0" lookAtMyPCWhenTalking="0">
+			<model kfm="22000048_N_GoblinMohicanKattlebellBlue" scale="0.8" shadowScale="220" rotationSpeed="720" walkSpeed="100" runSpeed="500" />
+			<stat hp="160102" asp="100" msp="100" atp="80" evp="82" cap="300" cad="500" car="50" ndd="567" pap="96874" map="96891" par="150" mar="150" scaleStatRate_1="3" scaleBaseTap_1="933866" scaleBaseDef_1="1177" scaleBaseSpaRate_1="0.2" scaleStatRate_2="3" scaleBaseTap_2="1766735" scaleBaseDef_2="2091" scaleBaseSpaRate_2="0.2" />
+			<distance avoid="60" sight="2500" sightHeightUP="300" sightHeightDown="0" customLastSightRadius="2500" customLastSightHeightUp="525" customLastSightHeightDown="225" />
+			<skill ids="49096001,49096011" levels="1,1" probs="50,50" />
+			<collision shape="box" width="300" height="130" depth="200" />
+			<capsule radius="80" height="250" />
+			<dead time="2" defaultaction="Dead_A" upaction="Dead_A" />
+			<push back="1" up="1" />
+			<normal action="Idle_A,Bore_A,Walk_A" prob="4500,1500,4000" movearea="250" />
+			<dropiteminfo dropHeight="50" dropDistanceBase="100" dropDistanceRandom="50" globalDropBoxId="74" />
+			<aiInfo path="AI_DefaultNew_DarkStream.xml" />
+			<effectdummy>
+				<dummy name="Eff_Head">
+					<attachInfo parentNode="Bip01 Head" />
+					<transform translate="20,10,0" scale="1.1" />
+				</dummy>
+				<dummy name="Eff_Body">
+					<attachInfo parentNode="Bip01 Pelvis" />
+					<transform translate="0,10,0" scale="1.1" />
+				</dummy>
+				<dummy name="Eff_Foot">
+					<attachInfo parentNode="Scene Root" />
+					<transform scale="1.1" />
+				</dummy>
+				<dummy name="Eff_UI">
+					<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,-60,200" />
+				</dummy>
+				<dummy name="Eff_Head_World">
+					<attachInfo parentNode="Bip01 Head" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,-15,5" scale="1.1" />
+				</dummy>
+				<dummy name="Eff_Body_World">
+					<attachInfo parentNode="Bip01 Pelvis" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,-10,0" scale="1.1" />
+				</dummy>
+				<dummy name="Eff_Foot_World">
+					<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
+					<transform scale="1.1" />
+				</dummy>
+			</effectdummy>
+		</environment>
+	</npc>
+	<npc id="32000801">
+		<environment feature="TorrentOfDark" npcAttackGroup="1" npcDefenseGroup="2" nametag="1" minimap="0" hpBar="1" defenceMaterial="1" hitImmune="1" abnormalImmune="1" level="50" rankIcon="c" carePathToEnemy="1" propertyTags="keep_battle,atp_formula_01" raceString="combine" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/21000307_M_PelicanFighterShortYellow_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" customExp="0" lookAtMyPCWhenTalking="0">
+			<model kfm="21000307_M_PelicanFighterShortYellow" shadowScale="130" rotationSpeed="720" walkSpeed="160" runSpeed="320" />
+			<stat hp="48383" asp="100" msp="100" atp="80" evp="82" cap="310" cad="500" car="50" ndd="567" pap="106733" map="106752" par="150" mar="150" scaleStatRate_1="3" scaleBaseTap_1="933866" scaleBaseDef_1="1177" scaleBaseSpaRate_1="0.2" scaleStatRate_2="3" scaleBaseTap_2="1766735" scaleBaseDef_2="2091" scaleBaseSpaRate_2="0.2" />
+			<distance avoid="60" sight="2500" sightHeightUP="300" sightHeightDown="0" customLastSightRadius="2500" customLastSightHeightUp="525" customLastSightHeightDown="225" />
+			<skill ids="49097001,49097011" levels="1,1" probs="50,50" />
+			<collision shape="box" width="85" height="130" depth="80" />
+			<capsule radius="70" height="150" />
+			<dead time="2" defaultaction="Dead_A,Dead_B" upaction="Dead_B" />
+			<push back="1" up="1" knockback="1" />
+			<normal action="Idle_A,Bore_A,Walk_A" prob="4500,1500,4000" movearea="150" />
+			<dropiteminfo dropHeight="50" dropDistanceBase="100" dropDistanceRandom="50" globalDropBoxId="74" />
+			<aiInfo path="AI_DefaultNew_DarkStream.xml" />
+			<effectdummy>
+				<dummy name="Eff_Head">
+					<attachInfo parentNode="Bip01 Head" />
+					<transform translate="10,0,0" scale="0.9" />
+				</dummy>
+				<dummy name="Eff_Body">
+					<attachInfo parentNode="Bip01 Spine" />
+					<transform translate="-10,0,0" scale="0.9" />
+				</dummy>
+				<dummy name="Eff_Foot">
+					<attachInfo parentNode="Scene Root" />
+					<transform scale="0.9" />
+				</dummy>
+				<dummy name="Eff_Head_World">
+					<attachInfo parentNode="Bip01 Head" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,0,10" scale="0.9" />
+				</dummy>
+				<dummy name="Eff_Body_World">
+					<attachInfo parentNode="Bip01 Spine" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,0,-10" scale="0.9" />
+				</dummy>
+				<dummy name="Eff_Foot_World">
+					<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
+					<transform scale="0.9" />
+				</dummy>
+			</effectdummy>
+		</environment>
+	</npc>
+	<npc id="32000802">
+		<environment feature="TorrentOfDark" npcAttackGroup="1" npcDefenseGroup="2" nametag="1" minimap="0" hpBar="1" defenceMaterial="1" hitImmune="1" abnormalImmune="1" level="50" rankIcon="c" carePathToEnemy="1" propertyTags="keep_battle,atp_formula_01" raceString="combine" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/21000308_M_PelicanFighterBandageYellow_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" customExp="0" lookAtMyPCWhenTalking="0">
+			<model kfm="21000308_M_PelicanFighterBandageYellow" shadowScale="130" rotationSpeed="720" walkSpeed="150" runSpeed="300" />
+			<stat hp="48383" asp="100" msp="100" atp="80" evp="82" cap="310" cad="500" car="50" ndd="567" pap="106733" map="106752" par="150" mar="150" scaleStatRate_1="3" scaleBaseTap_1="933866" scaleBaseDef_1="1177" scaleBaseSpaRate_1="0.2" scaleStatRate_2="3" scaleBaseTap_2="1766735" scaleBaseDef_2="2091" scaleBaseSpaRate_2="0.2" />
+			<distance avoid="60" sight="2500" sightHeightUP="300" sightHeightDown="0" customLastSightRadius="2500" customLastSightHeightUp="525" customLastSightHeightDown="225" />
+			<skill ids="49098001,49098011" levels="1,1" probs="50,50" />
+			<collision shape="box" width="85" height="130" depth="80" />
+			<capsule radius="70" height="150" />
+			<dead time="2" defaultaction="Dead_A,Dead_B" upaction="Dead_B" />
+			<push back="1" up="1" knockback="1" />
+			<normal action="Idle_A,Bore_A,Walk_A" prob="4500,1500,4000" movearea="150" />
+			<dropiteminfo dropHeight="50" dropDistanceBase="100" dropDistanceRandom="50" globalDropBoxId="74" />
+			<aiInfo path="AI_DefaultNew_DarkStream.xml" />
+			<effectdummy>
+				<dummy name="Eff_Head">
+					<attachInfo parentNode="Bip01 Head" />
+					<transform translate="10,0,0" />
+				</dummy>
+				<dummy name="Eff_Body">
+					<attachInfo parentNode="Bip01 Spine" />
+				</dummy>
+				<dummy name="Eff_Head_World">
+					<attachInfo parentNode="Bip01 Head" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,0,10" />
+				</dummy>
+				<dummy name="Eff_Body_World">
+					<attachInfo parentNode="Bip01 Spine" applyWorldTransform="true" applyLocalScale="false" />
+				</dummy>
+			</effectdummy>
+		</environment>
+	</npc>
+	<npc id="32000803">
+		<environment feature="TorrentOfDark" npcAttackGroup="1" npcDefenseGroup="2" nametag="1" minimap="0" hpBar="1" defenceMaterial="1" hitImmune="1" abnormalImmune="1" level="50" rankIcon="c" carePathToEnemy="1" propertyTags="keep_battle,atp_formula_01" raceString="combine" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/21000309_M_PelicanFighterScarYellow_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" customExp="0" lookAtMyPCWhenTalking="0">
+			<model kfm="21000309_M_PelicanFighterScarYellow" shadowScale="130" rotationSpeed="720" walkSpeed="145" runSpeed="290" />
+			<stat hp="50246" asp="100" msp="100" atp="80" evp="82" cap="310" cad="500" car="50" ndd="567" pap="106733" map="106752" par="150" mar="150" scaleStatRate_1="3" scaleBaseTap_1="933866" scaleBaseDef_1="1177" scaleBaseSpaRate_1="0.2" scaleStatRate_2="3" scaleBaseTap_2="1766735" scaleBaseDef_2="2091" scaleBaseSpaRate_2="0.2" />
+			<distance avoid="60" sight="2500" sightHeightUP="300" sightHeightDown="0" customLastSightRadius="2500" customLastSightHeightUp="525" customLastSightHeightDown="225" />
+			<skill ids="49099001,49099011" levels="1,1" probs="50,50" />
+			<collision shape="box" width="100" height="130" depth="100" />
+			<capsule radius="90" height="150" />
+			<dead time="2" defaultaction="Dead_A,Dead_B" upaction="Dead_B" />
+			<push back="1" up="1" knockback="1" />
+			<normal action="Idle_A,Bore_A,Walk_A" prob="4500,1500,4000" movearea="150" />
+			<dropiteminfo dropHeight="50" dropDistanceBase="100" dropDistanceRandom="50" globalDropBoxId="74" />
+			<effectdummy>
+				<dummy name="Eff_Head">
+					<attachInfo parentNode="Bip01 Head" />
+					<transform translate="30,0,0" />
+				</dummy>
+				<dummy name="Eff_Body">
+					<attachInfo parentNode="Bip01 Spine" />
+				</dummy>
+				<dummy name="Eff_UI">
+					<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,0,250" />
+				</dummy>
+				<dummy name="Eff_Head_World">
+					<attachInfo parentNode="Bip01 Head" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,-10,30" />
+				</dummy>
+				<dummy name="Eff_Body_World">
+					<attachInfo parentNode="Bip01 Spine" applyWorldTransform="true" applyLocalScale="false" />
+				</dummy>
+			</effectdummy>
+		</environment>
+	</npc>
+	<npc id="32000901">
+		<environment feature="TorrentOfDark" npcAttackGroup="1" npcDefenseGroup="2" nametag="1" minimap="0" hpBar="1" defenceMaterial="1" hitImmune="1" abnormalImmune="1" level="50" rankIcon="c" carePathToEnemy="1" propertyTags="keep_battle,atp_formula_01" raceString="fairy" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/21000415_M_Wraith_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" customExp="0" lookAtMyPCWhenTalking="0">
+			<model kfm="21000415_M_Wraith" shadowScale="120" rotationSpeed="720" walkSpeed="60" runSpeed="200" />
+			<stat hp="349439" asp="100" msp="100" atp="80" evp="82" cap="310" cad="500" car="50" ndd="567" pap="107493" map="107513" par="150" mar="150" scaleStatRate_1="3" scaleBaseTap_1="933866" scaleBaseDef_1="1177" scaleBaseSpaRate_1="0.2" scaleStatRate_2="3" scaleBaseTap_2="1766735" scaleBaseDef_2="2091" scaleBaseSpaRate_2="0.2" />
+			<distance avoid="45" sight="2500" sightHeightUP="300" sightHeightDown="0" customLastSightRadius="2500" customLastSightHeightUp="525" customLastSightHeightDown="225" />
+			<skill ids="49100021,49100001,49100011" levels="1,1,1" probs="40,30,30" />
+			<collision shape="box" width="70" height="120" depth="70" />
+			<capsule radius="40" height="150" />
+			<dead time="2" defaultaction="Dead_A" upaction="Dead_A" />
+			<push back="1" up="1" knockback="1" />
+			<normal action="Idle_A,Bore_A,Walk_A" prob="6000,1000,3000" movearea="150" />
+			<dropiteminfo dropHeight="50" dropDistanceBase="100" dropDistanceRandom="50" globalDropBoxId="74" />
+			<aiInfo path="AI_DefaultNew_PriorityIdx1.xml" />
+		</environment>
+	</npc>
+	<npc id="32001001">
+		<environment feature="TorrentOfDark" npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="elite_boss" nametag="1" defenceMaterial="6" hitImmune="1" abnormalImmune="1" level="50" class="3" rankIcon="b" carePathToEnemy="1" propertyTags="keep_battle,atp_formula_01" raceString="spirit" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/02020107_M_Lslime01_P.png" damagedVibrateDuration="0.5" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" customExp="0" lookAtMyPCWhenTalking="0">
+			<model kfm="02020107_M_Lslime01" scale="1.3" shadowScale="130" rotationSpeed="720" walkSpeed="200" runSpeed="400" />
+			<stat hp="1484766" asp="100" msp="100" atp="81" evp="82" cap="100" cad="500" car="50" ndd="567" pap="234026" map="234068" par="150" mar="150" scaleStatRate_1="3" scaleBaseTap_1="933866" scaleBaseDef_1="1177" scaleBaseSpaRate_1="0.2" scaleStatRate_2="3" scaleBaseTap_2="1766735" scaleBaseDef_2="2091" scaleBaseSpaRate_2="0.2" />
+			<distance avoid="100" sight="2500" sightHeightUP="300" sightHeightDown="0" customLastSightRadius="2500" customLastSightHeightUp="525" customLastSightHeightDown="225" />
+			<skill ids="50000264" levels="1" probs="100" />
+			<additionalEffect codes="60125001,60125002" levels="1,1" />
+			<collision shape="box" width="200" height="160" depth="200" />
+			<capsule radius="80" height="170" />
+			<dead time="2" defaultaction="Dead_A,Dead_B" upaction="Dead_B" />
+			<push back="0.5" up="0.5" knockback="0.5" />
+			<normal action="Idle_A,Bore_A,Walk_A" prob="4500,1500,4000" movearea="150" />
+			<dropiteminfo dropHeight="150" dropDistanceBase="200" dropDistanceRandom="50" globalDropBoxId="74" />
+			<aiInfo path="AI_KingSlimeNew_DrakStream.xml" />
+			<effectdummy>
+				<dummy name="Eff_Head">
+					<attachInfo parentNode="Head_Bone02" />
+					<transform translate="15,0,0" scale="1.2" />
+				</dummy>
+				<dummy name="Eff_Body">
+					<attachInfo parentNode="Spine_Center_Point01" />
+					<transform translate="0,0,-20" scale="1.2" />
+				</dummy>
+				<dummy name="Eff_Foot">
+					<attachInfo parentNode="Scene Root" />
+					<transform scale="1.2" />
+				</dummy>
+				<dummy name="Eff_UI">
+					<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,0,280" />
+				</dummy>
+				<dummy name="Eff_Head_World">
+					<attachInfo parentNode="Head_Bone02" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,0,15" scale="1.2" />
+				</dummy>
+				<dummy name="Eff_Body_World">
+					<attachInfo parentNode="Spine_Center_Point01" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,0,-30" scale="1.2" />
+				</dummy>
+				<dummy name="Eff_Foot_World">
+					<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
+					<transform scale="1.2" />
+				</dummy>
+			</effectdummy>
+		</environment>
+	</npc>
+	<npc id="32001101">
+		<environment feature="TorrentOfDark" npcAttackGroup="2" npcDefenseGroup="4" nametag="1" minimap="0" hpBar="1" defenceMaterial="1" hitImmune="99" abnormalImmune="99" level="50" rankIcon="c" carePathToEnemy="1" propertyTags="ignore_pc,keep_battle,atp_formula_01" raceString="animal" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/21000456_M_ToadCrownBlack_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" customExp="0" lookAtMyPCWhenTalking="0">
+			<model kfm="21000456_M_ToadCrownBlack" shadowScale="130" rotationSpeed="720" />
+			<stat hp="25522" asp="100" msp="100" atp="80" evp="90" cap="310" cad="500" car="50" ndd="999999" pap="99999999" map="99999999" par="210" mar="210" scaleStatRate_1="3" scaleBaseTap_1="1368667" scaleBaseDef_1="1428" scaleBaseSpaRate_1="0.25" scaleStatRate_2="3" scaleBaseTap_2="2662004" scaleBaseDef_2="2274" scaleBaseSpaRate_2="0.25" />
+			<distance avoid="60" sight="2500" sightHeightUP="300" sightHeightDown="0" customLastSightRadius="2500" customLastSightHeightUp="525" customLastSightHeightDown="225" />
+			<skill ids="49101001,49101011" levels="1,1" probs="50,50" />
+			<additionalEffect codes="49101001,49101002,49101005" levels="1,1,1" />
+			<collision shape="box" width="90" height="130" depth="90" />
+			<capsule radius="80" height="150" />
+			<dead time="2" defaultaction="Dead_A,Dead_B" upaction="Dead_B" />
+			<push back="1" up="1" knockback="1" />
+			<normal action="Idle_A,Bore_A" prob="5000,5000" />
+			<dropiteminfo dropHeight="50" dropDistanceBase="100" dropDistanceRandom="50" globalDropBoxId="74" />
+			<aiInfo path="AI_Toad_DrarkStream.xml" />
+			<effectdummy>
+				<dummy name="Eff_Head">
+					<attachInfo parentNode="Bip01 Head" />
+					<transform translate="20,-15,0" />
+				</dummy>
+				<dummy name="Eff_Body">
+					<attachInfo parentNode="Bip01 Spine1" />
+					<transform translate="0,10,0" />
+				</dummy>
+				<dummy name="Eff_UI">
+					<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,-20,160" />
+				</dummy>
+				<dummy name="Eff_Head_World">
+					<attachInfo parentNode="Bip01 Head" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,15,20" />
+				</dummy>
+				<dummy name="Eff_Body_World">
+					<attachInfo parentNode="Bip01 Spine1" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,0,-10" />
+				</dummy>
+			</effectdummy>
+		</environment>
+	</npc>
+	<npc id="32001102">
+		<environment feature="TorrentOfDark" npcAttackGroup="4" npcDefenseGroup="2" nametag="1" minimap="0" hpBar="1" defenceMaterial="1" hitImmune="1" abnormalImmune="1" level="50" rankIcon="c" carePathToEnemy="1" propertyTags="ignore_pc,keep_battle,atp_formula_01" raceString="bug" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/21000450_M_ForestSpiderRed_P.png" damagedColorScale="10" damagedVibrateDuration="1" damagedVibrateAmp="1" regenEffect="BG/Henesys/Eff_Worm.xml" customExp="0" lookAtMyPCWhenTalking="0">
+			<model kfm="21000445_M_RegenWormGreen" scale="2" shadowScale="70" rotationSpeed="720" walkSpeed="25" runSpeed="50" />
+			<stat hp="132051" asp="100" msp="100" atp="80" evp="90" cap="310" cad="500" car="50" ndd="567" pap="28574" map="28583" par="210" mar="210" scaleStatRate_1="3" scaleBaseTap_1="1368667" scaleBaseDef_1="1428" scaleBaseSpaRate_1="0.25" scaleStatRate_2="3" scaleBaseTap_2="2662004" scaleBaseDef_2="2274" scaleBaseSpaRate_2="0.25" />
+			<distance avoid="50" sight="2500" sightHeightUP="300" sightHeightDown="0" customLastSightRadius="2500" customLastSightHeightUp="525" customLastSightHeightDown="225" />
+			<skill ids="49102001" levels="1" probs="100" />
+			<additionalEffect codes="49102001" levels="1" />
+			<collision shape="box" width="60" height="60" depth="60" />
+			<capsule radius="15" height="150" ignore="1" />
+			<dead time="0.1" defaultaction="Dead_A,Dead_B" upaction="Dead_B" />
+			<push back="1" up="1" knockback="1" />
+			<normal action="Idle_A,Walk_A" prob="5000,5000" movearea="150" />
+			<dropiteminfo dropHeight="50" dropDistanceBase="100" dropDistanceRandom="50" globalDropBoxId="74" />
+			<effectdummy>
+				<dummy name="Eff_UI">
+					<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,0,20" />
+				</dummy>
+			</effectdummy>
+		</environment>
+	</npc>
+	<npc id="32001103">
+		<environment feature="TorrentOfDark" npcAttackGroup="4" npcDefenseGroup="2" nametag="1" minimap="0" hpBar="1" defenceMaterial="1" hitImmune="1" abnormalImmune="1" level="50" rankIcon="c" carePathToEnemy="1" propertyTags="ignore_pc,keep_battle,atp_formula_01" raceString="bug" gender="2" damagedColorScale="10" damagedVibrateDuration="1" damagedVibrateAmp="1" regenEffect="BG/Henesys/Eff_Worm.xml" customExp="0" lookAtMyPCWhenTalking="0">
+			<model kfm="21000450_M_ForestSpiderRed" scale="1.1" anispeed="1.1" shadowScale="100" rotationSpeed="720" walkSpeed="50" runSpeed="100" />
+			<stat hp="142336" asp="100" msp="100" atp="80" evp="90" cap="310" cad="500" car="50" ndd="567" pap="28574" map="28583" par="210" mar="210" scaleStatRate_1="3" scaleBaseTap_1="1368667" scaleBaseDef_1="1428" scaleBaseSpaRate_1="0.25" scaleStatRate_2="3" scaleBaseTap_2="2662004" scaleBaseDef_2="2274" scaleBaseSpaRate_2="0.25" />
+			<distance avoid="50" sight="2500" sightHeightUP="300" sightHeightDown="0" customLastSightRadius="2500" customLastSightHeightUp="525" customLastSightHeightDown="225" />
+			<skill ids="49103001" levels="1" probs="100" />
+			<additionalEffect codes="49103001" levels="1" />
+			<collision shape="box" width="60" height="60" depth="60" />
+			<capsule radius="30" height="150" ignore="1" />
+			<dead time="0.1" defaultaction="Dead_A,Dead_B" upaction="Dead_B" />
+			<push back="1" up="1" knockback="1" />
+			<normal action="Idle_A,Bore_A,Walk_A" prob="4000,3000,3000" movearea="150" />
+			<dropiteminfo dropHeight="50" dropDistanceBase="100" dropDistanceRandom="50" globalDropBoxId="74" />
+			<effectdummy>
+				<dummy name="Eff_Head">
+					<attachInfo parentNode="Scene Root" />
+					<transform translate="0,0,60" />
+				</dummy>
+				<dummy name="Eff_UI">
+					<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,0,60" />
+				</dummy>
+			</effectdummy>
+		</environment>
+	</npc>
+	<npc id="32001104">
+		<environment feature="TorrentOfDark" npcAttackGroup="4" npcDefenseGroup="2" minimap="0" hpBar="1" defenceMaterial="1" hitImmune="99" abnormalImmune="99" level="50" rankIcon="c" carePathToEnemy="1" propertyTags="keep_battle,atp_formula_01" raceString="unknown" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/Dummy_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" customExp="0" lookAtMyPCWhenTalking="0">
+			<model kfm="Dummy" />
+			<stat hp="1" asp="100" msp="100" atp="80" cap="310" cad="500" car="50" ndd="567" pap="342894" map="343001" par="90" mar="90" scaleStatRate_1="3" scaleBaseTap_1="1368667" scaleBaseDef_1="1428" scaleBaseSpaRate_1="0.25" scaleStatRate_2="3" scaleBaseTap_2="2662004" scaleBaseDef_2="2274" scaleBaseSpaRate_2="0.25" />
+			<distance avoid="300" sight="10000" sightHeightUP="1000" sightHeightDown="0" customLastSightRadius="10000" customLastSightHeightUp="1000" customLastSightHeightDown="1000" />
+			<additionalEffect codes="49180001" levels="1" />
+			<collision shape="box" width="150" height="150" depth="150" heightOffset="700" />
+			<capsule radius="75" height="150" ignore="1" />
+			<dead time="5" defaultaction="Idle_A" upaction="Idle_A" />
+			<normal action="Idle_A" prob="10000" movearea="200" />
+			<dropiteminfo globalDropBoxId="74" />
+		</environment>
+	</npc>
+	<npc id="32001201">
+		<environment feature="TorrentOfDark" npcAttackGroup="1" npcDefenseGroup="2" nametag="1" minimap="0" hpBar="1" defenceMaterial="1" hitImmune="1" abnormalImmune="1" level="50" rankIcon="c" carePathToEnemy="1" propertyTags="keep_battle,atp_formula_01" raceString="animal" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/21000514_M_FrilledLizardBlueGreen_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" customExp="0" lookAtMyPCWhenTalking="0">
+			<model kfm="21000514_M_FrilledLizardBlueGreen" shadowScale="130" rotationSpeed="720" walkSpeed="170" runSpeed="340" />
+			<stat hp="612883" asp="100" msp="100" atp="80" evp="90" cap="320" cad="500" car="50" ndd="567" pap="71254" map="71269" par="210" mar="210" scaleStatRate_1="3" scaleBaseTap_1="1368667" scaleBaseDef_1="1428" scaleBaseSpaRate_1="0.25" scaleStatRate_2="3" scaleBaseTap_2="2662004" scaleBaseDef_2="2274" scaleBaseSpaRate_2="0.25" />
+			<distance avoid="60" sight="2500" sightHeightUP="300" sightHeightDown="0" customLastSightRadius="2500" customLastSightHeightUp="525" customLastSightHeightDown="225" />
+			<skill ids="49104011" levels="1" probs="100" />
+			<collision shape="box" width="130" height="130" depth="100" />
+			<capsule radius="80" height="150" />
+			<dead time="2" defaultaction="Dead_A,Dead_B" upaction="Dead_B" />
+			<push back="1" up="1" knockback="1" />
+			<normal action="Idle_A,Bore_A,Walk_A" prob="4500,1500,4000" movearea="150" />
+			<dropiteminfo dropHeight="50" dropDistanceBase="100" dropDistanceRandom="50" globalDropBoxId="74" />
+			<effectdummy>
+				<dummy name="Eff_Head">
+					<attachInfo parentNode="Bip01 Head" />
+					<transform translate="30,10,0" />
+				</dummy>
+				<dummy name="Eff_Body">
+					<attachInfo parentNode="Bip01 Spine1" />
+				</dummy>
+				<dummy name="Eff_UI">
+					<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,-20,220" />
+				</dummy>
+				<dummy name="Eff_Head_World">
+					<attachInfo parentNode="Bip01 Head" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,-15,30" />
+				</dummy>
+				<dummy name="Eff_Body_World">
+					<attachInfo parentNode="Bip01 Spine1" applyWorldTransform="true" applyLocalScale="false" />
+				</dummy>
+			</effectdummy>
+		</environment>
+	</npc>
+	<npc id="32001301">
+		<environment feature="TorrentOfDark" npcAttackGroup="1" npcDefenseGroup="2" nametag="1" minimap="0" hpBar="1" defenceMaterial="1" hitImmune="1" abnormalImmune="1" level="50" rankIcon="c" carePathToEnemy="1" propertyTags="keep_battle,atp_formula_01" raceString="animal" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/21000562_M_AppleMonkeyDarkBrown_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" customExp="0" lookAtMyPCWhenTalking="0">
+			<model kfm="21000562_M_AppleMonkeyDarkBrown" scale="1.4" shadowScale="95" rotationSpeed="720" walkSpeed="240" runSpeed="480" />
+			<stat hp="358554" asp="100" msp="100" atp="80" evp="90" cap="320" cad="500" car="50" ndd="567" pap="136003" map="136032" par="210" mar="210" scaleStatRate_1="3" scaleBaseTap_1="1368667" scaleBaseDef_1="1428" scaleBaseSpaRate_1="0.25" scaleStatRate_2="3" scaleBaseTap_2="2662004" scaleBaseDef_2="2274" scaleBaseSpaRate_2="0.25" />
+			<distance avoid="100" sight="2500" sightHeightUP="300" sightHeightDown="0" customLastSightRadius="2500" customLastSightHeightUp="525" customLastSightHeightDown="225" />
+			<skill ids="49105011" levels="1" probs="100" />
+			<collision shape="box" width="60" height="80" depth="60" />
+			<capsule radius="55" height="150" />
+			<dead time="2" defaultaction="Dead_A,Dead_B" upaction="Dead_B" />
+			<push back="1" up="1" knockback="1" />
+			<normal action="Idle_A,Bore_A,Walk_A" prob="4500,1000,4500" movearea="150" />
+			<dropiteminfo dropHeight="150" dropDistanceBase="100" dropDistanceRandom="50" globalDropBoxId="74" />
+			<aiInfo path="AI_DefaultNew_AttackAfterRunaway.xml" />
+			<effectdummy>
+				<dummy name="Eff_Head">
+					<attachInfo parentNode="Bip01 Head" />
+					<transform translate="15,5,0" scale="0.8" />
+				</dummy>
+				<dummy name="Eff_Body">
+					<attachInfo parentNode="Bip01 Spine" />
+					<transform translate="10,5,0" scale="0.8" />
+				</dummy>
+				<dummy name="Eff_Foot">
+					<attachInfo parentNode="Scene Root" />
+					<transform scale="0.8" />
+				</dummy>
+				<dummy name="Eff_UI">
+					<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,-30,130" />
+				</dummy>
+				<dummy name="Eff_Head_World">
+					<attachInfo parentNode="Bip01 Head" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,-5,15" scale="0.8" />
+				</dummy>
+				<dummy name="Eff_Body_World">
+					<attachInfo parentNode="Bip01 Spine" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,-15,0" scale="0.8" />
+				</dummy>
+				<dummy name="Eff_Foot_World">
+					<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
+					<transform scale="0.8" />
+				</dummy>
+			</effectdummy>
+		</environment>
+	</npc>
+	<npc id="32001401">
+		<environment feature="TorrentOfDark" npcAttackGroup="1" npcDefenseGroup="2" nametag="1" minimap="0" hpBar="1" defenceMaterial="4" hitImmune="1" abnormalImmune="1" level="50" rankIcon="c" carePathToEnemy="1" propertyTags="keep_battle,atp_formula_01" raceString="animal" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/21000599_M_StoneCarapace05_P.png" damagedColorScale="10" damagedVibrateDuration="1" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" customExp="0" lookAtMyPCWhenTalking="0">
+			<model kfm="21000599_M_StoneCarapace05" scale="0.8" shadowScale="120" rotationSpeed="720" walkSpeed="100" runSpeed="200" />
+			<stat hp="600095" asp="100" msp="100" atp="80" evp="90" cap="330" cad="500" car="50" ndd="567" pap="134617" map="134645" par="210" mar="210" scaleStatRate_1="3" scaleBaseTap_1="1368667" scaleBaseDef_1="1428" scaleBaseSpaRate_1="0.25" scaleStatRate_2="3" scaleBaseTap_2="2662004" scaleBaseDef_2="2274" scaleBaseSpaRate_2="0.25" />
+			<distance avoid="60" sight="2500" sightHeightUP="300" sightHeightDown="0" customLastSightRadius="2500" customLastSightHeightUp="525" customLastSightHeightDown="225" />
+			<skill ids="49106001" levels="1" probs="100" />
+			<additionalEffect codes="49106002" levels="1" />
+			<collision shape="box" width="70" height="80" depth="84" />
+			<capsule radius="32" height="150" />
+			<dead time="2" defaultaction="Dead_A,Dead_B" upaction="Dead_A,Dead_B" />
+			<push back="1" up="1" knockback="1" />
+			<normal action="Idle_A,Bore_A,Walk_A" prob="2500,1000,6500" movearea="150" />
+			<dropiteminfo dropHeight="150" dropDistanceBase="100" dropDistanceRandom="50" globalDropBoxId="74" />
+			<aiInfo path="AI_DefaultNew_DarkStream.xml" />
+			<effectdummy>
+				<dummy name="Eff_Head">
+					<attachInfo parentNode="Body_Point01" />
+					<transform translate="0,0,20" scale="0.7" />
+				</dummy>
+				<dummy name="Eff_Body">
+					<attachInfo parentNode="Body_Point01" />
+					<transform scale="0.7" />
+				</dummy>
+				<dummy name="Eff_Foot">
+					<attachInfo parentNode="Scene Root" />
+					<transform scale="0.7" />
+				</dummy>
+				<dummy name="Eff_UI">
+					<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,0,70" />
+				</dummy>
+				<dummy name="Eff_Head_World">
+					<attachInfo parentNode="Body_Point01" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,0,15" scale="0.7" />
+				</dummy>
+				<dummy name="Eff_Body_World">
+					<attachInfo parentNode="Body_Point01" applyWorldTransform="true" applyLocalScale="false" />
+					<transform scale="0.7" />
+				</dummy>
+				<dummy name="Eff_Foot_World">
+					<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
+					<transform scale="0.7" />
+				</dummy>
+			</effectdummy>
+		</environment>
+	</npc>
+	<npc id="32001501">
+		<environment feature="TorrentOfDark" npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="elite_boss" nametag="1" defenceMaterial="2" hitImmune="99" abnormalImmune="99" level="50" class="3" rankIcon="b" carePathToEnemy="1" propertyTags="keep_battle,atp_formula_01" raceString="undead" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/02030013_N_Ghostump_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" customExp="0" lookAtMyPCWhenTalking="0">
+			<model kfm="02030013_N_Ghostump" scale="1.3" shadowScale="360" rotationSpeed="720" walkSpeed="300" runSpeed="600" />
+			<stat hp="2099678" asp="100" msp="100" atp="81" evp="90" cap="100" cad="500" car="50" ndd="567" pap="243381" map="243432" par="210" mar="210" scaleStatRate_1="3" scaleBaseTap_1="1368667" scaleBaseDef_1="1428" scaleBaseSpaRate_1="0.25" scaleStatRate_2="3" scaleBaseTap_2="2662004" scaleBaseDef_2="2274" scaleBaseSpaRate_2="0.25" />
+			<distance avoid="140" sight="2500" sightHeightUP="300" sightHeightDown="0" customLastSightRadius="2500" customLastSightHeightUp="525" customLastSightHeightDown="225" />
+			<skill ids="50000188,50000189,50000190" levels="1,1,1" probs="35,55,10" />
+			<additionalEffect codes="60128001" levels="1" />
+			<collision shape="box" width="230.769" height="120" depth="169.231" />
+			<capsule radius="130" height="320" />
+			<dead time="2" defaultaction="Dead_A" upaction="Dead_B" />
+			<normal action="Idle_A,Bore_A,Walk_A" prob="3500,3000,3500" />
+			<dropiteminfo dropHeight="150" dropDistanceBase="200" dropDistanceRandom="10" fireVelocity="150" globalDropBoxId="74" />
+			<aiInfo path="AI_Ghostump_DarkStream.xml" />
+			<effectdummy>
+				<dummy name="Eff_Head">
+					<attachInfo parentNode="Main_Point01" />
+					<transform translate="0,0,50" scale="1.3" />
+				</dummy>
+				<dummy name="Eff_Body">
+					<attachInfo parentNode="Wood_Point01" />
+					<transform translate="0,-30,0" scale="1.3" />
+				</dummy>
+				<dummy name="Eff_Foot">
+					<attachInfo parentNode="Scene Root" />
+					<transform rotation="0,0,90" scale="1.3" />
+				</dummy>
+				<dummy name="Eff_UI">
+					<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,0,225" />
+				</dummy>
+				<dummy name="Eff_Head_World">
+					<attachInfo parentNode="Main_Point01" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,0,65" scale="1.3" />
+				</dummy>
+				<dummy name="Eff_Body_World">
+					<attachInfo parentNode="Wood_Point01" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,0,-30" scale="1.3" />
+				</dummy>
+			</effectdummy>
+		</environment>
+	</npc>
+	<npc id="32001601">
+		<environment feature="TorrentOfDark" npcAttackGroup="1" npcDefenseGroup="2" nametag="1" minimap="0" hpBar="1" defenceMaterial="1" hitImmune="1" abnormalImmune="1" level="50" rankIcon="c" carePathToEnemy="1" propertyTags="keep_battle,atp_formula_01" raceString="spirit" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/21000370_M_BoogieJuniorBlue_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" customExp="0" lookAtMyPCWhenTalking="0">
+			<model kfm="21000370_M_BoogieJuniorBlue" scale="1.5" shadowScale="130" rotationSpeed="720" walkSpeed="50" runSpeed="80" />
+			<stat hp="546844" asp="100" msp="100" atp="80" evp="95" cap="340" cad="500" car="50" ndd="567" pap="43512" map="1147029" par="270" mar="270" scaleStatRate_1="3" scaleBaseTap_1="2053864" scaleBaseDef_1="1747" scaleBaseSpaRate_1="0.3" scaleStatRate_2="3" scaleBaseTap_2="3837826" scaleBaseDef_2="2274" scaleBaseSpaRate_2="0.3" />
+			<distance avoid="45" sight="2500" sightHeightUP="300" sightHeightDown="0" customLastSightRadius="2500" customLastSightHeightUp="525" customLastSightHeightDown="225" />
+			<skill ids="49107001,49107021" levels="1,1" probs="85,15" />
+			<collision shape="box" width="75" height="65" depth="70" />
+			<capsule radius="40" height="150" />
+			<dead time="2" defaultaction="Dead_A,Dead_B" upaction="Dead_B" />
+			<push back="1" up="1" knockback="1" />
+			<normal action="Idle_A,Bore_A,Walk_A" prob="6000,1000,3000" movearea="150" />
+			<dropiteminfo dropHeight="50" dropDistanceBase="100" dropDistanceRandom="50" globalDropBoxId="74" />
+			<aiInfo path="AI_DefaultNew_DarkStream.xml" />
+			<effectdummy>
+				<dummy name="Eff_Head">
+					<attachInfo parentNode="Head" />
+					<transform translate="0,-5,0" scale="0.6" />
+				</dummy>
+				<dummy name="Eff_Body">
+					<attachInfo parentNode="Body" />
+					<transform translate="0,0,-5" rotation="-90,90,0" scale="0.6" />
+				</dummy>
+				<dummy name="Eff_Foot">
+					<attachInfo parentNode="Scene Root" />
+					<transform scale="0.6" />
+				</dummy>
+				<dummy name="Eff_UI">
+					<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,0,120" />
+				</dummy>
+				<dummy name="Eff_Head_World">
+					<attachInfo parentNode="Head" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,0,-5" scale="0.6" />
+				</dummy>
+				<dummy name="Eff_Body_World">
+					<attachInfo parentNode="Body" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,0,-5" scale="0.6" />
+				</dummy>
+				<dummy name="Eff_Foot_World">
+					<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
+					<transform scale="0.6" />
+				</dummy>
+			</effectdummy>
+		</environment>
+	</npc>
+	<npc id="32001701">
+		<environment feature="TorrentOfDark" npcAttackGroup="1" npcDefenseGroup="2" nametag="1" minimap="0" hpBar="1" defenceMaterial="6" hitImmune="1" abnormalImmune="1" level="50" rankIcon="c" carePathToEnemy="1" propertyTags="keep_battle,atp_formula_01" raceString="spirit" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/02020110_M_slime05_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" customExp="0" lookAtMyPCWhenTalking="0">
+			<model kfm="02020110_M_slime05" shadowScale="120" rotationSpeed="720" walkSpeed="100" runSpeed="250" />
+			<stat hp="639407" asp="100" msp="100" atp="80" evp="95" cap="350" cad="500" car="50" ndd="567" pap="206099" map="206155" par="270" mar="270" scaleStatRate_1="3" scaleBaseTap_1="2053864" scaleBaseDef_1="1747" scaleBaseSpaRate_1="0.3" scaleStatRate_2="3" scaleBaseTap_2="3837826" scaleBaseDef_2="2274" scaleBaseSpaRate_2="0.3" />
+			<distance avoid="45" sight="2500" sightHeightUP="300" sightHeightDown="0" customLastSightRadius="2500" customLastSightHeightUp="525" customLastSightHeightDown="225" />
+			<skill ids="49108001" levels="1" probs="100" />
+			<additionalEffect codes="49125001" levels="1" />
+			<collision shape="box" width="100" height="100" depth="100" />
+			<capsule radius="45" height="100" />
+			<dead time="3" defaultaction="Dead_A,Dead_B" upaction="Dead_B" />
+			<normal action="Idle_A,Bore_A,Walk_A" prob="3800,800,5400" movearea="150" />
+			<dropiteminfo dropHeight="100" dropDistanceBase="100" dropDistanceRandom="50" globalDropBoxId="74" />
+			<aiInfo path="AI_DefaultNew_DarkStream.xml" />
+			<effectdummy>
+				<dummy name="Eff_Head">
+					<attachInfo parentNode="Head_Bone02" />
+					<transform translate="15,0,0" />
+				</dummy>
+				<dummy name="Eff_Body">
+					<attachInfo parentNode="Spine_Center_Point01" />
+				</dummy>
+				<dummy name="Eff_UI">
+					<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,0,100" />
+				</dummy>
+				<dummy name="Eff_Head_World">
+					<attachInfo parentNode="Head_Bone02" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,0,15" />
+				</dummy>
+				<dummy name="Eff_Body_World">
+					<attachInfo parentNode="Spine_Center_Point01" applyWorldTransform="true" applyLocalScale="false" />
+				</dummy>
+			</effectdummy>
+		</environment>
+	</npc>
+	<npc id="32001702">
+		<environment feature="TorrentOfDark" npcAttackGroup="1" npcDefenseGroup="2" nametag="1" minimap="0" hpBar="1" defenceMaterial="6" hitImmune="1" abnormalImmune="1" level="50" rankIcon="c" carePathToEnemy="1" propertyTags="keep_battle,atp_formula_01" raceString="spirit" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/02020110_M_slime05_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" customExp="0" lookAtMyPCWhenTalking="0">
+			<model kfm="02020110_M_slime05" shadowScale="120" rotationSpeed="720" walkSpeed="100" runSpeed="250" />
+			<stat hp="639407" asp="100" msp="100" atp="80" evp="95" cap="350" cad="500" car="50" ndd="567" pap="206099" map="206155" par="270" mar="270" scaleStatRate_1="3" scaleBaseTap_1="2053864" scaleBaseDef_1="1747" scaleBaseSpaRate_1="0.3" scaleStatRate_2="3" scaleBaseTap_2="3837826" scaleBaseDef_2="2274" scaleBaseSpaRate_2="0.3" />
+			<distance avoid="45" sight="2500" sightHeightUP="300" sightHeightDown="0" customLastSightRadius="2500" customLastSightHeightUp="525" customLastSightHeightDown="225" />
+			<skill ids="49108001" levels="1" probs="100" />
+			<additionalEffect codes="49125001" levels="1" />
+			<collision shape="box" width="100" height="100" depth="100" />
+			<capsule radius="45" height="100" />
+			<dead time="3" defaultaction="Dead_A,Dead_B" upaction="Dead_B" />
+			<normal action="Idle_A,Bore_A,Walk_A" prob="3800,800,5400" movearea="150" />
+			<dropiteminfo dropHeight="100" dropDistanceBase="100" dropDistanceRandom="50" globalDropBoxId="74" />
+			<aiInfo path="AI_DefaultNew_DarkStream.xml" />
+		</environment>
+	</npc>
+	<npc id="32001801">
+		<environment feature="TorrentOfDark" npcAttackGroup="1" npcDefenseGroup="2" nametag="1" minimap="0" hpBar="1" defenceMaterial="1" hitImmune="1" abnormalImmune="1" level="50" rankIcon="c" carePathToEnemy="1" propertyTags="keep_battle,atp_formula_01" raceString="combine" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/21000310_M_PelicanFighterShortRed_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" customExp="0" lookAtMyPCWhenTalking="0">
+			<model kfm="21000310_M_PelicanFighterShortRed" shadowScale="130" rotationSpeed="720" walkSpeed="160" runSpeed="320" />
+			<stat hp="346388" asp="100" msp="100" atp="80" evp="95" cap="360" cad="500" car="50" ndd="567" pap="204403" map="204458" par="270" mar="270" scaleStatRate_1="3" scaleBaseTap_1="2053864" scaleBaseDef_1="1747" scaleBaseSpaRate_1="0.3" scaleStatRate_2="3" scaleBaseTap_2="3837826" scaleBaseDef_2="2274" scaleBaseSpaRate_2="0.3" />
+			<distance avoid="60" sight="2500" sightHeightUP="300" sightHeightDown="0" customLastSightRadius="2500" customLastSightHeightUp="525" customLastSightHeightDown="225" />
+			<skill ids="49126001,49126021" levels="1,1" probs="85,15" />
+			<collision shape="box" width="85" height="130" depth="80" />
+			<capsule radius="70" height="150" />
+			<dead time="2" defaultaction="Dead_A,Dead_B" upaction="Dead_B" />
+			<push back="1" up="1" knockback="1" />
+			<normal action="Idle_A,Bore_A,Walk_A" prob="4500,1500,4000" movearea="150" />
+			<dropiteminfo dropHeight="100" dropDistanceBase="100" dropDistanceRandom="50" globalDropBoxId="74" />
+			<aiInfo path="AI_DefaultNew_usingIdx2InRangeIdx1.xml" />
+			<effectdummy>
+				<dummy name="Eff_Head">
+					<attachInfo parentNode="Bip01 Head" />
+					<transform translate="10,0,0" scale="0.9" />
+				</dummy>
+				<dummy name="Eff_Body">
+					<attachInfo parentNode="Bip01 Spine" />
+					<transform translate="-10,0,0" scale="0.9" />
+				</dummy>
+				<dummy name="Eff_Foot">
+					<attachInfo parentNode="Scene Root" />
+					<transform scale="0.9" />
+				</dummy>
+				<dummy name="Eff_Head_World">
+					<attachInfo parentNode="Bip01 Head" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,0,10" scale="0.9" />
+				</dummy>
+				<dummy name="Eff_Body_World">
+					<attachInfo parentNode="Bip01 Spine" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,0,-10" scale="0.9" />
+				</dummy>
+				<dummy name="Eff_Foot_World">
+					<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
+					<transform scale="0.9" />
+				</dummy>
+			</effectdummy>
+		</environment>
+	</npc>
+	<npc id="32001901">
+		<environment feature="TorrentOfDark" npcAttackGroup="1" npcDefenseGroup="2" nametag="1" minimap="0" hpBar="1" defenceMaterial="1" hitImmune="1" abnormalImmune="1" level="50" rankIcon="c" carePathToEnemy="1" propertyTags="keep_battle,atp_formula_01" raceString="combine" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/21000564_M_OnionTallRed_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" customExp="0" lookAtMyPCWhenTalking="0">
+			<model kfm="21000564_M_OnionTallRed" shadowScale="130" rotationSpeed="720" walkSpeed="155" runSpeed="310" />
+			<stat hp="578978" asp="100" msp="100" atp="80" evp="95" cap="370" cad="500" car="50" ndd="567" pap="207196" map="207252" par="270" mar="270" scaleStatRate_1="3" scaleBaseTap_1="2053864" scaleBaseDef_1="1747" scaleBaseSpaRate_1="0.3" scaleStatRate_2="3" scaleBaseTap_2="3837826" scaleBaseDef_2="2274" scaleBaseSpaRate_2="0.3" />
+			<distance avoid="60" sight="2500" sightHeightUP="300" sightHeightDown="0" customLastSightRadius="2500" customLastSightHeightUp="525" customLastSightHeightDown="225" />
+			<skill ids="49110001" levels="1" probs="100" />
+			<collision shape="box" width="85" height="130" depth="80" />
+			<capsule radius="32" height="150" />
+			<dead time="2" defaultaction="Dead_A,Dead_B" upaction="Dead_B" />
+			<push back="1" up="1" knockback="1" />
+			<normal action="Idle_A,Bore_A,Walk_A" prob="4500,1500,4000" movearea="150" />
+			<dropiteminfo dropHeight="50" dropDistanceBase="100" dropDistanceRandom="50" globalDropBoxId="74" />
+			<effectdummy>
+				<dummy name="Eff_Head">
+					<attachInfo parentNode="Bip01 Head" />
+					<transform translate="40,0,0" />
+				</dummy>
+				<dummy name="Eff_Body">
+					<attachInfo parentNode="Bip01 Spine1" />
+					<transform translate="-15,0,0" />
+				</dummy>
+				<dummy name="Eff_UI">
+					<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,0,220" />
+				</dummy>
+				<dummy name="Eff_Head_World">
+					<attachInfo parentNode="Bip01 Head" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,0,40" />
+				</dummy>
+				<dummy name="Eff_Body_World">
+					<attachInfo parentNode="Bip01 Spine1" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,0,-15" />
+				</dummy>
+			</effectdummy>
+		</environment>
+	</npc>
+	<npc id="32001902">
+		<environment feature="TorrentOfDark" npcAttackGroup="1" npcDefenseGroup="2" nametag="1" minimap="0" hpBar="1" defenceMaterial="1" hitImmune="1" abnormalImmune="1" level="50" rankIcon="c" carePathToEnemy="1" propertyTags="keep_battle,atp_formula_01" raceString="combine" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/21000568_M_OnionShortRed_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" customExp="0" lookAtMyPCWhenTalking="0">
+			<model kfm="21000568_M_OnionShortRed" shadowScale="130" rotationSpeed="720" walkSpeed="180" runSpeed="360" />
+			<stat hp="578978" asp="100" msp="100" atp="80" evp="95" cap="370" cad="500" car="50" ndd="567" pap="207196" map="207252" par="270" mar="270" scaleStatRate_1="3" scaleBaseTap_1="2053864" scaleBaseDef_1="1747" scaleBaseSpaRate_1="0.3" scaleStatRate_2="3" scaleBaseTap_2="3837826" scaleBaseDef_2="2274" scaleBaseSpaRate_2="0.3" />
+			<distance avoid="60" sight="2500" sightHeightUP="300" sightHeightDown="0" customLastSightRadius="2500" customLastSightHeightUp="525" customLastSightHeightDown="225" />
+			<skill ids="49111003" levels="1" probs="100" />
+			<collision shape="box" width="85" height="130" depth="80" />
+			<capsule radius="32" height="150" />
+			<dead time="2" defaultaction="Dead_A,Dead_B" upaction="Dead_B" />
+			<push back="1" up="1" knockback="1" />
+			<normal action="Idle_A,Bore_A,Walk_A" prob="4500,1500,4000" movearea="150" />
+			<dropiteminfo dropHeight="50" dropDistanceBase="100" dropDistanceRandom="50" globalDropBoxId="74" />
+			<effectdummy>
+				<dummy name="Eff_Head">
+					<attachInfo parentNode="Bip01 Head" />
+					<transform translate="40,0,0" scale="0.85" />
+				</dummy>
+				<dummy name="Eff_Body">
+					<attachInfo parentNode="Bip01 Spine1" />
+					<transform translate="-10,0,0" scale="0.85" />
+				</dummy>
+				<dummy name="Eff_Foot">
+					<attachInfo parentNode="Scene Root" />
+					<transform scale="0.85" />
+				</dummy>
+				<dummy name="Eff_UI">
+					<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,0,150" />
+				</dummy>
+				<dummy name="Eff_Head_World">
+					<attachInfo parentNode="Bip01 Head" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,0,40" scale="0.85" />
+				</dummy>
+				<dummy name="Eff_Body_World">
+					<attachInfo parentNode="Bip01 Spine1" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,0,-10" scale="0.85" />
+				</dummy>
+				<dummy name="Eff_Foot_World">
+					<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
+					<transform scale="0.85" />
+				</dummy>
+			</effectdummy>
+		</environment>
+	</npc>
+	<npc id="32002001">
+		<environment feature="TorrentOfDark" npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="elite_boss" nametag="1" defenceMaterial="1" hitImmune="99" abnormalImmune="99" level="50" class="3" rankIcon="b" carePathToEnemy="1" propertyTags="keep_battle,atp_formula_01" raceString="mystic" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/22000054_N_BullAxePurple_P.png" damagedVibrateDuration="0.5" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" customExp="0" lookAtMyPCWhenTalking="0">
+			<model kfm="22000054_N_BullAxePurple" shadowScale="380" rotationSpeed="720" walkSpeed="250" runSpeed="500" />
+			<stat hp="4287842" asp="100" msp="100" atp="81" evp="95" cap="100" cad="500" car="50" ndd="567" pap="517242" map="517382" par="270" mar="270" scaleStatRate_1="3" scaleBaseTap_1="2053864" scaleBaseDef_1="1747" scaleBaseSpaRate_1="0.3" scaleStatRate_2="3" scaleBaseTap_2="3837826" scaleBaseDef_2="2274" scaleBaseSpaRate_2="0.3" />
+			<distance avoid="140" sight="2500" sightHeightUP="300" sightHeightDown="0" customLastSightRadius="2500" customLastSightHeightUp="525" customLastSightHeightDown="225" />
+			<skill ids="50009999" levels="1" probs="100" />
+			<additionalEffect codes="60126002" levels="1" />
+			<collision shape="box" width="250" height="170" depth="250" />
+			<capsule radius="130" height="150" />
+			<dead time="2" defaultaction="Dead_A" upaction="Dead_A" />
+			<normal action="Idle_A,Bore_A,Walk_A" prob="3500,2000,4500" movearea="150" />
+			<dropiteminfo dropHeight="150" dropDistanceBase="200" dropDistanceRandom="10" fireVelocity="150" globalDropBoxId="74" />
+			<aiInfo path="AI_BullAxePurple_DarkStream.xml" />
+			<effectdummy>
+				<dummy name="Eff_Head">
+					<attachInfo parentNode="Bip01 Head" />
+					<transform translate="0,-30,0" scale="1.2" />
+				</dummy>
+				<dummy name="Eff_Body">
+					<attachInfo parentNode="Bip01 Spine" />
+					<transform translate="30,30,20" scale="1.2" />
+				</dummy>
+				<dummy name="Eff_Foot">
+					<attachInfo parentNode="Scene Root" />
+					<transform scale="1.2" />
+				</dummy>
+				<dummy name="Eff_UI">
+					<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,-70,330" />
+				</dummy>
+				<dummy name="Eff_Head_World">
+					<attachInfo parentNode="Bip01 Head" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,-20,30" scale="1.2" />
+				</dummy>
+				<dummy name="Eff_Body_World">
+					<attachInfo parentNode="Bip01 Spine" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,-50,0" scale="1.2" />
+				</dummy>
+				<dummy name="Eff_Foot_World">
+					<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
+					<transform scale="1.2" />
+				</dummy>
+			</effectdummy>
+		</environment>
+	</npc>
+	<npc id="32002101">
+		<environment feature="TorrentOfDark" npcAttackGroup="1" npcDefenseGroup="2" nametag="1" minimap="0" hpBar="1" defenceMaterial="3" hitImmune="1" abnormalImmune="1" level="50" rankIcon="c" carePathToEnemy="1" propertyTags="keep_battle,atp_formula_01" raceString="animal" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/21000560_M_ArmorpigBlown_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" customExp="0" lookAtMyPCWhenTalking="0">
+			<model kfm="21000560_M_ArmorpigBlown" scale="1.1" shadowScale="220" rotationSpeed="720" walkSpeed="125" runSpeed="250" />
+			<stat hp="258384" asp="100" msp="100" atp="80" evp="105" cap="380" cad="500" car="50" ndd="567" pap="139376" map="139392" par="330" mar="330" scaleStatRate_1="3" scaleBaseTap_1="3725878" scaleBaseDef_1="1747" scaleBaseSpaRate_1="0.35" scaleStatRate_2="3" scaleBaseTap_2="9149389" scaleBaseDef_2="5222" scaleBaseSpaRate_2="0.35" />
+			<distance avoid="85" sight="2500" sightHeightUP="300" sightHeightDown="0" customLastSightRadius="2500" customLastSightHeightUp="525" customLastSightHeightDown="225" />
+			<skill ids="49112011" levels="1" probs="100" />
+			<collision shape="box" width="80" height="120" depth="130" />
+			<capsule radius="82" height="164" />
+			<dead time="2" defaultaction="Dead_A,Dead_B" upaction="Dead_B" />
+			<push back="0.5" up="0.5" knockback="0.5" />
+			<normal action="Idle_A,Bore_A,Walk_A" prob="3800,900,5300" movearea="150" />
+			<dropiteminfo dropHeight="150" dropDistanceBase="100" dropDistanceRandom="50" globalDropBoxId="74" />
+			<aiInfo path="AI_DefaultNew_onlyUseIdx1.xml" />
+			<effectdummy>
+				<dummy name="Eff_Head">
+					<attachInfo parentNode="pig_Bone02" />
+					<transform translate="20,0,70" scale="1.1" />
+				</dummy>
+				<dummy name="Eff_Body">
+					<attachInfo parentNode="pig_Bone02" />
+					<transform scale="1.1" />
+				</dummy>
+				<dummy name="Eff_Foot">
+					<attachInfo parentNode="Scene Root" />
+					<transform rotation="0,0,90" scale="1.1" />
+				</dummy>
+				<dummy name="Eff_UI">
+					<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,-20,135" />
+				</dummy>
+				<dummy name="Eff_Head_World">
+					<attachInfo parentNode="pig_Bone02" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,-30,80" rotation="0,0,90" />
+				</dummy>
+				<dummy name="Eff_Body_World">
+					<attachInfo parentNode="pig_Bone02" applyWorldTransform="true" applyLocalScale="false" />
+					<transform rotation="0,0,90" />
+				</dummy>
+				<dummy name="Eff_Foot_World">
+					<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
+					<transform rotation="0,0,90" />
+				</dummy>
+			</effectdummy>
+		</environment>
+	</npc>
+	<npc id="32002201">
+		<environment feature="TorrentOfDark" npcAttackGroup="1" npcDefenseGroup="2" nametag="1" minimap="0" hpBar="1" defenceMaterial="1" hitImmune="1" abnormalImmune="1" level="50" rankIcon="c" carePathToEnemy="1" propertyTags="keep_battle,atp_formula_01" raceString="undead" gender="1" portrait="./Data/Resource/Image/Portrait/Mob/21000589_M_ZombieGirlShackleHeadNailpink_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" customExp="0" lookAtMyPCWhenTalking="0">
+			<model kfm="21000589_M_ZombieGirlShackleHeadNailpink" shadowScale="130" rotationSpeed="720" walkSpeed="150" runSpeed="300" />
+			<stat hp="596090" asp="100" msp="100" atp="80" evp="105" cap="390" cad="500" car="50" ndd="567" pap="159004" map="159023" par="330" mar="330" scaleStatRate_1="3" scaleBaseTap_1="3725878" scaleBaseDef_1="1747" scaleBaseSpaRate_1="0.35" scaleStatRate_2="3" scaleBaseTap_2="9149389" scaleBaseDef_2="5222" scaleBaseSpaRate_2="0.35" />
+			<distance avoid="100" sight="2500" sightHeightUP="300" sightHeightDown="0" customLastSightRadius="2500" customLastSightHeightUp="525" customLastSightHeightDown="225" />
+			<skill ids="49113001" levels="1" probs="100" />
+			<additionalEffect codes="49113011" levels="1" />
+			<collision shape="box" width="85" height="130" depth="80" />
+			<capsule radius="32" height="150" />
+			<dead time="2" defaultaction="Dead_A,Dead_B" upaction="Dead_B" />
+			<push back="1" up="1" knockback="1" />
+			<normal action="Idle_A,Bore_A,Walk_A" prob="4500,1500,4000" movearea="150" />
+			<dropiteminfo dropHeight="50" dropDistanceBase="100" dropDistanceRandom="50" globalDropBoxId="74" />
+			<aiInfo path="AI_DefaultNew_AboveIdx2.xml" />
+			<effectdummy>
+				<dummy name="Eff_Head">
+					<attachInfo parentNode="Bip01 Head" />
+					<transform translate="20,0,0" scale="0.9" />
+				</dummy>
+				<dummy name="Eff_Body">
+					<attachInfo parentNode="Bip01 Spine" />
+					<transform scale="0.9" />
+				</dummy>
+				<dummy name="Eff_Foot">
+					<attachInfo parentNode="Scene Root" />
+					<transform scale="0.9" />
+				</dummy>
+				<dummy name="Eff_Head_World">
+					<attachInfo parentNode="Bip01 Head" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,-5,20" scale="0.9" />
+				</dummy>
+				<dummy name="Eff_Body_World">
+					<attachInfo parentNode="Bip01 Spine" applyWorldTransform="true" applyLocalScale="false" />
+					<transform scale="0.9" />
+				</dummy>
+				<dummy name="Eff_Foot_World">
+					<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
+					<transform scale="0.9" />
+				</dummy>
+			</effectdummy>
+		</environment>
+	</npc>
+	<npc id="32002202">
+		<environment feature="TorrentOfDark" npcAttackGroup="1" npcDefenseGroup="2" nametag="1" minimap="0" hpBar="1" defenceMaterial="1" hitImmune="1" abnormalImmune="1" level="50" rankIcon="c" carePathToEnemy="1" propertyTags="keep_battle,atp_formula_01" raceString="undead" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/21000585_M_ZombieBoyNormalBlue_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" customExp="0" lookAtMyPCWhenTalking="0">
+			<model kfm="21000585_M_ZombieBoyNormalBlue" shadowScale="130" rotationSpeed="720" walkSpeed="125" runSpeed="250" />
+			<stat hp="581735" asp="100" msp="100" atp="80" evp="105" cap="390" cad="500" car="50" ndd="567" pap="159004" map="159023" par="330" mar="330" scaleStatRate_1="3" scaleBaseTap_1="3725878" scaleBaseDef_1="1747" scaleBaseSpaRate_1="0.35" scaleStatRate_2="3" scaleBaseTap_2="9149389" scaleBaseDef_2="5222" scaleBaseSpaRate_2="0.35" />
+			<distance avoid="100" sight="2500" sightHeightUP="300" sightHeightDown="0" customLastSightRadius="2500" customLastSightHeightUp="525" customLastSightHeightDown="225" />
+			<skill ids="40144001" levels="1" probs="100" />
+			<additionalEffect codes="49113011" levels="1" />
+			<collision shape="box" width="85" height="130" depth="80" />
+			<capsule radius="32" height="150" />
+			<dead time="2" defaultaction="Dead_A,Dead_B" upaction="Dead_B" />
+			<push back="1" up="1" knockback="1" />
+			<normal action="Idle_A,Bore_A,Walk_A" prob="4500,1500,4000" movearea="150" />
+			<dropiteminfo dropHeight="50" dropDistanceBase="100" dropDistanceRandom="50" globalDropBoxId="74" />
+			<effectdummy>
+				<dummy name="Eff_Head">
+					<attachInfo parentNode="Bip01 Head" />
+					<transform translate="20,0,0" />
+				</dummy>
+				<dummy name="Eff_Body">
+					<attachInfo parentNode="Bip01 Spine" />
+					<transform translate="10,10,0" />
+				</dummy>
+				<dummy name="Eff_UI">
+					<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,-30,170" />
+				</dummy>
+				<dummy name="Eff_Head_World">
+					<attachInfo parentNode="Bip01 Head" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,-10,20" />
+				</dummy>
+				<dummy name="Eff_Body_World">
+					<attachInfo parentNode="Bip01 Spine" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,-10,10" scale="0.9" />
+				</dummy>
+			</effectdummy>
+		</environment>
+	</npc>
+	<npc id="32002203">
+		<environment feature="TorrentOfDark" npcAttackGroup="1" npcDefenseGroup="2" nametag="1" minimap="0" hpBar="1" defenceMaterial="1" hitImmune="1" abnormalImmune="1" level="50" rankIcon="c" carePathToEnemy="1" propertyTags="keep_battle,atp_formula_01" raceString="undead" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/21000586_M_ZombieBoyHeadNailPink_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" customExp="0" lookAtMyPCWhenTalking="0">
+			<model kfm="21000586_M_ZombieBoyHeadNailPink" shadowScale="130" rotationSpeed="720" walkSpeed="140" runSpeed="280" />
+			<stat hp="581735" asp="100" msp="100" atp="80" evp="105" cap="390" cad="500" car="50" ndd="567" pap="159004" map="159023" par="330" mar="330" scaleStatRate_1="3" scaleBaseTap_1="3725878" scaleBaseDef_1="1747" scaleBaseSpaRate_1="0.35" scaleStatRate_2="3" scaleBaseTap_2="9149389" scaleBaseDef_2="5222" scaleBaseSpaRate_2="0.35" />
+			<distance avoid="100" sight="2500" sightHeightUP="300" sightHeightDown="0" customLastSightRadius="2500" customLastSightHeightUp="525" customLastSightHeightDown="225" />
+			<skill ids="40144001,40144011" levels="1,1" probs="50,50" />
+			<additionalEffect codes="49113011" levels="1" />
+			<collision shape="box" width="85" height="130" depth="80" />
+			<capsule radius="32" height="150" />
+			<dead time="2" defaultaction="Dead_A,Dead_B" upaction="Dead_B" />
+			<push back="1" up="1" knockback="1" />
+			<normal action="Idle_A,Bore_A,Walk_A" prob="4500,1500,4000" movearea="150" />
+			<dropiteminfo dropHeight="50" dropDistanceBase="100" dropDistanceRandom="50" globalDropBoxId="74" />
+		</environment>
+	</npc>
+	<npc id="32002301">
+		<environment feature="TorrentOfDark" npcAttackGroup="1" npcDefenseGroup="2" nametag="1" minimap="0" hpBar="1" defenceMaterial="1" hitImmune="99" abnormalImmune="99" level="50" rankIcon="c" carePathToEnemy="1" propertyTags="keep_battle,atp_formula_01,battle_on_spawn" raceString="combine" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/21000107_M_MaskBoyTall02_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" customExp="0" lookAtMyPCWhenTalking="0">
+			<model kfm="21000107_M_MaskBoyTall02" scale="1.1" shadowScale="150" rotationSpeed="720" walkSpeed="165" runSpeed="330" />
+			<stat hp="1617926" asp="100" msp="100" atp="80" evp="105" cap="400" cad="500" car="50" ndd="567" pap="160219" map="160238" par="330" mar="330" scaleStatRate_1="3" scaleBaseTap_1="3725878" scaleBaseDef_1="1747" scaleBaseSpaRate_1="0.35" scaleStatRate_2="3" scaleBaseTap_2="9149389" scaleBaseDef_2="5222" scaleBaseSpaRate_2="0.35" />
+			<distance avoid="100" sight="2500" sightHeightUP="300" sightHeightDown="0" customLastSightRadius="2500" customLastSightHeightUp="525" customLastSightHeightDown="225" />
+			<skill ids="60025001,60025011,60025021" levels="1,1,1" probs="35,55,10" />
+			<collision shape="box" width="80" height="130" depth="80" />
+			<capsule radius="90" height="150" />
+			<dead time="2" defaultaction="Dead_A" upaction="Dead_A" />
+			<push back="1" up="1" knockback="1" />
+			<normal action="Idle_A,Bore_A,Walk_A" prob="4100,900,5000" movearea="150" />
+			<dropiteminfo dropHeight="150" dropDistanceBase="100" dropDistanceRandom="50" globalDropBoxId="74" />
+			<aiInfo path="AI_MaskBoyTallElite_DarkStream.xml" />
+			<effectdummy>
+				<dummy name="Eff_Head">
+					<attachInfo parentNode="Bip01 Head" />
+					<transform translate="25,0,0" />
+				</dummy>
+				<dummy name="Eff_Body">
+					<attachInfo parentNode="Bip01 Spine1" />
+				</dummy>
+				<dummy name="Eff_Foot">
+					<attachInfo parentNode="Scene Root" />
+					<transform translate="0,0,50" />
+				</dummy>
+				<dummy name="Eff_Head_World">
+					<attachInfo parentNode="Bip01 Head" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,0,25" />
+				</dummy>
+				<dummy name="Eff_Body_World">
+					<attachInfo parentNode="Bip01 Spine1" applyWorldTransform="true" applyLocalScale="false" />
+				</dummy>
+				<dummy name="Eff_Foot_World">
+					<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,0,50" />
+				</dummy>
+			</effectdummy>
+		</environment>
+	</npc>
+	<npc id="32002302">
+		<environment feature="TorrentOfDark" npcAttackGroup="1" npcDefenseGroup="2" nametag="1" minimap="0" hpBar="1" defenceMaterial="1" hitImmune="99" abnormalImmune="99" level="50" rankIcon="c" carePathToEnemy="1" propertyTags="keep_battle,no_die,atp_formula_01,battle_on_spawn" raceString="combine" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/21000107_M_MaskBoyTall02_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" customExp="0" lookAtMyPCWhenTalking="0">
+			<model kfm="21000107_M_MaskBoyTall02" scale="1.1" shadowScale="150" rotationSpeed="720" walkSpeed="165" runSpeed="330" />
+			<stat hp="647170" asp="100" msp="100" atp="80" evp="105" cap="400" cad="500" car="50" ndd="567" pap="160219" map="160238" par="330" mar="330" scaleStatRate_1="3" scaleBaseTap_1="3725878" scaleBaseDef_1="1747" scaleBaseSpaRate_1="0.35" scaleStatRate_2="3" scaleBaseTap_2="9149389" scaleBaseDef_2="5222" scaleBaseSpaRate_2="0.35" />
+			<distance avoid="100" sight="2500" sightHeightUP="300" sightHeightDown="0" customLastSightRadius="2500" customLastSightHeightUp="525" customLastSightHeightDown="225" />
+			<skill ids="60025001,60025011,60025021" levels="1,1,1" probs="35,55,10" />
+			<collision shape="box" width="80" height="130" depth="80" />
+			<capsule radius="90" height="150" />
+			<dead time="2" defaultaction="Dead_A" upaction="Dead_A" />
+			<push back="1" up="1" knockback="1" />
+			<normal action="Idle_A,Bore_A,Walk_A" prob="4100,900,5000" movearea="150" />
+			<dropiteminfo dropHeight="150" dropDistanceBase="100" dropDistanceRandom="50" globalDropBoxId="74" />
+			<aiInfo path="AI_MaskBoyTallElite_DarkStreamSummon.xml" />
+			<effectdummy>
+				<dummy name="Eff_Head">
+					<attachInfo parentNode="Bip01 Head" />
+					<transform translate="25,0,0" />
+				</dummy>
+				<dummy name="Eff_Body">
+					<attachInfo parentNode="Bip01 Spine1" />
+				</dummy>
+				<dummy name="Eff_Foot">
+					<attachInfo parentNode="Scene Root" />
+					<transform translate="0,0,50" />
+				</dummy>
+				<dummy name="Eff_Head_World">
+					<attachInfo parentNode="Bip01 Head" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,0,25" />
+				</dummy>
+				<dummy name="Eff_Body_World">
+					<attachInfo parentNode="Bip01 Spine1" applyWorldTransform="true" applyLocalScale="false" />
+				</dummy>
+				<dummy name="Eff_Foot_World">
+					<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,0,50" />
+				</dummy>
+			</effectdummy>
+		</environment>
+	</npc>
+	<npc id="32002401">
+		<environment feature="TorrentOfDark" npcAttackGroup="1" npcDefenseGroup="2" nametag="1" minimap="0" hpBar="1" defenceMaterial="1" hitImmune="1" abnormalImmune="1" level="50" rankIcon="c" carePathToEnemy="1" propertyTags="keep_battle,atp_formula_01" raceString="animal" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/21000481_M_WolfSilver_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" customExp="0" lookAtMyPCWhenTalking="0">
+			<model kfm="21000481_M_WolfSilver" shadowScale="200" rotationSpeed="720" walkSpeed="200" runSpeed="380" />
+			<stat hp="301773" asp="100" msp="100" atp="80" evp="105" cap="410" cad="500" car="50" ndd="567" pap="161277" map="161296" par="330" mar="330" scaleStatRate_1="3" scaleBaseTap_1="3725878" scaleBaseDef_1="1747" scaleBaseSpaRate_1="0.35" scaleStatRate_2="3" scaleBaseTap_2="9149389" scaleBaseDef_2="5222" scaleBaseSpaRate_2="0.35" />
+			<distance avoid="90" sight="2500" sightHeightUP="300" sightHeightDown="0" customLastSightRadius="2500" customLastSightHeightUp="525" customLastSightHeightDown="225" />
+			<skill ids="49135011,49135021,49135031" levels="1,1,1" probs="35,55,10" />
+			<collision shape="box" width="120" height="120" depth="200" />
+			<capsule radius="80" height="120" />
+			<dead time="2" defaultaction="Dead_A,Dead_B" upaction="Dead_A,Dead_B" />
+			<push back="1" up="1" knockback="1" />
+			<normal action="Idle_A,Bore_A,Walk_A" prob="4500,1500,4000" movearea="200" />
+			<dropiteminfo dropHeight="150" dropDistanceBase="100" dropDistanceRandom="50" globalDropBoxId="74" />
+			<aiInfo path="AI_DefaultNew_LessHpUsingOnceIdx2.xml" />
+			<effectdummy>
+				<dummy name="Eff_Head">
+					<attachInfo parentNode="Bip01 Head" />
+					<transform translate="5,10,0" />
+				</dummy>
+				<dummy name="Eff_Body">
+					<attachInfo parentNode="Bip01 Spine1" />
+				</dummy>
+				<dummy name="Eff_UI">
+					<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,-30,120" />
+				</dummy>
+				<dummy name="Eff_Head_World">
+					<attachInfo parentNode="Bip01 Head" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,-15,0" />
+				</dummy>
+				<dummy name="Eff_Body_World">
+					<attachInfo parentNode="Bip01 Spine1" applyWorldTransform="true" applyLocalScale="false" />
+				</dummy>
+			</effectdummy>
+		</environment>
+	</npc>
+	<npc id="32002402">
+		<environment feature="TorrentOfDark" npcAttackGroup="1" npcDefenseGroup="2" nametag="1" minimap="0" hpBar="1" defenceMaterial="1" hitImmune="1" abnormalImmune="1" level="50" rankIcon="c" carePathToEnemy="1" propertyTags="keep_battle,atp_formula_01" raceString="animal" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/21000482_M_WolfBlack_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" customExp="0" lookAtMyPCWhenTalking="0">
+			<model kfm="21000482_M_WolfBlack" shadowScale="200" rotationSpeed="720" walkSpeed="200" runSpeed="380" />
+			<stat hp="396262" asp="100" msp="100" atp="80" evp="105" cap="410" cad="500" car="50" ndd="567" pap="166116" map="166135" par="330" mar="330" scaleStatRate_1="3" scaleBaseTap_1="3725878" scaleBaseDef_1="1747" scaleBaseSpaRate_1="0.35" scaleStatRate_2="3" scaleBaseTap_2="9149389" scaleBaseDef_2="5222" scaleBaseSpaRate_2="0.35" />
+			<distance avoid="90" sight="2500" sightHeightUP="300" sightHeightDown="0" customLastSightRadius="2500" customLastSightHeightUp="525" customLastSightHeightDown="225" />
+			<skill ids="49135011,49135021,49135031" levels="1,1,1" probs="35,55,10" />
+			<collision shape="box" width="120" height="120" depth="200" />
+			<capsule radius="80" height="120" />
+			<dead time="2" defaultaction="Dead_A,Dead_B" upaction="Dead_A,Dead_B" />
+			<push back="1" up="1" knockback="1" />
+			<normal action="Idle_A,Bore_A,Walk_A" prob="4500,1500,4000" movearea="200" />
+			<dropiteminfo dropHeight="150" dropDistanceBase="100" dropDistanceRandom="50" globalDropBoxId="74" />
+			<aiInfo path="AI_DefaultNew_LessHpUsingOnceIdx2.xml" />
+			<effectdummy>
+				<dummy name="Eff_Head">
+					<attachInfo parentNode="Bip01 Head" />
+					<transform translate="5,10,0" />
+				</dummy>
+				<dummy name="Eff_Body">
+					<attachInfo parentNode="Bip01 Spine1" />
+				</dummy>
+				<dummy name="Eff_UI">
+					<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,-30,120" />
+				</dummy>
+				<dummy name="Eff_Head_World">
+					<attachInfo parentNode="Bip01 Head" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,-15,0" />
+				</dummy>
+				<dummy name="Eff_Body_World">
+					<attachInfo parentNode="Bip01 Spine1" applyWorldTransform="true" applyLocalScale="false" />
+				</dummy>
+			</effectdummy>
+		</environment>
+	</npc>
+	<npc id="32002501">
+		<environment feature="TorrentOfDark" npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="elite_boss" nametag="1" defenceMaterial="1" hitImmune="99" abnormalImmune="99" level="50" class="3" rankIcon="b" carePathToEnemy="1" propertyTags="keep_battle,atp_formula_01" raceString="fairy" gender="1" portrait="./Data/Resource/Image/Portrait/Mob/02030014_N_ElfTwinsFirst_P.png" damagedColorScale="0" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" customExp="0" lookAtMyPCWhenTalking="0">
+			<model kfm="02030014_N_ElfTwinsFirst" scale="1.15" shadowScale="180" rotationSpeed="720" walkSpeed="300" runSpeed="600" />
+			<stat hp="3605848" asp="100" msp="100" atp="81" evp="105" cap="100" cad="500" car="50" ndd="567" pap="378019" map="378062" par="390" mar="390" scaleStatRate_1="3" scaleBaseTap_1="3725878" scaleBaseDef_1="1747" scaleBaseSpaRate_1="0.35" scaleStatRate_2="3" scaleBaseTap_2="9149389" scaleBaseDef_2="5222" scaleBaseSpaRate_2="0.35" />
+			<distance avoid="100" sight="2500" sightHeightUP="300" sightHeightDown="0" customLastSightRadius="3500" customLastSightHeightUp="525" customLastSightHeightDown="225" />
+			<skill ids="50000213" levels="1" probs="100" />
+			<additionalEffect codes="60134002" levels="1" />
+			<collision shape="box" width="95.6522" height="156.522" depth="86.9565" />
+			<capsule radius="60" height="250" />
+			<dead time="2" defaultaction="Dead_A" upaction="Dead_A" />
+			<normal action="Idle_A,Bore_A,Walk_A" prob="2000,3000,5000" movearea="150" />
+			<dropiteminfo dropHeight="150" dropDistanceBase="200" dropDistanceRandom="10" fireVelocity="150" globalDropBoxId="74" />
+			<aiInfo path="AI_ElfTwinsFirst_DrakStream.xml" />
+			<effectdummy>
+				<dummy name="Eff_Head">
+					<attachInfo parentNode="Bip01 Head" />
+					<transform translate="30,-5,0" scale="0.9" />
+				</dummy>
+				<dummy name="Eff_Body">
+					<attachInfo parentNode="Bip01 Pelvis" />
+					<transform scale="0.9" />
+				</dummy>
+				<dummy name="Eff_Foot">
+					<attachInfo parentNode="Scene Root" />
+					<transform scale="0.9" />
+				</dummy>
+				<dummy name="Eff_UI">
+					<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,0,210" />
+				</dummy>
+				<dummy name="Eff_Head_World">
+					<attachInfo parentNode="Bip01 Head" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,10,30" scale="0.9" />
+				</dummy>
+				<dummy name="Eff_Body_World">
+					<attachInfo parentNode="Bip01 Pelvis" applyWorldTransform="true" applyLocalScale="false" />
+					<transform scale="0.9" />
+				</dummy>
+				<dummy name="Eff_Foot_World">
+					<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
+					<transform scale="0.9" />
+				</dummy>
+			</effectdummy>
+		</environment>
+	</npc>
+	<npc id="32002502">
+		<environment feature="TorrentOfDark" npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="elite_boss" nametag="1" defenceMaterial="1" hitImmune="99" abnormalImmune="99" level="50" class="3" rankIcon="b" carePathToEnemy="1" propertyTags="keep_battle,atp_formula_01" raceString="fairy" gender="1" portrait="./Data/Resource/Image/Portrait/Mob/02030015_N_ElfTwinsSecond_P.png" damagedColorScale="0" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" customExp="0" lookAtMyPCWhenTalking="0">
+			<model kfm="02030015_N_ElfTwinsSecond" scale="1.15" shadowScale="180" rotationSpeed="720" walkSpeed="300" runSpeed="600" />
+			<stat hp="4703281" asp="100" msp="100" atp="81" evp="105" cap="100" cad="500" car="50" ndd="567" pap="378019" map="378062" par="390" mar="390" scaleStatRate_1="3" scaleBaseTap_1="3725878" scaleBaseDef_1="1747" scaleBaseSpaRate_1="0.35" scaleStatRate_2="3" scaleBaseTap_2="9149389" scaleBaseDef_2="5222" scaleBaseSpaRate_2="0.35" />
+			<distance avoid="100" sight="2500" sightHeightUP="300" sightHeightDown="0" customLastSightRadius="3500" customLastSightHeightUp="525" customLastSightHeightDown="225" />
+			<skill ids="50000213" levels="1" probs="100" />
+			<additionalEffect codes="60133001" levels="1" />
+			<collision shape="box" width="95.6522" height="156.522" depth="86.9565" />
+			<capsule radius="60" height="250" />
+			<dead time="2" defaultaction="Dead_A" upaction="Dead_A" />
+			<normal action="Idle_A,Bore_A,Walk_A" prob="2000,2000,6000" movearea="150" />
+			<dropiteminfo dropHeight="150" dropDistanceBase="200" dropDistanceRandom="10" fireVelocity="150" globalDropBoxId="74" />
+			<aiInfo path="AI_ElfTwinsSecond_DarkStream.xml" />
+			<effectdummy>
+				<dummy name="Eff_Head">
+					<attachInfo parentNode="Bip01 Head" />
+					<transform translate="30,-5,0" scale="0.9" />
+				</dummy>
+				<dummy name="Eff_Body">
+					<attachInfo parentNode="Bip01 Pelvis" />
+					<transform scale="0.9" />
+				</dummy>
+				<dummy name="Eff_Foot">
+					<attachInfo parentNode="Scene Root" />
+					<transform scale="0.9" />
+				</dummy>
+				<dummy name="Eff_UI">
+					<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,0,210" />
+				</dummy>
+				<dummy name="Eff_Head_World">
+					<attachInfo parentNode="Bip01 Head" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,10,30" scale="0.9" />
+				</dummy>
+				<dummy name="Eff_Body_World">
+					<attachInfo parentNode="Bip01 Pelvis" applyWorldTransform="true" applyLocalScale="false" />
+					<transform scale="0.9" />
+				</dummy>
+				<dummy name="Eff_Foot_World">
+					<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
+					<transform scale="0.9" />
+				</dummy>
+			</effectdummy>
+		</environment>
+	</npc>
+	<npc id="32002601">
+		<environment feature="TorrentOfDark" npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="elite_boss" nametag="1" defenceMaterial="1" hitImmune="99" abnormalImmune="99" level="50" class="3" rankIcon="b" carePathToEnemy="1" propertyTags="keep_battle,atp_formula_01" raceString="combine" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/22000057_N_ZealotLeader02_P.png" damagedVibrateDuration="0.5" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" customExp="0" lookAtMyPCWhenTalking="0">
+			<model kfm="22000057_N_ZealotLeader02" scale="1.5" shadowScale="380" rotationSpeed="720" walkSpeed="250" runSpeed="500" />
+			<stat hp="14104550" asp="100" msp="100" atp="81" evp="105" cap="100" cad="500" car="50" ndd="567" pap="269280" map="269296" par="390" mar="390" scaleStatRate_1="3" scaleBaseTap_1="6709626" scaleBaseDef_1="1753" scaleBaseSpaRate_1="0.35" scaleStatRate_2="3" scaleBaseTap_2="17184472" scaleBaseDef_2="7056" scaleBaseSpaRate_2="0.35" />
+			<distance avoid="140" sight="2500" sightHeightUP="300" sightHeightDown="0" customLastSightRadius="2500" customLastSightHeightUp="525" customLastSightHeightDown="225" />
+			<skill ids="50009999" levels="1" probs="100" />
+			<additionalEffect codes="60127002" levels="1" />
+			<collision shape="box" width="100" height="150" depth="100" />
+			<capsule radius="130" height="150" />
+			<dead time="2" defaultaction="Dead_A" upaction="Dead_A" />
+			<normal action="Idle_A,Bore_A,Walk_A" prob="3500,2000,4500" movearea="150" />
+			<dropiteminfo dropHeight="150" dropDistanceBase="200" dropDistanceRandom="10" fireVelocity="150" globalDropBoxId="74" />
+			<aiInfo path="AI_ZealotLeader_DarkStream.xml" />
+			<effectdummy>
+				<dummy name="Eff_Head">
+					<attachInfo parentNode="Bip01 Head" />
+					<transform translate="33,5,0" scale="1.2" />
+				</dummy>
+				<dummy name="Eff_Body">
+					<attachInfo parentNode="Bip01 Pelvis" />
+					<transform translate="10,0,0" scale="1.2" />
+				</dummy>
+				<dummy name="Eff_Foot">
+					<attachInfo parentNode="Scene Root" />
+					<transform scale="1.2" />
+				</dummy>
+				<dummy name="Eff_UI">
+					<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,-30,260" />
+				</dummy>
+				<dummy name="Eff_Head_World">
+					<attachInfo parentNode="Bip01 Head" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,-10,50" scale="1.2" />
+				</dummy>
+				<dummy name="Eff_Body_World">
+					<attachInfo parentNode="Bip01 Pelvis" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,0,10" scale="1.2" />
+				</dummy>
+				<dummy name="Eff_Foot_World">
+					<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
+					<transform scale="1.2" />
+				</dummy>
+			</effectdummy>
+		</environment>
+	</npc>
+	<npc id="32002602">
+		<environment feature="TorrentOfDark" npcAttackGroup="1" npcDefenseGroup="2" nametag="1" minimap="0" hpBar="1" defenceMaterial="1" hitImmune="1" abnormalImmune="1" level="50" rankIcon="c" carePathToEnemy="1" propertyTags="keep_battle,atp_formula_01" raceString="combine" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/21000334_M_ZealotSuperior02_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" customExp="0" lookAtMyPCWhenTalking="0">
+			<model kfm="21000334_M_ZealotSuperior02" shadowScale="130" rotationSpeed="720" walkSpeed="200" runSpeed="400" />
+			<stat hp="896870" asp="100" msp="100" atp="80" evp="105" cap="100" cad="500" car="50" ndd="567" pap="99509" map="99515" par="390" mar="390" scaleStatRate_1="3" scaleBaseTap_1="6709626" scaleBaseDef_1="1753" scaleBaseSpaRate_1="0.35" scaleStatRate_2="3" scaleBaseTap_2="17184472" scaleBaseDef_2="7056" scaleBaseSpaRate_2="0.35" />
+			<distance avoid="60" sight="2500" sightHeightUP="300" sightHeightDown="0" customLastSightRadius="2500" customLastSightHeightUp="525" customLastSightHeightDown="225" />
+			<skill ids="49158001,49158011" levels="1,1" probs="50,50" />
+			<collision shape="box" width="150" height="130" depth="150" />
+			<capsule radius="100" height="150" />
+			<dead time="2" defaultaction="Dead_A,Dead_B" upaction="Dead_B" />
+			<push back="1" up="1" knockback="1" />
+			<normal action="Idle_A,Bore_A,Walk_A" prob="4500,1500,4000" movearea="150" />
+			<dropiteminfo dropHeight="50" dropDistanceBase="100" dropDistanceRandom="50" globalDropBoxId="74" />
+			<aiInfo path="AI_DefaultNew_DarkStream.xml" />
+			<effectdummy>
+				<dummy name="Eff_Head">
+					<attachInfo parentNode="Bip01 Head" />
+					<transform translate="30,5,0" scale="0.8" />
+				</dummy>
+				<dummy name="Eff_Body">
+					<attachInfo parentNode="Bip01 Pelvis" />
+					<transform translate="0,5,0" scale="0.8" />
+				</dummy>
+				<dummy name="Eff_Foot">
+					<attachInfo parentNode="Scene Root" />
+					<transform scale="0.8" />
+				</dummy>
+				<dummy name="Eff_Head_World">
+					<attachInfo parentNode="Bip01 Head" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,-5,30" scale="0.8" />
+				</dummy>
+				<dummy name="Eff_Body_World">
+					<attachInfo parentNode="Bip01 Pelvis" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,-5,0" scale="0.8" />
+				</dummy>
+				<dummy name="Eff_Foot_World">
+					<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
+					<transform scale="0.8" />
+				</dummy>
+			</effectdummy>
+		</environment>
+	</npc>
+	<npc id="32002603">
+		<environment feature="TorrentOfDark" npcAttackGroup="1" npcDefenseGroup="2" nametag="1" minimap="0" hpBar="1" defenceMaterial="1" hitImmune="1" abnormalImmune="1" level="50" rankIcon="c" carePathToEnemy="1" propertyTags="keep_battle,atp_formula_01" raceString="combine" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/21000335_M_ZealotInferior02_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" customExp="0" lookAtMyPCWhenTalking="0">
+			<model kfm="21000335_M_ZealotInferior02" shadowScale="130" rotationSpeed="720" walkSpeed="200" runSpeed="400" />
+			<stat hp="896870" asp="100" msp="100" atp="80" evp="105" cap="100" cad="500" car="50" ndd="567" pap="99509" map="99515" par="390" mar="390" scaleStatRate_1="3" scaleBaseTap_1="6709626" scaleBaseDef_1="1753" scaleBaseSpaRate_1="0.35" scaleStatRate_2="3" scaleBaseTap_2="17184472" scaleBaseDef_2="7056" scaleBaseSpaRate_2="0.35" />
+			<distance avoid="60" sight="2500" sightHeightUP="300" sightHeightDown="0" customLastSightRadius="2500" customLastSightHeightUp="525" customLastSightHeightDown="225" />
+			<skill ids="40329001,40329011" levels="1,1" probs="50,50" />
+			<collision shape="box" width="150" height="130" depth="150" />
+			<capsule radius="100" height="150" />
+			<dead time="2" defaultaction="Dead_A,Dead_B" upaction="Dead_B" />
+			<push back="1" up="1" knockback="1" />
+			<normal action="Idle_A,Bore_A,Walk_A" prob="4500,1500,4000" movearea="150" />
+			<dropiteminfo dropHeight="50" dropDistanceBase="100" dropDistanceRandom="50" globalDropBoxId="74" />
+			<aiInfo path="AI_DefaultNew_DarkStream.xml" />
+			<effectdummy>
+				<dummy name="Eff_Head">
+					<attachInfo parentNode="Bip01 Head" />
+					<transform translate="30,0,0" scale="0.8" />
+				</dummy>
+				<dummy name="Eff_Body">
+					<attachInfo parentNode="Bip01 Pelvis" />
+					<transform scale="0.8" />
+				</dummy>
+				<dummy name="Eff_Foot">
+					<attachInfo parentNode="Scene Root" />
+					<transform scale="0.8" />
+				</dummy>
+				<dummy name="Eff_UI">
+					<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,0,160" />
+				</dummy>
+				<dummy name="Eff_Head_World">
+					<attachInfo parentNode="Bip01 Head" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,0,30" scale="0.8" />
+				</dummy>
+				<dummy name="Eff_Body_World">
+					<attachInfo parentNode="Bip01 Pelvis" applyWorldTransform="true" applyLocalScale="false" />
+					<transform scale="0.8" />
+				</dummy>
+				<dummy name="Eff_Foot_World">
+					<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
+					<transform scale="0.8" />
+				</dummy>
+			</effectdummy>
+		</environment>
+	</npc>
+	<npc id="32002701">
+		<environment feature="TorrentOfDark" npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="elite_boss" nametag="1" defenceMaterial="1" hitImmune="99" abnormalImmune="99" level="50" class="3" rankIcon="b" carePathToEnemy="1" propertyTags="keep_battle,atp_formula_01" raceString="animal" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/22000022_N_BearBigLog_P.png" damagedVibrateDuration="0.5" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" customExp="0" lookAtMyPCWhenTalking="0">
+			<model kfm="22000022_N_BearBigLog" shadowScale="360" rotationSpeed="720" walkSpeed="300" runSpeed="600" />
+			<stat hp="16940251" asp="100" msp="100" atp="81" evp="105" cap="100" cad="500" car="50" ndd="567" pap="173561" map="173571" par="390" mar="390" scaleStatRate_1="3" scaleBaseTap_1="6709626" scaleBaseDef_1="1753" scaleBaseSpaRate_1="0.35" scaleStatRate_2="3" scaleBaseTap_2="17184472" scaleBaseDef_2="7056" scaleBaseSpaRate_2="0.35" />
+			<distance avoid="140" sight="2500" sightHeightUP="300" sightHeightDown="0" customLastSightRadius="2500" customLastSightHeightUp="525" customLastSightHeightDown="225" />
+			<skill ids="50000356" levels="1" probs="100" />
+			<additionalEffect codes="60130001,60130003" levels="1,1" />
+			<collision shape="box" width="200" height="220" depth="170" />
+			<capsule radius="110" height="350" />
+			<dead time="2" defaultaction="Dead_A" upaction="Dead_A" />
+			<normal action="Idle_A,Bore_A,Walk_A" prob="3500,2000,4500" movearea="150" />
+			<dropiteminfo dropHeight="150" dropDistanceBase="200" dropDistanceRandom="10" fireVelocity="150" globalDropBoxId="74" />
+			<aiInfo path="AI_BearBigLog_DarkStream.xml" />
+			<effectdummy>
+				<dummy name="Eff_Head">
+					<attachInfo parentNode="Bip01 Head" />
+					<transform translate="30,10,0" scale="1.1" />
+				</dummy>
+				<dummy name="Eff_Body">
+					<attachInfo parentNode="Bip01 Pelvis" />
+					<transform rotation="0,-90,-90" scale="1.1" />
+				</dummy>
+				<dummy name="Eff_Foot">
+					<attachInfo parentNode="Bip01 Footsteps" />
+					<transform scale="1.1" />
+				</dummy>
+				<dummy name="Eff_UI">
+					<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,-30,280" />
+				</dummy>
+				<dummy name="Eff_Head_World">
+					<attachInfo parentNode="Bip01 Head" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,-15,25" scale="1.1" />
+				</dummy>
+				<dummy name="Eff_Body_World">
+					<attachInfo parentNode="Bip01 Pelvis" applyWorldTransform="true" applyLocalScale="false" />
+					<transform scale="1.1" />
+				</dummy>
+				<dummy name="Eff_Foot_World">
+					<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
+					<transform rotation="0,0,90" scale="1.1" />
+				</dummy>
+			</effectdummy>
+		</environment>
+	</npc>
+	<npc id="32002801">
+		<environment feature="TorrentOfDark" npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="elite_boss" nametag="1" defenceMaterial="1" hitImmune="99" abnormalImmune="99" level="50" class="3" rankIcon="b" carePathToEnemy="1" propertyTags="keep_battle,atp_formula_01" raceString="spirit" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/22091007_N_PuppetBunnyBlue_P.png" damagedVibrateDuration="0.5" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" customExp="0" lookAtMyPCWhenTalking="0">
+			<model kfm="22091007_N_PuppetBunnyBlue" scale="1.15" shadowScale="300" rotationSpeed="720" walkSpeed="300" runSpeed="600" />
+			<stat hp="13552200" asp="100" msp="100" atp="81" evp="105" cap="100" cad="500" car="50" ndd="567" pap="131762" map="131770" par="390" mar="390" scaleStatRate_1="3" scaleBaseTap_1="6709626" scaleBaseDef_1="1753" scaleBaseSpaRate_1="0.35" scaleStatRate_2="3" scaleBaseTap_2="17184472" scaleBaseDef_2="7056" scaleBaseSpaRate_2="0.35" />
+			<distance avoid="140" sight="2500" sightHeightUP="300" sightHeightDown="0" customLastSightRadius="2500" customLastSightHeightUp="525" customLastSightHeightDown="225" />
+			<skill ids="49156001" levels="1" probs="100" />
+			<additionalEffect codes="60132001,60132003" levels="1,1" />
+			<collision shape="box" width="113.043" height="173.913" depth="113.043" />
+			<capsule radius="90" height="180" />
+			<dead time="2" defaultaction="Dead_A" upaction="Dead_A" />
+			<normal action="Idle_A,Bore_A,Walk_A" prob="3500,2000,4500" movearea="150" />
+			<dropiteminfo dropHeight="200" dropDistanceBase="160" dropDistanceRandom="10" fireVelocity="150" globalDropBoxId="74" />
+			<aiInfo path="AI_PuppetBunnySummoner_DarkStream.xml" />
+			<effectdummy>
+				<dummy name="Eff_Head">
+					<attachInfo parentNode="Bip01 Head" />
+					<transform translate="50,0,0" scale="1.1" />
+				</dummy>
+				<dummy name="Eff_Body">
+					<attachInfo parentNode="Bip01 Pelvis" />
+					<transform rotation="0,-90,-90" scale="1.1" />
+				</dummy>
+				<dummy name="Eff_Foot">
+					<attachInfo parentNode="Bip01 Footsteps" />
+					<transform rotation="0,0,90" scale="1.1" />
+				</dummy>
+				<dummy name="Eff_UI">
+					<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,0,250" />
+				</dummy>
+				<dummy name="Eff_Head_World">
+					<attachInfo parentNode="Bip01 Head" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,0,60" scale="1.1" />
+				</dummy>
+				<dummy name="Eff_Body_World">
+					<attachInfo parentNode="Bip01 Pelvis" applyWorldTransform="true" applyLocalScale="false" />
+					<transform scale="1.1" />
+				</dummy>
+				<dummy name="Eff_Foot_World">
+					<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
+					<transform rotation="0,0,90" scale="1.1" />
+				</dummy>
+			</effectdummy>
+		</environment>
+	</npc>
+	<npc id="32002802">
+		<environment feature="TorrentOfDark" locale="CN" npcAttackGroup="1" npcDefenseGroup="2" nametag="1" minimap="0" hpBar="1" defenceMaterial="1" hitImmune="1" abnormalImmune="1" level="50" rankIcon="c" carePathToEnemy="1" propertyTags="keep_battle,atp_formula_01" raceString="undead" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/02020026_M_StoneRak_CN_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" customExp="0" lookAtMyPCWhenTalking="0">
+			<model kfm="02020026_M_StoneRak_CN" scale="1.2" shadowScale="170" rotationSpeed="720" walkSpeed="180" runSpeed="600" />
+			<stat hp="649566" asp="100" msp="100" atp="80" evp="105" cap="100" cad="500" car="50" ndd="567" pap="50632" map="50635" par="390" mar="390" scaleStatRate_1="3" scaleBaseTap_1="6709626" scaleBaseDef_1="1753" scaleBaseSpaRate_1="0.35" scaleStatRate_2="3" scaleBaseTap_2="17184472" scaleBaseDef_2="7056" scaleBaseSpaRate_2="0.35" />
+			<distance avoid="100" sight="2500" sightHeightUP="300" sightHeightDown="0" customLastSightRadius="2500" customLastSightHeightUp="525" customLastSightHeightDown="225" />
+			<skill ids="40262021,40262031" levels="1,1" probs="50,50" />
+			<collision shape="box" width="80" height="110" depth="80" />
+			<capsule radius="70" height="150" />
+			<dead time="2" defaultaction="Dead_A,Dead_B" upaction="Dead_B" />
+			<push back="1" up="1" knockback="1" />
+			<normal action="Idle_A" prob="10000" />
+			<dropiteminfo dropHeight="150" dropDistanceBase="100" dropDistanceRandom="50" globalDropBoxId="74" />
+			<effectdummy>
+				<dummy name="Eff_Head">
+					<attachInfo parentNode="Bip01 Head" />
+					<transform translate="30,0,0" scale="0.9" />
+				</dummy>
+				<dummy name="Eff_Body">
+					<attachInfo parentNode="Bip01 Pelvis" />
+					<transform scale="0.9" />
+				</dummy>
+				<dummy name="Eff_Foot">
+					<attachInfo parentNode="Scene Root" />
+					<transform scale="0.9" />
+				</dummy>
+				<dummy name="Eff_UI">
+					<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,0,150" />
+				</dummy>
+				<dummy name="Eff_Head_World">
+					<attachInfo parentNode="Bip01 Head" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,0,30" scale="0.9" />
+				</dummy>
+				<dummy name="Eff_Body_World">
+					<attachInfo parentNode="Bip01 Pelvis" applyWorldTransform="true" applyLocalScale="false" />
+					<transform scale="0.9" />
+				</dummy>
+				<dummy name="Eff_Foot_World">
+					<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
+					<transform scale="0.9" />
+				</dummy>
+			</effectdummy>
+		</environment>
+		<environment feature="TorrentOfDark" npcAttackGroup="1" npcDefenseGroup="2" nametag="1" minimap="0" hpBar="1" defenceMaterial="1" hitImmune="1" abnormalImmune="1" level="50" rankIcon="c" carePathToEnemy="1" propertyTags="keep_battle,atp_formula_01" raceString="undead" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/02020104_M_SkeletonWhite01_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" customExp="0" lookAtMyPCWhenTalking="0">
+			<model kfm="02020104_M_SkeletonWhite01" scale="1.2" shadowScale="170" rotationSpeed="720" walkSpeed="180" runSpeed="600" />
+			<stat hp="649566" asp="100" msp="100" atp="80" evp="105" cap="100" cad="500" car="50" ndd="567" pap="50632" map="50635" par="390" mar="390" scaleStatRate_1="3" scaleBaseTap_1="6709626" scaleBaseDef_1="1753" scaleBaseSpaRate_1="0.35" scaleStatRate_2="3" scaleBaseTap_2="17184472" scaleBaseDef_2="7056" scaleBaseSpaRate_2="0.35" />
+			<distance avoid="100" sight="2500" sightHeightUP="300" sightHeightDown="0" customLastSightRadius="2500" customLastSightHeightUp="525" customLastSightHeightDown="225" />
+			<skill ids="40262001,40262011" levels="1,1" probs="50,50" />
+			<collision shape="box" width="80" height="110" depth="80" />
+			<capsule radius="70" height="150" />
+			<dead time="2" defaultaction="Dead_A,Dead_B" upaction="Dead_B" />
+			<push back="1" up="1" knockback="1" />
+			<normal action="Idle_A" prob="10000" />
+			<dropiteminfo dropHeight="150" dropDistanceBase="100" dropDistanceRandom="50" globalDropBoxId="74" />
+			<effectdummy>
+				<dummy name="Eff_Head">
+					<attachInfo parentNode="Bip01 Head" />
+					<transform translate="30,0,0" scale="0.9" />
+				</dummy>
+				<dummy name="Eff_Body">
+					<attachInfo parentNode="Bip01 Pelvis" />
+					<transform scale="0.9" />
+				</dummy>
+				<dummy name="Eff_Foot">
+					<attachInfo parentNode="Scene Root" />
+					<transform scale="0.9" />
+				</dummy>
+				<dummy name="Eff_UI">
+					<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,0,150" />
+				</dummy>
+				<dummy name="Eff_Head_World">
+					<attachInfo parentNode="Bip01 Head" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,0,30" scale="0.9" />
+				</dummy>
+				<dummy name="Eff_Body_World">
+					<attachInfo parentNode="Bip01 Pelvis" applyWorldTransform="true" applyLocalScale="false" />
+					<transform scale="0.9" />
+				</dummy>
+				<dummy name="Eff_Foot_World">
+					<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
+					<transform scale="0.9" />
+				</dummy>
+			</effectdummy>
+		</environment>
+	</npc>
+	<npc id="32002803">
+		<environment feature="TorrentOfDark" locale="CN" npcAttackGroup="1" npcDefenseGroup="2" nametag="1" minimap="0" hpBar="1" defenceMaterial="1" hitImmune="90" abnormalImmune="90" level="50" rankIcon="c" carePathToEnemy="1" propertyTags="keep_battle,atp_formula_01" raceString="undead" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/21000231_M_PirateOctopusPink_CN_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" customExp="0" lookAtMyPCWhenTalking="0">
+			<model kfm="21000812_M_MermanFatBlue" scale="1.1" shadowScale="130" rotationSpeed="720" walkSpeed="300" runSpeed="600" />
+			<stat hp="649566" asp="100" msp="100" atp="80" evp="105" cap="100" cad="500" car="50" ndd="567" pap="50632" map="50635" par="390" mar="390" scaleStatRate_1="3" scaleBaseTap_1="6709626" scaleBaseDef_1="1753" scaleBaseSpaRate_1="0.35" scaleStatRate_2="3" scaleBaseTap_2="17184472" scaleBaseDef_2="7056" scaleBaseSpaRate_2="0.35" />
+			<distance avoid="60" sight="2500" sightHeightUP="300" sightHeightDown="0" customLastSightRadius="9900" customLastSightHeightUp="9900" customLastSightHeightDown="9900" />
+			<skill ids="40165001,40165011" levels="1,1" probs="50,50" />
+			<collision shape="box" width="85" height="130" depth="80" />
+			<capsule radius="32" height="150" />
+			<dead time="2" defaultaction="Dead_A,Dead_B" upaction="Dead_B" />
+			<push back="1" up="1" knockback="1" />
+			<normal action="Idle_A,Bore_A,Walk_A" prob="4500,1500,4000" movearea="150" />
+			<dropiteminfo dropHeight="150" dropDistanceBase="100" dropDistanceRandom="50" globalDropBoxId="74" />
+			<aiInfo path="AI_PirateSkullVikingSickleSummonBig_DarkStream_CN.xml" />
+			<effectdummy>
+				<dummy name="Eff_Head">
+					<attachInfo parentNode="Bip01 Head" />
+					<transform translate="10,15,0" />
+				</dummy>
+				<dummy name="Eff_Body">
+					<attachInfo parentNode="Bip01 Spine1" />
+					<transform translate="10,15,0" />
+				</dummy>
+				<dummy name="Eff_UI">
+					<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,-40,180" />
+				</dummy>
+				<dummy name="Eff_Head_World">
+					<attachInfo parentNode="Bip01 Head" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="15,-20,0" />
+				</dummy>
+				<dummy name="Eff_Body_World">
+					<attachInfo parentNode="Bip01 Spine1" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,-20,0" />
+				</dummy>
+			</effectdummy>
+		</environment>
+		<environment feature="TorrentOfDark" npcAttackGroup="1" npcDefenseGroup="2" nametag="1" minimap="0" hpBar="1" defenceMaterial="1" hitImmune="90" abnormalImmune="90" level="50" rankIcon="c" carePathToEnemy="1" propertyTags="keep_battle,atp_formula_01" raceString="undead" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/21000228_M_PirateSkullVikingSickle_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" customExp="0" lookAtMyPCWhenTalking="0">
+			<model kfm="21000228_M_PirateSkullVikingSickle" scale="1.1" shadowScale="130" rotationSpeed="720" walkSpeed="300" runSpeed="600" />
+			<stat hp="649566" asp="100" msp="100" atp="80" evp="105" cap="100" cad="500" car="50" ndd="567" pap="50632" map="50635" par="390" mar="390" scaleStatRate_1="3" scaleBaseTap_1="6709626" scaleBaseDef_1="1753" scaleBaseSpaRate_1="0.35" scaleStatRate_2="3" scaleBaseTap_2="17184472" scaleBaseDef_2="7056" scaleBaseSpaRate_2="0.35" />
+			<distance avoid="60" sight="2500" sightHeightUP="300" sightHeightDown="0" customLastSightRadius="9900" customLastSightHeightUp="9900" customLastSightHeightDown="9900" />
+			<skill ids="40165001,40165011" levels="1,1" probs="50,50" />
+			<collision shape="box" width="85" height="130" depth="80" />
+			<capsule radius="32" height="150" />
+			<dead time="2" defaultaction="Dead_A,Dead_B" upaction="Dead_B" />
+			<push back="1" up="1" knockback="1" />
+			<normal action="Idle_A,Bore_A,Walk_A" prob="4500,1500,4000" movearea="150" />
+			<dropiteminfo dropHeight="150" dropDistanceBase="100" dropDistanceRandom="50" globalDropBoxId="74" />
+			<aiInfo path="AI_PirateSkullVikingSickleSummonBig_DarkStream.xml" />
+			<effectdummy>
+				<dummy name="Eff_Head">
+					<attachInfo parentNode="Bip01 Head" />
+					<transform translate="10,15,0" />
+				</dummy>
+				<dummy name="Eff_Body">
+					<attachInfo parentNode="Bip01 Spine1" />
+					<transform translate="10,15,0" />
+				</dummy>
+				<dummy name="Eff_UI">
+					<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,-40,180" />
+				</dummy>
+				<dummy name="Eff_Head_World">
+					<attachInfo parentNode="Bip01 Head" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="15,-20,0" />
+				</dummy>
+				<dummy name="Eff_Body_World">
+					<attachInfo parentNode="Bip01 Spine1" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,-20,0" />
+				</dummy>
+			</effectdummy>
+		</environment>
+	</npc>
+	<npc id="32002804">
+		<environment feature="TorrentOfDark" locale="CN" npcAttackGroup="1" npcDefenseGroup="2" nametag="1" minimap="0" hpBar="1" defenceMaterial="1" hitImmune="1" abnormalImmune="1" level="50" rankIcon="c" carePathToEnemy="1" propertyTags="keep_battle,atp_formula_01" raceString="undead" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/02020027_M_HalstoneRak_CN_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" customExp="0" lookAtMyPCWhenTalking="0">
+			<model kfm="02020027_M_HalstoneRak_CN" scale="1.5" shadowScale="130" rotationSpeed="720" walkSpeed="200" runSpeed="350" />
+			<stat hp="649566" asp="100" msp="100" atp="80" evp="105" cap="100" cad="500" car="50" ndd="567" pap="50632" map="50635" par="390" mar="390" scaleStatRate_1="3" scaleBaseTap_1="6709626" scaleBaseDef_1="1753" scaleBaseSpaRate_1="0.35" scaleStatRate_2="3" scaleBaseTap_2="17184472" scaleBaseDef_2="7056" scaleBaseSpaRate_2="0.35" />
+			<distance avoid="120" sight="2500" sightHeightUP="300" sightHeightDown="0" customLastSightRadius="2500" customLastSightHeightUp="525" customLastSightHeightDown="225" />
+			<skill ids="40264021" levels="1" probs="100" />
+			<collision shape="box" width="100" height="130" depth="100" />
+			<capsule radius="80" height="130" />
+			<dead time="2" defaultaction="Dead_A,Dead_B" upaction="Dead_B" />
+			<push back="1" up="1" knockback="1" />
+			<normal action="Idle_A,Bore_A,Walk_A" prob="4500,1000,4500" movearea="150" />
+			<dropiteminfo dropHeight="100" dropDistanceBase="100" dropDistanceRandom="50" globalDropBoxId="74" />
+			<aiInfo path="AI_MonsterType1_Shadow_Normal.xml" />
+			<effectdummy>
+				<dummy name="Eff_Head">
+					<attachInfo parentNode="Bip01 Head" />
+					<transform translate="70,0,0" rotation="0,-90,-90" scale="0.9" />
+				</dummy>
+				<dummy name="Eff_Body">
+					<attachInfo parentNode="Bip01 Spine" />
+					<transform translate="10,0,0" rotation="0,-90,-90" scale="0.9" />
+				</dummy>
+				<dummy name="Eff_Foot">
+					<attachInfo parentNode="Scene Root" />
+					<transform rotation="0,0,90" scale="0.9" />
+				</dummy>
+				<dummy name="Eff_UI">
+					<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,0,175" rotation="0,0,90" />
+				</dummy>
+				<dummy name="Eff_Head_World">
+					<attachInfo parentNode="Bip01 Head" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,0,70" rotation="0,0,90" scale="0.9" />
+				</dummy>
+				<dummy name="Eff_Body_World">
+					<attachInfo parentNode="Bip01 Spine" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,0,10" rotation="0,0,90" scale="0.9" />
+				</dummy>
+				<dummy name="Eff_Foot_World">
+					<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
+					<transform rotation="0,0,90" scale="0.9" />
+				</dummy>
+			</effectdummy>
+		</environment>
+		<environment feature="TorrentOfDark" npcAttackGroup="1" npcDefenseGroup="2" nametag="1" minimap="0" hpBar="1" defenceMaterial="1" hitImmune="1" abnormalImmune="1" level="50" rankIcon="c" carePathToEnemy="1" propertyTags="keep_battle,atp_formula_01" raceString="undead" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/21000138_M_SkeletonBlackHorn_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" customExp="0" lookAtMyPCWhenTalking="0">
+			<model kfm="21000138_M_SkeletonBlackHorn" scale="1.5" shadowScale="130" rotationSpeed="720" walkSpeed="200" runSpeed="350" />
+			<stat hp="649566" asp="100" msp="100" atp="80" evp="105" cap="100" cad="500" car="50" ndd="567" pap="50632" map="50635" par="390" mar="390" scaleStatRate_1="3" scaleBaseTap_1="6709626" scaleBaseDef_1="1753" scaleBaseSpaRate_1="0.35" scaleStatRate_2="3" scaleBaseTap_2="17184472" scaleBaseDef_2="7056" scaleBaseSpaRate_2="0.35" />
+			<distance avoid="120" sight="2500" sightHeightUP="300" sightHeightDown="0" customLastSightRadius="2500" customLastSightHeightUp="525" customLastSightHeightDown="225" />
+			<skill ids="40110001,40110001" levels="1,1" probs="70,30" />
+			<collision shape="box" width="100" height="130" depth="100" />
+			<capsule radius="80" height="130" />
+			<dead time="2" defaultaction="Dead_A,Dead_B" upaction="Dead_B" />
+			<push back="1" up="1" knockback="1" />
+			<normal action="Idle_A,Bore_A,Walk_A" prob="4500,1000,4500" movearea="150" />
+			<dropiteminfo dropHeight="100" dropDistanceBase="100" dropDistanceRandom="50" globalDropBoxId="74" />
+			<aiInfo path="AI_MonsterType1_Shadow_Normal.xml" />
+			<effectdummy>
+				<dummy name="Eff_Head">
+					<attachInfo parentNode="Bip01 Head" />
+					<transform translate="70,0,0" rotation="0,-90,-90" scale="0.9" />
+				</dummy>
+				<dummy name="Eff_Body">
+					<attachInfo parentNode="Bip01 Spine" />
+					<transform translate="10,0,0" rotation="0,-90,-90" scale="0.9" />
+				</dummy>
+				<dummy name="Eff_Foot">
+					<attachInfo parentNode="Scene Root" />
+					<transform rotation="0,0,90" scale="0.9" />
+				</dummy>
+				<dummy name="Eff_UI">
+					<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,0,175" rotation="0,0,90" />
+				</dummy>
+				<dummy name="Eff_Head_World">
+					<attachInfo parentNode="Bip01 Head" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,0,70" rotation="0,0,90" scale="0.9" />
+				</dummy>
+				<dummy name="Eff_Body_World">
+					<attachInfo parentNode="Bip01 Spine" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,0,10" rotation="0,0,90" scale="0.9" />
+				</dummy>
+				<dummy name="Eff_Foot_World">
+					<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
+					<transform rotation="0,0,90" scale="0.9" />
+				</dummy>
+			</effectdummy>
+		</environment>
+	</npc>
+	<npc id="32002901">
+		<environment feature="TorrentOfDark" npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="elite_boss" nametag="1" defenceMaterial="1" hitImmune="99" abnormalImmune="99" level="50" class="3" rankIcon="b" carePathToEnemy="1" propertyTags="keep_battle,atp_formula_01" raceString="combine" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/21000770_M_BarahaBrown_P.png" damagedColorScale="4" damagedVibrateDuration="0.7" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" customExp="0" lookAtMyPCWhenTalking="0">
+			<model kfm="21000770_M_BarahaBrown" scale="1.5" shadowScale="300" rotationSpeed="720" walkSpeed="100" runSpeed="600" />
+			<stat hp="10718373" asp="100" msp="100" atp="81" evp="105" cap="100" cad="500" car="50" ndd="567" pap="231996" map="232009" par="390" mar="390" scaleStatRate_1="3" scaleBaseTap_1="6709626" scaleBaseDef_1="1753" scaleBaseSpaRate_1="0.35" scaleStatRate_2="3" scaleBaseTap_2="17184472" scaleBaseDef_2="7056" scaleBaseSpaRate_2="0.35" />
+			<distance avoid="140" sight="2500" sightHeightUP="300" sightHeightDown="0" customLastSightRadius="2500" customLastSightHeightUp="1000" customLastSightHeightDown="225" />
+			<skill ids="60011001" levels="1" probs="100" />
+			<additionalEffect codes="60129001" levels="1" />
+			<collision shape="box" width="250" height="200" depth="200" />
+			<capsule radius="130" height="200" />
+			<dead time="2" defaultaction="Dead_A" upaction="Dead_A" />
+			<normal action="Idle_A,Bore_A" prob="5000,5000" />
+			<dropiteminfo dropHeight="150" dropDistanceBase="200" dropDistanceRandom="10" fireVelocity="150" globalDropBoxId="74" />
+			<aiInfo path="AI_Baraha_DarkStream.xml" />
+			<effectdummy>
+				<dummy name="Eff_Head">
+					<attachInfo parentNode="Bip01 Head" />
+					<transform translate="20,10,0" rotation="0,-90,-90" scale="0.7" />
+				</dummy>
+				<dummy name="Eff_Body">
+					<attachInfo parentNode="Bip01 Spine1" />
+					<transform translate="10,15,0" rotation="0,-90,-90" />
+				</dummy>
+				<dummy name="Eff_Foot">
+					<attachInfo parentNode="Scene Root" />
+					<transform scale="0.8" />
+				</dummy>
+				<dummy name="Eff_UI">
+					<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,0,450" />
+				</dummy>
+				<dummy name="Eff_Head_World">
+					<attachInfo parentNode="Bip01 Head" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,-20,20" />
+				</dummy>
+				<dummy name="Eff_Body_World">
+					<attachInfo parentNode="Bip01 Spine" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,-20,0" rotation="0,0,90" scale="1.5" />
+				</dummy>
+				<dummy name="Eff_Foot_World">
+					<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
+					<transform scale="1.3" />
+				</dummy>
+			</effectdummy>
+		</environment>
+	</npc>
+	<npc id="32003001">
+		<environment feature="TimeAttackDungeon" npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="elite_boss" defenceMaterial="4" hitImmune="99" abnormalImmune="99" level="50" class="3" rankIcon="b" rotationDisabled="1" propertyTags="keep_battle,atp_formula_01" raceString="unknown" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/23403071_B_ZakumBrown03_P.png" damagedVibrateDuration="0.5" damagedVibrateAmp="1" customExp="0" lookAtMyPCWhenTalking="0">
+			<model kfm="23403071_B_ZakumBrown03" scale="2" shadowScale="1" />
+			<stat hp="16161841" asp="100" msp="100" atp="81" evp="82" cap="100" cad="500" car="50" ndd="567" pap="267870" map="267886" par="390" mar="390" scaleStatRate_1="3" scaleBaseTap_1="6709626" scaleBaseDef_1="1753" scaleBaseSpaRate_1="0.35" scaleStatRate_2="3" scaleBaseTap_2="17184472" scaleBaseDef_2="7056" scaleBaseSpaRate_2="0.35" />
+			<distance avoid="400" sight="9999" sightHeightUP="999" sightHeightDown="999" customLastSightRadius="9999" customLastSightHeightUp="999" customLastSightHeightDown="999" />
+			<skill ids="50100102" levels="1" probs="100" />
+			<additionalEffect codes="50004400" levels="1" />
+			<collision shape="box" width="1" height="1" depth="1" />
+			<capsule radius="100" height="250" />
+			<dead time="2" defaultaction="Dead_A" upaction="Dead_A" />
+			<normal action="Idle_A" prob="10000" />
+			<dropiteminfo dropHeight="320" dropDistanceBase="400" dropDistanceRandom="20" globalDropBoxId="74" />
+			<aiInfo path="AI_ZakumBrown03_DarkStream.xml" />
+		</environment>
+	</npc>
+	<npc id="32003002">
+		<environment feature="TimeAttackDungeon" npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="elite_boss" nametag="1" defenceMaterial="1" hitImmune="99" abnormalImmune="99" level="50" class="3" rankIcon="b" carePathToEnemy="1" propertyTags="keep_battle,atp_formula_01" raceString="unknown" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/Dummy_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" customExp="0" lookAtMyPCWhenTalking="0">
+			<model kfm="Dummy" />
+			<stat hp="16161841" asp="100" msp="100" atp="81" evp="105" cap="100" cad="500" car="50" ndd="567" par="390" mar="390" scaleStatRate_1="3" scaleBaseTap_1="6709626" scaleBaseDef_1="1753" scaleBaseSpaRate_1="0.35" scaleStatRate_2="3" scaleBaseTap_2="17184472" scaleBaseDef_2="7056" scaleBaseSpaRate_2="0.35" />
+			<distance avoid="300" sightHeightUP="0" sightHeightDown="0" />
+			<collision shape="box" width="200" height="300" depth="200" />
+			<capsule radius="100" height="300" />
+			<dead time="5" defaultaction="Idle_A" upaction="Idle_A" />
+			<normal action="Idle_A" prob="10000" movearea="200" />
+			<dropiteminfo globalDropBoxId="74" />
+			<effectdummy>
+				<dummy name="Eff_UI">
+					<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,0,650" />
+				</dummy>
+			</effectdummy>
+		</environment>
+	</npc>
+</ms2>

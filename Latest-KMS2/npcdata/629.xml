@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ms2>
+	<npc id="62900001">
+		<environment feature="GemPetSkin" npcAttackGroup="1" npcDefenseGroup="2" nametag="1" attackDamage="1" defenceMaterial="1" level="50" portrait="./Data/Resource/Image/Portrait/Npc/62900001_TencentPenguin_P.png">
+			<model kfm="62900001_TencentPenguin" shadowScale="80" rotationSpeed="540" walkSpeed="50" runSpeed="150" />
+			<stat hp="2500" asp="100" msp="150" atp="100" evp="100" />
+			<distance avoid="100" sight="3000" sightHeightUP="300" sightHeightDown="0" customLastSightRadius="3000" customLastSightHeightUp="250" customLastSightHeightDown="80" />
+			<skill ids="61110530" levels="1" probs="100" />
+			<collision shape="box" width="85" height="150" depth="85" />
+			<capsule radius="40" height="150" ignore="1" />
+			<normal action="Idle_A,Walk_A,Bore_A" prob="5000,3000,2000" movearea="150" />
+			<aiInfo path="Pet/AI_DefaultPetTaming.xml" />
+		</environment>
+	</npc>
+	<npc id="62900002">
+		<environment feature="PetBattle" npcAttackGroup="1" npcDefenseGroup="2" nametag="1" attackDamage="1" defenceMaterial="1" level="50" portrait="./Data/Resource/Image/Portrait/Mob/62900002_JuniorDogNormal_P.png">
+			<model kfm="62900002_JuniorDogNormal" shadowScale="80" rotationSpeed="540" walkSpeed="50" runSpeed="150" />
+			<stat hp="2500" asp="100" msp="150" atp="100" evp="100" />
+			<distance avoid="100" sight="3000" sightHeightUP="300" sightHeightDown="0" customLastSightRadius="3000" customLastSightHeightUp="250" customLastSightHeightDown="80" />
+			<skill ids="61100140" levels="1" probs="100" />
+			<collision shape="box" width="85" height="150" depth="85" />
+			<capsule radius="40" height="150" ignore="1" />
+			<normal action="Idle_A,Walk_A,Bore_A" prob="5000,3000,2000" movearea="150" />
+			<aiInfo path="Pet/AI_DefaultPetTaming.xml" />
+		</environment>
+	</npc>
+</ms2>

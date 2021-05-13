@@ -3,7 +3,7 @@
 <ms2>
 	<environment feature="NutaNuta" locale="">
 		<model kfm="21000909_M_ShadowTotemCircleRed" scale="1.5" />
-		<basic npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="enemy" nametag="1" nametagSize="18" hpBar="1" defenceMaterial="3" hitImmune="99" abnormalImmune="99" level="50" rankIcon="c" rotationDisabled="1" difficulty="50" propertyTags="keep_battle" raceString="creature" gender="2" mainTags="None" portrait="./Data/Resource/Image/Portrait/Mob/21000909_M_ShadowTotemCircleRed_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" />
+		<basic npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="enemy" nametag="1" nametagSize="18" hpBar="1" defenceMaterial="3" hitImmune="99" abnormalImmune="99" level="50" rankIcon="c" rotationDisabled="1" propertyTags="keep_battle" raceString="creature" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/21000909_M_ShadowTotemCircleRed_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" />
 		<stat hp="1419487" asp="100" msp="100" atp="90" evp="99" cap="400" cad="500" car="50" ndd="690" pap="107152" map="107161" par="90" mar="90" />
 		<distance avoid="100" sight="5000" sightHeightUP="1000" sightHeightDown="700" customLastSightRadius="9900" customLastSightHeightUp="9900" customLastSightHeightDown="350" />
 		<skill ids="50100979" levels="1" priorities="1" probs="100" />
@@ -13,34 +13,33 @@
 		<shadow scale="300" bias="1" />
 		<normal action="Idle_A" prob="10000" maidExpired="Idle_A" />
 		<dropiteminfo globalDropBoxId="74" />
-		<lookattarget lookAtMyPCWhenTalking="0" useTalkMotion="1" />
+		<lookattarget lookAtMyPCWhenTalking="0" />
 		<aiInfo path="BossDungeon/TitanFourArmsGoldMask/AI_ShadowTotemCircleRed_TypeA.xml" />
 		<exp customExp="0" />
 	</environment>
 	<effectdummy>
 		<dummy name="Eff_Head">
-			<attachInfo parentNode="Dummy02" applyWorldTransform="false" applyLocalScale="true" />
-			<transform translate="0.000000, 0.000000, 0.000000" rotation="0.000000, 0.000000, 0.000000" scale="0.600000" />
+			<attachInfo parentNode="Dummy02" />
+			<transform scale="0.6" />
 		</dummy>
 		<dummy name="Eff_Body">
-			<attachInfo parentNode="Dummy02" applyWorldTransform="false" applyLocalScale="true" />
-			<transform translate="0.000000, 0.000000, 0.000000" rotation="0.000000, 0.000000, 0.000000" scale="0.600000" />
+			<attachInfo parentNode="Dummy02" />
+			<transform scale="0.6" />
 		</dummy>
 		<dummy name="Eff_Foot">
-			<attachInfo parentNode="Scene Root" applyWorldTransform="false" applyLocalScale="true" />
-			<transform translate="0.000000, 0.000000, 0.000000" rotation="0.000000, 0.000000, 0.000000" scale="0.600000" />
+			<attachInfo parentNode="Scene Root" />
+			<transform scale="0.6" />
 		</dummy>
 		<dummy name="Eff_UI">
 			<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
-			<transform translate="0.000000, 0.000000, 250.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.000000" />
+			<transform translate="0,0,250" />
 		</dummy>
 		<dummy name="Eff_Head_World">
 			<attachInfo parentNode="Dummy02" applyWorldTransform="true" applyLocalScale="false" />
-			<transform translate="0.000000, 0.000000, 0.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.000000" />
 		</dummy>
 		<dummy name="Eff_Body_World">
 			<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
-			<transform translate="0.000000, 0.000000, 30.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.200000" />
+			<transform translate="0,0,30" scale="1.2" />
 		</dummy>
 	</effectdummy>
 </ms2>

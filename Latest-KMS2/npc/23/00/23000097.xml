@@ -3,7 +3,7 @@
 <ms2>
 	<environment feature="DungeonOpen70CH5" locale="">
 		<model kfm="23000097_B_CarParadeBlackbean" />
-		<basic npcAttackGroup="1" npcDefenseGroup="2" nametagSize="18" minimap="0" defenceMaterial="3" hitImmune="99" abnormalImmune="99" level="70" rankIcon="c" difficulty="70" propertyTags="battle_on_spawn,keep_battle,fixed_big_monster,ignore_check_target_by_additional" raceString="machine" bossNotify="1" gender="2" mainTags="None" portrait="./Data/Resource/Image/Portrait/Mob/23000097_B_CarParadeBlackbean_P.png" damagedVibrateDuration="0.5" damagedVibrateAmp="1" />
+		<basic npcAttackGroup="1" npcDefenseGroup="2" nametagSize="18" minimap="0" defenceMaterial="3" hitImmune="99" abnormalImmune="99" level="70" rankIcon="c" propertyTags="battle_on_spawn,keep_battle,fixed_big_monster,ignore_check_target_by_additional" raceString="machine" bossNotify="1" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/23000097_B_CarParadeBlackbean_P.png" damagedVibrateDuration="0.5" damagedVibrateAmp="1" />
 		<stat hp="32360509810" asp="100" msp="100" atp="80" evp="102" cap="72" cad="500" car="70" ndd="1071" pap="274772977" map="274856062" par="120" mar="120" />
 		<speed rotation="250" walk="100" run="200" />
 		<distance avoid="140" sight="8000" sightHeightUP="5999" sightHeightDown="5999" customLastSightRadius="99999" customLastSightHeightUp="99999" customLastSightHeightDown="99999" />
@@ -15,38 +15,38 @@
 		<shadow scale="800" bias="1" />
 		<normal action="Idle_A" prob="10000" maidExpired="Idle_A" />
 		<dropiteminfo globalDropBoxId="74" />
-		<lookattarget lookAtMyPCWhenTalking="0" useTalkMotion="1" />
+		<lookattarget lookAtMyPCWhenTalking="0" />
 		<aiInfo path="BossDungeon/Blackbean/AI_CarParadeBlackbean.Hard.xml" />
 		<exp customExp="0" />
 	</environment>
 	<effectdummy>
 		<dummy name="Eff_Head">
-			<attachInfo parentNode="Bumper_F_Point001" applyWorldTransform="false" applyLocalScale="true" />
-			<transform translate="0.000000, 70.000000, 100.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.500000" />
+			<attachInfo parentNode="Bumper_F_Point001" />
+			<transform translate="0,70,100" scale="1.5" />
 		</dummy>
 		<dummy name="Eff_Body">
-			<attachInfo parentNode="Bumper_F_Point001" applyWorldTransform="false" applyLocalScale="true" />
-			<transform translate="0.000000, 70.000000, 100.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.500000" />
+			<attachInfo parentNode="Bumper_F_Point001" />
+			<transform translate="0,70,100" scale="1.5" />
 		</dummy>
 		<dummy name="Eff_Foot">
-			<attachInfo parentNode="Main_A NonAccum" applyWorldTransform="false" applyLocalScale="true" />
-			<transform translate="0.000000, -20.000000, 0.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.500000" />
+			<attachInfo parentNode="Main_A NonAccum" />
+			<transform translate="0,-20,0" scale="1.5" />
 		</dummy>
 		<dummy name="Eff_UI">
 			<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
-			<transform translate="0.000000, 0.000000, 400.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.000000" />
+			<transform translate="0,0,400" />
 		</dummy>
 		<dummy name="Eff_Head_World">
 			<attachInfo parentNode="Bumper_F_Point001" applyWorldTransform="true" applyLocalScale="false" />
-			<transform translate="0.000000, 70.000000, 100.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.500000" />
+			<transform translate="0,70,100" scale="1.5" />
 		</dummy>
 		<dummy name="Eff_Body_World">
 			<attachInfo parentNode="Bumper_F_Point001" applyWorldTransform="true" applyLocalScale="false" />
-			<transform translate="0.000000, 70.000000, 100.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.500000" />
+			<transform translate="0,70,100" scale="1.5" />
 		</dummy>
 		<dummy name="Eff_Foot_World">
 			<attachInfo parentNode="Main_A NonAccum" applyWorldTransform="true" applyLocalScale="false" />
-			<transform translate="0.000000, -20.000000, 0.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.500000" />
+			<transform translate="0,-20,0" scale="1.5" />
 		</dummy>
 	</effectdummy>
 </ms2>

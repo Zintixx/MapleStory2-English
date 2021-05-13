@@ -3,7 +3,7 @@
 <ms2>
 	<environment feature="Season2" locale="">
 		<model kfm="21000770_M_BarahaBrown" scale="2" />
-		<basic npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="elite_boss" nametagSize="18" hpBar="1" defenceMaterial="1" hitImmune="99" abnormalImmune="99" level="37" class="7" rankIcon="b" carePathToEnemy="1" difficulty="37" propertyTags="big_hp_bar, always_display_hp_bar" raceString="combine" gender="2" illust="BarahaBrown_normal" mainTags="None" portrait="./Data/Resource/Image/Portrait/Mob/21000770_M_BarahaBrown_P.png" damagedColorScale="4" damagedVibrateDuration="0.7" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" bossSoundDistance="2500" bossSoundEndDistance="9999" />
+		<basic npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="elite_boss" nametagSize="18" hpBar="1" defenceMaterial="1" hitImmune="99" abnormalImmune="99" level="37" class="7" rankIcon="b" carePathToEnemy="1" propertyTags="big_hp_bar,always_display_hp_bar" raceString="combine" gender="2" illust="BarahaBrown_normal" portrait="./Data/Resource/Image/Portrait/Mob/21000770_M_BarahaBrown_P.png" damagedColorScale="4" damagedVibrateDuration="0.7" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" bossSoundDistance="2500" bossSoundEndDistance="9999" />
 		<stat hp="3308862" asp="100" msp="100" atp="81" evp="82" cap="56" cad="500" car="50" ndd="260" pap="57778" map="57797" par="90" mar="90" />
 		<speed rotation="720" walk="100" run="400" />
 		<distance avoid="140" sight="2500" sightHeightUP="1000" sightHeightDown="225" customLastSightRadius="2500" customLastSightHeightUp="1000" customLastSightHeightDown="225" />
@@ -14,18 +14,18 @@
 		<shadow scale="300" bias="1" />
 		<normal action="Idle_A,Bore_A" prob="5000,5000" maidExpired="Idle_A" />
 		<dropiteminfo dropHeight="150" dropDistanceBase="200" dropDistanceRandom="10" fireVelocity="150" globalDropBoxId="74" />
-		<lookattarget lookAtMyPCWhenTalking="0" useTalkMotion="1" />
+		<lookattarget lookAtMyPCWhenTalking="0" />
 		<aiInfo path="AI_Baraha_solo.xml" />
 		<exp customExp="0" />
 	</environment>
 	<effectdummy>
 		<dummy name="Eff_Head">
-			<attachInfo parentNode="Scene Root" applyWorldTransform="false" applyLocalScale="true" />
-			<transform translate="0.000000, 0.000000, 260.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.000000" />
+			<attachInfo parentNode="Scene Root" />
+			<transform translate="0,0,260" />
 		</dummy>
 		<dummy name="Eff_UI">
 			<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
-			<transform translate="0.000000, 0.000000, 600.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.000000" />
+			<transform translate="0,0,600" />
 		</dummy>
 	</effectdummy>
 </ms2>

@@ -3,7 +3,7 @@
 <ms2>
 	<environment feature="KarkarIsland" locale="">
 		<model kfm="02030009_M_Ureus" scale="1.4" />
-		<basic npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="boss" nametag="1" nametagSize="18" defenceMaterial="1" hitImmune="99" abnormalImmune="99" level="50" class="4" rankIcon="a" carePathToEnemy="1" difficulty="50" raceString="mystic" eventTags="field_boss" bossNotify="1" gender="0" mainTags="None" portrait="./Data/Resource/Image/Portrait/Mob/02030009_M_Ureus_P.png" damagedVibrateDuration="0.5" damagedVibrateAmp="1" skipFrame="1" bossSoundDistance="1300" bossSoundEndDistance="2400" />
+		<basic npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="boss" nametag="1" nametagSize="18" defenceMaterial="1" hitImmune="99" abnormalImmune="99" level="50" class="4" rankIcon="a" carePathToEnemy="1" raceString="mystic" eventTags="field_boss" bossNotify="1" gender="0" portrait="./Data/Resource/Image/Portrait/Mob/02030009_M_Ureus_P.png" damagedVibrateDuration="0.5" damagedVibrateAmp="1" bossSoundDistance="1300" bossSoundEndDistance="2400" />
 		<stat hp="277636449" asp="100" msp="100" atp="120" evp="91" cap="62" cad="500" car="50" ndd="690" pap="230443" map="230443" par="120" mar="120" />
 		<speed rotation="720" walk="150" run="600" />
 		<distance avoid="140" sight="800" sightHeightUP="300" sightHeightDown="0" customLastSightRadius="2500" customLastSightHeightUp="525" customLastSightHeightDown="225" />
@@ -13,18 +13,17 @@
 		<collision shape="box" width="180" height="180" depth="180" />
 		<corpse width="350" height="200" depth="770" offsetNametag="-200" hitAble="1" rotation="0" />
 		<capsule radius="110" height="150" />
-		<capsule radius="1500" height="500" />
 		<dead time="20" defaultaction="Dead_A" upaction="Dead_A" />
 		<shadow scale="360" bias="1" />
 		<normal action="Idle_A,Bore_A,Walk_A" prob="3500,2000,4500" movearea="150" maidExpired="Idle_A" />
 		<dropiteminfo dropHeight="200" dropDistanceBase="160" dropDistanceRandom="10" fireVelocity="150" globalDropBoxId="4" globalDeadDropBoxId="1011" individualDropBoxId="23000009" globalHitDropBoxId="100000" />
-		<lookattarget lookAtMyPCWhenTalking="0" useTalkMotion="1" />
+		<lookattarget lookAtMyPCWhenTalking="0" />
 		<aiInfo path="AI_UreusBoss.xml" />
 	</environment>
 	<effectdummy>
 		<dummy name="Eff_UI">
 			<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
-			<transform translate="0.000000, 0.000000, 300.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.000000" />
+			<transform translate="0,0,300" />
 		</dummy>
 	</effectdummy>
 </ms2>

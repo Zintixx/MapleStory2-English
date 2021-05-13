@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ms2>
+	<npc id="43000001">
+		<environment feature="ShadowCataclysm" npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="boss" nametag="1" defenceMaterial="1" hitImmune="99" abnormalImmune="99" level="55" class="4" rankIcon="a" carePathToEnemy="1" propertyTags="keep_battle" raceString="undead" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/22000093_N_Mammon_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" customExp="1283026" lookAtMyPCWhenTalking="0">
+			<model kfm="22000093_N_Mammon" scale="1.5" shadowScale="100" rotationSpeed="720" walkSpeed="200" runSpeed="400" />
+			<stat hp="93851016" asp="100" msp="100" atp="120" evp="90" cap="65" cad="500" car="50" ndd="814" pap="513514" map="513596" par="105" mar="105" scaleStatRate_1="1.4" scaleBaseTap_1="15194412" scaleBaseDef_1="14863" scaleBaseSpaRate_1="0.2" scaleStatRate_2="1.4" scaleBaseTap_2="22349270" scaleBaseDef_2="23089" scaleBaseSpaRate_2="0.2" />
+			<distance avoid="100" sight="1000" sightHeightUP="300" sightHeightDown="0" customLastSightRadius="4500" customLastSightHeightUp="1000" customLastSightHeightDown="1000" />
+			<skill ids="60097011" levels="1" probs="100" />
+			<collision shape="box" width="90" height="130" depth="90" />
+			<capsule radius="60" height="150" />
+			<dead time="3" defaultaction="Dead_01_B" upaction="Dead_01_B" />
+			<push back="1" up="1" knockback="1" />
+			<normal action="Idle_A,Bore_A,Walk_A" prob="4100,900,5000" movearea="150" />
+			<dropiteminfo dropHeight="150" dropDistanceBase="100" dropDistanceRandom="50" globalDropBoxId="4" globalDeadDropBoxId="1011" />
+			<aiInfo path="AI_Mammon.xml" />
+			<effectdummy>
+				<dummy name="Eff_Head">
+					<attachInfo parentNode="Bip01 Head" />
+					<transform translate="30,0,0" />
+				</dummy>
+				<dummy name="Eff_Body">
+					<attachInfo parentNode="Bip01 Pelvis" />
+				</dummy>
+				<dummy name="Eff_Foot">
+					<attachInfo parentNode="Point01" />
+				</dummy>
+				<dummy name="Eff_UI">
+					<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,0,360" />
+				</dummy>
+				<dummy name="Eff_Head_World">
+					<attachInfo parentNode="Bip01 Head" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,-10,40" />
+				</dummy>
+				<dummy name="Eff_Body_World">
+					<attachInfo parentNode="Bip01 Pelvis" applyWorldTransform="true" applyLocalScale="false" />
+				</dummy>
+				<dummy name="Eff_Foot_World">
+					<attachInfo parentNode="Point01" applyWorldTransform="true" applyLocalScale="false" />
+				</dummy>
+			</effectdummy>
+		</environment>
+	</npc>
+	<npc id="43000002">
+		<environment feature="ShadowCataclysm" npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="boss" nametag="1" defenceMaterial="1" hitImmune="99" abnormalImmune="99" level="55" class="4" rankIcon="a" carePathToEnemy="1" propertyTags="keep_battle" raceString="undead" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/22000093_N_Mammon_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" customExp="1283026" lookAtMyPCWhenTalking="0">
+			<model kfm="22000093_N_Mammon" scale="1.5" shadowScale="100" rotationSpeed="720" walkSpeed="200" runSpeed="400" />
+			<stat hp="93851016" asp="100" msp="100" atp="120" evp="90" cap="65" cad="500" car="50" ndd="814" pap="335066" map="335066" par="105" mar="105" scaleStatRate_1="1.4" scaleBaseTap_1="15194412" scaleBaseDef_1="14863" scaleBaseSpaRate_1="0.2" scaleStatRate_2="1.4" scaleBaseTap_2="22349270" scaleBaseDef_2="23089" scaleBaseSpaRate_2="0.2" />
+			<distance avoid="100" sight="1000" sightHeightUP="300" sightHeightDown="0" customLastSightRadius="4500" customLastSightHeightUp="1000" customLastSightHeightDown="1000" />
+			<skill ids="60097011" levels="1" probs="100" />
+			<collision shape="box" width="90" height="130" depth="90" />
+			<capsule radius="60" height="150" />
+			<dead time="5" defaultaction="Dead_B" upaction="Dead_B" />
+			<push back="1" up="1" knockback="1" />
+			<normal action="Idle_A,Bore_A,Walk_A" prob="4100,900,5000" movearea="150" />
+			<dropiteminfo dropHeight="150" dropDistanceBase="100" dropDistanceRandom="50" globalDropBoxId="4" globalDeadDropBoxId="1011" />
+			<aiInfo path="AI_Mammon_Slave.xml" />
+			<effectdummy>
+				<dummy name="Eff_Head">
+					<attachInfo parentNode="Bip01 Head" />
+					<transform translate="30,0,0" />
+				</dummy>
+				<dummy name="Eff_Body">
+					<attachInfo parentNode="Bip01 Pelvis" />
+				</dummy>
+				<dummy name="Eff_Foot">
+					<attachInfo parentNode="Point01" />
+				</dummy>
+				<dummy name="Eff_UI">
+					<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,0,360" />
+				</dummy>
+				<dummy name="Eff_Head_World">
+					<attachInfo parentNode="Bip01 Head" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,-10,40" />
+				</dummy>
+				<dummy name="Eff_Body_World">
+					<attachInfo parentNode="Bip01 Pelvis" applyWorldTransform="true" applyLocalScale="false" />
+				</dummy>
+				<dummy name="Eff_Foot_World">
+					<attachInfo parentNode="Point01" applyWorldTransform="true" applyLocalScale="false" />
+				</dummy>
+			</effectdummy>
+		</environment>
+	</npc>
+	<npc id="43000003">
+		<environment feature="ShadowCataclysm" npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="boss" nametag="1" defenceMaterial="1" hitImmune="99" abnormalImmune="99" level="55" class="4" rankIcon="a" carePathToEnemy="1" propertyTags="keep_battle" raceString="undead" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/22000093_N_Mammon_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" customExp="1283026" lookAtMyPCWhenTalking="0">
+			<model kfm="22000093_N_Mammon" scale="1.5" shadowScale="100" rotationSpeed="720" walkSpeed="200" runSpeed="400" />
+			<stat hp="93851016" asp="100" msp="100" atp="120" evp="90" cap="65" cad="500" car="50" ndd="814" pap="335066" map="335066" par="105" mar="105" scaleStatRate_1="1.4" scaleBaseTap_1="15194412" scaleBaseDef_1="14863" scaleBaseSpaRate_1="0.2" scaleStatRate_2="1.4" scaleBaseTap_2="22349270" scaleBaseDef_2="23089" scaleBaseSpaRate_2="0.2" />
+			<distance avoid="100" sight="1000" sightHeightUP="300" sightHeightDown="0" customLastSightRadius="4500" customLastSightHeightUp="1000" customLastSightHeightDown="1000" />
+			<skill ids="60097011" levels="1" probs="100" />
+			<collision shape="box" width="90" height="130" depth="90" />
+			<capsule radius="60" height="150" />
+			<dead time="5" defaultaction="Dead_B" upaction="Dead_B" />
+			<push back="1" up="1" knockback="1" />
+			<normal action="Idle_A,Bore_A,Walk_A" prob="4100,900,5000" movearea="150" />
+			<dropiteminfo dropHeight="150" dropDistanceBase="100" dropDistanceRandom="50" globalDropBoxId="4" globalDeadDropBoxId="1011" />
+			<aiInfo path="AI_Mammon_Arcade_01.xml" />
+			<effectdummy>
+				<dummy name="Eff_Head">
+					<attachInfo parentNode="Bip01 Head" />
+					<transform translate="30,0,0" />
+				</dummy>
+				<dummy name="Eff_Body">
+					<attachInfo parentNode="Bip01 Pelvis" />
+				</dummy>
+				<dummy name="Eff_Foot">
+					<attachInfo parentNode="Point01" />
+				</dummy>
+				<dummy name="Eff_UI">
+					<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,0,360" />
+				</dummy>
+				<dummy name="Eff_Head_World">
+					<attachInfo parentNode="Bip01 Head" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,-10,40" />
+				</dummy>
+				<dummy name="Eff_Body_World">
+					<attachInfo parentNode="Bip01 Pelvis" applyWorldTransform="true" applyLocalScale="false" />
+				</dummy>
+				<dummy name="Eff_Foot_World">
+					<attachInfo parentNode="Point01" applyWorldTransform="true" applyLocalScale="false" />
+				</dummy>
+			</effectdummy>
+		</environment>
+	</npc>
+	<npc id="43000101">
+		<environment feature="ShadowCataclysm" npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="boss" nametag="1" defenceMaterial="1" hitImmune="99" abnormalImmune="99" level="55" class="4" rankIcon="a" carePathToEnemy="1" propertyTags="keep_battle" raceString="bug" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/22000095_N_Beelzebub_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" customExp="1283026" lookAtMyPCWhenTalking="0">
+			<model kfm="22000095_N_Beelzebub" scale="1.5" shadowScale="150" rotationSpeed="720" walkSpeed="200" runSpeed="400" />
+			<stat hp="93851016" asp="100" msp="100" atp="120" evp="90" cap="65" cad="500" car="50" ndd="814" pap="513514" map="513596" par="105" mar="105" scaleStatRate_1="1.4" scaleBaseTap_1="15194412" scaleBaseDef_1="14863" scaleBaseSpaRate_1="0.2" scaleStatRate_2="1.4" scaleBaseTap_2="22349270" scaleBaseDef_2="23089" scaleBaseSpaRate_2="0.2" />
+			<distance avoid="100" sight="1000" sightHeightUP="300" sightHeightDown="0" customLastSightRadius="4500" customLastSightHeightUp="1000" customLastSightHeightDown="1000" />
+			<skill ids="60097011" levels="1" probs="100" />
+			<collision shape="box" width="90" height="130" depth="90" />
+			<capsule radius="60" height="150" />
+			<dead time="5" defaultaction="Dead_B" upaction="Dead_B" />
+			<push back="1" up="1" knockback="1" />
+			<normal action="Idle_A,Bore_A,Walk_A" prob="4100,900,5000" movearea="150" />
+			<dropiteminfo dropHeight="150" dropDistanceBase="100" dropDistanceRandom="50" globalDropBoxId="4" globalDeadDropBoxId="1011" />
+			<aiInfo path="AI_Beelzebub.xml" />
+			<effectdummy>
+				<dummy name="Eff_Head">
+					<attachInfo parentNode="Bip01 Head" />
+					<transform translate="20,0,0" />
+				</dummy>
+				<dummy name="Eff_Body">
+					<attachInfo parentNode="Bip01 Spine" />
+					<transform translate="0,30,0" />
+				</dummy>
+				<dummy name="Eff_Foot">
+					<attachInfo parentNode="Dummy01_Main" />
+				</dummy>
+				<dummy name="Eff_UI">
+					<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,-70,300" />
+				</dummy>
+				<dummy name="Eff_Head_World">
+					<attachInfo parentNode="Bip01 Head" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,-20,30" />
+				</dummy>
+				<dummy name="Eff_Body_World">
+					<attachInfo parentNode="Bip01 Spine" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,-50,0" />
+				</dummy>
+				<dummy name="Eff_Foot_World">
+					<attachInfo parentNode="Dummy01_Main" applyWorldTransform="true" applyLocalScale="false" />
+				</dummy>
+			</effectdummy>
+		</environment>
+	</npc>
+	<npc id="43000102">
+		<environment feature="ShadowCataclysm" npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="boss" nametag="1" defenceMaterial="1" hitImmune="99" abnormalImmune="99" level="55" class="4" rankIcon="a" carePathToEnemy="1" propertyTags="keep_battle" raceString="bug" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/22000095_N_Beelzebub_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" customExp="1283026" lookAtMyPCWhenTalking="0">
+			<model kfm="22000095_N_Beelzebub" scale="1.5" shadowScale="150" rotationSpeed="720" walkSpeed="200" runSpeed="400" />
+			<stat hp="93851016" asp="100" msp="100" atp="120" evp="90" cap="65" cad="500" car="50" ndd="814" pap="335066" map="335066" par="105" mar="105" scaleStatRate_1="1.4" scaleBaseTap_1="15194412" scaleBaseDef_1="14863" scaleBaseSpaRate_1="0.2" scaleStatRate_2="1.4" scaleBaseTap_2="22349270" scaleBaseDef_2="23089" scaleBaseSpaRate_2="0.2" />
+			<distance avoid="100" sight="1000" sightHeightUP="300" sightHeightDown="0" customLastSightRadius="4500" customLastSightHeightUp="1000" customLastSightHeightDown="1000" />
+			<skill ids="60097011" levels="1" probs="100" />
+			<collision shape="box" width="90" height="130" depth="90" />
+			<capsule radius="60" height="150" />
+			<dead time="5" defaultaction="Dead_B" upaction="Dead_B" />
+			<push back="1" up="1" knockback="1" />
+			<normal action="Idle_A,Bore_A,Walk_A" prob="4100,900,5000" movearea="150" />
+			<dropiteminfo dropHeight="150" dropDistanceBase="100" dropDistanceRandom="50" globalDropBoxId="4" globalDeadDropBoxId="1011" />
+			<aiInfo path="AI_Beelzebub_Arcade01.xml" />
+			<effectdummy>
+				<dummy name="Eff_Head">
+					<attachInfo parentNode="Bip01 Head" />
+					<transform translate="20,0,0" />
+				</dummy>
+				<dummy name="Eff_Body">
+					<attachInfo parentNode="Bip01 Spine" />
+					<transform translate="0,30,0" />
+				</dummy>
+				<dummy name="Eff_Foot">
+					<attachInfo parentNode="Dummy01_Main" />
+				</dummy>
+				<dummy name="Eff_UI">
+					<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,-70,300" />
+				</dummy>
+				<dummy name="Eff_Head_World">
+					<attachInfo parentNode="Bip01 Head" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,-20,30" />
+				</dummy>
+				<dummy name="Eff_Body_World">
+					<attachInfo parentNode="Bip01 Spine" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,-50,0" />
+				</dummy>
+				<dummy name="Eff_Foot_World">
+					<attachInfo parentNode="Dummy01_Main" applyWorldTransform="true" applyLocalScale="false" />
+				</dummy>
+			</effectdummy>
+		</environment>
+	</npc>
+	<npc id="43000103">
+		<environment feature="ShadowCataclysm" npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="boss" nametag="1" defenceMaterial="1" hitImmune="99" abnormalImmune="99" level="55" class="4" rankIcon="a" carePathToEnemy="1" propertyTags="keep_battle" raceString="bug" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/22000095_N_Beelzebub_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" customExp="1283026" lookAtMyPCWhenTalking="0">
+			<model kfm="22000095_N_Beelzebub" scale="1.5" shadowScale="150" rotationSpeed="720" walkSpeed="200" runSpeed="400" />
+			<stat hp="93851016" asp="100" msp="100" atp="120" evp="90" cap="65" cad="500" car="50" ndd="814" pap="335066" map="335066" par="105" mar="105" scaleStatRate_1="1.4" scaleBaseTap_1="15194412" scaleBaseDef_1="14863" scaleBaseSpaRate_1="0.2" scaleStatRate_2="1.4" scaleBaseTap_2="22349270" scaleBaseDef_2="23089" scaleBaseSpaRate_2="0.2" />
+			<distance avoid="100" sight="1000" sightHeightUP="300" sightHeightDown="0" customLastSightRadius="4500" customLastSightHeightUp="1000" customLastSightHeightDown="1000" />
+			<skill ids="60097011" levels="1" probs="100" />
+			<collision shape="box" width="90" height="130" depth="90" />
+			<capsule radius="60" height="150" />
+			<dead time="5" defaultaction="Dead_B" upaction="Dead_B" />
+			<push back="1" up="1" knockback="1" />
+			<normal action="Idle_A,Bore_A,Walk_A" prob="4100,900,5000" movearea="150" />
+			<dropiteminfo dropHeight="150" dropDistanceBase="100" dropDistanceRandom="50" globalDropBoxId="4" globalDeadDropBoxId="1011" />
+			<aiInfo path="AI_Beelzebub_LastDungeon.xml" />
+			<effectdummy>
+				<dummy name="Eff_Head">
+					<attachInfo parentNode="Bip01 Head" />
+					<transform translate="20,0,0" />
+				</dummy>
+				<dummy name="Eff_Body">
+					<attachInfo parentNode="Bip01 Spine" />
+					<transform translate="0,30,0" />
+				</dummy>
+				<dummy name="Eff_Foot">
+					<attachInfo parentNode="Dummy01_Main" />
+				</dummy>
+				<dummy name="Eff_UI">
+					<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,-70,300" />
+				</dummy>
+				<dummy name="Eff_Head_World">
+					<attachInfo parentNode="Bip01 Head" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,-20,30" />
+				</dummy>
+				<dummy name="Eff_Body_World">
+					<attachInfo parentNode="Bip01 Spine" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,-50,0" />
+				</dummy>
+				<dummy name="Eff_Foot_World">
+					<attachInfo parentNode="Dummy01_Main" applyWorldTransform="true" applyLocalScale="false" />
+				</dummy>
+			</effectdummy>
+		</environment>
+	</npc>
+</ms2>

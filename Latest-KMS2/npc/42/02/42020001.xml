@@ -3,7 +3,7 @@
 <ms2>
 	<environment feature="ShadowCataclysm" locale="">
 		<model kfm="22000033_N_LarvaBlueHelmet" />
-		<basic npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="enemy" nametag="1" nametagSize="18" defenceMaterial="1" hitImmune="99" abnormalImmune="99" level="55" class="3" rankIcon="b" carePathToEnemy="1" difficulty="55" raceString="animal" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/22000033_N_LarvaBlueHelmet_P.png" damagedVibrateDuration="0.5" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" skipFrame="1" />
+		<basic npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="enemy" nametag="1" nametagSize="18" defenceMaterial="1" hitImmune="99" abnormalImmune="99" level="55" class="3" rankIcon="b" carePathToEnemy="1" raceString="animal" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/22000033_N_LarvaBlueHelmet_P.png" damagedVibrateDuration="0.5" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" />
 		<stat hp="65695711" asp="100" msp="100" atp="81" evp="87" cap="65" cad="500" car="50" ndd="678" pap="473690" map="473760" par="105" scaleStatRate_1="1.4" scaleBaseTap_1="15194412" scaleBaseDef_1="14863" scaleBaseSpaRate_1="0.2" scaleStatRate_2="1.4" scaleBaseTap_2="22349270" scaleBaseDef_2="23089" scaleBaseSpaRate_2="0.2" />
 		<speed rotation="720" walk="150" run="300" />
 		<distance avoid="140" sight="1200" sightHeightUP="300" sightHeightDown="0" customLastSightRadius="2500" customLastSightHeightUp="525" customLastSightHeightDown="225" />
@@ -15,30 +15,30 @@
 		<shadow scale="380" bias="1" />
 		<normal action="Idle_A,Bore_A,Walk_A" prob="3500,2000,4500" movearea="150" maidExpired="Idle_A" />
 		<dropiteminfo dropHeight="150" dropDistanceBase="200" dropDistanceRandom="10" fireVelocity="150" globalDropBoxId="3" />
-		<lookattarget lookAtMyPCWhenTalking="0" useTalkMotion="1" />
+		<lookattarget lookAtMyPCWhenTalking="0" />
 		<aiInfo path="AI_LarvaBlueHelmet_Wanted.xml" />
 		<exp customExp="55831" />
 	</environment>
 	<effectdummy>
 		<dummy name="Eff_Head">
-			<attachInfo parentNode="Bip01 Head" applyWorldTransform="false" applyLocalScale="true" />
-			<transform translate="30.000000, 0.000000, 0.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.000000" />
+			<attachInfo parentNode="Bip01 Head" />
+			<transform translate="30,0,0" />
 		</dummy>
 		<dummy name="Eff_Body">
-			<attachInfo parentNode="Scene Root" applyWorldTransform="false" applyLocalScale="true" />
-			<transform translate="0.000000, 0.000000, 75.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.200000" />
+			<attachInfo parentNode="Scene Root" />
+			<transform translate="0,0,75" scale="1.2" />
 		</dummy>
 		<dummy name="Eff_UI">
 			<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
-			<transform translate="0.000000, -50.000000, 230.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.000000" />
+			<transform translate="0,-50,230" />
 		</dummy>
 		<dummy name="Eff_Head_World">
 			<attachInfo parentNode="Bip01 Head" applyWorldTransform="true" applyLocalScale="false" />
-			<transform translate="0.000000, -30.000000, -10.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.000000" />
+			<transform translate="0,-30,-10" />
 		</dummy>
 		<dummy name="Eff_Body_World">
 			<attachInfo parentNode="Bip01 Spine1" applyWorldTransform="true" applyLocalScale="false" />
-			<transform translate="0.000000, -30.000000, -50.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.200000" />
+			<transform translate="0,-30,-50" scale="1.2" />
 		</dummy>
 	</effectdummy>
 </ms2>

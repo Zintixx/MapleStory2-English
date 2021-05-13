@@ -3,7 +3,7 @@
 <ms2>
 	<environment feature="DarkCastle" locale="">
 		<model kfm="21000989_M_GargoyleMini" scale="0.9" />
-		<basic npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="enemy" nametag="1" nametagSize="18" hpBar="1" defenceMaterial="4" hitImmune="1" abnormalImmune="1" level="60" rankIcon="c" difficulty="60" propertyTags="keep_battle" raceString="devil" gender="2" emotionID="21500642" mainTags="None" portrait="./Data/Resource/Image/Portrait/Mob/21000989_M_GargoyleMini_P.png" damagedColorScale="6" damagedVibrateDuration="1" damagedVibrateAmp="1" />
+		<basic npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="enemy" nametag="1" nametagSize="18" hpBar="1" defenceMaterial="4" hitImmune="1" abnormalImmune="1" level="60" rankIcon="c" propertyTags="keep_battle" raceString="devil" gender="2" emotionID="21500642" portrait="./Data/Resource/Image/Portrait/Mob/21000989_M_GargoyleMini_P.png" damagedColorScale="6" damagedVibrateDuration="1" damagedVibrateAmp="1" />
 		<stat hp="11754659" asp="100" msp="100" atp="90" evp="125" cap="67" cad="250" car="90" ndd="799" pap="3631201" map="3631894" par="225" mar="225" />
 		<speed rotation="720" walk="190" run="380" />
 		<distance avoid="80" sight="5000" sightHeightUP="350" sightHeightDown="3000" customLastSightRadius="9900" customLastSightHeightUp="1500" customLastSightHeightDown="3300" />
@@ -15,38 +15,38 @@
 		<shadow scale="200" bias="1" />
 		<normal action="Idle_A" prob="10000" maidExpired="Idle_A" />
 		<dropiteminfo globalDropBoxId="74" />
-		<lookattarget lookAtMyPCWhenTalking="0" useTalkMotion="1" />
+		<lookattarget lookAtMyPCWhenTalking="0" />
 		<aiInfo path="BossDungeon/Madria/MobChaos/AI_GargoyleMini_TypeC.xml" />
 		<exp customExp="0" />
 	</environment>
 	<effectdummy>
 		<dummy name="Eff_Head">
-			<attachInfo parentNode="Bone_Head" applyWorldTransform="false" applyLocalScale="true" />
-			<transform translate="32.000000, 5.000000, 0.000000" rotation="0.000000, 0.000000, 0.000000" scale="0.700000" />
+			<attachInfo parentNode="Bone_Head" />
+			<transform translate="32,5,0" scale="0.7" />
 		</dummy>
 		<dummy name="Eff_Body">
-			<attachInfo parentNode="Bone_Spine01" applyWorldTransform="false" applyLocalScale="true" />
-			<transform translate="0.000000, 5.000000, 0.000000" rotation="0.000000, 0.000000, 0.000000" scale="0.700000" />
+			<attachInfo parentNode="Bone_Spine01" />
+			<transform translate="0,5,0" scale="0.7" />
 		</dummy>
 		<dummy name="Eff_Foot">
-			<attachInfo parentNode="Scene Root" applyWorldTransform="false" applyLocalScale="true" />
-			<transform translate="0.000000, 0.000000, 0.000000" rotation="0.000000, 0.000000, 0.000000" scale="0.700000" />
+			<attachInfo parentNode="Scene Root" />
+			<transform scale="0.7" />
 		</dummy>
 		<dummy name="Eff_UI">
 			<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
-			<transform translate="0.000000, -35.000000, 230.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.000000" />
+			<transform translate="0,-35,230" />
 		</dummy>
 		<dummy name="Eff_Head_World">
 			<attachInfo parentNode="Bone_Head" applyWorldTransform="true" applyLocalScale="false" />
-			<transform translate="0.000000, -29.000000, 7.000000" rotation="0.000000, 0.000000, 0.000000" scale="0.700000" />
+			<transform translate="0,-29,7" scale="0.7" />
 		</dummy>
 		<dummy name="Eff_Body_World">
 			<attachInfo parentNode="Bone_Spine01" applyWorldTransform="true" applyLocalScale="false" />
-			<transform translate="0.000000, -2.000000, -4.000000" rotation="0.000000, 0.000000, 0.000000" scale="0.700000" />
+			<transform translate="0,-2,-4" scale="0.7" />
 		</dummy>
 		<dummy name="Eff_Foot_World">
 			<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
-			<transform translate="0.000000, 0.000000, 0.000000" rotation="0.000000, 0.000000, 0.000000" scale="0.700000" />
+			<transform scale="0.7" />
 		</dummy>
 	</effectdummy>
 </ms2>

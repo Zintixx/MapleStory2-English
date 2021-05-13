@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ms2>
+	<npc id="25200001">
+		<environment feature="Kritias_Paika01" npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="enemy" nametag="1" hpBar="1" defenceMaterial="1" hitImmune="1" abnormalImmune="1" level="70" rankIcon="c" carePathToEnemy="1" propertyTags="keep_battle" raceString="combine" gender="2" emotionID="21010002" portrait="./Data/Resource/Image/Portrait/Mob/21010002_M_BlackRobeMagician_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" customExp="0" lookAtMyPCWhenTalking="0">
+			<model kfm="21010002_M_BlackRobeMagician" shadowScale="85" rotationSpeed="720" walkSpeed="150" runSpeed="300" />
+			<stat hp="11074544" asp="100" msp="100" atp="80" evp="102" cap="67" cad="250" car="70" ndd="1071" pap="12834040" map="12836138" par="190" mar="190" />
+			<distance avoid="80" sight="900" sightHeightUP="300" sightHeightDown="150" customLastSightRadius="9000" customLastSightHeightUp="300" customLastSightHeightDown="150" />
+			<skill ids="60180068,60180070" levels="1,1" probs="70,30" />
+			<collision shape="box" width="100" height="160" depth="100" />
+			<capsule radius="80" height="150" />
+			<dead time="5" defaultaction="Dead_A,Dead_B" upaction="Dead_B" />
+			<push back="1" up="1" knockback="1" />
+			<normal action="Idle_A,Bore_A,Walk_A" prob="4500,1500,4000" movearea="300" />
+			<aiInfo path="AI_Default_Range_Area.xml" />
+		</environment>
+	</npc>
+	<npc id="25200002">
+		<environment feature="Kritias_Paika01" npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="enemy" nametag="1" hpBar="1" defenceMaterial="1" hitImmune="1" abnormalImmune="1" level="70" rankIcon="c" carePathToEnemy="1" propertyTags="keep_battle" raceString="devil" gender="2" emotionID="21010057" portrait="./Data/Resource/Image/Portrait/Mob/21010057_M_Zergling_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" customExp="0" lookAtMyPCWhenTalking="0">
+			<model kfm="21010057_M_Zergling" scale="1.15" shadowScale="70" rotationSpeed="720" walkSpeed="150" runSpeed="300" />
+			<stat hp="11074544" asp="100" msp="100" atp="80" evp="102" cap="67" cad="250" car="70" ndd="1071" pap="12834040" map="12836138" par="190" mar="190" />
+			<distance avoid="80" sight="900" sightHeightUP="300" sightHeightDown="150" customLastSightRadius="9000" customLastSightHeightUp="300" customLastSightHeightDown="150" />
+			<skill ids="60180059" levels="1" probs="100" />
+			<collision shape="box" width="100" height="100" depth="100" />
+			<capsule radius="70" height="90" />
+			<dead time="5" defaultaction="Dead_A,Dead_B" upaction="Dead_B" />
+			<push back="1" up="1" knockback="1" />
+			<normal action="Idle_A,Bore_A,Walk_A" prob="4500,1500,4000" movearea="300" />
+		</environment>
+	</npc>
+	<npc id="25200003">
+		<environment feature="Kritias_Paika01" npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="enemy" nametag="1" hpBar="1" defenceMaterial="1" hitImmune="1" abnormalImmune="1" level="70" rankIcon="c" carePathToEnemy="1" propertyTags="keep_battle" raceString="devil" gender="2" emotionID="21010003" portrait="./Data/Resource/Image/Portrait/Mob/21010003_M_BlackRobeGuardDog_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" customExp="0" lookAtMyPCWhenTalking="0">
+			<model kfm="21010003_M_BlackRobeGuardDog" shadowScale="85" rotationSpeed="720" walkSpeed="150" runSpeed="300" />
+			<stat hp="11074544" asp="100" msp="100" atp="80" evp="102" cap="67" cad="250" car="70" ndd="1071" pap="12834040" map="12836138" par="190" mar="190" />
+			<distance avoid="80" sight="900" sightHeightUP="300" sightHeightDown="150" customLastSightRadius="9000" customLastSightHeightUp="300" customLastSightHeightDown="150" />
+			<skill ids="60180062,60180063" levels="1,1" probs="70,30" />
+			<collision shape="box" width="100" height="100" depth="200" depthOffset="25" />
+			<capsule radius="80" height="100" />
+			<dead time="5" defaultaction="Dead_A,Dead_B" upaction="Dead_B" />
+			<push back="1" up="1" knockback="1" />
+			<normal action="Idle_A,Bore_A,Walk_A" prob="4500,1500,4000" movearea="300" />
+		</environment>
+	</npc>
+	<npc id="25200004">
+		<environment feature="Kritias_Paika01" npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="elite_boss" nametag="1" defenceMaterial="1" hitImmune="99" abnormalImmune="98" level="70" class="7" rankIcon="b" carePathToEnemy="1" propertyTags="keep_battle" raceString="devil" gender="2" emotionID="21010067" portrait="./Data/Resource/Image/Portrait/Mob/21010067_N_BlackRobeBerserker_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" customExp="0" lookAtMyPCWhenTalking="0">
+			<model kfm="21010067_N_BlackRobeBerserker" shadowScale="120" rotationSpeed="720" walkSpeed="150" runSpeed="300" />
+			<stat hp="80934708" asp="100" msp="100" atp="81" evp="102" cap="72" cad="250" car="70" ndd="1071" pap="11256807" map="11258648" par="1500" mar="1500" />
+			<distance avoid="150" sight="900" sightHeightUP="300" sightHeightDown="150" customLastSightRadius="9000" customLastSightHeightUp="300" customLastSightHeightDown="150" />
+			<skill ids="60180011,60180012" levels="1,1" probs="60,40" />
+			<additionalEffect codes="42030262" levels="1" />
+			<collision shape="box" width="180" height="200" depth="180" />
+			<capsule radius="120" height="180" />
+			<dead time="5" defaultaction="Dead_A,Dead_B" upaction="Dead_B" />
+			<push back="1" up="1" knockback="1" />
+			<normal action="Idle_A,Bore_A,Walk_A" prob="6000,1000,3000" movearea="300" />
+			<aiInfo path="BossDungeon/Paika/AI_Berserker_Custom1.xml" />
+		</environment>
+	</npc>
+	<npc id="25200005">
+		<environment feature="Kritias_Paika01" npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="enemy" nametag="1" hpBar="1" defenceMaterial="1" hitImmune="1" abnormalImmune="1" level="70" rankIcon="c" carePathToEnemy="1" propertyTags="keep_battle" raceString="combine" gender="2" emotionID="21010001" portrait="./Data/Resource/Image/Portrait/Mob/21010001_M_BlackRobeAssassin_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" customExp="0" lookAtMyPCWhenTalking="0">
+			<model kfm="21010001_M_BlackRobeAssassin" shadowScale="85" rotationSpeed="720" walkSpeed="150" runSpeed="300" />
+			<stat hp="11074544" asp="100" msp="100" atp="80" evp="102" cap="67" cad="250" car="70" ndd="1071" pap="19123337" map="19126463" par="190" mar="190" />
+			<distance avoid="80" sight="900" sightHeightUP="300" sightHeightDown="150" customLastSightRadius="9000" customLastSightHeightUp="300" customLastSightHeightDown="150" />
+			<skill ids="60180053,60180054" levels="1,1" probs="50,50" />
+			<collision shape="box" width="100" height="160" depth="100" />
+			<capsule radius="80" height="150" />
+			<dead time="5" defaultaction="Dead_A,Dead_B" upaction="Dead_B" />
+			<push back="1" up="1" knockback="1" />
+			<normal action="Idle_A,Bore_A,Walk_A" prob="4500,1500,4000" movearea="300" />
+		</environment>
+	</npc>
+	<npc id="25200006">
+		<environment feature="Kritias_Paika01" npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="elite_boss" nametag="1" hpBar="1" defenceMaterial="1" hitImmune="98" abnormalImmune="98" level="70" class="7" rankIcon="b" carePathToEnemy="1" raceString="unknown" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/22000058_N_ZealotLeader03_P.png" damagedColorScale="6" damagedVibrateDuration="0.9" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" customExp="0" lookAtMyPCWhenTalking="0">
+			<model kfm="22000058_N_ZealotLeader03" scale="1.5" shadowScale="85" rotationSpeed="720" walkSpeed="150" runSpeed="300" />
+			<stat hp="20256112" asp="100" msp="100" atp="81" evp="102" cap="67" cad="250" car="70" ndd="1071" pap="24987966" map="24992052" par="190" mar="190" />
+			<distance avoid="250" sight="900" sightHeightUP="300" sightHeightDown="150" customLastSightRadius="9000" customLastSightHeightUp="300" customLastSightHeightDown="150" />
+			<skill ids="60169001" levels="1" probs="100" />
+			<collision shape="box" width="200" height="220" depth="200" />
+			<capsule radius="125" height="200" />
+			<dead time="5" defaultaction="Dead_A,Dead_B" upaction="Dead_B" />
+			<push back="1" up="1" />
+			<normal action="Idle_A,Bore_A,Walk_A" prob="4500,1000,4500" movearea="300" />
+			<dropiteminfo globalDropBoxId="74" />
+			<aiInfo path="LegionBattle/AI_ZealotLeader_Boss.xml" />
+		</environment>
+	</npc>
+	<npc id="25200007">
+		<environment feature="Kritias_Paika01" npcAttackGroup="1" npcDefenseGroup="2" nametag="1" minimap="0" hpBar="1" defenceMaterial="7" hitImmune="1" abnormalImmune="1" level="70" rankIcon="c" rotationDisabled="1" carePathToEnemy="1" propertyTags="always_display_hp_bar" raceString="unknown" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/Dummy_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" customExp="0" lookAtMyPCWhenTalking="0">
+			<model kfm="Dummy" />
+			<stat hp="94900000" asp="100" msp="100" atp="80" evp="102" cap="72" cad="250" car="70" ndd="1071" pap="8613628" map="8615037" par="1500" mar="1500" />
+			<distance avoid="300" sightHeightUP="0" sightHeightDown="0" />
+			<skill ids="40454001" levels="1" probs="100" />
+			<additionalEffect codes="42030252" levels="1" />
+			<collision shape="box" width="150" height="200" depth="150" />
+			<capsule radius="100" height="200" />
+			<dead time="2" defaultaction="Dead_A" upaction="Dead_A" revival="25200008" count="1" />
+			<normal action="Idle_A" prob="10000" />
+			<dropiteminfo globalDropBoxId="74" />
+			<aiInfo path="Standby_Forever.xml" />
+		</environment>
+	</npc>
+	<npc id="25200008">
+		<environment feature="Kritias_Paika01" npcAttackGroup="1" npcDefenseGroup="2" minimap="0" defenceMaterial="1" hitImmune="99" abnormalImmune="99" level="70" rankIcon="c" carePathToEnemy="1" propertyTags="keep_battle,battle_on_spawn,dummy_npc,ai_wander_freely" raceString="unknown" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/Dummy_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" customExp="0" lookAtMyPCWhenTalking="0">
+			<model kfm="Dummy" rotationSpeed="720" />
+			<stat hp="49999950" asp="100" msp="100" atp="80" evp="102" cap="72" cad="250" car="70" ndd="1071" pap="10049234" map="10050877" par="190" mar="190" />
+			<distance avoid="45" sight="10000" sightHeightUP="2000" sightHeightDown="3500" />
+			<skill ids="49286041" levels="1" probs="100" />
+			<collision shape="box" width="1" height="1" depth="1" heightOffset="-1000" />
+			<capsule radius="30" height="100" ignore="1" />
+			<dead time="5" defaultaction="Idle_A" upaction="Idle_A" />
+			<normal action="Idle_B" prob="10000" movearea="300" />
+			<dropiteminfo globalDropBoxId="74" />
+			<aiInfo path="AI_Suicide_after_SkillUse.xml" />
+		</environment>
+	</npc>
+	<npc id="25200101">
+		<environment feature="Kritias_Turka01" npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="enemy" nametag="1" hpBar="1" defenceMaterial="3" hitImmune="1" abnormalImmune="1" level="79" rankIcon="c" carePathToEnemy="1" raceString="machine" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/29500006_M_DarkEgoWeapon_LongSword_Type_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" customExp="0" lookAtMyPCWhenTalking="0">
+			<model kfm="29500006_M_DarkEgoWeapon_LongSword_Type" shadowScale="120" rotationSpeed="720" walkSpeed="100" runSpeed="240" />
+			<stat hp="497832433" asp="100" msp="100" atp="120" evp="130" cap="77" cad="250" car="79" ndd="1350" pap="15504009" map="15508140" par="235" mar="235" />
+			<distance avoid="150" sight="600" sightHeightUP="300" sightHeightDown="0" customLastSightRadius="9000" customLastSightHeightUp="300" />
+			<skill ids="49901503,49901504" levels="1,1" probs="50,50" />
+			<collision shape="box" width="100" height="100" depth="100" />
+			<capsule radius="45" height="100" />
+			<dead time="5" defaultaction="Dead_A,Dead_B" upaction="Dead_B" />
+			<push back="1" up="1" knockback="1" />
+			<normal action="Idle_A,Bore_A,Walk_A" prob="6000,1000,3000" movearea="300" />
+			<dropiteminfo dropHeight="50" dropDistanceBase="100" dropDistanceRandom="50" globalDropBoxId="74" />
+		</environment>
+	</npc>
+	<npc id="25200102">
+		<environment feature="Kritias_Turka01" npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="enemy" nametag="1" hpBar="1" defenceMaterial="3" hitImmune="1" abnormalImmune="1" level="79" rankIcon="c" carePathToEnemy="1" raceString="machine" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/29500010_M_DarkEgoWeapon_Bow_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" customExp="0" lookAtMyPCWhenTalking="0">
+			<model kfm="29500010_M_DarkEgoWeapon_Bow" shadowScale="120" rotationSpeed="720" walkSpeed="100" runSpeed="240" />
+			<stat hp="497832433" asp="100" msp="100" atp="120" evp="130" cap="77" cad="250" car="79" ndd="1350" pap="3691430" map="3692414" par="235" mar="235" />
+			<distance avoid="150" sight="600" sightHeightUP="300" sightHeightDown="0" customLastSightRadius="9000" customLastSightHeightUp="300" />
+			<skill ids="49901511,49901512" levels="1,1" probs="50,50" />
+			<collision shape="box" width="100" height="100" depth="100" />
+			<capsule radius="45" height="100" />
+			<dead time="5" defaultaction="Dead_A,Dead_B" upaction="Dead_B" />
+			<push back="1" up="1" knockback="1" />
+			<normal action="Idle_A,Bore_A,Walk_A" prob="6000,1000,3000" movearea="300" />
+			<dropiteminfo dropHeight="50" dropDistanceBase="100" dropDistanceRandom="50" globalDropBoxId="74" />
+		</environment>
+	</npc>
+	<npc id="25200103">
+		<environment feature="Kritias_Turka01" npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="enemy" nametag="1" hpBar="1" defenceMaterial="3" hitImmune="1" abnormalImmune="1" level="79" rankIcon="c" carePathToEnemy="1" raceString="machine" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/29500009_M_DarkEgoWeapon_Staff_Type_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" customExp="0" lookAtMyPCWhenTalking="0">
+			<model kfm="29500009_M_DarkEgoWeapon_Staff_Type" shadowScale="120" rotationSpeed="720" walkSpeed="100" runSpeed="240" />
+			<stat hp="497832433" asp="100" msp="100" atp="120" evp="130" cap="77" cad="250" car="79" ndd="1350" pap="6591841" map="6593597" par="235" mar="235" />
+			<distance avoid="150" sight="600" sightHeightUP="300" sightHeightDown="0" customLastSightRadius="9000" customLastSightHeightUp="300" />
+			<skill ids="49901520,49901521" levels="1,1" probs="50,50" />
+			<collision shape="box" width="100" height="100" depth="100" />
+			<capsule radius="45" height="100" />
+			<dead time="5" defaultaction="Dead_A,Dead_B" upaction="Dead_B" />
+			<push back="1" up="1" knockback="1" />
+			<normal action="Idle_A,Bore_A,Walk_A" prob="6000,1000,3000" movearea="300" />
+			<dropiteminfo dropHeight="50" dropDistanceBase="100" dropDistanceRandom="50" globalDropBoxId="74" />
+		</environment>
+	</npc>
+	<npc id="25200104">
+		<environment feature="Kritias_Turka01" npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="enemy" nametag="1" hpBar="1" defenceMaterial="3" hitImmune="1" abnormalImmune="1" level="79" rankIcon="c" carePathToEnemy="1" raceString="machine" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/29500007_M_DarkEgoWeapon_Hammer_Type_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" customExp="0" lookAtMyPCWhenTalking="0">
+			<model kfm="29500007_M_DarkEgoWeapon_Hammer_Type" scale="1.5" shadowScale="120" rotationSpeed="720" walkSpeed="100" runSpeed="240" />
+			<stat hp="497832433" asp="100" msp="100" atp="120" evp="130" cap="77" cad="250" car="79" ndd="1350" pap="15504009" map="15508140" par="235" mar="235" />
+			<distance avoid="150" sight="600" sightHeightUP="300" sightHeightDown="0" customLastSightRadius="9000" customLastSightHeightUp="300" />
+			<skill ids="49901515,49901516" levels="1,1" probs="50,50" />
+			<collision shape="box" width="100" height="100" depth="100" />
+			<capsule radius="45" height="100" />
+			<dead time="5" defaultaction="Dead_A,Dead_B" upaction="Dead_B" />
+			<push back="1" up="1" knockback="1" />
+			<normal action="Idle_A,Bore_A,Walk_A" prob="6000,1000,3000" movearea="300" />
+			<dropiteminfo dropHeight="50" dropDistanceBase="100" dropDistanceRandom="50" globalDropBoxId="74" />
+		</environment>
+	</npc>
+	<npc id="25200105">
+		<environment feature="Kritias_Turka01" npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="enemy" nametag="1" hpBar="1" defenceMaterial="3" hitImmune="1" abnormalImmune="1" level="79" rankIcon="c" carePathToEnemy="1" raceString="machine" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/29500006_M_DarkEgoWeapon_LongSword_Type_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" customExp="0" lookAtMyPCWhenTalking="0">
+			<model kfm="29500006_M_DarkEgoWeapon_LongSword_Type" shadowScale="120" rotationSpeed="720" walkSpeed="100" runSpeed="240" />
+			<stat hp="497832433" asp="100" msp="100" atp="120" evp="130" cap="77" cad="250" car="79" ndd="1350" pap="15504009" map="15508140" par="235" mar="235" />
+			<distance avoid="150" sight="9000" sightHeightUP="300" sightHeightDown="0" customLastSightRadius="9000" customLastSightHeightUp="300" />
+			<skill ids="49901503,49901504" levels="1,1" probs="50,50" />
+			<collision shape="box" width="100" height="100" depth="100" />
+			<capsule radius="45" height="100" />
+			<dead time="5" defaultaction="Dead_A,Dead_B" upaction="Dead_B" />
+			<push back="1" up="1" knockback="1" />
+			<normal action="Idle_A,Bore_A,Walk_A" prob="6000,1000,3000" movearea="300" />
+			<dropiteminfo dropHeight="50" dropDistanceBase="100" dropDistanceRandom="50" globalDropBoxId="74" />
+		</environment>
+	</npc>
+	<npc id="25200106">
+		<environment feature="Kritias_Turka01" npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="enemy" nametag="1" hpBar="1" defenceMaterial="3" hitImmune="1" abnormalImmune="1" level="79" rankIcon="c" carePathToEnemy="1" raceString="machine" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/29500010_M_DarkEgoWeapon_Bow_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" customExp="0" lookAtMyPCWhenTalking="0">
+			<model kfm="29500010_M_DarkEgoWeapon_Bow" shadowScale="120" rotationSpeed="720" walkSpeed="100" runSpeed="240" />
+			<stat hp="497832433" asp="100" msp="100" atp="120" evp="130" cap="77" cad="250" car="79" ndd="1350" pap="3691430" map="3692414" par="235" mar="235" />
+			<distance avoid="150" sight="9000" sightHeightUP="300" sightHeightDown="0" customLastSightRadius="9000" customLastSightHeightUp="300" />
+			<skill ids="49901511,49901512" levels="1,1" probs="50,50" />
+			<collision shape="box" width="100" height="100" depth="100" />
+			<capsule radius="45" height="100" />
+			<dead time="5" defaultaction="Dead_A,Dead_B" upaction="Dead_B" />
+			<push back="1" up="1" knockback="1" />
+			<normal action="Idle_A,Bore_A,Walk_A" prob="6000,1000,3000" movearea="300" />
+			<dropiteminfo dropHeight="50" dropDistanceBase="100" dropDistanceRandom="50" globalDropBoxId="74" />
+		</environment>
+	</npc>
+	<npc id="25200107">
+		<environment feature="Kritias_Turka01" npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="enemy" nametag="1" hpBar="1" defenceMaterial="3" hitImmune="1" abnormalImmune="1" level="79" rankIcon="c" carePathToEnemy="1" raceString="machine" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/29500009_M_DarkEgoWeapon_Staff_Type_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" customExp="0" lookAtMyPCWhenTalking="0">
+			<model kfm="29500009_M_DarkEgoWeapon_Staff_Type" shadowScale="120" rotationSpeed="720" walkSpeed="100" runSpeed="240" />
+			<stat hp="497832433" asp="100" msp="100" atp="120" evp="130" cap="77" cad="250" car="79" ndd="1350" pap="6591841" map="6593597" par="235" mar="235" />
+			<distance avoid="150" sight="9000" sightHeightUP="300" sightHeightDown="0" customLastSightRadius="9000" customLastSightHeightUp="300" />
+			<skill ids="49901520,49901521" levels="1,1" probs="50,50" />
+			<collision shape="box" width="100" height="100" depth="100" />
+			<capsule radius="45" height="100" />
+			<dead time="5" defaultaction="Dead_A,Dead_B" upaction="Dead_B" />
+			<push back="1" up="1" knockback="1" />
+			<normal action="Idle_A,Bore_A,Walk_A" prob="6000,1000,3000" movearea="300" />
+			<dropiteminfo dropHeight="50" dropDistanceBase="100" dropDistanceRandom="50" globalDropBoxId="74" />
+		</environment>
+	</npc>
+	<npc id="25200108">
+		<environment feature="Kritias_Turka01" npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="enemy" nametag="1" hpBar="1" defenceMaterial="3" hitImmune="1" abnormalImmune="1" level="79" rankIcon="c" carePathToEnemy="1" raceString="machine" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/29500007_M_DarkEgoWeapon_Hammer_Type_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" customExp="0" lookAtMyPCWhenTalking="0">
+			<model kfm="29500007_M_DarkEgoWeapon_Hammer_Type" scale="1.5" shadowScale="120" rotationSpeed="720" walkSpeed="100" runSpeed="240" />
+			<stat hp="497832433" asp="100" msp="100" atp="120" evp="130" cap="77" cad="250" car="79" ndd="1350" pap="15504009" map="15508140" par="235" mar="235" />
+			<distance avoid="150" sight="9000" sightHeightUP="300" sightHeightDown="0" customLastSightRadius="9000" customLastSightHeightUp="300" />
+			<skill ids="49901515,49901516" levels="1,1" probs="50,50" />
+			<collision shape="box" width="100" height="100" depth="100" />
+			<capsule radius="45" height="100" />
+			<dead time="5" defaultaction="Dead_A,Dead_B" upaction="Dead_B" />
+			<push back="1" up="1" knockback="1" />
+			<normal action="Idle_A,Bore_A,Walk_A" prob="6000,1000,3000" movearea="300" />
+			<dropiteminfo dropHeight="50" dropDistanceBase="100" dropDistanceRandom="50" globalDropBoxId="74" />
+		</environment>
+	</npc>
+	<npc id="25200109">
+		<environment feature="Kritias_Turka01" npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="enemy" nametag="1" hpBar="1" defenceMaterial="1" hitImmune="95" abnormalImmune="95" level="70" class="7" rankIcon="b" propertyTags="keep_battle" raceString="machine" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/29500111_M_Archeon_Cannon_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" customExp="0" lookAtMyPCWhenTalking="0">
+			<model kfm="29500111_M_Archeon_Cannon" shadowScale="120" />
+			<stat hp="53126864969" asp="100" msp="100" atp="120" evp="130" cap="72" cad="250" car="70" ndd="1071" pap="32773443" map="32782294" par="190" mar="190" />
+			<distance avoid="50" sight="90000" sightHeightUP="9000" sightHeightDown="9000" customLastSightRadius="9999" customLastSightHeightUp="9999" customLastSightHeightDown="9999" />
+			<skill ids="49905471" levels="1" probs="1" />
+			<additionalEffect codes="62100180" levels="1" />
+			<collision shape="box" width="200" height="350" depth="200" />
+			<capsule radius="50" height="200" />
+			<dead time="5" defaultaction="Dead_A" upaction="Dead_A" />
+			<push back="1" up="1" knockback="1" />
+			<normal action="Idle_A,Attack_Idle_A" prob="7000,3000" movearea="200" />
+			<aiInfo path="BossDungeon/Archeon/Mob/AI_Archeon_Map_Cannon.xml" />
+		</environment>
+	</npc>
+	<npc id="25200110">
+		<environment feature="Kritias_Turka01" npcAttackGroup="1" npcDefenseGroup="2" minimap="0" defenceMaterial="1" hitImmune="99" abnormalImmune="99" level="79" rankIcon="c" carePathToEnemy="1" propertyTags="keep_battle,battle_on_spawn,dummy_npc" raceString="unknown" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/02020107_M_Lslime03_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" customExp="0" lookAtMyPCWhenTalking="0">
+			<model kfm="02020107_M_Lslime03" rotationSpeed="720" />
+			<stat hp="36947" asp="100" msp="100" atp="80" evp="111" cap="77" cad="500" car="79" ndd="1350" pap="1765643" map="1766170" par="1500" mar="1500" />
+			<distance avoid="45" sight="10000" sightHeightUP="2000" sightHeightDown="3500" />
+			<skill ids="49286031" levels="1" probs="100" />
+			<collision shape="box" width="1" height="1" depth="1" heightOffset="-1000" />
+			<capsule radius="30" height="100" ignore="1" />
+			<dead time="5" defaultaction="Idle_A" upaction="Idle_A" />
+			<normal action="Idle_B" prob="10000" />
+			<aiInfo path="AI_Suicide_after_SkillUse.xml" />
+		</environment>
+	</npc>
+	<npc id="25200111">
+		<environment feature="Kritias_Turka01" npcAttackGroup="1" npcDefenseGroup="2" minimap="0" hpBar="1" defenceMaterial="1" hitImmune="99" abnormalImmune="99" level="70" rankIcon="c" raceString="unknown" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/Dummy_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" customExp="0" lookAtMyPCWhenTalking="0">
+			<model kfm="Dummy" rotationSpeed="720" walkSpeed="400" runSpeed="600" />
+			<stat hp="4360234" asp="100" msp="100" atp="120" evp="130" cap="72" cad="250" car="70" ndd="1071" pap="2128173" map="2128748" par="190" mar="190" />
+			<distance avoid="45" sight="10000" sightHeightUP="2000" sightHeightDown="2000" customLastSightRadius="10000" customLastSightHeightUp="2000" customLastSightHeightDown="2000" />
+			<skill ids="49174001" levels="1" probs="100" />
+			<additionalEffect codes="60095002" levels="1" />
+			<collision shape="box" width="1" height="1" depth="1" heightOffset="1800" />
+			<capsule radius="1" height="1" />
+			<dead time="5" defaultaction="Idle_A" upaction="Idle_A" />
+			<normal action="Idle_A" prob="10000" />
+			<aiInfo path="BossDungeon/Archeon/Mob/AI_Laser.xml" />
+		</environment>
+	</npc>
+	<npc id="25200201">
+		<environment feature="Kritias_Turka01" npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="enemy" nametag="1" hpBar="1" defenceMaterial="3" hitImmune="1" abnormalImmune="1" level="70" rankIcon="c" carePathToEnemy="1" raceString="machine" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/29500006_M_DarkEgoWeapon_LongSword_Type_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" customExp="0" lookAtMyPCWhenTalking="0">
+			<model kfm="29500006_M_DarkEgoWeapon_LongSword_Type" shadowScale="120" rotationSpeed="720" walkSpeed="100" runSpeed="240" />
+			<stat hp="2778931" asp="100" msp="100" atp="80" evp="102" cap="72" cad="250" car="70" ndd="1071" pap="1052311" map="1052521" par="190" mar="190" scaleStatRate_1="1.4" scaleBaseTap_1="8935624" scaleBaseDef_1="8790" scaleBaseSpaRate_1="0.2" scaleStatRate_2="1.4" scaleBaseTap_2="13037074" scaleBaseDef_2="13661" scaleBaseSpaRate_2="0.2" />
+			<distance avoid="150" sight="600" sightHeightUP="300" sightHeightDown="0" customLastSightRadius="9000" customLastSightHeightUp="300" />
+			<skill ids="49901610,49901611" levels="1,1" probs="50,50" />
+			<collision shape="box" width="100" height="100" depth="100" />
+			<capsule radius="45" height="100" />
+			<dead time="5" defaultaction="Dead_A,Dead_B" upaction="Dead_B" />
+			<push back="1" up="1" knockback="1" />
+			<normal action="Idle_A,Bore_A,Walk_A" prob="6000,1000,3000" movearea="300" />
+			<dropiteminfo dropHeight="50" dropDistanceBase="100" dropDistanceRandom="50" globalDropBoxId="74" />
+		</environment>
+	</npc>
+	<npc id="25200202">
+		<environment feature="Kritias_Turka01" npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="enemy" nametag="1" hpBar="1" defenceMaterial="3" hitImmune="1" abnormalImmune="1" level="70" rankIcon="c" carePathToEnemy="1" raceString="machine" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/29500010_M_DarkEgoWeapon_Bow_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" customExp="0" lookAtMyPCWhenTalking="0">
+			<model kfm="29500010_M_DarkEgoWeapon_Bow" shadowScale="120" rotationSpeed="720" walkSpeed="100" runSpeed="240" />
+			<stat hp="2778931" asp="100" msp="100" atp="80" evp="102" cap="72" cad="250" car="70" ndd="1071" pap="250511" map="250561" par="190" mar="190" scaleStatRate_1="1.4" scaleBaseTap_1="8935624" scaleBaseDef_1="8790" scaleBaseSpaRate_1="0.2" scaleStatRate_2="1.4" scaleBaseTap_2="13037074" scaleBaseDef_2="13661" scaleBaseSpaRate_2="0.2" />
+			<distance avoid="150" sight="600" sightHeightUP="300" sightHeightDown="0" customLastSightRadius="9000" customLastSightHeightUp="300" />
+			<skill ids="49901612,49901613" levels="1,1" probs="50,50" />
+			<collision shape="box" width="100" height="100" depth="100" />
+			<capsule radius="45" height="100" />
+			<dead time="5" defaultaction="Dead_A,Dead_B" upaction="Dead_B" />
+			<push back="1" up="1" knockback="1" />
+			<normal action="Idle_A,Bore_A,Walk_A" prob="6000,1000,3000" movearea="300" />
+			<dropiteminfo dropHeight="50" dropDistanceBase="100" dropDistanceRandom="50" globalDropBoxId="74" />
+		</environment>
+	</npc>
+	<npc id="25200203">
+		<environment feature="Kritias_Turka01" npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="enemy" nametag="1" hpBar="1" defenceMaterial="3" hitImmune="1" abnormalImmune="1" level="70" rankIcon="c" carePathToEnemy="1" raceString="machine" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/29500009_M_DarkEgoWeapon_Staff_Type_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" customExp="0" lookAtMyPCWhenTalking="0">
+			<model kfm="29500009_M_DarkEgoWeapon_Staff_Type" shadowScale="120" rotationSpeed="720" walkSpeed="100" runSpeed="240" />
+			<stat hp="2778931" asp="100" msp="100" atp="80" evp="102" cap="72" cad="250" car="70" ndd="1071" pap="447111" map="447200" par="190" mar="190" scaleStatRate_1="1.4" scaleBaseTap_1="8935624" scaleBaseDef_1="8790" scaleBaseSpaRate_1="0.2" scaleStatRate_2="1.4" scaleBaseTap_2="13037074" scaleBaseDef_2="13661" scaleBaseSpaRate_2="0.2" />
+			<distance avoid="150" sight="600" sightHeightUP="300" sightHeightDown="0" customLastSightRadius="9000" customLastSightHeightUp="300" />
+			<skill ids="49901616,49901617" levels="1,1" probs="50,50" />
+			<collision shape="box" width="100" height="100" depth="100" />
+			<capsule radius="45" height="100" />
+			<dead time="5" defaultaction="Dead_A,Dead_B" upaction="Dead_B" />
+			<push back="1" up="1" knockback="1" />
+			<normal action="Idle_A,Bore_A,Walk_A" prob="6000,1000,3000" movearea="300" />
+			<dropiteminfo dropHeight="50" dropDistanceBase="100" dropDistanceRandom="50" globalDropBoxId="74" />
+		</environment>
+	</npc>
+	<npc id="25200204">
+		<environment feature="Kritias_Turka01" npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="enemy" nametag="1" hpBar="1" defenceMaterial="3" hitImmune="1" abnormalImmune="1" level="70" rankIcon="c" carePathToEnemy="1" raceString="machine" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/29500007_M_DarkEgoWeapon_Hammer_Type_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" customExp="0" lookAtMyPCWhenTalking="0">
+			<model kfm="29500007_M_DarkEgoWeapon_Hammer_Type" scale="1.5" shadowScale="120" rotationSpeed="720" walkSpeed="100" runSpeed="240" />
+			<stat hp="2778931" asp="100" msp="100" atp="80" evp="102" cap="72" cad="250" car="70" ndd="1071" pap="1052311" map="1052521" par="190" mar="190" scaleStatRate_1="1.4" scaleBaseTap_1="8935624" scaleBaseDef_1="8790" scaleBaseSpaRate_1="0.2" scaleStatRate_2="1.4" scaleBaseTap_2="13037074" scaleBaseDef_2="13661" scaleBaseSpaRate_2="0.2" />
+			<distance avoid="150" sight="600" sightHeightUP="300" sightHeightDown="0" customLastSightRadius="9000" customLastSightHeightUp="300" />
+			<skill ids="49901614,49901615" levels="1,1" probs="50,50" />
+			<collision shape="box" width="100" height="100" depth="100" />
+			<capsule radius="45" height="100" />
+			<dead time="5" defaultaction="Dead_A,Dead_B" upaction="Dead_B" />
+			<push back="1" up="1" knockback="1" />
+			<normal action="Idle_A,Bore_A,Walk_A" prob="6000,1000,3000" movearea="300" />
+			<dropiteminfo dropHeight="50" dropDistanceBase="100" dropDistanceRandom="50" globalDropBoxId="74" />
+		</environment>
+	</npc>
+	<npc id="25200205">
+		<environment feature="Kritias_Turka01" npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="enemy" nametag="1" hpBar="1" defenceMaterial="3" hitImmune="1" abnormalImmune="1" level="70" rankIcon="c" carePathToEnemy="1" raceString="machine" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/29500006_M_DarkEgoWeapon_LongSword_Type_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" customExp="0" lookAtMyPCWhenTalking="0">
+			<model kfm="29500006_M_DarkEgoWeapon_LongSword_Type" shadowScale="120" rotationSpeed="720" walkSpeed="100" runSpeed="240" />
+			<stat hp="2778931" asp="100" msp="100" atp="80" evp="102" cap="72" cad="250" car="70" ndd="1071" pap="1052311" map="1052521" par="190" mar="190" scaleStatRate_1="1.4" scaleBaseTap_1="8935624" scaleBaseDef_1="8790" scaleBaseSpaRate_1="0.2" scaleStatRate_2="1.4" scaleBaseTap_2="13037074" scaleBaseDef_2="13661" scaleBaseSpaRate_2="0.2" />
+			<distance avoid="150" sight="9000" sightHeightUP="300" sightHeightDown="0" customLastSightRadius="9000" customLastSightHeightUp="300" />
+			<skill ids="49901610,49901611" levels="1,1" probs="50,50" />
+			<collision shape="box" width="100" height="100" depth="100" />
+			<capsule radius="45" height="100" />
+			<dead time="5" defaultaction="Dead_A,Dead_B" upaction="Dead_B" />
+			<push back="1" up="1" knockback="1" />
+			<normal action="Idle_A,Bore_A,Walk_A" prob="6000,1000,3000" movearea="300" />
+			<dropiteminfo dropHeight="50" dropDistanceBase="100" dropDistanceRandom="50" globalDropBoxId="74" />
+		</environment>
+	</npc>
+	<npc id="25200206">
+		<environment feature="Kritias_Turka01" npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="enemy" nametag="1" hpBar="1" defenceMaterial="3" hitImmune="1" abnormalImmune="1" level="70" rankIcon="c" carePathToEnemy="1" raceString="machine" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/29500010_M_DarkEgoWeapon_Bow_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" customExp="0" lookAtMyPCWhenTalking="0">
+			<model kfm="29500010_M_DarkEgoWeapon_Bow" shadowScale="120" rotationSpeed="720" walkSpeed="100" runSpeed="240" />
+			<stat hp="2778931" asp="100" msp="100" atp="80" evp="102" cap="72" cad="250" car="70" ndd="1071" pap="250511" map="250561" par="190" mar="190" scaleStatRate_1="1.4" scaleBaseTap_1="8935624" scaleBaseDef_1="8790" scaleBaseSpaRate_1="0.2" scaleStatRate_2="1.4" scaleBaseTap_2="13037074" scaleBaseDef_2="13661" scaleBaseSpaRate_2="0.2" />
+			<distance avoid="150" sight="9000" sightHeightUP="300" sightHeightDown="0" customLastSightRadius="9000" customLastSightHeightUp="300" />
+			<skill ids="49901612,49901613" levels="1,1" probs="50,50" />
+			<collision shape="box" width="100" height="100" depth="100" />
+			<capsule radius="45" height="100" />
+			<dead time="5" defaultaction="Dead_A,Dead_B" upaction="Dead_B" />
+			<push back="1" up="1" knockback="1" />
+			<normal action="Idle_A,Bore_A,Walk_A" prob="6000,1000,3000" movearea="300" />
+			<dropiteminfo dropHeight="50" dropDistanceBase="100" dropDistanceRandom="50" globalDropBoxId="74" />
+		</environment>
+	</npc>
+	<npc id="25200207">
+		<environment feature="Kritias_Turka01" npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="enemy" nametag="1" hpBar="1" defenceMaterial="3" hitImmune="1" abnormalImmune="1" level="70" rankIcon="c" carePathToEnemy="1" raceString="machine" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/29500009_M_DarkEgoWeapon_Staff_Type_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" customExp="0" lookAtMyPCWhenTalking="0">
+			<model kfm="29500009_M_DarkEgoWeapon_Staff_Type" shadowScale="120" rotationSpeed="720" walkSpeed="100" runSpeed="240" />
+			<stat hp="2778931" asp="100" msp="100" atp="80" evp="102" cap="72" cad="250" car="70" ndd="1071" pap="447111" map="447200" par="190" mar="190" scaleStatRate_1="1.4" scaleBaseTap_1="8935624" scaleBaseDef_1="8790" scaleBaseSpaRate_1="0.2" scaleStatRate_2="1.4" scaleBaseTap_2="13037074" scaleBaseDef_2="13661" scaleBaseSpaRate_2="0.2" />
+			<distance avoid="150" sight="9000" sightHeightUP="300" sightHeightDown="0" customLastSightRadius="9000" customLastSightHeightUp="300" />
+			<skill ids="49901616,49901617" levels="1,1" probs="50,50" />
+			<collision shape="box" width="100" height="100" depth="100" />
+			<capsule radius="45" height="100" />
+			<dead time="5" defaultaction="Dead_A,Dead_B" upaction="Dead_B" />
+			<push back="1" up="1" knockback="1" />
+			<normal action="Idle_A,Bore_A,Walk_A" prob="6000,1000,3000" movearea="300" />
+			<dropiteminfo dropHeight="50" dropDistanceBase="100" dropDistanceRandom="50" globalDropBoxId="74" />
+		</environment>
+	</npc>
+	<npc id="25200208">
+		<environment feature="Kritias_Turka01" npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="enemy" nametag="1" hpBar="1" defenceMaterial="3" hitImmune="1" abnormalImmune="1" level="70" rankIcon="c" carePathToEnemy="1" raceString="machine" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/29500007_M_DarkEgoWeapon_Hammer_Type_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" customExp="0" lookAtMyPCWhenTalking="0">
+			<model kfm="29500007_M_DarkEgoWeapon_Hammer_Type" scale="1.5" shadowScale="120" rotationSpeed="720" walkSpeed="100" runSpeed="240" />
+			<stat hp="2778931" asp="100" msp="100" atp="80" evp="102" cap="72" cad="250" car="70" ndd="1071" pap="1052311" map="1052521" par="190" mar="190" scaleStatRate_1="1.4" scaleBaseTap_1="8935624" scaleBaseDef_1="8790" scaleBaseSpaRate_1="0.2" scaleStatRate_2="1.4" scaleBaseTap_2="13037074" scaleBaseDef_2="13661" scaleBaseSpaRate_2="0.2" />
+			<distance avoid="150" sight="9000" sightHeightUP="300" sightHeightDown="0" customLastSightRadius="9000" customLastSightHeightUp="300" />
+			<skill ids="49901614,49901615" levels="1,1" probs="50,50" />
+			<collision shape="box" width="100" height="100" depth="100" />
+			<capsule radius="45" height="100" />
+			<dead time="5" defaultaction="Dead_A,Dead_B" upaction="Dead_B" />
+			<push back="1" up="1" knockback="1" />
+			<normal action="Idle_A,Bore_A,Walk_A" prob="6000,1000,3000" movearea="300" />
+			<dropiteminfo dropHeight="50" dropDistanceBase="100" dropDistanceRandom="50" globalDropBoxId="74" />
+		</environment>
+	</npc>
+	<npc id="25200209">
+		<environment feature="Kritias_Turka01" npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="enemy" nametag="1" hpBar="1" defenceMaterial="1" hitImmune="95" abnormalImmune="95" level="70" class="7" rankIcon="b" propertyTags="keep_battle" raceString="machine" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/29500111_M_Archeon_Cannon_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" customExp="0" lookAtMyPCWhenTalking="0">
+			<model kfm="29500111_M_Archeon_Cannon" shadowScale="120" />
+			<stat hp="296554037" asp="100" msp="100" atp="81" evp="102" cap="72" cad="250" car="70" ndd="1071" pap="2222117" map="2222559" par="190" mar="190" scaleStatRate_1="1.4" scaleBaseTap_1="8935624" scaleBaseDef_1="8790" scaleBaseSpaRate_1="0.2" scaleStatRate_2="1.4" scaleBaseTap_2="13037074" scaleBaseDef_2="13661" scaleBaseSpaRate_2="0.2" />
+			<distance avoid="50" sight="90000" sightHeightUP="9000" sightHeightDown="9000" customLastSightRadius="9999" customLastSightHeightUp="9999" customLastSightHeightDown="9999" />
+			<skill ids="49905471" levels="1" probs="1" />
+			<additionalEffect codes="62100180" levels="1" />
+			<collision shape="box" width="200" height="350" depth="200" />
+			<capsule radius="50" height="200" />
+			<dead time="5" defaultaction="Dead_A" upaction="Dead_A" />
+			<push back="1" up="1" knockback="1" />
+			<normal action="Idle_A,Attack_Idle_A" prob="7000,3000" movearea="200" />
+			<aiInfo path="BossDungeon/Archeon/Mob/AI_Archeon_Map_Cannon_25200209.xml" />
+		</environment>
+	</npc>
+	<npc id="25200210">
+		<environment feature="Kritias_Turka01" npcAttackGroup="1" npcDefenseGroup="2" minimap="0" defenceMaterial="1" hitImmune="99" abnormalImmune="99" level="70" rankIcon="c" carePathToEnemy="1" propertyTags="keep_battle,battle_on_spawn,dummy_npc" raceString="unknown" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/02020107_M_Lslime03_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" customExp="0" lookAtMyPCWhenTalking="0">
+			<model kfm="02020107_M_Lslime03" rotationSpeed="720" />
+			<stat hp="32360" asp="100" msp="100" atp="80" evp="102" cap="72" cad="500" car="70" ndd="1071" pap="1211814" map="1212180" par="1500" mar="1500" />
+			<distance avoid="45" sight="10000" sightHeightUP="2000" sightHeightDown="3500" />
+			<skill ids="49286031" levels="1" probs="100" />
+			<collision shape="box" width="1" height="1" depth="1" heightOffset="-1000" />
+			<capsule radius="30" height="100" ignore="1" />
+			<dead time="5" defaultaction="Idle_A" upaction="Idle_A" />
+			<normal action="Idle_B" prob="10000" />
+			<aiInfo path="AI_Suicide_after_SkillUse.xml" />
+		</environment>
+	</npc>
+	<npc id="25200211">
+		<environment feature="Kritias_Turka01" npcAttackGroup="1" npcDefenseGroup="2" minimap="0" hpBar="1" defenceMaterial="1" hitImmune="99" abnormalImmune="99" level="70" rankIcon="c" raceString="unknown" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/Dummy_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" customExp="0" lookAtMyPCWhenTalking="0">
+			<model kfm="Dummy" rotationSpeed="720" walkSpeed="400" runSpeed="600" />
+			<stat hp="24228" asp="100" msp="100" atp="80" evp="102" cap="72" cad="250" car="70" ndd="1071" pap="144740" map="144769" par="190" mar="190" scaleStatRate_1="1.4" scaleBaseTap_1="8935624" scaleBaseDef_1="8790" scaleBaseSpaRate_1="0.2" scaleStatRate_2="1.4" scaleBaseTap_2="13037074" scaleBaseDef_2="13661" scaleBaseSpaRate_2="0.2" />
+			<distance avoid="45" sight="10000" sightHeightUP="2000" sightHeightDown="2000" customLastSightRadius="10000" customLastSightHeightUp="2000" customLastSightHeightDown="2000" />
+			<skill ids="49174001" levels="1" probs="100" />
+			<additionalEffect codes="60095002" levels="1" />
+			<collision shape="box" width="1" height="1" depth="1" heightOffset="1800" />
+			<capsule radius="1" height="1" />
+			<dead time="5" defaultaction="Idle_A" upaction="Idle_A" />
+			<normal action="Idle_A" prob="10000" />
+			<aiInfo path="BossDungeon/Archeon/Mob/AI_Laser_25200211.xml" />
+		</environment>
+	</npc>
+</ms2>

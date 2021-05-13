@@ -3,7 +3,7 @@
 <ms2>
 	<environment feature="Season3" locale="">
 		<model kfm="22000054_N_BullAxePurple" scale="1.2" />
-		<basic npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="boss" nametag="1" nametagSize="18" defenceMaterial="1" hitImmune="99" abnormalImmune="99" level="43" class="6" rankIcon="a" difficulty="43" raceString="mystic" gender="2" mainTags="None" portrait="./Data/Resource/Image/Portrait/Mob/22000054_N_BullAxePurple_P.png" damagedVibrateDuration="0.5" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" bossSoundDistance="1300" bossSoundEndDistance="2400" />
+		<basic npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="boss" nametag="1" nametagSize="18" defenceMaterial="1" hitImmune="99" abnormalImmune="99" level="43" class="6" rankIcon="a" raceString="mystic" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/22000054_N_BullAxePurple_P.png" damagedVibrateDuration="0.5" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" bossSoundDistance="1300" bossSoundEndDistance="2400" />
 		<stat hp="168918" asp="100" msp="100" atp="81" evp="82" cap="59" cad="500" car="50" ndd="429" pap="38012" map="47530" par="105" mar="105" />
 		<speed rotation="721" walk="250" run="500" />
 		<distance avoid="140" sight="1500" sightHeightUP="300" sightHeightDown="0" customLastSightRadius="4500" customLastSightHeightUp="1000" customLastSightHeightDown="100" />
@@ -15,38 +15,38 @@
 		<shadow scale="380" bias="1" />
 		<normal action="Attack_Idle_A,Bore_A" prob="2000,8000" maidExpired="Idle_A" />
 		<dropiteminfo dropHeight="150" dropDistanceBase="200" dropDistanceRandom="10" fireVelocity="150" globalDropBoxId="74" />
-		<lookattarget lookAtMyPCWhenTalking="0" useTalkMotion="1" />
+		<lookattarget lookAtMyPCWhenTalking="0" />
 		<aiInfo path="AI_BullAxePurple.xml" />
 		<exp customExp="0" />
 	</environment>
 	<effectdummy>
 		<dummy name="Eff_Head">
-			<attachInfo parentNode="Bip01 Head" applyWorldTransform="false" applyLocalScale="true" />
-			<transform translate="20.000000, -40.000000, 0.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.000000" />
+			<attachInfo parentNode="Bip01 Head" />
+			<transform translate="20,-40,0" />
 		</dummy>
 		<dummy name="Eff_Body">
-			<attachInfo parentNode="Bip01 Pelvis" applyWorldTransform="false" applyLocalScale="true" />
-			<transform translate="0.000000, 40.000000, 0.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.300000" />
+			<attachInfo parentNode="Bip01 Pelvis" />
+			<transform translate="0,40,0" scale="1.3" />
 		</dummy>
 		<dummy name="Eff_Foot">
-			<attachInfo parentNode="Scene Root" applyWorldTransform="false" applyLocalScale="true" />
-			<transform translate="0.000000, 0.000000, 0.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.100000" />
+			<attachInfo parentNode="Scene Root" />
+			<transform scale="1.1" />
 		</dummy>
 		<dummy name="Eff_UI">
 			<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
-			<transform translate="0.000000, -30.000000, 390.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.000000" />
+			<transform translate="0,-30,390" />
 		</dummy>
 		<dummy name="Eff_Head_World">
 			<attachInfo parentNode="Bip01 Head" applyWorldTransform="true" applyLocalScale="false" />
-			<transform translate="0.000000, -40.000000, 20.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.000000" />
+			<transform translate="0,-40,20" />
 		</dummy>
 		<dummy name="Eff_Body_World">
 			<attachInfo parentNode="Bip01 Pelvis" applyWorldTransform="true" applyLocalScale="false" />
-			<transform translate="0.000000, -50.000000, 0.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.300000" />
+			<transform translate="0,-50,0" scale="1.3" />
 		</dummy>
 		<dummy name="Eff_Foot_World">
 			<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
-			<transform translate="0.000000, 0.000000, 0.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.100000" />
+			<transform scale="1.1" />
 		</dummy>
 	</effectdummy>
 </ms2>

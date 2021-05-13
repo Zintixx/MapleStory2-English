@@ -3,7 +3,7 @@
 <ms2>
 	<environment feature="KarkarIsland" locale="">
 		<model kfm="21000145_M_TurtleLotus01" scale="1.5" />
-		<basic npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="elite_boss" nametag="1" nametagSize="18" defenceMaterial="1" hitImmune="99" abnormalImmune="99" level="50" class="7" rankIcon="b" carePathToEnemy="1" difficulty="50" raceString="mystic" gender="2" mainTags="None" portrait="./Data/Resource/Image/Portrait/Mob/21000145_M_TurtleLotus01_P.png" damagedColorScale="8" damagedVibrateDuration="0.9" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" skipFrame="1" />
+		<basic npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="elite_boss" nametag="1" nametagSize="18" defenceMaterial="1" hitImmune="99" abnormalImmune="99" level="50" class="7" rankIcon="b" carePathToEnemy="1" raceString="mystic" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/21000145_M_TurtleLotus01_P.png" damagedColorScale="8" damagedVibrateDuration="0.9" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" />
 		<stat hp="473404" asp="100" msp="100" atp="81" evp="86" cap="62" cad="500" car="50" ndd="681" pap="78832" map="78861" />
 		<speed rotation="720" walk="40" run="280" />
 		<distance avoid="60" sight="800" sightHeightUP="300" sightHeightDown="600" customLastSightRadius="3500" customLastSightHeightUp="525" customLastSightHeightDown="600" />
@@ -15,14 +15,14 @@
 		<shadow scale="600" bias="1" />
 		<normal action="Idle_A,Bore_A,Walk_A" prob="4500,1500,4000" movearea="150" maidExpired="Idle_A" />
 		<dropiteminfo dropHeight="50" dropDistanceBase="100" dropDistanceRandom="50" globalDropBoxId="74" />
-		<lookattarget lookAtMyPCWhenTalking="0" useTalkMotion="1" />
+		<lookattarget lookAtMyPCWhenTalking="0" />
 		<aiInfo path="AI_DefaultNew.xml" />
 		<exp customExp="0" />
 	</environment>
 	<effectdummy>
 		<dummy name="Eff_UI">
 			<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
-			<transform translate="0.000000, 0.000000, 450.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.000000" />
+			<transform translate="0,0,450" />
 		</dummy>
 	</effectdummy>
 </ms2>

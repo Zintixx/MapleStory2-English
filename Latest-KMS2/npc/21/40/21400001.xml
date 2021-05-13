@@ -3,7 +3,7 @@
 <ms2>
 	<environment feature="Season1" locale="">
 		<model kfm="02020109_L_SandstoneDwarf2" scale="1.7" />
-		<basic npcAttackGroup="1" npcDefenseGroup="2" nametag="1" nametagSize="18" minimap="0" hpBar="1" defenceMaterial="4" hitImmune="99" abnormalImmune="99" level="31" rankIcon="c" carePathToEnemy="1" difficulty="31" raceString="spirit" gender="2" mainTags="None" portrait="./Data/Resource/Image/Portrait/Mob/02020109_L_SandstoneDwarf2_P.png" damagedColorScale="4" damagedVibrateDuration="0.7" damagedVibrateAmp="1" regenEffect="NPC/Common/Eff_NPC_Regen_C_Normal.xml" skipFrame="1" />
+		<basic npcAttackGroup="1" npcDefenseGroup="2" nametag="1" nametagSize="18" minimap="0" hpBar="1" defenceMaterial="4" hitImmune="99" abnormalImmune="99" level="31" rankIcon="c" carePathToEnemy="1" raceString="spirit" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/02020109_L_SandstoneDwarf2_P.png" damagedColorScale="4" damagedVibrateDuration="0.7" damagedVibrateAmp="1" regenEffect="NPC/Common/Eff_NPC_Regen_C_Normal.xml" />
 		<stat hp="6161" asp="100" msp="100" atp="80" evp="82" cap="53" cad="500" car="50" ndd="237" pap="2917" map="2918" />
 		<speed rotation="720" walk="100" run="200" />
 		<distance avoid="100" sight="600" sightHeightUP="300" sightHeightDown="0" />
@@ -14,37 +14,37 @@
 		<shadow scale="200" bias="1" />
 		<normal action="Idle_A,Bore_A,Walk_A" prob="4500,1000,4500" movearea="150" maidExpired="Idle_A" />
 		<dropiteminfo dropHeight="150" dropDistanceBase="140" dropDistanceRandom="10" globalDropBoxId="74" individualDropBoxId="721400001" />
-		<lookattarget lookAtMyPCWhenTalking="0" useTalkMotion="1" />
+		<lookattarget lookAtMyPCWhenTalking="0" />
 		<aiInfo path="AI_CloseAttack.xml" />
 	</environment>
 	<effectdummy>
 		<dummy name="Eff_Head">
-			<attachInfo parentNode="Bip01 Head" applyWorldTransform="false" applyLocalScale="true" />
-			<transform translate="20.000000, 5.000000, 0.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.100000" />
+			<attachInfo parentNode="Bip01 Head" />
+			<transform translate="20,5,0" scale="1.1" />
 		</dummy>
 		<dummy name="Eff_Body">
-			<attachInfo parentNode="Bip01 Spine" applyWorldTransform="false" applyLocalScale="true" />
-			<transform translate="0.000000, 0.000000, 0.000000" rotation="-0.000000, -0.000000, 0.000000" scale="1.100000" />
+			<attachInfo parentNode="Bip01 Spine" />
+			<transform scale="1.1" />
 		</dummy>
 		<dummy name="Eff_Foot">
-			<attachInfo parentNode="Bip01 Footsteps" applyWorldTransform="false" applyLocalScale="true" />
-			<transform translate="0.000000, 0.000000, 0.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.100000" />
+			<attachInfo parentNode="Bip01 Footsteps" />
+			<transform scale="1.1" />
 		</dummy>
 		<dummy name="Eff_UI">
 			<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
-			<transform translate="0.000000, 0.000000, 270.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.000000" />
+			<transform translate="0,0,270" />
 		</dummy>
 		<dummy name="Eff_Head_World">
 			<attachInfo parentNode="Bip01 Head" applyWorldTransform="true" applyLocalScale="false" />
-			<transform translate="0.000000, -20.000000, 30.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.100000" />
+			<transform translate="0,-20,30" scale="1.1" />
 		</dummy>
 		<dummy name="Eff_Body_World">
 			<attachInfo parentNode="Bip01 Spine" applyWorldTransform="true" applyLocalScale="false" />
-			<transform translate="0.000000, 0.000000, 0.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.100000" />
+			<transform scale="1.1" />
 		</dummy>
 		<dummy name="Eff_Foot_World">
 			<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
-			<transform translate="0.000000, 0.000000, 0.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.100000" />
+			<transform scale="1.1" />
 		</dummy>
 	</effectdummy>
 </ms2>

@@ -3,7 +3,7 @@
 <ms2>
 	<environment feature="PinkBean01" locale="">
 		<model kfm="21000994_M_StatueAnimal02" scale="1.4" />
-		<basic npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="elite_boss" nametagSize="18" defenceMaterial="4" hitImmune="99" abnormalImmune="99" level="50" class="3" rankIcon="b" rotationDisabled="1" difficulty="50" propertyTags="keep_battle,fixed_big_monster" raceString="creature" gender="2" mainTags="None" portrait="./Data/Resource/Image/Portrait/Mob/21000994_M_StatueAnimal02_P.png" damagedColorScale="6" damagedVibrateDuration="1" damagedVibrateAmp="1" />
+		<basic npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="elite_boss" nametagSize="18" defenceMaterial="4" hitImmune="99" abnormalImmune="99" level="50" class="3" rankIcon="b" rotationDisabled="1" propertyTags="keep_battle,fixed_big_monster" raceString="creature" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/21000994_M_StatueAnimal02_P.png" damagedColorScale="6" damagedVibrateDuration="1" damagedVibrateAmp="1" />
 		<stat hp="18020390" asp="100" msp="100" atp="90" evp="130" cap="62" cad="500" car="50" ndd="930" pap="1872203" map="1872787" par="105" mar="105" />
 		<distance avoid="150" sight="8000" sightHeightUP="8000" sightHeightDown="8000" customLastSightRadius="9900" customLastSightHeightUp="9900" customLastSightHeightDown="9900" />
 		<skill ids="50001230" levels="1" priorities="1" probs="100" />
@@ -14,38 +14,38 @@
 		<shadow scale="400" bias="1" />
 		<normal action="Idle_A" prob="10000" maidExpired="Idle_A" />
 		<dropiteminfo globalDropBoxId="74" />
-		<lookattarget lookAtMyPCWhenTalking="0" useTalkMotion="1" />
+		<lookattarget lookAtMyPCWhenTalking="0" />
 		<aiInfo path="BossDungeon/Pinkbean/AI_StatueAnimal02.xml" />
 		<exp customExp="0" />
 	</environment>
 	<effectdummy>
 		<dummy name="Eff_Head">
-			<attachInfo parentNode="Dummy01" applyWorldTransform="false" applyLocalScale="true" />
-			<transform translate="0.000000, -5.000000, 20.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.200000" />
+			<attachInfo parentNode="Dummy01" />
+			<transform translate="0,-5,20" scale="1.2" />
 		</dummy>
 		<dummy name="Eff_Body">
-			<attachInfo parentNode="Dummy02" applyWorldTransform="false" applyLocalScale="true" />
-			<transform translate="0.000000, 0.000000, 5.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.200000" />
+			<attachInfo parentNode="Dummy02" />
+			<transform translate="0,0,5" scale="1.2" />
 		</dummy>
 		<dummy name="Eff_Foot">
-			<attachInfo parentNode="Dummy_Main NonAccum" applyWorldTransform="false" applyLocalScale="true" />
-			<transform translate="0.000000, 0.000000, 0.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.200000" />
+			<attachInfo parentNode="Dummy_Main NonAccum" />
+			<transform scale="1.2" />
 		</dummy>
 		<dummy name="Eff_UI">
 			<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
-			<transform translate="0.000000, -20.000000, 560.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.000000" />
+			<transform translate="0,-20,560" />
 		</dummy>
 		<dummy name="Eff_Head_World">
 			<attachInfo parentNode="Dummy01" applyWorldTransform="true" applyLocalScale="false" />
-			<transform translate="0.000000, -30.000000, -5.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.200000" />
+			<transform translate="0,-30,-5" scale="1.2" />
 		</dummy>
 		<dummy name="Eff_Body_World">
 			<attachInfo parentNode="Dummy02" applyWorldTransform="true" applyLocalScale="false" />
-			<transform translate="0.000000, -5.000000, 0.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.200000" />
+			<transform translate="0,-5,0" scale="1.2" />
 		</dummy>
 		<dummy name="Eff_Foot_World">
 			<attachInfo parentNode="Dummy_Main NonAccum" applyWorldTransform="true" applyLocalScale="false" />
-			<transform translate="0.000000, 0.000000, 0.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.200000" />
+			<transform scale="1.2" />
 		</dummy>
 	</effectdummy>
 </ms2>

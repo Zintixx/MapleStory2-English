@@ -3,7 +3,7 @@
 <ms2>
 	<environment feature="ChronicleDungeon60_01" locale="">
 		<model kfm="22000106_N_ChangeLionRed" scale="1.3" />
-		<basic npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="boss" nametag="1" nametagSize="18" defenceMaterial="1" hitImmune="90" abnormalImmune="90" level="60" class="6" rankIcon="a" difficulty="60" propertyTags="keep_battle" raceString="animal" gender="2" mainTags="None" portrait="./Data/Resource/Image/Portrait/Mob/22000106_N_ChangeLionRed_P.png" damagedVibrateDuration="0.5" damagedVibrateAmp="1" checkCameraDistance="2500" extraCameraDistance="300" bossSoundDistance="900" bossSoundEndDistance="99999" />
+		<basic npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="boss" nametag="1" nametagSize="18" defenceMaterial="1" hitImmune="90" abnormalImmune="90" level="60" class="6" rankIcon="a" propertyTags="keep_battle" raceString="animal" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/22000106_N_ChangeLionRed_P.png" damagedVibrateDuration="0.5" damagedVibrateAmp="1" checkCameraDistance="2500" extraCameraDistance="300" bossSoundDistance="900" bossSoundEndDistance="99999" />
 		<stat hp="1282727" asp="100" msp="100" atp="120" evp="88" cap="67" cad="500" car="50" ndd="702" pap="639974" map="640171" par="120" mar="120" />
 		<speed rotation="500" walk="125" run="250" />
 		<distance avoid="400" sight="1500" sightHeightUP="300" sightHeightDown="110" customLastSightRadius="5555" customLastSightHeightUp="9999" customLastSightHeightDown="9999" />
@@ -16,14 +16,14 @@
 		<shadow scale="500" bias="1" />
 		<normal action="Idle_A,Bore_A,Walk_A" prob="5000,3000,2000" movearea="150" maidExpired="Idle_A" />
 		<dropiteminfo globalDropBoxId="74" />
-		<lookattarget lookAtMyPCWhenTalking="0" useTalkMotion="1" />
+		<lookattarget lookAtMyPCWhenTalking="0" />
 		<aiInfo path="BossDungeon/ChangeLion/AI_ChangeLionRed_Epic.xml" />
 		<exp customExp="0" />
 	</environment>
 	<effectdummy>
 		<dummy name="Eff_UI">
-			<attachInfo parentNode="Scene Root" applyLocalScale="false" applyWorldTransform="true" />
-			<transform translate="0.0, 0.0, 380.0" rotation="0.0, 0.0, 0.0" scale="1.0" />
+			<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
+			<transform translate="0,0,380" />
 		</dummy>
 	</effectdummy>
 </ms2>

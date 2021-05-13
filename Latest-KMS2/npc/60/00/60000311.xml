@@ -3,7 +3,7 @@
 <ms2>
 	<environment feature="Colosseum02" locale="">
 		<model kfm="90002011_M_FoxCute02" />
-		<basic npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="elite_boss" nametag="1" nametagSize="18" defenceMaterial="1" hitImmune="99" abnormalImmune="99" level="70" rankIcon="c" carePathToEnemy="1" difficulty="70" propertyTags="keep_battle" raceString="unknown" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/90002011_M_FoxCute02_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" skipFrame="1" />
+		<basic npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="elite_boss" nametag="1" nametagSize="18" defenceMaterial="1" hitImmune="99" abnormalImmune="99" level="70" rankIcon="c" carePathToEnemy="1" propertyTags="keep_battle" raceString="unknown" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/90002011_M_FoxCute02_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" />
 		<stat hp="880718400" asp="100" msp="100" atp="80" evp="102" cap="72" cad="200" car="70" ndd="1071" pap="14622004" map="14622004" par="90" mar="90" scaleStatRate_1="1.4" scaleBaseTap_1="145470430" scaleBaseDef_1="30749" scaleBaseSpaRate_1="0.2" scaleStatRate_2="1.4" scaleBaseTap_2="158052864" scaleBaseDef_2="58084" scaleBaseSpaRate_2="0.2" />
 		<speed rotation="720" walk="120" run="240" />
 		<distance avoid="300" sight="15000" sightHeightUP="1100" sightHeightDown="900" customLastSightRadius="18000" customLastSightHeightUp="1500" customLastSightHeightDown="999" />
@@ -13,14 +13,14 @@
 		<dead time="2" defaultaction="Dead_A" upaction="Dead_A" />
 		<shadow scale="120" bias="1" />
 		<normal action="Idle_A" prob="10000" maidExpired="Idle_A" />
-		<lookattarget lookAtMyPCWhenTalking="0" useTalkMotion="1" />
+		<lookattarget lookAtMyPCWhenTalking="0" />
 		<aiInfo path="BossDungeon/Colosseum/AI_Miel_Ruche_Colosseum.xml" />
 		<exp customExp="0" />
 	</environment>
 	<effectdummy>
 		<dummy name="Eff_UI">
-			<attachInfo parentNode="Scene Root" applyLocalScale="false" applyWorldTransform="true" />
-			<transform translate="0.0, 0.0, 80.0" rotation="0.0, 0.0, 0.0" scale="1.0" />
+			<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
+			<transform translate="0,0,80" />
 		</dummy>
 	</effectdummy>
 </ms2>

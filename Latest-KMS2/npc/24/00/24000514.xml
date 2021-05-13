@@ -3,7 +3,7 @@
 <ms2>
 	<environment feature="Season3" locale="">
 		<model kfm="22091007_N_PuppetBunnyBlue" scale="1.2" />
-		<basic npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="elite_boss" nametag="1" nametagSize="18" defenceMaterial="1" hitImmune="99" abnormalImmune="99" level="43" class="7" rankIcon="b" carePathToEnemy="1" difficulty="43" raceString="spirit" gender="2" mainTags="None" portrait="./Data/Resource/Image/Portrait/Mob/22091007_N_PuppetBunnyBlue_P.png" damagedVibrateDuration="0.5" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" skipFrame="1" bossSoundDistance="1300" bossSoundEndDistance="2400" />
+		<basic npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="elite_boss" nametag="1" nametagSize="18" defenceMaterial="1" hitImmune="99" abnormalImmune="99" level="43" class="7" rankIcon="b" carePathToEnemy="1" raceString="spirit" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/22091007_N_PuppetBunnyBlue_P.png" damagedVibrateDuration="0.5" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" bossSoundDistance="1300" bossSoundEndDistance="2400" />
 		<stat hp="96524" asp="100" msp="100" atp="81" evp="82" cap="59" cad="500" car="50" ndd="429" pap="38012" map="47530" par="105" mar="105" />
 		<speed rotation="720" walk="300" run="600" />
 		<distance avoid="140" sight="1000" sightHeightUP="300" sightHeightDown="0" customLastSightRadius="4500" customLastSightHeightUp="1000" customLastSightHeightDown="300" />
@@ -15,38 +15,38 @@
 		<shadow scale="300" bias="1" />
 		<normal action="Idle_A,Bore_A,Walk_A" prob="3500,2000,4500" movearea="150" maidExpired="Idle_A" />
 		<dropiteminfo dropHeight="200" dropDistanceBase="160" dropDistanceRandom="10" fireVelocity="150" globalDropBoxId="74" />
-		<lookattarget lookAtMyPCWhenTalking="0" useTalkMotion="1" />
+		<lookattarget lookAtMyPCWhenTalking="0" />
 		<aiInfo path="AI_PartyDungeon_PuppetBunnySummoner.xml" />
 		<exp customExp="0" />
 	</environment>
 	<effectdummy>
 		<dummy name="Eff_Head">
-			<attachInfo parentNode="Bip01 Head" applyWorldTransform="false" applyLocalScale="true" />
-			<transform translate="50.000000, 10.000000, 0.000000" rotation="0.000000, 0.000000, 0.000000" scale="0.900000" />
+			<attachInfo parentNode="Bip01 Head" />
+			<transform translate="50,10,0" scale="0.9" />
 		</dummy>
 		<dummy name="Eff_Body">
-			<attachInfo parentNode="Bip01 Spine" applyWorldTransform="false" applyLocalScale="true" />
-			<transform translate="0.000000, 0.000000, 0.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.100000" />
+			<attachInfo parentNode="Bip01 Spine" />
+			<transform scale="1.1" />
 		</dummy>
 		<dummy name="Eff_Foot">
-			<attachInfo parentNode="Scene Root" applyWorldTransform="false" applyLocalScale="true" />
-			<transform translate="0.000000, 0.000000, 0.000000" rotation="0.000000, 0.000000, 0.000000" scale="0.850000" />
+			<attachInfo parentNode="Scene Root" />
+			<transform scale="0.85" />
 		</dummy>
 		<dummy name="Eff_UI">
 			<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
-			<transform translate="0.000000, 0.000000, 230.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.000000" />
+			<transform translate="0,0,230" />
 		</dummy>
 		<dummy name="Eff_Head_World">
 			<attachInfo parentNode="Bip01 Head" applyWorldTransform="true" applyLocalScale="false" />
-			<transform translate="0.000000, -10.000000, 60.000000" rotation="0.000000, 0.000000, 0.000000" scale="0.900000" />
+			<transform translate="0,-10,60" scale="0.9" />
 		</dummy>
 		<dummy name="Eff_Body_World">
 			<attachInfo parentNode="Bip01 Spine" applyWorldTransform="true" applyLocalScale="false" />
-			<transform translate="0.000000, 0.000000, 0.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.100000" />
+			<transform scale="1.1" />
 		</dummy>
 		<dummy name="Eff_Foot_World">
 			<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
-			<transform translate="0.000000, 0.000000, 0.000000" rotation="0.000000, 0.000000, 0.000000" scale="0.850000" />
+			<transform scale="0.85" />
 		</dummy>
 	</effectdummy>
 </ms2>

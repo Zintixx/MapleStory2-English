@@ -3,7 +3,7 @@
 <ms2>
 	<environment feature="Season3" locale="">
 		<model kfm="21000242_M_RobotMaidBlue" scale="1.5" />
-		<basic npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="enemy" nametag="1" nametagSize="18" hpBar="1" defenceMaterial="3" hitImmune="1" abnormalImmune="1" level="50" rankIcon="c" difficulty="50" raceString="machine" gender="2" mainTags="None" portrait="./Data/Resource/Image/Portrait/Mob/21000242_M_RobotMaidBlue_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" />
+		<basic npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="enemy" nametag="1" nametagSize="18" hpBar="1" defenceMaterial="3" hitImmune="1" abnormalImmune="1" level="50" rankIcon="c" raceString="machine" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/21000242_M_RobotMaidBlue_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" />
 		<stat hp="90993" asp="100" msp="100" atp="80" evp="82" cap="62" cad="500" car="50" ndd="567" pap="28574" map="28583" />
 		<speed rotation="720" walk="235" run="310" />
 		<distance avoid="60" sight="3000" sightHeightUP="1000" sightHeightDown="1" customLastSightRadius="3000" customLastSightHeightUp="1000" customLastSightHeightDown="1" />
@@ -15,33 +15,33 @@
 		<shadow scale="230" bias="1" />
 		<normal action="Idle_A" prob="10000" maidExpired="Idle_A" />
 		<dropiteminfo globalDropBoxId="74" />
-		<lookattarget lookAtMyPCWhenTalking="0" useTalkMotion="1" />
+		<lookattarget lookAtMyPCWhenTalking="0" />
 		<aiInfo path="BossDungeon/Papulatus_Chaos/AI_RobotMaidBlueSummon_TypeB.xml" />
 	</environment>
 	<effectdummy>
 		<dummy name="Eff_Head">
-			<attachInfo parentNode="Bip01 Head" applyWorldTransform="false" applyLocalScale="true" />
-			<transform translate="25.000000, 5.000000, 0.000000" rotation="0.000000, 0.000000, 0.000000" scale="0.900000" />
+			<attachInfo parentNode="Bip01 Head" />
+			<transform translate="25,5,0" scale="0.9" />
 		</dummy>
 		<dummy name="Eff_Body">
-			<attachInfo parentNode="Bip01 Pelvis" applyWorldTransform="false" applyLocalScale="true" />
-			<transform translate="-20.000000, 0.000000, 0.000000" rotation="0.000000, 0.000000, 0.000000" scale="0.900000" />
+			<attachInfo parentNode="Bip01 Pelvis" />
+			<transform translate="-20,0,0" scale="0.9" />
 		</dummy>
 		<dummy name="Eff_Foot">
-			<attachInfo parentNode="Scene Root" applyWorldTransform="false" applyLocalScale="true" />
-			<transform translate="0.000000, 0.000000, 15.000000" rotation="0.000000, 0.000000, 0.000000" scale="0.900000" />
+			<attachInfo parentNode="Scene Root" />
+			<transform translate="0,0,15" scale="0.9" />
 		</dummy>
 		<dummy name="Eff_Head_World">
 			<attachInfo parentNode="Bip01 Head" applyWorldTransform="true" applyLocalScale="false" />
-			<transform translate="0.000000, 0.000000, 25.000000" rotation="0.000000, 0.000000, 0.000000" scale="0.900000" />
+			<transform translate="0,0,25" scale="0.9" />
 		</dummy>
 		<dummy name="Eff_Body_World">
 			<attachInfo parentNode="Bip01 Pelvis" applyWorldTransform="true" applyLocalScale="false" />
-			<transform translate="0.000000, 0.000000, -20.000000" rotation="0.000000, 0.000000, 0.000000" scale="0.900000" />
+			<transform translate="0,0,-20" scale="0.9" />
 		</dummy>
 		<dummy name="Eff_Foot_World">
 			<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
-			<transform translate="0.000000, 0.000000, 15.000000" rotation="0.000000, 0.000000, 0.000000" scale="0.900000" />
+			<transform translate="0,0,15" scale="0.9" />
 		</dummy>
 	</effectdummy>
 </ms2>

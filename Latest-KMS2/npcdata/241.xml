@@ -1,0 +1,468 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ms2>
+	<npc id="24100001">
+		<environment feature="FameChallengeDungeon" friendly="1" npcAttackGroup="1" npcDefenseGroup="2" minimap="0" defenceMaterial="1" hitImmune="99" abnormalImmune="99" level="50" class="6" rankIcon="a" carePathToEnemy="1" propertyTags="no_die" raceString="combine" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/11003536_F_Neirin_P.png" damagedVibrateDuration="0.5" damagedVibrateAmp="1" customExp="0" lookAtMyPCWhenTalking="0">
+			<model kfm="11003536_F_Neirin" shadowScale="200" rotationSpeed="720" />
+			<stat hp="34238407" asp="100" msp="100" atp="120" evp="87" cap="62" cad="500" car="50" ndd="567" pap="284498" map="284587" par="105" mar="105" />
+			<distance avoid="140" sightHeightUP="0" sightHeightDown="0" />
+			<collision shape="box" width="80" height="150" depth="90" depthOffset="15" />
+			<capsule radius="70" height="150" />
+			<dead time="10" defaultaction="Dead_A" upaction="Dead_A" />
+			<normal action="Idle_A,Bore_B" prob="3000,7000" />
+			<dropiteminfo globalDeadDropBoxId="1011" />
+		</environment>
+	</npc>
+	<npc id="24100002">
+		<environment feature="FameChallengeDungeon" npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="boss" nametag="1" hpBar="1" defenceMaterial="1" hitImmune="99" abnormalImmune="99" level="50" class="6" rankIcon="a" raceString="devil" gender="0" portrait="./Data/Resource/Image/Portrait/Mob/21000998_M_BalrogSoldierSpear_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" customExp="0" lookAtMyPCWhenTalking="0">
+			<model kfm="21000998_M_BalrogSoldierSpear" scale="1.5" shadowScale="300" rotationSpeed="720" walkSpeed="225" runSpeed="450" />
+			<stat hp="5202887" asp="100" msp="100" atp="120" evp="87" cap="62" cad="250" car="50" ndd="839" pap="1609763" map="1609763" par="105" mar="105" />
+			<distance avoid="250" sight="2000" sightHeightUP="150" sightHeightDown="150" customLastSightRadius="3500" customLastSightHeightUp="300" customLastSightHeightDown="300" />
+			<skill ids="42000101" levels="1" probs="100" />
+			<collision shape="box" width="140" height="200" depth="140" depthOffset="-30" />
+			<capsule radius="150" height="150" />
+			<dead time="3" defaultaction="Dead_A" upaction="Dead_A" />
+			<normal action="Idle_A" prob="10000" />
+			<dropiteminfo globalDropBoxId="74" />
+			<aiInfo path="AI_BalrogSoldierSpear_FR_Lv1.xml" />
+			<effectdummy>
+				<dummy name="Eff_UI">
+					<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,0,250" />
+				</dummy>
+			</effectdummy>
+		</environment>
+	</npc>
+	<npc id="24100003">
+		<environment feature="FameChallengeDungeon" npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="boss" nametag="1" hpBar="1" defenceMaterial="1" hitImmune="99" abnormalImmune="99" level="50" class="6" rankIcon="a" raceString="devil" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/22000113_N_BalrogCrimson_P.png" damagedVibrateDuration="0.5" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" customExp="0" lookAtMyPCWhenTalking="0">
+			<model kfm="22000113_N_BalrogCrimson" scale="0.8" shadowScale="380" rotationSpeed="720" walkSpeed="175" runSpeed="350" />
+			<stat hp="5693726" asp="100" msp="100" atp="120" evp="87" cap="62" cad="250" car="50" ndd="839" pap="1609763" map="1609763" par="105" mar="105" />
+			<distance avoid="250" sight="2000" sightHeightUP="150" sightHeightDown="150" customLastSightRadius="3500" customLastSightHeightUp="300" customLastSightHeightDown="300" />
+			<skill ids="42010101" levels="1" probs="100" />
+			<collision shape="box" width="200" height="500" depth="200" />
+			<capsule radius="150" height="150" />
+			<dead time="2.9" defaultaction="Dead_01_A" upaction="Dead_01_A" />
+			<normal action="Idle_A,Bore_A" prob="4500,1500" movearea="450" />
+			<dropiteminfo globalDropBoxId="74" />
+			<aiInfo path="AI_BalrogCrimson_FR_Lv1.xml" />
+			<effectdummy>
+				<dummy name="Eff_UI">
+					<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,0,400" />
+				</dummy>
+			</effectdummy>
+		</environment>
+	</npc>
+	<npc id="24100004">
+		<environment feature="FameChallengeDungeon" npcAttackGroup="1" npcDefenseGroup="2" nametag="1" minimap="0" hpBar="1" defenceMaterial="1" hitImmune="1" abnormalImmune="1" level="50" rankIcon="c" carePathToEnemy="1" raceString="devil" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/21000304_M_DevilBatTridentPurple_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" customExp="0" lookAtMyPCWhenTalking="0">
+			<model kfm="21000304_M_DevilBatTridentPurple" shadowScale="130" rotationSpeed="720" walkSpeed="170" runSpeed="340" />
+			<stat hp="3113790" asp="100" msp="100" atp="80" evp="82" cap="62" cad="250" car="50" ndd="839" pap="287434" map="287469" />
+			<distance avoid="150" sight="2000" sightHeightUP="150" sightHeightDown="150" customLastSightRadius="3500" customLastSightHeightUp="300" customLastSightHeightDown="300" />
+			<skill ids="42010501,42010601" levels="1,1" probs="80,20" />
+			<collision shape="box" width="85" height="110" depth="130" />
+			<capsule radius="75" height="150" />
+			<dead time="3" defaultaction="Dead_A,Dead_B" upaction="Dead_B" />
+			<push back="1" up="1" knockback="1" />
+			<normal action="Idle_A,Bore_A,Walk_A" prob="4500,1500,4000" movearea="150" />
+			<dropiteminfo globalDropBoxId="74" />
+		</environment>
+	</npc>
+	<npc id="24100005">
+		<environment feature="FameChallengeDungeon" npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="boss" nametag="1" hpBar="1" defenceMaterial="1" hitImmune="99" abnormalImmune="99" level="50" class="6" rankIcon="a" raceString="devil" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/22000113_N_BalrogCrimson_P.png" damagedVibrateDuration="0.5" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" customExp="0" lookAtMyPCWhenTalking="0">
+			<model kfm="22000113_N_BalrogCrimson" scale="0.8" shadowScale="380" rotationSpeed="720" walkSpeed="175" runSpeed="350" />
+			<stat hp="29946622" asp="100" msp="100" atp="120" evp="87" cap="62" cad="500" car="50" ndd="567" pap="128024" map="128024" par="105" mar="105" />
+			<distance avoid="250" sight="2000" sightHeightUP="150" sightHeightDown="150" customLastSightRadius="3500" customLastSightHeightUp="300" customLastSightHeightDown="300" />
+			<skill ids="42010101" levels="1" probs="100" />
+			<collision shape="box" width="200" height="500" depth="200" />
+			<capsule radius="150" height="150" />
+			<dead time="2.9" defaultaction="Dead_01_A" upaction="Dead_01_A" />
+			<normal action="Idle_A,Bore_A" prob="4500,1500" movearea="450" />
+			<dropiteminfo globalDropBoxId="74" />
+			<aiInfo path="AI_BalrogCrimson_FR_Lv1_Nerf.xml" />
+			<effectdummy>
+				<dummy name="Eff_UI">
+					<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,0,400" />
+				</dummy>
+			</effectdummy>
+		</environment>
+	</npc>
+	<npc id="24100006">
+		<environment feature="FameChallengeDungeon" friendly="1" npcAttackGroup="2" npcDefenseGroup="1" nametag="1" defenceMaterial="1" hitImmune="99" abnormalImmune="99" level="50" rankIcon="c" carePathToEnemy="1" propertyTags="no_die" raceString="combine" gender="1" portrait="./Data/Resource/Image/Portrait/Mob/02010009_VigilanceCom_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" customExp="0" lookAtMyPCWhenTalking="0">
+			<model kfm="02010009_VigilanceCom" shadowScale="150" rotationSpeed="720" />
+			<stat hp="24222" asp="100" msp="100" atp="80" evp="82" cap="62" cad="500" car="50" ndd="655" pap="71857" map="71866" par="90" mar="90" />
+			<distance avoid="100" sightHeightUP="0" sightHeightDown="0" />
+			<skill ids="50000222,50000222" levels="2,2" probs="70,30" />
+			<collision shape="box" width="80" height="110" depth="80" />
+			<capsule radius="75" height="150" />
+			<dead time="2" defaultaction="Dead_A" upaction="Dead_A" />
+			<push back="1" up="1" knockback="1" />
+			<normal action="Idle_A" prob="10000" />
+			<aiInfo path="AI_Default_SkillOnly.xml" />
+		</environment>
+	</npc>
+	<npc id="24100007">
+		<environment feature="FameChallengeDungeon" npcAttackGroup="1" npcDefenseGroup="2" minimap="0" defenceMaterial="3" hitImmune="99" abnormalImmune="99" level="50" rankIcon="c" propertyTags="no_die,keep_battle,battle_on_spawn" raceString="machine" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/21800910_M_CannonWeaponNormal_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" customExp="0" lookAtMyPCWhenTalking="0">
+			<model kfm="21800910_M_CannonWeaponNormal" shadowScale="200" />
+			<stat hp="22193" asp="100" msp="100" atp="80" evp="82" cap="62" cad="500" car="50" ndd="567" pap="1077877" map="1078011" par="90" mar="90" />
+			<distance avoid="50" sight="3500" sightHeightUP="300" sightHeightDown="1500" customLastSightRadius="3500" customLastSightHeightUp="300" customLastSightHeightDown="1500" />
+			<skill ids="42020101" levels="1" probs="100" />
+			<collision shape="box" width="100" height="130" depth="100" heightOffset="1000" />
+			<capsule radius="75" height="160" />
+			<dead time="2" defaultaction="Dead_A" upaction="Dead_A" />
+			<push back="1" up="1" knockback="1" />
+			<normal action="Idle_A" prob="10000" />
+			<dropiteminfo dropHeight="150" dropDistanceBase="140" dropDistanceRandom="10" globalDropBoxId="74" />
+			<aiInfo path="AI_Cannon_FR_Lv1.xml" />
+		</environment>
+	</npc>
+	<npc id="24100101">
+		<environment feature="FameChallengeDungeon" friendly="1" npcAttackGroup="1" npcDefenseGroup="2" minimap="0" defenceMaterial="1" hitImmune="99" abnormalImmune="99" level="50" class="6" rankIcon="a" carePathToEnemy="1" propertyTags="no_die" raceString="combine" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/11003536_F_Neirin_P.png" damagedVibrateDuration="0.5" damagedVibrateAmp="1" customExp="0" lookAtMyPCWhenTalking="0">
+			<model kfm="11003536_F_Neirin" shadowScale="200" rotationSpeed="720" />
+			<stat hp="34238407" asp="100" msp="100" atp="120" evp="87" cap="62" cad="500" car="50" ndd="567" pap="284498" map="284587" par="105" mar="105" />
+			<distance avoid="140" sightHeightUP="0" sightHeightDown="0" />
+			<collision shape="box" width="80" height="150" depth="90" depthOffset="15" />
+			<capsule radius="70" height="150" />
+			<dead time="10" defaultaction="Dead_A" upaction="Dead_A" />
+			<normal action="Idle_A" prob="10000" />
+			<dropiteminfo globalDeadDropBoxId="1011" />
+		</environment>
+	</npc>
+	<npc id="24100102">
+		<environment feature="FameChallengeDungeon" npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="boss" nametag="1" hpBar="1" defenceMaterial="1" hitImmune="99" abnormalImmune="99" level="60" class="6" rankIcon="a" raceString="devil" gender="0" portrait="./Data/Resource/Image/Portrait/Mob/21000998_M_BalrogSoldierSpear_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" customExp="0" lookAtMyPCWhenTalking="0">
+			<model kfm="21000998_M_BalrogSoldierSpear" scale="1.5" shadowScale="80" rotationSpeed="720" walkSpeed="225" runSpeed="450" />
+			<stat hp="37259826" asp="100" msp="100" atp="120" evp="97" cap="67" cad="500" car="60" ndd="799" pap="221529" map="221529" par="105" mar="105" />
+			<distance avoid="100" sight="2000" sightHeightUP="150" sightHeightDown="150" customLastSightRadius="3500" customLastSightHeightUp="300" customLastSightHeightDown="300" />
+			<skill ids="42000101" levels="1" probs="100" />
+			<collision shape="box" width="72.7273" height="100" depth="72.7273" />
+			<capsule radius="60" height="150" />
+			<dead time="3" defaultaction="Dead_A" upaction="Dead_A" />
+			<push knockback="1" />
+			<normal action="Idle_A" prob="10000" />
+			<dropiteminfo globalDropBoxId="74" globalDeadDropBoxId="1011" />
+			<aiInfo path="AI_BalrogSoldierSpear_FR_Lv2.xml" />
+		</environment>
+	</npc>
+	<npc id="24100103">
+		<environment feature="FameChallengeDungeon" npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="boss" nametag="1" hpBar="1" defenceMaterial="1" hitImmune="99" abnormalImmune="99" level="60" class="6" rankIcon="a" raceString="devil" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/22000113_N_BalrogCrimson_P.png" damagedVibrateDuration="0.5" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" customExp="0" lookAtMyPCWhenTalking="0">
+			<model kfm="22000113_N_BalrogCrimson" shadowScale="380" rotationSpeed="720" walkSpeed="175" runSpeed="350" />
+			<stat hp="37259826" asp="100" msp="100" atp="120" evp="97" cap="67" cad="500" car="60" ndd="799" pap="221529" map="221529" par="105" mar="105" />
+			<distance avoid="140" sight="2000" sightHeightUP="150" sightHeightDown="150" customLastSightRadius="3500" customLastSightHeightUp="300" customLastSightHeightDown="300" />
+			<skill ids="42010101" levels="1" probs="100" />
+			<collision shape="box" width="90" height="130" depth="90" />
+			<capsule radius="110" height="150" />
+			<dead time="2.9" defaultaction="Dead_01_A" upaction="Dead_01_A" />
+			<normal action="Idle_A,Bore_A" prob="4500,1500" movearea="450" />
+			<dropiteminfo globalDropBoxId="74" globalDeadDropBoxId="1011" />
+			<aiInfo path="AI_BalrogCrimson_FR_Lv2.xml" />
+		</environment>
+	</npc>
+	<npc id="24100104">
+		<environment feature="FameChallengeDungeon" npcAttackGroup="1" npcDefenseGroup="2" nametag="1" minimap="0" hpBar="1" defenceMaterial="1" hitImmune="1" abnormalImmune="1" level="60" rankIcon="c" carePathToEnemy="1" raceString="devil" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/21000304_M_DevilBatTridentPurple_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" customExp="0" lookAtMyPCWhenTalking="0">
+			<model kfm="21000304_M_DevilBatTridentPurple" shadowScale="130" rotationSpeed="720" walkSpeed="170" runSpeed="340" />
+			<stat hp="27270" asp="100" msp="100" atp="80" evp="92" cap="67" cad="500" car="60" ndd="799" pap="50114" map="50129" />
+			<distance avoid="60" sight="400" sightHeightUP="300" sightHeightDown="0" />
+			<skill ids="40325001,40325011" levels="1,1" probs="80,20" />
+			<collision shape="box" width="85" height="110" depth="130" />
+			<capsule radius="60" height="150" />
+			<dead time="5" defaultaction="Dead_A,Dead_B" upaction="Dead_B" />
+			<push back="1" up="1" knockback="1" />
+			<normal action="Idle_A,Bore_A,Walk_A" prob="4500,1500,4000" movearea="150" />
+			<dropiteminfo dropHeight="50" dropDistanceBase="100" dropDistanceRandom="50" globalDropBoxId="1,10010" />
+		</environment>
+	</npc>
+	<npc id="24110001">
+		<environment feature="FameChallengeDungeon" npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="boss" nametag="1" hpBar="1" defenceMaterial="1" hitImmune="99" abnormalImmune="90" level="50" class="6" rankIcon="a" carePathToEnemy="1" propertyTags="battle_on_spawn,keep_battle" raceString="combine" gender="0" portrait="./Data/Resource/Image/Portrait/Mob/11003534_M_Conder_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" customExp="0" lookAtMyPCWhenTalking="0">
+			<model kfm="11003534_M_Conder" scale="1.2" shadowScale="180" rotationSpeed="720" walkSpeed="220" runSpeed="450" />
+			<stat hp="34370005" asp="100" msp="100" atp="120" evp="95" cap="62" cad="250" car="90" ndd="1377" pap="1287811" map="1287811" par="90" mar="90" />
+			<distance avoid="100" sight="25500" sightHeightUP="8200" sightHeightDown="8200" customLastSightRadius="28500" customLastSightHeightUp="8525" customLastSightHeightDown="8525" />
+			<skill ids="50101006" levels="1" probs="1000" />
+			<additionalEffect codes="50004400" levels="1" />
+			<collision shape="box" width="100" height="160" depth="100" />
+			<capsule radius="40" height="150" />
+			<dead time="10" defaultaction="Dead_A" upaction="Dead_A" />
+			<push back="1" up="1" knockback="1" />
+			<normal action="Idle_A,Bore_A,Walk_A" prob="4500,1000,4500" />
+			<dropiteminfo globalDropBoxId="74" />
+			<aiInfo path="AI_Conder_FR_Lv1.xml" />
+			<effectdummy>
+				<dummy name="Eff_Head">
+					<attachInfo parentNode="Bip01 Head" />
+					<transform translate="30,10,0" />
+				</dummy>
+				<dummy name="Eff_Body">
+					<attachInfo parentNode="Bip01 Spine" />
+				</dummy>
+				<dummy name="Eff_Foot">
+					<attachInfo parentNode="Bip01" />
+				</dummy>
+				<dummy name="Eff_UI">
+					<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,0,250" />
+				</dummy>
+				<dummy name="Eff_Head_World">
+					<attachInfo parentNode="Bip01 Head" applyWorldTransform="true" applyLocalScale="false" />
+					<transform translate="0,-20,30" />
+				</dummy>
+				<dummy name="Eff_Body_World">
+					<attachInfo parentNode="Bip01 Spine" applyWorldTransform="true" applyLocalScale="false" />
+				</dummy>
+				<dummy name="Eff_Foot_World">
+					<attachInfo parentNode="Bip01" applyWorldTransform="true" applyLocalScale="false" />
+				</dummy>
+			</effectdummy>
+		</environment>
+	</npc>
+	<npc id="24110002">
+		<environment feature="FameChallengeDungeon" npcAttackGroup="1" npcDefenseGroup="2" nametag="1" hpBar="1" defenceMaterial="1" hitImmune="1" abnormalImmune="1" level="50" rankIcon="c" carePathToEnemy="1" raceString="combine" gender="0" portrait="./Data/Resource/Image/Portrait/Mob/02010113_MapleGuard_Crossbow_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" customExp="0" lookAtMyPCWhenTalking="0">
+			<model kfm="02010113_MapleGuard_Crossbow" shadowScale="150" rotationSpeed="720" walkSpeed="125" runSpeed="250" />
+			<stat hp="22193" asp="100" msp="100" atp="80" evp="82" cap="62" cad="500" car="50" ndd="567" pap="28574" map="28583" par="90" mar="90" />
+			<distance avoid="100" sight="9900" sightHeightUP="300" sightHeightDown="300" customLastSightRadius="9900" customLastSightHeightUp="600" customLastSightHeightDown="150" />
+			<skill ids="50000222,50000223" levels="1,1" probs="70,30" />
+			<collision shape="box" width="80" height="110" depth="80" />
+			<capsule radius="30" height="150" />
+			<dead time="2" defaultaction="Dead_A,Dead_B" upaction="Dead_B" />
+			<push back="1" up="1" knockback="1" />
+			<normal action="Idle_A" prob="4500" />
+			<dropiteminfo globalDropBoxId="1,10008" />
+			<aiInfo path="AI_GuardCrossbow.xml" />
+		</environment>
+	</npc>
+	<npc id="24110003">
+		<environment feature="FameChallengeDungeon" npcAttackGroup="1" npcDefenseGroup="2" nametag="1" hpBar="1" defenceMaterial="1" hitImmune="1" abnormalImmune="1" level="50" rankIcon="c" carePathToEnemy="1" raceString="combine" gender="0" portrait="./Data/Resource/Image/Portrait/Mob/02010112_MapleGuard_Spear_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" customExp="0" lookAtMyPCWhenTalking="0">
+			<model kfm="02010112_MapleGuard_Spear" scale="1.1" shadowScale="150" rotationSpeed="720" walkSpeed="125" runSpeed="250" />
+			<stat hp="22193" asp="100" msp="100" atp="80" evp="82" cap="62" cad="500" car="50" ndd="567" pap="28574" map="28583" par="90" mar="90" />
+			<distance avoid="100" sight="9900" sightHeightUP="300" sightHeightDown="300" customLastSightRadius="9900" customLastSightHeightUp="600" customLastSightHeightDown="150" />
+			<skill ids="50000220,50000221" levels="1,1" probs="70,30" />
+			<collision shape="box" width="100" height="150" depth="100" />
+			<capsule radius="30" height="150" />
+			<dead time="2" defaultaction="Dead_A,Dead_B" upaction="Dead_B" />
+			<push back="1" up="1" knockback="1" />
+			<normal action="Idle_A" prob="4500" />
+			<dropiteminfo globalDropBoxId="1,10008" />
+			<aiInfo path="AI_GuardSpear.xml" />
+		</environment>
+	</npc>
+	<npc id="24110004">
+		<environment feature="FameChallengeDungeon" npcAttackGroup="1" npcDefenseGroup="2" nametag="1" hpBar="1" defenceMaterial="1" hitImmune="1" abnormalImmune="1" level="50" rankIcon="c" raceString="combine" gender="0" portrait="./Data/Resource/Image/Portrait/Mob/02010104_MapleGuard_Sword_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" customExp="0" lookAtMyPCWhenTalking="0">
+			<model kfm="02010104_MapleGuard_Sword" shadowScale="150" rotationSpeed="720" walkSpeed="265" runSpeed="530" />
+			<stat hp="22193" asp="100" msp="100" atp="80" evp="82" cap="62" cad="500" car="50" ndd="567" pap="28574" map="28583" par="90" mar="90" />
+			<distance avoid="100" sight="3600" sightHeightUP="999" sightHeightDown="999" customLastSightRadius="9999" customLastSightHeightUp="999" customLastSightHeightDown="999" />
+			<skill ids="50000218,50000219" levels="1,1" probs="70,30" />
+			<collision shape="box" width="80" height="110" depth="80" />
+			<capsule radius="60" height="150" />
+			<dead time="2" defaultaction="Dead_A,Dead_B" upaction="Dead_B" />
+			<push back="1" up="1" knockback="1" />
+			<normal action="Idle_A,Bore_A,Walk_A" prob="4100,900,5000" movearea="150" />
+			<dropiteminfo globalDropBoxId="1,10008" />
+			<aiInfo path="BossDungeon/BaphometHuman02/AI_MapleGuardSword_TypeA.xml" />
+		</environment>
+	</npc>
+	<npc id="24110005">
+		<environment feature="FameChallengeDungeon" friendly="1" npcAttackGroup="1" npcDefenseGroup="2" nametag="1" hpBar="1" defenceMaterial="1" hitImmune="99" abnormalImmune="99" level="50" class="6" rankIcon="a" carePathToEnemy="1" propertyTags="battle_on_spawn,keep_battle" raceString="combine" gender="0" portrait="./Data/Resource/Image/Portrait/Mob/11003534_M_Conder_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" customExp="0" lookAtMyPCWhenTalking="0">
+			<model kfm="11003534_M_Conder" scale="1.2" shadowScale="180" rotationSpeed="720" walkSpeed="220" runSpeed="450" />
+			<stat hp="34238407" asp="100" msp="100" atp="120" evp="88" cap="62" cad="500" car="50" ndd="567" pap="284498" map="284587" par="90" mar="90" />
+			<distance avoid="100" sightHeightUP="0" sightHeightDown="0" />
+			<skill ids="50101006" levels="1" probs="1000" />
+			<collision shape="box" width="100" height="160" depth="100" />
+			<capsule radius="40" height="150" />
+			<dead time="10" defaultaction="Dead_A" upaction="Dead_A" />
+			<push back="1" up="1" knockback="1" />
+			<normal action="Idle_B,Bore_A,Walk_A" prob="4500,1000,4500" />
+		</environment>
+	</npc>
+	<npc id="24110011">
+		<environment feature="FameChallengeDungeon" npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="boss" nametag="1" hpBar="1" defenceMaterial="1" hitImmune="1" abnormalImmune="1" level="50" class="6" rankIcon="a" carePathToEnemy="1" raceString="combine" gender="0" portrait="./Data/Resource/Image/Portrait/Mob/11003534_M_Conder_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" customExp="0" lookAtMyPCWhenTalking="0">
+			<model kfm="11003534_M_Conder" scale="1.2" shadowScale="180" rotationSpeed="720" walkSpeed="220" runSpeed="450" />
+			<stat hp="34238407" asp="100" msp="100" atp="120" evp="88" cap="62" cad="500" car="50" ndd="567" pap="284498" map="284587" par="90" mar="90" />
+			<distance avoid="100" sight="25500" sightHeightUP="8200" sightHeightDown="8200" customLastSightRadius="28500" customLastSightHeightUp="8525" customLastSightHeightDown="8525" />
+			<skill ids="50101006" levels="1" probs="1000" />
+			<additionalEffect codes="50004400" levels="1" />
+			<collision shape="box" width="100" height="160" depth="100" />
+			<capsule radius="40" height="150" />
+			<dead time="2" defaultaction="Dead_A" upaction="Dead_A" />
+			<push back="1" up="1" knockback="1" />
+			<normal action="Idle_A,Bore_A,Walk_A" prob="4500,1000,4500" />
+			<dropiteminfo globalDropBoxId="74" />
+			<aiInfo path="AI_Conder_FR_Lv2.xml" />
+		</environment>
+	</npc>
+	<npc id="24110012">
+		<environment feature="FameChallengeDungeon" npcAttackGroup="1" npcDefenseGroup="2" nametag="1" hpBar="1" defenceMaterial="1" hitImmune="1" abnormalImmune="1" level="50" rankIcon="c" carePathToEnemy="1" raceString="combine" gender="0" portrait="./Data/Resource/Image/Portrait/Mob/02010113_MapleGuard_Crossbow_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" customExp="0" lookAtMyPCWhenTalking="0">
+			<model kfm="02010113_MapleGuard_Crossbow" shadowScale="150" rotationSpeed="720" walkSpeed="125" runSpeed="250" />
+			<stat hp="22193" asp="100" msp="100" atp="80" evp="82" cap="62" cad="500" car="50" ndd="567" pap="28574" map="28583" par="90" mar="90" />
+			<distance avoid="100" sight="9900" sightHeightUP="300" sightHeightDown="300" customLastSightRadius="9900" customLastSightHeightUp="600" customLastSightHeightDown="150" />
+			<skill ids="50000222,50000223" levels="1,1" probs="70,30" />
+			<collision shape="box" width="80" height="110" depth="80" />
+			<capsule radius="30" height="150" />
+			<dead time="2" defaultaction="Dead_A,Dead_B" upaction="Dead_B" />
+			<push back="1" up="1" knockback="1" />
+			<normal action="Idle_A" prob="4500" />
+			<dropiteminfo globalDropBoxId="1,10008" />
+			<aiInfo path="AI_GuardCrossbow.xml" />
+		</environment>
+	</npc>
+	<npc id="24110013">
+		<environment feature="FameChallengeDungeon" npcAttackGroup="1" npcDefenseGroup="2" nametag="1" hpBar="1" defenceMaterial="1" hitImmune="1" abnormalImmune="1" level="50" rankIcon="c" carePathToEnemy="1" raceString="combine" gender="0" portrait="./Data/Resource/Image/Portrait/Mob/02010112_MapleGuard_Spear_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" customExp="0" lookAtMyPCWhenTalking="0">
+			<model kfm="02010112_MapleGuard_Spear" scale="1.1" shadowScale="150" rotationSpeed="720" walkSpeed="125" runSpeed="250" />
+			<stat hp="22193" asp="100" msp="100" atp="80" evp="82" cap="62" cad="500" car="50" ndd="567" pap="28574" map="28583" par="90" mar="90" />
+			<distance avoid="100" sight="9900" sightHeightUP="300" sightHeightDown="300" customLastSightRadius="9900" customLastSightHeightUp="600" customLastSightHeightDown="150" />
+			<skill ids="50000220,50000221" levels="1,1" probs="70,30" />
+			<collision shape="box" width="100" height="150" depth="100" />
+			<capsule radius="30" height="150" />
+			<dead time="2" defaultaction="Dead_A,Dead_B" upaction="Dead_B" />
+			<push back="1" up="1" knockback="1" />
+			<normal action="Idle_A" prob="4500" />
+			<dropiteminfo globalDropBoxId="1,10008" />
+			<aiInfo path="AI_GuardSpear.xml" />
+		</environment>
+	</npc>
+	<npc id="24110014">
+		<environment feature="FameChallengeDungeon" npcAttackGroup="1" npcDefenseGroup="2" nametag="1" hpBar="1" defenceMaterial="1" hitImmune="1" abnormalImmune="1" level="50" rankIcon="c" raceString="combine" gender="0" portrait="./Data/Resource/Image/Portrait/Mob/02010104_MapleGuard_Sword_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" customExp="0" lookAtMyPCWhenTalking="0">
+			<model kfm="02010104_MapleGuard_Sword" shadowScale="150" rotationSpeed="720" walkSpeed="265" runSpeed="530" />
+			<stat hp="22193" asp="100" msp="100" atp="80" evp="82" cap="62" cad="500" car="50" ndd="567" pap="28574" map="28583" par="90" mar="90" />
+			<distance avoid="100" sight="3600" sightHeightUP="999" sightHeightDown="999" customLastSightRadius="9999" customLastSightHeightUp="999" customLastSightHeightDown="999" />
+			<skill ids="50000218,50000219" levels="1,1" probs="70,30" />
+			<collision shape="box" width="80" height="110" depth="80" />
+			<capsule radius="60" height="150" />
+			<dead time="2" defaultaction="Dead_A,Dead_B" upaction="Dead_B" />
+			<push back="1" up="1" knockback="1" />
+			<normal action="Idle_A,Bore_A,Walk_A" prob="4100,900,5000" movearea="150" />
+			<dropiteminfo globalDropBoxId="1,10008" />
+			<aiInfo path="BossDungeon/BaphometHuman02/AI_MapleGuardSword_TypeA.xml" />
+		</environment>
+	</npc>
+	<npc id="24120001">
+		<environment feature="FameChallengeDungeon" npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="boss" nametag="1" hpBar="1" defenceMaterial="1" hitImmune="99" abnormalImmune="90" level="50" class="6" rankIcon="a" carePathToEnemy="1" propertyTags="battle_on_spawn,keep_battle" raceString="combine" gender="0" portrait="./Data/Resource/Image/Portrait/Mob/11003537_M_Mason_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" customExp="0" lookAtMyPCWhenTalking="0">
+			<model kfm="11003537_M_Mason" scale="1.2" shadowScale="180" rotationSpeed="720" walkSpeed="225" runSpeed="450" />
+			<stat hp="32759872" asp="100" msp="100" atp="120" evp="107" cap="62" cad="250" car="90" ndd="1377" pap="1126835" map="1126835" par="90" mar="90" />
+			<distance avoid="100" sight="25500" sightHeightUP="8200" sightHeightDown="8200" customLastSightRadius="28500" customLastSightHeightUp="8525" customLastSightHeightDown="8525" />
+			<skill ids="50101008" levels="1" probs="1000" />
+			<additionalEffect codes="50004400" levels="1" />
+			<collision shape="box" width="100" height="160" depth="100" />
+			<capsule radius="40" height="150" />
+			<dead time="10" defaultaction="Dead_A" upaction="Dead_A" />
+			<push back="1" up="1" knockback="1" />
+			<normal action="Idle_A,Bore_A,Walk_A" prob="4100,900,5000" />
+			<dropiteminfo globalDropBoxId="74" />
+			<aiInfo path="AI_Mason_FR_Lv1.xml" />
+		</environment>
+	</npc>
+	<npc id="24120002">
+		<environment feature="FameChallengeDungeon" npcAttackGroup="1" npcDefenseGroup="2" nametag="1" hpBar="1" defenceMaterial="1" hitImmune="1" abnormalImmune="1" level="50" rankIcon="c" carePathToEnemy="1" propertyTags="keep_battle" raceString="combine" gender="0" portrait="./Data/Resource/Image/Portrait/Mob/11001520_M_ExpeditionSoldier1_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" customExp="0" lookAtMyPCWhenTalking="0">
+			<model kfm="11001520_M_ExpeditionSoldier1" shadowScale="150" rotationSpeed="720" walkSpeed="125" runSpeed="250" />
+			<stat hp="393371" asp="100" msp="100" atp="80" evp="82" cap="62" cad="250" car="50" ndd="839" pap="71857" map="71866" par="90" mar="90" />
+			<distance avoid="100" sight="9900" sightHeightUP="300" sightHeightDown="300" customLastSightRadius="9900" customLastSightHeightUp="600" customLastSightHeightDown="150" />
+			<skill ids="60200021,60200022" levels="1,1" probs="70,30" />
+			<additionalEffect codes="70001001" levels="1" />
+			<collision shape="box" width="100" height="150" depth="100" />
+			<capsule radius="30" height="150" />
+			<dead time="2" defaultaction="Dead_A" upaction="Dead_B" />
+			<push back="1" up="1" knockback="1" />
+			<normal action="Idle_A" prob="4500" />
+			<dropiteminfo globalDropBoxId="74" />
+		</environment>
+	</npc>
+	<npc id="24120003">
+		<environment feature="FameChallengeDungeon" npcAttackGroup="1" npcDefenseGroup="2" nametag="1" hpBar="1" defenceMaterial="1" hitImmune="1" abnormalImmune="1" level="50" rankIcon="c" raceString="combine" gender="0" portrait="./Data/Resource/Image/Portrait/Mob/02010104_MapleGuard_Sword_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" customExp="0" lookAtMyPCWhenTalking="0">
+			<model kfm="02010104_MapleGuard_Sword" shadowScale="150" rotationSpeed="720" walkSpeed="265" runSpeed="530" />
+			<stat hp="393371" asp="100" msp="100" atp="80" evp="82" cap="62" cad="250" car="50" ndd="839" pap="71857" map="71866" par="90" mar="90" />
+			<distance avoid="100" sight="3600" sightHeightUP="999" sightHeightDown="999" customLastSightRadius="9999" customLastSightHeightUp="999" customLastSightHeightDown="999" />
+			<skill ids="50000218,50000219" levels="1,1" probs="70,30" />
+			<collision shape="box" width="80" height="110" depth="80" />
+			<capsule radius="60" height="150" />
+			<dead time="2" defaultaction="Dead_A,Dead_B" upaction="Dead_B" />
+			<push back="1" up="1" knockback="1" />
+			<normal action="Idle_A,Bore_A,Walk_A" prob="4100,900,5000" movearea="150" />
+			<dropiteminfo globalDropBoxId="74" />
+			<aiInfo path="BossDungeon/BaphometHuman02/AI_MapleGuardSword_TypeA.xml" />
+		</environment>
+	</npc>
+	<npc id="24120004">
+		<environment feature="FameChallengeDungeon" npcAttackGroup="1" npcDefenseGroup="2" nametag="1" minimap="0" hpBar="1" defenceMaterial="1" hitImmune="1" abnormalImmune="1" level="50" rankIcon="c" carePathToEnemy="1" raceString="unknown" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/Dummy_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" customExp="0" lookAtMyPCWhenTalking="0">
+			<model kfm="24120004_M_LightCircle" />
+			<stat hp="22193" asp="100" msp="100" atp="80" evp="82" cap="62" cad="500" car="50" ndd="567" pap="28574" map="28583" par="90" mar="90" />
+			<distance avoid="300" sight="10000" sightHeightUP="1000" sightHeightDown="0" customLastSightRadius="10000" customLastSightHeightUp="1000" customLastSightHeightDown="1000" />
+			<collision shape="box" width="150" height="150" depth="150" />
+			<capsule radius="75" height="150" ignore="1" />
+			<dead time="5" defaultaction="Dead_A" upaction="Dead_A" />
+			<normal action="Attack_Idle_A" prob="10000" movearea="200" />
+			<dropiteminfo globalDropBoxId="74" />
+			<aiInfo path="AI_Mason_FR_Lv1_Summon_1.xml" />
+		</environment>
+	</npc>
+	<npc id="24120005">
+		<environment feature="FameChallengeDungeon" npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="boss" nametag="1" hpBar="1" defenceMaterial="1" hitImmune="99" abnormalImmune="99" level="50" class="6" rankIcon="a" carePathToEnemy="1" propertyTags="no_die" raceString="combine" gender="0" portrait="./Data/Resource/Image/Portrait/Mob/11003537_M_Mason_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" customExp="0" lookAtMyPCWhenTalking="0">
+			<model kfm="11003537_M_Mason" scale="1.2" shadowScale="180" rotationSpeed="720" walkSpeed="225" runSpeed="450" />
+			<stat hp="32759872" asp="100" msp="100" atp="120" evp="107" cap="62" cad="250" car="50" ndd="1377" pap="804880" map="804880" par="90" mar="90" />
+			<distance avoid="100" sight="25500" sightHeightUP="8200" sightHeightDown="8200" customLastSightRadius="28500" customLastSightHeightUp="8525" customLastSightHeightDown="8525" />
+			<skill ids="50101008" levels="1" probs="1000" />
+			<additionalEffect codes="69000401" levels="1" />
+			<collision shape="box" width="100" height="160" depth="100" />
+			<capsule radius="40" height="150" />
+			<dead time="10" defaultaction="Dead_A" upaction="Dead_A" />
+			<push back="1" up="1" knockback="1" />
+			<normal action="Idle_A,Bore_A,Walk_A" prob="4100,900,5000" />
+			<dropiteminfo globalDropBoxId="74" />
+			<aiInfo path="AI_Mason_FR_Lv1_Summon_2.xml" />
+		</environment>
+	</npc>
+	<npc id="24120006">
+		<environment feature="FameChallengeDungeon" friendly="1" npcAttackGroup="1" npcDefenseGroup="2" nametag="1" hpBar="1" defenceMaterial="1" hitImmune="99" abnormalImmune="99" level="50" class="6" rankIcon="a" carePathToEnemy="1" propertyTags="no_die" raceString="combine" gender="0" portrait="./Data/Resource/Image/Portrait/Mob/11003537_M_Mason_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" customExp="0" lookAtMyPCWhenTalking="0">
+			<model kfm="11003537_M_Mason" scale="1.2" shadowScale="180" rotationSpeed="720" walkSpeed="225" runSpeed="450" />
+			<stat hp="34238407" asp="100" msp="100" atp="120" evp="88" cap="62" cad="500" car="50" ndd="567" pap="284498" map="284587" par="90" mar="90" />
+			<distance avoid="100" sightHeightUP="0" sightHeightDown="0" />
+			<skill ids="50101008" levels="1" probs="1000" />
+			<collision shape="box" width="100" height="160" depth="100" />
+			<capsule radius="40" height="150" />
+			<dead time="10" defaultaction="Dead_A" upaction="Dead_A" />
+			<push back="1" up="1" knockback="1" />
+			<normal action="Idle_B,Bore_A,Walk_A" prob="4100,900,5000" />
+		</environment>
+	</npc>
+	<npc id="24120011">
+		<environment feature="FameChallengeDungeon" npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="boss" nametag="1" hpBar="1" defenceMaterial="1" hitImmune="1" abnormalImmune="1" level="50" class="6" rankIcon="a" carePathToEnemy="1" propertyTags="battle_on_spawn,keep_battle" raceString="combine" gender="0" portrait="./Data/Resource/Image/Portrait/Mob/11003537_M_Mason_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" customExp="0" lookAtMyPCWhenTalking="0">
+			<model kfm="11003537_M_Mason" scale="1.2" shadowScale="180" rotationSpeed="720" walkSpeed="225" runSpeed="450" />
+			<stat hp="34238407" asp="100" msp="100" atp="120" evp="88" cap="62" cad="500" car="50" ndd="567" pap="284498" map="284587" par="90" mar="90" />
+			<distance avoid="100" sight="25500" sightHeightUP="8200" sightHeightDown="8200" customLastSightRadius="28500" customLastSightHeightUp="8525" customLastSightHeightDown="8525" />
+			<skill ids="50101008" levels="1" probs="1000" />
+			<additionalEffect codes="50004400" levels="1" />
+			<collision shape="box" width="100" height="160" depth="100" />
+			<capsule radius="40" height="150" />
+			<dead time="2" defaultaction="Dead_A" upaction="Dead_A" />
+			<push back="1" up="1" knockback="1" />
+			<normal action="Idle_A,Bore_A,Walk_A" prob="4100,900,5000" />
+			<dropiteminfo globalDropBoxId="6" />
+			<aiInfo path="AI_Mason_FR_Lv1.xml" />
+		</environment>
+	</npc>
+	<npc id="24120012">
+		<environment feature="FameChallengeDungeon" npcAttackGroup="1" npcDefenseGroup="2" nametag="1" hpBar="1" defenceMaterial="1" hitImmune="1" abnormalImmune="1" level="50" rankIcon="c" carePathToEnemy="1" raceString="combine" gender="0" portrait="./Data/Resource/Image/Portrait/Mob/02010112_MapleGuard_Spear_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" customExp="0" lookAtMyPCWhenTalking="0">
+			<model kfm="02010112_MapleGuard_Spear" scale="1.1" shadowScale="150" rotationSpeed="720" walkSpeed="125" runSpeed="250" />
+			<stat hp="22193" asp="100" msp="100" atp="80" evp="82" cap="62" cad="500" car="50" ndd="567" pap="28574" map="28583" par="90" mar="90" />
+			<distance avoid="100" sight="9900" sightHeightUP="300" sightHeightDown="300" customLastSightRadius="9900" customLastSightHeightUp="600" customLastSightHeightDown="150" />
+			<skill ids="50000220,50000221" levels="1,1" probs="70,30" />
+			<collision shape="box" width="100" height="150" depth="100" />
+			<capsule radius="30" height="150" />
+			<dead time="2" defaultaction="Dead_A,Dead_B" upaction="Dead_B" />
+			<push back="1" up="1" knockback="1" />
+			<normal action="Idle_A" prob="4500" />
+			<dropiteminfo globalDropBoxId="1,10008" />
+			<aiInfo path="AI_GuardSpear.xml" />
+		</environment>
+	</npc>
+	<npc id="24120013">
+		<environment feature="FameChallengeDungeon" npcAttackGroup="1" npcDefenseGroup="2" nametag="1" hpBar="1" defenceMaterial="1" hitImmune="1" abnormalImmune="1" level="50" rankIcon="c" raceString="combine" gender="0" portrait="./Data/Resource/Image/Portrait/Mob/02010104_MapleGuard_Sword_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" customExp="0" lookAtMyPCWhenTalking="0">
+			<model kfm="02010104_MapleGuard_Sword" shadowScale="150" rotationSpeed="720" walkSpeed="265" runSpeed="530" />
+			<stat hp="22193" asp="100" msp="100" atp="80" evp="82" cap="62" cad="500" car="50" ndd="567" pap="28574" map="28583" par="90" mar="90" />
+			<distance avoid="100" sight="3600" sightHeightUP="999" sightHeightDown="999" customLastSightRadius="9999" customLastSightHeightUp="999" customLastSightHeightDown="999" />
+			<skill ids="50000218,50000219" levels="1,1" probs="70,30" />
+			<collision shape="box" width="80" height="110" depth="80" />
+			<capsule radius="60" height="150" />
+			<dead time="2" defaultaction="Dead_A,Dead_B" upaction="Dead_B" />
+			<push back="1" up="1" knockback="1" />
+			<normal action="Idle_A,Bore_A,Walk_A" prob="4100,900,5000" movearea="150" />
+			<dropiteminfo globalDropBoxId="1,10008" />
+			<aiInfo path="BossDungeon/BaphometHuman02/AI_MapleGuardSword_TypeA.xml" />
+		</environment>
+	</npc>
+</ms2>

@@ -3,7 +3,7 @@
 <ms2>
 	<environment feature="Develop" locale="">
 		<model kfm="22000104_N_BabyLionRed" scale="1.85" />
-		<basic npcAttackGroup="1" npcDefenseGroup="2" nametag="1" nametagSize="18" minimap="0" hpBar="1" defenceMaterial="1" hitImmune="1" abnormalImmune="1" level="50" rankIcon="c" carePathToEnemy="1" difficulty="50" raceString="animal" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/22000104_N_BabyLionRed_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" skipFrame="1" />
+		<basic npcAttackGroup="1" npcDefenseGroup="2" nametag="1" nametagSize="18" minimap="0" hpBar="1" defenceMaterial="1" hitImmune="1" abnormalImmune="1" level="50" rankIcon="c" carePathToEnemy="1" raceString="animal" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/22000104_N_BabyLionRed_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" />
 		<stat hp="22193" asp="100" msp="100" atp="80" evp="82" cap="62" cad="500" car="50" ndd="567" pap="28574" map="28583" par="90" mar="90" />
 		<speed rotation="720" walk="175" run="350" />
 		<distance avoid="100" sight="800" sightHeightUP="300" sightHeightDown="0" />
@@ -15,37 +15,37 @@
 		<shadow scale="200" bias="1" />
 		<normal action="Idle_A,Bore_A,Walk_A" prob="4500,1500,4000" movearea="150" maidExpired="Idle_A" />
 		<dropiteminfo dropHeight="50" dropDistanceBase="100" dropDistanceRandom="50" globalDropBoxId="1,10003" />
-		<lookattarget lookAtMyPCWhenTalking="0" useTalkMotion="1" />
+		<lookattarget lookAtMyPCWhenTalking="0" />
 		<aiInfo path="Test/AI_DefaultTest.xml" />
 	</environment>
 	<effectdummy>
 		<dummy name="Eff_Head">
-			<attachInfo parentNode="Bip01 Head" applyWorldTransform="false" applyLocalScale="true" />
-			<transform translate="20.000000, 0.000000, 0.000000" rotation="0.000000, 0.000000, 0.000000" scale="0.700000" />
+			<attachInfo parentNode="Bip01 Head" />
+			<transform translate="20,0,0" scale="0.7" />
 		</dummy>
 		<dummy name="Eff_Body">
-			<attachInfo parentNode="Bip01 Spine1" applyWorldTransform="false" applyLocalScale="true" />
-			<transform translate="5.000000, 0.000000, 0.000000" rotation="0.000000, 0.000000, 0.000000" scale="0.700000" />
+			<attachInfo parentNode="Bip01 Spine1" />
+			<transform translate="5,0,0" scale="0.7" />
 		</dummy>
 		<dummy name="Eff_Foot">
-			<attachInfo parentNode="Main_Point01" applyWorldTransform="false" applyLocalScale="true" />
-			<transform translate="0.000000, 0.000000, 25.000000" rotation="0.000000, 0.000000, 0.000000" scale="0.700000" />
+			<attachInfo parentNode="Main_Point01" />
+			<transform translate="0,0,25" scale="0.7" />
 		</dummy>
 		<dummy name="Eff_UI">
 			<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
-			<transform translate="0.000000, 0.000000, 220.000000" rotation="0.000000, 0.000000, 90.000000" scale="1.000000" />
+			<transform translate="0,0,220" rotation="0,0,90" />
 		</dummy>
 		<dummy name="Eff_Head_World">
 			<attachInfo parentNode="Bip01 Head" applyWorldTransform="true" applyLocalScale="false" />
-			<transform translate="0.000000, -10.000000, 30.000000" rotation="0.000000, 0.000000, 0.000000" scale="0.700000" />
+			<transform translate="0,-10,30" scale="0.7" />
 		</dummy>
 		<dummy name="Eff_Body_World">
 			<attachInfo parentNode="Bip01 Spine1" applyWorldTransform="true" applyLocalScale="false" />
-			<transform translate="0.000000, -10.000000, 0.000000" rotation="0.000000, 0.000000, 0.000000" scale="0.700000" />
+			<transform translate="0,-10,0" scale="0.7" />
 		</dummy>
 		<dummy name="Eff_Foot_World">
 			<attachInfo parentNode="Main_Point01" applyWorldTransform="true" applyLocalScale="false" />
-			<transform translate="0.000000, 0.000000, 50.000000" rotation="0.000000, 0.000000, 0.000000" scale="0.700000" />
+			<transform translate="0,0,50" scale="0.7" />
 		</dummy>
 	</effectdummy>
 </ms2>

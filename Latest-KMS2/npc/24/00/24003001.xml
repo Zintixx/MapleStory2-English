@@ -3,7 +3,7 @@
 <ms2>
 	<environment feature="PirateOcean" locale="">
 		<model kfm="21000208_M_Mermaid01" scale="1.75" />
-		<basic npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="boss" nametag="1" nametagSize="18" defenceMaterial="1" hitImmune="99" abnormalImmune="99" level="52" class="6" rankIcon="a" difficulty="52" propertyTags="keep_battle" raceString="mystic" gender="1" mainTags="None" portrait="./Data/Resource/Image/Portrait/Mob/21000208_M_Mermaid01_P.png" damagedColorScale="6" damagedVibrateDuration="0.9" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" skipFrame="1" />
+		<basic npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="boss" nametag="1" nametagSize="18" defenceMaterial="1" hitImmune="99" abnormalImmune="99" level="52" class="6" rankIcon="a" propertyTags="keep_battle" raceString="mystic" gender="1" portrait="./Data/Resource/Image/Portrait/Mob/21000208_M_Mermaid01_P.png" damagedColorScale="6" damagedVibrateDuration="0.9" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" />
 		<stat hp="672543" asp="100" msp="100" atp="120" evp="88" cap="63" cad="500" car="50" ndd="610" pap="255994" map="256074" par="90" mar="90" />
 		<speed rotation="720" walk="180" run="380" />
 		<distance avoid="150" sight="2000" sightHeightUP="300" sightHeightDown="150" customLastSightRadius="9000" customLastSightHeightUp="300" customLastSightHeightDown="150" />
@@ -15,38 +15,36 @@
 		<shadow scale="150" bias="1" />
 		<normal action="Idle_A,Bore_A,Walk_A" prob="6000,1000,3000" maidExpired="Idle_A" />
 		<dropiteminfo globalDropBoxId="74" />
-		<lookattarget lookAtMyPCWhenTalking="0" useTalkMotion="1" />
+		<lookattarget lookAtMyPCWhenTalking="0" />
 		<aiInfo path="AI_Siren_Trident.xml" />
 		<exp customExp="0" />
 	</environment>
 	<effectdummy>
 		<dummy name="Eff_Head">
-			<attachInfo parentNode="Bip01 Head" applyWorldTransform="false" applyLocalScale="true" />
-			<transform translate="15.000000, 5.000000, 0.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.000000" />
+			<attachInfo parentNode="Bip01 Head" />
+			<transform translate="15,5,0" />
 		</dummy>
 		<dummy name="Eff_Body">
-			<attachInfo parentNode="Bip01 Spine1" applyWorldTransform="false" applyLocalScale="true" />
-			<transform translate="-3.000000, 7.000000, 0.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.000000" />
+			<attachInfo parentNode="Bip01 Spine1" />
+			<transform translate="-3,7,0" />
 		</dummy>
 		<dummy name="Eff_Foot">
-			<attachInfo parentNode="Bone07" applyWorldTransform="false" applyLocalScale="true" />
-			<transform translate="0.000000, 0.000000, 0.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.000000" />
+			<attachInfo parentNode="Bone07" />
 		</dummy>
 		<dummy name="Eff_UI">
 			<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
-			<transform translate="0.000000, 0.000000, 380.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.000000" />
+			<transform translate="0,0,380" />
 		</dummy>
 		<dummy name="Eff_Head_World">
 			<attachInfo parentNode="Bip01 Head" applyWorldTransform="true" applyLocalScale="false" />
-			<transform translate="0.000000, -5.000000, 27.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.000000" />
+			<transform translate="0,-5,27" />
 		</dummy>
 		<dummy name="Eff_Body_World">
 			<attachInfo parentNode="Bip01 Spine1" applyWorldTransform="true" applyLocalScale="false" />
-			<transform translate="0.000000, -10.000000, -8.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.000000" />
+			<transform translate="0,-10,-8" />
 		</dummy>
 		<dummy name="Eff_Foot_World">
 			<attachInfo parentNode="Bip01" applyWorldTransform="true" applyLocalScale="false" />
-			<transform translate="0.000000, 0.000000, 0.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.000000" />
 		</dummy>
 	</effectdummy>
 </ms2>

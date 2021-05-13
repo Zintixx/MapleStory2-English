@@ -3,7 +3,7 @@
 <ms2>
 	<environment feature="Season3" locale="">
 		<model kfm="02020040_M_MushMing" scale="0.9" />
-		<basic npcAttackGroup="1" npcDefenseGroup="2" nametag="1" nametagSize="18" minimap="0" hpBar="1" defenceMaterial="5" hitImmune="1" abnormalImmune="1" level="52" rankIcon="c" carePathToEnemy="1" maxSpawnCount="2" groupSpawnCount="1" rareDegree="100" difficulty="52" raceString="plant" gender="2" mainTags="쉐도우봉인의숲일반" subTags="쉐도우" portrait="./Data/Resource/Image/Portrait/Mob/02020040_M_MushMing_P.png" damagedColorScale="4" damagedVibrateDuration="0.7" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" skipFrame="1" />
+		<basic npcAttackGroup="1" npcDefenseGroup="2" nametag="1" nametagSize="18" minimap="0" hpBar="1" defenceMaterial="5" hitImmune="1" abnormalImmune="1" level="52" rankIcon="c" carePathToEnemy="1" raceString="plant" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/02020040_M_MushMing_P.png" damagedColorScale="4" damagedVibrateDuration="0.7" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" />
 		<stat hp="278491" asp="100" msp="100" atp="80" evp="84" cap="63" cad="500" car="50" ndd="610" pap="425522" map="425654" par="90" mar="90" />
 		<speed rotation="720" walk="110" run="220" />
 		<distance avoid="90" sight="400" sightHeightUP="300" sightHeightDown="0" />
@@ -16,25 +16,7 @@
 		<shadow scale="220" bias="1" />
 		<normal action="Idle_A,Bore_A,Walk_A" prob="3000,2500,4500" movearea="150" maidExpired="Idle_A" />
 		<dropiteminfo dropHeight="100" dropDistanceBase="100" dropDistanceRandom="50" globalDropBoxId="5" />
-		<lookattarget lookAtMyPCWhenTalking="0" useTalkMotion="1" />
-		<aiInfo path="AI_DefaultNew.xml" />
-	</environment>
-	<environment feature="Season3" locale="CN">
-		<model kfm="02020040_M_MushMing" scale="0.9" />
-		<basic npcAttackGroup="1" npcDefenseGroup="2" nametag="1" nametagSize="18" minimap="0" hpBar="1" defenceMaterial="5" hitImmune="1" abnormalImmune="1" level="52" rankIcon="c" carePathToEnemy="1" maxSpawnCount="2" groupSpawnCount="1" rareDegree="100" difficulty="52" raceString="plant" gender="2" mainTags="쉐도우봉인의숲일반" subTags="쉐도우" portrait="./Data/Resource/Image/Portrait/Mob/02020040_M_MushMing_P.png" damagedColorScale="4" damagedVibrateDuration="0.7" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" skipFrame="1" />
-		<stat hp="278491" asp="100" msp="100" atp="80" evp="84" cap="63" cad="500" car="50" ndd="610" pap="425522" map="425654" par="90" mar="90" />
-		<speed rotation="720" walk="110" run="220" />
-		<distance avoid="90" sight="400" sightHeightUP="300" sightHeightDown="0" />
-		<skill ids="40011001,40011011,40011021" levels="1,1,1" priorities="1,1,1" probs="20,20,60" coolDown="8000" />
-		<additionalEffect codes="90000814" levels="1" />
-		<collision shape="box" width="110" height="130" depth="110" />
-		<capsule radius="85" height="170" />
-		<dead time="5" defaultaction="Dead_A" upaction="Dead_A" />
-		<push back="0.5" up="0.5" knockback="0.5" />
-		<shadow scale="220" bias="1" />
-		<normal action="Idle_A,Bore_A,Walk_A" prob="3000,2500,4500" movearea="150" maidExpired="Idle_A" />
-		<dropiteminfo dropHeight="100" dropDistanceBase="100" dropDistanceRandom="50" globalDropBoxId="5" />
-		<lookattarget lookAtMyPCWhenTalking="0" useTalkMotion="1" />
+		<lookattarget lookAtMyPCWhenTalking="0" />
 		<aiInfo path="AI_DefaultNew.xml" />
 	</environment>
 </ms2>

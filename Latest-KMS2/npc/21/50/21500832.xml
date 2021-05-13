@@ -3,7 +3,7 @@
 <ms2>
 	<environment feature="PinkBean01" locale="">
 		<model kfm="21000993_M_StatueAnimal01" scale="1.4" />
-		<basic npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="elite_boss" nametagSize="18" defenceMaterial="4" hitImmune="99" abnormalImmune="99" level="60" class="3" rankIcon="b" rotationDisabled="1" difficulty="60" propertyTags="keep_battle,fixed_big_monster,no_die" raceString="creature" gender="2" emotionID="21500652" mainTags="None" portrait="./Data/Resource/Image/Portrait/Mob/21000993_M_StatueAnimal01_P.png" damagedColorScale="6" damagedVibrateDuration="1" damagedVibrateAmp="1" />
+		<basic npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="elite_boss" nametagSize="18" defenceMaterial="4" hitImmune="99" abnormalImmune="99" level="60" class="3" rankIcon="b" rotationDisabled="1" propertyTags="keep_battle,fixed_big_monster,no_die" raceString="creature" gender="2" emotionID="21500652" portrait="./Data/Resource/Image/Portrait/Mob/21000993_M_StatueAnimal01_P.png" damagedColorScale="6" damagedVibrateDuration="1" damagedVibrateAmp="1" />
 		<stat hp="71846034" asp="100" msp="100" atp="90" evp="125" cap="67" cad="250" car="90" ndd="930" pap="7930544" map="7932057" par="225" mar="225" />
 		<distance avoid="150" sight="8000" sightHeightUP="8000" sightHeightDown="8000" customLastSightRadius="9900" customLastSightHeightUp="9900" customLastSightHeightDown="9900" />
 		<skill ids="50001226" levels="1" priorities="1" probs="100" />
@@ -14,38 +14,38 @@
 		<shadow scale="400" bias="1" />
 		<normal action="Idle_A" prob="10000" maidExpired="Idle_A" />
 		<dropiteminfo globalDropBoxId="74" />
-		<lookattarget lookAtMyPCWhenTalking="0" useTalkMotion="1" />
+		<lookattarget lookAtMyPCWhenTalking="0" />
 		<aiInfo path="BossDungeon/Pinkbean/Chaos/AI_StatueAnimal01_NoDie.xml" />
 		<exp customExp="0" />
 	</environment>
 	<effectdummy>
 		<dummy name="Eff_Head">
-			<attachInfo parentNode="Dummy01" applyWorldTransform="false" applyLocalScale="true" />
-			<transform translate="0.000000, -10.000000, 20.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.200000" />
+			<attachInfo parentNode="Dummy01" />
+			<transform translate="0,-10,20" scale="1.2" />
 		</dummy>
 		<dummy name="Eff_Body">
-			<attachInfo parentNode="Dummy02" applyWorldTransform="false" applyLocalScale="true" />
-			<transform translate="0.000000, 0.000000, 5.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.200000" />
+			<attachInfo parentNode="Dummy02" />
+			<transform translate="0,0,5" scale="1.2" />
 		</dummy>
 		<dummy name="Eff_Foot">
-			<attachInfo parentNode="Dummy_Main NonAccum" applyWorldTransform="false" applyLocalScale="true" />
-			<transform translate="0.000000, 0.000000, 0.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.200000" />
+			<attachInfo parentNode="Dummy_Main NonAccum" />
+			<transform scale="1.2" />
 		</dummy>
 		<dummy name="Eff_UI">
 			<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
-			<transform translate="0.000000, -20.000000, 560.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.000000" />
+			<transform translate="0,-20,560" />
 		</dummy>
 		<dummy name="Eff_Head_World">
 			<attachInfo parentNode="Dummy01" applyWorldTransform="true" applyLocalScale="false" />
-			<transform translate="0.000000, -30.000000, -15.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.200000" />
+			<transform translate="0,-30,-15" scale="1.2" />
 		</dummy>
 		<dummy name="Eff_Body_World">
 			<attachInfo parentNode="Eff_Body" applyWorldTransform="true" applyLocalScale="false" />
-			<transform translate="0.000000, -5.000000, 0.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.200000" />
+			<transform translate="0,-5,0" scale="1.2" />
 		</dummy>
 		<dummy name="Eff_Foot_World">
 			<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
-			<transform translate="0.000000, 0.000000, 0.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.200000" />
+			<transform scale="1.2" />
 		</dummy>
 	</effectdummy>
 </ms2>

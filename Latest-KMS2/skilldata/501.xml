@@ -8801,36 +8801,25 @@
 					<range rangeType="cylinder" distance="300" height="100" includeCaster="1" applyTarget="2" castTarget="1" />
 					<arrow nonTarget="1" />
 					<damage count="0" rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="2" />
-					<actionSkill skillID="50100375" level="2" delay="99999000" />
+					<actionSkill skillID="50100378" level="1" delay="99999000" />
 				</attack>
 				<attack point="p1" targetCount="1" cubeMagicPathID="50000625" attacktype="1" brokenOffence="1" unrideOnHit="1">
 					<range rangeType="cylinder" distance="300" height="100" includeCaster="1" applyTarget="2" castTarget="1" />
 					<arrow nonTarget="1" />
 					<damage count="0" rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="2" />
-					<actionSkill skillID="50100375" level="2" delay="99999000" />
+					<actionSkill skillID="50100378" level="1" delay="99999000" />
 				</attack>
 				<attack point="p2" targetCount="1" cubeMagicPathID="50000626" attacktype="1" brokenOffence="1" unrideOnHit="1">
 					<range rangeType="cylinder" distance="300" height="100" includeCaster="1" applyTarget="2" castTarget="1" />
 					<arrow nonTarget="1" />
 					<damage count="0" rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="2" />
-					<actionSkill skillID="50100375" level="2" delay="99999000" />
+					<actionSkill skillID="50100378" level="1" delay="99999000" />
 				</attack>
 				<attack point="p3" targetCount="1" cubeMagicPathID="50000627" attacktype="1" brokenOffence="1" unrideOnHit="1">
 					<range rangeType="cylinder" distance="300" height="100" includeCaster="1" applyTarget="2" castTarget="1" />
 					<arrow nonTarget="1" />
 					<damage count="0" rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="2" />
-					<actionSkill skillID="50100375" level="2" delay="99999000" />
-				</attack>
-			</motion>
-		</level>
-		<level value="2">
-			<motion>
-				<attack point="p0" targetCount="1" attacktype="1" brokenOffence="1" unrideOnHit="1" compulsionType="1,3">
-					<range rangeType="cylinder" distance="5" height="30" includeCaster="1" applyTarget="2" castTarget="1" />
-					<arrow nonTarget="1" />
-					<damage rate="0.001" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="2" />
-					<actionAdditional additionalID="50004511" level="1" skillTarget="1" skillOwner="1" />
-					<actionSkill skillID="99999905" level="3" delay="1" />
+					<actionSkill skillID="50100378" level="1" delay="99999000" />
 				</attack>
 			</motion>
 		</level>
@@ -8965,25 +8954,42 @@
 					<range rangeType="cylinder" distance="300" height="100" includeCaster="1" applyTarget="2" castTarget="1" />
 					<arrow nonTarget="1" />
 					<damage count="0" rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="2" />
-					<actionSkill skillID="50100377" level="2" delay="99999000" />
+					<actionSkill skillID="50100378" level="2" delay="99999000" />
 				</attack>
 				<attack point="p1" targetCount="1" cubeMagicPathID="50000702" attacktype="1" brokenOffence="1" unrideOnHit="1">
 					<range rangeType="cylinder" distance="300" height="100" includeCaster="1" applyTarget="2" castTarget="1" />
 					<arrow nonTarget="1" />
 					<damage count="0" rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="2" />
-					<actionSkill skillID="50100377" level="2" delay="99999000" />
+					<actionSkill skillID="50100378" level="2" delay="99999000" />
 				</attack>
 				<attack point="p2" targetCount="1" cubeMagicPathID="50000703" attacktype="1" brokenOffence="1" unrideOnHit="1">
 					<range rangeType="cylinder" distance="300" height="100" includeCaster="1" applyTarget="2" castTarget="1" />
 					<arrow nonTarget="1" />
 					<damage count="0" rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="2" />
-					<actionSkill skillID="50100377" level="2" delay="99999000" />
+					<actionSkill skillID="50100378" level="2" delay="99999000" />
 				</attack>
 				<attack point="p3" targetCount="1" cubeMagicPathID="50000704" attacktype="1" brokenOffence="1" unrideOnHit="1">
 					<range rangeType="cylinder" distance="300" height="100" includeCaster="1" applyTarget="2" castTarget="1" />
 					<arrow nonTarget="1" />
 					<damage count="0" rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="2" />
-					<actionSkill skillID="50100377" level="2" delay="99999000" />
+					<actionSkill skillID="50100378" level="2" delay="99999000" />
+				</attack>
+			</motion>
+		</level>
+	</skill>
+	<skill id="50100378" comment="발록 카오스">
+		<basic mainType="30">
+			<ui attackType="1" />
+			<sensor rangeType="cylinder" distance="5" height="30" />
+		</basic>
+		<level value="1">
+			<motion>
+				<attack point="p0" targetCount="1" attacktype="1" brokenOffence="1" unrideOnHit="1" compulsionType="1,3">
+					<range rangeType="cylinder" distance="5" height="30" includeCaster="1" applyTarget="2" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.001" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="2" />
+					<actionAdditional additionalID="50004511" level="1" skillTarget="1" skillOwner="1" />
+					<actionSkill skillID="99999905" level="3" delay="1" />
 				</attack>
 			</motion>
 		</level>
@@ -24416,6 +24422,42 @@
 			</motion>
 		</level>
 	</skill>
+	<skill id="50100730" comment="파풀라투스">
+		<basic mainType="30">
+			<ui attackType="1" />
+			<sensor rangeType="cylinder" distance="50" height="50" />
+		</basic>
+		<level value="1">
+			<motion motionEffect="NPC/Skill/Papulatus/Eff_Papulatus_Attack_01_F_MineTrap_Ball_Multiple2_Locate.xml" splashEndEffect="NPC/Skill/Papulatus/Eff_Papulatus_Attack_01_F_MineTrap_Ball_Multiple2_Vanish.xml">
+				<attack point="p0" attacktype="1" brokenOffence="1" unrideOnHit="1">
+					<range rangeType="cylinder" distance="50" height="50" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage count="0" rate="1" attackMaterial="1" />
+					<actionSkill skillID="99999892" level="1" delay="800" />
+				</attack>
+			</motion>
+		</level>
+		<level value="2">
+			<motion motionEffect="NPC/Skill/Papulatus/Eff_Papulatus_Attack_01_F_MineTrap_Ball_Multiple3_Locate.xml" splashEndEffect="NPC/Skill/Papulatus/Eff_Papulatus_Attack_01_F_MineTrap_Ball_Multiple3_Vanish.xml">
+				<attack point="p0" attacktype="1" brokenOffence="1" unrideOnHit="1">
+					<range rangeType="cylinder" distance="50" height="50" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage count="0" rate="1" attackMaterial="1" />
+					<actionSkill skillID="99999892" level="2" delay="800" />
+				</attack>
+			</motion>
+		</level>
+		<level value="3">
+			<motion motionEffect="NPC/Skill/Papulatus/Eff_Papulatus_Attack_01_F_MineTrap_Ball_Divide2_Locate.xml" splashEndEffect="NPC/Skill/Papulatus/Eff_Papulatus_Attack_01_F_MineTrap_Ball_Divide2_Vanish.xml">
+				<attack point="p0" attacktype="1" brokenOffence="1" unrideOnHit="1">
+					<range rangeType="cylinder" distance="50" height="50" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage count="0" rate="1" attackMaterial="1" />
+					<actionSkill skillID="99999891" level="1" delay="800" />
+				</attack>
+			</motion>
+		</level>
+	</skill>
 	<skill id="50100731" comment="파풀라투스">
 		<basic>
 			<ui attackType="2" />
@@ -25090,49 +25132,19 @@
 					<range rangeType="cylinder" distance="2500" height="100" applyTarget="1" castTarget="1" />
 					<arrow nonTarget="1" />
 					<damage count="0" rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
-					<actionSkill skillID="50100742" level="2" delay="23000" />
+					<actionSkill skillID="50100730" level="1" delay="23000" />
 				</attack>
 				<attack point="p1" targetCount="8" magicPathID="5433" cubeMagicPathID="50000486" attacktype="1" attackMethodType="1" brokenOffence="1" unrideOnHit="1">
 					<range rangeType="cylinder" distance="2500" height="100" applyTarget="1" castTarget="1" />
 					<arrow nonTarget="1" />
 					<damage count="0" rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
-					<actionSkill skillID="50100742" level="3" delay="23000" />
+					<actionSkill skillID="50100730" level="2" delay="23000" />
 				</attack>
 				<attack point="p2" targetCount="8" magicPathID="5434" cubeMagicPathID="50000486" attacktype="1" attackMethodType="1" brokenOffence="1" unrideOnHit="1">
 					<range rangeType="cylinder" distance="2500" height="100" applyTarget="1" castTarget="1" />
 					<arrow nonTarget="1" />
 					<damage count="0" rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
-					<actionSkill skillID="50100742" level="4" delay="23000" />
-				</attack>
-			</motion>
-		</level>
-		<level value="2">
-			<motion motionEffect="NPC/Skill/Papulatus/Eff_Papulatus_Attack_01_F_MineTrap_Ball_Multiple2_Locate.xml" splashEndEffect="NPC/Skill/Papulatus/Eff_Papulatus_Attack_01_F_MineTrap_Ball_Multiple2_Vanish.xml">
-				<attack point="p0" attacktype="1" brokenOffence="1" unrideOnHit="1">
-					<range rangeType="cylinder" distance="50" height="50" applyTarget="1" castTarget="1" />
-					<arrow nonTarget="1" />
-					<damage count="0" rate="1" attackMaterial="1" />
-					<actionSkill skillID="99999892" level="1" delay="800" />
-				</attack>
-			</motion>
-		</level>
-		<level value="3">
-			<motion motionEffect="NPC/Skill/Papulatus/Eff_Papulatus_Attack_01_F_MineTrap_Ball_Multiple3_Locate.xml" splashEndEffect="NPC/Skill/Papulatus/Eff_Papulatus_Attack_01_F_MineTrap_Ball_Multiple3_Vanish.xml">
-				<attack point="p0" attacktype="1" brokenOffence="1" unrideOnHit="1">
-					<range rangeType="cylinder" distance="50" height="50" applyTarget="1" castTarget="1" />
-					<arrow nonTarget="1" />
-					<damage count="0" rate="1" attackMaterial="1" />
-					<actionSkill skillID="99999892" level="2" delay="800" />
-				</attack>
-			</motion>
-		</level>
-		<level value="4">
-			<motion motionEffect="NPC/Skill/Papulatus/Eff_Papulatus_Attack_01_F_MineTrap_Ball_Divide2_Locate.xml" splashEndEffect="NPC/Skill/Papulatus/Eff_Papulatus_Attack_01_F_MineTrap_Ball_Divide2_Vanish.xml">
-				<attack point="p0" attacktype="1" brokenOffence="1" unrideOnHit="1">
-					<range rangeType="cylinder" distance="50" height="50" applyTarget="1" castTarget="1" />
-					<arrow nonTarget="1" />
-					<damage count="0" rate="1" attackMaterial="1" />
-					<actionSkill skillID="99999891" level="1" delay="800" />
+					<actionSkill skillID="50100730" level="3" delay="23000" />
 				</attack>
 			</motion>
 		</level>
@@ -25147,19 +25159,19 @@
 					<range rangeType="cylinder" distance="2500" height="100" applyTarget="1" castTarget="1" />
 					<arrow nonTarget="1" />
 					<damage count="0" rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
-					<actionSkill skillID="50100742" level="2" delay="23000" />
+					<actionSkill skillID="50100730" level="1" delay="23000" />
 				</attack>
 				<attack point="p1" targetCount="13" magicPathID="5436" cubeMagicPathID="50000486" attacktype="1" attackMethodType="1" brokenOffence="1" unrideOnHit="1">
 					<range rangeType="cylinder" distance="2500" height="100" applyTarget="1" castTarget="1" />
 					<arrow nonTarget="1" />
 					<damage count="0" rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
-					<actionSkill skillID="50100742" level="3" delay="23000" />
+					<actionSkill skillID="50100730" level="2" delay="23000" />
 				</attack>
 				<attack point="p2" targetCount="10" magicPathID="5437" cubeMagicPathID="50000486" attacktype="1" attackMethodType="1" brokenOffence="1" unrideOnHit="1">
 					<range rangeType="cylinder" distance="2500" height="100" applyTarget="1" castTarget="1" />
 					<arrow nonTarget="1" />
 					<damage count="0" rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
-					<actionSkill skillID="50100742" level="4" delay="23000" />
+					<actionSkill skillID="50100730" level="3" delay="23000" />
 				</attack>
 			</motion>
 		</level>
@@ -25169,13 +25181,13 @@
 					<range rangeType="cylinder" distance="2500" height="100" applyTarget="1" castTarget="1" />
 					<arrow nonTarget="1" />
 					<damage count="0" rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
-					<actionSkill skillID="50100742" level="2" delay="23000" />
+					<actionSkill skillID="50100730" level="1" delay="23000" />
 				</attack>
 				<attack point="p2" targetCount="26" magicPathID="5439" cubeMagicPathID="50000486" attacktype="1" attackMethodType="1" brokenOffence="1" unrideOnHit="1">
 					<range rangeType="cylinder" distance="2500" height="100" applyTarget="1" castTarget="1" />
 					<arrow nonTarget="1" />
 					<damage count="0" rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
-					<actionSkill skillID="50100742" level="4" delay="23000" />
+					<actionSkill skillID="50100730" level="3" delay="23000" />
 				</attack>
 			</motion>
 		</level>
@@ -27453,19 +27465,19 @@
 					<range rangeType="cylinder" distance="2500" height="100" applyTarget="1" castTarget="1" />
 					<arrow nonTarget="1" />
 					<damage count="0" rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
-					<actionSkill skillID="50100758" level="2" delay="20000" />
+					<actionSkill skillID="50100774" level="1" delay="20000" />
 				</attack>
 				<attack point="p1" targetCount="4" magicPathID="5395" cubeMagicPathID="50000486" attacktype="1" attackMethodType="1" brokenOffence="1" unrideOnHit="1">
 					<range rangeType="cylinder" distance="2500" height="100" applyTarget="1" castTarget="1" />
 					<arrow nonTarget="1" />
 					<damage count="0" rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
-					<actionSkill skillID="50100758" level="3" delay="20000" />
+					<actionSkill skillID="50100774" level="2" delay="20000" />
 				</attack>
 				<attack point="p2" targetCount="4" magicPathID="5396" cubeMagicPathID="50000486" attacktype="1" attackMethodType="1" brokenOffence="1" unrideOnHit="1">
 					<range rangeType="cylinder" distance="2500" height="100" applyTarget="1" castTarget="1" />
 					<arrow nonTarget="1" />
 					<damage count="0" rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
-					<actionSkill skillID="50100758" level="4" delay="20000" />
+					<actionSkill skillID="50100774" level="3" delay="20000" />
 				</attack>
 			</motion>
 		</level>
@@ -27510,19 +27522,19 @@
 					<range rangeType="cylinder" distance="2500" height="100" applyTarget="1" castTarget="1" />
 					<arrow nonTarget="1" />
 					<damage count="0" rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
-					<actionSkill skillID="50100758" level="2" delay="20000" />
+					<actionSkill skillID="50100774" level="1" delay="20000" />
 				</attack>
 				<attack point="p1" targetCount="4" magicPathID="5398" cubeMagicPathID="50000486" attacktype="1" attackMethodType="1" brokenOffence="1" unrideOnHit="1">
 					<range rangeType="cylinder" distance="2500" height="100" applyTarget="1" castTarget="1" />
 					<arrow nonTarget="1" />
 					<damage count="0" rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
-					<actionSkill skillID="50100758" level="3" delay="20000" />
+					<actionSkill skillID="50100774" level="2" delay="20000" />
 				</attack>
 				<attack point="p2" targetCount="4" magicPathID="5399" cubeMagicPathID="50000486" attacktype="1" attackMethodType="1" brokenOffence="1" unrideOnHit="1">
 					<range rangeType="cylinder" distance="2500" height="100" applyTarget="1" castTarget="1" />
 					<arrow nonTarget="1" />
 					<damage count="0" rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
-					<actionSkill skillID="50100758" level="4" delay="20000" />
+					<actionSkill skillID="50100774" level="3" delay="20000" />
 				</attack>
 			</motion>
 		</level>
@@ -29068,13 +29080,13 @@
 					<range rangeType="cylinder" distance="2500" height="100" applyTarget="1" castTarget="1" />
 					<arrow nonTarget="1" />
 					<damage count="0" rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
-					<actionSkill skillID="50100770" level="11" delay="20000" />
+					<actionSkill skillID="50100775" level="1" delay="20000" />
 				</attack>
 				<attack point="p1" targetCount="4" magicPathID="5505" cubeMagicPathID="50000486" attacktype="1" attackMethodType="1" brokenOffence="1" unrideOnHit="1">
 					<range rangeType="cylinder" distance="2500" height="100" applyTarget="1" castTarget="1" />
 					<arrow nonTarget="1" />
 					<damage count="0" rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
-					<actionSkill skillID="50100770" level="12" delay="20000" />
+					<actionSkill skillID="50100775" level="2" delay="20000" />
 				</attack>
 			</motion>
 		</level>
@@ -29084,13 +29096,13 @@
 					<range rangeType="cylinder" distance="2500" height="100" applyTarget="1" castTarget="1" />
 					<arrow nonTarget="1" />
 					<damage count="0" rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
-					<actionSkill skillID="50100770" level="11" delay="20000" />
+					<actionSkill skillID="50100775" level="1" delay="20000" />
 				</attack>
 				<attack point="p1" targetCount="6" magicPathID="5507" cubeMagicPathID="50000486" attacktype="1" attackMethodType="1" brokenOffence="1" unrideOnHit="1">
 					<range rangeType="cylinder" distance="2500" height="100" applyTarget="1" castTarget="1" />
 					<arrow nonTarget="1" />
 					<damage count="0" rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
-					<actionSkill skillID="50100770" level="12" delay="20000" />
+					<actionSkill skillID="50100775" level="2" delay="20000" />
 				</attack>
 			</motion>
 		</level>
@@ -29100,33 +29112,13 @@
 					<range rangeType="cylinder" distance="2500" height="100" applyTarget="1" castTarget="1" />
 					<arrow nonTarget="1" />
 					<damage count="0" rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
-					<actionSkill skillID="50100770" level="11" delay="20000" />
+					<actionSkill skillID="50100775" level="1" delay="20000" />
 				</attack>
 				<attack point="p1" targetCount="16" magicPathID="5509" cubeMagicPathID="50000486" attacktype="1" attackMethodType="1" brokenOffence="1" unrideOnHit="1">
 					<range rangeType="cylinder" distance="2500" height="100" applyTarget="1" castTarget="1" />
 					<arrow nonTarget="1" />
 					<damage count="0" rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
-					<actionSkill skillID="50100770" level="12" delay="20000" />
-				</attack>
-			</motion>
-		</level>
-		<level value="11">
-			<motion motionEffect="NPC/Skill/Papulatus/Eff_Papulatus_Attack_01_F_MineTrap_Ball_Multiple2_Locate.xml" splashEndEffect="NPC/Skill/Papulatus/Eff_Papulatus_Attack_01_F_MineTrap_Ball_Multiple2_Vanish.xml">
-				<attack point="p0" attacktype="1" brokenOffence="1" unrideOnHit="1">
-					<range rangeType="cylinder" distance="50" height="50" applyTarget="1" castTarget="1" />
-					<arrow nonTarget="1" />
-					<damage count="0" rate="0.01" attackMaterial="1" />
-					<actionSkill skillID="99999874" level="1" delay="50" />
-				</attack>
-			</motion>
-		</level>
-		<level value="12">
-			<motion motionEffect="NPC/Skill/Papulatus/Eff_Papulatus_Attack_01_F_MineTrap_Ball_Divide2_Locate.xml" splashEndEffect="NPC/Skill/Papulatus/Eff_Papulatus_Attack_01_F_MineTrap_Ball_Divide2_Vanish.xml">
-				<attack point="p0" attacktype="1" brokenOffence="1" unrideOnHit="1">
-					<range rangeType="cylinder" distance="50" height="50" applyTarget="1" castTarget="1" />
-					<arrow nonTarget="1" />
-					<damage count="0" rate="0.01" attackMaterial="1" />
-					<actionSkill skillID="99999873" level="1" delay="400" />
+					<actionSkill skillID="50100775" level="2" delay="20000" />
 				</attack>
 			</motion>
 		</level>
@@ -29275,6 +29267,68 @@
 					<range rangeType="box" distance="380" height="350" width="300" applyTarget="1" castTarget="1" />
 					<arrow nonTarget="1" effect="NPC/Skill/Temp/Eff_Temp.xml" />
 					<damage count="0" rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
+				</attack>
+			</motion>
+		</level>
+	</skill>
+	<skill id="50100774" comment="파풀라투스">
+		<basic mainType="30">
+			<ui attackType="1" />
+			<sensor rangeType="cylinder" distance="50" height="50" />
+		</basic>
+		<level value="1">
+			<motion motionEffect="NPC/Skill/Papulatus/Eff_Papulatus_Attack_01_F_MineTrap_Ball_Multiple2_Locate.xml" splashEndEffect="NPC/Skill/Papulatus/Eff_Papulatus_Attack_01_F_MineTrap_Ball_Multiple2_Vanish.xml">
+				<attack point="p0" attacktype="1" brokenOffence="1" unrideOnHit="1">
+					<range rangeType="cylinder" distance="50" height="50" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage count="0" rate="0.01" attackMaterial="1" />
+					<actionSkill skillID="99999924" level="1" delay="550" />
+				</attack>
+			</motion>
+		</level>
+		<level value="2">
+			<motion motionEffect="NPC/Skill/Papulatus/Eff_Papulatus_Attack_01_F_MineTrap_Ball_Multiple3_Locate.xml" splashEndEffect="NPC/Skill/Papulatus/Eff_Papulatus_Attack_01_F_MineTrap_Ball_Multiple3_Vanish.xml">
+				<attack point="p0" attacktype="1" brokenOffence="1" unrideOnHit="1">
+					<range rangeType="cylinder" distance="50" height="50" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage count="0" rate="0.01" attackMaterial="1" />
+					<actionSkill skillID="99999924" level="2" delay="550" />
+				</attack>
+			</motion>
+		</level>
+		<level value="3">
+			<motion motionEffect="NPC/Skill/Papulatus/Eff_Papulatus_Attack_01_F_MineTrap_Ball_Divide2_Locate.xml" splashEndEffect="NPC/Skill/Papulatus/Eff_Papulatus_Attack_01_F_MineTrap_Ball_Divide2_Vanish.xml">
+				<attack point="p0" attacktype="1" brokenOffence="1" unrideOnHit="1">
+					<range rangeType="cylinder" distance="50" height="50" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage count="0" rate="0.01" attackMaterial="1" />
+					<actionSkill skillID="99999923" level="1" delay="550" />
+				</attack>
+			</motion>
+		</level>
+	</skill>
+	<skill id="50100775" comment="파풀라투스_MOD">
+		<basic mainType="30">
+			<ui attackType="1" />
+			<sensor rangeType="cylinder" distance="50" height="50" />
+		</basic>
+		<level value="1">
+			<motion motionEffect="NPC/Skill/Papulatus/Eff_Papulatus_Attack_01_F_MineTrap_Ball_Multiple2_Locate.xml" splashEndEffect="NPC/Skill/Papulatus/Eff_Papulatus_Attack_01_F_MineTrap_Ball_Multiple2_Vanish.xml">
+				<attack point="p0" attacktype="1" brokenOffence="1" unrideOnHit="1">
+					<range rangeType="cylinder" distance="50" height="50" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage count="0" rate="0.01" attackMaterial="1" />
+					<actionSkill skillID="99999874" level="1" delay="50" />
+				</attack>
+			</motion>
+		</level>
+		<level value="2">
+			<motion motionEffect="NPC/Skill/Papulatus/Eff_Papulatus_Attack_01_F_MineTrap_Ball_Divide2_Locate.xml" splashEndEffect="NPC/Skill/Papulatus/Eff_Papulatus_Attack_01_F_MineTrap_Ball_Divide2_Vanish.xml">
+				<attack point="p0" attacktype="1" brokenOffence="1" unrideOnHit="1">
+					<range rangeType="cylinder" distance="50" height="50" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage count="0" rate="0.01" attackMaterial="1" />
+					<actionSkill skillID="99999873" level="1" delay="400" />
 				</attack>
 			</motion>
 		</level>
@@ -37090,7 +37144,7 @@
 					<range rangeType="cylinder" distance="2500" height="100" applyTarget="1" castTarget="1" />
 					<arrow nonTarget="1" />
 					<damage count="0" rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="101" />
-					<actionSkill skillID="50101101" level="2" delay="11000" />
+					<actionSkill skillID="50101109" level="1" delay="11000" />
 				</attack>
 				<attack point="p1" targetCount="50" attacktype="2" unrideOnHit="1">
 					<range rangeType="box" distance="2500" rangeOffset="0,300,0" height="350" width="250" applyTarget="1" castTarget="1" />
@@ -37104,7 +37158,7 @@
 					<range rangeType="cylinder" distance="2500" height="100" applyTarget="1" castTarget="1" />
 					<arrow nonTarget="1" />
 					<damage count="0" rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="101" />
-					<actionSkill skillID="50101101" level="2" delay="11000" />
+					<actionSkill skillID="50101109" level="1" delay="11000" />
 				</attack>
 				<attack point="p2" targetCount="50" attacktype="2" unrideOnHit="1">
 					<range rangeType="box" distance="2500" rangeOffset="0,300,0" height="350" width="250" applyTarget="1" castTarget="1" />
@@ -37118,7 +37172,7 @@
 					<range rangeType="cylinder" distance="2500" height="100" applyTarget="1" castTarget="1" />
 					<arrow nonTarget="1" />
 					<damage count="0" rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="101" />
-					<actionSkill skillID="50101101" level="2" delay="11000" />
+					<actionSkill skillID="50101109" level="1" delay="11000" />
 				</attack>
 				<attack point="p3" targetCount="50" attacktype="2" unrideOnHit="1">
 					<range rangeType="box" distance="2500" rangeOffset="0,300,0" height="350" width="250" applyTarget="1" castTarget="1" />
@@ -37132,7 +37186,7 @@
 					<range rangeType="cylinder" distance="2500" height="100" applyTarget="1" castTarget="1" />
 					<arrow nonTarget="1" />
 					<damage count="0" rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="101" />
-					<actionSkill skillID="50101101" level="2" delay="11000" />
+					<actionSkill skillID="50101109" level="1" delay="11000" />
 				</attack>
 				<attack point="p4" targetCount="50" attacktype="2" unrideOnHit="1">
 					<range rangeType="box" distance="2500" rangeOffset="0,300,0" height="350" width="250" applyTarget="1" castTarget="1" />
@@ -37146,7 +37200,7 @@
 					<range rangeType="cylinder" distance="2500" height="100" applyTarget="1" castTarget="1" />
 					<arrow nonTarget="1" />
 					<damage count="0" rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="101" />
-					<actionSkill skillID="50101101" level="2" delay="11000" />
+					<actionSkill skillID="50101109" level="1" delay="11000" />
 				</attack>
 				<attack point="p5" targetCount="50" attacktype="2" unrideOnHit="1">
 					<range rangeType="box" distance="2500" rangeOffset="0,300,0" height="350" width="250" applyTarget="1" castTarget="1" />
@@ -37160,7 +37214,7 @@
 					<range rangeType="cylinder" distance="2500" height="100" applyTarget="1" castTarget="1" />
 					<arrow nonTarget="1" />
 					<damage count="0" rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="101" />
-					<actionSkill skillID="50101101" level="2" delay="11000" />
+					<actionSkill skillID="50101109" level="1" delay="11000" />
 				</attack>
 				<attack point="p6" targetCount="50" attacktype="2" unrideOnHit="1">
 					<range rangeType="box" distance="2500" rangeOffset="0,300,0" height="350" width="250" applyTarget="1" castTarget="1" />
@@ -37177,16 +37231,6 @@
 					<actionAdditional additionalID="50000171" level="1" skillTarget="2" skillOwner="1">
 						<beginCondition probability="0.3" />
 					</actionAdditional>
-				</attack>
-			</motion>
-		</level>
-		<level value="2">
-			<motion motionEffect="NPC/Skill/DragonLionHornBlue/Eff_DragonLionHornBlue_Attack_02_B_WaterTrap_Ball_Locate.xml" splashEndEffect="NPC/Skill/DragonLionHornBlue/Eff_DragonLionHornBlue_Attack_02_B_WaterTrap_Ball_Vanish.xml">
-				<attack point="p0" attacktype="2" brokenOffence="1" unrideOnHit="1">
-					<range rangeType="cylinder" distance="50" height="50" applyTarget="1" castTarget="1" />
-					<arrow nonTarget="1" />
-					<damage count="0" rate="0.01" attackMaterial="1" />
-					<actionSkill skillID="99999881" level="1" delay="500" />
 				</attack>
 			</motion>
 		</level>
@@ -37418,6 +37462,23 @@
 					<range rangeType="cylinder" distance="600" rangeAdd="0,0,50" height="320" applyTarget="1" castTarget="1" />
 					<arrow nonTarget="1" effect="NPC/Skill/Temp/Eff_Temp.xml" />
 					<damage count="0" rate="1" push="1" pushdistance="200" pushduration="0.2" pushEaseType="1" attackMaterial="2" />
+				</attack>
+			</motion>
+		</level>
+	</skill>
+	<skill id="50101109" comment="아크레온">
+		<basic mainType="30">
+			<ui attackType="2" />
+			<kinds element="2" />
+			<sensor rangeType="cylinder" distance="50" height="50" />
+		</basic>
+		<level value="1">
+			<motion motionEffect="NPC/Skill/DragonLionHornBlue/Eff_DragonLionHornBlue_Attack_02_B_WaterTrap_Ball_Locate.xml" splashEndEffect="NPC/Skill/DragonLionHornBlue/Eff_DragonLionHornBlue_Attack_02_B_WaterTrap_Ball_Vanish.xml">
+				<attack point="p0" attacktype="2" brokenOffence="1" unrideOnHit="1">
+					<range rangeType="cylinder" distance="50" height="50" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage count="0" rate="0.01" attackMaterial="1" />
+					<actionSkill skillID="99999881" level="1" delay="500" />
 				</attack>
 			</motion>
 		</level>
@@ -41730,25 +41791,25 @@
 					<range rangeType="cylinder" distance="300" height="100" includeCaster="1" applyTarget="2" castTarget="1" />
 					<arrow nonTarget="1" />
 					<damage count="0" rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="2" />
-					<actionSkill skillID="50101280" level="2" delay="99999000" />
+					<actionSkill skillID="50101291" level="1" delay="99999000" />
 				</attack>
 				<attack point="p1" targetCount="1" cubeMagicPathID="50000702" attacktype="1" brokenOffence="1" unrideOnHit="1">
 					<range rangeType="cylinder" distance="300" height="100" includeCaster="1" applyTarget="2" castTarget="1" />
 					<arrow nonTarget="1" />
 					<damage count="0" rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="2" />
-					<actionSkill skillID="50101280" level="2" delay="99999000" />
+					<actionSkill skillID="50101291" level="1" delay="99999000" />
 				</attack>
 				<attack point="p2" targetCount="1" cubeMagicPathID="50000703" attacktype="1" brokenOffence="1" unrideOnHit="1">
 					<range rangeType="cylinder" distance="300" height="100" includeCaster="1" applyTarget="2" castTarget="1" />
 					<arrow nonTarget="1" />
 					<damage count="0" rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="2" />
-					<actionSkill skillID="50101280" level="2" delay="99999000" />
+					<actionSkill skillID="50101291" level="1" delay="99999000" />
 				</attack>
 				<attack point="p3" targetCount="1" cubeMagicPathID="50000704" attacktype="1" brokenOffence="1" unrideOnHit="1">
 					<range rangeType="cylinder" distance="300" height="100" includeCaster="1" applyTarget="2" castTarget="1" />
 					<arrow nonTarget="1" />
 					<damage count="0" rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="2" />
-					<actionSkill skillID="50101280" level="2" delay="99999000" />
+					<actionSkill skillID="50101291" level="1" delay="99999000" />
 				</attack>
 			</motion>
 		</level>
@@ -42564,6 +42625,27 @@
 							<target hasBuffID="50004549" />
 						</beginCondition>
 					</actionAdditional>
+				</attack>
+			</motion>
+		</level>
+	</skill>
+	<skill id="50101291" comment="발록 모험">
+		<basic mainType="30">
+			<ui attackType="1" />
+			<sensor rangeType="cylinder" distance="5" height="30" />
+		</basic>
+		<level value="1">
+			<motion>
+				<attack point="p0" targetCount="1" attacktype="1" brokenOffence="1" unrideOnHit="1" compulsionType="1,3">
+					<range rangeType="cylinder" distance="5" height="30" includeCaster="1" applyTarget="2" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.001" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="2" />
+					<actionAdditional additionalID="50004511" level="1" skillTarget="1" skillOwner="1">
+						<beginCondition>
+							<target hasBuffID="50004551" />
+						</beginCondition>
+					</actionAdditional>
+					<actionSkill skillID="99999905" level="4" delay="1" />
 				</attack>
 			</motion>
 		</level>

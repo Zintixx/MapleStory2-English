@@ -3,7 +3,7 @@
 <ms2>
 	<environment feature="DarkCastle" locale="">
 		<model kfm="23000063_B_MadriaBigWingChimera" scale="2.4" />
-		<basic npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="boss" nametag="1" nametagSize="18" defenceMaterial="1" hitImmune="99" abnormalImmune="99" level="56" class="6" rankIcon="a" difficulty="56" propertyTags="keep_battle,no_die" raceString="mystic" gender="2" mainTags="None" portrait="./Data/Resource/Image/Portrait/Mob/23000063_B_MadriaBigWingChimera_P.png" damagedVibrateDuration="0.5" damagedVibrateAmp="1" checkCameraDistance="2500" extraCameraDistance="500" bossSoundDistance="2500" bossSoundEndDistance="99999" />
+		<basic npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="boss" nametag="1" nametagSize="18" defenceMaterial="1" hitImmune="99" abnormalImmune="99" level="56" class="6" rankIcon="a" propertyTags="keep_battle,no_die" raceString="mystic" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/23000063_B_MadriaBigWingChimera_P.png" damagedVibrateDuration="0.5" damagedVibrateAmp="1" checkCameraDistance="2500" extraCameraDistance="500" bossSoundDistance="2500" bossSoundEndDistance="99999" />
 		<stat hp="280109257" asp="100" msp="100" atp="120" evp="120" cap="65" cad="500" car="50" ndd="982" pap="1141901" map="1142254" par="150" mar="150" />
 		<speed rotation="400" walk="200" run="400" />
 		<distance avoid="550" sight="8000" sightHeightUP="8999" sightHeightDown="8999" customLastSightRadius="99999" customLastSightHeightUp="99999" customLastSightHeightDown="99999" />
@@ -16,42 +16,42 @@
 		<shadow scale="10" bias="1" />
 		<normal action="Idle_A" prob="10000" maidExpired="Idle_A" />
 		<dropiteminfo globalDropBoxId="74" />
-		<lookattarget lookAtMyPCWhenTalking="0" useTalkMotion="1" />
+		<lookattarget lookAtMyPCWhenTalking="0" />
 		<aiInfo path="BossDungeon/Madria/AI_MadriaBigWingChimera.xml" />
 		<exp customExp="0" />
 	</environment>
 	<effectdummy>
 		<dummy name="Eff_Head">
-			<attachInfo parentNode="Bip01 Head" applyWorldTransform="false" applyLocalScale="true" />
-			<transform translate="10.000000, 10.000000, 0.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.500000" />
+			<attachInfo parentNode="Bip01 Head" />
+			<transform translate="10,10,0" scale="1.5" />
 		</dummy>
 		<dummy name="Eff_Body">
-			<attachInfo parentNode="Bip01 Spine2" applyWorldTransform="false" applyLocalScale="true" />
-			<transform translate="0.000000, 50.000000, 0.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.500000" />
+			<attachInfo parentNode="Bip01 Spine2" />
+			<transform translate="0,50,0" scale="1.5" />
 		</dummy>
 		<dummy name="Eff_Foot">
-			<attachInfo parentNode="Main_Dummy01" applyWorldTransform="false" applyLocalScale="true" />
-			<transform translate="0.000000, -100.000000, 0.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.500000" />
+			<attachInfo parentNode="Main_Dummy01" />
+			<transform translate="0,-100,0" scale="1.5" />
 		</dummy>
 		<dummy name="Eff_UI">
 			<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
-			<transform translate="0.000000, 0.000000, 600.000000" rotation="0.000000, 0.000000, 90.000000" scale="1.000000" />
+			<transform translate="0,0,600" rotation="0,0,90" />
 		</dummy>
 		<dummy name="Eff_Damage">
-			<attachInfo parentNode="Eff_UI" applyWorldTransform="false" applyLocalScale="false" />
-			<transform translate="0.000000, 0.000000, -750.000000" rotation="0.000000, 0.000000, 0.000000" scale="2.000000" />
+			<attachInfo parentNode="Eff_UI" applyLocalScale="false" />
+			<transform translate="0,0,-750" scale="2" />
 		</dummy>
 		<dummy name="Eff_Head_World">
 			<attachInfo parentNode="Bip01 Head" applyWorldTransform="true" applyLocalScale="false" />
-			<transform translate="0.000000, -30.000000, 30.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.500000" />
+			<transform translate="0,-30,30" scale="1.5" />
 		</dummy>
 		<dummy name="Eff_Body_World">
 			<attachInfo parentNode="Bip01 Spine2" applyWorldTransform="true" applyLocalScale="false" />
-			<transform translate="0.000000, -50.000000, -100.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.500000" />
+			<transform translate="0,-50,-100" scale="1.5" />
 		</dummy>
 		<dummy name="Eff_Foot_World">
 			<attachInfo parentNode="Main_Dummy01" applyWorldTransform="true" applyLocalScale="false" />
-			<transform translate="0.000000, -200.000000, 0.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.500000" />
+			<transform translate="0,-200,0" scale="1.5" />
 		</dummy>
 	</effectdummy>
 </ms2>

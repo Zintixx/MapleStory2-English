@@ -3,7 +3,7 @@
 <ms2>
 	<environment feature="ShadowCataclysm" locale="">
 		<model kfm="22000093_N_Mammon" scale="1.5" />
-		<basic npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="boss" nametag="1" nametagSize="18" defenceMaterial="1" hitImmune="99" abnormalImmune="99" level="55" class="4" rankIcon="a" carePathToEnemy="1" difficulty="55" propertyTags="keep_battle" raceString="undead" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/22000093_N_Mammon_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" skipFrame="1" />
+		<basic npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="boss" nametag="1" nametagSize="18" defenceMaterial="1" hitImmune="99" abnormalImmune="99" level="55" class="4" rankIcon="a" carePathToEnemy="1" propertyTags="keep_battle" raceString="undead" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/22000093_N_Mammon_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" />
 		<stat hp="93851016" asp="100" msp="100" atp="120" evp="90" cap="65" cad="500" car="50" ndd="814" pap="335066" map="335066" par="105" mar="105" scaleStatRate_1="1.4" scaleBaseTap_1="15194412" scaleBaseDef_1="14863" scaleBaseSpaRate_1="0.2" scaleStatRate_2="1.4" scaleBaseTap_2="22349270" scaleBaseDef_2="23089" scaleBaseSpaRate_2="0.2" />
 		<speed rotation="720" walk="200" run="400" />
 		<distance avoid="100" sight="1000" sightHeightUP="300" sightHeightDown="0" customLastSightRadius="4500" customLastSightHeightUp="1000" customLastSightHeightDown="1000" />
@@ -15,38 +15,34 @@
 		<shadow scale="100" bias="1" />
 		<normal action="Idle_A,Bore_A,Walk_A" prob="4100,900,5000" movearea="150" maidExpired="Idle_A" />
 		<dropiteminfo dropHeight="150" dropDistanceBase="100" dropDistanceRandom="50" globalDropBoxId="4" globalDeadDropBoxId="1011" />
-		<lookattarget lookAtMyPCWhenTalking="0" useTalkMotion="1" />
+		<lookattarget lookAtMyPCWhenTalking="0" />
 		<aiInfo path="AI_Mammon_Slave.xml" />
 		<exp customExp="1283026" />
 	</environment>
 	<effectdummy>
 		<dummy name="Eff_Head">
-			<attachInfo parentNode="Bip01 Head" applyWorldTransform="false" applyLocalScale="true" />
-			<transform translate="30.000000, 0.000000, 0.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.000000" />
+			<attachInfo parentNode="Bip01 Head" />
+			<transform translate="30,0,0" />
 		</dummy>
 		<dummy name="Eff_Body">
-			<attachInfo parentNode="Bip01 Pelvis" applyWorldTransform="false" applyLocalScale="true" />
-			<transform translate="0.000000, 0.000000, 0.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.000000" />
+			<attachInfo parentNode="Bip01 Pelvis" />
 		</dummy>
 		<dummy name="Eff_Foot">
-			<attachInfo parentNode="Point01" applyWorldTransform="false" applyLocalScale="true" />
-			<transform translate="0.000000, 0.000000, 0.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.000000" />
+			<attachInfo parentNode="Point01" />
 		</dummy>
 		<dummy name="Eff_UI">
 			<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
-			<transform translate="0.000000, 0.000000, 360.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.000000" />
+			<transform translate="0,0,360" />
 		</dummy>
 		<dummy name="Eff_Head_World">
 			<attachInfo parentNode="Bip01 Head" applyWorldTransform="true" applyLocalScale="false" />
-			<transform translate="0.000000, -10.000000, 40.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.000000" />
+			<transform translate="0,-10,40" />
 		</dummy>
 		<dummy name="Eff_Body_World">
 			<attachInfo parentNode="Bip01 Pelvis" applyWorldTransform="true" applyLocalScale="false" />
-			<transform translate="0.000000, 0.000000, 0.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.000000" />
 		</dummy>
 		<dummy name="Eff_Foot_World">
 			<attachInfo parentNode="Point01" applyWorldTransform="true" applyLocalScale="false" />
-			<transform translate="0.000000, 0.000000, 0.000000" rotation="0.000000, 0.000000, 0.000000" scale="1.000000" />
 		</dummy>
 	</effectdummy>
 </ms2>

@@ -20838,6 +20838,24 @@
 			</motion>
 		</level>
 	</skill>
+	<skill id="50001199" comment="핑크빈">
+		<basic mainType="30">
+			<ui attackType="2" />
+			<kinds rangeType="2" element="7" />
+			<sensor rangeType="cylinder" distance="110" height="250" />
+		</basic>
+		<level value="1">
+			<motion motionEffect="NPC/Skill/Pinkbean/Eff_Pinkbean_Attack_01_G_BottomSpeaker_Locate.xml" splashEndEffect="NPC/Skill/Pinkbean/Eff_Pinkbean_Attack_01_G_BottomSpeaker_Vanish.xml" pushCylinderVelH="200" pushCylinderOuter="700" pushCylinderInner="1" pushCylinderHeight="250">
+				<attack point="p0" targetCount="1" attacktype="1" brokenOffence="1" unrideOnHit="1" compulsionType="1,3">
+					<range rangeType="cylinder" distance="110" height="5" includeCaster="1" applyTarget="2" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="2" />
+					<actionAdditional additionalID="50000025" level="1" skillTarget="2" skillOwner="1" />
+					<actionAdditional additionalID="50004510" level="1" skillTarget="2" skillOwner="1" />
+				</attack>
+			</motion>
+		</level>
+	</skill>
 	<skill id="50001200" comment="핑크빈">
 		<basic>
 			<ui attackType="1" />
@@ -21215,24 +21233,13 @@
 					<range rangeType="cylinder" distance="500" rangeAdd="0,0,50" height="5330" includeCaster="1" applyTarget="2" castTarget="1" />
 					<arrow nonTarget="1" />
 					<damage count="0" rate="1" attackMaterial="1" />
-					<actionSkill skillID="50001207" level="2" delay="300000" />
+					<actionSkill skillID="50001199" level="1" delay="300000" />
 				</attack>
 				<attack point="p2" targetCount="1" cubeMagicPathID="50000623" attacktype="2" unrideOnHit="1" compulsionType="1">
 					<range rangeType="cylinder" distance="500" rangeAdd="0,0,50" height="5330" includeCaster="1" applyTarget="2" castTarget="1" />
 					<arrow nonTarget="1" />
 					<damage count="0" rate="1" attackMaterial="1" />
-					<actionSkill skillID="50001207" level="2" delay="300000" />
-				</attack>
-			</motion>
-		</level>
-		<level value="2">
-			<motion motionEffect="NPC/Skill/Pinkbean/Eff_Pinkbean_Attack_01_G_BottomSpeaker_Locate.xml" splashEndEffect="NPC/Skill/Pinkbean/Eff_Pinkbean_Attack_01_G_BottomSpeaker_Vanish.xml" pushCylinderVelH="200" pushCylinderOuter="700" pushCylinderInner="1" pushCylinderHeight="250">
-				<attack point="p0" targetCount="1" attacktype="1" brokenOffence="1" unrideOnHit="1" compulsionType="1,3">
-					<range rangeType="cylinder" distance="110" height="5" includeCaster="1" applyTarget="2" castTarget="1" />
-					<arrow nonTarget="1" />
-					<damage effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="2" />
-					<actionAdditional additionalID="50000025" level="1" skillTarget="2" skillOwner="1" />
-					<actionAdditional additionalID="50004510" level="1" skillTarget="2" skillOwner="1" />
+					<actionSkill skillID="50001199" level="1" delay="300000" />
 				</attack>
 			</motion>
 		</level>
@@ -21248,13 +21255,13 @@
 					<range rangeType="cylinder" distance="500" rangeAdd="0,0,50" height="5330" includeCaster="1" applyTarget="2" castTarget="1" />
 					<arrow nonTarget="1" />
 					<damage count="0" rate="1" attackMaterial="1" />
-					<actionSkill skillID="50001207" level="2" delay="300000" />
+					<actionSkill skillID="50001199" level="1" delay="300000" />
 				</attack>
 				<attack point="p2" targetCount="1" cubeMagicPathID="50000616" attacktype="2" unrideOnHit="1" compulsionType="1">
 					<range rangeType="cylinder" distance="500" rangeAdd="0,0,50" height="5330" includeCaster="1" applyTarget="2" castTarget="1" />
 					<arrow nonTarget="1" />
 					<damage count="0" rate="1" attackMaterial="1" />
-					<actionSkill skillID="50001207" level="2" delay="300000" />
+					<actionSkill skillID="50001199" level="1" delay="300000" />
 				</attack>
 			</motion>
 		</level>
@@ -22318,7 +22325,7 @@
 					<range rangeType="box" distance="1800" rangeAdd="0,0,50" height="500" width="500" includeCaster="1" applyTarget="2" castTarget="1" />
 					<arrow nonTarget="1" />
 					<damage count="0" rate="1" attackMaterial="1" />
-					<actionSkill skillID="50001207" level="2" delay="180000" />
+					<actionSkill skillID="50001199" level="1" delay="180000" />
 				</attack>
 			</motion>
 		</level>
@@ -26561,49 +26568,19 @@
 					<range rangeType="cylinder" distance="2500" height="100" applyTarget="1" castTarget="1" />
 					<arrow nonTarget="1" />
 					<damage count="0" rate="1" attackMaterial="1" />
-					<actionSkill skillID="50001307" level="2" delay="23000" />
+					<actionSkill skillID="50001314" level="1" delay="23000" />
 				</attack>
 				<attack point="p1" targetCount="8" magicPathID="5433" cubeMagicPathID="50000486" attacktype="1" attackMethodType="1" brokenOffence="1" unrideOnHit="1">
 					<range rangeType="cylinder" distance="2500" height="100" applyTarget="1" castTarget="1" />
 					<arrow nonTarget="1" />
 					<damage count="0" rate="1" attackMaterial="1" />
-					<actionSkill skillID="50001307" level="3" delay="23000" />
+					<actionSkill skillID="50001314" level="2" delay="23000" />
 				</attack>
 				<attack point="p2" targetCount="8" magicPathID="5434" cubeMagicPathID="50000486" attacktype="1" attackMethodType="1" brokenOffence="1" unrideOnHit="1">
 					<range rangeType="cylinder" distance="2500" height="100" applyTarget="1" castTarget="1" />
 					<arrow nonTarget="1" />
 					<damage count="0" rate="1" attackMaterial="1" />
-					<actionSkill skillID="50001307" level="4" delay="23000" />
-				</attack>
-			</motion>
-		</level>
-		<level value="2">
-			<motion motionEffect="NPC/Skill/MushroomRichKing/Eff_MushroomRichKing_Attack_03_C_MineTrap_Ball_BuffUp01_Locate.xml" splashEndEffect="NPC/Skill/MushroomRichKing/Eff_MushroomRichKing_Attack_03_C_MineTrap_Ball_BuffUp01_Vanish.xml" faceTarget="0">
-				<attack point="p0" attacktype="1" brokenOffence="1" unrideOnHit="1">
-					<range rangeType="cylinder" distance="50" height="50" applyTarget="1" castTarget="1" />
-					<arrow nonTarget="1" />
-					<damage count="0" rate="1" attackMaterial="1" />
-					<actionSkill skillID="99999782" level="1" delay="500" />
-				</attack>
-			</motion>
-		</level>
-		<level value="3">
-			<motion motionEffect="NPC/Skill/MushroomRichKing/Eff_MushroomRichKing_Attack_03_C_MineTrap_Ball_BuffUp02_Locate.xml" splashEndEffect="NPC/Skill/MushroomRichKing/Eff_MushroomRichKing_Attack_03_C_MineTrap_Ball_BuffUp02_Vanish.xml" faceTarget="0">
-				<attack point="p0" attacktype="1" brokenOffence="1" unrideOnHit="1">
-					<range rangeType="cylinder" distance="50" height="50" applyTarget="1" castTarget="1" />
-					<arrow nonTarget="1" />
-					<damage count="0" rate="1" attackMaterial="1" />
-					<actionSkill skillID="99999782" level="2" delay="500" />
-				</attack>
-			</motion>
-		</level>
-		<level value="4">
-			<motion motionEffect="NPC/Skill/MushroomRichKing/Eff_MushroomRichKing_Attack_03_C_MineTrap_Ball_BuffDown01_Locate.xml" splashEndEffect="NPC/Skill/MushroomRichKing/Eff_MushroomRichKing_Attack_03_C_MineTrap_Ball_BuffDown01_Vanish.xml" faceTarget="0">
-				<attack point="p0" attacktype="1" brokenOffence="1" unrideOnHit="1">
-					<range rangeType="cylinder" distance="50" height="50" applyTarget="1" castTarget="1" />
-					<arrow nonTarget="1" />
-					<damage count="0" rate="1" attackMaterial="1" />
-					<actionSkill skillID="99999781" level="1" delay="500" />
+					<actionSkill skillID="50001314" level="3" delay="23000" />
 				</attack>
 			</motion>
 		</level>
@@ -26621,19 +26598,19 @@
 					<range rangeType="cylinder" distance="2500" height="100" applyTarget="1" castTarget="1" />
 					<arrow nonTarget="1" />
 					<damage count="0" rate="1" attackMaterial="1" />
-					<actionSkill skillID="50001307" level="2" delay="23000" />
+					<actionSkill skillID="50001314" level="1" delay="23000" />
 				</attack>
 				<attack point="p1" targetCount="13" magicPathID="5436" cubeMagicPathID="50000486" attacktype="1" attackMethodType="1" brokenOffence="1" unrideOnHit="1">
 					<range rangeType="cylinder" distance="2500" height="100" applyTarget="1" castTarget="1" />
 					<arrow nonTarget="1" />
 					<damage count="0" rate="1" attackMaterial="1" />
-					<actionSkill skillID="50001307" level="3" delay="23000" />
+					<actionSkill skillID="50001314" level="2" delay="23000" />
 				</attack>
 				<attack point="p2" targetCount="9" magicPathID="5437" cubeMagicPathID="50000486" attacktype="1" attackMethodType="1" brokenOffence="1" unrideOnHit="1">
 					<range rangeType="cylinder" distance="2500" height="100" applyTarget="1" castTarget="1" />
 					<arrow nonTarget="1" />
 					<damage count="0" rate="1" attackMaterial="1" />
-					<actionSkill skillID="50001307" level="4" delay="23000" />
+					<actionSkill skillID="50001314" level="3" delay="23000" />
 				</attack>
 			</motion>
 		</level>
@@ -26651,13 +26628,13 @@
 					<range rangeType="cylinder" distance="2500" height="100" applyTarget="1" castTarget="1" />
 					<arrow nonTarget="1" />
 					<damage count="0" rate="1" attackMaterial="1" />
-					<actionSkill skillID="50001307" level="2" delay="23000" />
+					<actionSkill skillID="50001314" level="1" delay="23000" />
 				</attack>
 				<attack point="p2" targetCount="26" magicPathID="5439" cubeMagicPathID="50000486" attacktype="1" attackMethodType="1" brokenOffence="1" unrideOnHit="1">
 					<range rangeType="cylinder" distance="2500" height="100" applyTarget="1" castTarget="1" />
 					<arrow nonTarget="1" />
 					<damage count="0" rate="1" attackMaterial="1" />
-					<actionSkill skillID="50001307" level="4" delay="23000" />
+					<actionSkill skillID="50001314" level="3" delay="23000" />
 				</attack>
 			</motion>
 		</level>
@@ -29095,6 +29072,42 @@
 					<range rangeType="box" distance="1300" rangeAdd="0,0,300" height="500" width="400" applyTarget="1" castTarget="1" />
 					<arrow nonTarget="1" effect="NPC/Skill/Temp/Eff_Temp.xml" />
 					<damage rate="1" attackMaterial="103" />
+				</attack>
+			</motion>
+		</level>
+	</skill>
+	<skill id="50001314" comment="머쉬킹 의자">
+		<basic mainType="30">
+			<ui attackType="1" />
+			<sensor rangeType="cylinder" distance="50" height="50" />
+		</basic>
+		<level value="1">
+			<motion motionEffect="NPC/Skill/MushroomRichKing/Eff_MushroomRichKing_Attack_03_C_MineTrap_Ball_BuffUp01_Locate.xml" splashEndEffect="NPC/Skill/MushroomRichKing/Eff_MushroomRichKing_Attack_03_C_MineTrap_Ball_BuffUp01_Vanish.xml" faceTarget="0">
+				<attack point="p0" attacktype="1" brokenOffence="1" unrideOnHit="1">
+					<range rangeType="cylinder" distance="50" height="50" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage count="0" rate="1" attackMaterial="1" />
+					<actionSkill skillID="99999782" level="1" delay="500" />
+				</attack>
+			</motion>
+		</level>
+		<level value="2">
+			<motion motionEffect="NPC/Skill/MushroomRichKing/Eff_MushroomRichKing_Attack_03_C_MineTrap_Ball_BuffUp02_Locate.xml" splashEndEffect="NPC/Skill/MushroomRichKing/Eff_MushroomRichKing_Attack_03_C_MineTrap_Ball_BuffUp02_Vanish.xml" faceTarget="0">
+				<attack point="p0" attacktype="1" brokenOffence="1" unrideOnHit="1">
+					<range rangeType="cylinder" distance="50" height="50" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage count="0" rate="1" attackMaterial="1" />
+					<actionSkill skillID="99999782" level="2" delay="500" />
+				</attack>
+			</motion>
+		</level>
+		<level value="3">
+			<motion motionEffect="NPC/Skill/MushroomRichKing/Eff_MushroomRichKing_Attack_03_C_MineTrap_Ball_BuffDown01_Locate.xml" splashEndEffect="NPC/Skill/MushroomRichKing/Eff_MushroomRichKing_Attack_03_C_MineTrap_Ball_BuffDown01_Vanish.xml" faceTarget="0">
+				<attack point="p0" attacktype="1" brokenOffence="1" unrideOnHit="1">
+					<range rangeType="cylinder" distance="50" height="50" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage count="0" rate="1" attackMaterial="1" />
+					<actionSkill skillID="99999781" level="1" delay="500" />
 				</attack>
 			</motion>
 		</level>
@@ -36069,24 +36082,13 @@
 					<range rangeType="cylinder" distance="500" rangeAdd="0,0,50" height="5330" includeCaster="1" applyTarget="2" castTarget="1" />
 					<arrow nonTarget="1" />
 					<damage count="0" rate="1" attackMaterial="1" />
-					<actionSkill skillID="50002207" level="2" delay="300000" />
+					<actionSkill skillID="50002219" level="1" delay="300000" />
 				</attack>
 				<attack point="p2" targetCount="1" cubeMagicPathID="7543" attacktype="2" unrideOnHit="1" compulsionType="1">
 					<range rangeType="cylinder" distance="500" rangeAdd="0,0,50" height="5330" includeCaster="1" applyTarget="2" castTarget="1" />
 					<arrow nonTarget="1" />
 					<damage count="0" rate="1" attackMaterial="1" />
-					<actionSkill skillID="50002207" level="2" delay="300000" />
-				</attack>
-			</motion>
-		</level>
-		<level value="2">
-			<motion motionEffect="NPC/Skill/Pinkbean/Eff_Pinkbean_Attack_01_G_BottomSpeaker_Locate.xml" splashEndEffect="NPC/Skill/Pinkbean/Eff_Pinkbean_Attack_01_G_BottomSpeaker_Vanish.xml" pushCylinderVelH="200" pushCylinderOuter="700" pushCylinderInner="1" pushCylinderHeight="250">
-				<attack point="p0" targetCount="1" attacktype="1" brokenOffence="1" unrideOnHit="1" compulsionType="1,3">
-					<range rangeType="cylinder" distance="110" height="5" includeCaster="1" applyTarget="2" castTarget="1" />
-					<arrow nonTarget="1" />
-					<damage effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="2" />
-					<actionAdditional additionalID="50170012" level="1" skillTarget="2" skillOwner="1" />
-					<actionAdditional additionalID="50170013" level="1" skillTarget="2" skillOwner="1" />
+					<actionSkill skillID="50002219" level="1" delay="300000" />
 				</attack>
 			</motion>
 		</level>
@@ -36102,13 +36104,13 @@
 					<range rangeType="cylinder" distance="500" rangeAdd="0,0,50" height="5330" includeCaster="1" applyTarget="2" castTarget="1" />
 					<arrow nonTarget="1" />
 					<damage count="0" rate="1" attackMaterial="1" />
-					<actionSkill skillID="50002207" level="2" delay="300000" />
+					<actionSkill skillID="50002219" level="1" delay="300000" />
 				</attack>
 				<attack point="p2" targetCount="1" cubeMagicPathID="7546" attacktype="2" unrideOnHit="1" compulsionType="1">
 					<range rangeType="cylinder" distance="500" rangeAdd="0,0,50" height="5330" includeCaster="1" applyTarget="2" castTarget="1" />
 					<arrow nonTarget="1" />
 					<damage count="0" rate="1" attackMaterial="1" />
-					<actionSkill skillID="50002207" level="2" delay="300000" />
+					<actionSkill skillID="50002219" level="1" delay="300000" />
 				</attack>
 			</motion>
 		</level>
@@ -36594,6 +36596,24 @@
 					<range rangeType="cylinder" distance="1100" rangeAdd="0,0,50" height="380" applyTarget="1" castTarget="1" />
 					<arrow nonTarget="1" effect="NPC/Skill/Temp/Eff_Temp.xml" />
 					<damage count="0" rate="1" attackMaterial="1" />
+				</attack>
+			</motion>
+		</level>
+	</skill>
+	<skill id="50002219" comment="핑크빈(normal)">
+		<basic mainType="30">
+			<ui attackType="2" />
+			<kinds rangeType="2" element="7" />
+			<sensor rangeType="cylinder" distance="110" height="250" />
+		</basic>
+		<level value="1">
+			<motion motionEffect="NPC/Skill/Pinkbean/Eff_Pinkbean_Attack_01_G_BottomSpeaker_Locate.xml" splashEndEffect="NPC/Skill/Pinkbean/Eff_Pinkbean_Attack_01_G_BottomSpeaker_Vanish.xml" pushCylinderVelH="200" pushCylinderOuter="700" pushCylinderInner="1" pushCylinderHeight="250">
+				<attack point="p0" targetCount="1" attacktype="1" brokenOffence="1" unrideOnHit="1" compulsionType="1,3">
+					<range rangeType="cylinder" distance="110" height="5" includeCaster="1" applyTarget="2" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="2" />
+					<actionAdditional additionalID="50170012" level="1" skillTarget="2" skillOwner="1" />
+					<actionAdditional additionalID="50170013" level="1" skillTarget="2" skillOwner="1" />
 				</attack>
 			</motion>
 		</level>
