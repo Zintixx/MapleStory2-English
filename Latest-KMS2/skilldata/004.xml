@@ -5,19 +5,18 @@
 			<ui attackType="2" />
 			<kinds rangeType="2" jump="400011" />
 			<stateAttr autoTargetingType="1" keyIsDown="1" clearCooldownFromPVPZone="1" ignoreReduceCooldown="1" />
-		</basic>
-		<level value="1">
-			<beginCondition cooldownTime="0.5">
-				<weapon lh="0" rh="52" />
-			</beginCondition>
 			<autoTargeting autoTargetingMaxDegree="90" />
 			<push back="150" />
-			<motion>
-				<motionProperty sequenceName="Staff_Attack_01_A" selfInputCombo="selfinputcombo" strTagEffects="e0=CH/Weapon/Staff/Eff_Staff_Attack01_Cast_01.xml" />
+			<condition>
+				<weapon lh="0" rh="52" />
+			</condition>
+		</basic>
+		<level value="1" cooldown="500">
+			<motion sequenceName="Staff_Attack_01_A" selfInputCombo="selfinputcombo" strTagEffects="e0=CH/Weapon/Staff/Eff_Staff_Attack01_Cast_01.xml">
 				<attack point="p0" targetCount="1" magicPathID="400001" attacktype="2" attackMethodType="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
-					<rangeProperty rangeType="frustum" distance="800" height="150" width="150" endWidth="900" applyTarget="1" />
-					<arrowProperty rayPhysxTest="1" bounceType="2" bounceCount="1" bounceRadius="500" collision="50.000000,25.000000,25.000000" collisionAdd="0.000000,25.000000,25.000000" effect="CH/Weapon/Staff/Eff_Staff_Attack01_Ball_01.xml" effectRemain="CH/Weapon/Staff/Eff_Staff_Attack01_Remain_01.xml" effectDestroy="CH/Weapon/Staff/Eff_Staff_Attack01_Destroy_01.xml" />
-					<damageProperty rate="0.57" effectHit="CH/Weapon/Staff/Eff_Staff_Hit_01.xml" />
+					<range rangeType="frustum" distance="800" height="150" width="150" endWidth="900" applyTarget="1" />
+					<arrow rayPhysxTest="1" bounceType="2" bounceCount="1" bounceRadius="500" collision="50,25,25" collisionAdd="0,25,25" effect="CH/Weapon/Staff/Eff_Staff_Attack01_Ball_01.xml" effectRemain="CH/Weapon/Staff/Eff_Staff_Attack01_Remain_01.xml" effectDestroy="CH/Weapon/Staff/Eff_Staff_Attack01_Destroy_01.xml" />
+					<damage rate="0.57" effectHit="CH/Weapon/Staff/Eff_Staff_Hit_01.xml" />
 				</attack>
 			</motion>
 		</level>
@@ -27,19 +26,18 @@
 			<ui attackType="2" />
 			<kinds rangeType="2" />
 			<stateAttr autoTargetingType="1" ignoreReduceCooldown="1" />
-		</basic>
-		<level value="1">
-			<beginCondition cooldownTime="0.5">
-				<weapon lh="0" rh="52" />
-			</beginCondition>
 			<autoTargeting autoTargetingMaxDegree="90" />
 			<push back="150" />
-			<motion>
-				<motionProperty sequenceName="Staff_Jump_Attack_A" strTagEffects="e0=CH/Weapon/Staff/Eff_Staff_JumpAttack_Cast_01.xml" />
+			<condition>
+				<weapon lh="0" rh="52" />
+			</condition>
+		</basic>
+		<level value="1" cooldown="500">
+			<motion sequenceName="Staff_Jump_Attack_A" strTagEffects="e0=CH/Weapon/Staff/Eff_Staff_JumpAttack_Cast_01.xml">
 				<attack point="p0" targetCount="1" magicPathID="400001" attacktype="2" attackMethodType="1" hitImmuneBreak="1" brokenOffence="2" unrideOnHit="1">
-					<rangeProperty rangeType="frustum" distance="800" rangeAdd="0.000000,0.000000,120.000000" height="150" width="150" endWidth="900" applyTarget="1" />
-					<arrowProperty rayPhysxTest="1" bounceType="2" bounceCount="1" bounceRadius="500" collision="50.000000,25.000000,25.000000" collisionAdd="0.000000,25.000000,25.000000" effect="CH/Weapon/Staff/Eff_Staff_Attack01_Ball_01.xml" effectRemain="CH/Weapon/Staff/Eff_Staff_Attack01_Remain_01.xml" effectDestroy="CH/Weapon/Staff/Eff_Staff_Attack01_Destroy_01.xml" />
-					<damageProperty rate="0.34" effectHit="CH/Weapon/Staff/Eff_Staff_Hit_01.xml" />
+					<range rangeType="frustum" distance="800" rangeAdd="0,0,120" height="150" width="150" endWidth="900" applyTarget="1" />
+					<arrow rayPhysxTest="1" bounceType="2" bounceCount="1" bounceRadius="500" collision="50,25,25" collisionAdd="0,25,25" effect="CH/Weapon/Staff/Eff_Staff_Attack01_Ball_01.xml" effectRemain="CH/Weapon/Staff/Eff_Staff_Attack01_Remain_01.xml" effectDestroy="CH/Weapon/Staff/Eff_Staff_Attack01_Destroy_01.xml" />
+					<damage rate="0.34" effectHit="CH/Weapon/Staff/Eff_Staff_Hit_01.xml" />
 				</attack>
 			</motion>
 		</level>

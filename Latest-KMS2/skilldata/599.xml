@@ -5,12 +5,11 @@
 			<ui attackType="1" />
 		</basic>
 		<level value="1">
-			<motion>
-				<motionProperty sequenceName="Emotion_D" motionEffect="CH/Skill/Priest/Eff_Priest_Heal_Cast_01.xml" faceTarget="0" />
+			<motion sequenceName="Emotion_D" motionEffect="CH/Skill/Priest/Eff_Priest_Heal_Cast_01.xml" faceTarget="0">
 				<attack point="p0" targetCount="5" direction="0" attacktype="1">
-					<rangeProperty rangeType="cylinder" distance="300" height="150" applyTarget="2" castTarget="1" />
-					<arrowProperty nonTarget="1" />
-					<damageProperty attackMaterial="1000" />
+					<range rangeType="cylinder" distance="300" height="150" applyTarget="2" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage attackMaterial="1000" />
 					<actionAdditional additionalID="10400071" level="1" skillTarget="2" skillOwner="1" />
 				</attack>
 			</motion>

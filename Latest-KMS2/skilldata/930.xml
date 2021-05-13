@@ -1,505 +1,91 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ms2>
 	<skill id="93000001">
-		<basic mainType="8">
+		<basic mainType="17">
 			<ui icon="./Data/Resource/Image/skill/icon/10600091.png" attackType="1" />
 			<stateAttr autoTargeting="0" keyIsDown="1" cooldownGroupID="63100000" />
+			<condition useCoolDownShowUI="1" />
 		</basic>
-		<level value="1">
-			<beginCondition cooldownTime="3" useCoolDownShowUI="1" />
-			<targetItem>
-				<item id="63100000" count="1" />
-			</targetItem>
-			<motion>
-				<motionProperty sequenceName="HeavyGunner_MedicalKit_A" motionEffect="Item/Pet/Eff_Pet_Trap_A01_Cast_01.xml" holdWeapon="0" />
+		<level value="1" cooldown="3000">
+			<motion sequenceName="HeavyGunner_MedicalKit_A" motionEffect="Item/Pet/Eff_Pet_Trap_A01_Cast_01.xml" holdWeapon="0">
 				<attack point="p0" targetCount="1" cubeMagicPathID="930000011" attacktype="1" compulsionType="1">
-					<rangeProperty applyTarget="8" />
-					<arrowProperty rayPhysxTest="1" nonTarget="1" />
+					<range applyTarget="8" />
+					<arrow rayPhysxTest="1" nonTarget="1" />
 					<actionSkill skillID="93000002" level="1" delay="30000" useDirection="1" onlySensingActive="1" />
 				</attack>
 			</motion>
 		</level>
 	</skill>
 	<skill id="93000002">
-		<basic mainType="8">
+		<basic mainType="17" param1="1">
 			<ui attackType="1" />
-			<stateAttr autoTargeting="0" />
+			<sensor rangeType="cylinder" distance="25" height="150" sensorStartDelay="1000" />
 		</basic>
 		<level value="1">
-			<sensorProperty rangeType="cylinder" distance="25" height="150" sensorStartDelay="1000" />
-			<motion>
-				<motionProperty loopEffect="Item/Pet/Eff_Pet_Trap_A01_Keep_01.xml" splashEndEffect="Item/Pet/Eff_Pet_Trap_A01_Invoke_01.xml" />
+			<motion loopEffect="Item/Pet/Eff_Pet_Trap_A01_Keep_01.xml" splashEndEffect="Item/Pet/Eff_Pet_Trap_A01_Invoke_01.xml">
 				<attack point="p0" targetCount="1" attacktype="1" compulsionType="1">
-					<petTamingProperty tamingGroup="1" trapLevel="1" />
-					<rangeProperty rangeType="cylinder" distance="150" height="150" includeCaster="1" applyTarget="8" />
-					<arrowProperty nonTarget="1" />
+					<range rangeType="cylinder" distance="150" height="150" includeCaster="1" applyTarget="8" />
+					<arrow nonTarget="1" />
 				</attack>
 			</motion>
 		</level>
 	</skill>
 	<skill id="93000011">
-		<basic mainType="8">
+		<basic mainType="17">
 			<ui icon="./Data/Resource/Image/skill/icon/10600091.png" attackType="1" />
 			<stateAttr autoTargeting="0" keyIsDown="1" cooldownGroupID="63100000" />
+			<condition useCoolDownShowUI="1" />
 		</basic>
-		<level value="1">
-			<beginCondition cooldownTime="3" useCoolDownShowUI="1" />
-			<targetItem>
-				<item id="63100001" count="1" />
-			</targetItem>
-			<motion>
-				<motionProperty sequenceName="HeavyGunner_MedicalKit_A" motionEffect="Item/Pet/Eff_Pet_Trap_A01_Cast_01.xml" holdWeapon="0" />
+		<level value="1" cooldown="3000">
+			<motion sequenceName="HeavyGunner_MedicalKit_A" motionEffect="Item/Pet/Eff_Pet_Trap_A01_Cast_01.xml" holdWeapon="0">
 				<attack point="p0" targetCount="1" cubeMagicPathID="930000011" attacktype="1" compulsionType="1">
-					<rangeProperty applyTarget="8" />
-					<arrowProperty rayPhysxTest="1" nonTarget="1" />
+					<range applyTarget="8" />
+					<arrow rayPhysxTest="1" nonTarget="1" />
 					<actionSkill skillID="93000012" level="1" delay="30000" useDirection="1" onlySensingActive="1" />
 				</attack>
 			</motion>
 		</level>
 	</skill>
 	<skill id="93000012">
-		<basic mainType="8">
+		<basic mainType="17" param1="2">
 			<ui attackType="1" />
-			<stateAttr autoTargeting="0" />
+			<sensor rangeType="cylinder" distance="25" height="150" sensorStartDelay="1000" />
 		</basic>
 		<level value="1">
-			<sensorProperty rangeType="cylinder" distance="25" height="150" sensorStartDelay="1000" />
-			<motion>
-				<motionProperty loopEffect="Item/Pet/Eff_Pet_Trap_A01_Keep_02.xml" splashEndEffect="Item/Pet/Eff_Pet_Trap_A01_Invoke_01.xml" />
+			<motion loopEffect="Item/Pet/Eff_Pet_Trap_A01_Keep_02.xml" splashEndEffect="Item/Pet/Eff_Pet_Trap_A01_Invoke_01.xml">
 				<attack point="p0" targetCount="1" attacktype="1" compulsionType="1">
-					<petTamingProperty tamingGroup="1" trapLevel="2" />
-					<rangeProperty rangeType="cylinder" distance="150" height="150" includeCaster="1" applyTarget="8" />
-					<arrowProperty nonTarget="1" />
+					<range rangeType="cylinder" distance="150" height="150" includeCaster="1" applyTarget="8" />
+					<arrow nonTarget="1" />
 				</attack>
 			</motion>
 		</level>
 	</skill>
 	<skill id="93000021">
-		<basic mainType="8">
+		<basic mainType="17">
 			<ui icon="./Data/Resource/Image/skill/icon/10600091.png" attackType="1" />
 			<stateAttr autoTargeting="0" keyIsDown="1" cooldownGroupID="63100000" />
+			<condition useCoolDownShowUI="1" />
 		</basic>
-		<level value="1">
-			<beginCondition cooldownTime="3" useCoolDownShowUI="1" />
-			<targetItem>
-				<item id="63100002" count="1" />
-			</targetItem>
-			<motion>
-				<motionProperty sequenceName="HeavyGunner_MedicalKit_A" motionEffect="Item/Pet/Eff_Pet_Trap_A01_Cast_01.xml" holdWeapon="0" />
+		<level value="1" cooldown="3000">
+			<motion sequenceName="HeavyGunner_MedicalKit_A" motionEffect="Item/Pet/Eff_Pet_Trap_A01_Cast_01.xml" holdWeapon="0">
 				<attack point="p0" targetCount="1" cubeMagicPathID="930000011" attacktype="1" compulsionType="1">
-					<rangeProperty applyTarget="8" />
-					<arrowProperty rayPhysxTest="1" nonTarget="1" />
+					<range applyTarget="8" />
+					<arrow rayPhysxTest="1" nonTarget="1" />
 					<actionSkill skillID="93000022" level="1" delay="30000" useDirection="1" onlySensingActive="1" />
 				</attack>
 			</motion>
 		</level>
 	</skill>
 	<skill id="93000022">
-		<basic mainType="8">
+		<basic mainType="17" param1="3">
 			<ui attackType="1" />
-			<stateAttr autoTargeting="0" />
+			<sensor rangeType="cylinder" distance="25" height="150" sensorStartDelay="1000" />
 		</basic>
 		<level value="1">
-			<sensorProperty rangeType="cylinder" distance="25" height="150" sensorStartDelay="1000" />
-			<motion>
-				<motionProperty loopEffect="Item/Pet/Eff_Pet_Trap_A01_Keep_03.xml" splashEndEffect="Item/Pet/Eff_Pet_Trap_A01_Invoke_01.xml" />
+			<motion loopEffect="Item/Pet/Eff_Pet_Trap_A01_Keep_03.xml" splashEndEffect="Item/Pet/Eff_Pet_Trap_A01_Invoke_01.xml">
 				<attack point="p0" targetCount="1" attacktype="1" compulsionType="1">
-					<petTamingProperty tamingGroup="1" trapLevel="3" />
-					<rangeProperty rangeType="cylinder" distance="150" height="150" includeCaster="1" applyTarget="8" />
-					<arrowProperty nonTarget="1" />
-				</attack>
-			</motion>
-		</level>
-	</skill>
-	<skill id="93000031">
-		<basic mainType="8">
-			<ui icon="./Data/Resource/Image/skill/icon/10600091.png" attackType="1" />
-			<stateAttr autoTargeting="0" keyIsDown="1" cooldownGroupID="63100000" />
-		</basic>
-		<level value="1">
-			<beginCondition cooldownTime="3" useCoolDownShowUI="1" />
-			<targetItem>
-				<item id="63100003" count="1" />
-			</targetItem>
-			<motion>
-				<motionProperty sequenceName="HeavyGunner_MedicalKit_A" motionEffect="Item/Pet/Eff_Pet_Trap_B01_Cast_01.xml" holdWeapon="0" />
-				<attack point="p0" targetCount="1" cubeMagicPathID="930000011" attacktype="1" compulsionType="1">
-					<rangeProperty applyTarget="8" />
-					<arrowProperty rayPhysxTest="1" nonTarget="1" />
-					<actionSkill skillID="93000032" level="1" delay="30000" useDirection="1" onlySensingActive="1" />
-				</attack>
-			</motion>
-		</level>
-	</skill>
-	<skill id="93000032">
-		<basic mainType="8">
-			<ui attackType="1" />
-			<stateAttr autoTargeting="0" />
-		</basic>
-		<level value="1">
-			<sensorProperty rangeType="cylinder" distance="25" height="150" sensorStartDelay="1000" />
-			<motion>
-				<motionProperty loopEffect="Item/Pet/Eff_Pet_Trap_B01_Keep_01.xml" splashEndEffect="Item/Pet/Eff_Pet_Trap_B01_Invoke_01.xml" />
-				<attack point="p0" targetCount="1" attacktype="1" compulsionType="1">
-					<petTamingProperty tamingGroup="2" trapLevel="1" />
-					<rangeProperty rangeType="cylinder" distance="150" height="150" includeCaster="1" applyTarget="8" />
-					<arrowProperty nonTarget="1" />
-				</attack>
-			</motion>
-		</level>
-	</skill>
-	<skill id="93000041">
-		<basic mainType="8">
-			<ui icon="./Data/Resource/Image/skill/icon/10600091.png" attackType="1" />
-			<stateAttr autoTargeting="0" keyIsDown="1" cooldownGroupID="63100000" />
-		</basic>
-		<level value="1">
-			<beginCondition cooldownTime="3" useCoolDownShowUI="1" />
-			<targetItem>
-				<item id="63100004" count="1" />
-			</targetItem>
-			<motion>
-				<motionProperty sequenceName="HeavyGunner_MedicalKit_A" motionEffect="Item/Pet/Eff_Pet_Trap_B01_Cast_01.xml" holdWeapon="0" />
-				<attack point="p0" targetCount="1" cubeMagicPathID="930000011" attacktype="1" compulsionType="1">
-					<rangeProperty applyTarget="8" />
-					<arrowProperty rayPhysxTest="1" nonTarget="1" />
-					<actionSkill skillID="93000042" level="1" delay="30000" useDirection="1" onlySensingActive="1" />
-				</attack>
-			</motion>
-		</level>
-	</skill>
-	<skill id="93000042">
-		<basic mainType="8">
-			<ui attackType="1" />
-			<stateAttr autoTargeting="0" />
-		</basic>
-		<level value="1">
-			<sensorProperty rangeType="cylinder" distance="25" height="150" sensorStartDelay="1000" />
-			<motion>
-				<motionProperty loopEffect="Item/Pet/Eff_Pet_Trap_B01_Keep_02.xml" splashEndEffect="Item/Pet/Eff_Pet_Trap_B01_Invoke_01.xml" />
-				<attack point="p0" targetCount="1" attacktype="1" compulsionType="1">
-					<petTamingProperty tamingGroup="2" trapLevel="2" />
-					<rangeProperty rangeType="cylinder" distance="150" height="150" includeCaster="1" applyTarget="8" />
-					<arrowProperty nonTarget="1" />
-				</attack>
-			</motion>
-		</level>
-	</skill>
-	<skill id="93000051">
-		<basic mainType="8">
-			<ui icon="./Data/Resource/Image/skill/icon/10600091.png" attackType="1" />
-			<stateAttr autoTargeting="0" keyIsDown="1" cooldownGroupID="63100000" />
-		</basic>
-		<level value="1">
-			<beginCondition cooldownTime="3" useCoolDownShowUI="1" />
-			<targetItem>
-				<item id="63100005" count="1" />
-			</targetItem>
-			<motion>
-				<motionProperty sequenceName="HeavyGunner_MedicalKit_A" motionEffect="Item/Pet/Eff_Pet_Trap_B01_Cast_01.xml" holdWeapon="0" />
-				<attack point="p0" targetCount="1" cubeMagicPathID="930000011" attacktype="1" compulsionType="1">
-					<rangeProperty applyTarget="8" />
-					<arrowProperty rayPhysxTest="1" nonTarget="1" />
-					<actionSkill skillID="93000052" level="1" delay="30000" useDirection="1" onlySensingActive="1" />
-				</attack>
-			</motion>
-		</level>
-	</skill>
-	<skill id="93000052">
-		<basic mainType="8">
-			<ui attackType="1" />
-			<stateAttr autoTargeting="0" />
-		</basic>
-		<level value="1">
-			<sensorProperty rangeType="cylinder" distance="25" height="150" sensorStartDelay="1000" />
-			<motion>
-				<motionProperty loopEffect="Item/Pet/Eff_Pet_Trap_B01_Keep_03.xml" splashEndEffect="Item/Pet/Eff_Pet_Trap_A01_Invoke_01.xml" />
-				<attack point="p0" targetCount="1" attacktype="1" compulsionType="1">
-					<petTamingProperty tamingGroup="2" trapLevel="3" />
-					<rangeProperty rangeType="cylinder" distance="150" height="150" includeCaster="1" applyTarget="8" />
-					<arrowProperty nonTarget="1" />
-				</attack>
-			</motion>
-		</level>
-	</skill>
-	<skill id="93000061">
-		<basic mainType="8">
-			<ui icon="./Data/Resource/Image/skill/icon/10600091.png" attackType="1" />
-			<stateAttr autoTargeting="0" keyIsDown="1" cooldownGroupID="63100000" />
-		</basic>
-		<level value="1">
-			<beginCondition cooldownTime="3" useCoolDownShowUI="1" />
-			<targetItem>
-				<item id="63100006" count="1" />
-			</targetItem>
-			<motion>
-				<motionProperty sequenceName="HeavyGunner_MedicalKit_A" motionEffect="Item/Pet/Eff_Pet_Trap_C01_Cast_01.xml" holdWeapon="0" />
-				<attack point="p0" targetCount="1" cubeMagicPathID="930000011" attacktype="1" compulsionType="1">
-					<rangeProperty applyTarget="8" />
-					<arrowProperty rayPhysxTest="1" nonTarget="1" />
-					<actionSkill skillID="93000062" level="1" delay="30000" useDirection="1" onlySensingActive="1" />
-				</attack>
-			</motion>
-		</level>
-	</skill>
-	<skill id="93000062">
-		<basic mainType="8">
-			<ui attackType="1" />
-			<stateAttr autoTargeting="0" />
-		</basic>
-		<level value="1">
-			<sensorProperty rangeType="cylinder" distance="25" height="150" sensorStartDelay="1000" />
-			<motion>
-				<motionProperty loopEffect="Item/Pet/Eff_Pet_Trap_C01_Keep_01.xml" splashEndEffect="Item/Pet/Eff_Pet_Trap_C01_Invoke_01.xml" />
-				<attack point="p0" targetCount="1" attacktype="1" compulsionType="1">
-					<petTamingProperty tamingGroup="3" trapLevel="1" />
-					<rangeProperty rangeType="cylinder" distance="150" height="150" includeCaster="1" applyTarget="8" />
-					<arrowProperty nonTarget="1" />
-				</attack>
-			</motion>
-		</level>
-	</skill>
-	<skill id="93000071">
-		<basic mainType="8">
-			<ui icon="./Data/Resource/Image/skill/icon/10600091.png" attackType="1" />
-			<stateAttr autoTargeting="0" keyIsDown="1" cooldownGroupID="63100000" />
-		</basic>
-		<level value="1">
-			<beginCondition cooldownTime="3" useCoolDownShowUI="1" />
-			<targetItem>
-				<item id="63100007" count="1" />
-			</targetItem>
-			<motion>
-				<motionProperty sequenceName="HeavyGunner_MedicalKit_A" motionEffect="Item/Pet/Eff_Pet_Trap_C01_Cast_01.xml" holdWeapon="0" />
-				<attack point="p0" targetCount="1" cubeMagicPathID="930000011" attacktype="1" compulsionType="1">
-					<rangeProperty applyTarget="8" />
-					<arrowProperty rayPhysxTest="1" nonTarget="1" />
-					<actionSkill skillID="93000072" level="1" delay="30000" useDirection="1" onlySensingActive="1" />
-				</attack>
-			</motion>
-		</level>
-	</skill>
-	<skill id="93000072">
-		<basic mainType="8">
-			<ui attackType="1" />
-			<stateAttr autoTargeting="0" />
-		</basic>
-		<level value="1">
-			<sensorProperty rangeType="cylinder" distance="25" height="150" sensorStartDelay="1000" />
-			<motion>
-				<motionProperty loopEffect="Item/Pet/Eff_Pet_Trap_C01_Keep_02.xml" splashEndEffect="Item/Pet/Eff_Pet_Trap_C01_Invoke_01.xml" />
-				<attack point="p0" targetCount="1" attacktype="1" compulsionType="1">
-					<petTamingProperty tamingGroup="3" trapLevel="2" />
-					<rangeProperty rangeType="cylinder" distance="150" height="150" includeCaster="1" applyTarget="8" />
-					<arrowProperty nonTarget="1" />
-				</attack>
-			</motion>
-		</level>
-	</skill>
-	<skill id="93000081">
-		<basic mainType="8">
-			<ui icon="./Data/Resource/Image/skill/icon/10600091.png" attackType="1" />
-			<stateAttr autoTargeting="0" keyIsDown="1" cooldownGroupID="63100000" />
-		</basic>
-		<level value="1">
-			<beginCondition cooldownTime="3" useCoolDownShowUI="1" />
-			<targetItem>
-				<item id="63100008" count="1" />
-			</targetItem>
-			<motion>
-				<motionProperty sequenceName="HeavyGunner_MedicalKit_A" motionEffect="Item/Pet/Eff_Pet_Trap_C01_Cast_01.xml" holdWeapon="0" />
-				<attack point="p0" targetCount="1" cubeMagicPathID="930000011" attacktype="1" compulsionType="1">
-					<rangeProperty applyTarget="8" />
-					<arrowProperty rayPhysxTest="1" nonTarget="1" />
-					<actionSkill skillID="93000082" level="1" delay="30000" useDirection="1" onlySensingActive="1" />
-				</attack>
-			</motion>
-		</level>
-	</skill>
-	<skill id="93000082">
-		<basic mainType="8">
-			<ui attackType="1" />
-			<stateAttr autoTargeting="0" />
-		</basic>
-		<level value="1">
-			<sensorProperty rangeType="cylinder" distance="25" height="150" sensorStartDelay="1000" />
-			<motion>
-				<motionProperty loopEffect="Item/Pet/Eff_Pet_Trap_C01_Keep_03.xml" splashEndEffect="Item/Pet/Eff_Pet_Trap_C01_Invoke_01.xml" />
-				<attack point="p0" targetCount="1" attacktype="1" compulsionType="1">
-					<petTamingProperty tamingGroup="3" trapLevel="3" />
-					<rangeProperty rangeType="cylinder" distance="150" height="150" includeCaster="1" applyTarget="8" />
-					<arrowProperty nonTarget="1" />
-				</attack>
-			</motion>
-		</level>
-	</skill>
-	<skill id="93000091">
-		<basic mainType="8">
-			<ui icon="./Data/Resource/Image/skill/icon/10600091.png" attackType="1" />
-			<stateAttr autoTargeting="0" keyIsDown="1" cooldownGroupID="63100000" />
-		</basic>
-		<level value="1">
-			<beginCondition cooldownTime="3" useCoolDownShowUI="1" />
-			<targetItem>
-				<item id="63100009" count="1" />
-			</targetItem>
-			<motion>
-				<motionProperty sequenceName="HeavyGunner_MedicalKit_A" motionEffect="Item/Pet/Eff_Pet_Trap_D01_Cast_01.xml" holdWeapon="0" />
-				<attack point="p0" targetCount="1" cubeMagicPathID="930000011" attacktype="1" compulsionType="1">
-					<rangeProperty applyTarget="8" />
-					<arrowProperty rayPhysxTest="1" nonTarget="1" />
-					<actionSkill skillID="93000092" level="1" delay="30000" useDirection="1" onlySensingActive="1" />
-				</attack>
-			</motion>
-		</level>
-	</skill>
-	<skill id="93000092">
-		<basic mainType="8">
-			<ui attackType="1" />
-			<stateAttr autoTargeting="0" />
-		</basic>
-		<level value="1">
-			<sensorProperty rangeType="cylinder" distance="25" height="150" sensorStartDelay="1000" />
-			<motion>
-				<motionProperty loopEffect="Item/Pet/Eff_Pet_Trap_D01_Keep_01.xml" splashEndEffect="Item/Pet/Eff_Pet_Trap_D01_Invoke_01.xml" />
-				<attack point="p0" targetCount="1" attacktype="1" compulsionType="1">
-					<petTamingProperty tamingGroup="4" trapLevel="1" />
-					<rangeProperty rangeType="cylinder" distance="150" height="150" includeCaster="1" applyTarget="8" />
-					<arrowProperty nonTarget="1" />
-				</attack>
-			</motion>
-		</level>
-	</skill>
-	<skill id="93000101">
-		<basic mainType="8">
-			<ui icon="./Data/Resource/Image/skill/icon/10600091.png" attackType="1" />
-			<stateAttr autoTargeting="0" keyIsDown="1" cooldownGroupID="63100000" />
-		</basic>
-		<level value="1">
-			<beginCondition cooldownTime="3" useCoolDownShowUI="1" />
-			<targetItem>
-				<item id="63100009" count="1" />
-			</targetItem>
-			<motion>
-				<motionProperty sequenceName="HeavyGunner_MedicalKit_A" motionEffect="Item/Pet/Eff_Pet_Trap_D01_Cast_01.xml" holdWeapon="0" />
-				<attack point="p0" targetCount="1" cubeMagicPathID="930000011" attacktype="1" compulsionType="1">
-					<rangeProperty applyTarget="8" />
-					<arrowProperty rayPhysxTest="1" nonTarget="1" />
-					<actionSkill skillID="93000092" level="1" delay="30000" useDirection="1" onlySensingActive="1" />
-				</attack>
-			</motion>
-		</level>
-	</skill>
-	<skill id="93000102">
-		<basic mainType="8">
-			<ui attackType="1" />
-			<stateAttr autoTargeting="0" />
-		</basic>
-		<level value="1">
-			<sensorProperty rangeType="cylinder" distance="25" height="150" sensorStartDelay="1000" />
-			<motion>
-				<motionProperty loopEffect="Item/Pet/Eff_Pet_Trap_D01_Keep_01.xml" splashEndEffect="Item/Pet/Eff_Pet_Trap_D01_Invoke_01.xml" />
-				<attack point="p0" targetCount="1" attacktype="1" compulsionType="1">
-					<petTamingProperty tamingGroup="4" trapLevel="1" />
-					<rangeProperty rangeType="cylinder" distance="150" height="150" includeCaster="1" applyTarget="8" />
-					<arrowProperty nonTarget="1" />
-				</attack>
-			</motion>
-		</level>
-	</skill>
-	<skill id="93000111">
-		<basic mainType="8">
-			<ui icon="./Data/Resource/Image/skill/icon/10600091.png" attackType="1" />
-			<stateAttr autoTargeting="0" keyIsDown="1" cooldownGroupID="63100000" />
-		</basic>
-		<level value="1">
-			<beginCondition cooldownTime="3" useCoolDownShowUI="1" />
-			<targetItem>
-				<item id="63100010" count="1" />
-			</targetItem>
-			<motion>
-				<motionProperty sequenceName="HeavyGunner_MedicalKit_A" motionEffect="Item/Pet/Eff_Pet_Trap_D01_Cast_01.xml" holdWeapon="0" />
-				<attack point="p0" targetCount="1" cubeMagicPathID="930000011" attacktype="1" compulsionType="1">
-					<rangeProperty applyTarget="8" />
-					<arrowProperty rayPhysxTest="1" nonTarget="1" />
-					<actionSkill skillID="93000092" level="1" delay="30000" useDirection="1" onlySensingActive="1" />
-				</attack>
-			</motion>
-		</level>
-	</skill>
-	<skill id="93000112">
-		<basic mainType="8">
-			<ui attackType="1" />
-			<stateAttr autoTargeting="0" />
-		</basic>
-		<level value="1">
-			<sensorProperty rangeType="cylinder" distance="25" height="150" sensorStartDelay="1000" />
-			<motion>
-				<motionProperty loopEffect="Item/Pet/Eff_Pet_Trap_D01_Keep_01.xml" splashEndEffect="Item/Pet/Eff_Pet_Trap_D01_Invoke_01.xml" />
-				<attack point="p0" targetCount="1" attacktype="1" compulsionType="1">
-					<petTamingProperty tamingGroup="4" trapLevel="1" />
-					<rangeProperty rangeType="cylinder" distance="150" height="150" includeCaster="1" applyTarget="8" />
-					<arrowProperty nonTarget="1" />
-				</attack>
-			</motion>
-		</level>
-	</skill>
-	<skill id="93001001">
-		<basic mainType="8">
-			<ui icon="./Data/Resource/Image/skill/icon/10600091.png" attackType="1" />
-			<stateAttr autoTargeting="0" keyIsDown="1" cooldownGroupID="63100000" />
-		</basic>
-		<level value="1">
-			<beginCondition cooldownTime="3" useCoolDownShowUI="1" />
-			<targetItem>
-				<item id="63100100" count="1" />
-			</targetItem>
-			<motion>
-				<motionProperty sequenceName="HeavyGunner_MedicalKit_A" motionEffect="Item/Pet/Eff_Pet_Trap_A01_Cast_01.xml" holdWeapon="0" />
-				<attack point="p0" targetCount="1" cubeMagicPathID="930000011" attacktype="1" compulsionType="1">
-					<rangeProperty applyTarget="8" />
-					<arrowProperty rayPhysxTest="1" nonTarget="1" />
-					<actionSkill skillID="93000002" level="1" delay="30000" useDirection="1" onlySensingActive="1" />
-				</attack>
-			</motion>
-		</level>
-	</skill>
-	<skill id="93001011">
-		<basic mainType="8">
-			<ui icon="./Data/Resource/Image/skill/icon/10600091.png" attackType="1" />
-			<stateAttr autoTargeting="0" keyIsDown="1" cooldownGroupID="63100000" />
-		</basic>
-		<level value="1">
-			<beginCondition cooldownTime="3" useCoolDownShowUI="1" />
-			<targetItem>
-				<item id="63100101" count="1" />
-			</targetItem>
-			<motion>
-				<motionProperty sequenceName="HeavyGunner_MedicalKit_A" motionEffect="Item/Pet/Eff_Pet_Trap_A01_Cast_01.xml" holdWeapon="0" />
-				<attack point="p0" targetCount="1" cubeMagicPathID="930000011" attacktype="1" compulsionType="1">
-					<rangeProperty applyTarget="8" />
-					<arrowProperty rayPhysxTest="1" nonTarget="1" />
-					<actionSkill skillID="93000012" level="1" delay="30000" useDirection="1" onlySensingActive="1" />
-				</attack>
-			</motion>
-		</level>
-	</skill>
-	<skill id="93001021">
-		<basic mainType="8">
-			<ui icon="./Data/Resource/Image/skill/icon/10600091.png" attackType="1" />
-			<stateAttr autoTargeting="0" keyIsDown="1" cooldownGroupID="63100000" />
-		</basic>
-		<level value="1">
-			<beginCondition cooldownTime="3" useCoolDownShowUI="1" />
-			<targetItem>
-				<item id="63100102" count="1" />
-			</targetItem>
-			<motion>
-				<motionProperty sequenceName="HeavyGunner_MedicalKit_A" motionEffect="Item/Pet/Eff_Pet_Trap_A01_Cast_01.xml" holdWeapon="0" />
-				<attack point="p0" targetCount="1" cubeMagicPathID="930000011" attacktype="1" compulsionType="1">
-					<rangeProperty applyTarget="8" />
-					<arrowProperty rayPhysxTest="1" nonTarget="1" />
-					<actionSkill skillID="93000022" level="1" delay="30000" useDirection="1" onlySensingActive="1" />
+					<range rangeType="cylinder" distance="150" height="150" includeCaster="1" applyTarget="8" />
+					<arrow nonTarget="1" />
 				</attack>
 			</motion>
 		</level>

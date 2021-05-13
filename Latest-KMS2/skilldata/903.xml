@@ -4,14 +4,13 @@
 		<basic mainType="4">
 			<kinds rangeType="1" jump="90300001" releaseObjectWeapon="0" />
 			<stateAttr autoTargetingType="1" />
+			<autoTargeting autoTargetingMaxDegree="90" />
 		</basic>
 		<level value="1">
-			<autoTargeting autoTargetingMaxDegree="90" />
-			<motion>
-				<motionProperty sequenceName="ObjectWeapon_TypeA_Attack_01_A" strTagEffects="e0=CH/Weapon/LargeSword/Eff_LargeSword_Attack01_Cast_01.xml" />
+			<motion sequenceName="ObjectWeapon_TypeA_Attack_01_A" strTagEffects="e0=CH/Weapon/LargeSword/Eff_LargeSword_Attack01_Cast_01.xml">
 				<attack point="p0" targetCount="5" attacktype="1" hitImmuneBreak="5" unrideOnHit="1" compulsionType="1">
-					<rangeProperty rangeType="box" distance="250" rangeAdd="0.000000,25.000000,0.000000" height="150" width="300" applyTarget="1" castTarget="1" />
-					<damageProperty rate="1" effectHit="CH/Weapon/LargeSword/Eff_LargeSword_Hit_01.xml" />
+					<range rangeType="box" distance="250" rangeAdd="0,25,0" height="150" width="300" applyTarget="1" castTarget="1" />
+					<damage rate="1" effectHit="CH/Weapon/LargeSword/Eff_LargeSword_Hit_01.xml" />
 				</attack>
 			</motion>
 		</level>
@@ -20,14 +19,13 @@
 		<basic mainType="4">
 			<kinds rangeType="1" releaseObjectWeapon="0" />
 			<stateAttr autoTargetingType="1" />
+			<autoTargeting autoTargetingMaxDegree="90" />
 		</basic>
 		<level value="1">
-			<autoTargeting autoTargetingMaxDegree="90" />
-			<motion>
-				<motionProperty sequenceName="ObjectWeapon_TypeA_Jump_Attack_A" strTagEffects="e0=CH/Weapon/LargeSword/Eff_LargeSword_Attack01_Cast_01.xml" />
+			<motion sequenceName="ObjectWeapon_TypeA_Jump_Attack_A" strTagEffects="e0=CH/Weapon/LargeSword/Eff_LargeSword_Attack01_Cast_01.xml">
 				<attack point="p0" targetCount="5" attacktype="1" hitImmuneBreak="5" unrideOnHit="1" compulsionType="1">
-					<rangeProperty rangeType="box" distance="250" rangeAdd="0.000000,25.000000,0.000000" height="150" width="300" applyTarget="1" castTarget="1" />
-					<damageProperty rate="1" effectHit="CH/Weapon/LargeSword/Eff_LargeSword_Hit_01.xml" />
+					<range rangeType="box" distance="250" rangeAdd="0,25,0" height="150" width="300" applyTarget="1" castTarget="1" />
+					<damage rate="1" effectHit="CH/Weapon/LargeSword/Eff_LargeSword_Hit_01.xml" />
 				</attack>
 			</motion>
 		</level>
@@ -36,15 +34,14 @@
 		<basic mainType="4">
 			<kinds rangeType="2" jump="90300003" />
 			<stateAttr autoTargetingType="1" />
+			<autoTargeting autoTargetingMaxDegree="90" />
 		</basic>
 		<level value="1">
-			<autoTargeting autoTargetingMaxDegree="90" />
-			<motion>
-				<motionProperty sequenceName="ObjectWeapon_TypeB_Attack_01_B" />
+			<motion sequenceName="ObjectWeapon_TypeB_Attack_01_B">
 				<attack point="p0" targetCount="1" magicPathID="90300003" cubeMagicPathID="903000031" attacktype="1" hitImmuneBreak="5" brokenOffence="1" unrideOnHit="1">
-					<rangeProperty rangeType="box" distance="600" height="150" width="450" applyTarget="1" castTarget="1" />
-					<arrowProperty nonTarget="1" collision="50.000000,25.000000,25.000000" collisionAdd="25.000000,25.000000,25.000000" effectRemain="CH/Weapon/Cannon/Eff_Cannon_Attack01_Remain_01.xml" />
-					<damageProperty count="0" />
+					<range rangeType="box" distance="600" height="150" width="450" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" collision="50,25,25" collisionAdd="25,25,25" effectRemain="CH/Weapon/Cannon/Eff_Cannon_Attack01_Remain_01.xml" />
+					<damage count="0" />
 					<actionSkill skillID="90300004" level="1" immediateActive="1" />
 				</attack>
 			</motion>
@@ -57,9 +54,9 @@
 		<level value="1">
 			<motion>
 				<attack point="p0" targetCount="5" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="3" unrideOnHit="1">
-					<rangeProperty rangeType="cylinder" distance="400" height="150" applyTarget="1" castTarget="1" />
-					<arrowProperty nonTarget="1" />
-					<damageProperty rate="1" />
+					<range rangeType="cylinder" distance="400" height="150" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="1" />
 				</attack>
 			</motion>
 		</level>
@@ -68,15 +65,14 @@
 		<basic mainType="4">
 			<kinds rangeType="2" />
 			<stateAttr autoTargetingType="1" />
+			<autoTargeting autoTargetingMaxDegree="90" />
 		</basic>
 		<level value="1">
-			<autoTargeting autoTargetingMaxDegree="90" />
-			<motion>
-				<motionProperty sequenceName="ObjectWeapon_Jump_Attack_B" />
+			<motion sequenceName="ObjectWeapon_Jump_Attack_B">
 				<attack point="p0" targetCount="1" magicPathID="90300005" cubeMagicPathID="903000051" attacktype="1" hitImmuneBreak="5" brokenOffence="1" unrideOnHit="1">
-					<rangeProperty rangeType="box" distance="600" height="150" width="450" applyTarget="1" castTarget="1" />
-					<arrowProperty nonTarget="1" collision="50.000000,25.000000,25.000000" collisionAdd="25.000000,25.000000,25.000000" effectRemain="CH/Weapon/Cannon/Eff_Cannon_Attack01_Remain_01.xml" />
-					<damageProperty count="0" />
+					<range rangeType="box" distance="600" height="150" width="450" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" collision="50,25,25" collisionAdd="25,25,25" effectRemain="CH/Weapon/Cannon/Eff_Cannon_Attack01_Remain_01.xml" />
+					<damage count="0" />
 					<actionSkill skillID="90300006" level="1" immediateActive="1" />
 				</attack>
 			</motion>
@@ -89,9 +85,9 @@
 		<level value="1">
 			<motion>
 				<attack point="p0" targetCount="5" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="3" unrideOnHit="1">
-					<rangeProperty rangeType="cylinder" distance="400" height="150" applyTarget="1" castTarget="1" />
-					<arrowProperty nonTarget="1" />
-					<damageProperty count="0" rate="0.033" />
+					<range rangeType="cylinder" distance="400" height="150" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage count="0" rate="0.033" />
 				</attack>
 			</motion>
 		</level>
@@ -100,15 +96,14 @@
 		<basic mainType="4">
 			<kinds rangeType="2" jump="90300007" />
 			<stateAttr autoTargetingType="1" />
+			<autoTargeting autoTargetingMaxDegree="90" />
 		</basic>
 		<level value="1">
-			<autoTargeting autoTargetingMaxDegree="90" />
-			<motion>
-				<motionProperty sequenceName="ObjectWeapon_TypeB_Attack_01_A" motionEffect="Item/Skill/Eff_ObjectWeapon_House_01.xml" strTagEffects="e0=Item/Skill/Eff_ObjectWeapon_House_01_Invoke_01.xml" />
+			<motion sequenceName="ObjectWeapon_TypeB_Attack_01_A" motionEffect="Item/Skill/Eff_ObjectWeapon_House_01.xml" strTagEffects="e0=Item/Skill/Eff_ObjectWeapon_House_01_Invoke_01.xml">
 				<attack point="p0" targetCount="1" attacktype="1" hitImmuneBreak="5" brokenOffence="1" unrideOnHit="1" compulsionType="1">
-					<rangeProperty rangeType="box" distance="250" height="150" width="300" applyTarget="1" castTarget="1" />
-					<arrowProperty nonTarget="1" />
-					<damageProperty rate="1" />
+					<range rangeType="box" distance="250" height="150" width="300" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="1" />
 					<actionSkill skillID="90300008" level="1" immediateActive="1" nonTargetActive="1" />
 				</attack>
 			</motion>
@@ -121,9 +116,9 @@
 		<level value="1">
 			<motion>
 				<attack point="p0" targetCount="5" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="3" unrideOnHit="1" compulsionType="1">
-					<rangeProperty rangeType="cylinder" distance="300" height="150" applyTarget="1" castTarget="1" />
-					<arrowProperty nonTarget="1" />
-					<damageProperty rate="1" />
+					<range rangeType="cylinder" distance="300" height="150" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="1" />
 				</attack>
 			</motion>
 		</level>
@@ -132,15 +127,14 @@
 		<basic mainType="4">
 			<kinds rangeType="2" />
 			<stateAttr autoTargetingType="1" />
+			<autoTargeting autoTargetingMaxDegree="90" />
 		</basic>
 		<level value="1">
-			<autoTargeting autoTargetingMaxDegree="90" />
-			<motion>
-				<motionProperty sequenceName="ObjectWeapon_Jump_Attack_A" motionEffect="Item/Skill/Eff_ObjectWeapon_House_01.xml" strTagEffects="e0=Item/Skill/Eff_ObjectWeapon_House_01_Invoke_01.xml" />
+			<motion sequenceName="ObjectWeapon_Jump_Attack_A" motionEffect="Item/Skill/Eff_ObjectWeapon_House_01.xml" strTagEffects="e0=Item/Skill/Eff_ObjectWeapon_House_01_Invoke_01.xml">
 				<attack point="p0" targetCount="1" attacktype="1" hitImmuneBreak="5" brokenOffence="1" unrideOnHit="1" compulsionType="1">
-					<rangeProperty rangeType="box" distance="250" height="150" width="300" applyTarget="1" castTarget="1" />
-					<arrowProperty nonTarget="1" />
-					<damageProperty count="0" />
+					<range rangeType="box" distance="250" height="150" width="300" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage count="0" />
 					<actionSkill skillID="90300010" level="1" immediateActive="1" nonTargetActive="1" />
 				</attack>
 			</motion>
@@ -153,9 +147,9 @@
 		<level value="1">
 			<motion>
 				<attack point="p0" targetCount="5" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="3" unrideOnHit="1" compulsionType="1">
-					<rangeProperty rangeType="cylinder" distance="300" height="150" applyTarget="1" castTarget="1" />
-					<arrowProperty nonTarget="1" />
-					<damageProperty count="0" rate="0.033" />
+					<range rangeType="cylinder" distance="300" height="150" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage count="0" rate="0.033" />
 				</attack>
 			</motion>
 		</level>
@@ -164,14 +158,13 @@
 		<basic mainType="4">
 			<kinds rangeType="1" jump="90300011" releaseObjectWeapon="0" />
 			<stateAttr autoTargetingType="1" />
+			<autoTargeting autoTargetingMaxDegree="90" />
 		</basic>
 		<level value="1">
-			<autoTargeting autoTargetingMaxDegree="90" />
-			<motion>
-				<motionProperty sequenceName="ObjectWeapon_TypeA_Attack_01_A" motionEffect="CH/Weapon/LargeSword/Eff_LargeSword_Attack01_Cast_01.xml" />
+			<motion sequenceName="ObjectWeapon_TypeA_Attack_01_A" motionEffect="CH/Weapon/LargeSword/Eff_LargeSword_Attack01_Cast_01.xml">
 				<attack point="p0" targetCount="5" attacktype="1" hitImmuneBreak="5" unrideOnHit="1" compulsionType="1">
-					<rangeProperty rangeType="box" distance="250" rangeAdd="0.000000,25.000000,0.000000" height="150" width="300" applyTarget="1" castTarget="1" />
-					<damageProperty value="1" effectHit="CH/Weapon/LargeSword/Eff_LargeSword_Hit_01.xml" push="1" pushdistance="300" pushduration="1" pushEaseType="1" pushUpDistance="600" pushDown="1" attackMaterial="7" />
+					<range rangeType="box" distance="250" rangeAdd="0,25,0" height="150" width="300" applyTarget="1" castTarget="1" />
+					<damage value="1" effectHit="CH/Weapon/LargeSword/Eff_LargeSword_Hit_01.xml" push="1" pushdistance="300" pushduration="1" pushEaseType="1" pushUpDistance="600" pushDown="1" attackMaterial="7" />
 				</attack>
 			</motion>
 		</level>
@@ -180,14 +173,13 @@
 		<basic mainType="4">
 			<kinds rangeType="1" releaseObjectWeapon="0" />
 			<stateAttr autoTargetingType="1" />
+			<autoTargeting autoTargetingMaxDegree="90" />
 		</basic>
 		<level value="1">
-			<autoTargeting autoTargetingMaxDegree="90" />
-			<motion>
-				<motionProperty sequenceName="ObjectWeapon_TypeA_Jump_Attack_A" motionEffect="CH/Weapon/LargeSword/Eff_LargeSword_Attack01_Cast_01.xml" />
+			<motion sequenceName="ObjectWeapon_TypeA_Jump_Attack_A" motionEffect="CH/Weapon/LargeSword/Eff_LargeSword_Attack01_Cast_01.xml">
 				<attack point="p0" targetCount="5" attacktype="1" hitImmuneBreak="5" unrideOnHit="1" compulsionType="1">
-					<rangeProperty rangeType="box" distance="250" rangeAdd="0.000000,25.000000,0.000000" height="150" width="300" applyTarget="1" castTarget="1" />
-					<damageProperty value="1" effectHit="CH/Weapon/LargeSword/Eff_LargeSword_Hit_01.xml" push="1" pushdistance="300" pushduration="1" pushEaseType="1" pushUpDistance="600" pushDown="1" attackMaterial="7" />
+					<range rangeType="box" distance="250" rangeAdd="0,25,0" height="150" width="300" applyTarget="1" castTarget="1" />
+					<damage value="1" effectHit="CH/Weapon/LargeSword/Eff_LargeSword_Hit_01.xml" push="1" pushdistance="300" pushduration="1" pushEaseType="1" pushUpDistance="600" pushDown="1" attackMaterial="7" />
 				</attack>
 			</motion>
 		</level>
@@ -196,15 +188,14 @@
 		<basic mainType="4">
 			<kinds rangeType="2" jump="90300014" />
 			<stateAttr autoTargetingType="1" />
+			<autoTargeting autoTargetingMaxDegree="90" />
 		</basic>
 		<level value="1">
-			<autoTargeting autoTargetingMaxDegree="90" />
-			<motion>
-				<motionProperty sequenceName="ObjectWeapon_TypeB_Attack_01_B" />
+			<motion sequenceName="ObjectWeapon_TypeB_Attack_01_B">
 				<attack point="p0" targetCount="1" magicPathID="90300003" cubeMagicPathID="903000031" attacktype="1" hitImmuneBreak="5" brokenOffence="1" unrideOnHit="1" compulsionType="1">
-					<rangeProperty rangeType="box" distance="600" height="150" width="450" applyTarget="1" castTarget="1" />
-					<arrowProperty nonTarget="1" collision="50.000000,25.000000,25.000000" collisionAdd="25.000000,25.000000,25.000000" effectRemain="CH/Weapon/Cannon/Eff_Cannon_Attack01_Remain_01.xml" />
-					<damageProperty count="0" attackMaterial="1" />
+					<range rangeType="box" distance="600" height="150" width="450" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" collision="50,25,25" collisionAdd="25,25,25" effectRemain="CH/Weapon/Cannon/Eff_Cannon_Attack01_Remain_01.xml" />
+					<damage count="0" attackMaterial="1" />
 					<actionSkill skillID="90300014" level="1" immediateActive="1" />
 				</attack>
 			</motion>
@@ -217,9 +208,9 @@
 		<level value="1">
 			<motion>
 				<attack point="p0" targetCount="5" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="3" unrideOnHit="1" compulsionType="1">
-					<rangeProperty rangeType="cylinder" distance="400" height="150" applyTarget="1" castTarget="1" />
-					<arrowProperty nonTarget="1" />
-					<damageProperty rate="1" attackMaterial="1" />
+					<range rangeType="cylinder" distance="400" height="150" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="1" attackMaterial="1" />
 				</attack>
 			</motion>
 		</level>
@@ -228,15 +219,14 @@
 		<basic mainType="4">
 			<kinds rangeType="2" />
 			<stateAttr autoTargetingType="1" />
+			<autoTargeting autoTargetingMaxDegree="90" />
 		</basic>
 		<level value="1">
-			<autoTargeting autoTargetingMaxDegree="90" />
-			<motion>
-				<motionProperty sequenceName="ObjectWeapon_Jump_Attack_B" />
+			<motion sequenceName="ObjectWeapon_Jump_Attack_B">
 				<attack point="p0" targetCount="1" magicPathID="90300005" cubeMagicPathID="903000051" attacktype="1" hitImmuneBreak="5" brokenOffence="1" unrideOnHit="1" compulsionType="1">
-					<rangeProperty rangeType="box" distance="600" height="150" width="450" applyTarget="1" castTarget="1" />
-					<arrowProperty nonTarget="1" collision="50.000000,25.000000,25.000000" collisionAdd="25.000000,25.000000,25.000000" effectRemain="CH/Weapon/Cannon/Eff_Cannon_Attack01_Remain_01.xml" />
-					<damageProperty count="0" attackMaterial="1" />
+					<range rangeType="box" distance="600" height="150" width="450" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" collision="50,25,25" collisionAdd="25,25,25" effectRemain="CH/Weapon/Cannon/Eff_Cannon_Attack01_Remain_01.xml" />
+					<damage count="0" attackMaterial="1" />
 					<actionSkill skillID="90300016" level="1" immediateActive="1" />
 				</attack>
 			</motion>
@@ -249,9 +239,9 @@
 		<level value="1">
 			<motion>
 				<attack point="p0" targetCount="5" attacktype="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="3" unrideOnHit="1" compulsionType="1">
-					<rangeProperty rangeType="cylinder" distance="400" height="150" applyTarget="1" castTarget="1" />
-					<arrowProperty nonTarget="1" />
-					<damageProperty count="0" rate="0.033" attackMaterial="1" />
+					<range rangeType="cylinder" distance="400" height="150" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage count="0" rate="0.033" attackMaterial="1" />
 				</attack>
 			</motion>
 		</level>

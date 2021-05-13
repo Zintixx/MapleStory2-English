@@ -7,11 +7,10 @@
 		</basic>
 		<level value="1">
 			<detectProperty rangeType="box" distance="600" height="200" width="200" />
-			<motion>
-				<motionProperty sequenceName="Attack_01_A" motionEffect="NPC/Skill/Gust/Eff_GustSoldierSpear_Attack_01_A.xml" />
+			<motion sequenceName="Attack_01_A" motionEffect="NPC/Skill/Gust/Eff_GustSoldierSpear_Attack_01_A.xml">
 				<attack point="p0" targetCount="1" attacktype="1" brokenOffence="1" unrideOnHit="1">
-					<rangeProperty rangeType="box" distance="600" rangeAdd="0.000000,50.000000,0.000000" height="200" width="200" applyTarget="1" castTarget="1" />
-					<damageProperty rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="4" />
+					<range rangeType="box" distance="600" rangeAdd="0,50,0" height="200" width="200" applyTarget="1" castTarget="1" />
+					<damage rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="4" />
 				</attack>
 			</motion>
 		</level>
@@ -23,18 +22,16 @@
 		</basic>
 		<level value="1">
 			<detectProperty rangeType="box" distance="1200" height="200" width="200" />
-			<motion>
-				<motionProperty sequenceName="Attack_01_B" sequenceSpeed="1.2" motionEffect="NPC/Skill/Gust/Eff_GustSoldierSpear_Attack_01_B.xml" doesPlayIdleOnSkillEnd="false" />
+			<motion sequenceName="Attack_01_B" sequenceSpeed="1.2" motionEffect="NPC/Skill/Gust/Eff_GustSoldierSpear_Attack_01_B.xml" doesPlayIdleOnSkillEnd="false">
 				<attack point="p0" targetCount="1" attacktype="1" brokenOffence="1" unrideOnHit="1">
-					<rangeProperty rangeType="box" distance="600" rangeAdd="0.000000,50.000000,0.000000" height="200" width="200" applyTarget="1" castTarget="1" />
-					<damageProperty count="0" attackMaterial="1" />
+					<range rangeType="box" distance="600" rangeAdd="0,50,0" height="200" width="200" applyTarget="1" castTarget="1" />
+					<damage count="0" attackMaterial="1" />
 				</attack>
 			</motion>
-			<motion>
-				<motionProperty sequenceName="Attack_02_B" sequenceSpeed="1.2" motionEffect="NPC/Skill/Gust/Eff_GustSoldierSpear_Attack_02_B.xml" movedistance="600" faceTarget="0" />
+			<motion sequenceName="Attack_02_B" sequenceSpeed="1.2" motionEffect="NPC/Skill/Gust/Eff_GustSoldierSpear_Attack_02_B.xml" movedistance="600" faceTarget="0">
 				<attack point="p0" targetCount="1" attacktype="1" brokenOffence="1" unrideOnHit="1">
-					<rangeProperty rangeType="box" distance="600" rangeAdd="0.000000,50.000000,0.000000" height="200" width="200" applyTarget="1" castTarget="1" />
-					<damageProperty rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="300" pushduration="0.3" attackMaterial="4" />
+					<range rangeType="box" distance="600" rangeAdd="0,50,0" height="200" width="200" applyTarget="1" castTarget="1" />
+					<damage rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="300" pushduration="0.3" attackMaterial="4" />
 				</attack>
 			</motion>
 		</level>
@@ -46,12 +43,11 @@
 		</basic>
 		<level value="1">
 			<detectProperty rangeType="cylinder" distance="1500" height="200" />
-			<motion>
-				<motionProperty sequenceName="Attack_01_C" motionEffect="NPC/Skill/Gust/Eff_GustSoldierSpear_Attack_01_C_ThrowElectric.xml" />
+			<motion sequenceName="Attack_01_C" motionEffect="NPC/Skill/Gust/Eff_GustSoldierSpear_Attack_01_C_ThrowElectric.xml">
 				<attack point="p0" targetCount="1" magicPathID="5676" attacktype="2" attackMethodType="1" brokenOffence="1" unrideOnHit="1">
-					<rangeProperty rangeType="cylinder" distance="1500" height="200" applyTarget="1" castTarget="1" />
-					<arrowProperty explosion="1" rayPhysxTest="1" collision="70.000000,70.000000,70.000000" effect="NPC/Skill/Gust/Eff_GustSoldierSpear_Attack_01_C_ThrowElectric_Ball.xml" />
-					<damageProperty rate="1" effectHit="NPC/Skill/Gust/Eff_GustSoldierSpear_Attack_01_C_ThrowElectric_Ball_Hit.xml" attackMaterial="103" />
+					<range rangeType="cylinder" distance="1500" height="200" applyTarget="1" castTarget="1" />
+					<arrow explosion="1" rayPhysxTest="1" collision="70,70,70" effect="NPC/Skill/Gust/Eff_GustSoldierSpear_Attack_01_C_ThrowElectric_Ball.xml" />
+					<damage rate="1" effectHit="NPC/Skill/Gust/Eff_GustSoldierSpear_Attack_01_C_ThrowElectric_Ball_Hit.xml" attackMaterial="103" />
 				</attack>
 			</motion>
 		</level>
@@ -63,19 +59,17 @@
 		</basic>
 		<level value="1">
 			<detectProperty rangeType="box" distance="1200" height="200" width="200" />
-			<motion>
-				<motionProperty sequenceName="Attack_01_D" doesPlayIdleOnSkillEnd="false" />
+			<motion sequenceName="Attack_01_D" doesPlayIdleOnSkillEnd="false">
 				<attack point="p0" targetCount="1" attacktype="1" brokenOffence="1" unrideOnHit="1">
-					<rangeProperty rangeType="box" distance="1200" rangeAdd="0.000000,50.000000,0.000000" height="200" width="200" applyTarget="1" castTarget="1" />
-					<damageProperty count="0" attackMaterial="1" />
+					<range rangeType="box" distance="1200" rangeAdd="0,50,0" height="200" width="200" applyTarget="1" castTarget="1" />
+					<damage count="0" attackMaterial="1" />
 				</attack>
 			</motion>
-			<motion>
-				<motionProperty sequenceName="Attack_02_D" motionEffect="NPC/Skill/Gust/Eff_GustSoldierSpear_Attack_02_D.xml" />
+			<motion sequenceName="Attack_02_D" motionEffect="NPC/Skill/Gust/Eff_GustSoldierSpear_Attack_02_D.xml">
 				<attack point="p0" targetCount="1" magicPathID="5676" attacktype="2" attackMethodType="1" brokenOffence="1" unrideOnHit="1">
-					<rangeProperty rangeType="box" distance="1200" rangeAdd="0.000000,50.000000,0.000000" height="200" width="200" applyTarget="1" castTarget="1" />
-					<arrowProperty nonTarget="1" collision="600.000000,150.000000,70.000000" effect="NPC/Skill/Gust/Eff_GustSoldierSpear_Attack_02_D_Throw_Ball.xml" />
-					<damageProperty rate="1" attackMaterial="1" />
+					<range rangeType="box" distance="1200" rangeAdd="0,50,0" height="200" width="200" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" collision="600,150,70" effect="NPC/Skill/Gust/Eff_GustSoldierSpear_Attack_02_D_Throw_Ball.xml" />
+					<damage rate="1" attackMaterial="1" />
 					<actionSkill skillID="99999792" level="1" immediateActive="1" nonTargetActive="1" />
 				</attack>
 			</motion>
@@ -88,18 +82,16 @@
 		</basic>
 		<level value="1">
 			<detectProperty rangeType="cylinder" distance="1500" height="200" />
-			<motion>
-				<motionProperty sequenceName="Attack_01_E" motionEffect="NPC/Skill/Gust/Eff_GustSoldierSpear_Attack_01_E.xml" faceTarget="0" doesPlayIdleOnSkillEnd="false" />
+			<motion sequenceName="Attack_01_E" motionEffect="NPC/Skill/Gust/Eff_GustSoldierSpear_Attack_01_E.xml" faceTarget="0" doesPlayIdleOnSkillEnd="false">
 				<attack point="p0" targetCount="1" attacktype="1" brokenOffence="1" unrideOnHit="1">
-					<rangeProperty rangeType="cylinder" distance="1500" rangeAdd="0.000000,50.000000,0.000000" height="200" applyTarget="1" castTarget="1" />
-					<damageProperty count="0" attackMaterial="1" />
+					<range rangeType="cylinder" distance="1500" rangeAdd="0,50,0" height="200" applyTarget="1" castTarget="1" />
+					<damage count="0" attackMaterial="1" />
 				</attack>
 			</motion>
-			<motion>
-				<motionProperty sequenceName="Attack_02_E" motionEffect="NPC/Skill/Gust/Eff_GustSoldierSpear_Attack_02_E.xml" faceTarget="0" />
+			<motion sequenceName="Attack_02_E" motionEffect="NPC/Skill/Gust/Eff_GustSoldierSpear_Attack_02_E.xml" faceTarget="0">
 				<attack point="p0" targetCount="1" attacktype="1" brokenOffence="1" unrideOnHit="1">
-					<rangeProperty rangeType="cylinder" distance="1500" rangeAdd="0.000000,50.000000,0.000000" height="100" applyTarget="1" castTarget="1" />
-					<damageProperty rate="1" push="1" pushdistance="500" pushduration="1" pushUpDistance="200" pushDown="1" pushPriority="99" attackMaterial="102" />
+					<range rangeType="cylinder" distance="1500" rangeAdd="0,50,0" height="100" applyTarget="1" castTarget="1" />
+					<damage rate="1" push="1" pushdistance="500" pushduration="1" pushUpDistance="200" pushDown="1" pushPriority="99" attackMaterial="102" />
 				</attack>
 			</motion>
 		</level>
@@ -111,12 +103,11 @@
 		</basic>
 		<level value="1">
 			<detectProperty rangeType="cylinder" distance="3000" height="350" />
-			<motion>
-				<motionProperty sequenceName="Attack_01_A" motionEffect="NPC/Skill/Gust/Eff_GustCrimson_Attack_01_A_ThrowGuided.xml" />
+			<motion sequenceName="Attack_01_A" motionEffect="NPC/Skill/Gust/Eff_GustCrimson_Attack_01_A_ThrowGuided.xml">
 				<attack point="p0" targetCount="1" magicPathID="5677" attacktype="2" attackMethodType="1" brokenOffence="1" unrideOnHit="1">
-					<rangeProperty rangeType="cylinder" distance="3000" height="350" applyTarget="1" castTarget="1" />
-					<arrowProperty explosion="1" collision="70.000000,70.000000,70.000000" effect="NPC/Skill/Gust/Eff_GustCrimson_Attack_01_A_ThrowGuided_Ball.xml" />
-					<damageProperty rate="0.5" effectHit="NPC/Skill/Gust/Eff_GustCrimson_Attack_01_A_ThrowGuided_Ball_Hit.xml" attackMaterial="1" />
+					<range rangeType="cylinder" distance="3000" height="350" applyTarget="1" castTarget="1" />
+					<arrow explosion="1" collision="70,70,70" effect="NPC/Skill/Gust/Eff_GustCrimson_Attack_01_A_ThrowGuided_Ball.xml" />
+					<damage rate="0.5" effectHit="NPC/Skill/Gust/Eff_GustCrimson_Attack_01_A_ThrowGuided_Ball_Hit.xml" attackMaterial="1" />
 				</attack>
 			</motion>
 		</level>
@@ -128,12 +119,11 @@
 		</basic>
 		<level value="1">
 			<detectProperty rangeType="cylinder" distance="3000" height="350" />
-			<motion>
-				<motionProperty sequenceName="Attack_01_B" motionEffect="NPC/Skill/Gust/Eff_GustCrimson_Attack_01_B_ThrowGuided.xml" />
+			<motion sequenceName="Attack_01_B" motionEffect="NPC/Skill/Gust/Eff_GustCrimson_Attack_01_B_ThrowGuided.xml">
 				<attack point="p0" targetCount="1" magicPathID="5678" cubeMagicPathID="50000657" attacktype="2" attackMethodType="1" brokenOffence="1" unrideOnHit="1">
-					<rangeProperty rangeType="cylinder" distance="3000" height="350" applyTarget="1" castTarget="1" />
-					<arrowProperty explosion="1" rayPhysxTest="1" collision="70.000000,70.000000,70.000000" effect="NPC/Skill/Gust/Eff_GustCrimson_Attack_01_B_ThrowGuided_Ball.xml" />
-					<damageProperty rate="0.5" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
+					<range rangeType="cylinder" distance="3000" height="350" applyTarget="1" castTarget="1" />
+					<arrow explosion="1" rayPhysxTest="1" collision="70,70,70" effect="NPC/Skill/Gust/Eff_GustCrimson_Attack_01_B_ThrowGuided_Ball.xml" />
+					<damage rate="0.5" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
 					<actionSkill skillID="99999795" level="1" delay="1500" interval="1000" fireCount="5" nonTargetActive="1" />
 				</attack>
 			</motion>
@@ -146,18 +136,16 @@
 		</basic>
 		<level value="1">
 			<detectProperty rangeType="box" distance="600" height="200" width="200" />
-			<motion>
-				<motionProperty sequenceName="Attack_01_C" sequenceSpeed="1.7" motionEffect="NPC/Skill/Gust/Eff_GustCrimson_Attack_01_C.xml" doesPlayIdleOnSkillEnd="false" />
+			<motion sequenceName="Attack_01_C" sequenceSpeed="1.7" motionEffect="NPC/Skill/Gust/Eff_GustCrimson_Attack_01_C.xml" doesPlayIdleOnSkillEnd="false">
 				<attack point="p0" targetCount="1" attacktype="1" brokenOffence="1" unrideOnHit="1">
-					<rangeProperty rangeType="box" distance="300" rangeAdd="0.000000,50.000000,0.000000" height="200" width="200" applyTarget="1" castTarget="1" />
-					<damageProperty count="0" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
+					<range rangeType="box" distance="300" rangeAdd="0,50,0" height="200" width="200" applyTarget="1" castTarget="1" />
+					<damage count="0" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
 				</attack>
 			</motion>
-			<motion>
-				<motionProperty sequenceName="Attack_02_C" motionEffect="NPC/Skill/Gust/Eff_GustCrimson_Attack_02_C.xml" movedistance="300" />
+			<motion sequenceName="Attack_02_C" motionEffect="NPC/Skill/Gust/Eff_GustCrimson_Attack_02_C.xml" movedistance="300">
 				<attack point="p0" targetCount="1" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
-					<rangeProperty rangeType="box" distance="400" rangeAdd="0.000000,100.000000,100.000000" rangeOffset="0.000000,100.000000,0.000000" height="200" width="200" applyTarget="1" castTarget="1" />
-					<damageProperty rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="3" />
+					<range rangeType="box" distance="400" rangeAdd="0,100,100" rangeOffset="0,100,0" height="200" width="200" applyTarget="1" castTarget="1" />
+					<damage rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="3" />
 				</attack>
 			</motion>
 		</level>
@@ -169,19 +157,17 @@
 		</basic>
 		<level value="1">
 			<detectProperty rangeType="box" distance="1500" height="200" width="200" />
-			<motion>
-				<motionProperty sequenceName="Attack_01_D" sequenceSpeed="2" motionEffect="NPC/Skill/Gust/Eff_GustCrimson_Attack_01_D.xml" doesPlayIdleOnSkillEnd="false" />
+			<motion sequenceName="Attack_01_D" sequenceSpeed="2" motionEffect="NPC/Skill/Gust/Eff_GustCrimson_Attack_01_D.xml" doesPlayIdleOnSkillEnd="false">
 				<attack point="p0" targetCount="1" attacktype="1" brokenOffence="1" unrideOnHit="1">
-					<rangeProperty rangeType="box" distance="1300" rangeAdd="0.000000,50.000000,0.000000" height="200" width="200" applyTarget="1" castTarget="1" />
-					<damageProperty count="0" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="2" />
+					<range rangeType="box" distance="1300" rangeAdd="0,50,0" height="200" width="200" applyTarget="1" castTarget="1" />
+					<damage count="0" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="2" />
 				</attack>
 			</motion>
-			<motion>
-				<motionProperty sequenceName="Attack_02_D" motionEffect="NPC/Skill/Gust/Eff_GustCrimson_Attack_02_D.xml" movedistance="1500" moveEaseType="1" faceTarget="0" />
+			<motion sequenceName="Attack_02_D" motionEffect="NPC/Skill/Gust/Eff_GustCrimson_Attack_02_D.xml" movedistance="1500" moveEaseType="1" faceTarget="0">
 				<attack point="p0" targetCount="1" magicPathID="5683" attacktype="2" attackMethodType="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
-					<rangeProperty applyTarget="1" castTarget="1" />
-					<arrowProperty rayPhysxTest="1" nonTarget="1" collision="200.000000,200.000000,200.000000" effect="NPC/Skill/DevilHugeRed/Eff_DevilHugeRed_Bore_02_B_Ball.xml" />
-					<damageProperty rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="500" pushduration="0.5" pushUpDistance="200" pushDown="1" pushPriority="99" attackMaterial="2" />
+					<range applyTarget="1" castTarget="1" />
+					<arrow rayPhysxTest="1" nonTarget="1" collision="200,200,200" effect="NPC/Skill/DevilHugeRed/Eff_DevilHugeRed_Bore_02_B_Ball.xml" />
+					<damage rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="500" pushduration="0.5" pushUpDistance="200" pushDown="1" pushPriority="99" attackMaterial="2" />
 				</attack>
 			</motion>
 		</level>
@@ -192,13 +178,12 @@
 			<kinds rangeType="1" element="7" />
 		</basic>
 		<level value="1">
-			<detectProperty rangeType="box" distance="250" rangeOffset="0.000000,0.000000,50.000000" height="150" width="350" />
-			<motion>
-				<motionProperty sequenceName="Attack_01_A" strTagEffects="e0=NPC/Skill/DevilBatTrident/Eff_DevilBatTrident_Attack_01_A.xml" />
+			<detectProperty rangeType="box" distance="250" rangeOffset="0,0,50" height="150" width="350" />
+			<motion sequenceName="Attack_01_A" strTagEffects="e0=NPC/Skill/DevilBatTrident/Eff_DevilBatTrident_Attack_01_A.xml">
 				<attack point="p0" targetCount="10" attacktype="1" brokenOffence="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
-					<rangeProperty rangeType="box" distance="250" height="250" width="350" applyTarget="1" castTarget="1" />
-					<arrowProperty nonTarget="1" />
-					<damageProperty rate="1" effectRemain="NPC/Skill/DevilBatTrident/Eff_DevilBatTrident_BloodyDesire_Hit_01.xml" attackMaterial="1" />
+					<range rangeType="box" distance="250" height="250" width="350" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="1" effectRemain="NPC/Skill/DevilBatTrident/Eff_DevilBatTrident_BloodyDesire_Hit_01.xml" attackMaterial="1" />
 					<actionAdditional additionalID="49034001" level="1" skillTarget="1" skillOwner="1" />
 				</attack>
 			</motion>
@@ -210,13 +195,12 @@
 			<kinds rangeType="1" element="7" />
 		</basic>
 		<level value="1">
-			<detectProperty rangeType="box" distance="250" rangeOffset="0.000000,0.000000,50.000000" height="150" width="350" />
-			<motion>
-				<motionProperty sequenceName="Attack_02_A" strTagEffects="e0=NPC/Skill/DevilBatTrident/Eff_DevilBatTrident_Attack_01_B.xml" />
+			<detectProperty rangeType="box" distance="250" rangeOffset="0,0,50" height="150" width="350" />
+			<motion sequenceName="Attack_02_A" strTagEffects="e0=NPC/Skill/DevilBatTrident/Eff_DevilBatTrident_Attack_01_B.xml">
 				<attack point="p0" targetCount="10" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
-					<rangeProperty rangeType="box" distance="250" height="250" width="350" applyTarget="1" castTarget="1" />
-					<arrowProperty nonTarget="1" />
-					<damageProperty rate="1.2" effectRemain="NPC/Skill/DevilBatTrident/Eff_DevilBatTrident_BloodyDesire_Hit_01.xml" attackMaterial="1" />
+					<range rangeType="box" distance="250" height="250" width="350" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="1.2" effectRemain="NPC/Skill/DevilBatTrident/Eff_DevilBatTrident_BloodyDesire_Hit_01.xml" attackMaterial="1" />
 					<actionAdditional additionalID="49034001" level="1" skillTarget="1" skillOwner="1" />
 				</attack>
 			</motion>
@@ -228,13 +212,12 @@
 			<kinds rangeType="2" element="1" />
 		</basic>
 		<level value="1">
-			<detectProperty rangeType="cylinder" distance="3500" rangeOffset="0.000000,0.000000,-750.000000" height="1500" />
-			<motion>
-				<motionProperty sequenceName="Attack_01_A" motionEffect="NPC/Skill/FireDog/Eff_FireDog_Attack_01_A_Cast_01.xml" />
+			<detectProperty rangeType="cylinder" distance="3500" rangeOffset="0,0,-750" height="1500" />
+			<motion sequenceName="Attack_01_A" motionEffect="NPC/Skill/FireDog/Eff_FireDog_Attack_01_A_Cast_01.xml">
 				<attack point="p0" targetCount="1" magicPathID="49064001" cubeMagicPathID="490640001" attacktype="2" attackMethodType="1" brokenOffence="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
-					<rangeProperty rangeType="frustum" distance="750" height="150" width="150" endWidth="900" applyTarget="1" castTarget="1" />
-					<arrowProperty nonTarget="1" collision="70.000000,70.000000,70.000000" effect="NPC/Skill/FireDog/Eff_FireDog_Attack_01_A_Ball_01.xml" targetKeepEffect="NPC/Skill/DevilHugeBlue/Eff_DevilHugeBlue_GuidedTarget.xml" />
-					<damageProperty count="0" attackMaterial="1" />
+					<range rangeType="frustum" distance="750" height="150" width="150" endWidth="900" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" collision="70,70,70" effect="NPC/Skill/FireDog/Eff_FireDog_Attack_01_A_Ball_01.xml" targetKeepEffect="NPC/Skill/DevilHugeBlue/Eff_DevilHugeBlue_GuidedTarget.xml" />
+					<damage count="0" attackMaterial="1" />
 					<actionSkill skillID="42020201" level="1" immediateActive="1" nonTargetActive="1" />
 				</attack>
 			</motion>
@@ -246,11 +229,10 @@
 			<kinds rangeType="1" element="1" />
 		</basic>
 		<level value="1">
-			<motion>
-				<motionProperty splashInvokeEffect="NPC/Skill/FireDog/Eff_FireDog_Attack_01_A_Invoke_01.xml" faceTarget="0" />
+			<motion splashInvokeEffect="NPC/Skill/FireDog/Eff_FireDog_Attack_01_A_Invoke_01.xml" faceTarget="0">
 				<attack point="p0" targetCount="1" attacktype="2" brokenOffence="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
-					<rangeProperty rangeType="cylinder" distance="200" height="150" applyTarget="1" castTarget="1" />
-					<damageProperty rate="1" attackMaterial="100" />
+					<range rangeType="cylinder" distance="200" height="150" applyTarget="1" castTarget="1" />
+					<damage rate="1" attackMaterial="100" />
 				</attack>
 			</motion>
 		</level>
@@ -262,12 +244,11 @@
 		</basic>
 		<level value="1">
 			<detectProperty rangeType="cylinder" distance="1350" height="300" />
-			<motion>
-				<motionProperty sequenceName="Attack_01_A" motionEffect="NPC/Skill/Nepenthes/Eff_Nepenthes_Attack_01_A.xml" />
+			<motion sequenceName="Attack_01_A" motionEffect="NPC/Skill/Nepenthes/Eff_Nepenthes_Attack_01_A.xml">
 				<attack point="p0" targetCount="1" magicPathID="5743" attacktype="2" attackMethodType="1" brokenOffence="1" unrideOnHit="1" compulsionType="1,3">
-					<rangeProperty rangeType="cylinder" distance="1350" height="300" applyTarget="1" castTarget="1" targetSelectType="3" targetHasBuffID="70002109" />
-					<arrowProperty explosion="1" rayPhysxTest="1" nonTarget="2" collision="80.000000,40.000000,50.000000" collisionAdd="40.000000,30.000000,25.000000" effect="NPC/Skill/Nepenthes/Eff_Nepenthes_Attack_01_A_HugeBall.xml" effectRemain="NPC/Common/Eff_NPC_Attack_Hit_01.xml" />
-					<damageProperty value="50" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" isConstDamageValue="1" attackMaterial="103" />
+					<range rangeType="cylinder" distance="1350" height="300" applyTarget="1" castTarget="1" targetSelectType="3" targetHasBuffID="70002109" />
+					<arrow explosion="1" rayPhysxTest="1" nonTarget="2" collision="80,40,50" collisionAdd="40,30,25" effect="NPC/Skill/Nepenthes/Eff_Nepenthes_Attack_01_A_HugeBall.xml" effectRemain="NPC/Common/Eff_NPC_Attack_Hit_01.xml" />
+					<damage value="50" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" isConstDamageValue="1" attackMaterial="103" />
 					<actionAdditional additionalID="70002111" level="1" skillTarget="2" skillOwner="1" />
 				</attack>
 			</motion>
@@ -280,29 +261,27 @@
 		</basic>
 		<level value="1">
 			<detectProperty rangeType="cylinder" distance="1200" height="300" />
-			<motion>
-				<motionProperty sequenceName="Attack_01_A" motionEffect="NPC/Skill/Nepenthes/Eff_Nepenthes_Attack_01_A.xml" />
+			<motion sequenceName="Attack_01_A" motionEffect="NPC/Skill/Nepenthes/Eff_Nepenthes_Attack_01_A.xml">
 				<attack point="p0" targetCount="1" magicPathID="5743" attacktype="2" attackMethodType="1" brokenOffence="1" unrideOnHit="1" compulsionType="1,3">
-					<rangeProperty rangeType="cylinder" distance="1200" height="300" applyTarget="1" castTarget="1" targetSelectType="3" targetHasBuffID="70002109" />
-					<arrowProperty explosion="1" rayPhysxTest="1" nonTarget="2" collision="80.000000,40.000000,50.000000" collisionAdd="40.000000,30.000000,25.000000" effect="NPC/Skill/Nepenthes/Eff_Nepenthes_Attack_01_A_HugeBall.xml" effectRemain="NPC/Common/Eff_NPC_Attack_Hit_01.xml" />
-					<damageProperty value="50" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" isConstDamageValue="1" attackMaterial="103" />
+					<range rangeType="cylinder" distance="1200" height="300" applyTarget="1" castTarget="1" targetSelectType="3" targetHasBuffID="70002109" />
+					<arrow explosion="1" rayPhysxTest="1" nonTarget="2" collision="80,40,50" collisionAdd="40,30,25" effect="NPC/Skill/Nepenthes/Eff_Nepenthes_Attack_01_A_HugeBall.xml" effectRemain="NPC/Common/Eff_NPC_Attack_Hit_01.xml" />
+					<damage value="50" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" isConstDamageValue="1" attackMaterial="103" />
 					<actionAdditional additionalID="70002111" level="1" skillTarget="2" skillOwner="1" />
 				</attack>
 			</motion>
 		</level>
 	</skill>
 	<skill id="42030003" comment="네펜투스 (아이오브라펜타)">
-		<basic>
+		<basic mainType="30">
 			<ui attackType="2" />
 			<kinds rangeType="1" element="7" />
 		</basic>
 		<level value="1">
 			<detectProperty rangeType="cylinder" distance="900" height="300" />
-			<motion>
-				<motionProperty splashInvokeEffect="NPC/Skill/Nepenthes/Eff_Nepenthes_Bigball_Invoke.xml" />
+			<motion splashInvokeEffect="NPC/Skill/Nepenthes/Eff_Nepenthes_Bigball_Invoke.xml">
 				<attack point="p0" targetCount="10" attacktype="2" unrideOnHit="1" compulsionType="1,3">
-					<rangeProperty rangeType="cylinder" distance="15000" height="10000" applyTarget="1" castTarget="1" />
-					<damageProperty rate="1" damageByTargetMaxHP="0.5" attackMaterial="103" />
+					<range rangeType="cylinder" distance="15000" height="10000" applyTarget="1" castTarget="1" />
+					<damage rate="1" damageByTargetMaxHP="0.5" attackMaterial="103" />
 				</attack>
 			</motion>
 		</level>
@@ -314,12 +293,11 @@
 		</basic>
 		<level value="1">
 			<detectProperty rangeType="cylinder" distance="1200" height="300" />
-			<motion>
-				<motionProperty sequenceName="Attack_01_A" motionEffect="NPC/Skill/Nepenthes/Eff_Nepenthes_Attack_01_A.xml" />
+			<motion sequenceName="Attack_01_A" motionEffect="NPC/Skill/Nepenthes/Eff_Nepenthes_Attack_01_A.xml">
 				<attack point="p0" targetCount="1" magicPathID="5743" attacktype="2" attackMethodType="1" unrideOnHit="1" compulsionType="1">
-					<rangeProperty rangeType="cylinder" distance="1200" height="300" applyTarget="1" castTarget="1" />
-					<arrowProperty explosion="1" rayPhysxTest="1" collision="80.000000,40.000000,50.000000" collisionAdd="40.000000,30.000000,25.000000" effect="NPC/Skill/Nepenthes/Eff_Nepenthes_Attack_01_A_HugeBall.xml" effectRemain="NPC/Common/Eff_NPC_Attack_Hit_01.xml" />
-					<damageProperty rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="103" />
+					<range rangeType="cylinder" distance="1200" height="300" applyTarget="1" castTarget="1" />
+					<arrow explosion="1" rayPhysxTest="1" collision="80,40,50" collisionAdd="40,30,25" effect="NPC/Skill/Nepenthes/Eff_Nepenthes_Attack_01_A_HugeBall.xml" effectRemain="NPC/Common/Eff_NPC_Attack_Hit_01.xml" />
+					<damage rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="103" />
 				</attack>
 			</motion>
 		</level>
@@ -331,12 +309,11 @@
 		</basic>
 		<level value="1">
 			<detectProperty rangeType="cylinder" distance="900" height="350" />
-			<motion>
-				<motionProperty sequenceName="Attack_01_B" motionEffect="NPC/Skill/LegionWar/Eff_BlackRobeMagician_Attack_01_Cast_01.xml" />
+			<motion sequenceName="Attack_01_B" motionEffect="NPC/Skill/LegionWar/Eff_BlackRobeMagician_Attack_01_Cast_01.xml">
 				<attack point="p0" targetCount="1" magicPathID="6601" cubeMagicPathID="50000707" attacktype="2" attackMethodType="1" brokenOffence="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
-					<rangeProperty rangeType="cylinder" distance="900" height="250" applyTarget="5" castTarget="1" />
-					<arrowProperty explosion="1" rayPhysxTest="1" collision="70.000000,70.000000,70.000000" effect="NPC/Skill/LegionWar/Eff_BlackRobeMagician_Attack_01_A_ThrowGuided_Ball.xml" />
-					<damageProperty count="0" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
+					<range rangeType="cylinder" distance="900" height="250" applyTarget="5" castTarget="1" />
+					<arrow explosion="1" rayPhysxTest="1" collision="70,70,70" effect="NPC/Skill/LegionWar/Eff_BlackRobeMagician_Attack_01_A_ThrowGuided_Ball.xml" />
+					<damage count="0" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
 					<actionSkill skillID="42030102" level="1" delay="1500" nonTargetActive="1" />
 				</attack>
 			</motion>
@@ -348,11 +325,10 @@
 			<kinds element="7" />
 		</basic>
 		<level value="1">
-			<motion>
-				<motionProperty motionEffect="NPC/Skill/CubeSkill/Eff_Monster_CubeSkill_Notice_A.xml" splashInvokeEffect="NPC/Skill/LegionWar/Eff_BlackRobeMagician_Attack_01_A_Invoke.xml" faceTarget="0" />
+			<motion motionEffect="NPC/Skill/CubeSkill/Eff_Monster_CubeSkill_Notice_A.xml" splashInvokeEffect="NPC/Skill/LegionWar/Eff_BlackRobeMagician_Attack_01_A_Invoke.xml" faceTarget="0">
 				<attack point="p0" targetCount="10" attacktype="2" brokenOffence="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
-					<rangeProperty rangeType="box" distance="75" rangeAdd="0.000000,75.000000,0.000000" height="250" width="150" applyTarget="5" castTarget="1" />
-					<damageProperty count="0" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
+					<range rangeType="box" distance="75" rangeAdd="0,75,0" height="250" width="150" applyTarget="5" castTarget="1" />
+					<damage count="0" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
 					<actionAdditional additionalID="42030101" level="1" skillTarget="2" skillOwner="1" />
 				</attack>
 			</motion>
@@ -364,13 +340,12 @@
 			<kinds rangeType="2" element="7" />
 		</basic>
 		<level value="1">
-			<detectProperty rangeType="cylinder" distance="750" rangeOffset="0.000000,0.000000,-750.000000" height="700" />
-			<motion>
-				<motionProperty sequenceName="Attack_01_A" motionEffect="NPC/Skill/FireDog/Eff_FireDog_Attack_01_A_Cast_01.xml" strTagEffects="e0=NPC/Skill/DevilBatTrident/Eff_DevilBatTrident_Attack_01_A.xml" />
+			<detectProperty rangeType="cylinder" distance="750" rangeOffset="0,0,-750" height="700" />
+			<motion sequenceName="Attack_01_A" motionEffect="NPC/Skill/FireDog/Eff_FireDog_Attack_01_A_Cast_01.xml" strTagEffects="e0=NPC/Skill/DevilBatTrident/Eff_DevilBatTrident_Attack_01_A.xml">
 				<attack point="p0" targetCount="1" magicPathID="49064001" cubeMagicPathID="490640001" attacktype="2" attackMethodType="1" brokenOffence="1" unrideOnHit="1">
-					<rangeProperty rangeType="frustum" distance="750" height="150" width="150" endWidth="900" applyTarget="1" castTarget="1" />
-					<arrowProperty collision="70.000000,70.000000,70.000000" effect="NPC/Skill/FireDog/Eff_FireDog_Attack_01_A_Ball_01.xml" targetKeepEffect="NPC/Skill/DevilHugeBlue/Eff_DevilHugeBlue_GuidedTarget.xml" />
-					<damageProperty rate="1" effectRemain="NPC/Skill/DevilBatTrident/Eff_DevilBatTrident_BloodyDesire_Hit_01.xml" attackMaterial="1" />
+					<range rangeType="frustum" distance="750" height="150" width="150" endWidth="900" applyTarget="1" castTarget="1" />
+					<arrow collision="70,70,70" effect="NPC/Skill/FireDog/Eff_FireDog_Attack_01_A_Ball_01.xml" targetKeepEffect="NPC/Skill/DevilHugeBlue/Eff_DevilHugeBlue_GuidedTarget.xml" />
+					<damage rate="1" effectRemain="NPC/Skill/DevilBatTrident/Eff_DevilBatTrident_BloodyDesire_Hit_01.xml" attackMaterial="1" />
 					<actionAdditional additionalID="49034001" level="1" skillTarget="1" skillOwner="1" />
 				</attack>
 			</motion>
@@ -383,12 +358,11 @@
 		</basic>
 		<level value="1">
 			<detectProperty rangeType="cylinder" distance="900" height="350" />
-			<motion>
-				<motionProperty sequenceName="Attack_01_B" motionEffect="NPC/Skill/LegionWar/Eff_BlackRobeMagician_Attack_01_Cast_01.xml" />
+			<motion sequenceName="Attack_01_B" motionEffect="NPC/Skill/LegionWar/Eff_BlackRobeMagician_Attack_01_Cast_01.xml">
 				<attack point="p0" targetCount="1" magicPathID="6601" cubeMagicPathID="50000706" attacktype="2" attackMethodType="1" brokenOffence="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
-					<rangeProperty rangeType="cylinder" distance="900" height="250" applyTarget="5" castTarget="1" />
-					<arrowProperty explosion="1" rayPhysxTest="1" collision="70.000000,70.000000,70.000000" effect="NPC/Skill/LegionWar/Eff_BlackRobeMagician_Attack_01_A_ThrowGuided_Ball.xml" />
-					<damageProperty count="0" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
+					<range rangeType="cylinder" distance="900" height="250" applyTarget="5" castTarget="1" />
+					<arrow explosion="1" rayPhysxTest="1" collision="70,70,70" effect="NPC/Skill/LegionWar/Eff_BlackRobeMagician_Attack_01_A_ThrowGuided_Ball.xml" />
+					<damage count="0" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
 					<actionSkill skillID="42030112" level="1" delay="1500" nonTargetActive="1" />
 				</attack>
 			</motion>
@@ -398,14 +372,13 @@
 		<basic mainType="30">
 			<ui attackType="2" />
 			<kinds element="7" />
+			<push up="1" />
 		</basic>
 		<level value="1">
-			<push up="1" />
-			<motion>
-				<motionProperty motionEffect="NPC/Skill/LegionWar/Eff_Monster_CubeSkill_Notice_A.xml" splashInvokeEffect="NPC/Skill/LegionWar/Eff_BlackRobeMagician_Attack_01_A_Invoke.xml" faceTarget="0" />
+			<motion motionEffect="NPC/Skill/LegionWar/Eff_Monster_CubeSkill_Notice_A.xml" splashInvokeEffect="NPC/Skill/LegionWar/Eff_BlackRobeMagician_Attack_01_A_Invoke.xml" faceTarget="0">
 				<attack point="p0" targetCount="10" attacktype="2" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
-					<rangeProperty rangeType="box" distance="75" rangeAdd="0.000000,75.000000,0.000000" height="250" width="150" applyTarget="5" castTarget="1" />
-					<damageProperty rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushduration="1" pushEaseType="1" pushUpDistance="450" pushPriority="99" attackMaterial="1" />
+					<range rangeType="box" distance="75" rangeAdd="0,75,0" height="250" width="150" applyTarget="5" castTarget="1" />
+					<damage rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushduration="1" pushEaseType="1" pushUpDistance="450" pushPriority="99" attackMaterial="1" />
 					<actionAdditional additionalID="42030111" level="1" skillTarget="2" skillOwner="1" />
 				</attack>
 			</motion>
@@ -418,12 +391,11 @@
 		</basic>
 		<level value="1">
 			<detectProperty rangeType="cylinder" distance="900" height="350" />
-			<motion>
-				<motionProperty sequenceName="Attack_01_B" motionEffect="NPC/Skill/LegionWar/Eff_BlackRobeMagician_Attack_01_Cast_01.xml" />
+			<motion sequenceName="Attack_01_B" motionEffect="NPC/Skill/LegionWar/Eff_BlackRobeMagician_Attack_01_Cast_01.xml">
 				<attack point="p0" targetCount="1" magicPathID="6601" cubeMagicPathID="50000706" attacktype="2" attackMethodType="1" brokenOffence="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
-					<rangeProperty rangeType="cylinder" distance="900" height="250" applyTarget="5" castTarget="1" />
-					<arrowProperty explosion="1" rayPhysxTest="1" collision="70.000000,70.000000,70.000000" effect="NPC/Skill/LegionWar/Eff_BlackRobeMagician_Attack_01_A_ThrowGuided_Ball.xml" />
-					<damageProperty count="0" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
+					<range rangeType="cylinder" distance="900" height="250" applyTarget="5" castTarget="1" />
+					<arrow explosion="1" rayPhysxTest="1" collision="70,70,70" effect="NPC/Skill/LegionWar/Eff_BlackRobeMagician_Attack_01_A_ThrowGuided_Ball.xml" />
+					<damage count="0" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
 					<actionSkill skillID="42030122" level="1" delay="1500" nonTargetActive="1" />
 				</attack>
 			</motion>
@@ -435,11 +407,10 @@
 			<kinds element="7" />
 		</basic>
 		<level value="1">
-			<motion>
-				<motionProperty motionEffect="NPC/Skill/LegionWar/Eff_Monster_CubeSkill_Notice_A.xml" splashInvokeEffect="NPC/Skill/LegionWar/Eff_BlackRobeMagician_Attack_01_A_Invoke.xml" faceTarget="0" />
+			<motion motionEffect="NPC/Skill/LegionWar/Eff_Monster_CubeSkill_Notice_A.xml" splashInvokeEffect="NPC/Skill/LegionWar/Eff_BlackRobeMagician_Attack_01_A_Invoke.xml" faceTarget="0">
 				<attack point="p0" targetCount="10" attacktype="2" brokenOffence="1" unrideOnHit="1">
-					<rangeProperty rangeType="box" distance="75" rangeAdd="0.000000,75.000000,0.000000" height="250" width="150" applyTarget="5" castTarget="1" />
-					<damageProperty rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
+					<range rangeType="box" distance="75" rangeAdd="0,75,0" height="250" width="150" applyTarget="5" castTarget="1" />
+					<damage rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
 					<actionAdditional additionalID="42030121" level="1" skillTarget="2" skillOwner="1" />
 				</attack>
 			</motion>
@@ -451,20 +422,19 @@
 			<kinds rangeType="1" element="7" />
 		</basic>
 		<level value="1">
-			<detectProperty rangeType="box" distance="1250" rangeOffset="0.000000,0.000000,50.000000" height="200" width="500" />
-			<motion>
-				<motionProperty sequenceName="Attack_01_A" motionEffect="NPC/Skill/PigGoblinHugeWhite/Eff_PigGoblinHugeWhite_Attack_01_A_Cast_NoVoice.xml" strTagEffects="e0=NPC/Skill/PigGoblinHugeWhite/Eff_PigGoblinHugeWhite_Attack_01_A_01.xml,e1=NPC/Skill/PigGoblinHugeWhite/Eff_PigGoblinHugeWhite_Attack_01_A_02.xml,e2=NPC/Skill/PigGoblinHugeWhite/Eff_PigGoblinHugeWhite_Attack_01_A_03.xml" faceTarget="0" />
+			<detectProperty rangeType="box" distance="1250" rangeOffset="0,0,50" height="200" width="500" />
+			<motion sequenceName="Attack_01_A" motionEffect="NPC/Skill/PigGoblinHugeWhite/Eff_PigGoblinHugeWhite_Attack_01_A_Cast_NoVoice.xml" strTagEffects="e0=NPC/Skill/PigGoblinHugeWhite/Eff_PigGoblinHugeWhite_Attack_01_A_01.xml,e1=NPC/Skill/PigGoblinHugeWhite/Eff_PigGoblinHugeWhite_Attack_01_A_02.xml,e2=NPC/Skill/PigGoblinHugeWhite/Eff_PigGoblinHugeWhite_Attack_01_A_03.xml" faceTarget="0">
 				<attack point="p0" targetCount="30" attacktype="1" brokenOffence="1" brokenForce="1" unrideOnHit="1">
-					<rangeProperty rangeType="cylinder" distance="350" rangeOffset="0.000000,750.000000,0.000000" height="200" applyTarget="1" castTarget="1" />
-					<damageProperty effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="5" />
+					<range rangeType="cylinder" distance="350" rangeOffset="0,750,0" height="200" applyTarget="1" castTarget="1" />
+					<damage effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="5" />
 				</attack>
 				<attack point="p1" targetCount="30" attacktype="1" brokenOffence="1" brokenForce="1" unrideOnHit="1">
-					<rangeProperty rangeType="cylinder" distance="600" rangeOffset="0.000000,600.000000,0.000000" height="200" applyTarget="1" castTarget="1" />
-					<damageProperty effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="5" />
+					<range rangeType="cylinder" distance="600" rangeOffset="0,600,0" height="200" applyTarget="1" castTarget="1" />
+					<damage effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="5" />
 				</attack>
 				<attack point="p2" targetCount="30" attacktype="1" brokenOffence="1" brokenForce="1" unrideOnHit="1">
-					<rangeProperty rangeType="cylinder" distance="750" rangeOffset="0.000000,600.000000,0.000000" height="200" applyTarget="1" castTarget="1" />
-					<damageProperty effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="5" />
+					<range rangeType="cylinder" distance="750" rangeOffset="0,600,0" height="200" applyTarget="1" castTarget="1" />
+					<damage effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="5" />
 				</attack>
 			</motion>
 		</level>
@@ -475,12 +445,11 @@
 			<kinds rangeType="1" element="7" />
 		</basic>
 		<level value="1">
-			<detectProperty rangeType="box" distance="600" rangeOffset="0.000000,0.000000,50.000000" height="200" width="300" />
-			<motion>
-				<motionProperty sequenceName="Attack_01_B" faceTarget="0" />
+			<detectProperty rangeType="box" distance="600" rangeOffset="0,0,50" height="200" width="300" />
+			<motion sequenceName="Attack_01_B" faceTarget="0">
 				<attack point="p0" targetCount="30" attacktype="1" brokenOffence="1" brokenForce="1" unrideOnHit="1">
-					<rangeProperty rangeType="hole_cylinder" height="200" width="450" endWidth="600" applyTarget="1" castTarget="1" />
-					<damageProperty effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="5" />
+					<range rangeType="hole_cylinder" height="200" width="450" endWidth="600" applyTarget="1" castTarget="1" />
+					<damage effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="5" />
 				</attack>
 			</motion>
 		</level>
@@ -491,32 +460,31 @@
 			<kinds rangeType="1" element="7" />
 		</basic>
 		<level value="1">
-			<detectProperty rangeType="cylinder" distance="1200" rangeOffset="0.000000,0.000000,50.000000" height="200" />
-			<motion>
-				<motionProperty sequenceName="Attack_01_C" faceTarget="0" />
+			<detectProperty rangeType="cylinder" distance="1200" rangeOffset="0,0,50" height="200" />
+			<motion sequenceName="Attack_01_C" faceTarget="0">
 				<attack point="p0" targetCount="30" attacktype="1" brokenOffence="1" brokenForce="1" unrideOnHit="1">
-					<rangeProperty rangeType="cylinder" distance="750" rangeOffset="0.000000,750.000000,0.000000" height="200" applyTarget="1" castTarget="1" />
-					<damageProperty effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="5" />
+					<range rangeType="cylinder" distance="750" rangeOffset="0,750,0" height="200" applyTarget="1" castTarget="1" />
+					<damage effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="5" />
 				</attack>
 				<attack point="p1" targetCount="30" attacktype="1" brokenOffence="1" brokenForce="1" unrideOnHit="1">
-					<rangeProperty rangeType="cylinder" distance="750" rangeOffset="0.000000,-750.000000,0.000000" height="200" applyTarget="1" castTarget="1" />
-					<damageProperty effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="5" />
+					<range rangeType="cylinder" distance="750" rangeOffset="0,-750,0" height="200" applyTarget="1" castTarget="1" />
+					<damage effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="5" />
 				</attack>
 				<attack point="p2" targetCount="30" attacktype="1" brokenOffence="1" brokenForce="1" unrideOnHit="1">
-					<rangeProperty rangeType="cylinder" distance="750" rangeOffset="0.000000,750.000000,0.000000" height="200" applyTarget="1" castTarget="1" />
-					<damageProperty effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="5" />
+					<range rangeType="cylinder" distance="750" rangeOffset="0,750,0" height="200" applyTarget="1" castTarget="1" />
+					<damage effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="5" />
 				</attack>
 				<attack point="p3" targetCount="30" attacktype="1" brokenOffence="1" brokenForce="1" unrideOnHit="1">
-					<rangeProperty rangeType="cylinder" distance="750" rangeOffset="0.000000,-750.000000,0.000000" height="200" applyTarget="1" castTarget="1" />
-					<damageProperty effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="5" />
+					<range rangeType="cylinder" distance="750" rangeOffset="0,-750,0" height="200" applyTarget="1" castTarget="1" />
+					<damage effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="5" />
 				</attack>
 				<attack point="p4" targetCount="30" attacktype="1" brokenOffence="1" brokenForce="1" unrideOnHit="1">
-					<rangeProperty rangeType="cylinder" distance="750" rangeOffset="0.000000,750.000000,0.000000" height="200" applyTarget="1" castTarget="1" />
-					<damageProperty effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="5" />
+					<range rangeType="cylinder" distance="750" rangeOffset="0,750,0" height="200" applyTarget="1" castTarget="1" />
+					<damage effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="5" />
 				</attack>
 				<attack point="p5" targetCount="30" attacktype="1" brokenOffence="1" brokenForce="1" unrideOnHit="1">
-					<rangeProperty rangeType="cylinder" distance="750" rangeOffset="0.000000,-750.000000,0.000000" height="200" applyTarget="1" castTarget="1" />
-					<damageProperty effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="5" />
+					<range rangeType="cylinder" distance="750" rangeOffset="0,-750,0" height="200" applyTarget="1" castTarget="1" />
+					<damage effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="5" />
 				</attack>
 			</motion>
 		</level>
@@ -527,13 +495,12 @@
 			<kinds rangeType="2" element="7" />
 		</basic>
 		<level value="1">
-			<detectProperty rangeType="box" distance="1200" rangeAdd="0.000000,0.000000,140.000000" height="200" width="1000" />
-			<motion>
-				<motionProperty sequenceName="Attack_01_D" faceTarget="0" />
+			<detectProperty rangeType="box" distance="1200" rangeAdd="0,0,140" height="200" width="1000" />
+			<motion sequenceName="Attack_01_D" faceTarget="0">
 				<attack point="p0" targetCount="1" cubeMagicPathID="42030161" attacktype="2" attackMethodType="2" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
-					<rangeProperty rangeType="box" distance="2000" rangeAdd="0.000000,0.000000,140.000000" height="300" width="1000" applyTarget="1" castTarget="1" />
-					<arrowProperty effect="NPC/Skill/PigGoblinHugeWhite/Eff_PigGoblinHugeWhite_Attack_01_D_Ray.xml" rayType="1" />
-					<damageProperty effectHit="NPC/Skill/PigGoblinHugeWhite/Eff_PigGoblinHugeWhite_Attack_01_D_Hit.xml" damageByTargetMaxHP="4" push="1" pushDown="1" pushPriorityHitImmune="1600" attackMaterial="1" />
+					<range rangeType="box" distance="2000" rangeAdd="0,0,140" height="300" width="1000" applyTarget="1" castTarget="1" />
+					<arrow effect="NPC/Skill/PigGoblinHugeWhite/Eff_PigGoblinHugeWhite_Attack_01_D_Ray.xml" rayType="1" />
+					<damage effectHit="NPC/Skill/PigGoblinHugeWhite/Eff_PigGoblinHugeWhite_Attack_01_D_Hit.xml" damageByTargetMaxHP="4" push="1" pushDown="1" pushPriorityHitImmune="1600" attackMaterial="1" />
 				</attack>
 			</motion>
 		</level>
@@ -542,23 +509,22 @@
 		<basic>
 			<ui attackType="2" />
 			<kinds rangeType="2" element="7" />
+			<push up="1" />
 		</basic>
 		<level value="1">
-			<push up="1" />
-			<detectProperty rangeType="cylinder" distance="1000" rangeOffset="0.000000,0.000000,50.000000" height="200" />
-			<motion>
-				<motionProperty sequenceName="Attack_01_E" sequenceSpeed="0.5" faceTarget="0" />
+			<detectProperty rangeType="cylinder" distance="1000" rangeOffset="0,0,50" height="200" />
+			<motion sequenceName="Attack_01_E" sequenceSpeed="0.5" faceTarget="0">
 				<attack point="p0" targetCount="30" attacktype="2" hitImmuneBreak="1" brokenOffence="1" brokenForce="1" unrideOnHit="1">
-					<rangeProperty rangeType="cylinder" distance="1000" height="200" applyTarget="1" castTarget="1" />
-					<damageProperty effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" damageByTargetMaxHP="1" pushDown="1" pushPriorityHitImmune="200" attackMaterial="5" />
+					<range rangeType="cylinder" distance="1000" height="200" applyTarget="1" castTarget="1" />
+					<damage effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" damageByTargetMaxHP="1" pushDown="1" pushPriorityHitImmune="200" attackMaterial="5" />
 				</attack>
 				<attack point="p1" targetCount="30" attacktype="2" hitImmuneBreak="1" brokenOffence="1" brokenForce="1" unrideOnHit="1">
-					<rangeProperty rangeType="cylinder" distance="1000" height="200" applyTarget="1" castTarget="1" />
-					<damageProperty effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" damageByTargetMaxHP="1" pushDown="1" pushPriorityHitImmune="200" attackMaterial="5" />
+					<range rangeType="cylinder" distance="1000" height="200" applyTarget="1" castTarget="1" />
+					<damage effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" damageByTargetMaxHP="1" pushDown="1" pushPriorityHitImmune="200" attackMaterial="5" />
 				</attack>
 				<attack point="p2" targetCount="30" attacktype="2" hitImmuneBreak="1" brokenOffence="1" brokenForce="1" unrideOnHit="1">
-					<rangeProperty rangeType="cylinder" distance="1000" height="200" applyTarget="1" castTarget="1" />
-					<damageProperty effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" damageByTargetMaxHP="1" pushDown="1" pushPriorityHitImmune="200" attackMaterial="5" />
+					<range rangeType="cylinder" distance="1000" height="200" applyTarget="1" castTarget="1" />
+					<damage effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" damageByTargetMaxHP="1" pushDown="1" pushPriorityHitImmune="200" attackMaterial="5" />
 				</attack>
 			</motion>
 		</level>
@@ -569,32 +535,31 @@
 			<kinds rangeType="1" element="7" />
 		</basic>
 		<level value="1">
-			<detectProperty rangeType="box" distance="600" rangeOffset="0.000000,0.000000,50.000000" height="200" width="300" />
-			<motion>
-				<motionProperty sequenceName="Move_02_A" movedistance="600" faceTarget="0" />
+			<detectProperty rangeType="box" distance="600" rangeOffset="0,0,50" height="200" width="300" />
+			<motion sequenceName="Move_02_A" movedistance="600" faceTarget="0">
 				<attack point="p0" targetCount="30" attacktype="1" hitImmuneBreak="1" brokenOffence="1" brokenForce="1" unrideOnHit="1">
-					<rangeProperty rangeType="hole_cylinder" height="200" width="450" endWidth="600" applyTarget="1" castTarget="1" />
-					<damageProperty count="0" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="5" />
+					<range rangeType="hole_cylinder" height="200" width="450" endWidth="600" applyTarget="1" castTarget="1" />
+					<damage count="0" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="5" />
 				</attack>
 				<attack point="p1" targetCount="30" attacktype="1" hitImmuneBreak="1" brokenOffence="1" brokenForce="1" unrideOnHit="1">
-					<rangeProperty rangeType="hole_cylinder" height="200" width="450" endWidth="600" applyTarget="1" castTarget="1" />
-					<damageProperty effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="5" />
+					<range rangeType="hole_cylinder" height="200" width="450" endWidth="600" applyTarget="1" castTarget="1" />
+					<damage effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="5" />
 				</attack>
 				<attack point="p2" targetCount="30" attacktype="1" hitImmuneBreak="1" brokenOffence="1" brokenForce="1" unrideOnHit="1">
-					<rangeProperty rangeType="hole_cylinder" height="200" width="450" endWidth="600" applyTarget="1" castTarget="1" />
-					<damageProperty effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="5" />
+					<range rangeType="hole_cylinder" height="200" width="450" endWidth="600" applyTarget="1" castTarget="1" />
+					<damage effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="5" />
 				</attack>
 				<attack point="p3" targetCount="30" attacktype="1" hitImmuneBreak="1" brokenOffence="1" brokenForce="1" unrideOnHit="1">
-					<rangeProperty rangeType="hole_cylinder" height="200" width="450" endWidth="600" applyTarget="1" castTarget="1" />
-					<damageProperty effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="5" />
+					<range rangeType="hole_cylinder" height="200" width="450" endWidth="600" applyTarget="1" castTarget="1" />
+					<damage effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="5" />
 				</attack>
 				<attack point="p4" targetCount="30" attacktype="1" hitImmuneBreak="1" brokenOffence="1" brokenForce="1" unrideOnHit="1">
-					<rangeProperty rangeType="hole_cylinder" height="200" width="450" endWidth="600" applyTarget="1" castTarget="1" />
-					<damageProperty effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="5" />
+					<range rangeType="hole_cylinder" height="200" width="450" endWidth="600" applyTarget="1" castTarget="1" />
+					<damage effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="5" />
 				</attack>
 				<attack point="p5" targetCount="30" attacktype="1" hitImmuneBreak="1" brokenOffence="1" brokenForce="1" unrideOnHit="1">
-					<rangeProperty rangeType="hole_cylinder" height="200" width="450" endWidth="600" applyTarget="1" castTarget="1" />
-					<damageProperty count="0" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="5" />
+					<range rangeType="hole_cylinder" height="200" width="450" endWidth="600" applyTarget="1" castTarget="1" />
+					<damage count="0" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="5" />
 				</attack>
 			</motion>
 		</level>
@@ -605,12 +570,11 @@
 			<kinds rangeType="1" element="7" />
 		</basic>
 		<level value="1">
-			<detectProperty rangeType="box" distance="750" rangeOffset="0.000000,0.000000,50.000000" height="200" width="1050" />
-			<motion>
-				<motionProperty sequenceName="Attack_01_F" motionEffect="NPC/Skill/PigGoblinHugeWhite/Eff_PigGoblinHugeWhite_Attack_01_F_Cast_NoVoice.xml" faceTarget="0" />
+			<detectProperty rangeType="box" distance="750" rangeOffset="0,0,50" height="200" width="1050" />
+			<motion sequenceName="Attack_01_F" motionEffect="NPC/Skill/PigGoblinHugeWhite/Eff_PigGoblinHugeWhite_Attack_01_F_Cast_NoVoice.xml" faceTarget="0">
 				<attack point="p0" targetCount="30" attacktype="1" brokenOffence="1" brokenForce="1" unrideOnHit="1">
-					<rangeProperty rangeType="box" distance="750" height="200" width="1050" applyTarget="1" castTarget="1" />
-					<damageProperty effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="5" />
+					<range rangeType="box" distance="750" height="200" width="1050" applyTarget="1" castTarget="1" />
+					<damage effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="5" />
 				</attack>
 			</motion>
 		</level>
@@ -621,12 +585,11 @@
 			<kinds rangeType="1" element="7" />
 		</basic>
 		<level value="1">
-			<detectProperty rangeType="box" distance="750" rangeOffset="0.000000,0.000000,50.000000" height="200" width="1050" />
-			<motion>
-				<motionProperty sequenceName="Attack_02_F" motionEffect="NPC/Skill/PigGoblinHugeWhite/Eff_PigGoblinHugeWhite_Attack_02_F_Cast_NoVoice.xml" faceTarget="0" />
+			<detectProperty rangeType="box" distance="750" rangeOffset="0,0,50" height="200" width="1050" />
+			<motion sequenceName="Attack_02_F" motionEffect="NPC/Skill/PigGoblinHugeWhite/Eff_PigGoblinHugeWhite_Attack_02_F_Cast_NoVoice.xml" faceTarget="0">
 				<attack point="p0" targetCount="30" attacktype="1" brokenOffence="1" brokenForce="1" unrideOnHit="1">
-					<rangeProperty rangeType="box" distance="750" height="200" width="1050" applyTarget="1" castTarget="1" />
-					<damageProperty effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="5" />
+					<range rangeType="box" distance="750" height="200" width="1050" applyTarget="1" castTarget="1" />
+					<damage effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="5" />
 				</attack>
 			</motion>
 		</level>
@@ -635,15 +598,14 @@
 		<basic>
 			<ui attackType="1" />
 			<kinds rangeType="1" element="7" />
+			<combo npcComboSkillID="42030201" />
 		</basic>
 		<level value="1">
-			<detectProperty rangeType="box" distance="750" rangeOffset="0.000000,0.000000,50.000000" height="200" width="1050" />
-			<combo npcComboSkillID="42030201" />
-			<motion>
-				<motionProperty sequenceName="Attack_01_F" motionEffect="NPC/Skill/PigGoblinHugeWhite/Eff_PigGoblinHugeWhite_Attack_01_F_Cast_NoVoice.xml" faceTarget="0" />
+			<detectProperty rangeType="box" distance="750" rangeOffset="0,0,50" height="200" width="1050" />
+			<motion sequenceName="Attack_01_F" motionEffect="NPC/Skill/PigGoblinHugeWhite/Eff_PigGoblinHugeWhite_Attack_01_F_Cast_NoVoice.xml" faceTarget="0">
 				<attack point="p0" targetCount="30" attacktype="1" hitImmuneBreak="1" brokenOffence="1" brokenForce="1" unrideOnHit="1">
-					<rangeProperty rangeType="box" distance="750" height="200" width="1050" applyTarget="1" castTarget="1" />
-					<damageProperty effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="5" />
+					<range rangeType="box" distance="750" height="200" width="1050" applyTarget="1" castTarget="1" />
+					<damage effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="5" />
 				</attack>
 			</motion>
 		</level>
@@ -654,12 +616,11 @@
 			<kinds rangeType="1" element="7" />
 		</basic>
 		<level value="1">
-			<detectProperty rangeType="box" distance="800" rangeOffset="0.000000,0.000000,50.000000" height="200" width="300" />
-			<motion>
-				<motionProperty sequenceName="Attack_01_G" sequenceSpeed="2" motionEffect="NPC/Skill/PigGoblinHugeWhite/Eff_PigGoblinHugeWhite_Attack_01_G_Cast_NoVoice.xml" movedistance="400" faceTarget="0" />
+			<detectProperty rangeType="box" distance="800" rangeOffset="0,0,50" height="200" width="300" />
+			<motion sequenceName="Attack_01_G" sequenceSpeed="2" motionEffect="NPC/Skill/PigGoblinHugeWhite/Eff_PigGoblinHugeWhite_Attack_01_G_Cast_NoVoice.xml" movedistance="400" faceTarget="0">
 				<attack point="p0" targetCount="30" attacktype="1" hitImmuneBreak="1" brokenOffence="1" brokenForce="1" unrideOnHit="1">
-					<rangeProperty rangeType="box" distance="800" height="200" width="300" applyTarget="1" castTarget="1" />
-					<damageProperty count="0" attackMaterial="5" />
+					<range rangeType="box" distance="800" height="200" width="300" applyTarget="1" castTarget="1" />
+					<damage count="0" attackMaterial="5" />
 				</attack>
 			</motion>
 		</level>
@@ -668,15 +629,14 @@
 		<basic>
 			<ui attackType="1" />
 			<kinds rangeType="1" element="7" />
+			<combo npcComboSkillID="42030141" />
 		</basic>
 		<level value="1">
-			<detectProperty rangeType="box" distance="800" rangeOffset="0.000000,0.000000,50.000000" height="200" width="300" />
-			<combo npcComboSkillID="42030141" npcComboSkillLevel="2" />
-			<motion>
-				<motionProperty sequenceName="Attack_01_G" sequenceSpeed="2" motionEffect="NPC/Skill/PigGoblinHugeWhite/Eff_PigGoblinHugeWhite_Attack_01_G_Cast_NoVoice.xml" movedistance="400" faceTarget="0" />
+			<detectProperty rangeType="box" distance="800" rangeOffset="0,0,50" height="200" width="300" />
+			<motion sequenceName="Attack_01_G" sequenceSpeed="2" motionEffect="NPC/Skill/PigGoblinHugeWhite/Eff_PigGoblinHugeWhite_Attack_01_G_Cast_NoVoice.xml" movedistance="400" faceTarget="0">
 				<attack point="p0" targetCount="30" attacktype="1" hitImmuneBreak="1" brokenOffence="1" brokenForce="1" unrideOnHit="1">
-					<rangeProperty rangeType="box" distance="800" height="200" width="300" applyTarget="1" castTarget="1" />
-					<damageProperty count="0" attackMaterial="5" />
+					<range rangeType="box" distance="800" height="200" width="300" applyTarget="1" castTarget="1" />
+					<damage count="0" attackMaterial="5" />
 				</attack>
 			</motion>
 		</level>
@@ -687,12 +647,11 @@
 			<kinds rangeType="1" element="7" />
 		</basic>
 		<level value="1">
-			<detectProperty rangeType="box" distance="900" rangeOffset="0.000000,0.000000,50.000000" height="200" width="500" />
-			<motion>
-				<motionProperty sequenceName="Attack_01_H" motionEffect="NPC/Skill/PigGoblinHugeWhite/Eff_PigGoblinHugeWhite_Attack_01_H_Cast_NoVoice.xml" strTagEffects="e0=NPC/Skill/PigGoblinHugeWhite/Eff_PigGoblinHugeWhite_Attack_01_H_01.xml" faceTarget="0" />
+			<detectProperty rangeType="box" distance="900" rangeOffset="0,0,50" height="200" width="500" />
+			<motion sequenceName="Attack_01_H" motionEffect="NPC/Skill/PigGoblinHugeWhite/Eff_PigGoblinHugeWhite_Attack_01_H_Cast_NoVoice.xml" strTagEffects="e0=NPC/Skill/PigGoblinHugeWhite/Eff_PigGoblinHugeWhite_Attack_01_H_01.xml" faceTarget="0">
 				<attack point="p0" targetCount="30" attacktype="1" brokenOffence="1" brokenForce="1" unrideOnHit="1">
-					<rangeProperty rangeType="cylinder" distance="350" rangeOffset="0.000000,750.000000,0.000000" height="200" applyTarget="1" castTarget="1" />
-					<damageProperty effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="5" />
+					<range rangeType="cylinder" distance="350" rangeOffset="0,750,0" height="200" applyTarget="1" castTarget="1" />
+					<damage effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="5" />
 				</attack>
 			</motion>
 		</level>
@@ -704,11 +663,10 @@
 		</basic>
 		<level value="1">
 			<detectProperty rangeType="box" distance="300" height="250" width="150" />
-			<motion>
-				<motionProperty sequenceName="Attack_01_A" motionEffect="NPC/Skill/BlackRobeBerserker/Eff_BlackRobeBerserker_Attack_01_A.xml" />
+			<motion sequenceName="Attack_01_A" motionEffect="NPC/Skill/BlackRobeBerserker/Eff_BlackRobeBerserker_Attack_01_A.xml">
 				<attack point="p0" targetCount="30" attacktype="1" brokenOffence="1" unrideOnHit="1">
-					<rangeProperty rangeType="box" distance="350" height="250" width="150" applyTarget="3" castTarget="3" />
-					<damageProperty rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="2" />
+					<range rangeType="box" distance="350" height="250" width="150" applyTarget="3" castTarget="3" />
+					<damage rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="2" />
 					<actionAdditional additionalID="42030251" level="1" skillTarget="2" skillOwner="1" />
 				</attack>
 			</motion>
@@ -722,15 +680,14 @@
 		</basic>
 		<level value="1">
 			<detectProperty rangeType="box" distance="250" height="250" width="120" />
-			<motion>
-				<motionProperty sequenceName="Attack_01_B" motionEffect="NPC/Skill/BlackRobeBerserker/Eff_BlackRobeBerserker_Attack_01_B.xml" />
+			<motion sequenceName="Attack_01_B" motionEffect="NPC/Skill/BlackRobeBerserker/Eff_BlackRobeBerserker_Attack_01_B.xml">
 				<attack point="p0" targetCount="30" attacktype="1" brokenOffence="1" unrideOnHit="1">
-					<rangeProperty rangeType="box" distance="300" height="250" width="120" applyTarget="1" castTarget="1" />
-					<damageProperty rate="0.5" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="2" />
+					<range rangeType="box" distance="300" height="250" width="120" applyTarget="1" castTarget="1" />
+					<damage rate="0.5" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="2" />
 				</attack>
 				<attack point="p1" targetCount="30" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
-					<rangeProperty rangeType="box" distance="350" height="250" width="150" applyTarget="3" castTarget="3" />
-					<damageProperty rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="2" />
+					<range rangeType="box" distance="350" height="250" width="150" applyTarget="3" castTarget="3" />
+					<damage rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="2" />
 					<actionAdditional additionalID="42030251" level="1" skillTarget="2" skillOwner="1" />
 				</attack>
 			</motion>
@@ -742,20 +699,18 @@
 			<kinds rangeType="1" element="7" />
 		</basic>
 		<level value="1">
-			<motion>
-				<motionProperty sequenceName="Attack_01_C" faceTarget="0" />
+			<motion sequenceName="Attack_01_C" faceTarget="0">
 				<attack point="p0" attacktype="1" attackMethodType="1" unrideOnHit="1">
-					<rangeProperty rangeType="box" distance="750" rangeAdd="0.000000,0.000000,5.000000" height="320" width="600" applyTarget="1" castTarget="1" />
-					<arrowProperty nonTarget="1" effect="NPC/Skill/Temp/Eff_Temp.xml" />
-					<damageProperty count="0" rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="4" />
+					<range rangeType="box" distance="750" rangeAdd="0,0,5" height="320" width="600" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" effect="NPC/Skill/Temp/Eff_Temp.xml" />
+					<damage count="0" rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="4" />
 				</attack>
 			</motion>
-			<motion>
-				<motionProperty sequenceName="Attack_02_C" motionEffect="NPC/Skill/KnightHollowArmorSwordRed/Eff_KnightHollowArmorSwordRed_Attack_02_C.xml" movedistance="200" faceTarget="0" />
+			<motion sequenceName="Attack_02_C" motionEffect="NPC/Skill/KnightHollowArmorSwordRed/Eff_KnightHollowArmorSwordRed_Attack_02_C.xml" movedistance="200" faceTarget="0">
 				<attack point="p0" targetCount="50" attacktype="1" unrideOnHit="1">
-					<rangeProperty rangeType="box" distance="850" rangeAdd="0.000000,150.000000,5.000000" height="320" width="900" applyTarget="1" castTarget="1" />
-					<arrowProperty nonTarget="1" />
-					<damageProperty rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="200" pushduration="0.3" pushEaseType="1" attackMaterial="4" />
+					<range rangeType="box" distance="850" rangeAdd="0,150,5" height="320" width="900" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="200" pushduration="0.3" pushEaseType="1" attackMaterial="4" />
 				</attack>
 			</motion>
 		</level>
@@ -766,28 +721,25 @@
 			<kinds rangeType="1" element="7" />
 		</basic>
 		<level value="1">
-			<motion>
-				<motionProperty sequenceName="Attack_01_C" faceTarget="0" />
+			<motion sequenceName="Attack_01_C" faceTarget="0">
 				<attack point="p0" attacktype="1" attackMethodType="1" unrideOnHit="1">
-					<rangeProperty rangeType="box" distance="750" rangeAdd="0.000000,0.000000,5.000000" height="320" width="600" applyTarget="1" castTarget="1" />
-					<arrowProperty nonTarget="1" effect="NPC/Skill/Temp/Eff_Temp.xml" />
-					<damageProperty count="0" rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="4" />
+					<range rangeType="box" distance="750" rangeAdd="0,0,5" height="320" width="600" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" effect="NPC/Skill/Temp/Eff_Temp.xml" />
+					<damage count="0" rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="4" />
 				</attack>
 			</motion>
-			<motion>
-				<motionProperty sequenceName="Attack_03_C" motionEffect="NPC/Skill/KnightHollowArmorSwordRed/Eff_KnightHollowArmorSwordRed_Attack_03_C.xml" movedistance="200" faceTarget="0" />
+			<motion sequenceName="Attack_03_C" motionEffect="NPC/Skill/KnightHollowArmorSwordRed/Eff_KnightHollowArmorSwordRed_Attack_03_C.xml" movedistance="200" faceTarget="0">
 				<attack point="p0" targetCount="50" attacktype="1" unrideOnHit="1">
-					<rangeProperty rangeType="box" distance="850" rangeAdd="0.000000,150.000000,5.000000" height="320" width="900" applyTarget="1" castTarget="1" />
-					<arrowProperty nonTarget="1" />
-					<damageProperty rate="0.8" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="4" />
+					<range rangeType="box" distance="850" rangeAdd="0,150,5" height="320" width="900" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.8" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="4" />
 				</attack>
 			</motion>
-			<motion>
-				<motionProperty sequenceName="Attack_04_C" motionEffect="NPC/Skill/KnightHollowArmorSwordRed/Eff_KnightHollowArmorSwordRed_Attack_04_C.xml" faceTarget="0" />
+			<motion sequenceName="Attack_04_C" motionEffect="NPC/Skill/KnightHollowArmorSwordRed/Eff_KnightHollowArmorSwordRed_Attack_04_C.xml" faceTarget="0">
 				<attack point="p0" targetCount="50" attacktype="1" unrideOnHit="1">
-					<rangeProperty rangeType="box" distance="850" rangeAdd="0.000000,0.000000,5.000000" height="320" width="900" applyTarget="1" castTarget="1" />
-					<arrowProperty nonTarget="1" />
-					<damageProperty rate="0.8" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="200" pushduration="0.3" pushEaseType="1" attackMaterial="4" />
+					<range rangeType="box" distance="850" rangeAdd="0,0,5" height="320" width="900" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.8" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="200" pushduration="0.3" pushEaseType="1" attackMaterial="4" />
 				</attack>
 			</motion>
 		</level>
@@ -798,52 +750,47 @@
 			<kinds element="7" />
 		</basic>
 		<level value="1">
-			<motion>
-				<motionProperty sequenceName="Attack_01_D" sequenceSpeed="0.8" motionEffect="NPC/Skill/KnightHollowArmorSwordRed/Eff_KnightHollowArmorSwordRed_Attack_01_D.xml" faceTarget="0" doesPlayIdleOnSkillEnd="false" />
+			<motion sequenceName="Attack_01_D" sequenceSpeed="0.8" motionEffect="NPC/Skill/KnightHollowArmorSwordRed/Eff_KnightHollowArmorSwordRed_Attack_01_D.xml" faceTarget="0" doesPlayIdleOnSkillEnd="false">
 				<attack point="p0" attacktype="1" attackMethodType="1" unrideOnHit="1">
-					<rangeProperty rangeType="box" distance="800" height="500" width="400" applyTarget="1" castTarget="1" />
-					<arrowProperty nonTarget="1" effect="NPC/Skill/Temp/Eff_Temp.xml" />
-					<damageProperty count="0" rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="4" />
+					<range rangeType="box" distance="800" height="500" width="400" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" effect="NPC/Skill/Temp/Eff_Temp.xml" />
+					<damage count="0" rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="4" />
 				</attack>
 			</motion>
 		</level>
 		<level value="2">
-			<motion>
-				<motionProperty sequenceName="Attack_02_D" motionEffect="NPC/Skill/KnightHollowArmorSwordRed/Eff_KnightHollowArmorSwordRed_Attack_02_D.xml" faceTarget="0" doesPlayIdleOnSkillEnd="false" />
+			<motion sequenceName="Attack_02_D" motionEffect="NPC/Skill/KnightHollowArmorSwordRed/Eff_KnightHollowArmorSwordRed_Attack_02_D.xml" faceTarget="0" doesPlayIdleOnSkillEnd="false">
 				<attack point="p0" attacktype="1" attackMethodType="1" unrideOnHit="1">
-					<rangeProperty rangeType="box" distance="800" height="500" width="400" applyTarget="1" castTarget="1" />
-					<arrowProperty nonTarget="1" effect="NPC/Skill/Temp/Eff_Temp.xml" />
-					<damageProperty count="0" rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="4" />
+					<range rangeType="box" distance="800" height="500" width="400" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" effect="NPC/Skill/Temp/Eff_Temp.xml" />
+					<damage count="0" rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="4" />
 				</attack>
 			</motion>
 		</level>
 		<level value="3">
-			<motion>
-				<motionProperty sequenceName="Attack_03_D" motionEffect="NPC/Skill/KnightHollowArmorSwordRed/Eff_KnightHollowArmorSwordRed_Attack_03_D.xml" movedistance="1000" faceTarget="0" doesPlayIdleOnSkillEnd="false" />
+			<motion sequenceName="Attack_03_D" motionEffect="NPC/Skill/KnightHollowArmorSwordRed/Eff_KnightHollowArmorSwordRed_Attack_03_D.xml" movedistance="1000" faceTarget="0" doesPlayIdleOnSkillEnd="false">
 				<attack point="p0" targetCount="50" attacktype="1" brokenOffence="2" brokenForce="3" unrideOnHit="1">
-					<rangeProperty rangeType="box" distance="950" rangeAdd="0.000000,900.000000,5.000000" height="500" width="420" applyTarget="1" castTarget="1" />
-					<arrowProperty nonTarget="1" />
-					<damageProperty rate="1.7" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="450" pushduration="0.3" pushEaseType="1" pushFall="1" attackMaterial="4" />
+					<range rangeType="box" distance="950" rangeAdd="0,900,5" height="500" width="420" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="1.7" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="450" pushduration="0.3" pushEaseType="1" pushFall="1" attackMaterial="4" />
 				</attack>
 			</motion>
 		</level>
 		<level value="22">
-			<motion>
-				<motionProperty sequenceName="Attack_02_D" sequenceSpeed="0.7" motionEffect="NPC/Skill/KnightHollowArmorSwordRed/Eff_KnightHollowArmorSwordRed_Attack_02_D_Teleport.xml" faceTarget="0" doesPlayIdleOnSkillEnd="false" />
+			<motion sequenceName="Attack_02_D" sequenceSpeed="0.7" motionEffect="NPC/Skill/KnightHollowArmorSwordRed/Eff_KnightHollowArmorSwordRed_Attack_02_D_Teleport.xml" faceTarget="0" doesPlayIdleOnSkillEnd="false">
 				<attack point="p0" attacktype="1" attackMethodType="1" unrideOnHit="1">
-					<rangeProperty rangeType="box" distance="800" height="500" width="400" applyTarget="1" castTarget="1" />
-					<arrowProperty nonTarget="1" effect="NPC/Skill/Temp/Eff_Temp.xml" />
-					<damageProperty count="0" rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="4" />
+					<range rangeType="box" distance="800" height="500" width="400" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" effect="NPC/Skill/Temp/Eff_Temp.xml" />
+					<damage count="0" rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="4" />
 				</attack>
 			</motion>
 		</level>
 		<level value="23">
-			<motion>
-				<motionProperty sequenceName="Attack_02_D" sequenceSpeed="0.5" motionEffect="NPC/Skill/KnightHollowArmorSwordRed/Eff_KnightHollowArmorSwordRed_Attack_02_D_Teleport02.xml" faceTarget="0" doesPlayIdleOnSkillEnd="false" />
+			<motion sequenceName="Attack_02_D" sequenceSpeed="0.5" motionEffect="NPC/Skill/KnightHollowArmorSwordRed/Eff_KnightHollowArmorSwordRed_Attack_02_D_Teleport02.xml" faceTarget="0" doesPlayIdleOnSkillEnd="false">
 				<attack point="p0" attacktype="1" attackMethodType="1" unrideOnHit="1">
-					<rangeProperty rangeType="box" distance="800" height="500" width="400" applyTarget="1" castTarget="1" />
-					<arrowProperty nonTarget="1" effect="NPC/Skill/Temp/Eff_Temp.xml" />
-					<damageProperty count="0" rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="4" />
+					<range rangeType="box" distance="800" height="500" width="400" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" effect="NPC/Skill/Temp/Eff_Temp.xml" />
+					<damage count="0" rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="4" />
 				</attack>
 			</motion>
 		</level>
@@ -855,64 +802,58 @@
 		</basic>
 		<level value="1">
 			<detectProperty rangeType="box" distance="800" height="320" width="400" />
-			<motion>
-				<motionProperty sequenceName="Attack_01_E" sequenceSpeed="0.8" motionEffect="NPC/Skill/KnightHollowArmorSwordRed/Eff_KnightHollowArmorSwordRed_Attack_01_E.xml" faceTarget="0" />
+			<motion sequenceName="Attack_01_E" sequenceSpeed="0.8" motionEffect="NPC/Skill/KnightHollowArmorSwordRed/Eff_KnightHollowArmorSwordRed_Attack_01_E.xml" faceTarget="0">
 				<attack point="p0" attacktype="1" attackMethodType="1" unrideOnHit="1">
-					<rangeProperty rangeType="box" distance="800" height="320" width="400" applyTarget="1" castTarget="1" />
-					<arrowProperty nonTarget="1" effect="NPC/Skill/Temp/Eff_Temp.xml" />
-					<damageProperty count="0" rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="2" />
+					<range rangeType="box" distance="800" height="320" width="400" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" effect="NPC/Skill/Temp/Eff_Temp.xml" />
+					<damage count="0" rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="2" />
 				</attack>
 			</motion>
-			<motion>
-				<motionProperty sequenceName="Attack_02_E" sequenceSpeed="0.7" motionEffect="NPC/Skill/KnightHollowArmorSwordRed/Eff_KnightHollowArmorSwordRed_Attack_02_E.xml" movedistance="600" />
+			<motion sequenceName="Attack_02_E" sequenceSpeed="0.7" motionEffect="NPC/Skill/KnightHollowArmorSwordRed/Eff_KnightHollowArmorSwordRed_Attack_02_E.xml" movedistance="600">
 				<attack point="p0" attacktype="1" attackMethodType="1" unrideOnHit="1">
-					<rangeProperty rangeType="box" distance="800" height="320" width="400" applyTarget="1" castTarget="1" />
-					<arrowProperty nonTarget="1" effect="NPC/Skill/Temp/Eff_Temp.xml" />
-					<damageProperty count="0" rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="2" />
+					<range rangeType="box" distance="800" height="320" width="400" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" effect="NPC/Skill/Temp/Eff_Temp.xml" />
+					<damage count="0" rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="2" />
 				</attack>
 			</motion>
-			<motion>
-				<motionProperty sequenceName="Attack_03_E" motionEffect="NPC/Skill/KnightHollowArmorSwordRed/Eff_KnightHollowArmorSwordRed_Attack_03_E.xml" faceTarget="0" />
+			<motion sequenceName="Attack_03_E" motionEffect="NPC/Skill/KnightHollowArmorSwordRed/Eff_KnightHollowArmorSwordRed_Attack_03_E.xml" faceTarget="0">
 				<attack point="p0" targetCount="50" attacktype="1" unrideOnHit="1" compulsionType="3">
-					<rangeProperty rangeType="box" distance="800" rangeAdd="0.000000,0.000000,5.000000" height="320" width="400" applyTarget="1" castTarget="1" />
-					<arrowProperty nonTarget="1" />
-					<damageProperty rate="2.3" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="200" pushduration="0.3" pushEaseType="1" pushFall="1" attackMaterial="2" />
+					<range rangeType="box" distance="800" rangeAdd="0,0,5" height="320" width="400" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="2.3" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="200" pushduration="0.3" pushEaseType="1" pushFall="1" attackMaterial="2" />
 				</attack>
 				<attack point="p1" targetCount="50" attacktype="1" unrideOnHit="1">
-					<rangeProperty rangeType="box" distance="800" rangeAdd="0.000000,0.000000,5.000000" height="320" width="400" applyTarget="1" castTarget="1" />
-					<arrowProperty nonTarget="1" />
-					<damageProperty count="0" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="2" />
+					<range rangeType="box" distance="800" rangeAdd="0,0,5" height="320" width="400" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage count="0" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="2" />
 				</attack>
 			</motion>
 		</level>
 		<level value="2">
-			<motion>
-				<motionProperty sequenceName="Attack_01_E" sequenceSpeed="0.8" motionEffect="NPC/Skill/KnightHollowArmorSwordRed/Eff_KnightHollowArmorSwordRed_Attack_01_E.xml" faceTarget="0" />
+			<motion sequenceName="Attack_01_E" sequenceSpeed="0.8" motionEffect="NPC/Skill/KnightHollowArmorSwordRed/Eff_KnightHollowArmorSwordRed_Attack_01_E.xml" faceTarget="0">
 				<attack point="p0" attacktype="1" attackMethodType="1" unrideOnHit="1">
-					<rangeProperty rangeType="box" distance="1200" height="320" width="400" applyTarget="1" castTarget="1" />
-					<arrowProperty nonTarget="1" effect="NPC/Skill/Temp/Eff_Temp.xml" />
-					<damageProperty count="0" rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="2" />
+					<range rangeType="box" distance="1200" height="320" width="400" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" effect="NPC/Skill/Temp/Eff_Temp.xml" />
+					<damage count="0" rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="2" />
 				</attack>
 			</motion>
-			<motion>
-				<motionProperty sequenceName="Attack_02_E" sequenceSpeed="0.7" motionEffect="NPC/Skill/KnightHollowArmorSwordRed/Eff_KnightHollowArmorSwordRed_Attack_02_E.xml" movedistance="750" />
+			<motion sequenceName="Attack_02_E" sequenceSpeed="0.7" motionEffect="NPC/Skill/KnightHollowArmorSwordRed/Eff_KnightHollowArmorSwordRed_Attack_02_E.xml" movedistance="750">
 				<attack point="p0" attacktype="1" attackMethodType="1" unrideOnHit="1">
-					<rangeProperty rangeType="box" distance="1200" height="320" width="400" applyTarget="1" castTarget="1" />
-					<arrowProperty nonTarget="1" effect="NPC/Skill/Temp/Eff_Temp.xml" />
-					<damageProperty count="0" rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="2" />
+					<range rangeType="box" distance="1200" height="320" width="400" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" effect="NPC/Skill/Temp/Eff_Temp.xml" />
+					<damage count="0" rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="2" />
 				</attack>
 			</motion>
-			<motion>
-				<motionProperty sequenceName="Attack_03_E" motionEffect="NPC/Skill/KnightHollowArmorSwordRed/Eff_KnightHollowArmorSwordRed_Attack_03_E.xml" faceTarget="0" />
+			<motion sequenceName="Attack_03_E" motionEffect="NPC/Skill/KnightHollowArmorSwordRed/Eff_KnightHollowArmorSwordRed_Attack_03_E.xml" faceTarget="0">
 				<attack point="p0" targetCount="50" attacktype="1" unrideOnHit="1" compulsionType="3">
-					<rangeProperty rangeType="box" distance="800" rangeAdd="0.000000,0.000000,5.000000" height="320" width="400" applyTarget="1" castTarget="1" />
-					<arrowProperty nonTarget="1" />
-					<damageProperty rate="2.3" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="200" pushduration="0.3" pushEaseType="1" pushFall="1" attackMaterial="2" />
+					<range rangeType="box" distance="800" rangeAdd="0,0,5" height="320" width="400" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="2.3" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="200" pushduration="0.3" pushEaseType="1" pushFall="1" attackMaterial="2" />
 				</attack>
 				<attack point="p1" targetCount="50" attacktype="1" unrideOnHit="1">
-					<rangeProperty rangeType="box" distance="800" rangeAdd="0.000000,0.000000,5.000000" height="320" width="400" applyTarget="1" castTarget="1" />
-					<arrowProperty nonTarget="1" />
-					<damageProperty count="0" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="2" />
+					<range rangeType="box" distance="800" rangeAdd="0,0,5" height="320" width="400" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage count="0" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="2" />
 				</attack>
 			</motion>
 		</level>
@@ -923,28 +864,25 @@
 			<kinds rangeType="2" element="7" />
 		</basic>
 		<level value="1">
-			<motion>
-				<motionProperty sequenceName="Attack_01_A" motionEffect="NPC/Skill/KnightHollowArmorSwordRed/Eff_KnightHollowArmorSwordRed_Attack_01_A.xml" faceTarget="0" />
+			<motion sequenceName="Attack_01_A" motionEffect="NPC/Skill/KnightHollowArmorSwordRed/Eff_KnightHollowArmorSwordRed_Attack_01_A.xml" faceTarget="0">
 				<attack point="p0" attacktype="2" attackMethodType="1" unrideOnHit="1">
-					<rangeProperty rangeType="box" distance="3000" height="320" width="200" applyTarget="1" castTarget="1" />
-					<arrowProperty nonTarget="1" effect="NPC/Skill/Temp/Eff_Temp.xml" />
-					<damageProperty count="0" rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="106" />
+					<range rangeType="box" distance="3000" height="320" width="200" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" effect="NPC/Skill/Temp/Eff_Temp.xml" />
+					<damage count="0" rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="106" />
 				</attack>
 			</motion>
-			<motion>
-				<motionProperty sequenceName="Attack_02_A" sequenceSpeed="1.2" motionEffect="NPC/Skill/KnightHollowArmorSwordRed/Eff_KnightHollowArmorSwordRed_Attack_02_A.xml" faceTarget="0" doesPlayIdleOnSkillEnd="false" />
+			<motion sequenceName="Attack_02_A" sequenceSpeed="1.2" motionEffect="NPC/Skill/KnightHollowArmorSwordRed/Eff_KnightHollowArmorSwordRed_Attack_02_A.xml" faceTarget="0" doesPlayIdleOnSkillEnd="false">
 				<attack point="p0" attacktype="2" attackMethodType="1" unrideOnHit="1">
-					<rangeProperty rangeType="box" distance="3000" height="320" width="200" applyTarget="1" castTarget="1" />
-					<arrowProperty nonTarget="1" effect="NPC/Skill/Temp/Eff_Temp.xml" />
-					<damageProperty count="0" rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="106" />
+					<range rangeType="box" distance="3000" height="320" width="200" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" effect="NPC/Skill/Temp/Eff_Temp.xml" />
+					<damage count="0" rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="106" />
 				</attack>
 			</motion>
-			<motion>
-				<motionProperty sequenceName="Attack_03_A" motionEffect="NPC/Skill/KnightHollowArmorSwordRed/Eff_KnightHollowArmorSwordRed_Attack_03_A.xml" faceTarget="0" />
+			<motion sequenceName="Attack_03_A" motionEffect="NPC/Skill/KnightHollowArmorSwordRed/Eff_KnightHollowArmorSwordRed_Attack_03_A.xml" faceTarget="0">
 				<attack point="p0" targetCount="50" attacktype="2" brokenOffence="2" brokenForce="3" unrideOnHit="1">
-					<rangeProperty rangeType="box" distance="3000" rangeOffset="0.000000,0.000000,75.000000" height="320" width="200" applyTarget="1" castTarget="1" />
-					<arrowProperty nonTarget="1" />
-					<damageProperty rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="106" />
+					<range rangeType="box" distance="3000" rangeOffset="0,0,75" height="320" width="200" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="106" />
 				</attack>
 			</motion>
 		</level>
@@ -955,52 +893,47 @@
 			<kinds rangeType="2" element="7" />
 		</basic>
 		<level value="1">
-			<motion>
-				<motionProperty sequenceName="Attack_01_A" motionEffect="NPC/Skill/KnightHollowArmorSwordRed/Eff_KnightHollowArmorSwordRed_Attack_01_A_Power.xml" faceTarget="0" doesPlayIdleOnSkillEnd="false" />
+			<motion sequenceName="Attack_01_A" motionEffect="NPC/Skill/KnightHollowArmorSwordRed/Eff_KnightHollowArmorSwordRed_Attack_01_A_Power.xml" faceTarget="0" doesPlayIdleOnSkillEnd="false">
 				<attack point="p0" attacktype="2" attackMethodType="1" unrideOnHit="1">
-					<rangeProperty rangeType="box" distance="3000" height="500" width="400" applyTarget="1" castTarget="1" />
-					<arrowProperty nonTarget="1" effect="NPC/Skill/Temp/Eff_Temp.xml" />
-					<damageProperty count="0" rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="106" />
+					<range rangeType="box" distance="3000" height="500" width="400" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" effect="NPC/Skill/Temp/Eff_Temp.xml" />
+					<damage count="0" rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="106" />
 				</attack>
 			</motion>
 		</level>
 		<level value="2">
-			<motion>
-				<motionProperty sequenceName="Attack_02_A" sequenceSpeed="0.8" motionEffect="NPC/Skill/KnightHollowArmorSwordRed/Eff_KnightHollowArmorSwordRed_Attack_02_A_Power.xml" faceTarget="0" doesPlayIdleOnSkillEnd="false" />
+			<motion sequenceName="Attack_02_A" sequenceSpeed="0.8" motionEffect="NPC/Skill/KnightHollowArmorSwordRed/Eff_KnightHollowArmorSwordRed_Attack_02_A_Power.xml" faceTarget="0" doesPlayIdleOnSkillEnd="false">
 				<attack point="p0" attacktype="2" attackMethodType="1" unrideOnHit="1">
-					<rangeProperty rangeType="box" distance="3000" height="500" width="400" applyTarget="1" castTarget="1" />
-					<arrowProperty nonTarget="1" effect="NPC/Skill/Temp/Eff_Temp.xml" />
-					<damageProperty count="0" rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="106" />
+					<range rangeType="box" distance="3000" height="500" width="400" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" effect="NPC/Skill/Temp/Eff_Temp.xml" />
+					<damage count="0" rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="106" />
 				</attack>
 			</motion>
 		</level>
 		<level value="3">
-			<motion>
-				<motionProperty sequenceName="Attack_03_A" motionEffect="NPC/Skill/KnightHollowArmorSwordRed/Eff_KnightHollowArmorSwordRed_Attack_03_A_Power.xml" faceTarget="0" doesPlayIdleOnSkillEnd="false" />
+			<motion sequenceName="Attack_03_A" motionEffect="NPC/Skill/KnightHollowArmorSwordRed/Eff_KnightHollowArmorSwordRed_Attack_03_A_Power.xml" faceTarget="0" doesPlayIdleOnSkillEnd="false">
 				<attack point="p0" targetCount="50" attacktype="2" brokenOffence="2" brokenForce="3" unrideOnHit="1">
-					<rangeProperty rangeType="box" distance="3000" rangeAdd="0.000000,0.000000,5.000000" height="500" width="400" applyTarget="1" castTarget="1" />
-					<arrowProperty nonTarget="1" />
-					<damageProperty rate="1.8" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="2" />
+					<range rangeType="box" distance="3000" rangeAdd="0,0,5" height="500" width="400" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="1.8" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="2" />
 				</attack>
 			</motion>
 		</level>
 		<level value="22">
-			<motion>
-				<motionProperty sequenceName="Attack_02_A" sequenceSpeed="0.8" motionEffect="NPC/Skill/KnightHollowArmorSwordRed/Eff_KnightHollowArmorSwordRed_Attack_02_A_Power_Teleport.xml" faceTarget="0" doesPlayIdleOnSkillEnd="false" />
+			<motion sequenceName="Attack_02_A" sequenceSpeed="0.8" motionEffect="NPC/Skill/KnightHollowArmorSwordRed/Eff_KnightHollowArmorSwordRed_Attack_02_A_Power_Teleport.xml" faceTarget="0" doesPlayIdleOnSkillEnd="false">
 				<attack point="p0" attacktype="2" attackMethodType="1" unrideOnHit="1">
-					<rangeProperty rangeType="box" distance="3000" height="500" width="400" applyTarget="1" castTarget="1" />
-					<arrowProperty nonTarget="1" effect="NPC/Skill/Temp/Eff_Temp.xml" />
-					<damageProperty count="0" rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="106" />
+					<range rangeType="box" distance="3000" height="500" width="400" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" effect="NPC/Skill/Temp/Eff_Temp.xml" />
+					<damage count="0" rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="106" />
 				</attack>
 			</motion>
 		</level>
 		<level value="23">
-			<motion>
-				<motionProperty sequenceName="Attack_02_A" sequenceSpeed="0.5" motionEffect="NPC/Skill/KnightHollowArmorSwordRed/Eff_KnightHollowArmorSwordRed_Attack_02_A_Power_Teleport02.xml" faceTarget="0" doesPlayIdleOnSkillEnd="false" />
+			<motion sequenceName="Attack_02_A" sequenceSpeed="0.5" motionEffect="NPC/Skill/KnightHollowArmorSwordRed/Eff_KnightHollowArmorSwordRed_Attack_02_A_Power_Teleport02.xml" faceTarget="0" doesPlayIdleOnSkillEnd="false">
 				<attack point="p0" attacktype="2" attackMethodType="1" unrideOnHit="1">
-					<rangeProperty rangeType="box" distance="3000" height="500" width="400" applyTarget="1" castTarget="1" />
-					<arrowProperty nonTarget="1" effect="NPC/Skill/Temp/Eff_Temp.xml" />
-					<damageProperty count="0" rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="106" />
+					<range rangeType="box" distance="3000" height="500" width="400" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" effect="NPC/Skill/Temp/Eff_Temp.xml" />
+					<damage count="0" rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="106" />
 				</attack>
 			</motion>
 		</level>
@@ -1011,26 +944,24 @@
 			<kinds element="7" />
 		</basic>
 		<level value="1">
-			<motion>
-				<motionProperty sequenceName="Attack_01_B" motionEffect="NPC/Skill/KnightHollowArmorSwordRed/Eff_KnightHollowArmorSwordRed_Attack_01_B.xml" faceTarget="0" />
+			<motion sequenceName="Attack_01_B" motionEffect="NPC/Skill/KnightHollowArmorSwordRed/Eff_KnightHollowArmorSwordRed_Attack_01_B.xml" faceTarget="0">
 				<attack point="p0" attacktype="2" attackMethodType="1" unrideOnHit="1">
-					<rangeProperty rangeType="cylinder" distance="2400" rangeAdd="0.000000,0.000000,140.000000" rangeOffset="0.000000,0.000000,100.000000" height="250" applyTarget="1" castTarget="1" />
-					<arrowProperty nonTarget="1" effect="NPC/Skill/Temp/Eff_Temp.xml" />
-					<damageProperty count="0" rate="1" attackMaterial="102" />
+					<range rangeType="cylinder" distance="2400" rangeAdd="0,0,140" rangeOffset="0,0,100" height="250" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" effect="NPC/Skill/Temp/Eff_Temp.xml" />
+					<damage count="0" rate="1" attackMaterial="102" />
 				</attack>
 			</motion>
-			<motion>
-				<motionProperty sequenceName="Attack_02_B" motionEffect="NPC/Skill/KnightHollowArmorSwordRed/Eff_KnightHollowArmorSwordRed_Attack_02_B.xml" faceTarget="0" />
+			<motion sequenceName="Attack_02_B" motionEffect="NPC/Skill/KnightHollowArmorSwordRed/Eff_KnightHollowArmorSwordRed_Attack_02_B.xml" faceTarget="0">
 				<attack point="p0" targetCount="1" cubeMagicPathID="5280" attacktype="2" unrideOnHit="1">
-					<rangeProperty rangeType="cylinder" distance="2400" rangeAdd="0.000000,0.000000,140.000000" height="250" includeCaster="1" applyTarget="2" castTarget="1" />
-					<arrowProperty nonTarget="1" />
-					<damageProperty count="0" rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="102" />
+					<range rangeType="cylinder" distance="2400" rangeAdd="0,0,140" height="250" includeCaster="1" applyTarget="2" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage count="0" rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="102" />
 					<actionSkill skillID="42030309" level="1" delay="1000" interval="500" fireCount="60" />
 				</attack>
 				<attack point="p1" targetCount="50" attacktype="2" hitImmuneBreak="1" unrideOnHit="1">
-					<rangeProperty rangeType="cylinder" distance="1000" height="550" applyTarget="1" castTarget="1" />
-					<arrowProperty nonTarget="1" />
-					<damageProperty rate="0.05" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="300" pushduration="0.3" pushEaseType="1" pushFall="1" attackMaterial="102" />
+					<range rangeType="cylinder" distance="1000" height="550" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.05" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="1" pushdistance="300" pushduration="0.3" pushEaseType="1" pushFall="1" attackMaterial="102" />
 				</attack>
 			</motion>
 		</level>
@@ -1041,23 +972,21 @@
 			<kinds element="7" />
 		</basic>
 		<level value="1">
-			<detectProperty rangeType="cylinder" distance="200" rangeOffset="0.000000,0.000000,75.000000" height="100" />
-			<motion>
-				<motionProperty sequenceName="Attack_01_F" motionEffect="NPC/Skill/KnightHollowArmorSwordRed/Eff_KnightHollowArmorSwordRed_Attack_01_F_Teleport.xml" faceTarget="0" />
+			<detectProperty rangeType="cylinder" distance="200" rangeOffset="0,0,75" height="100" />
+			<motion sequenceName="Attack_01_F" motionEffect="NPC/Skill/KnightHollowArmorSwordRed/Eff_KnightHollowArmorSwordRed_Attack_01_F_Teleport.xml" faceTarget="0">
 				<attack point="p0" attacktype="1" unrideOnHit="1">
-					<rangeProperty rangeType="cylinder" distance="1" height="1" applyTarget="1" castTarget="1" />
-					<arrowProperty nonTarget="1" />
-					<damageProperty count="0" rate="1" attackMaterial="2" />
+					<range rangeType="cylinder" distance="1" height="1" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage count="0" rate="1" attackMaterial="2" />
 				</attack>
 			</motion>
 		</level>
 		<level value="2">
-			<motion>
-				<motionProperty sequenceName="Attack_01_F" motionEffect="NPC/Skill/KnightHollowArmorSwordRed/Eff_KnightHollowArmorSwordRed_Attack_01_F_Teleport.xml" faceTarget="0" />
+			<motion sequenceName="Attack_01_F" motionEffect="NPC/Skill/KnightHollowArmorSwordRed/Eff_KnightHollowArmorSwordRed_Attack_01_F_Teleport.xml" faceTarget="0">
 				<attack point="p0" attacktype="1" brokenOffence="75" unrideOnHit="1">
-					<rangeProperty rangeType="cylinder" distance="3400" height="200" applyTarget="1" castTarget="1" />
-					<arrowProperty nonTarget="1" />
-					<damageProperty count="0" rate="1" attackMaterial="2" />
+					<range rangeType="cylinder" distance="3400" height="200" applyTarget="1" castTarget="1" />
+					<arrow nonTarget="1" />
+					<damage count="0" rate="1" attackMaterial="2" />
 				</attack>
 			</motion>
 		</level>
@@ -1068,11 +997,10 @@
 			<kinds element="7" />
 		</basic>
 		<level value="1">
-			<motion>
-				<motionProperty motionEffect="NPC/Skill/KnightHollowArmorSwordRed/Eff_KnightHollowArmorSwordRed_Hurricane.xml" splashEndEffect="NPC/Skill/KnightHollowArmorSwordRed/Eff_KnightHollowArmorSwordRed_Hurricane_End.xml" faceTarget="0" />
+			<motion motionEffect="NPC/Skill/KnightHollowArmorSwordRed/Eff_KnightHollowArmorSwordRed_Hurricane.xml" splashEndEffect="NPC/Skill/KnightHollowArmorSwordRed/Eff_KnightHollowArmorSwordRed_Hurricane_End.xml" faceTarget="0">
 				<attack point="p0" targetCount="10" attacktype="2" brokenOffence="2" brokenForce="3" unrideOnHit="1">
-					<rangeProperty rangeType="cylinder" distance="250" height="900" applyTarget="5" castTarget="1" />
-					<damageProperty rate="0.4" effectHit="NPC/Skill/KnightHollowArmorSwordRed/Eff_KnightHollowArmorSwordRed_Hurricane_Hit.xml" attackMaterial="1" />
+					<range rangeType="cylinder" distance="250" height="900" applyTarget="5" castTarget="1" />
+					<damage rate="0.4" effectHit="NPC/Skill/KnightHollowArmorSwordRed/Eff_KnightHollowArmorSwordRed_Hurricane_Hit.xml" attackMaterial="1" />
 				</attack>
 			</motion>
 		</level>

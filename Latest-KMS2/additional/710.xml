@@ -1,0 +1,930 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ms2>
+	<additional id="71000001">
+		<level>
+			<BasicProperty level="1" buffType="2" durationTick="1000" intervalTick="1000" />
+			<MotionProperty abnormalImmuneBreak="5" />
+			<conditionSkill level="1" skillID="71000002" skillTarget="1" activeByIntervalTick="1">
+				<beginCondition probability="0.3" />
+			</conditionSkill>
+		</level>
+	</additional>
+	<additional id="71000002">
+		<level>
+			<BasicProperty level="1" buffType="2" durationTick="2000" />
+			<MotionProperty keepEffect="CH/Common/Eff_Object_BombSmoke_Keep.xml" stun="3" abnormalImmuneBreak="5" />
+		</level>
+	</additional>
+	<additional id="71000003">
+		<level>
+			<BasicProperty level="1" keepCondition="99" />
+			<MotionProperty keepEffect="BG/Common/Quest/Eff_co_quest_runicta_keep.xml" />
+		</level>
+	</additional>
+	<additional id="71000004">
+		<level>
+			<BasicProperty level="1" keepCondition="99" />
+			<MotionProperty keepEffect="BG/Common/Quest/Eff_co_quest_rune_cast.xml" />
+		</level>
+	</additional>
+	<additional id="71000005">
+		<level>
+			<BasicProperty level="1" keepCondition="99" />
+			<MotionProperty keepEffect="BG/Common/Quest/Eff_co_quest_runicta_keep2.xml" />
+		</level>
+	</additional>
+	<additional id="71000006">
+		<level>
+			<BasicProperty level="1" delayTick="2000" keepCondition="99" doNotClearEffectFromEnterPVPZone="1" />
+			<MotionProperty keepEffect="BG/Common/Quest/Eff_co_quest_Isuura_protect.xml" alphaBlending="0.6" />
+		</level>
+	</additional>
+	<additional id="71000007">
+		<level stringParam="25">
+			<BasicProperty level="1" keepCondition="99" invokeEvent="1" logoutClearEffect="1" leaveFieldClearEffect="1" doNotClearEffectFromEnterPVPZone="1" />
+			<MotionProperty startEffect="CH/Skill/Wizard/Eff_Wizard_MagicArmor_Start_01.xml" keepEffect="CH/Skill/Wizard/Eff_Wizard_MagicArmor_Keep_01.xml" invokeEffect="CH/Skill/Wizard/Eff_Wizard_MagicArmor_Invoke_01.xml" />
+			<SpecialAbility>
+				<v type="defensive_physicaldamage" value="250" />
+				<v type="defensive_magicaldamage" value="250" />
+			</SpecialAbility>
+			<UIProperty icon="./Data/Resource/Image/skill/icon/10300131_buff.png" />
+		</level>
+	</additional>
+	<additional id="71000008">
+		<level stringParam="30">
+			<BasicProperty level="1" keepCondition="99" logoutClearEffect="1" leaveFieldClearEffect="1" doNotClearEffectFromEnterPVPZone="1" />
+			<Stat>
+				<v type="pap" value="0.3" isRate="1" />
+				<v type="map" value="0.3" isRate="1" />
+			</Stat>
+			<UIProperty icon="./Data/Resource/Image/skill/icon/10300091_buff.png" />
+		</level>
+	</additional>
+	<additional id="71000009">
+		<level>
+			<BasicProperty level="1" keepCondition="99" logoutClearEffect="1" leaveFieldClearEffect="1" doNotClearEffectFromEnterPVPZone="1" />
+			<MotionProperty keepEffect="BG/Common/Eff_Light_defalt02.xml" />
+			<UIProperty icon="./Data/Resource/Image/skill/icon/10300091_buff.png" iconOnOff="0" />
+		</level>
+	</additional>
+	<additional id="71000010">
+		<level>
+			<BasicProperty level="1" keepCondition="99" logoutClearEffect="1" leaveFieldClearEffect="1" doNotClearEffectFromEnterPVPZone="1" />
+			<MotionProperty alphaBlending="0.4" />
+			<UIProperty icon="./Data/Resource/Image/skill/icon/10300091_buff.png" iconOnOff="0" />
+		</level>
+	</additional>
+	<additional id="71000011">
+		<level>
+			<BasicProperty level="1" keepCondition="99" logoutClearEffect="1" leaveFieldClearEffect="1" doNotClearEffectFromEnterPVPZone="1" />
+			<MotionProperty keepEffect="Additional\Dark\Eff_Additional_Bleed_Dark.xml" />
+			<UIProperty icon="./Data/Resource/Image/skill/icon/10300091_buff.png" iconOnOff="0" />
+		</level>
+	</additional>
+	<additional id="71000012">
+		<level>
+			<BasicProperty level="1" intervalTick="500" keepCondition="99" resetCondition="2" maxBuffCount="5" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<MotionProperty keepEffect="CH/Quest/Eff_Quest_Aura_red_Keep.xml" clearCondition="0" />
+			<UIProperty icon="./Data/Resource/Image/skill/icon/71000012_buff.png" isHideCooltime="1" />
+			<conditionSkill level="1" skillID="71000017" skillTarget="1" activeByIntervalTick="1">
+				<beginCondition>
+					<owner hasBuffID="71000012" hasBuffLevel="1" hasBuffOwner="0" hasBuffCount="5" hasBuffCountCompare="Equals" />
+				</beginCondition>
+			</conditionSkill>
+		</level>
+	</additional>
+	<additional id="71000013">
+		<level>
+			<BasicProperty level="1" intervalTick="500" keepCondition="99" resetCondition="2" maxBuffCount="30" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<MotionProperty keepEffect="CH/Quest/Eff_Quest_Aura_skyblue_Keep.xml" clearCondition="0" />
+			<UIProperty icon="./Data/Resource/Image/skill/icon/71000013_buff.png" isHideCooltime="1" />
+			<conditionSkill level="1" skillID="71000018" skillTarget="1" activeByIntervalTick="1">
+				<beginCondition>
+					<owner hasBuffID="71000013" hasBuffLevel="1" hasBuffOwner="0" hasBuffCount="30" hasBuffCountCompare="Equals" />
+				</beginCondition>
+			</conditionSkill>
+		</level>
+	</additional>
+	<additional id="71000014">
+		<level>
+			<BasicProperty level="1" intervalTick="500" keepCondition="99" resetCondition="2" maxBuffCount="60" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<MotionProperty keepEffect="CH/Quest/Eff_Quest_Aura_gray_Keep.xml" clearCondition="0" />
+			<UIProperty icon="./Data/Resource/Image/skill/icon/71000014_buff.png" isHideCooltime="1" />
+			<conditionSkill level="1" skillID="71000019" skillTarget="1" activeByIntervalTick="1">
+				<beginCondition>
+					<owner hasBuffID="71000014" hasBuffLevel="1" hasBuffOwner="0" hasBuffCount="60" hasBuffCountCompare="Equals" />
+				</beginCondition>
+			</conditionSkill>
+		</level>
+	</additional>
+	<additional id="71000015">
+		<level>
+			<BasicProperty level="1" intervalTick="500" keepCondition="99" resetCondition="2" maxBuffCount="50" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<MotionProperty keepEffect="CH/Quest/Eff_Quest_Aura_green_Keep.xml" clearCondition="0" />
+			<UIProperty icon="./Data/Resource/Image/skill/icon/71000015_buff.png" isHideCooltime="1" />
+			<conditionSkill level="1" skillID="71000020" skillTarget="1" activeByIntervalTick="1">
+				<beginCondition>
+					<owner hasBuffID="71000015" hasBuffLevel="1" hasBuffOwner="0" hasBuffCount="50" hasBuffCountCompare="Equals" />
+				</beginCondition>
+			</conditionSkill>
+		</level>
+	</additional>
+	<additional id="71000016">
+		<level>
+			<BasicProperty level="1" intervalTick="500" keepCondition="99" resetCondition="2" maxBuffCount="40" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<MotionProperty keepEffect="CH/Quest/Eff_Quest_Aura_yellow_Keep.xml" clearCondition="0" />
+			<UIProperty icon="./Data/Resource/Image/skill/icon/71000016_buff.png" isHideCooltime="1" />
+			<conditionSkill level="1" skillID="71000021" skillTarget="1" activeByIntervalTick="1">
+				<beginCondition>
+					<owner hasBuffID="71000016" hasBuffLevel="1" hasBuffOwner="0" hasBuffCount="40" hasBuffCountCompare="Equals" />
+				</beginCondition>
+			</conditionSkill>
+		</level>
+	</additional>
+	<additional id="71000017">
+		<level>
+			<BasicProperty level="1" intervalTick="500" keepCondition="99" resetCondition="1" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<MotionProperty startEffect="CH/Quest/Eff_Quest_FullAura_red_start.xml" keepEffect="CH/Quest/Eff_Quest_FullAura_red_Keep.xml" clearCondition="0" scale="0.2" />
+			<CancelEffectProperty cancelPassiveEffect="1" cancelEffectCodes="71000012" />
+			<UIProperty icon="./Data/Resource/Image/skill/icon/71000017_buff.png" isHideCooltime="1" />
+			<conditionSkill level="1" skillID="71000038" skillTarget="1" activeByIntervalTick="1" />
+		</level>
+	</additional>
+	<additional id="71000018">
+		<level>
+			<BasicProperty level="1" keepCondition="99" resetCondition="1" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<MotionProperty startEffect="CH/Quest/Eff_Quest_FullAura_skyblue_start.xml" keepEffect="CH/Quest/Eff_Quest_FullAura_skyblue_Keep.xml" clearCondition="0" scale="0.2" />
+			<CancelEffectProperty cancelPassiveEffect="1" cancelEffectCodes="71000013" />
+			<UIProperty icon="./Data/Resource/Image/skill/icon/71000018_buff.png" isHideCooltime="1" />
+		</level>
+	</additional>
+	<additional id="71000019">
+		<level>
+			<BasicProperty level="1" keepCondition="99" resetCondition="1" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<MotionProperty startEffect="CH/Quest/Eff_Quest_FullAura_gray_start.xml" keepEffect="CH/Quest/Eff_Quest_FullAura_gray_Keep.xml" clearCondition="0" scale="0.2" />
+			<CancelEffectProperty cancelPassiveEffect="1" cancelEffectCodes="71000014" />
+			<UIProperty icon="./Data/Resource/Image/skill/icon/71000019_buff.png" isHideCooltime="1" />
+		</level>
+	</additional>
+	<additional id="71000020">
+		<level>
+			<BasicProperty level="1" keepCondition="99" resetCondition="1" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<MotionProperty startEffect="CH/Quest/Eff_Quest_FullAura_green_start.xml" keepEffect="CH/Quest/Eff_Quest_FullAura_green_Keep.xml" clearCondition="0" scale="0.2" />
+			<CancelEffectProperty cancelPassiveEffect="1" cancelEffectCodes="71000015" />
+			<UIProperty icon="./Data/Resource/Image/skill/icon/71000020_buff.png" isHideCooltime="1" />
+		</level>
+	</additional>
+	<additional id="71000021">
+		<level>
+			<BasicProperty level="1" keepCondition="99" resetCondition="1" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<MotionProperty startEffect="CH/Quest/Eff_Quest_FullAura_yellow_start.xml" keepEffect="CH/Quest/Eff_Quest_FullAura_yellow_Keep.xml" clearCondition="0" scale="0.2" />
+			<CancelEffectProperty cancelPassiveEffect="1" cancelEffectCodes="71000016" />
+			<UIProperty icon="./Data/Resource/Image/skill/icon/71000021_buff.png" isHideCooltime="1" />
+		</level>
+	</additional>
+	<additional id="71000022">
+		<level>
+			<BasicProperty level="1" durationTick="1000" resetCondition="1" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<MotionProperty keepEffect="CH/Quest/Eff_Quest_Aura_yellow_Keep.xml" abnormalImmuneBreak="5" />
+			<CancelEffectProperty cancelPassiveEffect="1" cancelEffectCodes="71000013,71000014,71000015,71000016,71000018,71000019,71000020,71000021" />
+		</level>
+	</additional>
+	<additional id="71000023">
+		<level>
+			<BasicProperty level="1" durationTick="1000" resetCondition="1" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<MotionProperty keepEffect="CH/Quest/Eff_Quest_Aura_yellow_Keep.xml" abnormalImmuneBreak="5" />
+			<CancelEffectProperty cancelPassiveEffect="1" cancelEffectCodes="71000012,71000014,71000015,71000016,71000017,71000019,71000020,71000021" />
+		</level>
+	</additional>
+	<additional id="71000024">
+		<level>
+			<BasicProperty level="1" durationTick="1000" resetCondition="1" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<MotionProperty keepEffect="CH/Quest/Eff_Quest_Aura_yellow_Keep.xml" abnormalImmuneBreak="5" />
+			<CancelEffectProperty cancelPassiveEffect="1" cancelEffectCodes="71000012,71000013,71000015,71000016,71000017,71000018,71000020,71000021" />
+		</level>
+	</additional>
+	<additional id="71000025">
+		<level>
+			<BasicProperty level="1" durationTick="1000" resetCondition="1" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<MotionProperty keepEffect="CH/Quest/Eff_Quest_Aura_yellow_Keep.xml" abnormalImmuneBreak="5" />
+			<CancelEffectProperty cancelPassiveEffect="1" cancelEffectCodes="71000012,71000013,71000014,71000016,71000017,71000018,71000019,71000021" />
+		</level>
+	</additional>
+	<additional id="71000026">
+		<level>
+			<BasicProperty level="1" durationTick="1000" resetCondition="1" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<MotionProperty keepEffect="CH/Quest/Eff_Quest_Aura_yellow_Keep.xml" abnormalImmuneBreak="5" />
+			<CancelEffectProperty cancelPassiveEffect="1" cancelEffectCodes="71000012,71000013,71000014,71000015,71000017,71000018,71000019,71000020" />
+		</level>
+	</additional>
+	<additional id="71000027">
+		<level>
+			<BasicProperty level="1" durationTick="1000" resetCondition="1" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<MotionProperty keepEffect="CH/Quest/Eff_Quest_Aura_yellow_Keep.xml" abnormalImmuneBreak="5" />
+			<CancelEffectProperty cancelPassiveEffect="1" cancelEffectCodes="71000017,71000018,71000019,71000020,71000021" />
+		</level>
+	</additional>
+	<additional id="71000028">
+		<level>
+			<BasicProperty level="1" keepCondition="99" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<MotionProperty keepEffect="NPC/Skill/Flaka/Eff_Flaka_DefenceUp_Keep.xml" stopEffect="NPC/Skill/Flaka/Eff_Flaka_DefenceUp_Stop.xml" clearCondition="0" />
+			<SpecialAbility>
+				<v type="defensive_physicaldamage" value="990" />
+				<v type="defensive_magicaldamage" value="990" />
+			</SpecialAbility>
+		</level>
+	</additional>
+	<additional id="71000029">
+		<level>
+			<BasicProperty level="1" durationTick="100" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<MotionProperty abnormalImmuneBreak="5" />
+			<CancelEffectProperty cancelPassiveEffect="1" cancelEffectCodes="71000028" />
+		</level>
+	</additional>
+	<additional id="71000030">
+		<level>
+			<beginCondition>
+				<requireMapCodes code="2100001" />
+				<owner requireStates="gosPlayInstrument" requireSubStates="StatePlayInstrument_Playing_Score_Solo,StatePlayInstrument_Playing_Score_Ensemble" requireMasteryTypes="Music" requireMasteryValues="0" />
+			</beginCondition>
+			<BasicProperty level="1" intervalTick="2279" keepCondition="99" resetCondition="1" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<MotionProperty clearCondition="0" />
+			<UIProperty icon="./Data/Resource/Image/skill/icon/110000105.png" iconOnOff="0" isHideCooltime="1" />
+			<splashSkill level="1" skillID="70000119" interval="1000" />
+		</level>
+	</additional>
+	<additional id="71000031">
+		<level>
+			<BasicProperty level="1" keepCondition="99" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<MotionProperty clearCondition="0" />
+		</level>
+	</additional>
+	<additional id="71000032">
+		<level>
+			<beginCondition>
+				<owner hasBuffID="71000031" hasBuffLevel="1" hasBuffOwner="0" hasBuffCount="0" hasBuffCountCompare="Equals" />
+			</beginCondition>
+			<BasicProperty level="1" buffType="2" buffSubType="3" buffCategory="7" durationTick="4559" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<MotionProperty keepEffect="NPC/Common/Eff_NPC_StunDance.xml" stun="99" stunAnimation="Bore_A" abnormalImmuneBreak="5" />
+		</level>
+	</additional>
+	<additional id="71000033">
+		<level>
+			<beginCondition>
+				<owner hasBuffID="71000031" hasBuffLevel="1" hasBuffOwner="0" hasBuffCount="0" hasBuffCountCompare="Equals" />
+			</beginCondition>
+			<BasicProperty level="1" buffType="2" buffSubType="3" buffCategory="7" durationTick="12000" resetCondition="1" logoutClearEffect="1" leaveFieldClearEffect="1" coolDownTime="3" />
+			<MotionProperty abnormalImmuneBreak="5" />
+			<ImmuneEffectProperty immuneEffectCodes="71000032" />
+		</level>
+	</additional>
+	<additional id="71000034">
+		<level>
+			<BasicProperty level="1" buffType="2" durationTick="100" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<MotionProperty abnormalImmuneBreak="5" />
+			<CancelEffectProperty cancelPassiveEffect="1" cancelEffectCodes="99910240,99910241,99910242,99910243" />
+		</level>
+	</additional>
+	<additional id="71000035">
+		<level>
+			<BasicProperty level="1" buffType="2" buffSubType="1" durationTick="1000" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<MotionProperty keepEffect="Additional/Burn/Eff_Additional_LizardDragonBurn_Keep.xml" stopEffect="Additional/Burn/Eff_Additional_Burn_Stop.xml" abnormalImmuneBreak="1" />
+			<DotDamageProperty type="2" element="1" damageByTargetMaxHP="0.25" soundMaterial="100" />
+		</level>
+	</additional>
+	<additional id="71000036">
+		<level>
+			<BasicProperty level="1" keepCondition="99" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<MotionProperty clearCondition="0" alphaBlending="0.6" />
+		</level>
+	</additional>
+	<additional id="71000037">
+		<level>
+			<BasicProperty level="1" durationTick="9999000" resetCondition="1" logoutClearEffect="1" leaveFieldClearEffect="1" />
+		</level>
+	</additional>
+	<additional id="71000038">
+		<level>
+			<BasicProperty level="1" durationTick="9999000" resetCondition="1" logoutClearEffect="1" leaveFieldClearEffect="1" />
+		</level>
+	</additional>
+	<additional id="71000039">
+		<level>
+			<BasicProperty level="1" keepCondition="99" deadKeepEffect="1" logoutClearEffect="1" leaveFieldClearEffect="1" statSetID="10000006" />
+		</level>
+	</additional>
+	<additional id="71000040">
+		<level>
+			<BasicProperty level="1" durationTick="500" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<MotionProperty hide="1" clearCondition="3,4,7,11,12" alphaBlending="0.3" abnormalImmuneBreak="5" />
+		</level>
+	</additional>
+	<additional id="71000041">
+		<level>
+			<BasicProperty level="1" durationTick="5000" deadKeepEffect="1" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<MotionProperty abnormalImmuneBreak="5" />
+			<CancelEffectProperty cancelEffectCodes="71000040" />
+			<ImmuneEffectProperty immuneEffectCodes="71000040" />
+		</level>
+	</additional>
+	<additional id="71000042">
+		<level>
+			<BasicProperty level="1" keepCondition="99" deadKeepEffect="1" logoutClearEffect="1" leaveFieldClearEffect="1" doNotClearEffectFromEnterPVPZone="1" />
+			<conditionSkill level="1" skillID="71000041" skillTarget="1">
+				<beginCondition>
+					<owner eventCondition="4" />
+				</beginCondition>
+			</conditionSkill>
+		</level>
+	</additional>
+	<additional id="71000043">
+		<level>
+			<BasicProperty level="1" keepCondition="99" deadKeepEffect="1" logoutClearEffect="1" leaveFieldClearEffect="1" doNotClearEffectFromEnterPVPZone="1" />
+			<conditionSkill level="1" skillID="71000041" skillTarget="1">
+				<beginCondition>
+					<owner eventCondition="7" />
+				</beginCondition>
+			</conditionSkill>
+		</level>
+	</additional>
+	<additional id="71000044">
+		<level>
+			<BasicProperty level="1" buffType="2" durationTick="9999000" intervalTick="949" resetCondition="1" dotCondition="1" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<MotionProperty keepEffect="Additional/Freeze/Eff_Additional_Freeze_Keep.xml" stopEffect="Additional/Freeze/Eff_Additional_Freeze_Stop.xml" abnormalImmuneBreak="5" />
+			<DotDamageProperty type="1" value="200" spValue="200" element="2" isConstDotDamageValue="1" />
+			<UIProperty icon="./Data/Resource/Image/skill/icon/FuryIceDamage.png" iconOnOff="0" />
+		</level>
+	</additional>
+	<additional id="71000045">
+		<level>
+			<BasicProperty level="1" durationTick="2000" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<MotionProperty abnormalImmuneBreak="5" />
+			<CancelEffectProperty cancelEffectCodes="71000044,71000046" />
+			<ImmuneEffectProperty immuneEffectCodes="71000044" />
+			<UIProperty icon="./Data/Resource/Image/skill/icon/10300101_buff.png" isHideCooltime="1" />
+		</level>
+	</additional>
+	<additional id="71000046">
+		<level>
+			<BasicProperty level="1" buffType="2" keepCondition="99" />
+			<MotionProperty keepEffect="NPC/Skill/FoxCute/Eff_FoxCute_BodyEffect_RangeUp4.xml" abnormalImmuneBreak="1" />
+			<Stat>
+				<v type="msp" value="-0.1" isRate="1" />
+				<v type="rmsp" value="-0.1" isRate="1" />
+			</Stat>
+			<DefensiveProperty invincible="1" />
+		</level>
+	</additional>
+	<additional id="71000047">
+		<level>
+			<BasicProperty level="1" buffType="2" durationTick="4500" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<MotionProperty keepEffect="Item/Skill/Eff_Item_WhitePaint_Keep_01.xml" abnormalImmuneBreak="5" />
+			<UIProperty icon="./Data/Resource/Image/item/icon/20000208.png" />
+		</level>
+	</additional>
+	<additional id="71000048">
+		<level>
+			<BasicProperty level="1" buffType="2" buffSubType="3" durationTick="1000" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<MotionProperty keepEffect="Additional/Stun/Eff_Additional_Stun_Keep.xml" stun="1" abnormalImmuneBreak="5" />
+			<UIProperty icon="./Data/Resource/Image/skill/icon/Stun.png" />
+		</level>
+	</additional>
+	<additional id="71000049">
+		<level>
+			<BasicProperty level="1" durationTick="1000" intervalTick="990" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<MotionProperty abnormalImmuneBreak="5" />
+			<DefensiveProperty invincible="3" />
+			<UIProperty icon="./Data/Resource/Image/Skill/Icon/MagicalProtective.PNG" isHideCooltime="1" />
+		</level>
+	</additional>
+	<additional id="71000051">
+		<level feature="SurvivalContents01">
+			<beginCondition allowDeadState="1" />
+			<BasicProperty level="1" keepCondition="99" deadKeepEffect="1" logoutClearEffect="1" leaveFieldClearEffect="1" statSetID="10000007" />
+			<MotionProperty scale="-0.5" />
+			<Stat>
+				<v type="jmp" value="-0.5" isRate="1" />
+			</Stat>
+		</level>
+	</additional>
+	<additional id="71000053">
+		<level>
+			<BasicProperty level="1" durationTick="35000" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<MotionProperty startEffect="CH/Skill/Wizard/Eff_Wizard_MagicArmor_Start_01.xml" keepEffect="BG/Common/Eff_Survival_Rush.xml" stopEffect="CH/Skill/Wizard/Eff_Wizard_MagicArmor_Stop_01.xml" invokeEffect="CH/Skill/Wizard/Eff_Wizard_MagicArmor_Invoke_01.xml" abnormalImmuneBreak="5" />
+			<CancelEffectProperty cancelEffectCodes="71000049" />
+			<DefensiveProperty invincible="3" />
+			<UIProperty icon="./Data/Resource/Image/Skill/Icon/MagicalProtective.PNG" iconBalloonOnOff="1" />
+		</level>
+	</additional>
+	<additional id="71000054">
+		<level>
+			<BasicProperty level="1" keepCondition="99" deadKeepEffect="1" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<MotionProperty superArmor="1" />
+		</level>
+	</additional>
+	<additional id="71000055">
+		<level>
+			<beginCondition allowBattleRidingState="1" />
+			<BasicProperty level="1" buffType="2" buffSubType="1" durationTick="1000" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<MotionProperty keepEffect="Additional/Slow/Eff_Additional_Survival_Slow_Keep.xml" stopEffect="Additional/Slow/Eff_Additional_Survival_Slow_Stop.xml" abnormalImmuneBreak="5" />
+			<Stat>
+				<v type="msp" value="-0.25" isRate="1" />
+				<v type="rmsp" value="-0.25" isRate="1" />
+			</Stat>
+			<UIProperty icon="./Data/Resource/Image/skill/icon/SpeedDown.png" isHideCooltime="1" />
+		</level>
+	</additional>
+	<additional id="71000056">
+		<level>
+			<beginCondition allowBattleRidingState="1" />
+			<BasicProperty level="1" buffType="2" durationTick="9999000" intervalTick="1000" resetCondition="1" dotCondition="1" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<MotionProperty keepEffect="CH/Common/Eff_Survival_Storm_Keep.xml" abnormalImmuneBreak="5" />
+			<DotDamageProperty type="1" value="24" spValue="24" element="2" isConstDotDamageValue="1" />
+			<UIProperty icon="./Data/Resource/Image/skill/icon/FuryIceDamage.png" iconOnOff="0" />
+		</level>
+	</additional>
+	<additional id="71000057">
+		<level>
+			<beginCondition allowBattleRidingState="1" />
+			<BasicProperty level="1" buffType="2" durationTick="9999000" intervalTick="1000" resetCondition="1" dotCondition="1" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<MotionProperty keepEffect="CH/Common/Eff_Survival_Storm_Keep.xml" abnormalImmuneBreak="5" />
+			<DotDamageProperty type="1" value="35" spValue="35" element="2" isConstDotDamageValue="1" />
+			<UIProperty icon="./Data/Resource/Image/skill/icon/FuryIceDamage.png" iconOnOff="0" />
+		</level>
+	</additional>
+	<additional id="71000058">
+		<level>
+			<beginCondition allowBattleRidingState="1" />
+			<BasicProperty level="1" buffType="2" durationTick="9999000" intervalTick="1000" resetCondition="1" dotCondition="1" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<MotionProperty keepEffect="CH/Common/Eff_Survival_Storm_Keep.xml" abnormalImmuneBreak="5" />
+			<DotDamageProperty type="1" value="50" spValue="50" element="2" isConstDotDamageValue="1" />
+			<UIProperty icon="./Data/Resource/Image/skill/icon/FuryIceDamage.png" iconOnOff="0" />
+		</level>
+	</additional>
+	<additional id="71000059">
+		<level>
+			<beginCondition allowBattleRidingState="1" />
+			<BasicProperty level="1" buffType="2" durationTick="9999000" intervalTick="1000" resetCondition="1" dotCondition="1" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<MotionProperty keepEffect="CH/Common/Eff_Survival_Storm_Keep.xml" abnormalImmuneBreak="5" />
+			<DotDamageProperty type="1" value="100" spValue="100" element="2" isConstDotDamageValue="1" />
+			<UIProperty icon="./Data/Resource/Image/skill/icon/FuryIceDamage.png" iconOnOff="0" />
+		</level>
+	</additional>
+	<additional id="71000060">
+		<level>
+			<beginCondition allowBattleRidingState="1" />
+			<BasicProperty level="1" buffType="2" durationTick="9999000" intervalTick="1000" resetCondition="1" dotCondition="1" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<MotionProperty keepEffect="CH/Common/Eff_Survival_Storm_Keep.xml" abnormalImmuneBreak="5" />
+			<DotDamageProperty type="1" value="175" spValue="175" element="2" isConstDotDamageValue="1" />
+			<UIProperty icon="./Data/Resource/Image/skill/icon/FuryIceDamage.png" iconOnOff="0" />
+		</level>
+	</additional>
+	<additional id="71000061">
+		<level>
+			<beginCondition allowBattleRidingState="1" />
+			<BasicProperty level="1" buffType="2" durationTick="9999000" intervalTick="1000" resetCondition="1" dotCondition="1" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<MotionProperty keepEffect="CH/Common/Eff_Survival_Storm_Keep.xml" abnormalImmuneBreak="5" />
+			<DotDamageProperty type="1" value="250" spValue="250" element="2" isConstDotDamageValue="1" />
+			<UIProperty icon="./Data/Resource/Image/skill/icon/FuryIceDamage.png" iconOnOff="0" />
+		</level>
+	</additional>
+	<additional id="71000062">
+		<level>
+			<beginCondition allowBattleRidingState="1" />
+			<BasicProperty level="1" buffType="2" durationTick="9999000" intervalTick="1000" resetCondition="1" dotCondition="1" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<MotionProperty keepEffect="CH/Common/Eff_Survival_Storm_Keep.xml" abnormalImmuneBreak="5" />
+			<DotDamageProperty type="1" value="350" spValue="500" element="2" isConstDotDamageValue="1" />
+			<UIProperty icon="./Data/Resource/Image/skill/icon/FuryIceDamage.png" iconOnOff="0" />
+		</level>
+	</additional>
+	<additional id="71000063">
+		<level>
+			<beginCondition allowBattleRidingState="1" />
+			<BasicProperty level="1" buffType="2" buffSubType="2" durationTick="1000" logoutClearEffect="1" leaveFieldClearEffect="1" clearEffectFromPVPZone="1" />
+			<MotionProperty keepEffect="Additional/Bleed/Eff_Additional_Bleed_Keep.xml" abnormalImmuneBreak="5" />
+			<UIProperty icon="./Data/Resource/Image/skill/icon/71000063.png" />
+		</level>
+	</additional>
+	<additional id="71000064">
+		<level stringParam="300,50,30">
+			<beginCondition allowDeadState="1" />
+			<BasicProperty level="1" durationTick="90000" intervalTick="1000" deadKeepEffect="1" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<MotionProperty keepEffect="Item/Use/Eff_Item_SurvivalMushkingBuff_Keep_01.xml" stopEffect="Item/Use/Eff_Item_SurvivalMushkingBuff_Stop_01.xml" abnormalImmuneBreak="5" />
+			<Stat>
+				<v type="hp" value="300" />
+				<v type="msp" value="30" />
+			</Stat>
+			<UIProperty icon="./Data/Resource/Image/Skill/Icon/30001102_buff.png" />
+		</level>
+	</additional>
+	<additional id="71000065">
+		<level stringParam="100">
+			<beginCondition allowDeadState="1" />
+			<BasicProperty level="1" durationTick="45000" intervalTick="1000" deadKeepEffect="1" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<MotionProperty keepEffect="Item/Use/Eff_Item_SurvivalHPBuff_Keep_01.xml" stopEffect="Item/Use/Eff_Item_SurvivalHPBuff_Stop_01.xml" abnormalImmuneBreak="5" />
+			<Stat>
+				<v type="hp" value="100" />
+			</Stat>
+			<UIProperty icon="./Data/Resource/Image/Skill/Icon/30001103_buff.png" />
+		</level>
+	</additional>
+	<additional id="71000066">
+		<level stringParam="20">
+			<beginCondition allowDeadState="1" />
+			<BasicProperty level="1" durationTick="45000" intervalTick="1000" deadKeepEffect="1" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<MotionProperty keepEffect="Item/Use/Eff_Item_SurvivalMovementBuff_Keep_01.xml" stopEffect="Item/Use/Eff_Item_SurvivalMovementBuff_Stop_01.xml" abnormalImmuneBreak="5" />
+			<Stat>
+				<v type="msp" value="12" />
+			</Stat>
+			<UIProperty icon="./Data/Resource/Image/Skill/Icon/30001104_buff.png" />
+		</level>
+	</additional>
+	<additional id="71000067">
+		<level>
+			<beginCondition allowBattleRidingState="1" />
+			<BasicProperty level="1" buffType="2" durationTick="3000" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<MotionProperty keepEffect="Item/Skill/Eff_ObjectWeapon_Survival_PaintBomb_Keep_01.xml" abnormalImmuneBreak="5" />
+			<Stat>
+				<v type="msp" value="-0.3" isRate="1" />
+				<v type="rmsp" value="-0.3" isRate="1" />
+			</Stat>
+			<UIProperty icon="./Data/Resource/Image/skill/icon/SpeedDown.png" iconOnOff="0" />
+		</level>
+	</additional>
+	<additional id="71000068">
+		<level feature="SurvivalContents02">
+			<beginCondition allowDeadState="1" />
+			<BasicProperty level="1" keepCondition="99" deadKeepEffect="1" logoutClearEffect="1" leaveFieldClearEffect="1" statSetID="10000008" />
+			<MotionProperty scale="-0.5" />
+			<Stat>
+				<v type="jmp" value="-0.5" isRate="1" />
+			</Stat>
+		</level>
+	</additional>
+	<additional id="71000074">
+		<level feature="SurvivalContents03">
+			<beginCondition allowDeadState="1" />
+			<BasicProperty level="1" keepCondition="99" deadKeepEffect="1" logoutClearEffect="1" leaveFieldClearEffect="1" statSetID="10000009" />
+			<MotionProperty scale="-0.5" />
+			<Stat>
+				<v type="jmp" value="-0.5" isRate="1" />
+			</Stat>
+		</level>
+	</additional>
+	<additional id="71000075">
+		<level feature="SurvivalContentsTeam" stringParam="200">
+			<BasicProperty level="1" buffSubType="1" durationTick="99999000" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<MotionProperty abnormalImmuneBreak="5" />
+			<Stat>
+				<v type="msp" value="1" isRate="1" />
+				<v type="jmp" value="0.6" isRate="1" />
+				<v type="rmsp" value="1" isRate="1" />
+			</Stat>
+			<UIProperty icon="./Data/Resource/Image/skill/icon/71000075.png" isHideCooltime="1" />
+		</level>
+	</additional>
+	<additional id="71000076">
+		<level feature="SurvivalContentsTeam" stringParam="50">
+			<BasicProperty level="1" buffSubType="1" durationTick="99999000" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<MotionProperty abnormalImmuneBreak="5" />
+			<SpecialAbility>
+				<v type="skillcooldown" value="500" />
+			</SpecialAbility>
+			<UIProperty icon="./Data/Resource/Image/skill/icon/71000075.png" isHideCooltime="1" />
+		</level>
+	</additional>
+	<additional id="71000077">
+		<level feature="SurvivalTutorial" stringParam="500,500">
+			<BasicProperty level="1" keepCondition="99" deadKeepEffect="1" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<MotionProperty keepEffect="Item/Use/Eff_Item_SurvivalMushkingBuff_Keep_02.xml" stopEffect="Item/Use/Eff_Item_SurvivalMushkingBuff_Stop_02.xml" />
+			<Stat>
+				<v type="pap" value="5" isRate="1" />
+				<v type="map" value="5" isRate="1" />
+			</Stat>
+			<UIProperty icon="./Data/Resource/Image/Skill/Icon/30001102_buff.png" isHideCooltime="1" />
+		</level>
+	</additional>
+	<additional id="71001001">
+		<level>
+			<beginCondition allowBattleRidingState="1" />
+			<BasicProperty level="1" buffType="2" buffCategory="6" durationTick="10000" intervalTick="1000" resetCondition="1" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<MotionProperty keepEffect="Additional/Poison/Eff_Additional_Survival_Poison_Keep.xml" stopEffect="Additional/Poison/Eff_AdditionalSurvival_Poison_Stop.xml" />
+			<Stat>
+				<v type="msp" value="-0.2" isRate="1" />
+				<v type="rmsp" value="-0.2" isRate="1" />
+			</Stat>
+			<DotDamageProperty type="1" value="20" soundMaterial="104" isConstDotDamageValue="1" />
+			<UIProperty icon="./Data/Resource/Image/skill/icon/Poison.png" />
+		</level>
+	</additional>
+	<additional id="71001011">
+		<level feature="Kritias_2018_12">
+			<BasicProperty level="1" durationTick="120000" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<UIProperty icon="./Data/Resource/Image/skill/icon/PuzzleChallenger.png" iconBalloonOnOff="1" />
+			<conditionSkill level="1" skillID="71001013" skillTarget="1">
+				<beginCondition>
+					<owner hasBuffID="71001012" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="0" hasBuffCountCompare="Equals" eventCondition="16" />
+				</beginCondition>
+			</conditionSkill>
+		</level>
+	</additional>
+	<additional id="71001012">
+		<level feature="Kritias_2018_12">
+			<BasicProperty level="1" durationTick="5000" logoutClearEffect="1" leaveFieldClearEffect="1" />
+		</level>
+	</additional>
+	<additional id="71001013">
+		<level feature="Kritias_2018_12">
+			<BasicProperty level="1" durationTick="60000" delayTick="1000" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<CancelEffectProperty cancelEffectCodes="71001011" />
+			<UIProperty icon="./Data/Resource/Image/skill/icon/puzzleSuccess.png" iconBalloonOnOff="1" />
+		</level>
+	</additional>
+	<additional id="71001021">
+		<level feature="Kritias_2018_12">
+			<BasicProperty level="1" durationTick="120000" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<UIProperty icon="./Data/Resource/Image/skill/icon/PuzzleChallenger.png" iconBalloonOnOff="1" />
+			<conditionSkill level="1" skillID="71001023" skillTarget="1">
+				<beginCondition>
+					<owner hasBuffID="71001022" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="0" hasBuffCountCompare="Equals" eventCondition="16" />
+				</beginCondition>
+			</conditionSkill>
+		</level>
+	</additional>
+	<additional id="71001022">
+		<level feature="Kritias_2018_12">
+			<BasicProperty level="1" durationTick="5000" logoutClearEffect="1" leaveFieldClearEffect="1" />
+		</level>
+	</additional>
+	<additional id="71001023">
+		<level feature="Kritias_2018_12">
+			<BasicProperty level="1" durationTick="60000" delayTick="1000" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<CancelEffectProperty cancelEffectCodes="71001021" />
+			<UIProperty icon="./Data/Resource/Image/skill/icon/puzzleSuccess.png" iconBalloonOnOff="1" />
+		</level>
+	</additional>
+	<additional id="71001031">
+		<level feature="Kritias_2018_12">
+			<BasicProperty level="1" durationTick="120000" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<UIProperty icon="./Data/Resource/Image/skill/icon/PuzzleChallenger.png" iconBalloonOnOff="1" />
+			<conditionSkill level="1" skillID="71001033" skillTarget="1">
+				<beginCondition>
+					<owner hasBuffID="71001032" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="0" hasBuffCountCompare="Equals" eventCondition="16" />
+				</beginCondition>
+			</conditionSkill>
+		</level>
+	</additional>
+	<additional id="71001032">
+		<level feature="Kritias_2018_12">
+			<BasicProperty level="1" durationTick="5000" logoutClearEffect="1" leaveFieldClearEffect="1" />
+		</level>
+	</additional>
+	<additional id="71001033">
+		<level feature="Kritias_2018_12">
+			<BasicProperty level="1" durationTick="60000" delayTick="1000" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<CancelEffectProperty cancelEffectCodes="71001031" />
+			<UIProperty icon="./Data/Resource/Image/skill/icon/puzzleSuccess.png" iconBalloonOnOff="1" />
+		</level>
+	</additional>
+	<additional id="71001041">
+		<level feature="Kritias_2018_12">
+			<BasicProperty level="1" durationTick="120000" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<UIProperty icon="./Data/Resource/Image/skill/icon/PuzzleChallenger.png" iconBalloonOnOff="1" />
+			<conditionSkill level="1" skillID="71001043" skillTarget="1">
+				<beginCondition>
+					<owner hasBuffID="71001042" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="0" hasBuffCountCompare="Equals" eventCondition="16" />
+				</beginCondition>
+			</conditionSkill>
+		</level>
+	</additional>
+	<additional id="71001042">
+		<level feature="Kritias_2018_12">
+			<BasicProperty level="1" durationTick="5000" logoutClearEffect="1" leaveFieldClearEffect="1" />
+		</level>
+	</additional>
+	<additional id="71001043">
+		<level feature="Kritias_2018_12">
+			<BasicProperty level="1" durationTick="60000" delayTick="1000" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<CancelEffectProperty cancelEffectCodes="71001041" />
+			<UIProperty icon="./Data/Resource/Image/skill/icon/puzzleSuccess.png" iconBalloonOnOff="1" />
+		</level>
+	</additional>
+	<additional id="71001051">
+		<level feature="Kritias_2018_12">
+			<BasicProperty level="1" durationTick="120000" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<UIProperty icon="./Data/Resource/Image/skill/icon/PuzzleChallenger.png" iconBalloonOnOff="1" />
+			<conditionSkill level="1" skillID="71001053" skillTarget="1">
+				<beginCondition>
+					<owner hasBuffID="71001052" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="0" hasBuffCountCompare="Equals" eventCondition="16" />
+				</beginCondition>
+			</conditionSkill>
+		</level>
+	</additional>
+	<additional id="71001052">
+		<level feature="Kritias_2018_12">
+			<BasicProperty level="1" durationTick="5000" logoutClearEffect="1" leaveFieldClearEffect="1" />
+		</level>
+	</additional>
+	<additional id="71001053">
+		<level feature="Kritias_2018_12">
+			<BasicProperty level="1" durationTick="60000" delayTick="1000" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<CancelEffectProperty cancelEffectCodes="71001051" />
+			<UIProperty icon="./Data/Resource/Image/skill/icon/puzzleSuccess.png" iconBalloonOnOff="1" />
+		</level>
+	</additional>
+	<additional id="71001061">
+		<level feature="Kritias_2018_12">
+			<BasicProperty level="1" durationTick="120000" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<UIProperty icon="./Data/Resource/Image/skill/icon/PuzzleChallenger.png" iconBalloonOnOff="1" />
+		</level>
+	</additional>
+	<additional id="71001062">
+		<level feature="Kritias_2018_12">
+			<BasicProperty level="1" durationTick="5000" logoutClearEffect="1" leaveFieldClearEffect="1" />
+		</level>
+	</additional>
+	<additional id="71001063">
+		<level feature="Kritias_2018_12">
+			<BasicProperty level="1" durationTick="60000" delayTick="1000" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<CancelEffectProperty cancelEffectCodes="71001061,71001271,71001281" />
+			<UIProperty icon="./Data/Resource/Image/skill/icon/puzzleSuccess.png" iconBalloonOnOff="1" />
+		</level>
+	</additional>
+	<additional id="71001071">
+		<level feature="Kritias_2018_12">
+			<BasicProperty level="1" durationTick="180000" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<UIProperty icon="./Data/Resource/Image/skill/icon/PuzzleChallenger.png" iconBalloonOnOff="1" />
+		</level>
+	</additional>
+	<additional id="71001081">
+		<level feature="Kritias_2018_12">
+			<BasicProperty level="1" durationTick="180000" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<UIProperty icon="./Data/Resource/Image/skill/icon/PuzzleChallenger.png" iconBalloonOnOff="1" />
+		</level>
+	</additional>
+	<additional id="71001111">
+		<level feature="Kritias_2018_12">
+			<BasicProperty level="1" durationTick="100" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<CancelEffectProperty cancelEffectCodes="71001011,71001012,71001013" />
+		</level>
+	</additional>
+	<additional id="71001121">
+		<level feature="Kritias_2018_12">
+			<BasicProperty level="1" durationTick="100" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<CancelEffectProperty cancelEffectCodes="71001021,71001022,71001023" />
+		</level>
+	</additional>
+	<additional id="71001131">
+		<level feature="Kritias_2018_12">
+			<BasicProperty level="1" durationTick="100" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<CancelEffectProperty cancelEffectCodes="71001031,71001032,71001033" />
+		</level>
+	</additional>
+	<additional id="71001141">
+		<level feature="Kritias_2018_12">
+			<BasicProperty level="1" durationTick="100" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<CancelEffectProperty cancelEffectCodes="71001041,71001042,71001043" />
+		</level>
+	</additional>
+	<additional id="71001151">
+		<level feature="Kritias_2018_12">
+			<BasicProperty level="1" durationTick="100" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<CancelEffectProperty cancelPassiveEffect="1" cancelEffectCodes="71001051,71001231,71001241,71001052,71001053" />
+		</level>
+	</additional>
+	<additional id="71001161">
+		<level feature="Kritias_2018_12">
+			<BasicProperty level="1" durationTick="100" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<CancelEffectProperty cancelEffectCodes="71001061,71001062,71001063" />
+		</level>
+	</additional>
+	<additional id="71001171">
+		<level feature="Kritias_2018_12">
+			<BasicProperty level="1" durationTick="100" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<CancelEffectProperty cancelEffectCodes="71001071" />
+		</level>
+	</additional>
+	<additional id="71001181">
+		<level feature="Kritias_2018_12">
+			<BasicProperty level="1" durationTick="100" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<CancelEffectProperty cancelEffectCodes="71001081" />
+		</level>
+	</additional>
+	<additional id="71001191">
+		<level feature="Kritias_2018_12">
+			<BasicProperty level="1" keepCondition="99" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<MotionProperty clearCondition="0" />
+		</level>
+	</additional>
+	<additional id="71001201">
+		<level feature="Kritias_2018_12">
+			<BasicProperty level="1" keepCondition="99" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<MotionProperty clearCondition="0" />
+		</level>
+	</additional>
+	<additional id="71001211">
+		<level feature="Kritias_2018_12">
+			<beginCondition>
+				<owner hasBuffID="71001051" hasBuffLevel="1" hasBuffOwner="0" hasBuffCount="0" hasBuffCountCompare="Equals" />
+			</beginCondition>
+			<BasicProperty level="1" durationTick="1500" intervalTick="1000" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<MotionProperty startEffect="ETC/Eff_MiniPuzzle_InteractWithNpc_start.xml" keepEffect="ETC/Eff_MiniPuzzle_InteractWithNpc_Range_on.xml" />
+			<UIProperty icon="./Data/Resource/Image/skill/icon/CurseDay_debuff.png" />
+			<splashSkill level="1" skillID="70000411" interval="1000" />
+		</level>
+	</additional>
+	<additional id="71001221">
+		<level feature="Kritias_2018_12">
+			<beginCondition>
+				<owner hasBuffID="71001051" hasBuffLevel="1" hasBuffOwner="0" hasBuffCount="0" hasBuffCountCompare="Equals" />
+				<caster hasBuffID="71001311" hasBuffLevel="1" hasBuffOwner="0" hasBuffCount="5" hasBuffCountCompare="Equals" />
+			</beginCondition>
+			<BasicProperty level="1" durationTick="1500" intervalTick="1000" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<UIProperty icon="./Data/Resource/Image/skill/icon/CurseNight_debuff.png" />
+			<splashSkill level="1" skillID="70000421" interval="1000" />
+		</level>
+	</additional>
+	<additional id="71001231">
+		<level feature="Kritias_2018_12">
+			<beginCondition>
+				<owner hasBuffID="71001051" hasBuffLevel="1" hasBuffOwner="0" hasBuffCount="0" hasBuffCountCompare="Equals" />
+			</beginCondition>
+			<BasicProperty level="1" intervalTick="1500" keepCondition="99" resetCondition="1" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<MotionProperty clearCondition="0" />
+			<UIProperty icon="./Data/Resource/Image/skill/icon/CurseDay_debuff.png" />
+			<conditionSkill level="1" skillID="71001211" skillTarget="1">
+				<beginCondition>
+					<owner eventCondition="20" eventSkillID="90200022" />
+				</beginCondition>
+			</conditionSkill>
+		</level>
+	</additional>
+	<additional id="71001241">
+		<level feature="Kritias_2018_12">
+			<beginCondition>
+				<owner hasBuffID="71001051" hasBuffLevel="1" hasBuffOwner="0" hasBuffCount="0" hasBuffCountCompare="Equals" requireStates="gosCrawl" />
+			</beginCondition>
+			<BasicProperty level="1" intervalTick="1500" keepCondition="99" resetCondition="1" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<MotionProperty startEffect="ETC/Eff_MiniPuzzle_InteractWithNpc_start.xml" keepEffect="ETC/Eff_MiniPuzzle_InteractWithNpc_Range_on.xml" clearCondition="0" />
+			<UIProperty icon="./Data/Resource/Image/skill/icon/CurseNight_debuff.png" />
+			<conditionSkill level="1" skillID="71001311" skillTarget="1" activeByIntervalTick="1" />
+		</level>
+	</additional>
+	<additional id="71001251">
+		<level feature="Kritias_2018_12">
+			<BasicProperty level="1" durationTick="1000" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<CancelEffectProperty cancelPassiveEffect="1" cancelEffectCodes="71001191" />
+		</level>
+	</additional>
+	<additional id="71001261">
+		<level feature="Kritias_2018_12">
+			<BasicProperty level="1" durationTick="1000" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<CancelEffectProperty cancelPassiveEffect="1" cancelEffectCodes="71001201" />
+		</level>
+	</additional>
+	<additional id="71001271">
+		<level feature="Kritias_2018_12">
+			<BasicProperty level="1" durationTick="15000" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<MotionProperty keepEffect="CH/Common/Eff_TickingOfClock_Keep.xml" />
+			<UIProperty icon="./Data/Resource/Image/skill/icon/CurseDay_debuff.png" />
+			<conditionSkill level="1" skillID="71001063" skillTarget="1">
+				<beginCondition>
+					<owner hasBuffID="71001062" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="0" hasBuffCountCompare="Equals" eventCondition="16" />
+				</beginCondition>
+			</conditionSkill>
+		</level>
+	</additional>
+	<additional id="71001281">
+		<level feature="Kritias_2018_12">
+			<BasicProperty level="1" durationTick="1000" delayTick="15000" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<MotionProperty startEffect="BG/Common/Sound/Eff_Object_Kritias_MiniPuzzle_Wrong_01.xml" />
+			<UIProperty icon="./Data/Resource/Image/skill/icon/CurseNight_debuff.png" />
+		</level>
+	</additional>
+	<additional id="71001291">
+		<level feature="Kritias_2018_12">
+			<BasicProperty level="1" durationTick="100" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<CancelEffectProperty cancelEffectCodes="71001271,71001281" />
+		</level>
+	</additional>
+	<additional id="71001301">
+		<level feature="Kritias_2018_12">
+			<BasicProperty level="1" keepCondition="99" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<MotionProperty keepEffect="ETC/Eff_MiniPuzzle_RunningAroundNpc_01_Keep.xml" clearCondition="0" />
+		</level>
+	</additional>
+	<additional id="71001311">
+		<level feature="Kritias_2018_12">
+			<beginCondition>
+				<owner hasBuffID="71001051" hasBuffLevel="1" hasBuffOwner="0" hasBuffCount="0" hasBuffCountCompare="Equals" />
+			</beginCondition>
+			<BasicProperty level="1" durationTick="6000" intervalTick="1500" resetCondition="2" maxBuffCount="5" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<UIProperty icon="./Data/Resource/Image/skill/icon/CurseNight_debuff.png" />
+			<conditionSkill level="1" skillID="71001221" skillTarget="1" activeByIntervalTick="1">
+				<beginCondition>
+					<owner hasBuffID="71001311" hasBuffLevel="1" hasBuffOwner="0" hasBuffCount="5" hasBuffCountCompare="Equals" />
+				</beginCondition>
+			</conditionSkill>
+		</level>
+	</additional>
+</ms2>

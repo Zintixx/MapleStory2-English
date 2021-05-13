@@ -1,678 +1,418 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ms2>
 	<skill id="120010001" comment="소비 아이템">
-		<basic mainType="2">
+		<basic mainType="2" param1="41000020">
 			<ui icon="./Data/Resource/Image/item/icon/41000011.png" attackType="3" />
 			<kinds rangeType="2" groupType="2" unrideOnUse="1" />
 			<stateAttr keyIsDown="1" />
+			<autoTargeting autoTargetingMaxDegree="45" />
+			<push back="200" />
+			<condition useCoolDownShowUI="1" />
 		</basic>
-		<level value="1">
-			<beginCondition cooldownTime="30" useCoolDownShowUI="1" />
-			<autoTargeting autoTargetingMaxDegree="45" />
-			<push back="200" />
-			<targetItem>
-				<item id="41000011" />
-			</targetItem>
-			<motion>
-				<motionProperty sequenceName="LapenShard_SeirenHeart_A" sequenceSpeed="2" motionEffect="NPC/Skill/SirenHarp/Eff_SirenHarp_Attack_01_B_Cast.xml" holdWeapon="0" />
+		<level value="1" cooldown="30000" stringParam="552">
+			<motion sequenceName="LapenShard_SeirenHeart_A" sequenceSpeed="2" motionEffect="NPC/Skill/SirenHarp/Eff_SirenHarp_Attack_01_B_Cast.xml" holdWeapon="0">
 				<attack point="p0" targetCount="3" magicPathID="120010001" attacktype="3" attackMethodType="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="2" unrideOnHit="1">
-					<rangeProperty rangeType="frustum" distance="750" height="150" width="150" endWidth="900" applyTarget="1" />
-					<arrowProperty nonTarget="1" bounceType="3" bounceCount="5" collision="150.000000,150.000000,150.000000" collisionAdd="0.000000,0.000000,70.000000" effect="NPC/Skill/SirenHarp/Eff_SirenHarp_Attack_01_A_Ball.xml" />
-					<damageProperty rate="5.52" effectHit="NPC/Skill/SirenHarp/Eff_SirenHarp_Attack_01_A_Hit.xml" />
+					<range rangeType="frustum" distance="750" height="150" width="150" endWidth="900" applyTarget="1" />
+					<arrow nonTarget="1" bounceType="3" bounceCount="5" collision="150,150,150" collisionAdd="0,0,70" effect="NPC/Skill/SirenHarp/Eff_SirenHarp_Attack_01_A_Ball.xml" />
+					<damage rate="5.52" effectHit="NPC/Skill/SirenHarp/Eff_SirenHarp_Attack_01_A_Hit.xml" />
 					<actionAdditional additionalID="120010001" level="1" skillTarget="2" skillOwner="1" />
 				</attack>
 			</motion>
 		</level>
-		<level value="2">
-			<beginCondition cooldownTime="30" useCoolDownShowUI="1" />
-			<autoTargeting autoTargetingMaxDegree="45" />
-			<push back="200" />
-			<targetItem>
-				<item id="41000012" />
-			</targetItem>
-			<motion>
-				<motionProperty sequenceName="LapenShard_SeirenHeart_A" sequenceSpeed="2" motionEffect="NPC/Skill/SirenHarp/Eff_SirenHarp_Attack_01_B_Cast.xml" holdWeapon="0" />
+		<level value="2" cooldown="30000" stringParam="599">
+			<motion sequenceName="LapenShard_SeirenHeart_A" sequenceSpeed="2" motionEffect="NPC/Skill/SirenHarp/Eff_SirenHarp_Attack_01_B_Cast.xml" holdWeapon="0">
 				<attack point="p0" targetCount="3" magicPathID="120010001" attacktype="3" attackMethodType="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="2" unrideOnHit="1">
-					<rangeProperty rangeType="frustum" distance="750" height="150" width="150" endWidth="900" applyTarget="1" />
-					<arrowProperty nonTarget="1" bounceType="3" bounceCount="5" collision="150.000000,150.000000,150.000000" collisionAdd="0.000000,0.000000,70.000000" effect="NPC/Skill/SirenHarp/Eff_SirenHarp_Attack_01_A_Ball.xml" />
-					<damageProperty rate="5.99" effectHit="NPC/Skill/SirenHarp/Eff_SirenHarp_Attack_01_A_Hit.xml" />
+					<range rangeType="frustum" distance="750" height="150" width="150" endWidth="900" applyTarget="1" />
+					<arrow nonTarget="1" bounceType="3" bounceCount="5" collision="150,150,150" collisionAdd="0,0,70" effect="NPC/Skill/SirenHarp/Eff_SirenHarp_Attack_01_A_Ball.xml" />
+					<damage rate="5.99" effectHit="NPC/Skill/SirenHarp/Eff_SirenHarp_Attack_01_A_Hit.xml" />
 					<actionAdditional additionalID="120010001" level="1" skillTarget="2" skillOwner="1" />
 				</attack>
 			</motion>
 		</level>
-		<level value="3">
-			<beginCondition cooldownTime="30" useCoolDownShowUI="1" />
-			<autoTargeting autoTargetingMaxDegree="45" />
-			<push back="200" />
-			<targetItem>
-				<item id="41000013" />
-			</targetItem>
-			<motion>
-				<motionProperty sequenceName="LapenShard_SeirenHeart_A" sequenceSpeed="2" motionEffect="NPC/Skill/SirenHarp/Eff_SirenHarp_Attack_01_B_Cast.xml" holdWeapon="0" />
+		<level value="3" cooldown="30000" stringParam="646">
+			<motion sequenceName="LapenShard_SeirenHeart_A" sequenceSpeed="2" motionEffect="NPC/Skill/SirenHarp/Eff_SirenHarp_Attack_01_B_Cast.xml" holdWeapon="0">
 				<attack point="p0" targetCount="3" magicPathID="120010001" attacktype="3" attackMethodType="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="2" unrideOnHit="1">
-					<rangeProperty rangeType="frustum" distance="750" height="150" width="150" endWidth="900" applyTarget="1" />
-					<arrowProperty nonTarget="1" bounceType="3" bounceCount="5" collision="150.000000,150.000000,150.000000" collisionAdd="0.000000,0.000000,70.000000" effect="NPC/Skill/SirenHarp/Eff_SirenHarp_Attack_01_A_Ball.xml" />
-					<damageProperty rate="6.46" effectHit="NPC/Skill/SirenHarp/Eff_SirenHarp_Attack_01_A_Hit.xml" />
+					<range rangeType="frustum" distance="750" height="150" width="150" endWidth="900" applyTarget="1" />
+					<arrow nonTarget="1" bounceType="3" bounceCount="5" collision="150,150,150" collisionAdd="0,0,70" effect="NPC/Skill/SirenHarp/Eff_SirenHarp_Attack_01_A_Ball.xml" />
+					<damage rate="6.46" effectHit="NPC/Skill/SirenHarp/Eff_SirenHarp_Attack_01_A_Hit.xml" />
 					<actionAdditional additionalID="120010001" level="1" skillTarget="2" skillOwner="1" />
 				</attack>
 			</motion>
 		</level>
-		<level value="4">
-			<beginCondition cooldownTime="30" useCoolDownShowUI="1" />
-			<autoTargeting autoTargetingMaxDegree="45" />
-			<push back="200" />
-			<targetItem>
-				<item id="41000014" />
-			</targetItem>
-			<motion>
-				<motionProperty sequenceName="LapenShard_SeirenHeart_A" sequenceSpeed="2" motionEffect="NPC/Skill/SirenHarp/Eff_SirenHarp_Attack_01_B_Cast.xml" holdWeapon="0" />
+		<level value="4" cooldown="30000" stringParam="669">
+			<motion sequenceName="LapenShard_SeirenHeart_A" sequenceSpeed="2" motionEffect="NPC/Skill/SirenHarp/Eff_SirenHarp_Attack_01_B_Cast.xml" holdWeapon="0">
 				<attack point="p0" targetCount="3" magicPathID="120010001" attacktype="3" attackMethodType="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="2" unrideOnHit="1">
-					<rangeProperty rangeType="frustum" distance="750" height="150" width="150" endWidth="900" applyTarget="1" />
-					<arrowProperty nonTarget="1" bounceType="3" bounceCount="5" collision="150.000000,150.000000,150.000000" collisionAdd="0.000000,0.000000,70.000000" effect="NPC/Skill/SirenHarp/Eff_SirenHarp_Attack_01_A_Ball.xml" />
-					<damageProperty rate="6.69" effectHit="NPC/Skill/SirenHarp/Eff_SirenHarp_Attack_01_A_Hit.xml" />
+					<range rangeType="frustum" distance="750" height="150" width="150" endWidth="900" applyTarget="1" />
+					<arrow nonTarget="1" bounceType="3" bounceCount="5" collision="150,150,150" collisionAdd="0,0,70" effect="NPC/Skill/SirenHarp/Eff_SirenHarp_Attack_01_A_Ball.xml" />
+					<damage rate="6.69" effectHit="NPC/Skill/SirenHarp/Eff_SirenHarp_Attack_01_A_Hit.xml" />
 					<actionAdditional additionalID="120010001" level="1" skillTarget="2" skillOwner="1" />
 				</attack>
 			</motion>
 		</level>
-		<level value="5">
-			<beginCondition cooldownTime="30" useCoolDownShowUI="1" />
-			<autoTargeting autoTargetingMaxDegree="45" />
-			<push back="200" />
-			<targetItem>
-				<item id="41000015" />
-			</targetItem>
-			<motion>
-				<motionProperty sequenceName="LapenShard_SeirenHeart_A" sequenceSpeed="2" motionEffect="NPC/Skill/SirenHarp/Eff_SirenHarp_Attack_01_B_Cast.xml" holdWeapon="0" />
+		<level value="5" cooldown="30000" stringParam="716">
+			<motion sequenceName="LapenShard_SeirenHeart_A" sequenceSpeed="2" motionEffect="NPC/Skill/SirenHarp/Eff_SirenHarp_Attack_01_B_Cast.xml" holdWeapon="0">
 				<attack point="p0" targetCount="3" magicPathID="120010001" attacktype="3" attackMethodType="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="2" unrideOnHit="1">
-					<rangeProperty rangeType="frustum" distance="750" height="150" width="150" endWidth="900" applyTarget="1" />
-					<arrowProperty nonTarget="1" bounceType="3" bounceCount="5" collision="150.000000,150.000000,150.000000" collisionAdd="0.000000,0.000000,70.000000" effect="NPC/Skill/SirenHarp/Eff_SirenHarp_Attack_01_A_Ball.xml" />
-					<damageProperty rate="7.16" effectHit="NPC/Skill/SirenHarp/Eff_SirenHarp_Attack_01_A_Hit.xml" />
+					<range rangeType="frustum" distance="750" height="150" width="150" endWidth="900" applyTarget="1" />
+					<arrow nonTarget="1" bounceType="3" bounceCount="5" collision="150,150,150" collisionAdd="0,0,70" effect="NPC/Skill/SirenHarp/Eff_SirenHarp_Attack_01_A_Ball.xml" />
+					<damage rate="7.16" effectHit="NPC/Skill/SirenHarp/Eff_SirenHarp_Attack_01_A_Hit.xml" />
 					<actionAdditional additionalID="120010001" level="1" skillTarget="2" skillOwner="1" />
 				</attack>
 			</motion>
 		</level>
-		<level value="6">
-			<beginCondition cooldownTime="30" useCoolDownShowUI="1" />
-			<autoTargeting autoTargetingMaxDegree="45" />
-			<push back="200" />
-			<targetItem>
-				<item id="41000016" />
-			</targetItem>
-			<motion>
-				<motionProperty sequenceName="LapenShard_SeirenHeart_A" sequenceSpeed="2" motionEffect="NPC/Skill/SirenHarp/Eff_SirenHarp_Attack_01_B_Cast.xml" holdWeapon="0" />
+		<level value="6" cooldown="30000" stringParam="787">
+			<motion sequenceName="LapenShard_SeirenHeart_A" sequenceSpeed="2" motionEffect="NPC/Skill/SirenHarp/Eff_SirenHarp_Attack_01_B_Cast.xml" holdWeapon="0">
 				<attack point="p0" targetCount="3" magicPathID="120010001" attacktype="3" attackMethodType="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="2" unrideOnHit="1">
-					<rangeProperty rangeType="frustum" distance="750" height="150" width="150" endWidth="900" applyTarget="1" />
-					<arrowProperty nonTarget="1" bounceType="3" bounceCount="5" collision="150.000000,150.000000,150.000000" collisionAdd="0.000000,0.000000,70.000000" effect="NPC/Skill/SirenHarp/Eff_SirenHarp_Attack_01_A_Ball.xml" />
-					<damageProperty rate="7.87" effectHit="NPC/Skill/SirenHarp/Eff_SirenHarp_Attack_01_A_Hit.xml" />
+					<range rangeType="frustum" distance="750" height="150" width="150" endWidth="900" applyTarget="1" />
+					<arrow nonTarget="1" bounceType="3" bounceCount="5" collision="150,150,150" collisionAdd="0,0,70" effect="NPC/Skill/SirenHarp/Eff_SirenHarp_Attack_01_A_Ball.xml" />
+					<damage rate="7.87" effectHit="NPC/Skill/SirenHarp/Eff_SirenHarp_Attack_01_A_Hit.xml" />
 					<actionAdditional additionalID="120010001" level="1" skillTarget="2" skillOwner="1" />
 				</attack>
 			</motion>
 		</level>
-		<level value="7">
-			<beginCondition cooldownTime="30" useCoolDownShowUI="1" />
-			<autoTargeting autoTargetingMaxDegree="45" />
-			<push back="200" />
-			<targetItem>
-				<item id="41000017" />
-			</targetItem>
-			<motion>
-				<motionProperty sequenceName="LapenShard_SeirenHeart_A" sequenceSpeed="2" motionEffect="NPC/Skill/SirenHarp/Eff_SirenHarp_Attack_01_B_Cast.xml" holdWeapon="0" />
+		<level value="7" cooldown="30000" stringParam="857">
+			<motion sequenceName="LapenShard_SeirenHeart_A" sequenceSpeed="2" motionEffect="NPC/Skill/SirenHarp/Eff_SirenHarp_Attack_01_B_Cast.xml" holdWeapon="0">
 				<attack point="p0" targetCount="3" magicPathID="120010001" attacktype="3" attackMethodType="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="2" unrideOnHit="1">
-					<rangeProperty rangeType="frustum" distance="750" height="150" width="150" endWidth="900" applyTarget="1" />
-					<arrowProperty nonTarget="1" bounceType="3" bounceCount="5" collision="150.000000,150.000000,150.000000" collisionAdd="0.000000,0.000000,70.000000" effect="NPC/Skill/SirenHarp/Eff_SirenHarp_Attack_01_A_Ball.xml" />
-					<damageProperty rate="8.57" effectHit="NPC/Skill/SirenHarp/Eff_SirenHarp_Attack_01_A_Hit.xml" />
+					<range rangeType="frustum" distance="750" height="150" width="150" endWidth="900" applyTarget="1" />
+					<arrow nonTarget="1" bounceType="3" bounceCount="5" collision="150,150,150" collisionAdd="0,0,70" effect="NPC/Skill/SirenHarp/Eff_SirenHarp_Attack_01_A_Ball.xml" />
+					<damage rate="8.57" effectHit="NPC/Skill/SirenHarp/Eff_SirenHarp_Attack_01_A_Hit.xml" />
 					<actionAdditional additionalID="120010001" level="1" skillTarget="2" skillOwner="1" />
 				</attack>
 			</motion>
 		</level>
-		<level value="8">
-			<beginCondition cooldownTime="30" useCoolDownShowUI="1" />
-			<autoTargeting autoTargetingMaxDegree="45" />
-			<push back="200" />
-			<targetItem>
-				<item id="41000018" />
-			</targetItem>
-			<motion>
-				<motionProperty sequenceName="LapenShard_SeirenHeart_A" sequenceSpeed="2" motionEffect="NPC/Skill/SirenHarp/Eff_SirenHarp_Attack_01_B_Cast.xml" holdWeapon="0" />
+		<level value="8" cooldown="30000" stringParam="939">
+			<motion sequenceName="LapenShard_SeirenHeart_A" sequenceSpeed="2" motionEffect="NPC/Skill/SirenHarp/Eff_SirenHarp_Attack_01_B_Cast.xml" holdWeapon="0">
 				<attack point="p0" targetCount="3" magicPathID="120010001" attacktype="3" attackMethodType="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="2" unrideOnHit="1">
-					<rangeProperty rangeType="frustum" distance="750" height="150" width="150" endWidth="900" applyTarget="1" />
-					<arrowProperty nonTarget="1" bounceType="3" bounceCount="5" collision="150.000000,150.000000,150.000000" collisionAdd="0.000000,0.000000,70.000000" effect="NPC/Skill/SirenHarp/Eff_SirenHarp_Attack_01_A_Ball.xml" />
-					<damageProperty rate="9.39" effectHit="NPC/Skill/SirenHarp/Eff_SirenHarp_Attack_01_A_Hit.xml" />
+					<range rangeType="frustum" distance="750" height="150" width="150" endWidth="900" applyTarget="1" />
+					<arrow nonTarget="1" bounceType="3" bounceCount="5" collision="150,150,150" collisionAdd="0,0,70" effect="NPC/Skill/SirenHarp/Eff_SirenHarp_Attack_01_A_Ball.xml" />
+					<damage rate="9.39" effectHit="NPC/Skill/SirenHarp/Eff_SirenHarp_Attack_01_A_Hit.xml" />
 					<actionAdditional additionalID="120010001" level="1" skillTarget="2" skillOwner="1" />
 				</attack>
 			</motion>
 		</level>
-		<level value="9">
-			<beginCondition cooldownTime="30" useCoolDownShowUI="1" />
-			<autoTargeting autoTargetingMaxDegree="45" />
-			<push back="200" />
-			<targetItem>
-				<item id="41000019" />
-			</targetItem>
-			<motion>
-				<motionProperty sequenceName="LapenShard_SeirenHeart_A" sequenceSpeed="2" motionEffect="NPC/Skill/SirenHarp/Eff_SirenHarp_Attack_01_B_Cast.xml" holdWeapon="0" />
+		<level value="9" cooldown="30000" stringParam="1057">
+			<motion sequenceName="LapenShard_SeirenHeart_A" sequenceSpeed="2" motionEffect="NPC/Skill/SirenHarp/Eff_SirenHarp_Attack_01_B_Cast.xml" holdWeapon="0">
 				<attack point="p0" targetCount="3" magicPathID="120010001" attacktype="3" attackMethodType="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="2" unrideOnHit="1">
-					<rangeProperty rangeType="frustum" distance="750" height="150" width="150" endWidth="900" applyTarget="1" />
-					<arrowProperty nonTarget="1" bounceType="3" bounceCount="5" collision="150.000000,150.000000,150.000000" collisionAdd="0.000000,0.000000,70.000000" effect="NPC/Skill/SirenHarp/Eff_SirenHarp_Attack_01_A_Ball.xml" />
-					<damageProperty rate="10.57" effectHit="NPC/Skill/SirenHarp/Eff_SirenHarp_Attack_01_A_Hit.xml" />
+					<range rangeType="frustum" distance="750" height="150" width="150" endWidth="900" applyTarget="1" />
+					<arrow nonTarget="1" bounceType="3" bounceCount="5" collision="150,150,150" collisionAdd="0,0,70" effect="NPC/Skill/SirenHarp/Eff_SirenHarp_Attack_01_A_Ball.xml" />
+					<damage rate="10.57" effectHit="NPC/Skill/SirenHarp/Eff_SirenHarp_Attack_01_A_Hit.xml" />
 					<actionAdditional additionalID="120010001" level="1" skillTarget="2" skillOwner="1" />
 				</attack>
 			</motion>
 		</level>
-		<level value="10">
-			<beginCondition cooldownTime="30" useCoolDownShowUI="1" />
-			<autoTargeting autoTargetingMaxDegree="45" />
-			<push back="200" />
-			<targetItem>
-				<item id="41000020" />
-			</targetItem>
-			<motion>
-				<motionProperty sequenceName="LapenShard_SeirenHeart_A" sequenceSpeed="2" motionEffect="NPC/Skill/SirenHarp/Eff_SirenHarp_Attack_01_B_Cast.xml" holdWeapon="0" />
+		<level value="10" cooldown="30000" stringParam="1174">
+			<motion sequenceName="LapenShard_SeirenHeart_A" sequenceSpeed="2" motionEffect="NPC/Skill/SirenHarp/Eff_SirenHarp_Attack_01_B_Cast.xml" holdWeapon="0">
 				<attack point="p0" targetCount="3" magicPathID="120010001" attacktype="3" attackMethodType="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="2" unrideOnHit="1">
-					<rangeProperty rangeType="frustum" distance="750" height="150" width="150" endWidth="900" applyTarget="1" />
-					<arrowProperty nonTarget="1" bounceType="3" bounceCount="5" collision="150.000000,150.000000,150.000000" collisionAdd="0.000000,0.000000,70.000000" effect="NPC/Skill/SirenHarp/Eff_SirenHarp_Attack_01_A_Ball.xml" />
-					<damageProperty rate="11.74" effectHit="NPC/Skill/SirenHarp/Eff_SirenHarp_Attack_01_A_Hit.xml" />
+					<range rangeType="frustum" distance="750" height="150" width="150" endWidth="900" applyTarget="1" />
+					<arrow nonTarget="1" bounceType="3" bounceCount="5" collision="150,150,150" collisionAdd="0,0,70" effect="NPC/Skill/SirenHarp/Eff_SirenHarp_Attack_01_A_Ball.xml" />
+					<damage rate="11.74" effectHit="NPC/Skill/SirenHarp/Eff_SirenHarp_Attack_01_A_Hit.xml" />
 					<actionAdditional additionalID="120010001" level="1" skillTarget="2" skillOwner="1" />
 				</attack>
 			</motion>
 		</level>
 	</skill>
 	<skill id="120010002" comment="소비 아이템">
-		<basic mainType="2">
+		<basic mainType="2" param1="41000030">
 			<ui icon="./Data/Resource/Image/item/icon/41000021.png" attackType="3" />
 			<kinds rangeType="2" groupType="2" unrideOnUse="1" />
 			<stateAttr keyIsDown="1" />
-		</basic>
-		<level value="1">
-			<beginCondition cooldownTime="60" useCoolDownShowUI="1" />
 			<autoTargeting autoTargetingMaxDegree="45" />
 			<push back="200" />
-			<targetItem>
-				<item id="41000021" />
-			</targetItem>
-			<motion>
-				<motionProperty sequenceName="LapenShard_DarkEnergy_A" motionEffect="Item/LapenShard/LapenShard_DarkEnergy_Cast_01.xml" holdWeapon="0" />
+			<condition useCoolDownShowUI="1" />
+		</basic>
+		<level value="1" cooldown="60000" stringParam="158, 158">
+			<motion sequenceName="LapenShard_DarkEnergy_A" motionEffect="Item/LapenShard/LapenShard_DarkEnergy_Cast_01.xml" holdWeapon="0">
 				<attack point="p0" targetCount="1" magicPathID="120010002" attacktype="3" attackMethodType="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="2" unrideOnHit="1">
-					<rangeProperty rangeType="frustum" distance="900" height="150" width="150" endWidth="900" applyTarget="1" />
-					<arrowProperty collision="80.000000,10.000000,80.000000" collisionAdd="0.000000,50.000000,-20.000000" effect="NPC/Skill/ChangeLion/Eff_ChangeLion_Attack_02_A_Ball_Guided.xml" />
-					<damageProperty rate="1.58" effectHit="NPC/Skill/ChangeLion/Eff_ChangeLion_Attack_02_A_Ball_Guided_Hit.xml" />
+					<range rangeType="frustum" distance="900" height="150" width="150" endWidth="900" applyTarget="1" />
+					<arrow collision="80,10,80" collisionAdd="0,50,-20" effect="NPC/Skill/ChangeLion/Eff_ChangeLion_Attack_02_A_Ball_Guided.xml" />
+					<damage rate="1.58" effectHit="NPC/Skill/ChangeLion/Eff_ChangeLion_Attack_02_A_Ball_Guided_Hit.xml" />
 					<actionAdditional additionalID="120010002" level="1" skillTarget="2" skillOwner="1" />
 				</attack>
 			</motion>
 		</level>
-		<level value="2">
-			<beginCondition cooldownTime="60" useCoolDownShowUI="1" />
-			<autoTargeting autoTargetingMaxDegree="45" />
-			<push back="200" />
-			<targetItem>
-				<item id="41000022" />
-			</targetItem>
-			<motion>
-				<motionProperty sequenceName="LapenShard_DarkEnergy_A" motionEffect="Item/LapenShard/LapenShard_DarkEnergy_Cast_01.xml" holdWeapon="0" />
+		<level value="2" cooldown="60000" stringParam="171, 171">
+			<motion sequenceName="LapenShard_DarkEnergy_A" motionEffect="Item/LapenShard/LapenShard_DarkEnergy_Cast_01.xml" holdWeapon="0">
 				<attack point="p0" targetCount="1" magicPathID="120010002" attacktype="3" attackMethodType="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="2" unrideOnHit="1">
-					<rangeProperty rangeType="frustum" distance="900" height="150" width="150" endWidth="900" applyTarget="1" />
-					<arrowProperty collision="80.000000,10.000000,80.000000" collisionAdd="0.000000,50.000000,-20.000000" effect="NPC/Skill/ChangeLion/Eff_ChangeLion_Attack_02_A_Ball_Guided.xml" />
-					<damageProperty rate="1.71" effectHit="NPC/Skill/ChangeLion/Eff_ChangeLion_Attack_02_A_Ball_Guided_Hit.xml" />
+					<range rangeType="frustum" distance="900" height="150" width="150" endWidth="900" applyTarget="1" />
+					<arrow collision="80,10,80" collisionAdd="0,50,-20" effect="NPC/Skill/ChangeLion/Eff_ChangeLion_Attack_02_A_Ball_Guided.xml" />
+					<damage rate="1.71" effectHit="NPC/Skill/ChangeLion/Eff_ChangeLion_Attack_02_A_Ball_Guided_Hit.xml" />
 					<actionAdditional additionalID="120010002" level="2" skillTarget="2" skillOwner="1" />
 				</attack>
 			</motion>
 		</level>
-		<level value="3">
-			<beginCondition cooldownTime="60" useCoolDownShowUI="1" />
-			<autoTargeting autoTargetingMaxDegree="45" />
-			<push back="200" />
-			<targetItem>
-				<item id="41000023" />
-			</targetItem>
-			<motion>
-				<motionProperty sequenceName="LapenShard_DarkEnergy_A" motionEffect="Item/LapenShard/LapenShard_DarkEnergy_Cast_01.xml" holdWeapon="0" />
+		<level value="3" cooldown="60000" stringParam="184, 184">
+			<motion sequenceName="LapenShard_DarkEnergy_A" motionEffect="Item/LapenShard/LapenShard_DarkEnergy_Cast_01.xml" holdWeapon="0">
 				<attack point="p0" targetCount="1" magicPathID="120010002" attacktype="3" attackMethodType="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="2" unrideOnHit="1">
-					<rangeProperty rangeType="frustum" distance="900" height="150" width="150" endWidth="900" applyTarget="1" />
-					<arrowProperty collision="80.000000,10.000000,80.000000" collisionAdd="0.000000,50.000000,-20.000000" effect="NPC/Skill/ChangeLion/Eff_ChangeLion_Attack_02_A_Ball_Guided.xml" />
-					<damageProperty rate="1.84" effectHit="NPC/Skill/ChangeLion/Eff_ChangeLion_Attack_02_A_Ball_Guided_Hit.xml" />
+					<range rangeType="frustum" distance="900" height="150" width="150" endWidth="900" applyTarget="1" />
+					<arrow collision="80,10,80" collisionAdd="0,50,-20" effect="NPC/Skill/ChangeLion/Eff_ChangeLion_Attack_02_A_Ball_Guided.xml" />
+					<damage rate="1.84" effectHit="NPC/Skill/ChangeLion/Eff_ChangeLion_Attack_02_A_Ball_Guided_Hit.xml" />
 					<actionAdditional additionalID="120010002" level="3" skillTarget="2" skillOwner="1" />
 				</attack>
 			</motion>
 		</level>
-		<level value="4">
-			<beginCondition cooldownTime="60" useCoolDownShowUI="1" />
-			<autoTargeting autoTargetingMaxDegree="45" />
-			<push back="200" />
-			<targetItem>
-				<item id="41000024" />
-			</targetItem>
-			<motion>
-				<motionProperty sequenceName="LapenShard_DarkEnergy_A" motionEffect="Item/LapenShard/LapenShard_DarkEnergy_Cast_01.xml" holdWeapon="0" />
+		<level value="4" cooldown="60000" stringParam="191, 191">
+			<motion sequenceName="LapenShard_DarkEnergy_A" motionEffect="Item/LapenShard/LapenShard_DarkEnergy_Cast_01.xml" holdWeapon="0">
 				<attack point="p0" targetCount="1" magicPathID="120010002" attacktype="3" attackMethodType="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="2" unrideOnHit="1">
-					<rangeProperty rangeType="frustum" distance="900" height="150" width="150" endWidth="900" applyTarget="1" />
-					<arrowProperty collision="80.000000,10.000000,80.000000" collisionAdd="0.000000,50.000000,-20.000000" effect="NPC/Skill/ChangeLion/Eff_ChangeLion_Attack_02_A_Ball_Guided.xml" />
-					<damageProperty rate="1.91" effectHit="NPC/Skill/ChangeLion/Eff_ChangeLion_Attack_02_A_Ball_Guided_Hit.xml" />
+					<range rangeType="frustum" distance="900" height="150" width="150" endWidth="900" applyTarget="1" />
+					<arrow collision="80,10,80" collisionAdd="0,50,-20" effect="NPC/Skill/ChangeLion/Eff_ChangeLion_Attack_02_A_Ball_Guided.xml" />
+					<damage rate="1.91" effectHit="NPC/Skill/ChangeLion/Eff_ChangeLion_Attack_02_A_Ball_Guided_Hit.xml" />
 					<actionAdditional additionalID="120010002" level="4" skillTarget="2" skillOwner="1" />
 				</attack>
 			</motion>
 		</level>
-		<level value="5">
-			<beginCondition cooldownTime="60" useCoolDownShowUI="1" />
-			<autoTargeting autoTargetingMaxDegree="45" />
-			<push back="200" />
-			<targetItem>
-				<item id="41000025" />
-			</targetItem>
-			<motion>
-				<motionProperty sequenceName="LapenShard_DarkEnergy_A" motionEffect="Item/LapenShard/LapenShard_DarkEnergy_Cast_01.xml" holdWeapon="0" />
+		<level value="5" cooldown="60000" stringParam="204, 204">
+			<motion sequenceName="LapenShard_DarkEnergy_A" motionEffect="Item/LapenShard/LapenShard_DarkEnergy_Cast_01.xml" holdWeapon="0">
 				<attack point="p0" targetCount="1" magicPathID="120010002" attacktype="3" attackMethodType="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="2" unrideOnHit="1">
-					<rangeProperty rangeType="frustum" distance="900" height="150" width="150" endWidth="900" applyTarget="1" />
-					<arrowProperty collision="80.000000,10.000000,80.000000" collisionAdd="0.000000,50.000000,-20.000000" effect="NPC/Skill/ChangeLion/Eff_ChangeLion_Attack_02_A_Ball_Guided.xml" />
-					<damageProperty rate="2.04" effectHit="NPC/Skill/ChangeLion/Eff_ChangeLion_Attack_02_A_Ball_Guided_Hit.xml" />
+					<range rangeType="frustum" distance="900" height="150" width="150" endWidth="900" applyTarget="1" />
+					<arrow collision="80,10,80" collisionAdd="0,50,-20" effect="NPC/Skill/ChangeLion/Eff_ChangeLion_Attack_02_A_Ball_Guided.xml" />
+					<damage rate="2.04" effectHit="NPC/Skill/ChangeLion/Eff_ChangeLion_Attack_02_A_Ball_Guided_Hit.xml" />
 					<actionAdditional additionalID="120010002" level="5" skillTarget="2" skillOwner="1" />
 				</attack>
 			</motion>
 		</level>
-		<level value="6">
-			<beginCondition cooldownTime="60" useCoolDownShowUI="1" />
-			<autoTargeting autoTargetingMaxDegree="45" />
-			<push back="200" />
-			<targetItem>
-				<item id="41000026" />
-			</targetItem>
-			<motion>
-				<motionProperty sequenceName="LapenShard_DarkEnergy_A" motionEffect="Item/LapenShard/LapenShard_DarkEnergy_Cast_01.xml" holdWeapon="0" />
+		<level value="6" cooldown="60000" stringParam="224, 224">
+			<motion sequenceName="LapenShard_DarkEnergy_A" motionEffect="Item/LapenShard/LapenShard_DarkEnergy_Cast_01.xml" holdWeapon="0">
 				<attack point="p0" targetCount="1" magicPathID="120010002" attacktype="3" attackMethodType="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="2" unrideOnHit="1">
-					<rangeProperty rangeType="frustum" distance="900" height="150" width="150" endWidth="900" applyTarget="1" />
-					<arrowProperty collision="80.000000,10.000000,80.000000" collisionAdd="0.000000,50.000000,-20.000000" effect="NPC/Skill/ChangeLion/Eff_ChangeLion_Attack_02_A_Ball_Guided.xml" />
-					<damageProperty rate="2.24" effectHit="NPC/Skill/ChangeLion/Eff_ChangeLion_Attack_02_A_Ball_Guided_Hit.xml" />
+					<range rangeType="frustum" distance="900" height="150" width="150" endWidth="900" applyTarget="1" />
+					<arrow collision="80,10,80" collisionAdd="0,50,-20" effect="NPC/Skill/ChangeLion/Eff_ChangeLion_Attack_02_A_Ball_Guided.xml" />
+					<damage rate="2.24" effectHit="NPC/Skill/ChangeLion/Eff_ChangeLion_Attack_02_A_Ball_Guided_Hit.xml" />
 					<actionAdditional additionalID="120010002" level="6" skillTarget="2" skillOwner="1" />
 				</attack>
 			</motion>
 		</level>
-		<level value="7">
-			<beginCondition cooldownTime="60" useCoolDownShowUI="1" />
-			<autoTargeting autoTargetingMaxDegree="45" />
-			<push back="200" />
-			<targetItem>
-				<item id="41000027" />
-			</targetItem>
-			<motion>
-				<motionProperty sequenceName="LapenShard_DarkEnergy_A" motionEffect="Item/LapenShard/LapenShard_DarkEnergy_Cast_01.xml" holdWeapon="0" />
+		<level value="7" cooldown="60000" stringParam="244, 244">
+			<motion sequenceName="LapenShard_DarkEnergy_A" motionEffect="Item/LapenShard/LapenShard_DarkEnergy_Cast_01.xml" holdWeapon="0">
 				<attack point="p0" targetCount="1" magicPathID="120010002" attacktype="3" attackMethodType="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="2" unrideOnHit="1">
-					<rangeProperty rangeType="frustum" distance="900" height="150" width="150" endWidth="900" applyTarget="1" />
-					<arrowProperty collision="80.000000,10.000000,80.000000" collisionAdd="0.000000,50.000000,-20.000000" effect="NPC/Skill/ChangeLion/Eff_ChangeLion_Attack_02_A_Ball_Guided.xml" />
-					<damageProperty rate="2.44" effectHit="NPC/Skill/ChangeLion/Eff_ChangeLion_Attack_02_A_Ball_Guided_Hit.xml" />
+					<range rangeType="frustum" distance="900" height="150" width="150" endWidth="900" applyTarget="1" />
+					<arrow collision="80,10,80" collisionAdd="0,50,-20" effect="NPC/Skill/ChangeLion/Eff_ChangeLion_Attack_02_A_Ball_Guided.xml" />
+					<damage rate="2.44" effectHit="NPC/Skill/ChangeLion/Eff_ChangeLion_Attack_02_A_Ball_Guided_Hit.xml" />
 					<actionAdditional additionalID="120010002" level="7" skillTarget="2" skillOwner="1" />
 				</attack>
 			</motion>
 		</level>
-		<level value="8">
-			<beginCondition cooldownTime="60" useCoolDownShowUI="1" />
-			<autoTargeting autoTargetingMaxDegree="45" />
-			<push back="200" />
-			<targetItem>
-				<item id="41000028" />
-			</targetItem>
-			<motion>
-				<motionProperty sequenceName="LapenShard_DarkEnergy_A" motionEffect="Item/LapenShard/LapenShard_DarkEnergy_Cast_01.xml" holdWeapon="0" />
+		<level value="8" cooldown="60000" stringParam="268, 268">
+			<motion sequenceName="LapenShard_DarkEnergy_A" motionEffect="Item/LapenShard/LapenShard_DarkEnergy_Cast_01.xml" holdWeapon="0">
 				<attack point="p0" targetCount="1" magicPathID="120010002" attacktype="3" attackMethodType="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="2" unrideOnHit="1">
-					<rangeProperty rangeType="frustum" distance="900" height="150" width="150" endWidth="900" applyTarget="1" />
-					<arrowProperty collision="80.000000,10.000000,80.000000" collisionAdd="0.000000,50.000000,-20.000000" effect="NPC/Skill/ChangeLion/Eff_ChangeLion_Attack_02_A_Ball_Guided.xml" />
-					<damageProperty rate="2.68" effectHit="NPC/Skill/ChangeLion/Eff_ChangeLion_Attack_02_A_Ball_Guided_Hit.xml" />
+					<range rangeType="frustum" distance="900" height="150" width="150" endWidth="900" applyTarget="1" />
+					<arrow collision="80,10,80" collisionAdd="0,50,-20" effect="NPC/Skill/ChangeLion/Eff_ChangeLion_Attack_02_A_Ball_Guided.xml" />
+					<damage rate="2.68" effectHit="NPC/Skill/ChangeLion/Eff_ChangeLion_Attack_02_A_Ball_Guided_Hit.xml" />
 					<actionAdditional additionalID="120010002" level="8" skillTarget="2" skillOwner="1" />
 				</attack>
 			</motion>
 		</level>
-		<level value="9">
-			<beginCondition cooldownTime="60" useCoolDownShowUI="1" />
-			<autoTargeting autoTargetingMaxDegree="45" />
-			<push back="200" />
-			<targetItem>
-				<item id="41000029" />
-			</targetItem>
-			<motion>
-				<motionProperty sequenceName="LapenShard_DarkEnergy_A" motionEffect="Item/LapenShard/LapenShard_DarkEnergy_Cast_01.xml" holdWeapon="0" />
+		<level value="9" cooldown="60000" stringParam="301, 301">
+			<motion sequenceName="LapenShard_DarkEnergy_A" motionEffect="Item/LapenShard/LapenShard_DarkEnergy_Cast_01.xml" holdWeapon="0">
 				<attack point="p0" targetCount="1" magicPathID="120010002" attacktype="3" attackMethodType="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="2" unrideOnHit="1">
-					<rangeProperty rangeType="frustum" distance="900" height="150" width="150" endWidth="900" applyTarget="1" />
-					<arrowProperty collision="80.000000,10.000000,80.000000" collisionAdd="0.000000,50.000000,-20.000000" effect="NPC/Skill/ChangeLion/Eff_ChangeLion_Attack_02_A_Ball_Guided.xml" />
-					<damageProperty rate="3.01" effectHit="NPC/Skill/ChangeLion/Eff_ChangeLion_Attack_02_A_Ball_Guided_Hit.xml" />
+					<range rangeType="frustum" distance="900" height="150" width="150" endWidth="900" applyTarget="1" />
+					<arrow collision="80,10,80" collisionAdd="0,50,-20" effect="NPC/Skill/ChangeLion/Eff_ChangeLion_Attack_02_A_Ball_Guided.xml" />
+					<damage rate="3.01" effectHit="NPC/Skill/ChangeLion/Eff_ChangeLion_Attack_02_A_Ball_Guided_Hit.xml" />
 					<actionAdditional additionalID="120010002" level="9" skillTarget="2" skillOwner="1" />
 				</attack>
 			</motion>
 		</level>
-		<level value="10">
-			<beginCondition cooldownTime="60" useCoolDownShowUI="1" />
-			<autoTargeting autoTargetingMaxDegree="45" />
-			<push back="200" />
-			<targetItem>
-				<item id="41000030" />
-			</targetItem>
-			<motion>
-				<motionProperty sequenceName="LapenShard_DarkEnergy_A" motionEffect="Item/LapenShard/LapenShard_DarkEnergy_Cast_01.xml" holdWeapon="0" />
+		<level value="10" cooldown="60000" stringParam="335, 335">
+			<motion sequenceName="LapenShard_DarkEnergy_A" motionEffect="Item/LapenShard/LapenShard_DarkEnergy_Cast_01.xml" holdWeapon="0">
 				<attack point="p0" targetCount="1" magicPathID="120010002" attacktype="3" attackMethodType="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="2" unrideOnHit="1">
-					<rangeProperty rangeType="frustum" distance="900" height="150" width="150" endWidth="900" applyTarget="1" />
-					<arrowProperty collision="80.000000,10.000000,80.000000" collisionAdd="0.000000,50.000000,-20.000000" effect="NPC/Skill/ChangeLion/Eff_ChangeLion_Attack_02_A_Ball_Guided.xml" />
-					<damageProperty rate="3.35" effectHit="NPC/Skill/ChangeLion/Eff_ChangeLion_Attack_02_A_Ball_Guided_Hit.xml" />
+					<range rangeType="frustum" distance="900" height="150" width="150" endWidth="900" applyTarget="1" />
+					<arrow collision="80,10,80" collisionAdd="0,50,-20" effect="NPC/Skill/ChangeLion/Eff_ChangeLion_Attack_02_A_Ball_Guided.xml" />
+					<damage rate="3.35" effectHit="NPC/Skill/ChangeLion/Eff_ChangeLion_Attack_02_A_Ball_Guided_Hit.xml" />
 					<actionAdditional additionalID="120010002" level="10" skillTarget="2" skillOwner="1" />
 				</attack>
 			</motion>
 		</level>
 	</skill>
 	<skill id="120010003" comment="소비 아이템">
-		<basic mainType="2">
+		<basic mainType="2" param1="41000040">
 			<ui icon="./Data/Resource/Image/item/icon/41000031.png" attackType="3" />
 			<kinds groupType="2" unrideOnUse="1" />
 			<stateAttr keyIsDown="1" />
-		</basic>
-		<level value="1">
-			<beginCondition cooldownTime="60" useCoolDownShowUI="1" />
 			<push back="200" />
-			<targetItem>
-				<item id="41000031" />
-			</targetItem>
+			<condition useCoolDownShowUI="1" />
+		</basic>
+		<level value="1" cooldown="60000" stringParam="36">
 			<actionAdditional additionalID="120010003" level="1" skillTarget="1">
 				<beginCondition allowBattleRidingState="1" />
 			</actionAdditional>
-			<motion>
-				<motionProperty sequenceName="LapenShard_LumiPride_A" motionEffect="Item/LapenShard/LapenShard_LumiPride_Cast_01.xml" holdWeapon="0" />
-			</motion>
+			<motion sequenceName="LapenShard_LumiPride_A" motionEffect="Item/LapenShard/LapenShard_LumiPride_Cast_01.xml" holdWeapon="0" />
 		</level>
-		<level value="2">
-			<beginCondition cooldownTime="60" useCoolDownShowUI="1" />
-			<push back="200" />
-			<targetItem>
-				<item id="41000032" />
-			</targetItem>
+		<level value="2" cooldown="60000" stringParam="42">
 			<actionAdditional additionalID="120010003" level="2" skillTarget="1">
 				<beginCondition allowBattleRidingState="1" />
 			</actionAdditional>
-			<motion>
-				<motionProperty sequenceName="LapenShard_LumiPride_A" motionEffect="Item/LapenShard/LapenShard_LumiPride_Cast_01.xml" holdWeapon="0" />
-			</motion>
+			<motion sequenceName="LapenShard_LumiPride_A" motionEffect="Item/LapenShard/LapenShard_LumiPride_Cast_01.xml" holdWeapon="0" />
 		</level>
-		<level value="3">
-			<beginCondition cooldownTime="60" useCoolDownShowUI="1" />
-			<push back="200" />
-			<targetItem>
-				<item id="41000033" />
-			</targetItem>
+		<level value="3" cooldown="60000" stringParam="54">
 			<actionAdditional additionalID="120010003" level="3" skillTarget="1">
 				<beginCondition allowBattleRidingState="1" />
 			</actionAdditional>
-			<motion>
-				<motionProperty sequenceName="LapenShard_LumiPride_A" motionEffect="Item/LapenShard/LapenShard_LumiPride_Cast_01.xml" holdWeapon="0" />
-			</motion>
+			<motion sequenceName="LapenShard_LumiPride_A" motionEffect="Item/LapenShard/LapenShard_LumiPride_Cast_01.xml" holdWeapon="0" />
 		</level>
-		<level value="4">
-			<beginCondition cooldownTime="60" useCoolDownShowUI="1" />
-			<push back="200" />
-			<targetItem>
-				<item id="41000034" />
-			</targetItem>
+		<level value="4" cooldown="60000" stringParam="66">
 			<actionAdditional additionalID="120010003" level="4" skillTarget="1">
 				<beginCondition allowBattleRidingState="1" />
 			</actionAdditional>
-			<motion>
-				<motionProperty sequenceName="LapenShard_LumiPride_A" motionEffect="Item/LapenShard/LapenShard_LumiPride_Cast_01.xml" holdWeapon="0" />
-			</motion>
+			<motion sequenceName="LapenShard_LumiPride_A" motionEffect="Item/LapenShard/LapenShard_LumiPride_Cast_01.xml" holdWeapon="0" />
 		</level>
-		<level value="5">
-			<beginCondition cooldownTime="60" useCoolDownShowUI="1" />
-			<push back="200" />
-			<targetItem>
-				<item id="41000035" />
-			</targetItem>
+		<level value="5" cooldown="60000" stringParam="78">
 			<actionAdditional additionalID="120010003" level="5" skillTarget="1">
 				<beginCondition allowBattleRidingState="1" />
 			</actionAdditional>
-			<motion>
-				<motionProperty sequenceName="LapenShard_LumiPride_A" motionEffect="Item/LapenShard/LapenShard_LumiPride_Cast_01.xml" holdWeapon="0" />
-			</motion>
+			<motion sequenceName="LapenShard_LumiPride_A" motionEffect="Item/LapenShard/LapenShard_LumiPride_Cast_01.xml" holdWeapon="0" />
 		</level>
-		<level value="6">
-			<beginCondition cooldownTime="60" useCoolDownShowUI="1" />
-			<push back="200" />
-			<targetItem>
-				<item id="41000036" />
-			</targetItem>
+		<level value="6" cooldown="60000" stringParam="96">
 			<actionAdditional additionalID="120010003" level="6" skillTarget="1">
 				<beginCondition allowBattleRidingState="1" />
 			</actionAdditional>
-			<motion>
-				<motionProperty sequenceName="LapenShard_LumiPride_A" motionEffect="Item/LapenShard/LapenShard_LumiPride_Cast_01.xml" holdWeapon="0" />
-			</motion>
+			<motion sequenceName="LapenShard_LumiPride_A" motionEffect="Item/LapenShard/LapenShard_LumiPride_Cast_01.xml" holdWeapon="0" />
 		</level>
-		<level value="7">
-			<beginCondition cooldownTime="60" useCoolDownShowUI="1" />
-			<push back="200" />
-			<targetItem>
-				<item id="41000037" />
-			</targetItem>
+		<level value="7" cooldown="60000" stringParam="120">
 			<actionAdditional additionalID="120010003" level="7" skillTarget="1">
 				<beginCondition allowBattleRidingState="1" />
 			</actionAdditional>
-			<motion>
-				<motionProperty sequenceName="LapenShard_LumiPride_A" motionEffect="Item/LapenShard/LapenShard_LumiPride_Cast_01.xml" holdWeapon="0" />
-			</motion>
+			<motion sequenceName="LapenShard_LumiPride_A" motionEffect="Item/LapenShard/LapenShard_LumiPride_Cast_01.xml" holdWeapon="0" />
 		</level>
-		<level value="8">
-			<beginCondition cooldownTime="60" useCoolDownShowUI="1" />
-			<push back="200" />
-			<targetItem>
-				<item id="41000038" />
-			</targetItem>
+		<level value="8" cooldown="60000" stringParam="144">
 			<actionAdditional additionalID="120010003" level="8" skillTarget="1">
 				<beginCondition allowBattleRidingState="1" />
 			</actionAdditional>
-			<motion>
-				<motionProperty sequenceName="LapenShard_LumiPride_A" motionEffect="Item/LapenShard/LapenShard_LumiPride_Cast_01.xml" holdWeapon="0" />
-			</motion>
+			<motion sequenceName="LapenShard_LumiPride_A" motionEffect="Item/LapenShard/LapenShard_LumiPride_Cast_01.xml" holdWeapon="0" />
 		</level>
-		<level value="9">
-			<beginCondition cooldownTime="60" useCoolDownShowUI="1" />
-			<push back="200" />
-			<targetItem>
-				<item id="41000039" />
-			</targetItem>
+		<level value="9" cooldown="60000" stringParam="174">
 			<actionAdditional additionalID="120010003" level="9" skillTarget="1">
 				<beginCondition allowBattleRidingState="1" />
 			</actionAdditional>
-			<motion>
-				<motionProperty sequenceName="LapenShard_LumiPride_A" motionEffect="Item/LapenShard/LapenShard_LumiPride_Cast_01.xml" holdWeapon="0" />
-			</motion>
+			<motion sequenceName="LapenShard_LumiPride_A" motionEffect="Item/LapenShard/LapenShard_LumiPride_Cast_01.xml" holdWeapon="0" />
 		</level>
-		<level value="10">
-			<beginCondition cooldownTime="60" useCoolDownShowUI="1" />
-			<push back="200" />
-			<targetItem>
-				<item id="41000040" />
-			</targetItem>
+		<level value="10" cooldown="60000" stringParam="216">
 			<actionAdditional additionalID="120010003" level="10" skillTarget="1">
 				<beginCondition allowBattleRidingState="1" />
 			</actionAdditional>
-			<motion>
-				<motionProperty sequenceName="LapenShard_LumiPride_A" motionEffect="Item/LapenShard/LapenShard_LumiPride_Cast_01.xml" holdWeapon="0" />
-			</motion>
+			<motion sequenceName="LapenShard_LumiPride_A" motionEffect="Item/LapenShard/LapenShard_LumiPride_Cast_01.xml" holdWeapon="0" />
 		</level>
 	</skill>
 	<skill id="120010004" comment="소비 아이템">
-		<basic mainType="2">
+		<basic mainType="2" param1="41000050">
 			<ui icon="./Data/Resource/Image/item/icon/41000041.png" attackType="3" />
 			<kinds rangeType="2" groupType="2" jump="120010004" unrideOnUse="1" />
 			<stateAttr keyIsDown="1" useInGameTime="1" rechargeMaxCount="20" />
-		</basic>
-		<level value="1">
-			<beginCondition cooldownTime="18" defaultRechargingCooldownTime="0.65" useCoolDownShowUI="1" />
 			<autoTargeting autoTargetingMaxDegree="45" />
-			<targetItem>
-				<item id="41000041" />
-			</targetItem>
+			<condition defaultRechargingCooldownTime="0.65" useCoolDownShowUI="1" />
+		</basic>
+		<level value="1" cooldown="18000" stringParam="162, 243, 408, 12000">
 			<actionAdditional additionalID="120010004" level="1" skillTarget="1">
 				<beginCondition allowBattleRidingState="1" />
 			</actionAdditional>
-			<motion>
-				<motionProperty sequenceName="LapenShard_TimeSword_A" sequenceSpeed="0.8" motionEffect="Item/LapenShard/Eff_LapenShard_TimeSword_Cast_01.xml" holdWeapon="0" />
+			<motion sequenceName="LapenShard_TimeSword_A" sequenceSpeed="0.8" motionEffect="Item/LapenShard/Eff_LapenShard_TimeSword_Cast_01.xml" holdWeapon="0">
 				<attack point="p0" targetCount="1" magicPathID="120010004" attacktype="3" attackMethodType="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="2" unrideOnHit="1">
-					<rangeProperty rangeType="frustum" distance="900" height="150" width="150" endWidth="900" applyTarget="1" />
-					<arrowProperty overlap="1" collision="50.000000,50.000000,50.000000" collisionAdd="0.000000,50.000000,0.000000" effect="Item/LapenShard/Eff_LapenShard_TimeSword_Ball_01.xml" effectRemain="Item/LapenShard/Eff_LapenShard_TimeSword_Remain_01.xml" effectDestroy="Item/LapenShard/Eff_LapenShard_TimeSword_Destroy_01.xml" />
+					<range rangeType="frustum" distance="900" height="150" width="150" endWidth="900" applyTarget="1" />
+					<arrow overlap="1" collision="50,50,50" collisionAdd="0,50,0" effect="Item/LapenShard/Eff_LapenShard_TimeSword_Ball_01.xml" effectRemain="Item/LapenShard/Eff_LapenShard_TimeSword_Remain_01.xml" effectDestroy="Item/LapenShard/Eff_LapenShard_TimeSword_Destroy_01.xml" />
 					<actionSkill skillID="120010005" level="1" nonTargetActive="1" useDirection="1" />
 				</attack>
 			</motion>
 		</level>
-		<level value="2">
-			<beginCondition cooldownTime="18" defaultRechargingCooldownTime="0.65" useCoolDownShowUI="1" />
-			<autoTargeting autoTargetingMaxDegree="45" />
-			<targetItem>
-				<item id="41000042" />
-			</targetItem>
+		<level value="2" cooldown="18000" stringParam="168, 252, 420, 14400">
 			<actionAdditional additionalID="120010004" level="2" skillTarget="1">
 				<beginCondition allowBattleRidingState="1" />
 			</actionAdditional>
-			<motion>
-				<motionProperty sequenceName="LapenShard_TimeSword_A" sequenceSpeed="0.8" motionEffect="Item/LapenShard/Eff_LapenShard_TimeSword_Cast_01.xml" holdWeapon="0" />
+			<motion sequenceName="LapenShard_TimeSword_A" sequenceSpeed="0.8" motionEffect="Item/LapenShard/Eff_LapenShard_TimeSword_Cast_01.xml" holdWeapon="0">
 				<attack point="p0" targetCount="1" magicPathID="120010004" attacktype="3" attackMethodType="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="2" unrideOnHit="1">
-					<rangeProperty rangeType="frustum" distance="900" height="150" width="150" endWidth="900" applyTarget="1" />
-					<arrowProperty overlap="1" collision="50.000000,50.000000,50.000000" collisionAdd="0.000000,50.000000,0.000000" effect="Item/LapenShard/Eff_LapenShard_TimeSword_Ball_01.xml" effectRemain="Item/LapenShard/Eff_LapenShard_TimeSword_Remain_01.xml" effectDestroy="Item/LapenShard/Eff_LapenShard_TimeSword_Destroy_01.xml" />
+					<range rangeType="frustum" distance="900" height="150" width="150" endWidth="900" applyTarget="1" />
+					<arrow overlap="1" collision="50,50,50" collisionAdd="0,50,0" effect="Item/LapenShard/Eff_LapenShard_TimeSword_Ball_01.xml" effectRemain="Item/LapenShard/Eff_LapenShard_TimeSword_Remain_01.xml" effectDestroy="Item/LapenShard/Eff_LapenShard_TimeSword_Destroy_01.xml" />
 					<actionSkill skillID="120010005" level="2" nonTargetActive="1" useDirection="1" />
 				</attack>
 			</motion>
 		</level>
-		<level value="3">
-			<beginCondition cooldownTime="18" defaultRechargingCooldownTime="0.65" useCoolDownShowUI="1" />
-			<autoTargeting autoTargetingMaxDegree="45" />
-			<targetItem>
-				<item id="41000043" />
-			</targetItem>
+		<level value="3" cooldown="18000" stringParam="174, 261, 432, 16800">
 			<actionAdditional additionalID="120010004" level="3" skillTarget="1">
 				<beginCondition allowBattleRidingState="1" />
 			</actionAdditional>
-			<motion>
-				<motionProperty sequenceName="LapenShard_TimeSword_A" sequenceSpeed="0.8" motionEffect="Item/LapenShard/Eff_LapenShard_TimeSword_Cast_01.xml" holdWeapon="0" />
+			<motion sequenceName="LapenShard_TimeSword_A" sequenceSpeed="0.8" motionEffect="Item/LapenShard/Eff_LapenShard_TimeSword_Cast_01.xml" holdWeapon="0">
 				<attack point="p0" targetCount="1" magicPathID="120010004" attacktype="3" attackMethodType="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="2" unrideOnHit="1">
-					<rangeProperty rangeType="frustum" distance="900" height="150" width="150" endWidth="900" applyTarget="1" />
-					<arrowProperty overlap="1" collision="50.000000,50.000000,50.000000" collisionAdd="0.000000,50.000000,0.000000" effect="Item/LapenShard/Eff_LapenShard_TimeSword_Ball_01.xml" effectRemain="Item/LapenShard/Eff_LapenShard_TimeSword_Remain_01.xml" effectDestroy="Item/LapenShard/Eff_LapenShard_TimeSword_Destroy_01.xml" />
+					<range rangeType="frustum" distance="900" height="150" width="150" endWidth="900" applyTarget="1" />
+					<arrow overlap="1" collision="50,50,50" collisionAdd="0,50,0" effect="Item/LapenShard/Eff_LapenShard_TimeSword_Ball_01.xml" effectRemain="Item/LapenShard/Eff_LapenShard_TimeSword_Remain_01.xml" effectDestroy="Item/LapenShard/Eff_LapenShard_TimeSword_Destroy_01.xml" />
 					<actionSkill skillID="120010005" level="3" nonTargetActive="1" useDirection="1" />
 				</attack>
 			</motion>
 		</level>
-		<level value="4">
-			<beginCondition cooldownTime="18" defaultRechargingCooldownTime="0.65" useCoolDownShowUI="1" />
-			<autoTargeting autoTargetingMaxDegree="45" />
-			<targetItem>
-				<item id="41000044" />
-			</targetItem>
+		<level value="4" cooldown="18000" stringParam="180, 270, 450, 19200">
 			<actionAdditional additionalID="120010004" level="4" skillTarget="1">
 				<beginCondition allowBattleRidingState="1" />
 			</actionAdditional>
-			<motion>
-				<motionProperty sequenceName="LapenShard_TimeSword_A" sequenceSpeed="0.8" motionEffect="Item/LapenShard/Eff_LapenShard_TimeSword_Cast_01.xml" holdWeapon="0" />
+			<motion sequenceName="LapenShard_TimeSword_A" sequenceSpeed="0.8" motionEffect="Item/LapenShard/Eff_LapenShard_TimeSword_Cast_01.xml" holdWeapon="0">
 				<attack point="p0" targetCount="1" magicPathID="120010004" attacktype="3" attackMethodType="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="2" unrideOnHit="1">
-					<rangeProperty rangeType="frustum" distance="900" height="150" width="150" endWidth="900" applyTarget="1" />
-					<arrowProperty overlap="1" collision="50.000000,50.000000,50.000000" collisionAdd="0.000000,50.000000,0.000000" effect="Item/LapenShard/Eff_LapenShard_TimeSword_Ball_01.xml" effectRemain="Item/LapenShard/Eff_LapenShard_TimeSword_Remain_01.xml" effectDestroy="Item/LapenShard/Eff_LapenShard_TimeSword_Destroy_01.xml" />
+					<range rangeType="frustum" distance="900" height="150" width="150" endWidth="900" applyTarget="1" />
+					<arrow overlap="1" collision="50,50,50" collisionAdd="0,50,0" effect="Item/LapenShard/Eff_LapenShard_TimeSword_Ball_01.xml" effectRemain="Item/LapenShard/Eff_LapenShard_TimeSword_Remain_01.xml" effectDestroy="Item/LapenShard/Eff_LapenShard_TimeSword_Destroy_01.xml" />
 					<actionSkill skillID="120010005" level="4" nonTargetActive="1" useDirection="1" />
 				</attack>
 			</motion>
 		</level>
-		<level value="5">
-			<beginCondition cooldownTime="18" defaultRechargingCooldownTime="0.65" useCoolDownShowUI="1" />
-			<autoTargeting autoTargetingMaxDegree="45" />
-			<targetItem>
-				<item id="41000045" />
-			</targetItem>
+		<level value="5" cooldown="18000" stringParam="186, 282, 468, 21600">
 			<actionAdditional additionalID="120010004" level="5" skillTarget="1">
 				<beginCondition allowBattleRidingState="1" />
 			</actionAdditional>
-			<motion>
-				<motionProperty sequenceName="LapenShard_TimeSword_A" sequenceSpeed="0.8" motionEffect="Item/LapenShard/Eff_LapenShard_TimeSword_Cast_01.xml" holdWeapon="0" />
+			<motion sequenceName="LapenShard_TimeSword_A" sequenceSpeed="0.8" motionEffect="Item/LapenShard/Eff_LapenShard_TimeSword_Cast_01.xml" holdWeapon="0">
 				<attack point="p0" targetCount="1" magicPathID="120010004" attacktype="3" attackMethodType="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="2" unrideOnHit="1">
-					<rangeProperty rangeType="frustum" distance="900" height="150" width="150" endWidth="900" applyTarget="1" />
-					<arrowProperty overlap="1" collision="50.000000,50.000000,50.000000" collisionAdd="0.000000,50.000000,0.000000" effect="Item/LapenShard/Eff_LapenShard_TimeSword_Ball_01.xml" effectRemain="Item/LapenShard/Eff_LapenShard_TimeSword_Remain_01.xml" effectDestroy="Item/LapenShard/Eff_LapenShard_TimeSword_Destroy_01.xml" />
+					<range rangeType="frustum" distance="900" height="150" width="150" endWidth="900" applyTarget="1" />
+					<arrow overlap="1" collision="50,50,50" collisionAdd="0,50,0" effect="Item/LapenShard/Eff_LapenShard_TimeSword_Ball_01.xml" effectRemain="Item/LapenShard/Eff_LapenShard_TimeSword_Remain_01.xml" effectDestroy="Item/LapenShard/Eff_LapenShard_TimeSword_Destroy_01.xml" />
 					<actionSkill skillID="120010005" level="5" nonTargetActive="1" useDirection="1" />
 				</attack>
 			</motion>
 		</level>
-		<level value="6">
-			<beginCondition cooldownTime="18" defaultRechargingCooldownTime="0.65" useCoolDownShowUI="1" />
-			<autoTargeting autoTargetingMaxDegree="45" />
-			<targetItem>
-				<item id="41000046" />
-			</targetItem>
+		<level value="6" cooldown="18000" stringParam="195, 294, 489, 24000">
 			<actionAdditional additionalID="120010004" level="6" skillTarget="1">
 				<beginCondition allowBattleRidingState="1" />
 			</actionAdditional>
-			<motion>
-				<motionProperty sequenceName="LapenShard_TimeSword_A" sequenceSpeed="0.8" motionEffect="Item/LapenShard/Eff_LapenShard_TimeSword_Cast_01.xml" holdWeapon="0" />
+			<motion sequenceName="LapenShard_TimeSword_A" sequenceSpeed="0.8" motionEffect="Item/LapenShard/Eff_LapenShard_TimeSword_Cast_01.xml" holdWeapon="0">
 				<attack point="p0" targetCount="1" magicPathID="120010004" attacktype="3" attackMethodType="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="2" unrideOnHit="1">
-					<rangeProperty rangeType="frustum" distance="900" height="150" width="150" endWidth="900" applyTarget="1" />
-					<arrowProperty overlap="1" collision="50.000000,50.000000,50.000000" collisionAdd="0.000000,50.000000,0.000000" effect="Item/LapenShard/Eff_LapenShard_TimeSword_Ball_01.xml" effectRemain="Item/LapenShard/Eff_LapenShard_TimeSword_Remain_01.xml" effectDestroy="Item/LapenShard/Eff_LapenShard_TimeSword_Destroy_01.xml" />
+					<range rangeType="frustum" distance="900" height="150" width="150" endWidth="900" applyTarget="1" />
+					<arrow overlap="1" collision="50,50,50" collisionAdd="0,50,0" effect="Item/LapenShard/Eff_LapenShard_TimeSword_Ball_01.xml" effectRemain="Item/LapenShard/Eff_LapenShard_TimeSword_Remain_01.xml" effectDestroy="Item/LapenShard/Eff_LapenShard_TimeSword_Destroy_01.xml" />
 					<actionSkill skillID="120010005" level="6" nonTargetActive="1" useDirection="1" />
 				</attack>
 			</motion>
 		</level>
-		<level value="7">
-			<beginCondition cooldownTime="18" defaultRechargingCooldownTime="0.65" useCoolDownShowUI="1" />
-			<autoTargeting autoTargetingMaxDegree="45" />
-			<targetItem>
-				<item id="41000047" />
-			</targetItem>
+		<level value="7" cooldown="18000" stringParam="204, 306, 510, 26400">
 			<actionAdditional additionalID="120010004" level="7" skillTarget="1">
 				<beginCondition allowBattleRidingState="1" />
 			</actionAdditional>
-			<motion>
-				<motionProperty sequenceName="LapenShard_TimeSword_A" sequenceSpeed="0.8" motionEffect="Item/LapenShard/Eff_LapenShard_TimeSword_Cast_01.xml" holdWeapon="0" />
+			<motion sequenceName="LapenShard_TimeSword_A" sequenceSpeed="0.8" motionEffect="Item/LapenShard/Eff_LapenShard_TimeSword_Cast_01.xml" holdWeapon="0">
 				<attack point="p0" targetCount="1" magicPathID="120010004" attacktype="3" attackMethodType="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="2" unrideOnHit="1">
-					<rangeProperty rangeType="frustum" distance="900" height="150" width="150" endWidth="900" applyTarget="1" />
-					<arrowProperty overlap="1" collision="50.000000,50.000000,50.000000" collisionAdd="0.000000,50.000000,0.000000" effect="Item/LapenShard/Eff_LapenShard_TimeSword_Ball_01.xml" effectRemain="Item/LapenShard/Eff_LapenShard_TimeSword_Remain_01.xml" effectDestroy="Item/LapenShard/Eff_LapenShard_TimeSword_Destroy_01.xml" />
+					<range rangeType="frustum" distance="900" height="150" width="150" endWidth="900" applyTarget="1" />
+					<arrow overlap="1" collision="50,50,50" collisionAdd="0,50,0" effect="Item/LapenShard/Eff_LapenShard_TimeSword_Ball_01.xml" effectRemain="Item/LapenShard/Eff_LapenShard_TimeSword_Remain_01.xml" effectDestroy="Item/LapenShard/Eff_LapenShard_TimeSword_Destroy_01.xml" />
 					<actionSkill skillID="120010005" level="7" nonTargetActive="1" useDirection="1" />
 				</attack>
 			</motion>
 		</level>
-		<level value="8">
-			<beginCondition cooldownTime="18" defaultRechargingCooldownTime="0.65" useCoolDownShowUI="1" />
-			<autoTargeting autoTargetingMaxDegree="45" />
-			<targetItem>
-				<item id="41000048" />
-			</targetItem>
+		<level value="8" cooldown="18000" stringParam="210, 318, 531, 28800">
 			<actionAdditional additionalID="120010004" level="8" skillTarget="1">
 				<beginCondition allowBattleRidingState="1" />
 			</actionAdditional>
-			<motion>
-				<motionProperty sequenceName="LapenShard_TimeSword_A" sequenceSpeed="0.8" motionEffect="Item/LapenShard/Eff_LapenShard_TimeSword_Cast_01.xml" holdWeapon="0" />
+			<motion sequenceName="LapenShard_TimeSword_A" sequenceSpeed="0.8" motionEffect="Item/LapenShard/Eff_LapenShard_TimeSword_Cast_01.xml" holdWeapon="0">
 				<attack point="p0" targetCount="1" magicPathID="120010004" attacktype="3" attackMethodType="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="2" unrideOnHit="1">
-					<rangeProperty rangeType="frustum" distance="900" height="150" width="150" endWidth="900" applyTarget="1" />
-					<arrowProperty overlap="1" collision="50.000000,50.000000,50.000000" collisionAdd="0.000000,50.000000,0.000000" effect="Item/LapenShard/Eff_LapenShard_TimeSword_Ball_01.xml" effectRemain="Item/LapenShard/Eff_LapenShard_TimeSword_Remain_01.xml" effectDestroy="Item/LapenShard/Eff_LapenShard_TimeSword_Destroy_01.xml" />
+					<range rangeType="frustum" distance="900" height="150" width="150" endWidth="900" applyTarget="1" />
+					<arrow overlap="1" collision="50,50,50" collisionAdd="0,50,0" effect="Item/LapenShard/Eff_LapenShard_TimeSword_Ball_01.xml" effectRemain="Item/LapenShard/Eff_LapenShard_TimeSword_Remain_01.xml" effectDestroy="Item/LapenShard/Eff_LapenShard_TimeSword_Destroy_01.xml" />
 					<actionSkill skillID="120010005" level="8" nonTargetActive="1" useDirection="1" />
 				</attack>
 			</motion>
 		</level>
-		<level value="9">
-			<beginCondition cooldownTime="18" defaultRechargingCooldownTime="0.65" useCoolDownShowUI="1" />
-			<autoTargeting autoTargetingMaxDegree="45" />
-			<targetItem>
-				<item id="41000049" />
-			</targetItem>
+		<level value="9" cooldown="18000" stringParam="225, 339, 567, 31200">
 			<actionAdditional additionalID="120010004" level="9" skillTarget="1">
 				<beginCondition allowBattleRidingState="1" />
 			</actionAdditional>
-			<motion>
-				<motionProperty sequenceName="LapenShard_TimeSword_A" sequenceSpeed="0.8" motionEffect="Item/LapenShard/Eff_LapenShard_TimeSword_Cast_01.xml" holdWeapon="0" />
+			<motion sequenceName="LapenShard_TimeSword_A" sequenceSpeed="0.8" motionEffect="Item/LapenShard/Eff_LapenShard_TimeSword_Cast_01.xml" holdWeapon="0">
 				<attack point="p0" targetCount="1" magicPathID="120010004" attacktype="3" attackMethodType="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="2" unrideOnHit="1">
-					<rangeProperty rangeType="frustum" distance="900" height="150" width="150" endWidth="900" applyTarget="1" />
-					<arrowProperty overlap="1" collision="50.000000,50.000000,50.000000" collisionAdd="0.000000,50.000000,0.000000" effect="Item/LapenShard/Eff_LapenShard_TimeSword_Ball_01.xml" effectRemain="Item/LapenShard/Eff_LapenShard_TimeSword_Remain_01.xml" effectDestroy="Item/LapenShard/Eff_LapenShard_TimeSword_Destroy_01.xml" />
+					<range rangeType="frustum" distance="900" height="150" width="150" endWidth="900" applyTarget="1" />
+					<arrow overlap="1" collision="50,50,50" collisionAdd="0,50,0" effect="Item/LapenShard/Eff_LapenShard_TimeSword_Ball_01.xml" effectRemain="Item/LapenShard/Eff_LapenShard_TimeSword_Remain_01.xml" effectDestroy="Item/LapenShard/Eff_LapenShard_TimeSword_Destroy_01.xml" />
 					<actionSkill skillID="120010005" level="9" nonTargetActive="1" useDirection="1" />
 				</attack>
 			</motion>
 		</level>
-		<level value="10">
-			<beginCondition cooldownTime="18" defaultRechargingCooldownTime="0.65" useCoolDownShowUI="1" />
-			<autoTargeting autoTargetingMaxDegree="45" />
-			<targetItem>
-				<item id="41000050" />
-			</targetItem>
+		<level value="10" cooldown="18000" stringParam="243, 366, 612, 36000">
 			<actionAdditional additionalID="120010004" level="10" skillTarget="1">
 				<beginCondition allowBattleRidingState="1" />
 			</actionAdditional>
-			<motion>
-				<motionProperty sequenceName="LapenShard_TimeSword_A" sequenceSpeed="0.8" motionEffect="Item/LapenShard/Eff_LapenShard_TimeSword_Cast_01.xml" holdWeapon="0" />
+			<motion sequenceName="LapenShard_TimeSword_A" sequenceSpeed="0.8" motionEffect="Item/LapenShard/Eff_LapenShard_TimeSword_Cast_01.xml" holdWeapon="0">
 				<attack point="p0" targetCount="1" magicPathID="120010004" attacktype="3" attackMethodType="1" hitImmuneBreak="5" brokenOffence="2" brokenForce="2" unrideOnHit="1">
-					<rangeProperty rangeType="frustum" distance="900" height="150" width="150" endWidth="900" applyTarget="1" />
-					<arrowProperty overlap="1" collision="50.000000,50.000000,50.000000" collisionAdd="0.000000,50.000000,0.000000" effect="Item/LapenShard/Eff_LapenShard_TimeSword_Ball_01.xml" effectRemain="Item/LapenShard/Eff_LapenShard_TimeSword_Remain_01.xml" effectDestroy="Item/LapenShard/Eff_LapenShard_TimeSword_Destroy_01.xml" />
+					<range rangeType="frustum" distance="900" height="150" width="150" endWidth="900" applyTarget="1" />
+					<arrow overlap="1" collision="50,50,50" collisionAdd="0,50,0" effect="Item/LapenShard/Eff_LapenShard_TimeSword_Ball_01.xml" effectRemain="Item/LapenShard/Eff_LapenShard_TimeSword_Remain_01.xml" effectDestroy="Item/LapenShard/Eff_LapenShard_TimeSword_Destroy_01.xml" />
 					<actionSkill skillID="120010005" level="10" nonTargetActive="1" useDirection="1" />
 				</attack>
 			</motion>
@@ -682,114 +422,94 @@
 		<basic mainType="30">
 			<ui attackType="3" />
 			<kinds rangeType="2" groupType="2" />
-			<stateAttr autoTargeting="0" />
+			<push back="200" />
 		</basic>
 		<level value="1">
-			<push back="200" />
-			<motion>
-				<motionProperty splashInvokeEffect="Item/LapenShard/Eff_LapenShard_TimeSword_SplashInvoke_01.xml" />
+			<motion splashInvokeEffect="Item/LapenShard/Eff_LapenShard_TimeSword_SplashInvoke_01.xml">
 				<attack point="p0" targetCount="5" attacktype="3" hitImmuneBreak="5" unrideOnHit="1">
-					<rangeProperty rangeType="cylinder" distance="300" height="150" applyTarget="1" />
-					<damageProperty rate="1.62" effectHit="CH/Common/Eff_Common_Dark_Hit.xml" attackMaterial="1" />
+					<range rangeType="cylinder" distance="300" height="150" applyTarget="1" />
+					<damage rate="1.62" effectHit="CH/Common/Eff_Common_Dark_Hit.xml" attackMaterial="1" />
 					<actionSkill skillID="120010006" level="1" delay="1000" nonTargetActive="1" useDirection="1" />
 				</attack>
 			</motion>
 		</level>
 		<level value="2">
-			<push back="200" />
-			<motion>
-				<motionProperty splashInvokeEffect="Item/LapenShard/Eff_LapenShard_TimeSword_SplashInvoke_01.xml" />
+			<motion splashInvokeEffect="Item/LapenShard/Eff_LapenShard_TimeSword_SplashInvoke_01.xml">
 				<attack point="p0" targetCount="5" attacktype="3" hitImmuneBreak="5" unrideOnHit="1">
-					<rangeProperty rangeType="cylinder" distance="300" height="150" applyTarget="1" />
-					<damageProperty rate="1.68" effectHit="CH/Common/Eff_Common_Dark_Hit.xml" attackMaterial="1" />
+					<range rangeType="cylinder" distance="300" height="150" applyTarget="1" />
+					<damage rate="1.68" effectHit="CH/Common/Eff_Common_Dark_Hit.xml" attackMaterial="1" />
 					<actionSkill skillID="120010006" level="2" delay="1000" nonTargetActive="1" useDirection="1" />
 				</attack>
 			</motion>
 		</level>
 		<level value="3">
-			<push back="200" />
-			<motion>
-				<motionProperty splashInvokeEffect="Item/LapenShard/Eff_LapenShard_TimeSword_SplashInvoke_01.xml" />
+			<motion splashInvokeEffect="Item/LapenShard/Eff_LapenShard_TimeSword_SplashInvoke_01.xml">
 				<attack point="p0" targetCount="5" attacktype="3" hitImmuneBreak="5" unrideOnHit="1">
-					<rangeProperty rangeType="cylinder" distance="300" height="150" applyTarget="1" />
-					<damageProperty rate="1.74" effectHit="CH/Common/Eff_Common_Dark_Hit.xml" attackMaterial="1" />
+					<range rangeType="cylinder" distance="300" height="150" applyTarget="1" />
+					<damage rate="1.74" effectHit="CH/Common/Eff_Common_Dark_Hit.xml" attackMaterial="1" />
 					<actionSkill skillID="120010006" level="3" delay="1000" nonTargetActive="1" useDirection="1" />
 				</attack>
 			</motion>
 		</level>
 		<level value="4">
-			<push back="200" />
-			<motion>
-				<motionProperty splashInvokeEffect="Item/LapenShard/Eff_LapenShard_TimeSword_SplashInvoke_01.xml" />
+			<motion splashInvokeEffect="Item/LapenShard/Eff_LapenShard_TimeSword_SplashInvoke_01.xml">
 				<attack point="p0" targetCount="5" attacktype="3" hitImmuneBreak="5" unrideOnHit="1">
-					<rangeProperty rangeType="cylinder" distance="300" height="150" applyTarget="1" />
-					<damageProperty rate="1.8" effectHit="CH/Common/Eff_Common_Dark_Hit.xml" attackMaterial="1" />
+					<range rangeType="cylinder" distance="300" height="150" applyTarget="1" />
+					<damage rate="1.8" effectHit="CH/Common/Eff_Common_Dark_Hit.xml" attackMaterial="1" />
 					<actionSkill skillID="120010006" level="4" delay="1000" nonTargetActive="1" useDirection="1" />
 				</attack>
 			</motion>
 		</level>
 		<level value="5">
-			<push back="200" />
-			<motion>
-				<motionProperty splashInvokeEffect="Item/LapenShard/Eff_LapenShard_TimeSword_SplashInvoke_01.xml" />
+			<motion splashInvokeEffect="Item/LapenShard/Eff_LapenShard_TimeSword_SplashInvoke_01.xml">
 				<attack point="p0" targetCount="5" attacktype="3" hitImmuneBreak="5" unrideOnHit="1">
-					<rangeProperty rangeType="cylinder" distance="300" height="150" applyTarget="1" />
-					<damageProperty rate="1.86" effectHit="CH/Common/Eff_Common_Dark_Hit.xml" attackMaterial="1" />
+					<range rangeType="cylinder" distance="300" height="150" applyTarget="1" />
+					<damage rate="1.86" effectHit="CH/Common/Eff_Common_Dark_Hit.xml" attackMaterial="1" />
 					<actionSkill skillID="120010006" level="5" delay="1000" nonTargetActive="1" useDirection="1" />
 				</attack>
 			</motion>
 		</level>
 		<level value="6">
-			<push back="200" />
-			<motion>
-				<motionProperty splashInvokeEffect="Item/LapenShard/Eff_LapenShard_TimeSword_SplashInvoke_01.xml" />
+			<motion splashInvokeEffect="Item/LapenShard/Eff_LapenShard_TimeSword_SplashInvoke_01.xml">
 				<attack point="p0" targetCount="5" attacktype="3" hitImmuneBreak="5" unrideOnHit="1">
-					<rangeProperty rangeType="cylinder" distance="300" height="150" applyTarget="1" />
-					<damageProperty rate="1.95" effectHit="CH/Common/Eff_Common_Dark_Hit.xml" attackMaterial="1" />
+					<range rangeType="cylinder" distance="300" height="150" applyTarget="1" />
+					<damage rate="1.95" effectHit="CH/Common/Eff_Common_Dark_Hit.xml" attackMaterial="1" />
 					<actionSkill skillID="120010006" level="6" delay="1000" nonTargetActive="1" useDirection="1" />
 				</attack>
 			</motion>
 		</level>
 		<level value="7">
-			<push back="200" />
-			<motion>
-				<motionProperty splashInvokeEffect="Item/LapenShard/Eff_LapenShard_TimeSword_SplashInvoke_01.xml" />
+			<motion splashInvokeEffect="Item/LapenShard/Eff_LapenShard_TimeSword_SplashInvoke_01.xml">
 				<attack point="p0" targetCount="5" attacktype="3" hitImmuneBreak="5" unrideOnHit="1">
-					<rangeProperty rangeType="cylinder" distance="300" height="150" applyTarget="1" />
-					<damageProperty rate="2.04" effectHit="CH/Common/Eff_Common_Dark_Hit.xml" attackMaterial="1" />
+					<range rangeType="cylinder" distance="300" height="150" applyTarget="1" />
+					<damage rate="2.04" effectHit="CH/Common/Eff_Common_Dark_Hit.xml" attackMaterial="1" />
 					<actionSkill skillID="120010006" level="7" delay="1000" nonTargetActive="1" useDirection="1" />
 				</attack>
 			</motion>
 		</level>
 		<level value="8">
-			<push back="200" />
-			<motion>
-				<motionProperty splashInvokeEffect="Item/LapenShard/Eff_LapenShard_TimeSword_SplashInvoke_01.xml" />
+			<motion splashInvokeEffect="Item/LapenShard/Eff_LapenShard_TimeSword_SplashInvoke_01.xml">
 				<attack point="p0" targetCount="5" attacktype="3" hitImmuneBreak="5" unrideOnHit="1">
-					<rangeProperty rangeType="cylinder" distance="300" height="150" applyTarget="1" />
-					<damageProperty rate="2.1" effectHit="CH/Common/Eff_Common_Dark_Hit.xml" attackMaterial="1" />
+					<range rangeType="cylinder" distance="300" height="150" applyTarget="1" />
+					<damage rate="2.1" effectHit="CH/Common/Eff_Common_Dark_Hit.xml" attackMaterial="1" />
 					<actionSkill skillID="120010006" level="8" delay="1000" nonTargetActive="1" useDirection="1" />
 				</attack>
 			</motion>
 		</level>
 		<level value="9">
-			<push back="200" />
-			<motion>
-				<motionProperty splashInvokeEffect="Item/LapenShard/Eff_LapenShard_TimeSword_SplashInvoke_01.xml" />
+			<motion splashInvokeEffect="Item/LapenShard/Eff_LapenShard_TimeSword_SplashInvoke_01.xml">
 				<attack point="p0" targetCount="5" attacktype="3" hitImmuneBreak="5" unrideOnHit="1">
-					<rangeProperty rangeType="cylinder" distance="300" height="150" applyTarget="1" />
-					<damageProperty rate="2.25" effectHit="CH/Common/Eff_Common_Dark_Hit.xml" attackMaterial="1" />
+					<range rangeType="cylinder" distance="300" height="150" applyTarget="1" />
+					<damage rate="2.25" effectHit="CH/Common/Eff_Common_Dark_Hit.xml" attackMaterial="1" />
 					<actionSkill skillID="120010006" level="9" delay="1000" nonTargetActive="1" useDirection="1" />
 				</attack>
 			</motion>
 		</level>
 		<level value="10">
-			<push back="200" />
-			<motion>
-				<motionProperty splashInvokeEffect="Item/LapenShard/Eff_LapenShard_TimeSword_SplashInvoke_01.xml" />
+			<motion splashInvokeEffect="Item/LapenShard/Eff_LapenShard_TimeSword_SplashInvoke_01.xml">
 				<attack point="p0" targetCount="5" attacktype="3" hitImmuneBreak="5" unrideOnHit="1">
-					<rangeProperty rangeType="cylinder" distance="300" height="150" applyTarget="1" />
-					<damageProperty rate="2.43" effectHit="CH/Common/Eff_Common_Dark_Hit.xml" attackMaterial="1" />
+					<range rangeType="cylinder" distance="300" height="150" applyTarget="1" />
+					<damage rate="2.43" effectHit="CH/Common/Eff_Common_Dark_Hit.xml" attackMaterial="1" />
 					<actionSkill skillID="120010006" level="10" delay="1000" nonTargetActive="1" useDirection="1" />
 				</attack>
 			</motion>
@@ -799,114 +519,94 @@
 		<basic mainType="30">
 			<ui attackType="3" />
 			<kinds rangeType="2" groupType="2" />
-			<stateAttr autoTargeting="0" />
+			<push back="200" />
 		</basic>
 		<level value="1">
-			<push back="200" />
-			<motion>
-				<motionProperty splashInvokeEffect="Item/LapenShard/Eff_LapenShard_TimeSword_SplashInvoke_02.xml" />
+			<motion splashInvokeEffect="Item/LapenShard/Eff_LapenShard_TimeSword_SplashInvoke_02.xml">
 				<attack point="p0" targetCount="5" attacktype="3" hitImmuneBreak="5" unrideOnHit="1">
-					<rangeProperty rangeType="cylinder" distance="300" height="150" applyTarget="1" />
-					<damageProperty rate="2.43" effectHit="CH/Common/Eff_Common_Dark_Hit.xml" attackMaterial="1" />
+					<range rangeType="cylinder" distance="300" height="150" applyTarget="1" />
+					<damage rate="2.43" effectHit="CH/Common/Eff_Common_Dark_Hit.xml" attackMaterial="1" />
 					<actionSkill skillID="120010007" level="1" delay="1000" nonTargetActive="1" useDirection="1" />
 				</attack>
 			</motion>
 		</level>
 		<level value="2">
-			<push back="200" />
-			<motion>
-				<motionProperty splashInvokeEffect="Item/LapenShard/Eff_LapenShard_TimeSword_SplashInvoke_02.xml" />
+			<motion splashInvokeEffect="Item/LapenShard/Eff_LapenShard_TimeSword_SplashInvoke_02.xml">
 				<attack point="p0" targetCount="5" attacktype="3" hitImmuneBreak="5" unrideOnHit="1">
-					<rangeProperty rangeType="cylinder" distance="300" height="150" applyTarget="1" />
-					<damageProperty rate="2.52" effectHit="CH/Common/Eff_Common_Dark_Hit.xml" attackMaterial="1" />
+					<range rangeType="cylinder" distance="300" height="150" applyTarget="1" />
+					<damage rate="2.52" effectHit="CH/Common/Eff_Common_Dark_Hit.xml" attackMaterial="1" />
 					<actionSkill skillID="120010007" level="2" delay="1000" nonTargetActive="1" useDirection="1" />
 				</attack>
 			</motion>
 		</level>
 		<level value="3">
-			<push back="200" />
-			<motion>
-				<motionProperty splashInvokeEffect="Item/LapenShard/Eff_LapenShard_TimeSword_SplashInvoke_02.xml" />
+			<motion splashInvokeEffect="Item/LapenShard/Eff_LapenShard_TimeSword_SplashInvoke_02.xml">
 				<attack point="p0" targetCount="5" attacktype="3" hitImmuneBreak="5" unrideOnHit="1">
-					<rangeProperty rangeType="cylinder" distance="300" height="150" applyTarget="1" />
-					<damageProperty rate="2.61" effectHit="CH/Common/Eff_Common_Dark_Hit.xml" attackMaterial="1" />
+					<range rangeType="cylinder" distance="300" height="150" applyTarget="1" />
+					<damage rate="2.61" effectHit="CH/Common/Eff_Common_Dark_Hit.xml" attackMaterial="1" />
 					<actionSkill skillID="120010007" level="3" delay="1000" nonTargetActive="1" useDirection="1" />
 				</attack>
 			</motion>
 		</level>
 		<level value="4">
-			<push back="200" />
-			<motion>
-				<motionProperty splashInvokeEffect="Item/LapenShard/Eff_LapenShard_TimeSword_SplashInvoke_02.xml" />
+			<motion splashInvokeEffect="Item/LapenShard/Eff_LapenShard_TimeSword_SplashInvoke_02.xml">
 				<attack point="p0" targetCount="5" attacktype="3" hitImmuneBreak="5" unrideOnHit="1">
-					<rangeProperty rangeType="cylinder" distance="300" height="150" applyTarget="1" />
-					<damageProperty rate="2.7" effectHit="CH/Common/Eff_Common_Dark_Hit.xml" attackMaterial="1" />
+					<range rangeType="cylinder" distance="300" height="150" applyTarget="1" />
+					<damage rate="2.7" effectHit="CH/Common/Eff_Common_Dark_Hit.xml" attackMaterial="1" />
 					<actionSkill skillID="120010007" level="4" delay="1000" nonTargetActive="1" useDirection="1" />
 				</attack>
 			</motion>
 		</level>
 		<level value="5">
-			<push back="200" />
-			<motion>
-				<motionProperty splashInvokeEffect="Item/LapenShard/Eff_LapenShard_TimeSword_SplashInvoke_02.xml" />
+			<motion splashInvokeEffect="Item/LapenShard/Eff_LapenShard_TimeSword_SplashInvoke_02.xml">
 				<attack point="p0" targetCount="5" attacktype="3" hitImmuneBreak="5" unrideOnHit="1">
-					<rangeProperty rangeType="cylinder" distance="300" height="150" applyTarget="1" />
-					<damageProperty rate="2.82" effectHit="CH/Common/Eff_Common_Dark_Hit.xml" attackMaterial="1" />
+					<range rangeType="cylinder" distance="300" height="150" applyTarget="1" />
+					<damage rate="2.82" effectHit="CH/Common/Eff_Common_Dark_Hit.xml" attackMaterial="1" />
 					<actionSkill skillID="120010007" level="5" delay="1000" nonTargetActive="1" useDirection="1" />
 				</attack>
 			</motion>
 		</level>
 		<level value="6">
-			<push back="200" />
-			<motion>
-				<motionProperty splashInvokeEffect="Item/LapenShard/Eff_LapenShard_TimeSword_SplashInvoke_02.xml" />
+			<motion splashInvokeEffect="Item/LapenShard/Eff_LapenShard_TimeSword_SplashInvoke_02.xml">
 				<attack point="p0" targetCount="5" attacktype="3" hitImmuneBreak="5" unrideOnHit="1">
-					<rangeProperty rangeType="cylinder" distance="300" height="150" applyTarget="1" />
-					<damageProperty rate="2.94" effectHit="CH/Common/Eff_Common_Dark_Hit.xml" attackMaterial="1" />
+					<range rangeType="cylinder" distance="300" height="150" applyTarget="1" />
+					<damage rate="2.94" effectHit="CH/Common/Eff_Common_Dark_Hit.xml" attackMaterial="1" />
 					<actionSkill skillID="120010007" level="6" delay="1000" nonTargetActive="1" useDirection="1" />
 				</attack>
 			</motion>
 		</level>
 		<level value="7">
-			<push back="200" />
-			<motion>
-				<motionProperty splashInvokeEffect="Item/LapenShard/Eff_LapenShard_TimeSword_SplashInvoke_02.xml" />
+			<motion splashInvokeEffect="Item/LapenShard/Eff_LapenShard_TimeSword_SplashInvoke_02.xml">
 				<attack point="p0" targetCount="5" attacktype="3" hitImmuneBreak="5" unrideOnHit="1">
-					<rangeProperty rangeType="cylinder" distance="300" height="150" applyTarget="1" />
-					<damageProperty rate="3.06" effectHit="CH/Common/Eff_Common_Dark_Hit.xml" attackMaterial="1" />
+					<range rangeType="cylinder" distance="300" height="150" applyTarget="1" />
+					<damage rate="3.06" effectHit="CH/Common/Eff_Common_Dark_Hit.xml" attackMaterial="1" />
 					<actionSkill skillID="120010007" level="7" delay="1000" nonTargetActive="1" useDirection="1" />
 				</attack>
 			</motion>
 		</level>
 		<level value="8">
-			<push back="200" />
-			<motion>
-				<motionProperty splashInvokeEffect="Item/LapenShard/Eff_LapenShard_TimeSword_SplashInvoke_02.xml" />
+			<motion splashInvokeEffect="Item/LapenShard/Eff_LapenShard_TimeSword_SplashInvoke_02.xml">
 				<attack point="p0" targetCount="5" attacktype="3" hitImmuneBreak="5" unrideOnHit="1">
-					<rangeProperty rangeType="cylinder" distance="300" height="150" applyTarget="1" />
-					<damageProperty rate="3.18" effectHit="CH/Common/Eff_Common_Dark_Hit.xml" attackMaterial="1" />
+					<range rangeType="cylinder" distance="300" height="150" applyTarget="1" />
+					<damage rate="3.18" effectHit="CH/Common/Eff_Common_Dark_Hit.xml" attackMaterial="1" />
 					<actionSkill skillID="120010007" level="8" delay="1000" nonTargetActive="1" useDirection="1" />
 				</attack>
 			</motion>
 		</level>
 		<level value="9">
-			<push back="200" />
-			<motion>
-				<motionProperty splashInvokeEffect="Item/LapenShard/Eff_LapenShard_TimeSword_SplashInvoke_02.xml" />
+			<motion splashInvokeEffect="Item/LapenShard/Eff_LapenShard_TimeSword_SplashInvoke_02.xml">
 				<attack point="p0" targetCount="5" attacktype="3" hitImmuneBreak="5" unrideOnHit="1">
-					<rangeProperty rangeType="cylinder" distance="300" height="150" applyTarget="1" />
-					<damageProperty rate="3.39" effectHit="CH/Common/Eff_Common_Dark_Hit.xml" attackMaterial="1" />
+					<range rangeType="cylinder" distance="300" height="150" applyTarget="1" />
+					<damage rate="3.39" effectHit="CH/Common/Eff_Common_Dark_Hit.xml" attackMaterial="1" />
 					<actionSkill skillID="120010007" level="9" delay="1000" nonTargetActive="1" useDirection="1" />
 				</attack>
 			</motion>
 		</level>
 		<level value="10">
-			<push back="200" />
-			<motion>
-				<motionProperty splashInvokeEffect="Item/LapenShard/Eff_LapenShard_TimeSword_SplashInvoke_02.xml" />
+			<motion splashInvokeEffect="Item/LapenShard/Eff_LapenShard_TimeSword_SplashInvoke_02.xml">
 				<attack point="p0" targetCount="5" attacktype="3" hitImmuneBreak="5" unrideOnHit="1">
-					<rangeProperty rangeType="cylinder" distance="300" height="150" applyTarget="1" />
-					<damageProperty rate="3.66" effectHit="CH/Common/Eff_Common_Dark_Hit.xml" attackMaterial="1" />
+					<range rangeType="cylinder" distance="300" height="150" applyTarget="1" />
+					<damage rate="3.66" effectHit="CH/Common/Eff_Common_Dark_Hit.xml" attackMaterial="1" />
 					<actionSkill skillID="120010007" level="10" delay="1000" nonTargetActive="1" useDirection="1" />
 				</attack>
 			</motion>
@@ -916,703 +616,536 @@
 		<basic mainType="30">
 			<ui attackType="3" />
 			<kinds rangeType="2" groupType="2" />
-			<stateAttr autoTargeting="0" />
+			<push back="200" />
 		</basic>
 		<level value="1">
-			<push back="200" />
-			<motion>
-				<motionProperty splashInvokeEffect="Item/LapenShard/Eff_LapenShard_TimeSword_SplashInvoke_03.xml" />
+			<motion splashInvokeEffect="Item/LapenShard/Eff_LapenShard_TimeSword_SplashInvoke_03.xml">
 				<attack point="p0" targetCount="5" attacktype="3" hitImmuneBreak="5" unrideOnHit="1">
-					<rangeProperty rangeType="cylinder" distance="300" height="150" applyTarget="1" />
-					<damageProperty rate="4.08" effectHit="CH/Common/Eff_Common_Dark_Hit.xml" attackMaterial="1" />
+					<range rangeType="cylinder" distance="300" height="150" applyTarget="1" />
+					<damage rate="4.08" effectHit="CH/Common/Eff_Common_Dark_Hit.xml" attackMaterial="1" />
 				</attack>
 			</motion>
 		</level>
 		<level value="2">
-			<push back="200" />
-			<motion>
-				<motionProperty splashInvokeEffect="Item/LapenShard/Eff_LapenShard_TimeSword_SplashInvoke_03.xml" />
+			<motion splashInvokeEffect="Item/LapenShard/Eff_LapenShard_TimeSword_SplashInvoke_03.xml">
 				<attack point="p0" targetCount="5" attacktype="3" hitImmuneBreak="5" unrideOnHit="1">
-					<rangeProperty rangeType="cylinder" distance="300" height="150" applyTarget="1" />
-					<damageProperty rate="4.2" effectHit="CH/Common/Eff_Common_Dark_Hit.xml" attackMaterial="1" />
+					<range rangeType="cylinder" distance="300" height="150" applyTarget="1" />
+					<damage rate="4.2" effectHit="CH/Common/Eff_Common_Dark_Hit.xml" attackMaterial="1" />
 				</attack>
 			</motion>
 		</level>
 		<level value="3">
-			<push back="200" />
-			<motion>
-				<motionProperty splashInvokeEffect="Item/LapenShard/Eff_LapenShard_TimeSword_SplashInvoke_03.xml" />
+			<motion splashInvokeEffect="Item/LapenShard/Eff_LapenShard_TimeSword_SplashInvoke_03.xml">
 				<attack point="p0" targetCount="5" attacktype="3" hitImmuneBreak="5" unrideOnHit="1">
-					<rangeProperty rangeType="cylinder" distance="300" height="150" applyTarget="1" />
-					<damageProperty rate="4.32" effectHit="CH/Common/Eff_Common_Dark_Hit.xml" attackMaterial="1" />
+					<range rangeType="cylinder" distance="300" height="150" applyTarget="1" />
+					<damage rate="4.32" effectHit="CH/Common/Eff_Common_Dark_Hit.xml" attackMaterial="1" />
 				</attack>
 			</motion>
 		</level>
 		<level value="4">
-			<push back="200" />
-			<motion>
-				<motionProperty splashInvokeEffect="Item/LapenShard/Eff_LapenShard_TimeSword_SplashInvoke_03.xml" />
+			<motion splashInvokeEffect="Item/LapenShard/Eff_LapenShard_TimeSword_SplashInvoke_03.xml">
 				<attack point="p0" targetCount="5" attacktype="3" hitImmuneBreak="5" unrideOnHit="1">
-					<rangeProperty rangeType="cylinder" distance="300" height="150" applyTarget="1" />
-					<damageProperty rate="4.5" effectHit="CH/Common/Eff_Common_Dark_Hit.xml" attackMaterial="1" />
+					<range rangeType="cylinder" distance="300" height="150" applyTarget="1" />
+					<damage rate="4.5" effectHit="CH/Common/Eff_Common_Dark_Hit.xml" attackMaterial="1" />
 				</attack>
 			</motion>
 		</level>
 		<level value="5">
-			<push back="200" />
-			<motion>
-				<motionProperty splashInvokeEffect="Item/LapenShard/Eff_LapenShard_TimeSword_SplashInvoke_03.xml" />
+			<motion splashInvokeEffect="Item/LapenShard/Eff_LapenShard_TimeSword_SplashInvoke_03.xml">
 				<attack point="p0" targetCount="5" attacktype="3" hitImmuneBreak="5" unrideOnHit="1">
-					<rangeProperty rangeType="cylinder" distance="300" height="150" applyTarget="1" />
-					<damageProperty rate="4.68" effectHit="CH/Common/Eff_Common_Dark_Hit.xml" attackMaterial="1" />
+					<range rangeType="cylinder" distance="300" height="150" applyTarget="1" />
+					<damage rate="4.68" effectHit="CH/Common/Eff_Common_Dark_Hit.xml" attackMaterial="1" />
 				</attack>
 			</motion>
 		</level>
 		<level value="6">
-			<push back="200" />
-			<motion>
-				<motionProperty splashInvokeEffect="Item/LapenShard/Eff_LapenShard_TimeSword_SplashInvoke_03.xml" />
+			<motion splashInvokeEffect="Item/LapenShard/Eff_LapenShard_TimeSword_SplashInvoke_03.xml">
 				<attack point="p0" targetCount="5" attacktype="3" hitImmuneBreak="5" unrideOnHit="1">
-					<rangeProperty rangeType="cylinder" distance="300" height="150" applyTarget="1" />
-					<damageProperty rate="4.89" effectHit="CH/Common/Eff_Common_Dark_Hit.xml" attackMaterial="1" />
+					<range rangeType="cylinder" distance="300" height="150" applyTarget="1" />
+					<damage rate="4.89" effectHit="CH/Common/Eff_Common_Dark_Hit.xml" attackMaterial="1" />
 				</attack>
 			</motion>
 		</level>
 		<level value="7">
-			<push back="200" />
-			<motion>
-				<motionProperty splashInvokeEffect="Item/LapenShard/Eff_LapenShard_TimeSword_SplashInvoke_03.xml" />
+			<motion splashInvokeEffect="Item/LapenShard/Eff_LapenShard_TimeSword_SplashInvoke_03.xml">
 				<attack point="p0" targetCount="5" attacktype="3" hitImmuneBreak="5" unrideOnHit="1">
-					<rangeProperty rangeType="cylinder" distance="300" height="150" applyTarget="1" />
-					<damageProperty rate="5.1" effectHit="CH/Common/Eff_Common_Dark_Hit.xml" attackMaterial="1" />
+					<range rangeType="cylinder" distance="300" height="150" applyTarget="1" />
+					<damage rate="5.1" effectHit="CH/Common/Eff_Common_Dark_Hit.xml" attackMaterial="1" />
 				</attack>
 			</motion>
 		</level>
 		<level value="8">
-			<push back="200" />
-			<motion>
-				<motionProperty splashInvokeEffect="Item/LapenShard/Eff_LapenShard_TimeSword_SplashInvoke_03.xml" />
+			<motion splashInvokeEffect="Item/LapenShard/Eff_LapenShard_TimeSword_SplashInvoke_03.xml">
 				<attack point="p0" targetCount="5" attacktype="3" hitImmuneBreak="5" unrideOnHit="1">
-					<rangeProperty rangeType="cylinder" distance="300" height="150" applyTarget="1" />
-					<damageProperty rate="5.31" effectHit="CH/Common/Eff_Common_Dark_Hit.xml" attackMaterial="1" />
+					<range rangeType="cylinder" distance="300" height="150" applyTarget="1" />
+					<damage rate="5.31" effectHit="CH/Common/Eff_Common_Dark_Hit.xml" attackMaterial="1" />
 				</attack>
 			</motion>
 		</level>
 		<level value="9">
-			<push back="200" />
-			<motion>
-				<motionProperty splashInvokeEffect="Item/LapenShard/Eff_LapenShard_TimeSword_SplashInvoke_03.xml" />
+			<motion splashInvokeEffect="Item/LapenShard/Eff_LapenShard_TimeSword_SplashInvoke_03.xml">
 				<attack point="p0" targetCount="5" attacktype="3" hitImmuneBreak="5" unrideOnHit="1">
-					<rangeProperty rangeType="cylinder" distance="300" height="150" applyTarget="1" />
-					<damageProperty rate="5.67" effectHit="CH/Common/Eff_Common_Dark_Hit.xml" attackMaterial="1" />
+					<range rangeType="cylinder" distance="300" height="150" applyTarget="1" />
+					<damage rate="5.67" effectHit="CH/Common/Eff_Common_Dark_Hit.xml" attackMaterial="1" />
 				</attack>
 			</motion>
 		</level>
 		<level value="10">
-			<push back="200" />
-			<motion>
-				<motionProperty splashInvokeEffect="Item/LapenShard/Eff_LapenShard_TimeSword_SplashInvoke_03.xml" />
+			<motion splashInvokeEffect="Item/LapenShard/Eff_LapenShard_TimeSword_SplashInvoke_03.xml">
 				<attack point="p0" targetCount="5" attacktype="3" hitImmuneBreak="5" unrideOnHit="1">
-					<rangeProperty rangeType="cylinder" distance="300" height="150" applyTarget="1" />
-					<damageProperty rate="6.12" effectHit="CH/Common/Eff_Common_Dark_Hit.xml" attackMaterial="1" />
+					<range rangeType="cylinder" distance="300" height="150" applyTarget="1" />
+					<damage rate="6.12" effectHit="CH/Common/Eff_Common_Dark_Hit.xml" attackMaterial="1" />
 				</attack>
 			</motion>
 		</level>
 	</skill>
-	<skill id="120010010" comment="소비 아이템">
-		<basic mainType="2">
+	<skill id="120010010" comment="라펜샤드">
+		<basic mainType="2" param1="41000060">
 			<ui icon="./Data/Resource/Image/item/icon/41000051.png" attackType="3" />
 			<kinds groupType="2" unrideOnUse="1" />
 			<stateAttr keyIsDown="1" />
-		</basic>
-		<level value="1">
-			<beginCondition cooldownTime="60" useCoolDownShowUI="1" />
 			<autoTargeting autoTargetingMaxDegree="45" />
-			<targetItem>
-				<item id="41000051" />
-			</targetItem>
-			<motion>
-				<motionProperty sequenceName="LapenShard_Bliche_A" holdWeapon="0" />
+			<condition useCoolDownShowUI="1" />
+		</basic>
+		<level value="1" cooldown="60000" stringParam="457, 69">
+			<motion sequenceName="LapenShard_Bliche_A" holdWeapon="0">
 				<attack point="p0" targetCount="1" magicPathID="120010010" cubeMagicPathID="1200100101" attacktype="3" attackMethodType="1" hitImmuneBreak="5">
-					<rangeProperty rangeType="frustum" distance="900" height="150" width="150" endWidth="900" applyTarget="1" />
-					<arrowProperty overlap="1" collision="50.000000,50.000000,50.000000" collisionAdd="0.000000,50.000000,0.000000" effect="NPC/Skill/Temp/Eff_Temp.xml" />
-					<damageProperty count="0" />
+					<range rangeType="frustum" distance="900" height="150" width="150" endWidth="900" applyTarget="1" />
+					<arrow overlap="1" collision="50,50,50" collisionAdd="0,50,0" effect="NPC/Skill/Temp/Eff_Temp.xml" />
+					<damage count="0" />
 					<actionSkill skillID="120010011" level="1" delay="300" />
 					<actionSkill skillID="120010012" level="1" />
 				</attack>
 			</motion>
 		</level>
-		<level value="2">
-			<beginCondition cooldownTime="60" useCoolDownShowUI="1" />
-			<autoTargeting autoTargetingMaxDegree="45" />
-			<targetItem>
-				<item id="41000052" />
-			</targetItem>
-			<motion>
-				<motionProperty sequenceName="LapenShard_Bliche_A" holdWeapon="0" />
+		<level value="2" cooldown="60000" stringParam="548, 82">
+			<motion sequenceName="LapenShard_Bliche_A" holdWeapon="0">
 				<attack point="p0" targetCount="1" magicPathID="120010010" cubeMagicPathID="1200100101" attacktype="3" attackMethodType="1" hitImmuneBreak="5">
-					<rangeProperty rangeType="frustum" distance="900" height="150" width="150" endWidth="900" applyTarget="1" />
-					<arrowProperty overlap="1" collision="50.000000,50.000000,50.000000" collisionAdd="0.000000,50.000000,0.000000" effect="NPC/Skill/Temp/Eff_Temp.xml" />
-					<damageProperty count="0" />
+					<range rangeType="frustum" distance="900" height="150" width="150" endWidth="900" applyTarget="1" />
+					<arrow overlap="1" collision="50,50,50" collisionAdd="0,50,0" effect="NPC/Skill/Temp/Eff_Temp.xml" />
+					<damage count="0" />
 					<actionSkill skillID="120010011" level="2" delay="300" />
 					<actionSkill skillID="120010012" level="1" />
 				</attack>
 			</motion>
 		</level>
-		<level value="3">
-			<beginCondition cooldownTime="60" useCoolDownShowUI="1" />
-			<autoTargeting autoTargetingMaxDegree="45" />
-			<targetItem>
-				<item id="41000053" />
-			</targetItem>
-			<motion>
-				<motionProperty sequenceName="LapenShard_Bliche_A" holdWeapon="0" />
+		<level value="3" cooldown="60000" stringParam="685, 103">
+			<motion sequenceName="LapenShard_Bliche_A" holdWeapon="0">
 				<attack point="p0" targetCount="1" magicPathID="120010010" cubeMagicPathID="1200100101" attacktype="3" attackMethodType="1" hitImmuneBreak="5">
-					<rangeProperty rangeType="frustum" distance="900" height="150" width="150" endWidth="900" applyTarget="1" />
-					<arrowProperty overlap="1" collision="50.000000,50.000000,50.000000" collisionAdd="0.000000,50.000000,0.000000" effect="NPC/Skill/Temp/Eff_Temp.xml" />
-					<damageProperty count="0" />
+					<range rangeType="frustum" distance="900" height="150" width="150" endWidth="900" applyTarget="1" />
+					<arrow overlap="1" collision="50,50,50" collisionAdd="0,50,0" effect="NPC/Skill/Temp/Eff_Temp.xml" />
+					<damage count="0" />
 					<actionSkill skillID="120010011" level="3" delay="300" />
 					<actionSkill skillID="120010012" level="1" />
 				</attack>
 			</motion>
 		</level>
-		<level value="4">
-			<beginCondition cooldownTime="60" useCoolDownShowUI="1" />
-			<autoTargeting autoTargetingMaxDegree="45" />
-			<targetItem>
-				<item id="41000054" />
-			</targetItem>
-			<motion>
-				<motionProperty sequenceName="LapenShard_Bliche_A" holdWeapon="0" />
+		<level value="4" cooldown="60000" stringParam="822, 123">
+			<motion sequenceName="LapenShard_Bliche_A" holdWeapon="0">
 				<attack point="p0" targetCount="1" magicPathID="120010010" cubeMagicPathID="1200100101" attacktype="3" attackMethodType="1" hitImmuneBreak="5">
-					<rangeProperty rangeType="frustum" distance="900" height="150" width="150" endWidth="900" applyTarget="1" />
-					<arrowProperty overlap="1" collision="50.000000,50.000000,50.000000" collisionAdd="0.000000,50.000000,0.000000" effect="NPC/Skill/Temp/Eff_Temp.xml" />
-					<damageProperty count="0" />
+					<range rangeType="frustum" distance="900" height="150" width="150" endWidth="900" applyTarget="1" />
+					<arrow overlap="1" collision="50,50,50" collisionAdd="0,50,0" effect="NPC/Skill/Temp/Eff_Temp.xml" />
+					<damage count="0" />
 					<actionSkill skillID="120010011" level="4" delay="300" />
 					<actionSkill skillID="120010012" level="1" />
 				</attack>
 			</motion>
 		</level>
-		<level value="5">
-			<beginCondition cooldownTime="60" useCoolDownShowUI="1" />
-			<autoTargeting autoTargetingMaxDegree="45" />
-			<targetItem>
-				<item id="41000055" />
-			</targetItem>
-			<motion>
-				<motionProperty sequenceName="LapenShard_Bliche_A" holdWeapon="0" />
+		<level value="5" cooldown="60000" stringParam="1005, 151">
+			<motion sequenceName="LapenShard_Bliche_A" holdWeapon="0">
 				<attack point="p0" targetCount="1" magicPathID="120010010" cubeMagicPathID="1200100101" attacktype="3" attackMethodType="1" hitImmuneBreak="5">
-					<rangeProperty rangeType="frustum" distance="900" height="150" width="150" endWidth="900" applyTarget="1" />
-					<arrowProperty overlap="1" collision="50.000000,50.000000,50.000000" collisionAdd="0.000000,50.000000,0.000000" effect="NPC/Skill/Temp/Eff_Temp.xml" />
-					<damageProperty count="0" />
+					<range rangeType="frustum" distance="900" height="150" width="150" endWidth="900" applyTarget="1" />
+					<arrow overlap="1" collision="50,50,50" collisionAdd="0,50,0" effect="NPC/Skill/Temp/Eff_Temp.xml" />
+					<damage count="0" />
 					<actionSkill skillID="120010011" level="5" delay="300" />
 					<actionSkill skillID="120010012" level="1" />
 				</attack>
 			</motion>
 		</level>
-		<level value="6">
-			<beginCondition cooldownTime="60" useCoolDownShowUI="1" />
-			<autoTargeting autoTargetingMaxDegree="45" />
-			<targetItem>
-				<item id="41000056" />
-			</targetItem>
-			<motion>
-				<motionProperty sequenceName="LapenShard_Bliche_A" holdWeapon="0" />
+		<level value="6" cooldown="60000" stringParam="1233, 185">
+			<motion sequenceName="LapenShard_Bliche_A" holdWeapon="0">
 				<attack point="p0" targetCount="1" magicPathID="120010010" cubeMagicPathID="1200100101" attacktype="3" attackMethodType="1" hitImmuneBreak="5">
-					<rangeProperty rangeType="frustum" distance="900" height="150" width="150" endWidth="900" applyTarget="1" />
-					<arrowProperty overlap="1" collision="50.000000,50.000000,50.000000" collisionAdd="0.000000,50.000000,0.000000" effect="NPC/Skill/Temp/Eff_Temp.xml" />
-					<damageProperty count="0" />
+					<range rangeType="frustum" distance="900" height="150" width="150" endWidth="900" applyTarget="1" />
+					<arrow overlap="1" collision="50,50,50" collisionAdd="0,50,0" effect="NPC/Skill/Temp/Eff_Temp.xml" />
+					<damage count="0" />
 					<actionSkill skillID="120010011" level="6" delay="300" />
 					<actionSkill skillID="120010012" level="1" />
 				</attack>
 			</motion>
 		</level>
-		<level value="7">
-			<beginCondition cooldownTime="60" useCoolDownShowUI="1" />
-			<autoTargeting autoTargetingMaxDegree="45" />
-			<targetItem>
-				<item id="41000057" />
-			</targetItem>
-			<motion>
-				<motionProperty sequenceName="LapenShard_Bliche_A" holdWeapon="0" />
+		<level value="7" cooldown="60000" stringParam="1507, 226">
+			<motion sequenceName="LapenShard_Bliche_A" holdWeapon="0">
 				<attack point="p0" targetCount="1" magicPathID="120010010" cubeMagicPathID="1200100101" attacktype="3" attackMethodType="1" hitImmuneBreak="5">
-					<rangeProperty rangeType="frustum" distance="900" height="150" width="150" endWidth="900" applyTarget="1" />
-					<arrowProperty overlap="1" collision="50.000000,50.000000,50.000000" collisionAdd="0.000000,50.000000,0.000000" effect="NPC/Skill/Temp/Eff_Temp.xml" />
-					<damageProperty count="0" />
+					<range rangeType="frustum" distance="900" height="150" width="150" endWidth="900" applyTarget="1" />
+					<arrow overlap="1" collision="50,50,50" collisionAdd="0,50,0" effect="NPC/Skill/Temp/Eff_Temp.xml" />
+					<damage count="0" />
 					<actionSkill skillID="120010011" level="7" delay="300" />
 					<actionSkill skillID="120010012" level="1" />
 				</attack>
 			</motion>
 		</level>
-		<level value="8">
-			<beginCondition cooldownTime="60" useCoolDownShowUI="1" />
-			<autoTargeting autoTargetingMaxDegree="45" />
-			<targetItem>
-				<item id="41000058" />
-			</targetItem>
-			<motion>
-				<motionProperty sequenceName="LapenShard_Bliche_A" holdWeapon="0" />
+		<level value="8" cooldown="60000" stringParam="1827, 274">
+			<motion sequenceName="LapenShard_Bliche_A" holdWeapon="0">
 				<attack point="p0" targetCount="1" magicPathID="120010010" cubeMagicPathID="1200100101" attacktype="3" attackMethodType="1" hitImmuneBreak="5">
-					<rangeProperty rangeType="frustum" distance="900" height="150" width="150" endWidth="900" applyTarget="1" />
-					<arrowProperty overlap="1" collision="50.000000,50.000000,50.000000" collisionAdd="0.000000,50.000000,0.000000" effect="NPC/Skill/Temp/Eff_Temp.xml" />
-					<damageProperty count="0" />
+					<range rangeType="frustum" distance="900" height="150" width="150" endWidth="900" applyTarget="1" />
+					<arrow overlap="1" collision="50,50,50" collisionAdd="0,50,0" effect="NPC/Skill/Temp/Eff_Temp.xml" />
+					<damage count="0" />
 					<actionSkill skillID="120010011" level="8" delay="300" />
 					<actionSkill skillID="120010012" level="1" />
 				</attack>
 			</motion>
 		</level>
-		<level value="9">
-			<beginCondition cooldownTime="60" useCoolDownShowUI="1" />
-			<autoTargeting autoTargetingMaxDegree="45" />
-			<targetItem>
-				<item id="41000059" />
-			</targetItem>
-			<motion>
-				<motionProperty sequenceName="LapenShard_Bliche_A" holdWeapon="0" />
+		<level value="9" cooldown="60000" stringParam="2238, 336">
+			<motion sequenceName="LapenShard_Bliche_A" holdWeapon="0">
 				<attack point="p0" targetCount="1" magicPathID="120010010" cubeMagicPathID="1200100101" attacktype="3" attackMethodType="1" hitImmuneBreak="5">
-					<rangeProperty rangeType="frustum" distance="900" height="150" width="150" endWidth="900" applyTarget="1" />
-					<arrowProperty overlap="1" collision="50.000000,50.000000,50.000000" collisionAdd="0.000000,50.000000,0.000000" effect="NPC/Skill/Temp/Eff_Temp.xml" />
-					<damageProperty count="0" />
+					<range rangeType="frustum" distance="900" height="150" width="150" endWidth="900" applyTarget="1" />
+					<arrow overlap="1" collision="50,50,50" collisionAdd="0,50,0" effect="NPC/Skill/Temp/Eff_Temp.xml" />
+					<damage count="0" />
 					<actionSkill skillID="120010011" level="9" delay="300" />
 					<actionSkill skillID="120010012" level="1" />
 				</attack>
 			</motion>
 		</level>
-		<level value="10">
-			<beginCondition cooldownTime="60" useCoolDownShowUI="1" />
-			<autoTargeting autoTargetingMaxDegree="45" />
-			<targetItem>
-				<item id="41000060" />
-			</targetItem>
-			<motion>
-				<motionProperty sequenceName="LapenShard_Bliche_A" holdWeapon="0" />
+		<level value="10" cooldown="60000" stringParam="2741, 411">
+			<motion sequenceName="LapenShard_Bliche_A" holdWeapon="0">
 				<attack point="p0" targetCount="1" magicPathID="120010010" cubeMagicPathID="1200100101" attacktype="3" attackMethodType="1" hitImmuneBreak="5">
-					<rangeProperty rangeType="frustum" distance="900" height="150" width="150" endWidth="900" applyTarget="1" />
-					<arrowProperty overlap="1" collision="50.000000,50.000000,50.000000" collisionAdd="0.000000,50.000000,0.000000" effect="NPC/Skill/Temp/Eff_Temp.xml" />
-					<damageProperty count="0" />
+					<range rangeType="frustum" distance="900" height="150" width="150" endWidth="900" applyTarget="1" />
+					<arrow overlap="1" collision="50,50,50" collisionAdd="0,50,0" effect="NPC/Skill/Temp/Eff_Temp.xml" />
+					<damage count="0" />
 					<actionSkill skillID="120010011" level="10" delay="300" />
 					<actionSkill skillID="120010012" level="1" />
 				</attack>
 			</motion>
 		</level>
 	</skill>
-	<skill id="120010011" comment="소비 아이템">
-		<basic mainType="2">
+	<skill id="120010011" comment="월광 베기 : 레드 라펜샤드 스플래쉬">
+		<basic mainType="30">
 			<ui attackType="3" />
 			<kinds groupType="2" unrideOnUse="1" />
 			<stateAttr keyIsDown="1" />
+			<push back="450" />
 		</basic>
 		<level value="1">
-			<push back="450" />
-			<motion>
-				<motionProperty holdWeapon="0" />
+			<motion holdWeapon="0">
 				<attack point="p0" targetCount="10" attacktype="3" hitImmuneBreak="5" unrideOnHit="1">
-					<rangeProperty rangeType="cylinder" distance="600" height="150" applyTarget="1" />
-					<damageProperty rate="4.57" effectHit="CH/Common/Eff_Common_Dark_Hit.xml" attackMaterial="1" />
+					<range rangeType="cylinder" distance="600" height="150" applyTarget="1" />
+					<damage rate="4.57" effectHit="CH/Common/Eff_Common_Dark_Hit.xml" attackMaterial="1" />
 					<actionAdditional additionalID="120010011" level="1" skillTarget="2" skillOwner="1" />
 				</attack>
 			</motion>
 		</level>
 		<level value="2">
-			<push back="450" />
-			<motion>
-				<motionProperty holdWeapon="0" />
+			<motion holdWeapon="0">
 				<attack point="p0" targetCount="10" attacktype="3" hitImmuneBreak="5" unrideOnHit="1">
-					<rangeProperty rangeType="cylinder" distance="600" height="150" applyTarget="1" />
-					<damageProperty rate="5.48" effectHit="CH/Common/Eff_Common_Dark_Hit.xml" attackMaterial="1" />
+					<range rangeType="cylinder" distance="600" height="150" applyTarget="1" />
+					<damage rate="5.48" effectHit="CH/Common/Eff_Common_Dark_Hit.xml" attackMaterial="1" />
 					<actionAdditional additionalID="120010011" level="2" skillTarget="2" skillOwner="1" />
 				</attack>
 			</motion>
 		</level>
 		<level value="3">
-			<push back="450" />
-			<motion>
-				<motionProperty holdWeapon="0" />
+			<motion holdWeapon="0">
 				<attack point="p0" targetCount="10" attacktype="3" hitImmuneBreak="5" unrideOnHit="1">
-					<rangeProperty rangeType="cylinder" distance="600" height="150" applyTarget="1" />
-					<damageProperty rate="6.85" effectHit="CH/Common/Eff_Common_Dark_Hit.xml" attackMaterial="1" />
+					<range rangeType="cylinder" distance="600" height="150" applyTarget="1" />
+					<damage rate="6.85" effectHit="CH/Common/Eff_Common_Dark_Hit.xml" attackMaterial="1" />
 					<actionAdditional additionalID="120010011" level="3" skillTarget="2" skillOwner="1" />
 				</attack>
 			</motion>
 		</level>
 		<level value="4">
-			<push back="450" />
-			<motion>
-				<motionProperty holdWeapon="0" />
+			<motion holdWeapon="0">
 				<attack point="p0" targetCount="10" attacktype="3" hitImmuneBreak="5" unrideOnHit="1">
-					<rangeProperty rangeType="cylinder" distance="600" height="150" applyTarget="1" />
-					<damageProperty rate="8.22" effectHit="CH/Common/Eff_Common_Dark_Hit.xml" attackMaterial="1" />
+					<range rangeType="cylinder" distance="600" height="150" applyTarget="1" />
+					<damage rate="8.22" effectHit="CH/Common/Eff_Common_Dark_Hit.xml" attackMaterial="1" />
 					<actionAdditional additionalID="120010011" level="4" skillTarget="2" skillOwner="1" />
 				</attack>
 			</motion>
 		</level>
 		<level value="5">
-			<push back="450" />
-			<motion>
-				<motionProperty holdWeapon="0" />
+			<motion holdWeapon="0">
 				<attack point="p0" targetCount="10" attacktype="3" hitImmuneBreak="5" unrideOnHit="1">
-					<rangeProperty rangeType="cylinder" distance="600" height="150" applyTarget="1" />
-					<damageProperty rate="10.05" effectHit="CH/Common/Eff_Common_Dark_Hit.xml" attackMaterial="1" />
+					<range rangeType="cylinder" distance="600" height="150" applyTarget="1" />
+					<damage rate="10.05" effectHit="CH/Common/Eff_Common_Dark_Hit.xml" attackMaterial="1" />
 					<actionAdditional additionalID="120010011" level="5" skillTarget="2" skillOwner="1" />
 				</attack>
 			</motion>
 		</level>
 		<level value="6">
-			<push back="450" />
-			<motion>
-				<motionProperty holdWeapon="0" />
+			<motion holdWeapon="0">
 				<attack point="p0" targetCount="10" attacktype="3" hitImmuneBreak="5" unrideOnHit="1">
-					<rangeProperty rangeType="cylinder" distance="600" height="150" applyTarget="1" />
-					<damageProperty rate="12.33" effectHit="CH/Common/Eff_Common_Dark_Hit.xml" attackMaterial="1" />
+					<range rangeType="cylinder" distance="600" height="150" applyTarget="1" />
+					<damage rate="12.33" effectHit="CH/Common/Eff_Common_Dark_Hit.xml" attackMaterial="1" />
 					<actionAdditional additionalID="120010011" level="6" skillTarget="2" skillOwner="1" />
 				</attack>
 			</motion>
 		</level>
 		<level value="7">
-			<push back="450" />
-			<motion>
-				<motionProperty holdWeapon="0" />
+			<motion holdWeapon="0">
 				<attack point="p0" targetCount="10" attacktype="3" hitImmuneBreak="5" unrideOnHit="1">
-					<rangeProperty rangeType="cylinder" distance="600" height="150" applyTarget="1" />
-					<damageProperty rate="15.07" effectHit="CH/Common/Eff_Common_Dark_Hit.xml" attackMaterial="1" />
+					<range rangeType="cylinder" distance="600" height="150" applyTarget="1" />
+					<damage rate="15.07" effectHit="CH/Common/Eff_Common_Dark_Hit.xml" attackMaterial="1" />
 					<actionAdditional additionalID="120010011" level="7" skillTarget="2" skillOwner="1" />
 				</attack>
 			</motion>
 		</level>
 		<level value="8">
-			<push back="450" />
-			<motion>
-				<motionProperty holdWeapon="0" />
+			<motion holdWeapon="0">
 				<attack point="p0" targetCount="10" attacktype="3" hitImmuneBreak="5" unrideOnHit="1">
-					<rangeProperty rangeType="cylinder" distance="600" height="150" applyTarget="1" />
-					<damageProperty rate="18.27" effectHit="CH/Common/Eff_Common_Dark_Hit.xml" attackMaterial="1" />
+					<range rangeType="cylinder" distance="600" height="150" applyTarget="1" />
+					<damage rate="18.27" effectHit="CH/Common/Eff_Common_Dark_Hit.xml" attackMaterial="1" />
 					<actionAdditional additionalID="120010011" level="8" skillTarget="2" skillOwner="1" />
 				</attack>
 			</motion>
 		</level>
 		<level value="9">
-			<push back="450" />
-			<motion>
-				<motionProperty holdWeapon="0" />
+			<motion holdWeapon="0">
 				<attack point="p0" targetCount="10" attacktype="3" hitImmuneBreak="5" unrideOnHit="1">
-					<rangeProperty rangeType="cylinder" distance="600" height="150" applyTarget="1" />
-					<damageProperty rate="22.38" effectHit="CH/Common/Eff_Common_Dark_Hit.xml" attackMaterial="1" />
+					<range rangeType="cylinder" distance="600" height="150" applyTarget="1" />
+					<damage rate="22.38" effectHit="CH/Common/Eff_Common_Dark_Hit.xml" attackMaterial="1" />
 					<actionAdditional additionalID="120010011" level="9" skillTarget="2" skillOwner="1" />
 				</attack>
 			</motion>
 		</level>
 		<level value="10">
-			<push back="450" />
-			<motion>
-				<motionProperty holdWeapon="0" />
+			<motion holdWeapon="0">
 				<attack point="p0" targetCount="10" attacktype="3" hitImmuneBreak="5" unrideOnHit="1">
-					<rangeProperty rangeType="cylinder" distance="600" height="150" applyTarget="1" />
-					<damageProperty rate="27.41" effectHit="CH/Common/Eff_Common_Dark_Hit.xml" attackMaterial="1" />
+					<range rangeType="cylinder" distance="600" height="150" applyTarget="1" />
+					<damage rate="27.41" effectHit="CH/Common/Eff_Common_Dark_Hit.xml" attackMaterial="1" />
 					<actionAdditional additionalID="120010011" level="10" skillTarget="2" skillOwner="1" />
 				</attack>
 			</motion>
 		</level>
 	</skill>
-	<skill id="120010012" comment="소비 아이템">
-		<basic mainType="2">
+	<skill id="120010012" comment="월광 베기 : 레드 라펜샤드 스플래쉬">
+		<basic mainType="30">
 			<kinds groupType="2" unrideOnUse="1" />
 			<stateAttr keyIsDown="1" />
 		</basic>
 		<level value="1">
-			<motion>
-				<motionProperty splashInvokeEffect="Item/LapenShard/Eff_LapenShard_Bliche_SplashInvoke_01.xml" holdWeapon="0" />
+			<motion splashInvokeEffect="Item/LapenShard/Eff_LapenShard_Bliche_SplashInvoke_01.xml" holdWeapon="0">
 				<attack point="p0" targetCount="1">
-					<rangeProperty rangeType="cylinder" distance="600" height="150" applyTarget="1" />
-					<damageProperty count="0" />
+					<range rangeType="cylinder" distance="600" height="150" applyTarget="1" />
+					<damage count="0" />
 				</attack>
 			</motion>
 		</level>
 	</skill>
-	<skill id="120010020" comment="소비 아이템">
-		<basic mainType="2">
+	<skill id="120010020" comment="라펜샤드">
+		<basic mainType="2" param1="41000070">
 			<ui icon="./Data/Resource/Image/item/icon/41000061.png" attackType="3" />
 			<kinds groupType="2" unrideOnUse="1" />
 			<stateAttr autoTargeting="0" keyIsDown="1" />
+			<condition useCoolDownShowUI="1" />
 		</basic>
-		<level value="1">
-			<beginCondition cooldownTime="120" useCoolDownShowUI="1" />
-			<targetItem>
-				<item id="41000061" />
-			</targetItem>
-			<motion>
-				<motionProperty sequenceName="LapenShard_Gigantika_A" motionEffect="Item/LapenShard/Eff_LapenShard_Gigantika_Cast_01.xml" holdWeapon="0" />
+		<level value="1" cooldown="120000" stringParam="1027, 154">
+			<motion sequenceName="LapenShard_Gigantika_A" motionEffect="Item/LapenShard/Eff_LapenShard_Gigantika_Cast_01.xml" holdWeapon="0">
 				<attack point="p0" targetCount="1" cubeMagicPathID="1" attacktype="3" hitImmuneBreak="5" unrideOnHit="1">
-					<rangeProperty rangeType="cylinder" distance="150" height="150" includeCaster="1" applyTarget="2" />
-					<damageProperty count="0" />
+					<range rangeType="cylinder" distance="150" height="150" includeCaster="1" applyTarget="2" />
+					<damage count="0" />
 					<actionSkill skillID="120010021" level="1" useDirection="1" />
 					<actionSkill skillID="120010021" level="1" delay="100" fireCount="2" useDirection="1" />
 				</attack>
 			</motion>
 		</level>
-		<level value="2">
-			<beginCondition cooldownTime="120" useCoolDownShowUI="1" />
-			<targetItem>
-				<item id="41000062" />
-			</targetItem>
-			<motion>
-				<motionProperty sequenceName="LapenShard_Gigantika_A" motionEffect="Item/LapenShard/Eff_LapenShard_Gigantika_Cast_01.xml" holdWeapon="0" />
+		<level value="2" cooldown="120000" stringParam="1233, 185">
+			<motion sequenceName="LapenShard_Gigantika_A" motionEffect="Item/LapenShard/Eff_LapenShard_Gigantika_Cast_01.xml" holdWeapon="0">
 				<attack point="p0" targetCount="1" cubeMagicPathID="1" attacktype="3" hitImmuneBreak="5" unrideOnHit="1">
-					<rangeProperty rangeType="cylinder" distance="150" height="150" includeCaster="1" applyTarget="2" />
-					<damageProperty count="0" />
+					<range rangeType="cylinder" distance="150" height="150" includeCaster="1" applyTarget="2" />
+					<damage count="0" />
 					<actionSkill skillID="120010021" level="2" useDirection="1" />
 					<actionSkill skillID="120010021" level="2" delay="100" fireCount="2" useDirection="1" />
 				</attack>
 			</motion>
 		</level>
-		<level value="3">
-			<beginCondition cooldownTime="120" useCoolDownShowUI="1" />
-			<targetItem>
-				<item id="41000063" />
-			</targetItem>
-			<motion>
-				<motionProperty sequenceName="LapenShard_Gigantika_A" motionEffect="Item/LapenShard/Eff_LapenShard_Gigantika_Cast_01.xml" holdWeapon="0" />
+		<level value="3" cooldown="120000" stringParam="1541, 231">
+			<motion sequenceName="LapenShard_Gigantika_A" motionEffect="Item/LapenShard/Eff_LapenShard_Gigantika_Cast_01.xml" holdWeapon="0">
 				<attack point="p0" targetCount="1" cubeMagicPathID="1" attacktype="3" hitImmuneBreak="5" unrideOnHit="1">
-					<rangeProperty rangeType="cylinder" distance="150" height="150" includeCaster="1" applyTarget="2" />
-					<damageProperty count="0" />
+					<range rangeType="cylinder" distance="150" height="150" includeCaster="1" applyTarget="2" />
+					<damage count="0" />
 					<actionSkill skillID="120010021" level="3" useDirection="1" />
 					<actionSkill skillID="120010021" level="3" delay="100" fireCount="2" useDirection="1" />
 				</attack>
 			</motion>
 		</level>
-		<level value="4">
-			<beginCondition cooldownTime="120" useCoolDownShowUI="1" />
-			<targetItem>
-				<item id="41000064" />
-			</targetItem>
-			<motion>
-				<motionProperty sequenceName="LapenShard_Gigantika_A" motionEffect="Item/LapenShard/Eff_LapenShard_Gigantika_Cast_01.xml" holdWeapon="0" />
+		<level value="4" cooldown="120000" stringParam="1850, 277">
+			<motion sequenceName="LapenShard_Gigantika_A" motionEffect="Item/LapenShard/Eff_LapenShard_Gigantika_Cast_01.xml" holdWeapon="0">
 				<attack point="p0" targetCount="1" cubeMagicPathID="1" attacktype="3" hitImmuneBreak="5" unrideOnHit="1">
-					<rangeProperty rangeType="cylinder" distance="150" height="150" includeCaster="1" applyTarget="2" />
-					<damageProperty count="0" />
+					<range rangeType="cylinder" distance="150" height="150" includeCaster="1" applyTarget="2" />
+					<damage count="0" />
 					<actionSkill skillID="120010021" level="4" useDirection="1" />
 					<actionSkill skillID="120010021" level="4" delay="100" fireCount="2" useDirection="1" />
 				</attack>
 			</motion>
 		</level>
-		<level value="5">
-			<beginCondition cooldownTime="120" useCoolDownShowUI="1" />
-			<targetItem>
-				<item id="41000065" />
-			</targetItem>
-			<motion>
-				<motionProperty sequenceName="LapenShard_Gigantika_A" motionEffect="Item/LapenShard/Eff_LapenShard_Gigantika_Cast_01.xml" holdWeapon="0" />
+		<level value="5" cooldown="120000" stringParam="2261, 339">
+			<motion sequenceName="LapenShard_Gigantika_A" motionEffect="Item/LapenShard/Eff_LapenShard_Gigantika_Cast_01.xml" holdWeapon="0">
 				<attack point="p0" targetCount="1" cubeMagicPathID="1" attacktype="3" hitImmuneBreak="5" unrideOnHit="1">
-					<rangeProperty rangeType="cylinder" distance="150" height="150" includeCaster="1" applyTarget="2" />
-					<damageProperty count="0" />
+					<range rangeType="cylinder" distance="150" height="150" includeCaster="1" applyTarget="2" />
+					<damage count="0" />
 					<actionSkill skillID="120010021" level="5" useDirection="1" />
 					<actionSkill skillID="120010021" level="5" delay="100" fireCount="2" useDirection="1" />
 				</attack>
 			</motion>
 		</level>
-		<level value="6">
-			<beginCondition cooldownTime="120" useCoolDownShowUI="1" />
-			<targetItem>
-				<item id="41000066" />
-			</targetItem>
-			<motion>
-				<motionProperty sequenceName="LapenShard_Gigantika_A" motionEffect="Item/LapenShard/Eff_LapenShard_Gigantika_Cast_01.xml" holdWeapon="0" />
+		<level value="6" cooldown="120000" stringParam="2775, 416">
+			<motion sequenceName="LapenShard_Gigantika_A" motionEffect="Item/LapenShard/Eff_LapenShard_Gigantika_Cast_01.xml" holdWeapon="0">
 				<attack point="p0" targetCount="1" cubeMagicPathID="1" attacktype="3" hitImmuneBreak="5" unrideOnHit="1">
-					<rangeProperty rangeType="cylinder" distance="150" height="150" includeCaster="1" applyTarget="2" />
-					<damageProperty count="0" />
+					<range rangeType="cylinder" distance="150" height="150" includeCaster="1" applyTarget="2" />
+					<damage count="0" />
 					<actionSkill skillID="120010021" level="6" useDirection="1" />
 					<actionSkill skillID="120010021" level="6" delay="100" fireCount="2" useDirection="1" />
 				</attack>
 			</motion>
 		</level>
-		<level value="7">
-			<beginCondition cooldownTime="120" useCoolDownShowUI="1" />
-			<targetItem>
-				<item id="41000067" />
-			</targetItem>
-			<motion>
-				<motionProperty sequenceName="LapenShard_Gigantika_A" motionEffect="Item/LapenShard/Eff_LapenShard_Gigantika_Cast_01.xml" holdWeapon="0" />
+		<level value="7" cooldown="120000" stringParam="3391, 508">
+			<motion sequenceName="LapenShard_Gigantika_A" motionEffect="Item/LapenShard/Eff_LapenShard_Gigantika_Cast_01.xml" holdWeapon="0">
 				<attack point="p0" targetCount="1" cubeMagicPathID="1" attacktype="3" hitImmuneBreak="5" unrideOnHit="1">
-					<rangeProperty rangeType="cylinder" distance="150" height="150" includeCaster="1" applyTarget="2" />
-					<damageProperty count="0" />
+					<range rangeType="cylinder" distance="150" height="150" includeCaster="1" applyTarget="2" />
+					<damage count="0" />
 					<actionSkill skillID="120010021" level="7" useDirection="1" />
 					<actionSkill skillID="120010021" level="7" delay="100" fireCount="2" useDirection="1" />
 				</attack>
 			</motion>
 		</level>
-		<level value="8">
-			<beginCondition cooldownTime="120" useCoolDownShowUI="1" />
-			<targetItem>
-				<item id="41000068" />
-			</targetItem>
-			<motion>
-				<motionProperty sequenceName="LapenShard_Gigantika_A" motionEffect="Item/LapenShard/Eff_LapenShard_Gigantika_Cast_01.xml" holdWeapon="0" />
+		<level value="8" cooldown="120000" stringParam="4111, 616">
+			<motion sequenceName="LapenShard_Gigantika_A" motionEffect="Item/LapenShard/Eff_LapenShard_Gigantika_Cast_01.xml" holdWeapon="0">
 				<attack point="p0" targetCount="1" cubeMagicPathID="1" attacktype="3" hitImmuneBreak="5" unrideOnHit="1">
-					<rangeProperty rangeType="cylinder" distance="150" height="150" includeCaster="1" applyTarget="2" />
-					<damageProperty count="0" />
+					<range rangeType="cylinder" distance="150" height="150" includeCaster="1" applyTarget="2" />
+					<damage count="0" />
 					<actionSkill skillID="120010021" level="8" useDirection="1" />
 					<actionSkill skillID="120010021" level="8" delay="100" fireCount="2" useDirection="1" />
 				</attack>
 			</motion>
 		</level>
-		<level value="9">
-			<beginCondition cooldownTime="120" useCoolDownShowUI="1" />
-			<targetItem>
-				<item id="41000069" />
-			</targetItem>
-			<motion>
-				<motionProperty sequenceName="LapenShard_Gigantika_A" motionEffect="Item/LapenShard/Eff_LapenShard_Gigantika_Cast_01.xml" holdWeapon="0" />
+		<level value="9" cooldown="120000" stringParam="5036, 755">
+			<motion sequenceName="LapenShard_Gigantika_A" motionEffect="Item/LapenShard/Eff_LapenShard_Gigantika_Cast_01.xml" holdWeapon="0">
 				<attack point="p0" targetCount="1" cubeMagicPathID="1" attacktype="3" hitImmuneBreak="5" unrideOnHit="1">
-					<rangeProperty rangeType="cylinder" distance="150" height="150" includeCaster="1" applyTarget="2" />
-					<damageProperty count="0" />
+					<range rangeType="cylinder" distance="150" height="150" includeCaster="1" applyTarget="2" />
+					<damage count="0" />
 					<actionSkill skillID="120010021" level="9" useDirection="1" />
 					<actionSkill skillID="120010021" level="9" delay="100" fireCount="2" useDirection="1" />
 				</attack>
 			</motion>
 		</level>
-		<level value="10">
-			<beginCondition cooldownTime="120" useCoolDownShowUI="1" />
-			<targetItem>
-				<item id="41000070" />
-			</targetItem>
-			<motion>
-				<motionProperty sequenceName="LapenShard_Gigantika_A" motionEffect="Item/LapenShard/Eff_LapenShard_Gigantika_Cast_01.xml" holdWeapon="0" />
+		<level value="10" cooldown="120000" stringParam="6166, 925">
+			<motion sequenceName="LapenShard_Gigantika_A" motionEffect="Item/LapenShard/Eff_LapenShard_Gigantika_Cast_01.xml" holdWeapon="0">
 				<attack point="p0" targetCount="1" cubeMagicPathID="1" attacktype="3" hitImmuneBreak="5" unrideOnHit="1">
-					<rangeProperty rangeType="cylinder" distance="150" height="150" includeCaster="1" applyTarget="2" />
-					<damageProperty count="0" />
+					<range rangeType="cylinder" distance="150" height="150" includeCaster="1" applyTarget="2" />
+					<damage count="0" />
 					<actionSkill skillID="120010021" level="10" useDirection="1" />
 					<actionSkill skillID="120010021" level="10" delay="100" fireCount="2" useDirection="1" />
 				</attack>
 			</motion>
 		</level>
 	</skill>
-	<skill id="120010021" comment="소비 아이템">
-		<basic mainType="2">
+	<skill id="120010021" comment="기간틱 레이져 : 레드 라펜샤드 스플래쉬">
+		<basic mainType="30">
 			<ui icon="./Data/Resource/Image/item/icon/41000061.png" attackType="3" />
-			<kinds groupType="2" unrideOnUse="1" />
+			<kinds groupType="30" unrideOnUse="1" />
 			<stateAttr keyIsDown="1" />
+			<condition useCoolDownShowUI="1" />
 		</basic>
-		<level value="1">
-			<beginCondition cooldownTime="120" useCoolDownShowUI="1" />
-			<motion>
-				<motionProperty sequenceName="LapenShard_Gigantika_A" motionEffect="Item/LapenShard/Eff_LapenShard_Gigantika_Cast_01.xml" holdWeapon="0" />
+		<level value="1" cooldown="120000">
+			<motion sequenceName="LapenShard_Gigantika_A" motionEffect="Item/LapenShard/Eff_LapenShard_Gigantika_Cast_01.xml" holdWeapon="0">
 				<attack point="p0" targetCount="10" attacktype="3" hitImmuneBreak="5" unrideOnHit="1">
-					<rangeProperty rangeType="frustum" distance="900" height="150" width="300" endWidth="350" applyTarget="1" />
-					<damageProperty rate="10.27" effectHit="CH/Weapon/Orb/Eff_Orb_Hit_01.xml" />
+					<range rangeType="frustum" distance="900" height="150" width="300" endWidth="350" applyTarget="1" />
+					<damage rate="10.27" effectHit="CH/Weapon/Orb/Eff_Orb_Hit_01.xml" />
 					<actionAdditional additionalID="120010020" level="1" skillTarget="2" skillOwner="1" />
 				</attack>
 			</motion>
 		</level>
-		<level value="2">
-			<beginCondition cooldownTime="120" useCoolDownShowUI="1" />
-			<motion>
-				<motionProperty sequenceName="LapenShard_Gigantika_A" motionEffect="Item/LapenShard/Eff_LapenShard_Gigantika_Cast_01.xml" holdWeapon="0" />
+		<level value="2" cooldown="120000">
+			<motion sequenceName="LapenShard_Gigantika_A" motionEffect="Item/LapenShard/Eff_LapenShard_Gigantika_Cast_01.xml" holdWeapon="0">
 				<attack point="p0" targetCount="10" attacktype="3" hitImmuneBreak="5" unrideOnHit="1">
-					<rangeProperty rangeType="frustum" distance="900" height="150" width="300" endWidth="350" applyTarget="1" />
-					<damageProperty rate="12.33" effectHit="CH/Weapon/Orb/Eff_Orb_Hit_01.xml" />
+					<range rangeType="frustum" distance="900" height="150" width="300" endWidth="350" applyTarget="1" />
+					<damage rate="12.33" effectHit="CH/Weapon/Orb/Eff_Orb_Hit_01.xml" />
 					<actionAdditional additionalID="120010020" level="1" skillTarget="2" skillOwner="1" />
 				</attack>
 			</motion>
 		</level>
-		<level value="3">
-			<beginCondition cooldownTime="120" useCoolDownShowUI="1" />
-			<motion>
-				<motionProperty sequenceName="LapenShard_Gigantika_A" motionEffect="Item/LapenShard/Eff_LapenShard_Gigantika_Cast_01.xml" holdWeapon="0" />
+		<level value="3" cooldown="120000">
+			<motion sequenceName="LapenShard_Gigantika_A" motionEffect="Item/LapenShard/Eff_LapenShard_Gigantika_Cast_01.xml" holdWeapon="0">
 				<attack point="p0" targetCount="10" attacktype="3" hitImmuneBreak="5" unrideOnHit="1">
-					<rangeProperty rangeType="frustum" distance="900" height="150" width="300" endWidth="350" applyTarget="1" />
-					<damageProperty rate="15.41" effectHit="CH/Weapon/Orb/Eff_Orb_Hit_01.xml" />
+					<range rangeType="frustum" distance="900" height="150" width="300" endWidth="350" applyTarget="1" />
+					<damage rate="15.41" effectHit="CH/Weapon/Orb/Eff_Orb_Hit_01.xml" />
 					<actionAdditional additionalID="120010020" level="1" skillTarget="2" skillOwner="1" />
 				</attack>
 			</motion>
 		</level>
-		<level value="4">
-			<beginCondition cooldownTime="120" useCoolDownShowUI="1" />
-			<motion>
-				<motionProperty sequenceName="LapenShard_Gigantika_A" motionEffect="Item/LapenShard/Eff_LapenShard_Gigantika_Cast_01.xml" holdWeapon="0" />
+		<level value="4" cooldown="120000">
+			<motion sequenceName="LapenShard_Gigantika_A" motionEffect="Item/LapenShard/Eff_LapenShard_Gigantika_Cast_01.xml" holdWeapon="0">
 				<attack point="p0" targetCount="10" attacktype="3" hitImmuneBreak="5" unrideOnHit="1">
-					<rangeProperty rangeType="frustum" distance="900" height="150" width="300" endWidth="350" applyTarget="1" />
-					<damageProperty rate="18.5" effectHit="CH/Weapon/Orb/Eff_Orb_Hit_01.xml" />
+					<range rangeType="frustum" distance="900" height="150" width="300" endWidth="350" applyTarget="1" />
+					<damage rate="18.5" effectHit="CH/Weapon/Orb/Eff_Orb_Hit_01.xml" />
 					<actionAdditional additionalID="120010020" level="1" skillTarget="2" skillOwner="1" />
 				</attack>
 			</motion>
 		</level>
-		<level value="5">
-			<beginCondition cooldownTime="120" useCoolDownShowUI="1" />
-			<motion>
-				<motionProperty sequenceName="LapenShard_Gigantika_A" motionEffect="Item/LapenShard/Eff_LapenShard_Gigantika_Cast_01.xml" holdWeapon="0" />
+		<level value="5" cooldown="120000">
+			<motion sequenceName="LapenShard_Gigantika_A" motionEffect="Item/LapenShard/Eff_LapenShard_Gigantika_Cast_01.xml" holdWeapon="0">
 				<attack point="p0" targetCount="10" attacktype="3" hitImmuneBreak="5" unrideOnHit="1">
-					<rangeProperty rangeType="frustum" distance="900" height="150" width="300" endWidth="350" applyTarget="1" />
-					<damageProperty rate="22.61" effectHit="CH/Weapon/Orb/Eff_Orb_Hit_01.xml" />
+					<range rangeType="frustum" distance="900" height="150" width="300" endWidth="350" applyTarget="1" />
+					<damage rate="22.61" effectHit="CH/Weapon/Orb/Eff_Orb_Hit_01.xml" />
 					<actionAdditional additionalID="120010020" level="1" skillTarget="2" skillOwner="1" />
 				</attack>
 			</motion>
 		</level>
-		<level value="6">
-			<beginCondition cooldownTime="120" useCoolDownShowUI="1" />
-			<motion>
-				<motionProperty sequenceName="LapenShard_Gigantika_A" motionEffect="Item/LapenShard/Eff_LapenShard_Gigantika_Cast_01.xml" holdWeapon="0" />
+		<level value="6" cooldown="120000">
+			<motion sequenceName="LapenShard_Gigantika_A" motionEffect="Item/LapenShard/Eff_LapenShard_Gigantika_Cast_01.xml" holdWeapon="0">
 				<attack point="p0" targetCount="10" attacktype="3" hitImmuneBreak="5" unrideOnHit="1">
-					<rangeProperty rangeType="frustum" distance="900" height="150" width="300" endWidth="350" applyTarget="1" />
-					<damageProperty rate="27.75" effectHit="CH/Weapon/Orb/Eff_Orb_Hit_01.xml" />
+					<range rangeType="frustum" distance="900" height="150" width="300" endWidth="350" applyTarget="1" />
+					<damage rate="27.75" effectHit="CH/Weapon/Orb/Eff_Orb_Hit_01.xml" />
 					<actionAdditional additionalID="120010020" level="1" skillTarget="2" skillOwner="1" />
 				</attack>
 			</motion>
 		</level>
-		<level value="7">
-			<beginCondition cooldownTime="120" useCoolDownShowUI="1" />
-			<motion>
-				<motionProperty sequenceName="LapenShard_Gigantika_A" motionEffect="Item/LapenShard/Eff_LapenShard_Gigantika_Cast_01.xml" holdWeapon="0" />
+		<level value="7" cooldown="120000">
+			<motion sequenceName="LapenShard_Gigantika_A" motionEffect="Item/LapenShard/Eff_LapenShard_Gigantika_Cast_01.xml" holdWeapon="0">
 				<attack point="p0" targetCount="10" attacktype="3" hitImmuneBreak="5" unrideOnHit="1">
-					<rangeProperty rangeType="frustum" distance="900" height="150" width="300" endWidth="350" applyTarget="1" />
-					<damageProperty rate="33.91" effectHit="CH/Weapon/Orb/Eff_Orb_Hit_01.xml" />
+					<range rangeType="frustum" distance="900" height="150" width="300" endWidth="350" applyTarget="1" />
+					<damage rate="33.91" effectHit="CH/Weapon/Orb/Eff_Orb_Hit_01.xml" />
 					<actionAdditional additionalID="120010020" level="1" skillTarget="2" skillOwner="1" />
 				</attack>
 			</motion>
 		</level>
-		<level value="8">
-			<beginCondition cooldownTime="120" useCoolDownShowUI="1" />
-			<motion>
-				<motionProperty sequenceName="LapenShard_Gigantika_A" motionEffect="Item/LapenShard/Eff_LapenShard_Gigantika_Cast_01.xml" holdWeapon="0" />
+		<level value="8" cooldown="120000">
+			<motion sequenceName="LapenShard_Gigantika_A" motionEffect="Item/LapenShard/Eff_LapenShard_Gigantika_Cast_01.xml" holdWeapon="0">
 				<attack point="p0" targetCount="10" attacktype="3" hitImmuneBreak="5" unrideOnHit="1">
-					<rangeProperty rangeType="frustum" distance="900" height="150" width="300" endWidth="350" applyTarget="1" />
-					<damageProperty rate="41.11" effectHit="CH/Weapon/Orb/Eff_Orb_Hit_01.xml" />
+					<range rangeType="frustum" distance="900" height="150" width="300" endWidth="350" applyTarget="1" />
+					<damage rate="41.11" effectHit="CH/Weapon/Orb/Eff_Orb_Hit_01.xml" />
 					<actionAdditional additionalID="120010020" level="1" skillTarget="2" skillOwner="1" />
 				</attack>
 			</motion>
 		</level>
-		<level value="9">
-			<beginCondition cooldownTime="120" useCoolDownShowUI="1" />
-			<motion>
-				<motionProperty sequenceName="LapenShard_Gigantika_A" motionEffect="Item/LapenShard/Eff_LapenShard_Gigantika_Cast_01.xml" holdWeapon="0" />
+		<level value="9" cooldown="120000">
+			<motion sequenceName="LapenShard_Gigantika_A" motionEffect="Item/LapenShard/Eff_LapenShard_Gigantika_Cast_01.xml" holdWeapon="0">
 				<attack point="p0" targetCount="10" attacktype="3" hitImmuneBreak="5" unrideOnHit="1">
-					<rangeProperty rangeType="frustum" distance="900" height="150" width="300" endWidth="350" applyTarget="1" />
-					<damageProperty rate="50.36" effectHit="CH/Weapon/Orb/Eff_Orb_Hit_01.xml" />
+					<range rangeType="frustum" distance="900" height="150" width="300" endWidth="350" applyTarget="1" />
+					<damage rate="50.36" effectHit="CH/Weapon/Orb/Eff_Orb_Hit_01.xml" />
 					<actionAdditional additionalID="120010020" level="1" skillTarget="2" skillOwner="1" />
 				</attack>
 			</motion>
 		</level>
-		<level value="10">
-			<beginCondition cooldownTime="120" useCoolDownShowUI="1" />
-			<motion>
-				<motionProperty sequenceName="LapenShard_Gigantika_A" motionEffect="Item/LapenShard/Eff_LapenShard_Gigantika_Cast_01.xml" holdWeapon="0" />
+		<level value="10" cooldown="120000">
+			<motion sequenceName="LapenShard_Gigantika_A" motionEffect="Item/LapenShard/Eff_LapenShard_Gigantika_Cast_01.xml" holdWeapon="0">
 				<attack point="p0" targetCount="10" attacktype="3" hitImmuneBreak="5" unrideOnHit="1">
-					<rangeProperty rangeType="frustum" distance="900" height="150" width="300" endWidth="350" applyTarget="1" />
-					<damageProperty rate="61.66" effectHit="CH/Weapon/Orb/Eff_Orb_Hit_01.xml" />
+					<range rangeType="frustum" distance="900" height="150" width="300" endWidth="350" applyTarget="1" />
+					<damage rate="61.66" effectHit="CH/Weapon/Orb/Eff_Orb_Hit_01.xml" />
 					<actionAdditional additionalID="120010020" level="1" skillTarget="2" skillOwner="1" />
 				</attack>
 			</motion>
 		</level>
 	</skill>
 	<skill id="120020197" comment="소비 아이템">
-		<basic mainType="2">
+		<basic mainType="30">
 			<ui attackType="3" />
 			<kinds groupType="2" />
-			<stateAttr autoTargeting="0" />
 		</basic>
 		<level value="1">
 			<motion>
 				<attack point="p0" targetCount="1" magicPathID="120020197" cubeMagicPathID="1200201971" attacktype="3" attackMethodType="1" hitImmuneBreak="5">
-					<rangeProperty rangeType="cylinder" distance="900" height="150" applyTarget="1" />
-					<arrowProperty collision="500.000000,50.000000,50.000000" collisionAdd="0.000000,50.000000,0.000000" effect="NPC/Skill/Temp/Eff_Temp.xml" />
+					<range rangeType="cylinder" distance="900" height="150" applyTarget="1" />
+					<arrow collision="500,50,50" collisionAdd="0,50,0" effect="NPC/Skill/Temp/Eff_Temp.xml" />
 					<actionSkill skillID="120020198" level="1" interval="1000" useDirection="1" />
 				</attack>
 			</motion>
@@ -1620,8 +1153,8 @@
 		<level value="2">
 			<motion>
 				<attack point="p0" targetCount="1" magicPathID="120020197" cubeMagicPathID="1200201971" attacktype="3" attackMethodType="1" hitImmuneBreak="5">
-					<rangeProperty rangeType="cylinder" distance="900" height="150" applyTarget="1" />
-					<arrowProperty collision="50.000000,500.000000,50.000000" collisionAdd="0.000000,50.000000,0.000000" effect="NPC/Skill/Temp/Eff_Temp.xml" />
+					<range rangeType="cylinder" distance="900" height="150" applyTarget="1" />
+					<arrow collision="50,500,50" collisionAdd="0,50,0" effect="NPC/Skill/Temp/Eff_Temp.xml" />
 					<actionSkill skillID="120020198" level="2" interval="1000" useDirection="1" />
 				</attack>
 			</motion>
@@ -1629,8 +1162,8 @@
 		<level value="3">
 			<motion>
 				<attack point="p0" targetCount="1" magicPathID="120020197" cubeMagicPathID="1200201971" attacktype="3" attackMethodType="1" hitImmuneBreak="5">
-					<rangeProperty rangeType="cylinder" distance="900" height="150" applyTarget="1" />
-					<arrowProperty collision="50.000000,500.000000,50.000000" collisionAdd="0.000000,50.000000,0.000000" effect="NPC/Skill/Temp/Eff_Temp.xml" />
+					<range rangeType="cylinder" distance="900" height="150" applyTarget="1" />
+					<arrow collision="50,500,50" collisionAdd="0,50,0" effect="NPC/Skill/Temp/Eff_Temp.xml" />
 					<actionSkill skillID="120020198" level="3" interval="1000" useDirection="1" />
 				</attack>
 			</motion>
@@ -1638,8 +1171,8 @@
 		<level value="4">
 			<motion>
 				<attack point="p0" targetCount="1" magicPathID="120020197" cubeMagicPathID="1200201971" attacktype="3" attackMethodType="1" hitImmuneBreak="5">
-					<rangeProperty rangeType="cylinder" distance="900" height="150" applyTarget="1" />
-					<arrowProperty collision="50.000000,500.000000,50.000000" collisionAdd="0.000000,50.000000,0.000000" effect="NPC/Skill/Temp/Eff_Temp.xml" />
+					<range rangeType="cylinder" distance="900" height="150" applyTarget="1" />
+					<arrow collision="50,500,50" collisionAdd="0,50,0" effect="NPC/Skill/Temp/Eff_Temp.xml" />
 					<actionSkill skillID="120020198" level="4" interval="1000" useDirection="1" />
 				</attack>
 			</motion>
@@ -1647,8 +1180,8 @@
 		<level value="5">
 			<motion>
 				<attack point="p0" targetCount="1" magicPathID="120020197" cubeMagicPathID="1200201971" attacktype="3" attackMethodType="1" hitImmuneBreak="5">
-					<rangeProperty rangeType="cylinder" distance="900" height="150" applyTarget="1" />
-					<arrowProperty collision="50.000000,500.000000,50.000000" collisionAdd="0.000000,50.000000,0.000000" effect="NPC/Skill/Temp/Eff_Temp.xml" />
+					<range rangeType="cylinder" distance="900" height="150" applyTarget="1" />
+					<arrow collision="50,500,50" collisionAdd="0,50,0" effect="NPC/Skill/Temp/Eff_Temp.xml" />
 					<actionSkill skillID="120020198" level="5" interval="1000" useDirection="1" />
 				</attack>
 			</motion>
@@ -1656,8 +1189,8 @@
 		<level value="6">
 			<motion>
 				<attack point="p0" targetCount="1" magicPathID="120020197" cubeMagicPathID="1200201971" attacktype="3" attackMethodType="1" hitImmuneBreak="5">
-					<rangeProperty rangeType="cylinder" distance="900" height="150" applyTarget="1" />
-					<arrowProperty collision="50.000000,500.000000,50.000000" collisionAdd="0.000000,50.000000,0.000000" effect="NPC/Skill/Temp/Eff_Temp.xml" />
+					<range rangeType="cylinder" distance="900" height="150" applyTarget="1" />
+					<arrow collision="50,500,50" collisionAdd="0,50,0" effect="NPC/Skill/Temp/Eff_Temp.xml" />
 					<actionSkill skillID="120020198" level="6" interval="1000" useDirection="1" />
 				</attack>
 			</motion>
@@ -1665,8 +1198,8 @@
 		<level value="7">
 			<motion>
 				<attack point="p0" targetCount="1" magicPathID="120020197" cubeMagicPathID="1200201971" attacktype="3" attackMethodType="1" hitImmuneBreak="5">
-					<rangeProperty rangeType="cylinder" distance="900" height="150" applyTarget="1" />
-					<arrowProperty collision="50.000000,500.000000,50.000000" collisionAdd="0.000000,50.000000,0.000000" effect="NPC/Skill/Temp/Eff_Temp.xml" />
+					<range rangeType="cylinder" distance="900" height="150" applyTarget="1" />
+					<arrow collision="50,500,50" collisionAdd="0,50,0" effect="NPC/Skill/Temp/Eff_Temp.xml" />
 					<actionSkill skillID="120020198" level="7" interval="1000" useDirection="1" />
 				</attack>
 			</motion>
@@ -1674,8 +1207,8 @@
 		<level value="8">
 			<motion>
 				<attack point="p0" targetCount="1" magicPathID="120020197" cubeMagicPathID="1200201971" attacktype="3" attackMethodType="1" hitImmuneBreak="5">
-					<rangeProperty rangeType="cylinder" distance="900" height="150" applyTarget="1" />
-					<arrowProperty collision="50.000000,500.000000,50.000000" collisionAdd="0.000000,50.000000,0.000000" effect="NPC/Skill/Temp/Eff_Temp.xml" />
+					<range rangeType="cylinder" distance="900" height="150" applyTarget="1" />
+					<arrow collision="50,500,50" collisionAdd="0,50,0" effect="NPC/Skill/Temp/Eff_Temp.xml" />
 					<actionSkill skillID="120020198" level="8" interval="1000" useDirection="1" />
 				</attack>
 			</motion>
@@ -1683,8 +1216,8 @@
 		<level value="9">
 			<motion>
 				<attack point="p0" targetCount="1" magicPathID="120020197" cubeMagicPathID="1200201971" attacktype="3" attackMethodType="1" hitImmuneBreak="5">
-					<rangeProperty rangeType="cylinder" distance="900" height="150" applyTarget="1" />
-					<arrowProperty collision="50.000000,500.000000,50.000000" collisionAdd="0.000000,50.000000,0.000000" effect="NPC/Skill/Temp/Eff_Temp.xml" />
+					<range rangeType="cylinder" distance="900" height="150" applyTarget="1" />
+					<arrow collision="50,500,50" collisionAdd="0,50,0" effect="NPC/Skill/Temp/Eff_Temp.xml" />
 					<actionSkill skillID="120020198" level="9" interval="1000" useDirection="1" />
 				</attack>
 			</motion>
@@ -1692,228 +1225,207 @@
 		<level value="10">
 			<motion>
 				<attack point="p0" targetCount="1" magicPathID="120020197" cubeMagicPathID="1200201971" attacktype="3" attackMethodType="1" hitImmuneBreak="5">
-					<rangeProperty rangeType="cylinder" distance="900" height="150" applyTarget="1" />
-					<arrowProperty collision="50.000000,500.000000,50.000000" collisionAdd="0.000000,50.000000,0.000000" effect="NPC/Skill/Temp/Eff_Temp.xml" />
+					<range rangeType="cylinder" distance="900" height="150" applyTarget="1" />
+					<arrow collision="50,500,50" collisionAdd="0,50,0" effect="NPC/Skill/Temp/Eff_Temp.xml" />
 					<actionSkill skillID="120020198" level="10" interval="1000" useDirection="1" />
 				</attack>
 			</motion>
 		</level>
 	</skill>
 	<skill id="120020198" comment="소비 아이템">
-		<basic mainType="2">
+		<basic mainType="30">
 			<ui attackType="3" />
 			<kinds groupType="2" unrideOnUse="1" />
-			<stateAttr autoTargeting="0" keyIsDown="1" />
+			<stateAttr keyIsDown="1" />
 		</basic>
 		<level value="1">
-			<motion>
-				<motionProperty motionEffect="Item/LapenShard/Eff_LapenShard_MagicOfDestruction_SplashCast_01.xml" splashInvokeEffect="Item/LapenShard/Eff_LapenShard_MagicOfDestruction_SplashInvoke_01.xml" holdWeapon="0" />
+			<motion motionEffect="Item/LapenShard/Eff_LapenShard_MagicOfDestruction_SplashCast_01.xml" splashInvokeEffect="Item/LapenShard/Eff_LapenShard_MagicOfDestruction_SplashInvoke_01.xml" holdWeapon="0">
 				<attack point="p0" targetCount="10" attacktype="3" hitImmuneBreak="5">
-					<rangeProperty rangeType="cylinder" distance="300" height="150" applyTarget="1" />
-					<damageProperty count="3" rate="2.56" />
+					<range rangeType="cylinder" distance="300" height="150" applyTarget="1" />
+					<damage count="3" rate="2.56" />
 					<actionAdditional additionalID="120020198" level="1" skillTarget="2" skillOwner="1" dependOnDamageCount="1" />
 				</attack>
 			</motion>
 		</level>
 		<level value="2">
-			<motion>
-				<motionProperty motionEffect="Item/LapenShard/Eff_LapenShard_MagicOfDestruction_SplashCast_01.xml" splashInvokeEffect="Item/LapenShard/Eff_LapenShard_MagicOfDestruction_SplashInvoke_01.xml" holdWeapon="0" />
+			<motion motionEffect="Item/LapenShard/Eff_LapenShard_MagicOfDestruction_SplashCast_01.xml" splashInvokeEffect="Item/LapenShard/Eff_LapenShard_MagicOfDestruction_SplashInvoke_01.xml" holdWeapon="0">
 				<attack point="p0" targetCount="10" attacktype="3" hitImmuneBreak="5">
-					<rangeProperty rangeType="cylinder" distance="300" height="150" applyTarget="1" />
-					<damageProperty count="3" rate="3.07" />
+					<range rangeType="cylinder" distance="300" height="150" applyTarget="1" />
+					<damage count="3" rate="3.07" />
 					<actionAdditional additionalID="120020198" level="1" skillTarget="2" skillOwner="1" dependOnDamageCount="1" />
 				</attack>
 			</motion>
 		</level>
 		<level value="3">
-			<motion>
-				<motionProperty motionEffect="Item/LapenShard/Eff_LapenShard_MagicOfDestruction_SplashCast_01.xml" splashInvokeEffect="Item/LapenShard/Eff_LapenShard_MagicOfDestruction_SplashInvoke_01.xml" holdWeapon="0" />
+			<motion motionEffect="Item/LapenShard/Eff_LapenShard_MagicOfDestruction_SplashCast_01.xml" splashInvokeEffect="Item/LapenShard/Eff_LapenShard_MagicOfDestruction_SplashInvoke_01.xml" holdWeapon="0">
 				<attack point="p0" targetCount="10" attacktype="3" hitImmuneBreak="5">
-					<rangeProperty rangeType="cylinder" distance="300" height="150" applyTarget="1" />
-					<damageProperty count="3" rate="3.85" />
+					<range rangeType="cylinder" distance="300" height="150" applyTarget="1" />
+					<damage count="3" rate="3.85" />
 					<actionAdditional additionalID="120020198" level="1" skillTarget="2" skillOwner="1" dependOnDamageCount="1" />
 				</attack>
 			</motion>
 		</level>
 		<level value="4">
-			<motion>
-				<motionProperty motionEffect="Item/LapenShard/Eff_LapenShard_MagicOfDestruction_SplashCast_01.xml" splashInvokeEffect="Item/LapenShard/Eff_LapenShard_MagicOfDestruction_SplashInvoke_01.xml" holdWeapon="0" />
+			<motion motionEffect="Item/LapenShard/Eff_LapenShard_MagicOfDestruction_SplashCast_01.xml" splashInvokeEffect="Item/LapenShard/Eff_LapenShard_MagicOfDestruction_SplashInvoke_01.xml" holdWeapon="0">
 				<attack point="p0" targetCount="10" attacktype="3" hitImmuneBreak="5">
-					<rangeProperty rangeType="cylinder" distance="300" height="150" applyTarget="1" />
-					<damageProperty count="3" rate="4.62" />
+					<range rangeType="cylinder" distance="300" height="150" applyTarget="1" />
+					<damage count="3" rate="4.62" />
 					<actionAdditional additionalID="120020198" level="1" skillTarget="2" skillOwner="1" dependOnDamageCount="1" />
 				</attack>
 			</motion>
 		</level>
 		<level value="5">
-			<motion>
-				<motionProperty motionEffect="Item/LapenShard/Eff_LapenShard_MagicOfDestruction_SplashCast_01.xml" splashInvokeEffect="Item/LapenShard/Eff_LapenShard_MagicOfDestruction_SplashInvoke_01.xml" holdWeapon="0" />
+			<motion motionEffect="Item/LapenShard/Eff_LapenShard_MagicOfDestruction_SplashCast_01.xml" splashInvokeEffect="Item/LapenShard/Eff_LapenShard_MagicOfDestruction_SplashInvoke_01.xml" holdWeapon="0">
 				<attack point="p0" targetCount="10" attacktype="3" hitImmuneBreak="5">
-					<rangeProperty rangeType="cylinder" distance="300" height="150" applyTarget="1" />
-					<damageProperty count="3" rate="5.64" />
+					<range rangeType="cylinder" distance="300" height="150" applyTarget="1" />
+					<damage count="3" rate="5.64" />
 					<actionAdditional additionalID="120020198" level="1" skillTarget="2" skillOwner="1" dependOnDamageCount="1" />
 				</attack>
 			</motion>
 		</level>
 		<level value="6">
-			<motion>
-				<motionProperty motionEffect="Item/LapenShard/Eff_LapenShard_MagicOfDestruction_SplashCast_01.xml" splashInvokeEffect="Item/LapenShard/Eff_LapenShard_MagicOfDestruction_SplashInvoke_01.xml" holdWeapon="0" />
+			<motion motionEffect="Item/LapenShard/Eff_LapenShard_MagicOfDestruction_SplashCast_01.xml" splashInvokeEffect="Item/LapenShard/Eff_LapenShard_MagicOfDestruction_SplashInvoke_01.xml" holdWeapon="0">
 				<attack point="p0" targetCount="10" attacktype="3" hitImmuneBreak="5">
-					<rangeProperty rangeType="cylinder" distance="300" height="150" applyTarget="1" />
-					<damageProperty count="3" rate="6.92" />
+					<range rangeType="cylinder" distance="300" height="150" applyTarget="1" />
+					<damage count="3" rate="6.92" />
 					<actionAdditional additionalID="120020198" level="1" skillTarget="2" skillOwner="1" dependOnDamageCount="1" />
 				</attack>
 			</motion>
 		</level>
 		<level value="7">
-			<motion>
-				<motionProperty motionEffect="Item/LapenShard/Eff_LapenShard_MagicOfDestruction_SplashCast_01.xml" splashInvokeEffect="Item/LapenShard/Eff_LapenShard_MagicOfDestruction_SplashInvoke_01.xml" holdWeapon="0" />
+			<motion motionEffect="Item/LapenShard/Eff_LapenShard_MagicOfDestruction_SplashCast_01.xml" splashInvokeEffect="Item/LapenShard/Eff_LapenShard_MagicOfDestruction_SplashInvoke_01.xml" holdWeapon="0">
 				<attack point="p0" targetCount="10" attacktype="3" hitImmuneBreak="5">
-					<rangeProperty rangeType="cylinder" distance="300" height="150" applyTarget="1" />
-					<damageProperty count="3" rate="8.46" />
+					<range rangeType="cylinder" distance="300" height="150" applyTarget="1" />
+					<damage count="3" rate="8.46" />
 					<actionAdditional additionalID="120020198" level="1" skillTarget="2" skillOwner="1" dependOnDamageCount="1" />
 				</attack>
 			</motion>
 		</level>
 		<level value="8">
-			<motion>
-				<motionProperty motionEffect="Item/LapenShard/Eff_LapenShard_MagicOfDestruction_SplashCast_01.xml" splashInvokeEffect="Item/LapenShard/Eff_LapenShard_MagicOfDestruction_SplashInvoke_01.xml" holdWeapon="0" />
+			<motion motionEffect="Item/LapenShard/Eff_LapenShard_MagicOfDestruction_SplashCast_01.xml" splashInvokeEffect="Item/LapenShard/Eff_LapenShard_MagicOfDestruction_SplashInvoke_01.xml" holdWeapon="0">
 				<attack point="p0" targetCount="10" attacktype="3" hitImmuneBreak="5">
-					<rangeProperty rangeType="cylinder" distance="300" height="150" applyTarget="1" />
-					<damageProperty count="3" rate="10.26" />
+					<range rangeType="cylinder" distance="300" height="150" applyTarget="1" />
+					<damage count="3" rate="10.26" />
 					<actionAdditional additionalID="120020198" level="1" skillTarget="2" skillOwner="1" dependOnDamageCount="1" />
 				</attack>
 			</motion>
 		</level>
 		<level value="9">
-			<motion>
-				<motionProperty motionEffect="Item/LapenShard/Eff_LapenShard_MagicOfDestruction_SplashCast_01.xml" splashInvokeEffect="Item/LapenShard/Eff_LapenShard_MagicOfDestruction_SplashInvoke_01.xml" holdWeapon="0" />
+			<motion motionEffect="Item/LapenShard/Eff_LapenShard_MagicOfDestruction_SplashCast_01.xml" splashInvokeEffect="Item/LapenShard/Eff_LapenShard_MagicOfDestruction_SplashInvoke_01.xml" holdWeapon="0">
 				<attack point="p0" targetCount="10" attacktype="3" hitImmuneBreak="5">
-					<rangeProperty rangeType="cylinder" distance="300" height="150" applyTarget="1" />
-					<damageProperty count="3" rate="12.57" />
+					<range rangeType="cylinder" distance="300" height="150" applyTarget="1" />
+					<damage count="3" rate="12.57" />
 					<actionAdditional additionalID="120020198" level="1" skillTarget="2" skillOwner="1" dependOnDamageCount="1" />
 				</attack>
 			</motion>
 		</level>
 		<level value="10">
-			<motion>
-				<motionProperty motionEffect="Item/LapenShard/Eff_LapenShard_MagicOfDestruction_SplashCast_01.xml" splashInvokeEffect="Item/LapenShard/Eff_LapenShard_MagicOfDestruction_SplashInvoke_01.xml" holdWeapon="0" />
+			<motion motionEffect="Item/LapenShard/Eff_LapenShard_MagicOfDestruction_SplashCast_01.xml" splashInvokeEffect="Item/LapenShard/Eff_LapenShard_MagicOfDestruction_SplashInvoke_01.xml" holdWeapon="0">
 				<attack point="p0" targetCount="10" attacktype="3" hitImmuneBreak="5">
-					<rangeProperty rangeType="cylinder" distance="300" height="150" applyTarget="1" />
-					<damageProperty count="3" rate="15.39" />
+					<range rangeType="cylinder" distance="300" height="150" applyTarget="1" />
+					<damage count="3" rate="15.39" />
 					<actionAdditional additionalID="120020198" level="1" skillTarget="2" skillOwner="1" dependOnDamageCount="1" />
 				</attack>
 			</motion>
 		</level>
 	</skill>
 	<skill id="120020220" comment="소비 아이템">
-		<basic mainType="2">
+		<basic mainType="30">
 			<ui attackType="3" />
 			<kinds groupType="2" unrideOnUse="1" />
-			<stateAttr autoTargeting="0" keyIsDown="1" />
+			<stateAttr keyIsDown="1" />
 		</basic>
 		<level value="1">
-			<motion>
-				<motionProperty holdWeapon="0" />
+			<motion holdWeapon="0">
 				<attack point="p0" targetCount="10" attacktype="3" hitImmuneBreak="5">
-					<rangeProperty rangeType="cylinder" distance="200" height="150" applyTarget="1" />
-					<damageProperty rate="0.17" />
+					<range rangeType="cylinder" distance="200" height="150" applyTarget="1" />
+					<damage rate="0.17" />
 				</attack>
 			</motion>
 		</level>
 		<level value="2">
-			<motion>
-				<motionProperty holdWeapon="0" />
+			<motion holdWeapon="0">
 				<attack point="p0" targetCount="10" attacktype="3" hitImmuneBreak="5">
-					<rangeProperty rangeType="cylinder" distance="200" height="150" applyTarget="1" />
-					<damageProperty rate="0.21" />
+					<range rangeType="cylinder" distance="200" height="150" applyTarget="1" />
+					<damage rate="0.21" />
 				</attack>
 			</motion>
 		</level>
 		<level value="3">
-			<motion>
-				<motionProperty holdWeapon="0" />
+			<motion holdWeapon="0">
 				<attack point="p0" targetCount="10" attacktype="3" hitImmuneBreak="5">
-					<rangeProperty rangeType="cylinder" distance="200" height="150" applyTarget="1" />
-					<damageProperty rate="0.26" />
+					<range rangeType="cylinder" distance="200" height="150" applyTarget="1" />
+					<damage rate="0.26" />
 				</attack>
 			</motion>
 		</level>
 		<level value="4">
-			<motion>
-				<motionProperty holdWeapon="0" />
+			<motion holdWeapon="0">
 				<attack point="p0" targetCount="10" attacktype="3" hitImmuneBreak="5">
-					<rangeProperty rangeType="cylinder" distance="200" height="150" applyTarget="1" />
-					<damageProperty rate="0.31" />
+					<range rangeType="cylinder" distance="200" height="150" applyTarget="1" />
+					<damage rate="0.31" />
 				</attack>
 			</motion>
 		</level>
 		<level value="5">
-			<motion>
-				<motionProperty holdWeapon="0" />
+			<motion holdWeapon="0">
 				<attack point="p0" targetCount="10" attacktype="3" hitImmuneBreak="5">
-					<rangeProperty rangeType="cylinder" distance="200" height="150" applyTarget="1" />
-					<damageProperty rate="0.38" />
+					<range rangeType="cylinder" distance="200" height="150" applyTarget="1" />
+					<damage rate="0.38" />
 				</attack>
 			</motion>
 		</level>
 		<level value="6">
-			<motion>
-				<motionProperty holdWeapon="0" />
+			<motion holdWeapon="0">
 				<attack point="p0" targetCount="10" attacktype="3" hitImmuneBreak="5">
-					<rangeProperty rangeType="cylinder" distance="200" height="150" applyTarget="1" />
-					<damageProperty rate="0.46" />
+					<range rangeType="cylinder" distance="200" height="150" applyTarget="1" />
+					<damage rate="0.46" />
 				</attack>
 			</motion>
 		</level>
 		<level value="7">
-			<motion>
-				<motionProperty holdWeapon="0" />
+			<motion holdWeapon="0">
 				<attack point="p0" targetCount="10" attacktype="3" hitImmuneBreak="5">
-					<rangeProperty rangeType="cylinder" distance="200" height="150" applyTarget="1" />
-					<damageProperty rate="0.57" />
+					<range rangeType="cylinder" distance="200" height="150" applyTarget="1" />
+					<damage rate="0.57" />
 				</attack>
 			</motion>
 		</level>
 		<level value="8">
-			<motion>
-				<motionProperty holdWeapon="0" />
+			<motion holdWeapon="0">
 				<attack point="p0" targetCount="10" attacktype="3" hitImmuneBreak="5">
-					<rangeProperty rangeType="cylinder" distance="200" height="150" applyTarget="1" />
-					<damageProperty rate="0.69" />
+					<range rangeType="cylinder" distance="200" height="150" applyTarget="1" />
+					<damage rate="0.69" />
 				</attack>
 			</motion>
 		</level>
 		<level value="9">
-			<motion>
-				<motionProperty holdWeapon="0" />
+			<motion holdWeapon="0">
 				<attack point="p0" targetCount="10" attacktype="3" hitImmuneBreak="5">
-					<rangeProperty rangeType="cylinder" distance="200" height="150" applyTarget="1" />
-					<damageProperty rate="0.84" />
+					<range rangeType="cylinder" distance="200" height="150" applyTarget="1" />
+					<damage rate="0.84" />
 				</attack>
 			</motion>
 		</level>
 		<level value="10">
-			<motion>
-				<motionProperty holdWeapon="0" />
+			<motion holdWeapon="0">
 				<attack point="p0" targetCount="10" attacktype="3" hitImmuneBreak="5">
-					<rangeProperty rangeType="cylinder" distance="200" height="150" applyTarget="1" />
-					<damageProperty rate="1.03" />
+					<range rangeType="cylinder" distance="200" height="150" applyTarget="1" />
+					<damage rate="1.03" />
 				</attack>
 			</motion>
 		</level>
 	</skill>
 	<skill id="120030040" comment="소비 아이템">
-		<basic mainType="2">
+		<basic mainType="30">
 			<ui attackType="3" />
 			<kinds groupType="2" />
-			<stateAttr autoTargeting="0" />
 		</basic>
 		<level value="1">
 			<motion>
 				<attack point="p0" targetCount="1" cubeMagicPathID="1200300401" attacktype="3" attackMethodType="1" hitImmuneBreak="5">
-					<rangeProperty rangeType="cylinder" distance="900" height="150" applyTarget="1" />
-					<arrowProperty nonTarget="1" effect="NPC/Skill/Temp/Eff_Temp.xml" />
+					<range rangeType="cylinder" distance="900" height="150" applyTarget="1" />
+					<arrow nonTarget="1" effect="NPC/Skill/Temp/Eff_Temp.xml" />
 					<actionSkill skillID="120030041" level="1" interval="10000" useDirection="1" onlySensingActive="1" />
 				</attack>
 			</motion>
@@ -1921,8 +1433,8 @@
 		<level value="2">
 			<motion>
 				<attack point="p0" targetCount="1" cubeMagicPathID="1200300401" attacktype="3" attackMethodType="1" hitImmuneBreak="5">
-					<rangeProperty rangeType="cylinder" distance="900" height="150" applyTarget="1" />
-					<arrowProperty nonTarget="1" effect="NPC/Skill/Temp/Eff_Temp.xml" />
+					<range rangeType="cylinder" distance="900" height="150" applyTarget="1" />
+					<arrow nonTarget="1" effect="NPC/Skill/Temp/Eff_Temp.xml" />
 					<actionSkill skillID="120030041" level="2" interval="10000" useDirection="1" onlySensingActive="1" />
 				</attack>
 			</motion>
@@ -1930,8 +1442,8 @@
 		<level value="3">
 			<motion>
 				<attack point="p0" targetCount="1" cubeMagicPathID="1200300401" attacktype="3" attackMethodType="1" hitImmuneBreak="5">
-					<rangeProperty rangeType="cylinder" distance="900" height="150" applyTarget="1" />
-					<arrowProperty nonTarget="1" effect="NPC/Skill/Temp/Eff_Temp.xml" />
+					<range rangeType="cylinder" distance="900" height="150" applyTarget="1" />
+					<arrow nonTarget="1" effect="NPC/Skill/Temp/Eff_Temp.xml" />
 					<actionSkill skillID="120030041" level="3" interval="10000" useDirection="1" onlySensingActive="1" />
 				</attack>
 			</motion>
@@ -1939,8 +1451,8 @@
 		<level value="4">
 			<motion>
 				<attack point="p0" targetCount="1" cubeMagicPathID="1200300401" attacktype="3" attackMethodType="1" hitImmuneBreak="5">
-					<rangeProperty rangeType="cylinder" distance="900" height="150" applyTarget="1" />
-					<arrowProperty nonTarget="1" effect="NPC/Skill/Temp/Eff_Temp.xml" />
+					<range rangeType="cylinder" distance="900" height="150" applyTarget="1" />
+					<arrow nonTarget="1" effect="NPC/Skill/Temp/Eff_Temp.xml" />
 					<actionSkill skillID="120030041" level="4" interval="10000" useDirection="1" onlySensingActive="1" />
 				</attack>
 			</motion>
@@ -1948,8 +1460,8 @@
 		<level value="5">
 			<motion>
 				<attack point="p0" targetCount="1" cubeMagicPathID="1200300401" attacktype="3" attackMethodType="1" hitImmuneBreak="5">
-					<rangeProperty rangeType="cylinder" distance="900" height="150" applyTarget="1" />
-					<arrowProperty nonTarget="1" effect="NPC/Skill/Temp/Eff_Temp.xml" />
+					<range rangeType="cylinder" distance="900" height="150" applyTarget="1" />
+					<arrow nonTarget="1" effect="NPC/Skill/Temp/Eff_Temp.xml" />
 					<actionSkill skillID="120030041" level="5" interval="10000" useDirection="1" onlySensingActive="1" />
 				</attack>
 			</motion>
@@ -1957,8 +1469,8 @@
 		<level value="6">
 			<motion>
 				<attack point="p0" targetCount="1" cubeMagicPathID="1200300401" attacktype="3" attackMethodType="1" hitImmuneBreak="5">
-					<rangeProperty rangeType="cylinder" distance="900" height="150" applyTarget="1" />
-					<arrowProperty nonTarget="1" effect="NPC/Skill/Temp/Eff_Temp.xml" />
+					<range rangeType="cylinder" distance="900" height="150" applyTarget="1" />
+					<arrow nonTarget="1" effect="NPC/Skill/Temp/Eff_Temp.xml" />
 					<actionSkill skillID="120030041" level="6" interval="10000" useDirection="1" onlySensingActive="1" />
 				</attack>
 			</motion>
@@ -1966,8 +1478,8 @@
 		<level value="7">
 			<motion>
 				<attack point="p0" targetCount="1" cubeMagicPathID="1200300401" attacktype="3" attackMethodType="1" hitImmuneBreak="5">
-					<rangeProperty rangeType="cylinder" distance="900" height="150" applyTarget="1" />
-					<arrowProperty nonTarget="1" effect="NPC/Skill/Temp/Eff_Temp.xml" />
+					<range rangeType="cylinder" distance="900" height="150" applyTarget="1" />
+					<arrow nonTarget="1" effect="NPC/Skill/Temp/Eff_Temp.xml" />
 					<actionSkill skillID="120030041" level="7" interval="10000" useDirection="1" onlySensingActive="1" />
 				</attack>
 			</motion>
@@ -1975,8 +1487,8 @@
 		<level value="8">
 			<motion>
 				<attack point="p0" targetCount="1" cubeMagicPathID="1200300401" attacktype="3" attackMethodType="1" hitImmuneBreak="5">
-					<rangeProperty rangeType="cylinder" distance="900" height="150" applyTarget="1" />
-					<arrowProperty nonTarget="1" effect="NPC/Skill/Temp/Eff_Temp.xml" />
+					<range rangeType="cylinder" distance="900" height="150" applyTarget="1" />
+					<arrow nonTarget="1" effect="NPC/Skill/Temp/Eff_Temp.xml" />
 					<actionSkill skillID="120030041" level="8" interval="10000" useDirection="1" onlySensingActive="1" />
 				</attack>
 			</motion>
@@ -1984,8 +1496,8 @@
 		<level value="9">
 			<motion>
 				<attack point="p0" targetCount="1" cubeMagicPathID="1200300401" attacktype="3" attackMethodType="1" hitImmuneBreak="5">
-					<rangeProperty rangeType="cylinder" distance="900" height="150" applyTarget="1" />
-					<arrowProperty nonTarget="1" effect="NPC/Skill/Temp/Eff_Temp.xml" />
+					<range rangeType="cylinder" distance="900" height="150" applyTarget="1" />
+					<arrow nonTarget="1" effect="NPC/Skill/Temp/Eff_Temp.xml" />
 					<actionSkill skillID="120030041" level="9" interval="10000" useDirection="1" onlySensingActive="1" />
 				</attack>
 			</motion>
@@ -1993,134 +1505,115 @@
 		<level value="10">
 			<motion>
 				<attack point="p0" targetCount="1" cubeMagicPathID="1200300401" attacktype="3" attackMethodType="1" hitImmuneBreak="5">
-					<rangeProperty rangeType="cylinder" distance="900" height="150" applyTarget="1" />
-					<arrowProperty nonTarget="1" effect="NPC/Skill/Temp/Eff_Temp.xml" />
+					<range rangeType="cylinder" distance="900" height="150" applyTarget="1" />
+					<arrow nonTarget="1" effect="NPC/Skill/Temp/Eff_Temp.xml" />
 					<actionSkill skillID="120030041" level="10" interval="10000" useDirection="1" onlySensingActive="1" />
 				</attack>
 			</motion>
 		</level>
 	</skill>
 	<skill id="120030041" comment="소비 아이템">
-		<basic mainType="2">
+		<basic mainType="30">
 			<ui attackType="3" />
 			<kinds groupType="2" unrideOnUse="1" />
-			<stateAttr autoTargeting="0" keyIsDown="1" />
+			<stateAttr keyIsDown="1" />
+			<sensor rangeType="cylinder" distance="75" height="150" sensorStartDelay="500" />
 		</basic>
 		<level value="1">
-			<sensorProperty rangeType="cylinder" distance="75" height="150" sensorStartDelay="500" />
-			<motion>
-				<motionProperty motionEffect="Item/LapenShard/Eff_LapenShard_Neirin_SplashCast_01.xml" splashEndEffect="Item/LapenShard/Eff_LapenShard_Neirin_SplashEnd_01.xml" holdWeapon="0" />
+			<motion motionEffect="Item/LapenShard/Eff_LapenShard_Neirin_SplashCast_01.xml" splashEndEffect="Item/LapenShard/Eff_LapenShard_Neirin_SplashEnd_01.xml" holdWeapon="0">
 				<attack point="p0" targetCount="1" attacktype="3" hitImmuneBreak="5">
-					<rangeProperty rangeType="cylinder" distance="150" height="150" includeCaster="1" applyTarget="2" />
-					<damageProperty count="0" />
+					<range rangeType="cylinder" distance="150" height="150" includeCaster="1" applyTarget="2" />
+					<damage count="0" />
 					<actionAdditional additionalID="120030042" level="1" skillTarget="2" skillOwner="1" dependOnDamageCount="1" />
 					<actionAdditional additionalID="120030043" level="1" skillTarget="2" skillOwner="1" dependOnDamageCount="1" />
 				</attack>
 			</motion>
 		</level>
 		<level value="2">
-			<sensorProperty rangeType="cylinder" distance="75" height="150" sensorStartDelay="500" />
-			<motion>
-				<motionProperty motionEffect="Item/LapenShard/Eff_LapenShard_Neirin_SplashCast_01.xml" splashEndEffect="Item/LapenShard/Eff_LapenShard_Neirin_SplashEnd_01.xml" holdWeapon="0" />
+			<motion motionEffect="Item/LapenShard/Eff_LapenShard_Neirin_SplashCast_01.xml" splashEndEffect="Item/LapenShard/Eff_LapenShard_Neirin_SplashEnd_01.xml" holdWeapon="0">
 				<attack point="p0" targetCount="1" attacktype="3" hitImmuneBreak="5">
-					<rangeProperty rangeType="cylinder" distance="150" height="150" includeCaster="1" applyTarget="2" />
-					<damageProperty count="0" />
+					<range rangeType="cylinder" distance="150" height="150" includeCaster="1" applyTarget="2" />
+					<damage count="0" />
 					<actionAdditional additionalID="120030042" level="2" skillTarget="2" skillOwner="1" dependOnDamageCount="1" />
 					<actionAdditional additionalID="120030043" level="2" skillTarget="2" skillOwner="1" dependOnDamageCount="1" />
 				</attack>
 			</motion>
 		</level>
 		<level value="3">
-			<sensorProperty rangeType="cylinder" distance="75" height="150" sensorStartDelay="500" />
-			<motion>
-				<motionProperty motionEffect="Item/LapenShard/Eff_LapenShard_Neirin_SplashCast_01.xml" splashEndEffect="Item/LapenShard/Eff_LapenShard_Neirin_SplashEnd_01.xml" holdWeapon="0" />
+			<motion motionEffect="Item/LapenShard/Eff_LapenShard_Neirin_SplashCast_01.xml" splashEndEffect="Item/LapenShard/Eff_LapenShard_Neirin_SplashEnd_01.xml" holdWeapon="0">
 				<attack point="p0" targetCount="1" attacktype="3" hitImmuneBreak="5">
-					<rangeProperty rangeType="cylinder" distance="150" height="150" includeCaster="1" applyTarget="2" />
-					<damageProperty count="0" />
+					<range rangeType="cylinder" distance="150" height="150" includeCaster="1" applyTarget="2" />
+					<damage count="0" />
 					<actionAdditional additionalID="120030042" level="3" skillTarget="2" skillOwner="1" dependOnDamageCount="1" />
 					<actionAdditional additionalID="120030043" level="3" skillTarget="2" skillOwner="1" dependOnDamageCount="1" />
 				</attack>
 			</motion>
 		</level>
 		<level value="4">
-			<sensorProperty rangeType="cylinder" distance="75" height="150" sensorStartDelay="500" />
-			<motion>
-				<motionProperty motionEffect="Item/LapenShard/Eff_LapenShard_Neirin_SplashCast_01.xml" splashEndEffect="Item/LapenShard/Eff_LapenShard_Neirin_SplashEnd_01.xml" holdWeapon="0" />
+			<motion motionEffect="Item/LapenShard/Eff_LapenShard_Neirin_SplashCast_01.xml" splashEndEffect="Item/LapenShard/Eff_LapenShard_Neirin_SplashEnd_01.xml" holdWeapon="0">
 				<attack point="p0" targetCount="1" attacktype="3" hitImmuneBreak="5">
-					<rangeProperty rangeType="cylinder" distance="150" height="150" includeCaster="1" applyTarget="2" />
-					<damageProperty count="0" />
+					<range rangeType="cylinder" distance="150" height="150" includeCaster="1" applyTarget="2" />
+					<damage count="0" />
 					<actionAdditional additionalID="120030042" level="4" skillTarget="2" skillOwner="1" dependOnDamageCount="1" />
 					<actionAdditional additionalID="120030043" level="4" skillTarget="2" skillOwner="1" dependOnDamageCount="1" />
 				</attack>
 			</motion>
 		</level>
 		<level value="5">
-			<sensorProperty rangeType="cylinder" distance="75" height="150" sensorStartDelay="500" />
-			<motion>
-				<motionProperty motionEffect="Item/LapenShard/Eff_LapenShard_Neirin_SplashCast_01.xml" splashEndEffect="Item/LapenShard/Eff_LapenShard_Neirin_SplashEnd_01.xml" holdWeapon="0" />
+			<motion motionEffect="Item/LapenShard/Eff_LapenShard_Neirin_SplashCast_01.xml" splashEndEffect="Item/LapenShard/Eff_LapenShard_Neirin_SplashEnd_01.xml" holdWeapon="0">
 				<attack point="p0" targetCount="1" attacktype="3" hitImmuneBreak="5">
-					<rangeProperty rangeType="cylinder" distance="150" height="150" includeCaster="1" applyTarget="2" />
-					<damageProperty count="0" />
+					<range rangeType="cylinder" distance="150" height="150" includeCaster="1" applyTarget="2" />
+					<damage count="0" />
 					<actionAdditional additionalID="120030042" level="5" skillTarget="2" skillOwner="1" dependOnDamageCount="1" />
 					<actionAdditional additionalID="120030043" level="5" skillTarget="2" skillOwner="1" dependOnDamageCount="1" />
 				</attack>
 			</motion>
 		</level>
 		<level value="6">
-			<sensorProperty rangeType="cylinder" distance="75" height="150" sensorStartDelay="500" />
-			<motion>
-				<motionProperty motionEffect="Item/LapenShard/Eff_LapenShard_Neirin_SplashCast_01.xml" splashEndEffect="Item/LapenShard/Eff_LapenShard_Neirin_SplashEnd_01.xml" holdWeapon="0" />
+			<motion motionEffect="Item/LapenShard/Eff_LapenShard_Neirin_SplashCast_01.xml" splashEndEffect="Item/LapenShard/Eff_LapenShard_Neirin_SplashEnd_01.xml" holdWeapon="0">
 				<attack point="p0" targetCount="1" attacktype="3" hitImmuneBreak="5">
-					<rangeProperty rangeType="cylinder" distance="150" height="150" includeCaster="1" applyTarget="2" />
-					<damageProperty count="0" />
+					<range rangeType="cylinder" distance="150" height="150" includeCaster="1" applyTarget="2" />
+					<damage count="0" />
 					<actionAdditional additionalID="120030042" level="6" skillTarget="2" skillOwner="1" dependOnDamageCount="1" />
 					<actionAdditional additionalID="120030043" level="6" skillTarget="2" skillOwner="1" dependOnDamageCount="1" />
 				</attack>
 			</motion>
 		</level>
 		<level value="7">
-			<sensorProperty rangeType="cylinder" distance="75" height="150" sensorStartDelay="500" />
-			<motion>
-				<motionProperty motionEffect="Item/LapenShard/Eff_LapenShard_Neirin_SplashCast_01.xml" splashEndEffect="Item/LapenShard/Eff_LapenShard_Neirin_SplashEnd_01.xml" holdWeapon="0" />
+			<motion motionEffect="Item/LapenShard/Eff_LapenShard_Neirin_SplashCast_01.xml" splashEndEffect="Item/LapenShard/Eff_LapenShard_Neirin_SplashEnd_01.xml" holdWeapon="0">
 				<attack point="p0" targetCount="1" attacktype="3" hitImmuneBreak="5">
-					<rangeProperty rangeType="cylinder" distance="150" height="150" includeCaster="1" applyTarget="2" />
-					<damageProperty count="0" />
+					<range rangeType="cylinder" distance="150" height="150" includeCaster="1" applyTarget="2" />
+					<damage count="0" />
 					<actionAdditional additionalID="120030042" level="7" skillTarget="2" skillOwner="1" dependOnDamageCount="1" />
 					<actionAdditional additionalID="120030043" level="7" skillTarget="2" skillOwner="1" dependOnDamageCount="1" />
 				</attack>
 			</motion>
 		</level>
 		<level value="8">
-			<sensorProperty rangeType="cylinder" distance="75" height="150" sensorStartDelay="500" />
-			<motion>
-				<motionProperty motionEffect="Item/LapenShard/Eff_LapenShard_Neirin_SplashCast_01.xml" splashEndEffect="Item/LapenShard/Eff_LapenShard_Neirin_SplashEnd_01.xml" holdWeapon="0" />
+			<motion motionEffect="Item/LapenShard/Eff_LapenShard_Neirin_SplashCast_01.xml" splashEndEffect="Item/LapenShard/Eff_LapenShard_Neirin_SplashEnd_01.xml" holdWeapon="0">
 				<attack point="p0" targetCount="1" attacktype="3" hitImmuneBreak="5">
-					<rangeProperty rangeType="cylinder" distance="150" height="150" includeCaster="1" applyTarget="2" />
-					<damageProperty count="0" />
+					<range rangeType="cylinder" distance="150" height="150" includeCaster="1" applyTarget="2" />
+					<damage count="0" />
 					<actionAdditional additionalID="120030042" level="8" skillTarget="2" skillOwner="1" dependOnDamageCount="1" />
 					<actionAdditional additionalID="120030043" level="8" skillTarget="2" skillOwner="1" dependOnDamageCount="1" />
 				</attack>
 			</motion>
 		</level>
 		<level value="9">
-			<sensorProperty rangeType="cylinder" distance="75" height="150" sensorStartDelay="500" />
-			<motion>
-				<motionProperty motionEffect="Item/LapenShard/Eff_LapenShard_Neirin_SplashCast_01.xml" splashEndEffect="Item/LapenShard/Eff_LapenShard_Neirin_SplashEnd_01.xml" holdWeapon="0" />
+			<motion motionEffect="Item/LapenShard/Eff_LapenShard_Neirin_SplashCast_01.xml" splashEndEffect="Item/LapenShard/Eff_LapenShard_Neirin_SplashEnd_01.xml" holdWeapon="0">
 				<attack point="p0" targetCount="1" attacktype="3" hitImmuneBreak="5">
-					<rangeProperty rangeType="cylinder" distance="150" height="150" includeCaster="1" applyTarget="2" />
-					<damageProperty count="0" />
+					<range rangeType="cylinder" distance="150" height="150" includeCaster="1" applyTarget="2" />
+					<damage count="0" />
 					<actionAdditional additionalID="120030042" level="9" skillTarget="2" skillOwner="1" dependOnDamageCount="1" />
 					<actionAdditional additionalID="120030043" level="9" skillTarget="2" skillOwner="1" dependOnDamageCount="1" />
 				</attack>
 			</motion>
 		</level>
 		<level value="10">
-			<sensorProperty rangeType="cylinder" distance="57" height="150" sensorStartDelay="500" />
-			<motion>
-				<motionProperty motionEffect="Item/LapenShard/Eff_LapenShard_Neirin_SplashCast_01.xml" splashEndEffect="Item/LapenShard/Eff_LapenShard_Neirin_SplashEnd_01.xml" holdWeapon="0" />
+			<motion motionEffect="Item/LapenShard/Eff_LapenShard_Neirin_SplashCast_01.xml" splashEndEffect="Item/LapenShard/Eff_LapenShard_Neirin_SplashEnd_01.xml" holdWeapon="0">
 				<attack point="p0" targetCount="1" attacktype="3" hitImmuneBreak="5">
-					<rangeProperty rangeType="cylinder" distance="150" height="150" includeCaster="1" applyTarget="2" />
-					<damageProperty count="0" />
+					<range rangeType="cylinder" distance="150" height="150" includeCaster="1" applyTarget="2" />
+					<damage count="0" />
 					<actionAdditional additionalID="120030042" level="10" skillTarget="2" skillOwner="1" dependOnDamageCount="1" />
 					<actionAdditional additionalID="120030043" level="10" skillTarget="2" skillOwner="1" dependOnDamageCount="1" />
 				</attack>

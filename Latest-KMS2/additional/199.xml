@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ms2>
+	<additional id="19900031">
+		<level stringParam="76,200,4.6">
+			<beginCondition applyPvPZoneType="1" />
+			<BasicProperty level="1" group="19900031" buffSubType="4" durationTick="1800000" resetCondition="1" deadKeepEffect="1" clearEffectFromPVPZone="1" />
+			<MotionProperty abnormalImmuneBreak="5" />
+			<CancelEffectProperty cancelEffectCodes="10300091,10500061,10900161" />
+			<ImmuneEffectProperty immuneEffectCodes="10300091,10500061,10900161" />
+			<Stat>
+				<v type="cap" value="76" />
+				<v type="cad" value="200" />
+				<v type="pap" value="0.046" isRate="1" />
+				<v type="map" value="0.046" isRate="1" />
+			</Stat>
+			<UIProperty icon="./Data/Resource/Image/skill/icon/GM_Event_buff.png" />
+		</level>
+	</additional>
+	<additional id="19900032">
+		<level>
+			<BasicProperty level="1" buffSubType="4" durationTick="1600" />
+			<MotionProperty abnormalImmuneBreak="5" scale="1" />
+		</level>
+	</additional>
+	<additional id="19900033">
+		<level>
+			<BasicProperty level="1" buffSubType="4" durationTick="10000" />
+			<MotionProperty abnormalImmuneBreak="5" />
+			<ImmuneEffectProperty immuneEffectCodes="19900031,19900041,19900051" />
+		</level>
+	</additional>
+	<additional id="19900041">
+		<level stringParam="2,2,2,2,22,100">
+			<beginCondition applyPvPZoneType="1" />
+			<BasicProperty level="1" group="19900031" buffSubType="4" durationTick="3600000" resetCondition="1" deadKeepEffect="1" clearEffectFromPVPZone="1" />
+			<MotionProperty abnormalImmuneBreak="5" />
+			<SpecialAbility>
+				<v type="seg" value="1000" />
+				<v type="smd" value="220" />
+				<v type="seg_fishingreward" value="1000" />
+				<v type="seg_arcadereward" value="1000" />
+				<v type="seg_playinstrumentreward" value="1000" />
+			</SpecialAbility>
+			<RecoveryProperty hpRate="1" />
+			<UIProperty icon="./Data/Resource/Image/skill/icon/GM_Event_buff.png" />
+		</level>
+	</additional>
+	<additional id="19900042">
+		<level>
+			<BasicProperty level="1" buffSubType="4" durationTick="2000" />
+			<MotionProperty abnormalImmuneBreak="5" scale="1" />
+		</level>
+	</additional>
+	<additional id="19900051">
+		<level>
+			<beginCondition applyPvPZoneType="1" />
+			<BasicProperty level="1" group="19900031" buffSubType="4" durationTick="60000" resetCondition="1" deadKeepEffect="1" clearEffectFromPVPZone="1" />
+			<MotionProperty keepEffect="Additional/Slow/Eff_Additional_Slow_Keep.xml" stopEffect="Additional/Slow/Eff_Additional_Slow_Stop.xml" abnormalImmuneBreak="5" scale="1" />
+			<Stat>
+				<v type="msp" value="-0.2" isRate="1" />
+				<v type="jmp" value="-0.5" isRate="1" />
+				<v type="rmsp" value="-0.2" isRate="1" />
+			</Stat>
+			<UIProperty icon="./Data/Resource/Image/skill/icon/GM_Event_buff.png" />
+		</level>
+	</additional>
+	<additional id="19900052">
+		<level>
+			<BasicProperty level="1" buffSubType="4" durationTick="1500" />
+			<MotionProperty abnormalImmuneBreak="5" scale="1" />
+		</level>
+	</additional>
+</ms2>

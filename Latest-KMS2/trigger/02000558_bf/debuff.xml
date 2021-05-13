@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ms2>
+	<state name="대기">
+		<onEnter>
+		</onEnter>
+		
+		<condition name="유저를감지했으면" arg1="2001">
+				<transition state="버프"/>
+		</condition>
+		
+		<onExit>
+		</onExit>
+	</state>
+
+    <state name="버프">
+        <onEnter>
+			<action name="타이머를설정한다" arg1="100" arg2="60"/>
+			
+        </onEnter>
+		
+		<condition name="시간이경과했으면" arg1="100">
+			<action name="버프를걸어준다" arg1="2001" arg2="44200001" arg3="1" arg4="0" arg5="0" />
+			<transition state="대기"/>
+		</condition>
+
+		<onExit>
+		</onExit>
+	</state>
+
+
+</ms2>
