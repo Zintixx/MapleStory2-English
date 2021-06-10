@@ -4645,6 +4645,57 @@
 		</textureani>
 		<effect file="CH/Emotion/Eff_Male_Hello.xml" />
 	</emotion>
+	
+	<!-- 경례 -->
+	<emotion name="Hello_B">
+		<anim name="Emotion_Hello_B_Ready" />
+		<idleAnim name="Emotion_Hello_B_Loop" />
+		<textureani target="FA">
+			<texture file="Item_Face/{0}/01_Idle.dds" control="Item_Face/{0}/02_Idle_C.dds" delay="500" loop="true" />
+			<texture file="Item_Face/{0}/05_Blink2.dds" control="Item_Face/{0}/20_Blink2_C.dds" delay="60" />
+			<texture file="Item_Face/{0}/03_Blink1.dds" control="Item_Face/{0}/04_Blink1_C.dds" delay="50" />
+			<texture file="Item_Face/{0}/01_Idle.dds" control="Item_Face/{0}/02_Idle_C.dds" delay="3000" />
+			<texture file="Item_Face/{0}/05_Blink2.dds" control="Item_Face/{0}/20_Blink2_C.dds" delay="60" />
+			<texture file="Item_Face/{0}/03_Blink1.dds" control="Item_Face/{0}/04_Blink1_C.dds" delay="50" />
+			<texture file="Item_Face/{0}/01_Idle.dds" control="Item_Face/{0}/02_Idle_C.dds" delay="2500" />
+			<texture file="Item_Face/{0}/05_Blink2.dds" control="Item_Face/{0}/20_Blink2_C.dds" delay="60" />
+			<texture file="Item_Face/{0}/03_Blink1.dds" control="Item_Face/{0}/04_Blink1_C.dds" delay="50" />
+			<texture file="Item_Face/{0}/01_Idle.dds" control="Item_Face/{0}/02_Idle_C.dds" delay="200" />
+			<texture file="Item_Face/{0}/05_Blink2.dds" control="Item_Face/{0}/20_Blink2_C.dds" delay="60" />
+			<texture file="Item_Face/{0}/03_Blink1.dds" control="Item_Face/{0}/04_Blink1_C.dds" delay="50" />
+			<texture file="Item_Face/{0}/01_Idle.dds" control="Item_Face/{0}/02_Idle_C.dds" delay="300" />
+		</textureani>
+	</emotion>
+	
+	<!-- 거만한 한손인사 -->
+	<emotion name="Hello_C">
+		<anim name="Emotion_Hello_C" />
+		<textureani target="FA">	
+			<texture file="Item_Face/{0}/01_Idle.dds" control="Item_Face/{0}/02_Idle_C.dds" delay="500" loop="true" />
+			<texture file="Item_Face/{0}/05_Blink2.dds" control="Item_Face/{0}/20_Blink2_C.dds" delay="60" />
+			<texture file="Item_Face/{0}/03_Blink1.dds" control="Item_Face/{0}/04_Blink1_C.dds" delay="50" />
+			<texture file="Item_Face/{0}/01_Idle.dds" control="Item_Face/{0}/02_Idle_C.dds" delay="3000" />
+			<texture file="Item_Face/{0}/05_Blink2.dds" control="Item_Face/{0}/20_Blink2_C.dds" delay="60" />
+			<texture file="Item_Face/{0}/03_Blink1.dds" control="Item_Face/{0}/04_Blink1_C.dds" delay="50" />
+			<texture file="Item_Face/{0}/01_Idle.dds" control="Item_Face/{0}/02_Idle_C.dds" delay="2500" />
+			<texture file="Item_Face/{0}/05_Blink2.dds" control="Item_Face/{0}/20_Blink2_C.dds" delay="60" />
+			<texture file="Item_Face/{0}/03_Blink1.dds" control="Item_Face/{0}/04_Blink1_C.dds" delay="50" />
+			<texture file="Item_Face/{0}/01_Idle.dds" control="Item_Face/{0}/02_Idle_C.dds" delay="200" />
+			<texture file="Item_Face/{0}/05_Blink2.dds" control="Item_Face/{0}/20_Blink2_C.dds" delay="60" />
+			<texture file="Item_Face/{0}/03_Blink1.dds" control="Item_Face/{0}/04_Blink1_C.dds" delay="50" />
+			<texture file="Item_Face/{0}/01_Idle.dds" control="Item_Face/{0}/02_Idle_C.dds" delay="300" />
+		</textureani>
+		<effect file="CH/Emotion/Eff_Emotion_Hello_C.xml" />
+	</emotion>
+	
+	<!-- 느끼한 인사 -->
+	<emotion name="Hello_D">
+		<anim name="Emotion_Hello_D" />
+		<textureani target="FA">
+			<texture file="Item_Face/MC_face_happy.dds" control="" delay="300" loop="true"/>
+		</textureani>
+		<effect file="CH/Emotion/Eff_Emotion_Hello_D.xml" />
+	</emotion>
 
 	<!-- 손들어 -->
 	<emotion name="kneeling_Down_A">
@@ -6215,6 +6266,58 @@
 	<emotion name="Dance_004">
 		<anim name="Emotion_Dance_004" />
 		<idleAnim name="Emotion_Dance_004" />
+		<textureani target="FA">
+			<texture file="Item_Face/MC_face_smile.dds" control="" loop="true" />
+		</textureani>
+	</emotion>
+	<!--죽은척 하기-->
+	<emotion name="Collab_MockingDeath">
+		<anim name="Emotion_Collab_MockingDeath" />
+		<idleAnim name="Emotion_Collab_MockingDeath_Idle" />
+		<textureani target="FA">
+			<texture file="Item_Face/MC_face_syncope01.dds" control="" delay="140" loop="true" />
+			<texture file="Item_Face/MC_face_syncope02.dds" control="" delay="140" />
+			<texture file="Item_Face/MC_face_syncope03.dds" control="" delay="140" />
+		</textureani>
+		<effect file="CH/Emotion/Eff_Emotion_Collab_MockingDeath.xml" />
+		<effect file="CH/Emotion/Eff_Emotion_Collab_MockingDeath_Idle.xml" />
+	</emotion>
+	<!--마비노기 춤 1-->
+	<emotion name="Collab_Dance001">
+		<anim name="Emotion_Collab_Dance_001" />
+		<idleAnim name="Emotion_Collab_Dance_001" />
+		<textureani target="FA">
+			<texture file="Item_Face/MC_face_smile.dds" control="" loop="true" />
+		</textureani>
+	</emotion>
+	<!--마비노기 춤 2-->
+	<emotion name="Collab_Dance002">
+		<anim name="Emotion_Collab_Dance_002" />
+		<idleAnim name="Emotion_Collab_Dance_002" />
+		<textureani target="FA">
+			<texture file="Item_Face/MC_face_smile.dds" control="" loop="true" />
+		</textureani>
+	</emotion>
+	<!--마비노기 춤 3-->
+	<emotion name="Collab_Dance003">
+		<anim name="Emotion_Collab_Dance_003" />
+		<idleAnim name="Emotion_Collab_Dance_003" />
+		<textureani target="FA">
+			<texture file="Item_Face/MC_face_smile.dds" control="" loop="true" />
+		</textureani>
+	</emotion>
+	<!--OK 6주년!-->
+	<emotion name="6th_Event_A">
+		<anim name="Emotion_6th_Event_A" />
+		<idleAnim name="Emotion_6th_Event_A" />
+		<textureani target="FA">
+			<texture file="Item_Face/MC_face_smile.dds" control="" loop="true" />
+		</textureani>
+	</emotion>
+	<!--비바 4주년!-->
+	<emotion name="4th_Event_A">
+		<anim name="Emotion_4th_Event_A" />
+		<idleAnim name="Emotion_4th_Event_A" />
 		<textureani target="FA">
 			<texture file="Item_Face/MC_face_smile.dds" control="" loop="true" />
 		</textureani>
