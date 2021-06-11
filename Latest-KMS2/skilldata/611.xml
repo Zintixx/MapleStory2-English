@@ -1037,6 +1037,23 @@
 			</motion>
 		</level>
 	</skill>
+	<skill id="61110555" comment="봉제인형 나오">
+		<basic>
+			<ui attackType="3" />
+			<kinds rangeType="2" element="7" />
+			<push back="100" />
+		</basic>
+		<level value="1">
+			<detectProperty rangeType="circle" distance="150" rangeOffset="0,0,50" height="200" width="150" />
+			<motion sequenceName="Attack_01_A" motionEffect="NPC/Skill/Pet_NaoDoll/Eff_Pet_NaoDoll_01_Attack_01_A_Cast_01.xml" faceTarget="0">
+				<attack point="p0" targetCount="1" attacktype="3" brokenOffence="1" unrideOnHit="1">
+					<range rangeType="box" distance="150" height="200" width="200" applyTarget="1" castTarget="1" />
+					<arrow rayPhysxTest="1" />
+					<damage rate="1" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
+				</attack>
+			</motion>
+		</level>
+	</skill>
 	<skill id="61110560" comment="페이카">
 		<basic>
 			<ui attackType="3" />
