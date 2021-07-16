@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ms2>
+<!-- 아이템을 스폰해줌 -->
+
+	<state name="idle">
+		<condition name="UserValue" key="isGameStart" value="1">						
+			<transition state="startIdle" />
+		</condition>	
+    </state>
+	
+	<state name="startIdle">
+		<condition name="WaitTick" waitTick="5000" >
+			<transition state="Waiting" />
+		</condition>
+		<condition name="UserValue" key="isGameStart" value="0">						
+			<transition state="idle" />
+		</condition>
+    </state>
+	
+	<state name="Waiting">
+		<onEnter>
+		</onEnter>
+			<condition name="WaitTick" waitTick="10000" >
+				<transition state="spawnItem" />
+			</condition>
+			<condition name="UserValue" key="isGameStart" value="0">						
+				<transition state="idle" />
+			</condition>
+		<onExit>
+		</onExit>
+	</state>
+  
+	<state name="spawnItem">
+		<onEnter>
+			<action name="SpawnItemGroup" groupCount="10" group0="2" group1="12" group2="22" 
+			group3="32" group4="42" group5="52" group6="62" group7="72" 
+			group8="82" group9="92" randomPickCount="2" lifeTime="10"/>
+		</onEnter>
+			<condition name="WaitTick" waitTick="100" >
+				<transition state="Waiting" />
+			</condition>
+			<condition name="UserValue" key="isGameStart" value="0">						
+				<transition state="idle" />
+			</condition>
+		<onExit>
+		</onExit>
+	</state>
+  
+</ms2>
+

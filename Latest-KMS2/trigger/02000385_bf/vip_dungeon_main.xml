@@ -6,7 +6,7 @@
 		<onEnter> 
 			<action name="포탈을설정한다" arg1="3" arg2="0" arg3="0" arg4="0"/>		
 			<action name="이펙트를설정한다" arg1="601,602,603" arg2="0" />		
-		      <action name="유저를이동시킨다" arg1="02000385" arg2="1"/>				
+		      <action name="유저를이동시킨다" arg1="02000393" arg2="1"/>				
 			<action name="오브젝트반응설정한다" arg1="10001083" arg2="1" />
 			<action name="오브젝트반응설정한다" arg1="10001084" arg2="1" />
 			<action name="오브젝트반응설정한다" arg1="10001085" arg2="1" />		
@@ -47,7 +47,7 @@
 				</condition>		
         <onExit>
 		    <action name="HideGuideSummary" entityID="20003851"/>		
-		    <action name="유저를이동시킨다" arg1="02000385" arg2="2"/>				
+		    <action name="유저를이동시킨다" arg1="02000393" arg2="2"/>				
         </onExit>					
     </state>
 
@@ -122,8 +122,8 @@
 	
     <state name="1라운드종료">
         <onEnter>
-				 <action name="ShowCountUI" text="$02000385_BF__VIP_DUNGEON_MAIN__1$" stage="2" count="3"  />
-			<action name="이벤트UI를설정한다" arg1="0" arg2="2,5" />				
+				<action name="ShowCountUI" text="$02000385_BF__VIP_DUNGEON_MAIN__1$" stage="2" count="3"  />
+				<action name="이벤트UI를설정한다" arg1="0" arg2="2,5" />				
         </onEnter>	
 				<condition name="WaitTick" waitTick="3000" >		
 					<transition state="2라운드시작" />
@@ -142,7 +142,7 @@
 
     <state name="2라운드종료">
         <onEnter>
-				 <action name="ShowCountUI" text="$02000385_BF__VIP_DUNGEON_MAIN__2$" stage="3" count="3"  />
+				<action name="ShowCountUI" text="$02000385_BF__VIP_DUNGEON_MAIN__2$" stage="3" count="3"  />
 			<action name="이벤트UI를설정한다" arg1="0" arg2="3,5" />				
         </onEnter>	
 				<condition name="WaitTick" waitTick="3000" >			
@@ -162,7 +162,7 @@
 
     <state name="3라운드종료">
         <onEnter>
-				 <action name="ShowCountUI" text="$02000385_BF__VIP_DUNGEON_MAIN__3$" stage="4" count="3"  />
+				<action name="ShowCountUI" text="$02000385_BF__VIP_DUNGEON_MAIN__3$" stage="4" count="3"  />
 			<action name="이벤트UI를설정한다" arg1="0" arg2="4,5" />				
         </onEnter>	
 				<condition name="WaitTick" waitTick="3000" >			
@@ -182,7 +182,7 @@
 
     <state name="4라운드종료">
         <onEnter>
-				 <action name="ShowCountUI" text="$02000385_BF__VIP_DUNGEON_MAIN__4$" stage="5" count="3"  />
+				<action name="ShowCountUI" text="$02000385_BF__VIP_DUNGEON_MAIN__4$" stage="5" count="3"  />
 			<action name="이벤트UI를설정한다" arg1="0" arg2="5,5" />				
         </onEnter>	
 				<condition name="WaitTick" waitTick="3000" >	
@@ -204,7 +204,7 @@
         <onEnter>		
 		    <action name="카메라를선택한다" arg1="301" arg2="1"/>					
 		    <action name="이벤트UI를설정한다" arg1="0" arg2="0,0" />		
-		    <action name="유저를이동시킨다" arg1="02000385" arg2="2"/>							
+		    <action name="유저를이동시킨다" arg1="02000393" arg2="2"/>							
         </onEnter>	
 				<condition name="WaitTick" waitTick="1500" >			
 					<transition state="정산" />

@@ -1831,7 +1831,7 @@
 				<asset name="Data/Resource/Model/Item/1/22/12200263_M_CLPAMaid02.nif" selfnode="PA" targetnode="PA" replace="1" ani="1" gender="0" />
 			</slot>
 		</slots>
-		<customize color="1" colorPalette="16" />
+		<customize color="1" colorPalette="10" defaultColorIndex="16" />
 		<cutting>
 			<mesh gender="0" name="GL_Wrist" />
 		</cutting>
@@ -1845,7 +1845,7 @@
 				<asset name="Data/Resource/Model/Item/1/22/12200264_F_CLPAMaid02.nif" selfnode="PA" targetnode="PA" replace="1" ani="1" gender="1" />
 			</slot>
 		</slots>
-		<customize color="1" colorPalette="16" />
+		<customize color="1" colorPalette="10" defaultColorIndex="16" />
 		<cutting>
 			<mesh gender="1" name="GL_Wrist" />
 		</cutting>
@@ -6083,6 +6083,42 @@
 			<mesh gender="0" name="SH_Ankle" />
 			<mesh gender="0" name="SH_Knee" />
 			<mesh gender="0" name="SH_Stocking" />
+		</cutting>
+	</ItemModel>
+	<ItemModel id="12220205" desc="(PC방) 밀리터리 슈트">
+		<slots>
+			<slot name="CL">
+				<asset name="Data/Resource/Model/Item/1/22/12200204_M_CLPAMilitarySuit.nif" selfnode="CL" targetnode="CL" replace="1" ani="1" gender="0" />
+				<asset name="Data/Resource/Model/Item/1/22/12200205_F_CLPAMilitarySuit.nif" selfnode="CL" targetnode="CL" replace="1" ani="1" gender="1" />
+			</slot>
+			<slot name="PA">
+				<asset name="Data/Resource/Model/Item/1/22/12200204_M_CLPAMilitarySuit.nif" selfnode="PA" targetnode="PA" replace="1" ani="1" gender="0" />
+				<asset name="Data/Resource/Model/Item/1/22/12200205_F_CLPAMilitarySuit.nif" selfnode="PA" targetnode="PA" replace="1" ani="1" gender="1" />
+			</slot>
+		</slots>
+		<cutting>
+			<mesh gender="0" name="SH_Armor" />
+			<mesh gender="0" name="SH_Knee" />
+			<mesh gender="0" name="SH_Stocking" />
+			<mesh gender="1" name="SH_Armor" />
+			<mesh gender="1" name="SH_Knee" />
+			<mesh gender="1" name="SH_Stocking" />
+		</cutting>
+	</ItemModel>
+	<ItemModel id="12220247" desc="(PC방) 방랑자 도복">
+		<slots>
+			<slot name="CL">
+				<asset name="Data/Resource/Model/Item/1/22/12200044_M_OPWandererRobe.nif" selfnode="CL" targetnode="CL" replace="1" ani="1" gender="0" />
+				<asset name="Data/Resource/Model/Item/1/22/12200044_F_OPWandererRobe.nif" selfnode="CL" targetnode="CL" replace="1" ani="1" gender="1" />
+			</slot>
+			<slot name="PA">
+				<asset name="Data/Resource/Model/Item/1/22/12200044_M_OPWandererRobe.nif" selfnode="PA" targetnode="PA" replace="1" ani="1" gender="0" />
+				<asset name="Data/Resource/Model/Item/1/22/12200044_F_OPWandererRobe.nif" selfnode="PA" targetnode="PA" replace="1" ani="1" gender="1" />
+			</slot>
+		</slots>
+		<cutting>
+			<mesh gender="0" name="SH_Knee, SH_Stocking" />
+			<mesh gender="1" name="SH_Knee, SH_Stocking" />
 		</cutting>
 	</ItemModel>
 	<ItemModel id="12220307">
