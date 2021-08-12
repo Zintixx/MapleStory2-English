@@ -537,6 +537,87 @@
 			<UIProperty icon="./Data/Resource/Image/skill/icon/FirePlayerBody.png" />
 		</level>
 	</additional>
+	<additional id="40600050">
+		<level>
+			<BasicProperty level="1" buffType="2" buffSubType="2" durationTick="30000" intervalTick="2000" resetCondition="2" maxBuffCount="30" dotCondition="1" logoutClearEffect="1" coolDownTime="0.5" />
+			<MotionProperty keepEffect="Additional/Burn/Eff_Additional_Burn_Keep.xml" stopEffect="Additional/Burn/Eff_Additional_Burn_Stop.xml" abnormalImmuneBreak="1" />
+			<DotDamageProperty type="2" element="1" damageByTargetMaxHP="0.01" />
+			<UIProperty icon="./Data/Resource/Image/skill/icon/Fire.png" />
+		</level>
+	</additional>
+	<additional id="40600060">
+		<level>
+			<BasicProperty level="1" buffType="2" durationTick="3000" intervalTick="3000" dotCondition="1" />
+			<MotionProperty keepEffect="NPC/Skill/BlueLuke/Eff_BlueLuke_Scatter_Keep.xml" stopEffect="NPC/Skill/BlueLuke/Eff_BlueLuke_Scatter_Stop.xml" abnormalImmuneBreak="5" />
+			<UIProperty icon="./Data/Resource/Image/item/icon/11300140.png" />
+			<conditionSkill level="1" skillID="40600061" skillTarget="1" skillOwner="3" activeByIntervalTick="1">
+				<beginCondition>
+					<owner targetCheckRange="750" targetFriendly="2" targetCountSign="Greater" />
+				</beginCondition>
+			</conditionSkill>
+		</level>
+	</additional>
+	<additional id="40600061">
+		<level>
+			<BasicProperty level="1" buffType="2" durationTick="1000" intervalTick="1000" dotCondition="1" casterIndividualEffect="1" clearEffectFromPVPZone="1" skillGroupType="1" />
+			<MotionProperty startEffect="NPC/Skill/BlueLuke/Eff_BlueLuke_Scatter_Range.xml" abnormalImmuneBreak="5" />
+			<splashSkill level="1" skillID="44111211" />
+		</level>
+	</additional>
+	<additional id="40600070">
+		<level>
+			<BasicProperty level="1" durationTick="3000" intervalTick="3000" dotCondition="1" />
+			<MotionProperty keepEffect="NPC/Skill/BlueLuke/Eff_BlueLuke_Unite_Keep.xml" stopEffect="NPC/Skill/BlueLuke/Eff_BlueLuke_Unite_Stop.xml" abnormalImmuneBreak="5" />
+			<UIProperty icon="./Data/Resource/Image/item/icon/11300140.png" />
+			<conditionSkill level="1" skillID="40600071" skillTarget="1" skillOwner="3" activeByIntervalTick="1">
+				<beginCondition>
+					<owner targetCheckRange="300" targetFriendly="2" targetCountSign="Equals" />
+				</beginCondition>
+			</conditionSkill>
+		</level>
+	</additional>
+	<additional id="40600071">
+		<level>
+			<BasicProperty level="1" buffType="2" durationTick="1000" intervalTick="1000" dotCondition="1" casterIndividualEffect="1" clearEffectFromPVPZone="1" skillGroupType="1" />
+			<MotionProperty startEffect="NPC/Skill/BlueLuke/Eff_BlueLuke_Unite_Range.xml" abnormalImmuneBreak="5" />
+			<splashSkill level="1" skillID="44111221" />
+		</level>
+	</additional>
+	<additional id="40600080">
+		<level>
+			<BasicProperty level="1" durationTick="120000" intervalTick="500" clearEffectFromPVPZone="1" />
+			<MotionProperty keepEffect="NPC/Skill/BlueLukeBall/Eff_BlueLukeBall_Shield_Keep.xml" stopEffect="NPC/Skill/BlueLukeBall/Eff_BlueLukeBall_Shield_Stop.xml" />
+			<splashSkill level="1" skillID="44111720" immediateActive="1" />
+		</level>
+	</additional>
+	<additional id="40600081">
+		<level>
+			<BasicProperty level="1" keepCondition="99" clearEffectFromPVPZone="1" attackPossibleIndividualEffectID="40600082" attackPossibleSkillIDs="44111741" />
+			<UIProperty icon="./Data/Resource/Image/skill/icon/10100051_buff.png" />
+		</level>
+	</additional>
+	<additional id="40600082">
+		<level>
+			<BasicProperty level="1" durationTick="60000" intervalTick="1000" resetCondition="1" casterKeepEffect="1" casterIndividualEffect="1" clearDistanceFromCaster="150" />
+			<MotionProperty abnormalImmuneBreak="5" />
+			<RecoveryProperty spValue="10" epValue="10" />
+			<UIProperty icon="./Data/Resource/Image/skill/icon/10100051_buff.png" />
+		</level>
+	</additional>
+	<additional id="40600083">
+		<level>
+			<BasicProperty level="1" durationTick="100" intervalTick="100" />
+			<MotionProperty startEffect="CH/Skill/Beginner/Eff_Beginner_Refreshment_Start_01.xml" abnormalImmuneBreak="5" />
+			<RecoveryProperty spValue="50" epValue="60" />
+		</level>
+	</additional>
+	<additional id="40600084">
+		<level>
+			<BasicProperty level="1" durationTick="60000" intervalTick="60000" coolDownTime="15" />
+			<MotionProperty startEffect="CH/Skill/Beginner/Eff_Beginner_Refreshment_Start_01.xml" abnormalImmuneBreak="5" />
+			<UIProperty icon="./Data/Resource/Image/skill/icon/10100051_buff.png" iconOnOff="0" />
+		</level>
+	</additional>
 	<additional id="40600101">
 		<level stringParam="50">
 			<BasicProperty level="1" keepCondition="99" />

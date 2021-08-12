@@ -2430,6 +2430,7 @@
 	</npc>
 	<npc id="11000781">
 		<field id="2000002" />
+		<field id="2000557" />
 	</npc>
 	<npc id="11000782">
 		<field id="2000183" />
@@ -9813,9 +9814,6 @@
 	<npc id="11004060">
 		<field id="52010068" />
 	</npc>
-	<npc id="11004067">
-		<field id="2000026" />
-	</npc>
 	<npc id="11004097">
 		<field id="52010068" />
 	</npc>
@@ -11730,10 +11728,10 @@
 		<field id="2000064" startTime="2020-03-13-00-00" endTime="2020-03-15-23-59-59" />
 	</npc>
 	<npc id="11004842">
-		<field id="2000557" startTime="2020-08-13-07-00" endTime="2020-09-10-07-00" />
+		<field id="2000557" startTime="2021-08-12-08-00" endTime="2021-09-09-08-00" />
 	</npc>
 	<npc id="11004843">
-		<field id="2000557" startTime="2020-08-13-07-00" endTime="2020-09-10-07-00" />
+		<field id="2000557" startTime="2021-08-12-08-00" endTime="2021-09-09-08-00" />
 	</npc>
 	<npc id="11004845">
 		<field id="2000064" startTime="2020-11-12-07-00" endTime="2020-12-03-07-00" />
@@ -38973,6 +38971,20 @@
 		<field id="80000023" />
 		<field id="80000023" />
 	</npc>
+	<npc id="27000116">
+		<field id="2000557" />
+		<field id="2000557" />
+		<field id="2000557" />
+		<field id="2000557" />
+		<field id="2000557" />
+		<field id="2000557" />
+		<field id="2000557" />
+		<field id="2000557" />
+		<field id="2000557" />
+		<field id="2000557" />
+		<field id="2000557" />
+		<field id="2000557" />
+	</npc>
 	<npc id="27100001">
 		<field id="63000071" />
 	</npc>
@@ -46939,6 +46951,9 @@
 	<fieldPortal field="2000555" indoor="1">
 		<portal id="2" targetField="2000536" targetPortal="1" portalType="0" portalIndoor="1" />
 	</fieldPortal>
+	<fieldPortal field="2000557" indoor="0">
+		<portal id="1" targetField="2000062" targetPortal="99" portalType="0" portalIndoor="0" />
+	</fieldPortal>
 	<fieldPortal field="2010002" indoor="0">
 		<portal id="3" targetField="2010020" targetPortal="2" portalType="0" portalIndoor="0" />
 		<portal id="8" targetField="2010010" targetPortal="2" portalType="0" portalIndoor="0" />
@@ -50894,9 +50909,9 @@
 	<fluid field="3000117" attr="poison" />
 	<fluid field="52000167" attr="water" />
 	<fluid field="63000041" attr="water" />
+	<fluid field="52000168" attr="water" />
 	<fluid field="2000319" attr="poison" />
 	<fluid field="3000118" attr="oil" />
-	<fluid field="52000168" attr="water" />
 	<fluid field="52000169" attr="water" />
 	<fluid field="2000320" attr="water" />
 	<fluid field="63000043" attr="water" />
@@ -51074,6 +51089,7 @@
 	<fluid field="2000029" attr="water" />
 	<fluid field="2000551" attr="water" />
 	<fluid field="2000554" attr="poison" />
+	<fluid field="2000557" attr="water,oil,lava,emeraldwater,devilwater,poison" />
 	<fluid field="2000036" attr="water" />
 	<fluid field="2000037" attr="lava" />
 	<fluid field="2000038" attr="water" />
@@ -55811,8 +55827,10 @@
 		<field id="2020013" />
 		<field id="2020014" />
 		<field id="2020016" />
+		<field id="2020011" />
 		<field id="2020017" />
 		<field id="2020018" />
+		<field id="2020002" />
 		<field id="2020001" />
 		<field id="2020003" />
 		<field id="2020006" />
@@ -56997,9 +57015,6 @@
 		<field id="2020069" />
 		<field id="2020070" />
 		<field id="2020071" />
-	</interactObject>
-	<interactObject id="11000137">
-		<field id="2000064" />
 	</interactObject>
 	<interactObject id="11200001">
 		<field id="2000104" />
@@ -60492,6 +60507,69 @@
 	</interactObject>
 	<interactObject id="14001146">
 		<field id="2000417" />
+	</interactObject>
+	<interactObject id="14001147">
+		<field id="2020013" />
+	</interactObject>
+	<interactObject id="14001148">
+		<field id="2020013" />
+	</interactObject>
+	<interactObject id="14001149">
+		<field id="2020013" />
+	</interactObject>
+	<interactObject id="14001150">
+		<field id="2020013" />
+	</interactObject>
+	<interactObject id="14001151">
+		<field id="2020014" />
+	</interactObject>
+	<interactObject id="14001152">
+		<field id="2020014" />
+	</interactObject>
+	<interactObject id="14001153">
+		<field id="2020014" />
+	</interactObject>
+	<interactObject id="14001154">
+		<field id="2020016" />
+	</interactObject>
+	<interactObject id="14001155">
+		<field id="2020016" />
+	</interactObject>
+	<interactObject id="14001156">
+		<field id="2020016" />
+	</interactObject>
+	<interactObject id="14001157">
+		<field id="2020016" />
+	</interactObject>
+	<interactObject id="14001158">
+		<field id="2020011" />
+	</interactObject>
+	<interactObject id="14001159">
+		<field id="2020011" />
+	</interactObject>
+	<interactObject id="14001160">
+		<field id="2020011" />
+	</interactObject>
+	<interactObject id="14001161">
+		<field id="2020017" />
+	</interactObject>
+	<interactObject id="14001162">
+		<field id="2020017" />
+	</interactObject>
+	<interactObject id="14001163">
+		<field id="2020017" />
+	</interactObject>
+	<interactObject id="14001164">
+		<field id="2020018" />
+	</interactObject>
+	<interactObject id="14001165">
+		<field id="2020018" />
+	</interactObject>
+	<interactObject id="14001166">
+		<field id="2020018" />
+	</interactObject>
+	<interactObject id="14001167">
+		<field id="2020018" />
 	</interactObject>
 	<interactObject id="15000001">
 		<field id="82000000" />

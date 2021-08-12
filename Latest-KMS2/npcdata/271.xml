@@ -5,7 +5,7 @@
 			<model kfm="29500206_N_MarionetteFencing" shadowScale="220" rotationSpeed="720" walkSpeed="150" runSpeed="300" />
 			<stat hp="7030" asp="100" msp="100" atp="81" evp="82" cap="42" cad="500" car="50" ndd="39" pap="307" map="307" par="105" mar="105" />
 			<distance avoid="90" sight="2500" sightHeightUP="300" sightHeightDown="150" />
-			<skill ids="49901019,49901020" levels="1,1" probs="70,30" />
+			<skill ids="49901019,49901020" probs="70,30" />
 			<collision shape="box" width="110" height="160" depth="110" />
 			<capsule radius="85" height="170" />
 			<dead time="5" defaultaction="Dead_A" upaction="Dead_A" />
@@ -49,7 +49,7 @@
 			<model kfm="21000989_M_GargoyleMini" scale="0.9" shadowScale="200" rotationSpeed="720" walkSpeed="190" runSpeed="380" />
 			<stat hp="1962" asp="100" msp="100" atp="80" evp="82" cap="42" cad="500" car="50" ndd="39" pap="182" map="182" par="90" mar="90" />
 			<distance avoid="80" sight="450" sightHeightUP="300" sightHeightDown="150" />
-			<skill ids="50000670" levels="2" probs="100" />
+			<skill ids="50000670" probs="100" />
 			<collision shape="box" width="100" height="225" depth="130" />
 			<capsule radius="40" height="180" />
 			<dead time="5" defaultaction="Dead_A,Dead_B" upaction="Dead_B" />
@@ -63,7 +63,7 @@
 			<model kfm="22300149_N_TurtleBigBabyBroccoliGreen" scale="3" shadowScale="400" rotationSpeed="720" walkSpeed="100" runSpeed="200" />
 			<stat hp="647336" asp="100" msp="100" atp="81" evp="82" cap="42" cad="500" car="50" ndd="39" pap="658" map="658" par="105" mar="105" />
 			<distance avoid="140" sight="300" sightHeightUP="300" sightHeightDown="0" customLastSightRadius="2500" customLastSightHeightUp="525" customLastSightHeightDown="225" />
-			<skill ids="50000323" levels="1" probs="100" />
+			<skill ids="50000323,50000323,50000323,50000323,50000323,50000323,50000323,50000344" levels="1,2,3,4,5,6,7,1" />
 			<collision shape="box" width="83.3333" height="56.6667" depth="83.3333" />
 			<capsule radius="130" height="150" />
 			<dead time="20" defaultaction="Dead_B" upaction="Dead_B" />
@@ -82,7 +82,7 @@
 			<model kfm="22000022_N_BearBigLog" shadowScale="360" rotationSpeed="720" walkSpeed="150" runSpeed="300" />
 			<stat hp="647336" asp="100" msp="100" atp="81" evp="82" cap="42" cad="500" car="50" ndd="39" pap="658" map="658" par="105" mar="105" />
 			<distance avoid="140" sight="400" sightHeightUP="300" sightHeightDown="0" customLastSightRadius="2500" customLastSightHeightUp="525" customLastSightHeightDown="225" />
-			<skill ids="50000356" levels="1" probs="100" />
+			<skill ids="60001001,60001011,60001021,60001031" levels="1,1,1,1" />
 			<collision shape="box" width="200" height="220" depth="170" />
 			<capsule radius="110" height="350" />
 			<dead time="5" defaultaction="Dead_A" upaction="Dead_A" />
@@ -101,7 +101,7 @@
 			<model kfm="21000321_M_OldOrangeMushroom" scale="1.6" shadowScale="400" rotationSpeed="720" walkSpeed="100" runSpeed="200" />
 			<stat hp="647336" asp="100" msp="100" atp="81" evp="82" cap="42" cad="500" car="50" ndd="39" pap="427" map="427" par="105" mar="105" />
 			<distance avoid="140" sight="800" sightHeightUP="300" sightHeightDown="0" customLastSightRadius="2500" customLastSightHeightUp="525" customLastSightHeightDown="225" />
-			<skill ids="50000434" levels="1" probs="100" />
+			<skill ids="60041001,60041011,60041021,60041031,60041041,60041051,60041061,60041071,60041072,60041073" levels="1,1,1,1,1,1,1,1,1,1" />
 			<collision shape="box" width="156.25" height="106.25" depth="156.25" />
 			<capsule radius="130" height="150" />
 			<dead time="5" defaultaction="Dead_A" upaction="Dead_A" />
@@ -120,13 +120,13 @@
 			<model kfm="02020107_M_Lslime02" scale="1.3" shadowScale="130" rotationSpeed="720" walkSpeed="200" runSpeed="400" />
 			<stat hp="647336" asp="100" msp="100" atp="81" evp="82" cap="42" cad="500" car="50" ndd="39" pap="329" map="329" par="105" mar="105" />
 			<distance avoid="100" sight="800" sightHeightUP="300" sightHeightDown="0" customLastSightRadius="2500" customLastSightHeightUp="525" customLastSightHeightDown="225" />
-			<skill ids="50000264" levels="1" probs="100" />
+			<skill ids="50000264,50000418,50000419,50000436,50000452,50000456,50000457" levels="1,1,1,1,1,1,1" />
 			<collision shape="box" width="200" height="160" depth="200" />
 			<capsule radius="80" height="170" />
 			<dead time="5" defaultaction="Dead_A,Dead_B" upaction="Dead_B" />
 			<push back="0.5" up="0.5" knockback="0.5" />
 			<normal action="Idle_A,Bore_A,Walk_A" prob="3500,3000,3500" movearea="150" />
-			<aiInfo path="AI_KingSlimeNew_event.xml" />
+			<aiInfo path="AI_KingSlimeNew_event.xml" summonNpcIDs="27100108" />
 			<effectdummy>
 				<dummy name="Eff_UI">
 					<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
@@ -140,7 +140,7 @@
 			<model kfm="02030013_N_Ghostump" scale="1.3" shadowScale="360" rotationSpeed="720" walkSpeed="300" runSpeed="600" />
 			<stat hp="647336" asp="100" msp="100" atp="81" evp="82" cap="42" cad="500" car="50" ndd="39" pap="329" map="329" par="105" mar="105" />
 			<distance avoid="140" sight="1200" sightHeightUP="300" sightHeightDown="0" customLastSightRadius="2500" customLastSightHeightUp="525" customLastSightHeightDown="225" />
-			<skill ids="50000188,50000189,50000190" levels="1,1,1" probs="35,55,10" />
+			<skill ids="50000188,50000189,50000189,50000190,50000191,50000196,50000201,50000244" levels="1,1,2,1,1,1,1,1" />
 			<collision shape="box" width="230.769" height="120" depth="169.231" />
 			<capsule radius="130" height="320" />
 			<dead time="6" defaultaction="Dead_A" upaction="Dead_B" />
@@ -159,7 +159,7 @@
 			<model kfm="22000062_N_PapulatusPiece" shadowScale="250" rotationSpeed="720" walkSpeed="100" runSpeed="200" />
 			<stat hp="647336" asp="100" msp="100" atp="81" evp="82" cap="42" cad="500" car="50" ndd="39" pap="263" map="263" par="105" mar="105" />
 			<distance avoid="140" sight="3000" sightHeightUP="160" sightHeightDown="0" customLastSightRadius="5000" customLastSightHeightUp="320" customLastSightHeightDown="50" />
-			<skill ids="50100517" levels="1" probs="100" />
+			<skill ids="50100515,50100516,50100516,50100516,50100516,50100516,50100516,50100516,50100517" levels="1,1,2,3,12,22,32,42,1" />
 			<collision shape="box" width="130" height="280" depth="130" />
 			<capsule radius="40" height="150" />
 			<dead time="10" defaultaction="Dead_A" upaction="Dead_A" />
@@ -178,7 +178,7 @@
 			<model kfm="21000646_M_FlakaRed" scale="4" shadowScale="380" rotationSpeed="720" walkSpeed="155" runSpeed="310" />
 			<stat hp="647336" asp="100" msp="100" atp="81" evp="82" cap="42" cad="500" car="50" ndd="39" pap="1316" map="1316" par="105" mar="105" />
 			<distance avoid="90" sight="1200" sightHeightUP="300" sightHeightDown="0" />
-			<skill ids="40060001" levels="1" probs="100" />
+			<skill ids="60083001,60083011,60083021" levels="1,1,1" />
 			<collision shape="box" width="60" height="80" depth="60" />
 			<capsule radius="40" height="150" />
 			<dead time="5" defaultaction="Dead_A,Dead_B" upaction="Dead_B" />
@@ -198,7 +198,7 @@
 			<model kfm="02020110_M_slime03" shadowScale="80" rotationSpeed="720" walkSpeed="205" runSpeed="410" />
 			<stat hp="784" asp="100" msp="100" atp="80" evp="82" cap="42" cad="500" car="50" ndd="39" pap="913" map="913" />
 			<distance avoid="75" sight="1200" sightHeightUP="300" sightHeightDown="0" />
-			<skill ids="49013001" levels="1" probs="100" />
+			<skill ids="49013001" probs="100" />
 			<collision shape="box" width="84" height="94" depth="84" />
 			<capsule radius="45" height="150" />
 			<dead time="0.5" defaultaction="Dead_A,Dead_B" upaction="Dead_B" />

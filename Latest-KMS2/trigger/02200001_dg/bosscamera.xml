@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ms2>
+	<state name="시작대기중">
+		<condition name="무조건">
+			<transition state="초기화"/>
+		</condition>
+	</state>
+	<state name="초기화">
+		<onEnter>
+			<action name="SetUserValue" key="CamRotate" value="2"/>
+			<action name="SetUserValue" key="UseBlueAge" value="0"/>
+		</onEnter>
+		<condition name="무조건" > 
+			<transition state="대기"/>
+		</condition>
+	</state>
+	<state name="대기">
+		<onEnter>
+		</onEnter>
+		<condition name="WaitTick" waitTick="200">
+			<transition state="카메라세팅"/>
+		</condition>
+	</state>
+	<state name="카메라세팅">
+		<condition name="UserValue" key="CamRotate" value="1">
+			<transition state="카메라회전시작"/>
+		</condition>
+		<condition name="UserValue" key="CamRotate" value="0">
+			<transition state="카메라회전종료"/>
+		</condition>
+		<condition name="UserValue" key="UseBlueAge" value="1">
+			<transition state="화염충격파시전"/>
+		</condition>
+		<condition name="무조건" > 
+				<transition state="대기"/>
+		</condition>
+	</state>
+	<state name="카메라회전시작">
+		<onEnter>
+			<action name="LookCenterCameraOnOff" on="1"/>
+			<action name="SetUserValue" key="CamRotate" value="2"/>
+		</onEnter>
+		<condition name="무조건" > 
+				<transition state="대기"/>
+		</condition>
+	</state>
+	<state name="카메라회전종료">
+		<onEnter>
+			<action name="LookCenterCameraOnOff" on="0"/>
+			<action name="SetUserValue" key="CamRotate" value="2"/>
+		</onEnter>
+		<condition name="무조건" >
+				<transition state="대기"/>
+		</condition>
+	</state>
+	<state name="화염충격파시전">
+		<onEnter>
+			<action name="SetUserValue" key="UseBlueAge" value="0"/>
+			<action name="DungeonMissionComplete" missionID="23190005"/>
+		</onEnter>
+		<condition name="무조건" >
+				<transition state="대기"/>
+		</condition>
+	</state>
+</ms2>
