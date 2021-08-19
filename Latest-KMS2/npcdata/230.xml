@@ -5,7 +5,7 @@
 			<model kfm="02030016_B_DevilHugeRed" shadowScale="800" rotationSpeed="720" walkSpeed="150" runSpeed="300" />
 			<stat hp="3100377" asp="100" msp="100" atp="120" evp="87" cap="48" cad="500" car="50" ndd="121" pap="8300" map="8300" par="120" mar="120" />
 			<distance avoid="400" sight="600" sightHeightUP="300" sightHeightDown="130" customLastSightRadius="4000" customLastSightHeightUp="410" customLastSightHeightDown="130" />
-			<skill ids="50000245" levels="1" probs="100" />
+			<skill ids="50000245,50000246,50000249,50000249,50000251,50000251,50000252,50000253,50000254,50100381,50100381,50100382,50100382,50100382,50100382,50100382,50100382,50100384,50100385,50100385,50100385,50100385,50100385,50100385,50100386" levels="1,1,1,2,1,2,1,1,1,1,2,1,2,3,4,5,6,1,1,2,3,4,5,6,1" />
 			<additionalEffect codes="50004400" levels="1" />
 			<collision shape="box" width="450" height="400" depth="375" />
 			<corpse width="600" height="150" depth="380" added="220" offsetNametag="-200" hitAble="1" rotation="345" />
@@ -13,7 +13,7 @@
 			<dead time="20" defaultaction="Dead_A" upaction="Dead_A" />
 			<normal action="Idle_A,Bore_A" prob="5000,5000" movearea="150" />
 			<dropiteminfo dropHeight="180" dropDistanceBase="300" dropDistanceRandom="20" globalDropBoxId="4" globalDeadDropBoxId="1011" individualDropBoxId="23000001,723000001" globalHitDropBoxId="100000" />
-			<aiInfo path="AI_DevilHugeRed.xml" />
+			<aiInfo path="AI_DevilHugeRed.xml" summonNpcIDs="21800901,21400072" />
 			<effectdummy>
 				<dummy name="Eff_Head">
 					<attachInfo parentNode="Bip01 Head" />
@@ -55,7 +55,7 @@
 			<model kfm="23000006_B_SandstoneGiantBlueShine" scale="2.3" shadowScale="640" rotationSpeed="720" walkSpeed="125" runSpeed="250" />
 			<stat hp="8001515" asp="100" msp="100" atp="120" evp="94" cap="62" cad="500" car="50" ndd="709" pap="398297" map="398422" par="120" mar="120" />
 			<distance avoid="400" sight="600" sightHeightUP="1000" sightHeightDown="225" customLastSightRadius="9999" customLastSightHeightUp="9999" customLastSightHeightDown="9999" />
-			<skill ids="50001000" levels="1" probs="100" />
+			<skill ids="50000232,50000268,50000268,50000268,50000268,50001000,50001001,50001001,50001001,50001010,50001010,50001010,50001011,50001011,50001011,50001011,50001012,50001012,50001014,50001015,50001015,50001015,50001020,50001021,50001022" levels="5,5,6,7,8,2,3,4,5,1,2,3,5,6,7,8,1,2,1,3,4,5,1,1,1" />
 			<additionalEffect codes="50004400" levels="1" />
 			<collision shape="box" width="152.174" height="217.391" depth="152.174" />
 			<corpse width="700" height="150" depth="330" added="170" offsetNametag="-200" rotation="345" />
@@ -63,7 +63,7 @@
 			<dead time="10" defaultaction="Dead_A" upaction="Dead_A" extendRoomTime="60000" />
 			<normal action="Idle_A,Bore_A,Walk_A" prob="5000,3000,2000" movearea="150" />
 			<dropiteminfo globalDropBoxId="74" />
-			<aiInfo path="BossDungeon/SandstoneGiantBlueShine/AI_SandstoneGiantBlueShine.xml" />
+			<aiInfo path="BossDungeon/SandstoneGiantBlueShine/AI_SandstoneGiantBlueShine.xml" summonNpcIDs="21400003,21400004" />
 			<effectdummy>
 				<dummy name="Eff_Head">
 					<attachInfo parentNode="Bip01 Head" />
@@ -105,7 +105,7 @@
 			<model kfm="23000007_B_DevilHugeBlue" shadowScale="800" rotationSpeed="720" walkSpeed="150" runSpeed="300" />
 			<stat hp="10544657" asp="100" msp="100" atp="120" evp="88" cap="52" cad="500" car="50" ndd="223" pap="54486" map="54501" par="120" mar="120" />
 			<distance avoid="400" sight="6000" sightHeightUP="300" sightHeightDown="130" customLastSightRadius="999999" customLastSightHeightUp="410" customLastSightHeightDown="350" />
-			<skill ids="50100385" levels="1" probs="100" />
+			<skill ids="50100396,50100396,50100396,50100397,50100400,50100401,50100402,50100402,50100403,50100403,50100405,50100405,50100405" levels="1,2,3,1,1,2,1,2,1,2,4,5,6" />
 			<additionalEffect codes="50004400" levels="1" />
 			<collision shape="box" width="450" height="400" depth="375" />
 			<corpse width="600" height="150" depth="380" added="220" offsetNametag="-200" rotation="345" />
@@ -113,7 +113,7 @@
 			<dead time="10" defaultaction="Dead_A" upaction="Dead_A" extendRoomTime="60000" />
 			<normal action="Idle_A,Bore_A,Walk_A" prob="5000,3000,2000" movearea="150" />
 			<dropiteminfo globalDropBoxId="74" />
-			<aiInfo path="BossDungeon/DevilHugeBlue/AI_DevilHugeBlue.xml" />
+			<aiInfo path="BossDungeon/DevilHugeBlue/AI_DevilHugeBlue.xml" summonNpcIDs="21404189,21403189" />
 			<effectdummy>
 				<dummy name="Eff_Head">
 					<attachInfo parentNode="Bip01 Head" />
@@ -155,7 +155,7 @@
 			<model kfm="23000008_B_DevilhugeBrown" shadowScale="800" rotationSpeed="720" walkSpeed="150" runSpeed="300" />
 			<stat hp="4113245" asp="100" msp="100" atp="120" evp="87" cap="49" cad="500" car="50" ndd="151" pap="12404" map="12404" par="120" mar="120" />
 			<distance avoid="400" sight="600" sightHeightUP="300" sightHeightDown="130" customLastSightRadius="4000" customLastSightHeightUp="410" customLastSightHeightDown="130" />
-			<skill ids="50000245" levels="1" probs="100" />
+			<skill ids="50000245,50000246,50000248,50000248,50000250,50000250,50000250,50000250,50000250,50000250,50000254,50009998,50100381,50100381,50100385,50100385,50100385,50100385,50100385,50100385,50100387" levels="1,1,1,2,1,2,3,4,5,6,1,1,1,2,1,2,3,4,5,6,1" />
 			<additionalEffect codes="50004400" levels="1" />
 			<collision shape="box" width="450" height="400" depth="375" />
 			<corpse width="600" height="150" depth="380" added="220" offsetNametag="-200" hitAble="1" rotation="345" />
@@ -163,7 +163,7 @@
 			<dead time="20" defaultaction="Dead_A" upaction="Dead_A" />
 			<normal action="Idle_A,Bore_A,Run_A" prob="5000,3000,2000" movearea="150" />
 			<dropiteminfo dropHeight="180" dropDistanceBase="300" dropDistanceRandom="20" globalDropBoxId="4" globalDeadDropBoxId="1011" individualDropBoxId="23000008,723000008" globalHitDropBoxId="100000" />
-			<aiInfo path="AI_DevilHugeBrown.xml" />
+			<aiInfo path="AI_DevilHugeBrown.xml" summonNpcIDs="21400188,21403188,21402188,21404188,21401188" />
 			<effectdummy>
 				<dummy name="Eff_Head">
 					<attachInfo parentNode="Bip01 Head" />
@@ -205,7 +205,7 @@
 			<model kfm="02030009_M_Ureus" scale="1.4" shadowScale="360" rotationSpeed="720" walkSpeed="150" runSpeed="600" />
 			<stat hp="277636449" asp="100" msp="100" atp="120" evp="91" cap="62" cad="500" car="50" ndd="690" pap="230443" map="230443" par="120" mar="120" />
 			<distance avoid="140" sight="800" sightHeightUP="300" sightHeightDown="0" customLastSightRadius="2500" customLastSightHeightUp="525" customLastSightHeightDown="225" />
-			<skill ids="50100015" levels="1" probs="100" />
+			<skill ids="60094001,60094002,60094011,60094021,60094031,60094041,60094051,60094061,60094062,60094071" levels="1,1,1,1,1,1,1,1,1,1" />
 			<additionalEffect codes="49016002,50004400" levels="1,1" />
 			<collision shape="box" width="180" height="180" depth="180" />
 			<corpse width="350" height="200" depth="770" offsetNametag="-200" hitAble="1" rotation="0" />
@@ -213,7 +213,7 @@
 			<dead time="20" defaultaction="Dead_A" upaction="Dead_A" />
 			<normal action="Idle_A,Bore_A,Walk_A" prob="3500,2000,4500" movearea="150" />
 			<dropiteminfo dropHeight="200" dropDistanceBase="160" dropDistanceRandom="10" fireVelocity="150" globalDropBoxId="4" globalDeadDropBoxId="1011" individualDropBoxId="23000009" globalHitDropBoxId="100000" />
-			<aiInfo path="AI_UreusBoss.xml" />
+			<aiInfo path="AI_UreusBoss.xml" summonNpcIDs="21400006,21400007,21400008" />
 			<effectdummy>
 				<dummy name="Eff_UI">
 					<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
@@ -227,7 +227,7 @@
 			<model kfm="23000011_B_LizardDragonFire" scale="1.4" shadowScale="900" rotationSpeed="400" walkSpeed="200" runSpeed="400" />
 			<stat hp="41428596" asp="100" msp="100" atp="120" evp="97" cap="62" cad="500" car="50" ndd="829" pap="769098" map="769204" par="120" mar="120" />
 			<distance avoid="400" sight="99999" sightHeightUP="300" sightHeightDown="80" customLastSightRadius="99999" customLastSightHeightUp="525" customLastSightHeightDown="80" />
-			<skill ids="50009999" levels="1" probs="100" />
+			<skill ids="50100780,50100781,50100782,50100782,50100782,50100783,50100784,50100784,50100785,50100785,50100786,50100787,50100787,50100787,50100787,50100787,50100787,50100787,50100787,50100788,50100788,50100788,50100788,50100789,50100790,50100791,50100791" levels="1,1,1,2,3,1,1,2,1,2,1,1,2,3,4,5,6,13,14,1,2,3,4,1,2,1,2" />
 			<additionalEffect codes="50004400" levels="1" />
 			<collision shape="box" width="250" height="210" depth="330" depthOffset="180" />
 			<corpse width="350" height="200" depth="770" offsetNametag="-200" rotation="0" />
@@ -235,7 +235,7 @@
 			<dead time="10" defaultaction="Dead_A" upaction="Dead_A" extendRoomTime="60000" />
 			<normal action="Idle_A,Bore_A,Walk_A" prob="5000,3000,2000" movearea="150" />
 			<dropiteminfo dropHeight="300" dropDistanceBase="300" dropDistanceRandom="20" globalDropBoxId="74" globalDeadDropBoxId="1011" />
-			<aiInfo path="AI_LizardDragonFire.xml" />
+			<aiInfo path="AI_LizardDragonFire.xml" summonNpcIDs="21802409" />
 			<effectdummy>
 				<dummy name="Eff_Head">
 					<attachInfo parentNode="Bip01 Head" />
@@ -273,7 +273,7 @@
 			<model kfm="23000012_B_LizardDragonIce" scale="1.4" shadowScale="900" rotationSpeed="400" walkSpeed="200" runSpeed="400" />
 			<stat hp="202844348" asp="100" msp="100" atp="120" evp="87" cap="62" cad="500" car="50" ndd="690" pap="256048" map="256048" par="120" mar="120" />
 			<distance avoid="400" sight="600" sightHeightUP="300" sightHeightDown="80" customLastSightRadius="3500" customLastSightHeightUp="525" customLastSightHeightDown="80" />
-			<skill ids="50009999" levels="1" probs="100" />
+			<skill ids="50100795,50100796,50100797,50100798,50100799,50100799,50100800,50100800,50100801,50100802,50100802,50100802,50100802,50100802,50100802,50100803,50100803,50100803,50100803,50100804,50100805,50100806,50100806,50100806,50100806,50100806,50100806,50100807,50100807,50100807,50100807,50100808,50100808" levels="1,1,1,1,1,2,1,2,1,1,2,3,4,5,6,1,2,3,4,1,1,1,2,3,4,5,6,1,2,3,4,1,2" />
 			<additionalEffect codes="50004400" levels="1" />
 			<collision shape="box" width="250" height="210" depth="330" depthOffset="180" />
 			<corpse width="350" height="200" depth="770" offsetNametag="-200" hitAble="1" rotation="0" />
@@ -281,7 +281,7 @@
 			<dead time="20" defaultaction="Dead_A" upaction="Dead_A" />
 			<normal action="Idle_A,Bore_A,Walk_A" prob="5000,3000,2000" movearea="150" />
 			<dropiteminfo dropHeight="300" dropDistanceBase="300" dropDistanceRandom="20" globalDropBoxId="4" globalDeadDropBoxId="1011" individualDropBoxId="23000012" globalHitDropBoxId="100000" />
-			<aiInfo path="AI_LizardDragonIce.xml" />
+			<aiInfo path="AI_LizardDragonIce.xml" summonNpcIDs="21800407,21801407,21802407,21803407" />
 			<effectdummy>
 				<dummy name="Eff_Head">
 					<attachInfo parentNode="Bip01 Head" />
@@ -319,7 +319,7 @@
 			<model kfm="23000013_B_FrogKingWizardGreen" scale="1.4" shadowScale="640" rotationSpeed="720" walkSpeed="90" runSpeed="180" />
 			<stat hp="1417485" asp="100" msp="100" atp="120" evp="87" cap="45" cad="500" car="50" ndd="70" pap="2941" map="2941" par="120" mar="120" />
 			<distance avoid="400" sight="800" sightHeightUP="300" sightHeightDown="90" customLastSightRadius="3500" customLastSightHeightUp="9999" customLastSightHeightDown="90" />
-			<skill ids="50100903" levels="1" probs="100" />
+			<skill ids="50009998,50100900,50100900,50100900,50100901,50100901,50100901,50100901,50100901,50100901,50100901,50100901,50100901,50100901,50100902,50100902,50100902,50100902,50100902,50100902,50100902,50100902,50100902,50100902,50100902,50100902,50100903,50100904,50100905,50100906" levels="1,1,2,3,1,3,4,5,6,21,22,23,222,223,3,4,5,6,7,8,21,22,23,25,26,33,1,1,1,1" />
 			<additionalEffect codes="50004400" levels="1" />
 			<collision shape="box" width="210" height="230" depth="150" />
 			<corpse width="350" height="150" depth="-250" added="600" offsetNametag="-200" hitAble="1" rotation="0" />
@@ -369,7 +369,7 @@
 			<model kfm="23000015_B_CaptainHookFish01" scale="1.8" shadowScale="640" rotationSpeed="720" walkSpeed="225" runSpeed="450" />
 			<stat hp="9386385" asp="100" msp="100" atp="120" evp="88" cap="57" cad="500" car="50" ndd="375" pap="135251" map="135294" par="120" mar="120" />
 			<distance avoid="400" sight="800" sightHeightUP="300" sightHeightDown="800" customLastSightRadius="9900" customLastSightHeightUp="525" customLastSightHeightDown="800" />
-			<skill ids="50100700" levels="1" probs="100" />
+			<skill ids="50100700,50100701,50100702,50100703,50100704,50100704,50100706,50100706,50100706,50100706,50100707,50100708,50100709,50100710,50100710,50100714,50100715,50100716,50100716" levels="1,1,1,1,1,2,1,2,3,4,1,1,1,1,2,1,1,1,2" />
 			<additionalEffect codes="50004400" levels="1" />
 			<collision shape="box" width="140" height="200" depth="125" />
 			<corpse width="350" height="150" depth="300" offsetNametag="-200" rotation="0" />
@@ -377,7 +377,7 @@
 			<dead time="10" defaultaction="Dead_A" upaction="Dead_A" extendRoomTime="60000" />
 			<normal action="Idle_A,Bore_A,Walk_A" prob="5000,3000,2000" movearea="150" />
 			<dropiteminfo globalDropBoxId="74" individualDropBoxId="723000015" />
-			<aiInfo path="BossDungeon/CaptainHookFish01/AI_CaptainHookFish01.xml" />
+			<aiInfo path="BossDungeon/CaptainHookFish01/AI_CaptainHookFish01.xml" summonNpcIDs="21400230,21400229,21800910,21401229,21402229" />
 			<effectdummy>
 				<dummy name="Eff_Head">
 					<attachInfo parentNode="Bip01 Head" />
@@ -414,7 +414,7 @@
 			<model kfm="23000017_B_TurtleHorn01" scale="1.4" shadowScale="850" rotationSpeed="400" walkSpeed="50" runSpeed="100" />
 			<stat hp="11764618" asp="100" msp="100" atp="120" evp="87" cap="56" cad="500" car="50" ndd="325" pap="47404" map="47404" par="120" mar="120" />
 			<distance avoid="400" sight="600" sightHeightUP="350" sightHeightDown="225" customLastSightRadius="3500" customLastSightHeightUp="350" customLastSightHeightDown="225" />
-			<skill ids="50000333" levels="1" probs="100" />
+			<skill ids="50000331,50000332,50000338,50000340,50000342,50000342,50000342,50000342,50000342,50009998,50100341,50100341,50100345,50100346,50100346,50100347,50100348,50100349" levels="1,1,1,1,4,5,6,7,8,1,1,2,1,1,2,1,1,1" />
 			<additionalEffect codes="50004400" levels="1" />
 			<collision shape="box" width="271.429" height="200" depth="342.857" />
 			<corpse width="450" height="250" depth="400" added="130" offsetNametag="-200" hitAble="1" rotation="180" />
@@ -464,7 +464,7 @@
 			<model kfm="23000018_B_TurtleHorn02" scale="1.4" shadowScale="850" rotationSpeed="400" walkSpeed="50" runSpeed="100" />
 			<stat hp="2078673" asp="100" msp="100" atp="120" evp="87" cap="46" cad="500" car="50" ndd="94" pap="5081" map="5081" par="120" mar="120" />
 			<distance avoid="400" sight="600" sightHeightUP="350" sightHeightDown="225" customLastSightRadius="3500" customLastSightHeightUp="350" customLastSightHeightDown="225" />
-			<skill ids="50000333" levels="1" probs="100" />
+			<skill ids="50000331,50000332,50000338,50000339,50000339,50000339,50000339,50000339,50000340,50009998,50100341,50100341,50100342,50100343,50100344,50100346,50100346" levels="1,1,1,4,5,6,7,8,1,1,1,2,1,1,1,1,2" />
 			<additionalEffect codes="50004400" levels="1" />
 			<collision shape="box" width="271.429" height="200" depth="342.857" />
 			<corpse width="450" height="250" depth="400" added="130" offsetNametag="-200" hitAble="1" rotation="180" />
@@ -514,7 +514,7 @@
 			<model kfm="23000019_B_GriffonIndian01" scale="2" shadowScale="640" rotationSpeed="720" walkSpeed="175" runSpeed="350" />
 			<stat hp="3759015" asp="100" msp="100" atp="120" evp="87" cap="49" cad="500" car="50" ndd="141" pap="10910" map="10910" par="120" mar="120" />
 			<distance avoid="400" sight="600" sightHeightUP="300" sightHeightDown="110" customLastSightRadius="3500" customLastSightHeightUp="525" customLastSightHeightDown="110" />
-			<skill ids="50000383" levels="1" probs="100" />
+			<skill ids="50000373,50000374,50000377,50000377,50000377,50000378,50000380,50000380,50000381,50000381,50000383,50000384,50000385,50009998" levels="1,1,3,6,7,1,1,2,1,2,1,1,3,1" />
 			<additionalEffect codes="50004400" levels="1" />
 			<collision shape="box" width="145" height="165" depth="225" />
 			<corpse width="300" height="250" depth="600" offsetNametag="-200" hitAble="1" rotation="-90" />
@@ -564,7 +564,7 @@
 			<model kfm="23000020_B_GriffonIndian02" scale="2" shadowScale="640" rotationSpeed="720" walkSpeed="175" runSpeed="350" />
 			<stat hp="6955418" asp="100" msp="100" atp="120" evp="87" cap="52" cad="500" car="50" ndd="223" pap="24518" map="24518" par="120" mar="120" />
 			<distance avoid="400" sight="600" sightHeightUP="300" sightHeightDown="110" customLastSightRadius="3500" customLastSightHeightUp="525" customLastSightHeightDown="110" />
-			<skill ids="50000383" levels="1" probs="100" />
+			<skill ids="50000373,50000376,50000377,50000377,50000377,50000378,50000380,50000380,50000381,50000381,50000382,50000383,50000384,50000387,50000387,50009998" levels="1,1,3,6,7,1,1,2,1,2,1,1,1,2,3,1" />
 			<additionalEffect codes="50004400" levels="1" />
 			<collision shape="box" width="145" height="165" depth="225" />
 			<corpse width="300" height="250" depth="600" offsetNametag="-200" hitAble="1" rotation="-90" />
@@ -614,7 +614,7 @@
 			<model kfm="23000021_B_GriffonPharaoh01" scale="2" shadowScale="640" rotationSpeed="720" walkSpeed="175" runSpeed="350" />
 			<stat hp="8952144" asp="100" msp="100" atp="120" evp="88" cap="57" cad="500" car="50" ndd="358" pap="124640" map="124680" par="120" mar="120" />
 			<distance avoid="400" sight="600" sightHeightUP="300" sightHeightDown="110" customLastSightRadius="5555" customLastSightHeightUp="9999" customLastSightHeightDown="9999" />
-			<skill ids="50000383" levels="1" probs="100" />
+			<skill ids="50000373,50000375,50000377,50000377,50000377,50000377,50000378,50000380,50000380,50000380,50000381,50000381,50000382,50000383,50000384,50000388,50009998" levels="1,1,4,6,7,8,1,1,2,3,1,2,1,1,1,3,1" />
 			<additionalEffect codes="50004400" levels="1" />
 			<combat canShowHideTarget="true" />
 			<collision shape="box" width="145" height="165" depth="225" />
@@ -665,7 +665,7 @@
 			<model kfm="23000024_B_BaphometHuman01" shadowScale="640" rotationSpeed="720" walkSpeed="200" runSpeed="400" />
 			<stat hp="14352800" asp="100" msp="100" atp="120" evp="87" cap="57" cad="500" car="50" ndd="375" pap="60863" map="60863" par="120" mar="120" />
 			<distance avoid="400" sight="600" sightHeightUP="300" sightHeightDown="1" customLastSightRadius="3500" customLastSightHeightUp="525" customLastSightHeightDown="1" />
-			<skill ids="50000326" levels="1" probs="100" />
+			<skill ids="50009998,50100350,50100350,50100351,50100352,50100353,50100354,50100355,50100356,50100357,50100359,50100360,50100361" levels="1,1,2,1,2,2,2,1,1,1,1,1,1" />
 			<additionalEffect codes="50004400" levels="1" />
 			<collision shape="box" width="320" height="380" depth="220" />
 			<corpse width="650" height="150" depth="250" added="120" offsetNametag="-200" hitAble="1" rotation="345" />
@@ -715,7 +715,7 @@
 			<model kfm="23000025_B_BaphometHuman02" shadowScale="640" rotationSpeed="720" walkSpeed="200" runSpeed="400" />
 			<stat hp="7718228" asp="100" msp="100" atp="120" evp="88" cap="55" cad="500" car="50" ndd="294" pap="88377" map="88405" par="120" mar="120" />
 			<distance avoid="400" sight="1800" sightHeightUP="300" sightHeightDown="1" customLastSightRadius="3500" customLastSightHeightUp="525" customLastSightHeightDown="1" />
-			<skill ids="50000326" levels="1" probs="100" />
+			<skill ids="50009998,50100350,50100350,50100351,50100352,50100353,50100354,50100355,50100355,50100355,50100355,50100355,50100355,50100355,50100356,50100357,50100359,50100360,50100362" levels="1,1,3,1,1,1,1,11,12,13,14,15,16,17,1,2,2,1,1" />
 			<additionalEffect codes="50004400" levels="1" />
 			<collision shape="box" width="320" height="380" depth="220" />
 			<corpse width="650" height="150" depth="250" added="120" offsetNametag="-200" rotation="345" />
@@ -765,7 +765,7 @@
 			<model kfm="23000026_B_BaphometHumanWhite" shadowScale="640" rotationSpeed="720" walkSpeed="200" runSpeed="400" />
 			<stat hp="339202273" asp="100" msp="100" atp="120" evp="87" cap="62" cad="500" car="50" ndd="690" pap="256048" map="256048" par="120" mar="120" />
 			<distance avoid="400" sight="600" sightHeightUP="300" sightHeightDown="1" customLastSightRadius="3500" customLastSightHeightUp="525" customLastSightHeightDown="1" />
-			<skill ids="50000326" levels="1" probs="100" />
+			<skill ids="50009998,50100350,50100350,50100350,50100351,50100352,50100353,50100354,50100355,50100355,50100355,50100355,50100355,50100355,50100356,50100357,50100359,50100360,50100363" levels="1,1,3,4,1,4,4,4,21,22,23,24,25,26,1,3,3,1,1" />
 			<additionalEffect codes="50004400" levels="1" />
 			<collision shape="box" width="320" height="380" depth="220" />
 			<corpse width="650" height="150" depth="250" added="120" offsetNametag="-200" hitAble="1" rotation="345" />
@@ -815,7 +815,7 @@
 			<model kfm="23000029_B_DragonLionHornBlue" scale="1.5" shadowScale="800" rotationSpeed="150" walkSpeed="175" runSpeed="350" />
 			<stat hp="290017943" asp="100" msp="100" atp="120" evp="94" cap="62" cad="500" car="50" ndd="690" pap="300856" map="300856" par="120" mar="120" />
 			<distance avoid="400" sight="600" sightHeightUP="300" sightHeightDown="110" customLastSightRadius="3500" customLastSightHeightUp="500" customLastSightHeightDown="600" />
-			<skill ids="50101100" levels="1" probs="100" />
+			<skill ids="50101100,50101101,50101102,50101103,50101103,50101103,50101103,50101103,50101104,50101105,50101106,50101106,50101107,50101108" levels="1,1,1,1,2,3,4,22,1,1,1,2,1,1" />
 			<additionalEffect codes="50004400" levels="1" />
 			<collision shape="box" width="170" height="210" depth="430" />
 			<corpse width="700" height="150" depth="300" offsetNametag="-200" hitAble="1" rotation="-270" />
@@ -865,7 +865,7 @@
 			<model kfm="23000033_B_YetiTwoHeadWhite" shadowScale="950" rotationSpeed="720" walkSpeed="200" runSpeed="400" />
 			<stat hp="25113871" asp="100" msp="100" atp="120" evp="88" cap="62" cad="500" car="50" ndd="567" pap="284498" map="284587" par="120" mar="120" />
 			<distance avoid="400" sight="600" sightHeightUP="300" customLastSightRadius="3500" customLastSightHeightUp="525" customLastSightHeightDown="50" />
-			<skill ids="50100407" levels="1" probs="100" />
+			<skill ids="50100407,50100409,50100409,50100409,50100480,50100480,50100480,50100480,50100480,50100481,50100483,50100484,50100484,50100484,50100484,50100485,50100485,50100485,50100485,50100486,50100486,50100486,50100486,50100487,50100487,50100487,50100488,50100488,50100488,50100488,50100488,50100488,50100488,50100489,50100489,50100489,50100490,50100490,50100490,50100490,50100490,50100491,50100491,50100492" levels="1,1,2,3,1,2,3,4,5,1,1,1,2,3,4,1,2,3,4,2,3,4,5,1,2,3,1,2,3,4,5,6,7,1,2,3,1,2,3,4,5,1,2,1" />
 			<additionalEffect codes="50004400" levels="1" />
 			<collision shape="box" width="480" height="350" depth="380" />
 			<corpse width="650" height="150" depth="350" added="120" offsetNametag="-200" rotation="345" />
@@ -873,7 +873,7 @@
 			<dead time="10" defaultaction="Dead_A" upaction="Dead_A" extendRoomTime="60000" />
 			<normal action="Idle_A,Bore_A,Walk_A" prob="5000,3000,2000" movearea="150" />
 			<dropiteminfo globalDropBoxId="74" />
-			<aiInfo path="BossDungeon/YetiTwoHeadWhite/AI_YetiTwoHeadWhite.xml" />
+			<aiInfo path="BossDungeon/YetiTwoHeadWhite/AI_YetiTwoHeadWhite.xml" summonNpcIDs="21409133,21409233,21409033,21409333" />
 			<effectdummy>
 				<dummy name="Eff_Head">
 					<attachInfo parentNode="Bip01 Spine2" />
@@ -915,7 +915,7 @@
 			<model kfm="23000034_B_YetiTwoHeadBlack" shadowScale="950" rotationSpeed="720" walkSpeed="200" runSpeed="400" />
 			<stat hp="17588601" asp="100" msp="100" atp="120" evp="87" cap="59" cad="500" car="50" ndd="429" pap="76961" map="76961" par="120" mar="120" />
 			<distance avoid="400" sight="600" sightHeightUP="300" sightHeightDown="225" customLastSightRadius="3500" customLastSightHeightUp="525" customLastSightHeightDown="225" />
-			<skill ids="50100407" levels="1" probs="100" />
+			<skill ids="50100411,50100418,50100418,50100418,50100418,50100418,50100420,50100421,50100422,50100423,50100424,50100424,50100424,50100424,50100424,50100424,50100424,50100424,50100424,50100425,50100425,50100425,50100426,50100427,50100427,50100427,50100428,50100428,50100428,50100428,50100428,50100428,50100428,50100428,50100429,50100429,50100429,50100429" levels="1,1,2,3,4,5,1,1,1,1,1,2,3,11,12,13,21,22,23,1,2,3,1,1,2,3,1,2,3,4,11,12,13,14,1,2,3,4" />
 			<additionalEffect codes="50004400" levels="1" />
 			<collision shape="box" width="480" height="430" depth="380" />
 			<corpse width="650" height="150" depth="350" added="120" offsetNametag="-200" hitAble="1" rotation="345" />
@@ -923,7 +923,7 @@
 			<dead time="20" defaultaction="Dead_A" upaction="Dead_A" />
 			<normal action="Idle_A,Bore_A,Walk_A" prob="5000,3000,2000" movearea="150" />
 			<dropiteminfo dropHeight="300" dropDistanceBase="300" dropDistanceRandom="20" globalDropBoxId="4" globalDeadDropBoxId="1011" individualDropBoxId="23000034" globalHitDropBoxId="100000" />
-			<aiInfo path="AI_YetiTwoHeadBlack.xml" />
+			<aiInfo path="AI_YetiTwoHeadBlack.xml" summonNpcIDs="22409034" />
 			<effectdummy>
 				<dummy name="Eff_Head">
 					<attachInfo parentNode="Bip01 Spine2" />
@@ -965,7 +965,7 @@
 			<model kfm="23000035_B_YetiTwoHeadGreen" scale="1.05" shadowScale="950" rotationSpeed="720" walkSpeed="200" runSpeed="400" />
 			<stat hp="8133308" asp="100" msp="100" atp="120" evp="87" cap="53" cad="500" car="50" ndd="250" pap="30066" map="30066" par="120" mar="120" />
 			<distance avoid="400" sight="600" sightHeightUP="300" sightHeightDown="130" customLastSightRadius="3500" customLastSightHeightUp="525" customLastSightHeightDown="130" />
-			<skill ids="50100407" levels="1" probs="100" />
+			<skill ids="50100407,50100407,50100407,50100407,50100408,50100408,50100408,50100408,50100409,50100409,50100409,50100410,50100411,50100412,50100413,50100414,50100414,50100415,50100416,50100417,50100417,50100417,50100419" levels="1,2,3,4,1,2,3,4,1,2,3,1,1,1,1,1,2,1,1,1,2,3,1" />
 			<additionalEffect codes="50004400" levels="1" />
 			<collision shape="box" width="480" height="430" depth="380" />
 			<corpse width="650" height="150" depth="350" added="120" offsetNametag="-200" hitAble="1" rotation="345" />
@@ -973,7 +973,7 @@
 			<dead time="20" defaultaction="Dead_A" upaction="Dead_A" />
 			<normal action="Idle_A,Bore_A,Walk_A" prob="5000,3000,2000" movearea="150" />
 			<dropiteminfo dropHeight="300" dropDistanceBase="300" dropDistanceRandom="20" globalDropBoxId="4" globalDeadDropBoxId="1011" individualDropBoxId="23000035,723000035" globalHitDropBoxId="100000" />
-			<aiInfo path="AI_YetiTwoHeadGreen.xml" />
+			<aiInfo path="AI_YetiTwoHeadGreen.xml" summonNpcIDs="21400037,22409035" />
 			<effectdummy>
 				<dummy name="Eff_Head">
 					<attachInfo parentNode="Bip01 Spine2" />
@@ -1015,7 +1015,7 @@
 			<model kfm="23000039_B_BullArmorBlue" scale="1.25" shadowScale="640" rotationSpeed="720" walkSpeed="200" runSpeed="400" />
 			<stat hp="4046770" asp="100" msp="100" atp="120" evp="88" cap="51" cad="500" car="50" ndd="198" pap="44076" map="44089" par="120" mar="120" />
 			<distance avoid="400" sight="1100" sightHeightUP="320" sightHeightDown="1" customLastSightRadius="3500" customLastSightHeightUp="525" customLastSightHeightDown="1" />
-			<skill ids="50100855" levels="1" probs="100" />
+			<skill ids="50100850,50100850,50100850,50100850,50100850,50100850,50100851,50100851,50100851,50100851,50100851,50100851,50100851,50100851,50100852,50100852,50100852,50100852,50100853,50100853,50100853,50100853,50100853,50100854,50100854,50100854,50100854,50100854,50100855,50100856,50100857,50100858,50100859" levels="1,2,3,4,5,6,1,2,3,4,5,6,12,13,1,2,3,11,1,2,3,4,11,1,2,3,4,22,1,1,1,1,1" />
 			<additionalEffect codes="50004400" levels="1" />
 			<collision shape="box" width="220" height="250" depth="230" />
 			<corpse width="650" height="150" depth="250" added="120" offsetNametag="-200" rotation="345" />
@@ -1061,7 +1061,7 @@
 			<model kfm="23000041_B_BullArmorRed" scale="1.25" shadowScale="640" rotationSpeed="720" walkSpeed="200" runSpeed="400" />
 			<stat hp="10228390" asp="100" msp="100" atp="120" evp="88" cap="56" cad="500" car="50" ndd="342" pap="114646" map="114683" par="120" mar="120" />
 			<distance avoid="400" sight="1100" sightHeightUP="320" sightHeightDown="1" customLastSightRadius="5000" customLastSightHeightUp="9999" customLastSightHeightDown="900" />
-			<skill ids="50100855" levels="1" probs="100" />
+			<skill ids="50100855,50100856,50100857,50100858,50100860,50100860,50100860,50100860,50100860,50100860,50100862,50100862,50100862,50100862,50100862,50100862,50100863,50100865,50100865,50100865,50100866,50100867,50100867,50100867,50100867,50100867,50100867,50100867,50100867,50100868,50100869,50100869,50100870,50100871,50100871,50100871,50100871,50100871,50100871,50100872,50100872,50100872,50100872,50100872" levels="1,1,1,1,1,2,3,4,5,6,1,2,3,4,5,11,1,1,2,3,1,1,2,3,4,5,6,41,44,1,1,2,1,1,2,3,4,5,6,1,2,3,4,22" />
 			<additionalEffect codes="50004400" levels="1" />
 			<collision shape="box" width="220" height="250" depth="230" />
 			<corpse width="650" height="150" depth="250" added="120" offsetNametag="-200" rotation="345" />
@@ -1107,7 +1107,7 @@
 			<model kfm="23000045_B_CerberosThreeHeadBrown" scale="1.45" shadowScale="950" rotationSpeed="720" walkSpeed="275" runSpeed="550" />
 			<stat hp="23890573" asp="100" msp="100" atp="120" evp="87" cap="61" cad="500" car="50" ndd="505" pap="103984" map="103984" par="120" mar="120" />
 			<distance avoid="400" sight="900" sightHeightUP="525" sightHeightDown="1" customLastSightRadius="3500" customLastSightHeightUp="525" customLastSightHeightDown="1" />
-			<skill ids="50100600" levels="1" probs="100" />
+			<skill ids="50009998,50100609,50100610,50100611,50100612,50100613,50100614,50100615,50100616,50100617,50100618,50100619,50100619,50100621,50100622" levels="1,1,1,1,1,1,1,1,1,1,1,1,2,1,1" />
 			<additionalEffect codes="50004400" levels="1" />
 			<collision shape="box" width="230" height="310" depth="400" />
 			<corpse width="500" height="150" depth="350" added="120" offsetNametag="-200" hitAble="1" rotation="345" />
@@ -1115,7 +1115,7 @@
 			<dead time="20" defaultaction="Dead_A" upaction="Dead_A" />
 			<normal action="Idle_A,Bore_A,Walk_A" prob="5000,3000,2000" movearea="150" />
 			<dropiteminfo dropHeight="300" dropDistanceBase="300" dropDistanceRandom="20" globalDropBoxId="4" globalDeadDropBoxId="1011" individualDropBoxId="23000045" globalHitDropBoxId="100000" />
-			<aiInfo path="AI_CerberosThreeHeadBrown.xml" />
+			<aiInfo path="AI_CerberosThreeHeadBrown.xml" summonNpcIDs="21402745,21403745,21400745,21401745" />
 			<effectdummy>
 				<dummy name="Eff_Head">
 					<attachInfo parentNode="Bip01 Head" />
@@ -1157,7 +1157,7 @@
 			<model kfm="23000045_B_CerberosThreeHeadPurple" scale="1.45" shadowScale="950" rotationSpeed="720" walkSpeed="175" runSpeed="350" />
 			<stat hp="29946622" asp="100" msp="100" atp="120" evp="87" cap="62" cad="500" car="50" ndd="567" pap="128024" map="128024" par="120" mar="120" />
 			<distance avoid="400" sight="900" sightHeightUP="525" sightHeightDown="1" customLastSightRadius="3500" customLastSightHeightUp="525" customLastSightHeightDown="1" />
-			<skill ids="50100600" levels="1" probs="100" />
+			<skill ids="50009998,50100609,50100610,50100611,50100612,50100613,50100614,50100615,50100616,50100617,50100618,50100619,50100619,50100621,50100622" levels="1,1,1,1,1,1,1,1,1,1,1,1,2,1,1" />
 			<additionalEffect codes="50004400" levels="1" />
 			<collision shape="box" width="230" height="310" depth="400" />
 			<corpse width="500" height="150" depth="350" added="120" offsetNametag="-200" rotation="345" />
@@ -1165,7 +1165,7 @@
 			<dead time="10" defaultaction="Dead_A" upaction="Dead_A" />
 			<normal action="Idle_A,Bore_A,Walk_A" prob="5000,3000,2000" movearea="150" />
 			<dropiteminfo globalDropBoxId="74" />
-			<aiInfo path="AI_CerberosThreeHeadBrown.xml" />
+			<aiInfo path="AI_CerberosThreeHeadBrown.xml" summonNpcIDs="21402745,21403745,21400745,21401745" />
 			<effectdummy>
 				<dummy name="Eff_Head">
 					<attachInfo parentNode="Bip01 Head" />
@@ -1207,7 +1207,7 @@
 			<model kfm="23000047_B_CerberosThreeHeadGreen" scale="1.45" shadowScale="950" rotationSpeed="720" walkSpeed="175" runSpeed="350" />
 			<stat hp="14352800" asp="100" msp="100" atp="120" evp="87" cap="57" cad="500" car="50" ndd="375" pap="60863" map="60863" par="120" mar="120" />
 			<distance avoid="400" sight="900" sightHeightUP="525" sightHeightDown="1" customLastSightRadius="3500" customLastSightHeightUp="525" customLastSightHeightDown="1" />
-			<skill ids="50100600" levels="1" probs="100" />
+			<skill ids="50009998,50100600,50100601,50100602,50100603,50100604,50100605,50100606,50100607,50100608,50100608,50100609" levels="1,1,1,1,1,1,1,1,1,1,2,1" />
 			<additionalEffect codes="50004400" levels="1" />
 			<collision shape="box" width="230" height="310" depth="400" />
 			<corpse width="500" height="150" depth="350" added="120" offsetNametag="-200" hitAble="1" rotation="345" />
@@ -1215,7 +1215,7 @@
 			<dead time="20" defaultaction="Dead_A" upaction="Dead_A" />
 			<normal action="Idle_A,Bore_A,Walk_A" prob="5000,3000,2000" movearea="150" />
 			<dropiteminfo dropHeight="300" dropDistanceBase="300" dropDistanceRandom="20" globalDropBoxId="4" globalDeadDropBoxId="1011" individualDropBoxId="23000047,723000047" globalHitDropBoxId="100000" />
-			<aiInfo path="AI_CerberosThreeHeadGreen.xml" />
+			<aiInfo path="AI_CerberosThreeHeadGreen.xml" summonNpcIDs="21400746,21402746,21401746" />
 			<effectdummy>
 				<dummy name="Eff_Head">
 					<attachInfo parentNode="Bip01 Head" />
@@ -1257,7 +1257,7 @@
 			<model kfm="23000048_B_SkullWizardCaptainBlack" shadowScale="640" rotationSpeed="720" walkSpeed="200" runSpeed="400" />
 			<stat hp="21227812" asp="100" msp="100" atp="120" evp="88" cap="62" cad="500" car="50" ndd="567" pap="284498" map="284587" par="120" mar="120" />
 			<distance avoid="400" sight="600" sightHeightUP="525" sightHeightDown="225" customLastSightRadius="3500" customLastSightHeightUp="525" customLastSightHeightDown="225" />
-			<skill ids="49069001" levels="1" probs="100" />
+			<skill ids="49069001" probs="100" />
 			<additionalEffect codes="50004400" levels="1" />
 			<collision shape="box" width="240" height="280" depth="180" />
 			<corpse width="430" height="150" depth="380" added="40" offsetNametag="-200" hitAble="1" rotation="170" />
@@ -1272,7 +1272,7 @@
 			<model kfm="23000049_B_SkullWizardCaptainGreen" scale="1.3" shadowScale="640" rotationSpeed="720" walkSpeed="200" runSpeed="400" />
 			<stat hp="31554" asp="100" msp="100" atp="120" evp="88" cap="38" cad="500" car="50" ndd="9" pap="73" map="73" par="120" mar="120" />
 			<distance avoid="400" sight="600" sightHeightUP="525" sightHeightDown="225" customLastSightRadius="3500" customLastSightHeightUp="525" customLastSightHeightDown="225" />
-			<skill ids="49069001" levels="1" probs="100" />
+			<skill ids="60091001,60091011,60091031,60091041,60091051,60091061" levels="1,1,1,1,1,1" />
 			<additionalEffect codes="50004400" levels="1" />
 			<collision shape="box" width="240" height="280" depth="180" />
 			<corpse width="430" height="150" depth="380" added="40" offsetNametag="-200" hitAble="1" rotation="170" />
@@ -1316,7 +1316,7 @@
 			<model kfm="23000052_B_KnightHollowArmorSwordRed" scale="1.3" shadowScale="640" rotationSpeed="720" walkSpeed="200" runSpeed="400" />
 			<stat hp="81374912" asp="100" msp="100" atp="120" evp="93" cap="62" cad="500" car="50" ndd="897" pap="894299" map="894424" par="120" mar="120" />
 			<distance avoid="400" sight="2400" sightHeightUP="525" sightHeightDown="1" customLastSightRadius="3500" customLastSightHeightUp="525" customLastSightHeightDown="170" />
-			<skill ids="50000326" levels="1" probs="100" />
+			<skill ids="50101150,50101151,50101152,50101152,50101152,50101152,50101152,50101153,50101153,50101154,50101155,50101155,50101155,50101155,50101155,50101156,50101157,50101157,50101157,50101157,50101157,50101158,50101158" levels="1,1,1,2,3,22,23,1,2,1,1,2,3,22,23,1,1,2,3,4,33,1,2" />
 			<additionalEffect codes="50004400" levels="1" />
 			<collision shape="box" width="320" height="380" depth="220" />
 			<corpse width="650" height="150" depth="250" added="120" offsetNametag="-200" rotation="345" />
@@ -1324,7 +1324,7 @@
 			<dead time="10" defaultaction="Dead_A" upaction="Dead_A" extendRoomTime="60000" />
 			<normal action="Idle_A,Bore_A,Walk_A" prob="6000,2500,1500" movearea="150" />
 			<dropiteminfo dropHeight="300" dropDistanceBase="300" dropDistanceRandom="20" globalDropBoxId="74" globalDeadDropBoxId="1011" />
-			<aiInfo path="BossDungeon/KnightHollowArmorSwordRed/AI_KnightHollowArmorSwordRed.xml" />
+			<aiInfo path="BossDungeon/KnightHollowArmorSwordRed/AI_KnightHollowArmorSwordRed.xml" summonNpcIDs="21400046,21400146,21400246,21400446,21400346,21400546" />
 			<effectdummy>
 				<dummy name="Eff_Head">
 					<attachInfo parentNode="Bip01 Head" />
@@ -1366,7 +1366,7 @@
 			<model kfm="23000053_B_KnightHollowArmorSwordBlue" scale="1.3" shadowScale="640" rotationSpeed="720" walkSpeed="200" runSpeed="400" />
 			<stat hp="27084318" asp="100" msp="100" atp="120" evp="93" cap="72" cad="500" car="70" ndd="1071" pap="1595680" map="1595680" par="120" mar="120" />
 			<distance avoid="400" sight="2400" sightHeightUP="525" sightHeightDown="1" customLastSightRadius="3500" customLastSightHeightUp="525" customLastSightHeightDown="170" />
-			<skill ids="50000326" levels="1" probs="100" />
+			<skill ids="50101150,50101151,50101152,50101152,50101152,50101152,50101152,50101153,50101153,50101154,50101155,50101155,50101155,50101155,50101155,50101156,50101157,50101157,50101157,50101157,50101157,50101158,50101158" levels="1,1,1,2,3,22,23,1,2,1,1,2,3,22,23,1,1,2,3,4,33,1,2" />
 			<additionalEffect codes="50004400" levels="1" />
 			<collision shape="box" width="320" height="380" depth="220" />
 			<corpse width="650" height="150" depth="250" added="120" offsetNametag="-200" rotation="345" />
@@ -1374,7 +1374,7 @@
 			<dead time="10" defaultaction="Dead_A" upaction="Dead_A" />
 			<normal action="Idle_A,Bore_A,Walk_A" prob="6000,2500,1500" movearea="150" />
 			<dropiteminfo dropHeight="300" dropDistanceBase="300" dropDistanceRandom="20" globalDropBoxId="74" />
-			<aiInfo path="BossDungeon/KnightHollowArmorSwordRed/AI_KnightHollowArmorSwordRed.xml" />
+			<aiInfo path="BossDungeon/KnightHollowArmorSwordRed/AI_KnightHollowArmorSwordRed.xml" summonNpcIDs="21400046,21400146,21400246,21400446,21400346,21400546" />
 		</environment>
 	</npc>
 	<npc id="23000054">
@@ -1382,7 +1382,7 @@
 			<model kfm="23000054_B_RobotHyperBoosterWhite" scale="1.6" shadowScale="640" rotationSpeed="720" walkSpeed="200" runSpeed="400" />
 			<stat hp="5452133" asp="100" msp="100" atp="120" evp="87" cap="51" cad="500" car="50" ndd="185" pap="17744" map="17744" par="120" mar="120" />
 			<distance avoid="400" sight="600" sightHeightUP="525" sightHeightDown="225" customLastSightRadius="3500" customLastSightHeightUp="525" customLastSightHeightDown="225" />
-			<skill ids="50100437" levels="1" probs="100" />
+			<skill ids="50009998,50100430,50100431,50100432,50100433,50100434,50100435,50100436,50100437,50100438,50100439,50100439,50100439,50100439,50100440,50100440,50100440,50100441,50100441,50100441,50100444,50100445,50100446,50100446,50100446,50100446,50100446,50100446,50100446,50100450,50100450,50100454" levels="1,1,1,1,1,1,1,1,1,1,1,2,3,4,1,2,3,1,2,3,1,1,1,2,3,4,5,6,7,1,2,1" />
 			<additionalEffect codes="50004400" levels="1" />
 			<collision shape="box" width="240" height="280" depth="180" />
 			<corpse width="430" height="150" depth="380" added="40" offsetNametag="-200" hitAble="1" rotation="170" />
@@ -1432,7 +1432,7 @@
 			<model kfm="23000055_B_RobotHyperBoosterRed" scale="1.6" shadowScale="640" rotationSpeed="720" walkSpeed="200" runSpeed="400" />
 			<stat hp="5598370" asp="100" msp="100" atp="120" evp="88" cap="52" cad="500" car="50" ndd="223" pap="54486" map="54501" par="120" mar="120" />
 			<distance avoid="400" sight="600" sightHeightUP="525" sightHeightDown="225" customLastSightRadius="9999" customLastSightHeightUp="9999" customLastSightHeightDown="9999" />
-			<skill ids="50100437" levels="1" probs="100" />
+			<skill ids="50009998,50100432,50100433,50100434,50100435,50100436,50100437,50100438,50100439,50100439,50100439,50100439,50100439,50100439,50100439,50100439,50100440,50100440,50100440,50100441,50100441,50100442,50100444,50100445,50100446,50100446,50100446,50100446,50100446,50100446,50100450,50100450,50100450,50100450,50100451,50100453,50100453,50100454,50100455,50100457,50100457,50100458,50100459,50100459" levels="1,1,1,1,1,1,1,1,1,2,3,4,11,12,13,14,1,2,3,1,2,1,1,1,1,2,3,4,6,7,1,2,3,5,1,1,2,1,1,1,2,1,1,2" />
 			<additionalEffect codes="50004400" levels="1" />
 			<collision shape="box" width="240" height="280" depth="180" />
 			<corpse width="430" height="150" depth="380" added="40" offsetNametag="-200" rotation="170" />
@@ -1482,7 +1482,7 @@
 			<model kfm="23000056_B_RobotHyperBoosterBlue" scale="1.6" shadowScale="640" rotationSpeed="720" walkSpeed="200" runSpeed="400" />
 			<stat hp="21227812" asp="100" msp="100" atp="120" evp="91" cap="62" cad="500" car="50" ndd="567" pap="284498" map="284587" par="120" mar="120" />
 			<distance avoid="400" sight="600" sightHeightUP="525" sightHeightDown="225" customLastSightRadius="3500" customLastSightHeightUp="525" customLastSightHeightDown="225" />
-			<skill ids="50100437" levels="1" probs="100" />
+			<skill ids="50009998,50100430,50100431,50100432,50100433,50100437,50100437,50100438,50100438,50100439,50100439,50100439,50100439,50100439,50100439,50100439,50100439,50100439,50100439,50100441,50100441,50100442,50100444,50100445,50100447,50100447,50100450,50100450,50100450,50100451,50100454,50100454" levels="1,1,1,1,1,1,2,1,2,1,21,22,23,24,31,32,33,34,333,1,2,1,1,1,1,2,1,2,4,1,1,2" />
 			<additionalEffect codes="50004400" levels="1" />
 			<collision shape="box" width="240" height="280" depth="180" />
 			<corpse width="430" height="150" depth="380" added="40" offsetNametag="-200" rotation="170" />
@@ -1532,7 +1532,7 @@
 			<model kfm="23000057_B_PigGoblinHugeWhite" scale="2" shadowScale="640" rotationSpeed="720" walkSpeed="200" runSpeed="400" />
 			<stat hp="332209424" asp="100" msp="100" atp="120" evp="87" cap="62" cad="500" car="50" ndd="690" pap="281653" map="281653" par="120" mar="120" />
 			<distance avoid="400" sight="1100" sightHeightUP="320" sightHeightDown="1" customLastSightRadius="5000" customLastSightHeightUp="9999" customLastSightHeightDown="900" />
-			<skill ids="50100855" levels="1" probs="100" />
+			<skill ids="60092001,60092011,60092021,60092031,60092041,60092051,60092061,60092062,60092063,60092071,60092072,60092081" levels="1,1,1,1,1,1,1,1,1,1,1,1" />
 			<additionalEffect codes="50004400" levels="1" />
 			<collision shape="box" width="220" height="250" depth="230" />
 			<corpse width="650" height="150" depth="250" added="120" offsetNametag="-200" hitAble="1" rotation="345" />
@@ -1582,14 +1582,14 @@
 			<model kfm="23000062_B_Madria" scale="2.4" shadowScale="120" rotationSpeed="720" walkSpeed="225" runSpeed="450" />
 			<stat hp="14133356" asp="100" msp="100" atp="120" evp="120" cap="65" cad="500" car="50" ndd="982" pap="1141701" map="1142054" par="150" mar="150" />
 			<distance avoid="400" sight="8000" sightHeightUP="8999" sightHeightDown="8999" customLastSightRadius="99999" customLastSightHeightUp="99999" customLastSightHeightDown="99999" />
-			<skill ids="50001155" levels="1" probs="100" />
+			<skill ids="50001165,50001165,50001167,50001167,50001168,50001169,50001169,50001169,50001169,50001170,50001171,50001172,50001172,50001174,50001174,50001174,50001174,50001174,50001174,50001175,50001176" levels="1,2,1,2,1,1,2,11,22,1,1,1,2,1,2,3,4,5,6,1,1" />
 			<additionalEffect codes="50004400" levels="1" />
 			<collision shape="box" width="30" height="90" depth="20" />
 			<capsule radius="30" height="130" />
 			<dead time="2.3" defaultaction="Idle_A" upaction="Idle_A" />
 			<normal action="Idle_A,Bore_A,Walk_A" prob="5000,3000,2000" movearea="150" />
 			<dropiteminfo globalDropBoxId="74" />
-			<aiInfo path="BossDungeon/Madria/AI_Madria.xml" />
+			<aiInfo path="BossDungeon/Madria/AI_Madria.xml" summonNpcIDs="21410070" />
 			<effectdummy>
 				<dummy name="Eff_Head">
 					<attachInfo parentNode="Bip01 Head" />
@@ -1629,7 +1629,7 @@
 			<model kfm="23000063_B_MadriaBigWingChimera" scale="2.4" shadowScale="10" rotationSpeed="400" walkSpeed="200" runSpeed="400" />
 			<stat hp="280109257" asp="100" msp="100" atp="120" evp="120" cap="65" cad="500" car="50" ndd="982" pap="1141901" map="1142254" par="150" mar="150" />
 			<distance avoid="550" sight="8000" sightHeightUP="8999" sightHeightDown="8999" customLastSightRadius="99999" customLastSightHeightUp="99999" customLastSightHeightDown="99999" />
-			<skill ids="50001155" levels="1" probs="100" />
+			<skill ids="50001177,50001177,50001177,50001177,50001178,50001178,50001179,50001180,50001180,50001180" levels="1,2,11,12,1,2,1,1,2,22" />
 			<additionalEffect codes="50004402" levels="1" />
 			<collision shape="box" width="180" height="200" depth="240" depthOffset="-200" />
 			<corpse width="300" height="160" depth="600" offsetNametag="-200" rotation="-90" />
@@ -1637,7 +1637,7 @@
 			<dead time="10" defaultaction="Idle_A" upaction="Idle_A" />
 			<normal action="Idle_A" prob="10000" />
 			<dropiteminfo globalDropBoxId="74" />
-			<aiInfo path="BossDungeon/Madria/AI_MadriaBigWingChimera.xml" />
+			<aiInfo path="BossDungeon/Madria/AI_MadriaBigWingChimera.xml" summonNpcIDs="23000064,23000062" />
 			<effectdummy>
 				<dummy name="Eff_Head">
 					<attachInfo parentNode="Bip01 Head" />
@@ -1679,7 +1679,7 @@
 			<model kfm="23000064_B_BigWingChimera" scale="2.25" shadowScale="640" rotationSpeed="400" walkSpeed="175" runSpeed="350" />
 			<stat hp="280109257" asp="100" msp="100" atp="120" evp="120" cap="65" cad="500" car="50" ndd="982" pap="1141901" map="1142254" par="150" mar="150" />
 			<distance avoid="400" sight="8000" sightHeightUP="8999" sightHeightDown="8999" customLastSightRadius="99999" customLastSightHeightUp="99999" customLastSightHeightDown="99999" />
-			<skill ids="50001155" levels="1" probs="100" />
+			<skill ids="50001150,50001150,50001150,50001150,50001150,50001151,50001152,50001153,50001154,50001154,50001155,50001157,50001157,50001157,50001157,50001157,50001158,50001158,50001158,50001159,50001159" levels="1,2,3,5,6,1,1,1,1,2,1,1,3,4,5,44,1,2,11,1,2" />
 			<additionalEffect codes="50004400" levels="1" />
 			<collision shape="box" width="160" height="160" depth="270" depthOffset="230" />
 			<corpse width="300" height="160" depth="600" offsetNametag="-200" rotation="-90" />
@@ -1687,7 +1687,7 @@
 			<dead time="20" defaultaction="Dead_A" upaction="Dead_A" />
 			<normal action="Idle_A,Bore_A" prob="8000,2000" />
 			<dropiteminfo globalDropBoxId="74" />
-			<aiInfo path="BossDungeon/Madria/AI_BigWingChimera.xml" />
+			<aiInfo path="BossDungeon/Madria/AI_BigWingChimera.xml" summonNpcIDs="21500629" />
 			<effectdummy>
 				<dummy name="Eff_Head">
 					<attachInfo parentNode="Bip01 Head" />
@@ -1729,7 +1729,7 @@
 			<model kfm="23000065_B_TigerHugeWildToothBrown" shadowScale="640" rotationSpeed="720" walkSpeed="200" runSpeed="400" />
 			<stat hp="21227812" asp="100" msp="100" atp="120" evp="88" cap="62" cad="500" car="50" ndd="567" pap="284498" map="284587" par="120" mar="120" />
 			<distance avoid="400" sight="600" sightHeightUP="525" sightHeightDown="225" customLastSightRadius="3500" customLastSightHeightUp="525" customLastSightHeightDown="225" />
-			<skill ids="50100437" levels="1" probs="100" />
+			<skill ids="60085001,60085011,60085021,60085031,60085031,60085041,60085051,60085061" levels="1,1,1,1,3,1,1,1" />
 			<additionalEffect codes="50004400" levels="1" />
 			<collision shape="box" width="240" height="280" depth="180" />
 			<corpse width="430" height="150" depth="380" added="40" offsetNametag="-200" rotation="170" />
@@ -1775,7 +1775,7 @@
 			<model kfm="23000066_B_TigerHugeWildToothWhite" shadowScale="640" rotationSpeed="720" walkSpeed="200" runSpeed="400" />
 			<stat hp="21227812" asp="100" msp="100" atp="120" evp="88" cap="62" cad="500" car="50" ndd="567" pap="284498" map="284587" par="120" mar="120" />
 			<distance avoid="400" sight="600" sightHeightUP="525" sightHeightDown="225" customLastSightRadius="3500" customLastSightHeightUp="525" customLastSightHeightDown="225" />
-			<skill ids="50100437" levels="1" probs="100" />
+			<skill ids="60086001,60086011,60086021,60086031,60086041,60086051,60086061" levels="1,1,1,1,1,1,1" />
 			<additionalEffect codes="50004400" levels="1" />
 			<collision shape="box" width="240" height="280" depth="180" />
 			<corpse width="430" height="150" depth="380" added="40" offsetNametag="-200" rotation="170" />
@@ -1821,7 +1821,7 @@
 			<model kfm="23000067_B_TigerHugeWildToothBlack" shadowScale="640" rotationSpeed="720" walkSpeed="200" runSpeed="400" />
 			<stat hp="21227812" asp="100" msp="100" atp="120" evp="88" cap="62" cad="500" car="50" ndd="567" pap="284498" map="284587" par="120" mar="120" />
 			<distance avoid="400" sight="600" sightHeightUP="525" sightHeightDown="225" customLastSightRadius="3500" customLastSightHeightUp="525" customLastSightHeightDown="225" />
-			<skill ids="50100437" levels="1" probs="100" />
+			<skill ids="60087001,60087011,60087021,60087031,60087031,60087041,60087051,60087061" levels="1,1,1,1,3,1,1,1" />
 			<additionalEffect codes="50004400" levels="1" />
 			<collision shape="box" width="240" height="280" depth="180" />
 			<corpse width="430" height="150" depth="380" added="40" offsetNametag="-200" rotation="170" />
@@ -1867,14 +1867,14 @@
 			<model kfm="23000068_B_BarkhantBlue" shadowScale="370" rotationSpeed="720" walkSpeed="300" runSpeed="600" />
 			<stat hp="68880107" asp="100" msp="100" atp="120" evp="101" cap="62" cad="500" car="50" ndd="829" pap="955921" map="956070" par="120" mar="120" />
 			<distance avoid="400" sight="1000" sightHeightUP="999" sightHeightDown="999" customLastSightRadius="99999" customLastSightHeightUp="99999" customLastSightHeightDown="99999" />
-			<skill ids="50101111" levels="1" probs="100" />
+			<skill ids="50101110,50101111,50101111,50101111,50101112,50101113,50101114,50101114,50101114,50101115,50101115,50101115,50101115,50101115,50101119,50101120,50101121,50101121,50101122,50101122,50101123,50101124,50101125,50101125,50101125,50101125,50101130,50101130,50101130,50101130,50101131,50101132,50101132,50101132" levels="1,1,2,3,1,1,1,2,3,1,2,4,5,6,1,1,1,2,1,2,3,1,1,2,3,4,1,2,3,5,2,1,2,3" />
 			<additionalEffect codes="50004400" levels="1" />
 			<collision shape="box" width="170" height="400" depth="170" />
 			<capsule radius="30" height="400" ignore="1" />
 			<dead time="2.4" defaultaction="Dead_A" upaction="Dead_A" extendRoomTime="90000" />
 			<normal action="Idle_A,Bore_A" prob="7500,2500" />
 			<dropiteminfo dropHeight="300" dropDistanceRandom="20" globalDropBoxId="74" globalDeadDropBoxId="1011" />
-			<aiInfo path="BossDungeon/BarkhantBlue/AI_BarkhantBlue.xml" />
+			<aiInfo path="BossDungeon/BarkhantBlue/AI_BarkhantBlue.xml" summonNpcIDs="21500140,21500150,21500160,21500152,21500151,21403069,21403070,21402037,21402137,21402237" />
 			<effectdummy>
 				<dummy name="Eff_Head">
 					<attachInfo parentNode="Bip01 Head" />
@@ -1914,14 +1914,14 @@
 			<model kfm="23000071_B_ZakumBrown" shadowScale="1300" />
 			<stat hp="897536119" asp="100" msp="100" atp="120" evp="130" cap="70" cad="500" car="50" ndd="1302" pap="3385813" map="3386245" par="150" mar="150" />
 			<distance avoid="1000" sight="3000" sightHeightUP="2000" sightHeightDown="900" customLastSightRadius="4200" customLastSightHeightUp="4200" customLastSightHeightDown="999" />
-			<skill ids="50100115" levels="1" probs="100" />
+			<skill ids="50100116,50100118,50100119,50100120,50100126,50100139,50100139,50100140,50100140,50100140,50100140,50100140,50100140,50100144,50100144,50100144,50100144,50100144,50100144,50100144,50100144,50100144" levels="1,1,1,1,1,1,2,1,2,3,11,12,13,1,2,3,11,12,21,22,31,41" />
 			<additionalEffect codes="50004400" levels="1" />
 			<collision shape="box" width="550" height="1000" depth="550" />
 			<capsule radius="1" height="1" ignore="1" />
 			<dead time="5" defaultaction="Dead_A" upaction="Dead_A" />
 			<normal action="Idle_A" prob="10000" />
 			<dropiteminfo dropHeight="320" dropDistanceBase="400" dropDistanceRandom="20" globalDropBoxId="74" />
-			<aiInfo path="BossDungeon/ZakumBrown/AI_ZakumBrown.xml" />
+			<aiInfo path="BossDungeon/ZakumBrown/AI_ZakumBrown.xml" summonNpcIDs="21410092,21410093,21410091,21410090,21410094,21410080,21410082,21410081,21410095" />
 			<nodeCollisions>
 				<collision targetNode="Dummy01" volume="520,520,225" offset="0,0,500" />
 				<collision targetNode="Dummy01" volume="520,520,225" offset="0,0,250" />
@@ -1971,14 +1971,14 @@
 			<model kfm="23000071_B_ZakumBrown" shadowScale="1300" />
 			<stat hp="15309496385" asp="100" msp="100" atp="120" evp="130" cap="72" cad="250" car="100" ndd="1071" pap="35615824" map="35621554" par="220" mar="220" />
 			<distance avoid="1000" sight="3000" sightHeightUP="2000" sightHeightDown="900" customLastSightRadius="4200" customLastSightHeightUp="4200" customLastSightHeightDown="999" />
-			<skill ids="50100115" levels="1" probs="100" />
+			<skill ids="50100116,50100118,50100119,50100120,50100126,50100139,50100139,50100140,50100140,50100140,50100140,50100140,50100140,50100144,50100144,50100144,50100144,50100144,50100144,50100144,50100144,50100144" levels="1,1,1,1,1,1,2,1,2,3,11,12,13,1,2,3,11,12,21,22,31,41" />
 			<additionalEffect codes="50004400,90000794,90000802" levels="1,5,5" />
 			<collision shape="box" width="550" height="1000" depth="550" />
 			<capsule radius="1" height="1" ignore="1" />
 			<dead time="5" defaultaction="Dead_A" upaction="Dead_A" />
 			<normal action="Idle_A" prob="10000" />
 			<dropiteminfo dropHeight="320" dropDistanceBase="400" dropDistanceRandom="20" globalDropBoxId="74" />
-			<aiInfo path="BossDungeon/ZakumBrown/Chaos/AI_ZakumBrown.xml" />
+			<aiInfo path="BossDungeon/ZakumBrown/Chaos/AI_ZakumBrown.xml" summonNpcIDs="23407007,23407008,23407009,23407010,21410122,21410123,21410121,21410120,21410124,21410110,21410112,21410111,21410125" />
 			<nodeCollisions>
 				<collision targetNode="Dummy01" volume="520,520,225" offset="0,0,500" />
 				<collision targetNode="Dummy01" volume="520,520,225" offset="0,0,250" />
@@ -2028,14 +2028,14 @@
 			<model kfm="23000071_B_ZakumBrown" shadowScale="1300" />
 			<stat hp="15309496385" asp="100" msp="100" atp="120" evp="130" cap="72" cad="250" car="100" ndd="1071" pap="35615824" map="35621554" par="220" mar="220" />
 			<distance avoid="1000" sight="3000" sightHeightUP="2000" sightHeightDown="900" customLastSightRadius="4200" customLastSightHeightUp="4200" customLastSightHeightDown="999" />
-			<skill ids="50100115" levels="1" probs="100" />
+			<skill ids="50100116,50100118,50100119,50100120,50100126,50100139,50100139,50100140,50100140,50100140,50100140,50100140,50100140,50100144,50100144,50100144,50100144,50100144,50100144,50100144,50100144,50100144" levels="1,1,1,1,1,1,2,1,2,3,11,12,13,1,2,3,11,12,21,22,31,41" />
 			<additionalEffect codes="50004400,90000794,90000802" levels="1,5,5" />
 			<collision shape="box" width="550" height="1000" depth="550" />
 			<capsule radius="1" height="1" ignore="1" />
 			<dead time="5" defaultaction="Dead_A" upaction="Dead_A" />
 			<normal action="Idle_A" prob="10000" />
 			<dropiteminfo dropHeight="320" dropDistanceBase="400" dropDistanceRandom="20" globalDropBoxId="74" />
-			<aiInfo path="BossDungeon/ZakumBrown/Chaos/Normal/AI_ZakumBrown.xml" />
+			<aiInfo path="BossDungeon/ZakumBrown/Chaos/Normal/AI_ZakumBrown.xml" summonNpcIDs="23407017,23407018,23407019,23407020,21410122,21410123,21410121,21410120,21410124,21410110,21410112,21410111,21410125" />
 			<nodeCollisions>
 				<collision targetNode="Dummy01" volume="520,520,225" offset="0,0,500" />
 				<collision targetNode="Dummy01" volume="520,520,225" offset="0,0,250" />
@@ -2085,7 +2085,7 @@
 			<model kfm="23000077_B_Papulatus" scale="1.05" shadowScale="640" rotationSpeed="720" walkSpeed="100" runSpeed="200" />
 			<stat hp="1048202007" asp="100" msp="100" atp="120" evp="101" cap="62" cad="500" car="50" ndd="936" pap="1855477" map="1855527" par="249" mar="249" scaleStatRate_1="4" scaleBaseTap_1="5110009" scaleBaseDef_1="5033" scaleBaseSpaRate_1="0.5" />
 			<distance avoid="400" sight="1500" sightHeightUP="480" sightHeightDown="200" customLastSightRadius="3500" customLastSightHeightUp="480" customLastSightHeightDown="800" />
-			<skill ids="50100752" levels="1" probs="100" />
+			<skill ids="50009998,50100732,50100732,50100732,50100732,50100732,50100732,50100733,50100734,50100734,50100734,50100734,50100735,50100736,50100737,50100738,50100739,50100740,50100740,50100740,50100742,50100743,50100743,50100744,50100744,50100744,50100745,50100745,50100745,50100747,50100747,50100748,50100748,50100748,50100749,50100749,50100749" levels="1,1,2,3,4,5,44,1,1,2,11,12,1,1,1,1,1,1,2,3,1,1,2,1,2,3,1,2,3,1,2,1,2,3,1,2,3" />
 			<additionalEffect codes="50004400" levels="1" />
 			<collision shape="box" width="330" height="350" depth="230" />
 			<corpse width="300" height="150" depth="1" added="950" offsetNametag="-200" rotation="0" />
@@ -2135,7 +2135,7 @@
 			<model kfm="23000077_B_Papulatus" scale="1.05" shadowScale="640" rotationSpeed="720" walkSpeed="100" runSpeed="200" />
 			<stat hp="1461979989" asp="100" msp="100" atp="120" evp="101" cap="62" cad="500" car="50" ndd="936" pap="4637322" map="4638770" par="249" mar="249" scaleStatRate_1="80000" scaleBaseTap_1="6143495" scaleBaseDef_1="7748" scaleBaseSpaRate_1="0.5" scaleStatRate_2="2" scaleBaseTap_2="5081163" scaleBaseDef_2="6267" scaleBaseSpaRate_2="0.5" />
 			<distance avoid="400" sight="1500" sightHeightUP="480" sightHeightDown="200" customLastSightRadius="3500" customLastSightHeightUp="480" customLastSightHeightDown="800" />
-			<skill ids="50100752" levels="1" probs="100" />
+			<skill ids="50009998,50100732,50100732,50100732,50100732,50100732,50100732,50100733,50100734,50100734,50100734,50100734,50100735,50100736,50100737,50100738,50100739,50100740,50100740,50100740,50100742,50100743,50100743,50100744,50100744,50100744,50100745,50100745,50100745,50100747,50100747,50100748,50100748,50100748,50100749,50100749,50100749" levels="1,1,2,3,4,5,44,1,1,2,11,12,1,1,1,1,1,1,2,3,1,1,2,1,2,3,1,2,3,1,2,1,2,3,1,2,3" />
 			<additionalEffect codes="50004400" levels="1" />
 			<collision shape="box" width="330" height="350" depth="230" />
 			<corpse width="300" height="150" depth="1" added="950" offsetNametag="-200" rotation="0" />
@@ -2185,7 +2185,7 @@
 			<model kfm="23000078_B_TitanFourArmsGoldMaskFirstFloor" />
 			<stat hp="60875537" asp="100" msp="100" atp="80" evp="82" cap="62" cad="500" car="50" ndd="567" pap="28574" map="28583" par="120" mar="120" />
 			<distance avoid="850" sight="1900" sightHeightUP="999" sightHeightDown="3000" customLastSightRadius="9999" customLastSightHeightUp="2000" customLastSightHeightDown="3000" />
-			<skill ids="50101230" levels="1" probs="100" />
+			<skill ids="50101231" levels="1" />
 			<additionalEffect codes="50004400" levels="1" />
 			<collision shape="box" width="1470" height="600" depth="1200" widthOffset="80" />
 			<capsule radius="650" height="600" />
@@ -2230,7 +2230,7 @@
 			<model kfm="23000079_B_TitanFourArmsGoldMaskSecondFloor" />
 			<stat hp="60875537" asp="100" msp="100" atp="80" evp="82" cap="62" cad="500" car="50" ndd="567" pap="28574" map="28583" par="120" mar="120" />
 			<distance avoid="850" sight="1900" sightHeightUP="999" sightHeightDown="3000" customLastSightRadius="9999" customLastSightHeightUp="2000" customLastSightHeightDown="3000" />
-			<skill ids="50101232" levels="1" probs="100" />
+			<skill ids="50101233" levels="1" />
 			<additionalEffect codes="50004400" levels="1" />
 			<collision shape="box" width="1470" height="600" depth="1200" widthOffset="80" />
 			<capsule radius="650" height="600" />
@@ -2275,14 +2275,14 @@
 			<model kfm="23000080_B_TitanFourArmsGoldMaskThirdFloor" />
 			<stat hp="85109823" asp="100" msp="100" atp="95" evp="107" cap="62" cad="500" car="50" ndd="1009" pap="807909" map="808080" par="150" mar="150" />
 			<distance avoid="850" sight="9999" sightHeightUP="999" sightHeightDown="999" customLastSightRadius="9999" customLastSightHeightUp="2000" customLastSightHeightDown="999" />
-			<skill ids="50101234" levels="1" probs="100" />
+			<skill ids="50101234,50101235,50101235,50101236,50101236,50101236,50101237,50101237,50101237,50101238,50101238,50101238,50101239,50101239,50101239,50101240,50101240,50101240,50101243,50101244,50101245,50101246,50101247,50101254,50101254,50101254,50101255,50101255,50101255,50101255,50101255,50101255,50101256,50101257,50101257,50101257,50101257,50101257,50101257,50101257,50101257,50101257,50101257,50101257,50101257,50101257,50101257,50101257,50101258,50101258,50101258,50101259,50101259,50101259,50101260,50101260,50101260,50101260" levels="2,1,2,1,2,3,1,2,3,1,2,3,1,2,3,11,12,13,1,1,1,1,1,1,2,3,1,2,3,4,5,6,1,1,2,3,4,11,13,14,21,22,23,24,31,32,33,34,1,2,3,1,2,3,1,2,3,4" />
 			<additionalEffect codes="50004400" levels="1" />
 			<collision shape="box" width="1470" height="600" depth="1200" widthOffset="80" />
 			<capsule radius="650" height="600" />
 			<dead time="10" defaultaction="Dead_A" upaction="Dead_A" extendRoomTime="60000" />
 			<normal action="Idle_A" prob="10000" />
 			<dropiteminfo globalDropBoxId="74" />
-			<aiInfo path="BossDungeon/TitanFourArmsGoldMask/AI_TitanFourArmsGoldMaskThirdFloor.xml" />
+			<aiInfo path="BossDungeon/TitanFourArmsGoldMask/AI_TitanFourArmsGoldMaskThirdFloor.xml" summonNpcIDs="21500903,21500183" />
 			<effectdummy>
 				<dummy name="Eff_Head">
 					<attachInfo parentNode="Bip01 Head" />
@@ -2324,14 +2324,14 @@
 			<model kfm="23000081_B_KanduraNormal" scale="1.05" shadowScale="270" rotationSpeed="720" walkSpeed="250" runSpeed="500" />
 			<stat hp="68571519" asp="100" msp="100" atp="120" evp="88" cap="62" cad="250" car="50" ndd="896" pap="1340553" map="1340686" par="120" mar="120" />
 			<distance avoid="400" sight="5000" sightHeightUP="700" sightHeightDown="5999" customLastSightRadius="99999" customLastSightHeightUp="99999" customLastSightHeightDown="99999" />
-			<skill ids="50000550" levels="1" probs="100" />
+			<skill ids="50000550,50000551,50000551,50000551,50000551,50000551,50000552,50000553,50000553,50000555,50000555,50000555,50000556,50000556,50000557,50000557,50000558,50000558,50000559" levels="1,1,2,3,4,11,1,1,2,1,2,3,1,2,1,2,1,2,1" />
 			<additionalEffect codes="50004400" levels="1" />
 			<collision shape="box" width="120" height="260" depth="100" />
 			<capsule radius="20" height="200" />
 			<dead time="6.2" defaultaction="Dead_A" upaction="Dead_A" extendRoomTime="60000" />
 			<normal action="Idle_A" prob="10000" />
 			<dropiteminfo dropHeight="300" dropDistanceBase="300" dropDistanceRandom="20" globalDropBoxId="74" globalDeadDropBoxId="1011" />
-			<aiInfo path="BossDungeon/KanduraBigBurster/AI_KanduraNormal.xml" />
+			<aiInfo path="BossDungeon/KanduraBigBurster/AI_KanduraNormal.xml" summonNpcIDs="21402096,21402097,23000082" />
 			<effectdummy>
 				<dummy name="Eff_Head">
 					<attachInfo parentNode="Bip01 Head" />
@@ -2373,14 +2373,14 @@
 			<model kfm="23000082_B_KanduraBigBurster" shadowScale="650" rotationSpeed="400" walkSpeed="250" runSpeed="500" />
 			<stat hp="68571519" asp="100" msp="100" atp="120" evp="107" cap="400" cad="250" car="50" ndd="1009" pap="1428851" map="1429108" par="150" mar="150" />
 			<distance avoid="400" sight="9000" sightHeightUP="9000" sightHeightDown="9000" customLastSightRadius="99999" customLastSightHeightUp="99999" customLastSightHeightDown="99999" />
-			<skill ids="50000560" levels="1" probs="100" />
+			<skill ids="50000560,50000560,50000560,50000561,50000561,50000562,50000562,50000563,50000563,50000563,50000563,50000563,50000563,50000563,50000563,50000564,50000565,50000565,50000565,50000566,50000567,50000568,50000569,50000569,50000569,50000569,50000569,50000569,50000569,50000569,50000569,50000570,50000570,50000570,50000571,50000571,50000573,50000573,50000573,50000574,50000574,50000575,50000575,50000576,50000576,50000576,50000576,50000576,50000576,50000577,50000578,50000578,50000580,50000580,50000580,50000580,50000581,50000583,50000583,50000583,50000583,50000583,50000583,50000583,50000583,50000583,50000583,50000583,50000583,50000583,50000583,50000583" levels="1,2,3,1,2,1,2,1,2,3,4,11,12,13,14,1,1,2,3,11,1,1,1,2,3,11,12,13,14,15,22,1,2,3,1,2,1,2,3,1,2,1,2,1,2,3,4,5,6,1,1,2,1,2,3,22,1,1,2,3,4,11,12,13,14,21,22,23,24,33,133,233" />
 			<additionalEffect codes="50004400" levels="1" />
 			<collision shape="box" width="350" height="630" depth="270" depthOffset="-40" />
 			<capsule radius="50" height="320" />
 			<dead time="4.7" defaultaction="Dead_A" upaction="Dead_A" extendRoomTime="60000" />
 			<normal action="Idle_A" prob="10000" />
 			<dropiteminfo dropHeight="300" dropDistanceBase="30" dropDistanceRandom="20" globalDropBoxId="74" globalDeadDropBoxId="1011" />
-			<aiInfo path="BossDungeon/KanduraBigBurster/AI_KanduraBigBurster.xml" />
+			<aiInfo path="BossDungeon/KanduraBigBurster/AI_KanduraBigBurster.xml" summonNpcIDs="21410003,21410002,21410001,21402098,21410004,21410005,21410006,21410007,21410009,21410010,21410008,21410011,21410012,21410040,21410041,21410030,21410031,21410032,21410013,21410014,21410015,21410016,21410017,21410023,21410018,21410019,21410020,21410033,21410021,21410034,21410022,21410035,21410036,21410037" />
 			<effectdummy>
 				<dummy name="Eff_Head">
 					<attachInfo parentNode="Bip02 Head" />
@@ -2422,14 +2422,14 @@
 			<model kfm="23000083_B_SnowKing" scale="1.3" shadowScale="320" rotationSpeed="720" walkSpeed="65" runSpeed="130" />
 			<stat hp="45027018" asp="100" msp="100" atp="120" evp="93" cap="64" cad="250" car="50" ndd="852" pap="931824" map="932113" par="120" mar="120" />
 			<distance avoid="400" sight="19000" sightHeightUP="19000" sightHeightDown="19000" customLastSightRadius="199999" customLastSightHeightUp="199999" customLastSightHeightDown="199999" />
-			<skill ids="50001103" levels="1" probs="100" />
+			<skill ids="50001100,50001100,50001100,50001100,50001100,50001101,50001101,50001101,50001101,50001102,50001103,50001104,50001105,50001105,50001105,50001106,50001106,50001107,50001107,50001108,50001109,50001110,50001111,50001113,50009999" levels="1,2,3,4,5,1,2,4,5,1,1,1,1,2,3,1,2,1,2,1,1,1,1,1,1" />
 			<additionalEffect codes="50004400" levels="1" />
 			<collision shape="box" width="120" height="200" depth="100" />
 			<capsule radius="50" height="200" />
 			<dead time="10" defaultaction="Dead_A" upaction="Dead_A" />
 			<normal action="Idle_A" prob="10000" />
 			<dropiteminfo dropHeight="300" dropDistanceBase="300" dropDistanceRandom="20" globalDropBoxId="74" />
-			<aiInfo path="BossDungeon/SnowKing/AI_SnowKing.xml" />
+			<aiInfo path="BossDungeon/SnowKing/AI_SnowKing.xml" summonNpcIDs="21500520,21500530,21410060,21410061,21410062,21810070,21500540,21500501,21500500,21500510,21500511,21500512,21500553,21500551,21500550,21500552,21500570,21500571,21500558,21500555,21500557,21500556,21500576,21500575,21500513,21500577,21500590,21500514,21500531,21500521,21500522,21500615,21500616,21500617,21500618,21500581,21500582,21500562,21500560,21500580,21500610,21500600,21500586,21500587,21500567,21500565,21500585,21500611" />
 			<effectdummy>
 				<dummy name="Eff_Head">
 					<attachInfo parentNode="Bip01 Head" />
@@ -2471,14 +2471,14 @@
 			<model kfm="23000088_B_Pinkbean" shadowScale="450" rotationSpeed="720" walkSpeed="155" runSpeed="310" />
 			<stat hp="750028400" asp="100" msp="100" atp="120" evp="130" cap="62" cad="500" car="50" ndd="1302" pap="1385507" map="1385939" par="150" mar="150" />
 			<distance avoid="400" sight="8000" sightHeightUP="8000" sightHeightDown="8000" customLastSightRadius="99999" customLastSightHeightUp="99999" customLastSightHeightDown="99999" />
-			<skill ids="50001205" levels="1" probs="100" />
+			<skill ids="50001200,50001200,50001200,50001200,50001200,50001200,50001201,50001201,50001201,50001201,50001201,50001202,50001202,50001203,50001204,50001205,50001205,50001205,50001206,50001206,50001207,50001207,50001208,50001208,50001208,50001209,50001209,50001210,50001210,50001211,50001211,50001211,50001211,50001211,50001213,50001213,50001214,50001214,50001215,50001215,50001216,50001216,50001216,50001216,50001217,50001217,50001218,50001218,50001218,50001218,50001218,50001218" levels="1,2,3,4,5,6,1,2,3,22,33,1,2,1,1,1,2,3,1,2,1,11,1,2,3,1,2,1,2,1,2,11,12,13,1,2,1,2,1,2,1,3,4,33,1,2,1,2,3,4,5,6" />
 			<additionalEffect codes="50004400" levels="1" />
 			<collision shape="box" width="220" height="250" depth="180" />
 			<capsule radius="100" height="250" />
 			<dead time="8" defaultaction="Dead_A" upaction="Dead_A" extendRoomTime="60000" />
 			<normal action="Idle_A" prob="10000" />
 			<dropiteminfo globalDropBoxId="74" />
-			<aiInfo path="BossDungeon/Pinkbean/AI_Pinkbean.xml" />
+			<aiInfo path="BossDungeon/Pinkbean/AI_Pinkbean.xml" summonNpcIDs="21500670,21500671,21500672" />
 			<effectdummy>
 				<dummy name="Eff_Head">
 					<attachInfo parentNode="Bip01 Head" />
@@ -2516,14 +2516,14 @@
 			<model kfm="23000089_B_Blackbean" shadowScale="450" rotationSpeed="720" walkSpeed="155" runSpeed="310" />
 			<stat hp="750028400" asp="100" msp="100" atp="120" evp="130" cap="72" cad="500" car="50" ndd="2459" pap="3825309" map="3826466" par="150" mar="150" />
 			<distance avoid="400" sight="8000" sightHeightUP="8000" sightHeightDown="8000" customLastSightRadius="99999" customLastSightHeightUp="99999" customLastSightHeightDown="99999" />
-			<skill ids="50001406" levels="1" probs="100" />
+			<skill ids="50001389,50001389,50001390,50001391,50001392,50001393,50001394,50001395,50001396,50001397,50001397,50001398,50001399,50001399,50001399,50001400,50001400,50001401,50001401,50001401,50001401,50001401,50001404,50001404,50001404,50001406,50001409,50001409,50001409" levels="1,3,1,1,1,1,1,1,1,1,2,1,1,2,3,1,2,1,2,3,4,5,1,2,3,1,1,2,3" />
 			<additionalEffect codes="50004400" levels="1" />
 			<collision shape="box" width="220" height="250" depth="180" />
 			<capsule radius="100" height="250" />
 			<dead time="8" defaultaction="Dead_A" upaction="Dead_A" extendRoomTime="60000" />
 			<normal action="Idle_A" prob="10000" />
 			<dropiteminfo globalDropBoxId="74" />
-			<aiInfo path="BossDungeon/Blackbean/AI_Blackbean_Phase01_Hard.xml" />
+			<aiInfo path="BossDungeon/Blackbean/AI_Blackbean_Phase01_Hard.xml" summonNpcIDs="23000097,21501391,21501382,21501396,21501386,23000098" />
 			<effectdummy>
 				<dummy name="Eff_Head">
 					<attachInfo parentNode="Bip01 Head" />
@@ -2561,14 +2561,14 @@
 			<model kfm="23000090_B_BalrogMagicBurster" scale="1.5" shadowScale="900" rotationSpeed="400" walkSpeed="400" runSpeed="380" />
 			<stat hp="800000000" asp="100" msp="100" atp="120" evp="130" cap="70" cad="500" car="90" ndd="1377" pap="3748467" map="3748890" par="150" mar="150" />
 			<distance avoid="400" sight="15000" sightHeightUP="1100" sightHeightDown="900" customLastSightRadius="18000" customLastSightHeightUp="1500" customLastSightHeightDown="999" />
-			<skill ids="50001280" levels="1" probs="100" />
+			<skill ids="50001280,50001280,50001281,50001282,50001282,50001282,50001282,50001283,50001283,50001283,50001283,50001283,50001283,50001283,50001283,50001283,50001283,50001284,50001285,50001285,50001286,50001286,50001288" levels="1,3,1,1,2,3,4,1,2,3,21,22,23,24,25,26,27,1,1,2,1,2,1" />
 			<additionalEffect codes="50004400,50000293" levels="1,1" />
 			<collision shape="box" width="350" height="450" depth="200" depthOffset="100" />
 			<capsule radius="10" height="10" ignore="1" />
 			<dead time="5" defaultaction="Idle_A" upaction="Idle_A" />
 			<normal action="Idle_A" prob="10000" />
 			<dropiteminfo globalDropBoxId="74" />
-			<aiInfo path="BossDungeon/BalrogMagicBurster/AI_BalrogMagicBurster.xml" />
+			<aiInfo path="BossDungeon/BalrogMagicBurster/AI_BalrogMagicBurster.xml" summonNpcIDs="21500805,21500806,21801000,21801001" />
 			<effectdummy>
 				<dummy name="Eff_Head">
 					<attachInfo parentNode="Bip01 Head" />
@@ -2610,14 +2610,14 @@
 			<model kfm="23000091_B_AirshipBalrogCrimson_01" scale="0.95" walkSpeed="200" runSpeed="400" />
 			<stat hp="600000000" asp="100" msp="100" atp="120" evp="103" cap="70" cad="500" car="65" ndd="1000441" pap="3748467" map="3748890" par="150" mar="150" />
 			<distance avoid="3200" sight="15000" sightHeightUP="2500" sightHeightDown="900" customLastSightRadius="18000" customLastSightHeightUp="3100" customLastSightHeightDown="999" />
-			<skill ids="50009999" levels="1" probs="100" />
+			<skill ids="50001267,50001267,50001267,50001267,50001267,50001267,50001267,50001267,50001267,50001267,50001267,50001267,50001267,50001267,50001267,50001268,50001268,50001268,50001268,50001268,50001268,50001268,50001268,50001268,50001268,50001268,50001268,50001268,50001268,50001268,50001268" levels="1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16" />
 			<additionalEffect codes="50004400" levels="1" />
 			<collision shape="box" width="2600" height="1500" depth="1450" widthOffset="-150" />
 			<capsule radius="10" height="10" ignore="1" />
 			<dead time="5" defaultaction="Idle_A" upaction="Idle_A" />
 			<normal action="Idle_A" prob="10000" />
 			<dropiteminfo globalDropBoxId="74" />
-			<aiInfo path="BossDungeon/BalrogMagicBurster/AI_AirshipBalrogCrimson.xml" />
+			<aiInfo path="BossDungeon/BalrogMagicBurster/AI_AirshipBalrogCrimson.xml" summonNpcIDs="21800960,21800961,21500808,21500807,21500810,21500811,21500812,21500813,21500814,21500815,21500820,21500821" />
 			<effectdummy>
 				<dummy name="Eff_Head">
 					<attachInfo parentNode="Dummy01" />
@@ -2659,14 +2659,14 @@
 			<model kfm="23000092_B_AirshipBalrogCrimsonFlame" scale="0.95" walkSpeed="200" runSpeed="400" />
 			<stat hp="600000000" asp="100" msp="100" atp="120" evp="103" cap="70" cad="500" car="65" ndd="1000441" pap="3748467" map="3748890" par="150" mar="150" />
 			<distance avoid="3200" sight="15000" sightHeightUP="2500" sightHeightDown="900" customLastSightRadius="18000" customLastSightHeightUp="3100" customLastSightHeightDown="999" />
-			<skill ids="50009999" levels="1" probs="100" />
+			<skill ids="50001265,50001265,50001265,50001269,50001269" levels="1,2,3,1,2" />
 			<additionalEffect codes="50004400" levels="1" />
 			<collision shape="box" width="2600" height="1500" depth="1200" widthOffset="-150" />
 			<capsule radius="10" height="10" ignore="1" />
 			<dead time="5" defaultaction="Idle_A" upaction="Idle_A" />
 			<normal action="Idle_A" prob="10000" />
 			<dropiteminfo globalDropBoxId="74" />
-			<aiInfo path="BossDungeon/BalrogMagicBurster/AI_AirshipBalrogCrimsonFlame.xml" />
+			<aiInfo path="BossDungeon/BalrogMagicBurster/AI_AirshipBalrogCrimsonFlame.xml" summonNpcIDs="21800962,21800963,21500816,21500817,21500818,21500822,21500823,21800964,21800965,21500809,23000093" />
 			<effectdummy>
 				<dummy name="Eff_Head">
 					<attachInfo parentNode="Dummy01" />
@@ -2708,7 +2708,7 @@
 			<model kfm="23000093_B_AirshipBalrogCrimsonBroken" scale="0.95" walkSpeed="200" runSpeed="400" />
 			<stat hp="600000000" asp="100" msp="100" atp="80" evp="97" cap="70" cad="500" car="65" ndd="1000441" pap="3748467" map="3748890" par="150" mar="150" />
 			<distance avoid="3200" sight="15000" sightHeightUP="2500" sightHeightDown="900" customLastSightRadius="18000" customLastSightHeightUp="3100" customLastSightHeightDown="999" />
-			<skill ids="50009999" levels="1" probs="100" />
+			<skill ids="50001267,50001267,50001267,50001267,50001267" levels="1,2,3,4,5" />
 			<additionalEffect codes="50004400" levels="1" />
 			<collision shape="box" width="3" height="3" depth="3" />
 			<capsule radius="10" height="10" ignore="1" />
@@ -2723,7 +2723,7 @@
 			<model kfm="23000094_B_RobotCircleCoreBlue" scale="2.1" shadowScale="900" rotationSpeed="400" walkSpeed="200" runSpeed="400" />
 			<stat hp="296038225" asp="100" msp="100" atp="120" evp="92" cap="65" cad="500" car="55" ndd="1017" pap="187647" map="187647" par="150" mar="150" />
 			<distance avoid="400" sight="11300" sightHeightUP="5100" sightHeightDown="5100" customLastSightRadius="11500" customLastSightHeightUp="5500" customLastSightHeightDown="5500" />
-			<skill ids="50001250" levels="1" probs="100" />
+			<skill ids="50001250,50001250,50001250,50001251,50001251,50001251,50001251,50001251,50001251,50001251,50001252,50001253,50001253,50001254,50001254,50001254,50001254,50001254,50001254,50001254,50001254,50001255,50001255,50001256,50001256,50001257,50001257,50001258,50001258" levels="1,2,3,1,2,3,4,5,33,44,1,1,2,1,3,4,5,13,14,23,24,1,2,1,2,1,2,1,2" />
 			<additionalEffect codes="50004400" levels="1" />
 			<collision shape="box" width="300" height="250" depth="200" />
 			<corpse width="650" height="150" depth="900" added="40" offsetNametag="-200" hitAble="1" rotation="170" />
@@ -2773,7 +2773,7 @@
 			<model kfm="23000095_B_GigantikaHead" scale="0.7" shadowScale="180" rotationSpeed="400" />
 			<stat hp="46580985" asp="100" msp="100" atp="120" evp="103" cap="70" cad="500" car="65" ndd="930" pap="475712" map="475750" />
 			<distance avoid="120" sight="90000" sightHeightUP="9000" sightHeightDown="9000" customLastSightRadius="9999" customLastSightHeightUp="9999" customLastSightHeightDown="9999" />
-			<skill ids="50101006" levels="1" probs="100" />
+			<skill ids="49905011,49905012,49905013,49905014,49905015,49905016,49905017" levels="1,1,1,1,1,1,1" />
 			<additionalEffect codes="50004400" levels="1" />
 			<collision shape="box" width="1650" height="2400" depth="4500" depthOffset="1500" heightOffset="-500" />
 			<capsule radius="200" height="400" />
@@ -2781,7 +2781,7 @@
 			<push back="1" up="1" knockback="1" />
 			<normal action="Idle_A" prob="10000" />
 			<dropiteminfo globalDropBoxId="74" />
-			<aiInfo path="AI_GigantikaHead.xml" />
+			<aiInfo path="AI_GigantikaHead.xml" summonNpcIDs="23001003,23001011" />
 			<nodeCollisions>
 				<collision targetNode="b_Head" volume="600,600,800" offset="0,0,-330" />
 				<collision targetNode="Bone23" volume="300,300,500" offset="0,0,-330" />
@@ -2832,7 +2832,7 @@
 			<model kfm="23000096_B_GigantikaTail" scale="0.85" shadowScale="180" rotationSpeed="400" />
 			<stat hp="41762557" asp="100" msp="100" atp="120" evp="102" cap="70" cad="500" car="65" ndd="930" pap="406721" map="406721" />
 			<distance avoid="120" sight="90000" sightHeightUP="9000" sightHeightDown="9000" customLastSightRadius="9999" customLastSightHeightUp="9999" customLastSightHeightDown="9999" />
-			<skill ids="50101006" levels="1" probs="100" />
+			<skill ids="49905001,49905002,49905003,49905004,49905005,49905006,49905006,49905006,49905007" levels="1,1,1,1,1,1,2,3,1" />
 			<additionalEffect codes="50004400" levels="1" />
 			<collision shape="box" width="1650" height="2400" depth="4500" depthOffset="1500" heightOffset="-500" />
 			<capsule radius="200" height="400" />
@@ -2840,7 +2840,7 @@
 			<push back="1" up="1" knockback="1" />
 			<normal action="Idle_A" prob="10000" />
 			<dropiteminfo globalDropBoxId="74" />
-			<aiInfo path="AI_GigantikaTail.xml" />
+			<aiInfo path="AI_GigantikaTail.xml" summonNpcIDs="23001002" />
 			<nodeCollisions>
 				<collision targetNode="b_taill09" volume="600,300,500" offset="70,0,-270" />
 				<collision targetNode="b_taill08" volume="600,300,500" offset="0,0,-270" />
@@ -2892,7 +2892,7 @@
 			<model kfm="23000097_B_CarParadeBlackbean" shadowScale="800" rotationSpeed="250" walkSpeed="100" runSpeed="200" />
 			<stat hp="32360509810" asp="100" msp="100" atp="80" evp="102" cap="72" cad="500" car="70" ndd="1071" pap="274772977" map="274856062" par="120" mar="120" />
 			<distance avoid="140" sight="8000" sightHeightUP="5999" sightHeightDown="5999" customLastSightRadius="99999" customLastSightHeightUp="99999" customLastSightHeightDown="99999" />
-			<skill ids="50009999" levels="1" probs="100" />
+			<skill ids="50001381,50001382,50001382,50001382,50001382,50001382,50001383,50001383,50001384,50001384,50001385,50001385,50001385,50001386" levels="1,1,2,3,11,12,1,2,1,2,1,2,3,1" />
 			<additionalEffect codes="50004400" levels="1" />
 			<collision shape="box" width="1" height="1" depth="1" />
 			<capsule radius="180" height="200" />
@@ -2937,7 +2937,7 @@
 			<model kfm="23000098_B_CarParadeBlackbeanBroken" shadowScale="800" rotationSpeed="250" walkSpeed="100" runSpeed="200" />
 			<stat hp="32360509810" asp="100" msp="100" atp="80" evp="102" cap="72" cad="500" car="70" ndd="1071" pap="274772977" map="274856062" par="120" mar="120" />
 			<distance avoid="140" sight="8000" sightHeightUP="5999" sightHeightDown="5999" customLastSightRadius="99999" customLastSightHeightUp="99999" customLastSightHeightDown="99999" />
-			<skill ids="50009999" levels="1" probs="100" />
+			<skill ids="50001381,50001382,50001382,50001382,50001382,50001382,50001383,50001383,50001384,50001384,50001385,50001385,50001385,50001386" levels="1,1,2,3,11,12,1,2,1,2,1,2,3,1" />
 			<additionalEffect codes="50004400,50000918,50004589" levels="1,1,1" />
 			<collision shape="box" width="1" height="1" depth="1" />
 			<capsule radius="180" height="200" />
@@ -2952,7 +2952,7 @@
 			<model kfm="23000099_B_SandstoneGiantBrown" scale="2.3" shadowScale="640" rotationSpeed="720" walkSpeed="125" runSpeed="250" />
 			<stat hp="10217570" asp="100" msp="100" atp="120" evp="87" cap="55" cad="500" car="50" ndd="294" pap="39769" map="39769" par="120" mar="120" />
 			<distance avoid="400" sight="600" sightHeightUP="2000" sightHeightDown="225" customLastSightRadius="3500" customLastSightHeightUp="525" customLastSightHeightDown="225" />
-			<skill ids="50001000" levels="1" probs="100" />
+			<skill ids="50000232,50000268,50000268,50000268,50000268,50001010,50001010,50001010,50001011,50001011,50001011,50001011,50001012,50001012,50001014,50001016,50001017" levels="2,1,2,3,4,1,2,3,1,2,3,4,1,2,1,1,1" />
 			<additionalEffect codes="50004400" levels="1" />
 			<collision shape="box" width="152.174" height="170" depth="152.174" />
 			<corpse width="700" height="150" depth="330" added="170" offsetNametag="-200" hitAble="1" rotation="345" />
@@ -3002,7 +3002,7 @@
 			<model kfm="23000100_B_SandstoneGiant" scale="2.3" shadowScale="640" rotationSpeed="720" walkSpeed="125" runSpeed="250" />
 			<stat hp="4620245" asp="100" msp="100" atp="120" evp="88" cap="52" cad="500" car="50" ndd="223" pap="54486" map="54501" par="120" mar="120" />
 			<distance avoid="400" sight="600" sightHeightUP="1000" sightHeightDown="225" customLastSightRadius="9999" customLastSightHeightUp="9999" customLastSightHeightDown="9999" />
-			<skill ids="50001000" levels="1" probs="100" />
+			<skill ids="50000232,50000268,50000268,50000268,50000268,50001000,50001001,50001001,50001010,50001010,50001010,50001011,50001011,50001011,50001011,50001012,50001012,50001014,50001018,50001019,50001022" levels="2,1,2,3,4,1,1,2,1,2,3,1,2,3,4,1,2,1,1,1,1" />
 			<additionalEffect codes="50004400" levels="1" />
 			<collision shape="box" width="152.174" height="217.391" depth="152.174" />
 			<corpse width="700" height="150" depth="330" added="170" offsetNametag="-200" rotation="345" />
@@ -3052,14 +3052,14 @@
 			<model kfm="23000089_B_Blackbean" shadowScale="450" rotationSpeed="720" walkSpeed="155" runSpeed="310" />
 			<stat hp="510053938823" asp="100" msp="100" atp="120" evp="108" cap="72" cad="500" car="70" ndd="1071" pap="463989084" map="464051453" par="120" mar="120" />
 			<distance avoid="400" sight="8000" sightHeightUP="8000" sightHeightDown="8000" customLastSightRadius="99999" customLastSightHeightUp="99999" customLastSightHeightDown="99999" />
-			<skill ids="50001406" levels="1" probs="100" />
+			<skill ids="50001389,50001389,50001390,50001391,50001392,50001393,50001394,50001395,50001396,50001397,50001397,50001398,50001399,50001399,50001399,50001400,50001400,50001401,50001401,50001401,50001401,50001401,50001404,50001404,50001404,50001406,50001409,50001409,50001409" levels="1,3,1,1,1,1,1,1,1,1,2,1,1,2,3,1,2,1,2,3,4,5,1,2,3,1,1,2,3" />
 			<additionalEffect codes="50004400" levels="1" />
 			<collision shape="box" width="380" height="350" depth="430" />
 			<capsule radius="100" height="250" />
 			<dead time="8" defaultaction="Dead_B" upaction="Dead_B" />
 			<normal action="Idle_A" prob="10000" />
 			<dropiteminfo globalDropBoxId="74" />
-			<aiInfo path="BossDungeon/Blackbean/AI_Blackbean_Phase01_Hard.xml" />
+			<aiInfo path="BossDungeon/Blackbean/AI_Blackbean_Phase01_Hard.xml" summonNpcIDs="23000097,21501391,21501382,21501396,21501386,23000098" />
 			<effectdummy>
 				<dummy name="Eff_Head">
 					<attachInfo parentNode="Bip01 Head" />
@@ -3097,14 +3097,14 @@
 			<model kfm="23000089_B_Blackbean" scale="1.2" shadowScale="450" rotationSpeed="720" walkSpeed="155" runSpeed="310" />
 			<stat hp="510053938823" asp="100" msp="100" atp="120" evp="108" cap="72" cad="500" car="70" ndd="1071" pap="463989084" map="464051453" par="120" mar="120" />
 			<distance avoid="400" sight="8000" sightHeightUP="8000" sightHeightDown="8000" customLastSightRadius="99999" customLastSightHeightUp="99999" customLastSightHeightDown="99999" />
-			<skill ids="50001406" levels="1" probs="100" />
+			<skill ids="50001391,50001392,50001398,50001400,50001400,50001400,50001401,50001401,50001401,50001401,50001401,50001401,50001402,50001402,50001402,50001402,50001402,50001402,50001402,50001402,50001403,50001403,50001403,50001404,50001404,50001404,50001404,50001405,50001405,50001405,50001405,50001405,50001407,50001408,50001408" levels="2,2,2,1,2,3,1,2,3,4,5,6,1,2,3,4,5,6,7,44,1,2,3,1,2,3,4,1,2,3,4,5,1,1,2" />
 			<additionalEffect codes="50004400" levels="1" />
 			<collision shape="box" width="220" height="250" depth="180" />
 			<capsule radius="100" height="250" />
 			<dead time="8" defaultaction="Dead_A" upaction="Dead_A" extendRoomTime="60000" />
 			<normal action="Idle_A" prob="10000" />
 			<dropiteminfo globalDropBoxId="74" />
-			<aiInfo path="BossDungeon/Blackbean/AI_Blackbean_Phase02_Hard.xml" />
+			<aiInfo path="BossDungeon/Blackbean/AI_Blackbean_Phase02_Hard.xml" summonNpcIDs="21501401,21501402,21501403,21501404,21501405,21501381" />
 			<effectdummy>
 				<dummy name="Eff_Head">
 					<attachInfo parentNode="Bip01 Head" />
@@ -3142,7 +3142,7 @@
 			<model kfm="23000104_B_MushroomRichVehicle" shadowScale="800" rotationSpeed="50" walkSpeed="75" runSpeed="150" />
 			<stat hp="88771601" asp="100" msp="100" atp="80" evp="97" cap="62" cad="500" car="50" ndd="681" pap="286567" map="286627" par="120" mar="120" />
 			<distance avoid="140" sight="8000" sightHeightUP="5999" sightHeightDown="5999" customLastSightRadius="99999" customLastSightHeightUp="99999" customLastSightHeightDown="99999" />
-			<skill ids="50009999" levels="1" probs="100" />
+			<skill ids="50001320,50001320,50001321,50001322,50001323,50001323,50001324,50001324,50001324,50100510" levels="1,2,1,1,1,2,1,2,3,2" />
 			<additionalEffect codes="50004400" levels="1" />
 			<collision shape="box" width="1" height="1" depth="1" />
 			<capsule radius="180" height="200" />
@@ -3157,7 +3157,7 @@
 			<model kfm="23000097_B_CarParadeBlackbean" shadowScale="800" rotationSpeed="250" walkSpeed="100" runSpeed="200" />
 			<stat hp="32360509810" asp="100" msp="100" atp="80" evp="102" cap="72" cad="500" car="70" ndd="1071" pap="153591569" map="153637998" par="120" mar="120" />
 			<distance avoid="140" sight="8000" sightHeightUP="5999" sightHeightDown="5999" customLastSightRadius="99999" customLastSightHeightUp="99999" customLastSightHeightDown="99999" />
-			<skill ids="50009999" levels="1" probs="100" />
+			<skill ids="50001381,50001382,50001382,50001382,50001382,50001382,50001383,50001383,50001384,50001384,50001385,50001385,50001385,50001386" levels="1,1,2,3,11,12,1,2,1,2,1,2,3,1" />
 			<additionalEffect codes="50004400" levels="1" />
 			<collision shape="box" width="1" height="1" depth="1" />
 			<capsule radius="180" height="200" />
@@ -3172,7 +3172,7 @@
 			<model kfm="23000098_B_CarParadeBlackbeanBroken" shadowScale="800" rotationSpeed="250" walkSpeed="100" runSpeed="200" />
 			<stat hp="32360509810" asp="100" msp="100" atp="80" evp="102" cap="72" cad="500" car="70" ndd="1071" pap="153591569" map="153637998" par="120" mar="120" />
 			<distance avoid="140" sight="8000" sightHeightUP="5999" sightHeightDown="5999" customLastSightRadius="99999" customLastSightHeightUp="99999" customLastSightHeightDown="99999" />
-			<skill ids="50009999" levels="1" probs="100" />
+			<skill ids="50001381,50001382,50001382,50001382,50001382,50001382,50001383,50001383,50001384,50001384,50001385,50001385,50001385,50001386" levels="1,1,2,3,11,12,1,2,1,2,1,2,3,1" />
 			<additionalEffect codes="50004400,50000918,50004589" levels="1,1,1" />
 			<collision shape="box" width="1" height="1" depth="1" />
 			<capsule radius="180" height="200" />
@@ -3187,14 +3187,14 @@
 			<model kfm="23000089_B_Blackbean" shadowScale="450" rotationSpeed="720" walkSpeed="155" runSpeed="310" />
 			<stat hp="77218644578" asp="100" msp="100" atp="120" evp="108" cap="72" cad="500" car="70" ndd="1071" pap="188521040" map="188568559" par="120" mar="120" />
 			<distance avoid="400" sight="8000" sightHeightUP="8000" sightHeightDown="8000" customLastSightRadius="99999" customLastSightHeightUp="99999" customLastSightHeightDown="99999" />
-			<skill ids="50001406" levels="1" probs="100" />
+			<skill ids="50001389,50001389,50001390,50001391,50001392,50001393,50001394,50001395,50001396,50001397,50001397,50001398,50001399,50001399,50001399,50001400,50001400,50001401,50001401,50001401,50001401,50001401,50001404,50001404,50001404,50001406,50001409,50001409,50001409" levels="1,3,1,1,1,2,1,1,1,1,2,1,1,2,3,1,2,1,2,3,4,5,1,2,3,1,1,2,3" />
 			<additionalEffect codes="50004400" levels="1" />
 			<collision shape="box" width="380" height="350" depth="430" />
 			<capsule radius="100" height="250" />
 			<dead time="8" defaultaction="Dead_B" upaction="Dead_B" />
 			<normal action="Idle_A" prob="10000" />
 			<dropiteminfo globalDropBoxId="74" />
-			<aiInfo path="BossDungeon/Blackbean/AI_Blackbean_Phase01_Normal.xml" />
+			<aiInfo path="BossDungeon/Blackbean/AI_Blackbean_Phase01_Normal.xml" summonNpcIDs="23000105,21501421,21501412,21501426,21501416,23000106" />
 			<effectdummy>
 				<dummy name="Eff_Head">
 					<attachInfo parentNode="Bip01 Head" />
@@ -3232,14 +3232,14 @@
 			<model kfm="23000089_B_Blackbean" scale="1.2" shadowScale="450" rotationSpeed="720" walkSpeed="155" runSpeed="310" />
 			<stat hp="49643562548" asp="100" msp="100" atp="120" evp="108" cap="72" cad="500" car="70" ndd="1071" pap="188521040" map="188568559" par="120" mar="120" />
 			<distance avoid="400" sight="8000" sightHeightUP="8000" sightHeightDown="8000" customLastSightRadius="99999" customLastSightHeightUp="99999" customLastSightHeightDown="99999" />
-			<skill ids="50001406" levels="1" probs="100" />
+			<skill ids="50001391,50001392,50001398,50001400,50001400,50001400,50001401,50001401,50001401,50001401,50001401,50001401,50001402,50001402,50001402,50001402,50001402,50001402,50001402,50001402,50001403,50001403,50001403,50001404,50001404,50001404,50001404,50001405,50001405,50001405,50001405,50001405,50001407,50001408,50001408" levels="2,2,2,1,2,3,1,2,3,4,5,6,1,2,3,5,6,7,41,44,1,2,3,1,2,3,4,1,2,3,4,5,1,1,2" />
 			<additionalEffect codes="50004400" levels="1" />
 			<collision shape="box" width="220" height="250" depth="180" />
 			<capsule radius="100" height="250" />
 			<dead time="8" defaultaction="Dead_A" upaction="Dead_A" extendRoomTime="60000" />
 			<normal action="Idle_A" prob="10000" />
 			<dropiteminfo globalDropBoxId="74" />
-			<aiInfo path="BossDungeon/Blackbean/AI_Blackbean_Phase02_Normal.xml" />
+			<aiInfo path="BossDungeon/Blackbean/AI_Blackbean_Phase02_Normal.xml" summonNpcIDs="21501431,21501432,21501433,21501434,21501435,21501411" />
 			<effectdummy>
 				<dummy name="Eff_Head">
 					<attachInfo parentNode="Bip01 Head" />
@@ -3277,13 +3277,13 @@
 			<model kfm="23000110_B_MushroomRichKing01" shadowScale="370" rotationSpeed="720" walkSpeed="175" runSpeed="350" />
 			<stat hp="83850544" asp="100" msp="100" atp="120" evp="87" cap="62" cad="500" car="50" ndd="567" pap="192036" map="192036" par="105" mar="105" />
 			<distance avoid="140" sight="8000" sightHeightUP="5999" sightHeightDown="5999" customLastSightRadius="99999" customLastSightHeightUp="99999" customLastSightHeightDown="99999" />
-			<skill ids="50009999" levels="1" probs="100" />
+			<skill ids="50001299,50001299,50001299,50001299,50001299,50001299,50001299,50001299,50001299,50001300,50001301,50001302,50001302,50001302,50001303,50001304,50001305,50001305,50001306,50001306,50001307,50001307,50001308,50001308,50001308,50001308,50001308,50001309,50001309,50001309,50001309,50001310,50001310,50001311,50001311,50001312,50001312,50001313,50001313,50001319,50001319,50001319,50001325,50001326,50001327,50001327,50001327,50001327,50001328,50001328,50001329,50001329" levels="1,2,3,11,12,13,21,22,23,1,1,1,2,3,1,1,1,2,1,2,1,12,1,2,3,4,22,1,2,3,4,1,2,1,2,1,2,1,2,1,2,3,1,1,1,2,3,22,1,2,1,2" />
 			<additionalEffect codes="50004400,50004543" levels="1,1" />
 			<collision shape="box" width="320" height="210" depth="350" />
 			<capsule radius="85" height="280" />
 			<dead time="8" defaultaction="Dead_A" upaction="Dead_A" />
 			<normal action="Idle_A" prob="10000" />
-			<aiInfo path="EventDoungeon/MushroomRichKing/AI_MushroomRichKing.xml" />
+			<aiInfo path="EventDoungeon/MushroomRichKing/AI_MushroomRichKing.xml" summonNpcIDs="23000104,21410101,21410102,21410100" />
 			<effectdummy>
 				<dummy name="Eff_UI">
 					<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
@@ -3301,13 +3301,13 @@
 			<model kfm="23000111_B_MushroomRichKing02" shadowScale="370" rotationSpeed="720" walkSpeed="175" runSpeed="350" />
 			<stat hp="83850544" asp="100" msp="100" atp="120" evp="87" cap="62" cad="500" car="50" ndd="567" pap="192036" map="192036" par="105" mar="105" />
 			<distance avoid="140" sight="8000" sightHeightUP="5999" sightHeightDown="5999" customLastSightRadius="99999" customLastSightHeightUp="99999" customLastSightHeightDown="99999" />
-			<skill ids="50009999" levels="1" probs="100" />
+			<skill ids="50001299,50001299,50001299,50001299,50001299,50001299,50001299,50001299,50001299,50001300,50001301,50001302,50001302,50001302,50001303,50001304,50001305,50001305,50001306,50001306,50001307,50001307,50001308,50001308,50001308,50001308,50001308,50001309,50001309,50001309,50001309,50001310,50001310,50001311,50001311,50001312,50001312,50001313,50001313,50001319,50001319,50001319,50001325,50001326,50001327,50001327,50001327,50001327,50001328,50001328,50001329,50001329" levels="1,2,3,11,12,13,21,22,23,1,1,1,2,3,1,1,1,2,1,2,1,12,1,2,3,4,22,1,2,3,4,1,2,1,2,1,2,1,2,1,2,3,1,1,1,2,3,22,1,2,1,2" />
 			<additionalEffect codes="50004400,50004543" levels="1,1" />
 			<collision shape="box" width="320" height="210" depth="350" />
 			<capsule radius="85" height="280" />
 			<dead time="8" defaultaction="Dead_A" upaction="Dead_A" />
 			<normal action="Idle_A" prob="10000" />
-			<aiInfo path="EventDoungeon/MushroomRichKing/AI_MushroomRichKing.xml" />
+			<aiInfo path="EventDoungeon/MushroomRichKing/AI_MushroomRichKing.xml" summonNpcIDs="23000104,21410101,21410102,21410100" />
 			<effectdummy>
 				<dummy name="Eff_UI">
 					<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
@@ -3325,13 +3325,13 @@
 			<model kfm="23000112_B_MushroomRichKing03" shadowScale="370" rotationSpeed="720" walkSpeed="175" runSpeed="350" />
 			<stat hp="83850544" asp="100" msp="100" atp="120" evp="87" cap="62" cad="500" car="50" ndd="567" pap="192036" map="192036" par="105" mar="105" />
 			<distance avoid="140" sight="8000" sightHeightUP="5999" sightHeightDown="5999" customLastSightRadius="99999" customLastSightHeightUp="99999" customLastSightHeightDown="99999" />
-			<skill ids="50009999" levels="1" probs="100" />
+			<skill ids="50001299,50001299,50001299,50001299,50001299,50001299,50001299,50001299,50001299,50001300,50001301,50001302,50001302,50001302,50001303,50001304,50001305,50001305,50001306,50001306,50001307,50001307,50001308,50001308,50001308,50001308,50001308,50001309,50001309,50001309,50001309,50001310,50001310,50001311,50001311,50001312,50001312,50001313,50001313,50001319,50001319,50001319,50001325,50001326,50001327,50001327,50001327,50001327,50001328,50001328,50001329,50001329" levels="1,2,3,11,12,13,21,22,23,1,1,1,2,3,1,1,1,2,1,2,1,12,1,2,3,4,22,1,2,3,4,1,2,1,2,1,2,1,2,1,2,3,1,1,1,2,3,22,1,2,1,2" />
 			<additionalEffect codes="50004400,50004543" levels="1,1" />
 			<collision shape="box" width="320" height="210" depth="350" />
 			<capsule radius="85" height="280" />
 			<dead time="8" defaultaction="Dead_A" upaction="Dead_A" />
 			<normal action="Idle_A" prob="10000" />
-			<aiInfo path="EventDoungeon/MushroomRichKing/AI_MushroomRichKing.xml" />
+			<aiInfo path="EventDoungeon/MushroomRichKing/AI_MushroomRichKing.xml" summonNpcIDs="23000104,21410101,21410102,21410100" />
 			<effectdummy>
 				<dummy name="Eff_UI">
 					<attachInfo parentNode="Scene Root" applyWorldTransform="true" applyLocalScale="false" />
@@ -3349,14 +3349,14 @@
 			<model kfm="23000113_B_IshuraRbladerDark" scale="1.6" shadowScale="200" rotationSpeed="720" walkSpeed="300" runSpeed="600" />
 			<stat hp="1166550157" asp="100" msp="100" atp="120" evp="125" cap="67" cad="250" car="90" ndd="1839" pap="12142873" map="12145247" par="225" mar="225" />
 			<distance avoid="400" sight="5000" sightHeightUP="3999" sightHeightDown="2999" customLastSightRadius="99999" customLastSightHeightUp="99999" customLastSightHeightDown="99999" />
-			<skill ids="50001330" levels="1" probs="100" />
+			<skill ids="50001330,50001330,50001331,50001331,50001332,50001333,50001333,50001333,50001333,50001333,50001334,50001334,50001335,50001336,50001337,50001337,50001337,50001337,50001338,50001338,50001338,50001338,50001338,50001339,50001340,50001341,50001342,50001342,50001343,50001344,50001344,50001345,50001345,50001345,50001345,50001345,50001345,50001346,50001346,50009999" levels="1,2,1,2,1,1,2,3,4,22,1,2,1,1,1,2,3,4,1,2,3,4,5,1,1,1,1,2,1,1,2,1,2,3,4,5,22,1,2,1" />
 			<additionalEffect codes="50004545" levels="1" />
 			<collision shape="box" width="110" height="190" depth="110" />
 			<capsule radius="30" height="400" ignore="1" />
 			<dead time="4.3" defaultaction="Dead_A" upaction="Dead_A" extendRoomTime="60000" />
 			<normal action="Idle_A" prob="10000" />
 			<dropiteminfo dropHeight="300" dropDistanceRandom="20" globalDropBoxId="74" globalDeadDropBoxId="1011" />
-			<aiInfo path="BossDungeon/IshuraRbladerDark/AI_IshuraRbladerDark.xml" />
+			<aiInfo path="BossDungeon/IshuraRbladerDark/AI_IshuraRbladerDark.xml" summonNpcIDs="21501249,21501070,21501071,21501080,21501072,21501073,21501074,21501075,21501090,21501091,21501100,21501092,21501093,21501094,21501095,21501096,21501130,21501131,21501140,21501240,21501241,21501150,21501151,21501230,21501200,21501160,21501161,21501162,21501180,21501181,21501170,21501220,21501201,21501110,21501111,21501120,21501121,21501101,21501190,21501210,21501211" />
 			<effectdummy>
 				<dummy name="Eff_Head">
 					<attachInfo parentNode="Bip01 Head" />
@@ -3392,14 +3392,14 @@
 			<model kfm="23000083_B_SnowKing" scale="1.3" shadowScale="320" rotationSpeed="720" walkSpeed="65" runSpeed="130" />
 			<stat hp="4691196154" asp="100" msp="100" atp="120" evp="125" cap="67" cad="250" car="90" ndd="1039" pap="10923075" map="10925158" par="225" mar="225" />
 			<distance avoid="400" sight="19000" sightHeightUP="19000" sightHeightDown="19000" customLastSightRadius="199999" customLastSightHeightUp="199999" customLastSightHeightDown="199999" />
-			<skill ids="50001103" levels="1" probs="100" />
+			<skill ids="50001100,50001100,50001100,50001100,50001100,50001101,50001101,50001101,50001101,50001102,50001103,50001104,50001105,50001105,50001105,50001106,50001106,50001107,50001107,50001108,50001109,50001110,50001111,50001113,50009999" levels="1,2,3,4,5,1,2,4,5,1,1,1,1,2,3,1,2,1,2,1,1,1,1,1,1" />
 			<additionalEffect codes="50004400,90000792,90000802" levels="1,5,5" />
 			<collision shape="box" width="120" height="200" depth="100" />
 			<capsule radius="50" height="200" />
 			<dead time="10" defaultaction="Dead_A" upaction="Dead_A" extendRoomTime="60000" />
 			<normal action="Idle_A" prob="10000" />
 			<dropiteminfo dropHeight="300" dropDistanceBase="300" dropDistanceRandom="20" globalDropBoxId="74" />
-			<aiInfo path="BossDungeon/SnowKing/AI_SnowKing_Chaos.xml" />
+			<aiInfo path="BossDungeon/SnowKing/AI_SnowKing.xml" summonNpcIDs="21500520,21500530,21410060,21410061,21410062,21810070,21500540,21500501,21500500,21500510,21500511,21500512,21500553,21500551,21500550,21500552,21500570,21500571,21500558,21500555,21500557,21500556,21500576,21500575,21500513,21500577,21500590,21500514,21500531,21500521,21500522,21500615,21500616,21500617,21500618,21500581,21500582,21500562,21500560,21500580,21500610,21500600,21500586,21500587,21500567,21500565,21500585,21500611" />
 			<effectdummy>
 				<dummy name="Eff_Head">
 					<attachInfo parentNode="Bip01 Head" />
@@ -3441,14 +3441,14 @@
 			<model kfm="23000088_B_Pinkbean" shadowScale="450" rotationSpeed="720" walkSpeed="155" runSpeed="310" />
 			<stat hp="2679176447" asp="100" msp="100" atp="120" evp="125" cap="67" cad="250" car="90" ndd="1835" pap="7103011" map="7104366" par="225" mar="225" />
 			<distance avoid="400" sight="8000" sightHeightUP="8000" sightHeightDown="8000" customLastSightRadius="99999" customLastSightHeightUp="99999" customLastSightHeightDown="99999" />
-			<skill ids="50001205" levels="1" probs="100" />
+			<skill ids="50001200,50001200,50001200,50001200,50001200,50001200,50001201,50001201,50001201,50001201,50001201,50001202,50001202,50001204,50001205,50001205,50001205,50001206,50001206,50001207,50001207,50001208,50001208,50001208,50001209,50001209,50001210,50001210,50001211,50001211,50001211,50001211,50001211,50001213,50001213,50001214,50001214,50001215,50001215,50001216,50001216,50001216,50001216,50001217,50001217,50001218,50001218,50001218,50001218,50001218,50001218" levels="1,2,3,4,5,6,1,2,3,22,33,1,2,1,1,2,3,1,2,1,11,1,2,3,1,2,1,2,1,2,11,12,13,1,2,1,2,1,2,1,3,4,33,1,2,1,2,3,4,5,6" />
 			<additionalEffect codes="50004400,90000797,90000804" levels="1,5,5" />
 			<collision shape="box" width="220" height="250" depth="180" />
 			<capsule radius="100" height="250" />
 			<dead time="8" defaultaction="Dead_A" upaction="Dead_A" extendRoomTime="60000" />
 			<normal action="Idle_A" prob="10000" />
 			<dropiteminfo globalDropBoxId="74" />
-			<aiInfo path="BossDungeon/Pinkbean/Chaos/AI_Pinkbean_Chaos.xml" />
+			<aiInfo path="BossDungeon/Pinkbean/Chaos/AI_Pinkbean_Chaos.xml" summonNpcIDs="21500850,21500851" />
 			<effectdummy>
 				<dummy name="Eff_Head">
 					<attachInfo parentNode="Bip01 Head" />
@@ -3484,10 +3484,10 @@
 	<npc id="23000116">
 		<environment feature="LapentaDungeon" npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="boss" nametag="1" hpBar="1" defenceMaterial="1" hitImmune="99" abnormalImmune="99" level="60" class="6" rankIcon="a" propertyTags="keep_battle" raceString="combine" gender="1" emotionID="23501001" portrait="./Data/Resource/Image/Portrait/Mob/23501001_B_YuperiaRbladerDark_P.png" damagedColorScale="6" damagedVibrateDuration="0.5" damagedVibrateAmp="1" customExp="0" lookAtMyPCWhenTalking="0">
 			<model kfm="23501001_B_YuperiaRbladerDark" scale="1.5" shadowScale="200" rotationSpeed="400" walkSpeed="220" runSpeed="470" />
-			<stat hp="4165195608" asp="100" msp="100" atp="120" evp="130" cap="67" cad="250" car="100" ndd="1839" pap="20797757" map="20797757" par="225" mar="225" />
+			<stat hp="4000000000" asp="100" msp="100" atp="120" evp="130" cap="67" cad="250" car="100" ndd="1839" pap="20797757" map="20797757" par="225" mar="225" />
 			<distance avoid="120" sight="90000" sightHeightUP="9000" sightHeightDown="9000" customLastSightRadius="9999" customLastSightHeightUp="9999" customLastSightHeightDown="9999" />
-			<skill ids="50101006" levels="1" probs="100" />
-			<additionalEffect codes="50004400,90000807,90000797" levels="1,5,10" />
+			<skill ids="50001337,50001342,50001342,50001345,50001351,50001355,50001355,50001355,60300001,60300002,60300002,60300003,60300006,60300006,60300010,60300010,60300010,60300011,60300012,60300012,60300017,60300017,60300017,60300017,60300017" levels="5,1,2,2,1,31,32,33,2,1,2,1,2,3,1,2,4,1,1,4,1,2,3,4,5" />
+			<additionalEffect codes="50004400,90000797" levels="1,10" />
 			<collision shape="box" width="100" height="150" depth="100" />
 			<capsule radius="40" height="200" />
 			<dead time="5" defaultaction="Dead_A" upaction="Dead_A" />
@@ -3533,16 +3533,16 @@
 	<npc id="23000117">
 		<environment feature="LapentaDungeon" npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="boss" nametag="1" hpBar="1" defenceMaterial="1" hitImmune="99" abnormalImmune="99" level="60" class="6" rankIcon="a" propertyTags="keep_battle" raceString="combine" gender="0" emotionID="23501011" portrait="./Data/Resource/Image/Portrait/Mob/23501011_B_RenduebianRbladerDark_P.png" damagedColorScale="6" damagedVibrateDuration="0.5" damagedVibrateAmp="1" customExp="0" lookAtMyPCWhenTalking="0">
 			<model kfm="23501011_B_RenduebianRbladerDark" scale="1.5" shadowScale="250" rotationSpeed="400" walkSpeed="220" runSpeed="470" />
-			<stat hp="4165195608" asp="100" msp="100" atp="120" evp="130" cap="67" cad="250" car="100" ndd="1839" pap="20797757" map="20797757" par="225" mar="225" />
+			<stat hp="4000000000" asp="100" msp="100" atp="120" evp="130" cap="67" cad="250" car="100" ndd="1839" pap="20797757" map="20797757" par="225" mar="225" />
 			<distance avoid="120" sight="90000" sightHeightUP="9000" sightHeightDown="9000" customLastSightRadius="9999" customLastSightHeightUp="9999" customLastSightHeightDown="9999" />
-			<skill ids="50101006" levels="1" probs="100" />
-			<additionalEffect codes="50004400,90000807,90000797" levels="1,5,10" />
+			<skill ids="50001337,50001338,50001342,50001342,50001345,50001352,50001355,50001355,60300012,60300012,60300101,60300102,60300103,60300104,60300104,60300104,60300115,60300115,60300115,60300115,60300116,60300116" levels="5,5,1,2,2,1,21,22,1,4,2,1,1,1,2,3,1,2,3,4,1,2" />
+			<additionalEffect codes="50004400,90000797" levels="1,10" />
 			<collision shape="box" width="100" height="150" depth="100" />
 			<capsule radius="40" height="200" />
 			<dead time="5" defaultaction="Dead_A" upaction="Dead_A" />
 			<normal action="Attack_Idle_A" prob="10000" />
 			<dropiteminfo globalDropBoxId="74" />
-			<aiInfo path="BossDungeon/EyeOfLapenta/FinalChaos/AI_RenduebianRbladerDark_FinalChaos.xml" />
+			<aiInfo path="BossDungeon/EyeOfLapenta/FinalChaos/AI_RenduebianRbladerDark_FinalChaos.xml" summonNpcIDs="21501251" />
 			<effectdummy>
 				<dummy name="Eff_Head">
 					<attachInfo parentNode="Bip01 Head" />
@@ -3578,16 +3578,16 @@
 	<npc id="23000118">
 		<environment feature="LapentaDungeon" npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="boss" nametag="1" hpBar="1" defenceMaterial="1" hitImmune="99" abnormalImmune="99" level="60" class="6" rankIcon="a" propertyTags="keep_battle" raceString="combine" gender="0" emotionID="23000113" portrait="./Data/Resource/Image/Portrait/Mob/23000113_B_IshuraRbladerDark_P.png" damagedVibrateDuration="0.5" damagedVibrateAmp="1" customExp="0" lookAtMyPCWhenTalking="0">
 			<model kfm="23000113_B_IshuraRbladerDark" scale="1.6" shadowScale="200" rotationSpeed="720" walkSpeed="300" runSpeed="600" />
-			<stat hp="4165195608" asp="100" msp="100" atp="120" evp="130" cap="67" cad="250" car="100" ndd="1839" pap="26696247" map="26696247" par="225" mar="170" />
+			<stat hp="4000000000" asp="100" msp="100" atp="120" evp="130" cap="67" cad="250" car="100" ndd="1839" pap="26696247" map="26696247" par="225" mar="170" />
 			<distance avoid="400" sight="5000" sightHeightUP="3999" sightHeightDown="2999" customLastSightRadius="99999" customLastSightHeightUp="99999" customLastSightHeightDown="99999" />
-			<skill ids="50001330" levels="1" probs="100" />
-			<additionalEffect codes="50004545,90000807,90000797" levels="1,5,10" />
+			<skill ids="50001332,50001333,50001333,50001333,50001333,50001333,50001334,50001334,50001337,50001337,50001338,50001338,50001338,50001338,50001340,50001341,50001342,50001342,50001345,50001345,50001345,50001345,50001345,50001347,50001347,50001347,50001347,50001347,50001347,50001348,50001355,50001355,50001356,50001357,50001357" levels="1,1,2,3,4,22,1,2,5,6,1,2,4,5,2,1,1,2,1,2,5,6,22,1,11,12,21,31,41,1,11,12,1,1,2" />
+			<additionalEffect codes="50004545,90000797" levels="1,10" />
 			<collision shape="box" width="110" height="190" depth="110" />
 			<capsule radius="30" height="400" ignore="1" />
 			<dead time="5.3" defaultaction="Dead_B" upaction="Dead_B" />
 			<normal action="Idle_A" prob="10000" />
 			<dropiteminfo dropHeight="300" dropDistanceRandom="20" globalDropBoxId="74" globalDeadDropBoxId="1011" />
-			<aiInfo path="BossDungeon/EyeOfLapenta/FinalChaos/AI_IshuraRbladerDark_FinalChaos.xml" />
+			<aiInfo path="BossDungeon/EyeOfLapenta/FinalChaos/AI_IshuraRbladerDark_FinalChaos.xml" summonNpcIDs="21501250,21501260,21501270,21501271,21501272,21501251" />
 			<effectdummy>
 				<dummy name="Eff_Head">
 					<attachInfo parentNode="Bip01 Head" />
@@ -3623,13 +3623,13 @@
 			<model kfm="23000120_B_TurkaHoodForce" scale="1.8" shadowScale="550" rotationSpeed="720" walkSpeed="500" runSpeed="600" />
 			<stat hp="81321374544" asp="100" msp="100" atp="120" evp="130" cap="72" cad="250" car="70" ndd="1071" pap="66884008" map="66904239" par="220" mar="220" />
 			<distance avoid="400" sight="39900" sightHeightUP="19900" sightHeightDown="19900" customLastSightRadius="59999" customLastSightHeightUp="29999" customLastSightHeightDown="29999" />
-			<skill ids="50101300" levels="1" probs="100" />
+			<skill ids="50101300,50101301,50101304,50101305,50101305,50101306,50101306,50101309,50101312" levels="2,1,11,1,2,1,2,1,1" />
 			<additionalEffect codes="50004400" levels="1" />
 			<collision shape="box" width="170" height="300" depth="130" />
 			<capsule radius="30" height="400" ignore="1" />
 			<dead time="1" defaultaction="Idle_A" upaction="Idle_A" />
 			<normal action="Idle_A" prob="10000" />
-			<aiInfo path="BossDungeon/TurkaHoodForce/AI_TurkaHoodForce_Phase01.xml" />
+			<aiInfo path="BossDungeon/TurkaHoodForce/AI_TurkaHoodForce_Phase01.xml" summonNpcIDs="23000123,23000124" />
 			<effectdummy>
 				<dummy name="Eff_Head">
 					<attachInfo parentNode="Bip01 Head" />
@@ -3667,13 +3667,13 @@
 			<model kfm="23000120_B_TurkaHoodForce" scale="1.4" shadowScale="450" rotationSpeed="720" walkSpeed="500" runSpeed="600" />
 			<stat hp="77427008629" asp="100" msp="100" atp="120" evp="130" cap="72" cad="250" car="70" ndd="1071" pap="66884008" map="66904239" par="220" mar="220" />
 			<distance avoid="400" sight="39900" sightHeightUP="19900" sightHeightDown="19900" customLastSightRadius="59999" customLastSightHeightUp="29999" customLastSightHeightDown="29999" />
-			<skill ids="50101300" levels="1" probs="100" />
+			<skill ids="50101300,50101301,50101301,50101303,50101303,50101304,50101304,50101304,50101304,50101304,50101304,50101306,50101306,50101306,50101306,50101307,50101308,50101308,50101308,50101308,50101308,50101309,50101309,50101310,50101311,50101311,50101312" levels="1,1,2,11,12,1,2,3,4,11,22,1,2,4,5,1,1,2,3,4,5,1,2,3,1,2,1" />
 			<additionalEffect codes="50004400" levels="1" />
 			<collision shape="box" width="170" height="300" depth="130" />
 			<capsule radius="30" height="400" ignore="1" />
 			<dead time="1" defaultaction="Idle_A" upaction="Idle_A" />
 			<normal action="Idle_A" prob="10000" />
-			<aiInfo path="BossDungeon/TurkaHoodForce/AI_TurkaHoodForce_Phase02.xml" />
+			<aiInfo path="BossDungeon/TurkaHoodForce/AI_TurkaHoodForce_Phase02.xml" summonNpcIDs="21502309,23000125,23000126,23000127,23000128" />
 			<effectdummy>
 				<dummy name="Eff_Head">
 					<attachInfo parentNode="Bip01 Head" />
@@ -3711,13 +3711,13 @@
 			<model kfm="23000120_B_TurkaHoodForce" scale="1.4" shadowScale="450" rotationSpeed="720" walkSpeed="500" runSpeed="600" />
 			<stat hp="62353693653" asp="100" msp="100" atp="120" evp="130" cap="72" cad="250" car="70" ndd="1071" pap="66884008" map="66904239" par="220" mar="220" />
 			<distance avoid="400" sight="39900" sightHeightUP="19900" sightHeightDown="19900" customLastSightRadius="59999" customLastSightHeightUp="29999" customLastSightHeightDown="29999" />
-			<skill ids="50101300" levels="1" probs="100" />
+			<skill ids="50101300,50101301,50101303,50101303,50101304,50101304,50101304,50101304,50101304,50101304,50101306,50101306,50101306,50101306,50101311,50101311,50101312,50101314,50101315,50101315" levels="1,1,11,12,1,2,3,4,11,22,2,21,22,23,1,2,1,1,1,2" />
 			<additionalEffect codes="50004400" levels="1" />
 			<collision shape="box" width="170" height="300" depth="130" />
 			<capsule radius="30" height="400" ignore="1" />
 			<dead time="5.9" defaultaction="Dead_A" upaction="Dead_A" extendRoomTime="60000" />
 			<normal action="Idle_A" prob="10000" />
-			<aiInfo path="BossDungeon/TurkaHoodForce/AI_TurkaHoodForce_Phase03.xml" />
+			<aiInfo path="BossDungeon/TurkaHoodForce/AI_TurkaHoodForce_Phase03.xml" summonNpcIDs="21502310,21502296" />
 			<effectdummy>
 				<dummy name="Eff_Head">
 					<attachInfo parentNode="Bip01 Head" />
@@ -3755,7 +3755,7 @@
 			<model kfm="23000120_B_TurkaHoodForce" scale="1.8" shadowScale="550" rotationSpeed="720" walkSpeed="500" runSpeed="600" />
 			<stat hp="81321374544" asp="100" msp="100" atp="120" evp="130" cap="72" cad="250" car="70" ndd="1071" pap="66884008" map="66904239" par="220" mar="220" />
 			<distance avoid="400" sight="39900" sightHeightUP="19900" sightHeightDown="19900" customLastSightRadius="59999" customLastSightHeightUp="29999" customLastSightHeightDown="29999" />
-			<skill ids="50101300" levels="1" probs="100" />
+			<skill ids="50101300,50101301,50101304,50101306,50101306,50101309,50101311,50101311,50101312" levels="2,1,11,1,2,1,11,12,1" />
 			<additionalEffect codes="50004400" levels="1" />
 			<collision shape="box" width="170" height="300" depth="130" />
 			<capsule radius="30" height="400" ignore="1" />
@@ -3799,7 +3799,7 @@
 			<model kfm="23000120_B_TurkaHoodForce" scale="1.8" shadowScale="550" rotationSpeed="720" walkSpeed="500" runSpeed="600" />
 			<stat hp="81321374544" asp="100" msp="100" atp="120" evp="130" cap="72" cad="250" car="70" ndd="1071" pap="66884008" map="66904239" par="220" mar="220" />
 			<distance avoid="400" sight="39900" sightHeightUP="19900" sightHeightDown="19900" customLastSightRadius="59999" customLastSightHeightUp="29999" customLastSightHeightDown="29999" />
-			<skill ids="50101300" levels="1" probs="100" />
+			<skill ids="50101300,50101301,50101303,50101303,50101305,50101305,50101306,50101306,50101309,50101312,50101313" levels="2,1,11,12,1,2,11,12,1,1,1" />
 			<additionalEffect codes="50004400" levels="1" />
 			<collision shape="box" width="170" height="300" depth="130" />
 			<capsule radius="30" height="400" ignore="1" />
@@ -3843,7 +3843,7 @@
 			<model kfm="23000120_B_TurkaHoodForce" scale="1.4" shadowScale="450" rotationSpeed="720" walkSpeed="500" runSpeed="600" />
 			<stat hp="77427008629" asp="100" msp="100" atp="120" evp="130" cap="72" cad="250" car="70" ndd="1071" pap="66884008" map="66904239" par="220" mar="220" />
 			<distance avoid="400" sight="39900" sightHeightUP="19900" sightHeightDown="19900" customLastSightRadius="59999" customLastSightHeightUp="29999" customLastSightHeightDown="29999" />
-			<skill ids="50101300" levels="1" probs="100" />
+			<skill ids="50009999,50101300,50101304,50101306,50101306,50101312,50101312" levels="1,2,11,1,6,1,2" />
 			<additionalEffect codes="50004400" levels="1" />
 			<collision shape="box" width="170" height="300" depth="130" />
 			<capsule radius="30" height="400" ignore="1" />
@@ -3887,7 +3887,7 @@
 			<model kfm="23000120_B_TurkaHoodForce" scale="1.4" shadowScale="450" rotationSpeed="720" walkSpeed="500" runSpeed="600" />
 			<stat hp="77427008629" asp="100" msp="100" atp="120" evp="130" cap="72" cad="250" car="70" ndd="1071" pap="66884008" map="66904239" par="220" mar="220" />
 			<distance avoid="400" sight="39900" sightHeightUP="19900" sightHeightDown="19900" customLastSightRadius="59999" customLastSightHeightUp="29999" customLastSightHeightDown="29999" />
-			<skill ids="50101300" levels="1" probs="100" />
+			<skill ids="50009999,50101302,50101302,50101302,50101312,50101312" levels="1,1,2,3,1,2" />
 			<additionalEffect codes="50004400" levels="1" />
 			<collision shape="box" width="170" height="300" depth="130" />
 			<capsule radius="30" height="400" ignore="1" />
@@ -3931,7 +3931,7 @@
 			<model kfm="23000120_B_TurkaHoodForce" scale="1.4" shadowScale="450" rotationSpeed="720" walkSpeed="500" runSpeed="600" />
 			<stat hp="77427008629" asp="100" msp="100" atp="120" evp="130" cap="72" cad="250" car="70" ndd="1071" pap="66884008" map="66904239" par="220" mar="220" />
 			<distance avoid="400" sight="39900" sightHeightUP="19900" sightHeightDown="19900" customLastSightRadius="59999" customLastSightHeightUp="29999" customLastSightHeightDown="29999" />
-			<skill ids="50101300" levels="1" probs="100" />
+			<skill ids="50009999,50101300,50101304,50101306,50101306,50101312,50101312" levels="1,2,11,1,6,1,2" />
 			<additionalEffect codes="50004400" levels="1" />
 			<collision shape="box" width="170" height="300" depth="130" />
 			<capsule radius="30" height="400" ignore="1" />
@@ -3975,7 +3975,7 @@
 			<model kfm="23000120_B_TurkaHoodForce" scale="1.4" shadowScale="450" rotationSpeed="720" walkSpeed="500" runSpeed="600" />
 			<stat hp="77427008629" asp="100" msp="100" atp="120" evp="130" cap="72" cad="250" car="70" ndd="1071" pap="66884008" map="66904239" par="220" mar="220" />
 			<distance avoid="400" sight="39900" sightHeightUP="19900" sightHeightDown="19900" customLastSightRadius="59999" customLastSightHeightUp="29999" customLastSightHeightDown="29999" />
-			<skill ids="50101300" levels="1" probs="100" />
+			<skill ids="50009999,50101300,50101304,50101306,50101306,50101312,50101312" levels="1,2,11,1,6,1,2" />
 			<additionalEffect codes="50004400" levels="1" />
 			<collision shape="box" width="170" height="300" depth="130" />
 			<capsule radius="30" height="400" ignore="1" />
@@ -4019,7 +4019,7 @@
 			<model kfm="23000130_B_TurkaHoodBlue" scale="1.2" shadowScale="200" rotationSpeed="400" walkSpeed="225" runSpeed="450" />
 			<stat hp="128397099" asp="100" msp="100" atp="120" evp="108" cap="72" cad="500" car="70" ndd="1500" pap="2160082" map="2160735" par="150" mar="150" />
 			<distance avoid="400" sight="15000" sightHeightUP="1100" sightHeightDown="900" customLastSightRadius="18000" customLastSightHeightUp="1500" customLastSightHeightDown="999" />
-			<skill ids="49905201" levels="1" probs="100" />
+			<skill ids="49905201,49905202,49905203,49905204,49905205,49905206" levels="1,1,1,1,1,1" />
 			<additionalEffect codes="50004400" levels="1" />
 			<collision shape="box" width="110" height="190" depth="110" />
 			<capsule radius="30" height="150" />
@@ -4063,13 +4063,13 @@
 			<model kfm="23000120_B_TurkaHoodForce" scale="1.8" shadowScale="550" rotationSpeed="720" walkSpeed="500" runSpeed="600" />
 			<stat hp="25424141" asp="100" msp="100" atp="120" evp="108" cap="72" cad="250" car="70" ndd="1071" pap="597029" map="597148" par="220" mar="220" scaleStatRate_1="1.4" scaleBaseTap_1="8935624" scaleBaseDef_1="8790" scaleBaseSpaRate_1="0.2" scaleStatRate_2="1.4" scaleBaseTap_2="13037074" scaleBaseDef_2="13661" scaleBaseSpaRate_2="0.2" />
 			<distance avoid="400" sight="39900" sightHeightUP="19900" sightHeightDown="19900" customLastSightRadius="59999" customLastSightHeightUp="29999" customLastSightHeightDown="29999" />
-			<skill ids="50101300" levels="1" probs="100" />
+			<skill ids="50101300,50101301,50101304,50101305,50101305,50101306,50101306,50101309,50101312" levels="2,1,11,1,2,1,2,1,1" />
 			<additionalEffect codes="50004400" levels="1" />
 			<collision shape="box" width="170" height="300" depth="130" />
 			<capsule radius="30" height="400" ignore="1" />
 			<dead time="1" defaultaction="Idle_A" upaction="Idle_A" />
 			<normal action="Idle_A" prob="10000" />
-			<aiInfo path="BossDungeon/TurkaHoodForce/Quest/AI_TurkaHoodForceQuest_Phase01.xml" />
+			<aiInfo path="BossDungeon/TurkaHoodForce/Quest/AI_TurkaHoodForceQuest_Phase01.xml" summonNpcIDs="23000134,23000135" />
 			<effectdummy>
 				<dummy name="Eff_Head">
 					<attachInfo parentNode="Bip01 Head" />
@@ -4107,7 +4107,7 @@
 			<model kfm="23000120_B_TurkaHoodForce" scale="1.4" shadowScale="450" rotationSpeed="720" walkSpeed="500" runSpeed="600" />
 			<stat hp="25424141" asp="100" msp="100" atp="120" evp="108" cap="72" cad="250" car="70" ndd="1071" pap="597029" map="597148" par="220" mar="220" scaleStatRate_1="1.4" scaleBaseTap_1="8935624" scaleBaseDef_1="8790" scaleBaseSpaRate_1="0.2" scaleStatRate_2="1.4" scaleBaseTap_2="13037074" scaleBaseDef_2="13661" scaleBaseSpaRate_2="0.2" />
 			<distance avoid="400" sight="39900" sightHeightUP="19900" sightHeightDown="19900" customLastSightRadius="59999" customLastSightHeightUp="29999" customLastSightHeightDown="29999" />
-			<skill ids="50101300" levels="1" probs="100" />
+			<skill ids="50101300,50101301,50101301,50101304,50101304,50101304,50101304,50101304,50101306,50101306,50101306,50101306,50101307,50101308,50101309,50101309,50101310,50101311,50101311,50101312" levels="1,1,2,1,2,3,11,22,1,2,4,5,1,5,1,2,3,1,2,1" />
 			<additionalEffect codes="50004400" levels="1" />
 			<collision shape="box" width="170" height="300" depth="130" />
 			<capsule radius="30" height="400" ignore="1" />
@@ -4151,13 +4151,13 @@
 			<model kfm="23000120_B_TurkaHoodForce" scale="1.4" shadowScale="450" rotationSpeed="720" walkSpeed="500" runSpeed="600" />
 			<stat hp="25424141" asp="100" msp="100" atp="120" evp="108" cap="72" cad="250" car="70" ndd="1071" pap="597029" map="597148" par="220" mar="220" scaleStatRate_1="1.4" scaleBaseTap_1="8935624" scaleBaseDef_1="8790" scaleBaseSpaRate_1="0.2" scaleStatRate_2="1.4" scaleBaseTap_2="13037074" scaleBaseDef_2="13661" scaleBaseSpaRate_2="0.2" />
 			<distance avoid="400" sight="39900" sightHeightUP="19900" sightHeightDown="19900" customLastSightRadius="59999" customLastSightHeightUp="29999" customLastSightHeightDown="29999" />
-			<skill ids="50101300" levels="1" probs="100" />
+			<skill ids="50101300,50101301,50101304,50101304,50101304,50101304,50101304,50101306,50101306,50101306,50101308,50101311,50101311,50101315,50101315" levels="1,1,1,2,3,11,22,2,21,22,5,1,2,1,2" />
 			<additionalEffect codes="50004400" levels="1" />
 			<collision shape="box" width="170" height="300" depth="130" />
 			<capsule radius="30" height="400" ignore="1" />
 			<dead time="5.9" defaultaction="Dead_A" upaction="Dead_A" />
 			<normal action="Idle_A" prob="10000" />
-			<aiInfo path="BossDungeon/TurkaHoodForce/Quest/AI_TurkaHoodForceQuest_Phase03.xml" />
+			<aiInfo path="BossDungeon/TurkaHoodForce/Quest/AI_TurkaHoodForceQuest_Phase03.xml" summonNpcIDs="21502346,21502341" />
 			<effectdummy>
 				<dummy name="Eff_Head">
 					<attachInfo parentNode="Bip01 Head" />
@@ -4195,7 +4195,7 @@
 			<model kfm="23000120_B_TurkaHoodForce" scale="1.8" shadowScale="550" rotationSpeed="720" walkSpeed="500" runSpeed="600" />
 			<stat hp="25424141" asp="100" msp="100" atp="120" evp="108" cap="72" cad="250" car="70" ndd="1071" pap="597029" map="597148" par="220" mar="220" scaleStatRate_1="1.4" scaleBaseTap_1="8935624" scaleBaseDef_1="8790" scaleBaseSpaRate_1="0.2" scaleStatRate_2="1.4" scaleBaseTap_2="13037074" scaleBaseDef_2="13661" scaleBaseSpaRate_2="0.2" />
 			<distance avoid="400" sight="39900" sightHeightUP="19900" sightHeightDown="19900" customLastSightRadius="59999" customLastSightHeightUp="29999" customLastSightHeightDown="29999" />
-			<skill ids="50101300" levels="1" probs="100" />
+			<skill ids="50101300,50101301,50101304,50101306,50101306,50101309,50101311,50101311,50101312" levels="2,1,11,1,2,1,11,12,1" />
 			<additionalEffect codes="50004400" levels="1" />
 			<collision shape="box" width="170" height="300" depth="130" />
 			<capsule radius="30" height="400" ignore="1" />
@@ -4239,7 +4239,7 @@
 			<model kfm="23000120_B_TurkaHoodForce" scale="1.8" shadowScale="550" rotationSpeed="720" walkSpeed="500" runSpeed="600" />
 			<stat hp="25424141" asp="100" msp="100" atp="120" evp="108" cap="72" cad="250" car="70" ndd="1071" pap="597029" map="597148" par="220" mar="220" scaleStatRate_1="1.4" scaleBaseTap_1="8935624" scaleBaseDef_1="8790" scaleBaseSpaRate_1="0.2" scaleStatRate_2="1.4" scaleBaseTap_2="13037074" scaleBaseDef_2="13661" scaleBaseSpaRate_2="0.2" />
 			<distance avoid="400" sight="39900" sightHeightUP="19900" sightHeightDown="19900" customLastSightRadius="59999" customLastSightHeightUp="29999" customLastSightHeightDown="29999" />
-			<skill ids="50101300" levels="1" probs="100" />
+			<skill ids="50101300,50101301,50101305,50101305,50101306,50101306,50101309,50101312" levels="2,1,1,2,11,12,1,1" />
 			<additionalEffect codes="50004400" levels="1" />
 			<collision shape="box" width="170" height="300" depth="130" />
 			<capsule radius="30" height="400" ignore="1" />
@@ -4283,13 +4283,13 @@
 			<model kfm="23000090_B_BalrogMagicBurster" scale="1.5" shadowScale="900" rotationSpeed="400" walkSpeed="400" runSpeed="380" />
 			<stat hp="800000000" asp="100" msp="100" atp="120" evp="130" cap="62" cad="500" car="90" ndd="1014" pap="2991455" map="2991652" par="150" mar="150" />
 			<distance avoid="400" sight="15000" sightHeightUP="1100" sightHeightDown="900" customLastSightRadius="18000" customLastSightHeightUp="1500" customLastSightHeightDown="999" />
-			<skill ids="50001280" levels="1" probs="100" />
+			<skill ids="50001280,50001280,50001281,50001281,50001281,50001282,50001282,50001282,50001282,50001283,50001283,50001283,50001283,50001283,50001283,50001283,50001283,50001283,50001283,50001283,50001283,50001284,50001285,50001285,50001286,50001286,50001288" levels="11,13,2,3,4,1,2,4,31,1,2,3,22,24,25,26,27,221,222,223,224,3,1,3,1,2,1" />
 			<additionalEffect codes="50004400,50000293" levels="1,1" />
 			<collision shape="box" width="350" height="450" depth="200" depthOffset="100" />
 			<capsule radius="10" height="10" ignore="1" />
 			<dead time="0.5" defaultaction="Idle_A" upaction="Idle_A" />
 			<normal action="Idle_A" prob="10000" />
-			<aiInfo path="BossDungeon/BalrogMagicBurster/NAChaso/AI_BalrogMagicBurster_NAChaos.xml" />
+			<aiInfo path="BossDungeon/BalrogMagicBurster/NAChaso/AI_BalrogMagicBurster_NAChaos.xml" summonNpcIDs="21500805,21801000,21801001" />
 		</environment>
 	</npc>
 	<npc id="23000141">
@@ -4297,13 +4297,13 @@
 			<model kfm="23000091_B_AirshipBalrogCrimson_01" scale="0.95" walkSpeed="200" runSpeed="400" />
 			<stat hp="600000000" asp="100" msp="100" atp="120" evp="88" cap="62" cad="500" car="50" ndd="1000441" pap="2991455" map="2991652" par="150" mar="150" />
 			<distance avoid="3200" sight="15000" sightHeightUP="2500" sightHeightDown="900" customLastSightRadius="18000" customLastSightHeightUp="3100" customLastSightHeightDown="999" />
-			<skill ids="50009999" levels="1" probs="100" />
+			<skill ids="50001267,50001267,50001267,50001267,50001267,50001267,50001267,50001267,50001267,50001267,50001267,50001267,50001267,50001267,50001267,50001268,50001268,50001268,50001268,50001268,50001268,50001268,50001268,50001268,50001268,50001268,50001268,50001268,50001268,50001268,50001268" levels="1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16" />
 			<additionalEffect codes="50004400" levels="1" />
 			<collision shape="box" width="2600" height="1500" depth="1450" widthOffset="-150" />
 			<capsule radius="10" height="10" ignore="1" />
 			<dead time="5" defaultaction="Idle_A" upaction="Idle_A" />
 			<normal action="Idle_A" prob="10000" />
-			<aiInfo path="BossDungeon/BalrogMagicBurster/NAChaso/AI_AirshipBalrogCrimson_NAChaos.xml" />
+			<aiInfo path="BossDungeon/BalrogMagicBurster/NAChaso/AI_AirshipBalrogCrimson_NAChaos.xml" summonNpcIDs="21800960,21800961,21501322,21501321,21501330,21501331,21501332,21501333,21501334,21501335,21501340,21501341" />
 		</environment>
 	</npc>
 	<npc id="23000142">
@@ -4311,13 +4311,13 @@
 			<model kfm="23000092_B_AirshipBalrogCrimsonFlame" scale="0.95" walkSpeed="200" runSpeed="400" />
 			<stat hp="600000000" asp="100" msp="100" atp="120" evp="88" cap="62" cad="500" car="50" ndd="1000441" pap="2991455" map="2991652" par="150" mar="150" />
 			<distance avoid="3200" sight="15000" sightHeightUP="2500" sightHeightDown="900" customLastSightRadius="18000" customLastSightHeightUp="3100" customLastSightHeightDown="999" />
-			<skill ids="50009999" levels="1" probs="100" />
+			<skill ids="50001265,50001265,50001265,50001269,50001269" levels="1,2,3,1,2" />
 			<additionalEffect codes="50004400" levels="1" />
 			<collision shape="box" width="2600" height="1500" depth="1200" widthOffset="-150" />
 			<capsule radius="10" height="10" ignore="1" />
 			<dead time="5" defaultaction="Idle_A" upaction="Idle_A" />
 			<normal action="Idle_A" prob="10000" />
-			<aiInfo path="BossDungeon/BalrogMagicBurster/NAChaso/AI_AirshipBalrogCrimsonFlame_NAChaos.xml" />
+			<aiInfo path="BossDungeon/BalrogMagicBurster/NAChaso/AI_AirshipBalrogCrimsonFlame_NAChaos.xml" summonNpcIDs="21800962,21800963,21501336,21501337,21501338,21501342,21501343,21800964,21800965,21501323,23000143" />
 		</environment>
 	</npc>
 	<npc id="23000143">
@@ -4325,7 +4325,7 @@
 			<model kfm="23000093_B_AirshipBalrogCrimsonBroken" scale="0.95" walkSpeed="200" runSpeed="400" />
 			<stat hp="600000000" asp="100" msp="100" atp="80" evp="82" cap="62" cad="500" car="50" ndd="1000441" pap="2991455" map="2991652" par="150" mar="150" />
 			<distance avoid="3200" sight="15000" sightHeightUP="2500" sightHeightDown="900" customLastSightRadius="18000" customLastSightHeightUp="3100" customLastSightHeightDown="999" />
-			<skill ids="50009999" levels="1" probs="100" />
+			<skill ids="50001264,50001264,50001264,50001264,50001264" levels="11,12,13,14,15" />
 			<additionalEffect codes="50004400" levels="1" />
 			<collision shape="box" width="3" height="3" depth="3" />
 			<capsule radius="10" height="10" ignore="1" />
@@ -4339,13 +4339,13 @@
 			<model kfm="23000090_B_BalrogMagicBurster" scale="1.5" shadowScale="900" rotationSpeed="400" walkSpeed="400" runSpeed="380" />
 			<stat hp="1200000" asp="100" msp="100" atp="120" evp="130" cap="62" cad="500" car="90" ndd="567" pap="142249" map="142293" par="150" mar="150" />
 			<distance avoid="400" sight="15000" sightHeightUP="1100" sightHeightDown="900" customLastSightRadius="18000" customLastSightHeightUp="1500" customLastSightHeightDown="999" />
-			<skill ids="50001280" levels="1" probs="100" />
+			<skill ids="50001280,50001280,50001282,50001282,50001282,50001282,50001283,50001283,50001283,50001283,50001283,50001283,50001283,50001283,50001283,50001283,50001284,50001285,50001285,50001286,50001286,50001288" levels="21,23,1,2,4,32,1,2,3,22,24,25,26,27,29,221,2,1,3,1,2,1" />
 			<additionalEffect codes="50004400,50000293" levels="1,1" />
 			<collision shape="box" width="350" height="450" depth="200" depthOffset="100" />
 			<capsule radius="10" height="10" ignore="1" />
 			<dead time="0.5" defaultaction="Idle_A" upaction="Idle_A" />
 			<normal action="Idle_A" prob="10000" />
-			<aiInfo path="BossDungeon/BalrogMagicBurster/NAOneplay/AI_BalrogMagicBurster_NAOneplay.xml" />
+			<aiInfo path="BossDungeon/BalrogMagicBurster/NAOneplay/AI_BalrogMagicBurster_NAOneplay.xml" summonNpcIDs="21500805" />
 		</environment>
 	</npc>
 	<npc id="23000145">
@@ -4353,13 +4353,13 @@
 			<model kfm="23000091_B_AirshipBalrogCrimson_01" scale="0.95" walkSpeed="200" runSpeed="400" />
 			<stat hp="6000000" asp="100" msp="100" atp="120" evp="88" cap="62" cad="500" car="50" ndd="1000441" pap="2505248" map="2505292" par="150" mar="150" />
 			<distance avoid="3200" sight="15000" sightHeightUP="2500" sightHeightDown="900" customLastSightRadius="18000" customLastSightHeightUp="3100" customLastSightHeightDown="999" />
-			<skill ids="50009999" levels="1" probs="100" />
+			<skill ids="50001264,50001264,50001264,50001264,50001264" levels="1,2,3,4,5" />
 			<additionalEffect codes="50004400" levels="1" />
 			<collision shape="box" width="2600" height="1500" depth="1450" widthOffset="-150" />
 			<capsule radius="10" height="10" ignore="1" />
 			<dead time="5" defaultaction="Idle_A" upaction="Idle_A" />
 			<normal action="Idle_A" prob="10000" />
-			<aiInfo path="BossDungeon/BalrogMagicBurster/NAOneplay/AI_AirshipBalrogCrimson_NAOneplay.xml" />
+			<aiInfo path="BossDungeon/BalrogMagicBurster/NAOneplay/AI_AirshipBalrogCrimson_NAOneplay.xml" summonNpcIDs="21800966,21800967,21501352,21501351,21501360,21501361,21501370,21501371" />
 		</environment>
 	</npc>
 	<npc id="23000146">
@@ -4367,13 +4367,13 @@
 			<model kfm="23000092_B_AirshipBalrogCrimsonFlame" scale="0.95" walkSpeed="200" runSpeed="400" />
 			<stat hp="6000000" asp="100" msp="100" atp="120" evp="88" cap="62" cad="500" car="50" ndd="1000441" pap="2505248" map="2505292" par="150" mar="150" />
 			<distance avoid="3200" sight="15000" sightHeightUP="2500" sightHeightDown="900" customLastSightRadius="18000" customLastSightHeightUp="3100" customLastSightHeightDown="999" />
-			<skill ids="50009999" levels="1" probs="100" />
+			<skill ids="50001265,50001265,50001265,50001269,50001269" levels="1,2,3,1,3" />
 			<additionalEffect codes="50004400" levels="1" />
 			<collision shape="box" width="2600" height="1500" depth="1200" widthOffset="-150" />
 			<capsule radius="10" height="10" ignore="1" />
 			<dead time="5" defaultaction="Idle_A" upaction="Idle_A" />
 			<normal action="Idle_A" prob="10000" />
-			<aiInfo path="BossDungeon/BalrogMagicBurster/NAOneplay/AI_AirshipBalrogCrimsonFlame_NAOneplay.xml" />
+			<aiInfo path="BossDungeon/BalrogMagicBurster/NAOneplay/AI_AirshipBalrogCrimsonFlame_NAOneplay.xml" summonNpcIDs="21800968,21800969,21501366,21501367,21501372,21501353,23000147" />
 		</environment>
 	</npc>
 	<npc id="23000147">
@@ -4381,7 +4381,7 @@
 			<model kfm="23000093_B_AirshipBalrogCrimsonBroken" scale="0.95" walkSpeed="200" runSpeed="400" />
 			<stat hp="6000000" asp="100" msp="100" atp="80" evp="82" cap="62" cad="500" car="50" ndd="1000441" pap="2505248" map="2505292" par="150" mar="150" />
 			<distance avoid="3200" sight="15000" sightHeightUP="2500" sightHeightDown="900" customLastSightRadius="18000" customLastSightHeightUp="3100" customLastSightHeightDown="999" />
-			<skill ids="50009999" levels="1" probs="100" />
+			<skill ids="50001264,50001264,50001264,50001264,50001264" levels="1,2,3,4,5" />
 			<additionalEffect codes="50004400" levels="1" />
 			<collision shape="box" width="3" height="3" depth="3" />
 			<capsule radius="10" height="10" ignore="1" />
@@ -4395,14 +4395,14 @@
 			<model kfm="23000090_B_BalrogMagicBurster" scale="1.5" shadowScale="900" rotationSpeed="400" walkSpeed="400" runSpeed="380" />
 			<stat hp="24091137644" asp="100" msp="100" atp="120" evp="130" cap="72" cad="250" car="100" ndd="1071" pap="71341882" map="71353360" par="220" mar="220" />
 			<distance avoid="400" sight="15000" sightHeightUP="1100" sightHeightDown="900" customLastSightRadius="18000" customLastSightHeightUp="1500" customLastSightHeightDown="999" />
-			<skill ids="50001280" levels="1" probs="100" />
+			<skill ids="50001280,50001280,50001284,50001285,50001285,50001286,50001286,50001289,50001289,50001290,50001291,50001292,50001293,50001293,50001294" levels="31,32,31,4,5,1,2,1,2,1,1,1,1,2,1" />
 			<additionalEffect codes="50004413,90000797,90000805" levels="1,5,2" />
 			<collision shape="box" width="480" height="450" depth="300" depthOffset="100" />
 			<capsule radius="10" height="10" ignore="1" />
 			<dead time="5.6" defaultaction="Dead_A" upaction="Dead_A" />
 			<normal action="Idle_A" prob="10000" />
 			<dropiteminfo globalDropBoxId="74" />
-			<aiInfo path="BossDungeon/BalrogMagicBurster/AI_BalrogMagicBurster_Kritias.xml" />
+			<aiInfo path="BossDungeon/BalrogMagicBurster/AI_BalrogMagicBurster_Kritias.xml" summonNpcIDs="21501306,21501314,21501313,21501311,21501312,21501315" />
 			<effectdummy>
 				<dummy name="Eff_Head">
 					<attachInfo parentNode="Bip01 Head" />
@@ -4444,14 +4444,14 @@
 			<model kfm="23000090_B_BalrogMagicBurster" scale="1.5" shadowScale="900" rotationSpeed="400" walkSpeed="400" runSpeed="380" />
 			<stat hp="24091137644" asp="100" msp="100" atp="120" evp="130" cap="72" cad="250" car="100" ndd="1071" pap="71341882" map="71353360" par="220" mar="220" />
 			<distance avoid="400" sight="15000" sightHeightUP="1100" sightHeightDown="900" customLastSightRadius="18000" customLastSightHeightUp="1500" customLastSightHeightDown="999" />
-			<skill ids="50001280" levels="1" probs="100" />
+			<skill ids="50001280,50001280,50001284,50001285,50001285,50001286,50001286,50001289,50001289,50001290,50001291,50001292,50001293,50001293,50001294" levels="31,32,31,4,5,1,2,1,2,1,1,1,1,2,1" />
 			<additionalEffect codes="50004413,90000797,90000805" levels="1,5,2" />
 			<collision shape="box" width="480" height="450" depth="300" depthOffset="100" />
 			<capsule radius="10" height="10" ignore="1" />
 			<dead time="5.6" defaultaction="Dead_A" upaction="Dead_A" />
 			<normal action="Idle_A" prob="10000" />
 			<dropiteminfo globalDropBoxId="74" />
-			<aiInfo path="BossDungeon/BalrogMagicBurster/ChaosNormalKritias/AI_BalrogMagicBurster_Kritias.xml" />
+			<aiInfo path="BossDungeon/BalrogMagicBurster/ChaosNormalKritias/AI_BalrogMagicBurster_Kritias.xml" summonNpcIDs="21501306,21501314,21501313,21501316,21501315" />
 			<effectdummy>
 				<dummy name="Eff_Head">
 					<attachInfo parentNode="Bip01 Head" />
@@ -4493,14 +4493,14 @@
 			<model kfm="23000088_B_Pinkbean" shadowScale="450" rotationSpeed="720" walkSpeed="155" runSpeed="310" />
 			<stat hp="7218545587754" asp="100" msp="100" atp="120" evp="98" cap="72" cad="250" car="70" ndd="1071" pap="361330012" map="361425050" par="17" mar="220" />
 			<distance avoid="400" sight="8000" sightHeightUP="8000" sightHeightDown="8000" customLastSightRadius="99999" customLastSightHeightUp="99999" customLastSightHeightDown="99999" />
-			<skill ids="50001205" levels="1" probs="100" />
+			<skill ids="50001200,50001200,50001200,50001200,50001200,50001200,50001201,50001201,50001201,50001201,50001202,50001202,50001204,50001208,50001209,50001210,50001211,50001211,50001213,50001213,50001214,50001215,50001215,50001216,50001216,50001216,50001216,50001219,50001391,50001392,50002000" levels="1,2,3,4,5,6,1,3,4,33,1,2,1,4,11,1,1,2,1,2,2,1,2,1,3,4,33,4,2,2,1" />
 			<additionalEffect codes="50004400" levels="1" />
 			<collision shape="box" width="220" height="250" depth="180" />
 			<capsule radius="100" height="250" />
 			<dead time="8" defaultaction="Dead_A" upaction="Dead_A" extendRoomTime="60000" />
 			<normal action="Idle_A" prob="10000" />
 			<dropiteminfo globalDropBoxId="74" />
-			<aiInfo path="BossDungeon/BlackPinkbean/AI_Pinkbean_Together_Hard.xml" />
+			<aiInfo path="BossDungeon/BlackPinkbean/AI_Pinkbean_Together_Hard.xml" summonNpcIDs="23000161" />
 			<effectdummy>
 				<dummy name="Eff_Head">
 					<attachInfo parentNode="Bip01 Head" />
@@ -4538,7 +4538,7 @@
 			<model kfm="23000089_B_Blackbean" shadowScale="450" rotationSpeed="720" walkSpeed="155" runSpeed="310" />
 			<stat hp="7218545587754" asp="100" msp="100" atp="120" evp="98" cap="72" cad="500" car="70" ndd="1071" pap="361330012" map="361425050" par="220" mar="220" />
 			<distance avoid="400" sight="8000" sightHeightUP="8000" sightHeightDown="8000" customLastSightRadius="99999" customLastSightHeightUp="99999" customLastSightHeightDown="99999" />
-			<skill ids="50001406" levels="1" probs="100" />
+			<skill ids="50001391,50001392,50001398,50001400,50001400,50001400,50001401,50001401,50001401,50001401,50001401,50001401,50001402,50001402,50001402,50001402,50001402,50001402,50001402,50001404,50001404,50001404,50001404,50001404,50001404,50001405,50001405,50001405,50001405,50001405,50001408,50001408,50001409,50001411,50001411,50001411" levels="3,2,2,1,2,3,1,2,3,4,5,6,1,2,3,5,7,41,44,1,2,3,4,23,24,1,2,3,4,5,1,2,1,1,2,3" />
 			<additionalEffect codes="50004400" levels="1" />
 			<collision shape="box" width="220" height="250" depth="180" />
 			<capsule radius="100" height="250" />
@@ -4581,16 +4581,16 @@
 	<npc id="23000162">
 		<environment feature="DungeonOS02" npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="boss" nametag="1" defenceMaterial="1" hitImmune="98" abnormalImmune="98" level="70" class="6" rankIcon="a" propertyTags="battle_on_spawn,keep_battle,fixed_big_monster" raceString="spirit" gender="2" emotionID="23000088" portrait="./Data/Resource/Image/Portrait/Mob/23000088_B_Pinkbean_P.png" damagedVibrateDuration="0.5" damagedVibrateAmp="1" checkCameraDistance="2500" extraCameraDistance="400" customExp="0" lookAtMyPCWhenTalking="0">
 			<model kfm="23000088_B_Pinkbean" shadowScale="450" rotationSpeed="720" walkSpeed="155" runSpeed="310" />
-			<stat hp="2717570103620" asp="100" msp="100" atp="120" evp="98" cap="72" cad="250" car="70" ndd="1071" pap="117432243" map="117463131" par="17" mar="220" />
+			<stat hp="2445813093258" asp="100" msp="100" atp="120" evp="98" cap="72" cad="250" car="70" ndd="1071" pap="117432243" map="117463131" par="17" mar="220" />
 			<distance avoid="400" sight="8000" sightHeightUP="8000" sightHeightDown="8000" customLastSightRadius="99999" customLastSightHeightUp="99999" customLastSightHeightDown="99999" />
-			<skill ids="50001205" levels="1" probs="100" />
+			<skill ids="50001200,50001200,50001200,50001200,50001200,50001200,50001201,50001201,50001201,50001201,50001202,50001202,50001204,50001208,50001209,50001210,50001211,50001211,50001213,50001213,50001214,50001215,50001215,50001216,50001216,50001216,50001216,50001219,50001391,50001392,50002000" levels="1,2,3,4,5,6,1,3,4,33,1,2,1,4,11,1,1,2,1,2,2,1,2,1,3,4,33,4,2,2,1" />
 			<additionalEffect codes="50004400" levels="1" />
 			<collision shape="box" width="220" height="250" depth="180" />
 			<capsule radius="100" height="250" />
 			<dead time="8" defaultaction="Dead_A" upaction="Dead_A" extendRoomTime="60000" />
 			<normal action="Idle_A" prob="10000" />
 			<dropiteminfo globalDropBoxId="74" />
-			<aiInfo path="BossDungeon/BlackPinkbean/Normal/AI_Pinkbean_Together_Normal.xml" />
+			<aiInfo path="BossDungeon/BlackPinkbean/Normal/AI_Pinkbean_Together_Normal.xml" summonNpcIDs="23000163" />
 			<effectdummy>
 				<dummy name="Eff_Head">
 					<attachInfo parentNode="Bip01 Head" />
@@ -4626,9 +4626,9 @@
 	<npc id="23000163">
 		<environment feature="DungeonOS02" npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="boss" nametag="1" defenceMaterial="1" hitImmune="98" abnormalImmune="98" level="70" class="6" rankIcon="a" propertyTags="battle_on_spawn,keep_battle,fixed_big_monster" raceString="spirit" gender="2" emotionID="23000089" portrait="./Data/Resource/Image/Portrait/Mob/23000089_B_Blackbean_P.png" damagedVibrateDuration="0.5" damagedVibrateAmp="1" checkCameraDistance="2500" extraCameraDistance="400" customExp="0" lookAtMyPCWhenTalking="0">
 			<model kfm="23000089_B_Blackbean" shadowScale="450" rotationSpeed="720" walkSpeed="155" runSpeed="310" />
-			<stat hp="2717570103620" asp="100" msp="100" atp="120" evp="98" cap="72" cad="500" car="70" ndd="1071" pap="117432243" map="117463131" par="220" mar="220" />
+			<stat hp="2445813093258" asp="100" msp="100" atp="120" evp="98" cap="72" cad="500" car="70" ndd="1071" pap="117432243" map="117463131" par="220" mar="220" />
 			<distance avoid="400" sight="8000" sightHeightUP="8000" sightHeightDown="8000" customLastSightRadius="99999" customLastSightHeightUp="99999" customLastSightHeightDown="99999" />
-			<skill ids="50001406" levels="1" probs="100" />
+			<skill ids="50001391,50001392,50001398,50001400,50001400,50001400,50001401,50001401,50001401,50001401,50001401,50001401,50001402,50001402,50001402,50001402,50001402,50001402,50001402,50001404,50001404,50001404,50001404,50001404,50001404,50001405,50001405,50001405,50001405,50001405,50001408,50001408,50001409,50001411,50001411,50001411" levels="3,2,2,1,2,3,1,2,3,4,5,6,1,2,3,5,7,41,44,1,2,3,4,23,24,1,2,3,4,5,1,2,1,1,2,3" />
 			<additionalEffect codes="50004400" levels="1" />
 			<collision shape="box" width="220" height="250" depth="180" />
 			<capsule radius="100" height="250" />
@@ -4673,14 +4673,14 @@
 			<model kfm="23000080_B_TitanFourArmsGoldMaskThirdFloor" />
 			<stat hp="309789080" asp="100" msp="100" atp="95" evp="107" cap="62" cad="500" car="50" ndd="1009" pap="1042620" map="1042864" par="150" mar="150" />
 			<distance avoid="850" sight="9999" sightHeightUP="999" sightHeightDown="999" customLastSightRadius="9999" customLastSightHeightUp="2000" customLastSightHeightDown="999" />
-			<skill ids="50101234" levels="1" probs="100" />
+			<skill ids="50101234,50101235,50101235,50101236,50101236,50101236,50101237,50101237,50101237,50101238,50101238,50101238,50101239,50101239,50101239,50101240,50101240,50101240,50101243,50101244,50101245,50101246,50101247,50101254,50101254,50101254,50101255,50101255,50101255,50101255,50101255,50101255,50101256,50101257,50101257,50101257,50101257,50101257,50101257,50101257,50101257,50101257,50101257,50101257,50101257,50101257,50101257,50101257,50101258,50101258,50101258,50101259,50101259,50101259,50101260,50101260,50101260,50101260" levels="2,1,2,1,2,3,1,2,3,1,2,3,1,2,3,11,12,13,1,1,1,1,1,1,2,3,1,2,3,4,5,6,1,1,2,3,4,11,13,14,21,22,23,24,31,32,33,34,1,2,3,1,2,3,1,2,3,4" />
 			<additionalEffect codes="50004400" levels="1" />
 			<collision shape="box" width="1470" height="600" depth="1200" widthOffset="80" />
 			<capsule radius="650" height="600" />
 			<dead time="10" defaultaction="Dead_A" upaction="Dead_A" extendRoomTime="60000" />
 			<normal action="Idle_A" prob="10000" />
 			<dropiteminfo globalDropBoxId="74" />
-			<aiInfo path="BossDungeon/TitanFourArmsGoldMask/AI_TitanFourArmsGoldMaskThirdFloor.xml" />
+			<aiInfo path="BossDungeon/TitanFourArmsGoldMask/AI_TitanFourArmsGoldMaskThirdFloor.xml" summonNpcIDs="21500903,21500183" />
 		</environment>
 	</npc>
 	<npc id="23000301">
@@ -4688,7 +4688,7 @@
 			<model kfm="23000130_B_TurkaHoodBlue" scale="1.2" shadowScale="200" rotationSpeed="400" walkSpeed="225" runSpeed="450" />
 			<stat hp="511455186" asp="100" msp="100" atp="120" evp="108" cap="72" cad="250" car="70" ndd="1500" pap="16751224" map="16753963" par="220" mar="220" />
 			<distance avoid="400" sight="15000" sightHeightUP="1100" sightHeightDown="900" customLastSightRadius="18000" customLastSightHeightUp="1500" customLastSightHeightDown="999" />
-			<skill ids="49905201" levels="1" probs="100" />
+			<skill ids="49905201,49905202,49905203,49905204,49905205,49905206" levels="1,1,1,1,1,1" />
 			<additionalEffect codes="50004400" levels="1" />
 			<collision shape="box" width="110" height="190" depth="110" />
 			<capsule radius="60" height="150" />
@@ -4709,14 +4709,14 @@
 			<model kfm="21001037_M_MiniRedCrystalTower" scale="1.9" />
 			<stat hp="94900000" asp="100" msp="100" atp="80" evp="102" cap="72" cad="250" car="70" ndd="1071" pap="247516" map="247557" par="1500" mar="1500" />
 			<distance avoid="300" sightHeightUP="0" sightHeightDown="0" />
-			<skill ids="40454001" levels="1" probs="100" />
+			<skill ids="40454001" />
 			<additionalEffect codes="49288102" levels="1" />
 			<collision shape="box" width="150" height="250" depth="150" />
 			<capsule radius="100" height="250" />
 			<dead time="2" defaultaction="Dead_A" upaction="Dead_A" />
 			<normal action="Idle_A" prob="10000" />
 			<dropiteminfo globalDropBoxId="74" />
-			<aiInfo path="BossDungeon/Paika/AI_Altar_1.xml" />
+			<aiInfo path="BossDungeon/Paika/AI_Altar_1.xml" summonNpcIDs="23000305,23000306" />
 		</environment>
 	</npc>
 	<npc id="23000303">
@@ -4724,14 +4724,14 @@
 			<model kfm="21001037_M_MiniRedCrystalTower" scale="1.9" />
 			<stat hp="94900000" asp="100" msp="100" atp="80" evp="102" cap="72" cad="250" car="70" ndd="1071" pap="247516" map="247557" par="1500" mar="1500" />
 			<distance avoid="300" sightHeightUP="0" sightHeightDown="0" />
-			<skill ids="40454001" levels="1" probs="100" />
+			<skill ids="40454001" />
 			<additionalEffect codes="49288102" levels="1" />
 			<collision shape="box" width="150" height="250" depth="150" />
 			<capsule radius="100" height="250" />
 			<dead time="2" defaultaction="Dead_A" upaction="Dead_A" />
 			<normal action="Idle_A" prob="10000" />
 			<dropiteminfo globalDropBoxId="74" />
-			<aiInfo path="BossDungeon/Paika/AI_Altar_2.xml" />
+			<aiInfo path="BossDungeon/Paika/AI_Altar_2.xml" summonNpcIDs="23000307" />
 		</environment>
 	</npc>
 	<npc id="23000304">
@@ -4739,14 +4739,14 @@
 			<model kfm="21001037_M_MiniRedCrystalTower" scale="1.9" />
 			<stat hp="94900000" asp="100" msp="100" atp="80" evp="102" cap="72" cad="250" car="70" ndd="1071" pap="247516" map="247557" par="1500" mar="1500" />
 			<distance avoid="300" sightHeightUP="0" sightHeightDown="0" />
-			<skill ids="40454001" levels="1" probs="100" />
+			<skill ids="40454001" />
 			<additionalEffect codes="49288102" levels="1" />
 			<collision shape="box" width="150" height="250" depth="150" />
 			<capsule radius="100" height="250" />
 			<dead time="2" defaultaction="Dead_A" upaction="Dead_A" />
 			<normal action="Idle_A" prob="10000" />
 			<dropiteminfo globalDropBoxId="74" />
-			<aiInfo path="BossDungeon/Paika/AI_Altar_3.xml" />
+			<aiInfo path="BossDungeon/Paika/AI_Altar_3.xml" summonNpcIDs="23000308" />
 		</environment>
 	</npc>
 	<npc id="23000305">
@@ -4754,7 +4754,7 @@
 			<model kfm="21010107_M_ZerglingBlue" shadowScale="140" rotationSpeed="720" walkSpeed="225" runSpeed="350" />
 			<stat hp="42049249" asp="100" msp="100" atp="80" evp="102" cap="72" cad="250" car="70" ndd="1071" pap="8613628" map="8615037" par="190" mar="190" />
 			<distance avoid="100" sight="25000" sightHeightUP="1100" sightHeightDown="900" customLastSightRadius="18000" customLastSightHeightUp="300" customLastSightHeightDown="150" />
-			<skill ids="60180061" levels="1" probs="100" />
+			<skill ids="60180061" probs="100" />
 			<collision shape="box" width="100" height="130" depth="100" />
 			<capsule radius="50" height="130" />
 			<dead time="5" defaultaction="Dead_A,Dead_B" upaction="Dead_B" />
@@ -4774,7 +4774,7 @@
 			<model kfm="21010112_M_BlackRobeGuardDogBlue" shadowScale="120" rotationSpeed="720" walkSpeed="150" runSpeed="300" />
 			<stat hp="42049249" asp="100" msp="100" atp="80" evp="102" cap="72" cad="250" car="70" ndd="1071" pap="8613628" map="8615037" par="190" mar="190" />
 			<distance avoid="60" sight="25000" sightHeightUP="1100" sightHeightDown="900" customLastSightRadius="18000" customLastSightHeightUp="300" customLastSightHeightDown="150" />
-			<skill ids="60180064,60180065" levels="1,1" probs="70,30" />
+			<skill ids="60180064,60180065" probs="70,30" />
 			<collision shape="box" width="100" height="160" depth="100" />
 			<capsule radius="60" height="150" />
 			<dead time="5" defaultaction="Dead_A,Dead_B" upaction="Dead_B" />
@@ -4788,7 +4788,7 @@
 			<model kfm="21010113_N_BlackRobeBerserkerBlue" shadowScale="100" rotationSpeed="720" walkSpeed="200" runSpeed="250" />
 			<stat hp="42049249" asp="100" msp="100" atp="80" evp="102" cap="72" cad="250" car="70" ndd="1071" pap="8613628" map="8615037" par="190" mar="190" />
 			<distance avoid="150" sight="25000" sightHeightUP="1100" sightHeightDown="900" customLastSightRadius="18000" customLastSightHeightUp="300" customLastSightHeightDown="150" />
-			<skill ids="60180035,60180036" levels="1,1" probs="60,40" />
+			<skill ids="60180035,60180036" probs="60,40" />
 			<collision shape="box" width="100" height="160" depth="100" />
 			<capsule radius="50" height="110" />
 			<dead time="5" defaultaction="Dead_A,Dead_B" upaction="Dead_B" />
@@ -4802,7 +4802,7 @@
 			<model kfm="21010109_M_BlackRobeMagicianBlue" shadowScale="120" rotationSpeed="720" walkSpeed="200" runSpeed="250" />
 			<stat hp="42049249" asp="100" msp="100" atp="80" evp="102" cap="72" cad="250" car="70" ndd="1071" pap="8613628" map="8615037" par="190" mar="190" />
 			<distance avoid="100" sight="25000" sightHeightUP="1100" sightHeightDown="900" customLastSightRadius="18000" customLastSightHeightUp="300" customLastSightHeightDown="150" />
-			<skill ids="60180071,60180073" levels="1,1" probs="70,30" />
+			<skill ids="60180071,60180073" probs="70,30" />
 			<collision shape="box" width="80" height="110" depth="80" />
 			<capsule radius="50" height="110" />
 			<dead time="5" defaultaction="Dead_A,Dead_B" upaction="Dead_B" />
@@ -4816,14 +4816,14 @@
 			<model kfm="23000096_B_GigantikaTail" scale="0.85" shadowScale="230" rotationSpeed="300" />
 			<stat hp="1104564860" asp="100" msp="100" atp="120" evp="108" cap="72" cad="250" car="70" ndd="1071" pap="2099050" map="2099491" par="220" mar="220" scaleStatRate_1="4" scaleBaseTap_1="8935624" scaleBaseDef_1="8790" scaleBaseSpaRate_1="0.2" scaleStatRate_2="4" scaleBaseTap_2="13037074" scaleBaseDef_2="13661" scaleBaseSpaRate_2="0.2" />
 			<distance avoid="120" sight="1800" sightHeightUP="1800" sightHeightDown="1800" customLastSightRadius="9999" customLastSightHeightUp="9999" customLastSightHeightDown="9999" />
-			<skill ids="50101006" levels="1" probs="100" />
+			<skill ids="49905001,49905002,49905003,49905005,49905007" levels="1,1,1,1,1" />
 			<additionalEffect codes="50004400,49288030" levels="1,1" />
 			<collision shape="box" width="1650" height="2400" depth="4500" depthOffset="800" heightOffset="-500" />
 			<capsule radius="200" height="400" />
 			<dead time="5" defaultaction="Dead_A" upaction="Dead_A" />
 			<push back="1" up="1" knockback="1" />
 			<normal action="Idle_A" prob="10000" />
-			<aiInfo path="AI_GigantikaTail_phase_1.xml" />
+			<aiInfo path="AI_GigantikaTail_phase_1.xml" summonNpcIDs="23001002" />
 			<nodeCollisions>
 				<collision targetNode="b_taill09" volume="600,300,500" offset="70,0,-270" />
 				<collision targetNode="b_taill08" volume="600,300,500" offset="0,0,-270" />
@@ -4845,14 +4845,14 @@
 			<model kfm="23000095_B_GigantikaHead" scale="0.7" shadowScale="230" rotationSpeed="300" />
 			<stat hp="1104564860" asp="100" msp="100" atp="120" evp="108" cap="72" cad="250" car="70" ndd="1071" pap="2099050" map="2099491" par="220" mar="220" scaleStatRate_1="4" scaleBaseTap_1="8935624" scaleBaseDef_1="8790" scaleBaseSpaRate_1="0.2" scaleStatRate_2="4" scaleBaseTap_2="13037074" scaleBaseDef_2="13661" scaleBaseSpaRate_2="0.2" />
 			<distance avoid="120" sight="1800" sightHeightUP="1800" sightHeightDown="1800" customLastSightRadius="9999" customLastSightHeightUp="9999" customLastSightHeightDown="9999" />
-			<skill ids="50101006" levels="1" probs="100" />
+			<skill ids="49905011,49905012,49905014,49905017" levels="1,1,1,1" />
 			<additionalEffect codes="50004400,49288030" levels="1,1" />
 			<collision shape="box" width="1650" height="2400" depth="4500" depthOffset="800" heightOffset="-500" />
 			<capsule radius="200" height="400" />
 			<dead time="5" defaultaction="Dead_A" upaction="Dead_A" />
 			<push back="1" up="1" knockback="1" />
 			<normal action="Idle_A" prob="10000" />
-			<aiInfo path="AI_GigantikaHead_phase_2.xml" />
+			<aiInfo path="AI_GigantikaHead_phase_2.xml" summonNpcIDs="23001003" />
 			<nodeCollisions>
 				<collision targetNode="b_Head" volume="600,600,800" offset="0,0,-330" />
 				<collision targetNode="Bone23" volume="300,300,500" offset="0,0,-330" />
@@ -4873,14 +4873,14 @@
 			<model kfm="23000096_B_GigantikaTail" scale="0.85" shadowScale="230" rotationSpeed="300" />
 			<stat hp="1104564860" asp="100" msp="100" atp="120" evp="108" cap="72" cad="250" car="70" ndd="1071" pap="2099050" map="2099491" par="220" mar="220" scaleStatRate_1="4" scaleBaseTap_1="8935624" scaleBaseDef_1="8790" scaleBaseSpaRate_1="0.2" scaleStatRate_2="4" scaleBaseTap_2="13037074" scaleBaseDef_2="13661" scaleBaseSpaRate_2="0.2" />
 			<distance avoid="120" sight="1800" sightHeightUP="1800" sightHeightDown="1800" customLastSightRadius="9999" customLastSightHeightUp="9999" customLastSightHeightDown="9999" />
-			<skill ids="50101006" levels="1" probs="100" />
+			<skill ids="49905001,49905002,49905003,49905004,49905005,49905007" levels="1,1,1,1,1,1" />
 			<additionalEffect codes="50004400,49288030" levels="1,1" />
 			<collision shape="box" width="1650" height="2400" depth="4500" depthOffset="800" heightOffset="-500" />
 			<capsule radius="200" height="400" />
 			<dead time="5" defaultaction="Dead_A" upaction="Dead_A" />
 			<push back="1" up="1" knockback="1" />
 			<normal action="Idle_A" prob="10000" />
-			<aiInfo path="AI_GigantikaTail_phase_3.xml" />
+			<aiInfo path="AI_GigantikaTail_phase_3.xml" summonNpcIDs="23001004" />
 			<nodeCollisions>
 				<collision targetNode="b_taill09" volume="600,300,500" offset="70,0,-270" />
 				<collision targetNode="b_taill08" volume="600,300,500" offset="0,0,-270" />
@@ -4902,14 +4902,14 @@
 			<model kfm="23000095_B_GigantikaHead" scale="0.7" shadowScale="230" rotationSpeed="300" />
 			<stat hp="1104564860" asp="100" msp="100" atp="120" evp="108" cap="72" cad="250" car="70" ndd="1071" pap="2099050" map="2099491" par="220" mar="220" scaleStatRate_1="4" scaleBaseTap_1="8935624" scaleBaseDef_1="8790" scaleBaseSpaRate_1="0.2" scaleStatRate_2="4" scaleBaseTap_2="13037074" scaleBaseDef_2="13661" scaleBaseSpaRate_2="0.2" />
 			<distance avoid="120" sight="1800" sightHeightUP="1800" sightHeightDown="1800" customLastSightRadius="9999" customLastSightHeightUp="9999" customLastSightHeightDown="9999" />
-			<skill ids="50101006" levels="1" probs="100" />
+			<skill ids="49905011,49905012,49905013,49905014,49905015,49905017" levels="1,1,1,1,1,1" />
 			<additionalEffect codes="50004400,49288030" levels="1,1" />
 			<collision shape="box" width="1650" height="2400" depth="4500" depthOffset="800" heightOffset="-500" />
 			<capsule radius="200" height="400" />
 			<dead time="5" defaultaction="Dead_A" upaction="Dead_A" />
 			<push back="1" up="1" knockback="1" />
 			<normal action="Idle_A" prob="10000" />
-			<aiInfo path="AI_GigantikaHead_phase_4.xml" />
+			<aiInfo path="AI_GigantikaHead_phase_4.xml" summonNpcIDs="23001005" />
 			<nodeCollisions>
 				<collision targetNode="b_Head" volume="600,600,800" offset="0,0,-330" />
 				<collision targetNode="Bone23" volume="300,300,500" offset="0,0,-330" />
@@ -4930,14 +4930,14 @@
 			<model kfm="23000096_B_GigantikaTail" scale="0.85" shadowScale="230" rotationSpeed="300" />
 			<stat hp="1104564860" asp="100" msp="100" atp="120" evp="108" cap="72" cad="250" car="70" ndd="1071" pap="2099050" map="2099491" par="220" mar="220" scaleStatRate_1="4" scaleBaseTap_1="8935624" scaleBaseDef_1="8790" scaleBaseSpaRate_1="0.2" scaleStatRate_2="4" scaleBaseTap_2="13037074" scaleBaseDef_2="13661" scaleBaseSpaRate_2="0.2" />
 			<distance avoid="120" sight="1800" sightHeightUP="1800" sightHeightDown="1800" customLastSightRadius="9999" customLastSightHeightUp="9999" customLastSightHeightDown="9999" />
-			<skill ids="50101006" levels="1" probs="100" />
+			<skill ids="49905001,49905002,49905003,49905004,49905005,49905006,49905006,49905006,49905007" levels="1,1,1,1,1,1,2,3,1" />
 			<additionalEffect codes="50004400,49288030" levels="1,1" />
 			<collision shape="box" width="1650" height="2400" depth="4500" depthOffset="800" heightOffset="-500" />
 			<capsule radius="200" height="400" />
 			<dead time="5" defaultaction="Dead_A" upaction="Dead_A" />
 			<push back="1" up="1" knockback="1" />
 			<normal action="Idle_A" prob="10000" />
-			<aiInfo path="AI_GigantikaTail_phase_5.xml" />
+			<aiInfo path="AI_GigantikaTail_phase_5.xml" summonNpcIDs="23001006" />
 			<nodeCollisions>
 				<collision targetNode="b_taill09" volume="600,300,500" offset="70,0,-270" />
 				<collision targetNode="b_taill08" volume="600,300,500" offset="0,0,-270" />
@@ -4959,7 +4959,7 @@
 			<model kfm="23000095_B_GigantikaHead" scale="0.7" shadowScale="230" rotationSpeed="300" />
 			<stat hp="1104564860" asp="100" msp="100" atp="120" evp="108" cap="72" cad="250" car="70" ndd="1071" pap="2099050" map="2099491" par="220" mar="220" scaleStatRate_1="4" scaleBaseTap_1="8935624" scaleBaseDef_1="8790" scaleBaseSpaRate_1="0.2" scaleStatRate_2="4" scaleBaseTap_2="13037074" scaleBaseDef_2="13661" scaleBaseSpaRate_2="0.2" />
 			<distance avoid="120" sight="1800" sightHeightUP="1800" sightHeightDown="1800" customLastSightRadius="9999" customLastSightHeightUp="9999" customLastSightHeightDown="9999" />
-			<skill ids="50101006" levels="1" probs="100" />
+			<skill ids="49905011,49905012,49905013,49905014,49905015,49905016" levels="1,1,1,1,1,1" />
 			<additionalEffect codes="50004400,49288030" levels="1,1" />
 			<collision shape="box" width="1650" height="2400" depth="4500" depthOffset="800" heightOffset="-500" />
 			<capsule radius="200" height="400" />
@@ -4967,7 +4967,7 @@
 			<push back="1" up="1" knockback="1" />
 			<normal action="Idle_A" prob="10000" />
 			<dropiteminfo globalDropBoxId="29" />
-			<aiInfo path="AI_GigantikaHead_phase_6.xml" />
+			<aiInfo path="AI_GigantikaHead_phase_6.xml" summonNpcIDs="23001011" />
 			<nodeCollisions>
 				<collision targetNode="b_Head" volume="600,600,800" offset="0,0,-330" />
 				<collision targetNode="Bone23" volume="300,300,500" offset="0,0,-330" />
@@ -4988,7 +4988,7 @@
 			<model kfm="21000123_M_RobotScrapMetalBig03" scale="1.2" shadowScale="400" rotationSpeed="720" walkSpeed="235" runSpeed="450" />
 			<stat hp="20102374" asp="100" msp="100" atp="81" evp="102" cap="72" cad="250" car="70" ndd="1071" pap="569276" map="569396" par="205" mar="205" scaleStatRate_1="4" scaleBaseTap_1="8935624" scaleBaseDef_1="8790" scaleBaseSpaRate_1="0.2" scaleStatRate_2="4" scaleBaseTap_2="13037074" scaleBaseDef_2="13661" scaleBaseSpaRate_2="0.2" />
 			<distance avoid="250" sight="450" sightHeightUP="300" sightHeightDown="150" customLastSightRadius="1200" customLastSightHeightUp="300" customLastSightHeightDown="150" />
-			<skill ids="40501211" levels="1" probs="100" />
+			<skill ids="60038031,60038101,60038102,60038104,60038105,60038106,60038107,60038108" levels="1,1,1,1,1,1,1,1" />
 			<additionalEffect codes="50004400" levels="1" />
 			<collision shape="box" width="270" height="250" depth="250" />
 			<capsule radius="180" height="230" />
@@ -5010,7 +5010,7 @@
 			<model kfm="21000243_M_RobotMaidBrownHair" scale="1.2" shadowScale="200" rotationSpeed="720" walkSpeed="235" runSpeed="300" />
 			<stat hp="169669" asp="100" msp="100" atp="80" evp="102" cap="72" cad="250" car="70" ndd="1071" pap="132453" map="132481" par="190" mar="190" scaleStatRate_1="4" scaleBaseTap_1="8935624" scaleBaseDef_1="8790" scaleBaseSpaRate_1="0.2" scaleStatRate_2="4" scaleBaseTap_2="13037074" scaleBaseDef_2="13661" scaleBaseSpaRate_2="0.2" />
 			<distance avoid="45" sight="500" sightHeightUP="300" sightHeightDown="300" customLastSightRadius="700" customLastSightHeightUp="300" customLastSightHeightDown="150" />
-			<skill ids="40179001,40179011" levels="1,1" probs="70,30" />
+			<skill ids="40179001,40179011" probs="70,30" />
 			<additionalEffect codes="49288017" levels="1" />
 			<collision shape="box" width="80" height="130" depth="80" />
 			<capsule radius="60" height="150" />
@@ -5026,7 +5026,7 @@
 			<model kfm="21000401_M_SteamBotFlyBlue" shadowScale="85" rotationSpeed="720" walkSpeed="100" runSpeed="200" />
 			<stat hp="169669" asp="100" msp="100" atp="80" evp="102" cap="72" cad="250" car="70" ndd="1071" pap="95477" map="95497" par="190" mar="190" scaleStatRate_1="4" scaleBaseTap_1="8935624" scaleBaseDef_1="8790" scaleBaseSpaRate_1="0.2" scaleStatRate_2="4" scaleBaseTap_2="13037074" scaleBaseDef_2="13661" scaleBaseSpaRate_2="0.2" />
 			<distance avoid="40" sight="500" sightHeightUP="300" sightHeightDown="300" customLastSightRadius="700" customLastSightHeightUp="300" customLastSightHeightDown="150" />
-			<skill ids="49065001,49065011" levels="1,1" probs="80,20" />
+			<skill ids="49065001,49065011" probs="80,20" />
 			<additionalEffect codes="49288017" levels="1" />
 			<collision shape="box" width="100" height="160" depth="100" />
 			<capsule radius="75" height="150" />
@@ -5042,7 +5042,7 @@
 			<model kfm="21000241_M_RobotMaidBlack" scale="1.5" shadowScale="230" rotationSpeed="720" walkSpeed="235" runSpeed="300" />
 			<stat hp="169669" asp="100" msp="100" atp="80" evp="102" cap="72" cad="250" car="70" ndd="1071" pap="95477" map="95497" par="190" mar="190" scaleStatRate_1="4" scaleBaseTap_1="8935624" scaleBaseDef_1="8790" scaleBaseSpaRate_1="0.2" scaleStatRate_2="4" scaleBaseTap_2="13037074" scaleBaseDef_2="13661" scaleBaseSpaRate_2="0.2" />
 			<distance avoid="100" sight="450" sightHeightUP="300" sightHeightDown="150" customLastSightRadius="700" customLastSightHeightUp="300" customLastSightHeightDown="150" />
-			<skill ids="40178002" levels="1" probs="100" />
+			<skill ids="40178002" probs="100" />
 			<additionalEffect codes="49288017" levels="1" />
 			<collision shape="box" width="130" height="130" depth="130" />
 			<capsule radius="60" height="150" />
@@ -5058,6 +5058,7 @@
 			<model kfm="Dummy" />
 			<stat hp="1" asp="100" msp="100" atp="120" evp="108" cap="310" cad="250" car="70" ndd="1071" pap="1443435" map="1443738" par="220" mar="220" scaleStatRate_1="4" scaleBaseTap_1="8935624" scaleBaseDef_1="8790" scaleBaseSpaRate_1="0.2" scaleStatRate_2="4" scaleBaseTap_2="13037074" scaleBaseDef_2="13661" scaleBaseSpaRate_2="0.2" />
 			<distance avoid="300" sight="10000" sightHeightUP="1000" sightHeightDown="0" customLastSightRadius="10000" customLastSightHeightUp="1000" customLastSightHeightDown="1000" />
+			<skill ids="49905018" levels="1" />
 			<additionalEffect codes="49180001" levels="1" />
 			<combat ignoreExtendLifeTime="true" />
 			<collision shape="box" width="150" height="150" depth="150" heightOffset="700" />
@@ -5073,7 +5074,7 @@
 			<model kfm="02030005_Balrog" shadowScale="1000" rotationSpeed="720" walkSpeed="125" runSpeed="250" />
 			<stat hp="163381425" asp="100" msp="100" atp="120" evp="88" cap="62" cad="500" car="50" ndd="690" pap="1008997" map="1009143" par="120" mar="120" />
 			<distance avoid="400" sight="600" sightHeightUP="300" sightHeightDown="225" customLastSightRadius="3500" customLastSightHeightUp="525" customLastSightHeightDown="225" />
-			<skill ids="50100365" levels="1" probs="100" />
+			<skill ids="50009998,50100364,50100365,50100366,50100366,50100366,50100366,50100366,50100366,50100366,50100366,50100366,50100367,50100367,50100367,50100367,50100367,50100368,50100368,50100369,50100370,50100371,50100371" levels="1,1,1,1,2,3,4,5,11,21,22,23,1,2,3,11,12,1,2,1,1,1,2" />
 			<additionalEffect codes="50004400" levels="1" />
 			<collision shape="box" width="600" height="550" depth="500" />
 			<corpse width="1000" height="300" depth="300" added="350" offsetNametag="-200" rotation="0" />
@@ -5081,7 +5082,7 @@
 			<dead time="25" defaultaction="Dead_A" upaction="Dead_A" extendRoomTime="60000" />
 			<normal action="Idle_A,Bore_A,Walk_A" prob="5000,3000,2000" movearea="150" />
 			<dropiteminfo dropHeight="420" dropDistanceBase="530" dropDistanceRandom="50" globalDropBoxId="74" globalDeadDropBoxId="1011" />
-			<aiInfo path="BossDungeon/Balrog/AI_Balrog.xml" />
+			<aiInfo path="BossDungeon/Balrog/AI_Balrog.xml" summonNpcIDs="21400036,21800144" />
 			<effectdummy>
 				<dummy name="Eff_Head">
 					<attachInfo parentNode="Bip01 Head" />
@@ -5123,7 +5124,7 @@
 			<model kfm="02030005_Balrog" shadowScale="1000" rotationSpeed="350" walkSpeed="125" runSpeed="250" />
 			<stat hp="732439902" asp="100" msp="100" atp="120" evp="108" cap="72" cad="250" car="70" ndd="1071" pap="25377786" map="25381912" par="220" mar="220" />
 			<distance avoid="400" sight="7999" sightHeightUP="1300" sightHeightDown="1225" customLastSightRadius="12999" customLastSightHeightUp="9999" customLastSightHeightDown="9999" />
-			<skill ids="50100365" levels="1" probs="100" />
+			<skill ids="50100365,50101280,50101281,50101281,50101281,50101281,50101281,50101281,50101283,50101283,50101283,50101283,50101283,50101284,50101284,50101284,50101285,50101286,50101287,50101287,50101287,50101287,50101288,50101288,50101288,50101289,50101289,50101289,50101290" levels="1,1,1,2,3,11,12,13,2,3,4,5,6,1,2,3,1,1,1,2,3,4,3,4,5,1,2,3,1" />
 			<additionalEffect codes="50004400" levels="1" />
 			<collision shape="box" width="600" height="550" depth="500" />
 			<corpse width="1000" height="300" depth="300" added="350" offsetNametag="-200" rotation="0" />
@@ -5131,7 +5132,7 @@
 			<dead time="25" defaultaction="Dead_A" upaction="Dead_A" extendRoomTime="60000" />
 			<normal action="Idle_A,Bore_A,Walk_A" prob="5000,3000,2000" movearea="150" />
 			<dropiteminfo dropHeight="420" dropDistanceBase="530" dropDistanceRandom="50" globalDropBoxId="74" globalDeadDropBoxId="1011" />
-			<aiInfo path="BossDungeon/Balrog/AI_Balrog_Kritias.xml" />
+			<aiInfo path="BossDungeon/Balrog/AI_Balrog_Kritias.xml" summonNpcIDs="21501280,21501290,21810090,21810091,21810092,21810093,21810096,21501283,21501284,21501291,21501295,21810095,21501293,21501285,21501296,21501281,21501282,21501294,21501292" />
 			<effectdummy>
 				<dummy name="Eff_Head">
 					<attachInfo parentNode="Bip01 Head" />
@@ -5173,7 +5174,7 @@
 			<model kfm="02030005_Balrog" shadowScale="1000" rotationSpeed="720" walkSpeed="125" runSpeed="250" />
 			<stat hp="22242017216" asp="100" msp="100" atp="120" evp="108" cap="72" cad="500" car="70" ndd="1071" pap="94799113" map="94827624" par="120" mar="120" />
 			<distance avoid="400" sight="600" sightHeightUP="300" sightHeightDown="225" customLastSightRadius="3500" customLastSightHeightUp="525" customLastSightHeightDown="225" />
-			<skill ids="50100365" levels="1" probs="100" />
+			<skill ids="50009998,50100364,50100365,50100366,50100366,50100366,50100366,50100366,50100366,50100366,50100366,50100366,50100367,50100367,50100367,50100367,50100367,50100368,50100368,50100369,50100370,50100371,50100371" levels="1,1,1,1,2,3,4,5,11,21,22,23,1,2,3,11,12,1,2,1,1,1,2" />
 			<additionalEffect codes="50004400" levels="1" />
 			<collision shape="box" width="600" height="550" depth="500" />
 			<corpse width="1000" height="300" depth="300" added="350" offsetNametag="-200" rotation="0" />
@@ -5181,7 +5182,7 @@
 			<dead time="25" defaultaction="Dead_A" upaction="Dead_A" extendRoomTime="60000" />
 			<normal action="Idle_A,Bore_A,Walk_A" prob="5000,3000,2000" movearea="150" />
 			<dropiteminfo dropHeight="420" dropDistanceBase="530" dropDistanceRandom="50" globalDropBoxId="74" globalDeadDropBoxId="1011" />
-			<aiInfo path="BossDungeon/Balrog/AI_Balrog_23090007.xml" />
+			<aiInfo path="BossDungeon/Balrog/AI_Balrog.xml" summonNpcIDs="21400336,21800144" />
 			<effectdummy>
 				<dummy name="Eff_Head">
 					<attachInfo parentNode="Bip01 Head" />
@@ -5223,7 +5224,7 @@
 			<model kfm="22000066_N_BeetleBigYellow" scale="1.65" shadowScale="450" rotationSpeed="720" walkSpeed="200" runSpeed="400" />
 			<stat hp="34238407" asp="100" msp="100" atp="120" evp="91" cap="62" cad="500" car="50" ndd="567" pap="284498" map="284587" par="120" mar="120" />
 			<distance avoid="400" sight="600" sightHeightUP="300" sightHeightDown="1" customLastSightRadius="3500" customLastSightHeightUp="525" customLastSightHeightDown="350" />
-			<skill ids="50101200" levels="1" probs="100" />
+			<skill ids="50101200,50101200,50101201,50101201,50101202,50101202,50101202,50101202,50101203,50101204,50101204,50101205,50101205" levels="1,2,1,2,1,2,3,4,1,1,2,1,2" />
 			<additionalEffect codes="50004400" levels="1" />
 			<collision shape="box" width="150" height="200" depth="120" />
 			<corpse width="350" height="150" depth="200" added="100" offsetNametag="-200" rotation="345" />
@@ -5231,7 +5232,7 @@
 			<dead time="10" defaultaction="Dead_A" upaction="Dead_A" extendRoomTime="60000" />
 			<normal action="Idle_A,Bore_A,Walk_A" prob="5000,3000,2000" movearea="150" />
 			<dropiteminfo globalDropBoxId="74" />
-			<aiInfo path="BossDungeon/BeetleBigYellow/AI_BeetleBigYellow.xml" />
+			<aiInfo path="BossDungeon/BeetleBigYellow/AI_BeetleBigYellow.xml" summonNpcIDs="21400069,21400169" />
 			<effectdummy>
 				<dummy name="Eff_Head">
 					<attachInfo parentNode="Bip01 Head" />

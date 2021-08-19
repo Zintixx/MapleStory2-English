@@ -3645,11 +3645,12 @@
 			<ui icon="./Data/Resource/Image/Skill/Icon/skillset/basicattack_01.png" attackType="1" />
 			<kinds rangeType="1" jump="99910051" />
 			<stateAttr superArmor="3" ignoreReduceCooldown="1" />
+			<changeSkill changeSkillCheckEffectID="71000055" changeSkillCheckEffectLevel="1" changeSkillCheckEffectOverlapCount="1" changeSkillID="99910056" />
 			<push up="950" back="450" />
 			<condition useCoolDownShowUI="1" allowBattleRidingState="1" onlyBattleRidingState="1" />
 		</basic>
 		<level value="1" sp="25" cooldown="1000">
-			<motion sequenceName="Attack_01_A" sequenceSpeed="1.2" motionEffect="NPC/Skill/AliceBandage/Eff_AliceBandage_Attack_01_A.xml" strTagEffects="e0=NPC/Skill/AliceZombie/Eff_AliceZombie_Attack_03_A_Cast_01.xml,e1=NPC/Skill/AliceZombie/Eff_AliceZombie_Attack_03_A_Cast_02.xml" IgnoreOptimalHideCastEffect="true" movedistance="300" holdWeapon="0">
+			<motion sequenceName="Attack_01_A" sequenceSpeed="1.2" motionEffect="NPC/Skill/AliceBandage/Eff_AliceBandage_Attack_01_A_LowRange.xml" strTagEffects="e0=NPC/Skill/AliceZombie/Eff_AliceZombie_Attack_03_A_Cast_01.xml,e1=NPC/Skill/AliceZombie/Eff_AliceZombie_Attack_03_A_Cast_02.xml" IgnoreOptimalHideCastEffect="true" movedistance="300" holdWeapon="0">
 				<attack point="p0" targetCount="10" attacktype="1" hitImmuneBreak="5" brokenOffence="25" brokenForce="1" unrideOnHit="1">
 					<pause pauseDuration="0.5" pauseShakeDuration="0.1" pauseAmp="10" />
 					<range rangeType="box" distance="250" height="250" width="350" applyTarget="1" />
@@ -3663,6 +3664,7 @@
 			<ui icon="./Data/Resource/Image/Skill/Icon/skillset/skillattack_02.png" attackType="1" />
 			<kinds rangeType="1" />
 			<stateAttr superArmor="3" ignoreReduceCooldown="1" />
+			<changeSkill changeSkillCheckEffectID="71000055" changeSkillCheckEffectLevel="1" changeSkillCheckEffectOverlapCount="1" changeSkillID="99910057" />
 			<push up="950" back="450" />
 			<condition useCoolDownShowUI="1" allowBattleRidingState="1" onlyBattleRidingState="1" />
 		</basic>
@@ -3681,6 +3683,7 @@
 			<ui icon="./Data/Resource/Image/Skill/Icon/skillset/whirlwind_01.png" attackType="1" />
 			<kinds rangeType="1" continue="1" />
 			<stateAttr superArmor="3" moveType="3" ignoreReduceCooldown="1" />
+			<changeSkill changeSkillCheckEffectID="71000055" changeSkillCheckEffectLevel="1" changeSkillCheckEffectOverlapCount="1" changeSkillID="99910058" />
 			<push up="950" back="450" />
 			<condition useCoolDownShowUI="1" allowBattleRidingState="1" onlyBattleRidingState="1" />
 		</basic>
@@ -3689,6 +3692,63 @@
 				<attack point="p0" targetCount="10" attacktype="1" hitImmuneBreak="5" brokenOffence="25" brokenForce="1" unrideOnHit="1">
 					<pause pauseDuration="0.5" pauseShakeDuration="0.1" pauseAmp="10" />
 					<range rangeType="cylinder" distance="250" rangeAdd="0,0,75" height="250" width="350" applyTarget="1" />
+					<damage rate="0.4" hitPauseTime="0.3" effectHit="NPC/Skill/Temp/Eff_arcade_hit.xml" IgnoreOptimalHideDamageHitEffect="true" IgnoreOptimalHideDamageRemainEffect="true" push="3" pushdistance="150" pushduration="0.4" pushEaseType="1" pushDown="1" attackMaterial="2" />
+				</attack>
+			</motion>
+		</level>
+	</skill>
+	<skill id="99910056" comment="앨리스 노멀">
+		<basic mainType="2">
+			<ui icon="./Data/Resource/Image/Skill/Icon/skillset/basicattack_01.png" attackType="1" />
+			<kinds rangeType="1" jump="99910051" />
+			<stateAttr superArmor="3" ignoreReduceCooldown="1" />
+			<changeSkill originSkillID="99910051" />
+			<push up="950" back="450" />
+			<condition useCoolDownShowUI="1" allowBattleRidingState="1" onlyBattleRidingState="1" />
+		</basic>
+		<level value="1" sp="25" cooldown="1000">
+			<motion sequenceName="Attack_01_A" sequenceSpeed="1.2" motionEffect="NPC/Skill/AliceBandage/Eff_AliceBandage_Attack_01_A.xml" strTagEffects="e0=NPC/Skill/AliceZombie/Eff_AliceZombie_Attack_03_A_Cast_01.xml,e1=NPC/Skill/AliceZombie/Eff_AliceZombie_Attack_03_A_Cast_02.xml" IgnoreOptimalHideCastEffect="true" movedistance="300" holdWeapon="0">
+				<attack point="p0" targetCount="10" attacktype="1" hitImmuneBreak="5" brokenOffence="25" brokenForce="1" unrideOnHit="1">
+					<pause pauseDuration="0.5" pauseShakeDuration="0.1" pauseAmp="10" />
+					<range rangeType="box" distance="375" height="375" width="525" applyTarget="1" />
+					<damage rate="2" hitPauseTime="0.3" effectHit="NPC/Skill/Temp/Eff_arcade_hit.xml" IgnoreOptimalHideDamageHitEffect="true" IgnoreOptimalHideDamageRemainEffect="true" push="1" pushdistance="150" pushduration="0.4" pushEaseType="1" pushDown="1" attackMaterial="2" />
+				</attack>
+			</motion>
+		</level>
+	</skill>
+	<skill id="99910057" comment="앨리스 노멀">
+		<basic mainType="2">
+			<ui icon="./Data/Resource/Image/Skill/Icon/skillset/skillattack_02.png" attackType="1" />
+			<kinds rangeType="1" />
+			<stateAttr superArmor="3" ignoreReduceCooldown="1" />
+			<changeSkill originSkillID="99910052" />
+			<push up="950" back="450" />
+			<condition useCoolDownShowUI="1" allowBattleRidingState="1" onlyBattleRidingState="1" />
+		</basic>
+		<level value="1" sp="50" cooldown="1000">
+			<motion sequenceName="Attack_03_A" motionEffect="NPC/Skill/AliceZombie/Eff_AliceZombie_Attack_03_A_Cast_01.xml" strTagEffects="e0=NPC/Skill/AliceZombie/Eff_AliceZombie_Attack_03_A_Cast_01.xml,e1=NPC/Skill/AliceZombie/Eff_AliceZombie_Attack_03_A_Cast_02.xml" IgnoreOptimalHideCastEffect="true" holdWeapon="0">
+				<attack point="p0" targetCount="10" attacktype="1" hitImmuneBreak="5" brokenOffence="25" brokenForce="1" unrideOnHit="1">
+					<pause pauseDuration="0.5" pauseShakeDuration="0.1" pauseAmp="10" />
+					<range rangeType="box" distance="375" height="375" width="525" applyTarget="1" />
+					<damage rate="6" hitPauseTime="0.3" effectHit="NPC/Skill/Temp/Eff_arcade_hit.xml" IgnoreOptimalHideDamageHitEffect="true" IgnoreOptimalHideDamageRemainEffect="true" push="1" pushdistance="150" pushduration="0.4" pushEaseType="1" pushDown="1" attackMaterial="2" />
+				</attack>
+			</motion>
+		</level>
+	</skill>
+	<skill id="99910058" comment="앨리스 노멀">
+		<basic mainType="2">
+			<ui icon="./Data/Resource/Image/Skill/Icon/skillset/whirlwind_01.png" attackType="1" />
+			<kinds rangeType="1" continue="1" />
+			<stateAttr superArmor="3" moveType="3" ignoreReduceCooldown="1" />
+			<changeSkill originSkillID="99910053" />
+			<push up="950" back="450" />
+			<condition useCoolDownShowUI="1" allowBattleRidingState="1" onlyBattleRidingState="1" />
+		</basic>
+		<level value="1" sp="15">
+			<motion sequenceName="Attack_02_C" sequenceSpeed="1.2" motionEffect="NPC/Skill/AliceBandage/Eff_AliceBandage_Attack_02_C.xml" strTagEffects="e0=NPC/Skill/AliceZombie/Eff_AliceZombie_Attack_03_A_Cast_01.xml,e1=NPC/Skill/AliceZombie/Eff_AliceZombie_Attack_03_A_Cast_02.xml" IgnoreOptimalHideCastEffect="true" holdWeapon="0">
+				<attack point="p0" targetCount="10" attacktype="1" hitImmuneBreak="5" brokenOffence="25" brokenForce="1" unrideOnHit="1">
+					<pause pauseDuration="0.5" pauseShakeDuration="0.1" pauseAmp="10" />
+					<range rangeType="cylinder" distance="375" rangeAdd="0,0,112" height="375" width="525" applyTarget="1" />
 					<damage rate="0.4" hitPauseTime="0.3" effectHit="NPC/Skill/Temp/Eff_arcade_hit.xml" IgnoreOptimalHideDamageHitEffect="true" IgnoreOptimalHideDamageRemainEffect="true" push="3" pushdistance="150" pushduration="0.4" pushEaseType="1" pushDown="1" attackMaterial="2" />
 				</attack>
 			</motion>
@@ -3911,7 +3971,7 @@
 					<pause pauseDuration="0.5" pauseShakeDuration="0.1" pauseAmp="10" />
 					<range rangeType="box" distance="250" rangeAdd="0,200,0" height="250" width="400" applyTarget="1" />
 					<arrow overlap="1" explosion="1" nonTarget="1" bounceType="3" bounceCount="1" />
-					<damage hitPauseTime="0.3" value="8" effectHit="NPC/Skill/Temp/Eff_arcade_hit.xml" IgnoreOptimalHideDamageHitEffect="true" IgnoreOptimalHideDamageRemainEffect="true" push="1" pushdistance="150" attackMaterial="5" />
+					<damage hitPauseTime="0.3" value="24" effectHit="NPC/Skill/Temp/Eff_arcade_hit.xml" IgnoreOptimalHideDamageHitEffect="true" IgnoreOptimalHideDamageRemainEffect="true" push="1" pushdistance="150" attackMaterial="5" />
 				</attack>
 			</motion>
 		</level>
@@ -3930,7 +3990,7 @@
 					<pause pauseDuration="0.5" pauseShakeDuration="0.1" pauseAmp="10" />
 					<range rangeType="box" distance="850" height="250" width="450" applyTarget="1" />
 					<arrow overlap="1" explosion="1" nonTarget="1" bounceType="3" bounceCount="1" />
-					<damage hitPauseTime="0.3" value="10" effectHit="NPC/Skill/Temp/Eff_arcade_hit.xml" IgnoreOptimalHideDamageHitEffect="true" IgnoreOptimalHideDamageRemainEffect="true" push="1" pushdistance="150" attackMaterial="5" />
+					<damage hitPauseTime="0.3" value="30" effectHit="NPC/Skill/Temp/Eff_arcade_hit.xml" IgnoreOptimalHideDamageHitEffect="true" IgnoreOptimalHideDamageRemainEffect="true" push="1" pushdistance="150" attackMaterial="5" />
 				</attack>
 			</motion>
 		</level>
@@ -3949,13 +4009,13 @@
 					<pause pauseDuration="0.5" pauseShakeDuration="0.1" pauseAmp="10" />
 					<range rangeType="box" distance="200" height="250" width="200" applyTarget="1" />
 					<arrow overlap="1" explosion="1" nonTarget="1" bounceType="3" bounceCount="1" />
-					<damage hitPauseTime="0.3" value="2" effectHit="NPC/Skill/Temp/Eff_arcade_hit.xml" IgnoreOptimalHideDamageHitEffect="true" IgnoreOptimalHideDamageRemainEffect="true" push="1" pushdistance="150" attackMaterial="3" />
+					<damage hitPauseTime="0.3" value="6" effectHit="NPC/Skill/Temp/Eff_arcade_hit.xml" IgnoreOptimalHideDamageHitEffect="true" IgnoreOptimalHideDamageRemainEffect="true" push="1" pushdistance="150" attackMaterial="3" />
 				</attack>
 				<attack point="p1" targetCount="3" attacktype="1" hitImmuneBreak="5" brokenOffence="10" brokenForce="1" unrideOnHit="1">
 					<pause pauseDuration="0.5" pauseShakeDuration="0.1" pauseAmp="10" />
 					<range rangeType="box" distance="200" height="250" width="200" applyTarget="1" />
 					<arrow overlap="1" explosion="1" nonTarget="1" bounceType="3" bounceCount="1" />
-					<damage hitPauseTime="0.3" value="2" effectHit="NPC/Skill/Temp/Eff_arcade_hit.xml" IgnoreOptimalHideDamageHitEffect="true" IgnoreOptimalHideDamageRemainEffect="true" push="1" pushdistance="150" attackMaterial="3" />
+					<damage hitPauseTime="0.3" value="6" effectHit="NPC/Skill/Temp/Eff_arcade_hit.xml" IgnoreOptimalHideDamageHitEffect="true" IgnoreOptimalHideDamageRemainEffect="true" push="1" pushdistance="150" attackMaterial="3" />
 				</attack>
 			</motion>
 		</level>
@@ -3974,7 +4034,7 @@
 					<pause pauseDuration="0.5" pauseShakeDuration="0.1" pauseAmp="10" />
 					<range rangeType="box" distance="300" height="250" width="300" applyTarget="1" />
 					<arrow nonTarget="1" bounceType="3" bounceCount="8" collision="300,150,300" collisionAdd="0,150,0" effect="CH/Skill/Berserker/Eff_Berserker_WindDivide_Ball_01.xml" effectRemain="CH/Skill/Berserker/Eff_Berserker_WindDivide_Remain_01.xml" />
-					<damage hitPauseTime="0.3" value="8" effectHit="NPC/Skill/Temp/Eff_arcade_hit.xml" IgnoreOptimalHideDamageHitEffect="true" IgnoreOptimalHideDamageRemainEffect="true" push="1" pushdistance="150" attackMaterial="3" />
+					<damage hitPauseTime="0.3" value="24" effectHit="NPC/Skill/Temp/Eff_arcade_hit.xml" IgnoreOptimalHideDamageHitEffect="true" IgnoreOptimalHideDamageRemainEffect="true" push="1" pushdistance="150" attackMaterial="3" />
 				</attack>
 			</motion>
 		</level>
@@ -3993,7 +4053,7 @@
 					<pause pauseDuration="0.5" pauseShakeDuration="0.1" pauseAmp="10" />
 					<range rangeType="box" distance="700" height="150" width="150" applyTarget="1" />
 					<arrow rayPhysxTest="1" nonTarget="1" collision="25,100,15" collisionAdd="0,25,15" effect="CH/Skill/Ranger/Eff_Ranger_Straif_Ball_01.xml" targetKeepEffect="CH/Skill/Ranger/Eff_Ranger_Straif_Destroy_01.xml" />
-					<damage hitPauseTime="0.3" value="2" effectHit="NPC/Skill/Temp/Eff_arcade_hit.xml" IgnoreOptimalHideDamageHitEffect="true" IgnoreOptimalHideDamageRemainEffect="true" push="1" pushdistance="150" attackMaterial="9" />
+					<damage hitPauseTime="0.3" value="6" effectHit="NPC/Skill/Temp/Eff_arcade_hit.xml" IgnoreOptimalHideDamageHitEffect="true" IgnoreOptimalHideDamageRemainEffect="true" push="1" pushdistance="150" attackMaterial="9" />
 				</attack>
 			</motion>
 		</level>
@@ -4012,7 +4072,7 @@
 					<pause pauseDuration="0.5" pauseShakeDuration="0.1" pauseAmp="10" />
 					<range rangeType="frustum" distance="900" height="200" width="300" endWidth="950" applyTarget="1" />
 					<arrow nonTarget="1" />
-					<damage hitPauseTime="0.3" value="5" effectHit="NPC/Skill/Temp/Eff_arcade_hit.xml" IgnoreOptimalHideDamageHitEffect="true" IgnoreOptimalHideDamageRemainEffect="true" push="1" pushdistance="150" attackMaterial="9" />
+					<damage hitPauseTime="0.3" value="15" effectHit="NPC/Skill/Temp/Eff_arcade_hit.xml" IgnoreOptimalHideDamageHitEffect="true" IgnoreOptimalHideDamageRemainEffect="true" push="1" pushdistance="150" attackMaterial="9" />
 				</attack>
 			</motion>
 		</level>
@@ -4597,18 +4657,19 @@
 	</skill>
 	<skill id="99910221" comment="앨리스 노멀">
 		<basic mainType="2">
-			<ui icon="./Data/Resource/Image/Skill/Icon/skillset/basicattack_01.png" attackType="1" />
+			<ui icon="./Data/Resource/Image/Skill/Icon/99910221.png" attackType="1" />
 			<kinds rangeType="1" />
 			<stateAttr superArmor="3" ignoreReduceCooldown="1" />
+			<changeSkill changeSkillCheckEffectID="99910401" changeSkillCheckEffectLevel="1" changeSkillCheckEffectOverlapCount="1" changeSkillID="99910224" />
 			<push up="950" back="450" />
 			<condition useCoolDownShowUI="1" allowBattleRidingState="1" onlyBattleRidingState="1" />
 		</basic>
 		<level value="1" sp="25" cooldown="1000">
-			<motion sequenceName="Attack_01_A" sequenceSpeed="1.2" motionEffect="NPC/Skill/AliceBandage/Eff_AliceBandage_Attack_01_A_guide.xml" strTagEffects="e0=NPC/Skill/AliceZombie/Eff_AliceZombie_Attack_03_A_Cast_01.xml,e1=NPC/Skill/AliceZombie/Eff_AliceZombie_Attack_03_A_Cast_02.xml" IgnoreOptimalHideCastEffect="true" movedistance="450" holdWeapon="0">
-				<attack point="p0" targetCount="10" attacktype="1" hitImmuneBreak="5" brokenOffence="25" brokenForce="25" unrideOnHit="1">
+			<motion sequenceName="Attack_01_A" sequenceSpeed="1.2" motionEffect="NPC/Skill/Temp/Eff_Alice_onePunch.xml" strTagEffects="e0=NPC/Skill/AliceZombie/Eff_AliceZombie_Attack_03_A_Cast_01.xml,e1=NPC/Skill/AliceZombie/Eff_AliceZombie_Attack_03_A_Cast_02.xml" IgnoreOptimalHideCastEffect="true" movedistance="450" holdWeapon="0">
+				<attack point="p0" targetCount="10" attacktype="1" hitImmuneBreak="5" brokenOffence="25" brokenForce="25" unrideOnHit="1" compulsionType="1,2">
 					<pause pauseDuration="0.5" pauseShakeDuration="0.1" pauseAmp="10" />
 					<range rangeType="box" distance="250" height="250" width="350" applyTarget="1" />
-					<damage hitPauseTime="0.3" effectHit="NPC/Skill/Temp/Eff_arcade_hit.xml" IgnoreOptimalHideDamageHitEffect="true" IgnoreOptimalHideDamageRemainEffect="true" push="1" pushdistance="150" pushduration="0.4" pushEaseType="1" pushDown="1" attackMaterial="2" />
+					<damage hitPauseTime="0.3" effectHit="NPC/Skill/Temp/Eff_Alice_onePunch.xml" IgnoreOptimalHideDamageHitEffect="true" IgnoreOptimalHideDamageRemainEffect="true" damageByTargetMaxHP="1.3" pushprob="0" pushDown="1" attackMaterial="2" />
 				</attack>
 			</motion>
 		</level>
@@ -4648,6 +4709,25 @@
 					<pause pauseDuration="0.5" pauseShakeDuration="0.1" pauseAmp="10" />
 					<range rangeType="cylinder" distance="250" rangeAdd="0,0,75" height="250" width="350" applyTarget="1" />
 					<damage hitPauseTime="0.3" IgnoreOptimalHideDamageHitEffect="true" IgnoreOptimalHideDamageRemainEffect="true" push="3" pushdistance="150" pushduration="0.4" pushEaseType="1" pushDown="1" attackMaterial="2" />
+				</attack>
+			</motion>
+		</level>
+	</skill>
+	<skill id="99910224" comment="앨리스 노멀">
+		<basic mainType="2">
+			<ui icon="./Data/Resource/Image/Skill/Icon/99910221.png" attackType="1" />
+			<kinds rangeType="1" />
+			<stateAttr superArmor="3" ignoreReduceCooldown="1" />
+			<changeSkill originSkillID="99910221" />
+			<push up="950" back="450" />
+			<condition useCoolDownShowUI="1" allowBattleRidingState="1" onlyBattleRidingState="1" />
+		</basic>
+		<level value="1">
+			<motion sequenceName="Attack_01_A" sequenceSpeed="1.2" motionEffect="NPC/Skill/AliceBandage/Eff_AliceBandage_Attack_01_A_guide.xml" strTagEffects="e0=NPC/Skill/AliceZombie/Eff_AliceZombie_Attack_03_A_Cast_01.xml,e1=NPC/Skill/AliceZombie/Eff_AliceZombie_Attack_03_A_Cast_02.xml" IgnoreOptimalHideCastEffect="true" movedistance="450" holdWeapon="0">
+				<attack point="p0" targetCount="10" attacktype="1" hitImmuneBreak="5" brokenOffence="25" brokenForce="25" unrideOnHit="1" compulsionType="1,2">
+					<pause pauseDuration="0.5" pauseShakeDuration="0.1" pauseAmp="10" />
+					<range rangeType="box" distance="375" height="500" width="700" applyTarget="1" />
+					<damage hitPauseTime="0.3" effectHit="NPC/Skill/Temp/Eff_Alice_onePunch.xml" IgnoreOptimalHideDamageHitEffect="true" IgnoreOptimalHideDamageRemainEffect="true" damageByTargetMaxHP="1.3" pushprob="0" pushDown="1" attackMaterial="2" />
 				</attack>
 			</motion>
 		</level>

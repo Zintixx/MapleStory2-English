@@ -1,37 +1,68 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ms2>
 
-     <!-- 효과음 -->
-   <effect type="soundEvent" group="MS2Sound/Sound/Mob" event="06102580" startDelay="0">
-      <attachInfo attachToNode="true" applyNodeTransform="true" parentNode="Scene Root" />
-  </effect>     
+  <effect type="nif" filePath="NPC/Skill/BlueLuke/Eff_BlueLuke_Attack_D_charge.nif" startDelay="0" duration="5" notForceStop="true">
+    <attachInfo attachToNode="true" applyNodeTransform="true" parentNode="Scene Root" />
+    <transform translate="0.0, 0.0, 0.0" rotation="0.0, 0.0, 0.0" scale="0.75" />
+  </effect>
 
-  <effect type="soundEvent" group="MS2Sound/Sound/Mob" event="06102576" startDelay="0.8">
-      <attachInfo attachToNode="true" applyNodeTransform="true" parentNode="Scene Root" />
-  </effect>  
+<!--
+  <effect type="nif" filePath="NPC/Skill/BlueLuke/Eff_BlueLuke_Attack_D_Beam.nif" startDelay="0.833333" duration="4.56" notForceStop="true">
+    <attachInfo attachToNode="true" applyNodeTransform="true" parentNode="Scene Root" />
+    <transform translate="0.0, 0.0, 0.0" rotation="0.0, 0.0, 0.0" scale="1.0" />
+  </effect>
+  -->
   
+  <effect type="soundEvent" group="MS2Sound/Sound/Mob" event="06102581" startDelay="0">
+	<attachInfo attachToNode="true" applyNodeTransform="true" parentNode="Scene Root" />
+  </effect>  
 
-  <effect type="soundEvent" group="MS2Sound/Sound/Mob" event="06102577" startDelay="0.8">
-      <attachInfo attachToNode="true" applyNodeTransform="true" parentNode="Scene Root" />
-  </effect>  
+  <effect type="soundEvent" group="MS2Sound/Sound/Mob" event="06102582" startDelay="1.5">
+	<attachInfo attachToNode="true" applyNodeTransform="true" parentNode="Scene Root" />
+  </effect>
   
-  <effect type="soundEvent" group="MS2Sound/Sound/Mob" event="06102578" startDelay="1.8">
-      <attachInfo attachToNode="true" applyNodeTransform="true" parentNode="Scene Root" />
-  </effect>  
+  <effect type="vibrate" startDelay="2.0" duration="2.0" freq="30" amp="40" dampingTime="0.0" damping="0" />
+  <effect type="vibrate" startDelay="4.0" duration="2.0" freq="20" amp="30" dampingTime="0.0" damping="0" />
+  <effect type="vibrate" startDelay="6.0" duration="2.0" freq="10" amp="20" dampingTime="0.0" damping="0" />
+  <effect type="vibrate" startDelay="8.0" duration="1.0" freq="5" amp="10" dampingTime="0.0" damping="0" />
   
-  <effect type="soundEvent" group="MS2Sound/Sound/Mob" event="06102577" startDelay="1.3">
+  <effect type="nif" filePath="NPC/Skill/DevilHugeRed/Eff_DevilHugeRed_Attack_02_I.nif" startDelay="1.75" duration="8.0" viewDistance="0">
+	<attachInfo attachToNode="true" applyNodeTransform="true" parentNode="Body_Center" />
+    <transform translate="0,0,-158.0" rotation="0.0, 0.0, 0.0" scale="0.8" />
+  </effect>
+  <effect type="nif" filePath="NPC/Skill/DevilHugeRed/Eff_DevilHugeRed_Attack_02_I.nif" startDelay="2.3" duration="8.0" viewDistance="0">
+    <attachInfo attachToNode="true" applyNodeTransform="true" parentNode="Body_Center" />
+    <transform translate="0,0,-158.0" rotation="0.0, 0.0, 0.0" scale="0.8" />
+  </effect>
+  <effect type="nif" filePath="NPC/Skill/DevilHugeRed/Eff_DevilHugeRed_Attack_02_I.nif" startDelay="2.9" duration="8.0" viewDistance="0">
+    <attachInfo attachToNode="true" applyNodeTransform="true" parentNode="Body_Center" />
+    <transform translate="0,0,-158.0" rotation="0.0, 0.0, 0.0" scale="0.8" />
+  </effect>
+  <effect type="nif" filePath="NPC/Skill/DevilHugeRed/Eff_DevilHugeRed_Attack_02_I.nif" startDelay="3.5" duration="8.0" viewDistance="0">
+    <attachInfo attachToNode="true" applyNodeTransform="true" parentNode="Body_Center" />
+    <transform translate="0,0,-158.0" rotation="0.0, 0.0, 0.0" scale="0.8" />
+  </effect>
+  <effect type="nif" filePath="NPC/Skill/DevilHugeRed/Eff_DevilHugeRed_Attack_02_I.nif" startDelay="4.1" duration="8.0" viewDistance="0">
+    <attachInfo attachToNode="true" applyNodeTransform="true" parentNode="Body_Center" />
+    <transform translate="0,0,-158.0" rotation="0.0, 0.0, 0.0" scale="0.8" />
+  </effect>
+  <effect type="nif" filePath="NPC/Skill/DevilHugeRed/Eff_DevilHugeRed_Attack_02_I.nif" startDelay="4.7" duration="8.0" viewDistance="0">
+    <attachInfo attachToNode="true" applyNodeTransform="true" parentNode="Body_Center" />
+    <transform translate="0,0,-158.0" rotation="0.0, 0.0, 0.0" scale="0.8" />
+  </effect>
+  <effect type="nif" filePath="NPC/Skill/DevilHugeRed/Eff_DevilHugeRed_Attack_02_I.nif" startDelay="5.3" duration="8.0" viewDistance="0">
+    <attachInfo attachToNode="true" applyNodeTransform="true" parentNode="Body_Center" />
+    <transform translate="0,0,-158.0" rotation="0.0, 0.0, 0.0" scale="0.8" />
+  </effect>
+  <effect type="nif" filePath="NPC/Skill/DevilHugeRed/Eff_DevilHugeRed_Attack_02_I.nif" startDelay="6.0" duration="8.0" viewDistance="0">
+    <attachInfo attachToNode="true" applyNodeTransform="true" parentNode="Body_Center" />
+    <transform translate="0,0,-158.0" rotation="0.0, 0.0, 0.0" scale="0.8" />
+  </effect>
+
+   <!-- 효과음 -->
+
+  <!--
+  <effect type="soundEvent" group="MS2Sound/Sound/Mob" event="06102583" startDelay="0.73">
       <attachInfo attachToNode="true" applyNodeTransform="true" parentNode="Scene Root" />
-  </effect>  
-  
-  <effect type="soundEvent" group="MS2Sound/Sound/Mob" event="06102578" startDelay="2.3">
-      <attachInfo attachToNode="true" applyNodeTransform="true" parentNode="Scene Root" />
-  </effect> 
-  
-  <effect type="soundEvent" group="MS2Sound/Sound/Mob" event="06102577" startDelay="1.8">
-      <attachInfo attachToNode="true" applyNodeTransform="true" parentNode="Scene Root" />
-  </effect> 
-  
-  <effect type="soundEvent" group="MS2Sound/Sound/Mob" event="06102578" startDelay="2.8">
-      <attachInfo attachToNode="true" applyNodeTransform="true" parentNode="Scene Root" />
-  </effect> 
+  </effect>   -->
 </ms2>

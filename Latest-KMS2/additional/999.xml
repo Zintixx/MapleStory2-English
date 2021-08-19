@@ -405,7 +405,7 @@
 	<additional id="99910050">
 		<level>
 			<beginCondition allowBattleRidingState="1" />
-			<BasicProperty level="1" durationTick="60000000" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<BasicProperty level="1" durationTick="60000000" deadKeepEffect="1" logoutClearEffect="1" leaveFieldClearEffect="1" />
 			<MotionProperty startEffect="CH/Common/Eff_ChangeCh.xml" abnormalImmuneBreak="5" />
 			<UIProperty icon="./Data/Resource/Image/Portrait/Npc/21000164_M_AliceNormal_P.png" iconOnOff="0" />
 			<RideeProperty rideeID="99910050" />
@@ -770,6 +770,14 @@
 			<MotionProperty startEffect="CH/Common/Eff_ChangeCh.xml" abnormalImmuneBreak="5" superArmor="3" />
 			<UIProperty icon="./Data/Resource/Image/Portrait/Npc/21000164_M_AliceNormal_P.png" iconOnOff="0" />
 			<RideeProperty rideeID="99910400" />
+		</level>
+	</additional>
+	<additional id="99910401">
+		<level>
+			<beginCondition allowBattleRidingState="1" onlyBattleRidingState="1" />
+			<BasicProperty level="1" durationTick="10000" />
+			<MotionProperty startEffect="CH/Common/Eff_ChangeCh.xml" />
+			<UIProperty icon="./Data/Resource/Image/Skill/Icon/100011.png" />
 		</level>
 	</additional>
 	<additional id="99910402">

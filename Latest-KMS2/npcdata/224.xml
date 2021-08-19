@@ -5,7 +5,7 @@
 			<model kfm="22000062_N_PapulatusPiece" shadowScale="250" rotationSpeed="720" walkSpeed="100" runSpeed="200" />
 			<stat hp="66287" asp="100" msp="100" atp="81" evp="82" cap="58" cad="500" car="50" ndd="410" pap="7906" map="7909" />
 			<distance avoid="140" sight="3000" sightHeightUP="160" sightHeightDown="0" customLastSightRadius="5000" customLastSightHeightUp="320" customLastSightHeightDown="50" />
-			<skill ids="50100517" levels="1" probs="100" />
+			<skill ids="50100515,50100516,50100516,50100516,50100516,50100516,50100516,50100516,50100517" levels="1,1,2,3,12,22,32,42,1" />
 			<collision shape="box" width="130" height="280" depth="130" />
 			<capsule radius="40" height="150" />
 			<dead time="10" defaultaction="Dead_A" upaction="Dead_A" />
@@ -47,7 +47,7 @@
 			<model kfm="22400071_N_BeserkerBigSwordZakumSummon" scale="0.75" shadowScale="300" rotationSpeed="720" walkSpeed="125" runSpeed="250" />
 			<stat hp="781203" asp="100" msp="100" atp="81" evp="87" cap="65" cad="500" car="55" ndd="678" pap="64366" map="64386" />
 			<distance avoid="100" sight="5000" sightHeightUP="300" sightHeightDown="0" customLastSightRadius="5000" customLastSightHeightUp="525" customLastSightHeightDown="225" />
-			<skill ids="50100046" levels="1" probs="100" />
+			<skill ids="50100046,50100047,50100048" levels="1,1,1" />
 			<additionalEffect codes="50001009" levels="1" />
 			<collision shape="box" width="150" height="200" depth="90" />
 			<capsule radius="60" height="250" />
@@ -89,13 +89,13 @@
 			<model kfm="22409034_N_YetiRiderBlack" scale="1.2" shadowScale="250" rotationSpeed="720" walkSpeed="100" runSpeed="200" />
 			<stat hp="203327" asp="100" msp="100" atp="81" evp="82" cap="59" cad="500" car="50" ndd="429" pap="28509" map="28518" />
 			<distance avoid="140" sight="2000" sightHeightUP="300" sightHeightDown="0" customLastSightRadius="3200" customLastSightHeightUp="525" customLastSightHeightDown="50" />
-			<skill ids="50000434" levels="1" probs="100" />
+			<skill ids="50100040,50100040,50100040,50100040,50100041,50100041,50100041,50100041,50100042,50100043" levels="1,2,3,4,1,2,3,4,1,1" />
 			<collision shape="box" width="120" height="120" depth="120" />
 			<capsule radius="70" height="110" />
 			<dead time="5" defaultaction="Dead_A" upaction="Dead_A" />
 			<normal action="Idle_A,Bore_A,Walk_A" prob="3500,3500,3000" movearea="150" />
 			<dropiteminfo dropHeight="150" dropDistanceBase="200" dropDistanceRandom="10" fireVelocity="150" globalDropBoxId="15" individualDropBoxId="922409034" />
-			<aiInfo path="AI_YetiRiderBlack.xml" />
+			<aiInfo path="AI_YetiRiderBlack.xml" summonNpcIDs="22409134" />
 			<effectdummy>
 				<dummy name="Eff_Head">
 					<attachInfo parentNode="Bip02 Head" />
@@ -133,13 +133,13 @@
 			<model kfm="22409035_N_YetiRiderGreen" scale="1.2" shadowScale="250" rotationSpeed="720" walkSpeed="100" runSpeed="200" />
 			<stat hp="94022" asp="100" msp="100" atp="81" evp="82" cap="53" cad="500" car="50" ndd="250" pap="10849" map="10852" />
 			<distance avoid="140" sight="2000" sightHeightUP="300" sightHeightDown="0" customLastSightRadius="3200" customLastSightHeightUp="525" customLastSightHeightDown="50" />
-			<skill ids="50000434" levels="1" probs="100" />
+			<skill ids="50100040,50100040,50100040,50100040,50100041,50100041,50100041,50100041,50100042,50100043" levels="1,2,3,4,1,2,3,4,1,1" />
 			<collision shape="box" width="120" height="120" depth="120" />
 			<capsule radius="70" height="110" />
 			<dead time="5" defaultaction="Dead_A" upaction="Dead_A" />
 			<normal action="Idle_A,Bore_A,Walk_A" prob="3500,3500,3000" movearea="150" />
 			<dropiteminfo dropHeight="150" dropDistanceBase="200" dropDistanceRandom="10" fireVelocity="150" globalDropBoxId="15" />
-			<aiInfo path="AI_YetiRiderGreen.xml" />
+			<aiInfo path="AI_YetiRiderGreen.xml" summonNpcIDs="22409135" />
 			<effectdummy>
 				<dummy name="Eff_Head">
 					<attachInfo parentNode="Bip02 Head" />
@@ -177,7 +177,7 @@
 			<model kfm="22409134_N_YetiRiderBlack" scale="1.2" shadowScale="250" rotationSpeed="720" walkSpeed="100" runSpeed="200" />
 			<stat hp="20332" asp="100" msp="100" atp="81" evp="82" cap="59" cad="500" car="50" ndd="429" pap="28509" map="28518" />
 			<distance avoid="140" sight="2000" sightHeightUP="160" sightHeightDown="0" customLastSightRadius="3200" customLastSightHeightUp="160" customLastSightHeightDown="50" />
-			<skill ids="50000434" levels="1" probs="100" />
+			<skill ids="50100040,50100040,50100040,50100040,50100041,50100041,50100041,50100041,50100042" levels="1,2,3,4,1,2,3,4,1" />
 			<collision shape="box" width="120" height="120" depth="120" />
 			<capsule radius="70" height="110" />
 			<dead time="5" defaultaction="Dead_A" upaction="Dead_A" />
@@ -221,7 +221,7 @@
 			<model kfm="22409135_N_YetiRiderGreen" scale="1.2" shadowScale="250" rotationSpeed="720" walkSpeed="100" runSpeed="200" />
 			<stat hp="9402" asp="100" msp="100" atp="81" evp="82" cap="53" cad="500" car="50" ndd="250" pap="10849" map="10852" />
 			<distance avoid="140" sight="2000" sightHeightUP="160" sightHeightDown="0" customLastSightRadius="3200" customLastSightHeightUp="160" customLastSightHeightDown="50" />
-			<skill ids="50000434" levels="1" probs="100" />
+			<skill ids="50100040,50100040,50100040,50100040,50100041,50100041,50100041,50100041,50100042" levels="1,2,3,4,1,2,3,4,1" />
 			<collision shape="box" width="120" height="120" depth="120" />
 			<capsule radius="70" height="110" />
 			<dead time="5" defaultaction="Dead_A" upaction="Dead_A" />

@@ -1984,7 +1984,7 @@
 				<attack point="p0" targetCount="2" magicPathID="6316" attacktype="2" attackMethodType="1" brokenOffence="1" unrideOnHit="1">
 					<range rangeType="cylinder" distance="3500" rangeOffset="0,50,0" height="600" applyTarget="1" castTarget="1" />
 					<arrow overlap="1" explosion="1" nonTarget="1" bounceType="3" bounceCount="50" collision="900,75,75" collisionAdd="0,25,50" effect="NPC/Skill/SirenHarp/Eff_SirenHarp_Attack_01_F_ball.xml" effectRemain="NPC/Skill/SirenHarp/Eff_SirenHarp_Attack_01_F_ball_remain.xml" />
-					<damage rate="1.5" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="5" pushdistance="300" pushduration="0.5" pushEaseType="1" pushUpDistance="450" pushPriority="10" pushPriorityHitImmune="1" attackMaterial="1" jumpHitIgnore="1" />
+					<damage rate="1.5" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="5" pushdistance="300" pushduration="0.5" pushEaseType="1" pushUpDistance="450" pushPriority="10" pushPriorityHitImmune="1" attackMaterial="1" stateHitIgnore="6" />
 				</attack>
 			</motion>
 		</level>
@@ -2017,7 +2017,7 @@
 				<attack point="p0" targetCount="1" magicPathID="6317" attacktype="1" attackMethodType="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
 					<range rangeType="cylinder" distance="3000" rangeOffset="0,50,0" height="600" applyTarget="1" castTarget="1" />
 					<arrow overlap="1" explosion="1" nonTarget="1" bounceType="3" bounceCount="50" collision="600,25,50" collisionAdd="0,25,50" effect="NPC/Skill/Wavedummy/Eff_Wavedummy_Attack_01_B_Ball_01.xml" effectRemain="NPC/Skill/Wavedummy/Eff_Wavedummy_Attack_01_B_Ball_Remain.xml" />
-					<damage rate="1.5" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="5" pushdistance="150" pushduration="0.25" pushEaseType="1" pushUpDistance="300" pushPriority="10" pushPriorityHitImmune="1" attackMaterial="1" jumpHitIgnore="1" />
+					<damage rate="1.5" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" push="5" pushdistance="150" pushduration="0.25" pushEaseType="1" pushUpDistance="300" pushPriority="10" pushPriorityHitImmune="1" attackMaterial="1" stateHitIgnore="6" />
 				</attack>
 			</motion>
 		</level>
@@ -6808,7 +6808,7 @@
 			<ui attackType="1" />
 			<kinds rangeType="1" element="7" />
 		</basic>
-		<level value="2">
+		<level value="1">
 			<detectProperty rangeType="box" distance="180" rangeOffset="0,0,50" height="150" width="60" />
 			<motion sequenceName="Attack_01_A" motionEffect="NPC/Skill/DevilBatBlue/Eff_DevilBatBlue_Attack_01_A.xml" movedistance="120">
 				<attack point="p0" targetCount="1" attacktype="1" brokenOffence="1" unrideOnHit="1" releaseObjectWeaponOnHit="0">
