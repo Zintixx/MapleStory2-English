@@ -3935,6 +3935,35 @@
         <texture file="Item_Face/MC_face_happy.dds" control="" delay="100" loop="true"/>
     </textureani>
   </emotion>
+  
+	<!--링거 거치대 -->
+	<emotion name="Ride_Idle_076">
+    <anim name="Ride_Idle_076"/>
+    <textureani target="FA">
+        <texture file="Item_Face/MC_face_panic.dds" control="" delay="100" loop="true"/>
+    </textureani>
+	</emotion>
+  
+	<emotion name="Ride_Run_076">
+    <anim name="Ride_Run_076"/>
+    <textureani target="FA">
+        <texture file="Item_Face/MC_face_panic.dds" control="" delay="100" loop="true"/>
+    </textureani>
+	</emotion>
+  
+	<emotion name="Ride_Sp_Idle_076">
+    <anim name="Ride_Sp_Idle_076"/>
+    <textureani target="FA">
+        <texture file="Item_Face/MC_face_panic.dds" control="" delay="100" loop="true"/>
+    </textureani>
+	</emotion>
+
+	<emotion name="Ride_Sp_Run_076">
+    <anim name="Ride_Sp_Run_076"/>
+    <textureani target="FA">
+        <texture file="Item_Face/MC_face_panic.dds" control="" delay="100" loop="true"/>
+    </textureani>
+	</emotion>
 
   <emotion name="Ride_Idle_V">
     <anim name="Ride_Idle_V" />
@@ -4556,7 +4585,23 @@
 		<texture file="Item_Face/MC_face_expectation.dds" control="" delay="100" loop="true" />
 		</textureani>
 	</emotion>
+	
+	<!--비행탈것 흩날리는 낙엽을 타고 -->
+	<emotion name="FlyType037_Idle">
+    <anim name="FlyType037_Idle" />
+    <textureani target="FA">
+      <texture file="Item_Face/{0}/05_Blink2.dds" control="Item_Face/{0}/20_Blink2_C.dds" delay="100" loop="true" />
+    </textureani>
+	</emotion>
+
+	<emotion name="FlyType037_Run">
+    <anim name="FlyType037_Run" />
+		<textureani target="FA">
+      <texture file="Item_Face/{0}/05_Blink2.dds" control="Item_Face/{0}/20_Blink2_C.dds" delay="100" loop="true" />
+		</textureani>
+	</emotion>
  
+	<!--메이드 제작 아이템 사용 -->
 	<emotion name="Item_Throw_A">
 		<anim name="Item_Throw_A" />
 		<textureani target="FA">
@@ -6245,6 +6290,56 @@
 		<effect file="CH/Emotion/Eff_Emotion_Mushking_Dance_A.xml" />
 	</emotion>
 	
+	<!-- 모닥불 앞에서 불멍 -->
+	<emotion name="Campfire_A">
+		<anim name="Campfire_A" />
+		<textureani target="FA">
+			<texture file="Item_Face/FC_face_smile.dds" control="" delay="300" />
+		</textureani>
+	</emotion>
+	
+	<!-- 램프의 지니 -->
+	<emotion name="Lamp_Genie">
+		<anim name="Emotion_Lamp_Genie" />
+		<textureani target="FA">
+			<texture file="Item_Face/FC_face_smile.dds" control="" delay="300" />
+		</textureani>
+	</emotion>
+	
+	<!-- 램프를 문지르고 양 -->
+	<emotion name="Lamp_Sheep">
+		<anim name="Emotion_Lamp_Sheep" />
+		<textureani target="FA">
+			<texture file="Item_Face/FC_face_smile.dds" control="" delay="300" />
+		</textureani>
+	</emotion>
+	
+		<!-- 앉아서 펑펑 울기 -->
+	<emotion name="Cry_Ready_B">
+		<anim name="Emotion_Cry_Ready_B" />
+		<textureani target="FA">
+			<texture file="Item_Face/FC_face_smile.dds" control="" delay="300" />
+		</textureani>
+	</emotion>		
+	
+		<!-- 중세춤 -->
+	<emotion name="Dance_008">
+		<anim name="Emotion_Dance_008" />
+		<textureani target="FA">
+			<texture file="Item_Face/FC_face_smile.dds" control="" delay="300" />
+		</textureani>
+	</emotion>		
+	
+	<!-- 제압당한 블루 루크 -->
+	<emotion name="BrokenBlueLuke_A">
+		<anim name="Emotion_BrokenBlueLuke_A" />
+		<idleAnim name="Emotion_BrokenBlueLuke_A" />
+		<textureani target="FA">
+			<texture file="Item_Face/{0}/05_Blink2.dds" control="Item_Face/{0}/20_Blink2_C.dds" loop="true" />
+		</textureani>
+		<effect file="CH/Emotion/Eff_Emotion_BrokenBlueLuke_A.xml" />
+	</emotion>
+	
 	<!-- 지금은 캠핑 중-->
 	<emotion name="Camping_Ready_A">
 		<anim name="Emotion_Camping_Ready_A" />
@@ -6450,6 +6545,14 @@
 		<effect file="CH/Emotion/Eff_Male_Emotion_Selfie_A.xml" />
 	</emotion>	
 	
+	<!-- 이 이글루가 아니야 -->
+	<emotion name="MakeIgloo">
+		<anim name="MakeIgloo" />
+		<textureani target="FA">
+			<texture file="Item_Face/FC_face_smile.dds" control="" delay="300" />
+		</textureani>
+	</emotion>
+	
 		<!-- 마리아치 댄스-->
 	<emotion name="Mariachi_A">
 		<anim name="Emotion_Mariachi_A" />
@@ -6478,12 +6581,44 @@
 			  <texture file="Item_Face/{0}/05_Blink2.dds" control="Item_Face/{0}/20_Blink2_C.dds" loop="true" />
 		</textureani>
 	</emotion>	
+	<!-- 야르야르 댄스 -->
+	<emotion name="Dance_001">
+		<anim name="Emotion_Dance_001" />
+		<idleAnim name="Emotion_Dance_001" />
+		<textureani target="FA">
+			<texture file="Item_Face/MC_face_sneaky2.dds" control="" loop="true" />
+		</textureani>
+	</emotion>
+	<!-- 호이호이 댄스 -->
+	<emotion name="Dance_003">
+		<anim name="Emotion_Dance_003" />
+		<idleAnim name="Emotion_Dance_003" />
+		<textureani target="FA">
+			<texture file="Item_Face/MC_face_indifferent01.dds" control="" loop="true" />
+		</textureani>
+	</emotion>
 	<!--파닥파닥 댄스-->
 	<emotion name="Dance_004">
 		<anim name="Emotion_Dance_004" />
 		<idleAnim name="Emotion_Dance_004" />
 		<textureani target="FA">
 			<texture file="Item_Face/MC_face_smile.dds" control="" loop="true" />
+		</textureani>
+	</emotion>
+	<!-- 앉아서 똑딱똑딱 -->
+	<emotion name="Dance_006">
+		<anim name="Emotion_Dance_006" />
+		<idleAnim name="Emotion_Dance_006" />
+		<textureani target="FA">
+			<texture file="Item_Face/{0}/05_Blink2.dds" control="Item_Face/{0}/20_Blink2_C.dds" loop="true" />
+		</textureani>
+	</emotion>
+	<!-- 서서 똑딱똑딱 -->
+	<emotion name="Dance_007">
+		<anim name="Emotion_Dance_007" />
+		<idleAnim name="Emotion_Dance_007" />
+		<textureani target="FA">
+			<texture file="Item_Face/{0}/05_Blink2.dds" control="Item_Face/{0}/20_Blink2_C.dds" loop="true" />
 		</textureani>
 	</emotion>
 	<!--죽은척 하기-->
@@ -6799,7 +6934,23 @@
 		</textureani>
 		<effect file="CH/Emotion/Eff_Emotion_Birthcake_B01_Loop.xml" />
 	</emotion>
-
+	
+	<!-- 넙죽넙죽 절하기 -->
+	<emotion name="Sorry">
+		<anim name="Sorry" />
+		<textureani target="FA">
+			<texture file="Item_Face/FC_face_smile.dds" control="" delay="300" />
+		</textureani>
+	</emotion>
+	
+	<!-- 싹싹 빌기 -->
+	<emotion name="Sorry_B">
+		<anim name="Sorry_B" />
+		<textureani target="FA">
+			<texture file="Item_Face/FC_face_smile.dds" control="" delay="300" />
+		</textureani>
+	</emotion>
+	
   <emotion name="Faint_A">
 		<anim name="Emotion_Faint_A" />
 		<textureani target="FA">

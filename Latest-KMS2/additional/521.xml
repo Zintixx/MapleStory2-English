@@ -1,31 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ms2>
-	<additional id="52100001">
-		<level>
-			<BasicProperty level="1" buffType="2" buffSubType="1" durationTick="20000" />
-			<MotionProperty abnormalImmuneBreak="1" />
-			<Stat>
-				<v type="ndd" value="-0.4" isRate="1" />
-			</Stat>
-			<UIProperty icon="./Data/Resource/Image/skill/icon/DefenseDown.png" iconOnOff="0" />
+	<additional id="52100001" mainType="1" isDebuff="1">
+		<level level="1">
+			<Basic durationTick="20000" />
+			<Motion abnormalImmuneBreak="1" />
+			<SpecialAbility>
+				<v type="nddRate" value="-400" />
+			</SpecialAbility>
+			<UI icon="./Data/Resource/Image/skill/icon/DefenseDown.png" iconOnOff="0" />
 		</level>
 	</additional>
-	<additional id="52100002">
-		<level>
-			<BasicProperty level="1" group="1" buffType="2" buffSubType="3" durationTick="1000" resetCondition="1" ignoreReduceTimeCondition="1" />
-			<MotionProperty stun="2" abnormalImmuneBreak="1" />
+	<additional id="52100002" mainType="3" isDebuff="1">
+		<level level="1">
+			<Basic group="1" durationTick="1000" resetCondition="1" ignoreReduceTimeCondition="1" />
+			<Motion stun="2" abnormalImmuneBreak="1" />
 		</level>
 	</additional>
-	<additional id="52100003">
-		<level>
-			<BasicProperty level="1" buffType="2" buffSubType="1" durationTick="3000" />
-			<MotionProperty keepEffect="Additional/Slow/Eff_Additional_Slow_Keep.xml" stopEffect="Additional/Slow/Eff_Additional_Slow_Stop.xml" abnormalImmuneBreak="1" />
-			<CancelEffectProperty cancelEffectCodes="50000171" />
-			<Stat>
-				<v type="msp" value="-0.45" isRate="1" />
-				<v type="rmsp" value="-0.45" isRate="1" />
-			</Stat>
-			<UIProperty icon="./Data/Resource/Image/skill/icon/SpeedDown.png" />
+	<additional id="52100003" mainType="1" isDebuff="1">
+		<level level="1">
+			<Basic durationTick="3000" />
+			<Motion keepEffect="Additional/Slow/Eff_Additional_Slow_Keep.xml" stopEffect="Additional/Slow/Eff_Additional_Slow_Stop.xml" abnormalImmuneBreak="1" />
+			<CancelEffect cancelEffectCodes="50000171" />
+			<SpecialAbility>
+				<v type="mspRate" value="-450" />
+				<v type="rmspRate" value="-450" />
+			</SpecialAbility>
+			<UI icon="./Data/Resource/Image/skill/icon/SpeedDown.png" />
 		</level>
 	</additional>
 </ms2>

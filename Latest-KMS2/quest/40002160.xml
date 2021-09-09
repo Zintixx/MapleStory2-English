@@ -1,24 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- 파싱해서 사용하는 데이터이니 직접 수정하지 마세요 -->
 <ms2>
-	<environment feature="KarkarIsland" locale="KR">
-		<quest>
-			<basic questID="40002160" questType="1" chapterID="3070" standardLevel="50" useNavi="FALSE" />
-			<require level="50" quest="40002150" />
-			<start npc="11001386" />
-			<complete npc="11001382" />
-			<acceptReward>
-				<essentialItem code="30000510" rank="1" count="1" />
-			</acceptReward>
-			<completeReward exp="1113300" money="7000">
-				<essentialItem code="20000026" rank="1" count="2" />
-				<globalEssentialItem code="20000026" rank="1" count="2" />
-				<globalEssentialJobItem code="0" rank="0" count="0" />
-			</completeReward>
-			<progressMap progressMap="02010036" />
-			<condition type="item_exist" code="30000510" value="1" />
-		</quest>
-	</environment>
 	<environment feature="KarkarIsland">
 		<quest>
 			<basic questID="40002160" questType="1" chapterID="3070" standardLevel="50" useNavi="FALSE" />
@@ -29,9 +11,8 @@
 				<essentialItem code="30000510" rank="1" count="1" />
 			</acceptReward>
 			<completeReward exp="1113300" money="7000">
-				<essentialItem code="20000024" rank="1" count="5" />
+				<essentialItem code="20000026" rank="1" count="2" />
 				<globalEssentialItem code="20000024" rank="1" count="5" />
-				<globalEssentialJobItem code="0" rank="0" count="0" />
 			</completeReward>
 			<progressMap progressMap="02010036" />
 			<condition type="item_exist" code="30000510" value="1" />

@@ -41162,7 +41162,7 @@
 		</environment>
 	</npc>
 	<npc id="11004817">
-		<environment feature="EpicApocalypse01" friendly="2" npcAttackGroup="2" npcDefenseGroup="1" hitImmune="1" abnormalImmune="1" level="75" class="5" carePathToEnemy="1" npcSoundStart="ko/Npc/03000861" gender="0" illust="11004817" portrait="./Data/Resource/Image/Portrait/Npc/11001522_M_ExpeditionSoldier3_P.png">
+		<environment feature="EpicApocalypse03" friendly="2" npcAttackGroup="2" npcDefenseGroup="1" nametag="1" hitImmune="1" abnormalImmune="1" level="75" class="5" carePathToEnemy="1" npcSoundStart="ko/Npc/03000861" gender="0" illust="11004817" portrait="./Data/Resource/Image/Portrait/Npc/11001522_M_ExpeditionSoldier3_P.png">
 			<model kfm="11001522_M_ExpeditionSoldier3" shadowScale="160" rotationSpeed="540" walkSpeed="120" runSpeed="320" />
 			<stat hp="29" msp="100" atp="8" evp="4" ndd="29" pap="100" map="100" />
 			<distance avoid="50" />
@@ -41583,6 +41583,41 @@
 			<distance avoid="100" />
 			<capsule radius="20" height="150" ignore="1" />
 			<normal action="Idle_A" prob="10000" />
+		</environment>
+	</npc>
+	<npc id="11004863">
+		<environment feature="EpicApocalypse03" friendly="2" npcAttackGroup="2" npcDefenseGroup="1" nametag="1" minimap="0" hitImmune="1" abnormalImmune="1" level="75" class="5" carePathToEnemy="1" gender="2" illust="11004727" portrait="./Data/Resource/Image/Portrait/Npc/11004727_M_Darkmatter_P.png" lookAtMyPCWhenTalking="0" useTalkMotion="0">
+			<model kfm="11004727_M_Darkmatter" shadowScale="100" rotationSpeed="540" walkSpeed="120" runSpeed="320" />
+			<stat hp="29" msp="100" atp="8" evp="4" ndd="29" pap="100" map="100" />
+			<distance avoid="100" />
+			<capsule radius="40" height="150" ignore="1" />
+			<normal action="Idle_A,Bore_A,Bore_B" prob="8000,1000,1000" movearea="150" />
+		</environment>
+	</npc>
+	<npc id="11004864">
+		<environment feature="EpicApocalypse03" npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="boss" defenceMaterial="4" hitImmune="99" abnormalImmune="99" level="70" class="6" rankIcon="a" propertyTags="keep_battle,no_die,always_full_hp" raceString="devil" gender="0" portrait="./Data/Resource/Image/Portrait/Mob/44110001_B_BlueLuke01_P.png" damagedVibrateDuration="0.5" damagedVibrateAmp="1" checkCameraDistance="15000" extraCameraDistance="450" bossSoundDistance="100" bossSoundEndDistance="100" customExp="0" lookAtMyPCWhenTalking="0">
+			<model kfm="23000400_B_BlueLuke" scale="1.5" shadowScale="640" rotationSpeed="360" />
+			<stat hp="3609272793877" asp="100" msp="100" atp="120" evp="78" cap="72" cad="500" car="70" ndd="1285" pap="270997509" map="270997509" par="249" mar="249" />
+			<distance avoid="400" sight="99999" sightHeightUP="99999" sightHeightDown="99999" customLastSightRadius="99999" customLastSightHeightUp="99999" customLastSightHeightDown="99999" />
+			<skill ids="50003001,50003002,50003003,50003010,50003015,50003020,50003030,50003035,50003040,50003045,50003070,50003071,50003072,50003000,50003085,50003080,50003051,50003052,50003053,50003054,50003055,50003056,50003057,50003058,50003059,50003061,50003062,50003063,50003064,50003065,50003066,50003067,50003068,50003069,50003090,50003031,50003036,50003001,50003001,50003002,50003002,50003003,50003003,50003091,50003092,50003000,50003000,50003001,50003002,50003003,50003075" levels="1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,3,2,3,2,3,1,1,2,3,4,4,4,1" />
+			<additionalEffect codes="40600052" levels="1" />
+			<combat canShowHideTarget="true" />
+			<collision shape="box" width="190" height="250" depth="190" />
+			<corpse width="650" height="150" depth="250" added="120" offsetNametag="-200" rotation="345" />
+			<capsule radius="180" height="450" />
+			<dead time="10" defaultaction="Dead_A" upaction="Dead_A" extendRoomTime="60000" />
+			<normal action="Idle_A" prob="10000" />
+			<dropiteminfo dropHeight="300" dropDistanceBase="300" dropDistanceRandom="20" globalDropBoxId="74" globalDeadDropBoxId="1011" />
+			<aiInfo path="BossDungeon/DungeonOS01/AI_Blueluke_Dummy.xml" summonNpcIDs="23000410,23000420,23000430,23000440" />
+		</environment>
+	</npc>
+	<npc id="11004865">
+		<environment feature="EpicApocalypse03" friendly="2" npcAttackGroup="2" npcDefenseGroup="1" nametag="1" minimap="0" hitImmune="1" abnormalImmune="1" level="75" class="5" carePathToEnemy="1" gender="2" illust="11004727" portrait="./Data/Resource/Image/Portrait/Npc/11004727_M_Darkmatter_P.png" lookAtMyPCWhenTalking="0" useTalkMotion="0">
+			<model kfm="11004727_M_Darkmatter" shadowScale="100" rotationSpeed="540" walkSpeed="120" runSpeed="320" />
+			<stat hp="29" msp="100" atp="8" evp="4" ndd="29" pap="100" map="100" />
+			<distance avoid="100" />
+			<capsule radius="40" height="150" ignore="1" />
+			<normal action="Idle_A,Bore_A,Bore_B" prob="8000,1000,1000" movearea="150" />
 		</environment>
 	</npc>
 </ms2>

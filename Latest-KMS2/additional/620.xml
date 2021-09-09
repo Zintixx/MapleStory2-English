@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ms2>
-	<additional id="62000001">
-		<level>
-			<BasicProperty level="1" buffSubType="1" durationTick="20000" />
-			<MotionProperty abnormalImmuneBreak="1" />
-			<DefensiveProperty invincible="2" />
+	<additional id="62000001" mainType="1">
+		<level level="1">
+			<Basic durationTick="20000" />
+			<Motion abnormalImmuneBreak="1" />
+			<Defensive invincible="2" />
 		</level>
 	</additional>
-	<additional id="62000002">
-		<level>
-			<BasicProperty level="1" buffType="2" buffSubType="1" durationTick="1000" />
-			<MotionProperty abnormalImmuneBreak="1" />
-			<CancelEffectProperty cancelEffectCodes="62000001" />
+	<additional id="62000002" mainType="1" isDebuff="1">
+		<level level="1">
+			<Basic durationTick="1000" />
+			<Motion abnormalImmuneBreak="1" />
+			<CancelEffect cancelEffectCodes="62000001" />
 		</level>
 	</additional>
-	<additional id="62000003">
-		<level>
-			<BasicProperty level="1" buffSubType="1" durationTick="7199" />
-			<MotionProperty keepEffect="Additional/Offense/Eff_Additional_OffenseDownDebuff_Keep.xml" abnormalImmuneBreak="1" />
-			<DefensiveProperty invincible="2" />
+	<additional id="62000003" mainType="1">
+		<level level="1">
+			<Basic durationTick="7199" />
+			<Motion keepEffect="Additional/Offense/Eff_Additional_OffenseDownDebuff_Keep.xml" abnormalImmuneBreak="1" />
+			<Defensive invincible="2" />
 		</level>
 	</additional>
 </ms2>

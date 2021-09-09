@@ -1,26 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ms2>
-	<additional id="52200001">
-		<level stringParam="25">
-			<BasicProperty level="1" buffSubType="1" />
-			<MotionProperty IgnoreOptimalHideStartEffect="1" abnormalImmuneBreak="1" scale="0.2" />
-			<Stat>
-				<v type="pap" value="0.25" isRate="1" />
-				<v type="map" value="0.25" isRate="1" />
-			</Stat>
-			<UIProperty icon="./Data/Resource/Image/skill/icon/10200131_buff.png" />
+	<additional id="52200001" mainType="1">
+		<level level="1" stringParam="25">
+			<Motion IgnoreOptimalHideStartEffect="1" abnormalImmuneBreak="1" scale="0.2" />
+			<SpecialAbility>
+				<v type="papRate" value="250" />
+				<v type="mapRate" value="250" />
+			</SpecialAbility>
+			<UI icon="./Data/Resource/Image/skill/icon/10200131_buff.png" />
 		</level>
 	</additional>
-	<additional id="52200002">
-		<level>
-			<BasicProperty level="1" group="1" buffType="2" buffSubType="3" durationTick="1000" resetCondition="1" ignoreReduceTimeCondition="1" />
-			<MotionProperty stun="2" abnormalImmuneBreak="1" />
+	<additional id="52200002" mainType="3" isDebuff="1">
+		<level level="1">
+			<Basic group="1" durationTick="1000" resetCondition="1" ignoreReduceTimeCondition="1" />
+			<Motion stun="2" abnormalImmuneBreak="1" />
 		</level>
 	</additional>
-	<additional id="52200003">
-		<level>
-			<BasicProperty level="1" group="1" buffType="2" buffSubType="1" durationTick="2000" resetCondition="1" />
-			<MotionProperty stun="8" abnormalImmuneBreak="1" />
+	<additional id="52200003" mainType="1" isDebuff="1">
+		<level level="1">
+			<Basic group="1" durationTick="2000" resetCondition="1" />
+			<Motion stun="8" abnormalImmuneBreak="1" />
 		</level>
 	</additional>
 </ms2>

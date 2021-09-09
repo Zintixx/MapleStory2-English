@@ -1,31 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ms2>
-	<additional id="40106011">
-		<level stringParam="30">
-			<BasicProperty level="1" buffType="2" durationTick="5000" />
-			<MotionProperty keepEffect="NPC/Skill/Cube3x3/Eff_Cube3x3Black_Attack_01_A_Keep.xml" abnormalImmuneBreak="1" />
-			<Stat>
-				<v type="msp" value="-0.3" isRate="1" />
-				<v type="rmsp" value="-0.3" isRate="1" />
-			</Stat>
-			<UIProperty icon="./Data/Resource/Image/skill/icon/SpeedDown.png" />
+	<additional id="40106011" isDebuff="1">
+		<level level="1" stringParam="30">
+			<Basic durationTick="5000" />
+			<Motion keepEffect="NPC/Skill/Cube3x3/Eff_Cube3x3Black_Attack_01_A_Keep.xml" abnormalImmuneBreak="1" />
+			<SpecialAbility>
+				<v type="mspRate" value="-300" />
+				<v type="rmspRate" value="-300" />
+			</SpecialAbility>
+			<UI icon="./Data/Resource/Image/skill/icon/SpeedDown.png" />
 		</level>
 	</additional>
-	<additional id="40196002">
-		<level stringParam="30">
-			<BasicProperty level="1" buffType="2" buffSubType="1" durationTick="1100" />
-			<MotionProperty abnormalImmuneBreak="1" />
-			<Stat>
-				<v type="atp" value="-0.3" isRate="1" />
-			</Stat>
-			<UIProperty icon="./Data/Resource/Image/skill/icon/SpDown.png" isHideCooltime="1" />
+	<additional id="40196002" mainType="1" isDebuff="1">
+		<level level="1" stringParam="30">
+			<Basic durationTick="1100" />
+			<Motion abnormalImmuneBreak="1" />
+			<SpecialAbility>
+				<v type="atpRate" value="-300" />
+			</SpecialAbility>
+			<UI icon="./Data/Resource/Image/skill/icon/SpDown.png" isHideCooltime="1" />
 		</level>
 	</additional>
-	<additional id="40199011">
-		<level>
-			<BasicProperty level="1" buffSubType="1" durationTick="150" intervalTick="150" />
-			<MotionProperty abnormalImmuneBreak="1" />
-			<splashSkill level="1" skillID="40199012" interval="500" immediateActive="1" fireCount="10" useDirection="1" />
+	<additional id="40199011" mainType="1">
+		<level level="1">
+			<Basic durationTick="150" intervalTick="150" />
+			<Motion abnormalImmuneBreak="1" />
+			<Skill level="1" skillID="40199012" interval="500" immediateActive="1" fireCount="10" useDirection="1" />
 		</level>
 	</additional>
 </ms2>

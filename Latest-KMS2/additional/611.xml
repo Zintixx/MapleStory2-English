@@ -1,615 +1,495 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ms2>
 	<additional id="61100010">
-		<level>
-			<BasicProperty level="1" keepCondition="99" />
-			<conditionSkill level="1" skillID="61100011" skillTarget="4">
-				<beginCondition probability="0.036">
-					<owner eventCondition="6" />
-				</beginCondition>
-			</conditionSkill>
+		<level level="1">
+			<Basic keepCondition="99" />
+			<Additional level="1" skillID="61100011" skillTarget="4" probability="0.036" ownerEvent="6" />
 		</level>
 	</additional>
 	<additional id="61100011">
-		<level stringParam="5">
-			<BasicProperty level="1" durationTick="5000" />
-			<MotionProperty abnormalImmuneBreak="5" />
-			<Stat>
+		<level level="1" stringParam="5">
+			<Basic durationTick="5000" />
+			<Motion abnormalImmuneBreak="5" />
+			<SpecialAbility>
 				<v type="msp" value="5" />
-			</Stat>
-			<UIProperty icon="./Data/Resource/Image/Item/icon/61100010.png" />
+			</SpecialAbility>
+			<UI icon="./Data/Resource/Image/Item/icon/61100010.png" />
 		</level>
 	</additional>
-	<additional id="61100020">
-		<level>
-			<BasicProperty level="1" buffType="2" keepCondition="99" />
-			<UIProperty icon="./Data/Resource/Image/Item/icon/61100020.png" />
-			<conditionSkill level="1" skillID="61100021" skillTarget="2">
-				<beginCondition probability="0.25">
-					<owner eventCondition="6" />
-				</beginCondition>
-			</conditionSkill>
+	<additional id="61100020" isDebuff="1">
+		<level level="1">
+			<Basic keepCondition="99" />
+			<UI icon="./Data/Resource/Image/Item/icon/61100020.png" />
+			<Additional level="1" skillID="61100021" skillTarget="2" probability="0.25" ownerEvent="6" />
 		</level>
 	</additional>
-	<additional id="61100021">
-		<level stringParam="2">
-			<BasicProperty level="1" buffType="2" durationTick="5000" />
-			<MotionProperty abnormalImmuneBreak="5" />
-			<Stat>
-				<v type="pap" value="-0.02" isRate="1" />
-				<v type="map" value="-0.02" isRate="1" />
-			</Stat>
-			<UIProperty icon="./Data/Resource/Image/Item/icon/61100020.png" />
+	<additional id="61100021" isDebuff="1">
+		<level level="1" stringParam="2">
+			<Basic durationTick="5000" />
+			<Motion abnormalImmuneBreak="5" />
+			<SpecialAbility>
+				<v type="papRate" value="-20" />
+				<v type="mapRate" value="-20" />
+			</SpecialAbility>
+			<UI icon="./Data/Resource/Image/Item/icon/61100020.png" />
 		</level>
 	</additional>
 	<additional id="61100030">
-		<level>
-			<BasicProperty level="1" keepCondition="99" />
-			<Stat>
+		<level level="1">
+			<Basic keepCondition="99" />
+			<SpecialAbility>
 				<v type="rmsp" value="5" />
-			</Stat>
-			<UIProperty icon="./Data/Resource/Image/Portrait/Mob/61000030_BarkhantBlue_P.png" iconOnOff="0" />
+			</SpecialAbility>
+			<UI icon="./Data/Resource/Image/Portrait/Mob/61000030_BarkhantBlue_P.png" iconOnOff="0" />
 		</level>
 	</additional>
 	<additional id="61100040">
-		<level>
-			<BasicProperty level="1" keepCondition="99" />
-			<conditionSkill level="1" skillID="61100041" skillTarget="4">
-				<beginCondition probability="0.3">
-					<owner eventCondition="6" />
-				</beginCondition>
-			</conditionSkill>
+		<level level="1">
+			<Basic keepCondition="99" />
+			<Additional level="1" skillID="61100041" skillTarget="4" probability="0.3" ownerEvent="6" />
 		</level>
 	</additional>
-	<additional id="61100041">
-		<level>
-			<BasicProperty level="1" buffSubType="4" durationTick="100" intervalTick="100" />
-			<MotionProperty abnormalImmuneBreak="5" />
-			<RecoveryProperty hpValue="100" disableCriticalRecovery="1" />
-			<UIProperty icon="./Data/Resource/Image/Item/icon/61100040.png" iconOnOff="0" />
+	<additional id="61100041" mainType="4">
+		<level level="1">
+			<Basic durationTick="100" intervalTick="100" />
+			<Motion abnormalImmuneBreak="5" />
+			<Recovery hpValue="100" disableCriticalRecovery="1" />
+			<UI icon="./Data/Resource/Image/Item/icon/61100040.png" iconOnOff="0" />
 		</level>
 	</additional>
 	<additional id="61100050">
-		<level>
-			<BasicProperty level="1" keepCondition="99" />
-			<conditionSkill level="1" skillID="61100051" skillTarget="4">
-				<beginCondition probability="0.15">
-					<owner eventCondition="6" />
-				</beginCondition>
-			</conditionSkill>
+		<level level="1">
+			<Basic keepCondition="99" />
+			<Additional level="1" skillID="61100051" skillTarget="4" probability="0.15" ownerEvent="6" />
 		</level>
 	</additional>
 	<additional id="61100051">
-		<level>
-			<BasicProperty level="1" durationTick="100" intervalTick="100" />
-			<MotionProperty abnormalImmuneBreak="5" />
-			<RecoveryProperty spValue="5" />
-			<UIProperty icon="./Data/Resource/Image/Item/icon/61100050.png" iconOnOff="0" />
+		<level level="1">
+			<Basic durationTick="100" intervalTick="100" />
+			<Motion abnormalImmuneBreak="5" />
+			<Recovery spValue="5" />
+			<UI icon="./Data/Resource/Image/Item/icon/61100050.png" iconOnOff="0" />
 		</level>
 	</additional>
 	<additional id="61100060">
-		<level>
-			<BasicProperty level="1" keepCondition="99" />
-			<conditionSkill level="1" skillID="61100061" skillTarget="4">
-				<beginCondition probability="0.06">
-					<owner eventCondition="6" />
-				</beginCondition>
-			</conditionSkill>
+		<level level="1">
+			<Basic keepCondition="99" />
+			<Additional level="1" skillID="61100061" skillTarget="4" probability="0.06" ownerEvent="6" />
 		</level>
 	</additional>
 	<additional id="61100061">
-		<level>
-			<BasicProperty level="1" durationTick="100" intervalTick="100" />
-			<MotionProperty abnormalImmuneBreak="5" />
-			<RecoveryProperty epValue="40" />
-			<UIProperty icon="./Data/Resource/Image/Item/icon/61100060.png" iconOnOff="0" />
+		<level level="1">
+			<Basic durationTick="100" intervalTick="100" />
+			<Motion abnormalImmuneBreak="5" />
+			<Recovery epValue="40" />
+			<UI icon="./Data/Resource/Image/Item/icon/61100060.png" iconOnOff="0" />
 		</level>
 	</additional>
 	<additional id="61100090">
-		<level stringParam="90">
-			<BasicProperty level="1" keepCondition="99" />
-			<conditionSkill level="1" skillID="61100091" skillTarget="2">
-				<beginCondition probability="0.1">
-					<owner eventCondition="6" />
-				</beginCondition>
-			</conditionSkill>
+		<level level="1" stringParam="90">
+			<Basic keepCondition="99" />
+			<Additional level="1" skillID="61100091" skillTarget="2" probability="0.1" ownerEvent="6" />
 		</level>
 	</additional>
-	<additional id="61100091">
-		<level stringParam="2">
-			<BasicProperty level="1" buffType="2" durationTick="5000" />
-			<MotionProperty abnormalImmuneBreak="5" />
-			<Stat>
+	<additional id="61100091" isDebuff="1">
+		<level level="1" stringParam="2">
+			<Basic durationTick="5000" />
+			<Motion abnormalImmuneBreak="5" />
+			<SpecialAbility>
 				<v type="cap" value="-90" />
-			</Stat>
-			<UIProperty icon="./Data/Resource/Image/Item/icon/61100090.png" />
+			</SpecialAbility>
+			<UI icon="./Data/Resource/Image/Item/icon/61100090.png" />
 		</level>
 	</additional>
 	<additional id="61100100">
-		<level>
-			<BasicProperty level="1" durationTick="5000" invokeEvent="1" />
-			<MotionProperty keepEffect="Pet/Skill/Eff_Pet_Zakum02_Shield_Keep_01.xml" stopEffect="Pet/Skill/Eff_Pet_Zakum02_Shield_Stop_01.xml" invokeEffect="Pet/Skill/Eff_Pet_Zakum02_Shield_Invoke_01.xml" abnormalImmuneBreak="5" />
+		<level level="1">
+			<Basic durationTick="5000" invokeEvent="1" />
+			<Motion keepEffect="Pet/Skill/Eff_Pet_Zakum02_Shield_Keep_01.xml" stopEffect="Pet/Skill/Eff_Pet_Zakum02_Shield_Stop_01.xml" invokeEffect="Pet/Skill/Eff_Pet_Zakum02_Shield_Invoke_01.xml" abnormalImmuneBreak="5" />
 		</level>
 	</additional>
 	<additional id="61100110">
-		<level>
-			<BasicProperty level="1" keepCondition="99" />
-			<conditionSkill level="1" skillID="61100111" skillTarget="2">
-				<beginCondition>
-					<owner eventCondition="6" />
-				</beginCondition>
-			</conditionSkill>
+		<level level="1">
+			<Basic keepCondition="99" />
+			<Additional level="1" skillID="61100111" skillTarget="2" ownerEvent="6" />
 		</level>
 	</additional>
-	<additional id="61100111">
-		<level stringParam="0.3,10">
-			<BasicProperty level="1" buffType="2" durationTick="4000" resetCondition="2" maxBuffCount="10" />
-			<MotionProperty abnormalImmuneBreak="5" />
-			<Stat>
-				<v type="ndd" value="-0.003" isRate="1" />
-			</Stat>
-			<UIProperty icon="./Data/Resource/Image/Item/icon/61100110.png" />
+	<additional id="61100111" isDebuff="1">
+		<level level="1" stringParam="0.3,10">
+			<Basic durationTick="4000" resetCondition="2" maxBuffCount="10" />
+			<Motion abnormalImmuneBreak="5" />
+			<SpecialAbility>
+				<v type="nddRate" value="-3" />
+			</SpecialAbility>
+			<UI icon="./Data/Resource/Image/Item/icon/61100110.png" />
 		</level>
 	</additional>
 	<additional id="61100120">
-		<level>
-			<beginCondition applyPvPZoneType="1" />
-			<BasicProperty level="1" intervalTick="300" delayTick="60000" keepCondition="99" deadKeepEffect="1" />
-			<conditionSkill level="1" skillID="61100121" skillTarget="1" activeByIntervalTick="1">
-				<beginCondition>
-					<owner>
-						<compareStat hp="0.3" func="LessEquals" />
-					</owner>
-				</beginCondition>
-			</conditionSkill>
+		<level level="1">
+			<Basic intervalTick="300" delayTick="60000" keepCondition="99" deadKeepEffect="1" />
+			<Condition applyPvPZoneType="1" />
+			<Additional level="1" skillID="61100121" skillTarget="1" activeByIntervalTick="1" ownerHpLess="0.3" />
 		</level>
 	</additional>
 	<additional id="61100121">
-		<level stringParam="30,1200">
-			<beginCondition applyPvPZoneType="1">
-				<owner hasBuffID="61100120" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="1" hasBuffCountCompare="Equals" />
-			</beginCondition>
-			<BasicProperty level="1" durationTick="6000" invokeEvent="1" coolDownTime="60" />
-			<MotionProperty keepEffect="Pet/Skill/Eff_Pet_Zakum02_Shield_Keep_01.xml" stopEffect="Pet/Skill/Eff_Pet_Zakum02_Shield_Stop_01.xml" invokeEffect="Pet/Skill/Eff_Pet_Zakum02_Shield_Invoke_01.xml" abnormalImmuneBreak="5" />
-			<UIProperty icon="./Data/Resource/Image/Item/icon/61100120.png" />
-			<ShieldProperty hpValue="1200" />
+		<level level="1" stringParam="30,1200">
+			<Basic durationTick="6000" invokeEvent="1" coolDownTime="60" />
+			<Condition applyPvPZoneType="1" hasBuffID="61100120" hasBuffCount="1" />
+			<Motion keepEffect="Pet/Skill/Eff_Pet_Zakum02_Shield_Keep_01.xml" stopEffect="Pet/Skill/Eff_Pet_Zakum02_Shield_Stop_01.xml" invokeEffect="Pet/Skill/Eff_Pet_Zakum02_Shield_Invoke_01.xml" abnormalImmuneBreak="5" />
+			<UI icon="./Data/Resource/Image/Item/icon/61100120.png" />
+			<Shield hpValue="1200" />
 		</level>
 	</additional>
 	<additional id="61100130">
-		<level>
-			<BasicProperty level="1" keepCondition="99" />
-			<conditionSkill level="1" skillID="61100131" skillTarget="2">
-				<beginCondition probability="0.075">
-					<owner eventCondition="6" />
-				</beginCondition>
-			</conditionSkill>
+		<level level="1">
+			<Basic keepCondition="99" />
+			<Additional level="1" skillID="61100131" skillTarget="2" probability="0.075" ownerEvent="6" />
 		</level>
 	</additional>
-	<additional id="61100131">
-		<level>
-			<BasicProperty level="1" buffType="2" durationTick="5000" intervalTick="5000" logoutClearEffect="1" />
-			<MotionProperty abnormalImmuneBreak="5" />
-			<splashSkill level="1" skillID="61100132" interval="2500" />
+	<additional id="61100131" isDebuff="1">
+		<level level="1">
+			<Basic durationTick="5000" intervalTick="5000" logoutClearEffect="1" />
+			<Motion abnormalImmuneBreak="5" />
+			<Skill level="1" skillID="61100132" interval="2500" />
 		</level>
 	</additional>
-	<additional id="61100132">
-		<level>
-			<BasicProperty level="1" buffType="2" durationTick="1000" />
-			<MotionProperty stun="1" abnormalImmuneBreak="5" />
-			<UIProperty icon="./Data/Resource/Image/skill/icon/Stun.png" />
+	<additional id="61100132" isDebuff="1">
+		<level level="1">
+			<Basic durationTick="1000" />
+			<Motion stun="1" abnormalImmuneBreak="5" />
+			<UI icon="./Data/Resource/Image/skill/icon/Stun.png" />
 		</level>
 	</additional>
 	<additional id="61100140">
-		<level>
-			<beginCondition applyPvPZoneType="1" />
-			<BasicProperty level="1" keepCondition="99" />
-			<conditionSkill level="1" skillID="61100141" skillTarget="1">
-				<beginCondition>
-					<owner eventCondition="19" />
-				</beginCondition>
-			</conditionSkill>
+		<level level="1">
+			<Basic keepCondition="99" />
+			<Condition applyPvPZoneType="1" />
+			<Additional level="1" skillID="61100141" skillTarget="1" ownerEvent="19" />
 		</level>
 	</additional>
-	<additional id="61100141">
-		<level stringParam="4">
-			<beginCondition applyPvPZoneType="1">
-				<owner hasBuffID="61100140" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="1" hasBuffCountCompare="Equals" />
-			</beginCondition>
-			<BasicProperty level="1" buffSubType="2" durationTick="5000" coolDownTime="1" />
-			<MotionProperty abnormalImmuneBreak="5" />
-			<Stat>
+	<additional id="61100141" mainType="2">
+		<level level="1" stringParam="4">
+			<Basic durationTick="5000" coolDownTime="1" />
+			<Condition applyPvPZoneType="1" hasBuffID="61100140" hasBuffCount="1" />
+			<Motion abnormalImmuneBreak="5" />
+			<SpecialAbility>
 				<v type="asp" value="4" />
-			</Stat>
-			<UIProperty icon="./Data/Resource/Image/Item/icon/62000011.png" />
+			</SpecialAbility>
+			<UI icon="./Data/Resource/Image/Item/icon/62000011.png" />
 		</level>
 	</additional>
 	<additional id="61100150">
-		<level>
-			<BasicProperty level="1" keepCondition="99" />
-			<conditionSkill level="1" skillID="61100151" skillTarget="4">
-				<beginCondition probability="0.1">
-					<owner eventCondition="6" />
-				</beginCondition>
-			</conditionSkill>
+		<level level="1">
+			<Basic keepCondition="99" />
+			<Additional level="1" skillID="61100151" skillTarget="4" probability="0.1" ownerEvent="6" />
 		</level>
 	</additional>
 	<additional id="61100151">
-		<level>
-			<beginCondition>
-				<owner hasBuffID="61100154" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="1" hasBuffCountCompare="Equals" />
-			</beginCondition>
-			<BasicProperty level="1" durationTick="100" intervalTick="100" coolDownTime="10" />
-			<MotionProperty abnormalImmuneBreak="5" />
-			<conditionSkill randomCast="1" level="1,1" skillID="61100152,61100153" skillTarget="1" activeByIntervalTick="1" />
+		<level level="1">
+			<Basic durationTick="100" intervalTick="100" coolDownTime="10" />
+			<Condition hasBuffID="61100154" hasBuffCount="1" />
+			<Motion abnormalImmuneBreak="5" />
+			<Additional randomCast="1" level="1,1" skillID="61100152,61100153" skillTarget="1" activeByIntervalTick="1" />
 		</level>
 	</additional>
-	<additional id="61100152">
-		<level stringParam="4">
-			<beginCondition>
-				<owner hasBuffID="61100154" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="1" hasBuffCountCompare="Equals" />
-			</beginCondition>
-			<BasicProperty level="1" group="61100152" buffSubType="2" durationTick="10000" />
-			<MotionProperty alphaBlending="0.5" abnormalImmuneBreak="5" />
-			<Stat>
-				<v type="ndd" value="0.04" isRate="1" />
-			</Stat>
-			<UIProperty icon="./Data/Resource/Image/Item/icon/62000013.png" />
+	<additional id="61100152" mainType="2">
+		<level level="1" stringParam="4">
+			<Basic group="61100152" durationTick="10000" />
+			<Condition hasBuffID="61100154" hasBuffCount="1" />
+			<Motion alphaBlending="0.5" abnormalImmuneBreak="5" />
+			<SpecialAbility>
+				<v type="nddRate" value="40" />
+			</SpecialAbility>
+			<UI icon="./Data/Resource/Image/Item/icon/62000013.png" />
 		</level>
 	</additional>
-	<additional id="61100153">
-		<level stringParam="4">
-			<beginCondition>
-				<owner hasBuffID="61100154" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="1" hasBuffCountCompare="Equals" />
-			</beginCondition>
-			<BasicProperty level="1" group="61100152" buffSubType="2" durationTick="10000" />
-			<MotionProperty abnormalImmuneBreak="5" scale="0.2" />
-			<Stat>
-				<v type="pap" value="0.04" isRate="1" />
-				<v type="map" value="0.04" isRate="1" />
-			</Stat>
-			<UIProperty icon="./Data/Resource/Image/Item/icon/62000013.png" />
+	<additional id="61100153" mainType="2">
+		<level level="1" stringParam="4">
+			<Basic group="61100152" durationTick="10000" />
+			<Condition hasBuffID="61100154" hasBuffCount="1" />
+			<Motion abnormalImmuneBreak="5" scale="0.2" />
+			<SpecialAbility>
+				<v type="papRate" value="40" />
+				<v type="mapRate" value="40" />
+			</SpecialAbility>
+			<UI icon="./Data/Resource/Image/Item/icon/62000013.png" />
 		</level>
 	</additional>
 	<additional id="61100154">
-		<level>
-			<BasicProperty level="1" delayTick="10000" keepCondition="99" deadKeepEffect="1" />
+		<level level="1">
+			<Basic delayTick="10000" keepCondition="99" deadKeepEffect="1" />
 		</level>
 	</additional>
 	<additional id="61110160">
-		<level>
-			<BasicProperty level="1" keepCondition="99" />
-			<conditionSkill level="1" skillID="61110161" skillTarget="4">
-				<beginCondition probability="0.175">
-					<owner eventCondition="6" />
-				</beginCondition>
-			</conditionSkill>
+		<level level="1">
+			<Basic keepCondition="99" />
+			<Additional level="1" skillID="61110161" skillTarget="4" probability="0.175" ownerEvent="6" />
 		</level>
 	</additional>
-	<additional id="61110161">
-		<level>
-			<BasicProperty level="1" buffSubType="4" durationTick="100" intervalTick="100" />
-			<MotionProperty abnormalImmuneBreak="5" />
-			<RecoveryProperty hpValue="100" disableCriticalRecovery="1" />
-			<UIProperty icon="./Data/Resource/Image/Item/icon/61100132.png" iconOnOff="0" />
+	<additional id="61110161" mainType="4">
+		<level level="1">
+			<Basic durationTick="100" intervalTick="100" />
+			<Motion abnormalImmuneBreak="5" />
+			<Recovery hpValue="100" disableCriticalRecovery="1" />
+			<UI icon="./Data/Resource/Image/Item/icon/61100132.png" iconOnOff="0" />
 		</level>
 	</additional>
 	<additional id="61110170">
-		<level>
-			<BasicProperty level="1" keepCondition="99" />
-			<conditionSkill level="1" skillID="61110171" skillTarget="2">
-				<beginCondition probability="0.1">
-					<owner eventCondition="6" />
-				</beginCondition>
-			</conditionSkill>
+		<level level="1">
+			<Basic keepCondition="99" />
+			<Additional level="1" skillID="61110171" skillTarget="2" probability="0.1" ownerEvent="6" />
 		</level>
 	</additional>
-	<additional id="61110171">
-		<level stringParam="5">
-			<BasicProperty level="1" buffType="2" durationTick="5000" />
-			<MotionProperty abnormalImmuneBreak="5" />
-			<Stat>
-				<v type="msp" value="-0.05" isRate="1" />
-			</Stat>
-			<UIProperty icon="./Data/Resource/Image/Item/icon/61100133.png" />
+	<additional id="61110171" isDebuff="1">
+		<level level="1" stringParam="5">
+			<Basic durationTick="5000" />
+			<Motion abnormalImmuneBreak="5" />
+			<SpecialAbility>
+				<v type="mspRate" value="-50" />
+			</SpecialAbility>
+			<UI icon="./Data/Resource/Image/Item/icon/61100133.png" />
 		</level>
 	</additional>
 	<additional id="61110180">
-		<level>
-			<BasicProperty level="1" keepCondition="99" />
-			<conditionSkill level="1" skillID="61110181" skillTarget="2">
-				<beginCondition probability="0.043">
-					<owner eventCondition="6" />
-				</beginCondition>
-			</conditionSkill>
+		<level level="1">
+			<Basic keepCondition="99" />
+			<Additional level="1" skillID="61110181" skillTarget="2" probability="0.043" ownerEvent="6" />
 		</level>
 	</additional>
-	<additional id="61110181">
-		<level>
-			<BasicProperty level="1" group="1" buffType="2" buffSubType="2" buffCategory="1007" durationTick="3000" />
-			<MotionProperty keepEffect="Additional/Stun/Eff_Additional_Stun_Keep.xml" stopEffect="Additional/Stun/Eff_Additional_Stun_Stop.xml" stun="1" abnormalImmuneBreak="5" />
-			<UIProperty icon="./Data/Resource/Image/Item/icon/61100134.png" />
+	<additional id="61110181" mainType="2" isDebuff="1" category="1007">
+		<level level="1">
+			<Basic group="1" durationTick="3000" />
+			<Motion keepEffect="Additional/Stun/Eff_Additional_Stun_Keep.xml" stopEffect="Additional/Stun/Eff_Additional_Stun_Stop.xml" stun="1" abnormalImmuneBreak="5" />
+			<UI icon="./Data/Resource/Image/Item/icon/61100134.png" />
 		</level>
 	</additional>
 	<additional id="61110190">
-		<level>
-			<BasicProperty level="1" keepCondition="99" />
-			<Stat>
-				<v type="map" value="0.02" isRate="1" />
-			</Stat>
-			<conditionSkill level="1" skillID="61110191" skillTarget="4">
-				<beginCondition probability="0.1">
-					<owner eventCondition="6" />
-				</beginCondition>
-			</conditionSkill>
+		<level level="1">
+			<Basic keepCondition="99" />
+			<SpecialAbility>
+				<v type="mapRate" value="20" />
+			</SpecialAbility>
+			<Additional level="1" skillID="61110191" skillTarget="4" probability="0.1" ownerEvent="6" />
 		</level>
 	</additional>
 	<additional id="61110191">
-		<level stringParam="2">
-			<BasicProperty level="1" durationTick="10000" />
-			<MotionProperty abnormalImmuneBreak="5" />
-			<Stat>
-				<v type="pap" value="0.02" isRate="1" />
-				<v type="map" value="0.02" isRate="1" />
-			</Stat>
-			<UIProperty icon="./Data/Resource/Image/Item/icon/61100135.png" />
+		<level level="1" stringParam="2">
+			<Basic durationTick="10000" />
+			<Motion abnormalImmuneBreak="5" />
+			<SpecialAbility>
+				<v type="papRate" value="20" />
+				<v type="mapRate" value="20" />
+			</SpecialAbility>
+			<UI icon="./Data/Resource/Image/Item/icon/61100135.png" />
 		</level>
 	</additional>
 	<additional id="61110200">
-		<level>
-			<BasicProperty level="1" keepCondition="99" />
-			<conditionSkill level="1" skillID="61110201" skillTarget="4">
-				<beginCondition probability="0.105">
-					<owner eventCondition="6" />
-				</beginCondition>
-			</conditionSkill>
+		<level level="1">
+			<Basic keepCondition="99" />
+			<Additional level="1" skillID="61110201" skillTarget="4" probability="0.105" ownerEvent="6" />
 		</level>
 	</additional>
 	<additional id="61110201">
-		<level>
-			<BasicProperty level="1" durationTick="100" intervalTick="100" />
-			<MotionProperty abnormalImmuneBreak="5" />
-			<RecoveryProperty spValue="5" />
-			<UIProperty icon="./Data/Resource/Image/Item/icon/61100136.png" iconOnOff="0" />
+		<level level="1">
+			<Basic durationTick="100" intervalTick="100" />
+			<Motion abnormalImmuneBreak="5" />
+			<Recovery spValue="5" />
+			<UI icon="./Data/Resource/Image/Item/icon/61100136.png" iconOnOff="0" />
 		</level>
 	</additional>
 	<additional id="61110210">
-		<level>
-			<BasicProperty level="1" keepCondition="99" />
-			<conditionSkill level="1" skillID="61110211" skillTarget="2">
-				<beginCondition probability="0.1">
-					<owner eventCondition="6" />
-				</beginCondition>
-			</conditionSkill>
+		<level level="1">
+			<Basic keepCondition="99" />
+			<Additional level="1" skillID="61110211" skillTarget="2" probability="0.1" ownerEvent="6" />
 		</level>
 	</additional>
-	<additional id="61110211">
-		<level>
-			<BasicProperty level="1" buffType="2" buffSubType="2" durationTick="4000" intervalTick="1000" dotCondition="1" />
-			<MotionProperty keepEffect="Additional/Bleed/Eff_Additional_Bleed_Keep.xml" stopEffect="Additional/Bleed/Eff_Additional_Bleed_Stop.xml" abnormalImmuneBreak="5" />
-			<DotDamageProperty type="3" rate="1.57" element="7" soundMaterial="1" />
-			<UIProperty icon="./Data/Resource/Image/skill/icon/Bleed.png" />
+	<additional id="61110211" mainType="2" isDebuff="1">
+		<level level="1">
+			<Basic durationTick="4000" intervalTick="1000" dotCondition="1" />
+			<Motion keepEffect="Additional/Bleed/Eff_Additional_Bleed_Keep.xml" stopEffect="Additional/Bleed/Eff_Additional_Bleed_Stop.xml" abnormalImmuneBreak="5" />
+			<DotDamage type="3" rate="1.57" element="7" soundMaterial="1" />
+			<UI icon="./Data/Resource/Image/skill/icon/Bleed.png" />
 		</level>
 	</additional>
 	<additional id="61110220">
-		<level>
-			<BasicProperty level="1" keepCondition="99" />
-			<Stat>
+		<level level="1">
+			<Basic keepCondition="99" />
+			<SpecialAbility>
 				<v type="msp" value="5" />
 				<v type="rmsp" value="5" />
-			</Stat>
-		</level>
-	</additional>
-	<additional id="61110230">
-		<level>
-			<beginCondition applyPvPZoneType="1" />
-			<BasicProperty level="1" keepCondition="99" />
-			<conditionSkill level="1" skillID="61110231" skillTarget="1">
-				<beginCondition>
-					<owner eventCondition="19" />
-				</beginCondition>
-			</conditionSkill>
-		</level>
-	</additional>
-	<additional id="61110231">
-		<level stringParam="2">
-			<beginCondition applyPvPZoneType="1">
-				<owner hasBuffID="61110230" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="1" hasBuffCountCompare="Equals" />
-			</beginCondition>
-			<BasicProperty level="1" buffSubType="2" durationTick="10000" coolDownTime="1" />
-			<MotionProperty abnormalImmuneBreak="5" />
-			<Stat>
-				<v type="ndd" value="0.02" isRate="1" />
-			</Stat>
-			<UIProperty icon="./Data/Resource/Image/Item/icon/61100139.png" />
-		</level>
-	</additional>
-	<additional id="61110240">
-		<level>
-			<beginCondition applyPvPZoneType="1" />
-			<BasicProperty level="1" intervalTick="300" keepCondition="99" deadKeepEffect="1" />
-			<conditionSkill level="1" skillID="61110241" skillTarget="1" activeByIntervalTick="1">
-				<beginCondition>
-					<owner>
-						<compareStat hp="0.3" func="LessEquals" />
-					</owner>
-				</beginCondition>
-			</conditionSkill>
-		</level>
-	</additional>
-	<additional id="61110241">
-		<level stringParam="50">
-			<beginCondition applyPvPZoneType="1">
-				<owner hasBuffID="61110240" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="1" hasBuffCountCompare="Equals" />
-			</beginCondition>
-			<BasicProperty level="1" durationTick="5000" coolDownTime="180" />
-			<MotionProperty abnormalImmuneBreak="5" />
-			<Stat>
-				<v type="cap" value="50" />
-			</Stat>
-			<UIProperty icon="./Data/Resource/Image/Item/icon/61100140.png" />
-		</level>
-	</additional>
-	<additional id="61110250">
-		<level>
-			<BasicProperty level="1" buffSubType="1" keepCondition="99" />
-			<Stat>
-				<v type="atp" value="5" />
-				<v type="bap" value="150" />
-			</Stat>
-		</level>
-	</additional>
-	<additional id="61110251">
-		<level>
-			<beginCondition applyPvPZoneType="1" />
-			<BasicProperty level="1" intervalTick="300" keepCondition="99" deadKeepEffect="1" />
-			<conditionSkill level="1" skillID="61110252" skillTarget="1" activeByIntervalTick="1">
-				<beginCondition>
-					<owner>
-						<compareStat hp="0.3" func="LessEquals" />
-					</owner>
-				</beginCondition>
-			</conditionSkill>
-		</level>
-	</additional>
-	<additional id="61110252">
-		<level stringParam="200">
-			<beginCondition>
-				<owner hasBuffID="61110251" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="1" hasBuffCountCompare="Equals" />
-			</beginCondition>
-			<BasicProperty level="1" buffSubType="4" durationTick="5000" intervalTick="1000" coolDownTime="60" />
-			<MotionProperty abnormalImmuneBreak="5" />
-			<RecoveryProperty hpValue="200" disableCriticalRecovery="1" />
-			<UIProperty icon="./Data/Resource/Image/Item/icon/61100141.png" />
-		</level>
-	</additional>
-	<additional id="61110260">
-		<level>
-			<BasicProperty level="1" buffSubType="1" keepCondition="99" />
-			<Stat>
-				<v type="asp" value="3" />
-				<v type="bap" value="150" />
-			</Stat>
-		</level>
-	</additional>
-	<additional id="61110261">
-		<level>
-			<BasicProperty level="1" buffSubType="1" keepCondition="99" />
-			<conditionSkill level="1" skillID="61110262" skillTarget="2">
-				<beginCondition probability="0.1">
-					<owner eventCondition="6" />
-				</beginCondition>
-			</conditionSkill>
-		</level>
-	</additional>
-	<additional id="61110262">
-		<level>
-			<BasicProperty level="1" buffType="2" buffSubType="2" durationTick="6000" intervalTick="1000" dotCondition="1" casterIndividualEffect="1" />
-			<MotionProperty keepEffect="Additional/Bleed/Eff_Additional_Bleed_Keep.xml" stopEffect="Additional/Bleed/Eff_Additional_Bleed_Stop.xml" abnormalImmuneBreak="5" />
-			<DotDamageProperty type="3" rate="0.48" element="7" soundMaterial="1" />
-			<UIProperty icon="./Data/Resource/Image/skill/icon/Bleed.png" />
-		</level>
-	</additional>
-	<additional id="61110270">
-		<level>
-			<BasicProperty level="1" buffSubType="1" keepCondition="99" />
-			<Stat>
-				<v type="bap" value="150" />
-			</Stat>
-			<SpecialAbility>
-				<v type="sgi_boss" value="30" />
 			</SpecialAbility>
 		</level>
 	</additional>
-	<additional id="61110271">
-		<level>
-			<BasicProperty level="1" buffSubType="1" keepCondition="99" />
-			<conditionSkill level="1" skillID="61110272" skillTarget="4">
-				<beginCondition probability="0.1">
-					<owner eventCondition="6" />
-				</beginCondition>
-			</conditionSkill>
+	<additional id="61110230">
+		<level level="1">
+			<Basic keepCondition="99" />
+			<Condition applyPvPZoneType="1" />
+			<Additional level="1" skillID="61110231" skillTarget="1" ownerEvent="19" />
 		</level>
 	</additional>
-	<additional id="61110272">
-		<level stringParam="4">
-			<beginCondition applyPvPZoneType="1" />
-			<BasicProperty level="1" buffSubType="1" durationTick="5000" resetCondition="1" coolDownTime="10" />
-			<MotionProperty abnormalImmuneBreak="5" />
-			<Stat>
+	<additional id="61110231" mainType="2">
+		<level level="1" stringParam="2">
+			<Basic durationTick="10000" coolDownTime="1" />
+			<Condition applyPvPZoneType="1" hasBuffID="61110230" hasBuffCount="1" />
+			<Motion abnormalImmuneBreak="5" />
+			<SpecialAbility>
+				<v type="nddRate" value="20" />
+			</SpecialAbility>
+			<UI icon="./Data/Resource/Image/Item/icon/61100139.png" />
+		</level>
+	</additional>
+	<additional id="61110240">
+		<level level="1">
+			<Basic intervalTick="300" keepCondition="99" deadKeepEffect="1" />
+			<Condition applyPvPZoneType="1" />
+			<Additional level="1" skillID="61110241" skillTarget="1" activeByIntervalTick="1" ownerHpLess="0.3" />
+		</level>
+	</additional>
+	<additional id="61110241">
+		<level level="1" stringParam="50">
+			<Basic durationTick="5000" coolDownTime="180" />
+			<Condition applyPvPZoneType="1" hasBuffID="61110240" hasBuffCount="1" />
+			<Motion abnormalImmuneBreak="5" />
+			<SpecialAbility>
+				<v type="cap" value="50" />
+			</SpecialAbility>
+			<UI icon="./Data/Resource/Image/Item/icon/61100140.png" />
+		</level>
+	</additional>
+	<additional id="61110250" mainType="1">
+		<level level="1">
+			<Basic keepCondition="99" />
+			<SpecialAbility>
+				<v type="atp" value="5" />
+				<v type="bap" value="150" />
+			</SpecialAbility>
+		</level>
+	</additional>
+	<additional id="61110251">
+		<level level="1">
+			<Basic intervalTick="300" keepCondition="99" deadKeepEffect="1" />
+			<Condition applyPvPZoneType="1" />
+			<Additional level="1" skillID="61110252" skillTarget="1" activeByIntervalTick="1" ownerHpLess="0.3" />
+		</level>
+	</additional>
+	<additional id="61110252" mainType="4">
+		<level level="1" stringParam="200">
+			<Basic durationTick="5000" intervalTick="1000" coolDownTime="60" />
+			<Condition hasBuffID="61110251" hasBuffCount="1" />
+			<Motion abnormalImmuneBreak="5" />
+			<Recovery hpValue="200" disableCriticalRecovery="1" />
+			<UI icon="./Data/Resource/Image/Item/icon/61100141.png" />
+		</level>
+	</additional>
+	<additional id="61110260" mainType="1">
+		<level level="1">
+			<Basic keepCondition="99" />
+			<SpecialAbility>
+				<v type="asp" value="3" />
+				<v type="bap" value="150" />
+			</SpecialAbility>
+		</level>
+	</additional>
+	<additional id="61110261" mainType="1">
+		<level level="1">
+			<Basic keepCondition="99" />
+			<Additional level="1" skillID="61110262" skillTarget="2" probability="0.1" ownerEvent="6" />
+		</level>
+	</additional>
+	<additional id="61110262" mainType="2" isDebuff="1">
+		<level level="1">
+			<Basic durationTick="6000" intervalTick="1000" dotCondition="1" casterIndividualEffect="1" />
+			<Motion keepEffect="Additional/Bleed/Eff_Additional_Bleed_Keep.xml" stopEffect="Additional/Bleed/Eff_Additional_Bleed_Stop.xml" abnormalImmuneBreak="5" />
+			<DotDamage type="3" rate="0.48" element="7" soundMaterial="1" />
+			<UI icon="./Data/Resource/Image/skill/icon/Bleed.png" />
+		</level>
+	</additional>
+	<additional id="61110270" mainType="1">
+		<level level="1">
+			<Basic keepCondition="99" />
+			<SpecialAbility>
+				<v type="sgi_boss" value="30" />
+				<v type="bap" value="150" />
+			</SpecialAbility>
+		</level>
+	</additional>
+	<additional id="61110271" mainType="1">
+		<level level="1">
+			<Basic keepCondition="99" />
+			<Additional level="1" skillID="61110272" skillTarget="4" probability="0.1" ownerEvent="6" />
+		</level>
+	</additional>
+	<additional id="61110272" mainType="1">
+		<level level="1" stringParam="4">
+			<Basic durationTick="5000" resetCondition="1" coolDownTime="10" />
+			<Condition applyPvPZoneType="1" />
+			<Motion abnormalImmuneBreak="5" />
+			<SpecialAbility>
 				<v type="asp" value="4" />
-			</Stat>
-			<UIProperty icon="./Data/Resource/Image/Item/icon/61100143.png" />
+			</SpecialAbility>
+			<UI icon="./Data/Resource/Image/Item/icon/61100143.png" />
 		</level>
 	</additional>
-	<additional id="61110273">
-		<level stringParam="4">
-			<beginCondition applyPvPZoneType="1" />
-			<BasicProperty level="1" buffType="2" durationTick="5000" resetCondition="1" coolDownTime="10" />
-			<MotionProperty abnormalImmuneBreak="5" />
-			<Stat>
-				<v type="asp" value="-0.04" isRate="1" />
-			</Stat>
-			<UIProperty icon="./Data/Resource/Image/Item/icon/61100143.png" />
+	<additional id="61110273" isDebuff="1">
+		<level level="1" stringParam="4">
+			<Basic durationTick="5000" resetCondition="1" coolDownTime="10" />
+			<Condition applyPvPZoneType="1" />
+			<Motion abnormalImmuneBreak="5" />
+			<SpecialAbility>
+				<v type="aspRate" value="-40" />
+			</SpecialAbility>
+			<UI icon="./Data/Resource/Image/Item/icon/61100143.png" />
 		</level>
 	</additional>
-	<additional id="61110274">
-		<level>
-			<beginCondition applyPvPZoneType="1" />
-			<BasicProperty level="1" buffSubType="1" durationTick="5000" coolDownTime="10" />
-			<MotionProperty abnormalImmuneBreak="5" />
-			<Stat>
+	<additional id="61110274" mainType="1">
+		<level level="1">
+			<Basic durationTick="5000" coolDownTime="10" />
+			<Condition applyPvPZoneType="1" />
+			<Motion abnormalImmuneBreak="5" />
+			<SpecialAbility>
 				<v type="asp" value="4" />
-			</Stat>
-			<UIProperty icon="./Data/Resource/Image/Item/icon/61100143.png" />
+			</SpecialAbility>
+			<UI icon="./Data/Resource/Image/Item/icon/61100143.png" />
 		</level>
 	</additional>
-	<additional id="61110275">
-		<level>
-			<beginCondition applyPvPZoneType="1" />
-			<BasicProperty level="1" buffType="2" buffSubType="1" durationTick="5000" coolDownTime="10" />
-			<MotionProperty abnormalImmuneBreak="5" />
-			<Stat>
+	<additional id="61110275" mainType="1" isDebuff="1">
+		<level level="1">
+			<Basic durationTick="5000" coolDownTime="10" />
+			<Condition applyPvPZoneType="1" />
+			<Motion abnormalImmuneBreak="5" />
+			<SpecialAbility>
 				<v type="asp" value="-4" />
-			</Stat>
-			<UIProperty icon="./Data/Resource/Image/Item/icon/61100143.png" />
+			</SpecialAbility>
+			<UI icon="./Data/Resource/Image/Item/icon/61100143.png" />
 		</level>
 	</additional>
 	<additional id="61110280">
-		<level>
-			<BasicProperty level="1" keepCondition="99" />
-			<conditionSkill level="1" skillID="61110281" skillTarget="2">
-				<beginCondition probability="0.1">
-					<owner eventCondition="6" />
-				</beginCondition>
-			</conditionSkill>
+		<level level="1">
+			<Basic keepCondition="99" />
+			<Additional level="1" skillID="61110281" skillTarget="2" probability="0.1" ownerEvent="6" />
 		</level>
 	</additional>
-	<additional id="61110281">
-		<level>
-			<BasicProperty level="1" buffType="2" durationTick="3000" />
-			<MotionProperty keepEffect="Additional/Stun/Eff_Additional_Stun_Keep.xml" stopEffect="Additional/Stun/Eff_Additional_Stun_Stop.xml" stun="1" abnormalImmuneBreak="5" />
-			<UIProperty icon="./Data/Resource/Image/Item/icon/61000079.png" />
+	<additional id="61110281" isDebuff="1">
+		<level level="1">
+			<Basic durationTick="3000" />
+			<Motion keepEffect="Additional/Stun/Eff_Additional_Stun_Keep.xml" stopEffect="Additional/Stun/Eff_Additional_Stun_Stop.xml" stun="1" abnormalImmuneBreak="5" />
+			<UI icon="./Data/Resource/Image/Item/icon/61000079.png" />
 		</level>
 	</additional>
 	<additional id="61110310">
-		<level>
-			<BasicProperty level="1" keepCondition="99" />
-			<conditionSkill level="1" skillID="61110311" skillTarget="4">
-				<beginCondition probability="0.1">
-					<owner eventCondition="6" />
-				</beginCondition>
-			</conditionSkill>
+		<level level="1">
+			<Basic keepCondition="99" />
+			<Additional level="1" skillID="61110311" skillTarget="4" probability="0.1" ownerEvent="6" />
 		</level>
 	</additional>
 	<additional id="61110311">
-		<level stringParam="2">
-			<BasicProperty level="1" durationTick="10000" />
-			<MotionProperty abnormalImmuneBreak="5" />
-			<Stat>
-				<v type="pap" value="0.02" isRate="1" />
-				<v type="map" value="0.02" isRate="1" />
-			</Stat>
-			<UIProperty icon="./Data/Resource/Image/Skill/icon/weapon_buff_fury.png" />
+		<level level="1" stringParam="2">
+			<Basic durationTick="10000" />
+			<Motion abnormalImmuneBreak="5" />
+			<SpecialAbility>
+				<v type="papRate" value="20" />
+				<v type="mapRate" value="20" />
+			</SpecialAbility>
+			<UI icon="./Data/Resource/Image/Skill/icon/weapon_buff_fury.png" />
 		</level>
 	</additional>
 </ms2>

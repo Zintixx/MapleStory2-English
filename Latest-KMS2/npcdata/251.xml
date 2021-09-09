@@ -960,62 +960,6 @@
 			<normal action="Idle_A,Bore_A,Walk_A" prob="6000,1000,3000" movearea="300" />
 		</environment>
 	</npc>
-	<npc id="25100313">
-		<environment feature="Develop" npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="enemy" hpBar="1" defenceMaterial="1" hitImmune="1" abnormalImmune="1" level="70" rankIcon="c" propertyTags="keep_battle" raceString="combine" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/21000337_M_ZealotInferior03_P.png" damagedColorScale="6" damagedVibrateDuration="0.9" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" customExp="0" lookAtMyPCWhenTalking="0">
-			<model kfm="21000337_M_ZealotInferior03" scale="1.3" shadowScale="85" rotationSpeed="720" walkSpeed="150" runSpeed="300" />
-			<stat hp="2329956" asp="100" msp="100" atp="80" evp="102" cap="72" cad="250" car="70" ndd="1071" pap="1488915" map="1489365" par="190" mar="190" />
-			<distance avoid="250" sight="900" sightHeightUP="300" sightHeightDown="150" customLastSightRadius="2500" customLastSightHeightUp="300" customLastSightHeightDown="150" />
-			<skill ids="42030101" probs="100" />
-			<collision shape="box" width="100" height="160" depth="100" />
-			<capsule radius="100" height="200" />
-			<dead time="1" defaultaction="Dead_A,Dead_B" upaction="Dead_B" revival="25100314" count="1" />
-			<push back="1" up="1" knockback="1" />
-			<normal action="Idle_A,Bore_A,Walk_A" prob="4500,1000,4500" movearea="300" />
-			<aiInfo path="AI_Default_Range_Area.xml" />
-		</environment>
-	</npc>
-	<npc id="25100314">
-		<environment feature="Develop" npcAttackGroup="1" npcDefenseGroup="2" minimap="0" defenceMaterial="1" hitImmune="99" abnormalImmune="99" level="70" rankIcon="c" carePathToEnemy="1" propertyTags="keep_battle,battle_on_spawn,dummy_npc,ai_wander_freely" raceString="unknown" portrait="./Data/Resource/Image/Portrait/Mob/Dummy_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" customExp="0" lookAtMyPCWhenTalking="0">
-			<model kfm="Dummy" rotationSpeed="720" />
-			<stat hp="89999910" asp="100" msp="100" atp="80" evp="102" cap="72" cad="500" car="70" ndd="1071" pap="1211814" map="1212180" par="90" mar="90" />
-			<distance avoid="45" sight="10000" sightHeightUP="2000" sightHeightDown="3500" />
-			<skill ids="49286051" />
-			<collision shape="box" width="1" height="1" depth="1" heightOffset="-1000" />
-			<capsule radius="30" height="100" ignore="1" />
-			<dead time="5" defaultaction="Idle_A" upaction="Idle_A" />
-			<normal action="Idle_B" prob="10000" movearea="300" />
-			<dropiteminfo globalDropBoxId="74" />
-			<aiInfo path="AI_Suicide_after_ResourceGain.xml" />
-		</environment>
-	</npc>
-	<npc id="25100315">
-		<environment feature="Develop" npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="enemy" hpBar="1" defenceMaterial="1" hitImmune="1" abnormalImmune="1" level="70" rankIcon="c" propertyTags="keep_battle" raceString="combine" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/21000337_M_ZealotInferior03_P.png" damagedColorScale="6" damagedVibrateDuration="0.9" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" customExp="0" lookAtMyPCWhenTalking="0">
-			<model kfm="21000337_M_ZealotInferior03" scale="1.3" shadowScale="85" rotationSpeed="720" walkSpeed="150" runSpeed="300" />
-			<stat hp="2329956" asp="100" msp="100" atp="80" evp="102" cap="72" cad="250" car="70" ndd="1071" pap="1488915" map="1489365" par="190" mar="190" />
-			<distance avoid="250" sight="900" sightHeightUP="300" sightHeightDown="150" customLastSightRadius="2500" customLastSightHeightUp="300" customLastSightHeightDown="150" />
-			<skill ids="42030101" probs="100" />
-			<collision shape="box" width="100" height="160" depth="100" />
-			<capsule radius="100" height="200" />
-			<dead time="1" defaultaction="Dead_A,Dead_B" upaction="Dead_B" revival="25100316" count="1" />
-			<push back="1" up="1" knockback="1" />
-			<normal action="Idle_A,Bore_A,Walk_A" prob="4500,1000,4500" movearea="300" />
-			<aiInfo path="AI_Default_Range_Area.xml" />
-		</environment>
-	</npc>
-	<npc id="25100316">
-		<environment feature="Develop" npcAttackGroup="1" npcDefenseGroup="2" minimap="0" defenceMaterial="1" hitImmune="99" abnormalImmune="99" level="70" rankIcon="c" carePathToEnemy="1" propertyTags="keep_battle,battle_on_spawn,dummy_npc,ai_wander_freely" raceString="unknown" portrait="./Data/Resource/Image/Portrait/Mob/Dummy_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" customExp="0" lookAtMyPCWhenTalking="0">
-			<model kfm="Dummy" rotationSpeed="720" />
-			<stat hp="89999910" asp="100" msp="100" atp="80" evp="102" cap="72" cad="500" car="70" ndd="1071" pap="1211814" map="1212180" par="90" mar="90" />
-			<distance avoid="45" sight="10000" sightHeightUP="2000" sightHeightDown="3500" />
-			<skill ids="49286052" />
-			<collision shape="box" width="1" height="1" depth="1" heightOffset="-1000" />
-			<capsule radius="30" height="100" ignore="1" />
-			<dead time="5" defaultaction="Idle_A" upaction="Idle_A" />
-			<normal action="Idle_B" prob="10000" movearea="300" />
-			<dropiteminfo globalDropBoxId="74" />
-			<aiInfo path="AI_Suicide_after_ResourceGain.xml" />
-		</environment>
-	</npc>
 	<npc id="25100317">
 		<environment feature="Develop" npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="boss" nametag="1" defenceMaterial="1" hitImmune="99" abnormalImmune="99" level="70" class="6" rankIcon="a" propertyTags="keep_battle" raceString="devil" gender="2" portrait="./Data/Resource/Image/Portrait/Npc/23000053_B_KnightHollowArmorSwordBlue_P.png" damagedVibrateDuration="0.5" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" customExp="0" lookAtMyPCWhenTalking="0">
 			<model kfm="23000053_B_KnightHollowArmorSwordBlue" scale="1.3" shadowScale="640" rotationSpeed="720" walkSpeed="200" runSpeed="400" />

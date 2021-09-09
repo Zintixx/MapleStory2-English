@@ -1,47 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ms2>
-	<additional id="40201001">
-		<level>
-			<BasicProperty level="1" buffSubType="1" durationTick="1000" intervalTick="899" />
-			<MotionProperty abnormalImmuneBreak="1" />
-			<splashSkill level="1" skillID="40201002" immediateActive="1" />
+	<additional id="40201001" mainType="1">
+		<level level="1">
+			<Basic durationTick="1000" intervalTick="899" />
+			<Motion abnormalImmuneBreak="1" />
+			<Skill level="1" skillID="40201002" immediateActive="1" />
 		</level>
 	</additional>
-	<additional id="40230011">
-		<level stringParam="40">
-			<BasicProperty level="1" buffType="2" buffSubType="1" durationTick="5000" />
-			<MotionProperty keepEffect="NPC/Skill/Scorpion/Eff_Scorpion_Attack_01_B_Ice_Keep.xml" abnormalImmuneBreak="1" />
-			<Stat>
-				<v type="msp" value="-0.4" isRate="1" />
-				<v type="rmsp" value="-0.4" isRate="1" />
-			</Stat>
-			<UIProperty icon="./Data/Resource/Image/skill/icon/SpeedDown.png" />
+	<additional id="40230011" mainType="1" isDebuff="1">
+		<level level="1" stringParam="40">
+			<Basic durationTick="5000" />
+			<Motion keepEffect="NPC/Skill/Scorpion/Eff_Scorpion_Attack_01_B_Ice_Keep.xml" abnormalImmuneBreak="1" />
+			<SpecialAbility>
+				<v type="mspRate" value="-400" />
+				<v type="rmspRate" value="-400" />
+			</SpecialAbility>
+			<UI icon="./Data/Resource/Image/skill/icon/SpeedDown.png" />
 		</level>
 	</additional>
-	<additional id="40231011">
-		<level>
-			<BasicProperty level="1" buffType="2" buffSubType="1" buffCategory="6" durationTick="3000" intervalTick="1000" dotCondition="1" logoutClearEffect="1" />
-			<MotionProperty keepEffect="NPC/Skill/Scorpion/Eff_Scorpion_Attack_01_B_Keep.xml" abnormalImmuneBreak="1" />
-			<DotDamageProperty type="2" rate="0.15" element="6" />
-			<UIProperty icon="./Data/Resource/Image/skill/icon/Poison.png" />
+	<additional id="40231011" mainType="1" isDebuff="1" category="6">
+		<level level="1">
+			<Basic durationTick="3000" intervalTick="1000" dotCondition="1" logoutClearEffect="1" />
+			<Motion keepEffect="NPC/Skill/Scorpion/Eff_Scorpion_Attack_01_B_Keep.xml" abnormalImmuneBreak="1" />
+			<DotDamage type="2" rate="0.15" element="6" />
+			<UI icon="./Data/Resource/Image/skill/icon/Poison.png" />
 		</level>
 	</additional>
-	<additional id="40234001">
-		<level stringParam="40">
-			<BasicProperty level="1" buffType="2" buffSubType="1" durationTick="5000" />
-			<MotionProperty keepEffect="NPC/Skill/Tiger/Eff_TigerWhite_Attack_A_Keep.xml" abnormalImmuneBreak="1" />
-			<Stat>
-				<v type="msp" value="-0.4" isRate="1" />
-				<v type="rmsp" value="-0.4" isRate="1" />
-			</Stat>
-			<UIProperty icon="./Data/Resource/Image/skill/icon/SpeedDown.png" />
+	<additional id="40234001" mainType="1" isDebuff="1">
+		<level level="1" stringParam="40">
+			<Basic durationTick="5000" />
+			<Motion keepEffect="NPC/Skill/Tiger/Eff_TigerWhite_Attack_A_Keep.xml" abnormalImmuneBreak="1" />
+			<SpecialAbility>
+				<v type="mspRate" value="-400" />
+				<v type="rmspRate" value="-400" />
+			</SpecialAbility>
+			<UI icon="./Data/Resource/Image/skill/icon/SpeedDown.png" />
 		</level>
 	</additional>
 	<additional id="40236011">
-		<level>
-			<BasicProperty level="1" durationTick="1500" />
-			<MotionProperty abnormalImmuneBreak="1" />
-			<DefensiveProperty invincible="2" />
+		<level level="1">
+			<Basic durationTick="1500" />
+			<Motion abnormalImmuneBreak="1" />
+			<Defensive invincible="2" />
 		</level>
 	</additional>
 </ms2>

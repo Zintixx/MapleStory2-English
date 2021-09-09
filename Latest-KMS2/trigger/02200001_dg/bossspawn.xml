@@ -10,6 +10,7 @@
 			<action name="메쉬를설정한다" arg1="2038-2063" arg2="0" arg3="0" arg4="0" arg5="10" />
 			<action name="메쉬를설정한다" arg1="2000" arg2="0" arg3="0" arg4="0" arg5="10" />
 			<action name="포탈을설정한다" arg1="2" arg2="0" arg3="0" arg4="0"/>
+			<action name="메쉬를설정한다" arg1="4000" arg2="0" arg3="0" arg4="0" arg5="10" />
 			<!--출구 쪽 메쉬, 입구 화이트박스, 출구포탈 제거-->
 		</onEnter>  			
 		<condition name="WaitTick" waitTick="500" > 
@@ -19,12 +20,9 @@
 	
 	<state name="던전시작연출">
 		<onEnter>
-			<action name="메쉬를설정한다" arg1="2001-2014" arg2="0" arg3="0" arg4="0" arg5="10" />
-			<action name="메쉬를설정한다" arg1="2016-2017" arg2="0" arg3="0" arg4="0" arg5="10" />
-			<action name="메쉬를설정한다" arg1="2019-2026" arg2="0" arg3="0" arg4="0" arg5="10" />
 			<action name="DungeonEnableGiveUp" isEnable="1" />
 		</onEnter>
-		<condition name="WaitTick" waitTick="1000" >
+		<condition name="WaitTick" waitTick="7000" >
 			<transition state="난이도체크" /> 
 		</condition>
 	</state>
@@ -41,6 +39,8 @@
 	</state>
 	<state name="쉬운난이도보스등장">
 		<onEnter>
+			<!-- <action name="메쉬를설정한다" arg1="4000" arg2="1" arg3="1" arg4="1" arg5="10" /> -->
+			<!-- 보스 관통 못하도록 화이트박스 처리 명령 -->			
 			<action name="몬스터를생성한다" arg1="99" arg2="0"/>
 			<!-- arg2="0" 을 넣으면 보스 등장하자마자 바로 공격 상태가 되는 것을 막을 수 있음-->
 		</onEnter>
@@ -68,24 +68,16 @@
 	</state>
 	<state name="입장종료처리">
 		<onEnter>
+			<action name="메쉬를설정한다" arg1="2001-2014" arg2="0" arg3="0" arg4="0" arg5="10" />
+			<action name="메쉬를설정한다" arg1="2016-2017" arg2="0" arg3="0" arg4="0" arg5="10" />
+			<action name="메쉬를설정한다" arg1="2019-2026" arg2="0" arg3="0" arg4="0" arg5="10" />
 			<action name="메쉬를설정한다" arg1="2027-2037" arg2="0" arg3="0" arg4="0" arg5="10" />
 			<action name="메쉬를설정한다" arg1="2000" arg2="1" arg3="1" arg4="1" arg5="10" />
 		</onEnter>
-		<condition name="CheckUserCount" checkCount="1">
-			<transition state="1인전투진행" />
-		</condition>
 		<condition name="무조건">
 			<transition state="입장종료이후전투진행중" />
 		</condition>
 	</state>
-	<state name="1인전투진행">
-		<onEnter>
-			<action name="SetAiExtraData" isModify="1" key="soloUser" value="1" boxId="0"/>
-		</onEnter>
-		<condition name="무조건">
-			<transition state="입장종료이후전투진행중" />
-		</condition>
-	</state>-->
 	<state name="입장종료이후전투진행중">
 		<condition name="UserValue" key="BattleEnd" value="1">  
 			<transition state="클리어처리"/>
@@ -97,24 +89,28 @@
 			<transition state="던전실패" />
 		</condition>
 	</state>
-	<state name="클리어처리"> 
+	<state name="클리어처리">
+		<onEnter>
+			<action name="메쉬를설정한다" arg1="4000" arg2="0" arg3="0" arg4="0" arg5="10" />
+		</onEnter>
 		<condition name="WaitTick" waitTick="4000" >
 			<action name="DungeonClear" /> 
 			<transition state="게임종료" />
 		</condition>
 	</state>
 	<state name="던전실패">
-		<onEnter> 
+		<onEnter>
+			<action name="메쉬를설정한다" arg1="4000" arg2="0" arg3="0" arg4="0" arg5="10" />
 			<action name="DungeonSetEndTime" />  <!--시간 기능 종료시킴, 이 기능 잘 작동시키려면 DungeonRoom.xlsx 의 제한 시간 만료 시(isExpireTimeOut) 빈칸 설정 해야 함  -->		
 			<action name="DungeonCloseTimer" />
 		</onEnter>		 
-		<condition name="WaitTick" waitTick="500" > 
+		<condition name="WaitTick" waitTick="1000" > 
 			<action name="DungeonFail" /> 
 			<transition state="게임종료" />
 		</condition>
 	</state>
 	<state name="게임종료">
-		<onEnter> 
+		<onEnter>
 			<action name="SetUserValue" triggerID="99999997" key="CamRotate" value="0"/>
 			<action name="몬스터소멸시킨다" arg1="all" />
 			<action name="DungeonEnableGiveUp" isEnable="0" />
@@ -125,6 +121,12 @@
 			<action name="메쉬를설정한다" arg1="2027-2037" arg2="1" arg3="1" arg4="1" arg5="10" />
 			<action name="메쉬를설정한다" arg1="2038-2063" arg2="1" arg3="1" arg4="1" arg5="10" />
 			<action name="메쉬를설정한다" arg1="2000" arg2="0" arg3="0" arg4="0" arg5="10" />
-		</onEnter>		
-	</state>	
+		</onEnter>
+		<condition name="WaitTick" waitTick="2000" > 
+			<action name="LookCenterCameraRadian" on="1" radian="3.927" />
+      <transition state="끝" />
+		</condition>		
+	</state>
+  <state name="끝">
+  </state>
 </ms2>

@@ -1,85 +1,85 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ms2>
-	<additional id="69000001">
-		<level>
-			<BasicProperty level="1" buffType="2" durationTick="3000" />
-			<MotionProperty keepEffect="Additional/Slow/Eff_Additional_Slow_Keep.xml" abnormalImmuneBreak="1" />
-			<Stat>
-				<v type="msp" value="-0.4" isRate="1" />
-				<v type="rmsp" value="-0.4" isRate="1" />
-			</Stat>
-			<UIProperty icon="./Data/Resource/Image/skill/icon/SpeedDown.png" />
+	<additional id="69000001" isDebuff="1">
+		<level level="1">
+			<Basic durationTick="3000" />
+			<Motion keepEffect="Additional/Slow/Eff_Additional_Slow_Keep.xml" abnormalImmuneBreak="1" />
+			<SpecialAbility>
+				<v type="mspRate" value="-400" />
+				<v type="rmspRate" value="-400" />
+			</SpecialAbility>
+			<UI icon="./Data/Resource/Image/skill/icon/SpeedDown.png" />
 		</level>
 	</additional>
-	<additional id="69000101">
-		<level>
-			<BasicProperty level="1" buffType="2" durationTick="1000" />
-			<MotionProperty keepEffect="Additional/Stun/Eff_Additional_Stun_Keep.xml" stopEffect="Additional/Stun/Eff_Additional_Stun_Stop.xml" stun="1" abnormalImmuneBreak="1" />
-			<UIProperty icon="./Data/Resource/Image/skill/icon/Stun.png" />
+	<additional id="69000101" isDebuff="1">
+		<level level="1">
+			<Basic durationTick="1000" />
+			<Motion keepEffect="Additional/Stun/Eff_Additional_Stun_Keep.xml" stopEffect="Additional/Stun/Eff_Additional_Stun_Stop.xml" stun="1" abnormalImmuneBreak="1" />
+			<UI icon="./Data/Resource/Image/skill/icon/Stun.png" />
 		</level>
 	</additional>
-	<additional id="69000201">
-		<level>
-			<BasicProperty level="1" buffType="2" buffSubType="3" durationTick="1000" resetCondition="1" />
-			<MotionProperty keepEffect="NPC/Skill/DragonDevilBigHead/Eff_DragonDevilBigHead_paralyze_Keep.xml" stopEffect="NPC/Skill/DragonDevilBigHead/Eff_DragonDevilBigHead_paralyze_Stop.xml" stun="3" abnormalImmuneBreak="1" />
-			<UIProperty icon="./Data/Resource/Image/skill/icon/ShadowPoison.png" />
+	<additional id="69000201" mainType="3" isDebuff="1">
+		<level level="1">
+			<Basic durationTick="1000" resetCondition="1" />
+			<Motion keepEffect="NPC/Skill/DragonDevilBigHead/Eff_DragonDevilBigHead_paralyze_Keep.xml" stopEffect="NPC/Skill/DragonDevilBigHead/Eff_DragonDevilBigHead_paralyze_Stop.xml" stun="3" abnormalImmuneBreak="1" />
+			<UI icon="./Data/Resource/Image/skill/icon/ShadowPoison.png" />
 		</level>
 	</additional>
-	<additional id="69000301">
-		<level>
-			<BasicProperty level="1" buffSubType="1" keepCondition="99" />
-			<MotionProperty keepEffect="NPC/Skill/Tristan/Eff_Tristan_BodyEffect.xml" abnormalImmuneBreak="1" />
+	<additional id="69000301" mainType="1">
+		<level level="1">
+			<Basic keepCondition="99" />
+			<Motion keepEffect="NPC/Skill/Tristan/Eff_Tristan_BodyEffect.xml" abnormalImmuneBreak="1" />
 		</level>
 	</additional>
-	<additional id="69000401">
-		<level>
-			<BasicProperty level="1" buffSubType="1" keepCondition="99" />
-			<MotionProperty abnormalImmuneBreak="1" />
-			<DefensiveProperty invincible="1" />
+	<additional id="69000401" mainType="1">
+		<level level="1">
+			<Basic keepCondition="99" />
+			<Motion abnormalImmuneBreak="1" />
+			<Defensive invincible="1" />
 		</level>
 	</additional>
-	<additional id="69000501">
-		<level>
-			<BasicProperty level="1" buffSubType="1" durationTick="7000" />
-			<MotionProperty abnormalImmuneBreak="1" />
-			<DefensiveProperty invincible="1" />
+	<additional id="69000501" mainType="1">
+		<level level="1">
+			<Basic durationTick="7000" />
+			<Motion abnormalImmuneBreak="1" />
+			<Defensive invincible="1" />
 		</level>
 	</additional>
-	<additional id="69000502">
-		<level>
-			<BasicProperty level="1" buffType="2" buffSubType="1" durationTick="15000" maxBuffCount="3" />
-			<MotionProperty keepEffect="Additional/Slow/Eff_Additional_Slow_Keep.xml" abnormalImmuneBreak="1" />
-			<Stat>
-				<v type="msp" value="-0.3" isRate="1" />
-				<v type="rmsp" value="-0.3" isRate="1" />
-			</Stat>
-			<UIProperty icon="./Data/Resource/Image/skill/icon/SpeedDown.png" />
+	<additional id="69000502" mainType="1" isDebuff="1">
+		<level level="1">
+			<Basic durationTick="15000" maxBuffCount="3" />
+			<Motion keepEffect="Additional/Slow/Eff_Additional_Slow_Keep.xml" abnormalImmuneBreak="1" />
+			<SpecialAbility>
+				<v type="mspRate" value="-300" />
+				<v type="rmspRate" value="-300" />
+			</SpecialAbility>
+			<UI icon="./Data/Resource/Image/skill/icon/SpeedDown.png" />
 		</level>
 	</additional>
-	<additional id="69000503">
-		<level>
-			<BasicProperty level="1" buffSubType="5" durationTick="1000" />
-			<MotionProperty startEffect="NPC/Skill/Bella/Eff_Bella_Attack_01_C_heal_Start.xml" abnormalImmuneBreak="1" />
-			<CancelEffectProperty cancelEffectCodes="49289002,49289012,49289013,49289021,49289033,49289053,49289061,49289062" />
-			<RecoveryProperty hpRate="1" />
+	<additional id="69000503" mainType="5">
+		<level level="1">
+			<Basic durationTick="1000" />
+			<Motion startEffect="NPC/Skill/Bella/Eff_Bella_Attack_01_C_heal_Start.xml" abnormalImmuneBreak="1" />
+			<CancelEffect cancelEffectCodes="49289002,49289012,49289013,49289021,49289033,49289053,49289061,49289062" />
+			<Recovery hpRate="1" />
 		</level>
 	</additional>
-	<additional id="69000504">
-		<level stringParam="50">
-			<BasicProperty level="1" buffType="2" buffSubType="1" durationTick="6000" maxBuffCount="3" />
-			<MotionProperty keepEffect="Additional/Slow/Eff_Additional_Slow_Keep.xml" abnormalImmuneBreak="1" />
-			<Stat>
-				<v type="msp" value="-0.5" isRate="1" />
-				<v type="rmsp" value="-0.5" isRate="1" />
-			</Stat>
-			<UIProperty icon="./Data/Resource/Image/skill/icon/SpeedDown.png" />
+	<additional id="69000504" mainType="1" isDebuff="1">
+		<level level="1" stringParam="50">
+			<Basic durationTick="6000" maxBuffCount="3" />
+			<Motion keepEffect="Additional/Slow/Eff_Additional_Slow_Keep.xml" abnormalImmuneBreak="1" />
+			<SpecialAbility>
+				<v type="mspRate" value="-500" />
+				<v type="rmspRate" value="-500" />
+			</SpecialAbility>
+			<UI icon="./Data/Resource/Image/skill/icon/SpeedDown.png" />
 		</level>
 	</additional>
-	<additional id="69000505">
-		<level>
-			<BasicProperty level="1" buffSubType="3" durationTick="15000" />
-			<MotionProperty startEffect="NPC/Skill/Bella/Eff_Bella_Attack_01_C_heal_Start.xml" stun="99" stunAnimation="Idle_A" abnormalImmuneBreak="1" />
-			<CancelEffectProperty cancelEffectCodes="49289002,49289012,49289013,49289021,49289033,49289053,49289061,49289062" />
+	<additional id="69000505" mainType="3">
+		<level level="1">
+			<Basic durationTick="15000" />
+			<Motion startEffect="NPC/Skill/Bella/Eff_Bella_Attack_01_C_heal_Start.xml" stun="99" stunAnimation="Idle_A" abnormalImmuneBreak="1" />
+			<CancelEffect cancelEffectCodes="49289002,49289012,49289013,49289021,49289033,49289053,49289061,49289062" />
 		</level>
 	</additional>
 </ms2>

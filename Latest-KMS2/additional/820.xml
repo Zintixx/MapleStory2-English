@@ -1,56 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ms2>
 	<additional id="82000001">
-		<level>
-			<beginCondition allowDeadState="1" applyPvPZoneType="1" />
-			<BasicProperty level="1" keepCondition="99" deadKeepEffect="1" doNotClearEffectFromEnterPVPZone="1" />
-			<conditionSkill level="1" skillID="82000002" skillTarget="1">
-				<beginCondition allowDeadState="1">
-					<owner eventCondition="13" />
-				</beginCondition>
-			</conditionSkill>
+		<level level="1">
+			<Basic keepCondition="99" deadKeepEffect="1" doNotClearEffectFromEnterPVPZone="1" />
+			<Condition allowDeadState="1" applyPvPZoneType="1" />
+			<Additional level="1" skillID="82000002" skillTarget="1" isAllowDead="1" ownerEvent="13" />
 		</level>
 	</additional>
 	<additional id="82000002">
-		<level>
-			<beginCondition allowDeadState="1" applyPvPZoneType="1" />
-			<BasicProperty level="1" durationTick="1000" delayTick="200" deadKeepEffect="1" />
-			<MotionProperty abnormalImmuneBreak="5" />
-			<UIProperty icon="./Data/Resource/Image/item/icon/20000227.png" />
-			<splashSkill level="1" skillID="82100002" />
+		<level level="1">
+			<Basic durationTick="1000" delayTick="200" deadKeepEffect="1" />
+			<Condition allowDeadState="1" applyPvPZoneType="1" />
+			<Motion abnormalImmuneBreak="5" />
+			<UI icon="./Data/Resource/Image/item/icon/20000227.png" />
+			<Skill level="1" skillID="82100002" />
 		</level>
 	</additional>
 	<additional id="82000011">
-		<level>
-			<beginCondition>
+		<level level="1">
+			<Basic keepCondition="99" deadKeepEffect="1" doNotClearEffectFromEnterPVPZone="1" />
+			<Condition>
 				<owner>
 					<compareStat hp="0.2" func="LessEquals" />
 				</owner>
-			</beginCondition>
-			<BasicProperty level="1" keepCondition="99" deadKeepEffect="1" doNotClearEffectFromEnterPVPZone="1" />
-			<MotionProperty keepEffect="Item/Passive/Eff_Item_RedArrow_Keep_01.xml" />
-			<UIProperty icon="./Data/Resource/Image/item/icon/20000227.png" />
+			</Condition>
+			<Motion keepEffect="Item/Passive/Eff_Item_RedArrow_Keep_01.xml" />
+			<UI icon="./Data/Resource/Image/item/icon/20000227.png" />
 		</level>
 	</additional>
 	<additional id="82000021">
-		<level>
-			<BasicProperty level="1" keepCondition="99" deadKeepEffect="1" doNotClearEffectFromEnterPVPZone="1" />
-			<conditionSkill level="1" skillID="82000022" skillTarget="1">
-				<beginCondition allowDeadState="1">
-					<owner eventCondition="11" />
-				</beginCondition>
-			</conditionSkill>
+		<level level="1">
+			<Basic keepCondition="99" deadKeepEffect="1" doNotClearEffectFromEnterPVPZone="1" />
+			<Additional level="1" skillID="82000022" skillTarget="1" isAllowDead="1" ownerEvent="11" />
 		</level>
 	</additional>
 	<additional id="82000022">
-		<level>
-			<BasicProperty level="1" durationTick="3000" />
-			<MotionProperty keepEffect="Additional/Haste/Eff_Additional_Haste_Keep.xml" abnormalImmuneBreak="5" />
-			<Stat>
-				<v type="msp" value="1" isRate="1" />
-				<v type="rmsp" value="1" isRate="1" />
-			</Stat>
-			<UIProperty icon="./Data/Resource/Image/skill/icon/SpeedUp.png" />
+		<level level="1">
+			<Basic durationTick="3000" />
+			<Motion keepEffect="Additional/Haste/Eff_Additional_Haste_Keep.xml" abnormalImmuneBreak="5" />
+			<SpecialAbility>
+				<v type="mspRate" value="1000" />
+				<v type="rmspRate" value="1000" />
+			</SpecialAbility>
+			<UI icon="./Data/Resource/Image/skill/icon/SpeedUp.png" />
 		</level>
 	</additional>
 </ms2>

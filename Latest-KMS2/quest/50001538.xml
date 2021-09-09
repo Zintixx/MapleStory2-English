@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- 파싱해서 사용하는 데이터이니 직접 수정하지 마세요 -->
 <ms2>
-	<environment feature="SnowKingdom" locale="KR">
+	<environment feature="SnowKingdom">
 		<quest>
 			<basic questID="50001538" chapterID="4074" standardLevel="54" locking="1" useNavi="TRUE" />
 			<require level="54" quest="50001537" />
@@ -12,25 +12,6 @@
 				<essentialItem code="20000026" rank="1" count="5" />
 				<essentialItem code="20000032" rank="1" count="5" />
 				<globalEssentialItem code="12000075" rank="4" count="1" />
-				<globalEssentialItem code="20000024" rank="1" count="3" />
-				<globalEssentialItem code="20000030" rank="1" count="3" />
-				<globalEssentialJobItem code="0" rank="0" count="0" />
-			</completeReward>
-			<progressMap progressMap="02000260" />
-			<condition type="trigger" code="snowqueenerda">
-				<navi map="52000085" type="npc" code="29000194" />
-			</condition>
-		</quest>
-	</environment>
-	<environment feature="SnowKingdom">
-		<quest>
-			<basic questID="50001538" chapterID="4074" standardLevel="54" locking="1" useNavi="TRUE" />
-			<require level="54" quest="50001537" />
-			<start npc="11003060" />
-			<complete npc="11003060" />
-			<completeReward relativeExp="epicQuest">
-				<essentialItem code="20000026" rank="1" count="5" />
-				<essentialItem code="20000032" rank="1" count="5" />
 				<globalEssentialItem code="20000024" rank="1" count="3" />
 				<globalEssentialItem code="20000030" rank="1" count="3" />
 				<globalEssentialJobItem code="0" rank="0" count="0" />

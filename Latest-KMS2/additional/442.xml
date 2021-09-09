@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ms2>
-	<additional id="44200001">
-		<level stringParam="2">
-			<BasicProperty level="1" buffType="2" buffSubType="1" durationTick="900000" resetCondition="2" maxBuffCount="20" />
-			<MotionProperty abnormalImmuneBreak="1" />
-			<Stat>
-				<v type="ndd" value="-0.02" isRate="1" />
-			</Stat>
-			<UIProperty icon="./Data/Resource/Image/skill/icon/DefenseDown.png" />
+	<additional id="44200001" mainType="1" isDebuff="1">
+		<level level="1" stringParam="2">
+			<Basic durationTick="900000" resetCondition="2" maxBuffCount="20" />
+			<Motion abnormalImmuneBreak="1" />
+			<SpecialAbility>
+				<v type="nddRate" value="-20" />
+			</SpecialAbility>
+			<UI icon="./Data/Resource/Image/skill/icon/DefenseDown.png" />
 		</level>
 	</additional>
-	<additional id="44200002">
-		<level stringParam="10">
-			<BasicProperty level="1" buffType="2" buffSubType="1" durationTick="60000" resetCondition="2" maxBuffCount="20" />
-			<MotionProperty abnormalImmuneBreak="1" />
-			<Stat>
-				<v type="pap" value="0.1" isRate="1" />
-				<v type="map" value="0.1" isRate="1" />
-			</Stat>
-			<UIProperty icon="./Data/Resource/Image/skill/icon/OffenceState.png" />
+	<additional id="44200002" mainType="1" isDebuff="1">
+		<level level="1" stringParam="10">
+			<Basic durationTick="60000" resetCondition="2" maxBuffCount="20" />
+			<Motion abnormalImmuneBreak="1" />
+			<SpecialAbility>
+				<v type="papRate" value="100" />
+				<v type="mapRate" value="100" />
+			</SpecialAbility>
+			<UI icon="./Data/Resource/Image/skill/icon/OffenceState.png" />
 		</level>
 	</additional>
 </ms2>

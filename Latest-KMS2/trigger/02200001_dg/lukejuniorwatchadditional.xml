@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ms2>
+	<state name="시작대기중">
+		<condition name="CheckUser">
+			<transition state="시작세팅"/>
+		</condition>
+	</state>
+	<state name="시작세팅">
+		<onEnter>
+			<action name="SetUserValue" key="CheckBuff" value="0"/>
+		</onEnter>
+		<condition name="무조건">
+			<transition state="체크대기"/>
+		</condition>
+	</state>
+	<state name="체크대기">
+		<condition name="WaitTick" waitTick="200">
+			<transition state="체크시작"/>
+		</condition>
+	</state>
+	<state name="체크시작">
+		<condition name="UserValue" key="CheckBuff" value="0">
+			<transition state="블루주니어체크"/>
+		</condition>
+		<condition name="UserValue" key="CheckBuff" value="1">
+			<transition state="그린주니어체크"/>
+		</condition>
+	</state>
+	<state name="블루주니어체크">
+		<onEnter>
+			<action name="SetUserValue" key="CheckBuff" value="1"/>
+		</onEnter>
+		<condition name="CheckNpcSlaveCount" spawnPointID="99" count="1" summonGroup="101">
+			<transition state="블루주시버프체크"/>
+		</condition>
+		<condition name="무조건">
+			<transition state="블루주시버프제거"/>
+		</condition>
+	</state>
+	<state name="블루주시버프제거">
+		<onEnter>
+			<action name="RemoveAdditionalEffect" arg1="1003" arg2="40600089"/>
+		</onEnter>
+		<condition name="무조건">
+			<transition state="체크대기"/>
+		</condition>
+	</state>
+	<state name="블루주시버프체크">
+		<condition name="CheckAnyUserAdditionalEffect" additionalEffectID="40600089">
+			<transition state="체크대기"/>
+		</condition>
+		<condition name="무조건">
+			<transition state="블루주시버프부여"/>
+		</condition>
+	</state>
+	<state name="블루주시버프부여">
+		<onEnter>
+			<!-- <action name="RandomAdditionalEffect" Target="pc" triggerBoxID="1003" spawnPointID="0" targetCount="1" additionalEffectID="40600089"/> -->
+			<action name="AddAdditionalEffect" arg1="1003" arg2="40600089" arg6="2"/>
+		</onEnter>
+		<condition name="무조건">
+			<transition state="체크대기"/>
+		</condition>
+	</state>
+	<state name="그린주니어체크">
+		<onEnter>
+			<action name="SetUserValue" key="CheckBuff" value="0"/>
+		</onEnter>
+		<condition name="CheckNpcSlaveCount" spawnPointID="99" count="1" summonGroup="401">
+			<transition state="그린주시버프체크"/>
+		</condition>
+		<condition name="무조건">
+			<transition state="그린주시버프제거"/>
+		</condition>
+	</state>
+	<state name="그린주시버프제거">
+		<onEnter>
+			<action name="RemoveAdditionalEffect" arg1="1003" arg2="40600090"/>
+		</onEnter>
+		<condition name="무조건">
+			<transition state="체크대기"/>
+		</condition>
+	</state>
+	<state name="그린주시버프체크">
+		<condition name="CheckAnyUserAdditionalEffect" additionalEffectID="40600090">
+			<transition state="체크대기"/>
+		</condition>
+		<condition name="무조건">
+			<transition state="그린주시버프부여"/>
+		</condition>
+	</state>
+	<state name="그린주시버프부여">
+		<onEnter>
+			<!-- <action name="RandomAdditionalEffect" Target="pc" triggerBoxID="1003" spawnPointID="0" targetCount="1" additionalEffectID="40600090"/> -->
+			<action name="AddAdditionalEffect" arg1="1003" arg2="40600090" arg6="2"/>
+		</onEnter>
+		<condition name="무조건">
+			<transition state="체크대기"/>
+		</condition>
+	</state>
+</ms2>
