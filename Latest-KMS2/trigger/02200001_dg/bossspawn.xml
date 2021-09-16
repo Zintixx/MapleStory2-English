@@ -27,10 +27,10 @@
 		</condition>
 	</state>
 	<state name="난이도체크">
-		<!--<condition name="DungeonID" dungeonID="23050003">
+		<condition name="DungeonID" dungeonID="23100001">
 			<transition state="쉬운난이도보스등장" />
 		</condition> 
-		<condition name="DungeonID" dungeonID="23051003">
+		<!-- <condition name="DungeonID" dungeonID="23051003">
 			<transition state="여려움난이도보스등장" />
 		</condition> -->
 		<condition name="WaitTick" waitTick="1000" >
@@ -56,6 +56,13 @@
 		<condition name="WaitTick" waitTick="30000" >
 			<transition state="입장종료처리"/>
 		</condition>
+		<condition name="AllOf">
+			<group>
+				<condition name="DungeonID" dungeonID="23100001"/>
+				<condition name="몬스터가죽어있으면" arg1="99"/>
+			</group>
+			<transition state="클리어처리"/>
+		</condition>
 		<condition name="UserValue" key="BattleEnd" value="1">  
 			<transition state="클리어처리"/>
 		</condition>
@@ -79,7 +86,11 @@
 		</condition>
 	</state>
 	<state name="입장종료이후전투진행중">
-		<condition name="UserValue" key="BattleEnd" value="1">  
+		<condition name="AllOf">
+			<group>
+				<condition name="DungeonID" dungeonID="23100001"/>
+				<condition name="몬스터가죽어있으면" arg1="99"/>
+			</group>
 			<transition state="클리어처리"/>
 		</condition>
 		<condition name="DungeonTimeOut" >						

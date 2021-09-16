@@ -40654,7 +40654,7 @@
 		</basic>
 		<level value="1">
 			<detectProperty rangeType="box" distance="200" rangeOffset="0,0,50" height="150" width="150" />
-			<motion faceTarget="0">
+			<motion sequenceName="Dead_B" faceTarget="0">
 				<attack point="p0" targetCount="1" attacktype="1" unrideOnHit="1">
 					<range rangeType="box" distance="150" height="150" width="150" includeCaster="1" applyTarget="2" castTarget="1" />
 					<arrow nonTarget="1" />
@@ -40674,22 +40674,6 @@
 				<attack point="p0" attacktype="2" brokenOffence="1" brokenForce="3" unrideOnHit="1">
 					<range rangeType="cylinder" distance="3000" height="500" applyTarget="5" castTarget="1" />
 					<damage count="0" attackMaterial="101" />
-				</attack>
-			</motion>
-		</level>
-	</skill>
-	<skill id="50003122">
-		<basic>
-			<ui attackType="1" />
-			<kinds rangeType="1" element="7" />
-		</basic>
-		<level value="1">
-			<detectProperty rangeType="cylinder" distance="700" rangeOffset="0,0,0" height="200" />
-			<motion sequenceName="Dead_B">
-				<attack point="p0" targetCount="1" attacktype="2" unrideOnHit="1" releaseObjectWeaponOnHit="0" compulsionType="1">
-					<range rangeType="cylinder" distance="150" rangeOffset="0,0,0" height="100" includeCaster="1" applyTarget="2" castTarget="2" />
-					<arrow nonTarget="1" />
-					<damage effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" damageByTargetMaxHP="2" deadAnimation="Dead_B" attackMaterial="1" />
 				</attack>
 			</motion>
 		</level>
@@ -40759,22 +40743,6 @@
 			</motion>
 		</level>
 	</skill>
-	<skill id="50003230">
-		<basic>
-			<ui attackType="1" />
-			<kinds rangeType="1" element="7" />
-		</basic>
-		<level value="1">
-			<detectProperty rangeType="cylinder" distance="700" rangeOffset="0,0,0" height="200" />
-			<motion sequenceName="Dead_B">
-				<attack point="p0" targetCount="1" attacktype="2" unrideOnHit="1" releaseObjectWeaponOnHit="0" compulsionType="1">
-					<range rangeType="cylinder" distance="150" rangeOffset="0,0,0" height="100" includeCaster="1" applyTarget="2" castTarget="2" />
-					<arrow nonTarget="1" />
-					<damage effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" damageByTargetMaxHP="2" deadAnimation="Dead_B" attackMaterial="1" />
-				</attack>
-			</motion>
-		</level>
-	</skill>
 	<skill id="50003240">
 		<basic>
 			<ui attackType="2" />
@@ -40782,7 +40750,7 @@
 		</basic>
 		<level value="1">
 			<detectProperty rangeType="box" distance="200" rangeOffset="0,0,50" height="150" width="150" />
-			<motion faceTarget="0">
+			<motion sequenceName="Dead_B" faceTarget="0">
 				<attack point="p0" targetCount="1" attacktype="1" unrideOnHit="1">
 					<range rangeType="box" distance="150" height="150" width="150" includeCaster="1" applyTarget="2" castTarget="1" />
 					<arrow nonTarget="1" />
@@ -40829,27 +40797,11 @@
 		</basic>
 		<level value="1">
 			<detectProperty rangeType="cylinder" distance="150" rangeOffset="0,0,0" height="200" />
-			<motion sequenceName="Attack_Idle_A">
+			<motion sequenceName="Dead_B">
 				<attack point="p0" targetCount="8" attacktype="2" unrideOnHit="1" releaseObjectWeaponOnHit="0" compulsionType="1">
 					<range rangeType="cylinder" distance="350" rangeOffset="0,0,0" height="200" applyTarget="1" castTarget="1" />
 					<arrow nonTarget="1" />
 					<damage rate="3" effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
-				</attack>
-			</motion>
-		</level>
-	</skill>
-	<skill id="50003310">
-		<basic>
-			<ui attackType="1" />
-			<kinds rangeType="1" element="7" />
-		</basic>
-		<level value="1">
-			<detectProperty rangeType="cylinder" distance="700" rangeOffset="0,0,0" height="200" />
-			<motion sequenceName="Dead_B">
-				<attack point="p0" targetCount="1" attacktype="2" unrideOnHit="1" releaseObjectWeaponOnHit="0" compulsionType="1">
-					<range rangeType="cylinder" distance="150" rangeOffset="0,0,0" height="100" includeCaster="1" applyTarget="2" castTarget="2" />
-					<arrow nonTarget="1" />
-					<damage effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" damageByTargetMaxHP="2" deadAnimation="Dead_B" attackMaterial="1" />
 				</attack>
 			</motion>
 		</level>
@@ -40877,28 +40829,12 @@
 		</basic>
 		<level value="1">
 			<detectProperty rangeType="cylinder" distance="200" rangeOffset="0,0,0" height="200" />
-			<motion>
+			<motion sequenceName="Dead_B">
 				<attack point="p0" targetCount="8" attacktype="2" unrideOnHit="1" releaseObjectWeaponOnHit="0" compulsionType="1">
 					<range rangeType="cylinder" distance="350" rangeOffset="0,0,0" height="200" applyTarget="1" castTarget="1" />
 					<arrow nonTarget="1" />
 					<damage effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" attackMaterial="1" />
 					<actionAdditional additionalID="49289042" level="1" skillTarget="2" skillOwner="1" />
-				</attack>
-			</motion>
-		</level>
-	</skill>
-	<skill id="50003420">
-		<basic>
-			<ui attackType="1" />
-			<kinds rangeType="1" element="7" />
-		</basic>
-		<level value="1">
-			<detectProperty rangeType="cylinder" distance="700" rangeOffset="0,0,0" height="200" />
-			<motion sequenceName="Dead_B">
-				<attack point="p0" targetCount="1" attacktype="2" unrideOnHit="1" releaseObjectWeaponOnHit="0" compulsionType="1">
-					<range rangeType="cylinder" distance="150" rangeOffset="0,0,0" height="100" includeCaster="1" applyTarget="2" castTarget="2" />
-					<arrow nonTarget="1" />
-					<damage effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" damageByTargetMaxHP="2" deadAnimation="Dead_B" attackMaterial="1" />
 				</attack>
 			</motion>
 		</level>
@@ -40985,22 +40921,6 @@
 					<arrow explosion="1" collision="50,50,50" effect="NPC/Skill/BlueLukeBall/Eff_BlueLukeBall_Arrow.xml" />
 					<damage count="0" />
 					<actionAdditional additionalID="40600084" level="1" skillTarget="2" skillOwner="1" />
-				</attack>
-			</motion>
-		</level>
-	</skill>
-	<skill id="50003541">
-		<basic>
-			<ui attackType="1" />
-			<kinds rangeType="1" element="7" />
-		</basic>
-		<level value="1">
-			<detectProperty rangeType="cylinder" distance="300" rangeOffset="0,0,0" height="200" />
-			<motion>
-				<attack point="p0" targetCount="1" attacktype="2" unrideOnHit="1" releaseObjectWeaponOnHit="0" compulsionType="1">
-					<range rangeType="cylinder" distance="150" rangeOffset="0,0,0" height="100" includeCaster="1" applyTarget="2" castTarget="2" />
-					<arrow nonTarget="1" />
-					<damage effectHit="NPC/Common/Eff_NPC_Attack_Hit_01.xml" damageByTargetMaxHP="2" attackMaterial="1" />
 				</attack>
 			</motion>
 		</level>

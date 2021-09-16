@@ -4829,14 +4829,14 @@
 	</npc>
 	<npc id="23000410">
 		<environment feature="DungeonOS01" npcAttackGroup="1" npcDefenseGroup="2" nametag="1" minimap="0" defenceMaterial="1" hitImmune="1" abnormalImmune="1" level="70" class="3" rankIcon="b" carePathToEnemy="1" propertyTags="keep_battle,can_die_by_npc,battle_on_spawn" raceString="devil" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/44110002_M_BlueLukeJunior_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" customExp="0" lookAtMyPCWhenTalking="0">
-			<model kfm="23000410_M_BlueLukeJunior" scale="1.4" shadowScale="130" rotationSpeed="720" walkSpeed="400" runSpeed="500" />
+			<model kfm="23000410_M_BlueLukeJunior" scale="1.4" shadowScale="130" rotationSpeed="720" walkSpeed="100" runSpeed="100" />
 			<stat hp="95115909920" asp="100" msp="100" atp="81" evp="102" cap="72" cad="500" car="70" ndd="1071" pap="135498754" map="135498754" par="90" mar="90" />
 			<distance avoid="60" sight="2100" sightHeightUP="300" customLastSightRadius="3500" customLastSightHeightUp="525" customLastSightHeightDown="50" />
-			<skill ids="50003200,50003201,50003220,50003230,50003240" />
+			<skill ids="50003200,50003201,50003220,50003240" />
 			<additionalEffect codes="40600085,90000814" levels="1,1" />
 			<collision shape="box" width="85" height="80" depth="80" />
 			<capsule radius="32" height="150" />
-			<dead time="5" defaultaction="Dead_A" upaction="Dead_A" />
+			<dead time="5" defaultaction="Dead_B" upaction="Dead_B" />
 			<push back="1" up="1" knockback="1" />
 			<normal action="Attack_Idle_A, Walk" prob="4500,4000" movearea="150" />
 			<dropiteminfo dropHeight="50" dropDistanceBase="100" dropDistanceRandom="50" />
@@ -4848,11 +4848,11 @@
 			<model kfm="23000420_M_BlueLukeJunior" scale="1.4" shadowScale="130" rotationSpeed="720" walkSpeed="400" runSpeed="500" />
 			<stat hp="19023181984" asp="100" msp="100" atp="81" evp="102" cap="72" cad="500" car="70" ndd="1071" pap="135498754" map="135498754" par="90" mar="90" />
 			<distance avoid="60" sight="2100" sightHeightUP="300" customLastSightRadius="3500" customLastSightHeightUp="525" customLastSightHeightDown="50" />
-			<skill ids="50003100,50003120,50003122" />
+			<skill ids="50003100,50003120" />
 			<additionalEffect codes="40600086,53200005" levels="1,1" />
 			<collision shape="box" width="85" height="80" depth="80" />
 			<capsule radius="32" height="150" />
-			<dead time="5" defaultaction="Dead_A" upaction="Dead_A" />
+			<dead time="5" defaultaction="Dead_B" upaction="Dead_B" />
 			<push back="1" up="1" knockback="1" />
 			<normal action="Attack_Idle_A, Walk" prob="4500,4000" movearea="150" />
 			<dropiteminfo dropHeight="50" dropDistanceBase="100" dropDistanceRandom="50" />
@@ -4864,11 +4864,11 @@
 			<model kfm="23000430_M_BlueLukeJunior" scale="1.2" shadowScale="130" rotationSpeed="720" walkSpeed="400" runSpeed="500" />
 			<stat hp="9511590992" asp="100" msp="100" atp="81" evp="102" cap="72" cad="500" car="70" ndd="1071" pap="67749377" map="67749377" par="90" mar="90" />
 			<distance avoid="60" sight="2100" sightHeightUP="300" customLastSightRadius="3500" customLastSightHeightUp="525" customLastSightHeightDown="50" />
-			<skill ids="50003400,50003410,50003420" />
+			<skill ids="50003400,50003410" />
 			<additionalEffect codes="40600087,90000814" levels="1,1" />
 			<collision shape="box" width="85" height="80" depth="80" />
 			<capsule radius="32" height="150" />
-			<dead time="5" defaultaction="Dead_A" upaction="Dead_A" />
+			<dead time="5" defaultaction="Dead_B" upaction="Dead_B" />
 			<push back="1" up="1" knockback="1" />
 			<normal action="Attack_Idle_A, Walk" prob="4500,4000" movearea="150" />
 			<dropiteminfo dropHeight="50" dropDistanceBase="100" dropDistanceRandom="50" />
@@ -4880,11 +4880,11 @@
 			<model kfm="23000440_M_BlueLukeJunior" scale="1.2" shadowScale="130" rotationSpeed="720" walkSpeed="400" runSpeed="500" />
 			<stat hp="9511590992" asp="100" msp="100" atp="81" evp="102" cap="72" cad="500" car="70" ndd="1071" pap="135498754" map="135498754" par="90" mar="90" />
 			<distance avoid="60" sight="2100" sightHeightUP="300" customLastSightRadius="3500" customLastSightHeightUp="525" customLastSightHeightDown="50" />
-			<skill ids="50003300,50003310" />
+			<skill ids="50003300" />
 			<additionalEffect codes="40600088,90000814" levels="1,1" />
 			<collision shape="box" width="85" height="80" depth="80" />
 			<capsule radius="32" height="150" />
-			<dead time="5" defaultaction="Dead_A" upaction="Dead_A" />
+			<dead time="5" defaultaction="Dead_B" upaction="Dead_B" />
 			<push back="1" up="1" knockback="1" />
 			<normal action="Attack_Idle_A, Walk" prob="4500,4000" movearea="150" />
 			<dropiteminfo dropHeight="50" dropDistanceBase="100" dropDistanceRandom="50" />
@@ -4896,7 +4896,7 @@
 			<model kfm="sw_quest_soulbead_B01" rotationSpeed="720" />
 			<stat hp="225579549" asp="100" msp="100" atp="80" evp="82" cap="62" cad="500" car="50" ndd="1285" pap="27099750" map="27099750" par="90" mar="90" />
 			<distance avoid="50" sight="3000" sightHeightUP="1000" sightHeightDown="225" customLastSightRadius="10000" customLastSightHeightUp="1000" customLastSightHeightDown="1000" />
-			<skill ids="50003500,50003520,50003530,50003540,50003541" />
+			<skill ids="50003500,50003520,50003530,50003540" />
 			<additionalEffect codes="40600080,40600081" levels="1,1" />
 			<collision shape="box" width="100" height="150" depth="100" />
 			<capsule radius="50" height="150" />
@@ -4910,7 +4910,7 @@
 			<model kfm="sw_quest_soulbead_B01" rotationSpeed="720" />
 			<stat hp="225579549" asp="100" msp="100" atp="80" evp="82" cap="62" cad="500" car="50" ndd="1285" pap="27099750" map="27099750" par="90" mar="90" />
 			<distance avoid="50" sight="3000" sightHeightUP="1000" sightHeightDown="225" customLastSightRadius="10000" customLastSightHeightUp="1000" customLastSightHeightDown="1000" />
-			<skill ids="50003500,50003520,50003530,50003540,50003541" />
+			<skill ids="50003500,50003520,50003530,50003540" />
 			<additionalEffect codes="40600080,40600081" levels="1,1" />
 			<collision shape="box" width="100" height="150" depth="100" />
 			<capsule radius="50" height="150" />
@@ -4924,7 +4924,7 @@
 			<model kfm="sw_quest_soulbead_B01" rotationSpeed="720" />
 			<stat hp="225579549" asp="100" msp="100" atp="80" evp="82" cap="62" cad="500" car="50" ndd="1285" pap="27099750" map="27099750" par="90" mar="90" />
 			<distance avoid="50" sight="3000" sightHeightUP="1000" sightHeightDown="225" customLastSightRadius="10000" customLastSightHeightUp="1000" customLastSightHeightDown="1000" />
-			<skill ids="50003500,50003520,50003530,50003540,50003541" />
+			<skill ids="50003500,50003520,50003530,50003540" />
 			<additionalEffect codes="40600080,40600081" levels="1,1" />
 			<collision shape="box" width="100" height="150" depth="100" />
 			<capsule radius="32" height="150" />
@@ -4938,7 +4938,7 @@
 			<model kfm="sw_quest_soulbead_B01" rotationSpeed="720" />
 			<stat hp="225579549" asp="100" msp="100" atp="80" evp="82" cap="62" cad="500" car="50" ndd="1285" pap="27099750" map="27099750" par="90" mar="90" />
 			<distance avoid="50" sight="3000" sightHeightUP="1000" sightHeightDown="225" customLastSightRadius="10000" customLastSightHeightUp="1000" customLastSightHeightDown="1000" />
-			<skill ids="50003500,50003520,50003530,50003540,50003541" />
+			<skill ids="50003500,50003520,50003530,50003540" />
 			<additionalEffect codes="40600080,40600081" levels="1,1" />
 			<collision shape="box" width="100" height="150" depth="100" />
 			<capsule radius="32" height="150" />
@@ -4952,7 +4952,7 @@
 			<model kfm="sw_quest_soulbead_B01" rotationSpeed="720" />
 			<stat hp="225579549" asp="100" msp="100" atp="80" evp="82" cap="62" cad="500" car="50" ndd="1285" pap="27099750" map="27099750" par="90" mar="90" />
 			<distance avoid="50" sight="3000" sightHeightUP="1000" sightHeightDown="225" customLastSightRadius="10000" customLastSightHeightUp="1000" customLastSightHeightDown="1000" />
-			<skill ids="50003500,50003520,50003530,50003540,50003541" />
+			<skill ids="50003500,50003520,50003530,50003540" />
 			<additionalEffect codes="40600080,40600081" levels="1,1" />
 			<collision shape="box" width="100" height="150" depth="100" />
 			<capsule radius="32" height="150" />
@@ -4966,7 +4966,7 @@
 			<model kfm="sw_quest_soulbead_B01" rotationSpeed="720" />
 			<stat hp="225579549" asp="100" msp="100" atp="80" evp="82" cap="62" cad="500" car="50" ndd="1285" pap="27099750" map="27099750" par="90" mar="90" />
 			<distance avoid="50" sight="3000" sightHeightUP="1000" sightHeightDown="225" customLastSightRadius="10000" customLastSightHeightUp="1000" customLastSightHeightDown="1000" />
-			<skill ids="50003500,50003520,50003530,50003540,50003541" />
+			<skill ids="50003500,50003520,50003530,50003540" />
 			<additionalEffect codes="40600080,40600081" levels="1,1" />
 			<collision shape="box" width="100" height="150" depth="100" />
 			<capsule radius="32" height="150" />
@@ -4980,7 +4980,7 @@
 			<model kfm="sw_quest_soulbead_B01" rotationSpeed="720" />
 			<stat hp="225579549" asp="100" msp="100" atp="80" evp="82" cap="62" cad="500" car="50" ndd="1285" pap="27099750" map="27099750" par="90" mar="90" />
 			<distance avoid="50" sight="3000" sightHeightUP="1000" sightHeightDown="225" customLastSightRadius="10000" customLastSightHeightUp="1000" customLastSightHeightDown="1000" />
-			<skill ids="50003500,50003520,50003530,50003540,50003541" />
+			<skill ids="50003500,50003520,50003530,50003540" />
 			<additionalEffect codes="40600080,40600081" levels="1,1" />
 			<collision shape="box" width="100" height="150" depth="100" />
 			<capsule radius="32" height="150" />
@@ -4994,7 +4994,7 @@
 			<model kfm="sw_quest_soulbead_B01" rotationSpeed="720" />
 			<stat hp="225579549" asp="100" msp="100" atp="80" evp="82" cap="62" cad="500" car="50" ndd="1285" pap="27099750" map="27099750" par="90" mar="90" />
 			<distance avoid="50" sight="3000" sightHeightUP="1000" sightHeightDown="225" customLastSightRadius="10000" customLastSightHeightUp="1000" customLastSightHeightDown="1000" />
-			<skill ids="50003500,50003520,50003530,50003540,50003541" />
+			<skill ids="50003500,50003520,50003530,50003540" />
 			<additionalEffect codes="40600080,40600081" levels="1,1" />
 			<collision shape="box" width="100" height="150" depth="100" />
 			<capsule radius="32" height="150" />
