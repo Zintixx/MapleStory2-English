@@ -1,171 +1,159 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ms2>
-	<additional id="49016001">
-		<level stringParam="5">
-			<BasicProperty level="1" buffSubType="1" durationTick="10000" resetCondition="2" maxBuffCount="5" />
-			<MotionProperty keepEffect="NPC/Skill/Ureus/Eff_Ureus_TotemBuff_Keep.xml" stopEffect="NPC/Skill/Ureus/Eff_Ureus_TotemBuff_Stop.xml" abnormalImmuneBreak="1" scale="0.5" />
-			<Stat>
-				<v type="pap" value="0.3" isRate="1" />
-				<v type="map" value="0.3" isRate="1" />
-			</Stat>
-			<UIProperty icon="./Data/Resource/Image/skill/icon/MonsterOffenceUp.png" />
-			<conditionSkill level="1" skillID="49016011" skillTarget="1">
-				<beginCondition>
-					<owner hasBuffID="49016001" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="5" hasBuffCountCompare="Equals" eventCondition="10" />
-				</beginCondition>
-			</conditionSkill>
+	<additional id="49016001" mainType="1">
+		<level level="1" stringParam="5">
+			<Basic durationTick="10000" resetCondition="2" maxBuffCount="5" />
+			<Motion keepEffect="NPC/Skill/Ureus/Eff_Ureus_TotemBuff_Keep.xml" stopEffect="NPC/Skill/Ureus/Eff_Ureus_TotemBuff_Stop.xml" abnormalImmuneBreak="1" scale="0.5" />
+			<SpecialAbility>
+				<v type="papRate" value="300" />
+				<v type="mapRate" value="300" />
+			</SpecialAbility>
+			<UI icon="./Data/Resource/Image/skill/icon/MonsterOffenceUp.png" />
+			<Additional level="1" skillID="49016011" skillTarget="1" ownerEvent="10" ownerAdditionalID="49016001" ownerAdditionalCount="5" />
 		</level>
 	</additional>
-	<additional id="49016002">
-		<level>
-			<BasicProperty level="1" buffSubType="1" keepCondition="99" />
-			<MotionProperty abnormalImmuneBreak="1" />
+	<additional id="49016002" mainType="1">
+		<level level="1">
+			<Basic keepCondition="99" />
+			<Motion abnormalImmuneBreak="1" />
 		</level>
 	</additional>
 	<additional id="49016011">
-		<level>
-			<BasicProperty level="1" durationTick="5000" />
-			<MotionProperty keepEffect="NPC/Skill/PuppetBunnySummoner/Eff_PuppetBunnySummoner_Immune_Keep.xml" stopEffect="NPC/Skill/PuppetBunnySummoner/Eff_PuppetBunnySummoner_Immune_Stop.xml" abnormalImmuneBreak="1" />
-			<DefensiveProperty invincible="2" />
-			<UIProperty icon="./Data/Resource/Image/skill/icon/MonsterInvincible.png" />
+		<level level="1">
+			<Basic durationTick="5000" />
+			<Motion keepEffect="NPC/Skill/PuppetBunnySummoner/Eff_PuppetBunnySummoner_Immune_Keep.xml" stopEffect="NPC/Skill/PuppetBunnySummoner/Eff_PuppetBunnySummoner_Immune_Stop.xml" abnormalImmuneBreak="1" />
+			<Defensive invincible="2" />
+			<UI icon="./Data/Resource/Image/skill/icon/MonsterInvincible.png" />
 		</level>
 	</additional>
-	<additional id="49017001">
-		<level>
-			<BasicProperty level="1" buffSubType="5" durationTick="10000" />
-			<MotionProperty startEffect="NPC/Skill/Ureus/Eff_Ureus_TotemHeal_Start.xml" abnormalImmuneBreak="1" />
-			<RecoveryProperty hpRate="0.03" />
+	<additional id="49017001" mainType="5">
+		<level level="1">
+			<Basic durationTick="10000" />
+			<Motion startEffect="NPC/Skill/Ureus/Eff_Ureus_TotemHeal_Start.xml" abnormalImmuneBreak="1" />
+			<Recovery hpRate="0.03" />
 		</level>
 	</additional>
-	<additional id="49018001">
-		<level stringParam="5">
-			<BasicProperty level="1" buffType="2" buffSubType="1" durationTick="10000" resetCondition="2" maxBuffCount="5" />
-			<MotionProperty keepEffect="NPC/Skill/Ureus/Eff_Ureus_TotemCurse_Keep.xml" stopEffect="NPC/Skill/Ureus/Eff_Ureus_TotemCurse_Stop.xml" abnormalImmuneBreak="1" />
-			<Stat>
-				<v type="msp" value="-0.2" isRate="1" />
-				<v type="rmsp" value="-0.2" isRate="1" />
-			</Stat>
-			<UIProperty icon="./Data/Resource/Image/skill/icon/SpeedDown.png" />
-			<conditionSkill level="1" skillID="49018002" skillTarget="1">
-				<beginCondition>
-					<owner hasBuffID="49018001" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="5" hasBuffCountCompare="Equals" eventCondition="10" />
-				</beginCondition>
-			</conditionSkill>
+	<additional id="49018001" mainType="1" isDebuff="1">
+		<level level="1" stringParam="5">
+			<Basic durationTick="10000" resetCondition="2" maxBuffCount="5" />
+			<Motion keepEffect="NPC/Skill/Ureus/Eff_Ureus_TotemCurse_Keep.xml" stopEffect="NPC/Skill/Ureus/Eff_Ureus_TotemCurse_Stop.xml" abnormalImmuneBreak="1" />
+			<SpecialAbility>
+				<v type="mspRate" value="-200" />
+				<v type="rmspRate" value="-200" />
+			</SpecialAbility>
+			<UI icon="./Data/Resource/Image/skill/icon/SpeedDown.png" />
+			<Additional level="1" skillID="49018002" skillTarget="1" ownerEvent="10" ownerAdditionalID="49018001" ownerAdditionalCount="5" />
 		</level>
 	</additional>
-	<additional id="49018002">
-		<level>
-			<BasicProperty level="1" buffType="2" durationTick="5000" />
-			<MotionProperty keepEffect="NPC/Skill/BoogieJunior/Eff_BoogieJunior_Attack_01_B_Keep.xml" stopEffect="NPC/Skill/BoogieJunior/Eff_BoogieJunior_Attack_01_B_Stop.xml" abnormalImmuneBreak="1" skillUseDisable="6" />
-			<UIProperty icon="./Data/Resource/Image/skill/icon/Silence.png" />
+	<additional id="49018002" isDebuff="1">
+		<level level="1">
+			<Basic durationTick="5000" />
+			<Motion keepEffect="NPC/Skill/BoogieJunior/Eff_BoogieJunior_Attack_01_B_Keep.xml" stopEffect="NPC/Skill/BoogieJunior/Eff_BoogieJunior_Attack_01_B_Stop.xml" abnormalImmuneBreak="1" skillUseDisable="6" />
+			<UI icon="./Data/Resource/Image/skill/icon/Silence.png" />
 		</level>
 	</additional>
-	<additional id="49021011">
-		<level>
-			<BasicProperty level="1" buffType="2" buffSubType="3" durationTick="1000" resetCondition="1" />
-			<MotionProperty keepEffect="NPC/Skill/DragonDevilBigHead/Eff_DragonDevilBigHead_paralyze_Keep.xml" stopEffect="NPC/Skill/DragonDevilBigHead/Eff_DragonDevilBigHead_paralyze_Stop.xml" stun="3" abnormalImmuneBreak="1" />
-			<UIProperty icon="./Data/Resource/Image/skill/icon/ShadowPoison.png" />
+	<additional id="49021011" mainType="3" isDebuff="1">
+		<level level="1">
+			<Basic durationTick="1000" resetCondition="1" />
+			<Motion keepEffect="NPC/Skill/DragonDevilBigHead/Eff_DragonDevilBigHead_paralyze_Keep.xml" stopEffect="NPC/Skill/DragonDevilBigHead/Eff_DragonDevilBigHead_paralyze_Stop.xml" stun="3" abnormalImmuneBreak="1" />
+			<UI icon="./Data/Resource/Image/skill/icon/ShadowPoison.png" />
 		</level>
 	</additional>
-	<additional id="49022011">
-		<level>
-			<BasicProperty level="1" group="1" buffType="2" buffSubType="3" durationTick="500" />
-			<MotionProperty keepEffect="Additional/Stun/Eff_Additional_Stun_Keep.xml" stopEffect="Additional/Stun/Eff_Additional_Stun_Stop.xml" stun="1" abnormalImmuneBreak="1" />
-			<UIProperty icon="./Data/Resource/Image/skill/icon/Stun.png" />
+	<additional id="49022011" mainType="3" isDebuff="1">
+		<level level="1">
+			<Basic group="1" durationTick="500" />
+			<Motion keepEffect="Additional/Stun/Eff_Additional_Stun_Keep.xml" stopEffect="Additional/Stun/Eff_Additional_Stun_Stop.xml" stun="1" abnormalImmuneBreak="1" />
+			<UI icon="./Data/Resource/Image/skill/icon/Stun.png" />
 		</level>
 	</additional>
-	<additional id="49023001">
-		<level>
-			<BasicProperty level="1" buffType="2" buffSubType="3" durationTick="200" intervalTick="150" />
-			<MotionProperty abnormalImmuneBreak="1" />
-			<CancelEffectProperty cancelEffectCodes="50000300" />
+	<additional id="49023001" mainType="3" isDebuff="1">
+		<level level="1">
+			<Basic durationTick="200" intervalTick="150" />
+			<Motion abnormalImmuneBreak="1" />
+			<CancelEffect cancelEffectCodes="50000300" />
 		</level>
 	</additional>
-	<additional id="49025011">
-		<level stringParam="50,99,40">
-			<BasicProperty level="1" buffType="2" durationTick="5000" />
-			<MotionProperty startEffect="NPC/Skill/KingSlime/Eff_KingSlime_Attack_Curse_Hit.xml" abnormalImmuneBreak="1" scale="-0.5" />
-			<Stat>
-				<v type="msp" value="1.5" isRate="1" />
-				<v type="ndd" value="-0.4" isRate="1" />
-				<v type="pap" value="-0.99" isRate="1" />
-				<v type="map" value="-0.99" isRate="1" />
-			</Stat>
-			<UIProperty icon="./Data/Resource/Image/skill/icon/MagicSmallScale.png" />
+	<additional id="49025011" isDebuff="1">
+		<level level="1" stringParam="50,99,40">
+			<Basic durationTick="5000" />
+			<Motion startEffect="NPC/Skill/KingSlime/Eff_KingSlime_Attack_Curse_Hit.xml" abnormalImmuneBreak="1" scale="-0.5" />
+			<SpecialAbility>
+				<v type="mspRate" value="1500" />
+				<v type="nddRate" value="-400" />
+				<v type="papRate" value="-990" />
+				<v type="mapRate" value="-990" />
+			</SpecialAbility>
+			<UI icon="./Data/Resource/Image/skill/icon/MagicSmallScale.png" />
 		</level>
 	</additional>
-	<additional id="49033021">
-		<level>
-			<BasicProperty level="1" buffSubType="1" durationTick="5000" intervalTick="1000" dotCondition="1" />
-			<MotionProperty keepEffect="NPC/Skill/DevilBatTrident/Eff_DevilBatTrident_Bore_01_A_Keep_01.xml" stopEffect="NPC/Skill/DevilBatTrident/Eff_DevilBatTrident_Bore_01_A_Stop_01.xml" abnormalImmuneBreak="1" />
-			<splashSkill level="1" skillID="49033022" immediateActive="1" />
+	<additional id="49033021" mainType="1">
+		<level level="1">
+			<Basic durationTick="5000" intervalTick="1000" dotCondition="1" />
+			<Motion keepEffect="NPC/Skill/DevilBatTrident/Eff_DevilBatTrident_Bore_01_A_Keep_01.xml" stopEffect="NPC/Skill/DevilBatTrident/Eff_DevilBatTrident_Bore_01_A_Stop_01.xml" abnormalImmuneBreak="1" />
+			<Skill level="1" skillID="49033022" immediateActive="1" />
 		</level>
 	</additional>
-	<additional id="49034001">
-		<level>
-			<BasicProperty level="1" buffType="2" durationTick="200" intervalTick="150" />
-			<MotionProperty startEffect="NPC/Skill/DevilBatTrident/Eff_DevilBatTrident_BloodyDesire_Start_01.xml" abnormalImmuneBreak="1" />
-			<RecoveryProperty hpRate="0.03" />
+	<additional id="49034001" isDebuff="1">
+		<level level="1">
+			<Basic durationTick="200" intervalTick="150" />
+			<Motion startEffect="NPC/Skill/DevilBatTrident/Eff_DevilBatTrident_BloodyDesire_Start_01.xml" abnormalImmuneBreak="1" />
+			<Recovery hpRate="0.03" />
 		</level>
 	</additional>
-	<additional id="49034011">
-		<level>
-			<BasicProperty level="1" buffType="2" durationTick="200" intervalTick="150" />
-			<MotionProperty startEffect="NPC/Skill/DevilBatTrident/Eff_DevilBatTrident_BloodyDesire_Start_01.xml" abnormalImmuneBreak="1" />
-			<RecoveryProperty hpRate="0.1" />
+	<additional id="49034011" isDebuff="1">
+		<level level="1">
+			<Basic durationTick="200" intervalTick="150" />
+			<Motion startEffect="NPC/Skill/DevilBatTrident/Eff_DevilBatTrident_BloodyDesire_Start_01.xml" abnormalImmuneBreak="1" />
+			<Recovery hpRate="0.1" />
 		</level>
 	</additional>
-	<additional id="49042001">
-		<level stringParam="50">
-			<BasicProperty level="1" buffType="2" durationTick="5000" />
-			<MotionProperty keepEffect="Additional/Slow/Eff_Additional_Slow_Keep.xml" abnormalImmuneBreak="1" />
-			<Stat>
-				<v type="msp" value="-0.5" isRate="1" />
-				<v type="rmsp" value="-0.5" isRate="1" />
-			</Stat>
-			<UIProperty icon="./Data/Resource/Image/skill/icon/SpeedDown.png" />
+	<additional id="49042001" isDebuff="1">
+		<level level="1" stringParam="50">
+			<Basic durationTick="5000" />
+			<Motion keepEffect="Additional/Slow/Eff_Additional_Slow_Keep.xml" abnormalImmuneBreak="1" />
+			<SpecialAbility>
+				<v type="mspRate" value="-500" />
+				<v type="rmspRate" value="-500" />
+			</SpecialAbility>
+			<UI icon="./Data/Resource/Image/skill/icon/SpeedDown.png" />
 		</level>
 	</additional>
 	<additional id="49045001">
-		<level>
-			<BasicProperty level="1" keepCondition="99" />
-			<MotionProperty keepEffect="NPC/Skill/CannonWeaponNormal/Eff_CannonWeaponNormal_BodyEffect_Range.xml" abnormalImmuneBreak="1" />
+		<level level="1">
+			<Basic keepCondition="99" />
+			<Motion keepEffect="NPC/Skill/CannonWeaponNormal/Eff_CannonWeaponNormal_BodyEffect_Range.xml" abnormalImmuneBreak="1" />
 		</level>
 	</additional>
-	<additional id="49093001">
-		<level stringParam="3">
-			<BasicProperty level="1" buffType="2" durationTick="40000" resetCondition="2" maxBuffCount="3" logoutClearEffect="1" />
-			<MotionProperty keepEffect="NPC/Skill/Scorpion/Eff_Scorpion_Attack_01_B_Ice_Keep.xml" abnormalImmuneBreak="1" />
-			<UIProperty icon="./Data/Resource/Image/skill/icon/FuryIceDamage.png" />
-			<conditionSkill level="1" skillID="49093002" skillTarget="1">
-				<beginCondition>
-					<owner hasBuffID="49093001" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="3" hasBuffCountCompare="Equals" eventCondition="10" />
-				</beginCondition>
-			</conditionSkill>
+	<additional id="49093001" isDebuff="1">
+		<level level="1" stringParam="3">
+			<Basic durationTick="40000" resetCondition="2" maxBuffCount="3" logoutClearEffect="1" />
+			<Motion keepEffect="NPC/Skill/Scorpion/Eff_Scorpion_Attack_01_B_Ice_Keep.xml" abnormalImmuneBreak="1" />
+			<UI icon="./Data/Resource/Image/skill/icon/FuryIceDamage.png" />
+			<Additional level="1" skillID="49093002" skillTarget="1" ownerEvent="10" ownerAdditionalID="49093001" ownerAdditionalCount="3" />
 		</level>
 	</additional>
-	<additional id="49093002">
-		<level>
-			<BasicProperty level="1" buffType="2" durationTick="3000" />
-			<MotionProperty keepEffect="NPC/Skill/YetiTwoHeadWhite/Eff_YetiTwoHeadWhite_FrozenCube_Keep.xml" stopEffect="NPC/Skill/YetiTwoHeadWhite/Eff_YetiTwoHeadWhite_FrozenCube_Stop.xml" stun="3" abnormalImmuneBreak="1" />
-			<CancelEffectProperty cancelEffectCodes="49093001" />
-			<ImmuneEffectProperty immuneEffectCodes="49093001" />
-			<UIProperty icon="./Data/Resource/Image/skill/icon/IceCubePrison.png" />
+	<additional id="49093002" isDebuff="1">
+		<level level="1">
+			<Basic durationTick="3000" />
+			<Motion keepEffect="NPC/Skill/YetiTwoHeadWhite/Eff_YetiTwoHeadWhite_FrozenCube_Keep.xml" stopEffect="NPC/Skill/YetiTwoHeadWhite/Eff_YetiTwoHeadWhite_FrozenCube_Stop.xml" stun="3" abnormalImmuneBreak="1" />
+			<CancelEffect cancelEffectCodes="49093001" />
+			<ImmuneEffect immuneEffectCodes="49093001" />
+			<UI icon="./Data/Resource/Image/skill/icon/IceCubePrison.png" />
 		</level>
 	</additional>
-	<additional id="49094001">
-		<level>
-			<BasicProperty level="1" buffType="2" durationTick="100" />
-			<MotionProperty keepEffect="Additional/Burn/Eff_Additional_Burn_Keep.xml" abnormalImmuneBreak="1" />
-			<CancelEffectProperty cancelEffectCodes="49093001" />
-			<ImmuneEffectProperty immuneEffectCodes="49093001" />
+	<additional id="49094001" isDebuff="1">
+		<level level="1">
+			<Basic durationTick="100" />
+			<Motion keepEffect="Additional/Burn/Eff_Additional_Burn_Keep.xml" abnormalImmuneBreak="1" />
+			<CancelEffect cancelEffectCodes="49093001" />
+			<ImmuneEffect immuneEffectCodes="49093001" />
 		</level>
 	</additional>
-	<additional id="49095001">
-		<level>
-			<BasicProperty level="1" group="1" buffType="2" buffSubType="3" durationTick="1500" />
-			<MotionProperty keepEffect="Additional/Stun/Eff_Additional_Stun_Keep.xml" stopEffect="Additional/Stun/Eff_Additional_Stun_Stop.xml" stun="1" abnormalImmuneBreak="1" />
-			<UIProperty icon="./Data/Resource/Image/skill/icon/Stun.png" />
+	<additional id="49095001" mainType="3" isDebuff="1">
+		<level level="1">
+			<Basic group="1" durationTick="1500" />
+			<Motion keepEffect="Additional/Stun/Eff_Additional_Stun_Keep.xml" stopEffect="Additional/Stun/Eff_Additional_Stun_Stop.xml" stun="1" abnormalImmuneBreak="1" />
+			<UI icon="./Data/Resource/Image/skill/icon/Stun.png" />
 		</level>
 	</additional>
 </ms2>

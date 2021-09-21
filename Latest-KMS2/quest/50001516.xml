@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- 파싱해서 사용하는 데이터이니 직접 수정하지 마세요 -->
 <ms2>
-	<environment feature="PirateOcean" locale="KR">
+	<environment feature="PirateOcean">
 		<quest>
 			<basic questID="50001516" chapterID="4073" standardLevel="52" locking="1" useNavi="FALSE" />
 			<require level="52" quest="50001515" />
@@ -38,25 +38,6 @@
 			<progressMap progressMap="02000182" />
 			<gotoDungeon state="1" gotoInstanceID="1100002" />
 			<condition type="npc" code="24003001,29000211" target="02000392" value="1" />
-		</quest>
-	</environment>
-	<environment feature="PirateOcean">
-		<quest>
-			<basic questID="50001516" chapterID="4073" standardLevel="52" locking="1" useNavi="FALSE" />
-			<require level="52" quest="50001515" />
-			<start npc="11003082" />
-			<complete npc="11003082" />
-			<completeReward exp="4853198" relativeExp="epicQuest" money="7300">
-				<essentialItem code="20000026" rank="1" count="5" />
-				<essentialItem code="20000032" rank="1" count="5" />
-				<globalEssentialItem code="20000024" rank="1" count="3" />
-				<globalEssentialItem code="20000030" rank="1" count="3" />
-				<globalEssentialJobItem code="0" rank="0" count="0" />
-			</completeReward>
-			<progressMap progressMap="02000182" />
-			<gotoDungeon state="1" gotoInstanceID="1100002" />
-			<condition type="npc" code="24003001,29000211" target="02000392" value="1" />
-			<condition type="npc" code="24003002,29000212" target="02000392" value="1" />
 		</quest>
 	</environment>
 </ms2>

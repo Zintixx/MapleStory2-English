@@ -1,180 +1,142 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ms2>
 	<additional id="91000001">
-		<level>
-			<BasicProperty level="1" keepCondition="99" doNotClearEffectFromEnterPVPZone="1" />
-			<conditionSkill level="1" skillID="91000002" skillTarget="1">
-				<beginCondition>
-					<owner eventCondition="16" eventEffectID="10100102" />
-				</beginCondition>
-			</conditionSkill>
+		<level level="1">
+			<Basic keepCondition="99" doNotClearEffectFromEnterPVPZone="1" />
+			<Additional level="1" skillID="91000002" skillTarget="1" ownerEvent="16" ownerEventAdditionalID="10100102" />
 		</level>
 	</additional>
 	<additional id="91000002">
-		<level>
-			<BasicProperty level="1" durationTick="100" />
-			<MotionProperty abnormalImmuneBreak="5" />
-			<RecoveryProperty spValue="3" />
+		<level level="1">
+			<Basic durationTick="100" />
+			<Motion abnormalImmuneBreak="5" />
+			<Recovery spValue="3" />
 		</level>
 	</additional>
 	<additional id="91000011">
-		<level>
-			<BasicProperty level="1" keepCondition="99" doNotClearEffectFromEnterPVPZone="1" />
-			<conditionSkill level="1" skillID="91000012" skillTarget="1">
-				<beginCondition>
-					<owner eventCondition="16" eventEffectID="10100102" />
-				</beginCondition>
-			</conditionSkill>
+		<level level="1">
+			<Basic keepCondition="99" doNotClearEffectFromEnterPVPZone="1" />
+			<Additional level="1" skillID="91000012" skillTarget="1" ownerEvent="16" ownerEventAdditionalID="10100102" />
 		</level>
 	</additional>
 	<additional id="91000012">
-		<level>
-			<BasicProperty level="1" durationTick="100" />
-			<MotionProperty abnormalImmuneBreak="5" />
-			<RecoveryProperty spValue="3" />
+		<level level="1">
+			<Basic durationTick="100" />
+			<Motion abnormalImmuneBreak="5" />
+			<Recovery spValue="3" />
 		</level>
 	</additional>
 	<additional id="91000021">
-		<level>
-			<beginCondition>
-				<owner hasBuffID="10200081" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="0" hasBuffCountCompare="Equals" />
-			</beginCondition>
-			<BasicProperty level="1" intervalTick="500" keepCondition="99" doNotClearEffectFromEnterPVPZone="1" />
-			<conditionSkill level="1" skillID="91000022" skillTarget="1" activeByIntervalTick="1" />
+		<level level="1">
+			<Basic intervalTick="500" keepCondition="99" doNotClearEffectFromEnterPVPZone="1" />
+			<Condition hasBuffID="10200081" />
+			<Additional level="1" skillID="91000022" skillTarget="1" activeByIntervalTick="1" />
 		</level>
 	</additional>
 	<additional id="91000022">
-		<level>
-			<BasicProperty level="1" durationTick="100" coolDownTime="1" />
-			<MotionProperty abnormalImmuneBreak="5" />
-			<RecoveryProperty hpRate="0.01" />
+		<level level="1">
+			<Basic durationTick="100" coolDownTime="1" />
+			<Motion abnormalImmuneBreak="5" />
+			<Recovery hpRate="0.01" />
 		</level>
 	</additional>
 	<additional id="91000031">
-		<level>
-			<BasicProperty level="1" keepCondition="99" doNotClearEffectFromEnterPVPZone="1" />
+		<level level="1">
+			<Basic keepCondition="99" doNotClearEffectFromEnterPVPZone="1" />
 		</level>
 	</additional>
 	<additional id="91000041">
-		<level>
-			<BasicProperty level="1" keepCondition="99" doNotClearEffectFromEnterPVPZone="1" />
-			<conditionSkill level="1" skillID="91000042" skillTarget="2">
-				<beginCondition>
-					<owner eventCondition="6" eventSkillID="10400011" />
-				</beginCondition>
-			</conditionSkill>
+		<level level="1">
+			<Basic keepCondition="99" doNotClearEffectFromEnterPVPZone="1" />
+			<Additional level="1" skillID="91000042" skillTarget="2" ownerEvent="6" ownerEventSkillID="10400011" />
 		</level>
 	</additional>
-	<additional id="91000042">
-		<level>
-			<BasicProperty level="1" buffType="2" durationTick="100" casterIndividualEffect="1" />
-			<MotionProperty abnormalImmuneBreak="5" />
-			<DotDamageProperty type="2" rate="0.07" element="4" />
+	<additional id="91000042" isDebuff="1">
+		<level level="1">
+			<Basic durationTick="100" casterIndividualEffect="1" />
+			<Motion abnormalImmuneBreak="5" />
+			<DotDamage type="2" rate="0.07" element="4" />
 		</level>
 	</additional>
 	<additional id="91000051">
-		<level>
-			<BasicProperty level="1" keepCondition="99" doNotClearEffectFromEnterPVPZone="1" />
-			<conditionSkill level="1" skillID="91000052" skillTarget="2">
-				<beginCondition>
-					<owner eventCondition="6" eventSkillID="10400011" />
-				</beginCondition>
-			</conditionSkill>
+		<level level="1">
+			<Basic keepCondition="99" doNotClearEffectFromEnterPVPZone="1" />
+			<Additional level="1" skillID="91000052" skillTarget="2" ownerEvent="6" ownerEventSkillID="10400011" />
 		</level>
 	</additional>
-	<additional id="91000052">
-		<level>
-			<BasicProperty level="1" buffType="2" durationTick="100" casterIndividualEffect="1" />
-			<MotionProperty abnormalImmuneBreak="5" />
-			<DotDamageProperty type="2" rate="0.07" element="4" />
+	<additional id="91000052" isDebuff="1">
+		<level level="1">
+			<Basic durationTick="100" casterIndividualEffect="1" />
+			<Motion abnormalImmuneBreak="5" />
+			<DotDamage type="2" rate="0.07" element="4" />
 		</level>
 	</additional>
 	<additional id="91000061">
-		<level>
-			<BasicProperty level="1" keepCondition="99" doNotClearEffectFromEnterPVPZone="1" />
-			<conditionSkill level="1" skillID="91000062" skillTarget="2">
-				<beginCondition>
-					<owner eventCondition="6" eventSkillID="10500181" />
-				</beginCondition>
-			</conditionSkill>
+		<level level="1">
+			<Basic keepCondition="99" doNotClearEffectFromEnterPVPZone="1" />
+			<Additional level="1" skillID="91000062" skillTarget="2" ownerEvent="6" ownerEventSkillID="10500181" />
 		</level>
 	</additional>
-	<additional id="91000062">
-		<level>
-			<BasicProperty level="1" buffType="2" buffSubType="3" buffCategory="7" durationTick="1200" coolDownTime="5" />
-			<MotionProperty keepEffect="Additional/Stun/Eff_Additional_Stun_Keep.xml" stun="1" abnormalImmuneBreak="5" />
-			<UIProperty icon="./Data/Resource/Image/skill/icon/Stun.png" />
+	<additional id="91000062" mainType="3" isDebuff="1" category="7">
+		<level level="1">
+			<Basic durationTick="1200" coolDownTime="5" />
+			<Motion keepEffect="Additional/Stun/Eff_Additional_Stun_Keep.xml" stun="1" abnormalImmuneBreak="5" />
+			<UI icon="./Data/Resource/Image/skill/icon/Stun.png" />
 		</level>
 	</additional>
 	<additional id="91000071">
-		<level>
-			<BasicProperty level="1" keepCondition="99" doNotClearEffectFromEnterPVPZone="1" />
-			<conditionSkill level="1" skillID="91000072" skillTarget="2">
-				<beginCondition>
-					<owner eventCondition="6" eventSkillID="10600092" />
-				</beginCondition>
-			</conditionSkill>
+		<level level="1">
+			<Basic keepCondition="99" doNotClearEffectFromEnterPVPZone="1" />
+			<Additional level="1" skillID="91000072" skillTarget="2" ownerEvent="6" ownerEventSkillID="10600092" />
 		</level>
 	</additional>
-	<additional id="91000072">
-		<level>
-			<BasicProperty level="1" buffType="2" buffSubType="3" buffCategory="7" durationTick="1500" />
-			<MotionProperty keepEffect="Additional/Stun/Eff_Additional_Stun_Keep.xml" stun="1" abnormalImmuneBreak="5" />
-			<UIProperty icon="./Data/Resource/Image/skill/icon/Stun.png" />
+	<additional id="91000072" mainType="3" isDebuff="1" category="7">
+		<level level="1">
+			<Basic durationTick="1500" />
+			<Motion keepEffect="Additional/Stun/Eff_Additional_Stun_Keep.xml" stun="1" abnormalImmuneBreak="5" />
+			<UI icon="./Data/Resource/Image/skill/icon/Stun.png" />
 		</level>
 	</additional>
 	<additional id="91000081">
-		<level>
-			<BasicProperty level="1" keepCondition="99" doNotClearEffectFromEnterPVPZone="1" />
+		<level level="1">
+			<Basic keepCondition="99" doNotClearEffectFromEnterPVPZone="1" />
 		</level>
 	</additional>
 	<additional id="91000091">
-		<level>
-			<beginCondition>
-				<owner hasBuffID="91000093" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="1" hasBuffCountCompare="Equals" />
-			</beginCondition>
-			<BasicProperty level="1" keepCondition="99" doNotClearEffectFromEnterPVPZone="1" />
-			<conditionSkill level="1" skillID="91000094" skillTarget="2">
-				<beginCondition>
-					<owner eventCondition="6" eventSkillID="10800062" />
-				</beginCondition>
-			</conditionSkill>
+		<level level="1">
+			<Basic keepCondition="99" doNotClearEffectFromEnterPVPZone="1" />
+			<Condition hasBuffID="91000093" hasBuffCount="1" />
+			<Additional level="1" skillID="91000094" skillTarget="2" ownerEvent="6" ownerEventSkillID="10800062" />
 		</level>
 	</additional>
 	<additional id="91000092">
-		<level>
-			<beginCondition>
-				<owner hasBuffID="91000093" hasBuffLevel="0" hasBuffOwner="0" hasBuffCount="2" hasBuffCountCompare="Equals" />
-			</beginCondition>
-			<BasicProperty level="1" keepCondition="99" doNotClearEffectFromEnterPVPZone="1" />
-			<conditionSkill level="2" skillID="91000094" skillTarget="2">
-				<beginCondition>
-					<owner eventCondition="6" eventSkillID="10800062" />
-				</beginCondition>
-			</conditionSkill>
+		<level level="1">
+			<Basic keepCondition="99" doNotClearEffectFromEnterPVPZone="1" />
+			<Condition hasBuffID="91000093" hasBuffCount="2" />
+			<Additional level="2" skillID="91000094" skillTarget="2" ownerEvent="6" ownerEventSkillID="10800062" />
 		</level>
 	</additional>
 	<additional id="91000093">
-		<level>
-			<BasicProperty level="1" keepCondition="99" resetCondition="2" maxBuffCount="2" doNotClearEffectFromEnterPVPZone="1" />
+		<level level="1">
+			<Basic keepCondition="99" resetCondition="2" maxBuffCount="2" doNotClearEffectFromEnterPVPZone="1" />
 		</level>
 	</additional>
-	<additional id="91000094">
-		<level>
-			<BasicProperty level="1" buffType="2" durationTick="4000" />
-			<MotionProperty abnormalImmuneBreak="5" />
-			<Stat>
+	<additional id="91000094" isDebuff="1">
+		<level level="1">
+			<Basic durationTick="4000" />
+			<Motion abnormalImmuneBreak="5" />
+			<SpecialAbility>
 				<v type="atp" value="-6" />
 				<v type="evp" value="-6" />
-			</Stat>
+			</SpecialAbility>
 		</level>
-		<level>
-			<BasicProperty level="2" buffType="2" durationTick="4000" />
-			<MotionProperty abnormalImmuneBreak="5" />
-			<Stat>
+		<level level="2">
+			<Basic durationTick="4000" />
+			<Motion abnormalImmuneBreak="5" />
+			<SpecialAbility>
 				<v type="atp" value="-12" />
 				<v type="evp" value="-12" />
-			</Stat>
+			</SpecialAbility>
 		</level>
 	</additional>
 </ms2>

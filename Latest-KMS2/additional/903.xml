@@ -1,41 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ms2>
 	<additional id="90300001">
-		<level stringParam="20">
-			<BasicProperty level="1" keepCondition="99" doNotClearEffectFromEnterPVPZone="1" />
-			<conditionSkill level="1" skillID="90300002" skillTarget="2">
-				<beginCondition probability="0.03">
-					<owner eventCondition="6" ignoreOwnerEvent="1" />
-				</beginCondition>
-			</conditionSkill>
+		<level level="1" stringParam="20">
+			<Basic keepCondition="99" doNotClearEffectFromEnterPVPZone="1" />
+			<Additional level="1" skillID="90300002" skillTarget="2" probability="0.03" ownerEvent="6" ownerEventIgnore="1" />
 		</level>
 	</additional>
 	<additional id="90300002">
-		<level stringParam="50">
-			<BasicProperty level="1" durationTick="5000" intervalTick="1000" dotCondition="1" />
-			<MotionProperty keepEffect="Additional/Burn/Eff_Additional_Burn_Keep.xml" stopEffect="Additional/Burn/Eff_Additional_Burn_Stop.xml" abnormalImmuneBreak="5" />
-			<DotDamageProperty type="2" rate="0.5" />
-			<UIProperty icon="./Data/Resource/Image/Skill/icon/05000050_normal.png" />
+		<level level="1" stringParam="50">
+			<Basic durationTick="5000" intervalTick="1000" dotCondition="1" />
+			<Motion keepEffect="Additional/Burn/Eff_Additional_Burn_Keep.xml" stopEffect="Additional/Burn/Eff_Additional_Burn_Stop.xml" abnormalImmuneBreak="5" />
+			<DotDamage type="2" rate="0.5" />
+			<UI icon="./Data/Resource/Image/Skill/icon/05000050_normal.png" />
 		</level>
 	</additional>
 	<additional id="90300011">
-		<level stringParam="20">
-			<BasicProperty level="1" keepCondition="99" doNotClearEffectFromEnterPVPZone="1" />
-			<conditionSkill level="1" skillID="90300012" skillTarget="1">
-				<beginCondition probability="0.03">
-					<owner eventCondition="6" ignoreOwnerEvent="1" />
-				</beginCondition>
-			</conditionSkill>
+		<level level="1" stringParam="20">
+			<Basic keepCondition="99" doNotClearEffectFromEnterPVPZone="1" />
+			<Additional level="1" skillID="90300012" skillTarget="1" probability="0.03" ownerEvent="6" ownerEventIgnore="1" />
 		</level>
 	</additional>
 	<additional id="90300012">
-		<level stringParam="30">
-			<BasicProperty level="1" durationTick="10000" />
-			<MotionProperty abnormalImmuneBreak="5" />
-			<Stat>
-				<v type="int" value="0.3" isRate="1" />
-			</Stat>
-			<UIProperty icon="./Data/Resource/Image/Skill/icon/05000050_normal.png" />
+		<level level="1" stringParam="30">
+			<Basic durationTick="10000" />
+			<Motion abnormalImmuneBreak="5" />
+			<SpecialAbility>
+				<v type="intRate" value="300" />
+			</SpecialAbility>
+			<UI icon="./Data/Resource/Image/Skill/icon/05000050_normal.png" />
 		</level>
 	</additional>
 </ms2>

@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ms2>
-	<additional id="59000003">
-		<level stringParam="80">
-			<BasicProperty level="1" buffType="2" durationTick="5000" />
-			<MotionProperty keepEffect="Additional/Slow/Eff_Additional_Slow_Keep.xml" stopEffect="Additional/Slow/Eff_Additional_Slow_Stop.xml" abnormalImmuneBreak="1" />
-			<Stat>
-				<v type="msp" value="-0.8" isRate="1" />
-				<v type="rmsp" value="-0.8" isRate="1" />
-			</Stat>
-			<UIProperty icon="./Data/Resource/Image/skill/icon/59000003.png" />
+	<additional id="59000003" isDebuff="1">
+		<level level="1" stringParam="80">
+			<Basic durationTick="5000" />
+			<Motion keepEffect="Additional/Slow/Eff_Additional_Slow_Keep.xml" stopEffect="Additional/Slow/Eff_Additional_Slow_Stop.xml" abnormalImmuneBreak="1" />
+			<SpecialAbility>
+				<v type="mspRate" value="-800" />
+				<v type="rmspRate" value="-800" />
+			</SpecialAbility>
+			<UI icon="./Data/Resource/Image/skill/icon/59000003.png" />
 		</level>
 	</additional>
 </ms2>

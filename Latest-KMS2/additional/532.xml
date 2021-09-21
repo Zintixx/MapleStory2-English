@@ -1,50 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ms2>
 	<additional id="53200000">
-		<level>
-			<BasicProperty level="1" durationTick="999999" intervalTick="500" resetCondition="1" dotCondition="1" casterIndividualEffect="1" />
-			<MotionProperty abnormalImmuneBreak="1" />
-			<splashSkill level="1" skillID="50101700" chainDistance="15000" />
+		<level level="1">
+			<Basic durationTick="999999" intervalTick="500" resetCondition="1" dotCondition="1" casterIndividualEffect="1" />
+			<Motion abnormalImmuneBreak="1" />
+			<Skill level="1" skillID="50101700" chainDistance="15000" />
 		</level>
 	</additional>
 	<additional id="53200001">
-		<level>
-			<BasicProperty level="1" intervalTick="1000" keepCondition="99" resetCondition="2" dotCondition="1" />
-			<MotionProperty keepEffect="Additional/Etc/Eff_KritiasSlimePurple_Additional_01.xml" abnormalImmuneBreak="1" />
-			<splashSkill level="1" skillID="50101910" />
+		<level level="1">
+			<Basic intervalTick="1000" keepCondition="99" resetCondition="2" dotCondition="1" />
+			<Motion keepEffect="Additional/Etc/Eff_KritiasSlimePurple_Additional_01.xml" abnormalImmuneBreak="1" />
+			<Skill level="1" skillID="50101910" />
 		</level>
 	</additional>
 	<additional id="53200002">
-		<level>
-			<BasicProperty level="1" intervalTick="1000" keepCondition="99" resetCondition="2" dotCondition="1" />
-			<MotionProperty keepEffect="Additional/Etc/Eff_KritiasSlimePurple_Additional_01.xml" abnormalImmuneBreak="1" />
-			<splashSkill level="1" skillID="50101920" />
+		<level level="1">
+			<Basic intervalTick="1000" keepCondition="99" resetCondition="2" dotCondition="1" />
+			<Motion keepEffect="Additional/Etc/Eff_KritiasSlimePurple_Additional_01.xml" abnormalImmuneBreak="1" />
+			<Skill level="1" skillID="50101920" />
 		</level>
 	</additional>
 	<additional id="53200003">
-		<level>
-			<BasicProperty level="1" intervalTick="1000" keepCondition="99" resetCondition="2" dotCondition="1" />
-			<MotionProperty keepEffect="Additional/Etc/Eff_KritiasSlimePurple_Additional_01.xml" abnormalImmuneBreak="1" />
-			<splashSkill level="1" skillID="50101930" />
+		<level level="1">
+			<Basic intervalTick="1000" keepCondition="99" resetCondition="2" dotCondition="1" />
+			<Motion keepEffect="Additional/Etc/Eff_KritiasSlimePurple_Additional_01.xml" abnormalImmuneBreak="1" />
+			<Skill level="1" skillID="50101930" />
 		</level>
 	</additional>
 	<additional id="53200004">
-		<level>
-			<BasicProperty level="1" durationTick="15000" intervalTick="1000" resetCondition="2" maxBuffCount="100" casterIndividualEffect="1" />
-			<MotionProperty abnormalImmuneBreak="1" />
-			<Stat>
-				<v type="pap" value="0.01" isRate="1" />
-				<v type="map" value="0.01" isRate="1" />
-			</Stat>
-			<UIProperty icon="./Data/Resource/Image/skill/icon/MonsterOffenceUp.png" />
-			<splashSkill level="1" skillID="44111311" chainDistance="15000" />
+		<level level="1">
+			<Basic durationTick="5000" intervalTick="1000" resetCondition="2" maxBuffCount="100" casterIndividualEffect="1" />
+			<Motion keepEffect="NPC/Skill/BlueLukeJunior/Eff_BlueLukeJunior_Boss_PowerUp_Keep.xml" abnormalImmuneBreak="1" />
+			<SpecialAbility>
+				<v type="papRate" value="10" />
+				<v type="mapRate" value="10" />
+			</SpecialAbility>
+			<UI icon="./Data/Resource/Image/skill/icon/MonsterOffenceUp.png" isHideCooltime="1" />
+			<Skill level="1" skillID="50003111" chainDistance="15000" />
 		</level>
 	</additional>
 	<additional id="53200005">
-		<level>
-			<BasicProperty level="1" intervalTick="200" keepCondition="99" resetCondition="2" />
-			<MotionProperty abnormalImmuneBreak="1" />
-			<splashSkill level="1" skillID="44111310" />
+		<level level="1">
+			<Basic intervalTick="200" keepCondition="99" resetCondition="2" />
+			<Motion abnormalImmuneBreak="1" />
+			<Skill level="1" skillID="50003110" />
+		</level>
+	</additional>
+	<additional id="53200006">
+		<level level="1">
+			<Basic durationTick="5000" intervalTick="1000" resetCondition="2" />
+			<Motion abnormalImmuneBreak="1" scale="0.2" />
+			<UI iconOnOff="0" />
 		</level>
 	</additional>
 </ms2>

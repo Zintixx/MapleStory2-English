@@ -2430,7 +2430,6 @@
 	</npc>
 	<npc id="11000781">
 		<field id="2000002" />
-		<field id="2000557" />
 	</npc>
 	<npc id="11000782">
 		<field id="2000183" />
@@ -11727,12 +11726,6 @@
 	<npc id="11004841">
 		<field id="2000064" startTime="2020-03-13-00-00" endTime="2020-03-15-23-59-59" />
 	</npc>
-	<npc id="11004842">
-		<field id="2000557" startTime="2021-08-12-08-00" endTime="2021-09-09-08-00" />
-	</npc>
-	<npc id="11004843">
-		<field id="2000557" startTime="2021-08-12-08-00" endTime="2021-09-09-08-00" />
-	</npc>
 	<npc id="11004845">
 		<field id="2000064" startTime="2020-11-12-07-00" endTime="2020-12-03-07-00" />
 	</npc>
@@ -11783,6 +11776,15 @@
 	</npc>
 	<npc id="11004862">
 		<field id="2000103" startTime="2021-03-18-00-00" endTime="2021-03-24-23-59-59" />
+	</npc>
+	<npc id="11004863">
+		<field id="2000192" />
+	</npc>
+	<npc id="11004864">
+		<field id="52100305" />
+	</npc>
+	<npc id="11004865">
+		<field id="52100305" />
 	</npc>
 	<npc id="11200000">
 		<field id="66100003" />
@@ -23976,6 +23978,33 @@
 	</npc>
 	<npc id="23000304">
 		<field id="2020201" />
+	</npc>
+	<npc id="23000400">
+		<field id="2200001" />
+	</npc>
+	<npc id="23000450">
+		<field id="2200001" />
+	</npc>
+	<npc id="23000451">
+		<field id="2200001" />
+	</npc>
+	<npc id="23000452">
+		<field id="2200001" />
+	</npc>
+	<npc id="23000453">
+		<field id="2200001" />
+	</npc>
+	<npc id="23000454">
+		<field id="2200001" />
+	</npc>
+	<npc id="23000455">
+		<field id="2200001" />
+	</npc>
+	<npc id="23000456">
+		<field id="2200001" />
+	</npc>
+	<npc id="23000457">
+		<field id="2200001" />
 	</npc>
 	<npc id="23001001">
 		<field id="2020051" />
@@ -38971,20 +39000,6 @@
 		<field id="80000023" />
 		<field id="80000023" />
 	</npc>
-	<npc id="27000116">
-		<field id="2000557" />
-		<field id="2000557" />
-		<field id="2000557" />
-		<field id="2000557" />
-		<field id="2000557" />
-		<field id="2000557" />
-		<field id="2000557" />
-		<field id="2000557" />
-		<field id="2000557" />
-		<field id="2000557" />
-		<field id="2000557" />
-		<field id="2000557" />
-	</npc>
 	<npc id="27100001">
 		<field id="63000071" />
 	</npc>
@@ -45325,6 +45340,7 @@
 	</fieldPortal>
 	<fieldPortal field="2000192" indoor="0">
 		<portal id="1" targetField="2000175" targetPortal="3" portalType="0" portalIndoor="0" />
+		<portal id="23100" targetField="2200001" targetPortal="1" portalType="8" portalIndoor="1" />
 		<portal id="2" targetField="2000176" targetPortal="1" portalType="0" portalIndoor="0" />
 		<portal id="3" targetField="52000051" targetPortal="1" portalType="0" portalIndoor="1" />
 		<portal id="4" targetField="52010048" targetPortal="1" portalType="0" portalIndoor="1" />
@@ -46951,9 +46967,6 @@
 	<fieldPortal field="2000555" indoor="1">
 		<portal id="2" targetField="2000536" targetPortal="1" portalType="0" portalIndoor="1" />
 	</fieldPortal>
-	<fieldPortal field="2000557" indoor="0">
-		<portal id="1" targetField="2000062" targetPortal="99" portalType="0" portalIndoor="0" />
-	</fieldPortal>
 	<fieldPortal field="2010002" indoor="0">
 		<portal id="3" targetField="2010020" targetPortal="2" portalType="0" portalIndoor="0" />
 		<portal id="8" targetField="2010010" targetPortal="2" portalType="0" portalIndoor="0" />
@@ -47921,6 +47934,9 @@
 		<portal id="1" targetField="2100009" targetPortal="2" portalType="0" portalIndoor="1" />
 		<portal id="2" targetField="0" targetPortal="0" portalType="0" portalIndoor="0" />
 		<portal id="3" targetField="0" targetPortal="0" portalType="0" portalIndoor="0" />
+	</fieldPortal>
+	<fieldPortal field="2200001" indoor="1">
+		<portal id="2" targetField="0" targetPortal="0" portalType="0" portalIndoor="0" />
 	</fieldPortal>
 	<fieldPortal field="3000003" indoor="0">
 		<portal id="1" targetField="3000130" targetPortal="1" portalType="0" portalIndoor="0" />
@@ -49569,6 +49585,10 @@
 		<portal id="2" targetField="52100204" targetPortal="0" portalType="0" portalIndoor="1" />
 		<portal id="1" targetField="0" targetPortal="0" portalType="0" portalIndoor="0" />
 	</fieldPortal>
+	<fieldPortal field="52100305" indoor="1">
+		<portal id="1" targetField="2000192" targetPortal="5" portalType="0" portalIndoor="0" />
+		<portal id="5001" targetField="0" targetPortal="0" portalType="0" portalIndoor="0" />
+	</fieldPortal>
 	<fieldPortal field="61000001" indoor="1">
 		<portal id="779" targetField="0" targetPortal="0" portalType="0" portalIndoor="0" />
 		<portal id="777" targetField="0" targetPortal="0" portalType="0" portalIndoor="0" />
@@ -51039,6 +51059,7 @@
 	<fluid field="2000417" attr="lava" />
 	<fluid field="2000419" attr="lava" />
 	<fluid field="2000423" attr="water" />
+	<fluid field="52100305" attr="lava,devilwater" />
 	<fluid field="2000424" attr="water" />
 	<fluid field="2000425" attr="water" />
 	<fluid field="2000426" attr="lava" />
@@ -51048,6 +51069,7 @@
 	<fluid field="82000000" attr="poison,water" />
 	<fluid field="82000001" attr="poison,water" />
 	<fluid field="82000006" attr="poison,water" />
+	<fluid field="2200001" attr="lava,devilwater" />
 	<fluid field="82000012" attr="poison,water" />
 	<fluid field="51000001" attr="water" />
 	<fluid field="51000003" attr="water" />
@@ -51089,7 +51111,6 @@
 	<fluid field="2000029" attr="water" />
 	<fluid field="2000551" attr="water" />
 	<fluid field="2000554" attr="poison" />
-	<fluid field="2000557" attr="seawater,oil,lava,emeraldwater,devilwater,poison" />
 	<fluid field="2000036" attr="water" />
 	<fluid field="2000037" attr="lava" />
 	<fluid field="2000038" attr="water" />
@@ -55085,6 +55106,9 @@
 	</interactObject>
 	<interactObject id="10001456">
 		<field id="52000192" />
+	</interactObject>
+	<interactObject id="10001457">
+		<field id="52000196" />
 	</interactObject>
 	<interactObject id="10002011">
 		<field id="2000424" />

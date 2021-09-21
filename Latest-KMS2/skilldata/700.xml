@@ -1648,6 +1648,21 @@
 			</motion>
 		</level>
 	</skill>
+	<skill id="70000106" comment="맵 셋팅 스킬">
+		<basic>
+			<ui attackType="2" />
+			<stateAttr ignoreReduceCooldown="1" />
+		</basic>
+		<level value="1">
+			<motion>
+				<attack point="p0" targetCount="50" attacktype="2">
+					<range rangeType="box" distance="50" rangeAdd="0,50,0" height="70" width="100" applyTarget="5" />
+					<damage effectRemain="CH/Common/Eff_Damage_MagmaField.xml" damageByTargetMaxHP="0.2" attackMaterial="100" invokeEffectDisable="1" />
+					<actionAdditional additionalID="40600050" level="1" skillTarget="2" skillOwner="1" />
+				</attack>
+			</motion>
+		</level>
+	</skill>
 	<skill id="70000113" comment="소비 아이템">
 		<basic mainType="3">
 			<ui icon="./Data/Resource/Image/item/icon/20000451.png" />

@@ -3965,19 +3965,6 @@
 			</actionAdditional>
 		</level>
 	</skill>
-	<skill id="90000456" comment="소비 아이템">
-		<basic mainType="5">
-			<ui icon="./Data/Resource/Image/Item/icon/20000304.png" />
-			<kinds jump="90000456" immediateActive="1" releaseObjectWeapon="0" />
-			<stateAttr battle="0" cooldownGroupID="90000286" ignoreReduceCooldown="1" />
-			<condition useCoolDownShowUI="1" />
-		</basic>
-		<level value="1" cooldown="180000">
-			<actionAdditional additionalID="90000456" level="1" skillTarget="1">
-				<beginCondition allowBattleRidingState="1" />
-			</actionAdditional>
-		</level>
-	</skill>
 	<skill id="90000457" comment="소비 아이템">
 		<basic mainType="5">
 			<ui icon="./Data/Resource/Image/item/icon/20000279.png" />
@@ -4438,19 +4425,6 @@
 			</actionAdditional>
 		</level>
 	</skill>
-	<skill id="90000499" comment="소비 아이템">
-		<basic mainType="5">
-			<ui icon="./Data/Resource/Image/Item/icon/20000304.png" />
-			<kinds jump="90000499" immediateActive="1" releaseObjectWeapon="0" />
-			<stateAttr battle="0" cooldownGroupID="90000286" ignoreReduceCooldown="1" />
-			<condition useCoolDownShowUI="1" />
-		</basic>
-		<level value="1" cooldown="180000">
-			<actionAdditional additionalID="90000499" level="1" skillTarget="1">
-				<beginCondition allowBattleRidingState="1" />
-			</actionAdditional>
-		</level>
-	</skill>
 	<skill id="90000500" comment="소비 아이템">
 		<basic mainType="5">
 			<ui icon="./Data/Resource/Image/item/icon/20000279.png" />
@@ -4577,19 +4551,6 @@
 		</basic>
 		<level value="1" cooldown="180000">
 			<actionAdditional additionalID="90000509" level="1" skillTarget="1">
-				<beginCondition allowBattleRidingState="1" />
-			</actionAdditional>
-		</level>
-	</skill>
-	<skill id="90000510" comment="소비 아이템">
-		<basic mainType="5">
-			<ui icon="./Data/Resource/Image/Item/icon/20000304.png" />
-			<kinds jump="90000510" immediateActive="1" releaseObjectWeapon="0" />
-			<stateAttr battle="0" cooldownGroupID="90000286" ignoreReduceCooldown="1" />
-			<condition useCoolDownShowUI="1" />
-		</basic>
-		<level value="1" cooldown="180000">
-			<actionAdditional additionalID="90000510" level="1" skillTarget="1">
 				<beginCondition allowBattleRidingState="1" />
 			</actionAdditional>
 		</level>
@@ -5886,19 +5847,6 @@
 		</basic>
 		<level value="1" cooldown="180000">
 			<actionAdditional additionalID="90000608" level="1" skillTarget="1">
-				<beginCondition allowBattleRidingState="1" />
-			</actionAdditional>
-		</level>
-	</skill>
-	<skill id="90000609" comment="소비 아이템">
-		<basic mainType="5">
-			<ui icon="./Data/Resource/Image/Item/icon/20000304.png" />
-			<kinds jump="90000609" immediateActive="1" releaseObjectWeapon="0" />
-			<stateAttr battle="0" cooldownGroupID="90000286" ignoreReduceCooldown="1" />
-			<condition useCoolDownShowUI="1" />
-		</basic>
-		<level value="1" cooldown="180000">
-			<actionAdditional additionalID="90000609" level="1" skillTarget="1">
 				<beginCondition allowBattleRidingState="1" />
 			</actionAdditional>
 		</level>
@@ -8487,13 +8435,13 @@
 	</skill>
 	<skill id="90000828" comment="소비 아이템">
 		<basic mainType="5">
-			<ui icon="./Data/Resource/Image/Item/icon/20000304.png" />
+			<ui icon="./Data/Resource/Image/Item/icon/20000302.png" />
 			<kinds jump="90000828" immediateActive="1" releaseObjectWeapon="0" />
-			<stateAttr battle="0" cooldownGroupID="90000286" ignoreReduceCooldown="1" />
+			<stateAttr battle="0" cooldownGroupID="90000828" ignoreReduceCooldown="1" />
 			<condition useCoolDownShowUI="1" />
 		</basic>
-		<level value="1" cooldown="180000">
-			<actionAdditional additionalID="90000456" level="1" skillTarget="1">
+		<level value="1" cooldown="120000">
+			<actionAdditional additionalID="90000828" level="1" skillTarget="1">
 				<beginCondition allowBattleRidingState="1" />
 			</actionAdditional>
 		</level>
@@ -10500,18 +10448,6 @@
 			</actionAdditional>
 		</level>
 	</skill>
-	<skill id="90001190" comment="소비 아이템">
-		<basic mainType="5">
-			<kinds jump="90001190" immediateActive="1" />
-			<stateAttr battle="0" cooldownGroupID="90000286" ignoreReduceCooldown="1" />
-			<condition useCoolDownShowUI="1" />
-		</basic>
-		<level value="1" cooldown="180000">
-			<actionAdditional additionalID="90000295" level="1" skillTarget="1">
-				<beginCondition allowBattleRidingState="1" />
-			</actionAdditional>
-		</level>
-	</skill>
 	<skill id="90001191" comment="소비 아이템">
 		<basic mainType="5">
 			<kinds jump="90001191" immediateActive="1" />
@@ -11511,54 +11447,6 @@
 					<arrow collision="50,50,50" effect="NPC/Skill/Temp/Eff_Temp.xml" />
 					<damage count="0" />
 					<actionAdditional additionalID="90051747" level="1" skillTarget="2" skillOwner="1" />
-				</attack>
-			</motion>
-		</level>
-	</skill>
-	<skill id="90060024">
-		<basic mainType="30">
-			<ui attackType="1" />
-			<stateAttr ignoreReduceCooldown="1" />
-			<condition invokeEffectFactor="0" />
-		</basic>
-		<level value="1">
-			<motion motionEffect="Item/Skill/Eff_Item_LapentaWeapon_SplashCast_02.xml" splashInvokeEffect="Item/Skill/Eff_Item_LapentaWeapon_SplashInvoke_02.xml" splashEndEffect="Item/Skill/Eff_Item_LapentaWeapon_SplashEnd_02.xml" IgnoreOptimalHideCastEffect="true">
-				<attack point="p0" targetCount="12" attacktype="1" hitImmuneBreak="5">
-					<range rangeType="cylinder" distance="600" height="150" includeCaster="1" applyTarget="6" />
-					<damage count="0" attackMaterial="1" />
-					<actionAdditional additionalID="90060025" level="1" skillTarget="2" skillOwner="2" />
-				</attack>
-			</motion>
-		</level>
-	</skill>
-	<skill id="90060026">
-		<basic mainType="30">
-			<ui attackType="1" />
-			<stateAttr ignoreReduceCooldown="1" />
-			<condition invokeEffectFactor="0" />
-		</basic>
-		<level value="1">
-			<motion motionEffect="Item/Skill/Eff_Item_LapentaWeapon_SplashCast_03.xml" splashInvokeEffect="Item/Skill/Eff_Item_LapentaWeapon_SplashInvoke_03.xml" splashEndEffect="Item/Skill/Eff_Item_LapentaWeapon_SplashEnd_03.xml" IgnoreOptimalHideCastEffect="true">
-				<attack point="p0" targetCount="12" attacktype="1" hitImmuneBreak="5">
-					<range rangeType="cylinder" distance="600" height="150" includeCaster="1" applyTarget="6" />
-					<damage count="0" attackMaterial="1" />
-					<actionAdditional additionalID="90060027" level="1" skillTarget="2" skillOwner="2" />
-				</attack>
-			</motion>
-		</level>
-	</skill>
-	<skill id="90060028">
-		<basic mainType="30">
-			<ui attackType="1" />
-			<stateAttr ignoreReduceCooldown="1" />
-			<condition invokeEffectFactor="0" />
-		</basic>
-		<level value="1">
-			<motion motionEffect="Item/Skill/Eff_Item_LapentaWeapon_SplashCast_04.xml" splashInvokeEffect="Item/Skill/Eff_Item_LapentaWeapon_SplashInvoke_04.xml" splashEndEffect="Item/Skill/Eff_Item_LapentaWeapon_SplashEnd_04.xml" IgnoreOptimalHideCastEffect="true">
-				<attack point="p0" targetCount="12" attacktype="1" hitImmuneBreak="5">
-					<range rangeType="cylinder" distance="600" height="150" includeCaster="1" applyTarget="6" />
-					<damage count="0" attackMaterial="1" />
-					<actionAdditional additionalID="90060029" level="1" skillTarget="2" skillOwner="2" />
 				</attack>
 			</motion>
 		</level>

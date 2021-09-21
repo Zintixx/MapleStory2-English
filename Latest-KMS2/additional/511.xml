@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ms2>
-	<additional id="51100000">
-		<level>
-			<BasicProperty level="1" buffType="2" buffSubType="1" durationTick="5500" intervalTick="5500" resetCondition="1" dotCondition="1" ignoreReduceTimeCondition="1" />
-			<MotionProperty keepEffect="NPC/Skill/YetiRider/Eff_YetiRiderWhite_FrozenBombCount_Keep.xml" IgnoreOptimalHideStartEffect="1" abnormalImmuneBreak="1" noFly="1" />
-			<UIProperty icon="./Data/Resource/Image/skill/icon/TimeBombIce.png" />
-			<splashSkill level="1" skillID="99999813" immediateActive="1" />
+	<additional id="51100000" mainType="1" isDebuff="1">
+		<level level="1">
+			<Basic durationTick="5500" intervalTick="5500" resetCondition="1" dotCondition="1" ignoreReduceTimeCondition="1" />
+			<Motion keepEffect="NPC/Skill/YetiRider/Eff_YetiRiderWhite_FrozenBombCount_Keep.xml" IgnoreOptimalHideStartEffect="1" abnormalImmuneBreak="1" noFly="1" />
+			<UI icon="./Data/Resource/Image/skill/icon/TimeBombIce.png" />
+			<Skill level="1" skillID="99999813" immediateActive="1" />
 		</level>
 	</additional>
-	<additional id="51100001">
-		<level>
-			<BasicProperty level="1" group="1" buffType="2" buffSubType="1" durationTick="7000" resetCondition="1" />
-			<MotionProperty keepEffect="NPC/Skill/YetiTwoHeadWhite/Eff_YetiTwoHeadWhite_FrozenCube_Keep.xml" stopEffect="NPC/Skill/YetiTwoHeadWhite/Eff_YetiTwoHeadWhite_FrozenCube_Stop.xml" IgnoreOptimalHideStartEffect="1" stun="7" abnormalImmuneBreak="1" />
+	<additional id="51100001" mainType="1" isDebuff="1">
+		<level level="1">
+			<Basic group="1" durationTick="7000" resetCondition="1" />
+			<Motion keepEffect="NPC/Skill/YetiTwoHeadWhite/Eff_YetiTwoHeadWhite_FrozenCube_Keep.xml" stopEffect="NPC/Skill/YetiTwoHeadWhite/Eff_YetiTwoHeadWhite_FrozenCube_Stop.xml" IgnoreOptimalHideStartEffect="1" stun="7" abnormalImmuneBreak="1" />
 			<SpecialAbility>
 				<v type="defensive_physicaldamage" value="-500" />
 				<v type="defensive_magicaldamage" value="-500" />
 			</SpecialAbility>
-			<DefensiveProperty invincible="2" />
-			<UIProperty icon="./Data/Resource/Image/skill/icon/IceCubePrison.png" />
+			<Defensive invincible="2" />
+			<UI icon="./Data/Resource/Image/skill/icon/IceCubePrison.png" />
 		</level>
 	</additional>
 </ms2>

@@ -61,10 +61,28 @@
 			</condition>
 		</open>
 		<close>
-			<condition type="questSatisfied" value="10003444" />
+			<condition type="questComplete" value="10003444" />
 		</close>
 		<openAction>
 			<action type="SideNpcTalk" scriptID="10003444" npcID="11004790" illust="Baron_normal" duration="10000" voice="" />
+		</openAction>
+	</event>
+	<event id="10003445" saveId="10003445" isForce="1" desc="갑작스런 호출" feature="EpicApocalypse03">
+		<open>
+			<condition type="myPlayerLevel" value="76" />
+			<condition type="questComplete" value="10003448" />
+			<condition type="allOf">
+				<condition type="questComplete" value="10003449" not="1" />
+			</condition>
+		</open>
+		<close>
+			<condition type="anyOne">
+				<condition type="questComplete" value="10003449" />
+				<condition type="timeout" value="10000" />
+			</condition>
+		</close>
+		<openAction>
+			<action type="SideNpcTalk" scriptID="10003445" npcID="11003884" illust="Alfred_normal" duration="10000" voice="" />
 		</openAction>
 	</event>
 </ms2>

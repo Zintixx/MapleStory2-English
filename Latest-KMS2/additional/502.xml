@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ms2>
-	<additional id="50200001">
-		<level>
-			<BasicProperty level="1" buffType="2" durationTick="15000" intervalTick="1000" resetCondition="1" dotCondition="1" logoutClearEffect="1" leaveFieldClearEffect="1" />
-			<MotionProperty keepEffect="NPC/Skill/BalrogCrimson/Eff_BalrogCrimson_Additional_DownHPRecoveryItem_Keep.xml" stopEffect="NPC/Skill/BalrogCrimson/Eff_BalrogCrimson_Additional_DownHPRecoveryItem_Stop.xml" IgnoreOptimalHideStartEffect="1" abnormalImmuneBreak="1" />
-			<StatusProperty itemRecoveryHPRate="-0.5" />
-			<DotDamageProperty damageByTargetMaxHP="0.015" />
-			<UIProperty icon="./Data/Resource/Image/skill/icon/HPRecoveryItemDown.png" />
+	<additional id="50200001" isDebuff="1">
+		<level level="1">
+			<Basic durationTick="15000" intervalTick="1000" resetCondition="1" dotCondition="1" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<Motion keepEffect="NPC/Skill/BalrogCrimson/Eff_BalrogCrimson_Additional_DownHPRecoveryItem_Keep.xml" stopEffect="NPC/Skill/BalrogCrimson/Eff_BalrogCrimson_Additional_DownHPRecoveryItem_Stop.xml" IgnoreOptimalHideStartEffect="1" abnormalImmuneBreak="1" />
+			<Status itemRecoveryHPRate="-0.5" />
+			<DotDamage damageByTargetMaxHP="0.015" />
+			<UI icon="./Data/Resource/Image/skill/icon/HPRecoveryItemDown.png" />
 		</level>
 	</additional>
 </ms2>

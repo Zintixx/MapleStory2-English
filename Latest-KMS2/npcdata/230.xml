@@ -4811,6 +4811,198 @@
 			<dropiteminfo globalDropBoxId="74" />
 		</environment>
 	</npc>
+	<npc id="23000400">
+		<environment feature="DungeonOS01" npcAttackGroup="1" npcDefenseGroup="2" minimapIconName="boss" nametag="1" defenceMaterial="4" hitImmune="99" abnormalImmune="99" level="70" class="6" rankIcon="a" propertyTags="keep_battle" raceString="devil" gender="0" portrait="./Data/Resource/Image/Portrait/Mob/44110001_B_BlueLuke01_P.png" damagedVibrateDuration="0.5" damagedVibrateAmp="1" checkCameraDistance="2500" extraCameraDistance="450" bossSoundEndDistance="4000" customExp="0" lookAtMyPCWhenTalking="0">
+			<model kfm="23000400_B_BlueLuke" scale="1.5" shadowScale="640" rotationSpeed="360" />
+			<stat hp="5161260095244" asp="100" msp="100" atp="120" evp="78" cap="72" cad="500" car="70" ndd="1285" pap="270997509" map="270997509" par="249" mar="249" />
+			<distance avoid="400" sight="2100" sightHeightUP="320" customLastSightRadius="3500" customLastSightHeightUp="525" customLastSightHeightDown="50" />
+			<skill ids="50003001,50003002,50003003,50003010,50003015,50003020,50003030,50003035,50003040,50003045,50003070,50003071,50003072,50003000,50003085,50003080,50003051,50003052,50003053,50003054,50003055,50003056,50003057,50003058,50003059,50003061,50003062,50003063,50003064,50003065,50003066,50003067,50003068,50003069,50003090,50003031,50003036,50003001,50003001,50003002,50003002,50003003,50003003,50003091,50003092,50003000,50003000,50003001,50003002,50003003,50003075" levels="1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,3,2,3,2,3,1,1,2,3,4,4,4,1" />
+			<additionalEffect codes="40600052" levels="1" />
+			<collision shape="box" width="190" height="250" depth="190" />
+			<corpse width="650" height="150" depth="250" added="120" offsetNametag="-200" rotation="345" />
+			<capsule radius="180" height="450" />
+			<dead time="10" defaultaction="Dead_A" upaction="Dead_A" extendRoomTime="60000" />
+			<normal action="Idle_A" prob="10000" />
+			<dropiteminfo dropHeight="300" dropDistanceBase="300" dropDistanceRandom="20" globalDropBoxId="74" globalDeadDropBoxId="1011" />
+			<aiInfo path="BossDungeon/DungeonOS01/AI_BlueLuke.xml" summonNpcIDs="23000410,23000420,23000430,23000440" />
+		</environment>
+	</npc>
+	<npc id="23000410">
+		<environment feature="DungeonOS01" npcAttackGroup="1" npcDefenseGroup="2" nametag="1" minimap="0" defenceMaterial="1" hitImmune="1" abnormalImmune="1" level="70" class="3" rankIcon="b" carePathToEnemy="1" propertyTags="keep_battle,can_die_by_npc,battle_on_spawn" raceString="devil" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/44110002_M_BlueLukeJunior_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" customExp="0" lookAtMyPCWhenTalking="0">
+			<model kfm="23000410_M_BlueLukeJunior" scale="1.4" shadowScale="130" rotationSpeed="720" walkSpeed="100" runSpeed="100" />
+			<stat hp="95115909920" asp="100" msp="100" atp="81" evp="102" cap="72" cad="500" car="70" ndd="1071" pap="135498754" map="135498754" par="90" mar="90" />
+			<distance avoid="60" sight="2100" sightHeightUP="300" customLastSightRadius="3500" customLastSightHeightUp="525" customLastSightHeightDown="50" />
+			<skill ids="50003200,50003201,50003220,50003240" />
+			<additionalEffect codes="40600085,90000814" levels="1,1" />
+			<collision shape="box" width="85" height="80" depth="80" />
+			<capsule radius="32" height="150" />
+			<dead time="5" defaultaction="Dead_B" upaction="Dead_B" />
+			<push back="1" up="1" knockback="1" />
+			<normal action="Attack_Idle_A, Walk" prob="4500,4000" movearea="150" />
+			<dropiteminfo dropHeight="50" dropDistanceBase="100" dropDistanceRandom="50" />
+			<aiInfo path="BossDungeon/DungeonOS01/AI_BlueLukeJunior.xml" />
+		</environment>
+	</npc>
+	<npc id="23000420">
+		<environment feature="DungeonOS01" npcAttackGroup="1" npcDefenseGroup="2" nametag="1" minimap="0" defenceMaterial="1" hitImmune="1" abnormalImmune="1" level="70" class="3" rankIcon="b" carePathToEnemy="1" propertyTags="keep_battle,can_die_by_npc,battle_on_spawn" raceString="devil" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/44110002_M_BlueLukeJunior_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" customExp="0" lookAtMyPCWhenTalking="0">
+			<model kfm="23000420_M_BlueLukeJunior" scale="1.4" shadowScale="130" rotationSpeed="720" walkSpeed="400" runSpeed="500" />
+			<stat hp="19023181984" asp="100" msp="100" atp="81" evp="102" cap="72" cad="500" car="70" ndd="1071" pap="135498754" map="135498754" par="90" mar="90" />
+			<distance avoid="60" sight="2100" sightHeightUP="300" customLastSightRadius="3500" customLastSightHeightUp="525" customLastSightHeightDown="50" />
+			<skill ids="50003100,50003120" />
+			<additionalEffect codes="40600086,53200005" levels="1,1" />
+			<collision shape="box" width="85" height="80" depth="80" />
+			<capsule radius="32" height="150" />
+			<dead time="5" defaultaction="Dead_B" upaction="Dead_B" />
+			<push back="1" up="1" knockback="1" />
+			<normal action="Attack_Idle_A, Walk" prob="4500,4000" movearea="150" />
+			<dropiteminfo dropHeight="50" dropDistanceBase="100" dropDistanceRandom="50" />
+			<aiInfo path="BossDungeon/DungeonOS01/AI_RedLukeJunior.xml" />
+		</environment>
+	</npc>
+	<npc id="23000430">
+		<environment feature="DungeonOS01" npcAttackGroup="1" npcDefenseGroup="2" nametag="1" minimap="0" defenceMaterial="1" hitImmune="1" abnormalImmune="1" level="70" class="3" rankIcon="b" carePathToEnemy="1" propertyTags="keep_battle,can_die_by_npc,battle_on_spawn" raceString="devil" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/44110002_M_BlueLukeJunior_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" customExp="0" lookAtMyPCWhenTalking="0">
+			<model kfm="23000430_M_BlueLukeJunior" scale="1.2" shadowScale="130" rotationSpeed="720" walkSpeed="400" runSpeed="500" />
+			<stat hp="9511590992" asp="100" msp="100" atp="81" evp="102" cap="72" cad="500" car="70" ndd="1071" pap="67749377" map="67749377" par="90" mar="90" />
+			<distance avoid="60" sight="2100" sightHeightUP="300" customLastSightRadius="3500" customLastSightHeightUp="525" customLastSightHeightDown="50" />
+			<skill ids="50003400,50003410" />
+			<additionalEffect codes="40600087,90000814" levels="1,1" />
+			<collision shape="box" width="85" height="80" depth="80" />
+			<capsule radius="32" height="150" />
+			<dead time="5" defaultaction="Dead_B" upaction="Dead_B" />
+			<push back="1" up="1" knockback="1" />
+			<normal action="Attack_Idle_A, Walk" prob="4500,4000" movearea="150" />
+			<dropiteminfo dropHeight="50" dropDistanceBase="100" dropDistanceRandom="50" />
+			<aiInfo path="BossDungeon/DungeonOS01/AI_YellowLukeJunior.xml" />
+		</environment>
+	</npc>
+	<npc id="23000440">
+		<environment feature="DungeonOS01" npcAttackGroup="1" npcDefenseGroup="2" nametag="1" minimap="0" defenceMaterial="1" hitImmune="1" abnormalImmune="1" level="70" class="3" rankIcon="b" carePathToEnemy="1" propertyTags="keep_battle,can_die_by_npc,battle_on_spawn" raceString="devil" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/44110002_M_BlueLukeJunior_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" regenEffect="BG/Common/Eff_Test_Regen.xml" customExp="0" lookAtMyPCWhenTalking="0">
+			<model kfm="23000440_M_BlueLukeJunior" scale="1.2" shadowScale="130" rotationSpeed="720" walkSpeed="400" runSpeed="500" />
+			<stat hp="9511590992" asp="100" msp="100" atp="81" evp="102" cap="72" cad="500" car="70" ndd="1071" pap="135498754" map="135498754" par="90" mar="90" />
+			<distance avoid="60" sight="2100" sightHeightUP="300" customLastSightRadius="3500" customLastSightHeightUp="525" customLastSightHeightDown="50" />
+			<skill ids="50003300" />
+			<additionalEffect codes="40600088,90000814" levels="1,1" />
+			<collision shape="box" width="85" height="80" depth="80" />
+			<capsule radius="32" height="150" />
+			<dead time="5" defaultaction="Dead_B" upaction="Dead_B" />
+			<push back="1" up="1" knockback="1" />
+			<normal action="Attack_Idle_A, Walk" prob="4500,4000" movearea="150" />
+			<dropiteminfo dropHeight="50" dropDistanceBase="100" dropDistanceRandom="50" />
+			<aiInfo path="BossDungeon/DungeonOS01/AI_GreenLukeJunior.xml" />
+		</environment>
+	</npc>
+	<npc id="23000450">
+		<environment feature="DungeonOS01" npcAttackGroup="1" npcDefenseGroup="2" minimap="0" defenceMaterial="3" hitImmune="99" abnormalImmune="99" level="50" class="3" rankIcon="c" rotationDisabled="1" carePathToEnemy="1" propertyTags="keep_battle,can_die_by_npc,battle_on_spawn" raceString="devil" gender="0" portrait="./Data/Resource/Image/Portrait/Mob/Dummy_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" customExp="0" lookAtMyPCWhenTalking="0">
+			<model kfm="sw_quest_soulbead_B01" rotationSpeed="720" />
+			<stat hp="225579549" asp="100" msp="100" atp="80" evp="82" cap="62" cad="500" car="50" ndd="1285" pap="27099750" map="27099750" par="90" mar="90" />
+			<distance avoid="50" sight="3000" sightHeightUP="1000" sightHeightDown="225" customLastSightRadius="10000" customLastSightHeightUp="1000" customLastSightHeightDown="1000" />
+			<skill ids="50003500,50003520,50003530,50003540" />
+			<additionalEffect codes="40600080,40600081" levels="1,1" />
+			<collision shape="box" width="100" height="150" depth="100" />
+			<capsule radius="50" height="150" />
+			<dead time="5" defaultaction="Dead_A" upaction="Dead_A" />
+			<normal action="Idle_A" prob="10000" />
+			<aiInfo path="BossDungeon/DungeonOS01/AI_BlueLuke_Summon_Extra1.xml" />
+		</environment>
+	</npc>
+	<npc id="23000451">
+		<environment feature="DungeonOS01" npcAttackGroup="1" npcDefenseGroup="2" minimap="0" defenceMaterial="3" hitImmune="99" abnormalImmune="99" level="50" class="3" rankIcon="c" rotationDisabled="1" carePathToEnemy="1" propertyTags="keep_battle,can_die_by_npc,battle_on_spawn" raceString="devil" gender="0" portrait="./Data/Resource/Image/Portrait/Mob/Dummy_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" customExp="0" lookAtMyPCWhenTalking="0">
+			<model kfm="sw_quest_soulbead_B01" rotationSpeed="720" />
+			<stat hp="225579549" asp="100" msp="100" atp="80" evp="82" cap="62" cad="500" car="50" ndd="1285" pap="27099750" map="27099750" par="90" mar="90" />
+			<distance avoid="50" sight="3000" sightHeightUP="1000" sightHeightDown="225" customLastSightRadius="10000" customLastSightHeightUp="1000" customLastSightHeightDown="1000" />
+			<skill ids="50003500,50003520,50003530,50003540" />
+			<additionalEffect codes="40600080,40600081" levels="1,1" />
+			<collision shape="box" width="100" height="150" depth="100" />
+			<capsule radius="50" height="150" />
+			<dead time="5" defaultaction="Dead_A" upaction="Dead_A" />
+			<normal action="Idle_A" prob="10000" />
+			<aiInfo path="BossDungeon/DungeonOS01/AI_BlueLuke_Summon_Extra2.xml" />
+		</environment>
+	</npc>
+	<npc id="23000452">
+		<environment feature="DungeonOS01" npcAttackGroup="1" npcDefenseGroup="2" minimap="0" defenceMaterial="3" hitImmune="99" abnormalImmune="99" level="50" class="3" rankIcon="c" rotationDisabled="1" carePathToEnemy="1" propertyTags="keep_battle,can_die_by_npc,battle_on_spawn" raceString="devil" gender="0" portrait="./Data/Resource/Image/Portrait/Mob/Dummy_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" customExp="0" lookAtMyPCWhenTalking="0">
+			<model kfm="sw_quest_soulbead_B01" rotationSpeed="720" />
+			<stat hp="225579549" asp="100" msp="100" atp="80" evp="82" cap="62" cad="500" car="50" ndd="1285" pap="27099750" map="27099750" par="90" mar="90" />
+			<distance avoid="50" sight="3000" sightHeightUP="1000" sightHeightDown="225" customLastSightRadius="10000" customLastSightHeightUp="1000" customLastSightHeightDown="1000" />
+			<skill ids="50003500,50003520,50003530,50003540" />
+			<additionalEffect codes="40600080,40600081" levels="1,1" />
+			<collision shape="box" width="100" height="150" depth="100" />
+			<capsule radius="32" height="150" />
+			<dead time="5" defaultaction="Dead_A" upaction="Dead_A" />
+			<normal action="Idle_A" prob="10000" />
+			<aiInfo path="BossDungeon/DungeonOS01/AI_BlueLuke_Summon_Extra3.xml" />
+		</environment>
+	</npc>
+	<npc id="23000453">
+		<environment feature="DungeonOS01" npcAttackGroup="1" npcDefenseGroup="2" minimap="0" defenceMaterial="3" hitImmune="99" abnormalImmune="99" level="50" class="3" rankIcon="c" rotationDisabled="1" carePathToEnemy="1" propertyTags="keep_battle,can_die_by_npc,battle_on_spawn" raceString="devil" gender="0" portrait="./Data/Resource/Image/Portrait/Mob/Dummy_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" customExp="0" lookAtMyPCWhenTalking="0">
+			<model kfm="sw_quest_soulbead_B01" rotationSpeed="720" />
+			<stat hp="225579549" asp="100" msp="100" atp="80" evp="82" cap="62" cad="500" car="50" ndd="1285" pap="27099750" map="27099750" par="90" mar="90" />
+			<distance avoid="50" sight="3000" sightHeightUP="1000" sightHeightDown="225" customLastSightRadius="10000" customLastSightHeightUp="1000" customLastSightHeightDown="1000" />
+			<skill ids="50003500,50003520,50003530,50003540" />
+			<additionalEffect codes="40600080,40600081" levels="1,1" />
+			<collision shape="box" width="100" height="150" depth="100" />
+			<capsule radius="32" height="150" />
+			<dead time="5" defaultaction="Dead_A" upaction="Dead_A" />
+			<normal action="Idle_A" prob="10000" />
+			<aiInfo path="BossDungeon/DungeonOS01/AI_BlueLuke_Summon_Extra4.xml" />
+		</environment>
+	</npc>
+	<npc id="23000454">
+		<environment feature="DungeonOS01" npcAttackGroup="1" npcDefenseGroup="2" minimap="0" defenceMaterial="3" hitImmune="99" abnormalImmune="99" level="50" class="3" rankIcon="c" rotationDisabled="1" carePathToEnemy="1" propertyTags="keep_battle,can_die_by_npc,battle_on_spawn" raceString="devil" gender="0" portrait="./Data/Resource/Image/Portrait/Mob/Dummy_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" customExp="0" lookAtMyPCWhenTalking="0">
+			<model kfm="sw_quest_soulbead_B01" rotationSpeed="720" />
+			<stat hp="225579549" asp="100" msp="100" atp="80" evp="82" cap="62" cad="500" car="50" ndd="1285" pap="27099750" map="27099750" par="90" mar="90" />
+			<distance avoid="50" sight="3000" sightHeightUP="1000" sightHeightDown="225" customLastSightRadius="10000" customLastSightHeightUp="1000" customLastSightHeightDown="1000" />
+			<skill ids="50003500,50003520,50003530,50003540" />
+			<additionalEffect codes="40600080,40600081" levels="1,1" />
+			<collision shape="box" width="100" height="150" depth="100" />
+			<capsule radius="32" height="150" />
+			<dead time="5" defaultaction="Dead_A" upaction="Dead_A" />
+			<normal action="Idle_A" prob="10000" />
+			<aiInfo path="BossDungeon/DungeonOS01/AI_BlueLuke_Summon_Extra5.xml" />
+		</environment>
+	</npc>
+	<npc id="23000455">
+		<environment feature="DungeonOS01" npcAttackGroup="1" npcDefenseGroup="2" minimap="0" defenceMaterial="3" hitImmune="99" abnormalImmune="99" level="50" class="3" rankIcon="c" rotationDisabled="1" carePathToEnemy="1" propertyTags="keep_battle,can_die_by_npc,battle_on_spawn" raceString="devil" gender="0" portrait="./Data/Resource/Image/Portrait/Mob/Dummy_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" customExp="0" lookAtMyPCWhenTalking="0">
+			<model kfm="sw_quest_soulbead_B01" rotationSpeed="720" />
+			<stat hp="225579549" asp="100" msp="100" atp="80" evp="82" cap="62" cad="500" car="50" ndd="1285" pap="27099750" map="27099750" par="90" mar="90" />
+			<distance avoid="50" sight="3000" sightHeightUP="1000" sightHeightDown="225" customLastSightRadius="10000" customLastSightHeightUp="1000" customLastSightHeightDown="1000" />
+			<skill ids="50003500,50003520,50003530,50003540" />
+			<additionalEffect codes="40600080,40600081" levels="1,1" />
+			<collision shape="box" width="100" height="150" depth="100" />
+			<capsule radius="32" height="150" />
+			<dead time="5" defaultaction="Dead_A" upaction="Dead_A" />
+			<normal action="Idle_A" prob="10000" />
+			<aiInfo path="BossDungeon/DungeonOS01/AI_BlueLuke_Summon_Extra6.xml" />
+		</environment>
+	</npc>
+	<npc id="23000456">
+		<environment feature="DungeonOS01" npcAttackGroup="1" npcDefenseGroup="2" minimap="0" defenceMaterial="3" hitImmune="99" abnormalImmune="99" level="50" class="3" rankIcon="c" rotationDisabled="1" carePathToEnemy="1" propertyTags="keep_battle,can_die_by_npc,battle_on_spawn" raceString="devil" gender="0" portrait="./Data/Resource/Image/Portrait/Mob/Dummy_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" customExp="0" lookAtMyPCWhenTalking="0">
+			<model kfm="sw_quest_soulbead_B01" rotationSpeed="720" />
+			<stat hp="225579549" asp="100" msp="100" atp="80" evp="82" cap="62" cad="500" car="50" ndd="1285" pap="27099750" map="27099750" par="90" mar="90" />
+			<distance avoid="50" sight="3000" sightHeightUP="1000" sightHeightDown="225" customLastSightRadius="10000" customLastSightHeightUp="1000" customLastSightHeightDown="1000" />
+			<skill ids="50003500,50003520,50003530,50003540" />
+			<additionalEffect codes="40600080,40600081" levels="1,1" />
+			<collision shape="box" width="100" height="150" depth="100" />
+			<capsule radius="32" height="150" />
+			<dead time="5" defaultaction="Dead_A" upaction="Dead_A" />
+			<normal action="Idle_A" prob="10000" />
+			<aiInfo path="BossDungeon/DungeonOS01/AI_BlueLuke_Summon_Extra7.xml" />
+		</environment>
+	</npc>
+	<npc id="23000457">
+		<environment feature="DungeonOS01" npcAttackGroup="1" npcDefenseGroup="2" minimap="0" defenceMaterial="3" hitImmune="99" abnormalImmune="99" level="50" class="3" rankIcon="c" rotationDisabled="1" carePathToEnemy="1" propertyTags="keep_battle,can_die_by_npc,battle_on_spawn" raceString="devil" gender="0" portrait="./Data/Resource/Image/Portrait/Mob/Dummy_P.png" damagedColorScale="6" damagedVibrateDuration="0.8" damagedVibrateAmp="1" customExp="0" lookAtMyPCWhenTalking="0">
+			<model kfm="sw_quest_soulbead_B01" rotationSpeed="720" />
+			<stat hp="225579549" asp="100" msp="100" atp="80" evp="82" cap="62" cad="500" car="50" ndd="1285" pap="27099750" map="27099750" par="90" mar="90" />
+			<distance avoid="50" sight="3000" sightHeightUP="1000" sightHeightDown="225" customLastSightRadius="10000" customLastSightHeightUp="1000" customLastSightHeightDown="1000" />
+			<skill ids="50003500,50003520,50003530,50003540" />
+			<additionalEffect codes="40600080,40600081" levels="1,1" />
+			<collision shape="box" width="100" height="150" depth="100" />
+			<capsule radius="32" height="150" />
+			<dead time="5" defaultaction="Dead_A" upaction="Dead_A" />
+			<normal action="Idle_A" prob="10000" />
+			<aiInfo path="BossDungeon/DungeonOS01/AI_BlueLuke_Summon_Extra8.xml" />
+		</environment>
+	</npc>
 	<npc id="23001001">
 		<environment feature="Gigantica01" stringID="Gigantika_01" npcAttackGroup="1" npcDefenseGroup="2" nametag="1" minimap="0" defenceMaterial="3" hitImmune="99" abnormalImmune="90" level="70" class="4" rankIcon="a" propertyTags="keep_battle,no_die,no_event_drop" raceString="machine" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/23000096_B_GigantikaTail_P.png" damagedColorScale="6" damagedVibrateDuration="0.5" damagedVibrateAmp="1" regenEffect="NPC/Skill/GigantikaTail/Eff_GigantikaTail_Regen.xml" checkCameraDistance="2000" extraCameraDistance="600" customExp="0" lookAtMyPCWhenTalking="0">
 			<model kfm="23000096_B_GigantikaTail" scale="0.85" shadowScale="230" rotationSpeed="300" />

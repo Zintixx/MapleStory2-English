@@ -7,6 +7,7 @@
 	</state>
 	<state name="변수초기화">
 		<onEnter>
+			<action name="SetUserValue" key="SpawnSpeedUp" value="0"/>
 			<action name="SetUserValue" key="AddBallCount" value="0"/>
 			<action name="SetUserValue" key="Remove1" value="0"/>
 			<action name="SetUserValue" key="Remove2" value="0"/>
@@ -142,7 +143,7 @@
 		</condition>
 	</state>	
 	<state name="입장종료">
-		<!-- 120-100-60-45-30-20 -->
+		<!-- 120-90-60-45-30-20 -->
 		<condition name="CheckUserCount" checkCount="4">
 			<transition state="리젠주기45초세팅"/>
 		</condition>
@@ -150,7 +151,7 @@
 			<transition state="리젠주기60초세팅"/>
 		</condition>
 		<condition name="CheckUserCount" checkCount="2">
-			<transition state="리젠주기120초세팅"/>
+			<transition state="리젠주기60초세팅"/>
 		</condition>
 		<condition name="CheckUserCount" checkCount="1">
 			<transition state="리젠주기120초세팅"/>
@@ -162,14 +163,16 @@
 	<state name="리젠주기120초세팅">
 		<onEnter>
 			<action name="SetUserValue" key="RegenSpeed" value="120"/>
+			<!--<action name="SetAiExtraData" isModify="0" key="soloUser" value="1"/>-->
+			<!-- Solo User 여부 boss npc에 전달 -->
 		</onEnter>
 		<condition name="무조건">
 			<transition state="소환시작"/>
 		</condition>
 	</state>
-	<state name="리젠주기100초세팅">
+	<state name="리젠주기90초세팅">
 		<onEnter>
-			<action name="SetUserValue" key="RegenSpeed" value="100"/>
+			<action name="SetUserValue" key="RegenSpeed" value="90"/>
 		</onEnter>
 		<condition name="무조건">
 			<transition state="소환시작"/>
@@ -419,6 +422,9 @@
 			<transition state="강제소환"/>
 		</condition>
 		<!-- 소환주기변경신호 트리거이벤트-->
+		<condition name="UserValue" key="SpawnSpeedUp" value="1">
+			<transition state="소환속도업"/>
+		</condition>
 		<condition name="WaitSecondsUserValue" key="RegenSpeed">
 			<transition state="소환시작"/>
 		</condition>
@@ -436,6 +442,32 @@
 		<onEnter>
 			<action name="AddUserValue" key="AddBallCount" value="-1"/>
 		</onEnter>
+		<condition name="무조건">
+			<transition state="소환시작"/>
+		</condition>
+	</state>
+	<state name="소환속도업">
+		<onEnter>
+			<action name="SetUserValue" key="SpawnSpeedUp" value="0"/>
+		</onEnter>
+		<condition name="UserValue" key="RegenSpeed" value="120">
+			<transition state="리젠주기90초세팅"/>
+		</condition>
+		<condition name="UserValue" key="RegenSpeed" value="90">
+			<transition state="리젠주기60초세팅"/>
+		</condition>
+		<condition name="UserValue" key="RegenSpeed" value="60">
+			<transition state="리젠주기45초세팅"/>
+		</condition>
+		<condition name="UserValue" key="RegenSpeed" value="45">
+			<transition state="리젠주기30초세팅"/>
+		</condition>
+		<condition name="UserValue" key="RegenSpeed" value="30">
+			<transition state="리젠주기20초세팅"/>
+		</condition>
+		<condition name="UserValue" key="RegenSpeed" value="20">
+			<transition state="소환대기"/>
+		</condition>
 		<condition name="무조건">
 			<transition state="소환시작"/>
 		</condition>

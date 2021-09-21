@@ -1,115 +1,115 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ms2>
-	<additional id="40441001">
-		<level>
-			<BasicProperty level="1" buffType="2" buffSubType="3" durationTick="2500" />
-			<MotionProperty keepEffect="Additional/Stun/Eff_Additional_Stun_Keep.xml" stopEffect="Additional/Stun/Eff_Additional_Stun_Stop.xml" abnormalImmuneBreak="1" />
-			<UIProperty icon="./Data/Resource/Image/skill/icon/Stun.png" />
+	<additional id="40441001" mainType="3" isDebuff="1">
+		<level level="1">
+			<Basic durationTick="2500" />
+			<Motion keepEffect="Additional/Stun/Eff_Additional_Stun_Keep.xml" stopEffect="Additional/Stun/Eff_Additional_Stun_Stop.xml" abnormalImmuneBreak="1" />
+			<UI icon="./Data/Resource/Image/skill/icon/Stun.png" />
 		</level>
 	</additional>
-	<additional id="40441002">
-		<level>
-			<BasicProperty level="1" buffType="2" buffSubType="3" durationTick="1000" />
-			<MotionProperty stun="6" abnormalImmuneBreak="1" />
+	<additional id="40441002" mainType="3" isDebuff="1">
+		<level level="1">
+			<Basic durationTick="1000" />
+			<Motion stun="6" abnormalImmuneBreak="1" />
 		</level>
 	</additional>
-	<additional id="40441003">
-		<level>
-			<BasicProperty level="1" buffType="2" buffSubType="1" durationTick="3000" />
-			<MotionProperty keepEffect="Additional/Slow/Eff_Additional_Slow_Keep.xml" stopEffect="Additional/Slow/Eff_Additional_Slow_Stop.xml" abnormalImmuneBreak="1" />
-			<Stat>
-				<v type="msp" value="-0.5" isRate="1" />
-				<v type="rmsp" value="-0.5" isRate="1" />
-			</Stat>
-			<UIProperty icon="./Data/Resource/Image/skill/icon/SpeedDown.png" />
+	<additional id="40441003" mainType="1" isDebuff="1">
+		<level level="1">
+			<Basic durationTick="3000" />
+			<Motion keepEffect="Additional/Slow/Eff_Additional_Slow_Keep.xml" stopEffect="Additional/Slow/Eff_Additional_Slow_Stop.xml" abnormalImmuneBreak="1" />
+			<SpecialAbility>
+				<v type="mspRate" value="-500" />
+				<v type="rmspRate" value="-500" />
+			</SpecialAbility>
+			<UI icon="./Data/Resource/Image/skill/icon/SpeedDown.png" />
 		</level>
 	</additional>
-	<additional id="40442001">
-		<level>
-			<BasicProperty level="1" buffType="2" durationTick="15000" />
-			<MotionProperty abnormalImmuneBreak="1" />
-			<ImmuneEffectProperty immuneEffectCodes="40442042,40442043" />
-			<UIProperty icon="./Data/Resource/Image/skill/icon/41000011.PNG" />
+	<additional id="40442001" isDebuff="1">
+		<level level="1">
+			<Basic durationTick="15000" />
+			<Motion abnormalImmuneBreak="1" />
+			<ImmuneEffect immuneEffectCodes="40442042,40442043" />
+			<UI icon="./Data/Resource/Image/skill/icon/41000011.PNG" />
 		</level>
 	</additional>
-	<additional id="40442002">
-		<level>
-			<BasicProperty level="1" buffType="2" buffSubType="3" durationTick="2000" />
-			<MotionProperty keepEffect="Additional/Stun/Eff_Additional_Stun_Keep.xml" stopEffect="Additional/Stun/Eff_Additional_Stun_Stop.xml" stun="1" abnormalImmuneBreak="1" />
-			<UIProperty icon="./Data/Resource/Image/skill/icon/Stun.png" />
+	<additional id="40442002" mainType="3" isDebuff="1">
+		<level level="1">
+			<Basic durationTick="2000" />
+			<Motion keepEffect="Additional/Stun/Eff_Additional_Stun_Keep.xml" stopEffect="Additional/Stun/Eff_Additional_Stun_Stop.xml" stun="1" abnormalImmuneBreak="1" />
+			<UI icon="./Data/Resource/Image/skill/icon/Stun.png" />
 		</level>
 	</additional>
 	<additional id="40442003">
-		<level stringParam="100">
-			<BasicProperty level="1" durationTick="300000" />
-			<MotionProperty startEffect="CH\Skill\Wizard\Eff_Wizard_EnergyExplosion_Invoke_01.xml" keepEffect="Additional/Etc/Eff_Additional_Anger_Keep.xml" abnormalImmuneBreak="1" scale="0.2" />
-			<Stat>
-				<v type="pap" value="1" isRate="1" />
-				<v type="map" value="1" isRate="1" />
-			</Stat>
-			<UIProperty icon="./Data/Resource/Image/skill/icon/MonsterOffenceUp.png" />
+		<level level="1" stringParam="100">
+			<Basic durationTick="300000" />
+			<Motion startEffect="CH\Skill\Wizard\Eff_Wizard_EnergyExplosion_Invoke_01.xml" keepEffect="Additional/Etc/Eff_Additional_Anger_Keep.xml" abnormalImmuneBreak="1" scale="0.2" />
+			<SpecialAbility>
+				<v type="papRate" value="1000" />
+				<v type="mapRate" value="1000" />
+			</SpecialAbility>
+			<UI icon="./Data/Resource/Image/skill/icon/MonsterOffenceUp.png" />
 		</level>
 	</additional>
-	<additional id="40442004">
-		<level>
-			<BasicProperty level="1" buffSubType="5" durationTick="1000" resetCondition="3" />
-			<MotionProperty startEffect="NPC/Skill/RedMask/Eff_RedMask_Magic_Wide_01_A_Hit.xml" abnormalImmuneBreak="1" />
-			<RecoveryProperty hpRate="0.03" />
+	<additional id="40442004" mainType="5">
+		<level level="1">
+			<Basic durationTick="1000" resetCondition="3" />
+			<Motion startEffect="NPC/Skill/RedMask/Eff_RedMask_Magic_Wide_01_A_Hit.xml" abnormalImmuneBreak="1" />
+			<Recovery hpRate="0.03" />
 		</level>
 	</additional>
 	<additional id="40442041">
-		<level>
-			<BasicProperty level="1" durationTick="1000" resetCondition="3" />
-			<MotionProperty startEffect="NPC/Skill/RedMask/Eff_RedMask_Magic_Wide_01_A_Hit.xml" abnormalImmuneBreak="1" />
-			<RecoveryProperty hpRate="0.03" />
+		<level level="1">
+			<Basic durationTick="1000" resetCondition="3" />
+			<Motion startEffect="NPC/Skill/RedMask/Eff_RedMask_Magic_Wide_01_A_Hit.xml" abnormalImmuneBreak="1" />
+			<Recovery hpRate="0.03" />
 		</level>
 	</additional>
-	<additional id="40442042">
-		<level>
-			<BasicProperty level="1" buffType="2" durationTick="3000" />
-			<MotionProperty abnormalImmuneBreak="1" />
-			<UIProperty icon="./Data/Resource/Image/skill/icon/exhaust.png" />
-			<splashSkill level="1" skillID="40442007" immediateActive="1" />
+	<additional id="40442042" isDebuff="1">
+		<level level="1">
+			<Basic durationTick="3000" />
+			<Motion abnormalImmuneBreak="1" />
+			<UI icon="./Data/Resource/Image/skill/icon/exhaust.png" />
+			<Skill level="1" skillID="40442007" immediateActive="1" />
 		</level>
 	</additional>
-	<additional id="40442043">
-		<level>
-			<BasicProperty level="1" buffType="2" durationTick="5000" forceApplyTarget="2" />
-			<MotionProperty keepEffect="Additional/Etc/Eff_Additional_fascination_Keep.xml" abnormalImmuneBreak="1" />
-			<Stat>
-				<v type="pap" value="-0.95" isRate="1" />
-				<v type="map" value="-0.95" isRate="1" />
-			</Stat>
-			<UIProperty icon="./Data/Resource/Image/skill/icon/Confusion.png" />
+	<additional id="40442043" isDebuff="1">
+		<level level="1">
+			<Basic durationTick="5000" forceApplyTarget="2" />
+			<Motion keepEffect="Additional/Etc/Eff_Additional_fascination_Keep.xml" abnormalImmuneBreak="1" />
+			<SpecialAbility>
+				<v type="papRate" value="-950" />
+				<v type="mapRate" value="-950" />
+			</SpecialAbility>
+			<UI icon="./Data/Resource/Image/skill/icon/Confusion.png" />
 		</level>
 	</additional>
 	<additional id="40443001">
-		<level>
-			<BasicProperty level="1" intervalTick="500" keepCondition="99" />
-			<conditionSkill level="1" skillID="40443002" skillTarget="1" activeByIntervalTick="1" />
+		<level level="1">
+			<Basic intervalTick="500" keepCondition="99" />
+			<Additional level="1" skillID="40443002" skillTarget="1" activeByIntervalTick="1" />
 		</level>
 	</additional>
 	<additional id="40443002">
-		<level>
-			<BasicProperty level="1" durationTick="2500" resetCondition="1" dotCondition="1" />
-			<MotionProperty abnormalImmuneBreak="1" />
-			<splashSkill level="1" skillID="40443002" interval="500" immediateActive="1" />
+		<level level="1">
+			<Basic durationTick="2500" resetCondition="1" dotCondition="1" />
+			<Motion abnormalImmuneBreak="1" />
+			<Skill level="1" skillID="40443002" interval="500" immediateActive="1" />
 		</level>
 	</additional>
-	<additional id="40443003">
-		<level>
-			<BasicProperty level="1" buffType="2" buffSubType="3" durationTick="100" />
-			<MotionProperty stun="1" abnormalImmuneBreak="1" />
-			<UIProperty icon="./Data/Resource/Image/skill/icon/Stun.png" />
+	<additional id="40443003" mainType="3" isDebuff="1">
+		<level level="1">
+			<Basic durationTick="100" />
+			<Motion stun="1" abnormalImmuneBreak="1" />
+			<UI icon="./Data/Resource/Image/skill/icon/Stun.png" />
 		</level>
 	</additional>
 	<additional id="40444001">
-		<level>
-			<BasicProperty level="1" durationTick="99999000" />
-			<MotionProperty abnormalImmuneBreak="1" />
-			<Stat>
+		<level level="1">
+			<Basic durationTick="99999000" />
+			<Motion abnormalImmuneBreak="1" />
+			<SpecialAbility>
 				<v type="ndd" value="1000" />
-			</Stat>
+			</SpecialAbility>
 		</level>
 	</additional>
 </ms2>

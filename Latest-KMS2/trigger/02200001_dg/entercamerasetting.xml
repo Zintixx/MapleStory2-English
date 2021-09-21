@@ -13,8 +13,9 @@
 	<state name="기본카메라세팅"> 
 		<onEnter>
 			<action name="LookCenterCameraSetting" boxId="1000" centerPos="850, -1125, 1950" outDist="0" inDist="0" />
-			<action name="LookCenterCameraOnOff" boxId="1001" on="1"/>
-			<action name="LookCenterCameraOnOff" boxId="1002" on="0"/>
+			<!--<action name="LookCenterCameraOnOff" boxId="5001" on="1"/>-->
+			<!-- 죽으면 자동으로 리셋된다 -->
+			<action name="LookCenterCameraOnOff" boxId="5002" on="0"/>
 		</onEnter>  			
 		<condition name="무조건" > 
 				<transition state="기본카메라세팅대기"/>
