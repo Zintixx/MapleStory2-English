@@ -644,7 +644,7 @@
 			<property type="1" subtype="13" iconCode="2" slotIcon="./Data/Resource/Image/item/icon/11300076.png" category="CP" blackMarketCategory="113_equip" gearScore="1">
 				<sell price="241,301,386,482,590,711" />
 			</property>
-			<limit jobLimit="10,20,90" recommendJobs="10,20,90" transferType="5" globalTransferType="3" shopSell="1" />
+			<limit jobLimit="10,20,90" recommendJobs="10,20,90" transferType="3" shopSell="1" />
 			<tool itemPreset="11300076" />
 			<option constantID="11300076" randomID="11300017" />
 		</environment>
@@ -1058,7 +1058,7 @@
 			<property type="1" subtype="13" iconCode="2" slotIcon="./Data/Resource/Image/item/icon/11300118.png" category="CP" blackMarketCategory="113_equip" gearScore="1">
 				<sell price="241,301,386,482,590,711" />
 			</property>
-			<limit jobLimit="10,20,90" recommendJobs="10,20,90" transferType="5" globalTransferType="3" shopSell="1" />
+			<limit jobLimit="10,20,90" recommendJobs="10,20,90" transferType="3" shopSell="1" />
 			<tool itemPreset="11300118" />
 			<option constantID="11300118" randomID="11300017" />
 		</environment>
@@ -1166,7 +1166,7 @@
 			<property type="1" subtype="13" iconCode="2" slotIcon="./Data/Resource/Image/item/icon/11300130.png" category="CP" blackMarketCategory="113_equip" remakeDisable="true" gearScore="30">
 				<sell price="1911,2389,3058,3822,4682,5637" />
 			</property>
-			<limit levelLimit="30" transferType="5" globalTransferType="3" shopSell="1" enableBreak="1" />
+			<limit levelLimit="30" transferType="3" shopSell="1" enableBreak="1" />
 			<tool itemPreset="11300130" />
 			<option constantID="11300130" randomID="11300089" optionLevel="30" />
 		</environment>
@@ -1186,7 +1186,7 @@
 			<property type="1" subtype="13" iconCode="2" slotIcon="./Data/Resource/Image/item/icon/11300132.png" category="CP" blackMarketCategory="113_equip" remakeDisable="true" gearScore="35">
 				<sell price="2471,3089,3954,4942,6054,7289" />
 			</property>
-			<limit levelLimit="35" transferType="5" globalTransferType="3" shopSell="1" enableBreak="1" />
+			<limit levelLimit="35" transferType="3" shopSell="1" enableBreak="1" />
 			<tool itemPreset="11300132" />
 			<option constantID="11300132" randomID="11300132" optionLevel="35" />
 		</environment>
@@ -1196,7 +1196,7 @@
 			<property type="1" subtype="13" iconCode="2" slotIcon="./Data/Resource/Image/item/icon/11300133.png" category="CP" blackMarketCategory="113_equip" remakeDisable="true" gearScore="30">
 				<sell price="1911,2389,3058,3822,4682,5637" />
 			</property>
-			<limit levelLimit="30" transferType="5" globalTransferType="3" shopSell="1" enableBreak="1" />
+			<limit levelLimit="30" transferType="3" shopSell="1" enableBreak="1" />
 			<tool itemPreset="11300133" />
 			<option constantID="11300133" randomID="11300089" optionLevel="30" />
 		</environment>
@@ -1463,7 +1463,7 @@
 			<property type="1" subtype="13" iconCode="2" slotIcon="./Data/Resource/Image/item/icon/11300160.png" category="CP" blackMarketCategory="113_equip" gearScore="26">
 				<sell price="1521,1901,2434,3042,3726,4487" />
 			</property>
-			<limit levelLimit="26" transferType="5" globalTransferType="3" shopSell="1" enableBreak="1" />
+			<limit levelLimit="26" transferType="3" shopSell="1" enableBreak="1" />
 			<tool itemPreset="11300160" />
 			<option constantID="113010101" randomID="11300119" optionLevel="26" />
 		</environment>
@@ -1473,7 +1473,7 @@
 			<property type="1" subtype="13" iconCode="2" slotIcon="./Data/Resource/Image/item/icon/11300161.png" category="CP" blackMarketCategory="113_equip" gearScore="31">
 				<sell price="2017,2521,3227,4034,4942,5950" />
 			</property>
-			<limit levelLimit="31" transferType="5" globalTransferType="3" shopSell="1" enableBreak="1" />
+			<limit levelLimit="31" transferType="3" shopSell="1" enableBreak="1" />
 			<tool itemPreset="11300161" />
 			<option constantID="113010101" randomID="11300119" optionLevel="31" />
 		</environment>
@@ -17108,16 +17108,16 @@
 	</item>
 	<item id="11320335">
 		<environment>
-			<property rank="1" type="1" subtype="13" iconCode="2" itemGroup="3" skinType="2" category="CP" blackMarketCategory="113_skin" socketDataId="1002" />
-			<limit genderLimit="0" transferType="1" />
-			<tool itemPreset="11320335" />
+			<property rank="1" type="1" subtype="13" iconCode="2" itemGroup="3" skinType="2" slotIcon="11301559" category="CP" blackMarketCategory="113_skin" socketDataId="1002" />
+			<limit genderLimit="0" transferType="1" enableSocketTransfer="false" />
+			<tool itemPreset="11301559" />
 		</environment>
 	</item>
 	<item id="11320336">
 		<environment>
-			<property rank="1" type="1" subtype="13" iconCode="2" itemGroup="3" skinType="2" slotIcon="11320335" category="CP" blackMarketCategory="113_skin" socketDataId="1002" />
-			<limit genderLimit="1" transferType="1" />
-			<tool itemPreset="11320336" />
+			<property rank="1" type="1" subtype="13" iconCode="2" itemGroup="3" skinType="2" slotIcon="11301559" category="CP" blackMarketCategory="113_skin" socketDataId="1002" />
+			<limit genderLimit="1" transferType="1" enableSocketTransfer="false" />
+			<tool itemPreset="11301559" />
 		</environment>
 	</item>
 	<item id="11320337">
@@ -17980,6 +17980,20 @@
 			<tool itemPreset="11300229" />
 		</environment>
 	</item>
+	<item id="11320444">
+		<environment>
+			<property rank="4" type="1" subtype="13" iconCode="2" itemGroup="3" skinType="2" slotIcon="11301559" category="CP" blackMarketCategory="113_skin" socketDataId="1002" />
+			<limit genderLimit="0" transferType="1" enableSocketTransfer="false" />
+			<tool itemPreset="11301559" />
+		</environment>
+	</item>
+	<item id="11320445">
+		<environment>
+			<property rank="4" type="1" subtype="13" iconCode="2" itemGroup="3" skinType="2" slotIcon="11301559" category="CP" blackMarketCategory="113_skin" socketDataId="1002" />
+			<limit genderLimit="1" transferType="1" enableSocketTransfer="false" />
+			<tool itemPreset="11301559" />
+		</environment>
+	</item>
 	<item id="11320449">
 		<environment>
 			<basic originID="11320449" />
@@ -18623,6 +18637,20 @@
 			<tool itemPreset="11301385" />
 		</environment>
 	</item>
+	<item id="11320536">
+		<environment>
+			<property rank="1" type="1" subtype="13" iconCode="2" itemGroup="3" skinType="2" slotIcon="11300657" category="CP" blackMarketCategory="113_skin" socketDataId="1002" />
+			<limit genderLimit="0" transferType="1" enableSocketTransfer="false" />
+			<tool itemPreset="11300657" />
+		</environment>
+	</item>
+	<item id="11320537">
+		<environment>
+			<property rank="1" type="1" subtype="13" iconCode="2" itemGroup="3" skinType="2" slotIcon="11300657" category="CP" blackMarketCategory="113_skin" socketDataId="1002" />
+			<limit genderLimit="1" transferType="1" enableSocketTransfer="false" />
+			<tool itemPreset="11300657" />
+		</environment>
+	</item>
 	<item id="11320628">
 		<environment>
 			<basic originID="11320628" />
@@ -18985,6 +19013,7 @@
 	</item>
 	<item id="11320672">
 		<environment>
+			<basic originID="11304837" />
 			<property rank="5" type="1" subtype="13" iconCode="2" itemGroup="3" skinType="2" slotIcon="11304837" category="CP" blackMarketCategory="113_skin" socketDataId="1002" />
 			<limit genderLimit="0" transferType="1" enableSocketTransfer="false" />
 			<effect idle="Item/SpecialSkin/DarkFantasy/Eff_DarkFantasy_Hat_Idle_01.xml" battleIdle="Item/SpecialSkin/DarkFantasy/Eff_DarkFantasy_Hat_Idle_01.xml" />
@@ -18993,6 +19022,7 @@
 	</item>
 	<item id="11320673">
 		<environment>
+			<basic originID="11304838" />
 			<property rank="5" type="1" subtype="13" iconCode="2" itemGroup="3" skinType="2" slotIcon="11304838" category="CP" blackMarketCategory="113_skin" socketDataId="1002" />
 			<limit genderLimit="1" transferType="1" enableSocketTransfer="false" />
 			<effect idle="Item/SpecialSkin/DarkFantasy/Eff_DarkFantasy_Hat_Idle_01.xml" battleIdle="Item/SpecialSkin/DarkFantasy/Eff_DarkFantasy_Hat_Idle_01.xml" />
@@ -19047,6 +19077,76 @@
 			<tool itemPreset="11300200" />
 		</environment>
 	</item>
+	<item id="11320680">
+		<environment>
+			<property rank="4" type="1" subtype="13" iconCode="2" itemGroup="3" skinType="2" slotIcon="11320059" category="CP" blackMarketCategory="113_skin" socketDataId="1002" />
+			<limit genderLimit="0" transferType="1" enableSocketTransfer="false" />
+			<tool itemPreset="11320059" />
+		</environment>
+	</item>
+	<item id="11320681">
+		<environment>
+			<property rank="4" type="1" subtype="13" iconCode="2" itemGroup="3" skinType="2" slotIcon="11320060" category="CP" blackMarketCategory="113_skin" socketDataId="1002" />
+			<limit genderLimit="1" transferType="1" enableSocketTransfer="false" />
+			<tool itemPreset="11320060" />
+		</environment>
+	</item>
+	<item id="11320682">
+		<environment>
+			<property rank="4" type="1" subtype="13" iconCode="2" itemGroup="3" skinType="2" slotIcon="11320043" category="CP" blackMarketCategory="113_skin" socketDataId="1002" />
+			<limit genderLimit="0" transferType="1" enableSocketTransfer="false" />
+			<tool itemPreset="11320043" />
+		</environment>
+	</item>
+	<item id="11320683">
+		<environment>
+			<property rank="4" type="1" subtype="13" iconCode="2" itemGroup="3" skinType="2" slotIcon="11320044" category="CP" blackMarketCategory="113_skin" movie="Item/11300496.usm" socketDataId="1002" />
+			<limit genderLimit="1" transferType="1" enableSocketTransfer="false" />
+			<tool itemPreset="11320044" />
+		</environment>
+	</item>
+	<item id="11320684">
+		<environment>
+			<property rank="3" type="1" subtype="13" iconCode="2" itemGroup="3" skinType="2" slotIcon="11301152" category="CP" blackMarketCategory="113_skin" socketDataId="1002" />
+			<limit genderLimit="0" transferType="1" enableSocketTransfer="false" />
+			<tool itemPreset="11301152" />
+		</environment>
+	</item>
+	<item id="11320685">
+		<environment>
+			<property rank="3" type="1" subtype="13" iconCode="2" itemGroup="3" skinType="2" slotIcon="11301152" category="CP" blackMarketCategory="113_skin" socketDataId="1002" />
+			<limit genderLimit="1" transferType="1" enableSocketTransfer="false" />
+			<tool itemPreset="11301152" />
+		</environment>
+	</item>
+	<item id="11320686">
+		<environment>
+			<property rank="3" type="1" subtype="13" iconCode="2" itemGroup="3" skinType="2" slotIcon="11301408" category="CP" blackMarketCategory="113_skin" socketDataId="1002" />
+			<limit genderLimit="0" transferType="1" enableSocketTransfer="false" />
+			<tool itemPreset="11301408" />
+		</environment>
+	</item>
+	<item id="11320687">
+		<environment>
+			<property rank="3" type="1" subtype="13" iconCode="2" itemGroup="3" skinType="2" slotIcon="11301408" category="CP" blackMarketCategory="113_skin" socketDataId="1002" />
+			<limit genderLimit="1" transferType="1" enableSocketTransfer="false" />
+			<tool itemPreset="11301408" />
+		</environment>
+	</item>
+	<item id="11320688">
+		<environment>
+			<property rank="1" type="1" subtype="13" iconCode="2" itemGroup="3" skinType="2" slotIcon="11300385" category="CP" blackMarketCategory="113_skin" socketDataId="1002" />
+			<limit genderLimit="0" transferType="1" enableSocketTransfer="false" />
+			<tool itemPreset="11300385" />
+		</environment>
+	</item>
+	<item id="11320689">
+		<environment>
+			<property rank="1" type="1" subtype="13" iconCode="2" itemGroup="3" skinType="2" slotIcon="11300385" category="CP" blackMarketCategory="113_skin" socketDataId="1002" />
+			<limit genderLimit="1" transferType="1" enableSocketTransfer="false" />
+			<tool itemPreset="11300385" />
+		</environment>
+	</item>
 	<item id="11329990">
 		<environment>
 			<basic originID="11329990" />
@@ -19060,7 +19160,7 @@
 			<property type="1" subtype="13" iconCode="2" slotIcon="11300073" category="CP" blackMarketCategory="113_equip" gearScore="55">
 				<sell price="4628,5785,7405,9256,11339,13653" />
 			</property>
-			<limit jobLimit="80" recommendJobs="80" levelLimit="50" transferType="5" globalTransferType="3" shopSell="1" enableBreak="1" />
+			<limit jobLimit="80" recommendJobs="80" levelLimit="50" transferType="3" shopSell="1" enableBreak="1" />
 			<fusion fusionable="1" />
 			<tool itemPreset="11300073" />
 			<option constantID="113010101" randomID="11300015" optionLevel="55" />
@@ -19071,7 +19171,7 @@
 			<property type="1" subtype="13" iconCode="2" slotIcon="11300077" category="CP" blackMarketCategory="113_equip" gearScore="55">
 				<sell price="4628,5785,7405,9256,11339,13653" />
 			</property>
-			<limit jobLimit="30" recommendJobs="30" levelLimit="50" transferType="5" globalTransferType="3" shopSell="1" enableBreak="1" />
+			<limit jobLimit="30" recommendJobs="30" levelLimit="50" transferType="3" shopSell="1" enableBreak="1" />
 			<fusion fusionable="1" />
 			<tool itemPreset="11300077" />
 			<option constantID="113010101" randomID="11300024" optionLevel="55" />
@@ -19082,7 +19182,7 @@
 			<property type="1" subtype="13" iconCode="2" slotIcon="11300082" category="CP" blackMarketCategory="113_equip" gearScore="55">
 				<sell price="4628,5785,7405,9256,11339,13653" />
 			</property>
-			<limit jobLimit="50" recommendJobs="50" levelLimit="50" transferType="5" globalTransferType="3" shopSell="1" enableBreak="1" />
+			<limit jobLimit="50" recommendJobs="50" levelLimit="50" transferType="3" shopSell="1" enableBreak="1" />
 			<fusion fusionable="1" />
 			<tool itemPreset="11300082" />
 			<option constantID="113010101" randomID="11300015" optionLevel="55" />
@@ -19093,7 +19193,7 @@
 			<property type="1" subtype="13" iconCode="2" slotIcon="11300083" category="CP" blackMarketCategory="113_equip" gearScore="55">
 				<sell price="4628,5785,7405,9256,11339,13653" />
 			</property>
-			<limit jobLimit="40" recommendJobs="40" levelLimit="50" transferType="5" globalTransferType="3" shopSell="1" enableBreak="1" />
+			<limit jobLimit="40" recommendJobs="40" levelLimit="50" transferType="3" shopSell="1" enableBreak="1" />
 			<fusion fusionable="1" />
 			<tool itemPreset="11300083" />
 			<option constantID="113010101" randomID="11300024" optionLevel="55" />
@@ -19104,7 +19204,7 @@
 			<property type="1" subtype="13" iconCode="2" slotIcon="11300084" category="CP" blackMarketCategory="113_equip" gearScore="55">
 				<sell price="4628,5785,7405,9256,11339,13653" />
 			</property>
-			<limit jobLimit="70" recommendJobs="70" levelLimit="50" transferType="5" globalTransferType="3" shopSell="1" enableBreak="1" />
+			<limit jobLimit="70" recommendJobs="70" levelLimit="50" transferType="3" shopSell="1" enableBreak="1" />
 			<fusion fusionable="1" />
 			<tool itemPreset="11300084" />
 			<option constantID="113010101" randomID="11300015" optionLevel="55" />
@@ -19115,7 +19215,7 @@
 			<property type="1" subtype="13" iconCode="2" slotIcon="11300085" category="CP" blackMarketCategory="113_equip" gearScore="55">
 				<sell price="4628,5785,7405,9256,11339,13653" />
 			</property>
-			<limit jobLimit="20" recommendJobs="20" levelLimit="50" transferType="5" globalTransferType="3" shopSell="1" enableBreak="1" />
+			<limit jobLimit="20" recommendJobs="20" levelLimit="50" transferType="3" shopSell="1" enableBreak="1" />
 			<fusion fusionable="1" />
 			<tool itemPreset="11300085" />
 			<option constantID="113010101" randomID="11300015" optionLevel="55" />
@@ -19126,7 +19226,7 @@
 			<property type="1" subtype="13" iconCode="2" slotIcon="11300135" category="CP" blackMarketCategory="113_equip" gearScore="54">
 				<sell price="4628,5785,7405,9256,11339,13653" />
 			</property>
-			<limit jobLimit="20" recommendJobs="20" levelLimit="50" transferType="5" globalTransferType="3" shopSell="1" enableBreak="1" />
+			<limit jobLimit="20" recommendJobs="20" levelLimit="50" transferType="3" shopSell="1" enableBreak="1" />
 			<fusion fusionable="1" />
 			<tool itemPreset="11300135" />
 			<option constantID="113010101" randomID="11300015" optionLevel="54" />
@@ -19137,7 +19237,7 @@
 			<property type="1" subtype="13" iconCode="2" slotIcon="11300136" category="CP" blackMarketCategory="113_equip" gearScore="54">
 				<sell price="4628,5785,7405,9256,11339,13653" />
 			</property>
-			<limit jobLimit="60" recommendJobs="60" levelLimit="50" transferType="5" globalTransferType="3" shopSell="1" enableBreak="1" />
+			<limit jobLimit="60" recommendJobs="60" levelLimit="50" transferType="3" shopSell="1" enableBreak="1" />
 			<fusion fusionable="1" />
 			<tool itemPreset="11300136" />
 			<option constantID="113010101" randomID="11300015" optionLevel="54" />
@@ -19148,7 +19248,7 @@
 			<property type="1" subtype="13" iconCode="2" slotIcon="11300137" category="CP" blackMarketCategory="113_equip" gearScore="54">
 				<sell price="4628,5785,7405,9256,11339,13653" />
 			</property>
-			<limit jobLimit="10" recommendJobs="10" levelLimit="50" transferType="5" globalTransferType="3" shopSell="1" enableBreak="1" />
+			<limit jobLimit="10" recommendJobs="10" levelLimit="50" transferType="3" shopSell="1" enableBreak="1" />
 			<fusion fusionable="1" />
 			<tool itemPreset="11300137" />
 			<option constantID="113010101" randomID="11300015" optionLevel="54" />
@@ -19159,7 +19259,7 @@
 			<property type="1" subtype="13" iconCode="2" slotIcon="11300143" category="CP" blackMarketCategory="113_equip" gearScore="54">
 				<sell price="4628,5785,7405,9256,11339,13653" />
 			</property>
-			<limit jobLimit="70" recommendJobs="70" levelLimit="50" transferType="5" globalTransferType="3" shopSell="1" enableBreak="1" />
+			<limit jobLimit="70" recommendJobs="70" levelLimit="50" transferType="3" shopSell="1" enableBreak="1" />
 			<fusion fusionable="1" />
 			<tool itemPreset="11300143" />
 			<option constantID="113010101" randomID="11300015" optionLevel="54" />
@@ -19170,7 +19270,7 @@
 			<property type="1" subtype="13" iconCode="2" slotIcon="11300144" category="CP" blackMarketCategory="113_equip" gearScore="54">
 				<sell price="4628,5785,7405,9256,11339,13653" />
 			</property>
-			<limit jobLimit="80" recommendJobs="80" levelLimit="50" transferType="5" globalTransferType="3" shopSell="1" enableBreak="1" />
+			<limit jobLimit="80" recommendJobs="80" levelLimit="50" transferType="3" shopSell="1" enableBreak="1" />
 			<fusion fusionable="1" />
 			<tool itemPreset="11300144" />
 			<option constantID="113010101" randomID="11300015" optionLevel="54" />
@@ -19181,7 +19281,7 @@
 			<property type="1" subtype="13" iconCode="2" slotIcon="11300146" category="CP" blackMarketCategory="113_equip" gearScore="54">
 				<sell price="4628,5785,7405,9256,11339,13653" />
 			</property>
-			<limit jobLimit="50" recommendJobs="50" levelLimit="50" transferType="5" globalTransferType="3" shopSell="1" enableBreak="1" />
+			<limit jobLimit="50" recommendJobs="50" levelLimit="50" transferType="3" shopSell="1" enableBreak="1" />
 			<fusion fusionable="1" />
 			<tool itemPreset="11300146" />
 			<option constantID="113010101" randomID="11300015" optionLevel="54" />
@@ -19192,7 +19292,7 @@
 			<property type="1" subtype="13" iconCode="2" slotIcon="11300148" category="CP" blackMarketCategory="113_equip" gearScore="54">
 				<sell price="4628,5785,7405,9256,11339,13653" />
 			</property>
-			<limit jobLimit="30" recommendJobs="30" levelLimit="50" transferType="5" globalTransferType="3" shopSell="1" enableBreak="1" />
+			<limit jobLimit="30" recommendJobs="30" levelLimit="50" transferType="3" shopSell="1" enableBreak="1" />
 			<fusion fusionable="1" />
 			<tool itemPreset="11300148" />
 			<option constantID="113010101" randomID="11300024" optionLevel="54" />
@@ -19350,7 +19450,7 @@
 			<property type="1" subtype="13" iconCode="2" slotIcon="11300420" category="CP" blackMarketCategory="113_equip" gearScore="54">
 				<sell price="4628,5785,7405,9256,11339,13653" />
 			</property>
-			<limit jobLimit="90" recommendJobs="90" levelLimit="50" transferType="5" globalTransferType="3" shopSell="1" enableBreak="1" />
+			<limit jobLimit="90" recommendJobs="90" levelLimit="50" transferType="3" shopSell="1" enableBreak="1" />
 			<fusion fusionable="1" />
 			<tool itemPreset="11300420" />
 			<option constantID="113010101" randomID="11300024" optionLevel="54" />
@@ -19384,7 +19484,7 @@
 			<property type="1" subtype="13" iconCode="2" slotIcon="11300509" category="CP" blackMarketCategory="113_equip" gearScore="54">
 				<sell price="4628,5785,7405,9256,11339,13653" />
 			</property>
-			<limit jobLimit="100" recommendJobs="100" levelLimit="50" transferType="5" globalTransferType="3" shopSell="1" enableBreak="1" />
+			<limit jobLimit="100" recommendJobs="100" levelLimit="50" transferType="3" shopSell="1" enableBreak="1" />
 			<fusion fusionable="1" />
 			<tool itemPreset="11300509" />
 			<option constantID="113010101" randomID="11300015" optionLevel="54" />
@@ -19406,7 +19506,7 @@
 			<property type="1" subtype="13" iconCode="2" slotIcon="11300515" category="CP" blackMarketCategory="113_equip" gearScore="54">
 				<sell price="4628,5785,7405,9256,11339,13653" />
 			</property>
-			<limit jobLimit="110" recommendJobs="110" levelLimit="50" transferType="5" globalTransferType="3" shopSell="1" enableBreak="1" />
+			<limit jobLimit="110" recommendJobs="110" levelLimit="50" transferType="3" shopSell="1" enableBreak="1" />
 			<fusion fusionable="1" />
 			<tool itemPreset="11300515" />
 			<option constantID="113010101" randomID="11300024" optionLevel="54" />

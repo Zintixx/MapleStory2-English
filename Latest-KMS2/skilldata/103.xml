@@ -675,7 +675,7 @@
 				<attack point="p0" pointGroupID="10300051" targetCount="8" attacktype="2" brokenOffence="1" unrideOnHit="1">
 					<range rangeType="frustum" distance="800" height="150" width="200" endWidth="600" applyTarget="1" />
 					<arrow nonTarget="1" />
-					<damage rate="6.52" effectHit="CH/Common/Eff_Common_Fire_Hit.xml" attackMaterial="101" />
+					<damage rate="652" effectHit="CH/Common/Eff_Common_Fire_Hit.xml" attackMaterial="101" />
 					<actionAdditional additionalID="10300021" level="7" skillTarget="2" skillOwner="1" dependOnDamageCount="1" />
 					<actionAdditional additionalID="10300286" level="1" skillTarget="1" skillOwner="1" dependOnDamageCount="1">
 						<beginCondition>
@@ -1248,12 +1248,11 @@
 			</motion>
 		</level>
 	</skill>
-	<skill id="10300043" comment="위자드">
+	<skill id="10300043" originID="10300041" comment="위자드">
 		<basic feature="JobChange_02" mainType="2">
-			<ui icon="./Data/Resource/Image/skill/icon/10300041.png" exceptUI="1" attackType="2" tooltip="10300041" />
+			<ui icon="./Data/Resource/Image/skill/icon/10300041.png" attackType="2" tooltip="10300041" />
 			<kinds rangeType="2" jump="10300043" unrideOnUse="1" />
 			<stateAttr autoTargeting="0" keyIsDown="1" useDefaultSkill="1" cooldownGroupID="10300041" clearCooldownFromPVPZone="1" />
-			<changeSkill originSkillID="10300041" />
 			<condition useCoolDownShowUI="1">
 				<weapon lh="0" rh="52" />
 			</condition>
@@ -1909,116 +1908,6 @@
 			</motion>
 		</level>
 	</skill>
-	<skill id="10300053">
-		<basic feature="JobChange_02" mainType="2">
-			<ui icon="./Data/Resource/Image/skill/icon/10300262.png" exceptUI="1" attackType="2" />
-			<kinds rangeType="2" jump="10300053" element="2" unrideOnUse="1" />
-			<stateAttr autoTargeting="0" keyIsDown="1" useDefaultSkill="1" ignoreReduceCooldown="1" />
-			<combo inputSkill="10300053" outputSkill="10300054" />
-			<condition>
-				<weapon lh="0" rh="52" />
-			</condition>
-		</basic>
-		<level value="1" sp="10">
-			<actionAdditional additionalID="10300263" level="2" skillTarget="1">
-				<beginCondition allowBattleRidingState="1" />
-			</actionAdditional>
-			<motion sequenceName="Wizard_IceBomb_01_A" strTagEffects="e0=CH/Skill/Wizard/Eff_Wizard_IceBomb_Cast_01.xml">
-				<attack point="p0" targetCount="1" magicPathID="10300262" cubeMagicPathID="103000511" attacktype="2" attackMethodType="1" brokenOffence="2">
-					<range rangeType="frustum" distance="750" height="150" width="300" endWidth="600" applyTarget="1" />
-					<arrow overlap="1" rayPhysxTest="1" collision="150,150,150" effect="CH/Skill/Wizard/Eff_Wizard_IceBomb_Ball_01.xml" effectRemain="CH/Skill/Wizard/Eff_Wizard_IceBomb_BallRemain_01.xml" effectDestroy="CH/Skill/Wizard/Eff_Wizard_IceBomb_BallDestroy_01.xml" />
-					<damage count="0" attackMaterial="1000" />
-					<actionSkill skillID="10300056" level="1" immediateActive="1" />
-				</attack>
-			</motion>
-		</level>
-	</skill>
-	<skill id="10300054">
-		<basic feature="JobChange_02" mainType="2">
-			<ui icon="./Data/Resource/Image/skill/icon/10300262.png" exceptUI="1" attackType="2" />
-			<kinds rangeType="2" jump="10300054" element="2" unrideOnUse="1" />
-			<stateAttr autoTargeting="0" keyIsDown="1" useDefaultSkill="1" ignoreReduceCooldown="1" />
-			<combo comboSkill="1" inputSkill="10300053" outputSkill="10300055" />
-			<condition>
-				<weapon lh="0" rh="52" />
-			</condition>
-		</basic>
-		<level value="1" sp="10">
-			<actionAdditional additionalID="10300263" level="2" skillTarget="1">
-				<beginCondition allowBattleRidingState="1" />
-			</actionAdditional>
-			<motion sequenceName="Wizard_IceBomb_02_A" strTagEffects="e0=CH/Skill/Wizard/Eff_Wizard_IceBomb_Cast_02.xml">
-				<attack point="p0" targetCount="1" magicPathID="10300262" cubeMagicPathID="103000511" attacktype="2" attackMethodType="1" brokenOffence="2">
-					<range rangeType="frustum" distance="750" height="150" width="300" endWidth="600" applyTarget="1" />
-					<arrow overlap="1" rayPhysxTest="1" collision="150,150,150" effect="CH/Skill/Wizard/Eff_Wizard_IceBomb_Ball_01.xml" effectRemain="CH/Skill/Wizard/Eff_Wizard_IceBomb_BallRemain_01.xml" effectDestroy="CH/Skill/Wizard/Eff_Wizard_IceBomb_BallDestroy_01.xml" />
-					<damage count="0" attackMaterial="1000" />
-					<actionSkill skillID="10300056" level="1" immediateActive="1" />
-				</attack>
-			</motion>
-		</level>
-	</skill>
-	<skill id="10300055">
-		<basic feature="JobChange_02" mainType="2">
-			<ui icon="./Data/Resource/Image/skill/icon/10300262.png" exceptUI="1" attackType="2" />
-			<kinds rangeType="2" jump="10300055" element="2" unrideOnUse="1" />
-			<stateAttr autoTargeting="0" keyIsDown="1" useDefaultSkill="1" ignoreReduceCooldown="1" />
-			<combo comboSkill="1" inputSkill="10300053" outputSkill="10300054" />
-			<condition>
-				<weapon lh="0" rh="52" />
-			</condition>
-		</basic>
-		<level value="1" sp="10">
-			<actionAdditional additionalID="10300263" level="2" skillTarget="1">
-				<beginCondition allowBattleRidingState="1" />
-			</actionAdditional>
-			<motion sequenceName="Wizard_IceBomb_03_A" strTagEffects="e0=CH/Skill/Wizard/Eff_Wizard_IceBomb_Cast_03.xml">
-				<attack point="p0" targetCount="1" magicPathID="10300262" cubeMagicPathID="103000511" attacktype="2" attackMethodType="1" brokenOffence="2">
-					<range rangeType="frustum" distance="750" height="150" width="300" endWidth="600" applyTarget="1" />
-					<arrow overlap="1" rayPhysxTest="1" collision="150,150,150" effect="CH/Skill/Wizard/Eff_Wizard_IceBomb_Ball_01.xml" effectRemain="CH/Skill/Wizard/Eff_Wizard_IceBomb_BallRemain_01.xml" effectDestroy="CH/Skill/Wizard/Eff_Wizard_IceBomb_BallDestroy_01.xml" />
-					<damage count="0" attackMaterial="1000" />
-					<actionSkill skillID="10300056" level="1" immediateActive="1" />
-				</attack>
-			</motion>
-		</level>
-	</skill>
-	<skill id="10300056">
-		<basic feature="JobChange_02" mainType="30">
-			<ui exceptUI="1" attackType="2" />
-			<kinds rangeType="2" element="2" groupIDs="10300261" />
-			<stateAttr clearCooldownFromPVPZone="1" />
-		</basic>
-		<level value="1">
-			<motion splashInvokeEffect="CH/Skill/Wizard/Eff_Wizard_IceBomb_SplashInvoke_01.xml">
-				<attack point="p0" targetCount="8" attacktype="2" hitImmuneBreak="5" brokenOffence="2" brokenForce="2" unrideOnHit="1">
-					<range rangeType="cylinder" distance="300" height="300" applyTarget="1" />
-					<arrow nonTarget="1" />
-					<damage rate="2" hitSpeedRate="0.8" effectHit="CH/Common/Eff_Common_Ice_Hit.xml" push="1" pushdistance="1" pushduration="0.3" pushEaseType="1" pushApplyField="1" attackMaterial="101" />
-					<actionAdditional additionalID="10300051" level="1" skillTarget="2" skillOwner="1" dependOnDamageCount="1" />
-					<actionAdditional additionalID="10300182" level="1" skillTarget="2" skillOwner="1" dependOnDamageCount="1">
-						<beginCondition>
-							<caster hasBuffID="10300181" />
-						</beginCondition>
-					</actionAdditional>
-					<actionAdditional additionalID="10300265" level="1" skillTarget="2" skillOwner="1" dependOnDamageCount="1" />
-				</attack>
-			</motion>
-		</level>
-	</skill>
-	<skill id="10300057">
-		<basic feature="JobChange_02" mainType="6">
-			<ui icon="./Data/Resource/Image/skill/icon/10300262.png" attackType="2" />
-			<kinds element="2" />
-			<stateAttr battle="0" />
-			<condition>
-				<weapon lh="0" rh="52" />
-			</condition>
-		</basic>
-		<level value="1">
-			<actionAdditional additionalID="10300261" level="1" skillTarget="1">
-				<beginCondition allowBattleRidingState="1" />
-			</actionAdditional>
-		</level>
-	</skill>
 	<skill id="10300061" comment="위자드">
 		<basic mainType="6">
 			<ui icon="./Data/Resource/Image/skill/icon/10300061.png" />
@@ -2427,7 +2316,6 @@
 	</skill>
 	<skill id="10300093" comment="위자드">
 		<basic mainType="6">
-			<ui exceptUI="1" />
 			<kinds element="1" />
 			<stateAttr ignoreReduceCooldown="1" />
 		</basic>
@@ -3157,12 +3045,12 @@
 			</motion>
 		</level>
 	</skill>
-	<skill id="10300162" comment="위자드">
+	<skill id="10300162" originID="10300161" comment="위자드">
 		<basic mainType="2">
 			<ui attackType="2" />
 			<kinds rangeType="2" unrideOnUse="1" />
 			<stateAttr keyIsDown="1" useDefaultSkill="1" ignoreReduceCooldown="1" />
-			<combo comboSkill="1" comboOriginSkill="10300161" inputSkill="10300161" outputSkill="10300163" />
+			<combo comboSkill="1" inputSkill="10300161" outputSkill="10300163" />
 			<autoTargeting autoTargetingMaxDegree="45" />
 			<push back="150" />
 			<condition>
@@ -3278,12 +3166,12 @@
 			</motion>
 		</level>
 	</skill>
-	<skill id="10300163" comment="위자드">
+	<skill id="10300163" originID="10300161" comment="위자드">
 		<basic mainType="2">
 			<ui attackType="2" />
 			<kinds rangeType="2" unrideOnUse="1" />
 			<stateAttr keyIsDown="1" useDefaultSkill="1" ignoreReduceCooldown="1" />
-			<combo comboSkill="1" comboOriginSkill="10300161" />
+			<combo comboSkill="1" />
 			<autoTargeting autoTargetingMaxDegree="45" />
 			<push back="150" />
 			<condition>
@@ -3417,7 +3305,7 @@
 	</skill>
 	<skill id="10300179" comment="위자드">
 		<basic feature="JobChange_01" mainType="6">
-			<ui icon="./Data/Resource/Image/skill/icon/10300171.png" exceptUI="1" attackType="2" />
+			<ui icon="./Data/Resource/Image/skill/icon/10300171.png" attackType="2" />
 			<stateAttr battle="0" />
 			<condition>
 				<weapon lh="0" rh="52" />
@@ -4783,7 +4671,7 @@
 	</skill>
 	<skill id="10300184" comment="위자드">
 		<basic feature="JobChange_01" mainType="6">
-			<ui icon="./Data/Resource/Image/skill/icon/10300181.png" exceptUI="1" attackType="2" />
+			<ui icon="./Data/Resource/Image/skill/icon/10300181.png" attackType="2" />
 			<stateAttr battle="0" />
 		</basic>
 		<level value="1">
@@ -4794,7 +4682,7 @@
 	</skill>
 	<skill id="10300185">
 		<basic feature="JobChange_01" mainType="2">
-			<ui icon="./Data/Resource/Image/skill/icon/10300051.png" exceptUI="1" attackType="2" />
+			<ui icon="./Data/Resource/Image/skill/icon/10300051.png" attackType="2" />
 			<kinds rangeType="2" jump="10300185" element="2" unrideOnUse="1" />
 			<stateAttr autoTargeting="0" keyIsDown="1" />
 			<push back="100" />
@@ -4815,7 +4703,7 @@
 	</skill>
 	<skill id="10300186">
 		<basic feature="JobChange_01" mainType="30">
-			<ui icon="./Data/Resource/Image/skill/icon/10300051.png" exceptUI="1" attackType="2" />
+			<ui icon="./Data/Resource/Image/skill/icon/10300051.png" attackType="2" />
 			<kinds rangeType="2" element="2" />
 		</basic>
 		<level value="1">
@@ -5047,7 +4935,7 @@
 	</skill>
 	<skill id="10300192" comment="위자드">
 		<basic feature="JobChange_01" mainType="30">
-			<ui icon="./Data/Resource/Image/skill/icon/10100051.png" exceptUI="1" attackType="2" />
+			<ui icon="./Data/Resource/Image/skill/icon/10100051.png" attackType="2" />
 			<kinds rangeType="2" element="2" />
 			<stateAttr ignoreReduceCooldown="1" />
 		</basic>
@@ -5174,7 +5062,7 @@
 	</skill>
 	<skill id="10300193" comment="위자드">
 		<basic feature="JobChange_01" mainType="30">
-			<ui icon="./Data/Resource/Image/skill/icon/10100051.png" exceptUI="1" attackType="2" />
+			<ui icon="./Data/Resource/Image/skill/icon/10100051.png" attackType="2" />
 			<kinds element="3" />
 			<stateAttr splashMaxCount="1" />
 			<sensor rangeType="cylinder" distance="300" height="150" targetHasBuffID="10300191" targetHasBuffOwner="1" />
@@ -5336,7 +5224,7 @@
 	</skill>
 	<skill id="10300194" comment="위자드">
 		<basic feature="JobChange_01" mainType="30">
-			<ui icon="./Data/Resource/Image/skill/icon/10100051.png" exceptUI="1" attackType="2" />
+			<ui icon="./Data/Resource/Image/skill/icon/10100051.png" attackType="2" />
 			<kinds rangeType="2" element="3" />
 			<stateAttr ignoreReduceCooldown="1" splashMaxCount="1" />
 		</basic>
@@ -5545,7 +5433,7 @@
 	</skill>
 	<skill id="10300195" comment="위자드">
 		<basic feature="JobChange_01" mainType="30">
-			<ui icon="./Data/Resource/Image/skill/icon/10100051.png" exceptUI="1" attackType="2" />
+			<ui icon="./Data/Resource/Image/skill/icon/10100051.png" attackType="2" />
 			<kinds element="2" />
 			<sensor rangeType="cylinder" distance="2000" height="600" targetHasBuffID="10300192" targetHasBuffOwner="1" />
 		</basic>
@@ -5684,7 +5572,7 @@
 	</skill>
 	<skill id="10300196" comment="위자드">
 		<basic feature="JobChange_01" mainType="30">
-			<ui icon="./Data/Resource/Image/skill/icon/10100051.png" exceptUI="1" attackType="2" />
+			<ui icon="./Data/Resource/Image/skill/icon/10100051.png" attackType="2" />
 			<kinds rangeType="2" element="2" />
 			<stateAttr splashMaxCount="1" />
 		</basic>
@@ -5847,7 +5735,7 @@
 	</skill>
 	<skill id="10300197" comment="위자드">
 		<basic feature="JobChange_01" mainType="2">
-			<ui icon="./Data/Resource/Image/skill/icon/10100051.png" exceptUI="1" attackType="2" />
+			<ui icon="./Data/Resource/Image/skill/icon/10100051.png" attackType="2" />
 			<kinds element="2" />
 			<stateAttr autoTargeting="0" />
 			<sensor rangeType="cylinder" distance="2000" height="600" targetHasBuffID="10300192" targetHasNotBuffID="10300194" targetHasBuffOwner="1" />
@@ -5987,7 +5875,7 @@
 	</skill>
 	<skill id="10300198" comment="위자드">
 		<basic feature="JobChange_01" mainType="2">
-			<ui icon="./Data/Resource/Image/skill/icon/10300191.png" exceptUI="1" attackType="2" />
+			<ui icon="./Data/Resource/Image/skill/icon/10300191.png" attackType="2" />
 			<kinds rangeType="2" jump="10300198" element="2" unrideOnUse="1" />
 			<stateAttr autoTargeting="0" clearCooldownFromPVPZone="1" />
 			<condition>
@@ -6141,7 +6029,7 @@
 	</skill>
 	<skill id="10300199" comment="위자드">
 		<basic feature="JobChange_01" mainType="30">
-			<ui icon="./Data/Resource/Image/skill/icon/10100051.png" exceptUI="1" attackType="2" />
+			<ui icon="./Data/Resource/Image/skill/icon/10100051.png" attackType="2" />
 			<stateAttr splashMaxCount="1" />
 			<sensor rangeType="cylinder" distance="2000" height="600" />
 		</basic>
@@ -6163,7 +6051,7 @@
 	</skill>
 	<skill id="10300200" comment="위자드">
 		<basic feature="JobChange_01" mainType="6">
-			<ui icon="./Data/Resource/Image/skill/icon/10100071.png" exceptUI="1" attackType="2" />
+			<ui icon="./Data/Resource/Image/skill/icon/10100071.png" attackType="2" />
 			<kinds rangeType="2" />
 			<condition>
 				<weapon lh="0" rh="52" />
@@ -6397,7 +6285,7 @@
 	</skill>
 	<skill id="10300202" comment="위자드">
 		<basic feature="JobChange_01" mainType="30">
-			<ui icon="./Data/Resource/Image/skill/icon/11000111.png" exceptUI="1" attackType="2" />
+			<ui icon="./Data/Resource/Image/skill/icon/11000111.png" attackType="2" />
 			<kinds rangeType="2" element="3" />
 		</basic>
 		<level value="1">
@@ -6521,12 +6409,11 @@
 			</motion>
 		</level>
 	</skill>
-	<skill id="10300203" comment="위자드">
+	<skill id="10300203" originID="10300201" comment="위자드">
 		<basic feature="JobChange_01" mainType="2">
-			<ui icon="./Data/Resource/Image/skill/icon/10300201.png" exceptUI="1" attackType="2" />
+			<ui icon="./Data/Resource/Image/skill/icon/10300201.png" attackType="2" />
 			<kinds rangeType="2" jump="10300203" element="3" unrideOnUse="1" />
 			<stateAttr clearCooldownFromPVPZone="1" />
-			<changeSkill originSkillID="10300201" />
 			<autoTargeting autoTargetingMaxDegree="90" />
 			<condition>
 				<weapon lh="0" rh="52" />
@@ -6703,7 +6590,7 @@
 	</skill>
 	<skill id="10300204" comment="위자드">
 		<basic feature="JobChange_01" mainType="30">
-			<ui icon="./Data/Resource/Image/skill/icon/11000111.png" exceptUI="1" attackType="2" />
+			<ui icon="./Data/Resource/Image/skill/icon/11000111.png" attackType="2" />
 			<kinds rangeType="2" element="3" />
 			<stateAttr ignoreReduceCooldown="1" />
 		</basic>
@@ -6830,7 +6717,7 @@
 	</skill>
 	<skill id="10300205">
 		<basic feature="JobChange_01" mainType="30">
-			<ui icon="./Data/Resource/Image/skill/icon/10100051.png" exceptUI="1" attackType="2" />
+			<ui icon="./Data/Resource/Image/skill/icon/10100051.png" attackType="2" />
 			<stateAttr splashMaxCount="1" />
 		</basic>
 		<level value="1">
@@ -6847,7 +6734,7 @@
 	</skill>
 	<skill id="10300206">
 		<basic feature="JobChange_01" mainType="30">
-			<ui icon="./Data/Resource/Image/skill/icon/10100051.png" exceptUI="1" attackType="2" />
+			<ui icon="./Data/Resource/Image/skill/icon/10100051.png" attackType="2" />
 			<stateAttr splashMaxCount="1" />
 		</basic>
 		<level value="1">
@@ -6863,7 +6750,7 @@
 	</skill>
 	<skill id="10300210" comment="위자드">
 		<basic feature="JobChange_01" mainType="6">
-			<ui icon="./Data/Resource/Image/skill/icon/10100071.png" exceptUI="1" attackType="2" />
+			<ui icon="./Data/Resource/Image/skill/icon/10100071.png" attackType="2" />
 			<kinds rangeType="2" />
 			<condition>
 				<weapon lh="0" rh="52" />
@@ -7171,12 +7058,12 @@
 			</motion>
 		</level>
 	</skill>
-	<skill id="10300212" comment="위자드">
+	<skill id="10300212" originID="10300211" comment="위자드">
 		<basic feature="JobChange_01" mainType="2">
-			<ui icon="./Data/Resource/Image/skill/icon/10100071.png" exceptUI="1" attackType="2" showCastingBar="1" paramCastingBar="&lt;v startFrame=&quot;show&quot; color=&quot;red&quot; text=&quot;s_character_skill_charging2&quot; ease=&quot;1&quot;/&gt;" />
+			<ui icon="./Data/Resource/Image/skill/icon/10100071.png" attackType="2" showCastingBar="1" paramCastingBar="&lt;v startFrame=&quot;show&quot; color=&quot;red&quot; text=&quot;s_character_skill_charging2&quot; ease=&quot;1&quot;/&gt;" />
 			<kinds rangeType="2" continue="1" />
 			<stateAttr superArmor="3" autoTargeting="0" keyIsDown="1" />
-			<combo comboSkill="1" chargingSkill="1" comboOriginSkill="10300211" inputSkill="10300211" outputSkill="10300213" />
+			<combo comboSkill="1" chargingSkill="1" inputSkill="10300211" outputSkill="10300213" />
 			<push back="450" />
 			<condition>
 				<weapon lh="0" rh="52" />
@@ -7399,12 +7286,12 @@
 			</motion>
 		</level>
 	</skill>
-	<skill id="10300213" comment="위자드">
+	<skill id="10300213" originID="10300211" comment="위자드">
 		<basic feature="JobChange_01" mainType="2">
-			<ui icon="./Data/Resource/Image/skill/icon/10100071.png" exceptUI="1" attackType="2" showCastingBar="1" paramCastingBar="&lt;v startFrame=&quot;showchargingred_start&quot; color=&quot;red2&quot; text=&quot;s_character_skill_chargingmax&quot; startGauge=&quot;1&quot; ease=&quot;1&quot;/&gt;" />
+			<ui icon="./Data/Resource/Image/skill/icon/10100071.png" attackType="2" showCastingBar="1" paramCastingBar="&lt;v startFrame=&quot;showchargingred_start&quot; color=&quot;red2&quot; text=&quot;s_character_skill_chargingmax&quot; startGauge=&quot;1&quot; ease=&quot;1&quot;/&gt;" />
 			<kinds rangeType="2" continue="1" />
 			<stateAttr superArmor="3" autoTargeting="0" keyIsDown="1" />
-			<combo comboSkill="1" chargingSkill="1" comboOriginSkill="10300211" inputSkill="10300211" outputSkill="10300213" />
+			<combo comboSkill="1" chargingSkill="1" inputSkill="10300211" outputSkill="10300213" />
 			<push back="600" />
 			<condition>
 				<weapon lh="0" rh="52" />
@@ -7545,7 +7432,7 @@
 	</skill>
 	<skill id="10300214">
 		<basic feature="JobChange_02" mainType="2">
-			<ui icon="./Data/Resource/Image/skill/icon/10300263.png" exceptUI="1" attackType="2" />
+			<ui icon="./Data/Resource/Image/skill/icon/10300263.png" attackType="2" />
 			<kinds rangeType="2" element="3" unrideOnUse="1" />
 			<stateAttr superArmor="3" clearCooldownFromPVPZone="1" />
 			<autoTargeting autoTargetingMaxDegree="60" />
@@ -7581,7 +7468,7 @@
 	</skill>
 	<skill id="10300215" comment="위자드">
 		<basic feature="JobChange_01" mainType="30">
-			<ui icon="./Data/Resource/Image/skill/icon/10100071.png" exceptUI="1" attackType="2" />
+			<ui icon="./Data/Resource/Image/skill/icon/10100071.png" attackType="2" />
 			<kinds rangeType="2" element="3" />
 			<push back="600" />
 			<condition>
@@ -7723,7 +7610,7 @@
 	</skill>
 	<skill id="10300216" comment="위자드">
 		<basic feature="JobChange_01" mainType="30">
-			<ui icon="./Data/Resource/Image/skill/icon/10100071.png" exceptUI="1" attackType="2" />
+			<ui icon="./Data/Resource/Image/skill/icon/10100071.png" attackType="2" />
 			<kinds rangeType="2" element="2" />
 			<push back="600" />
 			<condition>
@@ -7865,7 +7752,7 @@
 	</skill>
 	<skill id="10300217" comment="위자드">
 		<basic feature="JobChange_01" mainType="30">
-			<ui icon="./Data/Resource/Image/skill/icon/10100071.png" exceptUI="1" attackType="2" />
+			<ui icon="./Data/Resource/Image/skill/icon/10100071.png" attackType="2" />
 			<kinds rangeType="2" element="3" unrideOnUse="1" />
 			<push back="600" />
 			<condition>
@@ -8007,7 +7894,7 @@
 	</skill>
 	<skill id="10300218">
 		<basic feature="JobChange_02" mainType="30">
-			<ui icon="./Data/Resource/Image/skill/icon/10300263.png" exceptUI="1" attackType="2" />
+			<ui icon="./Data/Resource/Image/skill/icon/10300263.png" attackType="2" />
 			<kinds rangeType="2" element="3" unrideOnUse="1" />
 			<push back="300" />
 			<condition>
@@ -8027,7 +7914,7 @@
 	</skill>
 	<skill id="10300219" comment="위자드">
 		<basic feature="JobChange_01" mainType="6">
-			<ui icon="./Data/Resource/Image/skill/icon/10100071.png" exceptUI="1" attackType="2" />
+			<ui icon="./Data/Resource/Image/skill/icon/10100071.png" attackType="2" />
 			<kinds rangeType="2" />
 			<condition>
 				<weapon lh="0" rh="52" />
@@ -8124,13 +8011,12 @@
 			<motion sequenceName="Wizard_Kindling_01_A" strTagEffects="e0=CH/Skill/Wizard/Eff_Wizard_Kindling_Cast_01.xml" />
 		</level>
 	</skill>
-	<skill id="10300222" comment="위자드">
+	<skill id="10300222" originID="10300221" comment="위자드">
 		<basic mainType="2">
-			<ui icon="./Data/Resource/Image/skill/icon/10300221.png" exceptUI="1" attackType="2" disableChangeSkillIconEffect="1" />
+			<ui icon="./Data/Resource/Image/skill/icon/10300221.png" attackType="2" disableChangeSkillIconEffect="1" />
 			<kinds rangeType="2" jump="10300222" element="1" immediateActive="1" unrideOnUse="1" />
 			<stateAttr cooldownGroupID="10300221" ignoreReduceCooldown="1" />
 			<combo inputSkill="10300222" outputSkill="10300222" />
-			<changeSkill originSkillID="10300221" />
 			<autoTargeting autoTargetingMaxDegree="60" />
 			<condition>
 				<weapon lh="0" rh="52" />
@@ -8619,7 +8505,7 @@
 	</skill>
 	<skill id="10300223" comment="위자드">
 		<basic feature="JobChange_01" mainType="30">
-			<ui icon="./Data/Resource/Image/skill/icon/10400101.png" exceptUI="1" attackType="2" />
+			<ui icon="./Data/Resource/Image/skill/icon/10400101.png" attackType="2" />
 			<kinds rangeType="2" element="1" />
 		</basic>
 		<level value="1">
@@ -8925,7 +8811,7 @@
 	</skill>
 	<skill id="10300224" comment="위자드">
 		<basic feature="JobChange_01" mainType="30">
-			<ui icon="./Data/Resource/Image/skill/icon/10400101.png" exceptUI="1" attackType="2" />
+			<ui icon="./Data/Resource/Image/skill/icon/10400101.png" attackType="2" />
 			<kinds rangeType="2" element="1" />
 		</basic>
 		<level value="1">
@@ -9229,13 +9115,12 @@
 			</motion>
 		</level>
 	</skill>
-	<skill id="10300225" comment="위자드">
+	<skill id="10300225" originID="10300221" comment="위자드">
 		<basic mainType="2">
-			<ui icon="./Data/Resource/Image/skill/icon/10300221.png" exceptUI="1" attackType="2" />
+			<ui icon="./Data/Resource/Image/skill/icon/10300221.png" attackType="2" />
 			<kinds rangeType="2" jump="10300225" element="1" unrideOnUse="1" />
 			<stateAttr keyIsDown="1" ignoreReduceCooldown="1" />
 			<combo inputSkill="10300225" outputSkill="10300226" />
-			<changeSkill originSkillID="10300221" />
 			<autoTargeting autoTargetingMaxDegree="60" />
 			<condition>
 				<weapon lh="0" rh="52" />
@@ -9722,12 +9607,12 @@
 			</motion>
 		</level>
 	</skill>
-	<skill id="10300226" comment="위자드">
+	<skill id="10300226" originID="10300226" comment="위자드">
 		<basic mainType="2">
-			<ui icon="./Data/Resource/Image/skill/icon/10300221.png" exceptUI="1" attackType="2" />
+			<ui icon="./Data/Resource/Image/skill/icon/10300221.png" attackType="2" />
 			<kinds rangeType="2" jump="10300225" element="1" unrideOnUse="1" />
 			<stateAttr keyIsDown="1" ignoreReduceCooldown="1" />
-			<combo comboSkill="1" comboOriginSkill="10300226" inputSkill="10300225" outputSkill="10300225" />
+			<combo comboSkill="1" inputSkill="10300225" outputSkill="10300225" />
 			<autoTargeting autoTargetingMaxDegree="60" />
 			<condition>
 				<weapon lh="0" rh="52" />
@@ -10216,7 +10101,7 @@
 	</skill>
 	<skill id="10300230" comment="위자드">
 		<basic feature="JobChange_01" mainType="6">
-			<ui icon="./Data/Resource/Image/skill/icon/10300241.png" exceptUI="1" attackType="2" />
+			<ui icon="./Data/Resource/Image/skill/icon/10300241.png" attackType="2" />
 			<kinds rangeType="2" element="1" />
 			<stateAttr ignoreReduceCooldown="1" />
 			<condition>
@@ -10385,12 +10270,11 @@
 			</motion>
 		</level>
 	</skill>
-	<skill id="10300232" comment="위자드">
+	<skill id="10300232" originID="10300231" comment="위자드">
 		<basic mainType="2">
-			<ui icon="./Data/Resource/Image/skill/icon/10300231.png" exceptUI="1" attackType="2" disableChangeSkillIconEffect="1" />
+			<ui icon="./Data/Resource/Image/skill/icon/10300231.png" attackType="2" disableChangeSkillIconEffect="1" />
 			<kinds rangeType="2" jump="10300232" element="1" immediateActive="1" unrideOnUse="1" />
 			<stateAttr cooldownGroupID="10300231" clearCooldownFromPVPZone="1" />
-			<changeSkill originSkillID="10300231" />
 			<autoTargeting autoTargetingMaxDegree="60" />
 			<condition useCoolDownShowUI="1">
 				<weapon lh="0" rh="52" />
@@ -10603,7 +10487,7 @@
 	</skill>
 	<skill id="10300233" comment="위자드">
 		<basic feature="JobChange_01" mainType="30">
-			<ui icon="./Data/Resource/Image/skill/icon/10600051.png" exceptUI="1" attackType="2" />
+			<ui icon="./Data/Resource/Image/skill/icon/10600051.png" attackType="2" />
 			<kinds rangeType="2" element="1" />
 		</basic>
 		<level value="1">
@@ -10741,7 +10625,7 @@
 	</skill>
 	<skill id="10300234" comment="위자드">
 		<basic feature="JobChange_01" mainType="30">
-			<ui icon="./Data/Resource/Image/skill/icon/10600051.png" exceptUI="1" attackType="2" />
+			<ui icon="./Data/Resource/Image/skill/icon/10600051.png" attackType="2" />
 			<kinds element="1" />
 			<sensor rangeType="cylinder" distance="300" height="150" sensorStartDelay="2000" />
 		</basic>
@@ -10892,7 +10776,7 @@
 	</skill>
 	<skill id="10300235" comment="위자드">
 		<basic feature="JobChange_01" mainType="30">
-			<ui icon="./Data/Resource/Image/skill/icon/10600051.png" exceptUI="1" attackType="2" />
+			<ui icon="./Data/Resource/Image/skill/icon/10600051.png" attackType="2" />
 			<kinds element="1" />
 			<sensor rangeType="cylinder" distance="300" height="150" sensorStartDelay="2000" />
 		</basic>
@@ -11029,12 +10913,11 @@
 			</motion>
 		</level>
 	</skill>
-	<skill id="10300236" comment="위자드">
+	<skill id="10300236" originID="10300231" comment="위자드">
 		<basic mainType="2">
-			<ui icon="./Data/Resource/Image/skill/icon/10300231.png" exceptUI="1" attackType="2" />
+			<ui icon="./Data/Resource/Image/skill/icon/10300231.png" attackType="2" />
 			<kinds rangeType="2" jump="10300235" element="1" immediateActive="1" unrideOnUse="1" />
 			<stateAttr cooldownGroupID="10300231" clearCooldownFromPVPZone="1" />
-			<changeSkill originSkillID="10300231" />
 			<autoTargeting autoTargetingMaxDegree="60" />
 			<condition useCoolDownShowUI="1">
 				<weapon lh="0" rh="52" />
@@ -11283,7 +11166,7 @@
 	</skill>
 	<skill id="10300240" comment="위자드">
 		<basic feature="JobChange_01" mainType="6">
-			<ui icon="./Data/Resource/Image/skill/icon/10300241.png" exceptUI="1" attackType="2" />
+			<ui icon="./Data/Resource/Image/skill/icon/10300241.png" attackType="2" />
 			<kinds rangeType="2" element="1" />
 			<condition>
 				<weapon lh="0" rh="52" />
@@ -11556,12 +11439,11 @@
 			</motion>
 		</level>
 	</skill>
-	<skill id="10300252" comment="위자드">
+	<skill id="10300252" originID="10300251" comment="위자드">
 		<basic feature="JobChange_01" mainType="2">
-			<ui icon="./Data/Resource/Image/skill/icon/10300251.png" exceptUI="1" attackType="2" disableChangeSkillIconEffect="1" />
+			<ui icon="./Data/Resource/Image/skill/icon/10300251.png" attackType="2" disableChangeSkillIconEffect="1" />
 			<kinds rangeType="2" jump="10300252" element="1" immediateActive="1" unrideOnUse="1" />
 			<stateAttr cooldownGroupID="10300251" clearCooldownFromPVPZone="1" />
-			<changeSkill originSkillID="10300251" />
 			<autoTargeting autoTargetingMaxDegree="45" />
 			<condition useCoolDownShowUI="1">
 				<weapon lh="0" rh="52" />
@@ -11702,7 +11584,7 @@
 	</skill>
 	<skill id="10300253" comment="위자드">
 		<basic feature="JobChange_01" mainType="2">
-			<ui icon="./Data/Resource/Image/skill/icon/10300251.png" exceptUI="1" attackType="2" />
+			<ui icon="./Data/Resource/Image/skill/icon/10300251.png" attackType="2" />
 			<kinds rangeType="2" jump="10300253" element="1" unrideOnUse="1" />
 			<stateAttr autoTargeting="0" clearCooldownFromPVPZone="1" />
 			<condition>
@@ -11725,7 +11607,7 @@
 	</skill>
 	<skill id="10300254" comment="위자드">
 		<basic feature="JobChange_01" mainType="30">
-			<ui icon="./Data/Resource/Image/skill/icon/10600051.png" exceptUI="1" attackType="2" />
+			<ui icon="./Data/Resource/Image/skill/icon/10600051.png" attackType="2" />
 			<kinds element="1" />
 			<sensor rangeType="cylinder" distance="2000" rangeAdd="0,0,600" height="600" targetHasBuffID="10300253" targetHasNotBuffID="10300254" targetHasBuffOwner="1" />
 		</basic>
@@ -11864,7 +11746,7 @@
 	</skill>
 	<skill id="10300255" comment="위자드">
 		<basic feature="JobChange_01" mainType="30">
-			<ui icon="./Data/Resource/Image/skill/icon/10600051.png" exceptUI="1" attackType="2" />
+			<ui icon="./Data/Resource/Image/skill/icon/10600051.png" attackType="2" />
 			<kinds element="1" />
 			<sensor rangeType="cylinder" distance="2000" rangeAdd="0,0,600" height="600" sensorStartDelay="2000" sensorSplashStartDelay="1000" targetHasBuffID="10300254" targetHasNotBuffID="10300253" targetHasBuffOwner="1" />
 		</basic>
@@ -12003,7 +11885,7 @@
 	</skill>
 	<skill id="10300256" comment="위자드">
 		<basic feature="JobChange_01" mainType="30">
-			<ui icon="./Data/Resource/Image/skill/icon/11000161.png" exceptUI="1" attackType="2" />
+			<ui icon="./Data/Resource/Image/skill/icon/11000161.png" attackType="2" />
 			<kinds rangeType="2" element="1" />
 		</basic>
 		<level value="1">
@@ -12141,7 +12023,7 @@
 	</skill>
 	<skill id="10300257" comment="위자드">
 		<basic feature="JobChange_01" mainType="30">
-			<ui icon="./Data/Resource/Image/skill/icon/11000161.png" exceptUI="1" attackType="2" />
+			<ui icon="./Data/Resource/Image/skill/icon/11000161.png" attackType="2" />
 			<kinds rangeType="2" element="1" />
 		</basic>
 		<level value="1">
@@ -12279,7 +12161,7 @@
 	</skill>
 	<skill id="10300258" comment="위자드">
 		<basic feature="JobChange_01" mainType="30">
-			<ui icon="./Data/Resource/Image/skill/icon/11000161.png" exceptUI="1" attackType="2" />
+			<ui icon="./Data/Resource/Image/skill/icon/11000161.png" attackType="2" />
 			<kinds rangeType="2" element="1" />
 		</basic>
 		<level value="1">
@@ -12417,7 +12299,7 @@
 	</skill>
 	<skill id="10300259" comment="위자드">
 		<basic feature="JobChange_01" mainType="30">
-			<ui icon="./Data/Resource/Image/skill/icon/11000161.png" exceptUI="1" attackType="2" />
+			<ui icon="./Data/Resource/Image/skill/icon/11000161.png" attackType="2" />
 			<kinds rangeType="2" element="1" />
 		</basic>
 		<level value="1">
@@ -12615,7 +12497,7 @@
 	</skill>
 	<skill id="10300260" comment="위자드">
 		<basic feature="JobChange_01" mainType="6">
-			<ui icon="./Data/Resource/Image/skill/icon/10300241.png" exceptUI="1" attackType="2" />
+			<ui icon="./Data/Resource/Image/skill/icon/10300241.png" attackType="2" />
 			<kinds element="1" />
 			<condition>
 				<weapon lh="0" rh="52" />
@@ -12697,13 +12579,12 @@
 			</actionAdditional>
 		</level>
 	</skill>
-	<skill id="10300262" comment="위자드">
+	<skill id="10300262" originID="10300051" comment="위자드">
 		<basic feature="JobChange_02" mainType="2">
-			<ui icon="./Data/Resource/Image/skill/icon/10300262.png" exceptUI="1" attackType="2" />
+			<ui icon="./Data/Resource/Image/skill/icon/10300262.png" attackType="2" />
 			<kinds rangeType="2" jump="10300262" element="2" unrideOnUse="1" />
 			<stateAttr autoTargeting="0" keyIsDown="1" useDefaultSkill="1" ignoreReduceCooldown="1" />
 			<combo inputSkill="10300262" outputSkill="10300263" />
-			<changeSkill originSkillID="10300051" />
 			<condition>
 				<requireEffect code="10300262" />
 				<weapon lh="0" rh="52" />
@@ -12866,13 +12747,12 @@
 			</motion>
 		</level>
 	</skill>
-	<skill id="10300263" comment="위자드">
+	<skill id="10300263" originID="10300051" comment="위자드">
 		<basic feature="JobChange_02" mainType="2">
-			<ui icon="./Data/Resource/Image/skill/icon/10300262.png" exceptUI="1" attackType="2" />
+			<ui icon="./Data/Resource/Image/skill/icon/10300262.png" attackType="2" />
 			<kinds rangeType="2" jump="10300263" element="2" unrideOnUse="1" />
 			<stateAttr autoTargeting="0" keyIsDown="1" useDefaultSkill="1" ignoreReduceCooldown="1" />
 			<combo comboSkill="1" inputSkill="10300262" outputSkill="10300264" />
-			<changeSkill originSkillID="10300051" />
 			<condition>
 				<requireEffect code="10300262" />
 				<weapon lh="0" rh="52" />
@@ -13035,13 +12915,12 @@
 			</motion>
 		</level>
 	</skill>
-	<skill id="10300264" comment="위자드">
+	<skill id="10300264" originID="10300051" comment="위자드">
 		<basic feature="JobChange_02" mainType="2">
-			<ui icon="./Data/Resource/Image/skill/icon/10300262.png" exceptUI="1" attackType="2" />
+			<ui icon="./Data/Resource/Image/skill/icon/10300262.png" attackType="2" />
 			<kinds rangeType="2" jump="10300264" element="2" unrideOnUse="1" />
 			<stateAttr autoTargeting="0" keyIsDown="1" useDefaultSkill="1" ignoreReduceCooldown="1" />
 			<combo comboSkill="1" inputSkill="10300262" outputSkill="10300263" />
-			<changeSkill originSkillID="10300051" />
 			<condition>
 				<requireEffect code="10300262" />
 				<weapon lh="0" rh="52" />
@@ -13206,7 +13085,7 @@
 	</skill>
 	<skill id="10300265" comment="위자드">
 		<basic feature="JobChange_02" mainType="30">
-			<ui exceptUI="1" attackType="2" />
+			<ui attackType="2" />
 			<kinds rangeType="2" element="2" groupIDs="10300262" />
 			<stateAttr clearCooldownFromPVPZone="1" ignoreReduceCooldown="1" />
 		</basic>
@@ -13391,12 +13270,11 @@
 			</motion>
 		</level>
 	</skill>
-	<skill id="10300266" comment="위자드">
+	<skill id="10300266" originID="10300211" comment="위자드">
 		<basic feature="JobChange_02" mainType="2">
-			<ui icon="./Data/Resource/Image/skill/icon/10300263.png" exceptUI="1" attackType="2" />
+			<ui icon="./Data/Resource/Image/skill/icon/10300263.png" attackType="2" />
 			<kinds rangeType="2" element="2" unrideOnUse="1" groupIDs="10300262" />
 			<stateAttr superArmor="3" autoTargeting="0" cooldownGroupID="10300211" clearCooldownFromPVPZone="1" />
-			<changeSkill originSkillID="10300211" />
 			<condition useCoolDownShowUI="1">
 				<weapon lh="0" rh="52" />
 			</condition>
@@ -13714,11 +13592,10 @@
 			</motion>
 		</level>
 	</skill>
-	<skill id="10300267" comment="위자드">
+	<skill id="10300267" originID="10300211" comment="위자드">
 		<basic feature="JobChange_02" mainType="30">
-			<ui icon="./Data/Resource/Image/skill/icon/10100071.png" exceptUI="1" attackType="2" />
+			<ui icon="./Data/Resource/Image/skill/icon/10100071.png" attackType="2" />
 			<kinds rangeType="2" element="2" unrideOnUse="1" groupIDs="10300262" />
-			<changeSkill originSkillID="10300211" />
 			<push back="300" />
 			<condition>
 				<weapon lh="0" rh="52" />
@@ -13835,7 +13712,7 @@
 	</skill>
 	<skill id="10300268">
 		<basic feature="JobChange_02" mainType="2">
-			<ui icon="./Data/Resource/Image/skill/icon/10300263.png" exceptUI="1" attackType="2" />
+			<ui icon="./Data/Resource/Image/skill/icon/10300263.png" attackType="2" />
 			<kinds rangeType="2" element="3" unrideOnUse="1" />
 			<stateAttr autoTargeting="0" />
 			<push back="300" />
@@ -13999,7 +13876,7 @@
 	</skill>
 	<skill id="10300272" comment="위자드">
 		<basic feature="JobChange_02" mainType="30">
-			<ui icon="./Data/Resource/Image/skill/icon/10300271.png" exceptUI="1" attackType="2" />
+			<ui icon="./Data/Resource/Image/skill/icon/10300271.png" attackType="2" />
 			<kinds rangeType="2" element="3" />
 			<condition>
 				<weapon lh="0" rh="52" />
@@ -14128,7 +14005,7 @@
 	</skill>
 	<skill id="10300273" comment="위자드">
 		<basic feature="JobChange_02" mainType="30">
-			<ui icon="./Data/Resource/Image/skill/icon/10300271.png" exceptUI="1" attackType="2" />
+			<ui icon="./Data/Resource/Image/skill/icon/10300271.png" attackType="2" />
 			<kinds rangeType="2" element="3" />
 			<push back="300" />
 			<condition>
@@ -14362,12 +14239,11 @@
 			</actionAdditional>
 		</level>
 	</skill>
-	<skill id="10300282">
+	<skill id="10300282" originID="10300041">
 		<basic feature="JobChange_02" mainType="2">
-			<ui icon="./Data/Resource/Image/skill/icon/10300041.png" exceptUI="1" attackType="2" />
+			<ui icon="./Data/Resource/Image/skill/icon/10300041.png" attackType="2" />
 			<kinds rangeType="2" jump="10300041" unrideOnUse="1" />
 			<stateAttr autoTargeting="0" keyIsDown="1" useDefaultSkill="1" cooldownGroupID="10300041" clearCooldownFromPVPZone="1" />
-			<changeSkill originSkillID="10300041" />
 			<condition useCoolDownShowUI="1">
 				<weapon lh="0" rh="52" />
 			</condition>
@@ -14705,12 +14581,11 @@
 			</motion>
 		</level>
 	</skill>
-	<skill id="10300284">
+	<skill id="10300284" originID="10300251">
 		<basic feature="JobChange_02" mainType="2">
-			<ui icon="./Data/Resource/Image/skill/icon/10300281.png" exceptUI="1" attackType="2" disableChangeSkillIconEffect="1" />
+			<ui icon="./Data/Resource/Image/skill/icon/10300281.png" attackType="2" disableChangeSkillIconEffect="1" />
 			<kinds rangeType="2" jump="10300252" element="1" immediateActive="1" unrideOnUse="1" />
 			<stateAttr cooldownGroupID="10300251" clearCooldownFromPVPZone="1" ignoreReduceCooldown="1" />
-			<changeSkill originSkillID="10300251" />
 			<autoTargeting autoTargetingMaxDegree="45" />
 			<condition useCoolDownShowUI="1">
 				<weapon lh="0" rh="52" />
@@ -14898,7 +14773,7 @@
 	</skill>
 	<skill id="10300292" comment="위자드">
 		<basic feature="JobChange_02" mainType="30">
-			<ui icon="./Data/Resource/Image/skill/icon/11000121.png" exceptUI="1" attackType="2" />
+			<ui icon="./Data/Resource/Image/skill/icon/11000121.png" attackType="2" />
 			<kinds rangeType="2" element="1" />
 			<stateAttr clearCooldownFromPVPZone="1" ignoreReduceCooldown="1" />
 		</basic>
@@ -15049,7 +14924,7 @@
 	</skill>
 	<skill id="10300293" comment="위자드">
 		<basic feature="JobChange_02" mainType="30">
-			<ui icon="./Data/Resource/Image/skill/icon/11000121.png" exceptUI="1" attackType="2" />
+			<ui icon="./Data/Resource/Image/skill/icon/11000121.png" attackType="2" />
 			<kinds rangeType="2" element="1" />
 			<stateAttr clearCooldownFromPVPZone="1" ignoreReduceCooldown="1" />
 		</basic>
@@ -15200,7 +15075,7 @@
 	</skill>
 	<skill id="10300294" comment="위자드">
 		<basic feature="JobChange_02" mainType="30">
-			<ui icon="./Data/Resource/Image/skill/icon/11000121.png" exceptUI="1" attackType="2" />
+			<ui icon="./Data/Resource/Image/skill/icon/11000121.png" attackType="2" />
 			<kinds rangeType="2" element="1" />
 			<stateAttr clearCooldownFromPVPZone="1" ignoreReduceCooldown="1" />
 		</basic>
@@ -15339,7 +15214,7 @@
 	</skill>
 	<skill id="10300295">
 		<basic feature="JobChange_02" mainType="2">
-			<ui icon="./Data/Resource/Image/skill/icon/11000121.png" exceptUI="1" attackType="2" />
+			<ui icon="./Data/Resource/Image/skill/icon/11000121.png" attackType="2" />
 			<kinds rangeType="2" element="1" />
 			<stateAttr clearCooldownFromPVPZone="1" ignoreReduceCooldown="1" />
 		</basic>
@@ -15358,7 +15233,7 @@
 	</skill>
 	<skill id="10300296">
 		<basic feature="JobChange_02" mainType="30">
-			<ui icon="./Data/Resource/Image/skill/icon/11000121.png" exceptUI="1" attackType="2" />
+			<ui icon="./Data/Resource/Image/skill/icon/11000121.png" attackType="2" />
 			<kinds rangeType="2" element="1" />
 			<stateAttr clearCooldownFromPVPZone="1" ignoreReduceCooldown="1" />
 		</basic>
@@ -15376,7 +15251,7 @@
 	</skill>
 	<skill id="10300297" comment="위자드">
 		<basic feature="JobChange_02" mainType="30">
-			<ui icon="./Data/Resource/Image/skill/icon/11000121.png" exceptUI="1" attackType="2" />
+			<ui icon="./Data/Resource/Image/skill/icon/11000121.png" attackType="2" />
 			<kinds rangeType="2" element="1" />
 			<stateAttr clearCooldownFromPVPZone="1" ignoreReduceCooldown="1" />
 		</basic>
@@ -15503,7 +15378,7 @@
 	</skill>
 	<skill id="10300298" comment="위자드">
 		<basic feature="JobChange_02" mainType="2">
-			<ui exceptUI="1" attackType="2" />
+			<ui attackType="2" />
 			<kinds rangeType="2" element="1" />
 			<stateAttr autoTargeting="0" clearCooldownFromPVPZone="1" ignoreReduceCooldown="1" />
 		</basic>
@@ -15628,12 +15503,11 @@
 			</motion>
 		</level>
 	</skill>
-	<skill id="10300299" comment="위자드">
+	<skill id="10300299" originID="10300291" comment="위자드">
 		<basic feature="JobChange_02" mainType="2">
-			<ui icon="./Data/Resource/Image/skill/icon/10300291.png" exceptUI="1" attackType="2" tooltip="10300291" />
+			<ui icon="./Data/Resource/Image/skill/icon/10300291.png" attackType="2" tooltip="10300291" />
 			<kinds element="1" unrideOnUse="1" />
 			<stateAttr superArmor="3" autoTargeting="0" ignoreReduceCooldown="1" />
-			<changeSkill originSkillID="10300291" />
 			<condition>
 				<weapon lh="0" rh="52" />
 			</condition>

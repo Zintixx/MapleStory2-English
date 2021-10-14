@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ms2>
+	<state name="시작대기중">
+		<condition name="CheckUser">
+			<transition state="초기화"/>
+		</condition>
+	</state>
+	<state name="초기화">
+		<onEnter>
+			<action name="SetUserValue" key="CenterWhiteBox" value="0"/>
+		</onEnter>
+		<condition name="무조건">
+			<transition state="대기"/>
+		</condition>
+	</state>
+	<state name="대기">  			
+		<condition name="WaitTick" waitTick="500" > 
+			<transition state="화이트박스체크"/>
+		</condition>
+	</state>
+	<state name="화이트박스체크">  			
+		<condition name="UserValue" key="CenterWhiteBox" value="1">
+			<transition state="생성"/>
+		</condition>
+		<condition name="무조건">
+			<transition state="대기"/>
+		</condition>
+	</state>
+	<state name="생성">
+		<onEnter>
+			 <action name="메쉬를설정한다" arg1="4000" arg2="1" arg3="1" arg4="1" arg5="10" />
+			 <action name="메쉬를설정한다" arg1="4001" arg2="1" arg3="1" arg4="1" arg5="10" />
+		</onEnter>
+		<condition name="무조건">
+			<transition state="끝"/>
+		</condition>
+	</state>	
+	<state name="끝">
+	</state>
+</ms2>

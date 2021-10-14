@@ -11,6 +11,13 @@
 			<UI icon="./Data/Resource/Image/skill/icon/11000042_buff.png" />
 		</level>
 	</additional>
+	<additional id="11000050" mainType="1" skillGroupType="1">
+		<level level="1">
+			<Basic durationTick="100" clearEffectFromPVPZone="1" />
+			<Motion abnormalImmuneBreak="5" />
+			<ModifyEffectDuration effectCodes="11000171,11000172,11000241,11000242" durationFactors="1,1,1,1" durationValues="0.3,0.3,0.3,0.3" />
+		</level>
+	</additional>
 	<additional id="11000051" mainType="1" skillGroupType="1">
 		<level level="1" stringParam="5">
 			<Basic durationTick="2000" clearEffectFromPVPZone="1" />
@@ -59,7 +66,7 @@
 	<additional id="11000055" mainType="1" skillGroupType="1">
 		<level level="1" feature="JobChange_02" stringParam="10">
 			<Basic durationTick="5000" clearEffectFromPVPZone="1" />
-			<Condition usedSkillIDs="11000132,11000241,11000242,11000261,11000262,11000271,11000272,11000265,11000266,11000341" />
+			<Condition usedSkillIDs="11000132,11000133,11000134,11000241,11000242,11000261,11000262,11000271,11000272,11000265,11000266,11000341" />
 			<Motion abnormalImmuneBreak="5" />
 			<ImmuneEffect immuneEffectCodes="11000051,11000052" />
 			<SpecialAbility>
@@ -1722,9 +1729,28 @@
 	</additional>
 	<additional id="11000171" mainType="1" skillGroupType="1">
 		<level level="1" feature="JobChange_01">
-			<Basic keepCondition="99" clearEffectFromPVPZone="1" />
-			<Condition usedSkillIDs="11000171,11000183,11000053" />
+			<Basic durationTick="5000" clearEffectFromPVPZone="1" />
+			<Motion skillUseDisableIDs="11000171,11000241" />
 			<UI icon="./Data/Resource/Image/skill/icon/11000171_buff.png" />
+			<Additional level="1" skillID="11000172" skillTarget="1" ownerEvent="6" ownerEventSkillID="11000171,11000192,11000182,11000183,11000316,11000317,11000321,11000322,11000323" />
+		</level>
+	</additional>
+	<additional id="11000172" mainType="1" skillGroupType="1">
+		<level level="1" feature="JobChange_01">
+			<Basic durationTick="5000" resetCondition="2" maxBuffCount="35" clearEffectFromPVPZone="1" />
+			<UI icon="./Data/Resource/Image/skill/icon/11000171_buff.png" iconOnOff="0" />
+		</level>
+	</additional>
+	<additional id="11000173" mainType="1" skillGroupType="1">
+		<level level="1" feature="JobChange_01">
+			<Basic keepCondition="99" clearEffectFromPVPZone="1" />
+			<Additional level="1" skillID="11000174" skillTarget="1" ownerEvent="17" ownerEventAdditionalID="11000171" />
+		</level>
+	</additional>
+	<additional id="11000174" mainType="1" skillGroupType="1">
+		<level level="1" feature="JobChange_01">
+			<Basic clearEffectFromPVPZone="1" />
+			<CancelEffect cancelEffectCodes="11000172" />
 		</level>
 	</additional>
 	<additional id="11000182" mainType="1" skillGroupType="1">
@@ -1738,6 +1764,15 @@
 			<Basic durationTick="1000" clearEffectFromPVPZone="1" />
 			<CancelEffect cancelEffectCodes="11000182" />
 			<UI icon="./Data/Resource/Image/skill/icon/11000161_buff2.png" iconOnOff="0" />
+		</level>
+	</additional>
+	<additional id="11000193" skillGroupType="1">
+		<level level="1" feature="JobChange_01">
+			<Basic keepCondition="99" deadKeepEffect="1" doNotClearEffectFromEnterPVPZone="1" immediateActiveRequireSkill="1" />
+			<Condition allowDeadState="1" usedSkillIDs="11000192" />
+			<SpecialAbility>
+				<v type="mspRate" value="-300" />
+			</SpecialAbility>
 		</level>
 	</additional>
 	<additional id="11000211" mainType="1" skillGroupType="1">
@@ -2559,9 +2594,28 @@
 	</additional>
 	<additional id="11000241" mainType="1" skillGroupType="1">
 		<level level="1" feature="JobChange_01">
-			<Basic keepCondition="99" clearEffectFromPVPZone="1" />
-			<Condition usedSkillIDs="11000241,11000242,11000272,11000055" />
+			<Basic durationTick="7000" clearEffectFromPVPZone="1" />
+			<Motion skillUseDisableIDs="11000171,11000241" />
 			<UI icon="./Data/Resource/Image/skill/icon/11000241_buff.png" />
+			<Additional level="1" skillID="11000242" skillTarget="1" ownerEvent="6" ownerEventSkillID="11000241,11000261,11000266,11000262,11000265,11000271,11000272,11000281,11000282,11000283,11000341,11000342" />
+		</level>
+	</additional>
+	<additional id="11000242" mainType="1" skillGroupType="1">
+		<level level="1" feature="JobChange_01">
+			<Basic durationTick="7000" resetCondition="2" maxBuffCount="35" clearEffectFromPVPZone="1" />
+			<UI icon="./Data/Resource/Image/skill/icon/11000241_buff.png" iconOnOff="0" />
+		</level>
+	</additional>
+	<additional id="11000243" mainType="1" skillGroupType="1">
+		<level level="1" feature="JobChange_01">
+			<Basic keepCondition="99" clearEffectFromPVPZone="1" />
+			<Additional level="1" skillID="11000244" skillTarget="1" ownerEvent="17" ownerEventAdditionalID="11000241" />
+		</level>
+	</additional>
+	<additional id="11000244" mainType="1" skillGroupType="1">
+		<level level="1" feature="JobChange_01">
+			<Basic clearEffectFromPVPZone="1" />
+			<CancelEffect cancelEffectCodes="11000242" />
 		</level>
 	</additional>
 	<additional id="11000281" mainType="1" skillGroupType="1">
@@ -2655,6 +2709,7 @@
 			<Basic durationTick="20000" clearEffectFromPVPZone="1" />
 			<Motion keepEffect="CH/Skill/Striker/Eff_Striker_LegKick_Keep_01.xml" stopEffect="CH/Skill/Striker/Eff_Striker_LegKick_Stop_01.xml" abnormalImmuneBreak="5" superArmor="3" />
 			<CancelEffect cancelPassiveEffect="1" cancelEffectCodes="11000281,11000282,11000283" />
+			<ModifyEffectDuration effectCodes="11000171,11000172,11000241,11000242" durationFactors="1,1,1,1" durationValues="0.2,0.2,0.2,0.2" />
 			<SpecialAbility>
 				<v type="papRate" value="150" />
 				<v type="asp" value="10" />

@@ -540,12 +540,34 @@
 			<UI icon="./Data/Resource/Image/Skill/icon/DeathCount.png" />
 			<Additional level="1" skillID="40600061" skillTarget="1" skillOwner="3" activeByIntervalTick="1" ownerRange="575" ownerRangeCountOver="1" />
 		</level>
+		<level level="2">
+			<Basic durationTick="3000" intervalTick="3000" dotCondition="1" />
+			<Motion startEffect="NPC/Skill/BlueLuke/Eff_BlueLuke_Scatter_Start.xml" keepEffect="NPC/Skill/BlueLuke/Eff_BlueLuke_Scatter_Keep_Lv2.xml" stopEffect="NPC/Skill/BlueLuke/Eff_BlueLuke_Scatter_Stop.xml" abnormalImmuneBreak="5" />
+			<UI icon="./Data/Resource/Image/Skill/icon/DeathCount.png" />
+			<Additional level="2" skillID="40600061" skillTarget="1" skillOwner="3" activeByIntervalTick="1" ownerRange="650" ownerRangeCountOver="1" />
+		</level>
+		<level level="3">
+			<Basic durationTick="3000" intervalTick="3000" dotCondition="1" />
+			<Motion startEffect="NPC/Skill/BlueLuke/Eff_BlueLuke_Scatter_Start.xml" keepEffect="NPC/Skill/BlueLuke/Eff_BlueLuke_Scatter_Keep_Lv3.xml" stopEffect="NPC/Skill/BlueLuke/Eff_BlueLuke_Scatter_Stop.xml" abnormalImmuneBreak="5" />
+			<UI icon="./Data/Resource/Image/Skill/icon/DeathCount.png" />
+			<Additional level="3" skillID="40600061" skillTarget="1" skillOwner="3" activeByIntervalTick="1" ownerRange="725" ownerRangeCountOver="1" />
+		</level>
 	</additional>
 	<additional id="40600061" isDebuff="1" skillGroupType="1">
 		<level level="1">
 			<Basic durationTick="1000" intervalTick="1000" dotCondition="1" casterIndividualEffect="1" clearEffectFromPVPZone="1" />
 			<Motion startEffect="NPC/Skill/BlueLuke/Eff_BlueLuke_Scatter_Range.xml" abnormalImmuneBreak="5" />
 			<Skill level="1" skillID="50003081" />
+		</level>
+		<level level="2">
+			<Basic durationTick="1000" intervalTick="1000" dotCondition="1" casterIndividualEffect="1" clearEffectFromPVPZone="1" />
+			<Motion startEffect="NPC/Skill/BlueLuke/Eff_BlueLuke_Scatter_Range_Lv2.xml" abnormalImmuneBreak="5" />
+			<Skill level="2" skillID="50003081" />
+		</level>
+		<level level="3">
+			<Basic durationTick="1000" intervalTick="1000" dotCondition="1" casterIndividualEffect="1" clearEffectFromPVPZone="1" />
+			<Motion startEffect="NPC/Skill/BlueLuke/Eff_BlueLuke_Scatter_Range_Lv3.xml" abnormalImmuneBreak="5" />
+			<Skill level="3" skillID="50003081" />
 		</level>
 	</additional>
 	<additional id="40600070" isDebuff="1">
@@ -555,12 +577,34 @@
 			<UI icon="./Data/Resource/Image/Skill/icon/DeathCount.png" />
 			<Additional level="1" skillID="40600071" skillTarget="1" skillOwner="3" activeByIntervalTick="1" ownerRange="400" ownerRangeCountLess="1" />
 		</level>
+		<level level="2">
+			<Basic durationTick="3000" intervalTick="3000" dotCondition="1" />
+			<Motion startEffect="NPC/Skill/BlueLuke/Eff_BlueLuke_Unite_Start.xml" keepEffect="NPC/Skill/BlueLuke/Eff_BlueLuke_Unite_Keep_Lv2.xml" stopEffect="NPC/Skill/BlueLuke/Eff_BlueLuke_Unite_Stop.xml" abnormalImmuneBreak="5" />
+			<UI icon="./Data/Resource/Image/Skill/icon/DeathCount.png" />
+			<Additional level="2" skillID="40600071" skillTarget="1" skillOwner="3" activeByIntervalTick="1" ownerRange="325" ownerRangeCountLess="1" />
+		</level>
+		<level level="3">
+			<Basic durationTick="3000" intervalTick="3000" dotCondition="1" />
+			<Motion startEffect="NPC/Skill/BlueLuke/Eff_BlueLuke_Unite_Start.xml" keepEffect="NPC/Skill/BlueLuke/Eff_BlueLuke_Unite_Keep_Lv3.xml" stopEffect="NPC/Skill/BlueLuke/Eff_BlueLuke_Unite_Stop.xml" abnormalImmuneBreak="5" />
+			<UI icon="./Data/Resource/Image/Skill/icon/DeathCount.png" />
+			<Additional level="3" skillID="40600071" skillTarget="1" skillOwner="3" activeByIntervalTick="1" ownerRange="250" ownerRangeCountLess="1" />
+		</level>
 	</additional>
 	<additional id="40600071" isDebuff="1" skillGroupType="1">
 		<level level="1">
 			<Basic durationTick="1000" intervalTick="1000" dotCondition="1" casterIndividualEffect="1" clearEffectFromPVPZone="1" />
 			<Motion startEffect="NPC/Skill/BlueLuke/Eff_BlueLuke_Unite_Range.xml" abnormalImmuneBreak="5" />
 			<Skill level="1" skillID="50003086" />
+		</level>
+		<level level="2">
+			<Basic durationTick="1000" intervalTick="1000" dotCondition="1" casterIndividualEffect="1" clearEffectFromPVPZone="1" />
+			<Motion startEffect="NPC/Skill/BlueLuke/Eff_BlueLuke_Unite_Range_Lv2.xml" abnormalImmuneBreak="5" />
+			<Skill level="2" skillID="50003086" />
+		</level>
+		<level level="3">
+			<Basic durationTick="1000" intervalTick="1000" dotCondition="1" casterIndividualEffect="1" clearEffectFromPVPZone="1" />
+			<Motion startEffect="NPC/Skill/BlueLuke/Eff_BlueLuke_Unite_Range_Lv3.xml" abnormalImmuneBreak="5" />
+			<Skill level="3" skillID="50003086" />
 		</level>
 	</additional>
 	<additional id="40600080">
@@ -590,6 +634,11 @@
 			<Motion startEffect="CH/Skill/Beginner/Eff_Beginner_Refreshment_Start_01.xml" abnormalImmuneBreak="5" />
 			<ModifyOverlapCount effectCodes="40600050" offsetCounts="-5" />
 			<Recovery hpRate="1" spValue="50" epValue="60" />
+		</level>
+		<level level="2">
+			<Basic durationTick="100" intervalTick="100" />
+			<Motion startEffect="CH/Skill/Beginner/Eff_Beginner_Refreshment_Start_01.xml" abnormalImmuneBreak="5" />
+			<Recovery hpRate="1" spValue="30" epValue="40" />
 		</level>
 	</additional>
 	<additional id="40600084">

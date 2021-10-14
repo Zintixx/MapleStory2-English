@@ -443,12 +443,12 @@
 			</motion>
 		</level>
 	</skill>
-	<skill id="10500012" comment="레인저">
+	<skill id="10500012" originID="10500011" comment="레인저">
 		<basic mainType="2">
 			<ui attackType="1" />
 			<kinds rangeType="2" jump="10500011" unrideOnUse="1" />
 			<stateAttr keyIsDown="1" useDefaultSkill="1" ignoreReduceCooldown="1" />
-			<combo comboSkill="1" comboOriginSkill="10500011" inputSkill="10500011" outputSkill="10500013" />
+			<combo comboSkill="1" inputSkill="10500011" outputSkill="10500013" />
 			<autoTargeting autoTargetingMaxDegree="45" />
 			<push back="100" />
 			<condition>
@@ -564,12 +564,12 @@
 			</motion>
 		</level>
 	</skill>
-	<skill id="10500013" comment="레인저">
+	<skill id="10500013" originID="10500011" comment="레인저">
 		<basic mainType="2">
 			<ui attackType="1" />
 			<kinds rangeType="2" jump="10500011" unrideOnUse="1" />
 			<stateAttr keyIsDown="1" useDefaultSkill="1" ignoreReduceCooldown="1" />
-			<combo comboSkill="1" comboOriginSkill="10500011" inputSkill="10500011" outputSkill="10500011" />
+			<combo comboSkill="1" inputSkill="10500011" outputSkill="10500011" />
 			<autoTargeting autoTargetingMaxDegree="45" />
 			<push back="100" />
 			<condition>
@@ -1045,12 +1045,12 @@
 			</motion>
 		</level>
 	</skill>
-	<skill id="10500022" comment="레인저">
+	<skill id="10500022" originID="10500021" comment="레인저">
 		<basic mainType="2">
 			<ui attackType="1" />
 			<kinds rangeType="2" element="1" unrideOnUse="1" />
 			<stateAttr keyIsDown="1" useDefaultSkill="1" clearCooldownFromPVPZone="1" ignoreReduceCooldown="1" />
-			<combo comboSkill="1" comboOriginSkill="10500021" inputSkill="10500021" outputSkill="10500022" />
+			<combo comboSkill="1" inputSkill="10500021" outputSkill="10500022" />
 			<autoTargeting autoTargetingMaxDegree="90" />
 			<condition>
 				<weapon lh="0" rh="51" />
@@ -2209,7 +2209,6 @@
 	</skill>
 	<skill id="10500063" comment="레인저">
 		<basic mainType="6">
-			<ui exceptUI="1" />
 			<kinds element="1" />
 			<stateAttr ignoreReduceCooldown="1" />
 		</basic>
@@ -2340,12 +2339,11 @@
 			</actionAdditional>
 		</level>
 	</skill>
-	<skill id="10500065" comment="레인저 2차">
+	<skill id="10500065" originID="10500061" comment="레인저 2차">
 		<basic feature="JobChange_01" mainType="2">
-			<ui icon="./Data/Resource/Image/skill/icon/10500190.png" exceptUI="1" disableChangeSkillIconEffect="1" />
+			<ui icon="./Data/Resource/Image/skill/icon/10500190.png" disableChangeSkillIconEffect="1" />
 			<kinds immediateActive="1" unrideOnUse="1" releaseObjectWeapon="0" disableWater="1" />
 			<stateAttr autoTargeting="0" useInGameTime="1" cooldownGroupID="10500061" clearCooldownFromPVPZone="1" rechargeMaxCount="2" />
-			<changeSkill originSkillID="10500061" />
 			<condition useCoolDownShowUI="1" />
 		</basic>
 		<level value="1" cooldown="90000" stringParam="1,17">
@@ -2459,7 +2457,6 @@
 	</skill>
 	<skill id="10500066" comment="레인저 2차">
 		<basic feature="JobChange_01" mainType="30">
-			<ui exceptUI="1" />
 			<stateAttr ignoreReduceCooldown="1" />
 		</basic>
 		<level value="1">
@@ -2597,7 +2594,7 @@
 	</skill>
 	<skill id="10500067" comment="레인저 2차">
 		<basic feature="JobChange_01" mainType="6">
-			<ui icon="./Data/Resource/Image/skill/icon/10500190.png" exceptUI="1" />
+			<ui icon="./Data/Resource/Image/skill/icon/10500190.png" />
 			<stateAttr ignoreReduceCooldown="1" />
 		</basic>
 		<level value="1">
@@ -2988,12 +2985,11 @@
 			<motion motionEffect="CH/Skill/Ranger/Eff_Ranger_SpiritOfEagle_Cast_01.xml" holdWeapon="0" />
 		</level>
 	</skill>
-	<skill id="10500093" comment="레인저 1차 마스터">
+	<skill id="10500093" originID="10500091" comment="레인저 1차 마스터">
 		<basic feature="JobChange_02" mainType="2">
-			<ui icon="./Data/Resource/Image/skill/icon/10500093.png" exceptUI="1" attackType="1" disableChangeSkillIconEffect="1" />
+			<ui icon="./Data/Resource/Image/skill/icon/10500093.png" attackType="1" disableChangeSkillIconEffect="1" />
 			<kinds jump="10500091" immediateActive="1" unrideOnUse="1" releaseObjectWeapon="0" />
 			<stateAttr autoTargeting="0" clearCooldownFromPVPZone="1" />
-			<changeSkill originSkillID="10500091" />
 			<condition useCoolDownShowUI="1" />
 		</basic>
 		<level value="1" cooldown="60000" stringParam="3,167">
@@ -3224,12 +3220,12 @@
 			</motion>
 		</level>
 	</skill>
-	<skill id="10500102" comment="레인저">
+	<skill id="10500102" originID="10500101" comment="레인저">
 		<basic mainType="2">
 			<ui attackType="1" />
 			<kinds rangeType="2" continue="1" unrideOnUse="1" />
 			<stateAttr superArmor="3" autoTargeting="0" keyIsDown="1" useDefaultSkill="1" ignoreReduceCooldown="1" />
-			<combo comboSkill="1" chargingSkill="1" comboOriginSkill="10500101" inputSkill="10500101" outputSkill="10500102" />
+			<combo comboSkill="1" chargingSkill="1" inputSkill="10500101" outputSkill="10500102" />
 			<condition>
 				<weapon lh="0" rh="51" />
 			</condition>
@@ -4420,12 +4416,12 @@
 			</motion>
 		</level>
 	</skill>
-	<skill id="10500142" comment="레인저">
+	<skill id="10500142" originID="10500141" comment="레인저">
 		<basic mainType="2">
 			<ui attackType="1" showCastingBar="1" paramCastingBar="&lt;v startFrame=&quot;show&quot; color=&quot;red&quot; text=&quot;s_character_skill_charging2&quot; ease=&quot;1&quot;/&gt;" />
 			<kinds rangeType="2" continue="1" unrideOnUse="1" />
 			<stateAttr superArmor="3" autoTargeting="0" keyIsDown="1" useDefaultSkill="1" ignoreReduceCooldown="1" />
-			<combo comboSkill="1" chargingSkill="1" comboOriginSkill="10500141" inputSkill="10500141" outputSkill="10500143" />
+			<combo comboSkill="1" chargingSkill="1" inputSkill="10500141" outputSkill="10500143" />
 			<push back="200" />
 			<condition>
 				<weapon lh="0" rh="51" />
@@ -4540,12 +4536,12 @@
 			</motion>
 		</level>
 	</skill>
-	<skill id="10500143" comment="레인저">
+	<skill id="10500143" originID="10500141" comment="레인저">
 		<basic mainType="2">
 			<ui attackType="1" showCastingBar="1" paramCastingBar="&lt;v startFrame=&quot;showchargingred_start&quot; color=&quot;red2&quot; text=&quot;s_character_skill_chargingmax&quot; startGauge=&quot;1&quot; ease=&quot;1&quot;/&gt;" />
 			<kinds rangeType="2" continue="1" unrideOnUse="1" />
 			<stateAttr superArmor="3" autoTargeting="0" keyIsDown="1" useDefaultSkill="1" ignoreReduceCooldown="1" />
-			<combo comboSkill="1" chargingSkill="1" comboOriginSkill="10500141" inputSkill="10500141" outputSkill="10500143" />
+			<combo comboSkill="1" chargingSkill="1" inputSkill="10500141" outputSkill="10500143" />
 			<push back="200" />
 			<condition>
 				<weapon lh="0" rh="51" />
@@ -4660,12 +4656,11 @@
 			</motion>
 		</level>
 	</skill>
-	<skill id="10500144" comment="레인저">
+	<skill id="10500144" originID="10500141" comment="레인저">
 		<basic mainType="2">
-			<ui icon="./Data/Resource/Image/skill/icon/10500161.png" exceptUI="1" attackType="1" />
+			<ui icon="./Data/Resource/Image/skill/icon/10500161.png" attackType="1" />
 			<kinds rangeType="2" unrideOnUse="1" />
 			<stateAttr autoTargeting="0" keyIsDown="1" useDefaultSkill="1" cooldownGroupID="10500141" clearCooldownFromPVPZone="1" />
-			<changeSkill originSkillID="10500141" />
 			<push back="200" />
 			<condition useCoolDownShowUI="1">
 				<weapon lh="0" rh="51" />
@@ -4791,23 +4786,21 @@
 			<motion sequenceName="Ranger_EagleGlide_A" strTagEffects="e0=CH/Skill/Ranger/Eff_Ranger_EagleGlide_Cast_01.xml" movedistance="750" moveEaseType="2" ignoreCollisionGroups="4" startNoneBlendDelay="1" />
 		</level>
 	</skill>
-	<skill id="10500152" comment="레인저 2차">
+	<skill id="10500152" originID="10500151" comment="레인저 2차">
 		<basic feature="JobChange_01" mainType="2">
-			<ui icon="./Data/Resource/Image/skill/icon/10500251.png" exceptUI="1" disableChangeSkillIconEffect="1" />
+			<ui icon="./Data/Resource/Image/skill/icon/10500251.png" disableChangeSkillIconEffect="1" />
 			<kinds immediateActive="1" unrideOnUse="1" />
 			<stateAttr keyIsDown="1" clearCooldownFromPVPZone="1" ignoreReduceCooldown="1" />
-			<changeSkill originSkillID="10500151" />
 		</basic>
 		<level value="1" ep="60" cooldown="650">
 			<motion sequenceName="Ranger_EagleGlide_A" sequenceSpeed="1.35" strTagEffects="e0=CH/Skill/Ranger/Eff_Ranger_EagleGlide_Cast_01.xml" movedistance="550" ignoreCollisionGroups="4" startNoneBlendDelay="1" />
 		</level>
 	</skill>
-	<skill id="10500153" comment="레인저 1차 마스터">
+	<skill id="10500153" originID="10500151" comment="레인저 1차 마스터">
 		<basic feature="JobChange_02" mainType="2">
-			<ui icon="./Data/Resource/Image/skill/icon/10500153.png" exceptUI="1" />
+			<ui icon="./Data/Resource/Image/skill/icon/10500153.png" />
 			<kinds continue="1" immediateActive="1" unrideOnUse="1" />
 			<stateAttr moveType="3" clearCooldownFromPVPZone="1" ignoreReduceCooldown="1" />
-			<changeSkill originSkillID="10500151" />
 		</basic>
 		<level value="1" ep="60" stringParam="60">
 			<actionAdditional additionalID="10500294" level="1" skillTarget="1">
@@ -5206,12 +5199,11 @@
 			</motion>
 		</level>
 	</skill>
-	<skill id="10500172" comment="레인저 2차">
+	<skill id="10500172" originID="10500171" comment="레인저 2차">
 		<basic feature="JobChange_01" mainType="2">
-			<ui icon="./Data/Resource/Image/skill/icon/10500172.png" exceptUI="1" attackType="1" />
+			<ui icon="./Data/Resource/Image/skill/icon/10500172.png" attackType="1" />
 			<kinds rangeType="2" jump="10500172" element="1" unrideOnUse="1" groupIDs="10500202" />
 			<stateAttr moveType="1" keyIsDown="1" useDefaultSkill="1" clearCooldownFromPVPZone="1" ignoreReduceCooldown="1" />
-			<changeSkill changeSkillCheckEffectID="10500172,10500173,10500174" changeSkillCheckEffectLevel="0,0,0" changeSkillCheckEffectOverlapCount="0,0,0" changeSkillID="10500172,10500173,10500174" originSkillID="10500171" />
 			<autoTargeting autoTargetingMaxDegree="90" />
 			<condition>
 				<weapon lh="0" rh="51" />
@@ -5482,12 +5474,11 @@
 			</motion>
 		</level>
 	</skill>
-	<skill id="10500173" comment="레인저 2차">
+	<skill id="10500173" originID="10500171" comment="레인저 2차">
 		<basic feature="JobChange_01" mainType="2">
-			<ui icon="./Data/Resource/Image/skill/icon/10500173.png" exceptUI="1" attackType="1" />
+			<ui icon="./Data/Resource/Image/skill/icon/10500173.png" attackType="1" />
 			<kinds rangeType="2" jump="10500173" element="1" unrideOnUse="1" groupIDs="10500202" />
 			<stateAttr moveType="1" keyIsDown="1" useDefaultSkill="1" clearCooldownFromPVPZone="1" ignoreReduceCooldown="1" />
-			<changeSkill changeSkillCheckEffectID="10500172,10500173,10500174" changeSkillCheckEffectLevel="0,0,0" changeSkillCheckEffectOverlapCount="0,0,0" changeSkillID="10500172,10500173,10500174" originSkillID="10500171" />
 			<autoTargeting autoTargetingMaxDegree="90" />
 			<condition>
 				<weapon lh="0" rh="51" />
@@ -5758,12 +5749,11 @@
 			</motion>
 		</level>
 	</skill>
-	<skill id="10500174" comment="레인저 2차">
+	<skill id="10500174" originID="10500171" comment="레인저 2차">
 		<basic feature="JobChange_01" mainType="2">
-			<ui icon="./Data/Resource/Image/skill/icon/10500175.png" exceptUI="1" attackType="1" />
+			<ui icon="./Data/Resource/Image/skill/icon/10500175.png" attackType="1" />
 			<kinds rangeType="2" jump="10500174" element="1" unrideOnUse="1" groupIDs="10500202" />
 			<stateAttr moveType="1" keyIsDown="1" useDefaultSkill="1" clearCooldownFromPVPZone="1" ignoreReduceCooldown="1" />
-			<changeSkill originSkillID="10500171" />
 			<autoTargeting autoTargetingMaxDegree="90" />
 			<condition>
 				<weapon lh="0" rh="51" />
@@ -6340,7 +6330,7 @@
 	</skill>
 	<skill id="10500189">
 		<basic feature="JobChange_01" mainType="6">
-			<ui icon="./Data/Resource/Image/skill/icon/10500121.png" exceptUI="1" />
+			<ui icon="./Data/Resource/Image/skill/icon/10500121.png" />
 			<stateAttr ignoreReduceCooldown="1" />
 		</basic>
 		<level value="1" />
@@ -6740,12 +6730,11 @@
 			</motion>
 		</level>
 	</skill>
-	<skill id="10500192" comment="레인저 2차">
+	<skill id="10500192" originID="10500191" comment="레인저 2차">
 		<basic feature="JobChange_01" mainType="2">
-			<ui icon="./Data/Resource/Image/skill/icon/10500177.png" exceptUI="1" attackType="1" />
+			<ui icon="./Data/Resource/Image/skill/icon/10500177.png" attackType="1" />
 			<kinds rangeType="2" jump="10500192" element="1" unrideOnUse="1" groupIDs="10500202" />
 			<stateAttr autoTargeting="0" moveType="1" useDefaultSkill="1" cooldownGroupID="10500191" />
-			<changeSkill changeSkillCheckEffectID="10500172,10500173" changeSkillCheckEffectLevel="0,0" changeSkillCheckEffectOverlapCount="0,0" changeSkillID="10500192,10500193" originSkillID="10500191" />
 			<condition useCoolDownShowUI="1">
 				<weapon lh="0" rh="51" />
 			</condition>
@@ -7351,12 +7340,11 @@
 			</motion>
 		</level>
 	</skill>
-	<skill id="10500193" comment="레인저 2차">
+	<skill id="10500193" originID="10500191" comment="레인저 2차">
 		<basic feature="JobChange_01" mainType="2">
-			<ui icon="./Data/Resource/Image/skill/icon/10500178.png" exceptUI="1" attackType="1" />
+			<ui icon="./Data/Resource/Image/skill/icon/10500178.png" attackType="1" />
 			<kinds rangeType="2" jump="10500193" element="1" unrideOnUse="1" groupIDs="10500202" />
 			<stateAttr autoTargeting="0" moveType="1" useDefaultSkill="1" cooldownGroupID="10500191" />
-			<changeSkill changeSkillCheckEffectID="10500172,10500173" changeSkillCheckEffectLevel="0,0" changeSkillCheckEffectOverlapCount="0,0" changeSkillID="10500192,10500193" originSkillID="10500191" />
 			<condition useCoolDownShowUI="1">
 				<weapon lh="0" rh="51" />
 			</condition>
@@ -8833,12 +8821,12 @@
 			</motion>
 		</level>
 	</skill>
-	<skill id="10500212" comment="레인저 2차">
+	<skill id="10500212" originID="10500211" comment="레인저 2차">
 		<basic feature="JobChange_01" mainType="2">
 			<ui attackType="1" />
 			<kinds rangeType="2" unrideOnUse="1" />
 			<stateAttr moveType="1" useDefaultSkill="1" ignoreReduceCooldown="1" />
-			<combo comboSkill="1" comboOriginSkill="10500211" inputSkill="10500211" outputSkill="10500211" />
+			<combo comboSkill="1" inputSkill="10500211" outputSkill="10500211" />
 			<autoTargeting autoTargetingMaxDegree="120" />
 			<condition>
 				<weapon lh="0" rh="51" />
@@ -9049,12 +9037,11 @@
 			</motion>
 		</level>
 	</skill>
-	<skill id="10500221" comment="레인저 2차">
+	<skill id="10500221" originID="10500231" comment="레인저 2차">
 		<basic feature="JobChange_01" mainType="2">
-			<ui icon="./Data/Resource/Image/skill/icon/10500182.png" exceptUI="1" attackType="1" />
+			<ui icon="./Data/Resource/Image/skill/icon/10500182.png" attackType="1" />
 			<kinds rangeType="2" jump="10500221" unrideOnUse="1" />
 			<stateAttr useDefaultSkill="1" cooldownGroupID="10500231" clearCooldownFromPVPZone="1" ignoreReduceCooldown="1" />
-			<changeSkill originSkillID="10500231" />
 			<autoTargeting autoTargetingMaxDegree="120" />
 			<condition useCoolDownShowUI="1">
 				<requireEffect code="10500231" />
@@ -9384,7 +9371,7 @@
 	</skill>
 	<skill id="10500232" comment="레인저 2차">
 		<basic feature="JobChange_01" mainType="6">
-			<ui icon="./Data/Resource/Image/skill/icon/10500190.png" exceptUI="1" />
+			<ui icon="./Data/Resource/Image/skill/icon/10500190.png" />
 			<stateAttr ignoreReduceCooldown="1" />
 		</basic>
 		<level value="1">
@@ -9737,12 +9724,11 @@
 			</motion>
 		</level>
 	</skill>
-	<skill id="10500243" comment="레인저 2차">
+	<skill id="10500243" originID="10500241" comment="레인저 2차">
 		<basic feature="JobChange_01" mainType="2">
-			<ui icon="./Data/Resource/Image/skill/icon/10500187.png" exceptUI="1" attackType="1" />
+			<ui icon="./Data/Resource/Image/skill/icon/10500187.png" attackType="1" />
 			<kinds rangeType="2" jump="10500243" unrideOnUse="1" />
 			<stateAttr keyIsDown="1" useDefaultSkill="1" cooldownGroupID="10500241" clearCooldownFromPVPZone="1" ignoreReduceCooldown="1" />
-			<changeSkill originSkillID="10500241" />
 			<autoTargeting autoTargetingMaxDegree="90" />
 			<condition useCoolDownShowUI="1">
 				<weapon lh="0" rh="51" />
@@ -11384,7 +11370,7 @@
 	</skill>
 	<skill id="10500292" comment="레인저 1차 마스터">
 		<basic feature="JobChange_02" mainType="6">
-			<ui icon="./Data/Resource/Image/skill/icon/10500179.png" exceptUI="1" />
+			<ui icon="./Data/Resource/Image/skill/icon/10500179.png" />
 			<stateAttr ignoreReduceCooldown="1" />
 		</basic>
 		<level value="1">
@@ -11450,7 +11436,7 @@
 	</skill>
 	<skill id="10500293" comment="레인저 1차 마스터">
 		<basic feature="JobChange_02" mainType="6">
-			<ui icon="./Data/Resource/Image/skill/icon/10500179.png" exceptUI="1" />
+			<ui icon="./Data/Resource/Image/skill/icon/10500179.png" />
 			<stateAttr ignoreReduceCooldown="1" />
 		</basic>
 		<level value="1">

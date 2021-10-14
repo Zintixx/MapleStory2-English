@@ -1129,7 +1129,6 @@
 	</skill>
 	<skill id="10800052" comment="어쌔신">
 		<basic mainType="6">
-			<ui exceptUI="1" />
 			<kinds element="5" />
 			<stateAttr ignoreReduceCooldown="1" />
 		</basic>
@@ -2772,7 +2771,7 @@
 	</skill>
 	<skill id="10800163" comment="어쌔신">
 		<basic mainType="6">
-			<ui exceptUI="1" attackType="1" />
+			<ui attackType="1" />
 			<kinds rangeType="1" element="5" unrideOnUse="1" />
 			<stateAttr ignoreReduceCooldown="1" />
 		</basic>
@@ -2982,12 +2981,12 @@
 			</motion>
 		</level>
 	</skill>
-	<skill id="10800172" comment="어쌔신">
+	<skill id="10800172" originID="10800171" comment="어쌔신">
 		<basic feature="JobChange_01" mainType="2">
 			<ui attackType="1" />
 			<kinds rangeType="2" element="5" unrideOnUse="1" groupIDs="10800241" />
 			<stateAttr clearCooldownFromPVPZone="1" ignoreReduceCooldown="1" />
-			<combo comboSkill="1" comboOriginSkill="10800171" />
+			<combo comboSkill="1" />
 			<autoTargeting autoTargetingMaxDegree="45" />
 			<push back="200" />
 			<condition>
@@ -3543,12 +3542,12 @@
 			</motion>
 		</level>
 	</skill>
-	<skill id="10800192" comment="어쌔신">
+	<skill id="10800192" originID="10800191" comment="어쌔신">
 		<basic feature="JobChange_01" mainType="2">
 			<ui attackType="1" />
 			<kinds rangeType="2" element="5" unrideOnUse="1" groupIDs="10800241" />
 			<stateAttr keyIsDown="1" useDefaultSkill="1" clearCooldownFromPVPZone="1" />
-			<combo comboSkill="1" comboOriginSkill="10800191" inputSkill="10800191" outputSkill="10800193" />
+			<combo comboSkill="1" inputSkill="10800191" outputSkill="10800193" />
 			<autoTargeting autoTargetingMaxDegree="45" />
 			<push back="200" />
 			<condition useCoolDownShowUI="1">
@@ -3724,12 +3723,12 @@
 			</motion>
 		</level>
 	</skill>
-	<skill id="10800193" comment="어쌔신">
+	<skill id="10800193" originID="10800191" comment="어쌔신">
 		<basic feature="JobChange_01" mainType="2">
 			<ui attackType="1" />
 			<kinds rangeType="2" element="5" unrideOnUse="1" groupIDs="10800241" />
 			<stateAttr keyIsDown="1" useDefaultSkill="1" clearCooldownFromPVPZone="1" />
-			<combo comboSkill="1" comboOriginSkill="10800191" />
+			<combo comboSkill="1" />
 			<autoTargeting autoTargetingMaxDegree="90" />
 			<condition useCoolDownShowUI="1">
 				<weapon lh="0" rh="34" />
@@ -4456,12 +4455,11 @@
 			</motion>
 		</level>
 	</skill>
-	<skill id="10800203" comment="어쌔신">
+	<skill id="10800203" originID="10800201" comment="어쌔신">
 		<basic feature="JobChange_02" mainType="2">
-			<ui icon="./Data/Resource/Image/skill/icon/10800201.png" exceptUI="1" attackType="1" />
+			<ui icon="./Data/Resource/Image/skill/icon/10800201.png" attackType="1" />
 			<kinds rangeType="1" element="5" unrideOnUse="1" />
 			<stateAttr autoTargeting="0" useDefaultSkill="1" cooldownGroupID="10800201" ignoreReduceCooldown="1" />
-			<changeSkill originSkillID="10800201" />
 		</basic>
 		<level value="1" cooldown="400" stringParam="138,3">
 			<actionAdditional additionalID="10800286" level="1" skillTarget="1">
@@ -6103,7 +6101,6 @@
 	</skill>
 	<skill id="10800228" comment="어쌔신">
 		<basic mainType="6">
-			<ui exceptUI="1" />
 			<kinds element="5" />
 			<stateAttr ignoreReduceCooldown="1" />
 		</basic>
@@ -6168,12 +6165,11 @@
 			</actionAdditional>
 		</level>
 	</skill>
-	<skill id="10800229" comment="어쌔신">
+	<skill id="10800229" originID="10800221" comment="어쌔신">
 		<basic feature="JobChange_02" mainType="2">
-			<ui icon="./Data/Resource/Image/skill/icon/10800221.png" exceptUI="1" attackType="1" />
+			<ui icon="./Data/Resource/Image/skill/icon/10800221.png" attackType="1" />
 			<kinds rangeType="1" element="5" unrideOnUse="1" />
 			<stateAttr autoTargeting="0" cooldownGroupID="10800161" clearCooldownFromPVPZone="1" />
-			<changeSkill originSkillID="10800221" />
 			<condition useCoolDownShowUI="1" />
 		</basic>
 		<level value="1" sp="28" cooldown="30000" stringParam="192,397,590,28,2941">
@@ -6533,7 +6529,6 @@
 	</skill>
 	<skill id="10800232" comment="어쌔신">
 		<basic feature="JobChange_01" mainType="6">
-			<ui exceptUI="1" />
 			<kinds element="5" />
 			<stateAttr ignoreReduceCooldown="1" />
 		</basic>
@@ -7690,12 +7685,12 @@
 			</motion>
 		</level>
 	</skill>
-	<skill id="10800282" comment="어쌔신">
+	<skill id="10800282" originID="10800281" comment="어쌔신">
 		<basic feature="JobChange_02" mainType="2">
 			<ui attackType="1" />
 			<kinds rangeType="2" element="5" unrideOnUse="1" />
 			<stateAttr autoTargetingType="1" keyIsDown="1" cooldownGroupID="10800001" clearCooldownFromPVPZone="1" ignoreReduceCooldown="1" />
-			<combo comboSkill="1" comboOriginSkill="10800281" inputSkill="10800281" outputSkill="10800283" />
+			<combo comboSkill="1" inputSkill="10800281" outputSkill="10800283" />
 			<autoTargeting autoTargetingMaxDegree="90" />
 			<push back="150" />
 			<condition>
@@ -7859,12 +7854,12 @@
 			</motion>
 		</level>
 	</skill>
-	<skill id="10800283" comment="어쌔신">
+	<skill id="10800283" originID="10800281" comment="어쌔신">
 		<basic feature="JobChange_02" mainType="2">
 			<ui attackType="1" />
 			<kinds rangeType="2" element="5" unrideOnUse="1" />
 			<stateAttr autoTargetingType="1" keyIsDown="1" cooldownGroupID="10800001" ignoreReduceCooldown="1" />
-			<combo comboSkill="1" comboOriginSkill="10800281" />
+			<combo comboSkill="1" />
 			<autoTargeting autoTargetingMaxDegree="90" />
 			<push back="150" />
 			<condition>
@@ -8428,12 +8423,11 @@
 			</motion>
 		</level>
 	</skill>
-	<skill id="10800293" comment="어쌔신">
+	<skill id="10800293" originID="10800291" comment="어쌔신">
 		<basic feature="JobChange_02" mainType="2">
-			<ui icon="./Data/Resource/Image/skill/icon/10800291.png" exceptUI="1" attackType="1" />
+			<ui icon="./Data/Resource/Image/skill/icon/10800291.png" attackType="1" />
 			<kinds rangeType="2" element="5" unrideOnUse="1" />
 			<stateAttr useDefaultSkill="1" cooldownGroupID="10800291" />
-			<changeSkill originSkillID="10800291" />
 			<autoTargeting autoTargetingMaxDegree="90" />
 			<condition useCoolDownShowUI="1">
 				<weapon lh="34" rh="34" />
