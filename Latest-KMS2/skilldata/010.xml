@@ -2,7 +2,7 @@
 <ms2>
 	<skill id="1000001" comment="블레이드">
 		<basic mainType="1">
-			<ui exceptUI="1" attackType="1" />
+			<ui attackType="1" />
 			<kinds rangeType="1" jump="1000011" />
 			<stateAttr autoTargetingType="1" moveType="1" keyIsDown="1" clearCooldownFromPVPZone="1" ignoreReduceCooldown="1" />
 			<combo inputSkill="1000001" outputSkill="1000002" />
@@ -20,12 +20,12 @@
 			</motion>
 		</level>
 	</skill>
-	<skill id="1000002" comment="블레이드">
+	<skill id="1000002" originID="1000001" comment="블레이드">
 		<basic mainType="1">
 			<ui attackType="1" />
 			<kinds rangeType="1" />
 			<stateAttr autoTargetingType="1" moveType="1" ignoreReduceCooldown="1" />
-			<combo comboSkill="1" comboOriginSkill="1000001" inputSkill="1000001" outputSkill="1000001" />
+			<combo comboSkill="1" inputSkill="1000001" outputSkill="1000001" />
 			<autoTargeting autoTargetingMaxDegree="90" />
 			<push back="150" />
 		</basic>
@@ -39,13 +39,12 @@
 			</motion>
 		</level>
 	</skill>
-	<skill id="1000003" comment="블레이드">
+	<skill id="1000003" originID="1000001" comment="블레이드">
 		<basic mainType="1">
-			<ui exceptUI="1" attackType="1" />
+			<ui attackType="1" />
 			<kinds rangeType="1" jump="1000012" element="1" />
 			<stateAttr autoTargetingType="1" moveType="1" keyIsDown="1" clearCooldownFromPVPZone="1" ignoreReduceCooldown="1" />
 			<combo inputSkill="1000003" outputSkill="1000004" />
-			<changeSkill originSkillID="1000001" />
 			<autoTargeting autoTargetingMaxDegree="90" />
 			<push back="150" />
 		</basic>
@@ -59,12 +58,12 @@
 			</motion>
 		</level>
 	</skill>
-	<skill id="1000004" comment="블레이드">
+	<skill id="1000004" originID="1000003" comment="블레이드">
 		<basic mainType="1">
 			<ui attackType="1" />
 			<kinds rangeType="1" element="1" />
 			<stateAttr autoTargetingType="1" moveType="1" ignoreReduceCooldown="1" />
-			<combo comboSkill="1" comboOriginSkill="1000003" inputSkill="1000003" outputSkill="1000003" />
+			<combo comboSkill="1" inputSkill="1000003" outputSkill="1000003" />
 			<autoTargeting autoTargetingMaxDegree="90" />
 			<push back="150" />
 		</basic>
@@ -78,13 +77,12 @@
 			</motion>
 		</level>
 	</skill>
-	<skill id="1000005" comment="블레이드">
+	<skill id="1000005" originID="1000001" comment="블레이드">
 		<basic mainType="1">
-			<ui exceptUI="1" attackType="1" />
+			<ui attackType="1" />
 			<kinds rangeType="1" jump="1000013" element="2" />
 			<stateAttr autoTargetingType="1" moveType="1" keyIsDown="1" clearCooldownFromPVPZone="1" ignoreReduceCooldown="1" />
 			<combo inputSkill="1000005" outputSkill="1000006" />
-			<changeSkill originSkillID="1000001" />
 			<autoTargeting autoTargetingMaxDegree="90" />
 			<push back="150" />
 		</basic>
@@ -98,12 +96,12 @@
 			</motion>
 		</level>
 	</skill>
-	<skill id="1000006" comment="블레이드">
+	<skill id="1000006" originID="1000005" comment="블레이드">
 		<basic mainType="1">
 			<ui attackType="1" />
 			<kinds rangeType="1" element="2" />
 			<stateAttr autoTargetingType="1" moveType="1" ignoreReduceCooldown="1" />
-			<combo comboSkill="1" comboOriginSkill="1000005" inputSkill="1000005" outputSkill="1000005" />
+			<combo comboSkill="1" inputSkill="1000005" outputSkill="1000005" />
 			<autoTargeting autoTargetingMaxDegree="90" />
 			<push back="150" />
 		</basic>
@@ -117,13 +115,12 @@
 			</motion>
 		</level>
 	</skill>
-	<skill id="1000007" comment="블레이드">
+	<skill id="1000007" originID="1000001" comment="블레이드">
 		<basic mainType="1">
-			<ui exceptUI="1" attackType="1" />
+			<ui attackType="1" />
 			<kinds rangeType="1" jump="1000014" element="3" />
 			<stateAttr autoTargetingType="1" moveType="1" keyIsDown="1" clearCooldownFromPVPZone="1" ignoreReduceCooldown="1" />
 			<combo inputSkill="1000007" outputSkill="1000008" />
-			<changeSkill originSkillID="1000001" />
 			<autoTargeting autoTargetingMaxDegree="90" />
 			<push back="150" />
 		</basic>
@@ -137,12 +134,12 @@
 			</motion>
 		</level>
 	</skill>
-	<skill id="1000008" comment="블레이드">
+	<skill id="1000008" originID="1000007" comment="블레이드">
 		<basic mainType="1">
 			<ui attackType="1" />
 			<kinds rangeType="1" element="3" />
 			<stateAttr autoTargetingType="1" moveType="1" ignoreReduceCooldown="1" />
-			<combo comboSkill="1" comboOriginSkill="1000007" inputSkill="1000007" outputSkill="1000007" />
+			<combo comboSkill="1" inputSkill="1000007" outputSkill="1000007" />
 			<autoTargeting autoTargetingMaxDegree="90" />
 			<push back="150" />
 		</basic>
@@ -158,7 +155,7 @@
 	</skill>
 	<skill id="1000011" comment="블레이드">
 		<basic mainType="1">
-			<ui exceptUI="1" attackType="1" />
+			<ui attackType="1" />
 			<kinds rangeType="1" />
 			<stateAttr autoTargetingType="1" ignoreReduceCooldown="1" />
 			<changeSkill changeSkillCheckEffectID="10900001,10900011,10900021" changeSkillCheckEffectLevel="0,0,0" changeSkillCheckEffectOverlapCount="1,1,1" changeSkillID="1000012,1000013,1000014" />
@@ -174,12 +171,11 @@
 			</motion>
 		</level>
 	</skill>
-	<skill id="1000012" comment="블레이드">
+	<skill id="1000012" originID="1000011" comment="블레이드">
 		<basic mainType="1">
-			<ui exceptUI="1" attackType="1" />
+			<ui attackType="1" />
 			<kinds rangeType="1" element="1" />
 			<stateAttr autoTargetingType="1" ignoreReduceCooldown="1" />
-			<changeSkill originSkillID="1000011" />
 			<autoTargeting autoTargetingMaxDegree="90" />
 		</basic>
 		<level value="1" cooldown="400">
@@ -192,12 +188,11 @@
 			</motion>
 		</level>
 	</skill>
-	<skill id="1000013" comment="블레이드">
+	<skill id="1000013" originID="1000011" comment="블레이드">
 		<basic mainType="1">
-			<ui exceptUI="1" attackType="1" />
+			<ui attackType="1" />
 			<kinds rangeType="1" element="2" />
 			<stateAttr autoTargetingType="1" ignoreReduceCooldown="1" />
-			<changeSkill originSkillID="1000011" />
 			<autoTargeting autoTargetingMaxDegree="90" />
 		</basic>
 		<level value="1" cooldown="400">
@@ -210,12 +205,11 @@
 			</motion>
 		</level>
 	</skill>
-	<skill id="1000014" comment="블레이드">
+	<skill id="1000014" originID="1000011" comment="블레이드">
 		<basic mainType="1">
-			<ui exceptUI="1" attackType="1" />
+			<ui attackType="1" />
 			<kinds rangeType="1" element="3" />
 			<stateAttr autoTargetingType="1" ignoreReduceCooldown="1" />
-			<changeSkill originSkillID="1000011" />
 			<autoTargeting autoTargetingMaxDegree="90" />
 		</basic>
 		<level value="1" cooldown="400">

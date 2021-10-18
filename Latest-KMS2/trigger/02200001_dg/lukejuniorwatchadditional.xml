@@ -8,6 +8,18 @@
 	<state name="시작세팅">
 		<onEnter>
 			<action name="SetUserValue" key="CheckBuff" value="0"/>
+			<action name="SetUserValue" key="HardMode" value="1"/>
+		</onEnter>
+		<condition name="DungeonID" dungeonID="23100001">
+			<transition state="쉬운난이도" />
+		</condition>
+		<condition name="무조건">
+			<transition state="체크대기"/>
+		</condition>
+	</state>
+	<state name="쉬운난이도">
+		<onEnter>
+			<action name="SetUserValue" key="HardMode" value="0"/>
 		</onEnter>
 		<condition name="무조건">
 			<transition state="체크대기"/>
@@ -30,7 +42,18 @@
 		<onEnter>
 			<action name="SetUserValue" key="CheckBuff" value="1"/>
 		</onEnter>
-		<condition name="CheckNpcSlaveCount" spawnPointID="99" count="1" summonGroup="101">
+		<condition name="AllOf">
+			<group>
+				<condition name="UserValue" key="HardMode" value="0" />
+				<condition name="CheckNpcSlaveCount" spawnPointID="99" count="1" summonGroup="101" />
+			</group>
+			<transition state="블루주시버프체크"/>
+		</condition>
+		<condition name="AllOf">
+			<group>
+				<condition name="UserValue" key="HardMode" value="1" />
+				<condition name="CheckNpcSlaveCount" spawnPointID="100" count="1" summonGroup="101" />
+			</group>
 			<transition state="블루주시버프체크"/>
 		</condition>
 		<condition name="무조건">
@@ -66,7 +89,19 @@
 		<onEnter>
 			<action name="SetUserValue" key="CheckBuff" value="0"/>
 		</onEnter>
-		<condition name="CheckNpcSlaveCount" spawnPointID="99" count="1" summonGroup="401">
+		
+		<condition name="AllOf">
+			<group>
+				<condition name="UserValue" key="HardMode" value="0" />
+				<condition name="CheckNpcSlaveCount" spawnPointID="99" count="1" summonGroup="401" />
+			</group>
+			<transition state="그린주시버프체크"/>
+		</condition>
+		<condition name="AllOf">
+			<group>
+				<condition name="UserValue" key="HardMode" value="1" />
+				<condition name="CheckNpcSlaveCount" spawnPointID="100" count="1" summonGroup="401" />
+			</group>
 			<transition state="그린주시버프체크"/>
 		</condition>
 		<condition name="무조건">

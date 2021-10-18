@@ -147,7 +147,7 @@
 	</skill>
 	<skill id="10400004">
 		<basic feature="JobChange_01" mainType="30">
-			<ui exceptUI="1" attackType="2" />
+			<ui attackType="2" />
 			<kinds rangeType="1" element="4" />
 			<stateAttr ignoreReduceCooldown="1" />
 			<push back="200" />
@@ -1813,12 +1813,11 @@
 			</motion>
 		</level>
 	</skill>
-	<skill id="10400072" comment="프리스트">
+	<skill id="10400072" originID="10400071" comment="프리스트">
 		<basic mainType="2">
-			<ui icon="./Data/Resource/Image/skill/icon/10400071.png" exceptUI="1" />
+			<ui icon="./Data/Resource/Image/skill/icon/10400071.png" />
 			<kinds jump="10400071" element="4" unrideOnUse="1" />
 			<stateAttr autoTargeting="0" keyIsDown="1" clearCooldownFromPVPZone="1" ignoreReduceCooldown="1" />
-			<changeSkill originSkillID="10400071" />
 			<condition>
 				<weapon lh="40" rh="0" />
 			</condition>
@@ -2961,12 +2960,11 @@
 			</motion>
 		</level>
 	</skill>
-	<skill id="10400153">
+	<skill id="10400153" originID="10400151">
 		<basic feature="JobChange_01" mainType="2">
 			<ui icon="./Data/Resource/Image/skill/icon/10400151.png" />
 			<kinds element="4" immediateActive="1" unrideOnUse="1" />
 			<stateAttr superArmor="3" autoTargetingType="2" clearCooldownFromPVPZone="1" ignoreReduceCooldown="1" />
-			<changeSkill originSkillID="10400151" />
 			<autoTargeting autoTargetingMaxDegree="90" autoTargetingMaxDistance="800" autoTargetingMaxHeight="400" autoTargetUseMove="1" />
 			<condition>
 				<weapon lh="40" rh="0" />
@@ -3195,7 +3193,7 @@
 				<weapon lh="0" rh="33" />
 			</condition>
 		</basic>
-		<level value="1" cooldown="600" stringParam="291">
+		<level value="1" cooldown="600" stringParam="376">
 			<motion sequenceName="Priest_PowerOfJudgment_A" sequenceSpeed="1.1" strTagEffects="e0=CH/Skill/Priest/Eff_Priest_PowerOfJudgment_Cast_01.xml,e1=CH/Skill/Priest/Eff_Priest_PowerOfJudgment_Cast_02.xml">
 				<attack point="p0" targetCount="1" magicPathID="10400171" attacktype="2" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
 					<range rangeType="frustum" distance="800" height="150" width="300" endWidth="600" applyTarget="1" />
@@ -3209,7 +3207,7 @@
 				</attack>
 			</motion>
 		</level>
-		<level value="2" cooldown="600" stringParam="324">
+		<level value="2" cooldown="600" stringParam="409">
 			<motion sequenceName="Priest_PowerOfJudgment_A" sequenceSpeed="1.1" strTagEffects="e0=CH/Skill/Priest/Eff_Priest_PowerOfJudgment_Cast_01.xml,e1=CH/Skill/Priest/Eff_Priest_PowerOfJudgment_Cast_02.xml">
 				<attack point="p0" targetCount="1" magicPathID="10400171" attacktype="2" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
 					<range rangeType="frustum" distance="800" height="150" width="300" endWidth="600" applyTarget="1" />
@@ -3223,7 +3221,7 @@
 				</attack>
 			</motion>
 		</level>
-		<level value="3" cooldown="600" stringParam="357">
+		<level value="3" cooldown="600" stringParam="442">
 			<motion sequenceName="Priest_PowerOfJudgment_A" sequenceSpeed="1.1" strTagEffects="e0=CH/Skill/Priest/Eff_Priest_PowerOfJudgment_Cast_01.xml,e1=CH/Skill/Priest/Eff_Priest_PowerOfJudgment_Cast_02.xml">
 				<attack point="p0" targetCount="1" magicPathID="10400171" attacktype="2" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
 					<range rangeType="frustum" distance="800" height="150" width="300" endWidth="600" applyTarget="1" />
@@ -3237,7 +3235,7 @@
 				</attack>
 			</motion>
 		</level>
-		<level value="4" cooldown="600" stringParam="390">
+		<level value="4" cooldown="600" stringParam="475">
 			<motion sequenceName="Priest_PowerOfJudgment_A" sequenceSpeed="1.1" strTagEffects="e0=CH/Skill/Priest/Eff_Priest_PowerOfJudgment_Cast_01.xml,e1=CH/Skill/Priest/Eff_Priest_PowerOfJudgment_Cast_02.xml">
 				<attack point="p0" targetCount="1" magicPathID="10400171" attacktype="2" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
 					<range rangeType="frustum" distance="800" height="150" width="300" endWidth="600" applyTarget="1" />
@@ -3251,7 +3249,7 @@
 				</attack>
 			</motion>
 		</level>
-		<level value="5" cooldown="600" stringParam="423">
+		<level value="5" cooldown="600" stringParam="508">
 			<motion sequenceName="Priest_PowerOfJudgment_A" sequenceSpeed="1.1" strTagEffects="e0=CH/Skill/Priest/Eff_Priest_PowerOfJudgment_Cast_01.xml,e1=CH/Skill/Priest/Eff_Priest_PowerOfJudgment_Cast_02.xml">
 				<attack point="p0" targetCount="1" magicPathID="10400171" attacktype="2" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
 					<range rangeType="frustum" distance="800" height="150" width="300" endWidth="600" applyTarget="1" />
@@ -3265,7 +3263,7 @@
 				</attack>
 			</motion>
 		</level>
-		<level value="6" cooldown="600" stringParam="456">
+		<level value="6" cooldown="600" stringParam="541">
 			<motion sequenceName="Priest_PowerOfJudgment_A" sequenceSpeed="1.1" strTagEffects="e0=CH/Skill/Priest/Eff_Priest_PowerOfJudgment_Cast_01.xml,e1=CH/Skill/Priest/Eff_Priest_PowerOfJudgment_Cast_02.xml">
 				<attack point="p0" targetCount="1" magicPathID="10400171" attacktype="2" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
 					<range rangeType="frustum" distance="800" height="150" width="300" endWidth="600" applyTarget="1" />
@@ -3279,7 +3277,7 @@
 				</attack>
 			</motion>
 		</level>
-		<level value="7" cooldown="600" stringParam="489">
+		<level value="7" cooldown="600" stringParam="574">
 			<motion sequenceName="Priest_PowerOfJudgment_A" sequenceSpeed="1.1" strTagEffects="e0=CH/Skill/Priest/Eff_Priest_PowerOfJudgment_Cast_01.xml,e1=CH/Skill/Priest/Eff_Priest_PowerOfJudgment_Cast_02.xml">
 				<attack point="p0" targetCount="1" magicPathID="10400171" attacktype="2" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
 					<range rangeType="frustum" distance="800" height="150" width="300" endWidth="600" applyTarget="1" />
@@ -3293,7 +3291,7 @@
 				</attack>
 			</motion>
 		</level>
-		<level value="8" cooldown="600" stringParam="522">
+		<level value="8" cooldown="600" stringParam="607">
 			<motion sequenceName="Priest_PowerOfJudgment_A" sequenceSpeed="1.1" strTagEffects="e0=CH/Skill/Priest/Eff_Priest_PowerOfJudgment_Cast_01.xml,e1=CH/Skill/Priest/Eff_Priest_PowerOfJudgment_Cast_02.xml">
 				<attack point="p0" targetCount="1" magicPathID="10400171" attacktype="2" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
 					<range rangeType="frustum" distance="800" height="150" width="300" endWidth="600" applyTarget="1" />
@@ -3307,7 +3305,7 @@
 				</attack>
 			</motion>
 		</level>
-		<level value="9" cooldown="600" stringParam="555">
+		<level value="9" cooldown="600" stringParam="640">
 			<motion sequenceName="Priest_PowerOfJudgment_A" sequenceSpeed="1.1" strTagEffects="e0=CH/Skill/Priest/Eff_Priest_PowerOfJudgment_Cast_01.xml,e1=CH/Skill/Priest/Eff_Priest_PowerOfJudgment_Cast_02.xml">
 				<attack point="p0" targetCount="1" magicPathID="10400171" attacktype="2" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
 					<range rangeType="frustum" distance="800" height="150" width="300" endWidth="600" applyTarget="1" />
@@ -3321,7 +3319,7 @@
 				</attack>
 			</motion>
 		</level>
-		<level value="10" cooldown="600" stringParam="588">
+		<level value="10" cooldown="600" stringParam="673">
 			<motion sequenceName="Priest_PowerOfJudgment_A" sequenceSpeed="1.1" strTagEffects="e0=CH/Skill/Priest/Eff_Priest_PowerOfJudgment_Cast_01.xml,e1=CH/Skill/Priest/Eff_Priest_PowerOfJudgment_Cast_02.xml">
 				<attack point="p0" targetCount="1" magicPathID="10400171" attacktype="2" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
 					<range rangeType="frustum" distance="800" height="150" width="300" endWidth="600" applyTarget="1" />
@@ -3335,7 +3333,7 @@
 				</attack>
 			</motion>
 		</level>
-		<level value="11" cooldown="600" stringParam="621">
+		<level value="11" cooldown="600" stringParam="706">
 			<motion sequenceName="Priest_PowerOfJudgment_A" sequenceSpeed="1.1" strTagEffects="e0=CH/Skill/Priest/Eff_Priest_PowerOfJudgment_Cast_01.xml,e1=CH/Skill/Priest/Eff_Priest_PowerOfJudgment_Cast_02.xml">
 				<attack point="p0" targetCount="1" magicPathID="10400171" attacktype="2" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
 					<range rangeType="frustum" distance="800" height="150" width="300" endWidth="600" applyTarget="1" />
@@ -3349,7 +3347,7 @@
 				</attack>
 			</motion>
 		</level>
-		<level value="12" cooldown="600" stringParam="654">
+		<level value="12" cooldown="600" stringParam="739">
 			<motion sequenceName="Priest_PowerOfJudgment_A" sequenceSpeed="1.1" strTagEffects="e0=CH/Skill/Priest/Eff_Priest_PowerOfJudgment_Cast_01.xml,e1=CH/Skill/Priest/Eff_Priest_PowerOfJudgment_Cast_02.xml">
 				<attack point="p0" targetCount="1" magicPathID="10400171" attacktype="2" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
 					<range rangeType="frustum" distance="800" height="150" width="300" endWidth="600" applyTarget="1" />
@@ -3376,7 +3374,7 @@
 				<attack point="p0" targetCount="8" attacktype="2" hitImmuneBreak="5" brokenOffence="1" unrideOnHit="1">
 					<range rangeType="cylinder" distance="250" height="150" applyTarget="1" />
 					<arrow nonTarget="1" />
-					<damage rate="2.91" hitSpeedRate="0.8" hitPauseTime="0.1" effectRemain="CH/Skill/Priest/Eff_Priest_PowerOfJudgment_Remain_01.xml" effectHit="CH/Common/Eff_Common_Light_Hit.xml" attackMaterial="105" />
+					<damage rate="3.76" hitSpeedRate="0.8" hitPauseTime="0.1" effectRemain="CH/Skill/Priest/Eff_Priest_PowerOfJudgment_Remain_01.xml" effectHit="CH/Common/Eff_Common_Light_Hit.xml" attackMaterial="105" />
 					<actionAdditional additionalID="10400001" level="1" skillTarget="2" skillOwner="1" dependOnDamageCount="1" />
 				</attack>
 			</motion>
@@ -3386,7 +3384,7 @@
 				<attack point="p0" targetCount="8" attacktype="2" hitImmuneBreak="5" brokenOffence="1" unrideOnHit="1">
 					<range rangeType="cylinder" distance="250" height="150" applyTarget="1" />
 					<arrow nonTarget="1" />
-					<damage rate="3.24" hitSpeedRate="0.8" hitPauseTime="0.1" effectRemain="CH/Skill/Priest/Eff_Priest_PowerOfJudgment_Remain_01.xml" effectHit="CH/Common/Eff_Common_Light_Hit.xml" attackMaterial="105" />
+					<damage rate="4.09" hitSpeedRate="0.8" hitPauseTime="0.1" effectRemain="CH/Skill/Priest/Eff_Priest_PowerOfJudgment_Remain_01.xml" effectHit="CH/Common/Eff_Common_Light_Hit.xml" attackMaterial="105" />
 					<actionAdditional additionalID="10400001" level="1" skillTarget="2" skillOwner="1" dependOnDamageCount="1" />
 				</attack>
 			</motion>
@@ -3396,7 +3394,7 @@
 				<attack point="p0" targetCount="8" attacktype="2" hitImmuneBreak="5" brokenOffence="1" unrideOnHit="1">
 					<range rangeType="cylinder" distance="250" height="150" applyTarget="1" />
 					<arrow nonTarget="1" />
-					<damage rate="3.57" hitSpeedRate="0.8" hitPauseTime="0.1" effectRemain="CH/Skill/Priest/Eff_Priest_PowerOfJudgment_Remain_01.xml" effectHit="CH/Common/Eff_Common_Light_Hit.xml" attackMaterial="105" />
+					<damage rate="4.42" hitSpeedRate="0.8" hitPauseTime="0.1" effectRemain="CH/Skill/Priest/Eff_Priest_PowerOfJudgment_Remain_01.xml" effectHit="CH/Common/Eff_Common_Light_Hit.xml" attackMaterial="105" />
 					<actionAdditional additionalID="10400001" level="1" skillTarget="2" skillOwner="1" dependOnDamageCount="1" />
 				</attack>
 			</motion>
@@ -3406,7 +3404,7 @@
 				<attack point="p0" targetCount="8" attacktype="2" hitImmuneBreak="5" brokenOffence="1" unrideOnHit="1">
 					<range rangeType="cylinder" distance="250" height="150" applyTarget="1" />
 					<arrow nonTarget="1" />
-					<damage rate="3.9" hitSpeedRate="0.8" hitPauseTime="0.1" effectRemain="CH/Skill/Priest/Eff_Priest_PowerOfJudgment_Remain_01.xml" effectHit="CH/Common/Eff_Common_Light_Hit.xml" attackMaterial="105" />
+					<damage rate="4.75" hitSpeedRate="0.8" hitPauseTime="0.1" effectRemain="CH/Skill/Priest/Eff_Priest_PowerOfJudgment_Remain_01.xml" effectHit="CH/Common/Eff_Common_Light_Hit.xml" attackMaterial="105" />
 					<actionAdditional additionalID="10400001" level="1" skillTarget="2" skillOwner="1" dependOnDamageCount="1" />
 				</attack>
 			</motion>
@@ -3416,7 +3414,7 @@
 				<attack point="p0" targetCount="8" attacktype="2" hitImmuneBreak="5" brokenOffence="1" unrideOnHit="1">
 					<range rangeType="cylinder" distance="250" height="150" applyTarget="1" />
 					<arrow nonTarget="1" />
-					<damage rate="4.23" hitSpeedRate="0.8" hitPauseTime="0.1" effectRemain="CH/Skill/Priest/Eff_Priest_PowerOfJudgment_Remain_01.xml" effectHit="CH/Common/Eff_Common_Light_Hit.xml" attackMaterial="105" />
+					<damage rate="5.08" hitSpeedRate="0.8" hitPauseTime="0.1" effectRemain="CH/Skill/Priest/Eff_Priest_PowerOfJudgment_Remain_01.xml" effectHit="CH/Common/Eff_Common_Light_Hit.xml" attackMaterial="105" />
 					<actionAdditional additionalID="10400001" level="1" skillTarget="2" skillOwner="1" dependOnDamageCount="1" />
 				</attack>
 			</motion>
@@ -3426,7 +3424,7 @@
 				<attack point="p0" targetCount="8" attacktype="2" hitImmuneBreak="5" brokenOffence="1" unrideOnHit="1">
 					<range rangeType="cylinder" distance="250" height="150" applyTarget="1" />
 					<arrow nonTarget="1" />
-					<damage rate="4.56" hitSpeedRate="0.8" hitPauseTime="0.1" effectRemain="CH/Skill/Priest/Eff_Priest_PowerOfJudgment_Remain_01.xml" effectHit="CH/Common/Eff_Common_Light_Hit.xml" attackMaterial="105" />
+					<damage rate="5.41" hitSpeedRate="0.8" hitPauseTime="0.1" effectRemain="CH/Skill/Priest/Eff_Priest_PowerOfJudgment_Remain_01.xml" effectHit="CH/Common/Eff_Common_Light_Hit.xml" attackMaterial="105" />
 					<actionAdditional additionalID="10400001" level="1" skillTarget="2" skillOwner="1" dependOnDamageCount="1" />
 				</attack>
 			</motion>
@@ -3436,7 +3434,7 @@
 				<attack point="p0" targetCount="8" attacktype="2" hitImmuneBreak="5" brokenOffence="1" unrideOnHit="1">
 					<range rangeType="cylinder" distance="250" height="150" applyTarget="1" />
 					<arrow nonTarget="1" />
-					<damage rate="4.89" hitSpeedRate="0.8" hitPauseTime="0.1" effectRemain="CH/Skill/Priest/Eff_Priest_PowerOfJudgment_Remain_01.xml" effectHit="CH/Common/Eff_Common_Light_Hit.xml" attackMaterial="105" />
+					<damage rate="5.74" hitSpeedRate="0.8" hitPauseTime="0.1" effectRemain="CH/Skill/Priest/Eff_Priest_PowerOfJudgment_Remain_01.xml" effectHit="CH/Common/Eff_Common_Light_Hit.xml" attackMaterial="105" />
 					<actionAdditional additionalID="10400001" level="1" skillTarget="2" skillOwner="1" dependOnDamageCount="1" />
 				</attack>
 			</motion>
@@ -3446,7 +3444,7 @@
 				<attack point="p0" targetCount="8" attacktype="2" hitImmuneBreak="5" brokenOffence="1" unrideOnHit="1">
 					<range rangeType="cylinder" distance="250" height="150" applyTarget="1" />
 					<arrow nonTarget="1" />
-					<damage rate="5.22" hitSpeedRate="0.8" hitPauseTime="0.1" effectRemain="CH/Skill/Priest/Eff_Priest_PowerOfJudgment_Remain_01.xml" effectHit="CH/Common/Eff_Common_Light_Hit.xml" attackMaterial="105" />
+					<damage rate="6.07" hitSpeedRate="0.8" hitPauseTime="0.1" effectRemain="CH/Skill/Priest/Eff_Priest_PowerOfJudgment_Remain_01.xml" effectHit="CH/Common/Eff_Common_Light_Hit.xml" attackMaterial="105" />
 					<actionAdditional additionalID="10400001" level="1" skillTarget="2" skillOwner="1" dependOnDamageCount="1" />
 				</attack>
 			</motion>
@@ -3456,7 +3454,7 @@
 				<attack point="p0" targetCount="8" attacktype="2" hitImmuneBreak="5" brokenOffence="1" unrideOnHit="1">
 					<range rangeType="cylinder" distance="250" height="150" applyTarget="1" />
 					<arrow nonTarget="1" />
-					<damage rate="5.55" hitSpeedRate="0.8" hitPauseTime="0.1" effectRemain="CH/Skill/Priest/Eff_Priest_PowerOfJudgment_Remain_01.xml" effectHit="CH/Common/Eff_Common_Light_Hit.xml" attackMaterial="105" />
+					<damage rate="6.4" hitSpeedRate="0.8" hitPauseTime="0.1" effectRemain="CH/Skill/Priest/Eff_Priest_PowerOfJudgment_Remain_01.xml" effectHit="CH/Common/Eff_Common_Light_Hit.xml" attackMaterial="105" />
 					<actionAdditional additionalID="10400001" level="1" skillTarget="2" skillOwner="1" dependOnDamageCount="1" />
 				</attack>
 			</motion>
@@ -3466,7 +3464,7 @@
 				<attack point="p0" targetCount="8" attacktype="2" hitImmuneBreak="5" brokenOffence="1" unrideOnHit="1">
 					<range rangeType="cylinder" distance="250" height="150" applyTarget="1" />
 					<arrow nonTarget="1" />
-					<damage rate="5.88" hitSpeedRate="0.8" hitPauseTime="0.1" effectRemain="CH/Skill/Priest/Eff_Priest_PowerOfJudgment_Remain_01.xml" effectHit="CH/Common/Eff_Common_Light_Hit.xml" attackMaterial="105" />
+					<damage rate="6.73" hitSpeedRate="0.8" hitPauseTime="0.1" effectRemain="CH/Skill/Priest/Eff_Priest_PowerOfJudgment_Remain_01.xml" effectHit="CH/Common/Eff_Common_Light_Hit.xml" attackMaterial="105" />
 					<actionAdditional additionalID="10400001" level="1" skillTarget="2" skillOwner="1" dependOnDamageCount="1" />
 				</attack>
 			</motion>
@@ -3476,7 +3474,7 @@
 				<attack point="p0" targetCount="8" attacktype="2" hitImmuneBreak="5" brokenOffence="1" unrideOnHit="1">
 					<range rangeType="cylinder" distance="250" height="150" applyTarget="1" />
 					<arrow nonTarget="1" />
-					<damage rate="6.21" hitSpeedRate="0.8" hitPauseTime="0.1" effectRemain="CH/Skill/Priest/Eff_Priest_PowerOfJudgment_Remain_01.xml" effectHit="CH/Common/Eff_Common_Light_Hit.xml" attackMaterial="105" />
+					<damage rate="7.06" hitSpeedRate="0.8" hitPauseTime="0.1" effectRemain="CH/Skill/Priest/Eff_Priest_PowerOfJudgment_Remain_01.xml" effectHit="CH/Common/Eff_Common_Light_Hit.xml" attackMaterial="105" />
 					<actionAdditional additionalID="10400001" level="1" skillTarget="2" skillOwner="1" dependOnDamageCount="1" />
 				</attack>
 			</motion>
@@ -3486,7 +3484,7 @@
 				<attack point="p0" targetCount="8" attacktype="2" hitImmuneBreak="5" brokenOffence="1" unrideOnHit="1">
 					<range rangeType="cylinder" distance="250" height="150" applyTarget="1" />
 					<arrow nonTarget="1" />
-					<damage rate="6.54" hitSpeedRate="0.8" hitPauseTime="0.1" effectRemain="CH/Skill/Priest/Eff_Priest_PowerOfJudgment_Remain_01.xml" effectHit="CH/Common/Eff_Common_Light_Hit.xml" attackMaterial="105" />
+					<damage rate="7.39" hitSpeedRate="0.8" hitPauseTime="0.1" effectRemain="CH/Skill/Priest/Eff_Priest_PowerOfJudgment_Remain_01.xml" effectHit="CH/Common/Eff_Common_Light_Hit.xml" attackMaterial="105" />
 					<actionAdditional additionalID="10400001" level="1" skillTarget="2" skillOwner="1" dependOnDamageCount="1" />
 				</attack>
 			</motion>
@@ -3503,11 +3501,14 @@
 				<weapon lh="0" rh="33" />
 			</condition>
 		</basic>
-		<level value="1" cooldown="60000" stringParam="780,1350,2100,10,5,8">
+		<level value="1" cooldown="60000" stringParam="991,1722,2686,10,5,8">
 			<actionAdditional additionalID="10400182" level="1" skillTarget="1">
 				<beginCondition allowBattleRidingState="1" />
 			</actionAdditional>
 			<actionAdditional additionalID="10400183" level="1" skillTarget="1">
+				<beginCondition allowBattleRidingState="1" />
+			</actionAdditional>
+			<actionAdditional additionalID="10400185" level="1" skillTarget="1">
 				<beginCondition allowBattleRidingState="1" />
 			</actionAdditional>
 			<motion sequenceName="Priest_Heavens_Explosion_A" sequenceSpeed="1.5" strTagEffects="e0=CH/Skill/Priest/Eff_Priest_HeavensExplosion_Cast_01.xml">
@@ -3522,11 +3523,14 @@
 				</attack>
 			</motion>
 		</level>
-		<level value="2" cooldown="60000" stringParam="849,1478,2307,20,10,16">
+		<level value="2" cooldown="60000" stringParam="1060,1850,2893,20,10,16">
 			<actionAdditional additionalID="10400182" level="1" skillTarget="1">
 				<beginCondition allowBattleRidingState="1" />
 			</actionAdditional>
 			<actionAdditional additionalID="10400183" level="2" skillTarget="1">
+				<beginCondition allowBattleRidingState="1" />
+			</actionAdditional>
+			<actionAdditional additionalID="10400185" level="2" skillTarget="1">
 				<beginCondition allowBattleRidingState="1" />
 			</actionAdditional>
 			<motion sequenceName="Priest_Heavens_Explosion_A" sequenceSpeed="1.5" strTagEffects="e0=CH/Skill/Priest/Eff_Priest_HeavensExplosion_Cast_01.xml">
@@ -3541,11 +3545,14 @@
 				</attack>
 			</motion>
 		</level>
-		<level value="3" cooldown="60000" stringParam="918,1606,2514,30,15,24">
+		<level value="3" cooldown="60000" stringParam="1129,1978,3100,30,15,24">
 			<actionAdditional additionalID="10400182" level="1" skillTarget="1">
 				<beginCondition allowBattleRidingState="1" />
 			</actionAdditional>
 			<actionAdditional additionalID="10400183" level="3" skillTarget="1">
+				<beginCondition allowBattleRidingState="1" />
+			</actionAdditional>
+			<actionAdditional additionalID="10400185" level="3" skillTarget="1">
 				<beginCondition allowBattleRidingState="1" />
 			</actionAdditional>
 			<motion sequenceName="Priest_Heavens_Explosion_A" sequenceSpeed="1.5" strTagEffects="e0=CH/Skill/Priest/Eff_Priest_HeavensExplosion_Cast_01.xml">
@@ -3560,11 +3567,14 @@
 				</attack>
 			</motion>
 		</level>
-		<level value="4" cooldown="60000" stringParam="987,1734,2721,40,20,32">
+		<level value="4" cooldown="60000" stringParam="1198,2106,3307,40,20,32">
 			<actionAdditional additionalID="10400182" level="1" skillTarget="1">
 				<beginCondition allowBattleRidingState="1" />
 			</actionAdditional>
 			<actionAdditional additionalID="10400183" level="4" skillTarget="1">
+				<beginCondition allowBattleRidingState="1" />
+			</actionAdditional>
+			<actionAdditional additionalID="10400185" level="4" skillTarget="1">
 				<beginCondition allowBattleRidingState="1" />
 			</actionAdditional>
 			<motion sequenceName="Priest_Heavens_Explosion_A" sequenceSpeed="1.5" strTagEffects="e0=CH/Skill/Priest/Eff_Priest_HeavensExplosion_Cast_01.xml">
@@ -3579,11 +3589,14 @@
 				</attack>
 			</motion>
 		</level>
-		<level value="5" cooldown="60000" stringParam="1056,1862,2928,50,25,40">
+		<level value="5" cooldown="60000" stringParam="1267,2234,3514,50,25,40">
 			<actionAdditional additionalID="10400182" level="1" skillTarget="1">
 				<beginCondition allowBattleRidingState="1" />
 			</actionAdditional>
 			<actionAdditional additionalID="10400183" level="5" skillTarget="1">
+				<beginCondition allowBattleRidingState="1" />
+			</actionAdditional>
+			<actionAdditional additionalID="10400185" level="5" skillTarget="1">
 				<beginCondition allowBattleRidingState="1" />
 			</actionAdditional>
 			<motion sequenceName="Priest_Heavens_Explosion_A" sequenceSpeed="1.5" strTagEffects="e0=CH/Skill/Priest/Eff_Priest_HeavensExplosion_Cast_01.xml">
@@ -3598,11 +3611,14 @@
 				</attack>
 			</motion>
 		</level>
-		<level value="6" cooldown="60000" stringParam="1125,1990,3135,60,30,48">
+		<level value="6" cooldown="60000" stringParam="1336,2362,3721,60,30,48">
 			<actionAdditional additionalID="10400182" level="1" skillTarget="1">
 				<beginCondition allowBattleRidingState="1" />
 			</actionAdditional>
 			<actionAdditional additionalID="10400183" level="6" skillTarget="1">
+				<beginCondition allowBattleRidingState="1" />
+			</actionAdditional>
+			<actionAdditional additionalID="10400185" level="6" skillTarget="1">
 				<beginCondition allowBattleRidingState="1" />
 			</actionAdditional>
 			<motion sequenceName="Priest_Heavens_Explosion_A" sequenceSpeed="1.5" strTagEffects="e0=CH/Skill/Priest/Eff_Priest_HeavensExplosion_Cast_01.xml">
@@ -3617,11 +3633,14 @@
 				</attack>
 			</motion>
 		</level>
-		<level value="7" cooldown="60000" stringParam="1194,2118,3342,70,35,56">
+		<level value="7" cooldown="60000" stringParam="1405,2490,3928,70,35,56">
 			<actionAdditional additionalID="10400182" level="1" skillTarget="1">
 				<beginCondition allowBattleRidingState="1" />
 			</actionAdditional>
 			<actionAdditional additionalID="10400183" level="7" skillTarget="1">
+				<beginCondition allowBattleRidingState="1" />
+			</actionAdditional>
+			<actionAdditional additionalID="10400185" level="7" skillTarget="1">
 				<beginCondition allowBattleRidingState="1" />
 			</actionAdditional>
 			<motion sequenceName="Priest_Heavens_Explosion_A" sequenceSpeed="1.5" strTagEffects="e0=CH/Skill/Priest/Eff_Priest_HeavensExplosion_Cast_01.xml">
@@ -3636,11 +3655,14 @@
 				</attack>
 			</motion>
 		</level>
-		<level value="8" cooldown="60000" stringParam="1263,2246,3549,80,40,64">
+		<level value="8" cooldown="60000" stringParam="1474,2618,4135,80,40,64">
 			<actionAdditional additionalID="10400182" level="1" skillTarget="1">
 				<beginCondition allowBattleRidingState="1" />
 			</actionAdditional>
 			<actionAdditional additionalID="10400183" level="8" skillTarget="1">
+				<beginCondition allowBattleRidingState="1" />
+			</actionAdditional>
+			<actionAdditional additionalID="10400185" level="8" skillTarget="1">
 				<beginCondition allowBattleRidingState="1" />
 			</actionAdditional>
 			<motion sequenceName="Priest_Heavens_Explosion_A" sequenceSpeed="1.5" strTagEffects="e0=CH/Skill/Priest/Eff_Priest_HeavensExplosion_Cast_01.xml">
@@ -3655,11 +3677,14 @@
 				</attack>
 			</motion>
 		</level>
-		<level value="9" cooldown="60000" stringParam="1332,2374,3756,90,45,72">
+		<level value="9" cooldown="60000" stringParam="1543,2746,4342,90,45,72">
 			<actionAdditional additionalID="10400182" level="1" skillTarget="1">
 				<beginCondition allowBattleRidingState="1" />
 			</actionAdditional>
 			<actionAdditional additionalID="10400183" level="9" skillTarget="1">
+				<beginCondition allowBattleRidingState="1" />
+			</actionAdditional>
+			<actionAdditional additionalID="10400185" level="9" skillTarget="1">
 				<beginCondition allowBattleRidingState="1" />
 			</actionAdditional>
 			<motion sequenceName="Priest_Heavens_Explosion_A" sequenceSpeed="1.5" strTagEffects="e0=CH/Skill/Priest/Eff_Priest_HeavensExplosion_Cast_01.xml">
@@ -3674,11 +3699,14 @@
 				</attack>
 			</motion>
 		</level>
-		<level value="10" cooldown="60000" stringParam="1401,2502,3963,100,50,80">
+		<level value="10" cooldown="60000" stringParam="1612,2874,4549,100,50,80">
 			<actionAdditional additionalID="10400182" level="1" skillTarget="1">
 				<beginCondition allowBattleRidingState="1" />
 			</actionAdditional>
 			<actionAdditional additionalID="10400183" level="10" skillTarget="1">
+				<beginCondition allowBattleRidingState="1" />
+			</actionAdditional>
+			<actionAdditional additionalID="10400185" level="10" skillTarget="1">
 				<beginCondition allowBattleRidingState="1" />
 			</actionAdditional>
 			<motion sequenceName="Priest_Heavens_Explosion_A" sequenceSpeed="1.5" strTagEffects="e0=CH/Skill/Priest/Eff_Priest_HeavensExplosion_Cast_01.xml">
@@ -3693,11 +3721,14 @@
 				</attack>
 			</motion>
 		</level>
-		<level value="11" cooldown="60000" stringParam="1470,2630,4170,110,55,88">
+		<level value="11" cooldown="60000" stringParam="1681,3002,4756,110,55,88">
 			<actionAdditional additionalID="10400182" level="1" skillTarget="1">
 				<beginCondition allowBattleRidingState="1" />
 			</actionAdditional>
 			<actionAdditional additionalID="10400183" level="11" skillTarget="1">
+				<beginCondition allowBattleRidingState="1" />
+			</actionAdditional>
+			<actionAdditional additionalID="10400185" level="11" skillTarget="1">
 				<beginCondition allowBattleRidingState="1" />
 			</actionAdditional>
 			<motion sequenceName="Priest_Heavens_Explosion_A" sequenceSpeed="1.5" strTagEffects="e0=CH/Skill/Priest/Eff_Priest_HeavensExplosion_Cast_01.xml">
@@ -3712,11 +3743,14 @@
 				</attack>
 			</motion>
 		</level>
-		<level value="12" cooldown="60000" stringParam="1539,2758,4377,120,60,96">
+		<level value="12" cooldown="60000" stringParam="1750,3130,4963,120,60,96">
 			<actionAdditional additionalID="10400182" level="1" skillTarget="1">
 				<beginCondition allowBattleRidingState="1" />
 			</actionAdditional>
 			<actionAdditional additionalID="10400183" level="12" skillTarget="1">
+				<beginCondition allowBattleRidingState="1" />
+			</actionAdditional>
+			<actionAdditional additionalID="10400185" level="12" skillTarget="1">
 				<beginCondition allowBattleRidingState="1" />
 			</actionAdditional>
 			<motion sequenceName="Priest_Heavens_Explosion_A" sequenceSpeed="1.5" strTagEffects="e0=CH/Skill/Priest/Eff_Priest_HeavensExplosion_Cast_01.xml">
@@ -3743,7 +3777,7 @@
 				<attack point="p0" targetCount="8" attacktype="2" hitImmuneBreak="5" brokenOffence="2" brokenForce="3" releaseObjectWeaponOnHit="0">
 					<range rangeType="cylinder" distance="450" height="300" applyTarget="1" />
 					<arrow nonTarget="1" />
-					<damage rate="7.8" push="1" pushdistance="1" pushduration="0.3" pushEaseType="1" attackMaterial="1000" />
+					<damage rate="9.91" push="1" pushdistance="1" pushduration="0.3" pushEaseType="1" attackMaterial="1000" />
 				</attack>
 			</motion>
 		</level>
@@ -3752,7 +3786,7 @@
 				<attack point="p0" targetCount="8" attacktype="2" hitImmuneBreak="5" brokenOffence="2" brokenForce="3" releaseObjectWeaponOnHit="0">
 					<range rangeType="cylinder" distance="450" height="300" applyTarget="1" />
 					<arrow nonTarget="1" />
-					<damage rate="8.49" push="1" pushdistance="1" pushduration="0.3" pushEaseType="1" attackMaterial="1000" />
+					<damage rate="10.6" push="1" pushdistance="1" pushduration="0.3" pushEaseType="1" attackMaterial="1000" />
 				</attack>
 			</motion>
 		</level>
@@ -3761,7 +3795,7 @@
 				<attack point="p0" targetCount="8" attacktype="2" hitImmuneBreak="5" brokenOffence="2" brokenForce="3" releaseObjectWeaponOnHit="0">
 					<range rangeType="cylinder" distance="450" height="300" applyTarget="1" />
 					<arrow nonTarget="1" />
-					<damage rate="9.18" push="1" pushdistance="1" pushduration="0.3" pushEaseType="1" attackMaterial="1000" />
+					<damage rate="11.29" push="1" pushdistance="1" pushduration="0.3" pushEaseType="1" attackMaterial="1000" />
 				</attack>
 			</motion>
 		</level>
@@ -3770,7 +3804,7 @@
 				<attack point="p0" targetCount="8" attacktype="2" hitImmuneBreak="5" brokenOffence="2" brokenForce="3" releaseObjectWeaponOnHit="0">
 					<range rangeType="cylinder" distance="450" height="300" applyTarget="1" />
 					<arrow nonTarget="1" />
-					<damage rate="9.87" push="1" pushdistance="1" pushduration="0.3" pushEaseType="1" attackMaterial="1000" />
+					<damage rate="11.98" push="1" pushdistance="1" pushduration="0.3" pushEaseType="1" attackMaterial="1000" />
 				</attack>
 			</motion>
 		</level>
@@ -3779,7 +3813,7 @@
 				<attack point="p0" targetCount="8" attacktype="2" hitImmuneBreak="5" brokenOffence="2" brokenForce="3" releaseObjectWeaponOnHit="0">
 					<range rangeType="cylinder" distance="450" height="300" applyTarget="1" />
 					<arrow nonTarget="1" />
-					<damage rate="10.56" push="1" pushdistance="1" pushduration="0.3" pushEaseType="1" attackMaterial="1000" />
+					<damage rate="12.67" push="1" pushdistance="1" pushduration="0.3" pushEaseType="1" attackMaterial="1000" />
 				</attack>
 			</motion>
 		</level>
@@ -3788,7 +3822,7 @@
 				<attack point="p0" targetCount="8" attacktype="2" hitImmuneBreak="5" brokenOffence="2" brokenForce="3" releaseObjectWeaponOnHit="0">
 					<range rangeType="cylinder" distance="450" height="300" applyTarget="1" />
 					<arrow nonTarget="1" />
-					<damage rate="11.25" push="1" pushdistance="1" pushduration="0.3" pushEaseType="1" attackMaterial="1000" />
+					<damage rate="13.36" push="1" pushdistance="1" pushduration="0.3" pushEaseType="1" attackMaterial="1000" />
 				</attack>
 			</motion>
 		</level>
@@ -3797,7 +3831,7 @@
 				<attack point="p0" targetCount="8" attacktype="2" hitImmuneBreak="5" brokenOffence="2" brokenForce="3" releaseObjectWeaponOnHit="0">
 					<range rangeType="cylinder" distance="450" height="300" applyTarget="1" />
 					<arrow nonTarget="1" />
-					<damage rate="11.94" push="1" pushdistance="1" pushduration="0.3" pushEaseType="1" attackMaterial="1000" />
+					<damage rate="14.05" push="1" pushdistance="1" pushduration="0.3" pushEaseType="1" attackMaterial="1000" />
 				</attack>
 			</motion>
 		</level>
@@ -3806,7 +3840,7 @@
 				<attack point="p0" targetCount="8" attacktype="2" hitImmuneBreak="5" brokenOffence="2" brokenForce="3" releaseObjectWeaponOnHit="0">
 					<range rangeType="cylinder" distance="450" height="300" applyTarget="1" />
 					<arrow nonTarget="1" />
-					<damage rate="12.63" push="1" pushdistance="1" pushduration="0.3" pushEaseType="1" attackMaterial="1000" />
+					<damage rate="14.74" push="1" pushdistance="1" pushduration="0.3" pushEaseType="1" attackMaterial="1000" />
 				</attack>
 			</motion>
 		</level>
@@ -3815,7 +3849,7 @@
 				<attack point="p0" targetCount="8" attacktype="2" hitImmuneBreak="5" brokenOffence="2" brokenForce="3" releaseObjectWeaponOnHit="0">
 					<range rangeType="cylinder" distance="450" height="300" applyTarget="1" />
 					<arrow nonTarget="1" />
-					<damage rate="13.32" push="1" pushdistance="1" pushduration="0.3" pushEaseType="1" attackMaterial="1000" />
+					<damage rate="15.43" push="1" pushdistance="1" pushduration="0.3" pushEaseType="1" attackMaterial="1000" />
 				</attack>
 			</motion>
 		</level>
@@ -3824,7 +3858,7 @@
 				<attack point="p0" targetCount="8" attacktype="2" hitImmuneBreak="5" brokenOffence="2" brokenForce="3" releaseObjectWeaponOnHit="0">
 					<range rangeType="cylinder" distance="450" height="300" applyTarget="1" />
 					<arrow nonTarget="1" />
-					<damage rate="14.01" push="1" pushdistance="1" pushduration="0.3" pushEaseType="1" attackMaterial="1000" />
+					<damage rate="16.12" push="1" pushdistance="1" pushduration="0.3" pushEaseType="1" attackMaterial="1000" />
 				</attack>
 			</motion>
 		</level>
@@ -3833,7 +3867,7 @@
 				<attack point="p0" targetCount="8" attacktype="2" hitImmuneBreak="5" brokenOffence="2" brokenForce="3" releaseObjectWeaponOnHit="0">
 					<range rangeType="cylinder" distance="450" height="300" applyTarget="1" />
 					<arrow nonTarget="1" />
-					<damage rate="14.7" push="1" pushdistance="1" pushduration="0.3" pushEaseType="1" attackMaterial="1000" />
+					<damage rate="16.81" push="1" pushdistance="1" pushduration="0.3" pushEaseType="1" attackMaterial="1000" />
 				</attack>
 			</motion>
 		</level>
@@ -3842,7 +3876,7 @@
 				<attack point="p0" targetCount="8" attacktype="2" hitImmuneBreak="5" brokenOffence="2" brokenForce="3" releaseObjectWeaponOnHit="0">
 					<range rangeType="cylinder" distance="450" height="300" applyTarget="1" />
 					<arrow nonTarget="1" />
-					<damage rate="15.39" push="1" pushdistance="1" pushduration="0.3" pushEaseType="1" attackMaterial="1000" />
+					<damage rate="17.5" push="1" pushdistance="1" pushduration="0.3" pushEaseType="1" attackMaterial="1000" />
 				</attack>
 			</motion>
 		</level>
@@ -3858,7 +3892,7 @@
 				<attack point="p0" targetCount="8" attacktype="2" hitImmuneBreak="5" brokenOffence="2" brokenForce="3" releaseObjectWeaponOnHit="0">
 					<range rangeType="cylinder" distance="450" height="300" applyTarget="1" />
 					<arrow nonTarget="1" />
-					<damage rate="13.5" push="1" pushdistance="1" pushduration="0.3" pushEaseType="1" attackMaterial="1000" />
+					<damage rate="17.22" push="1" pushdistance="1" pushduration="0.3" pushEaseType="1" attackMaterial="1000" />
 				</attack>
 			</motion>
 		</level>
@@ -3867,7 +3901,7 @@
 				<attack point="p0" targetCount="8" attacktype="2" hitImmuneBreak="5" brokenOffence="2" brokenForce="3" releaseObjectWeaponOnHit="0">
 					<range rangeType="cylinder" distance="450" height="300" applyTarget="1" />
 					<arrow nonTarget="1" />
-					<damage rate="14.78" push="1" pushdistance="1" pushduration="0.3" pushEaseType="1" attackMaterial="1000" />
+					<damage rate="18.5" push="1" pushdistance="1" pushduration="0.3" pushEaseType="1" attackMaterial="1000" />
 				</attack>
 			</motion>
 		</level>
@@ -3876,7 +3910,7 @@
 				<attack point="p0" targetCount="8" attacktype="2" hitImmuneBreak="5" brokenOffence="2" brokenForce="3" releaseObjectWeaponOnHit="0">
 					<range rangeType="cylinder" distance="450" height="300" applyTarget="1" />
 					<arrow nonTarget="1" />
-					<damage rate="16.06" push="1" pushdistance="1" pushduration="0.3" pushEaseType="1" attackMaterial="1000" />
+					<damage rate="19.78" push="1" pushdistance="1" pushduration="0.3" pushEaseType="1" attackMaterial="1000" />
 				</attack>
 			</motion>
 		</level>
@@ -3885,7 +3919,7 @@
 				<attack point="p0" targetCount="8" attacktype="2" hitImmuneBreak="5" brokenOffence="2" brokenForce="3" releaseObjectWeaponOnHit="0">
 					<range rangeType="cylinder" distance="450" height="300" applyTarget="1" />
 					<arrow nonTarget="1" />
-					<damage rate="17.34" push="1" pushdistance="1" pushduration="0.3" pushEaseType="1" attackMaterial="1000" />
+					<damage rate="21.06" push="1" pushdistance="1" pushduration="0.3" pushEaseType="1" attackMaterial="1000" />
 				</attack>
 			</motion>
 		</level>
@@ -3894,7 +3928,7 @@
 				<attack point="p0" targetCount="8" attacktype="2" hitImmuneBreak="5" brokenOffence="2" brokenForce="3" releaseObjectWeaponOnHit="0">
 					<range rangeType="cylinder" distance="450" height="300" applyTarget="1" />
 					<arrow nonTarget="1" />
-					<damage rate="18.62" push="1" pushdistance="1" pushduration="0.3" pushEaseType="1" attackMaterial="1000" />
+					<damage rate="22.34" push="1" pushdistance="1" pushduration="0.3" pushEaseType="1" attackMaterial="1000" />
 				</attack>
 			</motion>
 		</level>
@@ -3903,7 +3937,7 @@
 				<attack point="p0" targetCount="8" attacktype="2" hitImmuneBreak="5" brokenOffence="2" brokenForce="3" releaseObjectWeaponOnHit="0">
 					<range rangeType="cylinder" distance="450" height="300" applyTarget="1" />
 					<arrow nonTarget="1" />
-					<damage rate="19.9" push="1" pushdistance="1" pushduration="0.3" pushEaseType="1" attackMaterial="1000" />
+					<damage rate="23.62" push="1" pushdistance="1" pushduration="0.3" pushEaseType="1" attackMaterial="1000" />
 				</attack>
 			</motion>
 		</level>
@@ -3912,7 +3946,7 @@
 				<attack point="p0" targetCount="8" attacktype="2" hitImmuneBreak="5" brokenOffence="2" brokenForce="3" releaseObjectWeaponOnHit="0">
 					<range rangeType="cylinder" distance="450" height="300" applyTarget="1" />
 					<arrow nonTarget="1" />
-					<damage rate="21.18" push="1" pushdistance="1" pushduration="0.3" pushEaseType="1" attackMaterial="1000" />
+					<damage rate="24.9" push="1" pushdistance="1" pushduration="0.3" pushEaseType="1" attackMaterial="1000" />
 				</attack>
 			</motion>
 		</level>
@@ -3921,7 +3955,7 @@
 				<attack point="p0" targetCount="8" attacktype="2" hitImmuneBreak="5" brokenOffence="2" brokenForce="3" releaseObjectWeaponOnHit="0">
 					<range rangeType="cylinder" distance="450" height="300" applyTarget="1" />
 					<arrow nonTarget="1" />
-					<damage rate="22.46" push="1" pushdistance="1" pushduration="0.3" pushEaseType="1" attackMaterial="1000" />
+					<damage rate="26.18" push="1" pushdistance="1" pushduration="0.3" pushEaseType="1" attackMaterial="1000" />
 				</attack>
 			</motion>
 		</level>
@@ -3930,7 +3964,7 @@
 				<attack point="p0" targetCount="8" attacktype="2" hitImmuneBreak="5" brokenOffence="2" brokenForce="3" releaseObjectWeaponOnHit="0">
 					<range rangeType="cylinder" distance="450" height="300" applyTarget="1" />
 					<arrow nonTarget="1" />
-					<damage rate="23.74" push="1" pushdistance="1" pushduration="0.3" pushEaseType="1" attackMaterial="1000" />
+					<damage rate="27.46" push="1" pushdistance="1" pushduration="0.3" pushEaseType="1" attackMaterial="1000" />
 				</attack>
 			</motion>
 		</level>
@@ -3939,7 +3973,7 @@
 				<attack point="p0" targetCount="8" attacktype="2" hitImmuneBreak="5" brokenOffence="2" brokenForce="3" releaseObjectWeaponOnHit="0">
 					<range rangeType="cylinder" distance="450" height="300" applyTarget="1" />
 					<arrow nonTarget="1" />
-					<damage rate="25.02" push="1" pushdistance="1" pushduration="0.3" pushEaseType="1" attackMaterial="1000" />
+					<damage rate="28.74" push="1" pushdistance="1" pushduration="0.3" pushEaseType="1" attackMaterial="1000" />
 				</attack>
 			</motion>
 		</level>
@@ -3948,7 +3982,7 @@
 				<attack point="p0" targetCount="8" attacktype="2" hitImmuneBreak="5" brokenOffence="2" brokenForce="3" releaseObjectWeaponOnHit="0">
 					<range rangeType="cylinder" distance="450" height="300" applyTarget="1" />
 					<arrow nonTarget="1" />
-					<damage rate="26.3" push="1" pushdistance="1" pushduration="0.3" pushEaseType="1" attackMaterial="1000" />
+					<damage rate="30.02" push="1" pushdistance="1" pushduration="0.3" pushEaseType="1" attackMaterial="1000" />
 				</attack>
 			</motion>
 		</level>
@@ -3957,7 +3991,7 @@
 				<attack point="p0" targetCount="8" attacktype="2" hitImmuneBreak="5" brokenOffence="2" brokenForce="3" releaseObjectWeaponOnHit="0">
 					<range rangeType="cylinder" distance="450" height="300" applyTarget="1" />
 					<arrow nonTarget="1" />
-					<damage rate="27.58" push="1" pushdistance="1" pushduration="0.3" pushEaseType="1" attackMaterial="1000" />
+					<damage rate="31.3" push="1" pushdistance="1" pushduration="0.3" pushEaseType="1" attackMaterial="1000" />
 				</attack>
 			</motion>
 		</level>
@@ -3973,7 +4007,7 @@
 				<attack point="p0" targetCount="8" attacktype="2" hitImmuneBreak="5" brokenOffence="2" brokenForce="3" releaseObjectWeaponOnHit="0">
 					<range rangeType="cylinder" distance="450" height="300" applyTarget="1" />
 					<arrow nonTarget="1" />
-					<damage rate="21" push="1" pushdistance="1" pushduration="0.3" pushEaseType="1" attackMaterial="1000" />
+					<damage rate="26.86" push="1" pushdistance="1" pushduration="0.3" pushEaseType="1" attackMaterial="1000" />
 				</attack>
 			</motion>
 		</level>
@@ -3982,7 +4016,7 @@
 				<attack point="p0" targetCount="8" attacktype="2" hitImmuneBreak="5" brokenOffence="2" brokenForce="3" releaseObjectWeaponOnHit="0">
 					<range rangeType="cylinder" distance="450" height="300" applyTarget="1" />
 					<arrow nonTarget="1" />
-					<damage rate="23.07" push="1" pushdistance="1" pushduration="0.3" pushEaseType="1" attackMaterial="1000" />
+					<damage rate="28.93" push="1" pushdistance="1" pushduration="0.3" pushEaseType="1" attackMaterial="1000" />
 				</attack>
 			</motion>
 		</level>
@@ -3991,7 +4025,7 @@
 				<attack point="p0" targetCount="8" attacktype="2" hitImmuneBreak="5" brokenOffence="2" brokenForce="3" releaseObjectWeaponOnHit="0">
 					<range rangeType="cylinder" distance="450" height="300" applyTarget="1" />
 					<arrow nonTarget="1" />
-					<damage rate="25.14" push="1" pushdistance="1" pushduration="0.3" pushEaseType="1" attackMaterial="1000" />
+					<damage rate="31" push="1" pushdistance="1" pushduration="0.3" pushEaseType="1" attackMaterial="1000" />
 				</attack>
 			</motion>
 		</level>
@@ -4000,7 +4034,7 @@
 				<attack point="p0" targetCount="8" attacktype="2" hitImmuneBreak="5" brokenOffence="2" brokenForce="3" releaseObjectWeaponOnHit="0">
 					<range rangeType="cylinder" distance="450" height="300" applyTarget="1" />
 					<arrow nonTarget="1" />
-					<damage rate="27.21" push="1" pushdistance="1" pushduration="0.3" pushEaseType="1" attackMaterial="1000" />
+					<damage rate="33.07" push="1" pushdistance="1" pushduration="0.3" pushEaseType="1" attackMaterial="1000" />
 				</attack>
 			</motion>
 		</level>
@@ -4009,7 +4043,7 @@
 				<attack point="p0" targetCount="8" attacktype="2" hitImmuneBreak="5" brokenOffence="2" brokenForce="3" releaseObjectWeaponOnHit="0">
 					<range rangeType="cylinder" distance="450" height="300" applyTarget="1" />
 					<arrow nonTarget="1" />
-					<damage rate="29.28" push="1" pushdistance="1" pushduration="0.3" pushEaseType="1" attackMaterial="1000" />
+					<damage rate="35.14" push="1" pushdistance="1" pushduration="0.3" pushEaseType="1" attackMaterial="1000" />
 				</attack>
 			</motion>
 		</level>
@@ -4018,7 +4052,7 @@
 				<attack point="p0" targetCount="8" attacktype="2" hitImmuneBreak="5" brokenOffence="2" brokenForce="3" releaseObjectWeaponOnHit="0">
 					<range rangeType="cylinder" distance="450" height="300" applyTarget="1" />
 					<arrow nonTarget="1" />
-					<damage rate="31.35" push="1" pushdistance="1" pushduration="0.3" pushEaseType="1" attackMaterial="1000" />
+					<damage rate="37.21" push="1" pushdistance="1" pushduration="0.3" pushEaseType="1" attackMaterial="1000" />
 				</attack>
 			</motion>
 		</level>
@@ -4027,7 +4061,7 @@
 				<attack point="p0" targetCount="8" attacktype="2" hitImmuneBreak="5" brokenOffence="2" brokenForce="3" releaseObjectWeaponOnHit="0">
 					<range rangeType="cylinder" distance="450" height="300" applyTarget="1" />
 					<arrow nonTarget="1" />
-					<damage rate="33.42" push="1" pushdistance="1" pushduration="0.3" pushEaseType="1" attackMaterial="1000" />
+					<damage rate="39.28" push="1" pushdistance="1" pushduration="0.3" pushEaseType="1" attackMaterial="1000" />
 				</attack>
 			</motion>
 		</level>
@@ -4036,7 +4070,7 @@
 				<attack point="p0" targetCount="8" attacktype="2" hitImmuneBreak="5" brokenOffence="2" brokenForce="3" releaseObjectWeaponOnHit="0">
 					<range rangeType="cylinder" distance="450" height="300" applyTarget="1" />
 					<arrow nonTarget="1" />
-					<damage rate="35.49" push="1" pushdistance="1" pushduration="0.3" pushEaseType="1" attackMaterial="1000" />
+					<damage rate="41.35" push="1" pushdistance="1" pushduration="0.3" pushEaseType="1" attackMaterial="1000" />
 				</attack>
 			</motion>
 		</level>
@@ -4045,7 +4079,7 @@
 				<attack point="p0" targetCount="8" attacktype="2" hitImmuneBreak="5" brokenOffence="2" brokenForce="3" releaseObjectWeaponOnHit="0">
 					<range rangeType="cylinder" distance="450" height="300" applyTarget="1" />
 					<arrow nonTarget="1" />
-					<damage rate="37.56" push="1" pushdistance="1" pushduration="0.3" pushEaseType="1" attackMaterial="1000" />
+					<damage rate="43.42" push="1" pushdistance="1" pushduration="0.3" pushEaseType="1" attackMaterial="1000" />
 				</attack>
 			</motion>
 		</level>
@@ -4054,7 +4088,7 @@
 				<attack point="p0" targetCount="8" attacktype="2" hitImmuneBreak="5" brokenOffence="2" brokenForce="3" releaseObjectWeaponOnHit="0">
 					<range rangeType="cylinder" distance="450" height="300" applyTarget="1" />
 					<arrow nonTarget="1" />
-					<damage rate="39.63" push="1" pushdistance="1" pushduration="0.3" pushEaseType="1" attackMaterial="1000" />
+					<damage rate="45.49" push="1" pushdistance="1" pushduration="0.3" pushEaseType="1" attackMaterial="1000" />
 				</attack>
 			</motion>
 		</level>
@@ -4063,7 +4097,7 @@
 				<attack point="p0" targetCount="8" attacktype="2" hitImmuneBreak="5" brokenOffence="2" brokenForce="3" releaseObjectWeaponOnHit="0">
 					<range rangeType="cylinder" distance="450" height="300" applyTarget="1" />
 					<arrow nonTarget="1" />
-					<damage rate="41.7" push="1" pushdistance="1" pushduration="0.3" pushEaseType="1" attackMaterial="1000" />
+					<damage rate="47.56" push="1" pushdistance="1" pushduration="0.3" pushEaseType="1" attackMaterial="1000" />
 				</attack>
 			</motion>
 		</level>
@@ -4072,7 +4106,7 @@
 				<attack point="p0" targetCount="8" attacktype="2" hitImmuneBreak="5" brokenOffence="2" brokenForce="3" releaseObjectWeaponOnHit="0">
 					<range rangeType="cylinder" distance="450" height="300" applyTarget="1" />
 					<arrow nonTarget="1" />
-					<damage rate="43.77" push="1" pushdistance="1" pushduration="0.3" pushEaseType="1" attackMaterial="1000" />
+					<damage rate="49.63" push="1" pushdistance="1" pushduration="0.3" pushEaseType="1" attackMaterial="1000" />
 				</attack>
 			</motion>
 		</level>
@@ -4204,12 +4238,11 @@
 			</motion>
 		</level>
 	</skill>
-	<skill id="10400186" comment="프리스트">
+	<skill id="10400186" originID="10400181" comment="프리스트">
 		<basic feature="JobChange_02" mainType="2">
-			<ui icon="./Data/Resource/Image/skill/icon/10400181.png" exceptUI="1" attackType="2" disableChangeSkillIconEffect="1" />
+			<ui icon="./Data/Resource/Image/skill/icon/10400181.png" attackType="2" disableChangeSkillIconEffect="1" />
 			<kinds rangeType="2" element="4" unrideOnUse="1" />
 			<stateAttr superArmor="3" autoTargeting="0" useDefaultSkill="1" cooldownGroupID="10400181" clearCooldownFromPVPZone="1" />
-			<changeSkill originSkillID="10400181" />
 			<push back="50" />
 			<condition useCoolDownShowUI="1">
 				<weapon lh="0" rh="33" />
@@ -4220,6 +4253,9 @@
 				<beginCondition allowBattleRidingState="1" />
 			</actionAdditional>
 			<actionAdditional additionalID="10400184" level="1" skillTarget="1">
+				<beginCondition allowBattleRidingState="1" />
+			</actionAdditional>
+			<actionAdditional additionalID="10400185" level="1" skillTarget="1">
 				<beginCondition allowBattleRidingState="1" />
 			</actionAdditional>
 			<motion sequenceName="Priest_Heavens_Explosion_A" strTagEffects="e0=CH/Skill/Priest/Eff_Priest_HeavensExplosion_Cast_01.xml">
@@ -4242,6 +4278,9 @@
 			<actionAdditional additionalID="10400184" level="2" skillTarget="1">
 				<beginCondition allowBattleRidingState="1" />
 			</actionAdditional>
+			<actionAdditional additionalID="10400185" level="2" skillTarget="1">
+				<beginCondition allowBattleRidingState="1" />
+			</actionAdditional>
 			<motion sequenceName="Priest_Heavens_Explosion_A" strTagEffects="e0=CH/Skill/Priest/Eff_Priest_HeavensExplosion_Cast_01.xml">
 				<attack point="p0" targetCount="1" cubeMagicPathID="104001821" attacktype="2" releaseObjectWeaponOnHit="0">
 					<range rangeType="cylinder" distance="150" height="150" includeCaster="1" applyTarget="2" />
@@ -4260,6 +4299,9 @@
 				<beginCondition allowBattleRidingState="1" />
 			</actionAdditional>
 			<actionAdditional additionalID="10400184" level="3" skillTarget="1">
+				<beginCondition allowBattleRidingState="1" />
+			</actionAdditional>
+			<actionAdditional additionalID="10400185" level="3" skillTarget="1">
 				<beginCondition allowBattleRidingState="1" />
 			</actionAdditional>
 			<motion sequenceName="Priest_Heavens_Explosion_A" strTagEffects="e0=CH/Skill/Priest/Eff_Priest_HeavensExplosion_Cast_01.xml">
@@ -4282,6 +4324,9 @@
 			<actionAdditional additionalID="10400184" level="4" skillTarget="1">
 				<beginCondition allowBattleRidingState="1" />
 			</actionAdditional>
+			<actionAdditional additionalID="10400185" level="4" skillTarget="1">
+				<beginCondition allowBattleRidingState="1" />
+			</actionAdditional>
 			<motion sequenceName="Priest_Heavens_Explosion_A" strTagEffects="e0=CH/Skill/Priest/Eff_Priest_HeavensExplosion_Cast_01.xml">
 				<attack point="p0" targetCount="1" cubeMagicPathID="104001821" attacktype="2" releaseObjectWeaponOnHit="0">
 					<range rangeType="cylinder" distance="150" height="150" includeCaster="1" applyTarget="2" />
@@ -4300,6 +4345,9 @@
 				<beginCondition allowBattleRidingState="1" />
 			</actionAdditional>
 			<actionAdditional additionalID="10400184" level="5" skillTarget="1">
+				<beginCondition allowBattleRidingState="1" />
+			</actionAdditional>
+			<actionAdditional additionalID="10400185" level="5" skillTarget="1">
 				<beginCondition allowBattleRidingState="1" />
 			</actionAdditional>
 			<motion sequenceName="Priest_Heavens_Explosion_A" strTagEffects="e0=CH/Skill/Priest/Eff_Priest_HeavensExplosion_Cast_01.xml">
@@ -4322,6 +4370,9 @@
 			<actionAdditional additionalID="10400184" level="6" skillTarget="1">
 				<beginCondition allowBattleRidingState="1" />
 			</actionAdditional>
+			<actionAdditional additionalID="10400185" level="6" skillTarget="1">
+				<beginCondition allowBattleRidingState="1" />
+			</actionAdditional>
 			<motion sequenceName="Priest_Heavens_Explosion_A" strTagEffects="e0=CH/Skill/Priest/Eff_Priest_HeavensExplosion_Cast_01.xml">
 				<attack point="p0" targetCount="1" cubeMagicPathID="104001821" attacktype="2" releaseObjectWeaponOnHit="0">
 					<range rangeType="cylinder" distance="150" height="150" includeCaster="1" applyTarget="2" />
@@ -4340,6 +4391,9 @@
 				<beginCondition allowBattleRidingState="1" />
 			</actionAdditional>
 			<actionAdditional additionalID="10400184" level="7" skillTarget="1">
+				<beginCondition allowBattleRidingState="1" />
+			</actionAdditional>
+			<actionAdditional additionalID="10400185" level="7" skillTarget="1">
 				<beginCondition allowBattleRidingState="1" />
 			</actionAdditional>
 			<motion sequenceName="Priest_Heavens_Explosion_A" strTagEffects="e0=CH/Skill/Priest/Eff_Priest_HeavensExplosion_Cast_01.xml">
@@ -4362,6 +4416,9 @@
 			<actionAdditional additionalID="10400184" level="8" skillTarget="1">
 				<beginCondition allowBattleRidingState="1" />
 			</actionAdditional>
+			<actionAdditional additionalID="10400185" level="8" skillTarget="1">
+				<beginCondition allowBattleRidingState="1" />
+			</actionAdditional>
 			<motion sequenceName="Priest_Heavens_Explosion_A" strTagEffects="e0=CH/Skill/Priest/Eff_Priest_HeavensExplosion_Cast_01.xml">
 				<attack point="p0" targetCount="1" cubeMagicPathID="104001821" attacktype="2" releaseObjectWeaponOnHit="0">
 					<range rangeType="cylinder" distance="150" height="150" includeCaster="1" applyTarget="2" />
@@ -4380,6 +4437,9 @@
 				<beginCondition allowBattleRidingState="1" />
 			</actionAdditional>
 			<actionAdditional additionalID="10400184" level="9" skillTarget="1">
+				<beginCondition allowBattleRidingState="1" />
+			</actionAdditional>
+			<actionAdditional additionalID="10400185" level="9" skillTarget="1">
 				<beginCondition allowBattleRidingState="1" />
 			</actionAdditional>
 			<motion sequenceName="Priest_Heavens_Explosion_A" strTagEffects="e0=CH/Skill/Priest/Eff_Priest_HeavensExplosion_Cast_01.xml">
@@ -4402,6 +4462,9 @@
 			<actionAdditional additionalID="10400184" level="10" skillTarget="1">
 				<beginCondition allowBattleRidingState="1" />
 			</actionAdditional>
+			<actionAdditional additionalID="10400185" level="10" skillTarget="1">
+				<beginCondition allowBattleRidingState="1" />
+			</actionAdditional>
 			<motion sequenceName="Priest_Heavens_Explosion_A" strTagEffects="e0=CH/Skill/Priest/Eff_Priest_HeavensExplosion_Cast_01.xml">
 				<attack point="p0" targetCount="1" cubeMagicPathID="104001821" attacktype="2" releaseObjectWeaponOnHit="0">
 					<range rangeType="cylinder" distance="150" height="150" includeCaster="1" applyTarget="2" />
@@ -4422,6 +4485,9 @@
 			<actionAdditional additionalID="10400184" level="11" skillTarget="1">
 				<beginCondition allowBattleRidingState="1" />
 			</actionAdditional>
+			<actionAdditional additionalID="10400185" level="11" skillTarget="1">
+				<beginCondition allowBattleRidingState="1" />
+			</actionAdditional>
 			<motion sequenceName="Priest_Heavens_Explosion_A" strTagEffects="e0=CH/Skill/Priest/Eff_Priest_HeavensExplosion_Cast_01.xml">
 				<attack point="p0" targetCount="1" cubeMagicPathID="104001821" attacktype="2" releaseObjectWeaponOnHit="0">
 					<range rangeType="cylinder" distance="150" height="150" includeCaster="1" applyTarget="2" />
@@ -4440,6 +4506,9 @@
 				<beginCondition allowBattleRidingState="1" />
 			</actionAdditional>
 			<actionAdditional additionalID="10400184" level="12" skillTarget="1">
+				<beginCondition allowBattleRidingState="1" />
+			</actionAdditional>
+			<actionAdditional additionalID="10400185" level="12" skillTarget="1">
 				<beginCondition allowBattleRidingState="1" />
 			</actionAdditional>
 			<motion sequenceName="Priest_Heavens_Explosion_A" strTagEffects="e0=CH/Skill/Priest/Eff_Priest_HeavensExplosion_Cast_01.xml">
@@ -4467,7 +4536,7 @@
 				<attack point="p0" targetCount="8" attacktype="2" hitImmuneBreak="1" releaseObjectWeaponOnHit="0">
 					<range rangeType="cylinder" distance="500" height="300" applyTarget="1" />
 					<arrow nonTarget="1" />
-					<damage rate="2.5" attackMaterial="105" />
+					<damage rate="6.91" attackMaterial="105" />
 				</attack>
 			</motion>
 		</level>
@@ -4476,7 +4545,7 @@
 				<attack point="p0" targetCount="8" attacktype="2" hitImmuneBreak="1" releaseObjectWeaponOnHit="0">
 					<range rangeType="cylinder" distance="500" height="300" applyTarget="1" />
 					<arrow nonTarget="1" />
-					<damage rate="3.1" attackMaterial="105" />
+					<damage rate="7.51" attackMaterial="105" />
 				</attack>
 			</motion>
 		</level>
@@ -4485,7 +4554,7 @@
 				<attack point="p0" targetCount="8" attacktype="2" hitImmuneBreak="1" releaseObjectWeaponOnHit="0">
 					<range rangeType="cylinder" distance="500" height="300" applyTarget="1" />
 					<arrow nonTarget="1" />
-					<damage rate="3.7" attackMaterial="105" />
+					<damage rate="8.11" attackMaterial="105" />
 				</attack>
 			</motion>
 		</level>
@@ -4494,7 +4563,7 @@
 				<attack point="p0" targetCount="8" attacktype="2" hitImmuneBreak="1" releaseObjectWeaponOnHit="0">
 					<range rangeType="cylinder" distance="500" height="300" applyTarget="1" />
 					<arrow nonTarget="1" />
-					<damage rate="4.3" attackMaterial="105" />
+					<damage rate="8.71" attackMaterial="105" />
 				</attack>
 			</motion>
 		</level>
@@ -4503,7 +4572,7 @@
 				<attack point="p0" targetCount="8" attacktype="2" hitImmuneBreak="1" releaseObjectWeaponOnHit="0">
 					<range rangeType="cylinder" distance="500" height="300" applyTarget="1" />
 					<arrow nonTarget="1" />
-					<damage rate="4.9" attackMaterial="105" />
+					<damage rate="9.31" attackMaterial="105" />
 				</attack>
 			</motion>
 		</level>
@@ -4512,7 +4581,7 @@
 				<attack point="p0" targetCount="8" attacktype="2" hitImmuneBreak="1" releaseObjectWeaponOnHit="0">
 					<range rangeType="cylinder" distance="500" height="300" applyTarget="1" />
 					<arrow nonTarget="1" />
-					<damage rate="5.5" attackMaterial="105" />
+					<damage rate="9.91" attackMaterial="105" />
 				</attack>
 			</motion>
 		</level>
@@ -4521,7 +4590,7 @@
 				<attack point="p0" targetCount="8" attacktype="2" hitImmuneBreak="1" releaseObjectWeaponOnHit="0">
 					<range rangeType="cylinder" distance="500" height="300" applyTarget="1" />
 					<arrow nonTarget="1" />
-					<damage rate="6.1" attackMaterial="105" />
+					<damage rate="10.51" attackMaterial="105" />
 				</attack>
 			</motion>
 		</level>
@@ -4530,7 +4599,7 @@
 				<attack point="p0" targetCount="8" attacktype="2" hitImmuneBreak="1" releaseObjectWeaponOnHit="0">
 					<range rangeType="cylinder" distance="500" height="300" applyTarget="1" />
 					<arrow nonTarget="1" />
-					<damage rate="6.7" attackMaterial="105" />
+					<damage rate="11.11" attackMaterial="105" />
 				</attack>
 			</motion>
 		</level>
@@ -4539,7 +4608,7 @@
 				<attack point="p0" targetCount="8" attacktype="2" hitImmuneBreak="1" releaseObjectWeaponOnHit="0">
 					<range rangeType="cylinder" distance="500" height="300" applyTarget="1" />
 					<arrow nonTarget="1" />
-					<damage rate="7.3" attackMaterial="105" />
+					<damage rate="11.71" attackMaterial="105" />
 				</attack>
 			</motion>
 		</level>
@@ -4548,7 +4617,7 @@
 				<attack point="p0" targetCount="8" attacktype="2" hitImmuneBreak="1" releaseObjectWeaponOnHit="0">
 					<range rangeType="cylinder" distance="500" height="300" applyTarget="1" />
 					<arrow nonTarget="1" />
-					<damage rate="7.9" attackMaterial="105" />
+					<damage rate="12.31" attackMaterial="105" />
 				</attack>
 			</motion>
 		</level>
@@ -4557,7 +4626,7 @@
 				<attack point="p0" targetCount="8" attacktype="2" hitImmuneBreak="1" releaseObjectWeaponOnHit="0">
 					<range rangeType="cylinder" distance="500" height="300" applyTarget="1" />
 					<arrow nonTarget="1" />
-					<damage rate="8.5" attackMaterial="105" />
+					<damage rate="12.91" attackMaterial="105" />
 				</attack>
 			</motion>
 		</level>
@@ -4566,7 +4635,7 @@
 				<attack point="p0" targetCount="8" attacktype="2" hitImmuneBreak="1" releaseObjectWeaponOnHit="0">
 					<range rangeType="cylinder" distance="500" height="300" applyTarget="1" />
 					<arrow nonTarget="1" />
-					<damage rate="9.1" attackMaterial="105" />
+					<damage rate="13.51" attackMaterial="105" />
 				</attack>
 			</motion>
 		</level>
@@ -4691,117 +4760,117 @@
 			<ui icon="./Data/Resource/Image/skill/icon/10400191.png" attackType="2" />
 			<kinds rangeType="2" jump="10400191" element="4" unrideOnUse="1" />
 			<stateAttr autoTargetingType="1" keyIsDown="1" useDefaultSkill="1" clearCooldownFromPVPZone="1" ignoreReduceCooldown="1" />
-			<changeSkill changeSkillCheckEffectID="10400183,10400184" changeSkillCheckEffectLevel="0,0" changeSkillCheckEffectOverlapCount="1,1" changeSkillID="10400193,10400193" />
+			<changeSkill changeSkillCheckEffectID="10400185" changeSkillCheckEffectLevel="0" changeSkillCheckEffectOverlapCount="1" changeSkillID="10400193" />
 			<autoTargeting autoTargetingMaxDegree="90" />
 			<push back="150" />
 			<condition>
 				<weapon lh="0" rh="33" />
 			</condition>
 		</basic>
-		<level value="1" sp="20" cooldown="600" stringParam="176,850">
+		<level value="1" sp="20" cooldown="600" stringParam="201,971">
 			<motion sequenceName="Priest_LightSpear_A" strTagEffects="e0=CH/Skill/Priest/Eff_Priest_LightSpear_Cast_01.xml">
 				<attack point="p0" targetCount="3" magicPathID="10400191" attacktype="2" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
 					<range rangeType="frustum" distance="800" height="150" width="300" endWidth="600" applyTarget="1" />
-					<damage rate="1.76" effectRemain="CH/Skill/Priest/Eff_Priest_LightSpear_Remain_01.xml" attackMaterial="105" />
+					<damage rate="2.01" effectRemain="CH/Skill/Priest/Eff_Priest_LightSpear_Remain_01.xml" attackMaterial="105" />
 					<actionAdditional additionalID="10400191" level="1" skillTarget="2" skillOwner="1" dependOnDamageCount="1" />
 				</attack>
 			</motion>
 		</level>
-		<level value="2" sp="20" cooldown="600" stringParam="195,940">
+		<level value="2" sp="20" cooldown="600" stringParam="220,1061">
 			<motion sequenceName="Priest_LightSpear_A" strTagEffects="e0=CH/Skill/Priest/Eff_Priest_LightSpear_Cast_01.xml">
 				<attack point="p0" targetCount="3" magicPathID="10400191" attacktype="2" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
 					<range rangeType="frustum" distance="800" height="150" width="300" endWidth="600" applyTarget="1" />
-					<damage rate="1.95" effectRemain="CH/Skill/Priest/Eff_Priest_LightSpear_Remain_01.xml" attackMaterial="105" />
+					<damage rate="2.2" effectRemain="CH/Skill/Priest/Eff_Priest_LightSpear_Remain_01.xml" attackMaterial="105" />
 					<actionAdditional additionalID="10400191" level="2" skillTarget="2" skillOwner="1" dependOnDamageCount="1" />
 				</attack>
 			</motion>
 		</level>
-		<level value="3" sp="20" cooldown="600" stringParam="214,1030">
+		<level value="3" sp="20" cooldown="600" stringParam="239,1151">
 			<motion sequenceName="Priest_LightSpear_A" strTagEffects="e0=CH/Skill/Priest/Eff_Priest_LightSpear_Cast_01.xml">
 				<attack point="p0" targetCount="3" magicPathID="10400191" attacktype="2" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
 					<range rangeType="frustum" distance="800" height="150" width="300" endWidth="600" applyTarget="1" />
-					<damage rate="2.14" effectRemain="CH/Skill/Priest/Eff_Priest_LightSpear_Remain_01.xml" attackMaterial="105" />
+					<damage rate="2.39" effectRemain="CH/Skill/Priest/Eff_Priest_LightSpear_Remain_01.xml" attackMaterial="105" />
 					<actionAdditional additionalID="10400191" level="3" skillTarget="2" skillOwner="1" dependOnDamageCount="1" />
 				</attack>
 			</motion>
 		</level>
-		<level value="4" sp="20" cooldown="600" stringParam="233,1120">
+		<level value="4" sp="20" cooldown="600" stringParam="258,1241">
 			<motion sequenceName="Priest_LightSpear_A" strTagEffects="e0=CH/Skill/Priest/Eff_Priest_LightSpear_Cast_01.xml">
 				<attack point="p0" targetCount="3" magicPathID="10400191" attacktype="2" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
 					<range rangeType="frustum" distance="800" height="150" width="300" endWidth="600" applyTarget="1" />
-					<damage rate="2.33" effectRemain="CH/Skill/Priest/Eff_Priest_LightSpear_Remain_01.xml" attackMaterial="105" />
+					<damage rate="2.58" effectRemain="CH/Skill/Priest/Eff_Priest_LightSpear_Remain_01.xml" attackMaterial="105" />
 					<actionAdditional additionalID="10400191" level="4" skillTarget="2" skillOwner="1" dependOnDamageCount="1" />
 				</attack>
 			</motion>
 		</level>
-		<level value="5" sp="20" cooldown="600" stringParam="252,1210">
+		<level value="5" sp="20" cooldown="600" stringParam="277,1331">
 			<motion sequenceName="Priest_LightSpear_A" strTagEffects="e0=CH/Skill/Priest/Eff_Priest_LightSpear_Cast_01.xml">
 				<attack point="p0" targetCount="3" magicPathID="10400191" attacktype="2" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
 					<range rangeType="frustum" distance="800" height="150" width="300" endWidth="600" applyTarget="1" />
-					<damage rate="2.52" effectRemain="CH/Skill/Priest/Eff_Priest_LightSpear_Remain_01.xml" attackMaterial="105" />
+					<damage rate="2.77" effectRemain="CH/Skill/Priest/Eff_Priest_LightSpear_Remain_01.xml" attackMaterial="105" />
 					<actionAdditional additionalID="10400191" level="5" skillTarget="2" skillOwner="1" dependOnDamageCount="1" />
 				</attack>
 			</motion>
 		</level>
-		<level value="6" sp="20" cooldown="600" stringParam="271,1300">
+		<level value="6" sp="20" cooldown="600" stringParam="296,1421">
 			<motion sequenceName="Priest_LightSpear_A" strTagEffects="e0=CH/Skill/Priest/Eff_Priest_LightSpear_Cast_01.xml">
 				<attack point="p0" targetCount="3" magicPathID="10400191" attacktype="2" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
 					<range rangeType="frustum" distance="800" height="150" width="300" endWidth="600" applyTarget="1" />
-					<damage rate="2.71" effectRemain="CH/Skill/Priest/Eff_Priest_LightSpear_Remain_01.xml" attackMaterial="105" />
+					<damage rate="2.96" effectRemain="CH/Skill/Priest/Eff_Priest_LightSpear_Remain_01.xml" attackMaterial="105" />
 					<actionAdditional additionalID="10400191" level="6" skillTarget="2" skillOwner="1" dependOnDamageCount="1" />
 				</attack>
 			</motion>
 		</level>
-		<level value="7" sp="20" cooldown="600" stringParam="290,1390">
+		<level value="7" sp="20" cooldown="600" stringParam="315,1511">
 			<motion sequenceName="Priest_LightSpear_A" strTagEffects="e0=CH/Skill/Priest/Eff_Priest_LightSpear_Cast_01.xml">
 				<attack point="p0" targetCount="3" magicPathID="10400191" attacktype="2" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
 					<range rangeType="frustum" distance="800" height="150" width="300" endWidth="600" applyTarget="1" />
-					<damage rate="2.9" effectRemain="CH/Skill/Priest/Eff_Priest_LightSpear_Remain_01.xml" attackMaterial="105" />
+					<damage rate="3.15" effectRemain="CH/Skill/Priest/Eff_Priest_LightSpear_Remain_01.xml" attackMaterial="105" />
 					<actionAdditional additionalID="10400191" level="7" skillTarget="2" skillOwner="1" dependOnDamageCount="1" />
 				</attack>
 			</motion>
 		</level>
-		<level value="8" sp="20" cooldown="600" stringParam="309,1480">
+		<level value="8" sp="20" cooldown="600" stringParam="334,1601">
 			<motion sequenceName="Priest_LightSpear_A" strTagEffects="e0=CH/Skill/Priest/Eff_Priest_LightSpear_Cast_01.xml">
 				<attack point="p0" targetCount="3" magicPathID="10400191" attacktype="2" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
 					<range rangeType="frustum" distance="800" height="150" width="300" endWidth="600" applyTarget="1" />
-					<damage rate="3.09" effectRemain="CH/Skill/Priest/Eff_Priest_LightSpear_Remain_01.xml" attackMaterial="105" />
+					<damage rate="3.34" effectRemain="CH/Skill/Priest/Eff_Priest_LightSpear_Remain_01.xml" attackMaterial="105" />
 					<actionAdditional additionalID="10400191" level="8" skillTarget="2" skillOwner="1" dependOnDamageCount="1" />
 				</attack>
 			</motion>
 		</level>
-		<level value="9" sp="20" cooldown="600" stringParam="328,1570">
+		<level value="9" sp="20" cooldown="600" stringParam="353,1691">
 			<motion sequenceName="Priest_LightSpear_A" strTagEffects="e0=CH/Skill/Priest/Eff_Priest_LightSpear_Cast_01.xml">
 				<attack point="p0" targetCount="3" magicPathID="10400191" attacktype="2" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
 					<range rangeType="frustum" distance="800" height="150" width="300" endWidth="600" applyTarget="1" />
-					<damage rate="3.28" effectRemain="CH/Skill/Priest/Eff_Priest_LightSpear_Remain_01.xml" attackMaterial="105" />
+					<damage rate="3.53" effectRemain="CH/Skill/Priest/Eff_Priest_LightSpear_Remain_01.xml" attackMaterial="105" />
 					<actionAdditional additionalID="10400191" level="9" skillTarget="2" skillOwner="1" dependOnDamageCount="1" />
 				</attack>
 			</motion>
 		</level>
-		<level value="10" sp="20" cooldown="600" stringParam="347,1660">
+		<level value="10" sp="20" cooldown="600" stringParam="372,1781">
 			<motion sequenceName="Priest_LightSpear_A" strTagEffects="e0=CH/Skill/Priest/Eff_Priest_LightSpear_Cast_01.xml">
 				<attack point="p0" targetCount="3" magicPathID="10400191" attacktype="2" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
 					<range rangeType="frustum" distance="800" height="150" width="300" endWidth="600" applyTarget="1" />
-					<damage rate="3.47" effectRemain="CH/Skill/Priest/Eff_Priest_LightSpear_Remain_01.xml" attackMaterial="105" />
+					<damage rate="3.72" effectRemain="CH/Skill/Priest/Eff_Priest_LightSpear_Remain_01.xml" attackMaterial="105" />
 					<actionAdditional additionalID="10400191" level="10" skillTarget="2" skillOwner="1" dependOnDamageCount="1" />
 				</attack>
 			</motion>
 		</level>
-		<level value="11" sp="20" cooldown="600" stringParam="366,1750">
+		<level value="11" sp="20" cooldown="600" stringParam="391,1871">
 			<motion sequenceName="Priest_LightSpear_A" strTagEffects="e0=CH/Skill/Priest/Eff_Priest_LightSpear_Cast_01.xml">
 				<attack point="p0" targetCount="3" magicPathID="10400191" attacktype="2" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
 					<range rangeType="frustum" distance="800" height="150" width="300" endWidth="600" applyTarget="1" />
-					<damage rate="3.66" effectRemain="CH/Skill/Priest/Eff_Priest_LightSpear_Remain_01.xml" attackMaterial="105" />
+					<damage rate="3.91" effectRemain="CH/Skill/Priest/Eff_Priest_LightSpear_Remain_01.xml" attackMaterial="105" />
 					<actionAdditional additionalID="10400191" level="11" skillTarget="2" skillOwner="1" dependOnDamageCount="1" />
 				</attack>
 			</motion>
 		</level>
-		<level value="12" sp="20" cooldown="600" stringParam="385,1840">
+		<level value="12" sp="20" cooldown="600" stringParam="410,1961">
 			<motion sequenceName="Priest_LightSpear_A" strTagEffects="e0=CH/Skill/Priest/Eff_Priest_LightSpear_Cast_01.xml">
 				<attack point="p0" targetCount="3" magicPathID="10400191" attacktype="2" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
 					<range rangeType="frustum" distance="800" height="150" width="300" endWidth="600" applyTarget="1" />
-					<damage rate="3.85" effectRemain="CH/Skill/Priest/Eff_Priest_LightSpear_Remain_01.xml" attackMaterial="105" />
+					<damage rate="4.1" effectRemain="CH/Skill/Priest/Eff_Priest_LightSpear_Remain_01.xml" attackMaterial="105" />
 					<actionAdditional additionalID="10400191" level="12" skillTarget="2" skillOwner="1" dependOnDamageCount="1" />
 				</attack>
 			</motion>
@@ -4809,7 +4878,7 @@
 	</skill>
 	<skill id="10400192" comment="프리스트">
 		<basic feature="JobChange_01" mainType="30">
-			<ui exceptUI="1" attackType="2" />
+			<ui attackType="2" />
 			<kinds rangeType="1" element="4" />
 			<stateAttr ignoreReduceCooldown="1" />
 		</basic>
@@ -4818,7 +4887,7 @@
 				<attack point="p0" targetCount="8" attacktype="2" hitImmuneBreak="5" brokenOffence="1" unrideOnHit="1">
 					<range rangeType="cylinder" distance="250" height="150" applyTarget="1" />
 					<arrow nonTarget="1" />
-					<damage rate="8.5" hitSpeedRate="0.8" hitPauseTime="0.1" effectHit="CH/Common/Eff_Common_Light_Hit.xml" push="1" pushdistance="50" pushduration="0.1" pushEaseType="1" attackMaterial="105" />
+					<damage rate="9.71" hitSpeedRate="0.8" hitPauseTime="0.1" effectHit="CH/Common/Eff_Common_Light_Hit.xml" push="1" pushdistance="50" pushduration="0.1" pushEaseType="1" attackMaterial="105" />
 				</attack>
 			</motion>
 		</level>
@@ -4827,7 +4896,7 @@
 				<attack point="p0" targetCount="8" attacktype="2" hitImmuneBreak="5" brokenOffence="1" unrideOnHit="1">
 					<range rangeType="cylinder" distance="250" height="150" applyTarget="1" />
 					<arrow nonTarget="1" />
-					<damage rate="9.4" hitSpeedRate="0.8" hitPauseTime="0.1" effectHit="CH/Common/Eff_Common_Light_Hit.xml" push="1" pushdistance="50" pushduration="0.1" pushEaseType="1" attackMaterial="105" />
+					<damage rate="10.61" hitSpeedRate="0.8" hitPauseTime="0.1" effectHit="CH/Common/Eff_Common_Light_Hit.xml" push="1" pushdistance="50" pushduration="0.1" pushEaseType="1" attackMaterial="105" />
 				</attack>
 			</motion>
 		</level>
@@ -4836,7 +4905,7 @@
 				<attack point="p0" targetCount="8" attacktype="2" hitImmuneBreak="5" brokenOffence="1" unrideOnHit="1">
 					<range rangeType="cylinder" distance="250" height="150" applyTarget="1" />
 					<arrow nonTarget="1" />
-					<damage rate="10.3" hitSpeedRate="0.8" hitPauseTime="0.1" effectHit="CH/Common/Eff_Common_Light_Hit.xml" push="1" pushdistance="50" pushduration="0.1" pushEaseType="1" attackMaterial="105" />
+					<damage rate="11.51" hitSpeedRate="0.8" hitPauseTime="0.1" effectHit="CH/Common/Eff_Common_Light_Hit.xml" push="1" pushdistance="50" pushduration="0.1" pushEaseType="1" attackMaterial="105" />
 				</attack>
 			</motion>
 		</level>
@@ -4845,7 +4914,7 @@
 				<attack point="p0" targetCount="8" attacktype="2" hitImmuneBreak="5" brokenOffence="1" unrideOnHit="1">
 					<range rangeType="cylinder" distance="250" height="150" applyTarget="1" />
 					<arrow nonTarget="1" />
-					<damage rate="11.2" hitSpeedRate="0.8" hitPauseTime="0.1" effectHit="CH/Common/Eff_Common_Light_Hit.xml" push="1" pushdistance="50" pushduration="0.1" pushEaseType="1" attackMaterial="105" />
+					<damage rate="12.41" hitSpeedRate="0.8" hitPauseTime="0.1" effectHit="CH/Common/Eff_Common_Light_Hit.xml" push="1" pushdistance="50" pushduration="0.1" pushEaseType="1" attackMaterial="105" />
 				</attack>
 			</motion>
 		</level>
@@ -4854,7 +4923,7 @@
 				<attack point="p0" targetCount="8" attacktype="2" hitImmuneBreak="5" brokenOffence="1" unrideOnHit="1">
 					<range rangeType="cylinder" distance="250" height="150" applyTarget="1" />
 					<arrow nonTarget="1" />
-					<damage rate="12.1" hitSpeedRate="0.8" hitPauseTime="0.1" effectHit="CH/Common/Eff_Common_Light_Hit.xml" push="1" pushdistance="50" pushduration="0.1" pushEaseType="1" attackMaterial="105" />
+					<damage rate="13.31" hitSpeedRate="0.8" hitPauseTime="0.1" effectHit="CH/Common/Eff_Common_Light_Hit.xml" push="1" pushdistance="50" pushduration="0.1" pushEaseType="1" attackMaterial="105" />
 				</attack>
 			</motion>
 		</level>
@@ -4863,7 +4932,7 @@
 				<attack point="p0" targetCount="8" attacktype="2" hitImmuneBreak="5" brokenOffence="1" unrideOnHit="1">
 					<range rangeType="cylinder" distance="250" height="150" applyTarget="1" />
 					<arrow nonTarget="1" />
-					<damage rate="13" hitSpeedRate="0.8" hitPauseTime="0.1" effectHit="CH/Common/Eff_Common_Light_Hit.xml" push="1" pushdistance="50" pushduration="0.1" pushEaseType="1" attackMaterial="105" />
+					<damage rate="14.21" hitSpeedRate="0.8" hitPauseTime="0.1" effectHit="CH/Common/Eff_Common_Light_Hit.xml" push="1" pushdistance="50" pushduration="0.1" pushEaseType="1" attackMaterial="105" />
 				</attack>
 			</motion>
 		</level>
@@ -4872,7 +4941,7 @@
 				<attack point="p0" targetCount="8" attacktype="2" hitImmuneBreak="5" brokenOffence="1" unrideOnHit="1">
 					<range rangeType="cylinder" distance="250" height="150" applyTarget="1" />
 					<arrow nonTarget="1" />
-					<damage rate="13.9" hitSpeedRate="0.8" hitPauseTime="0.1" effectHit="CH/Common/Eff_Common_Light_Hit.xml" push="1" pushdistance="50" pushduration="0.1" pushEaseType="1" attackMaterial="105" />
+					<damage rate="15.11" hitSpeedRate="0.8" hitPauseTime="0.1" effectHit="CH/Common/Eff_Common_Light_Hit.xml" push="1" pushdistance="50" pushduration="0.1" pushEaseType="1" attackMaterial="105" />
 				</attack>
 			</motion>
 		</level>
@@ -4881,7 +4950,7 @@
 				<attack point="p0" targetCount="8" attacktype="2" hitImmuneBreak="5" brokenOffence="1" unrideOnHit="1">
 					<range rangeType="cylinder" distance="250" height="150" applyTarget="1" />
 					<arrow nonTarget="1" />
-					<damage rate="14.8" hitSpeedRate="0.8" hitPauseTime="0.1" effectHit="CH/Common/Eff_Common_Light_Hit.xml" push="1" pushdistance="50" pushduration="0.1" pushEaseType="1" attackMaterial="105" />
+					<damage rate="16.01" hitSpeedRate="0.8" hitPauseTime="0.1" effectHit="CH/Common/Eff_Common_Light_Hit.xml" push="1" pushdistance="50" pushduration="0.1" pushEaseType="1" attackMaterial="105" />
 				</attack>
 			</motion>
 		</level>
@@ -4890,7 +4959,7 @@
 				<attack point="p0" targetCount="8" attacktype="2" hitImmuneBreak="5" brokenOffence="1" unrideOnHit="1">
 					<range rangeType="cylinder" distance="250" height="150" applyTarget="1" />
 					<arrow nonTarget="1" />
-					<damage rate="15.7" hitSpeedRate="0.8" hitPauseTime="0.1" effectHit="CH/Common/Eff_Common_Light_Hit.xml" push="1" pushdistance="50" pushduration="0.1" pushEaseType="1" attackMaterial="105" />
+					<damage rate="16.91" hitSpeedRate="0.8" hitPauseTime="0.1" effectHit="CH/Common/Eff_Common_Light_Hit.xml" push="1" pushdistance="50" pushduration="0.1" pushEaseType="1" attackMaterial="105" />
 				</attack>
 			</motion>
 		</level>
@@ -4899,7 +4968,7 @@
 				<attack point="p0" targetCount="8" attacktype="2" hitImmuneBreak="5" brokenOffence="1" unrideOnHit="1">
 					<range rangeType="cylinder" distance="250" height="150" applyTarget="1" />
 					<arrow nonTarget="1" />
-					<damage rate="16.6" hitSpeedRate="0.8" hitPauseTime="0.1" effectHit="CH/Common/Eff_Common_Light_Hit.xml" push="1" pushdistance="50" pushduration="0.1" pushEaseType="1" attackMaterial="105" />
+					<damage rate="17.81" hitSpeedRate="0.8" hitPauseTime="0.1" effectHit="CH/Common/Eff_Common_Light_Hit.xml" push="1" pushdistance="50" pushduration="0.1" pushEaseType="1" attackMaterial="105" />
 				</attack>
 			</motion>
 		</level>
@@ -4908,7 +4977,7 @@
 				<attack point="p0" targetCount="8" attacktype="2" hitImmuneBreak="5" brokenOffence="1" unrideOnHit="1">
 					<range rangeType="cylinder" distance="250" height="150" applyTarget="1" />
 					<arrow nonTarget="1" />
-					<damage rate="17.5" hitSpeedRate="0.8" hitPauseTime="0.1" effectHit="CH/Common/Eff_Common_Light_Hit.xml" push="1" pushdistance="50" pushduration="0.1" pushEaseType="1" attackMaterial="105" />
+					<damage rate="18.71" hitSpeedRate="0.8" hitPauseTime="0.1" effectHit="CH/Common/Eff_Common_Light_Hit.xml" push="1" pushdistance="50" pushduration="0.1" pushEaseType="1" attackMaterial="105" />
 				</attack>
 			</motion>
 		</level>
@@ -4917,133 +4986,143 @@
 				<attack point="p0" targetCount="8" attacktype="2" hitImmuneBreak="5" brokenOffence="1" unrideOnHit="1">
 					<range rangeType="cylinder" distance="250" height="150" applyTarget="1" />
 					<arrow nonTarget="1" />
-					<damage rate="18.4" hitSpeedRate="0.8" hitPauseTime="0.1" effectHit="CH/Common/Eff_Common_Light_Hit.xml" push="1" pushdistance="50" pushduration="0.1" pushEaseType="1" attackMaterial="105" />
+					<damage rate="19.61" hitSpeedRate="0.8" hitPauseTime="0.1" effectHit="CH/Common/Eff_Common_Light_Hit.xml" push="1" pushdistance="50" pushduration="0.1" pushEaseType="1" attackMaterial="105" />
 				</attack>
 			</motion>
 		</level>
 	</skill>
-	<skill id="10400193" comment="한손검">
+	<skill id="10400193" originID="10400191" comment="한손검">
 		<basic feature="JobChange_01" mainType="1">
-			<ui icon="./Data/Resource/Image/skill/icon/10400193.png" exceptUI="1" attackType="2" />
+			<ui icon="./Data/Resource/Image/skill/icon/10400193.png" attackType="2" />
 			<kinds rangeType="1" jump="10400193" element="4" />
 			<stateAttr autoTargetingType="1" moveType="1" keyIsDown="1" clearCooldownFromPVPZone="1" ignoreReduceCooldown="1" />
 			<combo inputSkill="10400193" outputSkill="10400194" />
-			<changeSkill originSkillID="10400191" />
 			<autoTargeting autoTargetingMaxDegree="90" />
 			<push back="150" />
 			<condition>
-				<requireEffect code="10400181" />
+				<requireEffect code="10400185" />
 				<weapon lh="0" rh="33" />
 			</condition>
 		</basic>
-		<level value="1" cooldown="350" stringParam="270,470">
+		<level value="1" cooldown="350" stringParam="307,470">
 			<motion sequenceName="Priest_LightSpear_01_B" strTagEffects="e0=CH/Skill/Priest/Eff_Priest_LightSpearEX_Cast_01.xml" holdWeapon="0">
-				<attack point="p0" pointGroupID="200001" targetCount="3" direction="2" attacktype="2" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
-					<range rangeType="box" distance="300" height="150" width="300" applyTarget="1" />
+				<attack point="p0" pointGroupID="200001" targetCount="8" attacktype="2" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+					<range rangeType="cylinder" distance="450" height="150" applyTarget="1" />
 					<arrow nonTarget="1" />
+					<damage rate="3.07" hitSpeedRate="0.8" attackMaterial="105" />
 				</attack>
 			</motion>
 		</level>
-		<level value="2" cooldown="350" stringParam="295,514">
+		<level value="2" cooldown="350" stringParam="332,514">
 			<motion sequenceName="Priest_LightSpear_01_B" strTagEffects="e0=CH/Skill/Priest/Eff_Priest_LightSpearEX_Cast_01.xml" holdWeapon="0">
-				<attack point="p0" pointGroupID="200001" targetCount="3" direction="2" attacktype="2" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
-					<range rangeType="box" distance="300" height="150" width="300" applyTarget="1" />
+				<attack point="p0" pointGroupID="200001" targetCount="8" attacktype="2" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+					<range rangeType="cylinder" distance="450" height="150" applyTarget="1" />
 					<arrow nonTarget="1" />
+					<damage rate="3.32" hitSpeedRate="0.8" attackMaterial="105" />
 				</attack>
 			</motion>
 		</level>
-		<level value="3" cooldown="350" stringParam="320,558">
+		<level value="3" cooldown="350" stringParam="357,558">
 			<motion sequenceName="Priest_LightSpear_01_B" strTagEffects="e0=CH/Skill/Priest/Eff_Priest_LightSpearEX_Cast_01.xml" holdWeapon="0">
-				<attack point="p0" pointGroupID="200001" targetCount="3" direction="2" attacktype="2" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
-					<range rangeType="box" distance="300" height="150" width="300" applyTarget="1" />
+				<attack point="p0" pointGroupID="200001" targetCount="8" attacktype="2" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+					<range rangeType="cylinder" distance="450" height="150" applyTarget="1" />
 					<arrow nonTarget="1" />
+					<damage rate="3.57" hitSpeedRate="0.8" attackMaterial="105" />
 				</attack>
 			</motion>
 		</level>
-		<level value="4" cooldown="350" stringParam="345,602">
+		<level value="4" cooldown="350" stringParam="382,602">
 			<motion sequenceName="Priest_LightSpear_01_B" strTagEffects="e0=CH/Skill/Priest/Eff_Priest_LightSpearEX_Cast_01.xml" holdWeapon="0">
-				<attack point="p0" pointGroupID="200001" targetCount="3" direction="2" attacktype="2" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
-					<range rangeType="box" distance="300" height="150" width="300" applyTarget="1" />
+				<attack point="p0" pointGroupID="200001" targetCount="8" attacktype="2" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+					<range rangeType="cylinder" distance="450" height="150" applyTarget="1" />
 					<arrow nonTarget="1" />
+					<damage rate="3.82" hitSpeedRate="0.8" attackMaterial="105" />
 				</attack>
 			</motion>
 		</level>
-		<level value="5" cooldown="350" stringParam="370,646">
+		<level value="5" cooldown="350" stringParam="407,646">
 			<motion sequenceName="Priest_LightSpear_01_B" strTagEffects="e0=CH/Skill/Priest/Eff_Priest_LightSpearEX_Cast_01.xml" holdWeapon="0">
-				<attack point="p0" pointGroupID="200001" targetCount="3" direction="2" attacktype="2" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
-					<range rangeType="box" distance="300" height="150" width="300" applyTarget="1" />
+				<attack point="p0" pointGroupID="200001" targetCount="8" attacktype="2" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+					<range rangeType="cylinder" distance="450" height="150" applyTarget="1" />
 					<arrow nonTarget="1" />
+					<damage rate="4.07" hitSpeedRate="0.8" attackMaterial="105" />
 				</attack>
 			</motion>
 		</level>
-		<level value="6" cooldown="350" stringParam="395,690">
+		<level value="6" cooldown="350" stringParam="432,690">
 			<motion sequenceName="Priest_LightSpear_01_B" strTagEffects="e0=CH/Skill/Priest/Eff_Priest_LightSpearEX_Cast_01.xml" holdWeapon="0">
-				<attack point="p0" pointGroupID="200001" targetCount="3" direction="2" attacktype="2" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
-					<range rangeType="box" distance="300" height="150" width="300" applyTarget="1" />
+				<attack point="p0" pointGroupID="200001" targetCount="8" attacktype="2" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+					<range rangeType="cylinder" distance="450" height="150" applyTarget="1" />
 					<arrow nonTarget="1" />
+					<damage rate="4.32" hitSpeedRate="0.8" attackMaterial="105" />
 				</attack>
 			</motion>
 		</level>
-		<level value="7" cooldown="350" stringParam="420,734">
+		<level value="7" cooldown="350" stringParam="457,734">
 			<motion sequenceName="Priest_LightSpear_01_B" strTagEffects="e0=CH/Skill/Priest/Eff_Priest_LightSpearEX_Cast_01.xml" holdWeapon="0">
-				<attack point="p0" pointGroupID="200001" targetCount="3" direction="2" attacktype="2" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
-					<range rangeType="box" distance="300" height="150" width="300" applyTarget="1" />
+				<attack point="p0" pointGroupID="200001" targetCount="8" attacktype="2" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+					<range rangeType="cylinder" distance="450" height="150" applyTarget="1" />
 					<arrow nonTarget="1" />
+					<damage rate="4.57" hitSpeedRate="0.8" attackMaterial="105" />
 				</attack>
 			</motion>
 		</level>
-		<level value="8" cooldown="350" stringParam="445,778">
+		<level value="8" cooldown="350" stringParam="482,778">
 			<motion sequenceName="Priest_LightSpear_01_B" strTagEffects="e0=CH/Skill/Priest/Eff_Priest_LightSpearEX_Cast_01.xml" holdWeapon="0">
-				<attack point="p0" pointGroupID="200001" targetCount="3" direction="2" attacktype="2" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
-					<range rangeType="box" distance="300" height="150" width="300" applyTarget="1" />
+				<attack point="p0" pointGroupID="200001" targetCount="8" attacktype="2" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+					<range rangeType="cylinder" distance="450" height="150" applyTarget="1" />
 					<arrow nonTarget="1" />
+					<damage rate="4.82" hitSpeedRate="0.8" attackMaterial="105" />
 				</attack>
 			</motion>
 		</level>
-		<level value="9" cooldown="350" stringParam="470,822">
+		<level value="9" cooldown="350" stringParam="507,822">
 			<motion sequenceName="Priest_LightSpear_01_B" strTagEffects="e0=CH/Skill/Priest/Eff_Priest_LightSpearEX_Cast_01.xml" holdWeapon="0">
-				<attack point="p0" pointGroupID="200001" targetCount="3" direction="2" attacktype="2" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
-					<range rangeType="box" distance="300" height="150" width="300" applyTarget="1" />
+				<attack point="p0" pointGroupID="200001" targetCount="8" attacktype="2" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+					<range rangeType="cylinder" distance="450" height="150" applyTarget="1" />
 					<arrow nonTarget="1" />
+					<damage rate="5.07" hitSpeedRate="0.8" attackMaterial="105" />
 				</attack>
 			</motion>
 		</level>
-		<level value="10" cooldown="350" stringParam="495,866">
+		<level value="10" cooldown="350" stringParam="532,866">
 			<motion sequenceName="Priest_LightSpear_01_B" strTagEffects="e0=CH/Skill/Priest/Eff_Priest_LightSpearEX_Cast_01.xml" holdWeapon="0">
-				<attack point="p0" pointGroupID="200001" targetCount="3" direction="2" attacktype="2" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
-					<range rangeType="box" distance="300" height="150" width="300" applyTarget="1" />
+				<attack point="p0" pointGroupID="200001" targetCount="8" attacktype="2" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+					<range rangeType="cylinder" distance="450" height="150" applyTarget="1" />
 					<arrow nonTarget="1" />
+					<damage rate="5.32" hitSpeedRate="0.8" attackMaterial="105" />
 				</attack>
 			</motion>
 		</level>
-		<level value="11" cooldown="350" stringParam="520,910">
+		<level value="11" cooldown="350" stringParam="557,910">
 			<motion sequenceName="Priest_LightSpear_01_B" strTagEffects="e0=CH/Skill/Priest/Eff_Priest_LightSpearEX_Cast_01.xml" holdWeapon="0">
-				<attack point="p0" pointGroupID="200001" targetCount="3" direction="2" attacktype="2" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
-					<range rangeType="box" distance="300" height="150" width="300" applyTarget="1" />
+				<attack point="p0" pointGroupID="200001" targetCount="8" attacktype="2" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+					<range rangeType="cylinder" distance="450" height="150" applyTarget="1" />
 					<arrow nonTarget="1" />
+					<damage rate="5.57" hitSpeedRate="0.8" attackMaterial="105" />
 				</attack>
 			</motion>
 		</level>
-		<level value="12" cooldown="350" stringParam="545,954">
+		<level value="12" cooldown="350" stringParam="582,954">
 			<motion sequenceName="Priest_LightSpear_01_B" strTagEffects="e0=CH/Skill/Priest/Eff_Priest_LightSpearEX_Cast_01.xml" holdWeapon="0">
-				<attack point="p0" pointGroupID="200001" targetCount="3" direction="2" attacktype="2" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
-					<range rangeType="box" distance="300" height="150" width="300" applyTarget="1" />
+				<attack point="p0" pointGroupID="200001" targetCount="8" attacktype="2" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+					<range rangeType="cylinder" distance="450" height="150" applyTarget="1" />
 					<arrow nonTarget="1" />
+					<damage rate="5.82" hitSpeedRate="0.8" attackMaterial="105" />
 				</attack>
 			</motion>
 		</level>
 	</skill>
-	<skill id="10400194" comment="한손검">
+	<skill id="10400194" originID="10400191" comment="프리스트">
 		<basic feature="JobChange_01" mainType="1">
-			<ui icon="./Data/Resource/Image/skill/icon/10400193.png" exceptUI="1" attackType="2" />
+			<ui icon="./Data/Resource/Image/skill/icon/10400193.png" attackType="2" />
 			<kinds rangeType="1" element="4" />
 			<stateAttr autoTargetingType="1" moveType="1" ignoreReduceCooldown="1" />
-			<combo comboSkill="1" comboOriginSkill="10400193" inputSkill="10400193" outputSkill="10400195" />
-			<changeSkill originSkillID="10400191" />
+			<combo comboSkill="1" inputSkill="10400193" outputSkill="10400195" />
 			<autoTargeting autoTargetingMaxDegree="90" />
 			<push back="150" />
 			<condition>
-				<requireEffect code="10400181" />
+				<requireEffect code="10400185" />
 				<weapon lh="0" rh="33" />
 			</condition>
 		</basic>
@@ -5053,7 +5132,7 @@
 					<pause pauseShakeDuration="0.2" pauseAmp="10" />
 					<range rangeType="box" distance="450" height="150" width="550" applyTarget="1" />
 					<arrow nonTarget="1" />
-					<damage rate="2.7" hitSpeedRate="0.8" attackMaterial="105" />
+					<damage rate="3.07" hitSpeedRate="0.8" attackMaterial="105" />
 					<actionAdditional additionalID="10400192" level="1" skillTarget="2" skillOwner="1" />
 				</attack>
 			</motion>
@@ -5064,7 +5143,7 @@
 					<pause pauseShakeDuration="0.2" pauseAmp="10" />
 					<range rangeType="box" distance="450" height="150" width="550" applyTarget="1" />
 					<arrow nonTarget="1" />
-					<damage rate="2.95" hitSpeedRate="0.8" attackMaterial="105" />
+					<damage rate="3.32" hitSpeedRate="0.8" attackMaterial="105" />
 					<actionAdditional additionalID="10400192" level="2" skillTarget="2" skillOwner="1" />
 				</attack>
 			</motion>
@@ -5075,7 +5154,7 @@
 					<pause pauseShakeDuration="0.2" pauseAmp="10" />
 					<range rangeType="box" distance="450" height="150" width="550" applyTarget="1" />
 					<arrow nonTarget="1" />
-					<damage rate="3.2" hitSpeedRate="0.8" attackMaterial="105" />
+					<damage rate="3.57" hitSpeedRate="0.8" attackMaterial="105" />
 					<actionAdditional additionalID="10400192" level="3" skillTarget="2" skillOwner="1" />
 				</attack>
 			</motion>
@@ -5086,7 +5165,7 @@
 					<pause pauseShakeDuration="0.2" pauseAmp="10" />
 					<range rangeType="box" distance="450" height="150" width="550" applyTarget="1" />
 					<arrow nonTarget="1" />
-					<damage rate="3.45" hitSpeedRate="0.8" attackMaterial="105" />
+					<damage rate="3.82" hitSpeedRate="0.8" attackMaterial="105" />
 					<actionAdditional additionalID="10400192" level="4" skillTarget="2" skillOwner="1" />
 				</attack>
 			</motion>
@@ -5097,7 +5176,7 @@
 					<pause pauseShakeDuration="0.2" pauseAmp="10" />
 					<range rangeType="box" distance="450" height="150" width="550" applyTarget="1" />
 					<arrow nonTarget="1" />
-					<damage rate="3.7" hitSpeedRate="0.8" attackMaterial="105" />
+					<damage rate="4.07" hitSpeedRate="0.8" attackMaterial="105" />
 					<actionAdditional additionalID="10400192" level="5" skillTarget="2" skillOwner="1" />
 				</attack>
 			</motion>
@@ -5108,7 +5187,7 @@
 					<pause pauseShakeDuration="0.2" pauseAmp="10" />
 					<range rangeType="box" distance="450" height="150" width="550" applyTarget="1" />
 					<arrow nonTarget="1" />
-					<damage rate="3.95" hitSpeedRate="0.8" attackMaterial="105" />
+					<damage rate="4.32" hitSpeedRate="0.8" attackMaterial="105" />
 					<actionAdditional additionalID="10400192" level="6" skillTarget="2" skillOwner="1" />
 				</attack>
 			</motion>
@@ -5119,7 +5198,7 @@
 					<pause pauseShakeDuration="0.2" pauseAmp="10" />
 					<range rangeType="box" distance="450" height="150" width="550" applyTarget="1" />
 					<arrow nonTarget="1" />
-					<damage rate="4.2" hitSpeedRate="0.8" attackMaterial="105" />
+					<damage rate="4.57" hitSpeedRate="0.8" attackMaterial="105" />
 					<actionAdditional additionalID="10400192" level="7" skillTarget="2" skillOwner="1" />
 				</attack>
 			</motion>
@@ -5130,7 +5209,7 @@
 					<pause pauseShakeDuration="0.2" pauseAmp="10" />
 					<range rangeType="box" distance="450" height="150" width="550" applyTarget="1" />
 					<arrow nonTarget="1" />
-					<damage rate="4.45" hitSpeedRate="0.8" attackMaterial="105" />
+					<damage rate="4.82" hitSpeedRate="0.8" attackMaterial="105" />
 					<actionAdditional additionalID="10400192" level="8" skillTarget="2" skillOwner="1" />
 				</attack>
 			</motion>
@@ -5141,7 +5220,7 @@
 					<pause pauseShakeDuration="0.2" pauseAmp="10" />
 					<range rangeType="box" distance="450" height="150" width="550" applyTarget="1" />
 					<arrow nonTarget="1" />
-					<damage rate="4.7" hitSpeedRate="0.8" attackMaterial="105" />
+					<damage rate="5.07" hitSpeedRate="0.8" attackMaterial="105" />
 					<actionAdditional additionalID="10400192" level="9" skillTarget="2" skillOwner="1" />
 				</attack>
 			</motion>
@@ -5152,7 +5231,7 @@
 					<pause pauseShakeDuration="0.2" pauseAmp="10" />
 					<range rangeType="box" distance="450" height="150" width="550" applyTarget="1" />
 					<arrow nonTarget="1" />
-					<damage rate="4.95" hitSpeedRate="0.8" attackMaterial="105" />
+					<damage rate="5.32" hitSpeedRate="0.8" attackMaterial="105" />
 					<actionAdditional additionalID="10400192" level="10" skillTarget="2" skillOwner="1" />
 				</attack>
 			</motion>
@@ -5163,7 +5242,7 @@
 					<pause pauseShakeDuration="0.2" pauseAmp="10" />
 					<range rangeType="box" distance="450" height="150" width="550" applyTarget="1" />
 					<arrow nonTarget="1" />
-					<damage rate="5.2" hitSpeedRate="0.8" attackMaterial="105" />
+					<damage rate="5.57" hitSpeedRate="0.8" attackMaterial="105" />
 					<actionAdditional additionalID="10400192" level="11" skillTarget="2" skillOwner="1" />
 				</attack>
 			</motion>
@@ -5174,23 +5253,22 @@
 					<pause pauseShakeDuration="0.2" pauseAmp="10" />
 					<range rangeType="box" distance="450" height="150" width="550" applyTarget="1" />
 					<arrow nonTarget="1" />
-					<damage rate="5.45" hitSpeedRate="0.8" attackMaterial="105" />
+					<damage rate="5.82" hitSpeedRate="0.8" attackMaterial="105" />
 					<actionAdditional additionalID="10400192" level="12" skillTarget="2" skillOwner="1" />
 				</attack>
 			</motion>
 		</level>
 	</skill>
-	<skill id="10400195" comment="한손검">
+	<skill id="10400195" originID="10400191" comment="프리스트">
 		<basic feature="JobChange_01" mainType="1">
-			<ui icon="./Data/Resource/Image/skill/icon/10400193.png" exceptUI="1" attackType="2" />
+			<ui icon="./Data/Resource/Image/skill/icon/10400193.png" attackType="2" />
 			<kinds rangeType="1" element="4" />
 			<stateAttr autoTargetingType="1" moveType="1" ignoreReduceCooldown="1" />
-			<combo comboSkill="1" comboOriginSkill="10400193" inputSkill="10400193" outputSkill="10400194" />
-			<changeSkill originSkillID="10400191" />
+			<combo comboSkill="1" inputSkill="10400193" outputSkill="10400194" />
 			<autoTargeting autoTargetingMaxDegree="90" />
 			<push back="150" />
 			<condition>
-				<requireEffect code="10400181" />
+				<requireEffect code="10400185" />
 				<weapon lh="0" rh="33" />
 			</condition>
 		</basic>
@@ -5200,7 +5278,7 @@
 					<pause pauseShakeDuration="0.2" pauseAmp="10" />
 					<range rangeType="box" distance="450" height="150" width="550" applyTarget="1" />
 					<arrow nonTarget="1" />
-					<damage rate="2.7" hitSpeedRate="0.8" attackMaterial="105" />
+					<damage rate="3.07" hitSpeedRate="0.8" attackMaterial="105" />
 					<actionAdditional additionalID="10400192" level="1" skillTarget="2" skillOwner="1" />
 				</attack>
 			</motion>
@@ -5211,7 +5289,7 @@
 					<pause pauseShakeDuration="0.2" pauseAmp="10" />
 					<range rangeType="box" distance="450" height="150" width="550" applyTarget="1" />
 					<arrow nonTarget="1" />
-					<damage rate="2.95" hitSpeedRate="0.8" attackMaterial="105" />
+					<damage rate="3.32" hitSpeedRate="0.8" attackMaterial="105" />
 					<actionAdditional additionalID="10400192" level="2" skillTarget="2" skillOwner="1" />
 				</attack>
 			</motion>
@@ -5222,7 +5300,7 @@
 					<pause pauseShakeDuration="0.2" pauseAmp="10" />
 					<range rangeType="box" distance="450" height="150" width="550" applyTarget="1" />
 					<arrow nonTarget="1" />
-					<damage rate="3.2" hitSpeedRate="0.8" attackMaterial="105" />
+					<damage rate="3.57" hitSpeedRate="0.8" attackMaterial="105" />
 					<actionAdditional additionalID="10400192" level="3" skillTarget="2" skillOwner="1" />
 				</attack>
 			</motion>
@@ -5233,7 +5311,7 @@
 					<pause pauseShakeDuration="0.2" pauseAmp="10" />
 					<range rangeType="box" distance="450" height="150" width="550" applyTarget="1" />
 					<arrow nonTarget="1" />
-					<damage rate="3.45" hitSpeedRate="0.8" attackMaterial="105" />
+					<damage rate="3.82" hitSpeedRate="0.8" attackMaterial="105" />
 					<actionAdditional additionalID="10400192" level="4" skillTarget="2" skillOwner="1" />
 				</attack>
 			</motion>
@@ -5244,7 +5322,7 @@
 					<pause pauseShakeDuration="0.2" pauseAmp="10" />
 					<range rangeType="box" distance="450" height="150" width="550" applyTarget="1" />
 					<arrow nonTarget="1" />
-					<damage rate="3.7" hitSpeedRate="0.8" attackMaterial="105" />
+					<damage rate="4.07" hitSpeedRate="0.8" attackMaterial="105" />
 					<actionAdditional additionalID="10400192" level="5" skillTarget="2" skillOwner="1" />
 				</attack>
 			</motion>
@@ -5255,7 +5333,7 @@
 					<pause pauseShakeDuration="0.2" pauseAmp="10" />
 					<range rangeType="box" distance="450" height="150" width="550" applyTarget="1" />
 					<arrow nonTarget="1" />
-					<damage rate="3.95" hitSpeedRate="0.8" attackMaterial="105" />
+					<damage rate="4.32" hitSpeedRate="0.8" attackMaterial="105" />
 					<actionAdditional additionalID="10400192" level="6" skillTarget="2" skillOwner="1" />
 				</attack>
 			</motion>
@@ -5266,7 +5344,7 @@
 					<pause pauseShakeDuration="0.2" pauseAmp="10" />
 					<range rangeType="box" distance="450" height="150" width="550" applyTarget="1" />
 					<arrow nonTarget="1" />
-					<damage rate="4.2" hitSpeedRate="0.8" attackMaterial="105" />
+					<damage rate="4.57" hitSpeedRate="0.8" attackMaterial="105" />
 					<actionAdditional additionalID="10400192" level="7" skillTarget="2" skillOwner="1" />
 				</attack>
 			</motion>
@@ -5277,7 +5355,7 @@
 					<pause pauseShakeDuration="0.2" pauseAmp="10" />
 					<range rangeType="box" distance="450" height="150" width="550" applyTarget="1" />
 					<arrow nonTarget="1" />
-					<damage rate="4.45" hitSpeedRate="0.8" attackMaterial="105" />
+					<damage rate="4.82" hitSpeedRate="0.8" attackMaterial="105" />
 					<actionAdditional additionalID="10400192" level="8" skillTarget="2" skillOwner="1" />
 				</attack>
 			</motion>
@@ -5288,7 +5366,7 @@
 					<pause pauseShakeDuration="0.2" pauseAmp="10" />
 					<range rangeType="box" distance="450" height="150" width="550" applyTarget="1" />
 					<arrow nonTarget="1" />
-					<damage rate="4.7" hitSpeedRate="0.8" attackMaterial="105" />
+					<damage rate="5.07" hitSpeedRate="0.8" attackMaterial="105" />
 					<actionAdditional additionalID="10400192" level="9" skillTarget="2" skillOwner="1" />
 				</attack>
 			</motion>
@@ -5299,7 +5377,7 @@
 					<pause pauseShakeDuration="0.2" pauseAmp="10" />
 					<range rangeType="box" distance="450" height="150" width="550" applyTarget="1" />
 					<arrow nonTarget="1" />
-					<damage rate="4.95" hitSpeedRate="0.8" attackMaterial="105" />
+					<damage rate="5.32" hitSpeedRate="0.8" attackMaterial="105" />
 					<actionAdditional additionalID="10400192" level="10" skillTarget="2" skillOwner="1" />
 				</attack>
 			</motion>
@@ -5310,7 +5388,7 @@
 					<pause pauseShakeDuration="0.2" pauseAmp="10" />
 					<range rangeType="box" distance="450" height="150" width="550" applyTarget="1" />
 					<arrow nonTarget="1" />
-					<damage rate="5.2" hitSpeedRate="0.8" attackMaterial="105" />
+					<damage rate="5.57" hitSpeedRate="0.8" attackMaterial="105" />
 					<actionAdditional additionalID="10400192" level="11" skillTarget="2" skillOwner="1" />
 				</attack>
 			</motion>
@@ -5321,7 +5399,7 @@
 					<pause pauseShakeDuration="0.2" pauseAmp="10" />
 					<range rangeType="box" distance="450" height="150" width="550" applyTarget="1" />
 					<arrow nonTarget="1" />
-					<damage rate="5.45" hitSpeedRate="0.8" attackMaterial="105" />
+					<damage rate="5.82" hitSpeedRate="0.8" attackMaterial="105" />
 					<actionAdditional additionalID="10400192" level="12" skillTarget="2" skillOwner="1" />
 				</attack>
 			</motion>
@@ -6205,7 +6283,6 @@
 	</skill>
 	<skill id="10400242" comment="프리스트">
 		<basic feature="JobChange_01" mainType="6">
-			<ui exceptUI="1" />
 			<kinds element="4" />
 			<stateAttr ignoreReduceCooldown="1" />
 		</basic>
@@ -6467,7 +6544,7 @@
 				<weapon lh="0" rh="33" />
 			</condition>
 		</basic>
-		<level value="1" cooldown="30000" stringParam="3563,6,1,3">
+		<level value="1" cooldown="30000" stringParam="8246,6,1,3">
 			<actionAdditional additionalID="10400271" level="1" skillTarget="1">
 				<beginCondition allowBattleRidingState="1" />
 			</actionAdditional>
@@ -6475,11 +6552,11 @@
 				<attack point="p0" pointGroupID="10400271" targetCount="8" attacktype="2" hitImmuneBreak="5" brokenOffence="2" brokenForce="2" compulsionType="2">
 					<range rangeType="frustum" distance="800" height="200" width="300" endWidth="500" applyTarget="1" />
 					<arrow nonTarget="1" />
-					<damage rate="35.63" effectHit="CH/Common/Eff_Common_Light_Hit.xml" push="1" pushdistance="50" pushduration="0.3" pushEaseType="1" attackMaterial="105" />
+					<damage rate="82.46" effectHit="CH/Common/Eff_Common_Light_Hit.xml" push="1" pushdistance="50" pushduration="0.3" pushEaseType="1" attackMaterial="105" />
 				</attack>
 			</motion>
 		</level>
-		<level value="2" cooldown="30000" stringParam="3973,7,2,6">
+		<level value="2" cooldown="30000" stringParam="8656,7,2,6">
 			<actionAdditional additionalID="10400271" level="2" skillTarget="1">
 				<beginCondition allowBattleRidingState="1" />
 			</actionAdditional>
@@ -6487,11 +6564,11 @@
 				<attack point="p0" pointGroupID="10400271" targetCount="8" attacktype="2" hitImmuneBreak="5" brokenOffence="2" brokenForce="2" compulsionType="2">
 					<range rangeType="frustum" distance="800" height="200" width="300" endWidth="500" applyTarget="1" />
 					<arrow nonTarget="1" />
-					<damage rate="39.73" effectHit="CH/Common/Eff_Common_Light_Hit.xml" push="1" pushdistance="50" pushduration="0.3" pushEaseType="1" attackMaterial="105" />
+					<damage rate="86.56" effectHit="CH/Common/Eff_Common_Light_Hit.xml" push="1" pushdistance="50" pushduration="0.3" pushEaseType="1" attackMaterial="105" />
 				</attack>
 			</motion>
 		</level>
-		<level value="3" cooldown="30000" stringParam="4383,8,3,9">
+		<level value="3" cooldown="30000" stringParam="9066,8,3,9">
 			<actionAdditional additionalID="10400271" level="3" skillTarget="1">
 				<beginCondition allowBattleRidingState="1" />
 			</actionAdditional>
@@ -6499,11 +6576,11 @@
 				<attack point="p0" pointGroupID="10400271" targetCount="8" attacktype="2" hitImmuneBreak="5" brokenOffence="2" brokenForce="2" compulsionType="2">
 					<range rangeType="frustum" distance="800" height="200" width="300" endWidth="500" applyTarget="1" />
 					<arrow nonTarget="1" />
-					<damage rate="43.83" effectHit="CH/Common/Eff_Common_Light_Hit.xml" push="1" pushdistance="50" pushduration="0.3" pushEaseType="1" attackMaterial="105" />
+					<damage rate="90.66" effectHit="CH/Common/Eff_Common_Light_Hit.xml" push="1" pushdistance="50" pushduration="0.3" pushEaseType="1" attackMaterial="105" />
 				</attack>
 			</motion>
 		</level>
-		<level value="4" cooldown="30000" stringParam="4793,9,4,12">
+		<level value="4" cooldown="30000" stringParam="9476,9,4,12">
 			<actionAdditional additionalID="10400271" level="4" skillTarget="1">
 				<beginCondition allowBattleRidingState="1" />
 			</actionAdditional>
@@ -6511,11 +6588,11 @@
 				<attack point="p0" pointGroupID="10400271" targetCount="8" attacktype="2" hitImmuneBreak="5" brokenOffence="2" brokenForce="2" compulsionType="2">
 					<range rangeType="frustum" distance="800" height="200" width="300" endWidth="500" applyTarget="1" />
 					<arrow nonTarget="1" />
-					<damage rate="47.93" effectHit="CH/Common/Eff_Common_Light_Hit.xml" push="1" pushdistance="50" pushduration="0.3" pushEaseType="1" attackMaterial="105" />
+					<damage rate="94.76" effectHit="CH/Common/Eff_Common_Light_Hit.xml" push="1" pushdistance="50" pushduration="0.3" pushEaseType="1" attackMaterial="105" />
 				</attack>
 			</motion>
 		</level>
-		<level value="5" cooldown="30000" stringParam="5203,10,5,15">
+		<level value="5" cooldown="30000" stringParam="9886,10,5,15">
 			<actionAdditional additionalID="10400271" level="5" skillTarget="1">
 				<beginCondition allowBattleRidingState="1" />
 			</actionAdditional>
@@ -6523,11 +6600,11 @@
 				<attack point="p0" pointGroupID="10400271" targetCount="8" attacktype="2" hitImmuneBreak="5" brokenOffence="2" brokenForce="2" compulsionType="2">
 					<range rangeType="frustum" distance="800" height="200" width="300" endWidth="500" applyTarget="1" />
 					<arrow nonTarget="1" />
-					<damage rate="52.03" effectHit="CH/Common/Eff_Common_Light_Hit.xml" push="1" pushdistance="50" pushduration="0.3" pushEaseType="1" attackMaterial="105" />
+					<damage rate="98.86" effectHit="CH/Common/Eff_Common_Light_Hit.xml" push="1" pushdistance="50" pushduration="0.3" pushEaseType="1" attackMaterial="105" />
 				</attack>
 			</motion>
 		</level>
-		<level value="6" cooldown="30000" stringParam="5613,11,6,18">
+		<level value="6" cooldown="30000" stringParam="10296,11,6,18">
 			<actionAdditional additionalID="10400271" level="6" skillTarget="1">
 				<beginCondition allowBattleRidingState="1" />
 			</actionAdditional>
@@ -6535,11 +6612,11 @@
 				<attack point="p0" pointGroupID="10400271" targetCount="8" attacktype="2" hitImmuneBreak="5" brokenOffence="2" brokenForce="2" compulsionType="2">
 					<range rangeType="frustum" distance="800" height="200" width="300" endWidth="500" applyTarget="1" />
 					<arrow nonTarget="1" />
-					<damage rate="56.13" effectHit="CH/Common/Eff_Common_Light_Hit.xml" push="1" pushdistance="50" pushduration="0.3" pushEaseType="1" attackMaterial="105" />
+					<damage rate="102.96" effectHit="CH/Common/Eff_Common_Light_Hit.xml" push="1" pushdistance="50" pushduration="0.3" pushEaseType="1" attackMaterial="105" />
 				</attack>
 			</motion>
 		</level>
-		<level value="7" cooldown="30000" stringParam="6023,12,7,21">
+		<level value="7" cooldown="30000" stringParam="10706,12,7,21">
 			<actionAdditional additionalID="10400271" level="7" skillTarget="1">
 				<beginCondition allowBattleRidingState="1" />
 			</actionAdditional>
@@ -6547,11 +6624,11 @@
 				<attack point="p0" pointGroupID="10400271" targetCount="8" attacktype="2" hitImmuneBreak="5" brokenOffence="2" brokenForce="2" compulsionType="2">
 					<range rangeType="frustum" distance="800" height="200" width="300" endWidth="500" applyTarget="1" />
 					<arrow nonTarget="1" />
-					<damage rate="60.23" effectHit="CH/Common/Eff_Common_Light_Hit.xml" push="1" pushdistance="50" pushduration="0.3" pushEaseType="1" attackMaterial="105" />
+					<damage rate="107.06" effectHit="CH/Common/Eff_Common_Light_Hit.xml" push="1" pushdistance="50" pushduration="0.3" pushEaseType="1" attackMaterial="105" />
 				</attack>
 			</motion>
 		</level>
-		<level value="8" cooldown="30000" stringParam="6433,13,8,24">
+		<level value="8" cooldown="30000" stringParam="11116,13,8,24">
 			<actionAdditional additionalID="10400271" level="8" skillTarget="1">
 				<beginCondition allowBattleRidingState="1" />
 			</actionAdditional>
@@ -6559,11 +6636,11 @@
 				<attack point="p0" pointGroupID="10400271" targetCount="8" attacktype="2" hitImmuneBreak="5" brokenOffence="2" brokenForce="2" compulsionType="2">
 					<range rangeType="frustum" distance="800" height="200" width="300" endWidth="500" applyTarget="1" />
 					<arrow nonTarget="1" />
-					<damage rate="64.33" effectHit="CH/Common/Eff_Common_Light_Hit.xml" push="1" pushdistance="50" pushduration="0.3" pushEaseType="1" attackMaterial="105" />
+					<damage rate="111.16" effectHit="CH/Common/Eff_Common_Light_Hit.xml" push="1" pushdistance="50" pushduration="0.3" pushEaseType="1" attackMaterial="105" />
 				</attack>
 			</motion>
 		</level>
-		<level value="9" cooldown="30000" stringParam="6843,14,9,27">
+		<level value="9" cooldown="30000" stringParam="11526,14,9,27">
 			<actionAdditional additionalID="10400271" level="9" skillTarget="1">
 				<beginCondition allowBattleRidingState="1" />
 			</actionAdditional>
@@ -6571,11 +6648,11 @@
 				<attack point="p0" pointGroupID="10400271" targetCount="8" attacktype="2" hitImmuneBreak="5" brokenOffence="2" brokenForce="2" compulsionType="2">
 					<range rangeType="frustum" distance="800" height="200" width="300" endWidth="500" applyTarget="1" />
 					<arrow nonTarget="1" />
-					<damage rate="68.43" effectHit="CH/Common/Eff_Common_Light_Hit.xml" push="1" pushdistance="50" pushduration="0.3" pushEaseType="1" attackMaterial="105" />
+					<damage rate="115.26" effectHit="CH/Common/Eff_Common_Light_Hit.xml" push="1" pushdistance="50" pushduration="0.3" pushEaseType="1" attackMaterial="105" />
 				</attack>
 			</motion>
 		</level>
-		<level value="10" cooldown="30000" stringParam="7253,15,10,30">
+		<level value="10" cooldown="30000" stringParam="11936,15,10,30">
 			<actionAdditional additionalID="10400271" level="10" skillTarget="1">
 				<beginCondition allowBattleRidingState="1" />
 			</actionAdditional>
@@ -6583,11 +6660,11 @@
 				<attack point="p0" pointGroupID="10400271" targetCount="8" attacktype="2" hitImmuneBreak="5" brokenOffence="2" brokenForce="2" compulsionType="2">
 					<range rangeType="frustum" distance="800" height="200" width="300" endWidth="500" applyTarget="1" />
 					<arrow nonTarget="1" />
-					<damage rate="72.53" effectHit="CH/Common/Eff_Common_Light_Hit.xml" push="1" pushdistance="50" pushduration="0.3" pushEaseType="1" attackMaterial="105" />
+					<damage rate="119.36" effectHit="CH/Common/Eff_Common_Light_Hit.xml" push="1" pushdistance="50" pushduration="0.3" pushEaseType="1" attackMaterial="105" />
 				</attack>
 			</motion>
 		</level>
-		<level value="11" cooldown="30000" stringParam="7663,16,11,33">
+		<level value="11" cooldown="30000" stringParam="12346,16,11,33">
 			<actionAdditional additionalID="10400271" level="11" skillTarget="1">
 				<beginCondition allowBattleRidingState="1" />
 			</actionAdditional>
@@ -6595,11 +6672,11 @@
 				<attack point="p0" pointGroupID="10400271" targetCount="8" attacktype="2" hitImmuneBreak="5" brokenOffence="2" brokenForce="2" compulsionType="2">
 					<range rangeType="frustum" distance="800" height="200" width="300" endWidth="500" applyTarget="1" />
 					<arrow nonTarget="1" />
-					<damage rate="76.63" effectHit="CH/Common/Eff_Common_Light_Hit.xml" push="1" pushdistance="50" pushduration="0.3" pushEaseType="1" attackMaterial="105" />
+					<damage rate="123.46" effectHit="CH/Common/Eff_Common_Light_Hit.xml" push="1" pushdistance="50" pushduration="0.3" pushEaseType="1" attackMaterial="105" />
 				</attack>
 			</motion>
 		</level>
-		<level value="12" cooldown="30000" stringParam="8073,17,12,36">
+		<level value="12" cooldown="30000" stringParam="12756,17,12,36">
 			<actionAdditional additionalID="10400271" level="12" skillTarget="1">
 				<beginCondition allowBattleRidingState="1" />
 			</actionAdditional>
@@ -6607,7 +6684,7 @@
 				<attack point="p0" pointGroupID="10400271" targetCount="8" attacktype="2" hitImmuneBreak="5" brokenOffence="2" brokenForce="2" compulsionType="2">
 					<range rangeType="frustum" distance="800" height="200" width="300" endWidth="500" applyTarget="1" />
 					<arrow nonTarget="1" />
-					<damage rate="80.73" effectHit="CH/Common/Eff_Common_Light_Hit.xml" push="1" pushdistance="50" pushduration="0.3" pushEaseType="1" attackMaterial="105" />
+					<damage rate="127.56" effectHit="CH/Common/Eff_Common_Light_Hit.xml" push="1" pushdistance="50" pushduration="0.3" pushEaseType="1" attackMaterial="105" />
 				</attack>
 			</motion>
 		</level>
@@ -6618,99 +6695,135 @@
 			<kinds element="4" />
 			<stateAttr ignoreReduceCooldown="1" />
 		</basic>
-		<level value="1" stringParam="250">
+		<level value="1" stringParam="691,2">
 			<actionAdditional additionalID="10400281" level="1" skillTarget="1">
 				<beginCondition allowBattleRidingState="1" />
 			</actionAdditional>
 			<actionAdditional additionalID="10400282" level="1" skillTarget="1">
 				<beginCondition allowBattleRidingState="1" />
 			</actionAdditional>
+			<actionAdditional additionalID="10400283" level="1" skillTarget="1">
+				<beginCondition allowBattleRidingState="1" />
+			</actionAdditional>
 		</level>
-		<level value="2" stringParam="310">
+		<level value="2" stringParam="751,2">
 			<actionAdditional additionalID="10400281" level="2" skillTarget="1">
 				<beginCondition allowBattleRidingState="1" />
 			</actionAdditional>
 			<actionAdditional additionalID="10400282" level="2" skillTarget="1">
 				<beginCondition allowBattleRidingState="1" />
 			</actionAdditional>
+			<actionAdditional additionalID="10400283" level="2" skillTarget="1">
+				<beginCondition allowBattleRidingState="1" />
+			</actionAdditional>
 		</level>
-		<level value="3" stringParam="370">
+		<level value="3" stringParam="811,6">
 			<actionAdditional additionalID="10400281" level="3" skillTarget="1">
 				<beginCondition allowBattleRidingState="1" />
 			</actionAdditional>
 			<actionAdditional additionalID="10400282" level="3" skillTarget="1">
 				<beginCondition allowBattleRidingState="1" />
 			</actionAdditional>
+			<actionAdditional additionalID="10400283" level="3" skillTarget="1">
+				<beginCondition allowBattleRidingState="1" />
+			</actionAdditional>
 		</level>
-		<level value="4" stringParam="430">
+		<level value="4" stringParam="871,6">
 			<actionAdditional additionalID="10400281" level="4" skillTarget="1">
 				<beginCondition allowBattleRidingState="1" />
 			</actionAdditional>
 			<actionAdditional additionalID="10400282" level="4" skillTarget="1">
 				<beginCondition allowBattleRidingState="1" />
 			</actionAdditional>
+			<actionAdditional additionalID="10400283" level="4" skillTarget="1">
+				<beginCondition allowBattleRidingState="1" />
+			</actionAdditional>
 		</level>
-		<level value="5" stringParam="490">
+		<level value="5" stringParam="931,10">
 			<actionAdditional additionalID="10400281" level="5" skillTarget="1">
 				<beginCondition allowBattleRidingState="1" />
 			</actionAdditional>
 			<actionAdditional additionalID="10400282" level="5" skillTarget="1">
 				<beginCondition allowBattleRidingState="1" />
 			</actionAdditional>
+			<actionAdditional additionalID="10400283" level="5" skillTarget="1">
+				<beginCondition allowBattleRidingState="1" />
+			</actionAdditional>
 		</level>
-		<level value="6" stringParam="550">
+		<level value="6" stringParam="991,10">
 			<actionAdditional additionalID="10400281" level="6" skillTarget="1">
 				<beginCondition allowBattleRidingState="1" />
 			</actionAdditional>
 			<actionAdditional additionalID="10400282" level="6" skillTarget="1">
 				<beginCondition allowBattleRidingState="1" />
 			</actionAdditional>
+			<actionAdditional additionalID="10400283" level="6" skillTarget="1">
+				<beginCondition allowBattleRidingState="1" />
+			</actionAdditional>
 		</level>
-		<level value="7" stringParam="610">
+		<level value="7" stringParam="1051,10">
 			<actionAdditional additionalID="10400281" level="7" skillTarget="1">
 				<beginCondition allowBattleRidingState="1" />
 			</actionAdditional>
 			<actionAdditional additionalID="10400282" level="7" skillTarget="1">
 				<beginCondition allowBattleRidingState="1" />
 			</actionAdditional>
+			<actionAdditional additionalID="10400283" level="7" skillTarget="1">
+				<beginCondition allowBattleRidingState="1" />
+			</actionAdditional>
 		</level>
-		<level value="8" stringParam="670">
+		<level value="8" stringParam="1111,10">
 			<actionAdditional additionalID="10400281" level="8" skillTarget="1">
 				<beginCondition allowBattleRidingState="1" />
 			</actionAdditional>
 			<actionAdditional additionalID="10400282" level="8" skillTarget="1">
 				<beginCondition allowBattleRidingState="1" />
 			</actionAdditional>
+			<actionAdditional additionalID="10400283" level="8" skillTarget="1">
+				<beginCondition allowBattleRidingState="1" />
+			</actionAdditional>
 		</level>
-		<level value="9" stringParam="730">
+		<level value="9" stringParam="1171,10">
 			<actionAdditional additionalID="10400281" level="9" skillTarget="1">
 				<beginCondition allowBattleRidingState="1" />
 			</actionAdditional>
 			<actionAdditional additionalID="10400282" level="9" skillTarget="1">
 				<beginCondition allowBattleRidingState="1" />
 			</actionAdditional>
+			<actionAdditional additionalID="10400283" level="9" skillTarget="1">
+				<beginCondition allowBattleRidingState="1" />
+			</actionAdditional>
 		</level>
-		<level value="10" stringParam="790">
+		<level value="10" stringParam="1231,10">
 			<actionAdditional additionalID="10400281" level="10" skillTarget="1">
 				<beginCondition allowBattleRidingState="1" />
 			</actionAdditional>
 			<actionAdditional additionalID="10400282" level="10" skillTarget="1">
 				<beginCondition allowBattleRidingState="1" />
 			</actionAdditional>
+			<actionAdditional additionalID="10400283" level="10" skillTarget="1">
+				<beginCondition allowBattleRidingState="1" />
+			</actionAdditional>
 		</level>
-		<level value="11" stringParam="850">
+		<level value="11" stringParam="1291,10">
 			<actionAdditional additionalID="10400281" level="11" skillTarget="1">
 				<beginCondition allowBattleRidingState="1" />
 			</actionAdditional>
 			<actionAdditional additionalID="10400282" level="11" skillTarget="1">
 				<beginCondition allowBattleRidingState="1" />
 			</actionAdditional>
+			<actionAdditional additionalID="10400283" level="11" skillTarget="1">
+				<beginCondition allowBattleRidingState="1" />
+			</actionAdditional>
 		</level>
-		<level value="12" stringParam="910">
+		<level value="12" stringParam="1351,10">
 			<actionAdditional additionalID="10400281" level="12" skillTarget="1">
 				<beginCondition allowBattleRidingState="1" />
 			</actionAdditional>
 			<actionAdditional additionalID="10400282" level="12" skillTarget="1">
+				<beginCondition allowBattleRidingState="1" />
+			</actionAdditional>
+			<actionAdditional additionalID="10400283" level="12" skillTarget="1">
 				<beginCondition allowBattleRidingState="1" />
 			</actionAdditional>
 		</level>
@@ -7125,7 +7238,6 @@
 	</skill>
 	<skill id="10400293" comment="프리스트">
 		<basic feature="JobChange_02" mainType="6">
-			<ui exceptUI="1" />
 			<kinds element="4" />
 			<stateAttr ignoreReduceCooldown="1" />
 		</basic>
