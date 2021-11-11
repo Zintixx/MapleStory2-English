@@ -27,4 +27,28 @@
 			<normal action="Idle_A,Bore_A,Bore_B" prob="4000,2000,4000" movearea="150" />
 		</environment>
 	</npc>
+	<npc id="11500004">
+		<environment feature="Event" friendly="2" npcAttackGroup="2" npcDefenseGroup="1" nametag="1" hitImmune="1" abnormalImmune="1" level="20" class="5" carePathToEnemy="1" npcSoundStart="ko/Npc/02000252" gender="0" illust="MapleGuard_Spear_normal" portrait="./Data/Resource/Image/Portrait/Npc/02010112_MapleGuard_Spear_P.png">
+			<model kfm="02010112_MapleGuard_Spear" shadowScale="105" rotationSpeed="500" walkSpeed="120" />
+			<stat hp="29" msp="100" atp="8" evp="4" ndd="29" pap="100" map="100" />
+			<distance avoid="100" />
+			<capsule radius="30" height="160" />
+			<normal action="Idle_A,Bore_A" prob="7000,3000" movearea="150" />
+		</environment>
+	</npc>
+	<npc id="11500005">
+		<environment feature="Event" npcAttackGroup="1" npcDefenseGroup="2" minimap="0" defenceMaterial="2" hitImmune="99" abnormalImmune="99" level="50" class="4" rankIcon="a" rotationDisabled="1" carePathToEnemy="1" propertyTags="no_event_drop" raceString="creature" gender="2" portrait="./Data/Resource/Image/Portrait/Mob/DamageMeter_puppetB_01_P.png" damagedVibrateDuration="0.5" damagedVibrateAmp="1" bossSoundDistance="0" bossSoundEndDistance="0" customExp="0" lookAtMyPCWhenTalking="0">
+			<model kfm="DamageMeter_puppetB_01" shadowScale="130" rotationSpeed="720" />
+			<stat hp="1000000000" asp="100" msp="100" atp="120" evp="87" cap="62" cad="500" car="50" ndd="567" par="90" mar="90" />
+			<distance avoid="100" sight="800" sightHeightUP="300" sightHeightDown="0" />
+			<skill ids="49060001" probs="100" />
+			<additionalEffect codes="51000002" levels="1" />
+			<collision shape="box" width="110" height="130" depth="110" />
+			<capsule radius="60" height="170" />
+			<dead time="5" defaultaction="Dead_A" upaction="Dead_A" />
+			<normal action="Idle_A" prob="10000" />
+			<dropiteminfo dropHeight="50" dropDistanceBase="100" dropDistanceRandom="50" globalDeadDropBoxId="1011" />
+			<aiInfo path="Standby_Forever.xml" />
+		</environment>
+	</npc>
 </ms2>

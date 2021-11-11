@@ -1925,7 +1925,7 @@
 		<anim name="Emotion_Campfire_A" />
 		<idleAnim name="Emotion_Campfire_A" />
 		<textureani target="FA">
-			<texture file="Item_Face/MC_face_smile.dds" delay="300" />
+			<texture file="Item_Face/MC_face_serious.dds" loop="true" />
 		</textureani>
 		<effect file="CH/Emotion/Eff_Emotion_Campfire_A.xml" />
 	</emotion>
@@ -3697,15 +3697,19 @@
 	<emotion name="Lamp_Genie">
 		<anim name="Emotion_Lamp_Genie" />
 		<textureani target="FA">
-			<texture file="Item_Face/MC_face_smile.dds" delay="300" />
+			<texture file="Item_Face/MC_face_expectation.dds" delay="2600" />
+			<texture file="Item_Face/MC_face_expect.dds" delay="9400" />
 		</textureani>
+		<effect file="CH/Emotion/Eff_Emotion_Lamp_Genie.xml" />
 	</emotion>
 	<!--램프를 문지르고 양-->
 	<emotion name="Lamp_Sheep">
 		<anim name="Emotion_Lamp_Sheep" />
 		<textureani target="FA">
-			<texture file="Item_Face/MC_face_smile.dds" delay="300" />
+			<texture file="Item_Face/MC_face_expectation.dds" delay="2600" />
+			<texture file="Item_Face/MC_face_panic.dds" delay="6300" />
 		</textureani>
+		<effect file="CH/Emotion/Eff_Emotion_Lamp_Sheep.xml" />
 	</emotion>
 	<!--비웃기-->
 	<emotion name="Laugh_A">
@@ -3935,10 +3939,12 @@
 	<!--이 이글루가 아니야-->
 	<emotion name="MakeIgloo">
 		<anim name="Emotion_MakeIgloo" />
-		<idleAnim name="Emotion_MakeIgloo" />
 		<textureani target="FA">
-			<texture file="Item_Face/MC_face_smile.dds" delay="300" />
+			<texture file="Item_Face/MC_face_awe.dds" delay="3000" loop="true" />
+			<texture file="Item_Face/MC_face_expectation.dds" delay="1300" />
+			<texture file="Item_Face/MC_face_panic.dds" delay="3000" />
 		</textureani>
+		<effect file="CH/Emotion/Eff_Emotion_MakeIgloo.xml" />
 	</emotion>
 	<!--말랑 블랙빈-->
 	<emotion name="MalangBlackbean_A">
