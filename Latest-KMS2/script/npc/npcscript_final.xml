@@ -458,18 +458,28 @@
 	</npc>
 	<npc id="11000016">
 		<select id="0">
-			<content text="$script:0831180610000001$" />
+			<content text="$script:0831180610000001$" voiceID="ko/Npc/03000374" />
 		</select>
 		<monologue id="30">
 			<content text="$script:0831180610000005$" />
 		</monologue>
 		<script randomPick="1" id="40">
-			<content text="$script:1101173110001798$">
+			<content text="$script:1101173110001798$" voiceID="ko/Npc/03000372">
 				<distractor text="$script:1101173110001799$" goto="41" />
+				<distractor text="$script:224837599460589657$" goto="42" />
 			</content>
 		</script>
 		<script id="41">
-			<content text="$script:1101173110001800$" />
+			<content text="$script:1101173110001800$" voiceID="ko/Npc/03000373" />
+		</script>
+		<job id="1">
+			<content text="$script:224837599460589655$" />
+		</job>
+		<script id="42">
+			<content text="$script:224837599460589656$" />
+		</script>
+		<script id="50">
+			<content text="$script:224837599460589658$" />
 		</script>
 	</npc>
 	<npc id="11000017">
@@ -7526,15 +7536,16 @@
 			<content text="$script:0831180407001657$">
 				<distractor text="$script:0831180407001658$" goto="31" />
 				<distractor text="$script:0831180407001659$" goto="41" />
-				<distractor text="$script:0831180407001660$" goto="51" />
 				<distractor text="$script:0831180407001661$" goto="10" />
 			</content>
 		</script>
 		<script id="22">
-			<content text="$script:0831180407001700$">
-				<distractor text="$script:0831180407001701$" goto="61" />
-				<distractor text="$script:0831180407001702$" goto="71" />
-				<distractor text="$script:0831180407001703$" goto="10" />
+			<content text="$script:0831180407001700$" />
+			<content text="$script:526984142097743950$" />
+			<content text="$script:526984142097743954$" />
+			<content text="$script:526984142097743955$" />
+			<content text="$script:526984142097743956$">
+				<distractor text="$script:526984142097743959$" goto="10" />
 			</content>
 		</script>
 		<script id="31">
@@ -7570,55 +7581,15 @@
 			<content text="$script:0831180407001679$" />
 			<content text="$script:0831180407001680$" />
 			<content text="$script:0831180407001681$" />
-			<content text="$script:0831180407001682$" />
-			<content text="$script:0831180407001683$">
-				<distractor text="$script:0831180407001684$" goto="41" />
+			<content text="$script:0831180407001682$">
+				<distractor text="$script:526984142097743957$" goto="41" />
 			</content>
 		</script>
 		<script id="43">
 			<content text="$script:0831180407001685$" />
 			<content text="$script:0831180407001686$" />
-			<content text="$script:0831180407001687$" />
-			<content text="$script:0831180407001688$" />
-			<content text="$script:0831180407001689$" />
-			<content text="$script:0831180407001690$" />
-			<content text="$script:0831180407001691$">
-				<distractor text="$script:0831180407001692$" goto="41" />
-			</content>
-		</script>
-		<script id="51">
-			<content text="$script:0831180407001693$" />
-			<content text="$script:0831180407001694$" />
-			<content text="$script:0831180407001695$" />
-			<content text="$script:0831180407001696$" />
-			<content text="$script:0831180407001697$" />
-			<content text="$script:0831180407001698$">
-				<distractor text="$script:0831180407001699$" goto="21" />
-			</content>
-		</script>
-		<script id="61">
-			<content text="$script:0831180407001704$" />
-			<content text="$script:0831180407001705$" />
-			<content text="$script:0831180407001706$" />
-			<content text="$script:0831180407001707$" />
-			<content text="$script:0831180407001708$" />
-			<content text="$script:0831180407001709$" />
-			<content text="$script:0831180407001710$" />
-			<content text="$script:0831180407001711$" />
-			<content text="$script:0831180407001712$">
-				<distractor text="$script:0831180407001713$" goto="22" />
-			</content>
-		</script>
-		<script id="71">
-			<content text="$script:0831180407001714$" />
-			<content text="$script:0831180407001715$" />
-			<content text="$script:0831180407001716$" />
-			<content text="$script:0831180407001717$" />
-			<content text="$script:0831180407001718$" />
-			<content text="$script:0831180407001719$" />
-			<content text="$script:0831180407001720$" />
-			<content text="$script:0831180407001721$">
-				<distractor text="$script:0831180407001722$" goto="22" />
+			<content text="$script:0831180407001687$">
+				<distractor text="$script:526984142097743958$" goto="41" />
 			</content>
 		</script>
 	</npc>

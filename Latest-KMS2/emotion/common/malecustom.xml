@@ -2376,8 +2376,9 @@
 	<!--앉아서 펑펑 울기-->
 	<emotion name="Cry_Ready_B">
 		<anim name="Emotion_Cry_Ready_B" />
+		<idleAnim name="Emotion_Cry_Loop_B" />
 		<textureani target="FA">
-			<texture file="Item_Face/MC_face_smile.dds" delay="300" />
+			<texture file="Item_Face/MC_face_hateyou.dds" loop="true" />
 		</textureani>
 	</emotion>
 	<!--피격-->
@@ -2441,12 +2442,14 @@
 			<texture file="Item_Face/{0}/05_Blink2.dds" control="Item_Face/{0}/20_Blink2_C.dds" loop="true" />
 		</textureani>
 	</emotion>
-	<!--중세춤-->
+	<!--중세 전통춤-->
 	<emotion name="Dance_008">
 		<anim name="Emotion_Dance_008" />
+		<idleAnim name="Emotion_Dance_008" />
 		<textureani target="FA">
-			<texture file="Item_Face/MC_face_smile.dds" delay="300" />
+			<texture file="Item_Face/MC_face_smile.dds" loop="true" />
 		</textureani>
+		<effect file="CH/Emotion/Eff_Emotion_Dance_008.xml" />
 	</emotion>
 	<emotion name="Dance_A">
 		<anim name="Emotion_Dance_A" />
@@ -6607,6 +6610,30 @@
 			<texture file="Item_Face/MC_face_disappoint.dds" delay="500" loop="true" />
 		</textureani>
 		<effect file="CH/Emotion/Eff_Male_Worry.xml" />
+	</emotion>
+	<emotion name="Traditional_Play_01">
+		<anim name="Emotion_Traditional_Play_01" />
+		<idleAnim name="Emotion_Traditional_Play_01" />
+		<textureani target="FA">
+			<texture file="Item_Face/MC_face_expect.dds" loop="true" />
+		</textureani>
+		<effect file="CH/Emotion/Eff_Emotion_Traditional_Play_01.xml" />
+	</emotion>
+	<emotion name="Traditional_Play_02">
+		<anim name="Emotion_Traditional_Play_02" />
+		<idleAnim name="Emotion_Traditional_Play_02" />
+		<textureani target="FA">
+			<texture file="Item_Face/MC_face_smile.dds" loop="true" />
+		</textureani>
+		<effect file="CH/Emotion/Eff_Emotion_Traditional_Play_02.xml" />
+	</emotion>
+	<emotion name="Traditional_Play_03">
+		<anim name="Emotion_Traditional_Play_03" />
+		<idleAnim name="Emotion_Traditional_Play_03" />
+		<textureani target="FA">
+			<texture file="Item_Face/MC_face_expectation.dds" loop="true" />
+		</textureani>
+		<effect file="CH/Emotion/Eff_Emotion_Traditional_Play_03.xml" />
 	</emotion>
 	<emotion name="TravellingBags_Diff_Male_Loop">
 		<anim name="Emotion_TravellingBags_Diff_Male_Loop" />

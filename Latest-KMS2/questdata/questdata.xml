@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ms2>
 	<quest id="10001000">
-		<basic chapterID="101" standardLevel="3" locking="1" />
+		<basic chapterID="101" standardLevel="3" />
 		<require level="1" job="1" />
 		<start npc="11000021" />
 		<complete npc="11000148" />
-		<completeReward exp="230" relativeExp="epicQuest" money="290" />
+		<completeReward exp="230" relativeExp="epicQuest" money="290">
+			<v code="13000001" rank="1" count="1" />
+		</completeReward>
 	</quest>
 	<quest id="10001001">
-		<basic chapterID="1" standardLevel="5" disableGiveup="1" locking="1" />
+		<basic chapterID="1" standardLevel="5" disableGiveup="1" />
 		<require level="2" job="1" quest="10001140" />
 		<start npc="11000062" />
 		<complete npc="11000096" />
@@ -403,7 +405,7 @@
 		<condition type="interact_object" code="10000025" value="10" />
 	</quest>
 	<quest id="10001110">
-		<basic chapterID="111" standardLevel="4" locking="1" />
+		<basic chapterID="111" standardLevel="4" />
 		<require level="1" job="1" quest="10001111" />
 		<start npc="11000098" />
 		<complete npc="11000098" />
@@ -411,7 +413,7 @@
 		<condition type="item_exist" code="30000011" value="3" />
 	</quest>
 	<quest id="10001111">
-		<basic chapterID="111" standardLevel="3" locking="1" />
+		<basic chapterID="111" standardLevel="3" />
 		<require level="1" job="1" quest="10001780" />
 		<start npc="11000151" />
 		<complete npc="11000098" />
@@ -438,7 +440,7 @@
 		<condition type="item_exist" code="20000013" value="2" />
 	</quest>
 	<quest id="10001140">
-		<basic chapterID="1" standardLevel="5" locking="1" />
+		<basic chapterID="1" standardLevel="5" />
 		<require level="2" job="1" quest="10001110" />
 		<start npc="11000099" />
 		<complete npc="11000016" />
@@ -1897,7 +1899,7 @@
 		<condition type="npc" code="23000024" value="1" />
 	</quest>
 	<quest id="10001780">
-		<basic chapterID="158" standardLevel="3" locking="1" />
+		<basic chapterID="158" standardLevel="3" />
 		<require level="1" job="1" quest="10001000" />
 		<start npc="11000148" />
 		<complete npc="11000148" />
@@ -14977,7 +14979,7 @@
 		<condition type="item_exist" code="30000395" value="1" />
 	</quest>
 	<quest id="40001000">
-		<basic chapterID="3000" standardLevel="3" locking="1" />
+		<basic chapterID="3000" standardLevel="3" />
 		<require level="1" job="1" quest="10001780" />
 		<start npc="11000148" />
 		<complete npc="11000021" />
@@ -49100,62 +49102,62 @@
 		<condition type="item_add" code="40400008" value="1" />
 	</quest>
 	<quest id="89000030">
-		<basic questType="5" chapterID="2200" account="1" standardLevel="1" autoStart="1" disableGiveup="1" eventTag="20211209_StampEventKR" />
+		<basic questType="5" chapterID="2200" account="1" standardLevel="1" autoStart="1" disableGiveup="1" eventTag="202112_StampEvent" />
 		<require level="10" />
 		<eventMission event="stamp" />
 		<condition type="map" code="52000008, 52000009, 52000010" value="1" />
 	</quest>
 	<quest id="89000031">
-		<basic questType="5" chapterID="2200" account="1" standardLevel="1" autoStart="1" disableGiveup="1" eventTag="20211209_StampEventKR" />
+		<basic questType="5" chapterID="2200" account="1" standardLevel="1" autoStart="1" disableGiveup="1" eventTag="202112_StampEvent" />
 		<require level="10" />
 		<eventMission event="stamp" />
 		<condition type="enter_otherhouse" value="1" />
 	</quest>
 	<quest id="89000032">
-		<basic questType="5" chapterID="2200" account="1" standardLevel="1" autoStart="1" disableGiveup="1" eventTag="20210623_StampEventCN" />
+		<basic questType="5" chapterID="2200" account="1" standardLevel="1" autoStart="1" disableGiveup="1" eventTag="202112_StampEvent" />
 		<require level="10" />
 		<eventMission event="stamp" />
 		<condition type="mastery_harvest" code="50000001" value="10" />
 	</quest>
 	<quest id="89000033">
-		<basic questType="5" chapterID="2200" account="1" standardLevel="1" autoStart="1" disableGiveup="1" eventTag="20210623_StampEventCN" />
+		<basic questType="5" chapterID="2200" account="1" standardLevel="1" autoStart="1" disableGiveup="1" eventTag="202112_StampEvent" />
 		<require level="10" />
 		<eventMission event="stamp" />
 		<condition type="mastery_gathering" code="30000001" value="10" />
 	</quest>
 	<quest id="89000034">
-		<basic questType="5" account="1" standardLevel="1" autoStart="1" disableGiveup="1" eventTag="20210610_StampEventKR" />
+		<basic questType="5" account="1" standardLevel="1" autoStart="1" disableGiveup="1" eventTag="202112_StampEvent" />
 		<require level="10" />
 		<remoteComplete useRemote="1" />
 		<eventMission event="stamp" />
 		<condition type="skin_gemstone_puton" value="1" />
 	</quest>
 	<quest id="89000035">
-		<basic questType="5" chapterID="2200" account="1" standardLevel="1" autoStart="1" disableGiveup="1" eventTag="20210623_StampEventCN" />
+		<basic questType="5" chapterID="2200" account="1" standardLevel="1" autoStart="1" disableGiveup="1" eventTag="202112_StampEvent" />
 		<require level="10" />
 		<eventMission event="stamp" />
 		<condition type="riding" value="100" />
 	</quest>
 	<quest id="89000036">
-		<basic questType="5" chapterID="2200" account="1" standardLevel="1" autoStart="1" disableGiveup="1" eventTag="20210623_StampEventCN" />
+		<basic questType="5" chapterID="2200" account="1" standardLevel="1" autoStart="1" disableGiveup="1" eventTag="202112_StampEvent" />
 		<require level="10" />
 		<eventMission event="stamp" />
 		<condition type="mastery_harvest" code="60000011" value="10" />
 	</quest>
 	<quest id="89000037">
-		<basic questType="5" chapterID="2200" account="1" standardLevel="1" autoStart="1" disableGiveup="1" eventTag="20210623_StampEventCN" />
+		<basic questType="5" chapterID="2200" account="1" standardLevel="1" autoStart="1" disableGiveup="1" eventTag="202112_StampEvent" />
 		<require level="10" />
 		<eventMission event="stamp" />
 		<condition type="mastery_gathering" code="40000011" value="10" />
 	</quest>
 	<quest id="89000038">
-		<basic questType="5" chapterID="2200" account="1" standardLevel="1" autoStart="1" disableGiveup="1" eventTag="20210623_StampEventCN" />
+		<basic questType="5" chapterID="2200" account="1" standardLevel="1" autoStart="1" disableGiveup="1" eventTag="202112_StampEvent" />
 		<require level="10" />
 		<eventMission event="stamp" />
 		<condition type="fish" value="10" />
 	</quest>
 	<quest id="89000039" feature="QuestKR">
-		<basic questType="5" account="1" standardLevel="1" autoStart="1" disableGiveup="1" eventTag="20210610_StampEventKR" />
+		<basic questType="5" account="1" standardLevel="1" autoStart="1" disableGiveup="1" eventTag="202112_StampEvent" />
 		<require level="10" />
 		<remoteComplete useRemote="1" />
 		<eventMission event="stamp" />
@@ -51149,14 +51151,14 @@
 		<condition type="climb" value="300" />
 	</quest>
 	<quest id="89000376" feature="QuestKR">
-		<basic questType="5" chapterID="8994" account="1" standardLevel="1" autoStart="1" disableGiveup="1" eventTag="20210610_StampEventKR" />
+		<basic questType="5" chapterID="8994" account="1" standardLevel="1" autoStart="1" disableGiveup="1" eventTag="202112_StampEvent" />
 		<require level="10" />
 		<remoteComplete useRemote="1" />
 		<eventMission event="stamp" />
 		<condition type="npc" value="1000" />
 	</quest>
 	<quest id="89000377" feature="QuestKR">
-		<basic questType="5" chapterID="8994" account="1" standardLevel="1" autoStart="1" disableGiveup="1" eventTag="20210610_StampEventKR" />
+		<basic questType="5" chapterID="8994" account="1" standardLevel="1" autoStart="1" disableGiveup="1" eventTag="202112_StampEvent" />
 		<require level="10" />
 		<remoteComplete useRemote="1" />
 		<eventMission event="stamp" />
@@ -51687,7 +51689,7 @@
 		<condition type="quest_daily" code="30000381" value="12" />
 	</quest>
 	<quest id="89000447" feature="QuestKR">
-		<basic questType="5" chapterID="8989" account="1" standardLevel="1" autoStart="1" disableGiveup="1" eventTag="20210610_StampEventKR" />
+		<basic questType="5" chapterID="8989" account="1" standardLevel="1" autoStart="1" disableGiveup="1" eventTag="202112_StampEvent" />
 		<require level="10" />
 		<remoteComplete useRemote="1" />
 		<eventMission event="stamp" />
@@ -52414,49 +52416,49 @@
 		<condition type="dungeon_clear_group" code="2" value="10" />
 	</quest>
 	<quest id="89000540" feature="QuestKR">
-		<basic questType="5" chapterID="8985" account="1" standardLevel="1" autoStart="1" disableGiveup="1" eventTag="20210610_StampEventKR" />
+		<basic questType="5" chapterID="8985" account="1" standardLevel="1" autoStart="1" disableGiveup="1" eventTag="202112_StampEvent" />
 		<require level="10" />
 		<remoteComplete useRemote="1" />
 		<eventMission event="stamp" />
 		<condition type="emotion" code="hello" target="02000001" value="1" />
 	</quest>
 	<quest id="89000541" feature="QuestKR">
-		<basic questType="5" chapterID="8985" account="1" standardLevel="1" autoStart="1" disableGiveup="1" eventTag="20210610_StampEventKR" />
+		<basic questType="5" chapterID="8985" account="1" standardLevel="1" autoStart="1" disableGiveup="1" eventTag="202112_StampEvent" />
 		<require level="10" />
 		<remoteComplete useRemote="1" />
 		<eventMission event="stamp" />
 		<condition type="trigger" code="dailyquest_start" value="2" />
 	</quest>
 	<quest id="89000542" feature="QuestKR">
-		<basic questType="5" chapterID="8985" account="1" standardLevel="1" autoStart="1" disableGiveup="1" eventTag="20210610_StampEventKR" />
+		<basic questType="5" chapterID="8985" account="1" standardLevel="1" autoStart="1" disableGiveup="1" eventTag="202112_StampEvent" />
 		<require level="10" />
 		<remoteComplete useRemote="1" />
 		<eventMission event="stamp" />
 		<condition type="trigger" code="dailyquest_start" value="3" />
 	</quest>
 	<quest id="89000543" feature="QuestKR">
-		<basic questType="5" chapterID="8985" standardLevel="1" autoStart="1" disableGiveup="1" eventTag="20210610_StampEventKR" />
+		<basic questType="5" chapterID="8985" standardLevel="1" autoStart="1" disableGiveup="1" eventTag="202112_StampEvent" />
 		<require level="10" />
 		<remoteComplete useRemote="1" />
 		<eventMission event="stamp" />
 		<condition type="level" target="50" value="1" />
 	</quest>
 	<quest id="89000544" feature="QuestKR">
-		<basic questType="5" chapterID="8985" standardLevel="1" autoStart="1" disableGiveup="1" eventTag="20210610_StampEventKR" />
+		<basic questType="5" chapterID="8985" standardLevel="1" autoStart="1" disableGiveup="1" eventTag="202112_StampEvent" />
 		<require level="10" />
 		<remoteComplete useRemote="1" />
 		<eventMission event="stamp" />
 		<condition type="level" target="60" value="1" />
 	</quest>
 	<quest id="89000545" feature="QuestKR">
-		<basic questType="5" chapterID="8985" standardLevel="1" autoStart="1" disableGiveup="1" eventTag="20210610_StampEventKR" />
+		<basic questType="5" chapterID="8985" standardLevel="1" autoStart="1" disableGiveup="1" eventTag="202112_StampEvent" />
 		<require level="10" />
 		<remoteComplete useRemote="1" />
 		<eventMission event="stamp" />
 		<condition type="level" target="70" value="1" />
 	</quest>
 	<quest id="89000546" feature="QuestKR">
-		<basic questType="5" chapterID="8985" account="1" standardLevel="1" autoStart="1" disableGiveup="1" eventTag="20210610_StampEventKR" />
+		<basic questType="5" chapterID="8985" account="1" standardLevel="1" autoStart="1" disableGiveup="1" eventTag="202112_StampEvent" />
 		<require level="10" />
 		<remoteComplete useRemote="1" />
 		<eventMission event="stamp" />
@@ -53970,54 +53972,54 @@
 		<condition type="enter_otherhouse" value="1" />
 	</quest>
 	<quest id="89010212" feature="QuestCN">
-		<basic questType="5" account="1" standardLevel="1" autoStart="1" disableGiveup="1" eventTag="20210623_StampEventCN" />
+		<basic questType="5" account="1" standardLevel="1" autoStart="1" disableGiveup="1" eventTag="202112_StampEvent" />
 		<require level="10" />
 		<eventMission event="stamp" />
 		<condition type="skin_gemstone_puton" value="1" />
 	</quest>
 	<quest id="89010213" feature="QuestCN">
-		<basic questType="5" chapterID="81034" account="1" standardLevel="1" autoStart="1" disableGiveup="1" eventTag="20210623_StampEventCN" />
+		<basic questType="5" chapterID="81034" account="1" standardLevel="1" autoStart="1" disableGiveup="1" eventTag="202112_StampEvent" />
 		<require level="10" />
 		<remoteComplete useRemote="1" />
 		<eventMission event="stamp" />
 		<condition type="trigger" code="dailyquest_start" value="2" />
 	</quest>
 	<quest id="89010214" feature="QuestCN">
-		<basic questType="5" chapterID="81001" account="1" standardLevel="1" autoStart="1" disableGiveup="1" eventTag="20210623_StampEventCN" />
+		<basic questType="5" chapterID="81001" account="1" standardLevel="1" autoStart="1" disableGiveup="1" eventTag="202112_StampEvent" />
 		<require level="10" />
 		<remoteComplete useRemote="1" />
 		<eventMission event="stamp" />
 		<condition type="trigger" code="dailyquest_start" value="3" />
 	</quest>
 	<quest id="89010215" feature="QuestCN">
-		<basic questType="5" chapterID="8994" account="1" standardLevel="1" autoStart="1" disableGiveup="1" eventTag="20210623_StampEventCN" />
+		<basic questType="5" chapterID="8994" account="1" standardLevel="1" autoStart="1" disableGiveup="1" eventTag="202112_StampEvent" />
 		<require level="10" />
 		<remoteComplete useRemote="1" />
 		<eventMission event="stamp" />
 		<condition type="npc" value="1000" />
 	</quest>
 	<quest id="89010216" feature="QuestCN">
-		<basic questType="5" chapterID="8994" account="1" standardLevel="1" autoStart="1" disableGiveup="1" eventTag="20210623_StampEventCN" />
+		<basic questType="5" chapterID="8994" account="1" standardLevel="1" autoStart="1" disableGiveup="1" eventTag="202112_StampEvent" />
 		<require level="10" />
 		<remoteComplete useRemote="1" />
 		<eventMission event="stamp" />
 		<condition type="npc" value="5000" />
 	</quest>
 	<quest id="89010217" feature="QuestCN">
-		<basic questType="5" chapterID="81036" account="1" standardLevel="1" autoStart="1" disableGiveup="1" eventTag="20210623_StampEventCN" />
+		<basic questType="5" chapterID="81036" account="1" standardLevel="1" autoStart="1" disableGiveup="1" eventTag="202112_StampEvent" />
 		<require level="10" />
 		<remoteComplete useRemote="1" />
 		<eventMission event="stamp" />
 		<condition type="fish" value="10" />
 	</quest>
 	<quest id="89010218" feature="QuestCN">
-		<basic questType="5" account="1" standardLevel="1" autoStart="1" disableGiveup="1" eventTag="20210623_StampEventCN" />
+		<basic questType="5" account="1" standardLevel="1" autoStart="1" disableGiveup="1" eventTag="202112_StampEvent" />
 		<require level="10" />
 		<eventMission event="stamp" />
 		<condition type="trigger" code="dailyquest_start" value="1" />
 	</quest>
 	<quest id="89010219" feature="QuestCN">
-		<basic questType="5" chapterID="8985" account="1" standardLevel="1" autoStart="1" disableGiveup="1" eventTag="20210623_StampEventCN" />
+		<basic questType="5" chapterID="8985" account="1" standardLevel="1" autoStart="1" disableGiveup="1" eventTag="202112_StampEvent" />
 		<require level="10" />
 		<remoteComplete useRemote="1" />
 		<eventMission event="stamp" />
@@ -54653,7 +54655,7 @@
 		<condition type="item_add" code="20302617" value="3" />
 	</quest>
 	<quest id="89010385" feature="QuestCN">
-		<basic questType="5" chapterID="81056" account="1" standardLevel="1" autoStart="1" disableGiveup="1" eventTag="20210623_StampEventCN" />
+		<basic questType="5" chapterID="81056" account="1" standardLevel="1" autoStart="1" disableGiveup="1" eventTag="202112_StampEvent" />
 		<require level="10" />
 		<remoteComplete useRemote="1" />
 		<eventMission event="stamp" />
@@ -55157,28 +55159,28 @@
 		<condition type="npc" code="24000409,24001103,24000010,24000011,24000012,24000009,24001006,22000047,23100039,24001406,23100007,23100100,23100055,22000015,23100025,24001205,23100041,23100021,23100015,23100077,24000513,24000516,24000615,24001705,24001601,24001309,24002201,24001904,24001807,23100056,23190066,24001507,23100006,23100033,24002005,24002109,24002701,23100084,23100086,23100087,24003001,24003002,24003101,24003214,23190105,23190106,23000011,23000052,23090005,23000068,23000080,23000081,23000082,23000064,21420101,21420102,21420207,21420329,21420330,21420331,21420514,21420401,21420626,21420627,23000301,23090006,23500001,23500002" value="10" />
 	</quest>
 	<quest id="89010464" feature="QuestCN">
-		<basic questType="5" chapterID="81088" account="1" standardLevel="1" autoStart="1" disableGiveup="1" eventTag="20210623_StampEventCN" />
+		<basic questType="5" chapterID="81088" account="1" standardLevel="1" autoStart="1" disableGiveup="1" eventTag="202112_StampEvent" />
 		<require level="10" />
 		<remoteComplete useRemote="1" />
 		<eventMission event="stamp" />
 		<condition type="emotion" code="hello" target="02000001" value="1" />
 	</quest>
 	<quest id="89010465" feature="QuestCN">
-		<basic questType="5" chapterID="81088" standardLevel="1" autoStart="1" disableGiveup="1" eventTag="20210623_StampEventCN" />
+		<basic questType="5" chapterID="81088" standardLevel="1" autoStart="1" disableGiveup="1" eventTag="202112_StampEvent" />
 		<require level="10" />
 		<remoteComplete useRemote="1" />
 		<eventMission event="stamp" />
 		<condition type="level" target="50" value="1" />
 	</quest>
 	<quest id="89010466" feature="QuestCN">
-		<basic questType="5" chapterID="81088" standardLevel="1" autoStart="1" disableGiveup="1" eventTag="20210623_StampEventCN" />
+		<basic questType="5" chapterID="81088" standardLevel="1" autoStart="1" disableGiveup="1" eventTag="202112_StampEvent" />
 		<require level="10" />
 		<remoteComplete useRemote="1" />
 		<eventMission event="stamp" />
 		<condition type="level" target="60" value="1" />
 	</quest>
 	<quest id="89010467" feature="QuestCN">
-		<basic questType="5" chapterID="81088" standardLevel="1" autoStart="1" disableGiveup="1" eventTag="20210623_StampEventCN" />
+		<basic questType="5" chapterID="81088" standardLevel="1" autoStart="1" disableGiveup="1" eventTag="202112_StampEvent" />
 		<require level="10" />
 		<remoteComplete useRemote="1" />
 		<eventMission event="stamp" />
@@ -56014,15 +56016,17 @@
 		<gotoNpc enable="1" gotoField="2000001" gotoPortal="21" />
 	</quest>
 	<quest id="90000180">
-		<basic chapterID="9018" standardLevel="1" disableGiveup="1" locking="1" />
+		<basic chapterID="9018" standardLevel="1" disableGiveup="1" />
 		<require level="1" job="1" />
 		<start npc="11000408" />
 		<complete npc="11000408" />
-		<completeReward exp="35" relativeExp="epicQuest" money="240" />
+		<completeReward exp="35" relativeExp="epicQuest" money="240">
+			<v code="13200200" rank="1" count="1" />
+		</completeReward>
 		<condition type="item_exist" code="30000125" value="3" />
 	</quest>
 	<quest id="90000190">
-		<basic chapterID="9019" standardLevel="1" disableGiveup="1" locking="1" />
+		<basic chapterID="9019" standardLevel="1" disableGiveup="1" />
 		<require level="1" job="1" />
 		<start npc="11000409" />
 		<complete npc="11000409" />
@@ -56032,14 +56036,14 @@
 		<condition type="npc" code="99000041" value="3" />
 	</quest>
 	<quest id="90000191">
-		<basic chapterID="9019" standardLevel="1" disableGiveup="1" locking="1" />
+		<basic chapterID="9019" standardLevel="1" disableGiveup="1" />
 		<require level="1" job="1" quest="90000190" />
 		<start npc="11000409" />
 		<complete npc="11000410" />
 		<completeReward exp="100" relativeExp="epicQuest" money="240" />
 	</quest>
 	<quest id="90000192">
-		<basic chapterID="9019" standardLevel="2" disableGiveup="1" locking="1" />
+		<basic chapterID="9019" standardLevel="2" disableGiveup="1" />
 		<require level="2" job="1" quest="90000191" />
 		<start npc="11000410" />
 		<complete npc="11000410" />
