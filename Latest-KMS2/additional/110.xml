@@ -57,6 +57,7 @@
 		<level level="1" feature="JobChange_01">
 			<Basic durationTick="500" clearEffectFromPVPZone="1" />
 			<Motion abnormalImmuneBreak="5" />
+			<CancelEffect cancelEffectCodes="11000051,11000052" />
 			<SpecialAbility>
 				<v type="par" value="300" />
 				<v type="mar" value="300" />
@@ -81,6 +82,7 @@
 		<level level="1" feature="JobChange_01">
 			<Basic durationTick="500" clearEffectFromPVPZone="1" />
 			<Motion abnormalImmuneBreak="5" />
+			<CancelEffect cancelEffectCodes="11000051,11000052" />
 			<SpecialAbility>
 				<v type="par" value="300" />
 				<v type="mar" value="300" />
@@ -1771,7 +1773,7 @@
 			<Basic keepCondition="99" deadKeepEffect="1" doNotClearEffectFromEnterPVPZone="1" immediateActiveRequireSkill="1" />
 			<Condition allowDeadState="1" usedSkillIDs="11000192" />
 			<SpecialAbility>
-				<v type="mspRate" value="-800" />
+				<v type="mspRate" value="-300" />
 			</SpecialAbility>
 		</level>
 	</additional>

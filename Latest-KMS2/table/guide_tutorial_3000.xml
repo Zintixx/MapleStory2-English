@@ -27,10 +27,18 @@
 			<action type="limitDialog" dialogName="AttendGiftDialog" />
 			<action type="limitDialog" dialogName="DungeonSearchDialog" />
 			<action type="limitDialog" dialogName="MapleSurvivalDialog" />
+			<action type="limitDialog" dialogName="CheckoutBillDialog" />
+			<action type="limitDialog" dialogName="CheckoutDialog" />
+			<action type="limitDialog" dialogName="ShopDialog" />
+			<action type="limitDialog" dialogName="StoreDialog" />
+			<action type="limitDialog" dialogName="KeySettingSelectDialog" />
 			<action type="limit" limit="KeyConfigTab" />
 			<action type="limit" limit="ItemDrop" />
 			<action type="limit" limit="ItemPutOff" />
 			<action type="limit" limit="ShortcutModify" />
+			<action type="GameMenuLimit" menuID="30" enabled="0" />
+			<action type="GameMenuLimit" menuID="31" enabled="0" />
+			<action type="GameMenuLimit" menuID="32" enabled="0" />
 		</openAction>
 	</event>
 	<event id="3001" saveId="3001" isForce="1">
@@ -374,7 +382,7 @@
 			<action type="uiTutorial">
 				<text textId="3170" waitTick="2600" />
 			</action>
-			<action type="uiArrowDialog" customPosValue="13000001" customPosType="inventoryItemID" dialogName="InventoryDialog" direction="0" entityId="1000" offset="110,50,0" textId="3172">
+			<action type="uiArrowDialog" customPosValue="13200200" customPosType="inventoryItemID" dialogName="InventoryDialog" direction="0" entityId="1000" offset="110,50,0" textId="3172">
 				<focusDialogName v="InventoryDialog" />
 				<focusDialogName v="MyInfoDialog" />
 			</action>
@@ -405,13 +413,13 @@
 			<condition type="guideClear" id="3180" />
 		</open>
 		<close>
-			<condition type="EquipItem" slotName="RH" itemID="13000001" />
+			<condition type="EquipItem" slotName="RH" itemID="13200200" />
 		</close>
 		<openAction>
 			<action type="equipWeaponTutorial" isUse="1" />
 			<action type="limit" limit="ActionTalk" />
 			<action type="uiSummary" textId="3190" />
-			<action type="uiArrowDialog" customPosValue="13000001" customPosType="inventoryItemID" dialogName="InventoryDialog" direction="0" entityId="1000" offset="110,50,0" textId="3191">
+			<action type="uiArrowDialog" customPosValue="13200200" customPosType="inventoryItemID" dialogName="InventoryDialog" direction="0" entityId="1000" offset="110,50,0" textId="3191">
 				<focusDialogName v="InventoryDialog" />
 				<focusDialogName v="MyInfoDialog" />
 			</action>
