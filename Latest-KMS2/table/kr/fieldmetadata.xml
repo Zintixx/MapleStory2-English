@@ -23895,6 +23895,9 @@
 	<npc id="23000081">
 		<field id="2000375" />
 	</npc>
+	<npc id="23000084">
+		<field id="2000559" />
+	</npc>
 	<npc id="23000088">
 		<field id="2000409" />
 	</npc>
@@ -45760,6 +45763,7 @@
 		<portal id="2" targetField="2000276" targetPortal="3" portalType="0" portalIndoor="0" />
 	</fieldPortal>
 	<fieldPortal field="2000275" indoor="0">
+		<portal id="23110" targetField="2000559" targetPortal="1" portalType="8" portalIndoor="1" />
 		<portal id="38" targetField="63000038" targetPortal="0" portalType="0" portalIndoor="1" />
 		<portal id="51" targetField="2000275" targetPortal="52" portalType="0" portalIndoor="0" />
 		<portal id="1" targetField="2000274" targetPortal="3" portalType="0" portalIndoor="0" />
@@ -47015,6 +47019,25 @@
 	</fieldPortal>
 	<fieldPortal field="2000555" indoor="1">
 		<portal id="2" targetField="2000536" targetPortal="1" portalType="0" portalIndoor="1" />
+	</fieldPortal>
+	<fieldPortal field="2000559" indoor="1">
+		<portal id="11" targetField="0" targetPortal="0" portalType="0" portalIndoor="0" />
+		<portal id="111" targetField="2000559" targetPortal="102" portalType="0" portalIndoor="1" />
+		<portal id="3" targetField="0" targetPortal="0" portalType="0" portalIndoor="0" />
+		<portal id="2" targetField="0" targetPortal="0" portalType="0" portalIndoor="0" />
+		<portal id="6" targetField="0" targetPortal="0" portalType="0" portalIndoor="0" />
+		<portal id="5" targetField="0" targetPortal="0" portalType="0" portalIndoor="0" />
+		<portal id="106" targetField="0" targetPortal="0" portalType="0" portalIndoor="0" />
+		<portal id="103" targetField="2000559" targetPortal="104" portalType="0" portalIndoor="1" />
+		<portal id="10" targetField="2000559" targetPortal="11" portalType="0" portalIndoor="1" />
+		<portal id="115" targetField="2000559" targetPortal="106" portalType="0" portalIndoor="1" />
+		<portal id="7" targetField="0" targetPortal="0" portalType="0" portalIndoor="0" />
+		<portal id="104" targetField="0" targetPortal="0" portalType="0" portalIndoor="0" />
+		<portal id="105" targetField="2000559" targetPortal="106" portalType="0" portalIndoor="1" />
+		<portal id="113" targetField="2000559" targetPortal="104" portalType="0" portalIndoor="1" />
+		<portal id="102" targetField="0" targetPortal="0" portalType="0" portalIndoor="0" />
+		<portal id="101" targetField="2000559" targetPortal="102" portalType="0" portalIndoor="1" />
+		<portal id="4" targetField="0" targetPortal="0" portalType="0" portalIndoor="0" />
 	</fieldPortal>
 	<fieldPortal field="2010002" indoor="0">
 		<portal id="3" targetField="2010020" targetPortal="2" portalType="0" portalIndoor="0" />
@@ -50974,9 +50997,9 @@
 	<fluid field="2000316" attr="lava" />
 	<fluid field="52010065" attr="lava" />
 	<fluid field="2000317" attr="water,lava" />
+	<fluid field="52000167" attr="water" />
 	<fluid field="2000318" attr="water" />
 	<fluid field="3000117" attr="poison" />
-	<fluid field="52000167" attr="water" />
 	<fluid field="63000041" attr="water" />
 	<fluid field="52000168" attr="water" />
 	<fluid field="2000319" attr="poison" />
@@ -51162,6 +51185,7 @@
 	<fluid field="2000554" attr="poison" />
 	<fluid field="2000036" attr="water" />
 	<fluid field="2000037" attr="lava" />
+	<fluid field="2000559" attr="devilwater,poison" />
 	<fluid field="2000038" attr="water" />
 	<fluid field="2000039" attr="lava" />
 	<fluid field="2000040" attr="lava" />
@@ -54047,6 +54071,7 @@
 	</interactObject>
 	<interactObject id="10001024">
 		<field id="2000375" />
+		<field id="2000559" />
 		<field id="63000038" />
 	</interactObject>
 	<interactObject id="10001025">

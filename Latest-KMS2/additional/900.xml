@@ -8450,6 +8450,18 @@
 			</SpecialAbility>
 		</level>
 	</additional>
+	<additional id="90000951">
+		<level level="1" stringParam="150,7,4">
+			<Basic keepCondition="99" />
+			<Condition applyPvPZoneType="1" />
+			<SpecialAbility>
+				<v type="sgi_boss" value="40" />
+				<v type="offensive_physicaldamage" value="70" />
+				<v type="offensive_magicaldamage" value="70" />
+				<v type="cad" value="150" />
+			</SpecialAbility>
+		</level>
+	</additional>
 	<additional id="90001001">
 		<level level="1" stringParam="5">
 			<Basic keepCondition="99" doNotClearEffectFromEnterPVPZone="1" />
@@ -21078,6 +21090,14 @@
 			<Motion keepEffect="Additional/Burn/Eff_Additional_Burn_Keep.xml" stopEffect="Additional/Burn/Eff_Additional_Burn_Stop.xml" />
 			<DotDamage value="25174" element="1" soundMaterial="100" />
 			<UI icon="./Data/Resource/Image/skill/icon/FireDark.png" iconOnOff="2" />
+		</level>
+	</additional>
+	<additional id="90051833" isDebuff="1">
+		<level>
+			<Basic intervalTick="1000" keepCondition="99" resetCondition="1" dotCondition="1" deadKeepEffect="1" logoutClearEffect="1" leaveFieldClearEffect="1" />
+			<Condition allowDeadState="1" />
+			<UI icon="./Data/Resource/Image/Skill/icon/CurseOfYuperia.png" isHideCooltime="1" />
+			<Additional level="1" skillID="70002182" skillTarget="1" activeByIntervalTick="1" />
 		</level>
 	</additional>
 	<additional id="90060030">

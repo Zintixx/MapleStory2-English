@@ -1988,13 +1988,17 @@
 		</slots>
 		<customize color="1" colorPalette="10" defaultColorIndex="14" />
 	</ItemModel>
-	<ItemModel id="11300291">
+	<ItemModel id="11300291" desc="미스터리 클럽 모자">
 		<slots>
 			<slot name="CP">
-				<asset name="Data/Resource/Model/Item/1/13/11300291_C_CPSherlock02_F.nif" selfnode="CP" targetnode="Bip01 Head" />
+				<asset name="Data/Resource/Model/Item/1/13/11300291_C_CPSherlock02_F.nif" selfnode="CP" targetnode="Bip01 Head">
+					<userrotation axis="x" default="0" />
+					<userrotation axis="y" default="0" />
+					<userrotation axis="z" min="-180" max="180" default="0" />
+				</asset>
 			</slot>
 		</slots>
-		<customize color="1" colorPalette="10" defaultColorIndex="2" />
+		<customize color="1" colorPalette="10" defaultColorIndex="2" rotation="1" capAttach="1" />
 	</ItemModel>
 	<ItemModel id="11300307">
 		<slots>

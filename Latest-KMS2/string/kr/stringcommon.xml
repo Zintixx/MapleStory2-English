@@ -1001,8 +1001,10 @@
 	<key id="s_gamehelper_voice_chat_enter" value="음성 채팅 방에 입장하셨습니다." />
 	<key id="s_gamehelper_voice_chat_leave" value="음성 채팅 방에서 퇴장하셨습니다." />
 	<key id="s_buddy_confirm_ban_somebody" value="{0} 님을 차단 하시겠습니까?" />
+	<key id="s_buddy_confirm_homeblock_somebody" value="{0} 님을 내 집에서 차단 하시겠습니까?" />
 	<key id="s_buddy_confirm_del_somebody_from_list" value="{0} 님을 친구 목록에서 삭제하시겠습니까?" />
 	<key id="s_buddy_confirm_del_somebody_from_banlist" value="{0} 님을 차단 목록에서 삭제하시겠습니까?" />
+	<key id="s_buddy_confirm_del_somebody_from_homeblocklist" value="{0} 님을 차단 목록에서 삭제하시겠습니까?" />
 	<key id="s_login_err_connect" value="접속할 수 없습니다.\n(code = {0})" />
 	<key id="s_login_err_disconnected" value="서버와 연결이 끊어졌습니다.\n({0})" />
 	<key id="s_notice_bypass" value="서버와 연결이 끊어졌습니다.\n({0})\n다시 접속하시겠습니까?" />
@@ -2227,6 +2229,7 @@
 	<key id="s_buddy_format_mapuser_count" value="{0}\n접속자 수: {1}명" />
 	<key id="s_buddy_format_recv_count" value="받은 요청: {0}명" />
 	<key id="s_buddy_format_ban_count" value="차단한 사람: {0}명" />
+	<key id="s_buddy_format_homeblock_count" value="내 집 차단한 사람: {0}명" />
 	<key id="s_buddy_format_buddy_count" value="접속한 친구: &lt;FONT color=&apos;#00A2ED&apos;&gt;{0}&lt;/FONT&gt; / {1}명" />
 	<key id="s_buddy_err_miss_id" value="잘못된 대상입니다." />
 	<key id="s_buddy_err_empty_id" value="캐릭터 이름을 입력해 주세요." />
@@ -2244,6 +2247,16 @@
 	<key id="s_buddy_err_my_id_ex" value="자기 자신을 추가할 수 없습니다." />
 	<key id="s_buddy_err_already_request_somebody" value="{0} 님에게 이미 친구 요청한 상태입니다." />
 	<key id="s_buddy_err_already_receive_from_this_char" value="이미 나에게 친구 요청을 한 캐릭터입니다.\n친구 창을 확인하세요." />
+	<key id="s_home_block_somebody" value="{0} 님을 내 집에서 차단했습니다." />
+	<key id="s_home_block_del_somebody_from_banlist" value="{0} 님이 내 집 차단 목록에서 삭제됐습니다." />
+	<key id="s_home_block_memo_complete" value="{0} 님에 대한 차단 메모를 편집했습니다." />
+	<key id="s_home_block_err_unknown" value="요청을 수행할 수 없습니다." />
+	<key id="s_home_block_err_no_user" value="잘못된 대상입니다." />
+	<key id="s_home_block_err_self_block" value="자기 자신을 차단할 수 없습니다." />
+	<key id="s_home_block_err_already_block" value="이미 차단한 유저입니다." />
+	<key id="s_home_block_err_max_block" value="더 이상 차단할 수 없습니다." />
+	<key id="s_home_block_err_enterance_block" value="상대방의 집 차단목록에 추가되어 입장할 수 없습니다." />
+	<key id="s_home_block_err_kick" value="상대방의 집 차단목록에 추가되어 강제 퇴장되었습니다." />
 	<key id="s_msg_crystal_upgrade_empty" value="업그레이드 할 수 있는 크리스탈이 없습니다." />
 	<key id="s_msg_crystal_upgrade_disabled" value="강화 할 수 있는 크리스탈이 아닙니다." />
 	<key id="s_msg_crystal_upgrade_complete" value="강화가 완료됐습니다." />
@@ -3292,7 +3305,7 @@
 	<key id="s_home_visit_failed_homeless" value="이 집은 방문할 수 없습니다." />
 	<key id="s_home_visit_failed_disablemap" value="이 곳에서는 다른 사람의 집을 방문할 수 없습니다." />
 	<key id="s_home_visit_failed_myhome" value="내 집으로는 이동할 수 없습니다." />
-	<key id="s_home_visit_failed_private" value="이 집은 방문할 수 없습니다." />
+	<key id="s_home_visit_failed_private" value="방문하려는 집이 비공개 상태이므로 방문할 수 없습니다." />
 	<key id="s_home_invite_confirm" value="{0} 님이 집에 초대했습니다.\n바로 방문하시겠습니까?" />
 	<key id="s_home_invite_accept" value="{0} 님이 집 초대를 수락했습니다." />
 	<key id="s_home_invite_reject" value="{0} 님이 집 초대를 거절했습니다." />
@@ -6433,5 +6446,5 @@
 	<key id="s_personal_infomaion_agreement_visit_myhome_btn_public" value="공개" />
 	<key id="s_personal_infomaion_agreement_visit_myhome_btn_password" value="비번 입력" />
 	<key id="s_personal_infomaion_agreement_visit_myhome_btn_private" value="비공개" />
-	<key id="s_personal_infomaion_agreement_visit_myhome_input_password" value="홈 권한 비밀번호를 입력하십시오.\n(숫자 6자까지 입력할 수 있습니다.)" />
+	<key id="s_personal_infomaion_agreement_visit_myhome_input_password" value="홈 권한 비밀번호를 입력하십시오.\n(숫자 6자리만 가능합니다.)" />
 </ms2>
