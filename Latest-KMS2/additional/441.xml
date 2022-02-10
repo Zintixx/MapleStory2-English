@@ -1,10 +1,109 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ms2>
+	<!-- 기절 -->
 	<additional id="44100000" isDebuff="1">
 		<level level="1">
-			<Basic durationTick="15000" />
+			<Basic buffType="2" durationTick="4000" />
+			<Motion keepEffect="Additional/Stun/Eff_Additional_Stun_Keep.xml" stopEffect="Additional/Stun/Eff_Additional_Stun_Stop.xml" stun="1" abnormalImmuneBreak="5" />
+			<UI icon="./Data/Resource/Image/skill/icon/Stun.png" />
+		</level>
+		<level level="2">
+			<Basic buffType="2" durationTick="4500" />
+			<Motion keepEffect="Additional/Stun/Eff_Additional_Stun_Keep.xml" stopEffect="Additional/Stun/Eff_Additional_Stun_Stop.xml" stun="1" abnormalImmuneBreak="5" />
+			<UI icon="./Data/Resource/Image/skill/icon/Stun.png" />
+		</level>
+		<level level="3">
+			<Basic buffType="2" durationTick="5000" />
+			<Motion keepEffect="Additional/Stun/Eff_Additional_Stun_Keep.xml" stopEffect="Additional/Stun/Eff_Additional_Stun_Stop.xml" stun="1" abnormalImmuneBreak="5" />
+			<UI icon="./Data/Resource/Image/skill/icon/Stun.png" />
+		</level>
+	</additional>
+
+	<!-- 속박 -->
+	<additional id="44100001" isDebuff="1">
+		<level level="1">
+			<Basic buffType="2" durationTick="2000" />
+			<Motion keepEffect="NPC/Skill/Primadonna/Eff_Primadonna_Attack_Bind.xml" stopEffect="NPC/Skill/Primadonna/Eff_Primadonna_Attack_Bind_End.xml" skillUseDisable="0"  />
+			<SpecialAbility>
+				<v type="mspRate" value="-1000" />
+				<v type="jmpRate" value="-1000" />
+			</SpecialAbility>
+			<UI icon="./Data/Resource/Image/skill/icon/SpeedDownVineThorn.png" />
+		</level>
+		<level level="2">
+			<Basic buffType="2" durationTick="2500" />
+			<Motion keepEffect="NPC/Skill/Primadonna/Eff_Primadonna_Attack_Bind.xml" stopEffect="NPC/Skill/Primadonna/Eff_Primadonna_Attack_Bind_End.xml" skillUseDisable="0"  />
+			<SpecialAbility>
+				<v type="mspRate" value="-1000" />
+				<v type="jmpRate" value="-1000" />
+			</SpecialAbility>
+			<UI icon="./Data/Resource/Image/skill/icon/SpeedDownVineThorn.png" />
+		</level>
+		<level level="3">
+			<Basic buffType="2" durationTick="3000" />
+			<Motion keepEffect="NPC/Skill/Primadonna/Eff_Primadonna_Attack_Bind.xml" stopEffect="NPC/Skill/Primadonna/Eff_Primadonna_Attack_Bind_End.xml" skillUseDisable="0"  />
+			<SpecialAbility>
+				<v type="mspRate" value="-1000" />
+				<v type="jmpRate" value="-1000" />
+			</SpecialAbility>
+			<UI icon="./Data/Resource/Image/skill/icon/SpeedDownVineThorn.png" />
+		</level>
+	</additional>
+
+	<!-- 쉴드 -->
+	<additional id="44100002" isDebuff="1" >
+		<level level="1">
+			<Basic durationTick="10000" attackPossibleSkillIDs="90003003" attackPossibleDotEffectIDs="120010006" />
 			<Motion abnormalImmuneBreak="1" />
-			<Shield hpValue="100000000" uiType="2" uiTypeValue="60300016" />
+			<Shield hpValue="100000" uiType="3" uiTypeValue="60300016" />
+		</level>
+	</additional>
+
+	<!-- 공격력 감소 -->
+	<additional id="44100003" isDebuff="1">
+		<level level="1">
+			<Basic buffType="2" durationTick="1000" />
+			<Motion keepEffect="Additional/Offense/Eff_Additional_OffenseDownDebuff_Keep.xml" abnormalImmuneBreak="1" />
+			<!-- 20퍼센트 감소 -->
+			<SpecialAbility>
+				<v type="papRate" value="-200" />
+				<v type="mapRate" value="-200" />
+			</SpecialAbility>
+			<UI icon="./Data/Resource/Image/skill/icon/destroyWeapon.png" />
+		</level>
+		<level level="2">
+			<Basic buffType="2" durationTick="1000" />
+			<Motion keepEffect="Additional/Offense/Eff_Additional_OffenseDownDebuff_Keep.xml" abnormalImmuneBreak="1" />
+			<!-- 20퍼센트 감소 -->
+			<SpecialAbility>
+				<v type="papRate" value="-300" />
+				<v type="mapRate" value="-300" />
+			</SpecialAbility>
+			<UI icon="./Data/Resource/Image/skill/icon/destroyWeapon.png" />
+		</level>
+		<level level="3">
+			<Basic buffType="2" durationTick="1000" />
+			<Motion keepEffect="Additional/Offense/Eff_Additional_OffenseDownDebuff_Keep.xml" abnormalImmuneBreak="1" />
+			<!-- 20퍼센트 감소 -->
+			<SpecialAbility>
+				<v type="papRate" value="-400" />
+				<v type="mapRate" value="-400" />
+			</SpecialAbility>
+			<UI icon="./Data/Resource/Image/skill/icon/destroyWeapon.png" />
+		</level>
+	</additional>
+
+	<!-- 프리마돈나 스케일 조정. -->
+	<additional id="44100004" isDebuff="1">
+		<!-- 감소-->
+		<level level="1">
+			<Basic durationTick="1200000" />
+			<Motion abnormalImmuneBreak="1" scale="-1" />
+		</level>
+		<!-- 버프 해제.-->
+		<level level="2">
+			<Basic durationTick="5000" />
+			<Motion abnormalImmuneBreak="1" scale="0" />
 		</level>
 	</additional>
 </ms2>

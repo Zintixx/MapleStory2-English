@@ -9374,6 +9374,7 @@
 		<complete npc="11004872" />
 		<completeReward exp="2516075" relativeExp="epicQuest" money="10750" />
 		<progressMap progressMap="52100402" />
+		<condition type="interact_object" code="10001458" value="1" />
 	</quest>
 	<quest id="10003472" feature="EpicApocalypse04">
 		<basic chapterID="5035" standardLevel="77" disableGiveup="1" useNavi="1" useReEntryHiddenMap="1" />
@@ -25225,7 +25226,7 @@
 		<progressMap progressMap="52010068" />
 	</quest>
 	<quest id="50100660" feature="EyeOfLapentaQuest">
-		<basic chapterID="4091" standardLevel="60" disableGiveup="1" useNavi="1" usePostbox="1" />
+		<basic chapterID="4091" standardLevel="60" autoStart="1" disableGiveup="1" useNavi="1" usePostbox="1" />
 		<notify acceptSoundKey="Chapterbook_Start" />
 		<require level="60" quest="50100650" />
 		<dispatch type="monologueAccept" field="2000496" />
@@ -46996,6 +46997,16 @@
 		</completeReward>
 		<condition type="interact_object" code="11000136" value="10" />
 	</quest>
+	<quest id="80000654" feature="22_04">
+		<basic questType="2" chapterID="8178" account="1" standardLevel="10" repeatable="2" usePeriod="1440" eventTag="202204_BlackbeanBallon" usePostbox="1" />
+		<require level="10" dayOfWeek="1,2,3,4,5,6,7" />
+		<start npc="11001002" />
+		<complete npc="11001002" />
+		<completeReward>
+			<v code="30001527" rank="1" count="50" />
+		</completeReward>
+		<condition type="interact_object" code="11000138" value="10" />
+	</quest>
 	<quest id="80010000" feature="QuestCN">
 		<basic questType="2" chapterID="81000" standardLevel="1" repeatable="2" usePeriod="1440" eventTag="20170830_DuckyBalloon" />
 		<require level="1" dayOfWeek="1,7" />
@@ -52598,6 +52609,137 @@
 		<remoteComplete useRemote="1" />
 		<eventMission event="stamp" />
 		<condition type="dungeon_clear_group" code="2" value="10" />
+	</quest>
+	<quest id="89000551">
+		<basic questType="5" account="1" standardLevel="1" autoStart="1" disableGiveup="1" eventTag="202203_StampEvent" />
+		<require level="10" />
+		<remoteComplete useRemote="1" />
+		<eventMission event="stamp" />
+		<condition type="emotion" code="hello" target="02000001" value="1" />
+	</quest>
+	<quest id="89000552">
+		<basic questType="5" account="1" standardLevel="1" autoStart="1" disableGiveup="1" eventTag="202203_StampEvent" />
+		<require level="10" />
+		<eventMission event="stamp" />
+		<condition type="enter_otherhouse" value="1" />
+	</quest>
+	<quest id="89000553">
+		<basic questType="5" account="1" standardLevel="1" autoStart="1" disableGiveup="1" eventTag="202203_StampEvent" />
+		<require level="10" />
+		<eventMission event="stamp" />
+		<condition type="glide" value="50" />
+	</quest>
+	<quest id="89000554">
+		<basic questType="5" account="1" standardLevel="1" autoStart="1" disableGiveup="1" eventTag="202203_StampEvent" />
+		<require level="10" />
+		<eventMission event="stamp" />
+		<condition type="riding" value="100" />
+	</quest>
+	<quest id="89000555">
+		<basic questType="5" account="1" standardLevel="1" autoStart="1" disableGiveup="1" eventTag="202203_StampEvent" />
+		<require level="10" />
+		<eventMission event="stamp" />
+		<condition type="glide" value="1000" />
+	</quest>
+	<quest id="89000556">
+		<basic questType="5" account="1" standardLevel="1" autoStart="1" disableGiveup="1" eventTag="202203_StampEvent" />
+		<require level="10" />
+		<eventMission event="stamp" />
+		<condition type="fish" value="10" />
+	</quest>
+	<quest id="89000557">
+		<basic questType="5" account="1" standardLevel="1" autoStart="1" disableGiveup="1" eventTag="202203_StampEvent" />
+		<require level="10" />
+		<eventMission event="stamp" />
+		<condition type="mastery_harvest" code="50000001" value="10" />
+	</quest>
+	<quest id="89000558">
+		<basic questType="5" account="1" standardLevel="1" autoStart="1" disableGiveup="1" eventTag="202203_StampEvent" />
+		<require level="10" />
+		<eventMission event="stamp" />
+		<condition type="mastery_gathering" code="30000001" value="10" />
+	</quest>
+	<quest id="89000559">
+		<basic questType="5" account="1" standardLevel="1" autoStart="1" disableGiveup="1" eventTag="202203_StampEvent" />
+		<require level="10" />
+		<eventMission event="stamp" />
+		<condition type="mastery_harvest" code="60000011" value="10" />
+	</quest>
+	<quest id="89000560">
+		<basic questType="5" account="1" standardLevel="1" autoStart="1" disableGiveup="1" eventTag="202203_StampEvent" />
+		<require level="10" />
+		<eventMission event="stamp" />
+		<condition type="mastery_gathering" code="40000011" value="10" />
+	</quest>
+	<quest id="89000561">
+		<basic questType="5" account="1" standardLevel="1" autoStart="1" disableGiveup="1" eventTag="202203_StampEvent" />
+		<require level="10" />
+		<remoteComplete useRemote="1" />
+		<eventMission event="stamp" />
+		<condition type="trigger" code="dailyquest_start" value="1" />
+	</quest>
+	<quest id="89000562">
+		<basic questType="5" account="1" standardLevel="1" autoStart="1" disableGiveup="1" eventTag="202203_StampEvent" />
+		<require level="1" />
+		<remoteComplete useRemote="1" />
+		<eventMission event="stamp" />
+		<condition type="trigger" code="dailyquest_start" value="5" />
+	</quest>
+	<quest id="89000563">
+		<basic questType="5" account="1" standardLevel="1" autoStart="1" disableGiveup="1" eventTag="202203_StampEvent" />
+		<require level="10" />
+		<remoteComplete useRemote="1" />
+		<eventMission event="stamp" />
+		<condition type="npc" value="1000" />
+	</quest>
+	<quest id="89000564">
+		<basic questType="5" account="1" standardLevel="1" autoStart="1" disableGiveup="1" eventTag="202203_StampEvent" />
+		<require level="10" />
+		<remoteComplete useRemote="1" />
+		<eventMission event="stamp" />
+		<condition type="npc" value="5000" />
+	</quest>
+	<quest id="89000565">
+		<basic questType="5" account="1" standardLevel="1" autoStart="1" disableGiveup="1" eventTag="202203_StampEvent" />
+		<require level="10" />
+		<remoteComplete useRemote="1" />
+		<eventMission event="stamp" />
+		<condition type="npc" code="23000013,23000018,23000001,23000019,23000054,23000020,23000035,23000099,23000017," value="1" />
+	</quest>
+	<quest id="89000566">
+		<basic questType="5" account="1" standardLevel="1" autoStart="1" disableGiveup="1" eventTag="202203_StampEvent" />
+		<require level="10" />
+		<remoteComplete useRemote="1" />
+		<eventMission event="stamp" />
+		<condition type="npc" code="23000013,23000018,23000001,23000019,23000054,23000020,23000035,23000099,23000017," value="3" />
+	</quest>
+	<quest id="89000567">
+		<basic questType="5" account="1" standardLevel="1" autoStart="1" disableGiveup="1" eventTag="202203_StampEvent" />
+		<require level="10" />
+		<remoteComplete useRemote="1" />
+		<eventMission event="stamp" />
+		<condition type="dungeon_clear_group" code="2" value="5" />
+	</quest>
+	<quest id="89000568">
+		<basic questType="5" account="1" standardLevel="1" autoStart="1" disableGiveup="1" eventTag="202203_StampEvent" />
+		<require level="10" />
+		<remoteComplete useRemote="1" />
+		<eventMission event="stamp" />
+		<condition type="dungeon_clear_group" code="2" value="10" />
+	</quest>
+	<quest id="89000569">
+		<basic questType="5" standardLevel="1" autoStart="1" disableGiveup="1" eventTag="202203_StampEvent" />
+		<require level="1" />
+		<remoteComplete useRemote="1" />
+		<eventMission event="stamp" />
+		<condition type="level" target="80" value="1" />
+	</quest>
+	<quest id="89000570">
+		<basic questType="5" account="1" standardLevel="1" autoStart="1" disableGiveup="1" eventTag="202203_StampEvent" />
+		<require level="1" />
+		<remoteComplete useRemote="1" />
+		<eventMission event="stamp" />
+		<condition type="quest_clear" code="94000391" value="1" />
 	</quest>
 	<quest id="89010000" feature="QuestCN">
 		<basic questType="5" chapterID="81001" account="1" standardLevel="1" autoStart="1" disableGiveup="1" eventTag="20170830_CNstampevent" />

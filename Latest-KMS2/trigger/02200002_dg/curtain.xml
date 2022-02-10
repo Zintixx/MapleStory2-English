@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ms2>
+	<state name="시작대기중">
+		<condition name="무조건">
+			<transition state="초기화"/>
+		</condition>
+	</state>
+	
+	<state name="초기화">
+		<onEnter>
+			<action name="SetUserValue" key="CurtainOff" value="0"/>
+		</onEnter>
+		<condition name="무조건" > 
+			<transition state="대기"/>
+		</condition>
+	</state>
+	
+	<state name="대기"> 
+		<condition name="UserValue" key="CurtainOff" value="1">  
+			<transition state="커튼열기"/>
+		</condition>			
+	</state>
+
+	<!-- <state name="초기화">
+		<onEnter>
+			<action name="SetUserValue" key="CurtainOff" value="0"/>
+		</onEnter>
+		<condition name="무조건" > 
+			<transition state="대기"/>
+		</condition>
+	</state>
+	
+	<state name="대기"> 
+		<condition name="UserValue" key="CurtainOff" value="1">  
+			<transition state="카메라기다리기"/>
+		</condition>			
+	</state>
+
+	<state name="카메라기다리기"> 
+		<onEnter>
+			<action name="SetUserValue" triggerID="99999997" key="CameraOn" value="1"/>
+		</onEnter>
+		<condition name="WaitTick" waitTick="4000">  
+			<transition state="커튼열기"/>
+		</condition>	
+	</state> -->
+
+	<state name="커튼열기"> 
+		<onEnter>
+			<!--커튼 제거-->
+			<action name="메쉬를설정한다" arg1="1000-1030" arg2="0"/>
+		</onEnter>
+		<condition name="WaitTick" waitTick="3000">  
+			<transition state="끝"/>
+		</condition>	
+	</state>
+  	<state name="끝">
+  	</state>
+</ms2>
