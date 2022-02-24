@@ -959,11 +959,11 @@
 		</level>
 	</additional>
 	<additional id="10300171" skillGroupType="1">
-		<level level="1" feature="JobChange_01" stringParam="25,35">
+		<level level="1" feature="JobChange_01" stringParam="50,35">
 			<Basic group="10300171" durationTick="10000" clearEffectFromPVPZone="1" />
 			<Motion startEffect="CH/Skill/Wizard/Eff_Wizard_ManaControl_Start_01.xml" keepEffect="CH/Skill/Wizard/Eff_Wizard_ManaControl_Keep_01.xml" stopEffect="CH/Skill/Wizard/Eff_Wizard_ManaControl_Stop_01.xml" abnormalImmuneBreak="5" />
 			<SpecialAbility>
-				<v type="mapRate" value="250" />
+				<v type="offensive_magicaldamage" value="500" />
 				<v type="msp" value="35" />
 			</SpecialAbility>
 			<UI icon="./Data/Resource/Image/skill/icon/10300171_buff.png" />
@@ -1322,6 +1322,7 @@
 			<Basic durationTick="10000" casterIndividualEffect="1" clearEffectFromPVPZone="1" />
 			<Motion startEffect="CH/Skill/Wizard/Eff_Wizard_HappyIceCream_Start_01.xml" keepEffect="CH/Skill/Wizard/Eff_Wizard_HappyIceCream_Keep_01.xml" stopEffect="CH/Skill/Wizard/Eff_Wizard_HappyIceCream_Stop_01.xml" abnormalImmuneBreak="5" />
 			<UI icon="./Data/Resource/Image/skill/icon/10300191_buff.png" />
+			<Additional level="1" skillID="10300196" skillTarget="1" ownerEvent="6" ownerEventIgnore="1" />
 		</level>
 	</additional>
 	<additional id="10300194" isDebuff="1" skillGroupType="1">
@@ -1341,6 +1342,12 @@
 				<v type="mspRate" value="-300" />
 			</SpecialAbility>
 			<UI icon="./Data/Resource/Image/skill/icon/41000013.png" />
+		</level>
+	</additional>
+	<additional id="10300196" mainType="4" skillGroupType="1">
+		<level level="1">
+			<Basic durationTick="100" intervalTick="100" />
+			<Recovery showUIText="0" spValue="1" />
 		</level>
 	</additional>
 	<additional id="10300199" skillGroupType="1">
@@ -1418,84 +1425,84 @@
 		</level>
 	</additional>
 	<additional id="10300201" skillGroupType="1">
-		<level level="1" feature="JobChange_01" stringParam="1,36">
+		<level level="1" feature="JobChange_01" stringParam="1,126">
 			<Basic durationTick="29000" delayTick="1000" invokeEvent="1" clearEffectFromPVPZone="1" />
 			<Motion startEffect="CH/Skill/Wizard/Eff_Wizard_MagicArmor_Start_01.xml" keepEffect="CH/Skill/Wizard/Eff_Wizard_MagneticField_Keep_01.xml" stopEffect="CH/Skill/Wizard/Eff_Wizard_MagneticField_Stop_01.xml" invokeEffect="CH/Skill/Wizard/Eff_Wizard_MagneticField_Invoke_01.xml" />
 			<Status compulsionEventTypes="2" compulsionEventRate="0.1" />
 			<UI icon="./Data/Resource/Image/skill/icon/10300201_buff.png" iconOnOff="0" />
 			<Additional level="1" skillID="10300204" skillTarget="1" ownerEvent="4" />
 		</level>
-		<level level="2" feature="JobChange_01" stringParam="1,40">
+		<level level="2" feature="JobChange_01" stringParam="1,140">
 			<Basic durationTick="29000" delayTick="1000" invokeEvent="1" clearEffectFromPVPZone="1" />
 			<Motion startEffect="CH/Skill/Wizard/Eff_Wizard_MagicArmor_Start_01.xml" keepEffect="CH/Skill/Wizard/Eff_Wizard_MagneticField_Keep_01.xml" stopEffect="CH/Skill/Wizard/Eff_Wizard_MagneticField_Stop_01.xml" invokeEffect="CH/Skill/Wizard/Eff_Wizard_MagneticField_Invoke_01.xml" />
 			<Status compulsionEventTypes="2" compulsionEventRate="0.1" />
 			<UI icon="./Data/Resource/Image/skill/icon/10300201_buff.png" iconOnOff="0" />
 			<Additional level="1" skillID="10300204" skillTarget="1" ownerEvent="4" />
 		</level>
-		<level level="3" feature="JobChange_01" stringParam="1,44">
+		<level level="3" feature="JobChange_01" stringParam="1,154">
 			<Basic durationTick="29000" delayTick="1000" invokeEvent="1" clearEffectFromPVPZone="1" />
 			<Motion startEffect="CH/Skill/Wizard/Eff_Wizard_MagicArmor_Start_01.xml" keepEffect="CH/Skill/Wizard/Eff_Wizard_MagneticField_Keep_01.xml" stopEffect="CH/Skill/Wizard/Eff_Wizard_MagneticField_Stop_01.xml" invokeEffect="CH/Skill/Wizard/Eff_Wizard_MagneticField_Invoke_01.xml" />
 			<Status compulsionEventTypes="2" compulsionEventRate="0.1" />
 			<UI icon="./Data/Resource/Image/skill/icon/10300201_buff.png" iconOnOff="0" />
 			<Additional level="1" skillID="10300204" skillTarget="1" ownerEvent="4" />
 		</level>
-		<level level="4" feature="JobChange_01" stringParam="1,48">
+		<level level="4" feature="JobChange_01" stringParam="1,168">
 			<Basic durationTick="29000" delayTick="1000" invokeEvent="1" clearEffectFromPVPZone="1" />
 			<Motion startEffect="CH/Skill/Wizard/Eff_Wizard_MagicArmor_Start_01.xml" keepEffect="CH/Skill/Wizard/Eff_Wizard_MagneticField_Keep_01.xml" stopEffect="CH/Skill/Wizard/Eff_Wizard_MagneticField_Stop_01.xml" invokeEffect="CH/Skill/Wizard/Eff_Wizard_MagneticField_Invoke_01.xml" />
 			<Status compulsionEventTypes="2" compulsionEventRate="0.1" />
 			<UI icon="./Data/Resource/Image/skill/icon/10300201_buff.png" iconOnOff="0" />
 			<Additional level="1" skillID="10300204" skillTarget="1" ownerEvent="4" />
 		</level>
-		<level level="5" feature="JobChange_01" stringParam="1,52">
+		<level level="5" feature="JobChange_01" stringParam="1,182">
 			<Basic durationTick="29000" delayTick="1000" invokeEvent="1" clearEffectFromPVPZone="1" />
 			<Motion startEffect="CH/Skill/Wizard/Eff_Wizard_MagicArmor_Start_01.xml" keepEffect="CH/Skill/Wizard/Eff_Wizard_MagneticField_Keep_01.xml" stopEffect="CH/Skill/Wizard/Eff_Wizard_MagneticField_Stop_01.xml" invokeEffect="CH/Skill/Wizard/Eff_Wizard_MagneticField_Invoke_01.xml" />
 			<Status compulsionEventTypes="2" compulsionEventRate="0.1" />
 			<UI icon="./Data/Resource/Image/skill/icon/10300201_buff.png" iconOnOff="0" />
 			<Additional level="1" skillID="10300204" skillTarget="1" ownerEvent="4" />
 		</level>
-		<level level="6" feature="JobChange_01" stringParam="1,56">
+		<level level="6" feature="JobChange_01" stringParam="1,196">
 			<Basic durationTick="29000" delayTick="1000" invokeEvent="1" clearEffectFromPVPZone="1" />
 			<Motion startEffect="CH/Skill/Wizard/Eff_Wizard_MagicArmor_Start_01.xml" keepEffect="CH/Skill/Wizard/Eff_Wizard_MagneticField_Keep_01.xml" stopEffect="CH/Skill/Wizard/Eff_Wizard_MagneticField_Stop_01.xml" invokeEffect="CH/Skill/Wizard/Eff_Wizard_MagneticField_Invoke_01.xml" />
 			<Status compulsionEventTypes="2" compulsionEventRate="0.1" />
 			<UI icon="./Data/Resource/Image/skill/icon/10300201_buff.png" iconOnOff="0" />
 			<Additional level="1" skillID="10300204" skillTarget="1" ownerEvent="4" />
 		</level>
-		<level level="7" feature="JobChange_01" stringParam="1,60">
+		<level level="7" feature="JobChange_01" stringParam="1,210">
 			<Basic durationTick="29000" delayTick="1000" invokeEvent="1" clearEffectFromPVPZone="1" />
 			<Motion startEffect="CH/Skill/Wizard/Eff_Wizard_MagicArmor_Start_01.xml" keepEffect="CH/Skill/Wizard/Eff_Wizard_MagneticField_Keep_01.xml" stopEffect="CH/Skill/Wizard/Eff_Wizard_MagneticField_Stop_01.xml" invokeEffect="CH/Skill/Wizard/Eff_Wizard_MagneticField_Invoke_01.xml" />
 			<Status compulsionEventTypes="2" compulsionEventRate="0.1" />
 			<UI icon="./Data/Resource/Image/skill/icon/10300201_buff.png" iconOnOff="0" />
 			<Additional level="1" skillID="10300204" skillTarget="1" ownerEvent="4" />
 		</level>
-		<level level="8" feature="JobChange_01" stringParam="1,64">
+		<level level="8" feature="JobChange_01" stringParam="1,224">
 			<Basic durationTick="29000" delayTick="1000" invokeEvent="1" clearEffectFromPVPZone="1" />
 			<Motion startEffect="CH/Skill/Wizard/Eff_Wizard_MagicArmor_Start_01.xml" keepEffect="CH/Skill/Wizard/Eff_Wizard_MagneticField_Keep_01.xml" stopEffect="CH/Skill/Wizard/Eff_Wizard_MagneticField_Stop_01.xml" invokeEffect="CH/Skill/Wizard/Eff_Wizard_MagneticField_Invoke_01.xml" />
 			<Status compulsionEventTypes="2" compulsionEventRate="0.1" />
 			<UI icon="./Data/Resource/Image/skill/icon/10300201_buff.png" iconOnOff="0" />
 			<Additional level="1" skillID="10300204" skillTarget="1" ownerEvent="4" />
 		</level>
-		<level level="9" feature="JobChange_01" stringParam="1,68">
+		<level level="9" feature="JobChange_01" stringParam="1,238">
 			<Basic durationTick="29000" delayTick="1000" invokeEvent="1" clearEffectFromPVPZone="1" />
 			<Motion startEffect="CH/Skill/Wizard/Eff_Wizard_MagicArmor_Start_01.xml" keepEffect="CH/Skill/Wizard/Eff_Wizard_MagneticField_Keep_01.xml" stopEffect="CH/Skill/Wizard/Eff_Wizard_MagneticField_Stop_01.xml" invokeEffect="CH/Skill/Wizard/Eff_Wizard_MagneticField_Invoke_01.xml" />
 			<Status compulsionEventTypes="2" compulsionEventRate="0.1" />
 			<UI icon="./Data/Resource/Image/skill/icon/10300201_buff.png" iconOnOff="0" />
 			<Additional level="1" skillID="10300204" skillTarget="1" ownerEvent="4" />
 		</level>
-		<level level="10" feature="JobChange_01" stringParam="1,72">
+		<level level="10" feature="JobChange_01" stringParam="1,252">
 			<Basic durationTick="29000" delayTick="1000" invokeEvent="1" clearEffectFromPVPZone="1" />
 			<Motion startEffect="CH/Skill/Wizard/Eff_Wizard_MagicArmor_Start_01.xml" keepEffect="CH/Skill/Wizard/Eff_Wizard_MagneticField_Keep_01.xml" stopEffect="CH/Skill/Wizard/Eff_Wizard_MagneticField_Stop_01.xml" invokeEffect="CH/Skill/Wizard/Eff_Wizard_MagneticField_Invoke_01.xml" />
 			<Status compulsionEventTypes="2" compulsionEventRate="0.1" />
 			<UI icon="./Data/Resource/Image/skill/icon/10300201_buff.png" iconOnOff="0" />
 			<Additional level="1" skillID="10300204" skillTarget="1" ownerEvent="4" />
 		</level>
-		<level level="11" feature="JobChange_01" stringParam="1,76">
+		<level level="11" feature="JobChange_01" stringParam="1,266">
 			<Basic durationTick="29000" delayTick="1000" invokeEvent="1" clearEffectFromPVPZone="1" />
 			<Motion startEffect="CH/Skill/Wizard/Eff_Wizard_MagicArmor_Start_01.xml" keepEffect="CH/Skill/Wizard/Eff_Wizard_MagneticField_Keep_01.xml" stopEffect="CH/Skill/Wizard/Eff_Wizard_MagneticField_Stop_01.xml" invokeEffect="CH/Skill/Wizard/Eff_Wizard_MagneticField_Invoke_01.xml" />
 			<Status compulsionEventTypes="2" compulsionEventRate="0.1" />
 			<UI icon="./Data/Resource/Image/skill/icon/10300201_buff.png" iconOnOff="0" />
 			<Additional level="1" skillID="10300204" skillTarget="1" ownerEvent="4" />
 		</level>
-		<level level="12" feature="JobChange_01" stringParam="1,80">
+		<level level="12" feature="JobChange_01" stringParam="1,280">
 			<Basic durationTick="29000" delayTick="1000" invokeEvent="1" clearEffectFromPVPZone="1" />
 			<Motion startEffect="CH/Skill/Wizard/Eff_Wizard_MagicArmor_Start_01.xml" keepEffect="CH/Skill/Wizard/Eff_Wizard_MagneticField_Keep_01.xml" stopEffect="CH/Skill/Wizard/Eff_Wizard_MagneticField_Stop_01.xml" invokeEffect="CH/Skill/Wizard/Eff_Wizard_MagneticField_Invoke_01.xml" />
 			<Status compulsionEventTypes="2" compulsionEventRate="0.1" />
@@ -1511,7 +1518,7 @@
 				<v type="evpRate" value="100" />
 			</SpecialAbility>
 			<UI icon="./Data/Resource/Image/skill/icon/10300201_buff.png" />
-			<InvokeEffect skillID="10300204" types="1004" values="0" rates="0.36" />
+			<InvokeEffect skillID="10300204" types="1004" values="0" rates="1.26" />
 			<Additional level="1" skillID="10300203" skillTarget="1" ownerEvent="17" ownerEventAdditionalID="10300201" />
 			<Skill level="1" skillID="10300202" />
 		</level>
@@ -1522,7 +1529,7 @@
 				<v type="evpRate" value="100" />
 			</SpecialAbility>
 			<UI icon="./Data/Resource/Image/skill/icon/10300201_buff.png" />
-			<InvokeEffect skillID="10300204" types="1004" values="0" rates="0.4" />
+			<InvokeEffect skillID="10300204" types="1004" values="0" rates="1.4" />
 			<Additional level="1" skillID="10300203" skillTarget="1" ownerEvent="17" ownerEventAdditionalID="10300201" />
 			<Skill level="2" skillID="10300202" />
 		</level>
@@ -1533,7 +1540,7 @@
 				<v type="evpRate" value="100" />
 			</SpecialAbility>
 			<UI icon="./Data/Resource/Image/skill/icon/10300201_buff.png" />
-			<InvokeEffect skillID="10300204" types="1004" values="0" rates="0.44" />
+			<InvokeEffect skillID="10300204" types="1004" values="0" rates="1.54" />
 			<Additional level="1" skillID="10300203" skillTarget="1" ownerEvent="17" ownerEventAdditionalID="10300201" />
 			<Skill level="3" skillID="10300202" />
 		</level>
@@ -1544,7 +1551,7 @@
 				<v type="evpRate" value="100" />
 			</SpecialAbility>
 			<UI icon="./Data/Resource/Image/skill/icon/10300201_buff.png" />
-			<InvokeEffect skillID="10300204" types="1004" values="0" rates="0.48" />
+			<InvokeEffect skillID="10300204" types="1004" values="0" rates="1.68" />
 			<Additional level="1" skillID="10300203" skillTarget="1" ownerEvent="17" ownerEventAdditionalID="10300201" />
 			<Skill level="4" skillID="10300202" />
 		</level>
@@ -1555,7 +1562,7 @@
 				<v type="evpRate" value="100" />
 			</SpecialAbility>
 			<UI icon="./Data/Resource/Image/skill/icon/10300201_buff.png" />
-			<InvokeEffect skillID="10300204" types="1004" values="0" rates="0.52" />
+			<InvokeEffect skillID="10300204" types="1004" values="0" rates="1.82" />
 			<Additional level="1" skillID="10300203" skillTarget="1" ownerEvent="17" ownerEventAdditionalID="10300201" />
 			<Skill level="5" skillID="10300202" />
 		</level>
@@ -1566,7 +1573,7 @@
 				<v type="evpRate" value="100" />
 			</SpecialAbility>
 			<UI icon="./Data/Resource/Image/skill/icon/10300201_buff.png" />
-			<InvokeEffect skillID="10300204" types="1004" values="0" rates="0.56" />
+			<InvokeEffect skillID="10300204" types="1004" values="0" rates="1.96" />
 			<Additional level="1" skillID="10300203" skillTarget="1" ownerEvent="17" ownerEventAdditionalID="10300201" />
 			<Skill level="6" skillID="10300202" />
 		</level>
@@ -1577,7 +1584,7 @@
 				<v type="evpRate" value="100" />
 			</SpecialAbility>
 			<UI icon="./Data/Resource/Image/skill/icon/10300201_buff.png" />
-			<InvokeEffect skillID="10300204" types="1004" values="0" rates="0.6" />
+			<InvokeEffect skillID="10300204" types="1004" values="0" rates="2.1" />
 			<Additional level="1" skillID="10300203" skillTarget="1" ownerEvent="17" ownerEventAdditionalID="10300201" />
 			<Skill level="7" skillID="10300202" />
 		</level>
@@ -1588,7 +1595,7 @@
 				<v type="evpRate" value="100" />
 			</SpecialAbility>
 			<UI icon="./Data/Resource/Image/skill/icon/10300201_buff.png" />
-			<InvokeEffect skillID="10300204" types="1004" values="0" rates="0.64" />
+			<InvokeEffect skillID="10300204" types="1004" values="0" rates="2.24" />
 			<Additional level="1" skillID="10300203" skillTarget="1" ownerEvent="17" ownerEventAdditionalID="10300201" />
 			<Skill level="8" skillID="10300202" />
 		</level>
@@ -1599,7 +1606,7 @@
 				<v type="evpRate" value="100" />
 			</SpecialAbility>
 			<UI icon="./Data/Resource/Image/skill/icon/10300201_buff.png" />
-			<InvokeEffect skillID="10300204" types="1004" values="0" rates="0.68" />
+			<InvokeEffect skillID="10300204" types="1004" values="0" rates="2.38" />
 			<Additional level="1" skillID="10300203" skillTarget="1" ownerEvent="17" ownerEventAdditionalID="10300201" />
 			<Skill level="9" skillID="10300202" />
 		</level>
@@ -1610,7 +1617,7 @@
 				<v type="evpRate" value="100" />
 			</SpecialAbility>
 			<UI icon="./Data/Resource/Image/skill/icon/10300201_buff.png" />
-			<InvokeEffect skillID="10300204" types="1004" values="0" rates="0.72" />
+			<InvokeEffect skillID="10300204" types="1004" values="0" rates="2.52" />
 			<Additional level="1" skillID="10300203" skillTarget="1" ownerEvent="17" ownerEventAdditionalID="10300201" />
 			<Skill level="10" skillID="10300202" />
 		</level>
@@ -1621,7 +1628,7 @@
 				<v type="evpRate" value="100" />
 			</SpecialAbility>
 			<UI icon="./Data/Resource/Image/skill/icon/10300201_buff.png" />
-			<InvokeEffect skillID="10300204" types="1004" values="0" rates="0.76" />
+			<InvokeEffect skillID="10300204" types="1004" values="0" rates="2.66" />
 			<Additional level="1" skillID="10300203" skillTarget="1" ownerEvent="17" ownerEventAdditionalID="10300201" />
 			<Skill level="11" skillID="10300202" />
 		</level>
@@ -1632,7 +1639,7 @@
 				<v type="evpRate" value="100" />
 			</SpecialAbility>
 			<UI icon="./Data/Resource/Image/skill/icon/10300201_buff.png" />
-			<InvokeEffect skillID="10300204" types="1004" values="0" rates="0.8" />
+			<InvokeEffect skillID="10300204" types="1004" values="0" rates="2.8" />
 			<Additional level="1" skillID="10300203" skillTarget="1" ownerEvent="17" ownerEventAdditionalID="10300201" />
 			<Skill level="12" skillID="10300202" />
 		</level>
@@ -1779,123 +1786,111 @@
 		</level>
 	</additional>
 	<additional id="10300211" skillGroupType="1">
-		<level level="1" feature="JobChange_01" stringParam="8">
+		<level level="1" feature="JobChange_01" stringParam="6">
 			<Basic durationTick="10000" resetCondition="1" clearEffectFromPVPZone="1" />
 			<Motion abnormalImmuneBreak="5" />
 			<ResetSkillCoolDownTime skillCodes="10300071,10300141" />
 			<SpecialAbility>
-				<v type="icedamage" value="80" />
-				<v type="thunderdamage" value="80" />
+				<v type="offensive_magicaldamage" value="60" />
 			</SpecialAbility>
 			<UI icon="./Data/Resource/Image/skill/icon/10300211_buff.png" />
 		</level>
-		<level level="2" feature="JobChange_01" stringParam="16">
+		<level level="2" feature="JobChange_01" stringParam="12">
 			<Basic durationTick="10000" resetCondition="1" clearEffectFromPVPZone="1" />
 			<Motion abnormalImmuneBreak="5" />
 			<ResetSkillCoolDownTime skillCodes="10300071,10300141" />
 			<SpecialAbility>
-				<v type="icedamage" value="160" />
-				<v type="thunderdamage" value="160" />
+				<v type="offensive_magicaldamage" value="120" />
 			</SpecialAbility>
 			<UI icon="./Data/Resource/Image/skill/icon/10300211_buff.png" />
 		</level>
-		<level level="3" feature="JobChange_01" stringParam="24">
+		<level level="3" feature="JobChange_01" stringParam="18">
 			<Basic durationTick="10000" resetCondition="1" clearEffectFromPVPZone="1" />
 			<Motion abnormalImmuneBreak="5" />
 			<ResetSkillCoolDownTime skillCodes="10300071,10300141" />
 			<SpecialAbility>
-				<v type="icedamage" value="240" />
-				<v type="thunderdamage" value="240" />
+				<v type="offensive_magicaldamage" value="180" />
 			</SpecialAbility>
 			<UI icon="./Data/Resource/Image/skill/icon/10300211_buff.png" />
 		</level>
-		<level level="4" feature="JobChange_01" stringParam="32">
+		<level level="4" feature="JobChange_01" stringParam="24">
 			<Basic durationTick="10000" resetCondition="1" clearEffectFromPVPZone="1" />
 			<Motion abnormalImmuneBreak="5" />
 			<ResetSkillCoolDownTime skillCodes="10300071,10300141" />
 			<SpecialAbility>
-				<v type="icedamage" value="320" />
-				<v type="thunderdamage" value="320" />
+				<v type="offensive_magicaldamage" value="240" />
 			</SpecialAbility>
 			<UI icon="./Data/Resource/Image/skill/icon/10300211_buff.png" />
 		</level>
-		<level level="5" feature="JobChange_01" stringParam="40">
+		<level level="5" feature="JobChange_01" stringParam="30">
 			<Basic durationTick="10000" resetCondition="1" clearEffectFromPVPZone="1" />
 			<Motion abnormalImmuneBreak="5" />
 			<ResetSkillCoolDownTime skillCodes="10300071,10300141" />
 			<SpecialAbility>
-				<v type="icedamage" value="400" />
-				<v type="thunderdamage" value="400" />
+				<v type="offensive_magicaldamage" value="300" />
 			</SpecialAbility>
 			<UI icon="./Data/Resource/Image/skill/icon/10300211_buff.png" />
 		</level>
-		<level level="6" feature="JobChange_01" stringParam="48">
+		<level level="6" feature="JobChange_01" stringParam="36">
 			<Basic durationTick="10000" resetCondition="1" clearEffectFromPVPZone="1" />
 			<Motion abnormalImmuneBreak="5" />
 			<ResetSkillCoolDownTime skillCodes="10300071,10300141" />
 			<SpecialAbility>
-				<v type="icedamage" value="480" />
-				<v type="thunderdamage" value="480" />
+				<v type="offensive_magicaldamage" value="360" />
 			</SpecialAbility>
 			<UI icon="./Data/Resource/Image/skill/icon/10300211_buff.png" />
 		</level>
-		<level level="7" feature="JobChange_01" stringParam="56">
+		<level level="7" feature="JobChange_01" stringParam="42">
 			<Basic durationTick="10000" resetCondition="1" clearEffectFromPVPZone="1" />
 			<Motion abnormalImmuneBreak="5" />
 			<ResetSkillCoolDownTime skillCodes="10300071,10300141" />
 			<SpecialAbility>
-				<v type="icedamage" value="560" />
-				<v type="thunderdamage" value="560" />
+				<v type="offensive_magicaldamage" value="420" />
 			</SpecialAbility>
 			<UI icon="./Data/Resource/Image/skill/icon/10300211_buff.png" />
 		</level>
-		<level level="8" feature="JobChange_01" stringParam="64">
+		<level level="8" feature="JobChange_01" stringParam="48">
 			<Basic durationTick="10000" resetCondition="1" clearEffectFromPVPZone="1" />
 			<Motion abnormalImmuneBreak="5" />
 			<ResetSkillCoolDownTime skillCodes="10300071,10300141" />
 			<SpecialAbility>
-				<v type="icedamage" value="640" />
-				<v type="thunderdamage" value="640" />
+				<v type="offensive_magicaldamage" value="480" />
 			</SpecialAbility>
 			<UI icon="./Data/Resource/Image/skill/icon/10300211_buff.png" />
 		</level>
-		<level level="9" feature="JobChange_01" stringParam="72">
+		<level level="9" feature="JobChange_01" stringParam="54">
 			<Basic durationTick="10000" resetCondition="1" clearEffectFromPVPZone="1" />
 			<Motion abnormalImmuneBreak="5" />
 			<ResetSkillCoolDownTime skillCodes="10300071,10300141" />
 			<SpecialAbility>
-				<v type="icedamage" value="720" />
-				<v type="thunderdamage" value="720" />
+				<v type="offensive_magicaldamage" value="540" />
 			</SpecialAbility>
 			<UI icon="./Data/Resource/Image/skill/icon/10300211_buff.png" />
 		</level>
-		<level level="10" feature="JobChange_01" stringParam="80">
+		<level level="10" feature="JobChange_01" stringParam="60">
 			<Basic durationTick="10000" resetCondition="1" clearEffectFromPVPZone="1" />
 			<Motion abnormalImmuneBreak="5" />
 			<ResetSkillCoolDownTime skillCodes="10300071,10300141" />
 			<SpecialAbility>
-				<v type="icedamage" value="800" />
-				<v type="thunderdamage" value="800" />
+				<v type="offensive_magicaldamage" value="600" />
 			</SpecialAbility>
 			<UI icon="./Data/Resource/Image/skill/icon/10300211_buff.png" />
 		</level>
-		<level level="11" feature="JobChange_01" stringParam="88">
+		<level level="11" feature="JobChange_01" stringParam="66">
 			<Basic durationTick="10000" resetCondition="1" clearEffectFromPVPZone="1" />
 			<Motion abnormalImmuneBreak="5" />
 			<ResetSkillCoolDownTime skillCodes="10300071,10300141" />
 			<SpecialAbility>
-				<v type="icedamage" value="880" />
-				<v type="thunderdamage" value="880" />
+				<v type="offensive_magicaldamage" value="660" />
 			</SpecialAbility>
 			<UI icon="./Data/Resource/Image/skill/icon/10300211_buff.png" />
 		</level>
-		<level level="12" feature="JobChange_01" stringParam="96">
+		<level level="12" feature="JobChange_01" stringParam="72">
 			<Basic durationTick="10000" resetCondition="1" clearEffectFromPVPZone="1" />
 			<Motion abnormalImmuneBreak="5" />
 			<ResetSkillCoolDownTime skillCodes="10300071,10300141" />
 			<SpecialAbility>
-				<v type="icedamage" value="960" />
-				<v type="thunderdamage" value="960" />
+				<v type="offensive_magicaldamage" value="720" />
 			</SpecialAbility>
 			<UI icon="./Data/Resource/Image/skill/icon/10300211_buff.png" />
 		</level>
@@ -2239,73 +2234,73 @@
 		</level>
 	</additional>
 	<additional id="10300222" isDebuff="1" skillGroupType="1">
-		<level level="1" feature="JobChange_01" stringParam="31,298">
+		<level level="1" feature="JobChange_01" stringParam="31,834">
 			<Basic durationTick="10000" intervalTick="1000" casterIndividualEffect="1" clearEffectFromPVPZone="1" />
 			<Motion keepEffect="CH/Skill/Wizard/Eff_Wizard_Kindling_Keep_01.xml" stopEffect="CH/Skill/Wizard/Eff_Wizard_Kindling_Stop_01.xml" abnormalImmuneBreak="5" />
 			<DotDamage type="2" rate="0.31" element="1" soundMaterial="100" />
 			<UI icon="./Data/Resource/Image/skill/icon/old/10300021_buff.png" />
 		</level>
-		<level level="2" feature="JobChange_01" stringParam="35,332">
+		<level level="2" feature="JobChange_01" stringParam="35,930">
 			<Basic durationTick="10000" intervalTick="1000" casterIndividualEffect="1" clearEffectFromPVPZone="1" />
 			<Motion keepEffect="CH/Skill/Wizard/Eff_Wizard_Kindling_Keep_01.xml" stopEffect="CH/Skill/Wizard/Eff_Wizard_Kindling_Stop_01.xml" abnormalImmuneBreak="5" />
 			<DotDamage type="2" rate="0.35" element="1" soundMaterial="100" />
 			<UI icon="./Data/Resource/Image/skill/icon/old/10300021_buff.png" />
 		</level>
-		<level level="3" feature="JobChange_01" stringParam="39,366">
+		<level level="3" feature="JobChange_01" stringParam="39,1025">
 			<Basic durationTick="10000" intervalTick="1000" casterIndividualEffect="1" clearEffectFromPVPZone="1" />
 			<Motion keepEffect="CH/Skill/Wizard/Eff_Wizard_Kindling_Keep_01.xml" stopEffect="CH/Skill/Wizard/Eff_Wizard_Kindling_Stop_01.xml" abnormalImmuneBreak="5" />
 			<DotDamage type="2" rate="0.39" element="1" soundMaterial="100" />
 			<UI icon="./Data/Resource/Image/skill/icon/old/10300021_buff.png" />
 		</level>
-		<level level="4" feature="JobChange_01" stringParam="43,400">
+		<level level="4" feature="JobChange_01" stringParam="43,1120">
 			<Basic durationTick="10000" intervalTick="1000" casterIndividualEffect="1" clearEffectFromPVPZone="1" />
 			<Motion keepEffect="CH/Skill/Wizard/Eff_Wizard_Kindling_Keep_01.xml" stopEffect="CH/Skill/Wizard/Eff_Wizard_Kindling_Stop_01.xml" abnormalImmuneBreak="5" />
 			<DotDamage type="2" rate="0.43" element="1" soundMaterial="100" />
 			<UI icon="./Data/Resource/Image/skill/icon/old/10300021_buff.png" />
 		</level>
-		<level level="5" feature="JobChange_01" stringParam="47,434">
+		<level level="5" feature="JobChange_01" stringParam="47,1215">
 			<Basic durationTick="10000" intervalTick="1000" casterIndividualEffect="1" clearEffectFromPVPZone="1" />
 			<Motion keepEffect="CH/Skill/Wizard/Eff_Wizard_Kindling_Keep_01.xml" stopEffect="CH/Skill/Wizard/Eff_Wizard_Kindling_Stop_01.xml" abnormalImmuneBreak="5" />
 			<DotDamage type="2" rate="0.47" element="1" soundMaterial="100" />
 			<UI icon="./Data/Resource/Image/skill/icon/old/10300021_buff.png" />
 		</level>
-		<level level="6" feature="JobChange_01" stringParam="51,468">
+		<level level="6" feature="JobChange_01" stringParam="51,1310">
 			<Basic durationTick="10000" intervalTick="1000" casterIndividualEffect="1" clearEffectFromPVPZone="1" />
 			<Motion keepEffect="CH/Skill/Wizard/Eff_Wizard_Kindling_Keep_01.xml" stopEffect="CH/Skill/Wizard/Eff_Wizard_Kindling_Stop_01.xml" abnormalImmuneBreak="5" />
 			<DotDamage type="2" rate="0.51" element="1" soundMaterial="100" />
 			<UI icon="./Data/Resource/Image/skill/icon/old/10300021_buff.png" />
 		</level>
-		<level level="7" feature="JobChange_01" stringParam="55,502">
+		<level level="7" feature="JobChange_01" stringParam="55,1406">
 			<Basic durationTick="10000" intervalTick="1000" casterIndividualEffect="1" clearEffectFromPVPZone="1" />
 			<Motion keepEffect="CH/Skill/Wizard/Eff_Wizard_Kindling_Keep_01.xml" stopEffect="CH/Skill/Wizard/Eff_Wizard_Kindling_Stop_01.xml" abnormalImmuneBreak="5" />
 			<DotDamage type="2" rate="0.55" element="1" soundMaterial="100" />
 			<UI icon="./Data/Resource/Image/skill/icon/old/10300021_buff.png" />
 		</level>
-		<level level="8" feature="JobChange_01" stringParam="59,536">
+		<level level="8" feature="JobChange_01" stringParam="59,1501">
 			<Basic durationTick="10000" intervalTick="1000" casterIndividualEffect="1" clearEffectFromPVPZone="1" />
 			<Motion keepEffect="CH/Skill/Wizard/Eff_Wizard_Kindling_Keep_01.xml" stopEffect="CH/Skill/Wizard/Eff_Wizard_Kindling_Stop_01.xml" abnormalImmuneBreak="5" />
 			<DotDamage type="2" rate="0.59" element="1" soundMaterial="100" />
 			<UI icon="./Data/Resource/Image/skill/icon/old/10300021_buff.png" />
 		</level>
-		<level level="9" feature="JobChange_01" stringParam="63,570">
+		<level level="9" feature="JobChange_01" stringParam="63,1596">
 			<Basic durationTick="10000" intervalTick="1000" casterIndividualEffect="1" clearEffectFromPVPZone="1" />
 			<Motion keepEffect="CH/Skill/Wizard/Eff_Wizard_Kindling_Keep_01.xml" stopEffect="CH/Skill/Wizard/Eff_Wizard_Kindling_Stop_01.xml" abnormalImmuneBreak="5" />
 			<DotDamage type="2" rate="0.63" element="1" soundMaterial="100" />
 			<UI icon="./Data/Resource/Image/skill/icon/old/10300021_buff.png" />
 		</level>
-		<level level="10" feature="JobChange_01" stringParam="67,604">
+		<level level="10" feature="JobChange_01" stringParam="67,1691">
 			<Basic durationTick="10000" intervalTick="1000" casterIndividualEffect="1" clearEffectFromPVPZone="1" />
 			<Motion keepEffect="CH/Skill/Wizard/Eff_Wizard_Kindling_Keep_01.xml" stopEffect="CH/Skill/Wizard/Eff_Wizard_Kindling_Stop_01.xml" abnormalImmuneBreak="5" />
 			<DotDamage type="2" rate="0.67" element="1" soundMaterial="100" />
 			<UI icon="./Data/Resource/Image/skill/icon/old/10300021_buff.png" />
 		</level>
-		<level level="11" feature="JobChange_01" stringParam="71,638">
+		<level level="11" feature="JobChange_01" stringParam="71,1786">
 			<Basic durationTick="10000" intervalTick="1000" casterIndividualEffect="1" clearEffectFromPVPZone="1" />
 			<Motion keepEffect="CH/Skill/Wizard/Eff_Wizard_Kindling_Keep_01.xml" stopEffect="CH/Skill/Wizard/Eff_Wizard_Kindling_Stop_01.xml" abnormalImmuneBreak="5" />
 			<DotDamage type="2" rate="0.71" element="1" soundMaterial="100" />
 			<UI icon="./Data/Resource/Image/skill/icon/old/10300021_buff.png" />
 		</level>
-		<level level="12" feature="JobChange_01" stringParam="75,672">
+		<level level="12" feature="JobChange_01" stringParam="75,1882">
 			<Basic durationTick="10000" intervalTick="1000" casterIndividualEffect="1" clearEffectFromPVPZone="1" />
 			<Motion keepEffect="CH/Skill/Wizard/Eff_Wizard_Kindling_Keep_01.xml" stopEffect="CH/Skill/Wizard/Eff_Wizard_Kindling_Stop_01.xml" abnormalImmuneBreak="5" />
 			<DotDamage type="2" rate="0.75" element="1" soundMaterial="100" />
@@ -2555,84 +2550,84 @@
 		</level>
 	</additional>
 	<additional id="10300227" isDebuff="1" skillGroupType="1">
-		<level level="1" feature="JobChange_01" stringParam="37,371">
+		<level level="1" feature="JobChange_01" stringParam="37,1039">
 			<Basic durationTick="10000" intervalTick="1000" casterIndividualEffect="1" clearEffectFromPVPZone="1" />
 			<Motion keepEffect="CH/Skill/Wizard/Eff_Wizard_Kindling_Keep_02.xml" stopEffect="CH/Skill/Wizard/Eff_Wizard_Kindling_Stop_02.xml" abnormalImmuneBreak="5" />
 			<CancelEffect cancelCheckSameCaster="1" cancelEffectCodes="10300222" />
 			<DotDamage type="2" rate="0.37" element="1" soundMaterial="100" />
 			<UI icon="./Data/Resource/Image/skill/icon/old/10300021_buff_02.png" />
 		</level>
-		<level level="2" feature="JobChange_01" stringParam="41,414">
+		<level level="2" feature="JobChange_01" stringParam="41,1159">
 			<Basic durationTick="10000" intervalTick="1000" casterIndividualEffect="1" clearEffectFromPVPZone="1" />
 			<Motion keepEffect="CH/Skill/Wizard/Eff_Wizard_Kindling_Keep_02.xml" stopEffect="CH/Skill/Wizard/Eff_Wizard_Kindling_Stop_02.xml" abnormalImmuneBreak="5" />
 			<CancelEffect cancelCheckSameCaster="1" cancelEffectCodes="10300222" />
 			<DotDamage type="2" rate="0.41" element="1" soundMaterial="100" />
 			<UI icon="./Data/Resource/Image/skill/icon/old/10300021_buff_02.png" />
 		</level>
-		<level level="3" feature="JobChange_01" stringParam="45,457">
+		<level level="3" feature="JobChange_01" stringParam="45,1280">
 			<Basic durationTick="10000" intervalTick="1000" casterIndividualEffect="1" clearEffectFromPVPZone="1" />
 			<Motion keepEffect="CH/Skill/Wizard/Eff_Wizard_Kindling_Keep_02.xml" stopEffect="CH/Skill/Wizard/Eff_Wizard_Kindling_Stop_02.xml" abnormalImmuneBreak="5" />
 			<CancelEffect cancelCheckSameCaster="1" cancelEffectCodes="10300222" />
 			<DotDamage type="2" rate="0.45" element="1" soundMaterial="100" />
 			<UI icon="./Data/Resource/Image/skill/icon/old/10300021_buff_02.png" />
 		</level>
-		<level level="4" feature="JobChange_01" stringParam="49,500">
+		<level level="4" feature="JobChange_01" stringParam="49,1400">
 			<Basic durationTick="10000" intervalTick="1000" casterIndividualEffect="1" clearEffectFromPVPZone="1" />
 			<Motion keepEffect="CH/Skill/Wizard/Eff_Wizard_Kindling_Keep_02.xml" stopEffect="CH/Skill/Wizard/Eff_Wizard_Kindling_Stop_02.xml" abnormalImmuneBreak="5" />
 			<CancelEffect cancelCheckSameCaster="1" cancelEffectCodes="10300222" />
 			<DotDamage type="2" rate="0.49" element="1" soundMaterial="100" />
 			<UI icon="./Data/Resource/Image/skill/icon/old/10300021_buff_02.png" />
 		</level>
-		<level level="5" feature="JobChange_01" stringParam="53,543">
+		<level level="5" feature="JobChange_01" stringParam="53,1520">
 			<Basic durationTick="10000" intervalTick="1000" casterIndividualEffect="1" clearEffectFromPVPZone="1" />
 			<Motion keepEffect="CH/Skill/Wizard/Eff_Wizard_Kindling_Keep_02.xml" stopEffect="CH/Skill/Wizard/Eff_Wizard_Kindling_Stop_02.xml" abnormalImmuneBreak="5" />
 			<CancelEffect cancelCheckSameCaster="1" cancelEffectCodes="10300222" />
 			<DotDamage type="2" rate="0.53" element="1" soundMaterial="100" />
 			<UI icon="./Data/Resource/Image/skill/icon/old/10300021_buff_02.png" />
 		</level>
-		<level level="6" feature="JobChange_01" stringParam="57,586">
+		<level level="6" feature="JobChange_01" stringParam="57,1641">
 			<Basic durationTick="10000" intervalTick="1000" casterIndividualEffect="1" clearEffectFromPVPZone="1" />
 			<Motion keepEffect="CH/Skill/Wizard/Eff_Wizard_Kindling_Keep_02.xml" stopEffect="CH/Skill/Wizard/Eff_Wizard_Kindling_Stop_02.xml" abnormalImmuneBreak="5" />
 			<CancelEffect cancelCheckSameCaster="1" cancelEffectCodes="10300222" />
 			<DotDamage type="2" rate="0.57" element="1" soundMaterial="100" />
 			<UI icon="./Data/Resource/Image/skill/icon/old/10300021_buff_02.png" />
 		</level>
-		<level level="7" feature="JobChange_01" stringParam="61,629">
+		<level level="7" feature="JobChange_01" stringParam="61,1761">
 			<Basic durationTick="10000" intervalTick="1000" casterIndividualEffect="1" clearEffectFromPVPZone="1" />
 			<Motion keepEffect="CH/Skill/Wizard/Eff_Wizard_Kindling_Keep_02.xml" stopEffect="CH/Skill/Wizard/Eff_Wizard_Kindling_Stop_02.xml" abnormalImmuneBreak="5" />
 			<CancelEffect cancelCheckSameCaster="1" cancelEffectCodes="10300222" />
 			<DotDamage type="2" rate="0.61" element="1" soundMaterial="100" />
 			<UI icon="./Data/Resource/Image/skill/icon/old/10300021_buff_02.png" />
 		</level>
-		<level level="8" feature="JobChange_01" stringParam="65,672">
+		<level level="8" feature="JobChange_01" stringParam="65,1882">
 			<Basic durationTick="10000" intervalTick="1000" casterIndividualEffect="1" clearEffectFromPVPZone="1" />
 			<Motion keepEffect="CH/Skill/Wizard/Eff_Wizard_Kindling_Keep_02.xml" stopEffect="CH/Skill/Wizard/Eff_Wizard_Kindling_Stop_02.xml" abnormalImmuneBreak="5" />
 			<CancelEffect cancelCheckSameCaster="1" cancelEffectCodes="10300222" />
 			<DotDamage type="2" rate="0.65" element="1" soundMaterial="100" />
 			<UI icon="./Data/Resource/Image/skill/icon/old/10300021_buff_02.png" />
 		</level>
-		<level level="9" feature="JobChange_01" stringParam="69,715">
+		<level level="9" feature="JobChange_01" stringParam="69,2002">
 			<Basic durationTick="10000" intervalTick="1000" casterIndividualEffect="1" clearEffectFromPVPZone="1" />
 			<Motion keepEffect="CH/Skill/Wizard/Eff_Wizard_Kindling_Keep_02.xml" stopEffect="CH/Skill/Wizard/Eff_Wizard_Kindling_Stop_02.xml" abnormalImmuneBreak="5" />
 			<CancelEffect cancelCheckSameCaster="1" cancelEffectCodes="10300222" />
 			<DotDamage type="2" rate="0.69" element="1" soundMaterial="100" />
 			<UI icon="./Data/Resource/Image/skill/icon/old/10300021_buff_02.png" />
 		</level>
-		<level level="10" feature="JobChange_01" stringParam="73,758">
+		<level level="10" feature="JobChange_01" stringParam="73,2122">
 			<Basic durationTick="10000" intervalTick="1000" casterIndividualEffect="1" clearEffectFromPVPZone="1" />
 			<Motion keepEffect="CH/Skill/Wizard/Eff_Wizard_Kindling_Keep_02.xml" stopEffect="CH/Skill/Wizard/Eff_Wizard_Kindling_Stop_02.xml" abnormalImmuneBreak="5" />
 			<CancelEffect cancelCheckSameCaster="1" cancelEffectCodes="10300222" />
 			<DotDamage type="2" rate="0.73" element="1" soundMaterial="100" />
 			<UI icon="./Data/Resource/Image/skill/icon/old/10300021_buff_02.png" />
 		</level>
-		<level level="11" feature="JobChange_01" stringParam="77,801">
+		<level level="11" feature="JobChange_01" stringParam="77,2243">
 			<Basic durationTick="10000" intervalTick="1000" casterIndividualEffect="1" clearEffectFromPVPZone="1" />
 			<Motion keepEffect="CH/Skill/Wizard/Eff_Wizard_Kindling_Keep_02.xml" stopEffect="CH/Skill/Wizard/Eff_Wizard_Kindling_Stop_02.xml" abnormalImmuneBreak="5" />
 			<CancelEffect cancelCheckSameCaster="1" cancelEffectCodes="10300222" />
 			<DotDamage type="2" rate="0.77" element="1" soundMaterial="100" />
 			<UI icon="./Data/Resource/Image/skill/icon/old/10300021_buff_02.png" />
 		</level>
-		<level level="12" feature="JobChange_01" stringParam="81,844">
+		<level level="12" feature="JobChange_01" stringParam="81,2363">
 			<Basic durationTick="10000" intervalTick="1000" casterIndividualEffect="1" clearEffectFromPVPZone="1" />
 			<Motion keepEffect="CH/Skill/Wizard/Eff_Wizard_Kindling_Keep_02.xml" stopEffect="CH/Skill/Wizard/Eff_Wizard_Kindling_Stop_02.xml" abnormalImmuneBreak="5" />
 			<CancelEffect cancelCheckSameCaster="1" cancelEffectCodes="10300222" />
@@ -3318,73 +3313,73 @@
 		<level level="1" feature="JobChange_01">
 			<Basic durationTick="1000" casterIndividualEffect="1" clearEffectFromPVPZone="1" />
 			<Motion abnormalImmuneBreak="5" />
-			<DotDamage type="2" useGrade="1" rate="1.48" element="1" soundMaterial="100" />
+			<DotDamage type="2" useGrade="1" rate="18.6" element="1" soundMaterial="100" />
 			<UI icon="./Data/Resource/Image/skill/icon/10500021_buff.png" iconOnOff="0" isHideCooltime="1" />
 		</level>
 		<level level="2" feature="JobChange_01">
 			<Basic durationTick="1000" casterIndividualEffect="1" clearEffectFromPVPZone="1" />
 			<Motion abnormalImmuneBreak="5" />
-			<DotDamage type="2" useGrade="1" rate="1.65" element="1" soundMaterial="100" />
+			<DotDamage type="2" useGrade="1" rate="20.74" element="1" soundMaterial="100" />
 			<UI icon="./Data/Resource/Image/skill/icon/10500021_buff.png" iconOnOff="0" isHideCooltime="1" />
 		</level>
 		<level level="3" feature="JobChange_01">
 			<Basic durationTick="1000" casterIndividualEffect="1" clearEffectFromPVPZone="1" />
 			<Motion abnormalImmuneBreak="5" />
-			<DotDamage type="2" useGrade="1" rate="1.82" element="1" soundMaterial="100" />
+			<DotDamage type="2" useGrade="1" rate="22.88" element="1" soundMaterial="100" />
 			<UI icon="./Data/Resource/Image/skill/icon/10500021_buff.png" iconOnOff="0" isHideCooltime="1" />
 		</level>
 		<level level="4" feature="JobChange_01">
 			<Basic durationTick="1000" casterIndividualEffect="1" clearEffectFromPVPZone="1" />
 			<Motion abnormalImmuneBreak="5" />
-			<DotDamage type="2" useGrade="1" rate="1.99" element="1" soundMaterial="100" />
+			<DotDamage type="2" useGrade="1" rate="25.01" element="1" soundMaterial="100" />
 			<UI icon="./Data/Resource/Image/skill/icon/10500021_buff.png" iconOnOff="0" isHideCooltime="1" />
 		</level>
 		<level level="5" feature="JobChange_01">
 			<Basic durationTick="1000" casterIndividualEffect="1" clearEffectFromPVPZone="1" />
 			<Motion abnormalImmuneBreak="5" />
-			<DotDamage type="2" useGrade="1" rate="2.16" element="1" soundMaterial="100" />
+			<DotDamage type="2" useGrade="1" rate="27.15" element="1" soundMaterial="100" />
 			<UI icon="./Data/Resource/Image/skill/icon/10500021_buff.png" iconOnOff="0" isHideCooltime="1" />
 		</level>
 		<level level="6" feature="JobChange_01">
 			<Basic durationTick="1000" casterIndividualEffect="1" clearEffectFromPVPZone="1" />
 			<Motion abnormalImmuneBreak="5" />
-			<DotDamage type="2" useGrade="1" rate="2.33" element="1" soundMaterial="100" />
+			<DotDamage type="2" useGrade="1" rate="29.29" element="1" soundMaterial="100" />
 			<UI icon="./Data/Resource/Image/skill/icon/10500021_buff.png" iconOnOff="0" isHideCooltime="1" />
 		</level>
 		<level level="7" feature="JobChange_01">
 			<Basic durationTick="1000" casterIndividualEffect="1" clearEffectFromPVPZone="1" />
 			<Motion abnormalImmuneBreak="5" />
-			<DotDamage type="2" useGrade="1" rate="2.5" element="1" soundMaterial="100" />
+			<DotDamage type="2" useGrade="1" rate="31.43" element="1" soundMaterial="100" />
 			<UI icon="./Data/Resource/Image/skill/icon/10500021_buff.png" iconOnOff="0" isHideCooltime="1" />
 		</level>
 		<level level="8" feature="JobChange_01">
 			<Basic durationTick="1000" casterIndividualEffect="1" clearEffectFromPVPZone="1" />
 			<Motion abnormalImmuneBreak="5" />
-			<DotDamage type="2" useGrade="1" rate="2.67" element="1" soundMaterial="100" />
+			<DotDamage type="2" useGrade="1" rate="33.56" element="1" soundMaterial="100" />
 			<UI icon="./Data/Resource/Image/skill/icon/10500021_buff.png" iconOnOff="0" isHideCooltime="1" />
 		</level>
 		<level level="9" feature="JobChange_01">
 			<Basic durationTick="1000" casterIndividualEffect="1" clearEffectFromPVPZone="1" />
 			<Motion abnormalImmuneBreak="5" />
-			<DotDamage type="2" useGrade="1" rate="2.84" element="1" soundMaterial="100" />
+			<DotDamage type="2" useGrade="1" rate="35.7" element="1" soundMaterial="100" />
 			<UI icon="./Data/Resource/Image/skill/icon/10500021_buff.png" iconOnOff="0" isHideCooltime="1" />
 		</level>
 		<level level="10" feature="JobChange_01">
 			<Basic durationTick="1000" casterIndividualEffect="1" clearEffectFromPVPZone="1" />
 			<Motion abnormalImmuneBreak="5" />
-			<DotDamage type="2" useGrade="1" rate="3.01" element="1" soundMaterial="100" />
+			<DotDamage type="2" useGrade="1" rate="37.84" element="1" soundMaterial="100" />
 			<UI icon="./Data/Resource/Image/skill/icon/10500021_buff.png" iconOnOff="0" isHideCooltime="1" />
 		</level>
 		<level level="11" feature="JobChange_01">
 			<Basic durationTick="1000" casterIndividualEffect="1" clearEffectFromPVPZone="1" />
 			<Motion abnormalImmuneBreak="5" />
-			<DotDamage type="2" useGrade="1" rate="3.18" element="1" soundMaterial="100" />
+			<DotDamage type="2" useGrade="1" rate="39.97" element="1" soundMaterial="100" />
 			<UI icon="./Data/Resource/Image/skill/icon/10500021_buff.png" iconOnOff="0" isHideCooltime="1" />
 		</level>
 		<level level="12" feature="JobChange_01">
 			<Basic durationTick="1000" casterIndividualEffect="1" clearEffectFromPVPZone="1" />
 			<Motion abnormalImmuneBreak="5" />
-			<DotDamage type="2" useGrade="1" rate="3.35" element="1" soundMaterial="100" />
+			<DotDamage type="2" useGrade="1" rate="42.11" element="1" soundMaterial="100" />
 			<UI icon="./Data/Resource/Image/skill/icon/10500021_buff.png" iconOnOff="0" isHideCooltime="1" />
 		</level>
 	</additional>
@@ -3473,51 +3468,51 @@
 	<additional id="10300261" skillGroupType="1">
 		<level level="1" feature="JobChange_02">
 			<Basic keepCondition="99" doNotClearEffectFromEnterPVPZone="1" />
-			<InvokeEffect skillGroupID="10300262" types="1004" values="0" rates="0.5" />
+			<InvokeEffect skillGroupID="10300262" types="1004" values="0" rates="1.78" />
 		</level>
 		<level level="2" feature="JobChange_02">
 			<Basic keepCondition="99" doNotClearEffectFromEnterPVPZone="1" />
-			<InvokeEffect skillGroupID="10300262" types="1004" values="0" rates="0.85" />
+			<InvokeEffect skillGroupID="10300262" types="1004" values="0" rates="2.13" />
 		</level>
 		<level level="3" feature="JobChange_02">
 			<Basic keepCondition="99" doNotClearEffectFromEnterPVPZone="1" />
-			<InvokeEffect skillGroupID="10300262" types="1004" values="0" rates="1.2" />
+			<InvokeEffect skillGroupID="10300262" types="1004" values="0" rates="2.48" />
 		</level>
 		<level level="4" feature="JobChange_02">
 			<Basic keepCondition="99" doNotClearEffectFromEnterPVPZone="1" />
-			<InvokeEffect skillGroupID="10300262" types="1004" values="0" rates="1.55" />
+			<InvokeEffect skillGroupID="10300262" types="1004" values="0" rates="2.83" />
 		</level>
 		<level level="5" feature="JobChange_02">
 			<Basic keepCondition="99" doNotClearEffectFromEnterPVPZone="1" />
-			<InvokeEffect skillGroupID="10300262" types="1004" values="0" rates="1.9" />
+			<InvokeEffect skillGroupID="10300262" types="1004" values="0" rates="3.18" />
 		</level>
 		<level level="6" feature="JobChange_02">
 			<Basic keepCondition="99" doNotClearEffectFromEnterPVPZone="1" />
-			<InvokeEffect skillGroupID="10300262" types="1004" values="0" rates="2.25" />
+			<InvokeEffect skillGroupID="10300262" types="1004" values="0" rates="3.53" />
 		</level>
 		<level level="7" feature="JobChange_02">
 			<Basic keepCondition="99" doNotClearEffectFromEnterPVPZone="1" />
-			<InvokeEffect skillGroupID="10300262" types="1004" values="0" rates="2.6" />
+			<InvokeEffect skillGroupID="10300262" types="1004" values="0" rates="3.88" />
 		</level>
 		<level level="8" feature="JobChange_02">
 			<Basic keepCondition="99" doNotClearEffectFromEnterPVPZone="1" />
-			<InvokeEffect skillGroupID="10300262" types="1004" values="0" rates="2.95" />
+			<InvokeEffect skillGroupID="10300262" types="1004" values="0" rates="4.23" />
 		</level>
 		<level level="9" feature="JobChange_02">
 			<Basic keepCondition="99" doNotClearEffectFromEnterPVPZone="1" />
-			<InvokeEffect skillGroupID="10300262" types="1004" values="0" rates="3.3" />
+			<InvokeEffect skillGroupID="10300262" types="1004" values="0" rates="4.58" />
 		</level>
 		<level level="10" feature="JobChange_02">
 			<Basic keepCondition="99" doNotClearEffectFromEnterPVPZone="1" />
-			<InvokeEffect skillGroupID="10300262" types="1004" values="0" rates="3.65" />
+			<InvokeEffect skillGroupID="10300262" types="1004" values="0" rates="4.93" />
 		</level>
 		<level level="11" feature="JobChange_02">
 			<Basic keepCondition="99" doNotClearEffectFromEnterPVPZone="1" />
-			<InvokeEffect skillGroupID="10300262" types="1004" values="0" rates="4" />
+			<InvokeEffect skillGroupID="10300262" types="1004" values="0" rates="5.28" />
 		</level>
 		<level level="12" feature="JobChange_02">
 			<Basic keepCondition="99" doNotClearEffectFromEnterPVPZone="1" />
-			<InvokeEffect skillGroupID="10300262" types="1004" values="0" rates="4.35" />
+			<InvokeEffect skillGroupID="10300262" types="1004" values="0" rates="5.63" />
 		</level>
 	</additional>
 	<additional id="10300262" skillGroupType="1">
@@ -3580,73 +3575,73 @@
 			<Basic durationTick="1000" resetCondition="1" casterIndividualEffect="1" clearEffectFromPVPZone="1" />
 			<Condition hasNotBuffID="10300268" />
 			<Motion abnormalImmuneBreak="5" />
-			<DotDamage type="2" useGrade="1" rate="1.12" element="2" />
+			<DotDamage type="2" useGrade="1" rate="17.79" element="2" />
 		</level>
 		<level level="2" feature="JobChange_02">
 			<Basic durationTick="1000" resetCondition="1" casterIndividualEffect="1" clearEffectFromPVPZone="1" />
 			<Condition hasNotBuffID="10300268" />
 			<Motion abnormalImmuneBreak="5" />
-			<DotDamage type="2" useGrade="1" rate="1.2" element="2" />
+			<DotDamage type="2" useGrade="1" rate="19.86" element="2" />
 		</level>
 		<level level="3" feature="JobChange_02">
 			<Basic durationTick="1000" resetCondition="1" casterIndividualEffect="1" clearEffectFromPVPZone="1" />
 			<Condition hasNotBuffID="10300268" />
 			<Motion abnormalImmuneBreak="5" />
-			<DotDamage type="2" useGrade="1" rate="1.28" element="2" />
+			<DotDamage type="2" useGrade="1" rate="21.93" element="2" />
 		</level>
 		<level level="4" feature="JobChange_02">
 			<Basic durationTick="1000" resetCondition="1" casterIndividualEffect="1" clearEffectFromPVPZone="1" />
 			<Condition hasNotBuffID="10300268" />
 			<Motion abnormalImmuneBreak="5" />
-			<DotDamage type="2" useGrade="1" rate="1.36" element="2" />
+			<DotDamage type="2" useGrade="1" rate="24" element="2" />
 		</level>
 		<level level="5" feature="JobChange_02">
 			<Basic durationTick="1000" resetCondition="1" casterIndividualEffect="1" clearEffectFromPVPZone="1" />
 			<Condition hasNotBuffID="10300268" />
 			<Motion abnormalImmuneBreak="5" />
-			<DotDamage type="2" useGrade="1" rate="1.44" element="2" />
+			<DotDamage type="2" useGrade="1" rate="26.07" element="2" />
 		</level>
 		<level level="6" feature="JobChange_02">
 			<Basic durationTick="1000" resetCondition="1" casterIndividualEffect="1" clearEffectFromPVPZone="1" />
 			<Condition hasNotBuffID="10300268" />
 			<Motion abnormalImmuneBreak="5" />
-			<DotDamage type="2" useGrade="1" rate="1.52" element="2" />
+			<DotDamage type="2" useGrade="1" rate="28.14" element="2" />
 		</level>
 		<level level="7" feature="JobChange_02">
 			<Basic durationTick="1000" resetCondition="1" casterIndividualEffect="1" clearEffectFromPVPZone="1" />
 			<Condition hasNotBuffID="10300268" />
 			<Motion abnormalImmuneBreak="5" />
-			<DotDamage type="2" useGrade="1" rate="1.6" element="2" />
+			<DotDamage type="2" useGrade="1" rate="30.21" element="2" />
 		</level>
 		<level level="8" feature="JobChange_02">
 			<Basic durationTick="1000" resetCondition="1" casterIndividualEffect="1" clearEffectFromPVPZone="1" />
 			<Condition hasNotBuffID="10300268" />
 			<Motion abnormalImmuneBreak="5" />
-			<DotDamage type="2" useGrade="1" rate="1.68" element="2" />
+			<DotDamage type="2" useGrade="1" rate="32.28" element="2" />
 		</level>
 		<level level="9" feature="JobChange_02">
 			<Basic durationTick="1000" resetCondition="1" casterIndividualEffect="1" clearEffectFromPVPZone="1" />
 			<Condition hasNotBuffID="10300268" />
 			<Motion abnormalImmuneBreak="5" />
-			<DotDamage type="2" useGrade="1" rate="1.76" element="2" />
+			<DotDamage type="2" useGrade="1" rate="34.35" element="2" />
 		</level>
 		<level level="10" feature="JobChange_02">
 			<Basic durationTick="1000" resetCondition="1" casterIndividualEffect="1" clearEffectFromPVPZone="1" />
 			<Condition hasNotBuffID="10300268" />
 			<Motion abnormalImmuneBreak="5" />
-			<DotDamage type="2" useGrade="1" rate="1.84" element="2" />
+			<DotDamage type="2" useGrade="1" rate="36.42" element="2" />
 		</level>
 		<level level="11" feature="JobChange_02">
 			<Basic durationTick="1000" resetCondition="1" casterIndividualEffect="1" clearEffectFromPVPZone="1" />
 			<Condition hasNotBuffID="10300268" />
 			<Motion abnormalImmuneBreak="5" />
-			<DotDamage type="2" useGrade="1" rate="1.92" element="2" />
+			<DotDamage type="2" useGrade="1" rate="38.49" element="2" />
 		</level>
 		<level level="12" feature="JobChange_02">
 			<Basic durationTick="1000" resetCondition="1" casterIndividualEffect="1" clearEffectFromPVPZone="1" />
 			<Condition hasNotBuffID="10300268" />
 			<Motion abnormalImmuneBreak="5" />
-			<DotDamage type="2" useGrade="1" rate="2" element="2" />
+			<DotDamage type="2" useGrade="1" rate="40.56" element="2" />
 		</level>
 	</additional>
 	<additional id="10300271" mainType="2" isDebuff="1" skillGroupType="1">
@@ -4026,6 +4021,7 @@
 			<Basic durationTick="10000" intervalTick="500" resetCondition="1" casterIndividualEffect="1" clearEffectFromPVPZone="1" />
 			<Motion startEffect="CH/Skill/Wizard/Eff_Wizard_Hurricane_Start_04.xml" keepEffect="CH/Skill/Wizard/Eff_Wizard_Hurricane_Keep_04.xml" stopEffect="CH/Skill/Wizard/Eff_Wizard_Hurricane_Stop_04.xml" abnormalImmuneBreak="5" />
 			<CancelEffect cancelCheckSameCaster="1" cancelEffectCodes="10300271" />
+			<DotDamage useGrade="1" rate="3.55" element="3" />
 			<UI icon="./Data/Resource/Image/skill/icon/41000014.png" />
 			<Skill level="1" skillID="10300273" />
 		</level>
@@ -4033,6 +4029,7 @@
 			<Basic durationTick="10000" intervalTick="500" resetCondition="1" casterIndividualEffect="1" clearEffectFromPVPZone="1" />
 			<Motion startEffect="CH/Skill/Wizard/Eff_Wizard_Hurricane_Start_04.xml" keepEffect="CH/Skill/Wizard/Eff_Wizard_Hurricane_Keep_04.xml" stopEffect="CH/Skill/Wizard/Eff_Wizard_Hurricane_Stop_04.xml" abnormalImmuneBreak="5" />
 			<CancelEffect cancelCheckSameCaster="1" cancelEffectCodes="10300271" />
+			<DotDamage useGrade="1" rate="3.96" element="3" />
 			<UI icon="./Data/Resource/Image/skill/icon/41000014.png" />
 			<Skill level="2" skillID="10300273" />
 		</level>
@@ -4040,6 +4037,7 @@
 			<Basic durationTick="10000" intervalTick="500" resetCondition="1" casterIndividualEffect="1" clearEffectFromPVPZone="1" />
 			<Motion startEffect="CH/Skill/Wizard/Eff_Wizard_Hurricane_Start_04.xml" keepEffect="CH/Skill/Wizard/Eff_Wizard_Hurricane_Keep_04.xml" stopEffect="CH/Skill/Wizard/Eff_Wizard_Hurricane_Stop_04.xml" abnormalImmuneBreak="5" />
 			<CancelEffect cancelCheckSameCaster="1" cancelEffectCodes="10300271" />
+			<DotDamage useGrade="1" rate="4.37" element="3" />
 			<UI icon="./Data/Resource/Image/skill/icon/41000014.png" />
 			<Skill level="3" skillID="10300273" />
 		</level>
@@ -4047,6 +4045,7 @@
 			<Basic durationTick="10000" intervalTick="500" resetCondition="1" casterIndividualEffect="1" clearEffectFromPVPZone="1" />
 			<Motion startEffect="CH/Skill/Wizard/Eff_Wizard_Hurricane_Start_04.xml" keepEffect="CH/Skill/Wizard/Eff_Wizard_Hurricane_Keep_04.xml" stopEffect="CH/Skill/Wizard/Eff_Wizard_Hurricane_Stop_04.xml" abnormalImmuneBreak="5" />
 			<CancelEffect cancelCheckSameCaster="1" cancelEffectCodes="10300271" />
+			<DotDamage useGrade="1" rate="4.78" element="3" />
 			<UI icon="./Data/Resource/Image/skill/icon/41000014.png" />
 			<Skill level="4" skillID="10300273" />
 		</level>
@@ -4054,6 +4053,7 @@
 			<Basic durationTick="10000" intervalTick="500" resetCondition="1" casterIndividualEffect="1" clearEffectFromPVPZone="1" />
 			<Motion startEffect="CH/Skill/Wizard/Eff_Wizard_Hurricane_Start_04.xml" keepEffect="CH/Skill/Wizard/Eff_Wizard_Hurricane_Keep_04.xml" stopEffect="CH/Skill/Wizard/Eff_Wizard_Hurricane_Stop_04.xml" abnormalImmuneBreak="5" />
 			<CancelEffect cancelCheckSameCaster="1" cancelEffectCodes="10300271" />
+			<DotDamage useGrade="1" rate="5.19" element="3" />
 			<UI icon="./Data/Resource/Image/skill/icon/41000014.png" />
 			<Skill level="5" skillID="10300273" />
 		</level>
@@ -4061,6 +4061,7 @@
 			<Basic durationTick="10000" intervalTick="500" resetCondition="1" casterIndividualEffect="1" clearEffectFromPVPZone="1" />
 			<Motion startEffect="CH/Skill/Wizard/Eff_Wizard_Hurricane_Start_04.xml" keepEffect="CH/Skill/Wizard/Eff_Wizard_Hurricane_Keep_04.xml" stopEffect="CH/Skill/Wizard/Eff_Wizard_Hurricane_Stop_04.xml" abnormalImmuneBreak="5" />
 			<CancelEffect cancelCheckSameCaster="1" cancelEffectCodes="10300271" />
+			<DotDamage useGrade="1" rate="5.6" element="3" />
 			<UI icon="./Data/Resource/Image/skill/icon/41000014.png" />
 			<Skill level="6" skillID="10300273" />
 		</level>
@@ -4068,6 +4069,7 @@
 			<Basic durationTick="10000" intervalTick="500" resetCondition="1" casterIndividualEffect="1" clearEffectFromPVPZone="1" />
 			<Motion startEffect="CH/Skill/Wizard/Eff_Wizard_Hurricane_Start_04.xml" keepEffect="CH/Skill/Wizard/Eff_Wizard_Hurricane_Keep_04.xml" stopEffect="CH/Skill/Wizard/Eff_Wizard_Hurricane_Stop_04.xml" abnormalImmuneBreak="5" />
 			<CancelEffect cancelCheckSameCaster="1" cancelEffectCodes="10300271" />
+			<DotDamage useGrade="1" rate="6.01" element="3" />
 			<UI icon="./Data/Resource/Image/skill/icon/41000014.png" />
 			<Skill level="7" skillID="10300273" />
 		</level>
@@ -4075,6 +4077,7 @@
 			<Basic durationTick="10000" intervalTick="500" resetCondition="1" casterIndividualEffect="1" clearEffectFromPVPZone="1" />
 			<Motion startEffect="CH/Skill/Wizard/Eff_Wizard_Hurricane_Start_04.xml" keepEffect="CH/Skill/Wizard/Eff_Wizard_Hurricane_Keep_04.xml" stopEffect="CH/Skill/Wizard/Eff_Wizard_Hurricane_Stop_04.xml" abnormalImmuneBreak="5" />
 			<CancelEffect cancelCheckSameCaster="1" cancelEffectCodes="10300271" />
+			<DotDamage useGrade="1" rate="6.42" element="3" />
 			<UI icon="./Data/Resource/Image/skill/icon/41000014.png" />
 			<Skill level="8" skillID="10300273" />
 		</level>
@@ -4082,6 +4085,7 @@
 			<Basic durationTick="10000" intervalTick="500" resetCondition="1" casterIndividualEffect="1" clearEffectFromPVPZone="1" />
 			<Motion startEffect="CH/Skill/Wizard/Eff_Wizard_Hurricane_Start_04.xml" keepEffect="CH/Skill/Wizard/Eff_Wizard_Hurricane_Keep_04.xml" stopEffect="CH/Skill/Wizard/Eff_Wizard_Hurricane_Stop_04.xml" abnormalImmuneBreak="5" />
 			<CancelEffect cancelCheckSameCaster="1" cancelEffectCodes="10300271" />
+			<DotDamage useGrade="1" rate="6.83" element="3" />
 			<UI icon="./Data/Resource/Image/skill/icon/41000014.png" />
 			<Skill level="9" skillID="10300273" />
 		</level>
@@ -4089,6 +4093,7 @@
 			<Basic durationTick="10000" intervalTick="500" resetCondition="1" casterIndividualEffect="1" clearEffectFromPVPZone="1" />
 			<Motion startEffect="CH/Skill/Wizard/Eff_Wizard_Hurricane_Start_04.xml" keepEffect="CH/Skill/Wizard/Eff_Wizard_Hurricane_Keep_04.xml" stopEffect="CH/Skill/Wizard/Eff_Wizard_Hurricane_Stop_04.xml" abnormalImmuneBreak="5" />
 			<CancelEffect cancelCheckSameCaster="1" cancelEffectCodes="10300271" />
+			<DotDamage useGrade="1" rate="7.24" element="3" />
 			<UI icon="./Data/Resource/Image/skill/icon/41000014.png" />
 			<Skill level="10" skillID="10300273" />
 		</level>
@@ -4096,6 +4101,7 @@
 			<Basic durationTick="10000" intervalTick="500" resetCondition="1" casterIndividualEffect="1" clearEffectFromPVPZone="1" />
 			<Motion startEffect="CH/Skill/Wizard/Eff_Wizard_Hurricane_Start_04.xml" keepEffect="CH/Skill/Wizard/Eff_Wizard_Hurricane_Keep_04.xml" stopEffect="CH/Skill/Wizard/Eff_Wizard_Hurricane_Stop_04.xml" abnormalImmuneBreak="5" />
 			<CancelEffect cancelCheckSameCaster="1" cancelEffectCodes="10300271" />
+			<DotDamage useGrade="1" rate="7.65" element="3" />
 			<UI icon="./Data/Resource/Image/skill/icon/41000014.png" />
 			<Skill level="11" skillID="10300273" />
 		</level>
@@ -4103,6 +4109,7 @@
 			<Basic durationTick="10000" intervalTick="500" resetCondition="1" casterIndividualEffect="1" clearEffectFromPVPZone="1" />
 			<Motion startEffect="CH/Skill/Wizard/Eff_Wizard_Hurricane_Start_04.xml" keepEffect="CH/Skill/Wizard/Eff_Wizard_Hurricane_Keep_04.xml" stopEffect="CH/Skill/Wizard/Eff_Wizard_Hurricane_Stop_04.xml" abnormalImmuneBreak="5" />
 			<CancelEffect cancelCheckSameCaster="1" cancelEffectCodes="10300271" />
+			<DotDamage useGrade="1" rate="8.06" element="3" />
 			<UI icon="./Data/Resource/Image/skill/icon/41000014.png" />
 			<Skill level="12" skillID="10300273" />
 		</level>
@@ -4193,6 +4200,13 @@
 			<Motion abnormalImmuneBreak="5" />
 			<Offensive hitImmuneBreak="5" />
 			<DotDamage type="2" rate="1" element="3" />
+		</level>
+	</additional>
+	<additional id="10300279" skillGroupType="1">
+		<level level="1" feature="JobChange_01">
+			<Basic durationTick="100" intervalTick="100" casterIndividualEffect="1" coolDownTime="0.2" clearEffectFromPVPZone="1" />
+			<ModifySkillCooldown skillIDs="10300271" values="-0.5" />
+			<UI icon="./Data/Resource/Image/skill/icon/10300181_buff.png" iconOnOff="0" />
 		</level>
 	</additional>
 	<additional id="10300281" skillGroupType="1">
@@ -4532,86 +4546,122 @@
 		</level>
 	</additional>
 	<additional id="10300292" mainType="2" isDebuff="1" skillGroupType="1">
-		<level level="1" feature="JobChange_02" stringParam="128,10">
+		<level level="1" feature="JobChange_02" stringParam="128,10,7">
 			<Basic durationTick="10000" intervalTick="1000" resetCondition="1" dotCondition="1" casterIndividualEffect="1" clearEffectFromPVPZone="1" />
 			<Motion keepEffect="CH/Skill/Wizard/Eff_Wizard_WildFire_Keep_01.xml" stopEffect="CH/Skill/Wizard/Eff_Wizard_WildFire_Stop_01.xml" abnormalImmuneBreak="5" />
+			<SpecialAbility>
+				<v type="defensive_magicaldamage" value="-70" />
+			</SpecialAbility>
 			<DotDamage type="2" rate="1.28" element="1" soundMaterial="100" />
 			<UI icon="./Data/Resource/Image/skill/icon/10300292_buff.png" />
 			<Additional level="1" skillID="10300293" skillTarget="1" skillOwner="3" activeByIntervalTick="1" probability="0.1" />
 		</level>
-		<level level="2" feature="JobChange_02" stringParam="142,10">
+		<level level="2" feature="JobChange_02" stringParam="142,10,7">
 			<Basic durationTick="10000" intervalTick="1000" resetCondition="1" dotCondition="1" casterIndividualEffect="1" clearEffectFromPVPZone="1" />
 			<Motion keepEffect="CH/Skill/Wizard/Eff_Wizard_WildFire_Keep_01.xml" stopEffect="CH/Skill/Wizard/Eff_Wizard_WildFire_Stop_01.xml" abnormalImmuneBreak="5" />
+			<SpecialAbility>
+				<v type="defensive_magicaldamage" value="-70" />
+			</SpecialAbility>
 			<DotDamage type="2" rate="1.42" element="1" soundMaterial="100" />
 			<UI icon="./Data/Resource/Image/skill/icon/10300292_buff.png" />
 			<Additional level="2" skillID="10300293" skillTarget="1" skillOwner="3" activeByIntervalTick="1" probability="0.1" />
 		</level>
-		<level level="3" feature="JobChange_02" stringParam="156,10">
+		<level level="3" feature="JobChange_02" stringParam="156,10,7">
 			<Basic durationTick="10000" intervalTick="1000" resetCondition="1" dotCondition="1" casterIndividualEffect="1" clearEffectFromPVPZone="1" />
 			<Motion keepEffect="CH/Skill/Wizard/Eff_Wizard_WildFire_Keep_01.xml" stopEffect="CH/Skill/Wizard/Eff_Wizard_WildFire_Stop_01.xml" abnormalImmuneBreak="5" />
+			<SpecialAbility>
+				<v type="defensive_magicaldamage" value="-70" />
+			</SpecialAbility>
 			<DotDamage type="2" rate="1.56" element="1" soundMaterial="100" />
 			<UI icon="./Data/Resource/Image/skill/icon/10300292_buff.png" />
 			<Additional level="3" skillID="10300293" skillTarget="1" skillOwner="3" activeByIntervalTick="1" probability="0.1" />
 		</level>
-		<level level="4" feature="JobChange_02" stringParam="170,10">
+		<level level="4" feature="JobChange_02" stringParam="170,10,7">
 			<Basic durationTick="10000" intervalTick="1000" resetCondition="1" dotCondition="1" casterIndividualEffect="1" clearEffectFromPVPZone="1" />
 			<Motion keepEffect="CH/Skill/Wizard/Eff_Wizard_WildFire_Keep_01.xml" stopEffect="CH/Skill/Wizard/Eff_Wizard_WildFire_Stop_01.xml" abnormalImmuneBreak="5" />
+			<SpecialAbility>
+				<v type="defensive_magicaldamage" value="-70" />
+			</SpecialAbility>
 			<DotDamage type="2" rate="1.7" element="1" soundMaterial="100" />
 			<UI icon="./Data/Resource/Image/skill/icon/10300292_buff.png" />
 			<Additional level="4" skillID="10300293" skillTarget="1" skillOwner="3" activeByIntervalTick="1" probability="0.1" />
 		</level>
-		<level level="5" feature="JobChange_02" stringParam="184,10">
+		<level level="5" feature="JobChange_02" stringParam="184,10,7">
 			<Basic durationTick="10000" intervalTick="1000" resetCondition="1" dotCondition="1" casterIndividualEffect="1" clearEffectFromPVPZone="1" />
 			<Motion keepEffect="CH/Skill/Wizard/Eff_Wizard_WildFire_Keep_01.xml" stopEffect="CH/Skill/Wizard/Eff_Wizard_WildFire_Stop_01.xml" abnormalImmuneBreak="5" />
+			<SpecialAbility>
+				<v type="defensive_magicaldamage" value="-70" />
+			</SpecialAbility>
 			<DotDamage type="2" rate="1.84" element="1" soundMaterial="100" />
 			<UI icon="./Data/Resource/Image/skill/icon/10300292_buff.png" />
 			<Additional level="5" skillID="10300293" skillTarget="1" skillOwner="3" activeByIntervalTick="1" probability="0.1" />
 		</level>
-		<level level="6" feature="JobChange_02" stringParam="198,10">
+		<level level="6" feature="JobChange_02" stringParam="198,10,7">
 			<Basic durationTick="10000" intervalTick="1000" resetCondition="1" dotCondition="1" casterIndividualEffect="1" clearEffectFromPVPZone="1" />
 			<Motion keepEffect="CH/Skill/Wizard/Eff_Wizard_WildFire_Keep_01.xml" stopEffect="CH/Skill/Wizard/Eff_Wizard_WildFire_Stop_01.xml" abnormalImmuneBreak="5" />
+			<SpecialAbility>
+				<v type="defensive_magicaldamage" value="-70" />
+			</SpecialAbility>
 			<DotDamage type="2" rate="1.98" element="1" soundMaterial="100" />
 			<UI icon="./Data/Resource/Image/skill/icon/10300292_buff.png" />
 			<Additional level="6" skillID="10300293" skillTarget="1" skillOwner="3" activeByIntervalTick="1" probability="0.1" />
 		</level>
-		<level level="7" feature="JobChange_02" stringParam="212,10">
+		<level level="7" feature="JobChange_02" stringParam="212,10,7">
 			<Basic durationTick="10000" intervalTick="1000" resetCondition="1" dotCondition="1" casterIndividualEffect="1" clearEffectFromPVPZone="1" />
 			<Motion keepEffect="CH/Skill/Wizard/Eff_Wizard_WildFire_Keep_01.xml" stopEffect="CH/Skill/Wizard/Eff_Wizard_WildFire_Stop_01.xml" abnormalImmuneBreak="5" />
+			<SpecialAbility>
+				<v type="defensive_magicaldamage" value="-70" />
+			</SpecialAbility>
 			<DotDamage type="2" rate="2.12" element="1" soundMaterial="100" />
 			<UI icon="./Data/Resource/Image/skill/icon/10300292_buff.png" />
 			<Additional level="7" skillID="10300293" skillTarget="1" skillOwner="3" activeByIntervalTick="1" probability="0.1" />
 		</level>
-		<level level="8" feature="JobChange_02" stringParam="226,10">
+		<level level="8" feature="JobChange_02" stringParam="226,10,7">
 			<Basic durationTick="10000" intervalTick="1000" resetCondition="1" dotCondition="1" casterIndividualEffect="1" clearEffectFromPVPZone="1" />
 			<Motion keepEffect="CH/Skill/Wizard/Eff_Wizard_WildFire_Keep_01.xml" stopEffect="CH/Skill/Wizard/Eff_Wizard_WildFire_Stop_01.xml" abnormalImmuneBreak="5" />
+			<SpecialAbility>
+				<v type="defensive_magicaldamage" value="-70" />
+			</SpecialAbility>
 			<DotDamage type="2" rate="2.26" element="1" soundMaterial="100" />
 			<UI icon="./Data/Resource/Image/skill/icon/10300292_buff.png" />
 			<Additional level="8" skillID="10300293" skillTarget="1" skillOwner="3" activeByIntervalTick="1" probability="0.1" />
 		</level>
-		<level level="9" feature="JobChange_02" stringParam="240,10">
+		<level level="9" feature="JobChange_02" stringParam="240,10,7">
 			<Basic durationTick="10000" intervalTick="1000" resetCondition="1" dotCondition="1" casterIndividualEffect="1" clearEffectFromPVPZone="1" />
 			<Motion keepEffect="CH/Skill/Wizard/Eff_Wizard_WildFire_Keep_01.xml" stopEffect="CH/Skill/Wizard/Eff_Wizard_WildFire_Stop_01.xml" abnormalImmuneBreak="5" />
+			<SpecialAbility>
+				<v type="defensive_magicaldamage" value="-70" />
+			</SpecialAbility>
 			<DotDamage type="2" rate="2.4" element="1" soundMaterial="100" />
 			<UI icon="./Data/Resource/Image/skill/icon/10300292_buff.png" />
 			<Additional level="9" skillID="10300293" skillTarget="1" skillOwner="3" activeByIntervalTick="1" probability="0.1" />
 		</level>
-		<level level="10" feature="JobChange_02" stringParam="254,10">
+		<level level="10" feature="JobChange_02" stringParam="254,10,7">
 			<Basic durationTick="10000" intervalTick="1000" resetCondition="1" dotCondition="1" casterIndividualEffect="1" clearEffectFromPVPZone="1" />
 			<Motion keepEffect="CH/Skill/Wizard/Eff_Wizard_WildFire_Keep_01.xml" stopEffect="CH/Skill/Wizard/Eff_Wizard_WildFire_Stop_01.xml" abnormalImmuneBreak="5" />
+			<SpecialAbility>
+				<v type="defensive_magicaldamage" value="-70" />
+			</SpecialAbility>
 			<DotDamage type="2" rate="2.54" element="1" soundMaterial="100" />
 			<UI icon="./Data/Resource/Image/skill/icon/10300292_buff.png" />
 			<Additional level="10" skillID="10300293" skillTarget="1" skillOwner="3" activeByIntervalTick="1" probability="0.1" />
 		</level>
-		<level level="11" feature="JobChange_02" stringParam="268,10">
+		<level level="11" feature="JobChange_02" stringParam="268,10,7">
 			<Basic durationTick="10000" intervalTick="1000" resetCondition="1" dotCondition="1" casterIndividualEffect="1" clearEffectFromPVPZone="1" />
 			<Motion keepEffect="CH/Skill/Wizard/Eff_Wizard_WildFire_Keep_01.xml" stopEffect="CH/Skill/Wizard/Eff_Wizard_WildFire_Stop_01.xml" abnormalImmuneBreak="5" />
+			<SpecialAbility>
+				<v type="defensive_magicaldamage" value="-70" />
+			</SpecialAbility>
 			<DotDamage type="2" rate="2.68" element="1" soundMaterial="100" />
 			<UI icon="./Data/Resource/Image/skill/icon/10300292_buff.png" />
 			<Additional level="11" skillID="10300293" skillTarget="1" skillOwner="3" activeByIntervalTick="1" probability="0.1" />
 		</level>
-		<level level="12" feature="JobChange_02" stringParam="282,10">
+		<level level="12" feature="JobChange_02" stringParam="282,10,7">
 			<Basic durationTick="10000" intervalTick="1000" resetCondition="1" dotCondition="1" casterIndividualEffect="1" clearEffectFromPVPZone="1" />
 			<Motion keepEffect="CH/Skill/Wizard/Eff_Wizard_WildFire_Keep_01.xml" stopEffect="CH/Skill/Wizard/Eff_Wizard_WildFire_Stop_01.xml" abnormalImmuneBreak="5" />
+			<SpecialAbility>
+				<v type="defensive_magicaldamage" value="-70" />
+			</SpecialAbility>
 			<DotDamage type="2" rate="2.82" element="1" soundMaterial="100" />
 			<UI icon="./Data/Resource/Image/skill/icon/10300292_buff.png" />
 			<Additional level="12" skillID="10300293" skillTarget="1" skillOwner="3" activeByIntervalTick="1" probability="0.1" />
