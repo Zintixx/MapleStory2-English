@@ -1938,39 +1938,30 @@
 		</textureani>
 		<effect file="CH/Emotion/Eff_Emotion_BrokenBlueLuke_A.xml" />
 	</emotion>
+	<!--제압당한 오페라-->
 	<emotion name="BrokenOpera_A">
 		<anim name="Emotion_BrokenOpera_A" />
+		<idleAnim name="Emotion_BrokenOpera_A" />
 		<textureani target="FA">
-			<texture file="Item_Face/{0}/01_Idle.dds" control="Item_Face/{0}/02_Idle_C.dds" delay="2350" />
-			<texture file="Item_Face/{0}/05_Blink2.dds" control="Item_Face/{0}/20_Blink2_C.dds" delay="60" />
-			<texture file="Item_Face/{0}/03_Blink1.dds" control="Item_Face/{0}/04_Blink1_C.dds" delay="50" />
-			<texture file="Item_Face/{0}/01_Idle.dds" control="Item_Face/{0}/02_Idle_C.dds" delay="2350" />
-			<texture file="Item_Face/{0}/05_Blink2.dds" control="Item_Face/{0}/20_Blink2_C.dds" delay="60" />
-			<texture file="Item_Face/{0}/03_Blink1.dds" control="Item_Face/{0}/04_Blink1_C.dds" delay="50" />
+			<texture file="Item_Face/{0}/05_Blink2.dds" control="Item_Face/{0}/20_Blink2_C.dds" loop="true" />
 		</textureani>
 		<effect file="CH/Emotion/Eff_Emotion_BrokenOpera_A.xml" />
 	</emotion>
+	<!--감성캠핑 쓸쓸-->
 	<emotion name="Camp_A">
 		<anim name="Emotion_Camp_A" />
+		<idleAnim name="Emotion_Camp_A" />
 		<textureani target="FA">
-			<texture file="Item_Face/{0}/01_Idle.dds" control="Item_Face/{0}/02_Idle_C.dds" delay="2350" />
-			<texture file="Item_Face/{0}/05_Blink2.dds" control="Item_Face/{0}/20_Blink2_C.dds" delay="60" />
-			<texture file="Item_Face/{0}/03_Blink1.dds" control="Item_Face/{0}/04_Blink1_C.dds" delay="50" />
-			<texture file="Item_Face/{0}/01_Idle.dds" control="Item_Face/{0}/02_Idle_C.dds" delay="2350" />
-			<texture file="Item_Face/{0}/05_Blink2.dds" control="Item_Face/{0}/20_Blink2_C.dds" delay="60" />
-			<texture file="Item_Face/{0}/03_Blink1.dds" control="Item_Face/{0}/04_Blink1_C.dds" delay="50" />
+			<texture file="Item_Face/FC_face_pathetic.dds" loop="true" />
 		</textureani>
 		<effect file="CH/Emotion/Eff_Emotion_Camp_A.xml" />
 	</emotion>
+	<!--감성캠핑 편안-->
 	<emotion name="Camp_B">
 		<anim name="Emotion_Camp_B" />
+		<idleAnim name="Emotion_Camp_B" />
 		<textureani target="FA">
-			<texture file="Item_Face/{0}/01_Idle.dds" control="Item_Face/{0}/02_Idle_C.dds" delay="2350" />
-			<texture file="Item_Face/{0}/05_Blink2.dds" control="Item_Face/{0}/20_Blink2_C.dds" delay="60" />
-			<texture file="Item_Face/{0}/03_Blink1.dds" control="Item_Face/{0}/04_Blink1_C.dds" delay="50" />
-			<texture file="Item_Face/{0}/01_Idle.dds" control="Item_Face/{0}/02_Idle_C.dds" delay="2350" />
-			<texture file="Item_Face/{0}/05_Blink2.dds" control="Item_Face/{0}/20_Blink2_C.dds" delay="60" />
-			<texture file="Item_Face/{0}/03_Blink1.dds" control="Item_Face/{0}/04_Blink1_C.dds" delay="50" />
+			<texture file="Item_Face/FC_face_expect.dds" loop="true" />
 		</textureani>
 		<effect file="CH/Emotion/Eff_Emotion_Camp_B.xml" />
 	</emotion>
@@ -5809,6 +5800,13 @@
 			<texture file="Item_Face/{0}/01_Idle.dds" control="Item_Face/{0}/02_Idle_C.dds" delay="1200" loop="true" />
 		</textureani>
 	</emotion>
+	<!--크릉크릉 투우소-->
+	<emotion name="Ride_Idle_070">
+		<anim name="Ride_Idle_070" />
+		<textureani target="FA">
+			<texture file="Item_Face/FC_face_smile.dds" loop="true" />
+		</textureani>
+	</emotion>
 	<emotion name="Ride_Idle_073">
 		<anim name="Ride_Idle_073" />
 		<textureani target="FA">
@@ -5857,6 +5855,20 @@
 		<anim name="Ride_Idle_077" />
 		<textureani target="FA">
 			<texture file="Item_Face/FC_face_sneaky.dds" delay="100" loop="true" />
+		</textureani>
+	</emotion>
+	<!--굴려굴려 소똥구리-->
+	<emotion name="Ride_Idle_078">
+		<anim name="Ride_Idle_078" />
+		<textureani target="FA">
+			<texture file="Item_Face/FC_face_noSpirit.dds" delay="100" loop="true" />
+		</textureani>
+	</emotion>
+	<!--큐브와 함께 광속으로-->
+	<emotion name="Ride_Idle_079">
+		<anim name="Ride_Idle_079" />
+		<textureani target="FA">
+			<texture file="Item_Face/{0}/05_Blink2.dds" control="Item_Face/{0}/20_Blink2_C.dds" loop="true" />
 		</textureani>
 	</emotion>
 	<emotion name="Ride_Idle_B_syncope">
@@ -5952,6 +5964,13 @@
 			<texture file="Item_Face/FC_face_smile.dds" delay="100" loop="true" />
 		</textureani>
 	</emotion>
+	<!--크릉크릉 투우소-->
+	<emotion name="Ride_Jump_070">
+		<anim name="Ride_Jump_070" />
+		<textureani target="FA">
+			<texture file="Item_Face/FC_face_awe.dds" loop="true" />
+		</textureani>
+	</emotion>
 	<emotion name="Ride_Run_001">
 		<textureani target="FA">
 			<texture file="Item_Face/FC_face_expect.dds" delay="100" loop="true" />
@@ -6034,6 +6053,13 @@
 			<texture file="Item_Face/FC_face_smile.dds" delay="100" loop="true" />
 		</textureani>
 	</emotion>
+	<!--크릉크릉 투우소-->
+	<emotion name="Ride_Run_070">
+		<anim name="Ride_Run_070" />
+		<textureani target="FA">
+			<texture file="Item_Face/FC_face_hateyou.dds" loop="true" />
+		</textureani>
+	</emotion>
 	<emotion name="Ride_Run_073">
 		<anim name="Ride_Run_073" />
 		<textureani target="FA">
@@ -6077,6 +6103,20 @@
 			<texture file="Item_Face/FC_face_sneaky.dds" delay="1200" loop="true" />
 			<texture file="Item_Face/FC_face_awe.dds" delay="800" />
 			<texture file="Item_Face/FC_face_sneaky.dds" delay="1200" />
+		</textureani>
+	</emotion>
+	<!--굴려굴려 소똥구리-->
+	<emotion name="Ride_Run_078">
+		<anim name="Ride_Run_078" />
+		<textureani target="FA">
+			<texture file="Item_Face/FC_face_noSpirit.dds" delay="100" loop="true" />
+		</textureani>
+	</emotion>
+	<!--큐브와 함께 광속으로-->
+	<emotion name="Ride_Run_079">
+		<anim name="Ride_Run_079" />
+		<textureani target="FA">
+			<texture file="Item_Face/{0}/05_Blink2.dds" control="Item_Face/{0}/20_Blink2_C.dds" loop="true" />
 		</textureani>
 	</emotion>
 	<emotion name="Ride_Run_Q">
@@ -6215,6 +6255,13 @@
 			<texture file="Item_Face/FC_face_smile.dds" loop="true" />
 		</textureani>
 	</emotion>
+	<!--크릉크릉 투우소-->
+	<emotion name="Ride_Sp_Idle_070">
+		<anim name="Ride_Sp_Idle_070" />
+		<textureani target="FA">
+			<texture file="Item_Face/FC_face_panic.dds" loop="true" />
+		</textureani>
+	</emotion>
 	<emotion name="Ride_Sp_Idle_073">
 		<anim name="Ride_Sp_Idle_073" />
 		<textureani target="FA">
@@ -6238,6 +6285,20 @@
 		<anim name="Ride_Sp_Idle_077" />
 		<textureani target="FA">
 			<texture file="Item_Face/FC_face_expectation.dds" delay="100" loop="true" />
+		</textureani>
+	</emotion>
+	<!--굴려굴려 소똥구리-->
+	<emotion name="Ride_Sp_Idle_078">
+		<anim name="Ride_Sp_Idle_078" />
+		<textureani target="FA">
+			<texture file="Item_Face/FC_face_panic.dds" delay="100" loop="true" />
+		</textureani>
+	</emotion>
+	<!--큐브와 함께 광속으로-->
+	<emotion name="Ride_Sp_Idle_079">
+		<anim name="Ride_Sp_Idle_079" />
+		<textureani target="FA">
+			<texture file="Item_Face/{0}/11_Attack.dds" control="Item_Face/{0}/12_Attack_C.dds" loop="true" />
 		</textureani>
 	</emotion>
 	<emotion name="Ride_Sp_Idle_Q">
@@ -6327,6 +6388,13 @@
 			<texture file="Item_Face/FC_face_smile.dds" delay="100" loop="true" />
 		</textureani>
 	</emotion>
+	<!--크릉크릉 투우소-->
+	<emotion name="Ride_Sp_Jump_070">
+		<anim name="Ride_Sp_Jump_070" />
+		<textureani target="FA">
+			<texture file="Item_Face/FC_face_panic.dds" delay="100" loop="true" />
+		</textureani>
+	</emotion>
 	<emotion name="Ride_Sp_Run_001">
 		<textureani target="FA">
 			<texture file="Item_Face/FC_face_happy.dds" delay="100" loop="true" />
@@ -6414,6 +6482,13 @@
 			<texture file="Item_Face/FC_face_hateyou.dds" delay="100" loop="true" />
 		</textureani>
 	</emotion>
+	<!--크릉크릉 투우소-->
+	<emotion name="Ride_Sp_Run_070">
+		<anim name="Ride_Sp_Run_070" />
+		<textureani target="FA">
+			<texture file="Item_Face/FC_face_noSpirit.dds" delay="100" loop="true" />
+		</textureani>
+	</emotion>
 	<emotion name="Ride_Sp_Run_073">
 		<anim name="Ride_Sp_Run_073" />
 		<textureani target="FA">
@@ -6437,6 +6512,20 @@
 		<anim name="Ride_Sp_Run_077" />
 		<textureani target="FA">
 			<texture file="Item_Face/FC_face_expectation.dds" delay="100" loop="true" />
+		</textureani>
+	</emotion>
+	<!--굴려굴려 소똥구리-->
+	<emotion name="Ride_Sp_Run_078">
+		<anim name="Ride_Sp_Run_078" />
+		<textureani target="FA">
+			<texture file="Item_Face/FC_face_panic.dds" delay="100" loop="true" />
+		</textureani>
+	</emotion>
+	<!--큐브와 함께 광속으로-->
+	<emotion name="Ride_Sp_Run_079">
+		<anim name="Ride_Sp_Run_079" />
+		<textureani target="FA">
+			<texture file="Item_Face/{0}/11_Attack.dds" control="Item_Face/{0}/12_Attack_C.dds" loop="true" />
 		</textureani>
 	</emotion>
 	<emotion name="Ride_Sp_Run_Q">
