@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ms2>
+<!--프리마돈나 아리에타 장미모양 스플래시-->
+
+  <effect type="nif" filePath="NPC/Skill/Primadonna/EFF_Primadonna_Attack_E_Flo.nif" startDelay="0.5" duration="10" notForceStop="true" viewDistance="0">
+    <attachInfo attachToNode="false" applyNodeTransform="true" parentNode="Scene Root" />
+    <transform translate="0.0, 0.0, 10.0" rotation="0.0, 0.0, 0.0" scale="1.15" />
+  </effect>
+
+  <effect type="nif" filePath="NPC/Skill/Primadonna/EFF_Primadonna_Attack_E_Explosion.nif" startDelay="10.2" duration="3" notForceStop="true" viewDistance="0">
+    <attachInfo attachToNode="false" applyNodeTransform="true" parentNode="Scene Root" />
+    <transform translate="0.0, 0.0, 10.0" rotation="0.0, 0.0, 0.0" scale="1.15" />
+  </effect>
+
+  <!-- 장미 생성 및 전체 폭발 효과음 -->
+  <effect type="soundEvent" group="MS2Sound/Sound/Mob" event="06102617" startDelay="0.5">
+    <attachInfo attachToNode="false" applyNodeTransform="false" parentNode="Scene Root" />
+  </effect>    
+
+  <effect type="soundEvent" group="MS2Sound/Sound/Mob" event="06102614" startDelay="10.2">
+    <attachInfo attachToNode="false" applyNodeTransform="false" parentNode="Scene Root" />
+  </effect>
+</ms2>

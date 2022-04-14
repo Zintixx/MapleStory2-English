@@ -8,6 +8,12 @@
 	
 	<state name="초기화">
 		<onEnter>
+			<!-- Mesh 초기화 -->
+			<action name="메쉬를설정한다" arg1="1000-1030" arg2="0"/>
+			<action name="메쉬를설정한다" arg1="2000" arg2="1" arg5="10" />
+			<action name="메쉬를설정한다" arg1="2002" arg2="0" arg5="10" />
+			<action name="메쉬를설정한다" arg1="4000-4027" arg2="1" arg5="10" />
+			
 			<action name="SetUserValue" key="CurtainOff" value="0"/>
 		</onEnter>
 		<condition name="무조건" > 
@@ -15,45 +21,57 @@
 		</condition>
 	</state>
 	
-	<state name="대기"> 
+	<state name="대기">
+		<onEnter>
+			<action name="메쉬를설정한다" arg1="1000-1030" arg2="1"/>
+		</onEnter>
 		<condition name="UserValue" key="CurtainOff" value="1">  
 			<transition state="커튼열기"/>
 		</condition>			
 	</state>
-
-	<!-- <state name="초기화">
-		<onEnter>
-			<action name="SetUserValue" key="CurtainOff" value="0"/>
-		</onEnter>
-		<condition name="무조건" > 
-			<transition state="대기"/>
-		</condition>
-	</state>
-	
-	<state name="대기"> 
-		<condition name="UserValue" key="CurtainOff" value="1">  
-			<transition state="카메라기다리기"/>
-		</condition>			
-	</state>
-
-	<state name="카메라기다리기"> 
-		<onEnter>
-			<action name="SetUserValue" triggerID="99999997" key="CameraOn" value="1"/>
-		</onEnter>
-		<condition name="WaitTick" waitTick="4000">  
-			<transition state="커튼열기"/>
-		</condition>	
-	</state> -->
 
 	<state name="커튼열기"> 
 		<onEnter>
 			<!--커튼 제거-->
 			<action name="메쉬를설정한다" arg1="1000-1030" arg2="0"/>
+			<action name="메쉬를설정한다" arg1="2000" arg2="0" arg5="10" />
+			<action name="메쉬를설정한다" arg1="2002" arg2="1" arg5="10" />
 		</onEnter>
-		<condition name="WaitTick" waitTick="3000">  
-			<transition state="끝"/>
+		<condition name="무조건">  
+			<transition state="유저대기"/>
 		</condition>	
 	</state>
+	
+	<state name="유저대기">
+		<condition name="유저를감지했으면" arg1="99999998">
+				<transition state="보스전재시작대기"/>
+		</condition>
+	</state>
+	
+	<state name="보스전재시작대기"> 
+		<!-- 연출을 위해 약간 늦게 시작한다 -->
+		<condition name="WaitTick" waitTick="1500">  
+			<transition state="보스전재시작"/>
+		</condition>
+	</state>
+	
+	<state name="보스전재시작"> 
+		<onEnter>
+			<action name="SetAiExtraData" key="moveNextStage" value="3" boxID="0" isModify="false"/>
+		</onEnter>
+		<!-- 잠시 뒤에 계단이 사라진다 -->
+		<condition name="WaitTick" waitTick="15000">  
+			<transition state="계단제거"/>
+		</condition>
+	</state>
+	<state name="계단제거">
+		<onEnter>
+			<action name="메쉬를설정한다" arg1="4000-4027" arg2="0" arg5="10" />
+		</onEnter>
+		<condition name="무조건" > 
+			<transition state="끝"/>
+		</condition>
+  	</state>
   	<state name="끝">
   	</state>
 </ms2>

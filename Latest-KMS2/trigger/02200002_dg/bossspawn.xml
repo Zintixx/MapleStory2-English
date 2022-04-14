@@ -1,23 +1,190 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ms2>
-	<state name="시작대기중">
-		<condition name="CheckUser">
-			<transition state="기본셋팅"/>
+	<state name="트리거시작">
+		<condition name="무조건">
+			<transition state="초기세팅"/>
 		</condition>
 	</state>
-	<state name="기본셋팅"> 
+	<state name="초기세팅">
 		<onEnter>
+			<!-- 입구 매쉬 초기화 -->
+			<action name="메쉬를설정한다" arg1="2001" arg2="0" />
+			<action name="메쉬를설정한다" arg1="3000-3054" arg2="1" />
 			<!-- 이펙트 초기화(OFF) -->
 			<action name="SetEffect" arg1="20001" arg2="0"/>
 			<action name="포탈을설정한다" arg1="1" arg2="0" arg3="0" arg4="0"/>
 			<action name="포탈을설정한다" arg1="2" arg2="0" arg3="0" arg4="0"/>
 			<!-- 조명 설정(어두움) -->
 			<action name="SetDirectionalLight" arg1="0,0,0" arg2="0,0,0"/>
-			<action name="SetAmbientLight" arg1="107,100,89"/>	
-		</onEnter>  			
+			<action name="SetAmbientLight" arg1="0,0,0"/>
+		</onEnter>  		
+		<condition name="CheckUser">
+			<transition state="유저감지전"/>
+		</condition>
+	</state>
+	<state name="유저감지전">  			
 		<condition name="유저를감지했으면" arg1="99999999">
+			<transition state="유저카운트_던전ID"/>
+		</condition>
+	</state>
+	<state name="유저카운트_던전ID">
+		<!-- 테스트를 위해 던전입장을 하지 않은 경우 진행되도록 한다 -->
+		<condition name="AnyOne">
+			<group>
+				<condition name="DungeonID" dungeonID="23100001"/>
+				<condition name="DungeonID" dungeonID="23100002"/>
+			</group>
+			<transition state="유저카운트"/>
+		</condition>
+		<condition name="무조건">
+			<transition state="유저카운트설정6"/>
+		</condition>
+	</state>
+	
+	<state name="유저카운트">
+		<condition name="CheckMaxUserCount" checkCount="1">
+			<transition state="유저카운트설정1"/>
+		</condition>
+		<condition name="CheckMaxUserCount" checkCount="2">
+			<transition state="유저카운트설정2"/>
+		</condition>
+		<condition name="CheckMaxUserCount" checkCount="3">
+			<transition state="유저카운트설정3"/>
+		</condition>
+		<condition name="CheckMaxUserCount" checkCount="4">
+			<transition state="유저카운트설정4"/>
+		</condition>
+		<condition name="CheckMaxUserCount" checkCount="5">
+			<transition state="유저카운트설정5"/>
+		</condition>
+		<condition name="무조건">
+			<transition state="유저카운트설정6"/>
+		</condition>
+	</state>
+	
+	<state name="유저카운트설정1">
+		<onEnter>
+			<action name="DebugString" string="USER COUNT 1"/>
+			<action name="SetAiExtraData" key="userCount" value="1" boxID="0" isModify="false"/>
+		</onEnter>
+		<condition name="무조건" > 
+			<transition state="시작연출대기" />
+		</condition>
+	</state>
+	<state name="유저카운트설정2">
+		<onEnter>
+			<action name="DebugString" string="USER COUNT 2"/>		
+			<action name="SetAiExtraData" key="userCount" value="2" boxID="0" isModify="false"/>
+		</onEnter>
+		<condition name="무조건" > 
+			<transition state="시작연출대기" />
+		</condition>
+	</state>
+	<state name="유저카운트설정3">
+		<onEnter>
+			<action name="DebugString" string="USER COUNT 3"/>
+			<action name="SetAiExtraData" key="userCount" value="3" boxID="0" isModify="false"/>
+		</onEnter>
+		<condition name="무조건" > 
+			<transition state="시작연출대기" />
+		</condition>
+	</state>
+	<state name="유저카운트설정4">
+		<onEnter>
+			<action name="DebugString" string="USER COUNT 4"/>		
+			<action name="SetAiExtraData" key="userCount" value="4" boxID="0" isModify="false"/>
+		</onEnter>
+		<condition name="무조건" > 
+			<transition state="시작연출대기" />
+		</condition>
+	</state>
+	<state name="유저카운트설정5">
+		<onEnter>
+			<action name="DebugString" string="USER COUNT 5"/>
+			<action name="SetAiExtraData" key="userCount" value="5" boxID="0" isModify="false"/>
+		</onEnter>
+		<condition name="무조건" > 
+			<transition state="시작연출대기" />
+		</condition>
+	</state>
+	<state name="유저카운트설정6">
+		<onEnter>
+			<action name="DebugString" string="USER COUNT 6"/>
+			<action name="SetAiExtraData" key="userCount" value="6" boxID="0" isModify="false"/>
+		</onEnter>
+		<condition name="무조건" > 
+			<transition state="시작연출대기" />
+		</condition>
+	</state>
+	
+	<state name="시작연출대기">
+		<onEnter>
+			<!-- 연출용 NPC -->
+			<action name="몬스터를생성한다" arg1="1000" arg2="0"/>
+		</onEnter>
+		<condition name="WaitTick" waitTick="1500">
+			<transition state="시작조명1"/>
+		</condition>		
+	</state>
+	
+	<state name="시작조명1"> 
+		<onEnter>
+			<action name="SetAmbientLight" arg1="147,140,129" arg2="1" arg3="2.5" />
+		</onEnter>  			
+		<condition name="WaitTick" waitTick="1000">
+			<transition state="시작조명2"/>
+		</condition>
+	</state>
+	
+	<state name="시작조명2"> 
+		<onEnter>
+		</onEnter>  			
+		<condition name="WaitTick" waitTick="1000">
+			<transition state="시작조명3"/>
+		</condition>
+	</state>
+	
+	<state name="시작조명3"> 
+		<onEnter>
+		</onEnter>  			
+		<condition name="WaitTick" waitTick="2000">
+			<transition state="시작Ambient"/>
+		</condition>
+	</state>
+	
+	<state name="시작Ambient"> 
+		<onEnter>
+			<action name="SetDirectionalLight" arg1="255,247,239" arg2="255,255,255" arg3="1" arg4="2.0" />
+			<action name="SetAmbientLight" arg1="214,200,179" arg2="1" arg3="2.0" />
+		</onEnter>  			
+		<condition name="WaitTick" waitTick="1500">
 			<transition state="보스등장"/>
 		</condition>
+	</state>
+	
+	<state name="테스트">
+		<onEnter>
+		</onEnter>
+		<condition name="WaitTick" waitTick="1000">
+			<transition state="테스트딜레이"/>
+		</condition>
+	
+	</state>
+	
+	<state name="테스트딜레이">
+		<onEnter>
+			<action name="SetDirectionalLight" arg1="255,247,239" arg2="255,255,255"/>
+			<action name="SetAmbientLight" arg1="214,200,179"/>	
+			
+			<action name="메쉬를설정한다" arg1="2001" arg2="1" />
+			<action name="메쉬를설정한다" arg1="3000-3054" arg2="0" arg5="10" />
+			<!--
+			<action name="메쉬를설정한다" arg1="2001" arg2="0" arg3="0" arg4="0" arg5="10" />
+			<action name="메쉬를설정한다" arg1="3000-3054" arg2="1" arg3="1" arg4="1" arg5="10" />
+			-->
+			<!-- <action name="SetDirectionalLight" arg1="255,247,239" arg2="255,255,255" arg3="1" arg4="2.0" /> -->
+			<!-- <action name="SetAmbientLight" arg1="214,200,179" arg2="1" arg3="2.0" />-->
+		</onEnter>
 	</state>
 	
 	<state name="보스등장">
@@ -30,37 +197,64 @@
 			<!-- 등장연출을 위한 보스 축소 -->
 			<action name="버프를걸어준다" arg1="2000" arg2="44100004" arg3="1" arg4="1" arg5="1"/>
 			<action name="SetEffect" arg1="20001" arg2="1"/>
-			<!-- 조명 설정(밝음) -->
-			<action name="SetDirectionalLight" arg1="255,247,239" arg2="255,255,255"/>
-			<action name="SetAmbientLight" arg1="214,200,179"/>	
+			
 		</onEnter>
 		<condition name="WaitTick" waitTick="200" >
 			<transition state="등장연출" /> 
 		</condition>
 	</state>
-	
 	<state name="등장연출">
 		<onEnter>
 			<action name="버프를걸어준다" arg1="2000" arg2="44100004" arg3="2" arg4="1" arg5="1"/>
 		</onEnter>
 		<condition name="WaitTick" waitTick="1000" > 
-			<transition state="전투정보초기화" />
+			<transition state="전투진행중" />
 		</condition>
 	</state>
-
-	<state name="전투정보초기화">
+	
+	<state name="전투진행중">
 		<onEnter>
 			<action name="NpcRemoveAdditionalEffect" spawnPointID="2000" additionalEffect="44100004" />
 			<action name="DungeonEnableGiveUp" isEnable="1" />
 			<action name="이벤트UI를설정한다" arg1="1" arg2="$02000384_BF__BARRICADE__0$" arg3="3000" />
+			<!-- 조명 설정 고정(밝음) -->
+			<action name="SetDirectionalLight" arg1="255,247,239" arg2="255,255,255"/>
+			<action name="SetAmbientLight" arg1="214,200,179"/>	
 		</onEnter>
-		<condition name="WaitTick" waitTick="30000">
-			<transition state="유저카운트"/>
+		<condition name="WaitTick" waitTick="30000" >
+			<transition state="입장종료처리"/>
+		</condition>
+		<condition name="AllOf">
+			<group>
+				<condition name="DungeonID" dungeonID="23120001"/>
+				<condition name="몬스터가죽어있으면" arg1="2000"/>
+			</group>
+			<transition state="클리어처리"/>
+		</condition>
+		<condition name="DungeonTimeOut" >						
+			<transition state="던전실패" />
+		</condition>
+		<condition name="DungeonCheckState" checkState="Fail">
+			<transition state="던전실패" />
+		</condition>	
+	</state>
+	
+	<state name="입장종료처리">
+		<onEnter>
+			<action name="메쉬를설정한다" arg1="2001" arg2="1" arg5="10" />
+			<action name="메쉬를설정한다" arg1="3000-3054" arg2="0" arg5="10" />
+		</onEnter>
+		<condition name="무조건">
+			<transition state="입장종료이후전투진행중" />
 		</condition>
 	</state>
-		
-	<state name="전투진행중">
-		<condition name="UserValue" key="BattleEnd" value="1">  
+	
+	<state name="입장종료이후전투진행중">
+		<condition name="AllOf">
+			<group>
+				<condition name="DungeonID" dungeonID="23120001"/>
+				<condition name="몬스터가죽어있으면" arg1="2000"/>
+			</group>
 			<transition state="클리어처리"/>
 		</condition>
 		<condition name="DungeonTimeOut" >						
@@ -70,86 +264,9 @@
 			<transition state="던전실패" />
 		</condition>
 	</state>
-
-	<state name="유저카운트">
-		<condition name="CheckUserCount" checkCount="1">
-			<transition state="유저카운트설정1"/>
-		</condition>
-		<condition name="CheckUserCount" checkCount="2">
-			<transition state="유저카운트설정2"/>
-		</condition>
-		<condition name="CheckUserCount" checkCount="3">
-			<transition state="유저카운트설정3"/>
-		</condition>
-		<condition name="CheckUserCount" checkCount="4">
-			<transition state="유저카운트설정4"/>
-		</condition>
-		<condition name="CheckUserCount" checkCount="5">
-			<transition state="유저카운트설정5"/>
-		</condition>
-		<condition name="CheckUserCount" checkCount="6">
-			<transition state="유저카운트설정6"/>
-		</condition>
-	</state>
-	
-	<state name="유저카운트설정1">
-		<onEnter>
-			<action name="DebugString" string="USER COUNT 1"/>
-			<action name="SetAiExtraData" key="userCount" value="1" boxID="0" isModify="false"/>
-		</onEnter>
-		<condition name="무조건" > 
-			<transition state="전투진행중" />
-		</condition>
-	</state>
-	<state name="유저카운트설정2">
-		<onEnter>
-			<action name="DebugString" string="USER COUNT 2"/>		
-			<action name="SetAiExtraData" key="userCount" value="2" boxID="0" isModify="false"/>
-		</onEnter>
-		<condition name="무조건" > 
-			<transition state="전투진행중" />
-		</condition>
-	</state>
-	<state name="유저카운트설정3">
-		<onEnter>
-			<action name="DebugString" string="USER COUNT 3"/>
-			<action name="SetAiExtraData" key="userCount" value="3" boxID="0" isModify="false"/>
-		</onEnter>
-		<condition name="무조건" > 
-			<transition state="전투진행중" />
-		</condition>
-	</state>
-	<state name="유저카운트설정4">
-		<onEnter>
-			<action name="DebugString" string="USER COUNT 4"/>		
-			<action name="SetAiExtraData" key="userCount" value="4" boxID="0" isModify="false"/>
-		</onEnter>
-		<condition name="무조건" > 
-			<transition state="전투진행중" />
-		</condition>
-	</state>
-	<state name="유저카운트설정5">
-		<onEnter>
-			<action name="DebugString" string="USER COUNT 5"/>
-			<action name="SetAiExtraData" key="userCount" value="5" boxID="0" isModify="false"/>
-		</onEnter>
-		<condition name="무조건" > 
-			<transition state="전투진행중" />
-		</condition>
-	</state>
-	<state name="유저카운트설정6">
-		<onEnter>
-			<action name="DebugString" string="USER COUNT 6"/>
-			<action name="SetAiExtraData" key="userCount" value="6" boxID="0" isModify="false"/>
-		</onEnter>
-		<condition name="무조건" > 
-			<transition state="전투진행중" />
-		</condition>
-	</state>
 	
 	<state name="클리어처리">
 		<onEnter>
-			<action name="메쉬를설정한다" arg1="4000" arg2="0" arg3="0" arg4="0" arg5="10" />
 		</onEnter>
 		<condition name="WaitTick" waitTick="4000" >
 			<action name="DungeonClear" /> 
@@ -159,7 +276,6 @@
 	
 	<state name="던전실패">
 		<onEnter>
-			<action name="메쉬를설정한다" arg1="4000" arg2="0" arg3="0" arg4="0" arg5="10" />
 			<action name="DungeonSetEndTime" />  <!--시간 기능 종료시킴, 이 기능 잘 작동시키려면 DungeonRoom.xlsx 의 제한 시간 만료 시(isExpireTimeOut) 빈칸 설정 해야 함  -->		
 			<action name="DungeonCloseTimer" />
 		</onEnter>		 
@@ -172,13 +288,18 @@
 	<state name="게임종료">
 		<onEnter>
 			<action name="몬스터소멸시킨다" arg1="all" />
-			<action name="메쉬를설정한다" arg1="1031-1046" arg2="0" />
+			<!-- Mesh 초기화 -->
+			<action name="메쉬를설정한다" arg1="1000-1030" arg2="0"/>
+			<action name="메쉬를설정한다" arg1="2000" arg2="1" arg5="10" />
+			<action name="메쉬를설정한다" arg1="2001" arg2="0" arg5="10" />
+			<action name="메쉬를설정한다" arg1="2002" arg2="0" arg5="10" />
+			<action name="메쉬를설정한다" arg1="3000-3054" arg2="1" arg5="10" />
+			<action name="메쉬를설정한다" arg1="4000-4027" arg2="1" arg5="10" />
 			<action name="포탈을설정한다" arg1="3" arg2="1" arg3="1" arg4="1"/>
 			<action name="포탈을설정한다" arg1="4" arg2="1" arg3="1" arg4="1"/>
 			<action name="DungeonEnableGiveUp" isEnable="0" />
 		</onEnter>
-		<condition name="WaitTick" waitTick="2000" > 
-			<action name="LookCenterCameraRadian" on="1" radian="3.927" />
+		<condition name="WaitTick" waitTick="2000" >
       		<transition state="끝" />
 		</condition>		
 	</state>
