@@ -8,6 +8,7 @@
 	
 	<state name="초기화">
 		<onEnter>
+			<action name="SetUserValue" key="BravoLightMessage" value="0"/>
 			<action name="SetUserValue" key="BravoLight" value="0"/>
 			<action name="SetUserValue" key="BravoLightInit" value="0"/>
 			<action name="SetUserValue" key="BravoLightOff" value="0"/>
@@ -43,8 +44,21 @@
 		<condition name="UserValue" key="BravoLight_CheckCount_4" value="1">  
 			<transition state="BravoLight_CheckCount_4"/>
 		</condition>
+		<condition name="UserValue" key="BravoLightMessage" value="1">  
+			<transition state="BravoLightMessage"/>
+		</condition>
 	</state>
 
+	<state name="BravoLightMessage"> 
+		<onEnter>
+			<action name="SetUserValue" key="BravoLightMessage" value="0"/>
+			<action name="이벤트UI를설정한다" arg1="1" arg2="$02200002_DG__02200002_SKILL__0$" arg3="3000" />
+		</onEnter>
+		<condition name="무조건" > 
+			<transition state="대기"/>
+		</condition>
+	</state>
+	
 	<state name="BravoLight_1"> 
 		<onEnter>
 			<action name="SetUserValue" key="BravoLight" value="0"/>
@@ -55,7 +69,6 @@
 			<transition state="대기"/>
 		</condition>
 	</state>
-	
 	
 	<state name="BravoLight_2"> 
 		<onEnter>
