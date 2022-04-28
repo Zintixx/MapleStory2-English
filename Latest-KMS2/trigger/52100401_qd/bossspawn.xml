@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ms2>
+	<state name="시작대기중">
+		<condition name="CheckUser">
+			<transition state="기본셋팅"/>
+		</condition>
+	</state>
+	<state name="기본셋팅"> 
+		<onEnter>
+			<!-- 이펙트 초기화(OFF) -->
+			<action name="SetEffect" arg1="20001" arg2="0"/>
+			<!-- 조명 설정(밝음) -->
+			<action name="SetDirectionalLight" arg1="255,247,239" arg2="255,255,255"/>
+			<action name="SetAmbientLight" arg1="214,200,179"/>
+		</onEnter>  			
+	</state>
+</ms2>

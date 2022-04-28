@@ -158,6 +158,7 @@
 	<key id="s_msg_item_open_item_box_multiopen_title" value="Open Multiple" feature="" />
 	<key id="s_msg_item_open_blueprint" value="You about to use {0} to change your home. Once done, these changes can't be reverted.\n\nProceed?" />
 	<key id="s_notify_currency_overflow" value="You reached the max number of {0} that you can have. {0} x{1} cannot be obtained and will disappear." />
+	<key id="s_notify_currency_overflow_period" value="You reached the weekly max number of {0} that you can have. {0} x{1} cannot be obtained and will disappear." />
 	<key id="s_err_lack_guild_trophy" value="Not enough guild trophies." />
 	<key id="s_err_lack_guild_require_date" value="You can buy after being in the guild for 7 days." />
 	<key id="s_err_lack_guild_master" value="Only the guild leader can make the purchase." />
@@ -1002,8 +1003,10 @@
 	<key id="s_gamehelper_voice_chat_enter" value="You entered a voice chat room." />
 	<key id="s_gamehelper_voice_chat_leave" value="You exited the voice chat room." />
 	<key id="s_buddy_confirm_ban_somebody" value="Do you want to block {0}?" />
+	<key id="s_buddy_confirm_homeblock_somebody" value="Do you want to block {0} from your home?" />
 	<key id="s_buddy_confirm_del_somebody_from_list" value="Do you really want to remove {0} from your friends list?" />
 	<key id="s_buddy_confirm_del_somebody_from_banlist" value="Do you want to remove {0} from the block list?" />
+	<key id="s_buddy_confirm_del_somebody_from_homeblocklist" value="Do you want to remove {0} from the home block list?" />
 	<key id="s_login_err_connect" value="Unable to connect.\n(Error Code: {0})" />
 	<key id="s_login_err_disconnected" value="Disconnected from the server.\n({0})" />
 	<key id="s_notice_bypass" value="Disconnected from the server.\n({0})\nWould you like to re-connect?" />
@@ -2285,6 +2288,7 @@
 	<key id="s_buddy_format_mapuser_count" value="{0}\nPlayers Nearby: {1}" />
 	<key id="s_buddy_format_recv_count" value="Pending Requests: {0}" />
 	<key id="s_buddy_format_ban_count" value="Blocked Players: {0}" />
+	<key id="s_buddy_format_homeblock_count" value="Blocked Players: {0}" />
 	<key id="s_buddy_format_buddy_count" value="Friends Online: &lt;FONT color='#00A2ED'&gt;{0}&lt;/FONT&gt; / {1}" />
 	<key id="s_buddy_err_miss_id" value="Character not found." />
 	<key id="s_buddy_err_empty_id" value="Please enter the character's name." />
@@ -2302,6 +2306,16 @@
 	<key id="s_buddy_err_my_id_ex" value="You cannot add yourself." />
 	<key id="s_buddy_err_already_request_somebody" value="You have already sent a friend request to {0}." />
 	<key id="s_buddy_err_already_receive_from_this_char" value="This character has already sent a friend request.\nCheck the Friends window." />
+	<key id="s_home_block_somebody" value="You have blocked {0} from your home." />
+	<key id="s_home_block_del_somebody_from_banlist" value="{0} has been removed from your home block list." />
+	<key id="s_home_block_memo_complete" value="You have edited the home block message for {0}." />
+	<key id="s_home_block_err_unknown" value="Could not perform request." />
+	<key id="s_home_block_err_no_user" value="Character not found." />
+	<key id="s_home_block_err_self_block" value="You cannot block yourself from your home." />
+	<key id="s_home_block_err_already_block" value="This character has already been blocked from your home." />
+	<key id="s_home_block_err_max_block" value="You cannot block any more players from your home." />
+	<key id="s_home_block_err_enterance_block" value="You cannot enter this home because you have been blocked." />
+	<key id="s_home_block_err_kick" value="You have been kicked from this home because the other player has blocked you." />
 	<key id="s_msg_crystal_upgrade_empty" value="You have no crystals that can be upgraded." />
 	<key id="s_msg_crystal_upgrade_disabled" value="This crystal cannot be boosted." />
 	<key id="s_msg_crystal_upgrade_complete" value="Boost ended." />
@@ -2646,6 +2660,7 @@
 	<key id="s_ugc_itemedit_error_invalid_design" value="Incorrect designer item." />
 	<key id="s_ugc_itemedit_error_invalid_selected_design" value="Select the template." />
 	<key id="s_ugc_itemedit_error_change_price" value="The creation fee has been changed for this template.\nPlease try again." />
+	<key id="s_ugc_uic_error" value="Inappropriate image." />
 	<key id="s_title_shop" value="Shop – {0}" />
 	<key id="s_title_gacha_shop" value="Capsule Shop — {0}" />
 	<key id="s_title_buyitem" value="Buy Item" />
@@ -3350,7 +3365,7 @@
 	<key id="s_home_visit_failed_homeless" value="You cannot visit that character's home." />
 	<key id="s_home_visit_failed_disablemap" value="You cannot visit a home from here." />
 	<key id="s_home_visit_failed_myhome" value="You cannot move to the house." />
-	<key id="s_home_visit_failed_private" value="This house cannot be visited." />
+	<key id="s_home_visit_failed_private" value="This house cannot be visited because it is set to private." />
 	<key id="s_home_invite_confirm" value="{0} has invited you to their house.\nDo you want to go now?" />
 	<key id="s_home_invite_accept" value="{0} accepted the invitation to visit your home." />
 	<key id="s_home_invite_reject" value="{0} has declined the invitation to visit your home." />
@@ -4755,6 +4770,7 @@
 	<key id="s_itemremake_error_server_fail_apply_option" value="The Bonus Attribute change failed." />
 	<key id="s_itemremake_error_server_fail_lack_lock_consume_item" value="Cannot lock attribute." feature="OptionBlock01" />
 	<key id="s_itemremake_error_server_default" value="Bonus Attributes Modification Error: code=[{0},{1}]" />
+	<key id="s_itemremake_error_prev_option_item_not_exist" value="As a result of the recent option change, no unselected item could be found.\nIf you continue, the selectable option information will be deleted.\nItem name: {0}" />
 	<key id="s_itemremake_chat_maxoption" value="{0} rolled {2} on their {1}!" />
 	<key id="s_itemremake_scroll_already_open" value="A window for that system is already open.\nPlease close the window and try again." />
 	<key id="s_itemremake_scroll_notice_puton_item" value="Select the item you want to use the scroll with." />
@@ -5719,6 +5735,7 @@
 	<key id="s_item_merge_option_error_lack_meso" value="Not enough mesos." />
 	<key id="s_item_merge_option_error_unknown" value="System Error" />
 	<key id="s_item_merge_option_revert" value="{0}'s empowerment attributes have been removed." />
+	<key id="s_item_merge_option_error_prev_option_item_not_exist" value="You cannot find an item that has not been selected as a result of the recent transcendence option change.\nIf you continue, the selectable option information will be deleted.\nItem name: {0}" />
 	<key id="s_msg_item_open_item_box_mergeitem" value="Using this will use &lt;FONT color='#FFA200'&gt;1&lt;/FONT&gt; item. All crafting materials will be return. Do you want to use this item? (It will be sent to your mailbox if your inventory is full.)" />
 	<key id="s_msg_item_open_item_box_mergeLV60item" value="사용 시 아이템이 &lt;FONT color='#FFA200'&gt;1개&lt;/FONT&gt; 소모됩니다.\n전신을 제외한 방어구에 사용가능한 초월 수정 2개로 교환됩니다.\n\n아이템을 사용하시겠습니까?\n소지품이 가득 찬 경우에는 우편으로 발송됩니다." feature="ItemMergeLV60" />
 	<key id="s_item_merge_option_consume_meso" value="{0}&lt;Img src='export_common_icon_meso' vspace='-4'/&gt;" />
@@ -6126,7 +6143,8 @@
 	<key id="s_lapenshard_tabname_upgrade_success_prob" value="Success Chance: {0:0.2f}%" feature="Lapenshard01" comment="{0}:Success Probability" />
 	<key id="s_lapenshard_tabname_upgrade_input_count" value="How many will you use? (Owned: {0})" feature="Lapenshard01" comment="{0}:item Count" />
 	<key id="s_lapenshard_tabname_upgrade_lack_ingredient" value="Not enough materials." feature="Lapenshard01" />
-	<key id="s_lapenshard_open_quest_message" value="You need to complete the epic quest &lt;font color='#FFD200'&gt;{0}&lt;/FONT&gt; to use a lapenshard." feature="Lapenshard01" comment="{0}:Quest Name" />
+	<key id="s_lapenshard_open_quest_message" value="You need to complete the epic quest &lt;font color=&apos;#FFD200&apos;&gt;{0}&lt;/font&gt; to use a lapenshard." feature="Lapenshard01" comment="{0}:Quest Name" />
+	<key id="s_lapenshard_open_newbie_quest_message" value="You need to complete the quest &lt;font color=&apos;#FFD200&apos;&gt;{0}&lt;/font&gt; to use a lapenshard." feature="Lapenshard01" comment="{0}:Quest Name" />
 	<key id="s_lapenshard_disable_field" value="You can't do that in this area." feature="Lapenshard01" />
 	<key id="s_lapenshard_disable_battle" value="You cannot do that during combat." feature="Lapenshard01" />
 	<key id="s_lapenshard_upgraded_item" value="You're about to use a lapenshard that is tier 2 or better as catalyst. Proceed?" feature="Lapenshard01" />
@@ -6500,5 +6518,6 @@
 	<key id="s_personal_infomaion_agreement_visit_myhome_btn_public" value="공개" />
 	<key id="s_personal_infomaion_agreement_visit_myhome_btn_password" value="비번 입력" />
 	<key id="s_personal_infomaion_agreement_visit_myhome_btn_private" value="비공개" />
-	<key id="s_personal_infomaion_agreement_visit_myhome_input_password" value="홈 권한 비밀번호를 입력하십시오.\n(숫자 6자까지 입력할 수 있습니다.)" />
+	<key id="s_personal_infomaion_agreement_visit_myhome_input_password" value="홈 권한 비밀번호를 입력하십시오.\n(숫자 6자리만 가능합니다.)" />
+	<key id="s_pc_info_name_shield" value="Shield" />
 </ms2>

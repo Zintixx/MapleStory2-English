@@ -914,7 +914,7 @@
 			<xblock name="02000064_TW_Triatown02" />
 			<property continentCode="102" regionCode="3" mapType="2" revivalreturnid="2000064" enterreturnid="2000064" capacity="200" webFinder="1" checkFly="1" channelGroupID="1" exploreType="1" />
 			<drop maplevel="10" />
-			<bgm id="208" />
+			<bgm id="35" />
 			<camera useFileSetting="true" />
 			<ui useEffLight="1" instancingGrid="3000" />
 		</environment>
@@ -922,7 +922,7 @@
 			<xblock name="02000064_TW_Triatown02_CN" />
 			<property continentCode="102" regionCode="3" mapType="2" revivalreturnid="2000064" enterreturnid="2000064" capacity="200" webFinder="1" checkFly="1" channelGroupID="1" exploreType="1" />
 			<drop maplevel="10" />
-			<bgm id="208" param="5" />
+			<bgm id="35" param="5" />
 			<camera useFileSetting="true" />
 			<ui useEffLight="1" instancingGrid="3000" />
 		</environment>
@@ -1984,7 +1984,7 @@
 	<fieldData id="2000173">
 		<environment>
 			<xblock name="02000173_BF" />
-			<property continentCode="102" regionCode="5" mapType="4" revivalreturnid="2000173" enterreturnid="2000173" capacity="100" webFinder="1" checkFly="1" channelGroupID="1" exploreType="1" />
+			<property continentCode="102" regionCode="5" mapType="4" revivalreturnid="2000173" enterreturnid="2000173" capacity="100" webFinder="1" checkFly="1" channelGroupID="1" exploreType="1" bigDataCharacterSkillUseLog="true" />
 			<drop maplevel="32" />
 			<bgm id="44" param="5" boss="34" bossParam="5" />
 			<ui useEffLight="1" instancingGrid="3000" />
@@ -2177,7 +2177,7 @@
 	<fieldData id="2000192">
 		<environment feature="Season3">
 			<xblock name="02000192_BF" />
-			<property continentCode="102" regionCode="6" mapType="4" revivalreturnid="2000192" enterreturnid="2000192" capacity="100" webFinder="1" checkFly="1" channelGroupID="1" exploreType="1" />
+			<property continentCode="102" regionCode="6" mapType="4" revivalreturnid="2000192" enterreturnid="2000192" capacity="100" webFinder="1" checkFly="1" channelGroupID="1" exploreType="1" bigDataCharacterSkillUseLog="true" />
 			<drop maplevel="48" />
 			<bgm id="28" param="5" boss="23" bossParam="5" />
 			<ui useEffLight="1" instancingGrid="3000" />
@@ -4611,7 +4611,7 @@
 	<fieldData id="2000418">
 		<environment feature="BattleField61to65">
 			<xblock name="02000418_BF" />
-			<property continentCode="102" regionCode="3" mapType="4" revivalreturnid="2000418" enterreturnid="2000418" capacity="100" checkFly="1" channelGroupID="1" exploreType="1" />
+			<property continentCode="102" regionCode="3" mapType="4" revivalreturnid="2000418" enterreturnid="2000418" capacity="100" checkFly="1" channelGroupID="1" exploreType="1" bigDataCharacterSkillUseLog="true" />
 			<drop maplevel="65" />
 			<bgm id="108" param="5" />
 			<ui autoFindTaxiStation="0" />
@@ -5361,6 +5361,19 @@
 	<fieldData id="2000556" />
 	<fieldData id="2000557" />
 	<fieldData id="2000558" />
+	<fieldData id="2000559">
+		<environment feature="DungeonOpen70CH7">
+			<xblock name="02000559_BF" />
+			<property continentCode="102" regionCode="8" mapType="5" revivalreturnid="2000559" homeReturnable="0" webFinder="1" checkClimb="0" checkPartyObserve="1" channelGroupID="1" cubeSkillIntervalTime="1" limitContent="656" exploreType="2" />
+			<drop maplevel="60" />
+			<indoor type="1" />
+			<cashCall cashTaxiNotDestination="1" cashCallMedicProhibit="1" RecallOtherUserProhibit="1" />
+			<split globalSplit="1" />
+			<bgm id="136" param="5" />
+			<camera distance="1200" />
+			<ui instancingGrid="5000" autoFindTaxiStation="0" />
+		</environment>
+	</fieldData>
 	<fieldData id="2010001" />
 	<fieldData id="2010002">
 		<environment feature="KarkarIsland">
@@ -6317,7 +6330,7 @@
 	<fieldData id="2020070">
 		<environment feature="Kritias02">
 			<xblock name="02020070_BF" />
-			<property continentCode="105" regionCode="15" mapType="4" revivalreturnid="2020070" enterreturnid="2020070" capacity="100" webFinder="1" checkFly="1" channelGroupID="1" exploreType="1" />
+			<property continentCode="105" regionCode="15" mapType="4" revivalreturnid="2020070" enterreturnid="2020070" capacity="100" webFinder="1" checkFly="1" channelGroupID="1" exploreType="1" bigDataCharacterSkillUseLog="true" />
 			<drop maplevel="70" />
 			<bgm id="219" param="5" />
 		</environment>
@@ -6325,7 +6338,7 @@
 	<fieldData id="2020071">
 		<environment feature="Kritias02">
 			<xblock name="02020071_BF" />
-			<property continentCode="105" regionCode="15" mapType="4" revivalreturnid="2020071" enterreturnid="2020071" capacity="100" webFinder="1" checkFly="1" channelGroupID="1" exploreType="1" />
+			<property continentCode="105" regionCode="15" mapType="4" revivalreturnid="2020071" enterreturnid="2020071" capacity="100" webFinder="1" checkFly="1" channelGroupID="1" exploreType="1" bigDataCharacterSkillUseLog="true" />
 			<drop maplevel="70" />
 			<split globalSplit="1" />
 			<bgm id="219" param="5" />
@@ -11854,6 +11867,56 @@
 			<ui useEffLight="1" instancingGrid="9000" useRidee="0" autoFindTaxiStation="0" isNoSkipFrame="true" />
 		</environment>
 	</fieldData>
+	<fieldData id="52100400">
+		<environment feature="EpicApocalypse04">
+			<xblock name="52100400_QD" />
+			<property continentCode="102" mapType="1" revivalreturnid="52100400" enterreturnid="52100400" homeReturnable="0" capacity="1" channelGroupID="1" mapSearch="0" exploreType="2" />
+			<drop maplevel="77" />
+			<indoor type="1" />
+			<cashCall cashTaxiNotDestination="1" RecallOtherUserProhibit="1" />
+			<split globalSplit="1" />
+			<bgm id="51" />
+			<camera hangle="90" vangle="45" />
+			<ui useEffLight="1" instancingGrid="3000" useRidee="0" autoFindTaxiStation="0" />
+		</environment>
+	</fieldData>
+	<fieldData id="52100401">
+		<environment feature="EpicApocalypse04">
+			<xblock name="52100401_QD" />
+			<property continentCode="102" regionCode="6" mapType="5" revivalreturnid="52100401" enterreturnid="52100401" homeReturnable="0" minimapInvisible="1" capacity="1" checkClimb="0" channelGroupID="2" mapSearch="0" exploreType="2" />
+			<drop maplevel="77" />
+			<indoor type="1" />
+			<cashCall cashTaxiNotDestination="1" RecallOtherUserProhibit="1" />
+			<split globalSplit="1" />
+			<bgm id="165" />
+			<camera distance="1200" vangle="45" />
+			<ui useEffLight="1" instancingGrid="9000" useRidee="0" autoFindTaxiStation="0" isNoSkipFrame="true" />
+		</environment>
+	</fieldData>
+	<fieldData id="52100402">
+		<environment feature="EpicApocalypse04">
+			<xblock name="52100402_QD" />
+			<property continentCode="102" regionCode="5" mapType="1" revivalreturnid="52100402" enterreturnid="52100402" homeReturnable="0" capacity="1" channelGroupID="1" mapSearch="0" exploreType="2" />
+			<drop maplevel="77" />
+			<indoor type="1" />
+			<cashCall cashTaxiNotDestination="1" RecallOtherUserProhibit="1" />
+			<bgm id="42" />
+			<ui useEffLight="1" instancingGrid="3000" autoFindTaxiStation="0" />
+		</environment>
+	</fieldData>
+	<fieldData id="52100403" />
+	<fieldData id="52100404">
+		<environment feature="EpicApocalypse04">
+			<xblock name="52100404_QD" />
+			<property continentCode="102" regionCode="3" mapType="1" revivalreturnid="52100404" enterreturnid="52100404" homeReturnable="0" minimapInvisible="1" capacity="1" checkClimb="0" channelGroupID="1" mapSearch="0" exploreType="2" />
+			<drop maplevel="49" />
+			<indoor type="1" />
+			<cashCall cashTaxiNotDestination="1" RecallOtherUserProhibit="1" />
+			<bgm id="113" />
+			<camera hangle="0" vangle="70" />
+			<ui useEffLight="1" instancingGrid="3000" useRidee="0" autoFindTaxiStation="0" />
+		</environment>
+	</fieldData>
 	<fieldData id="61000001">
 		<environment>
 			<xblock name="61000001_ME_001" />
@@ -13227,7 +13290,7 @@
 	<fieldData id="64000001">
 		<environment>
 			<xblock name="64000001_GD" />
-			<property continentCode="102" regionCode="6" mapCategoryCode="9" mapType="9" revivalreturnid="64000001" homeReturnable="0" deathPenalty="0" autoRevivalType="1" autoRevivalTime="3" webFinder="1" checkClimb="0" checkPartyObserve="1" doNotRevivalHere="1" channelGroupID="1" limitContent="767" infinityMeratRevival="0" exploreType="2" />
+			<property continentCode="102" regionCode="6" mapCategoryCode="9" mapType="9" revivalreturnid="64000001" homeReturnable="0" deathPenalty="0" autoRevivalType="1" autoRevivalTime="3" webFinder="1" checkClimb="0" checkPartyObserve="1" doNotRevivalHere="1" channelGroupID="1" limitContent="767" infinityMeratRevival="0" exploreType="2" bigDataCharacterSkillUseLog="true" />
 			<drop maplevel="1" />
 			<indoor type="1" />
 			<cashCall cashTaxiNotDestination="1" RecallOtherUserProhibit="1" />

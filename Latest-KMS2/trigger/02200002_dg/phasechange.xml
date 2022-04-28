@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ms2>
+	<state name="시작대기중">
+		<condition name="무조건">
+			<transition state="초기화"/>
+		</condition>
+	</state>
+	
+	<state name="초기화">
+		<onEnter>
+			<action name="SetUserValue" key="BravoLightMessage" value="0"/>
+			<action name="SetUserValue" key="BravoLight" value="0"/>
+			<action name="SetUserValue" key="BravoLightInit" value="0"/>
+			<action name="SetUserValue" key="BravoLightOff" value="0"/>
+			<action name="SetUserValue" key="BravoLight_CheckCount_2" value="0"/>
+			<action name="SetUserValue" key="BravoLight_CheckCount_3" value="0"/>
+			<action name="SetUserValue" key="BravoLight_CheckCount_4" value="0"/>
+		</onEnter>
+		<condition name="무조건" > 
+			<transition state="대기"/>
+		</condition>
+	</state>
+	
+	
+	<state name="대기"> 
+		<condition name="UserValue" key="BravoLight" value="1">  
+			<transition state="BravoLight_1"/>
+		</condition>
+		<condition name="UserValue" key="BravoLight" value="2">
+			<transition state="BravoLight_2"/>
+		</condition>
+		<condition name="UserValue" key="BravoLightInit" value="1">  
+			<transition state="BravoLightInit"/>
+		</condition>
+		<condition name="UserValue" key="BravoLightOff" value="1">  
+			<transition state="BravoLightOff"/>
+		</condition>
+		<condition name="UserValue" key="BravoLight_CheckCount_2" value="1">  
+			<transition state="BravoLight_CheckCount_2"/>
+		</condition>
+		<condition name="UserValue" key="BravoLight_CheckCount_3" value="1">  
+			<transition state="BravoLight_CheckCount_3"/>
+		</condition>
+		<condition name="UserValue" key="BravoLight_CheckCount_4" value="1">  
+			<transition state="BravoLight_CheckCount_4"/>
+		</condition>
+		<condition name="UserValue" key="BravoLightMessage" value="1">  
+			<transition state="BravoLightMessage"/>
+		</condition>
+	</state>
+
+	<state name="BravoLightMessage"> 
+		<onEnter>
+			<action name="SetUserValue" key="BravoLightMessage" value="0"/>
+			<action name="이벤트UI를설정한다" arg1="1" arg2="$02200002_DG__02200002_SKILL__0$" arg3="3000" />
+		</onEnter>
+		<condition name="무조건" > 
+			<transition state="대기"/>
+		</condition>
+	</state>
+	
+	<state name="BravoLight_1"> 
+		<onEnter>
+			<action name="SetUserValue" key="BravoLight" value="0"/>
+			<action name="SetAmbientLight" arg1="107,100,89" arg2="1" arg3="1.0" />
+			<action name="SetDirectionalLight" arg1="100,100,100" arg2="100,100,100" arg3="1" arg4="1.5" />
+		</onEnter>
+		<condition name="무조건" > 
+			<transition state="대기"/>
+		</condition>
+	</state>
+	
+	<state name="BravoLight_2"> 
+		<onEnter>
+			<action name="SetUserValue" key="BravoLight" value="0"/>
+			<action name="SetAmbientLight" arg1="107,100,89" arg2="1" arg3="1.0" />
+			<action name="SetDirectionalLight" arg1="100,100,100" arg2="100,100,100" arg3="1" arg4="1.5" />
+		</onEnter>
+		<condition name="무조건" > 
+			<transition state="대기"/>
+		</condition>
+	</state>
+	
+	<state name="BravoLightInit"> 
+		<onEnter>
+			<action name="SetUserValue" key="BravoLightInit" value="0"/>
+			<action name="SetDirectionalLight" arg1="255,247,239" arg2="255,255,255" arg3="1" arg4="2.0" />
+			<action name="SetAmbientLight" arg1="214,200,179" arg2="1" arg3="2.0" />
+		</onEnter>
+		<condition name="무조건" > 
+			<transition state="대기"/>
+		</condition>
+	</state>
+	
+	<state name="BravoLightOff"> 
+		<onEnter>
+			<action name="SetUserValue" key="BravoLightOff" value="0"/>
+			<action name="SetAmbientLight" arg1="25,20,22" arg2="1" arg3="1.0" />
+			<action name="SetDirectionalLight" arg1="30,30,30" arg2="30,30,30" arg3="1" arg4="1.0" />
+		</onEnter>
+		<condition name="무조건" > 
+			<transition state="대기"/>
+		</condition>
+	</state>
+	
+	
+	<state name="BravoLight_CheckCount_2"> 
+		<onEnter>
+			<action name="SetUserValue" key="BravoLight_CheckCount_2" value="0"/>
+		</onEnter>
+		<condition name="CheckUserAdditionalCountInRose" triggerBoxIDs="99999980,99999981" additionalEffectID="44190002" level="1" spotLightCount="2" > 
+			<transition state="Bravo사망"/>
+		</condition>
+		<condition name="무조건" > 
+			<transition state="Bravo생존"/>
+		</condition>
+	</state>
+	
+	
+	
+	<state name="BravoLight_CheckCount_3"> 
+		<onEnter>
+			<action name="SetUserValue" key="BravoLight_CheckCount_3" value="0"/>
+		</onEnter>
+		<condition name="CheckUserAdditionalCountInRose" triggerBoxIDs="99999980,99999981" additionalEffectID="44190002" level="1" spotLightCount="3" > 
+			<transition state="Bravo사망"/>
+		</condition>
+		<condition name="무조건" > 
+			<transition state="Bravo생존"/>
+		</condition>
+	</state>
+	
+	<state name="BravoLight_CheckCount_4"> 
+		<onEnter>
+			<action name="SetUserValue" key="BravoLight_CheckCount_4" value="0"/>
+		</onEnter>
+		<condition name="CheckUserAdditionalCountInRose" triggerBoxIDs="99999980,99999981" additionalEffectID="44190002" level="1" spotLightCount="4" > 
+			<transition state="Bravo사망"/>
+		</condition>
+		<condition name="무조건" > 
+			<transition state="Bravo생존"/>
+		</condition>
+	</state>
+	
+	<state name="Bravo생존"> 
+		<onEnter>
+			<action name="SetAiExtraData" key="BravoLight_CheckCount_Alive" value="1" boxID="0" isModify="false"/>
+		</onEnter>
+		<condition name="무조건" > 
+			<transition state="대기"/>
+		</condition>
+	</state>
+	
+	<state name="Bravo사망"> 
+		<onEnter>
+			<action name="SetAiExtraData" key="BravoLight_CheckCount_Die" value="1" boxID="0" isModify="false"/>
+		</onEnter>
+		<condition name="무조건" > 
+			<transition state="대기"/>
+		</condition>
+	</state>
+	
+	<!--
+	<state name="초기화">
+		<condition name="유저를감지했으면" arg1="99999998">
+				<transition state="보스전재시작대기"/>
+		</condition>
+	</state>
+	<state name="보스전재시작대기"> 
+		<condition name="WaitTick" waitTick="1500">  
+			<transition state="보스전시작"/>
+		</condition>
+	</state>
+	<state name="보스전시작"> 
+		<onEnter>
+			<action name="SetSkill" objectIDs="10000" isEnable="1"/>
+		</onEnter>
+		<condition name="WaitTick" waitTick="10000">  
+			<transition state="보스전재시작대기"/>
+		</condition>
+	</state>
+	
+	<state name="버프제거"> 
+		<onEnter>
+			<action name="NpcRemoveAdditionalEffect" spawnPointID="2000" additionalEffect="44100004" />
+		</onEnter>
+		<condition name="무조건">  
+			<transition state="끝"/>
+		</condition>
+	</state>
+	-->
+  <state name="끝">
+  </state>
+</ms2>

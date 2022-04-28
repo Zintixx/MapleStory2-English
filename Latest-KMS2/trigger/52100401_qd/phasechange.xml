@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ms2>
+	<state name="시작대기중">
+		<condition name="무조건">
+			<transition state="초기화"/>
+		</condition>
+	</state>
+	
+	<state name="초기화">
+		<condition name="유저를감지했으면" arg1="99999998">
+				<transition state="보스전시작"/>
+		</condition>
+	</state>
+	
+	<state name="보스전시작"> 
+		<onEnter>
+			<!--여기에 extraData수정값을 입력하세요-->
+			<action name="SetAiExtraData" key="phaseChange" value="1" boxID="0" isModify="false"/>
+			<action name="SetAiExtraData" key="currentMapPosition" value="1" boxID="0" isModify="false"/>
+		</onEnter>
+		<condition name="WaitTick" waitTick="10000">  
+			<transition state="버프제거"/>
+		</condition>
+	</state>
+	
+	<state name="버프제거"> 
+		<onEnter>
+			<action name="NpcRemoveAdditionalEffect" spawnPointID="2000" additionalEffect="44100004" />
+		</onEnter>
+		<condition name="무조건">  
+			<transition state="끝"/>
+		</condition>
+	</state>
+	
+  <state name="끝">
+  </state>
+</ms2>

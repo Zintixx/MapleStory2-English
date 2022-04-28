@@ -17,7 +17,7 @@
 	<key id="$s_common_hour_duration_param" value="{0} hr" />
 	<key id="$s_common_min_param" value="{0} min" />
 	<key id="$s_common_sec_param" value="{0} sec" />
-	<key id="$s_common_level" value="Lv. {0}" />
+	<key id="$s_common_level" value="Lv. {0}" />
 	<key id="$s_common_step" value="Rank {0}" />
 	<key id="$s_common_receive" value="Get" />
 	<key id="$s_common_input_search_default" value="Enter search terms" />
@@ -351,7 +351,7 @@
 	<key id="$s_gameoption_whisperNotify" value="Block whispers" />
 	<key id="$s_gameoption_homeRequest" value="Block home invites" />
 	<key id="$s_gameoption_coupleEmotionRequest" value="Block Buddy Emote invites" />
-	<key id="$s_gameoption_singleriding" value="2인 탈것 혼자 타기" />
+	<key id="$s_gameoption_singleriding" value="Disable two-person riding" />
 	<key id="$s_gameoption_muteAll" value="Mute" />
 	<key id="$s_gameoption_playAll" value="Play Sounds in Background" />
 	<key id="$s_gameoption_disable_job_sound" value="Use Generic Sound" />
@@ -361,12 +361,12 @@
 	<key id="$s_gameoption_uiSoundStep" value="Interface" />
 	<key id="$s_gameoption_enviromentSoundStep" value="Environment" />
 	<key id="$s_gameoption_movieSoundStep" value="Cutscenes" />
-	<key id="$s_gameoption_npcSoundStep" value="Character Voices" />
+	<key id="$s_gameoption_npcSoundStep" value="NPC Character Voices" />
 	<key id="$s_gameoption_bossSoundStep" value="Boss Voices" />
 	<key id="$s_gameoption_systemSoundStep" value="System Voices" />
 	<key id="$s_gameoption_instrumentStep" value="Instruments" />
 	<key id="$s_gameoption_instrumentStep_isOffBgm" value="Mute BGM during performances" />
-	<key id="$s_gameoption_charSoundStep" value="캐릭터 음성" />
+	<key id="$s_gameoption_charSoundStep" value="PC Character Voices" />
 	<key id="$s_gameoption_effect" value="Effects" />
 	<key id="$s_gameoption_sound_effect" value="Sound Effects" />
 	<key id="$s_gameoption_sound_background" value="Music" />
@@ -404,11 +404,12 @@
 	<key id="$s_gameoption_optimizer_count" value="" />
 	<key id="$s_gameoption_optimizer_useOptimizer" value="Auto-optimization" />
 	<key id="$s_gameoption_optimizer_warning" value="Use this to keep your game experience optimized.\nIf the game becomes unstable, please\ntry disabling this option." />
-	<key id="$s_gameoption_optimizer_show_physx" value="다른 캐릭터 헤어 물리 적용하기" />
-	<key id="$s_gameoption_agreement_personal_info" value="개인정보 해외전송 권한위임" />
-	<key id="$s_gameoption_agreement_radio_agree" value="허용" />
-	<key id="$s_gameoption_agreement_radio_deny" value="거절" />
-	<key id="$s_gameoption_agreement_btn_detail" value="상세보기" />
+	<key id="$s_gameoption_optimizer_show_physx" value="Show other player&apos;s hair physics" />
+	<key id="$s_gameoption_agreement_personal_info" value="Authorize overseas transfer of personal information " />
+	<key id="$s_gameoption_agreement_radio_agree" value="Allow" />
+	<key id="$s_gameoption_agreement_radio_deny" value="Deny" />
+	<key id="$s_gameoption_agreement_btn_detail" value="View Details" />
+	<key id="$s_gameoption_agreement_summary" value="To provide a better game experience, the company must provide information such as your game log to Nexon, the developer of [MapleStory 2].\nFor the sake of your safety, we will process and encrypt your game log and other information.\nYou can exercise your personal information-related rights with respect to the above information received from Nexon.\nFor the specific regulations, click ”View Details”." />
 	<key id="$s_skill_title" value="Skills" />
 	<key id="$s_skill_active" value="Active" />
 	<key id="$s_skill_passive" value="Passive" />
@@ -844,6 +845,7 @@
 	<key id="$s_buddy_tab_list" value="Friends" />
 	<key id="$s_buddy_tab_recvlist" value="Requests" />
 	<key id="$s_buddy_tab_banlist" value="Blocked" />
+	<key id="$s_buddy_tab_homeblocklist" value="Home Block List" />
 	<key id="$s_buddy_admit" value="Accept" />
 	<key id="$s_buddy_deny" value="Decline" />
 	<key id="$s_buddy_cancelbuddy" value="Cancel" />
@@ -856,6 +858,7 @@
 	<key id="$s_buddy_input_userID_title" value="Add Friend" />
 	<key id="$s_buddy_input_userID_defualt" value="Username" />
 	<key id="$s_buddy_notice_ban" value="Blocking another player will hide their character portraits, messages, mail, and requests." />
+	<key id="$s_buddy_notice_homeblock" value="Blocking another player will prevent all characters from the other player's account from visiting your home." />
 	<key id="$s_buddy_input_banID_title" value="Block" />
 	<key id="$s_buddy_input_banID_default" value="Username" />
 	<key id="$s_buddy_btn_ok" value="OK" />
@@ -864,6 +867,7 @@
 	<key id="$s_buddy_empty_buddy" value="Look for a new friend!" />
 	<key id="$s_buddy_empty_recv" value="You have no requests." />
 	<key id="$s_buddy_empty_ban" value="No characters have been blocked." />
+	<key id="$s_buddy_empty_homeblock" value="No characters have been blocked." />
 	<key id="$s_cutscene_skip_scene" value="SKIP" />
 	<key id="$s_cutscene_skip_action" value="SKIP" />
 	<key id="$s_cutscene_skip_state" value="SKIP" />
@@ -968,6 +972,7 @@
 	<key id="$s_tooltip_myinfo_stat_0_5" value="&lt;FONT color='#FFD200' size='15' &gt;Intelligence&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;\nThe main attribute for Wizards, Priests, and Soul Binders. Increases magic attack and affects magic resistance." />
 	<key id="$s_tooltip_myinfo_stat_0_6" value="&lt;FONT color='#FFD200' size='15' &gt;Luck&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;\nThe main attribute for Thieves and Assassins. Increases the physical attack of Wizards, Thieves, Assassins, and Heavy Gunners. Affects critical rate." />
 	<key id="$s_tooltip_myinfo_stat_0_7" value="&lt;FONT color='#FFD200' size='15' &gt;Movement Speed&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;\nYour character's ground movement speed. 100% represents normal speed. Can be increased up to 170%." />
+	<key id="$s_tooltip_myinfo_stat_0_8" value="&lt;FONT color='#FFD200' size='15' &gt;Shield&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;\nYour character's shield. Incoming damage will deplete any shield first, then Hit Points." />
 	<key id="$s_tooltip_myinfo_stat_1_0" value="&lt;FONT color='#FFD200' size='15' &gt;Weapon Attack&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;\nThe total attack power of your equipped gear. Increases the damage dealt to enemies." />
 	<key id="$s_tooltip_myinfo_stat_1_1" value="&lt;FONT color='#FFD200' size='15' &gt;Bonus Attack&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;\nYour bonus attack power. Increases damage dealt to enemies. Its efficiency increases with your weapon's tier. Has no effect when no weapon is equipped." />
 	<key id="$s_tooltip_myinfo_stat_1_2" value="&lt;FONT color='#FFD200' size='15' &gt;Physical Attack&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;\nIncreases the damage dealt to enemies with physical attacks." />
@@ -989,9 +994,10 @@
 	<key id="$s_tooltip_myinfo_stat_1_18" value="&lt;FONT color='#FFD200' size='15' &gt;Bonus Boss Damage&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;\nIncreases the damage dealt to boss monsters." />
 	<key id="$s_tooltip_myinfo_stat_1_19" value="&lt;FONT color='#FFD200' size='15' &gt;Total Damage Bonus&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;\nIncreases the damage dealt to enemies." />
 	<key id="$s_tooltip_myinfo_stat_1_20" value="&lt;FONT color='#FFD200' size='15' &gt;Recovery Bonus&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;\nIncreases the amount recovered from skills which restore health or spirit." />
-	<key id="$s_tooltip_myinfo_stat_1_21" value="&lt;FONT color='#FFD200' size='15' &gt;Attack Speed&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;Increases attack speed." />
-	<key id="$s_tooltip_myinfo_stat_1_22" value="&lt;FONT color='#FFD200' size='15' &gt;Skill Cooldown Reduction&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;\nReduces the cooldown times of active skills." />
-	<key id="$s_tooltip_myinfo_stat_1_23" value="&lt;FONT color='#FFD200' size='15' &gt;PvP Damage&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;Increases the damage dealt to other players." />
+	<key id="$s_tooltip_myinfo_stat_1_21" value="&lt;FONT color='#FFD200' size='15' &gt;Reduced HP Recovery Skill Effect&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;\nWhen using an active skill that restores HP, the amount of recovery decreases." />
+	<key id="$s_tooltip_myinfo_stat_1_22" value="&lt;FONT color='#FFD200' size='15' &gt;Attack Speed&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;Increases attack speed." />
+	<key id="$s_tooltip_myinfo_stat_1_23" value="&lt;FONT color='#FFD200' size='15' &gt;Skill Cooldown Reduction&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;\nReduces the cooldown times of active skills." />
+	<key id="$s_tooltip_myinfo_stat_1_24" value="&lt;FONT color='#FFD200' size='15' &gt;PvP Damage&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;Increases the damage dealt to other players." />
 	<key id="$s_tooltip_myinfo_stat_2_0" value="&lt;FONT color='#FFD200' size='15' &gt;Defense&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;\nReduces damage taken from enemies." />
 	<key id="$s_tooltip_myinfo_stat_2_1" value="&lt;FONT color='#FFD200' size='15' &gt;Physical Resistance&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;\nReduces physical damage taken from enemies." />
 	<key id="$s_tooltip_myinfo_stat_2_2" value="&lt;FONT color='#FFD200' size='15' &gt;Magic Resistance&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;\nReduces magic damage taken from enemies." />
@@ -1006,10 +1012,11 @@
 	<key id="$s_tooltip_myinfo_stat_2_11" value="&lt;FONT color='#FFD200' size='15' &gt;Dark Damage Reduction&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;\nReduces dark damage taken from enemies." />
 	<key id="$s_tooltip_myinfo_stat_2_12" value="&lt;FONT color='#FFD200' size='15' &gt;Holy Reduction&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;\nReduces holy damage taken from enemies." />
 	<key id="$s_tooltip_myinfo_stat_2_13" value="&lt;FONT color='#FFD200' size='15' &gt;Perfect Guard&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;\nIncreases the probability of perfectly guarding against enemy attacks. Perfect guards prevent all damage." />
-	<key id="$s_tooltip_myinfo_stat_2_14" value="&lt;FONT color='#FFD200' size='15' &gt;Stun Duration Reduction&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;\nReduces the duration of immobilizing effects used against you." />
-	<key id="$s_tooltip_myinfo_stat_2_15" value="&lt;FONT color='#FFD200' size='15' &gt;Debuff Duration Reduction&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;\nReduces the duration of detrimental status effects used against you." />
-	<key id="$s_tooltip_myinfo_stat_2_16" value="&lt;FONT color='#FFD200' size='15' &gt;Health Regen&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;\nIncreases the amount of health that regenerates over time." />
-	<key id="$s_tooltip_myinfo_stat_2_17" value="&lt;FONT color='#FFD200' size='15' &gt;PvP Defense&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;\nReduces the damage taken from other players." />
+	<key id="$s_tooltip_myinfo_stat_2_14" value="&lt;FONT color='#FFD200' size='15' &gt;True Evasion&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;\nThe chance to completely evade the enemy's attack is increased.\nYou do not take damage when completely evading an attack." />
+	<key id="$s_tooltip_myinfo_stat_2_15" value="&lt;FONT color='#FFD200' size='15' &gt;Stun Duration Reduction&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;\nReduces the duration of immobilizing effects used against you." />
+	<key id="$s_tooltip_myinfo_stat_2_16" value="&lt;FONT color='#FFD200' size='15' &gt;Debuff Duration Reduction&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;\nReduces the duration of detrimental status effects used against you." />
+	<key id="$s_tooltip_myinfo_stat_2_17" value="&lt;FONT color='#FFD200' size='15' &gt;Health Regen&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;\nIncreases the amount of health that regenerates over time." />
+	<key id="$s_tooltip_myinfo_stat_2_18" value="&lt;FONT color='#FFD200' size='15' &gt;PvP Defense&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;\nReduces the damage taken from other players." />
 	<key id="$s_tooltip_inven_equip" value="&lt;FONT color='#FFD200' size='15' &gt;Gear&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;\nView your weapons, equipment, and accessories here." />
 	<key id="$s_tooltip_inven_skin" value="&lt;FONT color='#FFD200' size='15' &gt;Outfits&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;\nView your cosmetic outfit items here." />
 	<key id="$s_tooltip_inven_life" value="&lt;FONT color='#FFD200' size='15' &gt;Fishing/Music&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;\nSearches for fishing and music items." />
@@ -1060,6 +1067,7 @@
 	<key id="$s_tooltip_community_tab_list" value="&lt;FONT color='#FFD200' size='15' &gt;Friends&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;\nSee the list of your friends." />
 	<key id="$s_tooltip_community_tab_recv" value="&lt;FONT color='#FFD200' size='15' &gt;Requests&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;\nSee the list of friend requests you've received." />
 	<key id="$s_tooltip_community_tab_ban" value="&lt;FONT color='#FFD200' size='15' &gt;Blocked&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;\nSee the list of characters you've blocked." />
+	<key id="$s_tooltip_community_tab_homeblock" value="&lt;FONT color='#FFD200' size='15' &gt;Home Block List&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;\nSee the list of characters you've blocked from your home." />
 	<key id="$s_tooltip_community_btn_addbuddy" value="&lt;FONT color='#FFD200' size='15' &gt;Add Friend&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;\nEnter the name of a character you want to add as a friend." />
 	<key id="$s_tooltip_community_btn_addban" value="&lt;FONT color='#FFD200' size='15' &gt;Block&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;\nEnter a character name to block messages from them." />
 	<key id="$s_tooltip_community_btn_cancel_buddy" value="&lt;FONT color='#FFD200' size='15' &gt;Cancel Request&lt;/FONT&gt;\n&lt;FONT size='3'&gt; &lt;/FONT&gt;\nCancel a friend request." />
@@ -2326,6 +2334,7 @@
 	<key id="$s_pvp_team_result_msg_pillage" value="Plunder" />
 	<key id="$s_pvp_team_score_detail" value="Details" />
 	<key id="$s_observe_observing_target" value="Currently Spectating: {0}" />
+	<key id="$s_observe_observing_center" value="Currently Spectating the Center Arena." />
 	<key id="$s_observe_quit_observe" value="Exit" />
 	<key id="$s_survival_observe_observing_target" value="Currently Spectating: {0}" feature="SurvivalContents01" />
 	<key id="$s_survival_observe_quit_observe" value="Stop" feature="SurvivalContents01" />
@@ -3474,7 +3483,7 @@
 	<key id="$s_collect_item_group_event_dialog_desc2" value="* Receiving a plus reward does not mean that the plus material item disappears." feature="Event" locale="KR" />
 	<key id="$s_collect_item_group_event_dialog_desc2" value="* 더하기 보상을 받아도 더하기 재료 아이템이 사라지는 것은 아닙니다." feature="Event" locale="CN" />
 	<key id="$s_collect_item_group_event_dialog_desc2" value="* 더하기 보상을 받아도 더하기 재료 아이템은 사라지지 않습니다." feature="GemMeta" locale="JP" />
-	<key id="$s_collect_item_group_event_dialog_guide" value="Collect meta cores and complete additions by hunting, participating in minigames, fishing, and more. You can have meta badges with better stats!" feature="Event" />
+	<key id="$s_collect_item_group_event_dialog_guide" value="Collect meta cores by hunting monsters, playing music, or fishing. Use the collected meta cores to upgrade meta badges with better bonus stats!" feature="Event" />
 	<key id="$s_collect_item_group_event_dialog_recieve_button" value="Claim Reward" feature="Event" />
 	<key id="$s_chat_emoticon_title" value="Sticker" feature="ChatEmoticon" />
 	<key id="$s_chat_emoticon_empty_message" value="You have no stickers in your favorites." feature="ChatEmoticon" />

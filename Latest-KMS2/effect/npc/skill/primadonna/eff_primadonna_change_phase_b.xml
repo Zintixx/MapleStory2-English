@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ms2>
+
+  <effect type="nif" filePath="NPC/Skill/Primadonna/EFF_Primadonna_Attack_phase4.nif" startDelay="0" duration="6.5" notForceStop="true" viewDistance="0">
+    <attachInfo attachToNode="true" applyNodeTransform="true" parentNode="Scene Root" />
+    <transform translate="0.0, -150.0, 0.0" rotation="0.0, 0.0, 0.0" scale="1.5" />
+    <update scale="false" />
+  </effect>
+  
+   <!-- 효과음 -->
+   <effect type="soundEvent" group="MS2Sound/Sound/Mob" event="06102605" startDelay="0.0">
+      <attachInfo attachToNode="true" applyNodeTransform="true" parentNode="Scene Root" />
+  </effect>    
+
+  <effect type="random" prob="1,1,1">
+    <effect type="soundEvent" group="MS2Sound/Sound/Voice/ko/Monster" event="60000762" startDelay="0.0" forceHearDistance="4000">
+      <attachInfo attachToNode="true" applyNodeTransform="true" parentNode="Scene Root" />
+    </effect>
+
+    <effect type="soundEvent" group="MS2Sound/Sound/Voice/ko/Monster" event="60000763" startDelay="0.0" forceHearDistance="4000">
+      <attachInfo attachToNode="true" applyNodeTransform="true" parentNode="Scene Root" />
+    </effect> 
+
+    <effect type="soundEvent" group="MS2Sound/Sound/Voice/ko/Monster" event="60000764" startDelay="0.0" forceHearDistance="4000">
+      <attachInfo attachToNode="true" applyNodeTransform="true" parentNode="Scene Root" />
+    </effect>
+  </effect>
+
+
+</ms2>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ms2>
+	<state name="시작대기중">
+		<condition name="무조건">
+			<transition state="초기화"/>
+		</condition>
+	</state>
+	
+	<state name="초기화">
+		<onEnter>
+			<action name="SetUserValue" key="CheckBuff" value="0"/>
+			<action name="SetUserValue" key="CheckBuffIndex" value="0"/>
+		</onEnter>
+		<condition name="무조건" > 
+			<transition state="신호대기"/>
+		</condition>
+	</state>
+	
+	<state name="신호대기">
+		<condition name="UserValue" key="CheckBuff" value="1">
+			<transition state="패턴시작안내문"/>
+		</condition>
+		<condition name="무조건">
+			<transition state="신호대기딜레이"/>
+		</condition>
+	</state>
+	
+	<state name="신호대기딜레이">
+		<condition name="WaitTick" waitTick="1000">
+			<transition state="신호대기"/>
+		</condition>
+	</state>
+	
+	<state name="패턴시작안내문">
+		<onEnter>
+			<action name="이벤트UI를설정한다" arg1="1" arg2="$02200002_DG__02200002_SKILL__1$" arg3="3000" />
+		</onEnter>
+		<condition name="WaitTick" waitTick="200">
+			<transition state="체크딜레이"/>
+		</condition>
+	</state>
+	
+	<state name="체크딜레이">
+		<condition name="WaitTick" waitTick="200">
+			<transition state="체크시작"/>
+		</condition>
+	</state>
+	
+	<state name="체크시작">
+		<condition name="UserValue" key="CheckBuff" value="0">
+			<transition state="타겟버프_제거"/>
+		</condition>
+		<condition name="UserValue" key="CheckBuffIndex" value="0">
+			<transition state="타켓버프1_체크"/>
+		</condition>
+		<condition name="UserValue" key="CheckBuffIndex" value="1">
+			<transition state="타켓버프2_체크"/>
+		</condition>
+	</state>
+	
+	<state name="타켓버프1_체크">
+		<onEnter>
+			<action name="SetUserValue" key="CheckBuffIndex" value="1"/>
+		</onEnter>
+		<condition name="CheckAnyUserAdditionalEffect" additionalEffectID="40600091">
+			<transition state="체크딜레이"/>
+		</condition>
+		<condition name="무조건">
+			<transition state="타켓버프1_부여"/>
+		</condition>
+	</state>
+	
+	<state name="타켓버프1_부여">
+		<onEnter>
+			<action name="AddAdditionalEffect" arg1="99999981" arg2="40600091" arg6="1" arg7="true" arg8="40600092" />
+		</onEnter>
+		<condition name="무조건">
+			<transition state="체크딜레이"/>
+		</condition>
+	</state>
+	
+	<state name="타켓버프2_체크">
+		<onEnter>
+			<action name="SetUserValue" key="CheckBuffIndex" value="0"/>
+		</onEnter>
+		<condition name="CheckAnyUserAdditionalEffect" additionalEffectID="40600092">
+			<transition state="체크딜레이"/>
+		</condition>
+		<condition name="무조건">
+			<transition state="타켓버프2_부여"/>
+		</condition>
+	</state>
+	
+	<state name="타켓버프2_부여">
+		<onEnter>
+			<action name="AddAdditionalEffect" arg1="99999981" arg2="40600092" arg6="1" arg7="true" arg8="40600091" />
+		</onEnter>
+		<condition name="무조건">
+			<transition state="체크딜레이"/>
+		</condition>
+	</state>
+	
+	<state name="타겟버프_제거">
+		<onEnter>
+			<action name="RemoveAdditionalEffect" arg1="99999981" arg2="40600091"/>
+			<action name="RemoveAdditionalEffect" arg1="99999981" arg2="40600092"/>
+		</onEnter>
+		<condition name="무조건">
+			<transition state="신호대기"/>
+		</condition>
+	</state>
+	
+  	<state name="끝">
+  	</state>
+</ms2>

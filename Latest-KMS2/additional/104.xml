@@ -2915,6 +2915,27 @@
 	<additional id="10400242" mainType="4" skillGroupType="1">
 		<level level="1" feature="JobChange_01">
 			<Basic keepCondition="99" />
+			<Condition hasNotBuffID="10400251" />
+			<SpecialAbility>
+				<v type="int" value="40" />
+			</SpecialAbility>
+		</level>
+	</additional>
+	<additional id="10400243" mainType="4" skillGroupType="1">
+		<level level="1" feature="JobChange_01" stringParam="10,20">
+			<Basic durationTick="15000" />
+			<Motion startEffect="CH/Skill/Priest/Eff_Priest_GuardianOfLife_Start_01.xml" keepEffect="CH/Skill/Priest/Eff_Priest_GuardianOfLife_Keep_01.xml" stopEffect="CH/Skill/Priest/Eff_Priest_GuardianOfLife_Stop_01.xml" abnormalImmuneBreak="5" />
+			<SpecialAbility>
+				<v type="lightDamage" value="100" />
+				<v type="cad_ignore_limit" value="200" />
+			</SpecialAbility>
+			<UI icon="./Data/Resource/Image/skill/icon/10400243_buff.png" />
+		</level>
+	</additional>
+	<additional id="10400244" mainType="4" skillGroupType="1">
+		<level level="1" feature="JobChange_01">
+			<Basic keepCondition="99" />
+			<Condition hasBuffID="10400251" />
 			<SpecialAbility>
 				<v type="int" value="40" />
 			</SpecialAbility>
@@ -2924,7 +2945,9 @@
 		<level level="1" feature="JobChange_01">
 			<Basic keepCondition="99" deadKeepEffect="1" doNotClearEffectFromEnterPVPZone="1" />
 			<SpecialAbility>
-				<v type="mapRate" value="30" />
+				<v type="lightDamage" value="20" />
+				<v type="reduce_do_heal_hp" value="900" />
+				<v type="offensive_magicaldamage" value="100" />
 				<v type="atp" value="1" />
 				<v type="cap" value="14" />
 			</SpecialAbility>
@@ -2932,7 +2955,9 @@
 		<level level="2" feature="JobChange_01">
 			<Basic keepCondition="99" deadKeepEffect="1" doNotClearEffectFromEnterPVPZone="1" />
 			<SpecialAbility>
-				<v type="mapRate" value="60" />
+				<v type="lightDamage" value="40" />
+				<v type="reduce_do_heal_hp" value="900" />
+				<v type="offensive_magicaldamage" value="150" />
 				<v type="atp" value="2" />
 				<v type="cap" value="28" />
 			</SpecialAbility>
@@ -2940,7 +2965,9 @@
 		<level level="3" feature="JobChange_01">
 			<Basic keepCondition="99" deadKeepEffect="1" doNotClearEffectFromEnterPVPZone="1" />
 			<SpecialAbility>
-				<v type="mapRate" value="90" />
+				<v type="lightDamage" value="60" />
+				<v type="reduce_do_heal_hp" value="900" />
+				<v type="offensive_magicaldamage" value="200" />
 				<v type="atp" value="3" />
 				<v type="cap" value="42" />
 			</SpecialAbility>
@@ -2948,7 +2975,9 @@
 		<level level="4" feature="JobChange_01">
 			<Basic keepCondition="99" deadKeepEffect="1" doNotClearEffectFromEnterPVPZone="1" />
 			<SpecialAbility>
-				<v type="mapRate" value="120" />
+				<v type="lightDamage" value="80" />
+				<v type="reduce_do_heal_hp" value="900" />
+				<v type="offensive_magicaldamage" value="250" />
 				<v type="atp" value="4" />
 				<v type="cap" value="56" />
 			</SpecialAbility>
@@ -2956,7 +2985,9 @@
 		<level level="5" feature="JobChange_01">
 			<Basic keepCondition="99" deadKeepEffect="1" doNotClearEffectFromEnterPVPZone="1" />
 			<SpecialAbility>
-				<v type="mapRate" value="150" />
+				<v type="lightDamage" value="100" />
+				<v type="reduce_do_heal_hp" value="900" />
+				<v type="offensive_magicaldamage" value="300" />
 				<v type="atp" value="5" />
 				<v type="cap" value="70" />
 			</SpecialAbility>
@@ -2964,7 +2995,9 @@
 		<level level="6" feature="JobChange_01">
 			<Basic keepCondition="99" deadKeepEffect="1" doNotClearEffectFromEnterPVPZone="1" />
 			<SpecialAbility>
-				<v type="mapRate" value="180" />
+				<v type="lightDamage" value="120" />
+				<v type="reduce_do_heal_hp" value="900" />
+				<v type="offensive_magicaldamage" value="350" />
 				<v type="atp" value="6" />
 				<v type="cap" value="84" />
 			</SpecialAbility>
@@ -2972,7 +3005,9 @@
 		<level level="7" feature="JobChange_01">
 			<Basic keepCondition="99" deadKeepEffect="1" doNotClearEffectFromEnterPVPZone="1" />
 			<SpecialAbility>
-				<v type="mapRate" value="210" />
+				<v type="lightDamage" value="140" />
+				<v type="reduce_do_heal_hp" value="900" />
+				<v type="offensive_magicaldamage" value="400" />
 				<v type="atp" value="7" />
 				<v type="cap" value="98" />
 			</SpecialAbility>
@@ -2980,7 +3015,9 @@
 		<level level="8" feature="JobChange_01">
 			<Basic keepCondition="99" deadKeepEffect="1" doNotClearEffectFromEnterPVPZone="1" />
 			<SpecialAbility>
-				<v type="mapRate" value="240" />
+				<v type="lightDamage" value="160" />
+				<v type="reduce_do_heal_hp" value="900" />
+				<v type="offensive_magicaldamage" value="450" />
 				<v type="atp" value="8" />
 				<v type="cap" value="112" />
 			</SpecialAbility>
@@ -2988,7 +3025,9 @@
 		<level level="9" feature="JobChange_01">
 			<Basic keepCondition="99" deadKeepEffect="1" doNotClearEffectFromEnterPVPZone="1" />
 			<SpecialAbility>
-				<v type="mapRate" value="270" />
+				<v type="lightDamage" value="180" />
+				<v type="reduce_do_heal_hp" value="900" />
+				<v type="offensive_magicaldamage" value="500" />
 				<v type="atp" value="9" />
 				<v type="cap" value="126" />
 			</SpecialAbility>
@@ -2996,7 +3035,9 @@
 		<level level="10" feature="JobChange_01">
 			<Basic keepCondition="99" deadKeepEffect="1" doNotClearEffectFromEnterPVPZone="1" />
 			<SpecialAbility>
-				<v type="mapRate" value="300" />
+				<v type="lightDamage" value="200" />
+				<v type="reduce_do_heal_hp" value="900" />
+				<v type="offensive_magicaldamage" value="550" />
 				<v type="atp" value="10" />
 				<v type="cap" value="140" />
 			</SpecialAbility>
@@ -3004,7 +3045,9 @@
 		<level level="11" feature="JobChange_01">
 			<Basic keepCondition="99" deadKeepEffect="1" doNotClearEffectFromEnterPVPZone="1" />
 			<SpecialAbility>
-				<v type="mapRate" value="330" />
+				<v type="lightDamage" value="220" />
+				<v type="reduce_do_heal_hp" value="900" />
+				<v type="offensive_magicaldamage" value="600" />
 				<v type="atp" value="11" />
 				<v type="cap" value="154" />
 			</SpecialAbility>
@@ -3012,7 +3055,9 @@
 		<level level="12" feature="JobChange_01">
 			<Basic keepCondition="99" deadKeepEffect="1" doNotClearEffectFromEnterPVPZone="1" />
 			<SpecialAbility>
-				<v type="mapRate" value="360" />
+				<v type="lightDamage" value="240" />
+				<v type="reduce_do_heal_hp" value="900" />
+				<v type="offensive_magicaldamage" value="650" />
 				<v type="atp" value="12" />
 				<v type="cap" value="168" />
 			</SpecialAbility>
@@ -3321,106 +3366,106 @@
 			<Basic durationTick="6000" />
 			<Motion abnormalImmuneBreak="5" />
 			<SpecialAbility>
-				<v type="mapRate" value="30" />
+				<v type="offensive_magicaldamage" value="30" />
 				<v type="asp" value="1" />
 			</SpecialAbility>
 			<UI icon="./Data/Resource/Image/skill/icon/10400271_buff.png" />
 		</level>
 		<level level="2" feature="JobChange_02" stringParam="2,6">
-			<Basic durationTick="7000" />
+			<Basic durationTick="8000" />
 			<Motion abnormalImmuneBreak="5" />
 			<SpecialAbility>
-				<v type="mapRate" value="60" />
+				<v type="offensive_magicaldamage" value="60" />
 				<v type="asp" value="2" />
 			</SpecialAbility>
 			<UI icon="./Data/Resource/Image/skill/icon/10400271_buff.png" />
 		</level>
 		<level level="3" feature="JobChange_02" stringParam="3,9">
-			<Basic durationTick="8000" />
+			<Basic durationTick="10000" />
 			<Motion abnormalImmuneBreak="5" />
 			<SpecialAbility>
-				<v type="mapRate" value="90" />
+				<v type="offensive_magicaldamage" value="90" />
 				<v type="asp" value="3" />
 			</SpecialAbility>
 			<UI icon="./Data/Resource/Image/skill/icon/10400271_buff.png" />
 		</level>
 		<level level="4" feature="JobChange_02" stringParam="4,12">
-			<Basic durationTick="9000" />
+			<Basic durationTick="12000" />
 			<Motion abnormalImmuneBreak="5" />
 			<SpecialAbility>
-				<v type="mapRate" value="120" />
+				<v type="offensive_magicaldamage" value="120" />
 				<v type="asp" value="4" />
 			</SpecialAbility>
 			<UI icon="./Data/Resource/Image/skill/icon/10400271_buff.png" />
 		</level>
 		<level level="5" feature="JobChange_02" stringParam="5,15">
-			<Basic durationTick="10000" />
+			<Basic durationTick="14000" />
 			<Motion abnormalImmuneBreak="5" />
 			<SpecialAbility>
-				<v type="mapRate" value="150" />
+				<v type="offensive_magicaldamage" value="150" />
 				<v type="asp" value="5" />
 			</SpecialAbility>
 			<UI icon="./Data/Resource/Image/skill/icon/10400271_buff.png" />
 		</level>
 		<level level="6" feature="JobChange_02" stringParam="6,18">
-			<Basic durationTick="11000" />
+			<Basic durationTick="16000" />
 			<Motion abnormalImmuneBreak="5" />
 			<SpecialAbility>
-				<v type="mapRate" value="180" />
+				<v type="offensive_magicaldamage" value="180" />
 				<v type="asp" value="6" />
 			</SpecialAbility>
 			<UI icon="./Data/Resource/Image/skill/icon/10400271_buff.png" />
 		</level>
 		<level level="7" feature="JobChange_02" stringParam="7,21">
-			<Basic durationTick="12000" />
+			<Basic durationTick="18000" />
 			<Motion abnormalImmuneBreak="5" />
 			<SpecialAbility>
-				<v type="mapRate" value="210" />
+				<v type="offensive_magicaldamage" value="210" />
 				<v type="asp" value="7" />
 			</SpecialAbility>
 			<UI icon="./Data/Resource/Image/skill/icon/10400271_buff.png" />
 		</level>
 		<level level="8" feature="JobChange_02" stringParam="8,24">
-			<Basic durationTick="13000" />
+			<Basic durationTick="20000" />
 			<Motion abnormalImmuneBreak="5" />
 			<SpecialAbility>
-				<v type="mapRate" value="240" />
+				<v type="offensive_magicaldamage" value="240" />
 				<v type="asp" value="8" />
 			</SpecialAbility>
 			<UI icon="./Data/Resource/Image/skill/icon/10400271_buff.png" />
 		</level>
 		<level level="9" feature="JobChange_02" stringParam="9,27">
-			<Basic durationTick="14000" />
+			<Basic durationTick="22000" />
 			<Motion abnormalImmuneBreak="5" />
 			<SpecialAbility>
-				<v type="mapRate" value="270" />
+				<v type="offensive_magicaldamage" value="270" />
 				<v type="asp" value="9" />
 			</SpecialAbility>
 			<UI icon="./Data/Resource/Image/skill/icon/10400271_buff.png" />
 		</level>
 		<level level="10" feature="JobChange_02" stringParam="10,30">
-			<Basic durationTick="15000" />
+			<Basic durationTick="24000" />
 			<Motion abnormalImmuneBreak="5" />
 			<SpecialAbility>
-				<v type="mapRate" value="300" />
+				<v type="offensive_magicaldamage" value="300" />
 				<v type="asp" value="10" />
 			</SpecialAbility>
 			<UI icon="./Data/Resource/Image/skill/icon/10400271_buff.png" />
 		</level>
 		<level level="11" feature="JobChange_02" stringParam="11,33">
-			<Basic durationTick="16000" />
+			<Basic durationTick="26000" />
 			<Motion abnormalImmuneBreak="5" />
 			<SpecialAbility>
-				<v type="mapRate" value="330" />
+				<v type="offensive_magicaldamage" value="330" />
 				<v type="asp" value="11" />
 			</SpecialAbility>
 			<UI icon="./Data/Resource/Image/skill/icon/10400271_buff.png" />
 		</level>
 		<level level="12" feature="JobChange_02" stringParam="12,36">
-			<Basic durationTick="17000" />
+			<Basic durationTick="28000" />
 			<Motion abnormalImmuneBreak="5" />
 			<SpecialAbility>
-				<v type="mapRate" value="360" />
+				<v type="offensive_magicaldamage" value="360" />
 				<v type="asp" value="12" />
 			</SpecialAbility>
 			<UI icon="./Data/Resource/Image/skill/icon/10400271_buff.png" />

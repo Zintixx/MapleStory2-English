@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ms2>
+	<!--프리마돈나 아리에타 장미모양 스플래시-->
+
+	<effect type="nif" filePath="NPC/Skill/Primadonna/EFF_Primadonna_Attack_E_Explosion.nif" startDelay="0.1" duration="3" notForceStop="true" viewDistance="0">
+		<attachInfo attachToNode="false" applyNodeTransform="true" parentNode="Scene Root" />
+		<transform translate="0.0, 0.0, 0.0" rotation="0.0, 0.0, 0.0" scale="0.7" />
+		<update translate="true" rotation="true" scale="false" />
+	</effect>
+
+
+	<!-- 폭발 효과음 바리에이션 -->
+	<effect type="random" prob="1,1,1">
+		<effect type="soundEvent" group="MS2Sound/Sound/Mob" event="06102614" startDelay="0.1">
+			<attachInfo attachToNode="false" applyNodeTransform="false" parentNode="Scene Root" />
+		</effect>
+
+		<effect type="soundEvent" group="MS2Sound/Sound/Mob" event="06102615" startDelay="0.1">
+			<attachInfo attachToNode="false" applyNodeTransform="false" parentNode="Scene Root" />
+		</effect>
+
+		<effect type="soundEvent" group="MS2Sound/Sound/Mob" event="06102616" startDelay="0.1">
+			<attachInfo attachToNode="false" applyNodeTransform="false" parentNode="Scene Root" />
+		</effect>
+	</effect>   
+
+</ms2>
