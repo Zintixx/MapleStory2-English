@@ -20,6 +20,9 @@
 		<condition name="UserValue" key="CheckBuff" value="1">
 			<transition state="패턴시작안내문"/>
 		</condition>
+		<condition name="UserValue" key="CheckBuffMirror" value="1">
+			<transition state="체크딜레이_M"/>
+		</condition>
 		<condition name="무조건">
 			<transition state="신호대기딜레이"/>
 		</condition>
@@ -41,7 +44,7 @@
 	</state>
 	
 	<state name="체크딜레이">
-		<condition name="WaitTick" waitTick="200">
+		<condition name="WaitTick" waitTick="500">
 			<transition state="체크시작"/>
 		</condition>
 	</state>
@@ -103,6 +106,49 @@
 	<state name="타겟버프_제거">
 		<onEnter>
 			<action name="RemoveAdditionalEffect" arg1="99999981" arg2="40600091"/>
+			<action name="RemoveAdditionalEffect" arg1="99999981" arg2="40600092"/>
+		</onEnter>
+		<condition name="무조건">
+			<transition state="신호대기"/>
+		</condition>
+	</state>
+	
+	
+	<state name="체크딜레이_M">
+		<condition name="WaitTick" waitTick="500">
+			<transition state="체크시작_M"/>
+		</condition>
+	</state>
+	
+	<state name="체크시작_M">
+		<condition name="UserValue" key="CheckBuffMirror" value="0">
+			<transition state="타겟버프_제거_M"/>
+		</condition>
+		<condition name="무조건">
+			<transition state="타켓버프_체크_M"/>
+		</condition>
+	</state>
+	
+	<state name="타켓버프_체크_M">
+		<condition name="CheckAnyUserAdditionalEffect" additionalEffectID="40600092">
+			<transition state="체크딜레이_M"/>
+		</condition>
+		<condition name="무조건">
+			<transition state="타켓버프_부여_M"/>
+		</condition>
+	</state>
+	
+	<state name="타켓버프_부여_M">
+		<onEnter>
+			<action name="AddAdditionalEffect" arg1="99999981" arg2="40600092" arg6="1" arg7="true" arg8="40600091" />
+		</onEnter>
+		<condition name="무조건">
+			<transition state="체크딜레이_M"/>
+		</condition>
+	</state>
+	
+	<state name="타겟버프_제거_M">
+		<onEnter>
 			<action name="RemoveAdditionalEffect" arg1="99999981" arg2="40600092"/>
 		</onEnter>
 		<condition name="무조건">

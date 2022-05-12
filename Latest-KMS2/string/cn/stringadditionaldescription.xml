@@ -101,7 +101,7 @@
   <key id="10500031" level="1" name="冰箭" tooltipDescription="被冰箭射中，身体变得僵硬。\降低移动速度" />
   <key id="10500032" level="1" name="冰冻" tooltipDescription="全身都被冻住了！\n被冻住，无法行动" />
   <key id="10500061" level="1" name="锐利之眼" tooltipDescription="看破敌人的弱点。\n暴击命中增加{0}点\n命中增加{1}点" />
-  <key id="10500066" level="1" name="强化锐利之眼" tooltipDescription="准确掌握敌人的弱点。\n命中增加{0}点\n暴击命中增加{1}点" />
+  <key id="10500066" level="1" name="强化锐利之眼" tooltipDescription="准确掌握敌人的弱点。\n命中增加{0}点\n暴击命中增加{1}点\n暴击命中（无视限制）增加{2}点" />
   <key id="10500072" level="1" name="召唤金鹰" tooltipDescription="受到金鹰的援助。\n敏捷提高{0}%" />
   <key id="10500081" level="1" name="雄鹰突击" tooltipDescription="鹰爪抓挠！\n每秒造成{0}%的伤害\n移动速度降低{1}%\n跳跃力降低{2}%" />
   <key id="10500091" level="1" name="雄鹰之魂" tooltipDescription="鹰的精气在全身流淌。\n每秒恢复{0}点能量\n攻击命中时，鹰发动支援攻击" />
@@ -111,15 +111,16 @@
   <key id="10500172" level="1" name="燃烧箭2段" tooltipDescription="熊熊燃烧的箭矢！\n击中敌人时，叠加燃烧箭{0}阶段{1}次" />
   <key id="10500173" level="1" name="燃烧箭3段" tooltipDescription="强劲的火焰箭在熊熊燃烧！" />
   <key id="10500181" level="1" name="集中" tooltipDescription="以暴风般猛烈的攻势发射火焰箭矢！\n物理攻击力提高{0}%。\n施展技能时，不消耗能量。" />
+  <key id="10500191" level="1" name="超负荷" tooltipDescription="箭正在猛烈燃烧，\n火焰伤害提高{0}%，\n物理伤害提高{1}%" />
   <key id="10500231" level="1" name="秘珠箭术" tooltipDescription="领悟了弓术的奥秘，使身体机能得到强化。\n防御力穿透提高{0}%，命中提高{1}\n可以使用旋风箭、强化螺旋箭" />
   <key id="10500232" level="1" name="充能状态" tooltipDescription="风之力量正在渗入弓箭。\n使用风系攻击技能击中敌人时，会叠加{0}次，最多叠加{1}次。\n叠加{2}次时会变为解放状态。" />
   <key id="10500233" level="1" name="解放状态" tooltipDescription="弓上凝聚了足够的风之力量！\n可以使用秘珠箭术。" />
   <key id="10500261" level="1" name="焦热火花" tooltipDescription="凤凰以焦热的火焰烧毁敌人。\n在{0}秒内每秒受到{1}%的持续伤害" />
-  <key id="10500272" level="1" name="凤凰形态" tooltipDescription="受到凤凰的战斗支援。\n暴击命中增加{0}点\n物理伤害提高{1}%\n敏捷提高{2}%" />
+  <key id="10500272" level="1" name="凤凰形态" tooltipDescription="受到凤凰的战斗支援。\n暴击命中（无视限制）增加{0}点\n物理伤害提高{1}%\n敏捷提高{2}%" />
   <key id="10500281" level="1" name="弱点感知" tooltipDescription="锋利的攻击使弱点暴露。\n在{0}秒内受到施展者攻击时，造成{1}%的额外伤害" />
   <key id="10500291" level="1" name="金鹰小队" tooltipDescription="受到金鹰小队的支援！\n在{0}秒内物理、魔法攻击力提高{1}%" />
   <key id="10500293" level="1" name="金鹰队长" tooltipDescription="受到金鹰队长的指挥！\n在{0}秒内物理攻击力提高{1}%" />
-  <key id="10500295" level="1" name="休息时刻" tooltipDescription="金鹰小队正在休息。\n在{0}秒内免疫金鹰小队、金鹰队长效果" />
+  <key id="10500295" level="1" name="休息时刻" tooltipDescription="金鹰小队正在休息。\n在{0}秒内免疫金鹰小队效果" />
   <key id="10500296" level="1" name="金鹰队长" tooltipDescription="受到金鹰队长的指挥！\n在{0}秒内物理攻击力提高{1}%" />
   <key id="10500298" level="1" name="金鹰小队" tooltipDescription="受到金鹰小队的支援！\n在{0}秒内物理、魔法攻击力提高{1}%" />
   <key id="10600052" level="1" name="手榴弹" tooltipDescription="受到爆炸冲击，失去了意识！\n眩晕，无法行动" />
@@ -314,35 +315,45 @@
   <key id="40600082" level="1" name="未知力量" tooltipDescription="感觉到身体被气息包裹。" feature="DungeonOS01" />
   <key id="40600089" level="1" name="注视" tooltipDescription="小蓝鲁克注视着你。" feature="DungeonOS01" />
   <key id="40600090" level="1" name="注视" tooltipDescription="小绿鲁克注视着你。" feature="DungeonOS01" />
+  <key id="40600091" level="1" name="注视" tooltipDescription="敌人在注视你。" feature="DungeonOS04" />
+  <key id="40600092" level="1" name="注视" tooltipDescription="敌人在注视你。" feature="DungeonOS04" />
   <key id="40600101" level="1" name="激怒" tooltipDescription="愤怒状态。\n所受伤害降低{0}%，攻击速度提升。" feature="Season1" />
   <key id="42030101" level="1" name="减速" tooltipDescription="移动速度减少。" feature="Fieldwar01" />
   <key id="42030111" level="1" name="减速" tooltipDescription="移动速度减少。" feature="Fieldwar01" />
   <key id="42030121" level="1" name="混乱" tooltipDescription="相反的移动方向。" feature="Fieldwar01" />
   <key id="42030261" level="1" name="眩晕" tooltipDescription="受到电击，暂时昏迷。\n可以击打得更狠。" feature="Kritias_Paika01" />
   <key id="42030263" level="1" name="触电" tooltipDescription="被电流电到，进入触电状态。" feature="Kritias_Paika01" />
-  <key id="44100000" level="1" name="기절" tooltipDescription="기절하여 행동 불가" feature="DungeonOS04" />
-  <key id="44100001" level="1" name="속박" tooltipDescription="속박 상태가 되어 이동속도와 점프력이 감소합니다." feature="DungeonOS04" />
-  <key id="44100003" level="1" name="방어력 증가" tooltipDescription="드럼롤의 연주를 들어 방어력이 증가합니다." feature="DungeonOS04" />
-  <key id="44100007" level="1" name="공격력 감소" tooltipDescription="공격력이 감소합니다." feature="DungeonOS04" />
-  <key id="44100008" level="1" name="공격력 감소 제거" tooltipDescription="공격력 감소 제거." feature="DungeonOS04" />
-  <key id="44190001" level="1" name="생명력 회복" tooltipDescription="드럼롤의 연주를 들어 생명력이 회복합니다." feature="DungeonOS04" />
-  <key id="44190002" level="1" name="암전" tooltipDescription="무대의 조명이 꺼진 상태입니다." feature="DungeonOS04" />
-  <key id="44190003" level="1" name="암전 감소" tooltipDescription="" feature="DungeonOS04" />
-  <key id="44190004" level="1" name="암전 삭제" tooltipDescription="" feature="DungeonOS04" />
-  <key id="44190005" level="1" name="특별 조명" tooltipDescription="모두가 당신을 주목합니다.\n더 강해진 것 같은 기분이 듭니다." feature="DungeonOS04" />
-  <key id="44190006" level="1" name="이동기 제약" tooltipDescription="덩굴에 걸려 이동기를 사용할 수 없습니다.\n주 이동기 스킬을 사용할 수 없습니다." feature="DungeonOS04" />
-  <key id="44190007" level="1" name="블링크" tooltipDescription="투명" feature="DungeonOS04" />
-  <key id="44190008" level="1" name="분신1 패시브" tooltipDescription="분신1 패시브" feature="DungeonOS04" />
-  <key id="44190009" level="1" name="분신2 패시브" tooltipDescription="분신1 패시브" feature="DungeonOS04" />
-  <key id="44190011" level="1" name="광폭화" tooltipDescription="혼자 남은 분신이 광폭화합니다." feature="DungeonOS04" />
-  <key id="44190012" level="1" name="암전" tooltipDescription="주변이 어두워서 공격이 제대로 명중하지 않습니다." feature="DungeonOS04" />
-  <key id="44190013" level="1" name="협동" tooltipDescription="분신의 거리가 가깝습니다. 방어력과 저항력이 증가합니다." feature="DungeonOS04" />
-  <key id="44190014" level="1" name="협동" tooltipDescription="분신의 거리가 가깝습니다. 방어력과 저항력이 증가합니다." feature="DungeonOS04" />
-  <key id="44190015" level="1" name="협동" tooltipDescription="분신의 거리가 가깝습니다. 방어력과 저항력이 증가합니다." feature="DungeonOS04" />
-  <key id="44190016" level="1" name="속박" tooltipDescription="속박 상태가 되어 이동속도와 점프력이 감소합니다.\n10초마다 이동속도와 점프력이 약간 회복됩니다." feature="DungeonOS04" />
-  <key id="44190017" level="1" name="속박" tooltipDescription="속박 상태가 되어 이동속도와 점프력이 감소합니다." feature="DungeonOS04" />
-  <key id="44190018" level="1" name="속박" tooltipDescription="속박 상태가 되어 이동속도와 점프력이 감소합니다." feature="DungeonOS04" />
-  <key id="44190020" level="1" name="회복량 감소" tooltipDescription="아이템과 스킬로 회복되는 체력의 양이 감소합니다." feature="DungeonOS04" />
+  <key id="44100000" level="1" name="眩晕" tooltipDescription="眩晕，无法行动" feature="DungeonOS04" />
+  <key id="44100001" level="1" name="束缚" tooltipDescription="被束缚，降低移动速度和跳跃力。" feature="DungeonOS04" />
+  <key id="44100003" level="1" name="防御力增加" tooltipDescription="听到鼓手罗尔的演奏，增加防御力。" feature="DungeonOS04" />
+  <key id="44100007" level="1" name="攻击力减少" tooltipDescription="攻击力减少。" feature="DungeonOS04" />
+  <key id="44100008" level="1" name="消除攻击力减少" tooltipDescription="消除攻击力减少。" feature="DungeonOS04" />
+  <key id="44190001" level="1" name="恢复生命力" tooltipDescription="听到鼓手罗尔的演奏，恢复生命。" feature="DungeonOS04" />
+  <key id="44190002" level="1" name="暗转" tooltipDescription="舞台灯光处于关闭状态。" feature="DungeonOS04" />
+  <key id="44190003" level="1" name="暗转减弱" tooltipDescription="" feature="DungeonOS04" />
+  <key id="44190004" level="1" name="暗转消除" tooltipDescription="" feature="DungeonOS04" />
+  <key id="44190005" level="1" name="关注" tooltipDescription="所有人都在关注你。\n感觉变得更强了。" feature="DungeonOS04" />
+  <key id="44190006" level="1" name="移动技能受限" tooltipDescription="被藤蔓缠绕，无法使用移动技能。\n无法使用主要移动技能。" feature="DungeonOS04" />
+  <key id="44190007" level="1" name="闪现" tooltipDescription="透明" feature="DungeonOS04" />
+  <key id="44190008" level="1" name="分身1被动" tooltipDescription="分身1被动" feature="DungeonOS04" />
+  <key id="44190009" level="1" name="分身2被动" tooltipDescription="分身1被动" feature="DungeonOS04" />
+  <key id="44190011" level="1" name="狂暴" tooltipDescription="仅剩的一个分身变得狂暴。" feature="DungeonOS04" />
+  <key id="44190012" level="1" name="暗转" tooltipDescription="四周变暗，攻击无法准确命中。" feature="DungeonOS04" />
+  <key id="44190013" level="1" name="合作" tooltipDescription="分身的距离很近，增加防御力和抵抗力。" feature="DungeonOS04" />
+  <key id="44190014" level="1" name="合作" tooltipDescription="分身的距离很近，增加防御力和抵抗力。" feature="DungeonOS04" />
+  <key id="44190015" level="1" name="合作" tooltipDescription="分身的距离很近，增加防御力和抵抗力。" feature="DungeonOS04" />
+  <key id="44190016" level="1" name="束缚" tooltipDescription="被束缚，降低移动速度和跳跃力。\n每10秒恢复一些移动速度和跳跃力。" feature="DungeonOS04" />
+  <key id="44190017" level="1" name="束缚" tooltipDescription="被束缚，降低移动速度和跳跃力。" feature="DungeonOS04" />
+  <key id="44190018" level="1" name="束缚" tooltipDescription="被束缚，降低移动速度和跳跃力。" feature="DungeonOS04" />
+  <key id="44190020" level="1" name="恢复量减少" tooltipDescription="降低通过道具和技能恢复的体力量。" feature="DungeonOS04" />
+  <key id="44190023" level="1" name="定时炸弹" tooltipDescription="" feature="DungeonOS04" />
+  <key id="44190024" level="1" name="透明灯光" tooltipDescription="灯光已经照亮了你，请使用表情动作吧！" feature="DungeonOS04" />
+  <key id="44190025" level="1" name="等待解除定时炸弹" tooltipDescription="" feature="DungeonOS04" />
+  <key id="44190026" level="1" name="透明灯光解除" tooltipDescription="" feature="DungeonOS04" />
+  <key id="44190027" level="1" name="封印" tooltipDescription="被强大的力量封印了。" feature="DungeonOS04" />
+  <key id="44190028" level="1" name="解除定时炸弹" tooltipDescription="" feature="DungeonOS04" />
+  <key id="44190029" level="1" name="击倒眩晕" tooltipDescription="" feature="DungeonOS04" />
+  <key id="44190030" level="1" name="护盾被破坏时伤害" tooltipDescription="" feature="DungeonOS04" />
   <key id="44200001" level="1" name="冥界的诅咒" tooltipDescription="受到恶灵的诅咒，防御力降低。（每次叠加降低{0}%）" />
   <key id="44200002" level="1" name="冥界的裂痕" tooltipDescription="因冥界的基石被破坏，攻击力提高。（每次叠加提高{0}%）" />
   <key id="49016001" level="1" name="强化雷霆" tooltipDescription="咒术师乌斯变强了。\n 叠加{0}次后，发动雷霆庇护。" />
