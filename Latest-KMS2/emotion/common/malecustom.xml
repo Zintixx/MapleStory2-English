@@ -2284,6 +2284,21 @@
 			<texture file="Item_Face/MC_face_smile.dds" loop="true" />
 		</textureani>
 	</emotion>
+	<emotion name="ClapDance2_Diff_Male_Loop">
+		<textureani target="FA">
+			<texture file="Item_Face/MC_face_smile.dds" loop="true" />
+		</textureani>
+	</emotion>
+	<emotion name="ClapDance2_Same_Male_Loop_A">
+		<textureani target="FA">
+			<texture file="Item_Face/MC_face_smile.dds" loop="true" />
+		</textureani>
+	</emotion>
+	<emotion name="ClapDance2_Same_Male_Loop_B">
+		<textureani target="FA">
+			<texture file="Item_Face/MC_face_smile.dds" loop="true" />
+		</textureani>
+	</emotion>
 	<!--연주 호응: 박수-->
 	<emotion name="Clapping_A">
 		<anim name="Emotion_Clapping_A" />
@@ -2504,6 +2519,22 @@
 			<texture file="Item_Face/MC_face_expect.dds" delay="600" />
 		</textureani>
 		<effect file="CH/Emotion/Eff_Emotion_Dance_014.xml" />
+	</emotion>
+	<!--쪼아 춤-->
+	<emotion name="Dance_015">
+		<anim name="Emotion_Dance_015" />
+		<idleAnim name="Emotion_Dance_015" />
+		<textureani target="FA">
+			<texture file="Item_Face/MC_face_expect.dds" delay="1300" loop="true" />
+		</textureani>
+	</emotion>
+	<!--돌아서 박수-->
+	<emotion name="Dance_016">
+		<anim name="Emotion_Dance_016" />
+		<idleAnim name="Emotion_Dance_016" />
+		<textureani target="FA">
+			<texture file="Item_Face/MC_face_smile.dds" delay="3300" loop="true" />
+		</textureani>
 	</emotion>
 	<emotion name="Dance_A">
 		<anim name="Emotion_Dance_A" />
@@ -2953,6 +2984,36 @@
 			<texture file="Item_Face/MC_face_awe.dds" delay="2000" />
 		</textureani>
 		<effect file="CH/Emotion/Eff_Emotion_FishingNets_A.xml" />
+	</emotion>
+	<emotion name="FlagGame_A">
+		<anim name="Emotion_FlagGame_A" />
+		<idleAnim name="Emotion_FlagGame_Loop" />
+		<textureani target="FA">
+			<texture file="Item_Face/MC_face_expectation.dds" delay="1000" />
+			<texture file="Item_Face/MC_face_happy.dds" delay="1500" loop="true" />
+		</textureani>
+		<effect file="CH/Emotion/Eff_Emotion_FlagGame_A.xml" />
+		<effect file="CH/Emotion/Eff_Emotion_FlagGame_Loop.xml" />
+	</emotion>
+	<emotion name="FlagGame_B">
+		<anim name="Emotion_FlagGame_B" />
+		<idleAnim name="Emotion_FlagGame_Loop" />
+		<textureani target="FA">
+			<texture file="Item_Face/MC_face_expectation.dds" delay="1000" />
+			<texture file="Item_Face/MC_face_happy.dds" delay="1500" loop="true" />
+		</textureani>
+		<effect file="CH/Emotion/Eff_Emotion_FlagGame_B.xml" />
+		<effect file="CH/Emotion/Eff_Emotion_FlagGame_Loop.xml" />
+	</emotion>
+	<emotion name="FlagGame_C">
+		<anim name="Emotion_FlagGame_C" />
+		<idleAnim name="Emotion_FlagGame_Loop" />
+		<textureani target="FA">
+			<texture file="Item_Face/MC_face_expectation.dds" delay="1000" />
+			<texture file="Item_Face/MC_face_happy.dds" delay="1500" loop="true" />
+		</textureani>
+		<effect file="CH/Emotion/Eff_Emotion_FlagGame_C.xml" />
+		<effect file="CH/Emotion/Eff_Emotion_FlagGame_Loop.xml" />
 	</emotion>
 	<!--봄꽃 연 날리기-->
 	<emotion name="FlowerKite_A">
@@ -4333,6 +4394,30 @@
 			<texture file="Item_Face/{0}/05_Blink2.dds" control="Item_Face/{0}/20_Blink2_C.dds" delay="60" />
 			<texture file="Item_Face/{0}/03_Blink1.dds" control="Item_Face/{0}/04_Blink1_C.dds" delay="50" />
 			<texture file="Item_Face/{0}/01_Idle.dds" control="Item_Face/{0}/02_Idle_C.dds" delay="300" />
+		</textureani>
+	</emotion>
+	<emotion name="Music_FrenchHorn_Idle_A">
+		<anim name="Music_FrenchHorn_Idle_A" />
+		<textureani target="FA">
+			<texture file="Item_Face/{0}/05_Blink2.dds" control="Item_Face/{0}/05_Blink2.dds" delay="2000" loop="true" />
+		</textureani>
+	</emotion>
+	<emotion name="Music_FrenchHorn_Play_A">
+		<anim name="Music_FrenchHorn_Play_A" />
+		<textureani target="FA">
+			<texture file="Item_Face/{0}/05_Blink2.dds" control="Item_Face/{0}/20_Blink2_C.dds" delay="1000" loop="true" />
+		</textureani>
+	</emotion>
+	<emotion name="Music_FrenchHorn_Play_B">
+		<anim name="Music_FrenchHorn_Play_B" />
+		<textureani target="FA">
+			<texture file="Item_Face/{0}/05_Blink2.dds" control="Item_Face/{0}/20_Blink2_C.dds" delay="1000" loop="true" />
+		</textureani>
+	</emotion>
+	<emotion name="Music_FrenchHorn_Ready_A">
+		<anim name="Music_FrenchHorn_Ready_A" />
+		<textureani target="FA">
+			<texture file="Item_Face/{0}/01_Idle.dds" control="Item_Face/{0}/02_Idle_C.dds" delay="1500" />
 		</textureani>
 	</emotion>
 	<emotion name="Music_Guitar_Play_01_A">
@@ -6795,6 +6880,38 @@
 			<texture file="Item_Face/MC_face_awe.dds" delay="867" />
 		</textureani>
 		<effect file="CH/Emotion/Eff_Male_Surprise.xml" />
+	</emotion>
+	<emotion name="Swing_Big_Flag_A">
+		<anim name="Emotion_Swing_Big_Flag_A" />
+		<idleAnim name="Emotion_Swing_Big_Flag_A" />
+		<textureani target="FA">
+			<texture file="Item_Face/MC_face_smile.dds" loop="true" />
+		</textureani>
+		<effect file="CH/Emotion/Eff_Emotion_Swing_Big_Flag_A.xml" />
+	</emotion>
+	<emotion name="Swing_Big_Flag_B">
+		<anim name="Emotion_Swing_Big_Flag_B" />
+		<idleAnim name="Emotion_Swing_Big_Flag_B" />
+		<textureani target="FA">
+			<texture file="Item_Face/MC_face_smile.dds" loop="true" />
+		</textureani>
+		<effect file="CH/Emotion/Eff_Emotion_Swing_Big_Flag_B.xml" />
+	</emotion>
+	<emotion name="Swing_Small_Flag_A">
+		<anim name="Emotion_Swing_Small_Flag_A" />
+		<idleAnim name="Emotion_Swing_Small_Flag_A" />
+		<textureani target="FA">
+			<texture file="Item_Face/MC_face_smile.dds" loop="true" />
+		</textureani>
+		<effect file="CH/Emotion/Eff_Emotion_Swing_Small_Flag_A.xml" />
+	</emotion>
+	<emotion name="Swing_Small_Flag_B">
+		<anim name="Emotion_Swing_Small_Flag_B" />
+		<idleAnim name="Emotion_Swing_Small_Flag_B" />
+		<textureani target="FA">
+			<texture file="Item_Face/MC_face_smile.dds" loop="true" />
+		</textureani>
+		<effect file="CH/Emotion/Eff_Emotion_Swing_Small_Flag_B.xml" />
 	</emotion>
 	<emotion name="Swinghorse_A">
 		<anim name="Emotion_Swinghorse_A" />

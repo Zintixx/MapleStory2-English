@@ -27,12 +27,32 @@
 			</SpecialAbility>
 			<UI icon="./Data/Resource/Image/skill/icon/SpeedDownVineThorn.png" />
 		</level>
+		<level level="2">
+			<Basic durationTick="3500" />
+			<Motion keepEffect="NPC/Skill/Primadonna/Eff_Primadonna_Attack_Bind.xml" stopEffect="NPC/Skill/Primadonna/Eff_Primadonna_Attack_Bind_End.xml" />
+			<SpecialAbility>
+				<v type="mspRate" value="-400" />
+				<v type="jmpRate" value="-400" />
+			</SpecialAbility>
+			<UI icon="./Data/Resource/Image/skill/icon/SpeedDownVineThorn.png" />
+		</level>
+		<level level="3">
+			<Basic durationTick="4000" />
+			<Motion keepEffect="NPC/Skill/Primadonna/Eff_Primadonna_Attack_Bind.xml" stopEffect="NPC/Skill/Primadonna/Eff_Primadonna_Attack_Bind_End.xml" />
+			<SpecialAbility>
+				<v type="mspRate" value="-400" />
+				<v type="jmpRate" value="-400" />
+			</SpecialAbility>
+			<UI icon="./Data/Resource/Image/skill/icon/SpeedDownVineThorn.png" />
+		</level>
 	</additional>
 	<additional id="44100002" isDebuff="1">
 		<level level="1">
 			<Basic durationTick="10000" />
 			<Motion abnormalImmuneBreak="1" />
-			<Shield hpValue="47943159485" uiType="2" uiTypeValue="60300016" />
+			<CancelEffect cancelEffectCodes="44100003" />
+			<ImmuneEffect immuneEffectCodes="44100003" />
+			<Shield hpValue="90000000000" uiType="2" uiTypeValue="44110008" />
 		</level>
 	</additional>
 	<additional id="44100003">
@@ -73,7 +93,7 @@
 	</additional>
 	<additional id="44100007" isDebuff="1">
 		<level level="1">
-			<Basic durationTick="20000" resetCondition="2" maxBuffCount="5" />
+			<Basic durationTick="10000" resetCondition="2" maxBuffCount="5" />
 			<Motion keepEffect="Additional/Offense/Eff_Additional_OffenseDownDebuff_Keep.xml" abnormalImmuneBreak="1" />
 			<SpecialAbility>
 				<v type="papRate" value="-30" />
@@ -83,7 +103,7 @@
 			<UI icon="./Data/Resource/Image/skill/icon/destroyWeapon.png" />
 		</level>
 		<level level="2">
-			<Basic durationTick="20000" resetCondition="2" maxBuffCount="5" />
+			<Basic durationTick="10000" resetCondition="2" maxBuffCount="5" />
 			<Motion keepEffect="Additional/Offense/Eff_Additional_OffenseDownDebuff_Keep.xml" abnormalImmuneBreak="1" />
 			<SpecialAbility>
 				<v type="papRate" value="-40" />
@@ -93,7 +113,7 @@
 			<UI icon="./Data/Resource/Image/skill/icon/destroyWeapon.png" />
 		</level>
 		<level level="3">
-			<Basic durationTick="20000" resetCondition="2" maxBuffCount="5" />
+			<Basic durationTick="10000" resetCondition="2" maxBuffCount="5" />
 			<Motion keepEffect="Additional/Offense/Eff_Additional_OffenseDownDebuff_Keep.xml" abnormalImmuneBreak="1" />
 			<SpecialAbility>
 				<v type="papRate" value="-50" />
@@ -115,19 +135,19 @@
 			<Basic durationTick="3000" intervalTick="3000" coolDownTime="1.5" />
 			<Motion keepEffect="NPC/Skill/Drumroll/Eff_Drumroll_HpRecovery_Cast.xml" abnormalImmuneBreak="5" />
 			<Recovery hpRate="0.001" />
-			<UI icon="./Data/Resource/Image/skill/icon/100005.png" />
+			<UI icon="./Data/Resource/Image/skill/icon/100005.png" isHideCooltime="1" />
 		</level>
 		<level level="2" feature="DungeonOS04">
 			<Basic durationTick="3000" intervalTick="3000" coolDownTime="1.5" />
 			<Motion keepEffect="NPC/Skill/Drumroll/Eff_Drumroll_HpRecovery_Cast.xml" abnormalImmuneBreak="5" />
 			<Recovery hpRate="0.001" />
-			<UI icon="./Data/Resource/Image/skill/icon/100005.png" />
+			<UI icon="./Data/Resource/Image/skill/icon/100005.png" isHideCooltime="1" />
 		</level>
 		<level level="3" feature="DungeonOS04">
 			<Basic durationTick="3000" intervalTick="3000" coolDownTime="1.5" />
 			<Motion keepEffect="NPC/Skill/Drumroll/Eff_Drumroll_HpRecovery_Cast.xml" abnormalImmuneBreak="5" />
 			<Recovery hpRate="0.001" />
-			<UI icon="./Data/Resource/Image/skill/icon/100005.png" />
+			<UI icon="./Data/Resource/Image/skill/icon/100005.png" isHideCooltime="1" />
 		</level>
 	</additional>
 	<additional id="44190002" isDebuff="1">
@@ -154,7 +174,7 @@
 	<additional id="44190005">
 		<level level="1" feature="DungeonOS04">
 			<Basic durationTick="20000" intervalTick="1000" resetCondition="2" maxBuffCount="7" logoutClearEffect="1" leaveFieldClearEffect="1" />
-			<Motion keepEffect="NPC/Skill/Primadonna/Eff_Primadonna_SpecialLight_Loop.xml" abnormalImmuneBreak="5" scale="0.06" />
+			<Motion keepEffect="NPC/Skill/Primadonna/Eff_Primadonna_SpecialLight_Loop.xml" abnormalImmuneBreak="5" scale="0.5" />
 			<SpecialAbility>
 				<v type="offensive_physicaldamage" value="100" />
 				<v type="offensive_magicaldamage" value="100" />
@@ -164,17 +184,17 @@
 	</additional>
 	<additional id="44190006" isDebuff="1">
 		<level level="1" feature="DungeonOS04">
-			<Basic durationTick="30000" />
+			<Basic durationTick="10000" />
 			<Motion keepEffect="NPC/Skill/Primadonna/Eff_Primadonna_Attack_Bind.xml" stopEffect="NPC/Skill/Primadonna/Eff_Primadonna_Attack_Bind_End.xml" skillUseDisableIDs="10000041,10100091,10100291,10100294,10200091,10300081,10400151,10400153,10500041,10500151,10500152,10500153,10600081,10700131,10700041,10700042,10800071,10900051,11000051,11000053,11000055,11100051" />
 			<UI icon="./Data/Resource/Image/skill/icon/Snare.png" />
 		</level>
 		<level level="2" feature="DungeonOS04">
-			<Basic durationTick="30000" />
+			<Basic durationTick="10000" />
 			<Motion keepEffect="NPC/Skill/Primadonna/Eff_Primadonna_Attack_Bind.xml" stopEffect="NPC/Skill/Primadonna/Eff_Primadonna_Attack_Bind_End.xml" skillUseDisableIDs="10000041,10100091,10100291,10100294,10200091,10300081,10400151,10400153,10500041,10500151,10500152,10500153,10600081,10700131,10700041,10700042,10800071,10900051,11000051,11000053,11000055,11100051" />
 			<UI icon="./Data/Resource/Image/skill/icon/Snare.png" />
 		</level>
 		<level level="3" feature="DungeonOS04">
-			<Basic durationTick="30000" />
+			<Basic durationTick="10000" />
 			<Motion keepEffect="NPC/Skill/Primadonna/Eff_Primadonna_Attack_Bind.xml" stopEffect="NPC/Skill/Primadonna/Eff_Primadonna_Attack_Bind_End.xml" skillUseDisableIDs="10000041,10100091,10100291,10100294,10200091,10300081,10400151,10400153,10500041,10500151,10500152,10500153,10600081,10700131,10700041,10700042,10800071,10900051,11000051,11000053,11000055,11100051" />
 			<UI icon="./Data/Resource/Image/skill/icon/Snare.png" />
 		</level>
@@ -214,14 +234,14 @@
 				<v type="parRate" value="600" />
 				<v type="marRate" value="600" />
 			</SpecialAbility>
-			<UI icon="./Data/Resource/Image/skill/icon/MonsterStateUp_Penalty.png" />
+			<UI icon="./Data/Resource/Image/skill/icon/MonsterStateUp_Penalty.png" isHideCooltime="1" />
 		</level>
 	</additional>
 	<additional id="44190012">
 		<level level="1" feature="DungeonOS04">
 			<Basic durationTick="25000" intervalTick="1000" logoutClearEffect="1" leaveFieldClearEffect="1" />
 			<Motion keepEffect="NPC/Skill/Primadonna/Eff_Primadonna_ThornsAura_Keep.xml" abnormalImmuneBreak="5" />
-			<Status compulsionEventTypes="2" compulsionEventRate="0.7" />
+			<Status compulsionEventTypes="2" compulsionEventRate="0.5" />
 			<UI icon="./Data/Resource/Image/skill/icon/Darkness.png" isHideCooltime="1" />
 		</level>
 	</additional>
@@ -234,7 +254,7 @@
 				<v type="parRate" value="500" />
 				<v type="marRate" value="500" />
 			</SpecialAbility>
-			<UI icon="./Data/Resource/Image/skill/icon/MonsterDefenceUp.png" />
+			<UI icon="./Data/Resource/Image/skill/icon/MonsterDefenceUp.png" isHideCooltime="1" />
 		</level>
 	</additional>
 	<additional id="44190014">
@@ -246,11 +266,11 @@
 				<v type="parRate" value="500" />
 				<v type="marRate" value="500" />
 			</SpecialAbility>
-			<UI icon="./Data/Resource/Image/skill/icon/MonsterDefenceUp.png" />
+			<UI icon="./Data/Resource/Image/skill/icon/MonsterDefenceUp.png" isHideCooltime="1" />
 		</level>
 	</additional>
 	<additional id="44190015">
-		<level level="3" feature="DungeonOS04">
+		<level level="1" feature="DungeonOS04">
 			<Basic durationTick="3000" intervalTick="1000" />
 			<Motion keepEffect="NPC/Skill/Primadonna/Eff_Primadonna_DefenceUp_Keep_03.xml" stopEffect="NPC/Skill/Primadonna/Eff_Primadonna_DefenceUp_Stop_03.xml" />
 			<SpecialAbility>
@@ -258,55 +278,121 @@
 				<v type="parRate" value="1000" />
 				<v type="marRate" value="1000" />
 			</SpecialAbility>
-			<UI icon="./Data/Resource/Image/skill/icon/MonsterDefenceUp.png" />
+			<UI icon="./Data/Resource/Image/skill/icon/MonsterDefenceUp.png" isHideCooltime="1" />
 		</level>
 	</additional>
 	<additional id="44190016" isDebuff="1">
-		<level level="1">
-			<Basic durationTick="30000" />
+		<level level="1" feature="DungeonOS04">
+			<Basic durationTick="30000" coolDownTime="2" />
 			<Motion keepEffect="NPC/Skill/Primadonna/Eff_Primadonna_Attack_Bind.xml" stopEffect="NPC/Skill/Primadonna/Eff_Primadonna_Attack_Bind_End.xml" />
 			<SpecialAbility>
-				<v type="mspRate" value="-400" />
-				<v type="jmpRate" value="-400" />
+				<v type="mspRate" value="-300" />
+				<v type="jmpRate" value="-300" />
 			</SpecialAbility>
 			<UI icon="./Data/Resource/Image/skill/icon/SpeedDownVineThorn.png" />
 		</level>
 	</additional>
 	<additional id="44190017" isDebuff="1">
-		<level level="1">
-			<Basic durationTick="20000" />
+		<level level="1" feature="DungeonOS04">
+			<Basic durationTick="20000" coolDownTime="2" />
 			<Motion keepEffect="NPC/Skill/Primadonna/Eff_Primadonna_Attack_Bind.xml" stopEffect="NPC/Skill/Primadonna/Eff_Primadonna_Attack_Bind_End.xml" />
 			<SpecialAbility>
-				<v type="mspRate" value="-300" />
-				<v type="jmpRate" value="-300" />
+				<v type="mspRate" value="-200" />
+				<v type="jmpRate" value="-200" />
 			</SpecialAbility>
 		</level>
 	</additional>
 	<additional id="44190018" isDebuff="1">
-		<level level="1">
-			<Basic durationTick="10000" />
+		<level level="1" feature="DungeonOS04">
+			<Basic durationTick="10000" coolDownTime="2" />
 			<Motion keepEffect="NPC/Skill/Primadonna/Eff_Primadonna_Attack_Bind.xml" stopEffect="NPC/Skill/Primadonna/Eff_Primadonna_Attack_Bind_End.xml" />
 			<SpecialAbility>
-				<v type="mspRate" value="-300" />
-				<v type="jmpRate" value="-300" />
+				<v type="mspRate" value="-100" />
+				<v type="jmpRate" value="-100" />
 			</SpecialAbility>
 		</level>
 	</additional>
 	<additional id="44190019" isDebuff="1">
-		<level level="1">
+		<level level="1" feature="DungeonOS04">
 			<Basic durationTick="100" intervalTick="100" />
 			<Motion startEffect="NPC/Skill/DrumRoll/Eff_Drumroll_HealThrow_Start.xml" />
-			<Recovery hpRate="0.5" spValue="40" epValue="40" />
 			<CancelEffect cancelEffectCodes="44190006,44100007,44190016,44190017,44190018,44190020" />
+			<Recovery hpRate="0.5" spValue="40" epValue="40" />
 		</level>
 	</additional>
 	<additional id="44190020" isDebuff="1">
-		<level level="1">
+		<level level="1" feature="DungeonOS04">
 			<Basic durationTick="20000" />
 			<Motion keepEffect="NPC/Skill/Primadonna/Eff_Primadonna_Recovery_Decrease_Keep.xml" abnormalImmuneBreak="1" />
 			<CancelEffect cancelEffectCodes="49113011" />
 			<Status itemRecoveryHPRate="-0.5" healRecoveryHPRate="-0.5" />
-			<UI icon="./Data/Resource/Image/skill/icon/zombieVomit.png" />
+			<UI icon="./Data/Resource/Image/skill/icon/HPRecoveryItemDown.png" />
+		</level>
+	</additional>
+	<additional id="44190023" isDebuff="1">
+		<level level="1" feature="DungeonOS04">
+			<Basic durationTick="16000" intervalTick="16000" resetCondition="1" dotCondition="1" coolDownTime="17" ignoreReduceTimeCondition="1" />
+			<Motion keepEffect="NPC/Skill/Primadonna/Eff_Primadonna_Attention_Loop.xml" stopEffect="NPC/Skill/Primadonna/Eff_Primadonna_Attention_End.xml" IgnoreOptimalHideStartEffect="1" abnormalImmuneBreak="1" scale="0.5" />
+			<Skill level="1" skillID="44110157" immediateActive="1" />
+		</level>
+	</additional>
+	<additional id="44190024" isDebuff="1">
+		<level level="1" feature="DungeonOS04">
+			<Basic durationTick="17000" intervalTick="1000" resetCondition="2" maxBuffCount="3" dotCondition="1" logoutClearEffect="1" leaveFieldClearEffect="1" coolDownTime="18" ignoreReduceTimeCondition="1" />
+			<Motion abnormalImmuneBreak="1" />
+			<UI icon="./Data/Resource/Image/skill/icon/TimeBombInfection.png" />
+			<Skill level="1" skillID="44110156" immediateActive="1" />
+		</level>
+	</additional>
+	<additional id="44190025" isDebuff="1">
+		<level level="1" feature="DungeonOS04">
+			<Basic durationTick="20000" resetCondition="1" ignoreReduceTimeCondition="1" />
+			<Motion abnormalImmuneBreak="1" />
+			<Additional level="1" skillID="44190028" skillTarget="1" ownerEvent="17" ownerEventAdditionalID="44190024" />
+		</level>
+	</additional>
+	<additional id="44190026" isDebuff="1">
+		<level level="1" feature="DungeonOS04">
+			<Basic durationTick="100" intervalTick="100" />
+			<Motion abnormalImmuneBreak="5" />
+			<ModifyOverlapCount effectCodes="44190024" offsetCounts="-1" />
+		</level>
+	</additional>
+	<additional id="44190027" mainType="1" isDebuff="1">
+		<level level="1" feature="DungeonOS04">
+			<Basic durationTick="8000" resetCondition="1" />
+			<Motion keepEffect="NPC/Skill/Primadonna/Eff_Primadonna_Attention_Fail_Loop.xml" stopEffect="NPC/Skill/Primadonna/Eff_Primadonna_Attention_Fail_End.xml" IgnoreOptimalHideStartEffect="1" stun="7" abnormalImmuneBreak="1" />
+			<SpecialAbility>
+				<v type="defensive_physicaldamage" value="-100" />
+				<v type="defensive_magicaldamage" value="-100" />
+			</SpecialAbility>
+			<UI icon="./Data/Resource/Image/skill/Icon/41000004.PNG" />
+		</level>
+	</additional>
+	<additional id="44190028" isDebuff="1">
+		<level level="1" feature="DungeonOS04">
+			<Basic durationTick="100" intervalTick="100" />
+			<Motion abnormalImmuneBreak="5" />
+			<CancelEffect cancelEffectCodes="44190023" />
+		</level>
+	</additional>
+	<additional id="44190029" mainType="3" isDebuff="1">
+		<level level="1" feature="DungeonOS04">
+			<Basic group="1" durationTick="1000" resetCondition="1" coolDownTime="2" ignoreReduceTimeCondition="1" />
+			<Motion stun="2" abnormalImmuneBreak="1" />
+		</level>
+	</additional>
+	<additional id="44190030" mainType="3" isDebuff="1">
+		<level level="1" feature="DungeonOS04">
+			<Basic group="1" durationTick="1000" resetCondition="1" coolDownTime="2" ignoreReduceTimeCondition="1" />
+			<Motion abnormalImmuneBreak="1" />
+			<DotDamage value="90000000000" isConstDotDamageValue="1" />
+		</level>
+	</additional>
+	<additional id="44190031" mainType="3" isDebuff="1">
+		<level level="1" feature="DungeonOS04">
+			<Basic group="1" durationTick="10000" resetCondition="1" coolDownTime="2" ignoreReduceTimeCondition="1" />
+			<Motion stun="2" abnormalImmuneBreak="1" />
 		</level>
 	</additional>
 </ms2>
