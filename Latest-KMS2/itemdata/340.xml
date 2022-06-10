@@ -926,10 +926,13 @@
 	</item>
 	<item id="34000111">
 		<environment>
-			<property rank="3" type="23" iconCode="36" itemGroup="3" param1="101" category="instrument" blackMarketCategory="36" />
-			<limit transferType="1" />
+			<property rank="3" type="23" iconCode="36" itemGroup="3" param1="101" category="instrument" blackMarketCategory="36">
+				<sell price="1" />
+			</property>
+			<limit shopSell="1" />
 			<material ui="6" />
 			<function name="OpenInstrument" />
+			<tool itemPreset="19100070" />
 		</environment>
 	</item>
 	<item id="34000112">
