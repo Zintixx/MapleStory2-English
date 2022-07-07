@@ -937,8 +937,10 @@
 	</item>
 	<item id="34000112">
 		<environment>
-			<property rank="3" type="23" iconCode="36" itemGroup="3" param1="102" category="instrument" blackMarketCategory="36" />
-			<limit transferType="1" />
+			<property rank="3" type="23" iconCode="36" itemGroup="3" param1="102" category="instrument" blackMarketCategory="36">
+				<sell price="1" />
+			</property>
+			<limit shopSell="1" />
 			<material ui="6" />
 			<function name="OpenInstrument" />
 		</environment>
