@@ -1,0 +1,966 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ms2>
+	<skill id="130000001" comment="모험가">
+		<basic feature="LeadSkill" mainType="2">
+			<ui icon="./Data/Resource/Image/skill/icon/LeadSkill_01_S.png" attackType="1" />
+			<kinds rangeType="1" jump="130000001" unrideOnUse="1" />
+			<stateAttr autoTargetingType="1" keyIsDown="1" ignoreReduceCooldown="1" />
+			<autoTargeting autoTargetingMaxDegree="90" />
+			<push back="150" />
+			<condition useCoolDownShowUI="1">
+				<weapon lh="0" rh="30" />
+				<weapon lh="0" rh="31" />
+				<weapon lh="0" rh="32" />
+				<weapon lh="0" rh="33" />
+			</condition>
+		</basic>
+		<level value="1" cooldown="400" stringParam="99">
+			<motion sequenceName="Beginner_Hammering_A" selfInputCombo="selfinputcombo" strTagEffects="e0=CH/Skill/Beginner/Eff_Beginner_Hammering_Cast_01.xml">
+				<attack point="p0" pointGroupID="10000001" targetCount="5" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+					<pause pauseShakeDuration="0.1" pauseAmp="3" />
+					<range rangeType="box" distance="200" rangeAdd="0,25,0" height="150" width="150" applyTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="0.99" effectHit="CH/Weapon/Blunt/Eff_Blunt_Hit_01.xml" />
+					<actionAdditional additionalID="10000000" level="1" skillTarget="1" skillOwner="1" dependOnDamageCount="1" />
+				</attack>
+			</motion>
+		</level>
+		<level value="2" cooldown="400" stringParam="101">
+			<motion sequenceName="Beginner_Hammering_A" selfInputCombo="selfinputcombo" strTagEffects="e0=CH/Skill/Beginner/Eff_Beginner_Hammering_Cast_01.xml">
+				<attack point="p0" pointGroupID="10000001" targetCount="5" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+					<pause pauseShakeDuration="0.1" pauseAmp="3" />
+					<range rangeType="box" distance="200" rangeAdd="0,25,0" height="150" width="150" applyTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="1.01" effectHit="CH/Weapon/Blunt/Eff_Blunt_Hit_01.xml" />
+					<actionAdditional additionalID="10000000" level="2" skillTarget="1" skillOwner="1" dependOnDamageCount="1" />
+				</attack>
+			</motion>
+		</level>
+		<level value="3" cooldown="400" stringParam="103">
+			<motion sequenceName="Beginner_Hammering_A" selfInputCombo="selfinputcombo" strTagEffects="e0=CH/Skill/Beginner/Eff_Beginner_Hammering_Cast_01.xml">
+				<attack point="p0" pointGroupID="10000001" targetCount="5" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+					<pause pauseShakeDuration="0.1" pauseAmp="3" />
+					<range rangeType="box" distance="200" rangeAdd="0,25,0" height="150" width="150" applyTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="1.03" effectHit="CH/Weapon/Blunt/Eff_Blunt_Hit_01.xml" />
+					<actionAdditional additionalID="10000000" level="3" skillTarget="1" skillOwner="1" dependOnDamageCount="1" />
+				</attack>
+			</motion>
+		</level>
+		<level value="4" cooldown="400" stringParam="105">
+			<motion sequenceName="Beginner_Hammering_A" selfInputCombo="selfinputcombo" strTagEffects="e0=CH/Skill/Beginner/Eff_Beginner_Hammering_Cast_01.xml">
+				<attack point="p0" pointGroupID="10000001" targetCount="5" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+					<pause pauseShakeDuration="0.1" pauseAmp="3" />
+					<range rangeType="box" distance="200" rangeAdd="0,25,0" height="150" width="150" applyTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="1.05" effectHit="CH/Weapon/Blunt/Eff_Blunt_Hit_01.xml" />
+					<actionAdditional additionalID="10000000" level="4" skillTarget="1" skillOwner="1" dependOnDamageCount="1" />
+				</attack>
+			</motion>
+		</level>
+		<level value="5" cooldown="400" stringParam="107">
+			<motion sequenceName="Beginner_Hammering_A" selfInputCombo="selfinputcombo" strTagEffects="e0=CH/Skill/Beginner/Eff_Beginner_Hammering_Cast_01.xml">
+				<attack point="p0" pointGroupID="10000001" targetCount="5" attacktype="1" hitImmuneBreak="1" brokenOffence="1" unrideOnHit="1">
+					<pause pauseShakeDuration="0.1" pauseAmp="3" />
+					<range rangeType="box" distance="200" rangeAdd="0,25,0" height="150" width="150" applyTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="1.07" effectHit="CH/Weapon/Blunt/Eff_Blunt_Hit_01.xml" />
+					<actionAdditional additionalID="10000000" level="5" skillTarget="1" skillOwner="1" dependOnDamageCount="1" />
+				</attack>
+			</motion>
+		</level>
+	</skill>
+	<skill id="130000010" comment="나이트">
+		<basic feature="LeadSkill" mainType="2">
+			<ui icon="./Data/Resource/Image/skill/icon/LeadSkill_01_S.png" />
+			<kinds jump="130000010" unrideOnUse="1" />
+			<stateAttr ignoreReduceCooldown="1" />
+			<condition useCoolDownShowUI="1" />
+		</basic>
+		<level value="1" cooldown="180000" stringParam="500,3">
+			<actionAdditional additionalID="130000012" level="1" skillTarget="1">
+				<beginCondition allowBattleRidingState="1" />
+			</actionAdditional>
+			<motion sequenceName="Knight_DivineRevenge_A" motionEffect="CH/LeadSkill/Eff_Knight_Cast_01.xml" />
+		</level>
+		<level value="2" cooldown="180000" stringParam="750,4">
+			<actionAdditional additionalID="130000012" level="2" skillTarget="1">
+				<beginCondition allowBattleRidingState="1" />
+			</actionAdditional>
+			<motion sequenceName="Knight_DivineRevenge_A" motionEffect="CH/LeadSkill/Eff_Knight_Cast_01.xml" />
+		</level>
+		<level value="3" cooldown="180000" stringParam="1000,5">
+			<actionAdditional additionalID="130000012" level="3" skillTarget="1">
+				<beginCondition allowBattleRidingState="1" />
+			</actionAdditional>
+			<motion sequenceName="Knight_DivineRevenge_A" motionEffect="CH/LeadSkill/Eff_Knight_Cast_01.xml" />
+		</level>
+		<level value="4" cooldown="180000" stringParam="1250,6">
+			<actionAdditional additionalID="130000012" level="4" skillTarget="1">
+				<beginCondition allowBattleRidingState="1" />
+			</actionAdditional>
+			<motion sequenceName="Knight_DivineRevenge_A" motionEffect="CH/LeadSkill/Eff_Knight_Cast_01.xml" />
+		</level>
+		<level value="5" cooldown="180000" stringParam="1500,7">
+			<actionAdditional additionalID="130000012" level="5" skillTarget="1">
+				<beginCondition allowBattleRidingState="1" />
+			</actionAdditional>
+			<motion sequenceName="Knight_DivineRevenge_A" motionEffect="CH/LeadSkill/Eff_Knight_Cast_01.xml" />
+		</level>
+	</skill>
+	<skill id="130000011" comment="나이트">
+		<basic feature="LeadSkill" mainType="6">
+			<ui icon="./Data/Resource/Image/skill/icon/LeadSkill_01_S.png" />
+			<stateAttr ignoreReduceCooldown="1" />
+			<condition useCoolDownShowUI="1" />
+		</basic>
+		<level value="1">
+			<actionAdditional additionalID="130000011" level="1" skillTarget="1">
+				<beginCondition allowBattleRidingState="1" />
+			</actionAdditional>
+		</level>
+		<level value="2">
+			<actionAdditional additionalID="130000011" level="2" skillTarget="1">
+				<beginCondition allowBattleRidingState="1" />
+			</actionAdditional>
+		</level>
+		<level value="3">
+			<actionAdditional additionalID="130000011" level="3" skillTarget="1">
+				<beginCondition allowBattleRidingState="1" />
+			</actionAdditional>
+		</level>
+		<level value="4">
+			<actionAdditional additionalID="130000011" level="4" skillTarget="1">
+				<beginCondition allowBattleRidingState="1" />
+			</actionAdditional>
+		</level>
+		<level value="5">
+			<actionAdditional additionalID="130000011" level="5" skillTarget="1">
+				<beginCondition allowBattleRidingState="1" />
+			</actionAdditional>
+		</level>
+	</skill>
+	<skill id="130000020" comment="버서커">
+		<basic feature="LeadSkill" mainType="2">
+			<ui icon="./Data/Resource/Image/skill/icon/LeadSkill_02_S.png" />
+			<kinds jump="130000020" releaseObjectWeapon="0" />
+			<stateAttr ignoreReduceCooldown="1" />
+			<condition useCoolDownShowUI="1" />
+		</basic>
+		<level value="1" cooldown="180000" stringParam="30,14">
+			<actionAdditional additionalID="130000022" level="1" skillTarget="1">
+				<beginCondition allowBattleRidingState="1" />
+			</actionAdditional>
+			<motion motionEffect="CH/LeadSkill/Eff_Berserker_Cast_01.xml" />
+		</level>
+		<level value="2" cooldown="180000" stringParam="60,18">
+			<actionAdditional additionalID="130000022" level="2" skillTarget="1">
+				<beginCondition allowBattleRidingState="1" />
+			</actionAdditional>
+			<motion motionEffect="CH/LeadSkill/Eff_Berserker_Cast_01.xml" />
+		</level>
+		<level value="3" cooldown="180000" stringParam="90,22">
+			<actionAdditional additionalID="130000022" level="3" skillTarget="1">
+				<beginCondition allowBattleRidingState="1" />
+			</actionAdditional>
+			<motion motionEffect="CH/LeadSkill/Eff_Berserker_Cast_01.xml" />
+		</level>
+		<level value="4" cooldown="180000" stringParam="120,26">
+			<actionAdditional additionalID="130000022" level="4" skillTarget="1">
+				<beginCondition allowBattleRidingState="1" />
+			</actionAdditional>
+			<motion motionEffect="CH/LeadSkill/Eff_Berserker_Cast_01.xml" />
+		</level>
+		<level value="5" cooldown="180000" stringParam="150,30">
+			<actionAdditional additionalID="130000022" level="5" skillTarget="1">
+				<beginCondition allowBattleRidingState="1" />
+			</actionAdditional>
+			<motion motionEffect="CH/LeadSkill/Eff_Berserker_Cast_01.xml" />
+		</level>
+	</skill>
+	<skill id="130000021" comment="버서커">
+		<basic feature="LeadSkill" mainType="6">
+			<ui icon="./Data/Resource/Image/skill/icon/LeadSkill_02_S.png" />
+			<stateAttr ignoreReduceCooldown="1" />
+			<condition useCoolDownShowUI="1" />
+		</basic>
+		<level value="1">
+			<actionAdditional additionalID="130000021" level="1" skillTarget="1">
+				<beginCondition allowBattleRidingState="1" />
+			</actionAdditional>
+		</level>
+		<level value="2">
+			<actionAdditional additionalID="130000021" level="2" skillTarget="1">
+				<beginCondition allowBattleRidingState="1" />
+			</actionAdditional>
+		</level>
+		<level value="3">
+			<actionAdditional additionalID="130000021" level="3" skillTarget="1">
+				<beginCondition allowBattleRidingState="1" />
+			</actionAdditional>
+		</level>
+		<level value="4">
+			<actionAdditional additionalID="130000021" level="4" skillTarget="1">
+				<beginCondition allowBattleRidingState="1" />
+			</actionAdditional>
+		</level>
+		<level value="5">
+			<actionAdditional additionalID="130000021" level="5" skillTarget="1">
+				<beginCondition allowBattleRidingState="1" />
+			</actionAdditional>
+		</level>
+	</skill>
+	<skill id="130000030" comment="위자드">
+		<basic feature="LeadSkill" mainType="2">
+			<ui icon="./Data/Resource/Image/skill/icon/LeadSkill_03_S.png" />
+			<kinds jump="130000030" immediateActive="1" releaseObjectWeapon="0" />
+			<stateAttr ignoreReduceCooldown="1" />
+			<condition useCoolDownShowUI="1" />
+		</basic>
+		<level value="1" cooldown="180000" stringParam="1,1400">
+			<actionAdditional additionalID="130000032" level="1" skillTarget="1">
+				<beginCondition allowBattleRidingState="1" />
+			</actionAdditional>
+			<motion motionEffect="CH/LeadSkill/Eff_Wizard_Cast_01.xml" holdWeapon="0" />
+		</level>
+		<level value="2" cooldown="180000" stringParam="2,1600">
+			<actionAdditional additionalID="130000032" level="2" skillTarget="1">
+				<beginCondition allowBattleRidingState="1" />
+			</actionAdditional>
+			<motion motionEffect="CH/LeadSkill/Eff_Wizard_Cast_01.xml" holdWeapon="0" />
+		</level>
+		<level value="3" cooldown="180000" stringParam="3,1800">
+			<actionAdditional additionalID="130000032" level="3" skillTarget="1">
+				<beginCondition allowBattleRidingState="1" />
+			</actionAdditional>
+			<motion motionEffect="CH/LeadSkill/Eff_Wizard_Cast_01.xml" holdWeapon="0" />
+		</level>
+		<level value="4" cooldown="180000" stringParam="4,2000">
+			<actionAdditional additionalID="130000032" level="4" skillTarget="1">
+				<beginCondition allowBattleRidingState="1" />
+			</actionAdditional>
+			<motion motionEffect="CH/LeadSkill/Eff_Wizard_Cast_01.xml" holdWeapon="0" />
+		</level>
+		<level value="5" cooldown="180000" stringParam="5,2200">
+			<actionAdditional additionalID="130000032" level="5" skillTarget="1">
+				<beginCondition allowBattleRidingState="1" />
+			</actionAdditional>
+			<motion motionEffect="CH/LeadSkill/Eff_Wizard_Cast_01.xml" holdWeapon="0" />
+		</level>
+	</skill>
+	<skill id="130000031" comment="위자드">
+		<basic feature="LeadSkill" mainType="6">
+			<ui icon="./Data/Resource/Image/skill/icon/LeadSkill_03_S.png" />
+			<stateAttr ignoreReduceCooldown="1" />
+			<condition useCoolDownShowUI="1" />
+		</basic>
+		<level value="1">
+			<actionAdditional additionalID="130000031" level="1" skillTarget="1">
+				<beginCondition allowBattleRidingState="1" />
+			</actionAdditional>
+		</level>
+		<level value="2">
+			<actionAdditional additionalID="130000031" level="2" skillTarget="1">
+				<beginCondition allowBattleRidingState="1" />
+			</actionAdditional>
+		</level>
+		<level value="3">
+			<actionAdditional additionalID="130000031" level="3" skillTarget="1">
+				<beginCondition allowBattleRidingState="1" />
+			</actionAdditional>
+		</level>
+		<level value="4">
+			<actionAdditional additionalID="130000031" level="4" skillTarget="1">
+				<beginCondition allowBattleRidingState="1" />
+			</actionAdditional>
+		</level>
+		<level value="5">
+			<actionAdditional additionalID="130000031" level="5" skillTarget="1">
+				<beginCondition allowBattleRidingState="1" />
+			</actionAdditional>
+		</level>
+	</skill>
+	<skill id="130000040" comment="프리스트">
+		<basic feature="LeadSkill" mainType="2">
+			<ui icon="./Data/Resource/Image/skill/icon/LeadSkill_04_S.png" />
+			<kinds jump="130000010" releaseObjectWeapon="0" />
+			<stateAttr ignoreReduceCooldown="1" />
+			<condition useCoolDownShowUI="1" />
+		</basic>
+		<level value="1" cooldown="180000" stringParam="2,10">
+			<actionAdditional additionalID="130000042" level="1" skillTarget="1">
+				<beginCondition allowBattleRidingState="1" />
+			</actionAdditional>
+			<motion motionEffect="CH/LeadSkill/Eff_Priest_Cast_01.xml" holdWeapon="0">
+				<attack point="p0" targetCount="1">
+					<range rangeType="cylinder" distance="150" height="150" includeCaster="1" applyTarget="2" />
+					<arrow nonTarget="1" />
+					<damage count="0" attackMaterial="1000" />
+				</attack>
+			</motion>
+		</level>
+		<level value="2" cooldown="180000" stringParam="4,12">
+			<actionAdditional additionalID="130000042" level="2" skillTarget="1">
+				<beginCondition allowBattleRidingState="1" />
+			</actionAdditional>
+			<motion motionEffect="CH/LeadSkill/Eff_Priest_Cast_01.xml" holdWeapon="0">
+				<attack point="p0" targetCount="1">
+					<range rangeType="cylinder" distance="150" height="150" includeCaster="1" applyTarget="2" />
+					<arrow nonTarget="1" />
+					<damage count="0" attackMaterial="1000" />
+				</attack>
+			</motion>
+		</level>
+		<level value="3" cooldown="180000" stringParam="6,14">
+			<actionAdditional additionalID="130000042" level="3" skillTarget="1">
+				<beginCondition allowBattleRidingState="1" />
+			</actionAdditional>
+			<motion motionEffect="CH/LeadSkill/Eff_Priest_Cast_01.xml" holdWeapon="0">
+				<attack point="p0" targetCount="1">
+					<range rangeType="cylinder" distance="150" height="150" includeCaster="1" applyTarget="2" />
+					<arrow nonTarget="1" />
+					<damage count="0" attackMaterial="1000" />
+				</attack>
+			</motion>
+		</level>
+		<level value="4" cooldown="180000" stringParam="8,16">
+			<actionAdditional additionalID="130000042" level="4" skillTarget="1">
+				<beginCondition allowBattleRidingState="1" />
+			</actionAdditional>
+			<motion motionEffect="CH/LeadSkill/Eff_Priest_Cast_01.xml" holdWeapon="0">
+				<attack point="p0" targetCount="1">
+					<range rangeType="cylinder" distance="150" height="150" includeCaster="1" applyTarget="2" />
+					<arrow nonTarget="1" />
+					<damage count="0" attackMaterial="1000" />
+				</attack>
+			</motion>
+		</level>
+		<level value="5" cooldown="180000" stringParam="10,18">
+			<actionAdditional additionalID="130000042" level="5" skillTarget="1">
+				<beginCondition allowBattleRidingState="1" />
+			</actionAdditional>
+			<motion motionEffect="CH/LeadSkill/Eff_Priest_Cast_01.xml" holdWeapon="0">
+				<attack point="p0" targetCount="1">
+					<range rangeType="cylinder" distance="150" height="150" includeCaster="1" applyTarget="2" />
+					<arrow nonTarget="1" />
+					<damage count="0" attackMaterial="1000" />
+				</attack>
+			</motion>
+		</level>
+	</skill>
+	<skill id="130000041" comment="프리스트">
+		<basic feature="LeadSkill" mainType="6">
+			<ui icon="./Data/Resource/Image/skill/icon/LeadSkill_04_S.png" />
+			<stateAttr ignoreReduceCooldown="1" />
+			<condition useCoolDownShowUI="1" />
+		</basic>
+		<level value="1">
+			<actionAdditional additionalID="130000041" level="1" skillTarget="1">
+				<beginCondition allowBattleRidingState="1" />
+			</actionAdditional>
+		</level>
+		<level value="2">
+			<actionAdditional additionalID="130000041" level="2" skillTarget="1">
+				<beginCondition allowBattleRidingState="1" />
+			</actionAdditional>
+		</level>
+		<level value="3">
+			<actionAdditional additionalID="130000041" level="3" skillTarget="1">
+				<beginCondition allowBattleRidingState="1" />
+			</actionAdditional>
+		</level>
+		<level value="4">
+			<actionAdditional additionalID="130000041" level="4" skillTarget="1">
+				<beginCondition allowBattleRidingState="1" />
+			</actionAdditional>
+		</level>
+		<level value="5">
+			<actionAdditional additionalID="130000041" level="5" skillTarget="1">
+				<beginCondition allowBattleRidingState="1" />
+			</actionAdditional>
+		</level>
+	</skill>
+	<skill id="130000050" comment="레인저">
+		<basic feature="LeadSkill" mainType="2">
+			<ui icon="./Data/Resource/Image/skill/icon/LeadSkill_05_S.png" />
+			<kinds immediateActive="1" unrideOnUse="1" />
+			<stateAttr keyIsDown="1" clearCooldownFromPVPZone="1" ignoreReduceCooldown="1" />
+			<condition useCoolDownShowUI="1" />
+		</basic>
+		<level value="1" ep="20" cooldown="18000" stringParam="1">
+			<motion sequenceName="Ranger_EagleGlide_A" sequenceSpeed="1.35" strTagEffects="e0=CH/LeadSkill/Eff_Ranger_Cast_01.xml" movedistance="550" ignoreCollisionGroups="4" startNoneBlendDelay="1" />
+		</level>
+		<level value="2" ep="20" cooldown="16000" stringParam="2">
+			<motion sequenceName="Ranger_EagleGlide_A" sequenceSpeed="1.35" strTagEffects="e0=CH/LeadSkill/Eff_Ranger_Cast_01.xml" movedistance="550" ignoreCollisionGroups="4" startNoneBlendDelay="1" />
+		</level>
+		<level value="3" ep="20" cooldown="14000" stringParam="3">
+			<motion sequenceName="Ranger_EagleGlide_A" sequenceSpeed="1.35" strTagEffects="e0=CH/LeadSkill/Eff_Ranger_Cast_01.xml" movedistance="550" ignoreCollisionGroups="4" startNoneBlendDelay="1" />
+		</level>
+		<level value="4" ep="20" cooldown="12000" stringParam="4">
+			<motion sequenceName="Ranger_EagleGlide_A" sequenceSpeed="1.35" strTagEffects="e0=CH/LeadSkill/Eff_Ranger_Cast_01.xml" movedistance="550" ignoreCollisionGroups="4" startNoneBlendDelay="1" />
+		</level>
+		<level value="5" ep="20" cooldown="10000" stringParam="5">
+			<motion sequenceName="Ranger_EagleGlide_A" sequenceSpeed="1.35" strTagEffects="e0=CH/LeadSkill/Eff_Ranger_Cast_01.xml" movedistance="550" ignoreCollisionGroups="4" startNoneBlendDelay="1" />
+		</level>
+	</skill>
+	<skill id="130000051" comment="레인저">
+		<basic feature="LeadSkill" mainType="6">
+			<ui icon="./Data/Resource/Image/skill/icon/LeadSkill_05_S.png" />
+			<stateAttr ignoreReduceCooldown="1" />
+			<condition useCoolDownShowUI="1" />
+		</basic>
+		<level value="1">
+			<actionAdditional additionalID="130000051" level="1" skillTarget="1">
+				<beginCondition allowBattleRidingState="1" />
+			</actionAdditional>
+		</level>
+		<level value="2">
+			<actionAdditional additionalID="130000051" level="2" skillTarget="1">
+				<beginCondition allowBattleRidingState="1" />
+			</actionAdditional>
+		</level>
+		<level value="3">
+			<actionAdditional additionalID="130000051" level="3" skillTarget="1">
+				<beginCondition allowBattleRidingState="1" />
+			</actionAdditional>
+		</level>
+		<level value="4">
+			<actionAdditional additionalID="130000051" level="4" skillTarget="1">
+				<beginCondition allowBattleRidingState="1" />
+			</actionAdditional>
+		</level>
+		<level value="5">
+			<actionAdditional additionalID="130000051" level="5" skillTarget="1">
+				<beginCondition allowBattleRidingState="1" />
+			</actionAdditional>
+		</level>
+	</skill>
+	<skill id="130000060" comment="헤비거너">
+		<basic feature="LeadSkill" mainType="2">
+			<ui icon="./Data/Resource/Image/skill/icon/LeadSkill_06_S.png" />
+			<kinds jump="130000060" element="3" immediateActive="1" unrideOnUse="1" releaseObjectWeapon="0" />
+			<stateAttr autoTargeting="0" useDefaultSkill="1" useDefaultSkillID="10600071" clearCooldownFromPVPZone="1" ignoreReduceCooldown="1" />
+			<condition useCoolDownShowUI="1" />
+		</basic>
+		<level value="1" cooldown="180000" stringParam="6,366">
+			<actionAdditional additionalID="130000064" level="1" skillTarget="1">
+				<beginCondition allowBattleRidingState="1" />
+			</actionAdditional>
+			<motion motionEffect="CH/LeadSkill/Eff_HeavyGunner_Cast_01.xml" holdWeapon="0">
+				<attack point="p0" targetCount="1" releaseObjectWeaponOnHit="0">
+					<range rangeType="cylinder" distance="150" height="200" includeCaster="1" applyTarget="2" />
+					<arrow nonTarget="1" />
+					<damage count="0" />
+					<actionAdditional additionalID="130000062" level="1" skillTarget="1" skillOwner="1" />
+				</attack>
+			</motion>
+		</level>
+		<level value="2" cooldown="180000" stringParam="12,594">
+			<actionAdditional additionalID="130000064" level="2" skillTarget="1">
+				<beginCondition allowBattleRidingState="1" />
+			</actionAdditional>
+			<motion motionEffect="CH/LeadSkill/Eff_HeavyGunner_Cast_01.xml" holdWeapon="0">
+				<attack point="p0" targetCount="1" releaseObjectWeaponOnHit="0">
+					<range rangeType="cylinder" distance="150" height="200" includeCaster="1" applyTarget="2" />
+					<arrow nonTarget="1" />
+					<damage count="0" />
+					<actionAdditional additionalID="130000062" level="2" skillTarget="1" skillOwner="1" />
+				</attack>
+			</motion>
+		</level>
+		<level value="3" cooldown="180000" stringParam="18,822">
+			<actionAdditional additionalID="130000064" level="3" skillTarget="1">
+				<beginCondition allowBattleRidingState="1" />
+			</actionAdditional>
+			<motion motionEffect="CH/LeadSkill/Eff_HeavyGunner_Cast_01.xml" holdWeapon="0">
+				<attack point="p0" targetCount="1" releaseObjectWeaponOnHit="0">
+					<range rangeType="cylinder" distance="150" height="200" includeCaster="1" applyTarget="2" />
+					<arrow nonTarget="1" />
+					<damage count="0" />
+					<actionAdditional additionalID="130000062" level="3" skillTarget="1" skillOwner="1" />
+				</attack>
+			</motion>
+		</level>
+		<level value="4" cooldown="180000" stringParam="24,1050">
+			<actionAdditional additionalID="130000064" level="4" skillTarget="1">
+				<beginCondition allowBattleRidingState="1" />
+			</actionAdditional>
+			<motion motionEffect="CH/LeadSkill/Eff_HeavyGunner_Cast_01.xml" holdWeapon="0">
+				<attack point="p0" targetCount="1" releaseObjectWeaponOnHit="0">
+					<range rangeType="cylinder" distance="150" height="200" includeCaster="1" applyTarget="2" />
+					<arrow nonTarget="1" />
+					<damage count="0" />
+					<actionAdditional additionalID="130000062" level="4" skillTarget="1" skillOwner="1" />
+				</attack>
+			</motion>
+		</level>
+		<level value="5" cooldown="180000" stringParam="30,1278">
+			<actionAdditional additionalID="130000064" level="5" skillTarget="1">
+				<beginCondition allowBattleRidingState="1" />
+			</actionAdditional>
+			<motion motionEffect="CH/LeadSkill/Eff_HeavyGunner_Cast_01.xml" holdWeapon="0">
+				<attack point="p0" targetCount="1" releaseObjectWeaponOnHit="0">
+					<range rangeType="cylinder" distance="150" height="200" includeCaster="1" applyTarget="2" />
+					<arrow nonTarget="1" />
+					<damage count="0" />
+					<actionAdditional additionalID="130000062" level="5" skillTarget="1" skillOwner="1" />
+				</attack>
+			</motion>
+		</level>
+	</skill>
+	<skill id="130000061" comment="헤비거너">
+		<basic feature="LeadSkill" mainType="6">
+			<ui icon="./Data/Resource/Image/skill/icon/LeadSkill_06_S.png" />
+			<stateAttr ignoreReduceCooldown="1" />
+			<condition useCoolDownShowUI="1" />
+		</basic>
+		<level value="1">
+			<actionAdditional additionalID="130000061" level="1" skillTarget="1">
+				<beginCondition allowBattleRidingState="1" />
+			</actionAdditional>
+		</level>
+		<level value="2">
+			<actionAdditional additionalID="130000061" level="2" skillTarget="1">
+				<beginCondition allowBattleRidingState="1" />
+			</actionAdditional>
+		</level>
+		<level value="3">
+			<actionAdditional additionalID="130000061" level="3" skillTarget="1">
+				<beginCondition allowBattleRidingState="1" />
+			</actionAdditional>
+		</level>
+		<level value="4">
+			<actionAdditional additionalID="130000061" level="4" skillTarget="1">
+				<beginCondition allowBattleRidingState="1" />
+			</actionAdditional>
+		</level>
+		<level value="5">
+			<actionAdditional additionalID="130000061" level="5" skillTarget="1">
+				<beginCondition allowBattleRidingState="1" />
+			</actionAdditional>
+		</level>
+	</skill>
+	<skill id="130000062" comment="헤비거너">
+		<basic feature="LeadSkill" mainType="30">
+			<ui attackType="1" />
+			<kinds element="3" />
+			<stateAttr ignoreReduceCooldown="1" />
+		</basic>
+		<level value="1">
+			<motion>
+				<attack point="p0" targetCount="1" attacktype="1">
+					<range rangeType="cylinder" distance="800" height="200" applyTarget="1" />
+					<arrow nonTarget="1" />
+					<damage count="0" attackMaterial="1000" />
+					<actionAdditional additionalID="130000063" level="1" skillTarget="2" skillOwner="1" />
+				</attack>
+			</motion>
+		</level>
+		<level value="2">
+			<motion>
+				<attack point="p0" targetCount="1" attacktype="1">
+					<range rangeType="cylinder" distance="800" height="200" applyTarget="1" />
+					<arrow nonTarget="1" />
+					<damage count="0" attackMaterial="1000" />
+					<actionAdditional additionalID="130000063" level="2" skillTarget="2" skillOwner="1" />
+				</attack>
+			</motion>
+		</level>
+		<level value="3">
+			<motion>
+				<attack point="p0" targetCount="1" attacktype="1">
+					<range rangeType="cylinder" distance="800" height="200" applyTarget="1" />
+					<arrow nonTarget="1" />
+					<damage count="0" attackMaterial="1000" />
+					<actionAdditional additionalID="130000063" level="3" skillTarget="2" skillOwner="1" />
+				</attack>
+			</motion>
+		</level>
+		<level value="4">
+			<motion>
+				<attack point="p0" targetCount="1" attacktype="1">
+					<range rangeType="cylinder" distance="800" height="200" applyTarget="1" />
+					<arrow nonTarget="1" />
+					<damage count="0" attackMaterial="1000" />
+					<actionAdditional additionalID="130000063" level="4" skillTarget="2" skillOwner="1" />
+				</attack>
+			</motion>
+		</level>
+		<level value="5">
+			<motion>
+				<attack point="p0" targetCount="1" attacktype="1">
+					<range rangeType="cylinder" distance="800" height="200" applyTarget="1" />
+					<arrow nonTarget="1" />
+					<damage count="0" attackMaterial="1000" />
+					<actionAdditional additionalID="130000063" level="5" skillTarget="2" skillOwner="1" />
+				</attack>
+			</motion>
+		</level>
+	</skill>
+	<skill id="130000063" comment="헤비거너">
+		<basic feature="LeadSkill" mainType="30">
+			<ui attackType="1" />
+			<kinds element="3" />
+			<stateAttr ignoreReduceCooldown="1" />
+		</basic>
+		<level value="1">
+			<motion splashInvokeEffect="CH/LeadSkill/Eff_HeavyGunner_Invoke_01.xml">
+				<attack point="p0" targetCount="5" attacktype="1" unrideOnHit="1">
+					<range rangeType="cylinder" distance="225" height="200" applyTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="3.66" hitSpeedRate="0.8" attackMaterial="1" />
+				</attack>
+			</motion>
+		</level>
+		<level value="2">
+			<motion splashInvokeEffect="CH/LeadSkill/Eff_HeavyGunner_Invoke_01.xml">
+				<attack point="p0" targetCount="5" attacktype="1" unrideOnHit="1">
+					<range rangeType="cylinder" distance="225" height="200" applyTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="5.94" hitSpeedRate="0.8" attackMaterial="1" />
+				</attack>
+			</motion>
+		</level>
+		<level value="3">
+			<motion splashInvokeEffect="CH/LeadSkill/Eff_HeavyGunner_Invoke_01.xml">
+				<attack point="p0" targetCount="5" attacktype="1" unrideOnHit="1">
+					<range rangeType="cylinder" distance="225" height="200" applyTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="8.22" hitSpeedRate="0.8" attackMaterial="1" />
+				</attack>
+			</motion>
+		</level>
+		<level value="4">
+			<motion splashInvokeEffect="CH/LeadSkill/Eff_HeavyGunner_Invoke_01.xml">
+				<attack point="p0" targetCount="5" attacktype="1" unrideOnHit="1">
+					<range rangeType="cylinder" distance="225" height="200" applyTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="10.5" hitSpeedRate="0.8" attackMaterial="1" />
+				</attack>
+			</motion>
+		</level>
+		<level value="5">
+			<motion splashInvokeEffect="CH/LeadSkill/Eff_HeavyGunner_Invoke_01.xml">
+				<attack point="p0" targetCount="5" attacktype="1" unrideOnHit="1">
+					<range rangeType="cylinder" distance="225" height="200" applyTarget="1" />
+					<arrow nonTarget="1" />
+					<damage rate="12.78" hitSpeedRate="0.8" attackMaterial="1" />
+				</attack>
+			</motion>
+		</level>
+	</skill>
+	<skill id="130000070" comment="시프">
+		<basic feature="LeadSkill" mainType="2">
+			<ui icon="./Data/Resource/Image/skill/icon/LeadSkill_07_S.png" />
+			<kinds jump="130000070" immediateActive="1" releaseObjectWeapon="0" />
+			<stateAttr autoTargeting="0" ignoreReduceCooldown="1" />
+			<condition useCoolDownShowUI="1" />
+		</basic>
+		<level value="1" cooldown="180000" stringParam="20,3,10">
+			<actionAdditional additionalID="130000072" level="1" skillTarget="1">
+				<beginCondition allowBattleRidingState="1" />
+			</actionAdditional>
+			<motion motionEffect="CH/LeadSkill/Eff_Thief_Cast_01.xml" holdWeapon="0">
+				<attack point="p0" targetCount="1" releaseObjectWeaponOnHit="0">
+					<range rangeType="cylinder" distance="300" height="150" includeCaster="1" applyTarget="2" />
+					<arrow nonTarget="1" />
+					<damage count="0" attackMaterial="1000" />
+				</attack>
+			</motion>
+		</level>
+		<level value="2" cooldown="180000" stringParam="30,6,12">
+			<actionAdditional additionalID="130000072" level="2" skillTarget="1">
+				<beginCondition allowBattleRidingState="1" />
+			</actionAdditional>
+			<motion motionEffect="CH/LeadSkill/Eff_Thief_Cast_01.xml" holdWeapon="0">
+				<attack point="p0" targetCount="1" releaseObjectWeaponOnHit="0">
+					<range rangeType="cylinder" distance="300" height="150" includeCaster="1" applyTarget="2" />
+					<arrow nonTarget="1" />
+					<damage count="0" attackMaterial="1000" />
+				</attack>
+			</motion>
+		</level>
+		<level value="3" cooldown="180000" stringParam="40,9,14">
+			<actionAdditional additionalID="130000072" level="3" skillTarget="1">
+				<beginCondition allowBattleRidingState="1" />
+			</actionAdditional>
+			<motion motionEffect="CH/LeadSkill/Eff_Thief_Cast_01.xml" holdWeapon="0">
+				<attack point="p0" targetCount="1" releaseObjectWeaponOnHit="0">
+					<range rangeType="cylinder" distance="300" height="150" includeCaster="1" applyTarget="2" />
+					<arrow nonTarget="1" />
+					<damage count="0" attackMaterial="1000" />
+				</attack>
+			</motion>
+		</level>
+		<level value="4" cooldown="180000" stringParam="50,12,16">
+			<actionAdditional additionalID="130000072" level="4" skillTarget="1">
+				<beginCondition allowBattleRidingState="1" />
+			</actionAdditional>
+			<motion motionEffect="CH/LeadSkill/Eff_Thief_Cast_01.xml" holdWeapon="0">
+				<attack point="p0" targetCount="1" releaseObjectWeaponOnHit="0">
+					<range rangeType="cylinder" distance="300" height="150" includeCaster="1" applyTarget="2" />
+					<arrow nonTarget="1" />
+					<damage count="0" attackMaterial="1000" />
+				</attack>
+			</motion>
+		</level>
+		<level value="5" cooldown="180000" stringParam="60,15,18">
+			<actionAdditional additionalID="130000072" level="5" skillTarget="1">
+				<beginCondition allowBattleRidingState="1" />
+			</actionAdditional>
+			<motion motionEffect="CH/LeadSkill/Eff_Thief_Cast_01.xml" holdWeapon="0">
+				<attack point="p0" targetCount="1" releaseObjectWeaponOnHit="0">
+					<range rangeType="cylinder" distance="300" height="150" includeCaster="1" applyTarget="2" />
+					<arrow nonTarget="1" />
+					<damage count="0" attackMaterial="1000" />
+				</attack>
+			</motion>
+		</level>
+	</skill>
+	<skill id="130000071" comment="시프">
+		<basic feature="LeadSkill" mainType="6">
+			<ui icon="./Data/Resource/Image/skill/icon/LeadSkill_07_S.png" />
+			<stateAttr ignoreReduceCooldown="1" />
+			<condition useCoolDownShowUI="1" />
+		</basic>
+		<level value="1">
+			<actionAdditional additionalID="130000071" level="1" skillTarget="1">
+				<beginCondition allowBattleRidingState="1" />
+			</actionAdditional>
+		</level>
+		<level value="2">
+			<actionAdditional additionalID="130000071" level="2" skillTarget="1">
+				<beginCondition allowBattleRidingState="1" />
+			</actionAdditional>
+		</level>
+		<level value="3">
+			<actionAdditional additionalID="130000071" level="3" skillTarget="1">
+				<beginCondition allowBattleRidingState="1" />
+			</actionAdditional>
+		</level>
+		<level value="4">
+			<actionAdditional additionalID="130000071" level="4" skillTarget="1">
+				<beginCondition allowBattleRidingState="1" />
+			</actionAdditional>
+		</level>
+		<level value="5">
+			<actionAdditional additionalID="130000071" level="5" skillTarget="1">
+				<beginCondition allowBattleRidingState="1" />
+			</actionAdditional>
+		</level>
+	</skill>
+	<skill id="130000080" comment="어쌔신">
+		<basic feature="LeadSkill" mainType="2">
+			<ui icon="./Data/Resource/Image/skill/icon/LeadSkill_08_S.png" />
+			<kinds jump="130000080" immediateActive="1" releaseObjectWeapon="0" />
+			<stateAttr ignoreReduceCooldown="1" />
+			<condition useCoolDownShowUI="1" />
+		</basic>
+		<level value="1" cooldown="180000" stringParam="50">
+			<actionAdditional additionalID="130000082" level="1" skillTarget="1">
+				<beginCondition allowBattleRidingState="1" />
+			</actionAdditional>
+			<motion motionEffect="CH/LeadSkill/Eff_Assassin_Cast_01.xml" holdWeapon="0" />
+		</level>
+		<level value="2" cooldown="180000" stringParam="100">
+			<actionAdditional additionalID="130000082" level="2" skillTarget="1">
+				<beginCondition allowBattleRidingState="1" />
+			</actionAdditional>
+			<motion motionEffect="CH/LeadSkill/Eff_Assassin_Cast_01.xml" holdWeapon="0" />
+		</level>
+		<level value="3" cooldown="180000" stringParam="150">
+			<actionAdditional additionalID="130000082" level="3" skillTarget="1">
+				<beginCondition allowBattleRidingState="1" />
+			</actionAdditional>
+			<motion motionEffect="CH/LeadSkill/Eff_Assassin_Cast_01.xml" holdWeapon="0" />
+		</level>
+		<level value="4" cooldown="180000" stringParam="200">
+			<actionAdditional additionalID="130000082" level="4" skillTarget="1">
+				<beginCondition allowBattleRidingState="1" />
+			</actionAdditional>
+			<motion motionEffect="CH/LeadSkill/Eff_Assassin_Cast_01.xml" holdWeapon="0" />
+		</level>
+		<level value="5" cooldown="180000" stringParam="250">
+			<actionAdditional additionalID="130000082" level="5" skillTarget="1">
+				<beginCondition allowBattleRidingState="1" />
+			</actionAdditional>
+			<motion motionEffect="CH/LeadSkill/Eff_Assassin_Cast_01.xml" holdWeapon="0" />
+		</level>
+	</skill>
+	<skill id="130000090" comment="룬 블레이더">
+		<basic feature="LeadSkill" mainType="2">
+			<ui icon="./Data/Resource/Image/skill/icon/LeadSkill_09_S.png" />
+			<kinds jump="130000090" immediateActive="1" unrideOnUse="1" />
+			<stateAttr ignoreReduceCooldown="1" />
+			<condition useCoolDownShowUI="1" />
+		</basic>
+		<level value="1" cooldown="180000" stringParam="1,9,6">
+			<actionAdditional additionalID="130000092" level="1" skillTarget="1">
+				<beginCondition allowBattleRidingState="1" />
+			</actionAdditional>
+			<motion sequenceName="RuneBlader_PhysicalBoost_A" />
+		</level>
+		<level value="2" cooldown="180000" stringParam="2,12,8">
+			<actionAdditional additionalID="130000092" level="2" skillTarget="1">
+				<beginCondition allowBattleRidingState="1" />
+			</actionAdditional>
+			<motion sequenceName="RuneBlader_PhysicalBoost_A" />
+		</level>
+		<level value="3" cooldown="180000" stringParam="3,15,10">
+			<actionAdditional additionalID="130000092" level="3" skillTarget="1">
+				<beginCondition allowBattleRidingState="1" />
+			</actionAdditional>
+			<motion sequenceName="RuneBlader_PhysicalBoost_A" />
+		</level>
+		<level value="4" cooldown="180000" stringParam="4,18,12">
+			<actionAdditional additionalID="130000092" level="4" skillTarget="1">
+				<beginCondition allowBattleRidingState="1" />
+			</actionAdditional>
+			<motion sequenceName="RuneBlader_PhysicalBoost_A" />
+		</level>
+		<level value="5" cooldown="180000" stringParam="5,21,14">
+			<actionAdditional additionalID="130000092" level="5" skillTarget="1">
+				<beginCondition allowBattleRidingState="1" />
+			</actionAdditional>
+			<motion sequenceName="RuneBlader_PhysicalBoost_A" />
+		</level>
+	</skill>
+	<skill id="130000091" comment="룬 블레이더">
+		<basic feature="LeadSkill" mainType="6">
+			<ui icon="./Data/Resource/Image/skill/icon/LeadSkill_09_S.png" />
+			<stateAttr ignoreReduceCooldown="1" />
+			<condition useCoolDownShowUI="1" />
+		</basic>
+		<level value="1">
+			<actionAdditional additionalID="130000091" level="1" skillTarget="1">
+				<beginCondition allowBattleRidingState="1" />
+			</actionAdditional>
+		</level>
+		<level value="2">
+			<actionAdditional additionalID="130000091" level="2" skillTarget="1">
+				<beginCondition allowBattleRidingState="1" />
+			</actionAdditional>
+		</level>
+		<level value="3">
+			<actionAdditional additionalID="130000091" level="3" skillTarget="1">
+				<beginCondition allowBattleRidingState="1" />
+			</actionAdditional>
+		</level>
+		<level value="4">
+			<actionAdditional additionalID="130000091" level="4" skillTarget="1">
+				<beginCondition allowBattleRidingState="1" />
+			</actionAdditional>
+		</level>
+		<level value="5">
+			<actionAdditional additionalID="130000091" level="5" skillTarget="1">
+				<beginCondition allowBattleRidingState="1" />
+			</actionAdditional>
+		</level>
+	</skill>
+	<skill id="130000100" comment="스트라이커">
+		<basic feature="LeadSkill" mainType="2">
+			<ui icon="./Data/Resource/Image/skill/icon/LeadSkill_10_S.png" />
+			<kinds jump="130000100" unrideOnUse="1" />
+			<stateAttr ignoreReduceCooldown="1" />
+			<condition useCoolDownShowUI="1" />
+		</basic>
+		<level value="1" cooldown="180000" stringParam="13,30">
+			<actionAdditional additionalID="130000102" level="1" skillTarget="1">
+				<beginCondition allowBattleRidingState="1" />
+			</actionAdditional>
+			<motion sequenceName="Striker_FightingSpirit_A" holdWeapon="0" />
+		</level>
+		<level value="2" cooldown="180000" stringParam="19,60">
+			<actionAdditional additionalID="130000102" level="2" skillTarget="1">
+				<beginCondition allowBattleRidingState="1" />
+			</actionAdditional>
+			<motion sequenceName="Striker_FightingSpirit_A" holdWeapon="0" />
+		</level>
+		<level value="3" cooldown="180000" stringParam="25,90">
+			<actionAdditional additionalID="130000102" level="3" skillTarget="1">
+				<beginCondition allowBattleRidingState="1" />
+			</actionAdditional>
+			<motion sequenceName="Striker_FightingSpirit_A" holdWeapon="0" />
+		</level>
+		<level value="4" cooldown="180000" stringParam="31,120">
+			<actionAdditional additionalID="130000102" level="4" skillTarget="1">
+				<beginCondition allowBattleRidingState="1" />
+			</actionAdditional>
+			<motion sequenceName="Striker_FightingSpirit_A" holdWeapon="0" />
+		</level>
+		<level value="5" cooldown="180000" stringParam="37,150">
+			<actionAdditional additionalID="130000102" level="5" skillTarget="1">
+				<beginCondition allowBattleRidingState="1" />
+			</actionAdditional>
+			<motion sequenceName="Striker_FightingSpirit_A" holdWeapon="0" />
+		</level>
+	</skill>
+	<skill id="130000110" comment="소울바인더">
+		<basic feature="LeadSkill" mainType="2">
+			<ui icon="./Data/Resource/Image/skill/icon/LeadSkill_11_S.png" />
+			<kinds jump="130000110" unrideOnUse="1" />
+			<stateAttr autoTargetingType="1" keyIsDown="1" ignoreReduceCooldown="1" />
+			<condition useCoolDownShowUI="1" />
+		</basic>
+		<level value="1" cooldown="180000" stringParam="13">
+			<actionAdditional additionalID="130000111" level="1" skillTarget="1">
+				<beginCondition allowBattleRidingState="1" />
+			</actionAdditional>
+			<motion sequenceName="Soulbinder_VisionTorrent_B" sequenceSpeed="1.15" strTagEffects="e0=CH/LeadSkill/Eff_SoulBinder_Cast_01.xml">
+				<attack point="p0" targetCount="1">
+					<range rangeType="cylinder" distance="150" height="150" includeCaster="1" applyTarget="2" />
+					<arrow nonTarget="1" />
+					<damage count="0" />
+				</attack>
+			</motion>
+		</level>
+		<level value="2" cooldown="180000" stringParam="19">
+			<actionAdditional additionalID="130000111" level="2" skillTarget="1">
+				<beginCondition allowBattleRidingState="1" />
+			</actionAdditional>
+			<motion sequenceName="Soulbinder_VisionTorrent_B" sequenceSpeed="1.15" strTagEffects="e0=CH/LeadSkill/Eff_SoulBinder_Cast_01.xml">
+				<attack point="p0" targetCount="1">
+					<range rangeType="cylinder" distance="150" height="150" includeCaster="1" applyTarget="2" />
+					<arrow nonTarget="1" />
+					<damage count="0" />
+				</attack>
+			</motion>
+		</level>
+		<level value="3" cooldown="180000" stringParam="25">
+			<actionAdditional additionalID="130000111" level="3" skillTarget="1">
+				<beginCondition allowBattleRidingState="1" />
+			</actionAdditional>
+			<motion sequenceName="Soulbinder_VisionTorrent_B" sequenceSpeed="1.15" strTagEffects="e0=CH/LeadSkill/Eff_SoulBinder_Cast_01.xml">
+				<attack point="p0" targetCount="1">
+					<range rangeType="cylinder" distance="150" height="150" includeCaster="1" applyTarget="2" />
+					<arrow nonTarget="1" />
+					<damage count="0" />
+				</attack>
+			</motion>
+		</level>
+		<level value="4" cooldown="180000" stringParam="31">
+			<actionAdditional additionalID="130000111" level="4" skillTarget="1">
+				<beginCondition allowBattleRidingState="1" />
+			</actionAdditional>
+			<motion sequenceName="Soulbinder_VisionTorrent_B" sequenceSpeed="1.15" strTagEffects="e0=CH/LeadSkill/Eff_SoulBinder_Cast_01.xml">
+				<attack point="p0" targetCount="1">
+					<range rangeType="cylinder" distance="150" height="150" includeCaster="1" applyTarget="2" />
+					<arrow nonTarget="1" />
+					<damage count="0" />
+				</attack>
+			</motion>
+		</level>
+		<level value="5" cooldown="180000" stringParam="37">
+			<actionAdditional additionalID="130000111" level="5" skillTarget="1">
+				<beginCondition allowBattleRidingState="1" />
+			</actionAdditional>
+			<motion sequenceName="Soulbinder_VisionTorrent_B" sequenceSpeed="1.15" strTagEffects="e0=CH/LeadSkill/Eff_SoulBinder_Cast_01.xml">
+				<attack point="p0" targetCount="1">
+					<range rangeType="cylinder" distance="150" height="150" includeCaster="1" applyTarget="2" />
+					<arrow nonTarget="1" />
+					<damage count="0" />
+				</attack>
+			</motion>
+		</level>
+	</skill>
+</ms2>
